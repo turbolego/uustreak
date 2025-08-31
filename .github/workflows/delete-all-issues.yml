@@ -1,0 +1,41 @@
+name: Close All Issues 🧨
+
+on:
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  close-issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install GitHub CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install gh -y
+
+      - name: Close All Issues
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Closing all open issues..."
+
+          # Get a list of ALL open issues
+          issue_numbers=$(gh issue list --state open --limit 999999 --json number -q '.[].number')
+
+          if [[ -z "$issue_numbers" ]]; then
+            echo "No open issues found."
+          else
+            # Loop through and close each issue
+            for issue_number in $issue_numbers; do
+              echo "Closing issue #$issue_number..."
+              gh issue close "$issue_number"
+              sleep 1 # Avoid rate limiting
+            done
+            echo "All open issues closed."
+          fi

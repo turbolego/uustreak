@@ -1,0 +1,36 @@
+{
+  "name": "uustreak",
+  "version": "1.0.0",
+  "description": "Automated WCAG Accessibility Testing for NRK Website",
+  "scripts": {
+    "test": "playwright test",
+    "test:report": "playwright show-report"
+  },
+  "keywords": [
+    "wcag",
+    "accessibility",
+    "testing",
+    "playwright"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.1",
+    "axe-core": "^4.10.2",
+    "axe-playwright": "^2.0.3",
+    "typescript": "^5.7.2"
+  },
+  "playwright": {
+    "testDir": ".",
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ]
+  }
+}

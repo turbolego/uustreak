@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>WCAG-brudd topplista</title>
+    <meta
+        content="En webapplikasjon som viser en toppliste over WCAG-brudd for ulike prosjekter. Bruk navigasjonsknappene for å se rapporter fra forskjellige datoer."
+        name="description">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link href="styles.css" rel="stylesheet">
+    <script src="gzip-utils.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>WCAG-brudd topplista</h1>
+        <button aria-label="Lær mer om denne applikasjonen" id="open-readme-dialog">Vis readme fra GitHub -repo</button>
+        <div id="accessible-description"></div>
+        <div class="navigation-controls">
+            <button id="prev-day">Forrige dag</button>
+            <span id="current-date"></span>
+            <button id="next-day">Neste dag</button>
+        </div>
+        <div class="view-controls">
+            <label for="view-selector">Vis kolonner basert på:</label>
+            <select id="view-selector">
+                <option value="types">Bruddtyper</option>
+                <option value="tags">WCAG-tagger</option>
+            </select>
+            <button aria-label="Se tagg sammendrag" id="view-summary">Vis tagg sammendrag</button>
+            <button aria-label="Se døde lenker" id="view-invalid-urls">Vis døde lenker</button>
+        </div>
+        <div id="loading-container" style="display: none;">
+            <div>Laster rapporter...</div>
+            <div id="loading-bar">
+                <div id="loading-progress"></div>
+            </div>
+            <div id="loading-percentage">0%</div>
+        </div>
+        <nav aria-label="WCAG-brudd topplista">
+            <div class="table-wrapper">
+                <div id="table-container"></div>
+                <div id="pagination-controls" class="pagination-controls">
+                    <button id="prev-page" aria-label="Forrige side">←</button>
+                    <span id="page-indicator">Side <span id="current-page-num">1</span> av <span
+                            id="total-pages">1</span></span>
+                    <button id="next-page" aria-label="Neste side">→</button>
+                </div>
+            </div>
+        </nav>
+        <dialog class="details-dialog" id="details-dialog">
+            <h2 id="dialog-title">Rapportdetaljer</h2>
+            <div id="dialog-content"></div>
+        </dialog>
+        <dialog class="details-dialog summary-dialog" id="summary-dialog">
+            <h2 id="summary-dialog-title">Tag Sammendrag</h2>
+            <div id="summary-dialog-content"></div>
+            <button aria-label="Lukk sammendrag" class="dialog-close" id="close-summary-dialog">×</button>
+        </dialog>
+        <dialog class="details-dialog invalid-urls-dialog" id="invalid-urls-dialog">
+            <h2 id="invalid-urls-dialog-title">Døde lenker</h2>
+            <div id="invalid-urls-dialog-content"></div>
+            <button aria-label="Lukk døde lenker dialog" class="dialog-close" id="close-invalid-urls-dialog">×</button>
+        </dialog>
+        <dialog class="details-dialog" id="readme-dialog">
+            <div id="readme-content"></div>
+            <button aria-label="Lukk README beskrivelse" class="dialog-close" id="close-readme-dialog">×</button>
+        </dialog>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="loading.js"></script>
+    <script src="summary.js"></script>
+    <script src="invalid_urls.js"></script>
+    <script>
+        const reportListUrl = 'historical-data/report-list.json';
+        let currentDate = new Date().toISOString().split('T')[0];
+        let reportList = []; // Global rapportliste
+        let availableDates = [];
+        let reportCache = new Map(); // Cache for lagring av hentede rapporter
+
+        // Pagination variables
+        let currentPage = 1;
+        let reportsPerPage = 200; // Adjust this based on performance testing
+        let totalReports = 0;
+        let allReportsForDate = []; // Store all reports for the current date
+
+        // Global variables to track current sorting state
+        let currentSortColumnIndex = 3; // Default sort by streak column (index 3)
+        let currentSortDirection = 'desc'; // Default sort direction
+
+        // Trinn 1: Hent og analyser rapportlisten
+        async function fetchReportList() {
+            try {
+                const response = await fetch(reportListUrl);
+                if (!response.ok) throw new Error(`Kunne ikke hente rapportlisten: ${response.statusText}`);
+                const data = await response.json();
+                if (!Array.isArray(data)) throw new Error('rapportlisten er ikke en array');
+                reportList = data; // Sett den globale rapportlisten
+                return data;
+            } catch (error) {
+                console.error('Feil ved henting av rapportlisten:', error);
+                throw error;
+            }
+        }
+
+        // Trinn 2: Lag en array av gyldige datoer
+        function getAvailableDates(reportFiles) {
+            const dates = new Set();
+
+            reportFiles.forEach(filename => {
+                if (filename.includes('-FAILED.json')) return;
+
+                const match = filename.match(/violations-(.+)-(\d{4}-\d{2}-\d{2})/);
+                if (match) {
+                    dates.add(match[2]); // YYYY-MM-DD format
+                }
+            });
+
+            return Array.from(dates).sort();
+        }
+
+        // Trinn 3: Hent de nyeste rapportene for hver prosjekt på en bestemt dato
+        function getNewestReportsForDate(reportFiles, date) {
+            const projectReports = new Map();
+
+            reportFiles
+                .filter(filename => {
+                    if (filename.includes('-FAILED.json')) return false;
+                    const dateMatch = filename.match(/violations-(.+)-(\d{4}-\d{2}-\d{2})/);
+                    return dateMatch && dateMatch[2] === date;
+                })
+                .forEach(filename => {
+                    const projectMatch = filename.match(/violations-(.+)-\d{4}/);
+                    if (!projectMatch) return;
+
+                    const project = projectMatch[1];
+                    const currentReport = projectReports.get(project);
+
+                    if (!currentReport || filename > currentReport) {
+                        projectReports.set(project, filename);
+                    }
+                });
+
+            return Array.from(projectReports.values());
+        }
+
+        // Utility function for sleeping/delaying
+        const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+        /**
+         * Performs a fetch request with a timeout
+         *
+         * @param {string} url - The URL to fetch
+         * @param {Object} options - Fetch options to pass to the fetch call
+         * @param {number} timeout - Timeout in milliseconds before aborting the request
+         * @returns {Promise<Response>} - The fetch response if successful
+         * @throws {Error} - Throws AbortError if timeout is reached or other fetch errors
+         */
+        async function fetchWithTimeout(url, options = {}, timeout = 15000) { // Increased timeout to 15 seconds
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), timeout);
+
+            try {
+                const response = await fetch(url, {
+                    ...options,
+                    signal: controller.signal
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP status ${response.status}`);
+                }
+
+                return response;
+            } finally {
+                clearTimeout(timeoutId);
+            }
+        }
+
+        /**
+         * Optimized function to fetch reports from gzip archive or fallback to individual files
+         * @param {string} date - Date in YYYY-MM-DD format
+         * @param {number} page - Page number (currently unused as we fetch all at once)
+         * @returns {Promise<Array>} - Array of report objects
+         */
+        async function fetchReportsForDateOptimized(date, page = currentPage) {
+            // If we already have all reports for this date in memory, use them
+            if (reportCache.has(date)) {
+                console.log(`Bruker cachede rapporter for ${date}`);
+                const allReports = reportCache.get(date);
+                totalReports = allReports.length;
+                allReportsForDate = allReports;
+
+                if (currentSortColumnIndex !== null && allReports.length > 0) {
+                    if (typeof renderCurrentPage === 'function') {
+                        renderCurrentPage();
+                    }
+                } else {
+                    if (typeof renderCurrentPage === 'function') {
+                        renderCurrentPage();
+                    }
+                }
+                const startIndex = (page - 1) * reportsPerPage;
+                const endIndex = Math.min(startIndex + reportsPerPage, allReports.length);
+                return allReports.slice(startIndex, endIndex);
+            }
+
+            console.log(`Henter rapporter for ${date} (optimized method)`);
+            const loadingContainer = initializeLoading();
+
+            try {
+                // Check if gzip utilities are available first
+                if (typeof fetchAndDecompressArchive !== 'function') {
+                    console.log('gzip-utils.js not available, falling back to legacy method immediately');
+                    return await fetchReportsForDateLegacy(date, page);
+                }
+
+                // First try to fetch from gzip archive
+                const archiveUrl = `accessibility-reports/archives/reports_${date}.tar.gz`;
+                try {
+                    console.log(`Attempting to fetch gzip archive for ${date}...`);
+                    
+                    // Check if gzip utilities are available
+                    if (typeof fetchAndDecompressArchive !== 'function') {
+                        throw new Error('gzip-utils.js not loaded or fetchAndDecompressArchive function not available');
+                    }
+                    
+                    if (typeof showOptimizationStatus === 'function') {
+                        showOptimizationStatus('Using optimized loading (gzip archive)', 'success');
+                    }
+                    
+                    const jsonFiles = await fetchAndDecompressArchive(archiveUrl);
+                    console.log(`Successfully loaded ${Object.keys(jsonFiles).length} files from archive`);
+
+                    // Debug: Log first few filenames to see the format
+                    const filenames = Object.keys(jsonFiles);
+                    console.log('Sample filenames from archive:', filenames.slice(0, 10));
+
+                    // Process the JSON files with deduplication (keep only newest report per project)
+                    const reports = [];
+                    const projectReports = new Map(); // Track newest report per project
+                    let processedCount = 0;
+                    let violationFiles = 0;
+                    const totalFiles = Object.keys(jsonFiles).length;
+
+                    // Initialize progress
+                    // Add a small delay to ensure DOM elements are ready
+                    await new Promise(resolve => setTimeout(resolve, 100));
+                    if (typeof updateProgress === 'function') {
+                        updateProgress(0, totalFiles, 'Processing archive contents...');
+                    }
+
+                    // Process files in batches to allow browser rendering
+                    const fileEntries = Object.entries(jsonFiles);
+                    const batchSize = 10; // Process 10 files at a time
+
+                    for (let i = 0; i < fileEntries.length; i += batchSize) {
+                        const batch = fileEntries.slice(i, i + batchSize);
+
+                        for (const [filename, data] of batch) {
+                            // Handle filenames that may have './' prefix from tar archive
+                            const cleanFilename = filename.startsWith('./') ? filename.substring(2) : filename;
+                            if (cleanFilename.startsWith('violations-') && cleanFilename.endsWith('.json')) {
+                                violationFiles++;
+                                
+                                // Extract project name from filename
+                                const projectMatch = cleanFilename.match(/violations-(.+)-\d{4}/);
+                                if (projectMatch) {
+                                    const project = projectMatch[1];
+                                    const currentReport = projectReports.get(project);
+                                    
+                                    // Only keep the newest report for each project (filename comparison works for timestamp ordering)
+                                    if (!currentReport || cleanFilename > currentReport.filename.split('/').pop()) {
+                                        // Add filename and calculate streak
+                                        data.filename = `accessibility-reports/${date}/${cleanFilename}`;
+                                        data.noViolationsStreak = calculateNoViolationsStreak(data.project, reportList);
+                                        projectReports.set(project, data);
+                                    }
+                                }
+                            }
+
+                            processedCount++;
+
+                            // Update progress with current batch info
+                            const batchNum = Math.floor(i / batchSize) + 1;
+                            const totalBatches = Math.ceil(fileEntries.length / batchSize);
+                            if (typeof updateProgress === 'function') {
+                                updateProgress(processedCount, totalFiles, `Processing files... (batch ${batchNum}/${totalBatches})`);
+                            }
+                        }
+
+                        // Yield control to browser after each batch with a small delay to make progress visible
+                        await new Promise(resolve => setTimeout(resolve, 10));
+                    }
+
+                    // Convert Map to array (only the newest reports per project)
+                    reports.push(...Array.from(projectReports.values()));
+
+                    console.log(`Processed ${reports.length} unique project reports from archive (${violationFiles} violation files found out of ${totalFiles} total files, deduplicated to ${reports.length} newest reports)`);
+
+                    // Store in cache
+                    allReportsForDate = [...reports];
+                    reportCache.set(date, allReportsForDate);
+
+                    // Implement cache size limit
+                    if (reportCache.size > 3) {
+                        const oldestDate = Array.from(reportCache.keys()).sort()[0];
+                        reportCache.delete(oldestDate);
+                    }
+
+                    totalReports = reports.length;
+
+                    // Update progress to complete
+                    if (typeof updateProgress === 'function') {
+                        updateProgress(reports.length, reports.length, 'Archive loading complete!');
+                    }
+
+                    // Hide loading screen after a short delay
+                    setTimeout(() => {
+                        if (loadingContainer) {
+                            loadingContainer.style.display = 'none';
+                        }
+                    }, 500);
+
+                    console.log(`Cached ${reports.length} reports for ${date} from archive`);
+                    if (typeof renderCurrentPage === 'function') {
+                        renderCurrentPage();
+                    }
+
+                    return reports;
+                } catch (archiveError) {
+                    console.warn(`Failed to load from archive (${archiveError.message}), falling back to individual files...`);
+                    
+                    if (typeof showOptimizationStatus === 'function') {
+                        showOptimizationStatus('Falling back to individual file loading', 'warning');
+                    }
+
+                    // Fallback to the original method
+                    return await fetchReportsForDateLegacy(date, page);
+                }
+
+            } catch (error) {
+                console.error('Error in optimized fetch:', error);
+                if (loadingContainer) {
+                    loadingContainer.style.display = 'none';
+                }
+                return [];
+            }
+        }
+
+        async function fetchReportsForDateLegacy(date, page = currentPage) {
+            // Legacy implementation as fallback
+            // If we already have all reports for this date in memory, use them
+            if (reportCache.has(date)) {
+                console.log(`Bruker cachede rapporter for ${date}`);
+                const allReports = reportCache.get(date);
+                totalReports = allReports.length;
+                allReportsForDate = allReports;
+
+                if (currentSortColumnIndex !== null && allReports.length > 0) {
+                    if (typeof renderCurrentPage === 'function') {
+                        renderCurrentPage();
+                    }
+                } else {
+                    if (typeof renderCurrentPage === 'function') {
+                        renderCurrentPage();
+                    }
+                }
+                const startIndex = (page - 1) * reportsPerPage;
+                const endIndex = Math.min(startIndex + reportsPerPage, allReports.length);
+                return allReports.slice(startIndex, endIndex);
+            }
+
+            console.log(`Henter rapporter for ${date}`);
+            const loadingContainer = initializeLoading();
+
+            try {
+                const newestReports = getNewestReportsForDate(reportList, date);
+                if (!newestReports || newestReports.length === 0) {
+                    console.warn(`Ingen rapporter funnet for ${date}`);
+                    return [];
+                }
+
+                totalReports = newestReports.length;
+                console.log(`Skal hente ${newestReports.length} rapporter for ${date}`);
+
+                const reportsToFetch = newestReports;
+                const reports = [];
+                const batchSize = 200;
+                const retryLimit = 3;
+                let failedReports = [];
+
+                for (let i = 0; i < reportsToFetch.length; i += batchSize) {
+                    const batchEnd = Math.min(i + batchSize, reportsToFetch.length);
+                    const currentBatch = reportsToFetch.slice(i, batchEnd);
+
+                    const batchPromises = currentBatch.map(async (filename) => {
+                        try {
+                            const datePath = filename.match(/\d{4}-\d{2}-\d{2}/)[0];
+                            const adjustedPath = `accessibility-reports/${datePath}/${filename.split('/').pop()}`;
+
+                            let retries = 0;
+                            while (retries < retryLimit) {
+                                try {
+                                    const response = await fetchWithTimeout(adjustedPath);
+                                    const data = await response.json();
+                                    data.filename = filename;
+                                    data.noViolationsStreak = calculateNoViolationsStreak(data.project, reportList);
+                                    return data;
+                                } catch (error) {
+                                    retries++;
+                                    if (retries >= retryLimit) {
+                                        failedReports.push({path: adjustedPath, error: error.message});
+                                        return null;
+                                    }
+                                    const delay = Math.min(1000 * Math.pow(2, retries - 1), 4000);
+                                    await sleep(delay);
+                                }
+                            }
+                        } catch (error) {
+                            failedReports.push({path: filename, error: error.message});
+                            return null;
+                        }
+                    });
+
+                    const batchResults = await Promise.all(batchPromises);
+                    reports.push(...batchResults.filter(report => report !== null));
+                    updateProgress(Math.min(i + batchSize, reportsToFetch.length), reportsToFetch.length);
+                }
+
+                if (failedReports.length > 0) {
+                    console.warn(`${failedReports.length} rapporter kunne ikke hentes:`, failedReports);
+                }
+
+                allReportsForDate = [...reports];
+                reportCache.set(date, allReportsForDate);
+
+                if (reportCache.size > 3) {
+                    const oldestDate = Array.from(reportCache.keys()).sort()[0];
+                    reportCache.delete(oldestDate);
+                }
+
+                console.log(`Cached ${reports.length} reports for ${date}`);
+
+                if (reports.length === 0) {
+                    const tableContainer = document.getElementById('table-container');
+                    if (tableContainer) {
+                        tableContainer.innerHTML = '<p class="error-message">Ingen tilgjengelighetsrapporter funnet for denne datoen eller alle rapporter kunne ikke lastes.</p>';
+                    }
+                    showError(`Ingen rapporter kunne lastes for ${date}. Sjekk nettverkstilkoblingen og rapportfilstiene.`);
+                    return [];
+                }
+
+                if (typeof updatePaginationControls === 'function') {
+                    updatePaginationControls();
+                }
+                console.log(`Finished loading ${reports.length} reports for ${date}`);
+
+                if (allReportsForDate.length > 0) {
+                    if (typeof renderCurrentPage === 'function') {
+                        renderCurrentPage();
+                    }
+                    const startIndex = (page - 1) * reportsPerPage;
+                    const endIndex = Math.min(startIndex + reportsPerPage, allReportsForDate.length);
+                    return allReportsForDate.slice(startIndex, endIndex);
+                } else {
+                    return [];
+                }
+            } catch (error) {
+                console.error('Feil ved henting av rapporter:', error);
+                showError(`Feil ved henting av rapporter: ${error.message}`);
+
+                const tableContainer = document.getElementById('table-container');
+                if (tableContainer) {
+                    tableContainer.innerHTML = '<p class="error-message">Kunne ikke laste rapporter på grunn av en feil.</p>';
+                }
+
+                throw error;
+            } finally {
+                if (typeof removeLoadingOverlay === 'function') {
+                    removeLoadingOverlay();
+                }
+            }
+        }
+
+        // Trinn 4: Main function to fetch reports - uses optimized method by default
+        async function fetchReportsForDate(date, page = currentPage) {
+            return await fetchReportsForDateOptimized(date, page);
+        }
+
+        async function navigateDay(offset) {
+            // Find the index of the current date in the availableDates array
+            const currentIndex = availableDates.indexOf(currentDate);
+            if (currentIndex === -1) return;
+
+            // Calculate the new index and clamp it within bounds
+            let newIndex = currentIndex + offset;
+            if (newIndex < 0) newIndex = 0;
+            if (newIndex >= availableDates.length) newIndex = availableDates.length - 1;
+
+            // If the date hasn't changed, do nothing
+            if (newIndex === currentIndex) return;
+
+            currentDate = availableDates[newIndex];
+            document.getElementById('current-date').textContent = new Date(currentDate).toLocaleDateString();
+            document.getElementById('prev-day').disabled = newIndex === 0;
+            document.getElementById('next-day').disabled = newIndex === availableDates.length - 1;
+
+            // Fetch and render reports for the new date
+            try {
+                const reports = await fetchReportsForDate(currentDate);
+                await renderTable(reports, currentDate);
+            } catch (error) {
+                showError(`Feil ved lasting av rapporter: ${error.message}`);
+            }
+        }
+
+        function portForReports(report) {
+            // Extract date from filename or timestamp
+            const date = report.filename.match(/\d{4}-\d{2}-\d{2}/)[0];
+            const filename = report.filename.split('/').pop();
+            return `accessibility-reports/${date}/${filename}`;
+        }
+
+        function parseReportFilename(filename) {
+            // Ekskluder filer med '-FAILED.json'
+            if (filename.includes('-FAILED.json')) return null;
+
+            const match = filename.match(/violations-(.+)-(\d{4}-\d{2}-\d{2})T(\d{2}-\d{2}-\d{2}_\d{3}Z)(?:-count-(\d+))?\.json$/);
+            if (!match) return null;
+
+            return {
+                filename,
+                project: match[1],
+                date: match[2],
+                time: match[3],
+                violationCount: match[4] ? parseInt(match[4]) : null
+            };
+        }
+
+        function calculateNoViolationsStreak(projectName, reportList) {
+            const filteredReports = reportList
+                .map(parseReportFilename)
+                .filter(report => report && report.project === projectName)
+                .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+            if (filteredReports.length === 0) {
+                return 0;
+            }
+
+            let streak = 0;
+            let currentDate = new Date(filteredReports[0].date);
+            let hasViolationsToday = !filteredReports[0].filename.includes('-count-0');
+
+            for (let i = 0; i < filteredReports.length; i++) {
+                const report = filteredReports[i];
+                const reportDate = new Date(report.date);
+
+                while (currentDate > reportDate) {
+                    if (hasViolationsToday) {
+                        return streak;
+                    }
+                    streak++;
+                    currentDate.setDate(currentDate.getDate() - 1);
+                }
+
+                if (!report.filename.includes('-count-0')) {
+                    hasViolationsToday = true;
+                } else {
+                    hasViolationsToday = false;
+                }
+            }
+
+            if (!hasViolationsToday) {
+                streak++;
+            }
+
+            return streak;
+        }
+
+        function showReportDetails(report) {
+            const dialog = document.getElementById('details-dialog');
+            const dialogTitle = document.getElementById('dialog-title');
+            const dialogContent = document.getElementById('dialog-content');
+
+            // Sett tittelen
+            dialogTitle.textContent = `${report.project} - Rapportdetaljer`; dialogContent.innerHTML = `
+        <div class="dialog-header">
+            <button class="dialog-close" aria-label="Lukk dialog">×</button>
+        </div>
+        <div class="dialog-content">
+            <p><strong>Dato for rapporten:</strong> ${new Date(report.timestamp).toLocaleString()}</p>
+            <p><strong>URL:</strong> <a href="${report.url}" target="_blank">${report.url}</a></p>
+            <p><strong>Totalt antall brudd:</strong> ${report.total_violations}</p>
+            <div>
+                ${report.violations.map(v => `
+                    <div class="violation-instance">
+                        <h3>${v.id}</h3>
+                        <p><strong>Påvirkning:</strong> ${v.impact}</p>
+                        <p><strong>Hint:</strong> ${v.help.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</p>
+                        <p><strong>Hint url:</strong> <a href="${v.helpUrl}" target="_blank">${v.helpUrl}</a></p>
+                        <p><strong>ID:</strong> ${v.id}</p>
+                        <p><strong>Tags:</strong> ${v.tags ? v.tags.join(', ') : 'N/A'}</p>
+                        <p><strong>Beskrivelse:</strong> ${v.description.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</p>
+                        <p><strong>Instanser:</strong> ${v.violation_count}</p>
+                        ${v.nodes ? `
+                            <div class="violation-nodes">
+                                <h4>Detaljerte feil:</h4>
+                                ${v.nodes.map(node => `
+                                    <div class="violation-node">
+                                        <details>
+                                            <summary>Se detaljer</summary>
+                                            <div class="node-details">
+                                                <p><strong>HTML:</strong></p>
+                                                <pre><code>${node.html.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code></pre>
+                                                ${node.target ? `
+                                                    <p><strong>Selector:</strong></p>
+                                                    <pre><code>${node.target.join('\n')}</code></pre>
+                                                ` : ''}
+                                                ${node.failureSummary ? `
+                                                    <p><strong>Feilbeskrivelse:</strong></p>
+                                                    <pre>${node.failureSummary}</pre>
+                                                ` : ''}
+                                            </div>
+                                        </details>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : ''}
+
+                        <h4>Rapport-link</h4>
+                        <p><a href="${portForReports(report)}" target="_blank">Se rapporten</a></p>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `;
+
+            const closeButton = dialogContent.querySelector('.dialog-close');
+            closeButton.addEventListener('click', () => dialog.close());
+
+            // Sett ARIA-label for dialogen
+            dialog.setAttribute('aria-labelledby', 'dialog-title');
+
+            dialog.showModal();
+        } async function renderTable(reports, date) {
+            console.log(`Rendering table for date: ${date}`); // Debugging
+            const tableContainer = document.getElementById('table-container');
+            tableContainer.innerHTML = '';
+
+            const latestReports = reports;
+            const reportStreaks = new Map();
+            const viewMode = document.getElementById('view-selector').value;
+
+            latestReports.forEach(report => {
+                const streak = calculateNoViolationsStreak(report.project, reportList);
+                reportStreaks.set(report.project, streak);
+            });
+
+            // Collect all violation types and tags
+            const allViolationTypes = new Set();
+            const allViolationTags = new Set();
+
+            latestReports.forEach(report => {
+                report.violations.forEach(v => {
+                    allViolationTypes.add(v.id);
+                    v.tags?.forEach(tag => allViolationTags.add(tag));
+                });
+            });
+
+            console.log(`Rendering Reports Data for ${date}:`, latestReports); // Debugging
+
+            const columns = [
+                'Rang',
+                'Navn',
+                'Se rapportdetaljer',
+                'Totalt antall brudd',
+                'Streak (dager uten brudd)',
+                ...(viewMode === 'types' ? Array.from(allViolationTypes) : Array.from(allViolationTags)),
+            ];
+
+            const table = document.createElement('table');
+            table.className = 'sortable';
+
+            const caption = document.createElement('caption');
+            caption.textContent = `WCAG-brudd topplista for ${date}`;
+            table.appendChild(caption);
+
+            const thead = document.createElement('thead');
+            const headerRow = document.createElement('tr');
+            columns.forEach((col, index) => {
+                const th = document.createElement('th');
+                th.textContent = col;
+                // Don't make the rank column sortable
+                if (index !== 0) {
+                    th.addEventListener('click', () => sortTable(table, index));
+                    th.style.cursor = 'pointer';
+                }
+                headerRow.appendChild(th);
+            });
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
+
+            const tbody = document.createElement('tbody');
+            latestReports.forEach((report, reportIndex) => {
+                const row = document.createElement('tr');
+                row.dataset.violations = report.total_violations;
+                row.dataset.streak = reportStreaks.get(report.project);
+
+                columns.forEach((col, index) => {
+                    const cell = document.createElement('td');
+                    if (index === 0) {
+                        // Rank column - will be updated after sorting
+                        cell.className = 'rank-cell';
+                        cell.textContent = reportIndex + 1;
+                    } else if (index === 1) {
+                        const link = document.createElement('a');
+                        link.href = report.url;
+                        link.textContent = report.project;
+                        link.className = 'project-link';
+                        link.target = '_blank';
+                        cell.appendChild(link);
+                    } else if (index === 2) {
+                        const button = document.createElement('button');
+                        button.className = 'view-report-btn';
+                        button.textContent = `Se rapport fra ${new Date(report.timestamp).toLocaleDateString()}`;
+                        button.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            showReportDetails(report);
+                        });
+                        cell.appendChild(button);
+                    } else if (index === 3) {
+                        cell.textContent = report.total_violations;
+                    } else if (index === 4) {
+                        cell.textContent = reportStreaks.get(report.project);
+                    } else {
+                        if (viewMode === 'types') {
+                            cell.textContent = report.violations.find(v => v.id === col)?.violation_count || 0;
+                        } else {
+                            // Count violations with this tag
+                            const tagCount = report.violations.reduce((count, v) => {
+                                return count + (v.tags?.includes(col) ? v.violation_count : 0);
+                            }, 0);
+                            cell.textContent = tagCount;
+                        }
+                    }
+                    row.appendChild(cell);
+                });
+                tbody.appendChild(row);
+            });
+            table.appendChild(tbody);
+
+            tableContainer.appendChild(table);
+
+            table.dataset.sortDirection = 'desc';
+            sortTable(table, 4, true);
+        }
+
+        function sortTable(table, columnIndex, isInitialSort = false) {
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+
+            if (!rows.length) return;
+
+            const isNumeric = !isNaN(rows[0].children[columnIndex]?.textContent);
+            const currentSortDirection = isInitialSort ? 'desc' : (table.dataset.sortDirection || 'desc');
+            const newSortDirection = isInitialSort ? 'desc' : (currentSortDirection === 'desc' ? 'asc' : 'desc');
+            table.dataset.sortDirection = newSortDirection;
+
+            rows.sort((a, b) => {
+                let aValue = a.children[columnIndex]?.textContent || '';
+                let bValue = b.children[columnIndex]?.textContent || '';
+
+                if (columnIndex === 1) {
+                    aValue = aValue.replace('Se rapport fra ', '');
+                    bValue = bValue.replace('Se rapport fra ', '');
+                }
+
+                let comparison;
+                if (isNumeric) {
+                    comparison = (parseFloat(aValue) || 0) - (parseFloat(bValue) || 0);
+                } else {
+                    comparison = aValue.localeCompare(bValue);
+                }
+                return newSortDirection === 'desc' ? -comparison : comparison;
+            }); rows.forEach(row => tbody.appendChild(row));
+
+            // Update rank numbers after sorting
+            updateRankNumbers(tbody);
+        }
+
+        function updateRankNumbers(tbody) {
+            const rows = tbody.querySelectorAll('tr');
+            rows.forEach((row, index) => {
+                const rankCell = row.querySelector('.rank-cell');
+                if (rankCell) {
+                    rankCell.textContent = index + 1;
+                }
+            });
+        }
+
+        document.getElementById('prev-day').addEventListener('click', () => navigateDay(-1));
+        document.getElementById('next-day').addEventListener('click', () => navigateDay(1));
+
+        // Dialog click-outside handling
+        const dialog = document.getElementById('details-dialog');
+        dialog.addEventListener('click', (e) => {
+            if (e.target === dialog) {
+                dialog.close();
+            }
+        });
+
+        // Handle escape key
+        dialog.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                dialog.close();
+            }
+        });
+        
+        // Initialize
+        async function initialize() {
+            try {
+                // Add error handling indicator to the page
+                const errorContainer = document.createElement('div');
+                errorContainer.id = 'error-container';
+                errorContainer.style.display = 'none';
+                errorContainer.className = 'error-message';
+                document.querySelector('main').appendChild(errorContainer);
+
+                // Fetch report list and store it globally
+                try {
+                    reportList = await fetchReportList();
+                    console.log('Fetched report list:', reportList.length, 'items');
+                } catch (error) {
+                    showError(`Kunne ikke laste rapportlisten: ${error.message}`);
+                    return;
+                }
+
+                // Get available dates
+                availableDates = getAvailableDates(reportList);
+                console.log('Available dates:', availableDates);
+
+                if (availableDates.length === 0) {
+                    showError('Ingen rapportdatoer funnet.');
+                    return;
+                }
+
+                // Ensure current date is valid
+                if (!availableDates.includes(currentDate)) {
+                    currentDate = availableDates[availableDates.length - 1]; // Use latest date
+                    console.log('Adjusted current date to:', currentDate);
+                }
+
+                // Setup date display
+                if (!document.getElementById('current-date')) {
+                    const dateDisplay = document.createElement('span');
+                    dateDisplay.id = 'current-date';
+                    dateDisplay.className = 'current-date';
+                    document.querySelector('.navigation-controls').appendChild(dateDisplay);
+                }
+
+                try {
+                    const reports = await fetchReportsForDate(currentDate);
+                    if (reports.length === 0) {
+                        showError(`Ingen rapporter funnet for ${currentDate}.`);
+                        return;
+                    }
+                    await renderTable(reports, currentDate);
+                } catch (error) {
+                    showError(`Feil ved lasting av rapporter: ${error.message}`);
+                    return;
+                }
+
+                // Initialize UI
+                const currentIndex = availableDates.indexOf(currentDate);
+                document.getElementById('current-date').textContent =
+                    new Date(currentDate).toLocaleDateString();
+                document.getElementById('prev-day').disabled = currentIndex === 0;
+                document.getElementById('next-day').disabled = currentIndex === availableDates.length - 1;
+            } catch (error) {
+                console.error('Feil ved initialisering:', error);
+                showError(`Kritisk feil: ${error.message}`);
+            }
+
+            // Remove duplicate event listeners if they exist
+            const prevDayBtn = document.getElementById('prev-day');
+            const nextDayBtn = document.getElementById('next-day');
+
+            prevDayBtn.replaceWith(prevDayBtn.cloneNode(true));
+            nextDayBtn.replaceWith(nextDayBtn.cloneNode(true));
+            
+            // Add fresh event listeners
+            document.getElementById('prev-day').addEventListener('click', () => navigateDay(-1));
+            document.getElementById('next-day').addEventListener('click', () => navigateDay(1));
+
+            document.getElementById('view-selector').addEventListener('change', async () => {
+                const reports = await fetchReportsForDate(currentDate);
+                await renderTable(reports, currentDate);
+            });
+            
+            // Set up event listeners for the summary dialog
+            document.getElementById('view-summary').addEventListener('click', viewTagSummary);
+
+            // Set up event listeners for the invalid URLs dialog
+            document.getElementById('view-invalid-urls').addEventListener('click', viewInvalidUrls);
+
+            document.getElementById('close-summary-dialog').addEventListener('click', () => {
+                const summaryDialog = document.getElementById('summary-dialog');
+                summaryDialog.close();
+            });
+
+            document.getElementById('close-invalid-urls-dialog').addEventListener('click', () => {
+                const invalidUrlsDialog = document.getElementById('invalid-urls-dialog');
+                invalidUrlsDialog.close();
+            });
+
+            // Handle click outside dialogs
+            document.getElementById('summary-dialog').addEventListener('click', (e) => {
+                if (e.target === document.getElementById('summary-dialog')) {
+                    document.getElementById('summary-dialog').close();
+                }
+            });
+
+            document.getElementById('invalid-urls-dialog').addEventListener('click', (e) => {
+                if (e.target === document.getElementById('invalid-urls-dialog')) {
+                    document.getElementById('invalid-urls-dialog').close();
+                }
+            });
+        }
+
+        // Helper function to show errors on the page
+        function showError(message) {
+            const errorContainer = document.getElementById('error-container');
+            if (errorContainer) {
+                errorContainer.textContent = message;
+                errorContainer.style.display = 'block';
+            }
+            console.error(message);
+        }
+
+        // Initialize the application
+        initialize();
+
+        // Load README content into the dialog
+        async function loadReadme() {
+            try {
+                const response = await fetch('README.md');
+                if (!response.ok) throw new Error('Failed to fetch README.md');
+                const text = await response.text();
+                const readmeContent = document.getElementById('readme-content');
+
+                // Create the link to the GitHub repository with ARIA attributes
+                const link = document.createElement('a');
+                link.href = 'https://github.com/turbolego/uustreak';
+                link.textContent = 'Gå til GitHub Repository';
+                link.target = '_blank';
+                link.setAttribute('aria-label', 'Link til GitHub repo med kildekoden for denne siden');
+
+                // Prepend the link to the readme content
+                readmeContent.appendChild(link);
+                readmeContent.innerHTML += marked.parse(text);
+            } catch (error) {
+                console.error('Error loading README.md:', error);
+            }
+        }
+
+        // Open README dialog
+        document.getElementById('open-readme-dialog').addEventListener('click', () => {
+            const readmeDialog = document.getElementById('readme-dialog');
+            readmeDialog.showModal();
+        });
+
+        // Close README dialog
+        document.getElementById('close-readme-dialog').addEventListener('click', () => {
+            const readmeDialog = document.getElementById('readme-dialog');
+            readmeDialog.close();
+        });
+
+        document.addEventListener('DOMContentLoaded', loadReadme);
+        
+        // End of script
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,934 @@
+name: WCAG Accessibility Testing (self-hosted runner)
+on:
+  schedule:
+    - cron: '0 0 1-7 * 0'  # Runs on the first Sunday of each month
+  workflow_dispatch:   # Allows manual execution
+
+concurrency:
+  group: wcag-testing-${{ github.ref }}
+  cancel-in-progress: false  # Don't cancel running tests
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  actions: write
+
+jobs:
+  setup:
+    runs-on: self-hosted
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+      cache-path: ${{ steps.cache-output.outputs.cache-path }}
+    steps:
+      - name: Clean workspace for setup
+        run: |
+          # Kill any hanging npm or node processes first
+          pkill -f npm || echo "No npm processes to kill"
+          pkill -f node || echo "No node processes to kill"
+          
+          # Wait for processes to fully terminate
+          sleep 3
+          
+          # Force cleanup of problematic directories (try without sudo first)
+          rm -rf node_modules || echo "Cleaned node_modules"
+          rm -rf .git/index.lock || echo "Cleaned git lock file"
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          clean: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git for authentication
+        run: |
+          git config --global url."https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies and Playwright browsers
+        id: cache-output
+        run: |
+          echo "Completely removing npm cache for setup..."
+
+          # Force removal of all npm-related directories and files
+          rm -rf ~/.npm ~/.cache/npm ~/.config/npm /tmp/npm-* 2>/dev/null || echo "Cleaned npm directories"
+
+          # Also clean any npm processes that might be holding locks
+          pkill -f npm || echo "No npm processes to kill"
+
+          # Wait a moment for filesystem to settle
+          sleep 2
+
+          # Create completely fresh npm environment
+          export NPM_CONFIG_CACHE=/tmp/npm-cache-$(date +%s)
+          export NPM_CONFIG_PREFIX=/tmp/npm-prefix-$(date +%s)
+          mkdir -p "$NPM_CONFIG_CACHE" "$NPM_CONFIG_PREFIX"
+
+          # Configure npm to use GitHub token for authentication
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+          echo "@github:registry=https://npm.pkg.github.com" >> ~/.npmrc
+
+          # Set npm to use temporary directories and disable cache
+          npm config set cache "$NPM_CONFIG_CACHE"
+          npm config set prefix "$NPM_CONFIG_PREFIX"
+          npm config set registry https://registry.npmjs.org/
+          npm config set fund false
+          npm config set audit false
+
+          # Retry logic for npm installation
+          MAX_RETRIES=3
+          RETRY_DELAY=5
+          for ((i=1; i<=MAX_RETRIES; i++)); do
+            echo "Attempt $i: Installing dependencies with fresh cache..."
+            npm install --no-save --no-package-lock --prefer-offline=false --cache="$NPM_CONFIG_CACHE" && break || {
+              echo "Attempt $i failed. Retrying in $RETRY_DELAY seconds..."
+              sleep $RETRY_DELAY
+            }
+          done
+
+          # Install Playwright without requiring root permissions
+          export PLAYWRIGHT_BROWSERS_PATH=$HOME/.cache/ms-playwright
+          export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
+          npx playwright install chromium
+          echo "cache-path=$(pwd)" >> $GITHUB_ENV
+
+      - name: Ensure Python and venv are available
+        run: |
+          # Check if python3 and venv are available
+          if ! python3 -m venv --help >/dev/null 2>&1; then
+            echo "Warning: Python venv module not available. Please ensure python3-venv is installed on the runner."
+            echo "Manual installation command: sudo apt-get install -y python3-venv"
+            exit 1
+          else
+            echo "Python venv module is available"
+          fi
+
+      - name: Set up Python virtual environment
+        run: |
+          python3 -m venv venv
+          source venv/bin/activate
+          pip install --upgrade pip
+          pip install beautifulsoup4 requests
+
+      - name: Generate projects.json file
+        run: |
+          source venv/bin/activate
+          python3 crawler.py
+          if [ -d "historical-data/invalid-urls" ]; then
+            mkdir -p invalid-urls-artifacts
+            cp historical-data/invalid-urls/invalid_urls_*.json invalid-urls-artifacts/ 2>/dev/null || echo "No invalid URLs files found"
+          fi
+
+      - name: Generate spec files
+        run: |
+          source venv/bin/activate
+          python3 generate_specs.py
+          cp tag-summary.js tests/
+
+      - name: Ensure jq is available
+        run: |
+          # Check if jq is available
+          if ! command -v jq >/dev/null 2>&1; then
+            echo "Warning: jq is not available. Please ensure jq is installed on the runner."
+            echo "Manual installation command: sudo apt-get install -y jq"
+            exit 1
+          else
+            echo "jq is available"
+          fi
+
+      - name: Generate test distribution
+        id: set-matrix
+        run: |
+          SPECS=(tests/*.spec.ts)
+          TOTAL_SPECS=${#SPECS[@]}
+          TARGET_TESTS_PER_BATCH=8
+          BATCH_COUNT=$(( (TOTAL_SPECS + TARGET_TESTS_PER_BATCH - 1) / TARGET_TESTS_PER_BATCH ))
+
+          # Dynamically calculate max-parallel based on available CPU cores
+          AVAILABLE_CORES=$(nproc)
+          MAX_PARALLEL=$((AVAILABLE_CORES / 2))
+          if [ "$MAX_PARALLEL" -gt 8 ]; then
+            MAX_PARALLEL=8
+          elif [ "$MAX_PARALLEL" -lt 1 ]; then
+            MAX_PARALLEL=1
+          fi
+
+          if [ "$BATCH_COUNT" -gt "$MAX_PARALLEL" ]; then
+            BATCH_COUNT=$MAX_PARALLEL
+          fi
+
+          BATCH_SIZE=$(( (TOTAL_SPECS + BATCH_COUNT - 1) / BATCH_COUNT ))
+
+          BATCHES=$(seq -s ',' 0 $((BATCH_COUNT - 1)) | jq -R 'split(",")' | jq -c '{batch: .}')
+          echo "matrix=$BATCHES" >> $GITHUB_OUTPUT
+          echo "Total specs: $TOTAL_SPECS"
+          echo "Batch count: $BATCH_COUNT"
+          echo "Batch size: $BATCH_SIZE"
+          echo "Max parallel jobs will be: $BATCH_COUNT"
+          echo "Tests per batch: approximately $TARGET_TESTS_PER_BATCH"
+
+      - name: Upload test files
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-spec-files
+          path: tests/
+          retention-days: 1
+
+      - name: Upload invalid URLs files
+        uses: actions/upload-artifact@v4
+        with:
+          name: invalid-urls-files
+          path: invalid-urls-artifacts/
+          retention-days: 30
+        continue-on-error: true
+
+  wcag-test:
+    needs: setup
+    runs-on: self-hosted
+    timeout-minutes: 60
+    strategy:
+      matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
+      fail-fast: false
+      max-parallel: 8
+    steps:
+      - name: Clean workspace manually
+        run: |
+          # Kill any hanging npm processes first
+          pkill -f npm || echo "No npm processes to kill"
+          pkill -f node || echo "No node processes to kill"
+          
+          # Wait for processes to fully terminate
+          sleep 3
+          
+          # Force cleanup of problematic directories (try without sudo first)
+          if [ -d "node_modules" ]; then
+            echo "Removing node_modules directory..."
+            rm -rf node_modules || echo "Cleaned node_modules with fallback"
+          fi
+          
+          # Clean any other problematic directories
+          rm -rf accessibility-reports || echo "Cleaned accessibility-reports"
+          rm -rf playwright-report || echo "Cleaned playwright-report"
+          rm -rf tests || echo "Cleaned tests"
+          rm -rf .git/index.lock || echo "Cleaned git lock file"
+          
+          # Create required directories
+          mkdir -p accessibility-reports
+          mkdir -p playwright-report
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          clean: false
+
+      - name: Download test files
+        uses: actions/download-artifact@v4
+        with:
+          name: test-spec-files
+          path: tests/
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: |
+          # Complete npm cache elimination to prevent corruption issues
+          echo "Completely removing npm cache and using alternative installation..."
+          
+          # Force removal of all npm-related directories and files
+          rm -rf ~/.npm ~/.cache/npm ~/.config/npm /tmp/npm-* 2>/dev/null || echo "Cleaned npm directories"
+          
+          # Also clean any npm processes that might be holding locks
+          pkill -f npm || echo "No npm processes to kill"
+          
+          # Wait a moment for filesystem to settle
+          sleep 2
+          
+          # Create completely fresh npm environment
+          export NPM_CONFIG_CACHE=/tmp/npm-cache-$(date +%s)
+          export NPM_CONFIG_PREFIX=/tmp/npm-prefix-$(date +%s)
+          mkdir -p "$NPM_CONFIG_CACHE" "$NPM_CONFIG_PREFIX"
+          
+          # Set npm to use temporary directories and disable cache
+          npm config set cache "$NPM_CONFIG_CACHE"
+          npm config set prefix "$NPM_CONFIG_PREFIX"
+          npm config set registry https://registry.npmjs.org/
+          npm config set fund false
+          npm config set audit false
+          
+          # Install dependencies with minimal caching and error recovery
+          echo "Installing dependencies with fresh cache..."
+          npm install --no-save --no-package-lock --prefer-offline=false --cache="$NPM_CONFIG_CACHE" || {
+            echo "First install failed, trying with --force..."
+            npm install --force --no-save --no-package-lock --cache="$NPM_CONFIG_CACHE"
+          }
+
+      - name: Install Playwright and Use Cached Browsers
+        run: |
+          # Use the same temporary npm environment
+          export NPM_CONFIG_CACHE=/tmp/npm-cache-$(date +%s)
+          export NPM_CONFIG_PREFIX=/tmp/npm-prefix-$(date +%s)
+          mkdir -p "$NPM_CONFIG_CACHE" "$NPM_CONFIG_PREFIX"
+          
+          # Install Playwright test package with temporary cache
+          npm install @playwright/test --cache="$NPM_CONFIG_CACHE" || {
+            echo "Playwright install failed, trying with --force..."
+            npm install @playwright/test --force --cache="$NPM_CONFIG_CACHE"
+          }
+          
+          # Set browser cache path and install browsers without requiring root permissions
+          export PLAYWRIGHT_BROWSERS_PATH=~/.cache/ms-playwright
+          export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
+          npx playwright install chromium
+
+      - name: Debug system resources
+        run: |
+          echo "CPU info:"
+          nproc
+          echo "Memory info:"
+          free -h
+
+      - name: Run WCAG Accessibility Tests for batch
+        env:
+          NODE_OPTIONS: "--max_old_space_size=4096"
+          BATCH_INDEX: ${{ matrix.batch }}
+        run: |
+          mapfile -t ALL_SPECS < <(ls tests/*.spec.ts)
+          TOTAL_SPECS=${#ALL_SPECS[@]}
+
+          echo "=== DEBUG: Environment check ==="
+          echo "BATCH_INDEX: $BATCH_INDEX"
+          echo "Matrix batch: ${{ matrix.batch }}"
+
+          TARGET_TESTS_PER_BATCH=8
+          BATCH_COUNT=$(( (TOTAL_SPECS + TARGET_TESTS_PER_BATCH - 1) / TARGET_TESTS_PER_BATCH ))
+
+          AVAILABLE_CORES=$(nproc)
+          MAX_PARALLEL=$((AVAILABLE_CORES / 2))
+          if [ "$MAX_PARALLEL" -gt 8 ]; then
+            MAX_PARALLEL=8
+          elif [ "$MAX_PARALLEL" -lt 1 ]; then
+            MAX_PARALLEL=1
+          fi
+
+          if [ "$BATCH_COUNT" -gt "$MAX_PARALLEL" ]; then
+            BATCH_COUNT=$MAX_PARALLEL
+          fi
+
+          BATCH_SIZE=$(( (TOTAL_SPECS + BATCH_COUNT - 1) / BATCH_COUNT ))
+          START_INDEX=$((${{ matrix.batch }} * BATCH_SIZE))
+          END_INDEX=$((START_INDEX + BATCH_SIZE))
+
+          echo "Processing batch ${{ matrix.batch }} with tests $START_INDEX to $((END_INDEX-1))"
+          
+          for ((i = START_INDEX; i < END_INDEX && i < ${#ALL_SPECS[@]}; i++)); do
+            if [ -f "${ALL_SPECS[$i]}" ]; then
+              SPEC_FILE="${ALL_SPECS[$i]}"
+              PROJECT_NAME=$(basename "$SPEC_FILE" .spec.ts | tr '_' ' ')
+              echo "Running Playwright tests for '$PROJECT_NAME' ($SPEC_FILE)"
+              npx playwright test "$SPEC_FILE" || echo "Test completed with violations for $PROJECT_NAME"
+            fi
+          done
+        continue-on-error: true
+
+      - name: Upload test results
+        if: always()
+        run: |
+          # Create artifact directories and upload only if they exist with content
+          mkdir -p test-results-batch-${{ matrix.batch }}
+          
+          if [ -d "accessibility-reports" ] && [ "$(ls -A accessibility-reports 2>/dev/null)" ]; then
+            echo "Copying accessibility reports..."
+            cp -r accessibility-reports test-results-batch-${{ matrix.batch }}/
+          else
+            echo "No accessibility reports found, creating empty directory"
+            mkdir -p test-results-batch-${{ matrix.batch }}/accessibility-reports
+          fi
+          
+          if [ -d "playwright-report" ] && [ "$(ls -A playwright-report 2>/dev/null)" ]; then
+            echo "Copying playwright reports..."
+            cp -r playwright-report test-results-batch-${{ matrix.batch }}/
+          else
+            echo "No playwright reports found, creating empty directory"
+            mkdir -p test-results-batch-${{ matrix.batch }}/playwright-report
+          fi
+
+      - name: Upload artifacts for batch
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-batch-${{ matrix.batch }}
+          path: test-results-batch-${{ matrix.batch }}/
+          retention-days: 30
+
+  merge-summaries:
+    needs: wcag-test
+    runs-on: self-hosted
+    if: always()
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          
+      - name: Download all test artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          pattern: test-results-batch-*
+          merge-multiple: true
+          
+      - name: Merge Summary Parts
+        run: |
+          echo "Merging summary part files..."
+          
+          # Get today's date
+          TODAY=$(date +%Y-%m-%d)
+          echo "Merging summaries for date: $TODAY"
+          
+          # Create target directory structure
+          mkdir -p "accessibility-reports/summaries/$TODAY"
+          
+          # Copy all part files from artifacts
+          find artifacts -name "daily_summary_part_*.json" -exec cp {} "accessibility-reports/summaries/$TODAY/" \;
+          
+          # Debug: Show structure of artifacts directory
+          echo "=== DEBUG: Artifacts directory structure ==="
+          find artifacts -type f -name "*.json" | head -20
+          echo "=== DEBUG: Looking for summary files specifically ==="
+          find artifacts -name "*summary*.json"
+          
+          # List found part files
+          echo "Found part files:"
+          ls -la "accessibility-reports/summaries/$TODAY/daily_summary_part_"*.json 2>/dev/null || echo "No part files found"
+          
+          # Calculate the number of parts based on the number of batches
+          PARTS_COUNT=$(find artifacts -name "daily_summary_part_*.json" | wc -l)
+          echo "Found $PARTS_COUNT summary parts to merge"
+          
+          # Run merge using the actual number of parts found
+          if [ "$PARTS_COUNT" -gt 0 ]; then
+            node merge-summary-parts.js "$TODAY" "$PARTS_COUNT"
+            
+            # Verify the merged file
+            if [ -f "accessibility-reports/summaries/$TODAY/daily_summary.json" ]; then
+              echo "✓ Successfully created merged summary file"
+              echo "File size: $(wc -c < "accessibility-reports/summaries/$TODAY/daily_summary.json") bytes"
+            else
+              echo "✗ Failed to create merged summary file"
+            fi
+          else
+            echo "No summary parts found to merge"
+          fi
+          
+      - name: Upload merged summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: merged-summary
+          path: accessibility-reports/summaries/
+          retention-days: 30
+
+  deploy:
+    needs: [wcag-test, merge-summaries]
+    runs-on: self-hosted
+    steps:
+      - name: Clean workspace
+        run: |
+          # Kill any hanging npm or node processes first
+          pkill -f npm || echo "No npm processes to kill"
+          pkill -f node || echo "No node processes to kill"
+          
+          # Wait for processes to fully terminate
+          sleep 3
+          
+          # Force cleanup of problematic directories (try without sudo first)
+          rm -rf node_modules || echo "Cleaned node_modules"
+          rm -rf accessibility-reports || echo "Cleaned accessibility-reports"
+          rm -rf playwright-report || echo "Cleaned playwright-report"
+          rm -rf tests || echo "Cleaned tests"
+          rm -rf .git/index.lock || echo "Cleaned git lock file"
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git to use GitHub token
+        run: |
+          git config --global url."https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
+
+      - name: Check if gh-pages branch exists
+        id: check-branch
+        run: |
+          if git ls-remote --exit-code --heads origin gh-pages; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create gh-pages branch if it doesn't exist
+        if: steps.check-branch.outputs.exists == 'false'
+        run: |
+          echo "Creating gh-pages branch..."
+          # Create orphan branch without checking it out
+          git checkout --orphan temp-gh-pages
+          git rm -rf .
+          echo "Initial commit" > README.md
+          git add README.md
+          git commit -m "Initialize gh-pages branch"
+          git push origin HEAD:gh-pages
+          git checkout -f main
+
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: main-branch
+
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages-branch
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          pattern: test-results-batch-*
+          merge-multiple: true
+        continue-on-error: true
+
+      - name: Check artifacts directory
+        run: |
+          echo "Checking artifacts directory..."
+          if [ -d "artifacts" ]; then
+            echo "Artifacts directory exists"
+            ls -la artifacts/
+          else
+            echo "No artifacts directory found, creating empty one"
+            mkdir -p artifacts
+          fi
+
+      - name: Download invalid URLs files
+        uses: actions/download-artifact@v4
+        with:
+          name: invalid-urls-files
+          path: invalid-urls-artifacts
+        continue-on-error: true
+
+      - name: Copy JSON Reports and Organize by Date
+        run: |
+          echo "Copying and organizing JSON reports to gh-pages branch..."
+          mkdir -p gh-pages-branch/accessibility-reports
+          CURRENT_DATE=$(date '+%Y-%m-%d')
+          
+          # Create date directory for current reports
+          mkdir -p "gh-pages-branch/accessibility-reports/$CURRENT_DATE"
+
+          # Debug: Show what's actually in artifacts
+          echo "=== DEBUG: Contents of artifacts directory ==="
+          find artifacts -type f -name "*.json" | head -20 || echo "No JSON files found"
+          echo "=== DEBUG: Looking for violations files specifically ==="
+          find artifacts -name "violations-*.json" | head -20 || echo "No violations files found"
+          
+          # Main search for accessibility report files - adjusted to fix the pathing issue
+          FOUND_FILES=false
+          
+          # Search in nested accessibility-reports folder which is where the files actually are
+          for VIOLATIONS_FILE in artifacts/accessibility-reports/violations-*.json; do
+            if [ -f "$VIOLATIONS_FILE" ]; then
+              FILENAME=$(basename "$VIOLATIONS_FILE")
+              TARGET_FILE="gh-pages-branch/accessibility-reports/$CURRENT_DATE/$FILENAME"
+              cp "$VIOLATIONS_FILE" "$TARGET_FILE"
+              echo "Copied $VIOLATIONS_FILE to $TARGET_FILE"
+              FOUND_FILES=true
+            fi
+          done
+          
+          # Try batch directories if the above doesn't work
+          if [ "$FOUND_FILES" = false ]; then
+            echo "Trying batch sub-directories..."
+            for VIOLATIONS_FILE in artifacts/test-results-batch-*/accessibility-reports/violations-*.json; do
+              if [ -f "$VIOLATIONS_FILE" ]; then
+                FILENAME=$(basename "$VIOLATIONS_FILE")
+                TARGET_FILE="gh-pages-branch/accessibility-reports/$CURRENT_DATE/$FILENAME"
+                cp "$VIOLATIONS_FILE" "$TARGET_FILE"
+                echo "Copied $VIOLATIONS_FILE to $TARGET_FILE"
+                FOUND_FILES=true
+              fi
+            done
+          fi
+          
+          # Try original paths as a last resort
+          if [ "$FOUND_FILES" = false ]; then
+            echo "No files found in accessibility-reports, trying direct artifacts search..."
+            for VIOLATIONS_FILE in artifacts/violations-*.json; do
+              if [ -f "$VIOLATIONS_FILE" ]; then
+                FILENAME=$(basename "$VIOLATIONS_FILE")
+                TARGET_FILE="gh-pages-branch/accessibility-reports/$CURRENT_DATE/$FILENAME"
+                cp "$VIOLATIONS_FILE" "$TARGET_FILE"
+                echo "Copied $VIOLATIONS_FILE to $TARGET_FILE"
+                FOUND_FILES=true
+              fi
+            done
+          fi
+          
+          if [ "$FOUND_FILES" = false ]; then
+            echo "Warning: No violations files found to copy"
+            # Create a placeholder file to ensure the directory exists with content
+            echo '{"status":"no_violations_found","date":"'$CURRENT_DATE'"}' > "gh-pages-branch/accessibility-reports/$CURRENT_DATE/no-violations-found.json"
+            echo "Created a placeholder file in $CURRENT_DATE directory"
+          fi
+
+          echo "JSON reports organized by date in gh-pages branch"
+          echo "Contents of gh-pages-branch/accessibility-reports/$CURRENT_DATE:"
+          ls -la "gh-pages-branch/accessibility-reports/$CURRENT_DATE/" || echo "No reports found"
+
+      - name: Generate Daily Summary Files
+        run: |
+          echo "Generating daily summary files from violation reports..."
+          
+          # Setup Node.js environment for tag summary generation
+          cd main-branch
+          npm install || echo "Dependencies already installed"
+          
+          # Copy tag-summary.js to current directory if not present
+          if [ ! -f "tag-summary.js" ]; then
+            echo "Error: tag-summary.js not found in main branch"
+            exit 1
+          fi
+          
+          CURRENT_DATE=$(date '+%Y-%m-%d')
+          VIOLATIONS_DIR="../gh-pages-branch/accessibility-reports/$CURRENT_DATE"
+          
+          # Check if we have any violation files to process
+          if [ ! -d "$VIOLATIONS_DIR" ]; then
+            echo "No violations directory found: $VIOLATIONS_DIR"
+            exit 0
+          fi
+          
+          VIOLATION_FILES=$(find "$VIOLATIONS_DIR" -name "violations-*.json" | wc -l)
+          echo "Found $VIOLATION_FILES violation files to process"
+          
+          if [ "$VIOLATION_FILES" -eq 0 ]; then
+            echo "No violation files found, skipping summary generation"
+            exit 0
+          fi
+            # Process each violation file to generate/update daily summary
+          for VIOLATIONS_FILE in "$VIOLATIONS_DIR"/violations-*.json; do
+            if [ -f "$VIOLATIONS_FILE" ]; then
+              echo "Processing $VIOLATIONS_FILE for daily summary..."
+          
+              # Get absolute path for the violations file
+              ABSOLUTE_VIOLATIONS_FILE=$(realpath "$VIOLATIONS_FILE")
+              echo "Absolute path: $ABSOLUTE_VIOLATIONS_FILE"
+          
+              # Use Node.js to run the tag summary generation
+              node -e "
+                const { generateTagSummary } = require('./tag-summary.js');
+                const fs = require('fs');
+                const path = require('path');
+          
+                // Create absolute paths
+                const violationsFile = '$ABSOLUTE_VIOLATIONS_FILE';
+                const summaryDir = path.resolve('..', 'gh-pages-branch', 'accessibility-reports', 'summaries', '$CURRENT_DATE');
+          
+                console.log('Processing violations file:', violationsFile);
+                console.log('Target summary directory:', summaryDir);
+          
+                // Ensure the summary directory exists in gh-pages-branch
+                if (!fs.existsSync(summaryDir)) {
+                  fs.mkdirSync(summaryDir, { recursive: true });
+                  console.log('Created summary directory:', summaryDir);
+                }
+          
+                // Generate the tag summary for this file
+                try {
+                  generateTagSummary(violationsFile);
+                  console.log('Tag summary generation completed for:', violationsFile);
+                } catch (error) {
+                  console.error('Error generating tag summary:', error.message);
+                }
+          
+                // Check if local summary was generated and copy it
+                const localSummaryPath = path.join('accessibility-reports', 'summaries', '$CURRENT_DATE', 'daily_summary.json');
+                const targetSummaryPath = path.join(summaryDir, 'daily_summary.json');
+          
+                if (fs.existsSync(localSummaryPath)) {
+                  // Copy the summary to gh-pages branch
+                  fs.copyFileSync(localSummaryPath, targetSummaryPath);
+                  console.log('✓ Copied daily summary to gh-pages branch:', targetSummaryPath);
+                } else {
+                  console.log('✗ No local summary generated at:', localSummaryPath);
+                  // List what files do exist in the summaries directory
+                  const summariesParentDir = path.join('accessibility-reports', 'summaries', '$CURRENT_DATE');
+                  if (fs.existsSync(summariesParentDir)) {
+                    console.log('Files in summaries directory:', fs.readdirSync(summariesParentDir));
+                  } else {
+                    console.log('Summaries directory does not exist:', summariesParentDir);
+                  }
+                }
+              "
+            fi
+          done
+            # Verify the summary was created
+          SUMMARY_PATH="../gh-pages-branch/accessibility-reports/summaries/$CURRENT_DATE/daily_summary.json"
+          if [ -f "$SUMMARY_PATH" ]; then
+            echo "✓ Daily summary successfully generated at: $SUMMARY_PATH"
+            echo "  Summary file size: $(stat -f%z "$SUMMARY_PATH" 2>/dev/null || stat -c%s "$SUMMARY_PATH" 2>/dev/null || echo "unknown") bytes"
+            echo "  Summary preview (first 500 chars):"
+            head -c 500 "$SUMMARY_PATH" 2>/dev/null || echo "  Could not preview summary file"
+          else
+            echo "✗ Warning: Daily summary was not generated at expected path: $SUMMARY_PATH"
+            echo "  Checking if summary directory exists..."
+            SUMMARY_DIR="../gh-pages-branch/accessibility-reports/summaries/$CURRENT_DATE"
+            if [ -d "$SUMMARY_DIR" ]; then
+              echo "  Summary directory exists, contents:"
+              ls -la "$SUMMARY_DIR/"
+            else
+              echo "  Summary directory does not exist: $SUMMARY_DIR"
+            fi
+          
+            # Check if any summary files exist anywhere
+            echo "  Searching for any daily_summary.json files:"
+            find ../gh-pages-branch -name "daily_summary.json" 2>/dev/null || echo "  No daily summary files found anywhere"
+          fi
+          
+          echo "Daily summary generation completed"
+
+      - name: Copy Playwright Reports and Organize by Date
+        run: |
+          echo "Copying and organizing Playwright reports to gh-pages branch..."
+          CURRENT_DATE=$(date '+%Y-%m-%d')
+          TARGET_DIR="gh-pages-branch/playwright-reports/$CURRENT_DATE"
+          mkdir -p "$TARGET_DIR"
+
+          # Loop through all report directories for each project batch
+          for REPORT_DIR in artifacts/test-results-batch-*/playwright-report; do
+            echo "Checking directory: $REPORT_DIR"
+            if [ -d "$REPORT_DIR" ]; then
+              PROJECT_NAME=$(basename "$(dirname "$REPORT_DIR")")  # Extract project name
+              PROJECT_DIR="$TARGET_DIR/$PROJECT_NAME"
+              mkdir -p "$PROJECT_DIR"
+
+              # Ensure the main report file is copied correctly
+              if [ -f "$REPORT_DIR/index.html" ]; then
+                cp "$REPORT_DIR/index.html" "$PROJECT_DIR/index.html"
+                echo "Saved Playwright report for $PROJECT_NAME in $PROJECT_DIR/index.html"
+              else
+                echo "Warning: No index.html found in $REPORT_DIR"
+              fi
+            fi
+          done
+
+          echo "All HTML reports saved in $TARGET_DIR"
+
+      - name: Create Gzip Archives for JSON Reports
+        run: |
+          echo "Creating gzip archives for JSON reports by date..."
+          
+          # Find all date directories in accessibility-reports
+          find gh-pages-branch/accessibility-reports -maxdepth 1 -type d -name "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" | while read -r date_dir; do
+            DATE=$(basename "$date_dir")
+            echo "Creating gzip archive for date: $DATE"
+            
+            # Create temporary directory for organizing files
+            TEMP_DIR="temp_$DATE"
+            mkdir -p "$TEMP_DIR"
+            
+            # Copy only the newest JSON files per project for this date to temp directory
+            if [ -d "$date_dir" ]; then
+              # Find all violation JSON files and get the newest per project
+              # This mimics the logic from getNewestReportsForDate() function
+              
+              # First, find all violation files and create a list
+              find "$date_dir" -name "violations-*.json" ! -name "*-FAILED.json" | sort > "temp_violations_$DATE.txt"
+              
+              # Process each file to extract project and keep newest per project
+              declare -A project_files
+              while IFS= read -r file; do
+                filename=$(basename "$file")
+                
+                # Extract project name (everything between violations- and the date)
+                if [[ "$filename" =~ violations-(.+)-[0-9]{4}-[0-9]{2}-[0-9]{2} ]]; then
+                  project="${BASH_REMATCH[1]}"
+                  
+                  # Store the file if it's newer than the current one for this project
+                  current_file="${project_files[$project]}"
+                  if [[ -z "$current_file" ]] || [[ "$filename" > "$(basename "$current_file")" ]]; then
+                    project_files["$project"]="$file"
+                  fi
+                fi
+              done < "temp_violations_$DATE.txt"
+              
+              # Copy the newest files for each project
+              for file in "${project_files[@]}"; do
+                if [[ -f "$file" ]]; then
+                  cp "$file" "$TEMP_DIR/"
+                fi
+              done
+              
+              # Also copy any non-violation JSON files (like summary files, etc.)
+              find "$date_dir" -name "*.json" ! -name "violations-*.json" -exec cp {} "$TEMP_DIR/" \;
+              
+              # Cleanup temp file
+              rm -f "temp_violations_$DATE.txt"
+              
+              total_violations=$(find "$date_dir" -name "violations-*.json" ! -name "*-FAILED.json" | wc -l)
+              selected_violations=$(ls "$TEMP_DIR"/violations-*.json 2>/dev/null | wc -l)
+              echo "Found $total_violations total violation files, selected $selected_violations newest per project for $DATE"
+            fi
+            
+            # Also include summary files for this date if they exist
+            if [ -d "gh-pages-branch/accessibility-reports/summaries/$DATE" ]; then
+              find "gh-pages-branch/accessibility-reports/summaries/$DATE" -name "*.json" -exec cp {} "$TEMP_DIR/" \;
+              echo "Found $(find "gh-pages-branch/accessibility-reports/summaries/$DATE" -name "*.json" | wc -l) summary files for $DATE"
+            fi
+            
+            # Create gzip archive if we have files
+            if [ "$(find "$TEMP_DIR" -name "*.json" | wc -l)" -gt 0 ]; then
+              # Create archive directory
+              mkdir -p "gh-pages-branch/accessibility-reports/archives"
+              
+              # Create tar.gz archive containing all JSON files for this date
+              # Use file list approach to avoid "Argument list too long" error
+              cd "$TEMP_DIR"
+              find . -name "*.json" > filelist.txt
+              tar -czf "../gh-pages-branch/accessibility-reports/archives/reports_$DATE.tar.gz" -T filelist.txt
+              cd ..
+              
+              # Get file size for logging
+              ARCHIVE_SIZE=$(du -h "gh-pages-branch/accessibility-reports/archives/reports_$DATE.tar.gz" | cut -f1)
+              echo "Created archive: reports_$DATE.tar.gz (Size: $ARCHIVE_SIZE)"
+              
+              # Create a manifest file with the list of files in the archive
+              tar -tzf "gh-pages-branch/accessibility-reports/archives/reports_$DATE.tar.gz" | sort > "gh-pages-branch/accessibility-reports/archives/reports_$DATE.manifest"
+              echo "Created manifest: reports_$DATE.manifest"
+            else
+              echo "No JSON files found for $DATE, skipping archive creation"
+            fi
+            
+            # Clean up temp directory
+            rm -rf "$TEMP_DIR"
+          done
+          
+          # Create archive index with metadata
+          echo "Creating archive index..."
+          cd gh-pages-branch/accessibility-reports/archives
+          ls -la *.tar.gz 2>/dev/null | while read -r permissions links owner group size month day time filename; do
+            if [[ "$filename" =~ reports_([0-9]{4}-[0-9]{2}-[0-9]{2})\.tar\.gz ]]; then
+              DATE="${BASH_REMATCH[1]}"
+              FILE_COUNT=$(wc -l < "reports_$DATE.manifest" 2>/dev/null || echo "0")
+              echo "{\"date\":\"$DATE\",\"filename\":\"$filename\",\"size\":\"$size\",\"fileCount\":$FILE_COUNT}"
+            fi
+          done | jq -s 'sort_by(.date) | reverse' > archive_index.json 2>/dev/null || echo "[]" > archive_index.json
+          cd ../../..
+          
+          echo "Archive creation completed. Summary:"
+          ls -la gh-pages-branch/accessibility-reports/archives/ || echo "No archives created"
+
+      - name: Update Report List
+        run: |
+          echo "Updating report list in gh-pages branch..."
+          mkdir -p gh-pages-branch/historical-data
+          find gh-pages-branch/accessibility-reports -type f -name "violations-*.json" -print0 | \
+          while IFS= read -r -d '' file; do
+            relative_path=${file#gh-pages-branch/}
+            echo "$relative_path"
+          done | sort | jq -R . | jq -s . > gh-pages-branch/historical-data/report-list.json
+          
+          echo "Report list contents:"
+          cat gh-pages-branch/historical-data/report-list.json
+          echo "Number of reports: $(jq length gh-pages-branch/historical-data/report-list.json)"
+
+      - name: Deploy static files to GitHub Pages
+        run: |
+          echo "Copying static files to gh-pages branch..."
+          cp main-branch/index.html gh-pages-branch/
+          cp main-branch/favicon.ico gh-pages-branch/
+          cp main-branch/README.md gh-pages-branch/
+          
+          # Copy new JavaScript and CSS files
+          cp main-branch/loading.js gh-pages-branch/
+          cp main-branch/summary.js gh-pages-branch/
+          cp main-branch/styles.css gh-pages-branch/
+          cp main-branch/tag-summary.js gh-pages-branch/
+          cp main-branch/invalid_urls.js gh-pages-branch/
+          cp main-branch/merge-summary-parts.js gh-pages-branch/
+          cp main-branch/validate-summaries.js gh-pages-branch/
+          cp main-branch/gzip-utils.js gh-pages-branch/
+          
+          echo "Static files copied to gh-pages branch"
+
+      - name: Verify files before deployment
+        run: |
+          echo "=== Verifying files in gh-pages-branch before deployment ==="
+          cd gh-pages-branch
+          echo "Current directory structure:"
+          find . -type f -name "*.json" | head -20
+          echo ""
+          echo "Files in current date directory:"
+          CURRENT_DATE=$(date '+%Y-%m-%d')
+          if [ -d "accessibility-reports/$CURRENT_DATE" ]; then
+            ls -la "accessibility-reports/$CURRENT_DATE/"
+          else
+            echo "No current date directory found: accessibility-reports/$CURRENT_DATE"
+          fi
+          echo ""
+          echo "Checking for daily summary files:"
+          SUMMARY_PATH="accessibility-reports/summaries/$CURRENT_DATE/daily_summary.json"
+          if [ -f "$SUMMARY_PATH" ]; then
+            echo "✓ Daily summary exists: $SUMMARY_PATH"
+            echo "  File size: $(stat -f%z "$SUMMARY_PATH" 2>/dev/null || stat -c%s "$SUMMARY_PATH" 2>/dev/null || echo "unknown") bytes"
+          else
+            echo "✗ Daily summary missing: $SUMMARY_PATH"
+          fi
+          echo ""
+          echo "All summary files:"
+          find accessibility-reports/summaries -name "daily_summary.json" 2>/dev/null || echo "No summary files found"
+          echo ""
+          echo "Git status in gh-pages-branch:"
+          git status --porcelain || echo "Not a git repository or no changes"
+          echo ""
+          echo "Total accessibility report files:"
+          find accessibility-reports -name "violations-*.json" | wc -l
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: gh-pages-branch
+          publish_branch: gh-pages
+          keep_files: true
+          allow_empty_commit: true
+          force_orphan: false
+          commit_message: 'Deploy accessibility reports and dashboard updates'
+
+      - name: Trigger Issue Creation
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'create-update-issues-selfhosted.yml',
+              ref: 'main'
+            })

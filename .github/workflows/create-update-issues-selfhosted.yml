@@ -1,0 +1,347 @@
+name: Create or Update WCAG Violation Issues (Self-hosted)
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  create-or-update-issues:
+    runs-on: self-hosted
+    permissions:
+      issues: write
+      contents: read
+
+    steps:
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Create or Update GitHub Issues for Violations
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+
+            console.log("Starting WCAG violation issue creation workflow...");
+
+            function getLatestReportFolder(baseDir) {
+              console.log(`Checking for the latest report folder in: ${baseDir}`);
+
+              if (!fs.existsSync(baseDir)) {
+                console.warn(`Directory ${baseDir} does not exist.`);
+                return null;
+              }
+
+              const subdirs = fs.readdirSync(baseDir)
+                .filter(name => {
+                  const fullPath = path.join(baseDir, name);
+                  return fs.statSync(fullPath).isDirectory() && 
+                         name !== 'summaries' && // Exclude summaries folder
+                         /^\d{4}-\d{2}-\d{2}$/.test(name); // Only include date-formatted folders
+                })
+                .sort((a, b) => b.localeCompare(a)); // Sort descending
+
+              if (subdirs.length === 0) {
+                console.log("No dated subdirectories found in accessibility-reports.");
+                return null;
+              }
+
+              const latestFolder = subdirs[0];
+              console.log(`Latest report folder selected: ${latestFolder}`);
+              return path.join(baseDir, latestFolder);
+            }
+
+            function getLatestSummaryFile(summariesDir) {
+              console.log(`Checking for the latest daily summary in: ${summariesDir}`);
+
+              if (!fs.existsSync(summariesDir)) {
+                console.warn(`Directory ${summariesDir} does not exist.`);
+                return null;
+              }
+
+              const subdirs = fs.readdirSync(summariesDir)
+                .filter(name => fs.statSync(path.join(summariesDir, name)).isDirectory())
+                .sort((a, b) => b.localeCompare(a)); // Sort descending
+
+              if (subdirs.length === 0) {
+                console.log("No subdirectories found in summaries.");
+                return null;
+              }
+
+              const latestSummaryFolder = subdirs[0];
+              const summaryFile = path.join(summariesDir, latestSummaryFolder, 'daily_summary.json');
+              
+              if (fs.existsSync(summaryFile)) {
+                console.log(`Latest daily summary file found: ${summaryFile}`);
+                return summaryFile;
+              }
+
+              console.log("No daily_summary.json found in latest folder.");
+              return null;
+            }
+
+            function getReportsFromFolder(folderPath) {
+              console.log(`Looking for report files in: ${folderPath}`);
+
+              if (!fs.existsSync(folderPath)) {
+                console.warn(`Directory ${folderPath} does not exist.`);
+                return [];
+              }
+
+              const files = fs.readdirSync(folderPath)
+                .filter(file => file.startsWith('violations-') && file.endsWith('.json'));
+
+              console.log(`Found ${files.length} report files in latest folder.`);
+
+              return files.map(file => path.join(folderPath, file));
+            }
+
+            async function findExistingIssue(projectName) {
+              console.log(`Checking for existing issue with title format: [${projectName}] WCAG Violations Report`);
+
+              try {
+                const issues = await github.paginate(github.rest.issues.listForRepo, {
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  state: "all", // Includes closed issues
+                  labels: "wcag-violation",
+                  per_page: 100
+                });
+
+                if (!issues || !Array.isArray(issues)) {
+                  console.warn("No issues found or response format is unexpected.");
+                  return null;
+                }
+
+                return issues.find(issue => issue.title === `[${projectName}] WCAG Violations Report`) || null;
+              } catch (error) {
+                console.error("Error fetching issues:", error);
+                return null;
+              }
+            }
+
+            async function findExistingSummaryIssue() {
+              console.log(`Checking for existing daily summary issue`);
+
+              try {
+                const issues = await github.paginate(github.rest.issues.listForRepo, {
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  state: "all", // Includes closed issues
+                  labels: "wcag-summary",
+                  per_page: 100
+                });
+
+                if (!issues || !Array.isArray(issues)) {
+                  console.warn("No issues found or response format is unexpected.");
+                  return null;
+                }
+
+                return issues.find(issue => issue.title === `WCAG Daily Summary Report`) || null;
+              } catch (error) {
+                console.error("Error fetching issues:", error);
+                return null;
+              }
+            }
+
+            async function processDailySummary(summaryFile) {
+              console.log(`Processing daily summary: ${summaryFile}`);
+
+              try {
+                const content = fs.readFileSync(summaryFile, 'utf8');
+                const summary = JSON.parse(content);
+
+                if (!summary || typeof summary !== 'object') {
+                  console.warn(`Skipping ${summaryFile} - Invalid structure`);
+                  return;
+                }
+
+                const { date, total_projects, total_violations, projects_with_violations, summary_stats } = summary;
+
+                const issueTitle = `WCAG Daily Summary Report`;
+
+                const body = [
+                  `## WCAG Daily Summary Report`,
+                  '',
+                  `**Date:** ${date}`,
+                  `**Total Projects Scanned:** ${total_projects}`,
+                  `**Total Violations Found:** ${total_violations}`,
+                  `**Projects with Violations:** ${projects_with_violations}`,
+                  '',
+                  '### Summary Statistics:',
+                  '',
+                  ...Object.entries(summary_stats || {}).map(([key, value]) => `- **${key}:** ${value}`),
+                  '',
+                  '### Project Details:',
+                  '',
+                  ...(summary.projects || []).map(project => [
+                    `#### ${project.name}`,
+                    `- **URL:** [${project.url}](${project.url})`,
+                    `- **Total Violations:** ${project.total_violations}`,
+                    `- **Status:** ${project.status}`,
+                    ...(project.violations_by_impact ? Object.entries(project.violations_by_impact).map(([impact, count]) => `- **${impact}:** ${count}`) : []),
+                    ''
+                  ]).flat()
+                ].join('\n');
+
+                const existingIssue = await findExistingSummaryIssue();
+
+                if (existingIssue) {
+                  console.log(`Updating existing daily summary issue: ${existingIssue.html_url}`);
+
+                  await github.rest.issues.update({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: existingIssue.number,
+                    body: body,
+                    state: "open" // Reopen if closed
+                  });
+
+                  console.log(`Daily summary issue updated and reopened successfully.`);
+                } else {
+                  console.log(`Creating new daily summary issue`);
+
+                  await github.rest.issues.create({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    title: issueTitle,
+                    body: body,
+                    labels: ['wcag-summary', 'automated-report']
+                  });
+
+                  console.log(`New daily summary issue created.`);
+                }
+              } catch (error) {
+                console.error(`Error processing daily summary file: ${summaryFile}`, error);
+              }
+            }
+
+            // Process daily summary first
+            const summaryFile = getLatestSummaryFile('accessibility-reports/summaries');
+            if (summaryFile) {
+              await processDailySummary(summaryFile);
+            } else {
+              console.log("No daily summary file found.");
+            }
+
+            // Process individual violation reports
+            const latestFolder = getLatestReportFolder('accessibility-reports');
+            if (!latestFolder) {
+              console.log("No valid report folder found. Skipping individual reports.");
+            } else {
+              const reportFiles = getReportsFromFolder(latestFolder);
+              if (reportFiles.length === 0) {
+                console.log("No valid individual reports found.");
+              } else {
+                // Track projects that have already been processed to prevent duplicates
+                const processedProjects = new Set();
+
+                for (const file of reportFiles) {
+                  console.log(`Processing file: ${file}`);
+
+                  try {
+                    const content = fs.readFileSync(file, 'utf8');
+                    const report = JSON.parse(content);
+
+                    if (!report || typeof report !== 'object' || !Array.isArray(report.violations)) {
+                      console.warn(`Skipping ${file} - Invalid structure`);
+                      continue;
+                    }
+
+                    const { project, timestamp, url, total_violations, violations } = report;
+                    
+                    // Skip if this project has already been processed in this run
+                    if (processedProjects.has(project)) {
+                      console.log(`Project "${project}" has already been processed in this run. Skipping to prevent duplicates.`);
+                      continue;
+                    }
+
+                    console.log(`File read successfully: ${file}`);
+                    console.log(`Project: ${project}, Timestamp: ${timestamp}, URL: ${url}`);
+                    console.log(`Total Violations Reported: ${total_violations}`);
+
+                    const violationsWithCount = violations.filter(v => v && typeof v === 'object' && v.violation_count > 0);
+                    if (violationsWithCount.length === 0) {
+                      console.log(`No violations with count > 0 in ${file}. Skipping.`);
+                      continue;
+                    }
+
+                    const issueTitle = `[${project}] WCAG Violations Report`;
+
+                const body = [
+                  `## WCAG Violations Report for ${project}`,
+                  '',
+                  `**Timestamp:** ${timestamp}`,
+                  `**URL:** [${url}](${url})`,
+                  `**Total Violations:** ${total_violations}`,
+                  '',
+                  '### Violation Details:',
+                  '',
+                  ...violationsWithCount.map(violation => [
+                    `- **Impact:** ${violation.impact || 'N/A'}`,
+                    `- **Description:** ${violation.description || 'N/A'}`,
+                    `- **Help:** ${violation.help || 'N/A'}`,
+                    `- **Help Url:** ${violation.helpUrl || 'N/A'}`,
+                    `- **Tags:** ${violation.tags ? violation.tags.join(', ') : 'N/A'}`,
+                    `- **Count:** ${violation.violation_count}`,
+                    `- **Affected Elements:**`,
+                    ...violation.nodes.map(node => `  - \`${node.target.join(', ')}\``),
+                    ''
+                  ]).flat()
+                ].join('\n');
+
+                // Collect all unique tags from violations for this project
+                const allTags = new Set(['wcag-violation', 'automated-report']);
+                violationsWithCount.forEach(violation => {
+                  if (violation.tags && Array.isArray(violation.tags)) {
+                    violation.tags.forEach(tag => allTags.add(tag));
+                  }
+                });
+
+                // Convert Set to array for the GitHub API
+                const labels = Array.from(allTags);
+
+                    const existingIssue = await findExistingIssue(project);
+
+                    if (existingIssue) {
+                      console.log(`Updating existing issue: ${existingIssue.html_url}`);
+
+                  await github.rest.issues.update({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: existingIssue.number,
+                    body: body,
+                    state: "open", // Reopen if closed
+                    labels: labels
+                  });
+
+                      console.log(`Issue updated and reopened successfully.`);
+                    } else {
+                      console.log(`Creating new issue for ${project}`);
+
+                  await github.rest.issues.create({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    title: issueTitle,
+                    body: body,
+                    labels: labels
+                  });
+
+                      console.log(`New issue created for ${project}.`);
+                    }
+                    
+                    // Mark this project as processed
+                    processedProjects.add(project);
+                    
+                  } catch (error) {
+                    console.error(`Error processing file: ${file}`, error);
+                  }
+                }
+
+                console.log(`Projects processed in this run: ${Array.from(processedProjects).join(', ')}`);
+              }
+            }
+
+            console.log("WCAG violation issue creation workflow completed.");
