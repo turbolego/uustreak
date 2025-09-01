@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All WCAG Violations</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        canvas {
+            width: 100%;
+            max-height: 400px;
+        }
+
+        .details {
+            margin-top: 20px;
+        }
+
+        .violation {
+            margin-bottom: 15px;
+        }
+
+        .navigation-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+<h1>All WCAG Violations</h1>
+<canvas id="overviewChart"></canvas>
+<div class="navigation-buttons">
+    <button id="prevButton" disabled>Previous</button>
+    <button id="nextButton" disabled>Next</button>
+</div>
+<div id="violationDetails" class="details"></div>
+
+<script>
+    const reportListUrl = 'historical-data/report-list.json';
+    let datasets = [];
+    let currentIndex = -1;
+    let currentProject = '';
+
+    async function fetchReportList() {
+        const response = await fetch(reportListUrl);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch report list: ${response.statusText}`);
+        }
+        return response.json();
+    }
+
+    async function fetchReportData(reportPath) {
+        const adjustedPath = reportPath.replace('gh-pages-branch/', '');
+        const response = await fetch(adjustedPath);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch report data from ${adjustedPath}`);
+        }
+        return response.json();
+    }
+
+    async function initialize() {
+        try {
+            const reportList = await fetchReportList();
+            const reportDataPromises = reportList.map(fetchReportData);
+            const allReportData = await Promise.all(reportDataPromises);
+
+            // Group data by project
+            const projects = {};
+            allReportData.forEach(report => {
+                if (!projects[report.project]) {
+                    projects[report.project] = [];
+                }
+                projects[report.project].push(report);
+            });
+
+            // Prepare chart datasets
+            datasets = Object.keys(projects).map(project => ({
+                label: project,
+                data: projects[project].map(report => ({
+                    x: new Date(report.timestamp),
+                    y: report.total_violations,
+                    report
+                })),
+                borderColor: getRandomColor(),
+                fill: false,
+                tension: 0.1
+            }));
+
+            const ctx = document.getElementById('overviewChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'WCAG Violations by Project'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: (context) => `Violations: ${context.raw.y}`
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            type: 'time',
+                            title: {
+                                display: true,
+                                text: 'Timestamp'
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Total Violations'
+                            }
+                        }
+                    },
+                    onClick(event, elements) {
+                        if (elements.length > 0) {
+                            const datasetIndex = elements[0].datasetIndex;
+                            const dataIndex = elements[0].index;
+                            const report = datasets[datasetIndex].data[dataIndex].report;
+
+                            currentProject = datasets[datasetIndex].label;
+                            currentIndex = dataIndex;
+
+                            renderDetails(report);
+                            updateNavigationButtons(datasetIndex);
+                        }
+                    }
+                }
+            });
+        } catch (error) {
+            console.error('Error initializing application:', error);
+        }
+    }
+
+    function renderDetails(report) {
+        const detailsDiv = document.getElementById('violationDetails');
+        detailsDiv.innerHTML = `
+            <h2>Violation Details</h2>
+            <p><strong>Report Date:</strong> ${new Date(report.timestamp).toLocaleString()}</p>
+            <p><strong>URL:</strong> <a href="${report.url}" target="_blank">${report.url}</a></p>
+            <p><strong>Total Violations:</strong> ${report.total_violations}</p>
+            <div>
+                ${report.violations.map(v => `
+                    <div class="violation">
+                        <h3>${v.id}</h3>
+                        <p><strong>Impact:</strong> ${v.impact}</p>
+                        <p><strong>Description:</strong> ${v.description}</p>
+                        <p><strong>Instances:</strong> ${v.violation_count}</p>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
+
+    function updateNavigationButtons(datasetIndex) {
+        const projectData = datasets[datasetIndex].data;
+
+        document.getElementById('prevButton').disabled = currentIndex <= 0;
+        document.getElementById('nextButton').disabled = currentIndex >= projectData.length - 1;
+    }
+
+    document.getElementById('prevButton').addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            const projectData = datasets.find(d => d.label === currentProject).data;
+            renderDetails(projectData[currentIndex].report);
+            updateNavigationButtons(datasets.findIndex(d => d.label === currentProject));
+        }
+    });
+
+    document.getElementById('nextButton').addEventListener('click', () => {
+        const projectData = datasets.find(d => d.label === currentProject).data;
+        if (currentIndex < projectData.length - 1) {
+            currentIndex++;
+            renderDetails(projectData[currentIndex].report);
+            updateNavigationButtons(datasets.findIndex(d => d.label === currentProject));
+        }
+    });
+
+    function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    initialize();
+</script>
+</body>
+</html>

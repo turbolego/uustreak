@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <canvas id="barChart" aria-label="Bar chart representing total violations by project" role="img"></canvas>
+    <button id="prevDay">Previous</button>
+    <button id="nextDay">Next</button>
+
+    <div id="details"></div>
+
+    <script>
+        let parsedReports = [];
+        let groupedByDay = [];
+        let currentIndex = 0;
+
+        const ctx = document.getElementById('barChart').getContext('2d');
+        let chart;
+
+        // Fetch and process report list
+        fetch('historical-data/report-list.json')
+            .then(response => response.json())
+            .then(reportList => {
+                parsedReports = reportList.map(path => {
+                    const projectNameMatch = path.match(/violations-(.*?)-\d{4}-\d{2}-\d{2}T/);
+                    const projectName = projectNameMatch ? projectNameMatch[1].replace(/_/g, ' ') : 'Unknown Project';
+                    const dateMatch = path.match(/\d{4}-\d{2}-\d{2}/);
+                    const date = dateMatch ? dateMatch[0] : 'Unknown Date';
+
+                    return {
+                        path,
+                        projectName,
+                        date
+                    };
+                });
+
+                groupReportsByDay();
+                renderChart();
+            });
+
+        // Group reports by day
+        function groupReportsByDay() {
+            const dayMap = {};
+            parsedReports.forEach(report => {
+                if (!dayMap[report.date]) {
+                    dayMap[report.date] = [];
+                }
+                dayMap[report.date].push(report);
+            });
+
+            groupedByDay = Object.entries(dayMap).map(([date, reports]) => ({
+                date,
+                projects: reports.reduce((acc, report) => {
+                    if (!acc[report.projectName]) {
+                        acc[report.projectName] = {
+                            name: report.projectName,
+                            totalViolations: 0,
+                            paths: []
+                        };
+                    }
+                    acc[report.projectName].paths.push(report.path);
+                    return acc;
+                }, {})
+            })).sort((a, b) => new Date(a.date) - new Date(b.date));
+        }
+
+        // Render bar chart
+        function renderChart() {
+            if (!groupedByDay.length) return;
+
+            const currentDay = groupedByDay[currentIndex];
+            const labels = Object.values(currentDay.projects).map(project => project.name);
+            const dataPromises = Object.values(currentDay.projects).map(async project => {
+                let totalViolations = 0;
+                for (const path of project.paths) {
+                    const report = await fetchReportData(path);
+                    totalViolations += report.total_violations;
+                }
+                return totalViolations;
+            });
+
+            Promise.all(dataPromises).then(data => {
+                if (chart) {
+                    chart.destroy();
+                }
+
+                chart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels,
+                        datasets: [{
+                            label: `Total Violations (${currentDay.date})`,
+                            data,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                display: true
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: context => `Total Violations: ${context.raw}`
+                                }
+                            }
+                        },
+                        onClick: (event, elements) => {
+                            if (elements.length > 0) {
+                                const index = elements[0].index;
+                                renderDetails(Object.values(currentDay.projects)[index]);
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            });
+        }
+
+        // Fetch report data
+        async function fetchReportData(reportPath) {
+            const adjustedPath = reportPath.replace('gh-pages-branch/', '');
+            const response = await fetch(adjustedPath);
+            if (!response.ok) {
+                throw new Error(`Failed to fetch report data from ${adjustedPath}`);
+            }
+            return response.json();
+        }
+
+        // Render details for a project
+        async function renderDetails(project) {
+            const detailsDiv = document.getElementById('details');
+            const projectData = await Promise.all(project.paths.map(async path => {
+                const report = await fetchReportData(path);
+                return {
+                    url: report.url,
+                    timestamp: report.timestamp,
+                    totalViolations: report.total_violations,
+                    violations: report.violations
+                };
+            }));
+
+            detailsDiv.innerHTML = `
+                <h2>Violation Details for ${project.name}</h2>
+                <div>
+                    ${projectData.map(report => `
+                        <div class="violation">
+                            <p><strong>Report Date:</strong> ${new Date(report.timestamp).toLocaleString()}</p>
+                            <p><strong>URL:</strong> <a href="${report.url}" target="_blank">${report.url}</a></p>
+                            <p><strong>Total Violations:</strong> ${report.totalViolations}</p>
+                            <div>
+                                ${report.violations.map(v => `
+                                    <div class="violation-instance">
+                                        <h3>${v.id}</h3>
+                                        <p><strong>Impact:</strong> ${v.impact}</p>
+                                        <p><strong>Description:</strong> ${v.description}</p>
+                                        <p><strong>Instances:</strong> ${v.violation_count}</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        // Event listeners for navigation buttons
+        document.getElementById('prevDay').addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                renderChart();
+            }
+        });
+
+        document.getElementById('nextDay').addEventListener('click', () => {
+            if (currentIndex < groupedByDay.length - 1) {
+                currentIndex++;
+                renderChart();
+            }
+        });
+    </script>
+</body>
+
+</html>
