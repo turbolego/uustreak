@@ -7,7 +7,7 @@ Prosjektet bruker i utgangspunktet listen fra 2018 med 278 nettsider i privat og
 
 Løsningen kjører Playwright med AXE på GitHub Actions.
 
-Lansert på ODIN konferansen i 2025 i forbindelse med presentasjonen ["Levande Tilgjengelighetserklæring"](https://event.dataforeningen.no/odin2025/program/).
+Lansert på ODIN konferansen i 2025 i forbindelse med presentasjonen ["Levende Tilgjengelighetserklæring"](https://event.dataforeningen.no/odin2025/program/).
 
 # Nettsider endret eller fjernet fra listen
 
