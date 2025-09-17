@@ -55,6 +55,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Cache Playwright browser directory
+        id: playwright-cache
         uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
@@ -65,7 +66,7 @@ jobs:
         id: cache-output
         run: |
           npm ci
-          npx playwright install --with-deps
+          npx playwright install chromium firefox --with-deps
           echo "cache-path=$(pwd)" >> $GITHUB_ENV
       - name: Generate test distribution
         id: set-matrix
@@ -96,15 +97,29 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Reuse Setup and Install Cache
-        run: |
-          cd ${{ needs.setup.outputs.cache-path }}
-      - name: Use Cached Playwright Browsers
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Cache Node.js modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Cache Playwright browser directory
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-playwright-
+      - name: Install Node.js dependencies
+        run: npm ci
+      - name: Install Playwright browsers with dependencies
         run: |
           export PLAYWRIGHT_BROWSERS_PATH=~/.cache/ms-playwright
-          npx playwright install
-      - name: Install @playwright/test
-        run: npm install @playwright/test
+          npx playwright install chromium firefox --with-deps
       - name: Ensure Python and venv are available
         run: |
           # Check if python3 and venv are available
