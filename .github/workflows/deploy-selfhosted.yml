@@ -229,7 +229,7 @@ jobs:
           clean: false
 
       - name: Download test files
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: test-spec-files
           path: tests/
@@ -385,7 +385,7 @@ jobs:
           node-version: '22'
           
       - name: Download all test artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           path: artifacts
           pattern: test-results-batch-*
@@ -508,7 +508,7 @@ jobs:
           path: gh-pages-branch
 
       - name: Download all artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           path: artifacts
           pattern: test-results-batch-*
@@ -527,7 +527,7 @@ jobs:
           fi
 
       - name: Download invalid URLs files
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: invalid-urls-files
           path: invalid-urls-artifacts
