@@ -922,7 +922,7 @@ jobs:
           commit_message: 'Deploy accessibility reports and dashboard updates'
 
       - name: Trigger Issue Creation
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
