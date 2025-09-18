@@ -1,0 +1,65 @@
+{
+  "project": "Fagerlund skole",
+  "timestamp": "2025-09-18T10:23:59.051Z",
+  "url": "https://www.ringsaker.kommune.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"no\" xml:lang=\"no\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<div class=\"parallax-mirror\" style=\"visibility: visible; z-index: -100; position: fixed; top: 27.8125px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 504px; width: 1280px;\">",
+          "target": [
+            ".parallax-mirror"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"toptop cf\">\n\t\t\t\t<span class=\"topinfo fl\">\n\t\t\t\t\tDette er Ringsaker kommunes offentlige nettsted. For å komme til vår markedsportal, besøk  <a href=\"http://www.ringsaker.no\" target=\"_blank\">www.ringsaker.no</a>\n\t\t\t\t</span>\n\t\t\t</div>",
+          "target": [
+            ".toptop"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"formbtn\">Meld deg på nyhetsbrev!</div>",
+          "target": [
+            "#formbtn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
