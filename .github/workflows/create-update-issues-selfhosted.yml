@@ -18,7 +18,7 @@ jobs:
           ref: gh-pages
 
       - name: Create or Update GitHub Issues for Violations
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             const fs = require('fs');
