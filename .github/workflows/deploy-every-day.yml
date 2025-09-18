@@ -20,8 +20,8 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
       cache-path: ${{ steps.cache-output.outputs.cache-path }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: '22'
       - name: Cache Node.js modules
@@ -70,10 +70,10 @@ jobs:
       max-parallel: 2
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: '22'
       - name: Cache Node.js modules
@@ -166,17 +166,17 @@ jobs:
     if: always()
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
           
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '22'
           
       - name: Download all test artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           path: artifacts
           pattern: test-results-batch-*
@@ -236,27 +236,27 @@ jobs:
     if: always()
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: Checkout gh-pages branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: gh-pages
           path: gh-pages-branch
       - name: Download all artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           path: artifacts
           pattern: test-results-batch-*
           merge-multiple: true
       - name: Download merged summary artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: merged-summary-${{ github.run_id }}
           path: merged-summaries
       - name: Download invalid URLs files
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: invalid-urls-files
           path: invalid-urls-artifacts
