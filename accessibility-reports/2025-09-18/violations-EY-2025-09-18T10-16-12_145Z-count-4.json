@@ -1,0 +1,690 @@
+{
+  "project": "EY",
+  "timestamp": "2025-09-18T10:16:12.146Z",
+  "url": "https://www.ey.com/en_us",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "aria-required-parent",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require parent roles are contained by them",
+      "help": "Certain ARIA roles must be contained by particular parents",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-parent?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<a href=\"/en_us/services\" data-cmp-clickable=\"\" class=\"cmp-navigation__item-link nav-level-one\" role=\"tab\" tabindex=\"0\" aria-hidden=\"false\">Services</a>",
+          "target": [
+            ".nav-level-one[href$=\"services\"][aria-hidden=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<a href=\"/en_us/industries\" data-cmp-clickable=\"\" class=\"cmp-navigation__item-link nav-level-one\" role=\"tab\" tabindex=\"0\" aria-hidden=\"false\">Industries</a>",
+          "target": [
+            ".nav-level-one[href$=\"industries\"][aria-hidden=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<a href=\"/en_us/insights\" data-cmp-clickable=\"\" class=\"cmp-navigation__item-link nav-level-one\" role=\"tab\" tabindex=\"0\" aria-hidden=\"false\">Insights</a>",
+          "target": [
+            ".nav-level-one[href$=\"insights\"][aria-hidden=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<a href=\"/en_us/about-us\" data-cmp-clickable=\"\" class=\"cmp-navigation__item-link nav-level-one\" role=\"tab\" tabindex=\"0\" aria-hidden=\"false\">About us</a>",
+          "target": [
+            ".nav-level-one[href$=\"about-us\"][aria-hidden=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<a href=\"/en_us/careers\" data-cmp-clickable=\"\" class=\"cmp-navigation__item-link nav-level-one level-one-last-link\" role=\"tab\" tabindex=\"0\" aria-hidden=\"false\">Careers</a>",
+          "target": [
+            ".nav-level-one[href$=\"careers\"][aria-hidden=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a class=\"skipToContent-button\" href=\"#\" title=\"Skip to content\">Skip to content</a>",
+          "target": [
+            ".skipToContent-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.07 (foreground color: #ffffff, background color: #f6f6fa, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">Technology</p>",
+          "target": [
+            "a[data-index=\"4\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.07 (foreground color: #ffffff, background color: #f6f6fa, font size: 24.0pt (32px), font weight: normal). Expected contrast ratio of 3:1"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">EY Transformation</p>",
+          "target": [
+            "a[href$=\"transformation\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.07 (foreground color: #ffffff, background color: #f6f6fa, font size: 24.0pt (32px), font weight: normal). Expected contrast ratio of 3:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<p class=\"up-promotional-banner__content-heading\" role=\"heading\" aria-level=\"3\" data-analytics-label=\"\">\n      EY World Entrepreneur Of The Year™ 2025 winner\n    </p>",
+          "target": [
+            "#promotional-80dd753b8eef > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level=\"3\"][role=\"heading\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<p class=\"up-promotional-banner__content-heading\" role=\"heading\" aria-level=\"3\" data-analytics-label=\"\">\n      Our commitment to audit quality\n    </p>",
+          "target": [
+            "#promotional-133d0f7da255 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level=\"3\"][role=\"heading\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 78,
+      "nodes": [
+        {
+          "html": "<div class=\"skip-content-wrapper\"><a class=\"skipToContent-button\" href=\"#\" title=\"Skip to content\">Skip to content</a></div>",
+          "target": [
+            ".skip-content-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"sr-only\">EY Homepage</span>",
+          "target": [
+            ".cmp-logo__link > .sr-only"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"myey-login-url\" title=\"My EY\" href=\"https://login.ey.com/myey/login\" data-analytics-link-click=\"\" role=\"link\" aria-label=\"My EY\" tabindex=\"0\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            ".myey-login-url"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"featured_av-caption-wrapper\">",
+          "target": [
+            ".featured_av-caption-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true\" srcset=\"/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=100 100w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=200 200w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=300 300w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=400 400w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=500 500w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=600 600w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=700 700w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=800 800w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=900 900w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=1000 1000w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=1100 1100w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=1200 1200w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=1600 1600w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=1800 1800w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=2000 2000w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=2400 2400w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=2700 2700w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=3000 3000w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=3300 3300w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=3600 3600w,/adobe/dynamicmedia/deliver/dm-aid--59ef7665-a8e7-44c9-831a-132b566db3f5/ey-team-of-two-creative-entrepreneurs-v2.jpg?quality=85&amp;preferwebp=true&amp;width=3840 3840w\" loading=\"lazy\" class=\"cmp-image__image\" itemprop=\"contentUrl\" width=\"3840\" height=\"2560\" alt=\"Multiethnic Diverse Office Conference Room Meeting: Team of Two Creative Entrepreneurs Talk, Discuss Growth Strategy. Stylish Young Businesspeople work on Investment and Marketing Projects.\" title=\"Team of Two Creative Entrepreneurs\">",
+          "target": [
+            "#image-render-3d1acda386 > .cmp-image__image[width=\"3840\"][height=\"2560\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"upContentCard component up-content-cards--dotted\">",
+          "target": [
+            ".upContentCard"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"up-promotional-banner__content-heading\" role=\"heading\" aria-level=\"1\" data-analytics-label=\"\">\n      Transformative experiences that move people and shape markets\n    </p>",
+          "target": [
+            "#promotional-afb7f2d87237 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level=\"1\"][role=\"heading\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__content-description\" data-analytics-text-click=\"\">\n      <p>EY Studio+ combines design, technology and commercial insight, augmented by EY.ai and powered by our full spectrum of services.</p>\n\n    </div>",
+          "target": [
+            "#promotional-afb7f2d87237 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a target=\"_blank\" id=\"button-1e9f5c38315c\" class=\"up-button cmp-button \" href=\"https://studio.ey.com/\" aria-label=\"Learn more on studio.ey.com\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"https://studio.ey.com/.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-1e9f5c38315c"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-dbcdf74a11cd\" class=\"up-button cmp-button \" href=\"/en_us/newsroom/2025/06/ey-studio-launches-to-bring-a-customer-first-approach-to-growth-and-transformation-in-the-ai-era\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/us/en_us/home/newsroom/2025/06/ey-studio-launches-to-bring-a-customer-first-approach-to-growth-and-transformation-in-the-ai-era.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-dbcdf74a11cd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true\" srcset=\"/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=100 100w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=200 200w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=300 300w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=400 400w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=500 500w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=600 600w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=700 700w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=800 800w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=900 900w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=1000 1000w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=1100 1100w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=1200 1200w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=1600 1600w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=1800 1800w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=2000 2000w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=2400 2400w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=2700 2700w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=3000 3000w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=3300 3300w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=3600 3600w,/adobe/dynamicmedia/deliver/dm-aid--5b8e2822-6bb9-431e-8394-d71635828fe9/ey-studio-banner-half-1800x1200-v6.png?quality=85&amp;preferwebp=true&amp;width=3840 3840w\" loading=\"lazy\" class=\"cmp-image__image\" itemprop=\"contentUrl\" width=\"1800\" height=\"1200\" alt=\"EY Studio+ Shape the future with confidence\" title=\"EY Studio+ Shape the future with confidence\">",
+          "target": [
+            "img[width=\"1800\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"up-promotional-banner__content-heading\" role=\"heading\" aria-level=\"3\" data-analytics-label=\"\">\n      EY World Entrepreneur Of The Year™ 2025 winner\n    </p>",
+          "target": [
+            "#promotional-80dd753b8eef > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level=\"3\"][role=\"heading\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__content-description\" data-analytics-text-click=\"\">\n      <p>Congratulations to Stina Ehrensvärd of Sweden, winner of the ultimate global competition for entrepreneurs.</p>\n\n    </div>",
+          "target": [
+            "#promotional-80dd753b8eef > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-6c246ac2b895\" class=\"up-button cmp-button \" href=\"/en_us/weoy\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/us/en_us/home/campaigns/weoy.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-6c246ac2b895"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true\" srcset=\"/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=100 100w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=200 200w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=300 300w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=400 400w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=500 500w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=600 600w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=700 700w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=800 800w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=900 900w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=1000 1000w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=1100 1100w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=1200 1200w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=1600 1600w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=1800 1800w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=2000 2000w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=2400 2400w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=2700 2700w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=3000 3000w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=3300 3300w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=3600 3600w,/adobe/dynamicmedia/deliver/dm-aid--be446b39-36de-42b8-bd22-25a279a71bb4/ey-stina-ehrensvard-weoy-2025-winner-trophy-v3-promo.jpg?quality=85&amp;preferwebp=true&amp;width=3840 3840w\" loading=\"lazy\" class=\"cmp-image__image\" itemprop=\"contentUrl\" width=\"3840\" height=\"2560\" alt=\"EY World Entrepreneur Of The Year winner's 2025, Stina Ehrensvärd, Sweden\" title=\"Stina Ehrensvärd EY World Entrepreneur Of The Year™ 2025 winner from Sweden\">",
+          "target": [
+            "#image-render-6b3014e397 > .cmp-image__image[width=\"3840\"][height=\"2560\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"up-promotional-banner__content-heading\" role=\"heading\" aria-level=\"2\" data-analytics-label=\"\">\n      Will you shape the future or be shaped by it?\n    </p>",
+          "target": [
+            "#promotional-ab4dedd9c0dc > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level=\"2\"][role=\"heading\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__content-description\" data-analytics-text-click=\"\">",
+          "target": [
+            "#promotional-ab4dedd9c0dc > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-4e3d0a7420ce\" class=\"up-button cmp-button \" href=\"/en_us/shape-the-future-with-confidence\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/us/en_us/home/campaigns/shape-the-future-with-confidence.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-4e3d0a7420ce"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__media\">",
+          "target": [
+            "#promotional-ab4dedd9c0dc > .up-promotional-banner__media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-rich-text__container\" data-up-hook-rich-text=\"richTextContainer\" style=\"height: auto;\">\n    <div class=\"up-rich-text__container-content\" data-up-hook-rich-text=\"richTextContent\">\n      \n        <h2>Today's business insights</h2>\n\n      \n    </div>\n  </div>",
+          "target": [
+            "#rich-text-493a3e589180 > .up-rich-text__container[data-up-hook-rich-text=\"richTextContainer\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cmp-tabs__overflow-menu\">",
+          "target": [
+            ".cmp-tabs__overflow-menu"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"tabs-253a044e05-item-a432fa34d9-tabpanel\" role=\"tabpanel\" aria-labelledby=\"tabs-253a044e05-item-a432fa34d9-tab\" tabindex=\"0\" class=\"cmp-tabs__tabpanel cmp-tabs__tabpanel--active\" data-cmp-hook-tabs=\"tabpanel\" data-cmp-data-layer=\"{&quot;tabs-253a044e05-item-a432fa34d9&quot;:{&quot;@type&quot;:&quot;ey-unified-site/components/tabs/item&quot;,&quot;dc:title&quot;:&quot;Data center strategy&quot;}}\">",
+          "target": [
+            "#tabs-253a044e05-item-a432fa34d9-tabpanel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cmp-subscribe__text\">\n      <p class=\"cmp-subscribe__title\" data-analytics-label=\"\">Be the first to watch</p>\n      <p class=\"cmp-subscribe__subtitle\">Sign up to receive the latest business insights from EY and industry leaders direct to your inbox.</p>\n    </div>",
+          "target": [
+            ".cmp-subscribe__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-5a4b9debf027\" class=\"up-button cmp-button up-button--marketo-form\" href=\"/en_us/functional/forms/subscription/real-time-insight-form\" data-analytics-category=\"Button\" data-button-type=\"form\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/us/en_us/home/functional/forms/subscription/real-time-insight-form.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"form\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-5a4b9debf027"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"up-promotional-banner__content-heading\" role=\"heading\" aria-level=\"3\" data-analytics-label=\"\">\n      Our commitment to audit quality\n    </p>",
+          "target": [
+            "#promotional-133d0f7da255 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level=\"3\"][role=\"heading\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__content-description\" data-analytics-text-click=\"\">\n      <p>We embrace our responsibility as independent auditors to perform high-quality audits that promote trust and confidence in the capital markets.&nbsp;</p>\n\n    </div>",
+          "target": [
+            "#promotional-133d0f7da255 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-ead4c540be2b\" class=\"up-button cmp-button \" href=\"/en_us/assurance/audit-quality-report\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/us/en_us/home/campaigns/assurance/audit-quality-report.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-ead4c540be2b"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__media\">",
+          "target": [
+            "#promotional-133d0f7da255 > .up-promotional-banner__media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"up-promotional-banner__content-heading\" role=\"heading\" aria-level=\"3\" data-analytics-label=\"\">\n      CEO Confidence Index\n    </p>",
+          "target": [
+            "#promotional-88c7d0c73f62 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level=\"3\"][role=\"heading\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__content-description\" data-analytics-text-click=\"\">\n      <p>&nbsp;</p>\n<p>How bolder CEOs take charge to shape their future with confidence</p>\n\n    </div>",
+          "target": [
+            "#promotional-88c7d0c73f62 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-90c0f40fa2fa\" class=\"up-button cmp-button \" href=\"/en_us/ceo/ceo-outlook-global-report\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/us/en_us/home/campaigns/ceo/ceo-outlook-global-report.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-90c0f40fa2fa"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__media\">",
+          "target": [
+            "#promotional-88c7d0c73f62 > .up-promotional-banner__media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-rich-text__container\" data-up-hook-rich-text=\"richTextContainer\" style=\"height: auto;\">\n    <div class=\"up-rich-text__container-content\" data-up-hook-rich-text=\"richTextContent\">\n      \n        <h3>Featured case studies</h3>\n\n      \n    </div>\n  </div>",
+          "target": [
+            "#rich-text-7ed6a5657faa > .up-rich-text__container[data-up-hook-rich-text=\"richTextContainer\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-rich-text__container\" data-up-hook-rich-text=\"richTextContainer\" style=\"height: auto;\">",
+          "target": [
+            "#rich-text-f87e38206888 > .up-rich-text__container[data-up-hook-rich-text=\"richTextContainer\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"swiper-slide swiper-slide-active\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-hidden=\"false\" aria-label=\"Slide 1 of 3\" data-up-data-layer=\"{&quot;up-carousel-81cd04c814-item-d7f3e7875d&quot;:{&quot;@type&quot;:&quot;ey-unified-site/components/up-carousel/item&quot;,&quot;repo:modifyDate&quot;:&quot;2025-07-03T12:59:07Z&quot;,&quot;dc:title&quot;:&quot;How Medtronic’s optimized supply chain gets products to patients in need&quot;}}\" data-swiper-slide-index=\"0\">",
+          "target": [
+            ".swiper-slide-active"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal\" role=\"tablist\" data-up-hook-carousel=\"pagination\" aria-label=\"Choose a slide to display\" data-bullet-aria-label=\"Go to Slide {0}\">",
+          "target": [
+            ".swiper-pagination"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slider__title\" data-analytics-label=\"\" tabindex=\"-1\">\n      On the agenda\n      <span>(6)</span>\n    </p>",
+          "target": [
+            ".cmp-slider__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"cmp-slider__skip text-regular-sm\" href=\"#topicLinkSkipContent\" aria-label=\"Skip On the agenda\" tabindex=\"0\">Skip</a>",
+          "target": [
+            ".cmp-slider__skip"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">AI Insights<br>\n</p>",
+          "target": [
+            "a[data-index=\"0\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__description text-light-md\">AI Insights<br>\n</p>",
+          "target": [
+            "a[data-index=\"0\"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span> Discover </span>",
+          "target": [
+            "a[data-index=\"0\"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">Managed Services</p>",
+          "target": [
+            ".active > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__description text-light-md\">Managed Services</p>",
+          "target": [
+            ".active > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span> Discover </span>",
+          "target": [
+            ".active > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">Sustainability and ESG</p>",
+          "target": [
+            "a[data-index=\"2\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__description text-light-md\">Featured: Driving action on nature through enhanced transparency and reporting</p>",
+          "target": [
+            "a[data-index=\"2\"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span> Discover </span>",
+          "target": [
+            "a[data-index=\"2\"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">Assurance services</p>",
+          "target": [
+            "a[data-index=\"3\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__description text-light-md\">Assurance services</p>",
+          "target": [
+            "a[data-index=\"3\"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span> Discover </span>",
+          "target": [
+            "a[data-index=\"3\"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">Technology</p>",
+          "target": [
+            "a[data-index=\"4\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__description text-light-md\">Featured: How can AI help us accelerate the pace of change the world needs</p>",
+          "target": [
+            "a[data-index=\"4\"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span> Discover </span>",
+          "target": [
+            "a[data-index=\"4\"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">EY Transformation</p>",
+          "target": [
+            "a[href$=\"transformation\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__description text-light-md\">Featured: EY Transformation</p>",
+          "target": [
+            "a[href$=\"transformation\"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span> Discover </span>",
+          "target": [
+            "a[href$=\"transformation\"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"cmp-contentGrid__title\" data-analytics-label=\"\">\n      Featured press releases\n    </h2>",
+          "target": [
+            ".cmp-contentGrid__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true\" srcset=\"/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=100 100w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=200 200w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=300 300w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=400 400w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=500 500w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=600 600w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=700 700w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=800 800w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=900 900w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=1000 1000w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=1100 1100w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=1200 1200w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=1600 1600w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=1800 1800w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=2000 2000w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=2400 2400w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=2700 2700w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=3000 3000w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=3300 3300w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=3600 3600w,/adobe/dynamicmedia/deliver/dm-aid--db3ec2e3-1f5a-49d6-85cf-c19e6c47bf86/ey-us-digital-brain-on-circuit-pattern.jpg?quality=85&amp;preferwebp=true&amp;width=3840 3840w\" loading=\"lazy\" class=\"cmp-image__image\" itemprop=\"contentUrl\" width=\"3840\" height=\"2560\" alt=\"us digital brain on circuit pattern\" title=\"digital brain on circuit pattern representing artificial intelligence new technology\">",
+          "target": [
+            "#image-render-36d32f5e32 > .cmp-image__image[width=\"3840\"][height=\"2560\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cmp-teaser__content\">",
+          "target": [
+            ".cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true\" srcset=\"/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=100 100w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=200 200w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=300 300w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=400 400w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=500 500w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=600 600w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=700 700w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=800 800w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=900 900w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=1000 1000w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=1100 1100w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=1200 1200w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=1600 1600w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=1800 1800w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=2000 2000w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=2400 2400w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=2700 2700w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=3000 3000w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=3300 3300w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=3600 3600w,/adobe/dynamicmedia/deliver/dm-aid--1be0a8a1-e580-43a0-8a20-4bf9cd0f3ca3/ey-creative-and-analytical-thinking-concept.jpg?quality=85&amp;preferwebp=true&amp;width=3840 3840w\" loading=\"lazy\" class=\"cmp-image__image\" itemprop=\"contentUrl\" width=\"3840\" height=\"2560\" alt=\"Creative and analytical thinking concept\" title=\"Creative and analytical thinking concept\">",
+          "target": [
+            "#image-render-cef35e6f51 > .cmp-image__image[width=\"3840\"][height=\"2560\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cmp-teaser__content\">",
+          "target": [
+            ".cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cmp-teaser cmp-separator cmp-news-List\">",
+          "target": [
+            ".cmp-news-List"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-9cab4a2c56a2\" class=\"up-button cmp-button \" href=\"/en_us/newsroom\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/us/en_us/home/newsroom.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-9cab4a2c56a2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-index-search-banner__title mbmd\" data-analytics-label=\"\">Discover more</p>",
+          "target": [
+            ".cmp-index-search-banner__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"cmp-button__text\" data-analytics-action-value=\"\">EY Search</span>",
+          "target": [
+            "#button-451e724819fa > .cmp-button__text[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-index-search-banner__topicTitle mbxl text-light-md\" data-analytics-label=\"\">\n        Popular Quick Links\n      </p>",
+          "target": [
+            ".cmp-index-search-banner__topicTitle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-7ece3641db31\" class=\"up-button cmp-button \" href=\"/en_us/careers\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/us/en_us/home/careers.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-7ece3641db31"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-4b8722148bb1\" class=\"up-button cmp-button \" href=\"/en_us/services/technology\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/us/en_us/home/services/technology.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-4b8722148bb1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a target=\"_blank\" id=\"button-d5631ec6edd1\" class=\"up-button cmp-button \" href=\"/en_us/services/tax\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/us/en_us/home/services/tax.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-d5631ec6edd1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-733054c5a2f2\" class=\"up-button cmp-button \" href=\"/en_us/services/audit\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/us/en_us/home/services/audit.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-733054c5a2f2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a target=\"_blank\" id=\"button-7163317ae9be\" class=\"up-button cmp-button \" href=\"/en_us/services/strategy\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/us/en_us/home/services/strategy.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-7163317ae9be"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a target=\"_blank\" id=\"button-5d4e2c65e5fd\" class=\"up-button cmp-button \" href=\"/en_us/services/consulting\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/us/en_us/home/services/consulting.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-5d4e2c65e5fd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-ea697ff85d45\" class=\"up-button cmp-button \" href=\"/en_us/megatrends\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/us/en_us/home/campaigns/megatrends.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-ea697ff85d45"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a target=\"_blank\" id=\"button-c14f2b1ab694\" class=\"up-button cmp-button \" href=\"/en_us/services/sustainability\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/us/en_us/home/services/sustainability.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-c14f2b1ab694"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container responsivegrid theme-pale-grey cmp-container--theme-mid-grey cmp-container--component-e2e aem-GridColumn aem-GridColumn--default--12\">",
+          "target": [
+            ".theme-pale-grey.cmp-container--theme-mid-grey.cmp-container--component-e2e"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container responsivegrid\">",
+          "target": [
+            "#footer-ey-content > .container.responsivegrid:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-rich-text__container\" data-up-hook-rich-text=\"richTextContainer\" style=\"height: auto;\">",
+          "target": [
+            "#rich-text-1a9b492afe22 > .up-rich-text__container[data-up-hook-rich-text=\"richTextContainer\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container responsivegrid\">",
+          "target": [
+            "#footer-ey-content > .container.responsivegrid:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

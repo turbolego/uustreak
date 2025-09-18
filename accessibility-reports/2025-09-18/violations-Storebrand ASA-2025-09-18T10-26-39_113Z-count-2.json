@@ -1,0 +1,51 @@
+{
+  "project": "Storebrand ASA",
+  "timestamp": "2025-09-18T10:26:39.113Z",
+  "url": "https://www.storebrand.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"_visuallyHiddenFocusable_re6e2_1 _skipLinkDesktop_re6e2_13 hf-web-skipLink\" href=\"#mainMenuBegins\">Til hovedmeny</a>",
+          "target": [
+            "._skipLinkDesktop_re6e2_13"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "skip-link",
+      "impact": "moderate",
+      "description": "Ensure all skip links have a focusable target",
+      "help": "The skip-link target should exist and be focusable",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/skip-link?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"_visuallyHiddenFocusable_re6e2_1 _skipLinkDesktop_re6e2_13 hf-web-skipLink\" href=\"#mainMenuBegins\">Til hovedmeny</a>",
+          "target": [
+            "._skipLinkDesktop_re6e2_13"
+          ],
+          "failureSummary": "Fix any of the following:\n  No skip link target"
+        }
+      ]
+    }
+  ]
+}
