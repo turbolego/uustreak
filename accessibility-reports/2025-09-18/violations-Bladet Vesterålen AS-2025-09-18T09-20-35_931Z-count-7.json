@@ -1,0 +1,196 @@
+{
+  "project": "Bladet Vesterålen AS",
+  "timestamp": "2025-09-18T09:20:35.931Z",
+  "url": "https://www.blv.no/",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.blv\\.no\\/toppbanner_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h2 itemprop=\"teaser_title\" class=\"title brick-c-fdykhI brick-c-fdykhI-bPHpSt-cv\"><span class=\"titleWrapper brick-c-hakyQ brick-c-hakyQ-joUaur-useAutolayout-true\">\n    <span itemprop=\"headline\"><span itemprop=\"titleText\"> </span></span>\n    </span></h2>",
+          "target": [
+            "brick-teaser-v18[data-id=\"rq997hmp\"] > .none.teaser_container[data-title-words=\"2\"] > .brick-c-fRZqov.teaser_body[itemprop=\"url\"] > .body > .brick-c-bVcFwu.title_container.has-image > .brick-c-fdykhI-bPHpSt-cv.brick-c-fdykhI[itemprop=\"teaser_title\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-b0a40eba-5a80-41d6-92c1-392d61843db5\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"20\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a href=\"https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjst81necAF6MoQohLPZZVkHKbbF8dV_FbWZXG6U3IALFYiWZLfwrupSzQCIzOKJcs8GBAQaXLKBIx1T8md32QNBycFo5crppO_i1hPVctLHaQKv1uqRHG_A8yPGkIcDucJk81yr6ycQs3d-EvEh4JROpuvgM0aC8aIXWf6iTS61VDkxpEx-yyfrk9i3KCzvMEAnb0xdNtqKTBBJDSB4_ssNkbMcmmR9EQYkhzexMO3p_smFT8fcFhJ9RvEB3fR35rK9fq1wpySx6tw9nOWbmHZ85E5mymXh-Mi_bPn5kJV2hxaWCh0GcMTQ6QjtxbOc4BTddGVi-FCapdsC_gWP_0QaZyCSHgMFLwu1jkzmbH9WnG5CNs5cFyRsADZFW2IuHEOb3pKdCbMUELCPpE9OkwC_cSjI9Bmxeeg&amp;sai=AMfl-YSHsANqwyB3smoDtXg1LaR31vUMfLN2XZHj4J-uIklx0rTjr2IUxeiw9uzJBGDGu6NZ1kkRyh_TbqCqjN9hBpgcppyYj-ZScM_DxkefJ-3aTk0877pwkaXU3-gGRyNutkxssrxHHb6msTi0ZhaVXlt0IFsuVKTTJfBY52TIC0M_eP46OfyM6Fpci_eHsO0xilW3e3FBOH3ZHsyLLgAFHWHP6cZSTo2gprg5o-ZHUxKI6fKC_htDVxlllwaApuRutE9U_nhimc6vKNfT9ZRnaneL38KaedfoKjKYsBVuc6xNj4SFn7K5neHYUQpH3lToMq-WsjuoHA86dXXuQ8D3sx9wflbNRIUVNEMx1BS7EbnVyJY&amp;sig=Cg0ArKJSzMt1rhG0ajIMEAE&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;urlfix=1&amp;adurl=https://www.rema.no/kampanjevarer/\" target=\"_blank\" style=\"display: block; height: 1000px; left: calc(50% - 960px); position: absolute; top: 0px; width: 1920px;\">",
+          "target": [
+            "a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://annonse.blv.no/blv/jul/julenummer-25-send-inn.pdf\" itemprop=\"url\" class=\"teaser_body brick-c-fRZqov mirror\">",
+          "target": [
+            "brick-teaser-v18[data-id=\"rq997hmp\"] > .none.teaser_container[data-title-words=\"2\"] > .brick-c-fRZqov.teaser_body[itemprop=\"url\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"no\" data-sitekey=\"blaves\" data-paywall=\"false\" data-pagemodel=\"rodimus\" data-isfrontpage=\"true\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.blv\\.no\\/toppbanner_0",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.blv.no/gfx/small-positive.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.blv.no/tilbud\" publication=\"www.blv.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"am-bazaar-ad--label\" id=\"toppbanner-1-label\">Annonse</span>",
+          "target": [
+            "#toppbanner-1-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

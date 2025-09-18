@@ -1,0 +1,178 @@
+{
+  "project": "Sandefjord videregående skole",
+  "timestamp": "2025-09-18T09:29:10.417Z",
+  "url": "https://www.vestfoldfylke.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe id=\":2.container\" class=\"VIpgJd-ZVi9od-ORHb-OEVmcd skiptranslate\" frameborder=\"0\" src=\"#\" style=\"visibility:visible\"></iframe>",
+          "target": [
+            "#\\:2\\.container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"text-decoration--underline text-decoration--hover--child--none\">\n                        70 000 innbyggere får spørsmål om helse og trivsel\n                    </h3>",
+          "target": [
+            ".toppsak-list-item-text > div:nth-child(1) > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img class=\"postImg\" src=\"https://external-iad3-2.xx.fbcdn.net/emg1/v/t13/7136730824083797939?url=https%3A%2F%2Fres.cloudinary.com%2Fssp%2Fimage%2Ffetch%2Fw_1200%2Cc_fill%2Fhttps%3A%2F%2Fwww.vestfoldfylke.no%2F%2Flink%2F235eda52867845a48d738a9dc0cd6e14.aspx&amp;fb_obo=1&amp;utld=cloudinary.com&amp;edm=AKIiGfEEAAAA&amp;_nc_gid=IEGpyGc3b5LQSMI4EhQnDQ&amp;_nc_oc=Adn7W5BeqJHWzk2ZiWNxnbN1PBDhzTQY-rAris-WZlOB7kA3s9pCQ-7CI-4jbRrb4OU&amp;ccb=13-1&amp;stp=dst-emg0_fr_q75_tt6&amp;ur=50234c&amp;_nc_sid=64c8fc&amp;oh=06_Q3-3AfYCMVe8qxJj1npVMpwDjwvvcCHniLzezSFr9bHKSvBK&amp;oe=68CDC21B\">",
+          "target": [
+            "iframe[title=\"powr social feed\"]",
+            ".postImg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<td width=\"1\" nowrap=\"\"><a href=\"https://translate.google.com\" class=\"VIpgJd-ZVi9od-l4eHX-hSRGPd\" target=\"_blank\"><img src=\"https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_68x28dp.png\" alt=\"Google Translate\"></a></td>",
+          "target": [
+            "#\\:2\\.container",
+            "td[width=\"1\"][nowrap=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td width=\"1\">",
+          "target": [
+            "#\\:2\\.container",
+            "td[width=\"1\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td nowrap=\"\">",
+          "target": [
+            "#\\:2\\.container",
+            "#\\:2\\.promptSection > td[nowrap=\"\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td width=\"1\">",
+          "target": [
+            "#\\:2\\.container",
+            "td[width=\"1\"]:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cc-header-container\">\n      <p class=\"cc-title\">Vi bruker informasjonskapsler (cookies)</p>\n      <div class=\"language-dropdown\"><select><option value=\"no\">Norsk</option><option value=\"en\">English</option></select></div>\n    </div>",
+          "target": [
+            ".cc-header-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cc-text\">Våre nettsider benytter informasjonskapsler (cookies) til sikkerhet, innbyggerfunksjonalitet, statistikk og analyse. Les om hvilke cookies vi bruker og hvordan vi administrerer de i erklæringen vår om personvern.</p>",
+          "target": [
+            ".cc-text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "select-name",
+      "impact": "critical",
+      "description": "Ensure select element has an accessible name",
+      "help": "Select element must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/select-name?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<select><option value=\"no\">Norsk</option><option value=\"en\">English</option></select>",
+          "target": [
+            "select"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ]
+}
