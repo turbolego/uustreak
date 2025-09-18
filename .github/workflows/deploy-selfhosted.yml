@@ -95,7 +95,7 @@ jobs:
           # Install Playwright without requiring root permissions
           export PLAYWRIGHT_BROWSERS_PATH=$HOME/.cache/ms-playwright
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
-          npx playwright install chromium
+          npx playwright install chromium firefox
           echo "cache-path=$(pwd)" >> $GITHUB_ENV
 
       - name: Ensure Python and venv are available
@@ -303,7 +303,7 @@ jobs:
           # Set browser cache path and install browsers without requiring root permissions
           export PLAYWRIGHT_BROWSERS_PATH=~/.cache/ms-playwright
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
-          npx playwright install chromium
+          npx playwright install chromium firefox
 
       - name: Run WCAG Accessibility Tests for batch
         env:
