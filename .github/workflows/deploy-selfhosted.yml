@@ -1,7 +1,7 @@
 name: WCAG Accessibility Testing (self-hosted runner)
 on:
   schedule:
-    - cron: '0 0 1-7 * 0'  # Runs on the first Sunday of each month
+    - cron: '0 0 * * *'          # every day at 00:00 UTC
   workflow_dispatch:   # Allows manual execution
 
 concurrency:
