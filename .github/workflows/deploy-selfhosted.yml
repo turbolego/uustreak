@@ -857,7 +857,7 @@ jobs:
         run: |
           echo "Updating report list in gh-pages branch..."
           mkdir -p gh-pages-branch/historical-data
-          find gh-pages-branch/accessibility-reports -type f -name "violations-*.json" -print0 | \
+          find gh-pages-branch/accessibility-reports -type f -name "violations-*.json" ! -name "*-FAILED.json" -print0 | \
           while IFS= read -r -d '' file; do
             relative_path=${file#gh-pages-branch/}
             echo "$relative_path"

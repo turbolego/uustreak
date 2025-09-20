@@ -30,15 +30,37 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
     try {{
         console.log(`Starting accessibility test for {project_name}`);
         
-        // Try navigation with default browser (Chromium)
-        console.log('Attempting navigation with Chromium...');
+        // Dual URL strategy: try both with and without hash fragment
+        const baseUrl = '{project_url}'.replace(/\/#$/, '/');
+        const hashUrl = baseUrl.endsWith('/') ? baseUrl + '#' : baseUrl + '/#';
         
-        try {{
-            await currentPage.goto('/', {{ waitUntil: 'domcontentloaded', timeout: 30000 }});
-            console.log('✅ Chromium navigation successful');
-        }} catch (chromiumError) {{
-            console.log(`❌ Chromium failed: ${{chromiumError.message}}`);
-            console.log('🔄 Trying Firefox fallback...');
+        // Different strategies for different environments
+        const urlCandidates = process.env.PREFER_HASH_URL === 'true' 
+            ? [hashUrl, baseUrl] 
+            : [baseUrl, hashUrl];
+            
+        console.log(`Trying navigation strategies for URLs: ${{urlCandidates.join(', ')}}`);
+        
+        let navigationSuccess = false;
+        let lastError = null;
+        
+        // Try Chromium with both URL variants
+        for (const [index, candidateUrl] of urlCandidates.entries()) {{
+            try {{
+                console.log(`🔄 Chromium attempt ${{index + 1}}: ${{candidateUrl}}`);
+                await currentPage.goto(candidateUrl, {{ waitUntil: 'domcontentloaded', timeout: 45000 }});
+                console.log('✅ Chromium navigation successful');
+                navigationSuccess = true;
+                break;
+            }} catch (chromiumError) {{
+                console.log(`❌ Chromium attempt ${{index + 1}} failed: ${{chromiumError.message}}`);
+                lastError = chromiumError;
+            }}
+        }}
+        
+        // If Chromium failed, try Firefox with both URL variants
+        if (!navigationSuccess) {{
+            console.log('🔄 Trying Firefox fallback with both URL variants...');
             
             // Close current page/context
             await currentPage.close().catch(() => {{}});
@@ -46,18 +68,34 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
             // Launch Firefox browser
             fallbackBrowser = await firefox.launch({{
                 headless: true,
-                args: ['--no-sandbox', '--disable-setuid-sandbox']
+                args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-web-security']
             }});
             
             currentContext = await fallbackBrowser.newContext({{
                 ignoreHTTPSErrors: true,
-                viewport: {{ width: 1280, height: 720 }}
+                viewport: {{ width: 1280, height: 720 }},
+                userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
             }});
             
             currentPage = await currentContext.newPage();
-            await currentPage.goto('{project_url}', {{ waitUntil: 'domcontentloaded', timeout: 60000 }});
-            console.log('✅ Firefox navigation successful');
             usingFallback = true;
+            
+            for (const [index, candidateUrl] of urlCandidates.entries()) {{
+                try {{
+                    console.log(`🔄 Firefox attempt ${{index + 1}}: ${{candidateUrl}}`);
+                    await currentPage.goto(candidateUrl, {{ waitUntil: 'domcontentloaded', timeout: 75000 }});
+                    console.log('✅ Firefox navigation successful');
+                    navigationSuccess = true;
+                    break;
+                }} catch (firefoxError) {{
+                    console.log(`❌ Firefox attempt ${{index + 1}} failed: ${{firefoxError.message}}`);
+                    lastError = firefoxError;
+                }}
+            }}
+        }}
+        
+        if (!navigationSuccess) {{
+            throw new Error(`All navigation attempts failed. Last error: ${{lastError?.message || 'Unknown error'}}`);
         }}
         
         // Wait for page to stabilize
@@ -92,8 +130,7 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
 
                 const builder = new AxeBuilder({{ page: currentPage }})
                     .options({{
-                        frameWaitTime: 5000,
-                        timeout: 60000,
+                        frameWaitTime: 5000
                     }});
 
                 accessibilityResults = await builder.analyze();
@@ -101,10 +138,11 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
                 break;
             }} catch (axeError) {{
                 retryCount++;
-                console.log(`Accessibility analysis attempt ${{retryCount}} failed: ${{axeError.message}}`);
+                const errorMessage = axeError instanceof Error ? axeError.message : String(axeError);
+                console.log(`Accessibility analysis attempt ${{retryCount}} failed: ${{errorMessage}}`);
 
                 if (retryCount === maxRetries) {{
-                    throw new Error(`Accessibility analysis failed after ${{maxRetries}} attempts: ${{axeError.message}}`);
+                    throw new Error(`Accessibility analysis failed after ${{maxRetries}} attempts: ${{errorMessage}}`);
                 }}
 
                 await currentPage.waitForTimeout(5000);
@@ -114,6 +152,10 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
         const timestamp = new Date().toISOString()
             .replace(/:/g, '-')
             .replace(/\./g, '_');
+
+        if (!accessibilityResults) {{
+            throw new Error('Accessibility analysis failed to produce results');
+        }}
 
         const filePath = path.join(
             outputDir,
@@ -150,7 +192,8 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
             generateTagSummary(filePath);
             console.log(`Updated tag summary with data from ${{filePath}}`);
         }} catch (summaryError) {{
-            console.error(`Failed to update tag summary: ${{summaryError.message}}`);
+            const errorMessage = summaryError instanceof Error ? summaryError.message : String(summaryError);
+            console.error(`Failed to update tag summary: ${{errorMessage}}`);
         }}
 
         console.log(`✅ Found ${{accessibilityResults.violations.length}} accessibility violations (using ${{usingFallback ? 'Firefox' : 'Chromium'}})`);
