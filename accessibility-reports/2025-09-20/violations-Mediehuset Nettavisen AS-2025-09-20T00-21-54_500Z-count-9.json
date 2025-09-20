@@ -1,0 +1,307 @@
+{
+  "project": "Mediehuset Nettavisen AS",
+  "timestamp": "2025-09-20T00:21:54.500Z",
+  "url": "https://www.nettavisen.no/",
+  "total_violations": 9,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h1 class=\"na-logo-header\">\n                <a href=\"/\" tabindex=\"-1\" aria-hidden=\"true\">*Nettavisen.*</a>\n            </h1>",
+          "target": [
+            ".miniheader > .logo-nav-wrap > .logo-nav-wrapper > h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe data-creative-load-listener=\"\" id=\"200_281_express_html_inpage_0.if\" src=\"https://s0.2mdn.net/sadbundle/16433922396622277343/1000x300_wp01_top/index.html?ev=01_262\" width=\"1000\" height=\"300\" frameborder=\"0\" scrolling=\"no\" allowfullscreen=\"true\" style=\"width: 1000px; height: 300px;\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[scrolling=\"no\"]",
+            "#\\32 00_281_express_html_inpage_0\\.if"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<img src=\"tx1.png\" class=\"tx1\" style=\"translate: none; rotate: none; scale: none; transform: translate3d(0px, 0.01%, 0px);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[scrolling=\"no\"]",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            ".tx1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"tx2.png\" class=\"tx2 lift\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[scrolling=\"no\"]",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            ".tx2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"cta.png\" class=\"cta lift2\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[scrolling=\"no\"]",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            ".cta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"logo.png\" class=\"logo\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[scrolling=\"no\"]",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            ".logo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-banner-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the banner landmark is at top level",
+      "help": "Banner landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-banner-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<header class=\"miniheader\">",
+          "target": [
+            ".miniheader"
+          ],
+          "failureSummary": "Fix any of the following:\n  The banner landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<header id=\"page-header\">",
+          "target": [
+            "#page-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<header id=\"page-header\">",
+          "target": [
+            "#page-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<nav class=\"nav lp_nav\">",
+          "target": [
+            ".miniheader > .logo-nav-wrap > .logo-nav-wrapper > .nav-wrap > nav"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-ca0493bd-bc0a-483f-9b4b-b35165e7d1bb\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"10\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a href=\"javascript:window.open(window.clickTag)\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[scrolling=\"no\"]",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsusV2TojxnQWNYpgPfq8nxd6ARQ-yh9bR99oKSQDWBuCnKQrbgXHrf_ElQMERDtKzPfRwnzh5KHbcesnPQiYjxtBCbaGs6T5aR5OpRl23uaKozv_QXgg18xDHvnYgGs4WD0-2rZJM2-PEOfG2gzEpGA_PaAEfO-c38b_WB5qI6CLNaKi52LHaP7QyMB4Xc7vGJ38XcgvWd5hVd7vC_gILOVVcds0bIxF0-cXeiIiZYz5ZdvxIePk1hTOEALA0HD60Zcr-DNGx6L0fp9gtscel53fgpkKhs4yQlngaZ_h7yY6cWtGyq_EeWNWGJqTGk1L2kLmF9qUluhnElGhG19sZNhpGBAuBfd9NdSStWTM-i7eWH4oqyY2qBROa0KBlreKBlpPA2ApUPH9lSgvV3fT1GA4NfP66nxIJVpoJ5ui_N41ikZJ_ki&amp;sai=AMfl-YSIr4YqmTb8nIcRFoSs0lV7G6mOWZ3001coCjEFJIwmPP3i2Fzk7do4VZyCaxSMnOAGDIpkcacB4t6ZFKNHburmsg34YvPCpTdxPswtUzQo2XCCbq8EoL-JKjIyMqzbcguXmN3cto-hPtN9BUV7ZGQpenjWzhsXfm7DHHeKBpaf9P8TOIc69Fw3byICiMNWPAnMvLNtUB07epLt3DgO9iQG35qdijoSt6ywnxOXhDvcliAfZ3szqDPyI4tlktrKNTgQtPqcDi-3ql0E0V1nbgUDxTON0f302xs709L6Rn8NmKcSgY9kOqx29PVrcIqUCnclBRlbevPV3OmNsi6hJF8_qCa6LfN4wXUoHNoDig5uKGM&amp;sig=Cg0ArKJSzGvPXvZgg917EAE&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;urlfix=1&amp;adurl=https://ad.doubleclick.net/ddm/trackclk/N388808.1922736AMEDIA.NO/B34144770.428744513;dc_trk_aid=621971827;dc_trk_cid=241048936;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=0;gdpr_consent=;ltd=;dc_tdv=1\" target=\"_blank\" style=\"display: block; height: 1000px; left: calc(50% - 960px); position: absolute; top: 0px; width: 1920px;\">",
+          "target": [
+            "a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.nettavisen.no/tilbud\" publication=\"www.nettavisen.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"nettavisen\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"am-bazaar-ad--label\" id=\"toppbanner-1-label\">Annonse</span>",
+          "target": [
+            "#toppbanner-1-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"banner\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[scrolling=\"no\"]",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#banner"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

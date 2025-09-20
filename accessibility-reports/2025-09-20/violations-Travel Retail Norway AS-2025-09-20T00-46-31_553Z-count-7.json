@@ -1,0 +1,238 @@
+{
+  "project": "Travel Retail Norway AS",
+  "timestamp": "2025-09-20T00:46:31.553Z",
+  "url": "https://www.tax-free.no/no/",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "aria-roles",
+      "impact": "critical",
+      "description": "Ensure all elements with a role attribute use a valid value",
+      "help": "ARIA roles used must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-roles?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"ngx_poppperjs_8\" aria-hidden=\"false\" role=\"popper\" style=\"display: block; opacity: 1; z-index: 10; position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(-110px, 8px);\" data-popper-placement=\"bottom\">",
+          "target": [
+            "#ngx_poppperjs_8"
+          ],
+          "failureSummary": "Fix all of the following:\n  Role must be one of the valid ARIA roles: popper"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a id=\"CybotCookiebotDialogBodyEdgeMoreDetailsLink\" href=\"#\" class=\"\">Detaljer</a>",
+          "target": [
+            "#CybotCookiebotDialogBodyEdgeMoreDetailsLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.23 (foreground color: #007a48, background color: #1a1919, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button id=\"CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll\" class=\"CybotCookiebotDialogBodyButton\" tabindex=\"0\" lang=\"nb\">Tillat alle cookies</button>",
+          "target": [
+            "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #e7e5e5, background color: #007a48, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h4 _ngcontent-serverapp-c335=\"\" class=\"message-heading\"> Vi har valgt Oslo (OSL) for deg </h4>",
+          "target": [
+            "h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h3 _ngcontent-serverapp-c311=\"\">Tobakk</h3>",
+          "target": [
+            "a[aria-label=\"Tobakk\"] > .categories-list-item_container[_ngcontent-serverapp-c311=\"\"] > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<header _ngcontent-serverapp-c335=\"\">",
+          "target": [
+            ".message-wrapper > header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<header _ngcontent-serverapp-c335=\"\">",
+          "target": [
+            ".message-wrapper > header"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a _ngcontent-serverapp-c313=\"\" tabindex=\"-1\" href=\"/no/tips-og-trender/mat-drikke/drikke-til-sommer-sjomat\">",
+          "target": [
+            ".swiper-slide-active.swiper-slide[data-swiper-slide-index=\"0\"] > trn-article > article > a[_ngcontent-serverapp-c313=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a _ngcontent-serverapp-c313=\"\" tabindex=\"-1\" href=\"/no/tips-og-trender/laer-om-drinker/hvordan-lage-perfekte-cocktails\">",
+          "target": [
+            ".swiper-slide-next.swiper-slide[data-swiper-slide-index=\"1\"] > trn-article > article > a[_ngcontent-serverapp-c313=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a _ngcontent-serverapp-c313=\"\" tabindex=\"-1\" href=\"/no/tips-og-trender/laer-om-drinker/kast-deg-pa-den-store-ginbolgen\">",
+          "target": [
+            ".swiper-slide[data-swiper-slide-index=\"2\"] > trn-article > article > a[_ngcontent-serverapp-c313=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<trn-skip-content _ngcontent-serverapp-c189=\"\" tag=\"main\" _nghost-serverapp-c186=\"\"><a _ngcontent-serverapp-c186=\"\" class=\"skip-content\" href=\"/no/#main\">Skip to content</a><!----></trn-skip-content>",
+          "target": [
+            "trn-skip-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<cx-page-slot position=\"SiteLinks\" class=\"SiteLinks has-components\">",
+          "target": [
+            ".SiteLinks"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p _ngcontent-serverapp-c335=\"\"> Hvis du vil ha det det riktige vareutvalget for en Klikk &amp; hent-handel, må du også velge terminal og flyretning. </p>",
+          "target": [
+            "p[_ngcontent-serverapp-c335=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<cx-page-slot position=\"ProductQuotaAndHelpLinks\" class=\"ProductQuotaAndHelpLinks has-components\">",
+          "target": [
+            ".ProductQuotaAndHelpLinks"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div _ngcontent-serverapp-c367=\"\" class=\"flag-container\">",
+          "target": [
+            ".flag-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div _ngcontent-serverapp-c189=\"\" cxskiplink=\"cx-certifications\" class=\"certifications-container\" tabindex=\"-1\">",
+          "target": [
+            ".certifications-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
