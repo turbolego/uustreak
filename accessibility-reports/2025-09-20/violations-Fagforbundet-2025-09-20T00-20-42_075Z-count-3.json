@@ -1,0 +1,87 @@
+{
+  "project": "Fagforbundet",
+  "timestamp": "2025-09-20T00:20:42.076Z",
+  "url": "https://www.fagforbundet.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"bounceText\" class=\"animated bounceInRight\">Hei, jeg er Fagforbundets chatbot. Hva kan jeg hjelpe med? </div>",
+          "target": [
+            "#bounceText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.87 (foreground color: #ffffff, background color: #999898, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img class=\"topbanner__image\" srcset=\"https://v.imgi.no/7nhtqxl4dx-fagforbundet/960 960w, https://v.imgi.no/7nhtqxl4dx-fagforbundet/720 720w, https://v.imgi.no/7nhtqxl4dx-fagforbundet/640 640w, https://v.imgi.no/7nhtqxl4dx-fagforbundet/480 480w, https://v.imgi.no/7nhtqxl4dx-fagforbundet/360 360w, https://v.imgi.no/7nhtqxl4dx-fagforbundet/180 180w\" src=\"https://v.imgi.no/7nhtqxl4dx-fagforbundet/1280\">",
+          "target": [
+            ".topbanner__image"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"skip-to-content\" href=\"#main\">Til hovedinnhold</a>",
+          "target": [
+            ".skip-to-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
