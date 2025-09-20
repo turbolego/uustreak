@@ -662,44 +662,11 @@
             const reportStreaks = new Map();
             const viewMode = document.getElementById('view-selector').value;
 
-            // Validate data consistency
-            let inconsistentProjects = [];
-            
+            // Calculate streaks for each project
             latestReports.forEach(report => {
                 const streak = calculateNoViolationsStreak(report.project, reportList);
                 reportStreaks.set(report.project, streak);
-                
-                // Check for logical inconsistency: streak > 0 but violations > 0
-                if (streak > 0 && report.total_violations > 0) {
-                    inconsistentProjects.push({
-                        project: report.project,
-                        streak: streak,
-                        violations: report.total_violations
-                    });
-                    console.warn(`Data inconsistency detected for ${report.project}: streak=${streak} but violations=${report.total_violations}`);
-                    
-                    // Force correct the streak calculation
-                    reportStreaks.set(report.project, 0);
-                }
             });
-            
-            // Show warning if inconsistencies were found
-            if (inconsistentProjects.length > 0) {
-                const warningDiv = document.createElement('div');
-                warningDiv.className = 'data-warning';
-                warningDiv.innerHTML = `
-                    <p><strong>⚠️ Data Consistency Warning:</strong> 
-                    ${inconsistentProjects.length} project(s) had inconsistent streak calculations that were automatically corrected. 
-                    This may indicate incomplete data due to workflow failures.</p>
-                    <details>
-                        <summary>Show affected projects</summary>
-                        <ul>
-                            ${inconsistentProjects.map(p => `<li>${p.project}: had streak ${p.streak} with ${p.violations} violations (corrected to 0)</li>`).join('')}
-                        </ul>
-                    </details>
-                `;
-                tableContainer.appendChild(warningDiv);
-            }
 
             // Collect all violation types and tags
             const allViolationTypes = new Set();
