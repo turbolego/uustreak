@@ -27,3 +27,4 @@ Listen med de 278 nettsidene fra statusmålingen til uutilsynet i 2018 er brukt 
 * "Sparebanken Sør" slått sammen med "Sparebank 1 DA" pga. sammenslåingen i 2024
 * "Sørlandsruta AS" endret til "Connect Bus AS" pga. sammenslåingen i 2022
 * "Vest-Agder fylkeskommune" slått sammen med "Agder fylkeskommune" pga. sammenslåingen i 2020
+* "Ski kommune" endret til "Nordre Follo kommune" pga. sammenslåingen i 2020

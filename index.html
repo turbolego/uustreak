@@ -549,31 +549,40 @@
                 return 0;
             }
 
-            let streak = 0;
-            let currentDate = new Date(filteredReports[0].date);
-            let hasViolationsToday = !filteredReports[0].filename.includes('-count-0');
+            // Get the most recent report to check current violation status
+            const mostRecentReport = filteredReports[0];
+            const hasCurrentViolations = !mostRecentReport.filename.includes('-count-0');
+            
+            // If the most recent report has violations, streak is always 0
+            if (hasCurrentViolations) {
+                return 0;
+            }
 
+            let streak = 0;
+            let currentDate = new Date(mostRecentReport.date);
+
+            // Count consecutive days without violations, starting from most recent
             for (let i = 0; i < filteredReports.length; i++) {
                 const report = filteredReports[i];
                 const reportDate = new Date(report.date);
 
+                // Fill in missing days between reports
                 while (currentDate > reportDate) {
-                    if (hasViolationsToday) {
-                        return streak;
-                    }
                     streak++;
                     currentDate.setDate(currentDate.getDate() - 1);
                 }
 
+                // Check if this report has violations
                 if (!report.filename.includes('-count-0')) {
-                    hasViolationsToday = true;
+                    // Found violations, stop counting streak
+                    break;
                 } else {
-                    hasViolationsToday = false;
+                    // No violations on this day, continue streak
+                    if (currentDate.getTime() === reportDate.getTime()) {
+                        streak++;
+                        currentDate.setDate(currentDate.getDate() - 1);
+                    }
                 }
-            }
-
-            if (!hasViolationsToday) {
-                streak++;
             }
 
             return streak;
@@ -653,10 +662,44 @@
             const reportStreaks = new Map();
             const viewMode = document.getElementById('view-selector').value;
 
+            // Validate data consistency
+            let inconsistentProjects = [];
+            
             latestReports.forEach(report => {
                 const streak = calculateNoViolationsStreak(report.project, reportList);
                 reportStreaks.set(report.project, streak);
+                
+                // Check for logical inconsistency: streak > 0 but violations > 0
+                if (streak > 0 && report.total_violations > 0) {
+                    inconsistentProjects.push({
+                        project: report.project,
+                        streak: streak,
+                        violations: report.total_violations
+                    });
+                    console.warn(`Data inconsistency detected for ${report.project}: streak=${streak} but violations=${report.total_violations}`);
+                    
+                    // Force correct the streak calculation
+                    reportStreaks.set(report.project, 0);
+                }
             });
+            
+            // Show warning if inconsistencies were found
+            if (inconsistentProjects.length > 0) {
+                const warningDiv = document.createElement('div');
+                warningDiv.className = 'data-warning';
+                warningDiv.innerHTML = `
+                    <p><strong>⚠️ Data Consistency Warning:</strong> 
+                    ${inconsistentProjects.length} project(s) had inconsistent streak calculations that were automatically corrected. 
+                    This may indicate incomplete data due to workflow failures.</p>
+                    <details>
+                        <summary>Show affected projects</summary>
+                        <ul>
+                            ${inconsistentProjects.map(p => `<li>${p.project}: had streak ${p.streak} with ${p.violations} violations (corrected to 0)</li>`).join('')}
+                        </ul>
+                    </details>
+                `;
+                tableContainer.appendChild(warningDiv);
+            }
 
             // Collect all violation types and tags
             const allViolationTypes = new Set();
