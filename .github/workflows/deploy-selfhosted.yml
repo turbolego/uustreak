@@ -245,10 +245,18 @@ jobs:
           free -h
           echo "CPU info:"
           nproc
+          echo "CPU load average:"
+          uptime
           echo "Disk space:"
           df -h
+          echo "Temp directory space:"
+          df -h /tmp
+          echo "Available inodes:"
+          df -i /
           echo "Running processes:"
           ps aux | grep -E '(npm|node)' || echo "No npm/node processes running"
+          echo "Network connectivity test:"
+          ping -c 2 registry.npmjs.org || echo "npm registry not reachable"
 
       - name: Install dependencies
         env:
@@ -266,6 +274,10 @@ jobs:
           # Wait a moment for filesystem to settle
           sleep 2
           
+          # Remove any potential lock files that might cause hangs
+          rm -f package-lock.json.* npm-shrinkwrap.json.* .npmrc.*
+          find /tmp -name "npm-*" -type f -delete 2>/dev/null || true
+          
           # Create completely fresh npm environment
           export NPM_CONFIG_CACHE=/tmp/npm-cache-$(date +%s)
           export NPM_CONFIG_PREFIX=/tmp/npm-prefix-$(date +%s)
@@ -280,10 +292,32 @@ jobs:
           
           # Install dependencies with minimal caching and error recovery
           echo "Installing dependencies with fresh cache..."
-          timeout 300 npm install --no-save --no-package-lock --prefer-offline=false --cache="$NPM_CONFIG_CACHE" || {
-            echo "First install failed or timed out, trying with --force and shorter timeout..."
-            timeout 180 npm install --force --no-save --no-package-lock --cache="$NPM_CONFIG_CACHE"
-          }
+          
+          # Try multiple installation strategies with increasing timeouts
+          INSTALL_SUCCESS=false
+          
+          # Strategy 1: Quick install with existing package-lock (if available)
+          if [ -f "package-lock.json" ]; then
+            echo "Attempting quick install with existing package-lock..."
+            timeout 120 npm ci --cache="$NPM_CONFIG_CACHE" && INSTALL_SUCCESS=true || echo "Quick install failed"
+          fi
+          
+          # Strategy 2: Clean install without package-lock
+          if [ "$INSTALL_SUCCESS" = false ]; then
+            echo "Attempting clean install without package-lock..."
+            timeout 480 npm install --no-save --no-package-lock --prefer-offline=false --cache="$NPM_CONFIG_CACHE" && INSTALL_SUCCESS=true || echo "Clean install failed"
+          fi
+          
+          # Strategy 3: Force install as last resort
+          if [ "$INSTALL_SUCCESS" = false ]; then
+            echo "Last resort: force install with extended timeout..."
+            timeout 600 npm install --force --no-save --no-package-lock --cache="$NPM_CONFIG_CACHE" && INSTALL_SUCCESS=true || echo "Force install failed"
+          fi
+          
+          if [ "$INSTALL_SUCCESS" = false ]; then
+            echo "All npm install strategies failed"
+            exit 1
+          fi
 
       - name: Install Playwright and Use Cached Browsers
         env:
@@ -294,11 +328,25 @@ jobs:
           export NPM_CONFIG_PREFIX=/tmp/npm-prefix-$(date +%s)
           mkdir -p "$NPM_CONFIG_CACHE" "$NPM_CONFIG_PREFIX"
           
-          # Install Playwright test package with temporary cache and timeout
-          timeout 180 npm install @playwright/test --cache="$NPM_CONFIG_CACHE" || {
-            echo "Playwright install failed, retrying with --force..."
-            timeout 120 npm install @playwright/test --force --cache="$NPM_CONFIG_CACHE"
-          }
+          # Install Playwright test package with extended timeout and better error handling
+          PLAYWRIGHT_SUCCESS=false
+          
+          echo "Installing Playwright test package..."
+          timeout 300 npm install @playwright/test --cache="$NPM_CONFIG_CACHE" && PLAYWRIGHT_SUCCESS=true || echo "Standard Playwright install failed"
+          
+          if [ "$PLAYWRIGHT_SUCCESS" = false ]; then
+            echo "Retrying Playwright install with --force..."
+            timeout 240 npm install @playwright/test --force --cache="$NPM_CONFIG_CACHE" && PLAYWRIGHT_SUCCESS=true || echo "Force Playwright install failed"
+          fi
+          
+          if [ "$PLAYWRIGHT_SUCCESS" = false ]; then
+            echo "Final attempt: Installing Playwright globally..."
+            timeout 180 npm install -g @playwright/test --cache="$NPM_CONFIG_CACHE" && PLAYWRIGHT_SUCCESS=true || echo "Global Playwright install failed"
+          fi
+          
+          if [ "$PLAYWRIGHT_SUCCESS" = false ]; then
+            echo "All Playwright install strategies failed, but continuing with browser installation..."
+          fi
           
           # Set browser cache path and install browsers without requiring root permissions
           export PLAYWRIGHT_BROWSERS_PATH=~/.cache/ms-playwright
@@ -309,6 +357,7 @@ jobs:
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
           BATCH_INDEX: ${{ matrix.batch }}
+          PREFER_HASH_URL: "true"
         run: |
           mapfile -t ALL_SPECS < <(ls tests/*.spec.ts)
           TOTAL_SPECS=${#ALL_SPECS[@]}
