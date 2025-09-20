@@ -286,6 +286,26 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Verify project structure
+        run: |
+          echo "=== Project Structure Check ==="
+          echo "Current directory: $(pwd)"
+          echo "Contents:"
+          ls -la
+          echo ""
+          echo "package.json exists: $([ -f package.json ] && echo "YES" || echo "NO")"
+          if [ -f package.json ]; then
+            echo "package.json content:"
+            cat package.json
+          fi
+          echo ""
+          echo "Node and npm versions:"
+          node --version
+          npm --version
+          echo ""
+          echo "Current npm configuration:"
+          npm config list
+
       - name: Debug system resources
         run: |
           echo "=== System Resources Before npm install ==="
@@ -310,46 +330,36 @@ jobs:
         env:
           NODE_OPTIONS: "--max_old_space_size=2048"
         run: |
-          echo "=== Starting simplified npm installation ==="
+          echo "=== Starting npm installation ==="
           
-          # Start a background monitor that will kill the process if it hangs
-          {
-            sleep 300  # 5 minute absolute timeout
-            echo "Emergency timeout reached - killing npm processes"
-            pkill -f npm || true
-            exit 1
-          } &
-          MONITOR_PID=$!
+          # Clean npm cache and configuration first
+          npm cache clean --force || echo "Cache clean failed, continuing..."
           
-          # Minimal cleanup to avoid hangs
-          pkill -f npm || true
-          sleep 1
-          
-          # Basic npm configuration
+          # Set npm configuration for reliable installation
           npm config set fund false
           npm config set audit false
           npm config set progress false
+          npm config set loglevel error
+          npm config set registry https://registry.npmjs.org/
           
-          echo "Attempting npm install with timeout..."
-          
-          # Single straightforward approach with reasonable timeout
-          if timeout 240 npm install --no-fund --no-audit; then
-            echo "npm install completed successfully"
-            kill $MONITOR_PID 2>/dev/null || true
+          # Try different approaches in order of preference
+          echo "Attempt 1: Standard npm install..."
+          if npm install --no-fund --no-audit --prefer-offline=false; then
+            echo "✓ Standard npm install successful"
+          elif npm install --no-fund --no-audit --no-package-lock --prefer-offline=false; then
+            echo "✓ npm install without package-lock successful"
+          elif npm ci --no-fund --no-audit; then
+            echo "✓ npm ci successful"
           else
-            echo "Primary install failed, trying without package-lock..."
-            rm -f package-lock.json
-            if timeout 240 npm install --no-fund --no-audit --no-save; then
-              echo "Alternative npm install successful"
-              kill $MONITOR_PID 2>/dev/null || true
-            else
-              echo "All npm install attempts failed"
-              kill $MONITOR_PID 2>/dev/null || true
-              exit 1
-            fi
+            echo "❌ All npm installation methods failed"
+            echo "Checking npm logs..."
+            cat ~/.npm/_logs/*debug*.log 2>/dev/null | tail -20 || echo "No npm logs found"
+            exit 1
           fi
           
           echo "=== npm installation completed ==="
+          echo "Verifying installation..."
+          npm list --depth=0 || echo "Some dependencies may be missing but continuing..."
 
       - name: Install Playwright and Use Cached Browsers
         env:
@@ -361,13 +371,34 @@ jobs:
           export PLAYWRIGHT_BROWSERS_PATH=~/.cache/ms-playwright
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
           
-          # Install browsers with timeout
-          if timeout 180 npx playwright install chromium firefox; then
-            echo "Playwright browsers installed successfully"
-          else
-            echo "Browser installation failed or timed out"
+          # Create browsers directory if it doesn't exist
+          mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
+          
+          # Install browsers with retries
+          BROWSER_INSTALL_SUCCESS=false
+          for attempt in 1 2 3; do
+            echo "Browser installation attempt $attempt..."
+            if npx playwright install chromium firefox; then
+              echo "✓ Playwright browsers installed successfully on attempt $attempt"
+              BROWSER_INSTALL_SUCCESS=true
+              break
+            else
+              echo "❌ Browser installation attempt $attempt failed"
+              if [ $attempt -lt 3 ]; then
+                echo "Waiting 10 seconds before retry..."
+                sleep 10
+              fi
+            fi
+          done
+          
+          if [ "$BROWSER_INSTALL_SUCCESS" = false ]; then
+            echo "❌ All browser installation attempts failed"
             exit 1
           fi
+          
+          # Verify browsers are installed
+          echo "Verifying browser installations..."
+          ls -la "$PLAYWRIGHT_BROWSERS_PATH" || echo "Browser cache directory listing failed"
 
       - name: Run WCAG Accessibility Tests for batch
         env:
@@ -375,11 +406,19 @@ jobs:
           BATCH_INDEX: ${{ matrix.batch }}
           PREFER_HASH_URL: "true"
         run: |
+          echo "=== Starting WCAG tests for batch ${{ matrix.batch }} ==="
+          
+          # Verify test files exist
+          if [ ! -d "tests" ] || [ -z "$(ls -A tests/ 2>/dev/null)" ]; then
+            echo "❌ No test files found in tests/ directory"
+            ls -la tests/ || echo "tests/ directory does not exist"
+            exit 1
+          fi
+          
           mapfile -t ALL_SPECS < <(ls tests/*.spec.ts)
           TOTAL_SPECS=${#ALL_SPECS[@]}
 
-          echo "=== DEBUG: Environment check ==="
-          echo "BATCH_INDEX: $BATCH_INDEX"
+          echo "Found $TOTAL_SPECS test specification files"
           echo "Matrix batch: ${{ matrix.batch }}"
 
           TARGET_TESTS_PER_BATCH=8
@@ -402,15 +441,39 @@ jobs:
           END_INDEX=$((START_INDEX + BATCH_SIZE))
 
           echo "Processing batch ${{ matrix.batch }} with tests $START_INDEX to $((END_INDEX-1))"
+          echo "Batch size: $BATCH_SIZE, Total batches: $BATCH_COUNT"
+          
+          # Create output directories
+          mkdir -p accessibility-reports playwright-report
+          
+          TESTS_RUN=0
+          TESTS_FAILED=0
           
           for ((i = START_INDEX; i < END_INDEX && i < ${#ALL_SPECS[@]}; i++)); do
             if [ -f "${ALL_SPECS[$i]}" ]; then
               SPEC_FILE="${ALL_SPECS[$i]}"
               PROJECT_NAME=$(basename "$SPEC_FILE" .spec.ts | tr '_' ' ')
-              echo "Running Playwright tests for '$PROJECT_NAME' ($SPEC_FILE)"
-              npx playwright test "$SPEC_FILE" || echo "Test completed with violations for $PROJECT_NAME"
+              echo ""
+              echo "🧪 Running tests for '$PROJECT_NAME' ($SPEC_FILE)..."
+              
+              TESTS_RUN=$((TESTS_RUN + 1))
+              
+              if npx playwright test "$SPEC_FILE"; then
+                echo "✅ Tests completed successfully for $PROJECT_NAME"
+              else
+                echo "⚠️  Tests completed with issues for $PROJECT_NAME (this is expected for accessibility violations)"
+                TESTS_FAILED=$((TESTS_FAILED + 1))
+              fi
             fi
           done
+          
+          echo ""
+          echo "=== Batch ${{ matrix.batch }} Summary ==="
+          echo "Tests run: $TESTS_RUN"
+          echo "Tests with issues: $TESTS_FAILED"
+          echo "Output files generated:"
+          find accessibility-reports -name "*.json" 2>/dev/null | wc -l | xargs echo "  Accessibility reports:"
+          find playwright-report -name "*.html" 2>/dev/null | wc -l | xargs echo "  Playwright reports:"
         continue-on-error: true
 
       - name: Upload test results
