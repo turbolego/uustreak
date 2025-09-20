@@ -691,12 +691,35 @@
             const headerRow = document.createElement('tr');
             columns.forEach((col, index) => {
                 const th = document.createElement('th');
-                th.textContent = col;
+                th.setAttribute('scope', 'col');
+                
                 // Don't make the rank column sortable
                 if (index !== 0) {
-                    th.addEventListener('click', () => sortTable(table, index));
-                    th.style.cursor = 'pointer';
+                    th.classList.add('sortable');
+                    
+                    // Create button wrapper for accessibility
+                    const button = document.createElement('button');
+                    button.type = 'button';
+                    button.setAttribute('aria-label', `Sort by ${col}`);
+                    
+                    // Add column text
+                    const columnText = document.createElement('span');
+                    columnText.textContent = col;
+                    button.appendChild(columnText);
+                    
+                    // Add sort icon
+                    const sortIcon = document.createElement('span');
+                    sortIcon.className = 'sort-icon';
+                    sortIcon.setAttribute('aria-hidden', 'true');
+                    button.appendChild(sortIcon);
+                    
+                    button.addEventListener('click', () => sortTable(table, index));
+                    th.appendChild(button);
+                } else {
+                    // Non-sortable column (rank)
+                    th.textContent = col;
                 }
+                
                 headerRow.appendChild(th);
             });
             thead.appendChild(headerRow);
@@ -753,6 +776,7 @@
 
             tableContainer.appendChild(table);
 
+            // Set initial sort direction and apply sort
             table.dataset.sortDirection = 'desc';
             sortTable(table, 4, true);
         }
@@ -767,6 +791,28 @@
             const currentSortDirection = isInitialSort ? 'desc' : (table.dataset.sortDirection || 'desc');
             const newSortDirection = isInitialSort ? 'desc' : (currentSortDirection === 'desc' ? 'asc' : 'desc');
             table.dataset.sortDirection = newSortDirection;
+
+            // Update ARIA and visual sort states - clear all previous states
+            const allHeaders = table.querySelectorAll('th');
+            allHeaders.forEach(header => {
+                header.classList.remove('sort-asc', 'sort-desc');
+                header.removeAttribute('aria-sort');
+            });
+
+            // Set the current sort state
+            const currentHeader = allHeaders[columnIndex];
+            if (currentHeader.classList.contains('sortable')) {
+                currentHeader.classList.add(newSortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
+                currentHeader.setAttribute('aria-sort', newSortDirection === 'asc' ? 'ascending' : 'descending');
+                
+                // Update button aria-label to indicate current sort state
+                const button = currentHeader.querySelector('button');
+                if (button) {
+                    const columnName = button.querySelector('span').textContent;
+                    const sortDescription = newSortDirection === 'asc' ? 'ascending' : 'descending';
+                    button.setAttribute('aria-label', `Sort by ${columnName}, currently sorted ${sortDescription}. Click to sort ${newSortDirection === 'asc' ? 'descending' : 'ascending'}.`);
+                }
+            }
 
             rows.sort((a, b) => {
                 let aValue = a.children[columnIndex]?.textContent || '';
