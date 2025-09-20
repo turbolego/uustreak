@@ -1,8 +1,27 @@
-name: WCAG Accessibility Testing (self-hosted runner)
+# Self-hosted accessibility testing workflow with comprehensive failure handling
+# This workflow has 4 critical jobs that must ALL succeed:
+# 1. setup: Generates test matrix and validates URLs
+# 2. wcag-test: Runs accessibility tests on all URLs
+# 3. merge-summaries: Consolidates test results
+# 4. deploy: Uploads results to web server
+#
+# Failure handling:
+# - If ANY job fails, the workflow terminates and retries (max 3 attempts)
+# - All jobs must complete successfully before proceeding to deployment
+# - Exponential backoff between retry attempts (5min, 10min, 15min)
+# - Final failure results in workflow termination with notification
+
+name: Deploy to Self-hosted
 on:
   schedule:
     - cron: '0 0 * * *'          # every day at 00:00 UTC
   workflow_dispatch:   # Allows manual execution
+    inputs:
+      retry_count:
+        description: 'Retry attempt number (internal use)'
+        required: false
+        default: '1'
+        type: string
 
 concurrency:
   group: wcag-testing-${{ github.ref }}
@@ -21,6 +40,13 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
       cache-path: ${{ steps.cache-output.outputs.cache-path }}
     steps:
+      - name: Log workflow attempt
+        run: |
+          RETRY_COUNT=${{ github.event.inputs.retry_count || '1' }}
+          echo "🚀 Starting WCAG Accessibility Testing workflow - Attempt $RETRY_COUNT"
+          if [[ $RETRY_COUNT -gt 1 ]]; then
+            echo "This is a retry attempt due to previous failures."
+          fi
       - name: Clean workspace for setup
         run: |
           # Kill any hanging npm or node processes first
@@ -188,13 +214,35 @@ jobs:
           retention-days: 30
         continue-on-error: true
 
+      - name: Validate setup outputs
+        run: |
+          echo "Validating setup job outputs..."
+          MATRIX_OUTPUT='${{ steps.set-matrix.outputs.matrix }}'
+          
+          if [[ -z "$MATRIX_OUTPUT" || "$MATRIX_OUTPUT" == "null" ]]; then
+            echo "❌ ERROR: Matrix output is empty or null"
+            echo "Matrix output: $MATRIX_OUTPUT"
+            exit 1
+          fi
+          
+          # Check if matrix is valid JSON
+          echo "$MATRIX_OUTPUT" | jq . > /dev/null
+          if [[ $? -ne 0 ]]; then
+            echo "❌ ERROR: Matrix output is not valid JSON"
+            echo "Matrix output: $MATRIX_OUTPUT"
+            exit 1
+          fi
+          
+          echo "✅ Setup validation successful"
+          echo "Matrix: $MATRIX_OUTPUT"
+
   wcag-test:
     needs: setup
     runs-on: self-hosted
     timeout-minutes: 60
     strategy:
       matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
-      fail-fast: false
+      fail-fast: true  # Stop all jobs if one fails
       max-parallel: 4
     steps:
       - name: Clean workspace manually
@@ -398,7 +446,7 @@ jobs:
   merge-summaries:
     needs: wcag-test
     runs-on: self-hosted
-    if: always()
+    if: success() # Only run if wcag-test succeeded
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
@@ -467,9 +515,106 @@ jobs:
           path: accessibility-reports/summaries/
           retention-days: 30
 
-  deploy:
-    needs: [wcag-test, merge-summaries]
+  check-job-status:
+    needs: [setup, wcag-test, merge-summaries]
     runs-on: self-hosted
+    if: always()
+    outputs:
+      all_jobs_successful: ${{ steps.check-status.outputs.all_successful }}
+      should_retry: ${{ steps.check-status.outputs.should_retry }}
+    steps:
+      - name: Check if all jobs succeeded
+        id: check-status
+        run: |
+          echo "Checking job statuses..."
+          
+          # Check each job result
+          SETUP_STATUS="${{ needs.setup.result }}"
+          WCAG_TEST_STATUS="${{ needs.wcag-test.result }}"
+          MERGE_SUMMARIES_STATUS="${{ needs.merge-summaries.result }}"
+          
+          echo "Setup job status: $SETUP_STATUS"
+          echo "WCAG test job status: $WCAG_TEST_STATUS"
+          echo "Merge summaries job status: $MERGE_SUMMARIES_STATUS"
+          
+          # Validate setup job outputs if setup succeeded
+          if [[ "$SETUP_STATUS" == "success" ]]; then
+            MATRIX_OUTPUT='${{ needs.setup.outputs.matrix }}'
+            if [[ -z "$MATRIX_OUTPUT" || "$MATRIX_OUTPUT" == "null" ]]; then
+              echo "❌ Setup job succeeded but produced invalid matrix output"
+              SETUP_STATUS="failure"
+            else
+              echo "✅ Setup job outputs validated"
+            fi
+          fi
+          
+          # Determine if all jobs were successful
+          if [[ "$SETUP_STATUS" == "success" && "$WCAG_TEST_STATUS" == "success" && "$MERGE_SUMMARIES_STATUS" == "success" ]]; then
+            echo "✅ All jobs completed successfully"
+            echo "all_successful=true" >> $GITHUB_OUTPUT
+            echo "should_retry=false" >> $GITHUB_OUTPUT
+          else
+            echo "❌ One or more jobs failed:"
+            echo "  Setup: $SETUP_STATUS"
+            echo "  WCAG Test: $WCAG_TEST_STATUS"
+            echo "  Merge Summaries: $MERGE_SUMMARIES_STATUS"
+            
+            # Check retry count
+            RETRY_COUNT=${{ github.event.inputs.retry_count || '1' }}
+            echo "Current retry attempt: $RETRY_COUNT"
+            
+            # Only retry if we haven't reached the maximum attempts and at least one job actually failed
+            if [[ $RETRY_COUNT -lt 3 ]] && [[ \"$SETUP_STATUS\" == \"failure\" || \"$WCAG_TEST_STATUS\" == \"failure\" || \"$MERGE_SUMMARIES_STATUS\" == \"failure\" ]]; then
+              echo "Will attempt retry (attempt $RETRY_COUNT of 3)"
+              echo "should_retry=true" >> $GITHUB_OUTPUT
+            else
+              if [[ $RETRY_COUNT -ge 3 ]]; then
+                echo "Maximum retry attempts (3) reached. Workflow will terminate."
+              else
+                echo "Jobs were cancelled or skipped, not retrying."
+              fi
+              echo "should_retry=false" >> $GITHUB_OUTPUT
+            fi
+            
+            echo "all_successful=false" >> $GITHUB_OUTPUT
+          fi
+
+  retry-workflow:
+    needs: [check-job-status]
+    runs-on: self-hosted
+    if: needs.check-job-status.outputs.should_retry == 'true'
+    steps:
+      - name: Wait before retry
+        run: |
+          RETRY_COUNT=${{ github.event.inputs.retry_count || '1' }}
+          WAIT_TIME=$((RETRY_COUNT * 300))  # Exponential backoff: 5min, 10min, 15min
+          echo "Waiting $WAIT_TIME seconds before retrying the workflow (attempt $RETRY_COUNT)..."
+          sleep $WAIT_TIME
+          
+      - name: Trigger workflow retry
+        uses: actions/github-script@v8
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const retryCount = parseInt('${{ github.event.inputs.retry_count || '1' }}') + 1;
+            console.log(`Triggering retry attempt ${retryCount}`);
+            
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'deploy-selfhosted.yml',
+              ref: 'main',
+              inputs: {
+                retry_count: retryCount.toString()
+              }
+            });
+            
+            console.log('Retry workflow triggered successfully');
+
+  deploy:
+    needs: [wcag-test, merge-summaries, check-job-status]
+    runs-on: self-hosted
+    if: needs.check-job-status.outputs.all_jobs_successful == 'true'
     steps:
       - name: Clean workspace
         run: |
@@ -958,3 +1103,22 @@ jobs:
               workflow_id: 'create-update-issues-selfhosted.yml',
               ref: 'main'
             })
+
+  workflow-failure-notification:
+    needs: [setup, wcag-test, merge-summaries, check-job-status]
+    runs-on: self-hosted
+    if: always() && needs.check-job-status.outputs.all_jobs_successful == 'false' && needs.check-job-status.outputs.should_retry == 'false'
+    steps:
+      - name: Notify workflow failure
+        run: |
+          echo "🚨 WORKFLOW FAILED AFTER MAXIMUM RETRIES"
+          echo "The WCAG accessibility testing workflow has failed after 3 attempts."
+          echo "Manual intervention may be required."
+          echo ""
+          echo "Failed jobs:"
+          echo "  Setup: ${{ needs.setup.result }}"
+          echo "  WCAG Test: ${{ needs.wcag-test.result }}"
+          echo "  Merge Summaries: ${{ needs.merge-summaries.result }}"
+          
+          # Exit with error to mark workflow as failed
+          exit 1
