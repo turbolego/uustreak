@@ -543,7 +543,7 @@
             };
         }
 
-        function calculateNoViolationsStreak(projectName, reportList, currentReport = null) {
+        function calculateNoViolationsStreak(projectName, reportList, currentReport = null, selectedDate = null) {
             // If current report has violations, streak is always 0
             if (currentReport && currentReport.total_violations > 0) {
                 return 0;
@@ -558,8 +558,19 @@
                 return 0;
             }
 
-            // Get the most recent report to check current violation status
-            const mostRecentReport = filteredReports[0];
+            // If selectedDate is provided, only consider reports up to and including that date
+            let reportsToConsider = filteredReports;
+            if (selectedDate) {
+                const selectedDateObj = new Date(selectedDate);
+                reportsToConsider = filteredReports.filter(report => new Date(report.date) <= selectedDateObj);
+            }
+
+            if (reportsToConsider.length === 0) {
+                return 0;
+            }
+
+            // Get the most recent report (within the selected date range) to check current violation status
+            const mostRecentReport = reportsToConsider[0];
             const hasCurrentViolations = !mostRecentReport.filename.includes('-count-0');
 
             // If the most recent report has violations, streak is always 0
@@ -568,14 +579,14 @@
             }
 
             let streak = 0;
-            let currentDate = new Date(mostRecentReport.date);
+            let currentDate = selectedDate ? new Date(selectedDate) : new Date(mostRecentReport.date);
 
-            // Count consecutive days without violations, starting from most recent
-            for (let i = 0; i < filteredReports.length; i++) {
-                const report = filteredReports[i];
+            // Count consecutive days without violations, working backwards from selected date (or most recent date)
+            for (let i = 0; i < reportsToConsider.length; i++) {
+                const report = reportsToConsider[i];
                 const reportDate = new Date(report.date);
 
-                // Fill in missing days between reports
+                // Fill in missing days between current position and this report date
                 while (currentDate > reportDate) {
                     streak++;
                     currentDate.setDate(currentDate.getDate() - 1);
@@ -671,9 +682,9 @@
             const reportStreaks = new Map();
             const viewMode = document.getElementById('view-selector').value;
 
-            // Calculate streaks for each project
+            // Calculate streaks for each project up to the selected date
             latestReports.forEach(report => {
-                const streak = calculateNoViolationsStreak(report.project, reportList, report);
+                const streak = calculateNoViolationsStreak(report.project, reportList, report, date);
                 reportStreaks.set(report.project, streak);
             });
 
