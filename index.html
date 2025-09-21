@@ -90,6 +90,26 @@
         let currentSortColumnIndex = 3; // Default sort by streak column (index 3)
         let currentSortDirection = 'desc'; // Default sort direction
 
+        /**
+         * Get a set of valid project names from the current report list
+         * This helps filter out projects that exist in archives but are no longer active/valid
+         * @param {Array} reportFiles - Array of report filenames from report-list.json
+         * @returns {Set} - Set of valid project names
+         */
+        function getValidProjectNames(reportFiles) {
+            const validProjects = new Set();
+            
+            reportFiles.forEach(filename => {
+                const parsed = parseReportFilename(filename);
+                if (parsed && parsed.project) {
+                    validProjects.add(parsed.project);
+                }
+            });
+            
+            console.log(`Found ${validProjects.size} valid projects in report-list.json`);
+            return validProjects;
+        }
+
         // Trinn 1: Hent og analyser rapportlisten
         async function fetchReportList() {
             try {
@@ -231,11 +251,15 @@
                     const jsonFiles = await fetchAndDecompressArchive(archiveUrl);
                     console.log(`Successfully loaded ${Object.keys(jsonFiles).length} files from archive`);
 
+                    // Get valid project names from report-list.json to filter out inactive/renamed projects
+                    const validProjects = getValidProjectNames(reportList);
+
                     // Process the JSON files with deduplication (keep only newest report per project)
                     const reports = [];
                     const projectReports = new Map(); // Track newest report per project
                     let processedCount = 0;
                     let violationFiles = 0;
+                    let filteredOutProjects = 0;
                     const totalFiles = Object.keys(jsonFiles).length;
 
                     // Initialize progress
@@ -262,6 +286,15 @@
                                 const projectMatch = cleanFilename.match(/violations-(.+)-\d{4}/);
                                 if (projectMatch) {
                                     const project = projectMatch[1];
+                                    
+                                    // Filter out projects that don't exist in report-list.json
+                                    // This prevents projects like "Ski kommune" (which was renamed) from showing with 0 counters
+                                    if (!validProjects.has(project)) {
+                                        filteredOutProjects++;
+                                        console.log(`Filtering out project "${project}" - not found in current report-list.json`);
+                                        continue;
+                                    }
+                                    
                                     const currentReport = projectReports.get(project);
 
                                     // Only keep the newest report for each project (filename comparison works for timestamp ordering)
@@ -291,7 +324,7 @@
                     // Convert Map to array (only the newest reports per project)
                     reports.push(...Array.from(projectReports.values()));
 
-                    console.log(`Processed ${reports.length} unique project reports from archive (${violationFiles} violation files found out of ${totalFiles} total files, deduplicated to ${reports.length} newest reports)`);
+                    console.log(`Processed ${reports.length} unique project reports from archive (${violationFiles} violation files found, ${filteredOutProjects} projects filtered out as not in report-list.json, deduplicated to ${reports.length} newest valid reports)`);
 
                     // Store in cache
                     allReportsForDate = [...reports];
