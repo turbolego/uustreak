@@ -210,9 +210,12 @@
             const loadingContainer = initializeLoading();
 
             try {
-                // Check if gzip utilities are available first
+                // Check if gzip utilities are available
                 if (typeof fetchAndDecompressArchive !== 'function') {
-                    console.log('gzip-utils.js not available, falling back to legacy method immediately');
+                    console.warn('gzip-utils.js not available, falling back to legacy method');
+                    if (typeof showOptimizationStatus === 'function') {
+                        showOptimizationStatus('Falling back to individual file loading: Gzip utilities missing', 'warning');
+                    }
                     return await fetchReportsForDateLegacy(date, page);
                 }
 
@@ -220,22 +223,13 @@
                 const archiveUrl = `accessibility-reports/archives/reports_${date}.tar.gz`;
                 try {
                     console.log(`Attempting to fetch gzip archive for ${date}...`);
-                    
-                    // Check if gzip utilities are available
-                    if (typeof fetchAndDecompressArchive !== 'function') {
-                        throw new Error('gzip-utils.js not loaded or fetchAndDecompressArchive function not available');
-                    }
-                    
+
                     if (typeof showOptimizationStatus === 'function') {
                         showOptimizationStatus('Using optimized loading (gzip archive)', 'success');
                     }
-                    
+
                     const jsonFiles = await fetchAndDecompressArchive(archiveUrl);
                     console.log(`Successfully loaded ${Object.keys(jsonFiles).length} files from archive`);
-
-                    // Debug: Log first few filenames to see the format
-                    const filenames = Object.keys(jsonFiles);
-                    console.log('Sample filenames from archive:', filenames.slice(0, 10));
 
                     // Process the JSON files with deduplication (keep only newest report per project)
                     const reports = [];
@@ -263,18 +257,18 @@
                             const cleanFilename = filename.startsWith('./') ? filename.substring(2) : filename;
                             if (cleanFilename.startsWith('violations-') && cleanFilename.endsWith('.json')) {
                                 violationFiles++;
-                                
+
                                 // Extract project name from filename
                                 const projectMatch = cleanFilename.match(/violations-(.+)-\d{4}/);
                                 if (projectMatch) {
                                     const project = projectMatch[1];
                                     const currentReport = projectReports.get(project);
-                                    
+
                                     // Only keep the newest report for each project (filename comparison works for timestamp ordering)
                                     if (!currentReport || cleanFilename > currentReport.filename.split('/').pop()) {
                                         // Add filename and calculate streak
                                         data.filename = `accessibility-reports/${date}/${cleanFilename}`;
-                                        data.noViolationsStreak = calculateNoViolationsStreak(data.project, reportList);
+                                        data.noViolationsStreak = calculateNoViolationsStreak(data.project, reportList, data);
                                         projectReports.set(project, data);
                                     }
                                 }
@@ -330,14 +324,23 @@
 
                     return reports;
                 } catch (archiveError) {
-                    console.warn(`Failed to load from archive (${archiveError.message}), falling back to individual files...`);
-                    
-                    if (typeof showOptimizationStatus === 'function') {
-                        showOptimizationStatus('Falling back to individual file loading', 'warning');
-                    }
+                    console.warn(`Failed to load from archive (${archiveError.message})`);
 
-                    // Fallback to the original method
-                    return await fetchReportsForDateLegacy(date, page);
+                    // Check for a 404 error and fall back to legacy if it's the case
+                    if (archiveError.message.includes('HTTP status 404')) {
+                        console.log('Archive file does not exist, using individual file method');
+                        if (typeof showOptimizationStatus === 'function') {
+                            showOptimizationStatus('Archive not found, falling back to individual file loading', 'warning');
+                        }
+                        return await fetchReportsForDateLegacy(date, page);
+                    } else {
+                        // For other errors (e.g., network, server), re-throw
+                        console.error('Archive loading failed due to a technical issue:', archiveError);
+                        if (typeof showOptimizationStatus === 'function') {
+                            showOptimizationStatus('Archive loading failed: ' + archiveError.message, 'error');
+                        }
+                        throw archiveError;
+                    }
                 }
 
             } catch (error) {
@@ -345,6 +348,7 @@
                 if (loadingContainer) {
                     loadingContainer.style.display = 'none';
                 }
+                showError('Kritisk feil under lasting av rapporter.');
                 return [];
             }
         }
@@ -406,12 +410,12 @@
                                     const response = await fetchWithTimeout(adjustedPath);
                                     const data = await response.json();
                                     data.filename = filename;
-                                    data.noViolationsStreak = calculateNoViolationsStreak(data.project, reportList);
+                                    data.noViolationsStreak = calculateNoViolationsStreak(data.project, reportList, data);
                                     return data;
                                 } catch (error) {
                                     retries++;
                                     if (retries >= retryLimit) {
-                                        failedReports.push({path: adjustedPath, error: error.message});
+                                        failedReports.push({ path: adjustedPath, error: error.message });
                                         return null;
                                     }
                                     const delay = Math.min(1000 * Math.pow(2, retries - 1), 4000);
@@ -419,7 +423,7 @@
                                 }
                             }
                         } catch (error) {
-                            failedReports.push({path: filename, error: error.message});
+                            failedReports.push({ path: filename, error: error.message });
                             return null;
                         }
                     });
@@ -539,7 +543,12 @@
             };
         }
 
-        function calculateNoViolationsStreak(projectName, reportList) {
+        function calculateNoViolationsStreak(projectName, reportList, currentReport = null) {
+            // If current report has violations, streak is always 0
+            if (currentReport && currentReport.total_violations > 0) {
+                return 0;
+            }
+
             const filteredReports = reportList
                 .map(parseReportFilename)
                 .filter(report => report && report.project === projectName)
@@ -552,7 +561,7 @@
             // Get the most recent report to check current violation status
             const mostRecentReport = filteredReports[0];
             const hasCurrentViolations = !mostRecentReport.filename.includes('-count-0');
-            
+
             // If the most recent report has violations, streak is always 0
             if (hasCurrentViolations) {
                 return 0;
@@ -664,7 +673,7 @@
 
             // Calculate streaks for each project
             latestReports.forEach(report => {
-                const streak = calculateNoViolationsStreak(report.project, reportList);
+                const streak = calculateNoViolationsStreak(report.project, reportList, report);
                 reportStreaks.set(report.project, streak);
             });
 
@@ -702,34 +711,34 @@
             columns.forEach((col, index) => {
                 const th = document.createElement('th');
                 th.setAttribute('scope', 'col');
-                
+
                 // Don't make the rank column sortable
                 if (index !== 0) {
                     th.classList.add('sortable');
-                    
+
                     // Create button wrapper for accessibility
                     const button = document.createElement('button');
                     button.type = 'button';
                     button.setAttribute('aria-label', `Sort by ${col}`);
-                    
+
                     // Add column text
                     const columnText = document.createElement('span');
                     columnText.textContent = col;
                     button.appendChild(columnText);
-                    
+
                     // Add sort icon
                     const sortIcon = document.createElement('span');
                     sortIcon.className = 'sort-icon';
                     sortIcon.setAttribute('aria-hidden', 'true');
                     button.appendChild(sortIcon);
-                    
+
                     button.addEventListener('click', () => sortTable(table, index));
                     th.appendChild(button);
                 } else {
                     // Non-sortable column (rank)
                     th.textContent = col;
                 }
-                
+
                 headerRow.appendChild(th);
             });
             thead.appendChild(headerRow);
@@ -814,7 +823,7 @@
             if (currentHeader.classList.contains('sortable')) {
                 currentHeader.classList.add(newSortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
                 currentHeader.setAttribute('aria-sort', newSortDirection === 'asc' ? 'ascending' : 'descending');
-                
+
                 // Update button aria-label to indicate current sort state
                 const button = currentHeader.querySelector('button');
                 if (button) {
@@ -873,7 +882,7 @@
                 dialog.close();
             }
         });
-        
+
         // Initialize
         async function initialize() {
             try {
@@ -883,6 +892,13 @@
                 errorContainer.style.display = 'none';
                 errorContainer.className = 'error-message';
                 document.querySelector('main').appendChild(errorContainer);
+
+                // Add a check for gzip-utils.js
+                if (typeof fetchAndDecompressArchive !== 'function') {
+                    console.error('gzip-utils.js failed to load or is not available');
+                    showError('Required compression utilities not available. Please refresh the page.');
+                    // Don't return, as the legacy method can still work
+                }
 
                 // Fetch report list and store it globally
                 try {
@@ -902,11 +918,9 @@
                     return;
                 }
 
-                // Ensure current date is valid
-                if (!availableDates.includes(currentDate)) {
-                    currentDate = availableDates[availableDates.length - 1]; // Use latest date
-                    console.log('Adjusted current date to:', currentDate);
-                }
+                // Use the latest available date instead of today's date
+                currentDate = availableDates[availableDates.length - 1];
+                console.log('Using latest available date:', currentDate);
 
                 // Setup date display
                 if (!document.getElementById('current-date')) {
@@ -945,7 +959,7 @@
 
             prevDayBtn.replaceWith(prevDayBtn.cloneNode(true));
             nextDayBtn.replaceWith(nextDayBtn.cloneNode(true));
-            
+
             // Add fresh event listeners
             document.getElementById('prev-day').addEventListener('click', () => navigateDay(-1));
             document.getElementById('next-day').addEventListener('click', () => navigateDay(1));
@@ -954,7 +968,7 @@
                 const reports = await fetchReportsForDate(currentDate);
                 await renderTable(reports, currentDate);
             });
-            
+
             // Set up event listeners for the summary dialog
             document.getElementById('view-summary').addEventListener('click', viewTagSummary);
 
@@ -1034,7 +1048,7 @@
         });
 
         document.addEventListener('DOMContentLoaded', loadReadme);
-        
+
         // End of script
     </script>
 </body>
