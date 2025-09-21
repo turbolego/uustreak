@@ -7,6 +7,10 @@ on:
         description: 'Date of missing archive (YYYY-MM-DD)'
         required: true
         default: '2025-09-21'
+      workflow_run_id:
+        description: 'Workflow run ID to recover from (optional)'
+        required: false
+        default: ''
 
 jobs:
   recover:
@@ -23,24 +27,106 @@ jobs:
           ref: gh-pages
           path: gh-pages
           
-      - name: Check for existing data
+      - name: Check for existing data or download from artifacts
         run: |
           DATE="${{ github.event.inputs.date }}"
-          echo "Checking for data from date: $DATE"
+          WORKFLOW_RUN_ID="${{ github.event.inputs.workflow_run_id }}"
+          echo "Attempting to recover data for date: $DATE"
           
-          # Check if we have the source data
+          # First, check if we have the source data in gh-pages
           if [ -d "gh-pages/accessibility-reports/$DATE" ]; then
-            echo "Found source data directory"
+            echo "Found source data directory in gh-pages"
             ls -la "gh-pages/accessibility-reports/$DATE/" | head -10
           else
-            echo "ERROR: No source data found for $DATE"
-            exit 1
+            echo "No source data found in gh-pages for $DATE"
+            
+            # Try to recover from workflow artifacts if run ID provided
+            if [ -n "$WORKFLOW_RUN_ID" ]; then
+              echo "Attempting to download artifacts from workflow run: $WORKFLOW_RUN_ID"
+              
+              # Download artifacts from the specified workflow run
+              gh run download "$WORKFLOW_RUN_ID" -D temp-artifacts || {
+                echo "Failed to download artifacts from run $WORKFLOW_RUN_ID"
+                echo "Available runs for today:"
+                gh run list --limit 10 --json databaseId,displayTitle,createdAt,conclusion
+                exit 1
+              }
+              
+              # Create the date directory
+              mkdir -p "gh-pages/accessibility-reports/$DATE"
+              
+              # Find and copy violation files from artifacts
+              find temp-artifacts -name "violations-*.json" | while read -r file; do
+                cp "$file" "gh-pages/accessibility-reports/$DATE/"
+                echo "Recovered: $(basename "$file")"
+              done
+              
+              # Also copy summary files if they exist
+              mkdir -p "gh-pages/accessibility-reports/summaries/$DATE"
+              find temp-artifacts -path "*/summaries/$DATE/*.json" -o -name "daily_summary*.json" | while read -r file; do
+                cp "$file" "gh-pages/accessibility-reports/summaries/$DATE/"
+                echo "Recovered summary: $(basename "$file")"
+              done
+              
+              # Clean up temp artifacts
+              rm -rf temp-artifacts
+            else
+              echo "No workflow run ID provided. Trying to find recent runs..."
+              
+              # List recent workflow runs
+              echo "Recent workflow runs:"
+              gh run list --workflow=deploy-selfhosted.yml --limit 5 --json databaseId,displayTitle,createdAt,conclusion
+              
+              # Try to find a run from today
+              TODAY_RUN=$(gh run list --workflow=deploy-selfhosted.yml --limit 10 --json databaseId,createdAt,conclusion | jq -r --arg date "$DATE" '.[] | select(.createdAt | startswith($date)) | select(.conclusion == "success" or .conclusion == "failure") | .databaseId' | head -1)
+              
+              if [ -n "$TODAY_RUN" ]; then
+                echo "Found workflow run from $DATE: $TODAY_RUN"
+                echo "Downloading artifacts..."
+                
+                gh run download "$TODAY_RUN" -D temp-artifacts || {
+                  echo "Failed to download artifacts"
+                  exit 1
+                }
+                
+                # Create directories
+                mkdir -p "gh-pages/accessibility-reports/$DATE"
+                mkdir -p "gh-pages/accessibility-reports/summaries/$DATE"
+                
+                # Copy violation files
+                find temp-artifacts -name "violations-*$DATE*.json" -o -name "violations-*.json" | while read -r file; do
+                  if [ -f "$file" ]; then
+                    cp "$file" "gh-pages/accessibility-reports/$DATE/" 2>/dev/null && echo "Recovered: $(basename "$file")"
+                  fi
+                done
+                
+                # Copy summary files
+                find temp-artifacts \( -path "*/summaries/$DATE/*.json" -o -name "daily_summary*.json" \) | while read -r file; do
+                  if [ -f "$file" ]; then
+                    cp "$file" "gh-pages/accessibility-reports/summaries/$DATE/" 2>/dev/null && echo "Recovered summary: $(basename "$file")"
+                  fi
+                done
+                
+                # Clean up
+                rm -rf temp-artifacts
+              else
+                echo "ERROR: No workflow run found for $DATE and no data in gh-pages"
+                echo "Please provide a workflow run ID to recover from"
+                exit 1
+              fi
+            fi
           fi
           
-      - name: Recreate Archive
+      - name: Create or Recreate Archive
         run: |
           DATE="${{ github.event.inputs.date }}"
           cd gh-pages
+          
+          # Check if we now have data
+          if [ ! -d "accessibility-reports/$DATE" ]; then
+            echo "ERROR: Still no data directory after recovery attempt"
+            exit 1
+          fi
           
           # Create temp directory
           TEMP_DIR="temp_recovery_$DATE"
@@ -48,19 +134,26 @@ jobs:
           
           # Copy violations files
           if [ -d "accessibility-reports/$DATE" ]; then
+            file_count=$(find "accessibility-reports/$DATE" -name "*.json" | wc -l)
+            echo "Found $file_count JSON files in accessibility-reports/$DATE"
             find "accessibility-reports/$DATE" -name "*.json" -exec cp {} "$TEMP_DIR/" \;
           fi
           
           # Copy summary files
           if [ -d "accessibility-reports/summaries/$DATE" ]; then
+            summary_count=$(find "accessibility-reports/summaries/$DATE" -name "*.json" | wc -l)
+            echo "Found $summary_count summary files"
             find "accessibility-reports/summaries/$DATE" -name "*.json" -exec cp {} "$TEMP_DIR/" \;
           fi
           
-          # Count files
-          FILE_COUNT=$(find "$TEMP_DIR" -name "*.json" | wc -l)
-          echo "Found $FILE_COUNT JSON files to archive"
+          # Count total files
+          TOTAL_FILES=$(find "$TEMP_DIR" -name "*.json" | wc -l)
+          echo "Total files to archive: $TOTAL_FILES"
           
-          if [ "$FILE_COUNT" -gt 0 ]; then
+          if [ "$TOTAL_FILES" -gt 0 ]; then
+            # Create archives directory if it doesn't exist
+            mkdir -p "accessibility-reports/archives"
+            
             # Create archive
             cd "$TEMP_DIR"
             tar -czf "../accessibility-reports/archives/reports_$DATE.tar.gz" *.json
@@ -106,11 +199,16 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           
+          # Add all files (including the data directory if it was recovered)
+          git add "accessibility-reports/$DATE" 2>/dev/null || true
+          git add "accessibility-reports/summaries/$DATE" 2>/dev/null || true
           git add "accessibility-reports/archives/reports_$DATE.tar.gz"
           git add "accessibility-reports/archives/reports_$DATE.manifest"
           git add "accessibility-reports/archives/archive_index.json"
           
-          git commit -m "Recover missing archive for $DATE" || echo "No changes to commit"
+          git status
+          
+          git commit -m "Recover archive and data for $DATE" || echo "No changes to commit"
           git push origin gh-pages
           
       - name: Verify Recovery
@@ -121,6 +219,13 @@ jobs:
           # Check if archive exists via GitHub API
           if gh api "repos/${{ github.repository }}/contents/accessibility-reports/archives/reports_${DATE}.tar.gz?ref=gh-pages" --jq '.name' 2>/dev/null; then
             echo "✅ Archive successfully recovered: reports_${DATE}.tar.gz"
+            
+            # Also check if data directory was created
+            if gh api "repos/${{ github.repository }}/contents/accessibility-reports/${DATE}?ref=gh-pages" --jq '.[0].name' 2>/dev/null; then
+              echo "✅ Data directory also recovered: accessibility-reports/${DATE}"
+            else
+              echo "⚠️ Archive recovered but data directory not present (this is okay if only archive was needed)"
+            fi
           else
             echo "❌ Archive recovery verification failed"
             exit 1
