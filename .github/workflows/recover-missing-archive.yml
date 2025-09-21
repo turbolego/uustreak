@@ -1,0 +1,127 @@
+name: Recover Missing Archive
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date of missing archive (YYYY-MM-DD)'
+        required: true
+        default: '2025-09-21'
+
+jobs:
+  recover:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v5
+        with:
+          ref: gh-pages
+          path: gh-pages
+          
+      - name: Check for existing data
+        run: |
+          DATE="${{ github.event.inputs.date }}"
+          echo "Checking for data from date: $DATE"
+          
+          # Check if we have the source data
+          if [ -d "gh-pages/accessibility-reports/$DATE" ]; then
+            echo "Found source data directory"
+            ls -la "gh-pages/accessibility-reports/$DATE/" | head -10
+          else
+            echo "ERROR: No source data found for $DATE"
+            exit 1
+          fi
+          
+      - name: Recreate Archive
+        run: |
+          DATE="${{ github.event.inputs.date }}"
+          cd gh-pages
+          
+          # Create temp directory
+          TEMP_DIR="temp_recovery_$DATE"
+          mkdir -p "$TEMP_DIR"
+          
+          # Copy violations files
+          if [ -d "accessibility-reports/$DATE" ]; then
+            find "accessibility-reports/$DATE" -name "*.json" -exec cp {} "$TEMP_DIR/" \;
+          fi
+          
+          # Copy summary files
+          if [ -d "accessibility-reports/summaries/$DATE" ]; then
+            find "accessibility-reports/summaries/$DATE" -name "*.json" -exec cp {} "$TEMP_DIR/" \;
+          fi
+          
+          # Count files
+          FILE_COUNT=$(find "$TEMP_DIR" -name "*.json" | wc -l)
+          echo "Found $FILE_COUNT JSON files to archive"
+          
+          if [ "$FILE_COUNT" -gt 0 ]; then
+            # Create archive
+            cd "$TEMP_DIR"
+            tar -czf "../accessibility-reports/archives/reports_$DATE.tar.gz" *.json
+            cd ..
+            
+            # Create manifest
+            tar -tzf "accessibility-reports/archives/reports_$DATE.tar.gz" | sort > "accessibility-reports/archives/reports_$DATE.manifest"
+            
+            # Verify
+            ARCHIVE_SIZE=$(du -h "accessibility-reports/archives/reports_$DATE.tar.gz" | cut -f1)
+            echo "Created archive: reports_$DATE.tar.gz (Size: $ARCHIVE_SIZE)"
+            ls -la "accessibility-reports/archives/reports_$DATE"*
+          else
+            echo "ERROR: No JSON files found to archive"
+            exit 1
+          fi
+          
+          # Cleanup
+          rm -rf "$TEMP_DIR"
+          
+      - name: Update Archive Index
+        run: |
+          cd gh-pages/accessibility-reports/archives
+          
+          # Regenerate archive index
+          echo "Regenerating archive index..."
+          ls -la *.tar.gz 2>/dev/null | while read -r permissions links owner group size month day time filename; do
+            if [[ "$filename" =~ reports_([0-9]{4}-[0-9]{2}-[0-9]{2})\.tar\.gz ]]; then
+              DATE="${BASH_REMATCH[1]}"
+              FILE_COUNT=$(wc -l < "reports_$DATE.manifest" 2>/dev/null || echo "0")
+              echo "{\"date\":\"$DATE\",\"filename\":\"$filename\",\"size\":\"$size\",\"fileCount\":$FILE_COUNT}"
+            fi
+          done | jq -s 'sort_by(.date) | reverse' > archive_index.json
+          
+          echo "Archive index updated:"
+          cat archive_index.json | jq '.'
+          
+      - name: Commit and Push
+        run: |
+          DATE="${{ github.event.inputs.date }}"
+          cd gh-pages
+          
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          
+          git add "accessibility-reports/archives/reports_$DATE.tar.gz"
+          git add "accessibility-reports/archives/reports_$DATE.manifest"
+          git add "accessibility-reports/archives/archive_index.json"
+          
+          git commit -m "Recover missing archive for $DATE" || echo "No changes to commit"
+          git push origin gh-pages
+          
+      - name: Verify Recovery
+        run: |
+          DATE="${{ github.event.inputs.date }}"
+          sleep 5
+          
+          # Check if archive exists via GitHub API
+          if gh api "repos/${{ github.repository }}/contents/accessibility-reports/archives/reports_${DATE}.tar.gz?ref=gh-pages" --jq '.name' 2>/dev/null; then
+            echo "✅ Archive successfully recovered: reports_${DATE}.tar.gz"
+          else
+            echo "❌ Archive recovery verification failed"
+            exit 1
+          fi
