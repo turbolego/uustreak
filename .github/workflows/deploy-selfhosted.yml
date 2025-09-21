@@ -1221,18 +1221,30 @@ jobs:
           sleep 10
           CURRENT_DATE=$(date +%Y-%m-%d)
           
-          # Check if today's archive exists via GitHub API
           echo "Verifying deployment of reports_${CURRENT_DATE}.tar.gz..."
           
-          if gh api "repos/${{ github.repository }}/contents/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz?ref=gh-pages" --jq '.size' 2>/dev/null; then
-            SIZE=$(gh api "repos/${{ github.repository }}/contents/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz?ref=gh-pages" --jq '.size' 2>/dev/null)
+          # Use curl to check for the file's existence via the GitHub API
+          echo "Using curl to verify deployment..."
+          API_URL="https://api.github.com/repos/${{ github.repository }}/contents/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz?ref=gh-pages"
+          RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "$API_URL")
+          
+          # A status code of 200 means the file was found
+          if [ "$RESPONSE" -eq 200 ]; then
+            # Optional: Get the size of the file for a more detailed success message
+            SIZE=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "$API_URL" | jq '.size' 2>/dev/null)
             echo "✅ Archive successfully deployed: reports_${CURRENT_DATE}.tar.gz (Size: $SIZE bytes)"
           else
+            # This is a critical failure. The push reported success but the file is not on the remote branch.
             echo "❌ CRITICAL: Archive not found after deployment!"
-            echo "Listing files in archives directory:"
-            gh api "repos/${{ github.repository }}/contents/accessibility-reports/archives?ref=gh-pages" --jq '.[].name' 2>/dev/null || echo "Could not list archive files"
+            echo "HTTP Status Code: $RESPONSE"
+            echo "Expected URL: $API_URL"
             
-            # This is critical - fail the job
+            echo "Listing files in archives directory:"
+            curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                "https://api.github.com/repos/${{ github.repository }}/contents/accessibility-reports/archives?ref=gh-pages" | \
+                jq '.[].name' 2>/dev/null || echo "Could not list archive files"
+            
+            # The job must fail if the critical file is not found
             exit 1
           fi
       
