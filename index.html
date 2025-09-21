@@ -210,9 +210,12 @@
             const loadingContainer = initializeLoading();
 
             try {
-                // Check if gzip utilities are available first
+                // Check if gzip utilities are available
                 if (typeof fetchAndDecompressArchive !== 'function') {
-                    console.log('gzip-utils.js not available, falling back to legacy method immediately');
+                    console.warn('gzip-utils.js not available, falling back to legacy method');
+                    if (typeof showOptimizationStatus === 'function') {
+                        showOptimizationStatus('Falling back to individual file loading: Gzip utilities missing', 'warning');
+                    }
                     return await fetchReportsForDateLegacy(date, page);
                 }
 
@@ -221,21 +224,12 @@
                 try {
                     console.log(`Attempting to fetch gzip archive for ${date}...`);
 
-                    // Check if gzip utilities are available
-                    if (typeof fetchAndDecompressArchive !== 'function') {
-                        throw new Error('gzip-utils.js not loaded or fetchAndDecompressArchive function not available');
-                    }
-
                     if (typeof showOptimizationStatus === 'function') {
                         showOptimizationStatus('Using optimized loading (gzip archive)', 'success');
                     }
 
                     const jsonFiles = await fetchAndDecompressArchive(archiveUrl);
                     console.log(`Successfully loaded ${Object.keys(jsonFiles).length} files from archive`);
-
-                    // Debug: Log first few filenames to see the format
-                    const filenames = Object.keys(jsonFiles);
-                    console.log('Sample filenames from archive:', filenames.slice(0, 10));
 
                     // Process the JSON files with deduplication (keep only newest report per project)
                     const reports = [];
@@ -330,14 +324,23 @@
 
                     return reports;
                 } catch (archiveError) {
-                    console.warn(`Failed to load from archive (${archiveError.message}), falling back to individual files...`);
+                    console.warn(`Failed to load from archive (${archiveError.message})`);
 
-                    if (typeof showOptimizationStatus === 'function') {
-                        showOptimizationStatus('Falling back to individual file loading', 'warning');
+                    // Check for a 404 error and fall back to legacy if it's the case
+                    if (archiveError.message.includes('HTTP status 404')) {
+                        console.log('Archive file does not exist, using individual file method');
+                        if (typeof showOptimizationStatus === 'function') {
+                            showOptimizationStatus('Archive not found, falling back to individual file loading', 'warning');
+                        }
+                        return await fetchReportsForDateLegacy(date, page);
+                    } else {
+                        // For other errors (e.g., network, server), re-throw
+                        console.error('Archive loading failed due to a technical issue:', archiveError);
+                        if (typeof showOptimizationStatus === 'function') {
+                            showOptimizationStatus('Archive loading failed: ' + archiveError.message, 'error');
+                        }
+                        throw archiveError;
                     }
-
-                    // Fallback to the original method
-                    return await fetchReportsForDateLegacy(date, page);
                 }
 
             } catch (error) {
@@ -345,6 +348,7 @@
                 if (loadingContainer) {
                     loadingContainer.style.display = 'none';
                 }
+                showError('Kritisk feil under lasting av rapporter.');
                 return [];
             }
         }
@@ -411,7 +415,7 @@
                                 } catch (error) {
                                     retries++;
                                     if (retries >= retryLimit) {
-                                        failedReports.push({path: adjustedPath, error: error.message});
+                                        failedReports.push({ path: adjustedPath, error: error.message });
                                         return null;
                                     }
                                     const delay = Math.min(1000 * Math.pow(2, retries - 1), 4000);
@@ -419,7 +423,7 @@
                                 }
                             }
                         } catch (error) {
-                            failedReports.push({path: filename, error: error.message});
+                            failedReports.push({ path: filename, error: error.message });
                             return null;
                         }
                     });
@@ -888,6 +892,13 @@
                 errorContainer.style.display = 'none';
                 errorContainer.className = 'error-message';
                 document.querySelector('main').appendChild(errorContainer);
+
+                // Add a check for gzip-utils.js
+                if (typeof fetchAndDecompressArchive !== 'function') {
+                    console.error('gzip-utils.js failed to load or is not available');
+                    showError('Required compression utilities not available. Please refresh the page.');
+                    // Don't return, as the legacy method can still work
+                }
 
                 // Fetch report list and store it globally
                 try {
