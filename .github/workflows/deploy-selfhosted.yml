@@ -1092,6 +1092,30 @@ jobs:
           done | jq -s 'sort_by(.date) | reverse' > archive_index.json 2>/dev/null || echo "[]" > archive_index.json
           cd ../../..
           
+          # Extract daily summaries for direct access
+          echo "Extracting daily summaries for direct access..."
+          find gh-pages-branch/accessibility-reports/archives -name "reports_*.tar.gz" | while read -r archive; do
+            if [[ "$archive" =~ reports_([0-9]{4}-[0-9]{2}-[0-9]{2})\.tar\.gz ]]; then
+              DATE="${BASH_REMATCH[1]}"
+              echo "Extracting summary for $DATE from $(basename "$archive")"
+              
+              # Create summaries directory for this date
+              mkdir -p "gh-pages-branch/accessibility-reports/summaries/$DATE"
+              
+              # Extract daily_summary.json if it exists in the archive
+              if tar -tzf "$archive" | grep -q "daily_summary.json"; then
+                tar -xzf "$archive" -C "gh-pages-branch/accessibility-reports/summaries/$DATE" ./daily_summary.json 2>/dev/null
+                if [[ -f "gh-pages-branch/accessibility-reports/summaries/$DATE/daily_summary.json" ]]; then
+                  echo "✅ Extracted daily_summary.json for $DATE"
+                else
+                  echo "⚠️  Failed to extract daily_summary.json for $DATE"
+                fi
+              else
+                echo "⚠️  No daily_summary.json found in archive for $DATE"
+              fi
+            fi
+          done
+          
           echo "Archive creation completed. Summary:"
           ls -la gh-pages-branch/accessibility-reports/archives/ || echo "No archives created"
 
@@ -1159,9 +1183,9 @@ jobs:
           # Add all files with verbose output for archives
           git add -A
           
-          # Show what's being committed (especially archives)
+          # Show what's being committed (especially archives and summaries)
           echo "Files being deployed:"
-          git status --short | grep -E "(archives|$CURRENT_DATE)" | head -20
+          git status --short | grep -E "(archives|summaries|$CURRENT_DATE)" | head -30
           TOTAL_FILES=$(git status --short | wc -l)
           echo "Total files to commit: $TOTAL_FILES"
           
@@ -1175,6 +1199,20 @@ jobs:
               git add -f "accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz"
               git add -f "accessibility-reports/archives/reports_${CURRENT_DATE}.manifest"
               echo "Force-added archive files"
+            fi
+          fi
+          
+          # Specifically verify today's summaries are staged
+          if git status --short | grep -q "accessibility-reports/summaries/$CURRENT_DATE"; then
+            echo "✅ Today's summaries are staged for commit"
+          else
+            echo "⚠️ WARNING: Today's summaries not in git status!"
+            # Force add summaries directory explicitly
+            if [ -d "accessibility-reports/summaries/$CURRENT_DATE" ]; then
+              git add -f "accessibility-reports/summaries/$CURRENT_DATE/"
+              echo "Force-added summary files for $CURRENT_DATE"
+            else
+              echo "❌ Summaries directory not found: accessibility-reports/summaries/$CURRENT_DATE"
             fi
           fi
           
