@@ -688,6 +688,9 @@
                 reportStreaks.set(report.project, streak);
             });
 
+            // Find the maximum streak value to add fire emoji to top performers
+            const maxStreak = Math.max(...Array.from(reportStreaks.values()));
+
             // Collect all violation types and tags
             const allViolationTypes = new Set();
             const allViolationTags = new Set();
@@ -786,7 +789,9 @@
                     } else if (index === 3) {
                         cell.textContent = report.total_violations;
                     } else if (index === 4) {
-                        cell.textContent = reportStreaks.get(report.project);
+                        const streakValue = reportStreaks.get(report.project);
+                        // Add fire emoji for projects with the highest streak
+                        cell.textContent = streakValue === maxStreak && maxStreak > 0 ? `${streakValue} 🔥` : streakValue;
                     } else {
                         if (viewMode === 'types') {
                             cell.textContent = report.violations.find(v => v.id === col)?.violation_count || 0;
