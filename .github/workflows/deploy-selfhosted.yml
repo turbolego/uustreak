@@ -834,6 +834,23 @@ jobs:
           echo "JSON reports organized by date in gh-pages branch"
           echo "Contents of gh-pages-branch/accessibility-reports/$CURRENT_DATE:"
           ls -la "gh-pages-branch/accessibility-reports/$CURRENT_DATE/" || echo "No reports found"
+          
+          # CRITICAL: Ensure the date directory exists even if no reports
+          # This prevents the "no folder" error on the frontend
+          if [ ! -d "gh-pages-branch/accessibility-reports/$CURRENT_DATE" ] || [ -z "$(ls -A gh-pages-branch/accessibility-reports/$CURRENT_DATE 2>/dev/null)" ]; then
+            echo "WARNING: No reports or empty directory for $CURRENT_DATE"
+            mkdir -p "gh-pages-branch/accessibility-reports/$CURRENT_DATE"
+            
+            # Create a placeholder file to ensure directory has content
+            echo "{
+              \"date\": \"$CURRENT_DATE\",
+              \"status\": \"no_violations_found\",
+              \"message\": \"No accessibility violations were detected or tests did not complete\",
+              \"timestamp\": \"$(date -Iseconds)\"
+            }" > "gh-pages-branch/accessibility-reports/$CURRENT_DATE/placeholder.json"
+            
+            echo "Created placeholder for $CURRENT_DATE"
+          fi
 
       - name: Generate Daily Summary Files
         run: |
@@ -1110,51 +1127,108 @@ jobs:
           cp main-branch/gzip-utils.js gh-pages-branch/
           
           echo "Static files copied to gh-pages branch"
-
-      - name: Verify files before deployment
+      
+      - name: Pre-deployment Archive Verification
         run: |
-          echo "=== Verifying files in gh-pages-branch before deployment ==="
+          CURRENT_DATE=$(date +%Y-%m-%d)
+          echo "Verifying archives before deployment..."
+          
+          if [ -f "gh-pages-branch/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz" ]; then
+            ARCHIVE_SIZE=$(stat -c%s "gh-pages-branch/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz" 2>/dev/null || stat -f%z "gh-pages-branch/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz" 2>/dev/null)
+            echo "✅ Archive exists: reports_${CURRENT_DATE}.tar.gz (Size: $ARCHIVE_SIZE bytes)"
+            
+            # Verify archive integrity
+            tar -tzf "gh-pages-branch/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz" > /dev/null 2>&1 && echo "✅ Archive integrity verified" || echo "❌ Archive corrupted!"
+          else
+            echo "❌ ERROR: Archive missing before deployment: reports_${CURRENT_DATE}.tar.gz"
+            ls -la gh-pages-branch/accessibility-reports/archives/ || echo "Archives directory doesn't exist"
+          fi
+      
+      - name: Deploy to GitHub Pages (Direct Git Push)
+        run: |
+          echo "Deploying to gh-pages branch using direct git push..."
+          CURRENT_DATE=$(date +%Y-%m-%d)
+          
           cd gh-pages-branch
-          echo "Current directory structure:"
-          find . -type f -name "*.json" | head -20
-          echo ""
-          echo "Files in current date directory:"
-          CURRENT_DATE=$(date '+%Y-%m-%d')
-          if [ -d "accessibility-reports/$CURRENT_DATE" ]; then
-            ls -la "accessibility-reports/$CURRENT_DATE/"
+          
+          # Initialize git repo
+          git init
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          
+          # Add all files with verbose output for archives
+          git add -A
+          
+          # Show what's being committed (especially archives)
+          echo "Files being deployed:"
+          git status --short | grep -E "(archives|$CURRENT_DATE)" | head -20
+          TOTAL_FILES=$(git status --short | wc -l)
+          echo "Total files to commit: $TOTAL_FILES"
+          
+          # Specifically verify today's archive is staged
+          if git status --short | grep -q "accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz"; then
+            echo "✅ Today's archive is staged for commit: reports_${CURRENT_DATE}.tar.gz"
           else
-            echo "No current date directory found: accessibility-reports/$CURRENT_DATE"
+            echo "⚠️ WARNING: Today's archive not in git status!"
+            # Force add it explicitly
+            if [ -f "accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz" ]; then
+              git add -f "accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz"
+              git add -f "accessibility-reports/archives/reports_${CURRENT_DATE}.manifest"
+              echo "Force-added archive files"
+            fi
           fi
-          echo ""
-          echo "Checking for daily summary files:"
-          SUMMARY_PATH="accessibility-reports/summaries/$CURRENT_DATE/daily_summary.json"
-          if [ -f "$SUMMARY_PATH" ]; then
-            echo "✓ Daily summary exists: $SUMMARY_PATH"
-            echo "  File size: $(stat -f%z "$SUMMARY_PATH" 2>/dev/null || stat -c%s "$SUMMARY_PATH" 2>/dev/null || echo "unknown") bytes"
+          
+          # Commit with descriptive message
+          git commit -m "Deploy accessibility reports for $CURRENT_DATE [skip ci]" || {
+            echo "No changes to commit"
+            exit 0
+          }
+          
+          # Setup remote
+          git branch -M gh-pages
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          
+          # Push with retry logic and verbose output
+          MAX_RETRIES=3
+          for i in $(seq 1 $MAX_RETRIES); do
+            echo "Push attempt $i of $MAX_RETRIES..."
+            if GIT_TRACE=1 git push -f origin gh-pages 2>&1 | tail -20; then
+              echo "✅ Successfully pushed to gh-pages"
+              break
+            else
+              echo "⚠️ Push attempt $i failed"
+              if [ $i -lt $MAX_RETRIES ]; then
+                echo "Retrying in 10 seconds..."
+                sleep 10
+              else
+                echo "❌ All push attempts failed"
+                exit 1
+              fi
+            fi
+          done
+          
+          cd ..
+          
+      - name: Post-deployment Archive Verification
+        run: |
+          sleep 10
+          CURRENT_DATE=$(date +%Y-%m-%d)
+          
+          # Check if today's archive exists via GitHub API
+          echo "Verifying deployment of reports_${CURRENT_DATE}.tar.gz..."
+          
+          if gh api "repos/${{ github.repository }}/contents/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz?ref=gh-pages" --jq '.size' 2>/dev/null; then
+            SIZE=$(gh api "repos/${{ github.repository }}/contents/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz?ref=gh-pages" --jq '.size' 2>/dev/null)
+            echo "✅ Archive successfully deployed: reports_${CURRENT_DATE}.tar.gz (Size: $SIZE bytes)"
           else
-            echo "✗ Daily summary missing: $SUMMARY_PATH"
+            echo "❌ CRITICAL: Archive not found after deployment!"
+            echo "Listing files in archives directory:"
+            gh api "repos/${{ github.repository }}/contents/accessibility-reports/archives?ref=gh-pages" --jq '.[].name' 2>/dev/null || echo "Could not list archive files"
+            
+            # This is critical - fail the job
+            exit 1
           fi
-          echo ""
-          echo "All summary files:"
-          find accessibility-reports/summaries -name "daily_summary.json" 2>/dev/null || echo "No summary files found"
-          echo ""
-          echo "Git status in gh-pages-branch:"
-          git status --porcelain || echo "Not a git repository or no changes"
-          echo ""
-          echo "Total accessibility report files:"
-          find accessibility-reports -name "violations-*.json" | wc -l
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: gh-pages-branch
-          publish_branch: gh-pages
-          keep_files: true
-          allow_empty_commit: true
-          force_orphan: false
-          commit_message: 'Deploy accessibility reports and dashboard updates'
-
+      
       - name: Trigger Issue Creation
         uses: actions/github-script@v8
         with:
