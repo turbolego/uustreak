@@ -126,9 +126,13 @@ async function extractTarFiles(tarData) {
 
         // Extract filename (first 100 bytes, null-terminated)
         let filename = '';
+        let filenameBytes = [];
         for (let i = 0; i < 100; i++) {
             if (header[i] === 0) break;
-            filename += String.fromCharCode(header[i]);
+            filenameBytes.push(header[i]);
+        }
+        if (filenameBytes.length > 0) {
+            filename = new TextDecoder('utf-8').decode(new Uint8Array(filenameBytes));
         }
 
         // Extract file size (bytes 124-135, octal)

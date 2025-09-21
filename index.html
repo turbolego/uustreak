@@ -91,6 +91,44 @@
         let currentSortDirection = 'desc'; // Default sort direction
 
         /**
+         * Attempts to fix common UTF-8 encoding issues in project names
+         * @param {string} text - The potentially corrupted text
+         * @returns {string} - The corrected text
+         */
+        function fixUtf8Encoding(text) {
+            if (!text) return text;
+            
+            // Common UTF-8 corruption patterns and their fixes
+            const corrections = {
+                'Ã¸': 'ø',
+                'Ã¥': 'å', 
+                'Ã¦': 'æ',
+                'Ã': 'Å',
+                'Ã˜': 'Ø',
+                'Ã†': 'Æ',
+                'Ã¼': 'ü',
+                'Ã©': 'é',
+                'Ã«': 'ë',
+                'Ã­': 'í',
+                'Ã³': 'ó',
+                'Ãº': 'ú',
+                'Ã¡': 'á',
+                'Ã ': 'à',
+                'Ã¤': 'ä',
+                'Ã¶': 'ö',
+                'Ã±': 'ñ',
+                'Ã§': 'ç'
+            };
+            
+            let corrected = text;
+            for (const [corrupted, correct] of Object.entries(corrections)) {
+                corrected = corrected.replace(new RegExp(corrupted, 'g'), correct);
+            }
+            
+            return corrected;
+        }
+
+        /**
          * Get a set of valid project names from the current report list
          * This helps filter out projects that exist in archives but are no longer active/valid
          * @param {Array} reportFiles - Array of report filenames from report-list.json
@@ -107,6 +145,9 @@
             });
             
             console.log(`Found ${validProjects.size} valid projects in report-list.json`);
+            // Show first few project names for UTF-8 debugging
+            const sampleProjects = Array.from(validProjects).slice(0, 5);
+            console.log(`Sample valid projects:`, sampleProjects);
             return validProjects;
         }
 
@@ -285,24 +326,39 @@
                                 // Extract project name from filename
                                 const projectMatch = cleanFilename.match(/violations-(.+)-\d{4}/);
                                 if (projectMatch) {
-                                    const project = projectMatch[1];
+                                    let project = projectMatch[1];
+                                    
+                                    // Also try to get project name from JSON data (might be more reliable)
+                                    const dataProject = data.project;
+                                    if (dataProject) {
+                                        project = dataProject;
+                                    }
+                                    
+                                    // Try to fix UTF-8 encoding issues
+                                    const correctedProject = fixUtf8Encoding(project);
                                     
                                     // Filter out projects that don't exist in report-list.json
                                     // This prevents projects like "Ski kommune" (which was renamed) from showing with 0 counters
-                                    if (!validProjects.has(project)) {
+                                    if (!validProjects.has(project) && !validProjects.has(correctedProject)) {
                                         filteredOutProjects++;
-                                        console.log(`Filtering out project "${project}" - not found in current report-list.json`);
+                                        // Add extra debugging for UTF-8 issues
+                                        console.log(`Filtering out project "${project}" (corrected: "${correctedProject}") - not found in current report-list.json`);
                                         continue;
                                     }
                                     
-                                    const currentReport = projectReports.get(project);
+                                    // Use the corrected project name if the original wasn't found but corrected was
+                                    const finalProject = validProjects.has(project) ? project : correctedProject;
+                                    
+                                    const currentReport = projectReports.get(finalProject);
 
                                     // Only keep the newest report for each project (filename comparison works for timestamp ordering)
                                     if (!currentReport || cleanFilename > currentReport.filename.split('/').pop()) {
                                         // Add filename and calculate streak
                                         data.filename = `accessibility-reports/${date}/${cleanFilename}`;
-                                        data.noViolationsStreak = calculateNoViolationsStreak(data.project, reportList, data);
-                                        projectReports.set(project, data);
+                                        // Update the project name in the data to use the corrected version
+                                        data.project = finalProject;
+                                        data.noViolationsStreak = calculateNoViolationsStreak(finalProject, reportList, data);
+                                        projectReports.set(finalProject, data);
                                     }
                                 }
                             }
