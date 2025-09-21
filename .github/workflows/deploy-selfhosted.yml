@@ -889,7 +889,7 @@ jobs:
           
               # Get absolute path for the violations file
               ABSOLUTE_VIOLATIONS_FILE=$(realpath "$VIOLATIONS_FILE")
-              echo "Absolute path: $ABSOLUTE_VIOLATIONS_FILE"
+              echo "Absolute path: $ABSOLUTIONS_VIOLATIONS_FILE"
           
               # Use Node.js to run the tag summary generation
               node -e "
@@ -1184,15 +1184,22 @@ jobs:
             exit 0
           }
           
-          # Setup remote
+          # Setup remote - check if it exists first
           git branch -M gh-pages
-          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          
+          # Check if remote exists, if not add it
+          if ! git remote get-url origin &>/dev/null; then
+            git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          else
+            # Update the remote URL to ensure it has the token
+            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          fi
           
           # Push with retry logic and verbose output
           MAX_RETRIES=3
           for i in $(seq 1 $MAX_RETRIES); do
             echo "Push attempt $i of $MAX_RETRIES..."
-            if GIT_TRACE=1 git push -f origin gh-pages 2>&1 | tail -20; then
+            if git push -f origin gh-pages 2>&1 | tail -20; then
               echo "✅ Successfully pushed to gh-pages"
               break
             else
