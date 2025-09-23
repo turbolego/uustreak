@@ -6,27 +6,62 @@ export default defineConfig({
     fullyParallel: false,
     forbidOnly: !!process.env.CI,
     retries: 3,
-    workers: '25%', // Reduced parallelism to avoid overwhelming slow sites
+    workers: process.env.CI ? '25%' : '50%', // More workers for local/self-hosted runners
     use: {
-        navigationTimeout: 90000, // Increased for slow sites
-        actionTimeout: 20000, // Increased for slow interactions
-        viewport: { width: 1280, height: 720 },
+        navigationTimeout: 90000,
+        actionTimeout: 20000,
+        viewport: { width: 1920, height: 1080 }, // More realistic viewport
         trace: 'off',
-        browserName: 'chromium', // Default to Chromium, fallback handled in test
-        ignoreHTTPSErrors: true, // Required for sites with SSL issues
+        screenshot: 'only-on-failure',
+        video: 'retain-on-failure',
+        browserName: 'chromium',
+        ignoreHTTPSErrors: true,
+        // Enhanced launch options for stealth
         launchOptions: {
+            headless: process.env.CI ? false : true, // Headful mode in CI for better compatibility
             args: [
                 '--no-sandbox', 
                 '--disable-setuid-sandbox',
-                '--disable-http2',  // Helps with some sites
-                '--disable-web-security', // For sites with CORS issues
-                '--disable-features=VizDisplayCompositor' // Stability fix
+                '--disable-dev-shm-usage',
+                '--disable-blink-features=AutomationControlled',
+                '--disable-features=IsolateOrigins,site-per-process',
+                '--disable-web-security',
+                '--disable-features=VizDisplayCompositor',
+                '--disable-accelerated-2d-canvas',
+                '--no-first-run',
+                '--no-zygote',
+                '--disable-gpu',
+                '--window-size=1920,1080',
+                '--start-maximized'
             ]
+        },
+        contextOptions: {
+            // Anti-bot detection settings
+            userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            locale: 'nb-NO',
+            timezoneId: 'Europe/Oslo',
+            geolocation: { latitude: 59.9139, longitude: 10.7522 }, // Oslo
+            permissions: ['geolocation']
         }
     },
+    projects: [
+        {
+            name: 'chromium',
+            use: { ...devices['Desktop Chrome'] },
+        },
+        {
+            name: 'firefox',
+            use: { ...devices['Desktop Firefox'] },
+        },
+        {
+            name: 'webkit',
+            use: { ...devices['Desktop Safari'] },
+        }
+    ],
     reporter: [
         ['html', { outputFolder: path.resolve(process.cwd(), 'playwright-report'), open: 'never' }],
-        ['list']
+        ['list'],
+        ['json', { outputFile: 'test-results.json' }]
     ],
-    timeout: 180000 // Increased timeout for slow sites
+    timeout: 300000 // 5 minutes to accommodate all fallback strategies
 });
