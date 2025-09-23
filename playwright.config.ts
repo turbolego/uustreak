@@ -18,7 +18,7 @@ export default defineConfig({
         ignoreHTTPSErrors: true,
         // Enhanced launch options for stealth
         launchOptions: {
-            headless: process.env.CI ? false : true, // Headful mode in CI for better compatibility
+            headless: process.env.CI ? true : false, // Headless mode in CI, headful locally for debugging
             args: [
                 '--no-sandbox', 
                 '--disable-setuid-sandbox',
