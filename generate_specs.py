@@ -72,8 +72,8 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
                 userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
             }},
             {{
-                name: 'Firefox (Mobile User Agent)',
-                browser: 'firefox',
+                name: 'Chromium (Mobile User Agent)',
+                browser: 'chromium',
                 timeout: 90000,
                 waitUntil: 'domcontentloaded',
                 extraArgs: ['--no-sandbox', '--disable-setuid-sandbox'],
@@ -106,11 +106,34 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
             try {{
                 // Close existing page/context if switching browsers
                 if (strategy.browser !== 'chromium' || fallbackBrowser) {{
-                    await currentPage.close().catch(() => {{}});
-                    if (fallbackBrowser) {{
-                        await fallbackBrowser.close().catch(() => {{}});
-                        fallbackBrowser = null;
+                    try {{
+                        if (currentPage && !currentPage.isClosed()) {{
+                            await currentPage.close();
+                        }}
+                    }} catch (e) {{
+                        console.log(`Warning: Error closing page: ${{e.message}}`);
                     }}
+                    
+                    try {{
+                        if (currentContext) {{
+                            await currentContext.close();
+                            currentContext = null;
+                        }}
+                    }} catch (e) {{
+                        console.log(`Warning: Error closing context: ${{e.message}}`);
+                    }}
+                    
+                    try {{
+                        if (fallbackBrowser) {{
+                            await fallbackBrowser.close();
+                            fallbackBrowser = null;
+                        }}
+                    }} catch (e) {{
+                        console.log(`Warning: Error closing browser: ${{e.message}}`);
+                    }}
+                    
+                    // Wait a moment for cleanup to complete
+                    await new Promise(resolve => setTimeout(resolve, 1000));
                     
                     // Launch the appropriate browser
                     const launchOptions = {{
@@ -145,8 +168,8 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
                         }}
                     }};
                     
-                    // Add mobile viewport for mobile user agent
-                    if (strategy.userAgent && strategy.userAgent.includes('iPhone')) {{
+                    // Add mobile viewport for mobile user agent (only for Chromium-based browsers)
+                    if (strategy.userAgent && strategy.userAgent.includes('iPhone') && strategy.browser === 'chromium') {{
                         contextOptions.viewport = {{ width: 375, height: 667 }};
                         contextOptions.isMobile = true;
                         contextOptions.hasTouch = true;
@@ -157,37 +180,47 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
                     currentPage = await currentContext.newPage();
                     usingFallback = true;
                     
-                    // Add request/response interceptors for problematic sites
-                    await currentPage.route('**/*', async (route, request) => {{
-                        // Block potentially problematic resources for faster loading
-                        const resourceType = request.resourceType();
-                        const url = request.url();
-                        
-                        // Block ads, analytics, and tracking that might slow down sites
-                        if (
-                            resourceType === 'image' && url.includes('ad') ||
-                            url.includes('google-analytics') ||
-                            url.includes('googletagmanager') ||
-                            url.includes('facebook.net') ||
-                            url.includes('doubleclick') ||
-                            resourceType === 'font' && !url.includes(currentPage.url().split('/')[2])
-                        ) {{
-                            await route.abort();
-                        }} else {{
-                            // Continue with modified headers for better compatibility
-                            const headers = {{
-                                ...request.headers(),
-                                'Cache-Control': 'no-cache',
-                                'Pragma': 'no-cache'
-                            }};
-                            await route.continue({{ headers }});
+                    // Add request/response interceptors for problematic sites (skip for WebKit due to compatibility issues)
+                    if (strategy.browser !== 'webkit') {{
+                        try {{
+                            await currentPage.route('**/*', async (route, request) => {{
+                                // Block potentially problematic resources for faster loading
+                                const resourceType = request.resourceType();
+                                const url = request.url();
+                                
+                                // Block ads, analytics, and tracking that might slow down sites
+                                if (
+                                    resourceType === 'image' && url.includes('ad') ||
+                                    url.includes('google-analytics') ||
+                                    url.includes('googletagmanager') ||
+                                    url.includes('facebook.net') ||
+                                    url.includes('doubleclick') ||
+                                    resourceType === 'font' && !url.includes(new URL(candidateUrl).hostname)
+                                ) {{
+                                    await route.abort();
+                                }} else {{
+                                    // Continue with modified headers for better compatibility
+                                    const headers = {{
+                                        ...request.headers(),
+                                        'Cache-Control': 'no-cache',
+                                        'Pragma': 'no-cache'
+                                    }};
+                                    await route.continue({{ headers }});
+                                }}
+                            }});
+                        }} catch (routeError) {{
+                            console.log(`Warning: Could not set up request interception for ${{strategy.name}}: ${{routeError.message}}`);
                         }}
-                    }});
+                    }}
                     
                     // Handle dialogs and popups that might interfere
                     currentPage.on('dialog', async dialog => {{
                         console.log(`Dialog appeared: ${{dialog.message()}}`);
-                        await dialog.accept();
+                        try {{
+                            await dialog.accept();
+                        }} catch (dialogError) {{
+                            console.log(`Warning: Could not handle dialog: ${{dialogError.message}}`);
+                        }}
                     }});
                 }}
                 
@@ -210,8 +243,8 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
                         console.log(`❌ ${{strategy.name}} attempt ${{index + 1}} failed: ${{attemptError.message}}`);
                         lastError = attemptError;
                         
-                        // Try with different wait strategies on timeout
-                        if (attemptError.message.includes('Timeout') && index === 0) {{
+                        // Try with different wait strategies on timeout (only for first URL to avoid too many retries)
+                        if (attemptError.message.includes('Timeout') && index === 0 && !attemptError.message.includes('net::ERR_CONNECTION_TIMED_OUT')) {{
                             try {{
                                 console.log(`🔄 ${{strategy.name}} retry with load event: ${{candidateUrl}}`);
                                 await currentPage.goto(candidateUrl, {{ 
@@ -233,6 +266,9 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
             }} catch (strategyError) {{
                 console.log(`❌ Strategy ${{strategy.name}} setup failed: ${{strategyError.message}}`);
                 lastError = strategyError;
+                
+                // Continue to next strategy instead of breaking
+                continue;
             }}
         }}
         
