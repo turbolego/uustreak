@@ -273,6 +273,22 @@ details summary:hover {
     word-break: break-all;
 }
 
+/* Special styling for failed accessibility testing projects */
+.invalid-url-item:has(div:contains("Accessibility Testing (FAILED)")) {
+    background-color: #fff3cd;
+    border-left-color: #ffc107;
+}
+
+/* Fallback styling for failed projects when :has() is not supported */
+.invalid-url-item.failed-project {
+    background-color: #fff3cd;
+    border-left-color: #ffc107;
+}
+
+.invalid-url-item.failed-project .invalid-link {
+    color: #856404;
+}
+
 /* Improved button styling for better accessibility */
 .navigation-controls button,
 .view-controls button {

@@ -138,10 +138,12 @@ function showInvalidUrlsDialog(invalidUrls, date) {
                     <summary>Inneholder ${urls.length} døde ${urls.length === 1 ? 'lenke' : 'lenker'} (klikk for å se)</summary>
                     <ul class="invalid-urls-list">
                         ${urls.map(item => `
-                            <li class="invalid-url-item">
-                                <div><strong>URL:</strong> <a class="invalid-link">${item.invalid_url}</a></div>
+                            <li class="invalid-url-item ${item.source_page === 'Accessibility Testing (FAILED)' ? 'failed-project' : ''}">
+                                ${item.project_name ? `<div><strong>Prosjekt:</strong> ${item.project_name}</div>` : ''}
+                                <div><strong>URL:</strong> <a href="${item.invalid_url}" target="_blank" class="invalid-link">${item.invalid_url}</a></div>
                                 <div><strong>Feil:</strong> ${item.error || 'Ukjent feil'}</div>
                                 <div><strong>Tidspunkt:</strong> ${new Date(item.timestamp).toLocaleString()}</div>
+                                ${item.source_page === 'Accessibility Testing (FAILED)' ? '<div><strong>Årsak:</strong> Dette prosjektet var ikke tilgjengelig for testing på denne datoen og er derfor ikke inkludert i hovedtabellen.</div>' : ''}
                             </li>
                         `).join('')}
                     </ul>
@@ -187,11 +189,35 @@ async function viewInvalidUrls() {
             throw new Error('Cannot determine the current date in YYYY-MM-DD format');
         }
         
-        // Fetch the invalid URLs for the current date
-        const invalidUrls = await fetchInvalidUrls(formattedDate);
+        // Start with an empty array to collect all invalid URLs
+        let allInvalidUrls = [];
         
-        // Show the invalid URLs dialog
-        showInvalidUrlsDialog(invalidUrls, formattedDate);
+        // Fetch the invalid URLs from the dedicated invalid URLs files
+        const fileInvalidUrls = await fetchInvalidUrls(formattedDate);
+        if (fileInvalidUrls && Array.isArray(fileInvalidUrls)) {
+            allInvalidUrls = allInvalidUrls.concat(fileInvalidUrls);
+        }
+        
+        // Check if we have failed projects cached for this date
+        const failedCacheKey = `${formattedDate}_failed`;
+        if (typeof reportCache !== 'undefined' && reportCache.has(failedCacheKey)) {
+            const failedProjects = reportCache.get(failedCacheKey);
+            
+            // Convert failed projects to invalid URL format
+            const failedAsInvalidUrls = failedProjects.map(failed => ({
+                invalid_url: failed.url,
+                source_page: 'Accessibility Testing (FAILED)',
+                error: `${failed.reason}: ${failed.error}`,
+                timestamp: failed.timestamp,
+                project_name: failed.project
+            }));
+            
+            allInvalidUrls = allInvalidUrls.concat(failedAsInvalidUrls);
+            console.log(`Added ${failedAsInvalidUrls.length} failed projects to invalid URLs for ${formattedDate}`);
+        }
+        
+        // Show the combined invalid URLs dialog
+        showInvalidUrlsDialog(allInvalidUrls, formattedDate);
     } catch (error) {
         console.error('Error viewing invalid URLs:', error);
         alert('Kunne ikke laste døde lenker. Se konsollen for detaljer.');
