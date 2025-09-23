@@ -6,7 +6,7 @@ def create_spec_file(project_name, project_url):
     filename = f"{project_name.replace(' ', '_')}.spec.ts"
 
     # Create the test file content - using raw string (r) prefix to handle escape sequences
-    content = rf'''import {{ test, chromium, firefox }} from '@playwright/test';
+    content = rf'''import {{ test, chromium, firefox, webkit }} from '@playwright/test';
 import {{ AxeBuilder }} from '@axe-core/playwright';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -18,7 +18,7 @@ test.use({{
 }});
 
 test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) => {{
-    test.setTimeout(180000);
+    test.setTimeout(300000); // 5 minutes for difficult sites
     const outputDir = path.resolve(process.cwd(), 'accessibility-reports');
     fs.mkdirSync(outputDir, {{ recursive: true }});
 
@@ -43,59 +43,234 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
         
         let navigationSuccess = false;
         let lastError = null;
+        let browserUsed = 'chromium';
         
-        // Try Chromium with both URL variants
-        for (const [index, candidateUrl] of urlCandidates.entries()) {{
-            try {{
-                console.log(`🔄 Chromium attempt ${{index + 1}}: ${{candidateUrl}}`);
-                await currentPage.goto(candidateUrl, {{ waitUntil: 'domcontentloaded', timeout: 45000 }});
-                console.log('✅ Chromium navigation successful');
-                navigationSuccess = true;
-                break;
-            }} catch (chromiumError) {{
-                console.log(`❌ Chromium attempt ${{index + 1}} failed: ${{chromiumError.message}}`);
-                lastError = chromiumError;
-            }}
-        }}
-        
-        // If Chromium failed, try Firefox with both URL variants
-        if (!navigationSuccess) {{
-            console.log('🔄 Trying Firefox fallback with both URL variants...');
-            
-            // Close current page/context
-            await currentPage.close().catch(() => {{}});
-            
-            // Launch Firefox browser
-            fallbackBrowser = await firefox.launch({{
-                headless: true,
-                args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-web-security']
-            }});
-            
-            currentContext = await fallbackBrowser.newContext({{
-                ignoreHTTPSErrors: true,
-                viewport: {{ width: 1280, height: 720 }},
+        // Enhanced fallback strategy with multiple browsers and configurations
+        const fallbackStrategies = [
+            {{
+                name: 'Chromium (Standard)',
+                browser: 'chromium',
+                timeout: 45000,
+                waitUntil: 'domcontentloaded',
+                extraArgs: [],
+                userAgent: null
+            }},
+            {{
+                name: 'Chromium (Extended Timeout)',
+                browser: 'chromium',
+                timeout: 90000,
+                waitUntil: 'networkidle',
+                extraArgs: [],
+                userAgent: null
+            }},
+            {{
+                name: 'Firefox (Standard)',
+                browser: 'firefox',
+                timeout: 75000,
+                waitUntil: 'domcontentloaded',
+                extraArgs: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-web-security'],
                 userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
-            }});
+            }},
+            {{
+                name: 'Firefox (Mobile User Agent)',
+                browser: 'firefox',
+                timeout: 90000,
+                waitUntil: 'domcontentloaded',
+                extraArgs: ['--no-sandbox', '--disable-setuid-sandbox'],
+                userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1'
+            }},
+            {{
+                name: 'WebKit (Safari)',
+                browser: 'webkit',
+                timeout: 60000,
+                waitUntil: 'domcontentloaded',
+                extraArgs: [],
+                userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'
+            }},
+            {{
+                name: 'Chromium (No-JS Fallback)',
+                browser: 'chromium',
+                timeout: 60000,
+                waitUntil: 'domcontentloaded',
+                extraArgs: ['--disable-javascript'],
+                userAgent: null
+            }}
+        ];
+        
+        // Try each strategy with all URL candidates
+        for (const strategy of fallbackStrategies) {{
+            if (navigationSuccess) break;
             
-            currentPage = await currentContext.newPage();
-            usingFallback = true;
+            console.log(`🔄 Trying strategy: ${{strategy.name}}`);
             
-            for (const [index, candidateUrl] of urlCandidates.entries()) {{
-                try {{
-                    console.log(`🔄 Firefox attempt ${{index + 1}}: ${{candidateUrl}}`);
-                    await currentPage.goto(candidateUrl, {{ waitUntil: 'domcontentloaded', timeout: 75000 }});
-                    console.log('✅ Firefox navigation successful');
-                    navigationSuccess = true;
-                    break;
-                }} catch (firefoxError) {{
-                    console.log(`❌ Firefox attempt ${{index + 1}} failed: ${{firefoxError.message}}`);
-                    lastError = firefoxError;
+            try {{
+                // Close existing page/context if switching browsers
+                if (strategy.browser !== 'chromium' || fallbackBrowser) {{
+                    await currentPage.close().catch(() => {{}});
+                    if (fallbackBrowser) {{
+                        await fallbackBrowser.close().catch(() => {{}});
+                        fallbackBrowser = null;
+                    }}
+                    
+                    // Launch the appropriate browser
+                    const launchOptions = {{
+                        headless: true,
+                        args: ['--no-sandbox', '--disable-setuid-sandbox', ...strategy.extraArgs]
+                    }};
+                    
+                    if (strategy.browser === 'firefox') {{
+                        fallbackBrowser = await firefox.launch(launchOptions);
+                    }} else if (strategy.browser === 'webkit') {{
+                        fallbackBrowser = await webkit.launch(launchOptions);
+                    }} else {{
+                        fallbackBrowser = await chromium.launch(launchOptions);
+                    }}
+                    
+                    // Enhanced context options for difficult sites
+                    const contextOptions = {{
+                        ignoreHTTPSErrors: true,
+                        viewport: {{ width: 1280, height: 720 }},
+                        userAgent: strategy.userAgent,
+                        javaScriptEnabled: !strategy.extraArgs.includes('--disable-javascript'),
+                        // Network conditions for slow sites
+                        offline: false,
+                        // Extra headers for compatibility
+                        extraHTTPHeaders: {{
+                            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                            'Accept-Language': 'nb-NO,nb;q=0.9,no;q=0.8,nn;q=0.7,en;q=0.6',
+                            'Accept-Encoding': 'gzip, deflate, br',
+                            'DNT': '1',
+                            'Connection': 'keep-alive',
+                            'Upgrade-Insecure-Requests': '1'
+                        }}
+                    }};
+                    
+                    // Add mobile viewport for mobile user agent
+                    if (strategy.userAgent && strategy.userAgent.includes('iPhone')) {{
+                        contextOptions.viewport = {{ width: 375, height: 667 }};
+                        contextOptions.isMobile = true;
+                        contextOptions.hasTouch = true;
+                    }}
+                    
+                    currentContext = await fallbackBrowser.newContext(contextOptions);
+                    
+                    currentPage = await currentContext.newPage();
+                    usingFallback = true;
+                    
+                    // Add request/response interceptors for problematic sites
+                    await currentPage.route('**/*', async (route, request) => {{
+                        // Block potentially problematic resources for faster loading
+                        const resourceType = request.resourceType();
+                        const url = request.url();
+                        
+                        // Block ads, analytics, and tracking that might slow down sites
+                        if (
+                            resourceType === 'image' && url.includes('ad') ||
+                            url.includes('google-analytics') ||
+                            url.includes('googletagmanager') ||
+                            url.includes('facebook.net') ||
+                            url.includes('doubleclick') ||
+                            resourceType === 'font' && !url.includes(currentPage.url().split('/')[2])
+                        ) {{
+                            await route.abort();
+                        }} else {{
+                            // Continue with modified headers for better compatibility
+                            const headers = {{
+                                ...request.headers(),
+                                'Cache-Control': 'no-cache',
+                                'Pragma': 'no-cache'
+                            }};
+                            await route.continue({{ headers }});
+                        }}
+                    }});
+                    
+                    // Handle dialogs and popups that might interfere
+                    currentPage.on('dialog', async dialog => {{
+                        console.log(`Dialog appeared: ${{dialog.message()}}`);
+                        await dialog.accept();
+                    }});
                 }}
+                
+                // Try both URL variants with current strategy
+                for (const [index, candidateUrl] of urlCandidates.entries()) {{
+                    try {{
+                        console.log(`🔄 ${{strategy.name}} attempt ${{index + 1}}: ${{candidateUrl}}`);
+                        
+                        await currentPage.goto(candidateUrl, {{ 
+                            waitUntil: strategy.waitUntil, 
+                            timeout: strategy.timeout 
+                        }});
+                        
+                        console.log(`✅ ${{strategy.name}} navigation successful`);
+                        navigationSuccess = true;
+                        browserUsed = strategy.browser;
+                        break;
+                        
+                    }} catch (attemptError) {{
+                        console.log(`❌ ${{strategy.name}} attempt ${{index + 1}} failed: ${{attemptError.message}}`);
+                        lastError = attemptError;
+                        
+                        // Try with different wait strategies on timeout
+                        if (attemptError.message.includes('Timeout') && index === 0) {{
+                            try {{
+                                console.log(`🔄 ${{strategy.name}} retry with load event: ${{candidateUrl}}`);
+                                await currentPage.goto(candidateUrl, {{ 
+                                    waitUntil: 'load', 
+                                    timeout: Math.min(strategy.timeout * 1.5, 120000)
+                                }});
+                                console.log(`✅ ${{strategy.name}} navigation successful (load event)`);
+                                navigationSuccess = true;
+                                browserUsed = strategy.browser;
+                                break;
+                            }} catch (retryError) {{
+                                console.log(`❌ ${{strategy.name}} retry failed: ${{retryError.message}}`);
+                                lastError = retryError;
+                            }}
+                        }}
+                    }}
+                }}
+                
+            }} catch (strategyError) {{
+                console.log(`❌ Strategy ${{strategy.name}} setup failed: ${{strategyError.message}}`);
+                lastError = strategyError;
             }}
         }}
         
         if (!navigationSuccess) {{
-            throw new Error(`All navigation attempts failed. Last error: ${{lastError?.message || 'Unknown error'}}`);
+            console.log('🚨 All navigation strategies failed - creating fallback report');
+            
+            // Create a comprehensive failure report
+            const timestamp = new Date().toISOString()
+                .replace(/:/g, '-')
+                .replace(/\./g, '_');
+
+            const failureReport = {{
+                project: '{project_name}',
+                timestamp: new Date().toISOString(),
+                url: '{project_url}',
+                total_violations: -1,
+                violations: [],
+                browser_used: 'none_successful',
+                fallback_used: true,
+                attempted_strategies: fallbackStrategies.map(s => s.name).join(', '),
+                attempted_urls: urlCandidates,
+                navigation_failure: true,
+                error: {{
+                    message: `All navigation attempts failed across ${{fallbackStrategies.length}} strategies`,
+                    last_error: lastError?.message || 'Unknown error',
+                    details: 'Site appears to be inaccessible or incompatible with automated testing'
+                }}
+            }};
+
+            const failureReportPath = path.join(
+                outputDir,
+                `violations-{project_name}-${{timestamp}}-NAVIGATION_FAILED.json`
+            );
+
+            fs.writeFileSync(failureReportPath, JSON.stringify(failureReport, null, 2));
+            console.log(`Failure report saved to ${{failureReportPath}}`);
+            
+            throw new Error(`All navigation attempts failed across all browsers. Last error: ${{lastError?.message || 'Unknown error'}}`);
         }}
         
         // Wait for page to stabilize
@@ -104,7 +279,36 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
         
         console.log(`Final URL: ${{currentPage.url()}}`);
         console.log(`Page title: ${{await currentPage.title()}}`);
-        console.log(`Browser used: ${{usingFallback ? 'Firefox' : 'Chromium'}}`);
+        console.log(`Browser used: ${{browserUsed}}`);
+        
+        // Additional stability checks for problematic sites
+        try {{
+            // Check if page is responsive
+            await currentPage.evaluate(() => document.readyState);
+            
+            // Wait for potential lazy-loaded content
+            await currentPage.waitForTimeout(3000);
+            
+            // Check for common loading indicators and wait for them to disappear
+            const loadingSelectors = [
+                '[class*="loading"]',
+                '[class*="spinner"]', 
+                '[id*="loading"]',
+                '.loader'
+            ];
+            
+            for (const selector of loadingSelectors) {{
+                try {{
+                    await currentPage.waitForSelector(selector, {{ state: 'hidden', timeout: 10000 }});
+                    console.log(`Waited for loading indicator: ${{selector}}`);
+                }} catch {{
+                    // Ignore if selector not found
+                }}
+            }}
+            
+        }} catch (stabilityError) {{
+            console.log(`Page stability check warning: ${{stabilityError.message}}`);
+        }}
 
         // Check for redirect loops (like nille.no json=true issue)
         const finalUrl = currentPage.url();
@@ -167,7 +371,8 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
             timestamp: new Date().toISOString(),
             url: currentPage.url(),
             total_violations: accessibilityResults.violations.length,
-            browser_used: usingFallback ? 'firefox' : 'chromium',
+            browser_used: browserUsed,
+            fallback_used: usingFallback,
             violations: accessibilityResults.violations.map(violation => ({{
                 id: violation.id,
                 impact: violation.impact,
@@ -196,7 +401,7 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
             console.error(`Failed to update tag summary: ${{errorMessage}}`);
         }}
 
-        console.log(`✅ Found ${{accessibilityResults.violations.length}} accessibility violations (using ${{usingFallback ? 'Firefox' : 'Chromium'}})`);
+        console.log(`✅ Found ${{accessibilityResults.violations.length}} accessibility violations (using ${{browserUsed}})`);
 
     }} catch (error) {{
         console.error(`Error in accessibility test for {project_name}:`, error);
@@ -213,10 +418,12 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
         const fallbackReport = {{
             project: '{project_name}',
             timestamp: new Date().toISOString(),
-            url: currentPage.isClosed() ? 'Page Closed' : currentPage.url(),
+            url: currentPage && !currentPage.isClosed() ? currentPage.url() : 'Page Closed or Never Loaded',
             total_violations: -1,
             violations: [],
-            browser_used: usingFallback ? 'firefox' : 'chromium',
+            browser_used: browserUsed || 'unknown',
+            fallback_used: usingFallback,
+            attempted_strategies: 'chromium,firefox,webkit',
             error: error instanceof Error ? {{
                 message: error.message,
                 stack: error.stack,

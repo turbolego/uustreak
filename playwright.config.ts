@@ -1,4 +1,4 @@
-import { defineConfig } from '@playwright/test';
+import { defineConfig, devices } from '@playwright/test';
 import * as path from 'path';
 
 export default defineConfig({
@@ -8,8 +8,8 @@ export default defineConfig({
     retries: 3,
     workers: '25%', // Reduced parallelism to avoid overwhelming slow sites
     use: {
-        navigationTimeout: 60000, // Standard timeout for most sites
-        actionTimeout: 15000,
+        navigationTimeout: 90000, // Increased for slow sites
+        actionTimeout: 20000, // Increased for slow interactions
         viewport: { width: 1280, height: 720 },
         trace: 'off',
         browserName: 'chromium', // Default to Chromium, fallback handled in test
@@ -18,13 +18,15 @@ export default defineConfig({
             args: [
                 '--no-sandbox', 
                 '--disable-setuid-sandbox',
-                '--disable-http2'  // Helps with some sites
+                '--disable-http2',  // Helps with some sites
+                '--disable-web-security', // For sites with CORS issues
+                '--disable-features=VizDisplayCompositor' // Stability fix
             ]
         }
     },
     reporter: [
-        ['html', { outputFolder: path.resolve(__dirname, 'playwright-report'), open: 'never' }],
+        ['html', { outputFolder: path.resolve(process.cwd(), 'playwright-report'), open: 'never' }],
         ['list']
     ],
-    timeout: 120000
+    timeout: 180000 // Increased timeout for slow sites
 });
