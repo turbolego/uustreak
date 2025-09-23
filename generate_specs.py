@@ -46,11 +46,12 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
         let browserUsed = 'chromium';
         
         // Enhanced fallback strategy with multiple browsers and configurations
+        // Reduced timeouts to ensure all strategies can be attempted within 5-minute test timeout
         const fallbackStrategies = [
             {{
                 name: 'Chromium (Standard)',
                 browser: 'chromium',
-                timeout: 45000,
+                timeout: 30000,
                 waitUntil: 'domcontentloaded',
                 extraArgs: [],
                 userAgent: null
@@ -58,7 +59,7 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
             {{
                 name: 'Chromium (Extended Timeout)',
                 browser: 'chromium',
-                timeout: 90000,
+                timeout: 45000,
                 waitUntil: 'networkidle',
                 extraArgs: [],
                 userAgent: null
@@ -66,7 +67,7 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
             {{
                 name: 'Firefox (Standard)',
                 browser: 'firefox',
-                timeout: 75000,
+                timeout: 40000,
                 waitUntil: 'domcontentloaded',
                 extraArgs: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-web-security'],
                 userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
@@ -74,7 +75,7 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
             {{
                 name: 'Chromium (Mobile User Agent)',
                 browser: 'chromium',
-                timeout: 90000,
+                timeout: 35000,
                 waitUntil: 'domcontentloaded',
                 extraArgs: ['--no-sandbox', '--disable-setuid-sandbox'],
                 userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1'
@@ -82,7 +83,7 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
             {{
                 name: 'WebKit (Safari)',
                 browser: 'webkit',
-                timeout: 60000,
+                timeout: 40000,
                 waitUntil: 'domcontentloaded',
                 extraArgs: [],
                 userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'
@@ -90,7 +91,7 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
             {{
                 name: 'Chromium (No-JS Fallback)',
                 browser: 'chromium',
-                timeout: 60000,
+                timeout: 30000,
                 waitUntil: 'domcontentloaded',
                 extraArgs: ['--disable-javascript'],
                 userAgent: null
@@ -98,10 +99,10 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
         ];
         
         // Try each strategy with all URL candidates
-        for (const strategy of fallbackStrategies) {{
+        for (const [strategyIndex, strategy] of fallbackStrategies.entries()) {{
             if (navigationSuccess) break;
             
-            console.log(`🔄 Trying strategy: ${{strategy.name}}`);
+            console.log(`🔄 Trying strategy ${{strategyIndex + 1}}/${{fallbackStrategies.length}}: ${{strategy.name}}`);
             
             try {{
                 // Close existing page/context if switching browsers
@@ -132,8 +133,8 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
                         console.log(`Warning: Error closing browser: ${{e.message}}`);
                     }}
                     
-                    // Wait a moment for cleanup to complete
-                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    // Shorter delay for cleanup
+                    await new Promise(resolve => setTimeout(resolve, 500));
                     
                     // Launch the appropriate browser
                     const launchOptions = {{
@@ -243,15 +244,18 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
                         console.log(`❌ ${{strategy.name}} attempt ${{index + 1}} failed: ${{attemptError.message}}`);
                         lastError = attemptError;
                         
-                        // Try with different wait strategies on timeout (only for first URL to avoid too many retries)
-                        if (attemptError.message.includes('Timeout') && index === 0 && !attemptError.message.includes('net::ERR_CONNECTION_TIMED_OUT')) {{
+                        // Skip retry for connection timeout errors to save time
+                        if (attemptError.message.includes('Timeout') && 
+                            index === 0 && 
+                            !attemptError.message.includes('net::ERR_CONNECTION_TIMED_OUT') &&
+                            !attemptError.message.includes('Target page, context or browser has been closed')) {{
                             try {{
-                                console.log(`🔄 ${{strategy.name}} retry with load event: ${{candidateUrl}}`);
+                                console.log(`🔄 ${{strategy.name}} quick retry: ${{candidateUrl}}`);
                                 await currentPage.goto(candidateUrl, {{ 
                                     waitUntil: 'load', 
-                                    timeout: Math.min(strategy.timeout * 1.5, 120000)
+                                    timeout: Math.min(strategy.timeout, 45000)
                                 }});
-                                console.log(`✅ ${{strategy.name}} navigation successful (load event)`);
+                                console.log(`✅ ${{strategy.name}} navigation successful (retry)`);
                                 navigationSuccess = true;
                                 browserUsed = strategy.browser;
                                 break;
