@@ -1,7 +1,7 @@
-name: WCAG Accessibility Testing (GitHub runner) - Daily
+name: WCAG Accessibility Testing (GitHub runner) - Sunday
 on:
   schedule:
-    - cron: '0 0 * * *'          # every day at 00:00 UTC
+    - cron: '0 0 * * 0'          # every sunday at 00:00 UTC
   workflow_dispatch:            # manual run always allowed
 
 permissions:
