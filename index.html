@@ -188,6 +188,7 @@
 
             reportFiles
                 .filter(filename => {
+                    // Exclude FAILED reports from main processing - they're handled separately
                     if (filename.includes('-FAILED.json')) return false;
                     const dateMatch = filename.match(/violations-(.+)-(\d{4}-\d{2}-\d{2})/);
                     return dateMatch && dateMatch[2] === date;
@@ -298,8 +299,10 @@
                     // Process the JSON files with deduplication (keep only newest report per project)
                     const reports = [];
                     const projectReports = new Map(); // Track newest report per project
+                    const failedProjects = []; // Track failed projects for invalid URLs dialog
                     let processedCount = 0;
                     let violationFiles = 0;
+                    let failedFiles = 0;
                     let filteredOutProjects = 0;
                     const totalFiles = Object.keys(jsonFiles).length;
 
@@ -320,6 +323,28 @@
                         for (const [filename, data] of batch) {
                             // Handle filenames that may have './' prefix from tar archive
                             const cleanFilename = filename.startsWith('./') ? filename.substring(2) : filename;
+                            
+                            // Handle failed reports separately - collect URL for invalid URLs dialog
+                            if (cleanFilename.includes('-FAILED.json')) {
+                                failedFiles++;
+                                try {
+                                    if (data.url && data.project) {
+                                        failedProjects.push({
+                                            project: data.project,
+                                            url: data.url,
+                                            timestamp: data.timestamp || new Date().toISOString(),
+                                            reason: 'Project was unavailable for testing',
+                                            error: data.error?.message || 'Navigation failed'
+                                        });
+                                    }
+                                } catch (failedError) {
+                                    console.log(`Error processing failed report ${cleanFilename}:`, failedError.message);
+                                }
+                                // Skip processing failed reports for main results
+                                processedCount++;
+                                continue;
+                            }
+                            
                             if (cleanFilename.startsWith('violations-') && cleanFilename.endsWith('.json')) {
                                 violationFiles++;
 
@@ -380,14 +405,21 @@
                     // Convert Map to array (only the newest reports per project)
                     reports.push(...Array.from(projectReports.values()));
 
-                    console.log(`Processed ${reports.length} unique project reports from archive (${violationFiles} violation files found, ${filteredOutProjects} projects filtered out as not in report-list.json, deduplicated to ${reports.length} newest valid reports)`);
+                    console.log(`Processed ${reports.length} unique project reports from archive (${violationFiles} violation files found, ${failedFiles} failed projects, ${filteredOutProjects} projects filtered out as not in report-list.json, deduplicated to ${reports.length} newest valid reports)`);
+
+                    // Store failed projects in cache for invalid URLs dialog
+                    if (failedProjects.length > 0) {
+                        const failedCacheKey = `${date}_failed`;
+                        reportCache.set(failedCacheKey, failedProjects);
+                        console.log(`Cached ${failedProjects.length} failed projects for ${date}`);
+                    }
 
                     // Store in cache
                     allReportsForDate = [...reports];
                     reportCache.set(date, allReportsForDate);
 
-                    // Implement cache size limit
-                    if (reportCache.size > 3) {
+                    // Implement cache size limit (increased to account for failed project caches)
+                    if (reportCache.size > 6) {
                         const oldestDate = Array.from(reportCache.keys()).sort()[0];
                         reportCache.delete(oldestDate);
                     }
@@ -480,6 +512,7 @@
 
                 const reportsToFetch = newestReports;
                 const reports = [];
+                const failedProjects = []; // Track failed projects for invalid URLs dialog
                 const batchSize = 200;
                 const retryLimit = 3;
                 let failedReports = [];
@@ -492,6 +525,26 @@
                         try {
                             const datePath = filename.match(/\d{4}-\d{2}-\d{2}/)[0];
                             const adjustedPath = `accessibility-reports/${datePath}/${filename.split('/').pop()}`;
+
+                            // Handle failed reports separately - collect URL for invalid URLs dialog
+                            if (filename.includes('-FAILED.json')) {
+                                try {
+                                    const response = await fetchWithTimeout(adjustedPath);
+                                    const data = await response.json();
+                                    if (data.url && data.project) {
+                                        failedProjects.push({
+                                            project: data.project,
+                                            url: data.url,
+                                            timestamp: data.timestamp || new Date().toISOString(),
+                                            reason: 'Project was unavailable for testing',
+                                            error: data.error?.message || 'Navigation failed'
+                                        });
+                                    }
+                                } catch (failedError) {
+                                    console.log(`Error processing failed report ${filename}:`, failedError.message);
+                                }
+                                return null; // Don't include failed reports in main results
+                            }
 
                             let retries = 0;
                             while (retries < retryLimit) {
@@ -526,10 +579,17 @@
                     console.warn(`${failedReports.length} rapporter kunne ikke hentes:`, failedReports);
                 }
 
+                // Store failed projects in cache for invalid URLs dialog
+                if (failedProjects.length > 0) {
+                    const failedCacheKey = `${date}_failed`;
+                    reportCache.set(failedCacheKey, failedProjects);
+                    console.log(`Cached ${failedProjects.length} failed projects for ${date}`);
+                }
+
                 allReportsForDate = [...reports];
                 reportCache.set(date, allReportsForDate);
 
-                if (reportCache.size > 3) {
+                if (reportCache.size > 6) { // Increased to account for failed project caches
                     const oldestDate = Array.from(reportCache.keys()).sort()[0];
                     reportCache.delete(oldestDate);
                 }
@@ -617,7 +677,8 @@
         }
 
         function parseReportFilename(filename) {
-            // Ekskluder filer med '-FAILED.json'
+            // Exclude failed reports - these represent projects that were unavailable for testing
+            // and should not affect streak calculations or be included in main results
             if (filename.includes('-FAILED.json')) return null;
 
             const match = filename.match(/violations-(.+)-(\d{4}-\d{2}-\d{2})T(\d{2}-\d{2}-\d{2}_\d{3}Z)(?:-count-(\d+))?\.json$/);
@@ -639,6 +700,7 @@
             }
 
             const filteredReports = reportList
+                .filter(filename => !filename.includes('-FAILED.json')) // Exclude failed reports from streak calculation
                 .map(parseReportFilename)
                 .filter(report => report && report.project === projectName)
                 .sort((a, b) => new Date(b.date) - new Date(a.date));
