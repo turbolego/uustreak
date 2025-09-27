@@ -6,6 +6,9 @@ def create_spec_file(project_name, project_url):
     filename = f"{project_name.replace(' ', '_')}.spec.ts"
 
     # Create the test file content - using raw string (r) prefix to handle escape sequences
+    # JSON-encode the project_url to safely embed into the generated JS
+    safe_project_url = json.dumps(project_url)
+
     content = rf'''import {{ test, chromium, firefox, webkit }} from '@playwright/test';
 import {{ AxeBuilder }} from '@axe-core/playwright';
 import * as fs from 'fs';
@@ -278,7 +281,7 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
                     if (strategy.browser !== 'webkit') {{
                         try {{
                             // Extract hostname from the project URL to use in request filtering
-                            const projectHost = '{project_url}'.replace(/https?:\/\/([^\/]+).*/, '$1');
+                            const projectHost = {safe_project_url}.replace(/https?:\/\/([^\/]+).*/, '$1');
                             await currentPage.route('**/*', async (route, request) => {{
                                 // Block potentially problematic resources for faster loading
                                 const resourceType = request.resourceType();

@@ -28,6 +28,14 @@ const PROJECTS_FILE = './projects.json';
 function fetchUrl(url) {
     return new Promise((resolve, reject) => {
         https.get(url, (res) => {
+            // Reject on HTTP error status codes
+            if (res.statusCode >= 400) {
+                reject(new Error(`HTTP ${res.statusCode}: ${res.statusMessage}`));
+                // Consume response data to free up memory
+                res.resume();
+                return;
+            }
+
             let data = '';
             res.on('data', chunk => data += chunk);
             res.on('end', () => resolve(data));
