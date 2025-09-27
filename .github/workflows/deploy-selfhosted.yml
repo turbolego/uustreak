@@ -991,7 +991,41 @@ jobs:
 
           echo "All HTML reports saved in $TARGET_DIR"
 
+      - name: Check Archive Quality Before Creating
+        id: quality-check
+        run: |
+          echo "Checking if new results are better than existing archive..."
+          
+          # Get today's date
+          TODAY=$(date +%Y-%m-%d)
+          echo "Checking quality for date: $TODAY"
+          
+          # Copy the quality checker script to current directory
+          cp main-branch/check-archive-quality.js .
+          
+          # Check if today's directory exists and has content
+          NEW_RESULTS_DIR="gh-pages-branch/accessibility-reports/$TODAY"
+          if [ ! -d "$NEW_RESULTS_DIR" ] || [ -z "$(find "$NEW_RESULTS_DIR" -name "violations-*.json" 2>/dev/null)" ]; then
+            echo "No new results found for $TODAY, skipping quality check"
+            echo "should_create_archive=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          # Construct URL for existing manifest
+          EXISTING_MANIFEST_URL="https://raw.githubusercontent.com/turbolego/uustreak/refs/heads/gh-pages/accessibility-reports/archives/reports_$TODAY.manifest"
+          
+          # Run quality check
+          if node check-archive-quality.js "$TODAY" "$NEW_RESULTS_DIR" "$EXISTING_MANIFEST_URL"; then
+            echo "Quality check passed: New results are better or equal"
+            echo "should_create_archive=true" >> $GITHUB_OUTPUT
+          else
+            echo "Quality check failed: Existing archive is better"
+            echo "should_create_archive=false" >> $GITHUB_OUTPUT
+          fi
+        continue-on-error: true
+
       - name: Create Gzip Archives for JSON Reports
+        if: steps.quality-check.outputs.should_create_archive == 'true'
         run: |
           echo "Creating gzip archives for JSON reports by date..."
           
@@ -1120,6 +1154,7 @@ jobs:
           ls -la gh-pages-branch/accessibility-reports/archives/ || echo "No archives created"
 
       - name: Update Report List
+        if: steps.quality-check.outputs.should_create_archive == 'true'
         run: |
           echo "Updating report list in gh-pages branch..."
           mkdir -p gh-pages-branch/historical-data
@@ -1134,6 +1169,7 @@ jobs:
           echo "Number of reports: $(jq length gh-pages-branch/historical-data/report-list.json)"
 
       - name: Deploy static files to GitHub Pages
+        if: steps.quality-check.outputs.should_create_archive == 'true'
         run: |
           echo "Copying static files to gh-pages branch..."
           cp main-branch/index.html gh-pages-branch/
@@ -1169,6 +1205,7 @@ jobs:
           fi
       
       - name: Deploy to GitHub Pages (Direct Git Push)
+        if: steps.quality-check.outputs.should_create_archive == 'true'
         run: |
           echo "Deploying to gh-pages branch using direct git push..."
           CURRENT_DATE=$(date +%Y-%m-%d)
@@ -1285,8 +1322,16 @@ jobs:
             # The job must fail if the critical file is not found
             exit 1
           fi
+
+      - name: Log Skipped Deployment
+        if: steps.quality-check.outputs.should_create_archive == 'false'
+        run: |
+          echo "⚠️ Deployment skipped: New results are of lower quality than existing archive"
+          echo "This protects the existing high-quality data from being overwritten"
+          echo "The workflow completed successfully but no changes were deployed"
       
       - name: Trigger Issue Creation
+        if: steps.quality-check.outputs.should_create_archive == 'true'
         uses: actions/github-script@v8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
