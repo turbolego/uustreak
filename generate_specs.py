@@ -277,6 +277,8 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
                     // Add request/response interceptors for problematic sites (skip for WebKit due to compatibility issues)
                     if (strategy.browser !== 'webkit') {{
                         try {{
+                            // Extract hostname from the project URL to use in request filtering
+                            const projectHost = '{project_url}'.replace(/https?:\/\/([^\/]+).*/, '$1');
                             await currentPage.route('**/*', async (route, request) => {{
                                 // Block potentially problematic resources for faster loading
                                 const resourceType = request.resourceType();
@@ -289,7 +291,7 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
                                     url.includes('googletagmanager') ||
                                     url.includes('facebook.net') ||
                                     url.includes('doubleclick') ||
-                                    resourceType === 'font' && !url.includes('{project_url}'.replace(/https?:\/\/([^\/]+).*/, '$1'))
+                                    resourceType === 'font' && !url.includes(projectHost)
                                 ) {{
                                     await route.abort();
                                 }} else {{
@@ -509,21 +511,22 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
                 
                 if (!currentPage || currentPage.isClosed()) {{
                     // Try to get a fresh page from context
-                    if (currentContext && !fallbackBrowser) {{
+                    // If we launched a fallbackBrowser, prefer pages from it; otherwise use the top-level browser
+                    if (currentContext && fallbackBrowser) {{
+                        const pages = await fallbackBrowser.pages();
+                        if (pages.length > 0) {{
+                            currentPage = pages[0];
+                            console.log('Using existing page from fallback browser');
+                        }} else {{
+                            throw new Error('Page was closed and no pages available in fallback browser');
+                        }}
+                    }} else if (currentContext) {{
                         const pages = await browser.pages();
                         if (pages.length > 0) {{
                             currentPage = pages[0];
                             console.log('Using existing page from browser');
                         }} else {{
                             throw new Error('Page was closed and no pages available');
-                        }}
-                    }} else if (currentContext) {{
-                        const pages = currentContext.pages();
-                        if (pages.length > 0) {{
-                            currentPage = pages[0];
-                            console.log('Using existing page from context');
-                        }} else {{
-                            throw new Error('Page was closed and no pages available in context');
                         }}
                     }} else {{
                         throw new Error('Page was closed unexpectedly and context not available');
