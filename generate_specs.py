@@ -48,11 +48,13 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
         // Enhanced fallback strategy with anti-bot detection measures
         const fallbackStrategies = [
             {{
-                name: 'Chromium (Stealth Mode)',
+                name: 'Chromium (HTTP/1.1 Mode)',
                 browser: 'chromium',
                 timeout: 30000,
                 waitUntil: 'domcontentloaded',
                 extraArgs: [
+                    '--disable-http2',  // Force HTTP/1.1 to avoid HTTP2 errors
+                    '--disable-quic',    // Disable QUIC protocol
                     '--disable-blink-features=AutomationControlled',
                     '--disable-features=IsolateOrigins,site-per-process',
                     '--flag-switches-begin',
@@ -72,11 +74,27 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
                 stealth: true
             }},
             {{
+                name: 'Chromium (Stealth Mode)',
+                browser: 'chromium',
+                timeout: 30000,
+                waitUntil: 'domcontentloaded',
+                extraArgs: [
+                    '--disable-blink-features=AutomationControlled',
+                    '--disable-features=IsolateOrigins,site-per-process',
+                    '--flag-switches-begin',
+                    '--disable-site-isolation-trials',
+                    '--flag-switches-end'
+                ],
+                userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                stealth: true
+            }},
+            {{
                 name: 'Chromium (Mobile Stealth)',
                 browser: 'chromium',
                 timeout: 35000,
                 waitUntil: 'domcontentloaded',
                 extraArgs: [
+                    '--disable-http2',  // Also disable HTTP2 for mobile mode
                     '--disable-blink-features=AutomationControlled',
                     '--user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1'
                 ],
@@ -152,7 +170,7 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
                     
                     // Launch the appropriate browser with anti-detection measures
                     const launchOptions = {{
-                        headless: strategy.stealth ? false : true, // Use headful mode for stealth
+                        headless: true, // Always use headless mode for CI compatibility
                         args: [
                             '--no-sandbox', 
                             '--disable-setuid-sandbox',
@@ -271,7 +289,7 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
                                     url.includes('googletagmanager') ||
                                     url.includes('facebook.net') ||
                                     url.includes('doubleclick') ||
-                                    resourceType === 'font' && !url.includes(new URL(candidateUrl).hostname)
+                                    resourceType === 'font' && !url.includes('{project_url}'.replace(/https?:\/\/([^\/]+).*/, '$1'))
                                 ) {{
                                     await route.abort();
                                 }} else {{
@@ -404,7 +422,34 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
         
         // Wait for page to stabilize
         console.log('Page loaded, waiting for stabilization...');
-        await currentPage.waitForTimeout(5000);
+        
+        // Check if page is still valid before waiting
+        if (!currentPage || currentPage.isClosed()) {{
+            throw new Error('Page was closed unexpectedly after navigation');
+        }}
+        
+        try {{
+            await currentPage.waitForTimeout(5000);
+        }} catch (timeoutError) {{
+            // If page was closed during wait, check if we can recover
+            if (timeoutError.message.includes('Target page, context or browser has been closed')) {{
+                console.log('Warning: Page was closed during stabilization wait, attempting to continue...');
+                // Try to get current page from context if available
+                if (currentContext) {{
+                    const pages = currentContext.pages();
+                    if (pages.length > 0) {{
+                        currentPage = pages[0];
+                        console.log('Recovered page from context');
+                    }} else {{
+                        throw new Error('No pages available in context after navigation');
+                    }}
+                }} else {{
+                    throw timeoutError;
+                }}
+            }} else {{
+                throw timeoutError;
+            }}
+        }}
         
         console.log(`Final URL: ${{currentPage.url()}}`);
         console.log(`Page title: ${{await currentPage.title()}}`);
@@ -413,28 +458,33 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
         // Additional stability checks for problematic sites
         try {{
             // Check if page is responsive
-            await currentPage.evaluate(() => document.readyState);
-            
-            // Wait for potential lazy-loaded content
-            await currentPage.waitForTimeout(3000);
-            
-            // Check for common loading indicators and wait for them to disappear
-            const loadingSelectors = [
-                '[class*="loading"]',
-                '[class*="spinner"]', 
-                '[id*="loading"]',
-                '.loader'
-            ];
-            
-            for (const selector of loadingSelectors) {{
+            if (!currentPage.isClosed()) {{
+                await currentPage.evaluate(() => document.readyState);
+                
+                // Wait for potential lazy-loaded content with error handling
                 try {{
-                    await currentPage.waitForSelector(selector, {{ state: 'hidden', timeout: 10000 }});
-                    console.log(`Waited for loading indicator: ${{selector}}`);
-                }} catch {{
-                    // Ignore if selector not found
+                    await currentPage.waitForTimeout(3000);
+                }} catch (waitError) {{
+                    console.log(`Warning during additional wait: ${{waitError.message}}`);
+                }}
+                
+                // Check for common loading indicators and wait for them to disappear
+                const loadingSelectors = [
+                    '[class*="loading"]',
+                    '[class*="spinner"]', 
+                    '[id*="loading"]',
+                    '.loader'
+                ];
+                
+                for (const selector of loadingSelectors) {{
+                    try {{
+                        await currentPage.waitForSelector(selector, {{ state: 'hidden', timeout: 10000 }});
+                        console.log(`Waited for loading indicator: ${{selector}}`);
+                    }} catch {{
+                        // Ignore if selector not found
+                    }}
                 }}
             }}
-            
         }} catch (stabilityError) {{
             console.log(`Page stability check warning: ${{stabilityError.message}}`);
         }}
@@ -457,8 +507,27 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
             try {{
                 console.log(`Running accessibility analysis (attempt ${{retryCount + 1}}/${{maxRetries}})...`);
                 
-                if (currentPage.isClosed()) {{
-                    throw new Error('Page was closed unexpectedly');
+                if (!currentPage || currentPage.isClosed()) {{
+                    // Try to get a fresh page from context
+                    if (currentContext && !fallbackBrowser) {{
+                        const pages = await browser.pages();
+                        if (pages.length > 0) {{
+                            currentPage = pages[0];
+                            console.log('Using existing page from browser');
+                        }} else {{
+                            throw new Error('Page was closed and no pages available');
+                        }}
+                    }} else if (currentContext) {{
+                        const pages = currentContext.pages();
+                        if (pages.length > 0) {{
+                            currentPage = pages[0];
+                            console.log('Using existing page from context');
+                        }} else {{
+                            throw new Error('Page was closed and no pages available in context');
+                        }}
+                    }} else {{
+                        throw new Error('Page was closed unexpectedly and context not available');
+                    }}
                 }}
 
                 const builder = new AxeBuilder({{ page: currentPage }})
