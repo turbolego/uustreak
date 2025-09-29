@@ -973,17 +973,7 @@
 
             if (!rows.length) return;
 
-            // Helper to get trimmed cell text
-            const getCellText = (row, idx) => (row.children[idx]?.textContent || '').trim();
-
-            // Extract first numeric value from a string (handles '11 🔥', '1,234', etc.)
-            const extractNumber = (s) => {
-                if (!s) return NaN;
-                const match = s.match(/-?\d+(?:[.,]\d+)?/);
-                if (!match) return NaN;
-                return parseFloat(match[0].replace(',', '.'));
-            };
-
+            const isNumeric = !isNaN(rows[0].children[columnIndex]?.textContent);
             const currentSortDirection = isInitialSort ? 'desc' : (table.dataset.sortDirection || 'desc');
             const newSortDirection = isInitialSort ? 'desc' : (currentSortDirection === 'desc' ? 'asc' : 'desc');
             table.dataset.sortDirection = newSortDirection;
@@ -1011,31 +1001,22 @@
             }
 
             rows.sort((a, b) => {
-                let aValue = getCellText(a, columnIndex);
-                let bValue = getCellText(b, columnIndex);
+                let aValue = a.children[columnIndex]?.textContent || '';
+                let bValue = b.children[columnIndex]?.textContent || '';
 
                 if (columnIndex === 1) {
                     aValue = aValue.replace('Se rapport fra ', '');
                     bValue = bValue.replace('Se rapport fra ', '');
                 }
 
-                const aNum = extractNumber(aValue);
-                const bNum = extractNumber(bValue);
-
-                // If at least one cell contains a number, sort numerically using extracted numbers
-                if (!isNaN(aNum) || !isNaN(bNum)) {
-                    const an = isNaN(aNum) ? 0 : aNum;
-                    const bn = isNaN(bNum) ? 0 : bNum;
-                    const comparison = an - bn;
-                    return newSortDirection === 'desc' ? -comparison : comparison;
+                let comparison;
+                if (isNumeric) {
+                    comparison = (parseFloat(aValue) || 0) - (parseFloat(bValue) || 0);
+                } else {
+                    comparison = aValue.localeCompare(bValue);
                 }
-
-                // Fallback to string comparison
-                const comparison = aValue.localeCompare(bValue);
                 return newSortDirection === 'desc' ? -comparison : comparison;
-            });
-
-            rows.forEach(row => tbody.appendChild(row));
+            }); rows.forEach(row => tbody.appendChild(row));
 
             // Update rank numbers after sorting
             updateRankNumbers(tbody);
