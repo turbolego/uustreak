@@ -1,0 +1,141 @@
+{
+  "project": "Østlendingen AS",
+  "timestamp": "2025-09-28T02:17:40.585Z",
+  "url": "https://www.ostlendingen.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ostlendingen\\.no\\/toppbanner_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-68b0c13c-407e-4756-97b8-e4b63b628e47\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"6\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a id=\"aw0\" target=\"_blank\" href=\"https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjssjsSKRJKNoHshgy3TSFtsayymDpCBygBfAW4ikDG86A__h9HX9lEWl2tjtnf34vkiPaACWAhEcrTdLQR2XeJM6aa8GO1idwVUVDGuAYCzxTAit9H-YNkj_y97_nZJRuNonpfHL-nmnRbw9o6Nj98qce1n6pOtIT2XkUhnm8duOSXRaygUlsFXkIvdWs_rzYTv1B1uTMKDSKbG_60sZFzuaNHIZDOlMsug8QAZSbYEoq196tH3P9Y9w9s14H3T50338V7GjIlLrXX88jy5FM2MjcszpHcVjeaaKtgyn5k4lvMHNAxOuLx-TbxTqZPBtvajssFWVL1mndrn2ITQIYdwJsKVNPZqLZSOjqdXoS2V1bxnIllRf_bRTcRrZbNrGFmp84zvw6m-I8pQLNh3Ui7-g8lsXZpwgaFZ472whgmr3HjllXjsv_TpMsw&amp;sai=AMfl-YTCXMf6IKvkq1KoXF2jz-i8lYKNVgl3qO_X-Hl8IE-8zQ1FdsyBxenZjBFLQh83fF9doFb1iwLWHrKpG1-vGJ4mJQyrUS4IDoHTDdwZDzpmKq37WLyIcoP_AazL1kJDKGDkiRJrmdGd-l4jLrnr1FW3zcu1sUupXTubLEKozctK1fsWZ9EbpBVxpHKy_gms514ue23FuutY99y2ca0rMGEKM1DrzwI35FY8XqSorhYZZrWNVx83eE-rvyI5URldfpOx8me1JlQY_0Ae7IZHUeqWvBAp0EkZ84RDnYZiBiozJOq0wLF4f6A&amp;sig=Cg0ArKJSzFqeLdX6Czrp&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;adurl=https://ehh.woow.no/home\" onfocus=\"ss('aw0')\" onmousedown=\"st('aw0')\" onmouseover=\"ss('aw0')\" onclick=\"ha('aw0')\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ostlendingen\\.no\\/toppbanner_0",
+            "#aw0"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.ostlendingen.no/gfx/small.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.ostlendingen.no/tilbud\" publication=\"www.ostlendingen.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layout=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_toppbanner am-bazaar-ad--labeled\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.ostlendingen.no/toppbanner_1\" pageview-id=\"060d3271-54cb-4738-9526-55c0a38959a8\" has-bid=\"\" render-count=\"1\" render-time=\"1759025852088\" advertiser-id=\"5267716454\" order-id=\"3850049916\" lineitem-id=\"7088212955\" creative-id=\"138529802481\" ad-size=\"980,300\" slot-targeting=\"keyword=forsiden,autolayout,dominans,forsiden_1,format=toppbanner,position=1,adnami_format=skin,lwrefresh=false,hb_cid=,hb_crid=,hb_adomain=,hb_format=banner,hb_source=,hb_size=980x300,hb_pb=31.92,hb_adid=72aaceef9336581,hb_bidder=livewrapped\" hb_pb=\"31.92\" prebid-price-group=\"35\" lineitem-type=\"STANDARD\" itemscope=\"\" itemtype=\"http://schema.org/WPAdBlock\" is-empty=\"false\" is-viewable=\"true\" style=\"min-height: 0px;\">",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "project": "Lyse Elnett AS",
+  "timestamp": "2025-09-27T00:40:51.538Z",
+  "url": "https://www.l-nett.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button tabindex=\"0\" onclick=\"CookieInformation.declineAllCategories()\" aria-label=\"Avslå\" id=\"declineButton\" class=\"coi-banner__decline\" role=\"alert\" aria-atomic=\"true\" style=\"display: flex;\">Avslå</button>",
+          "target": [
+            "#declineButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role alert is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button type=\"submit\" class=\"search\"><i class=\"icon zmdi zmdi-search zmdi-hc-2x\"></i></button>",
+          "target": [
+            "#placeholder-bottom > .container > .row > .searchinput.container-md.tile-common > .tile-content > form[action=\"https://www.l-nett.no/sok/\"][method=\"get\"] > .searchfield > .search[type=\"submit\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h3><a href=\"https://www.l-nett.no/nettleie/priser-og-vilkar-privat/artikler-les-mer/dette-er-norgespris\" target=\"_blank\">Norgespris ny statlig støtteordning</a></h3>",
+          "target": [
+            ".inner-content.odd > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h3 property=\"headline\">30.000 har bestilt Norgespris</h3>",
+          "target": [
+            "article[data-articleid=\"1258\"] > a[target=\"_self\"] > .card-body > h3[property=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label-title-only?application=playwright",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input placeholder=\"Søk\" title=\"Hva leter du etter?\" id=\"searchBar_element_c74820dc_2\" class=\"searchBar col-md-8\" tabindex=\"-1\" type=\"text\" name=\"q\" value=\"\">",
+          "target": [
+            "#searchBar_element_c74820dc_2"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"tile-common standard-menu d-print-none d-none d-lg-block nav-inline flex-grow-1 quick-mode\">",
+          "target": [
+            ".nav-inline"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 18,
+      "nodes": [
+        {
+          "html": "<div id=\"content-link\" class=\"sr-only sr-only-focusable\"><a href=\"#main-content\">Til innhold</a></div>",
+          "target": [
+            "#content-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"tile-common logo navbar-brand col-5 col-md-3 col-lg-2 pr-0 \">",
+          "target": [
+            ".col-5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"collapse-icon search-icon\">",
+          "target": [
+            ".search-icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"collapse-icon megamenu-icon d-none d-lg-block\">",
+          "target": [
+            ".megamenu-icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"placeholder-content-1\" class=\"p-0\">",
+          "target": [
+            "#placeholder-content-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"placeholder-content-3\" class=\"p-0\">",
+          "target": [
+            "#placeholder-content-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"placeholder-content-4\" class=\"p-0\">",
+          "target": [
+            "#placeholder-content-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"placeholder-content-5\">",
+          "target": [
+            "#placeholder-content-5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3><span>Meld deg på vårt nyhetsbrev</span></h3>",
+          "target": [
+            ".tile-content > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row  ctwebform-elementgroup first row1 odd elementamount1\" id=\"ctwebform-elementgroup-group-274\">",
+          "target": [
+            "#ctwebform-elementgroup-group-274"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row  ctwebform-elementgroup row2 even elementamount1\" id=\"ctwebform-elementgroup-group-275\">",
+          "target": [
+            "#ctwebform-elementgroup-group-275"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span id=\"NCWZFSGWTVBN\">Skriv svaret med tall: Hva er 10 pluss 8?</span>",
+          "target": [
+            "#NCWZFSGWTVBN"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"\">",
+          "target": [
+            ".ctwebform-element-type-captcha > div > div"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"form-group ctwebform-element first odd ctwebform-element-order1 ctwebform-element-optional ctwebform-element-labeled ctwebform-element-type-htmlcontent col-sm-6\" data-ctwebformelementname=\"privacy\">",
+          "target": [
+            ".ctwebform-element-type-htmlcontent"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"tile-common logo navbar-brand col-12 col-md-6 col-lg-3 pt-0 \">",
+          "target": [
+            ".pt-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h1><span>Noe du ikke fant?</span></h1>",
+          "target": [
+            "#placeholder-bottom > .container > .row > .searchinput.container-md.tile-common > .tile-content > h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input placeholder=\"Søk\" title=\"Hva leter du etter?\" id=\"searchBar_element_c74820dc_2\" class=\"searchBar col-md-8\" tabindex=\"-1\" type=\"text\" name=\"q\" value=\"\">",
+          "target": [
+            "#searchBar_element_c74820dc_2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.l-nett.no/personvern/\" target=\"_self\">Personvern</a>",
+          "target": [
+            ".privacy-link > a[target=\"_self\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "project": "KildeGruppen AS",
+  "timestamp": "2025-09-30T00:36:36.683Z",
+  "url": "https://www.kilde.no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div style=\"z-index:0\"><canvas id=\"rdlgrdanim\" style=\"position:fixed\" width=\"1280\" height=\"820\"></canvas></div>",
+          "target": [
+            "#__next > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

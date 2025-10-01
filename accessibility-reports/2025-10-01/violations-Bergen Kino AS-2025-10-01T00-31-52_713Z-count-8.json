@@ -1,0 +1,2161 @@
+{
+  "project": "Bergen Kino AS",
+  "timestamp": "2025-10-01T00:31:52.713Z",
+  "url": "https://www.bergenkino.no/#",
+  "total_violations": 8,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 76,
+      "nodes": [
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.4 fra 50 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj5feb55f34bbf42d0a718e3c65fac5e56_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>13:43</span>",
+          "target": [
+            "a[href=\"/showtime/2604498\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>14:58</span>",
+          "target": [
+            "a[href=\"/showtime/2604500\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>16:28</span>",
+          "target": [
+            "a[href=\"/showtime/2604499\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>17:28</span>",
+          "target": [
+            "a[href=\"/showtime/2604496\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>19:58</span>",
+          "target": [
+            "a[href=\"/showtime/2603598\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>20:28</span>",
+          "target": [
+            "a[href=\"/showtime/2603596\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>22:43</span>",
+          "target": [
+            "a[href=\"/showtime/2604495\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>23:28</span>",
+          "target": [
+            "a[href=\"/showtime/2603597\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.2 fra 18 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj10587bb3cce84c96895b8941d0b9550d_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>17:11</span>",
+          "target": [
+            "a[href=\"/showtime/2604531\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>20:26</span>",
+          "target": [
+            "a[href=\"/showtime/2603592\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>20:26</span>",
+          "target": [
+            "a[href=\"/showtime/2605309\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>20:41</span>",
+          "target": [
+            "a[href=\"/showtime/2604530\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>22:56</span>",
+          "target": [
+            "a[href=\"/showtime/2606129\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>23:26</span>",
+          "target": [
+            "a[href=\"/showtime/2603593\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>23:56</span>",
+          "target": [
+            "a[href=\"/showtime/2605338\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.7 fra 24 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj121dee6b463941b49ac81dc2d603f07e_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>12:10</span>",
+          "target": [
+            "a[href=\"/showtime/2604487\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>14:55</span>",
+          "target": [
+            "a[href=\"/showtime/2604488\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>17:25</span>",
+          "target": [
+            "a[href=\"/showtime/2604489\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>19:55</span>",
+          "target": [
+            "a[href=\"/showtime/2604486\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>22:10</span>",
+          "target": [
+            "a[href=\"/showtime/2603595\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>22:55</span>",
+          "target": [
+            "a[href=\"/showtime/2603594\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.3 fra 12 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#objd9a1bac56f9a41cdb5c6ce1046c83d46_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>12:32</span>",
+          "target": [
+            "a[href=\"/showtime/2604509\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>15:17</span>",
+          "target": [
+            "a[href=\"/showtime/2604510\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>17:02</span>",
+          "target": [
+            "a[href=\"/showtime/2604492\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>18:02</span>",
+          "target": [
+            "a[href=\"/showtime/2604506\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>19:47</span>",
+          "target": [
+            "a[href=\"/showtime/2603600\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>19:47</span>",
+          "target": [
+            "a[href=\"/showtime/2606973\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>20:47</span>",
+          "target": [
+            "a[href=\"/showtime/2604508\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>23:32</span>",
+          "target": [
+            "a[href=\"/showtime/2604507\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t4.9 fra 32 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj8ccddc7745aa47f8a779212e7ece2c2c_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>20:30</span>",
+          "target": [
+            "a[href=\"/showtime/2604504\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>23:30</span>",
+          "target": [
+            "a[href=\"/showtime/2604505\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>23:45</span>",
+          "target": [
+            "a[href=\"/showtime/2604503\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.7 fra 27 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#objb7b536485b0e47cc9a91281424ba2e0f_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>20:50</span>",
+          "target": [
+            "a[href=\"/showtime/2604501\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>23:35</span>",
+          "target": [
+            "a[href=\"/showtime/2604502\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5 fra 1 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj1b0de97e99d140a5aa6e27a85c5dac43_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>11:56</span>",
+          "target": [
+            "a[href=\"/showtime/2604527\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>14:41</span>",
+          "target": [
+            "a[href=\"/showtime/2604921\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>19:26</span>",
+          "target": [
+            "a[href=\"/showtime/2604887\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.4 fra 5 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#objd753a8052ddc46248372c2b29c42a1bb_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>12:30</span>",
+          "target": [
+            "a[href=\"/showtime/2607810\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>17:15</span>",
+          "target": [
+            "a[href=\"/showtime/2604491\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t4.5 fra 51 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj047b27c883674e4890d1bb851c120404_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>14:25</span>",
+          "target": [
+            "a[href=\"/showtime/2604525\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>17:25</span>",
+          "target": [
+            "a[href=\"/showtime/2604524\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>20:25</span>",
+          "target": [
+            "a[href=\"/showtime/2604523\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>20:31</span>",
+          "target": [
+            "a[href=\"/showtime/2603724\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.2 fra 10 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj397e3a780254449692a372f9aee719a3_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>15:00</span>",
+          "target": [
+            "a[href=\"/showtime/2604522\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>17:30</span>",
+          "target": [
+            "a[href=\"/showtime/2604521\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>22:30</span>",
+          "target": [
+            "a[href=\"/showtime/2605306\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>23:15</span>",
+          "target": [
+            "a[href=\"/showtime/2604520\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t6 fra 4 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#objd2fdff34f3d6441c89637d9ec781f8fc_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>14:59</span>",
+          "target": [
+            "a[href=\"/showtime/2604704\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>19:29</span>",
+          "target": [
+            "a[href=\"/showtime/2604512\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t2.7 fra 3 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obja20033ce8c594588a9d853b953802e11_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>17:29</span>",
+          "target": [
+            "a[href=\"/showtime/2604494\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>19:44</span>",
+          "target": [
+            "a[href=\"/showtime/2607794\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t3.8 fra 19 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#objf395d930e5bd4626b0abb93c5d27344d_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>20:11</span>",
+          "target": [
+            "a[href=\"/showtime/2604517\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>16:51</span>",
+          "target": [
+            "a[href=\"/showtime/2604624\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5 fra 2 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj8a59cb1700f2463bbfdc9a93f39820af_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>21:59</span>",
+          "target": [
+            "a[href=\"/showtime/2604528\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t4.5 fra 20 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj46d4e16f3d7948828c124c4d2119bf28_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>22:00</span>",
+          "target": [
+            "a[href=\"/showtime/2604511\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.7 fra 3 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj3ead4f1973554f679560bcaeba4947bf_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>22:57</span>",
+          "target": [
+            "a[href=\"/showtime/2604518\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.3 fra 48 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj410b11b6b4184d3e84a3810f46ad7979_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8796a4, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"program__showtime-endtime\">-<wbr>23:50</span>",
+          "target": [
+            "a[href=\"/showtime/2604513\"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #687785, background color: #eaeaea, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"top-list_subtitle pt-0 pb-0\">Uke av <span class=\"text-capitalize\">september 24 - oktober 01</span></div>",
+          "target": [
+            ".top-list_subtitle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.23 (foreground color: #7b7b7b, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"text-capitalize\">september 24 - oktober 01</span>",
+          "target": [
+            ".text-capitalize"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.23 (foreground color: #7b7b7b, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<img src=\"https://images.filmgrail.com/KK2023_Logo_ToLinjer_hvit.svg?width=1200&amp;optimizer=image\" class=\"kinoclubb__logo\">",
+          "target": [
+            "#obj5feb55f34bbf42d0a718e3c65fac5e56_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://images.filmgrail.com/KK2023_Logo_ToLinjer_hvit.svg?width=1200&amp;optimizer=image\" class=\"kinoclubb__logo\">",
+          "target": [
+            "#obj46d4e16f3d7948828c124c4d2119bf28_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://images.filmgrail.com/KK2023_Logo_ToLinjer_hvit.svg?width=1200&amp;optimizer=image\" class=\"kinoclubb__logo\">",
+          "target": [
+            "#obj410b11b6b4184d3e84a3810f46ad7979_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"footer__download_img\" src=\"https://images.filmgrail.com/app_store.png?optimizer=image&amp;width=1200&amp;fit=max\">",
+          "target": [
+            "div:nth-child(1) > .footer__download_btn[rel=\"noopener noreferrer\"][target=\"_blank\"] > .footer__download_img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"footer__download_img\" src=\"https://images.filmgrail.com/google_play.png?optimizer=image&amp;width=1200&amp;fit=max\">",
+          "target": [
+            "div:nth-child(2) > .footer__download_btn[rel=\"noopener noreferrer\"][target=\"_blank\"] > .footer__download_img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"quick-buy-ticket-icon m-2\" id=\"#ticket_icon_id\" src=\"https://images.filmgrail.com/buttonIcon.png?optimizer=image&amp;width=1200\">",
+          "target": [
+            "#\\#ticket_icon_id"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"no\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 21,
+      "nodes": [
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/downton-abbey-ved-veis-ende/2348\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            "div[aria-label=\"1 / 19\"] > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer.position-absolute"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/dancing-queen-2-i-hollywood/2351\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            "div[aria-label=\"2 / 19\"] > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer.position-absolute"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/grevlingene/2350\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            "div[aria-label=\"3 / 19\"] > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer[href=\"/f/grevlingene/2350\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/demon-slayer-kimetsu-no-yaiba-infinity-castle/2411\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            "div[aria-label=\"4 / 19\"] > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer.position-absolute"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/the-conjuring-last-rites/2410\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            "div[aria-label=\"5 / 19\"] > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer.position-absolute"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/one-battle-after-another/2414\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            "div[aria-label=\"6 / 19\"] > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer.position-absolute"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/affeksjonsverdi/2409\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            ".swiper-slide-prev > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer[href=\"/f/affeksjonsverdi/2409\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/blucher/2242\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            ".swiper-slide-active > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer[href=\"/f/blucher/2242\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/taylor-swift-the-official-release-party-of-a-showgirl/2484\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            ".swiper-slide-next > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer.position-absolute"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/downton-abbey-ved-veis-ende/2348\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            "div[aria-label=\"10 / 19\"] > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer.position-absolute"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/dancing-queen-2-i-hollywood/2351\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            "div[aria-label=\"11 / 19\"] > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer.position-absolute"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/grevlingene/2350\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            "div[aria-label=\"12 / 19\"] > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer[href=\"/f/grevlingene/2350\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/demon-slayer-kimetsu-no-yaiba-infinity-castle/2411\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            "div[aria-label=\"13 / 19\"] > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer.position-absolute"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/the-conjuring-last-rites/2410\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            "div[aria-label=\"14 / 19\"] > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer.position-absolute"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/one-battle-after-another/2414\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            "div[aria-label=\"15 / 19\"] > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer.position-absolute"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/affeksjonsverdi/2409\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            ".swiper-slide-duplicate-prev > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer[href=\"/f/affeksjonsverdi/2409\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/blucher/2242\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            ".swiper-slide-duplicate-active > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer[href=\"/f/blucher/2242\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/taylor-swift-the-official-release-party-of-a-showgirl/2484\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            ".swiper-slide-duplicate-next > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer.position-absolute"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"head-carousel__interactive-zone position-absolute cursor-pointer\" href=\"/f/downton-abbey-ved-veis-ende/2348\" data-target-partial=\"\">\n\t\t\t\t</a>",
+          "target": [
+            "div[aria-label=\"19 / 19\"] > .head-carousel__text-wrapper.align-items-end.d-flex > .head-carousel__interactive-zone.cursor-pointer.position-absolute"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://apps.apple.com/us/app/bergen-kino/id1140482736\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"footer__download_btn \">\n\t\t\t\t\t\t<img class=\"footer__download_img\" src=\"https://images.filmgrail.com/app_store.png?optimizer=image&amp;width=1200&amp;fit=max\">\n\t\t\t\t\t\t</a>",
+          "target": [
+            "div:nth-child(1) > .footer__download_btn[rel=\"noopener noreferrer\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://play.google.com/store/apps/details?id=com.Filmgrail.android.bergen_dev&amp;hl=en\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"footer__download_btn\">",
+          "target": [
+            "div:nth-child(2) > .footer__download_btn[rel=\"noopener noreferrer\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "meta-viewport",
+      "impact": "critical",
+      "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+      "help": "Zooming and scaling must not be disabled",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=playwright",
+      "tags": [
+        "cat.sensory-and-visual-cues",
+        "wcag2aa",
+        "wcag144",
+        "EN-301-549",
+        "EN-9.1.4.4",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no\">",
+          "target": [
+            "meta[name=\"viewport\"]:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+        },
+        {
+          "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0\">",
+          "target": [
+            "meta[name=\"viewport\"]:nth-child(35)"
+          ],
+          "failureSummary": "Fix any of the following:\n  maximum-scale on <meta> tag disables zooming on mobile devices"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"no\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 173,
+      "nodes": [
+        {
+          "html": "<div class=\"header-transparent d-flex justify-content-center\">",
+          "target": [
+            ".header-transparent"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"swiper-wrapper\" id=\"swiper-wrapper-7b9107be0a23d41096\" aria-live=\"off\" style=\"transition-duration: 0ms; transform: translate3d(-9058px, 0px, 0px);\">",
+          "target": [
+            "#swiper-wrapper-7b9107be0a23d41096"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"  font-weight-semi-bold mb-4 d-flex justify-content-between align-items-center flex-row  \">",
+          "target": [
+            ".obj2a896b1874bb4770a933d4f6e882d0f3 > section > .flex-row.font-weight-semi-bold.mb-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card_item__title font-weight-bold mt-3\">Henden – rekviem for en fotograf</div>",
+          "target": [
+            "div:nth-child(1) > .card_item[onclick=\"contentSwitcherGAArticle();\"] > .card_item__link[data-target-partial=\"true\"] > .card_item__title.font-weight-bold.mt-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card_item__subtitle mt-1\">Besøk og innledning av regissør torsdag 2. oktober til seniorkino kl. 12:00 og førpremiere kl. 18:00. Sikre deg plasser nå!</div>",
+          "target": [
+            "div:nth-child(1) > .card_item[onclick=\"contentSwitcherGAArticle();\"] > .card_item__link[data-target-partial=\"true\"] > .card_item__subtitle.mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card_item__title font-weight-bold mt-3\">Utekino på Fløyen</div>",
+          "target": [
+            "a[href$=\"utekino-pa-floyen\"] > .card_item__title.font-weight-bold.mt-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card_item__subtitle mt-1\">Inviter med deg hele familien eller vennegjengen ut i frisk luft, og bli med oss på en spennende filmopplevelse på toppen av bergensfjellet i høstferien. Billetter i salg nå!</div>",
+          "target": [
+            "a[href$=\"utekino-pa-floyen\"] > .card_item__subtitle.mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card_item__title font-weight-bold mt-3\">Taylor Swift | The Official Release Party of a Showgirl</div>",
+          "target": [
+            "div:nth-child(3) > .card_item[onclick=\"contentSwitcherGAArticle();\"] > .card_item__link[data-target-partial=\"true\"] > .card_item__title.font-weight-bold.mt-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card_item__subtitle mt-1\">Bli med å feire den offisielle lanseringsfesten av A Showgirl, kun på Bergen Kino 3.–5. oktober.</div>",
+          "target": [
+            "div:nth-child(3) > .card_item[onclick=\"contentSwitcherGAArticle();\"] > .card_item__link[data-target-partial=\"true\"] > .card_item__subtitle.mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card_item__title font-weight-bold mt-3\">Harry Potter Maraton i høstferien!</div>",
+          "target": [
+            "div:nth-child(4) > .card_item[onclick=\"contentSwitcherGAArticle();\"] > .card_item__link[data-target-partial=\"true\"] > .card_item__title.font-weight-bold.mt-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card_item__subtitle mt-1\">Kjenner du en stor HP-fan? Vi viser de åtte originale HP-filmene fordelt på 2 dager i høstferien – mandag 7. oktober og tirsdag 8. oktober. </div>",
+          "target": [
+            "div:nth-child(4) > .card_item[onclick=\"contentSwitcherGAArticle();\"] > .card_item__link[data-target-partial=\"true\"] > .card_item__subtitle.mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card_item__title font-weight-bold mt-3\">Halloween på kino</div>",
+          "target": [
+            "a[href$=\"halloween-pa-kino\"] > .card_item__title.font-weight-bold.mt-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card_item__subtitle mt-1\">Fredag 31. oktober inviterer vi til en skrekkelig bra kveld på kinoen. Ta med venner eller familie på kino og se hårreisende, underholdende og koselige filmer på allehelgensdagen.</div>",
+          "target": [
+            "a[href$=\"halloween-pa-kino\"] > .card_item__subtitle.mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card_item__title font-weight-bold mt-3\">Velkommen til Bergen Kino LUX</div>",
+          "target": [
+            "div:nth-child(6) > .card_item[onclick=\"contentSwitcherGAArticle();\"] > .card_item__link[data-target-partial=\"true\"] > .card_item__title.font-weight-bold.mt-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card_item__subtitle mt-1\">Kinoopplevelsen er tatt til nye høyder, når Bergen Kino nå har åpnet et av Norges flotteste og råeste kinoanlegg i hjertet av Bergen sentrum. </div>",
+          "target": [
+            "div:nth-child(6) > .card_item[onclick=\"contentSwitcherGAArticle();\"] > .card_item__link[data-target-partial=\"true\"] > .card_item__subtitle.mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj4ef551f749f3410bb6958728b0be744d_adform\" class=\"w-100 mb-2 text-center py-3 adform \" style=\"overflow: hidden; min-height: 332px; background-color: rgb(244, 244, 244); border-radius: 8px;\"><span class=\"adform-text\">reklame</span></div>",
+          "target": [
+            "#obj4ef551f749f3410bb6958728b0be744d_adform"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"  font-weight-semi-bold mb-4 d-flex justify-content-between align-items-center flex-row  \">\n\t<div class=\"align-items-center block_title_header d-flex w-100 pb-0\">\n\t\tKinoprogram\n\t</div> \n\t\n\t\n</div>",
+          "target": [
+            ".py-4.container > section > .flex-row.font-weight-semi-bold.mb-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<select class=\"btn filter-dropdown rounded undefined\" id=\"objd2759396fd774aea9a0ddd321c81b552_dates\">",
+          "target": [
+            "#objd2759396fd774aea9a0ddd321c81b552_dates"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<select class=\"btn filter-dropdown rounded \" id=\"objd2759396fd774aea9a0ddd321c81b552_sortOptions\">",
+          "target": [
+            "#objd2759396fd774aea9a0ddd321c81b552_sortOptions"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<select class=\"btn filter-dropdown rounded \" id=\"objd2759396fd774aea9a0ddd321c81b552_screens\">",
+          "target": [
+            "#objd2759396fd774aea9a0ddd321c81b552_screens"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj3e58599d11f24c8688a55951ba36f380\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#obj3e58599d11f24c8688a55951ba36f380"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/affeksjonsverdi/2409\" data-target-partial=\"true\">Affeksjonsverdi</a>",
+          "target": [
+            ".movie-title.font-weight-semi-bold[href=\"/f/affeksjonsverdi/2409\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.4 fra 50 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj5feb55f34bbf42d0a718e3c65fac5e56_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">9 år\n\t\t\t | 2t 13m\n\t\t\t | Norge\n\t\t\t | drama</p>",
+          "target": [
+            "#obj5feb55f34bbf42d0a718e3c65fac5e56_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"kinoclub\">",
+          "target": [
+            "#obj5feb55f34bbf42d0a718e3c65fac5e56_showtimes > .my-3 > .kinoclub"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604498\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604498', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604498\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604500\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604500', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604500\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604499\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604499', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604499\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604496\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604496', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604496\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2603598\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2603598', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2603598\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2603596\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2603596', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2603596\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604495\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604495', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604495\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2603597\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2603597', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2603597\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obje99208487fda4e08b90b847c714ad9d4\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#obje99208487fda4e08b90b847c714ad9d4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/one-battle-after-another/2414\" data-target-partial=\"true\">One Battle After Another</a>",
+          "target": [
+            "#obj10587bb3cce84c96895b8941d0b9550d_showtimes > .movie-title.font-weight-semi-bold.h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.2 fra 18 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj10587bb3cce84c96895b8941d0b9550d_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">15 år\n\t\t\t | 2t 41m\n\t\t\t | USA\n\t\t\t</p>",
+          "target": [
+            "#obj10587bb3cce84c96895b8941d0b9550d_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604531\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604531', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604531\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2603592\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2603592', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2603592\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2605309\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2605309', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2605309\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604530\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604530', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604530\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2606129\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2606129', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2606129\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2603593\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2603593', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2603593\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2605338\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2605338', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2605338\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj7abf2ff0cee6457db2ce43e80bc61db5\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#obj7abf2ff0cee6457db2ce43e80bc61db5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/blucher/2242\" data-target-partial=\"true\">Blücher</a>",
+          "target": [
+            ".movie-title.font-weight-semi-bold[href=\"/f/blucher/2242\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.7 fra 24 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj121dee6b463941b49ac81dc2d603f07e_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">12 år\n\t\t\t | 1t 34m\n\t\t\t | Norge\n\t\t\t | krigsfilm, drama, action</p>",
+          "target": [
+            "#obj121dee6b463941b49ac81dc2d603f07e_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604487\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604487', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604487\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604488\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604488', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604488\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604489\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604489', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604489\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604486\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604486', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604486\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2603595\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2603595', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2603595\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2603594\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2603594', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2603594\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj4a62c7d5557e4663802c56d0392df8c0_adform\" class=\"w-100 mb-2 text-center py-3 adform mt-5 mb-4\" style=\"overflow: hidden; min-height: 332px; background-color: rgb(244, 244, 244); border-radius: 8px;\"><span class=\"adform-text\">reklame</span></div>",
+          "target": [
+            "#obj4a62c7d5557e4663802c56d0392df8c0_adform"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj5f83291b91614784858f1a545167b6c1\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#obj5f83291b91614784858f1a545167b6c1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/downton-abbey-ved-veis-ende/2348\" data-target-partial=\"true\">Downton Abbey: Ved veis ende</a>",
+          "target": [
+            "#objd9a1bac56f9a41cdb5c6ce1046c83d46_showtimes > .movie-title.font-weight-semi-bold.h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.3 fra 12 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#objd9a1bac56f9a41cdb5c6ce1046c83d46_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">Tillatt for alle\n\t\t\t | 2t 02m\n\t\t\t | USA\n\t\t\t | drama</p>",
+          "target": [
+            "#objd9a1bac56f9a41cdb5c6ce1046c83d46_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604509\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604509', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604509\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604510\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604510', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604510\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604492\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604492', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604492\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604506\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604506', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604506\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2603600\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2603600', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2603600\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2606973\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2606973', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2606973\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604508\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604508', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604508\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604507\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604507', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604507\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj94780b34a4a14374938e6a3b1cf0d0c5\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#obj94780b34a4a14374938e6a3b1cf0d0c5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/the-conjuring-last-rites/2410\" data-target-partial=\"true\">The Conjuring: Last Rites</a>",
+          "target": [
+            "#obj8ccddc7745aa47f8a779212e7ece2c2c_showtimes > .movie-title.font-weight-semi-bold.h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t4.9 fra 32 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj8ccddc7745aa47f8a779212e7ece2c2c_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">15 år\n\t\t\t | 2t 15m\n\t\t\t | USA\n\t\t\t | spenning, skrekkfilm, grøsser, drama, horror</p>",
+          "target": [
+            "#obj8ccddc7745aa47f8a779212e7ece2c2c_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604504\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604504', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604504\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604505\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604505', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604505\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604503\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604503', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604503\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj4b8e7c3819d34f35b32945dcd58032b3\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#obj4b8e7c3819d34f35b32945dcd58032b3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/demon-slayer-kimetsu-no-yaiba-infinity-castle/2411\" data-target-partial=\"true\">Demon Slayer: Kimetsu no Yaiba Infinity Castle</a>",
+          "target": [
+            "#objb7b536485b0e47cc9a91281424ba2e0f_showtimes > .movie-title.font-weight-semi-bold.h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.7 fra 27 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#objb7b536485b0e47cc9a91281424ba2e0f_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">12 år\n\t\t\t | 2t 35m\n\t\t\t | Japan\n\t\t\t | animasjon, action, anime</p>",
+          "target": [
+            "#objb7b536485b0e47cc9a91281424ba2e0f_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604501\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604501', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604501\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604502\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604502', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604502\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj8b12c17ffb654712b05f6003102c8cf8\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#obj8b12c17ffb654712b05f6003102c8cf8"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/dancing-queen-2-i-hollywood/2351\" data-target-partial=\"true\">Dancing Queen 2 i Hollywood</a>",
+          "target": [
+            "#obj1b0de97e99d140a5aa6e27a85c5dac43_showtimes > .movie-title.font-weight-semi-bold.h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5 fra 1 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj1b0de97e99d140a5aa6e27a85c5dac43_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">6 år\n\t\t\t | 1t 27m\n\t\t\t | Norge\n\t\t\t | familiefilm</p>",
+          "target": [
+            "#obj1b0de97e99d140a5aa6e27a85c5dac43_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604527\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604527', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604527\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604921\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604921', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604921\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604887\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604887', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604887\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj9556dd6693ef44bead44e52671a7802c\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#obj9556dd6693ef44bead44e52671a7802c"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/gabbys-dukkehus-filmen/2352\" data-target-partial=\"true\">Gabbys dukkehus: Filmen</a>",
+          "target": [
+            "a[href=\"/f/gabbys-dukkehus-filmen/2352\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.4 fra 5 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#objd753a8052ddc46248372c2b29c42a1bb_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">Tillatt for alle\n\t\t\t | 1t 30m\n\t\t\t | USA\n\t\t\t | barnefilm</p>",
+          "target": [
+            "#objd753a8052ddc46248372c2b29c42a1bb_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2607810\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2607810', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2607810\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604491\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604491', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604491\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj09311d46d432411cbc43338d14d6d43e\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#obj09311d46d432411cbc43338d14d6d43e"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/jurassic-world-rebirth/2334\" data-target-partial=\"true\">Jurassic World: Rebirth</a>",
+          "target": [
+            "a[href=\"/f/jurassic-world-rebirth/2334\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t4.5 fra 51 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj047b27c883674e4890d1bb851c120404_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">12 år\n\t\t\t | 2t 13m\n\t\t\t | USA\n\t\t\t | eventyr, action</p>",
+          "target": [
+            "#obj047b27c883674e4890d1bb851c120404_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604525\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604525', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604525\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604524\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604524', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604524\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604523\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604523', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604523\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj0ac1aacae8a142d79a75959b461eddc6\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#obj0ac1aacae8a142d79a75959b461eddc6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/avatar-the-way-of-water-relansering-2025/2442\" data-target-partial=\"true\">Avatar: The Way of Water (Relansering 2025)</a>",
+          "target": [
+            "#obj3743c3daa4014e36935d169e67fa28d9_showtimes > .movie-title.font-weight-semi-bold.h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">12 år\n\t\t\t | 3t 16m\n\t\t\t | USA\n\t\t\t</p>",
+          "target": [
+            "#obj3743c3daa4014e36935d169e67fa28d9_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2603724\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2603724', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2603724\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj1fafea280e67404bab22dc755571896e\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#obj1fafea280e67404bab22dc755571896e"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/the-roses/2437\" data-target-partial=\"true\">The Roses</a>",
+          "target": [
+            "a[href=\"/f/the-roses/2437\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.2 fra 10 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj397e3a780254449692a372f9aee719a3_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">9 år\n\t\t\t | 1t 45m\n\t\t\t | USA\n\t\t\t | komedie, drama</p>",
+          "target": [
+            "#obj397e3a780254449692a372f9aee719a3_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604522\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604522', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604522\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604521\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604521', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604521\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2605306\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2605306', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2605306\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604520\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604520', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604520\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"objfca846e66e5546ca8d0e34f9e76bda19\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#objfca846e66e5546ca8d0e34f9e76bda19"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/barske-boller-2/2339\" data-target-partial=\"true\">Barske bøller 2</a>",
+          "target": [
+            "a[href=\"/f/barske-boller-2/2339\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t6 fra 4 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#objd2fdff34f3d6441c89637d9ec781f8fc_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">6 år\n\t\t\t | 1t 44m\n\t\t\t | USA\n\t\t\t | familiefilm, animasjon</p>",
+          "target": [
+            "#objd2fdff34f3d6441c89637d9ec781f8fc_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604704\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604704', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604704\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604512\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604512', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604512\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj142ab08a56ad44929d500f842afe1195\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#obj142ab08a56ad44929d500f842afe1195"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/grevlingene/2350\" data-target-partial=\"true\">Grevlingene</a>",
+          "target": [
+            ".movie-title.font-weight-semi-bold[href=\"/f/grevlingene/2350\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t2.7 fra 3 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obja20033ce8c594588a9d853b953802e11_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">6 år\n\t\t\t | 1t 44m\n\t\t\t | Norge\n\t\t\t | komedie, familiefilm, eventyr</p>",
+          "target": [
+            "#obja20033ce8c594588a9d853b953802e11_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604494\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604494', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604494\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2607794\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2607794', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2607794\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"objad0058d3d9604624aae1fcb060dd176e\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#objad0058d3d9604624aae1fcb060dd176e"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/materialists/2395\" data-target-partial=\"true\">Materialists</a>",
+          "target": [
+            "a[href=\"/f/materialists/2395\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t3.8 fra 19 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#objf395d930e5bd4626b0abb93c5d27344d_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">9 år\n\t\t\t | 1t 56m\n\t\t\t | USA\n\t\t\t</p>",
+          "target": [
+            "#objf395d930e5bd4626b0abb93c5d27344d_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604517\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604517', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604517\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj8c9334a43b1141a7991249c10dfa444a\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#obj8c9334a43b1141a7991249c10dfa444a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/super-alvene/2483\" data-target-partial=\"true\">Super Alvene</a>",
+          "target": [
+            "a[href=\"/f/super-alvene/2483\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">Tillatt for alle\n\t\t\t | 1t 16m\n\t\t\t | Tyskland\n\t\t\t | komedie, familiefilm, animasjon</p>",
+          "target": [
+            "#obj791b0ce66be445e6b9a9fa086f9df1a9_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604624\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604624', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604624\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"objc9c49fe243d248bc980192c169b87e15\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#objc9c49fe243d248bc980192c169b87e15"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/odd-fish/2413\" data-target-partial=\"true\">Odd Fish</a>",
+          "target": [
+            "a[href=\"/f/odd-fish/2413\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5 fra 2 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj8a59cb1700f2463bbfdc9a93f39820af_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">6 år\n\t\t\t | 1t 44m\n\t\t\t | Island\n\t\t\t | komedie, drama</p>",
+          "target": [
+            "#obj8a59cb1700f2463bbfdc9a93f39820af_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604528\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604528', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604528\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj60bd0a266f8946948892f86cb1e30145\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#obj60bd0a266f8946948892f86cb1e30145"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/ingen-kommentar/2264\" data-target-partial=\"true\">Ingen kommentar</a>",
+          "target": [
+            "a[href=\"/f/ingen-kommentar/2264\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t4.5 fra 20 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj46d4e16f3d7948828c124c4d2119bf28_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">9 år\n\t\t\t | 1t 29m\n\t\t\t | Norge\n\t\t\t | komedie</p>",
+          "target": [
+            "#obj46d4e16f3d7948828c124c4d2119bf28_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"kinoclub\">",
+          "target": [
+            "#obj46d4e16f3d7948828c124c4d2119bf28_showtimes > .my-3 > .kinoclub"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604511\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604511', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604511\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"objf8db8b0d9bb4458e887216e8ab3e182f\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#objf8db8b0d9bb4458e887216e8ab3e182f"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/caught-stealing/2405\" data-target-partial=\"true\">Caught Stealing</a>",
+          "target": [
+            "a[href=\"/f/caught-stealing/2405\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.7 fra 3 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj3ead4f1973554f679560bcaeba4947bf_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">15 år\n\t\t\t | 1t 42m\n\t\t\t | USA\n\t\t\t | thriller</p>",
+          "target": [
+            "#obj3ead4f1973554f679560bcaeba4947bf_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604518\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604518', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604518\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"obj6bc007f868f84649b4750f55c0e75e00\" class=\"card2_item  d-flex align-items-start flex-column align-content-between flex-wrap \">",
+          "target": [
+            "#obj6bc007f868f84649b4750f55c0e75e00"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"movie-title h5 font-weight-semi-bold\" href=\"/f/f1-the-movie/1967\" data-target-partial=\"true\">F1 ® The Movie</a>",
+          "target": [
+            "a[href=\"/f/f1-the-movie/1967\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text ml-2 text-muted d-flex align-items-center\">\n\t\t\t\t\t5.3 fra 48 brukere\n\t\t\t\t</div>",
+          "target": [
+            "#obj410b11b6b4184d3e84a3810f46ad7979_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mt-3\" style=\"font-size: 14px;line-height: 1.42!important;\">9 år\n\t\t\t | 2t 35m\n\t\t\t | USA\n\t\t\t | thriller, drama, action</p>",
+          "target": [
+            "#obj410b11b6b4184d3e84a3810f46ad7979_showtimes > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"kinoclub\">",
+          "target": [
+            "#obj410b11b6b4184d3e84a3810f46ad7979_showtimes > .my-3 > .kinoclub"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/showtime/2604513\" class=\"showtime-wrap\" style=\"background-color: undefined\" onclick=\"showtimeClick(event, '2604513', 'program','checkoutModal')\">",
+          "target": [
+            "a[href=\"/showtime/2604513\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"  font-weight-semi-bold mb-4 d-flex justify-content-between align-items-center flex-row  \">\n\t<div class=\"align-items-center block_title_header d-flex w-100 pb-0\">\n\t\tUkentlig toppfilmliste\n\t</div> \n\t\n\t\n</div>",
+          "target": [
+            ".objaa6e645537524aa1b5e69554d069e931 > section > .flex-row.font-weight-semi-bold.mb-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"top-list_subtitle pt-0 pb-0\">Uke av <span class=\"text-capitalize\">september 24 - oktober 01</span></div>",
+          "target": [
+            ".top-list_subtitle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"top-card_wrapper d-flex\" style=\"\">",
+          "target": [
+            "#obj2656a91cbd834081918b0d0785af340f > .top-card_wrapper.d-flex"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"top-card_wrapper d-flex\" style=\"\">",
+          "target": [
+            "#obj61d25827480a455db6dc59f8a6a4a9af > .top-card_wrapper.d-flex"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"top-card_wrapper d-flex\" style=\"min-height:initial;\">",
+          "target": [
+            "#obje4730cccbf8a45fab4ba77003da9969d > .top-card_wrapper.d-flex"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"top-card_wrapper d-flex\" style=\"\">",
+          "target": [
+            "#obj7e7dd45f47774506825f5c2c7cc460c4 > .top-card_wrapper.d-flex"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"top-card_wrapper d-flex\" style=\"\">",
+          "target": [
+            "#objd7235e6277294bf1a35b384cc1ebb33e > .top-card_wrapper.d-flex"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"top-card_wrapper d-flex\" style=\"min-height:initial;\">",
+          "target": [
+            "#obj0ace7f7bf2684066a5710f7235ec75ac > .top-card_wrapper.d-flex"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-sm-12 col-md-3\">",
+          "target": [
+            ".col-sm-12.col-md-3:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-sm-12 col-md-3\">",
+          "target": [
+            ".col-sm-12.col-md-3:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"h5 pt-2 mb-2 text-uppercase footer__subtitle\">\n\t\t\t\tFølg oss\n\t\t\t</p>",
+          "target": [
+            ".footer__subtitle.pt-2.mb-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".col-sm-12.col-md-3:nth-child(3) > div:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-sm-12 col-md-3\">",
+          "target": [
+            ".col-sm-12.col-md-3:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"footer__coopyrights container pt-4 footer-item text-right\">\n\t<span>Utviklet med<span class=\"ml-1\"> <i class=\"fas fa-heart\" aria-hidden=\"true\"> </i> </span>av</span>\n\t<a href=\"https://www.filmgrail.com\" class=\"text-primary400\" target=\"_blank\" rel=\"noopener\">Filmgrail! </a>\n</div>",
+          "target": [
+            ".footer__coopyrights"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"fg-widget-button btn btn-primary d-flex flex-column justify-content-center align-items-center p-2\" id=\"widget_button_id\">",
+          "target": [
+            "#widget_button_id"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"quick-buy-widget__film-filter-dropdown\">",
+          "target": [
+            ".quick-buy-widget__film-filter-dropdown"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"quick-buy-widget__date\"><div class=\"quick-buy-widget__loading\"><select id=\"date_picker\" disabled=\"disabled\" class=\"date-filter-dropdown filter-dropdown filter-dropdown-quick-buy-widget btn rounded bg-primary font-weight-bold\"><option value=\"\">velg dato</option> </select></div></div>",
+          "target": [
+            ".quick-buy-widget__date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"quick-buy-widget__showtime\">",
+          "target": [
+            ".quick-buy-widget__showtime"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "select-name",
+      "impact": "critical",
+      "description": "Ensure select element has an accessible name",
+      "help": "Select element must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/select-name?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<select class=\"btn filter-dropdown rounded undefined\" id=\"objd2759396fd774aea9a0ddd321c81b552_dates\">",
+          "target": [
+            "#objd2759396fd774aea9a0ddd321c81b552_dates"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<select class=\"btn filter-dropdown rounded \" id=\"objd2759396fd774aea9a0ddd321c81b552_sortOptions\">",
+          "target": [
+            "#objd2759396fd774aea9a0ddd321c81b552_sortOptions"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<select class=\"btn filter-dropdown rounded \" id=\"objd2759396fd774aea9a0ddd321c81b552_screens\">",
+          "target": [
+            "#objd2759396fd774aea9a0ddd321c81b552_screens"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<select class=\"movie-filter-dropdown ml-1 filter-dropdown filter-dropdown-quick-buy-widget btn rounded \">",
+          "target": [
+            ".movie-filter-dropdown"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<select id=\"date_picker\" disabled=\"disabled\" class=\"date-filter-dropdown filter-dropdown filter-dropdown-quick-buy-widget btn rounded bg-primary font-weight-bold\"><option value=\"\">velg dato</option> </select>",
+          "target": [
+            "#date_picker"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<select id=\"showtime_dropdown\" disabled=\"disabled\" class=\"showtime-filter-dropdown filter-dropdown filter-dropdown-quick-buy-widget btn rounded bg-primary font-weight-bold\"><option value=\"\">velg visning</option> </select>",
+          "target": [
+            "#showtime_dropdown"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "project": "Widerøe AS",
+  "timestamp": "2025-09-27T00:39:16.165Z",
+  "url": "https://www.wideroe.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "meta-viewport",
+      "impact": "critical",
+      "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+      "help": "Zooming and scaling must not be disabled",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=playwright",
+      "tags": [
+        "cat.sensory-and-visual-cues",
+        "wcag2aa",
+        "wcag144",
+        "EN-301-549",
+        "EN-9.1.4.4",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">",
+          "target": [
+            "meta[name=\"viewport\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    }
+  ]
+}

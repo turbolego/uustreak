@@ -1,0 +1,155 @@
+{
+  "project": "Capgemini Norge",
+  "timestamp": "2025-09-28T01:05:46.434Z",
+  "url": "https://www.capgemini.com/no-no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"titlewithLink\" data-maxlength=\"144\">",
+          "target": [
+            ".col-lg-8.box-inner.col-md-12 > .titlewithLink[data-maxlength=\"144\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<img loading=\"lazy\" src=\"https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/fl/flags-global-purple.svg\" alt=\"Global | EN\">",
+          "target": [
+            "#menu-location-menu-1-large > .lang-title:nth-child(1) > .sub-menu > .active > a[href$=\"capgemini.com/\"] > span > img[alt=\"Global | EN\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img loading=\"lazy\" src=\"https://www.capgemini.com/no-no/wp-content/uploads/sites/23/2022/11/Linkedin.png?w=48&amp;h=48&amp;crop=1\" class=\"social-icon-footer\" alt=\"LinkedIn\">",
+          "target": [
+            "img[alt=\"LinkedIn\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img loading=\"lazy\" src=\"https://www.capgemini.com/no-no/wp-content/uploads/sites/23/2022/11/Instagram.png?w=48&amp;h=48&amp;crop=1\" class=\"social-icon-footer\" alt=\"Instagram\">",
+          "target": [
+            "img[alt=\"Instagram\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img loading=\"lazy\" src=\"https://www.capgemini.com/no-no/wp-content/uploads/sites/23/2022/11/Facebook.png?w=48&amp;h=48&amp;crop=1\" class=\"social-icon-footer\" alt=\"facebook icon\">",
+          "target": [
+            "img[alt=\"facebook icon\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img loading=\"lazy\" src=\"https://www.capgemini.com/no-no/wp-content/uploads/sites/23/2022/11/YouTube.png?w=48&amp;h=48&amp;crop=1\" class=\"social-icon-footer\" alt=\"Youtube\">",
+          "target": [
+            "img[alt=\"Youtube\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.capgemini.com/no-no/insights/research-library/keys-to-intelligent-industry/\">Keys to </a>",
+          "target": [
+            ".titlewithLink[data-maxlength=\"144\"] > a:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.05:1 with the surrounding text. (Minimum contrast is 3:1, link text: #000000, surrounding text: #15011d)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"truste-consent-text\" class=\"truste-messageColumn\">",
+          "target": [
+            "#truste-consent-text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "scrollable-region-focusable",
+      "impact": "serious",
+      "description": "Ensure elements that have scrollable content are accessible by keyboard",
+      "help": "Scrollable region must have keyboard access",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/scrollable-region-focusable?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag211",
+        "wcag213",
+        "TTv5",
+        "TT4.a",
+        "EN-301-549",
+        "EN-9.2.1.1",
+        "EN-9.2.1.3"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"lang-list\">",
+          "target": [
+            ".header_lang_menu > .header-lang-inner > .lang-list"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+        }
+      ]
+    }
+  ]
+}

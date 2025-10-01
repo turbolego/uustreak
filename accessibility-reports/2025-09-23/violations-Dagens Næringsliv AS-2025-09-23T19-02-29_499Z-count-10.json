@@ -1,0 +1,1370 @@
+{
+  "project": "Dagens Næringsliv AS",
+  "timestamp": "2025-09-23T19:02:29.500Z",
+  "url": "https://www.dn.no/",
+  "total_violations": 10,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button class=\"dn-button button-burger\" data-v-af75971e=\"\"><!----><!--[--><span></span><span></span><span></span><!--]--><!----></button>",
+          "target": [
+            ".dn-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 45,
+      "nodes": [
+        {
+          "html": "<span data-v-86b57d8d=\"\" class=\"item-difference item-percentage investor-bar__item-difference-increased\">0,88% </span>",
+          "target": [
+            ".item-increased.item[data-v-86b57d8d=\"\"]:nth-child(1) > .item-difference-holder-increased.item-difference-holder[data-v-86b57d8d=\"\"] > .investor-bar__item-difference-increased.item-difference.item-percentage"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.01 (foreground color: #ffffff, background color: #2a8e76, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span data-v-86b57d8d=\"\" class=\"item-difference item-percentage investor-bar__item-difference-increased\">1,91% </span>",
+          "target": [
+            ".item-increased.item[data-v-86b57d8d=\"\"]:nth-child(2) > .item-difference-holder-increased.item-difference-holder[data-v-86b57d8d=\"\"] > .investor-bar__item-difference-increased.item-difference.item-percentage"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.01 (foreground color: #ffffff, background color: #2a8e76, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span data-v-86b57d8d=\"\" class=\"item-difference item-percentage investor-bar__item-difference-increased\">0,08% </span>",
+          "target": [
+            ".item-increased.item[data-v-86b57d8d=\"\"]:nth-child(4) > .item-difference-holder-increased.item-difference-holder[data-v-86b57d8d=\"\"] > .investor-bar__item-difference-increased.item-difference.item-percentage"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.01 (foreground color: #ffffff, background color: #2a8e76, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span data-v-86b57d8d=\"\" class=\"item-difference item-percentage investor-bar__item-difference-increased\">0,11% </span>",
+          "target": [
+            ".item-increased.item[data-v-86b57d8d=\"\"]:nth-child(5) > .item-difference-holder-increased.item-difference-holder[data-v-86b57d8d=\"\"] > .investor-bar__item-difference-increased.item-difference.item-percentage"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.01 (foreground color: #ffffff, background color: #2a8e76, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>politikk</span>",
+          "target": [
+            ".dn-image-left > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>makroøkonomi</span>",
+          "target": [
+            "a[data-id=\"2-1-1875766\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>politikk</span>",
+          "target": [
+            "a[data-id=\"6-1-9jwRrbTD\"] > article > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>industri</span>",
+          "target": [
+            "a[data-id=\"2-1-1875068\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>børs</span>",
+          "target": [
+            "a[data-id=\"2-1-1875360\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>finans</span>",
+          "target": [
+            "a[data-id=\"2-1-1875504\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Video</span>",
+          "target": [
+            "a[data-id=\"6-1-YVbnkTYe\"] > article > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>energi</span>",
+          "target": [
+            "a[data-id=\"2-1-1874476\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>olje</span>",
+          "target": [
+            "a[data-id=\"2-1-1875368\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>finans</span>",
+          "target": [
+            "a[data-id=\"2-1-1853480\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Helg</span>",
+          "target": [
+            "a[data-id=\"2-1-1868893\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>reportasje</span>",
+          "target": [
+            "a[data-id=\"2-1-1868893\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>finans</span>",
+          "target": [
+            "a[data-id=\"2-1-1874600\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>arbeidsliv</span>",
+          "target": [
+            "a[data-id=\"2-1-1220887\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>aktiv</span>",
+          "target": [
+            "a[data-id=\"6-1-7Eckz34Q\"] > article > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>utenriks</span>",
+          "target": [
+            "a[data-id=\"6-1-IcomGjH5\"] > article > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Helg</span>",
+          "target": [
+            "a[data-id=\"2-1-1867309\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>dokumentar</span>",
+          "target": [
+            "a[data-id=\"2-1-1867309\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>reiseliv</span>",
+          "target": [
+            "a[data-id=\"2-1-1865717\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>D2</span>",
+          "target": [
+            ".dn-image-format-1x1 > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>friluftsliv</span>",
+          "target": [
+            ".dn-image-format-1x1 > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>industri</span>",
+          "target": [
+            "a[data-id=\"2-1-1871891\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Helg</span>",
+          "target": [
+            "a[data-id=\"2-1-1871454\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Bøker</span>",
+          "target": [
+            "a[data-id=\"2-1-1871454\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.28 (foreground color: #5b729b, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Orkla Snacks Norge AS</span>",
+          "target": [
+            ".dn-job-item.dn-teaser-card[target=\"_blank\"]:nth-child(4) > article > .kicker > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.45 (foreground color: #879cc1, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>The North Alliance Norge AS</span>",
+          "target": [
+            ".dn-job-item.dn-teaser-card[target=\"_blank\"]:nth-child(5) > article > .kicker > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.45 (foreground color: #879cc1, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Ferd AS</span>",
+          "target": [
+            ".dn-job-item.dn-teaser-card[target=\"_blank\"]:nth-child(6) > article > .kicker > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.45 (foreground color: #879cc1, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Nærings- og fiskeridepartementet</span>",
+          "target": [
+            ".dn-job-item.dn-teaser-card[target=\"_blank\"]:nth-child(7) > article > .kicker > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.45 (foreground color: #879cc1, background color: #edf1f8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>finans</span>",
+          "target": [
+            "a[data-id=\"2-1-1875363\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Makroøkonomi</span>",
+          "target": [
+            "a[data-id=\"2-1-1875402\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>utenriks</span>",
+          "target": [
+            "a[data-id=\"2-1-1875321\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Helg</span>",
+          "target": [
+            "a[data-id=\"2-1-1861389\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>biltest</span>",
+          "target": [
+            "a[data-id=\"2-1-1861389\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>eiendom</span>",
+          "target": [
+            "a[data-id=\"2-1-1869548\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>reiseliv</span>",
+          "target": [
+            "a[data-id=\"6-1-g0zjDIBR\"] > article > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>finans</span>",
+          "target": [
+            "a[data-id=\"2-1-1875329\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>finans</span>",
+          "target": [
+            "a[data-id=\"2-1-1875095\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>politikk</span>",
+          "target": [
+            "a[data-id=\"2-1-1874859\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>dn ekspress</span>",
+          "target": [
+            "a[data-id=\"2-1-1875331\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Politikk</span>",
+          "target": [
+            "a[data-id=\"6-1-rB5N9DWM\"] > article > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>finans</span>",
+          "target": [
+            "a[data-id=\"6-1-CxytLqVK\"] > article > .meta > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #858b94, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe src=\"https://www.dn.no/prosjekter/2024/12/video-front/?playlist=aJVoF73L\" seamless=\"\" style=\"width:100%;height:480px;margin:0;padding:0;border:none\"></iframe>",
+          "target": [
+            "iframe[seamless=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<img data-v-a7b60448=\"\" src=\"https://dntv.dn.no/v2/media/PNwrXbbK/poster.jpg?width=720\">",
+          "target": [
+            "iframe[seamless=\"\"]",
+            "a[data-id=\"PNwrXbbK\"] > figure > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-v-a7b60448=\"\" src=\"https://dntv.dn.no/v2/media/7HAHUZRc/poster.jpg?width=720\">",
+          "target": [
+            "iframe[seamless=\"\"]",
+            "a[data-id=\"7HAHUZRc\"] > figure > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-v-a7b60448=\"\" src=\"https://dntv.dn.no/v2/media/EjBGdQBn/poster.jpg?width=720\">",
+          "target": [
+            "iframe[seamless=\"\"]",
+            "a[data-id=\"EjBGdQBn\"] > figure > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-v-a7b60448=\"\" src=\"https://dntv.dn.no/v2/media/c6MbAdSU/poster.jpg?width=720\">",
+          "target": [
+            "iframe[seamless=\"\"]",
+            "a[data-id=\"c6MbAdSU\"] > figure > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img alt=\"– Det hittil mest alvorlige anslag mot dansk kritisk infrastruktur\" loading=\"lazy\" src=\"https://media.dngroup.com/image/eyJ3Ijo0MDAsImYiOiJ3ZWJwIiwiayI6ImQ4ODhhYWQ4NTYyMDgxZjU5ZWI3ZGQxZGYxNjczMDg3IiwiY3JvcCI6WzAsMCw5MDY5LDYwNDZdLCJyIjoxLjUsIm8iOiJkbiJ9\" fetchpriority=\"low\" decoding=\"async\">",
+          "target": [
+            "article[data-teaser_type=\"cpp-article-custom\"] > .dn-card_assets > .default[type=\"picture\"][data-load=\"lazy\"] > .ratio-3x2 > img[loading=\"lazy\"][fetchpriority=\"low\"][decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "landmark-contentinfo-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the contentinfo landmark is at top level",
+      "help": "Contentinfo landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-contentinfo-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<footer class=\"dn-footer-copyright\" data-zone=\"footer\">",
+          "target": [
+            ".dn-footer-copyright"
+          ],
+          "failureSummary": "Fix any of the following:\n  The contentinfo landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-contentinfo",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one contentinfo landmark",
+      "help": "Document should not have more than one contentinfo landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-contentinfo?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<footer class=\"dn-footer\" data-zone=\"footer\">",
+          "target": [
+            ".dn-footer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one contentinfo landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<footer class=\"dn-footer\" data-zone=\"footer\">",
+          "target": [
+            ".dn-footer"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a aria-current=\"page\" href=\"/\" class=\"router-link-active router-link-exact-active dn-link dn-link-logo\" data-v-6cee257d=\"\">",
+          "target": [
+            ".router-link-active"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dn.no/investor\" data-v-86b57d8d=\"\"></a>",
+          "target": [
+            ".button[data-v-86b57d8d=\"\"]:nth-child(3) > a[href$=\"investor\"][data-v-86b57d8d=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dngroup.com/\" rel=\"noopener\" class=\"dn-link\" data-v-6cee257d=\"\">",
+          "target": [
+            ".dn-link[href$=\"dngroup.com/\"][rel=\"noopener\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 110,
+      "nodes": [
+        {
+          "html": "<span data-v-86b57d8d=\"\">Investor</span>",
+          "target": [
+            "a[href$=\"investor\"][data-v-86b57d8d=\"\"] > span[data-v-86b57d8d=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-v-86b57d8d=\"\" class=\"item-holder\"><span data-v-86b57d8d=\"\" class=\"item-name\">Oslo Børs</span><span data-v-86b57d8d=\"\" class=\"item-value\">1&nbsp;655,91</span></div>",
+          "target": [
+            ".item-increased.item[data-v-86b57d8d=\"\"]:nth-child(1) > .item-holder[data-v-86b57d8d=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span data-v-86b57d8d=\"\" class=\"item-difference item-percentage investor-bar__item-difference-increased\">0,88% </span>",
+          "target": [
+            ".item-increased.item[data-v-86b57d8d=\"\"]:nth-child(1) > .item-difference-holder-increased.item-difference-holder[data-v-86b57d8d=\"\"] > .investor-bar__item-difference-increased.item-difference.item-percentage"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-v-86b57d8d=\"\" class=\"item-holder\"><span data-v-86b57d8d=\"\" class=\"item-name\">Oljepris</span><span data-v-86b57d8d=\"\" class=\"item-value\">67,79</span></div>",
+          "target": [
+            ".item-increased.item[data-v-86b57d8d=\"\"]:nth-child(2) > .item-holder[data-v-86b57d8d=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span data-v-86b57d8d=\"\" class=\"item-difference item-percentage investor-bar__item-difference-increased\">1,91% </span>",
+          "target": [
+            ".item-increased.item[data-v-86b57d8d=\"\"]:nth-child(2) > .item-difference-holder-increased.item-difference-holder[data-v-86b57d8d=\"\"] > .investor-bar__item-difference-increased.item-difference.item-percentage"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-v-86b57d8d=\"\" class=\"item-holder\"><span data-v-86b57d8d=\"\" class=\"item-name\">USD</span><span data-v-86b57d8d=\"\" class=\"item-value\">9,89</span></div>",
+          "target": [
+            ".item-decreased > .item-holder[data-v-86b57d8d=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span data-v-86b57d8d=\"\" class=\"item-difference item-percentage item-difference-decreased\">−0,21% </span>",
+          "target": [
+            ".item-difference-decreased"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-v-86b57d8d=\"\" class=\"item-holder\"><span data-v-86b57d8d=\"\" class=\"item-name\">SEK</span><span data-v-86b57d8d=\"\" class=\"item-value\">106,00</span></div>",
+          "target": [
+            ".item-increased.item[data-v-86b57d8d=\"\"]:nth-child(4) > .item-holder[data-v-86b57d8d=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span data-v-86b57d8d=\"\" class=\"item-difference item-percentage investor-bar__item-difference-increased\">0,08% </span>",
+          "target": [
+            ".item-increased.item[data-v-86b57d8d=\"\"]:nth-child(4) > .item-difference-holder-increased.item-difference-holder[data-v-86b57d8d=\"\"] > .investor-bar__item-difference-increased.item-difference.item-percentage"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-v-86b57d8d=\"\" class=\"item-holder\"><span data-v-86b57d8d=\"\" class=\"item-name\">EUR</span><span data-v-86b57d8d=\"\" class=\"item-value\">11,68</span></div>",
+          "target": [
+            ".item-increased.item[data-v-86b57d8d=\"\"]:nth-child(5) > .item-holder[data-v-86b57d8d=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span data-v-86b57d8d=\"\" class=\"item-difference item-percentage investor-bar__item-difference-increased\">0,11% </span>",
+          "target": [
+            ".item-increased.item[data-v-86b57d8d=\"\"]:nth-child(5) > .item-difference-holder-increased.item-difference-holder[data-v-86b57d8d=\"\"] > .investor-bar__item-difference-increased.item-difference.item-percentage"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"dn-grid dn-grid-layout layout-a\" data-list=\"\">",
+          "target": [
+            ".dn-edition-collection-top > .layout-a.dn-grid.dn-grid-layout"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/makrookonomi/usa/jerome-powell/donald-trump/jerome-powell-flere-rentekutt-i-usa-er-ikke-garantert/2-1-1875766\" class=\"dn-link dn-teaser-card dn-teaser-card-a standard dn-image-auto dn-image-format-auto dn-image-mobile-auto\" data-id=\"2-1-1875766\" data_layout=\"\" state=\"published\" body_length=\"0\" access_level=\"open\" style=\"\" data-v-6cee257d=\"\">",
+          "target": [
+            "a[data-id=\"2-1-1875766\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dn-card_assets\">",
+          "target": [
+            "a[data-id=\"2-1-1875594\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-card_assets"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>DN mener:</span>",
+          "target": [
+            "a[data-id=\"2-1-1875594\"] > article[data-teaser_type=\"cpp-article-dn\"] > .kicker > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\"><!--[-->SVs ultimatum er et slag i luften<!--]--></h3>",
+          "target": [
+            "a[data-id=\"2-1-1875594\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><!----><span>leder</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"2-1-1875594\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<figure class=\"dn-image default\" data-load=\"eager\" type=\"picture\">",
+          "target": [
+            "a[data-id=\"6-1-9jwRrbTD\"] > article > .dn-card_assets > .default[data-load=\"eager\"][type=\"picture\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"kicker\"><!--[--><!----><span>Støre om Trumps tale:</span><!--]--></div>",
+          "target": [
+            "a[data-id=\"6-1-9jwRrbTD\"] > article > .kicker"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\"><!--[-->– Jeg bestemte meg for ikke å bruke adjektiver om dette<!--]--></h3>",
+          "target": [
+            "a[data-id=\"6-1-9jwRrbTD\"] > article > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><span>politikk</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"6-1-9jwRrbTD\"] > article > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>02:27</span>",
+          "target": [
+            "a[data-id=\"6-1-9jwRrbTD\"] > article > .badge > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/industri/moelven/byggebransjen/permitteringer/moelven-sjefen-om-krisen-et-utrolig-vanskelig-ar/2-1-1875068\" class=\"dn-link dn-teaser-card dn-teaser-card-a standard dn-image-auto dn-image-format-auto dn-image-mobile-auto\" data-id=\"2-1-1875068\" data_layout=\"\" state=\"published\" body_length=\"0\" access_level=\"open\" style=\"\" data-v-6cee257d=\"\">",
+          "target": [
+            "a[data-id=\"2-1-1875068\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/bors/oslo-bors/etterlengtet-oppgang-pa-oslo-bors-oljekjempene-steg-hand-i-hand-med-oljeprisen/2-1-1875360\" class=\"dn-link dn-teaser-card dn-teaser-card-b standard dn-image-auto dn-image-format-auto dn-image-mobile-auto\" data-id=\"2-1-1875360\" data_layout=\"\" state=\"published\" body_length=\"0\" access_level=\"open\" style=\"\" data-v-6cee257d=\"\">",
+          "target": [
+            "a[data-id=\"2-1-1875360\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dn-card_assets\">",
+          "target": [
+            "a[data-id=\"2-1-1875290\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-card_assets"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Simen Ekern</span>",
+          "target": [
+            "a[data-id=\"2-1-1875290\"] > article[data-teaser_type=\"cpp-article-dn\"] > .kicker > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\"><!--[-->Italias statsminister vil heller snakke om småkaker enn om Gaza <!--]--></h3>",
+          "target": [
+            "a[data-id=\"2-1-1875290\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><!----><span>kommentar</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"2-1-1875290\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"dn-grid dn-grid-layout layout-b\" data-list=\"\">",
+          "target": [
+            ".dn-group:nth-child(3) > .layout-b.dn-grid.dn-grid-layout"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/marked/hexagon-composites/bors/john-arne-breivik/lakselusgrunder-har-gatt-pa-smell-i-hexagon-composites/2-1-1875504\" class=\"dn-link dn-teaser-card dn-teaser-card-a standard dn-image-auto dn-image-format-3x2 dn-image-mobile-auto\" data-id=\"2-1-1875504\" data_layout=\"\" state=\"published\" body_length=\"0\" access_level=\"open\" style=\"\" data-v-6cee257d=\"\">",
+          "target": [
+            "a[data-id=\"2-1-1875504\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<figure class=\"dn-image default\" data-load=\"eager\" type=\"picture\">",
+          "target": [
+            "a[data-id=\"6-1-YVbnkTYe\"] > article > .dn-card_assets > .default[data-load=\"eager\"][type=\"picture\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\"><!--[-->Tiktok-detaljene USA og Kina må lande før fristen<!--]--></h3>",
+          "target": [
+            "a[data-id=\"6-1-YVbnkTYe\"] > article > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><span>Video</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"6-1-YVbnkTYe\"] > article > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>01:27</span>",
+          "target": [
+            "a[data-id=\"6-1-YVbnkTYe\"] > article > .badge > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dn-card_assets\">",
+          "target": [
+            "a[data-id=\"2-1-1875578\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-card_assets"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Anders Løland</span>",
+          "target": [
+            "a[data-id=\"2-1-1875578\"] > article[data-teaser_type=\"cpp-article-dn\"] > .kicker > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\"><!--[-->Kan vi få et finansielt KI-krakk?<!--]--></h3>",
+          "target": [
+            "a[data-id=\"2-1-1875578\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><!----><span>innlegg</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"2-1-1875578\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dn-card_assets\">",
+          "target": [
+            "a[data-id=\"2-1-1875518\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-card_assets"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Tarjei Leer-Salvesen</span>",
+          "target": [
+            "a[data-id=\"2-1-1875518\"] > article[data-teaser_type=\"cpp-article-dn\"] > .kicker > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\"><!--[-->Mer hemmelighold i Oljefondet er ingen løsning<!--]--></h3>",
+          "target": [
+            "a[data-id=\"2-1-1875518\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><!----><span>innlegg</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"2-1-1875518\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/energi/havvind/jera-nex-bp/ventyr/alt-sa-morkt-ut-for-norsk-havvind-na-far-vi-mye-oppmerksomhet/2-1-1874476\" class=\"dn-link dn-teaser-card dn-teaser-card-a standard dn-image-auto dn-image-format-auto dn-image-mobile-auto\" data-id=\"2-1-1874476\" data_layout=\"\" state=\"published\" body_length=\"0\" access_level=\"open\" style=\"\" data-v-6cee257d=\"\">",
+          "target": [
+            "a[data-id=\"2-1-1874476\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/olje/conocophillips/equinor/elektrifisering/oljegiganten-conoco-vil-ikke-vare-med-pa-equinors-elektrifisering-bekymret/2-1-1875368\" class=\"dn-link dn-teaser-card dn-teaser-card-b standard dn-image-auto dn-image-format-auto dn-image-mobile-top\" data-id=\"2-1-1875368\" data_layout=\"\" state=\"published\" body_length=\"0\" access_level=\"open\" style=\"\" data-v-6cee257d=\"\">",
+          "target": [
+            "a[data-id=\"2-1-1875368\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"dn-grid dn-grid-layout layout-b\" data-list=\"\">",
+          "target": [
+            ".dn-group:nth-child(5) > .layout-b.dn-grid.dn-grid-layout"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dn-group\">",
+          "target": [
+            ".dn-group:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"dn-grid dn-grid-layout layout-abb\" data-list=\"\">",
+          "target": [
+            "div[grouptype=\"Audience Engagement 1\"] > .layout-abb.dn-grid.dn-grid-layout"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/arbeidsliv/udugelig-sjef-eller-brakete-kontor-dns-eksperter-har-rad/2-1-1220887\" class=\"dn-link dn-teaser-card dn-teaser-card-b dn-teaser-card-b+ standard dn-image-auto dn-image-format-3x2 dn-image-mobile-auto\" data-id=\"2-1-1220887\" data_layout=\"\" state=\"published\" body_length=\"0\" access_level=\"open\" style=\"\" data-v-6cee257d=\"\">",
+          "target": [
+            "a[data-id=\"2-1-1220887\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<figure class=\"dn-image default\" data-load=\"lazy\" type=\"picture\">",
+          "target": [
+            "a[data-id=\"6-1-7Eckz34Q\"] > article > .dn-card_assets > .default[type=\"picture\"][data-load=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\"><!--[-->Prestisje­turen er syklet 123.000 ganger – dette må til for å sette rekord<!--]--></h3>",
+          "target": [
+            "a[data-id=\"6-1-7Eckz34Q\"] > article > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><span>aktiv</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"6-1-7Eckz34Q\"] > article > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>03:41</span>",
+          "target": [
+            "a[data-id=\"6-1-7Eckz34Q\"] > article > .badge > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"dn-grid dn-grid-layout layout-a+\" data-list=\"\">",
+          "target": [
+            ".layout-a\\+.dn-grid.dn-grid-layout:nth-child(12)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dn-card_assets\">",
+          "target": [
+            "a[data-id=\"2-1-1875462\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-card_assets"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Thor Chr. Jensen</span>",
+          "target": [
+            "a[data-id=\"2-1-1875462\"] > article[data-teaser_type=\"cpp-article-dn\"] > .kicker > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\"><!--[-->Pizzatrikset kan gi Røkke 11,5 milliarder<!--]--></h3>",
+          "target": [
+            "a[data-id=\"2-1-1875462\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><!----><span>børskommentar</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"2-1-1875462\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dn-card_assets\">",
+          "target": [
+            "a[data-id=\"2-1-1875496\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-card_assets"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Simen Ekern</span>",
+          "target": [
+            "a[data-id=\"2-1-1875496\"] > article[data-teaser_type=\"cpp-article-dn\"] > .kicker > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\"><strong>Det er for sent å bli overrasket</strong></h3>",
+          "target": [
+            "a[data-id=\"2-1-1875496\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><!----><span>kommentar</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"2-1-1875496\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<figure class=\"dn-image default\" data-load=\"lazy\" type=\"picture\">",
+          "target": [
+            "a[data-id=\"6-1-IcomGjH5\"] > article > .dn-card_assets > .default[type=\"picture\"][data-load=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\"><strong>Innrømmer «et visst ansvar» i Bidens gjenvalgs­forsøk: </strong><br>– Overlatt til én persons ego</h3>",
+          "target": [
+            "a[data-id=\"6-1-IcomGjH5\"] > article > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><span>utenriks</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"6-1-IcomGjH5\"] > article > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>01:00</span>",
+          "target": [
+            "a[data-id=\"6-1-IcomGjH5\"] > article > .badge > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dn-group\" grouptype=\"Audience Engagement 2\">",
+          "target": [
+            "div[grouptype=\"Audience Engagement 2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"dn-grid dn-grid-layout layout-b\" data-list=\"\">",
+          "target": [
+            ".layout-b.dn-grid.dn-grid-layout:nth-child(15)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dn-group\">",
+          "target": [
+            ".dn-group:nth-child(17)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>DN Jobb</span>",
+          "target": [
+            "a[href$=\"dnjobb.no/\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dn-job-button\">",
+          "target": [
+            ".dn-job-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dn-job-carousel\">",
+          "target": [
+            ".dn-job-carousel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/marked/orsted/usa/donald-trump/orsted-aksjen-skyter-opp-etter-seier-i-retten/2-1-1875363\" class=\"dn-link dn-teaser-card dn-teaser-card-a standard dn-image-auto dn-image-format-auto dn-image-mobile-auto\" data-id=\"2-1-1875363\" data_layout=\"\" state=\"published\" body_length=\"0\" access_level=\"open\" style=\"\" data-v-6cee257d=\"\">",
+          "target": [
+            "a[data-id=\"2-1-1875363\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/makrookonomi/riksbanken-senker-styringsrenten-til-175-prosent/2-1-1875402\" class=\"dn-link dn-teaser-card dn-teaser-card-b standard dn-image-auto dn-image-format-auto dn-image-mobile-auto\" data-id=\"2-1-1875402\" data_layout=\"\" state=\"published\" body_length=\"0\" access_level=\"open\" style=\"\" data-v-6cee257d=\"\">",
+          "target": [
+            "a[data-id=\"2-1-1875402\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dn-card_assets\">",
+          "target": [
+            "a[data-id=\"2-1-1874873\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-card_assets"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Eva Grinde</span>",
+          "target": [
+            "a[data-id=\"2-1-1874873\"] > article[data-teaser_type=\"cpp-article-dn\"] > .kicker > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\"><!--[-->De er ikke spesielt kristen­konservative når det gjelder livsstil<!--]--></h3>",
+          "target": [
+            "a[data-id=\"2-1-1874873\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><!----><span>kommentar</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"2-1-1874873\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dn-group\">",
+          "target": [
+            ".dn-group:nth-child(20)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/magasinet/biltest/biltest/skoda/elbil/biltest-av-skoda-elroq-rs-tsjekkisk-angstdemper/2-1-1861389\" rel=\"noopener\" class=\"dn-link dn-teaser-card dn-teaser-card-a dn-teaser-card-feature standard dn-image-auto dn-image-format-auto dn-image-mobile-auto\" data-id=\"2-1-1861389\" data_layout=\"\" state=\"published\" body_length=\"0\" access_level=\"open\" style=\"\" data-v-6cee257d=\"\">",
+          "target": [
+            "a[data-id=\"2-1-1861389\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/eiendom/dn-investor/carl-erik-krefting/carucel/carl-erik-og-caroline-krefting-om-eiendomsmarkedet-her-ligger-det-muligheter/2-1-1869548\" class=\"dn-link dn-teaser-card dn-teaser-card-b standard dn-image-auto dn-image-format-fill dn-image-mobile-top\" data-id=\"2-1-1869548\" data_layout=\"\" state=\"published\" body_length=\"0\" access_level=\"open\" style=\"\" data-v-6cee257d=\"\">",
+          "target": [
+            "a[data-id=\"2-1-1869548\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dn-card_assets\">",
+          "target": [
+            "a[data-id=\"2-1-1873274\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-card_assets"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Sverre Strandhagen</span>",
+          "target": [
+            "a[data-id=\"2-1-1873274\"] > article[data-teaser_type=\"cpp-article-dn\"] > .kicker > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\"><!--[-->Et sjokk kan komme før noen aner<!--]--></h3>",
+          "target": [
+            "a[data-id=\"2-1-1873274\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><!----><span>kommentar</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"2-1-1873274\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<figure class=\"dn-image default\" data-load=\"lazy\" type=\"picture\">",
+          "target": [
+            "a[data-id=\"6-1-g0zjDIBR\"] > article > .dn-card_assets > .default[type=\"picture\"][data-load=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\">Viktor Hovland på ufo-jakt: <strong>– Å fy fader!</strong></h3>",
+          "target": [
+            "a[data-id=\"6-1-g0zjDIBR\"] > article > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><span>reiseliv</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"6-1-g0zjDIBR\"] > article > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>02:01</span>",
+          "target": [
+            "a[data-id=\"6-1-g0zjDIBR\"] > article > .badge > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/marked/argentum/naringsministeren-svarer-astrup-forsvarer-lukket-salgsprosess/2-1-1875329\" class=\"dn-link dn-teaser-card dn-teaser-card-b standard dn-image-auto dn-image-format-auto dn-image-mobile-auto\" data-id=\"2-1-1875329\" data_layout=\"\" state=\"published\" body_length=\"0\" access_level=\"open\" style=\"\" data-v-6cee257d=\"\">",
+          "target": [
+            "a[data-id=\"2-1-1875329\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dn-card_assets\">",
+          "target": [
+            "a[data-id=\"2-1-1874447\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-card_assets"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Øystein Dørum</span>",
+          "target": [
+            "a[data-id=\"2-1-1874447\"] > article[data-teaser_type=\"cpp-article-dn\"] > .kicker > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\"><!--[-->Vi må leve med færre barn<!--]--></h3>",
+          "target": [
+            "a[data-id=\"2-1-1874447\"] > article[data-teaser_type=\"cpp-article-dn\"] > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><!----><span>samfunn</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"2-1-1874447\"] > article[data-teaser_type=\"cpp-article-dn\"] > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/marked/ebay-kjoper-bruktplattformen-tise-prises-til-13-milliarder-kroner/2-1-1875095\" class=\"dn-link dn-teaser-card dn-teaser-card-a standard dn-image-auto dn-image-format-auto dn-image-mobile-auto\" data-id=\"2-1-1875095\" data_layout=\"\" state=\"published\" body_length=\"0\" access_level=\"open\" style=\"\" data-v-6cee257d=\"\">",
+          "target": [
+            "a[data-id=\"2-1-1875095\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"dn-grid dn-grid-layout layout-b\" data-list=\"\">",
+          "target": [
+            ".layout-b.dn-grid.dn-grid-layout:nth-child(24)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/politikk/jonas-gahr-store/stale-kyllingstad/regjeringen/svarer-pa-stores-handsrekning-setter-pris-pa-selvransakelsen-og-selvkritikken/2-1-1874859\" class=\"dn-link dn-teaser-card dn-teaser-card-a standard dn-image-auto dn-image-format-auto dn-image-mobile-auto\" data-id=\"2-1-1874859\" data_layout=\"\" state=\"published\" body_length=\"0\" access_level=\"open\" style=\"\" data-v-6cee257d=\"\">",
+          "target": [
+            "a[data-id=\"2-1-1874859\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/dn-ekspress/kina/india/sor-korea/koreanske-giganter-vinner-pa-ki-bolge-hongkong-forbereder-seg-pa-alvorlig-supertyfon/2-1-1875331\" class=\"dn-link dn-teaser-card dn-teaser-card-b standard dn-image-auto dn-image-format-auto dn-image-mobile-auto\" data-id=\"2-1-1875331\" data_layout=\"\" state=\"published\" body_length=\"0\" access_level=\"open\" style=\"\" data-v-6cee257d=\"\">",
+          "target": [
+            "a[data-id=\"2-1-1875331\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<figure class=\"dn-image default\" data-load=\"lazy\" type=\"picture\">",
+          "target": [
+            "a[data-id=\"6-1-rB5N9DWM\"] > article > .dn-card_assets > .default[type=\"picture\"][data-load=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\">Støre i New York: <strong>– Er vel ikke slik vi vil ha det i norske byer</strong></h3>",
+          "target": [
+            "a[data-id=\"6-1-rB5N9DWM\"] > article > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><span>Politikk</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"6-1-rB5N9DWM\"] > article > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>03:00</span>",
+          "target": [
+            "a[data-id=\"6-1-rB5N9DWM\"] > article > .badge > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"dn-grid dn-grid-layout layout-b\" data-list=\"\">",
+          "target": [
+            ".dn-group:nth-child(26) > .layout-b.dn-grid.dn-grid-layout"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<figure class=\"dn-image default\" data-load=\"lazy\" type=\"picture\">",
+          "target": [
+            "a[data-id=\"6-1-MVohND3U\"] > article > .dn-card_assets > .default[type=\"picture\"][data-load=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\"><!--[-->Slik gikk det da Eirik Furuseth skulle si noe positivt om Støre<!--]--></h3>",
+          "target": [
+            "a[data-id=\"6-1-MVohND3U\"] > article > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><span>politikk</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"6-1-MVohND3U\"] > article > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>04:00</span>",
+          "target": [
+            "a[data-id=\"6-1-MVohND3U\"] > article > .badge > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<figure class=\"dn-image default\" data-load=\"lazy\" type=\"picture\">",
+          "target": [
+            "a[data-id=\"6-1-CxytLqVK\"] > article > .dn-card_assets > .default[type=\"picture\"][data-load=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"dn-headline--subhead title\" data-v-6d246014=\"\"><!--[-->Jenny Spetalen og Markus Rooth på konferanse: – Invitert av pappa<!--]--></h3>",
+          "target": [
+            "a[data-id=\"6-1-CxytLqVK\"] > article > .dn-headline--subhead.title[data-v-6d246014=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"><!--[--><span>finans</span><!----><!--]--></div>",
+          "target": [
+            "a[data-id=\"6-1-CxytLqVK\"] > article > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>02:26</span>",
+          "target": [
+            "a[data-id=\"6-1-CxytLqVK\"] > article > .badge > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

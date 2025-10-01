@@ -1,0 +1,170 @@
+{
+  "project": "Firda Media AS",
+  "timestamp": "2025-09-28T01:38:43.058Z",
+  "url": "https://www.firda.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button class=\"play\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n  <path fill=\"currentColor\" d=\"M6 19h4V5H6v14zm8-14v14h4V5h-4z\"></path>\n</svg></button>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.firda\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.41921114105428503",
+            "iframe[name=\"seenthis_tag_container\"]",
+            ".play"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"audio\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.firda\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.41921114105428503",
+            "iframe[name=\"seenthis_tag_container\"]",
+            ".audio"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<iframe frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" topmargin=\"0\" leftmargin=\"0\" allowtransparency=\"true\" width=\"980\" height=\"300\" id=\"adn-sup-0.41921114105428503\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.firda\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.41921114105428503"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe name=\"seenthis_tag_container\" frameborder=\"0\" scrolling=\"no\" srcdoc=\"&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;ad.size&quot; content=&quot;width=980,height=300&quot; charset=&quot;UTF-8&quot;&gt;&lt;title&gt;v3:s12aaAZV0GhBC0wbEVC7v&lt;/title&gt;&lt;link rel=&quot;icon&quot; href=&quot;data:;base64,iVBORw0KGgo=&quot;&gt;&lt;script&gt;var seenthisInit=function(){var e={};try{if((e=JSON.parse('{&quot;inscreen&quot;:true,&quot;muteButton&quot;:true,&quot;loop&quot;:true,&quot;loopCount&quot;:2,&quot;fitToFormat&quot;:false,&quot;avEnabled&quot;:false,&quot;seenthisTagEnabled&quot;:true,&quot;autoplay&quot;:true,&quot;bigPlayButton&quot;:true,&quot;includeMacroTracking&quot;:false,&quot;attentionScore&quot;:false,&quot;telemetryEnabled&quot;:true}')).fitToFormat&amp;&amp;document.querySelector(&quot;#player&quot;).classList.add(&quot;fitToFormat&quot;),e.moatTracking){var t=document.querySelector(&quot;#player&quot;),a=document.querySelector(&quot;#creative&quot;),r=document.createElement(&quot;div&quot;);r.setAttribute(&quot;id&quot;,&quot;ad&quot;),r.setAttribute(&quot;style&quot;,&quot;width: 100%; height: 100%;&quot;),t.parentNode.insertBefore(r,t),r.appendChild(t),r.appendChild(a)}}catch(e){}window.seenthisController.init(&quot;v3:s12aaAZV0GhBC0wbEVC7v&quot;,&quot;12hmaprzj21qrddmqp31tqim05i42hmaprzj53sa4phxw624ioc5hg735rgniab8w57ahoxq91eswsecyan1x5mq3vbz3vs0rl1c1216xbced39ab6ddye37z8bxiif28a2c0zvg3v8o9ebqh1cw05ne42dc8&quot;,&quot;WteOYF4d6p&quot;,e)},primaryClickTagName=&quot;clickTag1&quot;,clickTag1=&quot;https://dressmann.com/no/&quot;&lt;/script&gt;&lt;style&gt;*{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-position:center;background-repeat:no-repeat;background-size:cover;font-family:sans-serif;overflow:hidden;line-height:1}html,body,#creative,#player{width:100%;height:100%}#creative,#player{position:absolute;left:0;top:0}.fitToFormat .seenthis-player{background-color:#000}.fitToFormat video{object-fit:contain !important}\nbody { background-image: url('https://video.seenthis.se/v2/ads/r78feqGPn/poster.jpeg') }&lt;/style&gt;&lt;script&gt;var OmidVerificationClient=(()=&gt;{var _=Object.defineProperty;var $=Object.getOwnPropertyDescriptor;var D=Object.getOwnPropertyNames;var A=Object.prototype.hasOwnProperty;var k=(e,t)=&gt;{for(var i in t)_(e,i,{get:t[i],enumerable:!0})},Z=(e,t,i,n)=&gt;{if(t&amp;&amp;typeof t==&quot;object&quot;||typeof t==&quot;function&quot;)for(let r of D(t))!A.call(e,r)&amp;&amp;r!==i&amp;&amp;_(e,r,{get:()=&gt;t[r],enumerable:!(n=$(t,r))||n.enumerable});return e};var G=e=&gt;Z(_({},&quot;__esModule&quot;,{value:!0}),e);var Ee={};k(Ee,{default:()=&gt;_e});function F(...e){O(()=&gt;{throw new Error(&quot;Could not complete the test successfully - &quot;,...e)},()=&gt;console.error(...e))}function q(...e){O(()=&gt;{},()=&gt;console.error(...e))}function O(e,t){typeof jasmine&lt;&quot;u&quot;&amp;&amp;jasmine?e():typeof console&lt;&quot;u&quot;&amp;&amp;console&amp;&amp;console.error&amp;&amp;t()}function E(e,t){if(!t)throw new Error(`Value for ${e} is undefined, null or blank.`);if(typeof t!=&quot;string&quot;&amp;&amp;!(t instanceof String))throw new Error(`Value for ${e} is not a string.`);if(t.trim()===&quot;&quot;)throw new Error(`Value for ${e} is empty string.`)}function Q(e,t){if(t==null)throw new Error(`${e} must not be null or undefined.`);if(typeof t!=&quot;number&quot;||isNaN(t))throw new Error(`Value for ${e} is not a number`)}function c(e,t){if(!t)throw new Error(`${e} must not be truthy.`)}function d(e,t){if(Q(e,t),t&lt;0)throw new Error(`${e} must be a positive number.`)}function j(e){return/\\d+\\.\\d+\\.\\d+(-.*)?/.test(e)}function C(e,t){let i=e.split(&quot;-&quot;)[0].split(&quot;.&quot;),n=t.split(&quot;-&quot;)[0].split(&quot;.&quot;);for(let r=0;r&lt;ce;r++){let s=parseInt(i[r],10),a=parseInt(n[r],10);if(s&gt;a)return!0;if(s&lt;a)return!1}return!0}function Y(e,t){return j(e)&amp;&amp;C(e,P)?t:JSON.stringify(t)}function H(e,t){return j(e)&amp;&amp;C(e,P)?t||[]:t&amp;&amp;typeof t==&quot;string&quot;?JSON.parse(t):[]}function K(){let e=t=&gt;{let i=Math.random()*16|0;return t?(i&amp;3|8).toString(16):i.toString(16)};return&quot;xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx&quot;.replace(/[xy]/g,t=&gt;e(t===&quot;y&quot;))}function V(e,t){try{return e.frames&amp;&amp;!!e.frames[t]}catch{return!1}}function L(e){return B(e,he.VERIFICATION_SERVICE)}function B(e,t){return t+e}function ee(){return typeof omidExports&gt;&quot;u&quot;?null:omidExports}function te(e,t){return e&amp;&amp;(e[t]||(e[t]={}))}function ie(e,t,i=ee()){if(!i)return;let n=e.split(&quot;.&quot;),r=n.slice(0,n.length-1).reduce(te,i),s=n[n.length-1];r[s]=t}function N(e=void 0){return e!=null&amp;&amp;typeof e.top&lt;&quot;u&quot;&amp;&amp;e.top!=null}function R(e){if(e===o)return!1;try{if(typeof e.location.hostname&gt;&quot;u&quot;)return!0;if(ne(e))return!1}catch{return!0}return!1}function ne(e){return e.x===&quot;&quot;||e.x!==&quot;&quot;}function T(e=void 0){return typeof e&gt;&quot;u&quot;&amp;&amp;typeof window&lt;&quot;u&quot;&amp;&amp;window&amp;&amp;(e=window),N(e)?e:o}function U(e){return N(e)?e.top:o}function z(e,t){return t.reduce((i,n)=&gt;i&amp;&amp;i[n],e)}function re(e,t,i,n){if(!R(t))try{let r=z(t,i);if(r)return new me(r)}catch{}return n(t)?new pe(e,t):null}function se(e,t,i,n){for(let r of t){let s=re(e,r,i,n);if(s)return s}return null}function oe(e,t=le){let i=[],n=z(e,ve);return n&amp;&amp;i.push(n),i.push(U(e)),se(e,i,ge,t)}function ae(){let e=o.omid3p;return e&amp;&amp;typeof e.registerSessionObserver==&quot;function&quot;&amp;&amp;typeof e.addEventListener==&quot;function&quot;?e:null}var p={APP:&quot;app&quot;,WEB:&quot;web&quot;},g={NONE:&quot;NONE&quot;,DIRECT:&quot;DIRECT&quot;,POST_MESSAGE:&quot;POST_MESSAGE&quot;},f=&quot;omid_message_guid&quot;,l=&quot;omid_message_method&quot;,h=&quot;omid_message_version&quot;,m=&quot;omid_message_args&quot;,S=class e{static isValidSerializedMessage(t){return!!t&amp;&amp;t[f]!==void 0&amp;&amp;t[l]!==void 0&amp;&amp;t[h]!==void 0&amp;&amp;typeof t[f]==&quot;string&quot;&amp;&amp;typeof t[l]==&quot;string&quot;&amp;&amp;typeof t[h]==&quot;string&quot;&amp;&amp;(t[m]===void 0||t[m]!==void 0)}static deserialize(t){return new e(t[f],t[l],t[h],t[m])}constructor(t,i,n,r=void 0){this.guid=t,this.method=i,this.version=n,this.args=r}serialize(){let t={[f]:this.guid,[l]:this.method,[h]:this.version};return this.args!==void 0&amp;&amp;(t[m]=this.args),t}},u=S,y=class{constructor(t=void 0){this.to=t,this.onMessage,this.communicationType_=g.NONE}sendMessage(t,i){}handleMessage(t,i){this.onMessage&amp;&amp;this.onMessage(t,i)}serialize(t){return JSON.stringify(t)}deserialize(t){return JSON.parse(t)}isDirectCommunication(){return this.communicationType_===g.DIRECT}isCrossOrigin(){}},J=y,M={error:F,debug:q},ue=&quot;1.5.0-conny&quot;,ce=3,P=&quot;1.0.3&quot;,de=&quot;omid_v1_present&quot;,X=&quot;omid_v1_present_web&quot;,W=&quot;omid_v1_present_app&quot;,fe=function(e){return{[p.APP]:W,[p.WEB]:X}[e]},le=function(e){return[de,X,W].some(t=&gt;V(e,t))},b=function(e){for(let t of Object.values(p)){let i=fe(t);if(V(e,i))return t}return null},he={SESSION_SERVICE:&quot;SessionService.&quot;,VERIFICATION_SERVICE:&quot;VerificationService.&quot;},o=window,I=class e extends J{constructor(t=void 0){super(t),this.communicationType_=g.DIRECT,this.handleExportedMessage=e.prototype.handleExportedMessage.bind(this)}sendMessage(t,i=this.to){if(!i)throw new Error(&quot;Message destination must be defined at construction time or when sending the message.&quot;);i.handleExportedMessage(t.serialize(),this)}handleExportedMessage(t,i){u.isValidSerializedMessage(t)&amp;&amp;this.handleMessage(u.deserialize(t),i)}isCrossOrigin(){return!1}},me=I,w=class extends J{static isCompatibleContext(t){return!!(t&amp;&amp;t.addEventListener&amp;&amp;t.postMessage)}constructor(t,i=o){super(i),this.communicationType_=g.POST_MESSAGE,t.addEventListener(&quot;message&quot;,n=&gt;{if(typeof n.data!=&quot;object&quot;)return;let r=n.data;if(!u.isValidSerializedMessage(r))return;let s=u.deserialize(r);n.source&amp;&amp;this.handleMessage(s,n.source)})}sendMessage(t,i=this.to){if(!i)throw new Error(&quot;Message destination must be defined at construction time or when sending the message.&quot;);i.postMessage(t.serialize(),&quot;*&quot;)}isCrossOrigin(){return this.to?R(this.to):!0}},pe=w,ge=[&quot;omid&quot;,&quot;v1_VerificationServiceCommunication&quot;],ve=[&quot;omidVerificationProperties&quot;,&quot;serviceWindow&quot;],x=ue,xe,v=class{constructor(e=void 0){if(this.communication=e||oe(T()),this.communication)this.communication.onMessage=this.handleMessage_.bind(this);else{let i=ae();i&amp;&amp;(this.omid3p=i)}this.remoteTimeouts_=0,this.remoteIntervals_=0,this.callbackMap_={},this.imgCache_=[];let t=o.omidVerificationProperties;this.injectionId_=t?t.injectionId:void 0}isSupported(){return this.getEnvironment()===p.WEB&amp;&amp;!this.injectionId_?!1:!!(this.communication||this.omid3p)}getEnvironment(){let e=T();return this.injectionSource()||b(e)||b(U(e))}injectionSource(){let e=o.omidVerificationProperties;if(e&amp;&amp;e.injectionSource)return e.injectionSource}registerSessionObserver(e,t=void 0){if(c(&quot;functionToExecute&quot;,e),this.omid3p){this.omid3p.registerSessionObserver(e,t,this.injectionId_);return}this.sendMessage_(&quot;addSessionListener&quot;,e,t,this.injectionId_)}addEventListener(e,t){if(E(&quot;eventType&quot;,e),c(&quot;functionToExecute&quot;,t),this.omid3p){this.omid3p.addEventListener(e,t,this.injectionId_);return}this.sendMessage_(&quot;addEventListener&quot;,t,e,this.injectionId_)}sendUrl(e,t=void 0,i=void 0){if(E(&quot;url&quot;,e),o.document&amp;&amp;o.document.createElement){this.sendUrlWithImg_(e,t,i);return}this.sendMessage_(&quot;sendUrl&quot;,n=&gt;{n&amp;&amp;t?t():!n&amp;&amp;i&amp;&amp;i()},e)}sendUrlWithImg_(e,t=void 0,i=void 0){let n=o.document.createElement(&quot;img&quot;);this.imgCache_.push(n);let r=s=&gt;{let a=this.imgCache_.indexOf(n);a&gt;=0&amp;&amp;this.imgCache_.splice(a,1),s&amp;&amp;s()};n.addEventListener(&quot;load&quot;,r.bind(this,t)),n.addEventListener(&quot;error&quot;,r.bind(this,i)),n.src=e}injectJavaScriptResource(e,t,i){E(&quot;url&quot;,e),o.document?this.injectJavascriptResourceUrlInDom_(e,t,i):this.sendMessage_(&quot;injectJavaScriptResource&quot;,(n,r)=&gt;{if(!n){M.error(&quot;Service failed to load JavaScript resource.&quot;),i();return}this.evaluateJavaScript_(r,e),t()},e)}injectJavascriptResourceUrlInDom_(e,t,i){let n=o.document,r=n.body,s=n.createElement(&quot;script&quot;);s.onload=t,s.onerror=i,s.src=e,s.type=&quot;application/javascript&quot;,r.appendChild(s)}evaluateJavaScript_(javaScript,url){try{eval(javaScript)}catch(e){M.error(`Error evaluating the JavaScript resource from &quot;${url}&quot;.`)}}setTimeout(e,t){if(c(&quot;functionToExecute&quot;,e),d(&quot;timeInMillis&quot;,t),this.hasTimeoutMethods_())return o.setTimeout(e,t);let i=this.remoteTimeouts_++;return this.sendMessage_(&quot;setTimeout&quot;,e,i,t),i}clearTimeout(e){if(d(&quot;timeoutId&quot;,e),this.hasTimeoutMethods_()){o.clearTimeout(e);return}this.sendOneWayMessage_(&quot;clearTimeout&quot;,e)}setInterval(e,t){if(c(&quot;functionToExecute&quot;,e),d(&quot;timeInMillis&quot;,t),this.hasIntervalMethods_())return o.setInterval(e,t);let i=this.remoteIntervals_++;return this.sendMessage_(&quot;setInterval&quot;,e,i,t),i}clearInterval(e){if(d(&quot;intervalId&quot;,e),this.hasIntervalMethods_()){o.clearInterval(e);return}this.sendOneWayMessage_(&quot;clearInterval&quot;,e)}hasTimeoutMethods_(){return typeof o.setTimeout==&quot;function&quot;&amp;&amp;typeof o.clearTimeout==&quot;function&quot;}hasIntervalMethods_(){return typeof o.setInterval==&quot;function&quot;&amp;&amp;typeof o.clearInterval==&quot;function&quot;}handleMessage_(e,t){let{method:i,guid:n,args:r}=e;if(i===&quot;response&quot;&amp;&amp;this.callbackMap_[n]){let s=H(x,r);this.callbackMap_[n].apply(this,s)}i===&quot;error&quot;&amp;&amp;window.console&amp;&amp;M.error(r)}sendOneWayMessage_(e,...t){this.sendMessage_(e,null,...t)}sendMessage_(e,t,...i){if(!this.communication)return;let n=K();t&amp;&amp;(this.callbackMap_[n]=t);let r=new u(n,L(e),x,Y(x,i));this.communication.sendMessage(r)}};ie(&quot;OmidVerificationClient&quot;,v);var _e=v;return G(Ee);})();\nwindow.OmidVerificationClient = OmidVerificationClient.default;&lt;/script&gt;&lt;script&gt;(()=&gt;{const g=()=&gt;{const a=&quot;https://t.seenthis.se&quot;;function c(){return typeof ReportingObserver==&quot;function&quot;&amp;&amp;typeof navigator.sendBeacon==&quot;function&quot;}if(!c())return;function d(e){const n=e&amp;&amp;e.body&amp;&amp;e.body.message||&quot;&quot;,r=[{keyword:&quot;CPU&quot;,reason:&quot;CPU&quot;},{keyword:&quot;network usage&quot;,reason:&quot;network&quot;}].find(({keyword:t})=&gt;n.includes(t));return r?r.reason:&quot;other&quot;}function u(e){const n=window.seenthisPlayer||{},s=n.trackerId||null,r=n.videoId||null,t=e.map(i=&gt;{try{const o=JSON.parse(JSON.stringify(i)),f=d(i);return Object.assign(o,{video_id:r,tracker_id:s,reason:f}),o}catch{return null}}).filter(Boolean);t.length&gt;0&amp;&amp;navigator.sendBeacon(`${a}/api/post/message?id=heavy-ads-reporting`,JSON.stringify(t))}new ReportingObserver(e=&gt;{try{u(e)}catch{}},{buffered:!0}).observe()};g();})();&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;div id=&quot;player&quot;&gt;&lt;/div&gt;&lt;div id=&quot;creative&quot;&gt;&lt;/div&gt;&lt;script&gt;!function(n){var i={};function r(t){if(i[t])return i[t].exports;var e=i[t]={i:t,l:!1,exports:{}};return n[t].call(e.exports,e,e.exports,r),e.l=!0,e.exports}r.m=n,r.c=i,r.d=function(t,e,n){r.o(t,e)||Object.defineProperty(t,e,{configurable:!1,enumerable:!0,get:n})},r.n=function(t){var e=t&amp;&amp;t.__esModule?function(){return t[&quot;default&quot;]}:function(){return t};return r.d(e,&quot;a&quot;,e),e},r.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},r.p=&quot;&quot;,r(r.s=2)}([function(t,e,n){&quot;use strict&quot;;function c(t){if(Array.isArray(t)){for(var e=0,n=Array(t.length);e&lt;t.length;e++)n[e]=t[e];return n}return Array.from(t)}var d=function(t,e){return Math.round(t/e)*e};t.exports={trackEvent:function(t){var e,n=/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/.test(&quot;12hmaprzj21qrddmqp31tqim05i42hmaprzj53sa4phxw624ioc5hg735rgniab8w57ahoxq91eswsecyan1x5mq3vbz3vs0rl1c1216xbced39ab6ddye37z8bxiif28a2c0zvg3v8o9ebqh1cw05ne42dc8&quot;),i=n?&quot;https://t.seenthis.se&quot;:&quot;https://t.seenthis.se/v3&quot;,r=(new Date).getTime(),a=[d(window.innerWidth,10),d(window.innerHeight,10)].join(&quot;x&quot;),o=[i,&quot;12hmaprzj21qrddmqp31tqim05i42hmaprzj53sa4phxw624ioc5hg735rgniab8w57ahoxq91eswsecyan1x5mq3vbz3vs0rl1c1216xbced39ab6ddye37z8bxiif28a2c0zvg3v8o9ebqh1cw05ne42dc8&quot;,t,(n?a:&quot;3&quot;)+&quot;?_=&quot;+r].join(&quot;/&quot;);try{var s=new XMLHttpRequest;s.open(&quot;GET&quot;,o),s.send(),e=t,window.dispatchEvent(new CustomEvent(&quot;@seenthis-ab/trackEvent&quot;,{detail:{id:e}})),window.seenthisController.trackedEvents=[].concat(c(new Set([].concat(c(window.seenthisController.trackedEvents||[]),[e]))))}catch(t){}}}},function(t,e,n){&quot;use strict&quot;;t.exports={init:function(t){t()},click:function(t){window.open(window[t],&quot;_blank&quot;)}}},function(t,e,n){&quot;use strict&quot;;n(3);var i=n(0),r=n(4),a=n(5),o=n(8),s=n(9),c=n(10);window.seenthisController=a,r.init(),o.init(),s.init(),i.trackEvent(12),&quot;loading&quot;===document.readyState?document.addEventListener(&quot;DOMContentLoaded&quot;,c.init):c.init()},function(t,e,n){&quot;use strict&quot;;String.prototype.includes||(String.prototype.includes=function(t,e){return&quot;number&quot;!=typeof e&amp;&amp;(e=0),!(e+t.length&gt;this.length)&amp;&amp;-1!==this.indexOf(t,e)})},function(t,e,n){&quot;use strict&quot;;var i=n(1),r=n(0),s=&quot;clickTag1&quot;;function a(t){try{var e=(a=t,o=window.primaryClickTagName||s,a===s?o:o.replace(/\\d+$/,&quot;&quot;)+a.match(/\\d+$/)[0]),n=window[e];if(!n)return;var i=function(){var t=function(){var t=0&lt;arguments.length&amp;&amp;void 0!==arguments[0]?arguments[0]:&quot;clickTag&quot;,e=new URL(window.location.href).searchParams.get(t);if(e)try{return decodeURIComponent(e)}catch(t){return e}return null}();if(t)return t;var e=window.primaryClickTagName||s;return window[e]}().split(&quot;http&quot;).slice(0,-1).join(&quot;http&quot;);if(!i||void 0!==(r=i)&amp;&amp;0===n.indexOf(r))return;window[e]=i+n}catch(e){console.error(&quot;Failed to add macro to click tag &quot;+t,e)}var r,a,o}function o(t){a(t),r.trackEvent(2),i.click(t)}t.exports={init:function(){window.openLink=o}}},function(t,e,n){&quot;use strict&quot;;var r=n(1),a=n(6);t.exports={init:function(t,e,n,i){r.init(function(){a.init(&quot;#player&quot;,t,e,n,i)})},show:function(){},hide:function(){}}},function(t,e,n){&quot;use strict&quot;;var h=n(7),y=function(t,e){return[&quot;https://video.seenthis.se/v2/creatives&quot;,t,e].join(&quot;/&quot;)};t.exports={init:function(t,e,n,i){var r=4&lt;arguments.length&amp;&amp;void 0!==arguments[4]?arguments[4]:{};window.seenthisPlayer=new SeenthisPlayer(t,e,n,r);try{var a=!1,o=document.querySelector(&quot;#creative&quot;),s=function(){a&amp;&amp;&quot;none&quot;===o.style.display&amp;&amp;(o.style.display=&quot;block&quot;,a=!1)};window.seenthisPlayer.video.addEventListener(&quot;play-failed&quot;,function(){o.style.display=&quot;none&quot;,a=!0}),window.seenthisPlayer.video.addEventListener(&quot;play-success&quot;,s),window.seenthisPlayer.video.addEventListener(&quot;timeupdate&quot;,s)}catch(t){}var c,d,u,l,f,m,v,w,p=new h(window.seenthisPlayer,window,document);window.frameUpdate=p.frameUpdate,v=i,(w=document.createElement(&quot;script&quot;)).setAttribute(&quot;src&quot;,y(v,&quot;script.js&quot;)),w.setAttribute(&quot;crossOrigin&quot;,&quot;anonymous&quot;),document.body.appendChild(w),l=i,f=document.head,(m=document.createElement(&quot;link&quot;)).type=&quot;text/css&quot;,m.rel=&quot;stylesheet&quot;,m.href=y(l,&quot;style.css&quot;),f.appendChild(m),c=i,d=function(){var e,n,i;e=window,n=function(){window.startCreative()},i=0,function t(){e[&quot;startCreative&quot;]?n():5e3&lt;i||(i+=1,setTimeout(t,2))}()},(u=new XMLHttpRequest)[&quot;op&quot;+&quot;en&quot;](&quot;GET&quot;,y(c,&quot;index.html&quot;)),u.send(null),u.onreadystatechange=function(){4===u.readyState&amp;&amp;(document.getElementById(&quot;creative&quot;).innerHTML=u.responseText,d())}}}},function(t,e,n){&quot;use strict&quot;;var c=function(t,e){return-1!==t.className.indexOf(e)},d=function(t,e,n){var i,r,a=n?&quot; &quot;+e:&quot;&quot;;t.className=(i=t.className,r=e,i.split(r).join(&quot;&quot;)).split(&quot; &quot;).filter(function(t){return!!t}).join(&quot; &quot;)+a},a=function(t,e){var n=t.style.transitionDuration;t.style.transitionDuration=&quot;0s&quot;,d(t,&quot;is-active&quot;,!1),d(t,&quot;animate-in&quot;,!1),d(t,&quot;animate-out&quot;,!1),t.isActive=void 0,setTimeout(function(){t.style.transitionDuration=n},0)};t.exports=function(t,n,i){var r=this;r.player=t,r.lastTime=null,this.frameUpdate=function(t){r.callback=t,r.animatedElements=i.querySelectorAll(&quot;[data-start]&quot;);for(var e=0;e&lt;r.animatedElements.length;e++)r.animatedElements[e].isActive=!1;!function t(){if(n.requestAnimationFrame?n.requestAnimationFrame(t):setTimeout(t,1e3/30),r.player){var e=r.player.currentTime;&quot;function&quot;==typeof e&amp;&amp;(e=e()),void 0!==r.lastTime&amp;&amp;.2&lt;r.lastTime-e?(r.lastTime=void 0,function(t){for(var e=0;e&lt;t.animatedElements.length;e++){var n=t.animatedElements[e];a(n)}}(r)):e!==r.lastTime&amp;&amp;(0&lt;r.animatedElements.length&amp;&amp;function(t,e){for(var n=0;n&lt;t.animatedElements.length;n++){var i=t.animatedElements[n];r=i,a=e,void 0,o=parseFloat(r.getAttribute(&quot;data-start&quot;)),s=parseFloat(r.getAttribute(&quot;data-duration&quot;)),r.isActive=!!(o&lt;=a&amp;&amp;a&lt;o+s),r.isActive&amp;&amp;!c(r,&quot;is-active&quot;)?(d(r,&quot;is-active&quot;,!0),d(r,&quot;animate-in&quot;,!0),d(r,&quot;animate-out&quot;,!1)):!r.isActive&amp;&amp;c(r,&quot;is-active&quot;)&amp;&amp;(d(r,&quot;is-active&quot;,!1),d(r,&quot;animate-in&quot;,!1),d(r,&quot;animate-out&quot;,!0))}var r,a,o,s}(r,e),r.callback&amp;&amp;r.callback(e),r.lastTime=e)}}()}}},function(t,e,n){&quot;use strict&quot;;t.exports={init:function(){}}},function(t,e,n){&quot;use strict&quot;;var i=n(0),r=function(t){var e=window.seenthisController.customEvents,n=void 0===e?{}:e;n[t]&amp;&amp;i.trackEvent(n[t])};t.exports={init:function(){window.trackCustomEvent=r}}},function(t,e,n){&quot;use strict&quot;;var i=n(0);t.exports={didInit:!1,init:function(){if(this.didInit)return!1;var t=!(this.didInit=!0),a=function(){t||(t=!0,i.trackEvent(1200))};if(&quot;seenthis_tag_container&quot;===window.name){var o=setTimeout(function(){a()},300);window.addEventListener(&quot;message&quot;,function(t){if(t&amp;&amp;t.data&amp;&amp;t.data.name){if(&quot;seenthis-tag&quot;!==t.data.name)return;clearTimeout(o);var e=t.data.params;switch(t.data.event){case&quot;impression&quot;:a();break;case&quot;init&quot;:if(e.clickTag){var n=e.clickTag,i=n.indexOf(&quot;%3A%2F%2F&quot;),r=window.primaryClickTagName||&quot;clickTag1&quot;;window[r]=n&amp;&amp;-1!==i&amp;&amp;i&lt;40?unescape(n):n}e.impressionOccurred&amp;&amp;a()}}}),window.seenthisTag&amp;&amp;window.seenthisTag.impressionOccurred&amp;&amp;(a(),clearTimeout(o)),window.parent.postMessage({name:&quot;seenthis-tag-init&quot;},&quot;*&quot;)}else{if(!window.OmidVerificationClient)return void a();try{var e=new window.OmidVerificationClient;if(e&amp;&amp;e.isSupported())return void e.addEventListener(&quot;impression&quot;,function(t){return a()});a()}catch(t){console.error(&quot;Error initializing OMID&quot;,t),a()}}}}}])&lt;/script&gt;&lt;script&gt;var timer=setInterval(function(){window.seenthisInit&amp;&amp;window.SeenthisPlayer&amp;&amp;(clearInterval(timer),window.seenthisInit())},20)&lt;/script&gt;&lt;script src=&quot;https://video.seenthis.se/v2/player/113/player.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;\" style=\"overflow: hidden; border: 0px; display: block; vertical-align: top; width: 980px; height: 300px;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.firda\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.41921114105428503",
+            "iframe[name=\"seenthis_tag_container\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe src=\"https://dressmann.com/no/?utm_source=DBMX&amp;utm_medium=DIS&amp;utm_campaign=Adnuntius&amp;utm_content=Skjorter&amp;utm_term=Amedia&amp;cb=1759023503547&amp;cb=0.058177949705404575\" scrolling=\"no\" frameborder=\"0\" width=\"1\" height=\"1\" style=\"position:absolute;top:-10000px;left:-100000px;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.firda\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.41921114105428503",
+            "iframe[width=\"1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-5d896fd4-7a52-4b15-968f-b96d87d7cdbf\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"13\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.firda.no/gfx/small-positive.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.firda.no/tilbud\" publication=\"www.firda.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layout=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_toppbanner am-bazaar-ad--labeled\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.firda.no/toppbanner_1\" pageview-id=\"4f719130-5763-4609-9f3b-724139a37c52\" has-bid=\"\" render-count=\"1\" render-time=\"1759023503828\" advertiser-id=\"703459736\" order-id=\"690956216\" lineitem-id=\"1018520456\" creative-id=\"138442426269\" ad-size=\"980,300\" slot-targeting=\"keyword=forsiden,autolayout,dominans,forsiden_1,format=toppbanner,position=1,adnami_format=skin,lwrefresh=false,hb_crid=,hb_adomain=,hb_format=banner,hb_source=,hb_size=980x300,hb_pb=40.53,hb_adid=70d13adc64f6fd68,hb_bidder=adnuntius\" hb_pb=\"40.53\" prebid-price-group=\"45\" lineitem-type=\"AD_EXCHANGE\" itemscope=\"\" itemtype=\"http://schema.org/WPAdBlock\" is-empty=\"false\" is-prebid=\"\" prebid-bidder=\"adnuntius\" prebid-cpm=\"40.5405\" prebid-creativeid=\"gryh3gfjk7qpbyp6\" prebid-creativeid-count=\"1\" is-viewable=\"true\" style=\"min-height: 0px;\">",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

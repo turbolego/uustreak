@@ -1,0 +1,146 @@
+{
+  "project": "Norges forskningsråd",
+  "timestamp": "2025-09-23T18:50:59.345Z",
+  "url": "https://www.forskningsradet.no/#",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button tabindex=\"0\" onclick=\"CookieInformation.declineAllCategories()\" aria-label=\"Avvis\" id=\"declineButton\" class=\"coi-banner__decline\" role=\"alert\" aria-atomic=\"true\" style=\"display: flex;\">\n            Avvis\n          </button>",
+          "target": [
+            "#declineButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role alert is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "aria-valid-attr-value",
+      "impact": "critical",
+      "description": "Ensure all ARIA attributes have valid values",
+      "help": "ARIA attributes must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button aria-label=\"Skjul\" class=\"button message-global--open-button -has-children\" type=\"button\" aria-expanded=\"true\" aria-controls=\"MG_419befdb-c26c-4356-8686-9e80e820976e\">",
+          "target": [
+            ".message-global--open-button"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-controls=\"MG_419befdb-c26c-4356-8686-9e80e820976e\""
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3>",
+          "target": [
+            ".link-with-text:nth-child(1) > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<nav class=\"tab-menu\">",
+          "target": [
+            ".tab-menu"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"message-global--collapse -use-intrinsic-height\">",
+          "target": [
+            ".message-global--collapse"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

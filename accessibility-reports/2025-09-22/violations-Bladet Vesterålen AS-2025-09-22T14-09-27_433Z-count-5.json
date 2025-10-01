@@ -1,0 +1,132 @@
+{
+  "project": "Bladet Vesterålen AS",
+  "timestamp": "2025-09-22T14:09:27.433Z",
+  "url": "https://www.blv.no/#",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h2 itemprop=\"teaser_title\" class=\"title brick-c-fdykhI brick-c-fdykhI-bPHpSt-cv\"><span class=\"titleWrapper brick-c-hakyQ brick-c-hakyQ-joUaur-useAutolayout-true\">\n    <span itemprop=\"headline\"><span itemprop=\"titleText\"> </span></span>\n    </span></h2>",
+          "target": [
+            "article[data-title-words=\"2\"] > .brick-c-fRZqov.teaser_body[itemprop=\"url\"] > .body > .brick-c-bVcFwu.title_container.has-image > .brick-c-fdykhI-bPHpSt-cv.brick-c-fdykhI[itemprop=\"teaser_title\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-6fe22d33-e2ee-465f-8e64-90f7d6acc4d9\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"20\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://annonse.blv.no/blv/jul/julenummer-25-send-inn.pdf\" itemprop=\"url\" class=\"teaser_body brick-c-fRZqov mirror\">",
+          "target": [
+            "article[data-title-words=\"2\"] > .brick-c-fRZqov.teaser_body[itemprop=\"url\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.blv.no/gfx/small-positive.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.blv.no/tilbud\" publication=\"www.blv.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layout=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_toppbanner am-bazaar-ad--labeled\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.blv.no/toppbanner_1\" pageview-id=\"d13e2fcb-fd81-47c9-b590-ad70a3ecb2fd\">",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

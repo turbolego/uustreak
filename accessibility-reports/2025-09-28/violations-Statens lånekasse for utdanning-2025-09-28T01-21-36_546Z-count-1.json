@@ -1,0 +1,38 @@
+{
+  "project": "Statens lånekasse for utdanning",
+  "timestamp": "2025-09-28T01:21:36.546Z",
+  "url": "https://lanekassen.no/#samtykke-banner",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div>",
+          "target": [
+            ".MuiCardContent-root > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".MuiCardContent-root > div:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

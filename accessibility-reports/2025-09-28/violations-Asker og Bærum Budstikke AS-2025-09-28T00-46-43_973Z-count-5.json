@@ -1,0 +1,139 @@
+{
+  "project": "Asker og Bærum Budstikke AS",
+  "timestamp": "2025-09-28T00:46:43.973Z",
+  "url": "https://www.budstikka.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h1 class=\"text-element headline\">Ditt lokale &amp; personlige begravelsesbyrå</h1>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "iframe",
+            "a:nth-child(3) > .creative-container > div > .bottom-background.bottom-background-has-main-image > div > .text-content-container > h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #ffffff, background color: #c4ac4e, font size: 14.3pt (19px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe src=\"https://b.ddb.im/?p=9000014&amp;d=www.budstikka.no&amp;b=2021cantabri-980x300&amp;db=cantabri&amp;cs=4983e4034dea&amp;c=1000&amp;clickurl=https://adclick.g.doubleclick.net/pcs/click%253Fxai%253DAKAOjsskbSY9Q5QpIuvyTlLJ5VQkriTFaV_ipAPYJrsUH8NWOvX50HX2Tit2dOVi7Uv9ESP2j-BD7RokXFCQskKqlnFuLrisuIs8YctGvGsxfJBKX05c8QIzbY8FkeBVU6mObM1jvJFcsabnrnd5Xa6PSLld-4UY-Scr-7PTk1ukhKJ0BuZuU5n8vNU2RXN4Yvu1HbsHYK06HeztN9nVm9aHwwkdvjiFk6ec7IGdOyl3cJMaKJinYa1QJLm-i_y5MWPRYKjVAhqJV_7_2GSxnLAoVrFeioe-y89YY6L7bFsgRmmv12g2s2OjngvKMnZFmWtI3nahfD7YjL4Ti0DTCsPF-iEC56KhpSM2lzzuAObdEksuxeKGmf6jxge-1WVYgmIPbyACzQvjl8Knq86x7P6O%2526sai%253DAMfl-YRPdaHE0vPxKRRTp9-x2je1ruQ95SnsUHbp3oiGLrB5Vkj14CthXJWXeQL3us94-XyV9CNDfM_gKbYIz420WaokueCFRBfbKnTq8QQ95lPqJFa8Gl5nEU8ML2N5pU4N6kbctX7CehiK24XNxVxAhIXnCjd9KONccahU4K2ROq2tAZWtlfgQ2miE0UrzSf9QRUaW6TEqZaQz4f6Kc0gvEByFmzuvITIGKaUnyE5ydwTLRqDQQhLaLl_v1RqPPk8ET24CeLcwkwxgoNOy8sGcgQI2mCZ_cw-K6ecLIXMXtA3wfT5mGm1aL4WVUf7gvBZIZsIZMU7dZBRVne0zuHkUo89fQiTXT_KmIrWaHZZEMaEhIHRc%2526sig%253DCg0ArKJSzLGE4x-f0UmLEAE%2526fbs_aeid%253D%25255Bgw_fbsaeid%25255D%2526urlfix%253D1%2526adurl%253D\" width=\"980\" height=\"300\" seamless=\"seamless\" frameborder=\"0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-cc57e875-bf47-46be-9d7d-1ff72b9892b1\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"9\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.budstikka.no/gfx/small-positive.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.budstikka.no/tilbud\" publication=\"www.budstikka.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layout=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_toppbanner am-bazaar-ad--labeled\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.budstikka.no/toppbanner_1\" pageview-id=\"dff35146-c49e-4465-b1fe-1a5cf8d34aa1\" has-bid=\"\" render-count=\"1\" render-time=\"1759020395178\" advertiser-id=\"730675736\" order-id=\"3664323069\" lineitem-id=\"6868251059\" creative-id=\"138413056535\" ad-size=\"980,300\" slot-targeting=\"keyword=forsiden,autolayout,dominans,forsiden_1,format=toppbanner,position=1,adnami_format=skin,lwrefresh=false,hb_crid_diar=,hb_adomain_diar=,hb_format_diar=,hb_source_diar=,hb_size_diar=,hb_pb_diar=,hb_adid_diar=,hb_bidder_diar=,hb_crid=,hb_adomain=,hb_format=banner,hb_source=,hb_deal_diar=,hb_deal=,hb_size=980x300,hb_pb=14.49,hb_adid=7490d6d49606f9,hb_bidder=adnuntius\" hb_pb=\"14.49\" prebid-price-group=\"15\" lineitem-type=\"STANDARD\" itemscope=\"\" itemtype=\"http://schema.org/WPAdBlock\" is-empty=\"false\" is-viewable=\"true\" style=\"min-height: 0px;\">",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1151 @@
+{
+  "project": "Adresseavisen AS",
+  "timestamp": "2025-09-23T18:47:16.591Z",
+  "url": "https://www.adressa.no/",
+  "total_violations": 10,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button class=\"button left svelte-3viewi disabled\"></button>",
+          "target": [
+            ".disabled"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"button right svelte-3viewi\"></button>",
+          "target": [
+            ".right"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button class=\"Abobutton removePlussForApp\">\n  BLI ABONNENT\n</button>",
+          "target": [
+            ".Abobutton"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.64 (foreground color: #ffffff, background color: #28aae2, font size: 9.6pt (12.8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 22,
+      "nodes": [
+        {
+          "html": "<img src=\"\" class=\"off\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(2) > .fade-image.icon > .off[src=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://spesial.adressa.no/weather/assets/cloudy.svg\" class=\"on\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(2) > .fade-image.icon > .on"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"\" class=\"off\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(3) > .fade-image.icon > .off[src=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://spesial.adressa.no/weather/assets/cloudy.svg\" class=\"on\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(3) > .fade-image.icon > .on"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"\" class=\"off\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(4) > .fade-image.icon > .off[src=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://spesial.adressa.no/weather/assets/cloudy.svg\" class=\"on\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(4) > .fade-image.icon > .on"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"\" class=\"off\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(5) > .fade-image.icon > .off[src=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://spesial.adressa.no/weather/assets/lightrain.svg\" class=\"on\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(5) > .fade-image.icon > .on"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"\" class=\"off\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(6) > .fade-image.icon > .off[src=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://spesial.adressa.no/weather/assets/rain.svg\" class=\"on\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(6) > .fade-image.icon > .on"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"\" class=\"off\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(7) > .fade-image.icon > .off[src=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://spesial.adressa.no/weather/assets/lightrain.svg\" class=\"on\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(7) > .fade-image.icon > .on"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"\" class=\"off\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(8) > .fade-image.icon > .off[src=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://spesial.adressa.no/weather/assets/cloudy.svg\" class=\"on\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(8) > .fade-image.icon > .on"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"\" class=\"off\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(9) > .fade-image.icon > .off[src=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://spesial.adressa.no/weather/assets/partlycloudy_day.svg\" class=\"on\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(9) > .fade-image.icon > .on"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"\" class=\"off\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(10) > .fade-image.icon > .off[src=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://spesial.adressa.no/weather/assets/partlycloudy_day.svg\" class=\"on\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(10) > .fade-image.icon > .on"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"\" class=\"off\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(11) > .fade-image.icon > .off[src=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://spesial.adressa.no/weather/assets/partlycloudy_day.svg\" class=\"on\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(11) > .fade-image.icon > .on"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"\" class=\"off\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(12) > .fade-image.icon > .off[src=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://spesial.adressa.no/weather/assets/cloudy.svg\" class=\"on\">",
+          "target": [
+            ".center.no-padding.table-cell:nth-child(12) > .fade-image.icon > .on"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-complementary-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the complementary landmark or aside is at top level",
+      "help": "Aside should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<aside class=\"teaserasides\">",
+          "target": [
+            ".teaserasides"
+          ],
+          "failureSummary": "Fix any of the following:\n  The null landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-main-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the main landmark is at top level",
+      "help": "Main landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-main-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 101,
+      "nodes": [
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.23;\"><!----> <span>«Tror jeg redda livet på en person i dag»</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".variant-a.gridspotlight.card-size-large > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Skulle skyte rype - traff kameraten</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".Bundles:nth-child(1) > .OnePlusXTeasers.grid > .gridspotlightside.life40.hot50 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 0.85;\"><!----> <span>Nå er Årets kokk kåret. Slik gikk det med det trønderske håpet</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".Bundles:nth-child(1) > .OnePlusXTeasers.grid > .is-section-kultur-skin.is-skin.hot60 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\">",
+          "target": [
+            ".opinion.is-section-sport-skin.hot70 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.20;\"><!----> <span>Forsker: Derfor fløy russerne over Norge</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(1) > .is-bundle-wrapper.gridspotlight[position=\"1\"] > .isBundle.grid > .gridfullsize-bundle.card-size-large.hot60 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>– Det vi så i går kveld, er det hittil mest alvorlige</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".small-items.hot70.gridfullsize > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.30;\"><!----> <span>– Det var en lettelse å bli frikjent, men jeg ble ikke glad</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".h-low.hot70.gridspotlightside > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <div class=\"labels labels-top\"><span class=\"label tag RBK\">RBK</span> </div> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Kapteinens bisarre RBK-avskjed: - Jeg var dønn ærlig</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".is-rbk-skin.is-skin.hot60 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.05;\"><!----> <span>Skal ha laget liste over «horer» på universitetet - mener han ble drapstruet etterpå </span>  <!----></h3> <!----></main>",
+          "target": [
+            ".life60.hot70.gridtriple > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.35;\"><!----> <span>– Jeg var heldig, jeg mistet bare huset</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(3) > .hot70.life40.gridtriple > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>To ble skadd etter vold ved kjøpe­senter – ten­åring siktet</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(4) > .gridspotlight.card-size-large.hot60 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.15;\"><!----> <span>– Vilt fremmede har tatt kontakt med meg og sagt at de synes det er sjokkerende</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(4) > .hot60.gridspotlightside.life40 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Seks involvert, to sendt til sykehus: 18-åring anmeldt</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(4) > .gridspotlightside.hot50.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Ingebrigtsen-strid om familiens etternavn – brødrene har levert protest</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(7) > .gridspotlightside.hot50.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.30;\"><!----> <span>– Det blir en mur</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(7) > .hot70.gridspotlight.card-size-large > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>– Det er stort og tungt og ikke den enkleste jobben</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(7) > .hot60.gridspotlightside.life40 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.05;\"><!----> <span>– Fire barn har fraskrevet seg odelsretten</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".hot70.life40.gridtriple:nth-child(1) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <div class=\"labels labels-top\"><span class=\"label section MN24\">MN24</span> </div> <!----> <!----> <h3 style=\"--font-size-override: 1.20;\"><!----> <span>Nye Veier mener E6-signal var misforståelse</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(9) > .is-section-mn24-skin.is-skin.gridtriple > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.05;\"><!----> <span>Fikk møte sin bio­logiske datter etter 57 år: - Det var så ufattelig</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(9) > .h-low.hot70.life40 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.30;\"><!----> <span>Trønderske selskap tjener på uroen i verden</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(12) > .gridspotlight.card-size-large.hot60 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <div class=\"labels labels-top\"><span class=\"label override Trondheim\">Trondheim</span> </div> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Bolighus må rives for nytt veiprosjekt: - Det er brutalt</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(12) > .hot60.gridspotlightside.life40:nth-child(2) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.26;\"><!----> <span>To av Håkon Blekens boliger er solgt</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(12) > .hot60.gridspotlightside.life40:nth-child(3) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <div class=\"labels labels-top\"><span class=\"label tag RBK\">RBK</span> </div> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>RBK-sjefen: <mark>-</mark> Denne er minst like viktig</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".variant-a.is-rbk-skin.is-skin > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><span class=\"prefix\">Byråden: </span> <span>Så mye penger manglet Trondheim</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".gridfullsize-bundle.is-section-sport-skin.card-size-large > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><span class=\"prefix\">Mister nytt VM: </span> <span>- Går kraftig ut over Trondheims posisjon og omdømme</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".small-items.is-section-sport-skin.gridfullsize > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 0.95;\"><!----> <span>Maria trodde hun bare var sliten som småbarnsmor</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(13) > .gridspotlightside.life40.hot50 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 0.95;\"><!----> <span>Bruden sto klar. Så tikket det inn en melding fra taxi­selskapet</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(16) > .hot60.life40.gridtriple:nth-child(1) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>– Han er jo Trondheims store sønn, så vi ville ha hans velsignelse</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(16) > .is-section-kultur-skin.is-skin.hot60 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Barnevernet vil ikke ta over omsorgen for datteren - fordi moren er for god</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".hot80 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.30;\"><!----> <span>– Å gå på do, dusje og pusse tenner ble vanskelig</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".is-section-kultur-skin.life60.hot70 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span> Konkurrenten jukset. I dag kom glad­meldingen</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(17) > .is-section-sport-skin.is-skin.gridspotlightside > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\">",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(17) > .is-section-meninger-skin.opinion.is-skin > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Skal ha gått rundt og klemt på mindreårige jenter</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".breakingvarsel.no-image.gridspotlightside > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.15;\"><!----> <span>«Bli-med-hjem-syken»:  Må foreldre henge seg på?</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(19) > .life60.gridspotlightside.hot50 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.23;\"><!----> <span>Trønderen sjokkerte: – Takk gud for at hun kuttet ut fotball</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".is-section-sport-skin.gridspotlight.card-size-large > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 0.95;\"><!----> <span>Her må foreldrene på kvelds­skole: - Får noen åpenbaringer</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(19) > .hot70.gridspotlightside.life40 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>To personer døde. Politiet tror farlig stoff ble bestilt på internett</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".AdWithTeaser.grid:nth-child(20) > .hot60.life40.gridtriple > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <div class=\"labels labels-top\"><span class=\"label section MN24\">MN24</span> </div> <!----> <!----> <h3 style=\"--font-size-override: 1.23;\"><!----> <span>Tre leietakere er på vei inn i kjøpesenteret</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(21) > .is-section-mn24-skin.is-skin.gridtriple > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\">",
+          "target": [
+            ".is-rbk-skin.opinion.hot70 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3><!----> <span>Doblet størrelsen på leiligheten ved å bygge ut kjelleren: – Nesten som å bo i et rekkehus </span>  <!----></h3> <!----></main>",
+          "target": [
+            ".life60.gridtriple.hot50 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.45;\"><!----> <span>– Supervanskelig å få til alt</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(24) > .hot70.gridspotlight.card-size-large > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Kronprinsen bekrefter: - Er i gang med samtaler på Slottet om saken</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(24) > .gridspotlightside.hot50.life20:nth-child(2) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <div class=\"labels labels-top\"><span class=\"label section Adressa_debatt\">Adressa debatt</span> </div> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Øynene hennes lyste opp. Det var et øyeblikk av ren glede</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(24) > .is-section-meninger-skin.opinion.is-skin > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.35;\"><!----> <span>Her fyker Lerkendal til himmels</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(25) > .is-rbk-skin.hot70.is-skin > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 0.95;\"><!----> <span>Denne gruppen blir oftere sykmeldt: - Et mysterium</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(25) > .life60.hot70.gridspotlight > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Trump: Nato-land bør skyte ned russiske fly om de krenker luftrommet</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(25) > .gridspotlightside.hot50.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <div class=\"labels labels-top\"><span class=\"label section MN24\">MN24</span> </div> <!----> <!----> <h3 style=\"--font-size-override: 1.15;\"><!----> <span>Kjøpt eien­dommer for 350 mill.: - Stor interesse</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".is-section-mn24-skin.is-skin.hot60 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Svaret er klart: Stjernen blir med til Frankrike</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(27) > .is-section-sport-skin.is-skin.hot60 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Trump hardt ut mot innvandring og klimatiltak: – Går til helvete</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(27) > .gridtriple.hot50.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.10;\"><!----> <span>«Rakk ikke å komme gjennom svingen»</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(28) > .gridspotlight.card-size-large.hot60 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>TV-selskap fortsetter å holde Jimmy Kimmel av lufta</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(28) > .gridspotlightside.hot50.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>- Jeg husker jeg ble truet med bajonett under haka som barn</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(28) > .life60.gridspotlightside.hot50 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Støre om Trumps FN-tale: - En lang rekke utsagn jeg tar avstand fra</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".AdWithTeaser.flipped.grid:nth-child(30) > .gridtriple.hot50.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.45;\"><!----> <span>Streike-trøbbel for Kolstad: - Vi er framme i natt </span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(31) > .is-section-sport-skin.is-skin.hot60 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.10;\"><!----> <span>– Det føltes som å bli tråkket på av en elefant. Det var helt forferdelig</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(31) > .life60.hot70.gridspotlight > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Ett felt var stengt på E6 i Trondheim</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(31) > .gridspotlightside.hot50.life20:nth-child(3) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Høyres valgkomité i gang med å finne Solbergs etterfølger</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(31) > .no-image.gridspotlightside.hot50 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Kronprinsen om Durek og rasisme: – Kan ikke selv fullt ut forstå hvordan det oppleves</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(34) > .gridtriple.hot50.life20:nth-child(1) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Sjåfør manglet noe vesentlig da han havnet i grøfta</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(34) > .no-image.gridtriple.hot50 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Trump: FN finansierer angrep på Vesten gjennom migrasjon</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(34) > .gridtriple.hot50.life20:nth-child(3) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.10;\"><!----> <span>Måtte tas ut bakluka</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".AdWithTeaser.grid:nth-child(35) > .hot60.gridtriple.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Én mistet fører­kortet i UP-kontroll</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(36) > .no-image.gridtriple.hot50 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>WHO slår tilbake mot Trumps vaksinepåstander</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(36) > .gridtriple.hot50.life20:nth-child(2) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Regjeringen bekrefter tre krenkelser av norsk luftrom i år</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(36) > .gridtriple.hot50.life20:nth-child(3) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.23;\"><!----> <span>Her ble 18 tatt i kontroll</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".breakingvarsel.gridtriple.hot50 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.20;\"><!----> <span>– Nå er det bare «kø kø kø» i Trøndelag</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(38) > .gridspotlight.card-size-large.hot60 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Vipps med oppdatering – skal fungere over hele verden</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(38) > .no-image.gridspotlightside.hot50 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <div class=\"labels labels-top\"><span class=\"label section TRDBY\">TRDBY</span> </div> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Norske ungdommer på topp</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(38) > .is-section-trdby-skin.is-skin.gridspotlightside > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <div class=\"labels labels-top\"><span class=\"label section Adressa_debatt\">Adressa debatt</span> </div> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Hvis du vil ha trær, bo i Bymarka</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(38) > .is-section-meninger-skin.opinion.is-skin > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Økokrim: Ulovlig jakt på rovvilt truer naturmangfoldet</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".hot40.gridtriple.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.10;\"><span class=\"prefix\">I natt: </span> <span>Bil i full fyr nær bygg</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".tip > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\">",
+          "target": [
+            ".grade.is-section-kultur-skin.gridspotlight > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Årets første hummer ble solgt for over 50.000 kroner i Göteborg</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(40) > .hot40.gridspotlightside.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.23;\"><!----> <span>18-åringen får idretts­eksperter til å sperre opp øynene</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".life60.is-section-sport-skin.is-skin > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\">",
+          "target": [
+            ".h-low.is-section-meninger-skin.opinion > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.15;\"><!----> <span>– Vi kan ikke bare sette opp kamera på måfå</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(42) > .hot60.life40.gridtriple > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Dette sier Værnes etter dronekaoset</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(42) > .gridtriple.hot50.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.40;\"><!----> <span>Snart skjer et værskifte</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".hot70.gridtriple.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.05;\"><!----> <span>Politiet: – Vi forstår at det kan være uforståelig </span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(43) > .gridspotlight.card-size-large.hot60 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <div class=\"labels labels-top\"><span class=\"label section MN24\">MN24</span> </div> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>– Ny E6 vil alle ha, men hvor skal den gå?</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".is-section-mn24-skin.is-skin.gridspotlightside > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Vaskemaskin førte til utrykning i Trondheim</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(43) > .hot40.gridspotlightside.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Palestinas president ber Hamas legge ned våpnene</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".AdWithTeaser.grid:nth-child(44) > .gridtriple.hot50.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\">",
+          "target": [
+            "a[href$=\"fn-er-i-krise\"] > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Jimmy Kimmel kommer tilbake på skjermen tirsdag, ifølge Disney</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(45) > .gridtriple.hot50.life20:nth-child(2) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Reuters: Frankrike anerkjenner Palestina som selvstendig stat</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(45) > .gridtriple.hot50.life20:nth-child(3) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Scroller du når du sitter på do? Dette bør du vite</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".life40.gridtriple.hot50 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Kloakk fra 65 000 i Østfold slippes rett ut i Oslofjorden</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(46) > .no-image.gridtriple.hot50 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Hamas har offentliggjort ny gisselvideo</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(46) > .gridtriple.hot50.life20:nth-child(3) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Danmark med flere vilkår for Palestina-anerkjennelse</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".AdWithTeaser.flipped.grid:nth-child(47) > .gridtriple.hot50.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Foreslår ny vedlikeholds­milliard til jernbanen – blir «verre» før det blir bedre</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".AdWithTeaser.grid:nth-child(49) > .gridtriple.hot50.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Salmonella funnet i kjøttdeig på svenskegrensa</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(50) > .gridspotlightside.hot50.life20:nth-child(1) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.10;\"><!----> <span>– Det er mye som løser seg i siste liten</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(50) > .gridspotlight.card-size-large.hot60 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>NRK: Norge skal holde Palestina-innlegg i Sikkerhetsrådet</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".flipped.OnePlusXTeasers.grid:nth-child(50) > .gridspotlightside.hot50.life20:nth-child(3) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Mange synes plagene er pinlige. Her har hen­vendelsene skutt i været</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(51) > .gridspotlight.card-size-large.hot60 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <div class=\"labels labels-top\"><span class=\"label section TRDBY\">TRDBY</span> </div> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Høyere utdanning ikke så økonomisk lønnsomt her i landet</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(51) > .is-section-trdby-skin.is-skin.gridspotlightside > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>30 000 trøndere har denne typen strøm. Da kan Norgespris bli knotete</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".customSkin-focus-top > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Hundeeier siktet etter dødelig hundeangrep i Lørenskog</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".OnePlusXTeasers.grid:nth-child(51) > .no-image.gridspotlightside.hot50 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Brundtland: – Jeg har ikke tålmodighet for dem som kaller FN utdatert</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".AdWithTeaser.flipped.grid:nth-child(52) > .gridtriple.hot50.life20 > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <div class=\"labels labels-top\"><span class=\"label section MN24\">MN24</span> </div> <!----> <!----> <h3 style=\"--font-size-override: 1.40;\"><!----> <span>Sjømat­bedrift er konkurs</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(53) > .is-section-mn24-skin.is-skin.gridtriple > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>LO krever at regjeringen leder an i økonomisk boikott av Israel</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(53) > .gridtriple.hot50.life20:nth-child(2) > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        },
+        {
+          "html": "<main class=\"text t100\"><!----> <!----> <!----> <!----> <h3 style=\"--font-size-override: 1.00;\"><!----> <span>Erklærte seg som venn og støtte­spiller før intervju. Helt greit, mener NRK</span>  <!----></h3> <!----></main>",
+          "target": [
+            ".ThreeTeasers.grid:nth-child(53) > .hot60.life40.gridtriple > a > .t100"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-main",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one main landmark",
+      "help": "Document should not have more than one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<main class=\"Layout\">",
+          "target": [
+            ".Layout"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<aside class=\"gdpr-wrapper top\">",
+          "target": [
+            ".top"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<main class=\"Layout\">",
+          "target": [
+            ".Layout"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<a href=\"https://adresseavisen.e-pages.pub/\">eAdressa</a>",
+          "target": [
+            "a:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 2.49:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005379, surrounding text: #010101)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        },
+        {
+          "html": "<a href=\"tel:46407200\">464 07200</a>",
+          "target": [
+            "section:nth-child(4) > div > div > .Tips > dl > dd > a[href=\"tel:46407200\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 2.49:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005379, surrounding text: #010101)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        },
+        {
+          "html": "<a href=\"https://presse.no/pfu/etiske-regler/vaer-varsom-plakaten/\">Vær Varsom-plakatens</a>",
+          "target": [
+            "div > div > p > a:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 2.49:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005379, surrounding text: #010101)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        },
+        {
+          "html": "<a href=\"https://www.redaktor.no/ressurser/etiske-og-juridiske-rammeverk/redaktorplakaten\">Redaktøransvar</a>",
+          "target": [
+            "p > a:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 2.49:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005379, surrounding text: #010101)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        },
+        {
+          "html": "<a href=\"https://www.medietilsynet.no/\">Medietilsynet</a>",
+          "target": [
+            "a[href$=\"medietilsynet.no/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 2.49:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005379, surrounding text: #010101)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        },
+        {
+          "html": "<a href=\"https://www.adressa.no/nyheter/i/lVOBge/adresseavisens-rettigheter\">Adresseavisens rettigheter.</a>",
+          "target": [
+            "p > a:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 2.49:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005379, surrounding text: #010101)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<article data-height-extensions-measure=\"\" data-fetch-key=\"BreakingStripe:0\" class=\"breaking-stripe\"><a href=\"/nyheter/innenriks/i/4ByLoV/melding-om-eksplosjon-i-pilestredet-i-oslo\"><h3><span></span>Melding om eksplosjon i Pilestredet i Oslo</h3></a></article>",
+          "target": [
+            ".breaking-stripe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "tabindex",
+      "impact": "serious",
+      "description": "Ensure tabindex attribute values are not greater than 0",
+      "help": "Elements should not have tabindex greater than zero",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/tabindex?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button tabindex=\"1\" aria-controls=\"usermenu\" aria-expanded=\"false\" aria-label=\"Brukermeny\" class=\"user menu-icon\"><span class=\"user-initials\"></span> <span class=\"notification-count\" style=\"display:none;\">0</span></button>",
+          "target": [
+            ".user"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<button tabindex=\"1\" aria-controls=\"submenu\" aria-expanded=\"false\" aria-label=\"Åpne- og lukkeknapp for meny\" class=\"menu-icon main\"><span></span></button>",
+          "target": [
+            ".main"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        }
+      ]
+    }
+  ]
+}

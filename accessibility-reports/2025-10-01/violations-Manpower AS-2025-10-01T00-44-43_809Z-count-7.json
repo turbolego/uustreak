@@ -1,0 +1,282 @@
+{
+  "project": "Manpower AS",
+  "timestamp": "2025-10-01T00:44:43.809Z",
+  "url": "https://www.manpower.no/nb",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<ul role=\"checkbox\" class=\"inputs-list multi-container\">",
+          "target": [
+            "#hs-form-iframe-0",
+            ".multi-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role checkbox is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"hs-form-checkbox\" role=\"checkbox\">",
+          "target": [
+            "#hs-form-iframe-0",
+            ".hs-form-checkbox:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role checkbox is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"hs-form-checkbox\" role=\"checkbox\">",
+          "target": [
+            "#hs-form-iframe-0",
+            ".hs-form-checkbox:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role checkbox is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"hs-form-checkbox\" role=\"checkbox\">",
+          "target": [
+            "#hs-form-iframe-0",
+            ".hs-form-checkbox:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role checkbox is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "aria-required-attr",
+      "impact": "critical",
+      "description": "Ensure elements with ARIA roles have all required ARIA attributes",
+      "help": "Required ARIA attributes must be provided",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<ul role=\"checkbox\" class=\"inputs-list multi-container\">",
+          "target": [
+            "#hs-form-iframe-0",
+            ".multi-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA attribute not present: aria-checked"
+        },
+        {
+          "html": "<li class=\"hs-form-checkbox\" role=\"checkbox\">",
+          "target": [
+            "#hs-form-iframe-0",
+            ".hs-form-checkbox:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA attribute not present: aria-checked"
+        },
+        {
+          "html": "<li class=\"hs-form-checkbox\" role=\"checkbox\">",
+          "target": [
+            "#hs-form-iframe-0",
+            ".hs-form-checkbox:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA attribute not present: aria-checked"
+        },
+        {
+          "html": "<li class=\"hs-form-checkbox\" role=\"checkbox\">",
+          "target": [
+            "#hs-form-iframe-0",
+            ".hs-form-checkbox:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA attribute not present: aria-checked"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input type=\"submit\" class=\"hs-button primary large\" value=\"Send \">",
+          "target": [
+            "#hs-form-iframe-0",
+            ".hs-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.56 (foreground color: #ffffff, background color: #ff7a59, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"name\"></h3>",
+          "target": [
+            ".name"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<img alt=\"Oslo\" class=\"icon\" src=\"/-/jssmedia/project/manpowergroup/admin/blue-icons/map_point-icon-blue.svg?iar=0&amp;extension=webp%2Cavif&amp;hash=517CD3017BA7D3D899C3F05F05C734DD\">",
+          "target": [
+            "img[alt=\"Oslo\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Bergen\" class=\"icon\" src=\"/-/jssmedia/project/manpowergroup/admin/blue-icons/map_point-icon-blue.svg?iar=0&amp;extension=webp%2Cavif&amp;hash=517CD3017BA7D3D899C3F05F05C734DD\">",
+          "target": [
+            "img[alt=\"Bergen\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Stavanger\" class=\"icon\" src=\"/-/jssmedia/project/manpowergroup/admin/blue-icons/map_point-icon-blue.svg?iar=0&amp;extension=webp%2Cavif&amp;hash=517CD3017BA7D3D899C3F05F05C734DD\">",
+          "target": [
+            "img[alt=\"Stavanger\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Trondheim\" class=\"icon\" src=\"/-/jssmedia/project/manpowergroup/admin/blue-icons/map_point-icon-blue.svg?iar=0&amp;extension=webp%2Cavif&amp;hash=517CD3017BA7D3D899C3F05F05C734DD\">",
+          "target": [
+            "img[alt=\"Trondheim\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Kristiansand\" class=\"icon\" src=\"/-/jssmedia/project/manpowergroup/admin/blue-icons/map_point-icon-blue.svg?iar=0&amp;extension=webp%2Cavif&amp;hash=517CD3017BA7D3D899C3F05F05C734DD\">",
+          "target": [
+            "img[alt=\"Kristiansand\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Tromsø\" class=\"icon\" src=\"/-/jssmedia/project/manpowergroup/admin/blue-icons/map_point-icon-blue.svg?iar=0&amp;extension=webp%2Cavif&amp;hash=517CD3017BA7D3D899C3F05F05C734DD\">",
+          "target": [
+            "img[alt=\"Tromsø\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"main-nav-item    \" role=\"navigation\" tabindex=\"-1\" aria-label=\"main nav item\">",
+          "target": [
+            ".main-nav-item[aria-label=\"main nav item\"][role=\"navigation\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/nested-interactive?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<ul role=\"checkbox\" class=\"inputs-list multi-container\">",
+          "target": [
+            "#hs-form-iframe-0",
+            ".multi-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<li class=\"hs-form-checkbox\" role=\"checkbox\">",
+          "target": [
+            "#hs-form-iframe-0",
+            ".hs-form-checkbox:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<li class=\"hs-form-checkbox\" role=\"checkbox\">",
+          "target": [
+            "#hs-form-iframe-0",
+            ".hs-form-checkbox:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<li class=\"hs-form-checkbox\" role=\"checkbox\">",
+          "target": [
+            "#hs-form-iframe-0",
+            ".hs-form-checkbox:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        }
+      ]
+    }
+  ]
+}

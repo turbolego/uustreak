@@ -1,0 +1,152 @@
+{
+  "project": "Asker og Bærum Budstikke AS",
+  "timestamp": "2025-09-28T00:46:58.927Z",
+  "url": "https://www.budstikka.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<iframe frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" topmargin=\"0\" leftmargin=\"0\" allowtransparency=\"true\" width=\"980\" height=\"300\" id=\"adn-sup-0.7145836215022194\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.7145836215022194"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe style=\"display: block;margin: 0;borderWidth: 0; padding: 0;\" scrolling=\"no\" width=\"980\" height=\"300\" frameborder=\"0\" srcdoc=\"&lt;!DOCTYPE html&gt;\n&lt;html lang=&quot;en&quot;&gt;\n&lt;head&gt;&lt;base href=&quot;https://assets.adnuntius.com/cfaeba/ktljjbhnzrh2vh28b5lccw2dzqn79tyhw7pxsh72d7yxlsn8b6/&quot;&gt;\n&lt;script&gt;\nvar adnClickDestination=&quot;https://delivery.adnuntius.com/c/D5Kw9BUoewD_C6DIpqdU5WPuI2wRpk8xVv-rHjO827gAAAAQCtjQz9kbGWD4nuZy3q6HaHGLUoKr-PeVBkeEOL-HfY7xok8FNQetD5uJw_y8Rn0an1DoBQlU8R-1uQ-cwOTJ7uok2g2iCpAliScNRFaz229vQN008HJrZC6p8oVDFz94XYdBAdkerUVjsLqXAeqXuLvIgG34EEvJYBKVDEoqx6Oe90sHCrPeMbF_BPQ6dpefG3p-8miaZOXMw5h9m-UpeUFbuslG4q1yB8IkRm76q_DJ4rAebKLe_iIAd48yDrFgetjgpuLSBBdVakArUcU-kx5BhKBBNQLr?r=https%3A%2F%2Fwww.chilimobil.no%2Fmobilabonnement%2F1-gb%2F%3Futm_source%3Dc-alt%26utm_medium%3Ddisplay%26utm_campaign%3Dvurdere%26utm_content%3D1GB_amedia&quot;;\n&lt;/script&gt;\n\n  &lt;meta charset=&quot;UTF-8&quot; /&gt;\n  &lt;meta name=&quot;ad.size&quot; content=&quot;width=980,height=300&quot;&gt;\n  &lt;script type=&quot;text/javascript&quot;&gt;\n    var clickTag = &quot;https://delivery.adnuntius.com/c/D5Kw9BUoewD_C6DIpqdU5WPuI2wRpk8xVv-rHjO827gAAAAQCtjQz9kbGWD4nuZy3q6HaHGLUoKr-PeVBkeEOL-HfY7xok8FNQetD5uJw_y8Rn0an1DoBQlU8R-1uQ-cwOTJ7uok2g2iCpAliScNRFaz229vQN008HJrZC6p8oVDFz94XYdBAdkerUVjsLqXAeqXuLvIgG34EEvJYBKVDEoqx6Oe90sHCrPeMbF_BPQ6dpefG3p-8miaZOXMw5h9m-UpeUFbuslG4q1yB8IkRm76q_DJ4rAebKLe_iIAd48yDrFgetjgpuLSBBdVakArUcU-kx5BhKBBNQLr?r=https%3A%2F%2Fwww.chilimobil.no%2Fmobilabonnement%2F1-gb%2F%3Futm_source%3Dc-alt%26utm_medium%3Ddisplay%26utm_campaign%3Dvurdere%26utm_content%3D1GB_amedia&quot;;\n  &lt;/script&gt;\n  &lt;title&gt;Banner Ad&lt;/title&gt;\n  &lt;style&gt;\n    body, html {\n      margin: 0;\n      padding: 0;\n      width: 980px;\n      height: 300px;\n      overflow: hidden;\n      background: #fff;\n      position: relative;\n      font-family: sans-serif;\n    }\n\n    #clickArea {\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: inherit;\n      height: inherit;\n      cursor: pointer;\n      background-color: #FF4597;\n    }\n\n    #sprite {\n      position: absolute;\n      top: 50%;\n      left: 50%;\n      transform: translate(-50%, -50%);\n      max-width: 100%;\n      max-height: 100%;\n      z-index: 1;\n    }\n\n    #mobile {\n      position: absolute;\n      top: 30px;\n      right: 30px;\n      width: 97px;\n      z-index: 100;\n    }\n\n\n    #logo {\n      position: absolute;\n      top: 38px;\n      left: 38px;\n      width: 126px;\n      z-index: 100;\n    }\n  &lt;/style&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\n  &lt;a href=&quot;javascript:void(window.open(window.clickTag))&quot; id=&quot;clickArea&quot;&gt;\n    &lt;img src=&quot;c1.png&quot; alt=&quot;Mobile Animation&quot; id=&quot;mobile&quot;&gt;\n    &lt;img src=&quot;01.png&quot; alt=&quot;Sprite&quot; id=&quot;sprite&quot;&gt;\n    &lt;img src=&quot;logo.png&quot; id=&quot;logo&quot;&gt;\n  &lt;/a&gt;\n  \n  &lt;script&gt;\n    const animationSpeed = 460;\n  \n    let playing = true;\n    let useAlt = false;\n    let isHovering = false;\n  \n    const sprite = document.getElementById('sprite');\n    const mobileElem = document.getElementById('mobile');\n  \n    function showFrame(src) {\n      sprite.src = src;\n    }\n  \n    function startSpriteLoop() {\n      let state = 0;\n      function loop() {\n        if (!playing) return;\n        if (state === 0) {\n          showFrame('01.png');\n          state = 1;\n        } else {\n          if (useAlt) {\n            showFrame('03.png');\n            useAlt = false;\n          } else {\n            showFrame('02.png');\n          }\n          state = 0;\n        }\n        setTimeout(loop, animationSpeed);\n      }\n      loop();\n    }\n  \n    function triggerAltRandomly() {\n      if (!playing) return;\n      if (!isHovering) {\n        useAlt = true;\n      }\n      const nextDelay = Math.random() * 3000 + 2000;\n      setTimeout(triggerAltRandomly, nextDelay);\n    }\n  \n    const mobileFrames = ['c1.png', 'c2.png', 'c3.png'];\n    let mobileFrameIndex = 0;\n  \n    function startMobileLoop() {\n      if (!playing) return;\n      mobileElem.src = mobileFrames[mobileFrameIndex];\n      mobileFrameIndex = (mobileFrameIndex + 1) % mobileFrames.length;\n      setTimeout(startMobileLoop, animationSpeed);\n    }\n  \n    // Force stop after 30 seconds, no matter what\n    setTimeout(() =&gt; {\n      playing = false;\n    }, 30000);\n  \n    document.getElementById('clickArea').addEventListener('mouseenter', () =&gt; {\n      isHovering = true;\n    });\n  \n    document.getElementById('clickArea').addEventListener('mouseleave', () =&gt; {\n      isHovering = false;\n    });\n  \n    startSpriteLoop();\n    startMobileLoop();\n    triggerAltRandomly();\n  &lt;/script&gt;\n\n&lt;script&gt;\n  const clickArea = document.getElementById('clickArea');\n  const logoElem = document.getElementById('logo');\n\n  // Create hover overlay\n  const hoverOverlay = document.createElement('img');\n  hoverOverlay.src = '04.png';\n  hoverOverlay.alt = 'Hover Overlay';\n  hoverOverlay.style.position = 'absolute';\n  hoverOverlay.style.top = '0';\n  hoverOverlay.style.left = '0';\n  hoverOverlay.style.width = '100%';\n  hoverOverlay.style.height = '100%';\n  hoverOverlay.style.zIndex = '10';\n  hoverOverlay.style.display = 'none';\n  hoverOverlay.style.pointerEvents = 'none'; // Prevents hover interruption\n  clickArea.appendChild(hoverOverlay);\n\n  // Hover in\n  clickArea.addEventListener('mouseenter', () =&gt; {\n    hoverOverlay.style.display = 'block';\n    if (logoElem) logoElem.src = 'logo-neg.png';\n  });\n\n  // Hover out\n  clickArea.addEventListener('mouseleave', () =&gt; {\n    hoverOverlay.style.display = 'none';\n    if (logoElem) logoElem.src = 'logo.png';\n  });\n&lt;/script&gt;\n\n\n&lt;/body&gt;\n&lt;/html&gt;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.7145836215022194",
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img src=\"logo.png\" id=\"logo\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.7145836215022194",
+            "iframe",
+            "#logo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-7fa62a9e-9752-4bee-a07e-b559ba9dfa9a\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"9\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.budstikka.no/gfx/small-positive.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.budstikka.no/tilbud\" publication=\"www.budstikka.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layout=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_toppbanner am-bazaar-ad--labeled\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.budstikka.no/toppbanner_1\" pageview-id=\"ad60d52a-55a0-49a7-a7ea-296801f1024b\" has-bid=\"\" render-count=\"1\" render-time=\"1759020410391\" advertiser-id=\"703459736\" order-id=\"690956216\" lineitem-id=\"1018520456\" creative-id=\"138442426269\" ad-size=\"980,300\" slot-targeting=\"keyword=forsiden,autolayout,dominans,forsiden_1,format=toppbanner,position=1,adnami_format=skin,lwrefresh=false,hb_crid=,hb_adomain=,hb_format=banner,hb_source=,hb_size=980x300,hb_pb=14.49,hb_adid=736ca403645d3d6,hb_bidder=adnuntius\" hb_pb=\"14.49\" prebid-price-group=\"15\" lineitem-type=\"AD_EXCHANGE\" itemscope=\"\" itemtype=\"http://schema.org/WPAdBlock\" is-empty=\"false\" is-prebid=\"\" prebid-bidder=\"adnuntius\" prebid-cpm=\"14.5359\" prebid-creativeid=\"2swbyz2ptvjmpps5\" prebid-creativeid-count=\"1\" is-viewable=\"true\" style=\"min-height: 0px;\">",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
