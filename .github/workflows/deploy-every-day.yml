@@ -312,19 +312,42 @@ jobs:
         run: |
           echo "Creating gzip archives for JSON reports by date..."
           
-          # Find all date directories in accessibility-reports
-          find gh-pages-branch/accessibility-reports -maxdepth 1 -type d -name "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" | while read -r date_dir; do
-            DATE=$(basename "$date_dir")
+          # Build a unique list of all dates from both violation reports and summaries
+          DATES=()
+          
+          # Add dates from violation report directories
+          while IFS= read -r date_dir; do
+            if [ -n "$date_dir" ]; then
+              DATES+=("$(basename "$date_dir")")
+            fi
+          done < <(find gh-pages-branch/accessibility-reports -maxdepth 1 -type d -name "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]")
+          
+          # Add dates from summary directories
+          if [ -d "gh-pages-branch/accessibility-reports/summaries" ]; then
+            while IFS= read -r summary_dir; do
+              if [ -n "$summary_dir" ]; then
+                DATES+=("$(basename "$summary_dir")")
+              fi
+            done < <(find gh-pages-branch/accessibility-reports/summaries -maxdepth 1 -type d -name "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]")
+          fi
+          
+          # Get unique sorted dates
+          UNIQUE_DATES=($(printf '%s\n' "${DATES[@]}" | sort -u))
+          
+          echo "Found ${#UNIQUE_DATES[@]} unique dates to archive"
+          
+          # Process each unique date
+          for DATE in "${UNIQUE_DATES[@]}"; do
             echo "Creating gzip archive for date: $DATE"
             
             # Create temporary directory for organizing files
             TEMP_DIR="temp_$DATE"
             mkdir -p "$TEMP_DIR"
             
-            # Copy all JSON files for this date to temp directory
-            if [ -d "$date_dir" ]; then
-              find "$date_dir" -name "*.json" -exec cp {} "$TEMP_DIR/" \;
-              echo "Found $(find "$date_dir" -name "*.json" | wc -l) JSON files for $DATE"
+            # Copy all JSON files for this date from violation reports directory
+            if [ -d "gh-pages-branch/accessibility-reports/$DATE" ]; then
+              find "gh-pages-branch/accessibility-reports/$DATE" -name "*.json" -exec cp {} "$TEMP_DIR/" \;
+              echo "Found $(find "gh-pages-branch/accessibility-reports/$DATE" -name "*.json" | wc -l) violation report files for $DATE"
             fi
             
             # Also include summary files for this date if they exist
