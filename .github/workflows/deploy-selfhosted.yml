@@ -419,6 +419,8 @@ jobs:
           NODE_OPTIONS: "--max_old_space_size=4096"
           BATCH_INDEX: ${{ matrix.batch }}
           PREFER_HASH_URL: "true"
+          PLAYWRIGHT_BROWSERS_PATH: ~/.cache/ms-playwright
+          PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS: "1"
         run: |
           echo "=== Starting WCAG tests for batch ${{ matrix.batch }} ==="
           
