@@ -382,7 +382,7 @@ jobs:
           echo "Installing Playwright browsers..."
           
           # Set browser cache path
-          export PLAYWRIGHT_BROWSERS_PATH=~/.cache/ms-playwright
+          export PLAYWRIGHT_BROWSERS_PATH=$HOME/.cache/ms-playwright
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
           
           # Create browsers directory if it doesn't exist
@@ -419,9 +419,11 @@ jobs:
           NODE_OPTIONS: "--max_old_space_size=4096"
           BATCH_INDEX: ${{ matrix.batch }}
           PREFER_HASH_URL: "true"
-          PLAYWRIGHT_BROWSERS_PATH: ~/.cache/ms-playwright
-          PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS: "1"
         run: |
+          # Set Playwright browser path for consistent location
+          export PLAYWRIGHT_BROWSERS_PATH="$HOME/.cache/ms-playwright"
+          export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
+          
           echo "=== Starting WCAG tests for batch ${{ matrix.batch }} ==="
           
           # Verify test files exist
