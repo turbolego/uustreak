@@ -177,7 +177,8 @@ jobs:
           BATCH_COUNT=$(( (TOTAL_SPECS + TARGET_TESTS_PER_BATCH - 1) / TARGET_TESTS_PER_BATCH ))
 
           # Use conservative parallelism for self-hosted runners
-          AVAILABLE_CORES=$(nproc)
+          # Cross-platform CPU core detection (Linux: nproc, macOS: sysctl)
+          AVAILABLE_CORES=$(nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo "4")
           MAX_PARALLEL=$((AVAILABLE_CORES / 4))
           if [ "$MAX_PARALLEL" -gt 4 ]; then
             MAX_PARALLEL=4
@@ -310,9 +311,17 @@ jobs:
         run: |
           echo "=== System Resources Before npm install ==="
           echo "Memory info:"
-          free -h
+          # Cross-platform memory check (Linux: free, macOS: vm_stat)
+          if command -v free >/dev/null 2>&1; then
+            free -h
+          else
+            # macOS alternative
+            vm_stat | perl -ne '/page size of (\d+)/ and $size=$1; /Pages\s+(\w+):\s+(\d+)/ and printf("%-16s % 16.2f Mi\n", "$1:", $2 * $size / 1048576);'
+          fi
           echo "CPU info:"
-          nproc
+          # Cross-platform CPU core count
+          CORES=$(nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo "unknown")
+          echo "CPU cores: $CORES"
           echo "CPU load average:"
           uptime
           echo "Disk space:"
@@ -320,7 +329,12 @@ jobs:
           echo "Temp directory space:"
           df -h /tmp
           echo "Available inodes:"
-          df -i /
+          # Cross-platform inode check (Linux: df -i, macOS: df -i works but format differs)
+          if df -i / >/dev/null 2>&1; then
+            df -i /
+          else
+            echo "Inode information not available on this system"
+          fi
           echo "Running processes:"
           ps aux | grep -E '(npm|node)' || echo "No npm/node processes running"
           echo "Network connectivity test:"
@@ -424,7 +438,8 @@ jobs:
           TARGET_TESTS_PER_BATCH=8
           BATCH_COUNT=$(( (TOTAL_SPECS + TARGET_TESTS_PER_BATCH - 1) / TARGET_TESTS_PER_BATCH ))
 
-          AVAILABLE_CORES=$(nproc)
+          # Cross-platform CPU core detection (Linux: nproc, macOS: sysctl)
+          AVAILABLE_CORES=$(nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo "4")
           MAX_PARALLEL=$((AVAILABLE_CORES / 4))
           if [ "$MAX_PARALLEL" -gt 4 ]; then
             MAX_PARALLEL=4
@@ -1158,7 +1173,7 @@ jobs:
           echo "Verifying archives before deployment..."
           
           if [ -f "gh-pages-branch/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz" ]; then
-            ARCHIVE_SIZE=$(stat -c%s "gh-pages-branch/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz" 2>/dev/null || stat -f%z "gh-pages-branch/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz" 2>/dev/null)
+            ARCHIVE_SIZE=$(stat -f%z "gh-pages-branch/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz" 2>/dev/null || stat -c%s "gh-pages-branch/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz" 2>/dev/null)
             echo "✅ Archive exists: reports_${CURRENT_DATE}.tar.gz (Size: $ARCHIVE_SIZE bytes)"
             
             # Verify archive integrity
