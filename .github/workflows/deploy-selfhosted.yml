@@ -68,6 +68,7 @@ jobs:
 
       - name: Configure Git for authentication
         run: |
+          git config --global credential.helper ""
           git config --global url."https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
           git config --global user.email "github-actions@github.com"
           git config --global user.name "GitHub Actions"
@@ -726,6 +727,7 @@ jobs:
 
       - name: Configure Git to use GitHub token
         run: |
+          git config --global credential.helper ""
           git config --global url."https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
           git config --global user.email "github-actions@github.com"
           git config --global user.name "GitHub Actions"
