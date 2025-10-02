@@ -429,7 +429,11 @@ jobs:
             exit 1
           fi
           
-          mapfile -t ALL_SPECS < <(ls tests/*.spec.ts)
+          # Bash 3.2 compatible array population (macOS default bash doesn't support mapfile)
+          ALL_SPECS=()
+          while IFS= read -r -d '' file; do
+            ALL_SPECS+=("$file")
+          done < <(find tests -maxdepth 1 -name "*.spec.ts" -print0 | sort -z)
           TOTAL_SPECS=${#ALL_SPECS[@]}
 
           echo "Found $TOTAL_SPECS test specification files"
