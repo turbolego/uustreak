@@ -193,7 +193,8 @@ jobs:
 
           BATCH_SIZE=$(( (TOTAL_SPECS + BATCH_COUNT - 1) / BATCH_COUNT ))
 
-          BATCHES=$(seq -s ',' 0 $((BATCH_COUNT - 1)) | jq -R 'split(",")' | jq -c '{batch: .}')
+          # Generate matrix as array of objects: [{"batch": "0"}, {"batch": "1"}, ...]
+          BATCHES=$(seq 0 $((BATCH_COUNT - 1)) | jq -R . | jq -s 'map({"batch": .})' | jq -c '{batch: .}')
           echo "matrix=$BATCHES" >> $GITHUB_OUTPUT
           echo "Total specs: $TOTAL_SPECS"
           echo "Batch count: $BATCH_COUNT"
@@ -415,7 +416,7 @@ jobs:
           echo "Verifying browser installations..."
           ls -la "$PLAYWRIGHT_BROWSERS_PATH" || echo "Browser cache directory listing failed"
 
-      - name: Run WCAG Accessibility Tests for batch
+      - name: Run WCAG Accessibility Tests for batch ${{ matrix.batch }}
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
           BATCH_INDEX: ${{ matrix.batch }}
