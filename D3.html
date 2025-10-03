@@ -220,6 +220,17 @@
                 <option value="90">Last 90 Days</option>
                 <option value="all">All Data</option>
             </select>
+            <label for="y-axis">Y-Axis Metric:</label>
+            <select id="y-axis">
+                <option value="total">Total Violations</option>
+                <option value="critical">Critical Severity</option>
+                <option value="serious">Serious Severity</option>
+                <option value="moderate">Moderate Severity</option>
+                <option value="minor">Minor Severity</option>
+                <optgroup label="WCAG Tags" id="tag-options">
+                    <!-- Will be populated dynamically -->
+                </optgroup>
+            </select>
             <label for="speed">Speed:</label>
             <select id="speed">
                 <option value="3000">Slow</option>
@@ -239,7 +250,7 @@
 
     <div class="info-box">
         <div><strong>X-Axis:</strong> Days Since First Report</div>
-        <div><strong>Y-Axis:</strong> Total Violations</div>
+        <div><strong>Y-Axis:</strong> <span id="y-axis-label">Total Violations</span></div>
         <div><strong>Bubble Size:</strong> Number of Critical Issues</div>
         <div style="margin-top: 0.5rem; font-size: 0.8rem; color: #666;">
             Hover over bubbles for details. Click Play/Pause to control animation.
@@ -257,10 +268,12 @@
         let availableDates = [];
         let allProjectsData = new Map();
         let allProjects = new Set();
+        let allTags = new Set();
         let animationTimer = null;
         let isPlaying = false;
         let currentYearIndex = 0;
         let animationSpeed = 1500;
+        let currentYAxisMetric = 'total';
 
         // Chart dimensions
         const margin = { top: 20, right: 100, bottom: 60, left: 80 };
@@ -317,6 +330,9 @@
 
                 // Load data for the default date range
                 await loadDataForDateRange(30);
+
+                // Populate Y-axis tag options
+                populateYAxisOptions();
 
                 // Create scales and axes
                 createScalesAndAxes();
@@ -422,11 +438,23 @@
                             minor: 0
                         };
 
+                        // Extract tag information from violations
+                        const tagCounts = {};
+
                         if (report.violations && Array.isArray(report.violations)) {
                             report.violations.forEach(violation => {
                                 const impact = (violation.impact || 'moderate').toLowerCase();
                                 if (severityCount.hasOwnProperty(impact)) {
                                     severityCount[impact] += violation.nodes?.length || 1;
+                                }
+
+                                // Count tags
+                                if (violation.tags && Array.isArray(violation.tags)) {
+                                    violation.tags.forEach(tag => {
+                                        allTags.add(tag);
+                                        const nodeCount = violation.nodes?.length || 1;
+                                        tagCounts[tag] = (tagCounts[tag] || 0) + nodeCount;
+                                    });
                                 }
                             });
                         }
@@ -435,6 +463,7 @@
                             time: parsed.time,
                             violations: report.total_violations || 0,
                             severityCount: severityCount,
+                            tagCounts: tagCounts,
                             details: report
                         });
                     }
@@ -444,6 +473,64 @@
             } catch (error) {
                 console.warn(`Archive not available for ${date}:`, error);
             }
+        }
+
+        // Populate Y-axis options with available tags
+        function populateYAxisOptions() {
+            const optgroup = document.getElementById('tag-options');
+            optgroup.innerHTML = '';
+
+            // Prioritize common WCAG tags
+            const priorityTags = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'wcag111', 'wcag412', 'wcag131'];
+            
+            const sortedTags = Array.from(allTags).sort((a, b) => {
+                const aPriority = priorityTags.indexOf(a);
+                const bPriority = priorityTags.indexOf(b);
+                
+                if (aPriority !== -1 && bPriority !== -1) return aPriority - bPriority;
+                if (aPriority !== -1) return -1;
+                if (bPriority !== -1) return 1;
+                return a.localeCompare(b);
+            });
+
+            sortedTags.forEach(tag => {
+                const option = document.createElement('option');
+                option.value = `tag:${tag}`;
+                option.textContent = tag;
+                optgroup.appendChild(option);
+            });
+        }
+
+        // Get Y-axis value for a project based on selected metric
+        function getYAxisValue(projectData, metric) {
+            if (metric === 'total') {
+                return projectData.violations;
+            } else if (metric === 'critical' || metric === 'serious' || metric === 'moderate' || metric === 'minor') {
+                return projectData.severityCount[metric] || 0;
+            } else if (metric.startsWith('tag:')) {
+                const tag = metric.substring(4);
+                return projectData.tagCounts[tag] || 0;
+            }
+            return 0;
+        }
+
+        // Get label for Y-axis based on selected metric
+        function getYAxisLabel(metric) {
+            if (metric === 'total') {
+                return 'Total Violations';
+            } else if (metric === 'critical') {
+                return 'Critical Violations';
+            } else if (metric === 'serious') {
+                return 'Serious Violations';
+            } else if (metric === 'moderate') {
+                return 'Moderate Violations';
+            } else if (metric === 'minor') {
+                return 'Minor Violations';
+            } else if (metric.startsWith('tag:')) {
+                const tag = metric.substring(4);
+                return `${tag.toUpperCase()} Violations`;
+            }
+            return 'Violations';
         }
 
         // Create scales and axes
@@ -464,7 +551,7 @@
                         project: project,
                         date: date,
                         daysSinceFirst: daysSinceFirst,
-                        violations: data.violations,
+                        yValue: getYAxisValue(data, currentYAxisMetric),
                         critical: data.severityCount.critical
                     });
                 });
@@ -476,9 +563,9 @@
                 .range([0, width])
                 .nice();
 
-            // Y scale: total violations
+            // Y scale: based on selected metric
             const yScale = d3.scaleLinear()
-                .domain([0, d3.max(allData, d => d.violations) || 100])
+                .domain([0, d3.max(allData, d => d.yValue) || 100])
                 .range([height, 0])
                 .nice();
 
@@ -518,7 +605,7 @@
                 .attr("x", -height / 2)
                 .attr("y", -60)
                 .attr("text-anchor", "middle")
-                .text("Total Violations");
+                .text(getYAxisLabel(currentYAxisMetric));
 
             // Start with first frame
             updateChart(dates[0]);
@@ -552,9 +639,11 @@
                     project: project,
                     daysSinceFirst: daysSinceFirst,
                     violations: data.violations,
+                    yValue: getYAxisValue(data, currentYAxisMetric),
                     critical: data.severityCount.critical,
                     severity: dominantSeverity,
-                    severityBreakdown: data.severityCount
+                    severityBreakdown: data.severityCount,
+                    tagCounts: data.tagCounts
                 });
             });
 
@@ -574,23 +663,32 @@
                 .append("circle")
                 .attr("class", "country")
                 .attr("cx", d => window.xScale(d.daysSinceFirst))
-                .attr("cy", d => window.yScale(d.violations))
+                .attr("cy", d => window.yScale(d.yValue))
                 .attr("r", 0)
                 .attr("fill", d => colorScale(d.severity))
                 .attr("opacity", 0.7)
                 .on("mouseover", function(event, d) {
                     d3.select(this).attr("opacity", 1);
+                    
+                    // Build tooltip content dynamically
+                    let tooltipContent = `<strong>${d.project}</strong>`;
+                    tooltipContent += `<div>Total Violations: ${d.violations}</div>`;
+                    tooltipContent += `<div>Critical: ${d.severityBreakdown.critical}</div>`;
+                    tooltipContent += `<div>Serious: ${d.severityBreakdown.serious}</div>`;
+                    tooltipContent += `<div>Moderate: ${d.severityBreakdown.moderate}</div>`;
+                    tooltipContent += `<div>Minor: ${d.severityBreakdown.minor}</div>`;
+                    
+                    // If viewing a specific tag, show its count
+                    if (currentYAxisMetric.startsWith('tag:')) {
+                        const tag = currentYAxisMetric.substring(4);
+                        tooltipContent += `<div style="margin-top: 0.25rem; font-weight: bold;">${tag}: ${d.yValue}</div>`;
+                    }
+                    
+                    tooltipContent += `<div style="margin-top: 0.25rem; color: #666;">Day ${d.daysSinceFirst}</div>`;
+                    
                     tooltip
                         .style("opacity", 1)
-                        .html(`
-                            <strong>${d.project}</strong>
-                            <div>Total Violations: ${d.violations}</div>
-                            <div>Critical: ${d.severityBreakdown.critical}</div>
-                            <div>Serious: ${d.severityBreakdown.serious}</div>
-                            <div>Moderate: ${d.severityBreakdown.moderate}</div>
-                            <div>Minor: ${d.severityBreakdown.minor}</div>
-                            <div style="margin-top: 0.25rem; color: #666;">Day ${d.daysSinceFirst}</div>
-                        `)
+                        .html(tooltipContent)
                         .style("left", (event.pageX + 10) + "px")
                         .style("top", (event.pageY - 28) + "px");
                 })
@@ -604,7 +702,7 @@
                 .transition()
                 .duration(1000)
                 .attr("cx", d => window.xScale(d.daysSinceFirst))
-                .attr("cy", d => window.yScale(d.violations))
+                .attr("cy", d => window.yScale(d.yValue))
                 .attr("r", d => window.sizeScale(d.critical))
                 .attr("fill", d => colorScale(d.severity));
 
@@ -679,6 +777,27 @@
             }
         });
 
+        document.getElementById('y-axis').addEventListener('change', function() {
+            currentYAxisMetric = this.value;
+            
+            // Update info box label
+            document.getElementById('y-axis-label').textContent = getYAxisLabel(currentYAxisMetric);
+            
+            // Stop animation if playing
+            if (isPlaying) {
+                togglePlayPause();
+            }
+            
+            // Clear existing chart
+            plotG.selectAll("*").remove();
+            
+            // Recreate chart with new Y-axis
+            createScalesAndAxes();
+            
+            // Reset animation
+            currentYearIndex = 0;
+        });
+
         document.getElementById('date-range').addEventListener('change', async function() {
             const value = this.value;
             const days = value === 'all' ? 'all' : parseInt(value);
@@ -693,6 +812,9 @@
             
             // Reload data
             await loadDataForDateRange(days);
+            
+            // Repopulate Y-axis options
+            populateYAxisOptions();
             
             // Recreate chart
             createScalesAndAxes();
