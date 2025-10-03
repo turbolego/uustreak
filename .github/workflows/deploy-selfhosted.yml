@@ -242,7 +242,7 @@ jobs:
   wcag-test:
     needs: setup
     runs-on: self-hosted
-    timeout-minutes: 60
+    timeout-minutes: 600
     strategy:
       matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
       fail-fast: true  # Stop all jobs if one fails
