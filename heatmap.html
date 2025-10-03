@@ -232,10 +232,10 @@
             
             <label for="dateRange">Date Range:</label>
             <select id="dateRange">
-                <option value="all">All Time</option>
+                <option value="all" selected>All Loaded Data</option>
                 <option value="30">Last 30 Days</option>
                 <option value="60">Last 60 Days</option>
-                <option value="90" selected>Last 90 Days</option>
+                <option value="90">Last 90 Days</option>
             </select>
 
             <button id="refreshBtn">Refresh Data</button>
@@ -474,8 +474,9 @@
 
                 debugLog(`Successfully loaded ${loadedDates} dates with ${allProjects.size} projects`);
 
-                // Update allDates to only include dates we have data for
+                // Update allDates to only include dates we actually loaded (not all dates found)
                 allDates = Array.from(dateProjectMap.keys()).sort();
+                debugLog(`allDates contains ${allDates.length} dates with actual data`);
 
                 // Create data structure: project -> date -> data
                 const projectData = {};
