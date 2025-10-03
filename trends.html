@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCAG Violation Trends by Tag</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="gzip-utils.js"></script>
+    <script src="loading.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #f5f5f5;
+            padding-bottom: 2rem;
+        }
+
+        .header {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header h1 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .header-subtitle {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0.75rem;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .control-group label {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #555;
+        }
+
+        .control-group select {
+            padding: 0.4rem 0.6rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            min-width: 150px;
+        }
+
+        .control-group button {
+            padding: 0.4rem 1rem;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .control-group button:hover {
+            background-color: #0D47A1;
+        }
+
+        .main-content {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .chart-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .chart-section h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .chart-section .description {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .chart-wrapper {
+            position: relative;
+            height: 400px;
+            margin-bottom: 1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .stat-card {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2196F3;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tag-filter {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .tag-filter h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .tag-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag-chip {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 0.75rem;
+            background: #e3f2fd;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+            user-select: none;
+        }
+
+        .tag-chip:hover {
+            background: #bbdefb;
+        }
+
+        .tag-chip.selected {
+            background: #2196F3;
+            color: white;
+            border-color: #1976D2;
+        }
+
+        .tag-chip input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+
+        .tag-chip-label {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .loading-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            text-align: center;
+            z-index: 200;
+        }
+
+        .loading-message.hidden {
+            display: none;
+        }
+
+        .info-banner {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .info-banner h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-banner p {
+            font-size: 0.95rem;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .header-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .control-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .control-group select,
+            .control-group button {
+                width: 100%;
+            }
+
+            .chart-wrapper {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 WCAG Violation Trends by Tag</h1>
+        <p class="header-subtitle">Track how different WCAG violation types evolve over time across all projects</p>
+        
+        <div class="header-controls">
+            <div class="control-group">
+                <label for="date-range">Date Range:</label>
+                <select id="date-range">
+                    <option value="7">Last 7 Days</option>
+                    <option value="14">Last 14 Days</option>
+                    <option value="30" selected>Last 30 Days</option>
+                    <option value="60">Last 60 Days</option>
+                    <option value="90">Last 90 Days</option>
+                    <option value="all">All Data</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="project-filter">Project Filter:</label>
+                <select id="project-filter">
+                    <option value="all">All Projects</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <button id="refresh-data">🔄 Refresh Data</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="info-banner">
+            <h3>🎯 Understanding WCAG Tag Trends</h3>
+            <p>
+                This dashboard tracks violations by WCAG conformance level and version tags. 
+                <strong>wcag2a/wcag2aa</strong> represent WCAG 2.0 Level A/AA criteria, 
+                <strong>wcag21a/wcag21aa</strong> are WCAG 2.1 additions, and 
+                <strong>wcag22aa</strong> represents WCAG 2.2. Use the filters to focus on specific violation types 
+                and see how your projects are improving over time.
+            </p>
+        </div>
+
+        <div class="tag-filter">
+            <h3>🏷️ Select Tags to Display</h3>
+            <div class="tag-chips" id="tag-chips"></div>
+        </div>
+
+        <div class="chart-section">
+            <h2>📈 Overall Trend - All Selected Tags</h2>
+            <p class="description">
+                Combined view showing total violations for each selected WCAG tag over time. 
+                This helps identify which conformance levels need the most attention.
+            </p>
+            <div class="chart-wrapper">
+                <canvas id="overallChart"></canvas>
+            </div>
+            <div class="stats-grid" id="overall-stats"></div>
+        </div>
+
+        <div class="chart-section">
+            <h2>📊 Individual Tag Breakdown</h2>
+            <p class="description">
+                Separate charts for each WCAG tag showing detailed trends. Click on project names in the legend to show/hide specific projects.
+            </p>
+            <div id="individual-charts"></div>
+        </div>
+    </div>
+
+    <div class="loading-message" id="loadingMessage">
+        <h2>Loading data...</h2>
+        <p>Please wait while we analyze the reports.</p>
+    </div>
+
+    <script>
+        // Global state
+        let reportList = [];
+        let availableDates = [];
+        let allProjectsData = new Map(); // date -> project -> tag data
+        let allProjects = new Set();
+        let allTags = new Set();
+        let selectedTags = new Set(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa']);
+        let charts = {};
+
+        // Common WCAG tags to prioritize
+        const priorityTags = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'wcag111', 'wcag412', 'wcag131'];
+
+        // Color palette for tags
+        const tagColors = {
+            'wcag2a': '#e53935',
+            'wcag2aa': '#d81b60',
+            'wcag21a': '#8e24aa',
+            'wcag21aa': '#5e35b1',
+            'wcag22aa': '#3949ab',
+            'wcag111': '#1e88e5',
+            'wcag131': '#00acc1',
+            'wcag412': '#00897b',
+        };
+
+        // Initialize
+        async function initialize() {
+            try {
+                showLoadingMessage(true);
+                
+                if (typeof fetchAndDecompressArchive !== 'function') {
+                    throw new Error('Gzip utilities not loaded. Please ensure gzip-utils.js is loaded.');
+                }
+
+                // Fetch report list
+                const response = await fetch('historical-data/report-list.json');
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch report list: ${response.statusText}`);
+                }
+                
+                reportList = await response.json();
+                console.log(`Loaded ${reportList.length} reports from list`);
+
+                // Extract available dates
+                availableDates = extractDates(reportList);
+                console.log(`Found ${availableDates.length} unique dates`);
+
+                // Load data for the default date range
+                await loadDataForDateRange(30);
+
+                // Populate project filter
+                populateProjectFilter();
+
+                // Create tag filter chips
+                createTagFilter();
+
+                // Create charts
+                createAllCharts();
+
+                showLoadingMessage(false);
+            } catch (error) {
+                console.error('Initialization error:', error);
+                alert(`Failed to initialize: ${error.message}`);
+                showLoadingMessage(false);
+            }
+        }
+
+        // Extract unique dates
+        function extractDates(reports) {
+            const dates = new Set();
+            reports.forEach(filename => {
+                if (filename.includes('-FAILED.json')) return;
+                const match = filename.match(/\d{4}-\d{2}-\d{2}/);
+                if (match) {
+                    dates.add(match[0]);
+                }
+            });
+            return Array.from(dates).sort();
+        }
+
+        // Parse report filename
+        function parseReportFilename(filename) {
+            if (filename.includes('-FAILED.json')) return null;
+            
+            const match = filename.match(/violations-(.+)-(\d{4}-\d{2}-\d{2})T(\d{2}-\d{2}-\d{2}_\d{3}Z)(?:-count-(\d+))?\.json$/);
+            if (!match) return null;
+
+            return {
+                filename,
+                project: match[1].replace(/_/g, ' '),
+                date: match[2],
+                time: match[3],
+                violationCount: match[4] ? parseInt(match[4]) : null
+            };
+        }
+
+        // Load data for date range
+        async function loadDataForDateRange(days) {
+            showLoadingMessage(true);
+            allProjectsData.clear();
+            allProjects.clear();
+            allTags.clear();
+
+            let datesToLoad = [];
+            if (days === 'all') {
+                datesToLoad = [...availableDates];
+            } else {
+                const endDate = availableDates[availableDates.length - 1];
+                const startDate = new Date(endDate);
+                startDate.setDate(startDate.getDate() - days);
+                datesToLoad = availableDates.filter(date => new Date(date) >= startDate);
+            }
+
+            console.log(`Loading data for ${datesToLoad.length} dates`);
+
+            for (let i = 0; i < datesToLoad.length; i++) {
+                const date = datesToLoad[i];
+                try {
+                    await loadDataForDate(date);
+                } catch (error) {
+                    console.error(`Failed to load data for ${date}:`, error);
+                }
+            }
+
+            console.log(`Loaded data for ${allProjectsData.size} dates, ${allProjects.size} projects, and ${allTags.size} unique tags`);
+            showLoadingMessage(false);
+        }
+
+        // Load data for specific date using gzip archives
+        async function loadDataForDate(date) {
+            const archiveUrl = `accessibility-reports/archives/reports_${date}.tar.gz`;
+            
+            try {
+                const jsonFiles = await fetchAndDecompressArchive(archiveUrl);
+                
+                if (!allProjectsData.has(date)) {
+                    allProjectsData.set(date, new Map());
+                }
+                
+                const dateData = allProjectsData.get(date);
+
+                Object.entries(jsonFiles).forEach(([filename, report]) => {
+                    const parsed = parseReportFilename(filename);
+                    if (!parsed) return;
+
+                    const projectName = parsed.project;
+                    allProjects.add(projectName);
+
+                    if (!dateData.has(projectName) || parsed.time > dateData.get(projectName).time) {
+                        // Extract tag information from violations
+                        const tagCounts = {};
+                        
+                        if (report.violations && Array.isArray(report.violations)) {
+                            report.violations.forEach(violation => {
+                                if (violation.tags && Array.isArray(violation.tags)) {
+                                    violation.tags.forEach(tag => {
+                                        allTags.add(tag);
+                                        const nodeCount = violation.nodes?.length || 1;
+                                        tagCounts[tag] = (tagCounts[tag] || 0) + nodeCount;
+                                    });
+                                }
+                            });
+                        }
+
+                        dateData.set(projectName, {
+                            time: parsed.time,
+                            violations: report.total_violations || 0,
+                            tagCounts: tagCounts,
+                            details: report
+                        });
+                    }
+                });
+
+                console.log(`Loaded ${Object.keys(jsonFiles).length} reports from archive for ${date}`);
+            } catch (error) {
+                console.warn(`Archive not available for ${date}:`, error);
+            }
+        }
+
+        // Populate project filter
+        function populateProjectFilter() {
+            const select = document.getElementById('project-filter');
+            const currentValue = select.value;
+            
+            // Keep "All Projects" option
+            select.innerHTML = '<option value="all">All Projects</option>';
+            
+            // Add each project
+            Array.from(allProjects).sort().forEach(project => {
+                const option = document.createElement('option');
+                option.value = project;
+                option.textContent = project;
+                select.appendChild(option);
+            });
+            
+            // Restore selection if possible
+            if (currentValue && currentValue !== 'all') {
+                select.value = currentValue;
+            }
+        }
+
+        // Create tag filter chips
+        function createTagFilter() {
+            const container = document.getElementById('tag-chips');
+            container.innerHTML = '';
+
+            // Prioritize common WCAG tags, then add others
+            const sortedTags = Array.from(allTags).sort((a, b) => {
+                const aPriority = priorityTags.indexOf(a);
+                const bPriority = priorityTags.indexOf(b);
+                
+                if (aPriority !== -1 && bPriority !== -1) return aPriority - bPriority;
+                if (aPriority !== -1) return -1;
+                if (bPriority !== -1) return 1;
+                return a.localeCompare(b);
+            });
+
+            sortedTags.forEach(tag => {
+                const chip = document.createElement('div');
+                chip.className = 'tag-chip';
+                if (selectedTags.has(tag)) {
+                    chip.classList.add('selected');
+                }
+
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.checked = selectedTags.has(tag);
+                checkbox.id = `tag-${tag}`;
+                
+                const label = document.createElement('label');
+                label.className = 'tag-chip-label';
+                label.htmlFor = `tag-${tag}`;
+                label.textContent = tag;
+                
+                chip.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    checkbox.checked = !checkbox.checked;
+                    
+                    if (checkbox.checked) {
+                        selectedTags.add(tag);
+                        chip.classList.add('selected');
+                    } else {
+                        selectedTags.delete(tag);
+                        chip.classList.remove('selected');
+                    }
+                    
+                    createAllCharts();
+                });
+
+                chip.appendChild(checkbox);
+                chip.appendChild(label);
+                container.appendChild(chip);
+            });
+        }
+
+        // Create all charts
+        function createAllCharts() {
+            createOverallChart();
+            createIndividualCharts();
+        }
+
+        // Create overall trend chart
+        function createOverallChart() {
+            const canvas = document.getElementById('overallChart');
+            const ctx = canvas.getContext('2d');
+            
+            if (charts.overall) {
+                charts.overall.destroy();
+            }
+
+            const selectedProject = document.getElementById('project-filter').value;
+            const dates = Array.from(allProjectsData.keys()).sort();
+            const datasets = [];
+
+            // Create dataset for each selected tag
+            Array.from(selectedTags).sort().forEach(tag => {
+                const data = dates.map(date => {
+                    const dateData = allProjectsData.get(date);
+                    let total = 0;
+                    
+                    dateData.forEach((projectData, project) => {
+                        if (selectedProject === 'all' || selectedProject === project) {
+                            total += projectData.tagCounts[tag] || 0;
+                        }
+                    });
+                    
+                    return total;
+                });
+
+                const color = tagColors[tag] || `hsl(${Math.random() * 360}, 70%, 50%)`;
+                
+                datasets.push({
+                    label: tag,
+                    data: data,
+                    borderColor: color,
+                    backgroundColor: color + '33',
+                    borderWidth: 2,
+                    pointRadius: 3,
+                    pointHoverRadius: 6,
+                    tension: 0.3,
+                    fill: false
+                });
+            });
+
+            charts.overall = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: dates,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                title: (items) => {
+                                    return items[0].label;
+                                },
+                                label: (context) => {
+                                    return `${context.dataset.label}: ${context.parsed.y} violations`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Date',
+                                font: { size: 12, weight: 'bold' }
+                            },
+                            ticks: {
+                                maxRotation: 45,
+                                minRotation: 45,
+                                font: { size: 10 }
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Number of Violations',
+                                font: { size: 12, weight: 'bold' }
+                            },
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            // Update statistics
+            updateOverallStats(datasets, dates);
+        }
+
+        // Update overall statistics
+        function updateOverallStats(datasets, dates) {
+            const container = document.getElementById('overall-stats');
+            container.innerHTML = '';
+
+            datasets.forEach(dataset => {
+                const total = dataset.data.reduce((sum, val) => sum + val, 0);
+                const avg = dates.length > 0 ? Math.round(total / dates.length) : 0;
+                const max = Math.max(...dataset.data);
+                const latest = dataset.data[dataset.data.length - 1] || 0;
+
+                const card = document.createElement('div');
+                card.className = 'stat-card';
+                card.innerHTML = `
+                    <div class="stat-value" style="color: ${dataset.borderColor}">${latest}</div>
+                    <div class="stat-label">${dataset.label} (Latest)</div>
+                    <div style="font-size: 0.75rem; color: #999; margin-top: 0.25rem;">
+                        Avg: ${avg} | Max: ${max}
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Create individual charts for each tag
+        function createIndividualCharts() {
+            const container = document.getElementById('individual-charts');
+            container.innerHTML = '';
+
+            if (selectedTags.size === 0) {
+                container.innerHTML = '<p style="text-align: center; color: #999; padding: 2rem;">Select at least one tag to display charts.</p>';
+                return;
+            }
+
+            const selectedProject = document.getElementById('project-filter').value;
+            const dates = Array.from(allProjectsData.keys()).sort();
+
+            Array.from(selectedTags).sort().forEach(tag => {
+                // Create section for this tag
+                const section = document.createElement('div');
+                section.style.cssText = 'margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;';
+                
+                const title = document.createElement('h3');
+                title.textContent = `📌 ${tag.toUpperCase()}`;
+                title.style.cssText = 'margin-bottom: 1rem; color: #333;';
+                
+                const wrapper = document.createElement('div');
+                wrapper.style.cssText = 'position: relative; height: 300px; background: white; padding: 1rem; border-radius: 6px;';
+                
+                const canvas = document.createElement('canvas');
+                canvas.id = `chart-${tag}`;
+                
+                wrapper.appendChild(canvas);
+                section.appendChild(title);
+                section.appendChild(wrapper);
+                container.appendChild(section);
+
+                // Create chart
+                const ctx = canvas.getContext('2d');
+                
+                if (charts[tag]) {
+                    charts[tag].destroy();
+                }
+
+                // Create datasets per project
+                const datasets = [];
+                const projectsToShow = selectedProject === 'all' 
+                    ? Array.from(allProjects).sort() 
+                    : [selectedProject];
+
+                projectsToShow.forEach((project, index) => {
+                    const data = dates.map(date => {
+                        const dateData = allProjectsData.get(date);
+                        const projectData = dateData.get(project);
+                        return projectData ? (projectData.tagCounts[tag] || 0) : 0;
+                    });
+
+                    // Only add if there's data
+                    if (data.some(v => v > 0)) {
+                        const hue = (index * 360 / projectsToShow.length) % 360;
+                        const color = `hsl(${hue}, 70%, 50%)`;
+                        
+                        datasets.push({
+                            label: project,
+                            data: data,
+                            borderColor: color,
+                            backgroundColor: color + '33',
+                            borderWidth: 2,
+                            pointRadius: 2,
+                            pointHoverRadius: 5,
+                            tension: 0.2
+                        });
+                    }
+                });
+
+                charts[tag] = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: dates,
+                        datasets: datasets
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        interaction: {
+                            mode: 'index',
+                            intersect: false
+                        },
+                        plugins: {
+                            legend: {
+                                display: selectedProject === 'all',
+                                position: 'top',
+                                labels: {
+                                    font: { size: 10 },
+                                    boxWidth: 12
+                                }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: (context) => {
+                                        return `${context.dataset.label}: ${context.parsed.y} violations`;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                ticks: {
+                                    maxRotation: 45,
+                                    minRotation: 45,
+                                    font: { size: 9 }
+                                }
+                            },
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    font: { size: 10 }
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+        }
+
+        // Event listeners
+        document.getElementById('date-range').addEventListener('change', async function() {
+            const value = this.value;
+            const days = value === 'all' ? 'all' : parseInt(value);
+            await loadDataForDateRange(days);
+            populateProjectFilter();
+            createTagFilter();
+            createAllCharts();
+        });
+
+        document.getElementById('project-filter').addEventListener('change', () => {
+            createAllCharts();
+        });
+
+        document.getElementById('refresh-data').addEventListener('click', async () => {
+            const days = document.getElementById('date-range').value;
+            await loadDataForDateRange(days === 'all' ? 'all' : parseInt(days));
+            populateProjectFilter();
+            createTagFilter();
+            createAllCharts();
+        });
+
+        // Helper functions
+        function showLoadingMessage(show) {
+            const loadingMsg = document.getElementById('loadingMessage');
+            if (show) {
+                loadingMsg.classList.remove('hidden');
+            } else {
+                loadingMsg.classList.add('hidden');
+            }
+        }
+
+        // Initialize on load
+        window.addEventListener('load', initialize);
+    </script>
+</body>
+</html>
