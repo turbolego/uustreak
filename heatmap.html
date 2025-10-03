@@ -281,6 +281,11 @@
                 Hover over cells to see detailed information.
             </p>
         </div>
+
+        <div id="debug-panel" style="background: #fff3cd; border: 2px solid #ffc107; border-radius: 8px; padding: 1rem; margin-top: 1rem; font-family: monospace; font-size: 12px;">
+            <strong>Debug Info:</strong>
+            <div id="debug-content">Loading...</div>
+        </div>
     </div>
 
     <div class="tooltip" style="display: none;"></div>
@@ -348,6 +353,14 @@
             }
         }
 
+        function debugLog(message) {
+            const debugContent = document.getElementById('debug-content');
+            if (debugContent) {
+                debugContent.innerHTML += '<br>' + message;
+            }
+            console.log(message);
+        }
+
         // Parse report filename to extract metadata
         function parseReportFilename(filename) {
             const match = filename.match(/([\w.-]+)-(\d{4}-\d{2}-\d{2})-(\d{6})\.json$/);
@@ -363,15 +376,17 @@
 
         async function loadData() {
             showLoading('Loading accessibility data...');
+            debugLog('Starting data load...');
             try {
                 // Fetch report list to get available dates
+                debugLog('Fetching report list...');
                 const response = await fetch('historical-data/report-list.json');
                 if (!response.ok) {
                     throw new Error(`Failed to fetch report list: ${response.statusText}`);
                 }
                 
                 const reportList = await response.json();
-                console.log(`Loaded ${reportList.length} reports from list`);
+                debugLog(`Loaded ${reportList.length} reports from list`);
 
                 // Extract unique dates from report list
                 const datesSet = new Set();
@@ -384,14 +399,14 @@
                 });
                 
                 allDates = Array.from(datesSet).sort();
-                console.log(`Found ${allDates.length} unique dates`);
+                debugLog(`Found ${allDates.length} unique dates`);
 
                 // Limit to last 90 days for performance (can adjust with date range selector)
                 const cutoffDate = new Date();
                 cutoffDate.setDate(cutoffDate.getDate() - 90);
                 const cutoffStr = cutoffDate.toISOString().split('T')[0];
                 const datesToLoad = allDates.filter(d => d >= cutoffStr);
-                console.log(`Loading ${datesToLoad.length} dates (filtered from ${allDates.length} total)`);
+                debugLog(`Loading ${datesToLoad.length} dates (filtered from ${allDates.length} total, cutoff: ${cutoffStr})`);
 
                 // Map of date -> Map of project -> data
                 const dateProjectMap = new Map();
@@ -449,13 +464,15 @@
                         });
 
                         loadedDates++;
-                        console.log(`Loaded ${Object.keys(jsonFiles).length} reports for ${date}`);
+                        if (loadedDates % 10 === 0) {
+                            debugLog(`Progress: ${loadedDates}/${datesToLoad.length} dates loaded`);
+                        }
                     } catch (error) {
-                        console.warn(`Could not load archive for ${date}:`, error);
+                        debugLog(`⚠️ Could not load archive for ${date}: ${error.message}`);
                     }
                 }
 
-                console.log(`Successfully loaded ${loadedDates} dates with ${allProjects.size} projects`);
+                debugLog(`Successfully loaded ${loadedDates} dates with ${allProjects.size} projects`);
 
                 // Update allDates to only include dates we have data for
                 allDates = Array.from(dateProjectMap.keys()).sort();
@@ -485,12 +502,13 @@
                 });
 
                 allData = Object.values(projectData);
-                console.log(`Prepared data for ${allData.length} projects`);
-                console.log('Sample project data:', allData.length > 0 ? allData[0] : 'none');
-                console.log('All dates available:', allDates);
+                debugLog(`✓ Prepared data for ${allData.length} projects`);
+                debugLog(`Sample project: ${allData.length > 0 ? allData[0].url : 'none'}`);
+                debugLog(`All dates available: ${allDates.length > 0 ? allDates.slice(0, 5).join(', ') + '...' : 'none'}`);
                 filterAndRender();
                 hideLoading();
             } catch (error) {
+                debugLog(`❌ Error loading data: ${error.message}`);
                 console.error('Error loading data:', error);
                 hideLoading();
                 alert('Error loading data: ' + error.message);
@@ -518,17 +536,16 @@
             const dateRange = document.getElementById('dateRange').value;
             let dates = [...allDates];
 
-            console.log(`filterAndRender called with dateRange: ${dateRange}`);
-            console.log(`Initial dates count: ${dates.length}`);
+            debugLog(`filterAndRender: dateRange=${dateRange}, initial dates=${dates.length}`);
 
             if (dateRange !== 'all') {
                 const days = parseInt(dateRange);
                 const cutoffDate = new Date();
                 cutoffDate.setDate(cutoffDate.getDate() - days);
                 const cutoffStr = cutoffDate.toISOString().split('T')[0];
-                console.log(`Filtering dates after: ${cutoffStr}`);
+                debugLog(`Filtering dates after: ${cutoffStr}`);
                 dates = dates.filter(d => d >= cutoffStr);
-                console.log(`Dates after filtering: ${dates.length}`, dates);
+                debugLog(`Dates after filtering: ${dates.length}`);
             }
 
             // Filter data to only include relevant dates
@@ -539,8 +556,7 @@
                 )
             })).filter(project => Object.keys(project.dates).length > 0);
 
-            console.log(`Filtered data: ${filteredData.length} projects`);
-            console.log('Sample filtered project:', filteredData.length > 0 ? filteredData[0] : 'none');
+            debugLog(`✓ Filtered to ${filteredData.length} projects with data`);
 
             sortAndRender(dates);
         }
