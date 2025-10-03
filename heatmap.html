@@ -366,12 +366,16 @@
 
         // Parse report filename to extract metadata
         function parseReportFilename(filename) {
-            const match = filename.match(/([\w.-]+)-(\d{4}-\d{2}-\d{2})-(\d{6})\.json$/);
+            // New format: ./violations-ProjectName-2025-09-18T08-12-27_896Z-count-2.json
+            const match = filename.match(/\.\/violations-(.+?)-(\d{4}-\d{2}-\d{2})T(\d{2})-(\d{2})-(\d{2})_\d+Z-count-\d+\.json$/);
             if (match) {
+                const projectName = match[1];
+                const date = match[2];
+                const time = match[3] + match[4] + match[5]; // Convert to HHMMSS format
                 return {
-                    project: match[1],
-                    date: match[2],
-                    time: match[3]
+                    project: projectName,
+                    date: date,
+                    time: time
                 };
             }
             return null;
