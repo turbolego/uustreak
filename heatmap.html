@@ -291,6 +291,9 @@
     <div class="tooltip" style="display: none;"></div>
 
     <script>
+        // Immediate test to confirm script is running
+        console.log('Heatmap script loaded');
+        
         let allData = [];
         let filteredData = [];
         let allDates = [];
@@ -430,10 +433,16 @@
                         const dateData = dateProjectMap.get(date);
 
                         // Process each report in the archive
+                        let parsedCount = 0;
+                        let unparsedFiles = [];
                         Object.entries(jsonFiles).forEach(([filename, report]) => {
                             const parsed = parseReportFilename(filename);
-                            if (!parsed) return;
+                            if (!parsed) {
+                                unparsedFiles.push(filename);
+                                return;
+                            }
 
+                            parsedCount++;
                             const projectName = parsed.project;
                             allProjects.add(projectName);
 
@@ -468,8 +477,11 @@
                         });
 
                         loadedDates++;
+                        if (loadedDates === 1 && unparsedFiles.length > 0) {
+                            debugLog(`⚠️ Sample unparsed filenames: ${unparsedFiles.slice(0, 3).join(', ')}`);
+                        }
                         if (loadedDates % 10 === 0) {
-                            debugLog(`Progress: ${loadedDates}/${datesToLoad.length} dates loaded`);
+                            debugLog(`Progress: ${loadedDates}/${datesToLoad.length} dates loaded, ${allProjects.size} projects found`);
                         }
                     } catch (error) {
                         debugLog(`⚠️ Could not load archive for ${date}: ${error.message}`);
