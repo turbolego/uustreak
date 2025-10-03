@@ -266,15 +266,39 @@ jobs:
           echo "Copying and organizing JSON reports to gh-pages branch..."
           mkdir -p gh-pages-branch/accessibility-reports
           
+          # Debug: Show artifacts directory structure
+          echo "=== Artifacts directory structure ==="
+          ls -la artifacts/ || echo "No artifacts directory"
+          echo "=== Looking for violation JSON files ==="
+          find artifacts -name "violations-*.json" -type f | head -20 || echo "No violation files found"
+          echo "=== Total violation files found ==="
+          find artifacts -name "violations-*.json" -type f | wc -l
+          
           # Copy violation reports
-          find artifacts -name "violations-*.json" | while read -r file; do
+          COPIED_COUNT=0
+          find artifacts -name "violations-*.json" -type f | while read -r file; do
             if [[ $file =~ violations-.*-([0-9]{4}-[0-9]{2}-[0-9]{2}) ]]; then
               DATE_DIR="${BASH_REMATCH[1]}"
               mkdir -p "gh-pages-branch/accessibility-reports/$DATE_DIR"
               cp "$file" "gh-pages-branch/accessibility-reports/$DATE_DIR/"
+              COPIED_COUNT=$((COPIED_COUNT + 1))
+              echo "Copied: $file -> gh-pages-branch/accessibility-reports/$DATE_DIR/"
             else
               echo "Warning: Could not extract date from filename: $file"
               cp "$file" "gh-pages-branch/accessibility-reports/"
+            fi
+          done
+          echo "=== Total violation files copied: $COPIED_COUNT ==="
+          
+          # Debug: Verify files were copied to date directories
+          echo "=== Date directories created in gh-pages-branch ==="
+          find gh-pages-branch/accessibility-reports -maxdepth 1 -type d -name "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" | sort
+          echo "=== Files in each date directory ==="
+          for date_dir in gh-pages-branch/accessibility-reports/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]; do
+            if [ -d "$date_dir" ]; then
+              DATE=$(basename "$date_dir")
+              COUNT=$(find "$date_dir" -name "violations-*.json" -type f | wc -l)
+              echo "$DATE: $COUNT violation files"
             fi
           done
           
@@ -312,6 +336,10 @@ jobs:
         run: |
           echo "Creating gzip archives for JSON reports by date..."
           
+          # Debug: Show what's in gh-pages-branch before archiving
+          echo "=== Contents of gh-pages-branch/accessibility-reports before archiving ==="
+          ls -la gh-pages-branch/accessibility-reports/ || echo "Directory doesn't exist"
+          
           # Build a unique list of all dates from both violation reports and summaries
           DATES=()
           
@@ -335,6 +363,7 @@ jobs:
           UNIQUE_DATES=($(printf '%s\n' "${DATES[@]}" | sort -u))
           
           echo "Found ${#UNIQUE_DATES[@]} unique dates to archive"
+          echo "Dates: ${UNIQUE_DATES[@]}"
           
           # Process each unique date
           for DATE in "${UNIQUE_DATES[@]}"; do
@@ -397,6 +426,16 @@ jobs:
           
           echo "Archive creation completed. Summary:"
           ls -la gh-pages-branch/accessibility-reports/archives/ || echo "No archives created"
+          
+          # Debug: Verify date directories still exist after archiving
+          echo "=== Date directories after archiving ==="
+          for date_dir in gh-pages-branch/accessibility-reports/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]; do
+            if [ -d "$date_dir" ]; then
+              DATE=$(basename "$date_dir")
+              COUNT=$(find "$date_dir" -name "violations-*.json" -type f | wc -l)
+              echo "$DATE: $COUNT violation files (should match archive)"
+            fi
+          done
           
       - name: Validate and Repair Summary Files
         run: |
@@ -494,6 +533,31 @@ jobs:
           cp gzip-utils.js gh-pages-branch/
           
           echo "Static files copied to gh-pages branch"
+          
+      - name: Verify Files Before Deployment
+        run: |
+          echo "=== Final verification before deployment ==="
+          echo "Date directories that will be deployed:"
+          find gh-pages-branch/accessibility-reports -maxdepth 1 -type d -name "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" | sort
+          
+          echo ""
+          echo "Files in each date directory:"
+          for date_dir in gh-pages-branch/accessibility-reports/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]; do
+            if [ -d "$date_dir" ]; then
+              DATE=$(basename "$date_dir")
+              COUNT=$(find "$date_dir" -name "*.json" -type f | wc -l)
+              echo "  $DATE: $COUNT files"
+              # Show first few files as examples
+              find "$date_dir" -name "*.json" -type f | head -3 | while read f; do
+                echo "    - $(basename "$f")"
+              done
+            fi
+          done
+          
+          echo ""
+          echo "Archives that will be deployed:"
+          ls -lh gh-pages-branch/accessibility-reports/archives/*.tar.gz 2>/dev/null | tail -5 || echo "No archives found"
+          
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
