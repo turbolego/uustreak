@@ -232,10 +232,10 @@
             
             <label for="dateRange">Date Range:</label>
             <select id="dateRange">
-                <option value="all" selected>All Time</option>
+                <option value="all">All Time</option>
                 <option value="30">Last 30 Days</option>
                 <option value="60">Last 60 Days</option>
-                <option value="90">Last 90 Days</option>
+                <option value="90" selected>Last 90 Days</option>
             </select>
 
             <button id="refreshBtn">Refresh Data</button>
@@ -386,13 +386,20 @@
                 allDates = Array.from(datesSet).sort();
                 console.log(`Found ${allDates.length} unique dates`);
 
+                // Limit to last 90 days for performance (can adjust with date range selector)
+                const cutoffDate = new Date();
+                cutoffDate.setDate(cutoffDate.getDate() - 90);
+                const cutoffStr = cutoffDate.toISOString().split('T')[0];
+                const datesToLoad = allDates.filter(d => d >= cutoffStr);
+                console.log(`Loading ${datesToLoad.length} dates (filtered from ${allDates.length} total)`);
+
                 // Map of date -> Map of project -> data
                 const dateProjectMap = new Map();
                 const allProjects = new Set();
 
                 // Load each date's archive
                 let loadedDates = 0;
-                for (const date of allDates) {
+                for (const date of datesToLoad) {
                     try {
                         const archiveUrl = `accessibility-reports/archives/reports_${date}.tar.gz`;
                         const jsonFiles = await fetchAndDecompressArchive(archiveUrl);
