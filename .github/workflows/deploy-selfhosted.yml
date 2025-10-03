@@ -1082,28 +1082,37 @@ jobs:
               find "$date_dir" -name "violations-*.json" ! -name "*-FAILED.json" | sort > "temp_violations_$DATE.txt"
               
               # Process each file to extract project and keep newest per project
-              declare -A project_files
+              # Use a simple approach that works with Bash 3.x (no associative arrays)
+              > "newest_files_$DATE.txt"
+              
               while IFS= read -r file; do
                 filename=$(basename "$file")
                 
                 # Extract project name (everything between violations- and the date)
-                if [[ "$filename" =~ violations-(.+)-[0-9]{4}-[0-9]{2}-[0-9]{2} ]]; then
-                  project="${BASH_REMATCH[1]}"
+                project=$(echo "$filename" | sed -n 's/violations-\(.*\)-[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}.*/\1/p')
+                
+                if [[ -n "$project" ]]; then
+                  # Check if we already have a file for this project
+                  existing_file=$(grep "^$project=" "newest_files_$DATE.txt" 2>/dev/null | cut -d'=' -f2-)
                   
-                  # Store the file if it's newer than the current one for this project
-                  current_file="${project_files[$project]}"
-                  if [[ -z "$current_file" ]] || [[ "$filename" > "$(basename "$current_file")" ]]; then
-                    project_files["$project"]="$file"
+                  if [[ -z "$existing_file" ]] || [[ "$filename" > "$(basename "$existing_file")" ]]; then
+                    # Remove old entry for this project and add new one
+                    grep -v "^$project=" "newest_files_$DATE.txt" > "temp_newest_$DATE.txt" 2>/dev/null || touch "temp_newest_$DATE.txt"
+                    echo "$project=$file" >> "temp_newest_$DATE.txt"
+                    mv "temp_newest_$DATE.txt" "newest_files_$DATE.txt"
                   fi
                 fi
               done < "temp_violations_$DATE.txt"
               
               # Copy the newest files for each project
-              for file in "${project_files[@]}"; do
+              while IFS='=' read -r project file; do
                 if [[ -f "$file" ]]; then
                   cp "$file" "$TEMP_DIR/"
                 fi
-              done
+              done < "newest_files_$DATE.txt"
+              
+              # Cleanup temp files
+              rm -f "newest_files_$DATE.txt"
               
               # Also copy any non-violation JSON files (like summary files, etc.)
               find "$date_dir" -name "*.json" ! -name "violations-*.json" -exec cp {} "$TEMP_DIR/" \;
