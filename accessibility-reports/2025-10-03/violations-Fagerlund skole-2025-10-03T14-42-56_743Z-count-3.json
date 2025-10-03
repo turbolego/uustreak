@@ -1,0 +1,93 @@
+{
+  "project": "Fagerlund skole",
+  "timestamp": "2025-10-03T14:42:56.743Z",
+  "url": "https://www.ringsaker.kommune.no/fagerlund-skole.5905051-387311.html/#",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "html-has-lang",
+      "impact": "serious",
+      "description": "Ensure every HTML document has a lang attribute",
+      "help": "<html> element must have a lang attribute",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=playwright",
+      "tags": [
+        "cat.language",
+        "wcag2a",
+        "wcag311",
+        "TTv5",
+        "TT11.a",
+        "EN-301-549",
+        "EN-9.3.1.1",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>404 File not found</h1>\n\t\t<p>The requested URL /fagerlund-skole.5905051-387311.html was not found on this server [h1897].</p>\n<p>Try loading the <a href=\"/\">index page</a> for <a href=\"/\">www.ringsaker.kommune.no</a></p>\n\n\n</body></html>",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix any of the following:\n  The <html> element does not have a lang attribute"
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>404 File not found</h1>\n\t\t<p>The requested URL /fagerlund-skole.5905051-387311.html was not found on this server [h1897].</p>\n<p>Try loading the <a href=\"/\">index page</a> for <a href=\"/\">www.ringsaker.kommune.no</a></p>\n\n\n</body></html>",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<h1>404 File not found</h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>The requested URL /fagerlund-skole.5905051-387311.html was not found on this server [h1897].</p>",
+          "target": [
+            "p:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Try loading the <a href=\"/\">index page</a> for <a href=\"/\">www.ringsaker.kommune.no</a></p>",
+          "target": [
+            "p:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
