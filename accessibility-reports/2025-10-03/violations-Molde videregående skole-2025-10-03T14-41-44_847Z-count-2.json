@@ -1,0 +1,52 @@
+{
+  "project": "Molde videregående skole",
+  "timestamp": "2025-10-03T14:41:44.848Z",
+  "url": "https://molde.vgs.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-dialog-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+      "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-dialog-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"bc-content-modal modal-module__base_9320_na0C6 _base_1w1ld_1 bc-content-modal-size--large modal-module__size--large_9320_wM6r9\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\":r0:-title\" aria-describedby=\":r0:-body\">",
+          "target": [
+            ".bc-content-modal"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img alt=\"Molde videregående skole\" src=\"/handlers/bv.ashx/i3d409a8e-a21d-4160-a6a0-953c76b73221/91020molde-vgs_h75px.svg\">",
+          "target": [
+            "img[alt=\"Molde videregående skole\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    }
+  ]
+}
