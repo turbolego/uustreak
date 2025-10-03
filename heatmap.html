@@ -399,14 +399,12 @@
                 });
                 
                 allDates = Array.from(datesSet).sort();
-                debugLog(`Found ${allDates.length} unique dates`);
+                debugLog(`Found ${allDates.length} unique dates (range: ${allDates[0]} to ${allDates[allDates.length-1]})`);
 
-                // Limit to last 90 days for performance (can adjust with date range selector)
-                const cutoffDate = new Date();
-                cutoffDate.setDate(cutoffDate.getDate() - 90);
-                const cutoffStr = cutoffDate.toISOString().split('T')[0];
-                const datesToLoad = allDates.filter(d => d >= cutoffStr);
-                debugLog(`Loading ${datesToLoad.length} dates (filtered from ${allDates.length} total, cutoff: ${cutoffStr})`);
+                // Load most recent dates (limit to 30 for performance)
+                const maxDatesToLoad = 30;
+                const datesToLoad = allDates.slice(-maxDatesToLoad); // Get last N dates
+                debugLog(`Loading ${datesToLoad.length} most recent dates (from ${datesToLoad[0]} to ${datesToLoad[datesToLoad.length-1]})`);
 
                 // Map of date -> Map of project -> data
                 const dateProjectMap = new Map();
