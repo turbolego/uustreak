@@ -359,8 +359,8 @@
                     },
                     interaction: {
                         mode: 'nearest',
-                        axis: 'x',
-                        intersect: false
+                        axis: 'xy',
+                        intersect: true
                     },
                     plugins: {
                         legend: {
@@ -368,9 +368,14 @@
                         },
                         tooltip: {
                             enabled: true,
+                            mode: 'nearest',
+                            intersect: true,
                             callbacks: {
                                 title: (items) => {
-                                    return items[0].label;
+                                    if (items.length > 0) {
+                                        return items[0].label;
+                                    }
+                                    return '';
                                 },
                                 label: (context) => {
                                     return `${context.dataset.label}: ${context.parsed.y} violations`;
