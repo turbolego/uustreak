@@ -1202,6 +1202,12 @@ jobs:
           cp main-branch/validate-summaries.js gh-pages-branch/
           cp main-branch/gzip-utils.js gh-pages-branch/
           
+          # CRITICAL: Remove .gitignore from gh-pages to allow accessibility-reports to be committed
+          if [ -f "gh-pages-branch/.gitignore" ]; then
+            echo "Removing .gitignore from gh-pages branch to allow all files"
+            rm gh-pages-branch/.gitignore
+          fi
+          
           echo "Static files copied to gh-pages branch"
       
       - name: Pre-deployment Archive Verification
@@ -1265,6 +1271,16 @@ jobs:
           git status --short | grep -E "(archives|summaries|$CURRENT_DATE)" | head -30
           TOTAL_FILES=$(git status --short | wc -l)
           echo "Total files to commit: $TOTAL_FILES"
+          
+          # CRITICAL: Force-add today's date directory with all JSON files (bypasses .gitignore)
+          if [ -d "accessibility-reports/$CURRENT_DATE" ]; then
+            echo "Force-adding date directory: accessibility-reports/$CURRENT_DATE/"
+            git add -f "accessibility-reports/$CURRENT_DATE/"*
+            FILE_COUNT=$(find "accessibility-reports/$CURRENT_DATE" -name "*.json" -type f | wc -l)
+            echo "✅ Force-added $FILE_COUNT files from accessibility-reports/$CURRENT_DATE/"
+          else
+            echo "⚠️ WARNING: Date directory not found: accessibility-reports/$CURRENT_DATE"
+          fi
           
           # Specifically verify today's archive is staged
           if git status --short | grep -q "accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz"; then

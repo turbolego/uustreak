@@ -531,6 +531,13 @@ jobs:
           cp merge-summary-parts.js gh-pages-branch/
           cp validate-summaries.js gh-pages-branch/
           cp gzip-utils.js gh-pages-branch/
+          cp gzip-utils.js gh-pages-branch/
+          
+          # CRITICAL: Remove .gitignore from gh-pages to allow accessibility-reports to be committed
+          if [ -f "gh-pages-branch/.gitignore" ]; then
+            echo "Removing .gitignore from gh-pages branch to allow all files"
+            rm gh-pages-branch/.gitignore
+          fi
           
           echo "Static files copied to gh-pages branch"
           
