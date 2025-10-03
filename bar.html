@@ -4,193 +4,744 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar Chart</title>
+    <title>WCAG Violations Trends</title>
+    <link href="styles.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/index.min.js"></script>
+    <script src="gzip-utils.js"></script>
+    <script src="loading.js"></script>
+    <style>
+        .chart-container {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            margin: 2rem 0;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .controls-section {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .control-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .control-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .control-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .control-group select,
+        .control-group input {
+            padding: 0.5rem;
+            border: 2px solid #666;
+            border-radius: 4px;
+            font-size: 1rem;
+            min-height: 44px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .control-group select:focus,
+        .control-group input:focus {
+            outline: 2px solid #0066cc;
+            outline-offset: 2px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .button-group button {
+            padding: 0.5rem 1rem;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            min-height: 44px;
+            transition: background-color 0.2s;
+        }
+
+        .button-group button:hover {
+            background-color: #0D47A1;
+        }
+
+        .button-group button:focus {
+            outline: 2px solid #0066cc;
+            outline-offset: 2px;
+        }
+
+        .button-group button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .multi-select-container {
+            border: 2px solid #666;
+            border-radius: 4px;
+            padding: 0.5rem;
+            max-height: 300px;
+            overflow-y: auto;
+            background: white;
+        }
+
+        .multi-select-item {
+            display: flex;
+            align-items: center;
+            padding: 0.25rem;
+            min-height: 36px;
+        }
+
+        .multi-select-item input[type="checkbox"] {
+            margin-right: 0.5rem;
+            min-width: 20px;
+            min-height: 20px;
+        }
+
+        .stats-panel {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2196F3;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        .info-message {
+            background-color: #e3f2fd;
+            color: #1565c0;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .control-group select,
+            .control-group input {
+                max-width: 100%;
+            }
+
+            .chart-container {
+                height: 50vh;
+                min-height: 300px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <canvas id="barChart" aria-label="Bar chart representing total violations by project" role="img"></canvas>
-    <button id="prevDay">Previous</button>
-    <button id="nextDay">Next</button>
+    <main>
+        <h1>WCAG Violations Trends</h1>
+        
+        <div class="info-message">
+            <strong>About this visualization:</strong> This chart shows WCAG violation trends across all projects over time, 
+            loading data from compressed archives on the gh-pages branch. Use the filters below to customize your view.
+        </div>
 
-    <div id="details"></div>
+        <div class="controls-section">
+            <div class="control-group">
+                <label for="chart-type">Chart Type:</label>
+                <select id="chart-type">
+                    <option value="line">Line Chart (Trends Over Time)</option>
+                    <option value="bar">Stacked Bar Chart (Composition)</option>
+                    <option value="totalBar">Total Bar Chart (Sum per Date)</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="date-range">Date Range:</label>
+                <select id="date-range">
+                    <option value="7">Last 7 Days</option>
+                    <option value="14">Last 14 Days</option>
+                    <option value="30" selected>Last 30 Days</option>
+                    <option value="60">Last 60 Days</option>
+                    <option value="90">Last 90 Days</option>
+                    <option value="all">All Available Data</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>Filter Projects:</label>
+                <div style="margin-bottom: 0.5rem;">
+                    <button class="button-group" style="display: inline-block; padding: 0.25rem 0.75rem; min-height: 36px; margin-right: 0.5rem;" onclick="selectAllProjects()">Select All</button>
+                    <button class="button-group" style="display: inline-block; padding: 0.25rem 0.75rem; min-height: 36px;" onclick="deselectAllProjects()">Deselect All</button>
+                </div>
+                <div id="project-filter" class="multi-select-container"></div>
+            </div>
+
+            <div class="button-group">
+                <button onclick="updateChart()">Update Chart</button>
+                <button onclick="downloadData()">Download Data (CSV)</button>
+            </div>
+        </div>
+
+        <div class="stats-panel" id="stats-panel" style="display: none;">
+            <h2>Statistics</h2>
+            <div class="stats-grid" id="stats-grid"></div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="mainChart" aria-label="WCAG violations trend chart" role="img"></canvas>
+        </div>
+
+        <div id="loading-status" style="text-align: center; margin: 2rem 0; display: none;">
+            <p>Loading data...</p>
+        </div>
+    </main>
 
     <script>
-        let parsedReports = [];
-        let groupedByDay = [];
-        let currentIndex = 0;
+        // Global state
+        let reportList = [];
+        let availableDates = [];
+        let allProjectsData = new Map(); // Map of date -> Map of project -> violation count
+        let allProjects = new Set();
+        let chart = null;
 
-        const ctx = document.getElementById('barChart').getContext('2d');
-        let chart;
-
-        // Fetch and process report list
-        fetch('historical-data/report-list.json')
-            .then(response => response.json())
-            .then(reportList => {
-                parsedReports = reportList.map(path => {
-                    const projectNameMatch = path.match(/violations-(.*?)-\d{4}-\d{2}-\d{2}T/);
-                    const projectName = projectNameMatch ? projectNameMatch[1].replace(/_/g, ' ') : 'Unknown Project';
-                    const dateMatch = path.match(/\d{4}-\d{2}-\d{2}/);
-                    const date = dateMatch ? dateMatch[0] : 'Unknown Date';
-
-                    return {
-                        path,
-                        projectName,
-                        date
-                    };
-                });
-
-                groupReportsByDay();
-                renderChart();
-            });
-
-        // Group reports by day
-        function groupReportsByDay() {
-            const dayMap = {};
-            parsedReports.forEach(report => {
-                if (!dayMap[report.date]) {
-                    dayMap[report.date] = [];
+        // Initialize the application
+        async function initialize() {
+            try {
+                showLoading(true);
+                
+                // Check if gzip utilities are available
+                if (typeof fetchAndDecompressArchive !== 'function') {
+                    throw new Error('Gzip utilities not loaded. Please ensure gzip-utils.js is loaded.');
                 }
-                dayMap[report.date].push(report);
-            });
 
-            groupedByDay = Object.entries(dayMap).map(([date, reports]) => ({
-                date,
-                projects: reports.reduce((acc, report) => {
-                    if (!acc[report.projectName]) {
-                        acc[report.projectName] = {
-                            name: report.projectName,
-                            totalViolations: 0,
-                            paths: []
-                        };
-                    }
-                    acc[report.projectName].paths.push(report.path);
-                    return acc;
-                }, {})
-            })).sort((a, b) => new Date(a.date) - new Date(b.date));
+                // Fetch report list
+                const response = await fetch('historical-data/report-list.json');
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch report list: ${response.statusText}`);
+                }
+                
+                reportList = await response.json();
+                console.log(`Loaded ${reportList.length} reports from list`);
+
+                // Extract available dates
+                availableDates = extractDates(reportList);
+                console.log(`Found ${availableDates.length} unique dates`);
+
+                // Load data for the default date range (last 30 days)
+                await loadDataForDateRange(30);
+
+                // Populate project filter
+                populateProjectFilter();
+
+                // Create initial chart
+                updateChart();
+
+                showLoading(false);
+            } catch (error) {
+                console.error('Initialization error:', error);
+                showError(`Failed to initialize: ${error.message}`);
+                showLoading(false);
+            }
         }
 
-        // Render bar chart
-        function renderChart() {
-            if (!groupedByDay.length) return;
-
-            const currentDay = groupedByDay[currentIndex];
-            const labels = Object.values(currentDay.projects).map(project => project.name);
-            const dataPromises = Object.values(currentDay.projects).map(async project => {
-                let totalViolations = 0;
-                for (const path of project.paths) {
-                    const report = await fetchReportData(path);
-                    totalViolations += report.total_violations;
+        // Extract unique dates from report list
+        function extractDates(reports) {
+            const dates = new Set();
+            reports.forEach(filename => {
+                if (filename.includes('-FAILED.json')) return;
+                const match = filename.match(/\d{4}-\d{2}-\d{2}/);
+                if (match) {
+                    dates.add(match[0]);
                 }
-                return totalViolations;
+            });
+            return Array.from(dates).sort();
+        }
+
+        // Parse report filename
+        function parseReportFilename(filename) {
+            if (filename.includes('-FAILED.json')) return null;
+            
+            const match = filename.match(/violations-(.+)-(\d{4}-\d{2}-\d{2})T(\d{2}-\d{2}-\d{2}_\d{3}Z)(?:-count-(\d+))?\.json$/);
+            if (!match) return null;
+
+            return {
+                filename,
+                project: match[1].replace(/_/g, ' '),
+                date: match[2],
+                time: match[3],
+                violationCount: match[4] ? parseInt(match[4]) : null
+            };
+        }
+
+        // Load data for a specific date range
+        async function loadDataForDateRange(days) {
+            showLoading(true);
+            allProjectsData.clear();
+            allProjects.clear();
+
+            let datesToLoad = [];
+            if (days === 'all') {
+                datesToLoad = [...availableDates];
+            } else {
+                // Get last N days
+                const endDate = availableDates[availableDates.length - 1];
+                const startDate = new Date(endDate);
+                startDate.setDate(startDate.getDate() - days);
+                
+                datesToLoad = availableDates.filter(date => new Date(date) >= startDate);
+            }
+
+            console.log(`Loading data for ${datesToLoad.length} dates`);
+
+            // Load data for each date
+            for (let i = 0; i < datesToLoad.length; i++) {
+                const date = datesToLoad[i];
+                try {
+                    await loadDataForDate(date);
+                    
+                    // Update progress
+                    const progress = ((i + 1) / datesToLoad.length) * 100;
+                    updateLoadingProgress(progress);
+                } catch (error) {
+                    console.error(`Failed to load data for ${date}:`, error);
+                }
+            }
+
+            showLoading(false);
+            console.log(`Loaded data for ${allProjectsData.size} dates and ${allProjects.size} projects`);
+        }
+
+        // Load data for a specific date (using gzip archives)
+        async function loadDataForDate(date) {
+            const archiveUrl = `accessibility-reports/archives/reports_${date}.tar.gz`;
+            
+            try {
+                // Try to load from gzip archive first
+                const jsonFiles = await fetchAndDecompressArchive(archiveUrl);
+                
+                if (!allProjectsData.has(date)) {
+                    allProjectsData.set(date, new Map());
+                }
+                
+                const dateData = allProjectsData.get(date);
+
+                // Process each report in the archive
+                Object.entries(jsonFiles).forEach(([filename, report]) => {
+                    const parsed = parseReportFilename(filename);
+                    if (!parsed) return;
+
+                    const projectName = parsed.project;
+                    allProjects.add(projectName);
+
+                    // Use the latest report for each project on this date
+                    if (!dateData.has(projectName) || parsed.time > dateData.get(projectName).time) {
+                        dateData.set(projectName, {
+                            time: parsed.time,
+                            violations: report.total_violations || 0,
+                            details: report
+                        });
+                    }
+                });
+
+                console.log(`Loaded ${Object.keys(jsonFiles).length} reports from archive for ${date}`);
+            } catch (error) {
+                console.warn(`Archive not available for ${date}, trying individual files:`, error);
+                
+                // Fallback to individual files
+                await loadDataForDateLegacy(date);
+            }
+        }
+
+        // Fallback method to load individual files
+        async function loadDataForDateLegacy(date) {
+            const dateReports = reportList.filter(filename => 
+                filename.includes(date) && !filename.includes('-FAILED.json')
+            );
+
+            if (!allProjectsData.has(date)) {
+                allProjectsData.set(date, new Map());
+            }
+
+            const dateData = allProjectsData.get(date);
+
+            // Group by project and get the latest report for each
+            const projectReports = new Map();
+            dateReports.forEach(filename => {
+                const parsed = parseReportFilename(filename);
+                if (!parsed) return;
+
+                if (!projectReports.has(parsed.project) || 
+                    parsed.time > projectReports.get(parsed.project).time) {
+                    projectReports.set(parsed.project, parsed);
+                }
             });
 
-            Promise.all(dataPromises).then(data => {
-                if (chart) {
-                    chart.destroy();
+            // Fetch each report
+            for (const [projectName, parsed] of projectReports) {
+                try {
+                    const reportPath = `accessibility-reports/${date}/${parsed.filename.split('/').pop()}`;
+                    const response = await fetch(reportPath);
+                    
+                    if (response.ok) {
+                        const report = await response.json();
+                        allProjects.add(projectName);
+                        
+                        dateData.set(projectName, {
+                            time: parsed.time,
+                            violations: report.total_violations || 0,
+                            details: report
+                        });
+                    }
+                } catch (error) {
+                    console.error(`Failed to fetch ${projectName} for ${date}:`, error);
                 }
+            }
+        }
 
-                chart = new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                        labels,
-                        datasets: [{
-                            label: `Total Violations (${currentDay.date})`,
-                            data,
-                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                            borderColor: 'rgba(75, 192, 192, 1)',
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        plugins: {
-                            legend: {
-                                display: true
-                            },
-                            tooltip: {
-                                callbacks: {
-                                    label: context => `Total Violations: ${context.raw}`
+        // Populate project filter checkboxes
+        function populateProjectFilter() {
+            const container = document.getElementById('project-filter');
+            container.innerHTML = '';
+
+            const sortedProjects = Array.from(allProjects).sort();
+            
+            sortedProjects.forEach(project => {
+                const div = document.createElement('div');
+                div.className = 'multi-select-item';
+                
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.id = `project-${project}`;
+                checkbox.value = project;
+                checkbox.checked = true;
+                
+                const label = document.createElement('label');
+                label.htmlFor = `project-${project}`;
+                label.textContent = project;
+                label.style.cursor = 'pointer';
+                
+                div.appendChild(checkbox);
+                div.appendChild(label);
+                container.appendChild(div);
+            });
+        }
+
+        // Get selected projects
+        function getSelectedProjects() {
+            const checkboxes = document.querySelectorAll('#project-filter input[type="checkbox"]:checked');
+            return Array.from(checkboxes).map(cb => cb.value);
+        }
+
+        // Select/deselect all projects
+        function selectAllProjects() {
+            document.querySelectorAll('#project-filter input[type="checkbox"]').forEach(cb => cb.checked = true);
+        }
+
+        function deselectAllProjects() {
+            document.querySelectorAll('#project-filter input[type="checkbox"]').forEach(cb => cb.checked = false);
+        }
+
+        // Update chart based on current settings
+        function updateChart() {
+            const chartType = document.getElementById('chart-type').value;
+            const selectedProjects = getSelectedProjects();
+
+            if (selectedProjects.length === 0) {
+                showError('Please select at least one project');
+                return;
+            }
+
+            // Prepare data
+            const dates = Array.from(allProjectsData.keys()).sort();
+            const datasets = [];
+
+            if (chartType === 'totalBar') {
+                // Single dataset with total violations per date
+                const data = dates.map(date => {
+                    const dateData = allProjectsData.get(date);
+                    let total = 0;
+                    selectedProjects.forEach(project => {
+                        if (dateData.has(project)) {
+                            total += dateData.get(project).violations;
+                        }
+                    });
+                    return total;
+                });
+
+                datasets.push({
+                    label: 'Total Violations',
+                    data: data,
+                    backgroundColor: 'rgba(33, 150, 243, 0.7)',
+                    borderColor: 'rgba(33, 150, 243, 1)',
+                    borderWidth: 2
+                });
+            } else {
+                // Individual datasets for each project
+                const colors = generateColors(selectedProjects.length);
+                
+                selectedProjects.forEach((project, index) => {
+                    const data = dates.map(date => {
+                        const dateData = allProjectsData.get(date);
+                        return dateData.has(project) ? dateData.get(project).violations : 0;
+                    });
+
+                    datasets.push({
+                        label: project,
+                        data: data,
+                        backgroundColor: colors[index].background,
+                        borderColor: colors[index].border,
+                        borderWidth: 2,
+                        fill: chartType === 'line' ? false : true
+                    });
+                });
+            }
+
+            // Update statistics
+            updateStatistics(selectedProjects, dates);
+
+            // Create or update chart
+            createChart(chartType, dates, datasets);
+        }
+
+        // Create or update the chart
+        function createChart(type, labels, datasets) {
+            const ctx = document.getElementById('mainChart').getContext('2d');
+            
+            if (chart) {
+                chart.destroy();
+            }
+
+            const chartConfig = {
+                type: type === 'totalBar' ? 'bar' : type,
+                data: {
+                    labels: labels,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                font: {
+                                    size: 12
+                                },
+                                boxWidth: 15
+                            }
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.dataset.label}: ${context.parsed.y} violations`;
                                 }
                             }
-                        },
-                        onClick: (event, elements) => {
-                            if (elements.length > 0) {
-                                const index = elements[0].index;
-                                renderDetails(Object.values(currentDay.projects)[index]);
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Date'
+                            },
+                            ticks: {
+                                maxRotation: 45,
+                                minRotation: 45
                             }
                         },
-                        scales: {
-                            y: {
-                                beginAtZero: true
-                            }
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Number of Violations'
+                            },
+                            beginAtZero: true,
+                            stacked: type === 'bar'
                         }
                     }
+                }
+            };
+
+            if (type === 'bar') {
+                chartConfig.options.scales.x.stacked = true;
+            }
+
+            chart = new Chart(ctx, chartConfig);
+        }
+
+        // Update statistics panel
+        function updateStatistics(selectedProjects, dates) {
+            const statsPanel = document.getElementById('stats-panel');
+            const statsGrid = document.getElementById('stats-grid');
+            
+            statsPanel.style.display = 'block';
+            statsGrid.innerHTML = '';
+
+            let totalViolations = 0;
+            let maxViolations = 0;
+            let minViolations = Infinity;
+            let violationCounts = [];
+
+            dates.forEach(date => {
+                const dateData = allProjectsData.get(date);
+                let dateTotal = 0;
+                selectedProjects.forEach(project => {
+                    if (dateData.has(project)) {
+                        dateTotal += dateData.get(project).violations;
+                    }
                 });
+                totalViolations += dateTotal;
+                maxViolations = Math.max(maxViolations, dateTotal);
+                if (dateTotal > 0) {
+                    minViolations = Math.min(minViolations, dateTotal);
+                }
+                violationCounts.push(dateTotal);
             });
+
+            const avgViolations = violationCounts.length > 0 ? 
+                Math.round(totalViolations / violationCounts.length) : 0;
+
+            // Add statistics
+            addStatItem(statsGrid, 'Total Violations', totalViolations);
+            addStatItem(statsGrid, 'Average per Day', avgViolations);
+            addStatItem(statsGrid, 'Maximum', maxViolations);
+            addStatItem(statsGrid, 'Minimum', minViolations === Infinity ? 0 : minViolations);
+            addStatItem(statsGrid, 'Projects Tracked', selectedProjects.length);
+            addStatItem(statsGrid, 'Days Analyzed', dates.length);
         }
 
-        // Fetch report data
-        async function fetchReportData(reportPath) {
-            const adjustedPath = reportPath.replace('gh-pages-branch/', '');
-            const response = await fetch(adjustedPath);
-            if (!response.ok) {
-                throw new Error(`Failed to fetch report data from ${adjustedPath}`);
-            }
-            return response.json();
-        }
-
-        // Render details for a project
-        async function renderDetails(project) {
-            const detailsDiv = document.getElementById('details');
-            const projectData = await Promise.all(project.paths.map(async path => {
-                const report = await fetchReportData(path);
-                return {
-                    url: report.url,
-                    timestamp: report.timestamp,
-                    totalViolations: report.total_violations,
-                    violations: report.violations
-                };
-            }));
-
-            detailsDiv.innerHTML = `
-                <h2>Violation Details for ${project.name}</h2>
-                <div>
-                    ${projectData.map(report => `
-                        <div class="violation">
-                            <p><strong>Report Date:</strong> ${new Date(report.timestamp).toLocaleString()}</p>
-                            <p><strong>URL:</strong> <a href="${report.url}" target="_blank">${report.url}</a></p>
-                            <p><strong>Total Violations:</strong> ${report.totalViolations}</p>
-                            <div>
-                                ${report.violations.map(v => `
-                                    <div class="violation-instance">
-                                        <h3>${v.id}</h3>
-                                        <p><strong>Impact:</strong> ${v.impact}</p>
-                                        <p><strong>Description:</strong> ${v.description}</p>
-                                        <p><strong>Instances:</strong> ${v.violation_count}</p>
-                                    </div>
-                                `).join('')}
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
+        function addStatItem(container, label, value) {
+            const div = document.createElement('div');
+            div.className = 'stat-item';
+            div.innerHTML = `
+                <div class="stat-value">${value.toLocaleString()}</div>
+                <div class="stat-label">${label}</div>
             `;
+            container.appendChild(div);
         }
 
-        // Event listeners for navigation buttons
-        document.getElementById('prevDay').addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                renderChart();
+        // Generate colors for datasets
+        function generateColors(count) {
+            const colors = [];
+            const hueStep = 360 / count;
+            
+            for (let i = 0; i < count; i++) {
+                const hue = i * hueStep;
+                colors.push({
+                    background: `hsla(${hue}, 70%, 60%, 0.6)`,
+                    border: `hsla(${hue}, 70%, 50%, 1)`
+                });
             }
+            
+            return colors;
+        }
+
+        // Download data as CSV
+        function downloadData() {
+            const selectedProjects = getSelectedProjects();
+            const dates = Array.from(allProjectsData.keys()).sort();
+            
+            // Build CSV
+            let csv = 'Date,' + selectedProjects.join(',') + ',Total\n';
+            
+            dates.forEach(date => {
+                const dateData = allProjectsData.get(date);
+                let row = [date];
+                let total = 0;
+                
+                selectedProjects.forEach(project => {
+                    const violations = dateData.has(project) ? dateData.get(project).violations : 0;
+                    row.push(violations);
+                    total += violations;
+                });
+                
+                row.push(total);
+                csv += row.join(',') + '\n';
+            });
+
+            // Download
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `wcag-violations-${new Date().toISOString().split('T')[0]}.csv`;
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+
+        // Event listeners
+        document.getElementById('date-range').addEventListener('change', async function() {
+            const value = this.value;
+            const days = value === 'all' ? 'all' : parseInt(value);
+            await loadDataForDateRange(days);
+            populateProjectFilter();
+            updateChart();
         });
 
-        document.getElementById('nextDay').addEventListener('click', () => {
-            if (currentIndex < groupedByDay.length - 1) {
-                currentIndex++;
-                renderChart();
+        // Loading helpers
+        function showLoading(show) {
+            const status = document.getElementById('loading-status');
+            if (status) {
+                status.style.display = show ? 'block' : 'none';
             }
-        });
+            
+            if (show && typeof initializeLoading === 'function') {
+                initializeLoading();
+            }
+        }
+
+        function updateLoadingProgress(percentage) {
+            if (typeof updateProgress === 'function') {
+                updateProgress(percentage, 100);
+            }
+        }
+
+        function showError(message) {
+            alert(message);
+            console.error(message);
+        }
+
+        // Initialize on load
+        window.addEventListener('load', initialize);
     </script>
 </body>
 
