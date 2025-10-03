@@ -532,32 +532,37 @@
         }
 
         function filterAndRender() {
-            const dateRange = document.getElementById('dateRange').value;
-            let dates = [...allDates];
+            try {
+                const dateRange = document.getElementById('dateRange').value;
+                let dates = [...allDates];
 
-            debugLog(`filterAndRender: dateRange=${dateRange}, initial dates=${dates.length}`);
+                debugLog(`filterAndRender: dateRange=${dateRange}, initial dates=${dates.length}`);
 
-            if (dateRange !== 'all') {
-                const days = parseInt(dateRange);
-                const cutoffDate = new Date();
-                cutoffDate.setDate(cutoffDate.getDate() - days);
-                const cutoffStr = cutoffDate.toISOString().split('T')[0];
-                debugLog(`Filtering dates after: ${cutoffStr}`);
-                dates = dates.filter(d => d >= cutoffStr);
-                debugLog(`Dates after filtering: ${dates.length}`);
+                if (dateRange !== 'all') {
+                    const days = parseInt(dateRange);
+                    const cutoffDate = new Date();
+                    cutoffDate.setDate(cutoffDate.getDate() - days);
+                    const cutoffStr = cutoffDate.toISOString().split('T')[0];
+                    debugLog(`Filtering dates after: ${cutoffStr}`);
+                    dates = dates.filter(d => d >= cutoffStr);
+                    debugLog(`Dates after filtering: ${dates.length}`);
+                }
+
+                // Filter data to only include relevant dates
+                filteredData = allData.map(project => ({
+                    ...project,
+                    dates: Object.fromEntries(
+                        Object.entries(project.dates).filter(([date]) => dates.includes(date))
+                    )
+                })).filter(project => Object.keys(project.dates).length > 0);
+
+                debugLog(`✓ Filtered to ${filteredData.length} projects with data`);
+
+                sortAndRender(dates);
+            } catch (error) {
+                debugLog(`❌ Error in filterAndRender: ${error.message}`);
+                console.error('Error in filterAndRender:', error);
             }
-
-            // Filter data to only include relevant dates
-            filteredData = allData.map(project => ({
-                ...project,
-                dates: Object.fromEntries(
-                    Object.entries(project.dates).filter(([date]) => dates.includes(date))
-                )
-            })).filter(project => Object.keys(project.dates).length > 0);
-
-            debugLog(`✓ Filtered to ${filteredData.length} projects with data`);
-
-            sortAndRender(dates);
         }
 
         function sortAndRender(dates) {
@@ -595,10 +600,15 @@
             const container = document.getElementById('chart');
             container.innerHTML = '';
 
+            debugLog(`renderHeatmap called: filteredData.length=${filteredData.length}, dates.length=${dates.length}`);
+
             if (filteredData.length === 0 || dates.length === 0) {
+                debugLog(`❌ Rendering "No data" message: filteredData=${filteredData.length}, dates=${dates.length}`);
                 container.innerHTML = '<p style="padding: 2rem; text-align: center; color: #666;">No data available for the selected date range.</p>';
                 return;
             }
+
+            debugLog(`✓ Rendering heatmap for ${filteredData.length} projects and ${dates.length} dates`);
 
             // Dimensions
             const margin = { top: 80, right: 40, bottom: 60, left: 250 };
