@@ -474,21 +474,64 @@ jobs:
           TESTS_RUN=0
           TESTS_FAILED=0
           
+          # Calculate total tests in this batch for progress tracking
+          BATCH_TEST_COUNT=0
+          for ((i = START_INDEX; i < END_INDEX && i < ${#ALL_SPECS[@]}; i++)); do
+            if [ -f "${ALL_SPECS[$i]}" ]; then
+              BATCH_TEST_COUNT=$((BATCH_TEST_COUNT + 1))
+            fi
+          done
+          
+          echo "📊 Batch ${{ matrix.batch }} will process $BATCH_TEST_COUNT tests"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          
           for ((i = START_INDEX; i < END_INDEX && i < ${#ALL_SPECS[@]}; i++)); do
             if [ -f "${ALL_SPECS[$i]}" ]; then
               SPEC_FILE="${ALL_SPECS[$i]}"
               PROJECT_NAME=$(basename "$SPEC_FILE" .spec.ts | tr '_' ' ')
-              echo ""
-              echo "🧪 Running tests for '$PROJECT_NAME' ($SPEC_FILE)..."
               
               TESTS_RUN=$((TESTS_RUN + 1))
+              TESTS_REMAINING=$((BATCH_TEST_COUNT - TESTS_RUN))
+              
+              # Create progress bar
+              PROGRESS_PERCENT=$(( (TESTS_RUN * 100) / BATCH_TEST_COUNT ))
+              PROGRESS_BARS=$(( PROGRESS_PERCENT / 2 ))  # 50 chars max width
+              PROGRESS_BAR=""
+              for ((j=0; j<PROGRESS_BARS; j++)); do PROGRESS_BAR+="█"; done
+              for ((j=PROGRESS_BARS; j<50; j++)); do PROGRESS_BAR+="░"; done
+              
+              echo ""
+              echo "🧪 [$TESTS_RUN/$BATCH_TEST_COUNT] Running tests for '$PROJECT_NAME'"
+              echo "📁 File: $SPEC_FILE"
+              echo "📊 Batch ${{ matrix.batch }} Progress: [$PROGRESS_BAR] $PROGRESS_PERCENT% ($TESTS_REMAINING tests remaining)"
+              echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+              
+              # Record start time for this test
+              TEST_START_TIME=$(date +%s)
               
               if npx playwright test "$SPEC_FILE"; then
-                echo "✅ Tests completed successfully for $PROJECT_NAME"
+                TEST_END_TIME=$(date +%s)
+                TEST_DURATION=$((TEST_END_TIME - TEST_START_TIME))
+                echo "✅ [$TESTS_RUN/$BATCH_TEST_COUNT] Tests completed successfully for $PROJECT_NAME (${TEST_DURATION}s)"
               else
-                echo "⚠️  Tests completed with issues for $PROJECT_NAME (this is expected for accessibility violations)"
+                TEST_END_TIME=$(date +%s)
+                TEST_DURATION=$((TEST_END_TIME - TEST_START_TIME))
+                echo "⚠️  [$TESTS_RUN/$BATCH_TEST_COUNT] Tests completed with issues for $PROJECT_NAME (${TEST_DURATION}s)"
+                echo "    This is expected for accessibility violations"
                 TESTS_FAILED=$((TESTS_FAILED + 1))
               fi
+              
+              # Show updated progress after completion
+              PROGRESS_PERCENT=$(( (TESTS_RUN * 100) / BATCH_TEST_COUNT ))
+              TESTS_REMAINING=$((BATCH_TEST_COUNT - TESTS_RUN))
+              echo "📈 Batch ${{ matrix.batch }} Status: $TESTS_RUN completed, $TESTS_REMAINING remaining ($PROGRESS_PERCENT% done)"
+              
+              if [ $TESTS_REMAINING -gt 0 ]; then
+                echo "⏳ Next: $(basename "${ALL_SPECS[$((i + 1))]}" .spec.ts 2>/dev/null | tr '_' ' ' || echo "No more tests")"
+              else
+                echo "🎉 All tests in batch ${{ matrix.batch }} completed!"
+              fi
+              echo ""
             fi
           done
           
