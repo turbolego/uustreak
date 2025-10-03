@@ -7,7 +7,6 @@
     <title>WCAG Violations Trends</title>
     <link href="styles.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/index.min.js"></script>
     <script src="gzip-utils.js"></script>
     <script src="loading.js"></script>
     <style>
@@ -240,11 +239,12 @@
         let allProjectsData = new Map(); // Map of date -> Map of project -> violation count
         let allProjects = new Set();
         let chart = null;
+        let loadingContainer = null;
 
         // Initialize the application
         async function initialize() {
             try {
-                showLoading(true);
+                loadingContainer = showLoading(true);
                 
                 // Check if gzip utilities are available
                 if (typeof fetchAndDecompressArchive !== 'function') {
@@ -312,7 +312,9 @@
 
         // Load data for a specific date range
         async function loadDataForDateRange(days) {
-            showLoading(true);
+            if (!loadingContainer) {
+                loadingContainer = showLoading(true);
+            }
             allProjectsData.clear();
             allProjects.clear();
 
@@ -344,7 +346,6 @@
                 }
             }
 
-            showLoading(false);
             console.log(`Loaded data for ${allProjectsData.size} dates and ${allProjects.size} projects`);
         }
 
@@ -712,20 +713,42 @@
         document.getElementById('date-range').addEventListener('change', async function() {
             const value = this.value;
             const days = value === 'all' ? 'all' : parseInt(value);
+            loadingContainer = showLoading(true);
             await loadDataForDateRange(days);
             populateProjectFilter();
             updateChart();
+            showLoading(false);
         });
 
         // Loading helpers
         function showLoading(show) {
             const status = document.getElementById('loading-status');
-            if (status) {
-                status.style.display = show ? 'block' : 'none';
-            }
             
-            if (show && typeof initializeLoading === 'function') {
-                initializeLoading();
+            if (show) {
+                // Show simple loading message
+                if (status) {
+                    status.style.display = 'block';
+                }
+                
+                // Initialize fancy loading overlay if available
+                if (typeof initializeLoading === 'function') {
+                    const container = initializeLoading();
+                    console.log('Loading overlay initialized');
+                    return container;
+                }
+            } else {
+                // Hide loading
+                if (status) {
+                    status.style.display = 'none';
+                }
+                
+                // Remove loading overlay
+                const overlay = document.getElementById('loading-container');
+                if (overlay) {
+                    overlay.remove();
+                    console.log('Loading overlay removed');
+                }
+                loadingContainer = null;
             }
         }
 
