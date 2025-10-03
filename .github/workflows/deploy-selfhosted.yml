@@ -840,72 +840,52 @@ jobs:
         run: |
           echo "Copying and organizing JSON reports to gh-pages branch..."
           mkdir -p gh-pages-branch/accessibility-reports
-          CURRENT_DATE=$(date '+%Y-%m-%d')
           
-          # Create date directory for current reports
-          mkdir -p "gh-pages-branch/accessibility-reports/$CURRENT_DATE"
-
-          # Debug: Show what's actually in artifacts
-          echo "=== DEBUG: Contents of artifacts directory ==="
-          find artifacts -type f -name "*.json" | head -20 || echo "No JSON files found"
-          echo "=== DEBUG: Looking for violations files specifically ==="
-          find artifacts -name "violations-*.json" | head -20 || echo "No violations files found"
+          # Debug: Show artifacts directory structure
+          echo "=== Artifacts directory structure ==="
+          ls -la artifacts/ || echo "No artifacts directory"
+          echo "=== Looking for violation JSON files ==="
+          find artifacts -name "violations-*.json" -type f | head -20 || echo "No violation files found"
+          echo "=== Total violation files found ==="
+          find artifacts -name "violations-*.json" -type f | wc -l
           
-          # Main search for accessibility report files - adjusted to fix the pathing issue
-          FOUND_FILES=false
+          # Copy violation reports - EXTRACT DATE FROM FILENAME
+          COPIED_COUNT=0
           
-          # Search in nested accessibility-reports folder which is where the files actually are
-          for VIOLATIONS_FILE in artifacts/accessibility-reports/violations-*.json; do
-            if [ -f "$VIOLATIONS_FILE" ]; then
-              FILENAME=$(basename "$VIOLATIONS_FILE")
-              TARGET_FILE="gh-pages-branch/accessibility-reports/$CURRENT_DATE/$FILENAME"
-              cp "$VIOLATIONS_FILE" "$TARGET_FILE"
-              echo "Copied $VIOLATIONS_FILE to $TARGET_FILE"
-              FOUND_FILES=true
+          # Search in all possible locations within artifacts
+          find artifacts -name "violations-*.json" -type f | while read -r file; do
+            # Extract date from filename using regex
+            # Format: violations-<project>-YYYY-MM-DDTHH-MM-SS_SSSZ-count-N.json
+            if [[ $file =~ violations-.*-([0-9]{4}-[0-9]{2}-[0-9]{2}) ]]; then
+              DATE_DIR="${BASH_REMATCH[1]}"
+              mkdir -p "gh-pages-branch/accessibility-reports/$DATE_DIR"
+              cp "$file" "gh-pages-branch/accessibility-reports/$DATE_DIR/"
+              COPIED_COUNT=$((COPIED_COUNT + 1))
+              echo "Copied: $file -> gh-pages-branch/accessibility-reports/$DATE_DIR/"
+            else
+              echo "Warning: Could not extract date from filename: $file"
+              # As fallback, use current date
+              CURRENT_DATE=$(date '+%Y-%m-%d')
+              mkdir -p "gh-pages-branch/accessibility-reports/$CURRENT_DATE"
+              cp "$file" "gh-pages-branch/accessibility-reports/$CURRENT_DATE/"
+            fi
+          done
+          echo "=== Total violation files copied: $COPIED_COUNT ==="
+          
+          # Debug: Verify files were copied to date directories
+          echo "=== Date directories created in gh-pages-branch ==="
+          find gh-pages-branch/accessibility-reports -maxdepth 1 -type d -name "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" | sort
+          echo "=== Files in each date directory ==="
+          for date_dir in gh-pages-branch/accessibility-reports/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]; do
+            if [ -d "$date_dir" ]; then
+              DATE=$(basename "$date_dir")
+              COUNT=$(find "$date_dir" -name "violations-*.json" -type f | wc -l)
+              echo "$DATE: $COUNT violation files"
             fi
           done
           
-          # Try batch directories if the above doesn't work
-          if [ "$FOUND_FILES" = false ]; then
-            echo "Trying batch sub-directories..."
-            for VIOLATIONS_FILE in artifacts/test-results-batch-*/accessibility-reports/violations-*.json; do
-              if [ -f "$VIOLATIONS_FILE" ]; then
-                FILENAME=$(basename "$VIOLATIONS_FILE")
-                TARGET_FILE="gh-pages-branch/accessibility-reports/$CURRENT_DATE/$FILENAME"
-                cp "$VIOLATIONS_FILE" "$TARGET_FILE"
-                echo "Copied $VIOLATIONS_FILE to $TARGET_FILE"
-                FOUND_FILES=true
-              fi
-            done
-          fi
-          
-          # Try original paths as a last resort
-          if [ "$FOUND_FILES" = false ]; then
-            echo "No files found in accessibility-reports, trying direct artifacts search..."
-            for VIOLATIONS_FILE in artifacts/violations-*.json; do
-              if [ -f "$VIOLATIONS_FILE" ]; then
-                FILENAME=$(basename "$VIOLATIONS_FILE")
-                TARGET_FILE="gh-pages-branch/accessibility-reports/$CURRENT_DATE/$FILENAME"
-                cp "$VIOLATIONS_FILE" "$TARGET_FILE"
-                echo "Copied $VIOLATIONS_FILE to $TARGET_FILE"
-                FOUND_FILES=true
-              fi
-            done
-          fi
-          
-          if [ "$FOUND_FILES" = false ]; then
-            echo "Warning: No violations files found to copy"
-            # Create a placeholder file to ensure the directory exists with content
-            echo '{"status":"no_violations_found","date":"'$CURRENT_DATE'"}' > "gh-pages-branch/accessibility-reports/$CURRENT_DATE/no-violations-found.json"
-            echo "Created a placeholder file in $CURRENT_DATE directory"
-          fi
-
-          echo "JSON reports organized by date in gh-pages branch"
-          echo "Contents of gh-pages-branch/accessibility-reports/$CURRENT_DATE:"
-          ls -la "gh-pages-branch/accessibility-reports/$CURRENT_DATE/" || echo "No reports found"
-          
-          # CRITICAL: Ensure the date directory exists even if no reports
-          # This prevents the "no folder" error on the frontend
+          # Ensure current date directory exists even if no reports
+          CURRENT_DATE=$(date '+%Y-%m-%d')
           if [ ! -d "gh-pages-branch/accessibility-reports/$CURRENT_DATE" ] || [ -z "$(ls -A gh-pages-branch/accessibility-reports/$CURRENT_DATE 2>/dev/null)" ]; then
             echo "WARNING: No reports or empty directory for $CURRENT_DATE"
             mkdir -p "gh-pages-branch/accessibility-reports/$CURRENT_DATE"
@@ -920,6 +900,8 @@ jobs:
             
             echo "Created placeholder for $CURRENT_DATE"
           fi
+          
+          echo "JSON reports organized by date in gh-pages branch"
 
       - name: Generate Daily Summary Files
         run: |
@@ -1064,65 +1046,47 @@ jobs:
         run: |
           echo "Creating gzip archives for JSON reports by date..."
           
-          # Find all date directories in accessibility-reports
-          find gh-pages-branch/accessibility-reports -maxdepth 1 -type d -name "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" | while read -r date_dir; do
-            DATE=$(basename "$date_dir")
+          # Debug: Show what's in gh-pages-branch before archiving
+          echo "=== Contents of gh-pages-branch/accessibility-reports before archiving ==="
+          ls -la gh-pages-branch/accessibility-reports/ || echo "Directory doesn't exist"
+          
+          # Build a unique list of all dates from both violation reports and summaries
+          DATES=()
+          
+          # Add dates from violation report directories
+          while IFS= read -r date_dir; do
+            if [ -n "$date_dir" ]; then
+              DATES+=("$(basename "$date_dir")")
+            fi
+          done < <(find gh-pages-branch/accessibility-reports -maxdepth 1 -type d -name "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]")
+          
+          # Add dates from summary directories
+          if [ -d "gh-pages-branch/accessibility-reports/summaries" ]; then
+            while IFS= read -r summary_dir; do
+              if [ -n "$summary_dir" ]; then
+                DATES+=("$(basename "$summary_dir")")
+              fi
+            done < <(find gh-pages-branch/accessibility-reports/summaries -maxdepth 1 -type d -name "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]")
+          fi
+          
+          # Get unique sorted dates
+          UNIQUE_DATES=($(printf '%s\n' "${DATES[@]}" | sort -u))
+          
+          echo "Found ${#UNIQUE_DATES[@]} unique dates to archive"
+          echo "Dates: ${UNIQUE_DATES[@]}"
+          
+          # Process each unique date
+          for DATE in "${UNIQUE_DATES[@]}"; do
             echo "Creating gzip archive for date: $DATE"
             
             # Create temporary directory for organizing files
             TEMP_DIR="temp_$DATE"
             mkdir -p "$TEMP_DIR"
             
-            # Copy only the newest JSON files per project for this date to temp directory
-            if [ -d "$date_dir" ]; then
-              # Find all violation JSON files and get the newest per project
-              # This mimics the logic from getNewestReportsForDate() function
-              
-              # First, find all violation files and create a list
-              find "$date_dir" -name "violations-*.json" ! -name "*-FAILED.json" | sort > "temp_violations_$DATE.txt"
-              
-              # Process each file to extract project and keep newest per project
-              # Use a simple approach that works with Bash 3.x (no associative arrays)
-              > "newest_files_$DATE.txt"
-              
-              while IFS= read -r file; do
-                filename=$(basename "$file")
-                
-                # Extract project name (everything between violations- and the date)
-                project=$(echo "$filename" | sed -n 's/violations-\(.*\)-[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}.*/\1/p')
-                
-                if [[ -n "$project" ]]; then
-                  # Check if we already have a file for this project
-                  existing_file=$(grep "^$project=" "newest_files_$DATE.txt" 2>/dev/null | cut -d'=' -f2-)
-                  
-                  if [[ -z "$existing_file" ]] || [[ "$filename" > "$(basename "$existing_file")" ]]; then
-                    # Remove old entry for this project and add new one
-                    grep -v "^$project=" "newest_files_$DATE.txt" > "temp_newest_$DATE.txt" 2>/dev/null || touch "temp_newest_$DATE.txt"
-                    echo "$project=$file" >> "temp_newest_$DATE.txt"
-                    mv "temp_newest_$DATE.txt" "newest_files_$DATE.txt"
-                  fi
-                fi
-              done < "temp_violations_$DATE.txt"
-              
-              # Copy the newest files for each project
-              while IFS='=' read -r project file; do
-                if [[ -f "$file" ]]; then
-                  cp "$file" "$TEMP_DIR/"
-                fi
-              done < "newest_files_$DATE.txt"
-              
-              # Cleanup temp files
-              rm -f "newest_files_$DATE.txt"
-              
-              # Also copy any non-violation JSON files (like summary files, etc.)
-              find "$date_dir" -name "*.json" ! -name "violations-*.json" -exec cp {} "$TEMP_DIR/" \;
-              
-              # Cleanup temp file
-              rm -f "temp_violations_$DATE.txt"
-              
-              total_violations=$(find "$date_dir" -name "violations-*.json" ! -name "*-FAILED.json" | wc -l)
-              selected_violations=$(ls "$TEMP_DIR"/violations-*.json 2>/dev/null | wc -l)
-              echo "Found $total_violations total violation files, selected $selected_violations newest per project for $DATE"
+            # Copy all JSON files for this date from violation reports directory
+            if [ -d "gh-pages-branch/accessibility-reports/$DATE" ]; then
+              find "gh-pages-branch/accessibility-reports/$DATE" -name "*.json" -exec cp {} "$TEMP_DIR/" \;
+              echo "Found $(find "gh-pages-branch/accessibility-reports/$DATE" -name "*.json" | wc -l) violation report files for $DATE"
             fi
             
             # Also include summary files for this date if they exist
@@ -1196,6 +1160,16 @@ jobs:
           
           echo "Archive creation completed. Summary:"
           ls -la gh-pages-branch/accessibility-reports/archives/ || echo "No archives created"
+          
+          # Debug: Verify date directories still exist after archiving
+          echo "=== Date directories after archiving ==="
+          for date_dir in gh-pages-branch/accessibility-reports/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]; do
+            if [ -d "$date_dir" ]; then
+              DATE=$(basename "$date_dir")
+              COUNT=$(find "$date_dir" -name "violations-*.json" -type f | wc -l)
+              echo "$DATE: $COUNT violation files (should match archive)"
+            fi
+          done
 
       - name: Update Report List
         run: |
@@ -1233,8 +1207,10 @@ jobs:
       - name: Pre-deployment Archive Verification
         run: |
           CURRENT_DATE=$(date +%Y-%m-%d)
-          echo "Verifying archives before deployment..."
+          echo "=== Verifying files before deployment ==="
           
+          # Verify archives
+          echo "Checking archives..."
           if [ -f "gh-pages-branch/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz" ]; then
             ARCHIVE_SIZE=$(stat -f%z "gh-pages-branch/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz" 2>/dev/null || stat -c%s "gh-pages-branch/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz" 2>/dev/null)
             echo "✅ Archive exists: reports_${CURRENT_DATE}.tar.gz (Size: $ARCHIVE_SIZE bytes)"
@@ -1245,6 +1221,29 @@ jobs:
             echo "❌ ERROR: Archive missing before deployment: reports_${CURRENT_DATE}.tar.gz"
             ls -la gh-pages-branch/accessibility-reports/archives/ || echo "Archives directory doesn't exist"
           fi
+          
+          # Verify date directories with JSON files
+          echo ""
+          echo "Date directories that will be deployed:"
+          find gh-pages-branch/accessibility-reports -maxdepth 1 -type d -name "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" | sort
+          
+          echo ""
+          echo "Files in each date directory:"
+          for date_dir in gh-pages-branch/accessibility-reports/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]; do
+            if [ -d "$date_dir" ]; then
+              DATE=$(basename "$date_dir")
+              COUNT=$(find "$date_dir" -name "*.json" -type f | wc -l)
+              echo "  $DATE: $COUNT files"
+              # Show first few files as examples
+              find "$date_dir" -name "*.json" -type f | head -3 | while read f; do
+                echo "    - $(basename "$f")"
+              done
+            fi
+          done
+          
+          echo ""
+          echo "Recent archives that will be deployed:"
+          ls -lh gh-pages-branch/accessibility-reports/archives/*.tar.gz 2>/dev/null | tail -5 || echo "No archives found"
       
       - name: Deploy to GitHub Pages (Direct Git Push)
         run: |
