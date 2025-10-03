@@ -375,8 +375,14 @@
         }
 
         async function loadData() {
+            // Clear debug panel
+            const debugContent = document.getElementById('debug-content');
+            if (debugContent) {
+                debugContent.innerHTML = '';
+            }
+            
             showLoading('Loading accessibility data...');
-            debugLog('Starting data load...');
+            debugLog('🔄 Starting data load...');
             try {
                 // Fetch report list to get available dates
                 debugLog('Fetching report list...');
