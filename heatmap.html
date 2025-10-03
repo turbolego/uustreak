@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCAG Violations - Heatmap Timeline</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="gzip-utils.js"></script>
+    <script src="loading.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #f5f5f5;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .controls label {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .controls select {
+            padding: 0.4rem 0.6rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .controls button {
+            padding: 0.4rem 1rem;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .controls button:hover {
+            background-color: #0D47A1;
+        }
+
+        #chart-container {
+            margin-top: 120px;
+            padding: 2rem;
+            overflow-y: auto;
+            height: calc(100vh - 120px);
+        }
+
+        #chart {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .legend {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .legend h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .legend-items {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+        }
+
+        .legend-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .cell {
+            stroke: #fff;
+            stroke-width: 2;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .cell:hover {
+            opacity: 0.8;
+            stroke: #000;
+            stroke-width: 3;
+        }
+
+        .axis-label {
+            font-size: 12px;
+            font-weight: 500;
+            fill: #333;
+        }
+
+        .axis text {
+            font-size: 11px;
+            fill: #666;
+        }
+
+        .axis line,
+        .axis path {
+            stroke: #ddd;
+        }
+
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            pointer-events: none;
+            z-index: 1000;
+            max-width: 300px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .tooltip-project {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .tooltip-date {
+            color: #aaa;
+            margin-bottom: 8px;
+        }
+
+        .tooltip-violations {
+            margin-bottom: 6px;
+        }
+
+        .tooltip-severity {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 6px;
+        }
+
+        .tooltip-severity-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .tooltip-severity-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .info-panel {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .info-panel h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .info-panel p {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>WCAG Violations Heatmap Timeline</h1>
+        <div class="controls">
+            <label for="sortOrder">Sort by:</label>
+            <select id="sortOrder">
+                <option value="alphabetical">Project Name (A-Z)</option>
+                <option value="violations" selected>Total Violations (High to Low)</option>
+                <option value="severity">Severity Level (Worst First)</option>
+            </select>
+            
+            <label for="dateRange">Date Range:</label>
+            <select id="dateRange">
+                <option value="all" selected>All Time</option>
+                <option value="30">Last 30 Days</option>
+                <option value="60">Last 60 Days</option>
+                <option value="90">Last 90 Days</option>
+            </select>
+
+            <button id="refreshBtn">Refresh Data</button>
+        </div>
+    </div>
+
+    <div id="chart-container">
+        <div id="chart"></div>
+        
+        <div class="legend">
+            <h3>Severity Level (Color)</h3>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #d32f2f;"></div>
+                    <span class="legend-label">Critical</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #f57c00;"></div>
+                    <span class="legend-label">Serious</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #fbc02d;"></div>
+                    <span class="legend-label">Moderate</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #689f38;"></div>
+                    <span class="legend-label">Minor</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #e0e0e0;"></div>
+                    <span class="legend-label">No Data</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <h3>About this visualization</h3>
+            <p>
+                This heatmap shows WCAG accessibility violations over time for all projects. 
+                Each row represents a project, and each column represents a date. 
+                The <strong>cell size</strong> indicates the total number of violations (larger = more violations), 
+                and the <strong>color</strong> represents the dominant severity level (red = critical, orange = serious, yellow = moderate, green = minor).
+                Hover over cells to see detailed information.
+            </p>
+        </div>
+    </div>
+
+    <div class="tooltip" style="display: none;"></div>
+
+    <script>
+        let allData = [];
+        let filteredData = [];
+        let allDates = [];
+
+        // Severity colors matching D3.html
+        const severityColors = {
+            critical: '#d32f2f',
+            serious: '#f57c00',
+            moderate: '#fbc02d',
+            minor: '#689f38',
+            none: '#e0e0e0'
+        };
+
+        // Severity weights for sorting
+        const severityWeights = {
+            critical: 4,
+            serious: 3,
+            moderate: 2,
+            minor: 1,
+            none: 0
+        };
+
+        async function loadData() {
+            showLoading('Loading accessibility data...');
+            try {
+                const archives = await fetchAndDecompressArchive();
+                const reports = [];
+
+                for (const [filename, content] of Object.entries(archives)) {
+                    if (filename.startsWith('all-projects-') && filename.endsWith('.json')) {
+                        const dateMatch = filename.match(/all-projects-(\d{4}-\d{2}-\d{2})\.json/);
+                        if (dateMatch) {
+                            const date = dateMatch[1];
+                            const data = JSON.parse(content);
+                            reports.push({ date, projects: data });
+                        }
+                    }
+                }
+
+                // Sort by date
+                reports.sort((a, b) => a.date.localeCompare(b.date));
+
+                // Get all unique dates
+                allDates = reports.map(r => r.date);
+
+                // Get all unique projects
+                const projectsSet = new Set();
+                reports.forEach(report => {
+                    report.projects.forEach(p => projectsSet.add(p.url));
+                });
+
+                // Create data structure: project -> date -> data
+                const projectData = {};
+                projectsSet.forEach(url => {
+                    projectData[url] = {
+                        url: url,
+                        dates: {}
+                    };
+                });
+
+                reports.forEach(report => {
+                    report.projects.forEach(project => {
+                        projectData[project.url].dates[report.date] = {
+                            total: project.total_violations || 0,
+                            critical: project.critical || 0,
+                            serious: project.serious || 0,
+                            moderate: project.moderate || 0,
+                            minor: project.minor || 0
+                        };
+                    });
+                });
+
+                allData = Object.values(projectData);
+                filterAndRender();
+                hideLoading();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                hideLoading();
+                alert('Error loading data: ' + error.message);
+            }
+        }
+
+        function getDominantSeverity(data) {
+            if (!data) return 'none';
+            if (data.critical > 0) return 'critical';
+            if (data.serious > 0) return 'serious';
+            if (data.moderate > 0) return 'moderate';
+            if (data.minor > 0) return 'minor';
+            return 'none';
+        }
+
+        function getSeverityScore(data) {
+            if (!data) return 0;
+            return (data.critical || 0) * 4 + 
+                   (data.serious || 0) * 3 + 
+                   (data.moderate || 0) * 2 + 
+                   (data.minor || 0);
+        }
+
+        function filterAndRender() {
+            const dateRange = document.getElementById('dateRange').value;
+            let dates = [...allDates];
+
+            if (dateRange !== 'all') {
+                const days = parseInt(dateRange);
+                const cutoffDate = new Date();
+                cutoffDate.setDate(cutoffDate.getDate() - days);
+                const cutoffStr = cutoffDate.toISOString().split('T')[0];
+                dates = dates.filter(d => d >= cutoffStr);
+            }
+
+            // Filter data to only include relevant dates
+            filteredData = allData.map(project => ({
+                ...project,
+                dates: Object.fromEntries(
+                    Object.entries(project.dates).filter(([date]) => dates.includes(date))
+                )
+            })).filter(project => Object.keys(project.dates).length > 0);
+
+            sortAndRender(dates);
+        }
+
+        function sortAndRender(dates) {
+            const sortOrder = document.getElementById('sortOrder').value;
+
+            // Sort projects
+            filteredData.sort((a, b) => {
+                if (sortOrder === 'alphabetical') {
+                    return a.url.localeCompare(b.url);
+                } else if (sortOrder === 'violations') {
+                    // Sort by latest total violations
+                    const latestDate = dates[dates.length - 1];
+                    const aTotal = a.dates[latestDate]?.total || 0;
+                    const bTotal = b.dates[latestDate]?.total || 0;
+                    return bTotal - aTotal;
+                } else if (sortOrder === 'severity') {
+                    // Sort by worst severity score
+                    let aMaxScore = 0;
+                    let bMaxScore = 0;
+                    Object.values(a.dates).forEach(data => {
+                        aMaxScore = Math.max(aMaxScore, getSeverityScore(data));
+                    });
+                    Object.values(b.dates).forEach(data => {
+                        bMaxScore = Math.max(bMaxScore, getSeverityScore(data));
+                    });
+                    return bMaxScore - aMaxScore;
+                }
+                return 0;
+            });
+
+            renderHeatmap(dates);
+        }
+
+        function renderHeatmap(dates) {
+            const container = document.getElementById('chart');
+            container.innerHTML = '';
+
+            if (filteredData.length === 0 || dates.length === 0) {
+                container.innerHTML = '<p style="padding: 2rem; text-align: center; color: #666;">No data available for the selected date range.</p>';
+                return;
+            }
+
+            // Dimensions
+            const margin = { top: 80, right: 40, bottom: 60, left: 250 };
+            const cellHeight = 20;
+            const cellWidth = Math.max(20, Math.min(60, (window.innerWidth - margin.left - margin.right - 100) / dates.length));
+            const width = cellWidth * dates.length + margin.left + margin.right;
+            const height = cellHeight * filteredData.length + margin.top + margin.bottom;
+
+            // Create SVG
+            const svg = d3.select('#chart')
+                .append('svg')
+                .attr('width', width)
+                .attr('height', height);
+
+            const g = svg.append('g')
+                .attr('transform', `translate(${margin.left},${margin.top})`);
+
+            // Find max violations for size scale
+            let maxViolations = 0;
+            filteredData.forEach(project => {
+                Object.values(project.dates).forEach(data => {
+                    maxViolations = Math.max(maxViolations, data.total);
+                });
+            });
+
+            // Size scale (for cell size within the fixed grid)
+            const sizeScale = d3.scaleSqrt()
+                .domain([0, maxViolations])
+                .range([0.3, 0.95]); // Scale factor (30% to 95% of cell size)
+
+            // Tooltip
+            const tooltip = d3.select('.tooltip');
+
+            // Create cells
+            const cells = [];
+            filteredData.forEach((project, i) => {
+                dates.forEach((date, j) => {
+                    const data = project.dates[date];
+                    if (data) {
+                        cells.push({
+                            project: project.url,
+                            date: date,
+                            data: data,
+                            row: i,
+                            col: j
+                        });
+                    }
+                });
+            });
+
+            // Draw cells
+            g.selectAll('.cell')
+                .data(cells)
+                .enter()
+                .append('rect')
+                .attr('class', 'cell')
+                .attr('x', d => d.col * cellWidth + cellWidth * 0.5 * (1 - sizeScale(d.data.total)))
+                .attr('y', d => d.row * cellHeight + cellHeight * 0.5 * (1 - sizeScale(d.data.total)))
+                .attr('width', d => cellWidth * sizeScale(d.data.total))
+                .attr('height', d => cellHeight * sizeScale(d.data.total))
+                .attr('rx', 2)
+                .attr('fill', d => severityColors[getDominantSeverity(d.data)])
+                .on('mouseover', function(event, d) {
+                    tooltip
+                        .style('display', 'block')
+                        .html(`
+                            <div class="tooltip-project">${d.project}</div>
+                            <div class="tooltip-date">${d.date}</div>
+                            <div class="tooltip-violations">Total Violations: <strong>${d.data.total}</strong></div>
+                            <div class="tooltip-severity">
+                                <div class="tooltip-severity-item">
+                                    <div class="tooltip-severity-dot" style="background-color: ${severityColors.critical}"></div>
+                                    <span>Critical: ${d.data.critical}</span>
+                                </div>
+                                <div class="tooltip-severity-item">
+                                    <div class="tooltip-severity-dot" style="background-color: ${severityColors.serious}"></div>
+                                    <span>Serious: ${d.data.serious}</span>
+                                </div>
+                                <div class="tooltip-severity-item">
+                                    <div class="tooltip-severity-dot" style="background-color: ${severityColors.moderate}"></div>
+                                    <span>Moderate: ${d.data.moderate}</span>
+                                </div>
+                                <div class="tooltip-severity-item">
+                                    <div class="tooltip-severity-dot" style="background-color: ${severityColors.minor}"></div>
+                                    <span>Minor: ${d.data.minor}</span>
+                                </div>
+                            </div>
+                        `)
+                        .style('left', (event.pageX + 15) + 'px')
+                        .style('top', (event.pageY - 15) + 'px');
+                })
+                .on('mousemove', function(event) {
+                    tooltip
+                        .style('left', (event.pageX + 15) + 'px')
+                        .style('top', (event.pageY - 15) + 'px');
+                })
+                .on('mouseout', function() {
+                    tooltip.style('display', 'none');
+                });
+
+            // Y-axis (projects)
+            const yAxis = d3.axisLeft()
+                .scale(d3.scaleBand()
+                    .domain(filteredData.map(d => d.url))
+                    .range([0, filteredData.length * cellHeight]))
+                .tickSize(0);
+
+            g.append('g')
+                .attr('class', 'axis')
+                .call(yAxis)
+                .selectAll('text')
+                .style('font-size', '10px');
+
+            // X-axis (dates)
+            const xAxis = d3.axisTop()
+                .scale(d3.scaleBand()
+                    .domain(dates)
+                    .range([0, dates.length * cellWidth]))
+                .tickSize(0)
+                .tickFormat((d, i) => {
+                    // Show every nth date depending on number of dates
+                    const step = dates.length > 30 ? Math.ceil(dates.length / 20) : 1;
+                    return i % step === 0 ? d : '';
+                });
+
+            g.append('g')
+                .attr('class', 'axis')
+                .call(xAxis)
+                .selectAll('text')
+                .style('text-anchor', 'start')
+                .attr('transform', 'rotate(-45)')
+                .attr('dx', '-0.5em')
+                .attr('dy', '-0.5em')
+                .style('font-size', '10px');
+
+            // Axis labels
+            svg.append('text')
+                .attr('class', 'axis-label')
+                .attr('x', margin.left / 2)
+                .attr('y', margin.top + (filteredData.length * cellHeight) / 2)
+                .attr('text-anchor', 'middle')
+                .attr('transform', `rotate(-90, ${margin.left / 2}, ${margin.top + (filteredData.length * cellHeight) / 2})`)
+                .text('Projects');
+
+            svg.append('text')
+                .attr('class', 'axis-label')
+                .attr('x', margin.left + (dates.length * cellWidth) / 2)
+                .attr('y', 30)
+                .attr('text-anchor', 'middle')
+                .text('Timeline');
+        }
+
+        // Event listeners
+        document.getElementById('sortOrder').addEventListener('change', filterAndRender);
+        document.getElementById('dateRange').addEventListener('change', filterAndRender);
+        document.getElementById('refreshBtn').addEventListener('click', loadData);
+
+        // Initial load
+        loadData();
+    </script>
+</body>
+</html>
