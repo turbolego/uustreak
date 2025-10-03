@@ -193,9 +193,9 @@ jobs:
 
           BATCH_SIZE=$(( (TOTAL_SPECS + BATCH_COUNT - 1) / BATCH_COUNT ))
 
-          # Generate matrix as array of objects: [{"batch": "0"}, {"batch": "1"}, ...]
-          BATCHES=$(seq 0 $((BATCH_COUNT - 1)) | jq -R . | jq -s 'map({"batch": .})' | jq -c '{batch: .}')
-          echo "matrix=$BATCHES" >> $GITHUB_OUTPUT
+          # Generate matrix as array of batch indices: ["0", "1", "2", ...]
+          BATCHES=$(seq 0 $((BATCH_COUNT - 1)) | jq -R . | jq -sc '.')
+          echo "matrix={\"batch\":$BATCHES}" >> $GITHUB_OUTPUT
           echo "Total specs: $TOTAL_SPECS"
           echo "Batch count: $BATCH_COUNT"
           echo "Batch size: $BATCH_SIZE"
