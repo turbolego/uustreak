@@ -168,6 +168,12 @@
             margin-bottom: 0.25rem;
         }
 
+        .zero-line {
+            stroke: #999;
+            stroke-width: 2;
+            stroke-dasharray: 5, 5;
+        }
+
         .legend-color {
             width: 16px;
             height: 16px;
@@ -244,16 +250,18 @@
     <div id="chart"></div>
 
     <div class="legend" id="legend">
-        <h3>Violation Types</h3>
+        <h3>Severity (Dominant)</h3>
         <div id="legend-items"></div>
     </div>
 
     <div class="info-box">
-        <div><strong>X-Axis:</strong> Days Since First Report</div>
+        <div><strong>X-Axis:</strong> % Change from First Report</div>
+        <div style="font-size: 0.75rem; color: #888; margin-left: 1rem;">(← worse | better →)</div>
         <div><strong>Y-Axis:</strong> <span id="y-axis-label">Total Violations</span></div>
-        <div><strong>Bubble Size:</strong> Number of Critical Issues</div>
+        <div><strong>Bubble Size:</strong> Total Violations</div>
+        <div><strong>Bubble Color:</strong> Dominant Severity</div>
         <div style="margin-top: 0.5rem; font-size: 0.8rem; color: #666;">
-            Hover over bubbles for details. Click Play/Pause to control animation.
+            Projects improving move right. Hover for details.
         </div>
     </div>
 
@@ -269,6 +277,7 @@
         let allProjectsData = new Map();
         let allProjects = new Set();
         let allTags = new Set();
+        let projectFirstValues = new Map(); // Store first report values per project
         let animationTimer = null;
         let isPlaying = false;
         let currentYearIndex = 0;
@@ -406,6 +415,10 @@
             }
 
             console.log(`Loaded data for ${allProjectsData.size} dates and ${allProjects.size} projects`);
+            
+            // Calculate first values for each project
+            calculateProjectFirstValues();
+            
             showLoadingMessage(false);
         }
 
@@ -533,6 +546,34 @@
             return 'Violations';
         }
 
+        // Calculate first report values for each project
+        function calculateProjectFirstValues() {
+            projectFirstValues.clear();
+            
+            const dates = Array.from(allProjectsData.keys()).sort();
+            if (dates.length === 0) return;
+            
+            const firstDate = dates[0];
+            const firstDateData = allProjectsData.get(firstDate);
+            
+            firstDateData.forEach((data, project) => {
+                projectFirstValues.set(project, data.violations);
+            });
+            
+            console.log(`Calculated first values for ${projectFirstValues.size} projects`);
+        }
+
+        // Calculate improvement rate for a project
+        function getImprovementRate(project, currentViolations) {
+            const firstValue = projectFirstValues.get(project);
+            if (!firstValue || firstValue === 0) return 0;
+            
+            // Positive % = improvement (fewer violations)
+            // Negative % = deterioration (more violations)
+            const percentChange = ((firstValue - currentViolations) / firstValue) * 100;
+            return percentChange;
+        }
+
         // Create scales and axes
         function createScalesAndAxes() {
             const dates = Array.from(allProjectsData.keys()).sort();
@@ -540,26 +581,26 @@
 
             // Build flat data array for domain calculation
             const allData = [];
-            const firstDate = new Date(dates[0]);
             
             dates.forEach(date => {
                 const dateData = allProjectsData.get(date);
-                const daysSinceFirst = Math.floor((new Date(date) - firstDate) / (1000 * 60 * 60 * 24));
                 
                 dateData.forEach((data, project) => {
+                    const improvementRate = getImprovementRate(project, data.violations);
                     allData.push({
                         project: project,
                         date: date,
-                        daysSinceFirst: daysSinceFirst,
+                        improvementRate: improvementRate,
                         yValue: getYAxisValue(data, currentYAxisMetric),
-                        critical: data.severityCount.critical
+                        violations: data.violations
                     });
                 });
             });
 
-            // X scale: days since first report
+            // X scale: improvement rate (-100% to +100%)
+            const xExtent = d3.extent(allData, d => d.improvementRate);
             const xScale = d3.scaleLinear()
-                .domain([0, d3.max(allData, d => d.daysSinceFirst) || 30])
+                .domain([Math.min(xExtent[0] || -50, -10), Math.max(xExtent[1] || 50, 10)])
                 .range([0, width])
                 .nice();
 
@@ -569,10 +610,10 @@
                 .range([height, 0])
                 .nice();
 
-            // Size scale: critical issues
+            // Size scale: total violations
             const sizeScale = d3.scaleSqrt()
-                .domain([0, d3.max(allData, d => d.critical) || 50])
-                .range([5, 40]);
+                .domain([0, d3.max(allData, d => d.violations) || 100])
+                .range([5, 50]);
 
             // Store scales globally
             window.xScale = xScale;
@@ -593,7 +634,15 @@
                 .attr("x", width / 2)
                 .attr("y", height + 45)
                 .attr("text-anchor", "middle")
-                .text("Days Since First Report");
+                .text("Violation Reduction Rate (% Change from First Report)");
+
+            // Add zero reference line
+            plotG.append("line")
+                .attr("class", "zero-line")
+                .attr("x1", xScale(0))
+                .attr("x2", xScale(0))
+                .attr("y1", 0)
+                .attr("y2", height);
 
             plotG.append("g")
                 .attr("class", "y axis")
@@ -613,11 +662,6 @@
 
         // Update chart for a specific date
         function updateChart(date) {
-            const dates = Array.from(allProjectsData.keys()).sort();
-            const firstDate = new Date(dates[0]);
-            const currentDate = new Date(date);
-            const daysSinceFirst = Math.floor((currentDate - firstDate) / (1000 * 60 * 60 * 24));
-
             const dateData = allProjectsData.get(date);
             if (!dateData) return;
 
@@ -635,15 +679,17 @@
                     }
                 });
 
+                const improvementRate = getImprovementRate(project, data.violations);
+
                 bubbleData.push({
                     project: project,
-                    daysSinceFirst: daysSinceFirst,
+                    improvementRate: improvementRate,
                     violations: data.violations,
                     yValue: getYAxisValue(data, currentYAxisMetric),
-                    critical: data.severityCount.critical,
                     severity: dominantSeverity,
                     severityBreakdown: data.severityCount,
-                    tagCounts: data.tagCounts
+                    tagCounts: data.tagCounts,
+                    firstValue: projectFirstValues.get(project) || 0
                 });
             });
 
@@ -662,7 +708,7 @@
             const enter = circles.enter()
                 .append("circle")
                 .attr("class", "country")
-                .attr("cx", d => window.xScale(d.daysSinceFirst))
+                .attr("cx", d => window.xScale(d.improvementRate))
                 .attr("cy", d => window.yScale(d.yValue))
                 .attr("r", 0)
                 .attr("fill", d => colorScale(d.severity))
@@ -673,7 +719,13 @@
                     // Build tooltip content dynamically
                     let tooltipContent = `<strong>${d.project}</strong>`;
                     tooltipContent += `<div>Total Violations: ${d.violations}</div>`;
-                    tooltipContent += `<div>Critical: ${d.severityBreakdown.critical}</div>`;
+                    tooltipContent += `<div>First Report: ${d.firstValue}</div>`;
+                    
+                    const changeSign = d.improvementRate >= 0 ? '+' : '';
+                    const changeColor = d.improvementRate >= 0 ? '#4caf50' : '#f44336';
+                    tooltipContent += `<div style="color: ${changeColor}; font-weight: bold;">${changeSign}${d.improvementRate.toFixed(1)}% change</div>`;
+                    
+                    tooltipContent += `<div style="margin-top: 0.5rem;">Critical: ${d.severityBreakdown.critical}</div>`;
                     tooltipContent += `<div>Serious: ${d.severityBreakdown.serious}</div>`;
                     tooltipContent += `<div>Moderate: ${d.severityBreakdown.moderate}</div>`;
                     tooltipContent += `<div>Minor: ${d.severityBreakdown.minor}</div>`;
@@ -681,10 +733,8 @@
                     // If viewing a specific tag, show its count
                     if (currentYAxisMetric.startsWith('tag:')) {
                         const tag = currentYAxisMetric.substring(4);
-                        tooltipContent += `<div style="margin-top: 0.25rem; font-weight: bold;">${tag}: ${d.yValue}</div>`;
+                        tooltipContent += `<div style="margin-top: 0.5rem; font-weight: bold;">${tag}: ${d.yValue}</div>`;
                     }
-                    
-                    tooltipContent += `<div style="margin-top: 0.25rem; color: #666;">Day ${d.daysSinceFirst}</div>`;
                     
                     tooltip
                         .style("opacity", 1)
@@ -701,9 +751,9 @@
             enter.merge(circles)
                 .transition()
                 .duration(1000)
-                .attr("cx", d => window.xScale(d.daysSinceFirst))
+                .attr("cx", d => window.xScale(d.improvementRate))
                 .attr("cy", d => window.yScale(d.yValue))
-                .attr("r", d => window.sizeScale(d.critical))
+                .attr("r", d => window.sizeScale(d.violations))
                 .attr("fill", d => colorScale(d.severity));
 
             // Update year label
@@ -815,6 +865,9 @@
             
             // Repopulate Y-axis options
             populateYAxisOptions();
+            
+            // Recalculate first values
+            calculateProjectFirstValues();
             
             // Recreate chart
             createScalesAndAxes();
