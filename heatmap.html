@@ -413,13 +413,30 @@
 
                             // Use the latest report for each project on this date
                             if (!dateData.has(projectName) || parsed.time > (dateData.get(projectName).time || '000000')) {
+                                // Calculate severity breakdown from violations array
+                                const severityCount = {
+                                    critical: 0,
+                                    serious: 0,
+                                    moderate: 0,
+                                    minor: 0
+                                };
+
+                                if (report.violations && Array.isArray(report.violations)) {
+                                    report.violations.forEach(violation => {
+                                        const impact = (violation.impact || 'moderate').toLowerCase();
+                                        if (severityCount.hasOwnProperty(impact)) {
+                                            severityCount[impact] += violation.nodes?.length || 1;
+                                        }
+                                    });
+                                }
+
                                 dateData.set(projectName, {
                                     time: parsed.time,
                                     total: report.total_violations || 0,
-                                    critical: report.critical || 0,
-                                    serious: report.serious || 0,
-                                    moderate: report.moderate || 0,
-                                    minor: report.minor || 0
+                                    critical: severityCount.critical,
+                                    serious: severityCount.serious,
+                                    moderate: severityCount.moderate,
+                                    minor: severityCount.minor
                                 });
                             }
                         });
