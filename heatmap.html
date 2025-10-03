@@ -348,6 +348,19 @@
             }
         }
 
+        // Parse report filename to extract metadata
+        function parseReportFilename(filename) {
+            const match = filename.match(/([\w.-]+)-(\d{4}-\d{2}-\d{2})-(\d{6})\.json$/);
+            if (match) {
+                return {
+                    project: match[1],
+                    date: match[2],
+                    time: match[3]
+                };
+            }
+            return null;
+        }
+
         async function loadData() {
             showLoading('Loading accessibility data...');
             try {
@@ -373,64 +386,82 @@
                 allDates = Array.from(datesSet).sort();
                 console.log(`Found ${allDates.length} unique dates`);
 
-                const reports = [];
+                // Map of date -> Map of project -> data
+                const dateProjectMap = new Map();
+                const allProjects = new Set();
 
                 // Load each date's archive
+                let loadedDates = 0;
                 for (const date of allDates) {
                     try {
                         const archiveUrl = `accessibility-reports/archives/reports_${date}.tar.gz`;
                         const jsonFiles = await fetchAndDecompressArchive(archiveUrl);
                         
-                        // Look for all-projects file in the archive
-                        const allProjectsFile = Object.keys(jsonFiles).find(f => 
-                            f.startsWith('all-projects-') && f.endsWith('.json')
-                        );
-                        
-                        if (allProjectsFile) {
-                            const data = jsonFiles[allProjectsFile];
-                            reports.push({ date, projects: data });
+                        if (!dateProjectMap.has(date)) {
+                            dateProjectMap.set(date, new Map());
                         }
+                        
+                        const dateData = dateProjectMap.get(date);
+
+                        // Process each report in the archive
+                        Object.entries(jsonFiles).forEach(([filename, report]) => {
+                            const parsed = parseReportFilename(filename);
+                            if (!parsed) return;
+
+                            const projectName = parsed.project;
+                            allProjects.add(projectName);
+
+                            // Use the latest report for each project on this date
+                            if (!dateData.has(projectName) || parsed.time > (dateData.get(projectName).time || '000000')) {
+                                dateData.set(projectName, {
+                                    time: parsed.time,
+                                    total: report.total_violations || 0,
+                                    critical: report.critical || 0,
+                                    serious: report.serious || 0,
+                                    moderate: report.moderate || 0,
+                                    minor: report.minor || 0
+                                });
+                            }
+                        });
+
+                        loadedDates++;
+                        console.log(`Loaded ${Object.keys(jsonFiles).length} reports for ${date}`);
                     } catch (error) {
                         console.warn(`Could not load archive for ${date}:`, error);
                     }
                 }
 
-                console.log(`Successfully loaded ${reports.length} reports`);
-
-                // Sort by date
-                reports.sort((a, b) => a.date.localeCompare(b.date));
+                console.log(`Successfully loaded ${loadedDates} dates with ${allProjects.size} projects`);
 
                 // Update allDates to only include dates we have data for
-                allDates = reports.map(r => r.date);
-
-                // Get all unique projects
-                const projectsSet = new Set();
-                reports.forEach(report => {
-                    report.projects.forEach(p => projectsSet.add(p.url));
-                });
+                allDates = Array.from(dateProjectMap.keys()).sort();
 
                 // Create data structure: project -> date -> data
                 const projectData = {};
-                projectsSet.forEach(url => {
-                    projectData[url] = {
-                        url: url,
+                allProjects.forEach(projectName => {
+                    projectData[projectName] = {
+                        url: projectName,
                         dates: {}
                     };
                 });
 
-                reports.forEach(report => {
-                    report.projects.forEach(project => {
-                        projectData[project.url].dates[report.date] = {
-                            total: project.total_violations || 0,
-                            critical: project.critical || 0,
-                            serious: project.serious || 0,
-                            moderate: project.moderate || 0,
-                            minor: project.minor || 0
-                        };
+                // Populate project data from date map
+                dateProjectMap.forEach((projectMap, date) => {
+                    projectMap.forEach((data, projectName) => {
+                        if (projectData[projectName]) {
+                            projectData[projectName].dates[date] = {
+                                total: data.total,
+                                critical: data.critical,
+                                serious: data.serious,
+                                moderate: data.moderate,
+                                minor: data.minor
+                            };
+                        }
                     });
                 });
 
                 allData = Object.values(projectData);
+                console.log(`Prepared data for ${allData.length} projects`);
                 filterAndRender();
                 hideLoading();
             } catch (error) {
