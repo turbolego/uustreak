@@ -479,6 +479,8 @@
 
                 allData = Object.values(projectData);
                 console.log(`Prepared data for ${allData.length} projects`);
+                console.log('Sample project data:', allData.length > 0 ? allData[0] : 'none');
+                console.log('All dates available:', allDates);
                 filterAndRender();
                 hideLoading();
             } catch (error) {
@@ -509,12 +511,17 @@
             const dateRange = document.getElementById('dateRange').value;
             let dates = [...allDates];
 
+            console.log(`filterAndRender called with dateRange: ${dateRange}`);
+            console.log(`Initial dates count: ${dates.length}`);
+
             if (dateRange !== 'all') {
                 const days = parseInt(dateRange);
                 const cutoffDate = new Date();
                 cutoffDate.setDate(cutoffDate.getDate() - days);
                 const cutoffStr = cutoffDate.toISOString().split('T')[0];
+                console.log(`Filtering dates after: ${cutoffStr}`);
                 dates = dates.filter(d => d >= cutoffStr);
+                console.log(`Dates after filtering: ${dates.length}`, dates);
             }
 
             // Filter data to only include relevant dates
@@ -524,6 +531,9 @@
                     Object.entries(project.dates).filter(([date]) => dates.includes(date))
                 )
             })).filter(project => Object.keys(project.dates).length > 0);
+
+            console.log(`Filtered data: ${filteredData.length} projects`);
+            console.log('Sample filtered project:', filteredData.length > 0 ? filteredData[0] : 'none');
 
             sortAndRender(dates);
         }
