@@ -351,24 +351,56 @@
         async function loadData() {
             showLoading('Loading accessibility data...');
             try {
-                const archives = await fetchAndDecompressArchive();
+                // Fetch report list to get available dates
+                const response = await fetch('historical-data/report-list.json');
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch report list: ${response.statusText}`);
+                }
+                
+                const reportList = await response.json();
+                console.log(`Loaded ${reportList.length} reports from list`);
+
+                // Extract unique dates from report list
+                const datesSet = new Set();
+                reportList.forEach(filename => {
+                    if (filename.includes('-FAILED.json')) return;
+                    const match = filename.match(/(\d{4}-\d{2}-\d{2})/);
+                    if (match) {
+                        datesSet.add(match[1]);
+                    }
+                });
+                
+                allDates = Array.from(datesSet).sort();
+                console.log(`Found ${allDates.length} unique dates`);
+
                 const reports = [];
 
-                for (const [filename, content] of Object.entries(archives)) {
-                    if (filename.startsWith('all-projects-') && filename.endsWith('.json')) {
-                        const dateMatch = filename.match(/all-projects-(\d{4}-\d{2}-\d{2})\.json/);
-                        if (dateMatch) {
-                            const date = dateMatch[1];
-                            const data = JSON.parse(content);
+                // Load each date's archive
+                for (const date of allDates) {
+                    try {
+                        const archiveUrl = `accessibility-reports/archives/reports_${date}.tar.gz`;
+                        const jsonFiles = await fetchAndDecompressArchive(archiveUrl);
+                        
+                        // Look for all-projects file in the archive
+                        const allProjectsFile = Object.keys(jsonFiles).find(f => 
+                            f.startsWith('all-projects-') && f.endsWith('.json')
+                        );
+                        
+                        if (allProjectsFile) {
+                            const data = jsonFiles[allProjectsFile];
                             reports.push({ date, projects: data });
                         }
+                    } catch (error) {
+                        console.warn(`Could not load archive for ${date}:`, error);
                     }
                 }
+
+                console.log(`Successfully loaded ${reports.length} reports`);
 
                 // Sort by date
                 reports.sort((a, b) => a.date.localeCompare(b.date));
 
-                // Get all unique dates
+                // Update allDates to only include dates we have data for
                 allDates = reports.map(r => r.date);
 
                 // Get all unique projects
