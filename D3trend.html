@@ -440,7 +440,7 @@
         // Add pattern definitions for trail bubbles
         const defs = svg.append("defs");
         
-        // Create a pattern for each severity color
+        // Create arrow markers for trail paths
         const severityColors = {
             'critical': '#d32f2f',
             'serious': '#f57c00',
@@ -448,6 +448,22 @@
             'minor': '#689f38'
         };
         
+        Object.entries(severityColors).forEach(([severity, color]) => {
+            defs.append("marker")
+                .attr("id", `arrow-${severity}`)
+                .attr("viewBox", "0 0 10 10")
+                .attr("refX", 8)
+                .attr("refY", 5)
+                .attr("markerWidth", 6)
+                .attr("markerHeight", 6)
+                .attr("orient", "auto-start-reverse")
+                .append("path")
+                .attr("d", "M 0 0 L 10 5 L 0 10 z")
+                .attr("fill", color)
+                .attr("opacity", 0.7);
+        });
+        
+        // Create patterns for trail bubbles
         Object.entries(severityColors).forEach(([severity, color]) => {
             const pattern = defs.append("pattern")
                 .attr("id", `trail-pattern-${severity}`)
@@ -1020,8 +1036,9 @@
             // Remove tracked class from all circles
             plotG.selectAll("circle.country").classed("tracked", false);
             
-            // Remove trail
+            // Remove trail circles and paths
             plotG.selectAll("circle.trail").remove();
+            plotG.selectAll("line.trail-path").remove();
             
             // Hide tracking info
             document.getElementById('trackingInfo').classList.add('hidden');
@@ -1061,10 +1078,44 @@
                         severityScore: severityScore,
                         yValue: yValue,
                         violations: data.violations,
-                        severity: dominantSeverity
+                        severity: dominantSeverity,
+                        x: window.xScale(severityScore),
+                        y: window.yScale(yValue)
                     });
                 }
             }
+            
+            // Update path lines between trail points
+            const pathData = [];
+            for (let i = 0; i < newTrailData.length - 1; i++) {
+                pathData.push({
+                    x1: newTrailData[i].x,
+                    y1: newTrailData[i].y,
+                    x2: newTrailData[i + 1].x,
+                    y2: newTrailData[i + 1].y,
+                    severity: newTrailData[i + 1].severity
+                });
+            }
+            
+            // Draw path lines with arrows
+            const paths = plotG.selectAll("line.trail-path")
+                .data(pathData, (d, i) => i);
+            
+            paths.exit().remove();
+            
+            const pathEnter = paths.enter()
+                .append("line")
+                .attr("class", "trail-path");
+            
+            pathEnter.merge(paths)
+                .attr("x1", d => d.x1)
+                .attr("y1", d => d.y1)
+                .attr("x2", d => d.x2)
+                .attr("y2", d => d.y2)
+                .attr("stroke", d => colorScale(d.severity))
+                .attr("stroke-width", 2)
+                .attr("stroke-opacity", 0.5)
+                .attr("marker-end", d => `url(#arrow-${d.severity})`);
             
             // Update trail circles
             const trails = plotG.selectAll("circle.trail")
@@ -1077,8 +1128,8 @@
                 .attr("class", "trail");
             
             trailEnter.merge(trails)
-                .attr("cx", d => window.xScale(d.severityScore))
-                .attr("cy", d => window.yScale(d.yValue))
+                .attr("cx", d => d.x)
+                .attr("cy", d => d.y)
                 .attr("r", d => window.sizeScale(d.violations))
                 .attr("fill", d => `url(#trail-pattern-${d.severity})`);
         }
