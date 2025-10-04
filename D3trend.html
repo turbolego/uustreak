@@ -452,7 +452,8 @@
             <div class="filter-container">
                 <label for="project-filter">Filter Projects:<span class="filter-badge" id="filter-count">All</span></label>
                 <input type="text" id="project-filter" placeholder="Search to filter..." autocomplete="off">
-                <button id="clear-filter" title="Clear search and show all projects">Clear All</button>
+                <button id="select-all-filter" title="Select all projects">Select All</button>
+                <button id="select-none-filter" title="Deselect all projects">Select None</button>
                 <div class="filter-dropdown" id="filter-dropdown">
                     <div id="filter-items"></div>
                     <div class="filter-actions">
@@ -1356,13 +1357,28 @@
             refreshChart();
         }
         
-        function clearFilter() {
+        function selectAllFilter() {
             // Clear search input
             document.getElementById('project-filter').value = '';
             filterSearchTerm = '';
             
             // Select all projects
             selectedProjects = new Set(allProjects);
+            updateFilterDropdown('');
+            updateFilterBadge();
+            refreshChart();
+            
+            // Close dropdown
+            document.getElementById('filter-dropdown').classList.remove('show');
+        }
+        
+        function selectNoneFilter() {
+            // Clear search input
+            document.getElementById('project-filter').value = '';
+            filterSearchTerm = '';
+            
+            // Deselect all projects
+            selectedProjects.clear();
             updateFilterDropdown('');
             updateFilterBadge();
             refreshChart();
@@ -1527,9 +1543,14 @@
             deselectAllProjects();
         });
         
-        document.getElementById('clear-filter').addEventListener('click', function(e) {
+        document.getElementById('select-all-filter').addEventListener('click', function(e) {
             e.stopPropagation();
-            clearFilter();
+            selectAllFilter();
+        });
+        
+        document.getElementById('select-none-filter').addEventListener('click', function(e) {
+            e.stopPropagation();
+            selectNoneFilter();
         });
 
         document.getElementById('speed').addEventListener('change', function() {
