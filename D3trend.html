@@ -138,6 +138,88 @@
             background-color: white;
         }
 
+        .filter-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .filter-container input {
+            padding: 0.4rem 0.6rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            min-width: 200px;
+        }
+
+        .filter-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+            max-height: 300px;
+            overflow-y: auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: none;
+        }
+
+        .filter-dropdown.show {
+            display: block;
+        }
+
+        .filter-item {
+            padding: 0.5rem 0.75rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .filter-item:hover {
+            background-color: #f0f0f0;
+        }
+
+        .filter-item input[type="checkbox"] {
+            cursor: pointer;
+        }
+
+        .filter-actions {
+            padding: 0.5rem 0.75rem;
+            border-top: 1px solid #eee;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .filter-actions button {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.8rem;
+            border: 1px solid #ccc;
+            background: white;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .filter-actions button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .filter-badge {
+            display: inline-block;
+            background-color: #2196F3;
+            color: white;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            margin-left: 0.25rem;
+        }
+
         #chart {
             position: fixed;
             top: 60px;
@@ -367,6 +449,17 @@
                 <option value="1500" selected>Normal</option>
                 <option value="750">Fast</option>
             </select>
+            <div class="filter-container">
+                <label for="project-filter">Filter Projects:<span class="filter-badge" id="filter-count">All</span></label>
+                <input type="text" id="project-filter" placeholder="Search to filter..." autocomplete="off">
+                <div class="filter-dropdown" id="filter-dropdown">
+                    <div id="filter-items"></div>
+                    <div class="filter-actions">
+                        <button id="select-all">Select All</button>
+                        <button id="deselect-all">Deselect All</button>
+                    </div>
+                </div>
+            </div>
             <div class="autocomplete-container">
                 <label for="project-search">Track Project:</label>
                 <input type="text" id="project-search" placeholder="Search projects..." autocomplete="off">
@@ -425,6 +518,8 @@
         let trailData = [];
         let autocompleteSelectedIndex = -1;
         let autocompleteFilteredProjects = [];
+        let selectedProjects = new Set();
+        let filterSearchTerm = '';
 
         // Chart dimensions
         const margin = { top: 40, right: 100, bottom: 60, left: 80 };
@@ -545,6 +640,10 @@
 
                 // Load data for the default date range
                 await loadDataForDateRange(30);
+
+                // Initialize selected projects (all by default)
+                selectedProjects = new Set(allProjects);
+                updateFilterBadge();
 
                 // Populate Y-axis tag options
                 populateYAxisOptions();
@@ -878,9 +977,12 @@
             const dateData = allProjectsData.get(date);
             if (!dateData) return;
 
-            // Prepare data for bubbles
+            // Prepare data for bubbles (filtered by selected projects)
             const bubbleData = [];
             dateData.forEach((data, project) => {
+                // Skip if project is not selected
+                if (!selectedProjects.has(project)) return;
+                
                 // Assign color based on dominant severity
                 const severities = data.severityCount;
                 let dominantSeverity = 'moderate';
@@ -1187,6 +1289,79 @@
             }
         }
 
+        // Filter functions
+        function updateFilterDropdown(searchTerm) {
+            filterSearchTerm = searchTerm;
+            const dropdownContainer = document.getElementById('filter-items');
+            const projectsArray = Array.from(allProjects).sort();
+            
+            const lowerSearch = searchTerm.toLowerCase();
+            const filteredProjects = searchTerm.trim() 
+                ? projectsArray.filter(project => project.toLowerCase().includes(lowerSearch))
+                : projectsArray;
+            
+            dropdownContainer.innerHTML = '';
+            
+            filteredProjects.forEach(project => {
+                const item = document.createElement('div');
+                item.className = 'filter-item';
+                
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.checked = selectedProjects.has(project);
+                checkbox.id = `filter-${project.replace(/\s/g, '-')}`;
+                
+                checkbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        selectedProjects.add(project);
+                    } else {
+                        selectedProjects.delete(project);
+                    }
+                    updateFilterBadge();
+                    refreshChart();
+                });
+                
+                const label = document.createElement('label');
+                label.textContent = project;
+                label.style.cursor = 'pointer';
+                label.htmlFor = checkbox.id;
+                
+                item.appendChild(checkbox);
+                item.appendChild(label);
+                dropdownContainer.appendChild(item);
+            });
+        }
+        
+        function updateFilterBadge() {
+            const badge = document.getElementById('filter-count');
+            if (selectedProjects.size === allProjects.size) {
+                badge.textContent = 'All';
+            } else {
+                badge.textContent = selectedProjects.size;
+            }
+        }
+        
+        function selectAllProjects() {
+            selectedProjects = new Set(allProjects);
+            updateFilterDropdown(filterSearchTerm);
+            updateFilterBadge();
+            refreshChart();
+        }
+        
+        function deselectAllProjects() {
+            selectedProjects.clear();
+            updateFilterDropdown(filterSearchTerm);
+            updateFilterBadge();
+            refreshChart();
+        }
+        
+        function refreshChart() {
+            const dates = Array.from(allProjectsData.keys()).sort();
+            if (dates.length > 0 && currentYearIndex < dates.length) {
+                updateChart(dates[currentYearIndex]);
+            }
+        }
+
         // Autocomplete functions
         function updateAutocomplete(searchTerm) {
             const dropdown = document.getElementById('autocomplete-dropdown');
@@ -1305,6 +1480,36 @@
                 updateAutocomplete(this.value);
             }
         });
+        
+        // Project filter
+        const projectFilterInput = document.getElementById('project-filter');
+        const filterDropdown = document.getElementById('filter-dropdown');
+        
+        projectFilterInput.addEventListener('input', function(e) {
+            updateFilterDropdown(e.target.value);
+        });
+        
+        projectFilterInput.addEventListener('focus', function() {
+            filterDropdown.classList.add('show');
+            updateFilterDropdown(this.value);
+        });
+        
+        // Close filter dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.filter-container')) {
+                filterDropdown.classList.remove('show');
+            }
+        });
+        
+        document.getElementById('select-all').addEventListener('click', function(e) {
+            e.stopPropagation();
+            selectAllProjects();
+        });
+        
+        document.getElementById('deselect-all').addEventListener('click', function(e) {
+            e.stopPropagation();
+            deselectAllProjects();
+        });
 
         document.getElementById('speed').addEventListener('change', function() {
             animationSpeed = parseInt(this.value);
@@ -1400,6 +1605,11 @@
             
             // Reload data
             await loadDataForDateRange(days);
+            
+            // Reset selected projects to all
+            selectedProjects = new Set(allProjects);
+            updateFilterBadge();
+            updateFilterDropdown(filterSearchTerm);
             
             // Repopulate Y-axis options
             populateYAxisOptions();
