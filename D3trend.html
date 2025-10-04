@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCAG Violations - Trend Animation</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="gzip-utils.js"></script>
+    <script src="loading.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #f5f5f5;
+            overflow: hidden;
+        }
+
+        .header {
+            background: white;
+            padding: 0.75rem 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header-controls label {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .header-controls select {
+            padding: 0.4rem 0.6rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .header-controls button {
+            padding: 0.4rem 1rem;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .header-controls button:hover {
+            background-color: #0D47A1;
+        }
+
+        .header-controls button.playing {
+            background-color: #f44336;
+        }
+
+        #chart {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: white;
+        }
+
+        .axis path,
+        .axis line {
+            stroke: #aaa;
+            stroke-width: 1;
+        }
+
+        .axis text {
+            font-size: 11px;
+            fill: #666;
+        }
+
+        .axis-label {
+            font-size: 14px;
+            font-weight: 500;
+            fill: #333;
+        }
+
+        .year-label {
+            font-size: 120px;
+            fill: #eee;
+            pointer-events: none;
+            font-weight: bold;
+        }
+
+        .tooltip {
+            position: absolute;
+            pointer-events: none;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 0.75rem;
+            border: 1px solid #999;
+            border-radius: 4px;
+            font-size: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            z-index: 200;
+        }
+
+        .tooltip strong {
+            font-size: 13px;
+            display: block;
+            margin-bottom: 0.25rem;
+            color: #333;
+        }
+
+        circle.country {
+            stroke: #fff;
+            stroke-width: 1.5;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        circle.country:hover {
+            stroke-width: 2.5;
+            stroke: #333;
+        }
+
+        .legend {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            font-size: 12px;
+            max-width: 250px;
+            z-index: 50;
+        }
+
+        .legend h3 {
+            font-size: 13px;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.25rem;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+            border: 1px solid #fff;
+        }
+
+        .info-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 0.75rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            font-size: 0.85rem;
+            max-width: 300px;
+            z-index: 50;
+        }
+
+        .corner-label {
+            position: absolute;
+            font-size: 0.75rem;
+            color: #999;
+            font-weight: 500;
+            pointer-events: none;
+        }
+
+        .corner-label.top-right {
+            top: 10px;
+            right: 10px;
+        }
+
+        .corner-label.bottom-left {
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .loading-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            text-align: center;
+            z-index: 200;
+        }
+
+        .loading-message.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>WCAG Violations - Trend Animation</h1>
+        <div class="header-controls">
+            <label for="date-range">Date Range:</label>
+            <select id="date-range">
+                <option value="7">Last 7 Days</option>
+                <option value="14">Last 14 Days</option>
+                <option value="30" selected>Last 30 Days</option>
+                <option value="60">Last 60 Days</option>
+                <option value="90">Last 90 Days</option>
+                <option value="all">All Data</option>
+            </select>
+            <label for="y-axis">Y-Axis Metric:</label>
+            <select id="y-axis">
+                <option value="total">Total Violations</option>
+                <option value="critical">Critical Severity</option>
+                <option value="serious">Serious Severity</option>
+                <option value="moderate">Moderate Severity</option>
+                <option value="minor">Minor Severity</option>
+                <optgroup label="WCAG Tags" id="tag-options">
+                    <!-- Will be populated dynamically -->
+                </optgroup>
+            </select>
+            <label for="speed">Speed:</label>
+            <select id="speed">
+                <option value="3000">Slow</option>
+                <option value="1500" selected>Normal</option>
+                <option value="750">Fast</option>
+            </select>
+            <button id="play-pause">▶ Play</button>
+        </div>
+    </div>
+
+    <div id="chart"></div>
+
+    <div class="legend" id="legend">
+        <h3>Severity (Dominant)</h3>
+        <div id="legend-items"></div>
+    </div>
+
+    <div class="info-box">
+        <div><strong>X-Axis:</strong> % Change from First Report</div>
+        <div style="font-size: 0.75rem; color: #888; margin-left: 1rem;">(← worse | better →)</div>
+        <div><strong>Y-Axis:</strong> <span id="y-axis-label">Total Violations</span></div>
+        <div style="font-size: 0.75rem; color: #888; margin-left: 1rem;">(↓ less | more ↑)</div>
+        <div><strong>Bubble Size:</strong> Total Violations</div>
+        <div><strong>Bubble Color:</strong> Dominant Severity</div>
+        <div style="margin-top: 0.5rem; font-size: 0.8rem; color: #666;">
+            <strong>Goal:</strong> Top-right corner (fewer violations, improving trend)
+        </div>
+    </div>
+
+    <div class="loading-message" id="loadingMessage">
+        <h2>Loading data...</h2>
+        <p>Please wait while we load the reports.</p>
+    </div>
+
+    <script>
+        // Global state
+        let reportList = [];
+        let availableDates = [];
+        let allProjectsData = new Map();
+        let allProjects = new Set();
+        let allTags = new Set();
+        let projectFirstValues = new Map(); // Store first report values per project
+        let animationTimer = null;
+        let isPlaying = false;
+        let currentYearIndex = 0;
+        let animationSpeed = 1500;
+        let currentYAxisMetric = 'total';
+
+        // Chart dimensions
+        const margin = { top: 40, right: 100, bottom: 60, left: 80 };
+        const width = window.innerWidth - margin.left - margin.right;
+        const height = window.innerHeight - 60 - margin.top - margin.bottom; // 60 for header
+
+        // Create SVG
+        const svg = d3.select("#chart")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom);
+
+        const plotG = svg.append("g")
+            .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+        // Year label (large background text)
+        const yearLabel = plotG.append("text")
+            .attr("class", "year-label")
+            .attr("x", width - 100)
+            .attr("y", height - 50)
+            .attr("text-anchor", "end");
+
+        // Corner labels
+        plotG.append("text")
+            .attr("class", "corner-label top-right")
+            .attr("x", width - 10)
+            .attr("y", 10)
+            .attr("text-anchor", "end")
+            .text("✓ Best (No violations, improving)");
+
+        plotG.append("text")
+            .attr("class", "corner-label bottom-left")
+            .attr("x", 10)
+            .attr("y", height - 10)
+            .attr("text-anchor", "start")
+            .text("✗ Worst (Most violations, worsening)");
+
+        // Tooltip
+        const tooltip = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        // Color scale for different violation severity
+        const colorScale = d3.scaleOrdinal()
+            .domain(['critical', 'serious', 'moderate', 'minor'])
+            .range(['#d32f2f', '#f57c00', '#fbc02d', '#689f38']);
+
+        // Initialize
+        async function initialize() {
+            try {
+                showLoadingMessage(true);
+                
+                if (typeof fetchAndDecompressArchive !== 'function') {
+                    throw new Error('Gzip utilities not loaded. Please ensure gzip-utils.js is loaded.');
+                }
+
+                // Fetch report list
+                const response = await fetch('historical-data/report-list.json');
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch report list: ${response.statusText}`);
+                }
+                
+                reportList = await response.json();
+                console.log(`Loaded ${reportList.length} reports from list`);
+
+                // Extract available dates
+                availableDates = extractDates(reportList);
+                console.log(`Found ${availableDates.length} unique dates`);
+
+                // Load data for the default date range
+                await loadDataForDateRange(30);
+
+                // Populate Y-axis tag options
+                populateYAxisOptions();
+
+                // Create scales and axes
+                createScalesAndAxes();
+
+                // Create legend
+                createLegend();
+
+                // Start animation
+                showLoadingMessage(false);
+            } catch (error) {
+                console.error('Initialization error:', error);
+                alert(`Failed to initialize: ${error.message}`);
+                showLoadingMessage(false);
+            }
+        }
+
+        // Extract unique dates
+        function extractDates(reports) {
+            const dates = new Set();
+            reports.forEach(filename => {
+                if (filename.includes('-FAILED.json')) return;
+                const match = filename.match(/\d{4}-\d{2}-\d{2}/);
+                if (match) {
+                    dates.add(match[0]);
+                }
+            });
+            return Array.from(dates).sort();
+        }
+
+        // Parse report filename
+        function parseReportFilename(filename) {
+            if (filename.includes('-FAILED.json')) return null;
+            
+            const match = filename.match(/violations-(.+)-(\d{4}-\d{2}-\d{2})T(\d{2}-\d{2}-\d{2}_\d{3}Z)(?:-count-(\d+))?\.json$/);
+            if (!match) return null;
+
+            return {
+                filename,
+                project: match[1].replace(/_/g, ' '),
+                date: match[2],
+                time: match[3],
+                violationCount: match[4] ? parseInt(match[4]) : null
+            };
+        }
+
+        // Load data for date range
+        async function loadDataForDateRange(days) {
+            showLoadingMessage(true);
+            allProjectsData.clear();
+            allProjects.clear();
+
+            let datesToLoad = [];
+            if (days === 'all') {
+                datesToLoad = [...availableDates];
+            } else {
+                const endDate = availableDates[availableDates.length - 1];
+                const startDate = new Date(endDate);
+                startDate.setDate(startDate.getDate() - days);
+                datesToLoad = availableDates.filter(date => new Date(date) >= startDate);
+            }
+
+            console.log(`Loading data for ${datesToLoad.length} dates`);
+
+            for (let i = 0; i < datesToLoad.length; i++) {
+                const date = datesToLoad[i];
+                try {
+                    await loadDataForDate(date);
+                } catch (error) {
+                    console.error(`Failed to load data for ${date}:`, error);
+                }
+            }
+
+            console.log(`Loaded data for ${allProjectsData.size} dates and ${allProjects.size} projects`);
+            
+            // Calculate first values for each project
+            calculateProjectFirstValues();
+            
+            showLoadingMessage(false);
+        }
+
+        // Load data for specific date using gzip archives
+        async function loadDataForDate(date) {
+            const archiveUrl = `accessibility-reports/archives/reports_${date}.tar.gz`;
+            
+            try {
+                const jsonFiles = await fetchAndDecompressArchive(archiveUrl);
+                
+                if (!allProjectsData.has(date)) {
+                    allProjectsData.set(date, new Map());
+                }
+                
+                const dateData = allProjectsData.get(date);
+
+                Object.entries(jsonFiles).forEach(([filename, report]) => {
+                    const parsed = parseReportFilename(filename);
+                    if (!parsed) return;
+
+                    const projectName = parsed.project;
+                    allProjects.add(projectName);
+
+                    if (!dateData.has(projectName) || parsed.time > dateData.get(projectName).time) {
+                        // Calculate severity breakdown
+                        const severityCount = {
+                            critical: 0,
+                            serious: 0,
+                            moderate: 0,
+                            minor: 0
+                        };
+
+                        // Extract tag information from violations
+                        const tagCounts = {};
+
+                        if (report.violations && Array.isArray(report.violations)) {
+                            report.violations.forEach(violation => {
+                                const impact = (violation.impact || 'moderate').toLowerCase();
+                                if (severityCount.hasOwnProperty(impact)) {
+                                    severityCount[impact] += violation.nodes?.length || 1;
+                                }
+
+                                // Count tags
+                                if (violation.tags && Array.isArray(violation.tags)) {
+                                    violation.tags.forEach(tag => {
+                                        allTags.add(tag);
+                                        const nodeCount = violation.nodes?.length || 1;
+                                        tagCounts[tag] = (tagCounts[tag] || 0) + nodeCount;
+                                    });
+                                }
+                            });
+                        }
+
+                        dateData.set(projectName, {
+                            time: parsed.time,
+                            violations: report.total_violations || 0,
+                            severityCount: severityCount,
+                            tagCounts: tagCounts,
+                            details: report
+                        });
+                    }
+                });
+
+                console.log(`Loaded ${Object.keys(jsonFiles).length} reports from archive for ${date}`);
+            } catch (error) {
+                console.warn(`Archive not available for ${date}:`, error);
+            }
+        }
+
+        // Populate Y-axis options with available tags
+        function populateYAxisOptions() {
+            const optgroup = document.getElementById('tag-options');
+            optgroup.innerHTML = '';
+
+            // Prioritize common WCAG tags
+            const priorityTags = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'wcag111', 'wcag412', 'wcag131'];
+            
+            const sortedTags = Array.from(allTags).sort((a, b) => {
+                const aPriority = priorityTags.indexOf(a);
+                const bPriority = priorityTags.indexOf(b);
+                
+                if (aPriority !== -1 && bPriority !== -1) return aPriority - bPriority;
+                if (aPriority !== -1) return -1;
+                if (bPriority !== -1) return 1;
+                return a.localeCompare(b);
+            });
+
+            sortedTags.forEach(tag => {
+                const option = document.createElement('option');
+                option.value = `tag:${tag}`;
+                option.textContent = tag;
+                optgroup.appendChild(option);
+            });
+        }
+
+        // Get Y-axis value for a project based on selected metric
+        function getYAxisValue(projectData, metric) {
+            if (metric === 'total') {
+                return projectData.violations;
+            } else if (metric === 'critical' || metric === 'serious' || metric === 'moderate' || metric === 'minor') {
+                return projectData.severityCount[metric] || 0;
+            } else if (metric.startsWith('tag:')) {
+                const tag = metric.substring(4);
+                return projectData.tagCounts[tag] || 0;
+            }
+            return 0;
+        }
+
+        // Get label for Y-axis based on selected metric
+        function getYAxisLabel(metric) {
+            if (metric === 'total') {
+                return 'Total Violations';
+            } else if (metric === 'critical') {
+                return 'Critical Violations';
+            } else if (metric === 'serious') {
+                return 'Serious Violations';
+            } else if (metric === 'moderate') {
+                return 'Moderate Violations';
+            } else if (metric === 'minor') {
+                return 'Minor Violations';
+            } else if (metric.startsWith('tag:')) {
+                const tag = metric.substring(4);
+                return `${tag.toUpperCase()} Violations`;
+            }
+            return 'Violations';
+        }
+
+        // Calculate first report values for each project
+        function calculateProjectFirstValues() {
+            projectFirstValues.clear();
+            
+            const dates = Array.from(allProjectsData.keys()).sort();
+            if (dates.length === 0) return;
+            
+            const firstDate = dates[0];
+            const firstDateData = allProjectsData.get(firstDate);
+            
+            firstDateData.forEach((data, project) => {
+                projectFirstValues.set(project, data.violations);
+            });
+            
+            console.log(`Calculated first values for ${projectFirstValues.size} projects`);
+        }
+
+        // Calculate improvement rate for a project
+        function getImprovementRate(project, currentViolations) {
+            const firstValue = projectFirstValues.get(project);
+            if (!firstValue || firstValue === 0) return 0;
+            
+            // Positive % = improvement (fewer violations)
+            // Negative % = deterioration (more violations)
+            const percentChange = ((firstValue - currentViolations) / firstValue) * 100;
+            return percentChange;
+        }
+
+        // Create scales and axes
+        function createScalesAndAxes() {
+            const dates = Array.from(allProjectsData.keys()).sort();
+            if (dates.length === 0) return;
+
+            // Build flat data array for domain calculation
+            const allData = [];
+            
+            dates.forEach(date => {
+                const dateData = allProjectsData.get(date);
+                
+                dateData.forEach((data, project) => {
+                    const improvementRate = getImprovementRate(project, data.violations);
+                    allData.push({
+                        project: project,
+                        date: date,
+                        improvementRate: improvementRate,
+                        yValue: getYAxisValue(data, currentYAxisMetric),
+                        violations: data.violations
+                    });
+                });
+            });
+
+            // X scale: improvement rate (-100% to +100%)
+            // Right side = better (positive improvement)
+            const xExtent = d3.extent(allData, d => d.improvementRate);
+            const xScale = d3.scaleLinear()
+                .domain([Math.min(xExtent[0] || -50, -10), Math.max(xExtent[1] || 50, 10)])
+                .range([0, width])
+                .nice();
+
+            // Y scale: violations (INVERTED - fewer violations at top)
+            // Top = fewer violations (better)
+            const yScale = d3.scaleLinear()
+                .domain([d3.max(allData, d => d.yValue) || 100, 0])
+                .range([height, 0])
+                .nice();
+
+            // Size scale: total violations
+            const sizeScale = d3.scaleSqrt()
+                .domain([0, d3.max(allData, d => d.violations) || 100])
+                .range([5, 50]);
+
+            // Store scales globally
+            window.xScale = xScale;
+            window.yScale = yScale;
+            window.sizeScale = sizeScale;
+
+            // Create axes
+            const xAxis = d3.axisBottom(xScale).ticks(10);
+            const yAxis = d3.axisLeft(yScale).ticks(10);
+
+            plotG.append("g")
+                .attr("class", "x axis")
+                .attr("transform", `translate(0, ${height})`)
+                .call(xAxis);
+
+            plotG.append("text")
+                .attr("class", "axis-label")
+                .attr("x", width / 2)
+                .attr("y", height + 45)
+                .attr("text-anchor", "middle")
+                .text("Violation Reduction Rate (% Change from First Report)");
+
+            // Add zero reference line for X-axis
+            plotG.append("line")
+                .attr("class", "zero-line")
+                .style("stroke", "#999")
+                .style("stroke-width", 2)
+                .style("stroke-dasharray", "5,5")
+                .attr("x1", xScale(0))
+                .attr("x2", xScale(0))
+                .attr("y1", 0)
+                .attr("y2", height);
+
+            plotG.append("g")
+                .attr("class", "y axis")
+                .call(yAxis);
+
+            plotG.append("text")
+                .attr("class", "axis-label")
+                .attr("transform", "rotate(-90)")
+                .attr("x", -height / 2)
+                .attr("y", -60)
+                .attr("text-anchor", "middle")
+                .text(getYAxisLabel(currentYAxisMetric));
+
+            // Start with first frame
+            updateChart(dates[0]);
+        }
+
+        // Update chart for a specific date
+        function updateChart(date) {
+            const dateData = allProjectsData.get(date);
+            if (!dateData) return;
+
+            // Prepare data for bubbles
+            const bubbleData = [];
+            dateData.forEach((data, project) => {
+                // Assign color based on dominant severity
+                const severities = data.severityCount;
+                let dominantSeverity = 'moderate';
+                let maxCount = 0;
+                Object.entries(severities).forEach(([severity, count]) => {
+                    if (count > maxCount) {
+                        maxCount = count;
+                        dominantSeverity = severity;
+                    }
+                });
+
+                const improvementRate = getImprovementRate(project, data.violations);
+                const yValue = getYAxisValue(data, currentYAxisMetric);
+
+                bubbleData.push({
+                    project: project,
+                    improvementRate: improvementRate,
+                    violations: data.violations,
+                    yValue: yValue,
+                    severity: dominantSeverity,
+                    severityBreakdown: data.severityCount,
+                    tagCounts: data.tagCounts,
+                    firstValue: projectFirstValues.get(project) || 0
+                });
+            });
+
+            // Data join
+            const circles = plotG.selectAll("circle.country")
+                .data(bubbleData, d => d.project);
+
+            // Exit
+            circles.exit()
+                .transition()
+                .duration(500)
+                .attr("r", 0)
+                .remove();
+
+            // Enter
+            const enter = circles.enter()
+                .append("circle")
+                .attr("class", "country")
+                .attr("cx", d => window.xScale(d.improvementRate))
+                .attr("cy", d => window.yScale(d.yValue))
+                .attr("r", 0)
+                .attr("fill", d => colorScale(d.severity))
+                .attr("opacity", 0.7)
+                .on("mouseover", function(event, d) {
+                    d3.select(this).attr("opacity", 1);
+                    
+                    // Build tooltip content dynamically
+                    let tooltipContent = `<strong>${d.project}</strong>`;
+                    tooltipContent += `<div>Total Violations: ${d.violations}</div>`;
+                    tooltipContent += `<div>First Report: ${d.firstValue}</div>`;
+                    
+                    const changeSign = d.improvementRate >= 0 ? '+' : '';
+                    const changeColor = d.improvementRate >= 0 ? '#4caf50' : '#f44336';
+                    tooltipContent += `<div style="color: ${changeColor}; font-weight: bold;">${changeSign}${d.improvementRate.toFixed(1)}% change</div>`;
+                    
+                    tooltipContent += `<div style="margin-top: 0.5rem;">Critical: ${d.severityBreakdown.critical}</div>`;
+                    tooltipContent += `<div>Serious: ${d.severityBreakdown.serious}</div>`;
+                    tooltipContent += `<div>Moderate: ${d.severityBreakdown.moderate}</div>`;
+                    tooltipContent += `<div>Minor: ${d.severityBreakdown.minor}</div>`;
+                    
+                    // If viewing a specific tag, show its count
+                    if (currentYAxisMetric.startsWith('tag:')) {
+                        const tag = currentYAxisMetric.substring(4);
+                        tooltipContent += `<div style="margin-top: 0.5rem; font-weight: bold;">${tag}: ${d.yValue}</div>`;
+                    }
+                    
+                    tooltip
+                        .style("opacity", 1)
+                        .html(tooltipContent)
+                        .style("left", (event.pageX + 10) + "px")
+                        .style("top", (event.pageY - 28) + "px");
+                })
+                .on("mouseout", function(event, d) {
+                    d3.select(this).attr("opacity", 0.7);
+                    tooltip.style("opacity", 0);
+                });
+
+            // Enter + Update
+            enter.merge(circles)
+                .transition()
+                .duration(1000)
+                .attr("cx", d => window.xScale(d.improvementRate))
+                .attr("cy", d => window.yScale(d.yValue))
+                .attr("r", d => window.sizeScale(d.violations))
+                .attr("fill", d => colorScale(d.severity));
+
+            // Update year label
+            yearLabel.text(date);
+        }
+
+        // Create legend
+        function createLegend() {
+            const legendData = [
+                { severity: 'critical', label: 'Critical' },
+                { severity: 'serious', label: 'Serious' },
+                { severity: 'moderate', label: 'Moderate' },
+                { severity: 'minor', label: 'Minor' }
+            ];
+
+            const legendItems = d3.select('#legend-items');
+            
+            legendData.forEach(item => {
+                const div = legendItems.append('div')
+                    .attr('class', 'legend-item');
+                
+                div.append('div')
+                    .attr('class', 'legend-color')
+                    .style('background-color', colorScale(item.severity));
+                
+                div.append('span')
+                    .text(item.label);
+            });
+        }
+
+        // Animation control
+        function animate() {
+            const dates = Array.from(allProjectsData.keys()).sort();
+            if (dates.length === 0) return;
+
+            updateChart(dates[currentYearIndex]);
+            currentYearIndex = (currentYearIndex + 1) % dates.length;
+            
+            if (isPlaying) {
+                animationTimer = setTimeout(animate, animationSpeed);
+            }
+        }
+
+        function togglePlayPause() {
+            isPlaying = !isPlaying;
+            const button = document.getElementById('play-pause');
+            
+            if (isPlaying) {
+                button.textContent = '⏸ Pause';
+                button.classList.add('playing');
+                animate();
+            } else {
+                button.textContent = '▶ Play';
+                button.classList.remove('playing');
+                if (animationTimer) {
+                    clearTimeout(animationTimer);
+                    animationTimer = null;
+                }
+            }
+        }
+
+        // Event listeners
+        document.getElementById('play-pause').addEventListener('click', togglePlayPause);
+
+        document.getElementById('speed').addEventListener('change', function() {
+            animationSpeed = parseInt(this.value);
+            if (isPlaying) {
+                // Restart animation with new speed
+                clearTimeout(animationTimer);
+                animate();
+            }
+        });
+
+        document.getElementById('y-axis').addEventListener('change', function() {
+            currentYAxisMetric = this.value;
+            
+            // Update info box label
+            document.getElementById('y-axis-label').textContent = getYAxisLabel(currentYAxisMetric);
+            
+            // Stop animation if playing
+            if (isPlaying) {
+                togglePlayPause();
+            }
+            
+            // Clear existing chart
+            plotG.selectAll("*").remove();
+            
+            // Re-add corner labels
+            plotG.append("text")
+                .attr("class", "corner-label top-right")
+                .attr("x", width - 10)
+                .attr("y", 10)
+                .attr("text-anchor", "end")
+                .text("✓ Best (No violations, improving)");
+
+            plotG.append("text")
+                .attr("class", "corner-label bottom-left")
+                .attr("x", 10)
+                .attr("y", height - 10)
+                .attr("text-anchor", "start")
+                .text("✗ Worst (Most violations, worsening)");
+            
+            // Re-add year label
+            plotG.append("text")
+                .attr("class", "year-label")
+                .attr("x", width - 100)
+                .attr("y", height - 50)
+                .attr("text-anchor", "end");
+            
+            // Recreate chart with new Y-axis
+            createScalesAndAxes();
+            
+            // Reset animation
+            currentYearIndex = 0;
+        });
+
+        document.getElementById('date-range').addEventListener('change', async function() {
+            const value = this.value;
+            const days = value === 'all' ? 'all' : parseInt(value);
+            
+            // Stop animation
+            if (isPlaying) {
+                togglePlayPause();
+            }
+            
+            // Clear existing chart
+            plotG.selectAll("*").remove();
+            
+            // Re-add corner labels
+            plotG.append("text")
+                .attr("class", "corner-label top-right")
+                .attr("x", width - 10)
+                .attr("y", 10)
+                .attr("text-anchor", "end")
+                .text("✓ Best (No violations, improving)");
+
+            plotG.append("text")
+                .attr("class", "corner-label bottom-left")
+                .attr("x", 10)
+                .attr("y", height - 10)
+                .attr("text-anchor", "start")
+                .text("✗ Worst (Most violations, worsening)");
+            
+            // Re-add year label
+            plotG.append("text")
+                .attr("class", "year-label")
+                .attr("x", width - 100)
+                .attr("y", height - 50)
+                .attr("text-anchor", "end");
+            
+            // Reload data
+            await loadDataForDateRange(days);
+            
+            // Repopulate Y-axis options
+            populateYAxisOptions();
+            
+            // Recalculate first values
+            calculateProjectFirstValues();
+            
+            // Recreate chart
+            createScalesAndAxes();
+            
+            // Reset animation
+            currentYearIndex = 0;
+        });
+
+        // Helper functions
+        function showLoadingMessage(show) {
+            const loadingMsg = document.getElementById('loadingMessage');
+            if (show) {
+                loadingMsg.classList.remove('hidden');
+            } else {
+                loadingMsg.classList.add('hidden');
+            }
+        }
+
+        // Initialize on load
+        window.addEventListener('load', initialize);
+    </script>
+</body>
+</html>
