@@ -371,6 +371,39 @@
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom);
 
+        // Add pattern definitions for trail bubbles
+        const defs = svg.append("defs");
+        
+        // Create a pattern for each severity color
+        const severityColors = {
+            'critical': '#d32f2f',
+            'serious': '#f57c00',
+            'moderate': '#fbc02d',
+            'minor': '#689f38'
+        };
+        
+        Object.entries(severityColors).forEach(([severity, color]) => {
+            const pattern = defs.append("pattern")
+                .attr("id", `trail-pattern-${severity}`)
+                .attr("patternUnits", "userSpaceOnUse")
+                .attr("width", 8)
+                .attr("height", 8)
+                .attr("patternTransform", "rotate(45)");
+            
+            pattern.append("rect")
+                .attr("width", 8)
+                .attr("height", 8)
+                .attr("fill", color);
+            
+            pattern.append("line")
+                .attr("x1", 0)
+                .attr("y1", 0)
+                .attr("x2", 0)
+                .attr("y2", 8)
+                .attr("stroke", "white")
+                .attr("stroke-width", 2);
+        });
+
         const plotG = svg.append("g")
             .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
@@ -974,7 +1007,7 @@
                 .attr("cx", d => window.xScale(d.severityScore))
                 .attr("cy", d => window.yScale(d.yValue))
                 .attr("r", d => window.sizeScale(d.violations))
-                .attr("fill", d => colorScale(d.severity));
+                .attr("fill", d => `url(#trail-pattern-${d.severity})`);
         }
 
         function updateTrackingInfo(projectData) {
