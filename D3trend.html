@@ -452,6 +452,7 @@
             <div class="filter-container">
                 <label for="project-filter">Filter Projects:<span class="filter-badge" id="filter-count">All</span></label>
                 <input type="text" id="project-filter" placeholder="Search to filter..." autocomplete="off">
+                <button id="clear-filter" title="Clear search and show all projects">Clear All</button>
                 <div class="filter-dropdown" id="filter-dropdown">
                     <div id="filter-items"></div>
                     <div class="filter-actions">
@@ -1355,6 +1356,21 @@
             refreshChart();
         }
         
+        function clearFilter() {
+            // Clear search input
+            document.getElementById('project-filter').value = '';
+            filterSearchTerm = '';
+            
+            // Select all projects
+            selectedProjects = new Set(allProjects);
+            updateFilterDropdown('');
+            updateFilterBadge();
+            refreshChart();
+            
+            // Close dropdown
+            document.getElementById('filter-dropdown').classList.remove('show');
+        }
+        
         function refreshChart() {
             const dates = Array.from(allProjectsData.keys()).sort();
             if (dates.length > 0 && currentYearIndex < dates.length) {
@@ -1509,6 +1525,11 @@
         document.getElementById('deselect-all').addEventListener('click', function(e) {
             e.stopPropagation();
             deselectAllProjects();
+        });
+        
+        document.getElementById('clear-filter').addEventListener('click', function(e) {
+            e.stopPropagation();
+            clearFilter();
         });
 
         document.getElementById('speed').addEventListener('change', function() {
