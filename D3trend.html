@@ -79,6 +79,65 @@
             background-color: #f44336;
         }
 
+        .autocomplete-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .autocomplete-container input {
+            padding: 0.4rem 0.6rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            min-width: 200px;
+        }
+
+        .autocomplete-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+            max-height: 300px;
+            overflow-y: auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: none;
+        }
+
+        .autocomplete-dropdown.show {
+            display: block;
+        }
+
+        .autocomplete-item {
+            padding: 0.5rem 0.75rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .autocomplete-item:hover {
+            background-color: #f0f0f0;
+        }
+
+        .autocomplete-item.selected {
+            background-color: #e3f2fd;
+        }
+
+        .autocomplete-item.no-results {
+            cursor: default;
+            color: #999;
+            font-style: italic;
+        }
+
+        .autocomplete-item.no-results:hover {
+            background-color: white;
+        }
+
         #chart {
             position: fixed;
             top: 60px;
@@ -308,6 +367,11 @@
                 <option value="1500" selected>Normal</option>
                 <option value="750">Fast</option>
             </select>
+            <div class="autocomplete-container">
+                <label for="project-search">Track Project:</label>
+                <input type="text" id="project-search" placeholder="Search projects..." autocomplete="off">
+                <div class="autocomplete-dropdown" id="autocomplete-dropdown"></div>
+            </div>
             <button id="play-pause">▶ Play</button>
         </div>
     </div>
@@ -359,6 +423,8 @@
         let currentYAxisMetric = 'total';
         let trackedProject = null;
         let trailData = [];
+        let autocompleteSelectedIndex = -1;
+        let autocompleteFilteredProjects = [];
 
         // Chart dimensions
         const margin = { top: 40, right: 100, bottom: 60, left: 80 };
@@ -940,6 +1006,9 @@
             document.getElementById('tracked-project-name').textContent = projectName;
             document.getElementById('trackingInfo').classList.remove('hidden');
             
+            // Update search input
+            document.getElementById('project-search').value = projectName;
+            
             // Hide tooltip when tracking
             tooltip.style("opacity", 0);
         }
@@ -956,6 +1025,10 @@
             
             // Hide tracking info
             document.getElementById('trackingInfo').classList.add('hidden');
+            
+            // Clear search input
+            document.getElementById('project-search').value = '';
+            document.getElementById('autocomplete-dropdown').classList.remove('show');
         }
 
         function updateTrail() {
@@ -1063,10 +1136,124 @@
             }
         }
 
+        // Autocomplete functions
+        function updateAutocomplete(searchTerm) {
+            const dropdown = document.getElementById('autocomplete-dropdown');
+            const projectsArray = Array.from(allProjects).sort();
+            
+            if (!searchTerm.trim()) {
+                dropdown.classList.remove('show');
+                autocompleteFilteredProjects = [];
+                autocompleteSelectedIndex = -1;
+                return;
+            }
+            
+            const lowerSearch = searchTerm.toLowerCase();
+            autocompleteFilteredProjects = projectsArray.filter(project => 
+                project.toLowerCase().includes(lowerSearch)
+            );
+            
+            if (autocompleteFilteredProjects.length === 0) {
+                dropdown.innerHTML = '<div class="autocomplete-item no-results">No projects found</div>';
+                dropdown.classList.add('show');
+                return;
+            }
+            
+            dropdown.innerHTML = '';
+            autocompleteFilteredProjects.forEach((project, index) => {
+                const item = document.createElement('div');
+                item.className = 'autocomplete-item';
+                item.textContent = project;
+                item.addEventListener('click', () => selectProject(project));
+                dropdown.appendChild(item);
+            });
+            
+            dropdown.classList.add('show');
+            autocompleteSelectedIndex = -1;
+        }
+        
+        function selectProject(projectName) {
+            const input = document.getElementById('project-search');
+            input.value = projectName;
+            document.getElementById('autocomplete-dropdown').classList.remove('show');
+            startTracking(projectName);
+        }
+        
+        function navigateAutocomplete(direction) {
+            const dropdown = document.getElementById('autocomplete-dropdown');
+            const items = dropdown.querySelectorAll('.autocomplete-item:not(.no-results)');
+            
+            if (items.length === 0) return;
+            
+            // Remove previous selection
+            if (autocompleteSelectedIndex >= 0 && autocompleteSelectedIndex < items.length) {
+                items[autocompleteSelectedIndex].classList.remove('selected');
+            }
+            
+            // Update index
+            if (direction === 'down') {
+                autocompleteSelectedIndex = (autocompleteSelectedIndex + 1) % items.length;
+            } else if (direction === 'up') {
+                autocompleteSelectedIndex = autocompleteSelectedIndex <= 0 
+                    ? items.length - 1 
+                    : autocompleteSelectedIndex - 1;
+            }
+            
+            // Add new selection
+            items[autocompleteSelectedIndex].classList.add('selected');
+            items[autocompleteSelectedIndex].scrollIntoView({ block: 'nearest' });
+        }
+
         // Event listeners
         document.getElementById('play-pause').addEventListener('click', togglePlayPause);
         
         document.getElementById('closeTracking').addEventListener('click', stopTracking);
+        
+        // Project search autocomplete
+        const projectSearchInput = document.getElementById('project-search');
+        const autocompleteDropdown = document.getElementById('autocomplete-dropdown');
+        
+        projectSearchInput.addEventListener('input', function(e) {
+            updateAutocomplete(e.target.value);
+        });
+        
+        projectSearchInput.addEventListener('keydown', function(e) {
+            const dropdown = document.getElementById('autocomplete-dropdown');
+            
+            if (!dropdown.classList.contains('show')) return;
+            
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                navigateAutocomplete('down');
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                navigateAutocomplete('up');
+            } else if (e.key === 'Enter') {
+                e.preventDefault();
+                if (autocompleteSelectedIndex >= 0 && autocompleteSelectedIndex < autocompleteFilteredProjects.length) {
+                    selectProject(autocompleteFilteredProjects[autocompleteSelectedIndex]);
+                } else if (autocompleteFilteredProjects.length === 1) {
+                    selectProject(autocompleteFilteredProjects[0]);
+                }
+            } else if (e.key === 'Escape') {
+                dropdown.classList.remove('show');
+                autocompleteSelectedIndex = -1;
+            }
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.autocomplete-container')) {
+                autocompleteDropdown.classList.remove('show');
+                autocompleteSelectedIndex = -1;
+            }
+        });
+        
+        projectSearchInput.addEventListener('focus', function() {
+            if (this.value.trim()) {
+                updateAutocomplete(this.value);
+            }
+        });
 
         document.getElementById('speed').addEventListener('change', function() {
             animationSpeed = parseInt(this.value);
