@@ -267,14 +267,14 @@
     </div>
 
     <div class="info-box">
-        <div><strong>X-Axis:</strong> % Change from First Report</div>
-        <div style="font-size: 0.75rem; color: #888; margin-left: 1rem;">(← worse | better →)</div>
+        <div><strong>X-Axis:</strong> Severity Score (weighted)</div>
+        <div style="font-size: 0.75rem; color: #888; margin-left: 1rem;">(← high severity | low severity →)</div>
         <div><strong>Y-Axis:</strong> <span id="y-axis-label">Total Violations</span></div>
-        <div style="font-size: 0.75rem; color: #888; margin-left: 1rem;">(↓ less | more ↑)</div>
+        <div style="font-size: 0.75rem; color: #888; margin-left: 1rem;">(↓ fewer | more ↑)</div>
         <div><strong>Bubble Size:</strong> Total Violations</div>
         <div><strong>Bubble Color:</strong> Dominant Severity</div>
         <div style="margin-top: 0.5rem; font-size: 0.8rem; color: #666;">
-            <strong>Goal:</strong> Top-right corner (fewer violations, improving trend)
+            <strong>Goal:</strong> Top-right corner (low severity, few violations)
         </div>
     </div>
 
@@ -324,14 +324,14 @@
             .attr("x", width - 10)
             .attr("y", 10)
             .attr("text-anchor", "end")
-            .text("✓ Best (No violations, improving)");
+            .text("✓ Best (Low severity, few violations)");
 
         plotG.append("text")
             .attr("class", "corner-label bottom-left")
             .attr("x", 10)
             .attr("y", height - 10)
             .attr("text-anchor", "start")
-            .text("✗ Worst (Most violations, worsening)");
+            .text("✗ Worst (High severity, most violations)");
 
         // Tooltip
         const tooltip = d3.select("body").append("div")
@@ -591,15 +591,16 @@
             console.log(`Calculated first values for ${projectFirstValues.size} projects`);
         }
 
-        // Calculate improvement rate for a project
-        function getImprovementRate(project, currentViolations) {
-            const firstValue = projectFirstValues.get(project);
-            if (!firstValue || firstValue === 0) return 0;
-            
-            // Positive % = improvement (fewer violations)
-            // Negative % = deterioration (more violations)
-            const percentChange = ((firstValue - currentViolations) / firstValue) * 100;
-            return percentChange;
+        // Calculate weighted severity score for a project
+        function getSeverityScore(projectData) {
+            const severities = projectData.severityCount;
+            // Higher weights for more severe violations
+            // Higher score = worse (more severe)
+            const score = (severities.critical || 0) * 4 + 
+                         (severities.serious || 0) * 3 + 
+                         (severities.moderate || 0) * 2 + 
+                         (severities.minor || 0) * 1;
+            return score;
         }
 
         // Create scales and axes
@@ -614,22 +615,22 @@
                 const dateData = allProjectsData.get(date);
                 
                 dateData.forEach((data, project) => {
-                    const improvementRate = getImprovementRate(project, data.violations);
+                    const severityScore = getSeverityScore(data);
                     allData.push({
                         project: project,
                         date: date,
-                        improvementRate: improvementRate,
+                        severityScore: severityScore,
                         yValue: getYAxisValue(data, currentYAxisMetric),
                         violations: data.violations
                     });
                 });
             });
 
-            // X scale: improvement rate (-100% to +100%)
-            // Right side = better (positive improvement)
-            const xExtent = d3.extent(allData, d => d.improvementRate);
+            // X scale: severity score (INVERTED - lower severity at right)
+            // Right side = better (lower severity score)
+            const xExtent = d3.extent(allData, d => d.severityScore);
             const xScale = d3.scaleLinear()
-                .domain([Math.min(xExtent[0] || -50, -10), Math.max(xExtent[1] || 50, 10)])
+                .domain([xExtent[1] || 100, xExtent[0] || 0])
                 .range([0, width])
                 .nice();
 
@@ -664,18 +665,19 @@
                 .attr("x", width / 2)
                 .attr("y", height + 45)
                 .attr("text-anchor", "middle")
-                .text("Violation Reduction Rate (% Change from First Report)");
+                .text("Severity Score (weighted: Critical×4, Serious×3, Moderate×2, Minor×1)");
 
-            // Add zero reference line for X-axis
+            // Add diagonal reference line from bottom-left to top-right
             plotG.append("line")
-                .attr("class", "zero-line")
-                .style("stroke", "#999")
+                .attr("class", "diagonal-line")
+                .style("stroke", "#ccc")
                 .style("stroke-width", 2)
                 .style("stroke-dasharray", "5,5")
-                .attr("x1", xScale(0))
-                .attr("x2", xScale(0))
-                .attr("y1", 0)
-                .attr("y2", height);
+                .style("opacity", 0.5)
+                .attr("x1", 0)
+                .attr("y1", height)
+                .attr("x2", width)
+                .attr("y2", 0);
 
             plotG.append("g")
                 .attr("class", "y axis")
@@ -712,12 +714,12 @@
                     }
                 });
 
-                const improvementRate = getImprovementRate(project, data.violations);
+                const severityScore = getSeverityScore(data);
                 const yValue = getYAxisValue(data, currentYAxisMetric);
 
                 bubbleData.push({
                     project: project,
-                    improvementRate: improvementRate,
+                    severityScore: severityScore,
                     violations: data.violations,
                     yValue: yValue,
                     severity: dominantSeverity,
@@ -742,7 +744,7 @@
             const enter = circles.enter()
                 .append("circle")
                 .attr("class", "country")
-                .attr("cx", d => window.xScale(d.improvementRate))
+                .attr("cx", d => window.xScale(d.severityScore))
                 .attr("cy", d => window.yScale(d.yValue))
                 .attr("r", 0)
                 .attr("fill", d => colorScale(d.severity))
@@ -753,11 +755,7 @@
                     // Build tooltip content dynamically
                     let tooltipContent = `<strong>${d.project}</strong>`;
                     tooltipContent += `<div>Total Violations: ${d.violations}</div>`;
-                    tooltipContent += `<div>First Report: ${d.firstValue}</div>`;
-                    
-                    const changeSign = d.improvementRate >= 0 ? '+' : '';
-                    const changeColor = d.improvementRate >= 0 ? '#4caf50' : '#f44336';
-                    tooltipContent += `<div style="color: ${changeColor}; font-weight: bold;">${changeSign}${d.improvementRate.toFixed(1)}% change</div>`;
+                    tooltipContent += `<div>Severity Score: ${d.severityScore.toFixed(0)}</div>`;
                     
                     tooltipContent += `<div style="margin-top: 0.5rem;">Critical: ${d.severityBreakdown.critical}</div>`;
                     tooltipContent += `<div>Serious: ${d.severityBreakdown.serious}</div>`;
@@ -785,7 +783,7 @@
             enter.merge(circles)
                 .transition()
                 .duration(1000)
-                .attr("cx", d => window.xScale(d.improvementRate))
+                .attr("cx", d => window.xScale(d.severityScore))
                 .attr("cy", d => window.yScale(d.yValue))
                 .attr("r", d => window.sizeScale(d.violations))
                 .attr("fill", d => colorScale(d.severity));
@@ -881,14 +879,14 @@
                 .attr("x", width - 10)
                 .attr("y", 10)
                 .attr("text-anchor", "end")
-                .text("✓ Best (No violations, improving)");
+                .text("✓ Best (Low severity, few violations)");
 
             plotG.append("text")
                 .attr("class", "corner-label bottom-left")
                 .attr("x", 10)
                 .attr("y", height - 10)
                 .attr("text-anchor", "start")
-                .text("✗ Worst (Most violations, worsening)");
+                .text("✗ Worst (High severity, most violations)");
             
             // Re-add year label
             plotG.append("text")
@@ -922,14 +920,14 @@
                 .attr("x", width - 10)
                 .attr("y", 10)
                 .attr("text-anchor", "end")
-                .text("✓ Best (No violations, improving)");
+                .text("✓ Best (Low severity, few violations)");
 
             plotG.append("text")
                 .attr("class", "corner-label bottom-left")
                 .attr("x", 10)
                 .attr("y", height - 10)
                 .attr("text-anchor", "start")
-                .text("✗ Worst (Most violations, worsening)");
+                .text("✗ Worst (High severity, most violations)");
             
             // Re-add year label
             plotG.append("text")
