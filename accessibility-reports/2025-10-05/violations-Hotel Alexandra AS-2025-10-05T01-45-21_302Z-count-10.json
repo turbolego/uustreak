@@ -1,0 +1,539 @@
+{
+  "project": "Hotel Alexandra AS",
+  "timestamp": "2025-10-05T01:45:21.302Z",
+  "url": "https://www.alexandra.no/no/framside.aspx",
+  "total_violations": 10,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<a role=\"button\" href=\"https://ibe.smarthotel.nl/?id=69b94cf4-e953-498e-a1a7-315dd52ed0a3&amp;language=nn-NO\" class=\"big-booking-box_form_ext-button\">\n                        Bestill rom her\n                    </a>",
+          "target": [
+            ".big-booking-box_form_ext-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.13 (foreground color: #ffffff, background color: #a29060, font size: 16.5pt (22px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<input type=\"submit\" value=\"Abonner\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\">",
+          "target": [
+            "input[value=\"Abonner\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.25 (foreground color: #f6f6f6, background color: #99875b, font size: 16.5pt (22px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a target=\"_blank\" href=\"https://www.google.com/maps/dir/Current+Location/61.872814,6.846338,12\">Lag reiserute i Google Maps</a>",
+          "target": [
+            ".map-box_content > a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.13 (foreground color: #a29060, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button type=\"submit\" value=\"\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\">Abonner</button>",
+          "target": [
+            "button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.25 (foreground color: #f6f6f6, background color: #99875b, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"mailto:alex@alexandra.no\">alex@alexandra.no</a>",
+          "target": [
+            "a[href$=\"mailto:alex@alexandra.no\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #a29060, background color: #343434, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"article-box_title\">\n                Tilbod og pakkar\n            </h3>",
+          "target": [
+            ".col-md-first.col-sm-first.col-xs-first:nth-child(2) > .article-box.grid-item > .article-box_content > .article-box_title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "html-has-lang",
+      "impact": "serious",
+      "description": "Ensure every HTML document has a lang attribute",
+      "help": "<html> element must have a lang attribute",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=playwright",
+      "tags": [
+        "cat.language",
+        "wcag2a",
+        "wcag311",
+        "TTv5",
+        "TT11.a",
+        "EN-301-549",
+        "EN-9.3.1.1",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html xmlns:umbraco=\"http://umbraco.org\" class=\"noie no wf-opensans-i4-active wf-opensans-n4-active wf-opensans-n3-active wf-opensans-n6-active wf-keplerstddisplay-i4-active wf-keplerstddisplay-n7-active wf-keplerstddisplay-n3-active wf-opensans-i6-active wf-keplerstddisplay-n4-active wf-keplerstddisplay-i3-active wf-active\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix any of the following:\n  The <html> element does not have a lang attribute"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 9,
+      "nodes": [
+        {
+          "html": "<img class=\"submit-placeholder submit-placeholder-js\" src=\"/css/img/icons/icon-search-2x.png\">",
+          "target": [
+            ".submit-placeholder"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/media/198242/_bd_2315-2.jpg?w=600&amp;h=300&amp;mode=crop&amp;anchor=middlecenter\">",
+          "target": [
+            ".col-md-first.col-sm-first.col-xs-first:nth-child(2) > .article-box.grid-item > .article-box_image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/media/197855/_bd_8951.jpg?w=600&amp;h=300&amp;mode=crop&amp;anchor=middlecenter\">",
+          "target": [
+            ".col-sm-last.col-xs-last.col-xs-6:nth-child(3) > .article-box.grid-item > .article-box_image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/media/198235/_bd_2639-2.jpg?w=600&amp;h=300&amp;mode=crop&amp;anchor=middlecenter\">",
+          "target": [
+            ".col-md-first.col-sm-last.col-xs-last > .article-box.grid-item > .article-box_image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/media/196550/111.jpg?w=600&amp;h=300&amp;mode=crop&amp;anchor=middlecenter\">",
+          "target": [
+            ".col-sm-first.col-xs-first.col-xs-6:nth-child(6) > .article-box.grid-item > .article-box_image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/media/198633/steinar-engelbrektson-23_c.jpg?w=600&amp;h=300&amp;mode=crop&amp;anchor=middlecenter\">",
+          "target": [
+            ".col-md-last.col-sm-last.col-xs-last > .article-box.grid-item > .article-box_image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/media/198247/_bd_6739_2500.jpg?w=600&amp;h=300&amp;mode=crop&amp;anchor=middlecenter\">",
+          "target": [
+            ".col-sm-last.col-xs-last.col-xs-6:nth-child(9) > .article-box.grid-item > .article-box_image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/media/198637/_bd_8183.jpg?w=600&amp;h=300&amp;mode=crop&amp;anchor=middlecenter\">",
+          "target": [
+            ".col-md-last.col-sm-first.col-xs-first:nth-child(10) > .article-box.grid-item > .article-box_image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"footer_logo--secondary-logo\" src=\"/css/img/Miljofyrtarn_Sertifisert-virksomhet_Hvit-horisontal_Liten.png\">",
+          "target": [
+            ".footer_logo--secondary-logo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "input-image-alt",
+      "impact": "critical",
+      "description": "Ensure <input type=\"image\"> elements have alternative text",
+      "help": "Image buttons must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/input-image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input type=\"image\" class=\"submit\" src=\"/css/img/btn-search.png\">",
+          "target": [
+            "input[src$=\"btn-search.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>"
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "impact": "critical",
+      "description": "Ensure every form element has a label",
+      "help": "Form elements must have labels",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<input id=\"site-search\" class=\"search-bar search-bar-js\" name=\"search\" type=\"search\" placeholder=\"\">",
+          "target": [
+            ".search-bar-js"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has an empty placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<input id=\"site-search\" class=\"search-bar\" name=\"search\" type=\"search\">",
+          "target": [
+            "form[action=\"/no/search.aspx\"] > .search-bar[name=\"search\"][type=\"search\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html xmlns:umbraco=\"http://umbraco.org\" class=\"noie no wf-opensans-i4-active wf-opensans-n4-active wf-opensans-n3-active wf-opensans-n6-active wf-keplerstddisplay-i4-active wf-keplerstddisplay-n7-active wf-keplerstddisplay-n3-active wf-opensans-i6-active wf-keplerstddisplay-n4-active wf-keplerstddisplay-i3-active wf-active\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.alexandra.no/no/framside.aspx\" class=\"navigation_logo\">\n            \n        </a>",
+          "target": [
+            ".navigation_logo"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.alexandra.no/no.aspx\"></a>",
+          "target": [
+            ".footer_logo > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a target=\"_blank\" href=\"http://www.tripadvisor.com/Hotel_Review-g939035-d455513-Reviews-Hotel_Alexandra-Stryn_Stryn_Municipality_Sogn_og_Fjordane_Western_Norway.html\"><i class=\"icon icon-tripadvisor\"></i></a>",
+          "target": [
+            "a[target=\"_blank\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a target=\"_blank\" href=\"https://www.instagram.com/alexandraloen/\"><i class=\"icon icon-instagram\"></i></a>",
+          "target": [
+            "a[target=\"_blank\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.facebook.com/hotelalexandraloen/\"><i class=\"icon icon-facebook\"></i></a>",
+          "target": [
+            ".sosial-box > a:nth-child(3)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "meta-viewport",
+      "impact": "critical",
+      "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+      "help": "Zooming and scaling must not be disabled",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=playwright",
+      "tags": [
+        "cat.sensory-and-visual-cues",
+        "wcag2aa",
+        "wcag144",
+        "EN-301-549",
+        "EN-9.1.4.4",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<meta name=\"viewport\" content=\"width=device-width, maximum-scale=1.0\">",
+          "target": [
+            "meta[name=\"viewport\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  maximum-scale on <meta> tag disables zooming on mobile devices"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 22,
+      "nodes": [
+        {
+          "html": "<div class=\"js-banner banner banner-- desktop\" style=\"background-image: url('/media/198208/26.jpg?w=1440&amp;h=520&amp;mode=crop&amp;anchor=middlecenter')\">",
+          "target": [
+            ".desktop"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-xs-6 col-sm-6 col-md-4 column  col-md-first col-sm-first  col-xs-first   \">",
+          "target": [
+            ".col-md-first.col-sm-first.col-xs-first:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-xs-6 col-sm-6 col-md-4 column    col-sm-last  col-xs-last  \">",
+          "target": [
+            ".col-sm-last.col-xs-last.col-xs-6:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"newsletter-heading\">Nyhetsbrev</h3>",
+          "target": [
+            ".newsletter-heading"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Meld deg på nyheitsbrevet vårt </p>",
+          "target": [
+            ".newsletter-box > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"mc-field-group\">\n                        <label for=\"mce-EMAIL\"></label>\n                        <input type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\" placeholder=\"Di e-postadresse\">\n                    </div>",
+          "target": [
+            ".newsletter-box > div > .validate.newsletter-form[name=\"mc-embedded-subscribe-form\"] > div > .mc-field-group"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-xs-6 col-sm-6 col-md-4 column  col-md-first  col-sm-last  col-xs-last  \">",
+          "target": [
+            ".col-md-first.col-sm-last.col-xs-last"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-xs-6 col-sm-6 col-md-4 column   col-sm-first  col-xs-first   \">",
+          "target": [
+            ".col-sm-first.col-xs-first.col-xs-6:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-xs-6 col-sm-6 col-md-4 column col-md-last   col-sm-last  col-xs-last  \">",
+          "target": [
+            ".col-md-last.col-sm-last.col-xs-last"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-xs-6 col-sm-6 col-md-4 column  col-md-first col-sm-first  col-xs-first   \">",
+          "target": [
+            ".col-md-first.col-sm-first.col-xs-first:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-xs-6 col-sm-6 col-md-4 column    col-sm-last  col-xs-last  \">",
+          "target": [
+            ".col-sm-last.col-xs-last.col-xs-6:nth-child(9)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-xs-6 col-sm-6 col-md-4 column col-md-last  col-sm-first  col-xs-first   \">",
+          "target": [
+            ".col-md-last.col-sm-first.col-xs-first:nth-child(10)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"map-box_content\">",
+          "target": [
+            ".map-box_content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"footer_logo\">\n        <a href=\"https://www.alexandra.no/no.aspx\"></a>\n        <img class=\"footer_logo--secondary-logo\" src=\"/css/img/Miljofyrtarn_Sertifisert-virksomhet_Hvit-horisontal_Liten.png\">\n    </div>",
+          "target": [
+            ".footer_logo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"footer_item\">\n            <span class=\"footer_item_title\">Tlf:</span>\n            <div class=\"footer_item_content\">\n                <span>+47 57 87 50 00</span>\n            </div>\n        </div>",
+          "target": [
+            ".footer_item:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"footer_item\">\n            <span class=\"footer_item_title\">Adresse</span>\n            <div class=\"footer_item_content\">\n                <p>Hotel Alexandra</p>\n                <p>Lodalsvegen 22, 6789 Loen</p>\n\n            </div>\n        </div>",
+          "target": [
+            ".footer_item:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"footer_item_title\">Søk</span>",
+          "target": [
+            ".search-item > .footer_item_title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input id=\"site-search\" class=\"search-bar\" name=\"search\" type=\"search\">",
+          "target": [
+            "form[action=\"/no/search.aspx\"] > .search-bar[name=\"search\"][type=\"search\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"footer_item_title\">Meld deg på nyheitsbrevet vårt</span>",
+          "target": [
+            ".footer-newsletter > .footer_item_title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"mc-field-group\">\n                            <label for=\"mce-EMAIL\"></label>\n                            <input type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\" placeholder=\"Di e-postadresse\">\n                        </div>",
+          "target": [
+            ".footer-newsletter > div > .validate.newsletter-form[name=\"mc-embedded-subscribe-form\"] > div > .mc-field-group"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"footer_item\">\n            <span class=\"footer_item_title\">E-postadresse</span>\n            <div class=\"footer_item_content\">\n                <a href=\"mailto:alex@alexandra.no\">alex@alexandra.no</a>\n            </div>\n        </div>",
+          "target": [
+            ".footer_item:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"footer_item social-button-wrapper\">",
+          "target": [
+            ".social-button-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
