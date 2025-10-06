@@ -694,71 +694,79 @@
         }
 
         function calculateNoViolationsStreak(projectName, reportList, currentReport = null, selectedDate = null) {
-            // If current report has violations, streak is always 0
-            if (currentReport && currentReport.total_violations > 0) {
-                return 0;
-            }
+    // If current report has violations, streak is always 0
+    if (currentReport && currentReport.total_violations > 0) {
+        return 0;
+    }
 
-            const filteredReports = reportList
-                .filter(filename => !filename.includes('-FAILED.json')) // Exclude failed reports from streak calculation
-                .map(parseReportFilename)
-                .filter(report => report && report.project === projectName)
-                .sort((a, b) => new Date(b.date) - new Date(a.date));
+    const filteredReports = reportList
+        .filter(filename => !filename.includes('-FAILED.json')) // Exclude failed reports from streak calculation
+        .map(parseReportFilename)
+        .filter(report => report && report.project === projectName)
+        .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-            if (filteredReports.length === 0) {
-                return 0;
-            }
+    if (filteredReports.length === 0) {
+        return 0;
+    }
 
-            // If selectedDate is provided, only consider reports up to and including that date
-            let reportsToConsider = filteredReports;
-            if (selectedDate) {
-                const selectedDateObj = new Date(selectedDate);
-                reportsToConsider = filteredReports.filter(report => new Date(report.date) <= selectedDateObj);
-            }
+    // If selectedDate is provided, only consider reports up to and including that date
+    let reportsToConsider = filteredReports;
+    if (selectedDate) {
+        const selectedDateObj = new Date(selectedDate);
+        reportsToConsider = filteredReports.filter(report => new Date(report.date) <= selectedDateObj);
+    }
 
-            if (reportsToConsider.length === 0) {
-                return 0;
-            }
+    if (reportsToConsider.length === 0) {
+        return 0;
+    }
 
-            // Get the most recent report (within the selected date range) to check current violation status
-            const mostRecentReport = reportsToConsider[0];
-            const hasCurrentViolations = !mostRecentReport.filename.includes('-count-0');
+    // Get the most recent report (within the selected date range) to check current violation status
+    const mostRecentReport = reportsToConsider[0];
+    const hasCurrentViolations = !mostRecentReport.filename.includes('-count-0');
 
-            // If the most recent report has violations, streak is always 0
-            if (hasCurrentViolations) {
-                return 0;
-            }
+    // If the most recent report has violations, streak is always 0
+    if (hasCurrentViolations) {
+        return 0;
+    }
 
-            let streak = 0;
-            let currentDate = selectedDate ? new Date(selectedDate) : new Date(mostRecentReport.date);
+    let streak = 0;
+    let currentDate = selectedDate ? new Date(selectedDate) : new Date(mostRecentReport.date);
 
-            // Count consecutive days without violations, working backwards from selected date (or most recent date)
-            for (let i = 0; i < reportsToConsider.length; i++) {
-                const report = reportsToConsider[i];
-                const reportDate = new Date(report.date);
+    // Count consecutive days without violations, working backwards from selected date (or most recent date)
+    let reportIndex = 0;
+    
+    while (reportIndex < reportsToConsider.length) {
+        const report = reportsToConsider[reportIndex];
+        const reportDate = new Date(report.date);
 
-                // Fill in missing days between current position and this report date
-                while (currentDate > reportDate) {
-                    streak++;
-                    currentDate.setDate(currentDate.getDate() - 1);
-                }
-
-                // Check if this report has violations
-                if (!report.filename.includes('-count-0')) {
-                    // Found violations, stop counting streak
-                    break;
-                } else {
-                    // No violations on this day, continue streak
-                    if (currentDate.getTime() === reportDate.getTime()) {
-                        streak++;
-                        currentDate.setDate(currentDate.getDate() - 1);
-                    }
-                }
-            }
-
-            return streak;
+        // If current date is after the report date, we have missing days - continue streak through them
+        if (currentDate > reportDate) {
+            streak++;
+            currentDate.setDate(currentDate.getDate() - 1);
+            continue; // Don't advance to next report yet
         }
 
+        // We're at a date that has a report
+        if (currentDate.getTime() === reportDate.getTime()) {
+            // Check if this report has violations
+            if (!report.filename.includes('-count-0')) {
+                // Found violations, stop counting streak
+                break;
+            } else {
+                // No violations on this day, continue streak
+                streak++;
+                currentDate.setDate(currentDate.getDate() - 1);
+                reportIndex++; // Move to next (older) report
+            }
+        } else {
+            // Current date is before report date (shouldn't happen with our sort, but safety check)
+            reportIndex++;
+        }
+    }
+
+    return streak;
+        }
+        
         function showReportDetails(report) {
             const dialog = document.getElementById('details-dialog');
             const dialogTitle = document.getElementById('dialog-title');
