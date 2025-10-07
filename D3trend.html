@@ -598,10 +598,6 @@
         const plotG = svg.append("g")
             .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-        // Create separate layer for tracking elements (rendered on top)
-        trackingLayer = plotG.append("g")
-            .attr("class", "tracking-layer");
-
         // Year label (large background text)
         const yearLabel = plotG.append("text")
             .attr("class", "year-label")
@@ -623,6 +619,10 @@
             .attr("y", height - 10)
             .attr("text-anchor", "start")
             .text("✗ Worst (High severity, most violations)");
+
+        // Create separate layer for tracking elements (rendered on top - added last)
+        trackingLayer = plotG.append("g")
+            .attr("class", "tracking-layer");
 
         // Tooltip
         const tooltip = d3.select("body").append("div")
@@ -985,6 +985,13 @@
                 .attr("y", -60)
                 .attr("text-anchor", "middle")
                 .text(getYAxisLabel(currentYAxisMetric));
+
+            // Ensure tracking layer is on top
+            if (trackingLayer) {
+                trackingLayer.remove();
+            }
+            trackingLayer = plotG.append("g")
+                .attr("class", "tracking-layer");
 
             // Start with first frame
             updateChart(dates[0]);
@@ -1608,10 +1615,6 @@
             // Clear existing chart
             plotG.selectAll("*").remove();
             
-            // Recreate tracking layer
-            trackingLayer = plotG.append("g")
-                .attr("class", "tracking-layer");
-            
             // Re-add corner labels
             plotG.append("text")
                 .attr("class", "corner-label top-right")
@@ -1637,6 +1640,10 @@
             // Recreate chart with new Y-axis
             createScalesAndAxes();
             
+            // Recreate tracking layer last (on top)
+            trackingLayer = plotG.append("g")
+                .attr("class", "tracking-layer");
+            
             // Reset animation
             currentYearIndex = 0;
         });
@@ -1655,10 +1662,6 @@
             
             // Clear existing chart
             plotG.selectAll("*").remove();
-            
-            // Recreate tracking layer
-            trackingLayer = plotG.append("g")
-                .attr("class", "tracking-layer");
             
             // Re-add corner labels
             plotG.append("text")
@@ -1698,6 +1701,10 @@
             
             // Recreate chart
             createScalesAndAxes();
+            
+            // Recreate tracking layer last (on top)
+            trackingLayer = plotG.append("g")
+                .attr("class", "tracking-layer");
             
             // Reset animation
             currentYearIndex = 0;
