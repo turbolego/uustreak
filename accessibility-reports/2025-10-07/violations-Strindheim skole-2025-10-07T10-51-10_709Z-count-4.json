@@ -1,0 +1,181 @@
+{
+  "project": "Strindheim skole",
+  "timestamp": "2025-10-07T10:51:10.711Z",
+  "url": "https://www.trondheim.kommune.no/org/oppvekst/skoler/strindheim-skole/#",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ul class=\"list-group__items\" id=\"inlinenav\" role=\"navigation\">",
+          "target": [
+            "#inlinenav"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role navigation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav>",
+          "target": [
+            ".list-group.stopaccor > nav"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "listitem",
+      "impact": "serious",
+      "description": "Ensure <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/listitem?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "violation_count": 13,
+      "nodes": [
+        {
+          "html": "<li class=\"list-group__item\"><a href=\"#foreldreportalen\" class=\"link link--inherit link--underline\"><svg class=\"icon\" aria-hidden=\"true\" focusable=\"false\"><use href=\"/icons/commons.svg#ArrowElbowDownRight\"></use></svg>Foreldreportalen</a></li>",
+          "target": [
+            "#inlinenav > .list-group__item:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-group__item\"><a href=\"#ferie_og_fridager\" class=\"link link--inherit link--underline\"><svg class=\"icon\" aria-hidden=\"true\" focusable=\"false\"><use href=\"/icons/commons.svg#ArrowElbowDownRight\"></use></svg>Ferie og fridager</a></li>",
+          "target": [
+            "#inlinenav > .list-group__item:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-group__item\"><a href=\"#felles_for_alle_skoler\" class=\"link link--inherit link--underline\"><svg class=\"icon\" aria-hidden=\"true\" focusable=\"false\"><use href=\"/icons/commons.svg#ArrowElbowDownRight\"></use></svg>Felles for alle skoler</a></li>",
+          "target": [
+            "#inlinenav > .list-group__item:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-group__item\"><a href=\"#fritidstilbud_i_bydelen\" class=\"link link--inherit link--underline\"><svg class=\"icon\" aria-hidden=\"true\" focusable=\"false\"><use href=\"/icons/commons.svg#ArrowElbowDownRight\"></use></svg>Fritidstilbud i bydelen</a></li>",
+          "target": [
+            "#inlinenav > .list-group__item:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-group__item\"><a href=\"#ny_pa_skolen\" class=\"link link--inherit link--underline\"><svg class=\"icon\" aria-hidden=\"true\" focusable=\"false\"><use href=\"/icons/commons.svg#ArrowElbowDownRight\"></use></svg>Ny på skolen?</a></li>",
+          "target": [
+            "#inlinenav > .list-group__item:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-group__item\"><a href=\"#plan_for_et_godt_skolemiljo\" class=\"link link--inherit link--underline\"><svg class=\"icon\" aria-hidden=\"true\" focusable=\"false\"><use href=\"/icons/commons.svg#ArrowElbowDownRight\"></use></svg>Plan for et godt skolemiljø</a></li>",
+          "target": [
+            "#inlinenav > .list-group__item:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-group__item\"><a href=\"#fau\" class=\"link link--inherit link--underline\"><svg class=\"icon\" aria-hidden=\"true\" focusable=\"false\"><use href=\"/icons/commons.svg#ArrowElbowDownRight\"></use></svg>FAU</a></li>",
+          "target": [
+            "#inlinenav > .list-group__item:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-group__item\"><a href=\"#regnbuen\" class=\"link link--inherit link--underline\"><svg class=\"icon\" aria-hidden=\"true\" focusable=\"false\"><use href=\"/icons/commons.svg#ArrowElbowDownRight\"></use></svg>Regnbuen</a></li>",
+          "target": [
+            "#inlinenav > .list-group__item:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-group__item\"><a href=\"#sfo\" class=\"link link--inherit link--underline\"><svg class=\"icon\" aria-hidden=\"true\" focusable=\"false\"><use href=\"/icons/commons.svg#ArrowElbowDownRight\"></use></svg>SFO</a></li>",
+          "target": [
+            "#inlinenav > .list-group__item:nth-child(9)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-group__item\"><a href=\"#sfo_plass\" class=\"link link--inherit link--underline\"><svg class=\"icon\" aria-hidden=\"true\" focusable=\"false\"><use href=\"/icons/commons.svg#ArrowElbowDownRight\"></use></svg>SFO-plass</a></li>",
+          "target": [
+            "#inlinenav > .list-group__item:nth-child(10)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-group__item\"><a href=\"#skolehelsetjenesten\" class=\"link link--inherit link--underline\"><svg class=\"icon\" aria-hidden=\"true\" focusable=\"false\"><use href=\"/icons/commons.svg#ArrowElbowDownRight\"></use></svg>Skolehelsetjenesten</a></li>",
+          "target": [
+            "#inlinenav > .list-group__item:nth-child(11)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-group__item\"><a href=\"#facebook\" class=\"link link--inherit link--underline\"><svg class=\"icon\" aria-hidden=\"true\" focusable=\"false\"><use href=\"/icons/commons.svg#ArrowElbowDownRight\"></use></svg>Facebook</a></li>",
+          "target": [
+            "#inlinenav > .list-group__item:nth-child(12)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-group__item\"><a href=\"#kontaktinfo\" class=\"link link--inherit link--underline\"><svg class=\"icon\" aria-hidden=\"true\" focusable=\"false\"><use href=\"/icons/commons.svg#ArrowElbowDownRight\"></use></svg>Kontaktinfo</a></li>",
+          "target": [
+            "#inlinenav > .list-group__item:nth-child(13)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h2 class=\"fant-du__heading nomenu\">\n            Fant du det du lette etter?\n        </h2>",
+          "target": [
+            ".fant-du__heading"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "project": "Best Western AS",
+  "timestamp": "2025-10-07T10:23:27.443Z",
+  "url": "https://www.bestwestern.no/#",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-input-field-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA input field has an accessible name",
+      "help": "ARIA input fields must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-input-field-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<div class=\"\" role=\"listbox\" tabindex=\"-1\">",
+          "target": [
+            "div:nth-child(1) > div[role=\"listbox\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"\" role=\"listbox\" tabindex=\"-1\">",
+          "target": [
+            "div:nth-child(2) > div[role=\"listbox\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"\" role=\"listbox\" tabindex=\"-1\">",
+          "target": [
+            ".svelte-hwwq0n > div[role=\"listbox\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"\" role=\"listbox\" tabindex=\"-1\">",
+          "target": [
+            "div:nth-child(4) > div[role=\"listbox\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "aria-required-children",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-children?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<div class=\"\" role=\"listbox\" tabindex=\"-1\">",
+          "target": [
+            "div:nth-child(1) > div[role=\"listbox\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: p[aria-hidden], img[tabindex], input[aria-describedby]"
+        },
+        {
+          "html": "<div class=\"\" role=\"listbox\" tabindex=\"-1\">",
+          "target": [
+            "div:nth-child(2) > div[role=\"listbox\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: img[tabindex], input[aria-describedby]"
+        },
+        {
+          "html": "<div class=\"\" role=\"listbox\" tabindex=\"-1\">",
+          "target": [
+            ".svelte-hwwq0n > div[role=\"listbox\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: img[tabindex], input[aria-describedby]"
+        },
+        {
+          "html": "<div class=\"\" role=\"listbox\" tabindex=\"-1\">",
+          "target": [
+            "div:nth-child(4) > div[role=\"listbox\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: button[aria-controls]"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<img class=\"object-cover h-full w-full\" height=\"398\" width=\"398\" alt=\"Globale hoteller &amp; destinasjoner\" src=\"https://images.ctfassets.net/y4r87wu8k4mh/15Tm0grC9TvS2evdnR47EM/30e4a0649f9c2a410f6435d9458e5f77/pyro-jenka-N2hiyUWvuNs-unsplash.jpg?&amp;fit=fill&amp;fm=webp&amp;q=60&amp;w=796&amp;h=796\" loading=\"lazy\">",
+          "target": [
+            "a[href$=\"globale-hoteller\"] > .md\\:rounded-bl-lg.bg-cover.bg-center > img[height=\"398\"][width=\"398\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"object-cover h-full w-full\" height=\"398\" width=\"398\" alt=\"Hundevennlige hoteller\" src=\"https://images.ctfassets.net/y4r87wu8k4mh/vEqcJUyMJN253r0APYccm/9415e58ad4936fe5742d8b8c4e1ba08a/Ny_version_av_hundbilden.JPG?&amp;fit=fill&amp;fm=webp&amp;q=60&amp;w=796&amp;h=796\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"Hundevennlige hoteller\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"object-cover h-full w-full\" height=\"398\" width=\"398\" alt=\"Hotell utover det vanlige\" src=\"https://images.ctfassets.net/y4r87wu8k4mh/QpUbgiyTptBLMVXfe7QEW/63e4c117b5f4861b2d6cd7fd18b0cddf/The_Vault_reception_exporterad.jpg?&amp;fit=fill&amp;fm=webp&amp;q=60&amp;w=796&amp;h=796\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"Hotell utover det vanlige\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"object-cover h-full w-full\" height=\"398\" width=\"398\" alt=\"Unike konferanselokaler\" src=\"https://images.ctfassets.net/y4r87wu8k4mh/2XtYbElafpGYBruabcvMzq/106db8347aac8899657e215d7b602ea6/Frimurarehotellet_konferanse.jpg?&amp;fit=fill&amp;fm=webp&amp;q=60&amp;w=796&amp;h=796\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"Unike konferanselokaler\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"object-cover h-full w-full\" height=\"398\" width=\"398\" alt=\"Best Breakfast\" src=\"https://images.ctfassets.net/y4r87wu8k4mh/enx7K4Iliok0jBEXGpg6N/81d95d1fec38f3b3243c211ea47e32ef/230307-08_Best_western_07_083_HERO.jpeg?&amp;fit=fill&amp;fm=webp&amp;q=60&amp;w=796&amp;h=796\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"Best Breakfast\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"object-cover h-full w-full\" height=\"398\" width=\"398\" alt=\"Hotellrestauranter\" src=\"https://images.ctfassets.net/y4r87wu8k4mh/2CA52dqO2qJCUOoIZK6NEr/a21020a6cad3f0b27fecd9f417f5211c/jay-wennington-2065-unsplash.jpg?&amp;fit=fill&amp;fm=webp&amp;q=60&amp;w=796&amp;h=796\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"Hotellrestauranter\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"object-cover h-full w-full\" height=\"398\" width=\"398\" alt=\"Spahoteller\" src=\"https://images.ctfassets.net/y4r87wu8k4mh/29vJMInLbuLEtwTtBURePm/b368b23093ab24e501ad303c9d026b16/pexels-koolshooters-7143273_-_kopia.jpg?&amp;fit=fill&amp;fm=webp&amp;q=60&amp;w=796&amp;h=796\" loading=\"lazy\">",
+          "target": [
+            "img[alt=\"Spahoteller\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": "serious",
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/list?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ul id=\"footerLinks-0\" class=\"flex-col mt-3 gap-3 sm:flex hidden\">",
+          "target": [
+            "#footerLinks-0"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: button"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a class=\"inline-flex w-min whitespace-pre hover:underline focus-visible:underline bg-black text-white whitespace-nowrap justify-center font-medium text-2xs md:text-xs leading-2xs md:leading-xs tracking-tight px-[16px] md:px-[24px] py-[8px] md:py-[11px] w-fit rounded-s md:rounded focus-visible:outline-offset-4 border-1 border-black   undefined  absolute top-0 [&amp;:not(:focus)]:visually-hidden group\" href=\"#main\" tabindex=\"0\" title=\"\" aria-label=\"\">",
+          "target": [
+            ".\\[\\&\\:not\\(\\:focus\\)\\]\\:visually-hidden"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p aria-hidden=\"false\" class=\"font-book text-2xs leading-2xs tracking-normal pr-2\" id=\"\"><span class=\"visually-hidden\">Best Western Hotels and Resorts er </span> En del av BWH® Hotels</p>",
+          "target": [
+            ".pr-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"inline-flex w-min whitespace-pre hover:underline focus-visible:underline font-book text-2xs hover:text-grey-400 focus-visible:text-grey-400 undefined   group\" href=\"https://www.bestwestern.com/\" tabindex=\"0\" title=\"\" aria-label=\"Til bestwestern.com\">",
+          "target": [
+            "a[href$=\"bestwestern.com/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
