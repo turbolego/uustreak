@@ -1032,10 +1032,26 @@
 
         function updateRankNumbers(tbody) {
             const rows = tbody.querySelectorAll('tr');
+            let currentRank = 1;
+            let previousStreak = null;
+            let projectsWithSameRank = 0;
+
             rows.forEach((row, index) => {
                 const rankCell = row.querySelector('.rank-cell');
                 if (rankCell) {
-                    rankCell.textContent = index + 1;
+                    // Get the streak value from the row's data attribute
+                    const streakValue = parseInt(row.dataset.streak) || 0;
+                    
+                    // If this is a different streak value, update the rank
+                    if (previousStreak !== null && streakValue !== previousStreak) {
+                        currentRank += projectsWithSameRank;
+                        projectsWithSameRank = 1;
+                    } else {
+                        projectsWithSameRank++;
+                    }
+                    
+                    rankCell.textContent = currentRank;
+                    previousStreak = streakValue;
                 }
             });
         }
