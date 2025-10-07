@@ -362,6 +362,15 @@
             pointer-events: none;
         }
 
+        .tracking-layer {
+            pointer-events: none;
+        }
+
+        .tracking-layer circle,
+        .tracking-layer line {
+            pointer-events: auto;
+        }
+
         .tracking-info {
             position: fixed;
             top: 70px;
@@ -524,6 +533,7 @@
         let autocompleteFilteredProjects = [];
         let selectedProjects = new Set();
         let filterSearchTerm = '';
+        let trackingLayer;
 
         // Chart dimensions
         const margin = { top: 40, right: 100, bottom: 60, left: 80 };
@@ -587,6 +597,10 @@
 
         const plotG = svg.append("g")
             .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+        // Create separate layer for tracking elements (rendered on top)
+        trackingLayer = plotG.append("g")
+            .attr("class", "tracking-layer");
 
         // Year label (large background text)
         const yearLabel = plotG.append("text")
@@ -1072,9 +1086,22 @@
                 });
 
             // Enter + Update
-            enter.merge(circles)
-                .classed("tracked", d => d.project === trackedProject)
-                .transition()
+            const merged = enter.merge(circles)
+                .classed("tracked", d => d.project === trackedProject);
+            
+            // Move tracked bubble to tracking layer for higher z-index
+            merged.each(function(d) {
+                if (d.project === trackedProject) {
+                    trackingLayer.node().appendChild(this);
+                } else {
+                    // Move back to main layer if no longer tracked
+                    if (this.parentNode === trackingLayer.node()) {
+                        plotG.node().insertBefore(this, trackingLayer.node());
+                    }
+                }
+            });
+            
+            merged.transition()
                 .duration(1000)
                 .attr("cx", d => window.xScale(d.severityScore))
                 .attr("cy", d => window.yScale(d.yValue))
@@ -1142,9 +1169,9 @@
             // Remove tracked class from all circles
             plotG.selectAll("circle.country").classed("tracked", false);
             
-            // Remove trail circles and paths
-            plotG.selectAll("circle.trail").remove();
-            plotG.selectAll("line.trail-path").remove();
+            // Remove trail circles and paths from tracking layer
+            trackingLayer.selectAll("circle.trail").remove();
+            trackingLayer.selectAll("line.trail-path").remove();
             
             // Hide tracking info
             document.getElementById('trackingInfo').classList.add('hidden');
@@ -1203,8 +1230,8 @@
                 });
             }
             
-            // Draw path lines with arrows
-            const paths = plotG.selectAll("line.trail-path")
+            // Draw path lines with arrows in tracking layer
+            const paths = trackingLayer.selectAll("line.trail-path")
                 .data(pathData, (d, i) => i);
             
             paths.exit().remove();
@@ -1223,8 +1250,8 @@
                 .attr("stroke-opacity", 0.5)
                 .attr("marker-end", d => `url(#arrow-${d.severity})`);
             
-            // Update trail circles
-            const trails = plotG.selectAll("circle.trail")
+            // Update trail circles in tracking layer
+            const trails = trackingLayer.selectAll("circle.trail")
                 .data(newTrailData, (d, i) => i);
             
             trails.exit().remove();
@@ -1581,6 +1608,10 @@
             // Clear existing chart
             plotG.selectAll("*").remove();
             
+            // Recreate tracking layer
+            trackingLayer = plotG.append("g")
+                .attr("class", "tracking-layer");
+            
             // Re-add corner labels
             plotG.append("text")
                 .attr("class", "corner-label top-right")
@@ -1624,6 +1655,10 @@
             
             // Clear existing chart
             plotG.selectAll("*").remove();
+            
+            // Recreate tracking layer
+            trackingLayer = plotG.append("g")
+                .attr("class", "tracking-layer");
             
             // Re-add corner labels
             plotG.append("text")
