@@ -18,11 +18,13 @@ export default defineConfig({
         ignoreHTTPSErrors: true,
         // Enhanced launch options for stealth
         launchOptions: {
-            headless: process.env.CI ? true : false, // Headless mode in CI, headful locally for debugging
+            headless: true, // Always use headless mode for CI compatibility
             args: [
                 '--no-sandbox', 
                 '--disable-setuid-sandbox',
                 '--disable-dev-shm-usage',
+                '--disable-http2',  // Disable HTTP2 to avoid protocol errors
+                '--disable-quic',    // Disable QUIC protocol
                 '--disable-blink-features=AutomationControlled',
                 '--disable-features=IsolateOrigins,site-per-process',
                 '--disable-web-security',
@@ -48,15 +50,8 @@ export default defineConfig({
         {
             name: 'chromium',
             use: { ...devices['Desktop Chrome'] },
-        },
-        {
-            name: 'firefox',
-            use: { ...devices['Desktop Firefox'] },
-        },
-        {
-            name: 'webkit',
-            use: { ...devices['Desktop Safari'] },
         }
+        // Removed firefox and webkit projects - they will be used as fallbacks in the test code
     ],
     reporter: [
         ['html', { outputFolder: path.resolve(process.cwd(), 'playwright-report'), open: 'never' }],
