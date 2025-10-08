@@ -915,10 +915,15 @@ jobs:
           cd main-branch
           npm install || echo "Dependencies already installed"
           
-          # Copy tag-summary.js to current directory if not present
+          # Copy tag-summary.js from js/ folder to current directory if not present
           if [ ! -f "tag-summary.js" ]; then
-            echo "Error: tag-summary.js not found in main branch"
-            exit 1
+            if [ -f "js/tag-summary.js" ]; then
+              cp js/tag-summary.js ./tag-summary.js
+              echo "Copied tag-summary.js from js/ folder"
+            else
+              echo "Error: tag-summary.js not found in js/ folder"
+              exit 1
+            fi
           fi
           
           CURRENT_DATE=$(date '+%Y-%m-%d')

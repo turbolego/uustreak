@@ -4,6 +4,9 @@ import os
 def create_spec_file(project_name, project_url):
     # Convert spaces to underscores in filename
     filename = f"{project_name.replace(' ', '_')}.spec.ts"
+    
+    # Escape single quotes and backslashes in project name for JavaScript strings
+    escaped_project_name = project_name.replace('\\', '\\\\').replace("'", "\\'")
 
     # Create the test file content - using raw string (r) prefix to handle escape sequences
     content = rf'''import {{ test, chromium, firefox, webkit }} from '@playwright/test';
@@ -17,7 +20,7 @@ test.use({{
     baseURL: '{project_url}',
 }});
 
-test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) => {{
+test('WCAG accessibility check for {escaped_project_name}', async ({{ page, browser }}) => {{
     test.setTimeout(300000); // 5 minutes for difficult sites
     const outputDir = path.resolve(process.cwd(), 'accessibility-reports');
     fs.mkdirSync(outputDir, {{ recursive: true }});
@@ -28,7 +31,7 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
     let usingFallback = false;
 
     try {{
-        console.log(`Starting accessibility test for {project_name}`);
+        console.log(`Starting accessibility test for {escaped_project_name}`);
         
         // Dual URL strategy: try both with and without hash fragment
         const baseUrl = '{project_url}'.replace(/\/#$/, '/');
@@ -370,7 +373,7 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
                 .replace(/\./g, '_');
 
             const failureReport = {{
-                project: '{project_name}',
+                project: '{escaped_project_name}',
                 timestamp: new Date().toISOString(),
                 url: '{project_url}',
                 total_violations: -1,
@@ -391,14 +394,14 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
 
             const failureReportPath = path.join(
                 outputDir,
-                `violations-{project_name}-${{timestamp}}-FAILED.json`
+                `violations-{escaped_project_name}-${{timestamp}}-FAILED.json`
             );
 
             fs.writeFileSync(failureReportPath, JSON.stringify(failureReport, null, 2));
             console.log(`Failure report saved to ${{failureReportPath}}`);
             
             // Don't throw error - just save the failure report
-            console.log(`⚠️ Test marked as completed with failure report for {project_name}`);
+            console.log(`⚠️ Test marked as completed with failure report for {escaped_project_name}`);
             return; // Exit gracefully instead of throwing
         }}
         
@@ -492,11 +495,11 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
 
         const filePath = path.join(
             outputDir,
-            `violations-{project_name}-${{timestamp}}-count-${{accessibilityResults.violations.length}}.json`
+            `violations-{escaped_project_name}-${{timestamp}}-count-${{accessibilityResults.violations.length}}.json`
         );
 
         const report = {{
-            project: '{project_name}',
+            project: '{escaped_project_name}',
             timestamp: new Date().toISOString(),
             url: currentPage.url(),
             total_violations: accessibilityResults.violations.length,
@@ -533,7 +536,7 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
         console.log(`✅ Found ${{accessibilityResults.violations.length}} accessibility violations (using ${{browserUsed}})`);
 
     }} catch (error) {{
-        console.error(`Error in accessibility test for {project_name}:`, error);
+        console.error(`Error in accessibility test for {escaped_project_name}:`, error);
 
         const timestamp = new Date().toISOString()
             .replace(/:/g, '-')
@@ -541,11 +544,11 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
 
         const fallbackReportPath = path.join(
             outputDir,
-            `violations-{project_name}-${{timestamp}}-FAILED.json`
+            `violations-{escaped_project_name}-${{timestamp}}-FAILED.json`
         );
 
         const fallbackReport = {{
-            project: '{project_name}',
+            project: '{escaped_project_name}',
             timestamp: new Date().toISOString(),
             url: currentPage && !currentPage.isClosed() ? currentPage.url() : 'Page Closed or Never Loaded',
             total_violations: -1,
@@ -562,7 +565,7 @@ test('WCAG accessibility check for {project_name}', async ({{ page, browser }}) 
 
         fs.writeFileSync(fallbackReportPath, JSON.stringify(fallbackReport, null, 2));
         // Don't re-throw error to allow workflow to continue
-        console.log(`⚠️ Test completed with error report for {project_name}`);
+        console.log(`⚠️ Test completed with error report for {escaped_project_name}`);
     }} finally {{
         // Clean up Firefox browser if we used it
         if (fallbackBrowser) {{
