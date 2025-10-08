@@ -273,8 +273,7 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                                     url.includes('google-analytics') ||
                                     url.includes('googletagmanager') ||
                                     url.includes('facebook.net') ||
-                                    url.includes('doubleclick') ||
-                                    resourceType === 'font' && !url.includes(new URL(candidateUrl).hostname)
+                                    url.includes('doubleclick')
                                 ) {{
                                     await route.abort();
                                 }} else {{

@@ -48,15 +48,9 @@ export default defineConfig({
         {
             name: 'chromium',
             use: { ...devices['Desktop Chrome'] },
-        },
-        {
-            name: 'firefox',
-            use: { ...devices['Desktop Firefox'] },
-        },
-        {
-            name: 'webkit',
-            use: { ...devices['Desktop Safari'] },
         }
+        // Firefox and WebKit are available as fallback browsers within tests
+        // but not run as separate test projects to avoid redundancy
     ],
     reporter: [
         ['html', { outputFolder: path.resolve(process.cwd(), 'playwright-report'), open: 'never' }],
