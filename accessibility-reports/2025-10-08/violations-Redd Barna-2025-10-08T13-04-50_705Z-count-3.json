@@ -1,0 +1,122 @@
+{
+  "project": "Redd Barna",
+  "timestamp": "2025-10-08T13:04:50.705Z",
+  "url": "https://www.reddbarna.no/#",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"skip-link screen-reader-text\" href=\"#content\" role=\"navigation\" title=\"Hopp til hovedinnhold\">Hopp til hovedinnhold</a>",
+          "target": [
+            ".skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role navigation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h6 class=\"lib-link__tagline\">Les også</h6>",
+          "target": [
+            "h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "tabindex",
+      "impact": "serious",
+      "description": "Ensure tabindex attribute values are not greater than 0",
+      "help": "Elements should not have tabindex greater than zero",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/tabindex?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<input class=\"give-text-input give-amount-top\" id=\"give-amount\" name=\"give-amount\" type=\"text\" inputmode=\"numeric\" placeholder=\"\" value=\"275\" autocomplete=\"off\" tabindex=\"10\">",
+          "target": [
+            "#give-amount"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<button type=\"button\" data-price-id=\"0\" class=\"give-donation-level-btn give-btn give-btn-level-0 \" value=\"200\" data-default=\"0\" tabindex=\"3\">200 kr.</button>",
+          "target": [
+            ".give-btn-level-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<button type=\"button\" data-price-id=\"1\" class=\"give-donation-level-btn give-btn give-btn-level-1 give-default-level\" value=\"275\" data-default=\"1\" tabindex=\"4\" aria-pressed=\"true\">275 kr.</button>",
+          "target": [
+            ".give-btn-level-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<button type=\"button\" data-price-id=\"2\" class=\"give-donation-level-btn give-btn give-btn-level-2 \" value=\"350\" data-default=\"0\" tabindex=\"5\">350 kr.</button>",
+          "target": [
+            ".give-btn-level-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<button type=\"button\" data-price-id=\"custom\" class=\"give-donation-level-btn give-btn give-btn-level-custom\" value=\"custom\" tabindex=\"9\">Velg selv</button>",
+          "target": [
+            ".give-btn-level-custom"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<input name=\"dekode_give_donation_frequency\" id=\"frequency-single\" type=\"radio\" value=\"single\" tabindex=\"2\">",
+          "target": [
+            "#frequency-single"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<input name=\"dekode_give_donation_frequency\" id=\"frequency-recurring\" type=\"radio\" value=\"recurring\" checked=\"checked\" tabindex=\"2\">",
+          "target": [
+            "#frequency-recurring"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<button class=\"give-btn give-submit advance-btn\" tabindex=\"11\">Gi med avtalegiro</button>",
+          "target": [
+            ".give-step-one-buttons > .give-submit.advance-btn.give-btn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        }
+      ]
+    }
+  ]
+}

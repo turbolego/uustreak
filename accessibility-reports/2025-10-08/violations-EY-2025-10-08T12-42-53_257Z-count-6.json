@@ -1,0 +1,879 @@
+{
+  "project": "EY",
+  "timestamp": "2025-10-08T12:42:53.257Z",
+  "url": "https://www.ey.com/no_no",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "description": "Ensure an element's role supports its ARIA attributes",
+      "help": "Elements must only use supported ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"center-align\" aria-expanded=\"true\">\n      <div class=\"viewMoreStories button\">\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<div class=\"up-button_modal-container up-button_modal-container-preview\">\n  \n\n  \n</div>\n</div>\n\n    </div>",
+          "target": [
+            ".center-align"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"true\""
+        }
+      ]
+    },
+    {
+      "id": "aria-required-parent",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require parent roles are contained by them",
+      "help": "Certain ARIA roles must be contained by particular parents",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-parent?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<a href=\"/no_no/insights\" data-cmp-clickable=\"\" class=\"cmp-navigation__item-link nav-level-one\" role=\"tab\" tabindex=\"0\" aria-hidden=\"false\">Innsikt</a>",
+          "target": [
+            ".nav-level-one[href$=\"insights\"][role=\"tab\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<a href=\"/no_no/services\" data-cmp-clickable=\"\" class=\"cmp-navigation__item-link nav-level-one\" role=\"tab\" tabindex=\"0\" aria-hidden=\"false\">Tjenester</a>",
+          "target": [
+            ".nav-level-one[href$=\"services\"][role=\"tab\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<a href=\"https://www.ey.com/en_no/industries\" data-cmp-clickable=\"\" class=\"cmp-navigation__item-link nav-level-one\" role=\"tab\" tabindex=\"0\" aria-hidden=\"false\">Bransjer</a>",
+          "target": [
+            ".cmp-navigation__item--level-0.cmp-navigation__item:nth-child(3) > .nav-level-one[role=\"tab\"][aria-hidden=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<a href=\"/no_no/careers\" data-cmp-clickable=\"\" class=\"cmp-navigation__item-link nav-level-one\" role=\"tab\" tabindex=\"0\" aria-hidden=\"false\">Karriere</a>",
+          "target": [
+            ".nav-level-one[href$=\"careers\"][role=\"tab\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<a href=\"/no_no/about-us\" data-cmp-clickable=\"\" class=\"cmp-navigation__item-link nav-level-one level-one-last-link\" role=\"tab\" tabindex=\"0\" aria-hidden=\"false\">Om oss</a>",
+          "target": [
+            ".level-one-last-link[href$=\"about-us\"][role=\"tab\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a class=\"skipToContent-button\" href=\"#\" title=\"Skip to content\">Skip to content</a>",
+          "target": [
+            ".skipToContent-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.07 (foreground color: #ffffff, background color: #f6f6fa, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">Tax</p>",
+          "target": [
+            "a[data-index=\"4\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.07 (foreground color: #ffffff, background color: #f6f6fa, font size: 24.0pt (32px), font weight: normal). Expected contrast ratio of 3:1"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">Jus</p>",
+          "target": [
+            "a[data-index=\"5\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.07 (foreground color: #ffffff, background color: #f6f6fa, font size: 24.0pt (32px), font weight: normal). Expected contrast ratio of 3:1"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">Climate Change and Sustainability Services</p>",
+          "target": [
+            "a[data-index=\"6\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.07 (foreground color: #ffffff, background color: #f6f6fa, font size: 24.0pt (32px), font weight: normal). Expected contrast ratio of 3:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h5 class=\"betterQuestionCards-title\" data-analytics-action-value=\"\"><p>Endringer i arbeidstilsynets verktøykasse: Hva betyr det for deg?</p>\n</h5>",
+          "target": [
+            ".visible.betterQuestionCards-card-wrapper.loaded:nth-child(1) > .betterQuestionCards-card-dragger[data-analytics-action-name=\"Swipe\"][data-analytics-swipe=\"\"] > .betterQuestionCards-card.article[aria-hidden=\"false\"] > .betterQuestionCards-description > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.ey.com/no_no/newsroom/2024/10/ny-rapport-slik-kan-vi-kutte-i-norges-skyhoye-materialforbruk\">&nbsp;</a>",
+          "target": [
+            ".up-promotional-banner__content-description[data-analytics-text-click=\"\"] > p:nth-child(2) > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 97,
+      "nodes": [
+        {
+          "html": "<div class=\"skip-content-wrapper\"><a class=\"skipToContent-button\" href=\"#\" title=\"Skip to content\">Skip to content</a></div>",
+          "target": [
+            ".skip-content-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"sr-only\">EY Logo</span>",
+          "target": [
+            ".cmp-logo__link > .sr-only"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"myey-login-url\" title=\"My EY\" href=\"https://login.ey.com/myey/login\" data-analytics-link-click=\"\" role=\"link\" aria-label=\"My EY\" tabindex=\"0\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            ".myey-login-url"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"featured_av-caption-wrapper\">",
+          "target": [
+            ".featured_av-caption-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?preferwebp=true&amp;quality=85\" srcset=\"/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=100&amp;preferwebp=true&amp;quality=85 100w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=200&amp;preferwebp=true&amp;quality=85 200w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=300&amp;preferwebp=true&amp;quality=85 300w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=400&amp;preferwebp=true&amp;quality=85 400w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=500&amp;preferwebp=true&amp;quality=85 500w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=600&amp;preferwebp=true&amp;quality=85 600w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=700&amp;preferwebp=true&amp;quality=85 700w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=800&amp;preferwebp=true&amp;quality=85 800w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=900&amp;preferwebp=true&amp;quality=85 900w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=1000&amp;preferwebp=true&amp;quality=85 1000w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=1100&amp;preferwebp=true&amp;quality=85 1100w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=1200&amp;preferwebp=true&amp;quality=85 1200w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=1600&amp;preferwebp=true&amp;quality=85 1600w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=1800&amp;preferwebp=true&amp;quality=85 1800w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=2000&amp;preferwebp=true&amp;quality=85 2000w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=2400&amp;preferwebp=true&amp;quality=85 2400w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=2700&amp;preferwebp=true&amp;quality=85 2700w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=3000&amp;preferwebp=true&amp;quality=85 3000w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=3300&amp;preferwebp=true&amp;quality=85 3300w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=3600&amp;preferwebp=true&amp;quality=85 3600w,/adobe/dynamicmedia/deliver/dm-aid--f66dd8e1-2c05-4c43-98ee-dc5e7996b8bd/ey-vindmoller-pa-mark-mot-en-skyet-himmel.jpg?width=3840&amp;preferwebp=true&amp;quality=85 3840w\" loading=\"lazy\" class=\"cmp-image__image\" itemprop=\"contentUrl\" width=\"3840\" height=\"2560\" alt=\"VEI MOT HIMMELEN UNDER SOLNEDGANG\" title=\"Vindmøller på mark mot en skyet himmel\">",
+          "target": [
+            "#image-render-f04edc067a > .cmp-image__image[loading=\"lazy\"][itemprop=\"contentUrl\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"betterQuestionCards-header\">",
+          "target": [
+            ".betterQuestionCards-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"betterQuestionCards-card article\" href=\"/no_no/insights/law/endringer-i-arbeidstilsynets-verktoykasse\" aria-hidden=\"false\" tabindex=\"0\" aria-label=\"&lt;p&gt;Endringer i arbeidstilsynets verktøykasse: Hva betyr det for deg?&lt;/p&gt;\n Les mer\" data-analytics-link-click=\"\">",
+          "target": [
+            ".visible.betterQuestionCards-card-wrapper.loaded:nth-child(1) > .betterQuestionCards-card-dragger[data-analytics-action-name=\"Swipe\"][data-analytics-swipe=\"\"] > .betterQuestionCards-card.article[aria-hidden=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"betterQuestionCards-card article\" href=\"/no_no/strategy-transactions/transaction-trends/2025/transaction-trends-q2-2025\" aria-hidden=\"false\" tabindex=\"-1\" aria-label=\"&lt;p&gt;Transaction Trends Q2 2025&lt;/p&gt;\n Les mer\" data-analytics-link-click=\"\">",
+          "target": [
+            ".visible.betterQuestionCards-card-wrapper.loaded:nth-child(2) > .betterQuestionCards-card-dragger[data-analytics-action-name=\"Swipe\"][data-analytics-swipe=\"\"] > .betterQuestionCards-card.article[aria-hidden=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"betterQuestionCards-card article\" href=\"/no_no/insights/climate-change-sustainability-services/hvordan-planlegger-norsk-naeringsliv-aa-omstille-seg-i-praksis\" aria-hidden=\"false\" tabindex=\"-1\" aria-label=\"&lt;p&gt;Hvordan planlegger norsk næringsliv å omstille seg i praksis?&lt;/p&gt;\n Les mer\" data-analytics-link-click=\"\">",
+          "target": [
+            ".visible.betterQuestionCards-card-wrapper.loaded:nth-child(3) > .betterQuestionCards-card-dragger[data-analytics-action-name=\"Swipe\"][data-analytics-swipe=\"\"] > .betterQuestionCards-card.article[aria-hidden=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"betterQuestionCards-card article\" href=\"/no_no/insights/financial-accounting-advisory-services/det-norske-ipo-markedet-q2-2025\" aria-hidden=\"false\" tabindex=\"-1\" aria-label=\"&lt;p&gt;IPO Highlights – analyse av det norske IPO-markedet Q2 2025&lt;/p&gt;\n Les mer\" data-analytics-link-click=\"\">",
+          "target": [
+            ".betterQuestionCards-card-wrapper.loaded:nth-child(4) > .betterQuestionCards-card-dragger[data-analytics-action-name=\"Swipe\"][data-analytics-swipe=\"\"] > .betterQuestionCards-card.article[aria-hidden=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"betterQuestionCards-card article\" href=\"/no_no/insights/climate-change-sustainability-services/erfaringer-fra-csrd-2024-i-norge-hva-har-vi-laert\" aria-hidden=\"false\" tabindex=\"-1\" aria-label=\"&lt;p&gt;Erfaringer fra CSRD 2024 i Norge – hva har vi lært?&lt;/p&gt;\n Les mer\" data-analytics-link-click=\"\">",
+          "target": [
+            ".betterQuestionCards-card-wrapper.loaded:nth-child(5) > .betterQuestionCards-card-dragger[data-analytics-action-name=\"Swipe\"][data-analytics-swipe=\"\"] > .betterQuestionCards-card.article[aria-hidden=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"betterQuestionCards-card article\" href=\"/no_no/assurance/praksisundersokelsen/2025/endringer-i-regnskapsstandarder-opplysningspraksis\" aria-hidden=\"false\" tabindex=\"-1\" aria-label=\"&lt;p&gt;Endringer i regnskapsstandarder - opplysningspraksis&lt;/p&gt;\n Les mer\" data-analytics-link-click=\"\">",
+          "target": [
+            ".betterQuestionCards-card-wrapper.loaded:nth-child(6) > .betterQuestionCards-card-dragger[data-analytics-action-name=\"Swipe\"][data-analytics-swipe=\"\"] > .betterQuestionCards-card.article[aria-hidden=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"up-promotional-banner__content-heading\" role=\"heading\" aria-level=\"2\" data-analytics-label=\"\">\n      EY Entrepreneur Of The Year\n    </p>",
+          "target": [
+            "#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level=\"2\"][role=\"heading\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__content-description\" data-analytics-text-click=\"\">\n      <p>Verdens største vekstskaperprogram med kåringer i over 60 land. Vi er stolte av å sette entreprenørskap og innovasjon på agendaen, skape møteplasser og hedre aktive eiere slik de fortjener.</p>\n\n    </div>",
+          "target": [
+            "#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-aac543142676\" class=\"up-button cmp-button \" href=\"/no_no/entrepreneur-of-the-year\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/nordics/no_no/home/campaigns/entrepreneur-of-the-year.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-aac543142676"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?preferwebp=true&amp;quality=85\" srcset=\"/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=100&amp;preferwebp=true&amp;quality=85 100w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=200&amp;preferwebp=true&amp;quality=85 200w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=300&amp;preferwebp=true&amp;quality=85 300w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=400&amp;preferwebp=true&amp;quality=85 400w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=500&amp;preferwebp=true&amp;quality=85 500w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=600&amp;preferwebp=true&amp;quality=85 600w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=700&amp;preferwebp=true&amp;quality=85 700w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=800&amp;preferwebp=true&amp;quality=85 800w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=900&amp;preferwebp=true&amp;quality=85 900w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=1000&amp;preferwebp=true&amp;quality=85 1000w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=1100&amp;preferwebp=true&amp;quality=85 1100w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=1200&amp;preferwebp=true&amp;quality=85 1200w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=1600&amp;preferwebp=true&amp;quality=85 1600w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=1800&amp;preferwebp=true&amp;quality=85 1800w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=2000&amp;preferwebp=true&amp;quality=85 2000w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=2400&amp;preferwebp=true&amp;quality=85 2400w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=2700&amp;preferwebp=true&amp;quality=85 2700w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=3000&amp;preferwebp=true&amp;quality=85 3000w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=3300&amp;preferwebp=true&amp;quality=85 3300w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=3600&amp;preferwebp=true&amp;quality=85 3600w,/adobe/dynamicmedia/deliver/dm-aid--bbc1f141-efb3-47c5-9e10-005e928b582d/ey-eoy-2025-better-question.jpg?width=3840&amp;preferwebp=true&amp;quality=85 3840w\" loading=\"lazy\" class=\"cmp-image__image\" itemprop=\"contentUrl\" width=\"3840\" height=\"2560\" alt=\"Glassblåser som danner et vakkert stykke glass. En glasskunstner brenner og blåser et kunstverk med et spørsmål og grafikk over bildet.\" title=\"EY Entrepreneur Of The Year - bq\">",
+          "target": [
+            "#image-render-d226705429 > .cmp-image__image[loading=\"lazy\"][itemprop=\"contentUrl\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"up-promotional-banner__content-heading\" role=\"heading\" aria-level=\"2\" data-analytics-label=\"\">\n      Klar til å lede i den nye økonomien?\n    </p>",
+          "target": [
+            "#promotional-380cc83d1759 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level=\"2\"][role=\"heading\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__content-description\" data-analytics-text-click=\"\">",
+          "target": [
+            "#promotional-380cc83d1759 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-48bc1e29e272\" class=\"up-button cmp-button \" href=\"/en_no/the-new-economy\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/nordics/en_no/home/campaigns/the-new-economy.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-48bc1e29e272"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__media\">",
+          "target": [
+            "#promotional-380cc83d1759 > .up-promotional-banner__media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"up-promotional-banner__content-heading\" role=\"heading\" aria-level=\"2\" data-analytics-label=\"\">\n      Naturen har grenser\n    </p>",
+          "target": [
+            "#promotional-bf10c6725c35 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level=\"2\"][role=\"heading\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__content-description\" data-analytics-text-click=\"\">",
+          "target": [
+            "#promotional-bf10c6725c35 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-71731207d860\" class=\"up-button cmp-button \" href=\"/no_no/newsroom/2024/10/ny-rapport-slik-kan-vi-kutte-i-norges-skyhoye-materialforbruk\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/nordics/no_no/home/newsroom/2024/10/ny-rapport-slik-kan-vi-kutte-i-norges-skyhoye-materialforbruk.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-71731207d860"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__media\">",
+          "target": [
+            "#promotional-bf10c6725c35 > .up-promotional-banner__media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"up-promotional-banner__content-heading\" role=\"heading\" aria-level=\"2\" data-analytics-label=\"\">\n      Vil du forme fremtiden, eller vil fremtiden forme deg?\n    </p>",
+          "target": [
+            "#promotional-283aef72eff8 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level=\"2\"][role=\"heading\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__content-description\" data-analytics-text-click=\"\">\n      <p>Gjennom vår nye strategi, \"All in\", hjelper vi organisasjoner med å forme fremtiden med tillit.</p>\n\n    </div>",
+          "target": [
+            "#promotional-283aef72eff8 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a target=\"_blank\" id=\"button-1296c62e5384\" class=\"up-button cmp-button \" href=\"/en_no/shape-the-future-with-confidence\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/nordics/en_no/home/campaigns/shape-the-future-with-confidence.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-1296c62e5384"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__media\">",
+          "target": [
+            "#promotional-283aef72eff8 > .up-promotional-banner__media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"up-promotional-banner__content-heading\" role=\"heading\" aria-level=\"1\" data-analytics-label=\"\">\n      Aktuelle webinarer\n    </p>",
+          "target": [
+            "p[aria-level=\"1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-promotional-banner__content-description\" data-analytics-text-click=\"\">\n      <p>&nbsp;</p>\n<p>Delta på våre webinarer og bli oppdateret på aktuelle emner.</p>\n\n    </div>",
+          "target": [
+            "#promotional-6c2d968ac69e > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a target=\"_blank\" id=\"button-a13f706f271e\" class=\"up-button cmp-button \" href=\"/no_no/media/webcasts\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/nordics/no_no/home/media/webcasts.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-a13f706f271e"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cmp-subscribe__text\">\n      <p class=\"cmp-subscribe__title\" data-analytics-label=\"\">Siste nytt fra EY</p>\n      <p class=\"cmp-subscribe__subtitle\">Hold deg oppdatert med våre utvalgte nyhetsbrev. </p>\n    </div>",
+          "target": [
+            ".cmp-subscribe__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a target=\"_blank\" id=\"button-bc60d627c8a2\" class=\"up-button cmp-button \" href=\"https://info.ey.com/Nordics-NO-Email-Subscription-Form.html\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"https://info.ey.com/Nordics-NO-Email-Subscription-Form.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-bc60d627c8a2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"cmp-contentGrid__title\" data-analytics-label=\"\">\n      Pressemeldinger\n    </h2>",
+          "target": [
+            ".cmp-contentGrid__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?preferwebp=true&amp;quality=85\" srcset=\"/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=100&amp;preferwebp=true&amp;quality=85 100w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=200&amp;preferwebp=true&amp;quality=85 200w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=300&amp;preferwebp=true&amp;quality=85 300w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=400&amp;preferwebp=true&amp;quality=85 400w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=500&amp;preferwebp=true&amp;quality=85 500w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=600&amp;preferwebp=true&amp;quality=85 600w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=700&amp;preferwebp=true&amp;quality=85 700w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=800&amp;preferwebp=true&amp;quality=85 800w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=900&amp;preferwebp=true&amp;quality=85 900w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=1000&amp;preferwebp=true&amp;quality=85 1000w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=1100&amp;preferwebp=true&amp;quality=85 1100w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=1200&amp;preferwebp=true&amp;quality=85 1200w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=1600&amp;preferwebp=true&amp;quality=85 1600w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=1800&amp;preferwebp=true&amp;quality=85 1800w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=2000&amp;preferwebp=true&amp;quality=85 2000w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=2400&amp;preferwebp=true&amp;quality=85 2400w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=2700&amp;preferwebp=true&amp;quality=85 2700w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=3000&amp;preferwebp=true&amp;quality=85 3000w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=3300&amp;preferwebp=true&amp;quality=85 3300w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=3600&amp;preferwebp=true&amp;quality=85 3600w,/adobe/dynamicmedia/deliver/dm-aid--3fb92dc0-8b4e-4342-af3c-bbd2e3e46a67/ey-ina-og-ronny.jpg?width=3840&amp;preferwebp=true&amp;quality=85 3840w\" loading=\"lazy\" class=\"cmp-image__image\" itemprop=\"contentUrl\" width=\"3840\" height=\"2560\" alt=\"Ina Rosenberg og Ronny Junge-Larsen\" title=\"Ina Rosenberg\">",
+          "target": [
+            "img[title=\"Ina Rosenberg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"cmp-teaser__title\">",
+          "target": [
+            ".cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>En fersk kartlegging fra EY viser at antallet norske vekstselskaper har falt betydelig de siste to årene, etter å ha vokst jevnt frem til 2022.</p>",
+          "target": [
+            ".cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"date__text mrxs\"> 04 sep. 2025</span>",
+          "target": [
+            ".cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"Vsepartor\">|\n        </span>",
+          "target": [
+            ".cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"date__text\"> Oslo, NOR </span>",
+          "target": [
+            ".cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"Vsepartor\">| </span>",
+          "target": [
+            ".Vsepartor:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"date__text\" href=\"/no_no/people/andreas-jacobsen\">\n          <strong>Andreas R. K. Jacobsen</strong>\n        </a>",
+          "target": [
+            ".cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$=\"andreas-jacobsen\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?preferwebp=true&amp;quality=85\" srcset=\"/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=100&amp;preferwebp=true&amp;quality=85 100w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=200&amp;preferwebp=true&amp;quality=85 200w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=300&amp;preferwebp=true&amp;quality=85 300w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=400&amp;preferwebp=true&amp;quality=85 400w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=500&amp;preferwebp=true&amp;quality=85 500w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=600&amp;preferwebp=true&amp;quality=85 600w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=700&amp;preferwebp=true&amp;quality=85 700w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=800&amp;preferwebp=true&amp;quality=85 800w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=900&amp;preferwebp=true&amp;quality=85 900w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=1000&amp;preferwebp=true&amp;quality=85 1000w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=1100&amp;preferwebp=true&amp;quality=85 1100w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=1200&amp;preferwebp=true&amp;quality=85 1200w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=1600&amp;preferwebp=true&amp;quality=85 1600w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=1800&amp;preferwebp=true&amp;quality=85 1800w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=2000&amp;preferwebp=true&amp;quality=85 2000w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=2400&amp;preferwebp=true&amp;quality=85 2400w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=2700&amp;preferwebp=true&amp;quality=85 2700w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=3000&amp;preferwebp=true&amp;quality=85 3000w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=3300&amp;preferwebp=true&amp;quality=85 3300w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=3600&amp;preferwebp=true&amp;quality=85 3600w,/adobe/dynamicmedia/deliver/dm-aid--014ead34-e1f7-457d-8a49-51e3c36f491e/ey-tre-bonder-gar-fremover-pa-en-ployd-mark-ved-solnedgang.jpg?width=3840&amp;preferwebp=true&amp;quality=85 3840w\" loading=\"lazy\" class=\"cmp-image__image\" itemprop=\"contentUrl\" width=\"3840\" height=\"2560\" alt=\"Bilde av Tre bønder går fremover på en pløyd mark ved solnedgang.\" title=\"Tre bønder går fremover på en pløyd mark ved solnedgang.\">",
+          "target": [
+            "#image-render-c6bd268a33 > .cmp-image__image[loading=\"lazy\"][itemprop=\"contentUrl\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"cmp-teaser__title\">\n      <a href=\"/no_no/newsroom/2025/05/familieeide-selskaper-seiler-opp-som-lokomotiver\" aria-label=\"Familieeide selskaper seiler opp som lokomotiver\" data-analytics-link-click=\"\">\n        Familieeide selskaper seiler opp som lokomotiver\n      </a>\n    </h3>",
+          "target": [
+            ".cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>En ny global undersøkelse viser at fire norske selskaper er blant verdens 500 største familieeide virksomheter i 2024.</p>",
+          "target": [
+            ".cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"date__text mrxs\"> 05 mai 2025</span>",
+          "target": [
+            ".cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"Vsepartor\">| </span>",
+          "target": [
+            ".cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"date__text\" href=\"/no_no/people/andreas-jacobsen\">\n          <strong>Andreas R. K. Jacobsen</strong>\n        </a>",
+          "target": [
+            ".cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$=\"andreas-jacobsen\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sec-title\">Flere pressemeldinger</div>",
+          "target": [
+            ".sec-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"cmp-teaser__title\">",
+          "target": [
+            ".cmp-teaser__content:nth-child(1) > .small-cell-description > .cmp-teaser__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"mrxs date-txt\"> 25 apr. 2025 </span>",
+          "target": [
+            ".cmp-teaser__content:nth-child(1) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date-txt.mrxs"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"Vsepartor\">| </span>",
+          "target": [
+            ".cmp-teaser__content:nth-child(1) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"date__text\" href=\"/no_no/people/andreas-jacobsen\">\n                      <strong>Andreas R. K. Jacobsen</strong>\n                    </a>",
+          "target": [
+            ".cmp-teaser__content:nth-child(1) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$=\"andreas-jacobsen\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"cmp-teaser__title\">",
+          "target": [
+            ".cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"mrxs date-txt\"> 15 apr. 2025 </span>",
+          "target": [
+            ".cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date-txt.mrxs"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"Vsepartor\">| </span>",
+          "target": [
+            ".cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"date__text\" href=\"/no_no/people/andreas-jacobsen\">\n                      <strong>Andreas R. K. Jacobsen</strong>\n                    </a>",
+          "target": [
+            ".cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$=\"andreas-jacobsen\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"cmp-teaser__title\">",
+          "target": [
+            ".cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"mrxs date-txt\"> 11 apr. 2025 </span>",
+          "target": [
+            ".cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date-txt.mrxs"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-7addb05aebee\" class=\"up-button cmp-button \" href=\"/no_no/newsroom\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/nordics/no_no/home/newsroom.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-7addb05aebee"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slider__title\" data-analytics-label=\"\" tabindex=\"-1\">\n      På agendaen\n      <span>(7)</span>\n    </p>",
+          "target": [
+            ".cmp-slider__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"cmp-slider__skip text-regular-sm\" href=\"#topicLinkSkipContent\" aria-label=\"Skip På agendaen\" tabindex=\"0\">Skip</a>",
+          "target": [
+            ".cmp-slider__skip"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">Bærekraft</p>",
+          "target": [
+            "a[data-index=\"0\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__description text-light-md\">Featured: Hvordan planlegger norsk næringsliv å omstille seg i praksis?</p>",
+          "target": [
+            "a[data-index=\"0\"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span> Finn ut mer </span>",
+          "target": [
+            "a[data-index=\"0\"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">Teknologi</p>",
+          "target": [
+            ".active > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__description text-light-md\">Featured: Slik kan penetrasjonstesting brukes til noe mer enn bare en test</p>",
+          "target": [
+            ".active > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span> Finn ut mer </span>",
+          "target": [
+            ".active > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">Revisjon&nbsp;</p>",
+          "target": [
+            "a[data-index=\"2\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__description text-light-md\">Featured: IPO Highlights – analyse av det norske IPO-markedet Q2 2025</p>",
+          "target": [
+            "a[data-index=\"2\"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span> Finn ut mer </span>",
+          "target": [
+            "a[data-index=\"2\"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">Consulting</p>",
+          "target": [
+            "a[data-index=\"3\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__description text-light-md\">Featured: Sett en stø kurs med strategisk porteføljestyring</p>",
+          "target": [
+            "a[data-index=\"3\"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span> Finn ut mer </span>",
+          "target": [
+            "a[data-index=\"3\"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">Tax</p>",
+          "target": [
+            "a[data-index=\"4\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__description text-light-md\">Featured: WCOs studie av HS-Konvensjonen - hva forteller den oss?</p>",
+          "target": [
+            "a[data-index=\"4\"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span> Finn ut mer </span>",
+          "target": [
+            "a[data-index=\"4\"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">Jus</p>",
+          "target": [
+            "a[data-index=\"5\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__description text-light-md\">Featured: Regler for kjønnssammensetning i styret</p>",
+          "target": [
+            "a[data-index=\"5\"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span> Finn ut mer </span>",
+          "target": [
+            "a[data-index=\"5\"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__title\" data-analytics-action-value=\"\">Climate Change and Sustainability Services</p>",
+          "target": [
+            "a[data-index=\"6\"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-slide__description text-light-md\">Featured: Hvordan planlegger norsk næringsliv å omstille seg i praksis?</p>",
+          "target": [
+            "a[data-index=\"6\"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span> Finn ut mer </span>",
+          "target": [
+            "a[data-index=\"6\"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-index-search-banner__title mbmd\" data-analytics-label=\"\">Finn ut mer</p>",
+          "target": [
+            ".cmp-index-search-banner__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"cmp-button__text\" data-analytics-action-value=\"\">EY søk</span>",
+          "target": [
+            "#button-88115edb1365 > .cmp-button__text[data-analytics-action-value=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cmp-index-search-banner__topicTitle mbxl text-light-md\" data-analytics-label=\"\">\n        Populære temaer\n      </p>",
+          "target": [
+            ".cmp-index-search-banner__topicTitle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-bc526dc0dd5a\" class=\"up-button cmp-button \" href=\"/no_no/careers\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/nordics/no_no/home/careers.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-bc526dc0dd5a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-3941d7f2ff12\" class=\"up-button cmp-button \" href=\"/no_no/services/consulting\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/nordics/no_no/home/services/consulting.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-3941d7f2ff12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a target=\"_blank\" id=\"button-38ef4d6ce029\" class=\"up-button cmp-button \" href=\"/no_no/services/ai/platform\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/nordics/no_no/home/services/ai/platform.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-38ef4d6ce029"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-68a7641d8957\" class=\"up-button cmp-button \" href=\"/no_no/services/technology\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/nordics/no_no/home/services/technology.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-68a7641d8957"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a target=\"_blank\" id=\"button-346c200e67cd\" class=\"up-button cmp-button \" href=\"/no_no/services/audit\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/nordics/no_no/home/services/audit.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-346c200e67cd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a target=\"_blank\" id=\"button-39172ed077c7\" class=\"up-button cmp-button \" href=\"/no_no/services/strategy\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/nordics/no_no/home/services/strategy.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-39172ed077c7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a id=\"button-fef302e139f7\" class=\"up-button cmp-button \" href=\"/no_no/services/tax\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/nordics/no_no/home/services/tax.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-fef302e139f7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a target=\"_blank\" id=\"button-8e1d3e5b1a96\" class=\"up-button cmp-button \" href=\"/no_no/services/sustainability\" data-analytics-category=\"Button\" data-button-type=\"cta\" data-snippet-url=\"/content/ey-unified-site/ey-com/local/nordics/no_no/home/services/sustainability.html\" data-modal-variant=\"large\" data-analytics-label=\"CTA Button\" analytics-button-type=\"cta\" data-analytics-button-click=\"\">",
+          "target": [
+            "#button-8e1d3e5b1a96"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container responsivegrid\">",
+          "target": [
+            "#footer-ey-content > .container.responsivegrid:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"up-rich-text__container\" data-up-hook-rich-text=\"richTextContainer\" style=\"height: auto;\">",
+          "target": [
+            "#rich-text-7c0527a0e133 > .up-rich-text__container[data-up-hook-rich-text=\"richTextContainer\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container responsivegrid\">",
+          "target": [
+            "#footer-ey-content > .container.responsivegrid:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
