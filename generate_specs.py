@@ -10,7 +10,7 @@ def create_spec_file(project_name, project_url):
 import {{ AxeBuilder }} from '@axe-core/playwright';
 import * as fs from 'fs';
 import * as path from 'path';
-import {{ generateTagSummary }} from '../tag-summary';
+import {{ generateTagSummary }} from './tag-summary';
 
 // Configure test for this specific project
 test.use({{
