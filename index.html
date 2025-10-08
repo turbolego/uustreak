@@ -1023,7 +1023,18 @@
                 } else {
                     comparison = aValue.localeCompare(bValue);
                 }
-                return newSortDirection === 'desc' ? -comparison : comparison;
+                
+                // Apply primary sort direction
+                const primaryComparison = newSortDirection === 'desc' ? -comparison : comparison;
+                
+                // If sorting by streak column (index 4) and values are equal, use name (index 1) as secondary sort (alphabetically)
+                if (columnIndex === 4 && comparison === 0) {
+                    const aName = a.children[1]?.textContent || '';
+                    const bName = b.children[1]?.textContent || '';
+                    return aName.localeCompare(bName);
+                }
+                
+                return primaryComparison;
             }); rows.forEach(row => tbody.appendChild(row));
 
             // Update rank numbers after sorting
