@@ -160,7 +160,7 @@ jobs:
         run: |
           source venv/bin/activate
           python3 generate_specs.py
-          cp tag-summary.js tests/
+          cp js/tag-summary.js tests/
 
       - name: Ensure jq is available
         run: |
