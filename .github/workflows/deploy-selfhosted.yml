@@ -143,10 +143,14 @@ jobs:
           pip install --upgrade pip
           pip install beautifulsoup4 requests
 
-      - name: Generate projects.json file
+      - name: Verify projects.json exists
         run: |
-          source venv/bin/activate
-          python3 crawler.py
+          # Verify that projects.json exists
+          if [ ! -f "projects.json" ]; then
+            echo "Error: projects.json file not found!"
+            exit 1
+          fi
+          echo "Found projects.json with $(jq length projects.json) projects"
           if [ -d "historical-data/invalid-urls" ]; then
             mkdir -p invalid-urls-artifacts
             cp historical-data/invalid-urls/invalid_urls_*.json invalid-urls-artifacts/ 2>/dev/null || echo "No invalid URLs files found"
@@ -626,7 +630,7 @@ jobs:
           
           # Run merge using the actual number of parts found
           if [ "$PARTS_COUNT" -gt 0 ]; then
-            node merge-summary-parts.js "$TODAY" "$PARTS_COUNT"
+            node js/merge-summary-parts.js "$TODAY" "$PARTS_COUNT"
             
             # Verify the merged file
             if [ -f "accessibility-reports/summaries/$TODAY/daily_summary.json" ]; then
@@ -1193,14 +1197,8 @@ jobs:
           cp main-branch/README.md gh-pages-branch/
           
           # Copy new JavaScript and CSS files
-          cp main-branch/loading.js gh-pages-branch/
-          cp main-branch/summary.js gh-pages-branch/
+          cp -r main-branch/js gh-pages-branch/
           cp main-branch/styles.css gh-pages-branch/
-          cp main-branch/tag-summary.js gh-pages-branch/
-          cp main-branch/invalid_urls.js gh-pages-branch/
-          cp main-branch/merge-summary-parts.js gh-pages-branch/
-          cp main-branch/validate-summaries.js gh-pages-branch/
-          cp main-branch/gzip-utils.js gh-pages-branch/
           
           # CRITICAL: Remove .gitignore from gh-pages to allow accessibility-reports to be committed
           if [ -f "gh-pages-branch/.gitignore" ]; then
