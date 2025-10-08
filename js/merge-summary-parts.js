@@ -10,7 +10,8 @@ const fs = require('fs');
 const path = require('path');
 
 // Import the merge function from tag-summary.js
-const { mergeDailySummaryParts } = require('./tag-summary.js');
+// Use __dirname to get the correct path regardless of where the script is run from
+const { mergeDailySummaryParts } = require(path.join(__dirname, 'tag-summary.js'));
 
 function main() {
     const args = process.argv.slice(2);
