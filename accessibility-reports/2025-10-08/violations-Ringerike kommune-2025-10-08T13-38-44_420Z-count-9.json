@@ -1,0 +1,654 @@
+{
+  "project": "Ringerike kommune",
+  "timestamp": "2025-10-08T13:38:44.421Z",
+  "url": "https://www.ringerike.kommune.no/#",
+  "total_violations": 9,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button class=\"btn-template-select\" data-templatetype=\"1\"><span class=\"template-type-small\"></span></button>",
+          "target": [
+            "#portalframe1",
+            "button[data-templatetype=\"1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"btn-template-select\" data-templatetype=\"2\"><span class=\"template-type-medium\"></span></button>",
+          "target": [
+            "#portalframe1",
+            "button[data-templatetype=\"2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a title=\"Se alle saker\" href=\"/innhold/pagaende-planprosesser/#heading-h3-5\" target=\"_blank\">Se fullstendig liste her</a>",
+          "target": [
+            "a[title=\"Se alle saker\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #428bca, background color: #f4f4f4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a title=\"Vis alle \" href=\"/innhold/pagaende-planprosesser/#heading-h3-3\" target=\"_blank\">Se fullstendig liste her</a>",
+          "target": [
+            "a[title=\"Vis alle \"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #428bca, background color: #f4f4f4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"animated bounceOutRight\" id=\"corner_text\" aria-label=\"Hva kan jeg hjelpe deg med?\">Hva kan jeg hjelpe deg med?</span>",
+          "target": [
+            "#corner_text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.2 (foreground color: #fefefe, background color: #e2ebea, font size: 14.3pt (19px), font weight: bold). Expected contrast ratio of 3:1"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe src=\"//prokomresources.prokomcdn.no/plugins/ssp-kalender-app/iframe-app/app-small.html?url=https://sspkalender.prokom.no&amp;name=ringerikekommune&amp;trans=en#viewtype:redirect-list/templatetype:3/daytype:1/params:{&quot;Categories&quot;:&quot;&quot;,&quot;SearchText&quot;:&quot;&quot;,&quot;DateFrom&quot;:&quot;&quot;,&quot;DateTo&quot;:&quot;16.01.2026&quot;,&quot;Municipalities&quot;:&quot;0&quot;,&quot;Kunde&quot;:&quot;ringerikekommune&quot;,&quot;Id&quot;:&quot;&quot;,&quot;ItemDate&quot;:&quot;&quot;,&quot;WeekDays&quot;:&quot;&quot;,&quot;List&quot;:&quot;compact&quot;,&quot;Count&quot;:&quot;10&quot;,&quot;Distributor&quot;:&quot;&quot;}/\" width=\"100%\" scrolling=\"no\" id=\"portalframe1\" frameborder=\"0\" style=\"overflow: hidden; min-height: 200px; height: 2134px;\">",
+          "target": [
+            "#portalframe1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "html-has-lang",
+      "impact": "serious",
+      "description": "Ensure every HTML document has a lang attribute",
+      "help": "<html> element must have a lang attribute",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=playwright",
+      "tags": [
+        "cat.language",
+        "wcag2a",
+        "wcag311",
+        "TTv5",
+        "TT11.a",
+        "EN-301-549",
+        "EN-9.3.1.1",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html class=\"no-js\" style=\"height: 100%;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix any of the following:\n  The <html> element does not have a lang attribute"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 11,
+      "nodes": [
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/fda4e45b363a45369ef5b2b63d0180bc.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/fda4e45b363a45369ef5b2b63d0180bc.aspx\">",
+          "target": [
+            "div[data-blockid=\"46\"] > .ssp__panel__news-item:nth-child(1) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/5d544dbf5d3b4a89b37cd41b5e71ff03.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/5d544dbf5d3b4a89b37cd41b5e71ff03.aspx\">",
+          "target": [
+            "a[href$=\"vesterngata-stenges/\"] > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/61a3e4e6bf0148e3a005dcfc5efd12f3.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/61a3e4e6bf0148e3a005dcfc5efd12f3.aspx\">",
+          "target": [
+            "div[data-blockid=\"46\"] > .ssp__panel__news-item:nth-child(3) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/13b264777cd7406383b8bb9fe0c9d6c5.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/13b264777cd7406383b8bb9fe0c9d6c5.aspx\">",
+          "target": [
+            "div[data-blockid=\"46\"] > .ssp__panel__news-item:nth-child(4) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/d25d9f21117a45868758439c8be19381.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/d25d9f21117a45868758439c8be19381.aspx\">",
+          "target": [
+            "div[data-blockid=\"46\"] > .ssp__panel__news-item:nth-child(5) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/8bc4c6d87db447779c8fc5c2cce7f622.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/8bc4c6d87db447779c8fc5c2cce7f622.aspx\">",
+          "target": [
+            "div[data-blockid=\"12423\"] > .ssp__panel__news-item:nth-child(1) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/16c37562ac05403881325c927db1a4df.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/16c37562ac05403881325c927db1a4df.aspx\">",
+          "target": [
+            "div[data-blockid=\"12423\"] > .ssp__panel__news-item:nth-child(3) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/db33fafd33514c988bb3a09829dd6232.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/db33fafd33514c988bb3a09829dd6232.aspx\">",
+          "target": [
+            "div[data-blockid=\"12423\"] > .ssp__panel__news-item:nth-child(4) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/6bd761724c35480b87f0eec5729a996d.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/6bd761724c35480b87f0eec5729a996d.aspx\">",
+          "target": [
+            "div[data-blockid=\"12423\"] > .ssp__panel__news-item:nth-child(5) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/90404d6c0ff54ad8b38eb7460d1ad2c7.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/90404d6c0ff54ad8b38eb7460d1ad2c7.aspx\">",
+          "target": [
+            "div[data-blockid=\"1301\"] > .ssp__panel__news-item:nth-child(1) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__footer-wave\" src=\"/external/ssp/files/Ringerike-footerlines-green.svg\">",
+          "target": [
+            ".ssp__footer-wave"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label-title-only?application=playwright",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input type=\"text\" id=\"search__input--id\" class=\"search__input\" title=\"Skriv spørsmålet ditt her\" value=\"\" placeholder=\"Hva lurer du på?\">",
+          "target": [
+            "#search__input--id"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "impact": "critical",
+      "description": "Ensure every form element has a label",
+      "help": "Form elements must have labels",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<input type=\"text\" class=\"date-from datepicker\">",
+          "target": [
+            "#portalframe1",
+            ".date-from"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<input type=\"text\" class=\"date-to datepicker\">",
+          "target": [
+            "#portalframe1",
+            ".date-to"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=ringerikekommune&amp;Id=36538_20251008-1830_20251008-1930\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-0 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=ringerikekommune&amp;Id=36617_20251009-1300_20251009-1500\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-1 > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=ringerikekommune&amp;Id=34385_20251009-1400_20251009-1700\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=ringerikekommune&amp;Id=32260_20251009-1700_20251009-1830\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".list-item.line:nth-child(3) > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=ringerikekommune&amp;Id=36781_20251011-1030_20251011-1115\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-2 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=ringerikekommune&amp;Id=36617_20251013-1300_20251013-1500\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-3 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=ringerikekommune&amp;Id=31481_20251014-1200_20251014-1330\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-4 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 33,
+      "nodes": [
+        {
+          "html": "<div>",
+          "target": [
+            "div:nth-child(8) > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            "div:nth-child(8) > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"ssp__panel__title\">\n        Hva skjer?\n    </h2>",
+          "target": [
+            ".ssp__panel--grey.ssp__panel.mb-30 > .ssp__panel__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"ssp__timespan\">",
+          "target": [
+            ".ssp__timespan"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"heading\">\n                  <div class=\"heading\">\n                      <h2>Hva skjer? <span>Søk i kulturkalenderen</span></h2>\n                  </div>\n              </li>",
+          "target": [
+            "#portalframe1",
+            ".input-list > .heading"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"input-search\">\n                  <input name=\"searchInput\" placeholder=\"Søk i tittel og innhold\" class=\"query\" type=\"text\">\n                  <div class=\"searchButton\">\n                      <a name=\"searchButtonBig\" class=\"search\">Søk</a>\n                  </div>\n              </li>",
+          "target": [
+            "#portalframe1",
+            ".input-search"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"data-from-to-expand\">",
+          "target": [
+            "#portalframe1",
+            ".data-from-to-expand"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"CaptionCont SlectBox\"><span class=\"placeholder\">Velg sted</span><label><i></i></label></p>",
+          "target": [
+            "#portalframe1",
+            ".CaptionCont"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"optWrapper multiple\"><ul class=\"options\"><li data-val=\"Hønefoss\"><span><i></i></span><label>- Hønefoss</label></li></ul><div class=\"MultiControls\"><p class=\"btnOk\">OK</p><p class=\"btnCancel\">Cancel</p></div></div>",
+          "target": [
+            "#portalframe1",
+            ".optWrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h1>I dag 8. oktober </h1>",
+          "target": [
+            "#portalframe1",
+            ".single-0 > h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"list-item-date\">",
+          "target": [
+            "#portalframe1",
+            ".single-0 > .item-container > .list-item.line > .list-item-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"ul-main\">\n              <li class=\"list-item-title\">\n                <h1>Boksamtale med Marit Røste</h1>\n              </li>\n              <li class=\"list-item-place\">\n                Ringerike bibliotek\n              </li>\n            </ul>",
+          "target": [
+            "#portalframe1",
+            "a[data-itemid=\"36538\"] > .ul-main"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h1>I morgen 9. oktober </h1>",
+          "target": [
+            "#portalframe1",
+            ".single-1 > h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"list-item-date\">",
+          "target": [
+            "#portalframe1",
+            ".single-1 > .item-container > .list-item.line:nth-child(1) > .list-item-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"ul-main\">\n              <li class=\"list-item-title\">\n                <h1>Gratis grunnkurs for seniorer i bruk av smarttelefon - høsten 2025</h1>\n              </li>\n              <li class=\"list-item-place\">\n                Ringerike bibliotek\n              </li>\n            </ul>",
+          "target": [
+            "#portalframe1",
+            ".list-item-link[data-itemid=\"36617\"][data-itemdate=\"09.10.2025\"] > .ul-main"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"list-item-date\">",
+          "target": [
+            "#portalframe1",
+            ".list-item.line:nth-child(2) > .list-item-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"ul-main\">\n              <li class=\"list-item-title\">\n                <h1>Dropin syverksted </h1>\n              </li>\n              <li class=\"list-item-place\">\n                Ringerike bibliotek\n              </li>\n            </ul>",
+          "target": [
+            "#portalframe1",
+            "a[data-itemid=\"34385\"] > .ul-main"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"list-item-date\">",
+          "target": [
+            "#portalframe1",
+            ".list-item.line:nth-child(3) > .list-item-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"ul-main\">\n              <li class=\"list-item-title\">\n                <h1>Språkkafé/Language Café</h1>\n              </li>\n              <li class=\"list-item-place\">\n                Ringerike bibliotek\n              </li>\n            </ul>",
+          "target": [
+            "#portalframe1",
+            "a[data-itemid=\"32260\"] > .ul-main"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h1>Lørdag 11. oktober </h1>",
+          "target": [
+            "#portalframe1",
+            ".single-2 > h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"list-item-date\">",
+          "target": [
+            "#portalframe1",
+            ".single-2 > .item-container > .list-item.line > .list-item-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"ul-main\">\n              <li class=\"list-item-title\">\n                <h1>Bok og yoga</h1>\n              </li>\n              <li class=\"list-item-place\">\n                Ringerike bibliotek\n              </li>\n            </ul>",
+          "target": [
+            "#portalframe1",
+            "a[data-itemid=\"36781\"] > .ul-main"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h1>Mandag 13. oktober </h1>",
+          "target": [
+            "#portalframe1",
+            ".single-3 > h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"list-item-date\">",
+          "target": [
+            "#portalframe1",
+            ".single-3 > .item-container > .list-item.line > .list-item-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"ul-main\">\n              <li class=\"list-item-title\">\n                <h1>Gratis grunnkurs for seniorer i bruk av smarttelefon - høsten 2025</h1>\n              </li>\n              <li class=\"list-item-place\">\n                Ringerike bibliotek\n              </li>\n            </ul>",
+          "target": [
+            "#portalframe1",
+            "a[data-itemdate=\"13.10.2025\"] > .ul-main"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h1>Tirsdag 14. oktober </h1>",
+          "target": [
+            "#portalframe1",
+            ".single-4 > h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"list-item-date\">",
+          "target": [
+            "#portalframe1",
+            ".single-4 > .item-container > .list-item.line > .list-item-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"ul-main\">\n              <li class=\"list-item-title\">\n                <h1>Språkkafé/Language Café</h1>\n              </li>\n              <li class=\"list-item-place\">\n                Ringerike bibliotek\n              </li>\n            </ul>",
+          "target": [
+            "#portalframe1",
+            "a[data-itemid=\"31481\"] > .ul-main"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row mt-20\">    \n            <div class=\"col-md-12 text-left-sm\">\n                <a class=\"btn btn-primary ssp__panel__button\" href=\"/kalender/\">Se hele aktivitetskalenderen</a>\n                \n            </div>\n    </div>",
+          "target": [
+            ".mt-20"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-xs-12 col-md-6 mb-30\">",
+          "target": [
+            ".ssp__fluid-panel > div > div > div > .container > .row > .col-md-6.mb-30.col-xs-12:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"test-wrapper\">\n    <img class=\"ssp__footer-wave\" src=\"/external/ssp/files/Ringerike-footerlines-green.svg\">\n</div>",
+          "target": [
+            ".test-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<audio id=\"vfact_testaudio\" controls=\"\"> not supported</audio>",
+          "target": [
+            "#vFact_audioFrame",
+            "#vfact_testaudio"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h1>Her er framen</h1>",
+          "target": [
+            "#vFact_audioFrame",
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
