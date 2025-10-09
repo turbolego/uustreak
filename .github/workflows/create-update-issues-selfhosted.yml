@@ -162,6 +162,43 @@ jobs:
               }
             }
 
+            function sanitizeFilename(name) {
+              // Replace invalid filename characters with underscores
+              return name.replace(/[^a-z0-9_\-]/gi, '_');
+            }
+
+            function truncateIssueBody(body, maxLength = 65000) {
+              // GitHub's limit is 65536, use 65000 to be safe
+              if (body.length <= maxLength) {
+                return body;
+              }
+              
+              const truncateMessage = '\n\n---\n\n**⚠️ This issue body was truncated due to size limitations.**\n\nThe full report is available in the markdown file linked above.';
+              const availableLength = maxLength - truncateMessage.length;
+              
+              return body.substring(0, availableLength) + truncateMessage;
+            }
+
+            function saveMarkdownFile(projectName, content) {
+              try {
+                const markdownDir = 'issues-markdown';
+                if (!fs.existsSync(markdownDir)) {
+                  fs.mkdirSync(markdownDir, { recursive: true });
+                }
+                
+                const filename = sanitizeFilename(projectName) + '.md';
+                const filepath = path.join(markdownDir, filename);
+                
+                fs.writeFileSync(filepath, content, 'utf8');
+                console.log(`Markdown file saved: ${filepath}`);
+                
+                return filename;
+              } catch (error) {
+                console.error(`Error saving markdown file for ${projectName}:`, error);
+                return null;
+              }
+            }
+
             async function findExistingSummaryIssue() {
               console.log(`Checking for existing daily summary issue`);
 
@@ -312,8 +349,43 @@ jobs:
 
                     const issueTitle = `[${project}] WCAG Violations Report`;
 
-                const body = [
+                // Create full markdown content
+                const fullMarkdownContent = [
+                  `# WCAG Violations Report for ${project}`,
+                  '',
+                  `**Timestamp:** ${timestamp}`,
+                  `**URL:** [${url}](${url})`,
+                  `**Total Violations:** ${total_violations}`,
+                  '',
+                  '## Violation Details',
+                  '',
+                  ...violationsWithCount.map(violation => [
+                    `### ${violation.help || 'Violation'}`,
+                    '',
+                    `- **Impact:** ${violation.impact || 'N/A'}`,
+                    `- **Description:** ${violation.description || 'N/A'}`,
+                    `- **Help URL:** ${violation.helpUrl || 'N/A'}`,
+                    `- **Tags:** ${violation.tags ? violation.tags.join(', ') : 'N/A'}`,
+                    `- **Count:** ${violation.violation_count}`,
+                    '',
+                    '#### Affected Elements:',
+                    '',
+                    ...violation.nodes.map(node => `- \`${node.target.join(', ')}\``),
+                    ''
+                  ]).flat()
+                ].join('\n');
+                
+                // Save markdown file
+                const markdownFilename = saveMarkdownFile(project, fullMarkdownContent);
+                const markdownUrl = markdownFilename 
+                  ? `https://turbolego.github.io/uustreak/issues-markdown/${markdownFilename}`
+                  : null;
+                
+                // Create issue body with markdown link
+                const bodyParts = [
                   `## WCAG Violations Report for ${project}`,
+                  '',
+                  markdownUrl ? `📥 **[Download Full Report (Markdown)](${markdownUrl})**` : '',
                   '',
                   `**Timestamp:** ${timestamp}`,
                   `**URL:** [${url}](${url})`,
@@ -325,14 +397,17 @@ jobs:
                     `- **Impact:** ${violation.impact || 'N/A'}`,
                     `- **Description:** ${violation.description || 'N/A'}`,
                     `- **Help:** ${violation.help || 'N/A'}`,
-                    `- **Help Url:** ${violation.helpUrl || 'N/A'}`,
+                    `- **Help URL:** ${violation.helpUrl || 'N/A'}`,
                     `- **Tags:** ${violation.tags ? violation.tags.join(', ') : 'N/A'}`,
                     `- **Count:** ${violation.violation_count}`,
                     `- **Affected Elements:**`,
                     ...violation.nodes.map(node => `  - \`${node.target.join(', ')}\``),
                     ''
                   ]).flat()
-                ].join('\n');
+                ];
+                
+                const fullBody = bodyParts.join('\n');
+                const body = truncateIssueBody(fullBody);
 
                 // Collect all unique tags from violations for this project
                 const allTags = new Set(['wcag-violation', 'automated-report']);
