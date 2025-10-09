@@ -1,0 +1,86 @@
+{
+  "project": "Accenture Norge",
+  "timestamp": "2025-10-09T00:21:01.117Z",
+  "url": "https://www.accenture.com/no-en",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-required-children",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-children?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ul class=\"rad-global-nav__language-menu\" role=\"menu\" aria-label=\"Country and language selector\">",
+          "target": [
+            ".rad-global-nav__language-menu"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: li[tabindex]"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"rad-awards-card__subheader\">Our Chair and CEO, Julie Sweet, is No. 11 on Fortune’s 2025 Most Powerful People in Business; one of the TIME100 Most Influential People of 2024; and received the Anti-Defamation League’s highest honor, the Courage Against Hate Award.​</h4>",
+          "target": [
+            "#floatingawardcards-98ffa7214e > .rad-awards-card__detail > .rad-awards-card__description > .rad-awards-card__subheader"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "listitem",
+      "impact": "serious",
+      "description": "Ensure <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/listitem?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<li class=\"default\">Default (English)</li>",
+          "target": [
+            ".default"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"dropdown-header ucase\">All COUNTRIES &amp; LANGUAGES</li>",
+          "target": [
+            ".dropdown-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        }
+      ]
+    }
+  ]
+}
