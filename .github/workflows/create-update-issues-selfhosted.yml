@@ -122,6 +122,46 @@ jobs:
               }
             }
 
+            async function closeAndDeleteIssue(projectName) {
+              console.log(`Closing and deleting issue for project with 0 violations: ${projectName}`);
+
+              try {
+                const existingIssue = await findExistingIssue(projectName);
+                
+                if (existingIssue) {
+                  console.log(`Found existing issue #${existingIssue.number} for ${projectName}`);
+                  
+                  // Close the issue first if it's open
+                  if (existingIssue.state === 'open') {
+                    console.log(`Closing issue #${existingIssue.number}...`);
+                    await github.rest.issues.update({
+                      owner: context.repo.owner,
+                      repo: context.repo.repo,
+                      issue_number: existingIssue.number,
+                      state: 'closed'
+                    });
+                  }
+                  
+                  // Delete the issue
+                  console.log(`Deleting issue #${existingIssue.number}...`);
+                  await github.rest.issues.delete({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: existingIssue.number
+                  });
+                  
+                  console.log(`Successfully closed and deleted issue for ${projectName}`);
+                  return true;
+                } else {
+                  console.log(`No existing issue found for ${projectName}`);
+                  return false;
+                }
+              } catch (error) {
+                console.error(`Error closing/deleting issue for ${projectName}:`, error);
+                return false;
+              }
+            }
+
             async function findExistingSummaryIssue() {
               console.log(`Checking for existing daily summary issue`);
 
@@ -264,7 +304,9 @@ jobs:
 
                     const violationsWithCount = violations.filter(v => v && typeof v === 'object' && v.violation_count > 0);
                     if (violationsWithCount.length === 0) {
-                      console.log(`No violations with count > 0 in ${file}. Skipping.`);
+                      console.log(`Project ${project} has 0 violations. Closing and deleting issue if it exists.`);
+                      await closeAndDeleteIssue(project);
+                      processedProjects.add(project);
                       continue;
                     }
 
