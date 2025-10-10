@@ -17,6 +17,11 @@ jobs:
         with:
           ref: gh-pages
 
+      - name: Create issues-markdown directory
+        run: |
+          mkdir -p issues-markdown
+          echo "Created issues-markdown directory"
+
       - name: Create or Update GitHub Issues for Violations
         uses: actions/github-script@v8
         with:
@@ -462,3 +467,25 @@ jobs:
             }
 
             console.log("WCAG violation issue creation workflow completed.");
+      
+      - name: Commit and Push Markdown Files to gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Check if there are any changes to commit
+          if [ -d "issues-markdown" ] && [ -n "$(ls -A issues-markdown 2>/dev/null)" ]; then
+            echo "Found markdown files to commit"
+            git add issues-markdown/
+            
+            # Check if there are actually changes to commit
+            if git diff --staged --quiet; then
+              echo "No changes to commit"
+            else
+              git commit -m "Update WCAG violation markdown reports [skip ci]"
+              git push origin gh-pages
+              echo "Markdown files committed and pushed to gh-pages"
+            fi
+          else
+            echo "No markdown files to commit"
+          fi
