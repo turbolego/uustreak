@@ -1,0 +1,100 @@
+# WCAG Violations Report for Aktiv Eiendomsmegling AS
+
+**Timestamp:** 2025-10-10T00:23:12.505Z
+**URL:** [https://aktiv.no/#](https://aktiv.no/#)
+**Total Violations:** 7
+
+## Violation Details
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.TopBarContent_button__mjoJL`
+- `.slick-next`
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.cm-link`
+- `.cm-btn`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.slick-current > div > .ProjectsSliderContent_item__mTMhQ > .ProjectsSliderContent_link__zdHrB > .ProjectsSliderContent_contentWrapper__r_Ifc > h4`
+
+### Alternative text of images should not be repeated as text
+
+- **Impact:** minor
+- **Description:** Ensure image alternative is not repeated as text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright
+- **Tags:** cat.text-alternatives, best-practice
+- **Count:** 5
+
+#### Affected Elements:
+
+- `img[alt="Kjøpe bolig"]`
+- `img[alt="Selge bolig"]`
+- `img[alt="Finn en megler"]`
+- `img[alt="Verdivurdering"]`
+- `img[alt="Råd & inspirasjon"]`
+
+### <li> elements must be contained in a <ul> or <ol>
+
+- **Impact:** serious
+- **Description:** Ensure <li> elements are used semantically
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/listitem?application=playwright
+- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1
+- **Count:** 3
+
+#### Affected Elements:
+
+- `.slick-current > div > .ProjectsSliderContent_item__mTMhQ`
+- `div[data-index="1"] > div > .ProjectsSliderContent_item__mTMhQ`
+- `div[data-index="2"] > div > .ProjectsSliderContent_item__mTMhQ`
+
+### Zooming and scaling must not be disabled
+
+- **Impact:** critical
+- **Description:** Ensure <meta name="viewport"> does not disable text scaling and zooming
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=playwright
+- **Tags:** cat.sensory-and-visual-cues, wcag2aa, wcag144, EN-301-549, EN-9.1.4.4, ACT
+- **Count:** 1
+
+#### Affected Elements:
+
+- `meta[name="viewport"]`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
+- **Tags:** cat.keyboard, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.cn-body > p`
+- `.cm-link`
