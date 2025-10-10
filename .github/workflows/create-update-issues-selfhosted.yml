@@ -8,14 +8,14 @@ jobs:
   create-or-update-issues:
     runs-on: self-hosted
     permissions:
+      contents: write
       issues: write
-      contents: read
 
     steps:
       - name: Checkout gh-pages branch
         uses: actions/checkout@v5
-        with:
-          ref: gh-pages
+        ref: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create issues-markdown directory
         run: |
