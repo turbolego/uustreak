@@ -14,7 +14,8 @@ jobs:
     steps:
       - name: Checkout gh-pages branch
         uses: actions/checkout@v5
-        ref: gh-pages
+        with:
+          ref: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create issues-markdown directory
