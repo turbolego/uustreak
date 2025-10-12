@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2025-10-10T00:22:33.020Z
+**Timestamp:** 2025-10-12T00:22:48.059Z
 **URL:** [https://bymuseet.no/#](https://bymuseet.no/#)
 **Total Violations:** 7
 
@@ -142,10 +142,10 @@
 - `.col-lg-2.museum.col-sm-6:nth-child(9) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title`
 - `.col-lg-2.museum.col-sm-6:nth-child(10) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title`
 - `.dashed-border > .section-title`
-- `.filter:nth-child(1) > div[data-rocket-lazy-bg-131f5017-390a-4ce0-9647-8e5af4e73453="excluded"][data-rocket-lazy-bg-da08c479-8a09-45f3-9f10-fb348cd17d90="excluded"][data-rocket-lazy-bg-c2d7ad03-ea06-4750-ac4c-c26153c8314f="loaded"]`
-- `.filter:nth-child(2) > div[data-rocket-lazy-bg-131f5017-390a-4ce0-9647-8e5af4e73453="excluded"][data-rocket-lazy-bg-da08c479-8a09-45f3-9f10-fb348cd17d90="excluded"][data-rocket-lazy-bg-c2d7ad03-ea06-4750-ac4c-c26153c8314f="loaded"]`
-- `.filter:nth-child(3) > div[data-rocket-lazy-bg-131f5017-390a-4ce0-9647-8e5af4e73453="excluded"][data-rocket-lazy-bg-da08c479-8a09-45f3-9f10-fb348cd17d90="excluded"][data-rocket-lazy-bg-c2d7ad03-ea06-4750-ac4c-c26153c8314f="loaded"]`
-- `.when-filter > div[data-rocket-lazy-bg-131f5017-390a-4ce0-9647-8e5af4e73453="excluded"][data-rocket-lazy-bg-da08c479-8a09-45f3-9f10-fb348cd17d90="excluded"][data-rocket-lazy-bg-c2d7ad03-ea06-4750-ac4c-c26153c8314f="loaded"]`
+- `.filter:nth-child(1) > div[data-rocket-lazy-bg-c2913568-6ba7-4428-8c2a-1a442bb45533="excluded"][data-rocket-lazy-bg-91ed1ae4-dbcb-4490-90a6-8d8cf841a85f="excluded"][data-rocket-lazy-bg-ac357fd8-4552-42d5-9ea2-757e640b2a26="loaded"]`
+- `.filter:nth-child(2) > div[data-rocket-lazy-bg-c2913568-6ba7-4428-8c2a-1a442bb45533="excluded"][data-rocket-lazy-bg-91ed1ae4-dbcb-4490-90a6-8d8cf841a85f="excluded"][data-rocket-lazy-bg-ac357fd8-4552-42d5-9ea2-757e640b2a26="loaded"]`
+- `.filter:nth-child(3) > div[data-rocket-lazy-bg-c2913568-6ba7-4428-8c2a-1a442bb45533="excluded"][data-rocket-lazy-bg-91ed1ae4-dbcb-4490-90a6-8d8cf841a85f="excluded"][data-rocket-lazy-bg-ac357fd8-4552-42d5-9ea2-757e640b2a26="loaded"]`
+- `.when-filter > div[data-rocket-lazy-bg-c2913568-6ba7-4428-8c2a-1a442bb45533="excluded"][data-rocket-lazy-bg-91ed1ae4-dbcb-4490-90a6-8d8cf841a85f="excluded"][data-rocket-lazy-bg-ac357fd8-4552-42d5-9ea2-757e640b2a26="loaded"]`
 - `.d-lg-block.btn-link[href$="event"]`
 - `.event.load-more__item.col-lg-3:nth-child(1)`
 - `.event.load-more__item.col-lg-3:nth-child(2)`

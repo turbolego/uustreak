@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2025-10-10T00:21:21.761Z
+**Timestamp:** 2025-10-12T00:21:48.793Z
 **URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
 **Total Violations:** 10
 
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-502270"]`
-- `button[aria-controls="modal-507319"]`
-- `button[aria-controls="modal-507318"]`
-- `button[aria-controls="modal-504997"]`
-- `button[aria-controls="modal-571776"]`
-- `button[aria-controls="modal-570556"]`
-- `button[aria-controls="modal-501799"]`
 - `button[aria-controls="modal-502582"]`
+- `button[aria-controls="modal-506926"]`
+- `button[aria-controls="modal-560193"]`
+- `button[aria-controls="modal-560198"]`
+- `button[aria-controls="modal-552919"]`
+- `button[aria-controls="modal-506813"]`
+- `button[aria-controls="modal-561537"]`
+- `button[aria-controls="modal-570563"]`
 
 ### Buttons must have discernible text
 
@@ -93,7 +93,7 @@
 #### Affected Elements:
 
 - `.w-auto > picture > .object-center.object-cover`
-- `#react_0HNG4HHHKDFCM > .my-10 > .md\:grid-cols-4.mb-16.gap-7 > .group.relative:nth-child(2) > div > .md\:flex-col.space-x-4.md\:space-x-0 > .w-2\/5.md\:mb-3.md\:w-full > .overflow-hidden.rounded-lg > picture > .t-\[10px\].md\:rounded-\[10px\].md\:group-hover\:scale-110`
+- `#react_0HNG49MV6NLMR > .my-10 > .md\:grid-cols-4.mb-16.gap-7 > .group.relative:nth-child(2) > div > .md\:flex-col.space-x-4.md\:space-x-0 > .w-2\/5.md\:mb-3.md\:w-full > .overflow-hidden.rounded-lg > picture > .t-\[10px\].md\:rounded-\[10px\].md\:group-hover\:scale-110`
 - `div:nth-child(1) > .bg-beige-50.bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `div:nth-child(2) > .bg-beige-50.bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `.object-center[height="264"][width="600"]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2025-10-10T00:26:16.780Z
+**Timestamp:** 2025-10-12T00:26:07.752Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 5
 
@@ -72,7 +72,7 @@
 #### Affected Elements:
 
 - `a[aria-label="Finn din studentbolig"] > .md\:items-start.flex-col.md\:flex-row > .md\:grow > .font-semibold`
-- `a[href$="alle-studenter"] > .pt-1.px-3.pb-3 > .py-2.text-gray-700`
+- `#carousel0 > .max-w-\[calc\(80vw\)\].md\:max-w-\[calc\(25\.4vw\)\].rounded-lg > .rounded-t-lg[target="_self"] > .pt-1.px-3.pb-3 > .py-2.text-gray-700`
 
 ### Interactive controls must not be nested
 
