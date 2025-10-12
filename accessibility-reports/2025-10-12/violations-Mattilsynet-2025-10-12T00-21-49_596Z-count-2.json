@@ -1,0 +1,66 @@
+{
+  "project": "Mattilsynet",
+  "timestamp": "2025-10-12T00:21:49.596Z",
+  "url": "https://www.mattilsynet.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<label class=\"_button_2uhem_1 _ds-button_alzsp_1\" for=\"header-lang\" aria-expanded=\"false\" role=\"button\" tabindex=\"0\">Språk/Language</label>",
+          "target": [
+            "label[for=\"header-lang\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+        },
+        {
+          "html": "<label class=\"_button_2uhem_1 _ds-button_alzsp_1\" for=\"header-search\" aria-expanded=\"false\" role=\"button\" tabindex=\"0\">",
+          "target": [
+            "label[for=\"header-search\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+        },
+        {
+          "html": "<label class=\"_button_2uhem_1 _ds-button_alzsp_1\" for=\"header-menu\" aria-expanded=\"false\" role=\"button\" tabindex=\"0\">",
+          "target": [
+            "label[for=\"header-menu\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"skip-link\" href=\"#main\">Til hovedinnhold</a>",
+          "target": [
+            ".skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
