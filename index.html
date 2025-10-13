@@ -982,8 +982,23 @@
             if (!rows.length) return;
 
             const isNumeric = !isNaN(rows[0].children[columnIndex]?.textContent);
-            const currentSortDirection = isInitialSort ? 'desc' : (table.dataset.sortDirection || 'desc');
-            const newSortDirection = isInitialSort ? 'desc' : (currentSortDirection === 'desc' ? 'asc' : 'desc');
+            
+            // Determine sort direction based on whether we're sorting the same column
+            let newSortDirection;
+            if (isInitialSort) {
+                // Initial sort - use descending for the streak column
+                newSortDirection = 'desc';
+                currentSortColumnIndex = columnIndex;
+            } else if (currentSortColumnIndex === columnIndex) {
+                // Same column clicked - toggle direction
+                const currentDirection = table.dataset.sortDirection || 'desc';
+                newSortDirection = currentDirection === 'desc' ? 'asc' : 'desc';
+            } else {
+                // Different column clicked - reset to default (desc for numeric, asc for text)
+                newSortDirection = isNumeric ? 'desc' : 'asc';
+                currentSortColumnIndex = columnIndex;
+            }
+            
             table.dataset.sortDirection = newSortDirection;
 
             // Update ARIA and visual sort states - clear all previous states
