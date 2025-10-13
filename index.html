@@ -1024,17 +1024,29 @@
             }
 
             rows.sort((a, b) => {
-                let aValue = a.children[columnIndex]?.textContent || '';
-                let bValue = b.children[columnIndex]?.textContent || '';
+                let aValue, bValue;
+                
+                // For streak column, use data attribute instead of text content
+                // to avoid issues with fire emoji affecting numeric parsing
+                if (columnIndex === 4) {
+                    aValue = parseInt(a.dataset.streak) || 0;
+                    bValue = parseInt(b.dataset.streak) || 0;
+                } else {
+                    aValue = a.children[columnIndex]?.textContent || '';
+                    bValue = b.children[columnIndex]?.textContent || '';
 
-                if (columnIndex === 1) {
-                    aValue = aValue.replace('Se rapport fra ', '');
-                    bValue = bValue.replace('Se rapport fra ', '');
+                    if (columnIndex === 1) {
+                        aValue = aValue.replace('Se rapport fra ', '');
+                        bValue = bValue.replace('Se rapport fra ', '');
+                    }
                 }
 
                 let comparison;
-                if (isNumeric) {
-                    comparison = (parseFloat(aValue) || 0) - (parseFloat(bValue) || 0);
+                if (columnIndex === 4 || isNumeric) {
+                    // Numeric comparison for streak column and other numeric columns
+                    const aNum = typeof aValue === 'number' ? aValue : (parseFloat(aValue) || 0);
+                    const bNum = typeof bValue === 'number' ? bValue : (parseFloat(bValue) || 0);
+                    comparison = aNum - bNum;
                 } else {
                     comparison = aValue.localeCompare(bValue);
                 }
