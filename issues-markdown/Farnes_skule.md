@@ -1,6 +1,6 @@
 # WCAG Violations Report for Farnes skule
 
-**Timestamp:** 2025-10-12T00:23:20.914Z
+**Timestamp:** 2025-10-13T00:29:57.696Z
 **URL:** [https://www.ardal.kommune.no/tenester/barnehage-og-skule/skule/farnes-skule/#](https://www.ardal.kommune.no/tenester/barnehage-og-skule/skule/farnes-skule/#)
 **Total Violations:** 3
 
@@ -37,11 +37,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 8
+- **Count:** 7
 
 #### Affected Elements:
 
-- `.global-area-message`
 - `.breadcrumbs-content > span`
 - `#breadcrumb-ctl00_ctl00_ctl00_ctl00_innhold_MidtSone_ucBreadcrumbs`
 - `.page-title`

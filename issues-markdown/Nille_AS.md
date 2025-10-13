@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2025-10-12T00:22:58.163Z
+**Timestamp:** 2025-10-13T00:26:48.236Z
 **URL:** [https://www.nille.no/#](https://www.nille.no/#)
 **Total Violations:** 5
 
@@ -48,18 +48,14 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT
-- **Count:** 8
+- **Count:** 4
 
 #### Affected Elements:
 
-- `.row:nth-child(1) > .slider-block > .wrapper--qt5MxQo > .slider--MghjpMP.swiper.swiper-initialized > .swiper-wrapper > .swiper-slide[data-swiper-slide-index="0"] > a[href$="halloween/"][aria-label=""][title=""]`
-- `.row:nth-child(1) > .slider-block > .wrapper--qt5MxQo > .slider--MghjpMP.swiper.swiper-initialized > .swiper-wrapper > .swiper-slide-prev.swiper-slide[data-swiper-slide-index="1"] > a[href$="kostymer/"][aria-label=""][title=""]`
-- `.row:nth-child(1) > .slider-block > .wrapper--qt5MxQo > .slider--MghjpMP.swiper.swiper-initialized > .swiper-wrapper > .swiper-slide-active.swiper-slide[data-swiper-slide-index="2"] > a[href$="soverom/"][aria-label=""][title=""]`
-- `.row:nth-child(1) > .slider-block > .wrapper--qt5MxQo > .slider--MghjpMP.swiper.swiper-initialized > .swiper-wrapper > .swiper-slide-next.swiper-slide[data-swiper-slide-index="3"] > a[aria-label=""][title=""]`
-- `.row:nth-child(2) > .slider-block > .wrapper--qt5MxQo > .slider--MghjpMP.swiper.swiper-initialized > .swiper-wrapper > .swiper-slide[data-swiper-slide-index="0"] > a[href$="halloween/"][aria-label=""][title=""]`
-- `.row:nth-child(2) > .slider-block > .wrapper--qt5MxQo > .slider--MghjpMP.swiper.swiper-initialized > .swiper-wrapper > .swiper-slide-prev.swiper-slide[data-swiper-slide-index="1"] > a[href$="kostymer/"][aria-label=""][title=""]`
-- `.row:nth-child(2) > .slider-block > .wrapper--qt5MxQo > .slider--MghjpMP.swiper.swiper-initialized > .swiper-wrapper > .swiper-slide-active.swiper-slide[data-swiper-slide-index="2"] > a[href$="soverom/"][aria-label=""][title=""]`
-- `.row:nth-child(2) > .slider-block > .wrapper--qt5MxQo > .slider--MghjpMP.swiper.swiper-initialized > .swiper-wrapper > .swiper-slide-next.swiper-slide[data-swiper-slide-index="3"] > a[aria-label=""][title=""]`
+- `a[href$="halloween/"][aria-label=""][title=""]`
+- `a[href$="kostymer/"][aria-label=""][title=""]`
+- `a[href$="soverom/"][aria-label=""][title=""]`
+- `div[data-swiper-slide-index="3"] > a[aria-label=""][title=""]`
 
 ### All page content should be contained by landmarks
 

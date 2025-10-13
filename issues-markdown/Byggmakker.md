@@ -1,6 +1,6 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2025-10-12T00:32:38.331Z
+**Timestamp:** 2025-10-13T00:34:18.407Z
 **URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
 **Total Violations:** 6
 
@@ -164,15 +164,16 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 5
+- **Count:** 6
 
 #### Affected Elements:
 
+- `.responsive-hero__content > h3`
 - `#vi_hjelper_deg > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(1) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
 - `#vi_hjelper_deg > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(2) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
-- `#ia > .column-layout__container > .column-layout__title`
-- `#ia > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(1) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
-- `#ia > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(2) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
+- `.column-layout:nth-child(10) > .column-layout__container > .column-layout__title`
+- `.column-layout:nth-child(10) > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(1) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
+- `.column-layout:nth-child(10) > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(2) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
 
 ### Links must have discernible text
 

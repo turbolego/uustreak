@@ -1,6 +1,6 @@
 # WCAG Violations Report for First Hotels AS
 
-**Timestamp:** 2025-10-12T00:24:29.862Z
+**Timestamp:** 2025-10-13T00:31:04.106Z
 **URL:** [https://www.firsthotels.no/#](https://www.firsthotels.no/#)
 **Total Violations:** 3
 

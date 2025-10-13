@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2025-10-12T00:35:47.197Z
+**Timestamp:** 2025-10-13T00:37:17.870Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 12
 
@@ -45,7 +45,7 @@
 
 #### Affected Elements:
 
-- `a[href$="mailto:anne@dagsavisen.no"]`
+- `span[data-lab-text_size_desktop="16"] > a:nth-child(5)`
 
 ### Headings should not be empty
 
@@ -79,16 +79,15 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 6
+- **Count:** 5
 
 #### Affected Elements:
 
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(14) > .tm21.t42`
-- `.t56`
-- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(29) > .t33`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(18) > .tm21.t42`
+- `.t56.tm39`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > .t40`
 - `.tm32.t42`
 - `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(37) > .tm21.t42`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > .t40`
 
 ### Images must have alternative text
 
@@ -149,11 +148,43 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 80
+- **Count:** 72
 
 #### Affected Elements:
 
 - `h1`
+- `#notice-10003359 > .content > h2`
+- `time[datetime="2025-10-12T19:49:29.000Z"]`
+- `div[title="Alle løslatt etter Israel-kamp"] > h2`
+- `time[datetime="2025-10-12T19:48:09.000Z"]`
+- `#notice-10003317 > .content > h2`
+- `time[datetime="2025-10-12T18:32:06.000Z"]`
+- `div[title="Netanyahu: – Kampen ikke over"] > h2`
+- `time[datetime="2025-10-12T17:46:33.000Z"]`
+- `div[title="Støre deltar på Gaza-møte"] > h2`
+- `time[datetime="2025-10-12T17:12:58.000Z"]`
+- `div[title="Sjokolade-prisen til værs"] > h2`
+- `time[datetime="2025-10-12T15:54:45.000Z"]`
+- `div[title="Skyting på bar: Fire drept"] > h2`
+- `time[datetime="2025-10-12T13:59:29.000Z"]`
+- `#notice-10003127 > .content > h2`
+- `time[datetime="2025-10-12T13:06:26.000Z"]`
+- `#notice-10003083 > .content > h2`
+- `time[datetime="2025-10-12T12:33:00.000Z"]`
+- `div[title="Stenger vei gjennom Russland"] > h2`
+- `time[datetime="2025-10-12T11:20:01.000Z"]`
+- `#notice-10002989 > .content > h2`
+- `time[datetime="2025-10-12T10:21:45.000Z"]`
+- `div[title="Israel-kampen: Flere bøtelagt"] > h2`
+- `div[title="Israel-kampen: Flere bøtelagt"] > .meta`
+- `#notice-10002810 > .content > h2`
+- `#notice-10002810 > .content > .meta`
+- `#notice-10002801 > .content > h2`
+- `#notice-10002801 > .content > .meta`
+- `#notice-10002800 > .content > h2`
+- `#notice-10002800 > .content > .meta`
+- `#notice-10002795 > .content > h2`
+- `#notice-10002795 > .content > .meta`
 - `div[title="Banestormer lagt i bakken"] > h2`
 - `time[datetime="2025-10-11T16:46:38.000Z"]`
 - `div[title="Gjengleder pågrepet"] > h2`
@@ -162,76 +193,36 @@
 - `time[datetime="2025-10-11T15:13:15.000Z"]`
 - `#notice-10002395 > .content > h2`
 - `time[datetime="2025-10-11T14:42:14.000Z"]`
-- `div[title="Kreftsyk Biden strålebehandles"] > h2`
-- `time[datetime="2025-10-11T14:23:14.000Z"]`
-- `#notice-10002349 > .content > h2`
-- `time[datetime="2025-10-11T14:01:33.000Z"]`
-- `div[title="Palestina-markering i gang"] > h2`
-- `time[datetime="2025-10-11T13:08:58.000Z"]`
-- `div[title="60 drept i droneangrep"] > h2`
-- `time[datetime="2025-10-11T12:09:05.000Z"]`
-- `div[title="Tiltalt for nettovergrep"] > h2`
-- `time[datetime="2025-10-11T11:17:44.000Z"]`
-- `div[title="USA truer med sanksjoner"] > h2`
-- `time[datetime="2025-10-11T08:44:43.000Z"]`
-- `div[title="Hver tredje lege er deprimert"] > h2`
-- `time[datetime="2025-10-11T08:32:38.000Z"]`
-- `div[title="Ap og Frp vokser"] > h2`
-- `time[datetime="2025-10-11T06:27:36.000Z"]`
-- `div[title="60.000 tonn mat står klar"] > h2`
-- `time[datetime="2025-10-11T06:26:17.000Z"]`
-- `div[title="– Oslo må lære av bygda"] > h2`
-- `time[datetime="2025-10-11T06:24:04.000Z"]`
-- `#notice-10001982 > .content > h2`
-- `time[datetime="2025-10-10T18:28:22.000Z"]`
-- `#notice-10001972 > .content > h2`
-- `time[datetime="2025-10-10T20:13:37.000Z"]`
-- `#notice-10001971 > .content > h2`
-- `time[datetime="2025-10-10T18:03:58.000Z"]`
-- `div[title="Algeangrep: 189.000 fisk døde"] > h2`
-- `time[datetime="2025-10-10T16:49:16.000Z"]`
-- `div[title="Rotteproblemer på Stortinget"] > h2`
-- `time[datetime="2025-10-10T16:09:54.000Z"]`
-- `#notice-10001852 > .content > h2`
-- `time[datetime="2025-10-10T15:29:35.000Z"]`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
-- `#offer_a8dfe1abe190392acdc8-0, div[ng-show="!terminalError"]`
+- `.row.large-12.small-12:nth-child(4)`
 - `.row.large-12.small-12:nth-child(6)`
-- `.row.large-12.small-12:nth-child(7)`
+- `#offer_a8dfe1abe190392acdc8-0, div[ng-show="!terminalError"]`
 - `.row.large-12.small-12:nth-child(8)`
 - `.row.large-12.small-12:nth-child(9)`
 - `.row.large-12.small-12:nth-child(11)`
-- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(12)`
+- `.row.large-12.small-12:nth-child(12)`
+- `.row.large-12.small-12:nth-child(13)`
+- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(14)`
+- `.row.large-12.small-12:nth-child(16)`
 - `.articlescroller-header`
 - `.count_4`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(14)`
-- `.row.large-12.small-12:nth-child(16)`
-- `.t56`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(18)`
+- `.t56.tm39`
 - `.count_1`
-- `.row.large-12.small-12:nth-child(18)`
-- `.row.large-12.small-12:nth-child(19)`
-- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(21)`
+- `.row.large-12.small-12:nth-child(21)`
 - `.row.large-12.small-12:nth-child(22)`
-- `.row.large-12.small-12:nth-child(23)`
+- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(23)`
 - `.row.large-12.small-12:nth-child(24)`
-- `.mobile_no_border_color.bg-tertiary.color_mobile_bg-tertiary`
+- `.row.large-12.small-12:nth-child(26)`
+- `.row.large-12.small-12:nth-child(27)`
 - `.row.large-12.small-12:nth-child(28)`
-- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(29)`
-- `.row.large-12.small-12:nth-child(31)`
+- `.mobile_no_border_color.hasContentPadding.mobile-hasContentPadding`
 - `.border-side-top.mobile_border-side-top.has-row-header:nth-child(32)`
-- `.row.large-12.small-12:nth-child(33)`
-- `.row.large-12.small-12:nth-child(34)`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
+- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(34)`
 - `.row.large-12.small-12:nth-child(36)`
 - `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(37)`
-- `.row.large-12.small-12:nth-child(38)`
-- `.row.large-12.small-12:nth-child(39)`
-- `.row.large-12.small-12:nth-child(41)`
-- `.row.large-12.small-12:nth-child(42)`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
-- `.row.large-12.small-12:nth-child(44)`
-- `.row.large-12.small-12:nth-child(46)`
-- `.row.large-12.small-12:nth-child(47)`
 - `.powered-by`
 
 ### [role="img"] elements must have an alternative text
