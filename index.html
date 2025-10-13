@@ -663,7 +663,9 @@
             // Fetch and render reports for the new date
             try {
                 const reports = await fetchReportsForDate(currentDate);
-                await renderTable(reports, currentDate);
+                // Use allReportsForDate if available to ensure all reports are passed to renderTable
+                const allReports = allReportsForDate.length > 0 ? allReportsForDate : reports;
+                await renderTable(allReports, currentDate);
             } catch (error) {
                 showError(`Feil ved lasting av rapporter: ${error.message}`);
             }
@@ -1165,7 +1167,9 @@
                         showError(`Ingen rapporter funnet for ${currentDate}.`);
                         return;
                     }
-                    await renderTable(reports, currentDate);
+                    // Use allReportsForDate if available to ensure all reports are passed to renderTable
+                    const allReports = allReportsForDate.length > 0 ? allReportsForDate : reports;
+                    await renderTable(allReports, currentDate);
                 } catch (error) {
                     showError(`Feil ved lasting av rapporter: ${error.message}`);
                     return;
@@ -1194,8 +1198,14 @@
             document.getElementById('next-day').addEventListener('click', () => navigateDay(1));
 
             document.getElementById('view-selector').addEventListener('change', async () => {
-                const reports = await fetchReportsForDate(currentDate);
-                await renderTable(reports, currentDate);
+                // Use allReportsForDate to ensure we have all reports for proper column generation
+                // Don't fetch paginated subset, use the full cached list
+                if (allReportsForDate.length > 0) {
+                    await renderTable(allReportsForDate, currentDate);
+                } else {
+                    const reports = await fetchReportsForDate(currentDate);
+                    await renderTable(reports, currentDate);
+                }
             });
 
             // Set up event listeners for the summary dialog
