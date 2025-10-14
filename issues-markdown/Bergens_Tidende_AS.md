@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2025-10-13T00:31:44.935Z
+**Timestamp:** 2025-10-14T00:26:55.635Z
 **URL:** [https://www.bt.no/#](https://www.bt.no/#)
 **Total Violations:** 5
 
@@ -36,7 +36,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
-- **Count:** 19
+- **Count:** 20
 
 #### Affected Elements:
 
@@ -50,8 +50,8 @@
 - `.kryssord > .text-container > h3`
 - `.minikryss > .text-container > h3`
 - `.ordjakten > .text-container > h3`
-- `.article-section--btmeninger-debatt > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `.article-section--btmeninger-kommentar > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="5E93Em"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="73Epk8"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `.opinion-banner-desc`
 - `#Vågen`
 - `#Finse`
@@ -59,6 +59,7 @@
 - `#Torgallmeningen`
 - `#Puddefjordsbroen`
 - `#Åsaneveien`
+- `article[data-pulse-entity-id="Ey35x3"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 
 ### Images must have alternative text
 
@@ -87,7 +88,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 59
+- **Count:** 60
 
 #### Affected Elements:
 
@@ -96,7 +97,6 @@
 - `#buy-abo-stripe-link`
 - `.collage-x3.row:nth-child(1)`
 - `.collage-x3.row:nth-child(4)`
-- `#dr-edition-teaser-pgkzlbya9 > div`
 - `._heading_1bm9r_641 > span`
 - `._preview_1bm9r_661:nth-child(1) > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._preview_1bm9r_661:nth-child(1) > ._preview-title_1bm9r_721`
@@ -119,34 +119,36 @@
 - `._preview_1bm9r_661:nth-child(10) > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._preview_1bm9r_661:nth-child(10) > ._preview-title_1bm9r_721`
 - `.vertical-x2.row:nth-child(11)`
-- `.collage-x4`
+- `.vertical-x3.row:nth-child(14)`
 - `.collage-x3.row:nth-child(16)`
 - `.hjernetrim-front-widget`
 - `.vertical-x2.row:nth-child(19)`
 - `.vertical-x3.row:nth-child(22)`
-- `.vertical-x2.row:nth-child(23)`
-- `.vertical-x4`
+- `.collage-x4`
+- `.vertical-x3.row:nth-child(25)`
 - `.vertical-x2.row:nth-child(26)`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
-- `.vertical-x3.row:nth-child(28)`
+- `.vertical-x4.row:nth-child(28)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(29)`
 - `.vertical-x2.row:nth-child(30)`
-- `.vertical-small-x2.row:nth-child(32)`
+- `.vertical-x3.row:nth-child(32)`
 - `.widget-football.regional-widget`
-- `.vertical-x2.row:nth-child(34)`
-- `.vertical-x3.row:nth-child(35)`
-- `.vertical-x2.row:nth-child(36)`
-- `.vertical-small-x2.row:nth-child(37)`
+- `.display-flex > .article__text-container`
+- `.vertical-x2.row:nth-child(35)`
+- `.vertical-x3.row:nth-child(36)`
+- `.vertical-x2.row:nth-child(37)`
 - `.vertical-x1-ad.row:nth-child(38)`
-- `.vertical-x2.row:nth-child(41)`
-- `.vertical-x3.row:nth-child(43)`
+- `.collage-x3.row:nth-child(41)`
+- `.vertical-x2.row:nth-child(43)`
 - `.opinion-banner-title`
 - `.opinion-banner-desc`
-- `.vertical-x2.row:nth-child(45)`
+- `.vertical-x3.row:nth-child(45)`
 - `.widget-webcam`
-- `.collage-x3.row:nth-child(47)`
+- `.vertical-x2.row:nth-child(47)`
 - `.vertical-x1-ad.row:nth-child(48)`
-- `.vertical-x2.row:nth-child(49)`
+- `.vertical-x4.row:nth-child(49)`
+- `.collage-x3.row:nth-child(50)`
+- `.vertical-x1-ad.row:nth-child(51)`

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Manpower AS
 
-**Timestamp:** 2025-10-13T00:42:37.101Z
+**Timestamp:** 2025-10-14T00:35:18.885Z
 **URL:** [https://www.manpower.no/nb](https://www.manpower.no/nb)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -54,28 +54,12 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.name`
-
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 6
-
-#### Affected Elements:
-
-- `img[alt="Oslo"]`
-- `img[alt="Bergen"]`
-- `img[alt="Stavanger"]`
-- `img[alt="Trondheim"]`
-- `img[alt="Kristiansand"]`
-- `img[alt="Tromsø"]`
+- `.featurette-section.white.standard:nth-child(3) > .container > .row > .col-lg-7 > .featurette-body > .name`
+- `.featurette-section.white.standard:nth-child(5) > .container > .row > .col-lg-7 > .featurette-body > .name`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

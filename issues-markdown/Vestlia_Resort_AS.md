@@ -1,8 +1,8 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2025-10-13T00:38:00.590Z
+**Timestamp:** 2025-10-14T00:33:12.085Z
 **URL:** [https://vestlia.no/#](https://vestlia.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -66,6 +66,19 @@
 #### Affected Elements:
 
 - `.awb-oc-menu-item-link`
+
+### Interactive controls must not be nested
+
+- **Impact:** serious
+- **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/nested-interactive?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#widgetContainer,button[aria-controls="radix-P0-2"]`
+- `#widgetContainer,button[aria-controls="radix-P0-3"]`
 
 ### All page content should be contained by landmarks
 

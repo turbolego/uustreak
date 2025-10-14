@@ -1,6 +1,6 @@
 # WCAG Violations Report for Utdanningsforbundet
 
-**Timestamp:** 2025-10-13T00:36:47.013Z
+**Timestamp:** 2025-10-14T00:32:02.624Z
 **URL:** [https://www.utdanningsforbundet.no/#](https://www.utdanningsforbundet.no/#)
 **Total Violations:** 8
 
@@ -89,7 +89,7 @@
 #### Affected Elements:
 
 - `#main-wrapper`
-- `#react_0HNG8RVK2LGNG > .local-navigation__wrapper__top[aria-label="Lokal navigasjon"]`
+- `#react_0HNGA3FI32PBB > .local-navigation__wrapper__top[aria-label="Lokal navigasjon"]`
 
 ### [role="img"] elements must have an alternative text
 

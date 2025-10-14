@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-10-13T00:38:40.408Z
+**Timestamp:** 2025-10-14T00:31:04.860Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 5
 
@@ -52,21 +52,19 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 22
+- **Count:** 20
 
 #### Affected Elements:
 
 - `img[alt="Sengesett -50%"]`
 - `img[alt="Dundyner -50%"]`
-- `img[alt="Sengetepper -50%"]`
-- `img[alt="Thomas hotellpute 2 for 1"]`
-- `img[alt="Laken -50%"]`
-- `img[alt="Petra dyne-/putepakke 249,-"]`
-- `img[alt="Dunputer -50%"]`
 - `img[alt="Flanell fra 249,-"]`
-- `img[alt="Krepp fra 199,-"]`
+- `img[alt="Sengetepper -50%"]`
+- `img[alt="Laken -50%"]`
+- `img[alt="Dunputer -50%"]`
+- `img[alt="Krepp fra 249,-"]`
 - `img[alt="Putevar -50%"]`
-- `div:nth-child(2) > .fi.ba.bb > .fj.fk > .cv.be > .is-draggable.bk.fl > .fn.fm.b > .fo.ho.fl:nth-child(11) > div > .bs.s.br > .fq.cs.cv > .e8.fm.a3`
+- `div:nth-child(2) > .fi.ba.bb > .fj.fk > .cv.be > .is-draggable.bk.fl > .fn.fm.b > .fo.hp.fl:nth-child(9) > div > .bs.s.br > .fq.cs.cv > .e8.fm.a3`
 - `img[alt="Toalettmapper -50%"]`
 - `img[alt="Baderomstilbehør -50%"]`
 - `img[alt="Baderomsmatter -50%"]`

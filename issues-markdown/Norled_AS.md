@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norled AS
 
-**Timestamp:** 2025-10-13T00:29:43.295Z
+**Timestamp:** 2025-10-14T00:27:38.877Z
 **URL:** [https://www.norled.no/#](https://www.norled.no/#)
 **Total Violations:** 3
 
@@ -24,12 +24,10 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT
-- **Count:** 8
+- **Count:** 6
 
 #### Affected Elements:
 
-- `.cookie-statement.cmplz-link[data-relative_url=""]`
-- `.impressum`
 - `#brxe-rlgvhk`
 - `a[href$="sok/"]`
 - `.bricks-link-wrapper[target="_blank"]:nth-child(1)`

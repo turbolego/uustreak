@@ -1,8 +1,8 @@
 # WCAG Violations Report for Mediehuset Nettavisen AS
 
-**Timestamp:** 2025-10-13T00:25:52.676Z
+**Timestamp:** 2025-10-14T00:23:47.605Z
 **URL:** [https://www.nettavisen.no/#](https://www.nettavisen.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > h1`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.background-black.brick-c-iBjjhR-hvnomK-marker-false.brick-c-iBjjhR > .brick-c-igdZZU.brick-c-bVcFwu.title_container > h3`
 
 ### Banner landmark should not be contained in another landmark
 
@@ -54,7 +66,7 @@
 
 - `#page-header`
 - `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > .nav-wrap > nav`
-- `brick-carousel-v2[data-slides="5"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `brick-carousel-v2[data-slides="6"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### All page content should be contained by landmarks
 

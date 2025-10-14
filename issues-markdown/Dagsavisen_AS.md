@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2025-10-13T00:37:17.870Z
+**Timestamp:** 2025-10-14T00:31:59.660Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 12
 
@@ -45,7 +45,7 @@
 
 #### Affected Elements:
 
-- `span[data-lab-text_size_desktop="16"] > a:nth-child(5)`
+- `a[href="mailto:dag.hoie@dagsavisen.no"]`
 
 ### Headings should not be empty
 
@@ -83,11 +83,11 @@
 
 #### Affected Elements:
 
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(18) > .tm21.t42`
-- `.t56.tm39`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(17) > .tm21.t42`
+- `.t56`
+- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(33) > .t42`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > .t40`
-- `.tm32.t42`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(37) > .tm21.t42`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(39) > .tm21.t42`
 
 ### Images must have alternative text
 
@@ -148,81 +148,83 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 72
+- **Count:** 74
 
 #### Affected Elements:
 
 - `h1`
-- `#notice-10003359 > .content > h2`
-- `time[datetime="2025-10-12T19:49:29.000Z"]`
-- `div[title="Alle løslatt etter Israel-kamp"] > h2`
-- `time[datetime="2025-10-12T19:48:09.000Z"]`
-- `#notice-10003317 > .content > h2`
-- `time[datetime="2025-10-12T18:32:06.000Z"]`
-- `div[title="Netanyahu: – Kampen ikke over"] > h2`
-- `time[datetime="2025-10-12T17:46:33.000Z"]`
-- `div[title="Støre deltar på Gaza-møte"] > h2`
-- `time[datetime="2025-10-12T17:12:58.000Z"]`
-- `div[title="Sjokolade-prisen til værs"] > h2`
-- `time[datetime="2025-10-12T15:54:45.000Z"]`
-- `div[title="Skyting på bar: Fire drept"] > h2`
-- `time[datetime="2025-10-12T13:59:29.000Z"]`
-- `#notice-10003127 > .content > h2`
-- `time[datetime="2025-10-12T13:06:26.000Z"]`
-- `#notice-10003083 > .content > h2`
-- `time[datetime="2025-10-12T12:33:00.000Z"]`
-- `div[title="Stenger vei gjennom Russland"] > h2`
-- `time[datetime="2025-10-12T11:20:01.000Z"]`
-- `#notice-10002989 > .content > h2`
-- `time[datetime="2025-10-12T10:21:45.000Z"]`
-- `div[title="Israel-kampen: Flere bøtelagt"] > h2`
-- `div[title="Israel-kampen: Flere bøtelagt"] > .meta`
-- `#notice-10002810 > .content > h2`
-- `#notice-10002810 > .content > .meta`
-- `#notice-10002801 > .content > h2`
-- `#notice-10002801 > .content > .meta`
-- `#notice-10002800 > .content > h2`
-- `#notice-10002800 > .content > .meta`
-- `#notice-10002795 > .content > h2`
-- `#notice-10002795 > .content > .meta`
-- `div[title="Banestormer lagt i bakken"] > h2`
-- `time[datetime="2025-10-11T16:46:38.000Z"]`
-- `div[title="Gjengleder pågrepet"] > h2`
-- `time[datetime="2025-10-11T15:56:08.000Z"]`
-- `#notice-10002446 > .content > h2`
-- `time[datetime="2025-10-11T15:13:15.000Z"]`
-- `#notice-10002395 > .content > h2`
-- `time[datetime="2025-10-11T14:42:14.000Z"]`
+- `div[title="SV dropper ultimatum"] > h2`
+- `time[datetime="2025-10-13T20:01:26.000Z"]`
+- `div[title="Trump: – Hva skjedde, Norge?"] > h2`
+- `time[datetime="2025-10-13T19:06:06.000Z"]`
+- `#notice-10005470 > .content > h2`
+- `time[datetime="2025-10-13T19:05:30.000Z"]`
+- `div[title="Trump skal møte Zelenskyj"] > h2`
+- `time[datetime="2025-10-13T16:58:08.000Z"]`
+- `div[title="Venezuela stengte ambassaden"] > h2`
+- `time[datetime="2025-10-13T17:20:39.000Z"]`
+- `#notice-10005409 > .content > h2`
+- `time[datetime="2025-10-13T16:51:12.000Z"]`
+- `#notice-10005408 > .content > h2`
+- `time[datetime="2025-10-13T16:49:45.000Z"]`
+- `div[title="Vil skjerpe kniv-straff"] > h2`
+- `time[datetime="2025-10-13T16:47:27.000Z"]`
+- `div[title="Lover mer støtte til Ukraina"] > h2`
+- `time[datetime="2025-10-13T16:43:52.000Z"]`
+- `div[title="Høyesterett skjerper straff"] > h2`
+- `time[datetime="2025-10-13T16:41:37.000Z"]`
+- `div[title="Veitunnel nattestengt i to år"] > h2`
+- `time[datetime="2025-10-13T16:39:58.000Z"]`
+- `#notice-10005298 > .content > h2`
+- `time[datetime="2025-10-13T14:41:17.000Z"]`
+- `div[title="Fem drept i Gaza-protest"] > h2`
+- `time[datetime="2025-10-13T12:20:06.000Z"]`
+- `#notice-10004727 > .content > h2`
+- `time[datetime="2025-10-13T11:53:00.000Z"]`
+- `#notice-10004619 > .content > h2`
+- `time[datetime="2025-10-13T11:32:33.000Z"]`
+- `div[title="Død person funnet i båt "] > h2`
+- `time[datetime="2025-10-13T11:22:32.000Z"]`
+- `#notice-10004430 > .content > h2`
+- `time[datetime="2025-10-13T10:49:20.000Z"]`
+- `div[title="Minst 20 skadet i togkollisjon"] > h2`
+- `time[datetime="2025-10-13T10:29:28.000Z"]`
+- `#notice-10004287 > .content > h2`
+- `time[datetime="2025-10-13T10:22:14.000Z"]`
+- `div[title="Netanyahu avslår Gaza-toppmøte"] > h2`
+- `time[datetime="2025-10-13T11:02:06.000Z"]`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
-- `.row.large-12.small-12:nth-child(6)`
 - `#offer_a8dfe1abe190392acdc8-0, div[ng-show="!terminalError"]`
+- `.hasContentPadding.mobile-hasContentPadding.bg-tertiary:nth-child(7)`
 - `.row.large-12.small-12:nth-child(8)`
 - `.row.large-12.small-12:nth-child(9)`
 - `.row.large-12.small-12:nth-child(11)`
-- `.row.large-12.small-12:nth-child(12)`
-- `.row.large-12.small-12:nth-child(13)`
-- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(14)`
-- `.row.large-12.small-12:nth-child(16)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(12)`
+- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(13)`
+- `.row.large-12.small-12:nth-child(14)`
 - `.articlescroller-header`
 - `.count_4`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(18)`
-- `.t56.tm39`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(17)`
+- `.t56`
 - `.count_1`
+- `.row.large-12.small-12:nth-child(19)`
 - `.row.large-12.small-12:nth-child(21)`
-- `.row.large-12.small-12:nth-child(22)`
-- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(23)`
+- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(22)`
+- `.row.large-12.small-12:nth-child(23)`
 - `.row.large-12.small-12:nth-child(24)`
 - `.row.large-12.small-12:nth-child(26)`
 - `.row.large-12.small-12:nth-child(27)`
-- `.row.large-12.small-12:nth-child(28)`
 - `.mobile_no_border_color.hasContentPadding.mobile-hasContentPadding`
-- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(32)`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
-- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(34)`
+- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(31)`
+- `.row.large-12.small-12:nth-child(32)`
+- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(33)`
+- `.row.large-12.small-12:nth-child(34)`
 - `.row.large-12.small-12:nth-child(36)`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(37)`
+- `.row.large-12.small-12:nth-child(37)`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(39)`
 - `.powered-by`
 
 ### [role="img"] elements must have an alternative text

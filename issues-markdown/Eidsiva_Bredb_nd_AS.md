@@ -1,24 +1,10 @@
 # WCAG Violations Report for Eidsiva Bredbånd AS
 
-**Timestamp:** 2025-10-13T00:40:55.081Z
+**Timestamp:** 2025-10-14T00:35:36.015Z
 **URL:** [https://www.eidsiva.no/#](https://www.eidsiva.no/#)
-**Total Violations:** 6
+**Total Violations:** 4
 
 ## Violation Details
-
-### Form elements should have a visible label
-
-- **Impact:** serious
-- **Description:** Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/label-title-only?application=playwright
-- **Tags:** cat.forms, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `#cookie_cat_functional`
-- `#cookie_cat_statistic`
-- `#cookie_cat_marketing`
 
 ### Main landmark should not be contained in another landmark
 
@@ -31,18 +17,6 @@
 #### Affected Elements:
 
 - `#pdCaKxMpkJD > main`
-
-### Document should not have more than one banner landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the document has at most one banner landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-banner?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#coiOverlay`
 
 ### Document should not have more than one main landmark
 
@@ -62,11 +36,10 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#coiOverlay`
 - `#main`
 
 ### Elements should not have tabindex greater than zero

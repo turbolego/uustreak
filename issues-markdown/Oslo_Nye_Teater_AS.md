@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2025-10-13T00:31:25.610Z
+**Timestamp:** 2025-10-14T00:29:16.305Z
 **URL:** [https://oslonye.no/#](https://oslonye.no/#)
 **Total Violations:** 5
 
@@ -54,9 +54,9 @@
 #### Affected Elements:
 
 - `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-left.bg-none.block > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-left.hovedscenen.bg-none > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.bg-none.block > .les-mer-link`
-- `.large-4.cpt.medium-6:nth-child(1) > .alignment-top.bg-none.block > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-left.hovedscenen.bg-none > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .alignment-top.bg-none.block > .les-mer-link`
 - `.large-4.cpt.medium-6:nth-child(3) > .alignment-top.bg-none.block > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-left.hovedscenen.bg-none > .les-mer-link`
 - `.alignment-top.hovedscenen.bg-none > .les-mer-link`
@@ -83,7 +83,7 @@
 - `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target="_blank"] > .advertise-cover- > .border-orange.advertise.text-center > .text-yellow.heading-small.content-holder > .title`
 - `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target="_blank"] > .advertise-cover- > .border-orange.advertise.text-center > .text-yellow.heading-small.content-holder > .short-description`
 - `.forestillinger-blocks-panel:nth-child(5)`
-- `.large-4.cpt.medium-6:nth-child(1)`
+- `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1)`
 - `.large-4.medium-6.cell:nth-child(2) > a[target="_blank"] > .advertise-cover-rounded > .rounded.border-yellow.advertise > .text-green.heading-small.content-holder > .title`
 - `.large-4.cpt.medium-6:nth-child(3)`
 - `.forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target="_blank"] > .advertise-cover- > .border-orange.advertise.text-center > .text-yellow.heading-small.content-holder > .title`

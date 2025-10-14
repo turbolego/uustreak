@@ -1,8 +1,8 @@
 # WCAG Violations Report for Tromsø kommune
 
-**Timestamp:** 2025-10-13T00:33:27.218Z
+**Timestamp:** 2025-10-14T00:28:38.401Z
 **URL:** [https://tromso.kommune.no/#](https://tromso.kommune.no/#)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -29,18 +29,6 @@
 #### Affected Elements:
 
 - `header`
-
-### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
-
-- **Impact:** serious
-- **Description:** Ensure that lists are structured correctly
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/list?application=playwright
-- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.splide__list`
 
 ### All page content should be contained by landmarks
 

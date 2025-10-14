@@ -1,22 +1,10 @@
 # WCAG Violations Report for Aleris Helse AS
 
-**Timestamp:** 2025-10-13T00:27:26.902Z
+**Timestamp:** 2025-10-14T00:22:40.166Z
 **URL:** [https://www.aleris.no/](https://www.aleris.no/)
-**Total Violations:** 7
+**Total Violations:** 5
 
 ## Violation Details
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.styles_header__PJlRw > .styles_buttonAnchor__jUOhi.a`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -67,23 +55,6 @@
 
 - `.styles_header__bb1NW`
 
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT
-- **Count:** 6
-
-#### Affected Elements:
-
-- `.mAuto.tg50.dg33:nth-child(1) > .styles_card__RkDWu.turquoise > .styles_cardLink__LfDDi`
-- `.tAuto.mAuto.dg33 > .styles_card__RkDWu.turquoise > .styles_cardLink__LfDDi`
-- `.mAuto.tg50.dg33:nth-child(3) > .styles_card__RkDWu.turquoise > .styles_cardLink__LfDDi`
-- `.mg100.tg50.dg33:nth-child(1) > .white.styles_card__RkDWu > .styles_cardLink__LfDDi`
-- `.mg100.tg50.dg33:nth-child(2) > .white.styles_card__RkDWu > .styles_cardLink__LfDDi`
-- `.styles_cardLink__LfDDi[href$="priser/"]`
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
@@ -94,4 +65,4 @@
 
 #### Affected Elements:
 
-- `.styles_popupContent__r3fDu > .content-area`
+- `.styles_linkList__6Ayn5`

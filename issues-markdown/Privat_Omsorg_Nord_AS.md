@@ -1,6 +1,6 @@
 # WCAG Violations Report for Privat Omsorg Nord AS
 
-**Timestamp:** 2025-10-13T00:32:45.269Z
+**Timestamp:** 2025-10-14T00:30:33.214Z
 **URL:** [https://privat-omsorg.no/#](https://privat-omsorg.no/#)
 **Total Violations:** 3
 
