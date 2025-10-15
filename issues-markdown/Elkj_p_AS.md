@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2025-10-14T00:20:49.951Z
+**Timestamp:** 2025-10-15T00:24:05.437Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
 **Total Violations:** 8
 
@@ -36,11 +36,15 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
-- **Count:** 2
+- **Count:** 6
 
 #### Affected Elements:
 
 - `.top-header-block > p`
+- `.countdown-days`
+- `.countdown-hours`
+- `.countdown-minutes`
+- `.countdown-seconds`
 - `a[data-testid="b2c-page"]`
 
 ### Document should not have more than one banner landmark
@@ -89,8 +93,8 @@
 
 #### Affected Elements:
 
-- `#header-actions > button > .xl\:flex-col.text-\(--header-text\).px-4`
-- `button[data-testid="header-login-link"] > .xl\:flex-col.text-\(--header-text\).px-4`
+- `button > .xl\:flex-col.text-\(--header-text\).px-4`
+- `li[data-testid="header-login-link"]`
 - `a[data-testid="cart"] > .xl\:flex-col.text-\(--header-text\).px-4`
 
 ### All page content should be contained by landmarks

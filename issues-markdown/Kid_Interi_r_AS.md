@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-10-14T00:31:04.860Z
+**Timestamp:** 2025-10-15T00:34:27.535Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 5
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#kindly-chat-api > div,.sc-fszimp`
+- `#kindly-chat-api > div,.sc-koBvLg`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -91,4 +91,4 @@
 - `.dq`
 - `.tf-header-slider`
 - `.tf-sidebar`
-- `#kindly-chat-api > div,.sc-pYNGo`
+- `#kindly-chat-api > div,.sc-dNFkOE`

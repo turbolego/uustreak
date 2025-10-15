@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2025-10-14T00:24:43.278Z
+**Timestamp:** 2025-10-15T00:25:11.785Z
 **URL:** [https://www.nille.no/#](https://www.nille.no/#)
 **Total Violations:** 5
 
@@ -54,7 +54,7 @@
 
 - `a[href$="halloween/"][aria-label=""][title=""]`
 - `a[href$="kostymer/"][aria-label=""][title=""]`
-- `a[href$="soverom/"][aria-label=""][title=""]`
+- `a[href$="soverom/"]`
 - `div[data-swiper-slide-index="3"] > a[aria-label=""][title=""]`
 
 ### All page content should be contained by landmarks
