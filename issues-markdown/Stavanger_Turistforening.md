@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2025-10-15T00:24:10.165Z
+**Timestamp:** 2025-10-16T00:25:10.833Z
 **URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
 **Total Violations:** 10
 
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-504685"]`
-- `button[aria-controls="modal-570494"]`
-- `button[aria-controls="modal-563519"]`
-- `button[aria-controls="modal-503360"]`
-- `button[aria-controls="modal-506722"]`
-- `button[aria-controls="modal-566830"]`
 - `button[aria-controls="modal-568735"]`
 - `button[aria-controls="modal-561455"]`
+- `button[aria-controls="modal-562483"]`
+- `button[aria-controls="modal-562107"]`
+- `button[aria-controls="modal-561512"]`
+- `button[aria-controls="modal-507295"]`
+- `button[aria-controls="modal-504924"]`
+- `button[aria-controls="modal-496335"]`
 
 ### Buttons must have discernible text
 
@@ -93,7 +93,7 @@
 #### Affected Elements:
 
 - `.w-auto > picture > .object-center.object-cover`
-- `#react_0HNG4HHHTSM9H > .my-10 > .md\:grid-cols-4.mb-16.gap-7 > .group.relative:nth-child(3) > div > .md\:flex-col.space-x-4.md\:space-x-0 > .w-2\/5.md\:mb-3.md\:w-full > .overflow-hidden.rounded-lg > picture > .t-\[10px\].md\:rounded-\[10px\].md\:group-hover\:scale-110`
+- `#react_0HNG4HHHVNJI4 > .my-10 > .md\:grid-cols-4.mb-16.gap-7 > .group.relative:nth-child(3) > div > .md\:flex-col.space-x-4.md\:space-x-0 > .w-2\/5.md\:mb-3.md\:w-full > .overflow-hidden.rounded-lg > picture > .t-\[10px\].md\:rounded-\[10px\].md\:group-hover\:scale-110`
 - `div:nth-child(1) > .bg-beige-50.bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `div:nth-child(2) > .bg-beige-50.bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `.object-center[height="264"][width="600"]`

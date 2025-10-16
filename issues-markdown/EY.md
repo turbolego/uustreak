@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2025-10-15T00:38:33.537Z
+**Timestamp:** 2025-10-16T00:40:03.628Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 6
 
@@ -87,7 +87,7 @@
 - `.cmp-logo__link > .sr-only`
 - `.myey-login-url`
 - `.featured_av-caption-wrapper`
-- `#image-render-f04edc067a > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
+- `img[title="Stortinget i Oslo, Karl Johan"]`
 - `.betterQuestionCards-header`
 - `.visible.betterQuestionCards-card-wrapper.loaded:nth-child(1) > .betterQuestionCards-card-dragger[data-analytics-action-name="Swipe"][data-analytics-swipe=""] > .betterQuestionCards-card.article[aria-hidden="false"]`
 - `.visible.betterQuestionCards-card-wrapper.loaded:nth-child(2) > .betterQuestionCards-card-dragger[data-analytics-action-name="Swipe"][data-analytics-swipe=""] > .betterQuestionCards-card.article[aria-hidden="false"]`

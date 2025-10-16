@@ -1,10 +1,22 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2025-10-15T00:31:15.482Z
+**Timestamp:** 2025-10-16T00:32:38.497Z
 **URL:** [https://www.nordlys.no/#](https://www.nordlys.no/#)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `brick-carousel-v2[data-slides="5"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Ensure elements marked as presentational are consistently ignored
 

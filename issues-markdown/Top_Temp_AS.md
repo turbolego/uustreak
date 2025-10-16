@@ -1,6 +1,6 @@
 # WCAG Violations Report for Top Temp AS
 
-**Timestamp:** 2025-10-15T00:31:17.815Z
+**Timestamp:** 2025-10-16T00:32:19.913Z
 **URL:** [https://www.toptemp.no/#](https://www.toptemp.no/#)
 **Total Violations:** 6
 
@@ -72,7 +72,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 18
+- **Count:** 19
 
 #### Affected Elements:
 
@@ -80,17 +80,18 @@
 - `.hs-cta-embed-117543557091 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .interactive-button-wrapper`
 - `.hs-cta-embed-118207266247 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .interactive-button-wrapper`
 - `.cell_17288948801924-vertical-alignment`
+- `.row-number-9`
 - `.hs-cta-embed-118246171351 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .body-wrapper`
 - `.hs-cta-embed-118357267693 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .body-wrapper`
 - `.hs-cta-embed-118357267939 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .body-wrapper`
 - `.hs-cta-embed-118358485483 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .body-wrapper`
 - `.hs-cta-embed-118359585984 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .body-wrapper`
 - `.hs-cta-embed-118359552209 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .body-wrapper`
-- `.row-number-17`
+- `.row-number-18`
 - `.simple-heading`
-- `.row-number-21`
 - `.row-number-22`
+- `.row-number-23`
 - `.cell_1684744938200-vertical-alignment`
-- `.row-number-26`
-- `.row-number-28`
-- `.row-number-31`
+- `.row-number-27`
+- `.row-number-29`
+- `.row-number-32`

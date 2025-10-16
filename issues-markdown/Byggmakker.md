@@ -1,6 +1,6 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2025-10-15T00:32:14.458Z
+**Timestamp:** 2025-10-16T00:33:39.466Z
 **URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
 **Total Violations:** 7
 
@@ -221,7 +221,7 @@
 - `.product-card__product-price[data-product_id="7070838006102"][data-price-history="179"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
 - `.product-card__product-price[data-product_id="7070838006102"][data-price-history="179"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
 - `.product-card__product-price[data-product_id="7070838006102"][data-price-history="179"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.campaign-product-list__container:nth-child(9) > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
+- `.campaign-product-list__container:nth-child(10) > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
 - `.campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card[data-product_id="4892210202291"][data-price-history="1209"] > .product-card__image-container > div:nth-child(1) > strong`
 - `.campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="4892210202291"][data-price-history="1209"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
 - `.campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="4892210202291"][data-price-history="1209"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
@@ -235,15 +235,16 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 5
+- **Count:** 6
 
 #### Affected Elements:
 
+- `.hero-banner:nth-child(4) > .responsive-hero.responsive-hero--left > .responsive-hero__content > h3`
 - `#vi_hjelper_deg > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(1) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
 - `#vi_hjelper_deg > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(2) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
-- `#ia > .column-layout__container > .column-layout__title`
-- `#ia > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(1) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
-- `#ia > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(2) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
+- `.column-layout:nth-child(13) > .column-layout__container > .column-layout__title`
+- `.column-layout:nth-child(13) > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(1) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
+- `.column-layout:nth-child(13) > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(2) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
 
 ### Links must have discernible text
 

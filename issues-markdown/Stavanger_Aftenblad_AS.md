@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2025-10-15T00:36:42.980Z
+**Timestamp:** 2025-10-16T00:37:44.934Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
 **Total Violations:** 7
 
@@ -93,7 +93,7 @@
 #### Affected Elements:
 
 - `.sa-podcast-desktop-ad`
-- `._ethics_logos_15v7x_708 > a[target="_blank"]`
+- `._ethics_logos_udtfw_708 > a[target="_blank"]`
 
 ### All page content should be contained by landmarks
 
@@ -101,7 +101,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 95
+- **Count:** 81
 
 #### Affected Elements:
 
@@ -109,96 +109,82 @@
 - `#buy-abo-stripe-text`
 - `#buy-abo-stripe-link`
 - `.collage-x3.row:nth-child(1)`
-- `.collage-x3.row:nth-child(3)`
-- `._content_1bm9r_637 > ._heading_1bm9r_641 > span`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(2) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(2) > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(6) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(6) > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(7) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(7) > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(8) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(8) > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > ._preview-title_1bm9r_721`
+- `article[data-pulse-entity-id="W0Qz8G"]`
+- `article[data-pulse-entity-id="Ey320j"] > .article__teaser-container`
+- `article[data-pulse-entity-id="0VM8XG"] > .article__teaser-container`
+- `article[data-pulse-entity-id="5EPKaW"] > .article__teaser-container`
+- `._heading_1bm9r_641 > span`
+- `._preview_1bm9r_661:nth-child(1) > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(1) > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(2) > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(2) > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(3) > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(3) > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(4) > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(4) > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(5) > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(5) > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(6) > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(6) > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(7) > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(7) > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(8) > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(8) > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(9) > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(9) > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(10) > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(10) > ._preview-title_1bm9r_721`
+- `.vertical-x2.row:nth-child(11)`
 - `.collage-x4`
-- `.vertical-x3.row:nth-child(13)`
-- `.vertical-x2.row:nth-child(17)`
-- `.vertical-x4.row:nth-child(18)`
-- `.collage-x3.row:nth-child(20)`
+- `.collage-x3.row:nth-child(17)`
+- `.vertical-x2.row:nth-child(18)`
+- `.vertical-x3.row:nth-child(20)`
 - `.hjernetrim-front-widget`
-- `a > ._heading_1bm9r_641 > span`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(2) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(2) > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(6) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(6) > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(7) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(7) > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(8) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(8) > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > ._preview-title_1bm9r_721`
-- `.vertical-x2.row:nth-child(28)`
-- `.vertical-x3.row:nth-child(30)`
+- `.collage-x3.row:nth-child(24)`
+- `.vertical-x2.row:nth-child(26)`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
 - `.podcast-spons`
-- `.collage-x3.row:nth-child(32)`
+- `.vertical-x3.row:nth-child(28)`
 - `.widget-football.regional-widget`
-- `.vertical-x2.row:nth-child(34)`
+- `.vertical-x2.row:nth-child(30)`
 - `#oilwidget`
-- `.vertical-x3.row:nth-child(36)`
-- `.vertical-x2.row:nth-child(39)`
+- `.vertical-x4.row:nth-child(32)`
+- `.vertical-x2.row:nth-child(35)`
 - `.widget-bolig.regional-widget`
-- `.vertical-small-x2.row:nth-child(41)`
-- `.vertical-x3.row:nth-child(42)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(44)`
-- `.collage-x3.row:nth-child(45)`
-- `.vertical-x4.row:nth-child(47)`
-- `.vertical-x3.row:nth-child(48)`
-- `.vertical-small-x2.row:nth-child(49)`
-- `.vertical-x1-ad.row:nth-child(50)`
+- `.vertical-x3.row:nth-child(37)`
+- `.vertical-x2.row:nth-child(38)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(40)`
+- `.vertical-x2.row:nth-child(41)`
+- `.vertical-x3.row:nth-child(43)`
+- `.vertical-small-x2.row:nth-child(44)`
+- `.vertical-x2.row:nth-child(45)`
+- `.vertical-x1-ad.row:nth-child(46)`
+- `.vertical-x3.row:nth-child(47)`
+- `.vertical-x2.row:nth-child(48)`
+- `.vertical-x1-ad.row:nth-child(49)`
+- `.vertical-x4.row:nth-child(50)`
 - `.vertical-x2.row:nth-child(51)`
 - `.vertical-x3.row:nth-child(52)`
-- `.vertical-x1-ad.row:nth-child(53)`
-- `.collage-x3.row:nth-child(54)`
-- `.vertical-x3.row:nth-child(55)`
-- `.vertical-x2.row:nth-child(56)`
-- `.vertical-x3.row:nth-child(57)`
-- `.collage-x3.row:nth-child(58)`
-- `.vertical-x2.row:nth-child(59)`
-- `.vertical-x3.row:nth-child(60)`
-- `.vertical-x2.row:nth-child(62)`
+- `.vertical-x2.row:nth-child(53)`
+- `.vertical-small-x2.row:nth-child(54)`
+- `.vertical-x2.row:nth-child(55)`
+- `.collage-x3.row:nth-child(56)`
+- `.display-flex > .article__text-container`
 - `#webcam-frontpage`
-- `.vertical-x4.row:nth-child(64)`
-- `.collage-x3.row:nth-child(65)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(66)`
+- `.collage-x3.row:nth-child(60)`
+- `.vertical-x2.row:nth-child(61)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(62)`
+- `.vertical-x3.row:nth-child(64)`
+- `.vertical-x2.row:nth-child(65)`
+- `.vertical-x4.row:nth-child(66)`
+- `.vertical-x1-ad.row:nth-child(67)`
 - `.vertical-x2.row:nth-child(68)`
-- `.collage-x3.row:nth-child(69)`
-- `.vertical-x2.row:nth-child(70)`
-- `.vertical-x1-ad.row:nth-child(71)`
+- `.vertical-x3.row:nth-child(69)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(70)`
+- `.collage-x3.row:nth-child(71)`
 - `.vertical-x3.row:nth-child(72)`
 
 ### Scrollable region must have keyboard access

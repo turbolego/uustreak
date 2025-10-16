@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2025-10-15T00:25:10.055Z
+**Timestamp:** 2025-10-16T00:26:09.795Z
 **URL:** [https://bymuseet.no/#](https://bymuseet.no/#)
 **Total Violations:** 7
 
@@ -21,12 +21,12 @@
 - `.event.load-more__item.col-lg-3:nth-child(1) > .event-cover > .event-date`
 - `.event.load-more__item.col-lg-3:nth-child(2) > .event-cover > .location > span`
 - `.event.load-more__item.col-lg-3:nth-child(2) > .event-cover > .event-date`
-- `.event.load-more__item.col-lg-3:nth-child(3) > .event-cover > .location > span`
+- `.event.load-more__item.col-lg-3:nth-child(3) > .event-cover > .location > span:nth-child(1)`
+- `.event.load-more__item.col-lg-3:nth-child(3) > .event-cover > .location > span:nth-child(2)`
 - `.event.load-more__item.col-lg-3:nth-child(3) > .event-cover > .event-date`
 - `.event.load-more__item.col-lg-3:nth-child(4) > .event-cover > .location > span`
 - `.event.load-more__item.col-lg-3:nth-child(4) > .event-cover > .event-date`
-- `.event.load-more__item.col-lg-3:nth-child(5) > .event-cover > .location > span:nth-child(1)`
-- `.event.load-more__item.col-lg-3:nth-child(5) > .event-cover > .location > span:nth-child(2)`
+- `.event.load-more__item.col-lg-3:nth-child(5) > .event-cover > .location > span`
 - `.event.load-more__item.col-lg-3:nth-child(5) > .event-cover > .event-date`
 - `.event.load-more__item.col-lg-3:nth-child(6) > .event-cover > .location > span`
 - `.event.load-more__item.col-lg-3:nth-child(6) > .event-cover > .event-date`

@@ -1,10 +1,22 @@
 # WCAG Violations Report for Østlendingen AS
 
-**Timestamp:** 2025-10-15T00:38:16.584Z
+**Timestamp:** 2025-10-16T00:39:18.799Z
 **URL:** [https://www.ostlendingen.no/#](https://www.ostlendingen.no/#)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `brick-carousel-v2[data-slides="7"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Ensure elements marked as presentational are consistently ignored
 

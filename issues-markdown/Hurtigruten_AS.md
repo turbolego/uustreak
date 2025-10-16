@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hurtigruten AS
 
-**Timestamp:** 2025-10-15T00:31:28.572Z
+**Timestamp:** 2025-10-16T00:32:31.433Z
 **URL:** [https://www.hurtigruten.com/nb-no](https://www.hurtigruten.com/nb-no)
 **Total Violations:** 6
 
@@ -72,8 +72,8 @@
 
 - `.promoStyles_lgView__S_OoW > span`
 - `.promoStyles_lgView__S_OoW > .styles_linkButton__eZWNK[rel=""][target="_self"] > .styles_btnInner__olpKp > .styles_btnText__tEvAX`
-- `.styles_newsLetterContainer__oNPsL > .styles_wrapper__7DGG5.no-width-control > .styles_mb-xl__NcBm1`
-- `.styles_newsLetterContainer__oNPsL > .styles_wrapper__7DGG5.no-width-control > .styles_mb-2xl__0JSb2`
+- `.styles_newsLetterContainer__oNPsL > .styles_wrapper__7DGG5.no-width-control > div > .styles_mb-xl__NcBm1`
+- `.styles_newsLetterContainer__oNPsL > .styles_wrapper__7DGG5.no-width-control > div > .styles_mb-2xl__0JSb2`
 - `a[href$="nyhetsbrev"] > .styles_btnInner__olpKp > .styles_btnText__tEvAX`
 
 ### Select element must have an accessible name
