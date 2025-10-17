@@ -295,7 +295,7 @@
         .footer {
             grid-row: 3;
             background: white;
-            padding: 1rem;
+            padding: 0.5rem;
             box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
             display: grid;
             grid-template-columns: auto 1fr;
@@ -444,10 +444,56 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             text-align: center;
             z-index: 200;
+            min-width: 300px;
         }
 
         .loading-message.hidden {
             display: none;
+        }
+
+        .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #2196F3;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 1rem auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loading-progress {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .loading-bar-container {
+            width: 100%;
+            height: 8px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+
+        .loading-bar {
+            height: 100%;
+            background-color: #2196F3;
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .loading-percentage {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2196F3;
+            margin-top: 0.5rem;
         }
     </style>
 </head>
@@ -533,7 +579,12 @@
 
     <div class="loading-message" id="loadingMessage">
         <h2>Loading data...</h2>
-        <p>Please wait while we load the reports.</p>
+        <div class="loading-spinner"></div>
+        <div class="loading-bar-container">
+            <div class="loading-bar" id="loadingBar"></div>
+        </div>
+        <div class="loading-percentage" id="loadingPercentage">0%</div>
+        <div class="loading-progress" id="loadingProgress">Preparing to load reports...</div>
     </div>
 
     <script>
@@ -753,6 +804,9 @@
 
             for (let i = 0; i < datesToLoad.length; i++) {
                 const date = datesToLoad[i];
+                const progress = Math.round(((i + 1) / datesToLoad.length) * 100);
+                updateLoadingProgress(progress, `Loading ${i + 1} of ${datesToLoad.length} dates (${date})...`);
+                
                 try {
                     await loadDataForDate(date);
                 } catch (error) {
@@ -763,6 +817,7 @@
             console.log(`Loaded data for ${allProjectsData.size} dates and ${allProjects.size} projects`);
             
             // Calculate first values for each project
+            updateLoadingProgress(100, 'Finalizing data...');
             calculateProjectFirstValues();
             
             showLoadingMessage(false);
@@ -1738,8 +1793,27 @@
             const loadingMsg = document.getElementById('loadingMessage');
             if (show) {
                 loadingMsg.classList.remove('hidden');
+                updateLoadingProgress(0, 'Preparing to load reports...');
             } else {
                 loadingMsg.classList.add('hidden');
+            }
+        }
+
+        function updateLoadingProgress(percentage, message) {
+            const loadingBar = document.getElementById('loadingBar');
+            const loadingPercentage = document.getElementById('loadingPercentage');
+            const loadingProgress = document.getElementById('loadingProgress');
+            
+            if (loadingBar) {
+                loadingBar.style.width = `${percentage}%`;
+            }
+            
+            if (loadingPercentage) {
+                loadingPercentage.textContent = `${percentage}%`;
+            }
+            
+            if (loadingProgress && message) {
+                loadingProgress.textContent = message;
             }
         }
 
