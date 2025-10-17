@@ -1,6 +1,6 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2025-10-16T00:31:57.894Z
+**Timestamp:** 2025-10-17T00:29:41.136Z
 **URL:** [https://www.bestwestern.no/#](https://www.bestwestern.no/#)
 **Total Violations:** 5
 
@@ -50,7 +50,7 @@
 - `img[alt="Hundevennlige hoteller"]`
 - `img[alt="Hotell utover det vanlige"]`
 - `img[alt="Unike konferanselokaler"]`
-- `img[alt="Best Breakfast"]`
+- `img[alt="Long Stay-hoteller"]`
 - `img[alt="Hotellrestauranter"]`
 - `img[alt="Spahoteller"]`
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fevik skole
 
-**Timestamp:** 2025-10-16T00:27:07.089Z
+**Timestamp:** 2025-10-17T00:23:28.968Z
 **URL:** [https://www.grimstad.kommune.no/tjenester/barn-unge-og-familie/skole/skoler-i-grimstad/fevik-skole/#](https://www.grimstad.kommune.no/tjenester/barn-unge-og-familie/skole/skoler-i-grimstad/fevik-skole/#)
 **Total Violations:** 3
 
@@ -36,8 +36,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `.global-top-container`
 - `.fantDuLabel`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordre Follo kommune
 
-**Timestamp:** 2025-10-16T00:27:21.997Z
+**Timestamp:** 2025-10-17T00:24:07.332Z
 **URL:** [https://www.nordrefollo.kommune.no/#](https://www.nordrefollo.kommune.no/#)
 **Total Violations:** 2
 

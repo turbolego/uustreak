@@ -1,6 +1,6 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2025-10-16T00:33:39.466Z
+**Timestamp:** 2025-10-17T00:31:22.993Z
 **URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
 **Total Violations:** 7
 
@@ -240,11 +240,11 @@
 #### Affected Elements:
 
 - `.hero-banner:nth-child(4) > .responsive-hero.responsive-hero--left > .responsive-hero__content > h3`
-- `#vi_hjelper_deg > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(1) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
-- `#vi_hjelper_deg > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(2) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
+- `#\36 L0V8e5iF05SuPKt0kOrPq-title`
+- `#\34 NFhlgEibxwQw7TMY4OKLp-title`
 - `.column-layout:nth-child(13) > .column-layout__container > .column-layout__title`
-- `.column-layout:nth-child(13) > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(1) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
-- `.column-layout:nth-child(13) > .column-layout__container > .column-layout__2-columns.column-layout__grid > .column-layout__item:nth-child(2) > .call-to-action--hasImage.call-to-action > .call-to-action--hasImage__title.call-to-action`
+- `#\34 XAMjmtbFJouRy2Y2HAtPH-title`
+- `#\35 jEmf9y6skVo2VFSeLq9gG-title`
 
 ### Links must have discernible text
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Redd Barna
 
-**Timestamp:** 2025-10-16T00:32:29.119Z
+**Timestamp:** 2025-10-17T00:29:14.603Z
 **URL:** [https://www.reddbarna.no/#](https://www.reddbarna.no/#)
 **Total Violations:** 3
 

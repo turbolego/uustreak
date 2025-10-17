@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-10-16T00:35:32.722Z
+**Timestamp:** 2025-10-17T00:31:43.016Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 5
 
@@ -24,10 +24,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
-- **Count:** 5
+- **Count:** 6
 
 #### Affected Elements:
 
+- `.en > span`
 - `.review-block.article.review:nth-child(1) > .tf-date`
 - `.review-block.article.review:nth-child(2) > .tf-date`
 - `.review-block.article.review:nth-child(3) > .tf-date`
@@ -52,7 +53,7 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 20
+- **Count:** 28
 
 #### Affected Elements:
 
@@ -64,7 +65,7 @@
 - `img[alt="Dunputer -50%"]`
 - `img[alt="Krepp fra 249,-"]`
 - `img[alt="Putevar -50%"]`
-- `div:nth-child(2) > .fi.ba.bb > .fj.fk > .cv.be > .is-draggable.bk.fl > .fn.fm.b > .fo.hp.fl:nth-child(9) > div > .bs.s.br > .fq.cs.cv > .e8.fm.a3`
+- `div:nth-child(2) > .fs.ba.bb > .ft.fu > .cv.be > .is-draggable.bk.fv > .fx.fw.b > .fy.hx.fv:nth-child(9) > div > .bs.s.br > .g0.cs.cv > .e8.fw.a3`
 - `img[alt="Toalettmapper -50%"]`
 - `img[alt="Baderomstilbehør -50%"]`
 - `img[alt="Baderomsmatter -50%"]`
@@ -76,6 +77,14 @@
 - `img[alt="Therapie velværeserie -40%"]`
 - `img[alt="Skittentøyskurver -50%"]`
 - `img[alt="Dusjforheng -50%"]`
+- `img[alt="Julesengetøy"]`
+- `img[alt="Juleputer"]`
+- `img[alt="Adventsbelysning"]`
+- `img[alt="Julelykter & lys"]`
+- `img[alt="Julegaveinnpakning"]`
+- `img[alt="Julepynt"]`
+- `img[alt="Julestrømper"]`
+- `img[alt="Adventskalender"]`
 
 ### All page content should be contained by landmarks
 
@@ -83,12 +92,13 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 5
+- **Count:** 6
 
 #### Affected Elements:
 
 - `a[aria-label="Gå til startside"]`
 - `.dq`
+- `.a > div:nth-child(4)`
 - `.tf-header-slider`
 - `.tf-sidebar`
 - `#kindly-chat-api > div,.sc-dNFkOE`

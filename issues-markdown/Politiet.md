@@ -1,10 +1,22 @@
 # WCAG Violations Report for Politiet
 
-**Timestamp:** 2025-10-16T00:31:47.535Z
+**Timestamp:** 2025-10-17T00:28:30.138Z
 **URL:** [https://www.politiet.no/](https://www.politiet.no/)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
+
+### Zooming and scaling must not be disabled
+
+- **Impact:** critical
+- **Description:** Ensure <meta name="viewport"> does not disable text scaling and zooming
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=playwright
+- **Tags:** cat.sensory-and-visual-cues, wcag2aa, wcag144, EN-301-549, EN-9.1.4.4, ACT
+- **Count:** 1
+
+#### Affected Elements:
+
+- `meta[name="viewport"]`
 
 ### Ensure elements marked as presentational are consistently ignored
 

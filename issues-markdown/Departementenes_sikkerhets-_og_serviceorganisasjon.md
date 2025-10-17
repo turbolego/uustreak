@@ -1,6 +1,6 @@
 # WCAG Violations Report for Departementenes sikkerhets- og serviceorganisasjon
 
-**Timestamp:** 2025-10-16T00:38:14.646Z
+**Timestamp:** 2025-10-17T00:36:01.545Z
 **URL:** [https://www.dss.dep.no/#](https://www.dss.dep.no/#)
 **Total Violations:** 2
 
