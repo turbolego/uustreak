@@ -152,10 +152,6 @@ jobs:
         run: |
           source venv/bin/activate
           python3 generate_specs.py
-          # Copy tag-summary.js and validation script to tests directory
-          cp js/tag-summary.js tests/
-          cp js/validate-summaries.js tests/
-          cp js/merge-summary-parts.js tests/
       - name: Run WCAG Accessibility Tests for batch
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
