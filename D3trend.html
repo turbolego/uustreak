@@ -362,6 +362,19 @@
             font-size: 0.85rem;
         }
 
+        .info-box-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem 1rem;
+        }
+
+        @media (max-width: 1024px) {
+            .info-box-grid {
+                grid-template-columns: 1fr;
+                gap: 0.25rem;
+            }
+        }
+
         .corner-label {
             position: absolute;
             font-size: 0.75rem;
@@ -415,9 +428,9 @@
         }
 
         .tracking-details {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
         }
 
         .tracking-section {
@@ -426,15 +439,21 @@
             gap: 0.25rem;
         }
 
+        .severity-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem 1rem;
+        }
+
         @media (max-width: 1024px) {
             .tracking-info {
                 grid-column: 1;
                 min-width: auto;
             }
             
-            .tracking-details {
+            .severity-grid {
                 grid-template-columns: 1fr;
-                gap: 0.5rem;
+                gap: 0.25rem;
             }
         }
 
@@ -453,6 +472,21 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tracking-header-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex: 1;
+        }
+
+        .tracking-date {
+            font-size: 0.85rem;
+            color: #666;
+            font-weight: normal;
         }
 
         .tracking-info .close-btn {
@@ -599,10 +633,12 @@
         </div>
 
         <div class="info-box">
-            <div><strong>X-Axis:</strong> Severity Score (weighted) <span style="font-size: 0.75rem; color: #888;">(← high severity | low severity →)</span></div>
-            <div><strong>Y-Axis:</strong> <span id="y-axis-label">Total Violations</span> <span style="font-size: 0.75rem; color: #888;">(↓ fewer | more ↑)</span></div>
-            <div><strong>Bubble Size:</strong> Total Violations</div>
-            <div><strong>Bubble Color:</strong> Dominant Severity</div>
+            <div class="info-box-grid">
+                <div><strong>X-Axis:</strong> Severity Score (weighted) <span style="font-size: 0.75rem; color: #888;">(← high severity | low severity →)</span></div>
+                <div><strong>Bubble Size:</strong> Total Violations</div>
+                <div><strong>Y-Axis:</strong> <span id="y-axis-label">Total Violations</span> <span style="font-size: 0.75rem; color: #888;">(↓ fewer | more ↑)</span></div>
+                <div><strong>Bubble Color:</strong> Dominant Severity</div>
+            </div>
             <div style="margin-top: 0.5rem; font-size: 0.8rem; color: #666;">
                 <strong>Goal:</strong> Top-right corner (low severity, few violations)
             </div>
@@ -610,7 +646,10 @@
 
             <div class="tracking-info hidden" id="trackingInfo">
             <h3>
-                <span>Tracking: <span id="tracked-project-name"></span></span>
+                <div class="tracking-header-left">
+                    <span>Tracking: <span id="tracked-project-name"></span></span>
+                    <span class="tracking-date"></span>
+                </div>
                 <button class="close-btn" id="closeTracking" title="Stop tracking">×</button>
             </h3>
             <div id="tracked-project-details"></div>
@@ -1422,26 +1461,34 @@
             const dates = Array.from(allProjectsData.keys()).sort();
             const currentDate = dates[currentYearIndex];
             
+            // Update date in header
+            const headerLeft = document.querySelector('.tracking-header-left');
+            if (headerLeft) {
+                const dateSpan = headerLeft.querySelector('.tracking-date');
+                if (dateSpan) {
+                    dateSpan.textContent = currentDate;
+                }
+            }
+            
             let infoHTML = `<div class="tracking-details">`;
             
-            // Left container: General info
+            // General info section
             infoHTML += `<div class="tracking-section">`;
-            infoHTML += `<div><strong>Date:</strong> ${currentDate}</div>`;
             infoHTML += `<div><strong>Total Violations:</strong> ${projectData.violations}</div>`;
             infoHTML += `<div><strong>Severity Score:</strong> ${projectData.severityScore.toFixed(0)}</div>`;
             
             if (currentYAxisMetric.startsWith('tag:')) {
                 const tag = currentYAxisMetric.substring(4);
-                infoHTML += `<div style="margin-top: 0.5rem;"><strong>${tag}:</strong> ${projectData.yValue}</div>`;
+                infoHTML += `<div><strong>${tag}:</strong> ${projectData.yValue}</div>`;
             }
             
             infoHTML += `</div>`;
             
-            // Right container: Severity breakdown
-            infoHTML += `<div class="tracking-section">`;
+            // Severity breakdown in 2x2 grid
+            infoHTML += `<div class="severity-grid">`;
             infoHTML += `<div><strong>Critical:</strong> ${projectData.severityBreakdown.critical}</div>`;
-            infoHTML += `<div><strong>Serious:</strong> ${projectData.severityBreakdown.serious}</div>`;
             infoHTML += `<div><strong>Moderate:</strong> ${projectData.severityBreakdown.moderate}</div>`;
+            infoHTML += `<div><strong>Serious:</strong> ${projectData.severityBreakdown.serious}</div>`;
             infoHTML += `<div><strong>Minor:</strong> ${projectData.severityBreakdown.minor}</div>`;
             infoHTML += `</div>`;
             
