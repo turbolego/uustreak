@@ -29,7 +29,6 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
     let currentContext = null;
     let fallbackBrowser = null;
     let usingFallback = false;
-    let browserUsed = 'chromium';
 
     try {{
         console.log(`Starting accessibility test for {escaped_project_name}`);
