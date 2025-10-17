@@ -13,7 +13,7 @@ def create_spec_file(project_name, project_url):
 import {{ AxeBuilder }} from '@axe-core/playwright';
 import * as fs from 'fs';
 import * as path from 'path';
-import {{ generateTagSummary }} from './tag-summary';
+import {{ generateTagSummary }} from '../js/tag-summary';
 
 // Configure test for this specific project
 test.use({{
@@ -29,6 +29,7 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
     let currentContext = null;
     let fallbackBrowser = null;
     let usingFallback = false;
+    let browserUsed = 'chromium';
 
     try {{
         console.log(`Starting accessibility test for {escaped_project_name}`);
@@ -128,7 +129,7 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                         if (currentPage && !currentPage.isClosed()) {{
                             await currentPage.close();
                         }}
-                    }} catch (e) {{
+                    }} catch (e: any) {{
                         console.log(`Warning: Error closing page: ${{e.message}}`);
                     }}
                     
@@ -137,7 +138,7 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                             await currentContext.close();
                             currentContext = null;
                         }}
-                    }} catch (e) {{
+                    }} catch (e: any) {{
                         console.log(`Warning: Error closing context: ${{e.message}}`);
                     }}
                     
@@ -146,7 +147,7 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                             await fallbackBrowser.close();
                             fallbackBrowser = null;
                         }}
-                    }} catch (e) {{
+                    }} catch (e: any) {{
                         console.log(`Warning: Error closing browser: ${{e.message}}`);
                     }}
                     
@@ -183,7 +184,7 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                     }}
                     
                     // Enhanced context options with stealth measures
-                    const contextOptions = {{
+                    const contextOptions: any = {{
                         ignoreHTTPSErrors: true,
                         viewport: {{ width: 1920, height: 1080 }}, // More realistic viewport
                         userAgent: strategy.userAgent,
@@ -239,15 +240,15 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                             }});
                             
                             // Remove automation indicators
-                            window.chrome = {{
+                            (window as any).chrome = {{
                                 runtime: {{}},
                             }};
                             
                             // Override permissions API
                             const originalQuery = window.navigator.permissions.query;
-                            window.navigator.permissions.query = (parameters) => (
+                            (window.navigator.permissions.query as any) = (parameters: any) => (
                                 parameters.name === 'notifications' ?
-                                Promise.resolve({{ state: Notification.permission }}) :
+                                Promise.resolve({{ state: (Notification as any).permission }}) :
                                 originalQuery(parameters)
                             );
                         }});
@@ -286,7 +287,7 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                                     await route.continue({{ headers }});
                                 }}
                             }});
-                        }} catch (routeError) {{
+                        }} catch (routeError: any) {{
                             console.log(`Warning: Could not set up request interception for ${{strategy.name}}: ${{routeError.message}}`);
                         }}
                     }}
@@ -296,7 +297,7 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                         console.log(`Dialog appeared: ${{dialog.message()}}`);
                         try {{
                             await dialog.accept();
-                        }} catch (dialogError) {{
+                        }} catch (dialogError: any) {{
                             console.log(`Warning: Could not handle dialog: ${{dialogError.message}}`);
                         }}
                     }});
@@ -311,7 +312,7 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                         await currentPage.waitForTimeout(Math.floor(Math.random() * 1000) + 500);
                         
                         await currentPage.goto(candidateUrl, {{ 
-                            waitUntil: strategy.waitUntil, 
+                            waitUntil: strategy.waitUntil as any, 
                             timeout: strategy.timeout 
                         }});
                         
@@ -320,7 +321,7 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                         browserUsed = strategy.browser;
                         break;
                         
-                    }} catch (attemptError) {{
+                    }} catch (attemptError: any) {{
                         console.log(`❌ ${{strategy.name}} attempt ${{index + 1}} failed: ${{attemptError.message}}`);
                         lastError = attemptError;
                         
@@ -346,7 +347,7 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                                 navigationSuccess = true;
                                 browserUsed = strategy.browser;
                                 break;
-                            }} catch (retryError) {{
+                            }} catch (retryError: any) {{
                                 console.log(`❌ ${{strategy.name}} retry failed: ${{retryError.message}}`);
                                 lastError = retryError;
                             }}
@@ -354,7 +355,7 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                     }}
                 }}
                 
-            }} catch (strategyError) {{
+            }} catch (strategyError: any) {{
                 console.log(`❌ Strategy ${{strategy.name}} setup failed: ${{strategyError.message}}`);
                 lastError = strategyError;
                 
@@ -437,7 +438,7 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                 }}
             }}
             
-        }} catch (stabilityError) {{
+        }} catch (stabilityError: any) {{
             console.log(`Page stability check warning: ${{stabilityError.message}}`);
         }}
 
