@@ -1,0 +1,859 @@
+{
+  "project": "Extra Leker Butikker AS",
+  "timestamp": "2025-10-17T00:22:10.566Z",
+  "url": "https://www.extra-leker.no/#",
+  "total_violations": 9,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-required-children",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-children?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div class=\"section-items nav-sections-items mage-tabs-disabled\" role=\"tablist\">",
+          "target": [
+            ".section-items"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: [role=tabpanel]"
+        },
+        {
+          "html": "<ul id=\"ui-id-1\" class=\"ui-menu ui-widget ui-widget-content ui-corner-all\" role=\"menu\" tabindex=\"0\">",
+          "target": [
+            "#ui-id-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: li[tabindex]"
+        }
+      ]
+    },
+    {
+      "id": "aria-required-parent",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require parent roles are contained by them",
+      "help": "Certain ARIA roles must be contained by particular parents",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-parent?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "violation_count": 10,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.extra-leker.no/\" class=\"level-top ui-menu-item-wrapper\" id=\"ui-id-2\" tabindex=\"-1\" role=\"menuitem\"><span class=\"icon-text\"><span>Hjem</span></span></a>",
+          "target": [
+            "#ui-id-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
+        },
+        {
+          "html": "<a class=\"level-top ui-menu-item-wrapper\" aria-haspopup=\"true\" id=\"ui-id-3\" tabindex=\"-1\" role=\"menuitem\"><span class=\"ui-menu-icon ui-icon ui-icon-caret-1-e\"></span><span class=\"icon-text\"><span>Kategorier</span></span></a>",
+          "target": [
+            "#ui-id-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
+        },
+        {
+          "html": "<a href=\"https://www.extra-leker.no/lego-shop\" class=\"level-top ui-menu-item-wrapper\" id=\"ui-id-59\" tabindex=\"-1\" role=\"menuitem\"><span class=\"icon-text\"><span>LEGO Shop</span></span></a>",
+          "target": [
+            "#ui-id-59"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
+        },
+        {
+          "html": "<a href=\"https://www.extra-leker.no/gavetips\" class=\"level-top ui-menu-item-wrapper\" id=\"ui-id-60\" tabindex=\"-1\" role=\"menuitem\"><span class=\"icon-text\"><span>Gavetips</span></span></a>",
+          "target": [
+            "#ui-id-60"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
+        },
+        {
+          "html": "<a href=\"https://www.extra-leker.no/nye-varer\" class=\"level-top ui-menu-item-wrapper\" id=\"ui-id-61\" tabindex=\"-1\" role=\"menuitem\"><span class=\"icon-text\"><span>Nye varer</span></span></a>",
+          "target": [
+            "#ui-id-61"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
+        },
+        {
+          "html": "<a href=\"https://www.extra-leker.no/leker-pa-tilbud\" class=\"level-top ui-menu-item-wrapper\" id=\"ui-id-62\" tabindex=\"-1\" role=\"menuitem\"><span class=\"icon-text\"><span>Leker på tilbud</span></span></a>",
+          "target": [
+            "#ui-id-62"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
+        },
+        {
+          "html": "<a href=\"https://www.extra-leker.no/leker\" class=\"level-top ui-menu-item-wrapper\" aria-haspopup=\"true\" id=\"ui-id-63\" tabindex=\"-1\" role=\"menuitem\"><span class=\"ui-menu-icon ui-icon ui-icon-caret-1-e\"></span><span class=\"icon-text\"><span>Leker</span></span></a>",
+          "target": [
+            "#ui-id-63"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
+        },
+        {
+          "html": "<a href=\"https://www.extra-leker.no/julekalender\" class=\"level-top ui-menu-item-wrapper\" id=\"ui-id-127\" tabindex=\"-1\" role=\"menuitem\"><span class=\"icon-text\"><span>Julekalender</span></span></a>",
+          "target": [
+            "#ui-id-127"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
+        },
+        {
+          "html": "<a href=\"https://www.extra-leker.no/kampanje/halloween-produkter\" class=\"level-top ui-menu-item-wrapper\" id=\"ui-id-128\" tabindex=\"-1\" role=\"menuitem\"><span class=\"icon-text\"><span>Halloween</span></span></a>",
+          "target": [
+            "#ui-id-128"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
+        },
+        {
+          "html": "<a href=\"https://www.extra-leker.no/merker-leketoy/\" class=\"level-top ambrands-link ui-menu-item-wrapper\" title=\"Merker\" id=\"ui-id-129\" tabindex=\"-1\" role=\"menuitem\">\n            Merker        </a>",
+          "target": [
+            "#ui-id-129"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 14,
+      "nodes": [
+        {
+          "html": "<a id=\"CybotCookiebotDialogNavDeclaration\" class=\"CybotCookiebotDialogNavItemLink CybotCookiebotDialogActive\" href=\"#\" data-target=\"CybotCookiebotDialogBody\" tabindex=\"0\" role=\"tab\" aria-selected=\"true\" lang=\"nb\">Samtykke</a>",
+          "target": [
+            "#CybotCookiebotDialogNavDeclaration"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #00953b, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button id=\"CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll\" class=\"CybotCookiebotDialogBodyButton\" tabindex=\"0\" lang=\"nb\">Tillat alle</button>",
+          "target": [
+            "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #ffffff, background color: #00953b, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Barbie</span>",
+          "target": [
+            ".product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(1) > .product-item-info > .details.product-item-details.product > .name.product-item-name[data-tiny-equalizer=\"product-title-clerk-height\"] > .product-item-manufacturer[data-tiny-equalizer=\"product-brand-clerk-height\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"price\">\n 329,-\n </span>",
+          "target": [
+            ".product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(1) > .product-item-info > .details.product-item-details.product > .product-price-stock > .price-box > .old-price > .price-container > .price-wrapper > .price"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>LEGO</span>",
+          "target": [
+            ".product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(2) > .product-item-info > .details.product-item-details.product > .name.product-item-name[data-tiny-equalizer=\"product-title-clerk-height\"] > .product-item-manufacturer[data-tiny-equalizer=\"product-brand-clerk-height\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>LEGO</span>",
+          "target": [
+            ".product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(3) > .product-item-info > .details.product-item-details.product > .name.product-item-name[data-tiny-equalizer=\"product-title-clerk-height\"] > .product-item-manufacturer[data-tiny-equalizer=\"product-brand-clerk-height\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>LEGO</span>",
+          "target": [
+            ".product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(4) > .product-item-info > .details.product-item-details.product > .name.product-item-name[data-tiny-equalizer=\"product-title-clerk-height\"] > .product-item-manufacturer[data-tiny-equalizer=\"product-brand-clerk-height\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Vtech</span>",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(1) > div[lass=\"product-item-info\"] > .details.product-item-details.product > .name.product-item-name[data-tiny-equalizer=\"product-title-clerk-height\"] > .product-item-manufacturer[data-tiny-equalizer=\"product-brand-clerk-height\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #7b7b7b, background color: #f6f6f6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"price\">\n 799,-\n </span>",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(1) > div[lass=\"product-item-info\"] > .details.product-item-details.product > .product-price-stock > .price-box > .old-price > .price-container > .price-wrapper > .price"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #7b7b7b, background color: #f6f6f6, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Halloween</span>",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(2) > div[lass=\"product-item-info\"] > .details.product-item-details.product > .name.product-item-name[data-tiny-equalizer=\"product-title-clerk-height\"] > .product-item-manufacturer[data-tiny-equalizer=\"product-brand-clerk-height\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #7b7b7b, background color: #f6f6f6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"price\">\n 249,-\n </span>",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(2) > div[lass=\"product-item-info\"] > .details.product-item-details.product > .product-price-stock > .price-box > .price-container > .price-wrapper > .price"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #dd2f2f, background color: #f6f6f6, font size: 16.5pt (22px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Plus Plus</span>",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(3) > div[lass=\"product-item-info\"] > .details.product-item-details.product > .name.product-item-name[data-tiny-equalizer=\"product-title-clerk-height\"] > .product-item-manufacturer[data-tiny-equalizer=\"product-brand-clerk-height\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #7b7b7b, background color: #f6f6f6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"price\">\n 499,-\n </span>",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(3) > div[lass=\"product-item-info\"] > .details.product-item-details.product > .product-price-stock > .price-box > .old-price > .price-container > .price-wrapper > .price"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #7b7b7b, background color: #f6f6f6, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"price\">\n 299,-\n </span>",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(4) > div[lass=\"product-item-info\"] > .details.product-item-details.product > .product-price-stock > .price-box > .price-container > .price-wrapper > .price"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #dd2f2f, background color: #f6f6f6, font size: 16.5pt (22px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 28,
+      "nodes": [
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/1/3/137809_1__292751__h62090134.jpg\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"100587\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/6/8/68222_2_1__185910__hccfafccc.jpg\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"21106\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/1/0/101623_20__161873__h62090134.jpg\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"1524\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/4/2/42214_1__297323__h62090134.jpg\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"105462\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/1/1/112563_6_1__172813__h62090134.jpg\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"69157\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/1/2/127132_1_1__276107__h62090134.jpg\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"86887\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/1/1/119913_1__258927__h62090134.jpg\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"78045\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/6/1/61534_2__179549__h62090134.jpg\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"15216\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/1/2/127133_1__276108__h62090134.jpg\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"86888\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/1/1/113114_1__240550__h62090134.jpg\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"52930\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/6/1/61558_2__179573__h62090134.jpg\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"15240\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/2/4/240702-144944-132802_1__286145__h85c46d9b.jpg\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"93826\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/9/8/98338_10__215444__h62090134.jpg\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(1) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"38901\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/n/t/nti-887442_1__296130__h62090134.jpg\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(2) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"104282\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/1/3/131841_1__284660__h62090134.jpg\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(3) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"92357\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/n/t/nti-170411_1__218035__hb10cfaaf.jpg\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(4) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"40938\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/n/t/nti-885502_1__289400__h62090134.jpg\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(5) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"98862\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/n/t/nti-881664_1__254697__h62090134.jpg\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(6) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"75834\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/n/t/nti-864723_1-vampyr_teen__223560__hb10cfaaf.png\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(7) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"45110\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/n/t/nti-216069_1_1__218936__hb10cfaaf.jpg\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(8) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"41475\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/v/o/voodoo_man__226841__h39ea4df2.jpg\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(9) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"48069\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/2/4/240703-095522-132826_1__286169__h3c463a63.jpg\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(10) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"93850\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/n/t/nti-869105_1__227476__hb10cfaaf.jpg\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(11) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"48662\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/n/t/nti-885208_1__287227__h62090134.jpg\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(12) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"94919\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/n/t/nti-885571_1__287327__h62090134.jpg\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(13) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"95019\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/8/3/83590_10__200850__h26f3f454.jpg\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(14) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"35071\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/n/t/nti-885382_1__289262__h62090134.jpg\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(15) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"96991\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"product-image-photo\" src=\"https://www.extra-leker.no/media/catalog/product/1/0/103038_10__163289__h7e609981.jpg\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(16) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"51695\"] > .product-image-container > .product-image-wrapper > .product-image-photo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 29,
+      "nodes": [
+        {
+          "html": "<a data-clerk-product-id=\"100587\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/barbie-color-reveal-disco-star-dukke-med-6-overraskelser?___store=default\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"100587\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"21106\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/lego-classic-kreative-store-klosser-10698\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"21106\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"1524\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/lego-duplo-deluxe-klosseboks-10914\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"1524\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"105462\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/lego-technic-supersportsbilen-lamborghini-revuelto-42214\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"105462\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"69157\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/monopoly-brettspill-builder?___store=default\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"69157\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"86887\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/litor-hobbyeske-lag-dine-egne-stearinlys?___store=default\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"86887\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"78045\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/litor-familiespill-norgesferien?___store=default\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"78045\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"15216\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/hama-midi-1000-perler-hvit-01?___store=default\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"15216\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"86888\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/litor-stor-hobbyeske-monster-hobby?___store=default\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"86888\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"52930\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/litor-brettspill-det-store-turspillet-helt-pa-vidda?___store=default\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"52930\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"15240\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/hama-midi-1000-perler-mork-rod-22?___store=default\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"15240\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"93826\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/monopol-knockout-brettspill-no?___store=default\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            ".photo.product-item-photo[data-clerk-product-id=\"93826\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"38901\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/vtech-parkeringshus-toot-toot-driver-go-go-smart-wheels-fra-1-ar\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(1) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"38901\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"104282\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/crystal-witch-kostyme-9-10-ar-130-140-cm\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(2) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"104282\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"92357\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/plus-plus-mini-laer-a-bygge-colorverse-byggesett-1000-deler\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(3) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"92357\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"40938\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/handlevogn-med-lekemat-og-lekepenger\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(4) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"40938\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"98862\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/dickie-toys-ledningsstyrt-kran-120cm\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(5) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"98862\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"75834\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/doktorsett-30-deler\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(6) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"75834\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"45110\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/vampyr-tween-kostyme-14-16-ar\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(7) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"45110\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"41475\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/drakula-kostyme-str-56-voksen\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(8) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"41475\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"48069\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/voodoo-kostyme-voksen-str-56\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(9) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"48069\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"93850\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/marvel-spidey-dino-webs-lekesett-med-2-figurer-trehus\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(10) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"93850\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"48662\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/skrubil-sett-1\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(11) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"48662\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"94919\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/4-knappers-dansematte-med-8-nivaer-og-minnespill\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(12) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"94919\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"95019\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/lekesymaskin-med-2-hastighetsinnstillinger\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(13) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"95019\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"35071\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/brio-bankebenk-fra-1-ar-30525\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(14) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"35071\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"96991\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/metal-machines-speed-heroes-racerbiler-med-25-overraskelser\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(15) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"96991\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a data-clerk-product-id=\"51695\" class=\"product photo product-item-photo\" href=\"https://www.extra-leker.no/schleich-big-horse-show\" data-tiny-equalizer=\"product-photo-clerk-height\" data-clerk-click-tracking-added=\"true\" style=\"height: 285px;\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target > .product-item.clerk-slider-item[data-tiny-equalizer=\"product-item-clerk-height\"]:nth-child(16) > div[lass=\"product-item-info\"] > .photo.product-item-photo[data-clerk-product-id=\"51695\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.extra-leker.no/\"></a>",
+          "target": [
+            ".cookies > a[href$=\"extra-leker.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": "serious",
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/list?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<ol id=\"$id\" class=\":target clerk-slider products list items product-items\">",
+          "target": [
+            "#\\$id"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: div"
+        },
+        {
+          "html": "<ol id=\"\" class=\"target clerk-slider products list items product-items\">",
+          "target": [
+            "span[data-clerk-content-id=\"3\"] > .widget.block-products-list.block > .products-grid.wrapper.products > .target"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: div"
+        }
+      ]
+    },
+    {
+      "id": "listitem",
+      "impact": "serious",
+      "description": "Ensure <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/listitem?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "violation_count": 10,
+      "nodes": [
+        {
+          "html": "<li class=\"level0 nav-1 first level-top menu-item-home ui-menu-item\"><a href=\"https://www.extra-leker.no/\" class=\"level-top ui-menu-item-wrapper\" id=\"ui-id-2\" tabindex=\"-1\" role=\"menuitem\"><span class=\"icon-text\"><span>Hjem</span></span></a></li>",
+          "target": [
+            "#ui-id-1 > .nav-1.menu-item-home.level0"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"level0 nav-2 category-item has-active level-top parent menu-type-subcategories has-6subcategories ui-menu-item\">",
+          "target": [
+            ".has-active"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"level0 nav-3 category-item level-top ui-menu-item\"><a href=\"https://www.extra-leker.no/lego-shop\" class=\"level-top ui-menu-item-wrapper\" id=\"ui-id-59\" tabindex=\"-1\" role=\"menuitem\"><span class=\"icon-text\"><span>LEGO Shop</span></span></a></li>",
+          "target": [
+            "#ui-id-1 > .nav-3.level0.level-top"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"level0 nav-4 category-item level-top ui-menu-item\"><a href=\"https://www.extra-leker.no/gavetips\" class=\"level-top ui-menu-item-wrapper\" id=\"ui-id-60\" tabindex=\"-1\" role=\"menuitem\"><span class=\"icon-text\"><span>Gavetips</span></span></a></li>",
+          "target": [
+            "#ui-id-1 > .nav-4.level0.level-top"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"level0 nav-5 category-item level-top ui-menu-item\"><a href=\"https://www.extra-leker.no/nye-varer\" class=\"level-top ui-menu-item-wrapper\" id=\"ui-id-61\" tabindex=\"-1\" role=\"menuitem\"><span class=\"icon-text\"><span>Nye varer</span></span></a></li>",
+          "target": [
+            "#ui-id-1 > .nav-5.level0.level-top"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"level0 nav-6 category-item level-top ui-menu-item\"><a href=\"https://www.extra-leker.no/leker-pa-tilbud\" class=\"level-top ui-menu-item-wrapper\" id=\"ui-id-62\" tabindex=\"-1\" role=\"menuitem\"><span class=\"icon-text\"><span>Leker på tilbud</span></span></a></li>",
+          "target": [
+            "#ui-id-1 > .nav-6.level0.level-top"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"level0 nav-7 category-item level-top parent menu-type-subcategories has-6subcategories ui-menu-item\">",
+          "target": [
+            "#ui-id-1 > .nav-7.menu-type-subcategories.has-6subcategories"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"level0 nav-8 category-item level-top ui-menu-item\"><a href=\"https://www.extra-leker.no/julekalender\" class=\"level-top ui-menu-item-wrapper\" id=\"ui-id-127\" tabindex=\"-1\" role=\"menuitem\"><span class=\"icon-text\"><span>Julekalender</span></span></a></li>",
+          "target": [
+            "#ui-id-1 > .nav-8.level0.level-top"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"level0 nav-9 category-item last level-top ui-menu-item\"><a href=\"https://www.extra-leker.no/kampanje/halloween-produkter\" class=\"level-top ui-menu-item-wrapper\" id=\"ui-id-128\" tabindex=\"-1\" role=\"menuitem\"><span class=\"icon-text\"><span>Halloween</span></span></a></li>",
+          "target": [
+            "#ui-id-1 > .nav-9.level0.level-top"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"level0 ambrands-menu-item ui-menu-item\" data-ambrands-js=\"brands-menu-link\">",
+          "target": [
+            "#ui-id-1 > .ambrands-menu-item.level0[data-ambrands-js=\"brands-menu-link\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"links usp-section\" style=\"padding-right: 0px;\">",
+          "target": [
+            ".usp-section"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "tabindex",
+      "impact": "serious",
+      "description": "Ensure tabindex attribute values are not greater than 0",
+      "help": "Elements should not have tabindex greater than zero",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/tabindex?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a href=\"#maincontent\" class=\"skipLink\" tabindex=\"1\">Til hovedinnhold</a>",
+          "target": [
+            ".skipLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a class=\"logo\" tabindex=\"2\" href=\"https://www.extra-leker.no/\" title=\"Magento Commerce\">\n    <img src=\"https://www.extra-leker.no/static/version1759909747/frontend/Convert/extra-leker/nb_NO/images/logo.svg\" alt=\"Magento Commerce\">\n</a>",
+          "target": [
+            ".sticky-header-row > .logo[title=\"Magento Commerce\"][href$=\"extra-leker.no/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        }
+      ]
+    }
+  ]
+}
