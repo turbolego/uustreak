@@ -390,13 +390,32 @@
             border-radius: 4px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.15);
             font-size: 0.85rem;
-            max-width: 300px;
+            max-width: 500px;
+            min-width: 350px;
             border: 2px solid #2196F3;
+        }
+
+        .tracking-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .tracking-section {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
         }
 
         @media (max-width: 1024px) {
             .tracking-info {
                 grid-column: 1;
+                min-width: auto;
+            }
+            
+            .tracking-details {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
             }
         }
 
@@ -1360,18 +1379,30 @@
             const dates = Array.from(allProjectsData.keys()).sort();
             const currentDate = dates[currentYearIndex];
             
-            let infoHTML = `<div><strong>Date:</strong> ${currentDate}</div>`;
+            let infoHTML = `<div class="tracking-details">`;
+            
+            // Left container: General info
+            infoHTML += `<div class="tracking-section">`;
+            infoHTML += `<div><strong>Date:</strong> ${currentDate}</div>`;
             infoHTML += `<div><strong>Total Violations:</strong> ${projectData.violations}</div>`;
             infoHTML += `<div><strong>Severity Score:</strong> ${projectData.severityScore.toFixed(0)}</div>`;
-            infoHTML += `<div style="margin-top: 0.5rem;"><strong>Critical:</strong> ${projectData.severityBreakdown.critical}</div>`;
-            infoHTML += `<div><strong>Serious:</strong> ${projectData.severityBreakdown.serious}</div>`;
-            infoHTML += `<div><strong>Moderate:</strong> ${projectData.severityBreakdown.moderate}</div>`;
-            infoHTML += `<div><strong>Minor:</strong> ${projectData.severityBreakdown.minor}</div>`;
             
             if (currentYAxisMetric.startsWith('tag:')) {
                 const tag = currentYAxisMetric.substring(4);
                 infoHTML += `<div style="margin-top: 0.5rem;"><strong>${tag}:</strong> ${projectData.yValue}</div>`;
             }
+            
+            infoHTML += `</div>`;
+            
+            // Right container: Severity breakdown
+            infoHTML += `<div class="tracking-section">`;
+            infoHTML += `<div><strong>Critical:</strong> ${projectData.severityBreakdown.critical}</div>`;
+            infoHTML += `<div><strong>Serious:</strong> ${projectData.severityBreakdown.serious}</div>`;
+            infoHTML += `<div><strong>Moderate:</strong> ${projectData.severityBreakdown.moderate}</div>`;
+            infoHTML += `<div><strong>Minor:</strong> ${projectData.severityBreakdown.minor}</div>`;
+            infoHTML += `</div>`;
+            
+            infoHTML += `</div>`;
             
             document.getElementById('tracked-project-details').innerHTML = infoHTML;
         }
