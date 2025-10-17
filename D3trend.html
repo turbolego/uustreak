@@ -298,7 +298,7 @@
             padding: 0.5rem;
             box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
             display: grid;
-            grid-template-columns: auto 1fr;
+            grid-template-columns: auto 1fr auto;
             gap: 2rem;
             align-items: start;
             z-index: 50;
@@ -385,24 +385,26 @@
         }
 
         .tracking-info {
-            position: absolute;
-            top: 10px;
-            right: 20px;
             background: rgba(255, 255, 255, 0.98);
-            padding: 1rem;
+            padding: 0.75rem;
             border-radius: 4px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
             font-size: 0.85rem;
             max-width: 300px;
-            z-index: 150;
             border: 2px solid #2196F3;
+        }
+
+        @media (max-width: 1024px) {
+            .tracking-info {
+                grid-column: 1;
+            }
         }
 
         @media (max-width: 768px) {
             .tracking-info {
-                max-width: 250px;
+                max-width: 100%;
                 font-size: 0.75rem;
-                padding: 0.75rem;
+                padding: 0.5rem;
             }
         }
 
@@ -567,15 +569,15 @@
                 <strong>Goal:</strong> Top-right corner (low severity, few violations)
             </div>
         </div>
-    </footer>
 
-    <div class="tracking-info hidden" id="trackingInfo">
-        <h3>
-            <span>Tracking: <span id="tracked-project-name"></span></span>
-            <button class="close-btn" id="closeTracking" title="Stop tracking">×</button>
-        </h3>
-        <div id="tracked-project-details"></div>
-    </div>
+            <div class="tracking-info hidden" id="trackingInfo">
+            <h3>
+                <span>Tracking: <span id="tracked-project-name"></span></span>
+                <button class="close-btn" id="closeTracking" title="Stop tracking">×</button>
+            </h3>
+            <div id="tracked-project-details"></div>
+        </div>
+    </footer>
 
     <div class="loading-message" id="loadingMessage">
         <h2>Loading data...</h2>
