@@ -428,9 +428,9 @@
         }
 
         .tracking-details {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0.5rem 1rem;
         }
 
         .tracking-section {
@@ -440,9 +440,7 @@
         }
 
         .severity-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0.5rem 1rem;
+            display: contents;
         }
 
         @media (max-width: 1024px) {
@@ -451,9 +449,8 @@
                 min-width: auto;
             }
             
-            .severity-grid {
-                grid-template-columns: 1fr;
-                gap: 0.25rem;
+            .tracking-details {
+                grid-template-columns: 1fr 1fr;
             }
         }
 
@@ -462,6 +459,10 @@
                 max-width: 100%;
                 font-size: 0.75rem;
                 padding: 0.5rem;
+            }
+            
+            .tracking-details {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -1472,25 +1473,20 @@
             
             let infoHTML = `<div class="tracking-details">`;
             
-            // General info section
-            infoHTML += `<div class="tracking-section">`;
+            // First row: Total Violations, Critical, Moderate
             infoHTML += `<div><strong>Total Violations:</strong> ${projectData.violations}</div>`;
+            infoHTML += `<div><strong>Critical:</strong> ${projectData.severityBreakdown.critical}</div>`;
+            infoHTML += `<div><strong>Moderate:</strong> ${projectData.severityBreakdown.moderate}</div>`;
+            
+            // Second row: Severity Score, Serious, Minor
             infoHTML += `<div><strong>Severity Score:</strong> ${projectData.severityScore.toFixed(0)}</div>`;
+            infoHTML += `<div><strong>Serious:</strong> ${projectData.severityBreakdown.serious}</div>`;
+            infoHTML += `<div><strong>Minor:</strong> ${projectData.severityBreakdown.minor}</div>`;
             
             if (currentYAxisMetric.startsWith('tag:')) {
                 const tag = currentYAxisMetric.substring(4);
-                infoHTML += `<div><strong>${tag}:</strong> ${projectData.yValue}</div>`;
+                infoHTML += `<div style="grid-column: 1 / -1;"><strong>${tag}:</strong> ${projectData.yValue}</div>`;
             }
-            
-            infoHTML += `</div>`;
-            
-            // Severity breakdown in 2x2 grid
-            infoHTML += `<div class="severity-grid">`;
-            infoHTML += `<div><strong>Critical:</strong> ${projectData.severityBreakdown.critical}</div>`;
-            infoHTML += `<div><strong>Moderate:</strong> ${projectData.severityBreakdown.moderate}</div>`;
-            infoHTML += `<div><strong>Serious:</strong> ${projectData.severityBreakdown.serious}</div>`;
-            infoHTML += `<div><strong>Minor:</strong> ${projectData.severityBreakdown.minor}</div>`;
-            infoHTML += `</div>`;
             
             infoHTML += `</div>`;
             
