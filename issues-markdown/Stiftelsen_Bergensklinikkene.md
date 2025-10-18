@@ -1,8 +1,8 @@
 # WCAG Violations Report for Stiftelsen Bergensklinikkene
 
-**Timestamp:** 2025-10-17T00:22:28.017Z
+**Timestamp:** 2025-10-18T00:22:06.150Z
 **URL:** [https://bergenclinics.no/#](https://bergenclinics.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
-- **Count:** 45
+- **Count:** 46
 
 #### Affected Elements:
 
@@ -61,6 +61,7 @@
 - `#archives-4 > ul > li:nth-child(3) > a`
 - `#archives-4 > ul > li:nth-child(4) > a`
 - `#archives-4 > ul > li:nth-child(5) > a`
+- `#es_subscription_form_submit_68f2dda4654b9`
 
 ### Frames must have an accessible name
 
@@ -73,6 +74,18 @@
 #### Affected Elements:
 
 - `iframe[width="345"]`
+
+### Form elements must have labels
+
+- **Impact:** critical
+- **Description:** Ensure every form element has a label
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/label?application=playwright
+- **Tags:** cat.forms, wcag2a, wcag412, section508, section508.22.n, TTv5, TT5.c, EN-301-549, EN-9.4.1.2, ACT
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.es_txt_email`
 
 ### Aside should not be contained in another landmark
 

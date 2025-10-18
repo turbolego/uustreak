@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2025-10-17T00:21:34.640Z
+**Timestamp:** 2025-10-18T00:21:21.807Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
 **Total Violations:** 8
 
@@ -36,12 +36,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
-- **Count:** 6
+- **Count:** 5
 
 #### Affected Elements:
 
 - `.top-header-block > p`
-- `.countdown-days`
 - `.countdown-hours`
 - `.countdown-minutes`
 - `.countdown-seconds`
