@@ -1,0 +1,96 @@
+{
+  "project": "Stavanger kommune",
+  "timestamp": "2025-10-19T10:46:28.173Z",
+  "url": "https://www.stavanger.kommune.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img src=\"/siteassets/kultur-og-fritid/kultur/stavanger-2025/logoer/stavanger-2025_sort-white-glow.png?width=160&amp;height=230&amp;rmode=Min&amp;h=6a261dd64b389f01f037b57db6fd79d1c778aa78e7d0bc8b882c1583a09446d2\">",
+          "target": [
+            "p > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-complementary-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the complementary landmark or aside is at top level",
+      "help": "Aside should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<aside class=\"linklist\">",
+          "target": [
+            ".linklistblock.col-md-4.block:nth-child(1) > aside"
+          ],
+          "failureSummary": "Fix any of the following:\n  The complementary landmark is contained in another landmark."
+        },
+        {
+          "html": "<aside class=\"linklist\">",
+          "target": [
+            ".linklistblock.col-md-4.block:nth-child(2) > aside"
+          ],
+          "failureSummary": "Fix any of the following:\n  The complementary landmark is contained in another landmark."
+        },
+        {
+          "html": "<aside class=\"linklist\">",
+          "target": [
+            ".linklistblock.col-md-4.block:nth-child(3) > aside"
+          ],
+          "failureSummary": "Fix any of the following:\n  The complementary landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"row\" role=\"complementary\">\n    <div class=\"col wider\">\n\n        <div>\n            \n<div></div>\n        </div>\n    </div>\n</div>",
+          "target": [
+            "div[role=\"complementary\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}
