@@ -446,17 +446,17 @@ jobs:
           echo "Validating and repairing summary files..."
           # Install Node.js for the validation script
           if command -v node >/dev/null 2>&1; then
-            # Ensure validation script is available (it should already be in the current directory)
-            if [ ! -f "validate-summaries.js" ]; then
-              echo "Error: validate-summaries.js not found in current directory"
+            # Ensure validation script is available (it should be in js/ directory)
+            if [ ! -f "js/validate-summaries.js" ]; then
+              echo "Error: js/validate-summaries.js not found"
               exit 1
             fi
             
             # Change to the directory containing summary files
             cd gh-pages-branch
             
-            # Run validation
-            node ../validate-summaries.js
+            # Run validation with correct path
+            node ../js/validate-summaries.js
             
             echo "Summary validation completed"
           else
