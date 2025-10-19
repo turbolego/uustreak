@@ -1,6 +1,6 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2025-10-18T00:34:14.271Z
+**Timestamp:** 2025-10-19T00:36:41.054Z
 **URL:** [https://dns.no/#](https://dns.no/#)
 **Total Violations:** 5
 
@@ -43,12 +43,12 @@
 
 - `div[data-postid="14843"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
 - `div[data-postid="14844"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
-- `div[data-postid="16664"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
 - `div[data-postid="13324"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
 - `div[data-postid="16659"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
 - `div[data-postid="14841"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
 - `div[data-postid="15459"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
 - `div[data-postid="10719"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
+- `div[data-postid="8521"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
 - `.social[rel="noopener"][target="_blank"]:nth-child(1)`
 - `.social[rel="noopener"][target="_blank"]:nth-child(2)`
 - `.social[rel="noopener"][target="_blank"]:nth-child(3)`
@@ -104,10 +104,6 @@
 - `div[data-postid="14844"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
 - `div[data-postid="14844"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
 - `div[data-postid="14844"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-- `div[data-postid="16664"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
-- `div[data-postid="16664"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
-- `div[data-postid="16664"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
-- `div[data-postid="16664"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
 - `div[data-postid="13324"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
 - `div[data-postid="13324"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
 - `div[data-postid="13324"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
@@ -128,6 +124,10 @@
 - `div[data-postid="10719"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
 - `div[data-postid="10719"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
 - `div[data-postid="10719"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
+- `div[data-postid="8521"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
+- `div[data-postid="8521"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
+- `div[data-postid="8521"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
+- `div[data-postid="8521"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
 - `.vc_custom_1597326627476 > .vc_col-has-fill.vc_col-sm-12.wpb_column > .vc_custom_1597326586251.vc_column-inner > .wpb_wrapper > .all-events.wpb_text_column.wpb_content_element`
 - `.vc_custom_1700029085981`
 - `.vc_custom_1678087387650`
