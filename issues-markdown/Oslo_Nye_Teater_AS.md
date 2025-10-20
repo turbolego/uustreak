@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2025-10-19T00:31:27.875Z
+**Timestamp:** 2025-10-20T00:29:03.071Z
 **URL:** [https://oslonye.no/#](https://oslonye.no/#)
 **Total Violations:** 5
 
@@ -49,18 +49,17 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT
-- **Count:** 10
+- **Count:** 9
 
 #### Affected Elements:
 
-- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .hovedscenen.alignment-right.bg-none > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-right.hovedscenen.bg-none > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.centralteatret.bg-none > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-right.centralteatret.bg-none > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-right.centralteatret.bg-none > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-right.centralteatret.bg-none > .les-mer-link`
 - `.large-4.cpt.medium-6:nth-child(1) > .alignment-top.centralteatret.bg-none > .les-mer-link`
 - `.teaterkjellern.alignment-top.centralteatret > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .hovedscenen.alignment-right.bg-none > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-right.hovedscenen.bg-none > .les-mer-link`
 - `.hovedscenen.alignment-top.bg-none > .les-mer-link`
 - `.scroll-to-top`
 
@@ -70,7 +69,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 27
+- **Count:** 23
 
 #### Affected Elements:
 
@@ -79,25 +78,21 @@
 - `.theater-list > li:nth-child(1)`
 - `.theater-list > li:nth-child(2)`
 - `.forestillinger-blocks-panel:nth-child(3)`
-- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target="_blank"] > .advertise-cover- > .border-green.advertise.text-center > .text-yellow.heading-small.content-holder > .title`
-- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target="_blank"] > .advertise-cover- > .border-green.advertise.text-center > .text-yellow.heading-small.content-holder > .short-description`
+- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target="_blank"] > .advertise-cover- > .border-orange.advertise.text-center > .text-yellow.content-holder.heading-small > .title`
+- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target="_blank"] > .advertise-cover- > .border-orange.advertise.text-center > .text-yellow.content-holder.heading-small > .short-description`
 - `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6`
-- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6`
-- `.advertise-cover- > .border-orange.advertise.text-center > .text-green.heading-small.content-holder > .title`
-- `.advertise-cover- > .border-orange.advertise.text-center > .text-green.heading-small.content-holder > .short-description`
-- `.forestillinger-blocks-panel:nth-child(6)`
+- `.forestillinger-blocks-panel:nth-child(5)`
 - `.large-4.cpt.medium-6:nth-child(1)`
-- `.border-yellow > .text-orange.heading-small.content-holder > .title`
-- `.forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3)`
-- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6`
-- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target="_blank"] > .advertise-cover- > .border-green.advertise.text-center > .text-yellow.heading-small.content-holder > .title`
-- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target="_blank"] > .advertise-cover- > .border-green.advertise.text-center > .text-yellow.heading-small.content-holder > .short-description`
-- `.border-green.advertise.text-center > .text-orange.heading-small.content-holder > .title`
-- `.text-orange.heading-small.content-holder > .short-description`
-- `.rounded.border-orange.advertise > .text-green.heading-small.content-holder > .title`
-- `.rounded.border-orange.advertise > .text-green.heading-small.content-holder > .short-description`
-- `.forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6`
+- `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell:nth-child(2) > a[target="_blank"] > .advertise-cover-rounded > .rounded.border-yellow.advertise > .text-green.content-holder.heading-small > .title`
+- `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3)`
+- `.forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6`
+- `.text-orange > .title`
+- `.text-orange > .short-description`
+- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell:nth-child(1) > a[target="_blank"] > .advertise-cover- > .border-orange.advertise.text-center > .text-yellow.content-holder.heading-small > .title`
+- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell:nth-child(1) > a[target="_blank"] > .advertise-cover- > .border-orange.advertise.text-center > .text-yellow.content-holder.heading-small > .short-description`
+- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell:nth-child(2) > a[target="_blank"] > .advertise-cover-rounded > .rounded.border-yellow.advertise > .text-green.content-holder.heading-small > .title`
+- `.text-green.content-holder.heading-small > .short-description`
+- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6`
 - `.current-month`
 - `.desktop`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(2)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3)`
+- `.msg`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-10-19T00:34:30.215Z
+**Timestamp:** 2025-10-20T00:36:04.750Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 5
 
@@ -53,30 +53,26 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 28
+- **Count:** 24
 
 #### Affected Elements:
 
-- `img[alt="Sengesett -50%"]`
-- `img[alt="Dundyner -50%"]`
-- `img[alt="Flanell fra 249,-"]`
-- `img[alt="Sengetepper -50%"]`
-- `img[alt="Laken -50%"]`
-- `img[alt="Dunputer -50%"]`
-- `img[alt="Krepp fra 249,-"]`
-- `img[alt="Putevar -50%"]`
-- `div:nth-child(2) > .fs.ba.bb > .ft.fu > .cv.be > .is-draggable.bk.fv > .fx.fw.b > .fy.hx.fv:nth-child(9) > div > .bs.s.br > .g0.cs.cv > .e8.fw.a3`
-- `img[alt="Toalettmapper -50%"]`
-- `img[alt="Baderomstilbehør -50%"]`
-- `img[alt="Baderomsmatter -50%"]`
-- `img[alt="Morgenkåper -50%"]`
-- `img[alt="Hotel Selection -50%"]`
-- `img[alt="Makeup-tilbehør -50%"]`
-- `img[alt="AVA velværeserie -40%"]`
-- `img[alt="Håraccessories -50%"]`
-- `img[alt="Therapie velværeserie -40%"]`
-- `img[alt="Skittentøyskurver -50%"]`
-- `img[alt="Dusjforheng -50%"]`
+- `img[alt="Sengesett 50%"]`
+- `img[alt="Dyner og puter 50%"]`
+- `img[alt="Baderomstilbehør 50%"]`
+- `img[alt="Kjøkkenvarer 50%"]`
+- `img[alt="Borddekking 50%"]`
+- `img[alt="Pynteputer 50%"]`
+- `img[alt="Pledd 50%"]`
+- `img[alt="Sofa"]`
+- `img[alt="Småbord og sofabord"]`
+- `img[alt="Gulvtepper"]`
+- `img[alt="Spisestoler"]`
+- `img[alt="Lenestoler"]`
+- `img[alt="Puffer, krakker og benker"]`
+- `img[alt="Hyller"]`
+- `img[alt="Spisebord"]`
+- `img[alt="Skap og skjenker"]`
 - `img[alt="Julesengetøy"]`
 - `img[alt="Juleputer"]`
 - `img[alt="Adventsbelysning"]`

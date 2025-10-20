@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2025-10-19T00:26:54.695Z
+**Timestamp:** 2025-10-20T00:24:21.661Z
 **URL:** [https://www.nille.no/#](https://www.nille.no/#)
 **Total Violations:** 6
 
@@ -28,13 +28,13 @@
 
 #### Affected Elements:
 
-- `img[data-varify-2aev7txpiy9=""]`
+- `img[data-varify-icoknpzzov=""]`
 - `a[target="_self"]:nth-child(2) > img[width="93px"]`
 - `a[target="_self"]:nth-child(3) > img[width="93px"]`
 - `a[target="_self"]:nth-child(4) > img[width="93px"]`
 - `a[target="_self"]:nth-child(5) > img[width="93px"]`
 - `a[target="_self"]:nth-child(6) > img[width="93px"]`
-- `img[data-varify-r0l3chvr3o=""]`
+- `img[data-varify-c2ux5p1uq27=""]`
 - `a[target="_self"]:nth-child(8) > img[width="93px"]`
 
 ### Document should not have more than one banner landmark
