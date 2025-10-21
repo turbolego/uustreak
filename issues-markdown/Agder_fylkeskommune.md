@@ -1,6 +1,6 @@
 # WCAG Violations Report for Agder fylkeskommune
 
-**Timestamp:** 2025-10-20T00:24:06.004Z
+**Timestamp:** 2025-10-21T00:22:38.549Z
 **URL:** [https://agderfk.no/#](https://agderfk.no/#)
 **Total Violations:** 2
 
@@ -34,7 +34,7 @@
 - `#Sone2502`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5000`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5100`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5300`
+- `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5200`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_44 > .webPartTittel`
 - `.container > ul`
 - `.webPartBunnLink`

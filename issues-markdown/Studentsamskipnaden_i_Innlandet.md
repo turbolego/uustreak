@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden i Innlandet
 
-**Timestamp:** 2025-10-20T00:27:28.615Z
+**Timestamp:** 2025-10-21T00:25:50.115Z
 **URL:** [https://www.sinn.no/#](https://www.sinn.no/#)
 **Total Violations:** 4
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
-- **Count:** 19
+- **Count:** 20
 
 #### Affected Elements:
 
@@ -20,6 +20,7 @@
 - `.pe-lg-6 > div > .mt-3.btn.btn-primary`
 - `.lazyblock-bilde-med-tekst-og-knapp-ZRTjVS > .py-5.row > .ps-lg-6.align-items-center.text-lg-start > div > .mt-3.btn.btn-primary`
 - `.lazyblock-bilde-med-tekst-og-knapp-Z2rdpXe > .py-5.row > .ps-lg-6.align-items-center.text-lg-start > div > .mt-3.btn.btn-primary`
+- `a[rel="noreferrer noopener"]`
 - `#menu-bunntekst-kontakt-norsk-1 > .nav-item-10834.menu-item-type-custom.menu-item-object-custom > .nav-link[href$="kontakt-oss/"]`
 - `#menu-bunntekst-kontakt-norsk-1 > .nav-item-10835.menu-item-type-post_type.menu-item-object-post > .nav-link[href$="om-oss/"]`
 - `#menu-bunntekst-kontakt-norsk-1 > .nav-item-10836.menu-item-type-post_type.menu-item-object-post > .nav-link[href$="sinns-presserom/"]`

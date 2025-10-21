@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-10-20T00:36:04.750Z
+**Timestamp:** 2025-10-21T00:31:52.249Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 5
 
@@ -24,11 +24,10 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
-- **Count:** 6
+- **Count:** 5
 
 #### Affected Elements:
 
-- `.en > span`
 - `.review-block.article.review:nth-child(1) > .tf-date`
 - `.review-block.article.review:nth-child(2) > .tf-date`
 - `.review-block.article.review:nth-child(3) > .tf-date`
@@ -88,13 +87,12 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 6
+- **Count:** 5
 
 #### Affected Elements:
 
 - `a[aria-label="Gå til startside"]`
 - `.dq`
-- `.a > div:nth-child(4)`
 - `.tf-header-slider`
 - `.tf-sidebar`
 - `#kindly-chat-api > div,.sc-dNFkOE`
