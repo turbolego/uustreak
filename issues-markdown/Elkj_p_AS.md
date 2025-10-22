@@ -1,22 +1,10 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2025-10-21T00:21:35.788Z
+**Timestamp:** 2025-10-22T00:22:15.983Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
-
-### Elements must only use supported ARIA attributes
-
-- **Impact:** critical
-- **Description:** Ensure an element's role supports its ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2
-- **Count:** 1
-
-#### Affected Elements:
-
-- `div[aria-haspopup="dialog"]`
 
 ### ARIA role should be appropriate for the element
 
@@ -89,5 +77,5 @@
 #### Affected Elements:
 
 - `button > .xl\:flex-col.text-\(--header-text\).px-4`
-- `div[aria-haspopup="dialog"] > .xl\:flex-col.text-\(--header-text\).px-4`
+- `div[aria-haspopup="menu"] > .xl\:flex-col.text-\(--header-text\).px-4`
 - `a[data-testid="cart"] > .xl\:flex-col.text-\(--header-text\).px-4`

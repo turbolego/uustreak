@@ -1,8 +1,8 @@
 # WCAG Violations Report for Clas Ohlson AS
 
-**Timestamp:** 2025-10-21T00:31:26.385Z
+**Timestamp:** 2025-10-22T00:32:44.900Z
 **URL:** [https://www.clasohlson.com/no/#](https://www.clasohlson.com/no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -42,6 +42,18 @@
 #### Affected Elements:
 
 - `.skip-nav`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT
+- **Count:** 1
+
+#### Affected Elements:
+
+- `div[data-variantcode="46-1379_NO"][data-name="MILL INVISIBLE WIFI 1300W HVIT"][data-id="461379000"] > .product-card__mid > .details > .description`
 
 ### All page content should be contained by landmarks
 

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stortinget
 
-**Timestamp:** 2025-10-21T00:25:14.320Z
-**URL:** [https://www.stortinget.no/#](https://www.stortinget.no/#)
+**Timestamp:** 2025-10-22T00:26:14.164Z
+**URL:** [https://www.stortinget.no/Error500/?aspxerrorpath=/](https://www.stortinget.no/Error500/?aspxerrorpath=/)
 **Total Violations:** 1
 
 ## Violation Details
@@ -16,4 +16,4 @@
 
 #### Affected Elements:
 
-- `h1`
+- `.visuallyhidden`

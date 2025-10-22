@@ -1,6 +1,6 @@
 # WCAG Violations Report for Firda Media AS
 
-**Timestamp:** 2025-10-21T00:23:55.900Z
+**Timestamp:** 2025-10-22T00:24:51.958Z
 **URL:** [https://www.firda.no/#](https://www.firda.no/#)
 **Total Violations:** 2
 

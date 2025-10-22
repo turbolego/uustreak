@@ -1,10 +1,22 @@
 # WCAG Violations Report for Asker og Bærum Budstikke AS
 
-**Timestamp:** 2025-10-21T00:25:29.922Z
+**Timestamp:** 2025-10-22T00:26:12.746Z
 **URL:** [https://www.budstikka.no/#](https://www.budstikka.no/#)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `brick-carousel-v2[data-slides="7"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Ensure elements marked as presentational are consistently ignored
 

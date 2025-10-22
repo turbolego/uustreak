@@ -1,8 +1,8 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2025-10-21T00:30:24.208Z
+**Timestamp:** 2025-10-22T00:31:36.765Z
 **URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
-**Total Violations:** 7
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -160,6 +160,21 @@
 - `a[data-product_id="6411501357519"][role="group"][data-price-history="0"]:nth-child(2)`
 - `a[data-product_id="6411501357519"][role="group"][data-price-history="0"]:nth-child(5)`
 - `.product-card__product-price.prrc[data-product_id="6411501357519"]`
+
+### Certain ARIA roles must be contained by particular parents
+
+- **Impact:** critical
+- **Description:** Ensure elements with an ARIA role that require parent roles are contained by them
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-required-parent?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1
+- **Count:** 4
+
+#### Affected Elements:
+
+- `.action-link[href$="varehus"][role="menuitem"]`
+- `.action-link[href$="kampanjer"][role="menuitem"]`
+- `.action-link[href$="tjenester"][role="menuitem"]`
+- `.action-link[href$="proff"][role="menuitem"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -386,10 +401,10 @@
 
 #### Affected Elements:
 
-- `menu > li:nth-child(2)`
-- `menu > li:nth-child(3)`
-- `menu > li:nth-child(4)`
-- `menu > li:nth-child(5)`
+- `li[role="none"]:nth-child(2)`
+- `li[role="none"]:nth-child(3)`
+- `li[role="none"]:nth-child(4)`
+- `li[role="none"]:nth-child(5)`
 
 ### [role="img"] elements must have an alternative text
 

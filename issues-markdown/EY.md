@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2025-10-21T00:36:46.277Z
+**Timestamp:** 2025-10-22T00:38:41.529Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 6
 
@@ -59,7 +59,7 @@
 
 #### Affected Elements:
 
-- `.visible.betterQuestionCards-card-wrapper.loaded:nth-child(1) > .betterQuestionCards-card-dragger[data-analytics-action-name="Swipe"][data-analytics-swipe=""] > .betterQuestionCards-card.article[aria-hidden="false"] > .betterQuestionCards-description > h5`
+- `.betterQuestionCards-card-wrapper.loaded.visible:nth-child(1) > .betterQuestionCards-card-dragger[data-analytics-action-name="Swipe"][data-analytics-swipe=""] > .betterQuestionCards-card.article[aria-hidden="false"] > .betterQuestionCards-description > h5`
 
 ### Links must have discernible text
 
@@ -79,7 +79,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 98
+- **Count:** 103
 
 #### Affected Elements:
 
@@ -87,19 +87,22 @@
 - `.cmp-logo__link > .sr-only`
 - `.myey-login-url`
 - `.featured_av-caption-wrapper`
-- `#image-render-f04edc067a > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
+- `#image-render-f04edc067a > .cmp-image__image[height="2560"][loading="lazy"]`
 - `.betterQuestionCards-header`
-- `.visible.betterQuestionCards-card-wrapper.loaded:nth-child(1) > .betterQuestionCards-card-dragger[data-analytics-action-name="Swipe"][data-analytics-swipe=""] > .betterQuestionCards-card.article[aria-hidden="false"]`
-- `.visible.betterQuestionCards-card-wrapper.loaded:nth-child(2) > .betterQuestionCards-card-dragger[data-analytics-action-name="Swipe"][data-analytics-swipe=""] > .betterQuestionCards-card.article[aria-hidden="false"]`
-- `.visible.betterQuestionCards-card-wrapper.loaded:nth-child(3) > .betterQuestionCards-card-dragger[data-analytics-action-name="Swipe"][data-analytics-swipe=""] > .betterQuestionCards-card.article[aria-hidden="false"]`
-- `.betterQuestionCards-card-wrapper.loaded:nth-child(4) > .betterQuestionCards-card-dragger[data-analytics-action-name="Swipe"][data-analytics-swipe=""] > .betterQuestionCards-card.article[aria-hidden="false"]`
-- `#promotional-773723eddc97 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
-- `#promotional-773723eddc97 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
-- `#button-d1ff5b82636e`
+- `.betterQuestionCards-card-wrapper.loaded.visible:nth-child(1) > .betterQuestionCards-card-dragger[data-analytics-action-name="Swipe"][data-analytics-swipe=""] > .betterQuestionCards-card.article[aria-hidden="false"]`
+- `.betterQuestionCards-card-wrapper.visible.loaded:nth-child(2) > .betterQuestionCards-card-dragger[data-analytics-action-name="Swipe"][data-analytics-swipe=""] > .betterQuestionCards-card.article[aria-hidden="false"]`
+- `.betterQuestionCards-card-wrapper.loaded.visible:nth-child(3) > .betterQuestionCards-card-dragger[data-analytics-action-name="Swipe"][data-analytics-swipe=""] > .betterQuestionCards-card.article[aria-hidden="false"]`
+- `#promotional-bad2b40780cc > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
+- `#promotional-bad2b40780cc > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
+- `#button-e052175dd8f6`
+- `#image-render-3a4ba739ee > .cmp-image__image[height="2563"][loading="lazy"]`
 - `#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-aac543142676`
-- `#image-render-d226705429 > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
+- `#image-render-d226705429 > .cmp-image__image[height="2560"][loading="lazy"]`
+- `#promotional-773723eddc97 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
+- `#promotional-773723eddc97 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
+- `#button-d1ff5b82636e`
 - `#promotional-380cc83d1759 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-380cc83d1759 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-48bc1e29e272`
@@ -118,31 +121,33 @@
 - `.cmp-subscribe__text`
 - `#button-bc60d627c8a2`
 - `.cmp-contentGrid__title`
-- `img[title="Ina Rosenberg"]`
+- `#image-render-dd78a83287 > .cmp-image__image[height="2563"][loading="lazy"]`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__title`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > p`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date__text`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor:nth-child(3)`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text:nth-child(4)`
-- `.Vsepartor:nth-child(5)`
+- `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor:nth-child(5)`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
-- `#image-render-c6bd268a33 > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
+- `img[title="Ina Rosenberg"]`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__title`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > p`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date__text`
-- `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor`
+- `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor:nth-child(3)`
+- `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text:nth-child(4)`
+- `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor:nth-child(5)`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
 - `.sec-title`
 - `.cmp-teaser__content:nth-child(1) > .small-cell-description > .cmp-teaser__title`
 - `.cmp-teaser__content:nth-child(1) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date-txt.mrxs`
 - `.cmp-teaser__content:nth-child(1) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor`
-- `.cmp-teaser__content:nth-child(1) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
+- `.cmp-teaser__content:nth-child(1) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date__text`
 - `.cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__title`
 - `.cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date-txt.mrxs`
-- `.cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor`
-- `.cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
 - `.cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__title`
 - `.cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date-txt.mrxs`
+- `.cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor`
+- `.small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
 - `#button-7addb05aebee`
 - `.cmp-slider__title`
 - `.cmp-slider__skip`

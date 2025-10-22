@@ -1,22 +1,10 @@
 # WCAG Violations Report for Tønsberg kommune
 
-**Timestamp:** 2025-10-21T00:30:56.530Z
+**Timestamp:** 2025-10-22T00:32:29.826Z
 **URL:** [https://www.tonsberg.kommune.no/#](https://www.tonsberg.kommune.no/#)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.ac-banner--text-image > .ac-banner-content--outer.ac-banner-content > .ac-banner-content--inner.ac-banner-content > .ac-banner-field--text.ac-banner-field > .ac-banner-field-header > .ac-banner-field-title`
 
 ### Alternative text of images should not be repeated as text
 

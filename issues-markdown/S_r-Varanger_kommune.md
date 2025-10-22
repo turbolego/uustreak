@@ -1,19 +1,19 @@
 # WCAG Violations Report for Sør-Varanger kommune
 
-**Timestamp:** 2025-10-21T00:27:04.500Z
-**URL:** [https://www.sor-varanger.kommune.no/#](https://www.sor-varanger.kommune.no/#)
+**Timestamp:** 2025-10-22T00:28:15.239Z
+**URL:** [https://sor-varanger.kommune.no/](https://sor-varanger.kommune.no/)
 **Total Violations:** 1
 
 ## Violation Details
 
-### Page should contain a level-one heading
+### Alternative text of images should not be repeated as text
 
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
+- **Impact:** minor
+- **Description:** Ensure image alternative is not repeated as text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright
+- **Tags:** cat.text-alternatives, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `html`
+- `img[alt="Sør-Varanger kommune"]`

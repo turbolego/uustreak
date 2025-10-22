@@ -1,6 +1,6 @@
 # WCAG Violations Report for Frende Skadeforsikring AS
 
-**Timestamp:** 2025-10-21T00:25:47.482Z
+**Timestamp:** 2025-10-22T00:27:06.651Z
 **URL:** [https://www.frende.no/#](https://www.frende.no/#)
 **Total Violations:** 3
 
@@ -36,10 +36,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
 - `.skip`
 - `.message`
-- `.arrow-link`
