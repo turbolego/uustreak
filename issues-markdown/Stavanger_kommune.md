@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger kommune
 
-**Timestamp:** 2025-10-22T00:22:21.767Z
+**Timestamp:** 2025-10-23T00:21:53.437Z
 **URL:** [https://www.stavanger.kommune.no/#](https://www.stavanger.kommune.no/#)
 **Total Violations:** 3
 
@@ -24,13 +24,14 @@
 - **Description:** Ensure the complementary landmark or aside is at top level
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/landmark-complementary-is-top-level?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 3
+- **Count:** 4
 
 #### Affected Elements:
 
-- `.linklistblock.col-md-4.block:nth-child(1) > aside`
-- `.linklistblock.col-md-4.block:nth-child(2) > aside`
-- `.linklistblock.col-md-4.block:nth-child(3) > aside`
+- `.byline`
+- `.linklistblock.col-md-4.block:nth-child(1) > .linklist`
+- `.linklistblock.col-md-4.block:nth-child(2) > .linklist`
+- `.linklistblock.col-md-4.block:nth-child(3) > .linklist`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

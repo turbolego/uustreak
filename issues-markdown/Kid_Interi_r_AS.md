@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-10-22T00:33:53.119Z
+**Timestamp:** 2025-10-23T00:37:48.234Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 5
 
@@ -63,6 +63,14 @@
 - `img[alt="Borddekking 50%"]`
 - `img[alt="Pynteputer 50%"]`
 - `img[alt="Pledd 50%"]`
+- `img[alt="Julesengetøy"]`
+- `img[alt="Juleputer"]`
+- `img[alt="Adventsbelysning"]`
+- `img[alt="Julelykter & lys"]`
+- `img[alt="Julegaveinnpakning"]`
+- `img[alt="Julepynt"]`
+- `img[alt="Julestrømper"]`
+- `img[alt="Adventskalender"]`
 - `img[alt="Sofa"]`
 - `img[alt="Småbord og sofabord"]`
 - `img[alt="Gulvtepper"]`
@@ -72,14 +80,6 @@
 - `img[alt="Hyller"]`
 - `img[alt="Spisebord"]`
 - `img[alt="Skap og skjenker"]`
-- `img[alt="Julesengetøy"]`
-- `img[alt="Juleputer"]`
-- `img[alt="Adventsbelysning"]`
-- `img[alt="Julelykter & lys"]`
-- `img[alt="Julegaveinnpakning"]`
-- `img[alt="Julepynt"]`
-- `img[alt="Julestrømper"]`
-- `img[alt="Adventskalender"]`
 
 ### All page content should be contained by landmarks
 
@@ -87,12 +87,13 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 5
+- **Count:** 6
 
 #### Affected Elements:
 
 - `a[aria-label="Gå til startside"]`
 - `.dq`
+- `.a > div:nth-child(4)`
 - `.tf-header-slider`
 - `.tf-sidebar`
 - `#kindly-chat-api > div,.sc-dNFkOE`

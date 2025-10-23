@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norgesnett AS
 
-**Timestamp:** 2025-10-22T00:30:10.049Z
+**Timestamp:** 2025-10-23T00:25:56.765Z
 **URL:** [https://norgesnett.no/](https://norgesnett.no/)
 **Total Violations:** 8
 
@@ -80,7 +80,7 @@
 
 #### Affected Elements:
 
-- `img[alt="Strømbrudd"]`
+- `.entered.litespeed-loaded[alt="Strømbrudd"]`
 - `img[alt="Faktura"]`
 - `img[alt="Nettleie"]`
 - `img[alt="Han-port"]`

@@ -1,45 +1,33 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2025-10-22T00:38:41.529Z
+**Timestamp:** 2025-10-23T00:37:24.287Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
-**Total Violations:** 6
+**Total Violations:** 4
 
 ## Violation Details
-
-### Elements must only use supported ARIA attributes
-
-- **Impact:** critical
-- **Description:** Ensure an element's role supports its ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.center-align`
 
 ### Certain ARIA roles must be contained by particular parents
 
 - **Impact:** critical
 - **Description:** Ensure elements with an ARIA role that require parent roles are contained by them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-required-parent?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-required-parent?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 5
 
 #### Affected Elements:
 
-- `.nav-level-one[href$="insights"][role="tab"]`
-- `.nav-level-one[href$="services"][role="tab"]`
+- `a[href$="insights"][role="tab"][aria-hidden="false"]`
+- `a[href$="services"][role="tab"][aria-hidden="false"]`
 - `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(3) > .nav-level-one[role="tab"][aria-hidden="false"]`
-- `.nav-level-one[href$="careers"][role="tab"]`
-- `.level-one-last-link[href$="about-us"][role="tab"]`
+- `a[href$="careers"][role="tab"][aria-hidden="false"]`
+- `a[href$="about-us"][role="tab"][aria-hidden="false"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 4
 
 #### Affected Elements:
@@ -49,24 +37,12 @@
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="6"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.betterQuestionCards-card-wrapper.loaded.visible:nth-child(1) > .betterQuestionCards-card-dragger[data-analytics-action-name="Swipe"][data-analytics-swipe=""] > .betterQuestionCards-card.article[aria-hidden="false"] > .betterQuestionCards-description > h5`
-
 ### Links must have discernible text
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 1
 
 #### Affected Elements:
@@ -77,9 +53,9 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
-- **Tags:** cat.keyboard, best-practice
-- **Count:** 103
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 96
 
 #### Affected Elements:
 
@@ -88,14 +64,7 @@
 - `.myey-login-url`
 - `.featured_av-caption-wrapper`
 - `#image-render-f04edc067a > .cmp-image__image[height="2560"][loading="lazy"]`
-- `.betterQuestionCards-header`
-- `.betterQuestionCards-card-wrapper.loaded.visible:nth-child(1) > .betterQuestionCards-card-dragger[data-analytics-action-name="Swipe"][data-analytics-swipe=""] > .betterQuestionCards-card.article[aria-hidden="false"]`
-- `.betterQuestionCards-card-wrapper.visible.loaded:nth-child(2) > .betterQuestionCards-card-dragger[data-analytics-action-name="Swipe"][data-analytics-swipe=""] > .betterQuestionCards-card.article[aria-hidden="false"]`
-- `.betterQuestionCards-card-wrapper.loaded.visible:nth-child(3) > .betterQuestionCards-card-dragger[data-analytics-action-name="Swipe"][data-analytics-swipe=""] > .betterQuestionCards-card.article[aria-hidden="false"]`
-- `#promotional-bad2b40780cc > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
-- `#promotional-bad2b40780cc > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
-- `#button-e052175dd8f6`
-- `#image-render-3a4ba739ee > .cmp-image__image[height="2563"][loading="lazy"]`
+- `.theme-dark.cmp-container--theme-dark.cmp-container--background-color-e2e`
 - `#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-aac543142676`
@@ -121,7 +90,7 @@
 - `.cmp-subscribe__text`
 - `#button-bc60d627c8a2`
 - `.cmp-contentGrid__title`
-- `#image-render-dd78a83287 > .cmp-image__image[height="2563"][loading="lazy"]`
+- `img[height="2563"]`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__title`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > p`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date__text`

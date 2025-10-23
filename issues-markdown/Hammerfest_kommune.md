@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hammerfest kommune
 
-**Timestamp:** 2025-10-22T00:28:11.506Z
+**Timestamp:** 2025-10-23T00:32:10.509Z
 **URL:** [https://hammerfest.kommune.no/#](https://hammerfest.kommune.no/#)
 **Total Violations:** 6
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.flex-control-paging > li:nth-child(1) > a`
+- `.flex-active`
 
 ### Headings should not be empty
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.flex-active-slide > .slide > .center.articles-carousel-li-center > .articles-carousel-li-text.text > .artikkel > h4`
+- `.articles-carousel-li:nth-child(1) > .slide > .center.articles-carousel-li-center > .articles-carousel-li-text.text > .artikkel > h4`
 
 ### Heading levels should only increase by one
 
