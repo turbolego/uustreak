@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dfind Consulting
 
-**Timestamp:** 2025-10-23T00:35:56.650Z
+**Timestamp:** 2025-10-24T00:39:06.744Z
 **URL:** [https://www.dfindconsulting.no/#](https://www.dfindconsulting.no/#)
 **Total Violations:** 2
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 3
 
@@ -24,8 +24,8 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
+- **Tags:** cat.keyboard, best-practice
 - **Count:** 5
 
 #### Affected Elements:

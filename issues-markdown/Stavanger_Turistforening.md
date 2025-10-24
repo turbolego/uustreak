@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2025-10-23T00:21:41.403Z
+**Timestamp:** 2025-10-24T00:24:05.071Z
 **URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
 **Total Violations:** 10
 
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-568737"]`
-- `button[aria-controls="modal-561456"]`
-- `button[aria-controls="modal-562485"]`
-- `button[aria-controls="modal-561513"]`
-- `button[aria-controls="modal-497799"]`
 - `button[aria-controls="modal-567116"]`
 - `button[aria-controls="modal-496382"]`
 - `button[aria-controls="modal-510408"]`
+- `button[aria-controls="modal-505843"]`
+- `button[aria-controls="modal-506896"]`
+- `button[aria-controls="modal-502600"]`
+- `button[aria-controls="modal-573483"]`
+- `button[aria-controls="modal-506927"]`
 
 ### Buttons must have discernible text
 
@@ -93,7 +93,7 @@
 #### Affected Elements:
 
 - `.w-auto > picture > .object-center.object-cover`
-- `#react_0HNGHN0B9B36B > .my-10 > .md\:grid-cols-4.mb-16.gap-7 > .group.relative:nth-child(3) > div > .md\:flex-col.space-x-4.md\:space-x-0 > .w-2\/5.md\:mb-3.md\:w-full > .overflow-hidden.rounded-lg > picture > .t-\[10px\].md\:rounded-\[10px\].md\:group-hover\:scale-110`
+- `#react_0HNGI092NCHKL > .my-10 > .md\:grid-cols-4.mb-16.gap-7 > .group.relative:nth-child(3) > div > .md\:flex-col.space-x-4.md\:space-x-0 > .w-2\/5.md\:mb-3.md\:w-full > .overflow-hidden.rounded-lg > picture > .t-\[10px\].md\:rounded-\[10px\].md\:group-hover\:scale-110`
 - `div:nth-child(1) > .bg-beige-50.bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `div:nth-child(2) > .bg-beige-50.bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `.object-center[height="264"][width="600"]`

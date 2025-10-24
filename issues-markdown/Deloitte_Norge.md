@@ -1,6 +1,6 @@
 # WCAG Violations Report for Deloitte Norge
 
-**Timestamp:** 2025-10-23T00:35:16.467Z
+**Timestamp:** 2025-10-24T00:38:26.995Z
 **URL:** [https://www.deloitte.com/no/no.html](https://www.deloitte.com/no/no.html)
 **Total Violations:** 4
 
@@ -10,8 +10,8 @@
 
 - **Impact:** critical
 - **Description:** Ensure elements with an ARIA role that require parent roles are contained by them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-required-parent?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-required-parent?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1
 - **Count:** 8
 
 #### Affected Elements:
@@ -29,7 +29,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -41,8 +41,8 @@
 
 - **Impact:** serious
 - **Description:** Ensure that lists are structured correctly
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/list?application=playwright
-- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/list?application=playwright
+- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1
 - **Count:** 2
 
 #### Affected Elements:
@@ -54,8 +54,8 @@
 
 - **Impact:** serious
 - **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/nested-interactive?application=playwright
-- **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/nested-interactive?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2
 - **Count:** 4
 
 #### Affected Elements:

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2025-10-23T00:35:29.821Z
+**Timestamp:** 2025-10-24T00:38:41.315Z
 **URL:** [https://dns.no/#](https://dns.no/#)
 **Total Violations:** 5
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure table headers have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-table-header?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/empty-table-header?application=playwright
 - **Tags:** cat.name-role-value, best-practice
 - **Count:** 2
 
@@ -23,8 +23,8 @@
 
 - **Impact:** serious
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2
 - **Count:** 1
 
 #### Affected Elements:
@@ -35,8 +35,8 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT
 - **Count:** 11
 
 #### Affected Elements:
@@ -57,8 +57,8 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
+- **Tags:** cat.keyboard, best-practice
 - **Count:** 87
 
 #### Affected Elements:
@@ -155,7 +155,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure tabindex attribute values are not greater than 0
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/tabindex?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/tabindex?application=playwright
 - **Tags:** cat.keyboard, best-practice
 - **Count:** 10
 

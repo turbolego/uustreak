@@ -1,22 +1,10 @@
 # WCAG Violations Report for Riksteatret
 
-**Timestamp:** 2025-10-23T00:30:36.246Z
+**Timestamp:** 2025-10-24T00:32:55.820Z
 **URL:** [https://www.riksteatret.no/#](https://www.riksteatret.no/#)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#feature_11 > .module__grid > .module__content > .module__head > h3`
 
 ### Heading levels should only increase by one
 

@@ -1,28 +1,16 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2025-10-23T00:33:08.303Z
+**Timestamp:** 2025-10-24T00:36:10.419Z
 **URL:** [https://www.dagbladet.no/#](https://www.dagbladet.no/#)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.t119 > .text-red.color_mobile_text-red[data-lab-text_color_desktop="text-red"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -34,8 +22,8 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
+- **Tags:** cat.keyboard, best-practice
 - **Count:** 1
 
 #### Affected Elements:

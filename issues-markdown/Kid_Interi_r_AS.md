@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-10-23T00:37:48.234Z
+**Timestamp:** 2025-10-24T00:35:08.843Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 5
 
@@ -52,7 +52,7 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 24
+- **Count:** 25
 
 #### Affected Elements:
 
@@ -63,14 +63,6 @@
 - `img[alt="Borddekking 50%"]`
 - `img[alt="Pynteputer 50%"]`
 - `img[alt="Pledd 50%"]`
-- `img[alt="Julesengetøy"]`
-- `img[alt="Juleputer"]`
-- `img[alt="Adventsbelysning"]`
-- `img[alt="Julelykter & lys"]`
-- `img[alt="Julegaveinnpakning"]`
-- `img[alt="Julepynt"]`
-- `img[alt="Julestrømper"]`
-- `img[alt="Adventskalender"]`
 - `img[alt="Sofa"]`
 - `img[alt="Småbord og sofabord"]`
 - `img[alt="Gulvtepper"]`
@@ -80,6 +72,15 @@
 - `img[alt="Hyller"]`
 - `img[alt="Spisebord"]`
 - `img[alt="Skap og skjenker"]`
+- `img[alt="Julesengetøy"]`
+- `img[alt="Juleputer"]`
+- `img[alt="Adventsbelysning"]`
+- `img[alt="Julekranser"]`
+- `img[alt="Julelykter & lys"]`
+- `img[alt="Julegaveinnpakning"]`
+- `img[alt="Julepynt"]`
+- `img[alt="Julestrømper"]`
+- `img[alt="Adventskalender"]`
 
 ### All page content should be contained by landmarks
 

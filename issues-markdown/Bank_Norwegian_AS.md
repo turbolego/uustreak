@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bank Norwegian AS
 
-**Timestamp:** 2025-10-23T00:26:58.383Z
+**Timestamp:** 2025-10-24T00:29:20.666Z
 **URL:** [https://www.banknorwegian.no/#](https://www.banknorwegian.no/#)
 **Total Violations:** 1
 
@@ -10,7 +10,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure every ARIA dialog and alertdialog node has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-dialog-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-dialog-name?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 1
 
