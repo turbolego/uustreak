@@ -1,6 +1,6 @@
 # WCAG Violations Report for Eiendomsmegler Vest AS
 
-**Timestamp:** 2025-10-24T00:41:16.462Z
+**Timestamp:** 2025-10-25T00:42:31.650Z
 **URL:** [https://www.eiendomsmeglervest.no/#](https://www.eiendomsmeglervest.no/#)
 **Total Violations:** 1
 

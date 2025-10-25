@@ -1,8 +1,8 @@
 # WCAG Violations Report for Strindheim skole
 
-**Timestamp:** 2025-10-24T00:28:04.006Z
+**Timestamp:** 2025-10-25T00:25:15.389Z
 **URL:** [https://www.trondheim.kommune.no/org/oppvekst/skoler/strindheim-skole/#](https://www.trondheim.kommune.no/org/oppvekst/skoler/strindheim-skole/#)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `.leaflet-marker-icon`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `h4`
 
 ### Ensure elements marked as presentational are consistently ignored
 

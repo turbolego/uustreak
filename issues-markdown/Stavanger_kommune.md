@@ -1,22 +1,10 @@
 # WCAG Violations Report for Stavanger kommune
 
-**Timestamp:** 2025-10-24T00:24:17.774Z
+**Timestamp:** 2025-10-25T00:21:36.456Z
 **URL:** [https://www.stavanger.kommune.no/#](https://www.stavanger.kommune.no/#)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
-
-### ARIA attributes must conform to valid values
-
-- **Impact:** critical
-- **Description:** Ensure all ARIA attributes have valid values
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe, .FocusTarget_module_focusTarget__abd564d5`
 
 ### Frames must have an accessible name
 

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Widerøe AS
 
-**Timestamp:** 2025-10-24T00:39:03.194Z
+**Timestamp:** 2025-10-25T00:35:46.330Z
 **URL:** [https://www.wideroe.no/#](https://www.wideroe.no/#)
-**Total Violations:** 10
+**Total Violations:** 9
 
 ## Violation Details
 
@@ -57,18 +57,6 @@
 
 - `.footer-container`
 
-### Document should not have more than one banner landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the document has at most one banner landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-banner?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.wrapper > header`
-
 ### Document should not have more than one contentinfo landmark
 
 - **Impact:** moderate
@@ -87,11 +75,10 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.wrapper > header`
 - `.col-sm-5`
 - `footer`
 
@@ -142,10 +129,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.widget-box > .hidden-xs`
-- `.widget-tabs`
-- `.widget-fields > div:nth-child(2)`
+- `.book-your-flight-label`
+- `.new-booking-widget-elements-desktop`

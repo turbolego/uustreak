@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kristiansand Dyrepark AS
 
-**Timestamp:** 2025-10-24T00:37:10.832Z
+**Timestamp:** 2025-10-25T00:34:08.781Z
 **URL:** [https://www.dyreparken.no/#](https://www.dyreparken.no/#)
 **Total Violations:** 3
 
@@ -39,15 +39,15 @@
 - `.c-grid--columns-2.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-grid--columns-2.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-grid--columns-2.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(14) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(14) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(14) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(14) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(6) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-bg-background.c-module--has-background.c-module--grid:nth-child(15) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-bg-background.c-module--has-background.c-module--grid:nth-child(15) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-bg-background.c-module--has-background.c-module--grid:nth-child(15) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-bg-background.c-module--has-background.c-module--grid:nth-child(15) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-bg-background.c-module--has-background.c-module--grid:nth-child(15) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(6) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(15) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(15) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(15) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(15) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(6) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.u-bg-background.c-module--has-background.c-module--grid:nth-child(16) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.u-bg-background.c-module--has-background.c-module--grid:nth-child(16) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.u-bg-background.c-module--has-background.c-module--grid:nth-child(16) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.u-bg-background.c-module--has-background.c-module--grid:nth-child(16) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.u-bg-background.c-module--has-background.c-module--grid:nth-child(16) > .c-module__container > .c-grid--columns-3.c-grid--columns-small-2.c-grid > .c-grid__items > .c-grid__item:nth-child(6) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-billboard__image[href$="app/"][itemtype="http://schema.org/ImageObject"]`
 - `.c-footer__app__links > a:nth-child(1)`
 - `.c-footer__app__links > a:nth-child(2)`

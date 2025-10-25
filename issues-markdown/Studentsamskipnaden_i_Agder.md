@@ -1,10 +1,23 @@
 # WCAG Violations Report for Studentsamskipnaden i Agder
 
-**Timestamp:** 2025-10-24T00:28:16.475Z
+**Timestamp:** 2025-10-25T00:25:28.856Z
 **URL:** [https://www.sia.no/#](https://www.sia.no/#)
-**Total Violations:** 9
+**Total Violations:** 10
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
+- **Count:** 2
+
+#### Affected Elements:
+
+- `em`
+- `a[title="dsb.no"]`
 
 ### Headings should not be empty
 

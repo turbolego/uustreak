@@ -1,10 +1,22 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2025-10-24T00:31:04.193Z
+**Timestamp:** 2025-10-25T00:33:18.313Z
 **URL:** [https://www.ba.no/#](https://www.ba.no/#)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `brick-carousel-v2[data-slides="13"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Ensure elements marked as presentational are consistently ignored
 

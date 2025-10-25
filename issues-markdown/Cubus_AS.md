@@ -1,6 +1,6 @@
 # WCAG Violations Report for Cubus AS
 
-**Timestamp:** 2025-10-24T00:35:42.250Z
+**Timestamp:** 2025-10-25T00:37:14.310Z
 **URL:** [https://cubus.com/no/#](https://cubus.com/no/#)
 **Total Violations:** 2
 
@@ -29,4 +29,4 @@
 #### Affected Elements:
 
 - `li[data-swiper-slide-index="3"] > div > .css-13m7aew-StyledProductCard.e1xleaue7 > .css-14rstro-StyledColorAndReviewRow.e1xleaue1 > .e1p4a8058.css-1yt2d4j-StyledProductColors[aria-label="Andre farger"] > .e1p4a8057.css-1tqts6y-StyledProductColorItemWrapper.MuiListItem-gutters:nth-child(1) > .css-mur1lq-StyledProductColorItem.e1p4a8056 > .MuiIconButton-sizeLarge[aria-label=""][title=""]`
-- `li[data-swiper-slide-index="14"] > div > .css-13m7aew-StyledProductCard.e1xleaue7 > .css-14rstro-StyledColorAndReviewRow.e1xleaue1 > .e1p4a8058.css-1yt2d4j-StyledProductColors[aria-label="Andre farger"] > .e1p4a8057.css-1tqts6y-StyledProductColorItemWrapper.MuiListItem-gutters > .css-mur1lq-StyledProductColorItem.e1p4a8056 > .MuiIconButton-sizeLarge[aria-label=""][title=""]`
+- `li[data-swiper-slide-index="13"] > div > .css-13m7aew-StyledProductCard.e1xleaue7 > .css-14rstro-StyledColorAndReviewRow.e1xleaue1 > .e1p4a8058.css-1yt2d4j-StyledProductColors[aria-label="Andre farger"] > .e1p4a8057.css-1tqts6y-StyledProductColorItemWrapper.MuiListItem-gutters > .css-mur1lq-StyledProductColorItem.e1p4a8056 > .MuiIconButton-sizeLarge[aria-label=""][title=""]`
