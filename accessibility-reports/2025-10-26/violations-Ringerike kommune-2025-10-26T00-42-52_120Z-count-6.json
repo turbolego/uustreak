@@ -1,0 +1,307 @@
+{
+  "project": "Ringerike kommune",
+  "timestamp": "2025-10-26T00:42:52.120Z",
+  "url": "https://www.ringerike.kommune.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a title=\"Se alle saker\" href=\"/innhold/pagaende-planprosesser/#heading-h3-5\" target=\"_blank\">Se fullstendig liste her</a>",
+          "target": [
+            "a[title=\"Se alle saker\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #428bca, background color: #f4f4f4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a title=\"Vis alle \" href=\"/innhold/pagaende-planprosesser/#heading-h3-3\" target=\"_blank\">Se fullstendig liste her</a>",
+          "target": [
+            "a[title=\"Vis alle \"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #428bca, background color: #f4f4f4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe src=\"//prokomresources.prokomcdn.no/plugins/ssp-kalender-app/iframe-app/app-small.html?url=https://sspkalender.prokom.no&amp;name=ringerikekommune&amp;trans=en#viewtype:redirect-list/templatetype:3/daytype:1/params:{&quot;Categories&quot;:&quot;&quot;,&quot;SearchText&quot;:&quot;&quot;,&quot;DateFrom&quot;:&quot;&quot;,&quot;DateTo&quot;:&quot;03.02.2026&quot;,&quot;Municipalities&quot;:&quot;0&quot;,&quot;Kunde&quot;:&quot;ringerikekommune&quot;,&quot;Id&quot;:&quot;&quot;,&quot;ItemDate&quot;:&quot;&quot;,&quot;WeekDays&quot;:&quot;&quot;,&quot;List&quot;:&quot;compact&quot;,&quot;Count&quot;:&quot;10&quot;,&quot;Distributor&quot;:&quot;&quot;}/\" width=\"100%\" scrolling=\"no\" id=\"portalframe1\" frameborder=\"0\" style=\"overflow: hidden; min-height: 200px; height: 769px;\">",
+          "target": [
+            "#portalframe1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "html-has-lang",
+      "impact": "serious",
+      "description": "Ensure every HTML document has a lang attribute",
+      "help": "<html> element must have a lang attribute",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=playwright",
+      "tags": [
+        "cat.language",
+        "wcag2a",
+        "wcag311",
+        "TTv5",
+        "TT11.a",
+        "EN-301-549",
+        "EN-9.3.1.1",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html class=\"no-js\" style=\"height: 100%;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix any of the following:\n  The <html> element does not have a lang attribute"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 11,
+      "nodes": [
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/bfc7dbcda91746c7ba11d46b5c62a67b.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/bfc7dbcda91746c7ba11d46b5c62a67b.aspx\">",
+          "target": [
+            "div[data-blockid=\"46\"] > .ssp__panel__news-item:nth-child(1) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/72301fffdbf04cefbf0a6d47821367a7.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/72301fffdbf04cefbf0a6d47821367a7.aspx\">",
+          "target": [
+            "div[data-blockid=\"46\"] > .ssp__panel__news-item:nth-child(2) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/99f8f59467b046869603ee5a47e675b1.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/99f8f59467b046869603ee5a47e675b1.aspx\">",
+          "target": [
+            ".ssp__panel__news-item:nth-child(3) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/6e1b892392d147b2a66171a42a7064ce.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/6e1b892392d147b2a66171a42a7064ce.aspx\">",
+          "target": [
+            "div[data-blockid=\"46\"] > .ssp__panel__news-item:nth-child(4) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/fda4e45b363a45369ef5b2b63d0180bc.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/fda4e45b363a45369ef5b2b63d0180bc.aspx\">",
+          "target": [
+            "div[data-blockid=\"46\"] > .ssp__panel__news-item:nth-child(5) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/55f96fadd2c9455fab699da43a6f7d30.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/55f96fadd2c9455fab699da43a6f7d30.aspx\">",
+          "target": [
+            "div[data-blockid=\"12423\"] > .ssp__panel__news-item:nth-child(1) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/8bc4c6d87db447779c8fc5c2cce7f622.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/8bc4c6d87db447779c8fc5c2cce7f622.aspx\">",
+          "target": [
+            "div[data-blockid=\"12423\"] > .ssp__panel__news-item:nth-child(2) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/16c37562ac05403881325c927db1a4df.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/16c37562ac05403881325c927db1a4df.aspx\">",
+          "target": [
+            "div[data-blockid=\"12423\"] > .ssp__panel__news-item:nth-child(4) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/db33fafd33514c988bb3a09829dd6232.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/db33fafd33514c988bb3a09829dd6232.aspx\">",
+          "target": [
+            "div[data-blockid=\"12423\"] > .ssp__panel__news-item:nth-child(5) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__panel__news-image\" data-original=\"/link/90404d6c0ff54ad8b38eb7460d1ad2c7.aspx\" data-responsiveimage=\"true\" width=\"204\" height=\"\" src=\"https://res.cloudinary.com/ssp/image/fetch/w_204,q_100,c_fill/https://www.ringerike.kommune.no/link/90404d6c0ff54ad8b38eb7460d1ad2c7.aspx\">",
+          "target": [
+            "div[data-blockid=\"1301\"] > .ssp__panel__news-item:nth-child(1) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage=\"true\"][width=\"204\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ssp__footer-wave\" src=\"/external/ssp/files/Ringerike-footerlines-green.svg\">",
+          "target": [
+            ".ssp__footer-wave"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label-title-only?application=playwright",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input type=\"text\" id=\"search__input--id\" class=\"search__input\" title=\"Skriv spørsmålet ditt her\" value=\"\" placeholder=\"Hva lurer du på?\">",
+          "target": [
+            "#search__input--id"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 10,
+      "nodes": [
+        {
+          "html": "<div>",
+          "target": [
+            "div:nth-child(8) > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            "div:nth-child(8) > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"ssp__panel__title\">\n        Hva skjer?\n    </h2>",
+          "target": [
+            ".ssp__panel--grey.ssp__panel.mb-30 > .ssp__panel__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"ssp__timespan\">",
+          "target": [
+            ".ssp__timespan"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"container\">",
+          "target": [
+            "#portalframe1",
+            "#container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row mt-20\">    \n            <div class=\"col-md-12 text-left-sm\">\n                <a class=\"btn btn-primary ssp__panel__button\" href=\"/kalender/\">Se hele aktivitetskalenderen</a>\n                \n            </div>\n    </div>",
+          "target": [
+            ".mt-20"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-xs-12 col-md-6 mb-30\">",
+          "target": [
+            ".ssp__fluid-panel > div > div > div > .container > .row > .col-md-6.mb-30.col-xs-12:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"test-wrapper\">\n    <img class=\"ssp__footer-wave\" src=\"/external/ssp/files/Ringerike-footerlines-green.svg\">\n</div>",
+          "target": [
+            ".test-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<audio id=\"vfact_testaudio\" controls=\"\"> not supported</audio>",
+          "target": [
+            "#vFact_audioFrame",
+            "#vfact_testaudio"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h1>Her er framen</h1>",
+          "target": [
+            "#vFact_audioFrame",
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
