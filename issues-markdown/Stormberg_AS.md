@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2025-10-25T00:24:50.280Z
+**Timestamp:** 2025-10-26T00:26:40.455Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -17,34 +17,34 @@
 #### Affected Elements:
 
 - `.gt.dr.ds > div > div`
-- `.gv.am[href$="nyheter"]`
+- `a[href$="dagskupp"]`
 - `li:nth-child(1) > .i3.i4[aria-label="Nordlys resirkulert termodress"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
 - `li:nth-child(1) > .i3.i4[aria-label="Nordlys resirkulert termodress"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `li:nth-child(2) > .i3.i4[aria-label="Nordlys resirkulert termodress"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
-- `li:nth-child(2) > .i3.i4[aria-label="Nordlys resirkulert termodress"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `li:nth-child(2) > .i3.i4[aria-label="Båtsfjord lang regnkåpe"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `li:nth-child(3) > .i3.i4[aria-label="Båtsfjord lang regnkåpe"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `li:nth-child(4) > .i3.i4[aria-label="Nordlys resirkulert termodress"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `li:nth-child(4) > .i3.i4[aria-label="Nordlys resirkulert termodress"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Eidnes vattert softshellparkas"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
 - `a[aria-label="Eidnes vattert softshellparkas"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `li:nth-child(4) > .i3.i4[aria-label="Båtsfjord lang regnkåpe"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
-- `li:nth-child(5) > .i3.i4[aria-label="Båtsfjord lang regnkåpe"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
-- `li:nth-child(1) > .i3.i4[aria-label="Hemsedal 2-lags ullsett"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
-- `a[aria-label="Nordtoppen vinterjakke"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
-- `a[aria-label="Nordtoppen vinterjakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `a[aria-label="Nordtoppen parkas"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
-- `a[aria-label="Nordtoppen parkas"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `li:nth-child(1) > .i3.i4[aria-label="Nordtoppen vinterjakke"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `li:nth-child(1) > .i3.i4[aria-label="Nordtoppen vinterjakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `li:nth-child(2) > .i3.i4[aria-label="Hemsedal 2-lags ullsett"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
 - `a[aria-label="Østisen vattert parkas"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
 - `a[aria-label="Østisen vattert parkas"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `a[aria-label="Nordtoppen parkas"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `a[aria-label="Nordtoppen parkas"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `li:nth-child(5) > .i3.i4[aria-label="Hemsedal 2-lags ullsett"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
-- `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ik.ig`
-- `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
-- `.jj`
-- `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ik.ig`
-- `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `a[aria-label="Stormflod regnjakke"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `a[aria-label="Stormflod regnjakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `li:nth-child(2) > .i3.i4[aria-label="Nordtoppen vinterjakke"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `li:nth-child(2) > .i3.i4[aria-label="Nordtoppen vinterjakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ik.ig`
 - `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `.jj`
 - `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ik.ig`
 - `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
 - `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ik.ig`
-- `li:nth-child(5) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
