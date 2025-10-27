@@ -1,8 +1,8 @@
 # WCAG Violations Report for Norgesnett AS
 
-**Timestamp:** 2025-10-26T00:27:19.319Z
+**Timestamp:** 2025-10-27T00:34:14.506Z
 **URL:** [https://norgesnett.no/](https://norgesnett.no/)
-**Total Violations:** 8
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -22,18 +22,6 @@
 - `.e2-e56.is-current-slide.is-virtual:nth-child(7)`
 - `.e2-e66.is-virtual.x-slide:nth-child(8)`
 - `.e2-e76.is-virtual.x-slide:nth-child(9)`
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#main__simplifaiChatbotActivator--1OJ-o, button`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -57,18 +45,6 @@
 - `.e5071-e108 > .x-anchor-content > .x-anchor-text > .x-anchor-text-primary`
 - `.e5071-e110 > .x-anchor-content > .x-anchor-text > .x-anchor-text-secondary`
 - `.e5071-e110 > .x-anchor-content > .x-anchor-text > .x-anchor-text-primary`
-
-### Frames must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#main__simplifaiChatbotActivator--1OJ-o`
 
 ### Alternative text of images should not be repeated as text
 

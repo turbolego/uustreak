@@ -1,8 +1,8 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2025-10-26T00:24:23.001Z
+**Timestamp:** 2025-10-27T00:31:24.422Z
 **URL:** [https://www.nille.no/#](https://www.nille.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -17,6 +17,25 @@
 #### Affected Elements:
 
 - `#declineButton`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT
+- **Count:** 8
+
+#### Affected Elements:
+
+- `img[data-varify-wnnr9wa773p=""]`
+- `a[target="_self"]:nth-child(2) > img[width="93px"]`
+- `a[target="_self"]:nth-child(3) > img[width="93px"]`
+- `a[target="_self"]:nth-child(4) > img[width="93px"]`
+- `a[target="_self"]:nth-child(5) > img[width="93px"]`
+- `a[target="_self"]:nth-child(6) > img[width="93px"]`
+- `img[data-varify-klmpk3iw2eb=""]`
+- `a[target="_self"]:nth-child(8) > img[width="93px"]`
 
 ### Document should not have more than one banner landmark
 
@@ -48,7 +67,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT
-- **Count:** 4
+- **Count:** 12
 
 #### Affected Elements:
 
@@ -56,6 +75,14 @@
 - `a[href$="festtilbehor/"][aria-label=""][title=""]`
 - `a[href$="kostymer/"][aria-label=""][title=""]`
 - `a[href$="soverom/"]`
+- `a[target="_self"]:nth-child(1)`
+- `a[target="_self"]:nth-child(2)`
+- `a[target="_self"]:nth-child(3)`
+- `a[target="_self"]:nth-child(4)`
+- `a[target="_self"]:nth-child(5)`
+- `a[target="_self"]:nth-child(6)`
+- `a[target="_self"]:nth-child(7)`
+- `a[target="_self"]:nth-child(8)`
 
 ### All page content should be contained by landmarks
 
