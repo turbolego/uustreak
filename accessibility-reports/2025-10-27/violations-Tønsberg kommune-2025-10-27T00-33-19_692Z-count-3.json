@@ -1,0 +1,97 @@
+{
+  "project": "Tønsberg kommune",
+  "timestamp": "2025-10-27T00:33:19.692Z",
+  "url": "https://www.tonsberg.kommune.no/#",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img alt=\"Tønsberg kommune \" src=\"/handlers/bv.ashx/i68ec8e25-b362-44a3-bb9b-f78acb11d7d8/46757tynsberg-kommune-logo-uten-visjon_liggende_sort.png\">",
+          "target": [
+            "img[alt=\"Tønsberg kommune \"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"back-to-top-button js-back-to-top-button js-new-back-to-top-button\" href=\"#header\">\n              <span>Til toppen</span>\n            </a>",
+          "target": [
+            ".back-to-top-button"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Hva leter du etter i dag?</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_248 > .webPartTittel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input name=\"ctl00$ctl00$ctl00$innhold$ctl07$WebpartId_248$WebpartId_248$txtSearch\" type=\"text\" id=\"ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_248_WebpartId_248_txtSearch\" class=\"js-liten-trigger-search\" aria-label=\"Søketekst\" placeholder=\"Søk her\" data-handled=\"true\" autocomplete=\"off\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_248_WebpartId_248_txtSearch"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPart banner-webpart--links\" id=\"ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_249\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_249"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

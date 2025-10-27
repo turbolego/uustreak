@@ -1,0 +1,97 @@
+{
+  "project": "Teknisk Ukeblad Media AS",
+  "timestamp": "2025-10-27T00:29:56.831Z",
+  "url": "https://www.tu.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" role=\"switch\" aria-checked=\"false\" data-state=\"unchecked\" value=\"on\" class=\"peer inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border border-solid border-brandNeutral-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-brandNeutral-900 dark:data-[state=checked]:bg-brandTeal-700 dark:data-[state=checked]:border-brandTeal-700 dark:data-[state=unchecked]:border-brandStone-600 data-[state=unchecked]:bg-transparent dark:data-[state=unchecked]:bg-brandStone-600\">",
+          "target": [
+            ".peer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"inline-flex items-center justify-center gap-2 rounded-full text-sm font-sans ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 dark:ring-offset-neutral-950 dark:focus-visible:ring-neutral-300 border border-solid border-brandNeutral-900 bg-transparent text-brandNeutral-900 hover:bg-site-brand-darker dark:bg-brandNeutral-900 dark:text-white dark:border-brandNeutral-100 dark:hover:border-brandNeutral-900 dark:hover:text-brandNeutral-900 h-11 w-11\">",
+          "target": [
+            ".gap-4.flex > .bg-transparent.hover\\:bg-site-brand-darker.dark\\:text-white:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"inline-flex items-center justify-center gap-2 rounded-full text-sm font-sans ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 dark:ring-offset-neutral-950 dark:focus-visible:ring-neutral-300 border border-solid border-brandNeutral-900 bg-transparent text-brandNeutral-900 hover:bg-site-brand-darker dark:bg-brandNeutral-900 dark:text-white dark:border-brandNeutral-100 dark:hover:border-brandNeutral-900 dark:hover:text-brandNeutral-900 h-11 w-11\">",
+          "target": [
+            ".gap-4.flex > .bg-transparent.hover\\:bg-site-brand-darker.dark\\:text-white:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<button title=\"Godta\" aria-label=\"Godta\" class=\"message-component message-button no-children focusable acceptButton start-focus sp_choice_type_11\" style=\"opacity: 1; padding: 10px 15px; margin: 10px; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 5px; border-style: solid; font-size: 14px; font-weight: 700; color: rgb(255, 255, 255); font-family: arial, helvetica, sans-serif; background: rgb(24, 144, 255); width: calc(100% - 50px);\">",
+          "target": [
+            "#sp_message_iframe_1303444",
+            ".acceptButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #ffffff, background color: #1890ff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button title=\"Avvis alle\" aria-label=\"Avvis alle\" class=\"message-component message-button no-children focusable rejectButton sp_choice_type_13\" style=\"opacity: 1; padding: 10px 15px; margin: 10px; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 5px; border-style: solid; font-size: 14px; font-weight: 700; color: rgb(255, 255, 255); font-family: arial, helvetica, sans-serif; background: rgb(24, 144, 255); width: calc(100% - 50px);\">",
+          "target": [
+            "#sp_message_iframe_1303444",
+            ".rejectButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #ffffff, background color: #1890ff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button title=\"Tilpass\" aria-label=\"Tilpass\" class=\"message-component message-button no-children focusable customiseButton sp_choice_type_12 last-focusable-el\" style=\"opacity: 1; padding: 10px 15px; margin: 10px; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 5px; border-style: solid; font-size: 14px; font-weight: 700; color: rgb(255, 255, 255); font-family: arial, helvetica, sans-serif; background: rgb(24, 144, 255); width: calc(100% - 50px);\">",
+          "target": [
+            "#sp_message_iframe_1303444",
+            ".customiseButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #ffffff, background color: #1890ff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ]
+}

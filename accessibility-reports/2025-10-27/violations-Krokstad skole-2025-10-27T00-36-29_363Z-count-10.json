@@ -1,0 +1,347 @@
+{
+  "project": "Krokstad skole",
+  "timestamp": "2025-10-27T00:36:29.364Z",
+  "url": "https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#",
+  "total_violations": 10,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-progressbar-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA progressbar node has an accessible name",
+      "help": "ARIA progressbar nodes must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-progressbar-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag111",
+        "EN-301-549",
+        "EN-9.1.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"img _55ym _55yn _55yo\" aria-busy=\"true\" role=\"progressbar\" aria-valuemin=\"0\" aria-valuemax=\"100\" aria-valuetext=\"Laster inn …\"></span>",
+          "target": [
+            "iframe[name=\"f49307f2e834e59d0\"]",
+            "._55yn"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "aria-required-children",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-children?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div role=\"feed\">",
+          "target": [
+            "iframe[name=\"f49307f2e834e59d0\"]",
+            "div[role=\"feed\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: table[tabindex], a[tabindex], img[tabindex], a[aria-describedby], div[tabindex]"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<div class=\"_eh3\">Arrangementer</div>",
+          "target": [
+            "iframe[name=\"f49307f2e834e59d0\"]",
+            "._4v3m:nth-child(2) > ._eg_[role=\"button\"] > ._eh3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.06 (foreground color: #8d949e, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"_eh3\">Meldinger</div>",
+          "target": [
+            "iframe[name=\"f49307f2e834e59d0\"]",
+            "._4v3m._51mw > ._eg_[role=\"button\"] > ._eh3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.06 (foreground color: #8d949e, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"timestampContent\">for omtrent en uke siden</span>",
+          "target": [
+            "iframe[name=\"f49307f2e834e59d0\"]",
+            "abbr[data-utime=\"1760704710\"] > .timestampContent"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.04 (foreground color: #90949c, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label-title-only?application=playwright",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<input class=\"coi__checkbox\" tabindex=\"0\" data-index=\"0\" name=\"cookie_cat_functional\" id=\"cookie_cat_functional\" type=\"checkbox\" title=\"Funksjonelle\" onclick=\"CookieInformation.changeCategoryConsentDecision('cookie_cat_functional')\">",
+          "target": [
+            "#cookie_cat_functional"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        },
+        {
+          "html": "<input class=\"coi__checkbox\" tabindex=\"0\" data-index=\"0\" name=\"cookie_cat_statistic\" id=\"cookie_cat_statistic\" type=\"checkbox\" title=\"Statistiske\" onclick=\"CookieInformation.changeCategoryConsentDecision('cookie_cat_statistic')\">",
+          "target": [
+            "#cookie_cat_statistic"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        },
+        {
+          "html": "<input class=\"coi__checkbox\" tabindex=\"0\" data-index=\"0\" name=\"cookie_cat_marketing\" id=\"cookie_cat_marketing\" type=\"checkbox\" title=\"Markedsføring\" onclick=\"CookieInformation.changeCategoryConsentDecision('cookie_cat_marketing')\">",
+          "target": [
+            "#cookie_cat_marketing"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.facebook.com/krokstadskole?ref=embed_page\" target=\"_blank\" id=\"u_0_1_9M\"></a>",
+          "target": [
+            "iframe[name=\"f49307f2e834e59d0\"]",
+            "#u_0_1_9M"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"_3-8_ lfloat\" href=\"https://www.facebook.com/1037451556341512?ref=embed_page\" target=\"_blank\">",
+          "target": [
+            "iframe[name=\"f49307f2e834e59d0\"]",
+            ".lfloat._3-8_"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/krokstadskole/videos/1515984199746339/?ref=embed_page\" target=\"_blank\"><i class=\"img sp_gOPKfOvAT23 sx_49ac64\"></i></a>",
+          "target": [
+            "iframe[name=\"f49307f2e834e59d0\"]",
+            "#u_1_d_Y4 > ._5pcr.userContentWrapper[data-ft=\"{\\\"tn\\\":\\\"-R\\\"}\"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/krokstadskole/posts/pfbid0CSET3utZVVNnDh48NLNra5XS1wFVF54EFasv9BDCV25iAP7Xvf3UM5sQS2Cd2SF7l?ref=embed_page\" target=\"_blank\"><i class=\"img sp_gOPKfOvAT23 sx_49ac64\"></i></a>",
+          "target": [
+            "iframe[name=\"f49307f2e834e59d0\"]",
+            "#u_1_5_M8 > ._5pcr.userContentWrapper[data-ft=\"{\\\"tn\\\":\\\"-R\\\"}\"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/krokstadskole/posts/pfbid02FUpo1e355BormJqNsj62BsVrtwUuphRhkbA1iU5edy8K3MdR8QDwDwLUhNLbY7Qxl?ref=embed_page\" target=\"_blank\"><i class=\"img sp_gOPKfOvAT23 sx_49ac64\"></i></a>",
+          "target": [
+            "iframe[name=\"f49307f2e834e59d0\"]",
+            "#u_1_e_L1 > ._5pcr.userContentWrapper[data-ft=\"{\\\"tn\\\":\\\"-R\\\"}\"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/krokstadskole/posts/pfbid0abJqwwVhTKt9JVr58V4BUn8LnAcJiQzamwW2dxC3EKtsWG9Frc6W2mnrvDjfZvGEl?ref=embed_page\" target=\"_blank\"><i class=\"img sp_gOPKfOvAT23 sx_49ac64\"></i></a>",
+          "target": [
+            "iframe[name=\"f49307f2e834e59d0\"]",
+            "#u_1_9_G9 > ._5pcr.userContentWrapper[data-ft=\"{\\\"tn\\\":\\\"-R\\\"}\"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.facebook.com/photo.php?fbid=1628011755126768&amp;set=a.384884556106167&amp;type=3&amp;ref=embed_page\" target=\"_blank\">",
+          "target": [
+            "iframe[name=\"f49307f2e834e59d0\"]",
+            "._2l7q > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/krokstadskole/posts/pfbid02JhTvDzsuf7DXrJpsnoD2pwDhM9dH9qBRyMp2JT6fEegQebySsPYYkr83AT8Mjm9al?ref=embed_page\" target=\"_blank\"><i class=\"img sp_gOPKfOvAT23 sx_49ac64\"></i></a>",
+          "target": [
+            "iframe[name=\"f49307f2e834e59d0\"]",
+            "#u_1_6_ut > ._5pcr.userContentWrapper[data-ft=\"{\\\"tn\\\":\\\"-R\\\"}\"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/nested-interactive?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"mainMenuTrigger _jsMainMenuTrigger\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            ".mainMenuTrigger"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<img class=\"scaledImageFitWidth img\" src=\"https://external.fsvg1-1.fna.fbcdn.net/emg1/v/t13/4077073546791466547?url=https%3A%2F%2Fdapulse-res.cloudinary.com%2Fimage%2Fupload%2Fv1645260315%2Fmonday-forms%2FFrame_1261156053.png&amp;fb_obo=1&amp;utld=cloudinary.com&amp;stp=c0.5000x0.5000f_dst-emg0_p284x149_q75_tt6_u&amp;_nc_gid=bVvWByMZsBZSY3iATBJxtQ&amp;_nc_oc=Adkwe4wYlEjnOYExOdxxwsiV5eqVP0c-eO4sbTotau5Hle8LoqegCoCAAacg9QjM5jM&amp;ccb=13-1&amp;oh=06_Q3-4ASocZTF61jWvplFRm2eiSnoLpgHO6xNTZPm0P7bePoDo&amp;oe=6900AFD4&amp;_nc_sid=e42f53\" data-src=\"https://external.fsvg1-1.fna.fbcdn.net/emg1/v/t13/4077073546791466547?url=https%3a%2f%2fdapulse-res.cloudinary.com%2fimage%2fupload%2fv1645260315%2fmonday-forms%2fFrame_1261156053.png&amp;fb_obo=1&amp;utld=cloudinary.com&amp;stp=c0.5000x0.5000f_dst-emg0_p284x149_q75_tt6_u&amp;_nc_gid=bVvWByMZsBZSY3iATBJxtQ&amp;_nc_oc=Adkwe4wYlEjnOYExOdxxwsiV5eqVP0c-eO4sbTotau5Hle8LoqegCoCAAacg9QjM5jM&amp;ccb=13-1&amp;oh=06_Q3-4ASocZTF61jWvplFRm2eiSnoLpgHO6xNTZPm0P7bePoDo&amp;oe=6900AFD4&amp;_nc_sid=e42f53\" style=\"top:0px;\" alt=\"\" width=\"281\" height=\"148\" caption=\"\" aria-label=\"Completa el siguiente formulario y súmate a nuestro gran equipo.\">",
+          "target": [
+            "iframe[name=\"f49307f2e834e59d0\"]",
+            "a[aria-describedby=\"u_1_v_zi\"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > .scaledImageFitWidth[height=\"148\"][caption=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img class=\"scaledImageFitWidth img\" src=\"https://external.fsvg1-1.fna.fbcdn.net/emg1/v/t13/4421157911805134519?url=https%3A%2F%2Fspleisprod.s3.amazonaws.com%2Fuploads%2Fprojects%2F449278%2F449278-1800.webp&amp;fb_obo=1&amp;utld=amazonaws.com&amp;stp=c0.5000x0.5000f_dst-emg0_p284x149_q75_tt6_u&amp;_nc_gid=bVvWByMZsBZSY3iATBJxtQ&amp;_nc_oc=Admgov06-0YRoMpx4fwcr-1DylHbBYRobmMd1vxNTzsXijvy2PQCDwcdOWy6O7UQ2Eo&amp;ccb=13-1&amp;oh=06_Q3-4Ac17w37DszFcoB-bU0Avuf0n3l-rhI2Aro2OheijZsqe&amp;oe=69009778&amp;_nc_sid=e42f53\" data-src=\"https://external.fsvg1-1.fna.fbcdn.net/emg1/v/t13/4421157911805134519?url=https%3a%2f%2fspleisprod.s3.amazonaws.com%2fuploads%2fprojects%2f449278%2f449278-1800.webp&amp;fb_obo=1&amp;utld=amazonaws.com&amp;stp=c0.5000x0.5000f_dst-emg0_p284x149_q75_tt6_u&amp;_nc_gid=bVvWByMZsBZSY3iATBJxtQ&amp;_nc_oc=Admgov06-0YRoMpx4fwcr-1DylHbBYRobmMd1vxNTzsXijvy2PQCDwcdOWy6O7UQ2Eo&amp;ccb=13-1&amp;oh=06_Q3-4Ac17w37DszFcoB-bU0Avuf0n3l-rhI2Aro2OheijZsqe&amp;oe=69009778&amp;_nc_sid=e42f53\" style=\"top:0px;\" alt=\"\" width=\"281\" height=\"148\" caption=\"\" aria-label=\"Kan være et bilde av kostyme og tekst som sier '7 SAMMEN APNER VI DORER 19, oktober 2025 Atlas- alliansen NIK TV-aksjonen'\">",
+          "target": [
+            "iframe[name=\"f49307f2e834e59d0\"]",
+            "a[aria-describedby=\"u_1_17_ox\"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > .scaledImageFitWidth[height=\"148\"][caption=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<p class=\"skipLink\">\n    <a href=\"#mainContentContainer\">Hopp til innhold</a>\n</p>",
+          "target": [
+            ".skipLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
