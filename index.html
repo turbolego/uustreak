@@ -723,6 +723,26 @@
         return 0;
     }
 
+    // Deduplicate reports per date - keep only the newest report for each date
+    // This is critical because sometimes there are multiple reports per project per day
+    const reportsByDate = new Map();
+    reportsToConsider.forEach(report => {
+        const dateKey = report.date;
+        const existingReport = reportsByDate.get(dateKey);
+        
+        // Keep the report with the latest filename (which corresponds to latest timestamp)
+        if (!existingReport || report.filename > existingReport.filename) {
+            reportsByDate.set(dateKey, report);
+        }
+    });
+    
+    // Convert back to array and sort by date descending
+    reportsToConsider = Array.from(reportsByDate.values()).sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    if (reportsToConsider.length === 0) {
+        return 0;
+    }
+
     // Get the most recent report (within the selected date range) to check current violation status
     const mostRecentReport = reportsToConsider[0];
     const hasCurrentViolations = !mostRecentReport.filename.includes('-count-0');
