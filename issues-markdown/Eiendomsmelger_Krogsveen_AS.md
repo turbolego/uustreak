@@ -1,6 +1,6 @@
 # WCAG Violations Report for Eiendomsmelger Krogsveen AS
 
-**Timestamp:** 2025-10-27T00:40:14.026Z
+**Timestamp:** 2025-10-28T13:07:19.451Z
 **URL:** [https://www.krogsveen.no/#](https://www.krogsveen.no/#)
 **Total Violations:** 2
 
@@ -10,8 +10,8 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 9
 
 #### Affected Elements:
@@ -30,9 +30,9 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
-- **Tags:** cat.keyboard, best-practice
-- **Count:** 47
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 40
 
 #### Affected Elements:
 
@@ -57,16 +57,9 @@
 - `.css-hp6tpa > .css-coluh3`
 - `.css-hp6tpa > .css-ae8cmr`
 - `.css-k2kjwy`
-- `.css-1idvs89 > span:nth-child(1)`
+- `.css-g229bq > span:nth-child(1)`
 - `.css-3fi8mx > span:nth-child(1)`
-- `.css-1g62ca3:nth-child(1) > .css-coluh3`
-- `.css-1g62ca3:nth-child(1) > .css-ae8cmr`
-- `.css-1g62ca3:nth-child(1) > .css-1nvs6av`
-- `.css-1g62ca3:nth-child(1) > .css-1jwtl8x > span:nth-child(1)`
-- `.css-1g62ca3:nth-child(2) > .css-coluh3`
-- `.css-1g62ca3:nth-child(2) > .css-ae8cmr`
-- `.css-1g62ca3:nth-child(2) > .css-1nvs6av`
-- `.css-1g62ca3:nth-child(2) > .css-1jwtl8x > span:nth-child(1)`
+- `.css-18ikxop`
 - `.css-10zcyte`
 - `.css-1p2m1z3:nth-child(1) > .css-1pdpc58 > .css-k4npoy`
 - `.css-1p2m1z3:nth-child(1) > .css-1d9lbrd`

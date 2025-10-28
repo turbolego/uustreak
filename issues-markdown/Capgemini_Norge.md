@@ -1,69 +1,90 @@
 # WCAG Violations Report for Capgemini Norge
 
-**Timestamp:** 2025-10-27T00:33:20.465Z
+**Timestamp:** 2025-10-28T13:00:13.769Z
 **URL:** [https://www.capgemini.com/no-no/#](https://www.capgemini.com/no-no/#)
-**Total Violations:** 5
+**Total Violations:** 7
 
 ## Violation Details
 
-### Heading levels should only increase by one
+### ARIA role should be appropriate for the element
+
+- **Impact:** minor
+- **Description:** Ensure role attribute has an appropriate value for the element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#darkModeLabel`
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.header_lang_menu > .header-lang-inner > .header-lang-top > .header-lang-close`
+
+### Banner landmark should not be contained in another landmark
 
 - **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright
+- **Description:** Ensure the banner landmark is at top level
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-banner-is-top-level?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.col-lg-8.box-inner.col-md-12 > .titlewithLink[data-maxlength="144"]`
+- `.header-topbar-wrapper`
 
-### Alternative text of images should not be repeated as text
+### Document should not have more than one banner landmark
 
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 5
-
-#### Affected Elements:
-
-- `#menu-location-menu-1-large > .lang-title:nth-child(1) > .sub-menu > .active > a[href$="capgemini.com/"] > span > img[alt="Global | EN"][loading="lazy"]`
-- `img[alt="LinkedIn"]`
-- `img[alt="Instagram"]`
-- `img[alt="facebook icon"]`
-- `img[alt="Youtube"]`
-
-### Links must be distinguishable without relying on color
-
-- **Impact:** serious
-- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=playwright
-- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1
+- **Impact:** moderate
+- **Description:** Ensure the document has at most one banner landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright
+- **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.titlewithLink[data-maxlength="144"] > a:nth-child(2)`
+- `header`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `header`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
-- **Tags:** cat.keyboard, best-practice
-- **Count:** 1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `#truste-consent-text`
+- `.ta-show.ta-display-block:nth-child(3) > .container > div > .truste-messageColumn`
+- `.ta-show.ta-display-block:nth-child(6) > .container > div > .truste-messageColumn`
 
 ### Scrollable region must have keyboard access
 
 - **Impact:** serious
 - **Description:** Ensure elements that have scrollable content are accessible by keyboard
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/scrollable-region-focusable?application=playwright
-- **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
 - **Count:** 1
 
 #### Affected Elements:

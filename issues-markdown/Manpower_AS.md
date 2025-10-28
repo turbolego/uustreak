@@ -1,40 +1,10 @@
 # WCAG Violations Report for Manpower AS
 
-**Timestamp:** 2025-10-27T00:38:39.103Z
+**Timestamp:** 2025-10-28T13:06:39.132Z
 **URL:** [https://www.manpower.no/nb](https://www.manpower.no/nb)
-**Total Violations:** 6
+**Total Violations:** 3
 
 ## Violation Details
-
-### ARIA role should be appropriate for the element
-
-- **Impact:** minor
-- **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright
-- **Tags:** cat.aria, best-practice
-- **Count:** 4
-
-#### Affected Elements:
-
-- `#hs-form-iframe-0, .multi-container`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(1)`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(2)`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(3)`
-
-### Required ARIA attributes must be provided
-
-- **Impact:** critical
-- **Description:** Ensure elements with ARIA roles have all required ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-required-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2
-- **Count:** 4
-
-#### Affected Elements:
-
-- `#hs-form-iframe-0, .multi-container`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(1)`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(2)`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(3)`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -46,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#hs-form-iframe-0, .hs-button`
+- `.hubspot-render > div > .d-flex.justify-content-center`
 
 ### Headings should not be empty
 
@@ -72,18 +42,3 @@
 #### Affected Elements:
 
 - `.main-nav-item[aria-label="main nav item"][role="navigation"]:nth-child(1)`
-
-### Interactive controls must not be nested
-
-- **Impact:** serious
-- **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/nested-interactive?application=playwright
-- **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2
-- **Count:** 4
-
-#### Affected Elements:
-
-- `#hs-form-iframe-0, .multi-container`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(1)`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(2)`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(3)`

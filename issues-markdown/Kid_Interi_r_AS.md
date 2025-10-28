@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-10-27T00:34:16.598Z
+**Timestamp:** 2025-10-28T13:01:56.640Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 5
 
@@ -24,10 +24,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
-- **Count:** 5
+- **Count:** 6
 
 #### Affected Elements:
 
+- `.ep > span`
 - `.review-block.article.review:nth-child(1) > .tf-date`
 - `.review-block.article.review:nth-child(2) > .tf-date`
 - `.review-block.article.review:nth-child(3) > .tf-date`
@@ -64,6 +65,15 @@
 - `img[alt="Borddekking 50%"]`
 - `img[alt="Pynteputer 50%"]`
 - `img[alt="Pledd 50%"]`
+- `img[alt="Kalendergavetips!"]`
+- `img[alt="Julesengetøy"]`
+- `img[alt="Juleputer"]`
+- `img[alt="Adventsbelysning"]`
+- `img[alt="Julekranser"]`
+- `img[alt="Julelykter & lys"]`
+- `img[alt="Julegaveinnpakning"]`
+- `img[alt="Julepynt"]`
+- `img[alt="Julestrømper"]`
 - `img[alt="Sofa"]`
 - `img[alt="Småbord og sofabord"]`
 - `img[alt="Gulvtepper"]`
@@ -73,15 +83,6 @@
 - `img[alt="Hyller"]`
 - `img[alt="Spisebord"]`
 - `img[alt="Skap og skjenker"]`
-- `img[alt="Julesengetøy"]`
-- `img[alt="Juleputer"]`
-- `img[alt="Adventsbelysning"]`
-- `img[alt="Julekranser"]`
-- `img[alt="Julelykter & lys"]`
-- `img[alt="Julegaveinnpakning"]`
-- `img[alt="Julepynt"]`
-- `img[alt="Julestrømper"]`
-- `img[alt="Adventskalender"]`
 
 ### All page content should be contained by landmarks
 

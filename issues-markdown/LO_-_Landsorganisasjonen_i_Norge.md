@@ -1,6 +1,6 @@
 # WCAG Violations Report for LO - Landsorganisasjonen i Norge
 
-**Timestamp:** 2025-10-27T00:37:02.172Z
+**Timestamp:** 2025-10-28T13:04:52.406Z
 **URL:** [https://www.lo.no/#](https://www.lo.no/#)
 **Total Violations:** 3
 
@@ -12,19 +12,20 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT
-- **Count:** 11
+- **Count:** 12
 
 #### Affected Elements:
 
-- `.articleTeaser--large > .articleTeaser__image > .image > .is-loaded`
 - `.articleTeaser--medium.articleTeaser:nth-child(2) > .articleTeaser__image > .image > .is-loaded`
 - `.articleTeaser--medium.articleTeaser:nth-child(3) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(4) > .articleTeaser__image > .image > img`
 - `.articleTeaser--medium.articleTeaser:nth-child(5) > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(8) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(7) > .articleTeaser__image > .image > img`
 - `.articleTeaser--medium.articleTeaser:nth-child(10) > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(11) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(12) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(13) > .articleTeaser__image > .image > img`
 - `.visitorcenter-teaser > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(17) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(19) > .articleTeaser__image > .image > img`
 - `.themeTeaser--featured.themeTeaser:nth-child(2) > .image > img`
 - `.themeTeaser--featured.themeTeaser:nth-child(3) > .image > img`
 

@@ -1,22 +1,10 @@
 # WCAG Violations Report for Stavanger kommune
 
-**Timestamp:** 2025-10-27T00:24:04.013Z
+**Timestamp:** 2025-10-28T12:50:44.681Z
 **URL:** [https://www.stavanger.kommune.no/#](https://www.stavanger.kommune.no/#)
-**Total Violations:** 5
+**Total Violations:** 3
 
 ## Violation Details
-
-### Frames must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe`
 
 ### Images must have alternative text
 
@@ -56,15 +44,3 @@
 #### Affected Elements:
 
 - `div[role="complementary"]`
-
-### Scrollable region must have keyboard access
-
-- **Impact:** serious
-- **Description:** Ensure elements that have scrollable content are accessible by keyboard
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/scrollable-region-focusable?application=playwright
-- **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe, #playlist-tracklist`

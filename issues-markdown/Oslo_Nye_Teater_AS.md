@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2025-10-27T00:36:09.592Z
+**Timestamp:** 2025-10-28T12:56:52.170Z
 **URL:** [https://oslonye.no/#](https://oslonye.no/#)
 **Total Violations:** 5
 
@@ -53,13 +53,13 @@
 
 #### Affected Elements:
 
-- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-right.hovedscenen.bg-none > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.centralteatret.bg-none > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-right.centralteatret.bg-none > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-right.centralteatret.bg-none > .les-mer-link`
+- `.alignment-right.centralteatret.bg-none > .les-mer-link`
+- `.alignment-right.hovedscenen.bg-none > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.centralteatret.bg-none > .les-mer-link`
+- `.alignment-left.centralteatret.bg-none > .les-mer-link`
+- `.alignment-left.hovedscenen.bg-none > .les-mer-link`
 - `.large-4.cpt.medium-6:nth-child(1) > .alignment-top.centralteatret.bg-none > .les-mer-link`
 - `.teaterkjellern.alignment-top.centralteatret > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-right.hovedscenen.bg-none > .les-mer-link`
 - `.hovedscenen.alignment-top.bg-none > .les-mer-link`
 - `.scroll-to-top`
 
@@ -69,30 +69,31 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 23
+- **Count:** 24
 
 #### Affected Elements:
 
+- `#background-video`
 - `.background-link`
 - `.hero-banner > .grid-container`
 - `.theater-list > li:nth-child(1)`
 - `.theater-list > li:nth-child(2)`
-- `.forestillinger-blocks-panel:nth-child(3)`
-- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target="_blank"] > .advertise-cover- > .border-orange.advertise.text-center > .text-yellow.content-holder.heading-small > .title`
-- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target="_blank"] > .advertise-cover- > .border-orange.advertise.text-center > .text-yellow.content-holder.heading-small > .short-description`
-- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6`
+- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target="_blank"] > .advertise-cover- > .border-orange.advertise.text-center > .text-yellow.content-holder.heading-small > .title`
+- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target="_blank"] > .advertise-cover- > .border-orange.advertise.text-center > .text-yellow.content-holder.heading-small > .short-description`
+- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6`
+- `.forestillinger-blocks-panel:nth-child(4)`
 - `.forestillinger-blocks-panel:nth-child(5)`
+- `.text-green > .title`
+- `.text-green > .short-description`
+- `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6`
 - `.large-4.cpt.medium-6:nth-child(1)`
-- `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell:nth-child(2) > a[target="_blank"] > .advertise-cover-rounded > .rounded.border-yellow.advertise > .text-green.content-holder.heading-small > .title`
-- `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3)`
-- `.forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6`
-- `.text-orange > .title`
-- `.text-orange > .short-description`
+- `.border-green > .text-yellow.content-holder.heading-small > .title`
+- `.large-4.cpt.medium-6:nth-child(3)`
 - `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell:nth-child(1) > a[target="_blank"] > .advertise-cover- > .border-orange.advertise.text-center > .text-yellow.content-holder.heading-small > .title`
 - `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell:nth-child(1) > a[target="_blank"] > .advertise-cover- > .border-orange.advertise.text-center > .text-yellow.content-holder.heading-small > .short-description`
-- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell:nth-child(2) > a[target="_blank"] > .advertise-cover-rounded > .rounded.border-yellow.advertise > .text-green.content-holder.heading-small > .title`
-- `.text-green.content-holder.heading-small > .short-description`
 - `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6`
+- `.text-orange > .title`
+- `.text-orange > .short-description`
 - `.current-month`
 - `.desktop`
 - `.msg`
