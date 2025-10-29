@@ -1,0 +1,637 @@
+{
+  "project": "Jobzone Norge AS",
+  "timestamp": "2025-10-29T00:38:21.443Z",
+  "url": "https://jobzone.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 29,
+      "nodes": [
+        {
+          "html": "<a id=\"CybotCookiebotDialogBodyEdgeMoreDetailsLink\" href=\"#\" class=\"\">Detaljer</a>",
+          "target": [
+            "#CybotCookiebotDialogBodyEdgeMoreDetailsLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #00a298, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button id=\"CybotCookiebotDialogBodyButtonAccept\" class=\"CybotCookiebotDialogBodyButton\" tabindex=\"0\" lang=\"nb\">Ok</button>",
+          "target": [
+            "#CybotCookiebotDialogBodyButtonAccept"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Norsk</span>",
+          "target": [
+            ".nav-dropdown-wrapper > .nav-text > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #00a298, background color: #ffffff, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"nav-text main-menu-button\">\n                        Meny\n                        <div class=\"nav-icon\">\n                            <span></span>\n                            <span></span>\n                            <span></span>\n                        </div>\n                    </a>",
+          "target": [
+            ".nav-wrapper-item:nth-child(3) > .main-menu-button.nav-text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #00a298, background color: #ffffff, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"nav-text login-wizard-nav-text\">Logg inn<img src=\"/Static/icons/User.svg\"></a>",
+          "target": [
+            ".nav-wrapper-item:nth-child(5) > div[data-react-component=\"LoginWizard\"] > .login-wizard > .is-hidden-mobile > .login-wizard-nav-text.nav-text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #00a298, background color: #ffffff, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"company-tab\" onclick=\"toggleFrontpageView('Company')\">Bedrift</div>",
+          "target": [
+            ".company-tab"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"rusty-red\">Les mer om å jobbe hos oss</span>",
+          "target": [
+            ".candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(2) > .box.is-mobile > .left-arrow.link.rusty-red > .rusty-red"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #00a298, background color: #ffffff, font size: 13.2pt (17.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"buttons-href-button\" href=\"/ledige-stillinger/72173\">Les mer og søk</a>",
+          "target": [
+            ".buttons-href-button[href=\"/ledige-stillinger/72173\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"buttons-href-button\" href=\"/ledige-stillinger/72170\">Les mer og søk</a>",
+          "target": [
+            ".buttons-href-button[href=\"/ledige-stillinger/72170\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"box \">KORT FRIST</div>",
+          "target": [
+            ".position-list-card-wrapper:nth-child(3) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-short-deadline > .box"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #00a298, background color: #ffffff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"buttons-href-button\" href=\"/ledige-stillinger/72172\">Les mer og søk</a>",
+          "target": [
+            ".buttons-href-button[href=\"/ledige-stillinger/72172\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"buttons-href-button\" href=\"/ledige-stillinger/72168\">Les mer og søk</a>",
+          "target": [
+            ".buttons-href-button[href=\"/ledige-stillinger/72168\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button class=\"button-component  inverted  with-border is-fullwidth  \">Se flere ledige stillinger</button>",
+          "target": [
+            ".button-component"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #00a298, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<h5>JOBBSØKER</h5>",
+          "target": [
+            ".information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .jobseeker.is-marginless.is-multiline > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<h5>BEDRIFT</h5>",
+          "target": [
+            ".information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .company.is-marginless.colums > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<h5>OM JOBZONE</h5>",
+          "target": [
+            ".information > section > .main-menu-wrapper > .about-us-header.about-us.top-menu > .top-menu-column:nth-child(1) > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/om-oss/vare-lokalkontor/\">Våre lokalkontor</a>",
+          "target": [
+            ".information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(1) > a[href$=\"vare-lokalkontor/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/jobbsnakk/\">Jobbsnakk</a>",
+          "target": [
+            ".information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(2) > a[href$=\"jobbsnakk/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/raushetsaksjonen/\">Raushetsaksjonen 2025</a>",
+          "target": [
+            ".information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(3) > a[href$=\"raushetsaksjonen/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/om-oss/samfunnsansvar/\">Samfunnsansvar</a>",
+          "target": [
+            ".information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(4) > a[href$=\"samfunnsansvar/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/om-oss/organisasjonen/\">Vår visjon</a>",
+          "target": [
+            ".information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(5) > a[href$=\"organisasjonen/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/om-oss/jobzone-konsernet/\">Jobzone-konsernet</a>",
+          "target": [
+            ".information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(6) > a[href$=\"jobzone-konsernet/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/om-oss/sikkerhet-og-phishing/\">Sikkerhet og phishing</a>",
+          "target": [
+            ".information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(7) > a[href$=\"sikkerhet-og-phishing/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/om-oss/varslingskanal/\">Varslingskanal</a>",
+          "target": [
+            ".information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(8) > a[href$=\"varslingskanal/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"tel:21 52 64 00\">21 52 64 00</a>",
+          "target": [
+            "a[href=\"tel:21 52 64 00\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #00a298, background color: #f6f6f6, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"https://www.google.no/maps/place/Jobzone/@59.947353,10.7680207,17z/data=!4m13!1m7!3m6!1s0x46416e19b11dea09:0x7349b51f3513459!2sSandakerveien+114b,+0484+Oslo!3b1!8m2!3d59.9473503!4d10.7702094!3m4!1s0x46416e19b110007f:0xcd0796a107704259!8m2!3d59.9477086!4d10.7699141\" target=\"_blank\">",
+          "target": [
+            ".map-url > a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #00a298, background color: #f6f6f6, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/sitemap.xml\">Sidekart</a>",
+          "target": [
+            "a[href$=\"sitemap.xml\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #00a298, background color: #f6f6f6, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/hjelp/informasjonskapsler/\">Informasjons​kapsler</a>",
+          "target": [
+            ".is-narrow.column > a[href$=\"informasjonskapsler/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #00a298, background color: #f6f6f6, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/hjelp/betingelser-og-vilkar/\">Betingelser og vilkår</a>",
+          "target": [
+            "a[href$=\"betingelser-og-vilkar/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #00a298, background color: #f6f6f6, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h5>JOBBSØKER</h5>",
+          "target": [
+            ".information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .jobseeker.is-marginless.is-multiline > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 27,
+      "nodes": [
+        {
+          "html": "<img width=\"64\" src=\"https://prod.jzstatic.no/img/jobzone_vertical_dark.png\">",
+          "target": [
+            "img[width=\"64\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"nav-language-arrow\" src=\"/Static/icons/arrow-down.svg\">",
+          "target": [
+            ".nav-dropdown-wrapper > .nav-text > .nav-language-arrow[src$=\"arrow-down.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"languageFlag\" src=\"/Static/icons/no.svg\">",
+          "target": [
+            "img[src$=\"no.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/User.svg\">",
+          "target": [
+            ".nav-wrapper-item:nth-child(5) > div[data-react-component=\"LoginWizard\"] > .login-wizard > .is-hidden-mobile > .login-wizard-nav-text.nav-text > img[src$=\"User.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/globalassets/forside/banner-24-1.jpg\">",
+          "target": [
+            ".candidate-image > div > div > .container-fluid.frontpage > .banner-image > .image-container > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/CandidateShotcutIconsRed/magnifier-2.svg\">",
+          "target": [
+            "a[href$=\"ledige-stillinger/\"] > .is-mobile.columns > .page-link-icon.is-narrow.column > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"rotate\" src=\"/Static/icons/arrow-down.svg\">",
+          "target": [
+            "a[href$=\"ledige-stillinger/\"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$=\"arrow-down.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/CandidateShotcutIconsRed/user-female.svg\">",
+          "target": [
+            "a[href$=\"registrering/\"] > .is-mobile.columns > .page-link-icon.is-narrow.column > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"rotate\" src=\"/Static/icons/arrow-down.svg\">",
+          "target": [
+            "a[href$=\"registrering/\"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$=\"arrow-down.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/CandidateShotcutIconsRed/chat-3.svg\">",
+          "target": [
+            ".page-link.colums:nth-child(3) > a[href$=\"avdelinger/\"] > .is-mobile.columns > .page-link-icon.is-narrow.column > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"rotate\" src=\"/Static/icons/arrow-down.svg\">",
+          "target": [
+            ".page-link.colums:nth-child(3) > a[href$=\"avdelinger/\"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$=\"arrow-down.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/favourite_empty.svg\">",
+          "target": [
+            "div[data-position-id=\"72173\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/favourite_empty.svg\">",
+          "target": [
+            "div[data-position-id=\"72170\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/favourite_empty.svg\">",
+          "target": [
+            "div[data-position-id=\"72172\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/favourite_empty.svg\">",
+          "target": [
+            "div[data-position-id=\"72168\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/House.svg\" style=\"fill: #000;\">",
+          "target": [
+            "img[src$=\"House.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/Article.svg\" style=\"fill: #000;\">",
+          "target": [
+            ".is-6.is-12-mobile.column:nth-child(2) > img[src$=\"Article.svg\"][type=\"image/svg+xml\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/raushetsaksjonen.svg\" style=\"fill: #000;\">",
+          "target": [
+            ".information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(3) > img[type=\"image/svg+xml\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/Lighthouse.svg\" style=\"fill: #000;\">",
+          "target": [
+            "img[src$=\"Lighthouse.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/Bulbidea.svg\" style=\"fill: #000;\">",
+          "target": [
+            "img[src$=\"Bulbidea.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/People.svg\" style=\"fill: #000;\">",
+          "target": [
+            "img[src$=\"People.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/Article.svg\" style=\"fill: #000;\">",
+          "target": [
+            ".is-6.is-12-mobile.column:nth-child(7) > img[src$=\"Article.svg\"][type=\"image/svg+xml\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/Newspaper.svg\" style=\"fill: #000;\">",
+          "target": [
+            "img[src$=\"Newspaper.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/Facebook.svg\">",
+          "target": [
+            "img[src$=\"Facebook.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/LinkedIn.svg\">",
+          "target": [
+            "img[src$=\"LinkedIn.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/smartphone.svg\">",
+          "target": [
+            "img[src$=\"smartphone.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/placeholder.svg\">",
+          "target": [
+            "img[src$=\"placeholder.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a href=\"/\">\n                    <img width=\"64\" src=\"https://prod.jzstatic.no/img/jobzone_vertical_dark.png\">\n                </a>",
+          "target": [
+            "a[href=\"/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"\" class=\"link left-arrow-large rusty-red\"><span class=\"rusty-red\"></span></a>",
+          "target": [
+            ".left-arrow-large"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.facebook.com/JobzoneNorge/\" alt=\"Jobzone AS facebook page\">\n                                        <img src=\"/Static/icons/Facebook.svg\">\n                                    </a>",
+          "target": [
+            "a[alt=\"Jobzone AS facebook page\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://no.linkedin.com/company/jobzone\" alt=\"Jobzone AS linkedin\">\n                                        <img src=\"/Static/icons/LinkedIn.svg\">\n                                    </a>",
+          "target": [
+            "a[alt=\"Jobzone AS linkedin\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 15,
+      "nodes": [
+        {
+          "html": "<div class=\"candidate-image\">",
+          "target": [
+            ".candidate-image"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"tabs\">\n        <div class=\"candidate-tab active\" onclick=\"toggleFrontpageView('Candidate')\">Jobbsøker</div>\n        <div class=\"company-tab\" onclick=\"toggleFrontpageView('Company')\">Bedrift</div>\n    </div>",
+          "target": [
+            ".tabs"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".candidate-container > div > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"positions-block-header has-text-centered\"><h1>Ledige stillinger</h1></div>",
+          "target": [
+            ".positions-block-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"position-card-top-content\"><a class=\"position-card-top-content-header\" href=\"/ledige-stillinger/72173\">Vi vokser - bli med på laget!</a><p class=\"pos-title\">Anleggsgartner</p><p class=\"pos-title\">Covei AS (bergen)</p></div>",
+          "target": [
+            ".position-list-card-wrapper:nth-child(1) > .position-card.card > .position-card-top > .position-card-top-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"position-card-top-favor\"><div class=\"favorite-mark\" data-position-id=\"72173\" data-toggle=\"popover\" title=\"Legg til i favoritter\"><img src=\"/Static/icons/favourite_empty.svg\"></div></div>",
+          "target": [
+            ".position-list-card-wrapper:nth-child(1) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"position-card-bot\">",
+          "target": [
+            ".position-list-card-wrapper:nth-child(1) > .position-card.card > .position-card-bot"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"position-card-top-content\"><a class=\"position-card-top-content-header\" href=\"/ledige-stillinger/72170\">Experienced Drywall Installer </a><p class=\"pos-title\">Drywall Installer</p></div>",
+          "target": [
+            ".position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-top > .position-card-top-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"position-card-top-favor\"><div class=\"favorite-mark\" data-position-id=\"72170\" data-toggle=\"popover\" title=\"Legg til i favoritter\"><img src=\"/Static/icons/favourite_empty.svg\"></div></div>",
+          "target": [
+            ".position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"position-card-bot\"><div class=\"position-card-bot-info\"><p>Avdeling: Helgeland</p><p>Søknads​frist: As soon as possible </p><p>Antall stillinger: 10</p></div><div class=\"position-card-bot-button\"><a class=\"buttons-href-button\" href=\"/ledige-stillinger/72170\">Les mer og søk</a></div></div>",
+          "target": [
+            ".position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-bot"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"position-list-card-wrapper\">",
+          "target": [
+            ".position-list-card-wrapper:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"position-card-top-content\"><a class=\"position-card-top-content-header\" href=\"/ledige-stillinger/72168\">Er du en praktiker?</a><p class=\"pos-title\">Produksjonsarbeider 3-skift</p></div>",
+          "target": [
+            ".position-list-card-wrapper:nth-child(4) > .position-card.card > .position-card-top > .position-card-top-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"position-card-top-favor\"><div class=\"favorite-mark\" data-position-id=\"72168\" data-toggle=\"popover\" title=\"Legg til i favoritter\"><img src=\"/Static/icons/favourite_empty.svg\"></div></div>",
+          "target": [
+            ".position-list-card-wrapper:nth-child(4) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"position-card-bot\"><div class=\"position-card-bot-info\"><p>Avdeling: Trondheim</p><p>Søknads​frist: snarest</p><p>Antall stillinger: 1</p></div><div class=\"position-card-bot-button\"><a class=\"buttons-href-button\" href=\"/ledige-stillinger/72168\">Les mer og søk</a></div></div>",
+          "target": [
+            ".position-list-card-wrapper:nth-child(4) > .position-card.card > .position-card-bot"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".candidate-container > div > div:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
