@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2025-10-28T13:02:51.343Z
+**Timestamp:** 2025-10-29T00:40:44.723Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 12
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 18
 
@@ -39,19 +39,19 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
 - **Count:** 1
 
 #### Affected Elements:
 
-- `a[href="mailto:dag.hoie@dagsavisen.no"]`
+- `.text_singleline.large-3.large-abs-3:nth-child(3) > .t16.font-PTSerif.singleline > a:nth-child(8)`
 
 ### Headings should not be empty
 
 - **Impact:** minor
 - **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
 - **Count:** 1
 
@@ -63,8 +63,8 @@
 
 - **Impact:** serious
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2
 - **Count:** 3
 
 #### Affected Elements:
@@ -77,26 +77,25 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 7
+- **Count:** 6
 
 #### Affected Elements:
 
-- `.tm23`
-- `.t56`
-- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary:nth-child(27) > .t24`
-- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(33) > .t33`
-- `.tm32.t42`
+- `.tm39.t56.tertiary`
+- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary > .t24`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(33) > .tm21.t42`
+- `.t42.tm32`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > .t40`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(41) > .tm21.t42`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(38) > .tm21.t42`
 
 ### Images must have alternative text
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT
 - **Count:** 4
 
 #### Affected Elements:
@@ -110,7 +109,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -122,8 +121,8 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT
 - **Count:** 3
 
 #### Affected Elements:
@@ -136,8 +135,8 @@
 
 - **Impact:** serious
 - **Description:** Ensure that lists are structured correctly
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/list?application=playwright
-- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/list?application=playwright
+- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1
 - **Count:** 1
 
 #### Affected Elements:
@@ -148,13 +147,27 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 75
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
+- **Tags:** cat.keyboard, best-practice
+- **Count:** 73
 
 #### Affected Elements:
 
 - `h1`
+- `div[title=" Rolf Smedvig Hodne er død"] > h2`
+- `div[title=" Rolf Smedvig Hodne er død"] > .meta`
+- `#notice-10030151 > .content > h2`
+- `#notice-10030151 > .content > .meta`
+- `#notice-10030120 > .content > h2`
+- `#notice-10030120 > .content > .meta`
+- `#notice-10030096 > .content > h2`
+- `#notice-10030096 > .content > .meta`
+- `#notice-10030095 > .content > h2`
+- `#notice-10030095 > .content > .meta`
+- `div[title="Tilbakekaller tiramisu"] > h2`
+- `div[title="Tilbakekaller tiramisu"] > .meta`
+- `#notice-10029607 > .content > h2`
+- `time[datetime="2025-10-28T13:04:17.000Z"]`
 - `div[title="Zelenskyj ber om press mot Xi"] > h2`
 - `time[datetime="2025-10-28T12:38:57.000Z"]`
 - `#notice-10029468 > .content > h2`
@@ -162,7 +175,7 @@
 - `div[title="– Norge er avgjørende for EU"] > h2`
 - `time[datetime="2025-10-28T11:05:42.000Z"]`
 - `#notice-10029221 > .content > h2`
-- `time[datetime="2025-10-28T12:37:57.000Z"]`
+- `time[datetime="2025-10-28T13:17:57.000Z"]`
 - `#notice-10029153 > .content > h2`
 - `time[datetime="2025-10-28T11:04:24.000Z"]`
 - `#notice-10029035 > .content > h2`
@@ -179,63 +192,47 @@
 - `time[datetime="2025-10-28T08:46:37.000Z"]`
 - `div[title="1700 mm regn på ett døgn"] > h2`
 - `time[datetime="2025-10-28T07:48:30.000Z"]`
-- `div[title="Færre heroindødsfall"] > h2`
-- `time[datetime="2025-10-28T06:51:07.000Z"]`
 - `#notice-10028451 > .content > h2`
-- `time[datetime="2025-10-28T06:44:25.000Z"]`
-- `div[title="739 selvmord i Norge i fjor"] > h2`
-- `time[datetime="2025-10-28T06:39:23.000Z"]`
-- `div[title="Astrup hyttet med neven"] > h2`
-- `time[datetime="2025-10-28T06:34:36.000Z"]`
-- `#notice-10028428 > .content > h2`
-- `time[datetime="2025-10-28T06:33:26.000Z"]`
-- `#notice-10028427 > .content > h2`
-- `time[datetime="2025-10-28T06:32:06.000Z"]`
-- `div[title="Ekstraordinært SV-møte"] > h2`
-- `time[datetime="2025-10-28T06:29:40.000Z"]`
-- `div[title="Bombefly fra USA ved Venezuela"] > h2`
-- `time[datetime="2025-10-28T06:28:21.000Z"]`
+- `time[datetime="2025-10-28T14:20:02.000Z"]`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
-- `.row.large-12.small-12:nth-child(6)`
-- `.row.large-12.small-12:nth-child(7)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(6)`
 - `#offer_a8dfe1abe190392acdc8-0, div[ng-show="!terminalError"]`
+- `.row.large-12.small-12:nth-child(8)`
 - `.row.large-12.small-12:nth-child(9)`
-- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary:nth-child(11)`
+- `.color_mobile_bg-primary`
 - `.row.large-12.small-12:nth-child(12)`
-- `.color_mobile_no_bg_color.row.large-12`
-- `.row.large-12.small-12:nth-child(14)`
-- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(16)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(17)`
+- `.row.large-12.small-12:nth-child(13)`
+- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(14)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(16)`
 - `.articlescroller-header`
 - `.count_4`
-- `.row.large-12.small-12:nth-child(19)`
-- `.t56`
+- `.row.large-12.small-12:nth-child(18)`
+- `.tm39.t56.tertiary`
 - `.count_1`
+- `.row.large-12.small-12:nth-child(21)`
 - `.row.large-12.small-12:nth-child(22)`
-- `.row.large-12.small-12:nth-child(23)`
-- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(24)`
+- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(23)`
+- `.row.large-12.small-12:nth-child(24)`
 - `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(26)`
-- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary:nth-child(27)`
-- `.bg-tertiary.color_mobile_bg-tertiary.hasContentPadding:nth-child(28)`
+- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(28)`
 - `.mobile_no_border_color.bg-tertiary.color_mobile_bg-tertiary`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(32)`
-- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(33)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(34)`
-- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(36)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(37)`
-- `.row.large-12.small-12:nth-child(38)`
+- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(32)`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(33)`
+- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(34)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(36)`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(41)`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(38)`
 - `.powered-by`
 
-### [role="img"] elements must have alternative text
+### [role="img"] elements must have an alternative text
 
 - **Impact:** serious
 - **Description:** Ensure [role="img"] elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/role-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/role-img-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT
 - **Count:** 2
 
 #### Affected Elements:
@@ -247,8 +244,8 @@
 
 - **Impact:** serious
 - **Description:** Ensure elements that have scrollable content are accessible by keyboard
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright
-- **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/scrollable-region-focusable?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3
 - **Count:** 1
 
 #### Affected Elements:

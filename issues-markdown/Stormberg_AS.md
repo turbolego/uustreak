@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2025-10-28T12:54:02.838Z
+**Timestamp:** 2025-10-29T00:50:59.907Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -12,37 +12,36 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
-- **Count:** 28
+- **Count:** 27
 
 #### Affected Elements:
 
 - `.gt.dr.ds > div > div`
 - `.gv.am[href$="nyheter"]`
-- `li:nth-child(1) > .i3.i4[aria-label="Nordlys resirkulert termodress"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `li:nth-child(1) > .i3.i4[aria-label="Nordlys resirkulert termodress"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `a[aria-label="Østisen vattert parkas"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Østisen vattert parkas"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `li:nth-child(4) > .i3.i4[aria-label="Nordlys resirkulert termodress"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `li:nth-child(4) > .i3.i4[aria-label="Nordlys resirkulert termodress"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `li:nth-child(1) > .i3.i4[aria-label="Båtsfjord lang regnkåpe"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `li:nth-child(2) > .i3.i4[aria-label="Båtsfjord lang regnkåpe"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `li:nth-child(3) > .i3.i4[aria-label="Hemsedal 2-lags ullsett"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Nordtoppen parkas"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Nordtoppen parkas"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `li:nth-child(5) > .i3.i4[aria-label="Hemsedal 2-lags ullsett"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Nordtoppen vinterjakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Nordtoppen vinterjakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `a[aria-label="Stave resirkulert hybridjakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Stave resirkulert hybridjakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `a[aria-label="Haukeliseter skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Haukeliseter skalljakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `a[aria-label="Stormflod regnjakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Stormflod regnjakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `.jq`
-- `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `li:nth-child(5) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `li:nth-child(1) > .i3.i4[aria-label="Nordlys resirkulert termodress"] > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `li:nth-child(1) > .i3.i4[aria-label="Nordlys resirkulert termodress"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `li:nth-child(5) > .i3.i4[aria-label="Nordlys resirkulert termodress"] > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `li:nth-child(5) > .i3.i4[aria-label="Nordlys resirkulert termodress"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
+- `a[aria-label="Nordtoppen parkas"] > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `a[aria-label="Nordtoppen parkas"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
+- `li:nth-child(2) > .i3.i4[aria-label="Hemsedal 2-lags ullsett"] > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `li:nth-child(3) > .i3.i4[aria-label="Hemsedal 2-lags ullsett"] > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `a[aria-label="Båtsfjord lang regnkåpe"] > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `a[aria-label="Nordtoppen vinterjakke"] > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `a[aria-label="Nordtoppen vinterjakke"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
+- `a[aria-label="Haukeliseter skalljakke"] > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `a[aria-label="Haukeliseter skalljakke"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
+- `a[aria-label="Stave resirkulert hybridjakke"] > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `a[aria-label="Stave resirkulert hybridjakke"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
+- `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `li:nth-child(3) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
+- `a[aria-label="Farstien overtrekksbukse"] > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `a[aria-label="Farstien overtrekksbukse"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
+- `a[aria-label="Memuru vanntett fjellstøvel"] > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `a[aria-label="Memuru vanntett fjellstøvel"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
@@ -84,12 +83,12 @@
 - `div:nth-child(3) > .aq.am.an > .au.as[width="11"]`
 - `div:nth-child(4) > .aq.am.an > .au.as[width="11"]`
 - `.hi > .hn.hm.au`
-- `a[href$="ullfavoritter"] > .je.jf.jg > .hn.a2.hm`
-- `a[href$="vinterjakker"] > .je.jf.jg > .hn.a2.hm`
-- `a[href$="prisras-sko"] > .je.jf.jg > .hn.a2.hm`
-- `a[href$="regntoy"] > .je.jf.jg > .hn.a2.hm`
-- `.a6[href$="turutstyr"][data-scope-link="true"] > .je.jf.jg > .hn.a2.hm`
-- `.a6[href$="barn"][data-scope-link="true"] > .je.jf.jg > .hn.a2.hm`
+- `a[href$="ullfavoritter"] > .jg.jh.ji > .hn.a2.hm`
+- `a[href$="vinterjakker"] > .jg.jh.ji > .hn.a2.hm`
+- `a[href$="prisras-sko"] > .jg.jh.ji > .hn.a2.hm`
+- `a[href$="regntoy"] > .jg.jh.ji > .hn.a2.hm`
+- `.a6[href$="turutstyr"][data-scope-link="true"] > .jg.jh.ji > .hn.a2.hm`
+- `.a6[href$="barn"][data-scope-link="true"] > .jg.jh.ji > .hn.a2.hm`
 
 ### Links must have discernible text
 

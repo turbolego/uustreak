@@ -1,16 +1,16 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2025-10-28T13:03:02.148Z
+**Timestamp:** 2025-10-29T00:40:58.373Z
 **URL:** [https://www.dalane-tidende.no/#](https://www.dalane-tidende.no/#)
 **Total Violations:** 2
 
 ## Violation Details
 
-### Elements marked as presentational should be consistently ignored
+### Ensure elements marked as presentational are consistently ignored
 
 - **Impact:** minor
-- **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/presentation-role-conflict?application=playwright
+- **Description:** Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright
 - **Tags:** cat.aria, best-practice, ACT
 - **Count:** 1
 
@@ -22,8 +22,8 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
+- **Tags:** cat.keyboard, best-practice
 - **Count:** 2
 
 #### Affected Elements:

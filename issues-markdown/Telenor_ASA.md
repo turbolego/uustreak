@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2025-10-28T12:57:03.071Z
+**Timestamp:** 2025-10-29T00:53:41.439Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
 **Total Violations:** 5
 
@@ -43,24 +43,24 @@
 
 #### Affected Elements:
 
-- `.hover-s.subscription-card-skeleton.subscription-card:nth-child(1) > .card-header[data-v-f161f4b3=""] > .margin-top-xl.padding-top-2xs`
+- `.hover-s.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-header[data-v-f161f4b3=""] > .margin-top-xl.padding-top-2xs`
 - `.dropdown-category.footer[data-v-fc78c99a=""]:nth-child(1) > .dropdown-link[data-v-295ed7f3=""] > .dropdown-header.hidden-mobile[data-v-295ed7f3=""] > h6`
 - `#privacy_prompt_text2 > h4`
 
-### Links must have discernible text
+### <li> elements must be contained in a <ul> or <ol>
 
 - **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT
+- **Description:** Ensure <li> elements are used semantically
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/listitem?application=playwright
+- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1
 - **Count:** 4
 
 #### Affected Elements:
 
-- `a[target="_self"][ondragstart="return false"][draggable="false"]:nth-child(1)`
-- `a[target="_self"][ondragstart="return false"][draggable="false"]:nth-child(2)`
-- `a[target="_self"][ondragstart="return false"][draggable="false"]:nth-child(3)`
-- `a[target="_self"][ondragstart="return false"][draggable="false"]:nth-child(4)`
+- `.margin-bottom-xs[ondragstart="return false"][data-v-d2dd02e0=""]:nth-child(1) > .border-radius-l.card[data-v-14a666ce=""] > .main-stock.stock[size="14px"]`
+- `.margin-bottom-xs[ondragstart="return false"][data-v-d2dd02e0=""]:nth-child(2) > .border-radius-l.card[data-v-14a666ce=""] > .main-stock.stock[size="14px"]`
+- `.margin-bottom-xs[ondragstart="return false"][data-v-d2dd02e0=""]:nth-child(3) > .border-radius-l.card[data-v-14a666ce=""] > .main-stock.stock[size="14px"]`
+- `.margin-bottom-xs[ondragstart="return false"][data-v-d2dd02e0=""]:nth-child(4) > .border-radius-l.card[data-v-14a666ce=""] > .main-stock.stock[size="14px"]`
 
 ### All page content should be contained by landmarks
 
