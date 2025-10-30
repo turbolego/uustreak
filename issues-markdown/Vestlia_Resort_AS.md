@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2025-10-29T01:00:15.770Z
+**Timestamp:** 2025-10-30T12:03:46.241Z
 **URL:** [https://vestlia.no/#](https://vestlia.no/#)
 **Total Violations:** 6
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
-- **Count:** 12
+- **Count:** 14
 
 #### Affected Elements:
 
@@ -24,10 +24,12 @@
 - `.fusion-title-6 > h2`
 - `.fusion-title-11 > h2`
 - `.button-9 > .fusion-button-text.awb-button__text.awb-button__text--default`
+- `.fusion-title-13 > h2`
+- `.button-10 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `#mc-embedded-subscribe`
-- `.button-11 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.button-12 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.button-13 > .fusion-button-text.awb-button__text.awb-button__text--default`
+- `.button-14 > .fusion-button-text.awb-button__text.awb-button__text--default`
 
 ### Heading levels should only increase by one
 
@@ -35,13 +37,14 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 3
+- **Count:** 4
 
 #### Affected Elements:
 
 - `.fusion-title-2 > h5`
 - `.fusion-title-7 > h6`
 - `.fusion-title-10 > h6`
+- `.fusion-title-12 > h6`
 
 ### Images must have alternative text
 
@@ -93,11 +96,11 @@
 - `.skip-link`
 - `.fusion-builder-column-1`
 - `.fusion-flex-justify-content-center.fusion-content-layout-column.fusion-column-wrapper > .sm-text-align-center.fusion-image-element`
-- `.fusion-builder-column-25`
-- `.fusion-builder-column-26`
 - `.fusion-builder-column-27`
-- `.fusion-builder-row-13`
-- `.fusion-builder-row-15`
+- `.fusion-builder-column-28`
+- `.fusion-builder-column-29`
+- `.fusion-builder-row-14`
 - `.fusion-builder-row-16`
+- `.fusion-builder-row-17`
 - `body > div:nth-child(19)`
 - `body > div:nth-child(21)`

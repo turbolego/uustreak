@@ -1,6 +1,6 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2025-10-29T00:37:33.773Z
+**Timestamp:** 2025-10-30T11:57:57.856Z
 **URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
 **Total Violations:** 8
 
@@ -261,13 +261,14 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 5
+- **Count:** 6
 
 #### Affected Elements:
 
+- `.hero-banner:nth-child(3) > .responsive-hero.responsive-hero--left > .responsive-hero__content > h3`
 - `#\36 L0V8e5iF05SuPKt0kOrPq-title`
 - `#\34 NFhlgEibxwQw7TMY4OKLp-title`
-- `#ia > .column-layout__container > .column-layout__title`
+- `.column-layout:nth-child(13) > .column-layout__container > .column-layout__title`
 - `#\34 XAMjmtbFJouRy2Y2HAtPH-title`
 - `#\35 jEmf9y6skVo2VFSeLq9gG-title`
 

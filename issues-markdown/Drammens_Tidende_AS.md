@@ -1,10 +1,22 @@
 # WCAG Violations Report for Drammens Tidende AS
 
-**Timestamp:** 2025-10-29T00:43:28.810Z
+**Timestamp:** 2025-10-30T12:04:45.083Z
 **URL:** [https://www.dt.no/#](https://www.dt.no/#)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#eaframe`
 
 ### Ensure elements marked as presentational are consistently ignored
 

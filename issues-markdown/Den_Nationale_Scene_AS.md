@@ -1,8 +1,8 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2025-10-29T00:42:06.409Z
+**Timestamp:** 2025-10-30T12:03:15.435Z
 **URL:** [https://dns.no/#](https://dns.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -18,6 +18,18 @@
 
 - `.month1 > thead > .caption > th:nth-child(3)`
 - `.month2 > thead > .caption > th:nth-child(1)`
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[data-dojo-attach-point="iframeModalContainer"]`
 
 ### Links must have discernible text
 
@@ -47,7 +59,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 83
+- **Count:** 87
 
 #### Affected Elements:
 
@@ -134,6 +146,10 @@
 - `.vc_col-sm-4.vc_grid-item.vc_grid-item-zone-c-bottom:nth-child(3) > .vc_grid-item-mini.vc_clearfix > .vc_gitem-zone-c.vc_gitem-zone > .vc_gitem-zone-mini > .vc_gitem-row-position-top.vc_gitem_row.vc_row > .vc_gitem-col.vc_gitem-col-align-.vc_col-sm-12 > .vc_gitem-post-data-source-post_excerpt.vc_custom_heading.vc_gitem-post-data`
 - `.padded-section[data-vc-full-width="true"][data-vc-full-width-init="true"] > .vc_col-sm-12.wpb_column.vc_column_container > .vc_column-inner > .wpb_wrapper > .vc_inner.wpb_row.vc_row-fluid:nth-child(2)`
 - `.vc_custom_1750769162252`
+- `iframe[data-dojo-attach-point="iframeModalContainer"], .content__titleDescription`
+- `iframe[data-dojo-attach-point="iframeModalContainer"], #uniqName_3_0`
+- `iframe[data-dojo-attach-point="iframeModalContainer"], .content__footer`
+- `iframe[data-dojo-attach-point="iframeModalContainer"], #dijit__TemplatedMixin_2`
 
 ### Elements should not have tabindex greater than zero
 

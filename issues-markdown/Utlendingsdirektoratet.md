@@ -1,22 +1,22 @@
 # WCAG Violations Report for Utlendingsdirektoratet
 
-**Timestamp:** 2025-10-29T00:59:13.836Z
+**Timestamp:** 2025-10-30T12:02:33.615Z
 **URL:** [https://www.udi.no/#](https://www.udi.no/#)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
-### Elements must only use permitted ARIA attributes
+### ARIA role should be appropriate for the element
 
-- **Impact:** serious
-- **Description:** Ensure ARIA attributes are not prohibited for an element's role
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2
+- **Impact:** minor
+- **Description:** Ensure role attribute has an appropriate value for the element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright
+- **Tags:** cat.aria, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.menucontainer`
+- `#login-link`
 
 ### Form elements should have a visible label
 
@@ -41,15 +41,3 @@
 #### Affected Elements:
 
 - `html`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
-- **Tags:** cat.keyboard, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.container > div`

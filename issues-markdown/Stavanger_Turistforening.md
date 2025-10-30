@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2025-10-29T00:29:05.871Z
+**Timestamp:** 2025-10-30T11:49:02.822Z
 **URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
 **Total Violations:** 10
 
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-504717"]`
-- `button[aria-controls="modal-563521"]`
-- `button[aria-controls="modal-503361"]`
-- `button[aria-controls="modal-506707"]`
-- `button[aria-controls="modal-566500"]`
 - `button[aria-controls="modal-568742"]`
 - `button[aria-controls="modal-561514"]`
 - `button[aria-controls="modal-562109"]`
+- `button[aria-controls="modal-561457"]`
+- `button[aria-controls="modal-562487"]`
+- `button[aria-controls="modal-507296"]`
+- `button[aria-controls="modal-450325"]`
+- `button[aria-controls="modal-559207"]`
 
 ### Buttons must have discernible text
 

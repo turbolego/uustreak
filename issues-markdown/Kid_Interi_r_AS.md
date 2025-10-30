@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-10-29T00:39:38.851Z
+**Timestamp:** 2025-10-30T11:59:50.483Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 5
 
@@ -65,15 +65,6 @@
 - `img[alt="Borddekking 50%"]`
 - `img[alt="Pynteputer 50%"]`
 - `img[alt="Pledd 50%"]`
-- `img[alt="Kalendergavetips!"]`
-- `img[alt="Julesengetøy"]`
-- `img[alt="Juleputer"]`
-- `img[alt="Adventsbelysning"]`
-- `img[alt="Julekranser"]`
-- `img[alt="Julelykter & lys"]`
-- `img[alt="Julegaveinnpakning"]`
-- `img[alt="Julepynt"]`
-- `img[alt="Julestrømper"]`
 - `img[alt="Sofa"]`
 - `img[alt="Småbord og sofabord"]`
 - `img[alt="Gulvtepper"]`
@@ -83,6 +74,15 @@
 - `img[alt="Hyller"]`
 - `img[alt="Spisebord"]`
 - `img[alt="Skap og skjenker"]`
+- `img[alt="Kalendergavetips!"]`
+- `img[alt="Julesengetøy"]`
+- `img[alt="Juleputer"]`
+- `img[alt="Adventsbelysning"]`
+- `img[alt="Julekranser"]`
+- `img[alt="Julelykter & lys"]`
+- `img[alt="Julegaveinnpakning"]`
+- `img[alt="Julepynt"]`
+- `img[alt="Julestrømper"]`
 
 ### All page content should be contained by landmarks
 

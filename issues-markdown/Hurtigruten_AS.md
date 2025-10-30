@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hurtigruten AS
 
-**Timestamp:** 2025-10-29T00:36:37.913Z
+**Timestamp:** 2025-10-30T11:56:39.847Z
 **URL:** [https://www.hurtigruten.com/nb-no](https://www.hurtigruten.com/nb-no)
 **Total Violations:** 6
 
@@ -66,12 +66,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 5
+- **Count:** 4
 
 #### Affected Elements:
 
-- `.promoStyles_lgView__S_OoW > span`
-- `.promoStyles_lgView__S_OoW > .styles_linkButton__eZWNK[rel=""][target="_self"] > .styles_btnInner__olpKp > .styles_btnText__tEvAX`
+- `.bannerStyles_wrapper__VGvtC.bannerStyles_Info___Nb5u[data-testid="banner-wrapper"] > .bannerStyles_body__R0kzz.bannerStyles_hasTimer__IRx_n`
 - `.styles_newsLetterContainer__oNPsL > .styles_wrapper__7DGG5.no-width-control > div > .styles_mb-xl__NcBm1`
 - `.styles_newsLetterContainer__oNPsL > .styles_wrapper__7DGG5.no-width-control > div > .styles_mb-2xl__0JSb2`
 - `a[href$="nyhetsbrev"] > .styles_btnInner__olpKp > .styles_btnText__tEvAX`
