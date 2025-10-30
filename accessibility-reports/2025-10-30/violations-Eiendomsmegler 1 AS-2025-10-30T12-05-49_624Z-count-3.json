@@ -1,0 +1,80 @@
+{
+  "project": "Eiendomsmegler 1 AS",
+  "timestamp": "2025-10-30T12:05:49.624Z",
+  "url": "https://www.eiendomsmegler1.no/#",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-dialog-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+      "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-dialog-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div role=\"dialog\" class=\"optin\" aria-live=\"polite\" aria-describedby=\"modalDescription\">",
+          "target": [
+            ".optin"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h3 class=\"ffe-h5 optin-settings__header\"><span>Teknisk</span></h3>",
+          "target": [
+            ".optin-settings__section:nth-child(3) > .optin-grid > .optin-grid__col2 > .optin-settings__header.ffe-h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5 class=\"ffe-h5 style_topPadding__Y85Tq\"><strong>Dataskraping av nettsider</strong></h5>",
+          "target": [
+            "h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"skip-link\" href=\"#content\" tabindex=\"0\">Gå til innholdet</a>",
+          "target": [
+            ".skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
