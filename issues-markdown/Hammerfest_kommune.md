@@ -1,8 +1,8 @@
 # WCAG Violations Report for Hammerfest kommune
 
-**Timestamp:** 2025-10-30T11:54:26.847Z
+**Timestamp:** 2025-10-31T00:26:54.205Z
 **URL:** [https://hammerfest.kommune.no/#](https://hammerfest.kommune.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -24,6 +24,18 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.articles-carousel-li:nth-child(1) > .slide > .center.articles-carousel-li-center > .articles-carousel-li-text.text > .artikkel > h4`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:

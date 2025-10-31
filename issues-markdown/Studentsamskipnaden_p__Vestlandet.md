@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2025-10-30T11:53:39.603Z
+**Timestamp:** 2025-10-31T00:26:08.791Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 5
 
@@ -101,7 +101,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 30
+- **Count:** 31
 
 #### Affected Elements:
 
@@ -120,6 +120,7 @@
 - `a[href$="julegøy-stord"] > .px-3.pb-3.pt-1`
 - `#carousel3`
 - `#carousel4`
+- `#carousel5`
 - `div:nth-child(1) > .\!font-bold.pb-4`
 - `.gap-3[href$="bolig"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
 - `.gap-3[href$="studentliv"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`

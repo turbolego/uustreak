@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2025-10-30T12:01:12.313Z
+**Timestamp:** 2025-10-31T00:33:29.877Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 12
 
@@ -45,7 +45,7 @@
 
 #### Affected Elements:
 
-- `a[href="mailto:dag.hoie@dagsavisen.no"]`
+- `.text_singleline.large-3.large-abs-3:nth-child(3) > .t16.font-PTSerif.singleline > a:nth-child(8)`
 
 ### Headings should not be empty
 
@@ -83,12 +83,12 @@
 
 #### Affected Elements:
 
-- `.tm39.t56`
-- `.tm32`
-- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary > .t24`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(41) > .tm21.t42`
+- `.t56`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(26) > .tm21.t42`
+- `.t33`
+- `.tm32.t42`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > .t40`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(43) > .tm21.t42`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(36) > .tm21.t42`
 
 ### Images must have alternative text
 
@@ -149,13 +149,25 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 77
+- **Count:** 71
 
 #### Affected Elements:
 
 - `h1`
+- `#notice-10034367 > .content > h2`
+- `#notice-10034367 > .content > .meta`
+- `#notice-10034347 > .content > h2`
+- `#notice-10034347 > .content > .meta`
+- `#notice-10034244 > .content > h2`
+- `#notice-10034244 > .content > .meta`
+- `div[title="Blodrød dag på Oslo Børs"] > h2`
+- `div[title="Blodrød dag på Oslo Børs"] > .meta`
+- `#notice-10033805 > .content > h2`
+- `time[datetime="2025-10-30T13:04:37.000Z"]`
+- `div[title="Ber eldre ta influensavaksine"] > h2`
+- `time[datetime="2025-10-30T12:46:54.000Z"]`
 - `div[title="Sp krever kutt i direktørvelde"] > h2`
-- `time[datetime="2025-10-30T11:10:32.000Z"]`
+- `time[datetime="2025-10-30T12:48:24.000Z"]`
 - `div[title="Jagerfly avskar russisk fly"] > h2`
 - `time[datetime="2025-10-30T10:35:54.000Z"]`
 - `div[title="Veksten i unge uføre flater ut"] > h2`
@@ -182,53 +194,35 @@
 - `#notice-10032151 > .content > .meta`
 - `div[title="Barnehagebarn fant ladd pistol"] > h2`
 - `time[datetime="2025-10-29T15:40:49.000Z"]`
-- `div[title="Nytt angrep i Gaza"] > h2`
-- `div[title="Nytt angrep i Gaza"] > .meta`
-- `div[title="460 drept på sykehus i Sudan"] > h2`
-- `div[title="460 drept på sykehus i Sudan"] > .meta`
-- `#notice-10031880 > .content > h2`
-- `#notice-10031880 > .content > .meta`
-- `#notice-10031668 > .content > h2`
-- `time[datetime="2025-10-29T13:17:10.000Z"]`
-- `div[title="Cuba hardt rammet av Melissa"] > h2`
-- `time[datetime="2025-10-29T13:13:24.000Z"]`
-- `div[title="Avtale mellom USA og Sør-Korea"] > h2`
-- `time[datetime="2025-10-29T10:54:06.000Z"]`
 - `.row.large-12.small-12:nth-child(2)`
-- `.color_mobile_no_bg_color.row.large-12`
+- `.page-content > .bg-tertiary.color_mobile_bg-tertiary.hasContentPadding:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
-- `.row.large-12.small-12:nth-child(6)`
-- `.row.large-12.small-12:nth-child(7)`
 - `#offer_a8dfe1abe190392acdc8-0, div[ng-show="!terminalError"]`
-- `.bg-tertiary.color_mobile_bg-tertiary.hasContentPadding:nth-child(9)`
+- `.row.large-12.small-12:nth-child(7)`
+- `.row.large-12.small-12:nth-child(8)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(9)`
 - `.row.large-12.small-12:nth-child(11)`
 - `.row.large-12.small-12:nth-child(12)`
-- `.row.large-12.small-12:nth-child(13)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(14)`
-- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(16)`
-- `.row.large-12.small-12:nth-child(17)`
+- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(13)`
+- `.row.large-12.small-12:nth-child(14)`
 - `.articlescroller-header`
 - `.count_4`
-- `.color_mobile_bg-primary`
-- `.tm39.t56`
+- `.row.large-12.small-12:nth-child(17)`
+- `.t56`
 - `.count_1`
-- `.row.large-12.small-12:nth-child(22)`
+- `.row.large-12.small-12:nth-child(19)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(21)`
+- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(22)`
 - `.row.large-12.small-12:nth-child(23)`
-- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(24)`
-- `.bg-tertiary.color_mobile_bg-tertiary.hasContentPadding:nth-child(26)`
-- `.row.large-12.small-12:nth-child(27)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(28)`
-- `.row.large-12.small-12:nth-child(29)`
+- `.row.large-12.small-12:nth-child(24)`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(26)`
 - `.mobile_no_border_color.bg-tertiary.color_mobile_bg-tertiary`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(29)`
+- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(31)`
+- `.row.large-12.small-12:nth-child(32)`
 - `.border-side-top.mobile_border-side-top.has-row-header:nth-child(33)`
-- `.row.large-12.small-12:nth-child(34)`
-- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(36)`
-- `.gradient-light`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(38)`
-- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(41)`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(43)`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(36)`
 - `.powered-by`
 
 ### [role="img"] elements must have an alternative text

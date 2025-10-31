@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2025-10-30T12:05:24.128Z
+**Timestamp:** 2025-10-31T00:36:44.431Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 4
 
@@ -63,7 +63,7 @@
 - `.cmp-logo__link > .sr-only`
 - `.myey-login-url`
 - `.featured_av-caption-wrapper`
-- `#image-render-f04edc067a > .cmp-image__image[height="2560"][loading="lazy"]`
+- `img[alt="Kloden i hånden"]`
 - `.theme-dark.cmp-container--theme-dark.cmp-container--background-color-e2e`
 - `#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`

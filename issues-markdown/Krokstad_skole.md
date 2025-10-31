@@ -1,6 +1,6 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2025-10-30T12:02:48.529Z
+**Timestamp:** 2025-10-31T01:07:19.651Z
 **URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#)
 **Total Violations:** 10
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f86394f8a0385dab3"], ._55yn`
+- `iframe[name="ffdda174a9d272043"], ._55yn`
 
 ### Certain ARIA roles must contain particular children
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f86394f8a0385dab3"], div[role="feed"]`
+- `iframe[name="ffdda174a9d272043"], div[role="feed"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -40,9 +40,9 @@
 
 #### Affected Elements:
 
-- `iframe[name="f86394f8a0385dab3"], ._4v3m:nth-child(2) > ._eg_[role="button"] > ._eh3`
-- `iframe[name="f86394f8a0385dab3"], ._4v3m._51mw > ._eg_[role="button"] > ._eh3`
-- `iframe[name="f86394f8a0385dab3"], abbr[data-utime="1760704710"] > .timestampContent`
+- `iframe[name="ffdda174a9d272043"], ._4v3m:nth-child(2) > ._eg_[role="button"] > ._eh3`
+- `iframe[name="ffdda174a9d272043"], ._4v3m._51mw > ._eg_[role="button"] > ._eh3`
+- `iframe[name="ffdda174a9d272043"], abbr[data-utime="1761827116"] > .timestampContent`
 
 ### Form elements should have a visible label
 
@@ -92,14 +92,14 @@
 
 #### Affected Elements:
 
-- `iframe[name="f86394f8a0385dab3"], #u_0_1_0G`
-- `iframe[name="f86394f8a0385dab3"], .lfloat._3-8_`
-- `iframe[name="f86394f8a0385dab3"], #u_1_n_Yl > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f86394f8a0385dab3"], #u_1_6_M\/ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f86394f8a0385dab3"], #u_1_7_aF > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f86394f8a0385dab3"], #u_1_5_Cc > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f86394f8a0385dab3"], ._2l7q > a`
-- `iframe[name="f86394f8a0385dab3"], #u_1_8_N6 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="ffdda174a9d272043"], #u_0_1_uW`
+- `iframe[name="ffdda174a9d272043"], .lfloat._3-8_`
+- `iframe[name="ffdda174a9d272043"], ._2l7q > a`
+- `iframe[name="ffdda174a9d272043"], #u_1_6_XS > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="ffdda174a9d272043"], #u_1_10_5e > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="ffdda174a9d272043"], #u_1_d_5D > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="ffdda174a9d272043"], #u_1_5_E9 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="ffdda174a9d272043"], #u_1_c_gc > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
 
 ### Interactive controls must not be nested
 
@@ -123,8 +123,8 @@
 
 #### Affected Elements:
 
-- `iframe[name="f86394f8a0385dab3"], a[aria-describedby="u_1_g_f9"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > .scaledImageFitWidth[height="148"][caption=""]`
-- `iframe[name="f86394f8a0385dab3"], a[aria-describedby="u_1_17_A8"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > .scaledImageFitWidth[height="148"][caption=""]`
+- `iframe[name="ffdda174a9d272043"], a[aria-describedby="u_1_t_ZT"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > .scaledImageFitWidth[height="148"][caption=""]`
+- `iframe[name="ffdda174a9d272043"], a[aria-describedby="u_1_12_7b"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > .scaledImageFitWidth[height="148"][caption=""]`
 
 ### All page content should be contained by landmarks
 

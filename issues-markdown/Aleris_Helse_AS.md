@@ -1,6 +1,6 @@
 # WCAG Violations Report for Aleris Helse AS
 
-**Timestamp:** 2025-10-30T11:50:54.669Z
+**Timestamp:** 2025-10-31T00:23:34.193Z
 **URL:** [https://www.aleris.no/](https://www.aleris.no/)
 **Total Violations:** 6
 
@@ -41,7 +41,7 @@
 
 #### Affected Elements:
 
-- `.styles_textMaxWidth__x7mWL.styles_html__zz6xy > .desktop-h3.h3`
+- `.styles_textMaxWidth__x7mWL.styles_html__zz6xy[data-epi-edit="Text"] > .desktop-h3.h3`
 
 ### Document should not have more than one banner landmark
 
