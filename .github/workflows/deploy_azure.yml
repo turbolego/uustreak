@@ -77,7 +77,11 @@ jobs:
           cp -r accessibility-reports/* gh-pages-branch/accessibility-reports/ || true
           cp -r playwright-report/* "gh-pages-branch/historical-data/${TIMESTAMP}-report/" || true
           cp {all,index,bar}.html gh-pages-branch/
+          cp README.md gh-pages-branch/
           cp favicon.ico gh-pages-branch/
+          cp -r js gh-pages-branch/
+          cp styles.css gh-pages-branch/
+          cp -r assets gh-pages-branch/
           
           # Generate report list
           find gh-pages-branch/accessibility-reports -name "violations-*.json" -type f | \

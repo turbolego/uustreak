@@ -1198,12 +1198,15 @@ jobs:
         run: |
           echo "Copying static files to gh-pages branch..."
           cp main-branch/index.html gh-pages-branch/
-          cp main-branch/favicon.ico gh-pages-branch/
           cp main-branch/README.md gh-pages-branch/
+          cp main-branch/favicon.ico gh-pages-branch/
           
           # Copy new JavaScript and CSS files
           cp -r main-branch/js gh-pages-branch/
           cp main-branch/styles.css gh-pages-branch/
+          
+          # Copy assets folder (includes favicons and images)
+          cp -r main-branch/assets gh-pages-branch/
           
           # CRITICAL: Remove .gitignore from gh-pages to allow accessibility-reports to be committed
           if [ -f "gh-pages-branch/.gitignore" ]; then

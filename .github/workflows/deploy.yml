@@ -485,12 +485,15 @@ jobs:
           cp index.html gh-pages-branch/
           cp all.html gh-pages-branch/
           cp bar.html gh-pages-branch/
-          cp favicon.ico gh-pages-branch/
           cp README.md gh-pages-branch/
+          cp favicon.ico gh-pages-branch/
           
           # Copy new JavaScript and CSS files
           cp -r js gh-pages-branch/
           cp styles.css gh-pages-branch/
+          
+          # Copy assets folder (includes favicons and images)
+          cp -r assets gh-pages-branch/
           
           echo "Static files copied to gh-pages branch"
       - name: Deploy to GitHub Pages
