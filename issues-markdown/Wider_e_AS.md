@@ -1,6 +1,6 @@
 # WCAG Violations Report for Widerøe AS
 
-**Timestamp:** 2025-10-31T00:36:40.235Z
+**Timestamp:** 2025-11-01T00:46:25.150Z
 **URL:** [https://www.wideroe.no/#](https://www.wideroe.no/#)
 **Total Violations:** 9
 
@@ -129,9 +129,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
 - **Tags:** cat.keyboard, best-practice
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
+- `.col-lg-12.col-md-12.pad0 > div:nth-child(2)`
 - `.book-your-flight-label`
 - `.new-booking-widget-elements-desktop`

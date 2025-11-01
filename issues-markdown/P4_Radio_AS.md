@@ -1,8 +1,8 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2025-10-31T00:43:18.259Z
+**Timestamp:** 2025-11-01T00:38:26.647Z
 **URL:** [https://www.lydenavnorge.no/p4/](https://www.lydenavnorge.no/p4/)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -10,8 +10,8 @@
 
 - **Impact:** critical
 - **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
 - **Count:** 33
 
 #### Affected Elements:
@@ -54,8 +54,8 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 3
 
 #### Affected Elements:
@@ -68,8 +68,8 @@
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 3
 
 #### Affected Elements:
@@ -78,24 +78,12 @@
 - `.metadata[data-v-98ccaf4e=""] > .image-container[data-v-98ccaf4e=""] > img[data-v-98ccaf4e=""][loading="lazy"]`
 - `.metadata-image.show[data-v-a2b021d2=""] > img[data-v-a2b021d2=""]`
 
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `img[alt="P8 Pop"]`
-
 ### Form elements must have labels
 
 - **Impact:** critical
 - **Description:** Ensure every form element has a label
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/label?application=playwright
-- **Tags:** cat.forms, wcag2a, wcag412, section508, section508.22.n, TTv5, TT5.c, EN-301-549, EN-9.4.1.2, ACT
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/label?application=playwright
+- **Tags:** cat.forms, wcag2a, wcag412, section508, section508.22.n, TTv5, TT5.c, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.1.1
 - **Count:** 2
 
 #### Affected Elements:
@@ -107,7 +95,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -119,19 +107,20 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT
-- **Count:** 14
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 15
 
 #### Affected Elements:
 
 - `.image-container[data-v-f6602e5c=""] > a[data-v-f6602e5c=""]`
-- `.image-link[href$="fem-pa/"][data-v-d851a3f3=""]`
-- `.grid > .medium-large.contest-box.item:nth-child(1) > .image-link`
-- `.medium-large.contest-box.item:nth-child(2) > .image-link`
-- `.content-box.medium-large[data-v-d857f115=""]:nth-child(1) > .image-link[data-v-d857f115=""]`
+- `.image-link[href$="fem-pa/"][data-v-d857f115=""]`
 - `.content-box.medium-large[data-v-d857f115=""]:nth-child(2) > .image-link[data-v-d857f115=""]`
-- `.container[data-v-30b48782=""]:nth-child(5) > div > .medium-large.contest-box.item > .image-link`
+- `.container[data-v-30b48782=""]:nth-child(3) > .grid > .medium-large.contest-box.item:nth-child(1) > .image-link`
+- `.container[data-v-30b48782=""]:nth-child(3) > .grid > .medium-large.contest-box.item:nth-child(2) > .image-link`
+- `.container[data-v-30b48782=""]:nth-child(4) > .grid > .medium-large.contest-box.item:nth-child(1) > .image-link`
+- `.container[data-v-30b48782=""]:nth-child(4) > .grid > .medium-large.contest-box.item:nth-child(2) > .image-link`
+- `.image-link[data-v-d851a3f3=""]`
 - `.large.section-box.item > .image-container[data-v-317123a9=""] > a[data-v-317123a9=""]`
 - `.small.section-box.item:nth-child(1) > .image-container[data-v-317123a9=""] > a[data-v-317123a9=""]`
 - `.small.section-box.item:nth-child(2) > .image-container[data-v-317123a9=""] > a[data-v-317123a9=""]`
@@ -144,8 +133,8 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
-- **Tags:** cat.keyboard, best-practice
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 4
 
 #### Affected Elements:

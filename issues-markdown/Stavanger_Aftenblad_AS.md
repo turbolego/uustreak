@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2025-10-31T00:49:58.653Z
+**Timestamp:** 2025-11-01T00:45:16.023Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
 **Total Violations:** 7
 
@@ -10,8 +10,8 @@
 
 - **Impact:** critical
 - **Description:** Ensure all elements with a role attribute use a valid value
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-roles?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-roles?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 3
 
 #### Affected Elements:
@@ -24,8 +24,8 @@
 
 - **Impact:** critical
 - **Description:** Ensure all ARIA attributes have valid values
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-valid-attr-value?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 1
 
 #### Affected Elements:
@@ -36,13 +36,14 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
-- **Count:** 13
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 14
 
 #### Affected Elements:
 
-- `article[data-pulse-entity-id="Alekn3"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section`
+- `.liveticker-red`
+- `.article--live > .article__teaser-container > .article__link.url > .article__text-container > .article__section`
 - `.memo > .text-container > h3`
 - `.kryssord > .text-container > h3`
 - `.minikryss > .text-container > h3`
@@ -60,8 +61,8 @@
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 16
 
 #### Affected Elements:
@@ -87,8 +88,8 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 2
 
 #### Affected Elements:
@@ -100,118 +101,97 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
-- **Tags:** cat.keyboard, best-practice
-- **Count:** 99
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 78
 
 #### Affected Elements:
 
 - `h1`
 - `#announcement-banner`
+- `.liveticker-red`
+- `a[data-name="Sportsstudio"]`
+- `a[data-name="Utenriksstudio"] > .name`
+- `a[data-name="Nyhetsstudio"] > .name`
+- `a[data-name="Trafikkstudio"] > .name`
+- `a[data-name="Økonomistudio"] > .name`
 - `.collage-x3.row:nth-child(1)`
-- `.top-60-40-block`
-- `#dr-edition-teaser-vnblsj5qg > div`
-- `._content_1bm9r_637 > ._heading_1bm9r_641 > span`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(2) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(2) > a > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > a > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > a > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > a > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(6) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(6) > a > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(7) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(7) > a > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(8) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(8) > a > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > a > ._preview-title_1bm9r_721`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._sa_4e48p_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
-- `.collage-x4.row:nth-child(11)`
-- `.collage-x3.row:nth-child(13)`
-- `.vertical-x2.row:nth-child(17)`
-- `.collage-x4.row:nth-child(18)`
-- `.vertical-x2.row:nth-child(20)`
+- `.collage-x3.row:nth-child(3)`
+- `#dr-edition-teaser-oxptsgq6 > div`
+- `._heading_1bm9r_641 > span`
+- `._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(2) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(2) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(3) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(3) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(4) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(4) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(5) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(5) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(6) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(6) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(7) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(7) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(8) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(8) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(9) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(9) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
+- `.vertical-x2.row:nth-child(11)`
+- `.collage-x4.row:nth-child(13)`
+- `.collage-x3.row:nth-child(17)`
+- `.vertical-x2.row:nth-child(18)`
+- `.vertical-x3.row:nth-child(20)`
 - `.hjernetrim-front-widget`
-- `a > ._heading_1bm9r_641 > span`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(2) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(2) > a > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > a > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > a > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > a > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(6) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(6) > a > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(7) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(7) > a > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(8) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(8) > a > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > a > ._preview-title_1bm9r_721`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `._aftenball_4e48p_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
-- `.collage-x3.row:nth-child(28)`
-- `.vertical-x3.row:nth-child(30)`
+- `.vertical-x2.row:nth-child(24)`
+- `.collage-x4.row:nth-child(26)`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
 - `.podcast-spons`
-- `.vertical-x2.row:nth-child(33)`
+- `.vertical-x2.row:nth-child(28)`
 - `.widget-football.regional-widget`
-- `.vertical-x4.row:nth-child(35)`
+- `.collage-x4.row:nth-child(30)`
 - `#oilwidget`
-- `.vertical-x3.row:nth-child(37)`
-- `.vertical-x2.row:nth-child(40)`
+- `.vertical-x2.row:nth-child(32)`
+- `.vertical-x3.row:nth-child(35)`
 - `.widget-bolig.regional-widget`
-- `.vertical-small-x2.row:nth-child(42)`
+- `.collage-x3.row:nth-child(37)`
+- `.vertical-x2.row:nth-child(38)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(40)`
+- `.vertical-x3.row:nth-child(41)`
 - `.vertical-x2.row:nth-child(43)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(45)`
-- `.vertical-x3.row:nth-child(46)`
-- `.vertical-x2.row:nth-child(48)`
-- `.vertical-small-x2.row:nth-child(49)`
-- `.vertical-x3.row:nth-child(50)`
-- `.vertical-x1-ad.row:nth-child(51)`
-- `.vertical-x4.row:nth-child(52)`
-- `.vertical-x3.row:nth-child(53)`
-- `.vertical-x1-ad.row:nth-child(54)`
-- `.vertical-x2.row:nth-child(55)`
-- `.vertical-small-x2.row:nth-child(56)`
-- `.vertical-x2.row:nth-child(57)`
-- `.vertical-x3.row:nth-child(58)`
-- `.vertical-x2.row:nth-child(59)`
-- `.vertical-small-x2.row:nth-child(60)`
-- `.vertical-x3.row:nth-child(61)`
-- `.vertical-x2.row:nth-child(63)`
+- `.vertical-x4`
+- `.collage-x4.row:nth-child(45)`
+- `.vertical-x1-ad.row:nth-child(46)`
+- `.vertical-x2.row:nth-child(47)`
+- `.collage-x4.row:nth-child(48)`
+- `.vertical-x1-ad.row:nth-child(49)`
+- `.vertical-x2.row:nth-child(50)`
+- `.vertical-x3.row:nth-child(51)`
+- `.vertical-x2.row:nth-child(52)`
+- `.vertical-small-x2`
+- `.vertical-x2.row:nth-child(54)`
+- `.vertical-x3.row:nth-child(55)`
+- `.collage-x3.row:nth-child(56)`
+- `.vertical-x2.row:nth-child(58)`
 - `#webcam-frontpage`
+- `.collage-x3.row:nth-child(60)`
+- `.vertical-x2.row:nth-child(61)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(62)`
+- `.vertical-x3.row:nth-child(64)`
 - `.collage-x3.row:nth-child(65)`
-- `.vertical-x2.row:nth-child(66)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(67)`
-- `.vertical-x3.row:nth-child(69)`
-- `.vertical-x2.row:nth-child(70)`
-- `.vertical-x4.row:nth-child(71)`
-- `.vertical-x1-ad.row:nth-child(72)`
-- `.vertical-x3.row:nth-child(73)`
-- `.collage-x3.row:nth-child(74)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(75)`
-- `.row--full`
-- `.sch-datacontroller__text`
+- `.vertical-x3.row:nth-child(66)`
 
 ### Scrollable region must have keyboard access
 
 - **Impact:** serious
 - **Description:** Ensure elements that have scrollable content are accessible by keyboard
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/scrollable-region-focusable?application=playwright
-- **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
 - **Count:** 1
 
 #### Affected Elements:

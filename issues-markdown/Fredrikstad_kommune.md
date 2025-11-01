@@ -1,66 +1,55 @@
 # WCAG Violations Report for Fredrikstad kommune
 
-**Timestamp:** 2025-10-31T00:25:44.211Z
+**Timestamp:** 2025-11-01T00:35:57.372Z
 **URL:** [https://www.fredrikstad.kommune.no/#](https://www.fredrikstad.kommune.no/#)
 **Total Violations:** 4
 
 ## Violation Details
 
-### Elements must meet minimum color contrast ratio thresholds
+### Documents must have <title> element to aid in navigation
 
 - **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT
+- **Description:** Ensure each HTML document contains a non-empty <title> element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/document-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag242, TTv5, TT12.a, EN-301-549, EN-9.2.4.2, ACT
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#corner_text`
+- `html`
 
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT
-- **Count:** 2
-
-#### Affected Elements:
-
-- `.language > img`
-- `a[href="/kalender?id=1687577"] > .relative.overflow-hidden.w-full > figure > .h-40.ease-in-out.object-cover`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
-- **Tags:** cat.keyboard, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `#q`
-- `.fk-searchbar-forside > .pt-4`
-- `div[x-show="step === 1"] > .text-gray-700.font-medium.text-xl`
-
-### <svg> elements with an img role must have an alternative text
+### <html> element must have a lang attribute
 
 - **Impact:** serious
-- **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/svg-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT
-- **Count:** 9
+- **Description:** Ensure every HTML document has a lang attribute
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/html-has-lang?application=playwright
+- **Tags:** cat.language, wcag2a, wcag311, TTv5, TT11.a, EN-301-549, EN-9.3.1.1, ACT
+- **Count:** 1
 
 #### Affected Elements:
 
-- `a[href="/kalender?id=1687577"] > .p-4 > .list-none > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
-- `a[href="/kalender?id=1687577"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
-- `a[href="/kalender?id=1687577"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`
-- `a[href="/kalender?id=1705403"] > .p-4 > .list-none > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
-- `a[href="/kalender?id=1705403"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
-- `a[href="/kalender?id=1705403"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`
-- `a[href="/kalender?id=1704033"] > .p-4 > .list-none > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
-- `a[href="/kalender?id=1704033"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
-- `a[href="/kalender?id=1704033"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`
+- `html`
+
+### Document should have one main landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has a main landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`

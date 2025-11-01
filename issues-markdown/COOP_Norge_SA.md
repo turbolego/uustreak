@@ -1,6 +1,6 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2025-10-31T00:30:37.151Z
+**Timestamp:** 2025-11-01T00:40:47.797Z
 **URL:** [https://www.coop.no/#](https://www.coop.no/#)
 **Total Violations:** 5
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.h9 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .h5.h7.h6 > .h8 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.h5 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .h1.h3.h2 > .h4 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### ARIA attributes must conform to valid values
 
@@ -30,8 +30,8 @@
 #### Affected Elements:
 
 - `input[role="searchbox"]`
-- `.h9 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .h5.h7.h6 > .h8 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.h5 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .h1.h3.h2 > .h4 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### Headings should not be empty
 
@@ -43,8 +43,8 @@
 
 #### Affected Elements:
 
-- `.g4`
-- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .ee.am.cj > .ef.eh.ei`
+- `.g6`
+- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .hg.am.cj > .hh.hi.hj`
 
 ### Frames must have an accessible name
 
@@ -52,14 +52,12 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2
-- **Count:** 4
+- **Count:** 2
 
 #### Affected Elements:
 
-- `#\33 3modPj5ilgcmY76YKciV8 > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"]`
-- `#\33 3modPj5ilgcmY76YKciV8 > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
-- `#GNXWL8jlPCFqmGJFbdvQe > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"]`
-- `#GNXWL8jlPCFqmGJFbdvQe > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
+- `iframe, iframe[src$="about:blank"]`
+- `iframe, body > iframe`
 
 ### Links must have discernible text
 
@@ -71,5 +69,5 @@
 
 #### Affected Elements:
 
-- `.jw.jx.jy:nth-child(1)`
-- `.jw.jx.jy:nth-child(2)`
+- `.kb.kc.kd:nth-child(1)`
+- `.kb.kc.kd:nth-child(2)`
