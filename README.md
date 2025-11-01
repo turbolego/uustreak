@@ -1,7 +1,5 @@
 # Spillifisering av statusmålinger
 
-![UUStreak - WCAG Accessibility Leaderboard](assets/uustreak.png)
-
 Tilsynet for universell utforming av ikt (uutilsynet) utførte ["statusmålinger" av norske nettsider i 2014, 2015, 2017 og 2018](https://www.uutilsynet.no/statusmalingar/digitale-barrierar-avdekka-i-statusmalingar/1179) men har ikke utført noen flere statusmålinger etter dette.
 
 Dette prosjektet har som mål å utføre en statusmåling av norske nettsider med automatisk testing og "[spillifisere](https://no.wikipedia.org/wiki/Spillifisering)" det å ha en nettside uten WCAG-brudd ved å lage en "highscore"-liste som oppdateres jevnlig med "streak"-score på antall dager uten WCAG-brudd.
@@ -33,3 +31,6 @@ Listen med de 278 nettsidene fra statusmålingen til uutilsynet i 2018 er brukt 
 * "Sørlandsruta AS" endret til "Connect Bus AS" pga. sammenslåingen i 2022
 * "Vest-Agder fylkeskommune" slått sammen med "Agder fylkeskommune" pga. sammenslåingen i 2020
 * "Ski kommune" endret til "Nordre Follo kommune" pga. sammenslåingen i 2020
+
+![UUStreak - WCAG Accessibility Leaderboard](assets/uustreak.png)
+
