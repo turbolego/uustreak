@@ -1,0 +1,83 @@
+{
+  "project": "Jysk AS",
+  "timestamp": "2025-11-02T00:33:07.438Z",
+  "url": "https://jysk.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<span data-backgroundcolor=\"undefined\" data-color=\"#FFFFFF\" data-fontsize=\"undefined\" data-fontweight=\"undefined\" data-lineheight=\"undefined\" style=\"color: #FFFFFF; \">FRI FRAKT</span>",
+          "target": [
+            ".jysk-promo-primary > span[data-backgroundcolor=\"undefined\"][data-color=\"#FFFFFF\"][data-fontsize=\"undefined\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.62 (foreground color: #ffffff, background color: #56a8d8, font size: 21.0pt (28px), font weight: normal). Expected contrast ratio of 3:1"
+        },
+        {
+          "html": "<strong>ALLE</strong>",
+          "target": [
+            "span[data-backgroundcolor=\"undefined\"][data-color=\"#FFFFFF\"][data-fontsize=\"undefined\"] > strong"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.62 (foreground color: #ffffff, background color: #56a8d8, font size: 16.5pt (22px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "html": "<span data-backgroundcolor=\"undefined\" data-color=\"#FFFFFF\" data-fontsize=\"undefined\" data-fontweight=\"undefined\" data-lineheight=\"undefined\" style=\"color: #FFFFFF; \">OVER 7000,-</span>",
+          "target": [
+            ".jysk-promo-secondary:nth-child(3) > span[data-backgroundcolor=\"undefined\"][data-color=\"#FFFFFF\"][data-fontsize=\"undefined\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.62 (foreground color: #ffffff, background color: #56a8d8, font size: 16.5pt (22px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span data-backgroundcolor=\"undefined\" data-color=\"#FFFFFF\" data-fontsize=\"undefined\" data-fontweight=\"undefined\" data-lineheight=\"undefined\" style=\"color: #FFFFFF; \">Kampanjen gjelder t.o.m. 02.11.2025</span>",
+          "target": [
+            "p:nth-child(4) > span[data-backgroundcolor=\"undefined\"][data-color=\"#FFFFFF\"][data-fontsize=\"undefined\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.62 (foreground color: #ffffff, background color: #56a8d8, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"notification\" class=\"jysk-promo-popup\">",
+          "target": [
+            "#notification"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

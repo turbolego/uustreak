@@ -33,3 +33,4 @@ Listen med de 278 nettsidene fra statusmålingen til uutilsynet i 2018 er brukt 
 * "Ski kommune" endret til "Nordre Follo kommune" pga. sammenslåingen i 2020
 
 ![UUStreak - WCAG Accessibility Leaderboard](assets/uustreak.png)
+
