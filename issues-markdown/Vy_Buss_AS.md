@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vy Buss AS
 
-**Timestamp:** 2025-11-01T00:46:03.826Z
+**Timestamp:** 2025-11-02T00:37:40.855Z
 **URL:** [https://www.vybuss.no/#!/](https://www.vybuss.no/#!/)
 **Total Violations:** 3
 
@@ -10,8 +10,8 @@
 
 - **Impact:** critical
 - **Description:** Ensure an element's role supports its ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 4
 
 #### Affected Elements:
@@ -23,10 +23,10 @@
 
 ### Zooming and scaling must not be disabled
 
-- **Impact:** critical
+- **Impact:** moderate
 - **Description:** Ensure <meta name="viewport"> does not disable text scaling and zooming
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=playwright
-- **Tags:** cat.sensory-and-visual-cues, wcag2aa, wcag144, EN-301-549, EN-9.1.4.4, ACT
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/meta-viewport?application=playwright
+- **Tags:** cat.sensory-and-visual-cues, wcag2aa, wcag144, EN-301-549, EN-9.1.4.4, ACT, RGAAv4, RGAA-10.4.2
 - **Count:** 1
 
 #### Affected Elements:
@@ -37,8 +37,8 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.10/region?application=playwright
-- **Tags:** cat.keyboard, best-practice
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 15
 
 #### Affected Elements:
@@ -53,8 +53,8 @@
 - `.expand-block__container:nth-child(4) > .expand-block__header[data-toggle="expand"]`
 - `.js-group-block.block__wrapper:nth-child(4)`
 - `.js-group-block.block__wrapper:nth-child(5)`
-- `#ddChallengeBody1761957956025, .captcha__human`
-- `#ddChallengeBody1761957956025, .sliderText`
-- `#ddChallengeBody1761957956025, #captcha__offline`
-- `#ddChallengeBody1761957956025, .captcha__robot__warning`
-- `#ddChallengeBody1761957956025, .captcha__robot__contact_support`
+- `#ddChallengeBody1762043855869, .captcha__human`
+- `#ddChallengeBody1762043855869, .sliderText`
+- `#ddChallengeBody1762043855869, #captcha__offline`
+- `#ddChallengeBody1762043855869, .captcha__robot__warning`
+- `#ddChallengeBody1762043855869, .captcha__robot__contact_support`

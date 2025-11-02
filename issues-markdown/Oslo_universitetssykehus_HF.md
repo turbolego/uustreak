@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo universitetssykehus HF
 
-**Timestamp:** 2025-11-01T00:38:12.770Z
+**Timestamp:** 2025-11-02T00:39:16.976Z
 **URL:** [https://www.oslo-universitetssykehus.no/#](https://www.oslo-universitetssykehus.no/#)
 **Total Violations:** 1
 
@@ -12,11 +12,12 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 4
+- **Count:** 5
 
 #### Affected Elements:
 
 - `._cookieconsent_1902723 > fieldset > legend`
 - `._cookieconsent__description_af7bfec`
 - `.skiplink`
+- `.browser-warning`
 - `._feedback__fieldset_a4f54f6`
