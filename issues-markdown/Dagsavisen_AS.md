@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2025-11-02T00:35:51.440Z
+**Timestamp:** 2025-11-03T00:34:37.995Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 12
 
@@ -84,10 +84,10 @@
 #### Affected Elements:
 
 - `.t56.tm39`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(33) > .tm21`
-- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(34) > .tm32`
+- `.tm32.t42`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(39) > .tm21.t42`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > .t40`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(37) > .tm21`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(42) > .tm21.t42`
 
 ### Images must have alternative text
 
@@ -148,11 +148,23 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 72
+- **Count:** 76
 
 #### Affected Elements:
 
 - `h1`
+- `#notice-10036850 > .content > h2`
+- `#notice-10036850 > .content > .meta`
+- `div[title="Alvorlig trafikkulykke i Troms"] > h2`
+- `div[title="Alvorlig trafikkulykke i Troms"] > .meta`
+- `#notice-10036611 > .content > h2`
+- `#notice-10036611 > .content > .meta`
+- `#notice-10036476 > .content > h2`
+- `time[datetime="2025-11-02T09:20:46.000Z"]`
+- `#notice-10036445 > .content > h2`
+- `time[datetime="2025-11-02T08:25:38.000Z"]`
+- `div[title="Eksplosjon i Mexico: 23 døde"] > h2`
+- `time[datetime="2025-11-02T07:41:10.000Z"]`
 - `div[title="21 døde i jordskred i Kenya"] > h2`
 - `div[title="21 døde i jordskred i Kenya"] > .meta`
 - `div[title="To drept i landsby på Kreta"] > h2`
@@ -181,18 +193,6 @@
 - `#notice-10035991 > .content > .meta`
 - `div[title="Funn av laksesykdom i Troms"] > h2`
 - `div[title="Funn av laksesykdom i Troms"] > .meta`
-- `#notice-10035989 > .content > h2`
-- `#notice-10035989 > .content > .meta`
-- `#notice-10035988 > .content > h2`
-- `#notice-10035988 > .content > .meta`
-- `#notice-10035987 > .content > h2`
-- `#notice-10035987 > .content > .meta`
-- `#notice-10035969 > .content > h2`
-- `#notice-10035969 > .content > .meta`
-- `div[title="– Må fortsette med matordning"] > h2`
-- `div[title="– Må fortsette med matordning"] > .meta`
-- `div[title="Brann over i Fredrikstad"] > h2`
-- `div[title="Brann over i Fredrikstad"] > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
@@ -201,28 +201,32 @@
 - `.row.large-12.small-12:nth-child(8)`
 - `.row.large-12.small-12:nth-child(9)`
 - `.row.large-12.small-12:nth-child(11)`
-- `.row.large-12.small-12:nth-child(12)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(12)`
 - `.row.large-12.small-12:nth-child(13)`
 - `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(14)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(16)`
+- `.bg-tertiary.color_mobile_bg-tertiary.hasContentPadding:nth-child(16)`
 - `.articlescroller-header`
 - `.count_4`
 - `.row.large-12.small-12:nth-child(18)`
 - `.t56.tm39`
 - `.count_1`
 - `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(21)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(22)`
+- `.row.large-12.small-12:nth-child(22)`
 - `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(23)`
 - `.row.large-12.small-12:nth-child(24)`
 - `.row.large-12.small-12:nth-child(26)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(27)`
-- `.row.large-12.small-12:nth-child(29)`
+- `.row.large-12.small-12:nth-child(27)`
+- `.row.large-12.small-12:nth-child(28)`
 - `.mobile_no_border_color.bg-tertiary.color_mobile_bg-tertiary`
 - `.border-side-top.mobile_border-side-top.has-row-header:nth-child(32)`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(33)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(33)`
 - `.border-side-top.mobile_border-side-top.has-row-header:nth-child(34)`
+- `.row.large-12.small-12:nth-child(36)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(37)`
+- `.row.large-12.small-12:nth-child(38)`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(39)`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(37)`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(42)`
 - `.powered-by`
 
 ### [role="img"] elements must have alternative text
