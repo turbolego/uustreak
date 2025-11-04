@@ -1,8 +1,8 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2025-11-03T00:36:30.392Z
+**Timestamp:** 2025-11-04T00:34:47.125Z
 **URL:** [https://vestlia.no/#](https://vestlia.no/#)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 14
+- **Count:** 15
 
 #### Affected Elements:
 
@@ -27,6 +27,7 @@
 - `.fusion-title-13 > h2`
 - `.button-10 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `#mc-embedded-subscribe`
+- `.fusion-title-16 > h3`
 - `.button-12 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.button-13 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.button-14 > .fusion-button-text.awb-button__text.awb-button__text--default`
@@ -45,18 +46,6 @@
 - `.fusion-title-7 > h6`
 - `.fusion-title-10 > h6`
 - `.fusion-title-12 > h6`
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `div:nth-child(21) > img`
 
 ### Links must have discernible text
 
@@ -102,5 +91,5 @@
 - `.fusion-builder-row-16`
 - `.fusion-builder-row-18`
 - `.fusion-builder-row-19`
-- `body > div:nth-child(19)`
+- `body > div:nth-child(20)`
 - `body > div:nth-child(21)`

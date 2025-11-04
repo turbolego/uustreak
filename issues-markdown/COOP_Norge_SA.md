@@ -1,8 +1,8 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2025-11-03T00:32:00.128Z
+**Timestamp:** 2025-11-04T00:40:03.646Z
 **URL:** [https://www.coop.no/#](https://www.coop.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.h4 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .h0.h2.h1 > .h3 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.g7 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .g3.g5.g4 > .g6 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### ARIA attributes must conform to valid values
 
@@ -30,8 +30,8 @@
 #### Affected Elements:
 
 - `input[role="searchbox"]`
-- `.h4 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .h0.h2.h1 > .h3 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.g7 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .g3.g5.g4 > .g6 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### Headings should not be empty
 
@@ -43,8 +43,21 @@
 
 #### Affected Elements:
 
-- `.g5`
-- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .hf.cj.am > .hg.hh.hi`
+- `.er`
+- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .gi.am.cj > .gj.gk.gl`
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `iframe, iframe[src$="about:blank"]`
+- `iframe, body > iframe`
 
 ### Links must have discernible text
 
@@ -56,5 +69,5 @@
 
 #### Affected Elements:
 
-- `.k8.k9.ka:nth-child(1)`
-- `.k8.k9.ka:nth-child(2)`
+- `.jm.jn.jo:nth-child(1)`
+- `.jm.jn.jo:nth-child(2)`

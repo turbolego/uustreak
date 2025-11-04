@@ -1,25 +1,22 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2025-11-03T00:32:54.026Z
+**Timestamp:** 2025-11-04T00:30:56.798Z
 **URL:** [https://jysk.no/#](https://jysk.no/#)
 **Total Violations:** 2
 
 ## Violation Details
 
-### Elements must meet minimum color contrast ratio thresholds
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 4
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.jysk-promo-primary > span[data-backgroundcolor="undefined"][data-color="#FFFFFF"][data-fontsize="undefined"]`
-- `span[data-backgroundcolor="undefined"][data-color="#FFFFFF"][data-fontsize="undefined"] > strong`
-- `.jysk-promo-secondary:nth-child(3) > span[data-backgroundcolor="undefined"][data-color="#FFFFFF"][data-fontsize="undefined"]`
-- `p:nth-child(4) > span[data-backgroundcolor="undefined"][data-color="#FFFFFF"][data-fontsize="undefined"]`
+- `.col-md-3.col-sm-12.col-12:nth-child(1) > .d-md-block.d-lg-block.d-none > nav`
 
 ### All page content should be contained by landmarks
 
@@ -27,8 +24,17 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 10
 
 #### Affected Elements:
 
-- `#notification`
+- `.col.mb-4.mb-md-0:nth-child(1) > .usp.text-decoration-none[href$="om-jysk"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
+- `.col.mb-4.mb-md-0:nth-child(2) > .usp.text-decoration-none[href$="om-jysk"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
+- `.col.mb-4.mb-md-0:nth-child(3) > .usp.text-decoration-none.d-block > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
+- `.usp.text-decoration-none[href$="edlp"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
+- `.newsletter__header`
+- `.required-label.my--1.mt-3`
+- `.newsletter__fields > div:nth-child(1)`
+- `.newsletter__fields > div:nth-child(2)`
+- `#edit-terms`
+- `.checkbox-inline > span:nth-child(3)`

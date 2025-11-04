@@ -1,6 +1,6 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2025-11-03T00:35:28.449Z
+**Timestamp:** 2025-11-04T00:43:24.023Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
 **Total Violations:** 10
 
@@ -166,17 +166,17 @@
 
 - `.right-0`
 - `.gap-1`
-- `.custom-select.md\:col-span-3[data-v-0de6cb4c=""]`
+- `.custom-select.md\:col-span-3[data-v-400c7250=""]`
 - `.dp__pointer`
 - `.btn-theme-default`
 - `.DARK.\!bg-Theme\/Dark:nth-child(2)`
-- `.DARK.\!bg-Theme\/Dark:nth-child(3) > .py-15[data-v-5bb271bd=""] > .container[data-v-5bb271bd=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
+- `.DARK.\!bg-Theme\/Dark:nth-child(3) > .py-15[data-v-55171670=""] > .container[data-v-55171670=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
 - `.DARK.\!bg-Theme\/Dark:nth-child(4)`
-- `.DARK.\!bg-Theme\/Dark:nth-child(5) > .py-15[data-v-5bb271bd=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
-- `.\!bg-Theme\/Light > .py-15[data-v-5bb271bd=""] > .container[data-v-5bb271bd=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
-- `.DARK.\!bg-Theme\/Dark:nth-child(7) > .py-15[data-v-5bb271bd=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
-- `.DARK.\!bg-Theme\/Dark:nth-child(8) > .py-15[data-v-5bb271bd=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
-- `.DARK.\!bg-Theme\/Dark:nth-child(9) > .py-15[data-v-5bb271bd=""] > .container[data-v-5bb271bd=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
+- `.DARK.\!bg-Theme\/Dark:nth-child(5) > .py-15[data-v-55171670=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
+- `.\!bg-Theme\/Light > .py-15[data-v-55171670=""] > .container[data-v-55171670=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
+- `.DARK.\!bg-Theme\/Dark:nth-child(7) > .py-15[data-v-55171670=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
+- `.DARK.\!bg-Theme\/Dark:nth-child(8) > .py-15[data-v-55171670=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
+- `.DARK.\!bg-Theme\/Dark:nth-child(9) > .py-15[data-v-55171670=""] > .container[data-v-55171670=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
 - `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:pr-6.flex-1.media`
 - `.lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.bg-secondary.-mt-9 > h3`
 - `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
@@ -211,14 +211,14 @@
 - `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > h2`
 - `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.DARK.\!bg-Theme\/Dark:nth-child(11)`
-- `.\!bg-white > .py-15[data-v-5bb271bd=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
+- `.\!bg-white > .py-15[data-v-55171670=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
 - `.lg\:text-center`
 - `#\34 1a85971-de72-4bb9-8638-913f40d8f8bf`
-- `div:nth-child(1) > .text-2xl.font-light[data-v-45958cc3=""] > label > div[data-v-45958cc3=""]`
+- `div:nth-child(1) > .text-2xl.font-light[data-v-9edd14b2=""] > label > div[data-v-9edd14b2=""]`
 - `#bcec652d-d951-41ac-ad2e-92b83a7f9443`
-- `div:nth-child(2) > .text-2xl.font-light[data-v-45958cc3=""] > label > div[data-v-45958cc3=""]`
+- `div:nth-child(2) > .text-2xl.font-light[data-v-9edd14b2=""] > label > div[data-v-9edd14b2=""]`
 - `#\38 e49b73a-fd56-4559-8fbc-ef393afd16f6`
-- `div:nth-child(3) > .text-2xl.font-light[data-v-45958cc3=""] > label > div[data-v-45958cc3=""]`
+- `div:nth-child(3) > .text-2xl.font-light[data-v-9edd14b2=""] > label > div[data-v-9edd14b2=""]`
 - `.border-greyAlt`
 - `.mt-2`
 - `#ppms_cm_language_select_btn_id`

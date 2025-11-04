@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2025-11-03T00:34:37.995Z
+**Timestamp:** 2025-11-04T00:42:49.617Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 12
 
@@ -45,7 +45,7 @@
 
 #### Affected Elements:
 
-- `.text_singleline.large-3.large-abs-3:nth-child(3) > .t16.font-PTSerif.singleline > a:nth-child(8)`
+- `a[href="mailto:dag.hoie@dagsavisen.no"]`
 
 ### Headings should not be empty
 
@@ -85,9 +85,9 @@
 
 - `.t56.tm39`
 - `.tm32.t42`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(39) > .tm21.t42`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(46) > .tm21.t42`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > .t40`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(42) > .tm21.t42`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(48) > .tm21.t42`
 
 ### Images must have alternative text
 
@@ -148,51 +148,51 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 76
+- **Count:** 81
 
 #### Affected Elements:
 
 - `h1`
-- `#notice-10036850 > .content > h2`
-- `#notice-10036850 > .content > .meta`
-- `div[title="Alvorlig trafikkulykke i Troms"] > h2`
-- `div[title="Alvorlig trafikkulykke i Troms"] > .meta`
-- `#notice-10036611 > .content > h2`
-- `#notice-10036611 > .content > .meta`
-- `#notice-10036476 > .content > h2`
-- `time[datetime="2025-11-02T09:20:46.000Z"]`
-- `#notice-10036445 > .content > h2`
-- `time[datetime="2025-11-02T08:25:38.000Z"]`
-- `div[title="Eksplosjon i Mexico: 23 døde"] > h2`
-- `time[datetime="2025-11-02T07:41:10.000Z"]`
-- `div[title="21 døde i jordskred i Kenya"] > h2`
-- `div[title="21 døde i jordskred i Kenya"] > .meta`
-- `div[title="To drept i landsby på Kreta"] > h2`
-- `div[title="To drept i landsby på Kreta"] > .meta`
-- `div[title="Savnet mann funnet død i Bærum"] > h2`
-- `div[title="Savnet mann funnet død i Bærum"] > .meta`
-- `#notice-10036292 > .content > h2`
-- `#notice-10036292 > .content > .meta`
-- `#notice-10036282 > .content > h2`
-- `#notice-10036282 > .content > .meta`
-- `#notice-10036249 > .content > h2`
-- `#notice-10036249 > .content > .meta`
-- `#notice-10036165 > .content > h2`
-- `#notice-10036165 > .content > .meta`
-- `#notice-10036164 > .content > h2`
-- `#notice-10036164 > .content > .meta`
-- `#notice-10036153 > .content > h2`
-- `time[datetime="2025-11-01T11:03:28.000Z"]`
-- `#notice-10036085 > .content > h2`
-- `#notice-10036085 > .content > .meta`
-- `#notice-10036055 > .content > h2`
-- `#notice-10036055 > .content > .meta`
-- `div[title="Carney beklaget til Trump"] > h2`
-- `div[title="Carney beklaget til Trump"] > .meta`
-- `#notice-10035991 > .content > h2`
-- `#notice-10035991 > .content > .meta`
-- `div[title="Funn av laksesykdom i Troms"] > h2`
-- `div[title="Funn av laksesykdom i Troms"] > .meta`
+- `div[title="Brann i rekkehus i Oslo"] > h2`
+- `time[datetime="2025-11-03T20:34:03.000Z"]`
+- `div[title="Det hvite hus lover matpenger"] > h2`
+- `time[datetime="2025-11-03T18:51:32.000Z"]`
+- `#notice-10038436 > .content > h2`
+- `time[datetime="2025-11-03T18:34:13.000Z"]`
+- `div[title="Slik gjør du refleks-testen"] > h2`
+- `time[datetime="2025-11-03T18:33:18.000Z"]`
+- `div[title="Hæren bygger nye avdelinger"] > h2`
+- `time[datetime="2025-11-03T17:42:43.000Z"]`
+- `#notice-10038413 > .content > h2`
+- `time[datetime="2025-11-03T20:48:00.000Z"]`
+- `#notice-10038375 > .content > h2`
+- `time[datetime="2025-11-03T17:04:50.000Z"]`
+- `div[title="Trier-film pris-nominert"] > h2`
+- `time[datetime="2025-11-03T14:58:05.000Z"]`
+- `div[title="Sju døde etter snøskred"] > h2`
+- `time[datetime="2025-11-03T14:46:53.000Z"]`
+- `#notice-10038143 > .content > h2`
+- `time[datetime="2025-11-03T14:03:17.000Z"]`
+- `#notice-10038141 > .content > h2`
+- `time[datetime="2025-11-03T14:02:10.000Z"]`
+- `#notice-10038037 > .content > h2`
+- `time[datetime="2025-11-03T13:38:13.000Z"]`
+- `div[title="Tårn i Roma kollapset"] > h2`
+- `time[datetime="2025-11-03T17:02:42.000Z"]`
+- `#notice-10037619 > .content > h2`
+- `time[datetime="2025-11-03T11:35:42.000Z"]`
+- `#notice-10037523 > .content > h2`
+- `time[datetime="2025-11-03T10:44:56.000Z"]`
+- `div[title="Obos-prisene falt i oktober"] > h2`
+- `time[datetime="2025-11-03T10:44:01.000Z"]`
+- `div[title="To dømt for bestillingsdrap"] > h2`
+- `time[datetime="2025-11-03T10:43:23.000Z"]`
+- `#notice-10037391 > .content > h2`
+- `time[datetime="2025-11-03T10:04:49.000Z"]`
+- `#notice-10037390 > .content > h2`
+- `time[datetime="2025-11-03T10:03:58.000Z"]`
+- `div[title="Tanzanias president tatt i ed"] > h2`
+- `time[datetime="2025-11-03T09:56:52.000Z"]`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
@@ -201,32 +201,37 @@
 - `.row.large-12.small-12:nth-child(8)`
 - `.row.large-12.small-12:nth-child(9)`
 - `.row.large-12.small-12:nth-child(11)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(12)`
+- `.row.large-12.small-12:nth-child(12)`
 - `.row.large-12.small-12:nth-child(13)`
 - `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(14)`
-- `.bg-tertiary.color_mobile_bg-tertiary.hasContentPadding:nth-child(16)`
+- `.row.large-12.small-12:nth-child(16)`
 - `.articlescroller-header`
 - `.count_4`
 - `.row.large-12.small-12:nth-child(18)`
 - `.t56.tm39`
 - `.count_1`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(21)`
+- `.row.large-12.small-12:nth-child(21)`
 - `.row.large-12.small-12:nth-child(22)`
 - `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(23)`
-- `.row.large-12.small-12:nth-child(24)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(24)`
 - `.row.large-12.small-12:nth-child(26)`
 - `.row.large-12.small-12:nth-child(27)`
-- `.row.large-12.small-12:nth-child(28)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(28)`
 - `.mobile_no_border_color.bg-tertiary.color_mobile_bg-tertiary`
 - `.border-side-top.mobile_border-side-top.has-row-header:nth-child(32)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(33)`
+- `.row.large-12.small-12:nth-child(33)`
 - `.border-side-top.mobile_border-side-top.has-row-header:nth-child(34)`
 - `.row.large-12.small-12:nth-child(36)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(37)`
+- `.row.large-12.small-12:nth-child(37)`
 - `.row.large-12.small-12:nth-child(38)`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(39)`
+- `.row.large-12.small-12:nth-child(39)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(41)`
+- `.row.large-12.small-12:nth-child(42)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(43)`
+- `.row.large-12.small-12:nth-child(44)`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(46)`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(42)`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(48)`
 - `.powered-by`
 
 ### [role="img"] elements must have alternative text

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-11-03T00:33:50.736Z
+**Timestamp:** 2025-11-04T00:31:53.327Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
-**Total Violations:** 5
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -40,11 +40,24 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.is-selected.iq.es:nth-child(1) > .c.be.bm > .bk.bs[data-test-id="product-link"] > h4`
+- `#ot-bnr-hdr-id-C0001`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#ot-bnr-hdr-id-C0001`
+- `.gx > .en.eo.e6`
 
 ### Alternative text of images should not be repeated as text
 
@@ -59,11 +72,11 @@
 - `img[alt="Celia håndkleserie 2 for 1"]`
 - `img[alt="Alle morgenkåper 2 for 1"]`
 - `img[alt="Makeup-tilbehør 2 for 1"]`
-- `a[href$="loungewear--accessories"] > .fv.cs.cv > .e8.fr.a3`
+- `a[href$="loungewear--accessories"] > .g6.cs.cv > .e8.g2.a3`
 - `img[alt="Alt baderomstilbehør 2 for 1"]`
 - `img[alt="Living håndkleserie 2 for 1"]`
-- `img[alt="Ava Wellness serie 2 for 1"]`
-- `img[alt="Såper og kremer 2 for 1"]`
+- `img[alt="Ava Wellness & Therapi"]`
+- `img[alt="Såper & kremer"]`
 - `img[alt="Kalendergavetips!"]`
 - `img[alt="Julesengetøy"]`
 - `img[alt="Juleputer"]`
@@ -82,6 +95,19 @@
 - `img[alt="Hyller"]`
 - `img[alt="Spisebord"]`
 - `img[alt="Skap og skjenker"]`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `div:nth-child(14) > .ej.ei.ba > .b0.cv.be > .a5.a6.a7:nth-child(1)`
+- `div:nth-child(14) > .ej.ei.ba > .b0.cv.be > .bs.br.bq`
 
 ### All page content should be contained by landmarks
 

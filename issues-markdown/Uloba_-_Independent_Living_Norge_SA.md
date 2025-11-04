@@ -1,34 +1,46 @@
 # WCAG Violations Report for Uloba - Independent Living Norge SA
 
-**Timestamp:** 2025-11-03T00:33:19.572Z
+**Timestamp:** 2025-11-04T00:31:29.632Z
 **URL:** [https://www.uloba.no/#](https://www.uloba.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
-### <html> element must have a lang attribute
+### Buttons must have discernible text
 
-- **Impact:** serious
-- **Description:** Ensure every HTML document has a lang attribute
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=playwright
-- **Tags:** cat.language, wcag2a, wcag311, TTv5, TT11.a, EN-301-549, EN-9.3.1.1, ACT, RGAAv4, RGAA-8.3.1
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `html`
+- `#ppms_cm_close-popup`
 
-### Document should have one main landmark
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#ppms_cm_footer__powered_by`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
-- **Description:** Ensure the document has a main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `html`
+- `#site-header-nav`
 
 ### Page should contain a level-one heading
 
@@ -48,8 +60,12 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 5
 
 #### Affected Elements:
 
-- `#content`
+- `#ppms_cm_language_select_btn_id`
+- `#ppms-c18a2ffc-ffc4-47c6-9836-19bde81ab6ad`
+- `#ppms-2297b320-e8ae-40e3-b640-c8f7a25a6f73`
+- `#popup-link`
+- `#ppms_cm_footer__powered_by`
