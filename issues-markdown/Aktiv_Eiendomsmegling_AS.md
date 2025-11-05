@@ -1,6 +1,6 @@
 # WCAG Violations Report for Aktiv Eiendomsmegling AS
 
-**Timestamp:** 2025-11-04T00:33:09.581Z
+**Timestamp:** 2025-11-05T18:36:29.759Z
 **URL:** [https://aktiv.no/#](https://aktiv.no/#)
 **Total Violations:** 7
 
@@ -52,10 +52,11 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 6
+- **Count:** 7
 
 #### Affected Elements:
 
+- `img[alt="Verdivurdering fra lokalbank"]`
 - `img[alt="Finansiering"]`
 - `img[alt="Kjøpe bolig"]`
 - `img[alt="Selge bolig"]`

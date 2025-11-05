@@ -1,8 +1,8 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2025-11-04T00:21:32.118Z
+**Timestamp:** 2025-11-05T18:34:33.777Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -17,6 +17,19 @@
 #### Affected Elements:
 
 - `#declineButton`
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.-right-2`
+- `.shadow-md`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -76,6 +89,6 @@
 
 #### Affected Elements:
 
-- `button > .xl\:flex-col.text-\(--header-text\).px-4`
+- `button:nth-child(1) > .xl\:flex-col.text-\(--header-text\).px-4`
 - `div[data-component="AccountPopoverMenu"] > .xl\:flex-col.text-\(--header-text\).px-4`
-- `a[data-testid="cart"] > .xl\:flex-col.text-\(--header-text\).px-4`
+- `li[data-testid="cart"]`

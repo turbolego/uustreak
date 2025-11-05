@@ -1,8 +1,8 @@
 # WCAG Violations Report for Hurtigruten AS
 
-**Timestamp:** 2025-11-04T00:28:46.172Z
+**Timestamp:** 2025-11-05T18:42:59.133Z
 **URL:** [https://www.hurtigruten.com/nb-no](https://www.hurtigruten.com/nb-no)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -19,20 +19,6 @@
 - `.styles_destination__CzdCL > .styles_searchPlannerButton__0vaat[role="tab"][aria-controls="search-planner-tabs"]`
 - `div:nth-child(2) > .styles_searchPlannerButton__0vaat[role="tab"][aria-controls="search-planner-tabs"]`
 - `.styles_duration__yTKnN > .styles_searchPlannerButton__0vaat[role="tab"][aria-controls="search-planner-tabs"]`
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
-
-#### Affected Elements:
-
-- `a[data-voyageid="5wUi46XPnAG3N6wGZkSq9N"] > .styles_cruiseCardWrapper__WxCQQ[data-testid="cruisecard"] > .styles_infoSection__rnWN0 > .styles_footer__Sissb > .styles_bottomInfo__eawkV > .styles_featureItemContainer__y63bz[data-testid="feature-item"] > div > .styles_captionText__mS6J0[data-testid="feature-item-title"]`
-- `a[data-voyageid="20940"] > .styles_cruiseCardWrapper__WxCQQ[data-testid="cruisecard"] > .styles_infoSection__rnWN0 > .styles_footer__Sissb > .styles_bottomInfo__eawkV > .styles_featureItemContainer__y63bz[data-testid="feature-item"] > div > .styles_captionText__mS6J0[data-testid="feature-item-title"]`
-- `a[data-voyageid="125380"] > .styles_cruiseCardWrapper__WxCQQ[data-testid="cruisecard"] > .styles_infoSection__rnWN0 > .styles_footer__Sissb > .styles_bottomInfo__eawkV > .styles_featureItemContainer__y63bz[data-testid="feature-item"] > div > .styles_captionText__mS6J0[data-testid="feature-item-title"]`
 
 ### Links must have discernible text
 

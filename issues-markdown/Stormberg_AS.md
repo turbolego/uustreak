@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2025-11-04T00:24:50.843Z
+**Timestamp:** 2025-11-05T18:38:23.884Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -17,32 +17,32 @@
 #### Affected Elements:
 
 - `.gt.dr.ds > div > div`
-- `.gv.am[href$="black-november"]`
-- `a[aria-label="Svalbard lang dunparkas"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `a[aria-label="Svalbard lang dunparkas"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `.gv.am.an`
+- `a[aria-label="Rauland 2-lags ullongs"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `a[aria-label="Rauland 2-lags ullongs"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(2) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it`
 - `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(2) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `a[aria-label="Ute resirkulert vinterdress"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `a[aria-label="Ute resirkulert vinterdress"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `a[aria-label="Hafjell vinterjakke"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `a[aria-label="Hafjell vinterjakke"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib[aria-label="Hafjell vattert selebukse"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib[aria-label="Hafjell vattert selebukse"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `a[aria-label="Rauland 2-lags ulltrøye"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `a[aria-label="Rauland 2-lags ulltrøye"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(4) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(4) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `li:nth-child(1) > .ia.ib[aria-label="Geilo vattert jakke barn 8-14"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
 - `li:nth-child(1) > .ia.ib[aria-label="Geilo vattert jakke barn 8-14"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `li:nth-child(2) > .ia.ib[aria-label="Hafjell vattert jakke"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
 - `li:nth-child(2) > .ia.ib[aria-label="Hafjell vattert jakke"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `li:nth-child(3) > .ia.ib[aria-label="Geilo vattert jakke barn 8-14"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `li:nth-child(3) > .ia.ib[aria-label="Geilo vattert jakke barn 8-14"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `li:nth-child(4) > .ia.ib[aria-label="Hafjell vattert jakke"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `li:nth-child(4) > .ia.ib[aria-label="Hafjell vattert jakke"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib[aria-label="Hafjell vattert selebukse"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib[aria-label="Hafjell vattert selebukse"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `li:nth-child(3) > .ia.ib[aria-label="Hafjell vattert jakke"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `li:nth-child(3) > .ia.ib[aria-label="Hafjell vattert jakke"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `li:nth-child(4) > .ia.ib[aria-label="Geilo vattert jakke barn 8-14"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `li:nth-child(4) > .ia.ib[aria-label="Geilo vattert jakke barn 8-14"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `li:nth-child(1) > .ia.ib[aria-label="Hemsedal 2-lags ullsett"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
 - `div:nth-child(9) > .i7.bl.bj > .i8.i9 > li:nth-child(2) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `li:nth-child(3) > .ia.ib[aria-label="Hemsedal 2-lags ullsett"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `a[aria-label="Frostli vinterjakke"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `div:nth-child(9) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `a[aria-label="Istind piggsko"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `li:nth-child(4) > .ia.ib[aria-label="Hemsedal 2-lags ullsett"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `a[aria-label="Trysil vinterjakke"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
@@ -75,7 +75,7 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 13
+- **Count:** 14
 
 #### Affected Elements:
 
@@ -88,10 +88,11 @@
 - `.bl.bj.bk:nth-child(4) > div > .hr.hs.ht > .hv.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .hw.hk.hl > .ho.hn.au`
 - `.bl.bj.bk:nth-child(4) > div > .hr.hs.ht > .hv.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .hw.hk.hl > .ho.hn.au`
 - `.bl.bj.bk:nth-child(4) > div > .hr.hs.ht > .hv.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .hw.hk.hl > .ho.hn.au`
-- `.hj.hk.hl > .ho.a2.hn`
-- `a[href$="farsdag"] > .jr.hk.hl > .ho.a2.hn`
-- `.a6[href$="turutstyr"][data-scope-link="true"] > .jr.hk.hl > .ho.a2.hn`
-- `.hv.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jr.hk.hl > .ho.a2.hn`
+- `a[href$="julegavetips"] > .hj.hk.hl > .ho.a2.hn`
+- `a[href$="farsdag"] > .js.hk.hl > .ho.a2.hn`
+- `a[href$="regntoy"] > .js.hk.hl > .ho.a2.hn`
+- `.hv.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .js.hk.hl > .ho.a2.hn`
+- `a[href$="julekalender"] > .hj.hk.hl > .ho.a2.hn`
 
 ### Links must have discernible text
 
@@ -99,7 +100,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 9
+- **Count:** 10
 
 #### Affected Elements:
 
@@ -110,8 +111,9 @@
 - `.bl.bj.bk:nth-child(4) > div > .hr.hs.ht > .hv.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
 - `a[href$="julegavetips"]`
 - `a[href$="farsdag"]`
-- `.hh.bv.ay > .a6[href$="turutstyr"][data-scope-link="true"]`
+- `a[href$="regntoy"]`
 - `.bl.bj.bk:nth-child(8) > div > .hr.hs.ht > .hv.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
+- `a[href$="julekalender"]`
 
 ### Page should contain a level-one heading
 

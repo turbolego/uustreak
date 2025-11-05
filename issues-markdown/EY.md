@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2025-11-04T00:45:48.948Z
+**Timestamp:** 2025-11-05T18:50:51.257Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 4
 
@@ -55,7 +55,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 96
+- **Count:** 100
 
 #### Affected Elements:
 
@@ -154,4 +154,8 @@
 - `#button-8e1d3e5b1a96`
 - `#footer-ey-content > .container.responsivegrid:nth-child(2)`
 - `#rich-text-7c0527a0e133 > .up-rich-text__container[data-up-hook-rich-text="richTextContainer"]`
+- `a[data-service-title="Facebook"] > .up-social-media-links__cta-text`
+- `a[data-service-title="LinkedIn"] > .up-social-media-links__cta-text`
+- `a[data-service-title="Instagram"] > .up-social-media-links__cta-text`
+- `a[data-service-title="Youtube"] > .up-social-media-links__cta-text`
 - `#footer-ey-content > .container.responsivegrid:nth-child(5)`

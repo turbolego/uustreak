@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergen Kino AS
 
-**Timestamp:** 2025-11-04T00:37:06.926Z
+**Timestamp:** 2025-11-05T18:41:03.698Z
 **URL:** [https://www.bergenkino.no/#](https://www.bergenkino.no/#)
 **Total Violations:** 8
 
@@ -12,90 +12,268 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 82
+- **Count:** 260
 
 #### Affected Elements:
 
-- `#objbf65a42c78a64668a86fad5a90a6b5c2_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664343"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664310"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664309"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664307"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664176"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664308"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj66685498292e49f8a40342ac4716333a_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664301"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2604234"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664300"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664299"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664400"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664366"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664179"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj14c2a740c12948eaac56fdd143bd8000_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664330"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664329"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664328"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664327"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664326"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj338e40b7287a419e8782fd073d5c4e0c_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664323"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664324"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664321"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2610119"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664322"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664325"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj6d015665c2574255ae3ade15e48e50f8_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664302"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664303"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664304"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664183"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664184"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj75b9823c3d8848d5bbc6ffe8e2d5446f_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664320"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664319"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664318"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664317"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#objdcc0e4ca899049e198166199ef386165_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664311"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664312"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664313"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#objebd7a6956abb49a3aa08bc477d02bdcd_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664334"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664332"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664333"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj75e8715bfe144b96860563542786a6cd_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664331"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664181"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664182"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj8f539e1638144c048233bc921dd00f75_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664314"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664177"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664178"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj3c8f8dcea5a1439abdc75f4cc1fecfe0_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664340"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664342"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664341"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj2a97116c5e974b6782a9e3f90587ea22_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664347"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj82931b6331544d649c84e8cfc6a3cc9d_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664306"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664305"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj413ab2dbbe434206a43746cbe59ba0a6_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664349"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj54a044b14f124982a465d37d22f21bf3_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664315"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj4bc3f98bbbca4ad49ef236986bafd1e7_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664348"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2664337"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2662296"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj1585f05d926f48f8b36f3fa50ff98f48_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664336"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#objeafe4b6eda2049cca6f01b504554f9e8_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664344"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#objdbc20d6d59d3484195ee6d20ab4e3dd3_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664339"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#objfc115570a82a437087ebb88eda4fe620_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2664338"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#objbe824de5548a4b5b9dd3c5510e07a1cd_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(5) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(5) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(5) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(5) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(5) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `a[href="/showtime/2664429"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#objd8890c0b65ca421b875816828bf339d1_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `a[href="/showtime/2664434"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj9ae0edf936494829a452e54c34c45089_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `a[href="/showtime/2664462"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj6099bb12368347e1b1a08e0acadcbe88_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(3)`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `.showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(3)`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `.showtime-wrap:nth-child(4) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(3)`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(5) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(5) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(5) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(5) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(5) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `.showtime-wrap:nth-child(5) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(3)`
+- `a[href="/showtime/2664426"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2664444"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#objca5d25d4118945c28dcb7cc379f6a8ff_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `a[href="/showtime/2664453"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#objbbd4f16b02b1498e93447f742361f306_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#objca9ae512d9d4410eb21223da895841cd > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objca9ae512d9d4410eb21223da895841cd > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objca9ae512d9d4410eb21223da895841cd > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objca9ae512d9d4410eb21223da895841cd > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objca9ae512d9d4410eb21223da895841cd > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#objca9ae512d9d4410eb21223da895841cd > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objca9ae512d9d4410eb21223da895841cd > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objca9ae512d9d4410eb21223da895841cd > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objca9ae512d9d4410eb21223da895841cd > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objca9ae512d9d4410eb21223da895841cd > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#objca9ae512d9d4410eb21223da895841cd > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(3)`
+- `a[href="/showtime/2664428"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#objd0a4d89aa9c54c50875f2e040be71f46_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#objf5d4dc1ff5bf425899fdad2a147337c3_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `a[href="/showtime/2664432"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj4a6898547d8b4a71bdf789635f38a7ad_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj4ede3f9ba33440d285e17fecaf3830b9 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj4ede3f9ba33440d285e17fecaf3830b9 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj4ede3f9ba33440d285e17fecaf3830b9 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj4ede3f9ba33440d285e17fecaf3830b9 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj4ede3f9ba33440d285e17fecaf3830b9 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `a[href="/showtime/2664483"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj96670a1932f74fa18c8c07b7e607828e_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(3) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `a[href="/showtime/2664461"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj9dd56d539624452ea6e243f6d3ccccc6_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj9f6fb607a0b24e16928814911ce5ae95 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj9f6fb607a0b24e16928814911ce5ae95 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj9f6fb607a0b24e16928814911ce5ae95 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj9f6fb607a0b24e16928814911ce5ae95 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj9f6fb607a0b24e16928814911ce5ae95 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#obj9f6fb607a0b24e16928814911ce5ae95 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj9f6fb607a0b24e16928814911ce5ae95 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj9f6fb607a0b24e16928814911ce5ae95 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj9f6fb607a0b24e16928814911ce5ae95 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj9f6fb607a0b24e16928814911ce5ae95 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `a[href="/showtime/2664469"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj108f183cb4c54f058f602ba3d2e21b36_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj472ef1f5bcc745459f7ad37e944a9488 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj472ef1f5bcc745459f7ad37e944a9488 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj472ef1f5bcc745459f7ad37e944a9488 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj472ef1f5bcc745459f7ad37e944a9488 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj472ef1f5bcc745459f7ad37e944a9488 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#obj472ef1f5bcc745459f7ad37e944a9488 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj472ef1f5bcc745459f7ad37e944a9488 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj472ef1f5bcc745459f7ad37e944a9488 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj472ef1f5bcc745459f7ad37e944a9488 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj472ef1f5bcc745459f7ad37e944a9488 > .showtime-wrap:nth-child(2) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `a[href="/showtime/2664449"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj0b5029e87d7942e3adc75ed488259ae0_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj635f3105f5244f9cb8d66c7ce0263a2a > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj635f3105f5244f9cb8d66c7ce0263a2a > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj635f3105f5244f9cb8d66c7ce0263a2a > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj635f3105f5244f9cb8d66c7ce0263a2a > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj635f3105f5244f9cb8d66c7ce0263a2a > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#obj5922178439384e40bd5d91d58279cfd0_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obje1be32b697474b8fbfff1395310134b4 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obje1be32b697474b8fbfff1395310134b4 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obje1be32b697474b8fbfff1395310134b4 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obje1be32b697474b8fbfff1395310134b4 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obje1be32b697474b8fbfff1395310134b4 > .showtime-wrap:nth-child(1) > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `a[href="/showtime/2664441"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj33d981b130ce41c3acd074d5ccbeca11_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2664484"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obje940e562d3544679a62e4590d035e2e8_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj4fbab38d7d9c4a6c969624ef284b0fd1 > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj4fbab38d7d9c4a6c969624ef284b0fd1 > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj4fbab38d7d9c4a6c969624ef284b0fd1 > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj4fbab38d7d9c4a6c969624ef284b0fd1 > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj4fbab38d7d9c4a6c969624ef284b0fd1 > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#obj586944ba39b7464b8920f43274da6dd2_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2664485"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj3b5ec23b91ce4b3ca04833b577b5eee8_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2664451"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj67a85bcfaf09426d821b58b50a1f4315_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj2b5c7249a7bc4c6fa49384d8c643c261 > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj2b5c7249a7bc4c6fa49384d8c643c261 > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj2b5c7249a7bc4c6fa49384d8c643c261 > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj2b5c7249a7bc4c6fa49384d8c643c261 > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj2b5c7249a7bc4c6fa49384d8c643c261 > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `.px-1.program__showtime-notes`
+- `#obj2739bf84f05641c98b93151d966e1f3c_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#objdbbf5578bcff4fa0bb0b1096d3e0bf83 > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#objdbbf5578bcff4fa0bb0b1096d3e0bf83 > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#objdbbf5578bcff4fa0bb0b1096d3e0bf83 > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#objdbbf5578bcff4fa0bb0b1096d3e0bf83 > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#objdbbf5578bcff4fa0bb0b1096d3e0bf83 > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
+- `#objaf23bd64ef59424e9b39030159c0e19d_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj601f74694e5143a58668768a971b775d > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .program__showtimeProvider.font-extrasmall.mb-1`
+- `#obj601f74694e5143a58668768a971b775d > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime`
+- `#obj601f74694e5143a58668768a971b775d > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj601f74694e5143a58668768a971b775d > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(1)`
+- `#obj601f74694e5143a58668768a971b775d > .showtime-wrap > .expired-showtimed.showtime_card.p-2 > .justify-content-center.flex-column.align-items-center > .program__showtime-notes:nth-child(2)`
 - `.top-list_subtitle`
 - `.text-capitalize`
 
@@ -109,9 +287,9 @@
 
 #### Affected Elements:
 
-- `#objbf65a42c78a64668a86fad5a90a6b5c2_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
-- `#obj338e40b7287a419e8782fd073d5c4e0c_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
-- `#obj75b9823c3d8848d5bbc6ffe8e2d5446f_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
+- `#obj6099bb12368347e1b1a08e0acadcbe88_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
+- `#objca5d25d4118945c28dcb7cc379f6a8ff_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
+- `#obj96670a1932f74fa18c8c07b7e607828e_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
 - `div:nth-child(1) > .footer__download_btn[rel="noopener noreferrer"][target="_blank"] > .footer__download_img`
 - `div:nth-child(2) > .footer__download_btn[rel="noopener noreferrer"][target="_blank"] > .footer__download_img`
 - `#\#ticket_icon_id`
@@ -189,187 +367,185 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 187
+- **Count:** 185
 
 #### Affected Elements:
 
 - `.banner__text`
 - `.header-transparent`
-- `#swiper-wrapper-8b436972619910714`
-- `.objfdbe85e01542410babfb997d49d09cda > section > .flex-row.mb-4.font-weight-semi-bold`
+- `#swiper-wrapper-bb10e4fe7ea9717f3`
+- `.obja9f2df9d8cab4b17adccc2fff3aa3c7a > section > .flex-row.mb-4.font-weight-semi-bold`
 - `.card_item__link[href="/f/wicked-for-good/2362"][data-target-partial="true"] > .card_item__title.font-weight-bold.mt-3`
 - `.card_item__link[href="/f/wicked-for-good/2362"][data-target-partial="true"] > .card_item__subtitle.mt-1`
 - `div:nth-child(2) > .card_item[onclick="contentSwitcherGAArticle();"] > .card_item__link[data-target-partial="true"] > .card_item__title.font-weight-bold.mt-3`
 - `div:nth-child(2) > .card_item[onclick="contentSwitcherGAArticle();"] > .card_item__link[data-target-partial="true"] > .card_item__subtitle.mt-1`
+- `div:nth-child(3) > .card_item[onclick="contentSwitcherGAArticle();"] > .card_item__link[data-target-partial="true"] > .card_item__title.font-weight-bold.mt-3`
 - `.card_item__link[href="/f/hvis-ingen-gar-i-fella/2267"][data-target-partial="true"] > .card_item__title.font-weight-bold.mt-3`
 - `.card_item__link[href="/f/hvis-ingen-gar-i-fella/2267"][data-target-partial="true"] > .card_item__subtitle.mt-1`
+- `a[href="/f/the-running-man/2361"] > .card_item__title.font-weight-bold.mt-3`
+- `a[href="/f/the-running-man/2361"] > .card_item__subtitle.mt-1`
 - `a[href="/f/reisen-mot-nord/2360"] > .card_item__title.font-weight-bold.mt-3`
 - `a[href="/f/reisen-mot-nord/2360"] > .card_item__subtitle.mt-1`
-- `div:nth-child(5) > .card_item[onclick="contentSwitcherGAArticle();"] > .card_item__link[data-target-partial="true"] > .card_item__title.font-weight-bold.mt-3`
-- `div:nth-child(5) > .card_item[onclick="contentSwitcherGAArticle();"] > .card_item__link[data-target-partial="true"] > .card_item__subtitle.mt-1`
-- `#objc7384abc864e44f1a78a2f593e364ef1_adform`
+- `#objb9396a997e05467aaa996ae1ca9b2f14_adform`
 - `.py-4.container > section > .flex-row.mb-4.font-weight-semi-bold`
-- `#obj61fdc73b247748d39d378957725a2e7b_dates`
-- `#obj61fdc73b247748d39d378957725a2e7b_sortOptions`
-- `#obj61fdc73b247748d39d378957725a2e7b_screens`
-- `#obj6f178e37fb744b41943a51151a80c4ea`
-- `#objbf65a42c78a64668a86fad5a90a6b5c2_showtimes > .movie-title.font-weight-semi-bold.h5`
-- `#objbf65a42c78a64668a86fad5a90a6b5c2_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#objbf65a42c78a64668a86fad5a90a6b5c2_showtimes > p`
-- `#objbf65a42c78a64668a86fad5a90a6b5c2_showtimes > .my-3 > .kinoclub`
-- `a[href="/showtime/2664343"]`
-- `a[href="/showtime/2664310"]`
-- `a[href="/showtime/2664309"]`
-- `a[href="/showtime/2664307"]`
-- `a[href="/showtime/2664176"]`
-- `a[href="/showtime/2664308"]`
-- `#obja763fafba2aa4ac2b918fad5f4e9af50`
+- `#obj9da81da5bdfc40ff9319b66d1bf8dc94_dates`
+- `#obj9da81da5bdfc40ff9319b66d1bf8dc94_sortOptions`
+- `#obj9da81da5bdfc40ff9319b66d1bf8dc94_screens`
+- `#obj4f4406e7d9374f73a2b8d317aa619601`
 - `.movie-title.font-weight-semi-bold[href="/f/se-meg/2241"]`
-- `#obj66685498292e49f8a40342ac4716333a_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj66685498292e49f8a40342ac4716333a_showtimes > p`
-- `a[href="/showtime/2664301"]`
-- `a[href="/showtime/2604234"]`
-- `a[href="/showtime/2664300"]`
-- `a[href="/showtime/2664299"]`
-- `a[href="/showtime/2664400"]`
-- `a[href="/showtime/2664366"]`
-- `a[href="/showtime/2664179"]`
-- `#obj269357933eae4ebd8bca46b6b9e39f56`
-- `a[href="/f/bugonia/2359"]`
-- `#obj14c2a740c12948eaac56fdd143bd8000_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj14c2a740c12948eaac56fdd143bd8000_showtimes > p`
-- `a[href="/showtime/2664330"]`
-- `a[href="/showtime/2664329"]`
-- `a[href="/showtime/2664328"]`
-- `a[href="/showtime/2664327"]`
-- `a[href="/showtime/2664326"]`
-- `#obj731fedbc0e7649cbb7d9fda6bf08b669_adform`
-- `#obj998cb950fedc441ca3e9a09d52ec1ff8`
-- `#obj338e40b7287a419e8782fd073d5c4e0c_showtimes > .movie-title.font-weight-semi-bold.h5`
-- `#obj338e40b7287a419e8782fd073d5c4e0c_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj338e40b7287a419e8782fd073d5c4e0c_showtimes > p`
-- `#obj338e40b7287a419e8782fd073d5c4e0c_showtimes > .my-3 > .kinoclub`
-- `a[href="/showtime/2664323"]`
-- `a[href="/showtime/2664324"]`
-- `a[href="/showtime/2664321"]`
-- `a[href="/showtime/2610119"]`
-- `a[href="/showtime/2664322"]`
-- `a[href="/showtime/2664325"]`
-- `#objddd3b3c9558a4df9adc2ffdb6fc8e23d`
+- `#objbe824de5548a4b5b9dd3c5510e07a1cd_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#objbe824de5548a4b5b9dd3c5510e07a1cd_showtimes > p`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(1)`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(2)`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(3)`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(4)`
+- `#objd291d593d4894076b8a237759dc411ef > .showtime-wrap:nth-child(5)`
+- `a[href="/showtime/2664429"]`
+- `#obj836be14af5d3424b8923e3993ef87606`
 - `a[href="/f/blucher/2242"]`
-- `#obj6d015665c2574255ae3ade15e48e50f8_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj6d015665c2574255ae3ade15e48e50f8_showtimes > p`
-- `a[href="/showtime/2664302"]`
-- `a[href="/showtime/2664303"]`
-- `a[href="/showtime/2664304"]`
-- `a[href="/showtime/2664183"]`
-- `a[href="/showtime/2664184"]`
-- `#objf6887c507331498d98339de19b259496`
+- `#objd8890c0b65ca421b875816828bf339d1_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#objd8890c0b65ca421b875816828bf339d1_showtimes > p`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(1)`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(2)`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(3)`
+- `#objb3fbff13930845499879432afd0a806d > .showtime-wrap:nth-child(4)`
+- `a[href="/showtime/2664434"]`
+- `#obj61a6f78a3a77475aac1d7b1437901417`
+- `a[href="/f/bugonia/2359"]`
+- `#obj9ae0edf936494829a452e54c34c45089_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj9ae0edf936494829a452e54c34c45089_showtimes > p`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(1)`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(2)`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(3)`
+- `#obj21e2dd4fe35a48bb9d581b1cfb012577 > .showtime-wrap:nth-child(4)`
+- `a[href="/showtime/2664462"]`
+- `#objf282ba41841c4e928eccd56cf711b21d_adform`
+- `#objc6ae4c73b1234cd1a415cd5023d1bc00`
+- `#obj6099bb12368347e1b1a08e0acadcbe88_showtimes > .movie-title.font-weight-semi-bold.h5`
+- `#obj6099bb12368347e1b1a08e0acadcbe88_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj6099bb12368347e1b1a08e0acadcbe88_showtimes > p`
+- `#obj6099bb12368347e1b1a08e0acadcbe88_showtimes > .my-3 > .kinoclub`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(1)`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(2)`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(3)`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(4)`
+- `#objb51f5db5ed664170afd3258927d8a3e9 > .showtime-wrap:nth-child(5)`
+- `a[href="/showtime/2664426"]`
+- `a[href="/showtime/2664444"]`
+- `#obj0c8035e9e9ff4fe9a26468808c811303`
 - `a[href="/f/affeksjonsverdi/2409"]`
-- `#obj75b9823c3d8848d5bbc6ffe8e2d5446f_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj75b9823c3d8848d5bbc6ffe8e2d5446f_showtimes > p`
-- `#obj75b9823c3d8848d5bbc6ffe8e2d5446f_showtimes > .my-3 > .kinoclub`
-- `a[href="/showtime/2664320"]`
-- `a[href="/showtime/2664319"]`
-- `a[href="/showtime/2664318"]`
-- `a[href="/showtime/2664317"]`
-- `#objf7215d7e910c4ab1b28d2cceec970c9d`
-- `#objdcc0e4ca899049e198166199ef386165_showtimes > .movie-title.font-weight-semi-bold.h5`
-- `#objdcc0e4ca899049e198166199ef386165_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#objdcc0e4ca899049e198166199ef386165_showtimes > p`
-- `a[href="/showtime/2664311"]`
-- `a[href="/showtime/2664312"]`
-- `a[href="/showtime/2664313"]`
-- `#objadfefaa96e2e485d8c4c90c9068ca7c5`
-- `a[href="/f/trango/2356"]`
-- `#objebd7a6956abb49a3aa08bc477d02bdcd_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#objebd7a6956abb49a3aa08bc477d02bdcd_showtimes > p`
-- `a[href="/showtime/2664334"]`
-- `a[href="/showtime/2664332"]`
-- `a[href="/showtime/2664333"]`
-- `#obja78ca50323da42839330b55d454fe7f5`
+- `#objca5d25d4118945c28dcb7cc379f6a8ff_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#objca5d25d4118945c28dcb7cc379f6a8ff_showtimes > p`
+- `#objca5d25d4118945c28dcb7cc379f6a8ff_showtimes > .my-3 > .kinoclub`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(1)`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(2)`
+- `#obj04ea984593d640ddb828232b1a013c8a > .showtime-wrap:nth-child(3)`
+- `a[href="/showtime/2664453"]`
+- `#objecfe1b1f798d4f2aa1dde8036f398c32`
+- `#objbbd4f16b02b1498e93447f742361f306_showtimes > .movie-title.font-weight-semi-bold.h5`
+- `#objbbd4f16b02b1498e93447f742361f306_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#objbbd4f16b02b1498e93447f742361f306_showtimes > p`
+- `#objca9ae512d9d4410eb21223da895841cd > .showtime-wrap:nth-child(1)`
+- `#objca9ae512d9d4410eb21223da895841cd > .showtime-wrap:nth-child(2)`
+- `a[href="/showtime/2664428"]`
+- `#obj22954690fa414dab8c94cc251a1ab98a`
+- `#objd0a4d89aa9c54c50875f2e040be71f46_showtimes > .movie-title.font-weight-semi-bold.h5`
+- `#objd0a4d89aa9c54c50875f2e040be71f46_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#objd0a4d89aa9c54c50875f2e040be71f46_showtimes > p`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(1)`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(2)`
+- `#obj039eaa6f7c4d4b69bfb6f5369112aa30 > .showtime-wrap:nth-child(3)`
+- `#obj5ce8fc0f7d024147840b1c16ca98c88b`
 - `.movie-title.font-weight-semi-bold[href="/f/angrer-pa-deg/2449"]`
-- `#obj75e8715bfe144b96860563542786a6cd_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj75e8715bfe144b96860563542786a6cd_showtimes > p`
-- `a[href="/showtime/2664331"]`
-- `a[href="/showtime/2664181"]`
-- `a[href="/showtime/2664182"]`
-- `#objdb5963348e4d40358ded2d76271e4d2b`
-- `#obj8f539e1638144c048233bc921dd00f75_showtimes > .movie-title.font-weight-semi-bold.h5`
-- `#obj8f539e1638144c048233bc921dd00f75_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj8f539e1638144c048233bc921dd00f75_showtimes > p`
-- `a[href="/showtime/2664314"]`
-- `a[href="/showtime/2664177"]`
-- `a[href="/showtime/2664178"]`
-- `#obj49aac9ba33ad481690370be3d14f1f8b`
-- `#obj3c8f8dcea5a1439abdc75f4cc1fecfe0_showtimes > .movie-title.font-weight-semi-bold.h5`
-- `#obj3c8f8dcea5a1439abdc75f4cc1fecfe0_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj3c8f8dcea5a1439abdc75f4cc1fecfe0_showtimes > p`
-- `a[href="/showtime/2664340"]`
-- `a[href="/showtime/2664342"]`
-- `a[href="/showtime/2664341"]`
-- `#objd65d69b0ba284aecbfee39b74b3f6d74`
+- `#objf5d4dc1ff5bf425899fdad2a147337c3_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#objf5d4dc1ff5bf425899fdad2a147337c3_showtimes > p`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(1)`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(2)`
+- `#obj6055f53c89e24272bb2485e7489d8e41 > .showtime-wrap:nth-child(3)`
+- `a[href="/showtime/2664432"]`
+- `#obj747c2c93e3eb407b8b68432ea36566b5`
 - `a[href="/f/black-phone-2/1976"]`
-- `#obj2a97116c5e974b6782a9e3f90587ea22_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj2a97116c5e974b6782a9e3f90587ea22_showtimes > p`
-- `a[href="/showtime/2664347"]`
-- `#obj7ca6518a611a4936ae02b42e13a93067`
+- `#obj4a6898547d8b4a71bdf789635f38a7ad_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj4a6898547d8b4a71bdf789635f38a7ad_showtimes > p`
+- `#obj4ede3f9ba33440d285e17fecaf3830b9 > .showtime-wrap:nth-child(1)`
+- `a[href="/showtime/2664483"]`
+- `#obj2e2825ecbbd04e489c1a4fefd1cbcaaa`
+- `#obj96670a1932f74fa18c8c07b7e607828e_showtimes > .movie-title.font-weight-semi-bold.h5`
+- `#obj96670a1932f74fa18c8c07b7e607828e_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj96670a1932f74fa18c8c07b7e607828e_showtimes > p`
+- `#obj96670a1932f74fa18c8c07b7e607828e_showtimes > .my-3 > .kinoclub`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(1)`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(2)`
+- `#objf9025e4208a845dd81746ab5c3c2388a > .showtime-wrap:nth-child(3)`
+- `a[href="/showtime/2664461"]`
+- `#obja61cf05ce87940a2b7bf6f40bb7ca71a`
+- `a[href="/f/trango/2356"]`
+- `#obj9dd56d539624452ea6e243f6d3ccccc6_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj9dd56d539624452ea6e243f6d3ccccc6_showtimes > p`
+- `#obj9f6fb607a0b24e16928814911ce5ae95 > .showtime-wrap:nth-child(1)`
+- `#obj9f6fb607a0b24e16928814911ce5ae95 > .showtime-wrap:nth-child(2)`
+- `a[href="/showtime/2664469"]`
+- `#obj4d16e7cc704747478f3c9cd7f87fa05f`
+- `#obj108f183cb4c54f058f602ba3d2e21b36_showtimes > .movie-title.font-weight-semi-bold.h5`
+- `#obj108f183cb4c54f058f602ba3d2e21b36_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj108f183cb4c54f058f602ba3d2e21b36_showtimes > p`
+- `#obj472ef1f5bcc745459f7ad37e944a9488 > .showtime-wrap:nth-child(1)`
+- `#obj472ef1f5bcc745459f7ad37e944a9488 > .showtime-wrap:nth-child(2)`
+- `a[href="/showtime/2664449"]`
+- `#obj1b3360055f1146b095e90b629b39b944`
+- `a[href="/f/en-natt-i-dyreparken/2447"]`
+- `#obj0b5029e87d7942e3adc75ed488259ae0_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj0b5029e87d7942e3adc75ed488259ae0_showtimes > p`
+- `#obj635f3105f5244f9cb8d66c7ce0263a2a > .showtime-wrap`
+- `#obj7d7cbd8bbbef475ab0a716b4b8715ab1`
 - `a[href="/f/tron-ares/2355"]`
-- `#obj82931b6331544d649c84e8cfc6a3cc9d_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj82931b6331544d649c84e8cfc6a3cc9d_showtimes > p`
-- `a[href="/showtime/2664306"]`
-- `a[href="/showtime/2664305"]`
-- `#objc6e291121f2d4e66b2d3a84b17a47721`
+- `#obj5922178439384e40bd5d91d58279cfd0_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj5922178439384e40bd5d91d58279cfd0_showtimes > p`
+- `#obje1be32b697474b8fbfff1395310134b4 > .showtime-wrap:nth-child(1)`
+- `a[href="/showtime/2664441"]`
+- `#obj4be5706523e64a6bbc6de7effc1fd695`
+- `#obj33d981b130ce41c3acd074d5ccbeca11_showtimes > .movie-title.font-weight-semi-bold.h5`
+- `#obj33d981b130ce41c3acd074d5ccbeca11_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj33d981b130ce41c3acd074d5ccbeca11_showtimes > p`
+- `a[href="/showtime/2664484"]`
+- `#objde5794426d5d4255a9faf852e4c2e982`
+- `#obje940e562d3544679a62e4590d035e2e8_showtimes > .movie-title.font-weight-semi-bold.h5`
+- `#obje940e562d3544679a62e4590d035e2e8_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obje940e562d3544679a62e4590d035e2e8_showtimes > p`
+- `#obj4fbab38d7d9c4a6c969624ef284b0fd1 > .showtime-wrap`
+- `#obj79c6c326def14fac89e536bb5ab23cc1`
 - `a[href="/f/kveldsvakt/2415"]`
-- `#obj413ab2dbbe434206a43746cbe59ba0a6_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj413ab2dbbe434206a43746cbe59ba0a6_showtimes > p`
-- `a[href="/showtime/2664349"]`
+- `#obj586944ba39b7464b8920f43274da6dd2_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj586944ba39b7464b8920f43274da6dd2_showtimes > p`
+- `a[href="/showtime/2664485"]`
 - `div[onclick="goTo('/f/orwell-225/2454')"] > img[alt="poster"][loading="lazy"]`
 - `a[href="/f/orwell-225/2454"]`
-- `#obj54a044b14f124982a465d37d22f21bf3_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj54a044b14f124982a465d37d22f21bf3_showtimes > p`
-- `a[href="/showtime/2664315"]`
-- `#obj9a1c65439bf44a2997473e22468dea5c`
-- `#obj4bc3f98bbbca4ad49ef236986bafd1e7_showtimes > .movie-title.font-weight-semi-bold.h5`
-- `#obj4bc3f98bbbca4ad49ef236986bafd1e7_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj4bc3f98bbbca4ad49ef236986bafd1e7_showtimes > p`
-- `a[href="/showtime/2664348"]`
-- `#obj3ac6dad723554da58c9fabbe3249c3eb`
-- `a[href="/f/kensukes-hemmelige-oy/2453"]`
-- `#objfe84d7c61d3a41a5bc04773976cc7590_showtimes > p`
-- `a[href="/showtime/2664337"]`
-- `#obj825efecb9b604f7489446815686125bd`
-- `a[href="/f/eagles-of-the-republic/2455"]`
-- `#obj2a205526ea5449fbb8560e3f50eaa6a6_showtimes > p`
-- `a[href="/showtime/2662296"]`
-- `#obj41ebac2562c84c6f9e765e2c066fc215`
-- `a[href="/f/barske-boller-2/2339"]`
-- `#obj1585f05d926f48f8b36f3fa50ff98f48_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj1585f05d926f48f8b36f3fa50ff98f48_showtimes > p`
-- `a[href="/showtime/2664336"]`
-- `#obj472e7b0378cd4a52ba935db7fcd419b0`
+- `#obj3b5ec23b91ce4b3ca04833b577b5eee8_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj3b5ec23b91ce4b3ca04833b577b5eee8_showtimes > p`
+- `a[href="/showtime/2664451"]`
+- `#obj0d24b99af0e9480d9faa30286f69a470`
+- `#obj67a85bcfaf09426d821b58b50a1f4315_showtimes > .movie-title.font-weight-semi-bold.h5`
+- `#obj67a85bcfaf09426d821b58b50a1f4315_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj67a85bcfaf09426d821b58b50a1f4315_showtimes > p`
+- `#obj2b5c7249a7bc4c6fa49384d8c643c261 > .showtime-wrap`
+- `#obj0ddc725b50474c91ad208aa47c735f32`
 - `a[href="/f/smurfene-filmen/2337"]`
-- `#objeafe4b6eda2049cca6f01b504554f9e8_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#objeafe4b6eda2049cca6f01b504554f9e8_showtimes > p`
-- `a[href="/showtime/2664344"]`
-- `#obj0febe18aec9d481ebc9038ffd01f3846`
-- `#objdbc20d6d59d3484195ee6d20ab4e3dd3_showtimes > .movie-title.font-weight-semi-bold.h5`
-- `#objdbc20d6d59d3484195ee6d20ab4e3dd3_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#objdbc20d6d59d3484195ee6d20ab4e3dd3_showtimes > p`
-- `a[href="/showtime/2664339"]`
-- `#objb35adcd33672420397573fbab4533910`
-- `a[href="/f/gabbys-dukkehus-filmen/2352"]`
-- `#objfc115570a82a437087ebb88eda4fe620_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#objfc115570a82a437087ebb88eda4fe620_showtimes > p`
-- `a[href="/showtime/2664338"]`
-- `.objdc99c87f1b08410db2e2a7875cdc939b > section > .flex-row.mb-4.font-weight-semi-bold`
+- `#obj2739bf84f05641c98b93151d966e1f3c_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj2739bf84f05641c98b93151d966e1f3c_showtimes > p`
+- `#objdbbf5578bcff4fa0bb0b1096d3e0bf83 > .showtime-wrap`
+- `#obj643d72c7216044acbdcc2983d970e854`
+- `a[href="/f/barske-boller-2/2339"]`
+- `#objaf23bd64ef59424e9b39030159c0e19d_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#objaf23bd64ef59424e9b39030159c0e19d_showtimes > p`
+- `#obj601f74694e5143a58668768a971b775d > .showtime-wrap`
+- `.objfc6665368c7f4e2ab449fadba22371a4 > section > .flex-row.mb-4.font-weight-semi-bold`
 - `.top-list_subtitle`
-- `#obj6c3fbfee11e44f64998dc88fcd76f1ff > .top-card_wrapper.d-flex`
-- `#obj34713050314049ceb4dec1ddb430af06 > .top-card_wrapper.d-flex`
-- `#obj2d231feffcf04acf8ab1ea9eef204adc > .top-card_wrapper.d-flex`
-- `#obj7701b39638504331b8be4323031736af > .top-card_wrapper.d-flex`
-- `#obj7daa428797bf40f98068de329ec07c2a > .top-card_wrapper.d-flex`
-- `#obj88092b9bcccb4118a71fcf3bd4377a3a > .top-card_wrapper.d-flex`
+- `#objbadb9db8bcd64ea684ffe2e05a87e0f3 > .top-card_wrapper.d-flex`
+- `#obj0fe275419ede4c43be2ff4b597246fb9 > .top-card_wrapper.d-flex`
+- `#obj875e9efd64ad4f17a3b61e573860a5b6 > .top-card_wrapper.d-flex`
+- `#obj1ae8af567c6f4ec6a56904b53ca57d48 > .top-card_wrapper.d-flex`
+- `#objef80d8407ce841429f60e0416184d59f > .top-card_wrapper.d-flex`
+- `#obj9fc359e72efe48c8bd7e6fd89139bf8b > .top-card_wrapper.d-flex`
 - `.col-sm-12.col-md-3:nth-child(1)`
 - `.col-sm-12.col-md-3:nth-child(2)`
 - `.footer__subtitle.pt-2.mb-2`
@@ -391,9 +567,9 @@
 
 #### Affected Elements:
 
-- `#obj61fdc73b247748d39d378957725a2e7b_dates`
-- `#obj61fdc73b247748d39d378957725a2e7b_sortOptions`
-- `#obj61fdc73b247748d39d378957725a2e7b_screens`
+- `#obj9da81da5bdfc40ff9319b66d1bf8dc94_dates`
+- `#obj9da81da5bdfc40ff9319b66d1bf8dc94_sortOptions`
+- `#obj9da81da5bdfc40ff9319b66d1bf8dc94_screens`
 - `.movie-filter-dropdown`
 - `#date_picker`
 - `#showtime_dropdown`

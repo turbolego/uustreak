@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-11-04T00:31:53.327Z
+**Timestamp:** 2025-11-05T18:46:24.727Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -44,7 +44,7 @@
 
 #### Affected Elements:
 
-- `.is-selected.iq.es:nth-child(1) > .c.be.bm > .bk.bs[data-test-id="product-link"] > h4`
+- `.is-selected.iw.fj:nth-child(1) > .c.bz.c4 > .ao.ca[data-test-id="product-link"] > h4`
 - `#ot-bnr-hdr-id-C0001`
 
 ### Images must have alternative text
@@ -57,7 +57,7 @@
 
 #### Affected Elements:
 
-- `.gx > .en.eo.e6`
+- `.hl > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -72,7 +72,7 @@
 - `img[alt="Celia håndkleserie 2 for 1"]`
 - `img[alt="Alle morgenkåper 2 for 1"]`
 - `img[alt="Makeup-tilbehør 2 for 1"]`
-- `a[href$="loungewear--accessories"] > .g6.cs.cv > .e8.g2.a3`
+- `a[href$="loungewear--accessories"] > .gv.da.dd > .en.gr.a3`
 - `img[alt="Alt baderomstilbehør 2 for 1"]`
 - `img[alt="Living håndkleserie 2 for 1"]`
 - `img[alt="Ava Wellness & Therapi"]`
@@ -106,8 +106,8 @@
 
 #### Affected Elements:
 
-- `div:nth-child(14) > .ej.ei.ba > .b0.cv.be > .a5.a6.a7:nth-child(1)`
-- `div:nth-child(14) > .ej.ei.ba > .b0.cv.be > .bs.br.bq`
+- `div:nth-child(14) > .fa.f9.bv > .bl.dd.bz > .a7.a5.a6:nth-child(1)`
+- `div:nth-child(14) > .fa.f9.bv > .bl.dd.bz > .ca.c9.c8`
 
 ### All page content should be contained by landmarks
 
@@ -115,12 +115,14 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 5
+- **Count:** 7
 
 #### Affected Elements:
 
+- `.af`
 - `a[aria-label="Gå til startside"]`
-- `.dq`
+- `.e7`
+- `.a > div:nth-child(5)`
 - `.tf-header-slider`
 - `.tf-sidebar`
 - `#kindly-chat-api > div,.sc-dNFkOE`
