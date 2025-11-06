@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2025-11-05T18:41:55.655Z
+**Timestamp:** 2025-11-06T00:32:02.401Z
 **URL:** [https://www.ba.no/#](https://www.ba.no/#)
 **Total Violations:** 5
 
@@ -12,11 +12,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `#eaframe, #container_9725889 > .info > .info-wrapper > .ctaLink`
+- `#eaframe, #arrow-banner9716370`
+- `#eaframe, #container_9716370 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
@@ -30,18 +31,18 @@
 
 - `#eaframe`
 
-### Links must be distinguishable without relying on color
+### Page should contain a level-one heading
 
-- **Impact:** serious
-- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
-- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
 - **Count:** 2
 
 #### Affected Elements:
 
-- `#sp_message_iframe_1393061, #no-hover`
-- `#sp_message_iframe_1393061, a[data-choice="1759496911768"]`
+- `html`
+- `#eaframe, html`
 
 ### Elements marked as presentational should be consistently ignored
 

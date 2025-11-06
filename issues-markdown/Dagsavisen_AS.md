@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2025-11-05T18:47:22.369Z
+**Timestamp:** 2025-11-06T00:38:50.781Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 12
 
@@ -83,11 +83,11 @@
 
 #### Affected Elements:
 
-- `.t56.tm39`
+- `.mobile-collapsed-element > .t56`
 - `.tm32.t42`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(43) > .tm21.t42`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > .t40`
 - `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(46) > .tm21.t42`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > .t40`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(48) > .tm21.t42`
 
 ### Images must have alternative text
 
@@ -148,11 +148,17 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 80
+- **Count:** 82
 
 #### Affected Elements:
 
 - `h1`
+- `div[title="Vinge tok fyr – motor falt av"] > h2`
+- `time[datetime="2025-11-05T20:33:25.000Z"]`
+- `div[title="Skutt og drept i Stockholm"] > h2`
+- `time[datetime="2025-11-05T20:12:08.000Z"]`
+- `div[title="Ber jøder flytte fra New York"] > h2`
+- `time[datetime="2025-11-05T19:22:18.000Z"]`
 - `#notice-10042830 > .content > h2`
 - `time[datetime="2025-11-05T18:39:11.000Z"]`
 - `div[title="Opphever dom mot ekspresident"] > h2`
@@ -181,12 +187,6 @@
 - `time[datetime="2025-11-05T12:36:27.000Z"]`
 - `div[title="Sykepleier dømt for ti drap"] > h2`
 - `time[datetime="2025-11-05T12:35:01.000Z"]`
-- `#notice-10041595 > .content > h2`
-- `time[datetime="2025-11-05T11:30:31.000Z"]`
-- `#notice-10041552 > .content > h2`
-- `time[datetime="2025-11-05T11:24:17.000Z"]`
-- `div[title="Lyse varsler nedbemanning"] > h2`
-- `time[datetime="2025-11-05T11:23:11.000Z"]`
 - `div[title="Ukraina med i forsvarsallianse"] > h2`
 - `time[datetime="2025-11-05T14:08:35.000Z"]`
 - `div[title="40 drept i angrep i Sudan"] > h2`
@@ -197,40 +197,42 @@
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
 - `.row.large-12.small-12:nth-child(6)`
-- `.row.large-12.small-12:nth-child(7)`
 - `#offer_a8dfe1abe190392acdc8-0, div[ng-show="!terminalError"]`
+- `.row.large-12.small-12:nth-child(8)`
 - `.row.large-12.small-12:nth-child(9)`
-- `.row.large-12.small-12:nth-child(11)`
+- `.bg-tertiary.color_mobile_bg-tertiary.hasContentPadding:nth-child(11)`
 - `.row.large-12.small-12:nth-child(12)`
 - `.row.large-12.small-12:nth-child(13)`
-- `.row.large-12.small-12:nth-child(14)`
-- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(16)`
-- `.row.large-12.small-12:nth-child(17)`
+- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(14)`
+- `.row.large-12.small-12:nth-child(16)`
 - `.articlescroller-header`
 - `.count_4`
-- `.row.large-12.small-12:nth-child(19)`
-- `.t56.tm39`
+- `.row.large-12.small-12:nth-child(18)`
+- `.mobile-collapsed-element > .t56`
 - `.count_1`
+- `.row.large-12.small-12:nth-child(21)`
 - `.row.large-12.small-12:nth-child(22)`
-- `.row.large-12.small-12:nth-child(23)`
-- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(24)`
+- `.border-side-top.mobile_border-side-top.border-bg-quaternary:nth-child(23)`
+- `.row.large-12.small-12:nth-child(24)`
 - `.row.large-12.small-12:nth-child(26)`
 - `.row.large-12.small-12:nth-child(27)`
 - `.row.large-12.small-12:nth-child(28)`
 - `.row.large-12.small-12:nth-child(29)`
-- `.row.large-12.small-12:nth-child(31)`
 - `.mobile_no_border_color.bg-tertiary.color_mobile_bg-tertiary`
-- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(33)`
+- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(32)`
+- `.row.large-12.small-12:nth-child(33)`
+- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(34)`
+- `.row.large-12.small-12:nth-child(36)`
+- `.row.large-12.small-12:nth-child(37)`
 - `.content > .t29.below.kicker`
 - `.t98`
-- `.border-side-top.mobile_border-side-top.has-row-header:nth-child(36)`
-- `.row.large-12.small-12:nth-child(38)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(39)`
-- `.color_mobile_no_bg_color.row.large-12`
+- `.row.large-12.small-12:nth-child(41)`
 - `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(42)`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(43)`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
+- `.color_mobile_no_bg_color.row.large-12`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(44)`
 - `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(46)`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(48)`
 - `.powered-by`
 
 ### [role="img"] elements must have alternative text

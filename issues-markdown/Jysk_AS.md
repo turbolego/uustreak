@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2025-11-05T18:45:21.135Z
+**Timestamp:** 2025-11-06T00:55:54.734Z
 **URL:** [https://jysk.no/#](https://jysk.no/#)
 **Total Violations:** 2
 
@@ -28,13 +28,13 @@
 
 #### Affected Elements:
 
-- `.col.mb-md-0.mb-4:nth-child(1) > .usp.text-decoration-none[href$="om-jysk"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
-- `.col.mb-md-0.mb-4:nth-child(2) > .usp.text-decoration-none[href$="om-jysk"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
-- `.col.mb-md-0.mb-4:nth-child(3) > .usp.text-decoration-none.d-block > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
+- `.col.mb-4.mb-md-0:nth-child(1) > .usp.text-decoration-none[href$="om-jysk"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
+- `.col.mb-4.mb-md-0:nth-child(2) > .usp.text-decoration-none[href$="om-jysk"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
+- `.col.mb-4.mb-md-0:nth-child(3) > .usp.text-decoration-none.d-block > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
 - `.usp.text-decoration-none[href$="edlp"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
 - `.newsletter__header`
-- `.mt-3`
+- `.required-label`
 - `.newsletter__fields > div:nth-child(1)`
 - `.newsletter__fields > div:nth-child(2)`
 - `#edit-terms`
-- `.newsletter__fields > .form-group-checkbox.form-group.position-relative > .checkbox-inline[title=""] > span:nth-child(3)`
+- `.checkbox-inline > span:nth-child(3)`

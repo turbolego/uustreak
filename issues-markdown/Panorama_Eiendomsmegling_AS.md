@@ -1,6 +1,6 @@
 # WCAG Violations Report for Panorama Eiendomsmegling AS
 
-**Timestamp:** 2025-11-05T18:44:49.407Z
+**Timestamp:** 2025-11-06T00:31:45.355Z
 **URL:** [https://privatmegleren.no/#](https://privatmegleren.no/#)
 **Total Violations:** 2
 
@@ -44,27 +44,27 @@
 - `.sc-1ckyjhj-3`
 - `.sc-wygeeu-7`
 - `section`
-- `.sc-1qf795a-0.klRNDq:nth-child(1) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3`
+- `.sc-1qf795a-0.klRNDq:nth-child(1) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop`
 - `.sc-1qf795a-0.klRNDq:nth-child(1) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-4.fLckZ`
-- `.sc-1qf795a-0.klRNDq:nth-child(2) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3`
+- `.sc-1qf795a-0.klRNDq:nth-child(2) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-2.kbATZF > .no-mobile-image.desktop`
 - `.sc-1qf795a-0.klRNDq:nth-child(2) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-4.fLckZ`
-- `.sc-1qf795a-0.klRNDq:nth-child(3) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3`
+- `.sc-1qf795a-0.klRNDq:nth-child(3) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop`
 - `.sc-1qf795a-0.klRNDq:nth-child(3) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-4.fLckZ`
-- `.sc-1qf795a-0.klRNDq:nth-child(4) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3`
+- `.sc-1qf795a-0.klRNDq:nth-child(4) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-2.kbATZF > .no-mobile-image.desktop`
 - `.sc-1qf795a-0.klRNDq:nth-child(4) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-4.fLckZ`
-- `.sc-1qf795a-0.klRNDq:nth-child(5) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3`
+- `.sc-1qf795a-0.klRNDq:nth-child(5) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop`
 - `.sc-1qf795a-0.klRNDq:nth-child(5) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-4.fLckZ`
-- `.sc-1qf795a-0.klRNDq:nth-child(6) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3`
+- `.sc-1qf795a-0.klRNDq:nth-child(6) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-2.kbATZF > .no-mobile-image.desktop`
 - `.sc-1qf795a-0.klRNDq:nth-child(6) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-4.fLckZ`
-- `.sc-1qf795a-0.klRNDq:nth-child(7) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3`
+- `.sc-1qf795a-0.klRNDq:nth-child(7) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop`
 - `.sc-1qf795a-0.klRNDq:nth-child(7) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-4.fLckZ`
-- `.sc-1qf795a-0.klRNDq:nth-child(8) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3`
+- `.sc-1qf795a-0.klRNDq:nth-child(8) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-2.kbATZF > .no-mobile-image.desktop`
 - `.sc-1qf795a-0.klRNDq:nth-child(8) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-4.fLckZ`
-- `.sc-1qf795a-0.klRNDq:nth-child(9) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3`
+- `.sc-1qf795a-0.klRNDq:nth-child(9) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop`
 - `.sc-1qf795a-0.klRNDq:nth-child(9) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-4.fLckZ`
-- `.sc-1qf795a-0.klRNDq:nth-child(10) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3`
+- `.sc-1qf795a-0.klRNDq:nth-child(10) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-2.kbATZF > .no-mobile-image.desktop`
 - `.sc-1qf795a-0.klRNDq:nth-child(10) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-4.fLckZ`
-- `.sc-1qf795a-0.klRNDq:nth-child(11) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3`
+- `.sc-1qf795a-0.klRNDq:nth-child(11) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop`
 - `.sc-1qf795a-0.klRNDq:nth-child(11) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-4.fLckZ`
 - `.sc-ta09ry-1.lcSrws.desktop`
 - `.w290`

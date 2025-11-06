@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Bergensklinikkene
 
-**Timestamp:** 2025-11-05T18:35:32.439Z
+**Timestamp:** 2025-11-06T00:23:31.894Z
 **URL:** [https://bergenclinics.no/#](https://bergenclinics.no/#)
 **Total Violations:** 6
 
@@ -61,7 +61,7 @@
 - `#archives-4 > ul > li:nth-child(3) > a`
 - `#archives-4 > ul > li:nth-child(4) > a`
 - `#archives-4 > ul > li:nth-child(5) > a`
-- `#es_subscription_form_submit_690b98ea0478d`
+- `#es_subscription_form_submit_690bea75aca79`
 
 ### Frames must have an accessible name
 
@@ -118,7 +118,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 61
+- **Count:** 59
 
 #### Affected Elements:
 
@@ -151,7 +151,6 @@
 - `#post-9 > figure`
 - `#post-9 > .entry-content.clearfix > p:nth-child(1)`
 - `#post-9 > .entry-content.clearfix > h2:nth-child(2)`
-- `#post-9 > .entry-content.clearfix > p:nth-child(3) > iframe[title="YouTube video player"][height="440"][allowfullscreen="allowfullscreen"], #player`
 - `#post-9 > .entry-content.clearfix > p:nth-child(4)`
 - `#post-9 > .entry-content.clearfix > p:nth-child(5)`
 - `#post-9 > .entry-content.clearfix > h2:nth-child(6)`
@@ -179,7 +178,6 @@
 - `#post-27 > figure`
 - `#post-27 > .entry-content.clearfix > p:nth-child(1)`
 - `#post-27 > .entry-content.clearfix > h2`
-- `#post-27 > .entry-content.clearfix > p:nth-child(3) > iframe[title="YouTube video player"][height="440"][allowfullscreen="allowfullscreen"], #player`
 - `#post-27 > .entry-content.clearfix > p:nth-child(4)`
 - `#post-27 > .entry-content.clearfix > p:nth-child(5)`
 - `#post-27 > .entry-content.clearfix > p:nth-child(6)`
