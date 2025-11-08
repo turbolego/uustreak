@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2025-11-06T00:22:25.030Z
+**Timestamp:** 2025-11-08T00:20:49.677Z
 **URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
 **Total Violations:** 10
 
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-561458"]`
-- `button[aria-controls="modal-562489"]`
-- `button[aria-controls="modal-561515"]`
-- `button[aria-controls="modal-503978"]`
-- `button[aria-controls="modal-562911"]`
-- `button[aria-controls="modal-568680"]`
 - `button[aria-controls="modal-505918"]`
 - `button[aria-controls="modal-501706"]`
+- `button[aria-controls="modal-502604"]`
+- `button[aria-controls="modal-571800"]`
+- `button[aria-controls="modal-506899"]`
+- `button[aria-controls="modal-560853"]`
+- `button[aria-controls="modal-552923"]`
+- `button[aria-controls="modal-506817"]`
 
 ### Buttons must have discernible text
 
@@ -94,8 +94,8 @@
 
 - `.w-auto > picture > .object-center.object-cover`
 - `.bg-beige-50 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
-- `div:nth-child(3) > .bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
-- `div:nth-child(4) > .my-10.bleeding-edges > .container > .md\:grid-cols-12.grid-cols-1.grid > .col-span-wide.shadow-md.hover\:shadow-lg > .lg\:rounded-r-none.lg\:rounded-l-lg.h-\[264px\] > picture > .object-center[height="264"][width="600"]`
+- `div:nth-child(2) > .bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
+- `.object-center[height="264"][width="600"]`
 - `.w-\[180px\].h-\[160px\]:nth-child(1) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
 - `.w-\[180px\].h-\[160px\]:nth-child(2) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
 - `.w-\[180px\].h-\[160px\]:nth-child(3) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`

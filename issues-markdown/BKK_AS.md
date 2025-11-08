@@ -1,6 +1,6 @@
 # WCAG Violations Report for BKK AS
 
-**Timestamp:** 2025-11-06T00:29:14.641Z
+**Timestamp:** 2025-11-08T00:25:57.336Z
 **URL:** [https://www.bkk.no/#](https://www.bkk.no/#)
 **Total Violations:** 4
 
@@ -42,11 +42,11 @@
 
 #### Affected Elements:
 
-- `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(2) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
+- `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(3) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
 - `a[href$="na-kommer-studentene"] > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
-- `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(4) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
-- `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(6) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
-- `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(8) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
+- `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(5) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
+- `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(7) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
+- `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(9) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
 
 ### All page content should be contained by landmarks
 

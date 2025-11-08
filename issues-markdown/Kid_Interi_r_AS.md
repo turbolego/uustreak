@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-11-06T00:56:57.509Z
+**Timestamp:** 2025-11-08T00:32:45.694Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -44,7 +44,7 @@
 
 #### Affected Elements:
 
-- `.is-selected.iw.fj:nth-child(1) > .c.bz.c4 > .ao.ca[data-test-id="product-link"] > h4`
+- `.is-selected.iy.fj:nth-child(1) > .c.bz.c4 > .ao.ca[data-test-id="product-link"] > h4`
 - `#ot-bnr-hdr-id-C0001`
 
 ### Images must have alternative text
@@ -57,7 +57,7 @@
 
 #### Affected Elements:
 
-- `.hl > .fe.ff.el`
+- `.h4 > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -69,23 +69,6 @@
 
 #### Affected Elements:
 
-- `img[alt="Celia håndkleserie 2 for 1"]`
-- `img[alt="Alle morgenkåper 2 for 1"]`
-- `img[alt="Makeup-tilbehør 2 for 1"]`
-- `a[href$="loungewear--accessories"] > .gv.da.dd > .en.gr.a3`
-- `img[alt="Alt baderomstilbehør 2 for 1"]`
-- `img[alt="Living håndkleserie 2 for 1"]`
-- `img[alt="Ava Wellness & Therapi"]`
-- `img[alt="Såper & kremer"]`
-- `img[alt="Kalendergavetips!"]`
-- `img[alt="Julesengetøy"]`
-- `img[alt="Juleputer"]`
-- `img[alt="Adventsbelysning"]`
-- `img[alt="Julekranser"]`
-- `img[alt="Julelykter & lys"]`
-- `img[alt="Julegaveinnpakning"]`
-- `img[alt="Julepynt"]`
-- `img[alt="Julestrømper"]`
 - `img[alt="Sofa"]`
 - `img[alt="Småbord og sofabord"]`
 - `img[alt="Gulvtepper"]`
@@ -95,6 +78,23 @@
 - `img[alt="Hyller"]`
 - `img[alt="Spisebord"]`
 - `img[alt="Skap og skjenker"]`
+- `img[alt="Celia håndklær 2 for 1"]`
+- `img[alt="Morgenkåper 2 for 1"]`
+- `img[alt="Makeup utstyr 2 for 1"]`
+- `img[alt="Loungewear 2 for 1"]`
+- `img[alt="Baderomstilbehør 2 for 1"]`
+- `img[alt="Living håndklær 2 for 1"]`
+- `img[alt="Ava Wellness & Therapi 2 for 1"]`
+- `img[alt="Såper & kremer 2 for 1"]`
+- `img[alt="Kalendergavetips!"]`
+- `img[alt="Julesengetøy"]`
+- `img[alt="Juleputer"]`
+- `img[alt="Adventsbelysning"]`
+- `img[alt="Julekranser"]`
+- `img[alt="Julelykter & lys"]`
+- `img[alt="Julegaveinnpakning"]`
+- `img[alt="Julepynt"]`
+- `img[alt="Julestrømper"]`
 
 ### Links must have discernible text
 
@@ -106,8 +106,8 @@
 
 #### Affected Elements:
 
-- `div:nth-child(14) > .fa.f9.bv > .bl.dd.bz > .a7.a5.a6:nth-child(1)`
-- `div:nth-child(14) > .fa.f9.bv > .bl.dd.bz > .ca.c9.c8`
+- `.a7[href$="live-shopping"][data-scope-link="true"]:nth-child(1)`
+- `.ca.c9[href$="live-shopping"]`
 
 ### All page content should be contained by landmarks
 
@@ -119,7 +119,7 @@
 
 #### Affected Elements:
 
-- `.af`
+- `.ag`
 - `a[aria-label="Gå til startside"]`
 - `.e7`
 - `.a > div:nth-child(5)`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for The Thief Hotel AS
 
-**Timestamp:** 2025-11-06T00:31:07.437Z
+**Timestamp:** 2025-11-08T00:28:43.177Z
 **URL:** [https://thethief.com/](https://thethief.com/)
 **Total Violations:** 3
 
@@ -39,11 +39,12 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 4
+- **Count:** 5
 
 #### Affected Elements:
 
 - `.nav-logo`
+- `a[data-toggle="open"]`
 - `.social-icons > a[target="_blank"][rel="noopener"]:nth-child(1)`
 - `a[target="_blank"][rel="noopener"]:nth-child(2)`
 - `a[target="_blank"][rel="noopener"]:nth-child(3)`

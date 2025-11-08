@@ -1,10 +1,34 @@
 # WCAG Violations Report for Hammerfest kommune
 
-**Timestamp:** 2025-11-06T00:51:16.388Z
+**Timestamp:** 2025-11-08T00:26:50.136Z
 **URL:** [https://hammerfest.kommune.no/#](https://hammerfest.kommune.no/#)
-**Total Violations:** 4
+**Total Violations:** 6
 
 ## Violation Details
+
+### Elements must only use supported ARIA attributes
+
+- **Impact:** critical
+- **Description:** Ensure an element's role supports its ARIA attributes
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.flex-active`
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.articles-carousel-li:nth-child(1) > .slide > .center.articles-carousel-li-center > .articles-carousel-li-text.text > .artikkel > h4`
 
 ### Heading levels should only increase by one
 
@@ -16,7 +40,7 @@
 
 #### Affected Elements:
 
-- `h4`
+- `.articles-carousel-li:nth-child(1) > .slide > .center.articles-carousel-li-center > .articles-carousel-li-text.text > .artikkel > h4`
 
 ### Alternative text of images should not be repeated as text
 

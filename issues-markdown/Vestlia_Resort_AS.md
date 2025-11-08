@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2025-11-06T00:39:34.040Z
+**Timestamp:** 2025-11-08T00:35:35.104Z
 **URL:** [https://vestlia.no/#](https://vestlia.no/#)
 **Total Violations:** 5
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 15
+- **Count:** 13
 
 #### Affected Elements:
 
@@ -29,8 +29,6 @@
 - `#mc-embedded-subscribe`
 - `.fusion-title-16 > h3`
 - `.button-12 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `.button-13 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `.button-14 > .fusion-button-text.awb-button__text.awb-button__text--default`
 
 ### Heading levels should only increase by one
 
@@ -85,11 +83,11 @@
 - `.skip-link`
 - `.fusion-builder-column-1`
 - `.fusion-flex-justify-content-center.fusion-content-layout-column.fusion-column-wrapper > .sm-text-align-center.fusion-image-element`
+- `.fusion-builder-column-27`
 - `.fusion-builder-column-28`
 - `.fusion-builder-column-29`
-- `.fusion-builder-column-30`
-- `.fusion-builder-row-16`
+- `.fusion-builder-row-15`
+- `.fusion-builder-row-17`
 - `.fusion-builder-row-18`
-- `.fusion-builder-row-19`
-- `body > div:nth-child(11)`
-- `body > div:nth-child(12)`
+- `body > div:nth-child(21)`
+- `div:nth-child(22)`

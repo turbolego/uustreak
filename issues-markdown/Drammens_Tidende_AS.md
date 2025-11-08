@@ -1,8 +1,8 @@
 # WCAG Violations Report for Drammens Tidende AS
 
-**Timestamp:** 2025-11-06T00:42:17.811Z
+**Timestamp:** 2025-11-08T00:36:54.888Z
 **URL:** [https://www.dt.no/#](https://www.dt.no/#)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -29,19 +29,6 @@
 #### Affected Elements:
 
 - `brick-carousel-v2[data-slides="5"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
-
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 2
-
-#### Affected Elements:
-
-- `html`
-- `#eaframe, html`
 
 ### Elements marked as presentational should be consistently ignored
 

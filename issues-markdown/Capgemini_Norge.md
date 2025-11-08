@@ -1,6 +1,6 @@
 # WCAG Violations Report for Capgemini Norge
 
-**Timestamp:** 2025-11-06T00:35:14.459Z
+**Timestamp:** 2025-11-08T00:30:58.901Z
 **URL:** [https://www.capgemini.com/no-no/#](https://www.capgemini.com/no-no/#)
 **Total Violations:** 7
 
@@ -72,12 +72,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.ta-show.ta-display-block:nth-child(3) > .container > div > .truste-messageColumn`
-- `.ta-show.ta-display-block:nth-child(6) > .container > div > .truste-messageColumn`
+- `#truste-consent-text`
 
 ### Scrollable region must have keyboard access
 

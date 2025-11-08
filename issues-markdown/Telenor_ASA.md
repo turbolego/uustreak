@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2025-11-06T00:30:26.202Z
+**Timestamp:** 2025-11-08T00:28:05.609Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
 **Total Violations:** 5
 
@@ -43,7 +43,7 @@
 
 #### Affected Elements:
 
-- `.hover-s.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-header[data-v-f161f4b3=""] > .margin-top-xl.padding-top-2xs`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-header[data-v-f161f4b3=""] > .margin-top-xl.padding-top-2xs`
 - `.dropdown-category.footer[data-v-fc78c99a=""]:nth-child(1) > .dropdown-link[data-v-295ed7f3=""] > .dropdown-header.hidden-mobile[data-v-295ed7f3=""] > h6`
 - `#privacy_prompt_text2 > h4`
 
@@ -57,10 +57,10 @@
 
 #### Affected Elements:
 
-- `.margin-bottom-xs[ondragstart="return false"][data-v-d2dd02e0=""]:nth-child(1) > .border-radius-l.card[data-v-14a666ce=""] > .main-stock.stock[size="14px"]`
-- `.margin-bottom-xs[ondragstart="return false"][data-v-d2dd02e0=""]:nth-child(2) > .border-radius-l.card[data-v-14a666ce=""] > .main-stock.stock[size="14px"]`
-- `.margin-bottom-xs[ondragstart="return false"][data-v-d2dd02e0=""]:nth-child(3) > .border-radius-l.card[data-v-14a666ce=""] > .main-stock.stock[size="14px"]`
-- `.margin-bottom-xs[ondragstart="return false"][data-v-d2dd02e0=""]:nth-child(4) > .border-radius-l.card[data-v-14a666ce=""] > .main-stock.stock[size="14px"]`
+- `.margin-bottom-xs[ondragstart="return false"][data-v-d2dd02e0=""]:nth-child(1) > .border-radius-l.card[data-v-9267cad1=""] > .main-stock.stock[size="14px"]`
+- `.margin-bottom-xs[ondragstart="return false"][data-v-d2dd02e0=""]:nth-child(2) > .border-radius-l.card[data-v-9267cad1=""] > .main-stock.stock[size="14px"]`
+- `.margin-bottom-xs[ondragstart="return false"][data-v-d2dd02e0=""]:nth-child(3) > .border-radius-l.card[data-v-9267cad1=""] > .main-stock.stock[size="14px"]`
+- `.margin-bottom-xs[ondragstart="return false"][data-v-d2dd02e0=""]:nth-child(4) > .border-radius-l.card[data-v-9267cad1=""] > .main-stock.stock[size="14px"]`
 
 ### All page content should be contained by landmarks
 

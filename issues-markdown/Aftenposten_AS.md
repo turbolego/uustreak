@@ -1,8 +1,8 @@
 # WCAG Violations Report for Aftenposten AS
 
-**Timestamp:** 2025-11-06T00:24:36.298Z
+**Timestamp:** 2025-11-08T00:21:47.829Z
 **URL:** [https://www.aftenposten.no/#](https://www.aftenposten.no/#)
-**Total Violations:** 5
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -18,19 +18,41 @@
 
 - `.ch-menu-state-label`
 
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#edPmejvHQxsc > img[srcset=""]`
+- `#egTHYbeouoEc > img[srcset=""]`
+
 ### Alternative text of images should not be repeated as text
 
 - **Impact:** minor
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 3
+- **Count:** 12
 
 #### Affected Elements:
 
 - `#OoLQqE > .teaser-link > .teaser-image-wrapper > .teaser-image[loading="eager"][decoding="auto"]`
 - `.container > .teaser-image-wrapper > .teaser-image[loading="eager"][decoding="auto"]`
-- `#\37 39dRV > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#Rz3zX2 > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#\30 VMBzE > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#\36 3mOQO > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#kw49jj > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#Ey0bbG > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#OoRy91 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#\35 Em8AK > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#nykA0L > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#Ey0v43 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#OoRj6k > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
 
 ### Document should not have more than one banner landmark
 
@@ -44,16 +66,29 @@
 
 - `.ch-core-header`
 
+### Document should not have more than one main landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has at most one main landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-main?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#pweAlPRULxD > main`
+
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `#pweAlPRULxD > main`
 - `.ch-core-header`
 
 ### All page content should be contained by landmarks
@@ -62,20 +97,31 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 232
+- **Count:** 225
 
 #### Affected Elements:
 
 - `.fullwidth.teaser-wrapper:nth-child(1)`
 - `.double.teaser-wrapper:nth-child(2)`
-- `#bm9mj3 > .teaser-link > .teaser-image-wrapper`
-- `#bm9mj3 > .teaser-link > .container > .information`
-- `#bm9mj3 > .teaser-link > .container > .illustration-container > .text`
-- `#bm9mj3 > .teaser-link > .container > .illustration-container > .illustration-byline-info`
-- `img[alt="bilde av Kjetil B. Alstadheim"]`
-- `#dr-edition-teaser-e4qrdh9n > div`
+- `.fullwidth.teaser-wrapper:nth-child(3)`
+- `#dr-edition-teaser-dazw2auo > div`
 - `.fullwidth.teaser-wrapper:nth-child(5)`
 - `._heading_1bm9r_641`
+- `article[data-pulse-entity-id="reel-136551"] > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `article[data-pulse-entity-id="reel-136551"] > a > ._preview-duration_1hg9u_384`
+- `article[data-pulse-entity-id="reel-136551"] > a > ._preview-title_1bm9r_721._preview-title_1hg9u_412`
+- `article[data-pulse-entity-id="reel-136507"] > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `article[data-pulse-entity-id="reel-136507"] > a > ._preview-duration_1hg9u_384`
+- `article[data-pulse-entity-id="reel-136507"] > a > ._preview-title_1bm9r_721._preview-title_1hg9u_412`
+- `article[data-pulse-entity-id="reel-136515"] > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `article[data-pulse-entity-id="reel-136515"] > a > ._preview-duration_1hg9u_384`
+- `article[data-pulse-entity-id="reel-136515"] > a > ._preview-title_1bm9r_721._preview-title_1hg9u_412`
+- `article[data-pulse-entity-id="reel-136498"] > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `article[data-pulse-entity-id="reel-136498"] > a > ._preview-duration_1hg9u_384`
+- `article[data-pulse-entity-id="reel-136498"] > a > ._preview-title_1bm9r_721._preview-title_1hg9u_412`
+- `article[data-pulse-entity-id="reel-136500"] > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `article[data-pulse-entity-id="reel-136500"] > a > ._preview-duration_1hg9u_384`
+- `article[data-pulse-entity-id="reel-136500"] > a > ._preview-title_1bm9r_721._preview-title_1hg9u_412`
 - `article[data-pulse-entity-id="reel-136461"] > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `article[data-pulse-entity-id="reel-136461"] > a > ._preview-duration_1hg9u_384`
 - `article[data-pulse-entity-id="reel-136461"] > a > ._preview-title_1bm9r_721._preview-title_1hg9u_412`
@@ -91,210 +137,192 @@
 - `article[data-pulse-entity-id="reel-136411"] > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `article[data-pulse-entity-id="reel-136411"] > a > ._preview-duration_1hg9u_384`
 - `article[data-pulse-entity-id="reel-136411"] > a > ._preview-title_1bm9r_721._preview-title_1hg9u_412`
-- `article[data-pulse-entity-id="reel-136373"] > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `article[data-pulse-entity-id="reel-136373"] > a > ._preview-duration_1hg9u_384`
-- `article[data-pulse-entity-id="reel-136373"] > a > ._preview-title_1bm9r_721._preview-title_1hg9u_412`
-- `article[data-pulse-entity-id="reel-136409"] > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `article[data-pulse-entity-id="reel-136409"] > a > ._preview-duration_1hg9u_384`
-- `article[data-pulse-entity-id="reel-136409"] > a > ._preview-title_1bm9r_721._preview-title_1hg9u_412`
-- `article[data-pulse-entity-id="reel-136352"] > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `article[data-pulse-entity-id="reel-136352"] > a > ._preview-duration_1hg9u_384`
-- `article[data-pulse-entity-id="reel-136352"] > a > ._preview-title_1bm9r_721._preview-title_1hg9u_412`
-- `article[data-pulse-entity-id="reel-136405"] > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `article[data-pulse-entity-id="reel-136405"] > a > ._preview-duration_1hg9u_384`
-- `article[data-pulse-entity-id="reel-136405"] > a > ._preview-title_1bm9r_721._preview-title_1hg9u_412`
-- `article[data-pulse-entity-id="reel-136383"] > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `article[data-pulse-entity-id="reel-136383"] > a > ._preview-duration_1hg9u_384`
-- `article[data-pulse-entity-id="reel-136383"] > a > ._preview-title_1bm9r_721._preview-title_1hg9u_412`
-- `.bundle-wrapper.fullwidth.teaser-wrapper:nth-child(7) > .teaser-bundle.new-bundles.desktop > .bundle-title`
+- `.bundle-wrapper.fullwidth.teaser-wrapper:nth-child(7) > .teaser-bundle.new-bundles > .bundle-title`
 - `#OoLQqE > .teaser-link > .teaser-image-wrapper`
 - `#OoLQqE > .teaser-link > .container > h2`
-- `.bundle-wrapper.fullwidth.teaser-wrapper:nth-child(7) > .teaser-bundle.new-bundles.desktop > .bundle-teasers-wrapper > .secondary-teasers-wrapper`
+- `.bundle-wrapper.fullwidth.teaser-wrapper:nth-child(7) > .teaser-bundle.new-bundles > .bundle-teasers-wrapper > .secondary-teasers-wrapper`
 - `#eM2bBM > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
 - `#eM2bBM > .teaser-link > .container`
-- `#dr-edition-teaser-snxfqxy1x > div`
-- `#LMvpnx > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#LMvpnx > .teaser-link > .container`
-- `img[alt="Én julefilm som bare må sees"]`
-- `#Rz3zAJ > .teaser-link > .container`
-- `#nyk1wm > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#nyk1wm > .teaser-link > .container`
-- `#\37 39po3 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\37 39po3 > .teaser-link > .container`
-- `.games-widget`
-- `#vg4dE4 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#vg4dE4 > .teaser-link > .container`
-- `#\37 3XM24 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\37 3XM24 > .teaser-link > .container`
-- `#o3J3RR > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#o3J3RR > .teaser-link > .container > .information`
-- `#o3J3RR > .teaser-link > .container > .illustration-container > .text`
-- `#o3J3RR > .teaser-link > .container > .illustration-container > .illustration-byline-info`
-- `img[alt="bilde av Ingunn Økland"]`
-- `#\35 EAMGb > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\35 EAMGb > .teaser-link > .container`
-- `#\32 5MdRR > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\32 5MdRR > .teaser-link > .container`
-- `#PpWPVR > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#PpWPVR > .teaser-link > .container`
-- `#vgEAWX > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#vgEAWX > .teaser-link > .container`
+- `#dr-edition-teaser-08ppilt6c > div`
 - `#mPGX34 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
 - `#mPGX34 > .teaser-link > .container`
-- `#\34 Bnok9 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\34 Bnok9 > .teaser-link > .container`
+- `#JbPnr6 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#JbPnr6 > .teaser-link > .container`
+- `.magazine.series-location.teaser-bundle > .bundle-title`
+- `#\31 MgJ4l > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `.series-header`
+- `#\31 MgJ4l > .teaser-link > .container > h2`
+- `#Rz3zX2 > .teaser-link > .container > .text-wrapper-small`
+- `#Rz3zX2 > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#eMlOkl > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#eMlOkl > .teaser-link > .container`
+- `.games-widget`
+- `#eMlqda > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#eMlqda > .teaser-link > .container`
+- `#lw89g7 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#lw89g7 > .teaser-link > .container > .information`
+- `#lw89g7 > .teaser-link > .container > .illustration-container > .text`
+- `#lw89g7 > .teaser-link > .container > .illustration-container > .illustration-byline-info`
+- `img[alt="bilde av Christina Pletten"]`
+- `#vg4dE4 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#vg4dE4 > .teaser-link > .container`
+- `#nykLen > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#nykLen > .teaser-link > .container`
+- `#\37 39po3 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#\37 39po3 > .teaser-link > .container`
+- `#xmx5WR > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#xmx5WR > .teaser-link > .container`
 - `#qP2W8o > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
 - `#qP2W8o > .teaser-link > .container > .information`
 - `#qP2W8o > .teaser-link > .container > .illustration-container > .text`
 - `#qP2W8o > .teaser-link > .container > .illustration-container > .illustration-byline-info`
 - `img[alt="bilde av Halvor Hegtun"]`
-- `#KMEnV7 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#KMEnV7 > .teaser-link > .container`
-- `.bundle-wrapper.fullwidth.teaser-wrapper:nth-child(30) > .teaser-bundle.new-bundles.desktop > .bundle-title`
-- `#RzPnMO > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `.series-header`
-- `#RzPnMO > .teaser-link > .container > h2`
-- `#\37 39dRV > .teaser-link > .container > .text-wrapper-small`
-- `#\37 39dRV > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#KMo53G > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#KMo53G > .teaser-link > .container`
-- `#xm1nkV > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#xm1nkV > .teaser-link > .container > .information`
-- `#xm1nkV > .teaser-link > .container > .illustration-container > .text`
-- `#xm1nkV > .teaser-link > .container > .illustration-container > .illustration-byline-info`
-- `img[alt="bilde av Joacim Lund"]`
-- `#\38 qejmd > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\38 qejmd > .teaser-link > .container`
+- `#QMpr34 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#QMpr34 > .teaser-link > .container`
+- `#zAdwXr > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#zAdwXr > .teaser-link > .container`
+- `#lw842y > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#lw842y > .teaser-link > .container`
+- `#\37 3XkL8 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#\37 3XkL8 > .teaser-link > .container > .information`
+- `#\37 3XkL8 > .teaser-link > .container > .illustration-container > .text`
+- `#\37 3XkL8 > .teaser-link > .container > .illustration-container > .illustration-byline-info`
+- `img[alt="bilde av Daniel Røed-Johansen"]`
+- `.bundle-wrapper.fullwidth.teaser-wrapper:nth-child(28) > .teaser-bundle.new-bundles > .bundle-title`
+- `#\30 VMBzE > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#\30 VMBzE > .teaser-link > .container > h2`
+- `#\36 3mOQO > .teaser-link > .container > .text-wrapper-small`
+- `#\36 3mOQO > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#dRgmJX > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#dRgmJX > .teaser-link > .container > .information`
+- `#dRgmJX > .teaser-link > .container > h2`
+- `#dRgmJX > .teaser-link > .container > .byline > div:nth-child(1)`
+- `#dRgmJX > .teaser-link > .container > .byline > .author-image-wrapper > .author-image[width="100"][height="100"]`
+- `#lwp6K9 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#lwp6K9 > .teaser-link > .container > .information`
+- `#lwp6K9 > .teaser-link > .container > .illustration-container > .text`
+- `#lwp6K9 > .teaser-link > .container > .illustration-container > .illustration-byline-info`
+- `img[alt="bilde av Rakel Haugen Strand"]`
+- `#kwqdmv > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#kwqdmv > .teaser-link > .container`
 - `.benefits-widget-container`
-- `#OoLm8O > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#OoLm8O > .teaser-link > .container`
-- `#\39 3gv1E > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\39 3gv1E > .teaser-link > .container`
-- `#\35 E1MBO > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\35 E1MBO > .teaser-link > .container`
-- `#\37 395wv > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\37 395wv > .teaser-link > .container`
-- `#\32 5RXxa > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\32 5RXxa > .teaser-link > .container`
-- `#XjGqvo > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#XjGqvo > .teaser-link > .container`
-- `#lwp61M > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#lwp61M > .teaser-link > .container`
-- `#jQV93L > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#jQV93L > .teaser-link > .container > .information`
-- `#jQV93L > .teaser-link > .container > h2`
-- `#jQV93L > .teaser-link > .container > .byline > div:nth-child(1)`
-- `#jQV93L > .teaser-link > .container > .byline > .author-image-wrapper > .author-image[width="100"][height="100"]`
-- `#kwqEkX > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#kwqEkX > .teaser-link > .container`
-- `img[alt="Høyre ut mot Avinor: – Naivt"]`
-- `#\31 MQnxq > .teaser-link > .container`
-- `#vgEgQB > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#vgEgQB > .teaser-link > .container`
-- `#\34 B62aV > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\34 B62aV > .teaser-link > .container`
-- `#QMpM1x > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#QMpM1x > .teaser-link > .container > .information`
-- `#QMpM1x > .teaser-link > .container > h2`
-- `#QMpM1x > .teaser-link > .container > .byline > div:nth-child(1)`
-- `img[alt="bilde av Arina Aamir"]`
-- `#\30 VwpP0 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\30 VwpP0 > .teaser-link > .container`
-- `#Mnx7wM > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#Mnx7wM > .teaser-link > .container`
-- `#alrlGO > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#alrlGO > .teaser-link > .container`
-- `#qPK62O > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#qPK62O > .teaser-link > .container`
-- `#\37 39nzV > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\37 39nzV > .teaser-link > .container`
-- `#bm9OAB > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#bm9OAB > .teaser-link > .container`
-- `#VzOzn6 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#VzOzn6 > .teaser-link > .container`
-- `#B07jPG > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#B07jPG > .teaser-link > .container > .information`
-- `#B07jPG > .teaser-link > .container > .illustration-container > .text`
-- `#B07jPG > .teaser-link > .container > .illustration-container > .illustration-byline-info`
-- `img[alt="bilde av Christina Pletten"]`
-- `#jQ8V5q > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#jQ8V5q > .teaser-link > .container > .information`
-- `#jQ8V5q > .teaser-link > .container > h2`
-- `#jQ8V5q > .teaser-link > .container > .byline > div:nth-child(1)`
-- `img[alt="bilde av Vebjørn Horsfjord"]`
-- `#vgEg9V > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#vgEg9V > .teaser-link > .container`
-- `#VzOPE4 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#VzOPE4 > .teaser-link > .container`
-- `#xmxA9n > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#xmxA9n > .teaser-link > .container`
-- `#QMp7bV > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#QMp7bV > .teaser-link > .container`
-- `img[alt="Kjempesmell på ny måling"]`
-- `#Pp64p5 > .teaser-link > .container`
-- `#\30 VwQ8E > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\30 VwQ8E > .teaser-link > .container`
-- `#\31 MQ5AM > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\31 MQ5AM > .teaser-link > .container`
-- `#OoR8vA > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#OoR8vA > .teaser-link > .container`
-- `#\37 393x4 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\37 393x4 > .teaser-link > .container`
-- `#LMyAwR > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#LMyAwR > .teaser-link > .container > .information`
-- `#LMyAwR > .teaser-link > .container > h2`
-- `#LMyAwR > .teaser-link > .container > .byline > div:nth-child(1)`
-- `img[alt="bilde av Jill Walker Rettberg"]`
-- `#KMOR15 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#KMOR15 > .teaser-link > .container`
-- `#LMylM4 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#LMylM4 > .teaser-link > .container`
-- `img[alt="Hvilket spill er dette?"]`
-- `#zAR54v > .teaser-link > .container`
-- `#pP0WJX > .teaser-link > .container > .text-wrapper-small`
-- `#pP0WJX > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `.container-linear-gradient`
-- `.container-darken`
-- `#zAdmg1 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#zAdmg1 > .teaser-link > .container`
-- `#\33 ML4le > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\33 ML4le > .teaser-link > .container`
-- `#\30 Vew6B > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\30 Vew6B > .teaser-link > .container`
-- `#kw4k3A > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#kw4k3A > .teaser-link > .container`
-- `#Pp6yVp > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#Pp6yVp > .teaser-link > .container`
-- `#bm9MWe > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#bm9MWe > .teaser-link > .container > .information`
-- `#bm9MWe > .teaser-link > .container > h2`
-- `#bm9MWe > .teaser-link > .container > .byline > div:nth-child(1)`
-- `img[alt="bilde av Frank Willy Djuvik"]`
-- `#\30 VwjMB > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\30 VwjMB > .teaser-link > .container`
-- `#zAR5bK > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#zAR5bK > .teaser-link > .container`
-- `img[alt="OUS har prioritert psykiatrien"]`
-- `#yELeyE > .teaser-link > .container > .information`
-- `#yELeyE > .teaser-link > .container > h2`
-- `#yELeyE > .teaser-link > .container > .byline > div:nth-child(1)`
-- `img[alt="bilde av Anders Mohn Frafjord "]`
-- `#VzOqb1 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#VzOqb1 > .teaser-link > .container`
-- `#o3dJja > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#o3dJja > .teaser-link > .container`
-- `img[alt="Åpenhet styrker Forsvaret"]`
-- `#eM2leg > .teaser-link > .container > .information`
-- `#eM2leg > .teaser-link > .container > .kicker`
-- `#eM2leg > .teaser-link > .container > h2`
-- `#eM2leg > .teaser-link > .container > .byline > div:nth-child(1)`
-- `img[alt="bilde av Eirik Kristoffersen"]`
-- `#\32 5MGvR > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\32 5MGvR > .teaser-link > .container`
-- `#\33 MLJPX > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\33 MLJPX > .teaser-link > .container`
-- `#\37 390vw > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
-- `#\37 390vw > .teaser-link > .container > .information`
-- `#\37 390vw > .teaser-link > .container > h2`
-- `#\37 390vw > .teaser-link > .container > .byline > div:nth-child(1)`
-- `#\37 390vw > .teaser-link > .container > .byline > .author-image-wrapper > .author-image[width="100"][height="100"]`
+- `#\31 MKd4K > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#\31 MKd4K > .teaser-link > .container`
+- `#JbP79R > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#JbP79R > .teaser-link > .container`
+- `#\33 MlvGe > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#\33 MlvGe > .teaser-link > .container`
+- `#\38 qbOXx > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#\38 qbOXx > .teaser-link > .container`
+- `#B0Abm0 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#B0Abm0 > .teaser-link > .container`
+- `#qPKQgz > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#qPKQgz > .teaser-link > .container`
+- `#wgM99G > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#wgM99G > .teaser-link > .container`
+- `.bundle-wrapper.fullwidth.teaser-wrapper:nth-child(41) > .teaser-bundle.new-bundles > .bundle-title`
+- `#LMykP4 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#LMykP4 > .teaser-link > .container > .kicker`
+- `#LMykP4 > .teaser-link > .container > h2`
+- `#kw49jj > .teaser-link > .container > .text-wrapper-small`
+- `#kw49jj > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#Ey0bbG > .teaser-link > .container > .text-wrapper-small`
+- `#Ey0bbG > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#mP78v0 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#mP78v0 > .teaser-link > .container`
+- `#jQVk9L > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#jQVk9L > .teaser-link > .container`
+- `#LMyjGq > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#LMyjGq > .teaser-link > .container`
+- `#rPv5g8 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#rPv5g8 > .teaser-link > .container`
+- `#wgyeyn > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#wgyeyn > .teaser-link > .container > .information`
+- `#wgyeyn > .teaser-link > .container > h2`
+- `#wgyeyn > .teaser-link > .container > .byline > div:nth-child(1)`
+- `#wgyeyn > .teaser-link > .container > .byline > .author-image-wrapper > .author-image[width="100"][height="100"]`
+- `#\36 3rleQ > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#\36 3rleQ > .teaser-link > .container`
+- `#\34 BnBea > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#\34 BnBea > .teaser-link > .container`
+- `.bundle-wrapper.fullwidth.teaser-wrapper:nth-child(49) > .teaser-bundle.new-bundles > .bundle-title`
+- `#OoRy91 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#OoRy91 > .teaser-link > .container > h2`
+- `#\35 Em8AK > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#\35 Em8AK > .teaser-link > .container > .text-wrapper-small`
+- `#nykA0L > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#nykA0L > .teaser-link > .container > .text-wrapper-small`
+- `#pP0rqW > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#pP0rqW > .teaser-link > .container`
+- `#\32 5MjPx > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#\32 5MjPx > .teaser-link > .container`
+- `#eMldRM > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#eMldRM > .teaser-link > .container`
+- `#\33 MLP1P > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#\33 MLP1P > .teaser-link > .container`
+- `.fullwidth.teaser-wrapper:nth-child(53)`
+- `#LMyjjV > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#LMyjjV > .teaser-link > .container`
+- `img[alt="Tina Bru går til lobbygigant"]`
+- `#\34 BnRjR > .teaser-link > .container`
+- `#eMlzGg > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#eMlzGg > .teaser-link > .container`
+- `.bundle-wrapper.fullwidth.teaser-wrapper:nth-child(56) > .teaser-bundle.new-bundles > .bundle-title`
+- `#Ey0v43 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#Ey0v43 > .teaser-link > .container > h2`
+- `#OoRj6k > .teaser-link > .container > .text-wrapper-small`
+- `#OoRj6k > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#kwq8w6 > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#kwq8w6 > .teaser-link > .container > .illustration-container > .text`
+- `#kwq8w6 > .teaser-link > .container > .illustration-container > .illustration-byline-info`
+- `img[alt="bilde av Kjetil B. Alstadheim"]`
+- `#dRgqXA > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#dRgqXA > .teaser-link > .container`
+- `#MnMa6m > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#MnMa6m > .teaser-link > .container`
+- `#jQV9kq > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#jQV9kq > .teaser-link > .container`
+- `#dRgmxj > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#dRgmxj > .teaser-link > .container`
+- `#dRgqJz > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#dRgqJz > .teaser-link > .container`
+- `#LMyWjp > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#LMyWjp > .teaser-link > .container`
+- `#VzOqGp > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#VzOqGp > .teaser-link > .container > .information`
+- `#VzOqGp > .teaser-link > .container > h2`
+- `#VzOqGp > .teaser-link > .container > .byline > div:nth-child(1)`
+- `#VzOqGp > .teaser-link > .container > .byline > .author-image-wrapper > .author-image[width="100"][height="100"]`
+- `#GyvPy4 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#GyvPy4 > .teaser-link > .container`
+- `#Ey0b45 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#Ey0b45 > .teaser-link > .container`
+- `#Mnxwvm > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#Mnxwvm > .teaser-link > .container`
+- `#jQV3Mn > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#jQV3Mn > .teaser-link > .container > .information`
+- `#jQV3Mn > .teaser-link > .container > h2`
+- `#jQV3Mn > .teaser-link > .container > .byline > div:nth-child(1)`
+- `img[alt="bilde av Anders Ravik Jupskås"]`
+- `#o3JMB7 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#o3JMB7 > .teaser-link > .container`
+- `#Av8vX3 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#Av8vX3 > .teaser-link > .container > .information`
+- `#Av8vX3 > .teaser-link > .container > h2`
+- `#Av8vX3 > .teaser-link > .container > .byline > div:nth-child(1)`
+- `img[alt="bilde av Brynjar N. Meling"]`
+- `#B07Gve > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#B07Gve > .teaser-link > .container`
+- `#Rz360d > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#Rz360d > .teaser-link > .container`
+- `#vgEk6j > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#vgEk6j > .teaser-link > .container`
+- `#Av8vmr > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#Av8vmr > .teaser-link > .container > .information`
+- `#Av8vmr > .teaser-link > .container > h2`
+- `#Av8vmr > .teaser-link > .container > .byline > div:nth-child(1)`
+- `img[alt="bilde av Sindre Bangstad"]`
+- `#RzPMq2 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#RzPMq2 > .teaser-link > .container`
+- `#Av8rlM > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding="async"]`
+- `#Av8rlM > .teaser-link > .container`

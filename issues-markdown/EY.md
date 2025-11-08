@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2025-11-06T00:42:53.489Z
+**Timestamp:** 2025-11-08T00:37:20.992Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 4
 
@@ -55,7 +55,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 100
+- **Count:** 104
 
 #### Affected Elements:
 
@@ -65,6 +65,10 @@
 - `.featured_av-caption-wrapper`
 - `img[alt="Kloden i hånden"]`
 - `.theme-dark.cmp-container--theme-dark.cmp-container--background-color-e2e`
+- `#promotional-375939547c80 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
+- `#promotional-375939547c80 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
+- `#button-ab618830f8b6`
+- `#image-render-58f30bbef7 > .cmp-image__image[height="2560"][loading="lazy"]`
 - `#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-aac543142676`
