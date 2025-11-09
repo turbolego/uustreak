@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2025-11-08T00:24:34.099Z
+**Timestamp:** 2025-11-09T00:31:56.909Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -17,17 +17,17 @@
 #### Affected Elements:
 
 - `.gt.dr.ds > div > div`
-- `.gv.am[href$="black-november"]`
+- `.gv.am.an`
 - `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `a[aria-label="Rauland 2-lags ullongs"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `a[aria-label="Rauland 2-lags ullongs"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `a[aria-label="Hafjell vinterjakke"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `a[aria-label="Hafjell vinterjakke"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(3) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(3) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(4) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(4) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `a[aria-label="Svalbard lang dunparkas"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `a[aria-label="Svalbard lang dunparkas"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `a[aria-label="Ute resirkulert vinterdress"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `a[aria-label="Ute resirkulert vinterdress"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `li:nth-child(1) > .ia.ib[aria-label="Geilo vattert jakke barn 8-14"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `li:nth-child(1) > .ia.ib[aria-label="Geilo vattert jakke barn 8-14"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `li:nth-child(2) > .ia.ib[aria-label="Hafjell vattert jakke"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
@@ -38,11 +38,11 @@
 - `li:nth-child(4) > .ia.ib[aria-label="Hafjell vattert jakke"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `li:nth-child(1) > .ia.ib[aria-label="Hemsedal 2-lags ullsett"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `li:nth-child(2) > .ia.ib[aria-label="Hemsedal 2-lags ullsett"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `div:nth-child(9) > .i7.bl.bj > .i8.i9 > li:nth-child(3) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `a[aria-label="Voss 2-lags ullongs barn 1-7"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `a[aria-label="Skomvær skalljakke"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `li:nth-child(2) > .ia.ib[aria-label="Hemsedal 2-lags ullsett"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `li:nth-child(3) > .ia.ib[aria-label="Hemsedal 2-lags ullsett"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `div:nth-child(9) > .i7.bl.bj > .i8.i9 > li:nth-child(4) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `div:nth-child(9) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
