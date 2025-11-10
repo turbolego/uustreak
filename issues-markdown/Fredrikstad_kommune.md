@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fredrikstad kommune
 
-**Timestamp:** 2025-11-09T00:28:42.900Z
+**Timestamp:** 2025-11-10T11:29:03.395Z
 **URL:** [https://www.fredrikstad.kommune.no/#](https://www.fredrikstad.kommune.no/#)
 **Total Violations:** 4
 
@@ -36,13 +36,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 6
+- **Count:** 3
 
 #### Affected Elements:
 
-- `.font-semibold.text-xl`
-- `.wrapper > ul > li:nth-child(1) > .hover\:underline.text-black.no-underline`
-- `.wrapper > ul > li:nth-child(2) > .hover\:underline.text-black.no-underline`
 - `#q`
 - `.fk-searchbar-forside > .pt-4`
 - `div[x-show="step === 1"] > .text-gray-700.font-medium.text-xl`
@@ -57,12 +54,12 @@
 
 #### Affected Elements:
 
-- `a[href="/kalender?id=1692255"] > .p-4 > .list-none > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width="1em"][height="1em"]`
-- `a[href="/kalender?id=1692255"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6`
-- `a[href="/kalender?id=1692255"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6`
-- `a[href="/kalender?id=1688977"] > .p-4 > .list-none > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width="1em"][height="1em"]`
-- `a[href="/kalender?id=1688977"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6`
-- `a[href="/kalender?id=1688977"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6`
-- `a[href="/kalender?id=1703462"] > .p-4 > .list-none > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width="1em"][height="1em"]`
-- `a[href="/kalender?id=1703462"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6`
-- `a[href="/kalender?id=1703462"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6`
+- `a[href="/kalender?id=1690161"] > .p-4 > .list-none > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
+- `a[href="/kalender?id=1690161"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1690161"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1689799"] > .p-4 > .list-none > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
+- `a[href="/kalender?id=1689799"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1689799"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1703033"] > .p-4 > .list-none > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
+- `a[href="/kalender?id=1703033"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1703033"] > .p-4 > .list-none > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`

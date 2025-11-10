@@ -1,8 +1,8 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2025-11-09T00:25:23.065Z
+**Timestamp:** 2025-11-10T11:25:38.409Z
 **URL:** [https://www.nille.no/#](https://www.nille.no/#)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -78,25 +78,6 @@
 - `a[title="KREATIV Klistremerke Nisser"][aria-label=""]:nth-child(2) > h3`
 - `a[title="KREATIV Smykkeperler jul"][aria-label=""]:nth-child(2) > h3`
 
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 8
-
-#### Affected Elements:
-
-- `img[data-varify-if8e22513sh=""]`
-- `a[target="_self"]:nth-child(2) > img[width="93px"]`
-- `a[target="_self"]:nth-child(3) > img[width="93px"]`
-- `a[target="_self"]:nth-child(4) > img[width="93px"]`
-- `a[target="_self"]:nth-child(5) > img[width="93px"]`
-- `a[target="_self"]:nth-child(6) > img[width="93px"]`
-- `img[data-varify-59neko5fpr9=""]`
-- `a[target="_self"]:nth-child(8) > img[width="93px"]`
-
 ### Document should not have more than one banner landmark
 
 - **Impact:** moderate
@@ -127,7 +108,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 12
+- **Count:** 4
 
 #### Affected Elements:
 
@@ -135,14 +116,6 @@
 - `.swiper-slide-prev > a[title=""][aria-label=""]`
 - `a[href$="barnerom-og-leker/"]`
 - `div[data-swiper-slide-index="3"] > a[title=""][aria-label=""]`
-- `a[target="_self"]:nth-child(1)`
-- `a[target="_self"]:nth-child(2)`
-- `a[target="_self"]:nth-child(3)`
-- `a[target="_self"]:nth-child(4)`
-- `a[target="_self"]:nth-child(5)`
-- `a[target="_self"]:nth-child(6)`
-- `a[target="_self"]:nth-child(7)`
-- `a[target="_self"]:nth-child(8)`
 
 ### All page content should be contained by landmarks
 

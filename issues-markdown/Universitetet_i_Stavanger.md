@@ -1,22 +1,10 @@
 # WCAG Violations Report for Universitetet i Stavanger
 
-**Timestamp:** 2025-11-09T00:40:55.553Z
+**Timestamp:** 2025-11-10T11:37:53.848Z
 **URL:** [https://www.uis.no/nb](https://www.uis.no/nb)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
-
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `img[alt="Bli student ved UiS"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

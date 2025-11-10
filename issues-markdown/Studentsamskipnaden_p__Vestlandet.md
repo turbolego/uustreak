@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2025-11-09T00:33:05.908Z
+**Timestamp:** 2025-11-10T11:29:19.735Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 5
 
@@ -72,7 +72,7 @@
 #### Affected Elements:
 
 - `a[aria-label="Finn din studentbolig"] > .md\:items-start.flex-col.md\:flex-row > .md\:grow > .font-semibold`
-- `#carousel0 > .max-w-\[calc\(80vw\)\].md\:max-w-\[calc\(25\.4vw\)\].rounded-lg > .rounded-t-lg[target="_self"] > .px-3.pb-3.pt-1 > .py-2.text-gray-700`
+- `a[href$="alle-studenter"] > .px-3.pb-3.pt-1 > .py-2.text-gray-700`
 
 ### Interactive controls must not be nested
 
@@ -101,7 +101,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 31
+- **Count:** 28
 
 #### Affected Elements:
 
@@ -113,14 +113,11 @@
 - `.h-full.md\:w-\[50\%\].w-full`
 - `.mb-1`
 - `#carousel0`
-- `a[href$="julegøy-haugesund"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > .text-superTitle.leading-tight.md\:leading-snug`
+- `#carousel1`
+- `.text-superTitle`
 - `a[href$="julegøy-haugesund"] > .px-3.pb-3.pt-1`
-- `img[alt="Klær i forskjellige farger "]`
-- `#carousel2 > .max-w-\[calc\(80vw\)\].md\:max-w-\[calc\(25\.4vw\)\].rounded-lg > .rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > .text-superTitle.leading-tight.md\:leading-snug`
-- `#carousel2 > .max-w-\[calc\(80vw\)\].md\:max-w-\[calc\(25\.4vw\)\].rounded-lg > .rounded-t-lg[target="_self"] > .px-3.pb-3.pt-1`
 - `#carousel3`
 - `#carousel4`
-- `#carousel5`
 - `div:nth-child(1) > .\!font-bold.pb-4`
 - `.gap-3[href$="bolig"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
 - `.gap-3[href$="studentliv"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`

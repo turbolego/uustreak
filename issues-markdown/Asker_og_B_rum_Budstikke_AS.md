@@ -1,22 +1,10 @@
 # WCAG Violations Report for Asker og Bærum Budstikke AS
 
-**Timestamp:** 2025-11-09T00:28:07.890Z
+**Timestamp:** 2025-11-10T11:28:39.830Z
 **URL:** [https://www.budstikka.no/#](https://www.budstikka.no/#)
-**Total Violations:** 6
+**Total Violations:** 4
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#eaframe, #container_9723311 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
@@ -41,19 +29,6 @@
 #### Affected Elements:
 
 - `brick-carousel-v2[data-slides="14"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
-
-### Links must be distinguishable without relying on color
-
-- **Impact:** serious
-- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
-- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `#sp_message_iframe_1393022, #no-hover`
-- `#sp_message_iframe_1393022, a[data-choice="1759496911768"]`
 
 ### Elements marked as presentational should be consistently ignored
 
