@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sbanken ASA
 
-**Timestamp:** 2025-11-10T11:36:25.281Z
+**Timestamp:** 2025-11-11T00:35:04.342Z
 **URL:** [https://sbanken.no/](https://sbanken.no/)
 **Total Violations:** 1
 

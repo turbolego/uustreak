@@ -1,8 +1,8 @@
 # WCAG Violations Report for The Thief Hotel AS
 
-**Timestamp:** 2025-11-10T11:32:31.135Z
+**Timestamp:** 2025-11-11T00:31:13.809Z
 **URL:** [https://thethief.com/](https://thethief.com/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -18,6 +18,18 @@
 
 - `#container > .block-container__inner.container-fluid.block-block__inner > .gallery__controls > .gallery__controls__next[aria-title="Next"][role="button"]`
 - `#container-6 > .block-container__inner.container-fluid.block-block__inner > .gallery__controls > .gallery__controls__next[aria-title="Next"][role="button"]`
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.strawberry-chat-widget__toggle`
 
 ### Form elements must have labels
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for KildeGruppen AS
 
-**Timestamp:** 2025-11-10T11:36:58.945Z
+**Timestamp:** 2025-11-11T00:41:46.279Z
 **URL:** [https://www.kilde.no/#](https://www.kilde.no/#)
 **Total Violations:** 1
 

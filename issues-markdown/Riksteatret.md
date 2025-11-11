@@ -1,6 +1,6 @@
 # WCAG Violations Report for Riksteatret
 
-**Timestamp:** 2025-11-10T11:34:21.247Z
+**Timestamp:** 2025-11-11T00:33:04.979Z
 **URL:** [https://www.riksteatret.no/#](https://www.riksteatret.no/#)
 **Total Violations:** 2
 

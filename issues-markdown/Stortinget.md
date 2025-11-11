@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stortinget
 
-**Timestamp:** 2025-11-10T11:28:22.408Z
+**Timestamp:** 2025-11-11T00:27:10.309Z
 **URL:** [https://www.stortinget.no/#](https://www.stortinget.no/#)
 **Total Violations:** 1
 

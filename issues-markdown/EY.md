@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2025-11-10T11:42:01.483Z
+**Timestamp:** 2025-11-11T00:40:11.556Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 4
 

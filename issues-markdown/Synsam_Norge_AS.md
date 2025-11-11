@@ -1,6 +1,6 @@
 # WCAG Violations Report for Synsam Norge AS
 
-**Timestamp:** 2025-11-10T11:30:20.507Z
+**Timestamp:** 2025-11-11T00:29:06.177Z
 **URL:** [https://www.synsam.no/#](https://www.synsam.no/#)
 **Total Violations:** 1
 

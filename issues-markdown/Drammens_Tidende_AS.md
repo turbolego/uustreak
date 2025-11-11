@@ -1,6 +1,6 @@
 # WCAG Violations Report for Drammens Tidende AS
 
-**Timestamp:** 2025-11-10T11:41:22.388Z
+**Timestamp:** 2025-11-11T00:39:34.122Z
 **URL:** [https://www.dt.no/#](https://www.dt.no/#)
 **Total Violations:** 4
 

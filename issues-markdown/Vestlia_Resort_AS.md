@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2025-11-10T11:40:06.781Z
+**Timestamp:** 2025-11-11T00:38:13.882Z
 **URL:** [https://vestlia.no/#](https://vestlia.no/#)
 **Total Violations:** 5
 

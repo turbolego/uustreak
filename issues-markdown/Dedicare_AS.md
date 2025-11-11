@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dedicare AS
 
-**Timestamp:** 2025-11-10T11:39:04.557Z
+**Timestamp:** 2025-11-11T00:37:25.269Z
 **URL:** [https://www.dedicare.no/#](https://www.dedicare.no/#)
 **Total Violations:** 10
 

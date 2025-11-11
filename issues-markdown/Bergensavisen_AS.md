@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2025-11-10T11:31:57.927Z
+**Timestamp:** 2025-11-11T00:30:39.444Z
 **URL:** [https://www.ba.no/#](https://www.ba.no/#)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#eaframe, #container_9732932 > .info > .info-wrapper > .ctaLink`
+- `#eaframe, #container_9732751 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
@@ -29,18 +29,6 @@
 #### Affected Elements:
 
 - `#eaframe`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `brick-carousel-v2[data-slides="4"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 

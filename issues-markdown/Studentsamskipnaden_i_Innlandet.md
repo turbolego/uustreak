@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden i Innlandet
 
-**Timestamp:** 2025-11-10T11:29:05.051Z
+**Timestamp:** 2025-11-11T00:27:52.518Z
 **URL:** [https://www.sinn.no/#](https://www.sinn.no/#)
 **Total Violations:** 4
 

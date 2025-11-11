@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sandefjord videregående skole
 
-**Timestamp:** 2025-11-10T11:35:42.219Z
+**Timestamp:** 2025-11-11T00:34:25.953Z
 **URL:** [https://www.vestfoldfylke.no/no/skoler/sandefjord-vgs/#](https://www.vestfoldfylke.no/no/skoler/sandefjord-vgs/#)
 **Total Violations:** 1
 

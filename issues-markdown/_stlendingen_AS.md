@@ -1,22 +1,23 @@
 # WCAG Violations Report for Østlendingen AS
 
-**Timestamp:** 2025-11-10T11:42:30.092Z
+**Timestamp:** 2025-11-11T00:40:22.442Z
 **URL:** [https://www.ostlendingen.no/#](https://www.ostlendingen.no/#)
 **Total Violations:** 3
 
 ## Violation Details
 
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+### Links must be distinguishable without relying on color
 
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Impact:** serious
+- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
+- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="14"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `#sp_message_iframe_1393019, #no-hover`
+- `#sp_message_iframe_1393019, a[data-choice="1759496911768"]`
 
 ### Elements marked as presentational should be consistently ignored
 

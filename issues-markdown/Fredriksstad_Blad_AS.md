@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2025-11-10T11:28:51.001Z
+**Timestamp:** 2025-11-11T00:34:02.104Z
 **URL:** [https://www.f-b.no/#](https://www.f-b.no/#)
 **Total Violations:** 4
 
