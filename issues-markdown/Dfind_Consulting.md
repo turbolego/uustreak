@@ -1,7 +1,7 @@
 # WCAG Violations Report for Dfind Consulting
 
-**Timestamp:** 2025-11-12T00:44:19.827Z
-**URL:** [https://www.dfindconsulting.no/#](https://www.dfindconsulting.no/#)
+**Timestamp:** 2025-11-16T00:49:18.993Z
+**URL:** [https://www.dfindconsulting.no/](https://www.dfindconsulting.no/)
 **Total Violations:** 2
 
 ## Violation Details

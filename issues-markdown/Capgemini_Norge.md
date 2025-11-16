@@ -1,8 +1,8 @@
 # WCAG Violations Report for Capgemini Norge
 
-**Timestamp:** 2025-11-12T00:39:32.878Z
-**URL:** [https://www.capgemini.com/no-no/#](https://www.capgemini.com/no-no/#)
-**Total Violations:** 7
+**Timestamp:** 2025-11-16T00:42:35.534Z
+**URL:** [https://www.capgemini.com/no-no/](https://www.capgemini.com/no-no/)
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -12,6 +12,18 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#darkModeLabel`
+
+### Required ARIA attributes must be provided
+
+- **Impact:** critical
+- **Description:** Ensure elements with ARIA roles have all required ARIA attributes
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-required-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 1
 
 #### Affected Elements:

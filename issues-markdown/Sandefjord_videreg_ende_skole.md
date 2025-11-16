@@ -1,7 +1,7 @@
 # WCAG Violations Report for Sandefjord videregående skole
 
-**Timestamp:** 2025-11-12T00:39:56.341Z
-**URL:** [https://www.vestfoldfylke.no/no/skoler/sandefjord-vgs/#](https://www.vestfoldfylke.no/no/skoler/sandefjord-vgs/#)
+**Timestamp:** 2025-11-16T00:43:14.561Z
+**URL:** [https://www.vestfoldfylke.no/no/skoler/sandefjord-vgs/](https://www.vestfoldfylke.no/no/skoler/sandefjord-vgs/)
 **Total Violations:** 1
 
 ## Violation Details
@@ -16,6 +16,6 @@
 
 #### Affected Elements:
 
+- `iframe[title="powr social feed"], div[data-approved-index="0"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg`
 - `iframe[title="powr social feed"], div[data-approved-index="1"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg`
 - `iframe[title="powr social feed"], div[data-approved-index="2"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg`
-- `iframe[title="powr social feed"], div[data-approved-index="3"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg`

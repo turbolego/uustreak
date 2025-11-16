@@ -1,7 +1,7 @@
-# WCAG Violations Report for Orkla Sparebank
+# WCAG Violations Report for Handelsbanken
 
-**Timestamp:** 2025-11-16T00:38:26.836Z
-**URL:** [https://www.orklasparebank.no/](https://www.orklasparebank.no/)
+**Timestamp:** 2025-11-16T00:59:50.243Z
+**URL:** [https://www.handelsbanken.no/no/](https://www.handelsbanken.no/no/)
 **Total Violations:** 1
 
 ## Violation Details
@@ -12,11 +12,8 @@
 - **Description:** Ensure [role="img"] elements have alternative text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/role-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 4
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.icon--pil-dropdown-ned-24`
-- `.icon--linkedin-24`
-- `.icon--facebook-24`
-- `.icon--youtube-24`
+- `span[aria-labelledby="sr-hdsIcon885876599"]`

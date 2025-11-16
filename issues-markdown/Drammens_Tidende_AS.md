@@ -1,8 +1,8 @@
 # WCAG Violations Report for Drammens Tidende AS
 
-**Timestamp:** 2025-11-12T00:45:23.736Z
-**URL:** [https://www.dt.no/#](https://www.dt.no/#)
-**Total Violations:** 4
+**Timestamp:** 2025-11-16T00:50:29.015Z
+**URL:** [https://www.dt.no/](https://www.dt.no/)
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -12,11 +12,25 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.dt\.no\/toppbanner_0, #eaframe`
 - `#eaframe`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.dt\.no\/toppbanner_0, #eaframe, img[data-tag="shoutimage"]`
+- `#google_ads_iframe_\/56257416\/www\.dt\.no\/toppbanner_0, #eaframe, img[data-tag="logo"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -28,7 +42,22 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-version="compact"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `brick-carousel-v2[data-slides="6"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 4
+
+#### Affected Elements:
+
+- `html`
+- `#google_ads_iframe_\/56257416\/www\.dt\.no\/toppbanner_0, html`
+- `#google_ads_iframe_\/56257416\/www\.dt\.no\/toppbanner_0, #eaframe, html`
+- `#eaframe, html`
 
 ### Elements marked as presentational should be consistently ignored
 
