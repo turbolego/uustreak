@@ -1,7 +1,7 @@
 # WCAG Violations Report for Top Temp AS
 
-**Timestamp:** 2025-11-16T00:57:47.278Z
-**URL:** [https://www.toptemp.no/](https://www.toptemp.no/)
+**Timestamp:** 2025-11-19T02:18:46.118Z
+**URL:** [https://www.toptemp.no/#](https://www.toptemp.no/#)
 **Total Violations:** 6
 
 ## Violation Details
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `#top`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -52,7 +52,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `#top`
 
 ### Links must have discernible text
 

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Dedicare AS
 
-**Timestamp:** 2025-11-16T00:48:08.785Z
-**URL:** [https://www.dedicare.no/](https://www.dedicare.no/)
+**Timestamp:** 2025-11-19T02:14:41.228Z
+**URL:** [https://www.dedicare.no/#](https://www.dedicare.no/#)
 **Total Violations:** 10
 
 ## Violation Details
@@ -77,7 +77,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `.main-header`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -89,7 +89,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `.main-header`
 
 ### Links must have discernible text
 

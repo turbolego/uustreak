@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lyse Elnett AS
 
-**Timestamp:** 2025-11-16T01:10:10.682Z
+**Timestamp:** 2025-11-19T02:25:48.634Z
 **URL:** [https://www.l-nett.no/](https://www.l-nett.no/)
 **Total Violations:** 6
 
@@ -53,7 +53,7 @@
 
 #### Affected Elements:
 
-- `#searchBar_element_9954e7f2_2`
+- `#searchBar_element_385201f9_2`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -73,11 +73,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 18
+- **Count:** 17
 
 #### Affected Elements:
 
-- `#content-link`
 - `.col-5`
 - `.search-icon`
 - `.megamenu-icon`
@@ -88,10 +87,10 @@
 - `.tile-content > h3`
 - `#ctwebform-elementgroup-group-274`
 - `#ctwebform-elementgroup-group-275`
-- `#UYXROVSIWTLINL`
+- `#DYLHKUWIIQLLYAONRJGIDNJ`
 - `.ctwebform-element-type-captcha > div > div`
 - `.ctwebform-element-type-htmlcontent`
 - `.pt-0`
 - `#placeholder-bottom > .container > .row > .searchinput.container-md.tile-common > .tile-content > h1`
-- `#searchBar_element_9954e7f2_2`
+- `#searchBar_element_385201f9_2`
 - `.privacy-link > a[target="_self"]`

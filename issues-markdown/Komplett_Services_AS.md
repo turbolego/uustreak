@@ -1,8 +1,8 @@
 # WCAG Violations Report for Komplett Services AS
 
-**Timestamp:** 2025-11-16T01:06:29.187Z
-**URL:** [https://www.komplett.no/](https://www.komplett.no/)
-**Total Violations:** 7
+**Timestamp:** 2025-11-19T02:22:28.902Z
+**URL:** [https://www.komplett.no/#](https://www.komplett.no/#)
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `komplett-product-card-container,komplett-product-card:nth-child(1),komplett-h5,h5`
+- `komplett-product-card-container:nth-child(2),komplett-product-card:nth-child(1),komplett-h5,h5`
 
 ### Alternative text of images should not be repeated as text
 
@@ -35,46 +35,8 @@
 - `komplett-thumbnail-navigation,img[alt="TV & bilde"]`
 - `komplett-thumbnail-navigation,img[alt="Lyd"]`
 - `komplett-thumbnail-navigation,img[alt="Hjem & velvære"]`
-- `komplett-thumbnail-navigation,img[alt="Hvitevarer"]`
 - `komplett-thumbnail-navigation,img[alt="Hage, lys & sesong"]`
-
-### Form elements should have a visible label
-
-- **Impact:** serious
-- **Description:** Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/label-title-only?application=playwright
-- **Tags:** cat.forms, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `#cookie_cat_functional`
-- `#cookie_cat_statistic`
-- `#cookie_cat_marketing`
-
-### Document should not have more than one banner landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the document has at most one banner landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#coiOverlay`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#coiOverlay`
+- `komplett-thumbnail-navigation,img[alt="Hvitevarer"]`
 
 ### All page content should be contained by landmarks
 
@@ -97,25 +59,33 @@
 - **Description:** Ensure [role="img"] elements have alternative text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/role-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 18
+- **Count:** 26
 
 #### Affected Elements:
 
-- `komplett-product-card-container,komplett-product-card:nth-child(1),komplett-product-card-rating[reviewcount="9"],komplett-review-rating-stars[score="4.5556"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(2),komplett-product-card-rating[reviewcount="8"],komplett-review-rating-stars[score="5"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(3),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(4),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(5),komplett-product-card-rating[reviewcount="338"],komplett-review-rating-stars[score="4.4349"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(6),komplett-product-card-rating[reviewcount="102"],komplett-review-rating-stars[score="4.2353"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(7),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(8),komplett-product-card-rating[reviewcount="203"],komplett-review-rating-stars[score="4.8621"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(9),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(10),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(11),komplett-product-card-rating[reviewcount="591"],komplett-review-rating-stars[score="4.8528"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(12),komplett-product-card-rating[reviewcount="73"],komplett-review-rating-stars[score="3.9589"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(13),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(14),komplett-product-card-rating[reviewcount="2"],komplett-review-rating-stars[score="3.5"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(15),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(16),komplett-product-card-rating[reviewcount="27"],komplett-review-rating-stars[score="4.963"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(17),komplett-product-card-rating[reviewcount="85"],komplett-review-rating-stars[score="4.4588"]`
-- `komplett-product-card-container,komplett-product-card:nth-child(18),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `komplett-product-card-container:nth-child(2),komplett-product-card:nth-child(1),komplett-product-card-rating[score="4.8889"][reviewcount="9"],komplett-review-rating-stars[score="4.8889"]`
+- `komplett-product-card-container:nth-child(2),komplett-product-card:nth-child(2),komplett-product-card-rating[reviewcount="8"],komplett-review-rating-stars[score="5"]`
+- `komplett-product-card-container:nth-child(2),komplett-product-card:nth-child(3),komplett-product-card-rating[reviewcount="129"],komplett-review-rating-stars[score="4.8682"]`
+- `komplett-product-card-container:nth-child(2),komplett-product-card:nth-child(4),komplett-product-card-rating[score="4.0274"][reviewcount="73"],komplett-review-rating-stars[score="4.0274"]`
+- `komplett-product-card-container:nth-child(2),komplett-product-card:nth-child(5),komplett-product-card-rating[reviewcount="213"],komplett-review-rating-stars[score="4.3005"]`
+- `komplett-product-card-container:nth-child(2),komplett-product-card:nth-child(6),komplett-product-card-rating[reviewcount="20821"],komplett-review-rating-stars[score="4.906"]`
+- `komplett-product-card-container:nth-child(2),komplett-product-card:nth-child(7),komplett-product-card-rating[score="4.5556"][reviewcount="9"],komplett-review-rating-stars[score="4.5556"]`
+- `komplett-product-card-container:nth-child(2),komplett-product-card:nth-child(8),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `komplett-product-card-container:nth-child(2),komplett-product-card:nth-child(9),komplett-product-card-rating[reviewcount="203"],komplett-review-rating-stars[score="4.8621"]`
+- `komplett-product-card-container:nth-child(2),komplett-product-card:nth-child(10),komplett-product-card-rating[reviewcount="6"],komplett-review-rating-stars[score="3.8333"]`
+- `komplett-product-card-container:nth-child(2),komplett-product-card:nth-child(11),komplett-product-card-rating[reviewcount="102"],komplett-review-rating-stars[score="4.2353"]`
+- `komplett-product-card-container:nth-child(2),komplett-product-card:nth-child(12),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `komplett-product-card-container:nth-child(2),komplett-product-card:nth-child(13),komplett-product-card-rating[reviewcount="33"],komplett-review-rating-stars[score="4.4242"]`
+- `komplett-product-card-container:nth-child(3),komplett-product-card:nth-child(1),komplett-product-card-rating[reviewcount="1"],komplett-review-rating-stars[score="5"]`
+- `komplett-product-card-container:nth-child(3),komplett-product-card:nth-child(2),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `komplett-product-card-container:nth-child(3),komplett-product-card:nth-child(3),komplett-product-card-rating[reviewcount="338"],komplett-review-rating-stars[score="4.4349"]`
+- `komplett-product-card-container:nth-child(3),komplett-product-card:nth-child(4),komplett-product-card-rating[reviewcount="9901"],komplett-review-rating-stars[score="4.8401"]`
+- `komplett-product-card-container:nth-child(3),komplett-product-card:nth-child(5),komplett-product-card-rating[reviewcount="85"],komplett-review-rating-stars[score="4.4588"]`
+- `komplett-product-card-container:nth-child(3),komplett-product-card:nth-child(6),komplett-product-card-rating[score="3.9589"][reviewcount="73"],komplett-review-rating-stars[score="3.9589"]`
+- `komplett-product-card-container:nth-child(3),komplett-product-card:nth-child(7),komplett-product-card-rating[reviewcount="591"],komplett-review-rating-stars[score="4.8528"]`
+- `komplett-product-card-container:nth-child(3),komplett-product-card:nth-child(8),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `komplett-product-card-container:nth-child(3),komplett-product-card:nth-child(9),komplett-product-card-rating[reviewcount="2"],komplett-review-rating-stars[score="3.5"]`
+- `komplett-product-card-container:nth-child(3),komplett-product-card:nth-child(10),komplett-product-card-rating[reviewcount="29"],komplett-review-rating-stars[score="4.9655"]`
+- `komplett-product-card-container:nth-child(3),komplett-product-card:nth-child(11),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `komplett-product-card-container:nth-child(3),komplett-product-card:nth-child(12),komplett-product-card-rating[reviewcount="51"],komplett-review-rating-stars[score="4.7451"]`
+- `komplett-product-card-container:nth-child(3),komplett-product-card:nth-child(13),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`

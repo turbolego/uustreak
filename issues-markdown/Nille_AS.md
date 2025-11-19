@@ -1,7 +1,7 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2025-11-16T00:32:47.716Z
-**URL:** [https://www.nille.no/](https://www.nille.no/)
+**Timestamp:** 2025-11-19T02:09:53.093Z
+**URL:** [https://www.nille.no/#](https://www.nille.no/#)
 **Total Violations:** 7
 
 ## Violation Details
@@ -74,7 +74,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `header`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -86,7 +86,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `header`
 
 ### Links must have discernible text
 

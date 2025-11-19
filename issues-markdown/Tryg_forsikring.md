@@ -1,8 +1,8 @@
 # WCAG Violations Report for Tryg forsikring
 
-**Timestamp:** 2025-11-16T00:59:22.477Z
-**URL:** [https://www.tryg.no/](https://www.tryg.no/)
-**Total Violations:** 9
+**Timestamp:** 2025-11-19T02:20:26.743Z
+**URL:** [https://www.tryg.no/#](https://www.tryg.no/#)
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -52,7 +52,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `#header`
 
 ### Document should not have more than one main landmark
 
@@ -64,7 +64,7 @@
 
 #### Affected Elements:
 
-- `#coi-banner-wrapper_label`
+- `#main`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -76,9 +76,9 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
-- `#coi-banner-wrapper_label`
+- `#header`
 - `.privat-meny-desktop`
+- `#main`
 
 ### Links must have discernible text
 
@@ -91,18 +91,6 @@
 #### Affected Elements:
 
 - `.t-image-section__columns:nth-child(5) > .t-image-section__columns__column:nth-child(1) > .t-mt-20 > .t-image-section__btn[data-target="#para_infopopup1"][data-toggle="modal"]`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.skip-link`
 
 ### [role="img"] elements must have alternative text
 

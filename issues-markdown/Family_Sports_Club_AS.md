@@ -1,8 +1,8 @@
 # WCAG Violations Report for Family Sports Club AS
 
-**Timestamp:** 2025-11-16T00:54:10.841Z
+**Timestamp:** 2025-11-19T02:11:04.085Z
 **URL:** [https://sporty.no/](https://sporty.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -42,15 +42,3 @@
 #### Affected Elements:
 
 - `.additional-nav`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.skip`

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Tekna - Teknisk- naturvitenskapelig forening
 
-**Timestamp:** 2025-11-16T00:55:12.821Z
-**URL:** [https://www.tekna.no/](https://www.tekna.no/)
+**Timestamp:** 2025-11-19T02:16:21.369Z
+**URL:** [https://www.tekna.no/#](https://www.tekna.no/#)
 **Total Violations:** 5
 
 ## Violation Details
@@ -41,7 +41,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `header`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -53,7 +53,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `header`
 
 ### All page content should be contained by landmarks
 
@@ -65,10 +65,10 @@
 
 #### Affected Elements:
 
-- `div:nth-child(14)`
+- `div:nth-child(13)`
 - `.heroblock`
 - `.arrow-link-list-underline`
-- `.block:nth-child(4)`
+- `.block:nth-child(3)`
 - `.yellow-promotion-block > .promotion-body`
 - `.col-lg-8`
 - `.text-image-block__header.d-lg-block.d-none`

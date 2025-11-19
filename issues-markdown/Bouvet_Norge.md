@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bouvet Norge
 
-**Timestamp:** 2025-11-16T00:41:17.607Z
-**URL:** [https://www.bouvet.no/](https://www.bouvet.no/)
+**Timestamp:** 2025-11-19T02:09:45.965Z
+**URL:** [https://www.bouvet.no/#](https://www.bouvet.no/#)
 **Total Violations:** 6
 
 ## Violation Details
@@ -61,12 +61,13 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `.main-header-small-item.main-header-link:nth-child(8) > a[href$="www.bouvet.se"]`
 - `.main-header-small-item.main-header-link:nth-child(9) > a[href$="en.bouvet.no"]`
+- `span > a[href="/"]`
 
 ### All page content should be contained by landmarks
 
@@ -74,7 +75,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 36
+- **Count:** 40
 
 #### Affected Elements:
 
@@ -87,7 +88,7 @@
 - `.main-header-small-item.main-header-link:nth-child(5)`
 - `.main-header-small-item.main-header-link:nth-child(6)`
 - `.main-header-small-item.main-header-link:nth-child(7)`
-- `.layout-container[data-portal-component-type="layout"]:nth-child(1)`
+- `#main-container > .part-container[data-portal-component-type="part"]:nth-child(1)`
 - `section`
 - `.section-bottom-space.container-flex-justify-center.util-flex-row`
 - `.part-container[data-portal-component-type="part"]:nth-child(4) > .util-flex-column-large.util-flex-row-small.collapsible__button`
@@ -101,6 +102,10 @@
 - `time[datetime="2025-12-04"]`
 - `div[role="grid"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
 - `.course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
+- `div[role="grid"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-name`
+- `time[datetime="2025-12-09"]`
+- `div[role="grid"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
+- `.course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
 - `.layout-container__no-gap`
 - `.part-container[data-portal-component-type="part"]:nth-child(8)`
 - `.related-courses-inner.creme-light > .h3-styling`
@@ -110,7 +115,7 @@
 - `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-date`
 - `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-name`
 - `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-date`
-- `.course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-name`
-- `.course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-date`
+- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-name`
+- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-date`
 - `.layout-container[data-portal-component-type="layout"]:nth-child(10)`
 - `#widget2, #player`

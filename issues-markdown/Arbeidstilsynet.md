@@ -1,8 +1,8 @@
 # WCAG Violations Report for Arbeidstilsynet
 
-**Timestamp:** 2025-11-16T00:34:34.202Z
-**URL:** [https://www.arbeidstilsynet.no/](https://www.arbeidstilsynet.no/)
-**Total Violations:** 4
+**Timestamp:** 2025-11-19T02:02:57.510Z
+**URL:** [https://www.arbeidstilsynet.no/#](https://www.arbeidstilsynet.no/#)
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `#top`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -40,16 +40,4 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.skiplink`
+- `#top`

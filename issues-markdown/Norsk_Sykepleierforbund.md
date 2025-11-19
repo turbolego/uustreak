@@ -1,7 +1,7 @@
 # WCAG Violations Report for Norsk Sykepleierforbund
 
-**Timestamp:** 2025-11-16T00:37:02.015Z
-**URL:** [https://www.nsf.no/](https://www.nsf.no/)
+**Timestamp:** 2025-11-19T02:13:51.681Z
+**URL:** [https://www.nsf.no/#](https://www.nsf.no/#)
 **Total Violations:** 1
 
 ## Violation Details

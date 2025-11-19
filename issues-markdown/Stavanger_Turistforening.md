@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2025-11-16T00:48:12.251Z
-**URL:** [https://www.dnt.no/stavanger](https://www.dnt.no/stavanger)
+**Timestamp:** 2025-11-19T02:09:50.858Z
+**URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
 **Total Violations:** 10
 
 ## Violation Details
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-502377"]`
-- `button[aria-controls="modal-506922"]`
-- `button[aria-controls="modal-563903"]`
-- `button[aria-controls="modal-566853"]`
-- `button[aria-controls="modal-552924"]`
-- `button[aria-controls="modal-506818"]`
-- `button[aria-controls="modal-514776"]`
-- `button[aria-controls="modal-561543"]`
+- `button[aria-controls="modal-504729"]`
+- `button[aria-controls="modal-574658"]`
+- `button[aria-controls="modal-561517"]`
+- `button[aria-controls="modal-562494"]`
+- `button[aria-controls="modal-561461"]`
+- `button[aria-controls="modal-497800"]`
+- `button[aria-controls="modal-502376"]`
+- `button[aria-controls="modal-506918"]`
 
 ### Buttons must have discernible text
 
@@ -88,11 +88,10 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 12
+- **Count:** 11
 
 #### Affected Elements:
 
-- `.w-auto > picture > .object-center.object-cover`
 - `.bg-beige-50 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `div:nth-child(2) > .bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `.object-center[height="264"][width="600"]`
@@ -115,7 +114,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `header`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -127,7 +126,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `header`
 
 ### Links must have discernible text
 
@@ -154,10 +153,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.fixed`
 - `.w-auto`
 - `.text-\[17px\]`

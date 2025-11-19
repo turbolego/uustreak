@@ -1,7 +1,7 @@
 # WCAG Violations Report for Lillestrøm kommune
 
-**Timestamp:** 2025-11-16T01:09:41.020Z
-**URL:** [https://www.lillestrom.kommune.no/](https://www.lillestrom.kommune.no/)
+**Timestamp:** 2025-11-19T02:25:21.396Z
+**URL:** [https://www.lillestrom.kommune.no/#](https://www.lillestrom.kommune.no/#)
 **Total Violations:** 2
 
 ## Violation Details
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `header`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -28,4 +28,4 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `header`

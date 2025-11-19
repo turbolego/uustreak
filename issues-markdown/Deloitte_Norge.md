@@ -1,8 +1,8 @@
 # WCAG Violations Report for Deloitte Norge
 
-**Timestamp:** 2025-11-16T00:48:33.389Z
+**Timestamp:** 2025-11-19T02:15:03.198Z
 **URL:** [https://www.deloitte.com/no/no.html](https://www.deloitte.com/no/no.html)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -36,6 +36,20 @@
 #### Affected Elements:
 
 - `h5`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 3
+
+#### Affected Elements:
+
+- `#dynamicmedia_27960546_resp`
+- `#dynamicmedia_97625921_resp`
+- `#dynamicmedia_32211552_resp`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 

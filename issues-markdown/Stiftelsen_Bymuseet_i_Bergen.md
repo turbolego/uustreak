@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2025-11-16T00:49:26.335Z
-**URL:** [https://bymuseet.no/](https://bymuseet.no/)
+**Timestamp:** 2025-11-19T02:10:59.765Z
+**URL:** [https://bymuseet.no/#](https://bymuseet.no/#)
 **Total Violations:** 7
 
 ## Violation Details
@@ -12,7 +12,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 23
+- **Count:** 26
 
 #### Affected Elements:
 
@@ -31,7 +31,8 @@
 - `.event.load-more__item.col-lg-3:nth-child(6) > .event-cover > .event-date`
 - `.event.load-more__item.col-lg-3:nth-child(7) > .event-cover > .location > span`
 - `.event.load-more__item.col-lg-3:nth-child(7) > .event-cover > .event-date`
-- `.event.load-more__item.col-lg-3:nth-child(8) > .event-cover > .location > span`
+- `.event.load-more__item.col-lg-3:nth-child(8) > .event-cover > .location > span:nth-child(1)`
+- `.location > span:nth-child(2)`
 - `.event.load-more__item.col-lg-3:nth-child(8) > .event-cover > .event-date`
 - `#load-mer`
 - `a[target="_blank"] > .block > .description`
@@ -39,6 +40,8 @@
 - `a[href$="arskort/"] > .block > .description`
 - `a[href$="arskort/"] > .block > .btn`
 - `#mc-embedded-subscribe`
+- `a[href$="kodeks.no"]`
+- `a[href$="kodeks.no/"]`
 
 ### Frames must have an accessible name
 
@@ -142,10 +145,10 @@
 - `.col-lg-2.museum.col-sm-6:nth-child(9) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title`
 - `.col-lg-2.museum.col-sm-6:nth-child(10) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title`
 - `.dashed-border > .section-title`
-- `.filter:nth-child(1) > div[data-rocket-lazy-bg-c24b57ee-c34e-4a43-b8f2-efd787057334="excluded"][data-rocket-lazy-bg-ba74b026-171a-4f5d-a90e-8e87808206da="excluded"][data-rocket-lazy-bg-ce8ae504-af7c-4142-8f04-3e0e6e33708f="loaded"]`
-- `.filter:nth-child(2) > div[data-rocket-lazy-bg-c24b57ee-c34e-4a43-b8f2-efd787057334="excluded"][data-rocket-lazy-bg-ba74b026-171a-4f5d-a90e-8e87808206da="excluded"][data-rocket-lazy-bg-ce8ae504-af7c-4142-8f04-3e0e6e33708f="loaded"]`
-- `.filter:nth-child(3) > div[data-rocket-lazy-bg-c24b57ee-c34e-4a43-b8f2-efd787057334="excluded"][data-rocket-lazy-bg-ba74b026-171a-4f5d-a90e-8e87808206da="excluded"][data-rocket-lazy-bg-ce8ae504-af7c-4142-8f04-3e0e6e33708f="loaded"]`
-- `.when-filter > div[data-rocket-lazy-bg-c24b57ee-c34e-4a43-b8f2-efd787057334="excluded"][data-rocket-lazy-bg-ba74b026-171a-4f5d-a90e-8e87808206da="excluded"][data-rocket-lazy-bg-ce8ae504-af7c-4142-8f04-3e0e6e33708f="loaded"]`
+- `.filter:nth-child(1) > div[data-rocket-lazy-bg-94b4518c-495d-4285-94a7-1fe9a9e9eba4="excluded"][data-rocket-lazy-bg-de888285-3e3d-4a72-baab-049625419deb="excluded"][data-rocket-lazy-bg-d9bc7e43-c4da-4c32-888c-85086f69a412="loaded"]`
+- `.filter:nth-child(2) > div[data-rocket-lazy-bg-94b4518c-495d-4285-94a7-1fe9a9e9eba4="excluded"][data-rocket-lazy-bg-de888285-3e3d-4a72-baab-049625419deb="excluded"][data-rocket-lazy-bg-d9bc7e43-c4da-4c32-888c-85086f69a412="loaded"]`
+- `.filter:nth-child(3) > div[data-rocket-lazy-bg-94b4518c-495d-4285-94a7-1fe9a9e9eba4="excluded"][data-rocket-lazy-bg-de888285-3e3d-4a72-baab-049625419deb="excluded"][data-rocket-lazy-bg-d9bc7e43-c4da-4c32-888c-85086f69a412="loaded"]`
+- `.when-filter > div[data-rocket-lazy-bg-94b4518c-495d-4285-94a7-1fe9a9e9eba4="excluded"][data-rocket-lazy-bg-de888285-3e3d-4a72-baab-049625419deb="excluded"][data-rocket-lazy-bg-d9bc7e43-c4da-4c32-888c-85086f69a412="loaded"]`
 - `.d-lg-block.btn-link[href$="event"]`
 - `.event.load-more__item.col-lg-3:nth-child(1)`
 - `.event.load-more__item.col-lg-3:nth-child(2)`

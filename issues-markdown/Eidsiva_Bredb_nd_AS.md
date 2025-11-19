@@ -1,7 +1,7 @@
 # WCAG Violations Report for Eidsiva Bredbånd AS
 
-**Timestamp:** 2025-11-16T00:51:22.020Z
-**URL:** [https://www.eidsiva.no/](https://www.eidsiva.no/)
+**Timestamp:** 2025-11-19T02:17:43.257Z
+**URL:** [https://www.eidsiva.no/#](https://www.eidsiva.no/#)
 **Total Violations:** 6
 
 ## Violation Details
@@ -42,7 +42,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `#react_0HNH2LRRU35F2`
 
 ### Document should not have more than one main landmark
 
@@ -66,7 +66,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `#react_0HNH2LRRU35F2`
 - `#main`
 
 ### Elements should not have tabindex greater than zero

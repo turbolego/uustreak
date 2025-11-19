@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kreftforeningen
 
-**Timestamp:** 2025-11-16T01:07:13.935Z
+**Timestamp:** 2025-11-19T02:23:08.274Z
 **URL:** [https://kreftforeningen.no/](https://kreftforeningen.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `#declineButton`
 - `img[alt="Logo kreftforeningen"][role="presentation"]`
+- `#declineButton`
 
 ### Document should not have more than one banner landmark
 
@@ -29,7 +29,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- `#masthead`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -41,16 +41,4 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.skip-link`
+- `#masthead`
