@@ -1,8 +1,8 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2025-11-19T02:17:31.806Z
+**Timestamp:** 2025-11-20T00:39:39.363Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -37,25 +37,13 @@
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="6"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.up-promotional-banner__content-description[data-analytics-text-click=""] > p:nth-child(2) > a`
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 104
+- **Count:** 93
 
 #### Affected Elements:
 
@@ -73,17 +61,6 @@
 - `#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-aac543142676`
 - `#image-render-d226705429 > .cmp-image__image[height="2560"][loading="lazy"]`
-- `#promotional-773723eddc97 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
-- `#promotional-773723eddc97 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
-- `#button-d1ff5b82636e`
-- `#promotional-380cc83d1759 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
-- `#promotional-380cc83d1759 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
-- `#button-48bc1e29e272`
-- `#promotional-380cc83d1759 > .up-promotional-banner__media`
-- `#promotional-bf10c6725c35 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
-- `#promotional-bf10c6725c35 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
-- `#button-71731207d860`
-- `#promotional-bf10c6725c35 > .up-promotional-banner__media`
 - `#promotional-283aef72eff8 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-283aef72eff8 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-1296c62e5384`

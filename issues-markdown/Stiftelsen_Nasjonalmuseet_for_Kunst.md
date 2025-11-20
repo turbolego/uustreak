@@ -1,10 +1,22 @@
 # WCAG Violations Report for Stiftelsen Nasjonalmuseet for Kunst
 
-**Timestamp:** 2025-11-19T02:12:41.081Z
+**Timestamp:** 2025-11-20T00:25:22.550Z
 **URL:** [https://www.nasjonalmuseet.no/#](https://www.nasjonalmuseet.no/#)
-**Total Violations:** 2
+**Total Violations:** 4
 
 ## Violation Details
+
+### ARIA role should be appropriate for the element
+
+- **Impact:** minor
+- **Description:** Ensure role attribute has an appropriate value for the element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#declineButton`
 
 ### Buttons must have discernible text
 
@@ -21,14 +33,27 @@
 - `div[title="Utvalgte arrangementer "] > section > .ulc-carousel__buttons > .ulc-carousel__button--prev.ulc-carousel__button`
 - `div[title="Utvalgte arrangementer "] > section > .ulc-carousel__buttons > .ulc-carousel__button--next.ulc-carousel__button`
 
+### Document should not have more than one banner landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has at most one banner landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `header`
+
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `header`
 - `div[title="Utstillinger"] > section`

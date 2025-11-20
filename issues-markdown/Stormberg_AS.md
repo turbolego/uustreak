@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2025-11-19T02:13:38.387Z
+**Timestamp:** 2025-11-20T00:26:18.022Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -17,30 +17,30 @@
 #### Affected Elements:
 
 - `.gt.dr.ds > div > div`
-- `.gv.am.an`
+- `.gv.am[href$="nyheter"]`
 - `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it`
 - `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(2) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it`
 - `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(2) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(3) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(3) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `li:nth-child(4) > .ia.ib[aria-label="Ute resirkulert vinterdress"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `li:nth-child(4) > .ia.ib[aria-label="Ute resirkulert vinterdress"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `li:nth-child(5) > .ia.ib[aria-label="Ute resirkulert vinterdress"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `li:nth-child(5) > .ia.ib[aria-label="Ute resirkulert vinterdress"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `a[aria-label="Ute resirkulert vinterdress"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `a[aria-label="Ute resirkulert vinterdress"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(4) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(4) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `a[aria-label="Rauland 2-lags ullongs"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `a[aria-label="Rauland 2-lags ullongs"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it`
 - `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(2) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(2) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `li:nth-child(2) > .ia.ib[aria-label="Hafjell vattert selebukse"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `li:nth-child(2) > .ia.ib[aria-label="Hafjell vattert selebukse"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `li:nth-child(3) > .ia.ib[aria-label="Hafjell vattert jakke"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
 - `li:nth-child(3) > .ia.ib[aria-label="Hafjell vattert jakke"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `a[aria-label="Hafjell vattert selebukse"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `a[aria-label="Hafjell vattert selebukse"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `li:nth-child(5) > .ia.ib[aria-label="Hafjell vattert jakke"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `li:nth-child(5) > .ia.ib[aria-label="Hafjell vattert jakke"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `li:nth-child(4) > .ia.ib[aria-label="Hafjell vattert jakke"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `li:nth-child(4) > .ia.ib[aria-label="Hafjell vattert jakke"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `li:nth-child(5) > .ia.ib[aria-label="Hafjell vattert selebukse"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `li:nth-child(5) > .ia.ib[aria-label="Hafjell vattert selebukse"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `li:nth-child(1) > .ia.ib[aria-label="Hemsedal 2-lags ullsett"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
+- `li:nth-child(2) > .ia.ib[aria-label="Hemsedal 2-lags ullsett"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
 - `a[aria-label="Isnes ullfôret vinterstøvel"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
-- `li:nth-child(3) > .ia.ib[aria-label="Hemsedal 2-lags ullsett"] > .if.bc.bd > .is.ik.y > .gq.iu.it`
 - `div:nth-child(8) > .i7.bl.bj > .i8.i9 > li:nth-child(4) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it`
 - `div:nth-child(8) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it`
 - `#onetrust-accept-btn-handler`

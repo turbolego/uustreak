@@ -1,8 +1,8 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2025-11-19T02:15:50.923Z
+**Timestamp:** 2025-11-20T00:37:30.580Z
 **URL:** [https://www.lydenavnorge.no/p4/](https://www.lydenavnorge.no/p4/)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -78,19 +78,6 @@
 - `.metadata[data-v-98ccaf4e=""] > .image-container[data-v-98ccaf4e=""] > img[data-v-98ccaf4e=""][loading="lazy"]`
 - `.metadata-image.show[data-v-a2b021d2=""] > img[data-v-a2b021d2=""]`
 
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 2
-
-#### Affected Elements:
-
-- `img[alt="P10 Country"]`
-- `img[alt="P12 Hitmix"]`
-
 ### Form elements must have labels
 
 - **Impact:** critical
@@ -122,15 +109,14 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 14
+- **Count:** 13
 
 #### Affected Elements:
 
 - `.image-container[data-v-f6602e5c=""] > a[data-v-f6602e5c=""]`
 - `.image-link[href$="fem-pa/"][data-v-d851a3f3=""]`
-- `.grid > .medium-large.contest-box.item:nth-child(1) > .image-link[data-v-cb753610=""]`
-- `.medium-large.contest-box.item:nth-child(2) > .image-link[data-v-cb753610=""]`
-- `.container[data-v-30b48782=""]:nth-child(4) > div > .medium-large.contest-box.item > .image-link[data-v-cb753610=""]`
+- `.contest-box.medium-large.item:nth-child(1) > .image-link[data-v-cb753610=""]`
+- `.contest-box.medium-large.item:nth-child(2) > .image-link[data-v-cb753610=""]`
 - `.content-box.medium-large[data-v-d857f115=""]:nth-child(1) > .image-link[data-v-d857f115=""]`
 - `.content-box.medium-large[data-v-d857f115=""]:nth-child(2) > .image-link[data-v-d857f115=""]`
 - `.large.section-box.item > .image-container[data-v-317123a9=""] > a[data-v-317123a9=""]`

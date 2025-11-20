@@ -1,8 +1,8 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2025-11-19T02:09:45.789Z
+**Timestamp:** 2025-11-20T00:22:24.955Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `#declineButton`
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#kindly-chat-api > div,.sc-koBvLg`
 
 ### Document should not have more than one banner landmark
 
@@ -48,11 +60,12 @@
 - **Description:** Ensure that lists are structured correctly
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/list?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `article[data-cms="dy-recommendation"] > div > ul`
+- `.module-spacing-l[data-cms="dy-recommendation"]:nth-child(7) > div > ul`
+- `.module-spacing-l[data-cms="dy-recommendation"]:nth-child(8) > div > ul`
 
 ### <li> elements must be contained in a <ul> or <ol>
 
@@ -74,8 +87,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
 - `.top-header`
+- `#kindly-chat-api > div,.sc-dNFkOE`

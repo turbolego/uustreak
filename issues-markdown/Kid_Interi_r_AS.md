@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-11-19T02:21:37.923Z
+**Timestamp:** 2025-11-20T00:34:35.546Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -65,7 +65,7 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 31
+- **Count:** 36
 
 #### Affected Elements:
 
@@ -81,6 +81,15 @@
 - `img[alt="Dyner"]`
 - `img[alt="Se alle produkter"]`
 - `img[alt="Loungewear og accesoarer"]`
+- `img[alt="Sofa"]`
+- `img[alt="Småbord og sofabord"]`
+- `img[alt="Gulvtepper"]`
+- `img[alt="Spisestoler"]`
+- `img[alt="Lenestoler"]`
+- `img[alt="Puffer, krakker og benker"]`
+- `img[alt="Hyller"]`
+- `img[alt="Spisebord"]`
+- `img[alt="Skap og skjenker"]`
 - `img[alt="Kalendergavetips"]`
 - `img[alt="Julegavetips"]`
 - `img[alt="Julesengetøy"]`
@@ -91,15 +100,11 @@
 - `img[alt="Julegaveinnpakning"]`
 - `img[alt="Julepynt"]`
 - `img[alt="Julestrømper"]`
-- `img[alt="Sofa"]`
-- `img[alt="Småbord og sofabord"]`
-- `img[alt="Gulvtepper"]`
-- `img[alt="Spisestoler"]`
-- `img[alt="Lenestoler"]`
-- `img[alt="Puffer, krakker og benker"]`
-- `img[alt="Hyller"]`
-- `img[alt="Spisebord"]`
-- `img[alt="Skap og skjenker"]`
+- `img[alt="Julegavetips til henne"]`
+- `img[alt="Gavetips under 100,-"]`
+- `img[alt="Gavetips under 200,-"]`
+- `img[alt="Gavetips under 500,-"]`
+- `img[alt="Gavetips som varmer"]`
 
 ### Links must have discernible text
 

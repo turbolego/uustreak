@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elvia AS
 
-**Timestamp:** 2025-11-19T02:09:57.369Z
+**Timestamp:** 2025-11-20T00:22:40.699Z
 **URL:** [https://www.elvia.no/#](https://www.elvia.no/#)
 **Total Violations:** 4
 
@@ -30,7 +30,7 @@
 
 #### Affected Elements:
 
-- `#react_0HNH2LRIV2EKG`
+- `#react_0HNH2LRIV90LL`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -42,7 +42,7 @@
 
 #### Affected Elements:
 
-- `#react_0HNH2LRIV2EKG`
+- `#react_0HNH2LRIV90LL`
 
 ### Elements should not have tabindex greater than zero
 
