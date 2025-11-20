@@ -60,7 +60,7 @@ jobs:
           rm -rf node_modules || echo "Cleaned node_modules"
           rm -rf .git/index.lock || echo "Cleaned git lock file"
 
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
           clean: false
@@ -278,7 +278,7 @@ jobs:
           mkdir -p playwright-report
 
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           clean: false
@@ -584,7 +584,7 @@ jobs:
     if: success() # Only run if wcag-test succeeded
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           
@@ -768,7 +768,7 @@ jobs:
           rm -rf .git/index.lock || echo "Cleaned git lock file"
 
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -803,13 +803,13 @@ jobs:
           git checkout -f main
 
       - name: Checkout main branch
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: main
           path: main-branch
 
       - name: Checkout gh-pages branch
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: gh-pages
           path: gh-pages-branch
