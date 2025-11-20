@@ -1,0 +1,119 @@
+{
+  "project": "Norefjell Ski & Spa AS",
+  "timestamp": "2025-11-20T00:33:21.440Z",
+  "url": "https://www.norefjell.com/#",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<span class=\"multiselect__single\">All overnatting</span>",
+          "target": [
+            "#accommodationCategoryWrapper > .multiselect.multiselect--disabled[role=\"combobox\"] > .multiselect__tags > .multiselect__single"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.19 (foreground color: #8c8c8c, background color: #f9f9f9, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button class=\"mhForm__button\" type=\"submit\" id=\"mi6p6ph7dsf5s27zbws-submit\">Send</button>",
+          "target": [
+            "#mi6p6ph7dsf5s27zbws-submit"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.35 (foreground color: #ffffff, background color: #db9d47, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"mb-1\">Kamera</h4>",
+          "target": [
+            ".mb-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/label-title-only?application=playwright",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input class=\"mhForm__input mhForm__input--email\" id=\"mi6p6ph7dsf5s27zbws-contact:email\" name=\"contact:email\" type=\"email\" aria-describedby=\"mi6p6ph7dsf5s27zbws-error-contact:email\" autocomplete=\"email\">",
+          "target": [
+            "#mi6p6ph7dsf5s27zbws-contact\\:email"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "impact": "critical",
+      "description": "Ensure every form element has a label",
+      "help": "Form elements must have labels",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/label?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input class=\"mhForm__input mhForm__input--email\" id=\"mi6p6ph7dsf5s27zbws-contact:email\" name=\"contact:email\" type=\"email\" aria-describedby=\"mi6p6ph7dsf5s27zbws-error-contact:email\" autocomplete=\"email\">",
+          "target": [
+            "#mi6p6ph7dsf5s27zbws-contact\\:email"
+          ],
+          "failureSummary": "Fix all of the following:\n  Form element has explicit <label> that is hidden"
+        }
+      ]
+    }
+  ]
+}
