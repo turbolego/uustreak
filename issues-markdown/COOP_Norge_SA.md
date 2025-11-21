@@ -1,6 +1,6 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2025-11-20T00:32:35.810Z
+**Timestamp:** 2025-11-21T00:32:39.119Z
 **URL:** [https://www.coop.no/#](https://www.coop.no/#)
 **Total Violations:** 5
 
@@ -69,5 +69,5 @@
 
 #### Affected Elements:
 
-- `.kn.ko.kp:nth-child(1)`
-- `.kn.ko.kp:nth-child(2)`
+- `.k8.k9.ka:nth-child(1)`
+- `.k8.k9.ka:nth-child(2)`
