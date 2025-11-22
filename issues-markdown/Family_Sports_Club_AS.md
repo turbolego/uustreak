@@ -1,6 +1,6 @@
 # WCAG Violations Report for Family Sports Club AS
 
-**Timestamp:** 2025-11-21T00:31:56.929Z
+**Timestamp:** 2025-11-22T00:22:43.554Z
 **URL:** [https://sporty.no/](https://sporty.no/)
 **Total Violations:** 3
 

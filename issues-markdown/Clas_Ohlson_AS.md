@@ -1,6 +1,6 @@
 # WCAG Violations Report for Clas Ohlson AS
 
-**Timestamp:** 2025-11-21T00:33:23.704Z
+**Timestamp:** 2025-11-22T00:40:09.078Z
 **URL:** [https://www.clasohlson.com/no/#](https://www.clasohlson.com/no/#)
 **Total Violations:** 5
 
@@ -54,7 +54,7 @@
 
 #### Affected Elements:
 
-- `a[data-gtm-vis-recent-on-screen12903121_667="185"]`
+- `a[data-gtm-vis-recent-on-screen12903121_667="175"]`
 
 ### All page content should be contained by landmarks
 

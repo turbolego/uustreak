@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2025-11-21T00:23:28.699Z
+**Timestamp:** 2025-11-22T00:22:23.704Z
 **URL:** [https://bymuseet.no/#](https://bymuseet.no/#)
 **Total Violations:** 7
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 25
+- **Count:** 28
 
 #### Affected Elements:
 
@@ -38,9 +38,12 @@
 - `a[target="_blank"] > .block > .btn`
 - `a[href$="arskort/"] > .block > .description`
 - `a[href$="arskort/"] > .block > .btn`
+- `.instagram-gallery__button`
+- `.sub-title`
+- `#mce-FNAME`
+- `#mce-LNAME`
+- `#mce-EMAIL`
 - `#mc-embedded-subscribe`
-- `a[href$="kodeks.no"]`
-- `a[href$="kodeks.no/"]`
 
 ### Frames must have an accessible name
 

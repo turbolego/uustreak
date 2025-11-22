@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2025-11-21T00:30:32.819Z
+**Timestamp:** 2025-11-22T00:21:24.047Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
 **Total Violations:** 7
 
@@ -60,12 +60,13 @@
 - **Description:** Ensure that lists are structured correctly
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/list?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
-- `.module-spacing-l[data-cms="dy-recommendation"]:nth-child(7) > div > ul`
+- `.auto-cols-\[30\%\]`
 - `.module-spacing-l[data-cms="dy-recommendation"]:nth-child(8) > div > ul`
+- `.module-spacing-l[data-cms="dy-recommendation"]:nth-child(9) > div > ul`
 
 ### <li> elements must be contained in a <ul> or <ol>
 

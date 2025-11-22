@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2025-11-21T00:39:26.577Z
+**Timestamp:** 2025-11-22T00:46:11.281Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 3
 
@@ -33,7 +33,7 @@
 #### Affected Elements:
 
 - `.skipToContent-button`
-- `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
+- `.cmp-slider__slide[data-index="4"][href$="tax"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="6"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 
@@ -43,16 +43,31 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 93
+- **Count:** 108
 
 #### Affected Elements:
 
 - `.skip-content-wrapper`
 - `.cmp-logo__link > .sr-only`
 - `.myey-login-url`
-- `.featured_av-caption-wrapper`
-- `img[alt="Kloden i hånden"]`
+- `.swiper-slide-duplicate[data-up-carousel-slide-title="EYs Åpenhetsrapport 2025"][data-swiper-slide-index="3"] > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > img[alt="Kloden i hånden"][title="Kloden i hånden"][height="2560"]`
+- `.swiper-slide-duplicate[data-up-carousel-slide-title="EYs Åpenhetsrapport 2025"][data-swiper-slide-index="3"] > .up-hero-carousel__content-wrapper`
+- `.swiper-slide-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="2560"][loading="lazy"]`
+- `.swiper-slide-prev > .up-hero-carousel__content-wrapper`
+- `img[height="1648"]`
+- `.swiper-slide-visible > .up-hero-carousel__content-wrapper`
+- `#image-render-05a7dedcfd > .cmp-image__image[height="2560"][loading="lazy"]`
+- `.swiper-slide-next > .up-hero-carousel__content-wrapper`
+- `.swiper-slide[data-up-carousel-slide-title="EYs Åpenhetsrapport 2025"][data-swiper-slide-index="3"]:nth-child(5) > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > img[alt="Kloden i hånden"][title="Kloden i hånden"][height="2560"]`
+- `.swiper-slide[data-up-carousel-slide-title="EYs Åpenhetsrapport 2025"][data-swiper-slide-index="3"]:nth-child(5) > .up-hero-carousel__content-wrapper`
+- `.swiper-slide-duplicate-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="2560"][loading="lazy"]`
+- `.swiper-slide-duplicate-prev > .up-hero-carousel__content-wrapper`
+- `.up-hero-carousel__pagination`
 - `.theme-dark.cmp-container--theme-dark.cmp-container--background-color-e2e`
+- `#promotional-6a9106fa127d > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
+- `#promotional-6a9106fa127d > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
+- `#button-2b38bfdff2f7`
+- `#image-render-c924d9e7cf > .cmp-image__image[height="2560"][loading="lazy"]`
 - `#promotional-375939547c80 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-375939547c80 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-ab618830f8b6`
@@ -71,7 +86,7 @@
 - `.cmp-subscribe__text`
 - `#button-bc60d627c8a2`
 - `.cmp-contentGrid__title`
-- `img[height="2563"]`
+- `#image-render-dd78a83287 > .cmp-image__image[height="2560"][loading="lazy"]`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__title`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > p`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date__text`
@@ -79,7 +94,7 @@
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text:nth-child(4)`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor:nth-child(5)`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
-- `img[title="Ina Rosenberg"]`
+- `img[height="2563"]`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__title`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > p`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date__text`
@@ -94,10 +109,10 @@
 - `.cmp-teaser__content:nth-child(1) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date__text`
 - `.cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__title`
 - `.cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date-txt.mrxs`
+- `.cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor`
+- `.cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date__text`
 - `.cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__title`
 - `.cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date-txt.mrxs`
-- `.cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor`
-- `.small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
 - `#button-7addb05aebee`
 - `.cmp-slider__title`
 - `.cmp-slider__skip`
@@ -107,15 +122,15 @@
 - `.active > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `.active > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
 - `.active > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
-- `a[data-index="2"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
-- `a[data-index="2"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
-- `a[data-index="2"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
-- `a[data-index="3"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
-- `a[data-index="3"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
-- `a[data-index="3"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
-- `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
-- `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
-- `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
+- `.cmp-slider__slide[data-index="2"][href$="assurance"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
+- `.cmp-slider__slide[data-index="2"][href$="assurance"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
+- `.cmp-slider__slide[data-index="2"][href$="assurance"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
+- `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
+- `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
+- `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
+- `.cmp-slider__slide[data-index="4"][href$="tax"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
+- `.cmp-slider__slide[data-index="4"][href$="tax"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
+- `.cmp-slider__slide[data-index="4"][href$="tax"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
