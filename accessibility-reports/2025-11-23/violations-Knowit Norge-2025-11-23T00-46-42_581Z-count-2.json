@@ -1,0 +1,88 @@
+{
+  "project": "Knowit Norge",
+  "timestamp": "2025-11-23T00:46:42.581Z",
+  "url": "https://www.knowit.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<article role=\"group\" class=\"chakra-linkbox css-2jgdd6\">",
+          "target": [
+            ".css-8atqhb > .css-2jgdd6"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<article role=\"group\" class=\"chakra-linkbox css-2jgdd6\">",
+          "target": [
+            ".css-1gwne1u > .css-2jgdd6:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<article role=\"group\" class=\"chakra-linkbox css-2jgdd6\">",
+          "target": [
+            ".css-2jgdd6:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<article role=\"group\" class=\"chakra-linkbox css-2jgdd6\">",
+          "target": [
+            ".css-1qfc5p0 > .css-2jgdd6"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<article role=\"group\" class=\"chakra-linkbox css-1ugq6eo\">",
+          "target": [
+            ".slide-current > .css-1herucy > .css-1l6sxpd > .css-1ugq6eo"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"chakra-text css-1245qys\">/ 05</span>",
+          "target": [
+            ".css-1245qys"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.67 (foreground color: #c4c4c4, background color: #fefbe6, font size: 18.0pt (24px), font weight: normal). Expected contrast ratio of 3:1"
+        }
+      ]
+    }
+  ]
+}
