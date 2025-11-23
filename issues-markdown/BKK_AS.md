@@ -1,6 +1,6 @@
 # WCAG Violations Report for BKK AS
 
-**Timestamp:** 2025-11-22T00:34:33.769Z
+**Timestamp:** 2025-11-23T00:30:41.102Z
 **URL:** [https://www.bkk.no/#](https://www.bkk.no/#)
 **Total Violations:** 3
 

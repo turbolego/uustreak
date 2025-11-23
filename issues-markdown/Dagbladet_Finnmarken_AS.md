@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dagbladet Finnmarken AS
 
-**Timestamp:** 2025-11-22T00:41:51.624Z
+**Timestamp:** 2025-11-23T00:37:56.494Z
 **URL:** [https://www.ifinnmark.no/#](https://www.ifinnmark.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -29,6 +29,19 @@
 #### Affected Elements:
 
 - `brick-carousel-v2[data-slides="10"][data-min-slides-to-show="1"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+
+### Links must be distinguishable without relying on color
+
+- **Impact:** serious
+- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
+- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#sp_message_iframe_1393016, #no-hover`
+- `#sp_message_iframe_1393016, a[data-choice="1759496911768"]`
 
 ### Elements marked as presentational should be consistently ignored
 

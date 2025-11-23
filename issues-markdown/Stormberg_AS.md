@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2025-11-22T00:24:59.448Z
+**Timestamp:** 2025-11-23T00:29:29.857Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -20,29 +20,29 @@
 - `.gv.am.an`
 - `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `li:nth-child(2) > .ia.ib[aria-label="Ute resirkulert vinterdress"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `li:nth-child(2) > .ia.ib[aria-label="Ute resirkulert vinterdress"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `a[aria-label="Svalbard dunparkas"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `a[aria-label="Svalbard dunparkas"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `li:nth-child(4) > .ia.ib[aria-label="Ute resirkulert vinterdress"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `li:nth-child(4) > .ia.ib[aria-label="Ute resirkulert vinterdress"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `li:nth-child(3) > .ia.ib[aria-label="Ute resirkulert vinterdress"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `li:nth-child(3) > .ia.ib[aria-label="Ute resirkulert vinterdress"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(4) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(4) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `li:nth-child(5) > .ia.ib[aria-label="Ute resirkulert vinterdress"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `li:nth-child(5) > .ia.ib[aria-label="Ute resirkulert vinterdress"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `li:nth-child(2) > .ia.ib[aria-label="Hafjell vattert selebukse"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `li:nth-child(2) > .ia.ib[aria-label="Hafjell vattert selebukse"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `li:nth-child(3) > .ia.ib[aria-label="Hafjell vattert selebukse"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `li:nth-child(3) > .ia.ib[aria-label="Hafjell vattert selebukse"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `a[aria-label="Hafjell vattert jakke"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `a[aria-label="Hafjell vattert jakke"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `a[aria-label="Hafjell vattert selebukse"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `a[aria-label="Hafjell vattert selebukse"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(3) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(3) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `li:nth-child(4) > .ia.ib[aria-label="Geilo vattert jakke"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `li:nth-child(4) > .ia.ib[aria-label="Geilo vattert jakke"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `li:nth-child(5) > .ia.ib[aria-label="Geilo vattert jakke"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `li:nth-child(5) > .ia.ib[aria-label="Geilo vattert jakke"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `li:nth-child(1) > .ia.ib[aria-label="Hemsedal 2-lags ullsett"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `li:nth-child(2) > .ia.ib[aria-label="Hemsedal 2-lags ullsett"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `div:nth-child(8) > .i7.bl.bj > .i8.i9 > li:nth-child(3) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `a[aria-label="Geilo vattert jakke"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `a[aria-label="Geilo vattert jakke"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `a[aria-label="Hemsedal 2-lags ullsett"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `a[aria-label="Isnes ullfôret vinterstøvel"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `div:nth-child(8) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `div:nth-child(8) > .i7.bl.bj > .i8.i9 > li:nth-child(3) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `div:nth-child(8) > .i7.bl.bj > .i8.i9 > li:nth-child(4) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `a[aria-label="Istind piggsko"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
