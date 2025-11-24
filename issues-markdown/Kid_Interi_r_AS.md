@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-11-23T00:46:15.582Z
+**Timestamp:** 2025-11-24T00:36:14.683Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
-**Total Violations:** 7
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -40,24 +40,12 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#ot-bnr-hdr-id-C0001`
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 2
 
 #### Affected Elements:
 
-- `.gl > .fe.ff.el`
-- `.a7[href$="mobler"][data-scope-link="true"]:nth-child(1) > .fd.fc.fb > .fe.ff.el`
+- `.is-selected.ix.f7:nth-child(1) > .c.bz.c4 > .ao.ca[data-test-id="product-link"] > h4`
+- `#ot-bnr-hdr-id-C0001`
 
 ### Alternative text of images should not be repeated as text
 
@@ -65,31 +53,29 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 36
+- **Count:** 34
 
 #### Affected Elements:
 
-- `img[alt="50% på alle varer*"]`
-- `img[alt="Sengesett"]`
-- `img[alt="Alt til jul"]`
-- `img[alt="Puter og pledd"]`
-- `img[alt="Baderom"]`
-- `img[alt="Kjøkken"]`
-- `img[alt="Borddekking"]`
-- `img[alt="Gardiner"]`
-- `img[alt="Interiør"]`
-- `img[alt="Dyner"]`
-- `img[alt="Se alle produkter"]`
-- `img[alt="Loungewear og accesoarer"]`
-- `img[alt="Sofa"]`
-- `img[alt="Småbord og sofabord"]`
-- `img[alt="Gulvtepper"]`
-- `img[alt="Spisestoler"]`
-- `img[alt="Lenestoler"]`
-- `img[alt="Puffer, krakker og benker"]`
-- `img[alt="Hyller"]`
-- `img[alt="Spisebord"]`
-- `img[alt="Skap og skjenker"]`
+- `img[alt="Alt til soverommet 50%"]`
+- `img[alt="Sengesett 50%"]`
+- `img[alt="Dyner og puter 50%"]`
+- `img[alt="Putevar 50%"]`
+- `img[alt="Flanell 199,-"]`
+- `img[alt="Laken 50%"]`
+- `img[alt="Sengetepper 50%"]`
+- `img[alt="Hodepute 50%"]`
+- `img[alt="Madrass- og putebeskyttere 50%"]`
+- `img[alt="Alt til badet 50%"]`
+- `img[alt="Morgenkåper 50%"]`
+- `img[alt="Håndklær 50%"]`
+- `img[alt="Loungewear og accessoarer 50%"]`
+- `img[alt="Therapi velværeserie 50%"]`
+- `img[alt="Såper og kremer 50%"]`
+- `div:nth-child(8) > .fg.bv.bw > .ge.gf > .dd.bz > .is-draggable.ao.gg > .gi.gh.b > .ii.gj.gg:nth-child(7) > div > .ca.c9.c8 > .gl.da.dd > .en.gh.dt`
+- `img[alt="AVA velværeserie 50%"]`
+- `img[alt="Baderomstilbehør 50%"]`
+- `a[href$="skjonnhetstilbehor"] > .gl.da.dd > .en.gh.dt`
 - `img[alt="Kalendergavetips"]`
 - `img[alt="Julegavetips"]`
 - `img[alt="Julesengetøy"]`
@@ -106,35 +92,19 @@
 - `img[alt="Gavetips under 500,-"]`
 - `img[alt="Gavetips som varmer"]`
 
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 4
-
-#### Affected Elements:
-
-- `.a7[href$="handkle"][data-scope-link="true"]:nth-child(1)`
-- `.ca.s[href$="handkle"]`
-- `.a7[href$="mobler"][data-scope-link="true"]:nth-child(1)`
-- `.ca.s[href$="mobler"]`
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 7
+- **Count:** 6
 
 #### Affected Elements:
 
 - `.ag`
 - `a[aria-label="Gå til startside"]`
 - `.e7`
-- `.a > div:nth-child(5)`
 - `.tf-header-slider`
 - `.tf-sidebar`
 - `#kindly-chat-api > div,.sc-dNFkOE`

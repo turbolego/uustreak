@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2025-11-23T00:42:26.716Z
+**Timestamp:** 2025-11-24T00:50:14.408Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 3
 
@@ -43,7 +43,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 108
+- **Count:** 112
 
 #### Affected Elements:
 
@@ -64,6 +64,10 @@
 - `.swiper-slide-duplicate-prev > .up-hero-carousel__content-wrapper`
 - `.up-hero-carousel__pagination`
 - `.theme-dark.cmp-container--theme-dark.cmp-container--background-color-e2e`
+- `#promotional-3dc70db03574 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
+- `#promotional-3dc70db03574 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
+- `#button-5ba8eefd34dc`
+- `#image-render-305f18de9d > .cmp-image__image[height="2560"][loading="lazy"]`
 - `#promotional-6a9106fa127d > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-6a9106fa127d > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-2b38bfdff2f7`
