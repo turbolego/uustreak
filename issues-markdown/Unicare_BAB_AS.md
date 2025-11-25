@@ -1,6 +1,6 @@
 # WCAG Violations Report for Unicare BAB AS
 
-**Timestamp:** 2025-11-24T00:35:51.068Z
+**Timestamp:** 2025-11-25T00:33:24.922Z
 **URL:** [https://unicare.no/#](https://unicare.no/#)
 **Total Violations:** 8
 
@@ -55,7 +55,7 @@
 #### Affected Elements:
 
 - `.inner-content.odd > h3`
-- `article[data-articleid="2685"] > a[target="_self"] > .card-body > h3[property="headline"]`
+- `article[data-articleid="2708"] > a[target="_self"] > .card-body > h3[property="headline"]`
 - `article[data-articleid="2334"] > a[target="_self"] > .card-body > h3`
 
 ### Document should not have more than one banner landmark

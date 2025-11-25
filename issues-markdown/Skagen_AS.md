@@ -1,6 +1,6 @@
 # WCAG Violations Report for Skagen AS
 
-**Timestamp:** 2025-11-24T00:59:20.176Z
+**Timestamp:** 2025-11-25T00:33:49.489Z
 **URL:** [https://www.skagenfondene.no/#](https://www.skagenfondene.no/#)
 **Total Violations:** 6
 
@@ -81,5 +81,5 @@
 #### Affected Elements:
 
 - `.disclaimerArea`
-- `.skagen-consent-container > h2`
+- `h2[data-v-4bd80ea1=""]`
 - `.text--gdpr`

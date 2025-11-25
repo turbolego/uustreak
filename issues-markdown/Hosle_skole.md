@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hosle skole
 
-**Timestamp:** 2025-11-24T00:32:03.718Z
+**Timestamp:** 2025-11-25T00:29:25.774Z
 **URL:** [https://www.hosle.no/#](https://www.hosle.no/#)
 **Total Violations:** 5
 

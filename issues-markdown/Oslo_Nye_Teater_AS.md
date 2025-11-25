@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2025-11-24T00:31:07.213Z
+**Timestamp:** 2025-11-25T00:28:15.600Z
 **URL:** [https://oslonye.no/#](https://oslonye.no/#)
 **Total Violations:** 5
 
@@ -53,12 +53,12 @@
 
 #### Affected Elements:
 
-- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-8.medium-6.cpt > .alignment-left.hovedscenen.bg-none > .les-mer-link`
+- `.alignment-left.hovedscenen.bg-none > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt > .alignment-top.bg-none.block > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt > .alignment-top.bg-none.block > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-8.medium-6.cpt > .alignment-left.hovedscenen.bg-none > .les-mer-link`
-- `.alignment-top.hovedscenen.bg-none > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-8.medium-6.cpt > .alignment-right.bg-none.block > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-8.medium-6.cpt > .alignment-left.bg-none.block > .les-mer-link`
+- `.hovedscenen.alignment-top.bg-none > .les-mer-link`
+- `.alignment-right.hovedscenen.bg-none > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-8.medium-6.cpt > .alignment-right.bg-none.block > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(1) > .teaterkjellern.alignment-top.bg-none > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(3) > .teaterkjellern.alignment-top.bg-none > .les-mer-link`
@@ -76,7 +76,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 48
+- **Count:** 43
 
 #### Affected Elements:
 
@@ -86,10 +86,10 @@
 - `.theater-list > li:nth-child(2)`
 - `.forestillinger-blocks-panel:nth-child(3)`
 - `.forestillinger-blocks-panel:nth-child(4)`
-- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt`
+- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell:nth-child(1)`
 - `.large-4.medium-6.cell:nth-child(2) > a[target="_blank"] > .advertise-cover- > .border-orange.advertise.text-center > .text-yellow.heading-small.content-holder > .title`
 - `.large-4.medium-6.cell:nth-child(2) > a[target="_blank"] > .advertise-cover- > .border-orange.advertise.text-center > .text-yellow.heading-small.content-holder > .short-description`
-- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell:nth-child(3)`
+- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt`
 - `.advertise-cover- > .border-green.advertise.text-center > .text-orange.heading-small.content-holder > .title`
 - `.advertise-cover- > .border-green.advertise.text-center > .text-orange.heading-small.content-holder > .short-description`
 - `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-8.medium-6.cpt`
@@ -123,8 +123,3 @@
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(16)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(17)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(18)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(19)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(20)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(21)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(22)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(23)`

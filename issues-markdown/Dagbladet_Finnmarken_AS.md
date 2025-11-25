@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagbladet Finnmarken AS
 
-**Timestamp:** 2025-11-24T00:45:55.570Z
+**Timestamp:** 2025-11-25T00:42:12.272Z
 **URL:** [https://www.ifinnmark.no/#](https://www.ifinnmark.no/#)
 **Total Violations:** 4
 

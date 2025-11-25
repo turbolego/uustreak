@@ -1,7 +1,7 @@
-# WCAG Violations Report for Accenture Norge
+# WCAG Violations Report for Statistisk sentralbyrå
 
-**Timestamp:** 2025-11-25T00:30:08.032Z
-**URL:** [https://www.accenture.com/no-en](https://www.accenture.com/no-en)
+**Timestamp:** 2025-11-25T00:36:17.220Z
+**URL:** [https://www.ssb.no/#](https://www.ssb.no/#)
 **Total Violations:** 1
 
 ## Violation Details
@@ -16,4 +16,4 @@
 
 #### Affected Elements:
 
-- `.rad-carousel-block__title`
+- `#popup-title`

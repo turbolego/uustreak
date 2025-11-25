@@ -1,6 +1,6 @@
 # WCAG Violations Report for Clas Ohlson AS
 
-**Timestamp:** 2025-11-24T00:44:13.397Z
+**Timestamp:** 2025-11-25T00:40:30.181Z
 **URL:** [https://www.clasohlson.com/no/#](https://www.clasohlson.com/no/#)
 **Total Violations:** 5
 
@@ -12,12 +12,13 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `.content:nth-child(8) > .text-lg-left.mt-18`
-- `.carousel__component.carousel-component-parent.right-shadow:nth-child(12) > .carousel__component--headline:nth-child(1) > .title-two`
+- `.content:nth-child(9) > .text-lg-left.mt-18`
+- `.carousel__component.carousel-component-parent.right-shadow:nth-child(13) > .carousel__component--headline:nth-child(1) > .title-two`
 
 ### Images must have alternative text
 

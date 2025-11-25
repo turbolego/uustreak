@@ -1,6 +1,6 @@
 # WCAG Violations Report for XXL Sport & Villmark AS
 
-**Timestamp:** 2025-11-23T00:42:18.297Z
+**Timestamp:** 2025-11-25T00:38:05.153Z
 **URL:** [https://www.xxl.no/#](https://www.xxl.no/#)
 **Total Violations:** 1
 

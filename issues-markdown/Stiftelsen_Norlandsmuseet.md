@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Norlandsmuseet
 
-**Timestamp:** 2025-11-24T00:27:11.821Z
+**Timestamp:** 2025-11-25T00:24:31.027Z
 **URL:** [https://www.nordlandsmuseet.no/hjem/](https://www.nordlandsmuseet.no/hjem/)
 **Total Violations:** 5
 
@@ -65,17 +65,17 @@
 #### Affected Elements:
 
 - `.summary-thumbnail-container.sqs-gallery-image-container[href$="madeinbodo"]`
-- `#yui_3_17_2_1_1763944019265_346 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1763944019265_348 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1763944019265_350 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1764030261818_346 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1764030261818_348 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1764030261818_350 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
 - `.summary-thumbnail-container.sqs-gallery-image-container[href$="bodo-laget-det"]`
-- `#yui_3_17_2_1_1763944019265_354 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1763944019265_356 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1763944019265_358 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1763944019265_360 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1764030261818_354 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1764030261818_356 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1764030261818_358 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1764030261818_360 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
 - `.summary-thumbnail-container.sqs-gallery-image-container[href$="leiv-kreyberg"]`
-- `#yui_3_17_2_1_1763944019265_364 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1763944019265_366 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1764030261818_364 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1764030261818_366 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
 - `.summary-thumbnail-container.sqs-gallery-image-container[href$="ntw"]`
-- `#yui_3_17_2_1_1763944019265_370 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1763944019265_372 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1764030261818_370 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1764030261818_372 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`

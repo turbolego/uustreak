@@ -1,6 +1,6 @@
 # WCAG Violations Report for DNB Bank ASA
 
-**Timestamp:** 2025-11-24T00:45:16.461Z
+**Timestamp:** 2025-11-25T00:41:33.615Z
 **URL:** [https://www.dnb.no/#](https://www.dnb.no/#)
 **Total Violations:** 2
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Porsgrunn kommune
 
-**Timestamp:** 2025-11-23T00:33:49.626Z
+**Timestamp:** 2025-11-25T00:29:39.080Z
 **URL:** [https://www.porsgrunn.kommune.no/#](https://www.porsgrunn.kommune.no/#)
 **Total Violations:** 1
 

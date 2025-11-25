@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tromsø kommune
 
-**Timestamp:** 2025-11-24T00:33:42.882Z
+**Timestamp:** 2025-11-25T00:31:14.124Z
 **URL:** [https://tromso.kommune.no/#](https://tromso.kommune.no/#)
 **Total Violations:** 4
 

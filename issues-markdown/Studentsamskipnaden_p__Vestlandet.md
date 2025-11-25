@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2025-11-24T00:28:59.496Z
+**Timestamp:** 2025-11-25T00:26:23.527Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 5
 
@@ -37,29 +37,29 @@
 - `.contents[href$="trening"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `a[href$="kurs"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `h1`
-- `.md\:text-body_large.flex-row.justify-between > .text-base-white.font-light.svelte-18q32uc`
-- `.gap-3[href$="bolig"][target="_self"] > .text-base-white.font-light.svelte-18q32uc`
-- `.gap-3[href$="studentliv"][target="_self"] > .text-base-white.font-light.svelte-18q32uc`
-- `.gap-3[href$="karriere"][target="_self"] > .text-base-white.font-light.svelte-18q32uc`
-- `.gap-3[href$="trening"][target="_self"] > .text-base-white.font-light.svelte-18q32uc`
-- `.gap-3[href$="helse"][target="_self"]:nth-child(5) > .text-base-white.font-light.svelte-18q32uc`
-- `.gap-3[href$="barnehage"][target="_self"] > .text-base-white.font-light.svelte-18q32uc`
-- `.whitespace-nowrap.gap-3[href$="mat-og-drikke"] > .text-base-white.font-light.svelte-18q32uc`
-- `.whitespace-nowrap.gap-3[href$="psykisk-helse"] > .text-base-white.font-light.svelte-18q32uc`
-- `.gap-3[href$="studentgoder"][target="_self"] > .text-base-white.font-light.svelte-18q32uc`
+- `.md\:text-body_large.flex-row.justify-between > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3[href$="bolig"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3[href$="studentliv"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3[href$="karriere"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3[href$="trening"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3[href$="helse"][target="_self"]:nth-child(5) > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3[href$="barnehage"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.whitespace-nowrap.gap-3[href$="mat-og-drikke"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.whitespace-nowrap.gap-3[href$="psykisk-helse"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3[href$="studentgoder"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
 - `.pb-4.whitespace-nowrap.font-semibold`
-- `.gap-3[href$="artikkel"][target="_self"] > .text-base-white.font-light.svelte-18q32uc`
-- `a[href$="om-sammen"] > .text-base-white.font-light.svelte-18q32uc`
-- `a[href$="aapningstider"] > .text-base-white.font-light.svelte-18q32uc`
-- `.md\:pt-0.md\:pl-2.pt-4:nth-child(2) > .gap-y-4.grid-cols-1.grid > .whitespace-nowrap.gap-3[target="_self"] > .text-base-white.font-light.svelte-18q32uc`
-- `a[href$="hjelp-og-dialog"] > .text-base-white.font-light.svelte-18q32uc`
-- `.gap-3.h-fit[target="_blank"]:nth-child(2) > .text-base-white.font-light.svelte-18q32uc`
-- `.gap-3.h-fit[target="_blank"]:nth-child(3) > .text-base-white.font-light.svelte-18q32uc`
-- `.md\:pt-0.md\:pl-2.pt-4:nth-child(3) > .gap-y-4.grid-cols-1.grid > .gap-3.h-fit[target="_self"]:nth-child(4) > .text-base-white.font-light.svelte-18q32uc`
+- `.gap-3[href$="artikkel"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
+- `a[href$="om-sammen"] > .text-base-white.svelte-18q32uc[for=""]`
+- `a[href$="aapningstider"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.md\:pt-0.md\:pl-2.pt-4:nth-child(2) > .gap-y-4.grid-cols-1.grid > .whitespace-nowrap.gap-3[target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
+- `a[href$="hjelp-og-dialog"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3.h-fit[target="_blank"]:nth-child(2) > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3.h-fit[target="_blank"]:nth-child(3) > .text-base-white.svelte-18q32uc[for=""]`
+- `.md\:pt-0.md\:pl-2.pt-4:nth-child(3) > .gap-y-4.grid-cols-1.grid > .gap-3.h-fit[target="_self"]:nth-child(4) > .text-base-white.svelte-18q32uc[for=""]`
 - `.border-b.border-base-white.cursor-pointer`
 - `.grow-0`
-- `a[href$="personvern"] > .text-base-white.font-light.svelte-18q32uc`
-- `.border-b.border-base-white.gap-3:nth-child(2) > .text-base-white.font-light.svelte-18q32uc`
+- `a[href$="personvern"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.border-b.border-base-white.gap-3:nth-child(2) > .text-base-white.svelte-18q32uc[for=""]`
 
 ### Heading levels should only increase by one
 
@@ -72,7 +72,7 @@
 #### Affected Elements:
 
 - `a[aria-label="Finn din studentbolig"] > .md\:items-start.flex-col.md\:flex-row > .md\:grow > .font-semibold`
-- `#carousel0 > .max-w-\[calc\(80vw\)\].md\:max-w-\[calc\(25\.4vw\)\].rounded-lg > .rounded-t-lg[target="_self"] > .pt-1.px-3.pb-3 > .py-2.text-gray-700`
+- `#carousel0 > .max-w-\[calc\(80vw\)\].md\:max-w-\[calc\(25\.4vw\)\].rounded-lg > .rounded-t-lg[target="_self"] > .px-3.pb-3.pt-1 > .py-2.text-gray-700`
 
 ### Interactive controls must not be nested
 
@@ -101,7 +101,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 23
+- **Count:** 29
 
 #### Affected Elements:
 
@@ -112,17 +112,23 @@
 - `.pb-12`
 - `.h-full.md\:w-\[50\%\].w-full`
 - `.mb-1`
-- `.left-\[-4px\]`
+- `img[alt="Fasaden til Studentsenteret"]`
+- `.text-superTitle`
+- `#carousel0 > .max-w-\[calc\(80vw\)\].md\:max-w-\[calc\(25\.4vw\)\].rounded-lg > .rounded-t-lg[target="_self"] > .px-3.pb-3.pt-1`
+- `#carousel1`
+- `#carousel2`
+- `#carousel3`
+- `#carousel4`
 - `div:nth-child(1) > .\!font-bold.pb-4`
-- `.gap-3[href$="bolig"][target="_self"] > .text-base-white.font-light.svelte-18q32uc`
-- `.gap-3[href$="studentliv"][target="_self"] > .text-base-white.font-light.svelte-18q32uc`
-- `.gap-3[href$="karriere"][target="_self"] > .text-base-white.font-light.svelte-18q32uc`
-- `.gap-3[href$="trening"][target="_self"] > .text-base-white.font-light.svelte-18q32uc`
-- `.gap-3[href$="helse"][target="_self"]:nth-child(5) > .text-base-white.font-light.svelte-18q32uc`
-- `.gap-3[href$="barnehage"][target="_self"] > .text-base-white.font-light.svelte-18q32uc`
-- `.whitespace-nowrap.gap-3[href$="mat-og-drikke"] > .text-base-white.font-light.svelte-18q32uc`
-- `.whitespace-nowrap.gap-3[href$="psykisk-helse"] > .text-base-white.font-light.svelte-18q32uc`
-- `.gap-3[href$="studentgoder"][target="_self"] > .text-base-white.font-light.svelte-18q32uc`
+- `.gap-3[href$="bolig"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3[href$="studentliv"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3[href$="karriere"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3[href$="trening"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3[href$="helse"][target="_self"]:nth-child(5) > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3[href$="barnehage"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.whitespace-nowrap.gap-3[href$="mat-og-drikke"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.whitespace-nowrap.gap-3[href$="psykisk-helse"] > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3[href$="studentgoder"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
 - `.md\:pt-0.md\:pl-2.pt-4:nth-child(2)`
 - `.md\:pt-0.md\:pl-2.pt-4:nth-child(3)`
 - `.justify-items-center > div:nth-child(1)`

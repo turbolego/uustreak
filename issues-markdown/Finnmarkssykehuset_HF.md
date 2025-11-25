@@ -1,6 +1,6 @@
 # WCAG Violations Report for Finnmarkssykehuset HF
 
-**Timestamp:** 2025-11-24T00:26:42.298Z
+**Timestamp:** 2025-11-25T00:23:55.527Z
 **URL:** [https://www.finnmarkssykehuset.no/](https://www.finnmarkssykehuset.no/)
 **Total Violations:** 1
 

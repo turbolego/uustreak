@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2025-11-24T00:24:09.734Z
+**Timestamp:** 2025-11-25T00:21:27.548Z
 **URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
 **Total Violations:** 10
 
@@ -42,7 +42,6 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-506918"]`
 - `button[aria-controls="modal-552925"]`
 - `button[aria-controls="modal-506819"]`
 - `button[aria-controls="modal-561544"]`
@@ -50,6 +49,7 @@
 - `button[aria-controls="modal-567176"]`
 - `button[aria-controls="modal-562271"]`
 - `button[aria-controls="modal-563888"]`
+- `button[aria-controls="modal-506150"]`
 
 ### Buttons must have discernible text
 
@@ -69,7 +69,7 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 8
+- **Count:** 9
 
 #### Affected Elements:
 
@@ -81,6 +81,7 @@
 - `.w-\[180px\].h-\[160px\]:nth-child(6) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > h4`
 - `.w-\[180px\].h-\[160px\]:nth-child(7) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > h4`
 - `.w-\[180px\].h-\[160px\]:nth-child(8) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > h4`
+- `.w-\[180px\].h-\[160px\]:nth-child(9) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > h4`
 
 ### Images must have alternative text
 
@@ -94,7 +95,6 @@
 
 - `.bg-beige-50 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `div:nth-child(2) > .bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
-- `.object-center[height="264"][width="600"]`
 - `.w-\[180px\].h-\[160px\]:nth-child(1) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
 - `.w-\[180px\].h-\[160px\]:nth-child(2) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
 - `.w-\[180px\].h-\[160px\]:nth-child(3) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
@@ -103,6 +103,7 @@
 - `.w-\[180px\].h-\[160px\]:nth-child(6) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
 - `.w-\[180px\].h-\[160px\]:nth-child(7) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
 - `.w-\[180px\].h-\[160px\]:nth-child(8) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
+- `.w-\[180px\].h-\[160px\]:nth-child(9) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
 
 ### Document should not have more than one banner landmark
 
@@ -134,7 +135,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 8
+- **Count:** 9
 
 #### Affected Elements:
 
@@ -146,6 +147,7 @@
 - `a[href$="platousport.com/"]`
 - `.w-\[180px\].h-\[160px\]:nth-child(7) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .inset-0.\!absolute.z-50`
 - `a[href$="folkehallene.no/"]`
+- `.w-\[180px\].h-\[160px\]:nth-child(9) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .inset-0.\!absolute.z-50`
 
 ### All page content should be contained by landmarks
 

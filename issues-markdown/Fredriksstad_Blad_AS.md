@@ -1,8 +1,8 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2025-11-24T00:28:41.248Z
+**Timestamp:** 2025-11-25T00:25:55.877Z
 **URL:** [https://www.f-b.no/#](https://www.f-b.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -28,7 +28,20 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="10"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `brick-carousel-v2[data-slides="10"][data-version="carousel"][data-min-slides-to-show="1"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+
+### Links must be distinguishable without relying on color
+
+- **Impact:** serious
+- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
+- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#sp_message_iframe_1393043, #no-hover`
+- `#sp_message_iframe_1393043, a[data-choice="1759496911768"]`
 
 ### Elements marked as presentational should be consistently ignored
 

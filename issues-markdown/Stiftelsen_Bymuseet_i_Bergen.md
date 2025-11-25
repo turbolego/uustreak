@@ -1,10 +1,34 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2025-11-24T00:25:16.987Z
+**Timestamp:** 2025-11-25T00:22:35.317Z
 **URL:** [https://bymuseet.no/#](https://bymuseet.no/#)
-**Total Violations:** 7
+**Total Violations:** 8
 
 ## Violation Details
+
+### Elements must only use supported ARIA attributes
+
+- **Impact:** critical
+- **Description:** Ensure an element's role supports its ARIA attributes
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#slick-slide00 > .vimeo-wrapper > iframe, .OverlayBase_module_overlayWrapper__42ef25fe`
+
+### ARIA role should be appropriate for the element
+
+- **Impact:** minor
+- **Description:** Ensure role attribute has an appropriate value for the element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#slick-slide00 > .vimeo-wrapper > iframe, body`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -12,7 +36,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 23
+- **Count:** 28
 
 #### Affected Elements:
 
@@ -38,6 +62,11 @@
 - `a[target="_blank"] > .block > .btn`
 - `a[href$="arskort/"] > .block > .description`
 - `a[href$="arskort/"] > .block > .btn`
+- `.instagram-gallery__button`
+- `.sub-title`
+- `#mce-FNAME`
+- `#mce-LNAME`
+- `#mce-EMAIL`
 - `#mc-embedded-subscribe`
 
 ### Frames must have an accessible name
@@ -52,18 +81,17 @@
 
 - `#slick-slide00 > .vimeo-wrapper > iframe`
 
-### Document should have one main landmark
+### Heading levels should only increase by one
 
 - **Impact:** moderate
-- **Description:** Ensure the document has a main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `html`
-- `#slick-slide00 > .vimeo-wrapper > iframe, html`
+- `.culture-for-all > .container > .section-title`
 
 ### Links must have discernible text
 
@@ -108,19 +136,6 @@
 
 - `meta[name="viewport"]`
 
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 2
-
-#### Affected Elements:
-
-- `html`
-- `#slick-slide00 > .vimeo-wrapper > iframe, html`
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
@@ -142,10 +157,10 @@
 - `.col-lg-2.museum.col-sm-6:nth-child(9) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title`
 - `.col-lg-2.museum.col-sm-6:nth-child(10) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title`
 - `.dashed-border > .section-title`
-- `.filter:nth-child(1) > div[data-rocket-lazy-bg-94b4518c-495d-4285-94a7-1fe9a9e9eba4="excluded"][data-rocket-lazy-bg-de888285-3e3d-4a72-baab-049625419deb="excluded"][data-rocket-lazy-bg-d9bc7e43-c4da-4c32-888c-85086f69a412="loaded"]`
-- `.filter:nth-child(2) > div[data-rocket-lazy-bg-94b4518c-495d-4285-94a7-1fe9a9e9eba4="excluded"][data-rocket-lazy-bg-de888285-3e3d-4a72-baab-049625419deb="excluded"][data-rocket-lazy-bg-d9bc7e43-c4da-4c32-888c-85086f69a412="loaded"]`
-- `.filter:nth-child(3) > div[data-rocket-lazy-bg-94b4518c-495d-4285-94a7-1fe9a9e9eba4="excluded"][data-rocket-lazy-bg-de888285-3e3d-4a72-baab-049625419deb="excluded"][data-rocket-lazy-bg-d9bc7e43-c4da-4c32-888c-85086f69a412="loaded"]`
-- `.when-filter > div[data-rocket-lazy-bg-94b4518c-495d-4285-94a7-1fe9a9e9eba4="excluded"][data-rocket-lazy-bg-de888285-3e3d-4a72-baab-049625419deb="excluded"][data-rocket-lazy-bg-d9bc7e43-c4da-4c32-888c-85086f69a412="loaded"]`
+- `.filter:nth-child(1) > .label`
+- `.filter:nth-child(2) > .label`
+- `.filter:nth-child(3) > .label`
+- `.d-block.label`
 - `.d-lg-block.btn-link[href$="event"]`
 - `.event.load-more__item.col-lg-3:nth-child(1)`
 - `.event.load-more__item.col-lg-3:nth-child(2)`

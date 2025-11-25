@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kreftforeningen
 
-**Timestamp:** 2025-11-24T00:37:38.897Z
+**Timestamp:** 2025-11-25T00:35:04.712Z
 **URL:** [https://kreftforeningen.no/](https://kreftforeningen.no/)
 **Total Violations:** 3
 

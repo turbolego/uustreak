@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fagforbundet
 
-**Timestamp:** 2025-11-24T00:25:24.703Z
+**Timestamp:** 2025-11-25T00:22:39.213Z
 **URL:** [https://www.fagforbundet.no/#](https://www.fagforbundet.no/#)
 **Total Violations:** 2
 

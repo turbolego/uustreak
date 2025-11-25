@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-11-24T00:36:14.683Z
+**Timestamp:** 2025-11-25T00:33:36.875Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
-**Total Violations:** 5
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -34,18 +34,41 @@
 - `.review-block.article.review:nth-child(4) > .tf-date`
 - `.review-block.article.review:nth-child(5) > .tf-date`
 
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `div:nth-child(1) > .fa.f9.bv > .bl.c4.dd > .fj.fk.fn > .fs.eo.fr > .fv.fu.fw`
+
 ### Heading levels should only increase by one
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.is-selected.ix.f7:nth-child(1) > .c.bz.c4 > .ao.ca[data-test-id="product-link"] > h4`
 - `#ot-bnr-hdr-id-C0001`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `div:nth-child(12) > .fa.f9.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1) > .gu.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -72,10 +95,10 @@
 - `img[alt="Loungewear og accessoarer 50%"]`
 - `img[alt="Therapi velværeserie 50%"]`
 - `img[alt="Såper og kremer 50%"]`
-- `div:nth-child(8) > .fg.bv.bw > .ge.gf > .dd.bz > .is-draggable.ao.gg > .gi.gh.b > .ii.gj.gg:nth-child(7) > div > .ca.c9.c8 > .gl.da.dd > .en.gh.dt`
+- `div:nth-child(8) > .g6.bv.bw > .g7.g8 > .dd.bz > .is-draggable.g9.ao > .gb.ga.b > .gc.il.g9:nth-child(7) > div > .ca.s.c9 > .ge.da.c4 > .en.ga.a3`
 - `img[alt="AVA velværeserie 50%"]`
 - `img[alt="Baderomstilbehør 50%"]`
-- `a[href$="skjonnhetstilbehor"] > .gl.da.dd > .en.gh.dt`
+- `a[href$="skjonnhetstilbehor"] > .ge.da.c4 > .en.ga.a3`
 - `img[alt="Kalendergavetips"]`
 - `img[alt="Julegavetips"]`
 - `img[alt="Julesengetøy"]`
@@ -92,19 +115,33 @@
 - `img[alt="Gavetips under 500,-"]`
 - `img[alt="Gavetips som varmer"]`
 
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `div:nth-child(12) > .fa.f9.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(12) > .fa.f9.bv > .bl.c4.dd > .ca.s.c9`
+
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 6
+- **Count:** 7
 
 #### Affected Elements:
 
 - `.ag`
 - `a[aria-label="Gå til startside"]`
 - `.e7`
+- `.a > div:nth-child(5)`
 - `.tf-header-slider`
 - `.tf-sidebar`
 - `#kindly-chat-api > div,.sc-dNFkOE`

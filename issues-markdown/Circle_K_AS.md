@@ -1,6 +1,6 @@
 # WCAG Violations Report for Circle K AS
 
-**Timestamp:** 2025-11-24T00:44:00.126Z
+**Timestamp:** 2025-11-25T00:40:15.913Z
 **URL:** [https://www.circlek.no/#](https://www.circlek.no/#)
 **Total Violations:** 7
 
