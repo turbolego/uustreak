@@ -1,8 +1,8 @@
 # WCAG Violations Report for Solstrand Hotel & Bad AS
 
-**Timestamp:** 2025-11-25T00:34:45.313Z
+**Timestamp:** 2025-11-26T00:36:40.084Z
 **URL:** [https://solstrand.com/#](https://solstrand.com/#)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `#masthead`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -52,7 +52,7 @@
 
 #### Affected Elements:
 
-- `#masthead`
+- `#coiOverlay`
 
 ### Links must have discernible text
 
@@ -88,10 +88,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 7
+- **Count:** 8
 
 #### Affected Elements:
 
+- `a[href$="#main-menu-container"]`
 - `a[href$="#main-content"]`
 - `h1`
 - `.delay-200ms`
@@ -99,15 +100,3 @@
 - `.has-serif-s-font-size`
 - `.has-gray-70-color`
 - `.mc-field-group`
-
-### The skip-link target should exist and be focusable
-
-- **Impact:** moderate
-- **Description:** Ensure all skip links have a focusable target
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/skip-link?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-12.7.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `a[href$="#main-content"]`

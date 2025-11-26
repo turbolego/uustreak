@@ -1,6 +1,6 @@
 # WCAG Violations Report for Røde Kors Sentrene AS
 
-**Timestamp:** 2025-11-25T00:31:51.364Z
+**Timestamp:** 2025-11-26T00:33:29.548Z
 **URL:** [https://www.rodekors.no/sentrene/#](https://www.rodekors.no/sentrene/#)
 **Total Violations:** 4
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -52,4 +52,4 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`

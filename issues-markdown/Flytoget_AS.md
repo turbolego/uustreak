@@ -1,6 +1,6 @@
 # WCAG Violations Report for Flytoget AS
 
-**Timestamp:** 2025-11-25T00:25:10.374Z
+**Timestamp:** 2025-11-26T00:26:54.058Z
 **URL:** [https://flytoget.no/#](https://flytoget.no/#)
 **Total Violations:** 6
 
@@ -41,8 +41,8 @@
 
 #### Affected Elements:
 
-- `.btn-squared`
 - `button[aria-label="Godta alle"]`
+- `.btn-squared`
 
 ### Document should not have more than one banner landmark
 
@@ -54,7 +54,7 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -66,7 +66,7 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`
 
 ### All page content should be contained by landmarks
 
@@ -74,10 +74,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 8
+- **Count:** 9
 
 #### Affected Elements:
 
+- `.skip-to-main`
 - `.travel-input-from`
 - `.travel-input-to`
 - `.date-label-container`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2025-11-25T00:21:32.421Z
+**Timestamp:** 2025-11-26T00:23:07.488Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
 **Total Violations:** 7
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -52,7 +52,7 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 

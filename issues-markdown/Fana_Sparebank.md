@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fana Sparebank
 
-**Timestamp:** 2025-11-25T00:23:05.221Z
+**Timestamp:** 2025-11-26T00:24:41.106Z
 **URL:** [https://www.fanasparebank.no/#](https://www.fanasparebank.no/#)
 **Total Violations:** 3
 
@@ -30,7 +30,7 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -42,4 +42,4 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`

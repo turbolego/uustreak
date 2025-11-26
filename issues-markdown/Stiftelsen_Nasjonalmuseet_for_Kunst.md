@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Nasjonalmuseet for Kunst
 
-**Timestamp:** 2025-11-25T00:24:18.063Z
+**Timestamp:** 2025-11-26T00:35:03.346Z
 **URL:** [https://www.nasjonalmuseet.no/#](https://www.nasjonalmuseet.no/#)
 **Total Violations:** 4
 
@@ -43,7 +43,7 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -55,5 +55,5 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`
 - `div[title="Utstillinger"] > section`

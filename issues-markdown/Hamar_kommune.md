@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hamar kommune
 
-**Timestamp:** 2025-11-25T00:27:19.266Z
+**Timestamp:** 2025-11-26T00:29:04.679Z
 **URL:** [https://www.hamar.kommune.no/#](https://www.hamar.kommune.no/#)
 **Total Violations:** 5
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `#topheader`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -52,7 +52,7 @@
 
 #### Affected Elements:
 
-- `#topheader`
+- `#coiOverlay`
 - `.global-header__nav`
 
 ### All page content should be contained by landmarks
@@ -61,8 +61,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `#content-link`
 - `#coretrek-footer`

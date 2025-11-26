@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norges forskningsråd
 
-**Timestamp:** 2025-11-25T00:25:10.899Z
+**Timestamp:** 2025-11-26T00:26:51.882Z
 **URL:** [https://www.forskningsradet.no/#](https://www.forskningsradet.no/#)
 **Total Violations:** 4
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -52,5 +52,5 @@
 
 #### Affected Elements:
 
+- `#coiOverlay`
 - `.tab-menu`
-- `header`

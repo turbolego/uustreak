@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-11-25T00:33:36.875Z
+**Timestamp:** 2025-11-26T00:36:56.322Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 8
 
@@ -44,7 +44,7 @@
 
 #### Affected Elements:
 
-- `div:nth-child(1) > .fa.f9.bv > .bl.c4.dd > .fj.fk.fn > .fs.eo.fr > .fv.fu.fw`
+- `div:nth-child(1) > .fa.f9.bv > .bl.c4.bz > .fj.fk.fn > .fs.eo.fr > .fv.fu.fw`
 
 ### Heading levels should only increase by one
 
@@ -68,7 +68,7 @@
 
 #### Affected Elements:
 
-- `div:nth-child(12) > .fa.f9.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1) > .gu.fc.fb > .fe.ff.el`
+- `div:nth-child(16) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .gv.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -76,11 +76,11 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 34
+- **Count:** 24
 
 #### Affected Elements:
 
-- `img[alt="Alt til soverommet 50%"]`
+- `img[alt="Se alle produkter"]`
 - `img[alt="Sengesett 50%"]`
 - `img[alt="Dyner og puter 50%"]`
 - `img[alt="Putevar 50%"]`
@@ -88,27 +88,17 @@
 - `img[alt="Laken 50%"]`
 - `img[alt="Sengetepper 50%"]`
 - `img[alt="Hodepute 50%"]`
-- `img[alt="Madrass- og putebeskyttere 50%"]`
+- `img[alt="Madrassbeskyttere 50%"]`
 - `img[alt="Alt til badet 50%"]`
 - `img[alt="Morgenkåper 50%"]`
 - `img[alt="Håndklær 50%"]`
-- `img[alt="Loungewear og accessoarer 50%"]`
-- `img[alt="Therapi velværeserie 50%"]`
+- `img[alt="Loungewear 50%"]`
+- `img[alt="Therapi-serien 50%"]`
 - `img[alt="Såper og kremer 50%"]`
-- `div:nth-child(8) > .g6.bv.bw > .g7.g8 > .dd.bz > .is-draggable.g9.ao > .gb.ga.b > .gc.il.g9:nth-child(7) > div > .ca.s.c9 > .ge.da.c4 > .en.ga.a3`
+- `div:nth-child(14) > .g6.bv.bw > .g7.g8 > .bz.dd > .is-draggable.g9.ao > .gb.ga.b > .gc.if.g9:nth-child(7) > div > .ca.s.c9 > .ge.da.c4 > .en.ga.a3`
 - `img[alt="AVA velværeserie 50%"]`
 - `img[alt="Baderomstilbehør 50%"]`
 - `a[href$="skjonnhetstilbehor"] > .ge.da.c4 > .en.ga.a3`
-- `img[alt="Kalendergavetips"]`
-- `img[alt="Julegavetips"]`
-- `img[alt="Julesengetøy"]`
-- `img[alt="Juleputer"]`
-- `img[alt="Adventsbelysning"]`
-- `img[alt="Julekranser"]`
-- `img[alt="Julelykter & lys"]`
-- `img[alt="Julegaveinnpakning"]`
-- `img[alt="Julepynt"]`
-- `img[alt="Julestrømper"]`
 - `img[alt="Julegavetips til henne"]`
 - `img[alt="Gavetips under 100,-"]`
 - `img[alt="Gavetips under 200,-"]`
@@ -125,8 +115,8 @@
 
 #### Affected Elements:
 
-- `div:nth-child(12) > .fa.f9.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(12) > .fa.f9.bv > .bl.c4.dd > .ca.s.c9`
+- `div:nth-child(16) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(16) > .fa.f9.bv > .bl.c4.bz > .ca.s.c9`
 
 ### All page content should be contained by landmarks
 

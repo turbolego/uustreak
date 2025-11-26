@@ -1,6 +1,6 @@
 # WCAG Violations Report for Utdanningsdirektoratet
 
-**Timestamp:** 2025-11-25T00:34:58.961Z
+**Timestamp:** 2025-11-26T00:45:30.663Z
 **URL:** [https://www.udir.no/#](https://www.udir.no/#)
 **Total Violations:** 3
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `#go-to-top-target`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -40,4 +40,4 @@
 
 #### Affected Elements:
 
-- `#go-to-top-target`
+- `#coiOverlay`

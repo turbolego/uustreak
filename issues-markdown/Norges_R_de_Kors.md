@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norges Røde Kors
 
-**Timestamp:** 2025-11-25T00:24:58.119Z
+**Timestamp:** 2025-11-26T00:26:39.678Z
 **URL:** [https://www.rodekors.no/#](https://www.rodekors.no/#)
 **Total Violations:** 3
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -40,4 +40,4 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`

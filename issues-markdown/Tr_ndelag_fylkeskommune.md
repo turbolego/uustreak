@@ -1,6 +1,6 @@
 # WCAG Violations Report for Trøndelag fylkeskommune
 
-**Timestamp:** 2025-11-25T00:32:07.264Z
+**Timestamp:** 2025-11-26T00:42:45.454Z
 **URL:** [https://www.trondelagfylke.no/#](https://www.trondelagfylke.no/#)
 **Total Violations:** 4
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `#header`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `#header`
+- `#coiOverlay`
 - `.top-menu`
 
 ### All page content should be contained by landmarks

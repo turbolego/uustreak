@@ -1,8 +1,8 @@
 # WCAG Violations Report for BKK AS
 
-**Timestamp:** 2025-11-25T00:34:59.321Z
+**Timestamp:** 2025-11-26T00:28:20.190Z
 **URL:** [https://www.bkk.no/#](https://www.bkk.no/#)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -30,7 +30,7 @@
 
 #### Affected Elements:
 
-- `#header`
+- `#coiConsentBanner`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -47,3 +47,15 @@
 - `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(5) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
 - `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(7) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
 - `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(9) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#skip-to-content`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Color Line AS
 
-**Timestamp:** 2025-11-25T00:40:44.612Z
+**Timestamp:** 2025-11-26T00:34:16.348Z
 **URL:** [https://www.colorline.no/#](https://www.colorline.no/#)
 **Total Violations:** 7
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `#colorlineheader`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -52,7 +52,7 @@
 
 #### Affected Elements:
 
-- `#colorlineheader`
+- `#coiOverlay`
 - `.page-top-nav`
 
 ### Links must have discernible text

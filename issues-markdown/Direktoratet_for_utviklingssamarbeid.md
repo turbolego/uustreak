@@ -1,6 +1,6 @@
 # WCAG Violations Report for Direktoratet for utviklingssamarbeid
 
-**Timestamp:** 2025-11-25T00:45:42.484Z
+**Timestamp:** 2025-11-26T00:39:26.067Z
 **URL:** [https://www.norad.no/#](https://www.norad.no/#)
 **Total Violations:** 3
 
@@ -30,7 +30,7 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -42,4 +42,4 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`

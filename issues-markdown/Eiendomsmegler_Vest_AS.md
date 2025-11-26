@@ -1,6 +1,6 @@
 # WCAG Violations Report for Eiendomsmegler Vest AS
 
-**Timestamp:** 2025-11-25T00:47:14.774Z
+**Timestamp:** 2025-11-26T00:40:59.880Z
 **URL:** [https://www.eiendomsmeglernorge.no/](https://www.eiendomsmeglernorge.no/)
 **Total Violations:** 6
 
@@ -42,7 +42,7 @@
 
 #### Affected Elements:
 
-- `#masthead`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -54,7 +54,7 @@
 
 #### Affected Elements:
 
-- `#masthead`
+- `#coiOverlay`
 
 ### Links must have discernible text
 
@@ -78,10 +78,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 7
+- **Count:** 8
 
 #### Affected Elements:
 
+- `.skip-link`
 - `#boligreise`
 - `#boliglan`
 - `#mer-om-bolig`

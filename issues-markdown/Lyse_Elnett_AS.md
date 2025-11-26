@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lyse Elnett AS
 
-**Timestamp:** 2025-11-25T00:37:45.711Z
+**Timestamp:** 2025-11-26T00:41:14.454Z
 **URL:** [https://www.l-nett.no/](https://www.l-nett.no/)
 **Total Violations:** 6
 
@@ -41,7 +41,7 @@
 #### Affected Elements:
 
 - `.inner-content.odd > h3`
-- `article[data-articleid="1284"] > a[target="_self"] > .card-body > h3[property="headline"]`
+- `article[data-articleid="1285"] > a[target="_self"] > .card-body > h3[property="headline"]`
 
 ### Form elements should have a visible label
 
@@ -53,7 +53,7 @@
 
 #### Affected Elements:
 
-- `#searchBar_element_b9e8274b_2`
+- `#searchBar_element_69f05b39_2`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -73,10 +73,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 17
+- **Count:** 18
 
 #### Affected Elements:
 
+- `#content-link`
 - `.col-5`
 - `.search-icon`
 - `.megamenu-icon`
@@ -87,10 +88,10 @@
 - `.tile-content > h3`
 - `#ctwebform-elementgroup-group-274`
 - `#ctwebform-elementgroup-group-275`
-- `#OYAZFKSFJKPGLNI`
+- `#QQDVICSCTAMDEQUOYSMI`
 - `.ctwebform-element-type-captcha > div > div`
 - `.ctwebform-element-type-htmlcontent`
 - `.pt-0`
 - `#placeholder-bottom > .container > .row > .searchinput.container-md.tile-common > .tile-content > h1`
-- `#searchBar_element_b9e8274b_2`
+- `#searchBar_element_69f05b39_2`
 - `.privacy-link > a[target="_self"]`

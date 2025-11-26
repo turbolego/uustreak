@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bergen Røde Kors Sykehjem AS
 
-**Timestamp:** 2025-11-25T00:36:34.321Z
-**URL:** [https://brks.no/](https://brks.no/)
-**Total Violations:** 2
+**Timestamp:** 2025-11-26T00:29:58.955Z
+**URL:** [https://brks.no/403.shtml](https://brks.no/403.shtml)
+**Total Violations:** 1
 
 ## Violation Details
 
@@ -22,15 +22,3 @@
 - `a[href$="kontakt/"] > span`
 - `a[href$="jobb/"] > span`
 - `a[href$="for-ansatte/"] > span`
-
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `html`

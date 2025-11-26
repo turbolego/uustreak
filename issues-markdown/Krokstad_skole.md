@@ -1,8 +1,8 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2025-11-25T00:35:59.904Z
+**Timestamp:** 2025-11-26T00:39:25.762Z
 **URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#)
-**Total Violations:** 8
+**Total Violations:** 9
 
 ## Violation Details
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f12d77802a355df45"], ._55yn`
+- `iframe[name="f736fb7b7a37b5d62"], ._55yn`
 
 ### Certain ARIA roles must contain particular children
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f12d77802a355df45"], div[role="feed"]`
+- `iframe[name="f736fb7b7a37b5d62"], div[role="feed"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -40,12 +40,12 @@
 
 #### Affected Elements:
 
-- `iframe[name="f12d77802a355df45"], ._4v3m:nth-child(2) > ._eg_[role="button"] > ._eh3`
-- `iframe[name="f12d77802a355df45"], ._4v3m._51mw > ._eg_[role="button"] > ._eh3`
-- `iframe[name="f12d77802a355df45"], abbr[data-utime="1763913685"] > .timestampContent`
-- `iframe[name="f12d77802a355df45"], ._6lz > div`
-- `iframe[name="f12d77802a355df45"], #u_1_n_o5 > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Kommenter"]`
-- `iframe[name="f12d77802a355df45"], #u_1_p_gx > ._50sk._2pi4[title="Del"]`
+- `iframe[name="f736fb7b7a37b5d62"], ._4v3m:nth-child(2) > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f736fb7b7a37b5d62"], ._4v3m._51mw > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f736fb7b7a37b5d62"], abbr[data-utime="1763913685"] > .timestampContent`
+- `iframe[name="f736fb7b7a37b5d62"], ._6lz > div`
+- `iframe[name="f736fb7b7a37b5d62"], #u_1_i_\+O > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Kommenter"]`
+- `iframe[name="f736fb7b7a37b5d62"], #u_1_k_V1 > ._50sk._2pi4[title="Del"]`
 
 ### Form elements should have a visible label
 
@@ -71,7 +71,7 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -83,7 +83,7 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`
 
 ### Links must have discernible text
 
@@ -95,14 +95,14 @@
 
 #### Affected Elements:
 
-- `iframe[name="f12d77802a355df45"], #u_0_1_Ct`
-- `iframe[name="f12d77802a355df45"], .lfloat._3-8_`
-- `iframe[name="f12d77802a355df45"], #u_1_k_MQ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f12d77802a355df45"], #u_1_18_7U > ._302 > span > a`
-- `iframe[name="f12d77802a355df45"], #u_1_6_Sp > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f12d77802a355df45"], ._2l7q > a`
-- `iframe[name="f12d77802a355df45"], #u_1_5_5q > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f12d77802a355df45"], #u_1_8_x0 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f736fb7b7a37b5d62"], #u_0_1_uK`
+- `iframe[name="f736fb7b7a37b5d62"], .lfloat._3-8_`
+- `iframe[name="f736fb7b7a37b5d62"], #u_1_8_1y > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f736fb7b7a37b5d62"], #u_1_1f_BQ > ._302 > span > a`
+- `iframe[name="f736fb7b7a37b5d62"], #u_1_5_fY > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f736fb7b7a37b5d62"], ._2l7q > a`
+- `iframe[name="f736fb7b7a37b5d62"], #u_1_6_Dy > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f736fb7b7a37b5d62"], #u_1_7_mt > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
 
 ### Interactive controls must not be nested
 
@@ -115,3 +115,15 @@
 #### Affected Elements:
 
 - `.mainMenuTrigger`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.skipLink`

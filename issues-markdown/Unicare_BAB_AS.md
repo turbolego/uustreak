@@ -1,6 +1,6 @@
 # WCAG Violations Report for Unicare BAB AS
 
-**Timestamp:** 2025-11-25T00:33:24.922Z
+**Timestamp:** 2025-11-26T00:44:03.655Z
 **URL:** [https://unicare.no/#](https://unicare.no/#)
 **Total Violations:** 8
 
@@ -28,9 +28,9 @@
 
 #### Affected Elements:
 
+- `#declineButton`
 - `iframe[width="100%"], body`
 - `#splide01-slide01`
-- `#declineButton`
 
 ### Frames must have an accessible name
 
@@ -68,7 +68,7 @@
 
 #### Affected Elements:
 
-- `#topheader`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -80,7 +80,7 @@
 
 #### Affected Elements:
 
-- `#topheader`
+- `#coiOverlay`
 - `.nav-inline`
 
 ### Links must have discernible text
@@ -101,8 +101,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `#content-link`
 - `#coretrek-footer`

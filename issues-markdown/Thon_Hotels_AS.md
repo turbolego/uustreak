@@ -1,6 +1,6 @@
 # WCAG Violations Report for Thon Hotels AS
 
-**Timestamp:** 2025-11-25T00:29:46.620Z
+**Timestamp:** 2025-11-26T00:40:28.525Z
 **URL:** [https://www.thonhotels.no/#](https://www.thonhotels.no/#)
 **Total Violations:** 3
 
@@ -54,4 +54,4 @@
 
 #### Affected Elements:
 
-- `.global-header`
+- `#coiConsentBanner`

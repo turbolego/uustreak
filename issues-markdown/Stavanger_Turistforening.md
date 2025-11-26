@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2025-11-25T00:21:27.548Z
+**Timestamp:** 2025-11-26T00:32:12.121Z
 **URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
 **Total Violations:** 10
 
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-552925"]`
-- `button[aria-controls="modal-506819"]`
-- `button[aria-controls="modal-561544"]`
-- `button[aria-controls="modal-575469"]`
-- `button[aria-controls="modal-567176"]`
-- `button[aria-controls="modal-562271"]`
-- `button[aria-controls="modal-563888"]`
-- `button[aria-controls="modal-506150"]`
+- `button[aria-controls="modal-504734"]`
+- `button[aria-controls="modal-506714"]`
+- `button[aria-controls="modal-554330"]`
+- `button[aria-controls="modal-566503"]`
+- `button[aria-controls="modal-562495"]`
+- `button[aria-controls="modal-562118"]`
+- `button[aria-controls="modal-561518"]`
+- `button[aria-controls="modal-561462"]`
 
 ### Buttons must have discernible text
 
@@ -115,7 +115,7 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -127,7 +127,7 @@
 
 #### Affected Elements:
 
-- `header`
+- `#coiOverlay`
 
 ### Links must have discernible text
 
@@ -155,9 +155,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
+- `.fixed`
 - `.w-auto`
 - `.text-\[17px\]`
