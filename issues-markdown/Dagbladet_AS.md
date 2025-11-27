@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2025-11-26T00:35:38.253Z
+**Timestamp:** 2025-11-27T00:35:32.101Z
 **URL:** [https://www.dagbladet.no/#](https://www.dagbladet.no/#)
 **Total Violations:** 3
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.t52 > .text-red.color_mobile_text-red[data-lab-text_color_desktop="text-red"]`
+- `.tm80.t103[data-lab-text_size_mobile="80"] > .text-red.color_mobile_text-red[data-lab-text_color_desktop="text-red"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

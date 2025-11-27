@@ -1,6 +1,6 @@
 # WCAG Violations Report for Teknisk Ukeblad Media AS
 
-**Timestamp:** 2025-11-26T00:38:56.603Z
+**Timestamp:** 2025-11-27T00:39:20.584Z
 **URL:** [https://www.tu.no/](https://www.tu.no/)
 **Total Violations:** 5
 
@@ -56,8 +56,8 @@
 
 #### Affected Elements:
 
-- `.object-cover[loading="eager"][height="563"]`
-- `img[alt="Panservernmopeden"]`
+- `#preamble-564221 > .md\:flex-col.flex-row.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover.duration-700[height="563"]`
+- `#preamble-564206 > .md\:flex-col.flex-row.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover.duration-700[height="563"]`
 
 ### Links must have discernible text
 
