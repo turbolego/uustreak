@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2025-11-27T00:32:31.902Z
+**Timestamp:** 2025-11-28T00:34:00.124Z
 **URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
 **Total Violations:** 10
 
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-562495"]`
-- `button[aria-controls="modal-562118"]`
-- `button[aria-controls="modal-561518"]`
-- `button[aria-controls="modal-561462"]`
-- `button[aria-controls="modal-507299"]`
 - `button[aria-controls="modal-573534"]`
 - `button[aria-controls="modal-504687"]`
 - `button[aria-controls="modal-502606"]`
+- `button[aria-controls="modal-577681"]`
+- `button[aria-controls="modal-573848"]`
+- `button[aria-controls="modal-506929"]`
+- `button[aria-controls="modal-563905"]`
+- `button[aria-controls="modal-578211"]`
 
 ### Buttons must have discernible text
 
@@ -93,7 +93,7 @@
 
 #### Affected Elements:
 
-- `.bg-beige-50 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
+- `.bg-beige-50.bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `div:nth-child(2) > .bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `.w-\[180px\].h-\[160px\]:nth-child(1) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
 - `.w-\[180px\].h-\[160px\]:nth-child(2) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`

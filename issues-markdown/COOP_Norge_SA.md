@@ -1,6 +1,6 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2025-11-27T00:33:11.687Z
+**Timestamp:** 2025-11-28T00:32:40.721Z
 **URL:** [https://www.coop.no/#](https://www.coop.no/#)
 **Total Violations:** 5
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.hx > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .ht.hv.hu > .hw > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.hz > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .hv.hx.hw > .hy > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### ARIA attributes must conform to valid values
 
@@ -30,8 +30,8 @@
 #### Affected Elements:
 
 - `input[role="searchbox"]`
-- `.hx > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .ht.hv.hu > .hw > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.hz > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .hv.hx.hw > .hy > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### Headings should not be empty
 
@@ -43,8 +43,8 @@
 
 #### Affected Elements:
 
-- `.h3`
-- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .fx.am.cj > .fy.g0.g1`
+- `.h5`
+- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .fz.am.cj > .g0.g2.g3`
 
 ### Frames must have an accessible name
 
@@ -52,12 +52,14 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 2
+- **Count:** 4
 
 #### Affected Elements:
 
-- `iframe, iframe[src$="about:blank"]`
-- `iframe, body > iframe`
+- `.q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"]`
+- `.q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
+- `.fx > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"]`
+- `.fx > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
 
 ### Links must have discernible text
 
@@ -69,5 +71,5 @@
 
 #### Affected Elements:
 
-- `.kh.ki.kj:nth-child(1)`
-- `.kh.ki.kj:nth-child(2)`
+- `.kj.kk.kl:nth-child(1)`
+- `.kj.kk.kl:nth-child(2)`

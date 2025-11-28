@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-11-27T00:35:11.899Z
+**Timestamp:** 2025-11-28T00:34:33.818Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 8
 
@@ -68,8 +68,8 @@
 
 #### Affected Elements:
 
-- `div:nth-child(16) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .gv.fc.fb > .fe.ff.el`
-- `div:nth-child(19) > .fa.f9.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1) > .gj.fc.fb > .fe.ff.el`
+- `div:nth-child(18) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .gf.fc.fb > .fe.ff.el`
+- `div:nth-child(21) > .fa.f9.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1) > .gj.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -96,7 +96,7 @@
 - `img[alt="Loungewear 50%"]`
 - `img[alt="Therapi-serien 50%"]`
 - `img[alt="Såper og kremer 50%"]`
-- `div:nth-child(14) > .g6.bv.bw > .g7.g8 > .bz.dd > .is-draggable.g9.ao > .gb.ga.b > .gc.if.g9:nth-child(7) > div > .ca.s.c9 > .ge.da.c4 > .en.ga.a3`
+- `div:nth-child(16) > .g6.bv.bw > .g7.g8 > .bz.dd > .is-draggable.g9.ao > .gb.ga.b > .gc.ie.g9:nth-child(7) > div > .ca.s.c9 > .ge.da.c4 > .en.ga.a3`
 - `img[alt="AVA velværeserie 50%"]`
 - `img[alt="Baderomstilbehør 50%"]`
 - `a[href$="skjonnhetstilbehor"] > .ge.da.c4 > .en.ga.a3`
@@ -116,10 +116,10 @@
 
 #### Affected Elements:
 
-- `div:nth-child(16) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(16) > .fa.f9.bv > .bl.c4.bz > .ca.s.c9`
-- `div:nth-child(19) > .fa.f9.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1)`
-- `div:nth-child(19) > .fa.f9.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(18) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(18) > .fa.f9.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(21) > .fa.f9.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1)`
+- `div:nth-child(21) > .fa.f9.bv > .bl.c4.bz > .ca.s.c9`
 
 ### All page content should be contained by landmarks
 

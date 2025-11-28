@@ -1,8 +1,8 @@
 # WCAG Violations Report for Adecco Norge AS
 
-**Timestamp:** 2025-11-27T00:23:31.733Z
+**Timestamp:** 2025-11-28T00:23:11.681Z
 **URL:** [https://www.adecco.com/nb-no](https://www.adecco.com/nb-no)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -17,23 +17,6 @@
 #### Affected Elements:
 
 - `.LocationSearchFilter_job-title__yLOb_`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 6
-
-#### Affected Elements:
-
-- `#ecosystem-card-ftr0 > .Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined.pl1[href=""]`
-- `#ecosystem-card-ftr1 > .Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined.pl1[href=""]`
-- `#ecosystem-card-ftr2 > .Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined.pl1[href=""]`
-- `#ecosystem-card-ftr3 > .Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined.pl1[href=""]`
-- `#ecosystem-card-ftr4 > .Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined.pl1[href=""]`
-- `#ecosystem-card-ftr5 > .Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined.pl1[href=""]`
 
 ### Elements marked as presentational should be consistently ignored
 

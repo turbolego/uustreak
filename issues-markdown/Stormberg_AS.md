@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2025-11-27T00:36:24.724Z
+**Timestamp:** 2025-11-28T00:37:50.752Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -17,7 +17,7 @@
 #### Affected Elements:
 
 - `.gt.dr.ds > div > div`
-- `.gv.am[href$="nyheter"]`
+- `.gv.am[href$="black-november"]`
 - `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `li:nth-child(2) > .ia.ib[aria-label="Ute resirkulert vinterdress"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
@@ -26,21 +26,21 @@
 - `li:nth-child(3) > .ia.ib[aria-label="Ute resirkulert vinterdress"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `a[aria-label="Svalbard dunparkas"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `a[aria-label="Svalbard dunparkas"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `a[aria-label="Rauland 2-lags ullongs"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `a[aria-label="Rauland 2-lags ullongs"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(2) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(2) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `li:nth-child(2) > .ia.ib[aria-label="Hardanger 2-lags ullongs"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `li:nth-child(2) > .ia.ib[aria-label="Hardanger 2-lags ullongs"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(3) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(3) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `li:nth-child(4) > .ia.ib[aria-label="Hardanger 2-lags ullongs"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `li:nth-child(4) > .ia.ib[aria-label="Hardanger 2-lags ullongs"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
-- `li:nth-child(5) > .ia.ib[aria-label="Hardanger 2-lags ullongs"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `li:nth-child(5) > .ia.ib[aria-label="Hardanger 2-lags ullongs"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
+- `a[aria-label="Hafjell vattert selebukse"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `a[aria-label="Hafjell vattert selebukse"] > .j1.j2.hx > div > .gu > .jf.hy.bd`
 - `div:nth-child(8) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
+- `a[aria-label="Istind piggsko"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `a[aria-label="Voss 2-lags ullongs"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
-- `div:nth-child(8) > .i7.bl.bj > .i8.i9 > li:nth-child(3) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `a[aria-label="Voss 2-lags ulltrøye"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `a[aria-label="Voss 2-lags ulltrøye barn 8-14"] > .if.bc.bd > .is.ik.y > .gq.it.iu`
 - `#onetrust-accept-btn-handler`

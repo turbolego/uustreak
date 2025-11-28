@@ -1,8 +1,8 @@
 # WCAG Violations Report for Østlendingen AS
 
-**Timestamp:** 2025-11-27T00:49:39.056Z
+**Timestamp:** 2025-11-28T00:51:01.759Z
 **URL:** [https://www.ostlendingen.no/#](https://www.ostlendingen.no/#)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#eaframe, #container_9705449 > .info > .info-wrapper > .ctaLink`
+- `#eaframe, #container_9705451 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
@@ -41,19 +41,6 @@
 #### Affected Elements:
 
 - `brick-carousel-v2[data-slides="13"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
-
-### Links must be distinguishable without relying on color
-
-- **Impact:** serious
-- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
-- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `#sp_message_iframe_1393019, #no-hover`
-- `#sp_message_iframe_1393019, a[data-choice="1759496911768"]`
 
 ### Elements marked as presentational should be consistently ignored
 
