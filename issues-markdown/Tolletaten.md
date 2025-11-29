@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tolletaten
 
-**Timestamp:** 2025-11-28T00:42:38.391Z
+**Timestamp:** 2025-11-29T00:30:47.800Z
 **URL:** [https://www.toll.no/#](https://www.toll.no/#)
 **Total Violations:** 2
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kristiansand Dyrepark AS
 
-**Timestamp:** 2025-11-28T00:36:36.245Z
+**Timestamp:** 2025-11-29T00:36:04.819Z
 **URL:** [https://www.dyreparken.no/#](https://www.dyreparken.no/#)
 **Total Violations:** 6
 
@@ -58,7 +58,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 43
+- **Count:** 44
 
 #### Affected Elements:
 
@@ -91,6 +91,7 @@
 - `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(17) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(2) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(17) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(3) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(17) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(5) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(17) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(6) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(17) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(7) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(17) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(8) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-grid--content-alignment-left.c-grid--overflow-scrolling.c-grid--image-size-large > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(1) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`

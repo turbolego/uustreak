@@ -1,7 +1,7 @@
-# WCAG Violations Report for Statped
+# WCAG Violations Report for Registerenheten i Brønnøysund
 
-**Timestamp:** 2025-11-29T00:46:08.833Z
-**URL:** [https://www.statped.no/#](https://www.statped.no/#)
+**Timestamp:** 2025-11-29T00:40:10.215Z
+**URL:** [https://www.brreg.no/#](https://www.brreg.no/#)
 **Total Violations:** 1
 
 ## Violation Details
@@ -16,4 +16,4 @@
 
 #### Affected Elements:
 
-- `#wp-skip-link`
+- `.operation-alert`

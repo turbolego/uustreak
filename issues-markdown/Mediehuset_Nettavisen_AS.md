@@ -1,6 +1,6 @@
 # WCAG Violations Report for Mediehuset Nettavisen AS
 
-**Timestamp:** 2025-11-28T00:22:56.353Z
+**Timestamp:** 2025-11-29T00:31:09.891Z
 **URL:** [https://www.nettavisen.no/#](https://www.nettavisen.no/#)
 **Total Violations:** 5
 
@@ -48,13 +48,12 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
 - `#page-header`
 - `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > .nav-wrap > nav`
-- `brick-carousel-v2[data-slides="4"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### All page content should be contained by landmarks
 

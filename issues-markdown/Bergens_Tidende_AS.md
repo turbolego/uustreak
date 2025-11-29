@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2025-11-28T00:29:48.392Z
+**Timestamp:** 2025-11-29T00:29:15.944Z
 **URL:** [https://www.bt.no/#](https://www.bt.no/#)
 **Total Violations:** 5
 
@@ -36,25 +36,26 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 21
+- **Count:** 22
 
 #### Affected Elements:
 
+- `.liveticker-red`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(2) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(3) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(4) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(5) > a > ._preview-title_1bm9r_721 > span`
-- `article[data-pulse-entity-id="q6pyQo"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `.memo > .text-container > h3`
 - `.kryssord > .text-container > h3`
 - `.minikryss > .text-container > h3`
 - `.ordjakten > .text-container > h3`
-- `article[data-pulse-entity-id="wr6Oq5"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `article[data-pulse-entity-id="6qw9Ko"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `a[aria-label="– Talentløs ledelse "] > .article__text-container > .article__section-kicker-container > .article__section`
+- `.article-section--btmeninger-debatt > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `.article-section--btmeninger-kommentar > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `.article-tip-us > p`
+- `.tip-us-underline`
 - `.opinion-banner-desc`
+- `a[aria-label="– Talentløs ledelse "] > .article__text-container > .article__section-kicker-container > .article__section`
 - `#Vågen`
 - `#Finse`
 - `#Danmarks\ plass`
@@ -94,9 +95,12 @@
 #### Affected Elements:
 
 - `.sr-only`
+- `.liveticker-red`
+- `a[data-name="Nyheter"]`
+- `.liveticker-item--snooze > .name`
 - `.collage-x3.row:nth-child(1)`
 - `.collage-x3.row:nth-child(4)`
-- `#dr-edition-teaser-r2abmt64 > div`
+- `#dr-edition-teaser-8094lyzjn > div`
 - `._heading_1bm9r_641 > span`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
@@ -119,16 +123,16 @@
 - `._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
 - `.vertical-x2.row:nth-child(11)`
-- `.vertical-x3.row:nth-child(15)`
 - `.collage-x4`
+- `.collage-x3.row:nth-child(16)`
 - `.hjernetrim-front-widget`
 - `.vertical-x2.row:nth-child(19)`
-- `.collage-x3.row:nth-child(22)`
-- `.vertical-x2.row:nth-child(25)`
-- `.collage-x3.row:nth-child(26)`
-- `.vertical-x2.row:nth-child(27)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(29)`
-- `.display-flex > .article__text-container`
+- `.vertical-x3.row:nth-child(22)`
+- `.vertical-x2.row:nth-child(24)`
+- `.collage-x3.row:nth-child(25)`
+- `.vertical-x2.row:nth-child(26)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(28)`
+- `.vertical-x3.row:nth-child(29)`
 - `.restaurant-list-header`
 - `.top-collage-x3 > .column--big.column`
 - `.minimal-teaser:nth-child(1)`
@@ -136,30 +140,27 @@
 - `.minimal-teaser:nth-child(2) > a > .teaser-container > .article__kicker-title`
 - `.minimal-teaser:nth-child(2) > .article__labels`
 - `.restaurant-map-teaser`
-- `.vertical-x2.row:nth-child(34)`
-- `.vertical-x3.row:nth-child(35)`
+- `.vertical-x2.row:nth-child(33)`
+- `.display-flex > .article__text-container`
 - `.widget-football.regional-widget`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
-- `.collage-x3.row:nth-child(38)`
-- `.vertical-x2.row:nth-child(39)`
-- `.collage-x3.row:nth-child(40)`
-- `.vertical-x1-ad.row:nth-child(41)`
-- `.vertical-x2.row:nth-child(43)`
-- `.collage-x3.row:nth-child(45)`
+- `.collage-x3.row:nth-child(37)`
+- `.vertical-x2.row:nth-child(38)`
+- `.vertical-x3.row:nth-child(39)`
+- `.vertical-x1-ad.row:nth-child(40)`
+- `.collage-x3.row:nth-child(42)`
+- `.vertical-x2.row:nth-child(44)`
 - `.opinion-banner-title`
 - `.opinion-banner-desc`
+- `.collage-x3.row:nth-child(47)`
 - `.vertical-x2.row:nth-child(48)`
-- `.vertical-x3.row:nth-child(49)`
 - `.widget-webcam`
-- `.vertical-x1-ad.row:nth-child(51)`
-- `.collage-x3.row:nth-child(52)`
-- `.vertical-x2.row:nth-child(53)`
-- `.vertical-x1-ad.row:nth-child(54)`
-- `.vertical-x3.row:nth-child(55)`
-- `.collage-x3.row:nth-child(56)`
-- `.vertical-x1-ad.row:nth-child(57)`
-- `.vertical-x3.row:nth-child(58)`
+- `.vertical-x1-ad.row:nth-child(50)`
+- `.collage-x3.row:nth-child(51)`
+- `.vertical-x2.row:nth-child(52)`
+- `.vertical-x1-ad.row:nth-child(53)`
+- `.vertical-x3.row:nth-child(54)`
 - `.sch-datacontroller__text`

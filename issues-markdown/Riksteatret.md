@@ -1,6 +1,6 @@
 # WCAG Violations Report for Riksteatret
 
-**Timestamp:** 2025-11-28T00:32:20.814Z
+**Timestamp:** 2025-11-29T00:40:38.192Z
 **URL:** [https://www.riksteatret.no/#](https://www.riksteatret.no/#)
 **Total Violations:** 2
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 9
+- **Count:** 8
 
 #### Affected Elements:
 
@@ -24,7 +24,6 @@
 - `#feature_6 > .module__grid > .module__content > .module__body > h4`
 - `#feature_7 > .module__grid > .module__content > .module__body > h4`
 - `#feature_8 > .module__grid > .module__content > .module__body > h4`
-- `#feature_9 > .module__grid > .module__content > .module__body > h4`
 
 ### Images must have alternative text
 
