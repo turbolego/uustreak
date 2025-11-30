@@ -67,10 +67,12 @@
     async function fetchViaProxy(url, mode) {
       if (mode === "allorigins") {
         // Fully free, works in browser, supports HTTPS
-        const api = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+        const api = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
         const res = await fetch(api);
-        if (!res.ok) throw new Error("AllOrigins error");
-        return await res.text();
+        if (!res.ok) throw new Error(`AllOrigins error: ${res.status}`);
+        const data = await res.json();
+        if (!data.contents) throw new Error("AllOrigins returned no contents");
+        return data.contents;
       }
 
       if (mode === "corsanywhere") {
