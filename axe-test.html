@@ -114,20 +114,38 @@
         html = await fetchViaProxy(url, mode);
         console.log('📦 HTML fetched, length:', html.length);
 
-        const proxiedHTML = `
-          ${html}
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.4/axe.min.js"><\/script>
-        `;
+        // Inject base tag to set URL context and axe-core script
+        let proxiedHTML = html;
+        
+        // Try to inject base tag after opening <head> tag
+        const headMatch = proxiedHTML.match(/<head[^>]*>/i);
+        if (headMatch) {
+          const headTagEnd = headMatch.index + headMatch[0].length;
+          proxiedHTML = proxiedHTML.slice(0, headTagEnd) + 
+            `\n<base href="${url}">\n<script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.4/axe.min.js"><\/script>\n` + 
+            proxiedHTML.slice(headTagEnd);
+          console.log('✅ Injected <base> tag and axe-core after <head>');
+        } else {
+          // Fallback: prepend to HTML
+          proxiedHTML = `<base href="${url}"><script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.4/axe.min.js"><\/script>\n` + proxiedHTML;
+          console.log('⚠️ No <head> found, prepended <base> tag and axe-core');
+        }
 
         console.log('📄 Setting iframe.srcdoc');
         iframe.srcdoc = proxiedHTML;
 
-        await new Promise(resolve => setTimeout(resolve, 500)); // allow DOM to build
-        console.log('✅ DOM build delay complete');
+        // Wait for iframe to fully load
+        await new Promise(resolve => {
+          iframe.onload = () => {
+            console.log('✅ iframe.onload fired (proxy mode)');
+            resolve();
+          };
+        });
 
         const iframeDoc = iframe.contentDocument || iframe.contentWindow?.document;
         console.log('📄 iframeDoc.URL:', iframeDoc?.URL);
         console.log('📄 iframeDoc.title:', iframeDoc?.title);
+        console.log('📄 iframeDoc.baseURI:', iframeDoc?.baseURI);
         runAxe(iframeDoc, url);
 
       } catch (err) {
@@ -142,6 +160,7 @@
       console.log('📄 Document to test:', doc);
       console.log('📄 Document URL:', doc?.URL);
       console.log('📄 Document title:', doc?.title);
+      console.log('📄 Document baseURI:', doc?.baseURI);
       console.log('🎯 Expected URL:', url);
       
       try {
@@ -149,12 +168,22 @@
           throw new Error('Cannot access iframe content document. Likely blocked by CORS policy.');
         }
         
-        console.log('🔬 Running axe.run...');
-        const results = await axe.run(doc);
+        // Verify we have the iframe document, not the parent
+        if (doc === document) {
+          console.error('⚠️ WARNING: doc === parent document! This is wrong!');
+          throw new Error('Attempted to test parent document instead of iframe');
+        }
+        
+        console.log('🔬 Running axe.run with explicit context...');
+        // Use explicit context object to ensure we test the iframe document
+        const results = await axe.run(doc, {
+          resultTypes: ['violations', 'passes', 'incomplete', 'inapplicable']
+        });
         console.log('✅ axe.run completed');
         console.log('📊 Results:', results);
         console.log('📊 Violations count:', results.violations.length);
         console.log('📊 URL tested:', results.url);
+        console.log('📊 TestEngine:', results.testEngine);
         
         let out = `AXE Accessibility Report\nURL: ${url}\nTested URL: ${results.url || 'N/A'}\nDate: ${new Date().toLocaleString()}\n\n`;
 
