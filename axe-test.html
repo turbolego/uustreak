@@ -130,23 +130,47 @@
 
     async function loadAndTest() {
       const url = document.getElementById('urlInput').value.trim();
+      console.log('🔍 loadAndTest called with URL:', url);
+      
       if (!url) {
         resultsEl.textContent = 'Please enter a URL to test.';
         return;
       }
 
       resultsEl.textContent = 'Loading page...';
+      console.log('📄 Setting iframe.src to:', url);
       iframe.src = url;
 
       iframe.onload = async () => {
+        console.log('✅ iframe.onload fired');
+        console.log('📍 iframe.src:', iframe.src);
+        console.log('📍 iframe.contentWindow.location.href:', iframe.contentWindow?.location?.href);
+        
         try {
-          const results = await axe.run(iframe.contentDocument);
+          // Check what document we're actually accessing
+          const iframeDoc = iframe.contentDocument || iframe.contentWindow?.document;
+          console.log('📄 iframeDoc:', iframeDoc);
+          console.log('📄 iframeDoc.URL:', iframeDoc?.URL);
+          console.log('📄 iframeDoc.title:', iframeDoc?.title);
+          console.log('📄 iframeDoc.body:', iframeDoc?.body);
+          
+          if (!iframeDoc) {
+            throw new Error('Cannot access iframe content document. Likely blocked by CORS policy.');
+          }
+          
+          console.log('🔬 Running axe.run on iframeDoc...');
+          const results = await axe.run(iframeDoc);
+          console.log('✅ axe.run completed');
+          console.log('📊 Results:', results);
+          console.log('📊 Violations count:', results.violations.length);
+          console.log('📊 URL tested:', results.url);
           
           let output = `╔═══════════════════════════════════════════════════════════════╗
 ║              AXE-CORE ACCESSIBILITY REPORT                ║
 ╚═══════════════════════════════════════════════════════════════╝
 
 URL: ${url}
+Tested URL: ${results.url || 'N/A'}
 Date: ${new Date().toLocaleString()}
 
 SUMMARY:
@@ -238,16 +262,20 @@ SUMMARY:
 
           resultsEl.innerHTML = escapeHtml(output);
         } catch (error) {
+          console.error('❌ Error during axe test:', error);
+          console.error('❌ Error stack:', error.stack);
           resultsEl.textContent = 'Error: ' + error.message + '\n\nIf you are testing a cross-origin page, the browser blocks access for security reasons. Test one of your own site pages or use a backend proxy.';
         }
       };
 
-      iframe.onerror = () => {
+      iframe.onerror = (error) => {
+        console.error('❌ iframe.onerror fired:', error);
         resultsEl.textContent = 'Unable to load the page. Check that the URL is on the same origin or that the page allows embedding.';
       };
     }
 
     function clearResults() {
+      console.log('🧹 Clearing results');
       iframe.src = 'about:blank';
       resultsEl.textContent = 'Waiting for a test...';
     }
