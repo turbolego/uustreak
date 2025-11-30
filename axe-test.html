@@ -177,10 +177,8 @@
         }
         
         console.log('🔬 Running axe.run with explicit context...');
-        // Use explicit context object to ensure we test the iframe document
-        const results = await axe.run(doc, {
-          resultTypes: ['violations', 'passes', 'incomplete', 'inapplicable']
-        });
+        // Pass the document directly - axe will test it and return all result types by default
+        const results = await axe.run(doc);
         console.log('✅ axe.run completed');
         console.log('📊 Results:', results);
         console.log('📊 Violations count:', results.violations.length);
