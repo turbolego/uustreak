@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UUStreak Accessibility Tester</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    input[type="text"] {
+      width: 100%;
+      max-width: 600px;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-right: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      background: #ff9500;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e08900;
+    }
+    iframe {
+      width: 100%;
+      min-height: 420px;
+      border: 1px solid #ccc;
+      margin-top: 1rem;
+    }
+    pre {
+      background: #f6f6f6;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow: auto;
+      max-height: 400px;
+      font-family: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+    }
+    .warning {
+      color: #b45309;
+      background: #fef3c7;
+      padding: 0.5rem;
+      border-radius: 4px;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>UUStreak axe-core tester</h1>
+  <p>Enter any page on this domain (same origin) to load it in the iframe and run axe-core checks. External URLs will usually be blocked by browser security.</p>
+  <label for="urlInput">URL to test:</label>
+  <input type="text" id="urlInput" placeholder="https://uustreak.no/your-page.html" value="https://uustreak.no/index.html">
+  <div style="margin-top: 1rem;" aria-live="polite">
+    <button onclick="loadAndTest()">Load & test</button>
+    <button onclick="clearResults()">Clear</button>
+  </div>
+  <div class="warning">You can only run axe-core on same-origin pages here. Cross-origin URLs need backend proxies, crawler services, or the axe DevTools browser extension.</div>
+  <iframe id="testFrame" title="Page under test"></iframe>
+  <h2>Results</h2>
+  <pre id="results">Waiting for a test...</pre>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.4/axe.min.js"></script>
+  <script>
+    const iframe = document.getElementById('testFrame');
+    const resultsEl = document.getElementById('results');
+
+    async function loadAndTest() {
+      const url = document.getElementById('urlInput').value.trim();
+      if (!url) {
+        resultsEl.textContent = 'Please enter a URL to test.';
+        return;
+      }
+
+      resultsEl.textContent = 'Loading page...';
+      iframe.src = url;
+
+      iframe.onload = async () => {
+        try {
+          const results = await axe.run(iframe.contentDocument);
+          const summary = [`
+=== axe-core Results ===
+URL: ${url}
+Violations: ${results.violations.length}
+Passes: ${results.passes.length}
+Incomplete: ${results.incomplete.length}
+`];
+          if (results.violations.length === 0) {
+            summary.push('No violations found.');
+          } else {
+            results.violations.forEach((violation, index) => {
+              summary.push(`\n${index + 1}. ${violation.id} [${violation.impact}] - ${violation.help}`);
+              summary.push(`   Elements affected: ${violation.nodes.length}`);
+              summary.push(`   ${violation.description}`);
+            });
+          }
+          resultsEl.textContent = summary.join('\n');
+        } catch (error) {
+          resultsEl.textContent = 'Error: ' + error.message + '\n\nIf you are testing a cross-origin page, the browser blocks access for security reasons. Test one of your own site pages or use a backend proxy.';
+        }
+      };
+
+      iframe.onerror = () => {
+        resultsEl.textContent = 'Unable to load the page. Check that the URL is on the same origin or that the page allows embedding.';
+      };
+    }
+
+    function clearResults() {
+      iframe.src = 'about:blank';
+      resultsEl.textContent = 'Waiting for a test...';
+    }
+  </script>
+</body>
+</html>
