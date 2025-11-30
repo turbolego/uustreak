@@ -3,15 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UUStreak Accessibility Tester</title>
+  <title>UUStreak Accessibility Tester (Proxy Enabled)</title>
+
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      padding: 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-      line-height: 1.5;
-    }
+    body { font-family: system-ui, sans-serif; padding: 2rem; max-width: 900px; margin: 0 auto; }
     .visually-hidden {
       position: absolute;
       width: 1px;
@@ -23,261 +18,196 @@
       white-space: nowrap;
       border: 0;
     }
-    input[type="text"] {
-      width: 100%;
-      max-width: 600px;
-      padding: 0.5rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    button {
-      margin-right: 0.5rem;
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 4px;
-      background: #000;
-      color: #fff;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #333;
-    }
-    button:focus {
-      outline: 2px solid #0066cc;
-      outline-offset: 2px;
-    }
-    iframe {
-      width: 100%;
-      min-height: 420px;
-      border: 1px solid #ccc;
-      margin-top: 1rem;
-    }
-    pre {
-      background: #f6f6f6;
-      padding: 1rem;
-      border-radius: 6px;
-      overflow: auto;
-      max-height: 600px;
-      font-family: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
-      font-size: 0.9rem;
-    }
-    .warning {
-      color: #b45309;
-      background: #fef3c7;
-      padding: 0.5rem;
-      border-radius: 4px;
-      margin-top: 1rem;
-    }
-    .violation {
-      margin-bottom: 2rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid #ddd;
-    }
-    .impact-critical { color: #dc2626; }
-    .impact-serious { color: #ea580c; }
-    .impact-moderate { color: #d97706; }
-    .impact-minor { color: #ca8a04; }
-    .selector {
-      background: #e0e7ff;
-      padding: 0.2rem 0.4rem;
-      border-radius: 3px;
-      font-family: monospace;
-      font-size: 0.85rem;
-    }
-    .html-snippet {
-      background: #1e293b;
-      color: #e2e8f0;
-      padding: 0.5rem;
-      border-radius: 4px;
-      margin: 0.5rem 0;
-      overflow-x: auto;
-      font-size: 0.85rem;
-    }
+    input[type="text"] { width: 100%; padding: 0.5rem; margin-top: .3rem; }
+    button { padding: .5rem 1rem; margin-right: .5rem; background: black; color: white; border: none; cursor: pointer; }
+    button:hover { background: #333; }
+    button:focus { outline: 2px solid #0066cc; outline-offset: 2px; }
+    iframe { width: 100%; min-height: 420px; border: 1px solid #ccc; margin-top: 1rem; }
+    pre { background: #f6f6f6; padding: 1rem; border-radius: 6px; max-height: 600px; overflow: auto; white-space: pre-wrap; }
   </style>
 </head>
 <body>
   <main>
     <header>
-      <h1>UUStreak axe-core tester</h1>
-      <p>Enter any page on this domain (same origin) to load it in the iframe and run axe-core checks. External URLs will usually be blocked by browser security.</p>
+      <h1>UUStreak axe-core tester (with free proxy crawler)</h1>
     </header>
     <section aria-labelledby="test-section-heading">
       <h2 id="test-section-heading" class="visually-hidden">Test Configuration</h2>
       <label for="urlInput">URL to test:</label>
-      <input type="text" id="urlInput" placeholder="https://uustreak.no/your-page.html" value="https://uustreak.no/index.html">
-      <div style="margin-top: 1rem;" aria-live="polite">
-        <button onclick="loadAndTest()">Load & test</button>
+      <input id="urlInput" type="text" placeholder="https://example.com" value="https://uustreak.no/">
+
+      <div style="margin-top: 1rem;">
+        <button onclick="loadAndTest('direct')">Load & test (direct)</button>
+        <button onclick="loadAndTest('allorigins')">Load via Proxy (AllOrigins)</button>
+        <button onclick="loadAndTest('corsanywhere')">Load via CORS Anywhere</button>
         <button onclick="clearResults()">Clear</button>
       </div>
-      <div class="warning">You can only run axe-core on same-origin pages here. Cross-origin URLs need backend proxies, crawler services, or the axe DevTools browser extension.</div>
-      <iframe id="testFrame" title="Page under test"></iframe>
+
+      <p><strong>Tip:</strong> For CORS Anywhere, open once:  
+      <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank">https://cors-anywhere.herokuapp.com/corsdemo</a></p>
+
+      <iframe id="testFrame" title="Page being tested for accessibility"></iframe>
     </section>
     <section aria-labelledby="results-heading">
       <h2 id="results-heading">Results</h2>
       <pre id="results">Waiting for a test...</pre>
     </section>
   </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.4/axe.min.js"></script>
-  <script>
-    const iframe = document.getElementById('testFrame');
-    const resultsEl = document.getElementById('results');
 
-    function escapeHtml(html) {
-      return html.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.4/axe.min.js"></script>
+
+  <script>
+    const iframe = document.getElementById("testFrame");
+    const resultsEl = document.getElementById("results");
+
+    function escapeHtml(str) {
+      return str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     }
 
-    async function loadAndTest() {
-      const url = document.getElementById('urlInput').value.trim();
-      console.log('🔍 loadAndTest called with URL:', url);
-      
-      if (!url) {
-        resultsEl.textContent = 'Please enter a URL to test.';
-        return;
+    async function fetchViaProxy(url, mode) {
+      if (mode === "allorigins") {
+        // Fully free, works in browser, supports HTTPS
+        const api = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+        const res = await fetch(api);
+        if (!res.ok) throw new Error("AllOrigins error");
+        return await res.text();
       }
 
-      resultsEl.textContent = 'Loading page...';
-      console.log('📄 Setting iframe.src to:', url);
-      iframe.src = url;
+      if (mode === "corsanywhere") {
+        // Requires a one-time enable click — still free
+        const api = `https://cors-anywhere.herokuapp.com/${url}`;
+        const res = await fetch(api);
+        if (!res.ok) throw new Error("CORS Anywhere error");
+        return await res.text();
+      }
 
-      iframe.onload = async () => {
-        console.log('✅ iframe.onload fired');
-        console.log('📍 iframe.src:', iframe.src);
-        console.log('📍 iframe.contentWindow.location.href:', iframe.contentWindow?.location?.href);
-        
-        try {
-          // Check what document we're actually accessing
+      throw new Error("Unknown proxy mode");
+    }
+
+    async function loadAndTest(mode) {
+      const url = document.getElementById("urlInput").value.trim();
+      console.log('🔍 loadAndTest called with mode:', mode, 'URL:', url);
+      resultsEl.textContent = "Loading...";
+
+      try {
+        let html = "";
+
+        if (mode === "direct") {
+          console.log('📄 Direct mode: Setting iframe.src to:', url);
+          iframe.src = url;
+          await new Promise(resolve => {
+            iframe.onload = () => {
+              console.log('✅ iframe.onload fired (direct mode)');
+              console.log('📍 iframe.src:', iframe.src);
+              console.log('📍 iframe.contentWindow.location.href:', iframe.contentWindow?.location?.href);
+              resolve();
+            };
+          });
           const iframeDoc = iframe.contentDocument || iframe.contentWindow?.document;
-          console.log('📄 iframeDoc:', iframeDoc);
           console.log('📄 iframeDoc.URL:', iframeDoc?.URL);
           console.log('📄 iframeDoc.title:', iframeDoc?.title);
-          console.log('📄 iframeDoc.body:', iframeDoc?.body);
-          
-          if (!iframeDoc) {
-            throw new Error('Cannot access iframe content document. Likely blocked by CORS policy.');
-          }
-          
-          console.log('🔬 Running axe.run on iframeDoc...');
-          const results = await axe.run(iframeDoc);
-          console.log('✅ axe.run completed');
-          console.log('📊 Results:', results);
-          console.log('📊 Violations count:', results.violations.length);
-          console.log('📊 URL tested:', results.url);
-          
-          let output = `╔═══════════════════════════════════════════════════════════════╗
-║              AXE-CORE ACCESSIBILITY REPORT                ║
-╚═══════════════════════════════════════════════════════════════╝
-
-URL: ${url}
-Tested URL: ${results.url || 'N/A'}
-Date: ${new Date().toLocaleString()}
-
-SUMMARY:
-  • Violations: ${results.violations.length}
-  • Passes: ${results.passes.length}
-  • Incomplete: ${results.incomplete.length}
-  • Inapplicable: ${results.inapplicable.length}
-
-`;
-
-          if (results.violations.length === 0) {
-            output += '✓ No violations found!\n';
-          } else {
-            output += '═══════════════════════════════════════════════════════════════\n';
-            output += '                      VIOLATIONS FOUND                        \n';
-            output += '═══════════════════════════════════════════════════════════════\n\n';
-            
-            results.violations.forEach((violation, index) => {
-              const impactLabel = violation.impact ? violation.impact.toUpperCase() : 'UNKNOWN';
-              
-              output += `\n┌─────────────────────────────────────────────────────────────┐\n`;
-              output += `│ VIOLATION ${index + 1} of ${results.violations.length}\n`;
-              output += `└─────────────────────────────────────────────────────────────┘\n\n`;
-              output += `ID: ${violation.id}\n`;
-              output += `Impact: [${impactLabel}]\n`;
-              output += `Issue: ${violation.help}\n`;
-              output += `Description: ${violation.description}\n`;
-              output += `WCAG: ${violation.tags.join(', ')}\n`;
-              output += `Help URL: ${violation.helpUrl}\n`;
-              output += `Elements Affected: ${violation.nodes.length}\n\n`;
-
-              violation.nodes.forEach((node, nodeIndex) => {
-                output += `  ┌── Element ${nodeIndex + 1} ────────────────────────────────────────\n`;
-                output += `  │\n`;
-                output += `  │ CSS Selector:\n`;
-                output += `  │   ${node.target.join(' ')}\n`;
-                output += `  │\n`;
-                
-                if (node.html) {
-                  output += `  │ HTML:\n`;
-                  const htmlLines = node.html.split('\n');
-                  htmlLines.forEach(line => {
-                    output += `  │   ${line}\n`;
-                  });
-                  output += `  │\n`;
-                }
-
-                if (node.failureSummary) {
-                  output += `  │ Failure Summary:\n`;
-                  const summaryLines = node.failureSummary.split('\n');
-                  summaryLines.forEach(line => {
-                    if (line.trim()) {
-                      output += `  │   ${line.trim()}\n`;
-                    }
-                  });
-                  output += `  │\n`;
-                }
-
-                if (node.any && node.any.length > 0) {
-                  output += `  │ Fix any of:\n`;
-                  node.any.forEach(check => {
-                    output += `  │   • ${check.message}\n`;
-                  });
-                  output += `  │\n`;
-                }
-
-                if (node.all && node.all.length > 0) {
-                  output += `  │ Fix all of:\n`;
-                  node.all.forEach(check => {
-                    output += `  │   • ${check.message}\n`;
-                  });
-                  output += `  │\n`;
-                }
-
-                if (node.none && node.none.length > 0) {
-                  output += `  │ Fix none of:\n`;
-                  node.none.forEach(check => {
-                    output += `  │   • ${check.message}\n`;
-                  });
-                  output += `  │\n`;
-                }
-
-                output += `  └─────────────────────────────────────────────────────────\n\n`;
-              });
-
-              output += '\n';
-            });
-          }
-
-          resultsEl.innerHTML = escapeHtml(output);
-        } catch (error) {
-          console.error('❌ Error during axe test:', error);
-          console.error('❌ Error stack:', error.stack);
-          resultsEl.textContent = 'Error: ' + error.message + '\n\nIf you are testing a cross-origin page, the browser blocks access for security reasons. Test one of your own site pages or use a backend proxy.';
+          return runAxe(iframeDoc, url);
         }
-      };
 
-      iframe.onerror = (error) => {
-        console.error('❌ iframe.onerror fired:', error);
-        resultsEl.textContent = 'Unable to load the page. Check that the URL is on the same origin or that the page allows embedding.';
-      };
+        // PROXY MODE → fetch HTML and inject into sandboxed iframe
+        console.log('🌐 Proxy mode:', mode, '- Fetching HTML from:', url);
+        html = await fetchViaProxy(url, mode);
+        console.log('📦 HTML fetched, length:', html.length);
+
+        // Inject base tag to set URL context and axe-core script
+        let proxiedHTML = html;
+        
+        // Try to inject base tag after opening <head> tag
+        const headMatch = proxiedHTML.match(/<head[^>]*>/i);
+        if (headMatch) {
+          const headTagEnd = headMatch.index + headMatch[0].length;
+          proxiedHTML = proxiedHTML.slice(0, headTagEnd) + 
+            `\n<base href="${url}">\n<script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.4/axe.min.js"><\/script>\n` + 
+            proxiedHTML.slice(headTagEnd);
+          console.log('✅ Injected <base> tag and axe-core after <head>');
+        } else {
+          // Fallback: prepend to HTML
+          proxiedHTML = `<base href="${url}"><script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.4/axe.min.js"><\/script>\n` + proxiedHTML;
+          console.log('⚠️ No <head> found, prepended <base> tag and axe-core');
+        }
+
+        console.log('📄 Setting iframe.srcdoc');
+        iframe.srcdoc = proxiedHTML;
+
+        // Wait for iframe to fully load
+        await new Promise(resolve => {
+          iframe.onload = () => {
+            console.log('✅ iframe.onload fired (proxy mode)');
+            resolve();
+          };
+        });
+
+        const iframeDoc = iframe.contentDocument || iframe.contentWindow?.document;
+        console.log('📄 iframeDoc.URL:', iframeDoc?.URL);
+        console.log('📄 iframeDoc.title:', iframeDoc?.title);
+        console.log('📄 iframeDoc.baseURI:', iframeDoc?.baseURI);
+        runAxe(iframeDoc, url);
+
+      } catch (err) {
+        console.error('❌ Error in loadAndTest:', err);
+        console.error('❌ Error stack:', err.stack);
+        resultsEl.textContent = "ERROR: " + err.message;
+      }
+    }
+
+    async function runAxe(doc, url) {
+      console.log('🔬 runAxe called');
+      console.log('📄 Document to test:', doc);
+      console.log('📄 Document URL:', doc?.URL);
+      console.log('📄 Document title:', doc?.title);
+      console.log('📄 Document baseURI:', doc?.baseURI);
+      console.log('🎯 Expected URL:', url);
+      
+      try {
+        if (!doc) {
+          throw new Error('Cannot access iframe content document. Likely blocked by CORS policy.');
+        }
+        
+        // Verify we have the iframe document, not the parent
+        if (doc === document) {
+          console.error('⚠️ WARNING: doc === parent document! This is wrong!');
+          throw new Error('Attempted to test parent document instead of iframe');
+        }
+        
+        console.log('🔬 Running axe.run with explicit context...');
+        // Use explicit context object to ensure we test the iframe document
+        const results = await axe.run(doc, {
+          resultTypes: ['violations', 'passes', 'incomplete', 'inapplicable']
+        });
+        console.log('✅ axe.run completed');
+        console.log('📊 Results:', results);
+        console.log('📊 Violations count:', results.violations.length);
+        console.log('📊 URL tested:', results.url);
+        console.log('📊 TestEngine:', results.testEngine);
+        
+        let out = `AXE Accessibility Report\nURL: ${url}\nTested URL: ${results.url || 'N/A'}\nDate: ${new Date().toLocaleString()}\n\n`;
+
+        out += `Violations: ${results.violations.length}\n\n`;
+
+        results.violations.forEach(v => {
+          out += `---\n${v.id} (${v.impact})\n${v.help}\n${v.helpUrl}\n\n`;
+          v.nodes.forEach(n => {
+            out += `Element: ${n.target.join(" ")}\n\nHTML:\n${escapeHtml(n.html || "")}\n\n`;
+          });
+        });
+
+        resultsEl.textContent = out;
+      } catch (err) {
+        console.error('❌ Error in runAxe:', err);
+        console.error('❌ Error stack:', err.stack);
+        resultsEl.textContent = "AXE Error: " + err.message;
+      }
     }
 
     function clearResults() {
       console.log('🧹 Clearing results');
-      iframe.src = 'about:blank';
-      resultsEl.textContent = 'Waiting for a test...';
+      iframe.src = "about:blank";
+      resultsEl.textContent = "Waiting for a test...";
     }
   </script>
 </body>
