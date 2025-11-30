@@ -1,6 +1,6 @@
 # WCAG Violations Report for Teknisk Ukeblad Media AS
 
-**Timestamp:** 2025-11-29T00:28:49.116Z
+**Timestamp:** 2025-11-30T00:41:33.811Z
 **URL:** [https://www.tu.no/](https://www.tu.no/)
 **Total Violations:** 5
 
@@ -52,12 +52,13 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
-- `#preamble-564356 > .md\:flex-col.flex-row.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover[height="563"][loading="lazy"]`
-- `#preamble-564838 > .md\:flex-col.flex-row.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover[height="563"][loading="lazy"]`
+- `.object-cover[loading="eager"][height="563"]`
+- `#preamble-564850 > .md\:flex-col.flex-row.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover[height="563"][loading="lazy"]`
+- `#preamble-564353 > .md\:flex-col.flex-row.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover[height="563"][loading="lazy"]`
 
 ### Links must have discernible text
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-11-29T00:34:05.287Z
+**Timestamp:** 2025-11-30T00:47:01.550Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 8
 
@@ -64,12 +64,13 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
-- `div:nth-child(18) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .gf.fc.fb > .fe.ff.el`
-- `div:nth-child(21) > .fa.f9.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1) > .gj.fc.fb > .fe.ff.el`
+- `.g6 > .fe.ff.el`
+- `div:nth-child(19) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .gg.fc.fb > .fe.ff.el`
+- `div:nth-child(22) > .fa.f9.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1) > .gk.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -96,10 +97,10 @@
 - `img[alt="Loungewear 50%"]`
 - `img[alt="Therapi-serien 50%"]`
 - `img[alt="Såper og kremer 50%"]`
-- `div:nth-child(16) > .g6.bv.bw > .g7.g8 > .bz.dd > .is-draggable.g9.ao > .gb.ga.b > .gc.ie.g9:nth-child(7) > div > .ca.s.c9 > .ge.da.c4 > .en.ga.a3`
+- `div:nth-child(17) > .g7.bv.bw > .g8.g9 > .bz.dd > .is-draggable.ga.ao > .gc.gb.b > .gd.if.ga:nth-child(7) > div > .ca.s.c9 > .gf.da.c4 > .en.gb.a3`
 - `img[alt="AVA velværeserie 50%"]`
 - `img[alt="Baderomstilbehør 50%"]`
-- `a[href$="skjonnhetstilbehor"] > .ge.da.c4 > .en.ga.a3`
+- `a[href$="skjonnhetstilbehor"] > .gf.da.c4 > .en.gb.a3`
 - `img[alt="Julegavetips til henne"]`
 - `img[alt="Gavetips under 100,-"]`
 - `img[alt="Gavetips under 200,-"]`
@@ -116,10 +117,10 @@
 
 #### Affected Elements:
 
-- `div:nth-child(18) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(18) > .fa.f9.bv > .bl.c4.bz > .ca.s.c9`
-- `div:nth-child(21) > .fa.f9.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1)`
-- `div:nth-child(21) > .fa.f9.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(19) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(19) > .fa.f9.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(22) > .fa.f9.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1)`
+- `div:nth-child(22) > .fa.f9.bv > .bl.c4.bz > .ca.s.c9`
 
 ### All page content should be contained by landmarks
 
