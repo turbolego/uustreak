@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2025-11-30T00:52:19.441Z
-**URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
+**Timestamp:** 2025-11-30T00:52:18.198Z
+**URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
 **Total Violations:** 7
 
 ## Violation Details
@@ -105,7 +105,7 @@
 - `.collage-x3.row:nth-child(3)`
 - `.mm-front-link`
 - `#countdown-mm2`
-- `#dr-edition-teaser-mdni1roq > div`
+- `#dr-edition-teaser-plklqlgb3 > div`
 - `a > ._heading_1bm9r_641 > span`
 - `._aftenball_gcann_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._aftenball_gcann_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
@@ -194,7 +194,7 @@
 - `.vertical-x2.row:nth-child(69)`
 - `.vertical-x1-ad.row:nth-child(70)`
 - `.vertical-x3.row:nth-child(71)`
-- `.sch-datacontroller__text`
+- `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`
 
 ### Scrollable region must have keyboard access
 
