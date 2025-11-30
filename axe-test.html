@@ -12,6 +12,17 @@
       margin: 0 auto;
       line-height: 1.5;
     }
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
     input[type="text"] {
       width: 100%;
       max-width: 600px;
@@ -26,12 +37,16 @@
       font-size: 1rem;
       border: none;
       border-radius: 4px;
-      background: #ff9500;
-      color: white;
+      background: #000;
+      color: #fff;
       cursor: pointer;
     }
     button:hover {
-      background: #e08900;
+      background: #333;
+    }
+    button:focus {
+      outline: 2px solid #0066cc;
+      outline-offset: 2px;
     }
     iframe {
       width: 100%;
@@ -83,18 +98,27 @@
   </style>
 </head>
 <body>
-  <h1>UUStreak axe-core tester</h1>
-  <p>Enter any page on this domain (same origin) to load it in the iframe and run axe-core checks. External URLs will usually be blocked by browser security.</p>
-  <label for="urlInput">URL to test:</label>
-  <input type="text" id="urlInput" placeholder="https://uustreak.no/your-page.html" value="https://uustreak.no/index.html">
-  <div style="margin-top: 1rem;" aria-live="polite">
-    <button onclick="loadAndTest()">Load & test</button>
-    <button onclick="clearResults()">Clear</button>
-  </div>
-  <div class="warning">You can only run axe-core on same-origin pages here. Cross-origin URLs need backend proxies, crawler services, or the axe DevTools browser extension.</div>
-  <iframe id="testFrame" title="Page under test"></iframe>
-  <h2>Results</h2>
-  <pre id="results">Waiting for a test...</pre>
+  <main>
+    <header>
+      <h1>UUStreak axe-core tester</h1>
+      <p>Enter any page on this domain (same origin) to load it in the iframe and run axe-core checks. External URLs will usually be blocked by browser security.</p>
+    </header>
+    <section aria-labelledby="test-section-heading">
+      <h2 id="test-section-heading" class="visually-hidden">Test Configuration</h2>
+      <label for="urlInput">URL to test:</label>
+      <input type="text" id="urlInput" placeholder="https://uustreak.no/your-page.html" value="https://uustreak.no/index.html">
+      <div style="margin-top: 1rem;" aria-live="polite">
+        <button onclick="loadAndTest()">Load & test</button>
+        <button onclick="clearResults()">Clear</button>
+      </div>
+      <div class="warning">You can only run axe-core on same-origin pages here. Cross-origin URLs need backend proxies, crawler services, or the axe DevTools browser extension.</div>
+      <iframe id="testFrame" title="Page under test"></iframe>
+    </section>
+    <section aria-labelledby="results-heading">
+      <h2 id="results-heading">Results</h2>
+      <pre id="results">Waiting for a test...</pre>
+    </section>
+  </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.4/axe.min.js"></script>
   <script>
     const iframe = document.getElementById('testFrame');
