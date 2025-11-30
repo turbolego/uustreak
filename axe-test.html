@@ -44,8 +44,9 @@
       padding: 1rem;
       border-radius: 6px;
       overflow: auto;
-      max-height: 400px;
+      max-height: 600px;
       font-family: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+      font-size: 0.9rem;
     }
     .warning {
       color: #b45309;
@@ -53,6 +54,31 @@
       padding: 0.5rem;
       border-radius: 4px;
       margin-top: 1rem;
+    }
+    .violation {
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    .impact-critical { color: #dc2626; }
+    .impact-serious { color: #ea580c; }
+    .impact-moderate { color: #d97706; }
+    .impact-minor { color: #ca8a04; }
+    .selector {
+      background: #e0e7ff;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: monospace;
+      font-size: 0.85rem;
+    }
+    .html-snippet {
+      background: #1e293b;
+      color: #e2e8f0;
+      padding: 0.5rem;
+      border-radius: 4px;
+      margin: 0.5rem 0;
+      overflow-x: auto;
+      font-size: 0.85rem;
     }
   </style>
 </head>
@@ -74,6 +100,10 @@
     const iframe = document.getElementById('testFrame');
     const resultsEl = document.getElementById('results');
 
+    function escapeHtml(html) {
+      return html.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
     async function loadAndTest() {
       const url = document.getElementById('urlInput').value.trim();
       if (!url) {
@@ -87,23 +117,102 @@
       iframe.onload = async () => {
         try {
           const results = await axe.run(iframe.contentDocument);
-          const summary = [`
-=== axe-core Results ===
+          
+          let output = `╔═══════════════════════════════════════════════════════════════╗
+║              AXE-CORE ACCESSIBILITY REPORT                ║
+╚═══════════════════════════════════════════════════════════════╝
+
 URL: ${url}
-Violations: ${results.violations.length}
-Passes: ${results.passes.length}
-Incomplete: ${results.incomplete.length}
-`];
+Date: ${new Date().toLocaleString()}
+
+SUMMARY:
+  • Violations: ${results.violations.length}
+  • Passes: ${results.passes.length}
+  • Incomplete: ${results.incomplete.length}
+  • Inapplicable: ${results.inapplicable.length}
+
+`;
+
           if (results.violations.length === 0) {
-            summary.push('No violations found.');
+            output += '✓ No violations found!\n';
           } else {
+            output += '═══════════════════════════════════════════════════════════════\n';
+            output += '                      VIOLATIONS FOUND                        \n';
+            output += '═══════════════════════════════════════════════════════════════\n\n';
+            
             results.violations.forEach((violation, index) => {
-              summary.push(`\n${index + 1}. ${violation.id} [${violation.impact}] - ${violation.help}`);
-              summary.push(`   Elements affected: ${violation.nodes.length}`);
-              summary.push(`   ${violation.description}`);
+              const impactLabel = violation.impact ? violation.impact.toUpperCase() : 'UNKNOWN';
+              
+              output += `\n┌─────────────────────────────────────────────────────────────┐\n`;
+              output += `│ VIOLATION ${index + 1} of ${results.violations.length}\n`;
+              output += `└─────────────────────────────────────────────────────────────┘\n\n`;
+              output += `ID: ${violation.id}\n`;
+              output += `Impact: [${impactLabel}]\n`;
+              output += `Issue: ${violation.help}\n`;
+              output += `Description: ${violation.description}\n`;
+              output += `WCAG: ${violation.tags.join(', ')}\n`;
+              output += `Help URL: ${violation.helpUrl}\n`;
+              output += `Elements Affected: ${violation.nodes.length}\n\n`;
+
+              violation.nodes.forEach((node, nodeIndex) => {
+                output += `  ┌── Element ${nodeIndex + 1} ────────────────────────────────────────\n`;
+                output += `  │\n`;
+                output += `  │ CSS Selector:\n`;
+                output += `  │   ${node.target.join(' ')}\n`;
+                output += `  │\n`;
+                
+                if (node.html) {
+                  output += `  │ HTML:\n`;
+                  const htmlLines = node.html.split('\n');
+                  htmlLines.forEach(line => {
+                    output += `  │   ${line}\n`;
+                  });
+                  output += `  │\n`;
+                }
+
+                if (node.failureSummary) {
+                  output += `  │ Failure Summary:\n`;
+                  const summaryLines = node.failureSummary.split('\n');
+                  summaryLines.forEach(line => {
+                    if (line.trim()) {
+                      output += `  │   ${line.trim()}\n`;
+                    }
+                  });
+                  output += `  │\n`;
+                }
+
+                if (node.any && node.any.length > 0) {
+                  output += `  │ Fix any of:\n`;
+                  node.any.forEach(check => {
+                    output += `  │   • ${check.message}\n`;
+                  });
+                  output += `  │\n`;
+                }
+
+                if (node.all && node.all.length > 0) {
+                  output += `  │ Fix all of:\n`;
+                  node.all.forEach(check => {
+                    output += `  │   • ${check.message}\n`;
+                  });
+                  output += `  │\n`;
+                }
+
+                if (node.none && node.none.length > 0) {
+                  output += `  │ Fix none of:\n`;
+                  node.none.forEach(check => {
+                    output += `  │   • ${check.message}\n`;
+                  });
+                  output += `  │\n`;
+                }
+
+                output += `  └─────────────────────────────────────────────────────────\n\n`;
+              });
+
+              output += '\n';
             });
           }
-          resultsEl.textContent = summary.join('\n');
+
+          resultsEl.innerHTML = escapeHtml(output);
         } catch (error) {
           resultsEl.textContent = 'Error: ' + error.message + '\n\nIf you are testing a cross-origin page, the browser blocks access for security reasons. Test one of your own site pages or use a backend proxy.';
         }
