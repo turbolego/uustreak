@@ -42,25 +42,33 @@
 </head>
 
 <body>
-    <main>
-        <h1>WCAG-brudd topplista</h1>
-        <button aria-label="Lær mer om denne applikasjonen" id="open-readme-dialog">Vis readme fra GitHub -repo</button>
-        <button aria-label="Se trend animasjon" onclick="window.location.href='D3trend.html'" style="margin-left: 10px;">📈 Trend Animasjon</button>
-        <div id="accessible-description"></div>
-        <div class="navigation-controls">
-            <button id="prev-day">Forrige dag</button>
-            <span id="current-date"></span>
-            <button id="next-day">Neste dag</button>
-        </div>
-        <div class="view-controls">
-            <label for="view-selector">Vis kolonner basert på:</label>
-            <select id="view-selector">
-                <option value="types">Bruddtyper</option>
-                <option value="tags">WCAG-tagger</option>
-            </select>
-            <button aria-label="Se tagg sammendrag" id="view-summary">Vis tagg sammendrag</button>
-            <button aria-label="Se døde lenker" id="view-invalid-urls">Vis døde lenker</button>
-        </div>
+    <main role="main" aria-labelledby="page-title">
+        <header class="page-hero" aria-labelledby="page-title">
+            <h1 id="page-title">WCAG-brudd topplista</h1>
+            <div class="hero-actions">
+                <button aria-label="Lær mer om denne applikasjonen" id="open-readme-dialog">Vis readme fra GitHub -repo</button>
+                <button aria-label="Se trend animasjon" onclick="window.location.href='D3trend.html'" class="trend-button">📈 Trend Animasjon</button>
+            </div>
+            <div id="accessible-description"></div>
+        </header>
+        <section class="navigation-section" aria-label="Navigasjon for dato">
+            <div class="navigation-controls">
+                <button id="prev-day">Forrige dag</button>
+                <span id="current-date"></span>
+                <button id="next-day">Neste dag</button>
+            </div>
+        </section>
+        <section class="view-section" aria-label="Visningskontroller">
+            <div class="view-controls">
+                <label for="view-selector">Vis kolonner basert på:</label>
+                <select id="view-selector">
+                    <option value="types">Bruddtyper</option>
+                    <option value="tags">WCAG-tagger</option>
+                </select>
+                <button aria-label="Se tagg sammendrag" id="view-summary">Vis tagg sammendrag</button>
+                <button aria-label="Se døde lenker" id="view-invalid-urls">Vis døde lenker</button>
+            </div>
+        </section>
         <div id="loading-container" style="display: none;">
             <div>Laster rapporter...</div>
             <div id="loading-bar">
@@ -68,17 +76,19 @@
             </div>
             <div id="loading-percentage">0%</div>
         </div>
-        <nav aria-label="WCAG-brudd topplista">
-            <div class="table-wrapper">
-                <div id="table-container"></div>
-                <div id="pagination-controls" class="pagination-controls">
-                    <button id="prev-page" aria-label="Forrige side">←</button>
-                    <span id="page-indicator">Side <span id="current-page-num">1</span> av <span
-                            id="total-pages">1</span></span>
-                    <button id="next-page" aria-label="Neste side">→</button>
+        <section class="reports-section" aria-label="WCAG-brudd topplista">
+            <nav aria-label="WCAG-brudd topplista">
+                <div class="table-wrapper">
+                    <div id="table-container"></div>
+                    <div id="pagination-controls" class="pagination-controls">
+                        <button id="prev-page" aria-label="Forrige side">←</button>
+                        <span id="page-indicator">Side <span id="current-page-num">1</span> av <span
+                                id="total-pages">1</span></span>
+                        <button id="next-page" aria-label="Neste side">→</button>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </section>
         <dialog class="details-dialog" id="details-dialog">
             <h2 id="dialog-title">Rapportdetaljer</h2>
             <div id="dialog-content"></div>
