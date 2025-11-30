@@ -136,19 +136,32 @@
         console.log('📄 Setting iframe.srcdoc');
         iframe.srcdoc = proxiedHTML;
 
-        // Wait for iframe to fully load
-        await new Promise(resolve => {
+        // Wait for iframe to fully load and axe-core to be available
+        await new Promise((resolve, reject) => {
           iframe.onload = () => {
             console.log('✅ iframe.onload fired (proxy mode)');
-            resolve();
+            // Wait a bit for scripts to execute
+            setTimeout(() => {
+              const iframeWin = iframe.contentWindow;
+              if (iframeWin && iframeWin.axe) {
+                console.log('✅ axe-core loaded in iframe');
+                resolve();
+              } else {
+                console.warn('⚠️ axe-core not found in iframe, trying anyway...');
+                resolve(); // Continue anyway
+              }
+            }, 1000); // Give scripts time to load
           };
+          iframe.onerror = () => reject(new Error('iframe failed to load'));
         });
 
         const iframeDoc = iframe.contentDocument || iframe.contentWindow?.document;
+        const iframeWin = iframe.contentWindow;
         console.log('📄 iframeDoc.URL:', iframeDoc?.URL);
         console.log('📄 iframeDoc.title:', iframeDoc?.title);
         console.log('📄 iframeDoc.baseURI:', iframeDoc?.baseURI);
-        runAxe(iframeDoc, url);
+        console.log('📄 iframe has axe:', !!iframeWin?.axe);
+        runAxe(iframeDoc, url, iframeWin);
 
       } catch (err) {
         console.error('❌ Error in loadAndTest:', err);
@@ -157,13 +170,14 @@
       }
     }
 
-    async function runAxe(doc, url) {
+    async function runAxe(doc, url, iframeWindow = null) {
       console.log('🔬 runAxe called');
       console.log('📄 Document to test:', doc);
       console.log('📄 Document URL:', doc?.URL);
       console.log('📄 Document title:', doc?.title);
       console.log('📄 Document baseURI:', doc?.baseURI);
       console.log('🎯 Expected URL:', url);
+      console.log('🪟 iframeWindow provided:', !!iframeWindow);
       
       try {
         if (!doc) {
@@ -177,8 +191,17 @@
         }
         
         console.log('🔬 Running axe.run with explicit context...');
+        
+        // Use iframe's axe instance if available (for srcdoc iframes), otherwise use parent's
+        const axeInstance = iframeWindow?.axe || window.axe;
+        console.log('📦 Using axe from:', iframeWindow?.axe ? 'iframe' : 'parent window');
+        
+        if (!axeInstance) {
+          throw new Error('axe-core not loaded');
+        }
+        
         // Pass the document directly - axe will test it and return all result types by default
-        const results = await axe.run(doc);
+        const results = await axeInstance.run(doc);
         console.log('✅ axe.run completed');
         console.log('📊 Results:', results);
         console.log('📊 Violations count:', results.violations.length);
