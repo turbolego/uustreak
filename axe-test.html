@@ -86,40 +86,77 @@
 
     async function loadAndTest(mode) {
       const url = document.getElementById("urlInput").value.trim();
+      console.log('🔍 loadAndTest called with mode:', mode, 'URL:', url);
       resultsEl.textContent = "Loading...";
 
       try {
         let html = "";
 
         if (mode === "direct") {
+          console.log('📄 Direct mode: Setting iframe.src to:', url);
           iframe.src = url;
-          await new Promise(resolve => iframe.onload = resolve);
-          return runAxe(iframe.contentDocument, url);
+          await new Promise(resolve => {
+            iframe.onload = () => {
+              console.log('✅ iframe.onload fired (direct mode)');
+              console.log('📍 iframe.src:', iframe.src);
+              console.log('📍 iframe.contentWindow.location.href:', iframe.contentWindow?.location?.href);
+              resolve();
+            };
+          });
+          const iframeDoc = iframe.contentDocument || iframe.contentWindow?.document;
+          console.log('📄 iframeDoc.URL:', iframeDoc?.URL);
+          console.log('📄 iframeDoc.title:', iframeDoc?.title);
+          return runAxe(iframeDoc, url);
         }
 
         // PROXY MODE → fetch HTML and inject into sandboxed iframe
+        console.log('🌐 Proxy mode:', mode, '- Fetching HTML from:', url);
         html = await fetchViaProxy(url, mode);
+        console.log('📦 HTML fetched, length:', html.length);
 
         const proxiedHTML = `
           ${html}
           <script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.4/axe.min.js"><\/script>
         `;
 
+        console.log('📄 Setting iframe.srcdoc');
         iframe.srcdoc = proxiedHTML;
 
         await new Promise(resolve => setTimeout(resolve, 500)); // allow DOM to build
+        console.log('✅ DOM build delay complete');
 
-        runAxe(iframe.contentDocument, url);
+        const iframeDoc = iframe.contentDocument || iframe.contentWindow?.document;
+        console.log('📄 iframeDoc.URL:', iframeDoc?.URL);
+        console.log('📄 iframeDoc.title:', iframeDoc?.title);
+        runAxe(iframeDoc, url);
 
       } catch (err) {
+        console.error('❌ Error in loadAndTest:', err);
+        console.error('❌ Error stack:', err.stack);
         resultsEl.textContent = "ERROR: " + err.message;
       }
     }
 
     async function runAxe(doc, url) {
+      console.log('🔬 runAxe called');
+      console.log('📄 Document to test:', doc);
+      console.log('📄 Document URL:', doc?.URL);
+      console.log('📄 Document title:', doc?.title);
+      console.log('🎯 Expected URL:', url);
+      
       try {
+        if (!doc) {
+          throw new Error('Cannot access iframe content document. Likely blocked by CORS policy.');
+        }
+        
+        console.log('🔬 Running axe.run...');
         const results = await axe.run(doc);
-        let out = `AXE Accessibility Report\nURL: ${url}\nDate: ${new Date().toLocaleString()}\n\n`;
+        console.log('✅ axe.run completed');
+        console.log('📊 Results:', results);
+        console.log('📊 Violations count:', results.violations.length);
+        console.log('📊 URL tested:', results.url);
+        
+        let out = `AXE Accessibility Report\nURL: ${url}\nTested URL: ${results.url || 'N/A'}\nDate: ${new Date().toLocaleString()}\n\n`;
 
         out += `Violations: ${results.violations.length}\n\n`;
 
@@ -132,11 +169,14 @@
 
         resultsEl.textContent = out;
       } catch (err) {
+        console.error('❌ Error in runAxe:', err);
+        console.error('❌ Error stack:', err.stack);
         resultsEl.textContent = "AXE Error: " + err.message;
       }
     }
 
     function clearResults() {
+      console.log('🧹 Clearing results');
       iframe.src = "about:blank";
       resultsEl.textContent = "Waiting for a test...";
     }
