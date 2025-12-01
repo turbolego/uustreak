@@ -1,0 +1,31 @@
+{
+  "project": "Travel Retail Norway AS",
+  "timestamp": "2025-12-01T00:49:16.421Z",
+  "url": "https://www.tax-free.no/no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav _ngcontent-ng-c21544931=\"\" class=\"navigation\" aria-label=\"Navigasjon i bunntekst\">",
+          "target": [
+            "trn-footer-links-navigation > nav[aria-label=\"Navigasjon i bunntekst\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}
