@@ -1,6 +1,6 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2025-11-30T00:50:04.670Z
+**Timestamp:** 2025-12-01T01:37:42.922Z
 **URL:** [https://dns.no/#](https://dns.no/#)
 **Total Violations:** 5
 
@@ -59,7 +59,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 82
+- **Count:** 89
 
 #### Affected Elements:
 
@@ -75,22 +75,29 @@
 - `.month1 > thead > .caption > th:nth-child(1)`
 - `.month1 > thead > .caption > .month-name[colspan="5"]`
 - `.month1 > thead > .week-name`
-- `.month1 > tbody > tr:nth-child(1) > td:nth-child(6)`
-- `.month1 > tbody > tr:nth-child(1) > td:nth-child(7)`
+- `.month1 > tbody > tr:nth-child(1)`
 - `.month1 > tbody > tr:nth-child(2)`
 - `.month1 > tbody > tr:nth-child(3)`
 - `.month1 > tbody > tr:nth-child(4)`
-- `.month1 > tbody > tr:nth-child(5)`
+- `.month1 > tbody > tr:nth-child(5) > td:nth-child(1)`
+- `.month1 > tbody > tr:nth-child(5) > td:nth-child(2)`
+- `.month1 > tbody > tr:nth-child(5) > td:nth-child(3)`
 - `.month2 > thead > .caption > .month-name[colspan="5"]`
 - `.month2 > thead > .caption > th:nth-child(3)`
 - `.month2 > thead > .week-name`
-- `.month2 > tbody > tr:nth-child(1)`
+- `.month2 > tbody > tr:nth-child(1) > td:nth-child(4)`
+- `.month2 > tbody > tr:nth-child(1) > td:nth-child(5)`
+- `.month2 > tbody > tr:nth-child(1) > td:nth-child(6)`
+- `.month2 > tbody > tr:nth-child(1) > td:nth-child(7)`
 - `.month2 > tbody > tr:nth-child(2)`
 - `.month2 > tbody > tr:nth-child(3)`
 - `.month2 > tbody > tr:nth-child(4)`
 - `.month2 > tbody > tr:nth-child(5) > td:nth-child(1)`
 - `.month2 > tbody > tr:nth-child(5) > td:nth-child(2)`
 - `.month2 > tbody > tr:nth-child(5) > td:nth-child(3)`
+- `.month2 > tbody > tr:nth-child(5) > td:nth-child(4)`
+- `.month2 > tbody > tr:nth-child(5) > td:nth-child(5)`
+- `.month2 > tbody > tr:nth-child(5) > td:nth-child(6)`
 - `div[data-postid="14843"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
 - `div[data-postid="14843"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
 - `div[data-postid="14843"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`

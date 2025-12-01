@@ -1,8 +1,8 @@
 # WCAG Violations Report for Stavanger kommune
 
-**Timestamp:** 2025-11-30T00:34:52.504Z
+**Timestamp:** 2025-12-01T00:28:59.977Z
 **URL:** [https://www.stavanger.kommune.no/#](https://www.stavanger.kommune.no/#)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -43,3 +43,15 @@
 #### Affected Elements:
 
 - `div[role="complementary"]`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `canvas`

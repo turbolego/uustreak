@@ -1,7 +1,7 @@
 # WCAG Violations Report for Rana kommune
 
-**Timestamp:** 2025-11-30T00:43:21.295Z
-**URL:** [https://www.rana.kommune.no/](https://www.rana.kommune.no/)
+**Timestamp:** 2025-12-01T00:41:39.105Z
+**URL:** [https://www.rana.kommune.no/#](https://www.rana.kommune.no/#)
 **Total Violations:** 3
 
 ## Violation Details
@@ -33,16 +33,14 @@
 - `a[data-id="27772"]`
 - `a[data-id="27768"]`
 
-### All page content should be contained by landmarks
+### Page should contain a level-one heading
 
 - **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 3
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#vFact_audioFrame, #vfact_testaudio`
-- `#vFact_audioFrame, #vfact_bkaudio`
-- `#vFact_audioFrame, h1`
+- `html`

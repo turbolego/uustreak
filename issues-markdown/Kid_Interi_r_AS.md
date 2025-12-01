@@ -1,38 +1,10 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-11-30T00:47:01.550Z
+**Timestamp:** 2025-12-01T00:54:11.393Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
-**Total Violations:** 8
+**Total Violations:** 6
 
 ## Violation Details
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#kindly-chat-api > div,.sc-koBvLg`
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 5
-
-#### Affected Elements:
-
-- `.review-block.article.review:nth-child(1) > .tf-date`
-- `.review-block.article.review:nth-child(2) > .tf-date`
-- `.review-block.article.review:nth-child(3) > .tf-date`
-- `.review-block.article.review:nth-child(4) > .tf-date`
-- `.review-block.article.review:nth-child(5) > .tf-date`
 
 ### Headings should not be empty
 
@@ -44,19 +16,7 @@
 
 #### Affected Elements:
 
-- `div:nth-child(1) > .fa.f9.bv > .bl.c4.bz > .fj.fk.fn > .fs.eo.fr > .fv.fu.fw`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#ot-bnr-hdr-id-C0001`
+- `div:nth-child(1) > .fa.f9.bv > .bl.bz.c4 > .fj.fk.fn > .fs.eo.fr > .fv.fu.fw`
 
 ### Images must have alternative text
 
@@ -64,13 +24,12 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.g6 > .fe.ff.el`
-- `div:nth-child(19) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .gg.fc.fb > .fe.ff.el`
-- `div:nth-child(22) > .fa.f9.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1) > .gk.fc.fb > .fe.ff.el`
+- `div:nth-child(18) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .gf.fc.fb > .fe.ff.el`
+- `div:nth-child(21) > .fa.f9.bv > .bl.bz.c4 > .a7.a5.a6:nth-child(1) > .gj.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -97,10 +56,10 @@
 - `img[alt="Loungewear 50%"]`
 - `img[alt="Therapi-serien 50%"]`
 - `img[alt="Såper og kremer 50%"]`
-- `div:nth-child(17) > .g7.bv.bw > .g8.g9 > .bz.dd > .is-draggable.ga.ao > .gc.gb.b > .gd.if.ga:nth-child(7) > div > .ca.s.c9 > .gf.da.c4 > .en.gb.a3`
+- `div:nth-child(16) > .g6.bv.bw > .g7.g8 > .bz.dd > .g9.ao.da > .gb.ga.b > .gc.gd.g9:nth-child(7) > div > .ca.s.c9 > .ge.da.bz > .en.ga.a3`
 - `img[alt="AVA velværeserie 50%"]`
 - `img[alt="Baderomstilbehør 50%"]`
-- `a[href$="skjonnhetstilbehor"] > .gf.da.c4 > .en.gb.a3`
+- `a[href$="skjonnhetstilbehor"] > .ge.da.bz > .en.ga.a3`
 - `img[alt="Julegavetips til henne"]`
 - `img[alt="Gavetips under 100,-"]`
 - `img[alt="Gavetips under 200,-"]`
@@ -117,10 +76,22 @@
 
 #### Affected Elements:
 
-- `div:nth-child(19) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(19) > .fa.f9.bv > .bl.c4.bz > .ca.s.c9`
-- `div:nth-child(22) > .fa.f9.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1)`
-- `div:nth-child(22) > .fa.f9.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(18) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(18) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c9`
+- `div:nth-child(21) > .fa.f9.bv > .bl.bz.c4 > .a7.a5.a6:nth-child(1)`
+- `div:nth-child(21) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c9`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
 
 ### All page content should be contained by landmarks
 
@@ -128,14 +99,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 7
+- **Count:** 4
 
 #### Affected Elements:
 
 - `.ag`
 - `a[aria-label="Gå til startside"]`
-- `.e7`
+- `input`
 - `.a > div:nth-child(5)`
-- `.tf-header-slider`
-- `.tf-sidebar`
-- `#kindly-chat-api > div,.sc-dNFkOE`
