@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2025-12-01T01:30:07.599Z
+**Timestamp:** 2025-12-02T00:33:22.807Z
 **URL:** [https://www.bt.no/#](https://www.bt.no/#)
 **Total Violations:** 5
 
@@ -36,26 +36,26 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 23
+- **Count:** 24
 
 #### Affected Elements:
 
-- `article[data-pulse-entity-id="lngW5y"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="K8BRPX"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(2) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(3) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(4) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(5) > a > ._preview-title_1bm9r_721 > span`
-- `article[data-pulse-entity-id="bOM2e5"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="Arzbyq"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `.memo > .text-container > h3`
 - `.kryssord > .text-container > h3`
 - `.minikryss > .text-container > h3`
 - `.ordjakten > .text-container > h3`
-- `article[data-pulse-entity-id="8plXzd"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `a[aria-label="Mann pågrepet for voldtekt"] > .article__text-container > .article__section`
+- `a[aria-label="– No blir det ein nervekrig"] > .article__text-container > .article__section-kicker-container > .article__section`
+- `.article-tip-us > p`
+- `.tip-us-underline`
 - `article[data-pulse-entity-id="xrAjPp"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `article[data-pulse-entity-id="aJ18G2"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `article[data-pulse-entity-id="PdrE1e"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="8plXzd"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `.opinion-banner-desc`
 - `#Vågen`
 - `#Finse`
@@ -63,6 +63,7 @@
 - `#Torgallmeningen`
 - `#Puddefjordsbroen`
 - `#Åsaneveien`
+- `article[data-pulse-entity-id="aJ18G2"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 
 ### Images must have alternative text
 
@@ -91,14 +92,14 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 57
+- **Count:** 63
 
 #### Affected Elements:
 
 - `h1`
 - `.collage-x3.row:nth-child(1)`
-- `.top-60-40-block`
-- `#dr-edition-teaser-d29u6z1b0 > div`
+- `.collage-x3.row:nth-child(4)`
+- `#dr-edition-teaser-51xxs1kma > div`
 - `._heading_1bm9r_641 > span`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
@@ -120,35 +121,41 @@
 - `._preview_1bm9r_661:nth-child(9) > a > ._preview-title_1bm9r_721`
 - `._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
-- `.collage-x3.row:nth-child(11)`
-- `.collage-x4.row:nth-child(15)`
+- `.vertical-x2.row:nth-child(11)`
+- `.vertical-x3.row:nth-child(15)`
 - `.vertical-x2.row:nth-child(16)`
 - `.hjernetrim-front-widget`
-- `.vertical-x3.row:nth-child(19)`
+- `.collage-x3.row:nth-child(19)`
 - `.vertical-x2.row:nth-child(22)`
-- `.collage-x4.row:nth-child(24)`
-- `.vertical-x3.row:nth-child(25)`
-- `.vertical-x2.row:nth-child(26)`
+- `.collage-x3.row:nth-child(24)`
+- `.vertical-x2.row:nth-child(25)`
+- `.vertical-x3.row:nth-child(26)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(28)`
-- `.vertical-x4`
-- `.collage-x3.row:nth-child(31)`
-- `article[data-pulse-entity-id="n1R6lx"] > .display-flex.article__teaser-container > .article__text-container`
+- `.collage-x3.row:nth-child(29)`
+- `.vertical-x2.row:nth-child(31)`
+- `.vertical-x3.row:nth-child(32)`
 - `.widget-football.regional-widget`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
-- `.vertical-x2.row:nth-child(35)`
-- `.vertical-x3.row:nth-child(36)`
-- `.vertical-x2.row:nth-child(37)`
+- `.collage-x3.row:nth-child(35)`
+- `.vertical-x2.row:nth-child(36)`
+- `.vertical-x3.row:nth-child(37)`
 - `.vertical-x1-ad.row:nth-child(38)`
-- `.vertical-x3.row:nth-child(40)`
-- `.vertical-x2.row:nth-child(42)`
+- `.vertical-x2.row:nth-child(40)`
+- `.vertical-x4`
 - `.opinion-banner-title`
 - `.opinion-banner-desc`
-- `.vertical-x3.row:nth-child(45)`
-- `.collage-x3.row:nth-child(46)`
+- `.vertical-x2.row:nth-child(45)`
+- `.vertical-x3.row:nth-child(46)`
 - `.widget-webcam`
 - `.vertical-x1-ad.row:nth-child(48)`
-- `.row--full.horizontal-x1.row:nth-child(49)`
+- `.vertical-x2.row:nth-child(49)`
+- `.vertical-small-x2`
+- `.vertical-x1-ad.row:nth-child(51)`
+- `.vertical-x2.row:nth-child(52)`
+- `.collage-x3.row:nth-child(53)`
+- `.vertical-x1-ad.row:nth-child(54)`
+- `.vertical-x2.row:nth-child(55)`
 - `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`

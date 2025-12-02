@@ -1,6 +1,6 @@
 # WCAG Violations Report for Drammens Tidende AS
 
-**Timestamp:** 2025-12-01T01:39:16.719Z
+**Timestamp:** 2025-12-02T00:44:26.920Z
 **URL:** [https://www.dt.no/#](https://www.dt.no/#)
 **Total Violations:** 4
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.list-horizontal.optimus-custom-two.rodimus-complex-front:nth-child(20) > .wrap-horizontal.wrap-horizontal-space > brick-carousel-v2[data-slides="4"][data-version="carousel"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `.list-horizontal.optimus-custom-two[data-group="ghost"]:nth-child(24) > .wrap-horizontal.wrap-horizontal-space > brick-carousel-v2[data-slides="4"][data-version="carousel"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 

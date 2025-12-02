@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hurtigruten AS
 
-**Timestamp:** 2025-12-01T00:45:41.648Z
+**Timestamp:** 2025-12-02T00:36:31.718Z
 **URL:** [https://www.hurtigruten.com/nb-no](https://www.hurtigruten.com/nb-no)
 **Total Violations:** 5
 
@@ -30,9 +30,9 @@
 
 #### Affected Elements:
 
-- `.styles_socialLink____6Ka[target="_blank"][rel="noopener noreferrer"]:nth-child(1)`
-- `.styles_socialLink____6Ka[target="_blank"][rel="noopener noreferrer"]:nth-child(2)`
-- `.styles_socialLink____6Ka[target="_blank"][rel="noopener noreferrer"]:nth-child(3)`
+- `.styles_socialLink____6Ka[rel="noopener noreferrer"][target="_blank"]:nth-child(1)`
+- `.styles_socialLink____6Ka[rel="noopener noreferrer"][target="_blank"]:nth-child(2)`
+- `.styles_socialLink____6Ka[rel="noopener noreferrer"][target="_blank"]:nth-child(3)`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 

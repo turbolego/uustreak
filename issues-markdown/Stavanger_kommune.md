@@ -1,8 +1,8 @@
 # WCAG Violations Report for Stavanger kommune
 
-**Timestamp:** 2025-12-01T00:28:59.977Z
+**Timestamp:** 2025-12-02T00:48:15.627Z
 **URL:** [https://www.stavanger.kommune.no/#](https://www.stavanger.kommune.no/#)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.subarticlepage.teaser-with-image.col-md-4:nth-child(12) > .sub-teaser > .no-target-icon > .sub-teaser__image > img`
+- `.subarticlepage.teaser-with-image.col-md-4:nth-child(10) > .sub-teaser > .no-target-icon > .sub-teaser__image > img`
 
 ### Aside should not be contained in another landmark
 
@@ -43,15 +43,3 @@
 #### Affected Elements:
 
 - `div[role="complementary"]`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `canvas`
