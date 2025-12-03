@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norefjell Ski & Spa AS
 
-**Timestamp:** 2025-12-02T00:28:57.423Z
+**Timestamp:** 2025-12-03T01:34:54.713Z
 **URL:** [https://www.norefjell.com/#](https://www.norefjell.com/#)
 **Total Violations:** 4
 
@@ -17,7 +17,7 @@
 #### Affected Elements:
 
 - `#accommodationCategoryWrapper > .multiselect.multiselect--disabled[role="combobox"] > .multiselect__tags > .multiselect__single`
-- `#minub9od7x6d3tyxp4w-submit`
+- `#mipc3v9zna09t34noh9-submit`
 
 ### Heading levels should only increase by one
 
@@ -41,7 +41,7 @@
 
 #### Affected Elements:
 
-- `#minub9od7x6d3tyxp4w-contact\:email`
+- `#mipc3v9zna09t34noh9-contact\:email`
 
 ### Form elements must have labels
 
@@ -53,4 +53,4 @@
 
 #### Affected Elements:
 
-- `#minub9od7x6d3tyxp4w-contact\:email`
+- `#mipc3v9zna09t34noh9-contact\:email`

@@ -1,8 +1,8 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2025-12-02T00:41:40.432Z
+**Timestamp:** 2025-12-03T00:38:10.256Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
-**Total Violations:** 10
+**Total Violations:** 9
 
 ## Violation Details
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 8
+- **Count:** 7
 
 #### Affected Elements:
 
@@ -22,7 +22,6 @@
 - `#splide03-slide01`
 - `#splide04-slide01`
 - `#splide05-slide01`
-- `#splide06-slide01`
 - `img[width="150"]`
 
 ### Buttons must have discernible text
@@ -53,42 +52,27 @@
 - `#popup-link`
 - `#ppms_cm_footer__powered_by`
 
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#splide02-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .prose-a\:text-white.\!bg-Theme\/Dark.lg\:p-7 > .prose-a\:text-white.\!text-white`
-
 ### Images must have alternative text
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 27
+- **Count:** 25
 
 #### Affected Elements:
 
 - `.splide__arrow--prev.left-5[aria-controls="splide01-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide01-track"] > .w-12`
 - `.grid-of-1 > .lg\:col-span-3.collection-item--fullWidth[theme=""] > .sm\:pr-6.flex-1.media`
-- `#splide02-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
 - `.splide__arrow--prev.left-5[aria-controls="splide02-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide02-track"] > .w-12`
+- `#splide03-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
 - `.splide__arrow--prev.left-5[aria-controls="splide03-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide03-track"] > .w-12`
 - `#splide04-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
 - `.splide__arrow--prev.left-5[aria-controls="splide04-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide04-track"] > .w-12`
-- `#splide05-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
-- `.splide__arrow--prev.left-5[aria-controls="splide05-track"] > .w-12`
-- `.splide__arrow--next.right-5[aria-controls="splide05-track"] > .w-12`
 - `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:pr-6.flex-1.media`
 - `.grid-of-6 > .lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:pr-6.flex-1.media`
 - `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:pr-6.flex-1.media`
@@ -100,8 +84,9 @@
 - `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:pr-6.flex-1.media`
 - `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:pr-6.flex-1.media`
 - `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:pr-6.flex-1.media`
-- `.splide__arrow--prev.left-5[aria-controls="splide06-track"] > .w-12`
-- `.splide__arrow--next.right-5[aria-controls="splide06-track"] > .w-12`
+- `#splide05-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
+- `.splide__arrow--prev.left-5[aria-controls="splide05-track"] > .w-12`
+- `.splide__arrow--next.right-5[aria-controls="splide05-track"] > .w-12`
 
 ### Document should have one main landmark
 
@@ -134,23 +119,24 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 13
+- **Count:** 14
 
 #### Affected Elements:
 
-- `#splide04-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `#splide05-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-6 > .lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-6 > .lg\:row-start-3.collection-item[theme=""]:nth-child(5) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.lg\:col-span-2.lg\:row-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-5 > .lg\:col-span-2.collection-item[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-5 > .lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `#splide03-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `#splide04-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-6 > .lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-6 > .lg\:row-start-3.collection-item[theme=""]:nth-child(5) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.lg\:col-span-2.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-5 > .lg\:col-span-2.collection-item[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-5 > .lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `#splide05-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
 
 ### All page content should be contained by landmarks
 
@@ -167,49 +153,49 @@
 - `.custom-select.md\:col-span-3[data-v-bea1500f=""]`
 - `.dp__pointer`
 - `.btn-theme-default`
-- `.DARK.\!bg-Theme\/Dark:nth-child(2)`
-- `.DARK.\!bg-Theme\/Dark:nth-child(3)`
-- `.DARK.\!bg-Theme\/Dark:nth-child(4) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
-- `.DARK.\!bg-Theme\/Dark:nth-child(5)`
-- `.DARK.\!bg-Theme\/Dark:nth-child(6) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(2)`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(3)`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4)`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(5) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(6)`
 - `.\!bg-Theme\/Light > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
-- `.DARK.\!bg-Theme\/Dark:nth-child(8) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
-- `.DARK.\!bg-Theme\/Dark:nth-child(9) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
-- `.DARK.\!bg-Theme\/Dark:nth-child(10) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(8) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(9) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(10) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
 - `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:pr-6.flex-1.media`
-- `.lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.bg-secondary.-mt-9 > h3`
-- `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.-mt-9.p-6 > h3`
+- `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-6 > .lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:pr-6.flex-1.media`
-- `.lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > h3`
-- `.grid-of-6 > .lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > h3`
+- `.grid-of-6 > .lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:pr-6.flex-1.media`
-- `.lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.bg-secondary.-mt-9 > h3`
-- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > h3`
+- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:pr-6.flex-1.media`
-- `.lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.bg-secondary.-mt-9 > h3`
-- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > h3`
+- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-6 > .lg\:row-start-3.collection-item[theme=""]:nth-child(5) > .sm\:pr-6.flex-1.media`
-- `.lg\:row-start-3.collection-item[theme=""]:nth-child(5) > .sm\:ml-6.bg-secondary.-mt-9 > h3`
-- `.grid-of-6 > .lg\:row-start-3.collection-item[theme=""]:nth-child(5) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:row-start-3.collection-item[theme=""]:nth-child(5) > .sm\:ml-6.-mt-9.p-6 > h3`
+- `.grid-of-6 > .lg\:row-start-3.collection-item[theme=""]:nth-child(5) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.lg\:col-span-2.lg\:row-start-3[theme=""] > .sm\:pr-6.flex-1.media`
-- `.lg\:col-span-2.lg\:row-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > h3`
-- `.lg\:col-span-2.lg\:row-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:col-span-2.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > h3`
+- `.lg\:col-span-2.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-5 > .lg\:col-span-2.collection-item[theme=""] > .sm\:pr-6.flex-1.media`
-- `.lg\:col-span-2.collection-item[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > h2`
-- `.grid-of-5 > .lg\:col-span-2.collection-item[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:col-span-2.collection-item[theme=""] > .sm\:ml-6.-mt-9.p-6 > h2`
+- `.grid-of-5 > .lg\:col-span-2.collection-item[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-5 > .lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:pr-6.flex-1.media`
-- `.lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > h2`
-- `.grid-of-5 > .lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > h2`
+- `.grid-of-5 > .lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:pr-6.flex-1.media`
-- `.lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.bg-secondary.-mt-9 > h2`
-- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > h2`
+- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:pr-6.flex-1.media`
-- `.lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.bg-secondary.-mt-9 > h2`
-- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > h2`
+- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:pr-6.flex-1.media`
-- `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > h2`
-- `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
-- `.DARK.\!bg-Theme\/Dark:nth-child(12)`
+- `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > h2`
+- `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(12)`
 - `.\!bg-white > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
 - `.lg\:text-center`
 - `#\34 1a85971-de72-4bb9-8638-913f40d8f8bf`

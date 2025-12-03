@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2025-12-02T00:39:26.062Z
+**Timestamp:** 2025-12-03T00:36:10.694Z
 **URL:** [https://jysk.no/#](https://jysk.no/#)
 **Total Violations:** 2
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.col-md-3.col-sm-12.col-12:nth-child(1) > .d-none.d-md-block.d-lg-block > nav`
+- `.col-md-3.col-sm-12.col-12:nth-child(1) > .d-md-block.d-none.d-lg-block > nav`
 
 ### All page content should be contained by landmarks
 

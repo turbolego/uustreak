@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-12-02T00:40:38.216Z
+**Timestamp:** 2025-12-03T00:37:17.447Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -56,9 +56,9 @@
 
 #### Affected Elements:
 
-- `.gv > .f2.f3.el`
-- `div:nth-child(16) > .ey.ex.bv > .bl.c4.dd > .a5.a6[data-scope-link="true"]:nth-child(1) > .ge.f0.ez > .f2.f3.el`
-- `.hc > .f2.f3.el`
+- `.hj > .fa.fb.el`
+- `div:nth-child(19) > .f6.f5.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .gh.f8.f7 > .fa.fb.el`
+- `div:nth-child(21) > .f6.f5.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1) > .gr.f8.f7 > .fa.fb.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -72,9 +72,9 @@
 
 - `img[alt="Se alle produkter"]`
 - `img[alt="Sengesett 50%"]`
-- `img[alt="Dyner og puter 50%"]`
+- `img[alt="Dundyner og puter 50%"]`
 - `img[alt="Putevar 50%"]`
-- `div:nth-child(2) > .g5.bv.bw > .g6.g7 > .dd.bz > .is-draggable.g8.ao > .ga.g9.b > .gb.ia.g8:nth-child(5) > div > .ca.s.c9 > .gd.da.c4 > .en.g9.f4`
+- `div:nth-child(2) > .g8.bv.bw > .g9.ga > .bz.dd > .is-draggable.gb.ao > .gd.gc.b > .ge.ic.gb:nth-child(5) > div > .ca.s.c9 > .gg.da.c4 > .en.gc.fc`
 - `img[alt="Flanell 249,-"]`
 - `img[alt="Laken 50%"]`
 - `img[alt="Sengetepper 50%"]`
@@ -86,10 +86,10 @@
 - `img[alt="Loungewear 50%"]`
 - `img[alt="Therapi-serien 50%"]`
 - `img[alt="Såper og kremer 50%"]`
-- `div:nth-child(14) > .g5.bv.bw > .g6.g7 > .dd.bz > .is-draggable.g8.ao > .ga.g9.b > .gb.ia.g8:nth-child(7) > div > .ca.s.c9 > .gd.da.c4 > .en.g9.a3`
+- `div:nth-child(17) > .g8.bv.bw > .g9.ga > .bz.dd > .is-draggable.gb.ao > .gd.gc.b > .ge.ic.gb:nth-child(7) > div > .ca.s.c9 > .gg.da.c4 > .en.gc.a3`
 - `img[alt="AVA velværeserie 50%"]`
 - `img[alt="Baderomstilbehør 50%"]`
-- `a[href$="skjonnhetstilbehor"] > .gd.da.c4 > .en.g9.a3`
+- `a[href$="skjonnhetstilbehor"] > .gg.da.c4 > .en.gc.a3`
 - `img[alt="Julegavetips til henne"]`
 - `img[alt="Gavetips under 100,-"]`
 - `img[alt="Gavetips under 200,-"]`
@@ -106,12 +106,12 @@
 
 #### Affected Elements:
 
-- `.a5[href$="julie-fiala"][data-scope-link="true"]:nth-child(1)`
+- `.a7[href$="julie-fiala"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="julie-fiala"]`
-- `div:nth-child(16) > .ey.ex.bv > .bl.c4.dd > .a5.a6[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(16) > .ey.ex.bv > .bl.c4.dd > .ca.s.c9`
-- `div:nth-child(19) > .ey.ex.bv > .bl.c4.dd > .a5.a6.a7:nth-child(1)`
-- `div:nth-child(19) > .ey.ex.bv > .bl.c4.dd > .ca.s.c9`
+- `div:nth-child(19) > .f6.f5.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(19) > .f6.f5.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(21) > .f6.f5.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1)`
+- `div:nth-child(21) > .f6.f5.bv > .bl.c4.bz > .ca.s.c9`
 
 ### All page content should be contained by landmarks
 
@@ -119,13 +119,14 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 6
+- **Count:** 7
 
 #### Affected Elements:
 
 - `.ag`
 - `a[aria-label="Gå til startside"]`
 - `.e7`
+- `.a > div:nth-child(5)`
 - `.tf-header-slider`
 - `.tf-sidebar`
 - `#kindly-chat-api > div,.sc-dNFkOE`

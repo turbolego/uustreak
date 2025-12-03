@@ -1,8 +1,8 @@
 # WCAG Violations Report for Thon Hotels AS
 
-**Timestamp:** 2025-12-02T00:55:57.436Z
+**Timestamp:** 2025-12-03T00:32:46.742Z
 **URL:** [https://www.thonhotels.no/#](https://www.thonhotels.no/#)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -55,3 +55,20 @@
 #### Affected Elements:
 
 - `#coiConsentBanner`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 6
+
+#### Affected Elements:
+
+- `.coi-consent-banner__cookie-details:nth-child(1) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container[title=""] > .cookie-details__detail-content > a[href=""][rel="noopener noreferrer"][target="_blank"]`
+- `.coi-consent-banner__cookie-details:nth-child(2) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container[title=""] > .cookie-details__detail-content > a[href=""][rel="noopener noreferrer"][target="_blank"]`
+- `.coi-consent-banner__cookie-details:nth-child(3) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container[title=""] > .cookie-details__detail-content > a[href=""][rel="noopener noreferrer"][target="_blank"]`
+- `.coi-consent-banner__cookie-details:nth-child(4) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container[title=""] > .cookie-details__detail-content > a[href=""][rel="noopener noreferrer"][target="_blank"]`
+- `.coi-consent-banner__cookie-details:nth-child(5) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container[title=""] > .cookie-details__detail-content > a[href=""][rel="noopener noreferrer"][target="_blank"]`
+- `.coi-consent-banner__cookie-details:nth-child(6) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container[title=""] > .cookie-details__detail-content > a[href=""][rel="noopener noreferrer"][target="_blank"]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for LO - Landsorganisasjonen i Norge
 
-**Timestamp:** 2025-12-02T01:07:03.486Z
+**Timestamp:** 2025-12-03T00:40:30.489Z
 **URL:** [https://www.lo.no/#](https://www.lo.no/#)
 **Total Violations:** 3
 
@@ -17,12 +17,12 @@
 #### Affected Elements:
 
 - `.visitorcenter-teaser > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(10) > .articleTeaser__image > .image > img`
 - `.articleTeaser--medium.articleTeaser:nth-child(11) > .articleTeaser__image > .image > img`
 - `.articleTeaser--medium.articleTeaser:nth-child(12) > .articleTeaser__image > .image > img`
 - `.articleTeaser--medium.articleTeaser:nth-child(13) > .articleTeaser__image > .image > img`
 - `.articleTeaser--medium.articleTeaser:nth-child(14) > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(16) > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(20) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(17) > .articleTeaser__image > .image > img`
 - `.themeTeaser--featured.themeTeaser:nth-child(2) > .image > img`
 - `.themeTeaser--featured.themeTeaser:nth-child(3) > .image > img`
 
