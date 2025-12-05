@@ -1,6 +1,6 @@
 # WCAG Violations Report for Aktiv Eiendomsmegling AS
 
-**Timestamp:** 2025-12-03T00:25:16.582Z
+**Timestamp:** 2025-12-05T00:26:46.295Z
 **URL:** [https://aktiv.no/#](https://aktiv.no/#)
 **Total Violations:** 7
 
@@ -84,11 +84,12 @@
 - **Description:** Ensure <meta name="viewport"> does not disable text scaling and zooming
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/meta-viewport?application=playwright
 - **Tags:** cat.sensory-and-visual-cues, wcag2aa, wcag144, EN-301-549, EN-9.1.4.4, ACT, RGAAv4, RGAA-10.4.2
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `meta[name="viewport"]`
+- `meta[name="viewport"]:nth-child(7)`
+- `meta[name="viewport"]:nth-child(38)`
 
 ### All page content should be contained by landmarks
 

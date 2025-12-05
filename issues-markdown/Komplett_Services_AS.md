@@ -1,6 +1,6 @@
 # WCAG Violations Report for Komplett Services AS
 
-**Timestamp:** 2025-12-03T00:38:12.248Z
+**Timestamp:** 2025-12-05T00:39:17.775Z
 **URL:** [https://www.komplett.no/#](https://www.komplett.no/#)
 **Total Violations:** 8
 
@@ -22,9 +22,9 @@
 - `.swiper-slide-next`
 - `a[aria-label="5 / 6"]`
 - `a[aria-label="6 / 6"]`
-- `a[title="Adventsnøtter"]`
+- `a[title="Julegavetips 2025"]`
 - `a[title="Komplett-PC Entry"]`
-- `a[title="Hold varmen"]`
+- `a[title="Bestselgere"]`
 
 ### Heading levels should only increase by one
 
@@ -36,10 +36,10 @@
 
 #### Affected Elements:
 
-- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card[compactmode=""]:nth-child(1),komplett-h5,h5`
+- `.row[data-bind="visible: rowVisible"]:nth-child(3) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(1),komplett-h5,h5`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(1),komplett-h5,h5`
 - `.row[data-bind="visible: rowVisible"]:nth-child(5) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(1),komplett-h5,h5`
 - `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(1),komplett-h5,h5`
-- `.row[data-bind="visible: rowVisible"]:nth-child(8) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(1),komplett-h5,h5`
 - `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(1),komplett-h5,h5`
 
 ### Alternative text of images should not be repeated as text
@@ -52,15 +52,15 @@
 
 #### Affected Elements:
 
-- `komplett-thumbnail-navigation,img[alt="Ukens tilbud"][title="Ukens tilbud"][width="96"]`
+- `komplett-thumbnail-navigation,img[alt="Ukens tilbud"]`
 - `komplett-thumbnail-navigation,img[alt="Datautstyr"]`
-- `komplett-thumbnail-navigation,img[alt="Gaming"][title="Gaming"][width="96"]`
-- `komplett-thumbnail-navigation,img[alt="PC & tilbehør"][title="PC & tilbehør"][width="96"]`
+- `komplett-thumbnail-navigation,img[alt="Gaming"]`
+- `komplett-thumbnail-navigation,img[alt="PC & tilbehør"]`
 - `komplett-thumbnail-navigation,img[alt="Komplett-PC"]`
-- `komplett-thumbnail-navigation,img[alt="Mobil, tablets & klokker"][title="Mobil, tablets & klokker"][width="96"]`
-- `komplett-thumbnail-navigation,img[alt="TV, lyd & bilde"][title="TV, lyd & bilde"][width="96"]`
+- `komplett-thumbnail-navigation,img[alt="Mobil, tablets & klokker"]`
+- `komplett-thumbnail-navigation,img[alt="TV, lyd & bilde"]`
 - `komplett-thumbnail-navigation,img[alt="Hjem & fritid"]`
-- `komplett-thumbnail-navigation,img[alt="Hvitevarer"][title="Hvitevarer"][width="96"]`
+- `komplett-thumbnail-navigation,img[alt="Hvitevarer"]`
 
 ### Form elements should have a visible label
 
@@ -121,70 +121,71 @@
 - **Description:** Ensure [role="img"] elements have alternative text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/role-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 63
+- **Count:** 64
 
 #### Affected Elements:
 
-- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card[compactmode=""]:nth-child(1),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card[compactmode=""]:nth-child(2),komplett-product-card-rating[reviewcount="5"][score="3.6"],komplett-review-rating-stars[score="3.6"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card[compactmode=""]:nth-child(3),komplett-product-card-rating[reviewcount="7422"],komplett-review-rating-stars[score="4.8174"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card[compactmode=""]:nth-child(4),komplett-product-card-rating[reviewcount="3"][score="5"],komplett-review-rating-stars[score="5"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card[compactmode=""]:nth-child(5),komplett-product-card-rating[reviewcount="14"],komplett-review-rating-stars[score="4.7143"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card[compactmode=""]:nth-child(6),komplett-product-card-rating[score="4.8667"][reviewcount="15"],komplett-review-rating-stars[score="4.8667"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card[compactmode=""]:nth-child(7),komplett-product-card-rating[reviewcount="5"][score="3.6"],komplett-review-rating-stars[score="3.6"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card[compactmode=""]:nth-child(8),komplett-product-card-rating[reviewcount="2"][score="5"],komplett-review-rating-stars[score="5"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card[compactmode=""]:nth-child(9),komplett-product-card-rating[reviewcount="2316"],komplett-review-rating-stars[score="4.7064"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(3) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(1),komplett-product-card-rating[score="3"][reviewcount="2"],komplett-review-rating-stars[score="3"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(3) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(2),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(3) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(3),komplett-product-card-rating[reviewcount="2"][score="5"],komplett-review-rating-stars[score="5"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(3) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(4),komplett-product-card-rating[reviewcount="5"][score="3.6"],komplett-review-rating-stars[score="3.6"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(3) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(5),komplett-product-card-rating[reviewcount="53"],komplett-review-rating-stars[score="4.717"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(3) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(6),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(3) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(7),komplett-product-card-rating[reviewcount="7486"],komplett-review-rating-stars[score="4.8123"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(3) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(8),komplett-product-card-rating[reviewcount="14"][score="4.7143"],komplett-review-rating-stars[score="4.7143"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(3) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(9),komplett-product-card-rating[score="4.8667"][reviewcount="15"],komplett-review-rating-stars[score="4.8667"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(3) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(10),komplett-product-card-rating[reviewcount="5"][score="3.6"],komplett-review-rating-stars[score="3.6"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(1),komplett-product-card-rating[reviewcount="81"],komplett-review-rating-stars[score="4.358"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(2),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(3),komplett-product-card-rating[reviewcount="3"][score="5"],komplett-review-rating-stars[score="5"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(4),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(5),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(6),komplett-product-card-rating[reviewcount="1"][score="5"],komplett-review-rating-stars[score="5"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(7),komplett-product-card-rating[reviewcount="28"],komplett-review-rating-stars[score="4.7143"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(8),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(9),komplett-product-card-rating[score="4"][reviewcount="17"],komplett-review-rating-stars[score="4"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(10),komplett-product-card-rating[score="4.4118"][reviewcount="17"],komplett-review-rating-stars[score="4.4118"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(11),komplett-product-card-rating[reviewcount="3"][score="5"],komplett-review-rating-stars[score="5"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(12),komplett-product-card-rating[reviewcount="1"][score="5"],komplett-review-rating-stars[score="5"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(13),komplett-product-card-rating[reviewcount="2"][score="5"],komplett-review-rating-stars[score="5"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(14),komplett-product-card-rating[score="4.3333"][reviewcount="3"],komplett-review-rating-stars[score="4.3333"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(15),komplett-product-card-rating[reviewcount="318"],komplett-review-rating-stars[score="4.0755"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(16),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(17),komplett-product-card-rating[reviewcount="40"],komplett-review-rating-stars[score="4.3"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(18),komplett-product-card-rating[reviewcount="45"],komplett-review-rating-stars[score="4.6889"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(19),komplett-product-card-rating[reviewcount="260"],komplett-review-rating-stars[score="4.6269"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(20),komplett-product-card-rating[reviewcount="58"],komplett-review-rating-stars[score="4.6724"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(21),komplett-product-card-rating[reviewcount="25"],komplett-review-rating-stars[score="4.76"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(22),komplett-product-card-rating[reviewcount="4"][score="5"],komplett-review-rating-stars[score="5"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(4) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(23),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
 - `.row[data-bind="visible: rowVisible"]:nth-child(5) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(1),komplett-product-card-rating[reviewcount="15"][score="4.7333"],komplett-review-rating-stars[score="4.7333"]`
 - `.row[data-bind="visible: rowVisible"]:nth-child(5) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(2),komplett-product-card-rating[reviewcount="15"][score="4.7333"],komplett-review-rating-stars[score="4.7333"]`
 - `.row[data-bind="visible: rowVisible"]:nth-child(5) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(3),komplett-product-card-rating[reviewcount="15"][score="4.7333"],komplett-review-rating-stars[score="4.7333"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(5) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(4),komplett-product-card-rating[score="4.6667"][reviewcount="3"],komplett-review-rating-stars[score="4.6667"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(5) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(4),komplett-product-card-rating[reviewcount="3"][score="4.6667"],komplett-review-rating-stars[score="4.6667"]`
 - `.row[data-bind="visible: rowVisible"]:nth-child(5) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(5),komplett-product-card-rating[score="4.5"][reviewcount="2"],komplett-review-rating-stars[score="4.5"]`
 - `.row[data-bind="visible: rowVisible"]:nth-child(5) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(6),komplett-product-card-rating[score="4.5"][reviewcount="2"],komplett-review-rating-stars[score="4.5"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(1),komplett-product-card-rating[reviewcount="81"],komplett-review-rating-stars[score="4.358"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(2),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(3),komplett-product-card-rating[reviewcount="3"][score="5"],komplett-review-rating-stars[score="5"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(4),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(5),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(6),komplett-product-card-rating[reviewcount="1"][score="5"],komplett-review-rating-stars[score="5"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(7),komplett-product-card-rating[reviewcount="28"][score="4.7143"],komplett-review-rating-stars[score="4.7143"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(1),komplett-product-card-rating[reviewcount="9"][score="4.6667"],komplett-review-rating-stars[score="4.6667"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(2),komplett-product-card-rating[reviewcount="1"][score="5"],komplett-review-rating-stars[score="5"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(3),komplett-product-card-rating[reviewcount="19"],komplett-review-rating-stars[score="3.6842"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(4),komplett-product-card-rating[reviewcount="73"],komplett-review-rating-stars[score="4.0274"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(5),komplett-product-card-rating[score="2.5"][reviewcount="2"],komplett-review-rating-stars[score="2.5"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(6),komplett-product-card-rating[score="4.4"][reviewcount="15"],komplett-review-rating-stars[score="4.4"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(7),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
 - `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(8),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(9),komplett-product-card-rating[score="4"][reviewcount="17"],komplett-review-rating-stars[score="4"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(10),komplett-product-card-rating[score="4.4118"][reviewcount="17"],komplett-review-rating-stars[score="4.4118"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(11),komplett-product-card-rating[reviewcount="3"][score="5"],komplett-review-rating-stars[score="5"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(12),komplett-product-card-rating[reviewcount="1"][score="5"],komplett-review-rating-stars[score="5"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(13),komplett-product-card-rating[reviewcount="2"][score="5"],komplett-review-rating-stars[score="5"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(14),komplett-product-card-rating[score="4.3333"][reviewcount="3"],komplett-review-rating-stars[score="4.3333"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(15),komplett-product-card-rating[reviewcount="318"],komplett-review-rating-stars[score="4.0755"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(16),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(17),komplett-product-card-rating[reviewcount="40"],komplett-review-rating-stars[score="4.3"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(18),komplett-product-card-rating[reviewcount="45"],komplett-review-rating-stars[score="4.6889"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(19),komplett-product-card-rating[reviewcount="260"],komplett-review-rating-stars[score="4.6269"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(20),komplett-product-card-rating[reviewcount="58"],komplett-review-rating-stars[score="4.6724"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(21),komplett-product-card-rating[reviewcount="25"],komplett-review-rating-stars[score="4.76"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(22),komplett-product-card-rating[reviewcount="4"][score="5"],komplett-review-rating-stars[score="5"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(23),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(8) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(1),komplett-product-card-rating[reviewcount="9"],komplett-review-rating-stars[score="4.6667"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(8) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(2),komplett-product-card-rating[score="3.9231"][reviewcount="13"],komplett-review-rating-stars[score="3.9231"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(8) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(3),komplett-product-card-rating[reviewcount="19"],komplett-review-rating-stars[score="3.6842"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(8) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(4),komplett-product-card-rating[reviewcount="73"],komplett-review-rating-stars[score="4.0274"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(8) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(5),komplett-product-card-rating[score="2.5"][reviewcount="2"],komplett-review-rating-stars[score="2.5"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(8) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(6),komplett-product-card-rating[score="4.4"][reviewcount="15"],komplett-review-rating-stars[score="4.4"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(8) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(7),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(8) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(8),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(8) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(9),komplett-product-card-rating[reviewcount="8"],komplett-review-rating-stars[score="5"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(8) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(10),komplett-product-card-rating[reviewcount="12"][score="4.3333"],komplett-review-rating-stars[score="4.3333"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(8) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(11),komplett-product-card-rating[reviewcount="168"],komplett-review-rating-stars[score="4.6726"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(8) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(12),komplett-product-card-rating[reviewcount="59"],komplett-review-rating-stars[score="4.7288"]`
-- `.row[data-bind="visible: rowVisible"]:nth-child(8) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(13),komplett-product-card-rating[reviewcount="74"],komplett-review-rating-stars[score="3.9865"]`
-- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(1),komplett-product-card-rating[reviewcount="15"][score="4.7333"],komplett-review-rating-stars[score="4.7333"]`
-- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(2),komplett-product-card-rating[score="4.0769"][reviewcount="13"],komplett-review-rating-stars[score="4.0769"]`
-- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(3),komplett-product-card-rating[reviewcount="4"][score="5"],komplett-review-rating-stars[score="5"]`
-- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(4),komplett-product-card-rating[score="2"][reviewcount="1"],komplett-review-rating-stars[score="2"]`
-- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(5),komplett-product-card-rating[score="4.2857"][reviewcount="28"],komplett-review-rating-stars[score="4.2857"]`
-- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(6),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(7),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(9),komplett-product-card-rating[reviewcount="8"][score="5"],komplett-review-rating-stars[score="5"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(10),komplett-product-card-rating[reviewcount="12"],komplett-review-rating-stars[score="4.3333"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(11),komplett-product-card-rating[reviewcount="168"],komplett-review-rating-stars[score="4.6726"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(12),komplett-product-card-rating[reviewcount="59"],komplett-review-rating-stars[score="4.7288"]`
+- `.row[data-bind="visible: rowVisible"]:nth-child(7) > .col-xs-12 > komplett-product-card-container,komplett-product-card:nth-child(13),komplett-product-card-rating[reviewcount="74"],komplett-review-rating-stars[score="3.9865"]`
+- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(1),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(2),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(3),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(4),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
+- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(5),komplett-product-card-rating[score="3.75"][reviewcount="4"],komplett-review-rating-stars[score="3.75"]`
+- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(6),komplett-product-card-rating[reviewcount="14"][score="4.7143"],komplett-review-rating-stars[score="4.7143"]`
+- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(7),komplett-product-card-rating[reviewcount="15"][score="4.7333"],komplett-review-rating-stars[score="4.7333"]`
 - `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(8),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(9),komplett-product-card-rating[score="4.1667"][reviewcount="12"],komplett-review-rating-stars[score="4.1667"]`
-- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(10),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(11),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(12),komplett-product-card-rating[reviewcount="36"],komplett-review-rating-stars[score="4.4444"]`
+- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(9),komplett-product-card-rating[reviewcount="8"][score="5"],komplett-review-rating-stars[score="5"]`
+- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(10),komplett-product-card-rating[score="4.875"][reviewcount="8"],komplett-review-rating-stars[score="4.875"]`
+- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(11),komplett-product-card-rating[score="4.5556"][reviewcount="9"],komplett-review-rating-stars[score="4.5556"]`
+- `komplett-algonomy-product-cards,komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(12),komplett-product-card-rating[reviewcount="3"][score="4.6667"],komplett-review-rating-stars[score="4.6667"]`

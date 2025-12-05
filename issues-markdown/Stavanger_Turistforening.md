@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2025-12-03T00:24:40.252Z
+**Timestamp:** 2025-12-05T00:53:20.845Z
 **URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
 **Total Violations:** 10
 
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-504736"]`
-- `button[aria-controls="modal-578618"]`
-- `button[aria-controls="modal-518953"]`
-- `button[aria-controls="modal-578207"]`
-- `button[aria-controls="modal-561463"]`
-- `button[aria-controls="modal-580869"]`
-- `button[aria-controls="modal-562497"]`
-- `button[aria-controls="modal-570264"]`
+- `button[aria-controls="modal-507361"]`
+- `button[aria-controls="modal-502584"]`
+- `button[aria-controls="modal-505850"]`
+- `button[aria-controls="modal-577715"]`
+- `button[aria-controls="modal-576489"]`
+- `button[aria-controls="modal-507040"]`
+- `button[aria-controls="modal-580361"]`
+- `button[aria-controls="modal-578791"]`
 
 ### Buttons must have discernible text
 
@@ -69,7 +69,7 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 9
+- **Count:** 6
 
 #### Affected Elements:
 
@@ -79,9 +79,6 @@
 - `.w-\[180px\].h-\[160px\]:nth-child(4) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > h4`
 - `.w-\[180px\].h-\[160px\]:nth-child(5) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > h4`
 - `.w-\[180px\].h-\[160px\]:nth-child(6) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > h4`
-- `.w-\[180px\].h-\[160px\]:nth-child(7) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > h4`
-- `.w-\[180px\].h-\[160px\]:nth-child(8) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > h4`
-- `.w-\[180px\].h-\[160px\]:nth-child(9) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > h4`
 
 ### Images must have alternative text
 
@@ -89,7 +86,7 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 11
+- **Count:** 10
 
 #### Affected Elements:
 
@@ -103,7 +100,6 @@
 - `.w-\[180px\].h-\[160px\]:nth-child(6) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
 - `.w-\[180px\].h-\[160px\]:nth-child(7) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
 - `.w-\[180px\].h-\[160px\]:nth-child(8) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
-- `.w-\[180px\].h-\[160px\]:nth-child(9) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
 
 ### Document should not have more than one banner landmark
 
@@ -135,7 +131,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 9
+- **Count:** 6
 
 #### Affected Elements:
 
@@ -145,9 +141,6 @@
 - `a[href$="bate.no/"]`
 - `.w-\[180px\].h-\[160px\]:nth-child(5) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .inset-0.\!absolute.z-50`
 - `a[href$="platousport.com/"]`
-- `.w-\[180px\].h-\[160px\]:nth-child(7) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .inset-0.\!absolute.z-50`
-- `a[href$="folkehallene.no/"]`
-- `.w-\[180px\].h-\[160px\]:nth-child(9) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .inset-0.\!absolute.z-50`
 
 ### All page content should be contained by landmarks
 

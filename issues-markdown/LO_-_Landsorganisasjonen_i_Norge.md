@@ -1,6 +1,6 @@
 # WCAG Violations Report for LO - Landsorganisasjonen i Norge
 
-**Timestamp:** 2025-12-03T00:40:30.489Z
+**Timestamp:** 2025-12-05T00:42:14.664Z
 **URL:** [https://www.lo.no/#](https://www.lo.no/#)
 **Total Violations:** 3
 
@@ -12,13 +12,11 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 9
+- **Count:** 7
 
 #### Affected Elements:
 
 - `.visitorcenter-teaser > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(10) > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(11) > .articleTeaser__image > .image > img`
 - `.articleTeaser--medium.articleTeaser:nth-child(12) > .articleTeaser__image > .image > img`
 - `.articleTeaser--medium.articleTeaser:nth-child(13) > .articleTeaser__image > .image > img`
 - `.articleTeaser--medium.articleTeaser:nth-child(14) > .articleTeaser__image > .image > img`

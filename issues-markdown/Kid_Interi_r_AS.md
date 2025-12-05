@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-12-03T00:37:17.447Z
+**Timestamp:** 2025-12-05T00:38:19.373Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -56,9 +56,9 @@
 
 #### Affected Elements:
 
-- `.hj > .fa.fb.el`
-- `div:nth-child(19) > .f6.f5.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .gh.f8.f7 > .fa.fb.el`
-- `div:nth-child(21) > .f6.f5.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1) > .gr.f8.f7 > .fa.fb.el`
+- `.hk > .fa.fb.el`
+- `div:nth-child(21) > .f6.f5.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1) > .gl.f8.f7 > .fa.fb.el`
+- `div:nth-child(23) > .f6.f5.bv > .bl.c4.dd > .a7.a5.a6:nth-child(1) > .h3.f8.f7 > .fa.fb.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -66,7 +66,7 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 25
+- **Count:** 28
 
 #### Affected Elements:
 
@@ -74,27 +74,30 @@
 - `img[alt="Sengesett 50%"]`
 - `img[alt="Dundyner og puter 50%"]`
 - `img[alt="Putevar 50%"]`
-- `div:nth-child(2) > .g8.bv.bw > .g9.ga > .bz.dd > .is-draggable.gb.ao > .gd.gc.b > .ge.ic.gb:nth-child(5) > div > .ca.s.c9 > .gg.da.c4 > .en.gc.fc`
+- `div:nth-child(2) > .gc.bv.bw > .gd.ge > .dd.bz > .is-draggable.gf.ao > .gh.gg.b > .gi.ic.gf:nth-child(5) > div > .ca.s.c9 > .gk.da.c4 > .en.gg.fc`
 - `img[alt="Flanell 249,-"]`
 - `img[alt="Laken 50%"]`
 - `img[alt="Sengetepper 50%"]`
 - `img[alt="Hodepute 50%"]`
 - `img[alt="Madrassbeskyttere 50%"]`
+- `img[alt="Se alle julegavetips"]`
+- `img[alt="under 100 kr"]`
+- `img[alt="under 200 kr"]`
+- `img[alt="under 500 kr"]`
+- `img[alt="Gavetips til henne"]`
+- `img[alt="Gavetips som gir velvære"]`
+- `img[alt="Gavetips som varmer"]`
+- `img[alt="Gavetips som smaker"]`
 - `img[alt="Alt til badet 50%"]`
 - `img[alt="Morgenkåper 50%"]`
 - `img[alt="Håndklær 50%"]`
 - `img[alt="Loungewear 50%"]`
 - `img[alt="Therapi-serien 50%"]`
 - `img[alt="Såper og kremer 50%"]`
-- `div:nth-child(17) > .g8.bv.bw > .g9.ga > .bz.dd > .is-draggable.gb.ao > .gd.gc.b > .ge.ic.gb:nth-child(7) > div > .ca.s.c9 > .gg.da.c4 > .en.gc.a3`
+- `div:nth-child(19) > .gc.bv.bw > .gd.ge > .dd.bz > .is-draggable.gf.ao > .gh.gg.b > .gi.ic.gf:nth-child(7) > div > .ca.s.c9 > .gk.da.c4 > .en.gg.a3`
 - `img[alt="AVA velværeserie 50%"]`
 - `img[alt="Baderomstilbehør 50%"]`
-- `a[href$="skjonnhetstilbehor"] > .gg.da.c4 > .en.gc.a3`
-- `img[alt="Julegavetips til henne"]`
-- `img[alt="Gavetips under 100,-"]`
-- `img[alt="Gavetips under 200,-"]`
-- `img[alt="Gavetips under 500,-"]`
-- `img[alt="Gavetips som varmer"]`
+- `a[href$="skjonnhetstilbehor"] > .gk.da.c4 > .en.gg.a3`
 
 ### Links must have discernible text
 
@@ -108,10 +111,10 @@
 
 - `.a7[href$="julie-fiala"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="julie-fiala"]`
-- `div:nth-child(19) > .f6.f5.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(19) > .f6.f5.bv > .bl.c4.bz > .ca.s.c9`
-- `div:nth-child(21) > .f6.f5.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1)`
-- `div:nth-child(21) > .f6.f5.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(21) > .f6.f5.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(21) > .f6.f5.bv > .bl.c4.dd > .ca.s.c9`
+- `div:nth-child(23) > .f6.f5.bv > .bl.c4.dd > .a7.a5.a6:nth-child(1)`
+- `div:nth-child(23) > .f6.f5.bv > .bl.c4.dd > .ca.s.c9`
 
 ### All page content should be contained by landmarks
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2025-12-03T00:24:51.231Z
+**Timestamp:** 2025-12-05T00:24:47.354Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
 **Total Violations:** 7
 
@@ -65,8 +65,8 @@
 #### Affected Elements:
 
 - `.auto-cols-\[30\%\]`
+- `.module-spacing-l[data-cms="dy-recommendation"]:nth-child(7) > div > ul`
 - `.module-spacing-l[data-cms="dy-recommendation"]:nth-child(8) > div > ul`
-- `.module-spacing-l[data-cms="dy-recommendation"]:nth-child(9) > div > ul`
 
 ### <li> elements must be contained in a <ul> or <ol>
 

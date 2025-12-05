@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kvadraturen skolesenter
 
-**Timestamp:** 2025-12-03T00:40:14.972Z
+**Timestamp:** 2025-12-05T00:41:56.693Z
 **URL:** [https://kvadraturen.vgs.no/](https://kvadraturen.vgs.no/)
 **Total Violations:** 4
 
@@ -60,20 +60,20 @@
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_1390 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > .il-heading--h2`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_1390 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(2)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_1390 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(3)`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_1390 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > cc-cookie-consent-conditional-content-component[identifier="17"][categories="4"] > .cc-alert.cc-alert--warning > .cc-alert-content > .cc-alert-message > .cc-div:nth-child(1)`
+- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_1390 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > cc-cookie-consent-conditional-content-component[identifier="17"][categories="4"] > .cookie-consent-content > .cc-alert.cc-alert--warning > .cc-alert-content > .cc-alert-message > .cc-div:nth-child(1)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_1394 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > .il-heading--h2:nth-child(1)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_1394 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(2)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_1394 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(3)`
 - `.text-box > p:nth-child(4)`
-- `cc-cookie-consent-conditional-content-component[identifier="17"][categories="4"]:nth-child(5) > .cc-alert.cc-alert--warning > .cc-alert-content > .cc-alert-message > .cc-div:nth-child(1)`
+- `cc-cookie-consent-conditional-content-component[identifier="17"][categories="4"]:nth-child(5) > .cookie-consent-content > .cc-alert.cc-alert--warning > .cc-alert-content > .cc-alert-message > .cc-div:nth-child(1)`
 - `.text-box > h3`
 - `.text-box > p:nth-child(7)`
 - `p:nth-child(8)`
-- `cc-cookie-consent-conditional-content-component[identifier="17"][categories="4"]:nth-child(9) > .cc-alert.cc-alert--warning > .cc-alert-content > .cc-alert-message > .cc-div:nth-child(1)`
+- `cc-cookie-consent-conditional-content-component[identifier="17"][categories="4"]:nth-child(9) > .cookie-consent-content > .cc-alert.cc-alert--warning > .cc-alert-content > .cc-alert-message > .cc-div:nth-child(1)`
 - `.il-heading--h2:nth-child(10)`
 - `.il-heading--h2:nth-child(11)`
 - `p:nth-child(12)`
-- `cc-cookie-consent-conditional-content-component[identifier="17"][categories="4"]:nth-child(13) > .cc-alert.cc-alert--warning > .cc-alert-content > .cc-alert-message > .cc-div:nth-child(1)`
+- `cc-cookie-consent-conditional-content-component[identifier="17"][categories="4"]:nth-child(13) > .cookie-consent-content > .cc-alert.cc-alert--warning > .cc-alert-content > .cc-alert-message > .cc-div:nth-child(1)`
 - `p:nth-child(14)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_1395 > .webPartTittel`
 - `.container > ul`

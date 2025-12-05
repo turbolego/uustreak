@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden i Innlandet
 
-**Timestamp:** 2025-12-03T00:29:18.674Z
+**Timestamp:** 2025-12-05T00:57:53.677Z
 **URL:** [https://www.sinn.no/#](https://www.sinn.no/#)
 **Total Violations:** 4
 
@@ -16,10 +16,10 @@
 
 #### Affected Elements:
 
-- `.lazyblock-bilde-med-tekst-og-knapp-Z1GmhyQ > .py-5.row > .ps-lg-6.align-items-center.text-lg-start > div > .mt-3.btn.btn-primary`
-- `.pe-lg-6 > div > .mt-3.btn.btn-primary`
-- `.lazyblock-bilde-med-tekst-og-knapp-ZRTjVS > .py-5.row > .ps-lg-6.align-items-center.text-lg-start > div > .mt-3.btn.btn-primary`
-- `.lazyblock-bilde-med-tekst-og-knapp-Z2rdpXe > .py-5.row > .ps-lg-6.align-items-center.text-lg-start > div > .mt-3.btn.btn-primary`
+- `.bilde-med-tekst-og-knapp.overflow-hidden[\;=""]:nth-child(5) > .row > .pb-3.px-lg-6.col-lg-7 > .text-left.Description.py-6 > .mt-4.btn[target="_self"]`
+- `.bilde-med-tekst-og-knapp.overflow-hidden.my-4:nth-child(7) > .row > .col-lg-12.py-7.px-lg-4 > .Description.py-6.py-lg-8 > .mt-4.btn[target="_self"]`
+- `.bilde-med-tekst-og-knapp.overflow-hidden[\;=""]:nth-child(10) > .row > .pb-3.px-lg-6.col-lg-7 > .text-left.Description.py-6 > .mt-4.btn[target="_self"]`
+- `.bilde-med-tekst-og-knapp.overflow-hidden.my-4:nth-child(14) > .row > .col-lg-12.py-7.px-lg-4 > .Description.py-6.py-lg-8 > .mt-4.btn[target="_self"]`
 - `#menu-bunntekst-kontakt-norsk-1 > .nav-item-10834.menu-item-type-custom.menu-item-object-custom > .nav-link[href$="kontakt-oss/"]`
 - `#menu-bunntekst-kontakt-norsk-1 > .nav-item-10835.menu-item-type-post_type.menu-item-object-post > .nav-link[href$="om-oss/"]`
 - `#menu-bunntekst-kontakt-norsk-1 > .nav-item-10836.menu-item-type-post_type.menu-item-object-post > .nav-link[href$="sinns-presserom/"]`
@@ -42,20 +42,16 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 10
+- **Count:** 6
 
 #### Affected Elements:
 
 - `.d-lg-block > a[rel="home"][itemprop="url"][href$="sinn.no/"] > img`
 - `img[width="25"]`
-- `.lazyblock-bilde-med-tekst-og-knapp-Z1GmhyQ > .py-5.row > .col-lg-5 > picture > .rounded-end[decoding="async"][loading="lazy"]`
-- `.order-lg-1 > picture > .rounded-end[decoding="async"][loading="lazy"]`
-- `.lazyblock-bilde-med-tekst-og-knapp-ZRTjVS > .py-5.row > .col-lg-5 > picture > .rounded-end[decoding="async"][loading="lazy"]`
-- `.lazyblock-bilde-med-tekst-og-knapp-Z2rdpXe > .py-5.row > .col-lg-5 > picture > .rounded-end[decoding="async"][loading="lazy"]`
-- `body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(1) > .me-4[width="35"][height="35"]`
-- `body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(2) > .me-4[width="35"][height="35"]`
-- `body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(3) > .me-4[width="35"][height="35"]`
-- `body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(4) > .me-4[width="35"][height="35"]`
+- `body > .pt-5.mt-5.wrapper > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(1) > .me-4[width="35"][height="35"]`
+- `body > .pt-5.mt-5.wrapper > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(2) > .me-4[width="35"][height="35"]`
+- `body > .pt-5.mt-5.wrapper > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(3) > .me-4[width="35"][height="35"]`
+- `body > .pt-5.mt-5.wrapper > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(4) > .me-4[width="35"][height="35"]`
 
 ### Links must have discernible text
 
@@ -67,10 +63,10 @@
 
 #### Affected Elements:
 
-- `body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(1)`
-- `body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(2)`
-- `body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(3)`
-- `body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(4)`
+- `body > .pt-5.mt-5.wrapper > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(1)`
+- `body > .pt-5.mt-5.wrapper > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(2)`
+- `body > .pt-5.mt-5.wrapper > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(3)`
+- `body > .pt-5.mt-5.wrapper > .container > .row > .text-end.col-12.col-lg-4 > a[target="_blank"]:nth-child(4)`
 
 ### All page content should be contained by landmarks
 
@@ -83,4 +79,4 @@
 #### Affected Elements:
 
 - `.skip-link`
-- `body > .px-3.wrapper.mt-5`
+- `body > .pt-5.mt-5.wrapper`

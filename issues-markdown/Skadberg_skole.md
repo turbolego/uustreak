@@ -1,6 +1,6 @@
 # WCAG Violations Report for Skadberg skole
 
-**Timestamp:** 2025-12-03T01:43:47.752Z
+**Timestamp:** 2025-12-05T00:38:50.220Z
 **URL:** [https://skadberg.solaskolen.no/#](https://skadberg.solaskolen.no/#)
 **Total Violations:** 2
 

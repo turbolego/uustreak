@@ -1,6 +1,6 @@
 # WCAG Violations Report for Atea Norge
 
-**Timestamp:** 2025-12-03T00:28:26.724Z
+**Timestamp:** 2025-12-05T00:29:51.684Z
 **URL:** [https://www.atea.no/#](https://www.atea.no/#)
 **Total Violations:** 6
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.mega-menu > form > .search-bar > .container > .search-query-container > .search-query[title="Søk på Atea"][name="q"]`
+- `.mega-menu > .ng-pristine.ng-valid[method="get"] > .search-bar > .container > .search-query-container > .search-query[title="Søk på Atea"][name="q"]`
 
 ### Banner landmark should not be contained in another landmark
 

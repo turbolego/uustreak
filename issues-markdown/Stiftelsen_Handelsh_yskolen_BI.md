@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Handelshøyskolen BI
 
-**Timestamp:** 2025-12-03T00:26:34.258Z
+**Timestamp:** 2025-12-05T00:55:09.087Z
 **URL:** [https://www.bi.no/#](https://www.bi.no/#)
 **Total Violations:** 1
 

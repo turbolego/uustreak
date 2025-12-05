@@ -1,6 +1,6 @@
 # WCAG Violations Report for Plantasjen AS
 
-**Timestamp:** 2025-12-03T01:39:24.170Z
+**Timestamp:** 2025-12-05T00:32:54.272Z
 **URL:** [https://plantasjen.no/no](https://plantasjen.no/no)
 **Total Violations:** 2
 
@@ -28,6 +28,6 @@
 
 #### Affected Elements:
 
-- `section:nth-child(15) > .py-2.relative > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(1) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.relative.group > .top-6.md\:top-6.left-0 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
-- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(4) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.relative.group > .rounded-bl-lg.rounded-tr-lg.right-0 > .text-white`
-- `section:nth-child(44) > .py-2.relative > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(1) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.relative.group > .top-6.md\:top-6.left-0 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
+- `section:nth-child(17) > .py-2.relative > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(1) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.relative.gap-3 > .top-6.md\:top-6.left-0 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
+- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(4) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.relative.gap-3 > .rounded-bl-lg.rounded-tr-lg.right-0 > .text-white`
+- `section:nth-child(49) > .py-2.relative > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(1) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.relative.gap-3 > .top-6.md\:top-6.left-0 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`

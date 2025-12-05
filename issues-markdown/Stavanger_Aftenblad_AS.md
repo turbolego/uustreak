@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2025-12-03T01:48:48.215Z
+**Timestamp:** 2025-12-05T00:42:43.084Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
 **Total Violations:** 7
 
@@ -38,10 +38,19 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 4
+- **Count:** 13
 
 #### Affected Elements:
 
+- `#skattelisten, li:nth-child(1) > a[target="_top"]`
+- `#skattelisten, li:nth-child(2) > a[target="_top"]`
+- `#skattelisten, li:nth-child(3) > a[target="_top"]`
+- `#skattelisten, li:nth-child(4) > a[target="_top"]`
+- `#skattelisten, li:nth-child(5) > a[target="_top"]`
+- `#skattelisten, li:nth-child(6) > a[target="_top"]`
+- `#skattelisten, li:nth-child(7) > a[target="_top"]`
+- `#skattelisten, li:nth-child(8) > a[target="_top"]`
+- `#skattelisten, li:nth-child(9) > a[target="_top"]`
 - `.memo > .text-container > h3`
 - `.kryssord > .text-container > h3`
 - `.minikryss > .text-container > h3`
@@ -93,15 +102,18 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 96
+- **Count:** 95
 
 #### Affected Elements:
 
 - `h1`
 - `#announcement-banner`
+- `.collage-x3.row:nth-child(1)`
 - `.top-60-40-block`
-- `.collage-x3.row:nth-child(3)`
 - `a[data-pulse-entity-id="helgomeny-lukekalender-2025"]`
+- `#skattelisten, .text`
+- `#skattelisten, ol`
+- `#skattelisten, #b4-tax-municipality-search`
 - `._content_1bm9r_637 > ._heading_1bm9r_641 > span`
 - `._sa_gcann_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._sa_gcann_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
@@ -123,9 +135,11 @@
 - `._sa_gcann_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > a > ._preview-title_1bm9r_721`
 - `._sa_gcann_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._sa_gcann_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
-- `.vertical-x2.row:nth-child(12)`
-- `.collage-x3.row:nth-child(14)`
-- `.vertical-x2.row:nth-child(18)`
+- `.collage-x4.row:nth-child(12)`
+- `article[data-pulse-entity-id="0pjm5E"]`
+- `article[data-pulse-entity-id="JbPwpP"] > .article__teaser-container`
+- `article[data-pulse-entity-id="zO5dV9"] > .article__teaser-container`
+- `.collage-x4.row:nth-child(18)`
 - `.collage-x3.row:nth-child(19)`
 - `.collage-x4.row:nth-child(21)`
 - `.hjernetrim-front-widget`
@@ -150,49 +164,43 @@
 - `._aftenball_gcann_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > a > ._preview-title_1bm9r_721`
 - `._aftenball_gcann_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._aftenball_gcann_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
-- `.vertical-x2.row:nth-child(29)`
+- `.collage-x3.row:nth-child(29)`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
 - `.podcast-spons`
-- `.collage-x3.row:nth-child(32)`
-- `.vertical-x2.row:nth-child(33)`
+- `.vertical-x2.row:nth-child(32)`
+- `.vertical-x3.row:nth-child(34)`
 - `.widget-football.regional-widget`
-- `.vertical-x3.row:nth-child(36)`
-- `article[data-pulse-entity-id="K8Bo5E"] > .display-flex.article__teaser-container > .article__text-container`
-- `.vertical-x2.row:nth-child(40)`
+- `.vertical-x2.row:nth-child(37)`
+- `.collage-x4.row:nth-child(39)`
+- `.vertical-x3.row:nth-child(41)`
 - `.widget-bolig.regional-widget`
-- `.vertical-x3.row:nth-child(42)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(43)`
-- `.vertical-x2.row:nth-child(44)`
-- `.vertical-x4.row:nth-child(47)`
+- `.vertical-x2.row:nth-child(43)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(44)`
+- `.collage-x3.row:nth-child(45)`
 - `.vertical-x2.row:nth-child(48)`
 - `.vertical-x3.row:nth-child(49)`
-- `.vertical-x1-ad.row:nth-child(50)`
-- `.vertical-small-x2`
-- `.vertical-x3.row:nth-child(52)`
-- `.vertical-x1-ad.row:nth-child(53)`
-- `.collage-x4.row:nth-child(54)`
-- `article[data-pulse-entity-id="8pl2er"] > .display-flex.article__teaser-container > .article__text-container`
-- `.vertical-x2.row:nth-child(56)`
-- `.vertical-x3.row:nth-child(57)`
+- `.collage-x4.row:nth-child(50)`
+- `.vertical-x1-ad.row:nth-child(51)`
+- `.vertical-x2.row:nth-child(52)`
+- `.vertical-x3.row:nth-child(53)`
+- `.vertical-x1-ad.row:nth-child(54)`
+- `.vertical-x2.row:nth-child(55)`
+- `.vertical-x4`
+- `.display-flex > .article__text-container`
 - `.vertical-x2.row:nth-child(58)`
-- `.collage-x4.row:nth-child(59)`
+- `.vertical-x3.row:nth-child(59)`
 - `.vertical-x2.row:nth-child(60)`
-- `.vertical-x3.row:nth-child(61)`
-- `.collage-x3.row:nth-child(63)`
+- `.vertical-x2.row:nth-child(61)`
+- `.collage-x3.row:nth-child(62)`
+- `.vertical-x2.row:nth-child(64)`
 - `#webcam-frontpage`
-- `.vertical-x2.row:nth-child(65)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(66)`
-- `.vertical-x3.row:nth-child(67)`
-- `.collage-x3.row:nth-child(69)`
-- `.vertical-x2.row:nth-child(70)`
-- `.vertical-x1-ad.row:nth-child(71)`
-- `.vertical-x3.row:nth-child(72)`
-- `.vertical-x4.row:nth-child(73)`
-- `.vertical-x3.row:nth-child(74)`
-- `.sch-datacontroller__text`
+- `.vertical-x3.row:nth-child(66)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(67)`
+- `.vertical-x2.row:nth-child(68)`
+- `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`
 
 ### Scrollable region must have keyboard access
 

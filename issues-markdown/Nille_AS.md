@@ -1,8 +1,8 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2025-12-03T01:33:03.547Z
+**Timestamp:** 2025-12-05T00:26:16.021Z
 **URL:** [https://www.nille.no/#](https://www.nille.no/#)
-**Total Violations:** 5
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -17,6 +17,57 @@
 #### Affected Elements:
 
 - `#declineButton`
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 20
+
+#### Affected Elements:
+
+- `.swiper-slide-active.swiper-slide > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide-next.swiper-slide > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(3) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(4) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(5) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(6) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(7) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(8) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(9) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(10) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(11) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(12) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(13) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(14) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(15) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(16) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(17) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(18) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(19) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(20) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 9
+
+#### Affected Elements:
+
+- `a[title="Nissedrakt deluxe voksen"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Elise toppluenisse H15cm"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Eskil toppluenisse H15cm"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Bruce nisse H12cm"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Middagstallerken God Jul Ø27cm"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Asjett God Jul Ø20cm"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Marsipangris med sjokolade 60g"][aria-label=""]:nth-child(2) > h3`
+- `a[title="LED Lysgardin, 600 lys"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Toppluenisse H7,5cm 3pk"][aria-label=""]:nth-child(2) > h3`
 
 ### Document should not have more than one banner landmark
 
@@ -48,14 +99,12 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 4
+- **Count:** 2
 
 #### Affected Elements:
 
+- `a[href$="nisser/"]`
 - `a[href$="julesalg/"]`
-- `.swiper-slide-prev > a[aria-label=""][title=""]`
-- `div[data-swiper-slide-index="2"] > a[aria-label=""][title=""]`
-- `div[data-swiper-slide-index="3"] > a[aria-label=""][title=""]`
 
 ### All page content should be contained by landmarks
 
