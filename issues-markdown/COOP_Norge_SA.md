@@ -1,6 +1,6 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2025-12-05T00:35:39.121Z
+**Timestamp:** 2025-12-06T09:43:53.210Z
 **URL:** [https://www.coop.no/#](https://www.coop.no/#)
 **Total Violations:** 6
 
@@ -44,7 +44,7 @@
 #### Affected Elements:
 
 - `.h5`
-- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .fz.am.cj > .g0.g2.g3`
+- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .fz.cj.am > .g0.g2.g3`
 
 ### Frames must have an accessible name
 
@@ -56,8 +56,8 @@
 
 #### Affected Elements:
 
-- `.q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"]`
-- `.q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
+- `.q.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"]`
+- `.q.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
 - `.fx > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"]`
 - `.fx > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
 
@@ -71,7 +71,7 @@
 
 #### Affected Elements:
 
-- `.q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"], #h`
+- `.q.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"], #h`
 
 ### Links must have discernible text
 

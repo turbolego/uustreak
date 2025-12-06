@@ -1,6 +1,6 @@
 # WCAG Violations Report for Østlendingen AS
 
-**Timestamp:** 2025-12-05T01:10:09.253Z
+**Timestamp:** 2025-12-06T09:49:34.790Z
 **URL:** [https://www.ostlendingen.no/#](https://www.ostlendingen.no/#)
 **Total Violations:** 4
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#eaframe, #container_9705449 > .info > .info-wrapper > .ctaLink`
+- `#eaframe, #container_9705451 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 

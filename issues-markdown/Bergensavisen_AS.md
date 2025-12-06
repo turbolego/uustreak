@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2025-12-05T00:32:42.301Z
+**Timestamp:** 2025-12-06T09:41:31.899Z
 **URL:** [https://www.ba.no/#](https://www.ba.no/#)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#eaframe, #container_9786664 > .info > .info-wrapper > .ctaLink`
+- `#eaframe, #container_9795534 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
@@ -29,19 +29,6 @@
 #### Affected Elements:
 
 - `#eaframe`
-
-### Links must be distinguishable without relying on color
-
-- **Impact:** serious
-- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
-- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `#sp_message_iframe_1393061, #no-hover`
-- `#sp_message_iframe_1393061, a[data-choice="1759496911768"]`
 
 ### Elements marked as presentational should be consistently ignored
 

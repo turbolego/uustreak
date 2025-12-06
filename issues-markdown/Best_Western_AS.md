@@ -1,6 +1,6 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2025-12-05T00:33:05.164Z
+**Timestamp:** 2025-12-06T09:41:46.262Z
 **URL:** [https://www.bestwestern.no/#](https://www.bestwestern.no/#)
 **Total Violations:** 5
 
@@ -46,12 +46,12 @@
 
 #### Affected Elements:
 
+- `.aspect-square.h-full:nth-child(1) > .group.grow[title=""] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="398"][width="398"][decoding="async"]`
 - `a[href$="globale-hoteller"] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="398"][width="398"][decoding="async"]`
 - `img[alt="Hundevennlige hoteller"]`
 - `img[alt="Hotell utover det vanlige"]`
-- `img[alt="Unike konferanselokaler"]`
-- `img[alt="Long Stay-hoteller"]`
 - `img[alt="Hotellrestauranter"]`
+- `.aspect-square.h-full:nth-child(7) > .group.grow[title=""] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="398"][width="398"][decoding="async"]`
 - `img[alt="Spahoteller"]`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements

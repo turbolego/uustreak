@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kristiansand Dyrepark AS
 
-**Timestamp:** 2025-12-05T00:40:49.127Z
+**Timestamp:** 2025-12-06T09:47:30.454Z
 **URL:** [https://www.dyreparken.no/#](https://www.dyreparken.no/#)
 **Total Violations:** 6
 
@@ -12,16 +12,12 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 6
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.c-module--grid.u-theme-dyreparken-primary.c-module:nth-child(13) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.c-module--grid.u-theme-dyreparken-primary.c-module:nth-child(13) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
-- `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(15) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(15) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
-- `.c-grid--content-alignment-left.c-grid--overflow-scrolling.c-grid--image-size-large > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.c-grid--content-alignment-left.c-grid--overflow-scrolling.c-grid--image-size-large > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
+- `.owl-prev`
+- `.owl-next`
 
 ### Buttons must have discernible text
 
@@ -29,16 +25,12 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 6
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.c-module--grid.u-theme-dyreparken-primary.c-module:nth-child(13) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.c-module--grid.u-theme-dyreparken-primary.c-module:nth-child(13) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
-- `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(15) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(15) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
-- `.c-grid--content-alignment-left.c-grid--overflow-scrolling.c-grid--image-size-large > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.c-grid--content-alignment-left.c-grid--overflow-scrolling.c-grid--image-size-large > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
+- `.owl-prev`
+- `.owl-next`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -58,48 +50,43 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 41
+- **Count:** 36
 
 #### Affected Elements:
 
 - `#CybotCookiebotDialogBodyContentText > a[href$="cookies/"]`
-- `.c-grid--columns-3.c-grid--columns-small-2.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-3.c-grid--columns-small-2.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-3.c-grid--columns-small-2.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-small-1 > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-small-1 > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-small-1 > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-4 > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-4 > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-4 > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid__item:nth-child(8) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.u-theme-dyreparken-primary.c-module:nth-child(13) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(1) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.u-theme-dyreparken-primary.c-module:nth-child(13) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(2) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.u-theme-dyreparken-primary.c-module:nth-child(13) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(4) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.u-theme-dyreparken-primary.c-module:nth-child(13) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(6) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.u-theme-dyreparken-primary.c-module:nth-child(13) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(7) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(9) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(10) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.owl-item:nth-child(11) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-theme-dyreparken-primary-light.c-module--split.c-module--billboard:nth-child(14) > .c-module__container > .c-billboard--variant-light.c-billboard--left.c-billboard--split > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
-- `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(15) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(1) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(15) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(2) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(15) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(3) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(15) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(5) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(15) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(6) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(15) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(7) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(15) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(8) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--content-alignment-left.c-grid--overflow-scrolling.c-grid--image-size-large > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(1) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--content-alignment-left.c-grid--overflow-scrolling.c-grid--image-size-large > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(2) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--content-alignment-left.c-grid--overflow-scrolling.c-grid--image-size-large > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(3) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--content-alignment-left.c-grid--overflow-scrolling.c-grid--image-size-large > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(4) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--content-alignment-left.c-grid--overflow-scrolling.c-grid--image-size-large > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(7) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--content-alignment-left.c-grid--overflow-scrolling.c-grid--image-size-large > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(8) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--content-alignment-left.c-grid--overflow-scrolling.c-grid--image-size-large > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(9) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--content-alignment-left.c-grid--overflow-scrolling.c-grid--image-size-large > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(10) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-billboard--variant-light.c-billboard--left.c-billboard--split > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][target=""]`
+- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(8) > .c-module__container > .c-grid--image-size-large.c-grid--image-corners-none.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(8) > .c-module__container > .c-grid--image-size-large.c-grid--image-corners-none.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(8) > .c-module__container > .c-grid--image-size-large.c-grid--image-corners-none.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(8) > .c-module__container > .c-grid--image-size-large.c-grid--image-corners-none.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(8) > .c-module__container > .c-grid--image-size-large.c-grid--image-corners-none.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(8) > .c-module__container > .c-grid--image-size-large.c-grid--image-corners-none.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(8) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-billboard--poster.c-billboard--left.c-billboard--variant-default > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
+- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(10) > .c-module__container > .c-grid--image-size-large.c-grid--image-corners-none.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(10) > .c-module__container > .c-grid--image-size-large.c-grid--image-corners-none.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(10) > .c-module__container > .c-grid--image-size-large.c-grid--image-corners-none.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(10) > .c-module__container > .c-grid--image-size-large.c-grid--image-corners-none.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(10) > .c-module__container > .c-grid--image-size-large.c-grid--image-corners-none.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(10) > .c-module__container > .c-grid--image-size-large.c-grid--image-corners-none.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(6) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(10) > .c-module__container > .c-grid--image-size-large.c-grid--image-corners-none.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(7) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(10) > .c-module__container > .c-grid--image-size-large.c-grid--image-corners-none.c-grid--content-alignment-center > .c-grid__items > .c-grid__item:nth-child(8) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.active.owl-item:nth-child(1) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.active.owl-item:nth-child(2) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.owl-item:nth-child(4) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.owl-item:nth-child(6) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.owl-item:nth-child(7) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.owl-item:nth-child(9) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.owl-item:nth-child(10) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.owl-item:nth-child(11) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="contain"][title=""]`
+- `.c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="contain"][title=""]`
+- `.c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="contain"][title=""]`
+- `.c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="contain"][title=""]`
+- `.c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="contain"][title=""]`
+- `.c-grid__item:nth-child(6) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="contain"][title=""]`
+- `.c-grid__item:nth-child(7) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="contain"][title=""]`
+- `.c-grid__item:nth-child(8) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="contain"][title=""]`
+- `.c-billboard--variant-light > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
 - `.c-billboard__image[href$="app/"][itemtype="http://schema.org/ImageObject"]`
 - `.c-footer__app__links > a:nth-child(1)`
 - `.c-footer__app__links > a:nth-child(2)`
@@ -110,16 +97,12 @@
 - **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/presentation-role-conflict?application=playwright
 - **Tags:** cat.aria, best-practice, ACT
-- **Count:** 6
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.c-module--grid.u-theme-dyreparken-primary.c-module:nth-child(13) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.c-module--grid.u-theme-dyreparken-primary.c-module:nth-child(13) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
-- `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(15) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.u-theme-dyreparken-secondary.c-module--grid.c-module:nth-child(15) > .c-module__container--full-width.c-module__container > .c-grid--image-size-bleeding.c-grid--content-alignment-left.c-grid--overflow-scrolling > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
-- `.c-grid--content-alignment-left.c-grid--overflow-scrolling.c-grid--image-size-large > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.c-grid--content-alignment-left.c-grid--overflow-scrolling.c-grid--image-size-large > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
+- `.owl-prev`
+- `.owl-next`
 
 ### All page content should be contained by landmarks
 

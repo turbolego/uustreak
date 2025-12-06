@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2025-12-05T01:00:20.514Z
+**Timestamp:** 2025-12-06T09:40:25.254Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
 **Total Violations:** 5
 
@@ -43,8 +43,8 @@
 
 #### Affected Elements:
 
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-header[data-v-619520cc=""] > .margin-top-3xl.padding-top-3xs`
-- `.dropdown-category.footer.text-l:nth-child(1) > .dropdown-link[data-v-5f5e432b=""] > .dropdown-header.hidden-mobile[data-v-5f5e432b=""] > h6`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-header[data-v-b8883788=""] > .margin-top-3xl.padding-top-3xs`
+- `.dropdown-category.footer.text-l:nth-child(1) > .dropdown-link[data-v-331b19a2=""] > .dropdown-header.hidden-mobile[data-v-331b19a2=""] > h6`
 - `#privacy_prompt_text2 > h4`
 
 ### <li> elements must be contained in a <ul> or <ol>
@@ -57,10 +57,10 @@
 
 #### Affected Elements:
 
-- `.margin-bottom-2xs[ondragstart="return false"][draggable="false"]:nth-child(1) > .border-radius-l.card[data-v-f1dd218f=""] > .main-stock.stock[size="14px"]`
-- `.margin-bottom-2xs[ondragstart="return false"][draggable="false"]:nth-child(2) > .border-radius-l.card[data-v-f1dd218f=""] > .main-stock.stock[size="14px"]`
-- `.margin-bottom-2xs[ondragstart="return false"][draggable="false"]:nth-child(3) > .border-radius-l.card[data-v-f1dd218f=""] > .main-stock.stock[size="14px"]`
-- `.margin-bottom-2xs[ondragstart="return false"][draggable="false"]:nth-child(4) > .border-radius-l.card[data-v-f1dd218f=""] > .main-stock.stock[size="14px"]`
+- `.margin-bottom-2xs[ondragstart="return false"][draggable="false"]:nth-child(1) > .border-radius-l.card[data-v-7ae11b1e=""] > .main-stock.stock[size="14px"]`
+- `.margin-bottom-2xs[ondragstart="return false"][draggable="false"]:nth-child(2) > .border-radius-l.card[data-v-7ae11b1e=""] > .main-stock.stock[size="14px"]`
+- `.margin-bottom-2xs[ondragstart="return false"][draggable="false"]:nth-child(3) > .border-radius-l.card[data-v-7ae11b1e=""] > .main-stock.stock[size="14px"]`
+- `.margin-bottom-2xs[ondragstart="return false"][draggable="false"]:nth-child(4) > .border-radius-l.card[data-v-7ae11b1e=""] > .main-stock.stock[size="14px"]`
 
 ### All page content should be contained by landmarks
 

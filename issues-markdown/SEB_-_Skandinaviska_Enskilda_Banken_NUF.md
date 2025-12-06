@@ -1,6 +1,6 @@
 # WCAG Violations Report for SEB - Skandinaviska Enskilda Banken NUF
 
-**Timestamp:** 2025-12-05T00:36:45.806Z
+**Timestamp:** 2025-12-06T09:44:08.989Z
 **URL:** [https://sebgroup.com/#](https://sebgroup.com/#)
 **Total Violations:** 3
 
@@ -33,14 +33,14 @@
 - `gds-button-pw[aria-label="Instagram"]`
 - `gds-button-pw[aria-label="YouTube"]`
 
-### Elements should not have tabindex greater than zero
+### Scrollable region must have keyboard access
 
 - **Impact:** serious
-- **Description:** Ensure tabindex attribute values are not greater than 0
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/tabindex?application=playwright
-- **Tags:** cat.keyboard, best-practice
+- **Description:** Ensure elements that have scrollable content are accessible by keyboard
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
 - **Count:** 1
 
 #### Affected Elements:
 
-- `iframe[title="Video: Our purpose"], button`
+- `ol`

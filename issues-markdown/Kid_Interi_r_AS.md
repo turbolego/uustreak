@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-12-05T00:38:19.373Z
+**Timestamp:** 2025-12-06T09:45:41.010Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -52,13 +52,14 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 3
+- **Count:** 4
 
 #### Affected Elements:
 
-- `.hk > .fa.fb.el`
-- `div:nth-child(21) > .f6.f5.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1) > .gl.f8.f7 > .fa.fb.el`
-- `div:nth-child(23) > .f6.f5.bv > .bl.c4.dd > .a7.a5.a6:nth-child(1) > .h3.f8.f7 > .fa.fb.el`
+- `.gd > .fa.fb.el`
+- `.hm > .fa.fb.el`
+- `div:nth-child(22) > .gc.gb.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1) > .gn.f8.f7 > .fa.fb.el`
+- `div:nth-child(24) > .gc.gb.bv > .bl.c4.dd > .a7.a5.a6:nth-child(1) > .h5.f8.f7 > .fa.fb.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -74,7 +75,7 @@
 - `img[alt="Sengesett 50%"]`
 - `img[alt="Dundyner og puter 50%"]`
 - `img[alt="Putevar 50%"]`
-- `div:nth-child(2) > .gc.bv.bw > .gd.ge > .dd.bz > .is-draggable.gf.ao > .gh.gg.b > .gi.ic.gf:nth-child(5) > div > .ca.s.c9 > .gk.da.c4 > .en.gg.fc`
+- `div:nth-child(3) > .ge.bv.bw > .gf.gg > .dd.bz > .is-draggable.gh.ao > .gj.gi.b > .gk.ie.gh:nth-child(5) > div > .ca.s.c9 > .gm.da.c4 > .en.gi.fc`
 - `img[alt="Flanell 249,-"]`
 - `img[alt="Laken 50%"]`
 - `img[alt="Sengetepper 50%"]`
@@ -94,10 +95,10 @@
 - `img[alt="Loungewear 50%"]`
 - `img[alt="Therapi-serien 50%"]`
 - `img[alt="Såper og kremer 50%"]`
-- `div:nth-child(19) > .gc.bv.bw > .gd.ge > .dd.bz > .is-draggable.gf.ao > .gh.gg.b > .gi.ic.gf:nth-child(7) > div > .ca.s.c9 > .gk.da.c4 > .en.gg.a3`
+- `div:nth-child(20) > .ge.bv.bw > .gf.gg > .dd.bz > .is-draggable.gh.ao > .gj.gi.b > .gk.ie.gh:nth-child(7) > div > .ca.s.c9 > .gm.da.c4 > .en.gi.a3`
 - `img[alt="AVA velværeserie 50%"]`
 - `img[alt="Baderomstilbehør 50%"]`
-- `a[href$="skjonnhetstilbehor"] > .gk.da.c4 > .en.gg.a3`
+- `a[href$="skjonnhetstilbehor"] > .gm.da.c4 > .en.gi.a3`
 
 ### Links must have discernible text
 
@@ -105,16 +106,18 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 6
+- **Count:** 8
 
 #### Affected Elements:
 
+- `.gc.gb.bv > .bl.c4.dd > .a7[href$="soverom"][data-scope-link="true"]:nth-child(1)`
+- `.bl.c4.dd > .ca.s[href$="soverom"]`
 - `.a7[href$="julie-fiala"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="julie-fiala"]`
-- `div:nth-child(21) > .f6.f5.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(21) > .f6.f5.bv > .bl.c4.dd > .ca.s.c9`
-- `div:nth-child(23) > .f6.f5.bv > .bl.c4.dd > .a7.a5.a6:nth-child(1)`
-- `div:nth-child(23) > .f6.f5.bv > .bl.c4.dd > .ca.s.c9`
+- `div:nth-child(22) > .gc.gb.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(22) > .gc.gb.bv > .bl.c4.dd > .ca.s.c9`
+- `div:nth-child(24) > .gc.gb.bv > .bl.c4.dd > .a7.a5.a6:nth-child(1)`
+- `div:nth-child(24) > .gc.gb.bv > .bl.c4.dd > .ca.s.c9`
 
 ### All page content should be contained by landmarks
 
