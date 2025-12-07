@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2025-12-06T09:37:16.447Z
+**Timestamp:** 2025-12-07T00:29:37.250Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -17,32 +17,32 @@
 #### Affected Elements:
 
 - `.gt.dr.ds > div > div`
-- `.gv.am[href$="nyheter"]`
+- `a[href$="dagskupp"]`
 - `div:nth-child(4) > .i5.bl.bj > .i6.i7 > li:nth-child(1) > .i8.i9.ia > .id.bc.bd > .ik.ii.y > .gq.il.im`
 - `div:nth-child(4) > .i5.bl.bj > .i6.i7 > li:nth-child(1) > .i8.i9.ia > .ix.iy.hv > div > .gu > .jb.hw.bd`
 - `a[aria-label="Nordlys resirkulert termodress"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
 - `a[aria-label="Nordlys resirkulert termodress"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
 - `a[aria-label="Jessheim vanntett vinterstøvel"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
 - `a[aria-label="Jessheim vanntett vinterstøvel"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
-- `li:nth-child(4) > .i8.i9[aria-label="Eidnes vattert softshellparkas"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `li:nth-child(4) > .i8.i9[aria-label="Eidnes vattert softshellparkas"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
-- `li:nth-child(5) > .i8.i9[aria-label="Eidnes vattert softshellparkas"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `li:nth-child(5) > .i8.i9[aria-label="Eidnes vattert softshellparkas"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
+- `a[aria-label="Nordtoppen vinterjakke"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
+- `a[aria-label="Nordtoppen vinterjakke"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
+- `a[aria-label="Eidnes vattert softshellparkas"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
+- `a[aria-label="Eidnes vattert softshellparkas"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
 - `li:nth-child(1) > .i8.i9[aria-label="Hardanger 2-lags ullongs"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
 - `li:nth-child(1) > .i8.i9[aria-label="Hardanger 2-lags ullongs"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
-- `li:nth-child(2) > .i8.i9[aria-label="Hardanger 2-lags ullongs"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `li:nth-child(2) > .i8.i9[aria-label="Hardanger 2-lags ullongs"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
-- `a[aria-label="Hardanger 2-lags ulltrøye"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `a[aria-label="Hardanger 2-lags ulltrøye"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
 - `a[aria-label="Haukeli vinterjakke"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
 - `a[aria-label="Haukeli vinterjakke"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
+- `li:nth-child(3) > .i8.i9[aria-label="Hardanger 2-lags ullongs"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
+- `li:nth-child(3) > .i8.i9[aria-label="Hardanger 2-lags ullongs"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
+- `a[aria-label="Hardanger 2-lags ulltrøye"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
+- `a[aria-label="Hardanger 2-lags ulltrøye"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
 - `a[aria-label="Hardanger supersoft trøye"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
 - `a[aria-label="Hardanger supersoft trøye"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
-- `a[aria-label="Istind piggsko"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `div:nth-child(9) > .i5.bl.bj > .i6.i7 > li:nth-child(2) > .i8.i9.ia > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `div:nth-child(9) > .i5.bl.bj > .i6.i7 > li:nth-child(3) > .i8.i9.ia > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `a[aria-label="Hardanger Half Zip ullgenser"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
+- `a[aria-label="Trysil vinterjakke"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
 - `a[aria-label="Harstad skallanorakk"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
+- `div:nth-child(9) > .i5.bl.bj > .i6.i7 > li:nth-child(3) > .i8.i9.ia > .id.bc.bd > .ik.ii.y > .gq.il.im`
+- `div:nth-child(9) > .i5.bl.bj > .i6.i7 > li:nth-child(4) > .i8.i9.ia > .id.bc.bd > .ik.ii.y > .gq.il.im`
+- `a[aria-label="Voss 2-lags ullongs"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
