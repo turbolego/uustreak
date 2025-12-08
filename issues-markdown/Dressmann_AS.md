@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dressmann AS
 
-**Timestamp:** 2025-12-07T00:42:11.212Z
+**Timestamp:** 2025-12-08T00:40:15.859Z
 **URL:** [https://dressmann.com/no/#](https://dressmann.com/no/#)
 **Total Violations:** 3
 

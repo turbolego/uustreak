@@ -1,8 +1,8 @@
 # WCAG Violations Report for Thon Hotels AS
 
-**Timestamp:** 2025-12-07T00:33:36.741Z
+**Timestamp:** 2025-12-08T00:43:27.161Z
 **URL:** [https://www.thonhotels.no/#](https://www.thonhotels.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -77,3 +77,15 @@
 - `.coi-consent-banner__cookie-details:nth-child(9) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container[title=""] > .cookie-details__detail-content > a[href=""][rel="noopener noreferrer"][target="_blank"]`
 - `.coi-consent-banner__cookie-details:nth-child(10) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container[title=""] > .cookie-details__detail-content > a[href=""][rel="noopener noreferrer"][target="_blank"]`
 - `.coi-consent-banner__cookie-details:nth-child(11) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container[title=""] > .cookie-details__detail-content > a[href=""][rel="noopener noreferrer"][target="_blank"]`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.site-message__inner > span`

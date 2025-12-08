@@ -1,8 +1,8 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2025-12-07T00:35:55.520Z
+**Timestamp:** 2025-12-08T00:33:53.453Z
 **URL:** [https://www.coop.no/#](https://www.coop.no/#)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -60,18 +60,6 @@
 - `.q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
 - `.fx > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"]`
 - `.fx > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"], #h`
 
 ### Links must have discernible text
 

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Mediehuset Nettavisen AS
 
-**Timestamp:** 2025-12-07T00:37:36.886Z
+**Timestamp:** 2025-12-08T00:24:30.961Z
 **URL:** [https://www.nettavisen.no/#](https://www.nettavisen.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -54,6 +54,18 @@
 
 - `#page-header`
 - `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > .nav-wrap > nav`
+
+### Links must be distinguishable without relying on color
+
+- **Impact:** serious
+- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
+- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#sp_message_iframe_1393088, #no-hover`
 
 ### All page content should be contained by landmarks
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2025-12-07T00:38:39.366Z
+**Timestamp:** 2025-12-08T00:25:31.714Z
 **URL:** [https://www.nille.no/#](https://www.nille.no/#)
 **Total Violations:** 7
 
@@ -24,7 +24,7 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 32
+- **Count:** 33
 
 #### Affected Elements:
 
@@ -60,6 +60,7 @@
 - `.swiper-slide:nth-child(30) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(31) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(32) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(33) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 
 ### Headings should not be empty
 
@@ -72,8 +73,8 @@
 #### Affected Elements:
 
 - `a[title="Nissedrakt deluxe voksen"][aria-label=""]:nth-child(2) > h3`
-- `a[title="Middagstallerken God Jul Ø27cm"][aria-label=""]:nth-child(2) > h3`
 - `a[title="Asjett God Jul Ø20cm"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Middagstallerken God Jul Ø27cm"][aria-label=""]:nth-child(2) > h3`
 - `a[title="Marsipangris med sjokolade 60g"][aria-label=""]:nth-child(2) > h3`
 - `a[title="LED Lysgardin, 600 lys"][aria-label=""]:nth-child(2) > h3`
 - `a[title="Toppluenisse H7,5cm 3pk"][aria-label=""]:nth-child(2) > h3`

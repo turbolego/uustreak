@@ -1,6 +1,6 @@
 # WCAG Violations Report for Politiet
 
-**Timestamp:** 2025-12-07T00:44:37.485Z
+**Timestamp:** 2025-12-08T00:31:30.778Z
 **URL:** [https://www.politiet.no/](https://www.politiet.no/)
 **Total Violations:** 3
 
