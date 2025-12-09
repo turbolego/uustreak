@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-12-08T00:35:09.105Z
+**Timestamp:** 2025-12-09T00:48:41.410Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#kindly-chat-api > div,.sc-koBvLg`
+- `#kindly-chat-api > div,.sc-dClGHI`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -58,8 +58,8 @@
 
 - `.gd > .fa.fb.el`
 - `.hm > .fa.fb.el`
-- `div:nth-child(22) > .gc.gb.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1) > .gn.f8.f7 > .fa.fb.el`
-- `div:nth-child(24) > .gc.gb.bv > .bl.c4.dd > .a7.a5.a6:nth-child(1) > .h5.f8.f7 > .fa.fb.el`
+- `div:nth-child(24) > .gc.gb.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .gn.f8.f7 > .fa.fb.el`
+- `div:nth-child(26) > .gc.gb.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1) > .h5.f8.f7 > .fa.fb.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -67,7 +67,7 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 28
+- **Count:** 27
 
 #### Affected Elements:
 
@@ -75,7 +75,6 @@
 - `img[alt="Sengesett 50%"]`
 - `img[alt="Dundyner og puter 50%"]`
 - `img[alt="Putevar 50%"]`
-- `div:nth-child(3) > .ge.bv.bw > .gf.gg > .dd.bz > .is-draggable.gh.ao > .gj.gi.b > .gk.ie.gh:nth-child(5) > div > .ca.s.c9 > .gm.da.c4 > .en.gi.fc`
 - `img[alt="Flanell 249,-"]`
 - `img[alt="Laken 50%"]`
 - `img[alt="Sengetepper 50%"]`
@@ -95,7 +94,7 @@
 - `img[alt="Loungewear 50%"]`
 - `img[alt="Therapi-serien 50%"]`
 - `img[alt="Såper og kremer 50%"]`
-- `div:nth-child(20) > .ge.bv.bw > .gf.gg > .dd.bz > .is-draggable.gh.ao > .gj.gi.b > .gk.ie.gh:nth-child(7) > div > .ca.s.c9 > .gm.da.c4 > .en.gi.a3`
+- `div:nth-child(22) > .ge.bv.bw > .gf.gg > .bz.dd > .is-draggable.gh.ao > .gj.gi.b > .gk.ie.gh:nth-child(7) > div > .ca.s.c9 > .gm.da.c4 > .en.gi.a3`
 - `img[alt="AVA velværeserie 50%"]`
 - `img[alt="Baderomstilbehør 50%"]`
 - `a[href$="skjonnhetstilbehor"] > .gm.da.c4 > .en.gi.a3`
@@ -110,14 +109,14 @@
 
 #### Affected Elements:
 
-- `.gc.gb.bv > .bl.c4.dd > .a7[href$="soverom"][data-scope-link="true"]:nth-child(1)`
-- `.bl.c4.dd > .ca.s[href$="soverom"]`
+- `.gc.gb.bv > .bl.c4.bz > .a7[href$="soverom"][data-scope-link="true"]:nth-child(1)`
+- `.bl.c4.bz > .ca.s[href$="soverom"]`
 - `.a7[href$="julie-fiala"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="julie-fiala"]`
-- `div:nth-child(22) > .gc.gb.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(22) > .gc.gb.bv > .bl.c4.dd > .ca.s.c9`
-- `div:nth-child(24) > .gc.gb.bv > .bl.c4.dd > .a7.a5.a6:nth-child(1)`
-- `div:nth-child(24) > .gc.gb.bv > .bl.c4.dd > .ca.s.c9`
+- `div:nth-child(24) > .gc.gb.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(24) > .gc.gb.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(26) > .gc.gb.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1)`
+- `div:nth-child(26) > .gc.gb.bv > .bl.c4.bz > .ca.s.c9`
 
 ### All page content should be contained by landmarks
 
@@ -132,7 +131,7 @@
 - `.ag`
 - `a[aria-label="Gå til startside"]`
 - `.e7`
-- `.a > div:nth-child(5)`
+- `#xmas-countdown`
 - `.tf-header-slider`
 - `.tf-sidebar`
-- `#kindly-chat-api > div,.sc-dNFkOE`
+- `#kindly-chat-api > div,.sc-koBvLg`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2025-12-08T00:39:40.507Z
+**Timestamp:** 2025-12-09T00:27:12.046Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -18,31 +18,31 @@
 
 - `.gt.dr.ds > div > div`
 - `.gv.am[href$="nyheter"]`
-- `a[aria-label="Nordlys resirkulert termodress"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
+- `a[aria-label="Nordlys resirkulert termodress"] > .id.bc.bd > .ik.ii.y > .gq.ip.il`
 - `a[aria-label="Nordlys resirkulert termodress"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
-- `a[aria-label="Nordtoppen vinterjakke"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
+- `div:nth-child(4) > .i5.bl.bj > .i6.i7 > li:nth-child(2) > .i8.i9.ia > .id.bc.bd > .ik.ii.y > .gq.ip.il`
+- `div:nth-child(4) > .i5.bl.bj > .i6.i7 > li:nth-child(2) > .i8.i9.ia > .ix.iy.hv > div > .gu > .jb.hw.bd`
+- `a[aria-label="Eidnes vattert softshellparkas"] > .id.bc.bd > .ik.ii.y > .gq.ip.il`
+- `a[aria-label="Eidnes vattert softshellparkas"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
+- `a[aria-label="Nordtoppen vinterjakke"] > .id.bc.bd > .ik.ii.y > .gq.ip.il`
 - `a[aria-label="Nordtoppen vinterjakke"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
-- `a[aria-label="Jessheim vanntett vinterstøvel"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `a[aria-label="Jessheim vanntett vinterstøvel"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
-- `div:nth-child(4) > .i5.bl.bj > .i6.i7 > li:nth-child(4) > .i8.i9.ia > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `div:nth-child(4) > .i5.bl.bj > .i6.i7 > li:nth-child(4) > .i8.i9.ia > .ix.iy.hv > div > .gu > .jb.hw.bd`
-- `div:nth-child(4) > .i5.bl.bj > .i6.i7 > li:nth-child(5) > .i8.i9.ia > .id.bc.bd > .ik.ii.y > .gq.il.im`
+- `div:nth-child(4) > .i5.bl.bj > .i6.i7 > li:nth-child(5) > .i8.i9.ia > .id.bc.bd > .ik.ii.y > .gq.ip.il`
 - `div:nth-child(4) > .i5.bl.bj > .i6.i7 > li:nth-child(5) > .i8.i9.ia > .ix.iy.hv > div > .gu > .jb.hw.bd`
-- `a[aria-label="Haukeli vinterjakke"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
+- `a[aria-label="Haukeli vinterjakke"] > .id.bc.bd > .ik.ii.y > .gq.ip.il`
 - `a[aria-label="Haukeli vinterjakke"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
-- `a[aria-label="Haukeli vattert selebukse"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `a[aria-label="Haukeli vattert selebukse"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
-- `a[aria-label="Hardanger 2-lags ulltrøye"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
+- `a[aria-label="Hardanger 2-lags ulltrøye"] > .id.bc.bd > .ik.ii.y > .gq.ip.il`
 - `a[aria-label="Hardanger 2-lags ulltrøye"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
-- `li:nth-child(4) > .i8.i9[aria-label="Hardanger 2-lags ullongs"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `li:nth-child(4) > .i8.i9[aria-label="Hardanger 2-lags ullongs"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
-- `li:nth-child(5) > .i8.i9[aria-label="Hardanger 2-lags ullongs"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `li:nth-child(5) > .i8.i9[aria-label="Hardanger 2-lags ullongs"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
-- `a[aria-label="Voss 2-lags ulltrøye"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `a[aria-label="Hardanger Half Zip ullgenser"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `a[aria-label="Trysil vattert selebukse"] > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `div:nth-child(9) > .i5.bl.bj > .i6.i7 > li:nth-child(4) > .i8.i9.ia > .id.bc.bd > .ik.ii.y > .gq.il.im`
-- `div:nth-child(9) > .i5.bl.bj > .i6.i7 > li:nth-child(5) > .i8.i9.ia > .id.bc.bd > .ik.ii.y > .gq.il.im`
+- `a[aria-label="Hardanger 2-lags ullongs"] > .id.bc.bd > .ik.ii.y > .gq.ip.il`
+- `a[aria-label="Hardanger 2-lags ullongs"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
+- `a[aria-label="Haukeli vattert selebukse"] > .id.bc.bd > .ik.ii.y > .gq.ip.il`
+- `a[aria-label="Haukeli vattert selebukse"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
+- `a[aria-label="Vaberg ullgenser"] > .id.bc.bd > .ik.ii.y > .gq.ip.il`
+- `a[aria-label="Vaberg ullgenser"] > .ix.iy.hv > div > .gu > .jb.hw.bd`
+- `div:nth-child(9) > .i5.bl.bj > .i6.i7 > li:nth-child(1) > .i8.i9.ia > .id.bc.bd > .ik.ii.y > .gq.ip.il`
+- `a[aria-label="Voss 2-lags ulltrøye"] > .id.bc.bd > .ik.ii.y > .gq.ip.il`
+- `a[aria-label="Voss 2-lags ullongs"] > .id.bc.bd > .ik.ii.y > .gq.ip.il`
+- `a[aria-label="Hardanger Half Zip ullgenser"] > .id.bc.bd > .ik.ii.y > .gq.ip.il`
+- `div:nth-child(9) > .i5.bl.bj > .i6.i7 > li:nth-child(5) > .i8.i9.ia > .id.bc.bd > .ik.ii.y > .gq.ip.il`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
@@ -88,8 +88,8 @@
 - `.bl.bj.bk:nth-child(3) > div > .hp.hq.hr > .ht.fd.be:nth-child(2) > div > .bj.bk.ar > .hf.bv.ay > .a6[data-scope-link="true"] > .hu.hi.hj > .hm.hl.au`
 - `.bl.bj.bk:nth-child(3) > div > .hp.hq.hr > .ht.fd.be:nth-child(3) > div > .bj.bk.ar > .hf.bv.ay > .a6[data-scope-link="true"] > .hu.hi.hj > .hm.hl.au`
 - `a[href$="julegavetips"] > .hh.hi.hj > .hm.a2.hl`
-- `.jm.fd.be:nth-child(1) > div > .bj.bk.ar > .hf.bv.ay > .a6[data-scope-link="true"] > .hu.hi.hj > .hm.a2.hl`
-- `.jm.fd.be:nth-child(2) > div > .bj.bk.ar > .hf.bv.ay > .a6[data-scope-link="true"] > .hu.hi.hj > .hm.a2.hl`
+- `.jd.fd.be:nth-child(1) > div > .bj.bk.ar > .hf.bv.ay > .a6[data-scope-link="true"] > .hu.hi.hj > .hm.a2.hl`
+- `.jd.fd.be:nth-child(2) > div > .bj.bk.ar > .hf.bv.ay > .a6[data-scope-link="true"] > .hu.hi.hj > .hm.a2.hl`
 - `.a6[href$="turutstyr"][data-scope-link="true"] > .hu.hi.hj > .hm.a2.hl`
 - `a[href$="tilbehor"] > .hu.hi.hj > .hm.a2.hl`
 - `.a6[href$="nyheter"][data-scope-link="true"] > .hu.hi.hj > .hm.a2.hl`
@@ -110,8 +110,8 @@
 - `.bl.bj.bk:nth-child(3) > div > .hp.hq.hr > .ht.fd.be:nth-child(2) > div > .bj.bk.ar > .hf.bv.ay > .a6[data-scope-link="true"]`
 - `.bl.bj.bk:nth-child(3) > div > .hp.hq.hr > .ht.fd.be:nth-child(3) > div > .bj.bk.ar > .hf.bv.ay > .a6[data-scope-link="true"]`
 - `a[href$="julegavetips"]`
-- `.jm.fd.be:nth-child(1) > div > .bj.bk.ar > .hf.bv.ay > .a6[data-scope-link="true"]`
-- `.jm.fd.be:nth-child(2) > div > .bj.bk.ar > .hf.bv.ay > .a6[data-scope-link="true"]`
+- `.jd.fd.be:nth-child(1) > div > .bj.bk.ar > .hf.bv.ay > .a6[data-scope-link="true"]`
+- `.jd.fd.be:nth-child(2) > div > .bj.bk.ar > .hf.bv.ay > .a6[data-scope-link="true"]`
 - `.hf.bv.ay > .a6[href$="turutstyr"][data-scope-link="true"]`
 - `a[href$="tilbehor"]`
 - `.hf.bv.ay > .a6[href$="nyheter"][data-scope-link="true"]`

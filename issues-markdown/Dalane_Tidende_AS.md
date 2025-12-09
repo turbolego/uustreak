@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2025-12-08T00:37:19.678Z
+**Timestamp:** 2025-12-09T00:36:06.878Z
 **URL:** [https://www.dalane-tidende.no/#](https://www.dalane-tidende.no/#)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -17,19 +17,6 @@
 #### Affected Elements:
 
 - `#eaframe`
-
-### Links must be distinguishable without relying on color
-
-- **Impact:** serious
-- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
-- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `#sp_message_iframe_1392920, #no-hover`
-- `#sp_message_iframe_1392920, a[data-choice="1759496911768"]`
 
 ### Elements marked as presentational should be consistently ignored
 

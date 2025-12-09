@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2025-12-08T00:24:08.283Z
+**Timestamp:** 2025-12-09T00:38:13.582Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
 **Total Violations:** 7
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `#kindly-chat-api > div,.sc-koBvLg`
+- `#kindly-chat-api > div,.sc-dClGHI`
 
 ### Document should not have more than one banner landmark
 
@@ -65,8 +65,8 @@
 #### Affected Elements:
 
 - `.auto-cols-\[30\%\]`
-- `.module-spacing-l[data-cms="dy-recommendation"]:nth-child(7) > div > ul`
 - `.module-spacing-l[data-cms="dy-recommendation"]:nth-child(8) > div > ul`
+- `.module-spacing-l[data-cms="dy-recommendation"]:nth-child(9) > div > ul`
 
 ### <li> elements must be contained in a <ul> or <ol>
 
@@ -92,4 +92,4 @@
 
 #### Affected Elements:
 
-- `#kindly-chat-api > div,.sc-dNFkOE`
+- `#kindly-chat-api > div,.sc-koBvLg`
