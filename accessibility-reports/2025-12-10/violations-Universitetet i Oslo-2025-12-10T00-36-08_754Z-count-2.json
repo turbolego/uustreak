@@ -1,0 +1,52 @@
+{
+  "project": "Universitetet i Oslo",
+  "timestamp": "2025-12-10T00:36:08.754Z",
+  "url": "https://www.uio.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"grid-container uio-info-message alert &nbsp;\" role=\"banner\">\n  \n  <div class=\"row\">\n  <div class=\"col-1-1\">\n  \n\n  \n  \n  \n  \n  \n\n  </div>\n  </div>\n  </div>",
+          "target": [
+            ".uio-info-message"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"grid-container uio-info-message alert &nbsp;\" role=\"banner\">\n  \n  <div class=\"row\">\n  <div class=\"col-1-1\">\n  \n\n  \n  \n  \n  \n  \n\n  </div>\n  </div>\n  </div>",
+          "target": [
+            ".uio-info-message"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}
