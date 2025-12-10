@@ -1,10 +1,22 @@
 # WCAG Violations Report for OBOS Eiendomsmeglere AS
 
-**Timestamp:** 2025-12-09T00:29:02.082Z
+**Timestamp:** 2025-12-10T00:31:11.291Z
 **URL:** [https://www.obos.no/](https://www.obos.no/)
-**Total Violations:** 1
+**Total Violations:** 2
 
 ## Violation Details
+
+### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
+
+- **Impact:** serious
+- **Description:** Ensure that lists are structured correctly
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/list?application=playwright
+- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `obos-footer,#privacy-links`
 
 ### All page content should be contained by landmarks
 

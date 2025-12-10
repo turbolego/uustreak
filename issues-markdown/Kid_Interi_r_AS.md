@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-12-09T00:48:41.410Z
+**Timestamp:** 2025-12-10T01:07:42.999Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -57,9 +57,9 @@
 #### Affected Elements:
 
 - `.gd > .fa.fb.el`
-- `.hm > .fa.fb.el`
-- `div:nth-child(24) > .gc.gb.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .gn.f8.f7 > .fa.fb.el`
-- `div:nth-child(26) > .gc.gb.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1) > .h5.f8.f7 > .fa.fb.el`
+- `.hn > .fa.fb.el`
+- `div:nth-child(25) > .gc.gb.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .go.f8.f7 > .fa.fb.el`
+- `div:nth-child(26) > .gc.gb.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1) > .h6.f8.f7 > .fa.fb.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -94,7 +94,7 @@
 - `img[alt="Loungewear 50%"]`
 - `img[alt="Therapi-serien 50%"]`
 - `img[alt="Såper og kremer 50%"]`
-- `div:nth-child(22) > .ge.bv.bw > .gf.gg > .bz.dd > .is-draggable.gh.ao > .gj.gi.b > .gk.ie.gh:nth-child(7) > div > .ca.s.c9 > .gm.da.c4 > .en.gi.a3`
+- `div:nth-child(23) > .ge.bv.bw > .gf.gg > .bz.dd > .is-draggable.gh.ao > .gj.gi.b > .gk.if.gh:nth-child(7) > div > .ca.s.c9 > .gm.da.c4 > .en.gi.a3`
 - `img[alt="AVA velværeserie 50%"]`
 - `img[alt="Baderomstilbehør 50%"]`
 - `a[href$="skjonnhetstilbehor"] > .gm.da.c4 > .en.gi.a3`
@@ -113,8 +113,8 @@
 - `.bl.c4.bz > .ca.s[href$="soverom"]`
 - `.a7[href$="julie-fiala"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="julie-fiala"]`
-- `div:nth-child(24) > .gc.gb.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(24) > .gc.gb.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(25) > .gc.gb.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(25) > .gc.gb.bv > .bl.c4.bz > .ca.s.c9`
 - `div:nth-child(26) > .gc.gb.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1)`
 - `div:nth-child(26) > .gc.gb.bv > .bl.c4.bz > .ca.s.c9`
 

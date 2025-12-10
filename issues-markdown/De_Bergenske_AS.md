@@ -1,6 +1,6 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2025-12-09T00:36:32.562Z
+**Timestamp:** 2025-12-10T00:38:34.376Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
 **Total Violations:** 9
 
@@ -64,7 +64,7 @@
 
 - `.splide__arrow--prev.left-5[aria-controls="splide01-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide01-track"] > .w-12`
-- `.grid-of-1 > .lg\:col-span-3.collection-item--fullWidth[theme=""] > .sm\:pr-6.flex-1.media`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(7) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .grid-of-1.space-y-6.lg\:space-y-0 > .lg\:col-span-3.collection-item--fullWidth[theme=""] > .sm\:pr-6.flex-1.media`
 - `.splide__arrow--prev.left-5[aria-controls="splide02-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide02-track"] > .w-12`
 - `#splide03-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
@@ -144,7 +144,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 63
+- **Count:** 64
 
 #### Affected Elements:
 
@@ -156,12 +156,13 @@
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(2)`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(3)`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4)`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(5) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(6)`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(5)`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(6) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(7)`
 - `.\!bg-Theme\/Light > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(8) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(9) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(10) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(10) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(11) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
 - `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:pr-6.flex-1.media`
 - `.lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.-mt-9.p-6 > h3`
 - `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
@@ -195,7 +196,7 @@
 - `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:pr-6.flex-1.media`
 - `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > h2`
 - `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(12)`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(13)`
 - `.\!bg-white > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
 - `.lg\:text-center`
 - `#\34 1a85971-de72-4bb9-8638-913f40d8f8bf`

@@ -1,22 +1,10 @@
 # WCAG Violations Report for Mattilsynet
 
-**Timestamp:** 2025-12-09T00:23:54.812Z
+**Timestamp:** 2025-12-10T00:25:40.169Z
 **URL:** [https://www.mattilsynet.no/#](https://www.mattilsynet.no/#)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `img`
 
 ### All page content should be contained by landmarks
 

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2025-12-09T00:37:06.986Z
+**Timestamp:** 2025-12-10T00:38:24.108Z
 **URL:** [https://vestlia.no/#](https://vestlia.no/#)
-**Total Violations:** 5
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -18,15 +18,15 @@
 
 - `#CybotCookiebotDialogNavDeclaration`
 - `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
-- `#widgetContainer,div[aria-label="Choose date"] > .min-w-0.items-start.pr-3 > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
-- `#widgetContainer,div[aria-label="Accommodations and guests"] > .min-w-0.items-start.pr-3 > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
+- `#widgetContainer,div[aria-label="Choose date"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
+- `#widgetContainer,div[aria-label="Accommodations and guests"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
 - `#widgetContainer,.visible`
 - `.fusion-title-6 > h2`
 - `.fusion-title-11 > h2`
 - `.button-9 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.fusion-title-13 > h2`
 - `.button-10 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#mc-embedded-subscribe`
+- `#f_16df2807-605d-4cde-ba34-4d961c814e7d`
 - `.fusion-title-16 > h3`
 - `.button-12 > .fusion-button-text.awb-button__text.awb-button__text--default`
 
@@ -44,6 +44,42 @@
 - `.fusion-title-7 > h6`
 - `.fusion-title-10 > h6`
 - `.fusion-title-12 > h6`
+
+### Main landmark should not be contained in another landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the main landmark is at top level
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-main-is-top-level?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.q-page`
+
+### Document should not have more than one main landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has at most one main landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-main?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#main`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#main`
 
 ### Links must have discernible text
 
@@ -76,7 +112,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 11
+- **Count:** 14
 
 #### Affected Elements:
 
@@ -89,5 +125,8 @@
 - `.fusion-builder-row-15`
 - `.fusion-builder-row-17`
 - `.fusion-builder-row-18`
-- `div:nth-child(21)`
 - `div:nth-child(22)`
+- `div:nth-child(23)`
+- `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(1)`
+- `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(3)`
+- `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text > span`
