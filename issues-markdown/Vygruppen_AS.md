@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vygruppen AS
 
-**Timestamp:** 2025-12-10T00:39:23.482Z
+**Timestamp:** 2025-12-11T01:02:57.233Z
 **URL:** [https://www.vy.no/#](https://www.vy.no/#)
 **Total Violations:** 4
 
@@ -50,13 +50,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 6
+- **Count:** 4
 
 #### Affected Elements:
 
 - `iframe, .captcha__header`
 - `iframe, .captcha__human`
-- `iframe, .sliderText`
-- `iframe, #captcha__offline`
 - `iframe, .captcha__robot__warning`
 - `iframe, .captcha__robot__contact_support`

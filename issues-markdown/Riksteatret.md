@@ -1,6 +1,6 @@
 # WCAG Violations Report for Riksteatret
 
-**Timestamp:** 2025-12-10T00:34:41.518Z
+**Timestamp:** 2025-12-11T00:58:16.772Z
 **URL:** [https://www.riksteatret.no/#](https://www.riksteatret.no/#)
 **Total Violations:** 2
 
@@ -35,5 +35,5 @@
 #### Affected Elements:
 
 - `.listItem__link-wrapper[data-content-reference="1168970"][data-epi-block-id="1170785"] > img`
-- `.listItem__link-wrapper[data-content-reference="1172686"][data-epi-block-id="1170785"] > img`
+- `.listItem__link-wrapper[data-content-reference="1172918"][data-epi-block-id="1170785"] > img`
 - `.listItem__link-wrapper[data-content-reference="1172629"][data-epi-block-id="1170785"] > img`

@@ -1,35 +1,10 @@
 # WCAG Violations Report for Norefjell Ski & Spa AS
 
-**Timestamp:** 2025-12-10T00:28:33.663Z
+**Timestamp:** 2025-12-11T00:50:38.890Z
 **URL:** [https://www.norefjell.com/#](https://www.norefjell.com/#)
-**Total Violations:** 4
+**Total Violations:** 2
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `#accommodationCategoryWrapper > .multiselect.multiselect--disabled[role="combobox"] > .multiselect__tags > .multiselect__single`
-- `#miz9tlkjwq58ct2g9d-submit`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.mb-1`
 
 ### Form elements should have a visible label
 
@@ -41,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#miz9tlkjwq58ct2g9d-contact\:email`
+- `#mj0q1vw9dslpvgwpq0w-contact\:email`
 
 ### Form elements must have labels
 
@@ -53,4 +28,4 @@
 
 #### Affected Elements:
 
-- `#miz9tlkjwq58ct2g9d-contact\:email`
+- `#mj0q1vw9dslpvgwpq0w-contact\:email`

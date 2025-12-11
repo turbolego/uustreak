@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dedicare AS
 
-**Timestamp:** 2025-12-10T00:38:48.143Z
+**Timestamp:** 2025-12-11T01:01:30.967Z
 **URL:** [https://www.dedicare.no/#](https://www.dedicare.no/#)
 **Total Violations:** 10
 
@@ -65,7 +65,7 @@
 #### Affected Elements:
 
 - `.page-content > h3`
-- `.col-xl-4.col-md-12.col-lg-12:nth-child(2) > .column-section-box-height.column-section-box > .column-section-content.page-content > h4`
+- `.col-xl-4.col-md-12.col-lg-12:nth-child(2) > .column-section-box-height.column-section-box > .column-section-content.link-color-primary.page-content > h4`
 
 ### Document should not have more than one banner landmark
 

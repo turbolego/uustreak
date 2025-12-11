@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2025-12-10T00:41:20.247Z
+**Timestamp:** 2025-12-11T01:04:03.134Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 3
 
@@ -43,24 +43,24 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 112
+- **Count:** 114
 
 #### Affected Elements:
 
 - `.skip-content-wrapper`
 - `.cmp-logo__link > .sr-only`
 - `.myey-login-url`
-- `.swiper-slide-duplicate[data-up-carousel-slide-title="EYs Åpenhetsrapport 2025"][data-swiper-slide-index="3"] > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > img[alt="Kloden i hånden"][title="Kloden i hånden"][height="2560"]`
-- `.swiper-slide-duplicate[data-up-carousel-slide-title="EYs Åpenhetsrapport 2025"][data-swiper-slide-index="3"] > .up-hero-carousel__content-wrapper`
-- `.swiper-slide-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="2560"][loading="lazy"]`
+- `.swiper-slide-duplicate.swiper-slide[data-swiper-slide-index="3"] > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="2560"][loading="lazy"]`
+- `.swiper-slide-duplicate.swiper-slide[data-swiper-slide-index="3"] > .up-hero-carousel__content-wrapper`
+- `.swiper-slide-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[title="Arbab Dar og Magnus Birkeland"][height="2560"]`
 - `.swiper-slide-prev > .up-hero-carousel__content-wrapper`
-- `img[height="1648"]`
+- `#image-render-bd6c3e038a > .cmp-image__image[height="2560"][loading="lazy"]`
 - `.swiper-slide-visible > .up-hero-carousel__content-wrapper`
-- `#image-render-05a7dedcfd > .cmp-image__image[height="2560"][loading="lazy"]`
+- `img[height="1648"]`
 - `.swiper-slide-next > .up-hero-carousel__content-wrapper`
-- `.swiper-slide[data-up-carousel-slide-title="EYs Åpenhetsrapport 2025"][data-swiper-slide-index="3"]:nth-child(5) > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > img[alt="Kloden i hånden"][title="Kloden i hånden"][height="2560"]`
-- `.swiper-slide[data-up-carousel-slide-title="EYs Åpenhetsrapport 2025"][data-swiper-slide-index="3"]:nth-child(5) > .up-hero-carousel__content-wrapper`
-- `.swiper-slide-duplicate-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="2560"][loading="lazy"]`
+- `.swiper-slide.up-hero-carousel__slide[data-swiper-slide-index="3"]:nth-child(5) > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="2560"][loading="lazy"]`
+- `.swiper-slide.up-hero-carousel__slide[data-swiper-slide-index="3"]:nth-child(5) > .up-hero-carousel__content-wrapper`
+- `.swiper-slide-duplicate-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[title="Arbab Dar og Magnus Birkeland"][height="2560"]`
 - `.swiper-slide-duplicate-prev > .up-hero-carousel__content-wrapper`
 - `.up-hero-carousel__pagination`
 - `.theme-dark.cmp-container--theme-dark.cmp-container--background-color-e2e`
@@ -90,7 +90,7 @@
 - `.cmp-subscribe__text`
 - `#button-bc60d627c8a2`
 - `.cmp-contentGrid__title`
-- `#image-render-dd78a83287 > .cmp-image__image[height="2560"][loading="lazy"]`
+- `#image-render-f4369d69e0 > .cmp-image__image[title="Arbab Dar og Magnus Birkeland"][height="2560"]`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__title`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > p`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date__text`
@@ -98,7 +98,7 @@
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text:nth-child(4)`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor:nth-child(5)`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
-- `img[height="2563"]`
+- `#image-render-7bd439cccd > .cmp-image__image[height="2560"][loading="lazy"]`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__title`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > p`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date__text`
@@ -117,6 +117,8 @@
 - `.cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date__text`
 - `.cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__title`
 - `.cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date-txt.mrxs`
+- `.cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor`
+- `.cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date__text`
 - `#button-7addb05aebee`
 - `.cmp-slider__title`
 - `.cmp-slider__skip`

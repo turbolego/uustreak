@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2025-12-10T00:38:24.108Z
+**Timestamp:** 2025-12-11T01:01:58.130Z
 **URL:** [https://vestlia.no/#](https://vestlia.no/#)
 **Total Violations:** 8
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 13
+- **Count:** 12
 
 #### Affected Elements:
 
@@ -26,8 +26,7 @@
 - `.button-9 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.fusion-title-13 > h2`
 - `.button-10 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_16df2807-605d-4cde-ba34-4d961c814e7d`
-- `.fusion-title-16 > h3`
+- `#f_754f979d-eaf2-42b9-9200-bbcc33cbd23e`
 - `.button-12 > .fusion-button-text.awb-button__text.awb-button__text--default`
 
 ### Heading levels should only increase by one

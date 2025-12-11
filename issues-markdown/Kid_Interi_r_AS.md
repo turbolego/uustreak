@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-12-10T01:07:42.999Z
+**Timestamp:** 2025-12-11T00:59:09.220Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -56,10 +56,10 @@
 
 #### Affected Elements:
 
-- `.gd > .fa.fb.el`
-- `.hn > .fa.fb.el`
-- `div:nth-child(25) > .gc.gb.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .go.f8.f7 > .fa.fb.el`
-- `div:nth-child(26) > .gc.gb.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1) > .h6.f8.f7 > .fa.fb.el`
+- `.g9 > .f6.f7.el`
+- `.hj > .f6.f7.el`
+- `div:nth-child(25) > .g8.g7.bv > .bl.c4.bz > .a5.a6[data-scope-link="true"]:nth-child(1) > .gk.f4.f3 > .f6.f7.el`
+- `div:nth-child(26) > .g8.g7.bv > .bl.c4.bz > .a5.a6.a7:nth-child(1) > .h2.f4.f3 > .f6.f7.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -94,10 +94,10 @@
 - `img[alt="Loungewear 50%"]`
 - `img[alt="Therapi-serien 50%"]`
 - `img[alt="Såper og kremer 50%"]`
-- `div:nth-child(23) > .ge.bv.bw > .gf.gg > .bz.dd > .is-draggable.gh.ao > .gj.gi.b > .gk.if.gh:nth-child(7) > div > .ca.s.c9 > .gm.da.c4 > .en.gi.a3`
+- `div:nth-child(23) > .ga.bv.bw > .gb.gc > .bz.dd > .is-draggable.gd.ao > .gf.ge.b > .gg.ig.gd:nth-child(7) > div > .ca.s.c9 > .gi.da.c4 > .en.ge.a3`
 - `img[alt="AVA velværeserie 50%"]`
 - `img[alt="Baderomstilbehør 50%"]`
-- `a[href$="skjonnhetstilbehor"] > .gm.da.c4 > .en.gi.a3`
+- `a[href$="skjonnhetstilbehor"] > .gi.da.c4 > .en.ge.a3`
 
 ### Links must have discernible text
 
@@ -109,14 +109,14 @@
 
 #### Affected Elements:
 
-- `.gc.gb.bv > .bl.c4.bz > .a7[href$="soverom"][data-scope-link="true"]:nth-child(1)`
+- `.g8.g7.bv > .bl.c4.bz > .a5[href$="soverom"][data-scope-link="true"]:nth-child(1)`
 - `.bl.c4.bz > .ca.s[href$="soverom"]`
-- `.a7[href$="julie-fiala"][data-scope-link="true"]:nth-child(1)`
+- `.a5[href$="julie-fiala"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="julie-fiala"]`
-- `div:nth-child(25) > .gc.gb.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(25) > .gc.gb.bv > .bl.c4.bz > .ca.s.c9`
-- `div:nth-child(26) > .gc.gb.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1)`
-- `div:nth-child(26) > .gc.gb.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(25) > .g8.g7.bv > .bl.c4.bz > .a5.a6[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(25) > .g8.g7.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(26) > .g8.g7.bv > .bl.c4.bz > .a5.a6.a7:nth-child(1)`
+- `div:nth-child(26) > .g8.g7.bv > .bl.c4.bz > .ca.s.c9`
 
 ### All page content should be contained by landmarks
 
