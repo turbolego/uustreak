@@ -1,0 +1,80 @@
+{
+  "project": "Lofotr Vikingmuseum AS",
+  "timestamp": "2025-12-11T01:02:49.987Z",
+  "url": "https://www.lofotr.no/#",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "description": "Ensure an element's role supports its ARIA attributes",
+      "help": "Elements must only use supported ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"OverlayBase_module_overlayWrapper__42ef25fe \" role=\"alert\" aria-modal=\"false\" aria-labelledby=\"overlay-labelledby\" data-content-area-sibling-eligible=\"true\" data-overlay=\"true\" style=\"opacity: 1;\">",
+          "target": [
+            "iframe",
+            ".OverlayBase_module_overlayWrapper__42ef25fe"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-modal=\"false\""
+        }
+      ]
+    },
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<body role=\"presentation\" class=\"vp-center\">",
+          "target": [
+            "iframe",
+            "body"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav id=\"mobile-navigation\">",
+          "target": [
+            "#mobile-navigation"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}
