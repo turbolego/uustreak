@@ -1,10 +1,25 @@
 # WCAG Violations Report for Uloba - Independent Living Norge SA
 
-**Timestamp:** 2025-12-11T00:58:21.247Z
-**URL:** [https://www.uloba.no/#](https://www.uloba.no/#)
-**Total Violations:** 5
+**Timestamp:** 2025-12-14T01:04:52.209Z
+**URL:** [https://www.uloba.no/](https://www.uloba.no/)
+**Total Violations:** 6
 
 ## Violation Details
+
+### ARIA role should be appropriate for the element
+
+- **Impact:** minor
+- **Description:** Ensure role attribute has an appropriate value for the element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 4
+
+#### Affected Elements:
+
+- `#splide01-slide01`
+- `#splide01-slide02`
+- `#splide01-slide03`
+- `#splide01-slide04`
 
 ### Buttons must have discernible text
 

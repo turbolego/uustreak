@@ -1,7 +1,7 @@
 # WCAG Violations Report for Statped
 
-**Timestamp:** 2025-12-11T01:03:06.055Z
-**URL:** [https://www.statped.no/#](https://www.statped.no/#)
+**Timestamp:** 2025-12-14T00:52:28.804Z
+**URL:** [https://www.statped.no/](https://www.statped.no/)
 **Total Violations:** 1
 
 ## Violation Details

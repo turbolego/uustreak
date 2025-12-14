@@ -1,6 +1,6 @@
 # WCAG Violations Report for First Hotels AS
 
-**Timestamp:** 2025-12-11T00:51:03.525Z
+**Timestamp:** 2025-12-14T00:59:38.432Z
 **URL:** [https://www.firsthotels.no/](https://www.firsthotels.no/)
 **Total Violations:** 5
 
@@ -25,15 +25,14 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 12
+- **Count:** 11
 
 #### Affected Elements:
 
 - `#CybotCookiebotDialogBodyEdgeMoreDetailsLink`
-- `.pr-12 > .min-w-0.grow-0.basis-full:nth-child(1) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
-- `.pr-12 > .min-w-0.grow-0.basis-full:nth-child(2) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
-- `.pr-12 > .min-w-0.grow-0.basis-full:nth-child(3) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
-- `.min-w-0.grow-0.basis-full:nth-child(4) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+- `.mb-8.md\:mt-8:nth-child(1) > .space-y-4.flex-col.flex > .space-y-4.flex-col.relative > .overflow-x-hidden[role="region"][aria-roledescription="carousel"] > .overflow-hidden[data-slot="carousel-content"] > .-ml-4.pr-0.pb-4 > .min-w-0.grow-0.basis-full:nth-child(1) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+- `.mb-8.md\:mt-8:nth-child(1) > .space-y-4.flex-col.flex > .space-y-4.flex-col.relative > .overflow-x-hidden[role="region"][aria-roledescription="carousel"] > .overflow-hidden[data-slot="carousel-content"] > .-ml-4.pr-0.pb-4 > .min-w-0.grow-0.basis-full:nth-child(2) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+- `.mb-8.md\:mt-8:nth-child(1) > .space-y-4.flex-col.flex > .space-y-4.flex-col.relative > .overflow-x-hidden[role="region"][aria-roledescription="carousel"] > .overflow-hidden[data-slot="carousel-content"] > .-ml-4.pr-0.pb-4 > .min-w-0.grow-0.basis-full:nth-child(3) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
 - `a[href$="sverige"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
 - `a[href$="danmark"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
 - `a[href$="norge"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
@@ -76,7 +75,7 @@
 
 #### Affected Elements:
 
-- `.container-max.mx-auto.px-4 > a[href="/"]`
+- `.container-max.mx-auto.justify-between > a[href="/"]`
 - `.border-b-stone-700 > a[href="/"]`
 - `.space-x-4.flex > a[target="_blank"]:nth-child(1)`
 - `.space-x-4.flex > a[target="_blank"]:nth-child(2)`

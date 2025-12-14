@@ -1,7 +1,7 @@
 # WCAG Violations Report for Drammens Tidende AS
 
-**Timestamp:** 2025-12-11T01:03:28.541Z
-**URL:** [https://www.dt.no/#](https://www.dt.no/#)
+**Timestamp:** 2025-12-14T00:54:01.992Z
+**URL:** [https://www.dt.no/](https://www.dt.no/)
 **Total Violations:** 4
 
 ## Violation Details
@@ -18,17 +18,19 @@
 
 - `#eaframe`
 
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+### Page should contain a level-one heading
 
 - **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="5"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `html`
+- `#google_ads_iframe_\/56257416\/www\.dt\.no\/toppbanner_0, html`
+- `#eaframe, html`
 
 ### Elements marked as presentational should be consistently ignored
 

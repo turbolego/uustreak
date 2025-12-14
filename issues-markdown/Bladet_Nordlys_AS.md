@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2025-12-11T00:56:05.189Z
-**URL:** [https://www.nordlys.no/#](https://www.nordlys.no/#)
+**Timestamp:** 2025-12-14T00:45:04.069Z
+**URL:** [https://www.nordlys.no/](https://www.nordlys.no/)
 **Total Violations:** 5
 
 ## Violation Details
@@ -12,10 +12,11 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -24,24 +25,26 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `brick-carousel-v2[data-slides="8"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
-
-### Links must be distinguishable without relying on color
-
-- **Impact:** serious
-- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
-- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
 - **Count:** 2
 
 #### Affected Elements:
 
-- `#sp_message_iframe_1404867, a[href$="aviser"]`
-- `#sp_message_iframe_1404867, a[data-choice="1702929652144"]`
+- `.lp_header`
+- `brick-carousel-v2[data-slides="11"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 3
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe, section[data-banner-id="bannercampaign_51159"] > a`
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe, section[data-banner-id="bannercampaign_51246"] > a`
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe, section[data-banner-id="bannercampaign_52791"] > a`
 
 ### Elements marked as presentational should be consistently ignored
 

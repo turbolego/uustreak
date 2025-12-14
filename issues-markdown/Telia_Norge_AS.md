@@ -1,7 +1,7 @@
 # WCAG Violations Report for Telia Norge AS
 
-**Timestamp:** 2025-12-11T00:55:13.000Z
-**URL:** [https://www.telia.no/#](https://www.telia.no/#)
+**Timestamp:** 2025-12-14T01:01:03.604Z
+**URL:** [https://www.telia.no/](https://www.telia.no/)
 **Total Violations:** 4
 
 ## Violation Details

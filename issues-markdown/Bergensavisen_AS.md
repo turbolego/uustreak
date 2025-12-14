@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2025-12-11T00:55:08.982Z
-**URL:** [https://www.ba.no/#](https://www.ba.no/#)
+**Timestamp:** 2025-12-14T00:44:01.938Z
+**URL:** [https://www.ba.no/](https://www.ba.no/)
 **Total Violations:** 4
 
 ## Violation Details
@@ -12,23 +12,25 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, iframe[src$="about:blank"]`
+- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, body > iframe`
 - `#eaframe`
 
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+### Images must have alternative text
 
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="3"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, img`
 
 ### Elements marked as presentational should be consistently ignored
 

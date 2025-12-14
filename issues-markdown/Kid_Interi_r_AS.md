@@ -1,22 +1,10 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-12-11T00:59:09.220Z
-**URL:** [https://www.kid.no/#](https://www.kid.no/#)
-**Total Violations:** 7
+**Timestamp:** 2025-12-14T01:09:43.374Z
+**URL:** [https://www.kid.no/](https://www.kid.no/)
+**Total Violations:** 6
 
 ## Violation Details
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#kindly-chat-api > div,.sc-dClGHI`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -56,10 +44,10 @@
 
 #### Affected Elements:
 
-- `.g9 > .f6.f7.el`
-- `.hj > .f6.f7.el`
-- `div:nth-child(25) > .g8.g7.bv > .bl.c4.bz > .a5.a6[data-scope-link="true"]:nth-child(1) > .gk.f4.f3 > .f6.f7.el`
-- `div:nth-child(26) > .g8.g7.bv > .bl.c4.bz > .a5.a6.a7:nth-child(1) > .h2.f4.f3 > .f6.f7.el`
+- `.a7[href$="soverom"][data-scope-link="true"]:nth-child(1) > .gf.fb.fa > .fd.fe.el`
+- `.ho > .fd.fe.el`
+- `div:nth-child(25) > .ge.gd.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .gp.fb.fa > .fd.fe.el`
+- `div:nth-child(26) > .ge.gd.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1) > .h7.fb.fa > .fd.fe.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -75,7 +63,7 @@
 - `img[alt="Sengesett 50%"]`
 - `img[alt="Dundyner og puter 50%"]`
 - `img[alt="Putevar 50%"]`
-- `img[alt="Flanell 249,-"]`
+- `img[alt="Flanell 199,-"]`
 - `img[alt="Laken 50%"]`
 - `img[alt="Sengetepper 50%"]`
 - `img[alt="Hodepute 50%"]`
@@ -94,10 +82,10 @@
 - `img[alt="Loungewear 50%"]`
 - `img[alt="Therapi-serien 50%"]`
 - `img[alt="Såper og kremer 50%"]`
-- `div:nth-child(23) > .ga.bv.bw > .gb.gc > .bz.dd > .is-draggable.gd.ao > .gf.ge.b > .gg.ig.gd:nth-child(7) > div > .ca.s.c9 > .gi.da.c4 > .en.ge.a3`
+- `div:nth-child(23) > .gg.bv.bw > .gh.gi > .bz.dd > .is-draggable.gj.ao > .gl.gk.b > .gm.ig.gj:nth-child(7) > div > .ca.s.c9 > .go.da.c4 > .en.gk.a3`
 - `img[alt="AVA velværeserie 50%"]`
 - `img[alt="Baderomstilbehør 50%"]`
-- `a[href$="skjonnhetstilbehor"] > .gi.da.c4 > .en.ge.a3`
+- `a[href$="skjonnhetstilbehor"] > .go.da.c4 > .en.gk.a3`
 
 ### Links must have discernible text
 
@@ -109,14 +97,14 @@
 
 #### Affected Elements:
 
-- `.g8.g7.bv > .bl.c4.bz > .a5[href$="soverom"][data-scope-link="true"]:nth-child(1)`
+- `.ge.gd.bv > .bl.c4.bz > .a7[href$="soverom"][data-scope-link="true"]:nth-child(1)`
 - `.bl.c4.bz > .ca.s[href$="soverom"]`
-- `.a5[href$="julie-fiala"][data-scope-link="true"]:nth-child(1)`
+- `.a7[href$="julie-fiala"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="julie-fiala"]`
-- `div:nth-child(25) > .g8.g7.bv > .bl.c4.bz > .a5.a6[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(25) > .g8.g7.bv > .bl.c4.bz > .ca.s.c9`
-- `div:nth-child(26) > .g8.g7.bv > .bl.c4.bz > .a5.a6.a7:nth-child(1)`
-- `div:nth-child(26) > .g8.g7.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(25) > .ge.gd.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(25) > .ge.gd.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(26) > .ge.gd.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1)`
+- `div:nth-child(26) > .ge.gd.bv > .bl.c4.bz > .ca.s.c9`
 
 ### All page content should be contained by landmarks
 
@@ -124,14 +112,13 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 7
+- **Count:** 6
 
 #### Affected Elements:
 
 - `.ag`
 - `a[aria-label="Gå til startside"]`
 - `.e7`
-- `#xmas-countdown`
+- `.a > div:nth-child(5)`
 - `.tf-header-slider`
 - `.tf-sidebar`
-- `#kindly-chat-api > div,.sc-koBvLg`

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Firda Media AS
 
-**Timestamp:** 2025-12-11T00:50:49.610Z
-**URL:** [https://www.firda.no/#](https://www.firda.no/#)
+**Timestamp:** 2025-12-14T00:59:23.527Z
+**URL:** [https://www.firda.no/](https://www.firda.no/)
 **Total Violations:** 4
 
 ## Violation Details
@@ -12,23 +12,25 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.firda\.no\/toppbanner_0, iframe[src$="about:blank"]`
+- `#google_ads_iframe_\/56257416\/www\.firda\.no\/toppbanner_0, body > iframe`
 - `#eaframe`
 
-### Links must be distinguishable without relying on color
+### Images must have alternative text
 
-- **Impact:** serious
-- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
-- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#sp_message_iframe_1404716, #no-hover`
+- `#google_ads_iframe_\/56257416\/www\.firda\.no\/toppbanner_0, img`
 
 ### Elements marked as presentational should be consistently ignored
 

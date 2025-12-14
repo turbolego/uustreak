@@ -1,7 +1,7 @@
 # WCAG Violations Report for Østlendingen AS
 
-**Timestamp:** 2025-12-11T01:03:55.610Z
-**URL:** [https://www.ostlendingen.no/#](https://www.ostlendingen.no/#)
+**Timestamp:** 2025-12-14T01:12:05.980Z
+**URL:** [https://www.ostlendingen.no/](https://www.ostlendingen.no/)
 **Total Violations:** 5
 
 ## Violation Details
@@ -24,23 +24,26 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 4
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.ostlendingen\.no\/toppbanner_0, iframe`
+- `#google_ads_iframe_\/56257416\/www\.ostlendingen\.no\/toppbanner_0, iframe, iframe[src$="about:blank"]`
+- `#google_ads_iframe_\/56257416\/www\.ostlendingen\.no\/toppbanner_0, iframe, body > iframe`
 - `#eaframe`
 
-### Links must be distinguishable without relying on color
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
-- **Impact:** serious
-- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
-- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#sp_message_iframe_1404893, #no-hover`
+- `#google_ads_iframe_\/56257416\/www\.ostlendingen\.no\/toppbanner_0, iframe, iframe[src$="about:blank"], #ah`
 
 ### Elements marked as presentational should be consistently ignored
 

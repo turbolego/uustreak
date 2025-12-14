@@ -1,7 +1,7 @@
 # WCAG Violations Report for Solstrand Hotel & Bad AS
 
-**Timestamp:** 2025-12-11T01:01:31.285Z
-**URL:** [https://solstrand.com/#](https://solstrand.com/#)
+**Timestamp:** 2025-12-14T00:50:31.585Z
+**URL:** [https://solstrand.com/](https://solstrand.com/)
 **Total Violations:** 7
 
 ## Violation Details

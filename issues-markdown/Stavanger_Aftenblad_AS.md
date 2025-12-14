@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2025-12-11T01:03:21.155Z
-**URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
+**Timestamp:** 2025-12-14T00:52:44.317Z
+**URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
 **Total Violations:** 7
 
 ## Violation Details
@@ -38,20 +38,10 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 14
+- **Count:** 4
 
 #### Affected Elements:
 
-- `#skattelisten, li:nth-child(1) > a[target="_top"]`
-- `#skattelisten, li:nth-child(2) > a[target="_top"]`
-- `#skattelisten, li:nth-child(3) > a[target="_top"]`
-- `#skattelisten, li:nth-child(4) > a[target="_top"]`
-- `#skattelisten, li:nth-child(5) > a[target="_top"]`
-- `#skattelisten, li:nth-child(6) > a[target="_top"]`
-- `#skattelisten, li:nth-child(7) > a[target="_top"]`
-- `#skattelisten, li:nth-child(8) > a[target="_top"]`
-- `#skattelisten, li:nth-child(9) > a[target="_top"]`
-- `a[aria-label="Returnerer til gamleklubben"] > .article__text-container > .article__section`
 - `.memo > .text-container > h3`
 - `.kryssord > .text-container > h3`
 - `.minikryss > .text-container > h3`
@@ -103,18 +93,17 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 78
+- **Count:** 82
 
 #### Affected Elements:
 
 - `h1`
 - `#announcement-banner`
-- `.collage-x3.row:nth-child(1)`
-- `.collage-x3.row:nth-child(3)`
+- `.top-60-40-block`
+- `article[data-pulse-entity-id="WvLAO2"]`
+- `.article--videoFrontTeaser > .article__teaser-container`
+- `article[data-pulse-entity-id="16kb6B"] > .article__teaser-container`
 - `a[data-pulse-entity-id="helgomeny-lukekalender-2025"]`
-- `#skattelisten, .text`
-- `#skattelisten, ol`
-- `#skattelisten, #b4-tax-municipality-search`
 - `._heading_1bm9r_641 > span`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
@@ -136,46 +125,48 @@
 - `._preview_1bm9r_661:nth-child(9) > a > ._preview-title_1bm9r_721`
 - `._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
-- `.vertical-x3.row:nth-child(12)`
-- `.collage-x4.row:nth-child(14)`
-- `.collage-x3.row:nth-child(18)`
-- `.collage-x4.row:nth-child(19)`
+- `.vertical-x2.row:nth-child(12)`
+- `article[data-pulse-entity-id="vrmyxl"]`
+- `article[data-pulse-entity-id="rrL1Gl"] > .article__teaser-container`
+- `.article--live > .article__teaser-container`
+- `.vertical-x2.row:nth-child(18)`
+- `.collage-x3.row:nth-child(19)`
 - `.vertical-x2.row:nth-child(21)`
 - `.hjernetrim-front-widget`
 - `.vertical-x3.row:nth-child(25)`
-- `.vertical-x2.row:nth-child(27)`
+- `.collage-x3.row:nth-child(27)`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
 - `.podcast-spons`
-- `.vertical-x4.row:nth-child(29)`
+- `.vertical-x3.row:nth-child(29)`
 - `.widget-football.regional-widget`
-- `.vertical-x3.row:nth-child(31)`
-- `.vertical-small-x2.row:nth-child(33)`
-- `.collage-x3.row:nth-child(36)`
+- `.collage-x3.row:nth-child(31)`
+- `.vertical-x2.row:nth-child(33)`
+- `.vertical-x3.row:nth-child(36)`
 - `.widget-bolig.regional-widget`
-- `.vertical-x2.row:nth-child(38)`
-- `.vertical-x3.row:nth-child(39)`
+- `.collage-x3.row:nth-child(38)`
+- `.vertical-x2.row:nth-child(39)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(41)`
-- `.vertical-small-x2.row:nth-child(42)`
+- `.vertical-x3.row:nth-child(42)`
 - `.vertical-x2.row:nth-child(44)`
-- `.vertical-x3.row:nth-child(45)`
+- `.vertical-x4.row:nth-child(45)`
 - `.vertical-x2.row:nth-child(46)`
 - `.vertical-x1-ad.row:nth-child(47)`
-- `.vertical-x4.row:nth-child(48)`
+- `.vertical-x3.row:nth-child(48)`
 - `.vertical-x2.row:nth-child(49)`
 - `.vertical-x1-ad.row:nth-child(50)`
-- `.vertical-x3.row:nth-child(51)`
+- `.collage-x3.row:nth-child(51)`
 - `.vertical-x2.row:nth-child(52)`
-- `.vertical-small-x2.row:nth-child(53)`
+- `.collage-x3.row:nth-child(53)`
 - `.vertical-x2.row:nth-child(54)`
 - `.vertical-x3.row:nth-child(55)`
-- `.vertical-x2.row:nth-child(56)`
-- `.collage-x3.row:nth-child(57)`
-- `.vertical-x2.row:nth-child(59)`
+- `.collage-x3.row:nth-child(56)`
+- `.vertical-x2.row:nth-child(57)`
+- `.vertical-x3.row:nth-child(59)`
 - `#webcam-frontpage`
-- `.vertical-x3.row:nth-child(61)`
+- `.collage-x3.row:nth-child(61)`
 - `.vertical-x2.row:nth-child(62)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(63)`
 - `.collage-x3.row:nth-child(65)`
@@ -184,7 +175,10 @@
 - `.vertical-x1-ad.row:nth-child(68)`
 - `.vertical-x2.row:nth-child(69)`
 - `.vertical-x4.row:nth-child(70)`
-- `.sch-datacontroller__text`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(71)`
+- `.collage-x3.row:nth-child(72)`
+- `.vertical-x3.row:nth-child(73)`
+- `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`
 
 ### Scrollable region must have keyboard access
 
