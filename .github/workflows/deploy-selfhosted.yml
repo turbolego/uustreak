@@ -50,8 +50,8 @@ jobs:
       - name: Clean workspace for setup
         run: |
           # Kill any hanging npm or node processes first
-          pkill -f npm || echo "No npm processes to kill"
-          pkill -f node || echo "No node processes to kill"
+          pkill -u $(whoami) -f npm || echo "No npm processes to kill"
+          pkill -u $(whoami) -f node || echo "No node processes to kill"
           
           # Wait for processes to fully terminate
           sleep 3
@@ -87,7 +87,7 @@ jobs:
           rm -rf ~/.npm ~/.cache/npm ~/.config/npm /tmp/npm-* 2>/dev/null || echo "Cleaned npm directories"
 
           # Also clean any npm processes that might be holding locks
-          pkill -f npm || echo "No npm processes to kill"
+          pkill -u $(whoami) -f npm || echo "No npm processes to kill"
 
           # Wait a moment for filesystem to settle
           sleep 2
@@ -255,8 +255,8 @@ jobs:
       - name: Clean workspace manually
         run: |
           # Kill any hanging npm processes first
-          pkill -f npm || echo "No npm processes to kill"
-          pkill -f node || echo "No node processes to kill"
+          pkill -u $(whoami) -f npm || echo "No npm processes to kill"
+          pkill -u $(whoami) -f node || echo "No node processes to kill"
           
           # Wait for processes to fully terminate
           sleep 3
@@ -754,8 +754,8 @@ jobs:
       - name: Clean workspace
         run: |
           # Kill any hanging npm or node processes first
-          pkill -f npm || echo "No npm processes to kill"
-          pkill -f node || echo "No node processes to kill"
+          pkill -u $(whoami) -f npm || echo "No npm processes to kill"
+          pkill -u $(whoami) -f node || echo "No node processes to kill"
           
           # Wait for processes to fully terminate
           sleep 3
