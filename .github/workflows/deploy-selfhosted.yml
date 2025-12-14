@@ -271,6 +271,7 @@ jobs:
           rm -rf accessibility-reports || echo "Cleaned accessibility-reports"
           rm -rf playwright-report || echo "Cleaned playwright-report"
           rm -rf tests || echo "Cleaned tests"
+          rm -rf test-results-batch-* || echo "Cleaned test results batches"
           rm -rf .git/index.lock || echo "Cleaned git lock file"
           
           # Create required directories
