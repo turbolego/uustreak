@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stiftelsen norsk teknisk museum
 
-**Timestamp:** 2025-12-14T00:56:24.912Z
-**URL:** [https://www.tekniskmuseum.no/](https://www.tekniskmuseum.no/)
+**Timestamp:** 2025-12-15T00:28:40.526Z
+**URL:** [https://www.tekniskmuseum.no/#](https://www.tekniskmuseum.no/#)
 **Total Violations:** 9
 
 ## Violation Details
@@ -99,13 +99,12 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 7
+- **Count:** 6
 
 #### Affected Elements:
 
 - `.fs-teaser-item-1`
 - `.fs-teaser-item-2`
-- `.fs-teaser-item-3`
 - `.uk-first-column.el-item > .uk-icon-button.el-link[rel="noreferrer"]`
 - `.el-item:nth-child(2) > .uk-icon-button.el-link[rel="noreferrer"]`
 - `.el-item:nth-child(3) > .uk-icon-button.el-link[rel="noreferrer"]`

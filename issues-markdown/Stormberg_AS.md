@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2025-12-14T00:56:53.147Z
+**Timestamp:** 2025-12-15T00:28:58.997Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -17,32 +17,32 @@
 #### Affected Elements:
 
 - `.gt.dr.ds > div > div`
-- `a[href$="dagskupp"]`
-- `a[aria-label="Nordlys resirkulert termodress"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
-- `a[aria-label="Nordlys resirkulert termodress"] > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `div:nth-child(3) > .i1.bl.bj > .i2.i3 > li:nth-child(2) > .i4.i5.i6 > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
-- `div:nth-child(3) > .i1.bl.bj > .i2.i3 > li:nth-child(2) > .i4.i5.i6 > .it.iu.hr > div > .gu > .j7.hs.bd`
+- `.gv.am[href$="nyheter"]`
+- `div:nth-child(3) > .i1.bl.bj > .i2.i3 > li:nth-child(1) > .i4.i5.i6 > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
+- `div:nth-child(3) > .i1.bl.bj > .i2.i3 > li:nth-child(1) > .i4.i5.i6 > .it.iu.hr > div > .gu > .j7.hs.bd`
 - `a[aria-label="Eidnes vattert softshellparkas"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
 - `a[aria-label="Eidnes vattert softshellparkas"] > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `a[aria-label="Fagerhei superundertøysett"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
-- `a[aria-label="Fagerhei superundertøysett"] > .it.iu.hr > div > .gu > .j7.hs.bd`
+- `a[aria-label="Nordlys resirkulert termodress"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
+- `a[aria-label="Nordlys resirkulert termodress"] > .it.iu.hr > div > .gu > .j7.hs.bd`
 - `a[aria-label="Nordtoppen vinterjakke"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
 - `a[aria-label="Nordtoppen vinterjakke"] > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `a[aria-label="Grefsen vanntett vinterstøvel"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
-- `a[aria-label="Grefsen vanntett vinterstøvel"] > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `div:nth-child(7) > .i1.bl.bj > .i2.i3 > li:nth-child(2) > .i4.i5.i6 > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
-- `div:nth-child(7) > .i1.bl.bj > .i2.i3 > li:nth-child(2) > .i4.i5.i6 > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `div:nth-child(7) > .i1.bl.bj > .i2.i3 > li:nth-child(3) > .i4.i5.i6 > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
-- `div:nth-child(7) > .i1.bl.bj > .i2.i3 > li:nth-child(3) > .i4.i5.i6 > .it.iu.hr > div > .gu > .j7.hs.bd`
+- `a[aria-label="Fagerhei superundertøysett"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
+- `a[aria-label="Fagerhei superundertøysett"] > .it.iu.hr > div > .gu > .j7.hs.bd`
 - `a[aria-label="Hardanger 2-lags ulltrøye"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
 - `a[aria-label="Hardanger 2-lags ulltrøye"] > .it.iu.hr > div > .gu > .j7.hs.bd`
 - `a[aria-label="Hardanger 2-lags ullongs"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
 - `a[aria-label="Hardanger 2-lags ullongs"] > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `li:nth-child(1) > .i4.i5[aria-label="Istind piggsko"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
+- `li:nth-child(3) > .i4.i5[aria-label="Hardanger supersoft trøye"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
+- `li:nth-child(3) > .i4.i5[aria-label="Hardanger supersoft trøye"] > .it.iu.hr > div > .gu > .j7.hs.bd`
+- `li:nth-child(4) > .i4.i5[aria-label="Hardanger supersoft trøye"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
+- `li:nth-child(4) > .i4.i5[aria-label="Hardanger supersoft trøye"] > .it.iu.hr > div > .gu > .j7.hs.bd`
+- `a[aria-label="Trollskog turøks"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
+- `a[aria-label="Trollskog turøks"] > .it.iu.hr > div > .gu > .j7.hs.bd`
+- `li:nth-child(1) > .i4.i5[aria-label="Trysil vattert selebukse"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
 - `a[aria-label="Voss 2-lags ullongs"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
 - `a[aria-label="Voss 2-lags ulltrøye"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
-- `li:nth-child(4) > .i4.i5[aria-label="Istind piggsko"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
-- `a[aria-label="Hovden vinterdress"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
+- `a[aria-label="Porsanger cord sherpagenser"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
+- `li:nth-child(5) > .i4.i5[aria-label="Trysil vattert selebukse"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2025-12-14T00:43:44.285Z
-**URL:** [https://www.bt.no/](https://www.bt.no/)
+**Timestamp:** 2025-12-15T00:32:22.034Z
+**URL:** [https://www.bt.no/#](https://www.bt.no/#)
 **Total Violations:** 5
 
 ## Violation Details
@@ -36,31 +36,28 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 29
+- **Count:** 25
 
 #### Affected Elements:
 
-- `.liveticker-red`
-- `.article--breaking > .article__teaser-container > .article__link.url > .article__text-container > .article__section`
-- `.timeline--item:nth-child(1) > a > .timeline--date`
-- `.timeline--item:nth-child(2) > a > .timeline--date`
-- `.timeline--item:nth-child(3) > a > .timeline--date`
+- `.article-section--sport-kommentar > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `.article-tip-us > p`
 - `.tip-us-underline`
+- `article[data-pulse-entity-id="WvL3JQ"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(2) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(3) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(4) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(5) > a > ._preview-title_1bm9r_721 > span`
-- `article[data-pulse-entity-id="bOKJQq"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `a[aria-label="E16: Rasvakter følger med"] > .article__text-container > .article__section`
 - `.memo > .text-container > h3`
 - `.kryssord > .text-container > h3`
 - `.minikryss > .text-container > h3`
 - `.ordjakten > .text-container > h3`
-- `article[data-pulse-entity-id="j0970n"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="8pwO91"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="16k8VQ"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `article[data-pulse-entity-id="m06nM4"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `a[aria-label="Bil av veien i Brønndalen"] > .article__text-container > .article__section`
-- `article[data-pulse-entity-id="Oknr83"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="bOKJQq"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `.opinion-banner-desc`
 - `#Vågen`
 - `#Finse`
@@ -68,7 +65,6 @@
 - `#Torgallmeningen`
 - `#Puddefjordsbroen`
 - `#Åsaneveien`
-- `article[data-pulse-entity-id="2p1jbR"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 
 ### Images must have alternative text
 
@@ -97,17 +93,14 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 62
+- **Count:** 58
 
 #### Affected Elements:
 
 - `h1`
-- `.liveticker-red`
-- `a[data-name="Nyheter"]`
-- `.liveticker-item--snooze > .name`
-- `.collage-x3.row:nth-child(1)`
+- `.top-60-40-block`
 - `.collage-x3.row:nth-child(4)`
-- `#dr-edition-teaser-2u69qm3z4 > div`
+- `#dr-edition-teaser-5y1o5hoxa > div`
 - `._heading_1bm9r_641 > span`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
@@ -130,36 +123,35 @@
 - `._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
 - `.vertical-x2.row:nth-child(11)`
-- `.vertical-x3.row:nth-child(14)`
+- `.collage-x4.row:nth-child(14)`
 - `.vertical-x2.row:nth-child(16)`
 - `.hjernetrim-front-widget`
-- `.vertical-x4.row:nth-child(19)`
+- `.vertical-x3.row:nth-child(19)`
 - `.vertical-x2.row:nth-child(22)`
-- `.vertical-x3.row:nth-child(23)`
-- `.vertical-x3.row:nth-child(25)`
+- `.collage-x4.row:nth-child(23)`
+- `.vertical-x2.row:nth-child(25)`
 - `.collage-x3.row:nth-child(26)`
-- `.vertical-x2.row:nth-child(28)`
+- `.vertical-x3.row:nth-child(28)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(29)`
-- `.vertical-x3.row:nth-child(30)`
-- `.collage-x3.row:nth-child(32)`
+- `.vertical-x2.row:nth-child(30)`
+- `.vertical-x4`
 - `.widget-football.regional-widget`
-- `.vertical-x2.row:nth-child(34)`
+- `.display-flex > .article__text-container`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
-- `.vertical-x3.row:nth-child(36)`
-- `.vertical-x4.row:nth-child(37)`
-- `.display-flex > .article__text-container`
+- `.vertical-x2.row:nth-child(36)`
+- `.collage-x3.row:nth-child(37)`
+- `.vertical-x2.row:nth-child(38)`
 - `.vertical-x1-ad.row:nth-child(39)`
-- `.collage-x3.row:nth-child(42)`
+- `.vertical-x3.row:nth-child(42)`
 - `.vertical-x2.row:nth-child(44)`
 - `.opinion-banner-title`
 - `.opinion-banner-desc`
-- `.vertical-x3.row:nth-child(46)`
+- `.collage-x3.row:nth-child(46)`
 - `.widget-webcam`
-- `.collage-x3.row:nth-child(48)`
+- `.vertical-x2.row:nth-child(48)`
 - `.vertical-x1-ad.row:nth-child(49)`
-- `.vertical-x2.row:nth-child(50)`
-- `.vertical-x2.row:nth-child(51)`
-- `.sch-datacontroller__text`
+- `.vertical-x3.row:nth-child(50)`
+- `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`

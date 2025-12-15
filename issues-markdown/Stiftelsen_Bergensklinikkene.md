@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stiftelsen Bergensklinikkene
 
-**Timestamp:** 2025-12-14T00:54:03.268Z
-**URL:** [https://bergenclinics.no/](https://bergenclinics.no/)
+**Timestamp:** 2025-12-15T00:26:39.117Z
+**URL:** [https://bergenclinics.no/#](https://bergenclinics.no/#)
 **Total Violations:** 6
 
 ## Violation Details
@@ -61,7 +61,7 @@
 - `#archives-4 > ul > li:nth-child(3) > a`
 - `#archives-4 > ul > li:nth-child(4) > a`
 - `#archives-4 > ul > li:nth-child(5) > a`
-- `#es_subscription_form_submit_693e0a9ede522`
+- `#es_subscription_form_submit_693f55af275fc`
 
 ### Frames must have an accessible name
 

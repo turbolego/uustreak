@@ -1,7 +1,7 @@
 # WCAG Violations Report for Drammens Tidende AS
 
-**Timestamp:** 2025-12-14T00:54:01.992Z
-**URL:** [https://www.dt.no/](https://www.dt.no/)
+**Timestamp:** 2025-12-15T00:41:09.736Z
+**URL:** [https://www.dt.no/#](https://www.dt.no/#)
 **Total Violations:** 4
 
 ## Violation Details
@@ -18,19 +18,17 @@
 
 - `#eaframe`
 
-### Page should contain a level-one heading
+### Links must be distinguishable without relying on color
 
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 3
+- **Impact:** serious
+- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
+- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
+- **Count:** 1
 
 #### Affected Elements:
 
-- `html`
-- `#google_ads_iframe_\/56257416\/www\.dt\.no\/toppbanner_0, html`
-- `#eaframe, html`
+- `#sp_message_iframe_1404689, #no-hover`
 
 ### Elements marked as presentational should be consistently ignored
 
