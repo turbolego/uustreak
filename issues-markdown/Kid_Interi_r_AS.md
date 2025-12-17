@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-12-15T00:39:47.553Z
+**Timestamp:** 2025-12-17T00:36:04.198Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -56,9 +56,9 @@
 
 #### Affected Elements:
 
-- `.a7[href$="soverom"][data-scope-link="true"]:nth-child(1) > .gf.fb.fa > .fd.fe.el`
-- `.h8 > .fd.fe.el`
-- `div:nth-child(27) > .ge.gd.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1) > .h7.fb.fa > .fd.fe.el`
+- `.gf > .fd.fe.el`
+- `.h9 > .fd.fe.el`
+- `div:nth-child(28) > .ge.gd.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1) > .h8.fb.fa > .fd.fe.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -93,7 +93,7 @@
 - `img[alt="Loungewear 50%"]`
 - `img[alt="Therapi-serien 50%"]`
 - `img[alt="Såper og kremer 50%"]`
-- `div:nth-child(21) > .gg.bv.bw > .gh.gi > .bz.dd > .is-draggable.gj.ao > .gl.gk.b > .gm.i1.gj:nth-child(7) > div > .ca.s.c9 > .go.da.c4 > .en.gk.a3`
+- `div:nth-child(22) > .gg.bv.bw > .gh.gi > .bz.dd > .is-draggable.gj.ao > .gl.gk.b > .gm.i2.gj:nth-child(7) > div > .ca.s.c9 > .go.da.c4 > .en.gk.a3`
 - `img[alt="AVA velværeserie 50%"]`
 - `img[alt="Baderomstilbehør 50%"]`
 - `a[href$="skjonnhetstilbehor"] > .go.da.c4 > .en.gk.a3`
@@ -112,8 +112,8 @@
 - `.bl.c4.bz > .ca.s[href$="soverom"]`
 - `.a7[href$="julie-fiala"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="julie-fiala"]`
-- `div:nth-child(27) > .ge.gd.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1)`
-- `div:nth-child(27) > .ge.gd.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(28) > .ge.gd.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1)`
+- `div:nth-child(28) > .ge.gd.bv > .bl.c4.bz > .ca.s.c9`
 
 ### All page content should be contained by landmarks
 

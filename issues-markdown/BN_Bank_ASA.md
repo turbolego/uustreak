@@ -1,6 +1,6 @@
 # WCAG Violations Report for BN Bank ASA
 
-**Timestamp:** 2025-12-15T00:30:47.355Z
+**Timestamp:** 2025-12-17T00:30:06.248Z
 **URL:** [https://www.bnbank.no/#](https://www.bnbank.no/#)
 **Total Violations:** 5
 
@@ -43,11 +43,14 @@
 - **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/presentation-role-conflict?application=playwright
 - **Tags:** cat.aria, best-practice, ACT
-- **Count:** 5
+- **Count:** 8
 
 #### Affected Elements:
 
 - `.navigation__direct-login--desktop > .navigation__login-button.btn.btn-secondary > .navigation__login-button--desktop[aria-hidden="True"][alt=""]`
+- `#betalingsfrister-jul > .content-card--image-above.content-card__content-wrapper > .content-card__icon > img[aria-hidden="True"][alt=""]`
+- `#betalingsfrister-nyttår > .content-card--image-above.content-card__content-wrapper > .content-card__icon > img[aria-hidden="True"][alt=""]`
+- `#åpningstider-i-jula > .content-card--image-above.content-card__content-wrapper > .content-card__icon > img[aria-hidden="True"][alt=""]`
 - `img[src$="medal.svg"]`
 - `#hvor-mye-kan-du-låne-til-drømmeboligen\? > .content-card--image-above.content-card__content-wrapper > .content-card__icon > img[aria-hidden="True"][alt=""]`
 - `#hvor-mye-må-du-spare-for-å-nå-målet-ditt\? > .content-card--image-above.content-card__content-wrapper > .content-card__icon > img[aria-hidden="True"][alt=""]`

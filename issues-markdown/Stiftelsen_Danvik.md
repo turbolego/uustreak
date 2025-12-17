@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Danvik
 
-**Timestamp:** 2025-12-15T00:26:56.640Z
+**Timestamp:** 2025-12-17T00:27:24.221Z
 **URL:** [https://www.danvik.no/#](https://www.danvik.no/#)
 **Total Violations:** 3
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `h4:nth-child(5)`
 - `h4:nth-child(6)`
+- `h4:nth-child(7)`
 - `#block-cfbb468cda4135245bdb > .sqs-block-content > .sqs-html-content[data-sqsp-text-block-content=""] > h3`
 
 ### Heading levels should only increase by one
@@ -30,7 +30,7 @@
 
 #### Affected Elements:
 
-- `h3:nth-child(2)`
+- `#block-yui_3_17_2_1_1648026520772_12895 > .sqs-block-content > .sqs-html-content[data-sqsp-text-block-content=""] > h3`
 - `#block-cfbb468cda4135245bdb > .sqs-block-content > .sqs-html-content[data-sqsp-text-block-content=""] > h3`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination

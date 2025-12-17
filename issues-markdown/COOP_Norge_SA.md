@@ -1,6 +1,6 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2025-12-15T00:35:18.081Z
+**Timestamp:** 2025-12-17T00:34:38.306Z
 **URL:** [https://www.coop.no/#](https://www.coop.no/#)
 **Total Violations:** 5
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.hz > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .hv.hx.hw > .hy > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.hk > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .hg.hi.hh > .hj > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### ARIA attributes must conform to valid values
 
@@ -30,8 +30,8 @@
 #### Affected Elements:
 
 - `input[role="searchbox"]`
-- `.hz > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .hv.hx.hw > .hy > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.hk > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .hg.hi.hh > .hj > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### Headings should not be empty
 
@@ -43,8 +43,8 @@
 
 #### Affected Elements:
 
-- `.h5`
-- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .fz.am.cj > .g0.g2.g3`
+- `.gm`
+- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .hv.am.cj > .hw.hx.hy`
 
 ### Frames must have an accessible name
 
@@ -56,10 +56,10 @@
 
 #### Affected Elements:
 
-- `.q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"]`
-- `.q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
-- `.fx > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"]`
-- `.fx > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
+- `.q.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"]`
+- `.q.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
+- `.ee > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"]`
+- `.ee > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
 
 ### Links must have discernible text
 
@@ -71,5 +71,5 @@
 
 #### Affected Elements:
 
-- `.kj.kk.kl:nth-child(1)`
-- `.kj.kk.kl:nth-child(2)`
+- `.kd.ke.kf:nth-child(1)`
+- `.kd.ke.kf:nth-child(2)`

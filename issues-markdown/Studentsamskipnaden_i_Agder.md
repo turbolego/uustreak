@@ -1,22 +1,10 @@
 # WCAG Violations Report for Studentsamskipnaden i Agder
 
-**Timestamp:** 2025-12-15T00:29:34.832Z
+**Timestamp:** 2025-12-17T00:30:01.561Z
 **URL:** [https://www.sia.no/#](https://www.sia.no/#)
-**Total Violations:** 9
+**Total Violations:** 6
 
 ## Violation Details
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.item-list__title`
 
 ### Contentinfo landmark should not be contained in another landmark
 
@@ -65,38 +53,6 @@
 #### Affected Elements:
 
 - `ion-content`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.large-image-cta__card__text > .richtext > p:nth-child(2) > a`
-
-### <object> elements must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure <object> elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/object-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, EN-301-549, EN-9.1.1.1, RGAAv4, RGAA-1.1.6
-- **Count:** 9
-
-#### Affected Elements:
-
-- `object[alt="Bolig Outlined"]`
-- `object[alt="Helse Outlined"]`
-- `object[alt="Barnehage Outlined"]`
-- `object[alt="Studentliv Outlined"]`
-- `object[alt="Mat Og Drikke Outlined"]`
-- `object[alt="Bok Outlined"]`
-- `object[alt="Trening Outlined"]`
-- `a[aria-label="Go to /studentfordeler/"][href$="studentfordeler/"][title="Studentfordeler"] > .umb-img > object`
-- `object[alt="Miljo Outlined"]`
 
 ### <svg> elements with an img role must have alternative text
 

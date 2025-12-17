@@ -1,6 +1,6 @@
 # WCAG Violations Report for OBOS Eiendomsmeglere AS
 
-**Timestamp:** 2025-12-15T00:31:23.051Z
+**Timestamp:** 2025-12-17T00:31:35.081Z
 **URL:** [https://www.obos.no/](https://www.obos.no/)
 **Total Violations:** 2
 
@@ -28,4 +28,4 @@
 
 #### Affected Elements:
 
-- `.sr-only`
+- `.focus\:not-sr-only`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norefjell Ski & Spa AS
 
-**Timestamp:** 2025-12-15T00:28:43.019Z
+**Timestamp:** 2025-12-17T00:28:56.580Z
 **URL:** [https://www.norefjell.com/#](https://www.norefjell.com/#)
 **Total Violations:** 2
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#mj6f16alqbl4vqyihs-contact\:email`
+- `#mj99x10l413dszy0wuz-contact\:email`
 
 ### Form elements must have labels
 
@@ -28,4 +28,4 @@
 
 #### Affected Elements:
 
-- `#mj6f16alqbl4vqyihs-contact\:email`
+- `#mj99x10l413dszy0wuz-contact\:email`

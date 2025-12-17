@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2025-12-15T00:39:10.238Z
+**Timestamp:** 2025-12-17T00:39:31.458Z
 **URL:** [https://vestlia.no/#](https://vestlia.no/#)
 **Total Violations:** 8
 
@@ -23,11 +23,11 @@
 - `#widgetContainer,.visible`
 - `.fusion-title-6 > h2`
 - `.fusion-title-11 > h2`
-- `.button-9 > .fusion-button-text.awb-button__text.awb-button__text--default`
+- `.button-11 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.fusion-title-13 > h2`
-- `.button-10 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_699c8ac8-a8c2-4cb8-b21d-f9da53a6d54f`
 - `.button-12 > .fusion-button-text.awb-button__text.awb-button__text--default`
+- `#f_09b61bea-dae6-4b70-937e-a6c69f518f2e`
+- `.button-14 > .fusion-button-text.awb-button__text.awb-button__text--default`
 
 ### Heading levels should only increase by one
 
@@ -118,9 +118,9 @@
 - `.skip-link`
 - `.fusion-builder-column-1`
 - `.fusion-flex-justify-content-center.fusion-content-layout-column.fusion-column-wrapper > .sm-text-align-center.fusion-image-element`
-- `.fusion-builder-column-27`
 - `.fusion-builder-column-28`
 - `.fusion-builder-column-29`
+- `.fusion-builder-column-30`
 - `.fusion-builder-row-15`
 - `.fusion-builder-row-17`
 - `.fusion-builder-row-18`

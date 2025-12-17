@@ -1,8 +1,8 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2025-12-15T00:32:06.854Z
+**Timestamp:** 2025-12-17T00:32:36.164Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -43,9 +43,22 @@
 
 #### Affected Elements:
 
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-header[data-v-c7a7390a=""] > .margin-top-3xl.padding-top-3xs`
-- `.dropdown-category.footer.text-l:nth-child(1) > .dropdown-link[data-v-331b19a2=""] > .dropdown-header.hidden-mobile[data-v-331b19a2=""] > h6`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-header[data-v-3cde9319=""] > .margin-top-3xl.padding-top-3xs`
+- `.dropdown-category.footer.text-l:nth-child(1) > .dropdown-link[data-v-485386e6=""] > .dropdown-header.hidden-mobile[data-v-485386e6=""] > h6`
 - `#privacy_prompt_text2 > h4`
+
+### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
+
+- **Impact:** serious
+- **Description:** Ensure that lists are structured correctly
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/list?application=playwright
+- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-3cde9319=""] > .tn-list.content-list[data-v-6e89193e=""] > ul`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-3cde9319=""] > .tn-list.content-list[data-v-6e89193e=""] > ul`
 
 ### <li> elements must be contained in a <ul> or <ol>
 
@@ -53,7 +66,7 @@
 - **Description:** Ensure <li> elements are used semantically
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/listitem?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 4
+- **Count:** 7
 
 #### Affected Elements:
 
@@ -61,6 +74,9 @@
 - `.margin-bottom-2xs[ondragstart="return false"][draggable="false"]:nth-child(2) > .border-radius-l.card[data-v-3032fd63=""] > .main-stock.stock[size="14px"]`
 - `.margin-bottom-2xs[ondragstart="return false"][draggable="false"]:nth-child(3) > .border-radius-l.card[data-v-3032fd63=""] > .main-stock.stock[size="14px"]`
 - `.margin-bottom-2xs[ondragstart="return false"][draggable="false"]:nth-child(4) > .border-radius-l.card[data-v-3032fd63=""] > .main-stock.stock[size="14px"]`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-3cde9319=""] > .tn-list.content-list[data-v-6e89193e=""] > ul > div[data-v-6e89193e=""] > .tn-list--item.checkmark.m`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-3cde9319=""] > .tn-list.content-list[data-v-6e89193e=""] > ul > div[data-v-6e89193e=""] > .tn-list--item.checkmark.m:nth-child(1)`
+- `.tn-list--item.checkmark.m:nth-child(2)`
 
 ### All page content should be contained by landmarks
 

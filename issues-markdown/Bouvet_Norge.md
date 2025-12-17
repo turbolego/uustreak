@@ -1,10 +1,22 @@
 # WCAG Violations Report for Bouvet Norge
 
-**Timestamp:** 2025-12-15T00:34:27.750Z
+**Timestamp:** 2025-12-17T00:33:47.878Z
 **URL:** [https://www.bouvet.no/#](https://www.bouvet.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
+
+### Certain ARIA roles must contain particular children
+
+- **Impact:** critical
+- **Description:** Ensure elements with an ARIA role that require child roles contain them
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-required-children?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `div[role="grid"]`
 
 ### Frames must have an accessible name
 
@@ -63,7 +75,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 26
+- **Count:** 32
 
 #### Affected Elements:
 
@@ -80,16 +92,22 @@
 - `section`
 - `.section-bottom-space.container-flex-justify-center.util-flex-row`
 - `.part-container[data-portal-component-type="part"]:nth-child(4) > .util-flex-column-large.util-flex-row-small.collapsible__button`
+- `.block-bottom-space.util-container-padding.util-flex-column`
+- `div[role="grid"] > .course-calendar-wrap-row\.is-head`
+- `div[role="grid"] > .course-calendar-wrap-row > .course-calendar-row.util-flex-row > .course-calendar-name`
+- `time`
+- `div[role="grid"] > .course-calendar-wrap-row > .course-calendar-row.util-flex-row > .course-calendar-main-category`
+- `.course-calendar-row.util-flex-row > .course-calendar-sub-category`
 - `.layout-container__no-gap`
-- `.part-container[data-portal-component-type="part"]:nth-child(7)`
-- `.related-courses-inner > .h3-styling`
+- `.part-container[data-portal-component-type="part"]:nth-child(8)`
+- `.related-courses-inner.creme-light > .h3-styling`
 - `.related-courses-ingress`
-- `.course-calendar-wrap-row\.is-head`
-- `.course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-name`
-- `.course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-date`
+- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row\.is-head`
+- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-name`
+- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-date`
 - `.course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-name`
 - `.course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-date`
 - `.course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-name`
 - `.course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-date`
-- `.layout-container[data-portal-component-type="layout"]:nth-child(9)`
+- `.layout-container[data-portal-component-type="layout"]:nth-child(10)`
 - `#widget2, #player`
