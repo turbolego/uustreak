@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-12-17T00:36:04.198Z
+**Timestamp:** 2025-12-20T04:24:30.231Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -52,13 +52,12 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.gf > .fd.fe.el`
-- `.h9 > .fd.fe.el`
-- `div:nth-child(28) > .ge.gd.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1) > .h8.fb.fa > .fd.fe.el`
+- `.h7 > .fe.ff.el`
+- `div:nth-child(23) > .fa.f9.bv > .bl.c4.dd > .a7.a5.a6:nth-child(1) > .h6.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -93,10 +92,10 @@
 - `img[alt="Loungewear 50%"]`
 - `img[alt="Therapi-serien 50%"]`
 - `img[alt="Såper og kremer 50%"]`
-- `div:nth-child(22) > .gg.bv.bw > .gh.gi > .bz.dd > .is-draggable.gj.ao > .gl.gk.b > .gm.i2.gj:nth-child(7) > div > .ca.s.c9 > .go.da.c4 > .en.gk.a3`
+- `div:nth-child(21) > .ge.bv.bw > .gf.gg > .dd.bz > .is-draggable.gh.ao > .gj.gi.b > .gk.i0.gh:nth-child(7) > div > .ca.s.c9 > .gm.da.c4 > .en.gi.a3`
 - `img[alt="AVA velværeserie 50%"]`
 - `img[alt="Baderomstilbehør 50%"]`
-- `a[href$="skjonnhetstilbehor"] > .go.da.c4 > .en.gk.a3`
+- `a[href$="skjonnhetstilbehor"] > .gm.da.c4 > .en.gi.a3`
 
 ### Links must have discernible text
 
@@ -104,16 +103,14 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 6
+- **Count:** 4
 
 #### Affected Elements:
 
-- `.ge.gd.bv > .bl.c4.bz > .a7[href$="soverom"][data-scope-link="true"]:nth-child(1)`
-- `.bl.c4.bz > .ca.s[href$="soverom"]`
 - `.a7[href$="julie-fiala"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="julie-fiala"]`
-- `div:nth-child(28) > .ge.gd.bv > .bl.c4.bz > .a7.a5.a6:nth-child(1)`
-- `div:nth-child(28) > .ge.gd.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(23) > .fa.f9.bv > .bl.c4.dd > .a7.a5.a6:nth-child(1)`
+- `div:nth-child(23) > .fa.f9.bv > .bl.c4.dd > .ca.s.c9`
 
 ### All page content should be contained by landmarks
 

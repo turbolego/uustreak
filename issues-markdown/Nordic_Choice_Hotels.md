@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordic Choice Hotels
 
-**Timestamp:** 2025-12-17T00:28:06.959Z
+**Timestamp:** 2025-12-20T04:13:50.059Z
 **URL:** [https://www.strawberry.no/](https://www.strawberry.no/)
 **Total Violations:** 2
 
@@ -20,8 +20,8 @@
 - `#horizontal-scroll-info-cards-1 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(2)`
 - `#horizontal-scroll-info-cards-1 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(3)`
 - `a[href$="final-bonusnetter/"]`
+- `#horizontal-scroll-info-cards-3 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(2)`
 - `a[href$="superdeal/"]`
-- `#horizontal-scroll-info-cards-3 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(3)`
 - `.css-1pzvwcy-label-spacing-override[href$="restaurant/"][role="listitem"]`
 - `.css-1pzvwcy-label-spacing-override[href$="spa/"][role="listitem"]`
 - `.css-1pzvwcy-label-spacing-override[href$="eventer/"][role="listitem"]`
@@ -30,7 +30,7 @@
 - `a[href$="kobenhavn/"]`
 - `.css-1pzvwcy-label-spacing-override[href="/hotell/?resetDestination=true"][role="listitem"]`
 - `a[href$="julebord/"]`
-- `a[href$="nyttar/"]`
+- `div[data-length="2"] > a[href$="nyttar/"]`
 - `#horizontal-scroll-info-cards-8 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(1)`
 - `#horizontal-scroll-info-cards-8 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(2)`
 - `#horizontal-scroll-info-cards-8 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(3)`

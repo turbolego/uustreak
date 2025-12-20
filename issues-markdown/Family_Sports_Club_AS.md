@@ -1,8 +1,8 @@
 # WCAG Violations Report for Family Sports Club AS
 
-**Timestamp:** 2025-12-17T00:26:32.024Z
+**Timestamp:** 2025-12-20T04:14:40.924Z
 **URL:** [https://sporty.no/](https://sporty.no/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `header`
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#itx-chat-frame, .btn-lg`
 
 ### Elements must meet minimum color contrast ratio thresholds
 

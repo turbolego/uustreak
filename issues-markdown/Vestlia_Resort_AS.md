@@ -1,10 +1,22 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2025-12-17T00:39:31.458Z
+**Timestamp:** 2025-12-20T04:26:42.415Z
 **URL:** [https://vestlia.no/#](https://vestlia.no/#)
-**Total Violations:** 8
+**Total Violations:** 10
 
 ## Violation Details
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.q-btn--flat`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -12,7 +24,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 12
+- **Count:** 13
 
 #### Affected Elements:
 
@@ -26,8 +38,9 @@
 - `.button-11 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.fusion-title-13 > h2`
 - `.button-12 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_09b61bea-dae6-4b70-937e-a6c69f518f2e`
+- `#f_e1ca489d-6f7b-45e2-a14c-fc1e721ffc5d`
 - `.button-14 > .fusion-button-text.awb-button__text.awb-button__text--default`
+- `#f_dcf05cba-6369-48e2-8f7f-c6fc05f4414f`
 
 ### Heading levels should only increase by one
 
@@ -50,11 +63,12 @@
 - **Description:** Ensure the main landmark is at top level
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-main-is-top-level?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.q-page`
+- `div[formid="79"] > .q-page-container.full-width > .q-page`
+- `.q-mt-md.q-page`
 
 ### Document should not have more than one main landmark
 
@@ -124,8 +138,20 @@
 - `.fusion-builder-row-15`
 - `.fusion-builder-row-17`
 - `.fusion-builder-row-18`
-- `div:nth-child(22)`
-- `div:nth-child(23)`
 - `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(1)`
 - `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(3)`
 - `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text > span`
+- `div:nth-child(27)`
+- `div:nth-child(28)`
+
+### [role="img"] elements must have alternative text
+
+- **Impact:** serious
+- **Description:** Ensure [role="img"] elements have alternative text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/role-img-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.q-img`

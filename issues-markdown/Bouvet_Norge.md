@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bouvet Norge
 
-**Timestamp:** 2025-12-17T00:33:47.878Z
+**Timestamp:** 2025-12-20T04:20:17.042Z
 **URL:** [https://www.bouvet.no/#](https://www.bouvet.no/#)
 **Total Violations:** 6
 
@@ -75,7 +75,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 32
+- **Count:** 49
 
 #### Affected Elements:
 
@@ -89,25 +89,42 @@
 - `.main-header-small-item.main-header-link:nth-child(6)`
 - `.main-header-small-item.main-header-link:nth-child(7)`
 - `#main-container > .part-container[data-portal-component-type="part"]:nth-child(1)`
+- `.part-container[data-portal-component-type="part"]:nth-child(2)`
 - `section`
 - `.section-bottom-space.container-flex-justify-center.util-flex-row`
-- `.part-container[data-portal-component-type="part"]:nth-child(4) > .util-flex-column-large.util-flex-row-small.collapsible__button`
+- `.part-container[data-portal-component-type="part"]:nth-child(5) > .util-flex-column-large.util-flex-row-small.collapsible__button`
 - `.block-bottom-space.util-container-padding.util-flex-column`
 - `div[role="grid"] > .course-calendar-wrap-row\.is-head`
-- `div[role="grid"] > .course-calendar-wrap-row > .course-calendar-row.util-flex-row > .course-calendar-name`
-- `time`
-- `div[role="grid"] > .course-calendar-wrap-row > .course-calendar-row.util-flex-row > .course-calendar-main-category`
-- `.course-calendar-row.util-flex-row > .course-calendar-sub-category`
+- `div[role="grid"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-name`
+- `time[datetime="2026-01-15"]`
+- `div[role="grid"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
+- `.course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
+- `div[role="grid"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-name`
+- `time[datetime="2026-01-20"]`
+- `div[role="grid"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
+- `.course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
+- `div[role="grid"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-name`
+- `.course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-date > time[datetime="2026-01-22"]`
+- `div[role="grid"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
+- `.course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
+- `.course-calendar-wrap-row:nth-child(5) > .course-calendar-row.util-flex-row > .course-calendar-name`
+- `.course-calendar-wrap-row:nth-child(5) > .course-calendar-row.util-flex-row > .course-calendar-date > time[datetime="2026-01-22"]`
+- `.course-calendar-wrap-row:nth-child(5) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
+- `.course-calendar-wrap-row:nth-child(5) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
+- `.course-calendar-wrap-row:nth-child(6) > .course-calendar-row.util-flex-row > .course-calendar-name`
+- `time[datetime="2026-01-29"]`
+- `.course-calendar-wrap-row:nth-child(6) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
+- `.course-calendar-wrap-row:nth-child(6) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
 - `.layout-container__no-gap`
-- `.part-container[data-portal-component-type="part"]:nth-child(8)`
+- `.part-container[data-portal-component-type="part"]:nth-child(9)`
 - `.related-courses-inner.creme-light > .h3-styling`
 - `.related-courses-ingress`
 - `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row\.is-head`
 - `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-name`
 - `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-date`
-- `.course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-name`
-- `.course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-date`
-- `.course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-name`
-- `.course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-date`
-- `.layout-container[data-portal-component-type="layout"]:nth-child(10)`
+- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-name`
+- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-date`
+- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-name`
+- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-date`
+- `.layout-container[data-portal-component-type="layout"]:nth-child(11)`
 - `#widget2, #player`

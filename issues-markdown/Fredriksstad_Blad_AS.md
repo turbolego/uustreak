@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2025-12-17T00:29:18.780Z
+**Timestamp:** 2025-12-20T04:17:36.675Z
 **URL:** [https://www.f-b.no/#](https://www.f-b.no/#)
 **Total Violations:** 5
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="8"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `brick-carousel-v2[data-slides="7"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Links must be distinguishable without relying on color
 

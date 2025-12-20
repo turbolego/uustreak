@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lørenskog kommune
 
-**Timestamp:** 2025-12-17T00:40:19.891Z
+**Timestamp:** 2025-12-20T04:47:38.593Z
 **URL:** [https://www.lorenskog.kommune.no/#](https://www.lorenskog.kommune.no/#)
 **Total Violations:** 4
 
@@ -51,7 +51,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 12
+- **Count:** 11
 
 #### Affected Elements:
 
@@ -59,7 +59,6 @@
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1604 > .webPartTittel`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1604_WebpartId_1604_txtSearch`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1605`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_1856`
 - `.section:nth-child(12)`
 - `.section:nth-child(13)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_1614 > .webPartTittel`

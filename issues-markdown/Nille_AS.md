@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2025-12-17T00:27:19.517Z
+**Timestamp:** 2025-12-20T04:13:02.690Z
 **URL:** [https://www.nille.no/#](https://www.nille.no/#)
 **Total Violations:** 7
 
@@ -24,7 +24,7 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 33
+- **Count:** 39
 
 #### Affected Elements:
 
@@ -55,12 +55,18 @@
 - `.swiper-slide:nth-child(25) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(26) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(27) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
-- `.swiper-slide:nth-child(28) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(29) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(30) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(31) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(32) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(33) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(34) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(35) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(36) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(37) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(38) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(39) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(40) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 
 ### Headings should not be empty
 
@@ -68,13 +74,17 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 7
+- **Count:** 11
 
 #### Affected Elements:
 
-- `a[title="Nissedrakt deluxe voksen"][aria-label=""]:nth-child(2) > h3`
-- `a[title="Asjett God Jul Ø20cm"][aria-label=""]:nth-child(2) > h3`
 - `a[title="Middagstallerken God Jul Ø27cm"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Nissedrakt deluxe voksen"][aria-label=""]:nth-child(2) > h3`
+- `.swiper-slide:nth-child(3) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .content--TOIX07K > a[aria-label=""]:nth-child(2) > h3`
+- `a[title="God Jul Vannglass 330ml 2pakk"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Dyp tallerken God Jul Ø22cm"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Asjett God Jul Ø20cm"][aria-label=""]:nth-child(2) > h3`
+- `.swiper-slide:nth-child(9) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .content--TOIX07K > a[aria-label=""]:nth-child(2) > h3`
 - `a[title="Marsipangris med sjokolade 60g"][aria-label=""]:nth-child(2) > h3`
 - `a[title="LED Lysgardin, 600 lys"][aria-label=""]:nth-child(2) > h3`
 - `a[title="Toppluenisse H7,5cm 3pk"][aria-label=""]:nth-child(2) > h3`
@@ -115,8 +125,8 @@
 #### Affected Elements:
 
 - `a[href$="julesalg/"]`
+- `.swiper-slide-prev > a[title=""][aria-label=""]`
 - `a[href$="nisser/"][title=""][aria-label=""]`
-- `div[data-swiper-slide-index="2"] > a[title=""][aria-label=""]`
 
 ### All page content should be contained by landmarks
 
