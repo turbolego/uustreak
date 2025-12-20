@@ -1,0 +1,233 @@
+{
+  "project": "Tekna - Teknisk- naturvitenskapelig forening",
+  "timestamp": "2025-12-20T04:19:04.194Z",
+  "url": "https://www.tekna.no/#",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button tabindex=\"0\" onclick=\"CookieInformation.declineAllCategories()\" aria-label=\"Bare nødvendige cookies\" id=\"declineButton\" class=\"coi-banner__accept\" role=\"alert\" aria-atomic=\"true\" style=\"display: flex;\">\n            Bare nødvendige cookies\n          </button>",
+          "target": [
+            "#declineButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role alert is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<img src=\"/contentassets/a3912d6361b040eab9b952d4cd38ad9d/dsc01580.jpg?width=990&amp;height=885&amp;mode=crop\" class=\"item__image-0\" style=\"z-index: 0\">",
+          "target": [
+            ".item__image-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/link/a88adbd139394ebcae86e4c22645db41.aspx?width=640&amp;mode=crop&amp;heightratio=0.75&amp;quality=80\" class=\"t-article-card__img\" style=\"\">",
+          "target": [
+            ".t-article-card:nth-child(2) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 15,
+      "nodes": [
+        {
+          "html": "<div>\n    <a class=\"hidden-skip-link\" href=\"#content\">Hopp til innhold</a>\n</div>",
+          "target": [
+            "div:nth-child(14)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"block heroblock col-lg-12 col-md-12 col-sm-12 col-xs-12\">",
+          "target": [
+            ".heroblock"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"block arrow-link-list-underline\">",
+          "target": [
+            ".arrow-link-list-underline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"block\">",
+          "target": [
+            ".block:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"promotion-body\">",
+          "target": [
+            ".yellow-promotion-block > .promotion-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"block promotionblock col-lg-8 col-md-6 col-sm-12 col-xs-12 displaymode-two-thirds\">",
+          "target": [
+            ".col-lg-8"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-12 text-image-block__header mb-md-6 mb-0 d-none d-lg-block \">\n                    <h2 class=\"h1\">Hvorfor bli medlem i Tekna</h2>\n                    \n                </div>",
+          "target": [
+            ".text-image-block__header.d-lg-block.d-none"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-image-block__text pl-lg-0 pl-lg-9 pl-sm-0 mt-lg-0 mt-4\">",
+          "target": [
+            ".text-image-block__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"/contentassets/a3912d6361b040eab9b952d4cd38ad9d/dsc01580.jpg?width=990&amp;height=885&amp;mode=crop\" class=\"item__image-0\" style=\"z-index: 0\">",
+          "target": [
+            ".item__image-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-12 block-spacing-small\"><h2>Aktuelt fra Tekna</h2> <!----></div>",
+          "target": [
+            ".block-spacing-small.col-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"/link/31a2fbbe069845d381973a27db3c45e2.aspx?width=640&amp;mode=crop&amp;heightratio=0.75&amp;quality=80\" alt=\"Kvinne smiler med laptop\" class=\"t-article-card__img\" style=\"\">",
+          "target": [
+            "img[alt=\"Kvinne smiler med laptop\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"t-article-card__content\">",
+          "target": [
+            ".t-article-card:nth-child(1) > .t-article-card__content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"/link/a88adbd139394ebcae86e4c22645db41.aspx?width=640&amp;mode=crop&amp;heightratio=0.75&amp;quality=80\" class=\"t-article-card__img\" style=\"\">",
+          "target": [
+            ".t-article-card:nth-child(2) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"t-article-card__content\">",
+          "target": [
+            ".t-article-card:nth-child(2) > .t-article-card__content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rss-feed t-article-card\">",
+          "target": [
+            ".rss-feed"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
