@@ -58,7 +58,7 @@ jobs:
           
           # Force cleanup of problematic directories (try without sudo first)
           rm -rf node_modules || echo "Cleaned node_modules"
-          rm -rf .git/index.lock || echo "Cleaned git lock file"
+          rm -rf .git || echo "Cleaned git directory for fresh clone"
 
       - uses: actions/checkout@v6
         with:
@@ -272,7 +272,7 @@ jobs:
           rm -rf playwright-report || echo "Cleaned playwright-report"
           rm -rf tests || echo "Cleaned tests"
           rm -rf test-results-batch-* || echo "Cleaned test results batches"
-          rm -rf .git/index.lock || echo "Cleaned git lock file"
+          rm -rf .git || echo "Cleaned git directory for fresh clone"
           
           # Create required directories
           mkdir -p accessibility-reports
@@ -782,7 +782,7 @@ jobs:
           rm -rf accessibility-reports || echo "Cleaned accessibility-reports"
           rm -rf playwright-report || echo "Cleaned playwright-report"
           rm -rf tests || echo "Cleaned tests"
-          rm -rf .git/index.lock || echo "Cleaned git lock file"
+          rm -rf .git || echo "Cleaned git directory for fresh clone"
 
       - name: Checkout repository
         uses: actions/checkout@v6
