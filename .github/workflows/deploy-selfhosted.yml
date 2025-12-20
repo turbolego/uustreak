@@ -281,6 +281,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
+          ref: main
           fetch-depth: 1
           clean: false
 
@@ -603,6 +604,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
+          ref: main
           fetch-depth: 1
 
       - name: Setup Node.js
@@ -787,6 +789,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
+          ref: main
           fetch-depth: 1
           token: ${{ secrets.GITHUB_TOKEN }}
 
