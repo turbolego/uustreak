@@ -1,7 +1,7 @@
 # WCAG Violations Report for Arngren
 
-**Timestamp:** 2025-12-20T04:15:25.289Z
-**URL:** [https://www.arngren.net/#](https://www.arngren.net/#)
+**Timestamp:** 2025-12-21T00:44:04.934Z
+**URL:** [https://www.arngren.net/](https://www.arngren.net/)
 **Total Violations:** 6
 
 ## Violation Details
@@ -12,7 +12,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 85
+- **Count:** 101
 
 #### Affected Elements:
 
@@ -22,6 +22,7 @@
 - `#e9 > .text > a > b > font[color="#FF0000"][size="2"] > span`
 - `td[bgcolor="#DFDCE3"][height="23"][valign="top"] > .text > a:nth-child(3) > b > font[color="#CC0000"][size="2"] > span`
 - `td[bgcolor="#DFDCE3"][height="23"][valign="top"] > .text > a:nth-child(5) > b > font[color="#CC0000"][size="2"] > span`
+- `a:nth-child(7) > b > font[color="#CC0000"][size="2"] > span`
 - `#e19 > .text > a > b > font[color="#FF0000"][size="2"] > span`
 - `a[href$="H3.html"] > b > font[color="#FF0000"][size="2"] > span`
 - `td[bgcolor="#DFDCE3"][height="20"][valign="top"] > .text > a:nth-child(3) > b > font[color="#CC0000"][size="2"] > span`
@@ -33,16 +34,18 @@
 - `a:nth-child(31) > font[color="#009900"][size="2"] > span`
 - `a[href$="eltrack.html"]:nth-child(38) > b > font[size="4"][color="#FF0000"] > span`
 - `a[href$="eltrack.html"]:nth-child(39) > b > font[size="4"][color="#FF0000"] > span`
+- `a[href$="elsykkel-3hjul-1.html"]:nth-child(64) > b > font[color="#FF0000"][size="2"] > span`
 - `#e41 > .text > a > b > font[color="#FF0000"][size="2"] > span`
 - `a:nth-child(10) > b > font[color="#FF0000"][size="2"] > span`
 - `#e49 > .text > font[size="1"][color="#FF0000"] > span`
 - `#e52 > .text > a > font[color="#FF0000"][size="2"] > span`
 - `#e54 > .text > a > b > font[color="#FF0000"][size="2"] > span`
 - `#e55 > .text > a > b > font[color="#FF0000"][size="2"] > span`
+- `#e62 > .text > a > b > font[color="#FF0000"][size="2"] > span`
 - `#e64 > .text > a > b > font[color="#FF0000"][size="2"] > span`
 - `td[height="33"] > .text > a:nth-child(5) > b > font[color="#FF0000"][size="2"] > span`
-- `font[color="#00FF00"] > span`
 - `#e97 > .text > a > b > font[color="#FF0000"][size="2"] > span`
+- `#e98 > .text > a > b > font[color="#FF0000"][size="2"] > span`
 - `#e121 > .text > a > b > font[color="#009900"][size="2"] > span`
 - `#e122 > .text > a > b > font[color="#009900"][size="2"] > span`
 - `td[height="50"][bgcolor="#FFFFFF"][valign="top"] > .text > a > b > font[color="#FF0000"][size="2"] > span`
@@ -64,28 +67,39 @@
 - `#e291 > .text > a:nth-child(4) > b > font[color="#FF0000"][size="2"] > span`
 - `a:nth-child(14) > b > font[color="#FF0000"][size="2"] > span`
 - `#e309 > .text > a > b > font[color="#FF0000"][size="2"] > span`
+- `#e330 > .text > a:nth-child(8) > b > font[color="#FF0000"][size="2"] > span`
+- `#e330 > .text > a:nth-child(9) > b > font[color="#FF0000"][size="2"] > span`
+- `font[color="#009999"] > span`
 - `a[href$="soho.nascom.nasa.gov/"]:nth-child(2) > b > font[color="#CC9900"][size="2"] > span`
 - `a[href$="soho.nascom.nasa.gov/"]:nth-child(4) > b > font[color="#CC9900"][size="2"] > span`
 - `a[href$="sykkel.html"]:nth-child(6) > b > font[color="#FF3300"][size="2"] > span`
 - `td[height="37"] > .text > a > b > font[color="#FF0000"][size="2"] > span`
+- `a > b > font[color="#FF007E"][size="2"] > span`
 - `#e371 > .text > a > b > font[color="#FF0000"][size="2"] > span`
-- `#e375 > .text > a:nth-child(4) > b > font[color="#FF0000"][size="2"] > span`
+- `#e381 > .text > a[href$="elsykkel-3hjul-1.html"] > b > font[color="#FF3300"] > span`
 - `#e429 > .text > a:nth-child(3) > b > font[color="#FF3300"][size="2"] > span`
 - `#e448 > table[width="45"] > tbody > tr > td[height="16"][bgcolor="#FFFF00"][valign="top"] > .text > b:nth-child(2) > font[color="#FF0000"][size="2"] > span`
 - `td[height="31"] > .text > b:nth-child(2) > font[color="#FF0000"][size="2"] > span`
 - `b:nth-child(4) > font[color="#FF0000"][size="2"] > span`
+- `#e464 > .text > a[href$="elsykkel-3hjul-1.html"] > b > font[color="#FF0000"][size="2"] > span`
 - `#e466 > .text > a[href$="teleskop.html"] > b > font[color="#FF3300"][size="2"] > span`
+- `a:nth-child(4) > b > font[color="#FF0033"][size="2"] > span`
 - `#e480 > .text > a[href$="elsykkel-3hjul-1.html"] > b > font[color="#FF3300"][size="2"] > span`
 - `#e500 > .text > a[href$="elbil-barn-flest-1.html"] > b > font[color="#FF3300"][size="2"] > span`
 - `#e503 > .text > a[href$="sykkel-litium.html"] > b > font[color="#FF3300"][size="2"] > span`
+- `#e506 > .text > a[href$="elsykkel-3hjul-1.html"] > b > font[color="#FF3300"][size="2"] > span`
 - `#e509 > .text > a[href$="elbil-barn-flest-1.html"] > b > font[color="#FF3300"][size="2"] > span`
 - `a[href$="el-scooter-b.html"] > b > font[color="#FF3300"][size="2"] > span`
+- `#e515 > .text > a[href$="elsykkel-3hjul-1.html"] > b > font[color="#FF3300"] > span`
 - `#e518 > .text > a > b > font[color="#FF3300"] > span`
 - `td[height="52"][bgcolor="#FFFFFF"][valign="top"] > .text > a:nth-child(3) > b > font[color="#FF0000"][size="2"] > span`
+- `#e525 > .text > a:nth-child(3) > b > font[color="#FF3300"][size="2"] > span`
 - `#e548 > .text > a[href$="teleskop.html"] > b > font[color="#FF3300"][size="2"] > span`
+- `#e552 > .text > a[href$="elbil-barn-flest-1.html"] > b > font[color="#FF3300"][size="2"] > span`
 - `td[height="97"][bgcolor="#FFFFFF"][valign="top"] > .text > a:nth-child(6) > b > font[color="#FF3300"][size="2"] > span`
 - `#e594 > .text > a:nth-child(4) > b > font[color="#FF3300"][size="2"] > span`
 - `#e594 > .text > a:nth-child(5) > b > font[color="#FF3300"][size="2"] > span`
+- `#e604 > .text > a[href$="elsykkel-3hjul-1.html"] > b > font[color="#FF3300"][size="2"] > span`
 - `td[height="67"][bgcolor="#FFFFFF"][valign="top"] > .text > a:nth-child(3) > b > font[color="#FF0000"][size="2"] > span`
 - `#e619 > .text > a > b > font[color="#FF3300"] > span`
 - `#e626 > .text > a > b > font[color="#FF3300"] > span`
@@ -95,10 +109,12 @@
 - `#e648 > .text > a > b > font[color="#FF3300"][size="2"] > span`
 - `a[href$="eltrack.html"]:nth-child(1) > b > font[color="#FF3300"] > span`
 - `b > font[size="4"][color="#FF3300"] > span`
+- `#e659 > .text > a > b > font[color="#FF0000"] > span`
+- `#e661 > .text > a > b > font[color="#FF3300"][size="2"] > span`
 - `#e677 > .text > a > b > font[color="#FF0000"][size="2"] > span`
 - `#e679 > .text > a > b > font[color="#FF0000"][size="2"] > span`
-- `#e689 > .text > a > b > font[color="#FFFF00"] > span`
-- `#e690 > .text > a > b > font[color="#FFFF00"][size="2"] > span`
+- `#e680 > .text > a > b > font[color="#FF3300"] > span`
+- `#e683 > .text > a > b > font[color="#FF3300"][size="2"] > span`
 - `#e716 > table[width="45"] > tbody > tr > td[height="16"][bgcolor="#FFFF00"][valign="top"] > .text > b:nth-child(2) > font[color="#FF0000"][size="2"] > span`
 - `#e718 > .text > a:nth-child(5) > b > font[color="#FF3300"][size="2"] > span`
 

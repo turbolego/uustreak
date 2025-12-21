@@ -1,22 +1,10 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-12-20T04:24:30.231Z
-**URL:** [https://www.kid.no/#](https://www.kid.no/#)
-**Total Violations:** 7
+**Timestamp:** 2025-12-21T01:30:42.255Z
+**URL:** [https://www.kid.no/](https://www.kid.no/)
+**Total Violations:** 6
 
 ## Violation Details
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#kindly-chat-api > div,.sc-dClGHI`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -118,7 +106,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 7
+- **Count:** 6
 
 #### Affected Elements:
 
@@ -128,4 +116,3 @@
 - `.a > div:nth-child(5)`
 - `.tf-header-slider`
 - `.tf-sidebar`
-- `#kindly-chat-api > div,.sc-koBvLg`

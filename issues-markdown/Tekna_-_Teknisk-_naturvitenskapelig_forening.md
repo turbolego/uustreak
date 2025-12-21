@@ -1,7 +1,7 @@
 # WCAG Violations Report for Tekna - Teknisk- naturvitenskapelig forening
 
-**Timestamp:** 2025-12-20T04:19:04.194Z
-**URL:** [https://www.tekna.no/#](https://www.tekna.no/#)
+**Timestamp:** 2025-12-21T01:00:28.550Z
+**URL:** [https://www.tekna.no/](https://www.tekna.no/)
 **Total Violations:** 5
 
 ## Violation Details

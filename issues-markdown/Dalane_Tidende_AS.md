@@ -1,7 +1,7 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2025-12-20T04:24:19.989Z
-**URL:** [https://www.dalane-tidende.no/#](https://www.dalane-tidende.no/#)
+**Timestamp:** 2025-12-21T00:59:07.432Z
+**URL:** [https://www.dalane-tidende.no/](https://www.dalane-tidende.no/)
 **Total Violations:** 4
 
 ## Violation Details
@@ -12,10 +12,12 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, iframe[src$="about:blank"]`
+- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, body > iframe`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
