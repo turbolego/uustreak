@@ -64,7 +64,7 @@ jobs:
         with:
           ref: main
           fetch-depth: 1
-          clean: true
+          clean: false
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Configure Git for authentication
@@ -284,7 +284,7 @@ jobs:
         with:
           ref: main
           fetch-depth: 1
-          clean: true
+          clean: false
 
       - name: Download test files
         uses: actions/download-artifact@v7
@@ -607,7 +607,7 @@ jobs:
         with:
           ref: main
           fetch-depth: 1
-          clean: true
+          clean: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
@@ -793,7 +793,7 @@ jobs:
         with:
           ref: main
           fetch-depth: 1
-          clean: true
+          clean: false
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Configure Git to use GitHub token
