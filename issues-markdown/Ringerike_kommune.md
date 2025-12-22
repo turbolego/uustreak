@@ -1,10 +1,23 @@
 # WCAG Violations Report for Ringerike kommune
 
-**Timestamp:** 2025-12-21T00:45:54.529Z
-**URL:** [https://www.ringerike.kommune.no/](https://www.ringerike.kommune.no/)
-**Total Violations:** 6
+**Timestamp:** 2025-12-22T00:43:11.800Z
+**URL:** [https://www.ringerike.kommune.no/#](https://www.ringerike.kommune.no/#)
+**Total Violations:** 8
 
 ## Violation Details
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#portalframe1, button[data-templatetype="1"]`
+- `#portalframe1, button[data-templatetype="2"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -78,13 +91,26 @@
 
 - `#search__input--id`
 
+### Form elements must have labels
+
+- **Impact:** critical
+- **Description:** Ensure every form element has a label
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/label?application=playwright
+- **Tags:** cat.forms, wcag2a, wcag412, section508, section508.22.n, TTv5, TT5.c, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.1.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#portalframe1, .date-from`
+- `#portalframe1, .date-to`
+
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 10
+- **Count:** 15
 
 #### Affected Elements:
 
@@ -92,7 +118,12 @@
 - `div:nth-child(8) > div:nth-child(2)`
 - `.ssp__panel--grey.ssp__panel.mb-30 > .ssp__panel__title`
 - `.ssp__timespan`
-- `#portalframe1, #container`
+- `#portalframe1, .input-list > .heading`
+- `#portalframe1, .input-search`
+- `#portalframe1, .data-from-to-expand`
+- `#portalframe1, .CaptionCont`
+- `#portalframe1, .optWrapper`
+- `#portalframe1, .content`
 - `.mt-20`
 - `.ssp__fluid-panel > div > div > div > .container > .row > .col-md-6.mb-30.col-xs-12:nth-child(2)`
 - `.test-wrapper`

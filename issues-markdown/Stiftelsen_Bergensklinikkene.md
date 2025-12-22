@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Bergensklinikkene
 
-**Timestamp:** 2025-12-20T04:14:16.125Z
+**Timestamp:** 2025-12-22T00:26:52.834Z
 **URL:** [https://www.dhgate.com/?f=bm%7Caff%7Cyfaf%7C864561%7C864561_885949_336400%7CL65ae6abfe4b015d01d868cee%7C](https://www.dhgate.com/?f=bm%7Caff%7Cyfaf%7C864561%7C864561_885949_336400%7CL65ae6abfe4b015d01d868cee%7C)
 **Total Violations:** 3
 

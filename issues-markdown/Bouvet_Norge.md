@@ -1,10 +1,22 @@
 # WCAG Violations Report for Bouvet Norge
 
-**Timestamp:** 2025-12-21T00:52:41.566Z
-**URL:** [https://www.bouvet.no/](https://www.bouvet.no/)
-**Total Violations:** 6
+**Timestamp:** 2025-12-22T00:34:40.761Z
+**URL:** [https://www.bouvet.no/#](https://www.bouvet.no/#)
+**Total Violations:** 8
 
 ## Violation Details
+
+### Elements must only use permitted ARIA attributes
+
+- **Impact:** serious
+- **Description:** Ensure ARIA attributes are not prohibited for an element's role
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#widget2, #movie_player`
 
 ### Certain ARIA roles must contain particular children
 
@@ -17,6 +29,18 @@
 #### Affected Elements:
 
 - `div[role="grid"]`
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#widget2, .ytmVideoInfoChannelAvatar`
 
 ### Frames must have an accessible name
 
@@ -75,7 +99,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 49
+- **Count:** 52
 
 #### Affected Elements:
 
@@ -128,3 +152,6 @@
 - `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-date`
 - `.layout-container[data-portal-component-type="layout"]:nth-child(11)`
 - `#widget2, #player`
+- `#widget2, .ytmVideoInfoVideoTitleContainer`
+- `#widget2, .ytmVideoInfoOverlay`
+- `#widget2, .quick-actions-wrapper`

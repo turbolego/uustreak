@@ -1,7 +1,7 @@
 # WCAG Violations Report for Østlendingen AS
 
-**Timestamp:** 2025-12-21T01:12:10.259Z
-**URL:** [https://www.ostlendingen.no/](https://www.ostlendingen.no/)
+**Timestamp:** 2025-12-22T00:41:28.313Z
+**URL:** [https://www.ostlendingen.no/#](https://www.ostlendingen.no/#)
 **Total Violations:** 3
 
 ## Violation Details
@@ -12,13 +12,10 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 4
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.ostlendingen\.no\/toppbanner_0, iframe`
-- `#google_ads_iframe_\/56257416\/www\.ostlendingen\.no\/toppbanner_0, iframe, iframe[src$="about:blank"]`
-- `#google_ads_iframe_\/56257416\/www\.ostlendingen\.no\/toppbanner_0, iframe, body > iframe`
 - `#eaframe`
 
 ### Elements marked as presentational should be consistently ignored

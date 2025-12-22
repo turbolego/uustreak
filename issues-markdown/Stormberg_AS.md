@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2025-12-21T00:57:25.731Z
+**Timestamp:** 2025-12-22T00:29:19.317Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -20,29 +20,29 @@
 - `.gv.am[href$="nyheter"]`
 - `div:nth-child(3) > .i1.bl.bj > .i2.i3 > li:nth-child(1) > .i4.i5.i6 > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
 - `div:nth-child(3) > .i1.bl.bj > .i2.i3 > li:nth-child(1) > .i4.i5.i6 > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `a[aria-label="Eidnes vattert softshellparkas"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
-- `a[aria-label="Eidnes vattert softshellparkas"] > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `li:nth-child(3) > .i4.i5[aria-label="Nordtoppen vinterjakke"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
-- `li:nth-child(3) > .i4.i5[aria-label="Nordtoppen vinterjakke"] > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `li:nth-child(4) > .i4.i5[aria-label="Nordtoppen vinterjakke"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
-- `li:nth-child(4) > .i4.i5[aria-label="Nordtoppen vinterjakke"] > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `div:nth-child(3) > .i1.bl.bj > .i2.i3 > li:nth-child(5) > .i4.i5.i6 > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
-- `div:nth-child(3) > .i1.bl.bj > .i2.i3 > li:nth-child(5) > .i4.i5.i6 > .it.iu.hr > div > .gu > .j7.hs.bd`
+- `li:nth-child(2) > .i4.i5[aria-label="Eidnes vattert softshellparkas"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
+- `li:nth-child(2) > .i4.i5[aria-label="Eidnes vattert softshellparkas"] > .it.iu.hr > div > .gu > .j7.hs.bd`
+- `a[aria-label="Nordtoppen vinterjakke"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
+- `a[aria-label="Nordtoppen vinterjakke"] > .it.iu.hr > div > .gu > .j7.hs.bd`
+- `li:nth-child(4) > .i4.i5[aria-label="Eidnes vattert softshellparkas"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
+- `li:nth-child(4) > .i4.i5[aria-label="Eidnes vattert softshellparkas"] > .it.iu.hr > div > .gu > .j7.hs.bd`
+- `a[aria-label="Langerud lettvekts turbukse"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
+- `a[aria-label="Langerud lettvekts turbukse"] > .it.iu.hr > div > .gu > .j7.hs.bd`
 - `a[aria-label="Nordtinden strikkegenser"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
 - `a[aria-label="Nordtinden strikkegenser"] > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `a[aria-label="Hardanger 2-lags ullongs"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
-- `a[aria-label="Hardanger 2-lags ullongs"] > .it.iu.hr > div > .gu > .j7.hs.bd`
 - `a[aria-label="Mesnali strikkegenser"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
 - `a[aria-label="Mesnali strikkegenser"] > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `a[aria-label="Haukeli vinterjakke"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
-- `a[aria-label="Haukeli vinterjakke"] > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `a[aria-label="Haukeli vattert selebukse"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
-- `a[aria-label="Haukeli vattert selebukse"] > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `a[aria-label="Porsanger cord sherpagenser"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
-- `li:nth-child(2) > .i4.i5[aria-label="Trysil vinterjakke"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
-- `li:nth-child(3) > .i4.i5[aria-label="Trysil vinterjakke"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
-- `a[aria-label="Istind piggsko"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
-- `div:nth-child(9) > .i1.bl.bj > .i2.i3 > li:nth-child(5) > .i4.i5.i6 > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
+- `a[aria-label="Hardanger 2-lags ullongs"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
+- `a[aria-label="Hardanger 2-lags ullongs"] > .it.iu.hr > div > .gu > .j7.hs.bd`
+- `a[aria-label="Hardanger supersoft trøye"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
+- `a[aria-label="Hardanger supersoft trøye"] > .it.iu.hr > div > .gu > .j7.hs.bd`
+- `a[aria-label="Vaberg polo ullgenser"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
+- `a[aria-label="Vaberg polo ullgenser"] > .it.iu.hr > div > .gu > .j7.hs.bd`
+- `a[aria-label="Frostli vinterjakke"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
+- `a[aria-label="Trysil vinterjakke"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
+- `a[aria-label="Hemsedal 2-lags ullsett"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
+- `a[aria-label="Kvitfjell vattert selebukse"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
+- `a[aria-label="Isnes ullfôret vinterstøvel"] > .i9.bc.bd > .ig.ie.y > .gq.ih.ii`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
