@@ -1,8 +1,8 @@
 # WCAG Violations Report for Cubus AS
 
-**Timestamp:** 2025-12-22T00:37:05.830Z
+**Timestamp:** 2025-12-23T00:34:09.984Z
 **URL:** [https://cubus.com/no/#](https://cubus.com/no/#)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
 
@@ -17,15 +17,3 @@
 #### Affected Elements:
 
 - `.css-smxovs-StyledCssSliderWrapper`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#zendesk-widget`

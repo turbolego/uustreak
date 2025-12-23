@@ -1,6 +1,6 @@
 # WCAG Violations Report for Handel og Kontor i Norge
 
-**Timestamp:** 2025-12-22T00:34:14.032Z
+**Timestamp:** 2025-12-23T00:29:25.577Z
 **URL:** [https://hk.no/](https://hk.no/)
 **Total Violations:** 3
 
