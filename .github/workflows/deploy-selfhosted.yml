@@ -47,18 +47,6 @@ jobs:
           if [[ $RETRY_COUNT -gt 1 ]]; then
             echo "This is a retry attempt due to previous failures."
           fi
-      - name: Clean workspace for setup
-        run: |
-          # Kill any hanging npm or node processes first
-          pkill -u $(whoami) -f npm || echo "No npm processes to kill"
-          pkill -u $(whoami) -f node || echo "No node processes to kill"
-          
-          # Wait for processes to fully terminate
-          sleep 3
-          
-          # Force cleanup of problematic directories (try without sudo first)
-          rm -rf node_modules || echo "Cleaned node_modules"
-          # Note: Do NOT delete .git - let checkout action handle it with clean parameter
 
       - uses: actions/checkout@v6
         with:
@@ -253,32 +241,6 @@ jobs:
       fail-fast: true  # Stop all jobs if one fails
       max-parallel: 4
     steps:
-      - name: Clean workspace manually
-        run: |
-          # Kill any hanging npm processes first
-          pkill -u $(whoami) -f npm || echo "No npm processes to kill"
-          pkill -u $(whoami) -f node || echo "No node processes to kill"
-          
-          # Wait for processes to fully terminate
-          sleep 3
-          
-          # Force cleanup of problematic directories (try without sudo first)
-          if [ -d "node_modules" ]; then
-            echo "Removing node_modules directory..."
-            rm -rf node_modules || echo "Cleaned node_modules with fallback"
-          fi
-          
-          # Clean any other problematic directories
-          rm -rf accessibility-reports || echo "Cleaned accessibility-reports"
-          rm -rf playwright-report || echo "Cleaned playwright-report"
-          rm -rf tests || echo "Cleaned tests"
-          rm -rf test-results-batch-* || echo "Cleaned test results batches"
-          # Note: Do NOT delete .git - let checkout action handle it with clean parameter
-          
-          # Create required directories
-          mkdir -p accessibility-reports
-          mkdir -p playwright-report
-
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
@@ -772,22 +734,6 @@ jobs:
     runs-on: self-hosted
     if: needs.check-job-status.outputs.all_jobs_successful == 'true'
     steps:
-      - name: Clean workspace
-        run: |
-          # Kill any hanging npm or node processes first
-          pkill -u $(whoami) -f npm || echo "No npm processes to kill"
-          pkill -u $(whoami) -f node || echo "No node processes to kill"
-          
-          # Wait for processes to fully terminate
-          sleep 3
-          
-          # Force cleanup of problematic directories (try without sudo first)
-          rm -rf node_modules || echo "Cleaned node_modules"
-          rm -rf accessibility-reports || echo "Cleaned accessibility-reports"
-          rm -rf playwright-report || echo "Cleaned playwright-report"
-          rm -rf tests || echo "Cleaned tests"
-          # Note: Do NOT delete .git - let checkout action handle it with clean parameter
-
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
