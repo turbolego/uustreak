@@ -1,0 +1,221 @@
+{
+  "project": "Flytoget AS",
+  "timestamp": "2025-12-25T21:14:15.269Z",
+  "url": "https://flytoget.no/#",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button tabindex=\"0\" onclick=\"CookieInformation.declineAllCategories()\" aria-label=\"Strengt nødvendige cookies\" id=\"declineButton\" class=\"coi-banner__decline\" role=\"alert\" aria-atomic=\"true\" style=\"display: flex;\">Strengt nødvendige cookies</button>",
+          "target": [
+            "#declineButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role alert is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "aria-required-children",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-required-children?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div class=\"travel-input travel-input-from\" aria-label=\"Fra\" role=\"listbox\">",
+          "target": [
+            ".travel-input-from"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: [role=combobox], [role=img]"
+        },
+        {
+          "html": "<div class=\"travel-input travel-input-to\" aria-label=\"Til\" role=\"listbox\">",
+          "target": [
+            ".travel-input-to"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: [role=combobox], [role=img]"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button tabindex=\"0\" onclick=\"CookieInformation.submitAllCategories();\" aria-label=\"Godta alle\" class=\"coi-banner__accept\">Godta alle</button>",
+          "target": [
+            "button[aria-label=\"Godta alle\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.33 (foreground color: #ffffff, background color: #fd4f00, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/billetter/?from=7699220&amp;to=7600100\" class=\"btn btn-squared\">Kjøp billett</a>",
+          "target": [
+            ".btn-squared"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.33 (foreground color: #ffffff, background color: #fd4f00, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 9,
+      "nodes": [
+        {
+          "html": "<a class=\"skip-to-main\" href=\"#main-content\">Gå til hovedinnholdet</a>",
+          "target": [
+            ".skip-to-main"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"travel-input travel-input-from\" aria-label=\"Fra\" role=\"listbox\">",
+          "target": [
+            ".travel-input-from"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"travel-input travel-input-to\" aria-label=\"Til\" role=\"listbox\">",
+          "target": [
+            ".travel-input-to"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"date-label-container\">",
+          "target": [
+            ".date-label-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-xs-4 departure\" title=\"05:30\" date-fulldate=\"2025-12-26_05-30\">05:30</div>",
+          "target": [
+            "div[title=\"05:30\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-xs-4 arrival\">05:52<svg version=\"1.1\" x=\"0px\" y=\"0px\" viewBox=\"0 0 18 12\" enable-background=\"new 0 0 18 12\" xml:space=\"preserve\"><polygon points=\"16.3,11.7 9,3.5 1.7,11.7 0.3,10.3 9,0.5 17.7,10.3 \"></polygon></svg></div>",
+          "target": [
+            ".primary-row > .arrival.col-xs-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row secondary-row\"><div class=\"col-xs-4 departure\"><div class=\"track\">Spor 3</div></div><div class=\"col-xs-4 center-col\"></div><div class=\"col-xs-4 arrival\"><div class=\"track\">Spor 2</div></div></div>",
+          "target": [
+            ".secondary-row"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"travel-results-button-container\">",
+          "target": [
+            ".travel-results-button-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"shop-btn-container\" data-hj-ignore-attributes=\"true\"><a href=\"/billetter/?from=7699220&amp;to=7600100\" class=\"btn btn-squared\">Kjøp billett</a></div>",
+          "target": [
+            ".shop-btn-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
