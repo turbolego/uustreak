@@ -1,6 +1,6 @@
 # WCAG Violations Report for Thon Hotels AS
 
-**Timestamp:** 2025-12-23T00:30:29.751Z
+**Timestamp:** 2025-12-25T21:18:22.608Z
 **URL:** [https://www.thonhotels.no/#](https://www.thonhotels.no/#)
 **Total Violations:** 4
 
@@ -62,7 +62,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 14
+- **Count:** 13
 
 #### Affected Elements:
 
@@ -79,4 +79,3 @@
 - `.coi-consent-banner__cookie-details:nth-child(11) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container[title=""] > .cookie-details__detail-content > a[href=""][rel="noopener noreferrer"][target="_blank"]`
 - `.coi-consent-banner__cookie-details:nth-child(12) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container[title=""] > .cookie-details__detail-content > a[href=""][rel="noopener noreferrer"][target="_blank"]`
 - `.coi-consent-banner__cookie-details:nth-child(13) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container[title=""] > .cookie-details__detail-content > a[href=""][rel="noopener noreferrer"][target="_blank"]`
-- `.coi-consent-banner__cookie-details:nth-child(14) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container[title=""] > .cookie-details__detail-content > a[href=""][rel="noopener noreferrer"][target="_blank"]`

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Capgemini Norge
 
-**Timestamp:** 2025-12-23T00:32:58.613Z
+**Timestamp:** 2025-12-25T21:18:49.841Z
 **URL:** [https://www.capgemini.com/no-no/#](https://www.capgemini.com/no-no/#)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -29,18 +29,6 @@
 #### Affected Elements:
 
 - `#darkModeLabel`
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.header_lang_menu > .header-lang-inner > .header-lang-top > .header-lang-close`
 
 ### Banner landmark should not be contained in another landmark
 

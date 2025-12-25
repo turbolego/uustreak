@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Bergensklinikkene
 
-**Timestamp:** 2025-12-23T00:24:34.987Z
+**Timestamp:** 2025-12-25T21:12:01.010Z
 **URL:** [https://www.banggood.com/?p=QG132133330053201905&custlinkid=3773084](https://www.banggood.com/?p=QG132133330053201905&custlinkid=3773084)
 **Total Violations:** 7
 
@@ -27,10 +27,10 @@
 - `a[data-spm="0000000wd-7"]`
 - `.go-text`
 - `div[data-pid="1980678"] > .mpi-old[data-spm="0000004Pp"]`
-- `div[data-pid="1994895"] > .mpi-old[data-spm="0000004Pp"]`
-- `div[data-pid="2009548"] > .mpi-old[data-spm="0000004Pp"]`
+- `div[data-pid="1246031"] > .mpi-old[data-spm="0000004Pp"]`
+- `div[data-pid="2002256"] > .mpi-old[data-spm="0000004Pp"]`
 - `div[data-pid="2042092"] > .mpi-old[data-spm="0000004Pp"]`
-- `div[data-pid="2030268"] > .mpi-old[data-spm="0000004Pp"]`
+- `div[data-pid="2037975"] > .mpi-old[data-spm="0000004Pp"]`
 - `div[data-pid="1894619"] > .mpi-old[data-spm="0000004Pp"]`
 
 ### <dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements
@@ -97,7 +97,7 @@
 - `img[data-spm-masonry="43"][data-spm="0000001GZ"]`
 - `#tracker_146_1842`
 - `#tracker_146_1843`
-- `img[width="1"][height="1"]:nth-child(77)`
+- `img[width="1"][height="1"]:nth-child(76)`
 
 ### Form elements must have labels
 
@@ -122,7 +122,7 @@
 #### Affected Elements:
 
 - `.top-link`
-- `a[data-spm="0000001Ng"][data-spm-data="{\"bid\":\"88745\",\"pid\":\"\"}"][collected="1"]`
+- `.exclick[data-spm="0000001Ng"][data-spm-data="{\"bid\":\"88745\",\"pid\":\"\"}"]`
 - `a[data-spm="0000001GN-1"]`
 - `a[data-spm-data="{\"bid\":\"1661583977\",\"pid\":\"\"}"][data-spm-masonry="0"][data-spm="0000001GY"]`
 - `a[data-spm-data="{\"bid\":\"1741228075\",\"pid\":\"\"}"]`
@@ -202,4 +202,4 @@
 - `.newbie-popup`
 - `#tracker_146_1842`
 - `#tracker_146_1843`
-- `img[width="1"][height="1"]:nth-child(77)`
+- `img[width="1"][height="1"]:nth-child(76)`
