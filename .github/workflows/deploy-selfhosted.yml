@@ -58,13 +58,13 @@ jobs:
           
           # Force cleanup of problematic directories (try without sudo first)
           rm -rf node_modules || echo "Cleaned node_modules"
-          rm -rf .git || echo "Cleaned git directory for fresh clone"
+          # Note: Do NOT delete .git - let checkout action handle it with clean parameter
 
       - uses: actions/checkout@v6
         with:
           ref: main
           fetch-depth: 1
-          clean: false
+          clean: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Configure Git for authentication
@@ -273,7 +273,7 @@ jobs:
           rm -rf playwright-report || echo "Cleaned playwright-report"
           rm -rf tests || echo "Cleaned tests"
           rm -rf test-results-batch-* || echo "Cleaned test results batches"
-          rm -rf .git || echo "Cleaned git directory for fresh clone"
+          # Note: Do NOT delete .git - let checkout action handle it with clean parameter
           
           # Create required directories
           mkdir -p accessibility-reports
@@ -284,7 +284,7 @@ jobs:
         with:
           ref: main
           fetch-depth: 1
-          clean: false
+          clean: true
 
       - name: Download test files
         uses: actions/download-artifact@v7
@@ -607,7 +607,7 @@ jobs:
         with:
           ref: main
           fetch-depth: 1
-          clean: false
+          clean: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
@@ -786,14 +786,14 @@ jobs:
           rm -rf accessibility-reports || echo "Cleaned accessibility-reports"
           rm -rf playwright-report || echo "Cleaned playwright-report"
           rm -rf tests || echo "Cleaned tests"
-          rm -rf .git || echo "Cleaned git directory for fresh clone"
+          # Note: Do NOT delete .git - let checkout action handle it with clean parameter
 
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
           ref: main
           fetch-depth: 1
-          clean: false
+          clean: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Configure Git to use GitHub token
