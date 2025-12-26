@@ -1,6 +1,6 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2025-12-25T21:22:57.662Z
+**Timestamp:** 2025-12-26T00:36:46.359Z
 **URL:** [https://dns.no/#](https://dns.no/#)
 **Total Violations:** 5
 
@@ -59,12 +59,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 89
+- **Count:** 88
 
 #### Affected Elements:
 
 - `.close_sidemenu`
-- `#wpfront-notification-bar`
 - `.skip-link`
 - `#dtx-header-logo`
 - `.header-links`

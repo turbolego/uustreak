@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Lillehammer Museum
 
-**Timestamp:** 2025-12-25T21:13:23.583Z
+**Timestamp:** 2025-12-26T00:25:49.218Z
 **URL:** [https://lillehammermuseum.no/#](https://lillehammermuseum.no/#)
 **Total Violations:** 7
 

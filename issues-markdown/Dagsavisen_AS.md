@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2025-12-25T21:21:29.440Z
+**Timestamp:** 2025-12-26T00:35:24.860Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 6
 
@@ -40,15 +40,15 @@
 
 #### Affected Elements:
 
-- `.border_width_12.border_width_mobile_12.border-bg-quaternary:nth-child(14) > .t40.tm36`
-- `.border_width_12.border_width_mobile_12.border-bg-quaternary:nth-child(21) > .t40.tm36`
-- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary:nth-child(23) > .t40.tm36`
-- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary:nth-child(41) > .t28`
+- `.border_width_12.border_width_mobile_12.border-bg-quaternary:nth-child(13) > .t40.tm36`
+- `.border_width_12.border_width_mobile_12.border-bg-quaternary:nth-child(19) > .t40.tm36`
+- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary:nth-child(22) > .t40.tm36`
+- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary:nth-child(42) > .t28`
 - `.tm21.t28`
 - `.border_width_12.border_width_mobile_12.mobile_no_border_side > .t40.tm36`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(46) > .t42.tm21`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(47) > .t42.tm21`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > .t40`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(48) > .t42.tm21`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(49) > .t42.tm21`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -80,11 +80,15 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 83
+- **Count:** 84
 
 #### Affected Elements:
 
 - `h1`
+- `div[title="Vold mot 14-åring i Skien"] > h2`
+- `time[datetime="2025-12-25T22:45:41.000Z"]`
+- `#notice-10126067 > .content > h2`
+- `time[datetime="2025-12-25T22:14:40.000Z"]`
 - `#notice-10126033 > .content > h2`
 - `time[datetime="2025-12-25T19:44:57.000Z"]`
 - `div[title="John Robertson er død"] > h2`
@@ -121,49 +125,46 @@
 - `time[datetime="2025-12-24T13:27:17.000Z"]`
 - `#notice-10125422 > .content > h2`
 - `#notice-10125422 > .content > .meta`
-- `#notice-10125417 > .content > h2`
-- `#notice-10125417 > .content > .meta`
-- `#notice-10125329 > .content > h2`
-- `#notice-10125329 > .content > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
-- `.row.large-12.small-12:nth-child(4)`
+- `.row.large-12.small-12:nth-child(6)`
 - `.row.large-12.small-12:nth-child(7)`
-- `.row.large-12.small-12:nth-child(8)`
+- `.row.large-12.small-12:nth-child(9)`
 - `.row.large-12.small-12:nth-child(11)`
 - `.row.large-12.small-12:nth-child(12)`
-- `.row.large-12.small-12:nth-child(13)`
-- `.border_width_12.border_width_mobile_12.border-bg-quaternary:nth-child(14)`
+- `.border_width_12.border_width_mobile_12.border-bg-quaternary:nth-child(13)`
 - `.border-side-top.mobile_border-side-top.border-bg-quaternary`
 - `.articlescroller-header`
 - `.articles`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(18)`
-- `.row.large-12.small-12:nth-child(19)`
-- `.border_width_12.border_width_mobile_12.border-bg-quaternary:nth-child(21)`
-- `.row.large-12.small-12:nth-child(22)`
-- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary:nth-child(23)`
+- `.row.large-12.small-12:nth-child(17)`
+- `.row.large-12.small-12:nth-child(18)`
+- `.border_width_12.border_width_mobile_12.border-bg-quaternary:nth-child(19)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(21)`
+- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary:nth-child(22)`
+- `.row.large-12.small-12:nth-child(24)`
 - `.row.large-12.small-12:nth-child(26)`
 - `.row.large-12.small-12:nth-child(27)`
 - `.row.large-12.small-12:nth-child(28)`
 - `.row.large-12.small-12:nth-child(29)`
-- `.row.large-12.small-12:nth-child(31)`
 - `.t40.tm26.hasTextPadding`
-- `li[data-section="debatt"][data-hostname="www.dagsavisen.no"][data-source-display-name="www.dagsavisen.no"] > .kicker-position-hideKicker.paywall-position-hidePaywallLabel.text > a > h4`
+- `li[data-hostname="www.dagsavisen.no"][data-source-display-name="www.dagsavisen.no"][data-tab-content=""]:nth-child(1) > .kicker-position-hideKicker.paywall-position-hidePaywallLabel.text > a > h4`
 - `li[data-hostname="www.dagsavisen.no"][data-source-display-name="www.dagsavisen.no"][data-tab-content=""]:nth-child(2) > .kicker-position-hideKicker.paywall-position-hidePaywallLabel.text > a > h4`
 - `li[data-hostname="www.dagsavisen.no"][data-source-display-name="www.dagsavisen.no"][data-tab-content=""]:nth-child(3) > .kicker-position-hideKicker.paywall-position-hidePaywallLabel.text > a > h4`
 - `li[data-hostname="www.dagsavisen.no"][data-source-display-name="www.dagsavisen.no"][data-tab-content=""]:nth-child(4) > .kicker-position-hideKicker.paywall-position-hidePaywallLabel.text > a > h4`
 - `li[data-hostname="www.dagsavisen.no"][data-source-display-name="www.dagsavisen.no"][data-tab-content=""]:nth-child(5) > .kicker-position-hideKicker.paywall-position-hidePaywallLabel.text > a > h4`
+- `.row.large-12.small-12:nth-child(32)`
 - `.row.large-12.small-12:nth-child(33)`
 - `.row.large-12.small-12:nth-child(34)`
 - `.row.large-12.small-12:nth-child(36)`
 - `.row.large-12.small-12:nth-child(37)`
 - `.row.large-12.small-12:nth-child(38)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(39)`
-- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary:nth-child(41)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(42)`
-- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary:nth-child(43)`
+- `.row.large-12.small-12:nth-child(39)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(41)`
+- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary:nth-child(42)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(43)`
+- `.has-row-header.bg-tertiary.color_mobile_bg-tertiary:nth-child(44)`
 - `.border_width_12.border_width_mobile_12.mobile_no_border_side`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(46)`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(47)`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
-- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(48)`
+- `.border-side-bottom.mobile_border-side-bottom.desktop-space-outsideTop-none:nth-child(49)`
 - `.powered-by`

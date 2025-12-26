@@ -1,6 +1,6 @@
 # WCAG Violations Report for Travel Retail Norway AS
 
-**Timestamp:** 2025-12-25T21:19:14.832Z
+**Timestamp:** 2025-12-26T00:31:35.054Z
 **URL:** [https://www.tax-free.no/no/](https://www.tax-free.no/no/)
 **Total Violations:** 6
 

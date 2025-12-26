@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2025-12-25T21:11:11.141Z
+**Timestamp:** 2025-12-26T00:23:44.923Z
 **URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
 **Total Violations:** 10
 

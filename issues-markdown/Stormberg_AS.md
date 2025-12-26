@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2025-12-25T21:14:25.319Z
+**Timestamp:** 2025-12-26T00:26:49.652Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -32,15 +32,15 @@
 - `a[aria-label="Haukeli vinterjakke"] > .it.iu.hr > div > .gu > .j7.hs.bd`
 - `a[aria-label="Haukeli vinterbukse"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
 - `a[aria-label="Haukeli vinterbukse"] > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `a[aria-label="Vaberg Half Zip ullgenser"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
-- `a[aria-label="Vaberg Half Zip ullgenser"] > .it.iu.hr > div > .gu > .j7.hs.bd`
 - `a[aria-label="Hardanger supersoft longs"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
 - `a[aria-label="Hardanger supersoft longs"] > .it.iu.hr > div > .gu > .j7.hs.bd`
+- `a[aria-label="Selsli tursag"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
+- `a[aria-label="Selsli tursag"] > .it.iu.hr > div > .gu > .j7.hs.bd`
 - `a[aria-label="Hardanger supersoft trøye"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
 - `a[aria-label="Hardanger supersoft trøye"] > .it.iu.hr > div > .gu > .j7.hs.bd`
-- `a[aria-label="Voss 2-lags ullongs"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
 - `a[aria-label="Istind piggsko"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
-- `a[aria-label="Trysil vattert selebukse"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
+- `a[aria-label="Hemsedal 2-lags ullsett"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
+- `a[aria-label="Voss 2-lags ullongs"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
 - `a[aria-label="Åkrafjell sherpajakke"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
 - `a[aria-label="Porsanger cord sherpagenser"] > .i9.bc.bd > .ig.ie.y > .gq.il.ih`
 - `#onetrust-accept-btn-handler`

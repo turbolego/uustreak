@@ -1,7 +1,7 @@
 # WCAG Violations Report for Dagens Næringsliv AS
 
-**Timestamp:** 2025-12-25T21:21:15.860Z
-**URL:** [https://www.dn.no/](https://www.dn.no/)
+**Timestamp:** 2025-12-26T00:35:11.423Z
+**URL:** [https://www.dn.no/?zephr_sso_ott=DD7I6P](https://www.dn.no/?zephr_sso_ott=DD7I6P)
 **Total Violations:** 8
 
 ## Violation Details
@@ -12,10 +12,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 46
+- **Count:** 47
 
 #### Affected Elements:
 
+- `.investor-bar__item-difference-increased`
 - `a[data-id="2-1-1919723"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="2-1-1920423"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="2-1-1894231"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
@@ -152,11 +153,11 @@
 - `.item-increased.item[data-v-a56f3944=""]:nth-child(1)`
 - `.item-increased.item[data-v-a56f3944=""]:nth-child(2)`
 - `.item-decreased.item[data-v-a56f3944=""]:nth-child(3) > .item-holder[data-v-a56f3944=""]`
-- `.item-decreased.item[data-v-a56f3944=""]:nth-child(3) > .item-difference-holder.item-difference-holder-decreased[data-v-a56f3944=""] > .item-difference.item-percentage.item-difference-decreased`
+- `.item-decreased.item[data-v-a56f3944=""]:nth-child(3) > .item-difference-holder-decreased.item-difference-holder[data-v-a56f3944=""] > .item-difference-decreased.item-difference.item-percentage`
 - `.item-decreased.item[data-v-a56f3944=""]:nth-child(4) > .item-holder[data-v-a56f3944=""]`
-- `.item-decreased.item[data-v-a56f3944=""]:nth-child(4) > .item-difference-holder.item-difference-holder-decreased[data-v-a56f3944=""] > .item-difference.item-percentage.item-difference-decreased`
-- `.item-decreased.item[data-v-a56f3944=""]:nth-child(5) > .item-holder[data-v-a56f3944=""]`
-- `.item-decreased.item[data-v-a56f3944=""]:nth-child(5) > .item-difference-holder.item-difference-holder-decreased[data-v-a56f3944=""] > .item-difference.item-percentage.item-difference-decreased`
+- `.item-decreased.item[data-v-a56f3944=""]:nth-child(4) > .item-difference-holder-decreased.item-difference-holder[data-v-a56f3944=""] > .item-difference-decreased.item-difference.item-percentage`
+- `.item-increased.item[data-v-a56f3944=""]:nth-child(5) > .item-holder[data-v-a56f3944=""]`
+- `.investor-bar__item-difference-increased`
 - `.dn-group:nth-child(2)`
 - `a[data-id="2-1-1918264"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
 - `a[data-id="2-1-1918264"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`

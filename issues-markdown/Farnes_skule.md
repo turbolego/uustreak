@@ -1,6 +1,6 @@
 # WCAG Violations Report for Farnes skule
 
-**Timestamp:** 2025-12-25T21:12:26.162Z
+**Timestamp:** 2025-12-26T00:25:41.769Z
 **URL:** [https://www.ardal.kommune.no/tenester/barnehage-og-skule/skule/farnes-skule/#](https://www.ardal.kommune.no/tenester/barnehage-og-skule/skule/farnes-skule/#)
 **Total Violations:** 3
 
