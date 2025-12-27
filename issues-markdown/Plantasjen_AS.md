@@ -1,6 +1,6 @@
 # WCAG Violations Report for Plantasjen AS
 
-**Timestamp:** 2025-12-26T00:30:22.829Z
+**Timestamp:** 2025-12-27T00:32:35.912Z
 **URL:** [https://plantasjen.no/no](https://plantasjen.no/no)
 **Total Violations:** 2
 
@@ -24,9 +24,14 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Count:** 7
 
 #### Affected Elements:
 
-- `section:nth-child(19) > .py-2.relative > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(1) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.relative.gap-3 > .top-6.md\:top-6.left-0 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
-- `section:nth-child(48) > .py-2.relative > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(1) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.relative.gap-3 > .top-6.md\:top-6.left-0 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
+- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(2) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.relative.group > .top-6.md\:top-6.left-0 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
+- `section:nth-child(4) > .py-2.relative > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(3) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.relative.group > .rounded-bl-lg.rounded-tr-lg.right-0 > .text-white`
+- `section:nth-child(4) > .py-2.relative > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(4) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.relative.group > .rounded-bl-lg.rounded-tr-lg.right-0 > .text-white`
+- `section:nth-child(7) > .py-2.relative > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(3) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.relative.group > .rounded-bl-lg.rounded-tr-lg.right-0 > .text-white`
+- `section:nth-child(7) > .py-2.relative > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(4) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.relative.group > .rounded-bl-lg.rounded-tr-lg.right-0 > .text-white`
+- `section:nth-child(30) > .py-2.relative > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(1) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.relative.group > .top-6.md\:top-6.left-0 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
+- `section:nth-child(52) > .py-2.relative > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(1) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.relative.group > .top-6.md\:top-6.left-0 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`

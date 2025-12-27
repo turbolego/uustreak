@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2025-12-26T00:34:29.861Z
+**Timestamp:** 2025-12-27T00:34:56.161Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 5
 
@@ -52,7 +52,7 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 5
+- **Count:** 14
 
 #### Affected Elements:
 
@@ -61,6 +61,15 @@
 - `img[alt="Gardiner"]`
 - `img[alt="Kjøkken"]`
 - `img[alt="50% på en mengde varer!"]`
+- `img[alt="Sofa"]`
+- `img[alt="Spisebord"]`
+- `img[alt="Gulvtepper"]`
+- `img[alt="Lenestoler"]`
+- `img[alt="Spisestoler"]`
+- `img[alt="Puffer, krakker og benker"]`
+- `img[alt="Hyller"]`
+- `img[alt="Småbord og sofabord"]`
+- `img[alt="Skap og skjenker"]`
 
 ### All page content should be contained by landmarks
 

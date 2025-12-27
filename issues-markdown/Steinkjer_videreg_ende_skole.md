@@ -1,6 +1,6 @@
 # WCAG Violations Report for Steinkjer videregående skole
 
-**Timestamp:** 2025-12-26T00:24:20.010Z
+**Timestamp:** 2025-12-27T00:26:16.048Z
 **URL:** [https://web.trondelagfylke.no/steinkjer-videregaende-skole/#](https://web.trondelagfylke.no/steinkjer-videregaende-skole/#)
 **Total Violations:** 9
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f8b2ded0abd708a3d"], ._55yn`
+- `iframe[name="fb3c8b10fab578ccb"], ._55yn`
 
 ### Certain ARIA roles must contain particular children
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f8b2ded0abd708a3d"], div[role="feed"]`
+- `iframe[name="fb3c8b10fab578ccb"], div[role="feed"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -52,11 +52,11 @@
 
 #### Affected Elements:
 
-- `iframe[name="f8b2ded0abd708a3d"], abbr[data-utime="1766234839"] > .timestampContent`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_d_cu > ._2165._2pi4[title="Like"]`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_c_3M > table > tbody > tr > ._435r:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Comment"]`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_e_oo > ._50sk._2pi4[title="Share"]`
-- `iframe[name="f8b2ded0abd708a3d"], abbr[data-utime="1766069576"] > .timestampContent`
+- `iframe[name="fb3c8b10fab578ccb"], abbr[data-utime="1766234839"] > .timestampContent`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_d_kq > ._2165._2pi4[title="Like"]`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_c_Ud > table > tbody > tr > ._435r:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Comment"]`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_e_Eq > ._50sk._2pi4[title="Share"]`
+- `iframe[name="fb3c8b10fab578ccb"], abbr[data-utime="1766069576"] > .timestampContent`
 
 ### Document should not have more than one banner landmark
 
@@ -93,14 +93,14 @@
 
 #### Affected Elements:
 
-- `iframe[name="f8b2ded0abd708a3d"], #u_0_1_Cb`
-- `iframe[name="f8b2ded0abd708a3d"], .lfloat._3-8_`
-- `iframe[name="f8b2ded0abd708a3d"], ._2l7q > a`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_8_XK > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_7_TF > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_5_hy > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_6_7D > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_r_iN > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="fb3c8b10fab578ccb"], #u_0_1_xD`
+- `iframe[name="fb3c8b10fab578ccb"], .lfloat._3-8_`
+- `iframe[name="fb3c8b10fab578ccb"], ._2l7q > a`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_8_bl > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_6_4E > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_7_Pd > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_5_BC > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_r_mw > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -112,7 +112,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f8b2ded0abd708a3d"], img[height="181"]`
+- `iframe[name="fb3c8b10fab578ccb"], img[height="181"]`
 
 ### All page content should be contained by landmarks
 
@@ -130,33 +130,33 @@
 - `.card-grid.card-grid--equal-height:nth-child(4)`
 - `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(1)`
 - `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(2) > .card.card-grid--equal-height > .card__tag`
-- `iframe[name="f8b2ded0abd708a3d"], ._2lqh`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_8_XK > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_c_3M > table > tbody > tr > ._435r:nth-child(2)`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_c_3M > table > tbody > tr > ._51mw`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_7_TF > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k`
-- `iframe[name="f8b2ded0abd708a3d"], #id_694dd5ad158e64107243133 > p`
-- `iframe[name="f8b2ded0abd708a3d"], .text_exposed_hide:nth-child(2)`
-- `iframe[name="f8b2ded0abd708a3d"], .text_exposed_hide:nth-child(4)`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_7_TF > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > ._3x-2[data-ft="{\"tn\":\"H\"}"]`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_n_uW > table > tbody > tr > ._435r:nth-child(2)`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_n_uW > table > tbody > tr > ._51mw`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_5_hy > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_5_hy > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > ._5pbx._3576[data-testid="post_message"]`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_1n_Rd > .uiScaledImageContainer`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_1m_HS > .uiScaledImageContainer`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_h_da > table > tbody > tr > ._435r:nth-child(2)`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_h_da > table > tbody > tr > ._51mw`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_1d_S5`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_6_7D > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_6_7D > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > ._5pbx._3576[data-testid="post_message"]`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_k_gQ > table > tbody > tr > ._435r:nth-child(2)`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_k_gQ > table > tbody > tr > ._51mw`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_13_J8`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_r_iN > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_r_iN > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > ._5pbx._3576[data-testid="post_message"]`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_t_9u > table > tbody > tr > ._435r:nth-child(2)`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_t_9u > table > tbody > tr > ._51mw`
-- `iframe[name="f8b2ded0abd708a3d"], #u_1_1q_Oo`
-- `iframe[name="f8b2ded0abd708a3d"], ._1_lj`
+- `iframe[name="fb3c8b10fab578ccb"], ._2lqh`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_8_bl > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_c_Ud > table > tbody > tr > ._435r:nth-child(2)`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_c_Ud > table > tbody > tr > ._51mw`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_6_4E > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k`
+- `iframe[name="fb3c8b10fab578ccb"], #id_694f27a0a2d0e9650849665 > p`
+- `iframe[name="fb3c8b10fab578ccb"], .text_exposed_hide:nth-child(2)`
+- `iframe[name="fb3c8b10fab578ccb"], .text_exposed_hide:nth-child(4)`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_6_4E > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > ._3x-2[data-ft="{\"tn\":\"H\"}"]`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_f_zy > table > tbody > tr > ._435r:nth-child(2)`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_f_zy > table > tbody > tr > ._51mw`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_7_Pd > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_7_Pd > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > ._5pbx._3576[data-testid="post_message"]`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_1m_In > .uiScaledImageContainer`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_1n_l4 > .uiScaledImageContainer`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_j_FS > table > tbody > tr > ._435r:nth-child(2)`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_j_FS > table > tbody > tr > ._51mw`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_12_zE`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_5_BC > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_5_BC > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > ._5pbx._3576[data-testid="post_message"]`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_o_gR > table > tbody > tr > ._435r:nth-child(2)`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_o_gR > table > tbody > tr > ._51mw`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_1d_4n`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_r_mw > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_r_mw > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > ._5pbx._3576[data-testid="post_message"]`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_t_9X > table > tbody > tr > ._435r:nth-child(2)`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_t_9X > table > tbody > tr > ._51mw`
+- `iframe[name="fb3c8b10fab578ccb"], #u_1_1q_Pf`
+- `iframe[name="fb3c8b10fab578ccb"], ._1_lj`
 - `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(3)`
