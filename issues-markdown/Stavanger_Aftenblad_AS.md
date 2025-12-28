@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2025-12-27T00:58:00.849Z
+**Timestamp:** 2025-12-28T00:47:27.750Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
 **Total Violations:** 7
 
@@ -113,7 +113,7 @@
 - `#skattelisten, .text`
 - `#skattelisten, ol`
 - `#skattelisten, #b4-tax-municipality-search`
-- `#dr-edition-teaser-q63z5peok > div`
+- `#dr-edition-teaser-41ypkul9 > div`
 - `._heading_1bm9r_641 > span`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
@@ -137,9 +137,9 @@
 - `._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
 - `.vertical-x2.row:nth-child(11)`
 - `.vertical-x3.row:nth-child(13)`
-- `.collage-x3.row:nth-child(17)`
-- `.vertical-x2.row:nth-child(18)`
-- `.vertical-x3.row:nth-child(20)`
+- `.vertical-x2.row:nth-child(17)`
+- `.vertical-x4`
+- `.collage-x4`
 - `.hjernetrim-front-widget`
 - `.collage-x3.row:nth-child(24)`
 - `.vertical-x2.row:nth-child(26)`
@@ -151,38 +151,38 @@
 - `.vertical-x3.row:nth-child(28)`
 - `.widget-football.regional-widget`
 - `.vertical-x2.row:nth-child(30)`
-- `.vertical-x4`
-- `.vertical-x3.row:nth-child(35)`
-- `.widget-bolig.regional-widget`
-- `article[data-pulse-entity-id="Okpz2E"] > .display-flex.article__teaser-container > .article__text-container`
-- `.collage-x3.row:nth-child(38)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(40)`
-- `.vertical-x2.row:nth-child(41)`
-- `.vertical-x3.row:nth-child(43)`
-- `.vertical-x2.row:nth-child(44)`
+- `.vertical-x3.row:nth-child(32)`
 - `.vertical-small-x2`
+- `.widget-bolig.regional-widget`
+- `.vertical-x2.row:nth-child(37)`
+- `.vertical-x3.row:nth-child(38)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(40)`
+- `.collage-x3.row:nth-child(41)`
+- `.vertical-x2.row:nth-child(43)`
+- `.collage-x3.row:nth-child(44)`
+- `.vertical-x2.row:nth-child(45)`
 - `.vertical-x1-ad.row:nth-child(46)`
-- `.collage-x3.row:nth-child(47)`
+- `.vertical-x3.row:nth-child(47)`
 - `.vertical-x2.row:nth-child(48)`
 - `.vertical-x1-ad.row:nth-child(49)`
-- `.vertical-x3.row:nth-child(50)`
-- `.collage-x3.row:nth-child(51)`
-- `.vertical-x2.row:nth-child(52)`
-- `.collage-x3.row:nth-child(53)`
-- `.vertical-x2.row:nth-child(54)`
+- `.collage-x3.row:nth-child(50)`
+- `.vertical-x2.row:nth-child(51)`
+- `.collage-x3.row:nth-child(52)`
+- `.vertical-x2.row:nth-child(53)`
+- `.vertical-x3.row:nth-child(54)`
 - `.collage-x3.row:nth-child(55)`
 - `.vertical-x2.row:nth-child(56)`
-- `.vertical-x3.row:nth-child(58)`
+- `.collage-x3.row:nth-child(58)`
 - `#webcam-frontpage`
 - `.vertical-x2.row:nth-child(60)`
-- `.collage-x3.row:nth-child(61)`
+- `.vertical-x3.row:nth-child(61)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(62)`
-- `.vertical-x2.row:nth-child(64)`
-- `.collage-x3.row:nth-child(65)`
-- `.vertical-x2.row:nth-child(66)`
+- `.collage-x3.row:nth-child(64)`
+- `.vertical-x2.row:nth-child(65)`
+- `.vertical-x3.row:nth-child(66)`
 - `.vertical-x1-ad.row:nth-child(67)`
-- `.row--full.horizontal-x1.row:nth-child(68)`
-- `.sch-datacontroller__text`
+- `.vertical-x3.row:nth-child(68)`
+- `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`
 
 ### Scrollable region must have keyboard access
 

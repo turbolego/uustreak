@@ -1,22 +1,10 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2025-12-27T00:33:55.628Z
+**Timestamp:** 2025-12-28T00:34:39.095Z
 **URL:** [https://www.blv.no/#](https://www.blv.no/#)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `article[data-title-words="2"] > .brick-c-fzBiFz.teaser_body[itemprop="url"] > .body > .brick-c-bVcFwu.title_container.has-image > .brick-c-gPjxah-eCfDUW-teaserType-commercial.brick-c-gPjxah[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
