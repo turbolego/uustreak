@@ -1,6 +1,6 @@
 # WCAG Violations Report for St. Olavs hospital HF
 
-**Timestamp:** 2025-12-28T00:46:14.652Z
+**Timestamp:** 2025-12-29T00:40:19.444Z
 **URL:** [https://www.stolav.no/#](https://www.stolav.no/#)
 **Total Violations:** 2
 
@@ -24,11 +24,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 4
+- **Count:** 3
 
 #### Affected Elements:
 
 - `legend`
 - `._cookieconsent__description_af7bfec`
 - `.skiplink`
-- `.browser-warning`

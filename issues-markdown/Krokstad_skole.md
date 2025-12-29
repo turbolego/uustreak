@@ -1,6 +1,6 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2025-12-28T01:01:05.203Z
+**Timestamp:** 2025-12-29T00:38:52.932Z
 **URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#)
 **Total Violations:** 9
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="fdf43dd0a5263070f"], ._55yn`
+- `iframe[name="f25e5c859419caee8"], ._55yn`
 
 ### Certain ARIA roles must contain particular children
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="fdf43dd0a5263070f"], div[role="feed"]`
+- `iframe[name="f25e5c859419caee8"], div[role="feed"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -40,12 +40,12 @@
 
 #### Affected Elements:
 
-- `iframe[name="fdf43dd0a5263070f"], ._4v3m:nth-child(2) > ._eg_[role="button"] > ._eh3`
-- `iframe[name="fdf43dd0a5263070f"], ._4v3m._51mw > ._eg_[role="button"] > ._eh3`
-- `iframe[name="fdf43dd0a5263070f"], abbr[data-utime="1766442400"] > .timestampContent`
-- `iframe[name="fdf43dd0a5263070f"], ._1atc > .fcg`
-- `iframe[name="fdf43dd0a5263070f"], #u_1_c_Qa > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Kommenter"]`
-- `iframe[name="fdf43dd0a5263070f"], #u_1_e_hw > ._50sk._2pi4[title="Del"]`
+- `iframe[name="f25e5c859419caee8"], ._4v3m:nth-child(2) > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f25e5c859419caee8"], ._4v3m._51mw > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f25e5c859419caee8"], abbr[data-utime="1766442400"] > .timestampContent`
+- `iframe[name="f25e5c859419caee8"], ._1atc > .fcg`
+- `iframe[name="f25e5c859419caee8"], #u_1_a_KE > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Kommenter"]`
+- `iframe[name="f25e5c859419caee8"], #u_1_c_uc > ._50sk._2pi4[title="Del"]`
 
 ### Form elements should have a visible label
 
@@ -95,15 +95,15 @@
 
 #### Affected Elements:
 
-- `iframe[name="fdf43dd0a5263070f"], #u_0_1_7d`
-- `iframe[name="fdf43dd0a5263070f"], .lfloat._3-8_`
-- `iframe[name="fdf43dd0a5263070f"], #u_1_9_Ve > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="fdf43dd0a5263070f"], .mts > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
-- `iframe[name="fdf43dd0a5263070f"], #u_1_1t_vu > ._302 > span > a`
-- `iframe[name="fdf43dd0a5263070f"], #u_1_1q_Oh > ._302 > span > a`
-- `iframe[name="fdf43dd0a5263070f"], ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
-- `iframe[name="fdf43dd0a5263070f"], #u_1_6_3o > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="fdf43dd0a5263070f"], #u_1_5_iX > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f25e5c859419caee8"], #u_0_1_wD`
+- `iframe[name="f25e5c859419caee8"], .lfloat._3-8_`
+- `iframe[name="f25e5c859419caee8"], #u_1_8_5B > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f25e5c859419caee8"], .mts > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
+- `iframe[name="f25e5c859419caee8"], #u_1_1i_t5 > ._302 > span > a`
+- `iframe[name="f25e5c859419caee8"], #u_1_1u_EU > ._302 > span > a`
+- `iframe[name="f25e5c859419caee8"], ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
+- `iframe[name="f25e5c859419caee8"], #u_1_5_x6 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f25e5c859419caee8"], #u_1_6_B5 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
 
 ### Interactive controls must not be nested
 
