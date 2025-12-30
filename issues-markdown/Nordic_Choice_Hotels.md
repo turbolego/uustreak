@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordic Choice Hotels
 
-**Timestamp:** 2025-12-29T00:27:58.144Z
+**Timestamp:** 2025-12-30T00:29:47.303Z
 **URL:** [https://www.strawberry.no/](https://www.strawberry.no/)
 **Total Violations:** 2
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `#horizontal-scroll-info-cards-1 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(1)`
 - `a[href$="final-bonusnetter/"]`
+- `#horizontal-scroll-info-cards-1 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(2)`
 - `#horizontal-scroll-info-cards-1 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(3)`
 - `#horizontal-scroll-info-cards-3 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(1)`
 - `a[href$="superdeal/"]`

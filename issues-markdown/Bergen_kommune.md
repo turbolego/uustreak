@@ -1,19 +1,19 @@
 # WCAG Violations Report for Bergen kommune
 
-**Timestamp:** 2025-12-05T00:32:01.570Z
+**Timestamp:** 2025-12-30T00:33:52.464Z
 **URL:** [https://www.bergen.kommune.no/#](https://www.bergen.kommune.no/#)
 **Total Violations:** 1
 
 ## Violation Details
 
-### Elements must meet minimum color contrast ratio thresholds
+### Alternative text of images should not be repeated as text
 
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Impact:** minor
+- **Description:** Ensure image alternative is not repeated as text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
+- **Tags:** cat.text-alternatives, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#corner_text`
+- `.teaser__image`

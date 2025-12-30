@@ -1,22 +1,10 @@
 # WCAG Violations Report for Eidsiva Bredbånd AS
 
-**Timestamp:** 2025-12-29T00:42:23.072Z
+**Timestamp:** 2025-12-30T00:42:52.605Z
 **URL:** [https://www.eidsiva.no/#](https://www.eidsiva.no/#)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.btn--dark--ghost`
 
 ### Form elements should have a visible label
 
