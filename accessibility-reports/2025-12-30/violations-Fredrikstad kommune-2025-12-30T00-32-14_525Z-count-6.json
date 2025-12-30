@@ -1,0 +1,288 @@
+{
+  "project": "Fredrikstad kommune",
+  "timestamp": "2025-12-30T00:32:14.526Z",
+  "url": "https://www.fredrikstad.kommune.no/#",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"animated bounceOutRight\" id=\"corner_text\" aria-label=\"Hva kan jeg hjelpe deg med?\">Hva kan jeg hjelpe deg med?</span>",
+          "target": [
+            "#corner_text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.32 (foreground color: #f4f8fb, background color: #c6dceb, font size: 14.3pt (19px), font weight: bold). Expected contrast ratio of 3:1"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img src=\"/icons/aksel-icons/Interface/Language.svg\">",
+          "target": [
+            ".language > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"video-js vjs-fill vjs-paused vid-0-dimensions vjs-workinghover vjs-v8 vjs-user-active vjs-layout-x-small vjs-error vjs-controls-disabled\" id=\"vid-0\" tabindex=\"-1\" role=\"region\" lang=\"no\" translate=\"no\" aria-label=\"Video Player\">",
+          "target": [
+            "#vid-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<p class=\"font-semibold text-xl\">\n                <a href=\"/driftsmeldinger\" class=\"no-underline hover:underline text-black\">Driftsmeldinger</a>\n            </p>",
+          "target": [
+            ".font-semibold.text-xl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/driftsmeldinger/toemming-av-restavfall-og-matavfall-i-julen/\" title=\"Tømming av restavfall og matavfall i julen\" class=\"no-underline hover:underline text-black\">",
+          "target": [
+            ".wrapper > ul > li:nth-child(1) > .hover\\:underline.text-black.no-underline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/tjenester/vei-sykkel-ferge/fergetider-i-julen/\" title=\"Fergetider i julen og vinterrute Gamlebyen - Ålekilene\" class=\"no-underline hover:underline text-black\">",
+          "target": [
+            ".wrapper > ul > li:nth-child(2) > .hover\\:underline.text-black.no-underline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input id=\"q\" name=\"q\" type=\"search\" aria-label=\"Søketekst\" class=\"block border-1 borde...\" placeholder=\"Skriv hva du trenger...\" required=\"\">",
+          "target": [
+            "#q"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"pt-4 flex flex-wrap gap-4\">",
+          "target": [
+            ".flex-wrap"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"text-xl font-medium text-gray-700\">Fant du det du lette etter?</p>",
+          "target": [
+            "div[x-show=\"step === 1\"] > .text-gray-700.font-medium.text-xl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "scrollable-region-focusable",
+      "impact": "serious",
+      "description": "Ensure elements that have scrollable content are accessible by keyboard",
+      "help": "Scrollable region must have keyboard access",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag211",
+        "wcag213",
+        "TTv5",
+        "TT4.a",
+        "EN-301-549",
+        "EN-9.2.1.1",
+        "EN-9.2.1.3",
+        "RGAAv4",
+        "RGAA-7.3.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"carousel carousel--scroll-buttons carousel--offscreen-inert\">",
+          "target": [
+            ".carousel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+        }
+      ]
+    },
+    {
+      "id": "svg-img-alt",
+      "impact": "serious",
+      "description": "Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text",
+      "help": "<svg> elements with an img role must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/svg-img-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.5"
+      ],
+      "violation_count": 12,
+      "nodes": [
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-fk-blue\" width=\"1em\" height=\"1em\" fill=\"none\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"img\">",
+          "target": [
+            "a[href=\"/kalender?id=1659742\"] > .p-4 > .list-none.p-0.m-0 > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width=\"1em\"][height=\"1em\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-fk-blue\" fill=\"none\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"img\">",
+          "target": [
+            "a[href=\"/kalender?id=1659742\"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-fk-blue\" fill=\"none\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"img\">",
+          "target": [
+            "a[href=\"/kalender?id=1659742\"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-fk-blue\" width=\"1em\" height=\"1em\" fill=\"none\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"img\">",
+          "target": [
+            "a[href=\"/kalender?id=1659747\"] > .p-4 > .list-none.p-0.m-0 > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width=\"1em\"][height=\"1em\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-fk-blue\" fill=\"none\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"img\">",
+          "target": [
+            "a[href=\"/kalender?id=1659747\"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-fk-blue\" fill=\"none\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"img\">",
+          "target": [
+            "a[href=\"/kalender?id=1659747\"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-fk-blue\" width=\"1em\" height=\"1em\" fill=\"none\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"img\">",
+          "target": [
+            "a[href=\"/kalender?id=1692971\"] > .p-4 > .list-none.p-0.m-0 > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width=\"1em\"][height=\"1em\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-fk-blue\" fill=\"none\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"img\">",
+          "target": [
+            "a[href=\"/kalender?id=1692971\"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-fk-blue\" fill=\"none\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"img\">",
+          "target": [
+            "a[href=\"/kalender?id=1692971\"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-fk-blue\" width=\"1em\" height=\"1em\" fill=\"none\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"img\">",
+          "target": [
+            "a[href=\"/kalender?id=1656832\"] > .p-4 > .list-none.p-0.m-0 > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width=\"1em\"][height=\"1em\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-fk-blue\" fill=\"none\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"img\">",
+          "target": [
+            "a[href=\"/kalender?id=1656832\"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-fk-blue\" fill=\"none\" viewBox=\"0 0 24 24\" focusable=\"false\" role=\"img\">",
+          "target": [
+            "a[href=\"/kalender?id=1656832\"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}
