@@ -1,6 +1,6 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2025-12-31T00:38:15.305Z
+**Timestamp:** 2026-01-01T00:41:42.644Z
 **URL:** [https://dns.no/#](https://dns.no/#)
 **Total Violations:** 5
 
@@ -59,7 +59,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 88
+- **Count:** 91
 
 #### Affected Elements:
 
@@ -74,19 +74,22 @@
 - `.month1 > thead > .caption > th:nth-child(1)`
 - `.month1 > thead > .caption > .month-name[colspan="5"]`
 - `.month1 > thead > .week-name`
-- `.month1 > tbody > tr:nth-child(1)`
+- `.month1 > tbody > tr:nth-child(1) > td:nth-child(4)`
+- `.month1 > tbody > tr:nth-child(1) > td:nth-child(5)`
+- `.month1 > tbody > tr:nth-child(1) > td:nth-child(6)`
+- `.month1 > tbody > tr:nth-child(1) > td:nth-child(7)`
 - `.month1 > tbody > tr:nth-child(2)`
 - `.month1 > tbody > tr:nth-child(3)`
 - `.month1 > tbody > tr:nth-child(4)`
 - `.month1 > tbody > tr:nth-child(5) > td:nth-child(1)`
 - `.month1 > tbody > tr:nth-child(5) > td:nth-child(2)`
 - `.month1 > tbody > tr:nth-child(5) > td:nth-child(3)`
+- `.month1 > tbody > tr:nth-child(5) > td:nth-child(4)`
+- `.month1 > tbody > tr:nth-child(5) > td:nth-child(5)`
+- `.month1 > tbody > tr:nth-child(5) > td:nth-child(6)`
 - `.month2 > thead > .caption > .month-name[colspan="5"]`
 - `.month2 > thead > .caption > th:nth-child(3)`
 - `.month2 > thead > .week-name`
-- `.month2 > tbody > tr:nth-child(1) > td:nth-child(4)`
-- `.month2 > tbody > tr:nth-child(1) > td:nth-child(5)`
-- `.month2 > tbody > tr:nth-child(1) > td:nth-child(6)`
 - `.month2 > tbody > tr:nth-child(1) > td:nth-child(7)`
 - `.month2 > tbody > tr:nth-child(2)`
 - `.month2 > tbody > tr:nth-child(3)`

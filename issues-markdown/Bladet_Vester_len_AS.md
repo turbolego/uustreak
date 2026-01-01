@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2025-12-31T00:32:34.239Z
+**Timestamp:** 2026-01-01T00:36:29.844Z
 **URL:** [https://www.blv.no/#](https://www.blv.no/#)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -29,18 +29,6 @@
 #### Affected Elements:
 
 - `brick-carousel-v2[data-slides="20"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
-
-### Links must be distinguishable without relying on color
-
-- **Impact:** serious
-- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
-- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#sp_message_iframe_1404662, #no-hover`
 
 ### Elements marked as presentational should be consistently ignored
 

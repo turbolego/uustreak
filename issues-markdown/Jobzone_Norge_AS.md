@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jobzone Norge AS
 
-**Timestamp:** 2025-12-31T00:34:17.157Z
+**Timestamp:** 2026-01-01T00:38:40.602Z
 **URL:** [https://jobzone.no/](https://jobzone.no/)
 **Total Violations:** 5
 
@@ -25,9 +25,9 @@
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(2) > .box.is-mobile > .left-arrow.link.rusty-red > .rusty-red`
 - `.buttons-href-button[href="/ledige-stillinger/72273"]`
 - `.position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-short-deadline > .box`
-- `.buttons-href-button[href="/ledige-stillinger/72292"]`
-- `.position-list-card-wrapper:nth-child(3) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-short-deadline > .box`
 - `.buttons-href-button[href="/ledige-stillinger/72291"]`
+- `.position-list-card-wrapper:nth-child(3) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-short-deadline > .box`
+- `.buttons-href-button[href="/ledige-stillinger/72292"]`
 - `.buttons-href-button[href="/ledige-stillinger/72031"]`
 - `.button-component`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .jobseeker.is-marginless.is-multiline > h5`
@@ -81,8 +81,8 @@
 - `.page-link.colums:nth-child(3) > a[href$="avdelinger/"] > .is-mobile.columns > .page-link-icon.is-narrow.column > img`
 - `.page-link.colums:nth-child(3) > a[href$="avdelinger/"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
 - `div[data-position-id="72273"] > img`
-- `div[data-position-id="72292"] > img`
 - `div[data-position-id="72291"] > img`
+- `div[data-position-id="72292"] > img`
 - `div[data-position-id="72031"] > img`
 - `img[src$="House.svg"]`
 - `.is-6.is-12-mobile.column:nth-child(2) > img[src$="Article.svg"][type="image/svg+xml"]`

@@ -1,22 +1,10 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2025-12-31T00:25:46.134Z
+**Timestamp:** 2026-01-01T00:29:36.012Z
 **URL:** [https://www.nille.no/#](https://www.nille.no/#)
-**Total Violations:** 7
+**Total Violations:** 5
 
 ## Violation Details
-
-### ARIA role should be appropriate for the element
-
-- **Impact:** minor
-- **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
-- **Tags:** cat.aria, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#declineButton`
 
 ### Buttons must have discernible text
 
@@ -49,35 +37,13 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
-- `.swiper-slide-next.swiper-slide > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .content--TOIX07K > a[aria-label=""]:nth-child(2) > h3`
-
-### Document should not have more than one banner landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the document has at most one banner landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#coiOverlay`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#coiOverlay`
+- `.swiper-slide:nth-child(3) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .content--TOIX07K > a[aria-label=""]:nth-child(2) > h3`
+- `a[title="Alf nisse H35cm"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Pidestall Noir H42cm"][aria-label=""]:nth-child(2) > h3`
 
 ### Links must have discernible text
 
@@ -89,8 +55,20 @@
 
 #### Affected Elements:
 
-- `a[href$="festartikler/"][title=""][aria-label=""]`
+- `a[href$="kontorartikler/"]`
 - `a[href$="utvalgte-varer/"][title=""][aria-label=""]`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
 
 ### All page content should be contained by landmarks
 

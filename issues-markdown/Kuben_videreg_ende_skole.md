@@ -1,10 +1,34 @@
 # WCAG Violations Report for Kuben videregående skole
 
-**Timestamp:** 2025-12-31T00:38:11.817Z
+**Timestamp:** 2026-01-01T00:42:36.476Z
 **URL:** [https://kuben.vgs.no/#](https://kuben.vgs.no/#)
-**Total Violations:** 7
+**Total Violations:** 9
 
 ## Violation Details
+
+### Elements must only use permitted ARIA attributes
+
+- **Impact:** serious
+- **Description:** Ensure ARIA attributes are not prohibited for an element's role
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.col-lg-4.col-md-6.col-12:nth-child(6) > .factbox.bg-color__white.block__container > .block__content > p:nth-child(1) > iframe, #movie_player`
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.col-lg-4.col-md-6.col-12:nth-child(6) > .factbox.bg-color__white.block__container > .block__content > p:nth-child(1) > iframe, .ytmVideoInfoChannelAvatar`
 
 ### Frames must have an accessible name
 

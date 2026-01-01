@@ -1,6 +1,6 @@
 # WCAG Violations Report for Registerenheten i Brønnøysund
 
-**Timestamp:** 2025-12-31T00:35:02.029Z
+**Timestamp:** 2026-01-01T00:38:52.536Z
 **URL:** [https://www.brreg.no/#](https://www.brreg.no/#)
 **Total Violations:** 1
 
