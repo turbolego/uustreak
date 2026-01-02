@@ -1,6 +1,6 @@
 # WCAG Violations Report for Plantasjen AS
 
-**Timestamp:** 2026-01-01T00:35:32.788Z
+**Timestamp:** 2026-01-02T00:33:36.427Z
 **URL:** [https://plantasjen.no/no](https://plantasjen.no/no)
 **Total Violations:** 2
 
@@ -28,4 +28,4 @@
 
 #### Affected Elements:
 
-- `.md\:px-2 > .text-white`
+- `.bg-secondary-terracotta.md\:px-2.py-1 > .text-white`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-01-01T00:44:51.623Z
+**Timestamp:** 2026-01-02T00:47:24.345Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
 **Total Violations:** 7
 
@@ -38,11 +38,10 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 14
+- **Count:** 13
 
 #### Affected Elements:
 
-- `.liveticker-red`
 - `#skattelisten, li:nth-child(1) > a[target="_top"]`
 - `#skattelisten, li:nth-child(2) > a[target="_top"]`
 - `#skattelisten, li:nth-child(3) > a[target="_top"]`
@@ -103,22 +102,18 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 82
+- **Count:** 78
 
 #### Affected Elements:
 
 - `h1`
 - `#announcement-banner`
-- `.liveticker-red`
-- `a[data-name="Trafikkstudio"]`
-- `a[data-name="Nyhetsstudio"]`
-- `.liveticker-item--snooze > .name`
-- `.top-60-40-block`
+- `.collage-x3.row:nth-child(1)`
 - `.collage-x3.row:nth-child(3)`
 - `#skattelisten, .text`
 - `#skattelisten, ol`
 - `#skattelisten, #b4-tax-municipality-search`
-- `#dr-edition-teaser-q63z5peok > div`
+- `#dr-edition-teaser-srj2bdq89 > div`
 - `._heading_1bm9r_641 > span`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
@@ -141,53 +136,53 @@
 - `._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
 - `.collage-x4.row:nth-child(11)`
-- `.collage-x3.row:nth-child(13)`
-- `.collage-x4.row:nth-child(17)`
-- `.collage-x3.row:nth-child(18)`
+- `.vertical-x2.row:nth-child(13)`
+- `.collage-x3.row:nth-child(17)`
+- `.collage-x4.row:nth-child(18)`
 - `.vertical-x2.row:nth-child(20)`
 - `.hjernetrim-front-widget`
-- `.collage-x3.row:nth-child(24)`
-- `.vertical-x2.row:nth-child(26)`
+- `.vertical-x3.row:nth-child(24)`
+- `.collage-x3.row:nth-child(26)`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
 - `.podcast-spons`
-- `.vertical-x3.row:nth-child(28)`
+- `.vertical-x2.row:nth-child(29)`
 - `.widget-football.regional-widget`
-- `.vertical-x2.row:nth-child(30)`
-- `.vertical-x4.row:nth-child(32)`
-- `.vertical-x3.row:nth-child(35)`
+- `.vertical-x3.row:nth-child(31)`
+- `.vertical-x2.row:nth-child(33)`
+- `.collage-x3.row:nth-child(36)`
 - `.widget-bolig.regional-widget`
-- `.collage-x3.row:nth-child(37)`
-- `.vertical-x3.row:nth-child(38)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(40)`
-- `.collage-x3.row:nth-child(41)`
-- `.vertical-x2.row:nth-child(43)`
-- `.vertical-x3.row:nth-child(44)`
+- `.vertical-x2.row:nth-child(38)`
+- `.vertical-x3.row:nth-child(39)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(41)`
+- `.vertical-x4`
+- `.collage-x3.row:nth-child(44)`
 - `.vertical-x2.row:nth-child(45)`
-- `.vertical-x1-ad.row:nth-child(46)`
-- `.collage-x3.row:nth-child(47)`
+- `.vertical-x3.row:nth-child(46)`
+- `.vertical-x1-ad.row:nth-child(47)`
 - `.vertical-x2.row:nth-child(48)`
-- `.vertical-x1-ad.row:nth-child(49)`
-- `.collage-x3.row:nth-child(50)`
-- `.vertical-x2.row:nth-child(51)`
-- `.vertical-x3.row:nth-child(52)`
-- `.vertical-x2.row:nth-child(53)`
-- `.vertical-x4.row:nth-child(54)`
-- `.vertical-x2.row:nth-child(55)`
-- `.collage-x3.row:nth-child(56)`
-- `.vertical-x2.row:nth-child(58)`
+- `.vertical-small-x2`
+- `.vertical-x1-ad.row:nth-child(50)`
+- `.collage-x3.row:nth-child(51)`
+- `.vertical-x2.row:nth-child(52)`
+- `.collage-x3.row:nth-child(53)`
+- `.vertical-x2.row:nth-child(54)`
+- `.vertical-x3.row:nth-child(55)`
+- `.vertical-x2.row:nth-child(56)`
+- `.collage-x3.row:nth-child(57)`
+- `.vertical-x3.row:nth-child(59)`
 - `#webcam-frontpage`
-- `.vertical-x3.row:nth-child(60)`
-- `.vertical-x2.row:nth-child(61)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(62)`
-- `.vertical-x3.row:nth-child(64)`
-- `.collage-x3.row:nth-child(65)`
-- `.vertical-x2.row:nth-child(66)`
-- `.vertical-x1-ad.row:nth-child(67)`
-- `.collage-x3.row:nth-child(68)`
-- `.row--full`
+- `.collage-x3.row:nth-child(61)`
+- `.vertical-x2.row:nth-child(62)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(63)`
+- `.vertical-x3.row:nth-child(65)`
+- `.collage-x3.row:nth-child(66)`
+- `.vertical-x2.row:nth-child(67)`
+- `.vertical-x1-ad.row:nth-child(68)`
+- `.collage-x3.row:nth-child(69)`
+- `.vertical-x2.row:nth-child(70)`
 - `.sch-datacontroller__text`
 
 ### Scrollable region must have keyboard access
