@@ -1,0 +1,111 @@
+{
+  "project": "Sola Strand Hotel",
+  "timestamp": "2026-01-03T00:39:29.195Z",
+  "url": "https://www.solastrandhotel.no/#",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-required-children",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-required-children?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div aria-controls=\"language-picker-menu\" aria-expanded=\"false\" aria-label=\"language picker\" class=\"language-picker language-picker-desktop\" id=\"multilingual-language-picker-desktop\" role=\"listbox\" tabindex=\"0\">",
+          "target": [
+            ".header-display-desktop > .header-actions.header-actions--right > .language-picker-desktop[aria-controls=\"language-picker-menu\"][aria-label=\"language picker\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA children role not present: group, option"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 style=\"text-align:center;white-space:pre-wrap;\">Sola Strand Hotel</h4>",
+          "target": [
+            "h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"header-nav-list\">",
+          "target": [
+            ".header-display-desktop > .header-title-nav-wrapper > .header-nav > .header-nav-wrapper > .header-nav-list"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"sqs-block-image-link content-fit\" href=\"/konsert-med-heine-totland\" data-sqsp-image-block-link=\"\" id=\"yui_3_17_2_1_1767400759866_66\">",
+          "target": [
+            "#yui_3_17_2_1_1767400759866_66"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}
