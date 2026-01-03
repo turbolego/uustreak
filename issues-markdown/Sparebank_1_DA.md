@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sparebank 1 DA
 
-**Timestamp:** 2026-01-02T00:46:11.902Z
+**Timestamp:** 2026-01-03T00:40:21.987Z
 **URL:** [https://www.sparebank1.no/nb/bank/privat.html](https://www.sparebank1.no/nb/bank/privat.html)
 **Total Violations:** 3
 

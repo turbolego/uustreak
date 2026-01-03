@@ -1,6 +1,6 @@
 # WCAG Violations Report for Asker og Bærum Budstikke AS
 
-**Timestamp:** 2026-01-02T00:29:57.471Z
+**Timestamp:** 2026-01-03T00:28:58.317Z
 **URL:** [https://www.budstikka.no/#](https://www.budstikka.no/#)
 **Total Violations:** 4
 

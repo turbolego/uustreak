@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Bergensklinikkene
 
-**Timestamp:** 2026-01-02T00:26:55.022Z
+**Timestamp:** 2026-01-03T00:25:41.274Z
 **URL:** [https://www.banggood.com/?p=QG132133330053201905&custlinkid=3773084](https://www.banggood.com/?p=QG132133330053201905&custlinkid=3773084)
 **Total Violations:** 7
 
@@ -26,10 +26,10 @@
 - `a[data-spm="0000000wd-6"]`
 - `a[data-spm="0000000wd-7"]`
 - `.go-text`
+- `div[data-pid="2035250"] > .mpi-old[data-spm="0000004Pp"]`
 - `div[data-pid="2024655"] > .mpi-old[data-spm="0000004Pp"]`
-- `div[data-pid="1756841"] > .mpi-old[data-spm="0000004Pp"]`
 - `div[data-pid="2037975"] > .mpi-old[data-spm="0000004Pp"]`
-- `div[data-pid="2030329"] > .mpi-old[data-spm="0000004Pp"]`
+- `div[data-pid="1981516"] > .mpi-old[data-spm="0000004Pp"]`
 - `div[data-pid="2042514"] > .mpi-old[data-spm="0000004Pp"]`
 - `div[data-pid="2041874"] > .mpi-old[data-spm="0000004Pp"]`
 
@@ -96,7 +96,7 @@
 #### Affected Elements:
 
 - `.top-link`
-- `a[data-spm="0000001Ng"][data-spm-data="{\"bid\":\"88829\",\"pid\":\"\"}"][data-expose2="1"]`
+- `a[data-spm="0000001Ng"][data-spm-data="{\"bid\":\"88819\",\"pid\":\"\"}"][data-expose2="1"]`
 - `a[data-spm="0000001GN-1"]`
 - `a[data-spm="0000001Hg"]`
 - `a[data-spm="0000001QG"]`

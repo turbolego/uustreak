@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-01-02T00:34:49.786Z
+**Timestamp:** 2026-01-03T00:33:04.649Z
 **URL:** [https://www.nordlys.no/#](https://www.nordlys.no/#)
 **Total Violations:** 3
 

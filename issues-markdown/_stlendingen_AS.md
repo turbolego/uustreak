@@ -1,6 +1,6 @@
 # WCAG Violations Report for Østlendingen AS
 
-**Timestamp:** 2026-01-02T00:42:28.492Z
+**Timestamp:** 2026-01-03T00:41:34.186Z
 **URL:** [https://www.ostlendingen.no/#](https://www.ostlendingen.no/#)
 **Total Violations:** 3
 
