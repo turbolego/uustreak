@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-01-03T00:28:25.627Z
+**Timestamp:** 2026-01-04T00:34:23.473Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -17,22 +17,22 @@
 #### Affected Elements:
 
 - `.gt.dr.ds > div > div`
-- `.gv.an[href$="januarsalg"]`
+- `a[href$="dagskupp"]`
 - `a[aria-label="Ute resirkulert vinterdress"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
 - `a[aria-label="Ute resirkulert vinterdress"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .ig.ih.ii`
 - `li:nth-child(2) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `li:nth-child(3) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Setesdal 2-lags ullongs"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
 - `a[aria-label="Setesdal 2-lags ullongs"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Setesdal 2-lags ulltrøye"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
 - `a[aria-label="Setesdal 2-lags ulltrøye"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .ig.ih.ii`
-- `li:nth-child(5) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
-- `li:nth-child(1) > .i3.i4[aria-label="Hemsedal 2-lags ullsett"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
-- `a[aria-label="Istind piggsko"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `li:nth-child(1) > .i3.i4[aria-label="Istind piggsko"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
 - `a[aria-label="Kvitfjell vattert selebukse"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
 - `a[aria-label="Trysil vinterjakke"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
-- `li:nth-child(5) > .i3.i4[aria-label="Hemsedal 2-lags ullsett"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `li:nth-child(4) > .i3.i4[aria-label="Istind piggsko"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .ig.ih.ii`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
@@ -91,7 +91,7 @@
 
 #### Affected Elements:
 
-- `.a6[href$="januarsalg"][data-scope-link="true"]`
+- `a[href$="januarsalg"]`
 - `a[href$="jakker-og-parkas"]`
 - `.bl.bj.bk:nth-child(4) > div > .j8.j9.ja > .jc.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
 - `.bl.bj.bk:nth-child(4) > div > .j8.j9.ja > .jc.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`

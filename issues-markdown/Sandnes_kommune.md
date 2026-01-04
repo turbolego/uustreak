@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sandnes kommune
 
-**Timestamp:** 2026-01-03T00:37:43.256Z
+**Timestamp:** 2026-01-04T00:43:44.673Z
 **URL:** [https://www.sandnes.kommune.no/#](https://www.sandnes.kommune.no/#)
 **Total Violations:** 7
 
@@ -64,16 +64,17 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 6
+- **Count:** 7
 
 #### Affected Elements:
 
 - `.border-bottom--1.line-height--27[href=""]`
-- `#portalframe1, .single-0 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-1 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-2 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-3 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-4 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(7) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 
 ### All page content should be contained by landmarks
 
