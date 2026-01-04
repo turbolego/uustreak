@@ -1,0 +1,38 @@
+{
+  "project": "Synsam Norge AS",
+  "timestamp": "2026-01-04T00:36:29.253Z",
+  "url": "https://www.synsam.no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h3 class=\"ContentCard_content-card-title__VI_av\">Brillestøtte til barn</h3>",
+          "target": [
+            ".relative.isolate.flex-col:nth-child(1) > .h-full > .is-sm.is-light.ContentCard_content-card__MhjHq > .ContentCard_content-card-body__cV7he > div:nth-child(1) > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 class=\"LinkCluster_link-cluster-heading__6u1_f\">Med fokus på øyehelse</h4>",
+          "target": [
+            ".LinkCluster_link-cluster-heading__6u1_f"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    }
+  ]
+}
