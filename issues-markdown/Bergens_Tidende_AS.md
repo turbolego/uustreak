@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-01-04T00:35:56.312Z
+**Timestamp:** 2026-01-05T00:38:21.240Z
 **URL:** [https://www.bt.no/#](https://www.bt.no/#)
 **Total Violations:** 5
 
@@ -45,7 +45,6 @@
 - `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > a > ._preview-title_1bm9r_721 > span`
 - `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > a > ._preview-title_1bm9r_721 > span`
 - `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > a > ._preview-title_1bm9r_721 > span`
-- `.article-section--btmeninger-debatt > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `.memo > .text-container > h3`
 - `.kryssord > .text-container > h3`
 - `.minikryss > .text-container > h3`
@@ -55,7 +54,8 @@
 - `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > a > ._preview-title_1bm9r_721 > span`
 - `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > a > ._preview-title_1bm9r_721 > span`
 - `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > a > ._preview-title_1bm9r_721 > span`
-- `.article-section--btmeninger-kommentar > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `.article-section--btmeninger-debatt > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="43dpmV"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `#Vågen`
 - `#Finse`
 - `#Danmarks\ plass`
@@ -119,12 +119,12 @@
 - `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
 - `.vertical-x2.row:nth-child(11)`
-- `.collage-x3.row:nth-child(14)`
-- `.collage-x4`
+- `.vertical-x3.row:nth-child(14)`
+- `.collage-x3.row:nth-child(16)`
 - `.hjernetrim-front-widget`
-- `.collage-x3.row:nth-child(19)`
-- `.vertical-x2.row:nth-child(22)`
-- `.vertical-x3.row:nth-child(23)`
+- `.vertical-x2.row:nth-child(19)`
+- `.collage-x3.row:nth-child(22)`
+- `.vertical-x2.row:nth-child(23)`
 - `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._heading_1bm9r_641 > span`
 - `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
@@ -146,19 +146,19 @@
 - `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > a > ._preview-title_1bm9r_721`
 - `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
-- `.vertical-x2.row:nth-child(29)`
+- `.vertical-x3.row:nth-child(29)`
+- `.vertical-x2.row:nth-child(30)`
 - `.vertical-x4`
-- `.vertical-x2.row:nth-child(32)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(33)`
-- `.vertical-x3.row:nth-child(34)`
-- `.vertical-x2.row:nth-child(36)`
+- `.vertical-x2.row:nth-child(34)`
+- `.collage-x3.row:nth-child(36)`
 - `.widget-football.regional-widget`
-- `.collage-x3.row:nth-child(38)`
+- `.vertical-x3.row:nth-child(38)`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
-- `.vertical-x2.row:nth-child(40)`
-- `.vertical-x3.row:nth-child(41)`
+- `.collage-x3.row:nth-child(40)`
+- `.row--full`
 - `.widget-webcam`
 - `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`

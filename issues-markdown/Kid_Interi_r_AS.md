@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-01-04T00:41:19.107Z
+**Timestamp:** 2026-01-05T01:18:37.155Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 5
 
@@ -40,10 +40,11 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `.i3.is-selected.fj:nth-child(1) > .c.c4.bz > .ao.ca[data-test-id="product-link"] > .e1`
 - `#ot-bnr-hdr-id-C0001`
 
 ### Alternative text of images should not be repeated as text

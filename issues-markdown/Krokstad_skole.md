@@ -1,6 +1,6 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2026-01-04T00:43:28.970Z
+**Timestamp:** 2026-01-05T02:01:51.266Z
 **URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#)
 **Total Violations:** 9
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f443570ff72d4c049"], ._55yn`
+- `iframe[name="f29f0c913d1e37139"], ._55yn`
 
 ### Certain ARIA roles must contain particular children
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f443570ff72d4c049"], div[role="feed"]`
+- `iframe[name="f29f0c913d1e37139"], div[role="feed"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -40,12 +40,12 @@
 
 #### Affected Elements:
 
-- `iframe[name="f443570ff72d4c049"], ._4v3m:nth-child(2) > ._eg_[role="button"] > ._eh3`
-- `iframe[name="f443570ff72d4c049"], ._4v3m._51mw > ._eg_[role="button"] > ._eh3`
-- `iframe[name="f443570ff72d4c049"], abbr[data-utime="1766442400"] > .timestampContent`
-- `iframe[name="f443570ff72d4c049"], ._1atc > .fcg`
-- `iframe[name="f443570ff72d4c049"], #u_1_k_CE > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Kommenter"]`
-- `iframe[name="f443570ff72d4c049"], #u_1_m_mQ > ._50sk._2pi4[title="Del"]`
+- `iframe[name="f29f0c913d1e37139"], ._4v3m:nth-child(2) > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f29f0c913d1e37139"], ._4v3m._51mw > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f29f0c913d1e37139"], abbr[data-utime="1766442400"] > .timestampContent`
+- `iframe[name="f29f0c913d1e37139"], ._1atc > .fcg`
+- `iframe[name="f29f0c913d1e37139"], #u_1_a_u\+ > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Kommenter"]`
+- `iframe[name="f29f0c913d1e37139"], #u_1_c_O\/ > ._50sk._2pi4[title="Del"]`
 
 ### Form elements should have a visible label
 
@@ -95,15 +95,15 @@
 
 #### Affected Elements:
 
-- `iframe[name="f443570ff72d4c049"], #u_0_1_6o`
-- `iframe[name="f443570ff72d4c049"], .lfloat._3-8_`
-- `iframe[name="f443570ff72d4c049"], #u_1_h_31 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f443570ff72d4c049"], .mts > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
-- `iframe[name="f443570ff72d4c049"], #u_1_1t_xd > ._302 > span > a`
-- `iframe[name="f443570ff72d4c049"], #u_1_1c_fA > ._302 > span > a`
-- `iframe[name="f443570ff72d4c049"], ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
-- `iframe[name="f443570ff72d4c049"], #u_1_5_US > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f443570ff72d4c049"], #u_1_8_\+H > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f29f0c913d1e37139"], #u_0_1_VB`
+- `iframe[name="f29f0c913d1e37139"], .lfloat._3-8_`
+- `iframe[name="f29f0c913d1e37139"], #u_1_5_E4 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f29f0c913d1e37139"], .mts > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
+- `iframe[name="f29f0c913d1e37139"], #u_1_1i_sc > ._302 > span > a`
+- `iframe[name="f29f0c913d1e37139"], #u_1_1u_Mv > ._302 > span > a`
+- `iframe[name="f29f0c913d1e37139"], ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
+- `iframe[name="f29f0c913d1e37139"], #u_1_6_Zt > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f29f0c913d1e37139"], #u_1_7_zt > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
 
 ### Interactive controls must not be nested
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2026-01-04T00:28:49.624Z
+**Timestamp:** 2026-01-05T00:28:56.773Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
 **Total Violations:** 8
 
@@ -41,7 +41,7 @@
 #### Affected Elements:
 
 - `p > strong`
-- `strong > .underline`
+- `.underline`
 
 ### Document should not have more than one banner landmark
 
