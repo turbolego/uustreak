@@ -279,37 +279,20 @@ jobs:
           npm config list
 
       - name: Debug system resources
+        continue-on-error: true
+        timeout-minutes: 2
         run: |
           echo "=== System Resources Before npm install ==="
           echo "Memory info:"
-          # Cross-platform memory check (Linux: free, macOS: vm_stat)
-          if command -v free >/dev/null 2>&1; then
-            free -h
-          else
-            # macOS alternative
-            vm_stat | perl -ne '/page size of (\d+)/ and $size=$1; /Pages\s+(\w+):\s+(\d+)/ and printf("%-16s % 16.2f Mi\n", "$1:", $2 * $size / 1048576);'
-          fi
+          free -h 2>/dev/null || echo "Memory info not available"
+          echo ""
           echo "CPU info:"
-          # Cross-platform CPU core count
-          CORES=$(nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo "unknown")
+          CORES=$(nproc 2>/dev/null || echo "unknown")
           echo "CPU cores: $CORES"
-          echo "CPU load average:"
-          uptime
-          echo "Disk space:"
-          df -h
-          echo "Temp directory space:"
-          df -h /tmp
-          echo "Available inodes:"
-          # Cross-platform inode check (Linux: df -i, macOS: df -i works but format differs)
-          if df -i / >/dev/null 2>&1; then
-            df -i /
-          else
-            echo "Inode information not available on this system"
-          fi
+          uptime 2>/dev/null || echo "Load average not available"
+          echo ""
           echo "Running processes:"
-          ps aux | grep -E '(npm|node)' || echo "No npm/node processes running"
-          echo "Network connectivity test:"
-          ping -c 2 registry.npmjs.org || echo "npm registry not reachable"
+          ps aux | grep -E '(npm|node)' | grep -v grep || echo "No npm/node processes running"
 
       - name: Install dependencies
         env:
