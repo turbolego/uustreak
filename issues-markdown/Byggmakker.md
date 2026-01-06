@@ -1,6 +1,6 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2026-01-05T00:40:49.696Z
+**Timestamp:** 2026-01-06T15:30:40.106Z
 **URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
 **Total Violations:** 5
 
@@ -16,38 +16,22 @@
 
 #### Affected Elements:
 
-- `.product-card.ab_omni_kampaign[data-product_id="3394661001047"]`
-- `a[data-product_id="3394661001047"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="3394661001047"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="3394661001047"]`
-- `.product-card.ab_omni_kampaign[data-product_id="3394661522269"]`
-- `a[data-product_id="3394661522269"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="3394661522269"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="3394661522269"]`
-- `.product-card.ab_omni_kampaign[data-product_id="3394661500465"]`
-- `a[data-product_id="3394661500465"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="3394661500465"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="3394661500465"]`
-- `.product-card.ab_omni_kampaign[data-product_id="3394661006868"]`
-- `a[data-product_id="3394661006868"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="3394661006868"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="3394661006868"]`
-- `.product-card.ab_omni_kampaign[data-product_id="5709386832421"]`
-- `a[data-product_id="5709386832421"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="5709386832421"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="5709386832421"]`
-- `.product-card.ab_omni_kampaign[data-product_id="5709386832575"]`
-- `a[data-product_id="5709386832575"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="5709386832575"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="5709386832575"]`
-- `.product-card.ab_omni_kampaign[data-product_id="5709386832216"]`
-- `a[data-product_id="5709386832216"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="5709386832216"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="5709386832216"]`
-- `.product-card.ab_omni_kampaign[data-product_id="5709386833305"]`
-- `a[data-product_id="5709386833305"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="5709386833305"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="5709386833305"]`
+- `.product-card.ab_omni_kampaign[data-product_id="6411501437204"]`
+- `a[data-product_id="6411501437204"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="6411501437204"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="6411501437204"]`
+- `.product-card.ab_omni_kampaign[data-product_id="6411501410269"]`
+- `a[data-product_id="6411501410269"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="6411501410269"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="6411501410269"]`
+- `.product-card.ab_omni_kampaign[data-product_id="6411501430281"]`
+- `a[data-product_id="6411501430281"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="6411501430281"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="6411501430281"]`
+- `.product-card.ab_omni_kampaign[data-product_id="4892210223302"]`
+- `a[data-product_id="4892210223302"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="4892210223302"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="4892210223302"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7311662278472"]`
 - `a[data-product_id="7311662278472"][role="group"][data-price-history="0"]:nth-child(2)`
 - `a[data-product_id="7311662278472"][role="group"][data-price-history="0"]:nth-child(5)`
@@ -64,6 +48,22 @@
 - `a[data-product_id="7311669718513"][role="group"][data-price-history="0"]:nth-child(2)`
 - `a[data-product_id="7311669718513"][role="group"][data-price-history="0"]:nth-child(5)`
 - `.product-card__product-price.prrc[data-product_id="7311669718513"]`
+- `.product-card.ab_omni_kampaign[data-product_id="3394661001047"]`
+- `a[data-product_id="3394661001047"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="3394661001047"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="3394661001047"]`
+- `.product-card.ab_omni_kampaign[data-product_id="3394661522269"]`
+- `a[data-product_id="3394661522269"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="3394661522269"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="3394661522269"]`
+- `.product-card.ab_omni_kampaign[data-product_id="3394661500465"]`
+- `a[data-product_id="3394661500465"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="3394661500465"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="3394661500465"]`
+- `.product-card.ab_omni_kampaign[data-product_id="3394661006868"]`
+- `a[data-product_id="3394661006868"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="3394661006868"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="3394661006868"]`
 - `#arbeidstoy_som_holder_deg_varm > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
 - `#arbeidstoy_som_holder_deg_varm > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > a[data-product_id=""][role="group"][data-price-history="0"]:nth-child(2)`
 - `#arbeidstoy_som_holder_deg_varm > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > a[data-product_id=""][role="group"][data-price-history="0"]:nth-child(5)`
@@ -155,11 +155,11 @@
 #### Affected Elements:
 
 - `.responsive-hero__content > h3`
-- `#\36 L0V8e5iF05SuPKt0kOrPq-title`
-- `#\34 NFhlgEibxwQw7TMY4OKLp-title`
-- `.column-layout:nth-child(12) > .column-layout__container > .column-layout__title`
+- `.column-layout:nth-child(6) > .column-layout__container > .column-layout__title`
 - `#\34 XAMjmtbFJouRy2Y2HAtPH-title`
 - `#\35 jEmf9y6skVo2VFSeLq9gG-title`
+- `#\36 L0V8e5iF05SuPKt0kOrPq-title`
+- `#\34 NFhlgEibxwQw7TMY4OKLp-title`
 
 ### Links must have discernible text
 
@@ -171,30 +171,18 @@
 
 #### Affected Elements:
 
-- `a[data-product_id="3394661001047"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="3394661001047"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="3394661001047"]`
-- `a[data-product_id="3394661522269"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="3394661522269"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="3394661522269"]`
-- `a[data-product_id="3394661500465"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="3394661500465"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="3394661500465"]`
-- `a[data-product_id="3394661006868"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="3394661006868"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="3394661006868"]`
-- `a[data-product_id="5709386832421"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="5709386832421"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="5709386832421"]`
-- `a[data-product_id="5709386832575"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="5709386832575"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="5709386832575"]`
-- `a[data-product_id="5709386832216"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="5709386832216"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="5709386832216"]`
-- `a[data-product_id="5709386833305"][role="group"][data-price-history="0"]:nth-child(2)`
-- `a[data-product_id="5709386833305"][role="group"][data-price-history="0"]:nth-child(5)`
-- `.product-card__product-price.prrc[data-product_id="5709386833305"]`
+- `a[data-product_id="6411501437204"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="6411501437204"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="6411501437204"]`
+- `a[data-product_id="6411501410269"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="6411501410269"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="6411501410269"]`
+- `a[data-product_id="6411501430281"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="6411501430281"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="6411501430281"]`
+- `a[data-product_id="4892210223302"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="4892210223302"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="4892210223302"]`
 - `a[data-product_id="7311662278472"][role="group"][data-price-history="0"]:nth-child(2)`
 - `a[data-product_id="7311662278472"][role="group"][data-price-history="0"]:nth-child(5)`
 - `.product-card__product-price.prrc[data-product_id="7311662278472"]`
@@ -207,6 +195,18 @@
 - `a[data-product_id="7311669718513"][role="group"][data-price-history="0"]:nth-child(2)`
 - `a[data-product_id="7311669718513"][role="group"][data-price-history="0"]:nth-child(5)`
 - `.product-card__product-price.prrc[data-product_id="7311669718513"]`
+- `a[data-product_id="3394661001047"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="3394661001047"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="3394661001047"]`
+- `a[data-product_id="3394661522269"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="3394661522269"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="3394661522269"]`
+- `a[data-product_id="3394661500465"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="3394661500465"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="3394661500465"]`
+- `a[data-product_id="3394661006868"][role="group"][data-price-history="0"]:nth-child(2)`
+- `a[data-product_id="3394661006868"][role="group"][data-price-history="0"]:nth-child(5)`
+- `.product-card__product-price.prrc[data-product_id="3394661006868"]`
 - `#arbeidstoy_som_holder_deg_varm > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > a[data-product_id=""][role="group"][data-price-history="0"]:nth-child(2)`
 - `#arbeidstoy_som_holder_deg_varm > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > a[data-product_id=""][role="group"][data-price-history="0"]:nth-child(5)`
 - `#arbeidstoy_som_holder_deg_varm > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-product_id=""]`

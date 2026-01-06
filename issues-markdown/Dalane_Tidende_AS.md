@@ -1,10 +1,22 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2026-01-05T00:43:50.379Z
+**Timestamp:** 2026-01-06T15:41:29.167Z
 **URL:** [https://www.dalane-tidende.no/#](https://www.dalane-tidende.no/#)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.brick-c-jCKIaL-gGRfHz-cv.premium[data-title-words="6"] > .brick-c-fzBiFz.teaser_body[itemprop="url"] > .body > .brick-c-bVcFwu.title_container.has-image > .pretitle.brick-c-itmAgK[itemprop="alternative_headline"]`
 
 ### Frames must have an accessible name
 

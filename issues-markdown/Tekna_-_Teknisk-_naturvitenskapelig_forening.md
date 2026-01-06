@@ -1,8 +1,8 @@
 # WCAG Violations Report for Tekna - Teknisk- naturvitenskapelig forening
 
-**Timestamp:** 2026-01-05T00:35:04.123Z
+**Timestamp:** 2026-01-06T15:20:00.057Z
 **URL:** [https://www.tekna.no/#](https://www.tekna.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `#declineButton`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.green-promotion-block.promoblock > .promotion-body > .promotion-body__text > h3`
 
 ### Images must have alternative text
 
@@ -61,22 +73,23 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 15
+- **Count:** 16
 
 #### Affected Elements:
 
 - `div:nth-child(14)`
 - `.heroblock`
 - `.arrow-link-list-underline`
-- `.block:nth-child(3)`
+- `.d-sm-flex`
+- `.block:nth-child(4)`
 - `.yellow-promotion-block > .promotion-body`
-- `.col-lg-8`
+- `.contentareablock.col-lg-12.col-md-12:nth-child(5) > .content-area-block.content-area-block--no-header > .flex-gap-small.row > .col-lg-8.displaymode-two-thirds.promotionblock`
 - `.text-image-block__header.d-lg-block.d-none`
 - `.text-image-block__text`
 - `.item__image-0`
 - `.block-spacing-small.col-12`
-- `img[alt="Kvinne smiler med laptop"]`
-- `.t-article-card:nth-child(1) > .t-article-card__content`
+- `a[href$="ny-generalsekretar/"] > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
+- `a[href$="ny-generalsekretar/"] > .t-article-card__content`
 - `.t-article-card:nth-child(2) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
 - `.t-article-card:nth-child(2) > .t-article-card__content`
 - `.rss-feed`

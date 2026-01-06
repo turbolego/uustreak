@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-01-05T00:32:41.308Z
+**Timestamp:** 2026-01-06T15:11:27.126Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -28,11 +28,11 @@
 - `a[aria-label="Setesdal 2-lags ulltrøye"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .ig.ih.ii`
 - `li:nth-child(5) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
-- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .ig.ih.ii`
-- `a[aria-label="Kvitfjell vattert selebukse"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `li:nth-child(1) > .i3.i4[aria-label="Istind piggsko"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `li:nth-child(2) > .i3.i4[aria-label="Istind piggsko"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
 - `a[aria-label="Hemsedal 2-lags ullsett"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
-- `li:nth-child(4) > .i3.i4[aria-label="Istind piggsko"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
-- `li:nth-child(5) > .i3.i4[aria-label="Istind piggsko"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `a[aria-label="Trysil vattert selebukse"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
@@ -74,12 +74,12 @@
 - `div:nth-child(3) > .aq.an.am > .au.as[width="11"]`
 - `div:nth-child(4) > .aq.an.am > .au.as[width="11"]`
 - `.hj > .ho.hn.au`
-- `a[href$="jakker-og-parkas"] > .jd.hk.hl > .ho.a2.hn`
+- `a[href$="prisras-sko"] > .jd.hk.hl > .ho.a2.hn`
 - `.bl.bj.bk:nth-child(4) > div > .j8.j9.ja > .jc.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
 - `.bl.bj.bk:nth-child(4) > div > .j8.j9.ja > .jc.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
+- `a[href$="jakker-og-parkas"] > .jd.hk.hl > .ho.a2.hn`
 - `.a6[href$="turutstyr"][data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
-- `.bl.bj.bk:nth-child(6) > div > .j8.j9.ja > .jc.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
-- `a[href$="prisras-sko"] > .jd.hk.hl > .ho.a2.hn`
+- `.bl.bj.bk:nth-child(6) > div > .j8.j9.ja > .jc.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
 
 ### Links must have discernible text
 
@@ -92,12 +92,12 @@
 #### Affected Elements:
 
 - `.a6[href$="januarsalg"][data-scope-link="true"]`
-- `a[href$="jakker-og-parkas"]`
+- `a[href$="prisras-sko"]`
 - `.bl.bj.bk:nth-child(4) > div > .j8.j9.ja > .jc.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
 - `.bl.bj.bk:nth-child(4) > div > .j8.j9.ja > .jc.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
+- `a[href$="jakker-og-parkas"]`
 - `.hh.bv.ay > .a6[href$="turutstyr"][data-scope-link="true"]`
-- `.bl.bj.bk:nth-child(6) > div > .j8.j9.ja > .jc.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
-- `a[href$="prisras-sko"]`
+- `.bl.bj.bk:nth-child(6) > div > .j8.j9.ja > .jc.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
 
 ### Page should contain a level-one heading
 

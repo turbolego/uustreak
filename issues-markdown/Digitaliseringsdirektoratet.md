@@ -1,7 +1,7 @@
-# WCAG Violations Report for Statens lånekasse for utdanning
+# WCAG Violations Report for Digitaliseringsdirektoratet
 
-**Timestamp:** 2026-01-06T16:25:22.126Z
-**URL:** [https://lanekassen.no/#samtykke-banner](https://lanekassen.no/#samtykke-banner)
+**Timestamp:** 2026-01-06T15:47:23.262Z
+**URL:** [https://www.digdir.no/#](https://www.digdir.no/#)
 **Total Violations:** 1
 
 ## Violation Details
@@ -12,9 +12,8 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.MuiCardContent-root > div:nth-child(1)`
-- `.MuiCardContent-root > div:nth-child(3)`
+- `.container[lang="nb"]`

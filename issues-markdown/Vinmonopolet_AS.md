@@ -1,7 +1,7 @@
-# WCAG Violations Report for Sør-Varanger kommune
+# WCAG Violations Report for Vinmonopolet AS
 
-**Timestamp:** 2026-01-06T15:18:35.350Z
-**URL:** [https://sor-varanger.kommune.no/](https://sor-varanger.kommune.no/)
+**Timestamp:** 2026-01-06T15:45:58.390Z
+**URL:** [https://www.vinmonopolet.no/#](https://www.vinmonopolet.no/#)
 **Total Violations:** 1
 
 ## Violation Details
@@ -16,4 +16,4 @@
 
 #### Affected Elements:
 
-- `img[alt="Sør-Varanger kommune"]`
+- `img[alt="Kundeservice"]`

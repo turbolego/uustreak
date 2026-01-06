@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Flyktninghjelpen
 
-**Timestamp:** 2026-01-05T00:30:29.707Z
+**Timestamp:** 2026-01-06T15:05:25.695Z
 **URL:** [https://www.nrc.no/#](https://www.nrc.no/#)
 **Total Violations:** 4
 
@@ -12,15 +12,14 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 8
+- **Count:** 7
 
 #### Affected Elements:
 
 - `#CybotCookiebotDialogNavDeclaration`
 - `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
 - `.three-layer-header__donation-button`
-- `.hide--les-and-tablet-small > .poster > .poster__content > .poster__actions > .poster__actions-wrapper > .donate.actionbutton:nth-child(1)`
-- `.hide--les-and-tablet-small > .poster > .poster__content > .poster__actions > .poster__actions-wrapper > .donate.actionbutton[href$="give-a-home"]`
+- `.donate`
 - `.article-list-view-model__content--no-image > .article-list-view-model__tags > time`
 - `.block:nth-child(2) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content > .article-list-view-model__tags > time`
 - `.block:nth-child(3) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content > .article-list-view-model__tags > time`
@@ -35,7 +34,7 @@
 
 #### Affected Elements:
 
-- `.hide--les-and-tablet-small > .poster > .poster__heading-container > .poster__heading-title`
+- `.poster__heading-title`
 
 ### Links must have discernible text
 

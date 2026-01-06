@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-01-05T01:18:37.155Z
+**Timestamp:** 2026-01-06T15:37:26.641Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
-**Total Violations:** 5
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -47,6 +47,18 @@
 - `.i3.is-selected.fj:nth-child(1) > .c.c4.bz > .ao.ca[data-test-id="product-link"] > .e1`
 - `#ot-bnr-hdr-id-C0001`
 
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `a[href$="julesengetoy"][data-scope-link="true"]:nth-child(1) > .gc.fc.fb > .fe.ff.el`
+
 ### Alternative text of images should not be repeated as text
 
 - **Impact:** minor
@@ -71,6 +83,19 @@
 - `img[alt="Hyller"]`
 - `img[alt="Småbord og sofabord"]`
 - `img[alt="Skap og skjenker"]`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.bl.dd.c4 > a[href$="julesengetoy"][data-scope-link="true"]:nth-child(1)`
+- `.ca.s[href$="julesengetoy"]`
 
 ### All page content should be contained by landmarks
 

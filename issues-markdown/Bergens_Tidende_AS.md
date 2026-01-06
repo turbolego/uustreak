@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-01-05T00:38:21.240Z
+**Timestamp:** 2026-01-06T15:24:04.760Z
 **URL:** [https://www.bt.no/#](https://www.bt.no/#)
 **Total Violations:** 5
 
@@ -40,22 +40,22 @@
 
 #### Affected Elements:
 
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721 > span`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(2) > a > ._preview-title_1bm9r_721 > span`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > a > ._preview-title_1bm9r_721 > span`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > a > ._preview-title_1bm9r_721 > span`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > a > ._preview-title_1bm9r_721 > span`
+- `.liveticker-red`
+- `._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721 > span`
+- `._preview_1bm9r_661:nth-child(2) > a > ._preview-title_1bm9r_721 > span`
+- `._preview_1bm9r_661:nth-child(3) > a > ._preview-title_1bm9r_721 > span`
+- `._preview_1bm9r_661:nth-child(4) > a > ._preview-title_1bm9r_721 > span`
+- `._preview_1bm9r_661:nth-child(5) > a > ._preview-title_1bm9r_721 > span`
+- `.article-tip-us > p`
+- `.tip-us-underline`
 - `.memo > .text-container > h3`
 - `.kryssord > .text-container > h3`
 - `.minikryss > .text-container > h3`
 - `.ordjakten > .text-container > h3`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721 > span`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(2) > a > ._preview-title_1bm9r_721 > span`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > a > ._preview-title_1bm9r_721 > span`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > a > ._preview-title_1bm9r_721 > span`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > a > ._preview-title_1bm9r_721 > span`
+- `article[data-pulse-entity-id="m06AJq"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `.article--live > .article__teaser-container > .article__link.url > .article__text-container > .article__section`
 - `.article-section--btmeninger-debatt > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `article[data-pulse-entity-id="43dpmV"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `.opinion-banner-desc`
 - `#Vågen`
 - `#Finse`
 - `#Danmarks\ plass`
@@ -90,75 +90,73 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 68
+- **Count:** 66
 
 #### Affected Elements:
 
 - `h1`
-- `.collage-x3.row:nth-child(1)`
+- `.liveticker-red`
+- `a[data-name="Trafikken"]`
+- `.liveticker-item--snooze > .name`
+- `.top-60-40-block`
 - `.collage-x3.row:nth-child(4)`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._heading_1bm9r_641 > span`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(2) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(2) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(6) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(6) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(7) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(7) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(8) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(8) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-8628e7b9-a142-4625-8e06-001471bf002a-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
+- `#dr-edition-teaser-q63z5peok > div`
+- `._heading_1bm9r_641 > span`
+- `._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(2) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(2) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(3) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(3) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(4) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(4) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(5) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(5) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(6) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(6) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(7) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(7) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(8) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(8) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(9) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(9) > a > ._preview-title_1bm9r_721`
+- `._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
+- `._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
 - `.vertical-x2.row:nth-child(11)`
 - `.vertical-x3.row:nth-child(14)`
-- `.collage-x3.row:nth-child(16)`
+- `.vertical-x2.row:nth-child(16)`
 - `.hjernetrim-front-widget`
-- `.vertical-x2.row:nth-child(19)`
-- `.collage-x3.row:nth-child(22)`
-- `.vertical-x2.row:nth-child(23)`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._heading_1bm9r_641 > span`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(2) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(2) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(3) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(4) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(5) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(6) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(6) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(7) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(7) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(8) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(8) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > a > ._preview-title_1bm9r_721`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
-- `#react-root-reels-c09a171b-121d-46df-b4bc-decbf74e10fb-1 > div[data-pulse-entity-id="bt-reels"][data-pulse-entity-name="bt reels sliders"][data-pulse-entity-type="Reel"] > ._container_1bm9r_371._bt_gcann_1 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
-- `.vertical-x3.row:nth-child(29)`
-- `.vertical-x2.row:nth-child(30)`
-- `.vertical-x4`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(33)`
-- `.vertical-x2.row:nth-child(34)`
-- `.collage-x3.row:nth-child(36)`
+- `.collage-x3.row:nth-child(19)`
+- `.vertical-x2.row:nth-child(22)`
+- `.collage-x3.row:nth-child(23)`
+- `.vertical-x2.row:nth-child(25)`
+- `.vertical-x3.row:nth-child(26)`
+- `.collage-x3.row:nth-child(28)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(29)`
+- `.vertical-x3.row:nth-child(30)`
+- `.vertical-x2.row:nth-child(32)`
 - `.widget-football.regional-widget`
-- `.vertical-x3.row:nth-child(38)`
+- `.vertical-x4`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
-- `.collage-x3.row:nth-child(40)`
-- `.row--full`
+- `.vertical-x2.row:nth-child(36)`
+- `.vertical-x3.row:nth-child(37)`
+- `.vertical-x2.row:nth-child(38)`
+- `.vertical-x1-ad.row:nth-child(39)`
+- `.collage-x3.row:nth-child(42)`
+- `.vertical-x2.row:nth-child(44)`
+- `.opinion-banner-title`
+- `.opinion-banner-desc`
+- `.vertical-x3.row:nth-child(46)`
 - `.widget-webcam`
-- `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`
+- `.collage-x3.row:nth-child(48)`
+- `.vertical-x1-ad.row:nth-child(49)`
+- `.vertical-x2.row:nth-child(50)`
+- `.collage-x3.row:nth-child(51)`
+- `.vertical-x1-ad.row:nth-child(52)`
+- `.vertical-x2.row:nth-child(53)`
+- `.collage-x3.row:nth-child(54)`
+- `.vertical-x1-ad.row:nth-child(55)`
+- `.sch-datacontroller__text`

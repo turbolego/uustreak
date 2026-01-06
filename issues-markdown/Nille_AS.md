@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2026-01-05T00:27:45.504Z
+**Timestamp:** 2026-01-06T15:03:52.272Z
 **URL:** [https://www.nille.no/#](https://www.nille.no/#)
 **Total Violations:** 7
 
@@ -53,9 +53,9 @@
 
 #### Affected Elements:
 
-- `.swiper-slide:nth-child(3) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .content--TOIX07K > a[aria-label=""]:nth-child(2) > h3`
-- `a[title="Alf nisse H35cm"][aria-label=""]:nth-child(2) > h3`
-- `a[title="Pidestall Noir H42cm"][aria-label=""]:nth-child(2) > h3`
+- `.swiper-slide:nth-child(3) > .itemCard--fAqEIsz.fade-appear-done.fade-enter-done > .content--TOIX07K > a[aria-label=""]:nth-child(2) > .h5:nth-child(2)`
+- `a[title="Alf nisse H35cm"][aria-label=""]:nth-child(2) > .h5:nth-child(2)`
+- `a[title="Pidestall Noir H42cm"][aria-label=""]:nth-child(2) > .h5:nth-child(2)`
 
 ### Document should not have more than one banner landmark
 
@@ -91,7 +91,7 @@
 
 #### Affected Elements:
 
-- `a[href$="kontorartikler/"]`
+- `a[href$="utvalgte-julevarer/"][title=""][aria-label=""]`
 - `a[href$="utvalgte-varer/"][title=""][aria-label=""]`
 
 ### All page content should be contained by landmarks

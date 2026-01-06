@@ -1,8 +1,8 @@
 # WCAG Violations Report for Tolletaten
 
-**Timestamp:** 2026-01-05T00:36:53.460Z
+**Timestamp:** 2026-01-06T15:25:32.138Z
 **URL:** [https://www.toll.no/#](https://www.toll.no/#)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
 
@@ -17,15 +17,3 @@
 #### Affected Elements:
 
 - `.rounded-full.flex-col.flex`
-
-### <svg> elements with an img role must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/svg-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.justify-center.gap-2.items-center > svg[role="img"][viewBox="0 0 24 24"][focusable="false"]`

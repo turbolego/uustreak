@@ -1,8 +1,8 @@
 # WCAG Violations Report for Skatteetaten
 
-**Timestamp:** 2026-01-05T00:40:49.042Z
+**Timestamp:** 2026-01-06T16:20:17.986Z
 **URL:** [https://www.skatteetaten.no/person/](https://www.skatteetaten.no/person/)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
 
@@ -17,15 +17,3 @@
 #### Affected Elements:
 
 - `.scroll-to-top-container`
-
-### lang attribute must have a valid value
-
-- **Impact:** serious
-- **Description:** Ensure lang attributes have valid values
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/valid-lang?application=playwright
-- **Tags:** cat.language, wcag2aa, wcag312, TTv5, TT11.b, EN-301-549, EN-9.3.1.2, ACT, RGAAv4, RGAA-8.7.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `header`

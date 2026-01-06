@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-01-05T00:39:39.382Z
+**Timestamp:** 2026-01-06T15:27:44.761Z
 **URL:** [https://www.blv.no/#](https://www.blv.no/#)
 **Total Violations:** 5
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `article[data-title-words="2"] > .brick-c-fzBiFz.teaser_body[itemprop="url"] > .body > .brick-c-bVcFwu.title_container.has-image > .brick-c-gPjxah-eCfDUW-teaserType-commercial.brick-c-gPjxah[itemprop="teaser_title"]`
+- `.brick-c-gPjxah-eCfDUW-teaserType-commercial`
 
 ### Frames must have an accessible name
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="20"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `.brick-c-bXFxCH > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 
