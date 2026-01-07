@@ -1,6 +1,6 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2026-01-06T16:25:54.845Z
+**Timestamp:** 2026-01-07T01:19:37.023Z
 **URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#)
 **Total Violations:** 9
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="fd5e6942916df2331"], ._55yn`
+- `iframe[name="f39d97c993ddf5ea8"], ._55yn`
 
 ### Certain ARIA roles must contain particular children
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="fd5e6942916df2331"], div[role="feed"]`
+- `iframe[name="f39d97c993ddf5ea8"], div[role="feed"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -40,12 +40,12 @@
 
 #### Affected Elements:
 
-- `iframe[name="fd5e6942916df2331"], ._4v3m:nth-child(2) > ._eg_[role="button"] > ._eh3`
-- `iframe[name="fd5e6942916df2331"], ._4v3m._51mw > ._eg_[role="button"] > ._eh3`
-- `iframe[name="fd5e6942916df2331"], abbr[data-utime="1766442400"] > .timestampContent`
-- `iframe[name="fd5e6942916df2331"], ._1atc > .fcg`
-- `iframe[name="fd5e6942916df2331"], #u_1_j_xh > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Kommenter"]`
-- `iframe[name="fd5e6942916df2331"], #u_1_l_PJ > ._50sk._2pi4[title="Del"]`
+- `iframe[name="f39d97c993ddf5ea8"], ._4v3m:nth-child(2) > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f39d97c993ddf5ea8"], ._4v3m._51mw > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f39d97c993ddf5ea8"], abbr[data-utime="1766442400"] > .timestampContent`
+- `iframe[name="f39d97c993ddf5ea8"], ._1atc > .fcg`
+- `iframe[name="f39d97c993ddf5ea8"], #u_1_g_Jt > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Kommenter"]`
+- `iframe[name="f39d97c993ddf5ea8"], #u_1_i_b0 > ._50sk._2pi4[title="Del"]`
 
 ### Form elements should have a visible label
 
@@ -95,15 +95,15 @@
 
 #### Affected Elements:
 
-- `iframe[name="fd5e6942916df2331"], #u_0_1_If`
-- `iframe[name="fd5e6942916df2331"], .lfloat._3-8_`
-- `iframe[name="fd5e6942916df2331"], #u_1_h_Pb > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="fd5e6942916df2331"], .mts > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
-- `iframe[name="fd5e6942916df2331"], #u_1_1o_2\/ > ._302 > span > a`
-- `iframe[name="fd5e6942916df2331"], #u_1_1l_EC > ._302 > span > a`
-- `iframe[name="fd5e6942916df2331"], ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
-- `iframe[name="fd5e6942916df2331"], #u_1_6_r6 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="fd5e6942916df2331"], #u_1_5_2\+ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f39d97c993ddf5ea8"], #u_0_1_FZ`
+- `iframe[name="f39d97c993ddf5ea8"], .lfloat._3-8_`
+- `iframe[name="f39d97c993ddf5ea8"], #u_1_e_bm > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f39d97c993ddf5ea8"], .mts > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
+- `iframe[name="f39d97c993ddf5ea8"], #u_1_1o_bt > ._302 > span > a`
+- `iframe[name="f39d97c993ddf5ea8"], #u_1_1l_Hz > ._302 > span > a`
+- `iframe[name="f39d97c993ddf5ea8"], ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
+- `iframe[name="f39d97c993ddf5ea8"], #u_1_5_VQ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f39d97c993ddf5ea8"], #u_1_a_51 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
 
 ### Interactive controls must not be nested
 

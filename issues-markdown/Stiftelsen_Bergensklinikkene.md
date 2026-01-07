@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Bergensklinikkene
 
-**Timestamp:** 2026-01-06T15:03:17.763Z
+**Timestamp:** 2026-01-07T00:29:59.138Z
 **URL:** [https://www.banggood.com/?p=QG132133330053201905&custlinkid=3773084](https://www.banggood.com/?p=QG132133330053201905&custlinkid=3773084)
 **Total Violations:** 7
 
@@ -122,7 +122,7 @@
 #### Affected Elements:
 
 - `.top-link`
-- `a[data-spm="0000001Ng"][data-spm-data="{\"bid\":\"88897\",\"pid\":\"\"}"][collected="1"]`
+- `.exclick[data-spm="0000001Ng"][data-spm-data="{\"bid\":\"88897\",\"pid\":\"\"}"]`
 - `a[data-spm="0000001GN-1"]`
 - `a[data-spm-data="{\"bid\":\"1661583977\",\"pid\":\"\"}"][data-spm-masonry="0"][data-spm="0000001GY"]`
 - `a[data-spm-data="{\"bid\":\"1741228075\",\"pid\":\"\"}"]`

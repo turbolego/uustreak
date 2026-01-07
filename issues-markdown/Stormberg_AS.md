@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-01-06T15:11:27.126Z
+**Timestamp:** 2026-01-07T00:37:58.941Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -18,21 +18,21 @@
 
 - `.gt.dr.ds > div > div`
 - `.gv.an[href$="januarsalg"]`
-- `a[aria-label="Ute resirkulert vinterdress"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `a[aria-label="Ute resirkulert vinterdress"] > .i8.bc.bd > .if.id.y > .ik.ig.ih`
 - `a[aria-label="Ute resirkulert vinterdress"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .ik.ig.ih`
 - `li:nth-child(2) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
-- `a[aria-label="Setesdal 2-lags ullongs"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `a[aria-label="Setesdal 2-lags ullongs"] > .i8.bc.bd > .if.id.y > .ik.ig.ih`
 - `a[aria-label="Setesdal 2-lags ullongs"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `a[aria-label="Setesdal 2-lags ulltrøye"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `a[aria-label="Setesdal 2-lags ulltrøye"] > .i8.bc.bd > .if.id.y > .ik.ig.ih`
 - `a[aria-label="Setesdal 2-lags ulltrøye"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .ik.ig.ih`
 - `li:nth-child(5) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
-- `li:nth-child(1) > .i3.i4[aria-label="Istind piggsko"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
-- `li:nth-child(2) > .i3.i4[aria-label="Istind piggsko"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
-- `a[aria-label="Hemsedal 2-lags ullsett"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
-- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .ig.ih.ii`
-- `a[aria-label="Trysil vattert selebukse"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `li:nth-child(1) > .i3.i4[aria-label="Istind piggsko"] > .i8.bc.bd > .if.id.y > .ik.ig.ih`
+- `li:nth-child(2) > .i3.i4[aria-label="Istind piggsko"] > .i8.bc.bd > .if.id.y > .ik.ig.ih`
+- `a[aria-label="Hemsedal 2-lags ullsett"] > .i8.bc.bd > .if.id.y > .ik.ig.ih`
+- `a[aria-label="Voss 2-lags ulltrøye"] > .i8.bc.bd > .if.id.y > .ik.ig.ih`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .ik.ig.ih`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty

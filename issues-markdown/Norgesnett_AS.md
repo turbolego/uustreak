@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norgesnett AS
 
-**Timestamp:** 2026-01-06T15:13:53.984Z
+**Timestamp:** 2026-01-07T00:42:14.842Z
 **URL:** [https://norgesnett.no/](https://norgesnett.no/)
 **Total Violations:** 8
 
@@ -11,7 +11,7 @@
 - **Impact:** serious
 - **Description:** Ensure aria-hidden elements are not focusable nor contain focusable elements
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-hidden-focus?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Tags:** cat.name-role-value, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-10.8.1
 - **Count:** 6
 
 #### Affected Elements:

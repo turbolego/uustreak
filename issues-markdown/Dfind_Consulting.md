@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dfind Consulting
 
-**Timestamp:** 2026-01-06T15:46:40.742Z
+**Timestamp:** 2026-01-07T01:08:48.027Z
 **URL:** [https://www.randstad.no/digital/kunde/](https://www.randstad.no/digital/kunde/)
 **Total Violations:** 2
 

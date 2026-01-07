@@ -1,6 +1,6 @@
 # WCAG Violations Report for Digitaliseringsdirektoratet
 
-**Timestamp:** 2026-01-06T15:47:23.262Z
+**Timestamp:** 2026-01-07T01:09:30.714Z
 **URL:** [https://www.digdir.no/#](https://www.digdir.no/#)
 **Total Violations:** 1
 

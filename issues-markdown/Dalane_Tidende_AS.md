@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2026-01-06T15:41:29.167Z
+**Timestamp:** 2026-01-07T01:03:36.420Z
 **URL:** [https://www.dalane-tidende.no/#](https://www.dalane-tidende.no/#)
 **Total Violations:** 4
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.brick-c-jCKIaL-gGRfHz-cv.premium[data-title-words="6"] > .brick-c-fzBiFz.teaser_body[itemprop="url"] > .body > .brick-c-bVcFwu.title_container.has-image > .pretitle.brick-c-itmAgK[itemprop="alternative_headline"]`
+- `.brick-c-jCKIaL-gGRfHz-cv.story[data-title-words="6"] > .brick-c-fzBiFz.teaser_body[itemprop="url"] > .body > .brick-c-bVcFwu.title_container.has-image > .pretitle.brick-c-itmAgK[itemprop="alternative_headline"]`
 
 ### Frames must have an accessible name
 
