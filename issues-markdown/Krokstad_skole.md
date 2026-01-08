@@ -1,6 +1,6 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2026-01-07T01:19:37.023Z
+**Timestamp:** 2026-01-08T00:42:10.502Z
 **URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#)
 **Total Violations:** 9
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f39d97c993ddf5ea8"], ._55yn`
+- `iframe[name="f47716316f89421cf"], ._55yn`
 
 ### Certain ARIA roles must contain particular children
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f39d97c993ddf5ea8"], div[role="feed"]`
+- `iframe[name="f47716316f89421cf"], div[role="feed"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -40,12 +40,12 @@
 
 #### Affected Elements:
 
-- `iframe[name="f39d97c993ddf5ea8"], ._4v3m:nth-child(2) > ._eg_[role="button"] > ._eh3`
-- `iframe[name="f39d97c993ddf5ea8"], ._4v3m._51mw > ._eg_[role="button"] > ._eh3`
-- `iframe[name="f39d97c993ddf5ea8"], abbr[data-utime="1766442400"] > .timestampContent`
-- `iframe[name="f39d97c993ddf5ea8"], ._1atc > .fcg`
-- `iframe[name="f39d97c993ddf5ea8"], #u_1_g_Jt > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Kommenter"]`
-- `iframe[name="f39d97c993ddf5ea8"], #u_1_i_b0 > ._50sk._2pi4[title="Del"]`
+- `iframe[name="f47716316f89421cf"], ._4v3m:nth-child(2) > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f47716316f89421cf"], ._4v3m._51mw > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f47716316f89421cf"], abbr[data-utime="1766442400"] > .timestampContent`
+- `iframe[name="f47716316f89421cf"], ._1atc > .fcg`
+- `iframe[name="f47716316f89421cf"], #u_1_j_O\+ > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Kommenter"]`
+- `iframe[name="f47716316f89421cf"], #u_1_l_GC > ._50sk._2pi4[title="Del"]`
 
 ### Form elements should have a visible label
 
@@ -95,15 +95,15 @@
 
 #### Affected Elements:
 
-- `iframe[name="f39d97c993ddf5ea8"], #u_0_1_FZ`
-- `iframe[name="f39d97c993ddf5ea8"], .lfloat._3-8_`
-- `iframe[name="f39d97c993ddf5ea8"], #u_1_e_bm > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f39d97c993ddf5ea8"], .mts > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
-- `iframe[name="f39d97c993ddf5ea8"], #u_1_1o_bt > ._302 > span > a`
-- `iframe[name="f39d97c993ddf5ea8"], #u_1_1l_Hz > ._302 > span > a`
-- `iframe[name="f39d97c993ddf5ea8"], ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
-- `iframe[name="f39d97c993ddf5ea8"], #u_1_5_VQ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f39d97c993ddf5ea8"], #u_1_a_51 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f47716316f89421cf"], #u_0_1_T2`
+- `iframe[name="f47716316f89421cf"], .lfloat._3-8_`
+- `iframe[name="f47716316f89421cf"], #u_1_h_Tg > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f47716316f89421cf"], .mts > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
+- `iframe[name="f47716316f89421cf"], #u_1_1u_IJ > ._302 > span > a`
+- `iframe[name="f47716316f89421cf"], #u_1_1i_qC > ._302 > span > a`
+- `iframe[name="f47716316f89421cf"], ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
+- `iframe[name="f47716316f89421cf"], #u_1_6_2j > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f47716316f89421cf"], #u_1_5_yn > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
 
 ### Interactive controls must not be nested
 

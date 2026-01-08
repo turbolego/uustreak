@@ -1,6 +1,6 @@
 # WCAG Violations Report for If Skadeforsikring NUF
 
-**Timestamp:** 2026-01-07T00:55:43.775Z
+**Timestamp:** 2026-01-08T00:37:14.635Z
 **URL:** [https://www.if.no/privat](https://www.if.no/privat)
 **Total Violations:** 3
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#\31 45b395f07f4420f95c43d6edc48a1e1 > .weight-medium`
+- `#\31 dfa4d73c7f54c628859521fb0fbcf9e > .weight-medium`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `#\31 45b395f07f4420f95c43d6edc48a1e1`
+- `#\31 dfa4d73c7f54c628859521fb0fbcf9e`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 

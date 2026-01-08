@@ -1,6 +1,6 @@
 # WCAG Violations Report for Læringsverkstedet AS
 
-**Timestamp:** 2026-01-07T01:21:31.688Z
+**Timestamp:** 2026-01-08T00:44:09.956Z
 **URL:** [https://laringsverkstedet.no/#](https://laringsverkstedet.no/#)
 **Total Violations:** 8
 
@@ -36,7 +36,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 32
+- **Count:** 31
 
 #### Affected Elements:
 
@@ -50,7 +50,6 @@
 - `.nav-item:nth-child(6) > .nav-link`
 - `.nav-item:nth-child(7) > .nav-link`
 - `.align-middle`
-- `.form-inline > .btn-outline-light.btn`
 - `.pb-3.pb-lg-0.col-lg-4:nth-child(1) > p:nth-child(3)`
 - `p:nth-child(6)`
 - `a:nth-child(8)`
