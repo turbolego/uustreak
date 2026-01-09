@@ -1,8 +1,8 @@
 # WCAG Violations Report for Stiftelsen Lillehammer Museum
 
-**Timestamp:** 2026-01-08T00:31:11.274Z
+**Timestamp:** 2026-01-09T00:26:59.589Z
 **URL:** [https://lillehammermuseum.no/#](https://lillehammermuseum.no/#)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -38,19 +38,6 @@
 - `:root`
 - `:root`
 - `:root`
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `.cc-link`
-- `.cc-allow`
 
 ### Headings should not be empty
 

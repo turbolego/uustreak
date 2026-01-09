@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-01-08T01:02:11.333Z
+**Timestamp:** 2026-01-09T01:03:31.282Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
 **Total Violations:** 7
 
@@ -94,15 +94,16 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 99
+- **Count:** 100
 
 #### Affected Elements:
 
 - `h1`
 - `#announcement-banner`
 - `.breaking-x1`
-- `.collage-x3.row:nth-child(3)`
-- `#dr-edition-teaser-9bb5tm1ww > div`
+- `article[data-pulse-entity-id="zOGvGK"]`
+- `article[data-pulse-entity-id="L4AJpJ"] > .article__teaser-container`
+- `#dr-edition-teaser-duqtpg6u9 > div`
 - `._content_1bm9r_637 > ._heading_1bm9r_641 > span`
 - `._sa_gcann_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._sa_gcann_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
@@ -125,10 +126,10 @@
 - `._sa_gcann_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._sa_gcann_13 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
 - `.collage-x4`
-- `.collage-x3.row:nth-child(13)`
+- `.vertical-x2.row:nth-child(13)`
 - `.vertical-x3.row:nth-child(17)`
-- `.vertical-x3.row:nth-child(18)`
-- `.vertical-x2.row:nth-child(20)`
+- `.vertical-x2.row:nth-child(18)`
+- `.vertical-x4.row:nth-child(20)`
 - `.hjernetrim-front-widget`
 - `a > ._heading_1bm9r_641 > span`
 - `._aftenball_gcann_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
@@ -151,51 +152,51 @@
 - `._aftenball_gcann_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(9) > a > ._preview-title_1bm9r_721`
 - `._aftenball_gcann_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._aftenball_gcann_37 > ._content_1bm9r_637 > ._controls_1bm9r_657 > ._previews_1bm9r_661 > ._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
-- `.vertical-x4.row:nth-child(28)`
+- `.collage-x3.row:nth-child(28)`
 - `.vertical-x2.row:nth-child(30)`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
 - `.podcast-spons`
-- `.vertical-x3.row:nth-child(32)`
+- `.vertical-x3.row:nth-child(33)`
 - `.widget-football.regional-widget`
-- `article[data-pulse-entity-id="zOGdb9"] > .display-flex.article__teaser-container > .article__text-container`
-- `.vertical-x2.row:nth-child(36)`
-- `.vertical-x3.row:nth-child(39)`
+- `.vertical-x2.row:nth-child(35)`
+- `.vertical-x3.row:nth-child(37)`
+- `.vertical-x2.row:nth-child(40)`
 - `.widget-bolig.regional-widget`
-- `.vertical-small-x2.row:nth-child(41)`
-- `.collage-x3.row:nth-child(42)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(44)`
-- `.vertical-x3.row:nth-child(45)`
-- `.vertical-x4.row:nth-child(47)`
-- `.collage-x3.row:nth-child(48)`
-- `.vertical-x2.row:nth-child(49)`
-- `.vertical-x1-ad.row:nth-child(50)`
-- `.vertical-x3.row:nth-child(51)`
-- `.vertical-x2.row:nth-child(52)`
-- `.vertical-x1-ad.row:nth-child(53)`
-- `.vertical-small-x2.row:nth-child(54)`
-- `.vertical-x2.row:nth-child(55)`
-- `.vertical-x3.row:nth-child(56)`
-- `.vertical-x2.row:nth-child(57)`
-- `.collage-x3.row:nth-child(58)`
-- `.vertical-x2.row:nth-child(59)`
-- `.vertical-x3.row:nth-child(60)`
-- `.vertical-x2.row:nth-child(62)`
+- `.vertical-small-x2.row:nth-child(42)`
+- `.vertical-x3.row:nth-child(43)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(45)`
+- `.vertical-x2.row:nth-child(46)`
+- `.vertical-x4.row:nth-child(48)`
+- `.collage-x3.row:nth-child(49)`
+- `.vertical-x2.row:nth-child(50)`
+- `.vertical-x1-ad.row:nth-child(51)`
+- `.vertical-x3.row:nth-child(52)`
+- `.vertical-x2.row:nth-child(53)`
+- `.vertical-x1-ad.row:nth-child(54)`
+- `.collage-x3.row:nth-child(55)`
+- `article[data-pulse-entity-id="OkpL6E"] > .display-flex.article__teaser-container > .article__text-container`
+- `.collage-x3.row:nth-child(57)`
+- `.vertical-x2.row:nth-child(58)`
+- `.vertical-x3.row:nth-child(59)`
+- `.vertical-x2.row:nth-child(60)`
+- `.vertical-x4.row:nth-child(61)`
+- `.vertical-x2.row:nth-child(63)`
 - `#webcam-frontpage`
-- `.vertical-x4.row:nth-child(64)`
-- `.vertical-x2.row:nth-child(65)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(66)`
-- `.vertical-x3.row:nth-child(68)`
-- `.vertical-x2.row:nth-child(69)`
-- `.vertical-small-x2.row:nth-child(70)`
-- `.vertical-x1-ad.row:nth-child(71)`
-- `.collage-x3.row:nth-child(72)`
+- `.vertical-x3.row:nth-child(65)`
+- `.vertical-x2.row:nth-child(66)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(67)`
+- `.vertical-small-x2.row:nth-child(69)`
+- `.vertical-x2.row:nth-child(70)`
+- `.collage-x3.row:nth-child(71)`
+- `.vertical-x1-ad.row:nth-child(72)`
 - `.vertical-x2.row:nth-child(73)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(74)`
-- `.collage-x3.row:nth-child(75)`
-- `.horizontal-x1.row--full.row:nth-child(76)`
+- `.collage-x3.row:nth-child(74)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(75)`
+- `.vertical-x2.row:nth-child(76)`
+- `.collage-x3.row:nth-child(77)`
 - `.sch-datacontroller__text`
 
 ### Scrollable region must have keyboard access

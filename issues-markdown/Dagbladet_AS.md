@@ -1,10 +1,23 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-01-08T00:38:45.166Z
+**Timestamp:** 2026-01-09T00:40:19.745Z
 **URL:** [https://www.dagbladet.no/#](https://www.dagbladet.no/#)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.has-row-header.color_mobile_bg-black.bg-black > .row_header_text.align-center.mobile_text_align_align-center`
+- `.has-row-header.color_mobile_bg-yellow.bg-yellow > .row_header_text.align-center.mobile_text_align_align-center`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
