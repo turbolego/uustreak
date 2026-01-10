@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sandnes kommune
 
-**Timestamp:** 2026-01-09T00:59:26.481Z
+**Timestamp:** 2026-01-10T01:00:03.223Z
 **URL:** [https://www.sandnes.kommune.no/#](https://www.sandnes.kommune.no/#)
 **Total Violations:** 6
 
@@ -50,7 +50,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 7
+- **Count:** 13
 
 #### Affected Elements:
 
@@ -58,9 +58,15 @@
 - `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-1 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-2 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-3 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-3 > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-3 > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-3 > .item-container > .list-item.line:nth-child(3) > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-4 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(7) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-5 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-6 > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-6 > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-6 > .item-container > .list-item.line:nth-child(3) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(9) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 
 ### All page content should be contained by landmarks
 

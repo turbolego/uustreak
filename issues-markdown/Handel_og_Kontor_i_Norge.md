@@ -1,6 +1,6 @@
 # WCAG Violations Report for Handel og Kontor i Norge
 
-**Timestamp:** 2026-01-09T00:30:57.395Z
+**Timestamp:** 2026-01-10T00:33:38.651Z
 **URL:** [https://hk.no/](https://hk.no/)
 **Total Violations:** 3
 
@@ -30,7 +30,7 @@
 #### Affected Elements:
 
 - `.uagb-post__inner-wrap:nth-child(1) > .uagb-post__image > .uagb-image-ratio-inherit[rel="bookmark noopener noreferrer"][target="_self"]`
-- `.uagb-post__inner-wrap:nth-child(3) > .uagb-post__image > .uagb-image-ratio-inherit[rel="bookmark noopener noreferrer"][target="_self"]`
+- `.uagb-post__inner-wrap:nth-child(2) > .uagb-post__image > .uagb-image-ratio-inherit[rel="bookmark noopener noreferrer"][target="_self"]`
 
 ### All page content should be contained by landmarks
 

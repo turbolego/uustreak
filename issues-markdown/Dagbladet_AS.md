@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-01-09T00:40:19.745Z
+**Timestamp:** 2026-01-10T00:38:40.432Z
 **URL:** [https://www.dagbladet.no/#](https://www.dagbladet.no/#)
 **Total Violations:** 3
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.has-row-header.color_mobile_bg-black.bg-black > .row_header_text.align-center.mobile_text_align_align-center`
-- `.has-row-header.color_mobile_bg-yellow.bg-yellow > .row_header_text.align-center.mobile_text_align_align-center`
+- `.has-row-header.color_mobile_bg-black.bg-black:nth-child(8) > .row_header_text.align-center.mobile_text_align_align-center`
+- `.has-row-header.color_mobile_bg-black.bg-black:nth-child(40) > .row_header_text.align-center.mobile_text_align_align-center`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
