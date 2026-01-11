@@ -1,10 +1,22 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-01-10T00:38:40.432Z
+**Timestamp:** 2026-01-11T00:45:03.306Z
 **URL:** [https://www.dagbladet.no/#](https://www.dagbladet.no/#)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.flex-initial.xrow.row:nth-child(64) > .small-5.medium-5.large-5 > .bg-white.content > a > .xavier-headline.xre`
 
 ### Heading levels should only increase by one
 
@@ -12,12 +24,11 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.has-row-header.color_mobile_bg-black.bg-black:nth-child(8) > .row_header_text.align-center.mobile_text_align_align-center`
-- `.has-row-header.color_mobile_bg-black.bg-black:nth-child(40) > .row_header_text.align-center.mobile_text_align_align-center`
+- `.row_header_text`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

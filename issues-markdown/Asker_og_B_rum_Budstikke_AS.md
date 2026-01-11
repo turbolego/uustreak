@@ -1,22 +1,10 @@
 # WCAG Violations Report for Asker og Bærum Budstikke AS
 
-**Timestamp:** 2026-01-10T00:30:45.558Z
+**Timestamp:** 2026-01-11T00:37:19.318Z
 **URL:** [https://www.budstikka.no/#](https://www.budstikka.no/#)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#eaframe, #container_9845939 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
@@ -40,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.wrap-horizontal.wrap-horizontal-space > brick-carousel-v2[data-slides="10"][data-version="reels"][data-padding-inline="true"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `.wrap-horizontal-space.wrap-horizontal > brick-carousel-v2[data-slides="10"][data-version="reels"][data-padding-inline="true"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 
