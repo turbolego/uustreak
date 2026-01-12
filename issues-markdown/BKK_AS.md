@@ -1,6 +1,6 @@
 # WCAG Violations Report for BKK AS
 
-**Timestamp:** 2026-01-11T00:38:12.883Z
+**Timestamp:** 2026-01-12T14:27:24.722Z
 **URL:** [https://www.bkk.no/#](https://www.bkk.no/#)
 **Total Violations:** 4
 
@@ -55,8 +55,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
 - `#skip-to-content`
+- `.rc_text-appearance--h4`
+- `.rc_alert_text`

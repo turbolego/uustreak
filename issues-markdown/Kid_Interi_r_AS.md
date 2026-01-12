@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-01-11T00:42:00.605Z
+**Timestamp:** 2026-01-12T14:32:23.837Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -44,7 +44,7 @@
 
 #### Affected Elements:
 
-- `.i3.is-selected.fj:nth-child(1) > .c.c4.bz > .ao.ca[data-test-id="product-link"] > .e1`
+- `.i4.is-selected.gn:nth-child(1) > .c.c4.bz > .ca.ao[data-test-id="product-link"] > .e1`
 - `#ot-bnr-hdr-id-C0001`
 
 ### Images must have alternative text
@@ -53,11 +53,12 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `a[href$="julesengetoy"][data-scope-link="true"]:nth-child(1) > .gc.fc.fb > .fe.ff.el`
+- `.a7[href$="eden"][data-scope-link="true"]:nth-child(1) > .fd.fc.fb > .fe.ff.el`
+- `.a7[href$="julesengetoy"][data-scope-link="true"]:nth-child(1) > .gd.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -69,11 +70,6 @@
 
 #### Affected Elements:
 
-- `img[alt="Soverom"]`
-- `img[alt="Baderom"]`
-- `img[alt="Gardiner"]`
-- `img[alt="Kjøkken"]`
-- `img[alt="50% på en mengde varer!"]`
 - `img[alt="Sofa"]`
 - `img[alt="Spisebord"]`
 - `img[alt="Gulvtepper"]`
@@ -83,6 +79,11 @@
 - `img[alt="Hyller"]`
 - `img[alt="Småbord og sofabord"]`
 - `img[alt="Skap og skjenker"]`
+- `img[alt="Soverom"]`
+- `img[alt="Baderom"]`
+- `img[alt="Gardiner"]`
+- `img[alt="Kjøkken"]`
+- `img[alt="50% på en mengde varer!"]`
 
 ### Links must have discernible text
 
@@ -90,11 +91,13 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 2
+- **Count:** 4
 
 #### Affected Elements:
 
-- `.bl.dd.c4 > a[href$="julesengetoy"][data-scope-link="true"]:nth-child(1)`
+- `.a7[href$="eden"][data-scope-link="true"]:nth-child(1)`
+- `.ca.s[href$="eden"]`
+- `.a7[href$="julesengetoy"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="julesengetoy"]`
 
 ### All page content should be contained by landmarks

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-01-11T00:40:31.116Z
+**Timestamp:** 2026-01-12T14:29:17.080Z
 **URL:** [https://www.bt.no/#](https://www.bt.no/#)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -30,18 +30,6 @@
 
 - `.ch-menu-state-label`
 
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#temperatur, .icon-button`
-
 ### Elements must meet minimum color contrast ratio thresholds
 
 - **Impact:** serious
@@ -52,31 +40,31 @@
 
 #### Affected Elements:
 
+- `.liveticker-red`
+- `article[data-pulse-entity-id="aJwV87"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(2) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(3) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(4) > a > ._preview-title_1bm9r_721 > span`
 - `._preview_1bm9r_661:nth-child(5) > a > ._preview-title_1bm9r_721 > span`
-- `a[aria-label="Snøfokk i fjellet"] > .article__text-container > .article__section`
-- `article[data-pulse-entity-id="43qyjg"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `.article-tip-us > p`
+- `.tip-us-underline`
 - `.memo > .text-container > h3`
 - `.kryssord > .text-container > h3`
 - `.minikryss > .text-container > h3`
 - `.ordjakten > .text-container > h3`
-- `.article-section--trafikk > .article__teaser-container > .article__link.url > .article__text-container > .article__section`
-- `.article-section--btmeninger-debatt > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `.article--withPublicationAsAuthor > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `article[data-pulse-entity-id="QJo6QA"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="K8vQq6"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="RjRRrx"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `.article-section--sport-kommentar > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `.opinion-banner-desc`
-- `.article-tip-us > p`
-- `.tip-us-underline`
 - `#Vågen`
 - `#Finse`
 - `#Danmarks\ plass`
 - `#Torgallmeningen`
 - `#Puddefjordsbroen`
 - `#Åsaneveien`
-- `article[data-pulse-entity-id="ExWPLa"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `.article-section--btmeninger-kommentar > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `.article--withPublicationAsAuthor > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 
 ### Images must have alternative text
 
@@ -105,13 +93,16 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 61
+- **Count:** 62
 
 #### Affected Elements:
 
 - `h1`
+- `.liveticker-red`
+- `a[data-name="Nyheter"]`
+- `.liveticker-item--snooze > .name`
 - `.collage-x3.row:nth-child(1)`
-- `.collage-x3.row:nth-child(4)`
+- `.top-60-40-block`
 - `._heading_1bm9r_641 > span`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._preview_1bm9r_661:nth-child(1) > a > ._preview-title_1bm9r_721`
@@ -133,21 +124,21 @@
 - `._preview_1bm9r_661:nth-child(9) > a > ._preview-title_1bm9r_721`
 - `._preview_1bm9r_661:nth-child(10) > a > ._preview-image_1bm9r_709[loading="lazy"]`
 - `._preview_1bm9r_661:nth-child(10) > a > ._preview-title_1bm9r_721`
-- `.vertical-x2.row:nth-child(11)`
-- `.vertical-x3.row:nth-child(14)`
 - `.collage-x4`
+- `.vertical-x2.row:nth-child(14)`
+- `.collage-x3.row:nth-child(16)`
 - `.hjernetrim-front-widget`
-- `.vertical-x3.row:nth-child(19)`
-- `.vertical-x2.row:nth-child(22)`
+- `.vertical-x2.row:nth-child(19)`
+- `.vertical-x3.row:nth-child(22)`
 - `.collage-x3.row:nth-child(23)`
 - `.vertical-x2.row:nth-child(25)`
 - `.vertical-x3.row:nth-child(26)`
 - `.vertical-x2.row:nth-child(28)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(29)`
 - `.vertical-x4`
-- `.collage-x3.row:nth-child(32)`
+- `.vertical-x2.row:nth-child(32)`
 - `.widget-football.regional-widget`
-- `.display-flex > .article__text-container`
+- `.collage-x3.row:nth-child(34)`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
@@ -164,9 +155,7 @@
 - `.widget-webcam`
 - `.vertical-x2.row:nth-child(48)`
 - `.vertical-x1-ad.row:nth-child(49)`
-- `.collage-x3.row:nth-child(50)`
-- `.vertical-x2.row:nth-child(51)`
+- `.vertical-x3.row:nth-child(50)`
+- `.collage-x3.row:nth-child(51)`
 - `.vertical-x1-ad.row:nth-child(52)`
-- `.collage-x3.row:nth-child(53)`
-- `.vertical-x3.row:nth-child(54)`
 - `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`

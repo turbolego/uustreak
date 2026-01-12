@@ -1,7 +1,7 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-01-11T00:48:20.253Z
-**URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
+**Timestamp:** 2026-01-12T14:37:01.438Z
+**URL:** [https://www.vitusapotek.no/#](https://www.vitusapotek.no/#)
 **Total Violations:** 6
 
 ## Violation Details
@@ -16,9 +16,9 @@
 
 #### Affected Elements:
 
-- `.product-listing.product-grid.product-slider:nth-child(2) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(1) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
-- `.product-listing.product-grid.product-slider:nth-child(4) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(1) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
-- `.owl-item:nth-child(2) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
+- `.product-listing.product-grid.product-slider:nth-child(2) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(2) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
+- `.owl-item:nth-child(1) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
+- `.product-listing.product-grid.product-slider:nth-child(4) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(2) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
 - `.owl-item:nth-child(3) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
 - `.owl-item:nth-child(4) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
 - `.owl-item:nth-child(5) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`

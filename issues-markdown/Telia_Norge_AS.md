@@ -1,8 +1,8 @@
 # WCAG Violations Report for Telia Norge AS
 
-**Timestamp:** 2026-01-11T00:40:31.941Z
+**Timestamp:** 2026-01-12T14:28:57.045Z
 **URL:** [https://www.telia.no/#](https://www.telia.no/#)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -28,11 +28,11 @@
 
 #### Affected Elements:
 
-- `.slide:nth-child(1) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(2) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(4) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(6) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(7) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(1) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(2) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(4) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(6) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(7) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `._teddy-card--gray_vxy5c_281._teddy-card--rich-card_vxy5c_168._teddy-grid_1dv1t_2:nth-child(4) > ._teddy-card__inset--top_vxy5c_418._teddy-card__inset--left_vxy5c_421._teddy-card__inset--right_vxy5c_424 > ._teddy-image_jxcdf_2`
 
 ### Interactive controls must not be nested
@@ -53,15 +53,3 @@
 - `._teddy-card--purple-light_vxy5c_234._teddy-card--navigation-vertical_vxy5c_102[role="button"]:nth-child(2)`
 - `._teddy-card--purple-light_vxy5c_234._teddy-card--navigation-vertical_vxy5c_102[role="button"]:nth-child(3)`
 - `._teddy-card--purple-light_vxy5c_234._teddy-card--navigation-vertical_vxy5c_102[role="button"]:nth-child(4)`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#snowfall-container`
