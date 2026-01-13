@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-01-12T14:25:37.083Z
+**Timestamp:** 2026-01-13T00:33:14.775Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -30,9 +30,9 @@
 - `li:nth-child(5) > .i3.i4[aria-label="Ute resirkulert vinterdress"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .ig.ih.ii`
 - `a[aria-label="Kvitfjell vattert selebukse"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
-- `li:nth-child(3) > .i3.i4[aria-label="Trysil vinterjakke"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
-- `a[aria-label="Kollen ullsokk 2-pack"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
-- `li:nth-child(5) > .i3.i4[aria-label="Trysil vinterjakke"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `a[aria-label="Trysil vinterjakke"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `li:nth-child(4) > .i3.i4[aria-label="Trysil vattert selebukse"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
+- `li:nth-child(5) > .i3.i4[aria-label="Trysil vattert selebukse"] > .i8.bc.bd > .if.id.y > .ig.ih.ii`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
