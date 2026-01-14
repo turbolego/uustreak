@@ -1,8 +1,8 @@
 # WCAG Violations Report for Utdanningsforbundet
 
-**Timestamp:** 2026-01-13T01:02:08.376Z
+**Timestamp:** 2026-01-14T00:40:01.498Z
 **URL:** [https://www.utdanningsforbundet.no/#](https://www.utdanningsforbundet.no/#)
-**Total Violations:** 8
+**Total Violations:** 9
 
 ## Violation Details
 
@@ -89,7 +89,19 @@
 #### Affected Elements:
 
 - `#main-wrapper`
-- `#react_0HNIC37NQR1BI > .local-navigation__wrapper__top[aria-label="Lokal navigasjon"]`
+- `#react_0HNIC37NRA2SU > .local-navigation__wrapper__top[aria-label="Lokal navigasjon"]`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `a[href="#"]`
 
 ### [role="img"] elements must have alternative text
 

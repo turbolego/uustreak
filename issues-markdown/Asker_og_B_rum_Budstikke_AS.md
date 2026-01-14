@@ -1,22 +1,10 @@
 # WCAG Violations Report for Asker og Bærum Budstikke AS
 
-**Timestamp:** 2026-01-13T00:34:02.589Z
+**Timestamp:** 2026-01-14T00:30:46.077Z
 **URL:** [https://www.budstikka.no/#](https://www.budstikka.no/#)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `article[data-title-words="1"] > .brick-c-cvdocc.teaser_body[itemprop="url"] > .body > .title_container.brick-c-bVcFwu.has-image > .brick-c-gPjxah-RMqvH-cv.title.brick-c-gPjxah`
 
 ### Frames must have an accessible name
 

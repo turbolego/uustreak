@@ -1,8 +1,8 @@
 # WCAG Violations Report for Sandnes kommune
 
-**Timestamp:** 2026-01-13T01:39:26.167Z
+**Timestamp:** 2026-01-14T00:39:32.994Z
 **URL:** [https://www.sandnes.kommune.no/#](https://www.sandnes.kommune.no/#)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -12,10 +12,11 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
+- `.H-bg--lighter-green`
 - `#portalframe1, button[data-templatetype="1"]`
 - `#portalframe1, button[data-templatetype="2"]`
 
@@ -30,6 +31,19 @@
 #### Affected Elements:
 
 - `#iFrameResizer0`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.H-bg--lighter-green > img`
+- `.warning__icon`
 
 ### Form elements must have labels
 

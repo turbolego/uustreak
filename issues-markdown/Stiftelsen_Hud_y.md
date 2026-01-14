@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Hudøy
 
-**Timestamp:** 2026-01-13T00:28:58.785Z
+**Timestamp:** 2026-01-14T00:29:10.718Z
 **URL:** [https://hudoy.no/#](https://hudoy.no/#)
 **Total Violations:** 5
 
@@ -42,7 +42,7 @@
 #### Affected Elements:
 
 - `.classic-quote-left > h6`
-- `.post-entry-8218 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
+- `.post-entry-8315 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `#nav_menu-2 > .widgettitle`
 
 ### Links must have discernible text
@@ -75,7 +75,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 26
+- **Count:** 29
 
 #### Affected Elements:
 
@@ -84,9 +84,12 @@
 - `iframe, a`
 - `.active-slide.slide-entry-wrap`
 - `#after_section_3 > .container > .template-page.content.av-content-full > .post-entry-type-page.post-entry-330.post-entry > .entry-content-wrapper.clearfix > .av_textblock_section`
+- `.post-entry-8315 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.post-entry-8218 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.post-entry-8117 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.post-entry-8063 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
+- `.post-entry-6343 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
+- `.post-entry-7574 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.av-rotator-text-single-4`
 - `#av_section_6 > .container > .template-page.content.av-content-full > .post-entry-type-page.post-entry-330.post-entry > .entry-content-wrapper.clearfix > .flex_column_table.av-equal-height-column-flextable.-flextable`
 - `.avia-builder-el-34`

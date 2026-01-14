@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordic Choice Hotels
 
-**Timestamp:** 2026-01-13T00:29:33.693Z
+**Timestamp:** 2026-01-14T00:29:14.640Z
 **URL:** [https://www.strawberry.no/](https://www.strawberry.no/)
 **Total Violations:** 2
 
@@ -19,9 +19,9 @@
 - `#horizontal-scroll-info-cards-1 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(1)`
 - `#horizontal-scroll-info-cards-1 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(2)`
 - `#horizontal-scroll-info-cards-1 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(3)`
-- `#horizontal-scroll-info-cards-3 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(1)`
-- `a[href$="superdeal/"]`
-- `#horizontal-scroll-info-cards-3 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(3)`
+- `#horizontal-scroll-info-cards-2 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(1)`
+- `#horizontal-scroll-info-cards-2 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(2)`
+- `#horizontal-scroll-info-cards-2 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(3)`
 - `.css-1pzvwcy-label-spacing-override[href$="restaurant/"][role="listitem"]`
 - `.css-1pzvwcy-label-spacing-override[href$="spa/"][role="listitem"]`
 - `.css-1pzvwcy-label-spacing-override[href$="eventer/"][role="listitem"]`
@@ -29,12 +29,12 @@
 - `a[href$="stockholm/"]`
 - `a[href$="kobenhavn/"]`
 - `.css-1pzvwcy-label-spacing-override[href="/hotell/?resetDestination=true"][role="listitem"]`
-- `#horizontal-scroll-info-cards-8 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(1)`
+- `#horizontal-scroll-info-cards-7 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(1)`
+- `#horizontal-scroll-info-cards-7 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(2)`
+- `#horizontal-scroll-info-cards-7 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(3)`
+- `a[href$="wrapped-2025/"]`
 - `#horizontal-scroll-info-cards-8 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(2)`
 - `#horizontal-scroll-info-cards-8 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(3)`
-- `#horizontal-scroll-info-cards-9 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(1)`
-- `#horizontal-scroll-info-cards-9 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(2)`
-- `#horizontal-scroll-info-cards-9 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-1pzvwcy-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(3)`
 
 ### All page content should be contained by landmarks
 
