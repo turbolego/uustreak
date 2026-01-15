@@ -1,7 +1,7 @@
 name: Track Project Achievements
 on:
   schedule:
-    - cron: '30 0 * * *'  # Run daily at 00:30 UTC (after main tests complete)
+    - cron: '0 2 * * *'  # Run daily at 02:00 UTC (2 hours after deploy-selfhosted)
   workflow_dispatch:      # Allow manual trigger
 
 permissions:
