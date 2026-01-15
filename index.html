@@ -103,6 +103,11 @@
             <div id="invalid-urls-dialog-content"></div>
             <button aria-label="Lukk døde lenker dialog" class="dialog-close" id="close-invalid-urls-dialog">×</button>
         </dialog>
+        <dialog class="details-dialog" id="achievements-dialog">
+            <h2 id="achievements-dialog-title">Achievements 🏆</h2>
+            <div id="achievements-dialog-content"></div>
+            <button aria-label="Lukk achievements dialog" class="dialog-close" id="close-achievements-dialog">×</button>
+        </dialog>
         <dialog class="details-dialog" id="readme-dialog">
             <div id="readme-content"></div>
             <button aria-label="Lukk README beskrivelse" class="dialog-close" id="close-readme-dialog">×</button>
@@ -112,6 +117,7 @@
     <script src="js/loading.js"></script>
     <script src="js/summary.js"></script>
     <script src="js/invalid_urls.js"></script>
+    <script src="js/achievements.js"></script>
     <script>
         const reportListUrl = 'historical-data/report-list.json';
         let currentDate = new Date().toISOString().split('T')[0];
@@ -936,6 +942,7 @@
                 'Rang',
                 'Navn',
                 'Se rapportdetaljer',
+                'Achievements',
                 'Totalt antall brudd',
                 'Streak (dager uten brudd)',
                 ...(viewMode === 'types' ? Array.from(allViolationTypes) : Array.from(allViolationTags)),
@@ -1015,8 +1022,30 @@
                         });
                         cell.appendChild(button);
                     } else if (index === 3) {
-                        cell.textContent = report.total_violations;
+                        // Achievements column
+                        const achievementsButton = document.createElement('button');
+                        achievementsButton.className = 'achievements-button';
+                        achievementsButton.textContent = '🏆 Achievements';
+                        achievementsButton.setAttribute('aria-label', `View achievements for ${report.project}`);
+                        
+                        // Find project in projects list to get achievements
+                        // Note: achievements data will be loaded separately via projects.json
+                        achievementsButton.addEventListener('click', async (e) => {
+                            e.stopPropagation();
+                            try {
+                                const projectsData = await fetch('projects.json').then(r => r.json());
+                                const projectData = projectsData.find(p => p.name === report.project);
+                                const achievements = projectData?.achievements || [];
+                                showAchievementsDialog(report.project, achievements);
+                            } catch (error) {
+                                console.error('Error loading achievements:', error);
+                                showAchievementsDialog(report.project, []);
+                            }
+                        });
+                        cell.appendChild(achievementsButton);
                     } else if (index === 4) {
+                        cell.textContent = report.total_violations;
+                    } else if (index === 5) {
                         const streakValue = reportStreaks.get(report.project);
                         // Add fire emoji for projects with the highest streak
                         cell.textContent = streakValue === maxStreak && maxStreak > 0 ? `${streakValue} 🔥` : streakValue;
