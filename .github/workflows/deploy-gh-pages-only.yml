@@ -1,0 +1,99 @@
+name: Deploy to GitHub Pages (Static Files Only)
+on:
+  workflow_dispatch:  # Manual trigger only
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v6
+        with:
+          ref: gh-pages
+          path: gh-pages-branch
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Copy static files to gh-pages
+        run: |
+          echo "Copying static files to gh-pages branch..."
+          
+          # Copy HTML files
+          cp index.html gh-pages-branch/
+          cp README.md gh-pages-branch/
+          cp favicon.ico gh-pages-branch/
+          
+          # Copy JavaScript files
+          cp -r js gh-pages-branch/
+          
+          # Copy CSS files
+          cp styles.css gh-pages-branch/
+          
+          # Copy assets folder
+          cp -r assets gh-pages-branch/
+          
+          echo "✅ Static files copied successfully"
+
+      - name: Commit and push changes
+        run: |
+          cd gh-pages-branch
+          
+          # Check if there are changes
+          if git diff --quiet HEAD; then
+            echo "ℹ️  No changes detected in static files"
+            exit 0
+          fi
+          
+          echo "📝 Committing static file updates..."
+          git add -A
+          git commit -m "chore: update static files (HTML, CSS, JS) [skip ci]"
+          
+          # Push with retry logic
+          MAX_RETRIES=3
+          for i in $(seq 1 $MAX_RETRIES); do
+            echo "Push attempt $i of $MAX_RETRIES..."
+            if git push origin gh-pages 2>&1 | tail -10; then
+              echo "✅ Successfully pushed to gh-pages"
+              exit 0
+            else
+              echo "⚠️  Push attempt $i failed"
+              if [ $i -lt $MAX_RETRIES ]; then
+                echo "Retrying in 5 seconds..."
+                sleep 5
+              fi
+            fi
+          done
+          
+          echo "❌ Failed to push after $MAX_RETRIES attempts"
+          exit 1
+
+      - name: Verify deployment
+        run: |
+          echo "✅ GitHub Pages deployment triggered"
+          echo ""
+          echo "The following static files were updated on gh-pages branch:"
+          echo "  - index.html"
+          echo "  - README.md"
+          echo "  - favicon.ico"
+          echo "  - styles.css"
+          echo "  - js/ (all JavaScript files)"
+          echo "  - assets/ (all asset files)"
+          echo ""
+          echo "Your changes should be live at:"
+          echo "  https://turbolego.github.io/uustreak/"
+          echo ""
+          echo "Note: It may take a few minutes for GitHub Pages to rebuild"
