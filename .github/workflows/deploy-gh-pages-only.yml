@@ -55,15 +55,22 @@ jobs:
         run: |
           cd gh-pages-branch
           
-          # Check if there are changes
-          if git diff --quiet HEAD; then
+          # List files we're about to commit for debugging
+          echo "📋 Files changed:"
+          git status --short
+          
+          # Stage all changes
+          echo "📝 Staging files..."
+          git add -A
+          
+          # Check if there are changes to commit
+          if git diff --cached --quiet; then
             echo "ℹ️  No changes detected in static files"
             exit 0
           fi
           
-          echo "📝 Committing static file updates..."
-          git add -A
-          git commit -m "chore: update static files (HTML, CSS, JS) [skip ci]"
+          echo "✅ Changes detected, committing..."
+          git commit -m "chore: update static files (HTML, CSS, JS, projects.json) [skip ci]"
           
           # Push with retry logic
           MAX_RETRIES=3
