@@ -43,6 +43,9 @@ jobs:
           # Copy CSS files
           cp styles.css gh-pages-branch/
           
+          # Copy JSON data files
+          cp projects.json gh-pages-branch/
+          
           # Copy assets folder
           cp -r assets gh-pages-branch/
           
@@ -90,6 +93,7 @@ jobs:
           echo "  - README.md"
           echo "  - favicon.ico"
           echo "  - styles.css"
+          echo "  - projects.json (achievements data)"
           echo "  - js/ (all JavaScript files)"
           echo "  - assets/ (all asset files)"
           echo ""
