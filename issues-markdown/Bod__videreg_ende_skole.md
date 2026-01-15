@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bodø videregående skole
 
-**Timestamp:** 2026-01-14T00:35:14.275Z
+**Timestamp:** 2026-01-15T06:54:29.619Z
 **URL:** [https://www.bodo.vgs.no/#](https://www.bodo.vgs.no/#)
 **Total Violations:** 3
 
@@ -38,10 +38,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 8
+- **Count:** 9
 
 #### Affected Elements:
 
+- `#ctl00_ctl00_ctl00_innhold_ctl05_WebpartId_6643`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_1200 > h2`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_1200_WebpartId_1200_txtSearch`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_1201`

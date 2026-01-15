@@ -1,22 +1,10 @@
 # WCAG Violations Report for Stiftelsen norsk teknisk museum
 
-**Timestamp:** 2026-01-14T00:30:11.531Z
+**Timestamp:** 2026-01-15T06:52:20.368Z
 **URL:** [https://www.tekniskmuseum.no/#](https://www.tekniskmuseum.no/#)
-**Total Violations:** 11
+**Total Violations:** 10
 
 ## Violation Details
-
-### Elements must only use supported ARIA attributes
-
-- **Impact:** critical
-- **Description:** Ensure an element's role supports its ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.uk-disabled, .OverlayBase_module_overlayWrapper__42ef25fe`
 
 ### Elements must only use permitted ARIA attributes
 

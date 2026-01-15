@@ -1,10 +1,22 @@
 # WCAG Violations Report for Adecco Norge AS
 
-**Timestamp:** 2026-01-14T00:27:15.191Z
+**Timestamp:** 2026-01-15T06:46:28.582Z
 **URL:** [https://www.adecco.com/nb-no](https://www.adecco.com/nb-no)
-**Total Violations:** 3
+**Total Violations:** 5
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `label[for="privacyPolicy"] > a[href$="personvern"][target="_blank"]`
 
 ### Form elements should have a visible label
 
@@ -31,6 +43,19 @@
 - `.SWPImage_swp-nextimage__raKqc`
 - `.tile-solutions-icon[aria-label=""][alt=""]`
 - `.SWPImage_islhh-image__Hi_E2`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#ctf > .h2`
+- `.mt1.large.mb0`
 
 ### Elements should not have tabindex greater than zero
 

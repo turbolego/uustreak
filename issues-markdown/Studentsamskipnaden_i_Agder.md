@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden i Agder
 
-**Timestamp:** 2026-01-14T00:31:15.173Z
+**Timestamp:** 2026-01-15T06:53:30.790Z
 **URL:** [https://www.sia.no/#](https://www.sia.no/#)
 **Total Violations:** 6
 

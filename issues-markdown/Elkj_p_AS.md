@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2026-01-14T00:26:52.061Z
+**Timestamp:** 2026-01-15T06:46:04.220Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
 **Total Violations:** 7
 

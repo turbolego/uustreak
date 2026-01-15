@@ -1,8 +1,8 @@
 # WCAG Violations Report for Color Line AS
 
-**Timestamp:** 2026-01-14T00:37:14.476Z
+**Timestamp:** 2026-01-15T06:56:30.025Z
 **URL:** [https://www.colorline.no/#](https://www.colorline.no/#)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -29,18 +29,6 @@
 #### Affected Elements:
 
 - `a[href$="cruise-til-kiel"] > .card-heading > .heading-text > h3`
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.messagetext > img`
 
 ### Document should not have more than one banner landmark
 
