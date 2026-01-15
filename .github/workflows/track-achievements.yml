@@ -47,9 +47,9 @@ jobs:
         run: |
           if grep -q "achievements" projects.json; then
             echo "✓ projects.json contains achievements data"
-            # Show a sample (ignore broken pipe from head)
+            # Show a sample (limit results in jq to avoid broken pipe)
             echo "Sample achievements entry:"
-            jq '.[] | select(.achievements | length > 0) | {name: .name, achievements: .achievements}' projects.json | head -30 || true
+            jq '.[] | select(.achievements | length > 0) | {name: .name, achievements: .achievements} | limit(2; .)' projects.json
           else
             echo "ℹ No achievements found yet (this is normal for first run)"
           fi
