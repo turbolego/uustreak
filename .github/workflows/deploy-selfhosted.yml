@@ -1157,6 +1157,9 @@ jobs:
           cp -r main-branch/js gh-pages-branch/
           cp main-branch/styles.css gh-pages-branch/
           
+          # Copy JSON data files (projects with achievements)
+          cp main-branch/projects.json gh-pages-branch/
+          
           # Copy assets folder (includes favicons and images)
           cp -r main-branch/assets gh-pages-branch/
           
