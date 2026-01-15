@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           ref: main
-          fetch-depth: 1
+          fetch-depth: 2  # Need at least 2 commits for git diff comparison
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
@@ -47,9 +47,9 @@ jobs:
         run: |
           if grep -q "achievements" projects.json; then
             echo "✓ projects.json contains achievements data"
-            # Show a sample
+            # Show a sample (ignore broken pipe from head)
             echo "Sample achievements entry:"
-            jq '.[] | select(.achievements | length > 0) | {name: .name, achievements: .achievements}' projects.json | head -30
+            jq '.[] | select(.achievements | length > 0) | {name: .name, achievements: .achievements}' projects.json | head -30 || true
           else
             echo "ℹ No achievements found yet (this is normal for first run)"
           fi
@@ -82,7 +82,17 @@ jobs:
             
             try {
               // Check if projects.json has changes
-              const diff = execSync('git diff HEAD~1 HEAD -- projects.json', { encoding: 'utf8' }).catch(() => '');
+              let diff = '';
+              try {
+                diff = execSync('git diff HEAD~1 HEAD -- projects.json', { encoding: 'utf8' });
+              } catch (e) {
+                // If HEAD~1 doesn't exist (shallow clone), check if projects.json has achievements
+                try {
+                  diff = execSync('git diff HEAD -- projects.json', { encoding: 'utf8' });
+                } catch (e2) {
+                  console.log('ℹ Could not determine git diff');
+                }
+              }
               
               if (diff.includes('achievements')) {
                 console.log('✓ Achievements were updated, triggering deployment...');
@@ -96,7 +106,9 @@ jobs:
                 });
                 
                 console.log('✓ Deployment workflow triggered');
+              } else {
+                console.log('ℹ No new achievements detected, skipping deployment');
               }
             } catch (error) {
-              console.log('ℹ No deployment trigger needed:', error.message);
+              console.log('ℹ Error checking for updates:', error.message);
             }
