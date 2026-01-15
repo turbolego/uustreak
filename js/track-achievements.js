@@ -9,6 +9,20 @@ const fs = require('fs');
 const path = require('path');
 
 /**
+ * Calculate days since a given date until today
+ * @param {string} dateStr - Date in YYYY-MM-DD format
+ * @returns {number} - Number of days since that date
+ */
+function calculateDaysSinceDate(dateStr) {
+    if (!dateStr) return 0;
+    const date = new Date(dateStr);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    date.setHours(0, 0, 0, 0);
+    return Math.floor((today - date) / (1000 * 60 * 60 * 24));
+}
+
+/**
  * Track achievements for all projects
  * Updates projects.json with new achievements based on streaks and metrics
  */
@@ -34,11 +48,13 @@ async function trackAchievements() {
         for (const project of projects) {
             const achievements = project.achievements || [];
 
-            // Calculate current streak
-            const streak = calculateStreak(project.name, reportList);
+            // Calculate current streak (now returns {days, startDate})
+            const streakResult = calculateStreak(project.name, reportList);
+            const streak = streakResult.days;
+            const streakStartDate = streakResult.startDate;
             
             // Check for new achievements
-            const newAchievements = checkForNewAchievements(project.name, streak, achievements);
+            const newAchievements = checkForNewAchievements(project.name, streak, achievements, { startDate: streakStartDate });
 
             if (newAchievements.length > 0) {
                 // Add new achievements
@@ -75,7 +91,7 @@ async function trackAchievements() {
  * Calculate current no-violations streak for a project
  * @param {string} projectName - Name of the project
  * @param {array} reportList - List of report filenames
- * @returns {number} - Current streak in days
+ * @returns {object} - Object with {days, startDate} of current streak
  */
 function calculateStreak(projectName, reportList) {
     // Filter reports for this project and sort by date descending
@@ -85,9 +101,10 @@ function calculateStreak(projectName, reportList) {
         .sort()
         .reverse();
 
-    if (projectReports.length === 0) return 0;
+    if (projectReports.length === 0) return { days: 0, startDate: null };
 
     let streak = 0;
+    let streakStartDate = null;
     let currentDate = new Date();
     currentDate = new Date(currentDate.toISOString().split('T')[0]);
 
@@ -106,6 +123,7 @@ function calculateStreak(projectName, reportList) {
         // Check if report has 0 violations
         if (filename.includes('-count-0')) {
             streak++;
+            streakStartDate = dateMatch[1]; // Update start date as we go back
             currentDate = new Date(reportDate);
             currentDate.setDate(currentDate.getDate() - 1);
         } else {
@@ -113,7 +131,7 @@ function calculateStreak(projectName, reportList) {
         }
     }
 
-    return streak;
+    return { days: streak, startDate: streakStartDate };
 }
 
 /**
@@ -121,11 +139,31 @@ function calculateStreak(projectName, reportList) {
  * @param {string} projectName - Name of the project
  * @param {number} currentStreak - Current streak days
  * @param {array} existingAchievements - Existing achievements
+ * @param {object} streakData - Object with {startDate, endDate} of current streak
  * @returns {array} - New achievements to add
  */
-function checkForNewAchievements(projectName, currentStreak, existingAchievements = []) {
+function checkForNewAchievements(projectName, currentStreak, existingAchievements = [], streakData = {}) {
     const today = new Date().toISOString().split('T')[0];
     const newAchievements = [];
+
+    // Check for zero_violations achievement (perfect score since first day)
+    if (streakData.startDate && currentStreak >= 1) {
+        // Calculate days since first report
+        const daysSinceStart = calculateDaysSinceDate(streakData.startDate);
+        
+        // If current streak equals or exceeds days since start, it's a zero violation run
+        if (daysSinceStart > 0 && currentStreak >= daysSinceStart - 1) {
+            const alreadyHas = existingAchievements.some(a => a.type === 'zero_violations');
+            if (!alreadyHas) {
+                newAchievements.push({
+                    type: 'zero_violations',
+                    fromDate: streakData.startDate,
+                    toDate: today,
+                    unlockedDate: today
+                });
+            }
+        }
+    }
 
     // Define achievement thresholds
     const streakThresholds = [
