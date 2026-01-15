@@ -1,0 +1,102 @@
+name: Track Project Achievements
+on:
+  schedule:
+    - cron: '30 0 * * *'  # Run daily at 00:30 UTC (after main tests complete)
+  workflow_dispatch:      # Allow manual trigger
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  track-achievements:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Download latest report list
+        run: |
+          # Try to download report-list.json from gh-pages branch (published site)
+          mkdir -p historical-data
+          
+          if wget -O historical-data/report-list.json https://turbolego.github.io/uustreak/historical-data/report-list.json 2>/dev/null; then
+            echo "✓ Downloaded report-list.json from published site"
+          else
+            echo "⚠ Could not download report-list.json, will use local version if available"
+            if [ ! -f historical-data/report-list.json ]; then
+              echo "ℹ No local report-list.json found, creating empty list"
+              echo "[]" > historical-data/report-list.json
+            fi
+          fi
+
+      - name: Track achievements
+        run: |
+          echo "🏆 Running achievement tracking..."
+          node js/track-achievements.js
+
+      - name: Verify projects.json was updated
+        run: |
+          if grep -q "achievements" projects.json; then
+            echo "✓ projects.json contains achievements data"
+            # Show a sample
+            echo "Sample achievements entry:"
+            jq '.[] | select(.achievements | length > 0) | {name: .name, achievements: .achievements}' projects.json | head -30
+          else
+            echo "ℹ No achievements found yet (this is normal for first run)"
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          
+          # Check if there are changes
+          if git diff --quiet projects.json; then
+            echo "ℹ No changes to commit"
+          else
+            echo "📝 Committing updated achievements..."
+            git add projects.json
+            git commit -m "feat: update project achievements [skip ci]"
+            git push origin main
+            echo "✓ Changes pushed successfully"
+          fi
+        continue-on-error: true
+
+      - name: Trigger deployment if projects.json changed
+        if: always()
+        uses: actions/github-script@v8
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const { execSync } = require('child_process');
+            
+            try {
+              // Check if projects.json has changes
+              const diff = execSync('git diff HEAD~1 HEAD -- projects.json', { encoding: 'utf8' }).catch(() => '');
+              
+              if (diff.includes('achievements')) {
+                console.log('✓ Achievements were updated, triggering deployment...');
+                
+                // Trigger deploy-selfhosted or deploy workflow
+                await github.rest.actions.createWorkflowDispatch({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  workflow_id: 'deploy.yml',
+                  ref: 'main'
+                });
+                
+                console.log('✓ Deployment workflow triggered');
+              }
+            } catch (error) {
+              console.log('ℹ No deployment trigger needed:', error.message);
+            }
