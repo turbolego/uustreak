@@ -406,20 +406,15 @@ jobs:
       - name: Validate and Repair Summary Files
         run: |
           echo "Validating and repairing summary files..."
-          # Install Node.js for the validation script
+          # Copy all js files needed for validation
+          cp -r js/* .
+          
+          # Change to the directory containing summary files
+          cd gh-pages-branch
+          
+          # Run validation if Node.js is available
           if command -v node >/dev/null 2>&1; then
-            # Ensure validation script is available (it should already be in the current directory)
-            if [ ! -f "validate-summaries.js" ]; then
-              echo "Error: validate-summaries.js not found in current directory"
-              exit 1
-            fi
-            
-            # Change to the directory containing summary files
-            cd gh-pages-branch
-            
-            # Run validation
             node ../validate-summaries.js
-            
             echo "Summary validation completed"
           else
             echo "Node.js not available, skipping validation"
@@ -494,6 +489,9 @@ jobs:
           
           # Copy assets folder (includes favicons and images)
           cp -r assets gh-pages-branch/
+          
+          # Copy projects.json with achievements data
+          cp projects.json gh-pages-branch/
           
           echo "Static files copied to gh-pages branch"
       - name: Deploy to GitHub Pages
