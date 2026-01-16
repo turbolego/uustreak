@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-01-15T06:57:40.194Z
+**Timestamp:** 2026-01-16T00:42:57.833Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -32,7 +32,7 @@
 
 #### Affected Elements:
 
-- `.i4.is-selected.gn:nth-child(1) > .c.c4.bz > .ca.ao[data-test-id="product-link"] > .e1`
+- `.i5.is-selected.gn:nth-child(1) > .c.c4.bz > .ca.ao[data-test-id="product-link"] > .e1`
 - `#ot-bnr-hdr-id-C0001`
 
 ### Images must have alternative text
@@ -41,12 +41,13 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `a[href$="eden"][data-scope-link="true"]:nth-child(1) > .fd.fc.fb > .fe.ff.el`
-- `a[href$="julesengetoy"][data-scope-link="true"]:nth-child(1) > .gd.fc.fb > .fe.ff.el`
+- `.gq > .fe.ff.el`
+- `a[href$="julesengetoy"][data-scope-link="true"]:nth-child(1) > .gc.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -79,12 +80,14 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 4
+- **Count:** 6
 
 #### Affected Elements:
 
 - `a[href$="eden"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="eden"]`
+- `a[href$="kjaledyr"][data-scope-link="true"]:nth-child(1)`
+- `.ca.s[href$="kjaledyr"]`
 - `a[href$="julesengetoy"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="julesengetoy"]`
 

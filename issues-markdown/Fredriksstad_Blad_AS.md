@@ -1,8 +1,8 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-01-15T06:50:25.244Z
+**Timestamp:** 2026-01-16T00:35:42.963Z
 **URL:** [https://www.f-b.no/#](https://www.f-b.no/#)
-**Total Violations:** 6
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#eaframe, #container_9851603 > .info > .info-wrapper > .ctaLink`
+- `#eaframe, #container_9854284 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
@@ -29,30 +29,6 @@
 #### Affected Elements:
 
 - `#eaframe`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `brick-carousel-v2[data-slides="8"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
-
-### Links must be distinguishable without relying on color
-
-- **Impact:** serious
-- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
-- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#sp_message_iframe_1404701, #no-hover`
 
 ### Elements marked as presentational should be consistently ignored
 

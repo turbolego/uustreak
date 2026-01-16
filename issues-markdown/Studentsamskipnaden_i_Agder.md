@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden i Agder
 
-**Timestamp:** 2026-01-15T06:53:30.790Z
+**Timestamp:** 2026-01-16T00:34:40.276Z
 **URL:** [https://www.sia.no/#](https://www.sia.no/#)
 **Total Violations:** 6
 
@@ -87,7 +87,7 @@
 #### Affected Elements:
 
 - `.desktop-navbar__logo`
-- `#react-select-2-input`
-- `#react-select-3-input`
+- `#react-select-4-input`
+- `#react-select-5-input`
 - `.desktop-navbar__search-btn`
 - `.desktop-navbar__hamburger`

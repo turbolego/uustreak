@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kreftforeningen
 
-**Timestamp:** 2026-01-15T06:59:06.657Z
+**Timestamp:** 2026-01-16T00:44:26.633Z
 **URL:** [https://kreftforeningen.no/](https://kreftforeningen.no/)
 **Total Violations:** 4
 
@@ -12,12 +12,11 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
 - `#declineButton`
-- `img[alt="Logo kreftforeningen"][role="presentation"]`
 
 ### Document should not have more than one banner landmark
 

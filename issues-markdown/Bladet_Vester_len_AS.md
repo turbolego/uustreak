@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-01-15T06:54:14.969Z
+**Timestamp:** 2026-01-16T00:36:22.605Z
 **URL:** [https://www.blv.no/#](https://www.blv.no/#)
 **Total Violations:** 5
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `article[data-title-words="2"] > .brick-c-fzBiFz.teaser_body[itemprop="url"] > .body > .brick-c-bVcFwu.title_container.has-image > .brick-c-gPjxah-eCfDUW-teaserType-commercial.brick-c-gPjxah[itemprop="teaser_title"]`
+- `.brick-c-bVcFwu.title_container.has-image > .brick-c-gPjxah-bMamcL-cv.brick-c-gPjxah[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
@@ -30,17 +30,17 @@
 
 - `#eaframe`
 
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+### Links must have discernible text
 
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.brick-c-bXFxCH > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `.custom-two > .brick-c-cvdocc.teaser_body[itemprop="url"]`
 
 ### Elements marked as presentational should be consistently ignored
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-01-15T06:59:12.370Z
+**Timestamp:** 2026-01-16T00:41:18.957Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
 **Total Violations:** 9
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 8
+- **Count:** 7
 
 #### Affected Elements:
 
@@ -22,7 +22,6 @@
 - `#splide03-slide01`
 - `#splide04-slide01`
 - `#splide05-slide01`
-- `#splide06-slide01`
 - `img[width="150"]`
 
 ### Buttons must have discernible text
@@ -59,24 +58,22 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 28
+- **Count:** 26
 
 #### Affected Elements:
 
-- `#splide01-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
-- `button[aria-label="Previous slide"] > .w-12`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(3) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .grid-of-1.space-y-6.lg\:space-y-0 > .lg\:col-span-3.collection-item--fullWidth[theme=""] > .sm\:pr-6.flex-1.media`
+- `.splide__arrow--prev.left-5[aria-controls="splide01-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide01-track"] > .w-12`
-- `.splide__arrow--prev[aria-controls="splide02-track"][aria-label="Go to last slide"] > .w-12`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(6) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .grid-of-1.space-y-6.lg\:space-y-0 > .lg\:col-span-3.collection-item--fullWidth[theme=""] > .sm\:pr-6.flex-1.media`
+- `.splide__arrow--prev.left-5[aria-controls="splide02-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide02-track"] > .w-12`
-- `.grid-of-1 > .lg\:col-span-3.collection-item--fullWidth[theme=""] > .sm\:pr-6.flex-1.media`
-- `.splide__arrow--prev[aria-controls="splide03-track"][aria-label="Go to last slide"] > .w-12`
+- `#splide03-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
+- `.splide__arrow--prev.left-5[aria-controls="splide03-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide03-track"] > .w-12`
 - `#splide04-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
-- `.splide__arrow--prev[aria-controls="splide04-track"][aria-label="Go to last slide"] > .w-12`
+- `.splide__arrow--prev.left-5[aria-controls="splide04-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide04-track"] > .w-12`
-- `#splide05-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
-- `.splide__arrow--prev[aria-controls="splide05-track"][aria-label="Go to last slide"] > .w-12`
-- `.splide__arrow--next.right-5[aria-controls="splide05-track"] > .w-12`
 - `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:pr-6.flex-1.media`
 - `.grid-of-6 > .lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:pr-6.flex-1.media`
 - `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:pr-6.flex-1.media`
@@ -88,9 +85,9 @@
 - `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:pr-6.flex-1.media`
 - `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:pr-6.flex-1.media`
 - `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:pr-6.flex-1.media`
-- `#splide06-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
-- `.splide__arrow--prev[aria-controls="splide06-track"][aria-label="Go to last slide"] > .w-12`
-- `.splide__arrow--next.right-5[aria-controls="splide06-track"] > .w-12`
+- `#splide05-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
+- `.splide__arrow--prev.left-5[aria-controls="splide05-track"] > .w-12`
+- `.splide__arrow--next.right-5[aria-controls="splide05-track"] > .w-12`
 
 ### Document should have one main landmark
 
@@ -127,8 +124,8 @@
 
 #### Affected Elements:
 
+- `#splide03-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
 - `#splide04-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `#splide05-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
 - `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
 - `.grid-of-6 > .lg\:row-span-2.lg\:col-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
 - `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
@@ -140,7 +137,7 @@
 - `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
 - `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
 - `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `#splide06-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `#splide05-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
 
 ### All page content should be contained by landmarks
 
@@ -148,7 +145,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 62
+- **Count:** 63
 
 #### Affected Elements:
 
@@ -157,14 +154,15 @@
 - `.custom-select.md\:col-span-3[data-v-bea1500f=""]`
 - `.dp__pointer`
 - `.btn-theme-default`
-- `.\!bg-Theme\/Dark.DARK:nth-child(2) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
-- `.\!bg-Theme\/Dark.DARK:nth-child(3)`
-- `.\!bg-Theme\/Dark.DARK:nth-child(4) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
-- `.\!bg-Theme\/Dark.DARK:nth-child(5)`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(2)`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(3)`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4)`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(5) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(6)`
 - `.\!bg-Theme\/Light > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
-- `.\!bg-Theme\/Dark.DARK:nth-child(7) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
-- `.\!bg-Theme\/Dark.DARK:nth-child(8) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
-- `.\!bg-Theme\/Dark.DARK:nth-child(9) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(8) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(9) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(10) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
 - `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:pr-6.flex-1.media`
 - `.lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.-mt-9.p-6 > h3`
 - `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
@@ -198,7 +196,7 @@
 - `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:pr-6.flex-1.media`
 - `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > h2`
 - `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
-- `.\!bg-Theme\/Dark.DARK:nth-child(11)`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(12)`
 - `.\!bg-white > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
 - `.lg\:text-center`
 - `#\34 1a85971-de72-4bb9-8638-913f40d8f8bf`
