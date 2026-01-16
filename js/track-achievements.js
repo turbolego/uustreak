@@ -147,12 +147,15 @@ function checkForNewAchievements(projectName, currentStreak, existingAchievement
     const newAchievements = [];
 
     // Check for zero_violations achievement (perfect score since first day)
+    // Only award if the streak started from the very first report and continues to today
     if (streakData.startDate && currentStreak >= 1) {
         // Calculate days since first report
         const daysSinceStart = calculateDaysSinceDate(streakData.startDate);
         
-        // If current streak equals or exceeds days since start, it's a zero violation run
-        if (daysSinceStart > 0 && currentStreak >= daysSinceStart - 1) {
+        // Only award zero_violations if:
+        // 1. Current streak equals days since start (meaning continuous zero violations)
+        // 2. The streak started very early (we have many days of perfect score)
+        if (daysSinceStart > 0 && currentStreak === daysSinceStart) {
             const alreadyHas = existingAchievements.some(a => a.type === 'zero_violations');
             if (!alreadyHas) {
                 newAchievements.push({
