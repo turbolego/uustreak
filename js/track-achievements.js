@@ -48,13 +48,20 @@ async function trackAchievements() {
         for (const project of projects) {
             const achievements = project.achievements || [];
 
-            // Calculate current streak (now returns {days, startDate})
+            // Calculate current streak (now returns {days, startDate, longestStreak, longestStreakStart})
             const streakResult = calculateStreak(project.name, reportList);
             const streak = streakResult.days;
             const streakStartDate = streakResult.startDate;
+            const longestStreak = streakResult.longestStreak;
+            const longestStreakStart = streakResult.longestStreakStart;
             
             // Check for new achievements
-            const newAchievements = checkForNewAchievements(project.name, streak, achievements, { startDate: streakStartDate });
+            const newAchievements = checkForNewAchievements(
+                project.name, 
+                streak, 
+                achievements, 
+                { startDate: streakStartDate, longestStreak, longestStreakStart }
+            );
 
             if (newAchievements.length > 0) {
                 // Add new achievements
@@ -91,26 +98,46 @@ async function trackAchievements() {
  * Calculate current no-violations streak for a project
  * @param {string} projectName - Name of the project
  * @param {array} reportList - List of report filenames
- * @returns {object} - Object with {days, startDate} of current streak
+ * @returns {object} - Object with {days, startDate, longestStreak, longestStreakStart}
  */
 function calculateStreak(projectName, reportList) {
-    // Filter reports for this project and sort by date descending
+    // Filter reports for this project
     const projectReports = reportList
         .filter(filename => !filename.includes('-FAILED.json'))
-        .filter(filename => filename.includes(projectName))
+        .filter(filename => filename.includes(projectName));
+
+    if (projectReports.length === 0) return { days: 0, startDate: null, longestStreak: 0, longestStreakStart: null };
+
+    // Deduplicate reports by date - keep only the newest report per date
+    const reportsByDate = new Map();
+    projectReports.forEach(filename => {
+        const dateMatch = filename.match(/(\d{4}-\d{2}-\d{2})/);
+        if (!dateMatch) return;
+        
+        const date = dateMatch[1];
+        const existing = reportsByDate.get(date);
+        
+        // Keep the report with the latest timestamp for this date
+        if (!existing || filename > existing) {
+            reportsByDate.set(date, filename);
+        }
+    });
+
+    // Convert to array of unique reports, sorted by date descending
+    const uniqueReports = Array.from(reportsByDate.values())
         .sort()
         .reverse();
 
-    if (projectReports.length === 0) return { days: 0, startDate: null };
-
-    let streak = 0;
-    let streakStartDate = null;
+    let currentStreak = 0;
+    let currentStreakStartDate = null;
+    let longestStreak = 0;
+    let longestStreakStart = null;
     let currentDate = new Date();
     currentDate = new Date(currentDate.toISOString().split('T')[0]);
 
-    // Count backwards from today
-    for (let i = 0; i < projectReports.length; i++) {
-        const filename = projectReports[i];
+    // Count backwards from today to find current streak (now with deduplicated dates)
+    for (let i = 0; i < uniqueReports.length; i++) {
+        const filename = uniqueReports[i];
         const dateMatch = filename.match(/(\d{4}-\d{2}-\d{2})/);
         if (!dateMatch) continue;
 
@@ -118,20 +145,26 @@ function calculateStreak(projectName, reportList) {
         const daysDiff = Math.floor((currentDate - reportDate) / (1000 * 60 * 60 * 24));
 
         // If we skip more than 1 day, streak is broken (unless checking past streaks)
-        if (daysDiff > 1 && streak === 0) break;
+        if (daysDiff > 1 && currentStreak === 0) break;
 
         // Check if report has 0 violations
         if (filename.includes('-count-0')) {
-            streak++;
-            streakStartDate = dateMatch[1]; // Update start date as we go back
+            currentStreak++;
+            currentStreakStartDate = dateMatch[1]; // Update start date as we go back
             currentDate = new Date(reportDate);
             currentDate.setDate(currentDate.getDate() - 1);
+            
+            // Track longest streak
+            if (currentStreak > longestStreak) {
+                longestStreak = currentStreak;
+                longestStreakStart = currentStreakStartDate;
+            }
         } else {
-            break; // Violations found, streak ends
+            break; // Violations found, current streak ends
         }
     }
 
-    return { days: streak, startDate: streakStartDate };
+    return { days: currentStreak, startDate: currentStreakStartDate, longestStreak, longestStreakStart };
 }
 
 /**
@@ -139,32 +172,33 @@ function calculateStreak(projectName, reportList) {
  * @param {string} projectName - Name of the project
  * @param {number} currentStreak - Current streak days
  * @param {array} existingAchievements - Existing achievements
- * @param {object} streakData - Object with {startDate, endDate} of current streak
+ * @param {object} streakData - Object with {startDate, longestStreak, longestStreakStart}
  * @returns {array} - New achievements to add
  */
 function checkForNewAchievements(projectName, currentStreak, existingAchievements = [], streakData = {}) {
     const today = new Date().toISOString().split('T')[0];
     const newAchievements = [];
 
-    // Check for zero_violations achievement (perfect score since first day)
-    // Only award if the streak started from the very first report and continues to today
-    if (streakData.startDate && currentStreak >= 1) {
-        // Calculate days since first report
-        const daysSinceStart = calculateDaysSinceDate(streakData.startDate);
+    // Check for longest_streak achievement
+    // Track the longest streak ever achieved
+    if (streakData.longestStreak >= 1) {
+        const existingLongest = existingAchievements.find(a => a.type === 'longest_streak');
+        const existingLongestDays = existingLongest ? parseInt(existingLongest.streakDays) : 0;
         
-        // Only award zero_violations if:
-        // 1. Current streak equals days since start (meaning continuous zero violations)
-        // 2. The streak started very early (we have many days of perfect score)
-        if (daysSinceStart > 0 && currentStreak === daysSinceStart) {
-            const alreadyHas = existingAchievements.some(a => a.type === 'zero_violations');
-            if (!alreadyHas) {
-                newAchievements.push({
-                    type: 'zero_violations',
-                    fromDate: streakData.startDate,
-                    toDate: today,
-                    unlockedDate: today
-                });
-            }
+        // Only create/update if longest streak is better than previous record
+        if (streakData.longestStreak > existingLongestDays) {
+            // Remove old longest_streak achievement if it exists
+            const filteredAchievements = existingAchievements.filter(a => a.type !== 'longest_streak');
+            existingAchievements.length = 0;
+            existingAchievements.push(...filteredAchievements);
+            
+            newAchievements.push({
+                type: 'longest_streak',
+                fromDate: streakData.longestStreakStart,
+                toDate: today,
+                unlockedDate: today,
+                streakDays: streakData.longestStreak
+            });
         }
     }
 

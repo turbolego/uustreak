@@ -36,7 +36,7 @@ function getAchievementIcon(type) {
         'streak_30': '🥉',      // Bronze
         'streak_100': '🥈',     // Silver
         'streak_365': '🥇',     // Gold
-        'zero_violations': '✨', // Perfect
+        'longest_streak': '👑', // Champion
         'improved': '📈'        // Improvement
     };
     return icons[type] || '🏆';
@@ -52,7 +52,7 @@ function getAchievementDescription(achievement) {
         'streak_30': '30 Days Without Violations',
         'streak_100': '100 Days Without Violations',
         'streak_365': '1 Year Without Violations',
-        'zero_violations': 'Zero Violations Achieved',
+        'longest_streak': `Longest Streak: ${achievement.streakDays || 0} Days`,
         'improved': 'Major Improvement'
     };
     return descriptions[achievement.type] || achievement.type;
