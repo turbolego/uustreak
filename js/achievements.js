@@ -52,7 +52,7 @@ function getAchievementDescription(achievement) {
         'streak_30': '30 Days Without Violations',
         'streak_100': '100 Days Without Violations',
         'streak_365': '1 Year Without Violations',
-        'longest_streak': `Longest Streak: ${achievement.streakDays || 0} Days`,
+        'longest_streak': 'Longest Streak',
         'improved': 'Major Improvement'
     };
     return descriptions[achievement.type] || achievement.type;
