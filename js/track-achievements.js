@@ -188,9 +188,9 @@ function checkForNewAchievements(projectName, currentStreak, existingAchievement
         // Only create/update if longest streak is better than previous record
         if (streakData.longestStreak > existingLongestDays) {
             // Remove old longest_streak achievement if it exists
-            const filteredAchievements = existingAchievements.filter(a => a.type !== 'longest_streak');
+            const filteredForLongest = existingAchievements.filter(a => a.type !== 'longest_streak');
             existingAchievements.length = 0;
-            existingAchievements.push(...filteredAchievements);
+            existingAchievements.push(...filteredForLongest);
             
             newAchievements.push({
                 type: 'longest_streak',
