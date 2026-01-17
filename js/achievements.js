@@ -94,7 +94,7 @@ function showAchievementsDialog(projectName, achievements = []) {
                             </div>
                         </div>
                         <div class="achievement-duration">
-                            ${calculateDaysBetween(achievement.fromDate, achievement.toDate)} days
+                            ${achievement.streakDays ? achievement.streakDays : calculateDaysBetween(achievement.fromDate, achievement.toDate)} days
                         </div>
                     </div>
                 `).join('')}
