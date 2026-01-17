@@ -1,0 +1,60 @@
+{
+  "project": "Oppegård kommune",
+  "timestamp": "2026-01-17T02:49:34.646Z",
+  "url": "https://www.nordrefollo.kommune.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"animated bounceOutRight\" id=\"corner_text\" aria-label=\"Hva kan jeg hjelpe deg med?\">Hva kan jeg hjelpe deg med?</span>",
+          "target": [
+            "#corner_text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.63 (foreground color: #dce3e9, background color: #748ea3, font size: 14.3pt (19px), font weight: bold). Expected contrast ratio of 3:1"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h2 class=\"font-weight-normal font-size--16 mr-5 mb-0 d-none d-sm-inline-block\"></h2>",
+          "target": [
+            ".mr-5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}
