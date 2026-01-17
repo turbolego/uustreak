@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-01-16T00:44:00.954Z
+**Timestamp:** 2026-01-17T00:44:22.927Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 3
 
@@ -50,36 +50,36 @@
 - `.skip-content-wrapper`
 - `.cmp-logo__link > .sr-only`
 - `.myey-login-url`
-- `.swiper-slide-duplicate.swiper-slide[data-swiper-slide-index="3"] > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="2560"][loading="lazy"]`
+- `.swiper-slide-duplicate.swiper-slide[data-swiper-slide-index="3"] > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-up-hook-image="[image]"][data-aspect-ratio="1.5"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[title="Arbab Dar og Magnus Birkeland"][loading="lazy"]`
 - `.swiper-slide-duplicate.swiper-slide[data-swiper-slide-index="3"] > .up-hero-carousel__content-wrapper`
-- `.swiper-slide-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[title="Arbab Dar og Magnus Birkeland"][height="2560"]`
+- `.swiper-slide-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-up-hook-image="[image]"][data-aspect-ratio="1.5"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[title="Transaction Trends 2025"][loading="lazy"]`
 - `.swiper-slide-prev > .up-hero-carousel__content-wrapper`
-- `#image-render-bd6c3e038a > .cmp-image__image[height="2560"][loading="lazy"]`
+- `#image-render-bd6c3e038a > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `.swiper-slide-visible > .up-hero-carousel__content-wrapper`
-- `img[height="1648"]`
+- `#image-render-05a7dedcfd > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `.swiper-slide-next > .up-hero-carousel__content-wrapper`
-- `.swiper-slide.up-hero-carousel__slide[data-swiper-slide-index="3"]:nth-child(5) > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="2560"][loading="lazy"]`
+- `.swiper-slide.up-hero-carousel__slide[data-swiper-slide-index="3"]:nth-child(5) > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-up-hook-image="[image]"][data-aspect-ratio="1.5"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[title="Arbab Dar og Magnus Birkeland"][loading="lazy"]`
 - `.swiper-slide.up-hero-carousel__slide[data-swiper-slide-index="3"]:nth-child(5) > .up-hero-carousel__content-wrapper`
-- `.swiper-slide-duplicate-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[title="Arbab Dar og Magnus Birkeland"][height="2560"]`
+- `.swiper-slide-duplicate-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-up-hook-image="[image]"][data-aspect-ratio="1.5"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[title="Transaction Trends 2025"][loading="lazy"]`
 - `.swiper-slide-duplicate-prev > .up-hero-carousel__content-wrapper`
 - `.up-hero-carousel__pagination`
 - `.theme-dark.cmp-container--theme-dark.cmp-container--background-color-e2e`
 - `#promotional-3dc70db03574 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-3dc70db03574 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-5ba8eefd34dc`
-- `#image-render-305f18de9d > .cmp-image__image[height="2560"][loading="lazy"]`
+- `#image-render-305f18de9d > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `#promotional-6a9106fa127d > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-6a9106fa127d > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-2b38bfdff2f7`
-- `#image-render-c924d9e7cf > .cmp-image__image[height="2560"][loading="lazy"]`
+- `#image-render-c924d9e7cf > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `#promotional-375939547c80 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-375939547c80 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-ab618830f8b6`
-- `#image-render-58f30bbef7 > .cmp-image__image[height="2560"][loading="lazy"]`
+- `#image-render-58f30bbef7 > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-aac543142676`
-- `#image-render-d226705429 > .cmp-image__image[height="2560"][loading="lazy"]`
+- `#image-render-d226705429 > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `#promotional-283aef72eff8 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-283aef72eff8 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-1296c62e5384`
@@ -90,7 +90,7 @@
 - `.cmp-subscribe__text`
 - `#button-bc60d627c8a2`
 - `.cmp-contentGrid__title`
-- `#image-render-f4369d69e0 > .cmp-image__image[title="Arbab Dar og Magnus Birkeland"][height="2560"]`
+- `#image-render-f4369d69e0 > .cmp-image__image[title="Arbab Dar og Magnus Birkeland"][loading="lazy"]`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__title`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > p`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date__text`
@@ -98,7 +98,7 @@
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text:nth-child(4)`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor:nth-child(5)`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
-- `#image-render-7bd439cccd > .cmp-image__image[height="2560"][loading="lazy"]`
+- `#image-render-7bd439cccd > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__title`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > p`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date__text`

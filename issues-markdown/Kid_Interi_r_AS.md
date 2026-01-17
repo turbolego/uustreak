@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-01-16T00:42:57.833Z
+**Timestamp:** 2026-01-17T00:38:41.239Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -28,11 +28,10 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.i5.is-selected.gn:nth-child(1) > .c.c4.bz > .ca.ao[data-test-id="product-link"] > .e1`
 - `#ot-bnr-hdr-id-C0001`
 
 ### Images must have alternative text
@@ -41,13 +40,12 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `a[href$="eden"][data-scope-link="true"]:nth-child(1) > .fd.fc.fb > .fe.ff.el`
+- `.a7[href$="eden"][data-scope-link="true"]:nth-child(1) > .fd.fc.fb > .fe.ff.el`
 - `.gq > .fe.ff.el`
-- `a[href$="julesengetoy"][data-scope-link="true"]:nth-child(1) > .gc.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -80,16 +78,14 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 6
+- **Count:** 4
 
 #### Affected Elements:
 
-- `a[href$="eden"][data-scope-link="true"]:nth-child(1)`
+- `.a7[href$="eden"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="eden"]`
-- `a[href$="kjaledyr"][data-scope-link="true"]:nth-child(1)`
+- `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="kjaledyr"]`
-- `a[href$="julesengetoy"][data-scope-link="true"]:nth-child(1)`
-- `.ca.s[href$="julesengetoy"]`
 
 ### All page content should be contained by landmarks
 

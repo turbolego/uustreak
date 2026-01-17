@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-01-16T00:42:47.880Z
+**Timestamp:** 2026-01-17T00:33:40.949Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
 **Total Violations:** 6
 
@@ -57,8 +57,8 @@
 
 #### Affected Elements:
 
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-7b8ad733=""] > .tn-list.content-list[data-v-5bd1d50c=""] > ul`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-7b8ad733=""] > .tn-list.content-list[data-v-5bd1d50c=""] > ul`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-7b8ad733=""] > .tn-list.content-list[data-v-797e5417=""]`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-7b8ad733=""] > .tn-list.content-list[data-v-797e5417=""]`
 
 ### <li> elements must be contained in a <ul> or <ol>
 
@@ -74,9 +74,9 @@
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(2) > .main-stock.stock[size="14px"]`
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(3) > .main-stock.stock[size="14px"]`
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(4) > .main-stock.stock[size="14px"]`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-7b8ad733=""] > .tn-list.content-list[data-v-5bd1d50c=""] > ul > div[data-v-5bd1d50c=""] > .tn-list--item.checkmark.m`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-7b8ad733=""] > .tn-list.content-list[data-v-5bd1d50c=""] > ul > div[data-v-5bd1d50c=""] > .tn-list--item.checkmark.m:nth-child(1)`
-- `.tn-list--item.checkmark.m:nth-child(2)`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-7b8ad733=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-1d528241=""] > .tn-listitem.content-m.m`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-7b8ad733=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-1d528241=""] > .tn-listitem.content-m.m:nth-child(1)`
+- `.tn-listitem.content-m.m:nth-child(2)`
 
 ### All page content should be contained by landmarks
 
