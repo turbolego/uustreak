@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2026-01-17T00:25:57.834Z
+**Timestamp:** 2026-01-18T00:30:03.698Z
 **URL:** [https://www.nille.no/#](https://www.nille.no/#)
 **Total Violations:** 5
 
@@ -52,9 +52,9 @@
 
 #### Affected Elements:
 
-- `a[href$="soverom/"]`
-- `a[href$="julesalg2/"][aria-label=""][title=""]`
-- `a[href$="utvalgte-varer/"][aria-label=""][title=""]`
+- `div[data-swiper-slide-index="0"] > a[aria-label=""][title=""]`
+- `.swiper-slide-prev > a[aria-label=""][title=""]`
+- `a[href$="kjokken/"]`
 
 ### All page content should be contained by landmarks
 
@@ -67,4 +67,4 @@
 #### Affected Elements:
 
 - `.topBar--hOWYROG`
-- `.htmlDrawerWrapper--rQ6eisE`
+- `.content--QC6mDoR`

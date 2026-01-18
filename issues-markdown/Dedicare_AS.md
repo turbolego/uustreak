@@ -1,10 +1,22 @@
 # WCAG Violations Report for Dedicare AS
 
-**Timestamp:** 2026-01-17T00:41:43.922Z
+**Timestamp:** 2026-01-18T00:40:54.243Z
 **URL:** [https://www.dedicare.no/#](https://www.dedicare.no/#)
-**Total Violations:** 7
+**Total Violations:** 10
 
 ## Violation Details
+
+### ARIA role should be appropriate for the element
+
+- **Impact:** minor
+- **Description:** Ensure role attribute has an appropriate value for the element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#declineButton`
 
 ### Buttons must have discernible text
 
@@ -24,16 +36,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 6
+- **Count:** 1
 
 #### Affected Elements:
 
 - `.col-md-10 > .button-color-primary.button`
-- `#input_17_5`
-- `#gform_submit_button_17`
-- `.half-half-text-cta`
-- `.carousel-item.active > .carousel-background.hide-background-mobile.align-items-sm-center > .carousel-content > .button-color-primary.button`
-- `.text-image-overlay-text-content > .button-color-primary.button`
 
 ### Frames with focusable content must not have tabindex=-1
 
@@ -59,6 +66,30 @@
 
 - `.page-content > h3`
 - `.col-xl-4.col-md-12.col-lg-12:nth-child(2) > .column-section-box-height.column-section-box > .column-section-content.link-color-primary.page-content > h4`
+
+### Document should not have more than one banner landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has at most one banner landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#coiOverlay`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#coiOverlay`
 
 ### Links must have discernible text
 
