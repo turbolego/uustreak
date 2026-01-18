@@ -1,0 +1,38 @@
+{
+  "project": "Skranevatnet skole",
+  "timestamp": "2026-01-18T01:04:01.876Z",
+  "url": "https://www.bergen.kommune.no/omkommunen/avdelinger/skranevatnet-skole/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<nav class=\"js_main_nav main_nav main_nav_collapsed\">",
+          "target": [
+            ".js_main_nav"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<main id=\"innhold\" class=\"smMa desktop_centered\" tabindex=\"-1\">",
+          "target": [
+            "#innhold"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}
