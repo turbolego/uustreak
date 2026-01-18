@@ -1,0 +1,919 @@
+{
+  "project": "Den Nationale Scene AS",
+  "timestamp": "2026-01-18T03:10:23.103Z",
+  "url": "https://dns.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "empty-table-header",
+      "impact": "minor",
+      "description": "Ensure table headers have discernible text",
+      "help": "Table header text should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/empty-table-header?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<th><span class=\"next\">&gt;</span>               </th>",
+          "target": [
+            ".month1 > thead > .caption > th:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers"
+        },
+        {
+          "html": "<th><span class=\"prev\">&lt;</span>       </th>",
+          "target": [
+            ".month2 > thead > .caption > th:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe src=\"about:blank\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" style=\"width: 100%; height: 470px;\" data-dojo-attach-point=\"iframeModalContainer\"></iframe>",
+          "target": [
+            "iframe[data-dojo-attach-point=\"iframeModalContainer\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 11,
+      "nodes": [
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/sa-som-i-himmelen/\">",
+          "target": [
+            "div[data-postid=\"14843\"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/den-utrulege-historia-om-den-kjempestore-paera/\">",
+          "target": [
+            "div[data-postid=\"14841\"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/gitarmannen/\">",
+          "target": [
+            "div[data-postid=\"17008\"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/brorne-lovehjarte/\">",
+          "target": [
+            "div[data-postid=\"16994\"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/doktor-armauer-hansen/\">",
+          "target": [
+            "div[data-postid=\"17010\"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/kentucky-daze/\">",
+          "target": [
+            "div[data-postid=\"17095\"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/til-stjernene-fell-ned/\">",
+          "target": [
+            "div[data-postid=\"17012\"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/the-verge/\">",
+          "target": [
+            "div[data-postid=\"17011\"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"social\" href=\"https://www.instagram.com/dennationalescene/?hl=nb&quot;\" target=\"_blank\" rel=\"noopener\" tabindex=\"-1\"><i class=\"fab fa-instagram\" alt=\"Gå til Instagram\"></i></a>",
+          "target": [
+            ".social[rel=\"noopener\"][target=\"_blank\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"social\" href=\"https://www.facebook.com/teateret/\" target=\"_blank\" rel=\"noopener\" tabindex=\"-1\"><i class=\"fab fa-facebook-square\" alt=\"Gå til Facebook\"></i></a>",
+          "target": [
+            ".social[rel=\"noopener\"][target=\"_blank\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"social\" href=\"https://www.linkedin.com/company/den-nationale-scene/\" target=\"_blank\" rel=\"noopener\" tabindex=\"-1\"><i class=\"fa-brands fa-linkedin\" alt=\"Gå til LinkedIn\"></i></a>",
+          "target": [
+            ".social[rel=\"noopener\"][target=\"_blank\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 92,
+      "nodes": [
+        {
+          "html": "<a href=\"#\" class=\"close_sidemenu\" title=\"Lukk meny\" aria-label=\"Lukk meny\"><span class=\"dashicons dashicons-no-alt\"></span></a>",
+          "target": [
+            ".close_sidemenu"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"wpfront-notification-bar\" class=\"wpfront-notification-bar wpfront-fixed top\" style=\"top: 0px; height: auto; position: relative; visibility: visible;\">",
+          "target": [
+            "#wpfront-notification-bar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"skip-link screen-reader-text\" href=\"#skip-to-content\" tabindex=\"-1\">Hopp til innhold</a>",
+          "target": [
+            ".skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"dtx-header-logo\">",
+          "target": [
+            "#dtx-header-logo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"header-links\">",
+          "target": [
+            ".header-links"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"wpb_column vc_column_container vc_col-sm-3\">",
+          "target": [
+            ".cal-month > .vc_col-sm-3.wpb_column.vc_column_container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"sel__placeholder sel__placeholder-calendar-sel__placeholderect-date\" data-placeholder=\"Velg dag\">Velg dag</span>",
+          "target": [
+            ".sel__placeholder-calendar-sel__placeholderect-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"sel__placeholder sel__placeholder-calendar-sel__placeholderect-production-input\" data-placeholder=\"Velg forestilling\">Velg forestilling</span>",
+          "target": [
+            ".sel__placeholder-calendar-sel__placeholderect-production-input"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"default-top\">Vennligst velg ein datoperiode</div>",
+          "target": [
+            ".default-top"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<th>                   <span class=\"prev\">&lt;                   </span>               </th>",
+          "target": [
+            ".month1 > thead > .caption > th:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<th colspan=\"5\" class=\"month-name\"><div class=\"month-element\">januar</div> <div class=\"month-element\">2026</div></th>",
+          "target": [
+            ".month1 > thead > .caption > .month-name[colspan=\"5\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<tr class=\"week-name\"><th>ma</th><th>ti</th><th>on</th><th>to</th><th>fr</th><th>lø</th><th>sø</th>       </tr>",
+          "target": [
+            ".month1 > thead > .week-name"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1767237013108\" data-tooltip=\"\" class=\"day toMonth  valid \">1</div></td>",
+          "target": [
+            ".month1 > tbody > tr:nth-child(1) > td:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1767323413108\" data-tooltip=\"\" class=\"day toMonth  valid \">2</div></td>",
+          "target": [
+            ".month1 > tbody > tr:nth-child(1) > td:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1767409813108\" data-tooltip=\"\" class=\"day toMonth  valid \">3</div></td>",
+          "target": [
+            ".month1 > tbody > tr:nth-child(1) > td:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1767496213108\" data-tooltip=\"\" class=\"day toMonth  valid \">4</div></td>",
+          "target": [
+            ".month1 > tbody > tr:nth-child(1) > td:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<tr>",
+          "target": [
+            ".month1 > tbody > tr:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<tr>",
+          "target": [
+            ".month1 > tbody > tr:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<tr>",
+          "target": [
+            ".month1 > tbody > tr:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1769397013108\" data-tooltip=\"\" class=\"day toMonth  valid \">26</div></td>",
+          "target": [
+            ".month1 > tbody > tr:nth-child(5) > td:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1769483413108\" data-tooltip=\"\" class=\"day toMonth  valid \">27</div></td>",
+          "target": [
+            ".month1 > tbody > tr:nth-child(5) > td:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1769569813108\" data-tooltip=\"\" class=\"day toMonth  valid \">28</div></td>",
+          "target": [
+            ".month1 > tbody > tr:nth-child(5) > td:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1769656213108\" data-tooltip=\"\" class=\"day toMonth  valid \">29</div></td>",
+          "target": [
+            ".month1 > tbody > tr:nth-child(5) > td:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1769742613108\" data-tooltip=\"\" class=\"day toMonth  valid \">30</div></td>",
+          "target": [
+            ".month1 > tbody > tr:nth-child(5) > td:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1769829013108\" data-tooltip=\"\" class=\"day toMonth  valid \">31</div></td>",
+          "target": [
+            ".month1 > tbody > tr:nth-child(5) > td:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<th colspan=\"5\" class=\"month-name\"><div class=\"month-element\">februar</div> <div class=\"month-element\">2026</div></th>",
+          "target": [
+            ".month2 > thead > .caption > .month-name[colspan=\"5\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<th>           <span class=\"next\">&gt;</span>       </th>",
+          "target": [
+            ".month2 > thead > .caption > th:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<tr class=\"week-name\"><th>ma</th><th>ti</th><th>on</th><th>to</th><th>fr</th><th>lø</th><th>sø</th>   </tr>",
+          "target": [
+            ".month2 > thead > .week-name"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1769915413108\" data-tooltip=\"\" class=\"day toMonth  valid \">1</div></td>",
+          "target": [
+            ".month2 > tbody > tr:nth-child(1) > td:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<tr>",
+          "target": [
+            ".month2 > tbody > tr:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<tr>",
+          "target": [
+            ".month2 > tbody > tr:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<tr>",
+          "target": [
+            ".month2 > tbody > tr:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1771816213108\" data-tooltip=\"\" class=\"day toMonth  valid \">23</div></td>",
+          "target": [
+            ".month2 > tbody > tr:nth-child(5) > td:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1771902613108\" data-tooltip=\"\" class=\"day toMonth  valid \">24</div></td>",
+          "target": [
+            ".month2 > tbody > tr:nth-child(5) > td:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1771989013108\" data-tooltip=\"\" class=\"day toMonth  valid \">25</div></td>",
+          "target": [
+            ".month2 > tbody > tr:nth-child(5) > td:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1772075413108\" data-tooltip=\"\" class=\"day toMonth  valid \">26</div></td>",
+          "target": [
+            ".month2 > tbody > tr:nth-child(5) > td:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1772161813108\" data-tooltip=\"\" class=\"day toMonth  valid \">27</div></td>",
+          "target": [
+            ".month2 > tbody > tr:nth-child(5) > td:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td><div time=\"1772248213108\" data-tooltip=\"\" class=\"day toMonth  valid \">28</div></td>",
+          "target": [
+            ".month2 > tbody > tr:nth-child(5) > td:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-spillested\">\n    \t\t\t\t\t\t<p>Forum Scene</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"14843\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-fritekst\">\n    \t\t\t\t\t\t<p>Spilles frem til 14. februar</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"14843\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/sa-som-i-himmelen/\"><h2>Så som i himmelen</h2></a>",
+          "target": [
+            "div[data-postid=\"14843\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cal-ticketlink\">\n                                        <p><a href=\"https://dns.no/forestillinger/sa-som-i-himmelen/\">Kjøp billetter <i class=\"fal fa-long-arrow-right\"></i></a></p>\n                                    </div>",
+          "target": [
+            "div[data-postid=\"14843\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-spillested\">\n    \t\t\t\t\t\t<p>Det Vestnorske Teateret</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"14841\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-fritekst\">\n    \t\t\t\t\t\t<p>Ledige billetter i januar</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"14841\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/den-utrulege-historia-om-den-kjempestore-paera/\"><h2>Den utrulege historia om den kjempestore pæra</h2></a>",
+          "target": [
+            "div[data-postid=\"14841\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cal-ticketlink\">\n                                        <p><a href=\"https://dns.no/forestillinger/den-utrulege-historia-om-den-kjempestore-paera/\">Kjøp billetter <i class=\"fal fa-long-arrow-right\"></i></a></p>\n                                    </div>",
+          "target": [
+            "div[data-postid=\"14841\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-spillested\">\n    \t\t\t\t\t\t<p>Sardinen USF</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"17008\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-fritekst\">\n    \t\t\t\t\t\t<p>Premiere 21. januar</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"17008\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/gitarmannen/\"><h2>Gitarmannen</h2></a>",
+          "target": [
+            "div[data-postid=\"17008\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cal-ticketlink\">\n                                        <p><a href=\"https://dns.no/forestillinger/gitarmannen/\">Kjøp billetter <i class=\"fal fa-long-arrow-right\"></i></a></p>\n                                    </div>",
+          "target": [
+            "div[data-postid=\"17008\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-spillested\">\n    \t\t\t\t\t\t<p>Fana kulturhus</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"16994\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-fritekst\">\n    \t\t\t\t\t\t<p>Premiere 7. februar</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"16994\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/brorne-lovehjarte/\"><h2>Brødrene Løvehjarte</h2></a>",
+          "target": [
+            "div[data-postid=\"16994\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cal-ticketlink\">\n                                        <p><a href=\"https://dns.no/forestillinger/brorne-lovehjarte/\">Kjøp billetter <i class=\"fal fa-long-arrow-right\"></i></a></p>\n                                    </div>",
+          "target": [
+            "div[data-postid=\"16994\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-spillested\">\n    \t\t\t\t\t\t<p>Marinehagen</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"17010\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-fritekst\">\n    \t\t\t\t\t\t<p>Urpremiere 5. mars</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"17010\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/doktor-armauer-hansen/\"><h2>Doktor Armauer Hansen</h2></a>",
+          "target": [
+            "div[data-postid=\"17010\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cal-ticketlink\">\n                                        <p><a href=\"https://dns.no/forestillinger/doktor-armauer-hansen/\">Kjøp billetter <i class=\"fal fa-long-arrow-right\"></i></a></p>\n                                    </div>",
+          "target": [
+            "div[data-postid=\"17010\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-spillested\">\n    \t\t\t\t\t\t<p>Cornerteatret</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"17095\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-fritekst\">\n    \t\t\t\t\t\t<p>Gjestespill fra 23. februar</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"17095\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/kentucky-daze/\"><h2>Kentucky Daze</h2></a>",
+          "target": [
+            "div[data-postid=\"17095\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cal-ticketlink\">\n                                        <p><a href=\"https://dns.no/forestillinger/kentucky-daze/\">Kjøp billetter <i class=\"fal fa-long-arrow-right\"></i></a></p>\n                                    </div>",
+          "target": [
+            "div[data-postid=\"17095\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-spillested\">\n    \t\t\t\t\t\t<p>Skolten</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"17012\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-fritekst\">\n    \t\t\t\t\t\t<p>Norgespremiere 8. mai</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"17012\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/til-stjernene-fell-ned/\"><h2>Til stjernene fell ned</h2></a>",
+          "target": [
+            "div[data-postid=\"17012\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cal-ticketlink\">\n                                        <p><a href=\"https://dns.no/forestillinger/til-stjernene-fell-ned/\">Kjøp billetter <i class=\"fal fa-long-arrow-right\"></i></a></p>\n                                    </div>",
+          "target": [
+            "div[data-postid=\"17012\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-spillested\">\n    \t\t\t\t\t\t<p>Stenersen (Kode)</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"17011\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"attribute-fritekst\">\n    \t\t\t\t\t\t<p>Norgespremiere 19. mai</p>\n\t\t\t\t\t</div>",
+          "target": [
+            "div[data-postid=\"17011\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://dns.no/forestillinger/the-verge/\"><h2>The Verge</h2></a>",
+          "target": [
+            "div[data-postid=\"17011\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cal-ticketlink\">\n                                        <p><a href=\"https://dns.no/forestillinger/the-verge/\">Kjøp billetter <i class=\"fal fa-long-arrow-right\"></i></a></p>\n                                    </div>",
+          "target": [
+            "div[data-postid=\"17011\"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"wpb_text_column wpb_content_element  all-events\">\n\t\t<div class=\"wpb_wrapper\">\n\t\t\t<p><a class=\"tabable\" tabindex=\"9\" href=\"https://dns.no/forestillinger/\">Se alle forestillinger <i class=\"fal fa-long-arrow-right\"></i></a></p>\n\n\t\t</div>\n\t</div>",
+          "target": [
+            ".vc_custom_1597326627476 > .vc_col-has-fill.vc_col-sm-12.wpb_column > .vc_custom_1597326586251.vc_column-inner > .wpb_wrapper > .all-events.wpb_text_column.wpb_content_element"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"vc_row wpb_row vc_row-fluid padded-section vc_custom_1700029085981\">",
+          "target": [
+            ".vc_custom_1700029085981"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-vc-full-width=\"true\" data-vc-full-width-init=\"true\" data-vc-stretch-content=\"true\" class=\"vc_row wpb_row vc_row-fluid forestillinger vc_custom_1678087387650\" style=\"position: relative; left: -75.2188px; box-sizing: border-box; width: 1280px; max-width: 1280px;\">",
+          "target": [
+            ".vc_custom_1678087387650"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"wpb_text_column wpb_content_element  vc_custom_1701252272509\">\n\t\t<div class=\"wpb_wrapper\">\n\t\t\t<h2>Aktuelt</h2>\n\n\t\t</div>\n\t</div>",
+          "target": [
+            ".vc_custom_1701252272509"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"vc_gitem-zone vc_gitem-zone-b vc_custom_1538040546699 vc-gitem-zone-height-mode-auto vc_gitem-is-link\">",
+          "target": [
+            ".js-redirect-post > .vc_grid.vc_grid-gutter-15px.vc_pageable-wrapper > .vc_pageable-slide-wrapper.vc_clearfix[data-vc-grid-content=\"true\"] > .vc_grid-item.vc_grid-item-zone-c-bottom.vc_visible-item > .vc_grid-item-mini.vc_clearfix > .vc_gitem-animated-block.vc_gitem-animate.vc_gitem-animate-fadeIn > .vc_gitem-zone-b.vc_custom_1538040546699.vc-gitem-zone-height-mode-auto"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title\"><h3 style=\"text-align: left\"><a href=\"https://modernisering.dns.no/\" class=\"vc_gitem-link\" title=\"Modernisering og oppussing av DNS\">Modernisering og oppussing av DNS</a></h3></div>",
+          "target": [
+            ".js-redirect-post > .vc_grid.vc_grid-gutter-15px.vc_pageable-wrapper > .vc_pageable-slide-wrapper.vc_clearfix[data-vc-grid-content=\"true\"] > .vc_grid-item.vc_grid-item-zone-c-bottom.vc_visible-item > .vc_grid-item-mini.vc_clearfix > .vc_gitem-zone-c.vc_gitem-zone > .vc_gitem-zone-mini > .vc_gitem-row-position-top.vc_gitem_row.vc_row > .vc_gitem-col.vc_gitem-col-align-.vc_col-sm-12 > .vc_gitem-post-data-source-post_title.vc_custom_heading.vc_gitem-post-data"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_excerpt\"><p style=\"text-align: left\"></p><p>Teaterbygningen på Engen skal moderniseres og rustes opp – les mer på prosjektets hjemmeside.</p>\n<p></p></div>",
+          "target": [
+            ".js-redirect-post > .vc_grid.vc_grid-gutter-15px.vc_pageable-wrapper > .vc_pageable-slide-wrapper.vc_clearfix[data-vc-grid-content=\"true\"] > .vc_grid-item.vc_grid-item-zone-c-bottom.vc_visible-item > .vc_grid-item-mini.vc_clearfix > .vc_gitem-zone-c.vc_gitem-zone > .vc_gitem-zone-mini > .vc_gitem-row-position-top.vc_gitem_row.vc_row > .vc_gitem-col.vc_gitem-col-align-.vc_col-sm-12 > .vc_gitem-post-data-source-post_excerpt.vc_custom_heading.vc_gitem-post-data"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"vc_gitem-zone vc_gitem-zone-b vc_custom_1538040546699 vc-gitem-zone-height-mode-auto vc_gitem-is-link\">",
+          "target": [
+            ".vc_col-sm-4.vc_grid-item.vc_grid-item-zone-c-bottom:nth-child(1) > .vc_grid-item-mini.vc_clearfix > .vc_gitem-animated-block.vc_gitem-animate.vc_gitem-animate-fadeIn > .vc_gitem-zone-b.vc_custom_1538040546699.vc-gitem-zone-height-mode-auto"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title\">",
+          "target": [
+            ".vc_col-sm-4.vc_grid-item.vc_grid-item-zone-c-bottom:nth-child(1) > .vc_grid-item-mini.vc_clearfix > .vc_gitem-zone-c.vc_gitem-zone > .vc_gitem-zone-mini > .vc_gitem-row-position-top.vc_gitem_row.vc_row > .vc_gitem-col.vc_gitem-col-align-.vc_col-sm-12 > .vc_gitem-post-data-source-post_title.vc_custom_heading.vc_gitem-post-data"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_excerpt\">",
+          "target": [
+            ".vc_col-sm-4.vc_grid-item.vc_grid-item-zone-c-bottom:nth-child(1) > .vc_grid-item-mini.vc_clearfix > .vc_gitem-zone-c.vc_gitem-zone > .vc_gitem-zone-mini > .vc_gitem-row-position-top.vc_gitem_row.vc_row > .vc_gitem-col.vc_gitem-col-align-.vc_col-sm-12 > .vc_gitem-post-data-source-post_excerpt.vc_custom_heading.vc_gitem-post-data"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"vc_gitem-zone vc_gitem-zone-b vc_custom_1538040546699 vc-gitem-zone-height-mode-auto vc_gitem-is-link\">",
+          "target": [
+            ".vc_col-sm-4.vc_grid-item.vc_grid-item-zone-c-bottom:nth-child(2) > .vc_grid-item-mini.vc_clearfix > .vc_gitem-animated-block.vc_gitem-animate.vc_gitem-animate-fadeIn > .vc_gitem-zone-b.vc_custom_1538040546699.vc-gitem-zone-height-mode-auto"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title\"><h3 style=\"text-align: left\"><a href=\"https://dns.no/takk-for-2025-velkommen-til-2026/\" class=\"vc_gitem-link\" title=\"Takk for 2025 – velkommen til 2026!\">Takk for 2025 – velkommen til 2026!</a></h3></div>",
+          "target": [
+            ".vc_col-sm-4.vc_grid-item.vc_grid-item-zone-c-bottom:nth-child(2) > .vc_grid-item-mini.vc_clearfix > .vc_gitem-zone-c.vc_gitem-zone > .vc_gitem-zone-mini > .vc_gitem-row-position-top.vc_gitem_row.vc_row > .vc_gitem-col.vc_gitem-col-align-.vc_col-sm-12 > .vc_gitem-post-data-source-post_title.vc_custom_heading.vc_gitem-post-data"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_excerpt\"><p style=\"text-align: left\"></p><p>Ei helsing og takk til publikum frå teatersjef Solrun Toft Iversen.</p>\n<p></p></div>",
+          "target": [
+            ".vc_col-sm-4.vc_grid-item.vc_grid-item-zone-c-bottom:nth-child(2) > .vc_grid-item-mini.vc_clearfix > .vc_gitem-zone-c.vc_gitem-zone > .vc_gitem-zone-mini > .vc_gitem-row-position-top.vc_gitem_row.vc_row > .vc_gitem-col.vc_gitem-col-align-.vc_col-sm-12 > .vc_gitem-post-data-source-post_excerpt.vc_custom_heading.vc_gitem-post-data"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"vc_gitem-zone vc_gitem-zone-b vc_custom_1538040546699 vc-gitem-zone-height-mode-auto vc_gitem-is-link\">",
+          "target": [
+            ".vc_col-sm-4.vc_grid-item.vc_grid-item-zone-c-bottom:nth-child(3) > .vc_grid-item-mini.vc_clearfix > .vc_gitem-animated-block.vc_gitem-animate.vc_gitem-animate-fadeIn > .vc_gitem-zone-b.vc_custom_1538040546699.vc-gitem-zone-height-mode-auto"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title\">",
+          "target": [
+            ".vc_col-sm-4.vc_grid-item.vc_grid-item-zone-c-bottom:nth-child(3) > .vc_grid-item-mini.vc_clearfix > .vc_gitem-zone-c.vc_gitem-zone > .vc_gitem-zone-mini > .vc_gitem-row-position-top.vc_gitem_row.vc_row > .vc_gitem-col.vc_gitem-col-align-.vc_col-sm-12 > .vc_gitem-post-data-source-post_title.vc_custom_heading.vc_gitem-post-data"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_excerpt\"><p style=\"text-align: left\"></p><p>Eit møte mellom Jon Fosse og Bjørn Willberg Andersen vart til ein tekst, og no kan publikum oppleve framsyninga Gitarmannen på Sardinen USF.</p>\n<p></p></div>",
+          "target": [
+            ".vc_col-sm-4.vc_grid-item.vc_grid-item-zone-c-bottom:nth-child(3) > .vc_grid-item-mini.vc_clearfix > .vc_gitem-zone-c.vc_gitem-zone > .vc_gitem-zone-mini > .vc_gitem-row-position-top.vc_gitem_row.vc_row > .vc_gitem-col.vc_gitem-col-align-.vc_col-sm-12 > .vc_gitem-post-data-source-post_excerpt.vc_custom_heading.vc_gitem-post-data"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"vc_row wpb_row vc_inner vc_row-fluid\">",
+          "target": [
+            ".padded-section[data-vc-full-width=\"true\"][data-vc-full-width-init=\"true\"] > .vc_col-sm-12.wpb_column.vc_column_container > .vc_column-inner > .wpb_wrapper > .vc_inner.wpb_row.vc_row-fluid:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"vc_row wpb_row vc_row-fluid padded-section vc_custom_1750769162252\">",
+          "target": [
+            ".vc_custom_1750769162252"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"content__titleDescription\">\n            <div data-dojo-attach-point=\"descriptionContainer\"><h3 style=\"text-align:center;\"><strong>Få oppdatert informasjon og gode tilbud fra DNS</strong></h3></div>\n        </div>",
+          "target": [
+            "iframe[data-dojo-attach-point=\"iframeModalContainer\"]",
+            ".content__titleDescription"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"field-wrapper email-field\" id=\"uniqName_3_0\" widgetid=\"uniqName_3_0\">\n    <label for=\"mc-EMAIL\">E-post</label>\n    <input type=\"email\" name=\"EMAIL\" value=\"\" id=\"mc-EMAIL\" data-dojo-attach-point=\"emailInput\">\n<div class=\"invalid-error\"></div></div>",
+          "target": [
+            "iframe[data-dojo-attach-point=\"iframeModalContainer\"]",
+            "#uniqName_3_0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"content__footer\" data-dojo-attach-point=\"footerContainer\"><p class=\"small-text\">DNS sender nyhetsbrev ca. en gang i uken, og du kan når som helst melde deg av.</p></div>",
+          "target": [
+            "iframe[data-dojo-attach-point=\"iframeModalContainer\"]",
+            ".content__footer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"content__monkeyRewards\" id=\"dijit__TemplatedMixin_2\" widgetid=\"dijit__TemplatedMixin_2\">",
+          "target": [
+            "iframe[data-dojo-attach-point=\"iframeModalContainer\"]",
+            "#dijit__TemplatedMixin_2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "tabindex",
+      "impact": "serious",
+      "description": "Ensure tabindex attribute values are not greater than 0",
+      "help": "Elements should not have tabindex greater than zero",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/tabindex?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 10,
+      "nodes": [
+        {
+          "html": "<a href=\"#\" id=\"calendar-show-calendar\" tabindex=\"1\">Se kalender/ Velg dato</a>",
+          "target": [
+            "#calendar-show-calendar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<div class=\"sel sel-calendar-select-date\" tabindex=\"2\">",
+          "target": [
+            ".sel-calendar-select-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<div class=\"sel sel-calendar-select-production-input\" tabindex=\"4\">",
+          "target": [
+            ".sel-calendar-select-production-input"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a class=\"tabable\" tabindex=\"9\" href=\"https://dns.no/forestillinger/\">Se alle forestillinger <i class=\"fal fa-long-arrow-right\"></i></a>",
+          "target": [
+            ".tabable[href$=\"forestillinger/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a class=\"tabable\" tabindex=\"11\" href=\"https://dns.no/opplev-mer/arrangementer/\">Se alle arrangement <i class=\"fal fa-long-arrow-right\"></i></a>",
+          "target": [
+            ".vc_custom_1678087387650 > .vc_col-has-fill.vc_col-sm-12.wpb_column > .vc_custom_1597326586251.vc_column-inner > .wpb_wrapper > .all-events.wpb_text_column.wpb_content_element > .wpb_wrapper > p > .tabable"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a class=\"tabable\" tabindex=\"14\" href=\"https://dns.no/nyheter/\">Se alle nyheter<i class=\"fal fa-long-arrow-right\"></i></a>",
+          "target": [
+            "a[href$=\"nyheter/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a href=\"https://dns.no/kontakt/\" tabindex=\"16\">Se all kontaktinformasjon</a>",
+          "target": [
+            "p:nth-child(2) > a[href$=\"kontakt/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a tabindex=\"17\" href=\"https://www.google.c...\" target=\"_blank\" rel=\"noopener\">",
+          "target": [
+            "p:nth-child(2) > a[rel=\"noopener\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a tabindex=\"18\" href=\"https://dns.no/nyhetsbrev/\" target=\"_blank\" rel=\"noopener\">Meld deg på vårt nyhetsbrev</a>",
+          "target": [
+            "a[href$=\"nyhetsbrev/\"][rel=\"noopener\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a tabindex=\"19\" href=\"https://dns.no/gavekort/\" rel=\"noopener\">Gi teatermagi i gave</a>",
+          "target": [
+            "a[href$=\"gavekort/\"][rel=\"noopener\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        }
+      ]
+    }
+  ]
+}
