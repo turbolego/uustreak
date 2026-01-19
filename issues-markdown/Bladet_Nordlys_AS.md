@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-01-18T00:35:14.326Z
+**Timestamp:** 2026-01-19T00:35:59.390Z
 **URL:** [https://www.nordlys.no/#](https://www.nordlys.no/#)
 **Total Violations:** 4
 
@@ -18,17 +18,17 @@
 
 - `#eaframe`
 
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+### Links must be distinguishable without relying on color
 
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
+- **Impact:** serious
+- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
+- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="7"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `#sp_message_iframe_1422940, #no-hover`
 
 ### Elements marked as presentational should be consistently ignored
 

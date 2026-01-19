@@ -1,6 +1,6 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2026-01-18T00:41:32.544Z
+**Timestamp:** 2026-01-19T00:42:04.400Z
 **URL:** [https://dns.no/#](https://dns.no/#)
 **Total Violations:** 5
 
@@ -41,14 +41,14 @@
 
 #### Affected Elements:
 
-- `div[data-postid="14843"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
-- `div[data-postid="14841"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
-- `div[data-postid="17008"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
-- `div[data-postid="16994"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
-- `div[data-postid="17010"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
-- `div[data-postid="17095"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
-- `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
-- `div[data-postid="17011"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible > figure > a`
+- `div[data-postid="14843"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn > figure > a`
+- `div[data-postid="14841"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn > figure > a`
+- `div[data-postid="17008"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn > figure > a`
+- `div[data-postid="16994"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn > figure > a`
+- `div[data-postid="17010"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn > figure > a`
+- `div[data-postid="17095"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn > figure > a`
+- `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn > figure > a`
+- `div[data-postid="17011"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn > figure > a`
 - `.social[rel="noopener"][target="_blank"]:nth-child(1)`
 - `.social[rel="noopener"][target="_blank"]:nth-child(2)`
 - `.social[rel="noopener"][target="_blank"]:nth-child(3)`
