@@ -1,22 +1,10 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2026-01-19T00:27:12.024Z
+**Timestamp:** 2026-01-20T00:30:01.101Z
 **URL:** [https://bymuseet.no/#](https://bymuseet.no/#)
 **Total Violations:** 8
 
 ## Violation Details
-
-### Elements must only use supported ARIA attributes
-
-- **Impact:** critical
-- **Description:** Ensure an element's role supports its ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#slick-slide00 > .vimeo-wrapper > iframe, .OverlayBase_module_overlayWrapper__42ef25fe`
 
 ### ARIA role should be appropriate for the element
 
@@ -81,17 +69,18 @@
 
 - `#slick-slide00 > .vimeo-wrapper > iframe`
 
-### Heading levels should only increase by one
+### Document should have one main landmark
 
 - **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Description:** Ensure the document has a main landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.culture-for-all > .container > .section-title`
+- `html`
+- `#slick-slide00 > .vimeo-wrapper > iframe, html`
 
 ### Links must have discernible text
 
@@ -135,6 +124,19 @@
 #### Affected Elements:
 
 - `meta[name="viewport"]`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- `html`
+- `#slick-slide00 > .vimeo-wrapper > iframe, html`
 
 ### All page content should be contained by landmarks
 

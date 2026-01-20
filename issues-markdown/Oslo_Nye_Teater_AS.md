@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2026-01-19T00:32:55.281Z
+**Timestamp:** 2026-01-20T00:34:39.639Z
 **URL:** [https://oslonye.no/#](https://oslonye.no/#)
 **Total Violations:** 5
 
@@ -17,8 +17,8 @@
 #### Affected Elements:
 
 - `button[data-cky-tag="accept-button"]`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .cafescenen.cat.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(5) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .cafescenen.cat.hide1`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(2) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .cafescenen.cat.hide1`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .cafescenen.cat.hide1`
 
 ### Heading levels should only increase by one
 
@@ -51,7 +51,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 16
+- **Count:** 17
 
 #### Affected Elements:
 
@@ -70,6 +70,7 @@
 - `.forestillinger-blocks-panel:nth-child(10) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(1) > .teaterkjellern.alignment-top.bg-none > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(10) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(2) > .alignment-top.bg-none.block > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(10) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(3) > .teaterkjellern.alignment-top.bg-none > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(11) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt > .teaterkjellern.alignment-top.bg-none > .les-mer-link`
 - `.scroll-to-top`
 
 ### All page content should be contained by landmarks
@@ -78,7 +79,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 30
+- **Count:** 29
 
 #### Affected Elements:
 
@@ -101,6 +102,7 @@
 - `.forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell:nth-child(2) > a[target="_blank"] > .advertise-cover- > .border-green.advertise.text-center > .text-yellow.heading-small.content-holder > .short-description`
 - `.forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(3)`
 - `.forestillinger-blocks-panel:nth-child(10)`
+- `.forestillinger-blocks-panel:nth-child(11)`
 - `.current-month`
 - `.desktop`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(2)`
@@ -110,5 +112,3 @@
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(6)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(7)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(9)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10)`
