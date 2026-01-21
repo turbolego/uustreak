@@ -1,6 +1,6 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2026-01-20T00:33:30.315Z
+**Timestamp:** 2026-01-21T00:32:49.134Z
 **URL:** [https://www.bestwestern.no/#](https://www.bestwestern.no/#)
 **Total Violations:** 5
 
@@ -18,7 +18,7 @@
 
 - `div:nth-child(1) > div[role="listbox"]`
 - `div:nth-child(2) > div[role="listbox"]`
-- `.svelte-hwwq0n > div[role="listbox"]`
+- `.svelte-1l68007 > div[role="listbox"]`
 - `div:nth-child(4) > div[role="listbox"]`
 
 ### Certain ARIA roles must contain particular children
@@ -33,7 +33,7 @@
 
 - `div:nth-child(1) > div[role="listbox"]`
 - `div:nth-child(2) > div[role="listbox"]`
-- `.svelte-hwwq0n > div[role="listbox"]`
+- `.svelte-1l68007 > div[role="listbox"]`
 - `div:nth-child(4) > div[role="listbox"]`
 
 ### Alternative text of images should not be repeated as text
@@ -46,12 +46,12 @@
 
 #### Affected Elements:
 
-- `.aspect-square.h-full:nth-child(1) > .group.grow[title=""] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="398"][width="398"][decoding="async"]`
-- `a[href$="globale-hoteller"] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="398"][width="398"][decoding="async"]`
+- `.aspect-square.h-full:nth-child(1) > .group.grow[title=""] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="348"][width="348"][loading="lazy"]`
+- `a[href$="globale-hoteller"] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="348"][width="348"][loading="lazy"]`
 - `img[alt="Hundevennlige hoteller"]`
 - `img[alt="Hotell utover det vanlige"]`
 - `img[alt="Hotellrestauranter"]`
-- `.aspect-square.h-full:nth-child(7) > .group.grow[title=""] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="398"][width="398"][decoding="async"]`
+- `.aspect-square.h-full:nth-child(7) > .group.grow[title=""] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="348"][width="348"][loading="lazy"]`
 - `img[alt="Spahoteller"]`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements

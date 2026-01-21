@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kristiansand Dyrepark AS
 
-**Timestamp:** 2026-01-20T01:03:58.077Z
+**Timestamp:** 2026-01-21T00:39:07.746Z
 **URL:** [https://www.dyreparken.no/#](https://www.dyreparken.no/#)
 **Total Violations:** 7
 
@@ -83,7 +83,7 @@
 - `.owl-item:nth-child(9) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
 - `.owl-item:nth-child(10) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
 - `.owl-item:nth-child(11) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
-- `.u-theme-dyreparken-secondary-light.c-module--split.c-module--billboard:nth-child(11) > .c-module__container > .c-billboard--variant-light.c-billboard--split > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
+- `.u-theme-dyreparken-secondary-light.c-module--split.c-module--billboard:nth-child(12) > .c-module__container > .c-billboard--variant-light.c-billboard--split > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
 - `.c-billboard--poster > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
 - `.c-grid--image-size-medium > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="contain"][title=""]`
 - `.c-grid--image-size-medium > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="contain"][title=""]`

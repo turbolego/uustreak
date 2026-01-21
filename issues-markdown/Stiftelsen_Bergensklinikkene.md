@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Bergensklinikkene
 
-**Timestamp:** 2026-01-20T00:29:47.167Z
+**Timestamp:** 2026-01-21T00:28:32.935Z
 **URL:** [https://bergenclinics.no/#](https://bergenclinics.no/#)
 **Total Violations:** 6
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telia Norge AS
 
-**Timestamp:** 2026-01-20T00:36:29.609Z
+**Timestamp:** 2026-01-21T00:34:42.424Z
 **URL:** [https://www.telia.no/#](https://www.telia.no/#)
 **Total Violations:** 3
 
@@ -31,11 +31,11 @@
 - `.slide:nth-child(1) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .secondary-image.null > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(2) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .secondary-image.null > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(3) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .secondary-image.null > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(4) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .secondary-image.null > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(5) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .secondary-image.null > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(6) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .secondary-image.null > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(4) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .secondary-image.null > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(5) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .secondary-image.null > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(6) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .secondary-image.null > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(7) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .secondary-image.null > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(8) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .secondary-image.null > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(8) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .secondary-image.null > ._teddy-image_jxcdf_2`
 - `._teddy-card--gray_vxy5c_281._teddy-card--rich-card_vxy5c_168._teddy-grid_1dv1t_2:nth-child(4) > ._teddy-card__inset--top_vxy5c_418._teddy-card__inset--left_vxy5c_421._teddy-card__inset--right_vxy5c_424 > ._teddy-image_jxcdf_2`
 
 ### Interactive controls must not be nested
