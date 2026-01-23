@@ -1,8 +1,8 @@
 # WCAG Violations Report for Skatteetaten
 
-**Timestamp:** 2026-01-22T00:43:40.113Z
+**Timestamp:** 2026-01-23T00:41:02.698Z
 **URL:** [https://www.skatteetaten.no/person/](https://www.skatteetaten.no/person/)
-**Total Violations:** 1
+**Total Violations:** 2
 
 ## Violation Details
 
@@ -17,3 +17,15 @@
 #### Affected Elements:
 
 - `.scroll-to-top-container`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#cookie-banner`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nord universitet
 
-**Timestamp:** 2026-01-22T00:30:41.094Z
+**Timestamp:** 2026-01-23T00:28:59.645Z
 **URL:** [https://www.nord.no/#](https://www.nord.no/#)
 **Total Violations:** 1
 

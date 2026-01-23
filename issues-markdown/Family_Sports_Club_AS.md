@@ -1,6 +1,6 @@
 # WCAG Violations Report for Family Sports Club AS
 
-**Timestamp:** 2026-01-22T00:30:28.930Z
+**Timestamp:** 2026-01-23T00:28:16.555Z
 **URL:** [https://sporty.no/](https://sporty.no/)
 **Total Violations:** 5
 
@@ -41,7 +41,7 @@
 #### Affected Elements:
 
 - `.Button-module-scss-module__gW1A4G__small`
-- `.slick-current > div > .Carousel-module-scss-module__2GuYGa__item.row > .text-center.col-12 > .text-decoration-none.Button-module-scss-module__gW1A4G__color-hover-dark-red[href$="kampanjer"]`
+- `.slick-current > div > .Carousel-module-scss-module__2GuYGa__item.row > .text-center.col-12 > .text-decoration-none.Button-module-scss-module__gW1A4G__color-hover-dark-red.Button-module-scss-module__gW1A4G__button`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

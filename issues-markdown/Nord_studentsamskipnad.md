@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nord studentsamskipnad
 
-**Timestamp:** 2026-01-22T00:30:29.108Z
+**Timestamp:** 2026-01-23T00:28:34.007Z
 **URL:** [https://www.nord.no/#](https://www.nord.no/#)
 **Total Violations:** 1
 

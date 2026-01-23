@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-01-22T00:37:01.953Z
+**Timestamp:** 2026-01-23T00:32:36.205Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -22,12 +22,12 @@
 - `li:nth-child(1) > .i3.i4[aria-label="Ute resirkulert vinterdress"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `li:nth-child(3) > .i3.i4[aria-label="Ute resirkulert vinterdress"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `li:nth-child(3) > .i3.i4[aria-label="Ute resirkulert vinterdress"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Rundhaugen vanntett boot"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Rundhaugen vanntett boot"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `li:nth-child(4) > .i3.i4[aria-label="Ute resirkulert vinterdress"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `li:nth-child(4) > .i3.i4[aria-label="Ute resirkulert vinterdress"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
 - `li:nth-child(1) > .i3.i4[aria-label="Myrkdalen vinterdress"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `li:nth-child(1) > .i3.i4[aria-label="Myrkdalen vinterdress"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `li:nth-child(2) > .i3.i4[aria-label="Myrkdalen vinterdress"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
@@ -39,10 +39,10 @@
 - `a[aria-label="Vehusknausen turbukse"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Vehusknausen turbukse"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Sognfonna vanntett vinterjakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Skomvær skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Kvitfjell vattert selebukse"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Sogndal skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Sognfonna vanntett vinterbukse"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `div:nth-child(6) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Skomvær skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty

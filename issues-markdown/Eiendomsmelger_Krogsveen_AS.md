@@ -1,6 +1,6 @@
 # WCAG Violations Report for Eiendomsmelger Krogsveen AS
 
-**Timestamp:** 2026-01-22T00:47:38.728Z
+**Timestamp:** 2026-01-23T00:44:03.392Z
 **URL:** [https://www.krogsveen.no/#](https://www.krogsveen.no/#)
 **Total Violations:** 2
 
@@ -35,7 +35,7 @@
 - `.css-1mcnram.text-body-sm[href$="eiendomsmegler"]`
 - `.css-13i6elo`
 - `#button-header-verdivurdering`
-- `.css-1aa54c4`
+- `.css-12um54u`
 - `.css-1fmkdzz > .css-1vy9f4v[data-component="page-grid"]:nth-child(2)`
 - `.css-1qs1wvn > .text-kicker`
 - `.false.text-h2`

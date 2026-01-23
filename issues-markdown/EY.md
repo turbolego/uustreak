@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-01-22T00:46:46.807Z
+**Timestamp:** 2026-01-23T00:43:13.369Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 3
 
@@ -43,7 +43,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 114
+- **Count:** 106
 
 #### Affected Elements:
 
@@ -52,26 +52,18 @@
 - `.myey-login-url`
 - `.swiper-slide-duplicate.swiper-slide[data-swiper-slide-index="3"] > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-up-hook-image="[image]"][data-aspect-ratio="1.5"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[title="Arbab Dar og Magnus Birkeland"][loading="lazy"]`
 - `.swiper-slide-duplicate.swiper-slide[data-swiper-slide-index="3"] > .up-hero-carousel__content-wrapper`
-- `.swiper-slide-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-up-hook-image="[image]"][data-aspect-ratio="1.5"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[title="Transaction Trends 2025"][loading="lazy"]`
+- `.swiper-slide-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-up-hook-image="[image]"][data-aspect-ratio="1.5"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `.swiper-slide-prev > .up-hero-carousel__content-wrapper`
-- `#image-render-bd6c3e038a > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
+- `img[title="Transaction Trends 2025"]`
 - `.swiper-slide-visible > .up-hero-carousel__content-wrapper`
 - `#image-render-05a7dedcfd > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `.swiper-slide-next > .up-hero-carousel__content-wrapper`
 - `.swiper-slide.up-hero-carousel__slide[data-swiper-slide-index="3"]:nth-child(5) > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-up-hook-image="[image]"][data-aspect-ratio="1.5"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[title="Arbab Dar og Magnus Birkeland"][loading="lazy"]`
 - `.swiper-slide.up-hero-carousel__slide[data-swiper-slide-index="3"]:nth-child(5) > .up-hero-carousel__content-wrapper`
-- `.swiper-slide-duplicate-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-up-hook-image="[image]"][data-aspect-ratio="1.5"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[title="Transaction Trends 2025"][loading="lazy"]`
+- `.swiper-slide-duplicate-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-up-hook-image="[image]"][data-aspect-ratio="1.5"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `.swiper-slide-duplicate-prev > .up-hero-carousel__content-wrapper`
 - `.up-hero-carousel__pagination`
 - `.theme-dark.cmp-container--theme-dark.cmp-container--background-color-e2e`
-- `#promotional-3dc70db03574 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
-- `#promotional-3dc70db03574 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
-- `#button-5ba8eefd34dc`
-- `#image-render-305f18de9d > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
-- `#promotional-6a9106fa127d > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
-- `#promotional-6a9106fa127d > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
-- `#button-2b38bfdff2f7`
-- `#image-render-c924d9e7cf > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `#promotional-375939547c80 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-375939547c80 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-ab618830f8b6`

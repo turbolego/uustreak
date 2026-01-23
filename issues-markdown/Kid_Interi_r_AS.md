@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-01-22T00:42:16.363Z
+**Timestamp:** 2026-01-23T00:38:46.437Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -40,11 +40,12 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `.a7[href$="eden"][data-scope-link="true"]:nth-child(1) > .fd.fc.fb > .fe.ff.el`
+- `div:nth-child(11) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
 - `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
@@ -78,12 +79,14 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 4
+- **Count:** 6
 
 #### Affected Elements:
 
 - `.a7[href$="eden"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="eden"]`
+- `div:nth-child(11) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(11) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c8`
 - `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="kjaledyr"]`
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for BKK AS
 
-**Timestamp:** 2026-01-22T00:35:21.046Z
+**Timestamp:** 2026-01-23T00:32:11.527Z
 **URL:** [https://www.bkk.no/#](https://www.bkk.no/#)
 **Total Violations:** 5
 
@@ -55,12 +55,12 @@
 
 #### Affected Elements:
 
-- `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(1) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
-- `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(4) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
+- `.rc_link-card.rc_link-card--nyhet.css-tf5rs8:nth-child(1) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
+- `.rc_link-card.rc_link-card--nyhet.css-tf5rs8:nth-child(4) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
 - `a[href$="na-kommer-studentene"] > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
-- `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(6) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
-- `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(8) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
-- `.rc_link-card.rc_link-card--nyhet[text=""]:nth-child(10) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
+- `.rc_link-card.rc_link-card--nyhet.css-tf5rs8:nth-child(6) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
+- `.rc_link-card.rc_link-card--nyhet.css-tf5rs8:nth-child(8) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
+- `.rc_link-card.rc_link-card--nyhet.css-tf5rs8:nth-child(10) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden="false"][height="800"][width="800"]`
 
 ### All page content should be contained by landmarks
 

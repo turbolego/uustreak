@@ -1,6 +1,6 @@
 # WCAG Violations Report for Plantasjen AS
 
-**Timestamp:** 2026-01-22T00:37:07.858Z
+**Timestamp:** 2026-01-23T00:34:45.333Z
 **URL:** [https://plantasjen.no/no](https://plantasjen.no/no)
 **Total Violations:** 2
 
@@ -24,8 +24,9 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
+- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(4) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.group.relative > .top-6.md\:top-6.left-0 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
+- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(1) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.group.relative > .top-6.md\:top-6.left-0 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`

@@ -1,8 +1,8 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-01-22T00:43:59.383Z
+**Timestamp:** 2026-01-23T00:40:31.199Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
-**Total Violations:** 9
+**Total Violations:** 10
 
 ## Violation Details
 
@@ -52,21 +52,34 @@
 - `#popup-link`
 - `#ppms_cm_footer__powered_by`
 
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.grid-of-1.space-y-6.lg\:space-y-0 > .lg\:col-span-3.collection-item--fullWidth[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > h2`
+
 ### Images must have alternative text
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 27
+- **Count:** 28
 
 #### Affected Elements:
 
 - `.lg\:col-span-2.lg\:row-span-2[theme="DARK"] > .sm\:pr-6.flex-1.media`
 - `.lg\:col-span-1 > .sm\:pr-6.flex-1.media`
+- `.DARK.\!bg-Theme\/Dark:nth-child(3) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .grid-of-1.space-y-6.lg\:space-y-0 > .lg\:col-span-3.collection-item--fullWidth[theme=""] > .flex-1.media.stretch`
 - `.splide__arrow--prev.left-5[aria-controls="splide01-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide01-track"] > .w-12`
-- `.grid-of-1 > .lg\:col-span-3.collection-item--fullWidth[theme=""] > .sm\:pr-6.flex-1.media`
+- `.grid-of-1.space-y-6.lg\:space-y-0 > .lg\:col-span-3.collection-item--fullWidth[theme=""] > .sm\:pr-6.flex-1.media`
 - `.splide__arrow--prev.left-5[aria-controls="splide02-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide02-track"] > .w-12`
 - `#splide03-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
@@ -125,20 +138,20 @@
 
 #### Affected Elements:
 
-- `#splide03-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `#splide04-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-6 > .lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-6 > .lg\:row-start-3.collection-item[theme=""]:nth-child(5) > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-5 > .lg\:col-span-2.collection-item[theme=""] > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-5 > .lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `#splide05-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `#splide03-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `#splide04-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-6 > .lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-6 > .lg\:row-start-3.collection-item[theme=""]:nth-child(5) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-5 > .lg\:col-span-2.collection-item[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-5 > .lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `#splide05-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
 
 ### All page content should be contained by landmarks
 
@@ -165,38 +178,38 @@
 - `.DARK.\!bg-Theme\/Dark:nth-child(9) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
 - `.DARK.\!bg-Theme\/Dark:nth-child(10) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
 - `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:pr-6.flex-1.media`
-- `.lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.-mt-9.bg-secondary > h3`
-- `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.bg-secondary.-mt-9 > h3`
+- `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-6 > .lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:pr-6.flex-1.media`
-- `.lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:ml-6.-mt-9.bg-secondary > h3`
-- `.grid-of-6 > .lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > h3`
+- `.grid-of-6 > .lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:pr-6.flex-1.media`
-- `.lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.bg-secondary > h3`
-- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.bg-secondary.-mt-9 > h3`
+- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:pr-6.flex-1.media`
-- `.lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.bg-secondary > h3`
-- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.bg-secondary.-mt-9 > h3`
+- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-6 > .lg\:row-start-3.collection-item[theme=""]:nth-child(5) > .sm\:pr-6.flex-1.media`
-- `.lg\:row-start-3.collection-item[theme=""]:nth-child(5) > .sm\:ml-6.-mt-9.bg-secondary > h3`
-- `.grid-of-6 > .lg\:row-start-3.collection-item[theme=""]:nth-child(5) > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:row-start-3.collection-item[theme=""]:nth-child(5) > .sm\:ml-6.bg-secondary.-mt-9 > h3`
+- `.grid-of-6 > .lg\:row-start-3.collection-item[theme=""]:nth-child(5) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:pr-6.flex-1.media`
-- `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:ml-6.-mt-9.bg-secondary > h3`
-- `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > h3`
+- `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-5 > .lg\:col-span-2.collection-item[theme=""] > .sm\:pr-6.flex-1.media`
-- `.lg\:col-span-2.collection-item[theme=""] > .sm\:ml-6.-mt-9.bg-secondary > h2`
-- `.grid-of-5 > .lg\:col-span-2.collection-item[theme=""] > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:col-span-2.collection-item[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > h2`
+- `.grid-of-5 > .lg\:col-span-2.collection-item[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-5 > .lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:pr-6.flex-1.media`
-- `.lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:ml-6.-mt-9.bg-secondary > h2`
-- `.grid-of-5 > .lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > h2`
+- `.grid-of-5 > .lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:pr-6.flex-1.media`
-- `.lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.bg-secondary > h2`
-- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.bg-secondary.-mt-9 > h2`
+- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:pr-6.flex-1.media`
-- `.lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.bg-secondary > h2`
-- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.bg-secondary.-mt-9 > h2`
+- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:pr-6.flex-1.media`
-- `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.bg-secondary > h2`
-- `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.bg-secondary > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
+- `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > h2`
+- `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\!text-textcolor.font-light`
 - `.DARK.\!bg-Theme\/Dark:nth-child(12)`
 - `.\!bg-white > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
 - `.lg\:text-center`
