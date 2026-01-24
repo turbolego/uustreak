@@ -1,0 +1,411 @@
+{
+  "project": "Studentsamskipnaden i Agder",
+  "timestamp": "2026-01-24T00:29:49.471Z",
+  "url": "https://www.sia.no/#",
+  "total_violations": 10,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"text-primary\">Kontakt oss for mer info om hvilke boliger som er ledige!</span>",
+          "target": [
+            ".two-col-cta__content > .richtext > p > .text-primary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.89 (foreground color: #ff0255, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h2 class=\"item-list__title\"></h2>",
+          "target": [
+            ".item-list__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "landmark-contentinfo-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the contentinfo landmark is at top level",
+      "help": "Contentinfo landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-contentinfo-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<footer class=\"footer\">",
+          "target": [
+            "footer"
+          ],
+          "failureSummary": "Fix any of the following:\n  The null landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-main-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the main landmark is at top level",
+      "help": "Main landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-main-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<main class=\"root-page_content\">",
+          "target": [
+            "main"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-main",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one main landmark",
+      "help": "Document should not have more than one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ion-content class=\"ion-scroll-wrapper ios content-ltr hydrated\" scroll-events=\"true\" fullscreen=\"true\" role=\"main\" style=\"--offset-top: 0px; --offset-bottom: 0px;\">",
+          "target": [
+            "ion-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ion-content class=\"ion-scroll-wrapper ios content-ltr hydrated\" scroll-events=\"true\" fullscreen=\"true\" role=\"main\" style=\"--offset-top: 0px; --offset-bottom: 0px;\">",
+          "target": [
+            "ion-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://play.google.com/store/apps/details?id=no.sia.app\"></a>",
+          "target": [
+            ".large-image-cta__card__text > .richtext > p:nth-child(2) > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "object-alt",
+      "impact": "serious",
+      "description": "Ensure <object> elements have alternative text",
+      "help": "<object> elements must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/object-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "RGAAv4",
+        "RGAA-1.1.6"
+      ],
+      "violation_count": 9,
+      "nodes": [
+        {
+          "html": "<object type=\"image/svg+xml\" data=\"/media/0lbmqhch/bolig-outlined.svg\" alt=\"Bolig Outlined\"></object>",
+          "target": [
+            "object[alt=\"Bolig Outlined\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<object type=\"image/svg+xml\" data=\"/media/lwzjk2e4/helse-outlined.svg\" alt=\"Helse Outlined\"></object>",
+          "target": [
+            "object[alt=\"Helse Outlined\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<object type=\"image/svg+xml\" data=\"/media/leyfiffv/barnehage-outlined.svg\" alt=\"Barnehage Outlined\"></object>",
+          "target": [
+            "object[alt=\"Barnehage Outlined\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<object type=\"image/svg+xml\" data=\"/media/nbwcplth/studentliv-outlined.svg\" alt=\"Studentliv Outlined\"></object>",
+          "target": [
+            "object[alt=\"Studentliv Outlined\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<object type=\"image/svg+xml\" data=\"/media/cx0hm0yg/mat-og-drikke-outlined.svg\" alt=\"Mat Og Drikke Outlined\"></object>",
+          "target": [
+            "object[alt=\"Mat Og Drikke Outlined\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<object type=\"image/svg+xml\" data=\"/media/ml3mfdk0/bok-outlined.svg\" alt=\"Bok Outlined\"></object>",
+          "target": [
+            "object[alt=\"Bok Outlined\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<object type=\"image/svg+xml\" data=\"/media/r2kats22/trening-outlined.svg\" alt=\"Trening Outlined\"></object>",
+          "target": [
+            "object[alt=\"Trening Outlined\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<object type=\"image/svg+xml\" data=\"/media/mydd3o0c/studentfordeler-icon-outline-dark.svg\" alt=\"Studentfordeler Icon Outline Dark\"></object>",
+          "target": [
+            "a[aria-label=\"Go to /studentfordeler/\"][href$=\"studentfordeler/\"][title=\"Studentfordeler\"] > .umb-img > object"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<object type=\"image/svg+xml\" data=\"/media/bwol3imy/miljo-outlined.svg\" alt=\"Miljo Outlined\"></object>",
+          "target": [
+            "object[alt=\"Miljo Outlined\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "svg-img-alt",
+      "impact": "serious",
+      "description": "Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text",
+      "help": "<svg> elements with an img role must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/svg-img-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.5"
+      ],
+      "violation_count": 11,
+      "nodes": [
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"29\" height=\"32\" viewBox=\"0 0 29 32\" class=\"injected-svg\" data-src=\"/media/aopc5sct/icon-events-outline-light.svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" role=\"img\">",
+          "target": [
+            "svg[width=\"29\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"43.253\" height=\"49.218\" viewBox=\"0 0 43.253 49.218\" class=\"injected-svg\" data-src=\"/media/wwxjzr1s/bolig-outlined-light.svg\" role=\"img\">",
+          "target": [
+            "svg[viewBox=\"0 0 43.253 49.218\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"59.37\" height=\"55.312\" viewBox=\"0 0 59.37 55.312\" class=\"injected-svg\" data-src=\"/media/zuddjgid/studentliv-outlined-light.svg\" role=\"img\">",
+          "target": [
+            "svg[viewBox=\"0 0 59.37 55.312\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"49.718\" height=\"48.068\" viewBox=\"0 0 49.718 48.068\" class=\"injected-svg\" data-src=\"/media/uhypynzl/helse-outlined-light.svg\" role=\"img\">",
+          "target": [
+            "svg[viewBox=\"0 0 49.718 48.068\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"66.26\" height=\"37.374\" viewBox=\"0 0 66.26 37.374\" class=\"injected-svg\" data-src=\"/media/w15os25h/trening-outlined-light.svg\" role=\"img\">",
+          "target": [
+            "svg[viewBox=\"0 0 66.26 37.374\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"45.668\" height=\"47.245\" viewBox=\"0 0 45.668 47.245\" class=\"injected-svg\" data-src=\"/media/xcvcmktx/bok-outlined-light.svg\" role=\"img\">",
+          "target": [
+            "svg[viewBox=\"0 0 45.668 47.245\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"31.5\" height=\"47.5\" viewBox=\"0 0 31.5 47.5\" class=\"injected-svg\" data-src=\"/media/v5ubxxee/mat-og-drikke-outlined-light.svg\" role=\"img\">",
+          "target": [
+            "svg[viewBox=\"0 0 31.5 47.5\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"49.203\" height=\"49.203\" viewBox=\"0 0 49.203 49.203\" class=\"injected-svg\" data-src=\"/media/32blsism/barnehage-outlined-light.svg\" role=\"img\">",
+          "target": [
+            "svg[viewBox=\"0 0 49.203 49.203\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"Layer_1\" data-name=\"Layer 1\" viewBox=\"0 0 59.9 46.7\" class=\"injected-svg\" data-src=\"/media/4ycb0su1/miljo-outlined-light-new.svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" role=\"img\">",
+          "target": [
+            "#Layer_1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40.603\" height=\"60.672\" viewBox=\"0 0 40.603 60.672\" class=\"injected-svg\" data-src=\"/media/cssbaxk0/studentfordeler-outline-light.svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" role=\"img\">",
+          "target": [
+            "svg[width=\"40.603\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"60.118\" height=\"31.203\" viewBox=\"0 0 60.118 31.203\" class=\"injected-svg\" data-src=\"/media/zzadmhzl/om-sia-icon-outline-light.svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" role=\"img\">",
+          "target": [
+            "svg[width=\"60.118\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "tabindex",
+      "impact": "serious",
+      "description": "Ensure tabindex attribute values are not greater than 0",
+      "help": "Elements should not have tabindex greater than zero",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/tabindex?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<a aria-label=\"Go to /\" href=\"/\" tabindex=\"1\" class=\"desktop-navbar__logo\"><img width=\"170px\" height=\"50px\" src=\"/media/tc3eoeka/sia-logo.svg\" alt=\"main-logo\"></a>",
+          "target": [
+            ".desktop-navbar__logo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<input id=\"react-select-4-input\" tabindex=\"2\" inputmode=\"none\" aria-autocomplete=\"list\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"combobox\" aria-activedescendant=\"\" aria-readonly=\"true\" class=\"css-1hac4vs-dummyInput\" value=\"\">",
+          "target": [
+            "#react-select-4-input"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<input id=\"react-select-5-input\" tabindex=\"3\" inputmode=\"none\" aria-autocomplete=\"list\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"combobox\" aria-activedescendant=\"\" aria-readonly=\"true\" class=\"css-1hac4vs-dummyInput\" value=\"\">",
+          "target": [
+            "#react-select-5-input"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a aria-label=\"Go to /soek/\" tabindex=\"4\" href=\"/soek/\" title=\"Søk\" class=\"desktop-navbar__search-btn\">",
+          "target": [
+            ".desktop-navbar__search-btn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<div class=\"desktop-navbar__hamburger\" data-dont-close=\"true\" tabindex=\"4\"><div class=\"desktop-navbar__hamburger__icon\"><span></span><span></span><span></span></div><span class=\"desktop-navbar__hamburger__label\" style=\"pointer-events: none;\">Meny</span></div>",
+          "target": [
+            ".desktop-navbar__hamburger"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        }
+      ]
+    }
+  ]
+}
