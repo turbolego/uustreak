@@ -1,10 +1,22 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-01-24T00:29:56.521Z
+**Timestamp:** 2026-01-26T00:34:33.259Z
 **URL:** [https://www.f-b.no/#](https://www.f-b.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#eaframe, #container_9863247 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
