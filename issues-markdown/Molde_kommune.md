@@ -1,6 +1,6 @@
 # WCAG Violations Report for Molde kommune
 
-**Timestamp:** 2026-01-26T00:28:52.496Z
+**Timestamp:** 2026-01-27T00:26:28.385Z
 **URL:** [https://www.molde.kommune.no/#](https://www.molde.kommune.no/#)
 **Total Violations:** 3
 

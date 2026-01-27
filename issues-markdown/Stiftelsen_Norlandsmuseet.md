@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Norlandsmuseet
 
-**Timestamp:** 2026-01-26T00:31:12.275Z
+**Timestamp:** 2026-01-27T00:28:56.978Z
 **URL:** [https://www.nordlandsmuseet.no/hjem/](https://www.nordlandsmuseet.no/hjem/)
 **Total Violations:** 5
 
@@ -65,16 +65,16 @@
 
 #### Affected Elements:
 
-- `#yui_3_17_2_1_1769387464796_512 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1769387464796_514 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1769387464796_516 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1769387464796_518 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1769473727579_512 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1769473727579_514 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1769473727579_516 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1769473727579_518 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
 - `.summary-thumbnail-container.sqs-gallery-image-container[href$="madeinbodo"]`
-- `#yui_3_17_2_1_1769387464796_522 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1769387464796_524 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1769387464796_526 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1769473727579_522 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1769473727579_524 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1769473727579_526 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
 - `.summary-thumbnail-container.sqs-gallery-image-container[href$="bodo-laget-det"]`
-- `#yui_3_17_2_1_1769387464796_530 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1769387464796_532 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1769387464796_534 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `a[data-title="Samisk tromme fra Bjørsvik"]`
+- `#yui_3_17_2_1_1769473727579_530 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1769473727579_532 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1769473727579_534 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `.summary-thumbnail-container.sqs-gallery-image-container[href$="samisk-tromme"]`

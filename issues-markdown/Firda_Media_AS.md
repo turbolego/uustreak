@@ -1,8 +1,8 @@
 # WCAG Violations Report for Firda Media AS
 
-**Timestamp:** 2026-01-26T00:32:53.142Z
+**Timestamp:** 2026-01-27T00:28:40.196Z
 **URL:** [https://www.firda.no/#](https://www.firda.no/#)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `#eaframe`
+
+### Links must be distinguishable without relying on color
+
+- **Impact:** serious
+- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
+- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#sp_message_iframe_1422787, #no-hover`
 
 ### Elements marked as presentational should be consistently ignored
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Plantasjen AS
 
-**Timestamp:** 2026-01-26T00:35:58.705Z
+**Timestamp:** 2026-01-27T00:33:10.946Z
 **URL:** [https://plantasjen.no/no](https://plantasjen.no/no)
 **Total Violations:** 2
 

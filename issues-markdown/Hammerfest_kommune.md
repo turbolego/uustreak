@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hammerfest kommune
 
-**Timestamp:** 2026-01-26T00:36:05.427Z
+**Timestamp:** 2026-01-27T00:31:40.673Z
 **URL:** [https://hammerfest.kommune.no/#](https://hammerfest.kommune.no/#)
 **Total Violations:** 3
 

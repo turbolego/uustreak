@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo universitetssykehus HF
 
-**Timestamp:** 2026-01-26T00:35:22.685Z
+**Timestamp:** 2026-01-27T00:32:32.860Z
 **URL:** [https://www.oslo-universitetssykehus.no/#](https://www.oslo-universitetssykehus.no/#)
 **Total Violations:** 1
 

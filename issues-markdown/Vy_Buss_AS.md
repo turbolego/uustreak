@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vy Buss AS
 
-**Timestamp:** 2026-01-26T00:43:48.265Z
+**Timestamp:** 2026-01-27T00:40:44.820Z
 **URL:** [https://www.vybuss.no/#](https://www.vybuss.no/#)
 **Total Violations:** 3
 

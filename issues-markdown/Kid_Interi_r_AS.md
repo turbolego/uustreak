@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-01-26T00:42:00.239Z
+**Timestamp:** 2026-01-27T00:37:11.660Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -41,15 +41,16 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 6
+- **Count:** 7
 
 #### Affected Elements:
 
 - `img[fetchpriority="high"]`
 - `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1) > .gj.fc.fb > .fe.ff.el`
 - `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1) > .gj.fc.fb > .fe.ff.el`
+- `.h0 > .fe.ff.el`
 - `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
-- `div:nth-child(11) > .fa.f9.bv > .bl.dd.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
+- `div:nth-child(11) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
 - `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
@@ -62,7 +63,7 @@
 
 #### Affected Elements:
 
-- `.ca.s[href$="soverom"] > .g0.da.dd > .en.fw[alt="Se alle ➝"]`
+- `.ca.c[href$="soverom"] > .g0.da.c4 > .en.fw[alt="Se alle ➝"]`
 - `img[alt="Alle dundyner 50%"]`
 - `img[alt="Alle sengesett 50%"]`
 - `img[alt="Alle sengetepper 50%"]`
@@ -72,7 +73,7 @@
 - `img[alt="Alle laken og putevar 50%"]`
 - `img[alt="Petra dyne- & putepakke 249,-"]`
 - `img[alt="Thomas hotellpute 2 for 1"]`
-- `.ca.s[href$="baderom"] > .g0.da.dd > .en.fw[alt="Se alle ➝"]`
+- `a[href$="baderom"] > .g0.da.c4 > .en.fw[alt="Se alle ➝"]`
 - `img[alt="Alt baderomstilbehør 50%"]`
 - `img[alt="Skjønnhetstilbehør 50%"]`
 - `img[alt="Hotel Selection 40%"]`
@@ -80,7 +81,7 @@
 - `img[alt="AVA velværeserie 40%"]`
 - `img[alt="Alle morgenkåper 50%"]`
 - `img[alt="Såper & kremer 50%"]`
-- `a[href$="loungewear--accessories"] > .g0.da.dd > .en.fw.a3`
+- `a[href$="loungewear--accessories"] > .g0.da.c4 > .en.fw.fg`
 - `img[alt="Therapie velværeserie 40%"]`
 
 ### Links must have discernible text
@@ -93,16 +94,16 @@
 
 #### Affected Elements:
 
-- `.bl.dd.c4 > .a7[href$="soverom"][data-scope-link="true"]:nth-child(1)`
-- `.bl.dd.c4 > .ca.s[href$="soverom"]`
+- `.bl.c4.bz > .a7[href$="soverom"][data-scope-link="true"]:nth-child(1)`
+- `.bl.c4.bz > .ca.s[href$="soverom"]`
 - `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="borddekking"]`
 - `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="kjokkenutstyr"]`
 - `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="ambiance"]`
-- `div:nth-child(11) > .fa.f9.bv > .bl.dd.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(11) > .fa.f9.bv > .bl.dd.c4 > .ca.s.c8`
+- `div:nth-child(11) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(11) > .fa.f9.bv > .bl.c4.bz > .ca.s.c9`
 - `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="kjaledyr"]`
 

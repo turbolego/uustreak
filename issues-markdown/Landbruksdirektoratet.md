@@ -1,6 +1,6 @@
 # WCAG Violations Report for Landbruksdirektoratet
 
-**Timestamp:** 2026-01-26T00:45:14.805Z
+**Timestamp:** 2026-01-27T00:40:17.339Z
 **URL:** [https://www.landbruksdirektoratet.no/nb/#](https://www.landbruksdirektoratet.no/nb/#)
 **Total Violations:** 3
 
@@ -43,8 +43,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
 - `.to-top-link`
+- `#__googlesearch-trigger`

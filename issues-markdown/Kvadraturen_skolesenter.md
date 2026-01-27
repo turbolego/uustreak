@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kvadraturen skolesenter
 
-**Timestamp:** 2026-01-26T00:44:48.171Z
+**Timestamp:** 2026-01-27T00:39:52.091Z
 **URL:** [https://kvadraturen.vgs.no/](https://kvadraturen.vgs.no/)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -17,18 +17,6 @@
 #### Affected Elements:
 
 - `.bc-content-modal`
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.il-heading--h2:nth-child(5)`
 
 ### Frames must have an accessible name
 
@@ -60,7 +48,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 33
+- **Count:** 38
 
 #### Affected Elements:
 
@@ -73,9 +61,14 @@
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_1390 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(2)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_1390 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(3)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_1390 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(4)`
-- `.il-heading--h2:nth-child(6)`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_1390 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(7)`
+- `.text-box > p:nth-child(5)`
+- `.il-heading--h2:nth-child(7)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_1390 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(8)`
+- `.text-box > p:nth-child(9)`
+- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_1390 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(10)`
+- `.il-heading--h2:nth-child(11)`
+- `p:nth-child(12)`
+- `p:nth-child(13)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_1390 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > cc-cookie-consent-conditional-content-component > .cookie-consent-content > .cc-alert.cc-alert--warning > .cc-alert-content > .cc-alert-message > .cc-div:nth-child(1)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_1394 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > .il-heading--h2:nth-child(1)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_1394 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(2)`
@@ -83,9 +76,9 @@
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_1394 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(4)`
 - `cc-cookie-consent-conditional-content-component:nth-child(5) > .cookie-consent-content > .cc-alert.cc-alert--warning > .cc-alert-content > .cc-alert-message > .cc-div:nth-child(1)`
 - `.text-box > h3`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_1394 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(7)`
+- `.text-box > p:nth-child(7)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_1394 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(8)`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_1394 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > cc-cookie-consent-conditional-content-component:nth-child(9) > .cookie-consent-content > .cc-alert.cc-alert--warning > .cc-alert-content > .cc-alert-message > .cc-div:nth-child(1)`
+- `cc-cookie-consent-conditional-content-component:nth-child(9) > .cookie-consent-content > .cc-alert.cc-alert--warning > .cc-alert-content > .cc-alert-message > .cc-div:nth-child(1)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_1394 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(10)`
 - `p:nth-child(11)`
 - `.il-heading--h2:nth-child(12)`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Deloitte Norge
 
-**Timestamp:** 2026-01-26T00:42:01.377Z
+**Timestamp:** 2026-01-27T00:41:37.076Z
 **URL:** [https://www.deloitte.com/no/no.html](https://www.deloitte.com/no/no.html)
 **Total Violations:** 5
 
