@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ringerike kommune
 
-**Timestamp:** 2026-01-27T00:36:59.692Z
+**Timestamp:** 2026-01-30T22:16:38.264Z
 **URL:** [https://www.ringerike.kommune.no/#](https://www.ringerike.kommune.no/#)
 **Total Violations:** 9
 
@@ -25,12 +25,13 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `a[title="Se alle saker"]`
 - `a[title="Vis alle "]`
+- `#corner_text`
 
 ### Frames must have an accessible name
 
@@ -109,21 +110,18 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 11
+- **Count:** 8
 
 #### Affected Elements:
 
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-1 > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-1 > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(3) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(3) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-1 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-2 > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-2 > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .list-item.line:nth-child(3) > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .list-item.line:nth-child(4) > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-3 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(6) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(6) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
 
 ### All page content should be contained by landmarks
 
@@ -131,7 +129,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 41
+- **Count:** 34
 
 #### Affected Elements:
 
@@ -145,32 +143,25 @@
 - `#portalframe1, .CaptionCont`
 - `#portalframe1, .optWrapper`
 - `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > h1`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line:nth-child(1) > .list-item-date`
-- `#portalframe1, .list-item-link[data-itemid="32260"][data-itemdate="27.01.2026"] > .ul-main`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line:nth-child(2) > .list-item-date`
-- `#portalframe1, a[data-itemid="37858"] > .ul-main`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line > .list-item-date`
+- `#portalframe1, a[data-itemid="37278"] > .ul-main`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(3) > h1`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(3) > .item-container > .list-item.line:nth-child(1) > .list-item-date`
+- `#portalframe1, a[data-itemid="37655"] > .ul-main`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(3) > .item-container > .list-item.line:nth-child(2) > .list-item-date`
+- `#portalframe1, a[data-itemid="37891"] > .ul-main`
 - `#portalframe1, .single-1 > h1`
-- `#portalframe1, .single-1 > .item-container > .list-item.line:nth-child(1) > .list-item-date`
-- `#portalframe1, a[data-itemid="29557"] > .ul-main`
-- `#portalframe1, .single-1 > .item-container > .list-item.line:nth-child(2) > .list-item-date`
-- `#portalframe1, a[data-itemid="38069"] > .ul-main`
+- `#portalframe1, .single-1 > .item-container > .list-item.line > .list-item-date`
+- `#portalframe1, a[data-itemdate="03.02.2026"] > .ul-main`
 - `#portalframe1, .single-2 > h1`
 - `#portalframe1, .single-2 > .item-container > .list-item.line:nth-child(1) > .list-item-date`
 - `#portalframe1, a[data-itemid="37893"] > .ul-main`
 - `#portalframe1, .single-2 > .item-container > .list-item.line:nth-child(2) > .list-item-date`
 - `#portalframe1, a[data-itemid="34385"] > .ul-main`
 - `#portalframe1, .list-item.line:nth-child(3) > .list-item-date`
-- `#portalframe1, .list-item-link[data-itemid="32260"][data-itemdate="29.01.2026"] > .ul-main`
+- `#portalframe1, .list-item-link[data-itemid="32260"][data-itemdate="05.02.2026"] > .ul-main`
 - `#portalframe1, .list-item.line:nth-child(4) > .list-item-date`
-- `#portalframe1, a[data-itemid="37295"] > .ul-main`
-- `#portalframe1, .single-3 > h1`
-- `#portalframe1, .single-3 > .item-container > .list-item.line > .list-item-date`
-- `#portalframe1, a[data-itemid="37278"] > .ul-main`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(6) > h1`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(6) > .item-container > .list-item.line:nth-child(1) > .list-item-date`
-- `#portalframe1, a[data-itemid="37655"] > .ul-main`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(6) > .item-container > .list-item.line:nth-child(2) > .list-item-date`
-- `#portalframe1, a[data-itemid="37891"] > .ul-main`
+- `#portalframe1, a[data-itemid="38156"] > .ul-main`
 - `.mt-20`
 - `.ssp__fluid-panel > div > div > div > .container > .row > .col-md-6.mb-30.col-xs-12:nth-child(2)`
 - `.test-wrapper`

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Handel og Kontor i Norge
 
-**Timestamp:** 2026-01-27T00:31:54.454Z
+**Timestamp:** 2026-01-30T22:10:14.655Z
 **URL:** [https://hk.no/](https://hk.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -19,6 +19,19 @@
 - `.arrangementPage__info__months--previous`
 - `.arrangementPage__info__months--next`
 
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.slick-current > div > .uagb-post__inner-wrap > h5`
+- `.uagb-post__inner-wrap:nth-child(1) > h3`
+
 ### Links must have discernible text
 
 - **Impact:** serious
@@ -29,9 +42,9 @@
 
 #### Affected Elements:
 
-- `.uagb-post__inner-wrap:nth-child(1) > .uagb-post__image > .uagb-image-ratio-inherit[rel="bookmark noopener noreferrer"][target="_self"]`
-- `.uagb-post__inner-wrap:nth-child(2) > .uagb-post__image > .uagb-image-ratio-inherit[rel="bookmark noopener noreferrer"][target="_self"]`
-- `.uagb-post__inner-wrap:nth-child(3) > .uagb-post__image > .uagb-image-ratio-inherit[rel="bookmark noopener noreferrer"][target="_self"]`
+- `.slick-current > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `div[data-slick-index="2"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `div[data-slick-index="3"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 
 ### All page content should be contained by landmarks
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Adresseavisen AS
 
-**Timestamp:** 2026-01-27T00:28:40.975Z
+**Timestamp:** 2026-01-30T22:04:17.531Z
 **URL:** [https://www.adressa.no/](https://www.adressa.no/)
 **Total Violations:** 6
 
@@ -24,16 +24,15 @@
 - **Description:** Ensure the main landmark is at top level
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-main-is-top-level?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 6
+- **Count:** 5
 
 #### Affected Elements:
 
-- `.gridfullsize.hot60.life40 > a > .t100`
+- `.hot80 > a > .t100`
 - `.gridfullsize-bundle > a > .t100`
-- `.small-items.griddouble.hot60:nth-child(1) > a > .t100`
-- `.life20.small-items.griddouble > a > .t100`
-- `.gridspotlightside.hot50.life20 > a > .t100`
-- `.gridspotlightside.hot50.life40 > a > .t100`
+- `.small-items > a > .t100`
+- `.is-dark-skin > a > .t100`
+- `.gridspotlightside.hot50.card-size-small:nth-child(3) > a > .t100`
 
 ### Document should not have more than one main landmark
 

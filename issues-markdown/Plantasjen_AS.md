@@ -1,6 +1,6 @@
 # WCAG Violations Report for Plantasjen AS
 
-**Timestamp:** 2026-01-27T00:33:10.946Z
+**Timestamp:** 2026-01-30T22:12:02.284Z
 **URL:** [https://plantasjen.no/no](https://plantasjen.no/no)
 **Total Violations:** 2
 
@@ -28,6 +28,6 @@
 
 #### Affected Elements:
 
-- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(4) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.group.relative > .top-6.md\:top-6.left-0 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
-- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(2) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.group.relative > .top-6.md\:top-6.left-0 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
-- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(1) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > div:nth-child(1) > .md\:px-8.group.relative > .top-6.md\:top-6.left-0 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
+- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(4) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > .relative > .md\:px-8.group.gap-3 > .md\:top-6.left-0.top-6 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
+- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(2) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > .relative > .md\:px-8.group.gap-3 > .md\:top-6.left-0.top-6 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
+- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(1) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > .relative > .md\:px-8.group.gap-3 > .md\:top-6.left-0.top-6 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`

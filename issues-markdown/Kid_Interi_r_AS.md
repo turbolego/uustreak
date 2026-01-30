@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-01-27T00:37:11.660Z
+**Timestamp:** 2026-01-30T22:16:20.394Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -12,11 +12,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 6
+- **Count:** 7
 
 #### Affected Elements:
 
-- `.f4`
+- `.f4.f2[href$="bomull-sengesett"]`
+- `a[href$="dundyner-og-puter"]`
 - `.review-block.article.review:nth-child(1) > .tf-date`
 - `.review-block.article.review:nth-child(2) > .tf-date`
 - `.review-block.article.review:nth-child(3) > .tf-date`
@@ -46,8 +47,8 @@
 #### Affected Elements:
 
 - `img[fetchpriority="high"]`
-- `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1) > .gj.fc.fb > .fe.ff.el`
 - `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1) > .gj.fc.fb > .fe.ff.el`
+- `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1) > .gj.fc.fb > .fe.ff.el`
 - `.h0 > .fe.ff.el`
 - `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
 - `div:nth-child(11) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
@@ -64,17 +65,17 @@
 #### Affected Elements:
 
 - `.ca.c[href$="soverom"] > .g0.da.c4 > .en.fw[alt="Se alle ➝"]`
-- `img[alt="Alle dundyner 50%"]`
 - `img[alt="Alle sengesett 50%"]`
+- `img[alt="Alle dundyner 50%"]`
+- `img[alt="Alle laken og putevar 50%"]`
 - `img[alt="Alle sengetepper 50%"]`
+- `img[alt="Thomas hotellpute 2 for 1"]`
 - `img[alt="Bomull sengesett fra 249,-"]`
 - `img[alt="Alle dunputer 50%"]`
 - `img[alt="Helårsdyner fra 799,-"]`
-- `img[alt="Alle laken og putevar 50%"]`
 - `img[alt="Petra dyne- & putepakke 249,-"]`
-- `img[alt="Thomas hotellpute 2 for 1"]`
 - `a[href$="baderom"] > .g0.da.c4 > .en.fw[alt="Se alle ➝"]`
-- `img[alt="Alt baderomstilbehør 50%"]`
+- `img[alt="Baderomstilbehør 50%"]`
 - `img[alt="Skjønnhetstilbehør 50%"]`
 - `img[alt="Hotel Selection 40%"]`
 - `img[alt="Toalettmapper 50%"]`
@@ -96,10 +97,10 @@
 
 - `.bl.c4.bz > .a7[href$="soverom"][data-scope-link="true"]:nth-child(1)`
 - `.bl.c4.bz > .ca.s[href$="soverom"]`
-- `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1)`
-- `.ca.s[href$="borddekking"]`
 - `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="kjokkenutstyr"]`
+- `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1)`
+- `.ca.s[href$="borddekking"]`
 - `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="ambiance"]`
 - `div:nth-child(11) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`

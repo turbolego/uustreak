@@ -1,6 +1,6 @@
 # WCAG Violations Report for First Hotels AS
 
-**Timestamp:** 2026-01-27T00:28:54.944Z
+**Timestamp:** 2026-01-30T22:06:40.235Z
 **URL:** [https://www.firsthotels.no/](https://www.firsthotels.no/)
 **Total Violations:** 4
 
@@ -12,11 +12,10 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.hover\:bg-accent`
 - `.data-\[placeholder\]\:text-muted-foreground`
 
 ### Elements must meet minimum color contrast ratio thresholds
@@ -59,11 +58,10 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 5
+- **Count:** 4
 
 #### Affected Elements:
 
-- `.container-max.mx-auto.px-4 > a[href="/"]`
 - `.border-b-stone-700 > a[href="/"]`
 - `.space-x-4.flex > a[target="_blank"]:nth-child(1)`
 - `.space-x-4.flex > a[target="_blank"]:nth-child(2)`

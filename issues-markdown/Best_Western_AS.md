@@ -1,10 +1,22 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2026-01-27T00:35:15.192Z
+**Timestamp:** 2026-01-30T22:12:00.257Z
 **URL:** [https://www.bestwestern.no/#](https://www.bestwestern.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
+
+### ARIA dialog and alertdialog nodes should have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA dialog and alertdialog node has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-dialog-name?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.bg-warning`
 
 ### ARIA input fields must have an accessible name
 

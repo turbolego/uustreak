@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-01-27T00:36:18.313Z
+**Timestamp:** 2026-01-30T22:12:59.465Z
 **URL:** [https://www.blv.no/#](https://www.blv.no/#)
-**Total Violations:** 5
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.brick-c-cvdocc.teaser_body[href$="eavis.blv.no/"] > .body > .brick-c-bVcFwu.title_container.has-image > .brick-c-gPjxah-RMqvH-cv.brick-c-gPjxah[itemprop="teaser_title"]`
-- `.brick-c-gPjxah-bMamcL-cv`
+- `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `.custom-two > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
@@ -31,6 +31,30 @@
 
 - `#eaframe`
 
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.navigation > .carousel[role="region"][aria-label="Innholdskarusell."]`
+
+### Links must be distinguishable without relying on color
+
+- **Impact:** serious
+- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
+- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#sp_message_iframe_1422733, #no-hover`
+
 ### Links must have discernible text
 
 - **Impact:** serious
@@ -41,8 +65,8 @@
 
 #### Affected Elements:
 
-- `.brick-c-cvdocc.teaser_body[href$="eavis.blv.no/"]`
-- `.brick-c-jCKIaL-JptfV-skin-custom-two > .brick-c-cvdocc.teaser_body[itemprop="url"]`
+- `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"]`
+- `.custom-two > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
 
 ### Elements marked as presentational should be consistently ignored
 

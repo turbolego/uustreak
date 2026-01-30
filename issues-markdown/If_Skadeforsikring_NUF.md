@@ -1,10 +1,25 @@
 # WCAG Violations Report for If Skadeforsikring NUF
 
-**Timestamp:** 2026-01-27T00:34:36.255Z
+**Timestamp:** 2026-01-30T22:13:17.129Z
 **URL:** [https://www.if.no/privat](https://www.if.no/privat)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
+
+### ARIA role should be appropriate for the element
+
+- **Impact:** minor
+- **Description:** Ensure role attribute has an appropriate value for the element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 4
+
+#### Affected Elements:
+
+- `img[alt="Reise i vinter?"]`
+- `#f668be7feec143debf70d2851b38cfed > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
+- `#viking > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
+- `img[alt="Hvorfor velge oss?"]`
 
 ### Heading levels should only increase by one
 
@@ -16,7 +31,7 @@
 
 #### Affected Elements:
 
-- `#\34 e3fe9df57314bdf97531e8e99cb006c > .weight-medium`
+- `#ef07e3236fc046b59db7fe8e17e855d0 > .weight-medium`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -28,7 +43,7 @@
 
 #### Affected Elements:
 
-- `#\34 e3fe9df57314bdf97531e8e99cb006c`
+- `#ef07e3236fc046b59db7fe8e17e855d0`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 

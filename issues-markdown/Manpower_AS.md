@@ -1,6 +1,6 @@
 # WCAG Violations Report for Manpower AS
 
-**Timestamp:** 2026-01-27T00:41:42.927Z
+**Timestamp:** 2026-01-30T22:21:42.153Z
 **URL:** [https://www.manpower.no/nb](https://www.manpower.no/nb)
 **Total Violations:** 6
 
@@ -42,10 +42,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `a[aria-label="LES MER OM MANPOWER ACADEMY"]`
 - `#hs-form-iframe-0, .hs-button`
 
 ### Headings should not be empty
@@ -54,12 +55,13 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
-- `.featurette-section.white.standard:nth-child(3) > .container > .row > .col-lg-7 > .featurette-body > .name`
-- `.featurette-section.white.standard:nth-child(5) > .container > .row > .col-lg-7 > .featurette-body > .name`
+- `.white.featurette-section.standard:nth-child(3) > .container > .row > .col-lg-7 > .featurette-body > .name`
+- `.white.featurette-section.standard:nth-child(5) > .container > .row > .col-lg-7 > .featurette-body > .name`
+- `.grey > .container > .row > .col-lg-7 > .featurette-body > .name`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
