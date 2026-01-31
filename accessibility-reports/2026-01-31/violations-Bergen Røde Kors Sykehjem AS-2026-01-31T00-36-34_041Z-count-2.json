@@ -1,0 +1,95 @@
+{
+  "project": "Bergen Røde Kors Sykehjem AS",
+  "timestamp": "2026-01-31T00:36:34.042Z",
+  "url": "https://brks.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<span class=\"wp-block-navigation-item__label\">OM OSS</span>",
+          "target": [
+            "a[href$=\"om-oss/\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #ffffff, background color: #ed1c23, font size: 13.4pt (17.8816px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"wp-block-navigation-item__label\">TILBUD</span>",
+          "target": [
+            "a[href$=\"tilbud/\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #ffffff, background color: #ed1c23, font size: 13.4pt (17.8816px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"wp-block-navigation-item__label\">INFO</span>",
+          "target": [
+            "a[href$=\"info/\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #ffffff, background color: #ed1c23, font size: 13.4pt (17.8816px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"wp-block-navigation-item__label\">KONTAKT</span>",
+          "target": [
+            "a[href$=\"kontakt/\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #ffffff, background color: #ed1c23, font size: 13.4pt (17.8816px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"wp-block-navigation-item__label\">JOBB</span>",
+          "target": [
+            "a[href$=\"jobb/\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #ffffff, background color: #ed1c23, font size: 13.4pt (17.8816px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"wp-block-navigation-item__label\">FOR ANSATTE</span>",
+          "target": [
+            "a[href$=\"for-ansatte/\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #ffffff, background color: #ed1c23, font size: 13.4pt (17.8816px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb-NO\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    }
+  ]
+}
