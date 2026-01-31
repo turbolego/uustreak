@@ -1,6 +1,6 @@
 # WCAG Violations Report for Aberia AS
 
-**Timestamp:** 2026-01-30T22:03:15.735Z
+**Timestamp:** 2026-01-31T00:29:08.453Z
 **URL:** [https://www.aberia.no/#](https://www.aberia.no/#)
 **Total Violations:** 6
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `#col-33542084 > .dark.col-inner > p`
-- `#col-255226008 > .dark.col-inner > p`
+- `#col-348873072 > .dark.col-inner > p`
+- `#col-1663446564 > .dark.col-inner > p`
 
 ### Main landmark should not be contained in another landmark
 
