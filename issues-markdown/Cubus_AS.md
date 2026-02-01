@@ -1,19 +1,31 @@
 # WCAG Violations Report for Cubus AS
 
-**Timestamp:** 2026-01-31T00:41:57.976Z
-**URL:** [https://cubus.com/no/#](https://cubus.com/no/#)
-**Total Violations:** 1
+**Timestamp:** 2026-02-01T00:31:33.869Z
+**URL:** [https://cubus.com/no/](https://cubus.com/no/)
+**Total Violations:** 2
 
 ## Violation Details
 
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+### Links must be distinguishable without relying on color
 
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
+- **Impact:** serious
+- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
+- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.css-smxovs-StyledCssSliderWrapper`
+- `a`
+
+### Delayed refresh under 20 hours must not be used
+
+- **Impact:** critical
+- **Description:** Ensure <meta http-equiv="refresh"> is not used for delayed refresh
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/meta-refresh?application=playwright
+- **Tags:** cat.time-and-media, wcag2a, wcag221, TTv5, TT8.a, EN-301-549, EN-9.2.2.1, RGAAv4, RGAA-13.1.2
+- **Count:** 1
+
+#### Affected Elements:
+
+- `meta[http-equiv="refresh"]`

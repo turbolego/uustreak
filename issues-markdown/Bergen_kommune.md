@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bergen kommune
 
-**Timestamp:** 2026-01-31T00:36:49.211Z
-**URL:** [https://www.bergen.kommune.no/#](https://www.bergen.kommune.no/#)
+**Timestamp:** 2026-02-01T00:26:35.902Z
+**URL:** [https://www.bergen.kommune.no/](https://www.bergen.kommune.no/)
 **Total Violations:** 1
 
 ## Violation Details

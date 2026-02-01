@@ -1,7 +1,7 @@
 # WCAG Violations Report for Eiendomsmelger Krogsveen AS
 
-**Timestamp:** 2026-01-31T00:48:34.334Z
-**URL:** [https://www.krogsveen.no/#](https://www.krogsveen.no/#)
+**Timestamp:** 2026-02-01T00:38:02.605Z
+**URL:** [https://www.krogsveen.no/](https://www.krogsveen.no/)
 **Total Violations:** 2
 
 ## Violation Details

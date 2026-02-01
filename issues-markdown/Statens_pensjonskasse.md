@@ -1,7 +1,7 @@
 # WCAG Violations Report for Statens pensjonskasse
 
-**Timestamp:** 2026-01-31T00:46:44.899Z
-**URL:** [https://www.spk.no/#](https://www.spk.no/#)
+**Timestamp:** 2026-02-01T00:39:54.034Z
+**URL:** [https://www.spk.no/](https://www.spk.no/)
 **Total Violations:** 1
 
 ## Violation Details

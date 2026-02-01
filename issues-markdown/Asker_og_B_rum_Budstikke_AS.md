@@ -1,22 +1,10 @@
 # WCAG Violations Report for Asker og Bærum Budstikke AS
 
-**Timestamp:** 2026-01-31T00:33:57.400Z
-**URL:** [https://www.budstikka.no/#](https://www.budstikka.no/#)
+**Timestamp:** 2026-02-01T00:23:42.284Z
+**URL:** [https://www.budstikka.no/](https://www.budstikka.no/)
 **Total Violations:** 5
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#eaframe, #container_9887514 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
@@ -41,6 +29,18 @@
 #### Affected Elements:
 
 - `brick-carousel-v2[data-slides="18"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
 
 ### Elements marked as presentational should be consistently ignored
 

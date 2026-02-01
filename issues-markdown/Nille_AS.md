@@ -1,7 +1,7 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2026-01-31T00:30:50.715Z
-**URL:** [https://www.nille.no/#](https://www.nille.no/#)
+**Timestamp:** 2026-02-01T00:25:24.167Z
+**URL:** [https://www.nille.no/](https://www.nille.no/)
 **Total Violations:** 5
 
 ## Violation Details
@@ -67,4 +67,4 @@
 #### Affected Elements:
 
 - `.topBar--hOWYROG`
-- `.content--QC6mDoR`
+- `.htmlDrawerWrapper--rQ6eisE`

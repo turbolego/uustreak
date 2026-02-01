@@ -1,8 +1,8 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2026-01-31T00:39:45.930Z
-**URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
-**Total Violations:** 4
+**Timestamp:** 2026-02-01T00:29:26.024Z
+**URL:** [https://www.byggmakker.no/](https://www.byggmakker.no/)
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.product-card.ab_omni_kampaign[data-product_id="6411501437204"]`
-- `.product-card__product-price.prrc[data-product_id="6411501437204"]`
+- `.product-card[data-product_id="6411501437204"][data-price-history="399"]`
+- `.product-card__product-price[data-product_id="6411501437204"][data-price-history="399"]`
 - `.product-card.ab_omni_kampaign[data-product_id="6411501410269"]`
 - `.product-card__product-price.prrc[data-product_id="6411501410269"]`
 - `.product-card.ab_omni_kampaign[data-product_id="6411501430281"]`
@@ -50,12 +50,12 @@
 - `.product-card__product-price.prrc[data-product_id="7330509595862"]`
 - `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
 - `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
-- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
-- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
-- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
-- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
-- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
-- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
+- `.product-card.ab_omni_kampaign[data-price-history="439"]`
+- `.product-card__product-price.prrc[data-price-history="439"]`
+- `.product-card.ab_omni_kampaign[data-price-history="419"]`
+- `.product-card__product-price.prrc[data-price-history="419"]`
+- `.product-card.ab_omni_kampaign[data-price-history="299"]`
+- `.product-card__product-price.prrc[data-price-history="299"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7311490052718"]`
 - `.product-card__product-price.prrc[data-product_id="7311490052718"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7311490028133"]`
@@ -70,8 +70,8 @@
 - `.product-card__product-price.prrc[data-product_id="3423128690224"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7052870178412"]`
 - `.product-card__product-price.prrc[data-product_id="7052870178412"]`
-- `.product-card.ab_omni_kampaign[data-product_id="5902662063650"]`
-- `.product-card__product-price.prrc[data-product_id="5902662063650"]`
+- `.product-card[data-product_id="5902662063650"][data-price-history="879"]`
+- `.product-card__product-price[data-product_id="5902662063650"][data-price-history="879"]`
 
 ### Certain ARIA roles must be contained by particular parents
 
@@ -87,6 +87,46 @@
 - `a[href$="kampanjer"]`
 - `.action-link[href$="tjenester"][role="menuitem"]`
 - `.action-link[href$="proff"][role="menuitem"]`
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 29
+
+#### Affected Elements:
+
+- `.product-card[data-product_id="6411501437204"][data-price-history="399"] > .product-card__image-container > div:nth-child(1) > strong`
+- `.product-card__product-price[data-product_id="6411501437204"][data-price-history="399"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
+- `.product-card__product-price[data-product_id="6411501437204"][data-price-history="399"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
+- `.product-card__product-price[data-product_id="6411501437204"][data-price-history="399"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
+- `.product-card__product-price[data-product_id="6411501437204"][data-price-history="399"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
+- `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
+- `.product-card.ab_omni_kampaign[data-price-history="439"] > .product-card__image-container > div:nth-child(1) > strong`
+- `.product-card__product-price.prrc[data-price-history="439"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
+- `.product-card__product-price.prrc[data-price-history="439"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
+- `.product-card__product-price.prrc[data-price-history="439"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
+- `.product-card__product-price.prrc[data-price-history="439"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
+- `.campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
+- `.product-card.ab_omni_kampaign[data-price-history="419"] > .product-card__image-container > div:nth-child(1) > strong`
+- `.product-card__product-price.prrc[data-price-history="419"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
+- `.product-card__product-price.prrc[data-price-history="419"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
+- `.product-card__product-price.prrc[data-price-history="419"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
+- `.product-card__product-price.prrc[data-price-history="419"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
+- `.campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
+- `.product-card.ab_omni_kampaign[data-price-history="299"] > .product-card__image-container > div:nth-child(1) > strong`
+- `.product-card__product-price.prrc[data-price-history="299"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
+- `.product-card__product-price.prrc[data-price-history="299"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
+- `.product-card__product-price.prrc[data-price-history="299"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
+- `.product-card__product-price.prrc[data-price-history="299"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
+- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
+- `.product-card__product-price[data-product_id="5902662063650"][data-price-history="879"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
+- `.product-card__product-price[data-product_id="5902662063650"][data-price-history="879"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
+- `.product-card__product-price[data-product_id="5902662063650"][data-price-history="879"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
+- `.product-card__product-price[data-product_id="5902662063650"][data-price-history="879"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
+- `#nytt_gulv > .campaign-product-list > .campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
 
 ### Headings should not be empty
 

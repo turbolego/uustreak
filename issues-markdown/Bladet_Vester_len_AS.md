@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-01-31T00:38:42.979Z
-**URL:** [https://www.blv.no/#](https://www.blv.no/#)
-**Total Violations:** 6
+**Timestamp:** 2026-02-01T00:28:24.516Z
+**URL:** [https://www.blv.no/](https://www.blv.no/)
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -25,23 +25,13 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, iframe[scrolling="no"]`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, body > iframe`
 - `#eaframe`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.navigation > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Links must have discernible text
 
