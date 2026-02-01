@@ -1,23 +1,10 @@
 # WCAG Violations Report for Stiftelsen Bergensklinikkene
 
-**Timestamp:** 2026-02-01T00:36:10.191Z
-**URL:** [https://vipestores.com/no](https://vipestores.com/no)
-**Total Violations:** 9
+**Timestamp:** 2026-01-31T00:31:55.682Z
+**URL:** [https://bergenclinics.no/#](https://bergenclinics.no/#)
+**Total Violations:** 6
 
 ## Violation Details
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `.MS-left`
-- `.MS-right`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -29,32 +16,21 @@
 
 #### Affected Elements:
 
-- `.lrnMore[target="_blank"]:nth-child(2)`
-- `.lrnMore[target="_blank"]:nth-child(3)`
+- `a[target="_blank"]`
+- `#iframe, iframe, footer > a`
 
-### Documents must have <title> element to aid in navigation
+### Frames must have an accessible name
 
 - **Impact:** serious
-- **Description:** Ensure each HTML document contains a non-empty <title> element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/document-title?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag242, TTv5, TT12.a, EN-301-549, EN-9.2.4.2, ACT, RGAAv4, RGAA-8.5.1
-- **Count:** 1
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `html`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.gifts > .font-weight-bolder.item-card-text-cat`
+- `#iframe`
+- `#iframe, iframe`
 
 ### Images must have alternative text
 
@@ -62,11 +38,15 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
+- **Count:** 5
 
 #### Affected Elements:
 
-- `.is-selected > .first-card.card.card-body > .img-fluid[src$="item_1.png"]`
+- `#iframe, iframe, li:nth-child(1) > .content > .arrow > img`
+- `#iframe, iframe, li:nth-child(2) > .content > .arrow > img`
+- `#iframe, iframe, li:nth-child(3) > .content > .arrow > img`
+- `#iframe, iframe, li:nth-child(4) > .content > .arrow > img`
+- `#iframe, iframe, li:nth-child(5) > .content > .arrow > img`
 
 ### Links must have discernible text
 
@@ -74,20 +54,15 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 10
+- **Count:** 5
 
 #### Affected Elements:
 
-- `.navbar-brand`
-- `.itemThirdColor.item:nth-child(9) > .w-100.h-100.d-flex`
-- `.itemFirstColor.item:nth-child(1) > .w-100.h-100.d-flex`
-- `.itemSecondColor.item:nth-child(2) > .w-100.h-100.d-flex`
-- `.itemThirdColor.item:nth-child(3) > .w-100.h-100.d-flex`
-- `.itemFirstColor.item:nth-child(4) > .w-100.h-100.d-flex`
-- `.itemSecondColor.item:nth-child(5) > .w-100.h-100.d-flex`
-- `.itemThirdColor.item:nth-child(6) > .w-100.h-100.d-flex`
-- `.itemFirstColor.item:nth-child(7) > .w-100.h-100.d-flex`
-- `.itemSecondColor.item:nth-child(8) > .w-100.h-100.d-flex`
+- `#iframe, iframe, .dak1`
+- `#iframe, iframe, .dak2`
+- `#iframe, iframe, .dak3`
+- `#iframe, iframe, .dak4`
+- `#iframe, iframe, .dak5`
 
 ### Zooming and scaling must not be disabled
 
@@ -101,29 +76,16 @@
 
 - `meta[name="viewport"]`
 
-### Interactive controls must not be nested
-
-- **Impact:** serious
-- **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/nested-interactive?application=playwright
-- **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.button`
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 4
+- **Count:** 3
 
 #### Affected Elements:
 
-- `.message`
-- `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(1)`
-- `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(3)`
-- `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text > span`
+- `.sale_banner_gray`
+- `#iframe, iframe, .heading`
+- `#iframe, iframe, .list_wrapper`
