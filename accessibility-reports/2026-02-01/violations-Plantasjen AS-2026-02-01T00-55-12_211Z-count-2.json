@@ -1,0 +1,84 @@
+{
+  "project": "Plantasjen AS",
+  "timestamp": "2026-02-01T00:55:12.211Z",
+  "url": "https://plantasjen.no/no",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" class=\"absolute right-4 top...\">",
+          "target": [
+            ".top-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<p class=\"text-white\">Fast lavpris</p>",
+          "target": [
+            ".max-w-\\[50\\%\\].flex-\\[0_0_50\\%\\].lg\\:max-w-\\[25\\%\\]:nth-child(4) > .gap-1\\.5.rounded-lg.border-secondary-sand-soft > .relative > .md\\:px-8.group.gap-3 > .md\\:top-6.left-0.top-6 > .bg-secondary-terracotta.md\\:px-2.py-1 > .text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.44 (foreground color: #ffffff, background color: #f68a1e, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p class=\"text-white\">Fast lavpris</p>",
+          "target": [
+            ".max-w-\\[50\\%\\].flex-\\[0_0_50\\%\\].lg\\:max-w-\\[25\\%\\]:nth-child(2) > .gap-1\\.5.rounded-lg.border-secondary-sand-soft > .relative > .md\\:px-8.group.gap-3 > .md\\:top-6.left-0.top-6 > .bg-secondary-terracotta.md\\:px-2.py-1 > .text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.44 (foreground color: #ffffff, background color: #f68a1e, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p class=\"text-white\">Fast lavpris</p>",
+          "target": [
+            ".max-w-\\[50\\%\\].flex-\\[0_0_50\\%\\].lg\\:max-w-\\[25\\%\\]:nth-child(1) > .gap-1\\.5.rounded-lg.border-secondary-sand-soft > .relative > .md\\:px-8.group.gap-3 > .md\\:top-6.left-0.top-6 > .bg-secondary-terracotta.md\\:px-2.py-1 > .text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.44 (foreground color: #ffffff, background color: #f68a1e, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ]
+}
