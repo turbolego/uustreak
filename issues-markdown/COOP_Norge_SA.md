@@ -1,6 +1,6 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2026-01-31T00:40:15.620Z
+**Timestamp:** 2026-02-01T00:44:31.348Z
 **URL:** [https://www.coop.no/#](https://www.coop.no/#)
 **Total Violations:** 5
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.im > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .ii.ik.ij > .il > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.iy > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .iu.iw.iv > .ix > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### ARIA attributes must conform to valid values
 
@@ -30,8 +30,8 @@
 #### Affected Elements:
 
 - `input[role="searchbox"]`
-- `.im > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .ii.ik.ij > .il > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.iy > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .iu.iw.iv > .ix > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### Headings should not be empty
 
@@ -43,8 +43,8 @@
 
 #### Affected Elements:
 
-- `.hw`
-- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .fx.am.cj > .fy.g0.g1`
+- `.i8`
+- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .gb.am.cj > .gc.ge.gf`
 
 ### Frames must have an accessible name
 
@@ -56,10 +56,10 @@
 
 #### Affected Elements:
 
-- `#\31 KDi5pZPrBH0mbC4MKfRMQ > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[scrolling="no"]`
-- `#\31 KDi5pZPrBH0mbC4MKfRMQ > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
-- `#\33 3modPj5ilgcmY76YKciV8 > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[scrolling="no"]`
-- `#\33 3modPj5ilgcmY76YKciV8 > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
+- `#\31 KDi5pZPrBH0mbC4MKfRMQ > .q.eo.cj > .ep.al.ba > .eq.er.es > iframe, iframe[scrolling="no"]`
+- `#\31 KDi5pZPrBH0mbC4MKfRMQ > .q.eo.cj > .ep.al.ba > .eq.er.es > iframe, body > iframe`
+- `#\33 3modPj5ilgcmY76YKciV8 > .q.eo.cj > .ep.al.ba > .eq.er.es > iframe, iframe[scrolling="no"]`
+- `#\33 3modPj5ilgcmY76YKciV8 > .q.eo.cj > .ep.al.ba > .eq.er.es > iframe, body > iframe`
 
 ### Links must have discernible text
 
@@ -71,5 +71,5 @@
 
 #### Affected Elements:
 
-- `.kg.kh.ki:nth-child(1)`
-- `.kg.kh.ki:nth-child(2)`
+- `.km.kn.ko:nth-child(1)`
+- `.km.kn.ko:nth-child(2)`
