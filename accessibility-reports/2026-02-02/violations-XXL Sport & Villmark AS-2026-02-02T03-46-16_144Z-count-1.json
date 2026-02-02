@@ -1,0 +1,38 @@
+{
+  "project": "XXL Sport & Villmark AS",
+  "timestamp": "2026-02-02T03:46:16.144Z",
+  "url": "https://www.xxl.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<img data-private=\"true\" alt=\"Barn\" fetchpriority=\"low\" loading=\"lazy\" width=\"200\" height=\"200\" decoding=\"async\" data-nimg=\"1\" class=\"css-1w9f3o3 esvijif4\" sizes=\"(max-width: 375px) 1...\" srcset=\"/content/images/fef8...\" src=\"https://www.xxl.no/c...\" style=\"color: transparent;\">",
+          "target": [
+            "img[alt=\"Barn\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img data-private=\"true\" alt=\"dame\" fetchpriority=\"low\" loading=\"lazy\" width=\"200\" height=\"200\" decoding=\"async\" data-nimg=\"1\" class=\"css-1w9f3o3 esvijif4\" sizes=\"(max-width: 375px) 1...\" srcset=\"/content/images/d1db...\" src=\"https://www.xxl.no/c...\" style=\"color: transparent;\">",
+          "target": [
+            "img[alt=\"dame\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    }
+  ]
+}

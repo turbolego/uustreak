@@ -1,0 +1,31 @@
+{
+  "project": "Bergen kommune",
+  "timestamp": "2026-02-02T03:22:21.339Z",
+  "url": "https://www.bergen.kommune.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img class=\"teaser__image\" src=\"/api/rest/bilder/V69585485?scaleWidth=950&amp;cropX1=0&amp;cropY1=410&amp;cropX2=4256&amp;cropY2=2823\" alt=\"Venter høy luftforurensning: Dette kan du gjøre\">",
+          "target": [
+            ".teaser__image"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    }
+  ]
+}
