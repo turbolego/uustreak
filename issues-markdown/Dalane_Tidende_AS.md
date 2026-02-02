@@ -1,7 +1,7 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2026-02-01T00:33:34.279Z
-**URL:** [https://www.dalane-tidende.no/](https://www.dalane-tidende.no/)
+**Timestamp:** 2026-02-02T01:00:41.440Z
+**URL:** [https://www.dalane-tidende.no/#](https://www.dalane-tidende.no/#)
 **Total Violations:** 3
 
 ## Violation Details
@@ -12,11 +12,10 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #brand_safety_VZ9-aZydNbuZodAPmKKZmAc > iframe`
 - `#eaframe`
 
 ### Elements marked as presentational should be consistently ignored

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hosle skole
 
-**Timestamp:** 2026-02-01T00:42:08.255Z
+**Timestamp:** 2026-02-02T00:55:25.101Z
 **URL:** [https://www.hosle.no/#](https://www.hosle.no/#)
 **Total Violations:** 5
 
@@ -54,7 +54,7 @@
 #### Affected Elements:
 
 - `a[href$="www.baerum.kommune.no"]`
-- `#A4`
+- `#A2`
 
 ### All page content should be contained by landmarks
 

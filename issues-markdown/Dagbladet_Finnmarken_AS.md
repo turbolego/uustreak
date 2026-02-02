@@ -1,7 +1,7 @@
 # WCAG Violations Report for Dagbladet Finnmarken AS
 
-**Timestamp:** 2026-02-01T00:32:34.121Z
-**URL:** [https://www.ifinnmark.no/](https://www.ifinnmark.no/)
+**Timestamp:** 2026-02-02T00:59:46.870Z
+**URL:** [https://www.ifinnmark.no/#](https://www.ifinnmark.no/#)
 **Total Violations:** 4
 
 ## Violation Details
@@ -12,12 +12,10 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, iframe`
-- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, iframe, iframe`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination

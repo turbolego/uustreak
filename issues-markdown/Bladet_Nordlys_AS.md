@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-02-01T00:28:07.607Z
-**URL:** [https://www.nordlys.no/](https://www.nordlys.no/)
+**Timestamp:** 2026-02-02T00:54:39.091Z
+**URL:** [https://www.nordlys.no/#](https://www.nordlys.no/#)
 **Total Violations:** 4
 
 ## Violation Details
@@ -12,12 +12,10 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe`
-- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe, iframe`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -30,7 +28,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-version="carousel"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `brick-carousel-v2[data-slides="10"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 

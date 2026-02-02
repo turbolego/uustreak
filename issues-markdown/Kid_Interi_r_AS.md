@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-02-01T00:46:39.087Z
+**Timestamp:** 2026-02-02T01:00:18.035Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -60,7 +60,7 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 20
+- **Count:** 19
 
 #### Affected Elements:
 
@@ -69,7 +69,6 @@
 - `img[alt="Alle dundyner 50%"]`
 - `img[alt="Alle laken og putevar 50%"]`
 - `img[alt="Alle sengetepper 50%"]`
-- `img[alt="Thomas hotellpute 2 for 1"]`
 - `img[alt="Bomull sengesett fra 249,-"]`
 - `img[alt="Alle dunputer 50%"]`
 - `img[alt="Helårsdyner fra 799,-"]`
@@ -77,7 +76,7 @@
 - `a[href$="baderom"] > .g0.da.c4 > .en.fw[alt="Se alle ➝"]`
 - `img[alt="Baderomstilbehør 50%"]`
 - `img[alt="Skjønnhetstilbehør 50%"]`
-- `img[alt="Hotel Selection 40%"]`
+- `img[alt="Mengder av  håndklær 50%"]`
 - `img[alt="Toalettmapper 50%"]`
 - `img[alt="AVA velværeserie 40%"]`
 - `img[alt="Alle morgenkåper 50%"]`

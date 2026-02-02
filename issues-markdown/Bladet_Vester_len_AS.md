@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-02-01T00:28:24.516Z
-**URL:** [https://www.blv.no/](https://www.blv.no/)
+**Timestamp:** 2026-02-02T00:55:05.864Z
+**URL:** [https://www.blv.no/#](https://www.blv.no/#)
 **Total Violations:** 5
 
 ## Violation Details
@@ -25,12 +25,10 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, iframe[scrolling="no"]`
-- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, body > iframe`
 - `#eaframe`
 
 ### Links must have discernible text
