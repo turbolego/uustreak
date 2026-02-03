@@ -1,6 +1,6 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2026-02-02T00:56:43.725Z
+**Timestamp:** 2026-02-03T00:45:11.518Z
 **URL:** [https://www.coop.no/#](https://www.coop.no/#)
 **Total Violations:** 5
 
@@ -56,10 +56,10 @@
 
 #### Affected Elements:
 
-- `#\31 KDi5pZPrBH0mbC4MKfRMQ > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[scrolling="no"]`
-- `#\31 KDi5pZPrBH0mbC4MKfRMQ > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
 - `#\33 3modPj5ilgcmY76YKciV8 > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[scrolling="no"]`
 - `#\33 3modPj5ilgcmY76YKciV8 > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
+- `#\31 KDi5pZPrBH0mbC4MKfRMQ > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[scrolling="no"]`
+- `#\31 KDi5pZPrBH0mbC4MKfRMQ > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
 
 ### Links must have discernible text
 

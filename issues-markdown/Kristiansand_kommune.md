@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kristiansand kommune
 
-**Timestamp:** 2026-02-02T01:02:58.750Z
+**Timestamp:** 2026-02-03T00:46:09.760Z
 **URL:** [https://www.kristiansand.kommune.no/#](https://www.kristiansand.kommune.no/#)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -20,6 +20,18 @@
 - `#accept-cookies`
 - `#reject-cookies`
 - `.learn-more`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
 
 ### All page content should be contained by landmarks
 

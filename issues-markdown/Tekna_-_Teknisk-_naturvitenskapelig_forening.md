@@ -1,8 +1,8 @@
 # WCAG Violations Report for Tekna - Teknisk- naturvitenskapelig forening
 
-**Timestamp:** 2026-02-02T00:52:01.195Z
+**Timestamp:** 2026-02-03T00:38:50.076Z
 **URL:** [https://www.tekna.no/#](https://www.tekna.no/#)
-**Total Violations:** 9
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -41,18 +41,6 @@
 #### Affected Elements:
 
 - `.nav-link`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.promotion-block--lightblue.promotion-block.cms-block > .promotion-block__body > .promotion-block__text.cms-block__body > h3`
 
 ### Images must have alternative text
 
@@ -109,18 +97,17 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 16
+- **Count:** 15
 
 #### Affected Elements:
 
 - `div:nth-child(8)`
 - `.heroblock`
 - `.promoted-link-list`
-- `.d-sm-flex`
 - `.block:nth-child(4)`
 - `.promotion-block--yellow > .promotion-block__body`
-- `.contentareablock.col-lg-12.col-md-12:nth-child(5) > .content-area-block.content-area-block--no-header.cms-block > .flex-gap-small.row > .col-lg-8.displaymode-two-thirds.promotionblock`
-- `.text-image-block__header.d-none.d-lg-block`
+- `.col-lg-8`
+- `.d-none`
 - `.text-image-block__text`
 - `.text-image-block__image:nth-child(1)`
 - `.block-spacing-small.col-12`

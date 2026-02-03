@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-02-02T01:00:18.035Z
+**Timestamp:** 2026-02-03T00:43:58.000Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -42,16 +42,15 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 7
+- **Count:** 6
 
 #### Affected Elements:
 
 - `img[fetchpriority="high"]`
 - `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1) > .gj.fc.fb > .fe.ff.el`
 - `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1) > .gj.fc.fb > .fe.ff.el`
-- `.h0 > .fe.ff.el`
 - `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
-- `div:nth-child(11) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
+- `div:nth-child(11) > .fa.f9.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
 - `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
@@ -81,7 +80,7 @@
 - `img[alt="AVA velværeserie 40%"]`
 - `img[alt="Alle morgenkåper 50%"]`
 - `img[alt="Såper & kremer 50%"]`
-- `a[href$="loungewear--accessories"] > .g0.da.c4 > .en.fw.fg`
+- `img[alt="Loungewear og accessories 50%"]`
 - `img[alt="Therapie velværeserie 40%"]`
 
 ### Links must have discernible text
@@ -94,16 +93,16 @@
 
 #### Affected Elements:
 
-- `.bl.c4.bz > .a7[href$="soverom"][data-scope-link="true"]:nth-child(1)`
-- `.bl.c4.bz > .ca.s[href$="soverom"]`
+- `.bl.c4.dd > .a7[href$="soverom"][data-scope-link="true"]:nth-child(1)`
+- `.bl.c4.dd > .ca.s[href$="soverom"]`
 - `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="kjokkenutstyr"]`
 - `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="borddekking"]`
 - `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="ambiance"]`
-- `div:nth-child(11) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(11) > .fa.f9.bv > .bl.c4.bz > .ca.s.c9`
+- `div:nth-child(11) > .fa.f9.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(11) > .fa.f9.bv > .bl.c4.dd > .ca.s.c8`
 - `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="kjaledyr"]`
 

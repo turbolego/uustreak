@@ -1,10 +1,23 @@
 # WCAG Violations Report for Sola Strand Hotel
 
-**Timestamp:** 2026-02-02T00:56:29.862Z
+**Timestamp:** 2026-02-03T00:49:12.670Z
 **URL:** [https://www.solastrandhotel.no/#](https://www.solastrandhotel.no/#)
-**Total Violations:** 3
+**Total Violations:** 5
 
 ## Violation Details
+
+### ARIA role should be appropriate for the element
+
+- **Impact:** minor
+- **Description:** Ensure role attribute has an appropriate value for the element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video, body`
+- `div[data-config-url="https://vimeo.com/1043637275"] > div > .background-video, body`
 
 ### Certain ARIA roles must contain particular children
 
@@ -17,6 +30,19 @@
 #### Affected Elements:
 
 - `.header-display-desktop > .header-actions.header-actions--right > .language-picker-desktop[aria-controls="language-picker-menu"][aria-label="language picker"]`
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video`
+- `div[data-config-url="https://vimeo.com/1043637275"] > div > .background-video`
 
 ### Heading levels should only increase by one
 
