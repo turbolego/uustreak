@@ -1,10 +1,26 @@
 # WCAG Violations Report for Eiendomsmegler Vest AS
 
-**Timestamp:** 2026-02-03T00:52:16.513Z
+**Timestamp:** 2026-02-04T00:51:19.828Z
 **URL:** [https://www.eiendomsmeglernorge.no/](https://www.eiendomsmeglernorge.no/)
-**Total Violations:** 6
+**Total Violations:** 8
 
 ## Violation Details
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 5
+
+#### Affected Elements:
+
+- `.coi-consent-banner__category-container:nth-child(1) > .coi-consent-banner__category-controls > .category-button-group > .coi-consent-banner__category-name`
+- `.coi-consent-banner__category-container:nth-child(2) > .coi-consent-banner__category-controls > .category-button-group > .coi-consent-banner__category-name`
+- `.coi-consent-banner__category-container:nth-child(3) > .coi-consent-banner__category-controls > .category-button-group > .coi-consent-banner__category-name`
+- `.coi-consent-banner__category-container:nth-child(4) > .coi-consent-banner__category-controls > .category-button-group > .coi-consent-banner__category-name`
+- `.coi-consent-banner__category-container:nth-child(5) > .coi-consent-banner__category-controls > .category-button-group > .coi-consent-banner__category-name`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -31,6 +47,21 @@
 #### Affected Elements:
 
 - `h6`
+
+### Form elements should have a visible label
+
+- **Impact:** serious
+- **Description:** Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/label-title-only?application=playwright
+- **Tags:** cat.forms, best-practice
+- **Count:** 4
+
+#### Affected Elements:
+
+- `#cookie_cat_necessary`
+- `#cookie_cat_functional`
+- `#cookie_cat_statistic`
+- `#cookie_cat_marketing`
 
 ### Document should not have more than one banner landmark
 

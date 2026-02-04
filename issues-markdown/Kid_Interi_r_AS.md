@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-02-03T00:43:58.000Z
+**Timestamp:** 2026-02-04T00:46:12.545Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -42,15 +42,16 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 6
+- **Count:** 7
 
 #### Affected Elements:
 
 - `img[fetchpriority="high"]`
 - `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1) > .gj.fc.fb > .fe.ff.el`
 - `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1) > .gj.fc.fb > .fe.ff.el`
+- `.h0 > .fe.ff.el`
 - `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
-- `div:nth-child(11) > .fa.f9.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
+- `div:nth-child(12) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
 - `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
@@ -72,10 +73,10 @@
 - `img[alt="Alle dunputer 50%"]`
 - `img[alt="Helårsdyner fra 799,-"]`
 - `img[alt="Petra dyne- & putepakke 249,-"]`
+- `img[alt="Mengder av  håndklær 50%"]`
 - `a[href$="baderom"] > .g0.da.c4 > .en.fw[alt="Se alle ➝"]`
 - `img[alt="Baderomstilbehør 50%"]`
 - `img[alt="Skjønnhetstilbehør 50%"]`
-- `img[alt="Mengder av  håndklær 50%"]`
 - `img[alt="Toalettmapper 50%"]`
 - `img[alt="AVA velværeserie 40%"]`
 - `img[alt="Alle morgenkåper 50%"]`
@@ -93,16 +94,16 @@
 
 #### Affected Elements:
 
-- `.bl.c4.dd > .a7[href$="soverom"][data-scope-link="true"]:nth-child(1)`
-- `.bl.c4.dd > .ca.s[href$="soverom"]`
+- `.bl.c4.bz > .a7[href$="soverom"][data-scope-link="true"]:nth-child(1)`
+- `.bl.c4.bz > .ca.s[href$="soverom"]`
 - `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="kjokkenutstyr"]`
 - `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="borddekking"]`
 - `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="ambiance"]`
-- `div:nth-child(11) > .fa.f9.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(11) > .fa.f9.bv > .bl.c4.dd > .ca.s.c8`
+- `div:nth-child(12) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(12) > .fa.f9.bv > .bl.c4.bz > .ca.s.c9`
 - `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="kjaledyr"]`
 

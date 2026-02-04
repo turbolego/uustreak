@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-02-03T00:43:42.509Z
+**Timestamp:** 2026-02-04T00:42:25.399Z
 **URL:** [https://www.blv.no/#](https://www.blv.no/#)
 **Total Violations:** 6
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.brick-pill--text-with-icon`
+- `article[data-title-words="17"] > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .teaser_image.brick-c-gASSIO[itemprop="teaser_image"] > .imagewrapper.brick-c-jLLCWt > .overlay_container.brick-c-bCkwNp.mirror > brick-pillbox-v9 > brick-pill-v9[data-version="breaking"][data-text="Oppdatert"][data-filled="true"] > .brick-pill--text-with-icon.brick-pill--text[title="Oppdatert"]`
 
 ### Headings should not be empty
 
@@ -29,7 +29,7 @@
 #### Affected Elements:
 
 - `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
-- `.custom-two > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `.custom-two.none[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
@@ -54,7 +54,7 @@
 #### Affected Elements:
 
 - `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"]`
-- `.custom-two > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
+- `.custom-two.none[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
 
 ### Elements marked as presentational should be consistently ignored
 

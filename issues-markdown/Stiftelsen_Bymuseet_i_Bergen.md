@@ -1,10 +1,34 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2026-02-03T00:33:16.500Z
+**Timestamp:** 2026-02-04T00:30:59.966Z
 **URL:** [https://bymuseet.no/#](https://bymuseet.no/#)
-**Total Violations:** 6
+**Total Violations:** 8
 
 ## Violation Details
+
+### Elements must only use supported ARIA attributes
+
+- **Impact:** critical
+- **Description:** Ensure an element's role supports its ARIA attributes
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#slick-slide00 > .vimeo-wrapper > iframe, .OverlayBase_module_overlayWrapper__42ef25fe`
+
+### ARIA role should be appropriate for the element
+
+- **Impact:** minor
+- **Description:** Ensure role attribute has an appropriate value for the element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#slick-slide00 > .vimeo-wrapper > iframe, body`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -57,18 +81,17 @@
 
 - `#slick-slide00 > .vimeo-wrapper > iframe`
 
-### Document should have one main landmark
+### Heading levels should only increase by one
 
 - **Impact:** moderate
-- **Description:** Ensure the document has a main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `html`
-- `#slick-slide00 > .vimeo-wrapper > iframe, html`
+- `.culture-for-all > .container > .section-title`
 
 ### Links must have discernible text
 
@@ -119,7 +142,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 36
+- **Count:** 35
 
 #### Affected Elements:
 
@@ -148,7 +171,6 @@
 - `.event.load-more__item.col-lg-3:nth-child(7)`
 - `.event.load-more__item.col-lg-3:nth-child(8)`
 - `.main-row > .text-center`
-- `#slick-slide00 > .vimeo-wrapper > iframe, #error`
 - `.cta[target="_self"] > span`
 - `.culture-for-all`
 - `.call-to-actions > .container`
