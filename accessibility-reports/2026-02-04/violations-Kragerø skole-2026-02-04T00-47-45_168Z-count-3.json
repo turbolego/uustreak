@@ -1,0 +1,124 @@
+{
+  "project": "Kragerø skole",
+  "timestamp": "2026-02-04T00:47:45.169Z",
+  "url": "https://www.kragero.kommune.no/kragero-skole/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img alt=\"Kragerø skole\" role=\"presentation\" src=\"/handlers/bv.ashx/i7e4ccb9d-b40c-4855-bfd3-94860fa2e641/9d5f2export-2023-04-11-080631.svg\">",
+          "target": [
+            "img[alt=\"Kragerø skole\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\" style=\"--innsyn-primary-theme-color: #003B5C; --innsyn-primary-contrast-color: #FFFFFF; --innsyn-primary-neutral-color: #E7ECEA; --innsyn-secondary-theme-color: #FBDBC2; --innsyn-secondary-contrast-color: #141423; --innsyn-secondary-neutral-color: #E9E1DC;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Søk</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1361 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<label class=\"content-search-box-label\" for=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1361_WebpartId_1361_ucContentSearchBoxControl-content-search-box-search-field\">\n                        <span>\n                            Søk etter\n                        </span>\n\t\t            </label>",
+          "target": [
+            ".webPartInnhold > .content-search-box.content-search-box--default[data-datasource-id=\"2\"] > .content-search-box-content > .content-search-box-input > .content-search-box-combobox > label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPart frontpage-contact-menu accessible-title\" id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1359\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1359"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"Sone5001\" class=\"zone Zone webPartZoneVertical\">",
+          "target": [
+            "#Sone5001"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul>",
+          "target": [
+            ".container > ul"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"Sone6001\" class=\"zone Zone webPartZoneVertical\">",
+          "target": [
+            "#Sone6001"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"bottom-boxes\">",
+          "target": [
+            "#bottom-boxes"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container-floating-notifications\" style=\"background: url(\"/images/1px_Black_Opacity_75.png\");\">",
+          "target": [
+            ".container-floating-notifications"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
