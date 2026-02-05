@@ -1,10 +1,22 @@
 # WCAG Violations Report for Lofotr Vikingmuseum AS
 
-**Timestamp:** 2026-02-04T00:50:44.833Z
+**Timestamp:** 2026-02-05T00:50:20.501Z
 **URL:** [https://www.lofotr.no/#](https://www.lofotr.no/#)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
+
+### Elements must only use supported ARIA attributes
+
+- **Impact:** critical
+- **Description:** Ensure an element's role supports its ARIA attributes
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe, .OverlayBase_module_overlayWrapper__42ef25fe`
 
 ### ARIA role should be appropriate for the element
 

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Clas Ohlson AS
 
-**Timestamp:** 2026-02-04T00:44:42.038Z
+**Timestamp:** 2026-02-05T00:45:14.195Z
 **URL:** [https://www.clasohlson.com/no/#](https://www.clasohlson.com/no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -63,6 +63,18 @@
 - `.content:nth-child(8) > .cot-se-wrapper > .cot-se-inspiration > .cot-se-inspiration__grid > .cot-se-inspiration__item:nth-child(4) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
 - `.content:nth-child(8) > .cot-se-wrapper > .cot-se-inspiration > .cot-se-inspiration__grid > .cot-se-inspiration__item:nth-child(5) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
 - `.cot-se-inspiration__item:nth-child(6) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
+
+### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
+
+- **Impact:** serious
+- **Description:** Ensure that lists are structured correctly
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/list?application=playwright
+- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.header`
 
 ### All page content should be contained by landmarks
 

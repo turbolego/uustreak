@@ -1,8 +1,8 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-02-04T00:50:32.352Z
+**Timestamp:** 2026-02-05T00:50:59.255Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -37,42 +37,27 @@
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="6"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `.swiper-slide-duplicate-next > .up-hero-carousel__content-wrapper > .up-hero-carousel__content-copy > .up-hero-carousel__title-href`
-- `.swiper-slide-next > .up-hero-carousel__content-wrapper > .up-hero-carousel__content-copy > .up-hero-carousel__title-href`
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 104
+- **Count:** 102
 
 #### Affected Elements:
 
 - `.skip-content-wrapper`
 - `.cmp-logo__link > .sr-only`
 - `.myey-login-url`
-- `.swiper-slide-duplicate-next > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[title="Transaction Trends 2025"][height="2560"]`
-- `.swiper-slide-duplicate-next > .up-hero-carousel__content-wrapper`
+- `.swiper-slide-duplicate-active > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="2.34"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="1639"][loading="lazy"]`
+- `.swiper-slide-duplicate-active > .up-hero-carousel__content-wrapper`
 - `.swiper-slide-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="2.34"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="1639"][loading="lazy"]`
 - `.swiper-slide-prev > .up-hero-carousel__content-wrapper`
-- `#image-render-bd6c3e038a > .cmp-image__image[height="2560"][loading="lazy"]`
+- `.swiper-slide-visible > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="2.34"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="1639"][loading="lazy"]`
 - `.swiper-slide-visible > .up-hero-carousel__content-wrapper`
-- `.swiper-slide-next > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[title="Transaction Trends 2025"][height="2560"]`
+- `.swiper-slide-next > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="2.34"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="1639"][loading="lazy"]`
 - `.swiper-slide-next > .up-hero-carousel__content-wrapper`
-- `.swiper-slide-duplicate-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="2.34"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="1639"][loading="lazy"]`
-- `.swiper-slide-duplicate-prev > .up-hero-carousel__content-wrapper`
 - `.up-hero-carousel__pagination`
 - `.theme-dark.cmp-container--theme-dark.cmp-container--background-color-e2e`
 - `#promotional-375939547c80 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
@@ -101,7 +86,7 @@
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text:nth-child(4)`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor:nth-child(5)`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
-- `img[title="Arbab Dar og Magnus Birkeland"]`
+- `#image-render-7bd439cccd > .cmp-image__image[height="2560"][loading="lazy"]`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__title`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > p`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date__text`
@@ -134,9 +119,9 @@
 - `.cmp-slider__slide[data-index="2"][href$="assurance"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `.cmp-slider__slide[data-index="2"][href$="assurance"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
 - `.cmp-slider__slide[data-index="2"][href$="assurance"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
-- `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
-- `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
-- `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
+- `a[data-index="3"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
+- `a[data-index="3"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
+- `a[data-index="3"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
 - `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
 - `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`

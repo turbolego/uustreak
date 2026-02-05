@@ -1,22 +1,10 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-02-04T00:42:25.399Z
+**Timestamp:** 2026-02-05T00:43:00.573Z
 **URL:** [https://www.blv.no/#](https://www.blv.no/#)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `article[data-title-words="17"] > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .teaser_image.brick-c-gASSIO[itemprop="teaser_image"] > .imagewrapper.brick-c-jLLCWt > .overlay_container.brick-c-bCkwNp.mirror > brick-pillbox-v9 > brick-pill-v9[data-version="breaking"][data-text="Oppdatert"][data-filled="true"] > .brick-pill--text-with-icon.brick-pill--text[title="Oppdatert"]`
 
 ### Headings should not be empty
 
@@ -29,7 +17,7 @@
 #### Affected Elements:
 
 - `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
-- `.custom-two.none[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `.custom-two.background-custom[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
@@ -54,7 +42,7 @@
 #### Affected Elements:
 
 - `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"]`
-- `.custom-two.none[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
+- `.custom-two.background-custom[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
 
 ### Elements marked as presentational should be consistently ignored
 

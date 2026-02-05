@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-02-04T00:46:58.077Z
+**Timestamp:** 2026-02-05T00:47:28.768Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 6
 
@@ -46,9 +46,9 @@
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(21) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(31) > h5`
-- `.tm15.t28`
+- `.t28.tm15`
 - `.tm21.t28`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(46) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(48) > h5`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -82,57 +82,58 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 79
+- **Count:** 81
 
 #### Affected Elements:
 
 - `h1`
-- `#notice-10184058 > .content > h2`
-- `time[datetime="2026-02-03T20:08:34.000Z"]`
-- `div[title="Kongehuset endrer ikke planer"] > h2`
-- `time[datetime="2026-02-03T19:24:11.000Z"]`
-- `div[title="Frp faller markant på måling"] > h2`
-- `time[datetime="2026-02-03T19:22:56.000Z"]`
-- `div[title="USA skjøt ned iransk drone"] > h2`
-- `time[datetime="2026-02-03T18:06:41.000Z"]`
-- `#notice-10183923 > .content > h2`
-- `time[datetime="2026-02-03T17:44:46.000Z"]`
-- `#notice-10183918 > .content > h2`
-- `time[datetime="2026-02-03T17:43:29.000Z"]`
-- `#notice-10183870 > .content > h2`
-- `time[datetime="2026-02-03T17:41:31.000Z"]`
-- `div[title="Lærer skadet i knivstikking"] > h2`
-- `time[datetime="2026-02-03T15:21:22.000Z"]`
-- `div[title="Fotballfeberen herjer i Bodø"] > h2`
-- `time[datetime="2026-02-03T14:32:02.000Z"]`
-- `#notice-10183444 > .content > h2`
-- `time[datetime="2026-02-03T13:53:00.000Z"]`
-- `div[title="Rema dropper Kinderegg"] > h2`
-- `time[datetime="2026-02-03T13:21:55.000Z"]`
-- `#notice-10182481 > .content > h2`
-- `#notice-10182481 > .content > .meta`
-- `div[title="– Ikke interessert i Svalbard"] > h2`
-- `div[title="– Ikke interessert i Svalbard"] > .meta`
-- `#notice-10182368 > .content > h2`
-- `#notice-10182368 > .content > .meta`
-- `#notice-10182342 > .content > h2`
-- `#notice-10182342 > .content > .meta`
-- `#notice-10181977 > .content > h2`
-- `#notice-10181977 > .content > .meta`
-- `#notice-10181707 > .content > h2`
-- `#notice-10181707 > .content > .meta`
-- `#notice-10181706 > .content > h2`
-- `#notice-10181706 > .content > .meta`
-- `div[title="Cuba: Ingen dialog med USA"] > h2`
-- `div[title="Cuba: Ingen dialog med USA"] > .meta`
-- `#notice-10181552 > .content > h2`
-- `time[datetime="2026-02-02T19:43:16.000Z"]`
+- `#notice-10186426 > .content > h2`
+- `time[datetime="2026-02-04T20:54:05.000Z"]`
+- `div[title="Gutt til sykehus etter vold"] > h2`
+- `time[datetime="2026-02-04T20:53:03.000Z"]`
+- `div[title="USA angrep IS-mål i Syria"] > h2`
+- `time[datetime="2026-02-04T19:19:56.000Z"]`
+- `#notice-10186351 > .content > h2`
+- `time[datetime="2026-02-04T19:21:40.000Z"]`
+- `div[title="Lystrøbbel i OL-åpningen"] > h2`
+- `time[datetime="2026-02-04T18:46:37.000Z"]`
+- `#notice-10186310 > .content > h2`
+- `time[datetime="2026-02-04T18:40:54.000Z"]`
+- `#notice-10186275 > .content > h2`
+- `time[datetime="2026-02-04T17:48:23.000Z"]`
+- `#notice-10186258 > .content > h2`
+- `time[datetime="2026-02-04T17:47:43.000Z"]`
+- `div[title="Dårlig luft flere steder "] > h2`
+- `time[datetime="2026-02-04T13:36:25.000Z"]`
+- `div[title="Nets-trøbbel fikset"] > h2`
+- `time[datetime="2026-02-04T13:35:59.000Z"]`
+- `#notice-10185379 > .content > h2`
+- `#notice-10185379 > .content > .meta`
+- `#notice-10185240 > .content > h2`
+- `#notice-10185240 > .content > .meta`
+- `#notice-10185034 > .content > h2`
+- `#notice-10185034 > .content > .meta`
+- `div[title="Nigeria: Minst 35 drept"] > h2`
+- `time[datetime="2026-02-04T10:24:09.000Z"]`
+- `#notice-10184808 > .content > h2`
+- `time[datetime="2026-02-04T10:16:54.000Z"]`
+- `#notice-10184458 > .content > h2`
+- `#notice-10184458 > .content > .meta`
+- `div[title="To drept i russisk droneangrep"] > h2`
+- `div[title="To drept i russisk droneangrep"] > .meta`
+- `div[title="Alvorlig voldshendelse i Oslo"] > h2`
+- `div[title="Alvorlig voldshendelse i Oslo"] > .meta`
+- `div[title="NASA utsetter måneferd"] > h2`
+- `div[title="NASA utsetter måneferd"] > .meta`
+- `div[title="MDG ut mot Frps kullforslag"] > h2`
+- `div[title="MDG ut mot Frps kullforslag"] > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(4)`
 - `.row.large-12.small-12:nth-child(6)`
 - `.row.large-12.small-12:nth-child(7)`
 - `.mobile_no_border_color.has-row-header.hasContentPadding`
 - `.row.large-12.small-12:nth-child(9)`
+- `.row.large-12.small-12:nth-child(11)`
 - `#article_list_10180103 > .inner.fullwidthTarget.content`
 - `.page-content > .border-bg-quaternary.mobile_border-bg-quaternary.hasBorder`
 - `#article_list_9904930 > .inner.fullwidthTarget.content`
@@ -151,7 +152,6 @@
 - `.row.large-12.small-12:nth-child(28)`
 - `.row.large-12.small-12:nth-child(29)`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(31)`
-- `.row.large-12.small-12:nth-child(32)`
 - `.row.large-12.small-12:nth-child(33)`
 - `.row.large-12.small-12:nth-child(34)`
 - `.row.large-12.small-12:nth-child(36)`
@@ -159,9 +159,11 @@
 - `.row.large-12.small-12:nth-child(38)`
 - `#article_list_10184103 > .content > .font-weight-normal.m-font-weight-normal.t25`
 - `#article_list_10184103 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(41)`
+- `.row.large-12.small-12:nth-child(41)`
 - `.row.large-12.small-12:nth-child(42)`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(43)`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(44)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(46)`
+- `.row.large-12.small-12:nth-child(43)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(44)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(46)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(47)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(48)`
 - `.powered-by`

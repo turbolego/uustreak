@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sandnes kommune
 
-**Timestamp:** 2026-02-04T00:46:30.959Z
+**Timestamp:** 2026-02-05T00:47:26.753Z
 **URL:** [https://www.sandnes.kommune.no/#](https://www.sandnes.kommune.no/#)
 **Total Violations:** 6
 
@@ -55,8 +55,8 @@
 #### Affected Elements:
 
 - `.border-bottom--1.line-height--27[href=""]`
-- `#portalframe1, .single-0 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-1 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .day-listings.single-date-list.single-0:nth-child(2) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .day-listings.single-date-list.single-0:nth-child(3) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 
 ### All page content should be contained by landmarks
 
