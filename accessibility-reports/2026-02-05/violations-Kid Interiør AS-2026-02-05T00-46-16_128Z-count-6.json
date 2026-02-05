@@ -1,0 +1,501 @@
+{
+  "project": "Kid Interiør AS",
+  "timestamp": "2026-02-05T00:46:16.128Z",
+  "url": "https://www.kid.no/#",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<a class=\"f1 f2 c9 f3 a5 a6 f4 cb f5 cd f6 f7\" data-scope-link=\"true\" href=\"/kampanjer/bomull-sengesett\" style=\"text-decoration: none; color: rgb(255, 255, 255);\">Vårens bomull sengesett fra 249,-</a>",
+          "target": [
+            ".f4.f2[href$=\"bomull-sengesett\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.49 (foreground color: #ffffff, background color: #e58c84, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"f1 f2 c9 f3 a5 a6 f4 cb f5 cd f6 f7\" data-scope-link=\"true\" href=\"/kampanjer/dundyner-og-puter\" style=\"text-decoration: none; color: rgb(255, 255, 255);\">Alle dundyner og dunputer 50%</a>",
+          "target": [
+            "a[href$=\"dundyner-og-puter\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.49 (foreground color: #ffffff, background color: #e58c84, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"tf-date\">2026-01-17</div>",
+          "target": [
+            ".review-block.article.review:nth-child(1) > .tf-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #848484, background color: #ffffff, font size: 8.3pt (11.05px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"tf-date\">2026-01-15</div>",
+          "target": [
+            ".review-block.article.review:nth-child(2) > .tf-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #848484, background color: #ffffff, font size: 8.3pt (11.05px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"tf-date\">2026-01-14</div>",
+          "target": [
+            ".review-block.article.review:nth-child(3) > .tf-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #848484, background color: #ffffff, font size: 8.3pt (11.05px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"tf-date\">2026-01-12</div>",
+          "target": [
+            ".review-block.article.review:nth-child(4) > .tf-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #848484, background color: #ffffff, font size: 8.3pt (11.05px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"tf-date\">2026-01-11</div>",
+          "target": [
+            ".review-block.article.review:nth-child(5) > .tf-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #848484, background color: #ffffff, font size: 8.3pt (11.05px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"ot-cat-header\" id=\"ot-bnr-hdr-id-C0001\">Helt nødvendige informasjonskapsler</h4>",
+          "target": [
+            "#ot-bnr-hdr-id-C0001"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<img fetchpriority=\"high\" src=\"/globalassets/kid/kampanjer/2026/5-6/kid_soveromsdager.jpg?ref=375FFB0F6A&amp;w=1920\" class=\"f8 el fe ff z dd c4 fg fh\">",
+          "target": [
+            "img[fetchpriority=\"high\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"f8 el fe ff a3 z dd c4 fg fh\">",
+          "target": [
+            ".a7[href$=\"kjokkenutstyr\"][data-scope-link=\"true\"]:nth-child(1) > .gj.fc.fb > .fe.ff.el"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"f8 el fe ff a3 z dd c4 fg fh\">",
+          "target": [
+            ".a7[href$=\"borddekking\"][data-scope-link=\"true\"]:nth-child(1) > .gj.fc.fb > .fe.ff.el"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"f8 el fe ff a3 z dd c4 fg fh\">",
+          "target": [
+            ".h0 > .fe.ff.el"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"f8 el fe ff a3 z dd c4 fg fh\">",
+          "target": [
+            ".a7[href$=\"ambiance\"][data-scope-link=\"true\"]:nth-child(1) > .g1.fc.fb > .fe.ff.el"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"f8 el fe ff a3 z dd c4 fg fh\">",
+          "target": [
+            "div:nth-child(12) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link=\"true\"]:nth-child(1) > .g1.fc.fb > .fe.ff.el"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"f8 el fe ff a3 z dd c4 fg fh\">",
+          "target": [
+            ".a7[href$=\"kjaledyr\"][data-scope-link=\"true\"]:nth-child(1) > .g1.fc.fb > .fe.ff.el"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 19,
+      "nodes": [
+        {
+          "html": "<img alt=\"Se alle ➝\" class=\"f8 fg fh c4 dd en dt du fw\" srcset=\"/globalassets/kid/kampanjer/2026/5-6/soveromsdager.jpg?ref=62B77A1AD9&amp;w=750 2x\" src=\"/globalassets/kid/kampanjer/2026/5-6/soveromsdager.jpg?ref=62B77A1AD9&amp;w=375\">",
+          "target": [
+            ".ca.c[href$=\"soverom\"] > .g0.da.c4 > .en.fw[alt=\"Se alle ➝\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Alle sengesett 50%\" class=\"f8 fg fh c4 dd en dt du fw\" srcset=\"/globalassets/kid/kampanjer/2026/5-6/alle-sengesett-50.jpg?ref=13A5137902&amp;w=750 2x\" src=\"/globalassets/kid/kampanjer/2026/5-6/alle-sengesett-50.jpg?ref=13A5137902&amp;w=375\">",
+          "target": [
+            "img[alt=\"Alle sengesett 50%\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Alle dundyner 50%\" class=\"f8 fg fh c4 dd en dt du fw\" srcset=\"/globalassets/kid/kampanjer/2026/5-6/alle-dundyner-50.jpg?ref=8D438C2C6C&amp;w=750 2x\" src=\"/globalassets/kid/kampanjer/2026/5-6/alle-dundyner-50.jpg?ref=8D438C2C6C&amp;w=375\">",
+          "target": [
+            "img[alt=\"Alle dundyner 50%\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Alle laken og putevar 50%\" class=\"f8 fg fh c4 dd en dt du fw\" srcset=\"/globalassets/kid/kampanjer/2026/5-6/alle-laken-og-putevar-50.jpg?ref=A1D52FBB86&amp;w=750 2x\" src=\"/globalassets/kid/kampanjer/2026/5-6/alle-laken-og-putevar-50.jpg?ref=A1D52FBB86&amp;w=375\">",
+          "target": [
+            "img[alt=\"Alle laken og putevar 50%\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Alle sengetepper 50%\" class=\"f8 fg fh c4 dd en dt du fw\" srcset=\"/globalassets/kid/kampanjer/2026/5-6/alle-sengetepper-50.jpg?ref=B2CDCB711D&amp;w=750 2x\" src=\"/globalassets/kid/kampanjer/2026/5-6/alle-sengetepper-50.jpg?ref=B2CDCB711D&amp;w=375\">",
+          "target": [
+            "img[alt=\"Alle sengetepper 50%\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Bomull sengesett fra 249,-\" class=\"f8 a3 fg fh c4 dd en dt du fw\">",
+          "target": [
+            "img[alt=\"Bomull sengesett fra 249,-\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Alle dunputer 50%\" class=\"f8 a3 fg fh c4 dd en dt du fw\">",
+          "target": [
+            "img[alt=\"Alle dunputer 50%\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Helårsdyner fra 799,-\" class=\"f8 a3 fg fh c4 dd en dt du fw\">",
+          "target": [
+            "img[alt=\"Helårsdyner fra 799,-\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Petra dyne- &amp; putepakke 249,-\" class=\"f8 a3 fg fh c4 dd en dt du fw\">",
+          "target": [
+            "img[alt=\"Petra dyne- & putepakke 249,-\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Mengder av  håndklær 50%\" class=\"f8 a3 fg fh c4 dd en dt du fw\">",
+          "target": [
+            "img[alt=\"Mengder av  håndklær 50%\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Se alle ➝\" class=\"f8 a3 fg fh c4 dd en dt du fw\">",
+          "target": [
+            "a[href$=\"baderom\"] > .g0.da.c4 > .en.fw[alt=\"Se alle ➝\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Baderomstilbehør 50%\" class=\"f8 a3 fg fh c4 dd en dt du fw\">",
+          "target": [
+            "img[alt=\"Baderomstilbehør 50%\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Skjønnhetstilbehør 50%\" class=\"f8 a3 fg fh c4 dd en dt du fw\">",
+          "target": [
+            "img[alt=\"Skjønnhetstilbehør 50%\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Toalettmapper 50%\" class=\"f8 a3 fg fh c4 dd en dt du fw\">",
+          "target": [
+            "img[alt=\"Toalettmapper 50%\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"AVA velværeserie 40%\" class=\"f8 a3 fg fh c4 dd en dt du fw\">",
+          "target": [
+            "img[alt=\"AVA velværeserie 40%\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Alle morgenkåper 50%\" class=\"f8 a3 fg fh c4 dd en dt du fw\">",
+          "target": [
+            "img[alt=\"Alle morgenkåper 50%\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Såper &amp; kremer 50%\" class=\"f8 a3 fg fh c4 dd en dt du fw\">",
+          "target": [
+            "img[alt=\"Såper & kremer 50%\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Loungewear og accessories 50%\" class=\"f8 a3 fg fh c4 dd en dt du fw\">",
+          "target": [
+            "img[alt=\"Loungewear og accessories 50%\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Therapie velværeserie 40%\" class=\"f8 a3 fg fh c4 dd en dt du fw\">",
+          "target": [
+            "img[alt=\"Therapie velværeserie 40%\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 12,
+      "nodes": [
+        {
+          "html": "<a class=\"a5 a6 a7\" data-scope-link=\"true\" href=\"/soverom\"><div class=\"da fb fc fd bz\"><img fetchpriority=\"high\" src=\"/globalassets/kid/kampanjer/2026/5-6/kid_soveromsdager.jpg?ref=375FFB0F6A&amp;w=1920\" class=\"f8 el fe ff z dd c4 fg fh\"></div></a>",
+          "target": [
+            ".bl.c4.bz > .a7[href$=\"soverom\"][data-scope-link=\"true\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"s c8 c9 ca a5 a6 a7 cb cc cd ce\" data-scope-link=\"true\" href=\"/soverom\"><div class=\"b c ac z a0 fi dd c4 fj fk fl fm a4 fn fo fp fq ae b0 fr\"></div></a>",
+          "target": [
+            ".bl.c4.bz > .ca.s[href$=\"soverom\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a5 a6 a7\" data-scope-link=\"true\" href=\"/kjokkenutstyr\"><div class=\"da fb fc gj z c4 dd fg fh\"><img class=\"f8 el fe ff a3 z dd c4 fg fh\"></div></a>",
+          "target": [
+            ".a7[href$=\"kjokkenutstyr\"][data-scope-link=\"true\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"s c8 c9 ca a5 a6 a7 cb cc cd ce\" data-scope-link=\"true\" href=\"/kjokkenutstyr\"><div class=\"b c ac z a0 fi dd c4 fj fk fl fm a4 fn fo fp fq ae b0 fr\"></div></a>",
+          "target": [
+            ".ca.s[href$=\"kjokkenutstyr\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a5 a6 a7\" data-scope-link=\"true\" href=\"/borddekking\"><div class=\"da fb fc gj z c4 dd fg fh\"><img class=\"f8 el fe ff a3 z dd c4 fg fh\"></div></a>",
+          "target": [
+            ".a7[href$=\"borddekking\"][data-scope-link=\"true\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"s c8 c9 ca a5 a6 a7 cb cc cd ce\" data-scope-link=\"true\" href=\"/borddekking\"><div class=\"b c ac z a0 fi dd c4 fj fk fl fm a4 fn fo fp fq ae b0 fr\"></div></a>",
+          "target": [
+            ".ca.s[href$=\"borddekking\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a5 a6 a7\" data-scope-link=\"true\" href=\"/kampanjer/ambiance\"><div class=\"da fb fc g1 bz\"><img class=\"f8 el fe ff a3 z dd c4 fg fh\"></div></a>",
+          "target": [
+            ".a7[href$=\"ambiance\"][data-scope-link=\"true\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"s c8 c9 ca a5 a6 a7 cb cc cd ce\" data-scope-link=\"true\" href=\"/kampanjer/ambiance\"><div class=\"b c ac z a0 fi dd c4 fj fk fl fm a4 fn fo fp fq ae b0 fr\"></div></a>",
+          "target": [
+            ".ca.s[href$=\"ambiance\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a5 a6 a7\" data-scope-link=\"true\" href=\"/inspirasjon/trender/varens-interiortrender\"><div class=\"da fb fc g1 bz\"><img class=\"f8 el fe ff a3 z dd c4 fg fh\"></div></a>",
+          "target": [
+            "div:nth-child(12) > .fa.f9.bv > .bl.c4.bz > .a7.a5[data-scope-link=\"true\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"s c8 c9 ca a5 a6 a7 cb cc cd ce\" data-scope-link=\"true\" href=\"/inspirasjon/trender/varens-interiortrender\"><div class=\"b c ac z a0 fi dd c4 fj fk fl fm a4 fn fo fp fq ae b0 fr\"></div></a>",
+          "target": [
+            "div:nth-child(12) > .fa.f9.bv > .bl.c4.bz > .ca.s.c9"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a5 a6 a7\" data-scope-link=\"true\" href=\"/kjaledyr\"><div class=\"da fb fc g1 bz\"><img class=\"f8 el fe ff a3 z dd c4 fg fh\"></div></a>",
+          "target": [
+            ".a7[href$=\"kjaledyr\"][data-scope-link=\"true\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"s c8 c9 ca a5 a6 a7 cb cc cd ce\" data-scope-link=\"true\" href=\"/kjaledyr\"><div class=\"b c ac z a0 fi dd c4 fj fk fl fm a4 fn fo fp fq ae b0 fr\"></div></a>",
+          "target": [
+            ".ca.s[href$=\"kjaledyr\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<div class=\"b ac ae af ag ah ai aj ak al\"><div class=\"b ae ac am an ao ap aq ar as at au av aw ax ay\"><span class=\"az ao b0\">Klikk &amp; Hent på 2 timer i alle våre butikker | 30 dagers åpent kjøp | Bytt i alle våre butikker</span></div></div>",
+          "target": [
+            ".ag"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a aria-label=\"Gå til startside\" class=\"a5 a6 a7\" data-scope-link=\"true\" href=\"/\">",
+          "target": [
+            "a[aria-label=\"Gå til startside\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input type=\"search\" name=\"q\" autocomplete=\"off\" placeholder=\"Søk etter produkter\" maxlength=\"30\" class=\"dd j k l m s e7 e8 e9 ea dt du a5 a6 a7 dv eb cf cg ai aj an da cw e1\" value=\"\">",
+          "target": [
+            ".e7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"\">",
+          "target": [
+            ".a > div:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"tf-header-slider\">Dette sier våre kunder</h2>",
+          "target": [
+            ".tf-header-slider"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"tf-sidebar slider\">",
+          "target": [
+            ".tf-sidebar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-koBvLg nWVrg\"><div class=\"sc-etsjJW fBIGDg\"><div><div class=\"sc-fYmhhH bQeEJm\">Finn riktig seng 🛏️</div></div></div></div>",
+          "target": [
+            [
+              "#kindly-chat-api > div",
+              ".sc-koBvLg"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
