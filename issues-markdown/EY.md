@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-02-05T00:50:59.255Z
+**Timestamp:** 2026-02-08T09:15:49.323Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 3
 
@@ -52,11 +52,11 @@
 - `.myey-login-url`
 - `.swiper-slide-duplicate-active > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="2.34"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="1639"][loading="lazy"]`
 - `.swiper-slide-duplicate-active > .up-hero-carousel__content-wrapper`
-- `.swiper-slide-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="2.34"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="1639"][loading="lazy"]`
+- `.swiper-slide-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.51"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > img[height="2546"][alt="Vinner av EOY, Børge Gjeldvik."][title="Børge Gjeldvik"]`
 - `.swiper-slide-prev > .up-hero-carousel__content-wrapper`
 - `.swiper-slide-visible > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="2.34"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="1639"][loading="lazy"]`
 - `.swiper-slide-visible > .up-hero-carousel__content-wrapper`
-- `.swiper-slide-next > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="2.34"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="1639"][loading="lazy"]`
+- `.swiper-slide-next > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.51"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > img[height="2546"][alt="Vinner av EOY, Børge Gjeldvik."][title="Børge Gjeldvik"]`
 - `.swiper-slide-next > .up-hero-carousel__content-wrapper`
 - `.up-hero-carousel__pagination`
 - `.theme-dark.cmp-container--theme-dark.cmp-container--background-color-e2e`
@@ -78,7 +78,7 @@
 - `.cmp-subscribe__text`
 - `#button-bc60d627c8a2`
 - `.cmp-contentGrid__title`
-- `#image-render-f4369d69e0 > .cmp-image__image[height="2560"][loading="lazy"]`
+- `#image-render-dd78a83287 > img[height="2546"][alt="Vinner av EOY, Børge Gjeldvik."][title="Børge Gjeldvik"]`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__title`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > p`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date__text`
@@ -86,7 +86,7 @@
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text:nth-child(4)`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .Vsepartor:nth-child(5)`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
-- `#image-render-7bd439cccd > .cmp-image__image[height="2560"][loading="lazy"]`
+- `#image-render-c6bd268a33 > .cmp-image__image[height="2560"][loading="lazy"]`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__title`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > p`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date__text`

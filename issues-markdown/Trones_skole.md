@@ -1,6 +1,6 @@
 # WCAG Violations Report for Trones skole
 
-**Timestamp:** 2026-02-05T00:42:33.479Z
+**Timestamp:** 2026-02-08T09:08:42.635Z
 **URL:** [https://www.minskole.no/trones/#](https://www.minskole.no/trones/#)
 **Total Violations:** 7
 
@@ -12,10 +12,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
+- **Count:** 5
 
 #### Affected Elements:
 
+- `#weatherHolder > div:nth-child(2) > div > div:nth-child(3)`
+- `#weatherHolder > div:nth-child(3) > div > div:nth-child(3)`
 - `#weatherHolder > div:nth-child(4) > div > div:nth-child(3)`
 - `#ContentPlaceHolder1_btnAppendNews`
 - `#cookie-consent-close`
@@ -68,26 +70,26 @@
 
 - `#ctl10_hl`
 - `#ctl16_hl`
-- `div:nth-child(1) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426797"]`
+- `div:nth-child(1) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/427276"]`
+- `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/427276"]`
+- `#ctl00_ContentPlaceHolder1_ctl01 > div:nth-child(3) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426797"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426797"]`
-- `#ctl00_ContentPlaceHolder1_ctl01 > div:nth-child(3) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426753"]`
+- `div:nth-child(5) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426753"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426753"]`
-- `div:nth-child(5) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426752"]`
+- `div:nth-child(7) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426752"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426752"]`
-- `div:nth-child(7) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426751"]`
+- `div:nth-child(9) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426751"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426751"]`
-- `div:nth-child(9) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426755"]`
+- `div:nth-child(11) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426755"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426755"]`
-- `div:nth-child(11) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426750"]`
+- `div:nth-child(13) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426750"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426750"]`
-- `div:nth-child(13) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426729"]`
+- `div:nth-child(15) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426729"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426729"]`
-- `div:nth-child(15) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426699"]`
+- `div:nth-child(17) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426699"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426699"]`
-- `div:nth-child(17) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426649"]`
+- `div:nth-child(19) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426649"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426649"]`
-- `div:nth-child(19) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426199"]`
-- `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426199"]`
 
 ### Page should contain a level-one heading
 

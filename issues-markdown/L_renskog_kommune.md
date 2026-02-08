@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lørenskog kommune
 
-**Timestamp:** 2026-02-05T00:51:04.101Z
+**Timestamp:** 2026-02-08T09:13:24.687Z
 **URL:** [https://www.lorenskog.kommune.no/#](https://www.lorenskog.kommune.no/#)
 **Total Violations:** 4
 
@@ -37,10 +37,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
+- **Count:** 4
 
 #### Affected Elements:
 
+- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl06_WebpartId_1699_WebpartId_1699_rptItems_ctl01_ucDisplayControl_lnkSearch > span`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_1614_WebpartId_1614_rptItems_ctl01_ucDisplayControl_hlLinkAlle`
 - `.bc-content-button--secondary.button-module__status--secondary_9343_6XEH4.bc-content-button--appearance-default:nth-child(1) > span`
 - `.bc-content-button--secondary.button-module__status--secondary_9343_6XEH4.bc-content-button--appearance-default:nth-child(2) > span`
@@ -51,7 +52,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 12
+- **Count:** 13
 
 #### Affected Elements:
 
@@ -62,6 +63,7 @@
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_1856`
 - `.section:nth-child(12)`
 - `.section:nth-child(13)`
+- `.section:nth-child(15)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_1614 > .webPartTittel`
 - `.container > ul`
 - `.webPartBunnLink`

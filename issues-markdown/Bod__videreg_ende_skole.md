@@ -1,22 +1,10 @@
 # WCAG Violations Report for Bodø videregående skole
 
-**Timestamp:** 2026-02-05T00:43:13.718Z
+**Timestamp:** 2026-02-08T09:08:07.101Z
 **URL:** [https://www.bodo.vgs.no/#](https://www.bodo.vgs.no/#)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
-
-### ARIA dialog and alertdialog nodes should have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA dialog and alertdialog node has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-dialog-name?application=playwright
-- **Tags:** cat.aria, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.bc-content-modal`
 
 ### Links must have discernible text
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-02-05T00:43:00.573Z
+**Timestamp:** 2026-02-08T09:07:54.627Z
 **URL:** [https://www.blv.no/#](https://www.blv.no/#)
 **Total Violations:** 5
 
@@ -17,7 +17,7 @@
 #### Affected Elements:
 
 - `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
-- `.custom-two.background-custom[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `.custom-two > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
@@ -42,7 +42,7 @@
 #### Affected Elements:
 
 - `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"]`
-- `.custom-two.background-custom[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
+- `.custom-two > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
 
 ### Elements marked as presentational should be consistently ignored
 

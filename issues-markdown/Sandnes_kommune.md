@@ -1,8 +1,8 @@
 # WCAG Violations Report for Sandnes kommune
 
-**Timestamp:** 2026-02-05T00:47:26.753Z
+**Timestamp:** 2026-02-08T09:11:51.891Z
 **URL:** [https://www.sandnes.kommune.no/#](https://www.sandnes.kommune.no/#)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -12,10 +12,11 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
+- `.H-bg--lighter-green`
 - `#portalframe1, button[data-templatetype="1"]`
 - `#portalframe1, button[data-templatetype="2"]`
 
@@ -30,6 +31,19 @@
 #### Affected Elements:
 
 - `#iFrameResizer0`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.H-bg--lighter-green > img`
+- `.warning__icon`
 
 ### Form elements must have labels
 
@@ -50,13 +64,14 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 3
+- **Count:** 4
 
 #### Affected Elements:
 
 - `.border-bottom--1.line-height--27[href=""]`
-- `#portalframe1, .day-listings.single-date-list.single-0:nth-child(2) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .day-listings.single-date-list.single-0:nth-child(3) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(3) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-1 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 
 ### All page content should be contained by landmarks
 

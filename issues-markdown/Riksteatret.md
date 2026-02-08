@@ -1,6 +1,6 @@
 # WCAG Violations Report for Riksteatret
 
-**Timestamp:** 2026-02-05T00:45:46.401Z
+**Timestamp:** 2026-02-08T09:10:11.649Z
 **URL:** [https://www.riksteatret.no/#](https://www.riksteatret.no/#)
 **Total Violations:** 2
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 5
+- **Count:** 7
 
 #### Affected Elements:
 
@@ -21,6 +21,8 @@
 - `#feature_3 > .module__grid > .module__content > .module__body > h4`
 - `#feature_4 > .module__grid > .module__content > .module__body > h4`
 - `#feature_5 > .module__grid > .module__content > .module__body > h4`
+- `#feature_6 > .module__grid > .module__content > .module__body > h4`
+- `#feature_7 > .module__grid > .module__content > .module__body > h4`
 
 ### Images must have alternative text
 
@@ -33,5 +35,5 @@
 #### Affected Elements:
 
 - `.listItem__link-wrapper[data-content-reference="1168970"][data-epi-block-id="1170785"] > img`
-- `.listItem__link-wrapper[data-content-reference="1172918"][data-epi-block-id="1170785"] > img`
-- `.listItem__link-wrapper[data-content-reference="1172629"][data-epi-block-id="1170785"] > img`
+- `.listItem__link-wrapper[data-content-reference="1172989"][data-epi-block-id="1170785"] > img`
+- `.listItem__link-wrapper[data-content-reference="1172990"][data-epi-block-id="1170785"] > img`

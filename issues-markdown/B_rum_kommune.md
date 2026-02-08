@@ -1,31 +1,19 @@
 # WCAG Violations Report for Bærum kommune
 
-**Timestamp:** 2026-02-05T00:44:14.045Z
+**Timestamp:** 2026-02-08T09:09:08.374Z
 **URL:** [https://www.baerum.kommune.no/#](https://www.baerum.kommune.no/#)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
 
-### Links must be distinguishable without relying on color
+### Links must have discernible text
 
 - **Impact:** serious
-- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
-- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `a`
-
-### Delayed refresh under 20 hours must not be used
-
-- **Impact:** critical
-- **Description:** Ensure <meta http-equiv="refresh"> is not used for delayed refresh
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/meta-refresh?application=playwright
-- **Tags:** cat.time-and-media, wcag2a, wcag221, TTv5, TT8.a, EN-301-549, EN-9.2.2.1, RGAAv4, RGAA-13.1.2
-- **Count:** 1
-
-#### Affected Elements:
-
-- `meta[http-equiv="refresh"]`
+- `.siteLogo`
