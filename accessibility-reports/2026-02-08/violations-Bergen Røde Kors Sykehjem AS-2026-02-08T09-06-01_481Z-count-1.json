@@ -1,0 +1,39 @@
+{
+  "project": "Bergen Røde Kors Sykehjem AS",
+  "timestamp": "2026-02-08T09:06:01.481Z",
+  "url": "https://brks.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"wp-block-button__lin...\" href=\"http://brks.no/kafe-...\" style=\"border-color:#73cee3...\">",
+          "target": [
+            ".has-border-color"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.95 (foreground color: #eb4034, background color: #ffffff, font size: 14.4pt (19.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ]
+}
