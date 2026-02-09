@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-02-08T09:08:38.954Z
+**Timestamp:** 2026-02-09T00:46:18.867Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -49,7 +49,7 @@
 - `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1) > .gj.fc.fb > .fe.ff.el`
 - `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1) > .gj.fc.fb > .fe.ff.el`
 - `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
-- `div:nth-child(13) > .fa.f9.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
+- `div:nth-child(11) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
 - `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
@@ -58,11 +58,11 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 19
+- **Count:** 9
 
 #### Affected Elements:
 
-- `.ca.s[href$="soverom"] > .g0.da.c4 > .en.fw[alt="Se alle ➝"]`
+- `img[alt="Se alle ➝"]`
 - `img[alt="Alle sengesett 50%"]`
 - `img[alt="Alle dundyner 50%"]`
 - `img[alt="Alle laken og putevar 50%"]`
@@ -71,16 +71,6 @@
 - `img[alt="Alle dunputer 50%"]`
 - `img[alt="Helårsdyner fra 799,-"]`
 - `img[alt="Petra dyne- & putepakke 249,-"]`
-- `.ca.s[href$="baderom"] > .g0.da.c4 > .en.fw[alt="Se alle ➝"]`
-- `img[alt="Mengder av  håndklær 50%"]`
-- `img[alt="Baderomstilbehør 50%"]`
-- `img[alt="Skjønnhetstilbehør 50%"]`
-- `img[alt="Toalettmapper 50%"]`
-- `img[alt="AVA velværeserie 40%"]`
-- `img[alt="Alle morgenkåper 50%"]`
-- `img[alt="Såper & kremer 50%"]`
-- `img[alt="Loungewear og accessories 50%"]`
-- `img[alt="Therapie velværeserie 40%"]`
 
 ### Links must have discernible text
 
@@ -92,16 +82,16 @@
 
 #### Affected Elements:
 
-- `.bl.c4.dd > .a7[href$="soverom"][data-scope-link="true"]:nth-child(1)`
-- `.bl.c4.dd > .ca.s[href$="soverom"]`
+- `.bl.bz.c4 > .a7[href$="soverom"][data-scope-link="true"]:nth-child(1)`
+- `.bl.bz.c4 > .ca.s[href$="soverom"]`
 - `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="kjokkenutstyr"]`
 - `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="borddekking"]`
 - `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="ambiance"]`
-- `div:nth-child(13) > .fa.f9.bv > .bl.c4.dd > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(13) > .fa.f9.bv > .bl.c4.dd > .ca.s.c8`
+- `div:nth-child(11) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(11) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c8`
 - `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="kjaledyr"]`
 

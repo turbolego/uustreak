@@ -1,8 +1,8 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2026-02-08T08:55:58.680Z
+**Timestamp:** 2026-02-09T00:33:49.353Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -67,3 +67,15 @@
 - `button:nth-child(1) > .xl\:flex-col.text-\(--header-text\).px-4`
 - `div[data-component="AccountPopoverMenu"] > .xl\:flex-col.text-\(--header-text\).px-4`
 - `li[data-testid="cart"]`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#kindly-chat-api > div,.sc-koBvLg`
