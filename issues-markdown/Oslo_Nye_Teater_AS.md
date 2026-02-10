@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2026-02-09T00:41:12.440Z
+**Timestamp:** 2026-02-10T00:43:17.574Z
 **URL:** [https://oslonye.no/#](https://oslonye.no/#)
 **Total Violations:** 5
 
@@ -49,7 +49,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 19
+- **Count:** 18
 
 #### Affected Elements:
 
@@ -70,7 +70,6 @@
 - `.forestillinger-blocks-panel:nth-child(11) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(2) > .alignment-top.bg-none.block > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(11) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(3) > .teaterkjellern.alignment-top.bg-none > .les-mer-link`
 - `.cafescenen.alignment-top.bg-none > .les-mer-link`
-- `.large-4.medium-6.cpt:nth-child(2) > .teaterkjellern.alignment-top.bg-none > .les-mer-link`
 - `.scroll-to-top`
 
 ### All page content should be contained by landmarks
@@ -79,7 +78,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 65
+- **Count:** 64
 
 #### Affected Elements:
 
@@ -147,4 +146,3 @@
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(35)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(36)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(37)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(38)`

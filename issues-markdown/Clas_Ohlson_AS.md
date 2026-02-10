@@ -1,6 +1,6 @@
 # WCAG Violations Report for Clas Ohlson AS
 
-**Timestamp:** 2026-02-09T00:43:44.499Z
+**Timestamp:** 2026-02-10T00:47:28.326Z
 **URL:** [https://www.clasohlson.com/no/#](https://www.clasohlson.com/no/#)
 **Total Violations:** 6
 
@@ -17,7 +17,7 @@
 #### Affected Elements:
 
 - `.carousel__component.carousel-component-parent.right-shadow:nth-child(5) > .carousel__component--headline:nth-child(1) > .title-two`
-- `.carousel__component.carousel-component-parent.right-shadow:nth-child(9) > .carousel__component--headline:nth-child(1) > .title-two`
+- `.carousel__component.carousel-component-parent.right-shadow:nth-child(11) > .carousel__component--headline:nth-child(1) > .title-two`
 
 ### Images must have alternative text
 

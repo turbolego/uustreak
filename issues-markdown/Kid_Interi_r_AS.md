@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-02-09T00:46:18.867Z
+**Timestamp:** 2026-02-10T00:50:28.793Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -12,11 +12,10 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 6
+- **Count:** 5
 
 #### Affected Elements:
 
-- `.f4`
 - `.review-block.article.review:nth-child(1) > .tf-date`
 - `.review-block.article.review:nth-child(2) > .tf-date`
 - `.review-block.article.review:nth-child(3) > .tf-date`
@@ -41,15 +40,16 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 6
+- **Count:** 7
 
 #### Affected Elements:
 
 - `img[fetchpriority="high"]`
-- `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1) > .gj.fc.fb > .fe.ff.el`
-- `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1) > .gj.fc.fb > .fe.ff.el`
+- `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1) > .gj.fc.fg > .fe.ff.el`
+- `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1) > .gj.fc.fg > .fe.ff.el`
 - `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
-- `div:nth-child(11) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
+- `.hb > .fe.ff.el`
+- `div:nth-child(16) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
 - `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
@@ -69,7 +69,7 @@
 - `img[alt="Alle sengetepper 50%"]`
 - `img[alt="Bomull sengesett fra 249,-"]`
 - `img[alt="Alle dunputer 50%"]`
-- `img[alt="Helårsdyner fra 799,-"]`
+- `.en.fw[alt="Helårsdyner fra 799,-"]`
 - `img[alt="Petra dyne- & putepakke 249,-"]`
 
 ### Links must have discernible text
@@ -90,8 +90,8 @@
 - `.ca.s[href$="borddekking"]`
 - `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="ambiance"]`
-- `div:nth-child(11) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(11) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c8`
+- `div:nth-child(16) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(16) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c9`
 - `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="kjaledyr"]`
 
