@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kristiansand kommune
 
-**Timestamp:** 2026-02-10T00:52:48.782Z
+**Timestamp:** 2026-02-11T07:57:25.001Z
 **URL:** [https://www.kristiansand.kommune.no/#](https://www.kristiansand.kommune.no/#)
 **Total Violations:** 3
 
@@ -39,12 +39,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 5
+- **Count:** 4
 
 #### Affected Elements:
 
 - `.cookie-content > h3`
-- `.cookie-content > p:nth-child(2)`
-- `.cookie-content > p:nth-child(3)`
+- `.cookie-content > p`
 - `.cookie-options`
 - `.learn-more`

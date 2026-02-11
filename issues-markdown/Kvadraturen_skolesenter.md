@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kvadraturen skolesenter
 
-**Timestamp:** 2026-02-10T00:53:30.603Z
+**Timestamp:** 2026-02-11T07:58:05.382Z
 **URL:** [https://kvadraturen.vgs.no/](https://kvadraturen.vgs.no/)
 **Total Violations:** 4
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `iframe`
+- `iframe[frameborder="0"]`
 
 ### Links must have discernible text
 
@@ -48,7 +48,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 34
+- **Count:** 37
 
 #### Affected Elements:
 
@@ -77,11 +77,14 @@
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_1394 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > cc-cookie-consent-conditional-content-component:nth-child(9) > .cookie-consent-content > .cc-alert.cc-alert--warning > .cc-alert-content > .cc-alert-message > .cc-div:nth-child(1)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_1394 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(10)`
 - `p:nth-child(11)`
-- `.il-heading--h2:nth-child(12)`
-- `.il-heading--h2:nth-child(13)`
-- `p:nth-child(14)`
-- `cc-cookie-consent-conditional-content-component:nth-child(15) > .cookie-consent-content > .cc-alert.cc-alert--warning > .cc-alert-content > .cc-alert-message > .cc-div:nth-child(1)`
-- `p:nth-child(16)`
+- `p:nth-child(12)`
+- `p:nth-child(13)`
+- `iframe[title="Vis youtube video"], #player`
+- `.il-heading--h2:nth-child(17)`
+- `.il-heading--h2:nth-child(18)`
+- `p:nth-child(19)`
+- `cc-cookie-consent-conditional-content-component:nth-child(20) > .cookie-consent-content > .cc-alert.cc-alert--warning > .cc-alert-content > .cc-alert-message > .cc-div:nth-child(1)`
+- `p:nth-child(21)`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_1395 > .webPartTittel`
 - `.container > ul`
 - `.webPartBunnLink`

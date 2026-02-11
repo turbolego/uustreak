@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-02-10T00:54:23.298Z
+**Timestamp:** 2026-02-11T08:01:26.786Z
 **URL:** [https://www.vitusapotek.no/#](https://www.vitusapotek.no/#)
 **Total Violations:** 6
 
@@ -17,8 +17,8 @@
 #### Affected Elements:
 
 - `.owl-item:nth-child(1) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
-- `.owl-item:nth-child(2) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
 - `.owl-item:nth-child(4) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
+- `.owl-item:nth-child(5) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
 
 ### Images must have alternative text
 

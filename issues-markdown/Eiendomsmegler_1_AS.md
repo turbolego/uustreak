@@ -1,35 +1,58 @@
 # WCAG Violations Report for Eiendomsmegler 1 AS
 
-**Timestamp:** 2026-02-10T00:54:06.734Z
+**Timestamp:** 2026-02-11T08:03:03.847Z
 **URL:** [https://www.eiendomsmegler1.no/#](https://www.eiendomsmegler1.no/#)
-**Total Violations:** 3
+**Total Violations:** 5
 
 ## Violation Details
 
-### ARIA dialog and alertdialog nodes should have an accessible name
+### Documents must have <title> element to aid in navigation
 
 - **Impact:** serious
-- **Description:** Ensure every ARIA dialog and alertdialog node has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-dialog-name?application=playwright
-- **Tags:** cat.aria, best-practice
+- **Description:** Ensure each HTML document contains a non-empty <title> element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/document-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag242, TTv5, TT12.a, EN-301-549, EN-9.2.4.2, ACT, RGAAv4, RGAA-8.5.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.optin`
+- `html`
 
-### Heading levels should only increase by one
+### <html> element must have a lang attribute
 
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Impact:** serious
+- **Description:** Ensure every HTML document has a lang attribute
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=playwright
+- **Tags:** cat.language, wcag2a, wcag311, TTv5, TT11.a, EN-301-549, EN-9.3.1.1, ACT, RGAAv4, RGAA-8.3.1
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.optin-settings__section:nth-child(3) > .optin-grid > .optin-grid__col2 > .optin-settings__header.ffe-h5`
-- `h5`
+- `html`
+
+### Document should have one main landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has a main landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
 
 ### All page content should be contained by landmarks
 
@@ -41,4 +64,4 @@
 
 #### Affected Elements:
 
-- `.skip-link`
+- `pre`

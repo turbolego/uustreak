@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-02-10T00:48:58.962Z
+**Timestamp:** 2026-02-11T07:58:21.171Z
 **URL:** [https://www.dagbladet.no/#](https://www.dagbladet.no/#)
 **Total Violations:** 4
 
@@ -12,12 +12,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.tm38 > .text-red.color_mobile_text-red[data-lab-text_color_desktop="text-red"]`
-- `.text-blue.color_mobile_text-blue.above > .kicker-content`
+- `span[data-lab-text_color_mobile="text-red"]`
 
 ### Heading levels should only increase by one
 
@@ -25,11 +24,13 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
-- `.row_header_text`
+- `.has-row-header.color_mobile_bg-yellow.grid-align-stretch:nth-child(6) > .row_header_text.align-center.mobile_text_align_align-center`
+- `.has-row-header.color_mobile_bg-yellow.grid-align-stretch:nth-child(24) > .row_header_text.align-center.mobile_text_align_align-center`
+- `.has-row-header.color_mobile_bg-yellow.grid-align-stretch:nth-child(34) > .row_header_text.align-center.mobile_text_align_align-center`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

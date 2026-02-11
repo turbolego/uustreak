@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-02-10T00:50:28.793Z
+**Timestamp:** 2026-02-11T07:55:11.849Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -45,12 +45,12 @@
 #### Affected Elements:
 
 - `img[fetchpriority="high"]`
-- `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1) > .gj.fc.fg > .fe.ff.el`
-- `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1) > .gj.fc.fg > .fe.ff.el`
-- `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
+- `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1) > .gz.fc.fg > .fe.ff.el`
+- `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1) > .gz.fc.fg > .fe.ff.el`
+- `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1) > .gk.fc.fb > .fe.ff.el`
 - `.hb > .fe.ff.el`
-- `div:nth-child(16) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
-- `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
+- `div:nth-child(18) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .gk.fc.fb > .fe.ff.el`
+- `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1) > .gk.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -63,13 +63,13 @@
 #### Affected Elements:
 
 - `img[alt="Se alle ➝"]`
+- `.en.fw[alt="Helårsdyner fra 799,-"]`
 - `img[alt="Alle sengesett 50%"]`
 - `img[alt="Alle dundyner 50%"]`
 - `img[alt="Alle laken og putevar 50%"]`
 - `img[alt="Alle sengetepper 50%"]`
 - `img[alt="Bomull sengesett fra 249,-"]`
 - `img[alt="Alle dunputer 50%"]`
-- `.en.fw[alt="Helårsdyner fra 799,-"]`
 - `img[alt="Petra dyne- & putepakke 249,-"]`
 
 ### Links must have discernible text
@@ -90,8 +90,8 @@
 - `.ca.s[href$="borddekking"]`
 - `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="ambiance"]`
-- `div:nth-child(16) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(16) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c9`
+- `div:nth-child(18) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(18) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c9`
 - `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1)`
 - `.ca.s[href$="kjaledyr"]`
 
@@ -111,4 +111,4 @@
 - `.a > div:nth-child(5)`
 - `.tf-header-slider`
 - `.tf-sidebar`
-- `#kindly-chat-api > div,.sc-koBvLg`
+- `#kindly-chat-api > div,.sc-cabOPs`

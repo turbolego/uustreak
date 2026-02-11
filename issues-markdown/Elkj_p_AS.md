@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2026-02-10T00:37:54.077Z
+**Timestamp:** 2026-02-11T07:42:34.435Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
 **Total Violations:** 6
 
@@ -78,4 +78,4 @@
 
 #### Affected Elements:
 
-- `#kindly-chat-api > div,.sc-koBvLg`
+- `#kindly-chat-api > div,.sc-cabOPs`
