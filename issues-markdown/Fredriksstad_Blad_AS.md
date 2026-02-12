@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-02-11T07:47:28.483Z
+**Timestamp:** 2026-02-12T00:36:34.362Z
 **URL:** [https://www.f-b.no/#](https://www.f-b.no/#)
 **Total Violations:** 5
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#eaframe, #container_9903126 > .info > .info-wrapper > .ctaLink`
+- `#eaframe, #container_9904090 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
