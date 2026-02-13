@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-02-12T00:45:09.773Z
+**Timestamp:** 2026-02-13T00:48:36.358Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 6
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.text_singleline.large-8.large-abs-8 > .singleline`
+- `.large-8.large-abs-8.text_singleline > .singleline`
 
 ### Heading levels should only increase by one
 
@@ -40,10 +40,10 @@
 
 #### Affected Elements:
 
-- `.has-row-header.mobile_no_border_color.hasContentPadding > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(18) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32) > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(41) > h5`
+- `.has-row-header.mobile_no_border_color.hasContentPadding > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(46) > h5`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -69,7 +69,7 @@
 #### Affected Elements:
 
 - `a[href$="mailto:kb@dagsavisen.no"]`
-- `.tm17.singleline.font-PTSans > a[href$="dagsavisen"][target="_blank"]`
+- `.tm17 > a[href$="dagsavisen"][target="_blank"]`
 
 ### All page content should be contained by landmarks
 
@@ -77,11 +77,33 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 78
+- **Count:** 84
 
 #### Affected Elements:
 
 - `h1`
+- `#notice-10201523 > .content > h2`
+- `#notice-10201523 > .content > .meta`
+- `div[title="30 spørsmål til Barth Eide"] > h2`
+- `div[title="30 spørsmål til Barth Eide"] > .meta`
+- `div[title="Ice på vei ut av Minnesota"] > h2`
+- `div[title="Ice på vei ut av Minnesota"] > .meta`
+- `div[title="Støre møter Rubio i München"] > h2`
+- `div[title="Støre møter Rubio i München"] > .meta`
+- `#notice-10200499 > .content > h2`
+- `#notice-10200499 > .content > .meta`
+- `#notice-10199979 > .content > h2`
+- `#notice-10199979 > .content > .meta`
+- `#notice-10199557 > .content > h2`
+- `#notice-10199557 > .content > .meta`
+- `#notice-10199497 > .content > h2`
+- `#notice-10199497 > .content > .meta`
+- `#notice-10199496 > .content > h2`
+- `#notice-10199496 > .content > .meta`
+- `#notice-10199300 > .content > h2`
+- `#notice-10199300 > .content > .meta`
+- `#notice-10199299 > .content > h2`
+- `#notice-10199299 > .content > .meta`
 - `div[title="James van der Beek er død"] > h2`
 - `div[title="James van der Beek er død"] > .meta`
 - `#notice-10198982 > .content > h2`
@@ -100,35 +122,13 @@
 - `#notice-10196763 > .content > .meta`
 - `#notice-10196696 > .content > h2`
 - `#notice-10196696 > .content > .meta`
-- `div[title="Trump med nye Iran-trusler"] > h2`
-- `div[title="Trump med nye Iran-trusler"] > .meta`
-- `#notice-10196667 > .content > h2`
-- `#notice-10196667 > .content > .meta`
-- `#notice-10196629 > .content > h2`
-- `#notice-10196629 > .content > .meta`
-- `#notice-10196595 > .content > h2`
-- `#notice-10196595 > .content > .meta`
-- `#notice-10196162 > .content > h2`
-- `#notice-10196162 > .content > .meta`
-- `div[title="Ny generalsekretær i Sp"] > h2`
-- `div[title="Ny generalsekretær i Sp"] > .meta`
-- `#notice-10194771 > .content > h2`
-- `time[datetime="2026-02-10T07:10:41.000Z"]`
-- `#notice-10194770 > .content > h2`
-- `#notice-10194770 > .content > .meta`
-- `div[title="Japans valgresultat bekreftet"] > h2`
-- `div[title="Japans valgresultat bekreftet"] > .meta`
-- `#notice-10194618 > .content > h2`
-- `#notice-10194618 > .content > .meta`
-- `#notice-10194502 > .content > h2`
-- `#notice-10194502 > .content > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(6)`
 - `.row.large-12.small-12:nth-child(7)`
 - `#article_list_10187147 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10187147 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.has-row-header.mobile_no_border_color.hasContentPadding`
+- `.row.large-12.small-12:nth-child(9)`
 - `#article_list_10180103 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10180103 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.row.large-12.small-12:nth-child(12)`
@@ -148,14 +148,20 @@
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(28)`
 - `.row.large-12.small-12:nth-child(29)`
-- `.color_mobile_no_bg_color.content > .headline[itemprop="headline"]`
+- `.row.large-12.small-12:nth-child(31)`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32)`
-- `.row.large-12.small-12:nth-child(33)`
+- `.has-row-header.mobile_no_border_color.hasContentPadding`
 - `.row.large-12.small-12:nth-child(34)`
 - `.row.large-12.small-12:nth-child(36)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(37)`
+- `.row.large-12.small-12:nth-child(37)`
+- `.row.large-12.small-12:nth-child(38)`
+- `.row.large-12.small-12:nth-child(39)`
 - `#article_list_10184103 > .content > .font-weight-normal.m-font-weight-normal.t25`
 - `#article_list_10184103 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(41)`
+- `.color_mobile_no_bg_color.content > .headline[itemprop="headline"]`
 - `.row.large-12.small-12:nth-child(43)`
+- `.row.large-12.small-12:nth-child(44)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(46)`
+- `.row.large-12.small-12:nth-child(47)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(48)`
 - `.powered-by`

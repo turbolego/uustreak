@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-02-12T00:44:30.992Z
+**Timestamp:** 2026-02-13T00:47:07.731Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -45,8 +45,8 @@
 #### Affected Elements:
 
 - `img[fetchpriority="high"]`
-- `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1) > .gz.fc.fg > .fe.ff.el`
-- `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1) > .gz.fc.fg > .fe.ff.el`
+- `.a7[href$="kjokkenutstyr"][data-scope-link="true"]:nth-child(1) > .gz.fc.fb > .fe.ff.el`
+- `.a7[href$="borddekking"][data-scope-link="true"]:nth-child(1) > .gz.fc.fb > .fe.ff.el`
 - `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1) > .gk.fc.fb > .fe.ff.el`
 - `.hb > .fe.ff.el`
 - `div:nth-child(18) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .gk.fc.fb > .fe.ff.el`
@@ -58,7 +58,7 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 9
+- **Count:** 10
 
 #### Affected Elements:
 
@@ -69,6 +69,7 @@
 - `img[alt="Alle laken og putevar 50%"]`
 - `img[alt="Alle sengetepper 50%"]`
 - `img[alt="Bomull sengesett fra 249,-"]`
+- `img[alt="Krepp fra 199,-"]`
 - `img[alt="Alle dunputer 50%"]`
 - `img[alt="Petra dyne- & putepakke 249,-"]`
 

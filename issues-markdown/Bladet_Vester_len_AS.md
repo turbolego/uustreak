@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-02-12T00:40:44.314Z
+**Timestamp:** 2026-02-13T00:43:52.940Z
 **URL:** [https://www.blv.no/#](https://www.blv.no/#)
 **Total Violations:** 5
 
@@ -12,12 +12,13 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 3
+- **Count:** 4
 
 #### Affected Elements:
 
 - `brick-teaser-v22[data-id="hfbgrx67"] > .none.teaser_container[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 - `.custom-two.none[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `a[href$="oksnesavisa.no/"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 - `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
@@ -38,12 +39,13 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 3
+- **Count:** 4
 
 #### Affected Elements:
 
 - `brick-teaser-v22[data-id="hfbgrx67"] > .none.teaser_container[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
 - `.custom-two.none[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
+- `a[href$="oksnesavisa.no/"]`
 - `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"]`
 
 ### Elements marked as presentational should be consistently ignored

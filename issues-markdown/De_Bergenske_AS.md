@@ -1,8 +1,8 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-02-12T00:46:01.511Z
+**Timestamp:** 2026-02-13T00:49:21.918Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
-**Total Violations:** 10
+**Total Violations:** 9
 
 ## Violation Details
 
@@ -52,18 +52,6 @@
 - `#popup-link`
 - `#ppms_cm_footer__powered_by`
 
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .lg\:text-center.p-6.bg-secondary > h3`
-
 ### Images must have alternative text
 
 - **Impact:** critical
@@ -74,17 +62,17 @@
 
 #### Affected Elements:
 
-- `.lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .sm\:px-6.h-auto.max-w-full`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(2) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .sm\:px-6.h-auto.max-w-full`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(2) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .sm\:px-6.h-auto.max-w-full`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(2) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.sm\:px-6.max-w-full`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(2) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.sm\:px-6.max-w-full`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(2) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.sm\:px-6.max-w-full`
 - `.grid-of-1 > .lg\:col-span-3.collection-item--fullWidth[theme=""] > .sm\:pr-6.media.flex-1`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.min-w-full`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .sm\:px-6.h-auto.max-w-full`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .sm\:px-6.h-auto.max-w-full`
-- `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(4) > .sm\:px-6.h-auto.max-w-full`
-- `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(6) > .sm\:px-6.h-auto.max-w-full`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(5) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .sm\:px-6.h-auto.max-w-full`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(5) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .sm\:px-6.h-auto.max-w-full`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.sm\:px-6.max-w-full`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.sm\:px-6.max-w-full`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.sm\:px-6.max-w-full`
+- `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(4) > .h-auto.sm\:px-6.max-w-full`
+- `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(6) > .h-auto.sm\:px-6.max-w-full`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(5) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.sm\:px-6.max-w-full`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(5) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.sm\:px-6.max-w-full`
 - `.splide__arrow--prev.left-5[aria-controls="splide01-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide01-track"] > .w-12`
 - `#splide02-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.media.flex-1`
