@@ -1,0 +1,67 @@
+{
+  "project": "Skranevatnet skole",
+  "timestamp": "2026-02-14T03:20:40.128Z",
+  "url": "https://www.bergen.kommune.no/omkommunen/avdelinger/skranevatnet-skole",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"animated bounceOutDown\" id=\"corner_text\" aria-label=\"Spør meg\">Spør meg</span>",
+          "target": [
+            "#corner_text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.05 (foreground color: #f8f8f8, background color: #fefefd, font size: 14.3pt (19px), font weight: bold). Expected contrast ratio of 3:1"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<nav class=\"js_main_nav main_nav main_nav_collapsed\">",
+          "target": [
+            ".js_main_nav"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<main id=\"innhold\" class=\"smMa desktop_centered\" tabindex=\"-1\">",
+          "target": [
+            "#innhold"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}
