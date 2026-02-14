@@ -1,6 +1,6 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-02-13T00:49:21.918Z
+**Timestamp:** 2026-02-14T00:44:28.694Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
 **Total Violations:** 9
 
@@ -58,7 +58,7 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 36
+- **Count:** 37
 
 #### Affected Elements:
 
@@ -71,8 +71,9 @@
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.sm\:px-6.max-w-full`
 - `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(4) > .h-auto.sm\:px-6.max-w-full`
 - `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(6) > .h-auto.sm\:px-6.max-w-full`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(5) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.sm\:px-6.max-w-full`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(5) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.sm\:px-6.max-w-full`
+- `.grid-of-4 > .lg\:col-span-2.col-span-1[theme=""] > .sm\:pr-6.media.flex-1`
+- `.grid-of-4 > .lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:pr-6.media.flex-1`
+- `.grid-of-4 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:pr-6.media.flex-1`
 - `.splide__arrow--prev.left-5[aria-controls="splide01-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide01-track"] > .w-12`
 - `#splide02-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.media.flex-1`
@@ -89,7 +90,7 @@
 - `.grid-of-6 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:pr-6.media.flex-1`
 - `.grid-of-6 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:pr-6.media.flex-1`
 - `.grid-of-6 > .lg\:row-start-3.col-span-1[theme=""]:nth-child(5) > .sm\:pr-6.media.flex-1`
-- `.lg\:col-span-2.lg\:row-start-3[theme=""] > .sm\:pr-6.media.flex-1`
+- `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:pr-6.media.flex-1`
 - `.grid-of-5 > .lg\:col-span-2.col-span-1[theme=""] > .sm\:pr-6.media.flex-1`
 - `.grid-of-5 > .lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:pr-6.media.flex-1`
 - `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:pr-6.media.flex-1`
@@ -141,7 +142,7 @@
 - `.grid-of-6 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
 - `.grid-of-6 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
 - `.grid-of-6 > .lg\:row-start-3.col-span-1[theme=""]:nth-child(5) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.lg\:col-span-2.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
+- `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
 - `.grid-of-5 > .lg\:col-span-2.col-span-1[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
 - `.grid-of-5 > .lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
 - `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
@@ -188,20 +189,20 @@
 - `.grid-of-6 > .lg\:row-start-3.col-span-1[theme=""]:nth-child(5) > .sm\:pr-6.media.flex-1`
 - `.lg\:row-start-3.col-span-1[theme=""]:nth-child(5) > .sm\:ml-6.-mt-9.p-6 > h3`
 - `.grid-of-6 > .lg\:row-start-3.col-span-1[theme=""]:nth-child(5) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
-- `.lg\:col-span-2.lg\:row-start-3[theme=""] > .sm\:pr-6.media.flex-1`
-- `.lg\:col-span-2.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > h3`
-- `.lg\:col-span-2.lg\:row-start-3[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
+- `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:pr-6.media.flex-1`
+- `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:ml-6.-mt-9.p-6 > h3`
+- `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
 - `.grid-of-5 > .lg\:col-span-2.col-span-1[theme=""] > .sm\:pr-6.media.flex-1`
-- `.lg\:col-span-2.col-span-1[theme=""] > .sm\:ml-6.-mt-9.p-6 > h2`
+- `.grid-of-5 > .lg\:col-span-2.col-span-1[theme=""] > .sm\:ml-6.-mt-9.p-6 > h2`
 - `.grid-of-5 > .lg\:col-span-2.col-span-1[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
 - `.grid-of-5 > .lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:pr-6.media.flex-1`
-- `.lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:ml-6.-mt-9.p-6 > h2`
+- `.grid-of-5 > .lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:ml-6.-mt-9.p-6 > h2`
 - `.grid-of-5 > .lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
 - `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:pr-6.media.flex-1`
-- `.lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > h2`
+- `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > h2`
 - `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
 - `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:pr-6.media.flex-1`
-- `.lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > h2`
+- `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > h2`
 - `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
 - `.lg\:col-span-3.lg\:row-start-3.collection-item--fullWidth > .sm\:pr-6.media.flex-1`
 - `.lg\:col-span-3.lg\:row-start-3.collection-item--fullWidth > .sm\:ml-6.-mt-9.p-6 > h2`
