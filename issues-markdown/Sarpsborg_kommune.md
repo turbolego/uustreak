@@ -1,7 +1,7 @@
 # WCAG Violations Report for Sarpsborg kommune
 
-**Timestamp:** 2026-02-14T00:45:03.878Z
-**URL:** [https://www.sarpsborg.com/#](https://www.sarpsborg.com/#)
+**Timestamp:** 2026-02-15T00:55:45.627Z
+**URL:** [https://www.sarpsborg.com/](https://www.sarpsborg.com/)
 **Total Violations:** 6
 
 ## Violation Details

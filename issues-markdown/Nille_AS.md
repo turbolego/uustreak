@@ -1,8 +1,8 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2026-02-14T00:32:40.919Z
-**URL:** [https://www.nille.no/#](https://www.nille.no/#)
-**Total Violations:** 7
+**Timestamp:** 2026-02-15T00:45:00.443Z
+**URL:** [https://www.nille.no/](https://www.nille.no/)
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -24,7 +24,7 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 19
+- **Count:** 27
 
 #### Affected Elements:
 
@@ -47,18 +47,14 @@
 - `.swiper-slide:nth-child(17) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(18) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(19) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `a[title="Heliumstank 2,2l"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
+- `.swiper-slide:nth-child(20) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(21) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(22) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(23) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(24) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(25) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(26) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(27) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 
 ### Document should not have more than one banner landmark
 
@@ -94,8 +90,8 @@
 
 #### Affected Elements:
 
-- `a[href$="medlemsdager/"]`
-- `a[href$="baderom/"]`
+- `a[href$="handklar/"]`
+- `.swiper-slide-prev > a[title=""][data-discover="true"][aria-label=""]`
 - `a[href$="lys/"]`
 
 ### All page content should be contained by landmarks

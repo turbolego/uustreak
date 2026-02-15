@@ -1,7 +1,7 @@
 # WCAG Violations Report for Eiendomsmegler 1 AS
 
-**Timestamp:** 2026-02-14T00:47:41.575Z
-**URL:** [https://www.eiendomsmegler1.no/#](https://www.eiendomsmegler1.no/#)
+**Timestamp:** 2026-02-15T01:01:49.013Z
+**URL:** [https://www.eiendomsmegler1.no/](https://www.eiendomsmegler1.no/)
 **Total Violations:** 3
 
 ## Violation Details

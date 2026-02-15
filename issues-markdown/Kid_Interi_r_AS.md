@@ -1,7 +1,7 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-02-14T00:44:18.579Z
-**URL:** [https://www.kid.no/#](https://www.kid.no/#)
+**Timestamp:** 2026-02-15T01:15:47.717Z
+**URL:** [https://www.kid.no/](https://www.kid.no/)
 **Total Violations:** 6
 
 ## Violation Details
@@ -40,7 +40,7 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 8
+- **Count:** 7
 
 #### Affected Elements:
 
@@ -51,7 +51,6 @@
 - `.a7[href$="ambiance"][data-scope-link="true"]:nth-child(1) > .gk.fc.fb > .fe.ff.el`
 - `.hb > .fe.ff.el`
 - `div:nth-child(20) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .gk.fc.fb > .fe.ff.el`
-- `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1) > .gk.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -80,7 +79,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 14
+- **Count:** 12
 
 #### Affected Elements:
 
@@ -96,8 +95,6 @@
 - `.ca.s[href$="ambiance"]`
 - `div:nth-child(20) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
 - `div:nth-child(20) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c9`
-- `.a7[href$="kjaledyr"][data-scope-link="true"]:nth-child(1)`
-- `.ca.s[href$="kjaledyr"]`
 
 ### All page content should be contained by landmarks
 
@@ -105,7 +102,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 7
+- **Count:** 6
 
 #### Affected Elements:
 
@@ -115,4 +112,3 @@
 - `.a > div:nth-child(5)`
 - `.tf-header-slider`
 - `.tf-sidebar`
-- `#kindly-chat-api > div,.sc-cabOPs`

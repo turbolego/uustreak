@@ -1,7 +1,7 @@
 # WCAG Violations Report for Knowit Norge
 
-**Timestamp:** 2026-02-14T00:44:47.183Z
-**URL:** [https://www.knowit.no/#](https://www.knowit.no/#)
+**Timestamp:** 2026-02-15T01:16:18.948Z
+**URL:** [https://www.knowit.no/](https://www.knowit.no/)
 **Total Violations:** 4
 
 ## Violation Details

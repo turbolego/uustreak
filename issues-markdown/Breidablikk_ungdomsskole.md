@@ -1,7 +1,7 @@
 # WCAG Violations Report for Breidablikk ungdomsskole
 
-**Timestamp:** 2026-02-14T00:39:59.859Z
-**URL:** [https://www.sandefjord.kommune.no/barnehage-skole-sfo/skole/alle-skolene/ungdomsskoler/breidablikk-ungdomsskole/#](https://www.sandefjord.kommune.no/barnehage-skole-sfo/skole/alle-skolene/ungdomsskoler/breidablikk-ungdomsskole/#)
+**Timestamp:** 2026-02-15T00:53:28.227Z
+**URL:** [https://www.sandefjord.kommune.no/barnehage-skole-sfo/skole/alle-skolene/ungdomsskoler/breidablikk-ungdomsskole/](https://www.sandefjord.kommune.no/barnehage-skole-sfo/skole/alle-skolene/ungdomsskoler/breidablikk-ungdomsskole/)
 **Total Violations:** 2
 
 ## Violation Details

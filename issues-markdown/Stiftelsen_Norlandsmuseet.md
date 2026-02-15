@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stiftelsen Norlandsmuseet
 
-**Timestamp:** 2026-02-14T00:32:58.155Z
-**URL:** [https://www.nordlandsmuseet.no/hjem/](https://www.nordlandsmuseet.no/hjem/)
+**Timestamp:** 2026-02-15T01:04:44.443Z
+**URL:** [https://www.nordlandsmuseet.no/hjem](https://www.nordlandsmuseet.no/hjem)
 **Total Violations:** 5
 
 ## Violation Details
@@ -65,16 +65,16 @@
 
 #### Affected Elements:
 
-- `#yui_3_17_2_1_1771029166459_512 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1771029166459_514 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1771029166459_516 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1771029166459_518 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1771117474834_512 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1771117474834_514 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1771117474834_516 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1771117474834_518 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
 - `.summary-thumbnail-container.sqs-gallery-image-container[href$="madeinbodo"]`
-- `#yui_3_17_2_1_1771029166459_522 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1771029166459_524 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1771029166459_526 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1771117474834_522 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1771117474834_524 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1771117474834_526 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
 - `.summary-thumbnail-container.sqs-gallery-image-container[href$="bodo-laget-det"]`
-- `#yui_3_17_2_1_1771029166459_530 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1771029166459_532 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1771029166459_534 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1771117474834_530 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1771117474834_532 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1771117474834_534 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
 - `.summary-thumbnail-container.sqs-gallery-image-container[href$="samisk-tromme"]`

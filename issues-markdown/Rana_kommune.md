@@ -1,22 +1,10 @@
 # WCAG Violations Report for Rana kommune
 
-**Timestamp:** 2026-02-14T00:42:12.080Z
-**URL:** [https://www.rana.kommune.no/#](https://www.rana.kommune.no/#)
-**Total Violations:** 4
+**Timestamp:** 2026-02-15T00:52:47.864Z
+**URL:** [https://www.rana.kommune.no/](https://www.rana.kommune.no/)
+**Total Violations:** 3
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#corner_text`
 
 ### Alternative text of images should not be repeated as text
 

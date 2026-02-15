@@ -1,7 +1,7 @@
 # WCAG Violations Report for Strindheim skole
 
-**Timestamp:** 2026-02-14T00:34:09.366Z
-**URL:** [https://www.trondheim.kommune.no/org/oppvekst/skoler/strindheim-skole/#](https://www.trondheim.kommune.no/org/oppvekst/skoler/strindheim-skole/#)
+**Timestamp:** 2026-02-15T01:06:01.746Z
+**URL:** [https://www.trondheim.kommune.no/org/oppvekst/skoler/strindheim-skole/](https://www.trondheim.kommune.no/org/oppvekst/skoler/strindheim-skole/)
 **Total Violations:** 4
 
 ## Violation Details

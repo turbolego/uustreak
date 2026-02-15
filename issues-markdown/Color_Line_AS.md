@@ -1,7 +1,7 @@
 # WCAG Violations Report for Color Line AS
 
-**Timestamp:** 2026-02-14T00:41:36.804Z
-**URL:** [https://www.colorline.no/#](https://www.colorline.no/#)
+**Timestamp:** 2026-02-15T00:55:17.660Z
+**URL:** [https://www.colorline.no/](https://www.colorline.no/)
 **Total Violations:** 7
 
 ## Violation Details

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Fredrikstad kommune
 
-**Timestamp:** 2026-02-14T00:36:50.543Z
-**URL:** [https://www.fredrikstad.kommune.no/#](https://www.fredrikstad.kommune.no/#)
-**Total Violations:** 3
+**Timestamp:** 2026-02-15T01:07:52.027Z
+**URL:** [https://www.fredrikstad.kommune.no/](https://www.fredrikstad.kommune.no/)
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -43,3 +43,38 @@
 - `#q`
 - `.flex-wrap`
 - `div[x-show="step === 1"] > .text-gray-700.font-medium.text-xl`
+
+### Scrollable region must have keyboard access
+
+- **Impact:** serious
+- **Description:** Ensure elements that have scrollable content are accessible by keyboard
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.carousel`
+
+### <svg> elements with an img role must have alternative text
+
+- **Impact:** serious
+- **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/svg-img-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
+- **Count:** 12
+
+#### Affected Elements:
+
+- `a[href="/kalender?id=1722319"] > .p-4 > .list-none.p-0.m-0 > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
+- `a[href="/kalender?id=1722319"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1722319"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1722311"] > .p-4 > .list-none.p-0.m-0 > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
+- `a[href="/kalender?id=1722311"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1722311"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1713461"] > .p-4 > .list-none.p-0.m-0 > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
+- `a[href="/kalender?id=1713461"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1713461"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1718361"] > .p-4 > .list-none.p-0.m-0 > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
+- `a[href="/kalender?id=1718361"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1718361"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`

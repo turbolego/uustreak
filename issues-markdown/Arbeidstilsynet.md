@@ -1,7 +1,7 @@
 # WCAG Violations Report for Arbeidstilsynet
 
-**Timestamp:** 2026-02-14T00:32:47.206Z
-**URL:** [https://www.arbeidstilsynet.no/#](https://www.arbeidstilsynet.no/#)
+**Timestamp:** 2026-02-15T00:46:38.444Z
+**URL:** [https://www.arbeidstilsynet.no/](https://www.arbeidstilsynet.no/)
 **Total Violations:** 2
 
 ## Violation Details

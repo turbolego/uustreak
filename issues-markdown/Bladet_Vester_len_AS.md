@@ -1,10 +1,22 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-02-14T00:39:22.363Z
-**URL:** [https://www.blv.no/#](https://www.blv.no/#)
-**Total Violations:** 5
+**Timestamp:** 2026-02-15T00:52:43.857Z
+**URL:** [https://www.blv.no/](https://www.blv.no/)
+**Total Violations:** 7
 
 ## Violation Details
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cbb`
 
 ### Headings should not be empty
 
@@ -12,14 +24,13 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 4
+- **Count:** 3
 
 #### Affected Elements:
 
 - `brick-teaser-v22[data-id="hfbgrx67"] > .none.teaser_container[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
-- `.custom-two > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `.custom-two.background-custom[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 - `a[href$="oksnesavisa.no/"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
-- `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
@@ -43,10 +54,24 @@
 
 #### Affected Elements:
 
+- `a[target="_blank"]`
 - `brick-teaser-v22[data-id="hfbgrx67"] > .none.teaser_container[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
-- `.custom-two > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
+- `.custom-two.background-custom[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
 - `a[href$="oksnesavisa.no/"]`
-- `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"]`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 3
+
+#### Affected Elements:
+
+- `html`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, html`
+- `#eaframe, html`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -71,4 +96,4 @@
 #### Affected Elements:
 
 - `amedia-username`
-- `#toppbanner-1`
+- `#toppbanner-1-label`

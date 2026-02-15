@@ -1,7 +1,7 @@
 # WCAG Violations Report for Kriminalomsorgsdirektoratet
 
-**Timestamp:** 2026-02-14T00:46:02.435Z
-**URL:** [https://www.kriminalomsorgen.no/#](https://www.kriminalomsorgen.no/#)
+**Timestamp:** 2026-02-15T01:17:33.779Z
+**URL:** [https://www.kriminalomsorgen.no/](https://www.kriminalomsorgen.no/)
 **Total Violations:** 2
 
 ## Violation Details
