@@ -1,8 +1,8 @@
 # WCAG Violations Report for Mediehuset Nettavisen AS
 
-**Timestamp:** 2026-02-15T00:43:47.101Z
+**Timestamp:** 2026-02-16T03:16:28.267Z
 **URL:** [https://www.nettavisen.no/](https://www.nettavisen.no/)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -30,17 +30,17 @@
 
 - `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > h1`
 
-### Heading levels should only increase by one
+### Frames must have an accessible name
 
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `article[data-k5a-trackerid="page-0"] > .brick-c-bpoemY.custom-two.background-custom > .brick-c-igdZZU.brick-c-fdsRaE.title_container > h3`
+- `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if`
 
 ### Banner landmark should not be contained in another landmark
 
@@ -79,18 +79,6 @@
 - `#page-header`
 - `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > .nav-wrap > nav`
 
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `a[target="_blank"]`
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
@@ -102,4 +90,4 @@
 #### Affected Elements:
 
 - `amedia-username`
-- `#toppbanner-1-label`
+- `#toppbanner-1`

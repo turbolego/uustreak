@@ -1,6 +1,6 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-02-15T00:51:21.783Z
+**Timestamp:** 2026-02-16T03:24:10.166Z
 **URL:** [https://www.lydenavnorge.no/p4/](https://www.lydenavnorge.no/p4/)
 **Total Violations:** 8
 
@@ -88,7 +88,7 @@
 
 #### Affected Elements:
 
-- `img[alt="P9 Retro"]`
+- `img[alt="P12 Hitmix"]`
 
 ### Form elements must have labels
 

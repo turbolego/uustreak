@@ -1,22 +1,10 @@
 # WCAG Violations Report for Unicare BAB AS
 
-**Timestamp:** 2026-02-15T01:13:55.638Z
+**Timestamp:** 2026-02-16T03:47:42.057Z
 **URL:** [https://unicare.no/](https://unicare.no/)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
-
-### Elements must only use supported ARIA attributes
-
-- **Impact:** critical
-- **Description:** Ensure an element's role supports its ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe[width="100%"], .OverlayBase_module_overlayWrapper__42ef25fe`
 
 ### ARIA role should be appropriate for the element
 
@@ -24,12 +12,11 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
 - `#declineButton`
-- `iframe[width="100%"], body`
 - `#splide01-slide01`
 
 ### Frames must have an accessible name
@@ -50,11 +37,10 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.inner-content.odd > h3`
 - `article[data-articleid="2790"] > a[target="_self"] > .card-body > h3[property="headline"]`
 - `article[data-articleid="2334"] > a[target="_self"] > .card-body > h3`
 

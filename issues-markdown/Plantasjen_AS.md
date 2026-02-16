@@ -1,6 +1,6 @@
 # WCAG Violations Report for Plantasjen AS
 
-**Timestamp:** 2026-02-15T00:51:51.146Z
+**Timestamp:** 2026-02-16T03:24:39.791Z
 **URL:** [https://plantasjen.no/no](https://plantasjen.no/no)
 **Total Violations:** 2
 
@@ -24,10 +24,9 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(4) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > .relative > .md\:px-8.group > .md\:top-6.left-0.top-6 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
-- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(2) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > .relative > .md\:px-8.group > .md\:top-6.left-0.top-6 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
-- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(1) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > .relative > .md\:px-8.group > .md\:top-6.left-0.top-6 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
+- `section:nth-child(18) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(1) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > .relative > .md\:px-8.group > .md\:top-6.left-0.top-6 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
+- `section:nth-child(23) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(1) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > .relative > .md\:px-8.group > .md\:top-6.left-0.top-6 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`

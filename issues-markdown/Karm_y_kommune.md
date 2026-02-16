@@ -1,8 +1,8 @@
 # WCAG Violations Report for Karmøy kommune
 
-**Timestamp:** 2026-02-15T01:15:22.436Z
+**Timestamp:** 2026-02-16T03:47:21.858Z
 **URL:** [https://www.karmoy.kommune.no/](https://www.karmoy.kommune.no/)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
 
@@ -29,15 +29,3 @@
 #### Affected Elements:
 
 - `.back-to-top-button`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.global-top-container`

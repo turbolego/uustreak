@@ -1,19 +1,32 @@
 # WCAG Violations Report for Widerøe AS
 
-**Timestamp:** 2026-02-15T01:18:37.824Z
+**Timestamp:** 2026-02-16T03:52:35.815Z
 **URL:** [https://www.wideroe.no/](https://www.wideroe.no/)
-**Total Violations:** 1
+**Total Violations:** 2
 
 ## Violation Details
 
-### Delayed refresh under 20 hours must not be used
+### Elements must meet minimum color contrast ratio thresholds
 
-- **Impact:** critical
-- **Description:** Ensure <meta http-equiv="refresh"> is not used for delayed refresh
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/meta-refresh?application=playwright
-- **Tags:** cat.time-and-media, wcag2a, wcag221, TTv5, TT8.a, EN-301-549, EN-9.2.2.1, RGAAv4, RGAA-13.1.2
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `b`
+- `a[href$="destinasjoner.html"]`
+
+### Zooming and scaling must not be disabled
+
+- **Impact:** moderate
+- **Description:** Ensure <meta name="viewport"> does not disable text scaling and zooming
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/meta-viewport?application=playwright
+- **Tags:** cat.sensory-and-visual-cues, wcag2aa, wcag144, EN-301-549, EN-9.1.4.4, ACT, RGAAv4, RGAA-10.4.2
 - **Count:** 1
 
 #### Affected Elements:
 
-- `meta[http-equiv="refresh"]`
+- `meta[name="viewport"]`

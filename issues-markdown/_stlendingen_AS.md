@@ -1,8 +1,8 @@
 # WCAG Violations Report for Østlendingen AS
 
-**Timestamp:** 2026-02-15T01:19:40.422Z
+**Timestamp:** 2026-02-16T03:53:38.606Z
 **URL:** [https://www.ostlendingen.no/](https://www.ostlendingen.no/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -52,7 +52,21 @@
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.ostlendingen\.no\/toppbanner_0, #aw0`
+- `a[target="_blank"]`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 3
+
+#### Affected Elements:
+
+- `html`
+- `#google_ads_iframe_\/56257416\/www\.ostlendingen\.no\/toppbanner_0, html`
+- `#eaframe, html`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -77,4 +91,4 @@
 #### Affected Elements:
 
 - `amedia-username`
-- `#toppbanner-1`
+- `#toppbanner-1-label`
