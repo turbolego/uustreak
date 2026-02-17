@@ -1,7 +1,7 @@
 # WCAG Violations Report for Lillestrøm kommune
 
-**Timestamp:** 2026-02-16T03:51:50.734Z
-**URL:** [https://www.lillestrom.kommune.no/](https://www.lillestrom.kommune.no/)
+**Timestamp:** 2026-02-17T00:48:32.344Z
+**URL:** [https://www.lillestrom.kommune.no/#](https://www.lillestrom.kommune.no/#)
 **Total Violations:** 2
 
 ## Violation Details

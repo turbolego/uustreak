@@ -1,10 +1,22 @@
 # WCAG Violations Report for Lofotr Vikingmuseum AS
 
-**Timestamp:** 2026-02-16T03:52:04.986Z
-**URL:** [https://www.lofotr.no/](https://www.lofotr.no/)
-**Total Violations:** 1
+**Timestamp:** 2026-02-17T00:48:45.178Z
+**URL:** [https://www.lofotr.no/#](https://www.lofotr.no/#)
+**Total Violations:** 2
 
 ## Violation Details
+
+### ARIA role should be appropriate for the element
+
+- **Impact:** minor
+- **Description:** Ensure role attribute has an appropriate value for the element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe, body`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

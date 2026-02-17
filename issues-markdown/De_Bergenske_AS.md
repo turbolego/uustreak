@@ -1,8 +1,8 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-02-16T03:29:53.218Z
+**Timestamp:** 2026-02-17T00:44:41.462Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
-**Total Violations:** 9
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -58,19 +58,16 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 37
+- **Count:** 34
 
 #### Affected Elements:
 
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(2) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.sm\:px-6.max-w-full`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(2) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.sm\:px-6.max-w-full`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(2) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.sm\:px-6.max-w-full`
 - `.grid-of-1 > .lg\:col-span-3.collection-item--fullWidth[theme=""] > .sm\:pr-6.media.flex-1`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.sm\:px-6.max-w-full`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.sm\:px-6.max-w-full`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.sm\:px-6.max-w-full`
-- `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(4) > .h-auto.sm\:px-6.max-w-full`
-- `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(6) > .h-auto.sm\:px-6.max-w-full`
+- `.lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.sm\:px-6`
+- `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.max-w-full.sm\:px-6`
+- `.lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.max-w-full.sm\:px-6`
+- `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(4) > .h-auto.max-w-full.sm\:px-6`
+- `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(6) > .h-auto.max-w-full.sm\:px-6`
 - `.grid-of-4 > .lg\:col-span-2.col-span-1[theme=""] > .sm\:pr-6.media.flex-1`
 - `.grid-of-4 > .lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:pr-6.media.flex-1`
 - `.grid-of-4 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:pr-6.media.flex-1`
@@ -95,7 +92,7 @@
 - `.grid-of-5 > .lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:pr-6.media.flex-1`
 - `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:pr-6.media.flex-1`
 - `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:pr-6.media.flex-1`
-- `.lg\:col-span-3.lg\:row-start-3.collection-item--fullWidth > .sm\:pr-6.media.flex-1`
+- `.lg\:col-span-3.lg\:row-start-3[theme=""] > .sm\:pr-6.media.flex-1`
 - `#splide05-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.media.flex-1`
 - `.splide__arrow--prev.left-5[aria-controls="splide05-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide05-track"] > .w-12`
@@ -125,38 +122,13 @@
 - `.maxLg\:py-5`
 - `#splide01`
 
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 14
-
-#### Affected Elements:
-
-- `#splide02-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `#splide03-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-6 > .lg\:col-span-2.col-span-1[theme=""]:nth-child(1) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-6 > .lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-6 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-6 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-6 > .lg\:row-start-3.col-span-1[theme=""]:nth-child(5) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-5 > .lg\:col-span-2.col-span-1[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-5 > .lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `.lg\:col-span-3.lg\:row-start-3.collection-item--fullWidth > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-- `#splide05-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .lg\:p-7.mx-6.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\:border-brand`
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 63
+- **Count:** 31
 
 #### Affected Elements:
 
@@ -173,40 +145,8 @@
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(7) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.lg\:col-span-4.col-span-4`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(8) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.lg\:col-span-4.col-span-4`
 - `.\!bg-Theme\/Light.LIGHT.\!text-black:nth-child(9) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.lg\:col-span-4.col-span-4`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(10) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
-- `.grid-of-6 > .lg\:col-span-2.col-span-1[theme=""]:nth-child(1) > .sm\:pr-6.media.flex-1`
-- `.lg\:col-span-2.col-span-1[theme=""]:nth-child(1) > .sm\:ml-6.-mt-9.p-6 > h3`
-- `.grid-of-6 > .lg\:col-span-2.col-span-1[theme=""]:nth-child(1) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
-- `.grid-of-6 > .lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:pr-6.media.flex-1`
-- `.lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:ml-6.-mt-9.p-6 > h3`
-- `.grid-of-6 > .lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
-- `.grid-of-6 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:pr-6.media.flex-1`
-- `.lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > h3`
-- `.grid-of-6 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
-- `.grid-of-6 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:pr-6.media.flex-1`
-- `.lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > h3`
-- `.grid-of-6 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
-- `.grid-of-6 > .lg\:row-start-3.col-span-1[theme=""]:nth-child(5) > .sm\:pr-6.media.flex-1`
-- `.lg\:row-start-3.col-span-1[theme=""]:nth-child(5) > .sm\:ml-6.-mt-9.p-6 > h3`
-- `.grid-of-6 > .lg\:row-start-3.col-span-1[theme=""]:nth-child(5) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
-- `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:pr-6.media.flex-1`
-- `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:ml-6.-mt-9.p-6 > h3`
-- `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
-- `.grid-of-5 > .lg\:col-span-2.col-span-1[theme=""] > .sm\:pr-6.media.flex-1`
-- `.grid-of-5 > .lg\:col-span-2.col-span-1[theme=""] > .sm\:ml-6.-mt-9.p-6 > h2`
-- `.grid-of-5 > .lg\:col-span-2.col-span-1[theme=""] > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
-- `.grid-of-5 > .lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:pr-6.media.flex-1`
-- `.grid-of-5 > .lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:ml-6.-mt-9.p-6 > h2`
-- `.grid-of-5 > .lg\:row-span-2.lg\:col-start-3.lg\:row-start-1 > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
-- `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:pr-6.media.flex-1`
-- `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > h2`
-- `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
-- `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:pr-6.media.flex-1`
-- `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > h2`
-- `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
-- `.lg\:col-span-3.lg\:row-start-3.collection-item--fullWidth > .sm\:pr-6.media.flex-1`
-- `.lg\:col-span-3.lg\:row-start-3.collection-item--fullWidth > .sm\:ml-6.-mt-9.p-6 > h2`
-- `.lg\:col-span-3.lg\:row-start-3.collection-item--fullWidth > .sm\:ml-6.-mt-9.p-6 > .items-end.gap-x-6.flex > .grow.font-light.\!text-textcolor`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(10)`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(11)`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(12)`
 - `.\!bg-white > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.lg\:col-span-4.col-span-4`
 - `.xl\:col-span-6 > .lg\:text-center`

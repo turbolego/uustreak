@@ -1,10 +1,50 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2026-02-16T03:50:19.302Z
-**URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/)
-**Total Violations:** 5
+**Timestamp:** 2026-02-17T00:47:10.783Z
+**URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#)
+**Total Violations:** 9
 
 ## Violation Details
+
+### ARIA progressbar nodes must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA progressbar node has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-progressbar-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag111, EN-301-549, EN-9.1.1.1, RGAAv4, RGAA-11.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[name="f341eaf21f79601e9"], ._55yn`
+
+### Certain ARIA roles must contain particular children
+
+- **Impact:** critical
+- **Description:** Ensure elements with an ARIA role that require child roles contain them
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-required-children?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[name="f341eaf21f79601e9"], div[role="feed"]`
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 5
+
+#### Affected Elements:
+
+- `iframe[name="f341eaf21f79601e9"], ._4v3m:nth-child(2) > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f341eaf21f79601e9"], ._4v3m._51mw > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f341eaf21f79601e9"], abbr[data-utime="1771247133"] > .timestampContent`
+- `iframe[name="f341eaf21f79601e9"], #u_1_f_jk > ._2165._2pi4[title="Liker"]`
+- `iframe[name="f341eaf21f79601e9"], #u_1_g_BL > ._50sk._2pi4[title="Del"]`
 
 ### Form elements should have a visible label
 
@@ -43,6 +83,24 @@
 #### Affected Elements:
 
 - `#coiOverlay`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 7
+
+#### Affected Elements:
+
+- `iframe[name="f341eaf21f79601e9"], #u_0_1_I4`
+- `iframe[name="f341eaf21f79601e9"], .lfloat._3-8_`
+- `iframe[name="f341eaf21f79601e9"], #u_1_7_\/V > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f341eaf21f79601e9"], #u_1_5_M\+ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f341eaf21f79601e9"], #u_1_k_qM > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f341eaf21f79601e9"], #u_1_6_y7 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f341eaf21f79601e9"], #u_1_1v_3R > ._302 > span > a`
 
 ### Interactive controls must not be nested
 

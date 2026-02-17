@@ -1,7 +1,7 @@
 # WCAG Violations Report for Trones skole
 
-**Timestamp:** 2026-02-16T03:45:44.860Z
-**URL:** [https://www.minskole.no/trones](https://www.minskole.no/trones)
+**Timestamp:** 2026-02-17T00:49:30.266Z
+**URL:** [https://www.minskole.no/trones/#](https://www.minskole.no/trones/#)
 **Total Violations:** 7
 
 ## Violation Details
@@ -12,13 +12,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 5
+- **Count:** 4
 
 #### Affected Elements:
 
 - `#weatherHolder > div:nth-child(2) > div > div:nth-child(3)`
 - `#weatherHolder > div:nth-child(3) > div > div:nth-child(3)`
-- `#weatherHolder > div:nth-child(4) > div > div:nth-child(3)`
 - `#ContentPlaceHolder1_btnAppendNews`
 - `#cookie-consent-close`
 

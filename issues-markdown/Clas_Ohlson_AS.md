@@ -1,8 +1,8 @@
 # WCAG Violations Report for Clas Ohlson AS
 
-**Timestamp:** 2026-02-16T03:26:18.594Z
-**URL:** [https://www.clasohlson.com/no/](https://www.clasohlson.com/no/)
-**Total Violations:** 6
+**Timestamp:** 2026-02-17T00:41:43.975Z
+**URL:** [https://www.clasohlson.com/no/#](https://www.clasohlson.com/no/#)
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -17,20 +17,7 @@
 #### Affected Elements:
 
 - `.carousel__component.carousel-component-parent.right-shadow:nth-child(5) > .carousel__component--headline:nth-child(1) > .title-two`
-- `.carousel__component.carousel-component-parent.right-shadow:nth-child(9) > .carousel__component--headline:nth-child(1) > .title-two`
-
-### Frames must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `iframe[name="cx-webChatButton"]`
-- `iframe[name="cx-webChatWindow"]`
+- `.carousel__component.carousel-component-parent.right-shadow:nth-child(10) > .carousel__component--headline:nth-child(1) > .title-two`
 
 ### Images must have alternative text
 

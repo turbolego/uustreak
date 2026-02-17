@@ -1,7 +1,7 @@
 # WCAG Violations Report for Årvoll skole
 
-**Timestamp:** 2026-02-16T03:53:22.098Z
-**URL:** [https://arvoll.osloskolen.no/](https://arvoll.osloskolen.no/)
+**Timestamp:** 2026-02-17T00:55:54.102Z
+**URL:** [https://arvoll.osloskolen.no/#](https://arvoll.osloskolen.no/#)
 **Total Violations:** 6
 
 ## Violation Details

@@ -1,22 +1,10 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2026-02-16T03:22:49.201Z
-**URL:** [https://www.ba.no/](https://www.ba.no/)
-**Total Violations:** 5
+**Timestamp:** 2026-02-17T00:38:39.337Z
+**URL:** [https://www.ba.no/#](https://www.ba.no/#)
+**Total Violations:** 4
 
 ## Violation Details
-
-### ARIA commands must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #cbb`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -24,11 +12,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `#eaframe, #container_10055751 > .info > .info-wrapper > .ctaLink`
+- `#eaframe, #arrow-banner10054008`
+- `#eaframe, #container_10054008 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
@@ -36,11 +25,10 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if`
 - `#eaframe`
 
 ### Elements marked as presentational should be consistently ignored

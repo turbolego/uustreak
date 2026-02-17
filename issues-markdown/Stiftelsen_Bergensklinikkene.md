@@ -1,36 +1,80 @@
 # WCAG Violations Report for Stiftelsen Bergensklinikkene
 
-**Timestamp:** 2026-02-14T00:30:50.616Z
-**URL:** [https://no-go.kelkoogroup.net/redirect?country=no&k=612f7a9541cd6ea61eb554c0e4cff43799334e64879a3059fced3c2947e01d9a6aa301d76cdfc29dc2a7a27777f09309913c99a4dda4808822a04b21bfa051deaa6ef135c0f6274d19835a7635794275f8cef6c2475d6b7bc4c2d5fcf7ce4f695d8f33a0eb1b074b249ff419257e4f18244bb5dbc793616413a97fd6d3c07f83265a135a56a410053e58bb7b56fdb7417dd79c11da399546f72a16a21b973ed86b7edd746e248f6483d96d70f9c29e2dc01e1a97041c161381d5d01b430fe66b5fcb553f4aa7b13c3cc37b56d0539e84449c1ac26603e0e13c5dd6e05c1df9da69515d61b48c56aac416d7ce0d141a6ee049121c415a6c0d0d050e1eb52fb0f99dc93638cf57ece06721e5d1bbfcb40600acde69d379a86e72ddf553161059fb997a57343019e441ed7229b29221a8dd6b8e376d9c5158879c81aae392b1cf1bbb2f7e17073bff6f1fd8310db898458cd3379b54e9f21a60&url=https%3A%2F%2Fsportsmaster.no%2Fpivot-competition-kettlebell-14kg-sort%3Futm_source%3Dkelkoono%26utm_medium%3Dcpc%26utm_campaign%3Dkelkooclick%26utm_source_platform%3DKelkooGroup&initiator=fp&dc=false](https://no-go.kelkoogroup.net/redirect?country=no&k=612f7a9541cd6ea61eb554c0e4cff43799334e64879a3059fced3c2947e01d9a6aa301d76cdfc29dc2a7a27777f09309913c99a4dda4808822a04b21bfa051deaa6ef135c0f6274d19835a7635794275f8cef6c2475d6b7bc4c2d5fcf7ce4f695d8f33a0eb1b074b249ff419257e4f18244bb5dbc793616413a97fd6d3c07f83265a135a56a410053e58bb7b56fdb7417dd79c11da399546f72a16a21b973ed86b7edd746e248f6483d96d70f9c29e2dc01e1a97041c161381d5d01b430fe66b5fcb553f4aa7b13c3cc37b56d0539e84449c1ac26603e0e13c5dd6e05c1df9da69515d61b48c56aac416d7ce0d141a6ee049121c415a6c0d0d050e1eb52fb0f99dc93638cf57ece06721e5d1bbfcb40600acde69d379a86e72ddf553161059fb997a57343019e441ed7229b29221a8dd6b8e376d9c5158879c81aae392b1cf1bbb2f7e17073bff6f1fd8310db898458cd3379b54e9f21a60&url=https%3A%2F%2Fsportsmaster.no%2Fpivot-competition-kettlebell-14kg-sort%3Futm_source%3Dkelkoono%26utm_medium%3Dcpc%26utm_campaign%3Dkelkooclick%26utm_source_platform%3DKelkooGroup&initiator=fp&dc=false)
-**Total Violations:** 3
+**Timestamp:** 2026-02-17T00:32:16.665Z
+**URL:** [https://bergenclinics.no/#](https://bergenclinics.no/#)
+**Total Violations:** 6
 
 ## Violation Details
 
-### Document should have one main landmark
+### Elements must meet minimum color contrast ratio thresholds
 
-- **Impact:** moderate
-- **Description:** Ensure the document has a main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright
-- **Tags:** cat.semantics, best-practice
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 2
 
 #### Affected Elements:
 
-- `html`
-- `iframe, html`
+- `a[target="_blank"]`
+- `#iframe, iframe, footer > a`
 
-### Page should contain a level-one heading
+### Frames must have an accessible name
 
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
 - **Count:** 2
 
 #### Affected Elements:
 
-- `html`
-- `iframe, html`
+- `#iframe`
+- `#iframe, iframe`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 5
+
+#### Affected Elements:
+
+- `#iframe, iframe, li:nth-child(1) > .content > .arrow > img`
+- `#iframe, iframe, li:nth-child(2) > .content > .arrow > img`
+- `#iframe, iframe, li:nth-child(3) > .content > .arrow > img`
+- `#iframe, iframe, li:nth-child(4) > .content > .arrow > img`
+- `#iframe, iframe, li:nth-child(5) > .content > .arrow > img`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 5
+
+#### Affected Elements:
+
+- `#iframe, iframe, .dak1`
+- `#iframe, iframe, .dak2`
+- `#iframe, iframe, .dak3`
+- `#iframe, iframe, .dak4`
+- `#iframe, iframe, .dak5`
+
+### Zooming and scaling must not be disabled
+
+- **Impact:** moderate
+- **Description:** Ensure <meta name="viewport"> does not disable text scaling and zooming
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/meta-viewport?application=playwright
+- **Tags:** cat.sensory-and-visual-cues, wcag2aa, wcag144, EN-301-549, EN-9.1.4.4, ACT, RGAAv4, RGAA-10.4.2
+- **Count:** 1
+
+#### Affected Elements:
+
+- `meta[name="viewport"]`
 
 ### All page content should be contained by landmarks
 
@@ -42,6 +86,6 @@
 
 #### Affected Elements:
 
-- `iframe, .captcha__human`
-- `iframe, .captcha__robot__warning`
-- `iframe, .captcha__robot__contact_support`
+- `.sale_banner_gray`
+- `#iframe, iframe, .heading`
+- `#iframe, iframe, .list_wrapper`

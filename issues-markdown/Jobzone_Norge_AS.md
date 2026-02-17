@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jobzone Norge AS
 
-**Timestamp:** 2026-02-16T03:46:07.516Z
+**Timestamp:** 2026-02-17T00:43:14.792Z
 **URL:** [https://jobzone.no/](https://jobzone.no/)
 **Total Violations:** 5
 
@@ -23,10 +23,10 @@
 - `.nav-wrapper-item:nth-child(5) > div[data-react-component="LoginWizard"] > .login-wizard > .is-hidden-mobile > .login-wizard-nav-text.nav-text`
 - `.company-tab`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(2) > .box.is-mobile > .left-arrow.link.rusty-red > .rusty-red`
-- `.buttons-href-button[href="/ledige-stillinger/72466"]`
-- `.buttons-href-button[href="/ledige-stillinger/72167"]`
-- `.buttons-href-button[href="/ledige-stillinger/72475"]`
-- `.buttons-href-button[href="/ledige-stillinger/72473"]`
+- `.buttons-href-button[href="/ledige-stillinger/72481"]`
+- `.buttons-href-button[href="/ledige-stillinger/72482"]`
+- `.buttons-href-button[href="/ledige-stillinger/72315"]`
+- `.buttons-href-button[href="/ledige-stillinger/72478"]`
 - `.button-component`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .jobseeker.is-marginless.is-multiline > h5`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .company.is-marginless.colums > h5`
@@ -78,10 +78,10 @@
 - `a[href$="registrering/"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
 - `.page-link.colums:nth-child(3) > a[href$="avdelinger/"] > .is-mobile.columns > .page-link-icon.is-narrow.column > img`
 - `.page-link.colums:nth-child(3) > a[href$="avdelinger/"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
-- `div[data-position-id="72466"] > img`
-- `div[data-position-id="72167"] > img`
-- `div[data-position-id="72475"] > img`
-- `div[data-position-id="72473"] > img`
+- `div[data-position-id="72481"] > img`
+- `div[data-position-id="72482"] > img`
+- `div[data-position-id="72315"] > img`
+- `div[data-position-id="72478"] > img`
 - `img[src$="House.svg"]`
 - `.is-6.is-12-mobile.column:nth-child(2) > img[src$="Article.svg"][type="image/svg+xml"]`
 - `.information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(3) > img[type="image/svg+xml"]`

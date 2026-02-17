@@ -1,8 +1,8 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-02-16T03:42:41.186Z
+**Timestamp:** 2026-02-17T00:47:02.768Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.main`
+- `.image`
 
 ### ARIA attributes must conform to valid names
 
@@ -74,8 +74,8 @@
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(2) > .main-stock.stock[size="14px"]`
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(3) > .main-stock.stock[size="14px"]`
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(4) > .main-stock.stock[size="14px"]`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-8f8f6f81=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-1d528241=""] > .tn-listitem.content-m.m`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-8f8f6f81=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-1d528241=""] > .tn-listitem.content-m.m:nth-child(1)`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-8f8f6f81=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-c2e46e13=""] > .tn-listitem.content-m.m`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-8f8f6f81=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-c2e46e13=""] > .tn-listitem.content-m.m:nth-child(1)`
 - `.tn-listitem.content-m.m:nth-child(2)`
 
 ### All page content should be contained by landmarks
@@ -93,15 +93,3 @@
 - `#freetext-top > .two-buttons`
 - `.showConsentPreferences`
 - `#privacy_prompt_bottom`
-
-### [role="img"] elements must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure [role="img"] elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/role-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.hero-banner`
