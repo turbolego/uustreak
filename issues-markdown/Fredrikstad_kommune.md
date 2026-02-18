@@ -1,8 +1,8 @@
 # WCAG Violations Report for Fredrikstad kommune
 
-**Timestamp:** 2026-02-17T00:37:27.629Z
+**Timestamp:** 2026-02-18T00:35:12.898Z
 **URL:** [https://www.fredrikstad.kommune.no/#](https://www.fredrikstad.kommune.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -43,6 +43,18 @@
 - `#q`
 - `.flex-wrap`
 - `div[x-show="step === 1"] > .text-gray-700.font-medium.text-xl`
+
+### Scrollable region must have keyboard access
+
+- **Impact:** serious
+- **Description:** Ensure elements that have scrollable content are accessible by keyboard
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.carousel`
 
 ### <svg> elements with an img role must have alternative text
 

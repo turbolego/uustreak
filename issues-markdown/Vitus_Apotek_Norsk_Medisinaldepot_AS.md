@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-02-17T00:54:42.083Z
+**Timestamp:** 2026-02-18T00:46:17.579Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
 **Total Violations:** 6
 
@@ -16,13 +16,13 @@
 
 #### Affected Elements:
 
-- `.product-listing.product-grid.product-slider:nth-child(2) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(2) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
-- `.product-listing.product-grid.product-slider:nth-child(2) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(4) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
+- `.product-listing.product-grid.product-slider:nth-child(2) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(3) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
+- `.product-listing.product-grid.product-slider:nth-child(2) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(5) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
 - `.owl-item:nth-child(1) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
-- `.product-listing.product-grid.product-slider:nth-child(4) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(2) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
-- `.owl-item:nth-child(3) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
-- `.product-listing.product-grid.product-slider:nth-child(4) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(4) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
-- `.owl-item:nth-child(5) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
+- `.owl-item:nth-child(2) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
+- `.product-listing.product-grid.product-slider:nth-child(4) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(3) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
+- `.owl-item:nth-child(4) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
+- `.product-listing.product-grid.product-slider:nth-child(4) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(5) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
 
 ### Images must have alternative text
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for If Skadeforsikring NUF
 
-**Timestamp:** 2026-02-17T00:41:53.974Z
+**Timestamp:** 2026-02-18T00:39:23.644Z
 **URL:** [https://www.if.no/privat](https://www.if.no/privat)
 **Total Violations:** 4
 
@@ -17,7 +17,7 @@
 #### Affected Elements:
 
 - `img[alt="Reise i vinter?"]`
-- `#\39 2300c9d5c9e4e7fb54a0f4ecec00790 > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
+- `#cd48ee91386e498a98c5751dab7fe7de > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
 - `#viking > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
 - `img[alt="Hvorfor velge oss?"]`
 
@@ -31,7 +31,7 @@
 
 #### Affected Elements:
 
-- `#\37 974b9e2f8474a7ebe7cc1c11ac72dbd > .weight-medium`
+- `#\39 68f2a4829d04b4da5fc9a4b1160304d > .weight-medium`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -43,7 +43,7 @@
 
 #### Affected Elements:
 
-- `#\37 974b9e2f8474a7ebe7cc1c11ac72dbd`
+- `#\39 68f2a4829d04b4da5fc9a4b1160304d`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
