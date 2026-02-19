@@ -1,6 +1,6 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2026-02-18T00:45:17.127Z
+**Timestamp:** 2026-02-19T00:45:41.505Z
 **URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#)
 **Total Violations:** 9
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f1cae29632d561964"], ._55yn`
+- `iframe[name="f3b7a61998d96ec42"], ._55yn`
 
 ### Certain ARIA roles must contain particular children
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f1cae29632d561964"], div[role="feed"]`
+- `iframe[name="f3b7a61998d96ec42"], div[role="feed"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -40,11 +40,11 @@
 
 #### Affected Elements:
 
-- `iframe[name="f1cae29632d561964"], ._4v3m:nth-child(2) > ._eg_[role="button"] > ._eh3`
-- `iframe[name="f1cae29632d561964"], ._4v3m._51mw > ._eg_[role="button"] > ._eh3`
-- `iframe[name="f1cae29632d561964"], abbr[data-utime="1771247133"] > .timestampContent`
-- `iframe[name="f1cae29632d561964"], #u_1_i_Bf > ._2165._2pi4[title="Liker"]`
-- `iframe[name="f1cae29632d561964"], #u_1_j_eK > ._50sk._2pi4[title="Del"]`
+- `iframe[name="f3b7a61998d96ec42"], ._4v3m:nth-child(2) > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f3b7a61998d96ec42"], ._4v3m._51mw > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f3b7a61998d96ec42"], abbr[data-utime="1771247133"] > .timestampContent`
+- `iframe[name="f3b7a61998d96ec42"], #u_1_i_QW > ._2165._2pi4[title="Liker"]`
+- `iframe[name="f3b7a61998d96ec42"], #u_1_j_qt > ._50sk._2pi4[title="Del"]`
 
 ### Form elements should have a visible label
 
@@ -94,13 +94,13 @@
 
 #### Affected Elements:
 
-- `iframe[name="f1cae29632d561964"], #u_0_1_9g`
-- `iframe[name="f1cae29632d561964"], .lfloat._3-8_`
-- `iframe[name="f1cae29632d561964"], #u_1_8_Jp > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f1cae29632d561964"], #u_1_6_iJ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f1cae29632d561964"], #u_1_k_Va > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f1cae29632d561964"], #u_1_5_jl > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f1cae29632d561964"], #u_1_1v_af > ._302 > span > a`
+- `iframe[name="f3b7a61998d96ec42"], #u_0_1_ae`
+- `iframe[name="f3b7a61998d96ec42"], .lfloat._3-8_`
+- `iframe[name="f3b7a61998d96ec42"], #u_1_7_Ii > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f3b7a61998d96ec42"], #u_1_6_NO > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f3b7a61998d96ec42"], #u_1_l_\+c > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f3b7a61998d96ec42"], #u_1_5_wy > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f3b7a61998d96ec42"], #u_1_1q_tC > ._302 > span > a`
 
 ### Interactive controls must not be nested
 

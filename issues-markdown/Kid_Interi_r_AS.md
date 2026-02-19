@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-02-18T00:41:59.630Z
+**Timestamp:** 2026-02-19T00:43:26.626Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -44,9 +44,9 @@
 
 #### Affected Elements:
 
-- `div:nth-child(11) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .gl.fc.fb > .fe.ff.el`
+- `div:nth-child(5) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .gk.fc.fb > .fe.ff.el`
 - `.hc > .fe.ff.el`
-- `div:nth-child(21) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
+- `div:nth-child(20) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -59,7 +59,7 @@
 #### Affected Elements:
 
 - `img[alt="Se alle ➝"]`
-- `.en.fw[alt="Helårsdyner fra 799,-"]`
+- `img[alt="Helårsdyner fra 799,-"]`
 - `img[alt="Alle sengesett 50%"]`
 - `img[alt="Alle dundyner 50%"]`
 - `img[alt="Alle laken og putevar 50%"]`
@@ -85,10 +85,10 @@
 
 #### Affected Elements:
 
-- `div:nth-child(11) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(11) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c9`
-- `div:nth-child(21) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(21) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c9`
+- `div:nth-child(5) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(5) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c9`
+- `div:nth-child(20) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(20) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c9`
 
 ### All page content should be contained by landmarks
 

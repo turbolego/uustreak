@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-02-18T00:38:28.837Z
+**Timestamp:** 2026-02-19T00:44:32.481Z
 **URL:** [https://www.blv.no/#](https://www.blv.no/#)
 **Total Violations:** 5
 
@@ -17,7 +17,7 @@
 #### Affected Elements:
 
 - `brick-teaser-v22[data-id="hfbgrx67"] > .none.teaser_container[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
-- `.custom-two.background-custom[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `.custom-two > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 - `a[href$="oksnesavisa.no/"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 - `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 
@@ -44,7 +44,7 @@
 #### Affected Elements:
 
 - `brick-teaser-v22[data-id="hfbgrx67"] > .none.teaser_container[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
-- `.custom-two.background-custom[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
+- `.custom-two > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
 - `a[href$="oksnesavisa.no/"]`
 - `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"]`
 

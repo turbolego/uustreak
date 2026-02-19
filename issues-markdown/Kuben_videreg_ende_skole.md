@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kuben videregående skole
 
-**Timestamp:** 2026-02-18T00:45:30.720Z
+**Timestamp:** 2026-02-19T00:45:54.715Z
 **URL:** [https://kuben.vgs.no/#](https://kuben.vgs.no/#)
-**Total Violations:** 7
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -16,44 +16,8 @@
 
 #### Affected Elements:
 
-- `.col-lg-4.col-md-6.col-12:nth-child(5) > .factbox.bg-color__white.block__container > .block__content > p:nth-child(1) > iframe`
-- `.col-lg-4.col-md-6.col-12:nth-child(6) > .factbox.bg-color__white.block__container > .block__content > p:nth-child(1) > iframe`
-
-### Banner landmark should not be contained in another landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the banner landmark is at top level
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-banner-is-top-level?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.aBannerLink`
-
-### Document should not have more than one banner landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the document has at most one banner landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.headMain`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.headMain`
+- `.col-lg-4.col-md-6.col-12:nth-child(5) > .factbox.factbox--white > .factbox__content > p:nth-child(1) > iframe`
+- `.col-lg-4.col-md-6.col-12:nth-child(6) > .factbox.factbox--white > .factbox__content > p:nth-child(1) > iframe`
 
 ### All page content should be contained by landmarks
 
@@ -65,21 +29,9 @@
 
 #### Affected Elements:
 
-- `.mb-4`
+- `#silktide-banner > .mb-4`
 - `#silktide-banner > p:nth-child(2)`
 - `#silktide-banner > p:nth-child(3)`
-
-### Scrollable region must have keyboard access
-
-- **Impact:** serious
-- **Description:** Ensure elements that have scrollable content are accessible by keyboard
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright
-- **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.dropdown-menu > .login-wrapper.flex-column.d-flex`
 
 ### Elements should not have tabindex greater than zero
 
