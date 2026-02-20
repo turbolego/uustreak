@@ -1,8 +1,8 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2026-02-19T00:45:29.089Z
+**Timestamp:** 2026-02-20T00:43:31.852Z
 **URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -80,21 +80,6 @@
 - `.product-card__product-price.prrc[data-product_id="7052870178412"]`
 - `.product-card[data-product_id="5902662063650"][data-price-history="879"]`
 - `.product-card__product-price[data-product_id="5902662063650"][data-price-history="879"]`
-
-### Certain ARIA roles must be contained by particular parents
-
-- **Impact:** critical
-- **Description:** Ensure elements with an ARIA role that require parent roles are contained by them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-required-parent?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 4
-
-#### Affected Elements:
-
-- `.action-link[href$="varehus"][role="menuitem"]`
-- `.action-link[href$="kampanjer"][role="menuitem"]`
-- `.action-link[href$="tjenester"][role="menuitem"]`
-- `.action-link[href$="proff"][role="menuitem"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 

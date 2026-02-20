@@ -1,6 +1,6 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2026-02-19T00:43:30.354Z
+**Timestamp:** 2026-02-20T00:41:50.866Z
 **URL:** [https://www.bestwestern.no/#](https://www.bestwestern.no/#)
 **Total Violations:** 6
 
@@ -58,12 +58,12 @@
 
 #### Affected Elements:
 
-- `.aspect-square.h-full:nth-child(1) > .group.grow[title=""] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="348"][width="348"][loading="lazy"]`
-- `a[href$="globale-hoteller"] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="348"][width="348"][loading="lazy"]`
+- `.aspect-square.h-full:nth-child(1) > .group.grow[title=""] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="0"][width="0"][loading="lazy"]`
+- `a[href$="globale-hoteller"] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="0"][width="0"][loading="lazy"]`
 - `img[alt="Hundevennlige hoteller"]`
 - `img[alt="Hotell utover det vanlige"]`
 - `img[alt="Hotellrestauranter"]`
-- `.aspect-square.h-full:nth-child(7) > .group.grow[title=""] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="348"][width="348"][loading="lazy"]`
+- `.aspect-square.h-full:nth-child(7) > .group.grow[title=""] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="0"][width="0"][loading="lazy"]`
 - `img[alt="Spahoteller"]`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements

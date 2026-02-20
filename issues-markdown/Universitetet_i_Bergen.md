@@ -1,31 +1,23 @@
 # WCAG Violations Report for Universitetet i Bergen
 
-**Timestamp:** 2026-02-19T00:43:16.534Z
-**URL:** [https://www.uib.no/#](https://www.uib.no/#)
-**Total Violations:** 2
+**Timestamp:** 2026-02-20T00:40:03.277Z
+**URL:** [https://www4.uib.no/](https://www4.uib.no/)
+**Total Violations:** 1
 
 ## Violation Details
 
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+### Images must have alternative text
 
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.global-menu`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 5
 
 #### Affected Elements:
 
-- `h1`
+- `.palette-green > .layout__region.layout__region--content > .layout-block--featured-articles.layout-block > .layout-block__list-cards > .layout-block__list-cards > li:nth-child(1) > .card--article.card.has-link > .card__content > .card__image > img`
+- `li:nth-child(1) > .card--event.card.has-link > .card__content > .card__image > img`
+- `li:nth-child(2) > .card--event.card.has-link > .card__content > .card__image > img`
+- `li:nth-child(3) > .card--event.card.has-link > .card__content > .card__image > img`
+- `.palette-blue > .layout__region.layout__region--content > .layout-block--featured-articles.layout-block > .layout-block__list-cards > .layout-block__list-cards > li:nth-child(2) > .card--article.card.has-link > .card__content > .card__image > img`

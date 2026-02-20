@@ -1,6 +1,6 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2026-02-19T00:45:54.413Z
+**Timestamp:** 2026-02-20T00:43:54.276Z
 **URL:** [https://www.coop.no/#](https://www.coop.no/#)
 **Total Violations:** 5
 
@@ -44,7 +44,7 @@
 #### Affected Elements:
 
 - `.hx`
-- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .fy.am.cj > .fz.g1.g2`
+- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .fx.am.cj > .fy.g0.g1`
 
 ### Frames must have an accessible name
 

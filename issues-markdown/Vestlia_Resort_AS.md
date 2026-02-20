@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2026-02-19T00:45:47.336Z
+**Timestamp:** 2026-02-20T00:42:37.581Z
 **URL:** [https://vestlia.no/#](https://vestlia.no/#)
 **Total Violations:** 10
 
@@ -38,9 +38,9 @@
 - `.button-10 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.fusion-title-13 > h2`
 - `.button-11 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_6c8385f8-14b3-41dd-a458-a2e622b592ae`
+- `#f_2ddc672a-f944-4067-b75b-81be3f3e12c5`
 - `.button-13 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_d6587618-2815-4f50-8285-3052c819ab3b`
+- `#f_ee2b29c5-3322-42bd-8db3-2ba0bb09d13b`
 
 ### Heading levels should only increase by one
 
