@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bergen Kino AS
 
-**Timestamp:** 2026-02-22T00:49:35.870Z
-**URL:** [https://www.bergenkino.no/#](https://www.bergenkino.no/#)
+**Timestamp:** 2026-02-22T00:49:31.392Z
+**URL:** [https://www.bergenkino.no/](https://www.bergenkino.no/)
 **Total Violations:** 8
 
 ## Violation Details
@@ -210,7 +210,7 @@
 #### Affected Elements:
 
 - `.header-transparent`
-- `#swiper-wrapper-955fdbb61aeb8fe1`
+- `#swiper-wrapper-fb3643c4aa45715d`
 - `.obj914ac90ea30148789fa9ba4106bef38d > section > .flex-row.mb-4.font-weight-semi-bold`
 - `a[href$="vinterferie-pa-kino"] > .card_item__title.font-weight-bold.mt-3`
 - `a[href$="vinterferie-pa-kino"] > .card_item__subtitle.mt-1`
