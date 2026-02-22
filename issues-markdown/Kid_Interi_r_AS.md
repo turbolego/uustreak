@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-02-21T00:41:04.576Z
+**Timestamp:** 2026-02-22T00:42:24.712Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -44,9 +44,9 @@
 
 #### Affected Elements:
 
-- `div:nth-child(5) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .gk.fc.fb > .fe.ff.el`
+- `div:nth-child(7) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .gk.fc.fb > .fe.ff.el`
 - `.hc > .fe.ff.el`
-- `div:nth-child(20) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .g1.fc.fb > .fe.ff.el`
+- `div:nth-child(22) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1) > .g4.fc.fb > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -85,10 +85,10 @@
 
 #### Affected Elements:
 
-- `div:nth-child(5) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(5) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c9`
-- `div:nth-child(20) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(20) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c9`
+- `div:nth-child(7) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(7) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c9`
+- `div:nth-child(22) > .fa.f9.bv > .bl.bz.c4 > .a7.a5[data-scope-link="true"]:nth-child(1)`
+- `div:nth-child(22) > .fa.f9.bv > .bl.bz.c4 > .ca.s.c9`
 
 ### All page content should be contained by landmarks
 

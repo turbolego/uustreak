@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2026-02-21T00:30:13.732Z
+**Timestamp:** 2026-02-22T00:31:09.855Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
 **Total Violations:** 6
 
@@ -64,9 +64,9 @@
 
 #### Affected Elements:
 
-- `button:nth-child(1) > .xl\:flex-col.text-\(--header-text\).px-4`
+- `button > .xl\:flex-col.text-\(--header-text\).px-4`
 - `div[data-component="AccountPopoverMenu"] > .xl\:flex-col.text-\(--header-text\).px-4`
-- `li[data-testid="cart"]`
+- `a[data-testid="cart"] > .xl\:flex-col.text-\(--header-text\).px-4`
 
 ### All page content should be contained by landmarks
 
