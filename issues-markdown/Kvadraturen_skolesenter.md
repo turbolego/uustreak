@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kvadraturen skolesenter
 
-**Timestamp:** 2026-02-22T00:45:06.300Z
+**Timestamp:** 2026-02-23T00:59:18.542Z
 **URL:** [https://kvadraturen.vgs.no/](https://kvadraturen.vgs.no/)
-**Total Violations:** 4
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -17,6 +17,30 @@
 #### Affected Elements:
 
 - `.bc-content-modal`
+
+### Elements must only use permitted ARIA attributes
+
+- **Impact:** serious
+- **Description:** Ensure ARIA attributes are not prohibited for an element's role
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[title="Vis youtube video"], #movie_player`
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[title="Vis youtube video"], .ytmVideoInfoChannelAvatar`
 
 ### Frames must have an accessible name
 
@@ -48,7 +72,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 37
+- **Count:** 39
 
 #### Affected Elements:
 
@@ -80,6 +104,8 @@
 - `p:nth-child(12)`
 - `p:nth-child(13)`
 - `iframe[title="Vis youtube video"], #player`
+- `iframe[title="Vis youtube video"], .ytmVideoInfoVideoTitleContainer`
+- `iframe[title="Vis youtube video"], .ytmVideoInfoOverlay`
 - `.il-heading--h2:nth-child(17)`
 - `.il-heading--h2:nth-child(18)`
 - `p:nth-child(19)`

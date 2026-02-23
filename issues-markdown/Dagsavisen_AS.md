@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-02-22T00:55:33.411Z
+**Timestamp:** 2026-02-23T00:43:15.353Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 7
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.singleline.secondary.color_mobile_secondary > a:nth-child(9)`
+- `.singleline.secondary.color_mobile_secondary > a[target="_blank"]`
 
 ### Headings should not be empty
 
@@ -56,7 +56,7 @@
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32) > h5`
 - `.bg-primary.color_mobile_bg-primary.has-row-header > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(46) > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(48) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(49) > h5`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -95,6 +95,30 @@
 #### Affected Elements:
 
 - `h1`
+- `#notice-10215677 > .content > h2`
+- `time[datetime="2026-02-22T19:18:13.000Z"]`
+- `#notice-10215662 > .content > h2`
+- `time[datetime="2026-02-22T18:37:34.000Z"]`
+- `#notice-10215654 > .content > h2`
+- `#notice-10215654 > .content > .meta`
+- `div[title="EU krever USAs etterlevelse"] > h2`
+- `div[title="EU krever USAs etterlevelse"] > .meta`
+- `div[title="Togtrøbbel i Asker og Hamar"] > h2`
+- `div[title="Togtrøbbel i Asker og Hamar"] > .meta`
+- `#notice-10215607 > .content > h2`
+- `#notice-10215607 > .content > .meta`
+- `div[title="Hamas velger ny leder"] > h2`
+- `div[title="Hamas velger ny leder"] > .meta`
+- `#notice-10215560 > .content > h2`
+- `#notice-10215560 > .content > .meta`
+- `#notice-10215331 > .content > h2`
+- `#notice-10215331 > .content > .meta`
+- `#notice-10215330 > .content > h2`
+- `time[datetime="2026-02-22T11:22:57.000Z"]`
+- `#notice-10215329 > .content > h2`
+- `#notice-10215329 > .content > .meta`
+- `div[title="Studentprotest i Iran"] > h2`
+- `div[title="Studentprotest i Iran"] > .meta`
 - `div[title="USA utsetter måneferd"] > h2`
 - `div[title="USA utsetter måneferd"] > .meta`
 - `#notice-10215153 > .content > h2`
@@ -111,30 +135,6 @@
 - `time[datetime="2026-02-21T07:43:44.000Z"]`
 - `div[title="Rekordlav støtte til monarkiet"] > h2`
 - `time[datetime="2026-02-21T07:42:33.000Z"]`
-- `#notice-10214757 > .content > h2`
-- `time[datetime="2026-02-21T07:22:17.000Z"]`
-- `div[title="Satser på «lavprisluftforsvar»"] > h2`
-- `time[datetime="2026-02-21T07:21:17.000Z"]`
-- `div[title="Truer med veto på milliardlån"] > h2`
-- `time[datetime="2026-02-21T07:19:02.000Z"]`
-- `#notice-10214754 > .content > h2`
-- `time[datetime="2026-02-21T07:13:10.000Z"]`
-- `div[title="Trump planlegger Kina-besøk"] > h2`
-- `div[title="Trump planlegger Kina-besøk"] > .meta`
-- `#notice-10214709 > .content > h2`
-- `#notice-10214709 > .content > .meta`
-- `#notice-10214706 > .content > h2`
-- `#notice-10214706 > .content > .meta`
-- `#notice-10214631 > .content > h2`
-- `#notice-10214631 > .content > .meta`
-- `#notice-10214587 > .content > h2`
-- `time[datetime="2026-02-20T15:58:40.000Z"]`
-- `#notice-10214492 > .content > h2`
-- `#notice-10214492 > .content > .meta`
-- `#notice-10214243 > .content > h2`
-- `time[datetime="2026-02-20T14:44:05.000Z"]`
-- `#notice-10213982 > .content > h2`
-- `time[datetime="2026-02-20T12:28:54.000Z"]`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(6)`
@@ -149,33 +149,33 @@
 - `.page-content > .border-bg-quaternary.mobile_border-bg-quaternary.hasBorder`
 - `#article_list_9904930 > .inner.fullwidthTarget.content`
 - `.row.large-12.small-12:nth-child(17)`
+- `.row.large-12.small-12:nth-child(18)`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.row.large-12.small-12:nth-child(21)`
 - `.border_width_no_border_width.border_width_mobile_no_border_width.color_mobile_no_bg_color`
 - `.row.large-12.small-12:nth-child(23)`
-- `.row.large-12.small-12:nth-child(26)`
 - `#article_list_10184114 > .content > .font-weight-normal.m-font-weight-normal.t25`
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(28)`
 - `.row.large-12.small-12:nth-child(29)`
 - `.row.large-12.small-12:nth-child(31)`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32)`
-- `.bg-primary.color_mobile_bg-primary.has-row-header`
+- `.row.large-12.small-12:nth-child(33)`
 - `.row.large-12.small-12:nth-child(34)`
-- `.row.large-12.small-12:nth-child(36)`
+- `.bg-primary.color_mobile_bg-primary.has-row-header`
 - `.row.large-12.small-12:nth-child(37)`
 - `.row.large-12.small-12:nth-child(38)`
 - `.row.large-12.small-12:nth-child(39)`
 - `#article_list_10184103 > .content > .font-weight-normal.m-font-weight-normal.t25`
 - `#article_list_10184103 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.bg-tertiary`
+- `.row.large-12.small-12:nth-child(42)`
 - `.row.large-12.small-12:nth-child(43)`
-- `.row.large-12.small-12:nth-child(44)`
+- `.bg-tertiary`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(46)`
 - `.color_mobile_no_bg_color.content > .headline[itemprop="headline"]`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(48)`
-- `.row.large-12.small-12:nth-child(49)`
+- `.row.large-12.small-12:nth-child(48)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(49)`
 - `.row.large-12.small-12:nth-child(51)`
 - `.row.large-12.small-12:nth-child(52)`
 - `.row.large-12.small-12:nth-child(53)`
