@@ -1,0 +1,70 @@
+{
+  "project": "Universitetet i Bergen",
+  "timestamp": "2026-02-25T00:42:53.258Z",
+  "url": "https://www4.uib.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<img src=\"https://www.uib.no/sites/w3.uib.no/files/media/hovedbilde_17.jpg\">",
+          "target": [
+            ".palette-green > .layout__region.layout__region--content > .layout-block--featured-articles.layout-block > .layout-block__list-cards > .layout-block__list-cards > li:nth-child(1) > .card--article.card.has-link > .card__content > .card__image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://www.uib.no/sites/w3.uib.no/files/media/guttekraft_v17.png\">",
+          "target": [
+            "li:nth-child(1) > .card--event.card.has-link > .card__content > .card__image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://www.uib.no/sites/w3.uib.no/files/media/ivymikecloudtrinitybeyond.jpg\">",
+          "target": [
+            "li:nth-child(2) > .card--event.card.has-link > .card__content > .card__image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://www.uib.no/sites/w3.uib.no/files/media/prisutdeling_senneset.png\">",
+          "target": [
+            "li:nth-child(3) > .card--event.card.has-link > .card__content > .card__image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://www.uib.no/sites/w3.uib.no/files/media/skrafoto_2026_illustrasjon_uten_tekst_0.png\">",
+          "target": [
+            ".palette-blue > .layout__region.layout__region--content > .layout-block--featured-articles.layout-block > .layout-block__list-cards > .layout-block__list-cards > li:nth-child(2) > .card--article.card.has-link > .card__content > .card__image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ]
+}
