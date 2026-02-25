@@ -1,8 +1,8 @@
 # WCAG Violations Report for Thon Hotels AS
 
-**Timestamp:** 2026-02-23T00:39:41.138Z
+**Timestamp:** 2026-02-25T00:39:02.338Z
 **URL:** [https://www.thonhotels.no/#](https://www.thonhotels.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -30,6 +30,18 @@
 - `#coi-consent-banner__description-container-cookie_cat_necessary > .coi-consent-banner__found-cookies > .coi-consent-banner__cookie-details:nth-child(24) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container > .cookie-details__detail-content > a[rel="noopener noreferrer"][target="_blank"]`
 - `#coi-consent-banner__description-container-cookie_cat_necessary > .coi-consent-banner__found-cookies > .coi-consent-banner__cookie-details:nth-child(26) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container > .cookie-details__detail-content > a[rel="noopener noreferrer"][target="_blank"]`
 - `#coi-consent-banner__description-container-cookie_cat_necessary > .coi-consent-banner__found-cookies > .coi-consent-banner__cookie-details:nth-child(28) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container > .cookie-details__detail-content > a[rel="noopener noreferrer"][target="_blank"]`
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.campaign-block__heading`
 
 ### Form elements must have labels
 

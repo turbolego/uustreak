@@ -1,8 +1,8 @@
 # WCAG Violations Report for Clas Ohlson AS
 
-**Timestamp:** 2026-02-23T00:41:06.725Z
+**Timestamp:** 2026-02-25T00:41:46.397Z
 **URL:** [https://www.clasohlson.com/no/#](https://www.clasohlson.com/no/#)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -19,6 +19,21 @@
 - `.carousel__component.carousel-component-parent.right-shadow:nth-child(5) > .carousel__component--headline:nth-child(1) > .title-two`
 - `.carousel__component.carousel-component-parent.right-shadow:nth-child(7) > .carousel__component--headline:nth-child(1) > .title-two`
 
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 4
+
+#### Affected Elements:
+
+- `#cx-livechat-host,iframe[name="cx-webChatButton"]`
+- `#cx-livechat-host,iframe[name="cx-webChatNudge"]`
+- `#cx-livechat-host,iframe[name="cx-webChatOmnichannelWidget"]`
+- `#cx-livechat-host,iframe[name="cx-webChatWindow"]`
+
 ### Images must have alternative text
 
 - **Impact:** critical
@@ -29,7 +44,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="cx-webChatButton"], img`
+- `#cx-livechat-host,iframe[name="cx-webChatButton"], img`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -82,4 +97,4 @@
 
 #### Affected Elements:
 
-- `iframe[name="cx-webChatButton"], .go4199366604`
+- `#cx-livechat-host,iframe[name="cx-webChatButton"], .go4199366604`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-02-23T00:43:01.520Z
+**Timestamp:** 2026-02-25T00:43:15.736Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -12,10 +12,18 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 5
+- **Count:** 13
 
 #### Affected Elements:
 
+- `a[href$="sofaer"] > strong`
+- `a[href$="spisestoler"] > strong`
+- `a[href$="gulvtepper"] > strong`
+- `a[href$="spisebord"] > strong`
+- `a[href$="smabord-og-sofabord"] > strong`
+- `a[href$="senger"] > strong`
+- `a[href$="hagemobler"]`
+- `div:nth-child(20) > .fw.fx.fy > div > .gf.f9:nth-child(1) > .button.promotion-button.f2`
 - `.review-block.article.review:nth-child(1) > .tf-date`
 - `.review-block.article.review:nth-child(2) > .tf-date`
 - `.review-block.article.review:nth-child(3) > .tf-date`
@@ -44,8 +52,8 @@
 
 #### Affected Elements:
 
-- `.gx > .fe.ff.el`
-- `div:nth-child(18) > .fa.f9.bv > .bl.dd.bz > .a7.a5[data-scope-link="true"]:nth-child(1) > .fw.fc.fb > .fe.ff.el`
+- `.g0 > .fe.ff.el`
+- `.h6 > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -57,16 +65,16 @@
 
 #### Affected Elements:
 
-- `.ca.s[href$="baderom"] > .gj.da.dd > .en.gf[alt="--->"]`
+- `.ca.s[href$="baderom"] > .go.da.dd > .en.gk[alt="--->"]`
 - `img[alt="Baderomstilbehør"]`
 - `img[alt="Morgenkåper"]`
 - `img[alt="Loungewear & accessories"]`
-- `a[href$="velvare"] > .gj.da.dd > .en.gf.a3`
+- `a[href$="velvare"] > .go.da.dd > .en.gk.a3`
 - `img[alt="Skjønnhetstilbehør"]`
 - `img[alt="Såper og kremer"]`
 - `img[alt="Mengder av håndklær 50%"]`
 - `img[alt="Toalettmapper"]`
-- `.ca.s[href$="belysning"] > .gj.da.dd > .en.gf[alt="--->"]`
+- `.ca.s[href$="belysning"] > .go.da.dd > .en.gk[alt="--->"]`
 - `img[alt="Lamper i valnøtt"]`
 - `img[alt="Lamper i frostet glass"]`
 - `img[alt="Lamper i tekstiler"]`
@@ -79,12 +87,14 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 2
+- **Count:** 4
 
 #### Affected Elements:
 
-- `div:nth-child(18) > .fa.f9.bv > .bl.dd.bz > .a7.a5[data-scope-link="true"]:nth-child(1)`
-- `div:nth-child(18) > .fa.f9.bv > .bl.dd.bz > .ca.s.c9`
+- `.a7[href$="paske"][data-scope-link="true"]:nth-child(1)`
+- `.ca.s[href$="paske"]`
+- `div:nth-child(15) > .fa.f9.bv > .bl.dd.bz > .a7.a5.a6:nth-child(1)`
+- `div:nth-child(15) > .fa.f9.bv > .bl.dd.bz > .ca.s.c8`
 
 ### All page content should be contained by landmarks
 

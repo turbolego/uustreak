@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ringerike kommune
 
-**Timestamp:** 2026-02-23T00:53:15.478Z
+**Timestamp:** 2026-02-25T00:44:50.109Z
 **URL:** [https://www.ringerike.kommune.no/#](https://www.ringerike.kommune.no/#)
 **Total Violations:** 9
 
@@ -113,15 +113,15 @@
 
 #### Affected Elements:
 
-- `#portalframe1, .single-0 > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-0 > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-1 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-2 > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-2 > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-3 > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-3 > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-4 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-5 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(3) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(3) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-2 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-3 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(6) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(6) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(7) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 
 ### All page content should be contained by landmarks
 
@@ -142,30 +142,30 @@
 - `#portalframe1, .data-from-to-expand`
 - `#portalframe1, .CaptionCont`
 - `#portalframe1, .optWrapper`
-- `#portalframe1, .single-0 > h1`
-- `#portalframe1, .single-0 > .item-container > .list-item.line:nth-child(1) > .list-item-date`
-- `#portalframe1, a[data-itemid="37658"] > .ul-main`
-- `#portalframe1, .single-0 > .item-container > .list-item.line:nth-child(2) > .list-item-date`
-- `#portalframe1, a[data-itemid="37891"] > .ul-main`
-- `#portalframe1, .single-1 > h1`
-- `#portalframe1, .single-1 > .item-container > .list-item.line > .list-item-date`
-- `#portalframe1, a[data-itemid="38318"] > .ul-main`
-- `#portalframe1, .single-2 > h1`
-- `#portalframe1, .single-2 > .item-container > .list-item.line:nth-child(1) > .list-item-date`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > h1`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line:nth-child(1) > .list-item-date`
 - `#portalframe1, a[data-itemid="29557"] > .ul-main`
-- `#portalframe1, .single-2 > .item-container > .list-item.line:nth-child(2) > .list-item-date`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line:nth-child(2) > .list-item-date`
 - `#portalframe1, a[data-itemid="38349"] > .ul-main`
-- `#portalframe1, .single-3 > h1`
-- `#portalframe1, .single-3 > .item-container > .list-item.line:nth-child(1) > .list-item-date`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(3) > h1`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(3) > .item-container > .list-item.line:nth-child(1) > .list-item-date`
 - `#portalframe1, .list-item-link[data-itemid="34931"][data-itemdate="26.02.2026"] > .ul-main`
-- `#portalframe1, .single-3 > .item-container > .list-item.line:nth-child(2) > .list-item-date`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(3) > .item-container > .list-item.line:nth-child(2) > .list-item-date`
 - `#portalframe1, a[data-itemid="37893"] > .ul-main`
-- `#portalframe1, .single-4 > h1`
-- `#portalframe1, .single-4 > .item-container > .list-item.line > .list-item-date`
+- `#portalframe1, .single-2 > h1`
+- `#portalframe1, .single-2 > .item-container > .list-item.line > .list-item-date`
 - `#portalframe1, a[data-itemdate="27.02.2026"] > .ul-main`
-- `#portalframe1, .single-5 > h1`
-- `#portalframe1, .single-5 > .item-container > .list-item.line > .list-item-date`
+- `#portalframe1, .single-3 > h1`
+- `#portalframe1, .single-3 > .item-container > .list-item.line > .list-item-date`
 - `#portalframe1, a[data-itemid="34407"] > .ul-main`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(6) > h1`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(6) > .item-container > .list-item.line:nth-child(1) > .list-item-date`
+- `#portalframe1, a[data-itemid="38209"] > .ul-main`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(6) > .item-container > .list-item.line:nth-child(2) > .list-item-date`
+- `#portalframe1, a[data-itemid="37891"] > .ul-main`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(7) > h1`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(7) > .item-container > .list-item.line > .list-item-date`
+- `#portalframe1, a[data-itemid="38346"] > .ul-main`
 - `.mt-20`
 - `.ssp__fluid-panel > div > div > div > .container > .row > .col-md-6.mb-30.col-xs-12:nth-child(2)`
 - `.test-wrapper`

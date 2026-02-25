@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-02-23T00:39:10.937Z
+**Timestamp:** 2026-02-25T00:39:49.516Z
 **URL:** [https://www.blv.no/#](https://www.blv.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -16,10 +16,10 @@
 
 #### Affected Elements:
 
-- `brick-teaser-v22[data-id="hfbgrx67"] > .none.teaser_container[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
-- `.custom-two > .brick-c-eKmOVS.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `.custom-one.background-custom[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 - `a[href$="oksnesavisa.no/"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
-- `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `.brick-c-eKmOVS > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `brick-teaser-v22[data-id="0e367w4m"] > .none.brick-c-fDtuHA[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
@@ -33,6 +33,18 @@
 
 - `#eaframe`
 
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `brick-carousel-v2[data-slides="20"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+
 ### Links must have discernible text
 
 - **Impact:** serious
@@ -43,10 +55,10 @@
 
 #### Affected Elements:
 
-- `brick-teaser-v22[data-id="hfbgrx67"] > .none.teaser_container[data-title-words="2"] > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
-- `.custom-two > .brick-c-eKmOVS.teaser_body[itemprop="url"]`
+- `.custom-one.background-custom[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"]`
 - `a[href$="oksnesavisa.no/"]`
-- `.brick-c-eKmOVS.teaser_body[href$="eavis.blv.no/"]`
+- `.brick-c-eKmOVS`
+- `brick-teaser-v22[data-id="0e367w4m"] > .none.brick-c-fDtuHA[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"]`
 
 ### Elements marked as presentational should be consistently ignored
 
