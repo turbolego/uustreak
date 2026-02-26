@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-02-25T00:39:49.516Z
+**Timestamp:** 2026-02-26T00:37:36.522Z
 **URL:** [https://www.blv.no/#](https://www.blv.no/#)
 **Total Violations:** 6
 
@@ -16,10 +16,10 @@
 
 #### Affected Elements:
 
-- `.custom-one.background-custom[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `.custom-one.brick-c-fDtuHA[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 - `a[href$="oksnesavisa.no/"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `brick-teaser-v22[data-id="0e367w4m"] > .brick-c-fDtuHA.brick-c-fAibUN[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 - `.brick-c-eKmOVS > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
-- `brick-teaser-v22[data-id="0e367w4m"] > .none.brick-c-fDtuHA[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
@@ -55,10 +55,10 @@
 
 #### Affected Elements:
 
-- `.custom-one.background-custom[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"]`
+- `.custom-one.brick-c-fDtuHA[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"]`
 - `a[href$="oksnesavisa.no/"]`
+- `brick-teaser-v22[data-id="0e367w4m"] > .brick-c-fDtuHA.brick-c-fAibUN[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"]`
 - `.brick-c-eKmOVS`
-- `brick-teaser-v22[data-id="0e367w4m"] > .none.brick-c-fDtuHA[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"]`
 
 ### Elements marked as presentational should be consistently ignored
 
