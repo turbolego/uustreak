@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kristiansand Dyrepark AS
 
-**Timestamp:** 2026-02-26T00:42:54.097Z
+**Timestamp:** 2026-02-28T00:41:02.527Z
 **URL:** [https://www.dyreparken.no/#](https://www.dyreparken.no/#)
 **Total Violations:** 6
 
@@ -18,8 +18,8 @@
 
 - `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
 - `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
-- `.c-grid--overflow-scrolling.c-grid--image-size-bleeding.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.c-grid--overflow-scrolling.c-grid--image-size-bleeding.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
 
 ### Buttons must have discernible text
 
@@ -33,8 +33,8 @@
 
 - `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
 - `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
-- `.c-grid--overflow-scrolling.c-grid--image-size-bleeding.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.c-grid--overflow-scrolling.c-grid--image-size-bleeding.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -54,7 +54,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 46
+- **Count:** 41
 
 #### Affected Elements:
 
@@ -66,11 +66,11 @@
 - `.c-grid--columns-3.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-grid--columns-3.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-grid--columns-3.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--image-size-bleeding.c-grid--columns-4.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--image-size-bleeding.c-grid--columns-4.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--image-size-bleeding.c-grid--columns-4.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--image-size-bleeding.c-grid--columns-4.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-billboard--poster > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
+- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--image-size-bleeding.c-grid--columns-small-3.c-grid--columns-3 > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(12) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(12) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(12) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
@@ -78,12 +78,7 @@
 - `.c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(6) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-grid__item:nth-child(7) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-small-3.c-grid--image-size-bleeding.c-grid--columns-3 > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-theme-dyreparken-secondary-light.c-module--split.c-module--billboard:nth-child(15) > .c-module__container > .c-billboard--variant-light.c-billboard--split > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
+- `.u-theme-dyreparken-secondary-light.c-module--billboard.c-module--split:nth-child(13) > .c-module__container > .c-billboard--variant-light > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
 - `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(1) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(2) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(4) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
@@ -92,15 +87,15 @@
 - `.owl-item:nth-child(9) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.owl-item:nth-child(10) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.owl-item:nth-child(11) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--overflow-scrolling.c-grid--image-size-bleeding.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(1) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--overflow-scrolling.c-grid--image-size-bleeding.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(2) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--overflow-scrolling.c-grid--image-size-bleeding.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(3) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--overflow-scrolling.c-grid--image-size-bleeding.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(4) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--overflow-scrolling.c-grid--image-size-bleeding.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(5) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--overflow-scrolling.c-grid--image-size-bleeding.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(6) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--overflow-scrolling.c-grid--image-size-bleeding.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(7) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--overflow-scrolling.c-grid--image-size-bleeding.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(8) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-theme-dyreparken-secondary-light.c-module--split.c-module--billboard:nth-child(18) > .c-module__container > .c-billboard--variant-light.c-billboard--split > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(1) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(2) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(3) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(4) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(5) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(6) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(7) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(8) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.u-theme-dyreparken-secondary-light.c-module--billboard.c-module--split:nth-child(16) > .c-module__container > .c-billboard--variant-light > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
 - `.c-billboard__image[href$="app/"][itemtype="http://schema.org/ImageObject"]`
 - `.c-footer__app__links > a:nth-child(1)`
 - `.c-footer__app__links > a:nth-child(2)`
@@ -117,8 +112,8 @@
 
 - `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
 - `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
-- `.c-grid--overflow-scrolling.c-grid--image-size-bleeding.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.c-grid--overflow-scrolling.c-grid--image-size-bleeding.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
 
 ### All page content should be contained by landmarks
 

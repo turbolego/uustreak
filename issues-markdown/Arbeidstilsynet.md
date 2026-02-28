@@ -1,8 +1,8 @@
 # WCAG Violations Report for Arbeidstilsynet
 
-**Timestamp:** 2026-02-26T00:31:58.659Z
+**Timestamp:** 2026-02-28T00:28:59.307Z
 **URL:** [https://www.arbeidstilsynet.no/#](https://www.arbeidstilsynet.no/#)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
 
@@ -17,15 +17,3 @@
 #### Affected Elements:
 
 - `.hero-item:nth-child(1) > .hero-desktop.card--hover-first.card-link > .card-main > .card-title > h3`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.skiplink`

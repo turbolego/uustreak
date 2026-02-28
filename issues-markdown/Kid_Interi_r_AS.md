@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-02-26T00:40:57.580Z
+**Timestamp:** 2026-02-28T00:39:08.448Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 5
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.iq.is-selected.gm:nth-child(1) > .c.bz.c4 > .ca.s[data-test-id="product-link"] > h4`
+- `.iq.is-selected.gx:nth-child(1) > .c.bz.c4 > .ca.s[data-test-id="product-link"] > h4`
 
 ### Images must have alternative text
 
@@ -28,8 +28,8 @@
 
 #### Affected Elements:
 
-- `.g0 > .fe.ff.el`
-- `.h6 > .fe.ff.el`
+- `.gg > .fe.ff.el`
+- `.hh > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -41,16 +41,16 @@
 
 #### Affected Elements:
 
-- `.ca.s[href$="baderom"] > .go.da.bz > .en.gk[alt="--->"]`
+- `.ca.s[href$="baderom"] > .gz.da.bz > .en.gv[alt="--->"]`
 - `img[alt="Baderomstilbehør"]`
 - `img[alt="Morgenkåper"]`
 - `img[alt="Loungewear & accessories"]`
-- `a[href$="velvare"] > .go.da.bz > .en.gk.a3`
+- `a[href$="velvare"] > .gz.da.bz > .en.gv.a3`
 - `img[alt="Skjønnhetstilbehør"]`
 - `img[alt="Såper og kremer"]`
 - `img[alt="Mengder av håndklær 50%"]`
 - `img[alt="Toalettmapper"]`
-- `.ca.s[href$="belysning"] > .go.da.bz > .en.gk[alt="--->"]`
+- `.ca.s[href$="belysning"] > .gz.da.bz > .en.gv[alt="--->"]`
 - `img[alt="Lamper i valnøtt"]`
 - `img[alt="Lamper i frostet glass"]`
 - `img[alt="Lamper i tekstiler"]`

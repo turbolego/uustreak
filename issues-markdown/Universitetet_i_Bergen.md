@@ -1,6 +1,6 @@
 # WCAG Violations Report for Universitetet i Bergen
 
-**Timestamp:** 2026-02-26T00:59:55.150Z
+**Timestamp:** 2026-02-28T00:38:53.291Z
 **URL:** [https://www4.uib.no/](https://www4.uib.no/)
 **Total Violations:** 1
 
@@ -17,7 +17,7 @@
 #### Affected Elements:
 
 - `.palette-green > .layout__region.layout__region--content > .layout-block--featured-articles.layout-block > .layout-block__list-cards > .layout-block__list-cards > li:nth-child(1) > .card--article.card.has-link > .card__content > .card__image > img`
-- `li:nth-child(1) > .card--event.card.has-link > .card__content > .card__image > img`
 - `li:nth-child(2) > .card--event.card.has-link > .card__content > .card__image > img`
 - `li:nth-child(3) > .card--event.card.has-link > .card__content > .card__image > img`
+- `.palette-blue > .layout__region.layout__region--content > .layout-block--featured-articles.layout-block > .layout-block__list-cards > .layout-block__list-cards > li:nth-child(1) > .card--article.card.has-link > .card__content > .card__image > img`
 - `.palette-blue > .layout__region.layout__region--content > .layout-block--featured-articles.layout-block > .layout-block__list-cards > .layout-block__list-cards > li:nth-child(2) > .card--article.card.has-link > .card__content > .card__image > img`

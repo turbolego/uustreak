@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2026-02-26T00:34:16.477Z
+**Timestamp:** 2026-02-28T00:33:57.803Z
 **URL:** [https://oslonye.no/#](https://oslonye.no/#)
 **Total Violations:** 5
 
@@ -12,14 +12,13 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 4
+- **Count:** 3
 
 #### Affected Elements:
 
 - `button[data-cky-tag="accept-button"]`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .teaterkjellern.cat.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(7) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .teaterkjellern.cat.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .teaterkjellern.cat.hide1`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(9) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .teaterkjellern.cat.hide1`
 
 ### Heading levels should only increase by one
 
@@ -62,7 +61,7 @@
 - `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-left.bg-none.block > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.bg-none.block > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-left.hovedscenen.bg-none > .les-mer-link`
-- `.alignment-top.hovedscenen.bg-none > .les-mer-link`
+- `.hovedscenen.alignment-top.bg-none > .les-mer-link`
 - `.alignment-right > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .alignment-top.bg-none.block > .les-mer-link`
 - `.large-4.cpt.medium-6:nth-child(3) > .alignment-top.bg-none.block > .les-mer-link`
@@ -74,10 +73,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 37
+- **Count:** 35
 
 #### Affected Elements:
 
+- `#background-video`
 - `.background-link`
 - `.hero-banner > .grid-container`
 - `.theater-list > li:nth-child(1)`
@@ -112,6 +112,3 @@
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(7)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(9)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12)`

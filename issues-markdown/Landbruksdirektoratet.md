@@ -1,6 +1,6 @@
 # WCAG Violations Report for Landbruksdirektoratet
 
-**Timestamp:** 2026-02-26T00:44:15.093Z
+**Timestamp:** 2026-02-28T00:42:23.644Z
 **URL:** [https://www.landbruksdirektoratet.no/nb/#](https://www.landbruksdirektoratet.no/nb/#)
 **Total Violations:** 3
 
@@ -47,5 +47,5 @@
 
 #### Affected Elements:
 
-- `.to-top-link`
+- `scroll-into-view`
 - `#__googlesearch-trigger`
