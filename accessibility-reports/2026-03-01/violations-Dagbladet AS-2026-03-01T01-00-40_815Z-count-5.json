@@ -1,0 +1,180 @@
+{
+  "project": "Dagbladet AS",
+  "timestamp": "2026-03-01T01:00:40.815Z",
+  "url": "https://www.dagbladet.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            ".ahover > iframe[marginwidth=\"0\"][marginheight=\"0\"][scrolling=\"no\"]",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<iframe sandbox=\"allow-scripts allow-same-origin\" src=\"https://static.btloader.com/safeFrame.html?upapi=true\" scrolling=\"no\" marginwidth=\"0\" marginheight=\"0\" height=\"600\" width=\"160\" style=\"border: 0px;\"></iframe>",
+          "target": [
+            "iframe[height=\"600\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe sandbox=\"allow-scripts allow-same-origin\" src=\"https://static.btloader.com/safeFrame.html?upapi=true\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"width: 300px; height: 250px; border: 0px;\"></iframe>",
+          "target": [
+            ".ahover > iframe[marginwidth=\"0\"][marginheight=\"0\"][scrolling=\"no\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe frameborder=\"0\" src=\"https://s0.2mdn.net/...\" id=\"200_287_html_inpage_...\" scrolling=\"no\" allowfullscreen=\"true\" data-creative-load-l...=\"\" style=\"border: 0px; vertica...\">",
+          "target": [
+            ".ahover > iframe[marginwidth=\"0\"][marginheight=\"0\"][scrolling=\"no\"]",
+            "#\\32 00_287_html_inpage_0\\.if"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe src=\"https://eus.rubiconproject.com/usync.html?&amp;geo=na&amp;co=us\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"NO\" width=\"0\" height=\"0\" style=\"height:0px;width:0px\"></iframe>",
+          "target": [
+            ".ahover > iframe[marginwidth=\"0\"][marginheight=\"0\"][scrolling=\"no\"]",
+            "div:nth-child(3) > iframe[scrolling=\"NO\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<img src=\"https://pix.pub/t.png?l=DiSC-MAX-CM&amp;u=33320798_422918500_233728584_8725507&amp;u1=Love &amp; Death - DCO&amp;t=1772326822601\" height=\"1\" width=\"1\">",
+          "target": [
+            ".ahover > iframe[marginwidth=\"0\"][marginheight=\"0\"][scrolling=\"no\"]",
+            "#\\32 00_287_html_inpage_0\\.if",
+            "img[height=\"1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img id=\"keyartContent\" class=\"abs androidTabletChr...\" adlib-image=\"frame2Image\" src=\"https://s0.2mdn.net/...\" style=\"width: 300px; height...\">",
+          "target": [
+            ".ahover > iframe[marginwidth=\"0\"][marginheight=\"0\"][scrolling=\"no\"]",
+            "#\\32 00_287_html_inpage_0\\.if",
+            "#keyartContent"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"ec__sc-168ntql-0 jkuUMO\">",
+          "target": [
+            ".jkuUMO"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<p>\n        Dagbladet\n        er en del av Aller Media. Aller Media er ansvarlig for dine data på denne nettsiden.\n        &nbsp;<a href=\"https://personvern.aller.no/personvern\">Les mer</a>\n      </p>",
+          "target": [
+            "#am-branding > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
