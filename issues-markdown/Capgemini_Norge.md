@@ -1,7 +1,7 @@
 # WCAG Violations Report for Capgemini Norge
 
-**Timestamp:** 2026-02-28T00:35:40.479Z
-**URL:** [https://www.capgemini.com/no-no/#](https://www.capgemini.com/no-no/#)
+**Timestamp:** 2026-03-01T00:31:47.098Z
+**URL:** [https://www.capgemini.com/no-no/](https://www.capgemini.com/no-no/)
 **Total Violations:** 7
 
 ## Violation Details

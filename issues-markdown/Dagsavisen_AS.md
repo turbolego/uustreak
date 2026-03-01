@@ -1,7 +1,7 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-02-28T00:38:19.951Z
-**URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
+**Timestamp:** 2026-03-01T00:34:55.000Z
+**URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 7
 
 ## Violation Details
@@ -12,10 +12,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
 - `a[href$="mailto:anne@dagsavisen.no"]`
 
 ### Headings should not be empty
@@ -28,7 +29,7 @@
 
 #### Affected Elements:
 
-- `.text_singleline.large-8.large-abs-8 > .singleline`
+- `.large-8.large-abs-8.text_singleline > .singleline`
 
 ### Frames must have an accessible name
 
@@ -36,11 +37,15 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 5
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/38586112\/toppbanner_0, iframe`
+- `#offer_a8688bd5c0038a134f94-0`
 - `iframe[data-testid="embed-iframe"]`
+- `#offer_a8688bd5c0038a134f94-1`
+- `#offer_69e1b5b72ff1f3f5badd-0`
 
 ### Heading levels should only increase by one
 
@@ -48,14 +53,15 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 4
+- **Count:** 5
 
 #### Affected Elements:
 
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(8) > h5`
+- `.bg-primary > h5`
+- `.has-row-header.mobile_no_border_color.hasContentPadding > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(18) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32) > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(42) > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(46) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(43) > h5`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -89,75 +95,82 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 86
+- **Count:** 93
 
 #### Affected Elements:
 
 - `h1`
-- `div[title="«Mesternes mester» er kåret"] > h2`
-- `time[datetime="2026-02-27T20:44:00.000Z"]`
-- `div[title="Advarer mot russisk påvirkning"] > h2`
-- `time[datetime="2026-02-27T20:43:32.000Z"]`
-- `div[title="Brende fjernet fra hjemmesider"] > h2`
-- `time[datetime="2026-02-27T19:41:47.000Z"]`
-- `#notice-10227131 > .content > h2`
-- `time[datetime="2026-02-27T19:12:38.000Z"]`
-- `div[title="Vestland: To tatt av snøskred "] > h2`
-- `time[datetime="2026-02-27T18:42:01.000Z"]`
-- `div[title="Signalfeil på Bergensbanen"] > h2`
-- `time[datetime="2026-02-27T18:36:24.000Z"]`
-- `div[title="Norovirusutbrudd på Haukeland"] > h2`
-- `time[datetime="2026-02-27T17:33:01.000Z"]`
-- `div[title="To døde i trikkeavsporing"] > h2`
-- `time[datetime="2026-02-27T18:38:00.000Z"]`
-- `#notice-10226968 > .content > h2`
-- `time[datetime="2026-02-27T17:33:49.000Z"]`
-- `div[title="Fant håndgranat på Haugenstua"] > h2`
-- `time[datetime="2026-02-27T17:13:43.000Z"]`
-- `#notice-10226041 > .content > h2`
-- `#notice-10226041 > .content > .meta`
-- `div[title="«Panteautomatens far» er død"] > h2`
-- `div[title="«Panteautomatens far» er død"] > .meta`
-- `#notice-10225296 > .content > h2`
-- `#notice-10225296 > .content > .meta`
-- `#notice-10225194 > .content > h2`
-- `#notice-10225194 > .content > .meta`
-- `#notice-10225193 > .content > h2`
-- `#notice-10225193 > .content > .meta`
-- `#notice-10225100 > .content > h2`
-- `time[datetime="2026-02-26T20:04:09.000Z"]`
-- `div[title="Nye angrep mot Pakistan"] > h2`
-- `time[datetime="2026-02-26T18:17:45.000Z"]`
-- `#notice-10224970 > .content > h2`
-- `time[datetime="2026-02-26T16:46:59.000Z"]`
-- `div[title="Nesten 8000 forsvant på flukt"] > h2`
-- `time[datetime="2026-02-26T15:42:55.000Z"]`
-- `#notice-10224919 > .content > h2`
-- `time[datetime="2026-02-26T15:41:21.000Z"]`
-- `.row.large-12.small-12:nth-child(2)`
+- `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
+- `#google_ads_iframe_\/38586112\/toppbanner_0, iframe, .content`
+- `#google_ads_iframe_\/38586112\/toppbanner_0, iframe, streamedby-player,#video`
+- `div[title="Ny angrepsbølge fra Iran"] > h2`
+- `time[datetime="2026-02-28T21:17:01.000Z"]`
+- `div[title="Trump: Khamenei er død"] > h2`
+- `time[datetime="2026-02-28T21:48:11.000Z"]`
+- `#notice-10228124 > .content > h2`
+- `time[datetime="2026-02-28T19:59:42.000Z"]`
+- `#notice-10228121 > .content > h2`
+- `time[datetime="2026-02-28T19:27:56.000Z"]`
+- `#notice-10228120 > .content > h2`
+- `time[datetime="2026-02-28T19:03:48.000Z"]`
+- `div[title="Støre: – Sterkt urovekkende"] > h2`
+- `time[datetime="2026-02-28T18:42:53.000Z"]`
+- `#notice-10228104 > .content > h2`
+- `time[datetime="2026-02-28T18:35:48.000Z"]`
+- `div[title="Iran: 201 drept i USA-angrep"] > h2`
+- `time[datetime="2026-02-28T18:27:14.000Z"]`
+- `#notice-10228102 > .content > h2`
+- `time[datetime="2026-02-28T18:32:56.000Z"]`
+- `#notice-10228095 > .content > h2`
+- `time[datetime="2026-02-28T18:24:25.000Z"]`
+- `#notice-10228080 > .content > h2`
+- `time[datetime="2026-02-28T17:22:52.000Z"]`
+- `#notice-10228071 > .content > h2`
+- `time[datetime="2026-02-28T16:45:56.000Z"]`
+- `div[title="Bilferge står på grunn "] > h2`
+- `time[datetime="2026-02-28T16:45:04.000Z"]`
+- `#notice-10228026 > .content > h2`
+- `time[datetime="2026-02-28T16:16:12.000Z"]`
+- `div[title="Hastemøte i FNs sikkerhetsråd"] > h2`
+- `time[datetime="2026-02-28T14:55:57.000Z"]`
+- `#notice-10227882 > .content > h2`
+- `time[datetime="2026-02-28T14:14:44.000Z"]`
+- `div[title="PST: Trusselbildet er uendret"] > h2`
+- `time[datetime="2026-02-28T14:12:46.000Z"]`
+- `#notice-10227878 > .content > h2`
+- `time[datetime="2026-02-28T14:11:41.000Z"]`
+- `#notice-10227584 > .content > h2`
+- `#notice-10227584 > .content > .meta`
+- `#notice-10227547 > .content > h2`
+- `#notice-10227547 > .content > .meta`
+- `.bg-primary`
 - `.row.large-12.small-12:nth-child(3)`
+- `#offer_a8688bd5c0038a134f94-0, img`
+- `#offer_a8688bd5c0038a134f94-0, .pw-text`
 - `.row.large-12.small-12:nth-child(6)`
 - `iframe[data-testid="embed-iframe"], h1`
 - `iframe[data-testid="embed-iframe"], .encore-text-body-medium.encore-internal-color-text-subdued.e-91185-text`
 - `iframe[data-testid="embed-iframe"], a[dir="auto"]`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(8)`
+- `.has-row-header.mobile_no_border_color.hasContentPadding`
 - `.row.large-12.small-12:nth-child(9)`
+- `.row.large-12.small-12:nth-child(11)`
+- `.row.large-12.small-12:nth-child(12)`
 - `#article_list_10180103 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10180103 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(12)`
+- `.border-bg-quaternary.mobile_border-bg-quaternary.border-side-top`
+- `#article_list_9904930 > .inner.fullwidthTarget.content`
 - `#article_list_10187147 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10187147 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.page-content > .border-bg-quaternary.mobile_border-bg-quaternary.hasBorder`
-- `#article_list_9904930 > .inner.fullwidthTarget.content`
-- `.row.large-12.small-12:nth-child(17)`
-- `.row.large-12.small-12:nth-child(18)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(18)`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.row.large-12.small-12:nth-child(21)`
 - `.border_width_no_border_width.border_width_mobile_no_border_width.color_mobile_no_bg_color`
 - `.row.large-12.small-12:nth-child(23)`
+- `#offer_a8688bd5c0038a134f94-1, img`
+- `#offer_a8688bd5c0038a134f94-1, .pw-text`
 - `.row.large-12.small-12:nth-child(26)`
-- `#article_list_10184114 > .content > .font-weight-normal.m-font-weight-normal.font-PTSans`
+- `#article_list_10184114 > .content > .font-weight-normal.m-font-weight-normal.t25`
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(28)`
 - `.row.large-12.small-12:nth-child(29)`
@@ -169,13 +182,13 @@
 - `.row.large-12.small-12:nth-child(37)`
 - `.row.large-12.small-12:nth-child(38)`
 - `.row.large-12.small-12:nth-child(39)`
-- `#article_list_10184103 > .content > .font-weight-normal.m-font-weight-normal.font-PTSans`
+- `#article_list_10184103 > .content > .font-weight-normal.m-font-weight-normal.t25`
 - `#article_list_10184103 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(42)`
 - `.bg-tertiary`
-- `.row.large-12.small-12:nth-child(44)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(46)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(43)`
 - `.color_mobile_no_bg_color.content > .headline[itemprop="headline"]`
-- `.row.large-12.small-12:nth-child(48)`
-- `.row.large-12.small-12:nth-child(49)`
+- `#offer_69e1b5b72ff1f3f5badd-0, img`
+- `#offer_69e1b5b72ff1f3f5badd-0, .pw-subtitle`
+- `#offer_69e1b5b72ff1f3f5badd-0, .pw-offer`
+- `#offer_69e1b5b72ff1f3f5badd-0, #pw-countdown`
 - `.powered-by`

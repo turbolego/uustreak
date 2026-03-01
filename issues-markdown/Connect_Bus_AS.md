@@ -1,10 +1,48 @@
 # WCAG Violations Report for Connect Bus AS
 
-**Timestamp:** 2026-02-28T00:36:42.756Z
-**URL:** [https://www.connectbus.no/#](https://www.connectbus.no/#)
-**Total Violations:** 1
+**Timestamp:** 2026-03-01T00:32:58.345Z
+**URL:** [https://www.connectbus.no/](https://www.connectbus.no/)
+**Total Violations:** 4
 
 ## Violation Details
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#\32 76340558804`
+
+### Document should have one main landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has a main landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- `html`
+- `#\32 76340558804, html`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- `html`
+- `#\32 76340558804, html`
 
 ### All page content should be contained by landmarks
 

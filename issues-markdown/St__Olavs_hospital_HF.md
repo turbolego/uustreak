@@ -1,7 +1,7 @@
 # WCAG Violations Report for St. Olavs hospital HF
 
-**Timestamp:** 2026-02-28T00:42:39.008Z
-**URL:** [https://www.stolav.no/#](https://www.stolav.no/#)
+**Timestamp:** 2026-03-01T00:34:35.969Z
+**URL:** [https://www.stolav.no/](https://www.stolav.no/)
 **Total Violations:** 1
 
 ## Violation Details

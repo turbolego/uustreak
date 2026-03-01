@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-02-28T00:32:04.019Z
+**Timestamp:** 2026-03-01T00:40:15.549Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 5
 
@@ -53,9 +53,9 @@
 - `a[href$="aapningstider"] > .text-base-white.svelte-18q32uc[for=""]`
 - `.md\:pt-0.md\:pl-2.pt-4:nth-child(2) > .gap-y-4.grid-cols-1.grid > .whitespace-nowrap.gap-3[target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
 - `a[href$="hjelp-og-dialog"] > .text-base-white.svelte-18q32uc[for=""]`
-- `.gap-3.w-fit[target="_blank"]:nth-child(2) > .text-base-white.svelte-18q32uc[for=""]`
-- `.gap-3.w-fit[target="_blank"]:nth-child(3) > .text-base-white.svelte-18q32uc[for=""]`
-- `.md\:pt-0.md\:pl-2.pt-4:nth-child(3) > .gap-y-4.grid-cols-1.grid > .gap-3.w-fit[target="_self"]:nth-child(4) > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3.h-fit[target="_blank"]:nth-child(2) > .text-base-white.svelte-18q32uc[for=""]`
+- `.gap-3.h-fit[target="_blank"]:nth-child(3) > .text-base-white.svelte-18q32uc[for=""]`
+- `.md\:pt-0.md\:pl-2.pt-4:nth-child(3) > .gap-y-4.grid-cols-1.grid > .gap-3.h-fit[target="_self"]:nth-child(4) > .text-base-white.svelte-18q32uc[for=""]`
 - `.border-b.border-base-white.cursor-pointer`
 - `.grow-0`
 - `a[href$="personvern"] > .text-base-white.svelte-18q32uc[for=""]`
@@ -101,7 +101,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 43
+- **Count:** 39
 
 #### Affected Elements:
 
@@ -118,21 +118,17 @@
 - `#carousel1`
 - `#carousel2`
 - `#carousel3`
-- `#carousel4`
-- `#carousel5 > .max-w-\[calc\(80vw\)\].md\:max-w-\[calc\(25\.4vw\)\].rounded-lg > .rounded-t-lg[target="_self"] > .relative.h-fit > .h-56.object-cover`
-- `#carousel5 > .max-w-\[calc\(80vw\)\].md\:max-w-\[calc\(25\.4vw\)\].rounded-lg > .rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > .text-superTitle.leading-tight.md\:leading-snug`
-- `#carousel5 > .max-w-\[calc\(80vw\)\].md\:max-w-\[calc\(25\.4vw\)\].rounded-lg > .rounded-t-lg[target="_self"] > .px-3.pb-3.pt-1`
 - `img[alt="Studentprisen 2025 "]`
 - `a[href$="studentprisen"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > .text-superTitle.leading-tight.md\:leading-snug`
 - `a[href$="studentprisen"] > .px-3.pb-3.pt-1`
-- `#carousel7`
+- `#carousel5`
 - `a[href$="nye-gruppetimer"] > .relative.h-fit > .h-56.object-cover`
 - `a[href$="nye-gruppetimer"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > .text-superTitle.leading-tight.md\:leading-snug`
 - `a[href$="nye-gruppetimer"] > .px-3.pb-3.pt-1`
-- `#carousel9`
+- `#carousel7`
 - `a[href$="svom-langt"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > .text-superTitle.leading-tight.md\:leading-snug`
 - `a[href$="svom-langt"] > .px-3.pb-3.pt-1`
-- `#carousel11`
+- `#carousel9`
 - `div:nth-child(1) > .\!font-bold.pb-4`
 - `.gap-3[href$="bolig"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
 - `.gap-3[href$="studentliv"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2026-02-28T00:27:28.793Z
+**Timestamp:** 2026-03-01T00:35:09.234Z
 **URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
 **Total Violations:** 10
 
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-572349"]`
-- `button[aria-controls="modal-580519"]`
 - `button[aria-controls="modal-580373"]`
-- `button[aria-controls="modal-586949"]`
 - `button[aria-controls="modal-586900"]`
+- `button[aria-controls="modal-586949"]`
 - `button[aria-controls="modal-589777"]`
 - `button[aria-controls="modal-582256"]`
 - `button[aria-controls="modal-589001"]`
+- `button[aria-controls="modal-578719"]`
+- `button[aria-controls="modal-595511"]`
 
 ### Buttons must have discernible text
 
@@ -90,7 +90,7 @@
 
 #### Affected Elements:
 
-- `#react_0HNJL1E9KCBRI > .my-10 > .md\:grid-cols-4.mb-16.grid-cols-1 > .group.relative:nth-child(2) > div > .md\:flex-col.space-x-4.md\:space-x-0 > .w-2\/5.md\:mb-3.md\:w-full > .overflow-hidden.rounded-lg > picture > .t-\[10px\].md\:rounded-\[10px\].md\:group-hover\:scale-110`
+- `#react_0HNJL1E9NSCMS > .my-10 > .md\:grid-cols-4.mb-16.grid-cols-1 > .group.relative:nth-child(2) > div > .md\:flex-col.space-x-4.md\:space-x-0 > .w-2\/5.md\:mb-3.md\:w-full > .overflow-hidden.rounded-lg > picture > .t-\[10px\].md\:rounded-\[10px\].md\:group-hover\:scale-110`
 - `.bg-beige-50 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `div:nth-child(2) > .bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `.w-\[180px\].h-\[160px\]:nth-child(1) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`

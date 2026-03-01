@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-02-28T00:30:57.083Z
+**Timestamp:** 2026-03-01T00:39:12.290Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -17,36 +17,36 @@
 #### Affected Elements:
 
 - `.gt.dr.ds > div > div`
-- `.gv.am[href$="mid-season-sale"]`
+- `a[href$="dagskupp"]`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.if.ig`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
 - `a[aria-label="Myting vanntett turstøvel"] > .i8.bc.bd > .im.id.y > .gq.if.ig`
 - `a[aria-label="Myting vanntett turstøvel"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.if.ig`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.if.ig`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
 - `a[aria-label="Stormflod regnjakke"] > .i8.bc.bd > .im.id.y > .gq.if.ig`
 - `a[aria-label="Stormflod regnjakke"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.if.ig`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
 - `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.if.ig`
 - `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
 - `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.if.ig`
 - `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
 - `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.if.ig`
 - `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
+- `li:nth-child(3) > .i3.i4[aria-label="Froland skalljakke"] > .i8.bc.bd > .im.id.y > .gq.if.ig`
+- `li:nth-child(3) > .i3.i4[aria-label="Froland skalljakke"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
 - `a[aria-label="Froland lang skallparkas"] > .i8.bc.bd > .im.id.y > .gq.if.ig`
 - `a[aria-label="Froland lang skallparkas"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `a[aria-label="Froland skalljakke"] > .i8.bc.bd > .im.id.y > .gq.if.ig`
-- `a[aria-label="Froland skalljakke"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `a[aria-label="Nordtoppen vattert vest"] > .i8.bc.bd > .im.id.y > .gq.if.ig`
-- `a[aria-label="Nordtoppen vattert vest"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.if.ig`
-- `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
+- `li:nth-child(5) > .i3.i4[aria-label="Froland skalljakke"] > .i8.bc.bd > .im.id.y > .gq.if.ig`
+- `li:nth-child(5) > .i3.i4[aria-label="Froland skalljakke"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
 - `a[aria-label="Lofoten fôret regnvott"] > .i8.bc.bd > .im.id.y > .gq.if.ig`
+- `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.if.ig`
+- `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
 - `li:nth-child(3) > .i3.i4[aria-label="Lofoten sydvest"] > .i8.bc.bd > .im.id.y > .gq.if.ig`
 - `li:nth-child(4) > .i3.i4[aria-label="Lofoten sydvest"] > .i8.bc.bd > .im.id.y > .gq.if.ig`
 - `li:nth-child(5) > .i3.i4[aria-label="Lofoten sydvest"] > .i8.bc.bd > .im.id.y > .gq.if.ig`
-- `div:nth-child(8) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.if.ig`
-- `div:nth-child(8) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.if.ig`
-- `a[aria-label="Regndag regnbukse unisex"] > .i8.bc.bd > .im.id.y > .gq.if.ig`
+- `a[aria-label="Regndag regnbukse barn 8-14"] > .i8.bc.bd > .im.id.y > .gq.if.ig`
+- `a[aria-label="Bodø lettvekts regnjakke"] > .i8.bc.bd > .im.id.y > .gq.if.ig`
+- `div:nth-child(8) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.if.ig`
 - `div:nth-child(8) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.if.ig`
 - `a[aria-label="Bodø lettvekts regnbukse"] > .i8.bc.bd > .im.id.y > .gq.if.ig`
 - `#onetrust-accept-btn-handler`
@@ -107,7 +107,7 @@
 
 #### Affected Elements:
 
-- `.a6[href$="mid-season-sale"][data-scope-link="true"]`
+- `a[href$="mid-season-sale"]`
 - `a[href$="vanntett"]`
 - `.bl.bj.bk:nth-child(4) > div > .jl.jm.jn > .jp.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
 - `.bl.bj.bk:nth-child(4) > div > .jl.jm.jn > .jp.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
