@@ -1,0 +1,31 @@
+{
+  "project": "Arbeidstilsynet",
+  "timestamp": "2026-03-02T00:32:07.973Z",
+  "url": "https://www.arbeidstilsynet.no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3>Arbeidsavtale</h3>",
+          "target": [
+            ".hero-item:nth-child(1) > .hero-desktop.card--hover-first.card-link > .card-main > .card-title > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    }
+  ]
+}
