@@ -1,10 +1,22 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-03-01T00:46:58.414Z
+**Timestamp:** 2026-03-02T00:40:10.559Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.f4`
 
 ### Heading levels should only increase by one
 
@@ -16,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.iq.is-selected.gx:nth-child(1) > .c.bz.c4 > .ca.s[data-test-id="product-link"] > h4`
+- `.ip.is-selected.fj:nth-child(1) > .c.bz.c4 > .ca.ao[data-test-id="product-link"] > h4`
 
 ### Images must have alternative text
 
@@ -28,8 +40,8 @@
 
 #### Affected Elements:
 
-- `.gg > .fe.ff.el`
-- `.hh > .fe.ff.el`
+- `.g8 > .fe.ff.el`
+- `.gq > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -37,20 +49,18 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 15
+- **Count:** 13
 
 #### Affected Elements:
 
-- `.ca.s[href$="baderom"] > .gz.da.bz > .en.gv[alt="--->"]`
-- `img[alt="Baderomstilbehør"]`
-- `img[alt="Morgenkåper"]`
-- `img[alt="Loungewear & accessories"]`
-- `a[href$="velvare"] > .gz.da.bz > .en.gv.a3`
-- `img[alt="Skjønnhetstilbehør"]`
-- `img[alt="Såper og kremer"]`
-- `img[alt="Mengder av håndklær 50%"]`
-- `img[alt="Toalettmapper"]`
-- `.ca.s[href$="belysning"] > .gz.da.bz > .en.gv[alt="--->"]`
+- `img[alt="Alle sengesett 2 for 1"]`
+- `img[alt="Alle fiberdyner og puter 50%"]`
+- `img[alt="Alle putevar 2 for 1"]`
+- `img[alt="Alle laken 2 for 1"]`
+- `img[alt="Sommerdyne fra 299,-"]`
+- `img[alt="Krepp sengesett fra 199,-"]`
+- `img[alt="Alle senger 30%"]`
+- `img[alt="--->"]`
 - `img[alt="Lamper i valnøtt"]`
 - `img[alt="Lamper i frostet glass"]`
 - `img[alt="Lamper i tekstiler"]`
@@ -68,9 +78,9 @@
 #### Affected Elements:
 
 - `.a7[href$="paske"][data-scope-link="true"]:nth-child(1)`
-- `.ca.s[href$="paske"]`
-- `div:nth-child(17) > .fa.f9.bv > .bl.bz.dd > .a7.a5.a6:nth-child(1)`
-- `div:nth-child(17) > .fa.f9.bv > .bl.bz.dd > .ca.s.c8`
+- `.ca.c8[href$="paske"]`
+- `div:nth-child(12) > .fa.f9.bv > .bl.dd.bz > .a7.a5.a6:nth-child(1)`
+- `div:nth-child(12) > .fa.f9.bv > .bl.dd.bz > .ca.c8.cc`
 
 ### All page content should be contained by landmarks
 

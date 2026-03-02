@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-03-01T00:40:15.549Z
+**Timestamp:** 2026-03-02T00:33:49.235Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 5
 
@@ -101,7 +101,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 39
+- **Count:** 36
 
 #### Affected Elements:
 
@@ -118,17 +118,14 @@
 - `#carousel1`
 - `#carousel2`
 - `#carousel3`
-- `img[alt="Studentprisen 2025 "]`
-- `a[href$="studentprisen"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > .text-superTitle.leading-tight.md\:leading-snug`
-- `a[href$="studentprisen"] > .px-3.pb-3.pt-1`
-- `#carousel5`
+- `#carousel4`
 - `a[href$="nye-gruppetimer"] > .relative.h-fit > .h-56.object-cover`
 - `a[href$="nye-gruppetimer"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > .text-superTitle.leading-tight.md\:leading-snug`
 - `a[href$="nye-gruppetimer"] > .px-3.pb-3.pt-1`
-- `#carousel7`
+- `#carousel6`
 - `a[href$="svom-langt"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > .text-superTitle.leading-tight.md\:leading-snug`
 - `a[href$="svom-langt"] > .px-3.pb-3.pt-1`
-- `#carousel9`
+- `#carousel8`
 - `div:nth-child(1) > .\!font-bold.pb-4`
 - `.gap-3[href$="bolig"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
 - `.gap-3[href$="studentliv"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`

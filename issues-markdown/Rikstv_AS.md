@@ -1,7 +1,7 @@
 # WCAG Violations Report for Rikstv AS
 
-**Timestamp:** 2026-03-01T00:30:03.713Z
-**URL:** [https://www.rikstv.no/](https://www.rikstv.no/)
+**Timestamp:** 2026-03-02T00:39:55.839Z
+**URL:** [https://www.rikstv.no/#](https://www.rikstv.no/#)
 **Total Violations:** 1
 
 ## Violation Details

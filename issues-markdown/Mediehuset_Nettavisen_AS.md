@@ -1,22 +1,10 @@
 # WCAG Violations Report for Mediehuset Nettavisen AS
 
-**Timestamp:** 2026-03-01T00:20:11.508Z
-**URL:** [https://www.nettavisen.no/](https://www.nettavisen.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-03-02T00:29:40.426Z
+**URL:** [https://www.nettavisen.no/#](https://www.nettavisen.no/#)
+**Total Violations:** 5
 
 ## Violation Details
-
-### ARIA commands must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, #cbb`
 
 ### Headings should not be empty
 

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bank Norwegian AS
 
-**Timestamp:** 2026-03-01T00:26:55.198Z
-**URL:** [https://www.banknorwegian.no/](https://www.banknorwegian.no/)
+**Timestamp:** 2026-03-02T00:34:33.521Z
+**URL:** [https://www.banknorwegian.no/#](https://www.banknorwegian.no/#)
 **Total Violations:** 2
 
 ## Violation Details

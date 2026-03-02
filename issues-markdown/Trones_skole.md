@@ -1,6 +1,6 @@
 # WCAG Violations Report for Trones skole
 
-**Timestamp:** 2026-03-01T00:44:53.709Z
+**Timestamp:** 2026-03-02T00:38:15.354Z
 **URL:** [https://www.minskole.no/trones/#](https://www.minskole.no/trones/#)
 **Total Violations:** 7
 
@@ -87,8 +87,8 @@
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426755"]`
 - `div:nth-child(17) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426750"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426750"]`
-- `div:nth-child(19) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426729"]`
-- `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426729"]`
+- `div:nth-child(19) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426699"]`
+- `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426699"]`
 
 ### Page should contain a level-one heading
 

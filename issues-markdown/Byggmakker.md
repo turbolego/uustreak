@@ -1,7 +1,7 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2026-03-01T00:31:03.851Z
-**URL:** [https://www.byggmakker.no/](https://www.byggmakker.no/)
+**Timestamp:** 2026-03-02T00:38:12.687Z
+**URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
 **Total Violations:** 5
 
 ## Violation Details
@@ -20,10 +20,10 @@
 - `.product-card__product-price[data-product_id="7052870166945"][data-price-history="439"]`
 - `.product-card[data-product_id="7052870174926"][data-price-history="439"]`
 - `.product-card__product-price[data-product_id="7052870174926"][data-price-history="439"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7052870173882"]`
-- `.product-card__product-price.prrc[data-product_id="7052870173882"]`
 - `.product-card[data-product_id="7052870175312"][data-price-history="489"]`
 - `.product-card__product-price[data-product_id="7052870175312"][data-price-history="489"]`
+- `.product-card[data-product_id="7052870181122"][data-price-history="539"]`
+- `.product-card__product-price[data-product_id="7052870181122"][data-price-history="539"]`
 - `.product-card[data-price-history="429"][data-product_id=""]`
 - `.product-card__product-price[data-price-history="429"][data-product_id=""]`
 - `.product-card[data-price-history="569"][data-product_id=""]`
@@ -87,7 +87,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 127
+- **Count:** 133
 
 #### Affected Elements:
 
@@ -96,19 +96,25 @@
 - `.product-card__product-price[data-product_id="7052870166945"][data-price-history="439"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
 - `.product-card__product-price[data-product_id="7052870166945"][data-price-history="439"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
 - `.product-card__product-price[data-product_id="7052870166945"][data-price-history="439"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `#\32 0_pa_laminatgulv_i_orginalserien_fra_berryalloc > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
+- `#\32 0_pa_laminatgulv_i_originalserien_fra_berryalloc > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
 - `.product-card[data-product_id="7052870174926"][data-price-history="439"] > .product-card__image-container > div:nth-child(1) > strong`
 - `.product-card__product-price[data-product_id="7052870174926"][data-price-history="439"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
 - `.product-card__product-price[data-product_id="7052870174926"][data-price-history="439"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
 - `.product-card__product-price[data-product_id="7052870174926"][data-price-history="439"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
 - `.product-card__product-price[data-product_id="7052870174926"][data-price-history="439"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `#\32 0_pa_laminatgulv_i_orginalserien_fra_berryalloc > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
+- `#\32 0_pa_laminatgulv_i_originalserien_fra_berryalloc > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
 - `.product-card[data-product_id="7052870175312"][data-price-history="489"] > .product-card__image-container > div:nth-child(1) > strong`
 - `.product-card__product-price[data-product_id="7052870175312"][data-price-history="489"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
 - `.product-card__product-price[data-product_id="7052870175312"][data-price-history="489"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
 - `.product-card__product-price[data-product_id="7052870175312"][data-price-history="489"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
 - `.product-card__product-price[data-product_id="7052870175312"][data-price-history="489"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `#\32 0_pa_laminatgulv_i_orginalserien_fra_berryalloc > .campaign-product-list > .campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
+- `#\32 0_pa_laminatgulv_i_originalserien_fra_berryalloc > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
+- `.product-card[data-product_id="7052870181122"][data-price-history="539"] > .product-card__image-container > div:nth-child(1) > strong`
+- `.product-card__product-price[data-product_id="7052870181122"][data-price-history="539"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
+- `.product-card__product-price[data-product_id="7052870181122"][data-price-history="539"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
+- `.product-card__product-price[data-product_id="7052870181122"][data-price-history="539"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
+- `.product-card__product-price[data-product_id="7052870181122"][data-price-history="539"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
+- `#\32 0_pa_laminatgulv_i_originalserien_fra_berryalloc > .campaign-product-list > .campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
 - `.product-card[data-price-history="429"][data-product_id=""] > .product-card__image-container > div:nth-child(1) > strong`
 - `.product-card__product-price[data-price-history="429"][data-product_id=""] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
 - `.product-card__product-price[data-price-history="429"][data-product_id=""] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`

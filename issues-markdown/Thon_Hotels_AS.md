@@ -1,8 +1,8 @@
 # WCAG Violations Report for Thon Hotels AS
 
-**Timestamp:** 2026-03-01T00:43:09.362Z
+**Timestamp:** 2026-03-02T00:36:38.227Z
 **URL:** [https://www.thonhotels.no/#](https://www.thonhotels.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -81,3 +81,15 @@
 #### Affected Elements:
 
 - `a[href=""]`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.site-message__inner > span`

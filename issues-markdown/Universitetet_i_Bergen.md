@@ -1,6 +1,6 @@
 # WCAG Violations Report for Universitetet i Bergen
 
-**Timestamp:** 2026-03-01T00:46:54.416Z
+**Timestamp:** 2026-03-02T00:40:16.997Z
 **URL:** [https://www4.uib.no/](https://www4.uib.no/)
 **Total Violations:** 1
 

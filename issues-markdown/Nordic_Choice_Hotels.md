@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordic Choice Hotels
 
-**Timestamp:** 2026-03-01T00:22:14.779Z
+**Timestamp:** 2026-03-02T00:31:28.920Z
 **URL:** [https://www.strawberry.no/](https://www.strawberry.no/)
 **Total Violations:** 2
 
@@ -19,8 +19,8 @@
 - `#horizontal-scroll-info-cards-2 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-dj1ilf-one-card-heading-spacing-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(1)`
 - `#horizontal-scroll-info-cards-2 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-dj1ilf-one-card-heading-spacing-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(2)`
 - `#horizontal-scroll-info-cards-2 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-dj1ilf-one-card-heading-spacing-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(3)`
-- `#horizontal-scroll-info-cards-4 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-dj1ilf-one-card-heading-spacing-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(1)`
 - `a[href$="harm-hegseth-livepod/"]`
+- `#horizontal-scroll-info-cards-4 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-dj1ilf-one-card-heading-spacing-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(2)`
 - `#horizontal-scroll-info-cards-4 > .sds-c-info-cards.css-18rum0n[data-length="3"] > .css-dj1ilf-one-card-heading-spacing-label-spacing-override.sds-c-info-card[role="listitem"]:nth-child(3)`
 - `a[href$="oslo/"]`
 - `a[href$="bergen/"]`
