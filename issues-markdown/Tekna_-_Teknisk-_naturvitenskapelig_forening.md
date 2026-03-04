@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tekna - Teknisk- naturvitenskapelig forening
 
-**Timestamp:** 2026-03-02T00:35:14.299Z
+**Timestamp:** 2026-03-04T18:25:10.633Z
 **URL:** [https://www.tekna.no/#](https://www.tekna.no/#)
 **Total Violations:** 8
 
@@ -97,18 +97,17 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 16
+- **Count:** 15
 
 #### Affected Elements:
 
 - `div:nth-child(8)`
 - `.heroblock`
 - `.promoted-link-list`
-- `.d-sm-flex`
 - `.block:nth-child(4)`
 - `.promotion-block--yellow > .promotion-block__body`
 - `.col-lg-8`
-- `.text-image-block__header.d-none.d-lg-block`
+- `.d-none`
 - `.text-image-block__text`
 - `.text-image-block__image:nth-child(1)`
 - `.block-spacing-small.col-12`

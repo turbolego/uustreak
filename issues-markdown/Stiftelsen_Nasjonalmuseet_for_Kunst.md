@@ -1,8 +1,8 @@
 # WCAG Violations Report for Stiftelsen Nasjonalmuseet for Kunst
 
-**Timestamp:** 2026-03-02T00:31:53.986Z
+**Timestamp:** 2026-03-04T18:21:42.982Z
 **URL:** [https://www.nasjonalmuseet.no/#](https://www.nasjonalmuseet.no/#)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -17,21 +17,6 @@
 #### Affected Elements:
 
 - `#declineButton`
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 4
-
-#### Affected Elements:
-
-- `div[title="Utstillinger"] > section > .ulc-carousel__buttons > .ulc-carousel__button--prev.ulc-carousel__button`
-- `div[title="Utstillinger"] > section > .ulc-carousel__buttons > .ulc-carousel__button--next.ulc-carousel__button`
-- `div[title="Utvalgte arrangementer "] > section > .ulc-carousel__buttons > .ulc-carousel__button--prev.ulc-carousel__button`
-- `div[title="Utvalgte arrangementer "] > section > .ulc-carousel__buttons > .ulc-carousel__button--next.ulc-carousel__button`
 
 ### Document should not have more than one banner landmark
 

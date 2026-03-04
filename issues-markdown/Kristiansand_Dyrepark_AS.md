@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kristiansand Dyrepark AS
 
-**Timestamp:** 2026-03-02T00:41:56.036Z
+**Timestamp:** 2026-03-04T18:33:16.707Z
 **URL:** [https://www.dyreparken.no/#](https://www.dyreparken.no/#)
 **Total Violations:** 6
 
@@ -96,7 +96,7 @@
 - `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(7) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(8) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.u-theme-dyreparken-secondary-light.c-module--billboard.c-module--split:nth-child(16) > .c-module__container > .c-billboard--variant-light > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
-- `.c-billboard__image[href$="app/"][itemtype="http://schema.org/ImageObject"]`
+- `.c-billboard__image[itemtype="http://schema.org/ImageObject"][href$="app/"]`
 - `.c-footer__app__links > a:nth-child(1)`
 - `.c-footer__app__links > a:nth-child(2)`
 

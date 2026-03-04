@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-03-02T00:32:46.461Z
+**Timestamp:** 2026-03-04T18:22:35.193Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -12,43 +12,37 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 34
+- **Count:** 28
 
 #### Affected Elements:
 
 - `.gt.dr.ds > div > div`
-- `.gv.am[href$="mid-season-sale"]`
-- `a[aria-label="Myting vanntett turstøvel"] > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `a[aria-label="Myting vanntett turstøvel"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `a[aria-label="Lofoten lettvekts regnbukse"] > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `a[aria-label="Lofoten lettvekts regnbukse"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `a[aria-label="Lofoten lettvekts regnjakke"] > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `a[aria-label="Lofoten lettvekts regnjakke"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `a[aria-label="Froland skalljakke"] > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `a[aria-label="Froland skalljakke"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `a[aria-label="Froland lang skallparkas"] > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `a[aria-label="Froland lang skallparkas"] > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .iu.iv.hq > div > .gu > .j8.hr.bd`
-- `li:nth-child(2) > .i3.i4[aria-label="Lofoten sydvest"] > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `li:nth-child(3) > .i3.i4[aria-label="Lofoten sydvest"] > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `a[aria-label="Lofoten fôret regnvott"] > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `li:nth-child(5) > .i3.i4[aria-label="Lofoten sydvest"] > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `a[aria-label="Skomvær skalljakke"] > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `a[aria-label="Vestfossen lettvekts regnbukse"] > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `a[aria-label="Regndag regnbukse barn 8-14"] > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `a[aria-label="Regndag regnbukse unisex"] > .i8.bc.bd > .im.id.y > .gq.in.if`
-- `a[aria-label="Regndag regnjakke barn 8-14"] > .i8.bc.bd > .im.id.y > .gq.in.if`
+- `.gv.am[href$="nyheter"]`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `a[aria-label="Rauma 3-lags skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `a[aria-label="Rauma 3-lags skalljakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `a[aria-label="Marka rolltop ryggsekk 20 L"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `a[aria-label="Marka rolltop ryggsekk 20 L"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `a[aria-label="Framnes sneaker"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `a[aria-label="Framnes sneaker"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `a[aria-label="Skomvær skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `div:nth-child(7) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `a[aria-label="Sogndal skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `a[aria-label="Nordkinn skallbukse barn 8-14"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
+- `a[aria-label="Porsanger cord sherpagenser"] > .i8.bc.bd > .if.id.y > .gq.ik.ig`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
@@ -90,12 +84,12 @@
 - `div:nth-child(3) > .aq.am.an > .au.as[width="11"]`
 - `div:nth-child(4) > .aq.am.an > .au.as[width="11"]`
 - `.hj > .ho.hn.au`
-- `a[href$="vanntett"] > .jo.hk.hl > .ho.a2.hn`
-- `.bl.bj.bk:nth-child(4) > div > .jj.jk.jl > .jn.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jo.hk.hl > .ho.a2.hn`
-- `.bl.bj.bk:nth-child(4) > div > .jj.jk.jl > .jn.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jo.hk.hl > .ho.a2.hn`
-- `a[href$="jakker-og-parkas"] > .jo.hk.hl > .ho.a2.hn`
-- `.a6[href$="turutstyr"][data-scope-link="true"] > .jo.hk.hl > .ho.a2.hn`
-- `a[href$="fleece"] > .jo.hk.hl > .ho.a2.hn`
+- `.bl.bj.bk:nth-child(4) > div > .j8.j9.ja > .jc.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
+- `.bl.bj.bk:nth-child(4) > div > .j8.j9.ja > .jc.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
+- `.bl.bj.bk:nth-child(4) > div > .j8.j9.ja > .jc.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
+- `.bl.bj.bk:nth-child(6) > div > .j8.j9.ja > .jc.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
+- `.a6[href$="turutstyr"][data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
+- `.bl.bj.bk:nth-child(6) > div > .j8.j9.ja > .jc.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
 
 ### Links must have discernible text
 
@@ -107,13 +101,13 @@
 
 #### Affected Elements:
 
-- `.a6[href$="mid-season-sale"][data-scope-link="true"]`
-- `a[href$="vanntett"]`
-- `.bl.bj.bk:nth-child(4) > div > .jj.jk.jl > .jn.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
-- `.bl.bj.bk:nth-child(4) > div > .jj.jk.jl > .jn.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
-- `a[href$="jakker-og-parkas"]`
+- `a[href$="spring-days"]`
+- `.bl.bj.bk:nth-child(4) > div > .j8.j9.ja > .jc.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
+- `.bl.bj.bk:nth-child(4) > div > .j8.j9.ja > .jc.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
+- `.bl.bj.bk:nth-child(4) > div > .j8.j9.ja > .jc.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
+- `.bl.bj.bk:nth-child(6) > div > .j8.j9.ja > .jc.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
 - `.hh.bv.ay > .a6[href$="turutstyr"][data-scope-link="true"]`
-- `a[href$="fleece"]`
+- `.bl.bj.bk:nth-child(6) > div > .j8.j9.ja > .jc.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
 
 ### Page should contain a level-one heading
 

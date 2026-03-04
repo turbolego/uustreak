@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-03-02T00:37:22.701Z
+**Timestamp:** 2026-03-04T18:28:07.334Z
 **URL:** [https://www.blv.no/#](https://www.blv.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -12,12 +12,11 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.custom-one.brick-c-fDtuHA[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .title_container.brick-c-fdsRaE.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
-- `a[href$="oksnesavisa.no/"] > .body > .title_container.brick-c-fdsRaE.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `a[href$="oksnesavisa.no/"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
@@ -31,17 +30,28 @@
 
 - `#eaframe`
 
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `brick-carousel-v2[data-slides="20"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+
 ### Links must have discernible text
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.custom-one.brick-c-fDtuHA[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"]`
 - `a[href$="oksnesavisa.no/"]`
 
 ### Elements marked as presentational should be consistently ignored

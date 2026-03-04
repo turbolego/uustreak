@@ -1,8 +1,8 @@
 # WCAG Violations Report for Thon Hotels AS
 
-**Timestamp:** 2026-03-02T00:36:38.227Z
+**Timestamp:** 2026-03-04T18:26:37.172Z
 **URL:** [https://www.thonhotels.no/#](https://www.thonhotels.no/#)
-**Total Violations:** 6
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -31,18 +31,6 @@
 - `#coi-consent-banner__description-container-cookie_cat_necessary > .coi-consent-banner__found-cookies > .coi-consent-banner__cookie-details:nth-child(26) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container > .cookie-details__detail-content > a[rel="noopener noreferrer"][target="_blank"]`
 - `#coi-consent-banner__description-container-cookie_cat_necessary > .coi-consent-banner__found-cookies > .coi-consent-banner__cookie-details:nth-child(28) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container > .cookie-details__detail-content > a[rel="noopener noreferrer"][target="_blank"]`
 - `#coi-consent-banner__description-container-cookie_cat_necessary > .coi-consent-banner__found-cookies > .coi-consent-banner__cookie-details:nth-child(30) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container > .cookie-details__detail-content > a[rel="noopener noreferrer"][target="_blank"]`
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.campaign-block__heading`
 
 ### Form elements must have labels
 
@@ -81,15 +69,3 @@
 #### Affected Elements:
 
 - `a[href=""]`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.site-message__inner > span`

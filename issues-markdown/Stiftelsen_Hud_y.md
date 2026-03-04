@@ -1,22 +1,10 @@
 # WCAG Violations Report for Stiftelsen Hudøy
 
-**Timestamp:** 2026-03-02T00:31:24.747Z
+**Timestamp:** 2026-03-04T18:21:07.866Z
 **URL:** [https://hudoy.no/#](https://hudoy.no/#)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
-
-### Elements must only use supported ARIA attributes
-
-- **Impact:** critical
-- **Description:** Ensure an element's role supports its ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe, .OverlayBase_module_overlayWrapper__42ef25fe`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -68,15 +56,15 @@
 #### Affected Elements:
 
 - `a[href$="ferdernasjonalpark.no/"]`
-- `.avia-builder-el-40 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
+- `.avia-builder-el-42 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
 - `a[href$="bufdir.no/"]`
 - `a[href$="bergesenstiftelsen.no/"]`
 - `a[href$="eckbos-legat.no/"]`
-- `.avia-builder-el-49 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
+- `.avia-builder-el-51 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
 - `a[href$="scheibler.no/"]`
-- `.avia-builder-el-53 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
 - `.avia-builder-el-55 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
 - `.avia-builder-el-57 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
+- `.avia-builder-el-59 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
 - `div:nth-child(1) > .alignleft[rel="noopener"][target="_blank"]`
 - `div:nth-child(2) > .alignleft[rel="noopener"][target="_blank"]`
 - `p > .alignleft[rel="noopener"][target="_blank"]`
@@ -104,7 +92,7 @@
 - `.post-entry-7574 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.av-rotator-text-single-4`
 - `#av_section_6 > .container > .template-page.content.av-content-full > .post-entry-type-page.post-entry-330.post-entry > .entry-content-wrapper.clearfix > .flex_column_table.av-equal-height-column-flextable.-flextable`
-- `.avia-builder-el-34`
+- `.avia-builder-el-36`
 - `.container:nth-child(2) > .first.el_before_av_one_fifth.av_one_fifth`
 - `.el_after_av_one_fifth.el_before_av_one_fifth.av_one_fifth:nth-child(2)`
 - `.el_after_av_one_fifth.el_before_av_one_fifth.av_one_fifth:nth-child(3)`

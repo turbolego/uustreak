@@ -1,6 +1,6 @@
 # WCAG Violations Report for Akershus fylkeskommune
 
-**Timestamp:** 2026-03-02T00:30:59.127Z
+**Timestamp:** 2026-03-04T18:21:39.082Z
 **URL:** [https://afk.no/#](https://afk.no/#)
 **Total Violations:** 1
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 11
+- **Count:** 10
 
 #### Affected Elements:
 
@@ -21,7 +21,6 @@
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ucSearchField_txtSearch`
 - `#Sone2502`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5000`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5101`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_10099 > .webPartTittel`
 - `.container > ul`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_10111`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Flyktninghjelpen
 
-**Timestamp:** 2026-03-02T00:30:51.375Z
+**Timestamp:** 2026-03-04T18:20:32.529Z
 **URL:** [https://www.nrc.no/#](https://www.nrc.no/#)
 **Total Violations:** 4
 
@@ -19,10 +19,10 @@
 - `#CybotCookiebotDialogNavDeclaration`
 - `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
 - `.three-layer-header__donation-button`
-- `.donate`
-- `.block:nth-child(1) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content--no-image.article-list-view-model__content > .article-list-view-model__tags > time`
-- `.block:nth-child(2) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content > .article-list-view-model__tags > time`
-- `.block:nth-child(3) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content--no-image.article-list-view-model__content > .article-list-view-model__tags > time`
+- `.action`
+- `.block:nth-child(1) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content > .article-list-view-model__tags > time`
+- `.article-list-view-model__content--no-image > .article-list-view-model__tags > time`
+- `.block:nth-child(3) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content > .article-list-view-model__tags > time`
 
 ### Heading levels should only increase by one
 
@@ -34,7 +34,7 @@
 
 #### Affected Elements:
 
-- `.poster__heading-title`
+- `.contentareaitem:nth-child(1) > .banner.content-module.content-module--Crisis > .poster > .poster__heading-container > .poster__heading-title`
 
 ### Links must have discernible text
 

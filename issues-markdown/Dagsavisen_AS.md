@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-03-02T00:41:27.868Z
+**Timestamp:** 2026-03-04T18:32:28.457Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 7
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `a[href$="mailto:anne@dagsavisen.no"]`
+- `.singleline.secondary.color_mobile_secondary > a:nth-child(9)`
 
 ### Headings should not be empty
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.text_singleline.large-8.large-abs-8 > .singleline`
+- `.large-8.large-abs-8.text_singleline > .singleline`
 
 ### Frames must have an accessible name
 
@@ -48,15 +48,17 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 5
+- **Count:** 7
 
 #### Affected Elements:
 
+- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(2) > h5`
+- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(7) > h5`
 - `.has-row-header.mobile_no_border_color.hasContentPadding > h5`
-- `.bg-primary > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(31) > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32) > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(46) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(33) > h5`
+- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(37) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(43) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(47) > h5`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -82,7 +84,7 @@
 #### Affected Elements:
 
 - `a[href$="mailto:kb@dagsavisen.no"]`
-- `.tm17.singleline.t14 > a[href$="dagsavisen"][target="_blank"]`
+- `.tm17.singleline.font-PTSans > a[href$="dagsavisen"][target="_blank"]`
 
 ### All page content should be contained by landmarks
 
@@ -90,95 +92,92 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 88
+- **Count:** 85
 
 #### Affected Elements:
 
 - `h1`
-- `#notice-10229168 > .content > h2`
-- `#notice-10229168 > .content > .meta`
-- `#notice-10229167 > .content > h2`
-- `#notice-10229167 > .content > .meta`
-- `#notice-10229166 > .content > h2`
-- `#notice-10229166 > .content > .meta`
-- `#notice-10229161 > .content > h2`
-- `#notice-10229161 > .content > .meta`
-- `div[title="Nye angrep mot Teheran"] > h2`
-- `div[title="Nye angrep mot Teheran"] > .meta`
-- `#notice-10229000 > .content > h2`
-- `#notice-10229000 > .content > .meta`
-- `#notice-10228982 > .content > h2`
-- `#notice-10228982 > .content > .meta`
-- `div[title="Helsenorge har problemer"] > h2`
-- `div[title="Helsenorge har problemer"] > .meta`
-- `#notice-10228919 > .content > h2`
-- `#notice-10228919 > .content > .meta`
-- `#notice-10228837 > .content > h2`
-- `time[datetime="2026-03-01T13:47:08.000Z"]`
-- `div[title="Emiratene: Tre drept i angrep"] > h2`
-- `time[datetime="2026-03-01T13:57:54.000Z"]`
-- `div[title="NFF: Klaveness gjenvalgt"] > h2`
-- `time[datetime="2026-03-01T13:31:34.000Z"]`
-- `#notice-10228763 > .content > h2`
-- `time[datetime="2026-03-01T13:56:46.000Z"]`
-- `div[title="Oman: Tankskip angrepet"] > h2`
-- `time[datetime="2026-03-01T12:57:11.000Z"]`
-- `#notice-10228560 > .content > h2`
-- `time[datetime="2026-03-01T11:28:36.000Z"]`
-- `div[title="Loen: Omkom i luftsportsulykke"] > h2`
-- `time[datetime="2026-03-01T11:27:29.000Z"]`
-- `div[title="Steinras på E134 sperrer veien"] > h2`
-- `time[datetime="2026-03-01T10:29:37.000Z"]`
-- `#notice-10228313 > .content > h2`
-- `time[datetime="2026-03-01T10:28:33.000Z"]`
-- `#notice-10228312 > .content > h2`
-- `time[datetime="2026-03-01T08:29:41.000Z"]`
-- `#notice-10228311 > .content > h2`
-- `time[datetime="2026-03-01T08:28:32.000Z"]`
-- `.row.large-12.small-12:nth-child(2)`
+- `#notice-10235569 > .content > h2`
+- `#notice-10235569 > .content > .meta`
+- `#notice-10235554 > .content > h2`
+- `#notice-10235554 > .content > .meta`
+- `#notice-10235423 > .content > h2`
+- `#notice-10235423 > .content > .meta`
+- `#notice-10234792 > .content > h2`
+- `#notice-10234792 > .content > .meta`
+- `#notice-10234547 > .content > h2`
+- `#notice-10234547 > .content > .meta`
+- `#notice-10234374 > .content > h2`
+- `#notice-10234374 > .content > .meta`
+- `#notice-10234308 > .content > h2`
+- `#notice-10234308 > .content > .meta`
+- `#notice-10234122 > .content > h2`
+- `#notice-10234122 > .content > .meta`
+- `#notice-10234096 > .content > h2`
+- `#notice-10234096 > .content > .meta`
+- `#notice-10233806 > .content > h2`
+- `#notice-10233806 > .content > .meta`
+- `#notice-10233674 > .content > h2`
+- `#notice-10233674 > .content > .meta`
+- `#notice-10233672 > .content > h2`
+- `#notice-10233672 > .content > .meta`
+- `#notice-10233561 > .content > h2`
+- `#notice-10233561 > .content > .meta`
+- `#notice-10233560 > .content > h2`
+- `#notice-10233560 > .content > .meta`
+- `#notice-10233559 > .content > h2`
+- `#notice-10233559 > .content > .meta`
+- `#notice-10233536 > .content > h2`
+- `#notice-10233536 > .content > .meta`
+- `#notice-10233510 > .content > h2`
+- `#notice-10233510 > .content > .meta`
+- `div[title="Tyrkia advarer USA"] > h2`
+- `div[title="Tyrkia advarer USA"] > .meta`
+- `#notice-10233459 > .content > h2`
+- `#notice-10233459 > .content > .meta`
+- `#notice-10233412 > .content > h2`
+- `#notice-10233412 > .content > .meta`
+- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
-- `.row.large-12.small-12:nth-child(6)`
+- `.row.large-12.small-12:nth-child(4)`
+- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(7)`
 - `iframe[data-testid="embed-iframe"], h1`
 - `iframe[data-testid="embed-iframe"], .encore-text-body-medium.encore-internal-color-text-subdued.e-91185-text`
 - `iframe[data-testid="embed-iframe"], a[dir="auto"]`
 - `.has-row-header.mobile_no_border_color.hasContentPadding`
-- `.bg-primary`
 - `.row.large-12.small-12:nth-child(11)`
 - `.row.large-12.small-12:nth-child(12)`
+- `.row.large-12.small-12:nth-child(13)`
 - `#article_list_10180103 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10180103 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.page-content > .border-bg-quaternary.mobile_border-bg-quaternary.hasBorder`
 - `#article_list_9904930 > .inner.fullwidthTarget.content`
 - `#article_list_10187147 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10187147 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(18)`
+- `.row.large-12.small-12:nth-child(19)`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(21)`
+- `.row.large-12.small-12:nth-child(22)`
 - `.border_width_no_border_width.border_width_mobile_no_border_width.color_mobile_no_bg_color`
-- `.row.large-12.small-12:nth-child(23)`
-- `.row.large-12.small-12:nth-child(26)`
+- `.row.large-12.small-12:nth-child(24)`
+- `.row.large-12.small-12:nth-child(27)`
 - `#article_list_10184114 > .content > .font-weight-normal.m-font-weight-normal.t25`
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(28)`
 - `.row.large-12.small-12:nth-child(29)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(31)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32)`
-- `.row.large-12.small-12:nth-child(33)`
-- `.row.large-12.small-12:nth-child(34)`
+- `.row.large-12.small-12:nth-child(31)`
+- `.row.large-12.small-12:nth-child(32)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(33)`
+- `.bg-primary.color_mobile_bg-primary.hasContentPadding:nth-child(34)`
 - `.row.large-12.small-12:nth-child(36)`
-- `.row.large-12.small-12:nth-child(37)`
+- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(37)`
 - `.row.large-12.small-12:nth-child(38)`
 - `.row.large-12.small-12:nth-child(39)`
 - `.row.large-12.small-12:nth-child(41)`
-- `.row.large-12.small-12:nth-child(42)`
+- `#article_list_10230577 > .content > .font-weight-normal.m-font-weight-normal.t25`
+- `#article_list_10230577 > .content > .scroll-container.swipehelper.snap-container-x`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(43)`
 - `.bg-tertiary`
-- `.row.large-12.small-12:nth-child(44)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(46)`
+- `.row.large-12.small-12:nth-child(46)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(47)`
 - `.color_mobile_no_bg_color.content > .headline[itemprop="headline"]`
-- `.row.large-12.small-12:nth-child(48)`
-- `.row.large-12.small-12:nth-child(49)`
-- `.row.large-12.small-12:nth-child(51)`
-- `#article_list_10184103 > .content > .font-weight-normal.m-font-weight-normal.t25`
-- `#article_list_10184103 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.powered-by`
