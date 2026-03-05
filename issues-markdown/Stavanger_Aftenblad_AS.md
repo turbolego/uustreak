@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-03-04T18:36:17.739Z
+**Timestamp:** 2026-03-05T00:47:26.949Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
 **Total Violations:** 7
 
@@ -93,15 +93,15 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 79
+- **Count:** 78
 
 #### Affected Elements:
 
 - `h1`
-- `.top-60-40-block`
-- `article[data-pulse-entity-id="d4w9oo"]`
-- `article[data-pulse-entity-id="d4w1qB"] > .article__teaser-container`
-- `#dr-edition-teaser-5ditsjoyv > div`
+- `article[data-pulse-entity-id="ExQA9K"]`
+- `article[data-pulse-entity-id="d4w9oo"] > .article__teaser-container`
+- `.collage-x3.row:nth-child(3)`
+- `#dr-edition-teaser-be9aqtelq > div`
 - `._heading_12jab_646 > span`
 - `._preview_12jab_666:nth-child(1) > a > ._preview-image_12jab_714[loading="lazy"]`
 - `._preview_12jab_666:nth-child(1) > a > ._preview-title_12jab_726`
@@ -125,12 +125,12 @@
 - `._preview_12jab_666:nth-child(10) > a > ._preview-title_12jab_726`
 - `.vertical-x2.row:nth-child(11)`
 - `.collage-x3.row:nth-child(13)`
-- `.sa-frontboks-button-bottom-right > .svelte-r1njzg:nth-child(1)`
+- `.sa-frontboks-desktop > .sa-frontboks-button.sa-frontboks-button-bottom.svelte-r1njzg > .svelte-r1njzg:nth-child(1)`
 - `.collage-x4.row:nth-child(17)`
-- `.collage-x3.row:nth-child(18)`
-- `.vertical-x2.row:nth-child(20)`
+- `.vertical-x3.row:nth-child(18)`
+- `.collage-x3.row:nth-child(20)`
 - `.hjernetrim-front-widget`
-- `.vertical-x3.row:nth-child(24)`
+- `.vertical-x2.row:nth-child(24)`
 - `.collage-x4.row:nth-child(26)`
 - `.podcast-header`
 - `.podcast-main`
@@ -140,24 +140,24 @@
 - `.vertical-x2.row:nth-child(28)`
 - `.widget-football.regional-widget`
 - `.vertical-x3.row:nth-child(30)`
-- `.collage-x3.row:nth-child(32)`
+- `.display-flex > .article__text-container`
 - `.vertical-x2.row:nth-child(35)`
 - `.widget-bolig.regional-widget`
 - `.vertical-x3.row:nth-child(37)`
-- `.collage-x3.row:nth-child(38)`
+- `.vertical-x2.row:nth-child(38)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(40)`
-- `.vertical-x2.row:nth-child(41)`
-- `.collage-x3.row:nth-child(43)`
-- `.vertical-x2.row:nth-child(44)`
-- `.vertical-x3.row:nth-child(45)`
+- `.collage-x3.row:nth-child(41)`
+- `.vertical-x2.row:nth-child(43)`
+- `.vertical-x3.row:nth-child(44)`
+- `.vertical-x4.row:nth-child(45)`
 - `.vertical-x1-ad.row:nth-child(46)`
 - `.vertical-x2.row:nth-child(47)`
-- `.vertical-x4.row:nth-child(48)`
+- `.vertical-x3.row:nth-child(48)`
 - `.vertical-x1-ad.row:nth-child(49)`
 - `.vertical-x2.row:nth-child(50)`
-- `.vertical-x3.row:nth-child(51)`
+- `.collage-x3.row:nth-child(51)`
 - `.vertical-x2.row:nth-child(52)`
-- `.vertical-small-x2.row:nth-child(53)`
+- `.vertical-x3.row:nth-child(53)`
 - `.collage-x3.row:nth-child(54)`
 - `.vertical-x2.row:nth-child(55)`
 - `.vertical-x3.row:nth-child(56)`
@@ -170,11 +170,10 @@
 - `.vertical-x3.row:nth-child(65)`
 - `.vertical-x2.row:nth-child(66)`
 - `.vertical-x1-ad.row:nth-child(67)`
-- `.vertical-small-x2.row:nth-child(68)`
-- `.vertical-x2.row:nth-child(69)`
+- `.vertical-x2.row:nth-child(68)`
+- `.collage-x3.row:nth-child(69)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(70)`
-- `.collage-x3.row:nth-child(71)`
-- `.row--full`
+- `.vertical-x3.row:nth-child(71)`
 - `.sch-datacontroller__text`
 
 ### Scrollable region must have keyboard access

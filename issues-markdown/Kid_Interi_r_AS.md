@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-03-04T18:31:23.854Z
+**Timestamp:** 2026-03-05T00:41:50.583Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -40,8 +40,8 @@
 
 #### Affected Elements:
 
-- `.gp > .fe.ff.el`
 - `.gq > .fe.ff.el`
+- `.gr > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -79,8 +79,8 @@
 
 - `.a7[href$="paske"][data-scope-link="true"]:nth-child(1)`
 - `.ca.c8[href$="paske"]`
-- `div:nth-child(13) > .fa.f9.bv > .bl.dd.bz > .a7.a5.a6:nth-child(1)`
-- `div:nth-child(13) > .fa.f9.bv > .bl.dd.bz > .ca.c8.cc`
+- `div:nth-child(14) > .fa.f9.bv > .bl.dd.bz > .a7.a5.a6:nth-child(1)`
+- `div:nth-child(14) > .fa.f9.bv > .bl.dd.bz > .ca.c8.cc`
 
 ### All page content should be contained by landmarks
 

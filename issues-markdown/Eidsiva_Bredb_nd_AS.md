@@ -1,6 +1,6 @@
 # WCAG Violations Report for Eidsiva Bredbånd AS
 
-**Timestamp:** 2026-03-04T18:36:07.223Z
+**Timestamp:** 2026-03-05T00:46:28.846Z
 **URL:** [https://www.eidsiva.no/#](https://www.eidsiva.no/#)
 **Total Violations:** 6
 
@@ -30,7 +30,7 @@
 
 #### Affected Elements:
 
-- `#pZWRNviWe8P > main`
+- `#poDKzZo1ut2 > main`
 
 ### Document should not have more than one banner landmark
 

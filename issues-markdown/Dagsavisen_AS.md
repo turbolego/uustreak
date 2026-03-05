@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-03-04T18:32:28.457Z
+**Timestamp:** 2026-03-05T00:42:53.772Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 7
 
@@ -52,13 +52,13 @@
 
 #### Affected Elements:
 
-- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(2) > h5`
-- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(7) > h5`
+- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(3) > h5`
 - `.has-row-header.mobile_no_border_color.hasContentPadding > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(33) > h5`
-- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(37) > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(43) > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(47) > h5`
+- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(12) > h5`
+- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(31) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(37) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(41) > h5`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -92,11 +92,15 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 85
+- **Count:** 80
 
 #### Affected Elements:
 
 - `h1`
+- `div[title="Hizbollah vil ikke overgi seg"] > h2`
+- `div[title="Hizbollah vil ikke overgi seg"] > .meta`
+- `div[title="Hele Irak rammet av strømbrudd"] > h2`
+- `div[title="Hele Irak rammet av strømbrudd"] > .meta`
 - `#notice-10235569 > .content > h2`
 - `#notice-10235569 > .content > .meta`
 - `#notice-10235554 > .content > h2`
@@ -133,51 +137,42 @@
 - `#notice-10233510 > .content > .meta`
 - `div[title="Tyrkia advarer USA"] > h2`
 - `div[title="Tyrkia advarer USA"] > .meta`
-- `#notice-10233459 > .content > h2`
-- `#notice-10233459 > .content > .meta`
-- `#notice-10233412 > .content > h2`
-- `#notice-10233412 > .content > .meta`
-- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(2)`
-- `.row.large-12.small-12:nth-child(3)`
-- `.row.large-12.small-12:nth-child(4)`
-- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(7)`
+- `.row.large-12.small-12:nth-child(2)`
+- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(3)`
+- `.row.large-12.small-12:nth-child(6)`
 - `iframe[data-testid="embed-iframe"], h1`
 - `iframe[data-testid="embed-iframe"], .encore-text-body-medium.encore-internal-color-text-subdued.e-91185-text`
 - `iframe[data-testid="embed-iframe"], a[dir="auto"]`
 - `.has-row-header.mobile_no_border_color.hasContentPadding`
+- `.row.large-12.small-12:nth-child(9)`
 - `.row.large-12.small-12:nth-child(11)`
-- `.row.large-12.small-12:nth-child(12)`
-- `.row.large-12.small-12:nth-child(13)`
+- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(12)`
 - `#article_list_10180103 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10180103 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.page-content > .border-bg-quaternary.mobile_border-bg-quaternary.hasBorder`
 - `#article_list_9904930 > .inner.fullwidthTarget.content`
 - `#article_list_10187147 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10187147 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(19)`
+- `.row.large-12.small-12:nth-child(18)`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(22)`
+- `.row.large-12.small-12:nth-child(21)`
 - `.border_width_no_border_width.border_width_mobile_no_border_width.color_mobile_no_bg_color`
-- `.row.large-12.small-12:nth-child(24)`
-- `.row.large-12.small-12:nth-child(27)`
+- `.row.large-12.small-12:nth-child(23)`
+- `.row.large-12.small-12:nth-child(26)`
 - `#article_list_10184114 > .content > .font-weight-normal.m-font-weight-normal.t25`
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
+- `.row.large-12.small-12:nth-child(28)`
 - `.row.large-12.small-12:nth-child(29)`
-- `.row.large-12.small-12:nth-child(31)`
-- `.row.large-12.small-12:nth-child(32)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(33)`
-- `.bg-primary.color_mobile_bg-primary.hasContentPadding:nth-child(34)`
+- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(31)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32)`
+- `.row.large-12.small-12:nth-child(33)`
+- `.row.large-12.small-12:nth-child(34)`
 - `.row.large-12.small-12:nth-child(36)`
-- `.bg-primary.color_mobile_bg-primary.has-row-header:nth-child(37)`
-- `.row.large-12.small-12:nth-child(38)`
-- `.row.large-12.small-12:nth-child(39)`
-- `.row.large-12.small-12:nth-child(41)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(37)`
 - `#article_list_10230577 > .content > .font-weight-normal.m-font-weight-normal.t25`
 - `#article_list_10230577 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(43)`
 - `.bg-tertiary`
-- `.row.large-12.small-12:nth-child(46)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(47)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(41)`
 - `.color_mobile_no_bg_color.content > .headline[itemprop="headline"]`
 - `.powered-by`
