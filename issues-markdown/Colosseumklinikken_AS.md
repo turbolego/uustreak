@@ -1,6 +1,6 @@
 # WCAG Violations Report for Colosseumklinikken AS
 
-**Timestamp:** 2026-03-05T00:40:59.118Z
+**Timestamp:** 2026-03-06T00:46:20.875Z
 **URL:** [https://colosseumtannlege.no/#](https://colosseumtannlege.no/#)
 **Total Violations:** 2
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.random-specialists-block__specialist:nth-child(3) > .random-specialists-block__link > .random-specialists-block__specialist-info > .random-specialists-block__name`
-- `.random-specialists-block__specialist:nth-child(3) > .random-specialists-block__link > .random-specialists-block__specialist-info > .random-specialists-block__position`
+- `a[href$="andy-hsu/"] > .random-specialists-block__specialist-info > .random-specialists-block__name`
+- `a[href$="andy-hsu/"] > .random-specialists-block__specialist-info > .random-specialists-block__position`
 
 ### All page content should be contained by landmarks
 

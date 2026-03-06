@@ -1,22 +1,10 @@
 # WCAG Violations Report for Lørenskog kommune
 
-**Timestamp:** 2026-03-05T00:46:14.330Z
+**Timestamp:** 2026-03-06T00:49:32.976Z
 **URL:** [https://www.lorenskog.kommune.no/#](https://www.lorenskog.kommune.no/#)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
-
-### ARIA dialog and alertdialog nodes should have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA dialog and alertdialog node has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-dialog-name?application=playwright
-- **Tags:** cat.aria, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.bc-content-modal`
 
 ### Buttons must have discernible text
 
