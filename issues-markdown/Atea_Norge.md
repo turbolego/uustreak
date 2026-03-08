@@ -1,7 +1,7 @@
 # WCAG Violations Report for Atea Norge
 
-**Timestamp:** 2026-03-06T00:40:13.741Z
-**URL:** [https://www.atea.no/#](https://www.atea.no/#)
+**Timestamp:** 2026-03-08T00:51:24.306Z
+**URL:** [https://www.atea.no/](https://www.atea.no/)
 **Total Violations:** 9
 
 ## Violation Details
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `sleeknote-vmr8ue-bottom,sleeknote-form,button[type="button"][draggable="true"][unselectable="on"]`
+- `sleeknote-vnyilq-bottom,sleeknote-form,button[type="button"][draggable="true"][unselectable="on"]`
 
 ### Images must have alternative text
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `sleeknote-vmr8ue-bottom,sleeknote-form,img[draggable="true"][unselectable="on"][imagetype=""]`
+- `sleeknote-vnyilq-bottom,sleeknote-form,img[draggable="true"][unselectable="on"][imagetype=""]`
 
 ### Form elements should have a visible label
 
@@ -100,7 +100,7 @@
 
 #### Affected Elements:
 
-- `sleeknote-vmr8ue-bottom,sleeknote-badge,.sleeknote-badge`
+- `sleeknote-vnyilq-bottom,sleeknote-badge,.sleeknote-badge`
 
 ### All page content should be contained by landmarks
 

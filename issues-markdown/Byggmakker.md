@@ -1,7 +1,7 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2026-03-06T00:44:43.707Z
-**URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
+**Timestamp:** 2026-03-08T00:56:14.606Z
+**URL:** [https://www.byggmakker.no/](https://www.byggmakker.no/)
 **Total Violations:** 5
 
 ## Violation Details
@@ -182,25 +182,25 @@
 - `.product-card__product-price[data-product_id="7070838006102"][data-price-history="169"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
 - `.product-card__product-price[data-product_id="7070838006102"][data-price-history="169"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
 - `.product-card__product-price[data-product_id="7070838006102"][data-price-history="169"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.campaign-product-list__container:nth-child(10) > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
+- `.campaign-product-list__container:nth-child(9) > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
 - `.product-card[data-product_id="7070838018204"][data-price-history="229"] > .product-card__image-container > div:nth-child(1) > strong`
 - `.product-card__product-price[data-product_id="7070838018204"][data-price-history="229"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
 - `.product-card__product-price[data-product_id="7070838018204"][data-price-history="229"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
 - `.product-card__product-price[data-product_id="7070838018204"][data-price-history="229"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
 - `.product-card__product-price[data-product_id="7070838018204"][data-price-history="229"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.campaign-product-list__container:nth-child(10) > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
+- `.campaign-product-list__container:nth-child(9) > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
 - `.product-card[data-product_id="7070838018365"][data-price-history="219"] > .product-card__image-container > div:nth-child(1) > strong`
 - `.product-card__product-price[data-product_id="7070838018365"][data-price-history="219"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
 - `.product-card__product-price[data-product_id="7070838018365"][data-price-history="219"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
 - `.product-card__product-price[data-product_id="7070838018365"][data-price-history="219"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
 - `.product-card__product-price[data-product_id="7070838018365"][data-price-history="219"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.campaign-product-list__container:nth-child(10) > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
+- `.campaign-product-list__container:nth-child(9) > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
 - `.product-card[data-product_id="7070838028050"][data-price-history="800.36"] > .product-card__image-container > div:nth-child(1) > strong`
 - `.product-card__product-price[data-product_id="7070838028050"][data-price-history="800.36"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
 - `.product-card__product-price[data-product_id="7070838028050"][data-price-history="800.36"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
 - `.product-card__product-price[data-product_id="7070838028050"][data-price-history="800.36"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
 - `.product-card__product-price[data-product_id="7070838028050"][data-price-history="800.36"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.campaign-product-list__container:nth-child(10) > .campaign-product-list > .campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
+- `.campaign-product-list__container:nth-child(9) > .campaign-product-list > .campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
 - `.product-card__product-price[data-product_id="88381826433"][data-price-history="3790"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
 - `.product-card__product-price[data-product_id="88381826433"][data-price-history="3790"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
 - `.product-card__product-price[data-product_id="88381826433"][data-price-history="3790"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
@@ -217,13 +217,13 @@
 - `.product-card__product-price[data-product_id="5703192007288"][data-price-history="35190"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
 - `.product-card__product-price[data-product_id="5703192007288"][data-price-history="35190"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
 - `.product-card__product-price[data-product_id="5703192007288"][data-price-history="35190"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.campaign-product-list__container:nth-child(15) > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
+- `.campaign-product-list__container:nth-child(14) > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
 - `.product-card[data-product_id="7022390527762"][data-price-history="35590"] > .product-card__image-container > div:nth-child(1) > strong`
 - `.product-card__product-price[data-product_id="7022390527762"][data-price-history="35590"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
 - `.product-card__product-price[data-product_id="7022390527762"][data-price-history="35590"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
 - `.product-card__product-price[data-product_id="7022390527762"][data-price-history="35590"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
 - `.product-card__product-price[data-product_id="7022390527762"][data-price-history="35590"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.campaign-product-list__container:nth-child(15) > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
+- `.campaign-product-list__container:nth-child(14) > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .campaign-label.campaign-label--small.label-orange`
 
 ### Headings should not be empty
 
@@ -231,17 +231,16 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 11
+- **Count:** 10
 
 #### Affected Elements:
 
-- `.hero-banner:nth-child(4) > .responsive-hero.responsive-hero--left > .responsive-hero__content > h3`
 - `#gzjIvV1qsz3NdZSoNrwr7-title`
 - `#b8aQMu7ORmbhaqGN6FJL3-title`
 - `#\33 DPDtkGjsppJ1l6gfJj9Rt-title`
 - `.teaser:nth-child(1) > .teaser__background-image > .teaser__content > .teaser__heading`
 - `.teaser:nth-child(2) > .teaser__background-image > .teaser__content > .teaser__heading`
-- `.column-layout:nth-child(12) > .column-layout__container > .column-layout__title`
+- `.column-layout:nth-child(11) > .column-layout__container > .column-layout__title`
 - `#\34 XAMjmtbFJouRy2Y2HAtPH-title`
 - `#\35 jEmf9y6skVo2VFSeLq9gG-title`
 - `#\36 L0V8e5iF05SuPKt0kOrPq-title`

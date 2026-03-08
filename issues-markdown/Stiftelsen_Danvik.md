@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stiftelsen Danvik
 
-**Timestamp:** 2026-03-06T00:36:35.977Z
-**URL:** [https://www.danvik.no/#](https://www.danvik.no/#)
+**Timestamp:** 2026-03-08T01:01:23.871Z
+**URL:** [https://www.danvik.no/](https://www.danvik.no/)
 **Total Violations:** 3
 
 ## Violation Details
@@ -19,7 +19,7 @@
 - `h4:nth-child(4)`
 - `h4:nth-child(5)`
 - `h4:nth-child(6)`
-- `#block-cfbb468cda4135245bdb > .sqs-block-content > .sqs-html-content[data-sqsp-text-block-content=""] > h3`
+- `#block-cfbb468cda4135245bdb > .sqs-block-content > .sqs-text-block-container > .sqs-html-content[data-sqsp-text-block-content=""] > h3`
 
 ### Heading levels should only increase by one
 
@@ -31,8 +31,8 @@
 
 #### Affected Elements:
 
-- `#block-yui_3_17_2_1_1648026520772_12895 > .sqs-block-content > .sqs-html-content[data-sqsp-text-block-content=""] > h3`
-- `#block-cfbb468cda4135245bdb > .sqs-block-content > .sqs-html-content[data-sqsp-text-block-content=""] > h3`
+- `#block-yui_3_17_2_1_1648026520772_12895 > .sqs-block-content > .sqs-text-block-container > .sqs-html-content[data-sqsp-text-block-content=""] > h3`
+- `#block-cfbb468cda4135245bdb > .sqs-block-content > .sqs-text-block-container > .sqs-html-content[data-sqsp-text-block-content=""] > h3`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

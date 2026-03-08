@@ -1,7 +1,7 @@
 # WCAG Violations Report for Asker kommune
 
-**Timestamp:** 2026-03-06T00:39:16.188Z
-**URL:** [https://www.asker.kommune.no/#](https://www.asker.kommune.no/#)
+**Timestamp:** 2026-03-08T00:50:13.733Z
+**URL:** [https://www.asker.kommune.no/](https://www.asker.kommune.no/)
 **Total Violations:** 3
 
 ## Violation Details

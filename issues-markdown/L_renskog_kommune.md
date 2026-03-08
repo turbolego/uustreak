@@ -1,7 +1,7 @@
 # WCAG Violations Report for Lørenskog kommune
 
-**Timestamp:** 2026-03-06T00:49:32.976Z
-**URL:** [https://www.lorenskog.kommune.no/#](https://www.lorenskog.kommune.no/#)
+**Timestamp:** 2026-03-08T01:23:12.127Z
+**URL:** [https://www.lorenskog.kommune.no/](https://www.lorenskog.kommune.no/)
 **Total Violations:** 3
 
 ## Violation Details

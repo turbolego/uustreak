@@ -1,7 +1,7 @@
 # WCAG Violations Report for Norwegian Air Shuttle ASA
 
-**Timestamp:** 2026-03-06T00:39:34.330Z
-**URL:** [https://www.norwegian.com/#](https://www.norwegian.com/#)
+**Timestamp:** 2026-03-08T00:48:13.042Z
+**URL:** [https://www.norwegian.com/](https://www.norwegian.com/)
 **Total Violations:** 2
 
 ## Violation Details

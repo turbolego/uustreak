@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norgesnett AS
 
-**Timestamp:** 2026-03-06T00:38:34.109Z
+**Timestamp:** 2026-03-08T00:47:03.802Z
 **URL:** [https://norgesnett.no/](https://norgesnett.no/)
 **Total Violations:** 8
 
@@ -16,12 +16,12 @@
 
 #### Affected Elements:
 
-- `.e2-e56.is-current-slide.is-virtual:nth-child(1)`
-- `.e2-e66.is-virtual.x-slide:nth-child(2)`
-- `.e2-e76.is-virtual.x-slide:nth-child(3)`
-- `.e2-e56.is-current-slide.is-virtual:nth-child(7)`
-- `.e2-e66.is-virtual.x-slide:nth-child(8)`
-- `.e2-e76.is-virtual.x-slide:nth-child(9)`
+- `.e2-e55.is-current-slide.is-virtual:nth-child(1)`
+- `.e2-e65.is-virtual.x-slide:nth-child(2)`
+- `.e2-e75.is-virtual.x-slide:nth-child(3)`
+- `.e2-e55.is-current-slide.is-virtual:nth-child(7)`
+- `.e2-e65.is-virtual.x-slide:nth-child(8)`
+- `.e2-e75.is-virtual.x-slide:nth-child(9)`
 
 ### Buttons must have discernible text
 
@@ -95,8 +95,8 @@
 
 #### Affected Elements:
 
-- `.e2-e87`
-- `.e2-e89`
+- `.e2-e86`
+- `.e2-e88`
 - `.e5071-e115`
 - `.e5071-e117`
 - `.e5071-e119`

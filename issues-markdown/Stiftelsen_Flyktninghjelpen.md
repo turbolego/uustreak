@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stiftelsen Flyktninghjelpen
 
-**Timestamp:** 2026-03-06T00:36:50.664Z
-**URL:** [https://www.nrc.no/#](https://www.nrc.no/#)
+**Timestamp:** 2026-03-08T01:01:38.873Z
+**URL:** [https://www.nrc.no/](https://www.nrc.no/)
 **Total Violations:** 4
 
 ## Violation Details
@@ -21,8 +21,8 @@
 - `.three-layer-header__donation-button`
 - `.action`
 - `.block:nth-child(1) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content > .article-list-view-model__tags > time`
+- `.block:nth-child(2) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content > .article-list-view-model__tags > time`
 - `.article-list-view-model__content--no-image > .article-list-view-model__tags > time`
-- `.block:nth-child(3) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content > .article-list-view-model__tags > time`
 
 ### Heading levels should only increase by one
 
@@ -34,7 +34,7 @@
 
 #### Affected Elements:
 
-- `.contentareaitem:nth-child(1) > .banner.content-module.content-module--Crisis > .poster > .poster__heading-container > .poster__heading-title`
+- `.poster__heading-title`
 
 ### Links must have discernible text
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-03-06T00:42:37.809Z
+**Timestamp:** 2026-03-08T01:07:31.198Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
 **Total Violations:** 6
 
@@ -74,8 +74,8 @@
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(2) > .main-stock.stock[size="14px"]`
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(3) > .main-stock.stock[size="14px"]`
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(4) > .main-stock.stock[size="14px"]`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-8f8f6f81=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-c2e46e13=""] > .tn-listitem.content-m.m`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-8f8f6f81=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-c2e46e13=""] > .tn-listitem.content-m.m:nth-child(1)`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-8f8f6f81=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-eed3b86f=""] > .tn-listitem.content-m.m`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-8f8f6f81=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-eed3b86f=""] > .tn-listitem.content-m.m:nth-child(1)`
 - `.tn-listitem.content-m.m:nth-child(2)`
 
 ### All page content should be contained by landmarks
