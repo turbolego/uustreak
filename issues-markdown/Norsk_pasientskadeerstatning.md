@@ -1,7 +1,7 @@
 # WCAG Violations Report for Norsk pasientskadeerstatning
 
-**Timestamp:** 2026-03-08T00:48:00.505Z
-**URL:** [https://www.npe.no/](https://www.npe.no/)
+**Timestamp:** 2026-03-10T02:20:02.767Z
+**URL:** [https://www.npe.no/#](https://www.npe.no/#)
 **Total Violations:** 1
 
 ## Violation Details

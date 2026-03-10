@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kreftforeningen
 
-**Timestamp:** 2026-03-08T01:19:48.148Z
+**Timestamp:** 2026-03-10T02:27:41.129Z
 **URL:** [https://kreftforeningen.no/](https://kreftforeningen.no/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `#declineButton`
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.button-inner-wrapper > span:nth-child(2)`
 
 ### Document should not have more than one banner landmark
 

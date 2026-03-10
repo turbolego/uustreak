@@ -1,10 +1,22 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2026-03-08T01:01:10.307Z
-**URL:** [https://bymuseet.no/](https://bymuseet.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-03-10T02:16:58.839Z
+**URL:** [https://bymuseet.no/#](https://bymuseet.no/#)
+**Total Violations:** 8
 
 ## Violation Details
+
+### ARIA role should be appropriate for the element
+
+- **Impact:** minor
+- **Description:** Ensure role attribute has an appropriate value for the element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#slick-slide00 > .vimeo-wrapper > iframe, body`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -12,7 +24,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 28
+- **Count:** 29
 
 #### Affected Elements:
 
@@ -31,7 +43,8 @@
 - `.event.load-more__item.col-lg-3:nth-child(6) > .event-cover > .event-date`
 - `.event.load-more__item.col-lg-3:nth-child(7) > .event-cover > .location > span`
 - `.event.load-more__item.col-lg-3:nth-child(7) > .event-cover > .event-date`
-- `.event.load-more__item.col-lg-3:nth-child(8) > .event-cover > .location > span`
+- `.event.load-more__item.col-lg-3:nth-child(8) > .event-cover > .location > span:nth-child(1)`
+- `.event.load-more__item.col-lg-3:nth-child(8) > .event-cover > .location > span:nth-child(2)`
 - `.event.load-more__item.col-lg-3:nth-child(8) > .event-cover > .event-date`
 - `#load-mer`
 - `a[target="_blank"] > .block > .description`
@@ -113,13 +126,26 @@
 
 - `meta[name="viewport"]`
 
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- `html`
+- `#slick-slide00 > .vimeo-wrapper > iframe, html`
+
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 36
+- **Count:** 35
 
 #### Affected Elements:
 
@@ -148,7 +174,6 @@
 - `.event.load-more__item.col-lg-3:nth-child(7)`
 - `.event.load-more__item.col-lg-3:nth-child(8)`
 - `.main-row > .text-center`
-- `#slick-slide00 > .vimeo-wrapper > iframe, #error`
 - `.cta[target="_self"] > span`
 - `.culture-for-all`
 - `.call-to-actions > .container`

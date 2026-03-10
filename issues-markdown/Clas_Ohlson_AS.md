@@ -1,7 +1,7 @@
 # WCAG Violations Report for Clas Ohlson AS
 
-**Timestamp:** 2026-03-08T00:57:28.461Z
-**URL:** [https://www.clasohlson.com/no/](https://www.clasohlson.com/no/)
+**Timestamp:** 2026-03-10T02:27:24.779Z
+**URL:** [https://www.clasohlson.com/no/#](https://www.clasohlson.com/no/#)
 **Total Violations:** 7
 
 ## Violation Details
@@ -17,7 +17,7 @@
 #### Affected Elements:
 
 - `.carousel__component.carousel-component-parent.right-shadow:nth-child(5) > .carousel__component--headline:nth-child(1) > .title-two`
-- `.carousel__component.carousel-component-parent.right-shadow:nth-child(7) > .carousel__component--headline:nth-child(1) > .title-two`
+- `.carousel__component.carousel-component-parent.right-shadow:nth-child(11) > .carousel__component--headline:nth-child(1) > .title-two`
 
 ### Frames must have an accessible name
 
@@ -68,12 +68,12 @@
 
 #### Affected Elements:
 
-- `.cot-se-inspiration__item-button.cot-se-inspiration__item-button--black[href="/no/Hjem/Kjøkkenutstyr/c/2927"]`
+- `.cot-se-inspiration__item-button.cot-se-inspiration__item-button--black[href="/no/Fritid/Dyrking/c/2435"]`
 - `.cot-se-inspiration__item:nth-child(2) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
 - `.cot-se-inspiration__item:nth-child(3) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
 - `.cot-se-inspiration__item:nth-child(4) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
 - `.cot-se-inspiration__item:nth-child(5) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
-- `.cot-se-inspiration__item:nth-child(6) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
+- `.cot-se-inspiration__item-button.cot-se-inspiration__item-button--black[href="/no/Fritid/Hageredskap/c/2447"]`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 

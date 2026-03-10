@@ -1,6 +1,6 @@
 # WCAG Violations Report for Eiendomsmegler Vest AS
 
-**Timestamp:** 2026-03-08T01:04:22.223Z
+**Timestamp:** 2026-03-10T02:33:36.138Z
 **URL:** [https://www.eiendomsmeglernorge.no/](https://www.eiendomsmeglernorge.no/)
 **Total Violations:** 7
 
@@ -90,7 +90,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 8
+- **Count:** 7
 
 #### Affected Elements:
 
@@ -101,4 +101,3 @@
 - `h6`
 - `#boligsok > .sm-section > h2`
 - `#vi-gjor-boligen-din-synlig`
-- `.footer-disclaimer`
