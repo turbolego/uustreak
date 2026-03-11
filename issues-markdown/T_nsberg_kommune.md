@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tønsberg kommune
 
-**Timestamp:** 2026-03-10T02:26:21.569Z
+**Timestamp:** 2026-03-11T04:09:11.811Z
 **URL:** [https://www.tonsberg.kommune.no/#](https://www.tonsberg.kommune.no/#)
 **Total Violations:** 3
 

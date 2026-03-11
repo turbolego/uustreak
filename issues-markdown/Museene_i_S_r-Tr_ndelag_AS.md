@@ -1,6 +1,6 @@
 # WCAG Violations Report for Museene i Sør-Trøndelag AS
 
-**Timestamp:** 2026-03-10T02:15:22.207Z
+**Timestamp:** 2026-03-11T04:00:59.089Z
 **URL:** [https://mist.no/#](https://mist.no/#)
 **Total Violations:** 1
 

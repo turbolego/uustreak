@@ -1,6 +1,6 @@
 # WCAG Violations Report for TietoEVRY
 
-**Timestamp:** 2026-03-10T02:23:47.440Z
+**Timestamp:** 2026-03-11T04:06:46.419Z
 **URL:** [https://www.tietoevry.com/no/#](https://www.tietoevry.com/no/#)
 **Total Violations:** 1
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Colosseumklinikken AS
 
-**Timestamp:** 2026-03-10T02:27:49.846Z
+**Timestamp:** 2026-03-11T04:11:16.168Z
 **URL:** [https://colosseumtannlege.no/#](https://colosseumtannlege.no/#)
 **Total Violations:** 2
 

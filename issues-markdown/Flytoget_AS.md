@@ -1,6 +1,6 @@
 # WCAG Violations Report for Flytoget AS
 
-**Timestamp:** 2026-03-10T02:18:14.493Z
+**Timestamp:** 2026-03-11T04:03:27.588Z
 **URL:** [https://flytoget.no/#](https://flytoget.no/#)
 **Total Violations:** 6
 

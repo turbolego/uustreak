@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-03-10T02:28:43.222Z
+**Timestamp:** 2026-03-11T04:12:10.715Z
 **URL:** [https://www.dagbladet.no/#](https://www.dagbladet.no/#)
 **Total Violations:** 2
 

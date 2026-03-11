@@ -1,8 +1,8 @@
 # WCAG Violations Report for Firda Media AS
 
-**Timestamp:** 2026-03-10T02:17:16.003Z
+**Timestamp:** 2026-03-11T04:02:28.753Z
 **URL:** [https://www.firda.no/#](https://www.firda.no/#)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `#eaframe`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.navigation > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kristiansand Dyrepark AS
 
-**Timestamp:** 2026-03-10T02:28:06.383Z
+**Timestamp:** 2026-03-11T04:13:32.676Z
 **URL:** [https://www.dyreparken.no/#](https://www.dyreparken.no/#)
 **Total Violations:** 6
 
@@ -54,49 +54,50 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 42
+- **Count:** 43
 
 #### Affected Elements:
 
 - `#CybotCookiebotDialogBodyContentText > a[href$="cookies/"]`
-- `.main-menu__cart`
-- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(8) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(8) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(8) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(8) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-3.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-3.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-3.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--image-size-bleeding.c-grid--columns-small-3.c-grid--columns-3 > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(12) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(12) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(12) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-theme-dyreparken-secondary.u-bg-background.c-module--has-background:nth-child(12) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(6) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid__item:nth-child(7) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-theme-dyreparken-secondary-light.c-module--billboard.c-module--split:nth-child(13) > .c-module__container > .c-billboard--variant-light > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
-- `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(1) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(2) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(4) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(6) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(7) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.owl-item:nth-child(9) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.owl-item:nth-child(10) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.owl-item:nth-child(11) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(1) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(2) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(3) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(4) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(5) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(6) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(7) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(8) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-theme-dyreparken-secondary-light.c-module--billboard.c-module--split:nth-child(16) > .c-module__container > .c-billboard--variant-light > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
+- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--columns-small-3.c-grid--columns-3.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(6) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--columns-2 > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--columns-2 > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(10) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(10) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(10) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(10) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--columns-3.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--columns-3.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--columns-3.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(12) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(12) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(12) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(12) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(6) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid__item:nth-child(7) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--image-size-bleeding.c-grid--columns-small-3.c-grid--columns-3 > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-billboard--variant-light > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
+- `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(1) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(2) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(4) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(6) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(7) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.owl-item:nth-child(9) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.owl-item:nth-child(10) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.owl-item:nth-child(11) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(1) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(2) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .active.owl-item:nth-child(3) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(4) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(5) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(6) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(7) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
+- `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-stage-outer > .owl-stage > .owl-item:nth-child(8) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit="cover"][title=""]`
 - `.c-billboard__image[itemtype="http://schema.org/ImageObject"][href$="app/"]`
 - `.c-footer__app__links > a:nth-child(1)`
 - `.c-footer__app__links > a:nth-child(2)`
@@ -122,11 +123,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 4
+- **Count:** 3
 
 #### Affected Elements:
 
-- `.c-header-message`
 - `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(1)`
 - `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(3)`
 - `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text > span`

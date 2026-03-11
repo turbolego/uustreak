@@ -1,6 +1,6 @@
 # WCAG Violations Report for Asker og Bærum Budstikke AS
 
-**Timestamp:** 2026-03-10T02:20:44.330Z
+**Timestamp:** 2026-03-11T04:04:23.041Z
 **URL:** [https://www.budstikka.no/#](https://www.budstikka.no/#)
 **Total Violations:** 4
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.navigation > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `brick-carousel-v2[data-slides="20"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 

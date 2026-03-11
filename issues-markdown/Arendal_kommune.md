@@ -1,6 +1,6 @@
 # WCAG Violations Report for Arendal kommune
 
-**Timestamp:** 2026-03-10T02:19:41.364Z
+**Timestamp:** 2026-03-11T04:03:20.672Z
 **URL:** [https://www.arendal.kommune.no/#](https://www.arendal.kommune.no/#)
 **Total Violations:** 1
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-03-10T02:31:04.406Z
+**Timestamp:** 2026-03-11T04:13:35.081Z
 **URL:** [https://www.vitusapotek.no/#](https://www.vitusapotek.no/#)
 **Total Violations:** 6
 

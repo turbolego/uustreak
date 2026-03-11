@@ -1,8 +1,8 @@
 # WCAG Violations Report for Color Line AS
 
-**Timestamp:** 2026-03-10T02:27:36.999Z
+**Timestamp:** 2026-03-11T04:11:03.162Z
 **URL:** [https://www.colorline.no/#](https://www.colorline.no/#)
-**Total Violations:** 7
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `#declineButton`
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.float-content`
 
 ### Heading levels should only increase by one
 

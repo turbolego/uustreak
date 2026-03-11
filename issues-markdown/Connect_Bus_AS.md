@@ -1,6 +1,6 @@
 # WCAG Violations Report for Connect Bus AS
 
-**Timestamp:** 2026-03-10T02:28:02.232Z
+**Timestamp:** 2026-03-11T04:11:27.572Z
 **URL:** [https://www.connectbus.no/#](https://www.connectbus.no/#)
 **Total Violations:** 1
 

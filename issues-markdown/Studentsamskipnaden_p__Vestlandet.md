@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-03-10T02:20:39.536Z
+**Timestamp:** 2026-03-11T04:03:27.090Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 5
 
@@ -101,7 +101,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 36
+- **Count:** 35
 
 #### Affected Elements:
 
@@ -118,14 +118,13 @@
 - `#carousel1`
 - `#carousel2`
 - `#carousel3`
-- `#carousel4`
 - `a[href$="nye-gruppetimer"] > .relative.h-fit > .h-56.object-cover`
 - `a[href$="nye-gruppetimer"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > .text-superTitle.leading-tight.md\:leading-snug`
 - `a[href$="nye-gruppetimer"] > .px-3.pb-3.pt-1`
-- `#carousel6`
+- `#carousel5`
 - `a[href$="svom-langt"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > .text-superTitle.leading-tight.md\:leading-snug`
 - `a[href$="svom-langt"] > .px-3.pb-3.pt-1`
-- `#carousel8`
+- `#carousel7`
 - `div:nth-child(1) > .\!font-bold.pb-4`
 - `.gap-3[href$="bolig"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
 - `.gap-3[href$="studentliv"][target="_self"] > .text-base-white.svelte-18q32uc[for=""]`
