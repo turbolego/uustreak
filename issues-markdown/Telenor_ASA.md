@@ -1,8 +1,8 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-03-11T04:05:42.154Z
+**Timestamp:** 2026-03-12T03:38:23.114Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -39,26 +39,12 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-header[data-v-8f8f6f81=""] > .margin-top-3xl.padding-top-3xs`
-- `.dropdown-category.footer.dark:nth-child(1) > .dropdown-link[data-v-9b029b67=""] > .dropdown-header.hidden-mobile[data-v-9b029b67=""] > h6`
-- `#privacy_prompt_text2 > h4`
-
-### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
-
-- **Impact:** serious
-- **Description:** Ensure that lists are structured correctly
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/list?application=playwright
-- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 2
 
 #### Affected Elements:
 
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-8f8f6f81=""] > .tn-list.content-list[data-v-797e5417=""]`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-8f8f6f81=""] > .tn-list.content-list[data-v-797e5417=""]`
+- `.dropdown-category.footer.dark:nth-child(1) > .dropdown-link[data-v-9b029b67=""] > .dropdown-header.hidden-mobile[data-v-9b029b67=""] > h6`
+- `h4`
 
 ### <li> elements must be contained in a <ul> or <ol>
 
@@ -66,7 +52,7 @@
 - **Description:** Ensure <li> elements are used semantically
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/listitem?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 7
+- **Count:** 4
 
 #### Affected Elements:
 
@@ -74,9 +60,6 @@
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(2) > .main-stock.stock[size="14px"]`
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(3) > .main-stock.stock[size="14px"]`
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(4) > .main-stock.stock[size="14px"]`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-8f8f6f81=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-eed3b86f=""] > .tn-listitem.content-m.m`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-8f8f6f81=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-eed3b86f=""] > .tn-listitem.content-m.m:nth-child(1)`
-- `.tn-listitem.content-m.m:nth-child(2)`
 
 ### All page content should be contained by landmarks
 

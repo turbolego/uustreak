@@ -1,8 +1,8 @@
 # WCAG Violations Report for Eiendomsmegler Vest AS
 
-**Timestamp:** 2026-03-11T04:23:07.041Z
-**URL:** [https://www.eiendomsmeglervest.no/#](https://www.eiendomsmeglervest.no/#)
-**Total Violations:** 6
+**Timestamp:** 2026-03-12T03:33:20.270Z
+**URL:** [https://www.eiendomsmeglernorge.no/](https://www.eiendomsmeglernorge.no/)
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -16,9 +16,9 @@
 
 #### Affected Elements:
 
-- `div:nth-child(2) > a[target="_blank"]`
-- `p:nth-child(5) > a`
-- `#brand_link`
+- `#menu-item-1064875 > .suki-menu-item-link > .suki-menu-item-title`
+- `#menu-item-1064874 > .suki-menu-item-link > .suki-menu-item-title`
+- `#menu-item-1064876 > .suki-menu-item-link > .suki-menu-item-title`
 
 ### Heading levels should only increase by one
 
@@ -30,32 +30,43 @@
 
 #### Affected Elements:
 
-- `#cf-browser-status > .md\:inline-block.md\:mt-0.text-gray-600`
+- `h6`
 
-### Document should have one main landmark
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `img`
+
+### Document should not have more than one banner landmark
 
 - **Impact:** moderate
-- **Description:** Ensure the document has a main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright
+- **Description:** Ensure the document has at most one banner landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `html`
+- `#coiOverlay`
 
-### Links must be distinguishable without relying on color
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
-- **Impact:** serious
-- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
-- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
-- **Count:** 2
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
 
 #### Affected Elements:
 
-- `div:nth-child(2) > a[target="_blank"]`
-- `p:nth-child(5) > a`
+- `#coiOverlay`
 
 ### Links must have discernible text
 
@@ -63,11 +74,15 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
+- **Count:** 5
 
 #### Affected Elements:
 
-- `.mb-10.md\:m-0.relative > a[target="_blank"]`
+- `.suki-header-logo > .site-title.h1.menu-item > .suki-menu-item-link[rel="home"]`
+- `.image-top-side.sm-2col:nth-child(1) > .sm-2col-image-wrapper > a`
+- `.image-top-side.sm-2col:nth-child(2) > .sm-2col-image-wrapper > a`
+- `.image-top-side.sm-2col:nth-child(3) > .sm-2col-image-wrapper > a`
+- `.image-top-side.sm-2col:nth-child(4) > .sm-2col-image-wrapper > a`
 
 ### All page content should be contained by landmarks
 
@@ -75,10 +90,14 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 3
+- **Count:** 7
 
 #### Affected Elements:
 
-- `.my-8`
-- `.mb-8.lg\:px-8.w-240:nth-child(3)`
-- `.text-13`
+- `.skip-link`
+- `#boligreise`
+- `#boliglan`
+- `#mer-om-bolig`
+- `h6`
+- `#boligsok > .sm-section > h2`
+- `#vi-gjor-boligen-din-synlig`

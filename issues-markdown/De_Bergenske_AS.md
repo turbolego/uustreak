@@ -1,6 +1,6 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-03-11T04:13:33.649Z
+**Timestamp:** 2026-03-12T03:29:29.671Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
 **Total Violations:** 8
 
@@ -141,13 +141,13 @@
 - `.DARK.\!bg-Theme\/Dark:nth-child(4)`
 - `.DARK.\!bg-Theme\/Dark:nth-child(5)`
 - `.DARK.\!bg-Theme\/Dark:nth-child(6)`
-- `.DARK.\!bg-Theme\/Dark:nth-child(7) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
-- `.DARK.\!bg-Theme\/Dark:nth-child(8) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
-- `.DARK.\!bg-Theme\/Dark:nth-child(9) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
-- `.DARK.\!bg-Theme\/Dark:nth-child(10) > .py-15[data-v-45215bba=""] > .container-fluid.xl\:pr-0.xl\:pl-15 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
+- `.DARK.\!bg-Theme\/Dark:nth-child(7) > .py-15[data-v-3b06c5a9=""] > .xl\:pr-0.xl\:pl-15.grid-cols-4 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
+- `.DARK.\!bg-Theme\/Dark:nth-child(8) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
+- `.DARK.\!bg-Theme\/Dark:nth-child(9) > .py-15[data-v-3b06c5a9=""] > .xl\:pr-0.xl\:pl-15.grid-cols-4 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
+- `.DARK.\!bg-Theme\/Dark:nth-child(10) > .py-15[data-v-3b06c5a9=""] > .xl\:pr-0.xl\:pl-15.grid-cols-4 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
 - `.DARK.\!bg-Theme\/Dark:nth-child(11)`
 - `.DARK.\!bg-Theme\/Dark:nth-child(12)`
-- `.DARK.\!bg-Theme\/Dark:nth-child(13) > .py-15[data-v-45215bba=""] > .container[data-v-45215bba=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
+- `.DARK.\!bg-Theme\/Dark:nth-child(13) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
 - `.DARK.\!bg-Theme\/Dark:nth-child(14)`
 - `.space-y-9 > .lg\:text-center`
 - `.space-y-9 > div:nth-child(2)`
