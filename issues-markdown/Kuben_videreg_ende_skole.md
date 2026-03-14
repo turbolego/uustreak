@@ -1,7 +1,7 @@
 # WCAG Violations Report for Kuben videregående skole
 
-**Timestamp:** 2026-03-12T03:53:21.893Z
-**URL:** [https://kuben.vgs.no/](https://kuben.vgs.no/)
+**Timestamp:** 2026-03-14T21:02:36.579Z
+**URL:** [https://kuben.vgs.no/#](https://kuben.vgs.no/#)
 **Total Violations:** 3
 
 ## Violation Details
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.col-lg-4.col-md-6.col-12:nth-child(5) > .factbox.factbox--white > .factbox__content > p:nth-child(1) > iframe`
-- `.col-lg-4.col-md-6.col-12:nth-child(6) > .factbox.factbox--white > .factbox__content > p:nth-child(1) > iframe`
+- `.col-lg-4.col-md-6.col-12:nth-child(1) > .factbox.factbox--white > .factbox__content.text-break > p:nth-child(1) > iframe`
+- `.col-lg-4.col-md-6.col-12:nth-child(2) > .factbox.factbox--white > .factbox__content.text-break > p:nth-child(1) > iframe`
 
 ### All page content should be contained by landmarks
 

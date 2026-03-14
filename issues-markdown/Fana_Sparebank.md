@@ -1,10 +1,27 @@
 # WCAG Violations Report for Fana Sparebank
 
-**Timestamp:** 2026-03-12T03:35:51.233Z
-**URL:** [https://www.fanasparebank.no/](https://www.fanasparebank.no/)
-**Total Violations:** 3
+**Timestamp:** 2026-03-14T20:49:03.043Z
+**URL:** [https://www.fanasparebank.no/#](https://www.fanasparebank.no/#)
+**Total Violations:** 5
 
 ## Violation Details
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 6
+
+#### Affected Elements:
+
+- `.hero__image > div > img`
+- `shape-image,#image`
+- `.card__image.beige-theme > div > img`
+- `scale-position-image[sc="1.1"],#image`
+- `scale-position-image[sc="1.0"],#image`
+- `scale-position-image[fp="0.10,0.0"],#image`
 
 ### Form elements should have a visible label
 
@@ -43,3 +60,15 @@
 #### Affected Elements:
 
 - `#coiOverlay`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.skip-link`

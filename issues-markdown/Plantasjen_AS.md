@@ -1,6 +1,6 @@
 # WCAG Violations Report for Plantasjen AS
 
-**Timestamp:** 2026-03-12T03:19:16.355Z
+**Timestamp:** 2026-03-14T20:52:45.554Z
 **URL:** [https://plantasjen.no/no](https://plantasjen.no/no)
 **Total Violations:** 2
 
@@ -24,9 +24,17 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Count:** 10
 
 #### Affected Elements:
 
-- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(3) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > .relative > .md\:px-8.group.gap-3 > .md\:top-6.left-0.top-6 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
-- `.max-w-\[50\%\].flex-\[0_0_50\%\].lg\:max-w-\[25\%\]:nth-child(1) > .gap-1\.5.rounded-lg.border-secondary-sand-soft > .relative > .md\:px-8.group.gap-3 > .md\:top-6.left-0.top-6 > .bg-secondary-terracotta.md\:px-2.py-1 > .text-white`
+- `.hover\:bg-secondary-eucalyptus\/90.whitespace-normal[href$="paske"]`
+- `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(1) > .rounded-br-\[2rem\].rounded-tl-\[2rem\].border-white > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.md\:px-3.py-1 > .font-ttCommons.font-semibold`
+- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(6) > .justify-center.flex > div > .hover\:bg-secondary-eucalyptus\/90.whitespace-normal.text-primary-foreground`
+- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(10) > .justify-center.flex > div > .hover\:bg-secondary-eucalyptus\/90.whitespace-normal.text-primary-foreground`
+- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(20) > .justify-center.flex > div > .hover\:bg-secondary-eucalyptus\/90.whitespace-normal.text-primary-foreground`
+- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(23) > .justify-center.flex > div > .hover\:bg-secondary-eucalyptus\/90.whitespace-normal.text-primary-foreground`
+- `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(2) > .rounded-br-\[2rem\].rounded-tl-\[2rem\].border-white > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.md\:px-3.py-1 > .font-ttCommons.font-semibold`
+- `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .rounded-br-\[2rem\].rounded-tl-\[2rem\].border-white > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.md\:px-3.py-1 > .font-ttCommons.font-semibold`
+- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(30) > .justify-center.flex > div > .hover\:bg-secondary-eucalyptus\/90.whitespace-normal.text-primary-foreground`
+- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(33) > .justify-center.flex > div > .hover\:bg-secondary-eucalyptus\/90.whitespace-normal.text-primary-foreground`

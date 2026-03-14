@@ -1,8 +1,8 @@
 # WCAG Violations Report for Thon Hotels AS
 
-**Timestamp:** 2026-03-12T03:39:22.565Z
-**URL:** [https://www.thonhotels.no/](https://www.thonhotels.no/)
-**Total Violations:** 5
+**Timestamp:** 2026-03-14T20:55:15.973Z
+**URL:** [https://www.thonhotels.no/#](https://www.thonhotels.no/#)
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 17
+- **Count:** 13
 
 #### Affected Elements:
 
@@ -29,10 +29,6 @@
 - `#coi-consent-banner__description-container-cookie_cat_necessary > .coi-consent-banner__found-cookies > .coi-consent-banner__cookie-details:nth-child(22) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container > .cookie-details__detail-content > a[rel="noopener noreferrer"][target="_blank"]`
 - `#coi-consent-banner__description-container-cookie_cat_necessary > .coi-consent-banner__found-cookies > .coi-consent-banner__cookie-details:nth-child(24) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container > .cookie-details__detail-content > a[rel="noopener noreferrer"][target="_blank"]`
 - `#coi-consent-banner__description-container-cookie_cat_necessary > .coi-consent-banner__found-cookies > .coi-consent-banner__cookie-details:nth-child(26) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container > .cookie-details__detail-content > a[rel="noopener noreferrer"][target="_blank"]`
-- `#coi-consent-banner__description-container-cookie_cat_necessary > .coi-consent-banner__found-cookies > .coi-consent-banner__cookie-details:nth-child(28) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container > .cookie-details__detail-content > a[rel="noopener noreferrer"][target="_blank"]`
-- `#coi-consent-banner__description-container-cookie_cat_necessary > .coi-consent-banner__found-cookies > .coi-consent-banner__cookie-details:nth-child(30) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container > .cookie-details__detail-content > a[rel="noopener noreferrer"][target="_blank"]`
-- `#coi-consent-banner__description-container-cookie_cat_necessary > .coi-consent-banner__found-cookies > .coi-consent-banner__cookie-details:nth-child(32) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container > .cookie-details__detail-content > a[rel="noopener noreferrer"][target="_blank"]`
-- `#coi-consent-banner__description-container-cookie_cat_necessary > .coi-consent-banner__found-cookies > .coi-consent-banner__cookie-details:nth-child(34) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container > .cookie-details__detail-content > a[rel="noopener noreferrer"][target="_blank"]`
 
 ### Form elements must have labels
 
@@ -66,20 +62,9 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `a[href=""]`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.site-message__inner > span`
+- `.coi-consent-banner__cookie-details:nth-child(1) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container[title=""] > .cookie-details__detail-content > a[href=""][rel="noopener noreferrer"][target="_blank"]`
+- `.coi-consent-banner__cookie-details:nth-child(2) > .cookie-details__detail-container-data-processor-privacy-policy.cookie-details__detail-container[title=""] > .cookie-details__detail-content > a[href=""][rel="noopener noreferrer"][target="_blank"]`

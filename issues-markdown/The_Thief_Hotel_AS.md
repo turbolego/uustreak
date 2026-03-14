@@ -1,8 +1,8 @@
 # WCAG Violations Report for The Thief Hotel AS
 
-**Timestamp:** 2026-03-12T03:39:04.529Z
+**Timestamp:** 2026-03-14T20:54:58.745Z
 **URL:** [https://thethief.com/](https://thethief.com/)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -19,29 +19,17 @@
 - `#container > .block-container__inner.container-fluid.block-block__inner > .gallery__controls > .gallery__controls__next[aria-title="Next"][role="button"]`
 - `#container-6 > .block-container__inner.container-fluid.block-block__inner > .gallery__controls > .gallery__controls__next[aria-title="Next"][role="button"]`
 
-### Buttons must have discernible text
+### Heading levels should only increase by one
 
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.strawberry-chat-widget__toggle`
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#mobile-book-button`
+- `#heading-572 > .block-module__inner.block-block__inner > h4`
 
 ### Form elements must have labels
 

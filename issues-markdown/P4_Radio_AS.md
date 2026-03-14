@@ -1,6 +1,6 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-03-12T03:18:47.052Z
+**Timestamp:** 2026-03-14T20:52:17.937Z
 **URL:** [https://www.lydenavnorge.no/p4/](https://www.lydenavnorge.no/p4/)
 **Total Violations:** 8
 
@@ -84,11 +84,12 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `img[alt="P9 Retro"]`
+- `img[alt="P10 Country"]`
+- `img[alt="P5 Nonstop Hits"]`
 
 ### Form elements must have labels
 
@@ -152,5 +153,5 @@
 
 - `.mini-player-content`
 - `.engagement-buttons[data-v-6503ba46=""][data-v-a2b021d2=""] > .heart-spawner[data-v-de1a97ea=""][width="75"]`
-- `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-a2b021d2=""] > p[data-v-484baac5=""]`
+- `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-a2b021d2=""] > p`
 - `.volume-slider`

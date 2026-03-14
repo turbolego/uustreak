@@ -1,7 +1,7 @@
 # WCAG Violations Report for Assistermeg AS
 
-**Timestamp:** 2026-03-12T03:19:19.112Z
-**URL:** [https://www.assistermeg.no/](https://www.assistermeg.no/)
+**Timestamp:** 2026-03-14T20:49:56.119Z
+**URL:** [https://www.assistermeg.no/#](https://www.assistermeg.no/#)
 **Total Violations:** 6
 
 ## Violation Details

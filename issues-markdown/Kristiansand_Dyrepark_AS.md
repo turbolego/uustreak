@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kristiansand Dyrepark AS
 
-**Timestamp:** 2026-03-12T03:52:35.265Z
-**URL:** [https://www.dyreparken.no/](https://www.dyreparken.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-03-14T21:01:54.774Z
+**URL:** [https://www.dyreparken.no/#](https://www.dyreparken.no/#)
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -20,6 +20,18 @@
 - `.c-grid--content-alignment-left > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
 - `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-prev.disabled[role="presentation"]`
 - `.c-grid--image-size-bleeding.c-grid--overflow-scrolling.c-grid--content-alignment-center > .c-grid__items-wrap > .container > .js-overflow-scrolling.owl-carousel.owl-loaded > .owl-nav > .owl-next[role="presentation"][type="button"]`
+
+### Elements must only use permitted ARIA attributes
+
+- **Impact:** serious
+- **Description:** Ensure ARIA attributes are not prohibited for an element's role
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[title="Bli med på feiringen!"], #movie_player`
 
 ### Buttons must have discernible text
 

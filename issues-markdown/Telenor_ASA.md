@@ -1,37 +1,10 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-03-12T03:38:23.114Z
+**Timestamp:** 2026-03-14T20:54:30.520Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
-
-### Elements must only use permitted ARIA attributes
-
-- **Impact:** serious
-- **Description:** Ensure ARIA attributes are not prohibited for an element's role
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.image`
-
-### ARIA attributes must conform to valid names
-
-- **Impact:** critical
-- **Description:** Ensure attributes that begin with aria- are valid ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-valid-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 4
-
-#### Affected Elements:
-
-- `.segment-start`
-- `button[data-track-label="child2_Under 30 år"]`
-- `button[data-track-label="child1_Under 13 år"]`
-- `.segment-end`
 
 ### Heading levels should only increase by one
 
@@ -39,12 +12,25 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
+- `.card-wrap.medium.has-bg:nth-child(1) > .shadow-m.card-vertical[to=""] > .content[data-v-7673d778=""] > .margin-bottom-s.small-title.title-s`
 - `.dropdown-category.footer.dark:nth-child(1) > .dropdown-link[data-v-9b029b67=""] > .dropdown-header.hidden-mobile[data-v-9b029b67=""] > h6`
 - `h4`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#d6916e04-dbad-4e0d-a9df-a765e49cc44e > .heroBannerCarousel[data-v-627f96fb=""] > .carousel.is-ltr.is-effect-slide`
 
 ### <li> elements must be contained in a <ul> or <ol>
 

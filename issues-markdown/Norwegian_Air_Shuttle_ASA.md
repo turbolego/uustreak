@@ -1,10 +1,34 @@
 # WCAG Violations Report for Norwegian Air Shuttle ASA
 
-**Timestamp:** 2026-03-12T03:16:58.011Z
-**URL:** [https://www.norwegian.com/](https://www.norwegian.com/)
-**Total Violations:** 2
+**Timestamp:** 2026-03-14T20:50:45.586Z
+**URL:** [https://www.norwegian.com/#](https://www.norwegian.com/#)
+**Total Violations:** 3
 
 ## Violation Details
+
+### ARIA attributes must be used as specified for the element's role
+
+- **Impact:** serious
+- **Description:** Ensure ARIA attributes are used as described in the specification of the element's role
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-conditional-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#ot-bnr-grp-id-C0001`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#ot-bnr-hdr-id-C0001`
 
 ### Alternative text of images should not be repeated as text
 
@@ -29,15 +53,3 @@
 - `img[data-src$="se.svg"]`
 - `img[data-src$="uk.svg"]`
 - `img[data-src$="us.svg"]`
-
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `html`
