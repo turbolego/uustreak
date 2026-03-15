@@ -1,10 +1,22 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-03-14T20:53:32.227Z
+**Timestamp:** 2026-03-15T00:43:59.601Z
 **URL:** [https://www.nordlys.no/#](https://www.nordlys.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `article[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .title.brick-c-jiSuJG[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 

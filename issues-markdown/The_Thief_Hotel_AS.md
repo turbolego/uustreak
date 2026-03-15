@@ -1,8 +1,8 @@
 # WCAG Violations Report for The Thief Hotel AS
 
-**Timestamp:** 2026-03-14T20:54:58.745Z
+**Timestamp:** 2026-03-15T00:41:39.927Z
 **URL:** [https://thethief.com/](https://thethief.com/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -18,6 +18,18 @@
 
 - `#container > .block-container__inner.container-fluid.block-block__inner > .gallery__controls > .gallery__controls__next[aria-title="Next"][role="button"]`
 - `#container-6 > .block-container__inner.container-fluid.block-block__inner > .gallery__controls > .gallery__controls__next[aria-title="Next"][role="button"]`
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.strawberry-chat-widget__toggle`
 
 ### Heading levels should only increase by one
 
