@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2026-03-15T00:48:53.497Z
+**Timestamp:** 2026-03-16T00:46:34.819Z
 **URL:** [https://www.dalane-tidende.no/#](https://www.dalane-tidende.no/#)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -17,18 +17,6 @@
 #### Affected Elements:
 
 - `#eaframe`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `brick-carousel-v2[data-slides="5"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 

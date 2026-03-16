@@ -1,6 +1,6 @@
 # WCAG Violations Report for Plantasjen AS
 
-**Timestamp:** 2026-03-15T00:43:37.256Z
+**Timestamp:** 2026-03-16T00:41:12.849Z
 **URL:** [https://plantasjen.no/no](https://plantasjen.no/no)
 **Total Violations:** 2
 
@@ -28,13 +28,13 @@
 
 #### Affected Elements:
 
-- `.hover\:bg-secondary-eucalyptus\/90.whitespace-normal[href$="paske"]`
+- `.text-primary-foreground.hover\:bg-secondary-eucalyptus\/90[href$="paske"]`
 - `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(1) > .rounded-br-\[2rem\].rounded-tl-\[2rem\].border-white > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.md\:px-3.py-1 > .font-ttCommons.font-semibold`
-- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(6) > .justify-center.flex > div > .hover\:bg-secondary-eucalyptus\/90.whitespace-normal.text-primary-foreground`
-- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(10) > .justify-center.flex > div > .hover\:bg-secondary-eucalyptus\/90.whitespace-normal.text-primary-foreground`
-- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(20) > .justify-center.flex > div > .hover\:bg-secondary-eucalyptus\/90.whitespace-normal.text-primary-foreground`
-- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(23) > .justify-center.flex > div > .hover\:bg-secondary-eucalyptus\/90.whitespace-normal.text-primary-foreground`
+- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(6) > .justify-center.flex > div > .text-primary-foreground.hover\:bg-secondary-eucalyptus\/90.whitespace-normal`
+- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(10) > .justify-center.flex > div > .text-primary-foreground.hover\:bg-secondary-eucalyptus\/90.whitespace-normal`
+- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(15) > .justify-center.flex > div > .text-primary-foreground.hover\:bg-secondary-eucalyptus\/90.whitespace-normal`
+- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(18) > .justify-center.flex > div > .text-primary-foreground.hover\:bg-secondary-eucalyptus\/90.whitespace-normal`
 - `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(2) > .rounded-br-\[2rem\].rounded-tl-\[2rem\].border-white > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.md\:px-3.py-1 > .font-ttCommons.font-semibold`
 - `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .rounded-br-\[2rem\].rounded-tl-\[2rem\].border-white > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.md\:px-3.py-1 > .font-ttCommons.font-semibold`
-- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(30) > .justify-center.flex > div > .hover\:bg-secondary-eucalyptus\/90.whitespace-normal.text-primary-foreground`
-- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(33) > .justify-center.flex > div > .hover\:bg-secondary-eucalyptus\/90.whitespace-normal.text-primary-foreground`
+- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(25) > .justify-center.flex > div > .text-primary-foreground.hover\:bg-secondary-eucalyptus\/90.whitespace-normal`
+- `.scrollable-element.\[-webkit-overflow-scrolling\:touch\].overflow-x-visible:nth-child(28) > .justify-center.flex > div > .text-primary-foreground.hover\:bg-secondary-eucalyptus\/90.whitespace-normal`

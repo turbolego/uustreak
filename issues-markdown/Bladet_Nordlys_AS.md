@@ -1,22 +1,10 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-03-15T00:43:59.601Z
+**Timestamp:** 2026-03-16T00:41:52.874Z
 **URL:** [https://www.nordlys.no/#](https://www.nordlys.no/#)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `article[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .title.brick-c-jiSuJG[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
@@ -40,7 +28,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="5"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `brick-carousel-v2[data-slides="8"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 

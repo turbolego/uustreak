@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-03-15T00:47:50.898Z
+**Timestamp:** 2026-03-16T00:45:30.222Z
 **URL:** [https://www.dagbladet.no/#](https://www.dagbladet.no/#)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -12,13 +12,24 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.t91.tm49[itemprop="headline"] > .text-red.color_mobile_text-red[data-lab-text_color_desktop="text-red"]`
-- `.tm49.t77[itemprop="headline"] > .text-red.color_mobile_text-red[data-lab-text_color_desktop="text-red"]`
-- `.tm66 > .text-red.color_mobile_text-red[data-lab-text_color_desktop="text-red"]`
+- `.tm43 > .text-red.color_mobile_text-red[data-lab-text_color_desktop="text-red"]`
+- `.t54.tm42[itemprop="headline"] > .text-red.color_mobile_text-red[data-lab-text_color_desktop="text-red"]`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.row_header_text`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
