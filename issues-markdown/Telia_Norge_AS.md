@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telia Norge AS
 
-**Timestamp:** 2026-03-16T00:42:46.339Z
+**Timestamp:** 2026-03-17T00:37:14.456Z
 **URL:** [https://www.telia.no/#](https://www.telia.no/#)
 **Total Violations:** 3
 
@@ -28,10 +28,10 @@
 
 #### Affected Elements:
 
-- `.slide:nth-child(1) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(2) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(3) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(4) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(1) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .bottom-left.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(3) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .bottom-left.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(4) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .bottom-left.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(5) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(6) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(8) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(9) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
@@ -39,7 +39,7 @@
 - `.slide:nth-child(11) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(12) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(13) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `._teddy-card--gray_vxy5c_281._teddy-card--rich-card_vxy5c_168._teddy-grid_1dv1t_2:nth-child(4) > ._teddy-card__inset--top_vxy5c_418._teddy-card__inset--left_vxy5c_421._teddy-card__inset--right_vxy5c_424 > ._teddy-image_jxcdf_2`
+- `._teddy-card--rich-card_vxy5c_168._teddy-card--gray_vxy5c_281._teddy-grid_1dv1t_2:nth-child(4) > ._teddy-card__inset--top_vxy5c_418._teddy-card__inset--left_vxy5c_421._teddy-card__inset--right_vxy5c_424 > ._teddy-image_jxcdf_2`
 
 ### Interactive controls must not be nested
 
