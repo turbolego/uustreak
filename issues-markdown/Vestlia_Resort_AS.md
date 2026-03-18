@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2026-03-17T00:45:36.109Z
+**Timestamp:** 2026-03-18T00:44:32.049Z
 **URL:** [https://vestlia.no/#](https://vestlia.no/#)
 **Total Violations:** 10
 
@@ -38,9 +38,9 @@
 - `.button-10 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.fusion-title-13 > h2`
 - `.button-11 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_1d64a013-d8d2-4c2c-8e6f-d9da73fc5b66`
+- `#f_1ec709cb-8fd0-45e9-be38-ce42e2d3af90`
 - `.button-13 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_61b65f95-f467-477d-9b59-019073aadff5`
+- `#f_e7734427-b3f2-4d11-a45f-b72f74b1768e`
 
 ### Heading levels should only increase by one
 
@@ -132,17 +132,17 @@
 - `.skip-link`
 - `.fusion-builder-column-1`
 - `.fusion-flex-justify-content-center.fusion-content-layout-column.fusion-column-wrapper > .sm-text-align-center.fusion-image-element`
-- `.fusion-builder-column-27`
 - `.fusion-builder-column-28`
 - `.fusion-builder-column-29`
-- `.fusion-builder-row-15`
-- `.fusion-builder-row-17`
+- `.fusion-builder-column-30`
+- `.fusion-builder-row-16`
 - `.fusion-builder-row-18`
-- `body > div:nth-child(21)`
-- `div:nth-child(22)`
+- `.fusion-builder-row-19`
 - `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(1)`
 - `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(3)`
 - `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text > span`
+- `div:nth-child(27)`
+- `div:nth-child(28)`
 
 ### [role="img"] elements must have alternative text
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Akershus fylkeskommune
 
-**Timestamp:** 2026-03-17T00:33:38.507Z
+**Timestamp:** 2026-03-18T00:32:57.912Z
 **URL:** [https://afk.no/#](https://afk.no/#)
 **Total Violations:** 1
 
