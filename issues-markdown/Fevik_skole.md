@@ -1,10 +1,22 @@
 # WCAG Violations Report for Fevik skole
 
-**Timestamp:** 2026-03-18T00:34:47.217Z
+**Timestamp:** 2026-03-19T00:35:59.002Z
 **URL:** [https://www.grimstad.kommune.no/tjenester/barn-unge-og-familie/skole/skoler-i-grimstad/fevik-skole/#](https://www.grimstad.kommune.no/tjenester/barn-unge-og-familie/skole/skoler-i-grimstad/fevik-skole/#)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
+
+### ARIA role should be appropriate for the element
+
+- **Impact:** minor
+- **Description:** Ensure role attribute has an appropriate value for the element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.mnm-form`
 
 ### Alternative text of images should not be repeated as text
 
@@ -16,7 +28,7 @@
 
 #### Affected Elements:
 
-- `img`
+- `img[alt="Grimstad kommune"]`
 
 ### All page content should be contained by landmarks
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Mediehuset Nettavisen AS
 
-**Timestamp:** 2026-03-18T00:31:40.562Z
+**Timestamp:** 2026-03-19T00:33:09.839Z
 **URL:** [https://www.nettavisen.no/#](https://www.nettavisen.no/#)
 **Total Violations:** 6
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.brick-c-igdZZU.brick-c-fdsRaE.title_container > h3`
+- `article[data-k5a-trackerid="page-0"] > .custom-one.brick-c-bpoemY.background-custom > .brick-c-igdZZU.brick-c-fdsRaE.title_container > h3`
 
 ### Banner landmark should not be contained in another landmark
 

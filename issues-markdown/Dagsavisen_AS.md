@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-03-18T00:43:06.042Z
+**Timestamp:** 2026-03-19T00:47:24.235Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 6
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.large-8.large-abs-8.text_singleline > .singleline`
+- `.text_singleline.large-8.large-abs-8 > .singleline`
 
 ### Frames must have an accessible name
 
@@ -43,9 +43,9 @@
 
 - `.t20`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32) > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(46) > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(53) > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(56) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(51) > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(53) > h5`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -79,51 +79,51 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 91
+- **Count:** 89
 
 #### Affected Elements:
 
 - `h1`
-- `div[title="Montenegro på vei inn i EU"] > h2`
-- `time[datetime="2026-03-17T20:22:03.000Z"]`
-- `#notice-10255923 > .content > h2`
-- `time[datetime="2026-03-17T19:33:50.000Z"]`
-- `#notice-10255918 > .content > h2`
-- `time[datetime="2026-03-17T19:32:26.000Z"]`
-- `div[title="Bekrefter at Basij-sjef er død"] > h2`
-- `time[datetime="2026-03-17T19:20:54.000Z"]`
-- `div[title="Dropper kutt i postleveringen"] > h2`
-- `time[datetime="2026-03-17T18:31:27.000Z"]`
-- `#notice-10255860 > .content > h2`
-- `time[datetime="2026-03-17T17:55:08.000Z"]`
-- `div[title="Rubio: Cuba trenger ny ledelse"] > h2`
-- `time[datetime="2026-03-17T16:45:13.000Z"]`
-- `#notice-10255745 > .content > h2`
-- `time[datetime="2026-03-17T16:19:12.000Z"]`
-- `#notice-10255744 > .content > h2`
-- `time[datetime="2026-03-17T16:42:59.000Z"]`
-- `div[title="Trump: Trenger ikke bistand"] > h2`
-- `time[datetime="2026-03-17T16:10:47.000Z"]`
-- `#notice-10255608 > .content > h2`
-- `time[datetime="2026-03-17T14:48:31.000Z"]`
-- `div[title="Spionthriller-forfatter død"] > h2`
-- `time[datetime="2026-03-17T14:47:48.000Z"]`
-- `#notice-10255588 > .content > h2`
-- `time[datetime="2026-03-17T14:46:41.000Z"]`
-- `#notice-10255144 > .content > h2`
-- `#notice-10255144 > .content > .meta`
-- `#notice-10254871 > .content > h2`
-- `#notice-10254871 > .content > .meta`
-- `#notice-10254649 > .content > h2`
-- `#notice-10254649 > .content > .meta`
-- `#notice-10254459 > .content > h2`
-- `#notice-10254459 > .content > .meta`
-- `#notice-10254064 > .content > h2`
-- `#notice-10254064 > .content > .meta`
-- `#notice-10253940 > .content > h2`
-- `#notice-10253940 > .content > .meta`
-- `div[title="Blodig angrep mot by i Nigeria"] > h2`
-- `div[title="Blodig angrep mot by i Nigeria"] > .meta`
+- `div[title="Store skader på gassanlegg"] > h2`
+- `time[datetime="2026-03-18T19:50:39.000Z"]`
+- `div[title="USA: Holder renten uendret"] > h2`
+- `time[datetime="2026-03-18T18:16:16.000Z"]`
+- `div[title="Rekordbeslag av håndgranater"] > h2`
+- `time[datetime="2026-03-18T18:07:22.000Z"]`
+- `div[title="Stjal 15 tonn gummibjørner"] > h2`
+- `time[datetime="2026-03-18T17:58:01.000Z"]`
+- `div[title="Oslo Børs stengte på ny rekord"] > h2`
+- `time[datetime="2026-03-18T16:39:10.000Z"]`
+- `div[title="Riyadh: Flere eksplosjoner"] > h2`
+- `time[datetime="2026-03-18T16:38:30.000Z"]`
+- `#notice-10257907 > .content > h2`
+- `time[datetime="2026-03-18T17:31:48.000Z"]`
+- `div[title="En omkom da gondol falt ned"] > h2`
+- `time[datetime="2026-03-18T15:21:55.000Z"]`
+- `#notice-10257643 > .content > h2`
+- `time[datetime="2026-03-18T14:22:44.000Z"]`
+- `div[title="Kronen styrkes mot euroen"] > h2`
+- `time[datetime="2026-03-18T14:07:10.000Z"]`
+- `div[title="Rekordmange politi-varslinger"] > h2`
+- `time[datetime="2026-03-18T13:42:30.000Z"]`
+- `div[title="Norwegian med ekstraflyginger"] > h2`
+- `time[datetime="2026-03-18T13:41:21.000Z"]`
+- `#notice-10257207 > .content > h2`
+- `#notice-10257207 > .content > .meta`
+- `#notice-10257090 > .content > h2`
+- `#notice-10257090 > .content > .meta`
+- `#notice-10256954 > .content > h2`
+- `#notice-10256954 > .content > .meta`
+- `#notice-10256573 > .content > h2`
+- `#notice-10256573 > .content > .meta`
+- `div[title="Oljefunn i Barentshavet"] > h2`
+- `div[title="Oljefunn i Barentshavet"] > .meta`
+- `#notice-10256134 > .content > h2`
+- `#notice-10256134 > .content > .meta`
+- `#notice-10256131 > .content > h2`
+- `#notice-10256131 > .content > .meta`
+- `#notice-10256075 > .content > h2`
+- `#notice-10256075 > .content > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `#markup_10246594 > .fullwidthTarget.content > iframe[data-testid="embed-iframe"][width="100%"][allowfullscreen=""], h1`
@@ -154,23 +154,21 @@
 - `.row.large-12.small-12:nth-child(31)`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32)`
 - `.row.large-12.small-12:nth-child(33)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(34)`
+- `.row.large-12.small-12:nth-child(34)`
 - `.row.large-12.small-12:nth-child(36)`
 - `.row.large-12.small-12:nth-child(37)`
-- `.row.large-12.small-12:nth-child(38)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(38)`
 - `.row.large-12.small-12:nth-child(39)`
 - `#article_list_10230577 > .content > .font-weight-normal.m-font-weight-normal.font-PTSans`
 - `#article_list_10230577 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(42)`
 - `.bg-tertiary.color_mobile_bg-tertiary.hasContentPadding:nth-child(43)`
-- `.row.large-12.small-12:nth-child(44)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(46)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44)`
+- `.row.large-12.small-12:nth-child(46)`
 - `.color_mobile_no_bg_color.content > .headline[itemprop="headline"]`
 - `.row.large-12.small-12:nth-child(48)`
 - `.row.large-12.small-12:nth-child(49)`
-- `.row.large-12.small-12:nth-child(51)`
-- `.row.large-12.small-12:nth-child(52)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(53)`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(56)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(51)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(53)`
 - `.border-bg-quaternary.mobile_border-bg-quaternary.border-side-top`
 - `.powered-by`

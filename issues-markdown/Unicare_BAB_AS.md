@@ -1,22 +1,10 @@
 # WCAG Violations Report for Unicare BAB AS
 
-**Timestamp:** 2026-03-18T00:41:43.280Z
+**Timestamp:** 2026-03-19T00:44:49.733Z
 **URL:** [https://unicare.no/#](https://unicare.no/#)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
-
-### Elements must only use supported ARIA attributes
-
-- **Impact:** critical
-- **Description:** Ensure an element's role supports its ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe[width="100%"], .OverlayBase_module_overlayWrapper__61370790`
 
 ### ARIA role should be appropriate for the element
 
