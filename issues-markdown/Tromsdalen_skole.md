@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tromsdalen skole
 
-**Timestamp:** 2026-03-19T00:42:27.994Z
+**Timestamp:** 2026-03-20T00:42:24.476Z
 **URL:** [https://tromsdalen.tromsoskolen.no/#](https://tromsdalen.tromsoskolen.no/#)
 **Total Violations:** 6
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f9e08717b55481ee3"], ._55yn`
+- `iframe[name="f0db911c5199006a9"], ._55yn`
 
 ### Certain ARIA roles must contain particular children
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f9e08717b55481ee3"], div[role="feed"]`
+- `iframe[name="f0db911c5199006a9"], div[role="feed"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -56,9 +56,9 @@
 - `td > a[href$="login"]`
 - `tr:nth-child(5) > td > a[target="linkwindow1692"]`
 - `tr:nth-child(7) > td > a[target="linkwindow1692"]`
-- `iframe[name="f9e08717b55481ee3"], abbr[data-utime="1765289850"] > .timestampContent`
-- `iframe[name="f9e08717b55481ee3"], #u_1_i_ee > table > tbody > tr > ._435r:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Comment"]`
-- `iframe[name="f9e08717b55481ee3"], #u_1_k_jM > ._50sk._2pi4[title="Share"]`
+- `iframe[name="f0db911c5199006a9"], abbr[data-utime="1765289850"] > .timestampContent`
+- `iframe[name="f0db911c5199006a9"], #u_1_p_lH > table > tbody > tr > ._435r:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Comment"]`
+- `iframe[name="f0db911c5199006a9"], #u_1_r_Sa > ._50sk._2pi4[title="Share"]`
 
 ### Frames with focusable content must not have tabindex=-1
 
@@ -113,10 +113,10 @@
 - `p:nth-child(3) > a:nth-child(5)`
 - `p:nth-child(3) > a:nth-child(7)`
 - `p:nth-child(3) > a[target="_blank"]:nth-child(9)`
-- `iframe[name="f9e08717b55481ee3"], #u_0_1_Fw`
-- `iframe[name="f9e08717b55481ee3"], .lfloat:nth-child(1)`
-- `iframe[name="f9e08717b55481ee3"], #u_1_9_3L > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f9e08717b55481ee3"], #u_1_5_Hm > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f9e08717b55481ee3"], #u_1_6_0d > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f9e08717b55481ee3"], #u_1_7_MC > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f9e08717b55481ee3"], #u_1_8_RY > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f0db911c5199006a9"], #u_0_1_b4`
+- `iframe[name="f0db911c5199006a9"], .lfloat:nth-child(1)`
+- `iframe[name="f0db911c5199006a9"], #u_1_n_I4 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f0db911c5199006a9"], #u_1_5_ef > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f0db911c5199006a9"], #u_1_6_hV > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f0db911c5199006a9"], #u_1_s_e0 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f0db911c5199006a9"], #u_1_7_7C > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`

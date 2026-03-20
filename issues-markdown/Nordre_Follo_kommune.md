@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordre Follo kommune
 
-**Timestamp:** 2026-03-19T00:35:22.624Z
+**Timestamp:** 2026-03-20T00:35:50.869Z
 **URL:** [https://www.nordrefollo.kommune.no/#](https://www.nordrefollo.kommune.no/#)
 **Total Violations:** 2
 
@@ -12,11 +12,12 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
 - `.mr-5`
+- `#focus__text-4041`
 
 ### Links must have discernible text
 

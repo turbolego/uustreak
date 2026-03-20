@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-03-19T00:50:39.302Z
+**Timestamp:** 2026-03-20T00:47:10.979Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 3
 
@@ -43,21 +43,23 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 102
+- **Count:** 104
 
 #### Affected Elements:
 
 - `.skip-content-wrapper`
 - `.cmp-logo__link > .sr-only`
 - `.myey-login-url`
-- `.swiper-slide-duplicate-active > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="2.34"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="1639"][loading="lazy"]`
-- `.swiper-slide-duplicate-active > .up-hero-carousel__content-wrapper`
+- `.swiper-slide-duplicate-next > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="2.34"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="1639"][loading="lazy"]`
+- `.swiper-slide-duplicate-next > .up-hero-carousel__content-wrapper`
 - `.swiper-slide-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="2560"][loading="lazy"]`
 - `.swiper-slide-prev > .up-hero-carousel__content-wrapper`
-- `.swiper-slide-visible > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="2.34"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="1639"][loading="lazy"]`
+- `#image-render-bd6c3e038a > .cmp-image__image[height="2560"][loading="lazy"]`
 - `.swiper-slide-visible > .up-hero-carousel__content-wrapper`
-- `.swiper-slide-next > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="2560"][loading="lazy"]`
+- `.swiper-slide-next > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="2.34"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="1639"][loading="lazy"]`
 - `.swiper-slide-next > .up-hero-carousel__content-wrapper`
+- `.swiper-slide-duplicate-prev > .up-hero-carousel__image-wrapper > .up-image.up-image--top-row.up-image--bottom-row > .up-image__image[data-aspect-ratio="1.5"][data-up-hook-image="[image]"] > .cmp-image[data-cmp-hook-image="imageV3"][itemtype="http://schema.org/ImageObject"] > .cmp-image__image[height="2560"][loading="lazy"]`
+- `.swiper-slide-duplicate-prev > .up-hero-carousel__content-wrapper`
 - `.up-hero-carousel__pagination`
 - `.theme-dark.cmp-container--theme-dark.cmp-container--background-color-e2e`
 - `#promotional-375939547c80 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
@@ -119,9 +121,9 @@
 - `.cmp-slider__slide[data-index="2"][href$="assurance"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `.cmp-slider__slide[data-index="2"][href$="assurance"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
 - `.cmp-slider__slide[data-index="2"][href$="assurance"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
-- `a[data-index="3"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
-- `a[data-index="3"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
-- `a[data-index="3"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
+- `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
+- `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
+- `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
 - `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
 - `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
