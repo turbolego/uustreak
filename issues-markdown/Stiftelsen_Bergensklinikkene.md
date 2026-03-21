@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Bergensklinikkene
 
-**Timestamp:** 2026-03-20T00:34:33.197Z
+**Timestamp:** 2026-03-21T00:29:24.201Z
 **URL:** [https://vipestores.com/no](https://vipestores.com/no)
 **Total Violations:** 9
 
@@ -79,6 +79,7 @@
 #### Affected Elements:
 
 - `.navbar-brand`
+- `.itemSecondColor.item:nth-child(9) > .w-100.h-100.d-flex`
 - `.itemThirdColor.item:nth-child(1) > .w-100.h-100.d-flex`
 - `.itemFirstColor.item:nth-child(2) > .w-100.h-100.d-flex`
 - `.itemSecondColor.item:nth-child(3) > .w-100.h-100.d-flex`
@@ -87,7 +88,6 @@
 - `.itemSecondColor.item:nth-child(6) > .w-100.h-100.d-flex`
 - `.itemThirdColor.item:nth-child(7) > .w-100.h-100.d-flex`
 - `.itemFirstColor.item:nth-child(8) > .w-100.h-100.d-flex`
-- `.itemSecondColor.item:nth-child(9) > .w-100.h-100.d-flex`
 
 ### Zooming and scaling must not be disabled
 

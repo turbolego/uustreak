@@ -1,22 +1,10 @@
 # WCAG Violations Report for Atea Norge
 
-**Timestamp:** 2026-03-20T00:36:08.328Z
+**Timestamp:** 2026-03-21T00:33:12.518Z
 **URL:** [https://www.atea.no/#](https://www.atea.no/#)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
-
-### ARIA attributes must be used as specified for the element's role
-
-- **Impact:** serious
-- **Description:** Ensure ARIA attributes are used as described in the specification of the element's role
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-conditional-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#ot-bnr-grp-id-BG107`
 
 ### Form elements should have a visible label
 
@@ -28,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.mega-menu > .ng-pristine.ng-valid[method="get"] > .search-bar > .container > .search-query-container > .search-query[title="Søk på Atea"][name="q"]`
+- `.mega-menu > form > .search-bar > .container > .search-query-container > .search-query[type="text"][title="Søk på Atea"]`
 
 ### Banner landmark should not be contained in another landmark
 

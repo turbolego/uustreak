@@ -1,8 +1,8 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-03-20T00:38:21.658Z
+**Timestamp:** 2026-03-21T00:33:13.638Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -26,12 +26,10 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 30
+- **Count:** 28
 
 #### Affected Elements:
 
-- `#CybotCookiebotDialogBodyEdgeMoreDetailsLink`
-- `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
 - `#searchInput`
 - `.contents[href$="bolig"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `.contents[href$="trening"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
@@ -74,6 +72,18 @@
 - `a[aria-label="Finn din studentbolig"] > .md\:items-start.flex-col.md\:flex-row > .md\:grow > .font-semibold.text-gray-900`
 - `#carousel0 > .max-w-\[calc\(80vw\)\].md\:max-w-\[calc\(25\.4vw\)\].rounded-lg > .rounded-t-lg[target="_self"] > .px-3.pb-3.pt-1 > .py-2.text-gray-700`
 
+### Document should have one main landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has a main landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
+
 ### Interactive controls must not be nested
 
 - **Impact:** serious
@@ -114,18 +124,18 @@
 - `.mb-1`
 - `#carousel0`
 - `img[alt="bilde av uken sin logo"]`
-- `a[href$="uken-2026"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > .text-superTitle.leading-tight.md\:leading-snug`
+- `a[href$="uken-2026"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > p`
 - `a[href$="uken-2026"] > .px-3.pb-3.pt-1`
-- `#carousel2 > .max-w-\[calc\(80vw\)\].md\:max-w-\[calc\(25\.4vw\)\].rounded-lg > .rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > .text-superTitle.leading-tight.md\:leading-snug`
+- `#carousel2 > .max-w-\[calc\(80vw\)\].md\:max-w-\[calc\(25\.4vw\)\].rounded-lg > .rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > p`
 - `#carousel2 > .max-w-\[calc\(80vw\)\].md\:max-w-\[calc\(25\.4vw\)\].rounded-lg > .rounded-t-lg[target="_self"] > .px-3.pb-3.pt-1`
 - `#carousel3`
 - `#carousel4`
 - `#carousel5`
 - `a[href$="nye-gruppetimer"] > .relative.h-fit > .h-56.object-cover`
-- `a[href$="nye-gruppetimer"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > .text-superTitle.leading-tight.md\:leading-snug`
+- `a[href$="nye-gruppetimer"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > p`
 - `a[href$="nye-gruppetimer"] > .px-3.pb-3.pt-1`
 - `#carousel7`
-- `a[href$="svom-langt"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > .text-superTitle.leading-tight.md\:leading-snug`
+- `a[href$="svom-langt"] > .relative.h-fit > .absolute.bottom-0.left-5 > .gap-2.items-center.flex > p`
 - `a[href$="svom-langt"] > .px-3.pb-3.pt-1`
 - `#carousel9`
 - `div:nth-child(1) > .\!font-bold.pb-4`
