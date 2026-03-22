@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-03-21T00:32:07.477Z
+**Timestamp:** 2026-03-22T00:37:24.983Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -17,15 +17,15 @@
 #### Affected Elements:
 
 - `.gt.dr.ds > div > div`
-- `a[href$="paskekupp"]`
+- `a[href$="dagskupp2"]`
 - `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
-- `li:nth-child(3) > .i3.i4[aria-label="Tromlingene sneaker barn"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `li:nth-child(3) > .i3.i4[aria-label="Tromlingene sneaker barn"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Rauma 3-lags skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Rauma 3-lags skalljakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `li:nth-child(4) > .i3.i4[aria-label="Tromlingene sneaker barn"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `li:nth-child(4) > .i3.i4[aria-label="Tromlingene sneaker barn"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `li:nth-child(5) > .i3.i4[aria-label="Tromlingene sneaker barn"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `li:nth-child(5) > .i3.i4[aria-label="Tromlingene sneaker barn"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `li:nth-child(1) > .i3.i4[aria-label="Juv turbukse"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
@@ -34,15 +34,15 @@
 - `li:nth-child(2) > .i3.i4[aria-label="Juv turbukse"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Vesterfjell tursekk 60 L"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Vesterfjell tursekk 60 L"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `a[aria-label="Vesterfjell tursekk 35 L"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Vesterfjell tursekk 35 L"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Sandholmen Pop-Up UV50+ telt"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Sandholmen Pop-Up UV50+ telt"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Porsanger cord sherpagenser"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Lifjell Half Zip fleecegenser"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Sogndal skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Harstad skallanorakk"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Blinkebakken blinkesko"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Sprek teknisk fritidsbukse"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Lifjell Half Zip fleecegenser"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
@@ -84,9 +84,9 @@
 - `div:nth-child(3) > .aq.am.an > .au.as[width="11"]`
 - `div:nth-child(4) > .aq.am.an > .au.as[width="11"]`
 - `.hj > .ho.hn.au`
-- `.jc.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
+- `a[href$="spring-days"] > .jd.hk.hl > .ho.a2.hn`
 - `.jc.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
-- `a[href$="prisras-sko"] > .jd.hk.hl > .ho.a2.hn`
+- `.jc.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
 - `a[href$="regntoy"] > .jd.hk.hl > .ho.a2.hn`
 - `.jf.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
 - `.a6[href$="turutstyr"][data-scope-link="true"] > .jd.hk.hl > .ho.a2.hn`
@@ -102,10 +102,10 @@
 
 #### Affected Elements:
 
+- `a[href$="paskekupp"]`
 - `a[href$="spring-days"]`
-- `.jc.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
 - `.jc.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
-- `a[href$="prisras-sko"]`
+- `.jc.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
 - `a[href$="regntoy"]`
 - `.jf.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
 - `.hh.bv.ay > .a6[href$="turutstyr"][data-scope-link="true"]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-03-21T00:46:49.761Z
+**Timestamp:** 2026-03-22T00:48:13.622Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
 **Total Violations:** 7
 
@@ -38,10 +38,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 6
+- **Count:** 7
 
 #### Affected Elements:
 
+- `.liveticker-red`
 - `.sa-frontboks-button-bottom-right > .svelte-r1njzg:nth-child(1)`
 - `.article--live > .article__teaser-container > .article__link.url > .article__text-container > .article__section`
 - `.memo > .text-container > h3`
@@ -94,14 +95,19 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 77
+- **Count:** 82
 
 #### Affected Elements:
 
 - `h1`
-- `.collage-x3.row:nth-child(1)`
+- `.liveticker-red`
+- `a[data-name="Lokalfotballstudio"]`
+- `a[data-name="Utenriksstudio"] > .name`
+- `a[data-name="Trafikkstudio"]`
+- `article[data-pulse-entity-id="e7MAAO"]`
+- `article[data-pulse-entity-id="OojG13"] > .article__teaser-container`
+- `article[data-pulse-entity-id="k0w2kL"] > .article__teaser-container`
 - `.collage-x3.row:nth-child(3)`
-- `#dr-edition-teaser-exvhv7sf > div`
 - `._heading_12jab_646 > span`
 - `._preview_12jab_666:nth-child(1) > a > ._preview-image_12jab_714[loading="lazy"]`
 - `._preview_12jab_666:nth-child(1) > a > ._preview-title_12jab_726`
@@ -127,53 +133,53 @@
 - `.collage-x3.row:nth-child(13)`
 - `.sa-frontboks-button-bottom-right > .svelte-r1njzg:nth-child(1)`
 - `.vertical-x3.row:nth-child(17)`
-- `.vertical-x2.row:nth-child(18)`
-- `.collage-x3.row:nth-child(20)`
+- `.collage-x4`
+- `.display-flex > .article__text-container`
 - `.hjernetrim-front-widget`
-- `.vertical-x2.row:nth-child(24)`
-- `.vertical-x3.row:nth-child(26)`
+- `.collage-x3.row:nth-child(24)`
+- `.vertical-x2.row:nth-child(26)`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
 - `.podcast-spons`
-- `.vertical-x2.row:nth-child(28)`
+- `.vertical-x3.row:nth-child(28)`
 - `.widget-football.regional-widget`
-- `.vertical-x4.row:nth-child(30)`
-- `.collage-x3.row:nth-child(32)`
-- `.vertical-x2.row:nth-child(35)`
+- `.vertical-x2.row:nth-child(30)`
+- `.vertical-x4.row:nth-child(32)`
+- `.collage-x3.row:nth-child(35)`
 - `.widget-bolig.regional-widget`
-- `.collage-x3.row:nth-child(37)`
+- `.vertical-x2.row:nth-child(37)`
 - `.vertical-x3.row:nth-child(38)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(40)`
 - `.vertical-x2.row:nth-child(41)`
-- `.vertical-small-x2`
+- `.collage-x3.row:nth-child(43)`
 - `.vertical-x2.row:nth-child(44)`
-- `.collage-x3.row:nth-child(45)`
+- `.vertical-x3.row:nth-child(45)`
 - `.vertical-x1-ad.row:nth-child(46)`
-- `.vertical-x3.row:nth-child(47)`
-- `.vertical-x2.row:nth-child(48)`
+- `.vertical-x2.row:nth-child(47)`
+- `.vertical-x4.row:nth-child(48)`
 - `.vertical-x1-ad.row:nth-child(49)`
 - `.collage-x3.row:nth-child(50)`
-- `.vertical-x3.row:nth-child(51)`
+- `.vertical-x2.row:nth-child(51)`
 - `.collage-x3.row:nth-child(52)`
 - `.vertical-x2.row:nth-child(53)`
-- `.vertical-x3.row:nth-child(54)`
-- `.collage-x3.row:nth-child(55)`
-- `.vertical-x2.row:nth-child(56)`
-- `.collage-x3.row:nth-child(58)`
+- `.collage-x3.row:nth-child(54)`
+- `.vertical-x2.row:nth-child(55)`
+- `.vertical-x3.row:nth-child(56)`
+- `.vertical-x2.row:nth-child(58)`
 - `#webcam-frontpage`
-- `.vertical-x2.row:nth-child(60)`
-- `.vertical-x3.row:nth-child(61)`
+- `.vertical-x4.row:nth-child(60)`
+- `.collage-x3.row:nth-child(61)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(62)`
 - `.vertical-x2.row:nth-child(64)`
-- `.vertical-x4.row:nth-child(65)`
-- `.collage-x3.row:nth-child(66)`
+- `.collage-x3.row:nth-child(65)`
+- `.vertical-x2.row:nth-child(66)`
 - `.vertical-x1-ad.row:nth-child(67)`
-- `.vertical-x2.row:nth-child(68)`
-- `.vertical-x3.row:nth-child(69)`
+- `.collage-x3.row:nth-child(68)`
+- `.vertical-x2.row:nth-child(69)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(70)`
-- `.row--full`
+- `.vertical-x3.row:nth-child(71)`
 - `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`
 
 ### Scrollable region must have keyboard access
