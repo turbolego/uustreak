@@ -1,6 +1,6 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2026-03-22T00:44:03.945Z
+**Timestamp:** 2026-03-23T00:45:41.561Z
 **URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
 **Total Violations:** 4
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 64
+- **Count:** 48
 
 #### Affected Elements:
 
@@ -20,10 +20,10 @@
 - `.product-card__product-price.prrc[data-product_id="7052870166945"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7052870174926"]`
 - `.product-card__product-price.prrc[data-product_id="7052870174926"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7052870173882"]`
+- `.product-card__product-price.prrc[data-product_id="7052870173882"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7052870175312"]`
 - `.product-card__product-price.prrc[data-product_id="7052870175312"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7052870181122"]`
-- `.product-card__product-price.prrc[data-product_id="7052870181122"]`
 - `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id=""]`
 - `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-product_id=""]`
 - `.campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id=""]`
@@ -48,14 +48,6 @@
 - `.product-card__product-price.prrc[data-product_id="9007022639929"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7331041141234"]`
 - `.product-card__product-price.prrc[data-product_id="7331041141234"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7070838006102"]`
-- `.product-card__product-price.prrc[data-product_id="7070838006102"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7070838018204"]`
-- `.product-card__product-price.prrc[data-product_id="7070838018204"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7070838018365"]`
-- `.product-card__product-price.prrc[data-product_id="7070838018365"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7070838028050"]`
-- `.product-card__product-price.prrc[data-product_id="7070838028050"]`
 - `.product-card.ab_omni_kampaign[data-product_id="88381826433"]`
 - `.product-card__product-price.prrc[data-product_id="88381826433"]`
 - `.product-card.ab_omni_kampaign[data-product_id="88381741316"]`
@@ -64,14 +56,6 @@
 - `.product-card__product-price.prrc[data-product_id="197050001610"]`
 - `.product-card.ab_omni_kampaign[data-product_id="88381683197"]`
 - `.product-card__product-price.prrc[data-product_id="88381683197"]`
-- `.product-card.ab_omni_kampaign[data-product_id="6411501437204"]`
-- `.product-card__product-price.prrc[data-product_id="6411501437204"]`
-- `.product-card.ab_omni_kampaign[data-product_id="6411501410269"]`
-- `.product-card__product-price.prrc[data-product_id="6411501410269"]`
-- `.product-card.ab_omni_kampaign[data-product_id="6411501430281"]`
-- `.product-card__product-price.prrc[data-product_id="6411501430281"]`
-- `.product-card.ab_omni_kampaign[data-product_id="4892210223302"]`
-- `.product-card__product-price.prrc[data-product_id="4892210223302"]`
 - `.product-card.ab_omni_kampaign[data-product_id="5703192007288"]`
 - `.product-card__product-price.prrc[data-product_id="5703192007288"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7022390527762"]`
@@ -87,14 +71,12 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 8
+- **Count:** 6
 
 #### Affected Elements:
 
-- `#gzjIvV1qsz3NdZSoNrwr7-title`
-- `#b8aQMu7ORmbhaqGN6FJL3-title`
-- `#\33 DPDtkGjsppJ1l6gfJj9Rt-title`
-- `#ia > .column-layout__container > .column-layout__title`
+- `.responsive-hero__content > h3`
+- `.column-layout:nth-child(6) > .column-layout__container > .column-layout__title`
 - `#\34 XAMjmtbFJouRy2Y2HAtPH-title`
 - `#\35 jEmf9y6skVo2VFSeLq9gG-title`
 - `#\36 L0V8e5iF05SuPKt0kOrPq-title`

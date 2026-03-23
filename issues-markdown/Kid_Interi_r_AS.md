@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-03-22T00:43:33.694Z
+**Timestamp:** 2026-03-23T00:46:09.099Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -16,7 +16,19 @@
 
 #### Affected Elements:
 
-- `.f4.f2[href$="medlemsfest"]`
+- `.f4.f2[href$="gardiner"]`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.is-selected.ij.gn:nth-child(1) > .c.bz.c4 > .ca.ao[data-test-id="product-link"] > h4`
 
 ### Images must have alternative text
 
@@ -28,7 +40,7 @@
 
 #### Affected Elements:
 
-- `.g7 > .fe.ff.el`
+- `.g0 > .a3.fe.ff`
 
 ### Alternative text of images should not be repeated as text
 
@@ -36,22 +48,18 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 12
+- **Count:** 8
 
 #### Affected Elements:
 
-- `img[alt="-->"]`
-- `img[alt="Sengesett"]`
-- `img[alt="Borddekking"]`
-- `img[alt="Kjøkkenvarer"]`
-- `img[alt="Pynteputer"]`
-- `img[alt="Interiør"]`
-- `img[alt="Pledd"]`
-- `img[alt="Gardiner"]`
-- `img[alt="Baderom"]`
-- `img[alt="Dundyner"]`
-- `img[alt="Mix og match"]`
-- `img[alt="Loungewear"]`
+- `img[alt="Living håndkleserie 50%"]`
+- `img[alt="Toalettmapper 50%"]`
+- `img[alt="Morgenkåper 50%"]`
+- `img[alt="AVA velværeserie 40%"]`
+- `img[alt="Loungewear 50%"]`
+- `img[alt="Baderomstilbehør 50%"]`
+- `img[alt="Håraccessories 50%"]`
+- `img[alt="Therapie velværeserie 40%"]`
 
 ### Links must have discernible text
 
@@ -65,7 +73,7 @@
 
 - `a[href$="soverom"]`
 - `.a7[href$="paske"][data-scope-link="true"]:nth-child(1)`
-- `.ca.s[href$="paske"]`
+- `.ca.c8[href$="paske"]`
 
 ### All page content should be contained by landmarks
 

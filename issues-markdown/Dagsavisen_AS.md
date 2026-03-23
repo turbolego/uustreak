@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-03-22T00:47:21.235Z
+**Timestamp:** 2026-03-23T00:49:03.731Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 6
 
@@ -37,12 +37,11 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 6
+- **Count:** 5
 
 #### Affected Elements:
 
 - `.t20`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(14) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(53) > h5`
@@ -85,6 +84,22 @@
 #### Affected Elements:
 
 - `h1`
+- `#notice-10263555 > .content > h2`
+- `time[datetime="2026-03-22T20:01:52.000Z"]`
+- `#notice-10263505 > .content > h2`
+- `time[datetime="2026-03-22T19:39:00.000Z"]`
+- `#notice-10263477 > .content > h2`
+- `time[datetime="2026-03-22T17:26:43.000Z"]`
+- `#notice-10263314 > .content > h2`
+- `time[datetime="2026-03-22T14:29:10.000Z"]`
+- `#notice-10263239 > .content > h2`
+- `time[datetime="2026-03-22T12:54:20.000Z"]`
+- `#notice-10263164 > .content > h2`
+- `time[datetime="2026-03-22T10:42:58.000Z"]`
+- `div[title="Hormuzstredet: Åpnes delvis"] > h2`
+- `time[datetime="2026-03-22T09:17:22.000Z"]`
+- `#notice-10263077 > .content > h2`
+- `time[datetime="2026-03-22T09:12:26.000Z"]`
 - `#notice-10263030 > .content > h2`
 - `time[datetime="2026-03-21T19:00:00.000Z"]`
 - `div[title="Italia: To døde i snøskred"] > h2`
@@ -109,22 +124,6 @@
 - `time[datetime="2026-03-21T09:49:37.000Z"]`
 - `div[title="Atomanlegg i Natanz angrepet"] > h2`
 - `time[datetime="2026-03-21T09:28:41.000Z"]`
-- `#notice-10262611 > .content > h2`
-- `time[datetime="2026-03-21T09:14:46.000Z"]`
-- `div[title="Vil ha flere helsesykepleiere"] > h2`
-- `time[datetime="2026-03-21T09:14:12.000Z"]`
-- `#notice-10262585 > .content > h2`
-- `time[datetime="2026-03-21T07:22:18.000Z"]`
-- `#notice-10262584 > .content > h2`
-- `time[datetime="2026-03-21T07:20:26.000Z"]`
-- `#notice-10262583 > .content > h2`
-- `time[datetime="2026-03-21T07:17:19.000Z"]`
-- `#notice-10262572 > .content > h2`
-- `time[datetime="2026-03-20T21:20:25.000Z"]`
-- `#notice-10262496 > .content > h2`
-- `time[datetime="2026-03-20T21:17:47.000Z"]`
-- `div[title="Trump-søksmål mot Harvard"] > h2`
-- `time[datetime="2026-03-20T18:35:17.000Z"]`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(6)`
@@ -137,12 +136,12 @@
 - `#markup_10246594 > .fullwidthTarget.content > iframe[data-testid="embed-iframe"][width="100%"][height="352"], a[dir="auto"]`
 - `#markup_10246594 > .fullwidthTarget.content > iframe[data-testid="embed-iframe"][width="100%"][height="352"], label`
 - `.row.large-12.small-12:nth-child(8)`
-- `.mobile_no_border_side.hasBorder.mobile-hasBorder`
+- `.bg-tertiary.color_mobile_bg-tertiary.mobile_no_border_side`
 - `.row.large-12.small-12:nth-child(11)`
 - `.row.large-12.small-12:nth-child(12)`
 - `#article_list_10180103 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10180103 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(14)`
+- `.row.large-12.small-12:nth-child(14)`
 - `#article_list_9904930 > .inner.fullwidthTarget.content`
 - `#article_list_10187147 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10187147 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
@@ -151,13 +150,13 @@
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.row.large-12.small-12:nth-child(21)`
 - `.border_width_no_border_width.border_width_mobile_no_border_width.color_mobile_no_bg_color`
-- `.row.large-12.small-12:nth-child(23)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(26)`
+- `.color_mobile_no_bg_color.row.large-12:nth-child(23)`
+- `.row.large-12.small-12:nth-child(26)`
 - `#article_list_10184114 > .content > .font-weight-normal.m-font-weight-normal.t25`
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(28)`
 - `.row.large-12.small-12:nth-child(29)`
-- `.row.large-12.small-12:nth-child(31)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(31)`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32)`
 - `.row.large-12.small-12:nth-child(33)`
 - `.row.large-12.small-12:nth-child(34)`
@@ -173,7 +172,7 @@
 - `.row.large-12.small-12:nth-child(46)`
 - `.color_mobile_no_bg_color.content > .headline[itemprop="headline"]`
 - `.row.large-12.small-12:nth-child(48)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(49)`
+- `.row.large-12.small-12:nth-child(49)`
 - `.row.large-12.small-12:nth-child(51)`
 - `.row.large-12.small-12:nth-child(52)`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(53)`
