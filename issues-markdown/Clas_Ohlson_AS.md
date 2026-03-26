@@ -1,8 +1,8 @@
 # WCAG Violations Report for Clas Ohlson AS
 
-**Timestamp:** 2026-03-23T00:46:47.314Z
+**Timestamp:** 2026-03-26T21:36:18.120Z
 **URL:** [https://www.clasohlson.com/no/#](https://www.clasohlson.com/no/#)
-**Total Violations:** 5
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -31,6 +31,18 @@
 
 - `#cx-livechat-host,iframe[name="cx-webChatButton"]`
 - `#cx-livechat-host,iframe[name="cx-webChatWindow"]`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#cx-livechat-host,iframe[name="cx-webChatButton"], img`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -78,3 +90,15 @@
 #### Affected Elements:
 
 - `.header`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#cx-livechat-host,iframe[name="cx-webChatButton"], .go4199366604`

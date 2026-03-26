@@ -1,10 +1,22 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-03-23T00:44:47.676Z
+**Timestamp:** 2026-03-26T21:34:11.973Z
 **URL:** [https://www.blv.no/#](https://www.blv.no/#)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.totalt_antall`
 
 ### Headings should not be empty
 
@@ -12,10 +24,11 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `.none.brick-c-ivDAcB[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 - `.brick-c-eKmOVS > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
@@ -40,7 +53,7 @@
 
 #### Affected Elements:
 
-- `.brick-c-cayIYG > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `brick-carousel-v2[data-slides="20"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Links must have discernible text
 
@@ -48,10 +61,11 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `.none.brick-c-ivDAcB[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"]`
 - `.brick-c-eKmOVS`
 
 ### Elements marked as presentational should be consistently ignored

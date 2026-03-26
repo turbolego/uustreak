@@ -1,8 +1,8 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2026-03-23T00:34:38.355Z
+**Timestamp:** 2026-03-26T21:24:41.554Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -54,18 +54,6 @@
 
 - `#coiOverlay`
 
-### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
-
-- **Impact:** serious
-- **Description:** Ensure that lists are structured correctly
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/list?application=playwright
-- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `article[data-cms="dy-recommendation"] > div > ul`
-
 ### <li> elements must be contained in a <ul> or <ol>
 
 - **Impact:** serious
@@ -91,4 +79,4 @@
 #### Affected Elements:
 
 - `.top-header`
-- `#kindly-chat-api > div,.sc-cbelXf`
+- `#kindly-chat-api > div,.sc-iVFRtC`

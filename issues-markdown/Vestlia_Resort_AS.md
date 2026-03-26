@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2026-03-23T00:50:31.623Z
+**Timestamp:** 2026-03-26T21:39:32.714Z
 **URL:** [https://vestlia.no/#](https://vestlia.no/#)
 **Total Violations:** 10
 
@@ -32,15 +32,15 @@
 - `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
 - `#widgetContainer,div[aria-label="Choose date"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
 - `#widgetContainer,div[aria-label="Accommodations and guests"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
-- `#widgetContainer,.visible`
+- `#widgetContainer,.relative.z-\[1\]`
 - `.fusion-title-6 > h2`
 - `.fusion-title-11 > h2`
 - `.button-10 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.fusion-title-13 > h2`
 - `.button-11 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_c9091cf1-8f0a-414a-96f4-b532a0269d92`
+- `#f_fc57dcc8-e915-45cd-b23f-b8420fa78a67`
 - `.button-13 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_9e5280f1-b257-4dce-a2fa-cf1e419280c9`
+- `#f_24df07b1-3942-4535-a5c3-6b8dd199b8f3`
 
 ### Heading levels should only increase by one
 
@@ -138,8 +138,8 @@
 - `.fusion-builder-row-16`
 - `.fusion-builder-row-18`
 - `.fusion-builder-row-19`
-- `div:nth-child(26)`
-- `div:nth-child(27)`
+- `div:nth-child(24)`
+- `div:nth-child(25)`
 - `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(1)`
 - `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(3)`
 - `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text > span`

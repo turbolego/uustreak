@@ -1,8 +1,8 @@
 # WCAG Violations Report for Tekna - Teknisk- naturvitenskapelig forening
 
-**Timestamp:** 2026-03-23T00:42:30.540Z
+**Timestamp:** 2026-03-26T21:31:23.366Z
 **URL:** [https://www.tekna.no/#](https://www.tekna.no/#)
-**Total Violations:** 8
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -18,30 +18,6 @@
 
 - `#declineButton`
 
-### Certain ARIA roles must contain particular children
-
-- **Impact:** critical
-- **Description:** Ensure elements with an ARIA role that require child roles contain them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-required-children?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#tabmenu-block-tab-menu`
-
-### Certain ARIA roles must be contained by particular parents
-
-- **Impact:** critical
-- **Description:** Ensure elements with an ARIA role that require parent roles are contained by them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-required-parent?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.nav-link`
-
 ### Images must have alternative text
 
 - **Impact:** critical
@@ -53,7 +29,7 @@
 #### Affected Elements:
 
 - `.item__image-0`
-- `.t-article-card:nth-child(1) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
+- `a[href$="jenter-og-teknologi/"] > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
 - `.t-article-card:nth-child(2) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
 
 ### Document should not have more than one banner landmark
@@ -80,18 +56,6 @@
 
 - `#coiOverlay`
 
-### <li> elements must be contained in a <ul> or <ol>
-
-- **Impact:** serious
-- **Description:** Ensure <li> elements are used semantically
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/listitem?application=playwright
-- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.nav-item`
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
@@ -112,8 +76,8 @@
 - `.text-image-block__text`
 - `.text-image-block__image:nth-child(1)`
 - `.block-spacing-small.col-12`
-- `.t-article-card:nth-child(1) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
-- `.t-article-card:nth-child(1) > .t-article-card__content`
+- `a[href$="jenter-og-teknologi/"] > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
+- `a[href$="jenter-og-teknologi/"] > .t-article-card__content`
 - `.t-article-card:nth-child(2) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
 - `.t-article-card:nth-child(2) > .t-article-card__content`
 - `.rss-feed`

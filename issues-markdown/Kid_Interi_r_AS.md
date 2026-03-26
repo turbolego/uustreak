@@ -1,22 +1,10 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-03-23T00:46:09.099Z
+**Timestamp:** 2026-03-26T21:36:59.175Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.f4.f2[href$="gardiner"]`
 
 ### Heading levels should only increase by one
 
@@ -28,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.is-selected.ij.gn:nth-child(1) > .c.bz.c4 > .ca.ao[data-test-id="product-link"] > h4`
+- `.i5.is-selected.fj:nth-child(1) > .c.bz.c4 > .ca.ao[data-test-id="product-link"] > h4`
 
 ### Images must have alternative text
 
@@ -40,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.g0 > .a3.fe.ff`
+- `.g0 > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -48,7 +36,7 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 8
+- **Count:** 14
 
 #### Affected Elements:
 
@@ -60,6 +48,12 @@
 - `img[alt="Baderomstilbehør 50%"]`
 - `img[alt="Håraccessories 50%"]`
 - `img[alt="Therapie velværeserie 40%"]`
+- `img[alt="Otto gardin"]`
+- `img[alt="Petra dyne- og putepakke"]`
+- `img[alt="Ullpledd"]`
+- `img[alt="Helårsdyne"]`
+- `img[alt="Lammeskinn"]`
+- `img[alt="Sitteunderlag"]`
 
 ### Links must have discernible text
 
@@ -91,4 +85,4 @@
 - `.a > div:nth-child(5)`
 - `.tf-header-slider`
 - `.tf-sidebar`
-- `#kindly-chat-api > div,.sc-cbelXf`
+- `#kindly-chat-api > div,.sc-iVFRtC`

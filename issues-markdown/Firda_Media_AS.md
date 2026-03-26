@@ -1,10 +1,25 @@
 # WCAG Violations Report for Firda Media AS
 
-**Timestamp:** 2026-03-23T00:37:22.832Z
+**Timestamp:** 2026-03-26T21:27:51.300Z
 **URL:** [https://www.firda.no/#](https://www.firda.no/#)
-**Total Violations:** 3
+**Total Violations:** 5
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 4
+
+#### Affected Elements:
+
+- `.totalt_antall`
+- `.swiper-slide-active > .swiper-slide-a.fokus[target="_blank"] > .slide-background > .notification`
+- `.swiper-slide-next > .swiper-slide-a.fokus[target="_blank"] > .slide-background > .notification`
+- `div[data-swiper-slide-index="3"] > .swiper-slide-a.fokus[target="_blank"] > .slide-background > .notification`
 
 ### Frames must have an accessible name
 
@@ -17,6 +32,18 @@
 #### Affected Elements:
 
 - `#eaframe`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `brick-carousel-v2[data-slides="9"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 

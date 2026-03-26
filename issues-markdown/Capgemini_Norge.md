@@ -1,8 +1,8 @@
 # WCAG Violations Report for Capgemini Norge
 
-**Timestamp:** 2026-03-23T00:46:17.267Z
+**Timestamp:** 2026-03-26T21:35:49.331Z
 **URL:** [https://www.capgemini.com/no-no/#](https://www.capgemini.com/no-no/#)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -77,15 +77,3 @@
 #### Affected Elements:
 
 - `#truste-consent-text`
-
-### Scrollable region must have keyboard access
-
-- **Impact:** serious
-- **Description:** Ensure elements that have scrollable content are accessible by keyboard
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright
-- **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.header_lang_menu > .header-lang-inner > .lang-list`

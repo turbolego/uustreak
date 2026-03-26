@@ -1,6 +1,6 @@
 # WCAG Violations Report for Color Line AS
 
-**Timestamp:** 2026-03-23T00:47:01.257Z
+**Timestamp:** 2026-03-26T21:36:29.781Z
 **URL:** [https://www.colorline.no/#](https://www.colorline.no/#)
 **Total Violations:** 8
 
@@ -91,10 +91,10 @@
 
 #### Affected Elements:
 
+- `.items:nth-child(3) > li`
 - `.items:nth-child(4) > li`
 - `.items:nth-child(5) > li`
-- `.items:nth-child(6) > li`
-- `.items:nth-child(8) > li`
+- `.items:nth-child(7) > li`
 
 ### All page content should be contained by landmarks
 

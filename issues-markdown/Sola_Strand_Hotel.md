@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sola Strand Hotel
 
-**Timestamp:** 2026-03-23T00:51:13.620Z
+**Timestamp:** 2026-03-26T21:43:15.876Z
 **URL:** [https://www.solastrandhotel.no/#](https://www.solastrandhotel.no/#)
 **Total Violations:** 5
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video.ready, body`
-- `div[data-config-url="https://vimeo.com/1043637275"] > div > .background-video.ready, body`
+- `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video, body`
+- `div[data-config-url="https://vimeo.com/1043637275"] > div > .background-video, body`
 
 ### Certain ARIA roles must contain particular children
 
@@ -41,8 +41,8 @@
 
 #### Affected Elements:
 
-- `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video.ready`
-- `div[data-config-url="https://vimeo.com/1043637275"] > div > .background-video.ready`
+- `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video`
+- `div[data-config-url="https://vimeo.com/1043637275"] > div > .background-video`
 
 ### Heading levels should only increase by one
 

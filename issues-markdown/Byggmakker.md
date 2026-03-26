@@ -1,8 +1,8 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2026-03-23T00:45:41.561Z
+**Timestamp:** 2026-03-26T21:35:07.405Z
 **URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -12,26 +12,74 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 48
+- **Count:** 72
 
 #### Affected Elements:
 
-- `.product-card.ab_omni_kampaign[data-product_id="7052870166945"]`
-- `.product-card__product-price.prrc[data-product_id="7052870166945"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7052870174926"]`
-- `.product-card__product-price.prrc[data-product_id="7052870174926"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7052870173882"]`
-- `.product-card__product-price.prrc[data-product_id="7052870173882"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7052870175312"]`
-- `.product-card__product-price.prrc[data-product_id="7052870175312"]`
-- `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id=""]`
-- `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-product_id=""]`
-- `.campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id=""]`
-- `.campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-product_id=""]`
-- `.campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id=""]`
-- `.campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-product_id=""]`
-- `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id=""]`
-- `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-product_id=""]`
+- `.product-card.ab_omni_kampaign[data-product_id="7070276047569"]`
+- `.product-card__product-price.prrc[data-product_id="7070276047569"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7071859014077"]`
+- `.product-card__product-price.prrc[data-product_id="7071859014077"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7071536016332"]`
+- `.product-card__product-price.prrc[data-product_id="7071536016332"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7090021560297"]`
+- `.product-card__product-price.prrc[data-product_id="7090021560297"]`
+- `#alt_du_trenger_til_maleprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
+- `#alt_du_trenger_til_maleprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
+- `#alt_du_trenger_til_maleprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
+- `#alt_du_trenger_til_maleprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
+- `#alt_du_trenger_til_maleprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
+- `#alt_du_trenger_til_maleprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
+- `#alt_du_trenger_til_maleprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
+- `#alt_du_trenger_til_maleprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
+- `#beise_terrassen > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
+- `#beise_terrassen > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7029350153689"]`
+- `.product-card__product-price.prrc[data-product_id="7029350153689"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7311490046090"]`
+- `.product-card__product-price.prrc[data-product_id="7311490046090"]`
+- `.product-card.ab_omni_kampaign[data-product_id="6405422555994"]`
+- `.product-card__product-price.prrc[data-product_id="6405422555994"]`
+- `.product-card.ab_omni_kampaign[data-product_id="5035048614099"]`
+- `.product-card__product-price.prrc[data-product_id="5035048614099"]`
+- `.product-card.ab_omni_kampaign[data-product_id="5035048113370"]`
+- `.product-card__product-price.prrc[data-product_id="5035048113370"]`
+- `.product-card.ab_omni_kampaign[data-product_id="5035048690444"]`
+- `.product-card__product-price.prrc[data-product_id="5035048690444"]`
+- `.product-card.ab_omni_kampaign[data-product_id="5035048740002"]`
+- `.product-card__product-price.prrc[data-product_id="5035048740002"]`
+- `.product-card.ab_omni_kampaign[data-product_id="4054278897332"]`
+- `.product-card__product-price.prrc[data-product_id="4054278897332"]`
+- `.product-card.ab_omni_kampaign[data-product_id="4039784973480"]`
+- `.product-card__product-price.prrc[data-product_id="4039784973480"]`
+- `.product-card.ab_omni_kampaign[data-product_id="4066529156310"]`
+- `.product-card__product-price.prrc[data-product_id="4066529156310"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7090012249170"]`
+- `.product-card__product-price.prrc[data-product_id="7090012249170"]`
+- `.product-card.ab_omni_kampaign[data-product_id="6411501664501"]`
+- `.product-card__product-price.prrc[data-product_id="6411501664501"]`
+- `.product-card.ab_omni_kampaign[data-product_id="6411501704368"]`
+- `.product-card__product-price.prrc[data-product_id="6411501704368"]`
+- `.product-card.ab_omni_kampaign[data-product_id="6411501112606"]`
+- `.product-card__product-price.prrc[data-product_id="6411501112606"]`
+- `.product-card.ab_omni_kampaign[data-product_id="6411501311832"]`
+- `.product-card__product-price.prrc[data-product_id="6411501311832"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7393969045018"]`
+- `.product-card__product-price.prrc[data-product_id="7393969045018"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7052870178283"]`
+- `.product-card__product-price.prrc[data-product_id="7052870178283"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7052870178269"]`
+- `.product-card__product-price.prrc[data-product_id="7052870178269"]`
+- `.product-card.ab_omni_kampaign[data-product_id="6438313783121"]`
+- `.product-card__product-price.prrc[data-product_id="6438313783121"]`
+- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
+- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
+- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
+- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
+- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
+- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
+- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
+- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7311490050608"]`
 - `.product-card__product-price.prrc[data-product_id="7311490050608"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7311490000382"]`
@@ -40,30 +88,6 @@
 - `.product-card__product-price.prrc[data-product_id="7311490040890"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7311490028133"]`
 - `.product-card__product-price.prrc[data-product_id="7311490028133"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7393969304580"]`
-- `.product-card__product-price.prrc[data-product_id="7393969304580"]`
-- `.product-card.ab_omni_kampaign[data-product_id="9007022640284"]`
-- `.product-card__product-price.prrc[data-product_id="9007022640284"]`
-- `.product-card.ab_omni_kampaign[data-product_id="9007022639929"]`
-- `.product-card__product-price.prrc[data-product_id="9007022639929"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7331041141234"]`
-- `.product-card__product-price.prrc[data-product_id="7331041141234"]`
-- `.product-card.ab_omni_kampaign[data-product_id="88381826433"]`
-- `.product-card__product-price.prrc[data-product_id="88381826433"]`
-- `.product-card.ab_omni_kampaign[data-product_id="88381741316"]`
-- `.product-card__product-price.prrc[data-product_id="88381741316"]`
-- `.product-card.ab_omni_kampaign[data-product_id="197050001610"]`
-- `.product-card__product-price.prrc[data-product_id="197050001610"]`
-- `.product-card.ab_omni_kampaign[data-product_id="88381683197"]`
-- `.product-card__product-price.prrc[data-product_id="88381683197"]`
-- `.product-card.ab_omni_kampaign[data-product_id="5703192007288"]`
-- `.product-card__product-price.prrc[data-product_id="5703192007288"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7022390527762"]`
-- `.product-card__product-price.prrc[data-product_id="7022390527762"]`
-- `.product-card.ab_omni_kampaign[data-product_id="5703505045914"]`
-- `.product-card__product-price.prrc[data-product_id="5703505045914"]`
-- `.product-card.ab_omni_kampaign[data-product_id="5703505053728"]`
-- `.product-card__product-price.prrc[data-product_id="5703505053728"]`
 
 ### Headings should not be empty
 
@@ -71,31 +95,18 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 6
+- **Count:** 8
 
 #### Affected Elements:
 
 - `.responsive-hero__content > h3`
-- `.column-layout:nth-child(6) > .column-layout__container > .column-layout__title`
+- `#\31 QvncOQb2NOF6NIpEr0Jql-title`
+- `#\37 3C3XNjexhcrs0OEWx3yLV-title`
+- `.column-layout__title`
 - `#\34 XAMjmtbFJouRy2Y2HAtPH-title`
 - `#\35 jEmf9y6skVo2VFSeLq9gG-title`
-- `#\36 L0V8e5iF05SuPKt0kOrPq-title`
-- `#\34 NFhlgEibxwQw7TMY4OKLp-title`
-
-### Interactive controls must not be nested
-
-- **Impact:** serious
-- **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/nested-interactive?application=playwright
-- **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 4
-
-#### Affected Elements:
-
-- `.product-card.ab_omni_kampaign[data-product_id="5703192007288"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7022390527762"]`
-- `.product-card.ab_omni_kampaign[data-product_id="5703505045914"]`
-- `.product-card.ab_omni_kampaign[data-product_id="5703505053728"]`
+- `.teaser:nth-child(1) > .teaser__background-image > .teaser__content > .teaser__heading`
+- `.teaser:nth-child(2) > .teaser__background-image > .teaser__content > .teaser__heading`
 
 ### All page content should be contained by landmarks
 

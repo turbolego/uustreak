@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-03-23T00:51:09.093Z
+**Timestamp:** 2026-03-26T21:40:15.383Z
 **URL:** [https://www.vitusapotek.no/#](https://www.vitusapotek.no/#)
 **Total Violations:** 6
 
@@ -12,14 +12,15 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 4
+- **Count:** 5
 
 #### Affected Elements:
 
+- `.owl-item:nth-child(1) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
+- `.product-listing.product-grid.product-slider:nth-child(2) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(2) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
+- `.product-listing.product-grid.product-slider:nth-child(4) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(2) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
 - `.owl-item:nth-child(3) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
-- `.product-listing.product-grid.product-slider:nth-child(2) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(5) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
-- `.owl-item:nth-child(4) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
-- `.product-listing.product-grid.product-slider:nth-child(4) > .owl-wrapper-outer > .owl-wrapper > .owl-item:nth-child(5) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
+- `.owl-item:nth-child(5) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a`
 
 ### Images must have alternative text
 

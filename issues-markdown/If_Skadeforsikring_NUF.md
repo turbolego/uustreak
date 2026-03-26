@@ -1,8 +1,8 @@
 # WCAG Violations Report for If Skadeforsikring NUF
 
-**Timestamp:** 2026-03-23T00:43:25.098Z
+**Timestamp:** 2026-03-26T21:34:12.034Z
 **URL:** [https://www.if.no/privat](https://www.if.no/privat)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -17,7 +17,7 @@
 #### Affected Elements:
 
 - `img[alt="Skal du reise bort?"]`
-- `#\30 5972c430806433a8bc07935831ec73c > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
+- `#\39 00a4ef9d158448b9299a47c379595e0 > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
 - `#viking > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
 - `img[alt="Hvorfor velge oss?"]`
 
@@ -31,7 +31,7 @@
 
 #### Affected Elements:
 
-- `#c7f122d7bffc407aad69c7f69b3e04e9 > .weight-medium`
+- `#f319e1a4e89d45b3ace6741b9b01c80c > .weight-medium`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -43,16 +43,4 @@
 
 #### Affected Elements:
 
-- `#c7f122d7bffc407aad69c7f69b3e04e9`
-
-### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
-
-- **Impact:** serious
-- **Description:** Ensure that lists are structured correctly
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/list?application=playwright
-- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.op-quicklinks`
+- `#f319e1a4e89d45b3ace6741b9b01c80c`
