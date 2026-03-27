@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vy Buss AS
 
-**Timestamp:** 2026-03-26T21:40:28.885Z
+**Timestamp:** 2026-03-27T00:50:18.696Z
 **URL:** [https://www.vybuss.no/#!/](https://www.vybuss.no/#!/)
 **Total Violations:** 3
 
@@ -53,8 +53,8 @@
 - `.expand-block__container:nth-child(4) > .expand-block__header[data-toggle="expand"]`
 - `.js-group-block.block__wrapper:nth-child(4)`
 - `.js-group-block.block__wrapper:nth-child(5)`
-- `#ddChallengeBody1774561221334, .captcha__human`
-- `#ddChallengeBody1774561221334, .sliderText`
-- `#ddChallengeBody1774561221334, #captcha__offline`
-- `#ddChallengeBody1774561221334, .captcha__robot__warning`
-- `#ddChallengeBody1774561221334, .captcha__robot__contact_support`
+- `#ddChallengeBody1774572611061, .captcha__human`
+- `#ddChallengeBody1774572611061, .sliderText`
+- `#ddChallengeBody1774572611061, #captcha__offline`
+- `#ddChallengeBody1774572611061, .captcha__robot__warning`
+- `#ddChallengeBody1774572611061, .captcha__robot__contact_support`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-03-26T21:45:27.920Z
+**Timestamp:** 2026-03-27T00:52:17.470Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
 **Total Violations:** 7
 
@@ -42,7 +42,7 @@
 
 #### Affected Elements:
 
-- `.liveticker-red`
+- `.sa-frontboks-button-bottom-right > .svelte-r1njzg:nth-child(1)`
 - `.article--live > .article__teaser-container > .article__link.url > .article__text-container > .article__section`
 - `.memo > .text-container > h3`
 - `.kryssord > .text-container > h3`
@@ -94,15 +94,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 80
+- **Count:** 74
 
 #### Affected Elements:
 
 - `h1`
-- `.liveticker-red`
-- `a[title="Eiganestunnelen stengt i natt"]`
-- `a[data-name="Lokalfotballstudio"] > .name`
-- `a[title="Brann i kjeller på Hundvåg"] > .name`
 - `.top-60-40-block.row:nth-child(1)`
 - `.top-60-40-block.row:nth-child(3)`
 - `._heading_12jab_646 > span`
@@ -131,7 +127,7 @@
 - `.sa-frontboks-button-bottom-right > .svelte-r1njzg:nth-child(1)`
 - `.collage-x4.row:nth-child(17)`
 - `.collage-x3.row:nth-child(18)`
-- `.vertical-x2.row:nth-child(20)`
+- `.collage-x4.row:nth-child(20)`
 - `.hjernetrim-front-widget`
 - `.collage-x3.row:nth-child(24)`
 - `.vertical-x2.row:nth-child(26)`
@@ -140,44 +136,42 @@
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
 - `.podcast-spons`
-- `.vertical-x3.row:nth-child(28)`
+- `.vertical-x3.row:nth-child(29)`
 - `.widget-football.regional-widget`
-- `.vertical-x2.row:nth-child(30)`
-- `.collage-x3.row:nth-child(32)`
-- `.vertical-x2.row:nth-child(35)`
+- `.collage-x3.row:nth-child(31)`
+- `.vertical-x2.row:nth-child(33)`
+- `.vertical-x3.row:nth-child(36)`
 - `.widget-bolig.regional-widget`
-- `.vertical-x3.row:nth-child(37)`
 - `.vertical-x2.row:nth-child(38)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(40)`
-- `.vertical-x4`
-- `.vertical-x2.row:nth-child(43)`
-- `.vertical-x3.row:nth-child(44)`
-- `.collage-x3.row:nth-child(45)`
-- `.vertical-x1-ad.row:nth-child(46)`
-- `.vertical-x2.row:nth-child(47)`
-- `.vertical-x3.row:nth-child(48)`
-- `.vertical-x1-ad.row:nth-child(49)`
-- `.vertical-x2.row:nth-child(50)`
+- `.vertical-x4.row:nth-child(39)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(41)`
+- `.vertical-x2.row:nth-child(42)`
+- `.collage-x3.row:nth-child(44)`
+- `.vertical-x2.row:nth-child(45)`
+- `.vertical-x3.row:nth-child(46)`
+- `.vertical-x1-ad.row:nth-child(47)`
 - `.vertical-small-x2`
+- `.vertical-x2.row:nth-child(49)`
+- `.vertical-x1-ad.row:nth-child(50)`
+- `.vertical-x3.row:nth-child(51)`
 - `.vertical-x2.row:nth-child(52)`
-- `.vertical-x3.row:nth-child(53)`
-- `.display-flex > .article__text-container`
-- `.collage-x3.row:nth-child(55)`
-- `.vertical-x2.row:nth-child(56)`
-- `.vertical-x3.row:nth-child(58)`
+- `.vertical-x4.row:nth-child(53)`
+- `.collage-x3.row:nth-child(54)`
+- `.vertical-x2.row:nth-child(55)`
+- `.vertical-x3.row:nth-child(56)`
+- `.collage-x3.row:nth-child(57)`
+- `.vertical-x2.row:nth-child(59)`
 - `#webcam-frontpage`
-- `.collage-x3.row:nth-child(60)`
-- `.vertical-x2.row:nth-child(61)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(62)`
-- `.vertical-x3.row:nth-child(64)`
-- `.collage-x3.row:nth-child(65)`
-- `.vertical-x2.row:nth-child(66)`
-- `.vertical-x1-ad.row:nth-child(67)`
-- `.vertical-x3.row:nth-child(68)`
+- `.collage-x3.row:nth-child(61)`
+- `.vertical-x2.row:nth-child(62)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(63)`
+- `.vertical-x3.row:nth-child(65)`
+- `.collage-x3.row:nth-child(66)`
+- `.vertical-x2.row:nth-child(67)`
+- `.vertical-x1-ad.row:nth-child(68)`
 - `.collage-x3.row:nth-child(69)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(70)`
-- `.vertical-x3.row:nth-child(71)`
-- `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`
+- `.row--full`
+- `.sch-datacontroller__text`
 
 ### Scrollable region must have keyboard access
 

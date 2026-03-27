@@ -1,6 +1,6 @@
 # WCAG Violations Report for Extra Leker Butikker AS
 
-**Timestamp:** 2026-03-26T21:25:44.179Z
+**Timestamp:** 2026-03-27T00:36:07.320Z
 **URL:** [https://www.extra-leker.no/#](https://www.extra-leker.no/#)
 **Total Violations:** 9
 
@@ -167,7 +167,7 @@
 #### Affected Elements:
 
 - `#ui-id-1 > .nav-1.menu-item-home.level0`
-- `#ui-id-1 > .nav-2.active.menu-type-subcategories`
+- `#ui-id-1 > .nav-2.menu-type-subcategories.has-6subcategories`
 - `#ui-id-1 > .nav-3.level0.level-top`
 - `#ui-id-1 > .nav-4.level0.level-top`
 - `#ui-id-1 > .nav-5.level0.level-top`

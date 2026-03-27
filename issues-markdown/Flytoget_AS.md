@@ -1,8 +1,8 @@
 # WCAG Violations Report for Flytoget AS
 
-**Timestamp:** 2026-03-26T21:28:50.739Z
+**Timestamp:** 2026-03-27T00:39:08.162Z
 **URL:** [https://flytoget.no/#](https://flytoget.no/#)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -74,13 +74,28 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 6
+- **Count:** 9
 
 #### Affected Elements:
 
 - `.skip-to-main`
-- `.travel-warning`
 - `.travel-input-from`
 - `.travel-input-to`
-- `.travel-results-list`
+- `.date-label-container`
+- `div[title="04:40"]`
+- `.primary-row > .arrival.col-xs-4`
+- `.secondary-row`
+- `.travel-results-button-container`
 - `.shop-btn-container`
+
+### <svg> elements with an img role must have alternative text
+
+- **Impact:** serious
+- **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/svg-img-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
+- **Count:** 1
+
+#### Affected Elements:
+
+- `svg[viewBox="0 0 16 12"]`

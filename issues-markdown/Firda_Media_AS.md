@@ -1,6 +1,6 @@
 # WCAG Violations Report for Firda Media AS
 
-**Timestamp:** 2026-03-26T21:27:51.300Z
+**Timestamp:** 2026-03-27T00:38:06.610Z
 **URL:** [https://www.firda.no/#](https://www.firda.no/#)
 **Total Violations:** 5
 
@@ -12,14 +12,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 4
+- **Count:** 1
 
 #### Affected Elements:
 
 - `.totalt_antall`
-- `.swiper-slide-active > .swiper-slide-a.fokus[target="_blank"] > .slide-background > .notification`
-- `.swiper-slide-next > .swiper-slide-a.fokus[target="_blank"] > .slide-background > .notification`
-- `div[data-swiper-slide-index="3"] > .swiper-slide-a.fokus[target="_blank"] > .slide-background > .notification`
 
 ### Frames must have an accessible name
 

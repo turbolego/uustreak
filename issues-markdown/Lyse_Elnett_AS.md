@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lyse Elnett AS
 
-**Timestamp:** 2026-03-26T21:41:50.935Z
+**Timestamp:** 2026-03-27T00:51:36.527Z
 **URL:** [https://www.l-nett.no/](https://www.l-nett.no/)
 **Total Violations:** 6
 
@@ -53,7 +53,7 @@
 
 #### Affected Elements:
 
-- `#searchBar_element_79fb5c20_2`
+- `#searchBar_element_740d04ef_2`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -88,10 +88,10 @@
 - `.tile-content > h3`
 - `#ctwebform-elementgroup-group-274`
 - `#ctwebform-elementgroup-group-275`
-- `#CEXCPYJZMZYHLHSRRDXSKDLYNJTHRR`
+- `#ANBVDYOLVORQROJLYLHMYLCVVKNO`
 - `.ctwebform-element-type-captcha > div > div`
 - `.ctwebform-element-type-htmlcontent`
 - `.pt-0`
 - `#placeholder-bottom > .container > .row > .searchinput.container-md.tile-common > .tile-content > h1`
-- `#searchBar_element_79fb5c20_2`
+- `#searchBar_element_740d04ef_2`
 - `.privacy-link > a[target="_self"]`

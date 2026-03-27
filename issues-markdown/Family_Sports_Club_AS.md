@@ -1,8 +1,8 @@
 # WCAG Violations Report for Family Sports Club AS
 
-**Timestamp:** 2026-03-26T21:26:28.557Z
+**Timestamp:** 2026-03-27T00:36:46.289Z
 **URL:** [https://sporty.no/](https://sporty.no/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -18,6 +18,18 @@
 
 - `header`
 
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#itx-chat-frame, .btn-lg`
+
 ### Elements must meet minimum color contrast ratio thresholds
 
 - **Impact:** serious
@@ -29,7 +41,7 @@
 #### Affected Elements:
 
 - `.Button-module-scss-module__gW1A4G__small`
-- `.slick-current > div > .Carousel-module-scss-module__2GuYGa__item.row > .text-center.col-12 > .text-decoration-none.Button-module-scss-module__gW1A4G__color-hover-dark-red[href$="kampanjer"]`
+- `.slick-current > div > .Carousel-module-scss-module__2GuYGa__item.row > .text-center.col-12 > .text-decoration-none.Button-module-scss-module__gW1A4G__color-hover-dark-red.Button-module-scss-module__gW1A4G__button`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
