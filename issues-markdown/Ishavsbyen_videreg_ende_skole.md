@@ -1,22 +1,10 @@
 # WCAG Violations Report for Ishavsbyen videregående skole
 
-**Timestamp:** 2026-03-27T00:44:56.269Z
+**Timestamp:** 2026-03-28T00:42:34.036Z
 **URL:** [https://ishavsbyen.vgs.no/#](https://ishavsbyen.vgs.no/#)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
-
-### ARIA dialog and alertdialog nodes should have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA dialog and alertdialog node has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-dialog-name?application=playwright
-- **Tags:** cat.aria, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.bc-content-modal`
 
 ### All page content should be contained by landmarks
 

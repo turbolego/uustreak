@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-03-27T00:47:18.787Z
+**Timestamp:** 2026-03-28T00:44:57.116Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 5
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `img[alt="Living håndkleserie 50%"]`
+- `a[href$="hotel-selection"] > .gp.da.dd > .en.gl.a3`
 - `img[alt="Toalettmapper 50%"]`
 - `img[alt="Morgenkåper 50%"]`
 - `img[alt="AVA velværeserie 40%"]`

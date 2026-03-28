@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger kommune
 
-**Timestamp:** 2026-03-27T00:34:44.123Z
+**Timestamp:** 2026-03-28T00:31:10.567Z
 **URL:** [https://www.stavanger.kommune.no/#](https://www.stavanger.kommune.no/#)
 **Total Violations:** 3
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.servicepage.teaser-with-image.col-md-4:nth-child(9) > .sub-teaser > .no-target-icon > .sub-teaser__image > img`
+- `.servicepage.teaser-with-image.col-md-4:nth-child(8) > .sub-teaser > .no-target-icon > .sub-teaser__image > img`
 
 ### Aside should not be contained in another landmark
 

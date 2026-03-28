@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-03-27T00:41:13.317Z
+**Timestamp:** 2026-03-28T00:38:02.066Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
 **Total Violations:** 6
 
@@ -43,7 +43,7 @@
 
 #### Affected Elements:
 
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-header[data-v-8f8f6f81=""] > .margin-top-3xl.padding-top-3xs`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-header[data-v-ad89512d=""] > .margin-top-3xl.padding-top-3xs`
 - `.dropdown-category.footer.dark:nth-child(1) > .dropdown-link[data-v-9b029b67=""] > .dropdown-header.hidden-mobile[data-v-9b029b67=""] > h6`
 - `#privacy_prompt_text2 > h4`
 
@@ -57,8 +57,8 @@
 
 #### Affected Elements:
 
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-8f8f6f81=""] > div[data-v-17c7e907=""] > .tn-list.content-list[data-v-797e5417=""]`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-8f8f6f81=""] > div[data-v-17c7e907=""] > .tn-list.content-list[data-v-797e5417=""]`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-ad89512d=""] > div[data-v-9751a64f=""] > .regular-usp-list[data-v-9751a64f=""] > .tn-list.content-list[data-v-797e5417=""]`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-ad89512d=""] > div[data-v-9751a64f=""] > .regular-usp-list[data-v-9751a64f=""] > .tn-list.content-list[data-v-797e5417=""]`
 
 ### <li> elements must be contained in a <ul> or <ol>
 
@@ -66,14 +66,16 @@
 - **Description:** Ensure <li> elements are used semantically
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/listitem?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 4
+- **Count:** 6
 
 #### Affected Elements:
 
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(1) > .main-stock.stock[size="14px"]`
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(2) > .main-stock.stock[size="14px"]`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-8f8f6f81=""] > div[data-v-17c7e907=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-17c7e907=""] > .tn-listitem.content-m[data-v-eeeb18ea=""]`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-8f8f6f81=""] > div[data-v-17c7e907=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-17c7e907=""] > .tn-listitem.content-m[data-v-eeeb18ea=""]`
+- `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(3) > .main-stock.stock[size="14px"]`
+- `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(4) > .main-stock.stock[size="14px"]`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-ad89512d=""] > div[data-v-9751a64f=""] > .regular-usp-list[data-v-9751a64f=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-9751a64f=""] > .tn-listitem.content-m[data-v-eeeb18ea=""]`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-ad89512d=""] > div[data-v-9751a64f=""] > .regular-usp-list[data-v-9751a64f=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-9751a64f=""] > .tn-listitem.content-m[data-v-eeeb18ea=""]`
 
 ### All page content should be contained by landmarks
 

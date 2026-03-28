@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-03-27T00:38:03.355Z
+**Timestamp:** 2026-03-28T00:34:56.440Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -24,25 +24,25 @@
 - `a[aria-label="Henningsvær skallparkas"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
-- `a[aria-label="Rauma 3-lags skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Rauma 3-lags skalljakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Tromlingene sneaker barn"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Tromlingene sneaker barn"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `a[aria-label="Rauma 3-lags skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Rauma 3-lags skalljakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Urstad kokesett 1L"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Urstad kokesett 1L"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Juv turbukse"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Juv turbukse"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `a[aria-label="Senja 4P kuppeltelt"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Senja 4P kuppeltelt"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `a[aria-label="Sandholmen Pop-Up UV50+ telt"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Sandholmen Pop-Up UV50+ telt"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `a[aria-label="Vesterfjell tursekk 35 L"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Vesterfjell tursekk 35 L"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `a[aria-label="Vesterfjell tursekk 60 L"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Vesterfjell tursekk 60 L"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `li:nth-child(4) > .i3.i4[aria-label="Kullen ryggsekk 8 L"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `li:nth-child(4) > .i3.i4[aria-label="Kullen ryggsekk 8 L"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `li:nth-child(5) > .i3.i4[aria-label="Kullen ryggsekk 8 L"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `li:nth-child(5) > .i3.i4[aria-label="Kullen ryggsekk 8 L"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Sogndal skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Lifjell Half Zip fleecegenser"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Sprek teknisk fritidsbukse"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Regndag regnbukse unisex"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Regndag regnbukse barn 8-14"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Notodden cord turshorts dame"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Hovden vinterdress"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Hinnstein slim fritidsbukse"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Hinnstein fritidsbukse"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty

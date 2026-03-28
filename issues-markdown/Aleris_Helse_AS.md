@@ -1,8 +1,8 @@
 # WCAG Violations Report for Aleris Helse AS
 
-**Timestamp:** 2026-03-27T00:37:57.303Z
+**Timestamp:** 2026-03-28T00:34:57.449Z
 **URL:** [https://www.aleris.no/](https://www.aleris.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -30,6 +30,18 @@
 #### Affected Elements:
 
 - `.ant-skeleton-title`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.t100 > .styles_contentBlock___1KCQ.styles_fade__h9B8v.has-media > .styles_content__qFxgO.styles_contentPadding__AZGh2.styles_contentOnTop__9Vt15 > .styles_container__Qq32L.styles_alignLeft__YLs2e.styles_alignLeftLg__PUX2R > .styles_structuredText__G6NhJ.styles_html__zz6xy > h3`
 
 ### Document should not have more than one banner landmark
 

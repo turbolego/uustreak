@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-03-27T01:02:23.100Z
+**Timestamp:** 2026-03-28T00:40:07.101Z
 **URL:** [https://www.bt.no/#](https://www.bt.no/#)
 **Total Violations:** 6
 
@@ -36,25 +36,27 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 25
+- **Count:** 26
 
 #### Affected Elements:
 
-- `.article__live-loaded > .article__teaser-container > .article__link.url > .article__text-container > .article__section`
-- `.timeline--date`
+- `.liveticker-red`
+- `article[data-pulse-entity-id="zOOxa5"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section`
+- `article[data-pulse-entity-id="ExxB6P"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section`
 - `._preview_12jab_666:nth-child(1) > a > ._preview-title_12jab_726 > span`
 - `._preview_12jab_666:nth-child(2) > a > ._preview-title_12jab_726 > span`
 - `._preview_12jab_666:nth-child(3) > a > ._preview-title_12jab_726 > span`
 - `._preview_12jab_666:nth-child(4) > a > ._preview-title_12jab_726 > span`
 - `._preview_12jab_666:nth-child(5) > a > ._preview-title_12jab_726 > span`
-- `article[data-pulse-entity-id="7pppRK"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="wrreQ4"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="lnnEq7"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `.memo > .text-container > h3`
 - `.kryssord > .text-container > h3`
 - `.minikryss > .text-container > h3`
 - `.ordjakten > .text-container > h3`
-- `article[data-pulse-entity-id="oE3mjB"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `article[data-pulse-entity-id="0ppEj6"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `article[data-pulse-entity-id="e777aO"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="5ppnB1"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="7pppRK"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `a[aria-label="– Storsatsingen kan ryke"] > .article__text-container > .article__section-kicker-container > .article__section`
 - `.opinion-banner-desc`
 - `#Vågen`
 - `#Finse`
@@ -62,9 +64,8 @@
 - `#Torgallmeningen`
 - `#Puddefjordsbroen`
 - `#Åsaneveien`
-- `article[data-pulse-entity-id="e7MpoO"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="e777aO"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `article[data-pulse-entity-id="K88vLo"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `article[data-pulse-entity-id="8pmdrx"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 
 ### Heading levels should only increase by one
 
@@ -76,7 +77,7 @@
 
 #### Affected Elements:
 
-- `#memorialPromo > .track-click.url > .article__text-container > .article__title--short`
+- `.track-click.url > .article__text-container > .article__title--short`
 
 ### Images must have alternative text
 
@@ -105,13 +106,18 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 76
+- **Count:** 82
 
 #### Affected Elements:
 
 - `.sr-only`
+- `.liveticker-red`
+- `a[title="– Slagsmål på nattklubb"]`
+- `a[title="Hjort fanga på kamera"] > .name`
+- `a[data-name="Bergen åpner"] > .name`
 - `.collage-x3.row:nth-child(1)`
-- `.top-60-40-block`
+- `.collage-x3.row:nth-child(4)`
+- `#dr-edition-teaser-dobuqsz9c > div`
 - `._heading_12jab_646 > span`
 - `._preview_12jab_666:nth-child(1) > a > ._preview-image_12jab_714[loading="lazy"]`
 - `._preview_12jab_666:nth-child(1) > a > ._preview-title_12jab_726`
@@ -133,16 +139,16 @@
 - `._preview_12jab_666:nth-child(9) > a > ._preview-title_12jab_726`
 - `._preview_12jab_666:nth-child(10) > a > ._preview-image_12jab_714[loading="lazy"]`
 - `._preview_12jab_666:nth-child(10) > a > ._preview-title_12jab_726`
-- `.collage-x3.row:nth-child(11)`
-- `.vertical-x2.row:nth-child(14)`
-- `.collage-x4`
+- `.vertical-x2.row:nth-child(11)`
+- `.collage-x3.row:nth-child(14)`
+- `.vertical-x2.row:nth-child(16)`
 - `.hjernetrim-front-widget`
-- `.vertical-x2.row:nth-child(19)`
-- `.vertical-x3.row:nth-child(22)`
-- `.vertical-x2.row:nth-child(24)`
+- `.collage-x3.row:nth-child(19)`
+- `article[data-pulse-entity-id="wrr9Mo"] > .display-flex.article__teaser-container > .article__text-container`
+- `.vertical-x3.row:nth-child(23)`
+- `.vertical-x2.row:nth-child(25)`
 - `.vertical-x4.row:nth-child(26)`
-- `.vertical-x2.row:nth-child(27)`
-- `.vertical-x3.row:nth-child(29)`
+- `.vertical-x2.row:nth-child(28)`
 - `.restaurant-list-header`
 - `.top-collage-x3 > .column--big.column`
 - `.minimal-teaser:nth-child(1)`
@@ -150,38 +156,39 @@
 - `.minimal-teaser:nth-child(2) > a > .teaser-container > .article__kicker-title`
 - `.minimal-teaser:nth-child(2) > .article__labels`
 - `.restaurant-map-teaser`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(32)`
-- `.vertical-x2.row:nth-child(33)`
-- `.vertical-small-x2.row:nth-child(35)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(31)`
+- `.vertical-x3.row:nth-child(32)`
+- `.vertical-x2.row:nth-child(34)`
 - `.widget-football.regional-widget`
-- `.vertical-x2.row:nth-child(37)`
+- `.collage-x3.row:nth-child(36)`
 - `#podcast-latest > .podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
+- `.vertical-x2.row:nth-child(38)`
 - `.vertical-x3.row:nth-child(39)`
-- `.vertical-x2.row:nth-child(40)`
-- `.vertical-x3.row:nth-child(41)`
-- `.vertical-x1-ad.row:nth-child(42)`
-- `.vertical-x2.row:nth-child(45)`
-- `.vertical-x4.row:nth-child(47)`
+- `.vertical-small-x2`
+- `.vertical-x1-ad.row:nth-child(41)`
+- `.collage-x3.row:nth-child(44)`
+- `.vertical-x3.row:nth-child(46)`
 - `.opinion-banner-title`
 - `.opinion-banner-desc`
-- `.vertical-x3.row:nth-child(49)`
+- `article[data-pulse-entity-id="zOO67K"] > .display-flex.article__teaser-container > .article__text-container`
 - `.widget-webcam`
-- `.vertical-x2.row:nth-child(51)`
-- `.vertical-x1-ad.row:nth-child(52)`
-- `.vertical-small-x2.row:nth-child(53)`
-- `.vertical-x2.row:nth-child(54)`
-- `.vertical-x1-ad.row:nth-child(55)`
+- `.vertical-x4.row:nth-child(50)`
+- `.vertical-x1-ad.row:nth-child(51)`
+- `.vertical-x2.row:nth-child(52)`
+- `.vertical-x3.row:nth-child(53)`
+- `.vertical-x1-ad.row:nth-child(54)`
+- `.vertical-x2.row:nth-child(55)`
 - `.vertical-x3.row:nth-child(56)`
-- `.vertical-x2.row:nth-child(57)`
-- `.vertical-x1-ad.row:nth-child(58)`
-- `.vertical-small-x2.row:nth-child(59)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(60)`
+- `.vertical-x1-ad.row:nth-child(57)`
+- `.vertical-x2.row:nth-child(58)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(59)`
+- `.vertical-x3.row:nth-child(60)`
 - `.vertical-x2.row:nth-child(61)`
-- `.vertical-x3.row:nth-child(62)`
-- `.collage-x3.row:nth-child(64)`
-- `.vertical-x2.row:nth-child(65)`
-- `.vertical-x2.row:nth-child(66)`
-- `.sch-datacontroller__text`
+- `.vertical-x3.row:nth-child(63)`
+- `.vertical-x2.row:nth-child(64)`
+- `.vertical-x4.row:nth-child(65)`
+- `.collage-x3.row:nth-child(66)`
+- `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`
