@@ -1,7 +1,7 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2026-03-28T00:39:34.178Z
-**URL:** [https://oslonye.no/#](https://oslonye.no/#)
+**Timestamp:** 2026-03-29T00:57:07.746Z
+**URL:** [https://oslonye.no/](https://oslonye.no/)
 **Total Violations:** 5
 
 ## Violation Details
@@ -12,13 +12,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
 - `button[data-cky-tag="accept-button"]`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .teaterkjellern.cat.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .teaterkjellern.cat.hide1`
+- `.cat.teaterkjellern.hide1`
 
 ### Heading levels should only increase by one
 
@@ -75,7 +74,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 27
+- **Count:** 21
 
 #### Affected Elements:
 
@@ -99,10 +98,4 @@
 - `.forestillinger-blocks-panel:nth-child(10)`
 - `.current-month`
 - `.desktop`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(2)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(5)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(6)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(7)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8)`
+- `.kommende-forestillinger`

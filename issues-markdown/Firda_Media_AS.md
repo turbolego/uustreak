@@ -1,10 +1,34 @@
 # WCAG Violations Report for Firda Media AS
 
-**Timestamp:** 2026-03-28T00:35:39.601Z
-**URL:** [https://www.firda.no/#](https://www.firda.no/#)
-**Total Violations:** 5
+**Timestamp:** 2026-03-29T01:11:29.089Z
+**URL:** [https://www.firda.no/](https://www.firda.no/)
+**Total Violations:** 7
 
 ## Violation Details
+
+### Elements must only use supported ARIA attributes
+
+- **Impact:** critical
+- **Description:** Ensure an element's role supports its ARIA attributes
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.firda\.no\/toppbanner_0, #\32 00_268_dfa7banner_html_inpage_0\.if, iframe, .OverlayBase_module_overlayWrapper__61370790`
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.firda\.no\/toppbanner_0, #cbb`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -24,10 +48,11 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.firda\.no\/toppbanner_0, #\32 00_268_dfa7banner_html_inpage_0\.if`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination

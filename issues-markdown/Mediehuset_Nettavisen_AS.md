@@ -1,7 +1,7 @@
 # WCAG Violations Report for Mediehuset Nettavisen AS
 
-**Timestamp:** 2026-03-28T00:32:58.232Z
-**URL:** [https://www.nettavisen.no/#](https://www.nettavisen.no/#)
+**Timestamp:** 2026-03-29T00:49:59.571Z
+**URL:** [https://www.nettavisen.no/](https://www.nettavisen.no/)
 **Total Violations:** 6
 
 ## Violation Details
@@ -18,17 +18,17 @@
 
 - `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > h1`
 
-### Heading levels should only increase by one
+### Frames must have an accessible name
 
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `article[data-k5a-trackerid="page-0"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > h3`
+- `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, iframe`
 
 ### Banner landmark should not be contained in another landmark
 

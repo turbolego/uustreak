@@ -1,7 +1,7 @@
 # WCAG Violations Report for Vestland fylkeskommune
 
-**Timestamp:** 2026-03-28T00:45:50.756Z
-**URL:** [https://www.vestlandfylke.no/#](https://www.vestlandfylke.no/#)
+**Timestamp:** 2026-03-29T01:23:47.748Z
+**URL:** [https://www.vestlandfylke.no/](https://www.vestlandfylke.no/)
 **Total Violations:** 5
 
 ## Violation Details

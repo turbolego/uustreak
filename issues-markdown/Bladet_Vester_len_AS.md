@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-03-28T00:41:52.675Z
-**URL:** [https://www.blv.no/#](https://www.blv.no/#)
+**Timestamp:** 2026-03-29T00:58:32.651Z
+**URL:** [https://www.blv.no/](https://www.blv.no/)
 **Total Violations:** 7
 
 ## Violation Details
@@ -28,8 +28,8 @@
 
 #### Affected Elements:
 
-- `.none.brick-c-ivDAcB[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
-- `.brick-c-eKmOVS > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `.none.brick-c-ivDAcB[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .title_container.brick-c-fdsRaE.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `.brick-c-eKmOVS > .body > .title_container.brick-c-fdsRaE.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
@@ -37,10 +37,12 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, iframe[scrolling="no"]`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, body > iframe`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination

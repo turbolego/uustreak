@@ -1,103 +1,19 @@
 # WCAG Violations Report for Eiendomsmegler Vest AS
 
-**Timestamp:** 2026-03-28T00:50:13.238Z
-**URL:** [https://www.eiendomsmeglernorge.no/](https://www.eiendomsmeglernorge.no/)
-**Total Violations:** 7
+**Timestamp:** 2026-03-29T01:07:40.449Z
+**URL:** [https://www.eiendomsmeglervest.no/?ki-cf-botcl=1](https://www.eiendomsmeglervest.no/?ki-cf-botcl=1)
+**Total Violations:** 1
 
 ## Violation Details
 
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
-
-#### Affected Elements:
-
-- `#menu-item-1064875 > .suki-menu-item-link > .suki-menu-item-title`
-- `#menu-item-1064874 > .suki-menu-item-link > .suki-menu-item-title`
-- `#menu-item-1064876 > .suki-menu-item-link > .suki-menu-item-title`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `h6`
-
-### Images must have alternative text
+### Delayed refresh under 20 hours must not be used
 
 - **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Description:** Ensure <meta http-equiv="refresh"> is not used for delayed refresh
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/meta-refresh?application=playwright
+- **Tags:** cat.time-and-media, wcag2a, wcag221, TTv5, TT8.a, EN-301-549, EN-9.2.2.1, RGAAv4, RGAA-13.1.2
 - **Count:** 1
 
 #### Affected Elements:
 
-- `img`
-
-### Document should not have more than one banner landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the document has at most one banner landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#coiOverlay`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#coiOverlay`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 5
-
-#### Affected Elements:
-
-- `.suki-header-logo > .site-title.h1.menu-item > .suki-menu-item-link[rel="home"]`
-- `.image-top-side.sm-2col:nth-child(1) > .sm-2col-image-wrapper > a`
-- `.image-top-side.sm-2col:nth-child(2) > .sm-2col-image-wrapper > a`
-- `.image-top-side.sm-2col:nth-child(3) > .sm-2col-image-wrapper > a`
-- `.image-top-side.sm-2col:nth-child(4) > .sm-2col-image-wrapper > a`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 7
-
-#### Affected Elements:
-
-- `.skip-link`
-- `#boligreise`
-- `#boliglan`
-- `#mer-om-bolig`
-- `h6`
-- `#boligsok > .sm-section > h2`
-- `#vi-gjor-boligen-din-synlig`
+- `meta[http-equiv="refresh"]`

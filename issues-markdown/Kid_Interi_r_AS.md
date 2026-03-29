@@ -1,7 +1,7 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-03-28T00:44:57.116Z
-**URL:** [https://www.kid.no/#](https://www.kid.no/#)
+**Timestamp:** 2026-03-29T01:22:00.720Z
+**URL:** [https://www.kid.no/](https://www.kid.no/)
 **Total Violations:** 5
 
 ## Violation Details
@@ -75,7 +75,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 7
+- **Count:** 6
 
 #### Affected Elements:
 
@@ -85,4 +85,3 @@
 - `.a > div:nth-child(5)`
 - `.tf-header-slider`
 - `.tf-sidebar`
-- `#kindly-chat-api > div,.sc-iVFRtC`
