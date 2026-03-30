@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elvia AS
 
-**Timestamp:** 2026-03-29T01:08:40.420Z
+**Timestamp:** 2026-03-30T03:38:41.896Z
 **URL:** [https://www.elvia.no/](https://www.elvia.no/)
 **Total Violations:** 4
 

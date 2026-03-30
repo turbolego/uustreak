@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-03-29T01:03:20.558Z
+**Timestamp:** 2026-03-30T03:33:13.049Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 8
 
@@ -59,8 +59,8 @@
 - `.t20`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44) > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(49) > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(51) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(56) > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(57) > h5`
 
 ### Images must have alternative text
 
@@ -110,12 +110,28 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 92
+- **Count:** 97
 
 #### Affected Elements:
 
 - `h1`
 - `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
+- `div[title="Jon Almaas får støtte fra MDG"] > h2`
+- `div[title="Jon Almaas får støtte fra MDG"] > .meta`
+- `#notice-10276680 > .content > h2`
+- `#notice-10276680 > .content > .meta`
+- `#notice-10276301 > .content > h2`
+- `#notice-10276301 > .content > .meta`
+- `#notice-10276156 > .content > h2`
+- `time[datetime="2026-03-29T08:48:39.000Z"]`
+- `#notice-10276155 > .content > h2`
+- `time[datetime="2026-03-29T08:47:12.000Z"]`
+- `#notice-10276095 > .content > h2`
+- `time[datetime="2026-03-29T06:33:49.000Z"]`
+- `#notice-10276094 > .content > h2`
+- `time[datetime="2026-03-29T06:29:16.000Z"]`
+- `#notice-10276093 > .content > h2`
+- `time[datetime="2026-03-29T06:26:31.000Z"]`
 - `#notice-10276055 > .content > h2`
 - `#notice-10276055 > .content > .meta`
 - `#notice-10276033 > .content > h2`
@@ -140,24 +156,8 @@
 - `time[datetime="2026-03-27T11:42:56.000Z"]`
 - `#notice-10274625 > .content > h2`
 - `time[datetime="2026-03-27T11:34:11.000Z"]`
-- `#notice-10274513 > .content > h2`
-- `time[datetime="2026-03-27T11:13:35.000Z"]`
-- `#notice-10274128 > .content > h2`
-- `time[datetime="2026-03-27T09:01:29.000Z"]`
-- `#notice-10274127 > .content > h2`
-- `time[datetime="2026-03-27T08:59:57.000Z"]`
-- `div[title="Epstein-kommisjonen er klar"] > h2`
-- `time[datetime="2026-03-27T08:13:54.000Z"]`
-- `#notice-10273932 > .content > h2`
-- `time[datetime="2026-03-27T07:04:35.000Z"]`
-- `#notice-10273931 > .content > h2`
-- `time[datetime="2026-03-27T07:03:31.000Z"]`
-- `#notice-10273898 > .content > h2`
-- `time[datetime="2026-03-27T06:18:09.000Z"]`
-- `div[title="EU: Russland hjelper Iran"] > h2`
-- `time[datetime="2026-03-27T06:17:01.000Z"]`
 - `.row.large-12.small-12:nth-child(2)`
-- `.page-content > .bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(3)`
+- `.row.large-12.small-12:nth-child(3)`
 - `#offer_2649a4c9ca9c49c7702d-0, div[ng-show="!terminalError"]`
 - `.row.large-12.small-12:nth-child(6)`
 - `.row.large-12.small-12:nth-child(7)`
@@ -165,7 +165,7 @@
 - `#markup_10268378 > .fullwidthTarget.content > iframe[data-testid="embed-iframe"][width="100%"][height="352"], .encore-text-body-medium.encore-internal-color-text-subdued.e-91185-text`
 - `#markup_10268378 > .fullwidthTarget.content > iframe[data-testid="embed-iframe"][width="100%"][height="352"], a[dir="auto"]`
 - `.mobile_no_border_side.hasBorder.mobile-hasBorder`
-- `.row.large-12.small-12:nth-child(11)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(11)`
 - `.row.large-12.small-12:nth-child(12)`
 - `.row.large-12.small-12:nth-child(13)`
 - `.row.large-12.small-12:nth-child(14)`
@@ -181,28 +181,33 @@
 - `.row.large-12.small-12:nth-child(26)`
 - `#article_list_10184114 > .content > .font-weight-normal.m-font-weight-normal.font-PTSans`
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(28)`
+- `.row.large-12.small-12:nth-child(28)`
 - `.row.large-12.small-12:nth-child(29)`
 - `.row.large-12.small-12:nth-child(31)`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32)`
 - `.row.large-12.small-12:nth-child(33)`
 - `.row.large-12.small-12:nth-child(34)`
-- `.row.large-12.small-12:nth-child(36)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(36)`
 - `.row.large-12.small-12:nth-child(37)`
 - `.row.large-12.small-12:nth-child(38)`
 - `.row.large-12.small-12:nth-child(39)`
 - `#article_list_10230577 > .content > .font-weight-normal.m-font-weight-normal.font-PTSans`
 - `#article_list_10230577 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(43)`
+- `.row.large-12.small-12:nth-child(42)`
+- `.row.large-12.small-12:nth-child(43)`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44)`
 - `.row.large-12.small-12:nth-child(46)`
 - `.row.large-12.small-12:nth-child(47)`
 - `.color_mobile_no_bg_color.content > .headline[itemprop="headline"]`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(49)`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(51)`
+- `.row.large-12.small-12:nth-child(49)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(52)`
+- `.row.large-12.small-12:nth-child(53)`
 - `#offer_776d912cd0ef00ccde3d-0, img`
 - `#offer_776d912cd0ef00ccde3d-0, .pw-subtitle`
 - `#offer_776d912cd0ef00ccde3d-0, .pw-offer`
 - `#offer_776d912cd0ef00ccde3d-0, #pw-countdown`
-- `.bg-tertiary.color_mobile_bg-tertiary.hasContentPadding:nth-child(54)`
+- `.row.large-12.small-12:nth-child(55)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(56)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(57)`
+- `.bg-tertiary.color_mobile_bg-tertiary.hasContentPadding:nth-child(59)`
 - `.powered-by`

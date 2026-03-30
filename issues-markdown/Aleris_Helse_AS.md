@@ -1,6 +1,6 @@
 # WCAG Violations Report for Aleris Helse AS
 
-**Timestamp:** 2026-03-29T00:51:05.891Z
+**Timestamp:** 2026-03-30T03:20:35.792Z
 **URL:** [https://www.aleris.no/](https://www.aleris.no/)
 **Total Violations:** 6
 

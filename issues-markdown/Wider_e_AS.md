@@ -1,6 +1,6 @@
 # WCAG Violations Report for Widerøe AS
 
-**Timestamp:** 2026-03-29T01:25:43.791Z
+**Timestamp:** 2026-03-30T04:02:46.846Z
 **URL:** [https://www.wideroe.no/](https://www.wideroe.no/)
 **Total Violations:** 1
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kongsberg kommune
 
-**Timestamp:** 2026-03-29T01:23:02.262Z
+**Timestamp:** 2026-03-30T03:53:21.507Z
 **URL:** [https://www.kongsberg.kommune.no/](https://www.kongsberg.kommune.no/)
 **Total Violations:** 2
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#news__UV50x`
+- `#news__j7DIS`
 
 ### Page should contain a level-one heading
 

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-03-29T00:58:14.601Z
+**Timestamp:** 2026-03-30T03:27:49.069Z
 **URL:** [https://www.nordlys.no/](https://www.nordlys.no/)
-**Total Violations:** 7
+**Total Violations:** 9
 
 ## Violation Details
 
@@ -17,6 +17,19 @@
 #### Affected Elements:
 
 - `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/takeover_0, #cbb`
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/takeover_0, #cmmn931t43ii1pg1zej4fsw03, .play`
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/takeover_0, #cmmn931t43ii1pg1zej4fsw03, .audio`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -36,11 +49,24 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/takeover_0, #cmmn931t43ii1pg1zej4fsw03`
+- `#eaframe`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#eaframe`
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/takeover_0, #cmmn931t43ii1pg1zej4fsw03, img`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -84,10 +110,12 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 3
+- **Count:** 5
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/takeover_0, #cmmn931t43ii1pg1zej4fsw03, video`
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/takeover_0, #cmmn931t43ii1pg1zej4fsw03, img`
 - `.takeover-close`
 - `amedia-username`
 - `#toppbanner-1`

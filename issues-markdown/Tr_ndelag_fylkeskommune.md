@@ -1,6 +1,6 @@
 # WCAG Violations Report for Trøndelag fylkeskommune
 
-**Timestamp:** 2026-03-29T01:19:01.238Z
+**Timestamp:** 2026-03-30T03:55:10.410Z
 **URL:** [https://www.trondelagfylke.no/](https://www.trondelagfylke.no/)
 **Total Violations:** 4
 

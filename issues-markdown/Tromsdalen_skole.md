@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tromsdalen skole
 
-**Timestamp:** 2026-03-29T01:17:46.188Z
+**Timestamp:** 2026-03-30T03:53:56.672Z
 **URL:** [https://tromsdalen.tromsoskolen.no/](https://tromsdalen.tromsoskolen.no/)
 **Total Violations:** 6
 
