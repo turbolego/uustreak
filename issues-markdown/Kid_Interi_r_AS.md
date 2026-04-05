@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-03-30T03:52:18.262Z
+**Timestamp:** 2026-04-05T01:01:47.519Z
 **URL:** [https://www.kid.no/](https://www.kid.no/)
 **Total Violations:** 5
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.g1 > .fe.ff.el`
+- `.g9 > .fe.ff.el`
 
 ### Alternative text of images should not be repeated as text
 
@@ -36,27 +36,28 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 25
+- **Count:** 26
 
 #### Affected Elements:
 
 - `img[alt="Se alle -->"]`
-- `img[alt="Sengesett"]`
-- `img[alt="Putevar"]`
-- `img[alt="Dundyner"]`
-- `img[alt="Laken"]`
-- `img[alt="Sengetepper"]`
-- `img[alt="Dunputer"]`
+- `img[alt="Sengesett -50%"]`
+- `img[alt="Putevar -50%"]`
+- `img[alt="Dundyner -50%"]`
+- `img[alt="Laken -50%"]`
+- `img[alt="Sengetepper -50%"]`
+- `a[href$="dunputer"] > .g0.da.c4 > .en.fw[alt="-->"]`
 - `img[alt="Eden sengesett 2 for 899,-"]`
-- `img[alt="-->"]`
-- `img[alt="Sommerdyner"]`
-- `img[alt="Madrass- og putebeskytter"]`
+- `.fy.hr.fv:nth-child(9) > div > .ca.s.c > .g0.da.c4 > .en.fw[alt="-->"]`
+- `img[alt="Sommerdyner fra 299,-"]`
+- `img[alt="Madrass- og putebeskytter -50%"]`
 - `a[href$="hotel-selection"] > .g0.da.c4 > .en.fw.a3`
-- `img[alt="Toalettmapper 50%"]`
 - `img[alt="Morgenkåper 50%"]`
+- `img[alt="Toalettmapper 50%"]`
+- `img[alt="Baderomstilbehør 50%"]`
 - `img[alt="AVA velværeserie 40%"]`
 - `img[alt="Loungewear 50%"]`
-- `img[alt="Baderomstilbehør 50%"]`
+- `img[alt="Ambiance velværeserie 40%"]`
 - `img[alt="Håraccessories 50%"]`
 - `img[alt="Therapie velværeserie 40%"]`
 - `img[alt="Otto gardin"]`

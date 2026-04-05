@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-03-30T03:32:08.876Z
+**Timestamp:** 2026-04-05T00:39:25.873Z
 **URL:** [https://www.dagbladet.no/](https://www.dagbladet.no/)
-**Total Violations:** 6
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -18,19 +18,41 @@
 
 - `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #cbb`
 
-### Images must have alternative text
+### Buttons must have discernible text
 
 - **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 3
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #impression1`
-- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #impression2`
-- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #impression3`
+- `.fullwidthTarget.content > iframe[scrolling="no"], button`
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.text-red > .kicker-content`
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.fullwidthTarget.content > iframe[scrolling="no"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -54,24 +76,7 @@
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, .GoogleActiveViewElement > div > a`
-
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 6
-
-#### Affected Elements:
-
-- `html`
-- `#horseshoe-ad-background-top, html`
-- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, html`
-- `#horseshoe-ad-background-left, html`
-- `#horseshoe-ad-background-right, html`
-- `iframe[title="Dagbladet Studio-lista"], html`
+- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #aw0`
 
 ### All page content should be contained by landmarks
 
@@ -84,3 +89,15 @@
 #### Affected Elements:
 
 - `#am-branding > p`
+
+### Scrollable region must have keyboard access
+
+- **Impact:** serious
+- **Description:** Ensure elements that have scrollable content are accessible by keyboard
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.fullwidthTarget.content > iframe[scrolling="no"], .px-1`

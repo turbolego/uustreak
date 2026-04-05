@@ -1,6 +1,6 @@
 # WCAG Violations Report for Rikstv AS
 
-**Timestamp:** 2026-03-30T03:31:26.275Z
+**Timestamp:** 2026-04-05T00:38:47.822Z
 **URL:** [https://www.rikstv.no/](https://www.rikstv.no/)
 **Total Violations:** 1
 
@@ -12,10 +12,13 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
+- **Count:** 6
 
 #### Affected Elements:
 
+- `.split`
+- `.split > span`
+- `.with-arrow`
 - `article:nth-child(1) > .description > .buttons > .edge-btn[aria-label=""]`
 - `article:nth-child(4) > .description > .buttons > .edge-btn[aria-label=""]`
 - `.wscrOk`

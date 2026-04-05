@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kristiansand Dyrepark AS
 
-**Timestamp:** 2026-03-30T03:54:23.953Z
+**Timestamp:** 2026-04-05T01:03:48.074Z
 **URL:** [https://www.dyreparken.no/](https://www.dyreparken.no/)
 **Total Violations:** 6
 
@@ -123,10 +123,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(1)`
-- `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(3)`
-- `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text > span`
+- `.c-header-message`
+- `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text`

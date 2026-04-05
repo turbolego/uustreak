@@ -1,8 +1,8 @@
 # WCAG Violations Report for Østlendingen AS
 
-**Timestamp:** 2026-03-30T04:05:28.364Z
+**Timestamp:** 2026-04-05T01:05:31.163Z
 **URL:** [https://www.ostlendingen.no/](https://www.ostlendingen.no/)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="4"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `brick-carousel-v2[data-slides="20"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Links must have discernible text
 
@@ -52,21 +52,7 @@
 
 #### Affected Elements:
 
-- `#www\.ostlendingen\.no\/toppbanner_1 > a[target="_blank"]`
-
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `html`
-- `#google_ads_iframe_\/56257416\/www\.ostlendingen\.no\/toppbanner_0, html`
-- `#eaframe, html`
+- `#google_ads_iframe_\/56257416\/www\.ostlendingen\.no\/toppbanner_0, #aw0`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -91,4 +77,4 @@
 #### Affected Elements:
 
 - `amedia-username`
-- `#toppbanner-1-label`
+- `#toppbanner-1`

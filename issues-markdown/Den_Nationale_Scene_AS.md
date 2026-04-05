@@ -1,6 +1,6 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2026-03-30T03:34:59.015Z
+**Timestamp:** 2026-04-05T00:42:09.976Z
 **URL:** [https://dns.no/](https://dns.no/)
 **Total Violations:** 6
 
@@ -80,28 +80,28 @@
 - `.month1 > thead > .caption > th:nth-child(1)`
 - `.month1 > thead > .caption > .month-name[colspan="5"]`
 - `.month1 > thead > .week-name`
+- `.month1 > tbody > tr:nth-child(1) > td:nth-child(3)`
+- `.month1 > tbody > tr:nth-child(1) > td:nth-child(4)`
+- `.month1 > tbody > tr:nth-child(1) > td:nth-child(5)`
+- `.month1 > tbody > tr:nth-child(1) > td:nth-child(6)`
 - `.month1 > tbody > tr:nth-child(1) > td:nth-child(7)`
 - `.month1 > tbody > tr:nth-child(2)`
 - `.month1 > tbody > tr:nth-child(3)`
 - `.month1 > tbody > tr:nth-child(4)`
-- `.month1 > tbody > tr:nth-child(5)`
-- `tr:nth-child(6) > td:nth-child(1)`
-- `tr:nth-child(6) > td:nth-child(2)`
+- `.month1 > tbody > tr:nth-child(5) > td:nth-child(1)`
+- `.month1 > tbody > tr:nth-child(5) > td:nth-child(2)`
+- `.month1 > tbody > tr:nth-child(5) > td:nth-child(3)`
+- `.month1 > tbody > tr:nth-child(5) > td:nth-child(4)`
 - `.month2 > thead > .caption > .month-name[colspan="5"]`
 - `.month2 > thead > .caption > th:nth-child(3)`
 - `.month2 > thead > .week-name`
-- `.month2 > tbody > tr:nth-child(1) > td:nth-child(3)`
-- `.month2 > tbody > tr:nth-child(1) > td:nth-child(4)`
 - `.month2 > tbody > tr:nth-child(1) > td:nth-child(5)`
 - `.month2 > tbody > tr:nth-child(1) > td:nth-child(6)`
 - `.month2 > tbody > tr:nth-child(1) > td:nth-child(7)`
 - `.month2 > tbody > tr:nth-child(2)`
 - `.month2 > tbody > tr:nth-child(3)`
 - `.month2 > tbody > tr:nth-child(4)`
-- `.month2 > tbody > tr:nth-child(5) > td:nth-child(1)`
-- `.month2 > tbody > tr:nth-child(5) > td:nth-child(2)`
-- `.month2 > tbody > tr:nth-child(5) > td:nth-child(3)`
-- `.month2 > tbody > tr:nth-child(5) > td:nth-child(4)`
+- `.month2 > tbody > tr:nth-child(5)`
 - `div[data-postid="17010"] > .vc_column-inner > .wpb_wrapper > .wpb_animate_when_almost_visible.wpb_fadeIn.wpb_start_animation:nth-child(1)`
 - `div[data-postid="17010"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
 - `div[data-postid="17010"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`

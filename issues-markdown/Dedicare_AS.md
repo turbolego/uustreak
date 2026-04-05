@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dedicare AS
 
-**Timestamp:** 2026-03-30T03:34:18.795Z
+**Timestamp:** 2026-04-05T00:41:31.164Z
 **URL:** [https://www.dedicare.no/](https://www.dedicare.no/)
-**Total Violations:** 10
+**Total Violations:** 9
 
 ## Violation Details
 
@@ -41,18 +41,6 @@
 #### Affected Elements:
 
 - `.col-md-10 > .button-color-primary.button`
-
-### Frames with focusable content must not have tabindex=-1
-
-- **Impact:** serious
-- **Description:** Ensure <frame> and <iframe> elements with focusable content do not have tabindex=-1
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-focusable-content?application=playwright
-- **Tags:** cat.keyboard, wcag2a, wcag211, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, RGAAv4, RGAA-7.3.2
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe[title="reCAPTCHA"], html`
 
 ### Heading levels should only increase by one
 

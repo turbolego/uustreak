@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2026-03-30T04:01:23.092Z
+**Timestamp:** 2026-04-05T01:02:50.304Z
 **URL:** [https://vestlia.no/](https://vestlia.no/)
 **Total Violations:** 10
 
@@ -24,7 +24,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 13
+- **Count:** 14
 
 #### Affected Elements:
 
@@ -38,9 +38,10 @@
 - `.button-11 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.fusion-title-13 > h2`
 - `.button-12 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_9f80e4e7-f3bb-4d7e-b47b-8f22802e1711`
+- `#f_55453856-a192-42d4-a7ce-e5811361f725`
 - `.button-14 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_63e9f2a7-8435-44e9-8ffb-4d9a6b8dce4d`
+- `.button-15 > .fusion-button-text.awb-button__text.awb-button__text--default`
+- `#f_cf52d72b-4096-4272-b977-0aedb70b2f06`
 
 ### Heading levels should only increase by one
 
@@ -125,22 +126,20 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 14
+- **Count:** 12
 
 #### Affected Elements:
 
 - `.skip-link`
 - `.fusion-builder-column-1`
 - `.fusion-flex-justify-content-center.fusion-content-layout-column.fusion-column-wrapper > .sm-text-align-center.fusion-image-element`
-- `.fusion-builder-column-28`
 - `.fusion-builder-column-29`
 - `.fusion-builder-column-30`
+- `.fusion-builder-column-31`
 - `.fusion-builder-row-16`
 - `.fusion-builder-row-18`
 - `.fusion-builder-row-19`
-- `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(1)`
-- `iframe[title="reCAPTCHA"], .rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(3)`
-- `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text > span`
+- `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text`
 - `div:nth-child(27)`
 - `div:nth-child(28)`
 

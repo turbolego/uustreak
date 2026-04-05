@@ -1,6 +1,6 @@
 # WCAG Violations Report for Trones skole
 
-**Timestamp:** 2026-03-30T03:54:41.333Z
+**Timestamp:** 2026-04-05T00:57:13.405Z
 **URL:** [https://www.minskole.no/trones](https://www.minskole.no/trones)
 **Total Violations:** 7
 
@@ -70,25 +70,25 @@
 
 - `#ctl10_hl`
 - `#ctl16_hl`
-- `div:nth-child(1) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/427492"]`
+- `div:nth-child(1) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/427787"]`
+- `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/427787"]`
+- `#ctl00_ContentPlaceHolder1_ctl01 > div:nth-child(3) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/427786"]`
+- `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/427786"]`
+- `div:nth-child(5) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/427492"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/427492"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/427428"]`
-- `div:nth-child(5) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/427276"]`
+- `div:nth-child(9) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/427276"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/427276"]`
-- `div:nth-child(7) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426797"]`
+- `div:nth-child(11) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426797"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426797"]`
-- `div:nth-child(9) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426753"]`
+- `div:nth-child(13) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426753"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426753"]`
-- `div:nth-child(11) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426752"]`
+- `div:nth-child(15) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426752"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426752"]`
-- `div:nth-child(13) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426751"]`
+- `div:nth-child(17) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426751"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426751"]`
-- `div:nth-child(15) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426755"]`
+- `div:nth-child(19) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426755"]`
 - `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426755"]`
-- `div:nth-child(17) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426750"]`
-- `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426750"]`
-- `div:nth-child(19) > div:nth-child(1) > .newsItemReadMore[href="/trones/artikkel/426699"]`
-- `div:nth-child(2) > .newsItemReadMore[href="/trones/artikkel/426699"]`
 
 ### Page should contain a level-one heading
 

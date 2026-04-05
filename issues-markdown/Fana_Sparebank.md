@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fana Sparebank
 
-**Timestamp:** 2026-03-30T03:40:19.022Z
+**Timestamp:** 2026-04-05T00:47:07.851Z
 **URL:** [https://www.fanasparebank.no/](https://www.fanasparebank.no/)
 **Total Violations:** 5
 
@@ -19,9 +19,9 @@
 - `.hero__image > div > img`
 - `shape-image,#image`
 - `.card__image.beige-theme > div > img`
-- `#PP6-5815 > .card__media > .card__image > div > scale-position-image[sc="1.1"],#image`
-- `scale-position-image[sc="1"],#image`
+- `#PP6-5815 > .card__media > .card__image > div > scale-position-image[fp="0.0,0.0"],#image`
 - `scale-position-image[alt="To damer under en paraply"],#image`
+- `scale-position-image[fp="0.0,0.03"],#image`
 
 ### Form elements should have a visible label
 

@@ -1,22 +1,10 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-03-30T03:43:45.665Z
+**Timestamp:** 2026-04-05T00:50:40.817Z
 **URL:** [https://www.f-b.no/](https://www.f-b.no/)
-**Total Violations:** 7
+**Total Violations:** 5
 
 ## Violation Details
-
-### ARIA commands must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/takeover_0, #cbb`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -36,10 +24,12 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, iframe[scrolling="no"]`
+- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, body > iframe`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -52,19 +42,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="20"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/takeover_0, .GoogleActiveViewElement > a`
+- `.optimus-background-custom-sport > .wrap-horizontal.wrap-horizontal-space > brick-carousel-v2[data-slides="5"][data-version="carousel"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -84,10 +62,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.takeover-close`
 - `amedia-username`
 - `#toppbanner-1`

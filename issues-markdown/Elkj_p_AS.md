@@ -1,8 +1,8 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2026-03-30T03:38:28.191Z
+**Timestamp:** 2026-04-05T00:45:28.677Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -17,18 +17,6 @@
 #### Affected Elements:
 
 - `#declineButton`
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.top-header-block > p`
 
 ### Document should not have more than one banner landmark
 
@@ -74,8 +62,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
 - `.top-header`
+- `#kindly-chat-api > div,.sc-iVFRtC`

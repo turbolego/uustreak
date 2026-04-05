@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vinmonopolet AS
 
-**Timestamp:** 2026-03-30T04:01:51.450Z
+**Timestamp:** 2026-04-05T01:03:17.667Z
 **URL:** [https://www.vinmonopolet.no/](https://www.vinmonopolet.no/)
 **Total Violations:** 1
 
