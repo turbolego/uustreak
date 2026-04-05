@@ -1,0 +1,916 @@
+{
+  "project": "Stavanger Aftenblad AS",
+  "timestamp": "2026-04-05T00:45:03.933Z",
+  "url": "https://www.aftenbladet.no/",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-roles",
+      "impact": "critical",
+      "description": "Ensure all elements with a role attribute use a valid value",
+      "help": "ARIA roles used must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-roles?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a role=\"widget\" class=\"widget-link\" href=\"api/widget/football?userSegmentsTag=&amp;userSegmentsTitle=&amp;userSegments=\" data-offset-y=\"2000\">football</a>",
+          "target": [
+            ".widget-football[data-pulse-position=\"\"] > .widget-link[role=\"widget\"][data-offset-y=\"2000\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Abstract role cannot be directly used: widget"
+        },
+        {
+          "html": "<a role=\"widget\" class=\"widget-link\" href=\"api/widget/bolig?userSegmentsTag=&amp;userSegmentsTitle=&amp;userSegments=\" data-offset-y=\"2000\">bolig</a>",
+          "target": [
+            ".widget-bolig[data-pulse-position=\"\"] > .widget-link[role=\"widget\"][data-offset-y=\"2000\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Abstract role cannot be directly used: widget"
+        },
+        {
+          "html": "<a role=\"widget\" class=\"widget-link\" href=\"https://www.aftenbladet.no/widgets/widget-list/iris/?source=sa%2Fsections%2F%3Fsize%3D10&amp;dateFormat=LT&amp;template=bt%2Flatest&amp;includeCSS=false&amp;excludeBrandStudio=true\" data-offset-y=\"2000\">siste-widget</a>",
+          "target": [
+            ".widget-siste-widget > .widget-link[role=\"widget\"][data-offset-y=\"2000\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Abstract role cannot be directly used: widget"
+        }
+      ]
+    },
+    {
+      "id": "aria-valid-attr-value",
+      "impact": "critical",
+      "description": "Ensure all ARIA attributes have valid values",
+      "help": "ARIA attributes must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-valid-attr-value?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"javascript:void(0)\" class=\"ch-menu-state-label\" aria-label=\"Meny\" aria-controls=\"ch-menu\">Åpne</a>",
+          "target": [
+            ".ch-menu-state-label"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-controls=\"ch-menu\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<h3>Memo</h3>",
+          "target": [
+            ".memo > .text-container > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.32 (foreground color: #90b800, background color: #ffffff, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<h3>Kryssord</h3>",
+          "target": [
+            ".kryssord > .text-container > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #0083cc, background color: #ffffff, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<h3>Minikryss</h3>",
+          "target": [
+            ".minikryss > .text-container > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.4 (foreground color: #00a058, background color: #ffffff, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<h3>Ordjakten</h3>",
+          "target": [
+            ".ordjakten > .text-container > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #afa700, background color: #ffffff, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 16,
+      "nodes": [
+        {
+          "html": "<img class=\"icon\" src=\"https://cdn.bt.no/sa/hjernetrim/sudoku.png\">",
+          "target": [
+            "a:nth-child(1) > .sudoku.gamecard > .icon-container > .icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"icon\" src=\"https://cdn.bt.no/sa/hjernetrim/memo.png\">",
+          "target": [
+            ".memo > .icon-container > .icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"icon\" src=\"https://cdn.bt.no/sa/hjernetrim/kryssord.png\">",
+          "target": [
+            ".kryssord > .icon-container > .icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"icon\" src=\"https://cdn.bt.no/sa/hjernetrim/minikryss.png\">",
+          "target": [
+            ".minikryss > .icon-container > .icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"icon\" src=\"https://cdn.bt.no/sa/hjernetrim/ordjakten.png\">",
+          "target": [
+            ".ordjakten > .icon-container > .icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"icon\" src=\"https://cdn.bt.no/sa/hjernetrim/sudoku.png\">",
+          "target": [
+            "a:nth-child(6) > .sudoku.gamecard > .icon-container > .icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"icon\" src=\"https://cdn.bt.no/sa/hjernetrim/sudoku.png\">",
+          "target": [
+            "a:nth-child(7) > .sudoku.gamecard > .icon-container > .icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"icon\" src=\"https://cdn.bt.no/sa/hjernetrim/kdoku.png\">",
+          "target": [
+            ".kdoku > .icon-container > .icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"icon\" src=\"https://cdn.bt.no/sa/hjernetrim/helgekryss.png\">",
+          "target": [
+            ".helgekryss > .icon-container > .icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"podcast-image-src\" src=\"https://cdn.aftenbladet.no/rnd/aftenbla-bla_180x180.webp\">",
+          "target": [
+            "a[data-podcast-id=\"100153\"] > .podcast-image > .podcast-image-src"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"podcast-image-src\" src=\"https://cdn.aftenbladet.no/rnd/studio-a_180x180.webp\">",
+          "target": [
+            "a[data-podcast-id=\"100154\"] > .podcast-image > .podcast-image-src"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"podcast-image-src\" src=\"https://cdn.aftenbladet.no/rnd/savnet_180x180.webp\">",
+          "target": [
+            "a[data-podcast-id=\"100157\"] > .podcast-image > .podcast-image-src"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"webcam-img\" id=\"webcam-102768\" src=\"\">",
+          "target": [
+            "#webcam-102768"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"webcam-img\" id=\"webcam-105592\" src=\"\">",
+          "target": [
+            "#webcam-105592"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"webcam-img\" id=\"webcam-102012\" src=\"\">",
+          "target": [
+            "#webcam-102012"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"webcam-img\" id=\"webcam-108839\" src=\"\">",
+          "target": [
+            "#webcam-108839"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.nored.no/Redaktoerplakaten/Redaktoerplakaten/\" target=\"_blank\">",
+          "target": [
+            "._ethics_logos_1a70i_713 > a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 82,
+      "nodes": [
+        {
+          "html": "<h1 class=\"sr-only\">Stavanger Aftenblad</h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row bundle-block bundle-major-news bundle-x3 bundle-dark\">",
+          "target": [
+            ".bundle-block"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article class=\"article article--lar...\" data-live-entries-co...=\"0\" data-pulse-entity-id=\"0EGlxJ\" data-pulse-source=\"frontpage:top\" data-pulse-position=\"2\" data-pulse-access-le...=\"Paid\" data-pulse-access-le...=\"Paid\" data-pulse-position-...=\"1\" data-pulse-position-...=\"1\" data-pulse-card-size=\"lar ...>",
+          "target": [
+            ".article-section--direkte"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"article__teaser-container\">",
+          "target": [
+            "article[data-pulse-entity-id=\"M77y0m\"] > .article__teaser-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"article__teaser-container\">",
+          "target": [
+            "article[data-pulse-entity-id=\"q6698g\"] > .article__teaser-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a data-pulse-entity-id=\"paskenott-rogalandsparebank-2026\" data-pulse-source=\"paskenott-widget\" data-pulse-product-name=\"paskenott-widget\" href=\"https://rogalandsparebank.paskenott.no/\" style=\"display:flex; padding-bottom:16px;\">",
+          "target": [
+            "a[data-pulse-source=\"paskenott-widget\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Korte videoer</span>",
+          "target": [
+            "._heading_12jab_646 > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_12jab_714\" src=\"https://images.stream.schibsted.media/users/sa_/images/c3126db8a860752116021ab2fab4f182.jpg\" alt=\"Forhåndsvisning av Beste påskeminne\" loading=\"lazy\">",
+          "target": [
+            "._preview_12jab_666:nth-child(1) > a > ._preview-image_12jab_714[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_12jab_726\"><span>Beste påskeminne</span></h3>",
+          "target": [
+            "._preview_12jab_666:nth-child(1) > a > ._preview-title_12jab_726"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_12jab_714\" src=\"https://images.stream.schibsted.media/users/sa_/images/2f80fd9502dc54402218f3f28be1b919.jpg\" alt=\"Forhåndsvisning av Under en måned til EM i måkeskriking\" loading=\"lazy\">",
+          "target": [
+            "._preview_12jab_666:nth-child(2) > a > ._preview-image_12jab_714[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_12jab_726\"><span>Under en måned til EM i måkeskriking</span></h3>",
+          "target": [
+            "._preview_12jab_666:nth-child(2) > a > ._preview-title_12jab_726"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_12jab_714\" src=\"https://images.stream.schibsted.media/users/sa_/images/7c76aa5fa438f4f92adb528750e39156.jpg\" alt=\"Forhåndsvisning av Kaizers lanserer ny abonnementstjeneste\" loading=\"lazy\">",
+          "target": [
+            "._preview_12jab_666:nth-child(3) > a > ._preview-image_12jab_714[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_12jab_726\"><span>Kaizers lanserer ny abonnementstjeneste</span></h3>",
+          "target": [
+            "._preview_12jab_666:nth-child(3) > a > ._preview-title_12jab_726"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_12jab_714\" src=\"https://images.stream.schibsted.media/users/sa_/images/97e996d58bc448369a8141dcdc0caa24.jpg\" alt=\"Forhåndsvisning av Denne desserten går viralt  \" loading=\"lazy\">",
+          "target": [
+            "._preview_12jab_666:nth-child(4) > a > ._preview-image_12jab_714[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_12jab_726\"><span>Denne desserten går viralt  </span></h3>",
+          "target": [
+            "._preview_12jab_666:nth-child(4) > a > ._preview-title_12jab_726"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_12jab_714\" src=\"https://images.stream.schibsted.media/users/sa_/images/1135745f6f29be12a168f90aaf2ce17e.jpg\" alt=\"Forhåndsvisning av Dette er åpningstidene i påsken: \" loading=\"lazy\">",
+          "target": [
+            "._preview_12jab_666:nth-child(5) > a > ._preview-image_12jab_714[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_12jab_726\"><span>Dette er åpningstidene i påsken: </span></h3>",
+          "target": [
+            "._preview_12jab_666:nth-child(5) > a > ._preview-title_12jab_726"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_12jab_714\" src=\"https://images.stream.schibsted.media/users/sa_/images/c0895ba233c5fa93ec47d1ac7dd077de.jpg\" alt=\"Forhåndsvisning av Dette synes Harry Hole-casten om Stavanger\" loading=\"lazy\">",
+          "target": [
+            "._preview_12jab_666:nth-child(6) > a > ._preview-image_12jab_714[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_12jab_726\"><span>Dette synes Harry Hole-casten om Stavanger</span></h3>",
+          "target": [
+            "._preview_12jab_666:nth-child(6) > a > ._preview-title_12jab_726"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_12jab_714\" src=\"https://images.stream.schibsted.media/users/sa_/images/590be536ca9fb08fc02518446ecae32c.jpg\" alt=\"Forhåndsvisning av Sola tok sitt første seriegull\" loading=\"lazy\">",
+          "target": [
+            "._preview_12jab_666:nth-child(7) > a > ._preview-image_12jab_714[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_12jab_726\"><span>Sola tok sitt første seriegull</span></h3>",
+          "target": [
+            "._preview_12jab_666:nth-child(7) > a > ._preview-title_12jab_726"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_12jab_714\" src=\"https://images.stream.schibsted.media/users/sa_/images/9f7c432883aacaba91a8f937522a3b0b.jpg\" alt=\"Forhåndsvisning av Slik gikk det da russen debatterte mot kunnskapsministeren\" loading=\"lazy\">",
+          "target": [
+            "._preview_12jab_666:nth-child(8) > a > ._preview-image_12jab_714[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_12jab_726\"><span>Slik gikk det da russen debatterte mot kunnskapsministeren</span></h3>",
+          "target": [
+            "._preview_12jab_666:nth-child(8) > a > ._preview-title_12jab_726"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_12jab_714\" src=\"https://images.stream.schibsted.media/users/sa_/images/0ebbb12d497bf54d5eabcb87921bf0bc.jpg\" alt=\"Forhåndsvisning av Kom helt fra England for å møte de kongelige\" loading=\"lazy\">",
+          "target": [
+            "._preview_12jab_666:nth-child(9) > a > ._preview-image_12jab_714[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_12jab_726\"><span>Kom helt fra England for å møte de kongelige</span></h3>",
+          "target": [
+            "._preview_12jab_666:nth-child(9) > a > ._preview-title_12jab_726"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_12jab_714\" src=\"https://images.stream.schibsted.media/users/sa_/images/7fceda078df58f075ebd4f94f02dc4c2.jpg\" alt=\"Forhåndsvisning av Og vinnerne av Ungt Entreprenørskap Rogaland er ...\" loading=\"lazy\">",
+          "target": [
+            "._preview_12jab_666:nth-child(10) > a > ._preview-image_12jab_714[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_12jab_726\"><span>Og vinnerne av Ungt Entreprenørskap Rogaland er ...</span></h3>",
+          "target": [
+            "._preview_12jab_666:nth-child(10) > a > ._preview-title_12jab_726"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row collage-x3\">",
+          "target": [
+            ".collage-x3.row:nth-child(12)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x2\">",
+          "target": [
+            ".vertical-x2.row:nth-child(14)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"svelte-r1njzg\">Lytt til podkasten</span>",
+          "target": [
+            ".sa-frontboks-button-top-right > .svelte-r1njzg:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article class=\"article article--lar...\" data-live-entries-co...=\"0\" data-pulse-entity-id=\"XMMmR7\" data-pulse-source=\"frontpage:jm-l\" data-pulse-position=\"5\" data-pulse-access-le...=\"Paid\" data-pulse-access-le...=\"Paid\" data-pulse-position-...=\"1\" data-pulse-position-...=\"1\" data-pulse-card-size=\"la ...>",
+          "target": [
+            "article[data-pulse-entity-id=\"XMMmR7\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"article__teaser-container\">",
+          "target": [
+            "article[data-pulse-entity-id=\"K885gy\"] > .article__teaser-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"article__teaser-container\">",
+          "target": [
+            "article[data-pulse-entity-id=\"wrrlLd\"] > .article__teaser-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x2\">",
+          "target": [
+            ".vertical-x2.row:nth-child(19)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row collage-x3\">",
+          "target": [
+            ".collage-x3.row:nth-child(21)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"hjernetrim-front-widget\">",
+          "target": [
+            ".hjernetrim-front-widget"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x2\">",
+          "target": [
+            ".vertical-x2.row:nth-child(25)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row collage-x3\">",
+          "target": [
+            ".collage-x3.row:nth-child(27)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"podcast-header\">\n    <div class=\"icon-title\">\n      <div class=\"icon\"></div>\n      <h2 class=\"title\">Podkaster</h2>\n    </div>\n    <a class=\"see-all\" onclick=\"trackPodcastLatestLink()\" href=\"https://www.aftenbladet.no/podkast\">Se alle →\n    </a>\n  </div>",
+          "target": [
+            ".podcast-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"podcast-main\">",
+          "target": [
+            ".podcast-main"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"item\">",
+          "target": [
+            ".podcast-sub > .item:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"item\">",
+          "target": [
+            ".item:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"podcast-spons\">",
+          "target": [
+            ".podcast-spons"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x2\">",
+          "target": [
+            ".vertical-x2.row:nth-child(29)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"widget-football regional-widget\">\n    <section class=\"widgets widget-football\" data-pulse-position=\"\">\n    <a role=\"widget\" class=\"widget-link\" href=\"api/widget/football?userSegmentsTag=&amp;userSegmentsTitle=&amp;userSegments=\" data-offset-y=\"2000\">football</a>\n</section>\n\n  </div>",
+          "target": [
+            ".widget-football.regional-widget"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x3\">",
+          "target": [
+            ".vertical-x3.row:nth-child(31)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row collage-x3\">",
+          "target": [
+            ".collage-x3.row:nth-child(33)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x2\">",
+          "target": [
+            ".vertical-x2.row:nth-child(36)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"widget-bolig regional-widget\">\n    <section class=\"widgets widget-bolig\" data-pulse-position=\"\">\n    <a role=\"widget\" class=\"widget-link\" href=\"api/widget/bolig?userSegmentsTag=&amp;userSegmentsTitle=&amp;userSegments=\" data-offset-y=\"2000\">bolig</a>\n</section>\n\n  </div>",
+          "target": [
+            ".widget-bolig.regional-widget"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row collage-x3\">",
+          "target": [
+            ".collage-x3.row:nth-child(38)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x3\">",
+          "target": [
+            ".vertical-x3.row:nth-child(39)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-static-ad vertical-x1-ad\">",
+          "target": [
+            ".vertical-static-ad.vertical-x1-ad.row:nth-child(41)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x4\">",
+          "target": [
+            ".vertical-x4.row:nth-child(42)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x2\">",
+          "target": [
+            ".vertical-x2.row:nth-child(44)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"article__text-container\">",
+          "target": [
+            ".article--full-width > .display-flex.article__teaser-container > .article__text-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x2\">",
+          "target": [
+            ".vertical-x2.row:nth-child(46)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x1-ad \">",
+          "target": [
+            ".vertical-x1-ad.row:nth-child(47)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x3\">",
+          "target": [
+            ".vertical-x3.row:nth-child(48)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-small-x2\">",
+          "target": [
+            ".vertical-small-x2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x1-ad \">",
+          "target": [
+            ".vertical-x1-ad.row:nth-child(50)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x2\">",
+          "target": [
+            ".vertical-x2.row:nth-child(51)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x3\">",
+          "target": [
+            ".vertical-x3.row:nth-child(52)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row collage-x3\">",
+          "target": [
+            ".collage-x3.row:nth-child(53)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x2\">",
+          "target": [
+            ".vertical-x2.row:nth-child(54)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x3\">",
+          "target": [
+            ".vertical-x3.row:nth-child(55)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row collage-x3\">",
+          "target": [
+            ".collage-x3.row:nth-child(56)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x2\">",
+          "target": [
+            ".vertical-x2.row:nth-child(57)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x3\">",
+          "target": [
+            ".vertical-x3.row:nth-child(59)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"webcam-frontpage\">",
+          "target": [
+            "#webcam-frontpage"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x2\">",
+          "target": [
+            ".vertical-x2.row:nth-child(61)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x4\">",
+          "target": [
+            ".vertical-x4.row:nth-child(62)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-static-ad vertical-x1-ad\">",
+          "target": [
+            ".vertical-static-ad.vertical-x1-ad.row:nth-child(63)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row collage-x3\">",
+          "target": [
+            ".collage-x3.row:nth-child(65)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x2\">",
+          "target": [
+            ".vertical-x2.row:nth-child(66)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row collage-x3\">",
+          "target": [
+            ".collage-x3.row:nth-child(67)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x1-ad \">",
+          "target": [
+            ".vertical-x1-ad.row:nth-child(68)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x2\">",
+          "target": [
+            ".vertical-x2.row:nth-child(69)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row collage-x3\">",
+          "target": [
+            ".collage-x3.row:nth-child(70)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-static-ad vertical-x1-ad\">",
+          "target": [
+            ".vertical-static-ad.vertical-x1-ad.row:nth-child(71)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x2\">",
+          "target": [
+            ".vertical-x2.row:nth-child(72)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row vertical-x3\">",
+          "target": [
+            ".vertical-x3.row:nth-child(73)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"sch-datacontroller__text\">",
+          "target": [
+            ".sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "scrollable-region-focusable",
+      "impact": "serious",
+      "description": "Ensure elements that have scrollable content are accessible by keyboard",
+      "help": "Scrollable region must have keyboard access",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag211",
+        "wcag213",
+        "TTv5",
+        "TT4.a",
+        "EN-301-549",
+        "EN-9.2.1.1",
+        "EN-9.2.1.3",
+        "RGAAv4",
+        "RGAA-7.3.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"scroll-container\">",
+          "target": [
+            ".scroll-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+        }
+      ]
+    }
+  ]
+}
