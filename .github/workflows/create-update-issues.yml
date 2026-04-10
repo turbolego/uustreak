@@ -24,7 +24,7 @@ jobs:
           echo "Created issues-markdown directory"
 
       - name: Create or Update GitHub Issues for Violations
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs');
