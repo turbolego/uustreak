@@ -693,7 +693,7 @@ jobs:
           sleep $WAIT_TIME
           
       - name: Trigger workflow retry
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -1341,7 +1341,7 @@ jobs:
           fi
       
       - name: Trigger Issue Creation
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
