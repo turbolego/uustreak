@@ -1,22 +1,10 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2026-04-05T00:42:09.976Z
+**Timestamp:** 2026-04-12T01:08:09.906Z
 **URL:** [https://dns.no/](https://dns.no/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.wpb_wrapper > p > a[href$="kontakt"]`
 
 ### Table header text should not be empty
 
@@ -72,7 +60,6 @@
 - `.skip-link`
 - `#dtx-header-logo`
 - `.header-links`
-- `.wpb-content-wrapper > .wpb_row.vc_row-fluid.vc_row:nth-child(1)`
 - `.cal-month > .vc_col-sm-3.wpb_column.vc_column_container`
 - `.sel__placeholder-calendar-sel__placeholderect-date`
 - `.sel__placeholder-calendar-sel__placeholderect-production-input`
@@ -102,44 +89,45 @@
 - `.month2 > tbody > tr:nth-child(3)`
 - `.month2 > tbody > tr:nth-child(4)`
 - `.month2 > tbody > tr:nth-child(5)`
-- `div[data-postid="17010"] > .vc_column-inner > .wpb_wrapper > .wpb_animate_when_almost_visible.wpb_fadeIn.wpb_start_animation:nth-child(1)`
+- `div[data-postid="17010"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn`
 - `div[data-postid="17010"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
 - `div[data-postid="17010"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
 - `div[data-postid="17010"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
 - `div[data-postid="17010"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-- `div[data-postid="17008"] > .vc_column-inner > .wpb_wrapper > .wpb_animate_when_almost_visible.wpb_fadeIn.wpb_start_animation:nth-child(1)`
+- `div[data-postid="17008"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn`
 - `div[data-postid="17008"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
 - `div[data-postid="17008"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
 - `div[data-postid="17008"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
 - `div[data-postid="17008"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-- `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .wpb_animate_when_almost_visible.wpb_fadeIn.wpb_start_animation:nth-child(1)`
+- `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn`
 - `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
 - `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
 - `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
 - `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-- `div[data-postid="17011"] > .vc_column-inner > .wpb_wrapper > .wpb_animate_when_almost_visible.wpb_fadeIn.wpb_start_animation:nth-child(1)`
+- `div[data-postid="17011"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn`
 - `div[data-postid="17011"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
 - `div[data-postid="17011"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
 - `div[data-postid="17011"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
 - `div[data-postid="17011"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-- `div[data-postid="17737"] > .vc_column-inner > .wpb_wrapper > .wpb_animate_when_almost_visible.wpb_fadeIn.wpb_start_animation:nth-child(1)`
+- `div[data-postid="17737"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn`
 - `div[data-postid="17737"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
 - `div[data-postid="17737"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
 - `div[data-postid="17737"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
 - `div[data-postid="17737"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-- `div[data-postid="17013"] > .vc_column-inner > .wpb_wrapper > .wpb_animate_when_almost_visible.wpb_fadeIn.wpb_start_animation:nth-child(1)`
+- `div[data-postid="17903"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn`
+- `div[data-postid="17903"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
+- `div[data-postid="17903"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
+- `div[data-postid="17903"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
+- `div[data-postid="17903"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
+- `div[data-postid="17902"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn`
+- `div[data-postid="17902"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
+- `div[data-postid="17902"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
+- `div[data-postid="17902"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
+- `div[data-postid="17902"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
+- `div[data-postid="17013"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_animate_when_almost_visible.wpb_fadeIn`
 - `div[data-postid="17013"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
 - `div[data-postid="17013"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
 - `div[data-postid="17013"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-- `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .wpb_animate_when_almost_visible.wpb_fadeIn.wpb_start_animation:nth-child(1)`
-- `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
-- `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
-- `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
-- `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-- `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .wpb_animate_when_almost_visible.wpb_fadeIn.wpb_start_animation:nth-child(1)`
-- `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
-- `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
-- `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
 - `.vc_custom_1597326627476 > .vc_col-has-fill.vc_col-sm-12.wpb_column > .vc_custom_1597326586251.vc_column-inner > .wpb_wrapper > .all-events.wpb_text_column.wpb_content_element`
 - `.vc_custom_1678087387650`
 - `.vc_custom_1700029085981`

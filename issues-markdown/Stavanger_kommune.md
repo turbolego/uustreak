@@ -1,22 +1,10 @@
 # WCAG Violations Report for Stavanger kommune
 
-**Timestamp:** 2026-04-05T00:45:31.516Z
+**Timestamp:** 2026-04-12T01:09:10.247Z
 **URL:** [https://www.stavanger.kommune.no/](https://www.stavanger.kommune.no/)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.servicepage.teaser-with-image.col-md-4:nth-child(9) > .sub-teaser > .no-target-icon > .sub-teaser__image > img`
 
 ### Aside should not be contained in another landmark
 

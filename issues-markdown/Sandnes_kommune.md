@@ -1,22 +1,10 @@
 # WCAG Violations Report for Sandnes kommune
 
-**Timestamp:** 2026-04-05T00:40:35.279Z
+**Timestamp:** 2026-04-12T01:04:31.123Z
 **URL:** [https://www.sandnes.kommune.no/](https://www.sandnes.kommune.no/)
-**Total Violations:** 7
+**Total Violations:** 5
 
 ## Violation Details
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.H-bg--lighter-green`
 
 ### Frames must have an accessible name
 
@@ -41,19 +29,6 @@
 #### Affected Elements:
 
 - `#portalframe1, div[data-itemid="38270"] > .custom-event-info > h4`
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `.H-bg--lighter-green > img`
-- `.warning__icon`
 
 ### Links must have discernible text
 

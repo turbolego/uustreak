@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2026-04-05T00:45:17.745Z
+**Timestamp:** 2026-04-12T01:08:56.098Z
 **URL:** [https://www.dnt.no/stavanger](https://www.dnt.no/stavanger)
 **Total Violations:** 10
 
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-582763"]`
-- `button[aria-controls="modal-574485"]`
-- `button[aria-controls="modal-580378"]`
-- `button[aria-controls="modal-586954"]`
-- `button[aria-controls="modal-586904"]`
-- `button[aria-controls="modal-582258"]`
-- `button[aria-controls="modal-574104"]`
-- `button[aria-controls="modal-589006"]`
+- `button[aria-controls="modal-603062"]`
+- `button[aria-controls="modal-578529"]`
+- `button[aria-controls="modal-580172"]`
+- `button[aria-controls="modal-578665"]`
+- `button[aria-controls="modal-580379"]`
+- `button[aria-controls="modal-586955"]`
+- `button[aria-controls="modal-586915"]`
+- `button[aria-controls="modal-589783"]`
 
 ### Buttons must have discernible text
 
@@ -86,11 +86,10 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 11
+- **Count:** 10
 
 #### Affected Elements:
 
-- `#react_0HNKHO8PTIHTO > .my-10 > .md\:grid-cols-4.mb-16.grid-cols-1 > .group.relative:nth-child(2) > div > .md\:flex-col.space-x-4.md\:space-x-0 > .w-2\/5.md\:mb-3.md\:w-full > .overflow-hidden.rounded-lg > picture > .t-\[10px\].md\:rounded-\[10px\].md\:group-hover\:scale-110`
 - `.bg-beige-50.bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `div:nth-child(2) > .bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `.w-\[180px\].h-\[160px\]:nth-child(1) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`

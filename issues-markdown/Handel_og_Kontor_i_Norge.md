@@ -1,6 +1,6 @@
 # WCAG Violations Report for Handel og Kontor i Norge
 
-**Timestamp:** 2026-04-05T00:52:38.371Z
+**Timestamp:** 2026-04-12T01:18:29.201Z
 **URL:** [https://hk.no/](https://hk.no/)
 **Total Violations:** 4
 
@@ -29,8 +29,8 @@
 
 #### Affected Elements:
 
-- `.uagb-block-20da9ab2 > .slick-list.draggable > .slick-track > .slick-current.slick-active[data-slick-index="1"] > div > .uagb-post__inner-wrap > h5`
-- `.uagb-block-42924263 > .slick-list.draggable > .slick-track > .slick-current.slick-active[data-slick-index="1"] > div > .uagb-post__inner-wrap > h5`
+- `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-current.slick-active[data-slick-index="2"] > div > .uagb-post__inner-wrap > h5`
+- `.uagb-block-f5aaf362 > .slick-list.draggable > .slick-track > .slick-current.slick-active[data-slick-index="2"] > div > .uagb-post__inner-wrap > h5`
 
 ### Links must have discernible text
 
@@ -38,16 +38,15 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 6
+- **Count:** 5
 
 #### Affected Elements:
 
-- `.uagb-block-20da9ab2 > .slick-list.draggable > .slick-track > .slick-current.slick-active[data-slick-index="1"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `.uagb-block-20da9ab2 > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="2"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `.uagb-block-20da9ab2 > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="3"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `.uagb-block-42924263 > .slick-list.draggable > .slick-track > .slick-current.slick-active[data-slick-index="1"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `.uagb-block-42924263 > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="2"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `.uagb-block-42924263 > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="3"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-current.slick-active[data-slick-index="2"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="3"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="4"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `.uagb-block-f5aaf362 > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="3"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `.uagb-block-f5aaf362 > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="4"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 
 ### All page content should be contained by landmarks
 

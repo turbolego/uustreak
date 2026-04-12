@@ -1,6 +1,6 @@
 # WCAG Violations Report for Unicare BAB AS
 
-**Timestamp:** 2026-04-05T00:59:20.265Z
+**Timestamp:** 2026-04-12T01:22:41.177Z
 **URL:** [https://unicare.no/](https://unicare.no/)
 **Total Violations:** 8
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `iframe[width="100%"], .OverlayBase_module_overlayWrapper__61370790`
+- `iframe[width="100%"], .OverlayBase_module_overlayWrapper__321515a7`
 
 ### ARIA role should be appropriate for the element
 

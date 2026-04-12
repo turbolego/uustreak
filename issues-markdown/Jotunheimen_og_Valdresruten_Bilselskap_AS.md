@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jotunheimen og Valdresruten Bilselskap AS
 
-**Timestamp:** 2026-04-05T01:00:27.074Z
+**Timestamp:** 2026-04-12T01:23:15.490Z
 **URL:** [https://jvb.no/](https://jvb.no/)
 **Total Violations:** 6
 
@@ -49,7 +49,7 @@
 
 #### Affected Elements:
 
-- `h5`
+- `.et_pb_blurb_0 > .et_pb_blurb_content > .et_pb_blurb_container > h4`
 - `.et_pb_blurb_0_tb_footer > .et_pb_blurb_content > .et_pb_blurb_container > h4`
 
 ### Links must have discernible text
@@ -82,19 +82,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 21
+- **Count:** 13
 
 #### Affected Elements:
 
-- `.et_pb_column_0`
-- `.et_pb_text_0`
-- `.et_pb_text_1`
-- `h5`
-- `.et_pb_button_0_wrapper`
-- `.et_pb_button_1_wrapper`
-- `.et_pb_row_1`
-- `.et_pb_row_2`
-- `.et_pb_row_3`
+- `.et_pb_section_0`
 - `.et_pb_section_2`
 - `.et_pb_section_3`
 - `.et_pb_row_12`

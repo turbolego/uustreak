@@ -1,6 +1,6 @@
 # WCAG Violations Report for Deloitte Norge
 
-**Timestamp:** 2026-04-05T00:41:55.214Z
+**Timestamp:** 2026-04-12T01:07:54.876Z
 **URL:** [https://www.deloitte.com/no/no.html](https://www.deloitte.com/no/no.html)
 **Total Violations:** 4
 
@@ -31,11 +31,10 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#title-v2-24efabdc > .cmp-title__text`
 - `h5`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements

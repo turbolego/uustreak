@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Norlandsmuseet
 
-**Timestamp:** 2026-04-05T00:49:56.830Z
+**Timestamp:** 2026-04-12T01:13:33.617Z
 **URL:** [https://www.nordlandsmuseet.no/hjem](https://www.nordlandsmuseet.no/hjem)
 **Total Violations:** 5
 
@@ -65,16 +65,16 @@
 
 #### Affected Elements:
 
-- `#yui_3_17_2_1_1775350187160_433 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1775350187160_435 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1775350187160_437 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1775350187160_439 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1775350187160_441 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1775350187160_443 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1775350187160_445 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1775350187160_447 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1775350187160_449 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
-- `#yui_3_17_2_1_1775350187160_451 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1775956403996_418 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1775956403996_420 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1775956403996_422 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1775956403996_424 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1775956403996_426 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1775956403996_428 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1775956403996_430 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1775956403996_432 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1775956403996_434 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1775956403996_436 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
 - `a[data-title="Ny direktør ved Hamsunsenteret"]`
 - `.summary-thumbnail-container.sqs-gallery-image-container[href$="madeinbodo"]`
-- `#yui_3_17_2_1_1775350187160_142 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`
+- `#yui_3_17_2_1_1775956403996_143 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=""]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sola Strand Hotel
 
-**Timestamp:** 2026-04-05T00:42:32.082Z
+**Timestamp:** 2026-04-12T01:06:21.827Z
 **URL:** [https://www.solastrandhotel.no/](https://www.solastrandhotel.no/)
 **Total Violations:** 3
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Verdens Gang AS
 
-**Timestamp:** 2026-04-05T01:02:05.727Z
+**Timestamp:** 2026-04-12T01:25:18.839Z
 **URL:** [https://www.vg.no/](https://www.vg.no/)
 **Total Violations:** 5
 
@@ -18,8 +18,8 @@
 
 - `vg-dynamic-widget[data-name="PushBanner"]`
 - `vg-dynamic-widget[data-name="Snakkis"]`
-- `vg-dynamic-widget[data-name="DarkmodeOnboarding"]`
 - `#nnxp3dxu`
+- `vg-dynamic-widget[data-name="DarkmodeOnboarding"]`
 - `#qcskb7a5`
 - `.vg-widget-latest`
 
@@ -34,7 +34,7 @@
 #### Affected Elements:
 
 - `._search_6tx2u_144 > form > input`
-- `iframe[allowtransparency="true"], .status-kolonnekjoring`
+- `vg-midtosten-toppstripe,.mobile-hide`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -54,49 +54,45 @@
 - **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/presentation-role-conflict?application=playwright
 - **Tags:** cat.aria, best-practice, ACT
-- **Count:** 40
+- **Count:** 36
 
 #### Affected Elements:
 
-- `#dre-69d17d62f74f76909f2b1d56 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69d0f9b3bd1c15e5d5e125ff > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
-- `#dre-69d16579bd1c15e5d5fd9fe7 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69d1ab53f74f76909f314373 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69ce9e26f74f76909f7c1d44 > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69ca38d2a2aa92259e5584fc > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69ca38d2a2aa92259e5584fc > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(2) > .icon-square[aria-label="VG Pluss"][width="24"]`
-- `#dre-69d10e8ef74f76909f0e981c > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69cb9e35bd1c15e5d52e2335 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
-- `#dre-69d08b68bd1c15e5d5c47c0e > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69d0addcbd1c15e5d5cbb30f > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
-- `#dre-69cecf3fbd1c15e5d5629ac4 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
-- `#dre-69cb9307f74f76909f494b6f > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
-- `#dre-69d0e2e7f74f76909f027dab > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69cb9ae6bd1c15e5d52b65b8 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
-- `#dre-69d0ffd0f74f76909f0a5b02 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69cb8a78f74f76909f41f6ca > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
-- `#dre-69d0d621f74f76909fff0b4f > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69cfdb1cbd1c15e5d5a2e54a > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
-- `#dre-69d00c4af74f76909fd80c48 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69cb7f8bbd1c15e5d515fa88 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
-- `#dre-69cfc528f74f76909fc1b233 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69cf8641f74f76909faa4828 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
-- `#dre-69cf8641f74f76909faa4829 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
-- `#dre-69cff653bd1c15e5d5ab371d > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69ca3149ea6c34a0a8fbe1e2 > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69ca3149ea6c34a0a8fbe1e2 > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(2) > .icon-square[aria-label="VG Pluss"][width="24"]`
-- `#dre-69cfe3f9bd1c15e5d5a5d266 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69cb86eebd1c15e5d51bd8f3 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
-- `#dre-69cf96c7bd1c15e5d589dc4f > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69ca700bea6c34a0a83225cb > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
-- `#dre-69cf89a5f74f76909fab708d > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69ca39f6a2aa92259e568170 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
-- `#dre-69ce9ddabd1c15e5d555422b > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69cf86f5bd1c15e5d5844d4c > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
-- `#dre-69cf86f5bd1c15e5d5844d4c > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(2) > .icon-square[aria-label="VG Pluss"][width="24"]`
-- `#dre-676564524ab6070e4afd6ea6 > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
+- `#dre-69da9e21e238bafc2ba88b3b > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
+- `#dre-69daf16250e2e70fc78253dd > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
+- `#dre-69da7150e238bafc2b9b2e38 > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
+- `#dre-69da7150e238bafc2b9b2e38 > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(2) > .icon-square[aria-label="VG Pluss"][width="24"]`
+- `#dre-69d774dd5974211ddff5fbaf > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
+- `#dre-69daa6bf50e2e70fc777d259 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
+- `#dre-69dab41ee238bafc2bad9407 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
+- `#dre-69da5bffe238bafc2b955ade > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
+- `#dre-69d776fce238bafc2b786fcd > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
+- `#dre-69d5dfd45974211ddf318467 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
+- `#dre-69da7d4450e2e70fc76c3df0 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
+- `img[aria-label="Terningkast 6"]`
+- `#dre-69d74b5707e0fbd0ef11ade7 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
+- `#dre-69da4aa2e238bafc2b9010c5 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
+- `#dre-69da1f3650e2e70fc7500d76 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
+- `#dre-69d7610307e0fbd0ef20cf64 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
+- `#dre-69d787f850e2e70fc75258ec > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
+- `#dre-69d9a7f1e238bafc2b67b46e > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
+- `#dre-69d9b006e238bafc2b68907b > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
+- `#dre-69d7833250e2e70fc74e26da > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
+- `#dre-69d8b97ce238bafc2bfea135 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
+- `img[aria-label="Terningkast 5"]`
+- `#dre-69d8f331e238bafc2b300dca > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
+- `#dre-69d6040207e0fbd0ef83d405 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
+- `#dre-69d90b00e238bafc2b40ace9 > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
+- `#dre-69d5e57907e0fbd0ef71487e > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
+- `#dre-69d8154b50e2e70fc79938fd > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
+- `#dre-69d5e2fc5974211ddf32b00e > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
+- `#dre-69d49bb6bd1c15e5d5c5ac5f > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
+- `#dre-69d49bb6bd1c15e5d5c5ac5f > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(2) > .icon-square[aria-label="VG Pluss"][width="24"]`
+- `#dre-69d92d9ee238bafc2b4ef15e > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
+- `#dre-69d4b7e1f74f76909f01255c > .article-container > a[itemprop="url"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label="VG pluss"][width="24"]`
+- `#dre-676564524ab6070e4afd6ea6 > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
 - `#dre-676564524ab6070e4afd6ea6 > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(2) > .icon-square[aria-label="VG Pluss"][width="24"]`
-- `#dre-69c68babea6c34a0a8f50c85 > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label="VGTV"]`
+- `#dre-69c68babea6c34a0a8f50c85 > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red[aria-label="VGTV"][width="24"]`
 - `#dre-69c68babea6c34a0a8f50c85 > .article-container > a[itemprop="url"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(2) > .icon-square[aria-label="VG Pluss"][width="24"]`
 
 ### All page content should be contained by landmarks

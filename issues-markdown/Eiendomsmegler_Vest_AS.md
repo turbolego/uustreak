@@ -1,6 +1,6 @@
 # WCAG Violations Report for Eiendomsmegler Vest AS
 
-**Timestamp:** 2026-04-05T00:44:46.367Z
+**Timestamp:** 2026-04-12T01:10:45.617Z
 **URL:** [https://www.eiendomsmeglervest.no/?ki-cf-botcl=1](https://www.eiendomsmeglervest.no/?ki-cf-botcl=1)
 **Total Violations:** 1
 

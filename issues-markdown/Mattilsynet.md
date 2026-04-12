@@ -1,6 +1,6 @@
 # WCAG Violations Report for Mattilsynet
 
-**Timestamp:** 2026-04-05T00:28:01.888Z
+**Timestamp:** 2026-04-12T00:52:32.689Z
 **URL:** [https://www.mattilsynet.no/](https://www.mattilsynet.no/)
 **Total Violations:** 1
 

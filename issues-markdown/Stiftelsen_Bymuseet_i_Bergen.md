@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2026-04-05T00:47:56.804Z
+**Timestamp:** 2026-04-12T01:11:33.694Z
 **URL:** [https://bymuseet.no/](https://bymuseet.no/)
 **Total Violations:** 8
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#slick-slide00 > .vimeo-wrapper > iframe, .OverlayBase_module_overlayWrapper__61370790`
+- `#slick-slide00 > .vimeo-wrapper > iframe, .OverlayBase_module_overlayWrapper__321515a7`
 
 ### ARIA role should be appropriate for the element
 

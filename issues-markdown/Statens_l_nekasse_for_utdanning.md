@@ -1,6 +1,6 @@
 # WCAG Violations Report for Statens lånekasse for utdanning
 
-**Timestamp:** 2026-04-05T00:43:49.239Z
+**Timestamp:** 2026-04-12T01:07:31.062Z
 **URL:** [https://lanekassen.no/#samtykke-banner](https://lanekassen.no/#samtykke-banner)
 **Total Violations:** 1
 

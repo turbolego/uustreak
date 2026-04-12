@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Hudøy
 
-**Timestamp:** 2026-04-05T00:49:04.511Z
+**Timestamp:** 2026-04-12T01:12:41.121Z
 **URL:** [https://hudoy.no/](https://hudoy.no/)
 **Total Violations:** 6
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `iframe, .OverlayBase_module_overlayWrapper__61370790`
+- `iframe, .OverlayBase_module_overlayWrapper__321515a7`
 
 ### Elements must meet minimum color contrast ratio thresholds
 

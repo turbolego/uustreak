@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-04-05T00:50:41.713Z
+**Timestamp:** 2026-04-12T01:14:15.862Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -22,27 +22,27 @@
 - `li:nth-child(1) > .i3.i4[aria-label="Trolltunga skalljakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `li:nth-child(2) > .i3.i4[aria-label="Trolltunga skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `li:nth-child(2) > .i3.i4[aria-label="Trolltunga skalljakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `a[aria-label="Trolltunga skallbukse"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Trolltunga skallbukse"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Brandval kvistbrenner"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Brandval kvistbrenner"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4[aria-label="Trolltunga skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4[aria-label="Trolltunga skalljakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(5) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
-- `a[aria-label="Urstad kokesett 1L"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Urstad kokesett 1L"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `a[aria-label="Kurula hodelykt 2300lm"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Kurula hodelykt 2300lm"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Henningsvær kort skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Henningsvær kort skalljakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `li:nth-child(3) > .i3.i4[aria-label="Gausta lang anorakk"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `li:nth-child(3) > .i3.i4[aria-label="Gausta lang anorakk"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4[aria-label="Trolltunga skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4[aria-label="Trolltunga skalljakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `li:nth-child(5) > .i3.i4[aria-label="Gausta lang anorakk"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `li:nth-child(5) > .i3.i4[aria-label="Gausta lang anorakk"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `li:nth-child(3) > .i3.i4[aria-label="Trolltunga skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `li:nth-child(3) > .i3.i4[aria-label="Trolltunga skalljakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `a[aria-label="Urstad kokesett 1L"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Urstad kokesett 1L"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Harstad skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Sogndal skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Harstad skallanorakk"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Lifjell fleecejakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Hinnstein fritidsbukse"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Nordkinn skallbukse barn 8-14"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Porsanger sherpavest"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
@@ -75,21 +75,20 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 11
+- **Count:** 10
 
 #### Affected Elements:
 
 - `div:nth-child(1) > .aq.am.an > .au.as[width="11"]`
 - `div:nth-child(2) > .aq.am.an > .au.as[width="11"]`
 - `div:nth-child(3) > .aq.am.an > .au.as[width="11"]`
-- `div:nth-child(4) > .aq.am.an > .au.as[width="11"]`
 - `.hj > .ho.hn.au`
 - `.bl.bj.bk:nth-child(4) > div > .ja.jb.jc > .je.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jf.hk.hl > .ho.a2.hn`
-- `.bl.bj.bk:nth-child(4) > div > .ja.jb.jc > .je.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jf.hk.hl > .ho.a2.hn`
-- `a[href$="regntoy"] > .jf.hk.hl > .ho.a2.hn`
 - `a[href$="prisras-sko"] > .jf.hk.hl > .ho.a2.hn`
+- `.bl.bj.bk:nth-child(4) > div > .ja.jb.jc > .je.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jf.hk.hl > .ho.a2.hn`
+- `.bl.bj.bk:nth-child(6) > div > .ja.jb.jc > .je.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jf.hk.hl > .ho.a2.hn`
 - `.a6[href$="turutstyr"][data-scope-link="true"] > .jf.hk.hl > .ho.a2.hn`
-- `.bl.bj.bk:nth-child(6) > div > .ja.jb.jc > .je.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"] > .jf.hk.hl > .ho.a2.hn`
+- `a[href$="regntoy"] > .jf.hk.hl > .ho.a2.hn`
 
 ### Links must have discernible text
 
@@ -103,11 +102,11 @@
 
 - `a[href$="varkupp"]`
 - `.bl.bj.bk:nth-child(4) > div > .ja.jb.jc > .je.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
-- `.bl.bj.bk:nth-child(4) > div > .ja.jb.jc > .je.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
-- `a[href$="regntoy"]`
 - `a[href$="prisras-sko"]`
+- `.bl.bj.bk:nth-child(4) > div > .ja.jb.jc > .je.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
+- `.bl.bj.bk:nth-child(6) > div > .ja.jb.jc > .je.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
 - `.hh.bv.ay > .a6[href$="turutstyr"][data-scope-link="true"]`
-- `.bl.bj.bk:nth-child(6) > div > .ja.jb.jc > .je.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link="true"]`
+- `a[href$="regntoy"]`
 
 ### Page should contain a level-one heading
 

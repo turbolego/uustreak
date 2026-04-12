@@ -1,34 +1,22 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-04-05T01:01:47.519Z
+**Timestamp:** 2026-04-12T01:24:38.155Z
 **URL:** [https://www.kid.no/](https://www.kid.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
-### Elements must meet minimum color contrast ratio thresholds
+### Heading levels should only increase by one
 
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `strong:nth-child(1) > .f4.f2[href$="soverom"]`
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.g9 > .fe.ff.el`
+- `div:nth-child(1) > h4`
 
 ### Alternative text of images should not be repeated as text
 
@@ -36,22 +24,13 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 26
+- **Count:** 11
 
 #### Affected Elements:
 
-- `img[alt="Se alle -->"]`
-- `img[alt="Sengesett -50%"]`
-- `img[alt="Putevar -50%"]`
-- `img[alt="Dundyner -50%"]`
-- `img[alt="Laken -50%"]`
-- `img[alt="Sengetepper -50%"]`
-- `a[href$="dunputer"] > .g0.da.c4 > .en.fw[alt="-->"]`
-- `img[alt="Eden sengesett 2 for 899,-"]`
-- `.fy.hr.fv:nth-child(9) > div > .ca.s.c > .g0.da.c4 > .en.fw[alt="-->"]`
-- `img[alt="Sommerdyner fra 299,-"]`
-- `img[alt="Madrass- og putebeskytter -50%"]`
-- `a[href$="hotel-selection"] > .g0.da.c4 > .en.fw.a3`
+- `img[alt="Dundyner 50%"]`
+- `img[alt="Dunputer 50%"]`
+- `a[href$="hotel-selection"] > .ky.c8.al > .gi.gj.gk`
 - `img[alt="Morgenkåper 50%"]`
 - `img[alt="Toalettmapper 50%"]`
 - `img[alt="Baderomstilbehør 50%"]`
@@ -60,12 +39,30 @@
 - `img[alt="Ambiance velværeserie 40%"]`
 - `img[alt="Håraccessories 50%"]`
 - `img[alt="Therapie velværeserie 40%"]`
-- `img[alt="Otto gardin"]`
-- `img[alt="Petra dyne- og putepakke"]`
-- `img[alt="Ullpledd"]`
-- `img[alt="Helårsdyne"]`
-- `img[alt="Lammeskinn"]`
-- `img[alt="Sitteunderlag"]`
+
+### Document should not have more than one banner landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has at most one banner landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#coiOverlay`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#coiOverlay`
 
 ### Links must have discernible text
 
@@ -77,9 +74,9 @@
 
 #### Affected Elements:
 
-- `strong:nth-child(2) > .f4.f2[href$="soverom"]`
-- `.a7[href$="paske"][data-scope-link="true"]:nth-child(1)`
-- `.ca.s[href$="paske"]`
+- `.f4.f[href$="solskjerming"]`
+- `.f4.f[href$="sommerdyner"]`
+- `.f4.f[href$="barnerom"]`
 
 ### All page content should be contained by landmarks
 
@@ -87,13 +84,12 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 6
+- **Count:** 5
 
 #### Affected Elements:
 
-- `.ag`
-- `a[aria-label="Gå til startside"]`
-- `.e7`
-- `.a > div:nth-child(5)`
+- `#skip-to-main-content`
+- `#usp-rotator-instructions`
+- `.bp > div:nth-child(2)`
 - `.tf-header-slider`
 - `.tf-sidebar`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2026-04-05T01:02:50.304Z
+**Timestamp:** 2026-04-12T01:26:04.601Z
 **URL:** [https://vestlia.no/](https://vestlia.no/)
 **Total Violations:** 10
 
@@ -24,7 +24,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 14
+- **Count:** 13
 
 #### Affected Elements:
 
@@ -35,13 +35,12 @@
 - `#widgetContainer,.relative.z-\[1\]`
 - `.fusion-title-6 > h2`
 - `.fusion-title-11 > h2`
-- `.button-11 > .fusion-button-text.awb-button__text.awb-button__text--default`
+- `.button-10 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.fusion-title-13 > h2`
-- `.button-12 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_55453856-a192-42d4-a7ce-e5811361f725`
-- `.button-14 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `.button-15 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_cf52d72b-4096-4272-b977-0aedb70b2f06`
+- `.button-11 > .fusion-button-text.awb-button__text.awb-button__text--default`
+- `#f_05fee820-a3c0-44e0-921d-96b80f7f2594`
+- `.button-13 > .fusion-button-text.awb-button__text.awb-button__text--default`
+- `#f_fb2f4161-a937-4d56-bd90-cfca8f7102fb`
 
 ### Heading levels should only increase by one
 
@@ -133,9 +132,9 @@
 - `.skip-link`
 - `.fusion-builder-column-1`
 - `.fusion-flex-justify-content-center.fusion-content-layout-column.fusion-column-wrapper > .sm-text-align-center.fusion-image-element`
+- `.fusion-builder-column-28`
 - `.fusion-builder-column-29`
 - `.fusion-builder-column-30`
-- `.fusion-builder-column-31`
 - `.fusion-builder-row-16`
 - `.fusion-builder-row-18`
 - `.fusion-builder-row-19`

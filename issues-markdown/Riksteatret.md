@@ -1,6 +1,6 @@
 # WCAG Violations Report for Riksteatret
 
-**Timestamp:** 2026-04-05T00:38:33.238Z
+**Timestamp:** 2026-04-12T01:02:35.500Z
 **URL:** [https://www.riksteatret.no/](https://www.riksteatret.no/)
 **Total Violations:** 2
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 5
+- **Count:** 10
 
 #### Affected Elements:
 
@@ -21,6 +21,11 @@
 - `#feature_3 > .module__grid > .module__content > .module__body > h4`
 - `#feature_4 > .module__grid > .module__content > .module__body > h4`
 - `#feature_5 > .module__grid > .module__content > .module__body > h4`
+- `a[href$="kniven-i-ilden/"] > .module__content > .module__body > h4`
+- `.module--grid[data-color=""]:nth-child(2) > .module__grid > a > .module__content > .module__body > h4`
+- `a[href$="lareren/"] > .module__content > .module__body > h4`
+- `.module--grid[data-color=""]:nth-child(4) > .module__grid > a > .module__content > .module__body > h4`
+- `.module--grid[data-color=""]:nth-child(5) > .module__grid > a > .module__content > .module__body > h4`
 
 ### Images must have alternative text
 

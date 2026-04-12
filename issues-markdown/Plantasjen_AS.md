@@ -1,6 +1,6 @@
 # WCAG Violations Report for Plantasjen AS
 
-**Timestamp:** 2026-04-05T00:36:30.996Z
+**Timestamp:** 2026-04-12T01:00:39.394Z
 **URL:** [https://plantasjen.no/no](https://plantasjen.no/no)
 **Total Violations:** 2
 
@@ -28,6 +28,6 @@
 
 #### Affected Elements:
 
-- `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(1) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3 > .font-ttCommons.font-semibold`
-- `section:nth-child(12) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3 > .font-ttCommons.font-semibold`
-- `section:nth-child(15) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3 > .font-ttCommons.font-semibold`
+- `section:nth-child(10) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .gap-1\.5.text-card-foreground.rounded-br-\[2rem\] > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3 > .font-ttCommons.font-semibold`
+- `section:nth-child(16) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .gap-1\.5.text-card-foreground.rounded-br-\[2rem\] > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3 > .font-ttCommons.font-semibold`
+- `section:nth-child(19) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .gap-1\.5.text-card-foreground.rounded-br-\[2rem\] > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3 > .font-ttCommons.font-semibold`
