@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-04-12T01:01:22.132Z
-**URL:** [https://www.blv.no/](https://www.blv.no/)
-**Total Violations:** 8
+**Timestamp:** 2026-04-13T20:10:26.223Z
+**URL:** [https://www.blv.no/#](https://www.blv.no/#)
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.brick-c-eKmOVS > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
+- `.brick-c-eKmOVS > .body > .title_container.brick-c-fdsRaE.has-image > .brick-c-jiSuJG[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
@@ -36,25 +36,11 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 3
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, iframe[scrolling="no"]`
-- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, body > iframe`
-- `#eaframe`
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, img`
+- `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -66,7 +52,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="20"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `.brick-c-jljxpd > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Links must have discernible text
 

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Steinerskolen i Stavanger
 
-**Timestamp:** 2026-04-12T01:09:23.912Z
-**URL:** [https://www.steinerskolen-stavanger.no/](https://www.steinerskolen-stavanger.no/)
+**Timestamp:** 2026-04-13T20:03:21.055Z
+**URL:** [https://www.steinerskolen-stavanger.no/#](https://www.steinerskolen-stavanger.no/#)
 **Total Violations:** 4
 
 ## Violation Details

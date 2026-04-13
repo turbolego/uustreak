@@ -1,7 +1,7 @@
 # WCAG Violations Report for Østlendingen AS
 
-**Timestamp:** 2026-04-12T01:28:47.215Z
-**URL:** [https://www.ostlendingen.no/](https://www.ostlendingen.no/)
+**Timestamp:** 2026-04-13T20:20:30.515Z
+**URL:** [https://www.ostlendingen.no/#](https://www.ostlendingen.no/#)
 **Total Violations:** 4
 
 ## Violation Details
@@ -12,11 +12,10 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.ostlendingen\.no\/toppbanner_0, iframe`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -29,7 +28,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="6"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `brick-carousel-v2[data-slides="4"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 

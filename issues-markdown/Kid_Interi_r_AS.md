@@ -1,7 +1,7 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-04-12T01:24:38.155Z
-**URL:** [https://www.kid.no/](https://www.kid.no/)
+**Timestamp:** 2026-04-13T20:15:09.696Z
+**URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
 ## Violation Details
@@ -24,21 +24,12 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 11
+- **Count:** 2
 
 #### Affected Elements:
 
 - `img[alt="Dundyner 50%"]`
 - `img[alt="Dunputer 50%"]`
-- `a[href$="hotel-selection"] > .ky.c8.al > .gi.gj.gk`
-- `img[alt="Morgenkåper 50%"]`
-- `img[alt="Toalettmapper 50%"]`
-- `img[alt="Baderomstilbehør 50%"]`
-- `img[alt="AVA velværeserie 40%"]`
-- `img[alt="Loungewear 50%"]`
-- `img[alt="Ambiance velværeserie 40%"]`
-- `img[alt="Håraccessories 50%"]`
-- `img[alt="Therapie velværeserie 40%"]`
 
 ### Document should not have more than one banner landmark
 
@@ -74,7 +65,7 @@
 
 #### Affected Elements:
 
-- `.f4.f[href$="solskjerming"]`
+- `.f4.f[href$="rengjoring"]`
 - `.f4.f[href$="sommerdyner"]`
 - `.f4.f[href$="barnerom"]`
 

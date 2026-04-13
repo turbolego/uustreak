@@ -1,10 +1,22 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2026-04-12T01:00:28.114Z
-**URL:** [https://www.bestwestern.no/](https://www.bestwestern.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-04-13T20:09:36.114Z
+**URL:** [https://www.bestwestern.no/#](https://www.bestwestern.no/#)
+**Total Violations:** 7
 
 ## Violation Details
+
+### ARIA hidden element must not be focusable or contain focusable elements
+
+- **Impact:** serious
+- **Description:** Ensure aria-hidden elements are not focusable nor contain focusable elements
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-hidden-focus?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.bottom-1`
 
 ### ARIA input fields must have an accessible name
 
@@ -84,10 +96,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.\[\&\:not\(\:focus\)\]\:visually-hidden`
 - `.pr-2`
 - `a[href$="bestwestern.com/"]`

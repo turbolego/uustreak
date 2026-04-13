@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dagbladet Finnmarken AS
 
-**Timestamp:** 2026-04-12T01:05:40.804Z
-**URL:** [https://www.ifinnmark.no/](https://www.ifinnmark.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-04-13T20:14:35.275Z
+**URL:** [https://www.ifinnmark.no/#](https://www.ifinnmark.no/#)
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -30,18 +30,6 @@
 
 - `#eaframe`
 
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, img`
-
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
@@ -52,7 +40,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="10"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `.brick-c-jljxpd > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 

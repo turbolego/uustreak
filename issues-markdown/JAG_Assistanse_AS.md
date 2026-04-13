@@ -1,7 +1,7 @@
 # WCAG Violations Report for JAG Assistanse AS
 
-**Timestamp:** 2026-04-12T01:22:33.746Z
-**URL:** [https://jagassistanse.no/](https://jagassistanse.no/)
+**Timestamp:** 2026-04-13T20:13:08.535Z
+**URL:** [https://jagassistanse.no/#](https://jagassistanse.no/#)
 **Total Violations:** 8
 
 ## Violation Details

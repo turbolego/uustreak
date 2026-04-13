@@ -1,7 +1,7 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-04-12T01:16:33.818Z
-**URL:** [https://www.f-b.no/](https://www.f-b.no/)
+**Timestamp:** 2026-04-13T20:07:24.069Z
+**URL:** [https://www.f-b.no/#](https://www.f-b.no/#)
 **Total Violations:** 5
 
 ## Violation Details
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.totalt_antall`
+- `#eaframe, #container_10320327 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
@@ -24,12 +24,10 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, iframe[scrolling="no"]`
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, body > iframe`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination

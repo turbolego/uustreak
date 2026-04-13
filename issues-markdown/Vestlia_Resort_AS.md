@@ -1,7 +1,7 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2026-04-12T01:26:04.601Z
-**URL:** [https://vestlia.no/](https://vestlia.no/)
+**Timestamp:** 2026-04-13T20:18:16.243Z
+**URL:** [https://vestlia.no/#](https://vestlia.no/#)
 **Total Violations:** 10
 
 ## Violation Details
@@ -24,12 +24,10 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 13
+- **Count:** 11
 
 #### Affected Elements:
 
-- `#CybotCookiebotDialogNavDeclaration`
-- `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
 - `#widgetContainer,div[aria-label="Choose date"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
 - `#widgetContainer,div[aria-label="Accommodations and guests"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
 - `#widgetContainer,.relative.z-\[1\]`
@@ -38,9 +36,9 @@
 - `.button-10 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.fusion-title-13 > h2`
 - `.button-11 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_05fee820-a3c0-44e0-921d-96b80f7f2594`
+- `#f_1438b7cc-38a2-4fca-891d-fe3a2ee30878`
 - `.button-13 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_fb2f4161-a937-4d56-bd90-cfca8f7102fb`
+- `#f_d8f51f86-5b6b-4066-8989-5a66e1ed5101`
 
 ### Heading levels should only increase by one
 
@@ -125,11 +123,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 12
+- **Count:** 11
 
 #### Affected Elements:
 
-- `.skip-link`
 - `.fusion-builder-column-1`
 - `.fusion-flex-justify-content-center.fusion-content-layout-column.fusion-column-wrapper > .sm-text-align-center.fusion-image-element`
 - `.fusion-builder-column-28`
@@ -139,8 +136,8 @@
 - `.fusion-builder-row-18`
 - `.fusion-builder-row-19`
 - `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text`
+- `div:nth-child(26)`
 - `div:nth-child(27)`
-- `div:nth-child(28)`
 
 ### [role="img"] elements must have alternative text
 

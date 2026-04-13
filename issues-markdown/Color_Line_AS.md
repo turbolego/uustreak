@@ -1,8 +1,8 @@
 # WCAG Violations Report for Color Line AS
 
-**Timestamp:** 2026-04-12T01:03:51.189Z
-**URL:** [https://www.colorline.no/](https://www.colorline.no/)
-**Total Violations:** 8
+**Timestamp:** 2026-04-13T20:12:51.459Z
+**URL:** [https://www.colorline.no/#](https://www.colorline.no/#)
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -18,54 +18,17 @@
 
 - `#declineButton`
 
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.float-content`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `a[href$="cruise-til-kiel"] > .card-heading > .heading-text > h3`
-
-### Document should not have more than one banner landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the document has at most one banner landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#coiOverlay`
-
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#coiOverlay`
-- `.page-top-nav`
+- `.bg-white.wrapper > .h-\(--navbar-mobile-height\).md\:h-\(--navbar-desktop-height\).py-24 > .flex-wrap.gap-12.justify-between > .gap-10.sm\:gap-24[data-controller="deviation-status"] > nav`
 
 ### Links must have discernible text
 
@@ -73,28 +36,11 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.mod-bd > a:nth-child(1)`
-- `.mod-bd > a:nth-child(2)`
-- `.mod-bd > a:nth-child(3)`
-
-### <li> elements must be contained in a <ul> or <ol>
-
-- **Impact:** serious
-- **Description:** Ensure <li> elements are used semantically
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/listitem?application=playwright
-- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 4
-
-#### Affected Elements:
-
-- `.items:nth-child(3) > li`
-- `.items:nth-child(4) > li`
-- `.items:nth-child(5) > li`
-- `.items:nth-child(7) > li`
+- `.button-pill`
 
 ### All page content should be contained by landmarks
 
@@ -102,8 +48,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 4
 
 #### Affected Elements:
 
-- `img[alt="Color Magic"]`
+- `.cl-skip-links`
+- `.bg-white.wrapper > .h-\(--navbar-mobile-height\).md\:h-\(--navbar-desktop-height\).py-24 > .flex-wrap.gap-12.justify-between > .logo[href="/"] > .sr-only`
+- `.lg\:justify-start`
+- `.md\:flex-row-reverse > div:nth-child(2)`

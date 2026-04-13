@@ -1,6 +1,6 @@
 # WCAG Violations Report for Adecco Norge AS
 
-**Timestamp:** 2026-04-12T00:52:28.832Z
+**Timestamp:** 2026-04-13T20:02:03.169Z
 **URL:** [https://www.adecco.com/nb-no](https://www.adecco.com/nb-no)
 **Total Violations:** 3
 
@@ -24,12 +24,18 @@
 - **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/presentation-role-conflict?application=playwright
 - **Tags:** cat.aria, best-practice, ACT
-- **Count:** 3
+- **Count:** 9
 
 #### Affected Elements:
 
 - `.SWPImage_swp-nextimage__raKqc`
-- `.tile-solutions-icon[aria-label=""][alt=""]`
+- `img[width="1600"][height="1067"][aria-label=""]`
+- `img[width="5472"]`
+- `img[width="7704"]`
+- `img[width="2048"][height="1366"][aria-label=""]`
+- `img[width="8192"]`
+- `img[width="5700"]`
+- `.tile-solutions-icon.icon-accent[aria-label=""]`
 - `.SWPImage_islhh-image__Hi_E2`
 
 ### Elements should not have tabindex greater than zero

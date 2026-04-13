@@ -1,6 +1,6 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-04-12T01:07:16.330Z
+**Timestamp:** 2026-04-13T20:16:03.454Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
 **Total Violations:** 8
 
@@ -63,6 +63,11 @@
 
 #### Affected Elements:
 
+- `#splide01-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
+- `.splide__arrow--prev.left-5[aria-controls="splide01-track"] > .w-12`
+- `.splide__arrow--next.right-5[aria-controls="splide01-track"] > .w-12`
+- `.splide__arrow--prev.left-5[aria-controls="splide02-track"] > .w-12`
+- `.splide__arrow--next.right-5[aria-controls="splide02-track"] > .w-12`
 - `.grid-of-1 > .lg\:col-span-3.collection-item--fullWidth[theme=""] > .sm\:pr-6.flex-1.media`
 - `.lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.sm\:px-6.max-w-full`
 - `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.sm\:px-6.max-w-full`
@@ -70,11 +75,6 @@
 - `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(6) > .h-auto.sm\:px-6.max-w-full`
 - `.lg\:col-span-2.lg\:row-span-2[theme=""] > .sm\:pr-6.flex-1.media`
 - `.lg\:col-span-1 > .sm\:pr-6.flex-1.media`
-- `#splide01-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
-- `.splide__arrow--prev.left-5[aria-controls="splide01-track"] > .w-12`
-- `.splide__arrow--next.right-5[aria-controls="splide01-track"] > .w-12`
-- `.splide__arrow--prev.left-5[aria-controls="splide02-track"] > .w-12`
-- `.splide__arrow--next.right-5[aria-controls="splide02-track"] > .w-12`
 - `.splide__arrow--prev.left-5[aria-controls="splide03-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide03-track"] > .w-12`
 - `#splide04-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
@@ -128,7 +128,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 25
+- **Count:** 24
 
 #### Affected Elements:
 
@@ -138,11 +138,10 @@
 - `.dp__pointer`
 - `.btn-theme-default`
 - `.DARK.\!bg-Theme\/Dark:nth-child(2)`
-- `.DARK.\!bg-Theme\/Dark:nth-child(3)`
-- `.DARK.\!bg-Theme\/Dark:nth-child(4)`
+- `.DARK.\!bg-Theme\/Dark:nth-child(3) > .py-15[data-v-3b06c5a9=""] > .xl\:pr-0.xl\:pl-15.grid-cols-4 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
 - `.DARK.\!bg-Theme\/Dark:nth-child(5)`
-- `.DARK.\!bg-Theme\/Dark:nth-child(6) > .py-15[data-v-3b06c5a9=""] > .xl\:pr-0.xl\:pl-15.grid-cols-4 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
-- `.DARK.\!bg-Theme\/Dark:nth-child(7) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
+- `.DARK.\!bg-Theme\/Dark:nth-child(6)`
+- `.DARK.\!bg-Theme\/Dark:nth-child(7)`
 - `.DARK.\!bg-Theme\/Dark:nth-child(8) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
 - `.DARK.\!bg-Theme\/Dark:nth-child(9) > .py-15[data-v-3b06c5a9=""] > .xl\:pr-0.xl\:pl-15.grid-cols-4 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
 - `.DARK.\!bg-Theme\/Dark:nth-child(10) > .py-15[data-v-3b06c5a9=""] > .xl\:pr-0.xl\:pl-15.grid-cols-4 > .xl\:col-span-3.col-span-4.lg\:col-span-4`

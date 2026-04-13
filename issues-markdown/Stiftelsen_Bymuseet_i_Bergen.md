@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2026-04-12T01:11:33.694Z
-**URL:** [https://bymuseet.no/](https://bymuseet.no/)
+**Timestamp:** 2026-04-13T20:04:04.433Z
+**URL:** [https://bymuseet.no/#](https://bymuseet.no/#)
 **Total Violations:** 8
 
 ## Violation Details
@@ -36,7 +36,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 28
+- **Count:** 29
 
 #### Affected Elements:
 
@@ -55,7 +55,8 @@
 - `.event.load-more__item.col-lg-3:nth-child(6) > .event-cover > .event-date`
 - `.event.load-more__item.col-lg-3:nth-child(7) > .event-cover > .location > span`
 - `.event.load-more__item.col-lg-3:nth-child(7) > .event-cover > .event-date`
-- `.event.load-more__item.col-lg-3:nth-child(8) > .event-cover > .location > span`
+- `.event.load-more__item.col-lg-3:nth-child(8) > .event-cover > .location > span:nth-child(1)`
+- `.event.load-more__item.col-lg-3:nth-child(8) > .event-cover > .location > span:nth-child(2)`
 - `.event.load-more__item.col-lg-3:nth-child(8) > .event-cover > .event-date`
 - `#load-mer`
 - `a[target="_blank"] > .block > .description`

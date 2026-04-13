@@ -1,7 +1,7 @@
 # WCAG Violations Report for Top Temp AS
 
-**Timestamp:** 2026-04-12T01:19:17.974Z
-**URL:** [https://www.toptemp.no/](https://www.toptemp.no/)
+**Timestamp:** 2026-04-13T20:11:42.729Z
+**URL:** [https://www.toptemp.no/#](https://www.toptemp.no/#)
 **Total Violations:** 6
 
 ## Violation Details

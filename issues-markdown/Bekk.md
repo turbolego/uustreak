@@ -1,7 +1,7 @@
-# WCAG Violations Report for Fürst Med-Lab AS
+# WCAG Violations Report for Bekk
 
-**Timestamp:** 2026-04-13T20:08:32.291Z
-**URL:** [https://www.furst.no/#](https://www.furst.no/#)
+**Timestamp:** 2026-04-13T20:07:58.985Z
+**URL:** [https://www.bekk.no/#](https://www.bekk.no/#)
 **Total Violations:** 1
 
 ## Violation Details
@@ -16,5 +16,5 @@
 
 #### Affected Elements:
 
-- `#forrige`
-- `#neste`
+- `._1fnfllg8[as="button"]:nth-child(1)`
+- `._1fnfllg8[as="button"]:nth-child(2)`

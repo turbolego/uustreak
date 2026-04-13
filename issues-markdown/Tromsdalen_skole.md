@@ -1,10 +1,22 @@
 # WCAG Violations Report for Tromsdalen skole
 
-**Timestamp:** 2026-04-12T01:20:02.232Z
-**URL:** [https://tromsdalen.tromsoskolen.no/](https://tromsdalen.tromsoskolen.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-04-13T20:12:23.704Z
+**URL:** [https://tromsdalen.tromsoskolen.no/#](https://tromsdalen.tromsoskolen.no/#)
+**Total Violations:** 8
 
 ## Violation Details
+
+### ARIA progressbar nodes must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA progressbar node has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-progressbar-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag111, EN-301-549, EN-9.1.1.1, RGAAv4, RGAA-11.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[name="f4af9df5498e5975f"], ._55yn`
 
 ### Elements must only use permitted ARIA attributes
 
@@ -17,6 +29,18 @@
 #### Affected Elements:
 
 - `iframe[allow="autoplay; encrypted-media"], #movie_player`
+
+### Certain ARIA roles must contain particular children
+
+- **Impact:** critical
+- **Description:** Ensure elements with an ARIA role that require child roles contain them
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-required-children?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[name="f4af9df5498e5975f"], div[role="feed"]`
 
 ### Buttons must have discernible text
 
@@ -36,7 +60,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 16
+- **Count:** 19
 
 #### Affected Elements:
 
@@ -56,6 +80,9 @@
 - `td > a[href$="login"]`
 - `tr:nth-child(5) > td > a[target="linkwindow1692"]`
 - `tr:nth-child(7) > td > a[target="linkwindow1692"]`
+- `iframe[name="f4af9df5498e5975f"], abbr[data-utime="1765289850"] > .timestampContent`
+- `iframe[name="f4af9df5498e5975f"], #u_1_u_R7 > table > tbody > tr > ._435r:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Comment"]`
+- `iframe[name="f4af9df5498e5975f"], #u_1_w_Wx > ._50sk._2pi4[title="Share"]`
 
 ### Frames with focusable content must not have tabindex=-1
 
@@ -87,17 +114,14 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 19
+- **Count:** 23
 
 #### Affected Elements:
 
-- `a[href="/index.php?pageID=293"]`
-- `tr:nth-child(1) > td:nth-child(2) > a`
-- `a[href="/index.php?pageID=312"]`
 - `#articleID_406 > .boxTextBody > p > a:nth-child(3)`
 - `#articleID_406 > .boxTextBody > p > a:nth-child(5)`
 - `a[href="intranett.tromso.kommune.no"]`
-- `a:nth-child(11)`
+- `p > a:nth-child(11)`
 - `a[href$="kartleggeren.no/"]`
 - `a[target="_blank"]:nth-child(15)`
 - `a[href$="app.mpluss.no/"]`
@@ -110,3 +134,10 @@
 - `p:nth-child(3) > a:nth-child(5)`
 - `p:nth-child(3) > a:nth-child(7)`
 - `p:nth-child(3) > a[target="_blank"]:nth-child(9)`
+- `iframe[name="f4af9df5498e5975f"], #u_0_1_Wa`
+- `iframe[name="f4af9df5498e5975f"], .lfloat:nth-child(1)`
+- `iframe[name="f4af9df5498e5975f"], #u_1_8_jG > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f4af9df5498e5975f"], #u_1_7_38 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f4af9df5498e5975f"], #u_1_9_Or > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f4af9df5498e5975f"], #u_1_5_V1 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f4af9df5498e5975f"], #u_1_6_UI > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
