@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-04-13T20:06:39.842Z
+**Timestamp:** 2026-04-14T00:44:14.670Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -22,27 +22,27 @@
 - `li:nth-child(1) > .i3.i4[aria-label="Trolltunga skalljakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `li:nth-child(2) > .i3.i4[aria-label="Trolltunga skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `li:nth-child(2) > .i3.i4[aria-label="Trolltunga skalljakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `li:nth-child(3) > .i3.i4[aria-label="Loten sneaker barn"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `li:nth-child(3) > .i3.i4[aria-label="Loten sneaker barn"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `li:nth-child(4) > .i3.i4[aria-label="Loten sneaker barn"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `li:nth-child(4) > .i3.i4[aria-label="Loten sneaker barn"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `li:nth-child(5) > .i3.i4[aria-label="Loten sneaker barn"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `li:nth-child(5) > .i3.i4[aria-label="Loten sneaker barn"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(1) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `a[aria-label="Trolltunga skallbukse"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Trolltunga skallbukse"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `div:nth-child(3) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
+- `a[aria-label="Loten sneaker barn"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Loten sneaker barn"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Kurula hodelykt 2300lm"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Kurula hodelykt 2300lm"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(2) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
 - `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `div:nth-child(5) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .is.it.hq > div > .gu > .j6.hr.bd`
-- `a[aria-label="Kvitfjord skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Kvitfjord skalljakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
-- `a[aria-label="Kvitfjord skalljakke barn 8-4"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Kvitfjord skalljakke barn 8-4"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `a[aria-label="Urstad kokesett 1L"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Urstad kokesett 1L"] > .is.it.hq > div > .gu > .j6.hr.bd`
+- `li:nth-child(5) > .i3.i4[aria-label="Trolltunga skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `li:nth-child(5) > .i3.i4[aria-label="Trolltunga skalljakke"] > .is.it.hq > div > .gu > .j6.hr.bd`
 - `a[aria-label="Harstad skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `a[aria-label="Frydsnuten turbukse barn 1-7"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Sogndal skalljakke barn 8-14"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Selje Step-in sko"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
-- `a[aria-label="Sandstua parkdress barn 1-7"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Hinnstein fritidsbukse"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Sogndal skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
+- `a[aria-label="Geiranger fôret skalljakke"] > .i8.bc.bd > .if.id.y > .gq.ig.ih`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty

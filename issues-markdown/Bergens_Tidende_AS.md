@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-04-13T20:09:05.602Z
+**Timestamp:** 2026-04-14T00:46:41.696Z
 **URL:** [https://www.bt.no/#](https://www.bt.no/#)
 **Total Violations:** 5
 
@@ -36,7 +36,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 26
+- **Count:** 23
 
 #### Affected Elements:
 
@@ -48,17 +48,14 @@
 - `._preview_12jab_666:nth-child(3) > a > ._preview-title_12jab_726 > span`
 - `._preview_12jab_666:nth-child(4) > a > ._preview-title_12jab_726 > span`
 - `._preview_12jab_666:nth-child(5) > a > ._preview-title_12jab_726 > span`
-- `a[data-pulse-entity-id="tip-us-16oRLB"] > .article-tip-us > p`
-- `a[data-pulse-entity-id="tip-us-16oRLB"] > .article-tip-us > p > .tip-us-underline`
 - `article[data-pulse-entity-id="gkdplq"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `.article-tip-us > p`
+- `.tip-us-underline`
 - `.memo > .text-container > h3`
 - `.kryssord > .text-container > h3`
 - `.minikryss > .text-container > h3`
 - `.ordjakten > .text-container > h3`
-- `a[data-pulse-entity-id="tip-us-8pGXQ1"] > .article-tip-us > p`
-- `a[data-pulse-entity-id="tip-us-8pGXQ1"] > .article-tip-us > p > .tip-us-underline`
 - `article[data-pulse-entity-id="e7G7jg"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `.opinion-banner-desc`
 - `a[aria-label="– Bergen blør. Igjen!"] > .article__text-container > .article__section-kicker-container > .article__section`
 - `#Vågen`
 - `#Finse`
@@ -94,7 +91,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 56
+- **Count:** 48
 
 #### Affected Elements:
 
@@ -130,27 +127,19 @@
 - `.vertical-x2.row:nth-child(22)`
 - `.vertical-x3.row:nth-child(23)`
 - `.vertical-x2.row:nth-child(25)`
-- `.vertical-x4.row:nth-child(26)`
+- `.vertical-x4`
 - `.vertical-x3.row:nth-child(28)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(29)`
 - `.collage-x3.row:nth-child(30)`
-- `.vertical-small-x2`
+- `.vertical-x2.row:nth-child(32)`
 - `.widget-football.regional-widget`
-- `.vertical-x2.row:nth-child(34)`
+- `.vertical-x3.row:nth-child(34)`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
-- `.vertical-x3.row:nth-child(36)`
-- `.vertical-x2.row:nth-child(37)`
+- `.vertical-x2.row:nth-child(36)`
+- `.collage-x3.row:nth-child(37)`
 - `.vertical-x3.row:nth-child(38)`
-- `.vertical-x1-ad.row:nth-child(39)`
-- `.vertical-x2.row:nth-child(42)`
-- `.vertical-x4.row:nth-child(44)`
-- `.opinion-banner-title`
-- `.opinion-banner-desc`
-- `.vertical-x2.row:nth-child(46)`
 - `.widget-webcam`
-- `.vertical-x3.row:nth-child(48)`
-- `.vertical-x1-ad.row:nth-child(49)`
 - `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`
