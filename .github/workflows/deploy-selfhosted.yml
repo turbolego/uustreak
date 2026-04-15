@@ -33,6 +33,10 @@ permissions:
   id-token: write
   actions: write
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
   setup:
     runs-on: self-hosted
@@ -76,7 +80,7 @@ jobs:
           rm -rf ~/.npm ~/.cache/npm ~/.config/npm /tmp/npm-* 2>/dev/null || echo "Cleaned npm directories"
 
           # Also clean any npm processes that might be holding locks
-          pkill -u $(whoami) -f npm || echo "No npm processes to kill"
+          pkill -u "$(whoami)" -f npm 2>/dev/null || echo "No npm processes to kill or pkill not available on this platform"
 
           # Wait a moment for filesystem to settle
           sleep 2
@@ -116,19 +120,32 @@ jobs:
 
       - name: Ensure Python and venv are available
         run: |
-          # Check if python3 and venv are available
-          if ! python3 -m venv --help >/dev/null 2>&1; then
+          # Check if python3 or python is available (cross-platform)
+          PYTHON_CMD=$(command -v python3 2>/dev/null || command -v python 2>/dev/null)
+          if [ -z "$PYTHON_CMD" ]; then
+            echo "Error: Python not found. Please ensure Python is installed on the runner."
+            exit 1
+          fi
+          echo "Found Python: $PYTHON_CMD ($($PYTHON_CMD --version 2>&1))"
+          if ! $PYTHON_CMD -m venv --help >/dev/null 2>&1; then
             echo "Warning: Python venv module not available. Please ensure python3-venv is installed on the runner."
-            echo "Manual installation command: sudo apt-get install -y python3-venv"
+            echo "Linux installation command: sudo apt-get install -y python3-venv"
             exit 1
           else
-            echo "Python venv module is available"
+            echo "Python and venv module are available"
           fi
 
       - name: Set up Python virtual environment
         run: |
-          python3 -m venv venv
-          source venv/bin/activate
+          # Cross-platform: use python3 or python depending on what's available
+          PYTHON_CMD=$(command -v python3 2>/dev/null || command -v python 2>/dev/null)
+          $PYTHON_CMD -m venv venv
+          # Cross-platform venv activation (Linux/macOS: bin/activate, Windows: Scripts/activate)
+          if [ -f "venv/bin/activate" ]; then
+            source venv/bin/activate
+          else
+            source venv/Scripts/activate
+          fi
           pip install --upgrade pip
           pip install beautifulsoup4 requests
 
@@ -147,8 +164,14 @@ jobs:
 
       - name: Generate spec files
         run: |
-          source venv/bin/activate
-          python3 generate_specs.py
+          # Cross-platform venv activation
+          if [ -f "venv/bin/activate" ]; then
+            source venv/bin/activate
+          else
+            source venv/Scripts/activate
+          fi
+          # Cross-platform python invocation
+          (python3 generate_specs.py 2>/dev/null || python generate_specs.py)
           cp js/tag-summary.js tests/
 
       - name: Ensure jq is available
@@ -171,8 +194,8 @@ jobs:
           BATCH_COUNT=$(( (TOTAL_SPECS + TARGET_TESTS_PER_BATCH - 1) / TARGET_TESTS_PER_BATCH ))
 
           # Use conservative parallelism for self-hosted runners
-          # Cross-platform CPU core detection (Linux: nproc, macOS: sysctl)
-          AVAILABLE_CORES=$(nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo "4")
+          # Cross-platform CPU core detection (Linux: nproc, macOS: sysctl, Windows: NUMBER_OF_PROCESSORS env var)
+          AVAILABLE_CORES=$(nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo "${NUMBER_OF_PROCESSORS:-4}")
           MAX_PARALLEL=$((AVAILABLE_CORES / 4))
           if [ "$MAX_PARALLEL" -gt 4 ]; then
             MAX_PARALLEL=4
@@ -287,7 +310,7 @@ jobs:
           free -h 2>/dev/null || echo "Memory info not available"
           echo ""
           echo "CPU info:"
-          CORES=$(nproc 2>/dev/null || echo "unknown")
+          CORES=$(nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo "${NUMBER_OF_PROCESSORS:-unknown}")
           echo "CPU cores: $CORES"
           uptime 2>/dev/null || echo "Load average not available"
           echo ""
@@ -400,8 +423,8 @@ jobs:
           TARGET_TESTS_PER_BATCH=8
           BATCH_COUNT=$(( (TOTAL_SPECS + TARGET_TESTS_PER_BATCH - 1) / TARGET_TESTS_PER_BATCH ))
 
-          # Cross-platform CPU core detection (Linux: nproc, macOS: sysctl)
-          AVAILABLE_CORES=$(nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo "4")
+          # Cross-platform CPU core detection (Linux: nproc, macOS: sysctl, Windows: NUMBER_OF_PROCESSORS env var)
+          AVAILABLE_CORES=$(nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo "${NUMBER_OF_PROCESSORS:-4}")
           MAX_PARALLEL=$((AVAILABLE_CORES / 4))
           if [ "$MAX_PARALLEL" -gt 4 ]; then
             MAX_PARALLEL=4
