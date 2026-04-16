@@ -914,7 +914,7 @@ jobs:
           echo "=== Artifacts directory structure ==="
           ls -la artifacts/ || echo "No artifacts directory"
           echo "=== Looking for violation JSON files ==="
-          find artifacts -name "violations-*.json" -type f | head -20 || echo "No violation files found"
+          find artifacts -name "violations-*.json" -type f | head -20 || true
           echo "=== Total violation files found ==="
           find artifacts -name "violations-*.json" -type f | wc -l
           
@@ -1317,7 +1317,7 @@ jobs:
               # Show first few files as examples
               find "$date_dir" -name "*.json" -type f | head -3 | while read f; do
                 echo "    - $(basename "$f")"
-              done
+              done || true
             fi
           done
           
