@@ -44,6 +44,21 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
       cache-path: ${{ steps.cache-output.outputs.cache-path }}
     steps:
+      - name: Ensure Git Bash is on PATH (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $gitBin = "C:\Program Files\Git\bin"
+          $gitUsrBin = "C:\Program Files\Git\usr\bin"
+          if (Test-Path $gitBin) {
+            Add-Content $env:GITHUB_PATH $gitBin
+            Write-Host "Added to PATH: $gitBin"
+          }
+          if (Test-Path $gitUsrBin) {
+            Add-Content $env:GITHUB_PATH $gitUsrBin
+            Write-Host "Added to PATH: $gitUsrBin"
+          }
+
       - name: Log workflow attempt
         run: |
           RETRY_COUNT=${{ github.event.inputs.retry_count || '1' }}
@@ -264,6 +279,21 @@ jobs:
       fail-fast: true  # Stop all jobs if one fails
       max-parallel: 4
     steps:
+      - name: Ensure Git Bash is on PATH (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $gitBin = "C:\Program Files\Git\bin"
+          $gitUsrBin = "C:\Program Files\Git\usr\bin"
+          if (Test-Path $gitBin) {
+            Add-Content $env:GITHUB_PATH $gitBin
+            Write-Host "Added to PATH: $gitBin"
+          }
+          if (Test-Path $gitUsrBin) {
+            Add-Content $env:GITHUB_PATH $gitUsrBin
+            Write-Host "Added to PATH: $gitUsrBin"
+          }
+
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
@@ -570,6 +600,21 @@ jobs:
     runs-on: self-hosted
     if: success() # Only run if wcag-test succeeded
     steps:
+      - name: Ensure Git Bash is on PATH (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $gitBin = "C:\Program Files\Git\bin"
+          $gitUsrBin = "C:\Program Files\Git\usr\bin"
+          if (Test-Path $gitBin) {
+            Add-Content $env:GITHUB_PATH $gitBin
+            Write-Host "Added to PATH: $gitBin"
+          }
+          if (Test-Path $gitUsrBin) {
+            Add-Content $env:GITHUB_PATH $gitUsrBin
+            Write-Host "Added to PATH: $gitUsrBin"
+          }
+
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
@@ -605,7 +650,7 @@ jobs:
           
           # Debug: Show structure of artifacts directory
           echo "=== DEBUG: Artifacts directory structure ==="
-          find artifacts -type f -name "*.json" | head -20
+          find artifacts -type f -name "*.json" | head -20 || true
           echo "=== DEBUG: Looking for summary files specifically ==="
           find artifacts -name "*summary*.json"
           
@@ -647,6 +692,21 @@ jobs:
       all_jobs_successful: ${{ steps.check-status.outputs.all_successful }}
       should_retry: ${{ steps.check-status.outputs.should_retry }}
     steps:
+      - name: Ensure Git Bash is on PATH (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $gitBin = "C:\Program Files\Git\bin"
+          $gitUsrBin = "C:\Program Files\Git\usr\bin"
+          if (Test-Path $gitBin) {
+            Add-Content $env:GITHUB_PATH $gitBin
+            Write-Host "Added to PATH: $gitBin"
+          }
+          if (Test-Path $gitUsrBin) {
+            Add-Content $env:GITHUB_PATH $gitUsrBin
+            Write-Host "Added to PATH: $gitUsrBin"
+          }
+
       - name: Check if all jobs succeeded
         id: check-status
         run: |
@@ -708,6 +768,21 @@ jobs:
     runs-on: self-hosted
     if: needs.check-job-status.outputs.should_retry == 'true'
     steps:
+      - name: Ensure Git Bash is on PATH (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $gitBin = "C:\Program Files\Git\bin"
+          $gitUsrBin = "C:\Program Files\Git\usr\bin"
+          if (Test-Path $gitBin) {
+            Add-Content $env:GITHUB_PATH $gitBin
+            Write-Host "Added to PATH: $gitBin"
+          }
+          if (Test-Path $gitUsrBin) {
+            Add-Content $env:GITHUB_PATH $gitUsrBin
+            Write-Host "Added to PATH: $gitUsrBin"
+          }
+
       - name: Wait before retry
         run: |
           RETRY_COUNT=${{ github.event.inputs.retry_count || '1' }}
@@ -740,6 +815,21 @@ jobs:
     runs-on: self-hosted
     if: needs.check-job-status.outputs.all_jobs_successful == 'true'
     steps:
+      - name: Ensure Git Bash is on PATH (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $gitBin = "C:\Program Files\Git\bin"
+          $gitUsrBin = "C:\Program Files\Git\usr\bin"
+          if (Test-Path $gitBin) {
+            Add-Content $env:GITHUB_PATH $gitBin
+            Write-Host "Added to PATH: $gitBin"
+          }
+          if (Test-Path $gitUsrBin) {
+            Add-Content $env:GITHUB_PATH $gitUsrBin
+            Write-Host "Added to PATH: $gitUsrBin"
+          }
+
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
@@ -1380,6 +1470,21 @@ jobs:
     runs-on: self-hosted
     if: always() && needs.check-job-status.outputs.all_jobs_successful == 'false' && needs.check-job-status.outputs.should_retry == 'false'
     steps:
+      - name: Ensure Git Bash is on PATH (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $gitBin = "C:\Program Files\Git\bin"
+          $gitUsrBin = "C:\Program Files\Git\usr\bin"
+          if (Test-Path $gitBin) {
+            Add-Content $env:GITHUB_PATH $gitBin
+            Write-Host "Added to PATH: $gitBin"
+          }
+          if (Test-Path $gitUsrBin) {
+            Add-Content $env:GITHUB_PATH $gitUsrBin
+            Write-Host "Added to PATH: $gitUsrBin"
+          }
+
       - name: Notify workflow failure
         run: |
           echo "🚨 WORKFLOW FAILED AFTER MAXIMUM RETRIES"
