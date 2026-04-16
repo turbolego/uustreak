@@ -1255,8 +1255,7 @@ jobs:
             echo "$relative_path"
           done | sort | jq -R . | jq -s . > gh-pages-branch/historical-data/report-list.json
           
-          echo "Report list contents:"
-          cat gh-pages-branch/historical-data/report-list.json
+          echo "Report list entry count:"
           echo "Number of reports: $(jq length gh-pages-branch/historical-data/report-list.json)"
 
       - name: Deploy static files to GitHub Pages
@@ -1342,7 +1341,7 @@ jobs:
           
           # Show what's being committed (especially archives and summaries)
           echo "Files being deployed:"
-          git status --short | grep -E "(archives|summaries|$CURRENT_DATE)" | head -30
+          git status --short | grep -E "(archives|summaries|$CURRENT_DATE)" | head -30 || true
           TOTAL_FILES=$(git status --short | wc -l)
           echo "Total files to commit: $TOTAL_FILES"
           
