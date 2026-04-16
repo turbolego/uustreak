@@ -123,6 +123,62 @@
         let currentDate = new Date().toISOString().split('T')[0];
         let reportList = []; // Global rapportliste
         let availableDates = [];
+
+        /**
+         * Get URL query parameter by name
+         * @param {string} param - Parameter name
+         * @returns {string|null} - Parameter value or null
+         */
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        /**
+         * Convert date from DDMMYYYY format to YYYY-MM-DD format
+         * @param {string} dateStr - Date in DDMMYYYY format
+         * @returns {string|null} - Date in YYYY-MM-DD format or null if invalid
+         */
+        function parseDateParam(dateStr) {
+            if (!dateStr || dateStr.length !== 8) return null;
+            
+            const day = dateStr.substring(0, 2);
+            const month = dateStr.substring(2, 4);
+            const year = dateStr.substring(4, 8);
+            
+            // Validate the date parts
+            const dayNum = parseInt(day, 10);
+            const monthNum = parseInt(month, 10);
+            const yearNum = parseInt(year, 10);
+            
+            if (isNaN(dayNum) || isNaN(monthNum) || isNaN(yearNum)) return null;
+            if (dayNum < 1 || dayNum > 31) return null;
+            if (monthNum < 1 || monthNum > 12) return null;
+            if (yearNum < 1900 || yearNum > 2100) return null;
+            
+            // Convert to YYYY-MM-DD format
+            return `${year}-${month}-${day}`;
+        }
+
+        /**
+         * Convert date from YYYY-MM-DD format to DDMMYYYY format for URL
+         * @param {string} dateStr - Date in YYYY-MM-DD format
+         * @returns {string} - Date in DDMMYYYY format
+         */
+        function formatDateForUrl(dateStr) {
+            const [year, month, day] = dateStr.split('-');
+            return `${day}${month}${year}`;
+        }
+
+        /**
+         * Update URL with date parameter without page reload
+         * @param {string} date - Date in YYYY-MM-DD format
+         */
+        function updateUrlWithDate(date) {
+            const dateParam = formatDateForUrl(date);
+            const newUrl = `${window.location.pathname}?date=${dateParam}`;
+            window.history.pushState({ date }, '', newUrl);
+        }
         let reportCache = new Map(); // Cache for lagring av hentede rapporter
 
         // Pagination variables
@@ -701,6 +757,7 @@
             if (newIndex === currentIndex) return;
 
             currentDate = availableDates[newIndex];
+            updateUrlWithDate(currentDate); // Update URL with new date
             document.getElementById('current-date').textContent = new Date(currentDate).toLocaleDateString();
             document.getElementById('prev-day').disabled = newIndex === 0;
             document.getElementById('next-day').disabled = newIndex === availableDates.length - 1;
@@ -1245,9 +1302,27 @@
                     return;
                 }
 
-                // Use the latest available date instead of today's date
-                currentDate = availableDates[availableDates.length - 1];
-                console.log('Using latest available date:', currentDate);
+                // Check for date query parameter in URL
+                const dateParam = getQueryParam('date');
+                if (dateParam) {
+                    const parsedDate = parseDateParam(dateParam);
+                    if (parsedDate && availableDates.includes(parsedDate)) {
+                        currentDate = parsedDate;
+                        console.log('Using date from URL parameter:', currentDate);
+                    } else {
+                        console.warn('Invalid or unavailable date in URL parameter:', dateParam);
+                        // Fall back to latest date
+                        currentDate = availableDates[availableDates.length - 1];
+                        console.log('Falling back to latest available date:', currentDate);
+                    }
+                } else {
+                    // Use the latest available date instead of today's date
+                    currentDate = availableDates[availableDates.length - 1];
+                    console.log('Using latest available date:', currentDate);
+                }
+
+                // Update URL to reflect the current date
+                updateUrlWithDate(currentDate);
 
                 // Setup date display
                 if (!document.getElementById('current-date')) {
