@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tekna - Teknisk- naturvitenskapelig forening
 
-**Timestamp:** 2026-04-14T00:47:09.458Z
+**Timestamp:** 2026-04-16T11:51:56.906Z
 **URL:** [https://www.tekna.no/#](https://www.tekna.no/#)
 **Total Violations:** 5
 
@@ -29,7 +29,7 @@
 #### Affected Elements:
 
 - `.item__image-0`
-- `a[href$="jenter-og-teknologi/"] > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
+- `.t-article-card:nth-child(1) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
 - `.t-article-card:nth-child(2) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
 
 ### Document should not have more than one banner landmark
@@ -77,8 +77,8 @@
 - `.text-image-block__text`
 - `.text-image-block__image:nth-child(1)`
 - `.block-spacing-small.col-12`
-- `a[href$="jenter-og-teknologi/"] > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
-- `a[href$="jenter-og-teknologi/"] > .t-article-card__content`
+- `.t-article-card:nth-child(1) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
+- `.t-article-card:nth-child(1) > .t-article-card__content`
 - `.t-article-card:nth-child(2) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
 - `.t-article-card:nth-child(2) > .t-article-card__content`
 - `.rss-feed`

@@ -1,8 +1,8 @@
-# WCAG Violations Report for Arbeidstilsynet
+# WCAG Violations Report for Experis AS
 
-**Timestamp:** 2026-04-16T11:09:12.333Z
-**URL:** [https://www.arbeidstilsynet.no/#](https://www.arbeidstilsynet.no/#)
-**Total Violations:** 2
+**Timestamp:** 2026-04-16T11:28:00.585Z
+**URL:** [https://www.experis.no/#](https://www.experis.no/#)
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -16,7 +16,19 @@
 
 #### Affected Elements:
 
-- `.hero-item:nth-child(1) > .hero-desktop.card--hover-first.card-link > .card-main > .card-title > h3`
+- `h6`
+
+### <html> element must have a lang attribute
+
+- **Impact:** serious
+- **Description:** Ensure every HTML document has a lang attribute
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=playwright
+- **Tags:** cat.language, wcag2a, wcag311, TTv5, TT11.a, EN-301-549, EN-9.3.1.1, ACT, RGAAv4, RGAA-8.3.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
 
 ### All page content should be contained by landmarks
 
@@ -28,4 +40,4 @@
 
 #### Affected Elements:
 
-- `.skiplink`
+- `.offline_outer`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2026-04-14T00:47:09.736Z
+**Timestamp:** 2026-04-16T11:15:26.968Z
 **URL:** [https://www.bestwestern.no/#](https://www.bestwestern.no/#)
 **Total Violations:** 6
 
@@ -46,13 +46,13 @@
 
 #### Affected Elements:
 
-- `a[href$="hoteller-nar-nordlys"] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="0"][width="0"][loading="lazy"]`
 - `a[href$="globale-destinasjoner"] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="0"][width="0"][loading="lazy"]`
 - `img[alt="Hundevennlige hoteller"]`
 - `img[alt="Hotell utover det vanlige"]`
 - `img[alt="Hotellrestauranter"]`
 - `img[alt="Naturnære hoteller"]`
 - `img[alt="Barnevennlige hoteller"]`
+- `img[alt="Oppdag flere opplevelser"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

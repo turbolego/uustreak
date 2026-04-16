@@ -1,6 +1,6 @@
 # WCAG Violations Report for Universitetet i Sørøst-Norge
 
-**Timestamp:** 2026-04-14T00:53:27.521Z
+**Timestamp:** 2026-04-16T11:58:53.489Z
 **URL:** [https://www.usn.no/](https://www.usn.no/)
 **Total Violations:** 2
 
@@ -26,11 +26,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 4
+- **Count:** 2
 
 #### Affected Elements:
 
-- `#uuid-ba1e5380-be1b-46d5-b9e5-d8338af60190`
-- `.sticky-info-text`
 - `.button-tabs-tile__title`
 - `.tabs`

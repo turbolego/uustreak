@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-04-14T00:47:37.647Z
+**Timestamp:** 2026-04-16T11:52:48.517Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
 **Total Violations:** 6
 
@@ -57,8 +57,8 @@
 
 #### Affected Elements:
 
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-89afb171=""] > div[data-v-495b53d5=""] > .regular-usp-list[data-v-495b53d5=""] > .tn-list.content-list[data-v-797e5417=""]`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-89afb171=""] > div[data-v-495b53d5=""] > .regular-usp-list[data-v-495b53d5=""] > .tn-list.content-list[data-v-797e5417=""]`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-89afb171=""] > div[data-v-66b1cf9d=""] > .regular-usp-list[data-v-66b1cf9d=""] > .tn-list.content-list[data-v-797e5417=""]`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-89afb171=""] > div[data-v-66b1cf9d=""] > .regular-usp-list[data-v-66b1cf9d=""] > .tn-list.content-list[data-v-797e5417=""]`
 
 ### <li> elements must be contained in a <ul> or <ol>
 
@@ -74,8 +74,8 @@
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(2) > .main-stock.stock[size="14px"]`
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(3) > .main-stock.stock[size="14px"]`
 - `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(4) > .main-stock.stock[size="14px"]`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-89afb171=""] > div[data-v-495b53d5=""] > .regular-usp-list[data-v-495b53d5=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-495b53d5=""] > .tn-listitem.content-m[data-v-eeeb18ea=""]`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-89afb171=""] > div[data-v-495b53d5=""] > .regular-usp-list[data-v-495b53d5=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-495b53d5=""] > .tn-listitem.content-m[data-v-eeeb18ea=""]`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-89afb171=""] > div[data-v-66b1cf9d=""] > .regular-usp-list[data-v-66b1cf9d=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-66b1cf9d=""] > .tn-listitem.content-m[data-v-eeeb18ea=""]`
+- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-89afb171=""] > div[data-v-66b1cf9d=""] > .regular-usp-list[data-v-66b1cf9d=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-66b1cf9d=""] > .tn-listitem.content-m[data-v-eeeb18ea=""]`
 
 ### All page content should be contained by landmarks
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for TietoEVRY
 
-**Timestamp:** 2026-04-14T00:48:30.369Z
+**Timestamp:** 2026-04-16T11:53:51.341Z
 **URL:** [https://www.tieto.com/no/](https://www.tieto.com/no/)
 **Total Violations:** 2
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.md\:flex`
+- `.md\:gap-6.gap-4.h-full > .md\:gap-6.gap-4`
 
 ### Links must have discernible text
 
@@ -28,4 +28,4 @@
 
 #### Affected Elements:
 
-- `.px-2`
+- `.group\/header-logo`

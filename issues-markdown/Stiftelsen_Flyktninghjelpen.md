@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Flyktninghjelpen
 
-**Timestamp:** 2026-04-14T00:42:14.968Z
+**Timestamp:** 2026-04-16T11:46:41.952Z
 **URL:** [https://www.nrc.no/#](https://www.nrc.no/#)
 **Total Violations:** 4
 
@@ -47,7 +47,7 @@
 
 #### Affected Elements:
 
-- `.footer_gray__bottom-link-item:nth-child(4) > a`
+- `.footer_gray__bottom-link-item:nth-child(3) > a`
 
 ### Users should be able to zoom and scale the text up to 500%
 
