@@ -1,8 +1,8 @@
 # WCAG Violations Report for Unibuss AS
 
-**Timestamp:** 2026-04-16T11:57:40.753Z
-**URL:** [https://www.unibuss.no/#](https://www.unibuss.no/#)
-**Total Violations:** 4
+**Timestamp:** 2026-04-17T03:48:21.726Z
+**URL:** [https://www.unibuss.no/](https://www.unibuss.no/)
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -20,6 +20,18 @@
 - `.wp-container-core-group-is-layout-4 > .wp-block-buttons.wp-block-buttons-is-layout-flex.is-layout-flex > .has-custom-width.wp-block-button__width-100.is-style-fill > .has-contrast-3-background-color.has-border-color.has-contrast-3-border-color`
 - `.wp-container-core-group-is-layout-5 > .wp-block-buttons.wp-block-buttons-is-layout-flex.is-layout-flex > .has-custom-width.wp-block-button__width-100.is-style-fill > .has-contrast-3-background-color.has-border-color.has-contrast-3-border-color`
 - `.modal-cacsp-btn-accept`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.wp-container-core-navigation-is-layout-5 > .wp-block-navigation__container.is-vertical > .wp-block-page-list > .wp-block-pages-list__item.open-on-hover-click.wp-block-navigation-item:nth-child(1) > .wp-block-pages-list__item__link.wp-block-navigation-item__content`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 

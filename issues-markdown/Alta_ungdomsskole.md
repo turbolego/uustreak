@@ -1,7 +1,7 @@
 # WCAG Violations Report for Alta ungdomsskole
 
-**Timestamp:** 2026-04-16T11:08:29.349Z
-**URL:** [https://alta.ungdomsskole.no/#](https://alta.ungdomsskole.no/#)
+**Timestamp:** 2026-04-17T03:20:50.643Z
+**URL:** [https://alta.ungdomsskole.no/](https://alta.ungdomsskole.no/)
 **Total Violations:** 2
 
 ## Violation Details

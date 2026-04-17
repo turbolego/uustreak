@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2026-04-16T11:44:59.607Z
-**URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
+**Timestamp:** 2026-04-17T03:33:19.561Z
+**URL:** [https://www.dnt.no/stavanger](https://www.dnt.no/stavanger)
 **Total Violations:** 10
 
 ## Violation Details
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-592632"]`
-- `button[aria-controls="modal-582828"]`
-- `button[aria-controls="modal-582887"]`
-- `button[aria-controls="modal-582855"]`
-- `button[aria-controls="modal-582415"]`
-- `button[aria-controls="modal-592041"]`
-- `button[aria-controls="modal-603351"]`
-- `button[aria-controls="modal-597982"]`
+- `button[aria-controls="modal-584214"]`
+- `#react_0HNKQ9G5JI1BR > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-572821"]`
+- `#react_0HNKQ9G5JI1BS > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-572821"]`
+- `#react_0HNKQ9G5JI1BT > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-601665"]`
+- `#react_0HNKQ9G5JI1BU > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-601665"]`
+- `#react_0HNKQ9G5JI1BV > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-580484"]`
+- `#react_0HNKQ9G5JI1C0 > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-580484"]`
+- `button[aria-controls="modal-580703"]`
 
 ### Buttons must have discernible text
 
