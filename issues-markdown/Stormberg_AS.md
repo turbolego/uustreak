@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-04-17T03:40:04.738Z
+**Timestamp:** 2026-04-18T09:52:23.630Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -25,35 +25,37 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 26
+- **Count:** 28
 
 #### Affected Elements:
 
-- `li:nth-child(1) > .ia.ib[aria-label="Trolltunga skalljakke"] > .if.bc.bd > .im.ik.y > .gz.ir.in`
-- `li:nth-child(1) > .ia.ib[aria-label="Trolltunga skalljakke"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `li:nth-child(2) > .ia.ib[aria-label="Trolltunga skalljakke"] > .if.bc.bd > .im.ik.y > .gz.ir.in`
-- `li:nth-child(2) > .ia.ib[aria-label="Trolltunga skalljakke"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `li:nth-child(3) > .ia.ib[aria-label="Loten sneaker barn"] > .if.bc.bd > .im.ik.y > .gz.ir.in`
-- `li:nth-child(3) > .ia.ib[aria-label="Loten sneaker barn"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `a[aria-label="Trolltunga skallbukse"] > .if.bc.bd > .im.ik.y > .gz.ir.in`
-- `a[aria-label="Trolltunga skallbukse"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `li:nth-child(5) > .ia.ib[aria-label="Loten sneaker barn"] > .if.bc.bd > .im.ik.y > .gz.ir.in`
-- `li:nth-child(5) > .ia.ib[aria-label="Loten sneaker barn"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .if.bc.bd > .im.ik.y > .gz.ir.in`
-- `div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(1) > .ia.ib.ic > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `a[aria-label="Kurula hodelykt 2300lm"] > .if.bc.bd > .im.ik.y > .gz.ir.in`
-- `a[aria-label="Kurula hodelykt 2300lm"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `li:nth-child(3) > .ia.ib[aria-label="Trolltunga skalljakke"] > .if.bc.bd > .im.ik.y > .gz.ir.in`
-- `li:nth-child(3) > .ia.ib[aria-label="Trolltunga skalljakke"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `a[aria-label="Drammen sherpa fleecejakke"] > .if.bc.bd > .im.ik.y > .gz.ir.in`
-- `a[aria-label="Drammen sherpa fleecejakke"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `a[aria-label="Gausta lang anorakk"] > .if.bc.bd > .im.ik.y > .gz.ir.in`
-- `a[aria-label="Gausta lang anorakk"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `a[aria-label="Harstad skalljakke"] > .if.bc.bd > .im.ik.y > .gz.ir.in`
-- `a[aria-label="Sogndal skalljakke"] > .if.bc.bd > .im.ik.y > .gz.ir.in`
-- `a[aria-label="Porsanger sherpajakke"] > .if.bc.bd > .im.ik.y > .gz.ir.in`
-- `a[aria-label="Hinnstein fritidsbukse"] > .if.bc.bd > .im.ik.y > .gz.ir.in`
-- `a[aria-label="Frydsnuten turbukse barn 1-7"] > .if.bc.bd > .im.ik.y > .gz.ir.in`
+- `.h2.e0.e1 > div > div`
+- `.h4.am[href$="nyheter"]`
+- `li:nth-child(1) > .ic.id[aria-label="Trolltunga skalljakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `li:nth-child(1) > .ic.id[aria-label="Trolltunga skalljakke"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `li:nth-child(2) > .ic.id[aria-label="Trolltunga skalljakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `li:nth-child(2) > .ic.id[aria-label="Trolltunga skalljakke"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Loten sneaker barn"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Loten sneaker barn"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Trolltunga skallbukse"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Trolltunga skallbukse"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Drammen sherpa fleecejakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Drammen sherpa fleecejakke"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Kurula hodelykt 2300lm"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Kurula hodelykt 2300lm"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Fauskånebba skalljakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Fauskånebba skalljakke"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Urstad kokesett 1L"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Urstad kokesett 1L"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Harstad skalljakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Sogndal skalljakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Porsanger sherpajakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Frydsnuten turbukse barn 1-7"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Fjellmyra turbukse"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
@@ -93,13 +95,13 @@
 - `div:nth-child(1) > .aq.am.an > .au.as[width="11"]`
 - `div:nth-child(2) > .aq.am.an > .au.as[width="11"]`
 - `div:nth-child(3) > .aq.am.an > .au.as[width="11"]`
-- `.hq > .hv.hu.au`
-- `.bl.bj.bk:nth-child(4) > div > .jf.jg.jh > .jj.fm.be:nth-child(1) > div > .bj.bk.ar > .ho.bv.ay > .a6[data-scope-link="true"] > .jk.hr.hs > .hv.a2.hu`
-- `a[href$="prisras-sko"] > .jk.hr.hs > .hv.a2.hu`
-- `.bl.bj.bk:nth-child(4) > div > .jf.jg.jh > .jj.fm.be:nth-child(3) > div > .bj.bk.ar > .ho.bv.ay > .a6[data-scope-link="true"] > .jk.hr.hs > .hv.a2.hu`
-- `.bl.bj.bk:nth-child(6) > div > .jf.jg.jh > .jj.fm.be:nth-child(1) > div > .bj.bk.ar > .ho.bv.ay > .a6[data-scope-link="true"] > .jk.hr.hs > .hv.a2.hu`
-- `.a6[href$="turutstyr"][data-scope-link="true"] > .jk.hr.hs > .hv.a2.hu`
-- `a[href$="regntoy"] > .jk.hr.hs > .hv.a2.hu`
+- `.hs > .hx.hw.au`
+- `.bl.bj.bk:nth-child(4) > div > .jh.ji.jj > .jl.fm.be:nth-child(1) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jm.ht.hu > .hx.a2.hw`
+- `a[href$="prisras-sko"] > .jm.ht.hu > .hx.a2.hw`
+- `.bl.bj.bk:nth-child(4) > div > .jh.ji.jj > .jl.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jm.ht.hu > .hx.a2.hw`
+- `.bl.bj.bk:nth-child(6) > div > .jh.ji.jj > .jl.fm.be:nth-child(1) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jm.ht.hu > .hx.a2.hw`
+- `.a6[href$="turutstyr"][data-scope-link="true"] > .jm.ht.hu > .hx.a2.hw`
+- `a[href$="regntoy"] > .jm.ht.hu > .hx.a2.hw`
 
 ### Links must have discernible text
 
@@ -112,11 +114,11 @@
 #### Affected Elements:
 
 - `a[href$="varkupp"]`
-- `.bl.bj.bk:nth-child(4) > div > .jf.jg.jh > .jj.fm.be:nth-child(1) > div > .bj.bk.ar > .ho.bv.ay > .a6[data-scope-link="true"]`
+- `.bl.bj.bk:nth-child(4) > div > .jh.ji.jj > .jl.fm.be:nth-child(1) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
 - `a[href$="prisras-sko"]`
-- `.bl.bj.bk:nth-child(4) > div > .jf.jg.jh > .jj.fm.be:nth-child(3) > div > .bj.bk.ar > .ho.bv.ay > .a6[data-scope-link="true"]`
-- `.bl.bj.bk:nth-child(6) > div > .jf.jg.jh > .jj.fm.be:nth-child(1) > div > .bj.bk.ar > .ho.bv.ay > .a6[data-scope-link="true"]`
-- `.ho.bv.ay > .a6[href$="turutstyr"][data-scope-link="true"]`
+- `.bl.bj.bk:nth-child(4) > div > .jh.ji.jj > .jl.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
+- `.bl.bj.bk:nth-child(6) > div > .jh.ji.jj > .jl.fm.be:nth-child(1) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
+- `.hq.bv.ay > .a6[href$="turutstyr"][data-scope-link="true"]`
 - `a[href$="regntoy"]`
 
 ### Page should contain a level-one heading
@@ -137,9 +139,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `.ae`
-- `.h6`
+- `.gy`
+- `.h9`

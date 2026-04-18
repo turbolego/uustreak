@@ -1,7 +1,7 @@
 # WCAG Violations Report for Karmøy kommune
 
-**Timestamp:** 2026-04-17T03:54:22.281Z
-**URL:** [https://www.karmoy.kommune.no/](https://www.karmoy.kommune.no/)
+**Timestamp:** 2026-04-18T09:23:37.464Z
+**URL:** [https://www.karmoy.kommune.no/#](https://www.karmoy.kommune.no/#)
 **Total Violations:** 2
 
 ## Violation Details

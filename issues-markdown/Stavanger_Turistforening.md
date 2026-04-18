@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2026-04-17T03:33:19.561Z
-**URL:** [https://www.dnt.no/stavanger](https://www.dnt.no/stavanger)
+**Timestamp:** 2026-04-18T09:27:27.550Z
+**URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
 **Total Violations:** 10
 
 ## Violation Details
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-584214"]`
-- `#react_0HNKQ9G5JI1BR > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-572821"]`
-- `#react_0HNKQ9G5JI1BS > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-572821"]`
-- `#react_0HNKQ9G5JI1BT > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-601665"]`
-- `#react_0HNKQ9G5JI1BU > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-601665"]`
-- `#react_0HNKQ9G5JI1BV > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-580484"]`
-- `#react_0HNKQ9G5JI1C0 > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-580484"]`
-- `button[aria-controls="modal-580703"]`
+- `#react_0HNKQAKTPP490 > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-590753"]`
+- `#react_0HNKQAKTPP491 > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-590753"]`
+- `#react_0HNKQAKTPP492 > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-575454"]`
+- `#react_0HNKQAKTPP493 > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-575454"]`
+- `#react_0HNKQAKTPP494 > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-589410"]`
+- `#react_0HNKQAKTPP495 > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-589410"]`
+- `#react_0HNKQAKTPP496 > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-578947"]`
+- `#react_0HNKQAKTPP497 > .w-64.md\:w-80.transition-all > .modal-button-wrapper.group.bg-white > .z-10.cursor-pointer[aria-controls="modal-578947"]`
 
 ### Buttons must have discernible text
 

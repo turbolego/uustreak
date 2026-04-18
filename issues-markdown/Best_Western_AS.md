@@ -1,7 +1,7 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2026-04-17T03:27:05.336Z
-**URL:** [https://www.bestwestern.no/](https://www.bestwestern.no/)
+**Timestamp:** 2026-04-18T08:57:36.858Z
+**URL:** [https://www.bestwestern.no/#](https://www.bestwestern.no/#)
 **Total Violations:** 6
 
 ## Violation Details

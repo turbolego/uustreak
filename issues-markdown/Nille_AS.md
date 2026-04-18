@@ -1,7 +1,7 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2026-04-17T03:18:24.903Z
-**URL:** [https://www.nille.no/](https://www.nille.no/)
+**Timestamp:** 2026-04-18T08:49:41.843Z
+**URL:** [https://www.nille.no/#](https://www.nille.no/#)
 **Total Violations:** 5
 
 ## Violation Details
@@ -48,14 +48,12 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 4
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.row-grid.row:nth-child(1) > .m0.slider-block.dg100 > .wrapper--qt5MxQo > .slider--MghjpMP.swiper.swiper-initialized > .swiper-wrapper > .swiper-slide-active.swiper-slide[data-swiper-slide-index="0"] > a[href$="baderom/"][aria-label=""][title=""]`
-- `.row-grid.row:nth-child(1) > .m0.slider-block.dg100 > .wrapper--qt5MxQo > .slider--MghjpMP.swiper.swiper-initialized > .swiper-wrapper > .swiper-slide-prev.swiper-slide-next[data-swiper-slide-index="1"] > a[aria-label=""][title=""][data-discover="true"]`
-- `.row-grid.row:nth-child(2) > .m0.slider-block.dg100 > .wrapper--qt5MxQo > .slider--MghjpMP.swiper.swiper-initialized > .swiper-wrapper > .swiper-slide-active.swiper-slide[data-swiper-slide-index="0"] > a[href$="baderom/"][aria-label=""][title=""]`
-- `.row-grid.row:nth-child(2) > .m0.slider-block.dg100 > .wrapper--qt5MxQo > .slider--MghjpMP.swiper.swiper-initialized > .swiper-wrapper > .swiper-slide-prev.swiper-slide-next[data-swiper-slide-index="1"] > a[aria-label=""][title=""][data-discover="true"]`
+- `a[href$="baderom/"]`
+- `div[data-swiper-slide-index="1"] > a[aria-label=""][title=""][data-discover="true"]`
 
 ### All page content should be contained by landmarks
 
