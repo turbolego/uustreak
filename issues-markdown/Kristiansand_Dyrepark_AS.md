@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kristiansand Dyrepark AS
 
-**Timestamp:** 2026-04-18T09:26:32.117Z
-**URL:** [https://www.dyreparken.no/#](https://www.dyreparken.no/#)
-**Total Violations:** 7
+**Timestamp:** 2026-04-19T01:27:43.721Z
+**URL:** [https://www.dyreparken.no/](https://www.dyreparken.no/)
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -18,18 +18,6 @@
 
 - `.owl-prev`
 - `.owl-next`
-
-### Elements must only use permitted ARIA attributes
-
-- **Impact:** serious
-- **Description:** Ensure ARIA attributes are not prohibited for an element's role
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe[width="640"], #movie_player`
 
 ### Buttons must have discernible text
 

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Tromsø kommune
 
-**Timestamp:** 2026-04-18T10:00:58.086Z
-**URL:** [https://tromso.kommune.no/#](https://tromso.kommune.no/#)
+**Timestamp:** 2026-04-19T01:21:43.570Z
+**URL:** [https://tromso.kommune.no/](https://tromso.kommune.no/)
 **Total Violations:** 4
 
 ## Violation Details
@@ -12,14 +12,13 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 4
+- **Count:** 3
 
 #### Affected Elements:
 
 - `#splide01-slide01`
 - `#splide01-slide02`
 - `#splide01-slide03`
-- `#splide01-slide04`
 
 ### Document should not have more than one banner landmark
 

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2026-04-18T09:04:16.854Z
-**URL:** [https://www.dalane-tidende.no/#](https://www.dalane-tidende.no/#)
+**Timestamp:** 2026-04-19T01:07:48.702Z
+**URL:** [https://www.dalane-tidende.no/](https://www.dalane-tidende.no/)
 **Total Violations:** 4
 
 ## Violation Details
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="12"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `brick-carousel-v2[data-slides="7"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -48,9 +48,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 4
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/takeover_0, #landscape`
+- `.takeover-close`
 - `amedia-username`
 - `#toppbanner-1`
