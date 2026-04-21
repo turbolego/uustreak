@@ -1,8 +1,8 @@
 # WCAG Violations Report for BKK AS
 
-**Timestamp:** 2026-04-19T00:58:48.515Z
-**URL:** [https://www.bkk.no/](https://www.bkk.no/)
-**Total Violations:** 5
+**Timestamp:** 2026-04-21T00:46:30.053Z
+**URL:** [https://www.bkk.no/#](https://www.bkk.no/#)
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -31,18 +31,6 @@
 #### Affected Elements:
 
 - `#coiConsentBanner`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `a[href=""]`
 
 ### Elements marked as presentational should be consistently ignored
 

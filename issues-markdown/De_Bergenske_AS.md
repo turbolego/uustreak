@@ -1,6 +1,6 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-04-19T01:08:19.903Z
+**Timestamp:** 2026-04-21T00:57:07.484Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
 **Total Violations:** 8
 
@@ -59,7 +59,7 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 33
+- **Count:** 32
 
 #### Affected Elements:
 
@@ -69,10 +69,9 @@
 - `.splide__arrow--prev.left-5[aria-controls="splide02-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide02-track"] > .w-12`
 - `.grid-of-1 > .lg\:col-span-3.collection-item--fullWidth[theme=""] > .sm\:pr-6.flex-1.media`
-- `.lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.sm\:px-6.max-w-full`
-- `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.sm\:px-6.max-w-full`
-- `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(4) > .h-auto.sm\:px-6.max-w-full`
-- `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(6) > .h-auto.sm\:px-6.max-w-full`
+- `.grid-of-4 > .lg\:col-span-2.collection-item[theme=""] > .sm\:pr-6.flex-1.media`
+- `.grid-of-4 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:pr-6.flex-1.media`
+- `.grid-of-4 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:pr-6.flex-1.media`
 - `.lg\:col-span-2.lg\:row-span-2[theme=""] > .sm\:pr-6.flex-1.media`
 - `.lg\:col-span-1 > .sm\:pr-6.flex-1.media`
 - `.splide__arrow--prev.left-5[aria-controls="splide03-track"] > .w-12`
@@ -83,16 +82,16 @@
 - `#splide05-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
 - `.splide__arrow--prev.left-5[aria-controls="splide05-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide05-track"] > .w-12`
-- `.grid-of-6 > .lg\:col-span-2.col-span-1[theme=""]:nth-child(1) > .sm\:pr-6.flex-1.media`
+- `.grid-of-6 > .lg\:col-span-2.collection-item[theme=""]:nth-child(1) > .sm\:pr-6.flex-1.media`
 - `.grid-of-6 > .lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:pr-6.flex-1.media`
-- `.grid-of-6 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:pr-6.flex-1.media`
-- `.grid-of-6 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:pr-6.flex-1.media`
-- `.grid-of-6 > .lg\:row-start-3.col-span-1[theme=""]:nth-child(5) > .sm\:pr-6.flex-1.media`
+- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:pr-6.flex-1.media`
+- `.grid-of-6 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:pr-6.flex-1.media`
+- `.grid-of-6 > .lg\:row-start-3.collection-item[theme=""]:nth-child(5) > .sm\:pr-6.flex-1.media`
 - `.lg\:row-start-3.lg\:col-span-2[theme=""] > .sm\:pr-6.flex-1.media`
-- `.grid-of-5 > .lg\:col-span-2.col-span-1[theme=""] > .sm\:pr-6.flex-1.media`
+- `.grid-of-5 > .lg\:col-span-2.collection-item[theme=""] > .sm\:pr-6.flex-1.media`
 - `.grid-of-5 > .lg\:col-start-3.lg\:row-span-2[theme=""] > .sm\:pr-6.flex-1.media`
-- `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(3) > .sm\:pr-6.flex-1.media`
-- `.grid-of-5 > .lg\:row-start-2.col-span-1[theme=""]:nth-child(4) > .sm\:pr-6.flex-1.media`
+- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(3) > .sm\:pr-6.flex-1.media`
+- `.grid-of-5 > .lg\:row-start-2.collection-item[theme=""]:nth-child(4) > .sm\:pr-6.flex-1.media`
 - `.lg\:col-span-3.lg\:row-start-3.collection-item--fullWidth > .sm\:pr-6.flex-1.media`
 - `.splide__arrow--prev.left-5[aria-controls="splide06-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide06-track"] > .w-12`
@@ -149,7 +148,7 @@
 - `.DARK.\!bg-Theme\/Dark:nth-child(12)`
 - `.DARK.\!bg-Theme\/Dark:nth-child(13) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
 - `.DARK.\!bg-Theme\/Dark:nth-child(14)`
-- `.space-y-9 > .lg\:text-center`
+- `.lg\:text-center`
 - `.space-y-9 > div:nth-child(2)`
 - `#ppms_cm_language_select_btn_id`
 - `#ppms-68b46b4f-2362-49d8-8054-214dfd5e0e70`

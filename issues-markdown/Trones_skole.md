@@ -1,7 +1,7 @@
 # WCAG Violations Report for Trones skole
 
-**Timestamp:** 2026-04-19T01:22:13.063Z
-**URL:** [https://www.minskole.no/trones](https://www.minskole.no/trones)
+**Timestamp:** 2026-04-21T01:31:25.475Z
+**URL:** [https://www.minskole.no/trones/#](https://www.minskole.no/trones/#)
 **Total Violations:** 7
 
 ## Violation Details

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Fredrik II videregående skole
 
-**Timestamp:** 2026-04-19T01:17:03.635Z
-**URL:** [https://ofk.no/frederikii-vgs/](https://ofk.no/frederikii-vgs/)
+**Timestamp:** 2026-04-21T01:06:43.582Z
+**URL:** [https://ofk.no/frederikii-vgs/#](https://ofk.no/frederikii-vgs/#)
 **Total Violations:** 1
 
 ## Violation Details

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2026-04-19T01:07:48.702Z
-**URL:** [https://www.dalane-tidende.no/](https://www.dalane-tidende.no/)
-**Total Violations:** 4
+**Timestamp:** 2026-04-21T00:56:34.854Z
+**URL:** [https://www.dalane-tidende.no/#](https://www.dalane-tidende.no/#)
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -17,18 +17,6 @@
 #### Affected Elements:
 
 - `#eaframe`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `brick-carousel-v2[data-slides="7"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -48,11 +36,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 4
+- **Count:** 2
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/takeover_0, #landscape`
-- `.takeover-close`
 - `amedia-username`
 - `#toppbanner-1`

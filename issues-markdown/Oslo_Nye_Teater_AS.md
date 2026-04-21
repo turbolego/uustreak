@@ -1,7 +1,7 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2026-04-19T01:00:50.408Z
-**URL:** [https://oslonye.no/](https://oslonye.no/)
+**Timestamp:** 2026-04-21T00:48:26.541Z
+**URL:** [https://oslonye.no/#](https://oslonye.no/#)
 **Total Violations:** 5
 
 ## Violation Details
@@ -75,7 +75,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 37
+- **Count:** 35
 
 #### Affected Elements:
 
@@ -114,5 +114,3 @@
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(13)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(14)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(15)`

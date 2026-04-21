@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stiftelsen Flyktninghjelpen
 
-**Timestamp:** 2026-04-19T01:13:11.931Z
-**URL:** [https://www.nrc.no/](https://www.nrc.no/)
+**Timestamp:** 2026-04-21T01:21:14.320Z
+**URL:** [https://www.nrc.no/#](https://www.nrc.no/#)
 **Total Violations:** 4
 
 ## Violation Details
@@ -21,8 +21,8 @@
 - `.three-layer-header__donation-button`
 - `.poster__date-container--desktop > .poster__date-edited.poster__date-field > i > time`
 - `.action`
-- `.article-list-view-model__content--no-image > .article-list-view-model__tags > time`
-- `.block:nth-child(2) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content > .article-list-view-model__tags > time`
+- `.block:nth-child(1) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content--no-image.article-list-view-model__content > .article-list-view-model__tags > time`
+- `.block:nth-child(2) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content--no-image.article-list-view-model__content > .article-list-view-model__tags > time`
 - `.block:nth-child(3) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content > .article-list-view-model__tags > time`
 
 ### Heading levels should only increase by one

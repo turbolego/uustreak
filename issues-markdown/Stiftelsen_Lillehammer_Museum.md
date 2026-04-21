@@ -1,8 +1,8 @@
 # WCAG Violations Report for Stiftelsen Lillehammer Museum
 
-**Timestamp:** 2026-04-19T01:14:04.241Z
-**URL:** [https://lillehammermuseum.no/](https://lillehammermuseum.no/)
-**Total Violations:** 1
+**Timestamp:** 2026-04-21T01:22:08.882Z
+**URL:** [https://lillehammermuseum.no/#](https://lillehammermuseum.no/#)
+**Total Violations:** 2
 
 ## Violation Details
 
@@ -17,3 +17,15 @@
 #### Affected Elements:
 
 - `h2`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.ezrichtext-field > h3`

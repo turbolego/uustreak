@@ -1,8 +1,8 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-04-19T01:19:20.173Z
+**Timestamp:** 2026-04-21T01:27:30.547Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -46,6 +46,18 @@
 - `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-header[data-v-89afb171=""] > .margin-top-3xl.padding-top-3xs`
 - `.dropdown-category.footer.dark:nth-child(1) > .dropdown-link[data-v-9b029b67=""] > .dropdown-header.hidden-mobile[data-v-9b029b67=""] > h6`
 - `#privacy_prompt_text2 > h4`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(4) > .image-container[data-v-d3b85376=""] > img[height="200"][data-nuxt-img=""]`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
