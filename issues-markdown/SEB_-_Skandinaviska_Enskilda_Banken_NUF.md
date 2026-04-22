@@ -1,6 +1,6 @@
 # WCAG Violations Report for SEB - Skandinaviska Enskilda Banken NUF
 
-**Timestamp:** 2026-04-21T01:13:23.054Z
+**Timestamp:** 2026-04-22T00:51:37.434Z
 **URL:** [https://sebgroup.com/#](https://sebgroup.com/#)
 **Total Violations:** 3
 
@@ -36,7 +36,7 @@
 ### Scrollable region must have keyboard access
 
 - **Impact:** serious
-- **Description:** Ensure elements that have scrollable content are accessible by keyboard
+- **Description:** Ensure elements that have scrollable content are accessible by keyboard in Safari
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
 - **Count:** 1

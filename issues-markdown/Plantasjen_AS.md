@@ -1,6 +1,6 @@
 # WCAG Violations Report for Plantasjen AS
 
-**Timestamp:** 2026-04-21T00:50:08.608Z
+**Timestamp:** 2026-04-22T00:46:43.518Z
 **URL:** [https://plantasjen.no/no](https://plantasjen.no/no)
 **Total Violations:** 2
 
@@ -24,10 +24,8 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
-- `section:nth-child(30) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
-- `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(3) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
-- `section:nth-child(33) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
+- `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
