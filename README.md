@@ -31,6 +31,7 @@ Listen med de 278 nettsidene fra statusmålingen til uutilsynet i 2018 er brukt 
 * "Sørlandsruta AS" endret til "Connect Bus AS" pga. sammenslåingen i 2022
 * "Vest-Agder fylkeskommune" slått sammen med "Agder fylkeskommune" pga. sammenslåingen i 2020
 * "Ski kommune" endret til "Nordre Follo kommune" pga. sammenslåingen i 2020
+* privat-omsorg.no er lagt ned og erstattet med bpa-nord.no
 
 ![UUStreak - WCAG Accessibility Leaderboard](assets/uustreak.png)
 
