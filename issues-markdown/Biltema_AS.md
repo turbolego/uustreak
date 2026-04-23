@@ -1,6 +1,6 @@
 # WCAG Violations Report for Biltema AS
 
-**Timestamp:** 2026-04-22T00:46:07.601Z
+**Timestamp:** 2026-04-23T00:52:33.023Z
 **URL:** [https://www.biltema.no/#](https://www.biltema.no/#)
 **Total Violations:** 6
 
@@ -80,11 +80,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 9
+- **Count:** 8
 
 #### Affected Elements:
 
-- `.header__message`
 - `.header__info__item.link--black:nth-child(1) > .font__myriad--semibold`
 - `.header__info__item.link--black:nth-child(1) > span:nth-child(3)`
 - `.header__info__item.link--black:nth-child(2) > .font__myriad--semibold`

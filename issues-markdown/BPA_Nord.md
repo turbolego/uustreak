@@ -1,7 +1,7 @@
-# WCAG Violations Report for Norsk pasientskadeerstatning
+# WCAG Violations Report for BPA Nord
 
-**Timestamp:** 2026-04-23T00:51:04.644Z
-**URL:** [https://www.npe.no/#](https://www.npe.no/#)
+**Timestamp:** 2026-04-23T00:49:21.052Z
+**URL:** [https://bpa-nord.no/#](https://bpa-nord.no/#)
 **Total Violations:** 1
 
 ## Violation Details
@@ -16,4 +16,4 @@
 
 #### Affected Elements:
 
-- `.frontimage > a`
+- `a[href$="gnistdesign.no/"]`

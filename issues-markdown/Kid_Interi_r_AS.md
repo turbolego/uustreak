@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-04-22T00:51:27.328Z
+**Timestamp:** 2026-04-23T00:58:49.305Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.ng`
+- `.ns`
 
 ### Alternative text of images should not be repeated as text
 
@@ -66,7 +66,7 @@
 #### Affected Elements:
 
 - `#coiOverlay`
-- `div:nth-child(2) > .h2.h3.h4 > .h8.h9.ha > .al > .b[role="region"][aria-roledescription="carousel"]`
+- `div:nth-child(2) > .h3.h4.h5 > .h9.ha.hb > .al > .b[role="region"][aria-roledescription="carousel"]`
 
 ### Links must have discernible text
 
@@ -78,9 +78,9 @@
 
 #### Affected Elements:
 
-- `.ni:nth-child(1) > .bx > .nl.nm.nn > .f4.f.gc`
-- `.ni:nth-child(2) > .bx > .nl.nm.nn > .f4.f.gc`
-- `.ni:nth-child(3) > .bx > .nl.nm.nn > .f4.f.gc`
+- `.my:nth-child(1) > .bx > .le.n1.n2 > .f4.f.gd`
+- `.my:nth-child(2) > .bx > .le.n1.n2 > .f4.f.gd`
+- `.my:nth-child(3) > .bx > .le.n1.n2 > .f4.f.gd`
 - `.f4.f[href$="rengjoring"]`
 - `.f4.f[href$="sommerdyner"]`
 - `.f4.f[href$="barnerom"]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jobzone Norge AS
 
-**Timestamp:** 2026-04-22T00:49:55.025Z
+**Timestamp:** 2026-04-23T00:57:18.252Z
 **URL:** [https://jobzone.no/](https://jobzone.no/)
 **Total Violations:** 5
 
@@ -24,10 +24,10 @@
 - `.candidate-image > div > div > .container-fluid.frontpage > div:nth-child(1) > span`
 - `.company-tab`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(2) > .box.is-mobile > .left-arrow.link.rusty-red > .rusty-red`
+- `.buttons-href-button[href="/ledige-stillinger/73734"]`
+- `.buttons-href-button[href="/ledige-stillinger/73733"]`
 - `.buttons-href-button[href="/ledige-stillinger/73723"]`
-- `.buttons-href-button[href="/ledige-stillinger/73545"]`
-- `.buttons-href-button[href="/ledige-stillinger/73728"]`
-- `.buttons-href-button[href="/ledige-stillinger/73722"]`
+- `.buttons-href-button[href="/ledige-stillinger/73735"]`
 - `.button-component`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .jobseeker.is-marginless.is-multiline > h5`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .company.is-marginless.colums > h5`
@@ -79,10 +79,10 @@
 - `a[href$="registrering/"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
 - `.page-link.colums:nth-child(3) > a[href$="avdelinger/"] > .is-mobile.columns > .page-link-icon.is-narrow.column > img`
 - `.page-link.colums:nth-child(3) > a[href$="avdelinger/"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
+- `div[data-position-id="73734"] > img`
+- `div[data-position-id="73733"] > img`
 - `div[data-position-id="73723"] > img`
-- `div[data-position-id="73545"] > img`
-- `div[data-position-id="73728"] > img`
-- `div[data-position-id="73722"] > img`
+- `div[data-position-id="73735"] > img`
 - `img[src$="House.svg"]`
 - `.is-6.is-12-mobile.column:nth-child(2) > img[src$="Article.svg"][type="image/svg+xml"]`
 - `.information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(3) > img[type="image/svg+xml"]`
