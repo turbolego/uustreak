@@ -1,0 +1,136 @@
+{
+  "project": "Teknisk Ukeblad Media AS",
+  "timestamp": "2026-04-23T00:53:13.824Z",
+  "url": "https://www.tu.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" role=\"switch\" aria-checked=\"false\" data-state=\"unchecked\" value=\"on\" class=\"peer inline-flex h-6...\">",
+          "target": [
+            ".peer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"inline-flex items-ce...\">",
+          "target": [
+            ".gap-4.flex > .bg-transparent.hover\\:bg-site-brand-darker.dark\\:text-white:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"inline-flex items-ce...\">",
+          "target": [
+            ".gap-4.flex > .bg-transparent.hover\\:bg-site-brand-darker.dark\\:text-white:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<button title=\"Godta\" aria-label=\"Godta\" class=\"message-component me...\" style=\"opacity: 1; padding:...\">",
+          "target": [
+            "#sp_message_iframe_1441301",
+            ".acceptButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #ffffff, background color: #1890ff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button title=\"Avvis alle\" aria-label=\"Avvis alle\" class=\"message-component me...\" style=\"opacity: 1; padding:...\">",
+          "target": [
+            "#sp_message_iframe_1441301",
+            ".rejectButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #ffffff, background color: #1890ff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button title=\"Tilpass\" aria-label=\"Tilpass\" class=\"message-component me...\" style=\"opacity: 1; padding:...\">",
+          "target": [
+            "#sp_message_iframe_1441301",
+            ".customiseButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #ffffff, background color: #1890ff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img width=\"1000\" height=\"563\" class=\" transition-transfor...\" src=\"https://images.gfx.n...\" srcset=\"https://images.gfx.n...\" alt=\"Den luftige amerikan...\" loading=\"eager\">",
+          "target": [
+            ".object-cover[loading=\"eager\"][height=\"563\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img width=\"1000\" height=\"563\" class=\" transition-transfor...\" src=\"https://images.gfx.n...\" srcset=\"https://images.gfx.n...\" alt=\"Ny avdeling i Forsva...\" loading=\"lazy\">",
+          "target": [
+            "#preamble-570491 > .flex-row.md\\:flex-col.group > .w-1\\/3.md\\:w-full.overflow-hidden > .object-cover.duration-700[height=\"563\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img width=\"1000\" height=\"563\" class=\" transition-transfor...\" src=\"https://images.gfx.n...\" srcset=\"https://images.gfx.n...\" alt=\"Varsler at mangelen ...\" loading=\"lazy\">",
+          "target": [
+            "#preamble-570747 > .flex-row.md\\:flex-col.group > .w-1\\/3.md\\:w-full.overflow-hidden > .object-cover.duration-700[height=\"563\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    }
+  ]
+}
