@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-04-23T00:57:45.874Z
+**Timestamp:** 2026-04-24T10:31:55.422Z
 **URL:** [https://jysk.no/#](https://jysk.no/#)
 **Total Violations:** 1
 
@@ -21,7 +21,7 @@
 - `.col.mb-md-0.col-md-3:nth-child(3) > .usp.text-decoration-none.d-block > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
 - `.usp.text-decoration-none[href$="fast-lav-pris"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
 - `.newsletter__header`
-- `.mb-3.required-label`
+- `.newsletter__fields > .mb-3.required-label`
 - `.newsletter__fields > div:nth-child(2)`
 - `.newsletter__fields > div:nth-child(3)`
 - `#edit-terms`

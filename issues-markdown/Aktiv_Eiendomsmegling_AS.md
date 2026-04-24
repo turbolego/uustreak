@@ -1,6 +1,6 @@
 # WCAG Violations Report for Aktiv Eiendomsmegling AS
 
-**Timestamp:** 2026-04-23T00:45:30.429Z
+**Timestamp:** 2026-04-24T09:58:26.479Z
 **URL:** [https://aktiv.no/#](https://aktiv.no/#)
 **Total Violations:** 7
 
@@ -25,11 +25,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 4
+- **Count:** 5
 
 #### Affected Elements:
 
 - `.cm-purpose:nth-child(1) > .cm-services > .cm-caret > a[href="#"]`
+- `.cm-purpose:nth-child(4) > .cm-services > .cm-caret > a[href="#"]`
 - `.cm-btn-info`
 - `.cm-btn-accept-all`
 - `a[href$="klaro"]`
@@ -97,7 +98,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 15
+- **Count:** 19
 
 #### Affected Elements:
 
@@ -114,5 +115,9 @@
 - `label[for="purpose-item-performance"]`
 - `#purpose-item-performance-description`
 - `.cm-purpose:nth-child(3) > .cm-services > .cm-caret`
+- `#purpose-item-marketing`
+- `label[for="purpose-item-marketing"]`
+- `#purpose-item-marketing-description`
+- `.cm-purpose:nth-child(4) > .cm-services > .cm-caret`
 - `.cm-toggle-all`
 - `.cm-powered-by`

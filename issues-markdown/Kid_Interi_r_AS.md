@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-04-23T00:58:49.305Z
+**Timestamp:** 2026-04-24T10:33:08.898Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -78,9 +78,9 @@
 
 #### Affected Elements:
 
-- `.my:nth-child(1) > .bx > .le.n1.n2 > .f4.f.gd`
-- `.my:nth-child(2) > .bx > .le.n1.n2 > .f4.f.gd`
-- `.my:nth-child(3) > .bx > .le.n1.n2 > .f4.f.gd`
+- `.my:nth-child(1) > .bx > .mw.n1.n2 > .f4.f.gd`
+- `.my:nth-child(2) > .bx > .mw.n1.n2 > .f4.f.gd`
+- `.my:nth-child(3) > .bx > .mw.n1.n2 > .f4.f.gd`
 - `.f4.f[href$="rengjoring"]`
 - `.f4.f[href$="sommerdyner"]`
 - `.f4.f[href$="barnerom"]`

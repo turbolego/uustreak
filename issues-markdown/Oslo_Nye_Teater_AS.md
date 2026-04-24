@@ -1,10 +1,22 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2026-04-23T00:52:26.834Z
+**Timestamp:** 2026-04-24T10:05:07.842Z
 **URL:** [https://oslonye.no/#](https://oslonye.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `button[data-cky-tag="accept-button"]`
 
 ### Heading levels should only increase by one
 
@@ -64,7 +76,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 33
+- **Count:** 31
 
 #### Affected Elements:
 
@@ -99,5 +111,3 @@
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(9)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12)`

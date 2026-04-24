@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordic Choice Hotels
 
-**Timestamp:** 2026-04-23T00:47:49.677Z
+**Timestamp:** 2026-04-24T09:59:56.194Z
 **URL:** [https://www.strawberry.no/](https://www.strawberry.no/)
 **Total Violations:** 3
 
@@ -40,5 +40,5 @@
 
 #### Affected Elements:
 
-- `.css-2ycpjl-maintenanceMessage-container`
 - `#skip-to-main-content`
+- `.css-2ycpjl-maintenanceMessage-container`

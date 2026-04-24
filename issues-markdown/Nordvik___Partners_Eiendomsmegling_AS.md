@@ -1,10 +1,22 @@
 # WCAG Violations Report for Nordvik & Partners Eiendomsmegling AS
 
-**Timestamp:** 2026-04-23T00:48:31.514Z
+**Timestamp:** 2026-04-24T10:00:45.609Z
 **URL:** [https://www.nordvik.no/#](https://www.nordvik.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
+
+### Elements must only use supported ARIA attributes
+
+- **Impact:** critical
+- **Description:** Ensure an element's role supports its ARIA attributes
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[title="Bruktbil Levering Web"], .OverlayBase_module_overlayWrapper__321515a7`
 
 ### ARIA role should be appropriate for the element
 
@@ -36,10 +48,11 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `.py-10.md\:py-12[title="Bruktbil"] > div:nth-child(2) > .md\:text-lg.md\:leading-7`
 - `section:nth-child(1) > h4`
 
 ### Links must have discernible text

@@ -1,6 +1,6 @@
 # WCAG Violations Report for If Skadeforsikring NUF
 
-**Timestamp:** 2026-04-23T00:55:56.879Z
+**Timestamp:** 2026-04-24T10:29:42.305Z
 **URL:** [https://www.if.no/privat](https://www.if.no/privat)
 **Total Violations:** 3
 
@@ -16,10 +16,10 @@
 
 #### Affected Elements:
 
-- `#e0dbbc6090944fca897ebb233829ef90 > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
-- `#\30 d9a0c35f898472e87f0008845033ec1 > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
+- `#\31 032fde58a64477ab28ef8b8777424da > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
+- `#\32 740173657b04cdeb5b667c59634c6d2 > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
 - `#viking > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
-- `img[alt="Hvorfor velge oss?"]`
+- `img[alt="Mer enn bare forsikring"]`
 
 ### Heading levels should only increase by one
 
@@ -31,7 +31,7 @@
 
 #### Affected Elements:
 
-- `#e4151c7caa77421a872098b4d838608e > .weight-medium`
+- `#e06375e61aa743eba95546fe6aa5d26d > .weight-medium`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -43,4 +43,4 @@
 
 #### Affected Elements:
 
-- `#e4151c7caa77421a872098b4d838608e`
+- `#e06375e61aa743eba95546fe6aa5d26d`

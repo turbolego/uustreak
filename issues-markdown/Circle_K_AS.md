@@ -1,6 +1,6 @@
 # WCAG Violations Report for Circle K AS
 
-**Timestamp:** 2026-04-23T00:54:57.448Z
+**Timestamp:** 2026-04-24T10:09:47.012Z
 **URL:** [https://www.circlek.no/#](https://www.circlek.no/#)
 **Total Violations:** 7
 
@@ -17,10 +17,10 @@
 #### Affected Elements:
 
 - `#uk-slider-3`
-- `#uk-slider-5`
 - `#uk-slider-6`
 - `#uk-slider-7`
 - `#uk-slider-8`
+- `#uk-slider-9`
 
 ### ARIA dialog and alertdialog nodes should have an accessible name
 
