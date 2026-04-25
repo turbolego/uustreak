@@ -1,22 +1,10 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2026-04-24T10:13:20.794Z
+**Timestamp:** 2026-04-25T20:21:20.928Z
 **URL:** [https://www.dalane-tidende.no/#](https://www.dalane-tidende.no/#)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.notification`
 
 ### Frames must have an accessible name
 
@@ -40,7 +28,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="7"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `brick-carousel-v2[data-version="carousel"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 

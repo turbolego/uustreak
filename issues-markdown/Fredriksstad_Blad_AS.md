@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-04-24T10:24:12.549Z
+**Timestamp:** 2026-04-25T20:32:12.230Z
 **URL:** [https://www.f-b.no/#](https://www.f-b.no/#)
 **Total Violations:** 6
 
@@ -12,10 +12,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `#eaframe, #container_10349158 > .info > .info-wrapper > .ctaLink`
 - `.totalt_antall`
 
 ### Frames must have an accessible name
@@ -40,7 +41,7 @@
 
 #### Affected Elements:
 
-- `.brick-c-jljxpd > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `.optimus-background-custom-sport > .wrap-horizontal.wrap-horizontal-space > brick-carousel-v2[data-slides="4"][data-version="carousel"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Page should contain a level-one heading
 

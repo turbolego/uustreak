@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bekk
 
-**Timestamp:** 2026-04-24T10:04:49.948Z
+**Timestamp:** 2026-04-25T20:12:43.238Z
 **URL:** [https://www.bekk.no/#](https://www.bekk.no/#)
 **Total Violations:** 1
 

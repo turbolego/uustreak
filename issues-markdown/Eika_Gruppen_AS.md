@@ -1,22 +1,10 @@
 # WCAG Violations Report for Eika Gruppen AS
 
-**Timestamp:** 2026-04-24T10:18:34.976Z
+**Timestamp:** 2026-04-25T20:26:32.349Z
 **URL:** [https://www.eika.no/](https://www.eika.no/)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
-
-### ARIA role should be appropriate for the element
-
-- **Impact:** minor
-- **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
-- **Tags:** cat.aria, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.card-double`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

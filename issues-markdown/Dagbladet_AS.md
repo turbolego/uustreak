@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-04-24T10:11:53.262Z
+**Timestamp:** 2026-04-25T20:19:51.424Z
 **URL:** [https://www.dagbladet.no/#](https://www.dagbladet.no/#)
 **Total Violations:** 3
 
@@ -12,17 +12,16 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 7
+- **Count:** 6
 
 #### Affected Elements:
 
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(3) > .song-title.svelte-1mbdfa7`
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(3) > .song-author.svelte-1mbdfa7`
-- `.song-chip[aria-label="Hør på Kamp i USA av Sofie S"][rel="noopener noreferrer"]:nth-child(4) > .song-title.svelte-1mbdfa7`
-- `.song-chip[aria-label="Hør på Kamp i USA av Sofie S"][rel="noopener noreferrer"]:nth-child(4) > .song-author.svelte-1mbdfa7`
+- `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(4) > .song-title.svelte-1mbdfa7`
+- `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(4) > .song-author.svelte-1mbdfa7`
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(5) > .song-title.svelte-1mbdfa7`
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(5) > .song-author.svelte-1mbdfa7`
-- `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(6) > .song-title.svelte-1mbdfa7`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

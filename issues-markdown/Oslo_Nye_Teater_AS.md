@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2026-04-24T10:05:07.842Z
+**Timestamp:** 2026-04-25T20:13:25.921Z
 **URL:** [https://oslonye.no/#](https://oslonye.no/#)
 **Total Violations:** 5
 
@@ -53,21 +53,21 @@
 
 #### Affected Elements:
 
-- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(1) > .bg-none.alignment-top.block > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(2) > .hovedscenen.bg-none.alignment-top > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(3) > .bg-none.alignment-top.block > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt > .hovedscenen.bg-none.alignment-top > .les-mer-link`
-- `.alignment-right > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt > .bg-none.alignment-top.block > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(1) > .hovedscenen.bg-none.alignment-top > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(3) > .bg-none.alignment-top.block > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(1) > .bg-none.alignment-top.block > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(2) > .bg-none.alignment-top.block > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(1) > .hovedscenen.bg-none.alignment-top > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(3) > .bg-none.alignment-top.block > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(1) > .bg-none.alignment-top.block > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(3) > .bg-none.alignment-top.block > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(11) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt > .bg-none.alignment-top.block > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .bg-none.alignment-top.centralteatret > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(2) > .hovedscenen.bg-none.alignment-top > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3) > .bg-none.alignment-top.centralteatret > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .hovedscenen.bg-none.alignment-top > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .hovedscenen.bg-none.alignment-top > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3) > .bg-none.alignment-top.centralteatret > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .hovedscenen.bg-none.alignment-top > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3) > .bg-none.alignment-top.centralteatret > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .bg-none.alignment-top.centralteatret > .les-mer-link`
+- `.large-4.cpt.medium-6:nth-child(2) > .bg-none.alignment-top.centralteatret > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .hovedscenen.bg-none.alignment-top > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3) > .bg-none.alignment-top.centralteatret > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .bg-none.alignment-top.centralteatret > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3) > .bg-none.alignment-top.centralteatret > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(11) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .bg-none.alignment-top.centralteatret > .les-mer-link`
 - `.scroll-to-top`
 
 ### All page content should be contained by landmarks
@@ -76,7 +76,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 31
+- **Count:** 32
 
 #### Affected Elements:
 
@@ -87,17 +87,20 @@
 - `.forestillinger-blocks-panel:nth-child(3)`
 - `.text-orange > .title`
 - `.text-orange > .short-description`
-- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt`
+- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6`
+- `.advertise-cover- > .border-yellow.advertise.text-center > .text-green.heading-small.content-holder > .title`
+- `.text-green.heading-small.content-holder > .short-description`
+- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1)`
 - `.advertise-cover- > .border-orange.advertise.text-center > .text-yellow.heading-small.content-holder > .title`
 - `.text-yellow.heading-small.content-holder > .short-description`
-- `.forestillinger-blocks-panel:nth-child(5)`
+- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3)`
 - `.forestillinger-blocks-panel:nth-child(6)`
 - `.forestillinger-blocks-panel:nth-child(7)`
-- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(1)`
-- `.text-green > .title`
-- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(3)`
+- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1)`
+- `.rounded.border-yellow.advertise > .text-green.heading-small.content-holder > .title`
+- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3)`
 - `.forestillinger-blocks-panel:nth-child(9)`
-- `.forestillinger-blocks-panel:nth-child(10) > .grid-container > .grid-padding-x.grid-x > .large-8.medium-6.cell`
+- `.large-8`
 - `.rounded.border-orange.advertise > .text-yellow.heading-small.content-holder > .title`
 - `.forestillinger-blocks-panel:nth-child(11)`
 - `.current-month`
@@ -109,5 +112,3 @@
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(6)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(7)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(9)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10)`
