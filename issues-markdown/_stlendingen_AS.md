@@ -1,8 +1,8 @@
 # WCAG Violations Report for Østlendingen AS
 
-**Timestamp:** 2026-04-25T20:14:21.317Z
+**Timestamp:** 2026-04-26T00:54:25.785Z
 **URL:** [https://www.ostlendingen.no/#](https://www.ostlendingen.no/#)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -29,19 +29,6 @@
 #### Affected Elements:
 
 - `.brick-c-jljxpd > .carousel[role="region"][aria-label="Innholdskarusell."]`
-
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 2
-
-#### Affected Elements:
-
-- `html`
-- `#eaframe, html`
 
 ### Elements marked as presentational should be consistently ignored
 

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Dagens Næringsliv AS
 
-**Timestamp:** 2026-04-25T20:20:38.236Z
-**URL:** [https://www.dn.no/?zephr_sso_ott=DIpPWL](https://www.dn.no/?zephr_sso_ott=DIpPWL)
+**Timestamp:** 2026-04-26T01:01:21.953Z
+**URL:** [https://www.dn.no/](https://www.dn.no/)
 **Total Violations:** 9
 
 ## Violation Details
@@ -23,6 +23,7 @@
 - `a[data-id="2-1-1979658"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="2-1-1940663"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
 - `a[data-id="2-1-1940663"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+- `a[data-id="6-1-ylChi5Tc"] > article > .meta > span`
 - `a[data-id="2-1-1979849"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
 - `a[data-id="2-1-1979849"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
 - `a[data-id="2-1-1973733"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
@@ -46,20 +47,19 @@
 - `a[data-id="2-1-1974195"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="2-1-1952330"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
 - `a[data-id="2-1-1952330"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-- `a[data-id="2-1-1970274"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-- `a[data-id="2-1-1970274"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
 - `a[data-id="2-1-1972203"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
 - `a[data-id="2-1-1972203"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
 - `a[data-id="2-1-1977630"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="6-1-xbyiKGdw"] > article > .meta > span`
-- `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(3) > article > .kicker > span`
+- `a[data-id="2-1-1970274"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+- `a[data-id="2-1-1970274"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+- `a[data-id="2-1-1976149"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+- `a[data-id="2-1-1976149"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+- `a[data-id="6-1-364NGwSH"] > article > .meta > span`
 - `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(4) > article > .kicker > span`
 - `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(5) > article > .kicker > span`
 - `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(6) > article > .kicker > span`
 - `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(7) > article > .kicker > span`
-- `a[data-id="2-1-1976149"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-- `a[data-id="2-1-1976149"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-- `a[data-id="6-1-364NGwSH"] > article > .meta > span`
 - `a[data-id="2-1-1978701"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="2-1-1980459"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="2-1-1980745"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
@@ -162,7 +162,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 77
+- **Count:** 78
 
 #### Affected Elements:
 
@@ -177,15 +177,14 @@
 - `.item-increased.item[data-v-a56f3944=""]:nth-child(4) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
 - `.item-increased.item[data-v-a56f3944=""]:nth-child(5) > .item-holder[data-v-a56f3944=""]`
 - `.item-increased.item[data-v-a56f3944=""]:nth-child(5) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
-- `.dn-group[disallowadsbelow="false"]:nth-child(2)`
+- `.dn-group[disallowadsbelow="false"]:nth-child(2) > .layout-abb.dn-grid.dn-grid-layout`
+- `a[data-id="6-1-ylChi5Tc"] > article > .dn-card_assets > .default[data-load="eager"][type="picture"]`
+- `a[data-id="6-1-ylChi5Tc"] > article > .title.dn-headline--subhead[data-v-6d246014=""]`
+- `a[data-id="6-1-ylChi5Tc"] > article > .meta`
+- `a[data-id="6-1-ylChi5Tc"] > article > .badge > span`
 - `.dn-group[disallowadsbelow="false"]:nth-child(4)`
-- `a[data-id="2-1-1973733"]`
-- `a[data-id="2-1-1963167"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
-- `a[data-id="2-1-1963167"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
-- `a[data-id="2-1-1963167"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-6d246014=""]`
-- `a[data-id="2-1-1963167"] > article[data-teaser_type="cpp-article-dn"] > .meta`
-- `a[data-id="2-1-1980512"]`
-- `.layout-bbb.dn-grid.dn-grid-layout:nth-child(2)`
+- `.dn-group[disallowadsbelow="false"]:nth-child(5) > .layout-abb.dn-grid.dn-grid-layout`
+- `.dn-group[disallowadsbelow="false"]:nth-child(5) > .layout-bbb.dn-grid.dn-grid-layout`
 - `a[data-id="6-1-hVx3xG72"] > article > .dn-card_assets > .default[data-load="eager"][type="picture"]`
 - `a[data-id="6-1-hVx3xG72"] > article > .title.dn-headline--subhead[data-v-6d246014=""]`
 - `a[data-id="2-1-1979753"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
@@ -194,10 +193,14 @@
 - `a[data-id="2-1-1979753"] > article[data-teaser_type="cpp-article-dn"] > .meta`
 - `a[data-id="2-1-1976759"]`
 - `a[data-id="2-1-1980540"]`
-- `.dn-group[disallowadsbelow="false"]:nth-child(7) > .layout-ab.dn-grid.dn-grid-layout`
+- `a[data-id="2-1-1963167"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
+- `a[data-id="2-1-1963167"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
+- `a[data-id="2-1-1963167"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-6d246014=""]`
+- `a[data-id="2-1-1963167"] > article[data-teaser_type="cpp-article-dn"] > .meta`
+- `a[data-id="2-1-1956761"]`
+- `a[data-id="2-1-1911293"]`
 - `div[grouptype="Audience Engagement 1"]`
 - `div[disallowadsbelow="true"]`
-- `.layout-a.dn-grid.dn-grid-layout:nth-child(13)`
 - `a[data-id="2-1-1972203"]`
 - `a[data-id="2-1-1977630"]`
 - `a[data-id="2-1-1977568"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
@@ -207,10 +210,7 @@
 - `a[data-id="6-1-xbyiKGdw"] > article > .dn-card_assets > .default[type="picture"][data-load="lazy"]`
 - `a[data-id="6-1-xbyiKGdw"] > article > .title.dn-headline--subhead[data-v-6d246014=""]`
 - `a[data-id="6-1-xbyiKGdw"] > article > .meta`
-- `a[href$="dnjobb.no/"] > span`
-- `.dn-job-button`
-- `.dn-job-carousel`
-- `a[data-id="2-1-1976149"]`
+- `.layout-aa`
 - `a[data-id="6-1-364NGwSH"] > article > .dn-card_assets > .default[type="picture"][data-load="lazy"]`
 - `a[data-id="6-1-364NGwSH"] > article > .title.dn-headline--subhead[data-v-6d246014=""]`
 - `a[data-id="6-1-364NGwSH"] > article > .meta`
@@ -222,9 +222,10 @@
 - `a[data-id="2-1-1980332"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
 - `a[data-id="2-1-1980332"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-6d246014=""]`
 - `a[data-id="2-1-1980332"] > article[data-teaser_type="cpp-article-dn"] > .meta`
-- `a[data-id="2-1-1978701"]`
-- `.layout-ab.dn-grid.dn-grid-layout:nth-child(18)`
-- `.layout-a.dn-grid.dn-grid-layout:nth-child(19)`
+- `a[href$="dnjobb.no/"] > span`
+- `.dn-job-button`
+- `.dn-job-carousel`
+- `.layout-bab.dn-grid.dn-grid-layout:nth-child(17)`
 - `a[data-id="2-1-1976901"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
 - `a[data-id="2-1-1976901"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
 - `a[data-id="2-1-1976901"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-6d246014=""]`

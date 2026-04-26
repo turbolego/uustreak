@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-04-25T20:29:11.932Z
+**Timestamp:** 2026-04-26T01:09:00.664Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -30,32 +30,32 @@
 #### Affected Elements:
 
 - `.h2.e0.e1 > div > div`
-- `.h4.am[href$="nyheter"]`
+- `a[href$="dagskupp"]`
 - `li:nth-child(1) > .ic.id[aria-label="Trolltunga skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `li:nth-child(1) > .ic.id[aria-label="Trolltunga skalljakke"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(2) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(2) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `li:nth-child(3) > .ic.id[aria-label="Trolltunga skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `li:nth-child(3) > .ic.id[aria-label="Trolltunga skalljakke"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `a[aria-label="Trolltunga skallbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Trolltunga skallbukse"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `a[aria-label="Rjukan sammenleggbare gåstaver"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Rjukan sammenleggbare gåstaver"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `li:nth-child(4) > .ic.id[aria-label="Trolltunga skallbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `li:nth-child(4) > .ic.id[aria-label="Trolltunga skallbukse"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `li:nth-child(5) > .ic.id[aria-label="Trolltunga skallbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `li:nth-child(5) > .ic.id[aria-label="Trolltunga skallbukse"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `li:nth-child(1) > .ic.id[aria-label="Lindum sneaker"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `li:nth-child(1) > .ic.id[aria-label="Lindum sneaker"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `li:nth-child(2) > .ic.id[aria-label="Lindum sneaker"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `li:nth-child(2) > .ic.id[aria-label="Lindum sneaker"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `li:nth-child(4) > .ic.id[aria-label="Kvitfjord skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `li:nth-child(4) > .ic.id[aria-label="Kvitfjord skalljakke"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `li:nth-child(5) > .ic.id[aria-label="Kvitfjord skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `li:nth-child(5) > .ic.id[aria-label="Kvitfjord skalljakke"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Kvitfjord skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Kvitfjord skalljakke"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Urstad kokesett 1L"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Urstad kokesett 1L"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Bergen bambus t-skjorte 2-pack"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Harstad skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Porsanger sherpavest"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Sogndal skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Frydsnuten turbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Sogndal skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Porsanger sherpavest"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
