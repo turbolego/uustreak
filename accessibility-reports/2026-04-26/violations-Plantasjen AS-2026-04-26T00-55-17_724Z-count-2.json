@@ -1,0 +1,70 @@
+{
+  "project": "Plantasjen AS",
+  "timestamp": "2026-04-26T00:55:17.726Z",
+  "url": "https://plantasjen.no/no",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" class=\"absolute right-4 top...\">",
+          "target": [
+            ".top-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"font-ttCommons font-semibold bg-secondary-marigold px-1 md:px-3 py-1 md:py-1 rounded-tl-xl rounded-tr-none rounded-bl-none rounded-br-xl w-fit md:text-md text-xs text-white\">Fast lavpris</span>",
+          "target": [
+            ".max-w-\\[66\\.67\\%\\].flex-\\[0_0_66\\.67\\%\\].lg\\:max-w-\\[25\\%\\]:nth-child(4) > .text-card-foreground.rounded-br-\\[2rem\\].rounded-tl-\\[2rem\\] > .relative > .md\\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\\:px-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.25 (foreground color: #ffffff, background color: #f59700, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ]
+}
