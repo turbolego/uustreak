@@ -23,11 +23,19 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Download latest report list
+      - name: Download latest report list and streak index
         run: |
-          # Try to download report-list.json from gh-pages branch (published site)
+          # Try to download streak-index.json first (compact, O(1) per project lookup)
           mkdir -p historical-data
           
+          if wget -O historical-data/streak-index.json https://turbolego.github.io/uustreak/historical-data/streak-index.json 2>/dev/null; then
+            echo "✓ Downloaded streak-index.json from published site"
+          else
+            echo "⚠ Could not download streak-index.json (may not exist yet)"
+            rm -f historical-data/streak-index.json
+          fi
+
+          # Also download report-list.json as fallback (used if streak-index is absent)
           if wget -O historical-data/report-list.json https://turbolego.github.io/uustreak/historical-data/report-list.json 2>/dev/null; then
             echo "✓ Downloaded report-list.json from published site"
           else
