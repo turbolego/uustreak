@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hurtigruten AS
 
-**Timestamp:** 2026-04-26T01:17:57.368Z
+**Timestamp:** 2026-04-27T08:16:07.700Z
 **URL:** [https://www.hurtigruten.com/nb-no](https://www.hurtigruten.com/nb-no)
 **Total Violations:** 5
 
@@ -16,9 +16,9 @@
 
 #### Affected Elements:
 
-- `.styles_destination__CzdCL > .styles_searchPlannerButton__0vaat[role="tab"][aria-controls="search-planner-tabs"]`
-- `div:nth-child(2) > .styles_searchPlannerButton__0vaat[role="tab"][aria-controls="search-planner-tabs"]`
-- `.styles_duration__yTKnN > .styles_searchPlannerButton__0vaat[role="tab"][aria-controls="search-planner-tabs"]`
+- `.styles_destination__X669e > .styles_searchPlannerButton__2sB9u[role="tab"][aria-controls="search-planner-tabs"]`
+- `div:nth-child(2) > .styles_searchPlannerButton__2sB9u[role="tab"][aria-controls="search-planner-tabs"]`
+- `.styles_duration__HCJMp > .styles_searchPlannerButton__2sB9u[role="tab"][aria-controls="search-planner-tabs"]`
 
 ### Links must have discernible text
 
@@ -30,9 +30,9 @@
 
 #### Affected Elements:
 
-- `.styles_socialLink____6Ka[rel="noopener noreferrer"][target="_blank"]:nth-child(1)`
-- `.styles_socialLink____6Ka[rel="noopener noreferrer"][target="_blank"]:nth-child(2)`
-- `.styles_socialLink____6Ka[rel="noopener noreferrer"][target="_blank"]:nth-child(3)`
+- `.styles_socialLink__zpwBS[rel="noopener noreferrer"][target="_blank"]:nth-child(1)`
+- `.styles_socialLink__zpwBS[rel="noopener noreferrer"][target="_blank"]:nth-child(2)`
+- `.styles_socialLink__zpwBS[rel="noopener noreferrer"][target="_blank"]:nth-child(3)`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
@@ -44,7 +44,7 @@
 
 #### Affected Elements:
 
-- `.styles_contact__PJl2F > ul`
+- `.styles_contact__SnKiK > ul`
 
 ### All page content should be contained by landmarks
 
@@ -52,16 +52,14 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 7
+- **Count:** 5
 
 #### Affected Elements:
 
-- `.bannerStyles_wrapper__VGvtC.bannerStyles_Info___Nb5u[data-testid="banner-wrapper"] > .bannerStyles_iconAndTimer__MQm0C > .bannerStyles_timer__xMXwo[data-testid="banner-timer"]`
-- `.bannerStyles_wrapper__VGvtC.bannerStyles_Info___Nb5u[data-testid="banner-wrapper"] > .bannerStyles_body__R0kzz.bannerStyles_hasTimer__IRx_n`
 - `.promoStyles_lgView__S_OoW > span`
 - `.promoStyles_lgView__S_OoW > .styles_linkButton__ELdsG[rel=""][target="_self"] > .styles_btnInner___iGIh > .styles_btnText__qlsBU`
-- `.styles_newsLetterContainer__oNPsL > .styles_wrapper__7DGG5.no-width-control > div > .styles_mb-xl__6Q3h3`
-- `.styles_newsLetterContainer__oNPsL > .styles_wrapper__7DGG5.no-width-control > div > .styles_mb-2xl__iDToc`
+- `.styles_newsLetterContainer__Rfqfu > .styles_wrapper__LfF0i.no-width-control > div > .styles_titleWrapper__BalEl`
+- `.styles_newsLetterContainer__Rfqfu > .styles_wrapper__LfF0i.no-width-control > div > .styles_contentWrapper__ASMNd`
 - `a[href$="nyhetsbrev"] > .styles_btnInner___iGIh > .styles_btnText__qlsBU`
 
 ### Select element must have an accessible name

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Teknisk Ukeblad Media AS
 
-**Timestamp:** 2026-04-26T01:12:24.085Z
+**Timestamp:** 2026-04-27T08:10:28.878Z
 **URL:** [https://www.tu.no/](https://www.tu.no/)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
 
@@ -17,9 +17,9 @@
 #### Affected Elements:
 
 - `.peer`
-- `.inset-x-0 > .hover\:bg-site-brand-darker.dark\:text-white.dark\:hover\:text-brandNeutral-900`
 - `.gap-4.flex > .bg-transparent.hover\:bg-site-brand-darker.dark\:text-white:nth-child(1)`
 - `.gap-4.flex > .bg-transparent.hover\:bg-site-brand-darker.dark\:text-white:nth-child(2)`
+- `.inset-x-0 > .hover\:bg-site-brand-darker.dark\:text-white.dark\:hover\:text-brandNeutral-900`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -34,17 +34,3 @@
 - `#sp_message_iframe_1441301, .acceptButton`
 - `#sp_message_iframe_1441301, .rejectButton`
 - `#sp_message_iframe_1441301, .customiseButton`
-
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `.object-cover[loading="eager"][height="563"]`
-- `#preamble-570669 > .md\:flex-col.flex-row.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover.duration-700[height="563"]`
-- `#preamble-570603 > .md\:flex-col.flex-row.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover.duration-700[height="563"]`

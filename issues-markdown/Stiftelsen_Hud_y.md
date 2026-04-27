@@ -1,22 +1,10 @@
 # WCAG Violations Report for Stiftelsen Hudøy
 
-**Timestamp:** 2026-04-26T01:07:12.308Z
+**Timestamp:** 2026-04-27T08:05:15.829Z
 **URL:** [https://hudoy.no/#](https://hudoy.no/#)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
-
-### Elements must only use supported ARIA attributes
-
-- **Impact:** critical
-- **Description:** Ensure an element's role supports its ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe, .OverlayBase_module_overlayWrapper__321515a7`
 
 ### Elements must meet minimum color contrast ratio thresholds
 

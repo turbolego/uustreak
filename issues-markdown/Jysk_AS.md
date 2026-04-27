@@ -1,10 +1,25 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-04-26T01:20:32.561Z
+**Timestamp:** 2026-04-27T08:18:46.792Z
 **URL:** [https://jysk.no/#](https://jysk.no/#)
-**Total Violations:** 1
+**Total Violations:** 2
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 4
+
+#### Affected Elements:
+
+- `.jysk-promo-primary > span`
+- `.jysk-promo-secondary:nth-child(2) > span > strong`
+- `.jysk-promo-secondary:nth-child(3) > span`
+- `.field.field--name-body.field--type-text-with-summary > p:nth-child(4) > span`
 
 ### All page content should be contained by landmarks
 
@@ -12,17 +27,8 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 10
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.col.mb-md-0.col-md-3:nth-child(1) > .usp.text-decoration-none[href$="om-jysk"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
-- `.col.mb-md-0.col-md-3:nth-child(2) > .usp.text-decoration-none[href$="om-jysk"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
-- `.col.mb-md-0.col-md-3:nth-child(3) > .usp.text-decoration-none.d-block > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
-- `.usp.text-decoration-none[href$="fast-lav-pris"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
-- `.newsletter__header`
-- `.newsletter__fields > .mb-3.required-label`
-- `.newsletter__fields > div:nth-child(2)`
-- `.newsletter__fields > div:nth-child(3)`
-- `#edit-terms`
-- `label[for="edit-terms"]`
+- `#notification`

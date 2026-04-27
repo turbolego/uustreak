@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-04-26T01:21:45.651Z
+**Timestamp:** 2026-04-27T08:19:58.304Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -24,24 +24,12 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.ns`
-
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
 - **Count:** 2
 
 #### Affected Elements:
 
-- `img[alt="Dundyner 50%"]`
-- `img[alt="Dunputer 50%"]`
+- `div:nth-child(7) > .mf.mg.mh > .n1.n2.ge > .fx.bx > div > div > .n3.ml.n2 > .n2.bx > .n4.gg.gf > .k0.gj.gk`
+- `div:nth-child(10) > .mf.mg.mh > .n1.n2.ge > .fx.bx > div > div > .n3.ml.n2 > .n2.bx > .n4.gg.gf > .k0.gj.gk`
 
 ### Document should not have more than one banner landmark
 
@@ -66,7 +54,7 @@
 #### Affected Elements:
 
 - `#coiOverlay`
-- `div:nth-child(2) > .h3.h4.h5 > .h9.ha.hb > .al > .b[role="region"][aria-roledescription="carousel"]`
+- `.js.jt.bd:nth-child(1) > .bk.c.b > .bv.bn.ep > .k4.di[role="region"]`
 
 ### Links must have discernible text
 
@@ -78,12 +66,12 @@
 
 #### Affected Elements:
 
-- `.my:nth-child(1) > .bx > .mw.n1.n2 > .f4.f.gd`
-- `.my:nth-child(2) > .bx > .mw.n1.n2 > .f4.f.gd`
-- `.my:nth-child(3) > .bx > .mw.n1.n2 > .f4.f.gd`
-- `.f4.f[href$="rengjoring"]`
-- `.f4.f[href$="sommerdyner"]`
-- `.f4.f[href$="barnerom"]`
+- `div:nth-child(8) > .n5.n6.me > .n7:nth-child(1) > .bx > .hq.m5.m6 > .f4.f.cf`
+- `div:nth-child(8) > .n5.n6.me > .n7:nth-child(2) > .bx > .hq.m5.m6 > .f4.f.cf`
+- `div:nth-child(8) > .n5.n6.me > .n7:nth-child(3) > .bx > .hq.m5.m6 > .f4.f.cf`
+- `.f4.f[href$="palermo"]`
+- `.f4.f[href$="capri"]`
+- `.f4.f[href$="hageputer"]`
 
 ### All page content should be contained by landmarks
 
@@ -97,6 +85,6 @@
 
 - `#skip-to-main-content`
 - `#usp-rotator-instructions`
-- `.bo > div:nth-child(2)`
+- `.bp > div:nth-child(2)`
 - `.tf-header-slider`
 - `.tf-sidebar`
