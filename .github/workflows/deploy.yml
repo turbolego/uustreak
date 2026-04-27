@@ -272,6 +272,33 @@ jobs:
         with:
           ref: gh-pages
           path: gh-pages-branch
+      - name: Check disk space and pre-clean runner caches
+        run: |
+          echo "=== Disk usage before deploy ==="
+          df -h || true
+          echo "=== Pre-clean common caches ==="
+          # npm caches
+          rm -rf ~/.npm ~/.cache/npm /tmp/npm-cache-* /tmp/npm-prefix-* 2>/dev/null || true
+          # Playwright browser cache can be very large on persistent runners
+          rm -rf "$HOME/.cache/ms-playwright" 2>/dev/null || true
+          # pip caches (Linux/macOS)
+          rm -rf "$HOME/Library/Caches/pip" "$HOME/.cache/pip" 2>/dev/null || true
+          # Homebrew caches (macOS, no-op on Ubuntu)
+          if command -v brew >/dev/null 2>&1; then
+            brew cleanup -s || true
+            BREW_CACHE=$(brew --cache 2>/dev/null || true)
+            if [ -n "$BREW_CACHE" ]; then
+              rm -rf "$BREW_CACHE" 2>/dev/null || true
+            fi
+          fi
+          echo "=== Disk usage after pre-clean ==="
+          df -h || true
+          # Fail fast if less than 2 GB free (in 1 KB blocks)
+          FREE_KB=$(df -Pk . | awk 'NR==2 {print $4}')
+          if [ -n "$FREE_KB" ] && [ "$FREE_KB" -lt 2097152 ]; then
+            echo "❌ Less than 2 GB free on runner — aborting to avoid partial deploy."
+            exit 1
+          fi
       - name: Download all artifacts
         uses: actions/download-artifact@v8
         with:
