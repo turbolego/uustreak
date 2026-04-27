@@ -32,9 +32,33 @@ async function trackAchievements() {
         const projectsPath = path.join(process.cwd(), 'projects.json');
         const projects = JSON.parse(fs.readFileSync(projectsPath, 'utf8'));
 
-        // Read report-list.json to analyze streaks
-        const reportListPath = path.join(process.cwd(), 'historical-data', 'report-list.json');
-        const reportList = JSON.parse(fs.readFileSync(reportListPath, 'utf8'));
+        // Prefer the compact streak-index.json (one entry per project×date) over the
+        // full report-list.json (one entry per file path).  The streak-index is built
+        // incrementally by the deploy workflow so it never needs to be rebuilt in full.
+        const streakIndexPath = path.join(process.cwd(), 'historical-data', 'streak-index.json');
+        const reportListPath  = path.join(process.cwd(), 'historical-data', 'report-list.json');
+
+        let useStreakIndex = false;
+        let streakIndex = null;
+        let reportList  = null;
+
+        if (fs.existsSync(streakIndexPath)) {
+            try {
+                streakIndex = JSON.parse(fs.readFileSync(streakIndexPath, 'utf8'));
+                useStreakIndex = true;
+                const projectCount = Object.keys(streakIndex).length;
+                const totalEntries = Object.values(streakIndex)
+                    .reduce((sum, dates) => sum + Object.keys(dates).length, 0);
+                console.log(`Using streak-index.json: ${projectCount} projects, ${totalEntries} date entries`);
+            } catch (e) {
+                console.warn('Could not parse streak-index.json, falling back to report-list.json:', e.message);
+            }
+        }
+
+        if (!useStreakIndex) {
+            reportList = JSON.parse(fs.readFileSync(reportListPath, 'utf8'));
+            console.log(`Using report-list.json: ${reportList.length} entries`);
+        }
 
         // Get today's date
         const today = new Date().toISOString().split('T')[0];
@@ -48,8 +72,11 @@ async function trackAchievements() {
         for (const project of projects) {
             const achievements = project.achievements || [];
 
-            // Calculate current streak (now returns {days, startDate, longestStreak, longestStreakStart})
-            const streakResult = calculateStreak(project.name, reportList);
+            // Calculate current streak
+            const streakResult = useStreakIndex
+                ? calculateStreakFromIndex(project.name, streakIndex)
+                : calculateStreak(project.name, reportList);
+
             const streak = streakResult.days;
             const streakStartDate = streakResult.startDate;
             const longestStreak = streakResult.longestStreak;
@@ -92,6 +119,55 @@ async function trackAchievements() {
         console.error('❌ Error tracking achievements:', error);
         process.exit(1);
     }
+}
+
+/**
+ * Calculate current no-violations streak using the compact streak-index.json.
+ * streak-index format: { projectName: { "YYYY-MM-DD": violationCount, ... } }
+ * Processed in date-sorted batches to stay efficient for large histories.
+ * @param {string} projectName
+ * @param {object} streakIndex
+ * @returns {object} {days, startDate, longestStreak, longestStreakStart}
+ */
+function calculateStreakFromIndex(projectName, streakIndex) {
+    const dateMap = streakIndex[projectName] || {};
+    // Process dates in descending order (newest first), batched
+    const BATCH_SIZE = 500;
+    const dates = Object.keys(dateMap).sort().reverse();
+
+    if (dates.length === 0) return { days: 0, startDate: null, longestStreak: 0, longestStreakStart: null };
+
+    let currentStreak = 0;
+    let currentStreakStartDate = null;
+    let longestStreak = 0;
+    let longestStreakStart = null;
+    let currentDate = new Date(new Date().toISOString().split('T')[0]);
+    let done = false;
+
+    for (let batchStart = 0; batchStart < dates.length && !done; batchStart += BATCH_SIZE) {
+        const batch = dates.slice(batchStart, batchStart + BATCH_SIZE);
+        for (const dateStr of batch) {
+            const reportDate = new Date(dateStr);
+            const daysDiff = Math.floor((currentDate - reportDate) / (1000 * 60 * 60 * 24));
+
+            if (daysDiff > 1 && currentStreak === 0) { done = true; break; }
+
+            if (dateMap[dateStr] === 0) {
+                currentStreak++;
+                currentStreakStartDate = dateStr;
+                currentDate = new Date(reportDate);
+                currentDate.setDate(currentDate.getDate() - 1);
+                if (currentStreak > longestStreak) {
+                    longestStreak = currentStreak;
+                    longestStreakStart = currentStreakStartDate;
+                }
+            } else {
+                done = true; break;
+            }
+        }
+    }
+
+    return { days: currentStreak, startDate: currentStreakStartDate, longestStreak, longestStreakStart };
 }
 
 /**

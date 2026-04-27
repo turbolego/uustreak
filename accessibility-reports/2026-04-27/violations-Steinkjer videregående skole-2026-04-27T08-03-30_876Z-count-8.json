@@ -1,0 +1,727 @@
+{
+  "project": "Steinkjer videregående skole",
+  "timestamp": "2026-04-27T08:03:30.879Z",
+  "url": "https://web.trondelagfylke.no/steinkjer-videregaende-skole/#",
+  "total_violations": 8,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" tabindex=\"0\" onclick=\"CookieInformation.declineAllCategories()\" aria-label=\"Avvis alle\" id=\"declineButton\" class=\"coi-banner__decline\" role=\"alert\" aria-atomic=\"true\" style=\"display: flex;\">\n            Avvis alle\n          </button>",
+          "target": [
+            "#declineButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role alert is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "aria-progressbar-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA progressbar node has an accessible name",
+      "help": "ARIA progressbar nodes must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-progressbar-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag111",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "RGAAv4",
+        "RGAA-11.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"img _55ym _55yn _55yo\" aria-busy=\"true\" role=\"progressbar\" aria-valuemin=\"0\" aria-valuemax=\"100\" aria-valuetext=\"Loading...\"></span>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "._55yn"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "aria-required-children",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-required-children?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div role=\"feed\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "div[role=\"feed\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: table[tabindex], a[tabindex], img[tabindex], [role=button]"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"timestampContent\">on Friday</span>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "abbr[data-utime=\"1777045947\"] > .timestampContent"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.04 (foreground color: #90949c, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<nav class=\"top-menu top-menu--school u-hide-tablet-landscape-down\">",
+          "target": [
+            ".top-menu"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 9,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.facebook.com/steinkjervgs?ref=embed_page\" target=\"_blank\" id=\"u_0_1_Ti\"></a>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_0_1_Ti"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"_3-8_ lfloat\" href=\"https://www.facebook.com/289355574674?ref=embed_page\" target=\"_blank\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            ".lfloat._3-8_[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/steinkjervgs/posts/pfbid0ANe9MnibXwmokdSDqcmvkEmY8Fu29LaFS7bt5qG4U8JSgLHify9EFcJKPeiVFrHnl?ref=embed_page\" target=\"_blank\"><i class=\"img sp_0dpO6AyRzTf sx_8033cd\"></i></a>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_5_P3 > ._5pcr.userContentWrapper[data-ft=\"{\\\"tn\\\":\\\"-R\\\"}\"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/steinkjervgs/posts/pfbid02AoDH2Adiz6A8n6veRu5jdviP2MN6xaJZy3fidWaL7bLT5ccyvFgeuwu2h86MTEcCl?ref=embed_page\" target=\"_blank\"><i class=\"img sp_0dpO6AyRzTf sx_8033cd\"></i></a>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_f_3w > ._5pcr.userContentWrapper[data-ft=\"{\\\"tn\\\":\\\"-R\\\"}\"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/steinkjervgs/posts/pfbid0bvx4AbjcJ9RgjgHYhrmDoHkxmFv627YLCYFexTeXZ1bt7pvAN7yFAEDbWj2cvmxWl?ref=embed_page\" target=\"_blank\"><i class=\"img sp_0dpO6AyRzTf sx_8033cd\"></i></a>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_i_hv > ._5pcr.userContentWrapper[data-ft=\"{\\\"tn\\\":\\\"-R\\\"}\"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/steinkjervgs/posts/pfbid02wfUGVLTYBATvoXPPnA4H2Lv9GUsmo5o5KHrma6fdSz8SUVBoAYML7MC9asewY74Gl?ref=embed_page\" target=\"_blank\"><i class=\"img sp_0dpO6AyRzTf sx_8033cd\"></i></a>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_6_z1 > ._5pcr.userContentWrapper[data-ft=\"{\\\"tn\\\":\\\"-R\\\"}\"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.facebook.com/photo.php?fbid=1572503111553591&set=gm.976988681943999&type=3&ref=embed_page\" target=\"_blank\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            ".mts > div[data-ft=\"{\\\"tn\\\":\\\"H\\\"}\"] > .mtm > ._2l7q > a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.facebook.com/photo.php?fbid=1757848538512179&set=a.687974088832968&type=3&ref=embed_page\" target=\"_blank\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "._2p_a > div[data-ft=\"{\\\"tn\\\":\\\"H\\\"}\"] > .mtm > ._2l7q > a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/steinkjervgs/posts/pfbid09kiCR7Qk6smJuFuPoi7Hfko8aAiVk6kgEbyzz8yp2DNaehWE6MTrkCsW8Rc5NnBxl?ref=embed_page\" target=\"_blank\"><i class=\"img sp_0dpO6AyRzTf sx_8033cd\"></i></a>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 57,
+      "nodes": [
+        {
+          "html": "<figure class=\"hero-image\" data-object-fit=\"\">\n    <img src=\"/globalassets/bilder/steinkjervideregaendeskole/fellesbilde-alle_steinkjer_2024_2.jpg?width=1280\" alt=\"Fellesbilde elever og ansatte 2024 Steinkjer videregående skole Foto: Reed Foto\" class=\"hero-image__image\">\n</figure>",
+          "target": [
+            ".hero-image"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"featured-section u-mg-bottom-base u-mg-bottom-xl@tablet-landscape-up\">",
+          "target": [
+            "section"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card-grid card-grid--equal-height\">",
+          "target": [
+            ".card-grid.card-grid--equal-height:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card-grid card-grid--equal-height\">",
+          "target": [
+            ".card-grid.card-grid--equal-height:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card-grid__item\">",
+          "target": [
+            ".card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card__tag\">\n           Se oss på Facebook\n        </div>",
+          "target": [
+            ".card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(2) > .card.card-grid--equal-height > .card__tag"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_2lqh\" style=\"max-height: 70px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "._2lqh"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_3dp _29k\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_5_P3 > ._5pcr.userContentWrapper[data-ft=\"{\\\"tn\\\":\\\"-R\\\"}\"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"uiScaledImageContainer\" style=\"width:172px;height:172px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_1a_78 > .uiScaledImageContainer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"uiScaledImageContainer\" style=\"width:171px;height:172px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_17_ib > .uiScaledImageContainer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_46-h\" style=\"width:114px;height:114px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_1b_JE > ._46-h"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_46-h\" style=\"width:113px;height:114px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_19_fG > ._46-h"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_46-h\" style=\"width:114px;height:114px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_18_CR > ._46-h"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_52d9\"><div class=\"_52da\"><div class=\"_52db\">+13</div></div></div>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_18_CR > ._52d9"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"_1nb_\" data-ft=\"{\"tn\":\"C\"}\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_5_P3 > ._5pcr.userContentWrapper[data-ft=\"{\\\"tn\\\":\\\"-R\\\"}\"] > ._1dwg._1w_m._q7o > div:nth-child(3) > ._3x-2[data-ft=\"{\\\"tn\\\":\\\"H\\\"}\"] > div:nth-child(2) > ._5r69._sds._1hvl > .mts > ._5pcm.mtm > ._1nb_[data-ft=\"{\\\"tn\\\":\\\"C\\\"}\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_1atc fsm fwn fcg\"><span class=\"fcg\">1,537 followers</span></div>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#feed_subtitle_1579269280867317\\:4\\:0 > ._1atc.fsm.fwn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"z_c3pyo1brp\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#feed_subtitle_1579269280867317\\:4\\:0 > .z_c3pyo1brp"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>En uke hvor det kun har vært vi på vg1 i produksjon.</p>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#id_69ef184b2cd039f67002975 > p:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p> Ukens menyer har vi selv satt opp – mye læring i menyplanlegging, valg av oppskrifter og gode smakskombinas<span class=\"text_exposed_hide\">...</span><span class=\"text_exposed_show\">joner.</span></p>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#id_69ef184b2cd039f67002975 > p:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td class=\"_51m- prl _435r\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_9_1b > table > tbody > tr > ._435r:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td class=\"_51m- prl _51mw\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_9_1b > table > tbody > tr > ._51mw"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_3dp _29k\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_f_3w > ._5pcr.userContentWrapper[data-ft=\"{\\\"tn\\\":\\\"-R\\\"}\"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#id_69ef184b2d0223d60724493 > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"text_exposed_hide\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#id_69ef184b2d0223d60724493 > .text_exposed_hide"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"uiScaledImageContainer\" style=\"width:172px;height:172px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_14_GU > .uiScaledImageContainer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_46-h\" style=\"width:172px;height:171px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_10_Bd > ._46-h"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_46-h\" style=\"width:171px;height:114px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_x_I4 > ._46-h"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_46-h\" style=\"width:171px;height:113px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_13_0i > ._46-h"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"uiScaledImageContainer\" style=\"width:171px;height:114px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_v_gr > .uiScaledImageContainer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_52d9\"><div class=\"_52da\"><div class=\"_52db\">+3</div></div></div>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_v_gr > ._52d9"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td class=\"_51m- prl _435r\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_j_00 > table > tbody > tr > ._435r:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td class=\"_51m- prl _51mw\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_j_00 > table > tbody > tr > ._51mw"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_3dp _29k\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_i_hv > ._5pcr.userContentWrapper[data-ft=\"{\\\"tn\\\":\\\"-R\\\"}\"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#id_69ef184b2d2f84e35630889 > p:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#id_69ef184b2d2f84e35630889 > p:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"text_exposed_hide\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#id_69ef184b2d2f84e35630889 > .text_exposed_hide"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"uiScaledImageContainer\" style=\"width:172px;height:172px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_w_Zc > .uiScaledImageContainer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_46-h\" style=\"width:172px;height:171px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_z_De > ._46-h"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_46-h\" style=\"width:171px;height:114px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_y_we > ._46-h"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_46-h\" style=\"width:171px;height:113px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_12_O5 > ._46-h"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_46-h\" style=\"width:171px;height:114px;\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_11_IP > ._46-h"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_52d9\"><div class=\"_52da\"><div class=\"_52db\">+39</div></div></div>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_11_IP > ._52d9"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td class=\"_51m- prl _435r\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_s_jt > table > tbody > tr > ._435r:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td class=\"_51m- prl _51mw\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_s_jt > table > tbody > tr > ._51mw"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_3dp _29k\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_6_z1 > ._5pcr.userContentWrapper[data-ft=\"{\\\"tn\\\":\\\"-R\\\"}\"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"_1nb_\" data-ft=\"{\"tn\":\"C\"}\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_6_z1 > ._5pcr.userContentWrapper[data-ft=\"{\\\"tn\\\":\\\"-R\\\"}\"] > ._1dwg._1w_m._q7o > div:nth-child(3) > ._3x-2[data-ft=\"{\\\"tn\\\":\\\"H\\\"}\"] > div:nth-child(2) > ._5r69._sds._1hvl > .mts > ._5pcm.mtm > ._1nb_[data-ft=\"{\\\"tn\\\":\\\"C\\\"}\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_1atc fsm fwn fcg\"><span class=\"fcg\">365 followers</span></div>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#feed_subtitle_976988681943999\\:4\\:0 > ._1atc.fsm.fwn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"z_c3pyo1brp\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#feed_subtitle_976988681943999\\:4\\:0 > .z_c3pyo1brp"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td class=\"_51m- prl _435r\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_c_KD > table > tbody > tr > ._435r:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td class=\"_51m- prl _51mw\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_c_KD > table > tbody > tr > ._51mw"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_3dp _29k\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-testid=\"post_message\" class=\"_5pbx userContent _3576\" data-ft=\"{\"tn\":\"K\"}\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "div:nth-child(2) > ._5pbx._3576[data-testid=\"post_message\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td class=\"_51m- prl _435r\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_m_Wq > table > tbody > tr > ._435r:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<td class=\"_51m- prl _51mw\">",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_m_Wq > table > tbody > tr > ._51mw"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_2f7y\" id=\"u_1_1e_qF\"><span class=\"img _55ym _55yn _55yo\" aria-busy=\"true\" role=\"progressbar\" aria-valuemin=\"0\" aria-valuemax=\"100\" aria-valuetext=\"Loading...\"></span></div>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "#u_1_1e_qF"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"_1_lj\" href=\"https://www.facebook.com/289355574674?ref=embed_page\" target=\"_blank\"><div class=\"_h7n _3-8x _2ph-\"><span class=\"_50f3 _50f7\">Find us on Facebook</span><i class=\"_h7o img sp_0dpO6AyRzTf sx_4b733c\"></i></div></a>",
+          "target": [
+            "iframe[name=\"f18d2ed34c7dce67d\"]",
+            "._1_lj"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"card-grid__item\">",
+          "target": [
+            ".card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
