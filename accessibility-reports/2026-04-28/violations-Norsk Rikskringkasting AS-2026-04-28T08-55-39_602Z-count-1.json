@@ -1,0 +1,39 @@
+{
+  "project": "Norsk Rikskringkasting AS",
+  "timestamp": "2026-04-28T08:55:39.605Z",
+  "url": "https://www.nrk.no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<p class=\"_dh-fotballvm-2026-formkurva-v1_lag--tittel__dato\">Landslaget nå:</p>",
+          "target": [
+            "._dh-fotballvm-2026-formkurva-v1_lag--tittel__dato"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.44 (foreground color: #37b359, background color: #e8f7eb, font size: 11.1pt (14.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ]
+}

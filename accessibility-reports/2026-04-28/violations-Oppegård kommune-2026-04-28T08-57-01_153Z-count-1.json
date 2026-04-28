@@ -1,0 +1,38 @@
+{
+  "project": "Oppegård kommune",
+  "timestamp": "2026-04-28T08:57:01.160Z",
+  "url": "https://www.nordrefollo.kommune.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h2 class=\"font-weight-normal font-size--16 mr-5 mb-0 d-none d-sm-inline-block\"></h2>",
+          "target": [
+            ".mr-5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<h2 id=\"focus__text-4041\" class=\"font-weight--600 text-decoration--underline line-height--1-5\"></h2>",
+          "target": [
+            "#focus__text-4041"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}
