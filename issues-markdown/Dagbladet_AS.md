@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-04-27T07:58:26.996Z
+**Timestamp:** 2026-04-28T04:28:10.239Z
 **URL:** [https://www.dagbladet.no/#](https://www.dagbladet.no/#)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 5
+- **Count:** 7
 
 #### Affected Elements:
 
@@ -21,6 +21,8 @@
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(4) > .song-author.svelte-1mbdfa7`
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(5) > .song-title.svelte-1mbdfa7`
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(5) > .song-author.svelte-1mbdfa7`
+- `.t74`
+- `.tm82`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -33,18 +35,6 @@
 #### Affected Elements:
 
 - `.jkuUMO`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `article[data-instance="84544445"] > .color_mobile_bg-yellow.hasContentPadding.mobile-hasContentPadding > a[itemprop="url"][rel=""]`
 
 ### All page content should be contained by landmarks
 

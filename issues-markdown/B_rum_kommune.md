@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bærum kommune
 
-**Timestamp:** 2026-04-27T07:50:32.709Z
+**Timestamp:** 2026-04-28T04:20:41.573Z
 **URL:** [https://www.baerum.kommune.no/#](https://www.baerum.kommune.no/#)
 **Total Violations:** 2
 
@@ -12,12 +12,11 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.is-petroleum > .pageBoundary > .article-teasers > .article-teaser > .article-teaser__image > img`
-- `.is-purple > .pageBoundary > .article-teasers > .article-teaser > .article-teaser__image > img`
+- `.article-teaser__image > img`
 
 ### Links must have discernible text
 

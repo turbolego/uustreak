@@ -1,23 +1,10 @@
 # WCAG Violations Report for Dressmann AS
 
-**Timestamp:** 2026-04-27T08:03:39.815Z
+**Timestamp:** 2026-04-28T04:33:17.098Z
 **URL:** [https://dressmann.com/no/#](https://dressmann.com/no/#)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `a:nth-child(1) > strong`
-- `a:nth-child(2) > strong`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

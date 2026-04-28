@@ -1,8 +1,8 @@
 # WCAG Violations Report for Color Line AS
 
-**Timestamp:** 2026-04-27T07:56:53.272Z
+**Timestamp:** 2026-04-28T04:26:39.364Z
 **URL:** [https://www.colorline.no/#](https://www.colorline.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `#declineButton`
+
+### Documents must have <title> element to aid in navigation
+
+- **Impact:** serious
+- **Description:** Ensure each HTML document contains a non-empty <title> element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/document-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag242, TTv5, TT12.a, EN-301-549, EN-9.2.4.2, ACT, RGAAv4, RGAA-8.5.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

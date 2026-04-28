@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-04-27T08:02:28.706Z
+**Timestamp:** 2026-04-28T04:33:05.068Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
 **Total Violations:** 7
 
@@ -38,10 +38,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 4
+- **Count:** 5
 
 #### Affected Elements:
 
+- `article[data-pulse-entity-id="Alekn3"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section`
 - `.memo > .text-container > h3`
 - `.kryssord > .text-container > h3`
 - `.minikryss > .text-container > h3`
@@ -99,7 +100,7 @@
 - `h1`
 - `.collage-x3.row:nth-child(1)`
 - `.collage-x3.row:nth-child(3)`
-- `#dr-edition-teaser-t2s8s48c > div`
+- `#dr-edition-teaser-htwc9zgw3 > div`
 - `._heading_1166k_647 > span`
 - `._preview_1166k_667:nth-child(1) > a > ._preview-image_1166k_715[loading="lazy"]`
 - `._preview_1166k_667:nth-child(1) > a > ._preview-title_1166k_727`
@@ -121,56 +122,56 @@
 - `._preview_1166k_667:nth-child(9) > a > ._preview-title_1166k_727`
 - `._preview_1166k_667:nth-child(10) > a > ._preview-image_1166k_715[loading="lazy"]`
 - `._preview_1166k_667:nth-child(10) > a > ._preview-title_1166k_727`
-- `.collage-x4`
-- `.collage-x3.row:nth-child(13)`
+- `.vertical-x3.row:nth-child(11)`
+- `.collage-x4.row:nth-child(13)`
 - `.sa-frontboks-button-bottom-right > .svelte-r1njzg:nth-child(1)`
 - `.vertical-x2.row:nth-child(17)`
-- `.vertical-x3.row:nth-child(18)`
+- `.collage-x4.row:nth-child(18)`
 - `.collage-x3.row:nth-child(20)`
 - `.hjernetrim-front-widget`
-- `.vertical-x2.row:nth-child(24)`
-- `.vertical-x3.row:nth-child(26)`
+- `.vertical-x3.row:nth-child(24)`
+- `.vertical-x2.row:nth-child(26)`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
 - `.podcast-spons`
-- `.vertical-x2.row:nth-child(28)`
+- `.vertical-x4`
 - `.widget-football.regional-widget`
-- `.vertical-x4.row:nth-child(30)`
-- `.vertical-x3.row:nth-child(32)`
-- `.collage-x3.row:nth-child(35)`
+- `.vertical-x2.row:nth-child(30)`
+- `.collage-x3.row:nth-child(32)`
+- `.vertical-x3.row:nth-child(35)`
 - `.widget-bolig.regional-widget`
-- `.vertical-x2.row:nth-child(37)`
-- `.vertical-x3.row:nth-child(38)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(40)`
+- `.collage-x3.row:nth-child(37)`
 - `.vertical-small-x2`
-- `.vertical-x2.row:nth-child(43)`
-- `.collage-x3.row:nth-child(44)`
-- `.vertical-x2.row:nth-child(45)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(40)`
+- `.vertical-x3.row:nth-child(41)`
+- `.collage-x3.row:nth-child(43)`
+- `.vertical-x3.row:nth-child(44)`
+- `.collage-x3.row:nth-child(45)`
 - `.vertical-x1-ad.row:nth-child(46)`
-- `.collage-x3.row:nth-child(47)`
-- `.vertical-x2.row:nth-child(48)`
+- `.vertical-x2.row:nth-child(47)`
+- `.vertical-x3.row:nth-child(48)`
 - `.vertical-x1-ad.row:nth-child(49)`
-- `.collage-x3.row:nth-child(50)`
+- `.display-flex > .article__text-container`
 - `.vertical-x2.row:nth-child(51)`
 - `.vertical-x3.row:nth-child(52)`
-- `.vertical-x2.row:nth-child(53)`
-- `.vertical-x4.row:nth-child(54)`
-- `.collage-x3.row:nth-child(55)`
+- `.collage-x3.row:nth-child(53)`
+- `.vertical-x2.row:nth-child(54)`
+- `.vertical-x3.row:nth-child(55)`
 - `.vertical-x2.row:nth-child(56)`
-- `.vertical-x3.row:nth-child(58)`
+- `.collage-x3.row:nth-child(58)`
 - `#webcam-frontpage`
 - `.vertical-x2.row:nth-child(60)`
-- `.collage-x3.row:nth-child(61)`
+- `.vertical-x3.row:nth-child(61)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(62)`
 - `.vertical-x2.row:nth-child(64)`
 - `.collage-x3.row:nth-child(65)`
 - `.vertical-x2.row:nth-child(66)`
 - `.vertical-x1-ad.row:nth-child(67)`
 - `.collage-x3.row:nth-child(68)`
-- `.vertical-x3.row:nth-child(69)`
-- `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`
+- `.vertical-x2.row:nth-child(69)`
+- `.sch-datacontroller__text`
 
 ### Scrollable region must have keyboard access
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lofotr Vikingmuseum AS
 
-**Timestamp:** 2026-04-27T07:41:41.874Z
+**Timestamp:** 2026-04-28T04:12:27.214Z
 **URL:** [https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/](https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/)
 **Total Violations:** 9
 
@@ -97,8 +97,8 @@
 
 #### Affected Elements:
 
+- `#post-92370 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100`
 - `#post-92279 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100`
-- `#post-92248 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100`
 
 ### All page content should be contained by landmarks
 
@@ -122,5 +122,5 @@
 
 #### Affected Elements:
 
+- `#post-92370 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100 > .h-100[aria-label=""][role="img"]`
 - `#post-92279 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100 > .h-100[aria-label=""][role="img"]`
-- `#post-92248 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100 > .h-100[aria-label=""][role="img"]`
