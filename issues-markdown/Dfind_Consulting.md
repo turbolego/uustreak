@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dfind Consulting
 
-**Timestamp:** 2026-04-28T04:31:53.714Z
+**Timestamp:** 2026-04-28T09:07:32.882Z
 **URL:** [https://dfindconsulting.no/](https://dfindconsulting.no/)
 **Total Violations:** 2
 
@@ -16,12 +16,12 @@
 
 #### Affected Elements:
 
-- `.post-2281`
-- `.post-2278`
-- `.post-2275`
-- `.post-2272`
-- `.post-2269`
-- `.post-2266`
+- `.post-2302`
+- `.post-2299`
+- `.post-2296`
+- `.post-2293`
+- `.post-2290`
+- `.post-2287`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -33,21 +33,21 @@
 
 #### Affected Elements:
 
-- `.post-2281 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
-- `.post-2281 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
-- `.post-2281 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`
-- `.post-2278 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
-- `.post-2278 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
-- `.post-2278 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`
-- `.post-2275 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
-- `.post-2275 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
-- `.post-2275 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`
-- `.post-2272 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
-- `.post-2272 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
-- `.post-2272 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`
-- `.post-2269 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
-- `.post-2269 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
-- `.post-2269 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`
-- `.post-2266 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
-- `.post-2266 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
-- `.post-2266 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`
+- `.post-2302 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
+- `.post-2302 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
+- `.post-2302 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`
+- `.post-2299 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
+- `.post-2299 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
+- `.post-2299 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`
+- `.post-2296 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
+- `.post-2296 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
+- `.post-2296 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`
+- `.post-2293 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
+- `.post-2293 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
+- `.post-2293 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`
+- `.post-2290 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
+- `.post-2290 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
+- `.post-2290 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`
+- `.post-2287 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
+- `.post-2287 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
+- `.post-2287 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`

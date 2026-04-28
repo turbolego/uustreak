@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lofotr Vikingmuseum AS
 
-**Timestamp:** 2026-04-28T04:12:27.214Z
+**Timestamp:** 2026-04-28T08:48:01.786Z
 **URL:** [https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/](https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/)
 **Total Violations:** 9
 
@@ -93,12 +93,11 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
 - `#post-92370 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100`
-- `#post-92279 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100`
 
 ### All page content should be contained by landmarks
 
@@ -118,9 +117,8 @@
 - **Description:** Ensure [role="img"] elements have alternative text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/role-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#post-92370 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100 > .h-100[aria-label=""][role="img"]`
-- `#post-92279 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100 > .h-100[aria-label=""][role="img"]`
+- `div[aria-label=""]`

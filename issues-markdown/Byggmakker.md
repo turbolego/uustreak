@@ -1,6 +1,6 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2026-04-28T04:25:14.308Z
+**Timestamp:** 2026-04-28T09:00:44.793Z
 **URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
 **Total Violations:** 4
 
@@ -18,12 +18,12 @@
 
 - `.product-card.ab_omni_kampaign[data-product_id="7070276047569"]`
 - `.product-card__product-price.prrc[data-product_id="7070276047569"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7071859002395"]`
+- `.product-card__product-price.prrc[data-product_id="7071859002395"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7071859014077"]`
 - `.product-card__product-price.prrc[data-product_id="7071859014077"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7071536016332"]`
 - `.product-card__product-price.prrc[data-product_id="7071536016332"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7090021560297"]`
-- `.product-card__product-price.prrc[data-product_id="7090021560297"]`
 - `.product-card.ab_omni_kampaign[data-price-history="249"]`
 - `.product-card__product-price.prrc[data-price-history="249"]`
 - `.product-card[data-product_id="7311490046090"][data-price-history="449"]`

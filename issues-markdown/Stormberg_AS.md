@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-04-28T04:37:54.741Z
+**Timestamp:** 2026-04-28T09:13:09.788Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -52,10 +52,10 @@
 - `li:nth-child(5) > .ic.id[aria-label="Trolltunga skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `li:nth-child(5) > .ic.id[aria-label="Trolltunga skalljakke"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Porsanger sherpavest"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Bergen bambus t-skjorte 2-pack"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Hinnstein fritidsbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Harstad skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Frydsnuten turbukse barn 1-7"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Hinnstein fritidsbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Bergen bambus t-skjorte 2-pack"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Fjørland lettvekts skallparkas"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
