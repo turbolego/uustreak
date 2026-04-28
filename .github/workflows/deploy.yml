@@ -375,72 +375,77 @@ jobs:
           echo "Contents of gh-pages-branch/accessibility-reports:"
           ls -R gh-pages-branch/accessibility-reports || echo "No JSON reports found"
           
-      - name: Create Gzip Archives for JSON Reports
+      - name: Create Gzip Archive for Today's Reports
         run: |
-          echo "Creating gzip archives for JSON reports by date..."
-          
-          # Find all date directories in accessibility-reports
-          find gh-pages-branch/accessibility-reports -maxdepth 1 -type d -name "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" | while read -r date_dir; do
-            DATE=$(basename "$date_dir")
-            echo "Creating gzip archive for date: $DATE"
-            
-            # Create temporary directory for organizing files
-            TEMP_DIR="temp_$DATE"
-            mkdir -p "$TEMP_DIR"
-            
-            # Copy all JSON files for this date to temp directory
-            if [ -d "$date_dir" ]; then
-              find "$date_dir" -name "*.json" -exec cp {} "$TEMP_DIR/" \;
-              echo "Found $(find "$date_dir" -name "*.json" | wc -l) JSON files for $DATE"
-            fi
-            
-            # Also include summary files for this date if they exist
-            if [ -d "gh-pages-branch/accessibility-reports/summaries/$DATE" ]; then
-              find "gh-pages-branch/accessibility-reports/summaries/$DATE" -name "*.json" -exec cp {} "$TEMP_DIR/" \;
-              echo "Found $(find "gh-pages-branch/accessibility-reports/summaries/$DATE" -name "*.json" | wc -l) summary files for $DATE"
-            fi
-            
-            # Create gzip archive if we have files
-            if [ "$(find "$TEMP_DIR" -name "*.json" | wc -l)" -gt 0 ]; then
-              # Create archive directory
-              mkdir -p "gh-pages-branch/accessibility-reports/archives"
-              
-              # Create tar.gz archive containing all JSON files for this date
-              # Use file list approach to avoid "Argument list too long" error
-              cd "$TEMP_DIR"
-              find . -name "*.json" > filelist.txt
-              tar -czf "../gh-pages-branch/accessibility-reports/archives/reports_$DATE.tar.gz" -T filelist.txt
-              cd ..
-              
-              # Get file size for logging
-              ARCHIVE_SIZE=$(du -h "gh-pages-branch/accessibility-reports/archives/reports_$DATE.tar.gz" | cut -f1)
-              echo "Created archive: reports_$DATE.tar.gz (Size: $ARCHIVE_SIZE)"
-              
-              # Create a manifest file with the list of files in the archive
-              tar -tzf "gh-pages-branch/accessibility-reports/archives/reports_$DATE.tar.gz" | sort > "gh-pages-branch/accessibility-reports/archives/reports_$DATE.manifest"
-              echo "Created manifest: reports_$DATE.manifest"
-            else
-              echo "No JSON files found for $DATE, skipping archive creation"
-            fi
-            
-            # Clean up temp directory
-            rm -rf "$TEMP_DIR"
-          done
-          
-          # Create archive index with metadata
-          echo "Creating archive index..."
-          cd gh-pages-branch/accessibility-reports/archives
-          ls -la *.tar.gz 2>/dev/null | while read -r permissions links owner group size month day time filename; do
-            if [[ "$filename" =~ reports_([0-9]{4}-[0-9]{2}-[0-9]{2})\.tar\.gz ]]; then
-              DATE="${BASH_REMATCH[1]}"
-              FILE_COUNT=$(wc -l < "reports_$DATE.manifest" 2>/dev/null || echo "0")
-              echo "{\"date\":\"$DATE\",\"filename\":\"$filename\",\"size\":\"$size\",\"fileCount\":$FILE_COUNT}"
-            fi
-          done | jq -s 'sort_by(.date) | reverse' > archive_index.json 2>/dev/null || echo "[]" > archive_index.json
-          cd ../../..
-          
-          echo "Archive creation completed. Summary:"
-          ls -la gh-pages-branch/accessibility-reports/archives/ || echo "No archives created"
+          echo "Creating gzip archive for today's JSON reports..."
+          CURRENT_DATE=$(date '+%Y-%m-%d')
+
+          # Only create/update the archive for today's date.
+          # Historical archives already exist in gh-pages from previous runs —
+          # re-creating them would produce identical (or near-identical) tar.gz
+          # files, wasting CPU, disk I/O, and bloating git history.
+          TEMP_DIR="temp_$CURRENT_DATE"
+          mkdir -p "$TEMP_DIR"
+
+          # Copy violation files for today
+          if [ -d "gh-pages-branch/accessibility-reports/$CURRENT_DATE" ]; then
+            find "gh-pages-branch/accessibility-reports/$CURRENT_DATE" -name "*.json" -exec cp {} "$TEMP_DIR/" \;
+            echo "Found $(find "gh-pages-branch/accessibility-reports/$CURRENT_DATE" -name "*.json" | wc -l) violation report files for $CURRENT_DATE"
+          fi
+
+          # Include summary files for today
+          if [ -d "gh-pages-branch/accessibility-reports/summaries/$CURRENT_DATE" ]; then
+            find "gh-pages-branch/accessibility-reports/summaries/$CURRENT_DATE" -name "*.json" -exec cp {} "$TEMP_DIR/" \;
+            echo "Found $(find "gh-pages-branch/accessibility-reports/summaries/$CURRENT_DATE" -name "*.json" | wc -l) summary files for $CURRENT_DATE"
+          fi
+
+          # Create archive if we have files
+          if [ "$(find "$TEMP_DIR" -name "*.json" | wc -l)" -gt 0 ]; then
+            mkdir -p "gh-pages-branch/accessibility-reports/archives"
+
+            cd "$TEMP_DIR"
+            find . -name "*.json" > filelist.txt
+            tar -czf "../gh-pages-branch/accessibility-reports/archives/reports_$CURRENT_DATE.tar.gz" -T filelist.txt
+            cd ..
+
+            ARCHIVE_SIZE=$(du -h "gh-pages-branch/accessibility-reports/archives/reports_$CURRENT_DATE.tar.gz" | cut -f1)
+            echo "Created archive: reports_$CURRENT_DATE.tar.gz (Size: $ARCHIVE_SIZE)"
+
+            tar -tzf "gh-pages-branch/accessibility-reports/archives/reports_$CURRENT_DATE.tar.gz" | sort \
+              > "gh-pages-branch/accessibility-reports/archives/reports_$CURRENT_DATE.manifest"
+            echo "Created manifest: reports_$CURRENT_DATE.manifest"
+          else
+            echo "No JSON files found for $CURRENT_DATE, skipping archive creation"
+          fi
+
+          rm -rf "$TEMP_DIR"
+
+          # Update archive index incrementally (read existing, upsert today's entry)
+          INDEX_FILE="gh-pages-branch/accessibility-reports/archives/archive_index.json"
+
+          if [ -f "$INDEX_FILE" ]; then
+            # Strip today's old entry (if re-running) and keep the rest
+            jq --arg d "$CURRENT_DATE" '[.[] | select(.date != $d)]' "$INDEX_FILE" > /tmp/archive_index_base.json
+          else
+            echo "[]" > /tmp/archive_index_base.json
+          fi
+
+          # Build today's entry and merge it in
+          if [ -f "gh-pages-branch/accessibility-reports/archives/reports_$CURRENT_DATE.tar.gz" ]; then
+            SIZE=$(stat -c%s "gh-pages-branch/accessibility-reports/archives/reports_$CURRENT_DATE.tar.gz" 2>/dev/null || echo "0")
+            FILE_COUNT=$(wc -l < "gh-pages-branch/accessibility-reports/archives/reports_$CURRENT_DATE.manifest" 2>/dev/null | tr -d ' ')
+            jq --arg d "$CURRENT_DATE" \
+               --arg f "reports_$CURRENT_DATE.tar.gz" \
+               --arg s "$SIZE" \
+               --argjson c "${FILE_COUNT:-0}" \
+               '. + [{"date":$d,"filename":$f,"size":$s,"fileCount":$c}] | sort_by(.date) | reverse' \
+               /tmp/archive_index_base.json > "$INDEX_FILE"
+          else
+            cp /tmp/archive_index_base.json "$INDEX_FILE"
+          fi
+
+          rm -f /tmp/archive_index_base.json
+          echo "Archive index updated: $(jq length "$INDEX_FILE") total entries"
           
       - name: Validate and Repair Summary Files
         run: |
