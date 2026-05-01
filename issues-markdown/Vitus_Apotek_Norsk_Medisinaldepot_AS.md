@@ -1,10 +1,22 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-04-28T09:27:43.255Z
+**Timestamp:** 2026-05-01T20:40:00.492Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.cms-recomendations:nth-child(11) > section > div > .carousel[aria-roledescription="carousel"][role="region"]`
 
 ### Links must have discernible text
 

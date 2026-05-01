@@ -1,24 +1,10 @@
 # WCAG Violations Report for Tromsø kommune
 
-**Timestamp:** 2026-04-28T09:20:29.434Z
+**Timestamp:** 2026-05-01T20:32:57.475Z
 **URL:** [https://tromso.kommune.no/#](https://tromso.kommune.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
-
-### ARIA role should be appropriate for the element
-
-- **Impact:** minor
-- **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
-- **Tags:** cat.aria, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `#splide01-slide01`
-- `#splide01-slide02`
-- `#splide01-slide03`
 
 ### Document should not have more than one banner landmark
 
@@ -32,6 +18,18 @@
 
 - `header`
 
+### Document should have one main landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has a main landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
+
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
@@ -43,6 +41,18 @@
 #### Affected Elements:
 
 - `header`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
 
 ### All page content should be contained by landmarks
 

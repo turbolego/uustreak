@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2026-04-28T09:26:49.631Z
+**Timestamp:** 2026-05-01T20:39:08.451Z
 **URL:** [https://vestlia.no/#](https://vestlia.no/#)
 **Total Violations:** 10
 
@@ -38,9 +38,9 @@
 - `.button-10 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.fusion-title-13 > h2`
 - `.button-11 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_493a05e0-5614-44c3-b3db-49d01455b578`
+- `#f_1846bbbc-886d-4ed9-a030-96a9df82ffad`
 - `.button-13 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_a43553b0-4ed0-40b9-bdff-468b39ef21de`
+- `#f_ef6216d2-b1b2-4f10-84d5-ad3ba3c8c321`
 
 ### Heading levels should only increase by one
 
@@ -138,9 +138,9 @@
 - `.fusion-builder-row-16`
 - `.fusion-builder-row-18`
 - `.fusion-builder-row-19`
-- `div:nth-child(26)`
-- `div:nth-child(27)`
 - `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text`
+- `div:nth-child(27)`
+- `div:nth-child(28)`
 
 ### [role="img"] elements must have alternative text
 

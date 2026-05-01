@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordvik & Partners Eiendomsmegling AS
 
-**Timestamp:** 2026-04-28T08:53:02.371Z
+**Timestamp:** 2026-05-01T20:05:35.361Z
 **URL:** [https://www.nordvik.no/#](https://www.nordvik.no/#)
 **Total Violations:** 6
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `iframe[title="Bruktbil Levering Web"], .OverlayBase_module_overlayWrapper__321515a7`
+- `iframe[title="Sjelden Peug 16x9 Clean web"], .OverlayBase_module_overlayWrapper__321515a7`
 
 ### ARIA role should be appropriate for the element
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `iframe[title="Bruktbil Levering Web"], body`
+- `iframe[title="Sjelden Peug 16x9 Clean web"], body`
 
 ### Buttons must have discernible text
 

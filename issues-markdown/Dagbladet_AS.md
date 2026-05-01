@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-04-28T09:03:49.613Z
+**Timestamp:** 2026-05-01T20:16:19.129Z
 **URL:** [https://www.dagbladet.no/#](https://www.dagbladet.no/#)
 **Total Violations:** 3
 
@@ -16,12 +16,12 @@
 
 #### Affected Elements:
 
+- `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(3) > .song-title.svelte-1mbdfa7`
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(3) > .song-author.svelte-1mbdfa7`
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(4) > .song-title.svelte-1mbdfa7`
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(4) > .song-author.svelte-1mbdfa7`
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(5) > .song-title.svelte-1mbdfa7`
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(5) > .song-author.svelte-1mbdfa7`
-- `.text-red`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
