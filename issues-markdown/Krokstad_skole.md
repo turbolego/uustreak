@@ -1,6 +1,6 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2026-05-01T20:41:17.792Z
+**Timestamp:** 2026-05-02T01:26:00.629Z
 **URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#)
 **Total Violations:** 5
 
@@ -43,8 +43,8 @@
 - `iframe, .x1ypdohk.xe35lr7:nth-child(2) > ._eg_[role="button"] > ._eh3`
 - `iframe, .x1ypdohk.xe35lr7._51mw > ._eg_[role="button"] > ._eh3`
 - `iframe, abbr[data-utime="1777571375"] > .timestampContent`
-- `iframe, #u_1_h_Eg > ._2165._2pi4[title="Liker"]`
-- `iframe, #u_1_g_uD > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Kommenter"]`
+- `iframe, #u_1_d_PG > ._2165._2pi4[title="Liker"]`
+- `iframe, #u_1_c_MH > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd > ._1p4p._2pi4[title="Kommenter"]`
 - `iframe, abbr[data-utime="1777554005"] > .timestampContent`
 
 ### Links must have discernible text
@@ -57,14 +57,14 @@
 
 #### Affected Elements:
 
-- `iframe, #u_0_1_s6`
+- `iframe, #u_0_1_5c`
 - `iframe, .lfloat._3-8_`
-- `iframe, #u_1_5_Ks > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe, #u_1_6_MR > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe, #u_1_1l_VQ > ._302 > span > a`
+- `iframe, #u_1_8_Qx > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe, #u_1_7_Kx > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe, #u_1_1l_xr > ._302 > span > a`
 - `iframe, ._2l7q > a`
 - `iframe, div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe, #u_1_7_qv > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe, #u_1_6_33 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
 
 ### Interactive controls must not be nested
 

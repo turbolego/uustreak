@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagens Næringsliv AS
 
-**Timestamp:** 2026-05-01T20:17:06.495Z
+**Timestamp:** 2026-05-02T01:02:07.677Z
 **URL:** [https://www.dn.no/](https://www.dn.no/)
 **Total Violations:** 11
 
@@ -24,13 +24,15 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 42
+- **Count:** 44
 
 #### Affected Elements:
 
+- `.item-increased.item[data-v-a56f3944=""]:nth-child(3) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
+- `.item-increased.item[data-v-a56f3944=""]:nth-child(4) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
 - `a[data-id="2-1-1983096"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="2-1-1981269"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-- `.breaking > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+- `a[data-id="2-1-1983900"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="2-1-1973631"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="2-1-1981707"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="6-1-uGRdzXxH"] > article > .meta > span`
@@ -170,15 +172,15 @@
 #### Affected Elements:
 
 - `a[href$="investor"][data-v-a56f3944=""] > span[data-v-a56f3944=""]`
-- `.item-increased`
+- `.item-increased.item[data-v-a56f3944=""]:nth-child(1)`
 - `.item-decreased.item[data-v-a56f3944=""]:nth-child(2) > .item-holder[data-v-a56f3944=""]`
-- `.item-decreased.item[data-v-a56f3944=""]:nth-child(2) > .item-difference-holder.item-difference-holder-decreased[data-v-a56f3944=""] > .item-difference.item-percentage.item-difference-decreased`
-- `.item-decreased.item[data-v-a56f3944=""]:nth-child(3) > .item-holder[data-v-a56f3944=""]`
-- `.item-decreased.item[data-v-a56f3944=""]:nth-child(3) > .item-difference-holder.item-difference-holder-decreased[data-v-a56f3944=""] > .item-difference.item-percentage.item-difference-decreased`
-- `.item-decreased.item[data-v-a56f3944=""]:nth-child(4) > .item-holder[data-v-a56f3944=""]`
-- `.item-decreased.item[data-v-a56f3944=""]:nth-child(4) > .item-difference-holder.item-difference-holder-decreased[data-v-a56f3944=""] > .item-difference.item-percentage.item-difference-decreased`
+- `.item-decreased.item[data-v-a56f3944=""]:nth-child(2) > .item-difference-holder-decreased.item-difference-holder[data-v-a56f3944=""] > .item-difference-decreased.item-difference.item-percentage`
+- `.item-increased.item[data-v-a56f3944=""]:nth-child(3) > .item-holder[data-v-a56f3944=""]`
+- `.item-increased.item[data-v-a56f3944=""]:nth-child(3) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
+- `.item-increased.item[data-v-a56f3944=""]:nth-child(4) > .item-holder[data-v-a56f3944=""]`
+- `.item-increased.item[data-v-a56f3944=""]:nth-child(4) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
 - `.item-decreased.item[data-v-a56f3944=""]:nth-child(5) > .item-holder[data-v-a56f3944=""]`
-- `.item-decreased.item[data-v-a56f3944=""]:nth-child(5) > .item-difference-holder.item-difference-holder-decreased[data-v-a56f3944=""] > .item-difference.item-percentage.item-difference-decreased`
+- `.item-decreased.item[data-v-a56f3944=""]:nth-child(5) > .item-difference-holder-decreased.item-difference-holder[data-v-a56f3944=""] > .item-difference-decreased.item-difference.item-percentage`
 - `.dn-group[disallowadsbelow="false"]:nth-child(2)`
 - `div[disallowadsbelow="true"]`
 - `.dn-group[disallowadsbelow="false"]:nth-child(5) > .layout-bba.dn-grid.dn-grid-layout`
@@ -225,7 +227,7 @@
 - `a[data-id="2-1-1983710"] > article[data-teaser_type="cpp-article-dn"] > .meta`
 - `a[data-id="2-1-1983531"]`
 - `.layout-bba.dn-grid.dn-grid-layout:nth-child(19)`
-- `.layout-ab`
+- `.layout-aa`
 - `div[grouptype="Audience Engagement 3"] > .layout-bba.dn-grid.dn-grid-layout`
 - `a[data-id="6-1-ylChi5Tc"] > article > .dn-card_assets > .default[type="picture"][data-load="lazy"]`
 - `a[data-id="6-1-ylChi5Tc"] > article > .kicker`

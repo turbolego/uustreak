@@ -1,8 +1,8 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-05-01T20:29:00.445Z
+**Timestamp:** 2026-05-02T01:13:56.391Z
 **URL:** [https://www.f-b.no/#](https://www.f-b.no/#)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -40,7 +40,20 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="20"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `.brick-c-jljxpd > .carousel[role="region"][aria-label="Innholdskarusell."]`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- `html`
+- `#eaframe, html`
 
 ### Elements marked as presentational should be consistently ignored
 
