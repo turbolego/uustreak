@@ -1,0 +1,38 @@
+{
+  "project": "SAS - Scandinavian Airlines System",
+  "timestamp": "2026-05-03T01:12:34.430Z",
+  "url": "https://www.sas.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "meta-refresh",
+      "impact": "critical",
+      "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+      "help": "Delayed refresh under 20 hours must not be used",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/meta-refresh?application=playwright",
+      "tags": [
+        "cat.time-and-media",
+        "wcag2a",
+        "wcag221",
+        "TTv5",
+        "TT8.a",
+        "EN-301-549",
+        "EN-9.2.2.1",
+        "RGAAv4",
+        "RGAA-13.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+          "target": [
+            "meta[http-equiv=\"refresh\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  <meta> tag forces timed refresh of page (less than 20 hours)"
+        }
+      ]
+    }
+  ]
+}
