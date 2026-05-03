@@ -1,7 +1,7 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-05-02T01:22:41.757Z
-**URL:** [https://www.kid.no/#](https://www.kid.no/#)
+**Timestamp:** 2026-05-03T01:08:35.563Z
+**URL:** [https://www.kid.no/](https://www.kid.no/)
 **Total Violations:** 7
 
 ## Violation Details
@@ -40,8 +40,8 @@
 
 #### Affected Elements:
 
-- `div:nth-child(7) > .k5.k3.k4 > .kp.ge.kq > .fx.bx > div > div > .kr.k9.kq > .kq.bx > .ks.gg.gf > .kt.gk.gl`
-- `div:nth-child(10) > .k5.k3.k4 > .kp.ge.kq > .fx.bx > div > div > .kr.k9.kq > .kq.bx > .ks.gg.gf > .kt.gk.gl`
+- `div:nth-child(7) > .k5.k3.k4 > .kp.kq.ge > .fx.bx > div > div > .kr.k9.kq > .kq.bx > .ks.gg.gf > .kt.gj.gi`
+- `div:nth-child(10) > .k5.k3.k4 > .kp.kq.ge > .fx.bx > div > div > .kr.k9.kq > .kq.bx > .ks.gg.gf > .kt.gj.gi`
 
 ### Document should not have more than one banner landmark
 
@@ -61,11 +61,12 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
 - `#coiOverlay`
+- `.rz.pc.pd:nth-child(1) > .nb.nc.bd > .bk.c.b > .bv.bn.ep > .s5.s4[role="region"]`
 
 ### Links must have discernible text
 
@@ -77,12 +78,12 @@
 
 #### Affected Elements:
 
-- `div:nth-child(8) > .kv.ku.k8 > .kw:nth-child(1) > .bx > .ky.kz.l0 > .f4.gc.f`
-- `div:nth-child(8) > .kv.ku.k8 > .kw:nth-child(2) > .bx > .ky.kz.l0 > .f4.gc.f`
-- `div:nth-child(8) > .kv.ku.k8 > .kw:nth-child(3) > .bx > .ky.kz.l0 > .f4.gc.f`
-- `.f4.gc[href$="palermo"]`
-- `.f4.gc[href$="capri"]`
-- `.f4.gc[href$="hageputer"]`
+- `div:nth-child(8) > .kv.ku.k8 > .kw:nth-child(1) > .bx > .hq.jt.ju > .f4.f.cf`
+- `div:nth-child(8) > .kv.ku.k8 > .kw:nth-child(2) > .bx > .hq.jt.ju > .f4.f.cf`
+- `div:nth-child(8) > .kv.ku.k8 > .kw:nth-child(3) > .bx > .hq.jt.ju > .f4.f.cf`
+- `.f4.f[href$="palermo"]`
+- `.f4.f[href$="capri"]`
+- `.f4.f[href$="hageputer"]`
 
 ### All page content should be contained by landmarks
 

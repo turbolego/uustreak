@@ -1,7 +1,7 @@
 # WCAG Violations Report for Ishavsbyen videregående skole
 
-**Timestamp:** 2026-05-02T01:20:07.561Z
-**URL:** [https://ishavsbyen.vgs.no/#](https://ishavsbyen.vgs.no/#)
+**Timestamp:** 2026-05-03T01:05:58.038Z
+**URL:** [https://ishavsbyen.vgs.no/](https://ishavsbyen.vgs.no/)
 **Total Violations:** 1
 
 ## Violation Details
