@@ -1,7 +1,7 @@
 # WCAG Violations Report for Firda Media AS
 
-**Timestamp:** 2026-05-03T00:57:44.935Z
-**URL:** [https://www.firda.no/](https://www.firda.no/)
+**Timestamp:** 2026-05-04T01:12:59.961Z
+**URL:** [https://www.firda.no/#](https://www.firda.no/#)
 **Total Violations:** 5
 
 ## Violation Details
@@ -24,11 +24,10 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.firda\.no\/toppbanner_0, iframe`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination

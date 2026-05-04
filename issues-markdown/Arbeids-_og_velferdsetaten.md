@@ -1,7 +1,7 @@
 # WCAG Violations Report for Arbeids- og velferdsetaten
 
-**Timestamp:** 2026-05-03T00:37:19.564Z
-**URL:** [https://www.nav.no/](https://www.nav.no/)
+**Timestamp:** 2026-05-04T00:50:19.816Z
+**URL:** [https://www.nav.no/#](https://www.nav.no/#)
 **Total Violations:** 1
 
 ## Violation Details

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bærum kommune
 
-**Timestamp:** 2026-05-03T00:45:36.708Z
-**URL:** [https://www.baerum.kommune.no/](https://www.baerum.kommune.no/)
+**Timestamp:** 2026-05-04T00:53:46.321Z
+**URL:** [https://www.baerum.kommune.no/#](https://www.baerum.kommune.no/#)
 **Total Violations:** 2
 
 ## Violation Details
@@ -19,14 +19,14 @@
 - `.is-peach > .pageBoundary > .article-teasers > .article-teaser > .article-teaser__image > img`
 - `.is-petroleum > .pageBoundary > .article-teasers > .article-teaser > .article-teaser__image > img`
 
-### Links must have discernible text
+### Links must be distinguishable without relying on color
 
 - **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
+- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.siteLogo`
+- `#cookiescript_readmore`

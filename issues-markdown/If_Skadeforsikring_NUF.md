@@ -1,6 +1,6 @@
 # WCAG Violations Report for If Skadeforsikring NUF
 
-**Timestamp:** 2026-05-03T01:05:24.480Z
+**Timestamp:** 2026-05-04T01:20:44.718Z
 **URL:** [https://www.if.no/privat](https://www.if.no/privat)
 **Total Violations:** 3
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `#\36 2344183e2114ab4b1bdc7d1f5a311a0 > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
-- `#f44e6e4eb04d443bafe138a02544c969 > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
+- `#f6dc97238bac452d9e3af582ccd84a19 > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
+- `#ca55c6a61b0c4d659107e3f65951c95c > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
 - `#viking > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
 - `img[alt="Mer enn bare forsikring"]`
 
@@ -31,7 +31,7 @@
 
 #### Affected Elements:
 
-- `#\38 ecdfa8af83f4cce88057b911bb53b10 > .weight-medium`
+- `#\39 48f13066e0147bc93d0cc34388e0bc5 > .weight-medium`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -43,4 +43,4 @@
 
 #### Affected Elements:
 
-- `#\38 ecdfa8af83f4cce88057b911bb53b10`
+- `#\39 48f13066e0147bc93d0cc34388e0bc5`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jotunheimen og Valdresruten Bilselskap AS
 
-**Timestamp:** 2026-05-03T01:07:11.344Z
+**Timestamp:** 2026-05-04T01:22:30.676Z
 **URL:** [https://jvb.no/](https://jvb.no/)
 **Total Violations:** 6
 

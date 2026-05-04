@@ -1,7 +1,7 @@
 # WCAG Violations Report for Utlendingsdirektoratet
 
-**Timestamp:** 2026-05-03T01:10:41.277Z
-**URL:** [https://www.udi.no/](https://www.udi.no/)
+**Timestamp:** 2026-05-04T01:45:29.836Z
+**URL:** [https://www.udi.no/#](https://www.udi.no/#)
 **Total Violations:** 3
 
 ## Violation Details
