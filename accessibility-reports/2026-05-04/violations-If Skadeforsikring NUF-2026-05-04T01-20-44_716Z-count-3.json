@@ -1,0 +1,94 @@
+{
+  "project": "If Skadeforsikring NUF",
+  "timestamp": "2026-05-04T01:20:44.718Z",
+  "url": "https://www.if.no/privat",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<img class=\"if size-100p object-...\" loading=\"lazy\" alt=\"Norges mest kjøpte M...\" src=\"https://v.imgi.no/mg...\" srcset=\"https://v.imgi.no/mg...\" sizes=\"(max-width: 450px) 4...\" role=\"presentation\">",
+          "target": [
+            "#f6dc97238bac452d9e3af582ccd84a19 > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "html": "<img class=\"if size-100p object-...\" loading=\"lazy\" alt=\"Hva skjer hvis du bl...\" src=\"https://v.imgi.no/gp...\" srcset=\"https://v.imgi.no/gp...\" sizes=\"(max-width: 450px) 4...\" role=\"presentation\">",
+          "target": [
+            "#ca55c6a61b0c4d659107e3f65951c95c > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "html": "<img class=\"if size-100p object-...\" loading=\"lazy\" alt=\"Ekstra trygghet med ...\" src=\"https://v.imgi.no/xp...\" srcset=\"https://v.imgi.no/xp...\" sizes=\"(max-width: 450px) 4...\" role=\"presentation\">",
+          "target": [
+            "#viking > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "html": "<img class=\"if size-100p object-...\" loading=\"lazy\" alt=\"Mer enn bare forsikr...\" src=\"https://v.imgi.no/jt...\" srcset=\"https://v.imgi.no/jt...\" sizes=\"(max-width: 450px) 4...\" role=\"presentation\">",
+          "target": [
+            "img[alt=\"Mer enn bare forsikring\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"if typography ui medium weight-medium\">Jeg vil ...</h4>",
+          "target": [
+            "#\\39 48f13066e0147bc93d0cc34388e0bc5 > .weight-medium"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"if flex-column gap-16\" id=\"948f13066e0147bc93d0cc34388e0bc5\">",
+          "target": [
+            "#\\39 48f13066e0147bc93d0cc34388e0bc5"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}

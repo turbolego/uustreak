@@ -1,0 +1,211 @@
+{
+  "project": "Stiftelsen Nasjonalmuseet for Kunst",
+  "timestamp": "2026-05-04T01:09:59.280Z",
+  "url": "https://www.nasjonalmuseet.no/#",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 16,
+      "nodes": [
+        {
+          "html": "<button tabindex=\"0\" onclick=\"CookieInformation.declineAllCategories()\" aria-label=\"Avvis\" id=\"declineButton\" class=\"coi-banner__decline\" role=\"alert\" aria-atomic=\"true\" style=\"display: flex;\">Avvis</button>",
+          "target": [
+            "#declineButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role alert is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"ulc-carousel__slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"1 av 11\">",
+          "target": [
+            "li[aria-label=\"1 av 11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"ulc-carousel__slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"2 av 11\">",
+          "target": [
+            "li[aria-label=\"2 av 11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"ulc-carousel__slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"3 av 11\">",
+          "target": [
+            "li[aria-label=\"3 av 11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"ulc-carousel__slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"4 av 11\">",
+          "target": [
+            "li[aria-label=\"4 av 11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"ulc-carousel__slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"5 av 11\">",
+          "target": [
+            "li[aria-label=\"5 av 11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"ulc-carousel__slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"6 av 11\">",
+          "target": [
+            "li[aria-label=\"6 av 11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"ulc-carousel__slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"7 av 11\">",
+          "target": [
+            "li[aria-label=\"7 av 11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"ulc-carousel__slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"8 av 11\">",
+          "target": [
+            "li[aria-label=\"8 av 11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"ulc-carousel__slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"9 av 11\">",
+          "target": [
+            "li[aria-label=\"9 av 11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"ulc-carousel__slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"10 av 11\">",
+          "target": [
+            "li[aria-label=\"10 av 11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"ulc-carousel__slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"11 av 11\">",
+          "target": [
+            "li[aria-label=\"11 av 11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"ulc-carousel__slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"1 av 4\">",
+          "target": [
+            "li[aria-label=\"1 av 4\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"ulc-carousel__slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"2 av 4\">",
+          "target": [
+            "li[aria-label=\"2 av 4\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"ulc-carousel__slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"3 av 4\">",
+          "target": [
+            "li[aria-label=\"3 av 4\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"ulc-carousel__slide\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"4 av 4\">",
+          "target": [
+            "li[aria-label=\"4 av 4\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": "serious",
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/list?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<ul class=\"ulc-carousel__track\" style=\"transform: translate3d(0px, 0px, 0px); transition: none;\">",
+          "target": [
+            "div[title=\"Utstillinger\"] > .ulc-carousel__track"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+        },
+        {
+          "html": "<ul class=\"ulc-carousel__track\" style=\"transform: translate3d(0px, 0px, 0px); transition: none;\">",
+          "target": [
+            "div[title=\"Utvalgte arrangementer\"] > .ulc-carousel__track"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=group]"
+        }
+      ]
+    }
+  ]
+}
