@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dfind Consulting
 
-**Timestamp:** 2026-05-04T01:06:17.843Z
+**Timestamp:** 2026-05-05T20:21:05.481Z
 **URL:** [https://dfindconsulting.no/](https://dfindconsulting.no/)
 **Total Violations:** 2
 
@@ -16,12 +16,12 @@
 
 #### Affected Elements:
 
+- `.post-2321`
 - `.post-2318`
 - `.post-2315`
 - `.post-2312`
 - `.post-2309`
 - `.post-2306`
-- `.post-2302`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -33,6 +33,9 @@
 
 #### Affected Elements:
 
+- `.post-2321 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
+- `.post-2321 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
+- `.post-2321 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`
 - `.post-2318 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
 - `.post-2318 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
 - `.post-2318 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`
@@ -48,6 +51,3 @@
 - `.post-2306 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
 - `.post-2306 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
 - `.post-2306 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`
-- `.post-2302 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p`
-- `.post-2302 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date`
-- `.post-2302 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar`

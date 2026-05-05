@@ -1,22 +1,10 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-05-04T01:47:45.033Z
+**Timestamp:** 2026-05-05T20:40:08.705Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.cms-recomendations:nth-child(10) > section > div > .carousel[aria-roledescription="carousel"][role="region"]`
 
 ### Links must have discernible text
 
@@ -32,7 +20,7 @@
 - `.campaign-banner--left.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .banner__cover-link`
 - `.campaign-banner--centered.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .banner__cover-link`
 - `.campaign-banner--centered.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .banner__cover-link`
-- `.campaign-banner--centered.campaign-banner.banner:nth-child(3) > .campaign-banner__content-wrapper.banner__content-wrapper > .banner__cover-link`
+- `.banner__cover-link[href$="intimpleie"]`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 

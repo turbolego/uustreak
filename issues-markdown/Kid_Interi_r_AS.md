@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-05-04T01:23:47.449Z
+**Timestamp:** 2026-05-05T20:39:02.079Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `div:nth-child(9) > .l5.ke.kf > .le.f6.ki > .lg.lh.lf`
-- `div:nth-child(13) > .l5.ke.kf > .le.f6.ki > .lg.lh.lf`
+- `div:nth-child(7) > .kd.ji.jj > .kn.f6.jm > .kq.kr.ko`
+- `div:nth-child(13) > .kd.ji.jj > .kn.f6.jm > .kq.kr.ko`
 
 ### Heading levels should only increase by one
 
@@ -41,7 +41,7 @@
 
 #### Affected Elements:
 
-- `.l4`
+- `.kc`
 
 ### Document should not have more than one banner landmark
 
@@ -77,9 +77,9 @@
 
 #### Affected Elements:
 
-- `div:nth-child(10) > .n1.kj.le > .n2:nth-child(1) > .bx > .n4.n5.ld > .f4.gc.f`
-- `div:nth-child(10) > .n1.kj.le > .n2:nth-child(2) > .bx > .n4.n5.ld > .f4.gc.f`
-- `div:nth-child(10) > .n1.kj.le > .n2:nth-child(3) > .bx > .n4.n5.ld > .f4.gc.f`
+- `div:nth-child(8) > .mc.jn.kn > .md:nth-child(1) > .bx > .mh.mi.km > .f4.gc.f`
+- `div:nth-child(8) > .mc.jn.kn > .md:nth-child(2) > .bx > .mh.mi.km > .f4.gc.f`
+- `div:nth-child(8) > .mc.jn.kn > .md:nth-child(3) > .bx > .mh.mi.km > .f4.gc.f`
 - `.f4.gc[href$="palermo"]`
 - `.f4.gc[href$="capri"]`
 - `.f4.gc[href$="hageputer"]`

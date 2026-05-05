@@ -1,10 +1,23 @@
 # WCAG Violations Report for Universitetet i Sørøst-Norge
 
-**Timestamp:** 2026-05-04T01:44:17.933Z
+**Timestamp:** 2026-05-05T20:36:38.307Z
 **URL:** [https://www.usn.no/](https://www.usn.no/)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#nav_10584_prev`
+- `#nav_10584_next`
 
 ### Form elements should have a visible label
 

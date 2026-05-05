@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-05-04T01:11:06.479Z
+**Timestamp:** 2026-05-05T20:26:12.801Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -31,31 +31,31 @@
 
 - `.h2.e0.e1 > div > div`
 - `.h4.am[href$="maisalg"]`
-- `li:nth-child(1) > .ib.ic[aria-label="Bris lettvekts turbukse"] > .ig.bc.bd > .in.il.y > .gz.io.ip`
-- `li:nth-child(1) > .ib.ic[aria-label="Bris lettvekts turbukse"] > .c0.c1.hy > div > .h3 > .jc.hz.bd`
-- `li:nth-child(2) > .ib.ic[aria-label="Bris lettvekts turbukse"] > .ig.bc.bd > .in.il.y > .gz.io.ip`
-- `li:nth-child(2) > .ib.ic[aria-label="Bris lettvekts turbukse"] > .c0.c1.hy > div > .h3 > .jc.hz.bd`
-- `li:nth-child(3) > .ib.ic[aria-label="Vesterfjell tursekk 35 L"] > .ig.bc.bd > .in.il.y > .gz.io.ip`
-- `li:nth-child(3) > .ib.ic[aria-label="Vesterfjell tursekk 35 L"] > .c0.c1.hy > div > .h3 > .jc.hz.bd`
-- `a[aria-label="Larvik skallparkas"] > .ig.bc.bd > .in.il.y > .gz.io.ip`
-- `a[aria-label="Larvik skallparkas"] > .c0.c1.hy > div > .h3 > .jc.hz.bd`
-- `li:nth-child(5) > .ib.ic[aria-label="Vesterfjell tursekk 35 L"] > .ig.bc.bd > .in.il.y > .gz.io.ip`
-- `li:nth-child(5) > .ib.ic[aria-label="Vesterfjell tursekk 35 L"] > .c0.c1.hy > div > .h3 > .jc.hz.bd`
-- `li:nth-child(1) > .ib.ic[aria-label="Lindum sneaker"] > .ig.bc.bd > .in.il.y > .gz.io.ip`
-- `li:nth-child(1) > .ib.ic[aria-label="Lindum sneaker"] > .c0.c1.hy > div > .h3 > .jc.hz.bd`
-- `div:nth-child(4) > .i8.bl.bj > .i9.ia > li:nth-child(2) > .ib.ic.id > .ig.bc.bd > .in.il.y > .gz.io.ip`
-- `div:nth-child(4) > .i8.bl.bj > .i9.ia > li:nth-child(2) > .ib.ic.id > .c0.c1.hy > div > .h3 > .jc.hz.bd`
-- `li:nth-child(3) > .ib.ic[aria-label="Lindum sneaker"] > .ig.bc.bd > .in.il.y > .gz.io.ip`
-- `li:nth-child(3) > .ib.ic[aria-label="Lindum sneaker"] > .c0.c1.hy > div > .h3 > .jc.hz.bd`
-- `div:nth-child(4) > .i8.bl.bj > .i9.ia > li:nth-child(4) > .ib.ic.id > .ig.bc.bd > .in.il.y > .gz.io.ip`
-- `div:nth-child(4) > .i8.bl.bj > .i9.ia > li:nth-child(4) > .ib.ic.id > .c0.c1.hy > div > .h3 > .jc.hz.bd`
-- `a[aria-label="Brattli vanntett tursko barn"] > .ig.bc.bd > .in.il.y > .gz.io.ip`
-- `a[aria-label="Brattli vanntett tursko barn"] > .c0.c1.hy > div > .h3 > .jc.hz.bd`
-- `a[aria-label="Sogndal skalljakke"] > .ig.bc.bd > .in.il.y > .gz.io.ip`
-- `a[aria-label="Harstad skalljakke"] > .ig.bc.bd > .in.il.y > .gz.io.ip`
-- `a[aria-label="Sukkevann vanntett turstøvel"] > .ig.bc.bd > .in.il.y > .gz.io.ip`
-- `a[aria-label="Hyen bambus sokk 3-pack"] > .ig.bc.bd > .in.il.y > .gz.io.ip`
-- `a[aria-label="Frydsnuten turbukse barn 1-7"] > .ig.bc.bd > .in.il.y > .gz.io.ip`
+- `li:nth-child(1) > .ic.id[aria-label="Henningsvær kort teknisk cape"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `li:nth-child(1) > .ic.id[aria-label="Henningsvær kort teknisk cape"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Bris lettvekts turbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Bris lettvekts turbukse"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `li:nth-child(3) > .ic.id[aria-label="Henningsvær kort teknisk cape"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `li:nth-child(3) > .ic.id[aria-label="Henningsvær kort teknisk cape"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Valvik matboks 1650 ml"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Valvik matboks 1650 ml"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Fjellstien softshell turbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Fjellstien softshell turbukse"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Lindum sneaker"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Lindum sneaker"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(2) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(2) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `li:nth-child(3) > .ic.id[aria-label="Lofotregn skallponcho"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `li:nth-child(3) > .ic.id[aria-label="Lofotregn skallponcho"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `li:nth-child(5) > .ic.id[aria-label="Lofotregn skallponcho"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `li:nth-child(5) > .ic.id[aria-label="Lofotregn skallponcho"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Skomvær skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Sukkevann vanntett turstøvel"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Fjellmarka turbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Folgelia jakke barn 8-14"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Skomvær skalljakke barn 8-14"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
@@ -96,13 +96,13 @@
 - `div:nth-child(2) > .aq.am.an > .au.as[width="11"]`
 - `div:nth-child(3) > .aq.am.an > .au.as[width="11"]`
 - `.hs > .hx.hw.au`
-- `.ji.fm.be:nth-child(1) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jj.ht.hu > .hx.a2.hw`
-- `a[href$="t-skjorter"] > .jj.ht.hu > .hx.a2.hw`
-- `.ji.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jj.ht.hu > .hx.a2.hw`
-- `.a6[href$="baerekraft"][data-scope-link="true"] > .jj.ht.hu > .hx.a2.hw`
-- `a[href$="turbukser"] > .jj.ht.hu > .hx.a2.hw`
-- `.a6[href$="turutstyr"][data-scope-link="true"] > .jj.ht.hu > .hx.a2.hw`
-- `a[href$="vest-fleece"] > .jj.ht.hu > .hx.a2.hw`
+- `.jj.fm.be:nth-child(1) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jk.ht.hu > .hx.a2.hw`
+- `a[href$="t-skjorter"] > .jk.ht.hu > .hx.a2.hw`
+- `.jj.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jk.ht.hu > .hx.a2.hw`
+- `.a6[href$="baerekraft"][data-scope-link="true"] > .jk.ht.hu > .hx.a2.hw`
+- `a[href$="turbukser"] > .jk.ht.hu > .hx.a2.hw`
+- `.a6[href$="turutstyr"][data-scope-link="true"] > .jk.ht.hu > .hx.a2.hw`
+- `a[href$="vest-fleece"] > .jk.ht.hu > .hx.a2.hw`
 
 ### Links must have discernible text
 
@@ -115,9 +115,9 @@
 #### Affected Elements:
 
 - `.a6[href$="maisalg"][data-scope-link="true"]`
-- `.ji.fm.be:nth-child(1) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
+- `.jj.fm.be:nth-child(1) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
 - `a[href$="t-skjorter"]`
-- `.ji.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
+- `.jj.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
 - `.a6[href$="baerekraft"][data-scope-link="true"]`
 - `a[href$="turbukser"]`
 - `.hq.bv.ay > .a6[href$="turutstyr"][data-scope-link="true"]`

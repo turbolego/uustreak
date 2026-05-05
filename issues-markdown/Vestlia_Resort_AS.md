@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2026-05-04T01:46:57.845Z
+**Timestamp:** 2026-05-05T20:39:14.814Z
 **URL:** [https://vestlia.no/#](https://vestlia.no/#)
 **Total Violations:** 10
 
@@ -24,23 +24,21 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 13
+- **Count:** 11
 
 #### Affected Elements:
 
 - `#CybotCookiebotDialogNavDeclaration`
 - `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
-- `#widgetContainer,div[aria-label="Choose date"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
-- `#widgetContainer,div[aria-label="Accommodations and guests"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
 - `#widgetContainer,.relative.z-\[1\]`
 - `.fusion-title-6 > h2`
 - `.fusion-title-11 > h2`
 - `.button-10 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.fusion-title-13 > h2`
 - `.button-11 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_04cc44ba-1e66-48e6-b22f-4dc2055ead23`
+- `#f_a91003d5-f763-4272-981b-09fe5c1de9a0`
 - `.button-13 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_c93f8fcf-ec5c-4e3b-adf7-30bcc2a02a9d`
+- `#f_80da5e15-6d9b-4e78-93d6-082ca57b9acf`
 
 ### Heading levels should only increase by one
 
