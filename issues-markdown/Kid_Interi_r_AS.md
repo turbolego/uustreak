@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-05-05T20:39:02.079Z
+**Timestamp:** 2026-05-06T01:20:42.487Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `div:nth-child(7) > .kd.ji.jj > .kn.f6.jm > .kq.kr.ko`
-- `div:nth-child(13) > .kd.ji.jj > .kn.f6.jm > .kq.kr.ko`
+- `div:nth-child(8) > .ke.ja.jb > .kn.f6.je > .kq.kr.ko`
+- `div:nth-child(14) > .ke.ja.jb > .kn.f6.je > .kq.kr.ko`
 
 ### Heading levels should only increase by one
 
@@ -37,11 +37,12 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.kc`
+- `.et.k2.es > .k4.gg.gf > .k5.gk.gl`
+- `div:nth-child(7) > .jc.ja.jb > .k1.k2.ge > .fx.bx > div > div > .k3.jg.k2 > .k2.bx > .k4.gg.gf > .k5.gk.gl`
 
 ### Document should not have more than one banner landmark
 
@@ -77,12 +78,12 @@
 
 #### Affected Elements:
 
-- `div:nth-child(8) > .mc.jn.kn > .md:nth-child(1) > .bx > .mh.mi.km > .f4.gc.f`
-- `div:nth-child(8) > .mc.jn.kn > .md:nth-child(2) > .bx > .mh.mi.km > .f4.gc.f`
-- `div:nth-child(8) > .mc.jn.kn > .md:nth-child(3) > .bx > .mh.mi.km > .f4.gc.f`
-- `.f4.gc[href$="palermo"]`
-- `.f4.gc[href$="capri"]`
-- `.f4.gc[href$="hageputer"]`
+- `div:nth-child(9) > .mc.kn.jf > .md:nth-child(1) > .bx > .mh.mi.km > .f4.f.gc`
+- `div:nth-child(9) > .mc.kn.jf > .md:nth-child(2) > .bx > .mh.mi.km > .f4.f.gc`
+- `div:nth-child(9) > .mc.kn.jf > .md:nth-child(3) > .bx > .mh.mi.km > .f4.f.gc`
+- `.f4.f[href$="palermo"]`
+- `.f4.f[href$="capri"]`
+- `.f4.f[href$="hageputer"]`
 
 ### All page content should be contained by landmarks
 

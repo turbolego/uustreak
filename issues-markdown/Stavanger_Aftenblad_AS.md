@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-05-05T20:21:20.778Z
+**Timestamp:** 2026-05-06T01:04:02.500Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
 **Total Violations:** 7
 
@@ -93,14 +93,13 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 99
+- **Count:** 98
 
 #### Affected Elements:
 
 - `h1`
 - `.collage-x3.row:nth-child(1)`
 - `.top-60-40-block`
-- `#dr-edition-teaser-kfx1ey2md > div`
 - `._content_1166k_643 > ._heading_1166k_647 > span`
 - `._sa_gcann_13 > ._content_1166k_643 > ._controls_1166k_663 > ._previews_1166k_667 > ._preview_1166k_667:nth-child(1) > a > ._preview-image_1166k_715[loading="lazy"]`
 - `._sa_gcann_13 > ._content_1166k_643 > ._controls_1166k_663 > ._previews_1166k_667 > ._preview_1166k_667:nth-child(1) > a > ._preview-title_1166k_727`
@@ -123,10 +122,10 @@
 - `._sa_gcann_13 > ._content_1166k_643 > ._controls_1166k_663 > ._previews_1166k_667 > ._preview_1166k_667:nth-child(10) > a > ._preview-image_1166k_715[loading="lazy"]`
 - `._sa_gcann_13 > ._content_1166k_643 > ._controls_1166k_663 > ._previews_1166k_667 > ._preview_1166k_667:nth-child(10) > a > ._preview-title_1166k_727`
 - `.collage-x4`
-- `.collage-x3.row:nth-child(13)`
+- `.vertical-x2.row:nth-child(13)`
 - `.sa-frontboks-button-bottom-right > .svelte-r1njzg:nth-child(1)`
-- `.vertical-x2.row:nth-child(17)`
-- `.vertical-x3.row:nth-child(18)`
+- `.collage-x3.row:nth-child(17)`
+- `.vertical-x2.row:nth-child(18)`
 - `.collage-x3.row:nth-child(20)`
 - `.hjernetrim-front-widget`
 - `a > ._heading_1166k_647 > span`
@@ -150,52 +149,52 @@
 - `._aftenball_gcann_37 > ._content_1166k_643 > ._controls_1166k_663 > ._previews_1166k_667 > ._preview_1166k_667:nth-child(9) > a > ._preview-title_1166k_727`
 - `._aftenball_gcann_37 > ._content_1166k_643 > ._controls_1166k_663 > ._previews_1166k_667 > ._preview_1166k_667:nth-child(10) > a > ._preview-image_1166k_715[loading="lazy"]`
 - `._aftenball_gcann_37 > ._content_1166k_643 > ._controls_1166k_663 > ._previews_1166k_667 > ._preview_1166k_667:nth-child(10) > a > ._preview-title_1166k_727`
-- `.vertical-x2.row:nth-child(28)`
-- `.collage-x3.row:nth-child(30)`
+- `article[data-pulse-entity-id="L4o8MQ"] > .display-flex.article__teaser-container > .article__text-container`
+- `.vertical-x2.row:nth-child(30)`
 - `.podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
 - `.podcast-spons`
-- `.vertical-x2.row:nth-child(32)`
+- `.vertical-x3.row:nth-child(32)`
 - `.widget-football.regional-widget`
-- `.collage-x3.row:nth-child(34)`
-- `.vertical-x2.row:nth-child(36)`
+- `.vertical-x2.row:nth-child(34)`
+- `.collage-x3.row:nth-child(36)`
 - `.vertical-x3.row:nth-child(39)`
 - `.widget-bolig.regional-widget`
-- `.vertical-x4.row:nth-child(41)`
-- `.vertical-small-x2.row:nth-child(42)`
+- `.vertical-x2.row:nth-child(41)`
+- `.vertical-x4.row:nth-child(42)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(44)`
-- `.vertical-x3.row:nth-child(45)`
-- `.vertical-x2.row:nth-child(47)`
-- `.vertical-x3.row:nth-child(48)`
+- `.vertical-x2.row:nth-child(45)`
+- `.vertical-x3.row:nth-child(47)`
+- `.vertical-x2.row:nth-child(48)`
 - `.vertical-x2.row:nth-child(49)`
 - `.vertical-x1-ad.row:nth-child(50)`
-- `.vertical-small-x2.row:nth-child(51)`
+- `.collage-x3.row:nth-child(51)`
 - `.vertical-x2.row:nth-child(52)`
 - `.vertical-x1-ad.row:nth-child(53)`
-- `.vertical-x3.row:nth-child(54)`
-- `.display-flex > .article__text-container`
-- `.vertical-x2.row:nth-child(56)`
-- `.vertical-x3.row:nth-child(57)`
-- `.vertical-x2.row:nth-child(58)`
-- `.vertical-x4.row:nth-child(59)`
-- `.vertical-x2.row:nth-child(60)`
+- `article[data-pulse-entity-id="zO0vk4"] > .display-flex.article__teaser-container > .article__text-container`
+- `.vertical-x3.row:nth-child(55)`
+- `.vertical-x4.row:nth-child(56)`
+- `.vertical-x2.row:nth-child(57)`
+- `.vertical-x3.row:nth-child(58)`
+- `.vertical-x2.row:nth-child(59)`
+- `.collage-x3.row:nth-child(60)`
 - `.vertical-x3.row:nth-child(62)`
 - `#webcam-frontpage`
-- `.vertical-x2.row:nth-child(64)`
-- `.collage-x3.row:nth-child(65)`
+- `.collage-x3.row:nth-child(64)`
+- `.vertical-x2.row:nth-child(65)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(66)`
-- `.vertical-x2.row:nth-child(68)`
+- `.vertical-x3.row:nth-child(68)`
 - `.collage-x3.row:nth-child(69)`
 - `.vertical-x2.row:nth-child(70)`
 - `.vertical-x1-ad.row:nth-child(71)`
-- `.vertical-x3.row:nth-child(72)`
-- `.collage-x3.row:nth-child(73)`
+- `.collage-x3.row:nth-child(72)`
+- `.vertical-x2.row:nth-child(73)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(74)`
-- `.vertical-x2.row:nth-child(75)`
+- `.collage-x3.row:nth-child(75)`
 - `.vertical-x2.row:nth-child(76)`
-- `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`
+- `.sch-datacontroller__text`
 
 ### Scrollable region must have keyboard access
 

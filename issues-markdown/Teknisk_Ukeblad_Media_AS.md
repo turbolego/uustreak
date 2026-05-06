@@ -1,8 +1,8 @@
 # WCAG Violations Report for Teknisk Ukeblad Media AS
 
-**Timestamp:** 2026-05-05T20:29:36.450Z
+**Timestamp:** 2026-05-06T01:12:06.355Z
 **URL:** [https://www.tu.no/](https://www.tu.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -44,6 +44,18 @@
 
 #### Affected Elements:
 
-- `.object-cover[loading="eager"][height="563"]`
+- `img[alt="Kongsberg Maritime børsnoteres"]`
+- `#preamble-571132 > .flex-row.md\:flex-col.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover.duration-700[height="563"]`
 - `#preamble-570759 > .flex-row.md\:flex-col.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover.duration-700[height="563"]`
-- `#preamble-570335 > .flex-row.md\:flex-col.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover.duration-700[height="563"]`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.left-0.top-0[target="_blank"]`
