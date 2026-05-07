@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sykehuset Innlandet HF
 
-**Timestamp:** 2026-05-06T01:10:57.772Z
+**Timestamp:** 2026-05-07T20:25:11.348Z
 **URL:** [https://www.sykehuset-innlandet.no/](https://www.sykehuset-innlandet.no/)
 **Total Violations:** 1
 
@@ -12,10 +12,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 3
+- **Count:** 4
 
 #### Affected Elements:
 
 - `._cookieconsent_1902723 > fieldset > legend`
 - `._cookieconsent__description_af7bfec`
+- `._cookieconsent__withdraw_a4a6e02`
 - `.skiplink`

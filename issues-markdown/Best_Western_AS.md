@@ -1,6 +1,6 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2026-05-06T00:53:51.052Z
+**Timestamp:** 2026-05-07T20:07:25.995Z
 **URL:** [https://www.bestwestern.no/#](https://www.bestwestern.no/#)
 **Total Violations:** 3
 
@@ -17,11 +17,11 @@
 #### Affected Elements:
 
 - `img[alt="Hoteller med uteservering"]`
-- `a[href$="globale-destinasjoner"] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="0"][width="0"][loading="lazy"]`
+- `img[alt="Naturnære hoteller"]`
 - `img[alt="Hundevennlige hoteller"]`
 - `img[alt="Hotell utover det vanlige"]`
 - `img[alt="Hotellrestauranter"]`
-- `img[alt="Naturnære hoteller"]`
+- `a[href$="globale-destinasjoner"] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="0"][width="0"][loading="lazy"]`
 - `img[alt="Oppdag flere opplevelser"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -42,10 +42,13 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 3
+- **Count:** 6
 
 #### Affected Elements:
 
 - `.\[\&\:not\(\:focus\)\]\:visually-hidden`
 - `.pr-2`
 - `a[href$="bestwestern.com/"]`
+- `#ddChallengeBody1778184439233, .captcha__human`
+- `#ddChallengeBody1778184439233, .captcha__robot__warning`
+- `#ddChallengeBody1778184439233, .captcha__robot__contact_support`

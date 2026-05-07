@@ -1,6 +1,6 @@
 # WCAG Violations Report for Knowit Norge
 
-**Timestamp:** 2026-05-06T01:21:31.923Z
+**Timestamp:** 2026-05-07T20:35:02.125Z
 **URL:** [https://www.knowit.no/#](https://www.knowit.no/#)
 **Total Violations:** 4
 
@@ -42,12 +42,13 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `#coiOverlay`
 - `.FocusBlock:nth-child(3) > .css-whh5e5 > .css-1bbe9dr > .css-18w09va > .css-1ubhc2b[overflow="visible"] > .slider-container > .slider-frame[aria-label="carousel-slider"][role="region"]`
+- `#chakra-toast-manager-top`
 
 ### All page content should be contained by landmarks
 

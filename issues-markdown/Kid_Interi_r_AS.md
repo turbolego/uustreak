@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-05-06T01:20:42.487Z
+**Timestamp:** 2026-05-07T20:34:13.183Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `div:nth-child(8) > .ke.ja.jb > .kn.f6.je > .kq.kr.ko`
-- `div:nth-child(14) > .ke.ja.jb > .kn.f6.je > .kq.kr.ko`
+- `div:nth-child(10) > .ke.ja.jb > .kn.f6.km > .kq.kr.ko`
+- `div:nth-child(17) > .ke.ja.jb > .kn.f6.km > .kq.kr.ko`
 
 ### Heading levels should only increase by one
 
@@ -37,12 +37,13 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
-- `.et.k2.es > .k4.gg.gf > .k5.gk.gl`
-- `div:nth-child(7) > .jc.ja.jb > .k1.k2.ge > .fx.bx > div > div > .k3.jg.k2 > .k2.bx > .k4.gg.gf > .k5.gk.gl`
+- `div:nth-child(4) > .jc.ja.jb > .k1.ge.k2 > .fx.bx > div > div > .k3.jg.k2 > .k2.bx > .k4.gg.gf > .k5.gk.gl`
+- `div:nth-child(9) > .jc.ja.jb > .k1.ge.k2 > .fx.bx > div > div > .k3.jg.k2 > .k2.bx > .k4.gg.gf > .k5.gk.gl`
+- `div:nth-child(11) > .jc.ja.jb > .k1.ge.k2 > .fx.bx > div > div > .k3.jg.k2 > .k2.bx > .k4.gg.gf > .k5.gk.gl`
 
 ### Document should not have more than one banner landmark
 
@@ -78,9 +79,9 @@
 
 #### Affected Elements:
 
-- `div:nth-child(9) > .mc.kn.jf > .md:nth-child(1) > .bx > .mh.mi.km > .f4.f.gc`
-- `div:nth-child(9) > .mc.kn.jf > .md:nth-child(2) > .bx > .mh.mi.km > .f4.f.gc`
-- `div:nth-child(9) > .mc.kn.jf > .md:nth-child(3) > .bx > .mh.mi.km > .f4.f.gc`
+- `div:nth-child(12) > .me.kn.jf > .mf:nth-child(1) > .bx > .mj.mk.km > .f4.f.gc`
+- `div:nth-child(12) > .me.kn.jf > .mf:nth-child(2) > .bx > .mj.mk.km > .f4.f.gc`
+- `div:nth-child(12) > .me.kn.jf > .mf:nth-child(3) > .bx > .mj.mk.km > .f4.f.gc`
 - `.f4.f[href$="palermo"]`
 - `.f4.f[href$="capri"]`
 - `.f4.f[href$="hageputer"]`

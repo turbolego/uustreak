@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Hudøy
 
-**Timestamp:** 2026-05-06T01:06:59.344Z
+**Timestamp:** 2026-05-07T20:21:02.860Z
 **URL:** [https://hudoy.no/#](https://hudoy.no/#)
 **Total Violations:** 5
 
@@ -42,7 +42,7 @@
 #### Affected Elements:
 
 - `.classic-quote-left > h6`
-- `.post-entry-8551 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
+- `.post-entry-8654 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `#nav_menu-2 > .widgettitle`
 
 ### Links must have discernible text
@@ -84,12 +84,12 @@
 - `iframe, a`
 - `.active-slide.slide-entry-wrap`
 - `#after_section_3 > .container > .template-page.content.av-content-full > .post-entry-type-page.post-entry-330.post-entry > .entry-content-wrapper.clearfix > .av_textblock_section`
+- `.post-entry-8654 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.post-entry-8551 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.post-entry-8315 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.post-entry-8218 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.post-entry-8117 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.post-entry-8063 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
-- `.post-entry-6343 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.av-rotator-text-single-4`
 - `#av_section_6 > .container > .template-page.content.av-content-full > .post-entry-type-page.post-entry-330.post-entry > .entry-content-wrapper.clearfix > .flex_column_table.av-equal-height-column-flextable.-flextable`
 - `.avia-builder-el-38`

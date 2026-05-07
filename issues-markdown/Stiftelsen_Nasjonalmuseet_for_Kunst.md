@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Nasjonalmuseet for Kunst
 
-**Timestamp:** 2026-05-06T01:07:39.965Z
+**Timestamp:** 2026-05-07T20:21:43.405Z
 **URL:** [https://www.nasjonalmuseet.no/#](https://www.nasjonalmuseet.no/#)
 **Total Violations:** 4
 
@@ -12,22 +12,21 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 17
+- **Count:** 16
 
 #### Affected Elements:
 
 - `#declineButton`
-- `li[aria-label="1 av 11"]`
-- `li[aria-label="2 av 11"]`
-- `li[aria-label="3 av 11"]`
-- `li[aria-label="4 av 11"]`
-- `li[aria-label="5 av 11"]`
-- `li[aria-label="6 av 11"]`
-- `li[aria-label="7 av 11"]`
-- `li[aria-label="8 av 11"]`
-- `li[aria-label="9 av 11"]`
-- `li[aria-label="10 av 11"]`
-- `li[aria-label="11 av 11"]`
+- `li[aria-label="1 av 10"]`
+- `li[aria-label="2 av 10"]`
+- `li[aria-label="3 av 10"]`
+- `li[aria-label="4 av 10"]`
+- `li[aria-label="5 av 10"]`
+- `li[aria-label="6 av 10"]`
+- `li[aria-label="7 av 10"]`
+- `li[aria-label="8 av 10"]`
+- `li[aria-label="9 av 10"]`
+- `li[aria-label="10 av 10"]`
 - `li[aria-label="1 av 5"]`
 - `li[aria-label="2 av 5"]`
 - `li[aria-label="3 av 5"]`

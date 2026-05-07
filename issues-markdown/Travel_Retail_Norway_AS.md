@@ -1,6 +1,6 @@
 # WCAG Violations Report for Travel Retail Norway AS
 
-**Timestamp:** 2026-05-06T01:15:00.827Z
+**Timestamp:** 2026-05-07T20:29:21.077Z
 **URL:** [https://www.tax-free.no/no/](https://www.tax-free.no/no/)
 **Total Violations:** 6
 
@@ -12,10 +12,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
+- `#CybotCookiebotDialogBodyContentText > a`
 - `#CybotCookiebotDialogBodyEdgeMoreDetailsLink`
 - `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
 

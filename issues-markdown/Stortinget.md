@@ -1,23 +1,10 @@
 # WCAG Violations Report for Stortinget
 
-**Timestamp:** 2026-05-06T01:09:03.614Z
+**Timestamp:** 2026-05-07T20:23:10.988Z
 **URL:** [https://www.stortinget.no/#](https://www.stortinget.no/#)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
-
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 2
-
-#### Affected Elements:
-
-- `img[alt="Espen Barth Eide"]`
-- `img[alt="Karianne O. Tung"]`
 
 ### All page content should be contained by landmarks
 
