@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kristiansand Dyrepark AS
 
-**Timestamp:** 2026-05-07T20:36:53.953Z
+**Timestamp:** 2026-05-08T01:26:19.791Z
 **URL:** [https://www.dyreparken.no/#](https://www.dyreparken.no/#)
 **Total Violations:** 7
 
@@ -17,7 +17,7 @@
 #### Affected Elements:
 
 - `.c-campaigns__items > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.owl-next.disabled[role="presentation"]`
+- `.c-campaigns__items > .owl-nav > .owl-next[role="presentation"][type="button"]`
 - `.js-overflow-scrolling > .owl-nav > .owl-prev.disabled[role="presentation"]`
 - `.js-overflow-scrolling > .owl-nav > .owl-next[role="presentation"][type="button"]`
 
@@ -44,7 +44,7 @@
 #### Affected Elements:
 
 - `.c-campaigns__items > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.owl-next.disabled[role="presentation"]`
+- `.c-campaigns__items > .owl-nav > .owl-next[role="presentation"][type="button"]`
 - `.js-overflow-scrolling > .owl-nav > .owl-prev.disabled[role="presentation"]`
 - `.js-overflow-scrolling > .owl-nav > .owl-next[role="presentation"][type="button"]`
 
@@ -115,7 +115,7 @@
 #### Affected Elements:
 
 - `.c-campaigns__items > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.owl-next.disabled[role="presentation"]`
+- `.c-campaigns__items > .owl-nav > .owl-next[role="presentation"][type="button"]`
 - `.js-overflow-scrolling > .owl-nav > .owl-prev.disabled[role="presentation"]`
 - `.js-overflow-scrolling > .owl-nav > .owl-next[role="presentation"][type="button"]`
 

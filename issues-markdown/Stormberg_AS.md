@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-05-07T20:22:48.774Z
+**Timestamp:** 2026-05-08T01:11:25.838Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -31,31 +31,31 @@
 
 - `.h2.e0.e1 > div > div`
 - `.h4.am[href$="maisalg"]`
-- `a[aria-label="Sylan 3-personers tunneltelt"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Sylan 3-personers tunneltelt"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `a[aria-label="Sylan 3-personers tunneltelt"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `a[aria-label="Valvik matboks 1650 ml"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Valvik matboks 1650 ml"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `a[aria-label="Valvik matboks 1650 ml"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `a[aria-label="Henningsvær kort teknisk cape"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Henningsvær kort teknisk cape"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `a[aria-label="Henningsvær kort teknisk cape"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `a[aria-label="Bris lettvekts turbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Bris lettvekts turbukse"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `a[aria-label="Bris lettvekts turbukse"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `a[aria-label="Vesterfjell tursekk 60 L"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Vesterfjell tursekk 60 L"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Larvik skalljakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Larvik skalljakke"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `li:nth-child(2) > .ic.id[aria-label="Lofotregn skallponcho"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `li:nth-child(2) > .ic.id[aria-label="Lofotregn skallponcho"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `li:nth-child(3) > .ic.id[aria-label="Lofotregn skallponcho"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `li:nth-child(3) > .ic.id[aria-label="Lofotregn skallponcho"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `a[aria-label="Lindum sneaker"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Lindum sneaker"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `a[aria-label="Brattli vanntett tursko junior"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(2) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(2) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Lofotregn skallponcho"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Lofotregn skallponcho"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Brattli vanntett tursko junior"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `a[aria-label="Brattli vanntett tursko junior"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `a[aria-label="Skomvær skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Røstvær skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Regnstua parkdress barn 1-7"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Hinnstein fritidsbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Harstad skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Skomvær skalljakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Røstvær skalljakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Regnstua parkdress barn 1-7"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Harstad skalljakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Nordkinn skallbukse barn 8-14"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
