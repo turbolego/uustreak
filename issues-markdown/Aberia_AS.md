@@ -1,6 +1,6 @@
 # WCAG Violations Report for Aberia AS
 
-**Timestamp:** 2026-05-08T00:47:03.930Z
+**Timestamp:** 2026-05-09T00:47:36.201Z
 **URL:** [https://www.aberia.no/#](https://www.aberia.no/#)
 **Total Violations:** 6
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `#col-470388480 > .dark.col-inner > p`
-- `#col-1911650741 > .dark.col-inner > p`
+- `#col-439522767 > .dark.col-inner > p`
+- `#col-906150584 > .dark.col-inner > p`
 
 ### Main landmark should not be contained in another landmark
 
@@ -61,17 +61,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 7
+- **Count:** 1
 
 #### Affected Elements:
 
 - `.cli-bar-message`
-- `#chat-header-text`
-- `#info-bar`
-- `#info-overlay-content`
-- `#chat-messages`
-- `#chat-input`
-- `.chat-footer`
 
 ### Scrollable region must have keyboard access
 
@@ -79,9 +73,8 @@
 - **Description:** Ensure elements that have scrollable content are accessible by keyboard
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
 - `.slider`
-- `#info-overlay-content`
