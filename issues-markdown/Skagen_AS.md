@@ -1,7 +1,7 @@
 # WCAG Violations Report for Skagen AS
 
-**Timestamp:** 2026-05-09T01:03:30.846Z
-**URL:** [https://www.skagenfondene.no/#](https://www.skagenfondene.no/#)
+**Timestamp:** 2026-05-10T01:16:14.064Z
+**URL:** [https://www.skagenfondene.no/](https://www.skagenfondene.no/)
 **Total Violations:** 6
 
 ## Violation Details

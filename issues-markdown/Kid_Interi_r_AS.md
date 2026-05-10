@@ -1,7 +1,7 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-05-09T01:23:31.591Z
-**URL:** [https://www.kid.no/#](https://www.kid.no/#)
+**Timestamp:** 2026-05-10T01:38:32.136Z
+**URL:** [https://www.kid.no/](https://www.kid.no/)
 **Total Violations:** 7
 
 ## Violation Details
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `div:nth-child(10) > .ke.ja.jb > .kn.f6.km > .kq.kr.ko`
-- `div:nth-child(17) > .ke.ja.jb > .kn.f6.km > .kq.kr.ko`
+- `div:nth-child(10) > .ke.ja.jb > .kn.f6.je > .kq.kr.ko`
+- `div:nth-child(17) > .ke.ja.jb > .kn.f6.je > .kq.kr.ko`
 
 ### Heading levels should only increase by one
 
@@ -41,9 +41,9 @@
 
 #### Affected Elements:
 
-- `div:nth-child(4) > .jc.ja.jb > .k1.ge.k2 > .fx.bx > div > div > .k3.jg.k2 > .k2.bx > .k4.gg.gf > .k5.gk.gl`
-- `div:nth-child(9) > .jc.ja.jb > .k1.ge.k2 > .fx.bx > div > div > .k3.jg.k2 > .k2.bx > .k4.gg.gf > .k5.gk.gl`
-- `div:nth-child(11) > .jc.ja.jb > .k1.ge.k2 > .fx.bx > div > div > .k3.jg.k2 > .k2.bx > .k4.gg.gf > .k5.gk.gl`
+- `div:nth-child(4) > .jc.ja.jb > .k1.k2.ge > .fx.bx > div > div > .k3.jg.k2 > .k2.bx > .k4.gg.gf > .k5.gj.gi`
+- `div:nth-child(9) > .jc.ja.jb > .k1.k2.ge > .fx.bx > div > div > .k3.jg.k2 > .k2.bx > .k4.gg.gf > .k5.gj.gi`
+- `div:nth-child(11) > .jc.ja.jb > .k1.k2.ge > .fx.bx > div > div > .k3.jg.k2 > .k2.bx > .k4.gg.gf > .k5.gj.gi`
 
 ### Document should not have more than one banner landmark
 
@@ -63,11 +63,12 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
 - `#coiOverlay`
+- `.ru.p1.p2:nth-child(1) > .lx.ly.bd > .bk.c.b > .bv.bn.ep > .s0.rz[role="region"]`
 
 ### Links must have discernible text
 
@@ -79,9 +80,9 @@
 
 #### Affected Elements:
 
-- `div:nth-child(12) > .me.kn.jf > .mf:nth-child(1) > .bx > .mj.mk.km > .f4.f.gc`
-- `div:nth-child(12) > .me.kn.jf > .mf:nth-child(2) > .bx > .mj.mk.km > .f4.f.gc`
-- `div:nth-child(12) > .me.kn.jf > .mf:nth-child(3) > .bx > .mj.mk.km > .f4.f.gc`
+- `div:nth-child(12) > .me.kn.jf > .mf:nth-child(1) > .bx > .hq.iq.is > .f4.f.gc`
+- `div:nth-child(12) > .me.kn.jf > .mf:nth-child(2) > .bx > .hq.iq.is > .f4.f.gc`
+- `div:nth-child(12) > .me.kn.jf > .mf:nth-child(3) > .bx > .hq.iq.is > .f4.f.gc`
 - `.f4.f[href$="palermo"]`
 - `.f4.f[href$="capri"]`
 - `.f4.f[href$="hageputer"]`

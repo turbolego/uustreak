@@ -1,8 +1,8 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-05-09T01:15:05.092Z
-**URL:** [https://www.f-b.no/#](https://www.f-b.no/#)
-**Total Violations:** 5
+**Timestamp:** 2026-05-10T01:29:51.723Z
+**URL:** [https://www.f-b.no/](https://www.f-b.no/)
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -12,11 +12,10 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#eaframe, #container_10390192 > .info > .info-wrapper > .ctaLink`
 - `.totalt_antall`
 
 ### Frames must have an accessible name
@@ -25,11 +24,25 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 3
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, iframe[scrolling="no"]`
+- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, body > iframe`
+- `#eaframe`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#eaframe`
+- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, img`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
