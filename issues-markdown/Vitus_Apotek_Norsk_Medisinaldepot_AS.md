@@ -1,46 +1,38 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-05-10T01:37:59.384Z
+**Timestamp:** 2026-05-11T01:34:21.835Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
-### Documents must have <title> element to aid in navigation
+### Links must have discernible text
 
 - **Impact:** serious
-- **Description:** Ensure each HTML document contains a non-empty <title> element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/document-title?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag242, TTv5, TT12.a, EN-301-549, EN-9.2.4.2, ACT, RGAAv4, RGAA-8.5.1
-- **Count:** 1
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 5
 
 #### Affected Elements:
 
-- `#__next_error__`
+- `.banner__cover-link[href$="nyheter"]`
+- `.campaign-banner--left.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .banner__cover-link`
+- `.campaign-banner--centered.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .banner__cover-link`
+- `.campaign-banner--centered.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .banner__cover-link`
+- `.banner__cover-link[href$="intimpleie"]`
 
-### <html> element must have a lang attribute
+### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
 - **Impact:** serious
-- **Description:** Ensure every HTML document has a lang attribute
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=playwright
-- **Tags:** cat.language, wcag2a, wcag311, TTv5, TT11.a, EN-301-549, EN-9.3.1.1, ACT, RGAAv4, RGAA-8.3.1
+- **Description:** Ensure that lists are structured correctly
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/list?application=playwright
+- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#__next_error__`
-
-### Document should have one main landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the document has a main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#__next_error__`
+- `.nav-desktop__list`
 
 ### All page content should be contained by landmarks
 
@@ -48,9 +40,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
-- `h1`
-- `p`
+- `.header__skip-link`
+- `.footer-banner > .banner__image-wrapper`
+- `.footer-banner > .banner__content-wrapper`

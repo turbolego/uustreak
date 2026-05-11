@@ -1,7 +1,7 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-05-10T01:38:32.136Z
-**URL:** [https://www.kid.no/](https://www.kid.no/)
+**Timestamp:** 2026-05-11T01:28:41.015Z
+**URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
 ## Violation Details
@@ -12,12 +12,11 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `div:nth-child(10) > .ke.ja.jb > .kn.f6.je > .kq.kr.ko`
-- `div:nth-child(17) > .ke.ja.jb > .kn.f6.je > .kq.kr.ko`
+- `.lt`
 
 ### Heading levels should only increase by one
 
@@ -37,13 +36,12 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `div:nth-child(4) > .jc.ja.jb > .k1.k2.ge > .fx.bx > div > div > .k3.jg.k2 > .k2.bx > .k4.gg.gf > .k5.gj.gi`
-- `div:nth-child(9) > .jc.ja.jb > .k1.k2.ge > .fx.bx > div > div > .k3.jg.k2 > .k2.bx > .k4.gg.gf > .k5.gj.gi`
-- `div:nth-child(11) > .jc.ja.jb > .k1.k2.ge > .fx.bx > div > div > .k3.jg.k2 > .k2.bx > .k4.gg.gf > .k5.gj.gi`
+- `div:nth-child(5) > .jt.jr.js > .k9.gm.ka > .fv.bx > div > div > .kb.jx.ka > .ka.bx > .kc.go.gn > .kd.gs.gt`
+- `div:nth-child(11) > .jt.jr.js > .k9.gm.ka > .fv.bx > div > div > .kb.jx.ka > .ka.bx > .kc.go.gn > .kd.gs.gt`
 
 ### Document should not have more than one banner landmark
 
@@ -63,12 +61,11 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
 - `#coiOverlay`
-- `.ru.p1.p2:nth-child(1) > .lx.ly.bd > .bk.c.b > .bv.bn.ep > .s0.rz[role="region"]`
 
 ### Links must have discernible text
 
@@ -76,16 +73,13 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 6
+- **Count:** 3
 
 #### Affected Elements:
 
-- `div:nth-child(12) > .me.kn.jf > .mf:nth-child(1) > .bx > .hq.iq.is > .f4.f.gc`
-- `div:nth-child(12) > .me.kn.jf > .mf:nth-child(2) > .bx > .hq.iq.is > .f4.f.gc`
-- `div:nth-child(12) > .me.kn.jf > .mf:nth-child(3) > .bx > .hq.iq.is > .f4.f.gc`
-- `.f4.f[href$="palermo"]`
-- `.f4.f[href$="capri"]`
-- `.f4.f[href$="hageputer"]`
+- `.f3.f[href$="palermo"]`
+- `.f3.f[href$="capri"]`
+- `.f3.f[href$="hageputer"]`
 
 ### All page content should be contained by landmarks
 
@@ -99,6 +93,6 @@
 
 - `#skip-to-main-content`
 - `#usp-rotator-instructions`
-- `.bo > div:nth-child(2)`
+- `.bp > div:nth-child(2)`
 - `.tf-header-slider`
 - `.tf-sidebar`

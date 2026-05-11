@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagens Næringsliv AS
 
-**Timestamp:** 2026-05-10T01:18:52.377Z
+**Timestamp:** 2026-05-11T01:08:08.731Z
 **URL:** [https://www.dn.no/](https://www.dn.no/)
 **Total Violations:** 9
 
@@ -12,54 +12,47 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 50
+- **Count:** 43
 
 #### Affected Elements:
 
+- `.item-increased.item[data-v-a56f3944=""]:nth-child(2) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
+- `.item-increased.item[data-v-a56f3944=""]:nth-child(3) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
+- `a[data-id="2-1-1987852"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+- `a[data-id="2-1-1984957"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+- `a[data-id="2-1-1985958"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+- `a[data-id="2-1-1984869"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+- `a[data-id="2-1-1929156"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+- `a[data-id="2-1-1929156"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+- `a[data-id="2-1-1985884"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+- `a[data-id="2-1-1957418"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+- `a[data-id="2-1-1957418"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
 - `a[data-id="2-1-1946385"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
 - `a[data-id="2-1-1946385"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-- `a[data-id="2-1-1986547"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-- `a[data-id="2-1-1986547"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-- `a[data-id="2-1-1987213"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-- `a[data-id="2-1-1987213"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-- `a[data-id="2-1-1976798"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-- `a[data-id="2-1-1976798"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-- `a[data-id="6-1-mvb1zBlS"] > article > .meta > span`
-- `a[data-id="2-1-1984250"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-- `a[data-id="2-1-1987312"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-- `a[data-id="2-1-1982942"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-- `a[data-id="2-1-1982942"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-- `a[data-id="2-1-1941211"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-- `a[data-id="2-1-1941211"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-- `a[data-id="2-1-1984082"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+- `a[data-id="2-1-1987877"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="2-1-1986013"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="2-1-1928931"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
 - `a[data-id="2-1-1928931"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
 - `a[data-id="2-1-1978932"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
 - `a[data-id="2-1-1978932"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-- `a[data-id="2-1-1974131"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-- `a[data-id="2-1-1974131"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-- `a[data-id="2-1-1987661"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-- `.dn-image-format-4x3 > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-- `.dn-image-format-4x3 > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-- `a[data-id="2-1-1984645"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-- `a[data-id="2-1-1984645"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-- `a[data-id="2-1-1985441"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-- `a[data-id="2-1-1948308"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-- `a[data-id="2-1-1948308"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+- `a[data-id="2-1-1986547"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+- `a[data-id="2-1-1986547"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+- `a[data-id="2-1-1987213"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+- `a[data-id="2-1-1987213"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
 - `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(4) > article > .kicker > span`
 - `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(5) > article > .kicker > span`
 - `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(6) > article > .kicker > span`
 - `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(7) > article > .kicker > span`
-- `a[data-id="2-1-1985739"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+- `a[data-id="2-1-1984645"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+- `a[data-id="2-1-1984645"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+- `a[data-id="2-1-1985441"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
+- `.dn-image-format-4x3 > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+- `.dn-image-format-4x3 > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+- `a[data-id="2-1-1948308"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
+- `a[data-id="2-1-1948308"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
+- `a[data-id="2-1-1984250"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="6-1-AduB7GUe"] > article > .meta > span`
-- `a[data-id="2-1-1983159"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-- `a[data-id="2-1-1983159"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-- `a[data-id="2-1-1984190"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
-- `a[data-id="2-1-1984190"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
-- `a[data-id="2-1-1987305"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-- `a[data-id="2-1-1987040"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-- `a[data-id="6-1-8yyj331d"] > article > .meta > span`
+- `a[data-id="2-1-1987312"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
 - `a[data-id="2-1-1980380"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
 - `a[data-id="2-1-1980380"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
 - `a[data-id="2-1-1982821"] > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(1)`
@@ -89,10 +82,10 @@
 
 #### Affected Elements:
 
+- `iframe[seamless=""], a[data-id="mvb1zBlS"] > figure > img`
 - `iframe[seamless=""], a[data-id="TaBvU01a"] > figure > img`
-- `iframe[seamless=""], a[data-id="uilf5qB5"] > figure > img`
-- `iframe[seamless=""], a[data-id="8yyj331d"] > figure > img`
 - `iframe[seamless=""], a[data-id="TTiIcjnE"] > figure > img`
+- `iframe[seamless=""], a[data-id="uilf5qB5"] > figure > img`
 
 ### Alternative text of images should not be repeated as text
 
@@ -104,7 +97,7 @@
 
 #### Affected Elements:
 
-- `a[data-id="6-1-h9bnOZ2L"] > article > .dn-card_assets > .default[type="picture"][data-load="lazy"] > .ratio-16x9 > img[fetchpriority="auto"][loading="lazy"][decoding="async"]`
+- `a[data-id="6-1-rAUrBms0"] > article > .dn-card_assets > .default[data-load="eager"][type="picture"] > .ratio-16x9 > img[fetchpriority="high"][loading="eager"][decoding="async"]`
 
 ### Contentinfo landmark should not be contained in another landmark
 
@@ -160,74 +153,71 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 85
+- **Count:** 82
 
 #### Affected Elements:
 
 - `a[href$="investor"][data-v-a56f3944=""] > span[data-v-a56f3944=""]`
-- `.item.item-decreased[data-v-a56f3944=""]:nth-child(1) > .item-holder[data-v-a56f3944=""]`
-- `.item.item-decreased[data-v-a56f3944=""]:nth-child(1) > .item-difference-holder.item-difference-holder-decreased[data-v-a56f3944=""] > .item-difference.item-percentage.item-difference-decreased`
-- `.item.item-decreased[data-v-a56f3944=""]:nth-child(2) > .item-holder[data-v-a56f3944=""]`
-- `.item.item-decreased[data-v-a56f3944=""]:nth-child(2) > .item-difference-holder.item-difference-holder-decreased[data-v-a56f3944=""] > .item-difference.item-percentage.item-difference-decreased`
-- `.item.item-decreased[data-v-a56f3944=""]:nth-child(3) > .item-holder[data-v-a56f3944=""]`
-- `.item.item-decreased[data-v-a56f3944=""]:nth-child(3) > .item-difference-holder.item-difference-holder-decreased[data-v-a56f3944=""] > .item-difference.item-percentage.item-difference-decreased`
-- `.item.item-decreased[data-v-a56f3944=""]:nth-child(4) > .item-holder[data-v-a56f3944=""]`
-- `.item.item-decreased[data-v-a56f3944=""]:nth-child(4) > .item-difference-holder.item-difference-holder-decreased[data-v-a56f3944=""] > .item-difference.item-percentage.item-difference-decreased`
-- `.item.item-decreased[data-v-a56f3944=""]:nth-child(5) > .item-holder[data-v-a56f3944=""]`
-- `.item.item-decreased[data-v-a56f3944=""]:nth-child(5) > .item-difference-holder.item-difference-holder-decreased[data-v-a56f3944=""] > .item-difference.item-percentage.item-difference-decreased`
-- `.dn-edition-collection-top > .layout-b.dn-grid.dn-grid-layout`
-- `.dn-group[disallowadsbelow="false"]:nth-child(3) > .layout-abb.dn-grid.dn-grid-layout`
+- `.item-decreased.item[data-v-a56f3944=""]:nth-child(1) > .item-holder[data-v-a56f3944=""]`
+- `.item-decreased.item[data-v-a56f3944=""]:nth-child(1) > .item-difference-holder-decreased.item-difference-holder[data-v-a56f3944=""] > .item-difference-decreased.item-difference.item-percentage`
+- `.item-increased.item[data-v-a56f3944=""]:nth-child(2) > .item-holder[data-v-a56f3944=""]`
+- `.item-increased.item[data-v-a56f3944=""]:nth-child(2) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
+- `.item-increased.item[data-v-a56f3944=""]:nth-child(3) > .item-holder[data-v-a56f3944=""]`
+- `.item-increased.item[data-v-a56f3944=""]:nth-child(3) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
+- `.item-decreased.item[data-v-a56f3944=""]:nth-child(4) > .item-holder[data-v-a56f3944=""]`
+- `.item-decreased.item[data-v-a56f3944=""]:nth-child(4) > .item-difference-holder-decreased.item-difference-holder[data-v-a56f3944=""] > .item-difference-decreased.item-difference.item-percentage`
+- `.item-decreased.item[data-v-a56f3944=""]:nth-child(5) > .item-holder[data-v-a56f3944=""]`
+- `.item-decreased.item[data-v-a56f3944=""]:nth-child(5) > .item-difference-holder-decreased.item-difference-holder[data-v-a56f3944=""] > .item-difference-decreased.item-difference.item-percentage`
+- `.dn-group[disallowadsbelow="false"]:nth-child(2) > .layout-abb.dn-grid.dn-grid-layout`
+- `a[data-id="6-1-rAUrBms0"] > article > .dn-card_assets > .default[data-load="eager"][type="picture"]`
+- `a[data-id="6-1-rAUrBms0"] > article > .title.dn-headline--subhead[data-v-1d57e72f=""]`
+- `div[disallowadsbelow="true"]`
+- `.layout-bba.dn-grid.dn-grid-layout:nth-child(5)`
+- `a[data-id="2-1-1985884"]`
+- `a[data-id="2-1-1984270"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
+- `a[data-id="2-1-1984270"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
+- `a[data-id="2-1-1984270"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-1d57e72f=""]`
+- `a[data-id="2-1-1984270"] > article[data-teaser_type="cpp-article-dn"] > .meta`
+- `a[data-id="2-1-1957418"]`
+- `a[data-id="2-1-1985803"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
+- `a[data-id="2-1-1985803"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
+- `a[data-id="2-1-1985803"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-1d57e72f=""]`
+- `a[data-id="2-1-1985803"] > article[data-teaser_type="cpp-article-dn"] > .meta`
+- `a[data-id="2-1-1987058"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
+- `a[data-id="2-1-1987058"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
+- `a[data-id="2-1-1987058"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-1d57e72f=""]`
+- `a[data-id="2-1-1987058"] > article[data-teaser_type="cpp-article-dn"] > .meta`
+- `a[data-id="6-1-X4gXcsqZ"] > article > .dn-card_assets > .default[type="picture"][data-load="lazy"]`
+- `a[data-id="6-1-X4gXcsqZ"] > article > .kicker`
+- `a[data-id="6-1-X4gXcsqZ"] > article > .title.dn-headline--subhead[data-v-1d57e72f=""]`
+- `a[data-id="2-1-1946385"]`
+- `.dn-group[disallowadsbelow="false"]:nth-child(8) > .layout-b.dn-grid.dn-grid-layout`
+- `div[grouptype="Audience Engagement 1"]`
+- `.layout-bba.dn-grid.dn-grid-layout:nth-child(12)`
+- `a[href$="dnjobb.no/"] > span`
+- `.dn-job-button`
+- `.dn-job-carousel`
+- `a[data-id="2-1-1981654"]`
+- `a[data-id="2-1-1984584"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
+- `a[data-id="2-1-1984584"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
+- `a[data-id="2-1-1984584"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-1d57e72f=""]`
+- `a[data-id="2-1-1984584"] > article[data-teaser_type="cpp-article-dn"] > .meta`
+- `a[data-id="2-1-1986704"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
+- `a[data-id="2-1-1986704"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
+- `a[data-id="2-1-1986704"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-1d57e72f=""]`
+- `a[data-id="2-1-1986704"] > article[data-teaser_type="cpp-article-dn"] > .meta`
+- `div[grouptype="Audience Engagement 2"]`
+- `.brand-secondary.dn-group[disallowadsbelow="false"]`
+- `a[data-id="2-1-1984250"]`
+- `a[data-id="6-1-AduB7GUe"] > article > .dn-card_assets > .default[type="picture"][data-load="lazy"]`
+- `a[data-id="6-1-AduB7GUe"] > article > .kicker`
+- `a[data-id="6-1-AduB7GUe"] > article > .title.dn-headline--subhead[data-v-1d57e72f=""]`
+- `a[data-id="6-1-AduB7GUe"] > article > .meta`
 - `a[data-id="2-1-1987486"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
 - `a[data-id="2-1-1987486"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
 - `a[data-id="2-1-1987486"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-1d57e72f=""]`
 - `a[data-id="2-1-1987486"] > article[data-teaser_type="cpp-article-dn"] > .meta`
-- `div[disallowadsbelow="true"]`
-- `a[data-id="2-1-1976798"]`
-- `a[data-id="6-1-mvb1zBlS"] > article > .dn-card_assets > .default[type="picture"][data-load="lazy"]`
-- `a[data-id="6-1-mvb1zBlS"] > article > .title.dn-headline--subhead[data-v-1d57e72f=""]`
-- `a[data-id="6-1-mvb1zBlS"] > article > .meta`
-- `a[data-id="2-1-1981654"]`
-- `a[data-id="2-1-1984250"]`
-- `a[data-id="2-1-1987312"]`
-- `a[data-id="2-1-1986618"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
-- `a[data-id="2-1-1986618"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
-- `a[data-id="2-1-1986618"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-1d57e72f=""]`
-- `a[data-id="2-1-1986618"] > article[data-teaser_type="cpp-article-dn"] > .meta`
-- `.layout-bba.dn-grid.dn-grid-layout:nth-child(8)`
-- `div[grouptype="Audience Engagement 1"]`
-- `a[data-id="2-1-1974131"]`
-- `a[data-id="6-1-h9bnOZ2L"] > article > .dn-card_assets > .default[type="picture"][data-load="lazy"]`
-- `a[data-id="6-1-h9bnOZ2L"] > article > .title.dn-headline--subhead[data-v-1d57e72f=""]`
-- `a[data-id="2-1-1987349"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
-- `a[data-id="2-1-1987349"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
-- `a[data-id="2-1-1987349"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-1d57e72f=""]`
-- `a[data-id="2-1-1987349"] > article[data-teaser_type="cpp-article-dn"] > .meta`
-- `a[data-id="2-1-1987376"]`
-- `a[data-id="2-1-1987572"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
-- `a[data-id="2-1-1987572"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
-- `a[data-id="2-1-1987572"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-1d57e72f=""]`
-- `a[data-id="2-1-1987572"] > article[data-teaser_type="cpp-article-dn"] > .meta`
-- `a[data-id="2-1-1987661"]`
-- `div[grouptype="Audience Engagement 2"]`
-- `a[href$="dnjobb.no/"] > span`
-- `.dn-job-button`
-- `.dn-job-carousel`
-- `a[data-id="2-1-1985739"]`
-- `a[data-id="6-1-AduB7GUe"] > article > .dn-card_assets > .default[type="picture"][data-load="lazy"]`
-- `a[data-id="6-1-AduB7GUe"] > article > .title.dn-headline--subhead[data-v-1d57e72f=""]`
-- `a[data-id="6-1-AduB7GUe"] > article > .meta`
-- `a[data-id="2-1-1983159"]`
-- `a[data-id="2-1-1986099"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
-- `a[data-id="2-1-1986099"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
-- `a[data-id="2-1-1986099"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-1d57e72f=""]`
-- `a[data-id="2-1-1986099"] > article[data-teaser_type="cpp-article-dn"] > .meta`
-- `a[data-id="2-1-1984190"]`
-- `a[data-id="2-1-1987305"]`
-- `a[data-id="2-1-1987040"]`
-- `a[data-id="6-1-8yyj331d"] > article > .dn-card_assets > .default[type="picture"][data-load="lazy"]`
-- `a[data-id="6-1-8yyj331d"] > article > .kicker`
-- `a[data-id="6-1-8yyj331d"] > article > .title.dn-headline--subhead[data-v-1d57e72f=""]`
-- `a[data-id="6-1-8yyj331d"] > article > .meta`
+- `.dn-edition-collection-top > .layout-b.dn-grid.dn-grid-layout`
 - `a[data-id="2-1-1985600"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
 - `a[data-id="2-1-1985600"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
 - `a[data-id="2-1-1985600"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-1d57e72f=""]`
