@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sandnes kommune
 
-**Timestamp:** 2026-05-11T01:09:18.833Z
+**Timestamp:** 2026-05-12T01:01:02.665Z
 **URL:** [https://www.sandnes.kommune.no/#](https://www.sandnes.kommune.no/#)
 **Total Violations:** 6
 
@@ -57,15 +57,15 @@
 - `.border-bottom--1.line-height--27[href=""]`
 - `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-1.day-listings.single-date-list:nth-child(3) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-2.day-listings.single-date-list:nth-child(4) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(5) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(5) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(6) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-2.day-listings.single-date-list:nth-child(7) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-2.day-listings.single-date-list:nth-child(7) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(4) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(4) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(5) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-2 > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-2 > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .list-item.line:nth-child(3) > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .list-item.line:nth-child(4) > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-3 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-4 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 
 ### All page content should be contained by landmarks
 

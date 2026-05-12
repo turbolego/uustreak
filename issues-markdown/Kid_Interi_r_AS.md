@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-05-11T01:28:41.015Z
+**Timestamp:** 2026-05-12T01:25:43.267Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.lt`
+- `.lo`
 
 ### Heading levels should only increase by one
 
@@ -40,8 +40,8 @@
 
 #### Affected Elements:
 
-- `div:nth-child(5) > .jt.jr.js > .k9.gm.ka > .fv.bx > div > div > .kb.jx.ka > .ka.bx > .kc.go.gn > .kd.gs.gt`
-- `div:nth-child(11) > .jt.jr.js > .k9.gm.ka > .fv.bx > div > div > .kb.jx.ka > .ka.bx > .kc.go.gn > .kd.gs.gt`
+- `div:nth-child(5) > .jo.jm.jn > .k4.ge.k5 > .fv.bx > div > div > .k6.js.k5 > .k5.bx > .k7.gg.gf > .k8.gk.gl`
+- `div:nth-child(11) > .jo.jm.jn > .k4.ge.k5 > .fv.bx > div > div > .k6.js.k5 > .k5.bx > .k7.gg.gf > .k8.gk.gl`
 
 ### Document should not have more than one banner landmark
 

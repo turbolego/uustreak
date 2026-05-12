@@ -1,6 +1,6 @@
 # WCAG Violations Report for The Thief Hotel AS
 
-**Timestamp:** 2026-05-11T01:24:56.379Z
+**Timestamp:** 2026-05-12T01:16:31.245Z
 **URL:** [https://thethief.com/](https://thethief.com/)
 **Total Violations:** 4
 
@@ -31,20 +31,6 @@
 
 - `#heading-572 > .block-module__inner.block-block__inner > h4`
 
-### Form elements must have labels
-
-- **Impact:** critical
-- **Description:** Ensure every form element has a label
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/label?application=playwright
-- **Tags:** cat.forms, wcag2a, wcag412, section508, section508.22.n, TTv5, TT5.c, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.1.1
-- **Count:** 3
-
-#### Affected Elements:
-
-- `#revinate_contact_api_form_no > .form__inner > .form__fields > .two-columns > .form-group:nth-child(1) > .long[name="firstName"][type="text"]`
-- `#revinate_contact_api_form_no > .form__inner > .form__fields > .two-columns > .form-group:nth-child(2) > .long[name="lastName"][type="text"]`
-- `#revinate_contact_api_form_no > .form__inner > .form__fields > .form-group:nth-child(2) > .long[required=""][type="email"]`
-
 ### Links must have discernible text
 
 - **Impact:** serious
@@ -56,3 +42,15 @@
 #### Affected Elements:
 
 - `#image-145 > .block-module__inner[target="_blank"][rel="noopener"]`
+
+### <svg> elements with an img role must have alternative text
+
+- **Impact:** serious
+- **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/svg-img-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
+- **Count:** 1
+
+#### Affected Elements:
+
+- `gh-newsletter,svg[viewBox="0 0 16 17"]`
