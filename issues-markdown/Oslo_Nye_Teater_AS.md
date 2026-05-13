@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2026-05-12T00:56:18.210Z
+**Timestamp:** 2026-05-13T01:00:25.592Z
 **URL:** [https://oslonye.no/#](https://oslonye.no/#)
 **Total Violations:** 5
 
@@ -81,6 +81,7 @@
 
 #### Affected Elements:
 
+- `#background-video`
 - `.background-link`
 - `.hero-banner > .grid-container`
 - `.theater-list > li:nth-child(1)`
@@ -121,4 +122,3 @@
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(15)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(16)`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(17)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(18)`
