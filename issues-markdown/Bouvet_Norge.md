@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bouvet Norge
 
-**Timestamp:** 2026-05-13T01:03:09.759Z
+**Timestamp:** 2026-05-14T01:04:17.396Z
 **URL:** [https://www.bouvet.no/#](https://www.bouvet.no/#)
 **Total Violations:** 8
 
@@ -117,7 +117,6 @@
 - `section`
 - `.section-bottom-space.container-flex-justify-center.util-flex-row`
 - `.part-container[data-portal-component-type="part"]:nth-child(5) > .util-flex-column-large.util-flex-row-small.collapsible__button`
-- `.part-container[data-portal-component-type="part"]:nth-child(6)`
 - `.block-bottom-space.util-container-padding.util-flex-column`
 - `div[role="grid"] > .course-calendar-wrap-row\.is-head`
 - `div[role="grid"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-name`
@@ -140,15 +139,16 @@
 - `time[datetime="2026-06-09"]`
 - `.course-calendar-wrap-row:nth-child(6) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
 - `.course-calendar-wrap-row:nth-child(6) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
+- `.part-container[data-portal-component-type="part"]:nth-child(8)`
 - `.part-container[data-portal-component-type="part"]:nth-child(9)`
 - `.related-courses-inner.creme-light > .h3-styling`
 - `.related-courses-ingress`
 - `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row\.is-head`
 - `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-name`
 - `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-date`
+- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
 - `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-name`
 - `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-date`
-- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
 - `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-name`
 - `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-date`
 - `.layout-container[data-portal-component-type="layout"]:nth-child(11)`

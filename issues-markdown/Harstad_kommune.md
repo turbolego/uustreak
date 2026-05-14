@@ -1,6 +1,6 @@
 # WCAG Violations Report for Harstad kommune
 
-**Timestamp:** 2026-05-13T01:21:34.744Z
+**Timestamp:** 2026-05-14T01:22:43.975Z
 **URL:** [https://www.harstad.kommune.no/#](https://www.harstad.kommune.no/#)
 **Total Violations:** 1
 

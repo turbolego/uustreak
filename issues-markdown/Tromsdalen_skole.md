@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tromsdalen skole
 
-**Timestamp:** 2026-05-13T01:22:24.646Z
+**Timestamp:** 2026-05-14T01:24:25.595Z
 **URL:** [https://tromsdalen.tromsoskolen.no/#](https://tromsdalen.tromsoskolen.no/#)
 **Total Violations:** 8
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f1f28f25cf153bbc6"], ._55yn`
+- `iframe[name="f609733e2368e4475"], ._55yn`
 
 ### Elements must only use permitted ARIA attributes
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="f1f28f25cf153bbc6"], div[role="feed"]`
+- `iframe[name="f609733e2368e4475"], div[role="feed"]`
 
 ### Buttons must have discernible text
 
@@ -80,7 +80,7 @@
 - `td > a[href$="login"]`
 - `tr:nth-child(5) > td > a[target="linkwindow1692"]`
 - `tr:nth-child(7) > td > a[target="linkwindow1692"]`
-- `iframe[name="f1f28f25cf153bbc6"], abbr[data-utime="1778517082"] > .timestampContent`
+- `iframe[name="f609733e2368e4475"], abbr[data-utime="1778517082"] > .timestampContent`
 
 ### Frames with focusable content must not have tabindex=-1
 
@@ -132,12 +132,12 @@
 - `p:nth-child(3) > a:nth-child(5)`
 - `p:nth-child(3) > a:nth-child(7)`
 - `p:nth-child(3) > a[target="_blank"]:nth-child(9)`
-- `iframe[name="f1f28f25cf153bbc6"], #u_0_1_Sg`
-- `iframe[name="f1f28f25cf153bbc6"], .lfloat:nth-child(1)`
-- `iframe[name="f1f28f25cf153bbc6"], #u_1_c_jC > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f1f28f25cf153bbc6"], #u_1_q_Aw > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f1f28f25cf153bbc6"], #u_1_7_zi > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
-- `iframe[name="f1f28f25cf153bbc6"], #u_1_7_zi > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f1f28f25cf153bbc6"], #u_1_6_J9 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
-- `iframe[name="f1f28f25cf153bbc6"], #u_1_6_J9 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-- `iframe[name="f1f28f25cf153bbc6"], #u_1_5_iY > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f609733e2368e4475"], #u_0_1_iV`
+- `iframe[name="f609733e2368e4475"], .lfloat:nth-child(1)`
+- `iframe[name="f609733e2368e4475"], #u_1_7_yf > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f609733e2368e4475"], #u_1_8_yo > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f609733e2368e4475"], #u_1_6_Of > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
+- `iframe[name="f609733e2368e4475"], #u_1_6_Of > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f609733e2368e4475"], #u_1_5_oq > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
+- `iframe[name="f609733e2368e4475"], #u_1_5_oq > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
+- `iframe[name="f609733e2368e4475"], #u_1_q_xA > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`

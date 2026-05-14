@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-05-13T01:02:02.402Z
+**Timestamp:** 2026-05-14T01:03:10.834Z
 **URL:** [https://www.nordlys.no/#](https://www.nordlys.no/#)
 **Total Violations:** 5
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="5"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `.optimus-background-custom-sport > .wrap-horizontal.wrap-horizontal-space > brick-carousel-v2[data-slides="10"][data-version="carousel"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 

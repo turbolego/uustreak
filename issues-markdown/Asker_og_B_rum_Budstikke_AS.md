@@ -1,8 +1,8 @@
 # WCAG Violations Report for Asker og Bærum Budstikke AS
 
-**Timestamp:** 2026-05-13T00:57:03.277Z
+**Timestamp:** 2026-05-14T00:58:17.477Z
 **URL:** [https://www.budstikka.no/#](https://www.budstikka.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#eaframe, #container_10389338 > .info > .info-wrapper > .ctaLink`
+- `#eaframe, #container_10393063 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
@@ -29,6 +29,18 @@
 #### Affected Elements:
 
 - `#eaframe`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `brick-carousel-v2[data-slides="20"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 

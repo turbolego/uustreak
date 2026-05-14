@@ -1,34 +1,22 @@
 # WCAG Violations Report for Strindheim skole
 
-**Timestamp:** 2026-05-13T01:16:10.428Z
+**Timestamp:** 2026-05-14T01:18:12.675Z
 **URL:** [https://www.trondheim.kommune.no/org/oppvekst/skoler/strindheim-skole/#](https://www.trondheim.kommune.no/org/oppvekst/skoler/strindheim-skole/#)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
 
-### <html> element must have a lang attribute
-
-- **Impact:** serious
-- **Description:** Ensure every HTML document has a lang attribute
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=playwright
-- **Tags:** cat.language, wcag2a, wcag311, TTv5, TT11.a, EN-301-549, EN-9.3.1.1, ACT, RGAAv4, RGAA-8.3.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `html`
-
-### Document should have one main landmark
+### Heading levels should only increase by one
 
 - **Impact:** moderate
-- **Description:** Ensure the document has a main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `html`
+- `h4`
 
 ### All page content should be contained by landmarks
 
@@ -36,9 +24,8 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `center:nth-child(1)`
-- `center:nth-child(3)`
+- `.fant-du__heading`
