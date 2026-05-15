@@ -1,6 +1,6 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2026-05-14T01:01:58.559Z
+**Timestamp:** 2026-05-15T00:59:26.655Z
 **URL:** [https://www.bestwestern.no/#](https://www.bestwestern.no/#)
 **Total Violations:** 3
 
@@ -42,14 +42,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 7
+- **Count:** 3
 
 #### Affected Elements:
 
 - `.\[\&\:not\(\:focus\)\]\:visually-hidden`
 - `.pr-2`
 - `a[href$="bestwestern.com/"]`
-- `#ddChallengeBody1778720512021, .captcha__header`
-- `#ddChallengeBody1778720512021, .captcha__human`
-- `#ddChallengeBody1778720512021, .captcha__robot__warning`
-- `#ddChallengeBody1778720512021, .captcha__robot__contact_support`
