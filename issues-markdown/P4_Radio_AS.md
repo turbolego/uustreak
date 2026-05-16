@@ -1,6 +1,6 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-05-15T01:00:17.921Z
+**Timestamp:** 2026-05-16T00:57:47.589Z
 **URL:** [https://www.lydenavnorge.no/p4/](https://www.lydenavnorge.no/p4/)
 **Total Violations:** 7
 
@@ -113,11 +113,11 @@
 
 - `.image-container[data-v-8df35db2=""] > a[data-v-8df35db2=""]`
 - `.content-box.compact[data-v-d583c235=""] > .image-link[data-v-d583c235=""]`
-- `.image-link[href$="fem-pa/"][data-v-fb42f4ef=""]`
-- `.contest-box.medium-large.item:nth-child(1) > .image-link[data-v-f1ce81f5=""]`
-- `.contest-box.medium-large.item:nth-child(2) > .image-link[data-v-f1ce81f5=""]`
-- `.content-box.medium-large.item:nth-child(1) > .image-link[data-v-d583c235=""]`
-- `.content-box.medium-large.item:nth-child(2) > .image-link[data-v-d583c235=""]`
+- `.large.contest-box.item > .image-link`
+- `.container[data-v-30b48782=""]:nth-child(3) > .grid > .medium-large.contest-box.item:nth-child(1) > .image-link`
+- `.medium-large.contest-box.item:nth-child(2) > .image-link`
+- `.container[data-v-30b48782=""]:nth-child(5) > .grid > .medium-large.contest-box.item > .image-link`
+- `.image-link[href$="fem-pa/"][data-v-d583c235=""]`
 - `.large.section-box.item > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
 - `.small.section-box.item:nth-child(1) > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
 - `.small.section-box.item:nth-child(2) > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`

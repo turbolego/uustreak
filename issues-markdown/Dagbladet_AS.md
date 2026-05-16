@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-05-15T01:05:07.624Z
+**Timestamp:** 2026-05-16T01:02:34.323Z
 **URL:** [https://www.dagbladet.no/#](https://www.dagbladet.no/#)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -12,16 +12,32 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 6
+- **Count:** 10
 
 #### Affected Elements:
 
-- `.below > .kicker-content`
+- `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(3) > .song-title.svelte-1mbdfa7`
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(3) > .song-author.svelte-1mbdfa7`
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(4) > .song-title.svelte-1mbdfa7`
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(4) > .song-author.svelte-1mbdfa7`
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(5) > .song-title.svelte-1mbdfa7`
 - `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(5) > .song-author.svelte-1mbdfa7`
+- `.tm43 > .text-red.color_mobile_text-red[data-lab-text_color_desktop="text-red"]`
+- `.color_mobile_bg-yellow.bg-yellow.hasContentPadding > a[itemprop="url"][rel=""] > .below.hasTextColor.hasTextColorMobile > .kicker-content`
+- `.color_mobile_bg-black.bg-black.hasContentPadding > a[itemprop="url"][rel=""] > .below.hasTextColor.hasTextColorMobile > .kicker-content`
+- `.t73 > .text-red.color_mobile_text-red[data-lab-text_color_desktop="text-red"]`
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.flex-initial.xrow.row:nth-child(87) > .small-5.medium-5.large-5 > .bg-white.content > a > .xavier-headline.xre`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
