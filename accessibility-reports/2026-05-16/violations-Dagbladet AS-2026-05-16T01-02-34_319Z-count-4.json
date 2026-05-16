@@ -1,0 +1,167 @@
+{
+  "project": "Dagbladet AS",
+  "timestamp": "2026-05-16T01:02:34.323Z",
+  "url": "https://www.dagbladet.no/#",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 10,
+      "nodes": [
+        {
+          "html": "<span class=\"song-title svelte-1mbdfa7\">Emil og Isak på Vigør</span>",
+          "target": [
+            ".song-chip[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(3) > .song-title.svelte-1mbdfa7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.16 (foreground color: #ffffff, background color: #eeeeee, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"song-author svelte-1mbdfa7\">Isak</span>",
+          "target": [
+            ".song-chip[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(3) > .song-author.svelte-1mbdfa7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.16 (foreground color: #ffffff, background color: #eeeeee, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"song-title svelte-1mbdfa7\">Hele norge er delulu!</span>",
+          "target": [
+            ".song-chip[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(4) > .song-title.svelte-1mbdfa7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.16 (foreground color: #ffffff, background color: #eeeeee, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"song-author svelte-1mbdfa7\">Siri Margrethe Bongo</span>",
+          "target": [
+            ".song-chip[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(4) > .song-author.svelte-1mbdfa7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.16 (foreground color: #ffffff, background color: #eeeeee, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"song-title svelte-1mbdfa7\">Vi er Norge</span>",
+          "target": [
+            ".song-chip[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(5) > .song-title.svelte-1mbdfa7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.16 (foreground color: #ffffff, background color: #eeeeee, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"song-author svelte-1mbdfa7\">jon morten hagen</span>",
+          "target": [
+            ".song-chip[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(5) > .song-author.svelte-1mbdfa7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.16 (foreground color: #ffffff, background color: #eeeeee, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"text-red color_mobile_text-red\" data-lab-text_color_desktop=\"text-red\">Dukket opp igjen: </span>",
+          "target": [
+            ".tm43 > .text-red.color_mobile_text-red[data-lab-text_color_desktop=\"text-red\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.66 (foreground color: #d60000, background color: #f7a347, font size: 87.0pt (116px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "html": "<div class=\"kicker-content\">«GRAVPLASS»-stempel:</div>",
+          "target": [
+            ".color_mobile_bg-yellow.bg-yellow.hasContentPadding > a[itemprop=\"url\"][rel=\"\"] > .below.hasTextColor.hasTextColorMobile > .kicker-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #d60000, background color: #f1ca3f, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"kicker-content\">To kritisk skadd:</div>",
+          "target": [
+            ".color_mobile_bg-black.bg-black.hasContentPadding > a[itemprop=\"url\"][rel=\"\"] > .below.hasTextColor.hasTextColorMobile > .kicker-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #d60000, background color: #000000, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"text-red color_mobile_text-red\" data-lab-text_color_desktop=\"text-red\">Strømmer til:</span>",
+          "target": [
+            ".t73 > .text-red.color_mobile_text-red[data-lab-text_color_desktop=\"text-red\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.66 (foreground color: #d60000, background color: #f7a347, font size: 54.8pt (73px), font weight: bold). Expected contrast ratio of 3:1"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h2 class=\"xavier-headline headline xre\"><span class=\"title dynamic-sizing\" style=\"--xcs-headline-size-sm:31.36em;--xcs-headline-size-md:93.99em;--xcs-headline-size-lg:93.99rem\"> </span></h2>",
+          "target": [
+            ".flex-initial.xrow.row:nth-child(87) > .small-5.medium-5.large-5 > .bg-white.content > a > .xavier-headline.xre"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"ec__sc-168ntql-0 jkuUMO\">",
+          "target": [
+            ".jkuUMO"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<p>\n        Dagbladet\n        er en del av Aller Media. Aller Media er ansvarlig for dine data på denne nettsiden.\n        &nbsp;<a href=\"https://personvern.aller.no/personvern\">Les mer</a>\n      </p>",
+          "target": [
+            "#am-branding > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
