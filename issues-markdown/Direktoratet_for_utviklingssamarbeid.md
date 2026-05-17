@@ -1,7 +1,7 @@
 # WCAG Violations Report for Direktoratet for utviklingssamarbeid
 
-**Timestamp:** 2026-05-16T01:06:52.927Z
-**URL:** [https://www.norad.no/#](https://www.norad.no/#)
+**Timestamp:** 2026-05-17T01:23:29.082Z
+**URL:** [https://www.norad.no/](https://www.norad.no/)
 **Total Violations:** 3
 
 ## Violation Details

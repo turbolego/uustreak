@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lofotr Vikingmuseum AS
 
-**Timestamp:** 2026-05-16T00:47:30.437Z
+**Timestamp:** 2026-05-17T01:43:50.585Z
 **URL:** [https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/](https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/)
 **Total Violations:** 7
 
@@ -18,7 +18,7 @@
 
 - `.col-12.col-md-4.my-3:nth-child(1) > .card.has-light-blue-background-color.h-100 > .card-footer.wp-block-buttons.aligncenter > .has-blue-primary-background-color.wp-block-button__link`
 - `a[title="Fiske og sjøfangst i vikingtid"]`
-- `a[title="Oppdagelsen av Borg"]`
+- `.col-12.col-md-4.my-3:nth-child(3) > .card.has-light-blue-background-color.h-100 > .card-footer.wp-block-buttons.aligncenter > .has-blue-primary-background-color.wp-block-button__link`
 
 ### Buttons must have discernible text
 

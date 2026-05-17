@@ -1,7 +1,7 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-05-16T01:02:34.323Z
-**URL:** [https://www.dagbladet.no/#](https://www.dagbladet.no/#)
+**Timestamp:** 2026-05-17T01:19:22.614Z
+**URL:** [https://www.dagbladet.no/](https://www.dagbladet.no/)
 **Total Violations:** 4
 
 ## Violation Details
@@ -12,32 +12,24 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 10
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(3) > .song-title.svelte-1mbdfa7`
-- `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(3) > .song-author.svelte-1mbdfa7`
-- `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(4) > .song-title.svelte-1mbdfa7`
-- `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(4) > .song-author.svelte-1mbdfa7`
-- `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(5) > .song-title.svelte-1mbdfa7`
-- `.song-chip[rel="noopener noreferrer"][target="_blank"]:nth-child(5) > .song-author.svelte-1mbdfa7`
-- `.tm43 > .text-red.color_mobile_text-red[data-lab-text_color_desktop="text-red"]`
-- `.color_mobile_bg-yellow.bg-yellow.hasContentPadding > a[itemprop="url"][rel=""] > .below.hasTextColor.hasTextColorMobile > .kicker-content`
-- `.color_mobile_bg-black.bg-black.hasContentPadding > a[itemprop="url"][rel=""] > .below.hasTextColor.hasTextColorMobile > .kicker-content`
-- `.t73 > .text-red.color_mobile_text-red[data-lab-text_color_desktop="text-red"]`
+- `.t164 > .text-red.color_mobile_text-red[data-lab-text_color_desktop="text-red"]`
+- `.below > .kicker-content`
 
-### Headings should not be empty
+### Frames must have an accessible name
 
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.flex-initial.xrow.row:nth-child(87) > .small-5.medium-5.large-5 > .bg-white.content > a > .xavier-headline.xre`
+- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, iframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

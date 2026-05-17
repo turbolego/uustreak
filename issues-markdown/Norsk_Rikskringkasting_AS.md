@@ -1,7 +1,7 @@
 # WCAG Violations Report for Norsk Rikskringkasting AS
 
-**Timestamp:** 2026-05-16T00:55:19.672Z
-**URL:** [https://www.nrk.no/#](https://www.nrk.no/#)
+**Timestamp:** 2026-05-17T01:10:46.331Z
+**URL:** [https://www.nrk.no/](https://www.nrk.no/)
 **Total Violations:** 1
 
 ## Violation Details

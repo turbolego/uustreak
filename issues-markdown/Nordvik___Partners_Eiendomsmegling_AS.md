@@ -1,7 +1,7 @@
 # WCAG Violations Report for Nordvik & Partners Eiendomsmegling AS
 
-**Timestamp:** 2026-05-16T00:52:24.653Z
-**URL:** [https://www.nordvik.no/#](https://www.nordvik.no/#)
+**Timestamp:** 2026-05-17T01:08:19.592Z
+**URL:** [https://www.nordvik.no/](https://www.nordvik.no/)
 **Total Violations:** 6
 
 ## Violation Details

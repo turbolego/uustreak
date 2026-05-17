@@ -1,7 +1,7 @@
 # WCAG Violations Report for Eidsiva Bredbånd AS
 
-**Timestamp:** 2026-05-16T01:07:57.867Z
-**URL:** [https://www.eidsiva.no/#](https://www.eidsiva.no/#)
+**Timestamp:** 2026-05-17T01:24:29.926Z
+**URL:** [https://www.eidsiva.no/](https://www.eidsiva.no/)
 **Total Violations:** 6
 
 ## Violation Details

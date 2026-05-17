@@ -1,10 +1,22 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2026-05-16T01:04:00.744Z
-**URL:** [https://www.dalane-tidende.no/#](https://www.dalane-tidende.no/#)
-**Total Violations:** 4
+**Timestamp:** 2026-05-17T01:20:50.917Z
+**URL:** [https://www.dalane-tidende.no/](https://www.dalane-tidende.no/)
+**Total Violations:** 5
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, iframe, a:nth-child(3) > .creative-container > div > .bottom-background.bottom-background-has-main-image > div > .text-content-container > h1`
 
 ### Frames must have an accessible name
 
@@ -12,10 +24,11 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, iframe`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -28,7 +41,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="4"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `brick-carousel-v2[data-slides="3"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Norges Røde Kors
 
-**Timestamp:** 2026-05-16T00:53:46.718Z
-**URL:** [https://www.rodekors.no/#](https://www.rodekors.no/#)
+**Timestamp:** 2026-05-17T01:09:04.511Z
+**URL:** [https://www.rodekors.no/](https://www.rodekors.no/)
 **Total Violations:** 3
 
 ## Violation Details

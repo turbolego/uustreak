@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-05-16T01:12:10.200Z
+**Timestamp:** 2026-05-17T01:27:19.838Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -31,31 +31,31 @@
 
 - `.h2.e0.e1 > div > div`
 - `.h4.am[href$="helgekupp"]`
-- `a[aria-label="Larvik skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Larvik skalljakke"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Bris lettvekts turbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Bris lettvekts turbukse"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Pasvikdalen 4-personers lavvo"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Pasvikdalen 4-personers lavvo"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Larvik skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Larvik skalljakke"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Sylan 3-personers tunneltelt"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Sylan 3-personers tunneltelt"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Juv turbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Juv turbukse"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `a[aria-label="Pasvikdalen 4-personers lavvo"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Pasvikdalen 4-personers lavvo"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Varde speiderkniv"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Varde speiderkniv"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Utvær Half Zip fleecegenser"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Utvær Half Zip fleecegenser"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `a[aria-label="Drømmesky fleecesett barn 1-7"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Drømmesky fleecesett barn 1-7"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `li:nth-child(3) > .ic.id[aria-label="Drømmesky fleecesett barn 1-7"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `li:nth-child(3) > .ic.id[aria-label="Drømmesky fleecesett barn 1-7"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `li:nth-child(4) > .ic.id[aria-label="Drømmesky fleecesett barn 1-7"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `li:nth-child(4) > .ic.id[aria-label="Drømmesky fleecesett barn 1-7"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Harstad skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Harstad skallanorakk"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `div:nth-child(7) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Åkrafjell sherpajakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Sogndal skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Vestfossen lettvekts regnbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
