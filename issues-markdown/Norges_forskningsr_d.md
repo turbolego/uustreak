@@ -1,7 +1,7 @@
 # WCAG Violations Report for Norges forskningsråd
 
-**Timestamp:** 2026-05-17T01:09:18.359Z
-**URL:** [https://www.forskningsradet.no/](https://www.forskningsradet.no/)
+**Timestamp:** 2026-05-23T19:22:22.200Z
+**URL:** [https://www.forskningsradet.no/#](https://www.forskningsradet.no/#)
 **Total Violations:** 6
 
 ## Violation Details
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.message-global--open-button`
+- `.message-global--container.-is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--open-button[aria-label="Skjul"][type="button"]`
 
 ### Heading levels should only increase by one
 
@@ -73,8 +73,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.message-global--collapse`
+- `.message-global--container.-is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--collapse.-use-intrinsic-height > .message-global--collapse-inner > .html-string`
+- `.message-global--container.-is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--collapse.-use-intrinsic-height > .message-global--collapse-inner > .message-global--navigation > .message-global--navigation-of`

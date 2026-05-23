@@ -1,7 +1,7 @@
 # WCAG Violations Report for Haugesund kommune
 
-**Timestamp:** 2026-05-17T01:34:05.233Z
-**URL:** [https://www.haugesund.kommune.no/](https://www.haugesund.kommune.no/)
+**Timestamp:** 2026-05-23T19:47:32.261Z
+**URL:** [https://www.haugesund.kommune.no/#](https://www.haugesund.kommune.no/#)
 **Total Violations:** 3
 
 ## Violation Details

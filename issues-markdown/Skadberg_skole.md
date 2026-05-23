@@ -1,8 +1,8 @@
 # WCAG Violations Report for Skadberg skole
 
-**Timestamp:** 2026-05-17T01:18:20.110Z
-**URL:** [https://skadberg.solaskolen.no/](https://skadberg.solaskolen.no/)
-**Total Violations:** 3
+**Timestamp:** 2026-05-23T19:32:39.217Z
+**URL:** [https://skadberg.solaskolen.no/#](https://skadberg.solaskolen.no/#)
+**Total Violations:** 2
 
 ## Violation Details
 
@@ -19,18 +19,6 @@
 - `a[href="/"]`
 - `#acceptNecessary`
 - `#acceptAll`
-
-### Links must be distinguishable without relying on color
-
-- **Impact:** serious
-- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright
-- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.boxTextBody > a`
 
 ### All page content should be contained by landmarks
 

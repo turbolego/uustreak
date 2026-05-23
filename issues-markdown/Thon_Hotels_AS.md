@@ -1,7 +1,7 @@
 # WCAG Violations Report for Thon Hotels AS
 
-**Timestamp:** 2026-05-17T01:32:06.982Z
-**URL:** [https://www.thonhotels.no/](https://www.thonhotels.no/)
+**Timestamp:** 2026-05-23T19:46:34.709Z
+**URL:** [https://www.thonhotels.no/#](https://www.thonhotels.no/#)
 **Total Violations:** 4
 
 ## Violation Details
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.m-t-xl.w-layout:nth-child(2) > .story-teaser-wrapper > .story-teaser > .story-teaser__content > .story-teaser__heading.font-h2`
+- `.story-teaser--big-campaign > .story-teaser__content > .story-teaser__heading.font-h2`
 
 ### Document should not have more than one banner landmark
 

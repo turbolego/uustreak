@@ -1,8 +1,8 @@
 # WCAG Violations Report for Atea Norge
 
-**Timestamp:** 2026-05-17T01:11:06.008Z
-**URL:** [https://www.atea.no/](https://www.atea.no/)
-**Total Violations:** 9
+**Timestamp:** 2026-05-23T19:23:44.271Z
+**URL:** [https://www.atea.no/#](https://www.atea.no/#)
+**Total Violations:** 10
 
 ## Violation Details
 
@@ -18,6 +18,18 @@
 
 - `#ot-bnr-grp-id-BG107`
 
+### Elements must only use permitted ARIA attributes
+
+- **Impact:** serious
+- **Description:** Ensure ARIA attributes are not prohibited for an element's role
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#videoLoop, #movie_player`
+
 ### Buttons must have discernible text
 
 - **Impact:** critical
@@ -28,7 +40,7 @@
 
 #### Affected Elements:
 
-- `sleeknote-mwr5k-bottom,sleeknote-form,button[type="button"][draggable="true"][unselectable="on"]`
+- `sleeknote-t11jor-bottom,sleeknote-form,button[type="button"][draggable="true"][unselectable="on"]`
 
 ### Images must have alternative text
 
@@ -40,7 +52,7 @@
 
 #### Affected Elements:
 
-- `sleeknote-mwr5k-bottom,sleeknote-form,img[draggable="true"][unselectable="on"][imagetype=""]`
+- `sleeknote-t11jor-bottom,sleeknote-form,img[draggable="true"][unselectable="on"][imagetype=""]`
 
 ### Form elements should have a visible label
 
@@ -100,7 +112,7 @@
 
 #### Affected Elements:
 
-- `sleeknote-mwr5k-bottom,sleeknote-badge,.sleeknote-badge`
+- `sleeknote-t11jor-bottom,sleeknote-badge,.sleeknote-badge`
 
 ### All page content should be contained by landmarks
 

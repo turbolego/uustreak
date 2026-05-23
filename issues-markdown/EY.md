@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-05-17T01:24:15.809Z
+**Timestamp:** 2026-05-23T19:40:11.555Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 3
 
@@ -43,7 +43,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 76
+- **Count:** 80
 
 #### Affected Elements:
 
@@ -54,6 +54,10 @@
 - `.swiper-slide-visible > .up-hero-carousel__content-wrapper`
 - `.up-hero-carousel__pagination`
 - `.theme-dark.cmp-container--theme-dark.cmp-container--background-color-e2e`
+- `#promotional-ad78cafc8c9d > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
+- `#promotional-ad78cafc8c9d > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
+- `#button-fc7c92bbabde`
+- `#image-render-1dedd839d6 > .cmp-image__image[height="2560"][loading="lazy"]`
 - `#promotional-1f7be6744d5a > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-1f7be6744d5a > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-d2a7d3b468ea`
@@ -76,9 +80,9 @@
 - `.cmp-subscribe__text`
 - `#button-bc60d627c8a2`
 - `.cmp-contentGrid__title`
-- `img[height="2561"]`
+- `img[height="2559"]`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content`
-- `img[height="2546"]`
+- `img[height="2561"]`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content`
 - `.cmp-news-List`
 - `#button-7addb05aebee`

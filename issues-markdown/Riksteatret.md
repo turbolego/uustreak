@@ -1,7 +1,7 @@
 # WCAG Violations Report for Riksteatret
 
-**Timestamp:** 2026-05-17T01:15:22.279Z
-**URL:** [https://www.riksteatret.no/](https://www.riksteatret.no/)
+**Timestamp:** 2026-05-23T19:29:47.706Z
+**URL:** [https://www.riksteatret.no/#](https://www.riksteatret.no/#)
 **Total Violations:** 2
 
 ## Violation Details
@@ -12,7 +12,7 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 13
+- **Count:** 20
 
 #### Affected Elements:
 
@@ -22,13 +22,20 @@
 - `#feature_4 > .module__grid > .module__content > .module__body > h4`
 - `#feature_5 > .module__grid > .module__content > .module__body > h4`
 - `#feature_6 > .module__grid > .module__content > .module__body > h4`
-- `a[href$="kniven-i-ilden/"] > .module__content > .module__body > h4`
-- `.module--grid[data-color=""]:nth-child(2) > .module__grid > a > .module__content > .module__body > h4`
-- `a[href$="lareren/"] > .module__content > .module__body > h4`
+- `#feature_7 > .module__grid > .module__content > .module__body > h4`
+- `#feature_8 > .module__grid > .module__content > .module__body > h4`
+- `#feature_9 > .module__grid > .module__content > .module__body > h4`
+- `#feature_10 > .module__grid > .module__content > .module__body > h4`
+- `a[href$="ubesvart-anrop/"] > .module__content > .module__body > h4`
 - `a[href$="triggersystemet/"] > .module__content > .module__body > h4`
-- `.module--grid[data-color=""]:nth-child(5) > .module__grid > a > .module__content > .module__body > h4`
-- `.module--grid[data-color=""]:nth-child(6) > .module__grid > a > .module__content > .module__body > h4`
+- `a[href$="apestjernen/"] > .module__content > .module__body > h4`
+- `a[href$="lareren/"] > .module__content > .module__body > h4`
+- `a[href$="1984-dub/"] > .module__content > .module__body > h4`
+- `a[href$="kakejazz/"] > .module__content > .module__body > h4`
 - `.module--grid[data-color=""]:nth-child(7) > .module__grid > a > .module__content > .module__body > h4`
+- `.module--grid[data-color=""]:nth-child(8) > .module__grid > a > .module__content > .module__body > h4`
+- `.module--grid[data-color=""]:nth-child(9) > .module__grid > a > .module__content > .module__body > h4`
+- `.module--grid[data-color=""]:nth-child(10) > .module__grid > a > .module__content > .module__body > h4`
 
 ### Images must have alternative text
 

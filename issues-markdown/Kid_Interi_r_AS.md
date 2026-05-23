@@ -1,22 +1,10 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-05-17T01:39:28.325Z
-**URL:** [https://www.kid.no/](https://www.kid.no/)
+**Timestamp:** 2026-05-23T19:53:08.407Z
+**URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 7
 
 ## Violation Details
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.lo`
 
 ### Heading levels should only increase by one
 
@@ -40,8 +28,24 @@
 
 #### Affected Elements:
 
-- `div:nth-child(5) > .jo.jm.jn > .k4.gf.k5 > .fw.bx > div > div > .k6.js.k5 > .k5.bx > .k7.gh.gg > .k8.gj.gl`
-- `div:nth-child(11) > .jo.jm.jn > .k4.gf.k5 > .fw.bx > div > div > .k6.js.k5 > .k5.bx > .k7.gh.gg > .k8.gj.gl`
+- `div:nth-child(4) > .k4.k2.k3 > .kk.gc.kl > .fu.br > div > div > .km.k8.kl > .kl.br > .kn.ge.gd > .ko.gi.gj`
+- `div:nth-child(14) > .k4.k2.k3 > .kk.gc.kl > .fu.br > div > div > .km.k8.kl > .kl.br > .kn.ge.gd > .ko.gi.gj`
+
+### Alternative text of images should not be repeated as text
+
+- **Impact:** minor
+- **Description:** Ensure image alternative is not repeated as text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
+- **Tags:** cat.text-alternatives, best-practice
+- **Count:** 5
+
+#### Affected Elements:
+
+- `img[alt="Morgenkåper 50%"]`
+- `img[alt="Strandmadrasser 50%"]`
+- `img[alt="Parasoller 50%"]`
+- `img[alt="Kjølebager 50%"]`
+- `img[alt="Kimonoer og pysjamaser 50%"]`
 
 ### Document should not have more than one banner landmark
 
@@ -77,9 +81,9 @@
 
 #### Affected Elements:
 
-- `.f3.f[href$="palermo"]`
-- `.f3.f[href$="capri"]`
-- `.f3.f[href$="hageputer"]`
+- `.f8.ga[href$="palermo"]`
+- `.f8.ga[href$="capri"]`
+- `.f8.ga[href$="hageputer"]`
 
 ### All page content should be contained by landmarks
 
@@ -87,12 +91,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 5
+- **Count:** 4
 
 #### Affected Elements:
 
 - `#skip-to-main-content`
-- `#usp-rotator-instructions`
-- `.bp > div:nth-child(2)`
+- `.b8.bc.b9`
 - `.tf-header-slider`
 - `.tf-sidebar`

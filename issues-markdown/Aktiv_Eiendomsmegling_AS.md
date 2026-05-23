@@ -1,7 +1,7 @@
 # WCAG Violations Report for Aktiv Eiendomsmegling AS
 
-**Timestamp:** 2026-05-17T01:07:22.700Z
-**URL:** [https://aktiv.no/](https://aktiv.no/)
+**Timestamp:** 2026-05-23T19:19:17.234Z
+**URL:** [https://aktiv.no/#](https://aktiv.no/#)
 **Total Violations:** 7
 
 ## Violation Details
