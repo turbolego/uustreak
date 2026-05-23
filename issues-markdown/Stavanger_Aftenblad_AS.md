@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-05-23T19:36:45.195Z
+**Timestamp:** 2026-05-23T20:27:55.511Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
 **Total Violations:** 7
 
@@ -38,10 +38,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 4
+- **Count:** 5
 
 #### Affected Elements:
 
+- `.sa-frontboks-button-bottom-right > .svelte-r1njzg:nth-child(1)`
 - `.memo > .text-container > h3`
 - `.kryssord > .text-container > h3`
 - `.minikryss > .text-container > h3`
@@ -167,17 +168,17 @@
 - `.vertical-x3.row:nth-child(45)`
 - `.vertical-x2.row:nth-child(47)`
 - `.vertical-small-x2`
-- `.collage-x3.row:nth-child(49)`
+- `.vertical-x2.row:nth-child(49)`
 - `.vertical-x1-ad.row:nth-child(50)`
-- `.vertical-x2.row:nth-child(51)`
-- `.collage-x3.row:nth-child(52)`
+- `.collage-x3.row:nth-child(51)`
+- `.vertical-x2.row:nth-child(52)`
 - `.vertical-x1-ad.row:nth-child(53)`
-- `.vertical-x2.row:nth-child(54)`
-- `.vertical-x3.row:nth-child(55)`
-- `.collage-x3.row:nth-child(56)`
-- `.vertical-x2.row:nth-child(57)`
-- `.vertical-x3.row:nth-child(58)`
-- `.vertical-x2.row:nth-child(59)`
+- `.collage-x3.row:nth-child(54)`
+- `.vertical-x2.row:nth-child(55)`
+- `.vertical-x3.row:nth-child(56)`
+- `.collage-x3.row:nth-child(57)`
+- `.vertical-x2.row:nth-child(58)`
+- `.vertical-x3.row:nth-child(59)`
 - `.vertical-x4.row:nth-child(60)`
 - `.collage-x3.row:nth-child(62)`
 - `#webcam-frontpage`
@@ -191,7 +192,7 @@
 - `.collage-x3.row:nth-child(72)`
 - `.vertical-x2.row:nth-child(73)`
 - `.vertical-static-ad.vertical-x1-ad.row:nth-child(74)`
-- `.vertical-x3.row:nth-child(75)`
+- `.collage-x3.row:nth-child(75)`
 - `.horizontal-x1`
 - `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`
 

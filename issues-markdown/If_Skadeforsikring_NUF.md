@@ -1,6 +1,6 @@
 # WCAG Violations Report for If Skadeforsikring NUF
 
-**Timestamp:** 2026-05-23T19:50:06.370Z
+**Timestamp:** 2026-05-23T20:40:46.426Z
 **URL:** [https://www.if.no/privat](https://www.if.no/privat)
 **Total Violations:** 3
 
@@ -17,7 +17,7 @@
 #### Affected Elements:
 
 - `img[alt="Best i test på skadeoppgjør!"]`
-- `#d7064474576f41588c339f5ff9658c4b > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
+- `#\39 5c41805143d47c5bde2c8fcc38cb4f8 > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
 - `img[alt="Mer enn bare forsikring"]`
 
 ### Heading levels should only increase by one
@@ -31,7 +31,7 @@
 #### Affected Elements:
 
 - `.content.op > h3`
-- `#e3f17f174c5b499e85c414e7a76dc83f > .weight-medium`
+- `#\30 aacf03875104917a5d2f83ce75c1577 > .weight-medium`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -43,4 +43,4 @@
 
 #### Affected Elements:
 
-- `#e3f17f174c5b499e85c414e7a76dc83f`
+- `#\30 aacf03875104917a5d2f83ce75c1577`
