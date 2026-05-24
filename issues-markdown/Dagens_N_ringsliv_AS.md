@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagens Næringsliv AS
 
-**Timestamp:** 2026-05-23T20:23:38.628Z
+**Timestamp:** 2026-05-24T01:09:10.848Z
 **URL:** [https://www.dn.no/](https://www.dn.no/)
 **Total Violations:** 10
 
@@ -24,7 +24,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 42
+- **Count:** 41
 
 #### Affected Elements:
 
@@ -54,7 +54,6 @@
 - `.dn-image-format-1x1 > article[data-teaser_type="cpp-article-dn"] > .meta > span:nth-child(2)`
 - `a[data-id="6-1-7chNrAE1"] > article > .meta > span`
 - `a[data-id="2-1-1990354"] > article[data-teaser_type="cpp-article-dn"] > .meta > span`
-- `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(3) > article > .kicker > span`
 - `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(4) > article > .kicker > span`
 - `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(5) > article > .kicker > span`
 - `.dn-job-item[target="_blank"][rel="noopener"]:nth-child(6) > article > .kicker > span`
@@ -93,10 +92,10 @@
 
 #### Affected Elements:
 
+- `iframe[seamless=""], a[data-id="9ZAvkhzI"] > figure > img`
+- `iframe[seamless=""], a[data-id="WmHxHoQS"] > figure > img`
 - `iframe[seamless=""], a[data-id="O4N9pbkd"] > figure > img`
-- `iframe[seamless=""], a[data-id="yhPfEoHa"] > figure > img`
-- `iframe[seamless=""], a[data-id="0c25Objy"] > figure > img`
-- `iframe[seamless=""], a[data-id="gnvPpgYF"] > figure > img`
+- `iframe[seamless=""], a[data-id="7ZRc0iS3"] > figure > img`
 
 ### Contentinfo landmark should not be contained in another landmark
 
@@ -152,7 +151,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 89
+- **Count:** 85
 
 #### Affected Elements:
 
@@ -167,14 +166,14 @@
 - `.item-increased.item[data-v-a56f3944=""]:nth-child(4) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
 - `.item-increased.item[data-v-a56f3944=""]:nth-child(5) > .item-holder[data-v-a56f3944=""]`
 - `.item-increased.item[data-v-a56f3944=""]:nth-child(5) > .item-difference-holder-increased.item-difference-holder[data-v-a56f3944=""] > .investor-bar__item-difference-increased.item-difference.item-percentage`
-- `.dn-group[disallowadsbelow="false"]:nth-child(2) > .layout-abb.dn-grid.dn-grid-layout`
+- `.dn-edition-collection-top > .layout-b.dn-grid.dn-grid-layout:nth-child(2)`
+- `.dn-group[disallowadsbelow="false"]:nth-child(3)`
+- `.layout-bba.dn-grid.dn-grid-layout:nth-child(5)`
 - `a[data-id="2-1-1991471"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
 - `a[data-id="2-1-1991471"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
 - `a[data-id="2-1-1991471"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
 - `a[data-id="2-1-1991471"] > article[data-teaser_type="cpp-article-dn"] > .meta`
-- `.layout-bba.dn-grid.dn-grid-layout:nth-child(4)`
-- `.layout-b.dn-grid.dn-grid-layout:nth-child(5)`
-- `.dn-group[disallowadsbelow="false"]:nth-child(6)`
+- `.dn-group[disallowadsbelow="false"]:nth-child(7)`
 - `a[data-id="2-1-1991532"]`
 - `a[data-id="6-1-gomdGnOf"] > article > .dn-card_assets > .default[type="picture"][data-load="lazy"]`
 - `a[data-id="6-1-gomdGnOf"] > article > .title.dn-headline--subhead[data-v-95b1487b=""]`
@@ -184,7 +183,7 @@
 - `a[data-id="2-1-1992206"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
 - `a[data-id="2-1-1992206"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
 - `a[data-id="2-1-1992206"] > article[data-teaser_type="cpp-article-dn"] > .meta`
-- `.dn-group[disallowadsbelow="false"]:nth-child(7) > .layout-bba.dn-grid.dn-grid-layout`
+- `.dn-group[disallowadsbelow="false"]:nth-child(8) > .layout-bba.dn-grid.dn-grid-layout`
 - `a[data-id="6-1-4ODvJrfL"] > article > .dn-card_assets > .default[type="picture"][data-load="lazy"]`
 - `a[data-id="6-1-4ODvJrfL"] > article > .kicker`
 - `a[data-id="6-1-4ODvJrfL"] > article > .title.dn-headline--subhead[data-v-95b1487b=""]`
@@ -200,10 +199,6 @@
 - `a[data-id="6-1-7chNrAE1"] > article > .meta`
 - `a[data-id="6-1-7chNrAE1"] > article > .badge > span`
 - `a[data-id="2-1-1991066"]`
-- `a[data-id="2-1-1993522"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
-- `a[data-id="2-1-1993522"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
-- `a[data-id="2-1-1993522"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
-- `a[data-id="2-1-1993522"] > article[data-teaser_type="cpp-article-dn"] > .meta`
 - `a[data-id="2-1-1992055"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
 - `a[data-id="2-1-1992055"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
 - `a[data-id="2-1-1992055"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
@@ -217,8 +212,13 @@
 - `a[href$="dnjobb.no/"] > span`
 - `.dn-job-button`
 - `.dn-job-carousel`
-- `.layout-aa`
-- `.highlight`
+- `a[data-id="2-1-1993522"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
+- `a[data-id="2-1-1993522"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
+- `a[data-id="2-1-1993522"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
+- `a[data-id="2-1-1993522"] > article[data-teaser_type="cpp-article-dn"] > .meta`
+- `a[data-id="2-1-1992975"]`
+- `a[data-id="2-1-1990898"]`
+- `a[data-id="2-1-1993864"]`
 - `a[data-id="6-1-7ZRc0iS3"] > article > .dn-card_assets > .default[type="picture"][data-load="lazy"]`
 - `a[data-id="6-1-7ZRc0iS3"] > article > .title.dn-headline--subhead[data-v-95b1487b=""]`
 - `a[data-id="6-1-7ZRc0iS3"] > article > .meta`
@@ -227,10 +227,6 @@
 - `a[data-id="2-1-1993632"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
 - `a[data-id="2-1-1993632"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
 - `a[data-id="2-1-1993632"] > article[data-teaser_type="cpp-article-dn"] > .meta`
-- `a[data-id="2-1-1991403"] > article[data-teaser_type="cpp-article-dn"] > .dn-card_assets`
-- `a[data-id="2-1-1991403"] > article[data-teaser_type="cpp-article-dn"] > .kicker > span:nth-child(2)`
-- `a[data-id="2-1-1991403"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
-- `a[data-id="2-1-1991403"] > article[data-teaser_type="cpp-article-dn"] > .meta`
 - `div[grouptype="Audience Engagement 3"] > .layout-abb.dn-grid.dn-grid-layout`
 - `a[data-id="6-1-i4egenYs"] > article > .dn-card_assets > .default[type="picture"][data-load="lazy"]`
 - `a[data-id="6-1-i4egenYs"] > article > .kicker`
@@ -244,7 +240,6 @@
 - `a[data-id="6-1-ImuLpYmH"] > article > .title.dn-headline--subhead[data-v-95b1487b=""]`
 - `a[data-id="6-1-ImuLpYmH"] > article > .meta`
 - `a[data-id="6-1-ImuLpYmH"] > article > .badge > span`
-- `#sub-footer,.sticky-footer__content`
 
 ### <svg> elements with an img role must have alternative text
 

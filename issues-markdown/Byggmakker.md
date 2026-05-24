@@ -1,6 +1,6 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2026-05-23T20:20:19.640Z
+**Timestamp:** 2026-05-24T01:05:54.759Z
 **URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
 **Total Violations:** 4
 
@@ -20,42 +20,42 @@
 - `.product-card__product-price.prrc[data-product_id="7070276047569"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7071859002395"]`
 - `.product-card__product-price.prrc[data-product_id="7071859002395"]`
-- `#alt_du_trenger_til_terrasseprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card[data-product_id="88381826433"][data-price-history="3790"]`
-- `#alt_du_trenger_til_terrasseprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="88381826433"][data-price-history="3790"]`
-- `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card[data-product_id="4966376331611"][data-price-history="3290"]`
-- `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="4966376331611"][data-price-history="3290"]`
-- `.product-card.ab_omni_kampaign[data-price-history="249"]`
-- `.product-card__product-price.prrc[data-price-history="249"]`
-- `.product-card[data-product_id="7311490046090"][data-price-history="455"]`
-- `.product-card__product-price[data-product_id="7311490046090"][data-price-history="455"]`
-- `.product-card[data-product_id="7038511816004"][data-price-history="179"]`
-- `.product-card__product-price[data-product_id="7038511816004"][data-price-history="179"]`
-- `.product-card[data-product_id="7070483153800"][data-price-history="139"]`
-- `.product-card__product-price[data-product_id="7070483153800"][data-price-history="139"]`
-- `.product-card.ab_omni_kampaign[data-price-history="1799"]`
-- `.product-card__product-price.prrc[data-price-history="1799"]`
-- `.product-card.ab_omni_kampaign[data-price-history="899"]`
-- `.product-card__product-price.prrc[data-price-history="899"]`
-- `.product-card.ab_omni_kampaign[data-price-history="599"]`
-- `.product-card__product-price.prrc[data-price-history="599"]`
+- `#alt_du_trenger_til_terrasseprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id="88381826433"]`
+- `#alt_du_trenger_til_terrasseprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-product_id="88381826433"]`
+- `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id="4966376331611"]`
+- `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-product_id="4966376331611"]`
+- `#beise_terrassen > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
+- `#beise_terrassen > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7311490046090"]`
+- `.product-card__product-price.prrc[data-product_id="7311490046090"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7038511816004"]`
+- `.product-card__product-price.prrc[data-product_id="7038511816004"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7070483153800"]`
+- `.product-card__product-price.prrc[data-product_id="7070483153800"]`
+- `#alt_du_trenger_til_maleprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
+- `#alt_du_trenger_til_maleprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
+- `#alt_du_trenger_til_maleprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
+- `#alt_du_trenger_til_maleprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
+- `#alt_du_trenger_til_maleprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
+- `#alt_du_trenger_til_maleprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7311490015638"]`
 - `.product-card__product-price.prrc[data-product_id="7311490015638"]`
-- `.product-card[data-product_id="7070483154555"][data-price-history="229"]`
-- `.product-card__product-price[data-product_id="7070483154555"][data-price-history="229"]`
-- `.product-card[data-product_id="7070483154579"][data-price-history="229"]`
-- `.product-card__product-price[data-product_id="7070483154579"][data-price-history="229"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7070483154555"]`
+- `.product-card__product-price.prrc[data-product_id="7070483154555"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7070483154579"]`
+- `.product-card__product-price.prrc[data-product_id="7070483154579"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7311490050691"]`
 - `.product-card__product-price.prrc[data-product_id="7311490050691"]`
 - `.product-card.ab_omni_kampaign[data-product_id="6405422555994"]`
 - `.product-card__product-price.prrc[data-product_id="6405422555994"]`
-- `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card[data-product_id="4966376331611"][data-price-history="3290"]`
-- `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="4966376331611"][data-price-history="3290"]`
+- `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id="4966376331611"]`
+- `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-product_id="4966376331611"]`
 - `.product-card.ab_omni_kampaign[data-product_id="88381683197"]`
 - `.product-card__product-price.prrc[data-product_id="88381683197"]`
-- `.campaign-product-list__container:nth-child(8) > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card[data-product_id="88381826433"][data-price-history="3790"]`
-- `.campaign-product-list__container:nth-child(8) > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="88381826433"][data-price-history="3790"]`
-- `.product-card[data-product_id="88381741316"][data-price-history="2890"]`
-- `.product-card__product-price[data-product_id="88381741316"][data-price-history="2890"]`
+- `.campaign-product-list__container:nth-child(8) > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id="88381826433"]`
+- `.campaign-product-list__container:nth-child(8) > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-product_id="88381826433"]`
+- `.product-card.ab_omni_kampaign[data-product_id="88381741316"]`
+- `.product-card__product-price.prrc[data-product_id="88381741316"]`
 - `.product-card.ab_omni_kampaign[data-product_id="4054278897332"]`
 - `.product-card__product-price.prrc[data-product_id="4054278897332"]`
 - `.product-card.ab_omni_kampaign[data-product_id="4039784973480"]`
@@ -64,12 +64,12 @@
 - `.product-card__product-price.prrc[data-product_id="4066529156310"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7090012249170"]`
 - `.product-card__product-price.prrc[data-product_id="7090012249170"]`
-- `.product-card[data-product_id="4892210177100"][data-price-history="2190"]`
-- `.product-card__product-price[data-product_id="4892210177100"][data-price-history="2190"]`
-- `.product-card[data-product_id="4892210182807"][data-price-history="4790"]`
-- `.product-card__product-price[data-product_id="4892210182807"][data-price-history="4790"]`
-- `.product-card[data-product_id="4066407030169"][data-price-history="13990"]`
-- `.product-card__product-price[data-product_id="4066407030169"][data-price-history="13990"]`
+- `.product-card.ab_omni_kampaign[data-product_id="4892210177100"]`
+- `.product-card__product-price.prrc[data-product_id="4892210177100"]`
+- `.product-card.ab_omni_kampaign[data-product_id="4892210182807"]`
+- `.product-card__product-price.prrc[data-product_id="4892210182807"]`
+- `.product-card.ab_omni_kampaign[data-product_id="4066407030169"]`
+- `.product-card__product-price.prrc[data-product_id="4066407030169"]`
 - `.product-card[data-product_id="4066407025196"][data-price-history="14590"]`
 - `.product-card__product-price[data-product_id="4066407025196"][data-price-history="14590"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7393969045018"]`
@@ -80,13 +80,13 @@
 - `.product-card__product-price.prrc[data-product_id="7052870178269"]`
 - `.product-card.ab_omni_kampaign[data-product_id="6438313783121"]`
 - `.product-card__product-price.prrc[data-product_id="6438313783121"]`
-- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id=""]`
+- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
 - `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
-- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id=""]`
+- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
 - `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
-- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id=""]`
+- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
 - `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
-- `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id=""]`
+- `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
 - `#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
 - `.product-card.ab_omni_kampaign[data-product_id="7311490050608"]`
 - `.product-card__product-price.prrc[data-product_id="7311490050608"]`
@@ -103,86 +103,14 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 76
+- **Count:** 4
 
 #### Affected Elements:
 
-- `#alt_du_trenger_til_terrasseprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="88381826433"][data-price-history="3790"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `#alt_du_trenger_til_terrasseprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="88381826433"][data-price-history="3790"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `#alt_du_trenger_til_terrasseprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="88381826433"][data-price-history="3790"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `#alt_du_trenger_til_terrasseprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="88381826433"][data-price-history="3790"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="4966376331611"][data-price-history="3290"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="4966376331611"][data-price-history="3290"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="4966376331611"][data-price-history="3290"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="4966376331611"][data-price-history="3290"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .label-orange.campaign-label.campaign-label--small`
-- `.product-card__product-price.prrc[data-price-history="249"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.product-card__product-price.prrc[data-price-history="249"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.product-card__product-price.prrc[data-price-history="249"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.product-card__product-price.prrc[data-price-history="249"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `#beise_terrassen > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .label-orange.campaign-label.campaign-label--small`
-- `.product-card__product-price[data-product_id="7311490046090"][data-price-history="455"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.product-card__product-price[data-product_id="7311490046090"][data-price-history="455"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.product-card__product-price[data-product_id="7311490046090"][data-price-history="455"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.product-card__product-price[data-product_id="7311490046090"][data-price-history="455"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.product-card__product-price[data-product_id="7038511816004"][data-price-history="179"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.product-card__product-price[data-product_id="7038511816004"][data-price-history="179"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.product-card__product-price[data-product_id="7038511816004"][data-price-history="179"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.product-card__product-price[data-product_id="7038511816004"][data-price-history="179"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.product-card__product-price[data-product_id="7070483153800"][data-price-history="139"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.product-card__product-price[data-product_id="7070483153800"][data-price-history="139"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.product-card__product-price[data-product_id="7070483153800"][data-price-history="139"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.product-card__product-price[data-product_id="7070483153800"][data-price-history="139"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.product-card__product-price.prrc[data-price-history="1799"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.product-card__product-price.prrc[data-price-history="1799"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.product-card__product-price.prrc[data-price-history="1799"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.product-card__product-price.prrc[data-price-history="1799"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `#alt_du_trenger_til_maleprosjektet > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .label-orange.campaign-label.campaign-label--small`
-- `.product-card__product-price.prrc[data-price-history="899"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.product-card__product-price.prrc[data-price-history="899"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.product-card__product-price.prrc[data-price-history="899"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.product-card__product-price.prrc[data-price-history="899"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.product-card__product-price.prrc[data-price-history="599"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.product-card__product-price.prrc[data-price-history="599"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.product-card__product-price.prrc[data-price-history="599"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.product-card__product-price.prrc[data-price-history="599"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.product-card__product-price[data-product_id="7070483154555"][data-price-history="229"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.product-card__product-price[data-product_id="7070483154555"][data-price-history="229"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.product-card__product-price[data-product_id="7070483154555"][data-price-history="229"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.product-card__product-price[data-product_id="7070483154555"][data-price-history="229"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.product-card__product-price[data-product_id="7070483154579"][data-price-history="229"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.product-card__product-price[data-product_id="7070483154579"][data-price-history="229"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.product-card__product-price[data-product_id="7070483154579"][data-price-history="229"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.product-card__product-price[data-product_id="7070483154579"][data-price-history="229"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="4966376331611"][data-price-history="3290"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="4966376331611"][data-price-history="3290"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="4966376331611"][data-price-history="3290"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="4966376331611"][data-price-history="3290"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.campaign-product-list__container:nth-child(8) > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .campaign-label-wrapper.undefined > .label-orange.campaign-label.campaign-label--small`
-- `.campaign-product-list__container:nth-child(8) > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="88381826433"][data-price-history="3790"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.campaign-product-list__container:nth-child(8) > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="88381826433"][data-price-history="3790"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.campaign-product-list__container:nth-child(8) > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="88381826433"][data-price-history="3790"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.campaign-product-list__container:nth-child(8) > .campaign-product-list > .campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="88381826433"][data-price-history="3790"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.product-card__product-price[data-product_id="88381741316"][data-price-history="2890"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.product-card__product-price[data-product_id="88381741316"][data-price-history="2890"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.product-card__product-price[data-product_id="88381741316"][data-price-history="2890"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.product-card__product-price[data-product_id="88381741316"][data-price-history="2890"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.product-card__product-price[data-product_id="4892210177100"][data-price-history="2190"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.product-card__product-price[data-product_id="4892210177100"][data-price-history="2190"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.product-card__product-price[data-product_id="4892210177100"][data-price-history="2190"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.product-card__product-price[data-product_id="4892210177100"][data-price-history="2190"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.product-card__product-price[data-product_id="4892210182807"][data-price-history="4790"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.product-card__product-price[data-product_id="4892210182807"][data-price-history="4790"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.product-card__product-price[data-product_id="4892210182807"][data-price-history="4790"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.product-card__product-price[data-product_id="4892210182807"][data-price-history="4790"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.product-card__product-price[data-product_id="4066407030169"][data-price-history="13990"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.product-card__product-price[data-product_id="4066407030169"][data-price-history="13990"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.product-card__product-price[data-product_id="4066407030169"][data-price-history="13990"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.product-card__product-price[data-product_id="4066407030169"][data-price-history="13990"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
-- `.product-card__product-price[data-product_id="4066407025196"][data-price-history="14590"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > .price-view__ordinary-price-label`
-- `.product-card__product-price[data-product_id="4066407025196"][data-price-history="14590"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--priceNO`
-- `.product-card__product-price[data-product_id="4066407025196"][data-price-history="14590"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit`
-- `.product-card__product-price[data-product_id="4066407025196"][data-price-history="14590"] > .product-card__price-history-container.price-history-container > .price-view--special-price.price-view > .price-view__sale-price-container > .price-view > span:nth-child(2) > span > .price-view__ordinary-price > .price-view__ordinary-price--unit > .notranslate`
+- `.price-view__ordinary-price-label`
+- `.price-view__ordinary-price--priceNO`
+- `.price-view__ordinary-price--unit`
+- `.price-view__ordinary-price--unit > .notranslate`
 
 ### Headings should not be empty
 
@@ -190,12 +118,10 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 7
+- **Count:** 5
 
 #### Affected Elements:
 
-- `#gzjIvV1qsz3NdZSoNrwr7-title`
-- `#b8aQMu7ORmbhaqGN6FJL3-title`
 - `.column-layout__title`
 - `#\34 XAMjmtbFJouRy2Y2HAtPH-title`
 - `#\35 jEmf9y6skVo2VFSeLq9gG-title`
