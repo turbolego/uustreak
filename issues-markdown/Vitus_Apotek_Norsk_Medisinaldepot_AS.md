@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-05-24T01:33:09.239Z
+**Timestamp:** 2026-05-28T01:28:42.645Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
 **Total Violations:** 3
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
+- `div[aria-label="2 0% på  alt fra L’Occitane"]`
 - `div[aria-label="50% på utvalgt kosttilskudd"]`
-- `.cms-campaign-banners:nth-child(9) > .cms-campaign-banners__content.cms-banners > .campaign-banner--left.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper`
 - `div[aria-label="Ta en titt på vårens nyheter!"]`
 - `div[aria-label="50% på CeraVe solpleie"]`
 - `.campaign-banner--centered.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper`

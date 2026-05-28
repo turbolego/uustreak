@@ -1,6 +1,6 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-05-24T01:10:25.045Z
+**Timestamp:** 2026-05-28T01:07:31.501Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
 **Total Violations:** 8
 
@@ -65,7 +65,7 @@
 - `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(4) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.sm\:px-6`
 - `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(4) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.max-w-full.sm\:px-6`
 - `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(4) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(4) > .h-auto.max-w-full.sm\:px-6`
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(4) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(5) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(4) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(6) > .h-auto.max-w-full.sm\:px-6`
 - `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(5) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.sm\:px-6`
 - `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(5) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.max-w-full.sm\:px-6`
 - `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(5) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.max-w-full.sm\:px-6`

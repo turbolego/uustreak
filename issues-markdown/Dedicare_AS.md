@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dedicare AS
 
-**Timestamp:** 2026-05-24T01:10:40.492Z
+**Timestamp:** 2026-05-28T01:07:46.670Z
 **URL:** [https://www.dedicare.no/#](https://www.dedicare.no/#)
 **Total Violations:** 9
 
@@ -85,14 +85,13 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 7
+- **Count:** 6
 
 #### Affected Elements:
 
 - `p:nth-child(2) > a:nth-child(1)`
-- `a[href$="legerutengrenser.no/"]`
+- `p:nth-child(2) > a:nth-child(2)`
 - `p:nth-child(2) > a:nth-child(3)`
-- `p:nth-child(2) > a:nth-child(4)`
 - `.social-item:nth-child(1) > a`
 - `.social-item:nth-child(2) > a`
 - `.social-item:nth-child(3) > a`

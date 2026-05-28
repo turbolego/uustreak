@@ -1,10 +1,22 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-05-24T01:29:19.463Z
+**Timestamp:** 2026-05-28T01:26:37.497Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
-**Total Violations:** 7
+**Total Violations:** 8
 
 ## Violation Details
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.bq.cj[href$="soverom"] > .b7.c.bj > .fp.fs.fo:nth-child(1)`
 
 ### Heading levels should only increase by one
 
@@ -28,8 +40,8 @@
 
 #### Affected Elements:
 
-- `div:nth-child(4) > .k4.k2.k3 > .kk.gc.kl > .fu.br > div > div > .km.k8.kl > .kl.br > .kn.ge.gd > .ko.gi.gj`
-- `div:nth-child(14) > .k4.k2.k3 > .kk.gc.kl > .fu.br > div > div > .km.k8.kl > .kl.br > .kn.ge.gd > .ko.gi.gj`
+- `div:nth-child(3) > .ic.ia.ib > .iz.gf.j0 > .fz.c2 > div > div > .j1.ig.j0 > .j0.c2 > .j2.gh.gg > .j3.gl.gm`
+- `div:nth-child(15) > .ic.ia.ib > .iz.gf.j0 > .fz.c2 > div > div > .j1.ig.j0 > .j0.c2 > .j2.gh.gg > .j3.gl.gm`
 
 ### Alternative text of images should not be repeated as text
 
@@ -65,11 +77,12 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
 - `#coiOverlay`
+- `div:nth-child(2) > .h3.h4.h5 > .h9.ha.hb > .al > .b[role="region"][aria-roledescription="carousel"]`
 
 ### Links must have discernible text
 
@@ -81,9 +94,9 @@
 
 #### Affected Elements:
 
-- `.f8.ga[href$="palermo"]`
-- `.f8.ga[href$="capri"]`
-- `.f8.ga[href$="hageputer"]`
+- `.f8.f[href$="palermo"]`
+- `.f8.f[href$="capri"]`
+- `.f8.f[href$="innleggsputer"]`
 
 ### All page content should be contained by landmarks
 

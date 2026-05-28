@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-05-24T01:16:19.209Z
+**Timestamp:** 2026-05-28T01:13:33.019Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 3
 
@@ -80,9 +80,9 @@
 - `.cmp-subscribe__text`
 - `#button-bc60d627c8a2`
 - `.cmp-contentGrid__title`
-- `img[height="2559"]`
+- `img[title="Agata Karolina Kraus Dahl"]`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content`
-- `img[height="2561"]`
+- `img[height="2559"]`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content`
 - `.cmp-news-List`
 - `#button-7addb05aebee`
