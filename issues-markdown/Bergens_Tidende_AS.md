@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-05-29T01:06:46.376Z
+**Timestamp:** 2026-05-29T04:48:34.766Z
 **URL:** [https://www.bt.no/#](https://www.bt.no/#)
 **Total Violations:** 6
 
@@ -36,22 +36,28 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 25
+- **Count:** 27
 
 #### Affected Elements:
 
+- `.liveticker-red`
+- `article[data-pulse-entity-id="PdP9y7"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `._preview_1166k_667:nth-child(1) > a > ._preview-title_1166k_727 > span`
 - `._preview_1166k_667:nth-child(2) > a > ._preview-title_1166k_727 > span`
 - `._preview_1166k_667:nth-child(3) > a > ._preview-title_1166k_727 > span`
 - `._preview_1166k_667:nth-child(4) > a > ._preview-title_1166k_727 > span`
 - `._preview_1166k_667:nth-child(5) > a > ._preview-title_1166k_727 > span`
+- `a[aria-label="Mange klaget på russen i natt"] > .article__text-container > .article__section`
+- `a[data-pulse-entity-id="tip-us-43LG06"] > .article-tip-us > p`
+- `a[data-pulse-entity-id="tip-us-43LG06"] > .article-tip-us > p > .tip-us-underline`
 - `.memo > .text-container > h3`
 - `.kryssord > .text-container > h3`
 - `.minikryss > .text-container > h3`
 - `.ordjakten > .text-container > h3`
+- `article[data-pulse-entity-id="Wv73rr"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="ExRmma"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 - `a[data-pulse-entity-id="tip-us-PdPwxJ"] > .article-tip-us > p`
 - `a[data-pulse-entity-id="tip-us-PdPwxJ"] > .article-tip-us > p > .tip-us-underline`
-- `article[data-pulse-entity-id="V64p6V"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section`
 - `.opinion-banner-desc`
 - `#Vågen`
 - `#Finse`
@@ -59,12 +65,8 @@
 - `#Torgallmeningen`
 - `#Puddefjordsbroen`
 - `#Åsaneveien`
-- `.article-section--btmeninger-debatt > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `article[data-live-entries-count="3"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section`
-- `article[data-pulse-entity-id="ExRmma"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
-- `a[data-pulse-entity-id="tip-us-43LG06"] > .article-tip-us > p`
-- `a[data-pulse-entity-id="tip-us-43LG06"] > .article-tip-us > p > .tip-us-underline`
 - `article[data-pulse-entity-id="8p9RrQ"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
+- `article[data-pulse-entity-id="0p9mL0"] > .article__teaser-container > .article__link.url > .article__text-container > .article__section-kicker-container > .article__section`
 
 ### Heading levels should only increase by one
 
@@ -105,14 +107,17 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 77
+- **Count:** 80
 
 #### Affected Elements:
 
 - `.sr-only`
-- `.collage-x3.row:nth-child(1)`
-- `.collage-x3.row:nth-child(4)`
-- `#dr-edition-teaser-zaiz7ug6 > div`
+- `.liveticker-red`
+- `a[title="Mange klager på russen i natt"]`
+- `.liveticker-item--snooze > .name`
+- `.row--full`
+- `.collage-x3.row:nth-child(2)`
+- `.collage-x3.row:nth-child(5)`
 - `._heading_1166k_647 > span`
 - `img[alt="Forhåndsvisning av Salum-show"]`
 - `._preview_1166k_667:nth-child(1) > a > ._preview-title_1166k_727`
@@ -134,55 +139,55 @@
 - `._preview_1166k_667:nth-child(9) > a > ._preview-title_1166k_727`
 - `._preview_1166k_667:nth-child(10) > a > ._preview-image_1166k_715[loading="lazy"]`
 - `._preview_1166k_667:nth-child(10) > a > ._preview-title_1166k_727`
-- `.vertical-x2.row:nth-child(11)`
-- `.collage-x4.row:nth-child(14)`
-- `.collage-x3.row:nth-child(16)`
+- `.vertical-x3.row:nth-child(12)`
+- `.collage-x3.row:nth-child(15)`
+- `.vertical-x2.row:nth-child(17)`
 - `.hjernetrim-front-widget`
-- `.vertical-x3.row:nth-child(19)`
-- `.vertical-x2.row:nth-child(22)`
-- `.vertical-x4.row:nth-child(24)`
-- `.vertical-x3.row:nth-child(26)`
-- `.collage-x4.row:nth-child(27)`
-- `.vertical-small-x2.row:nth-child(29)`
+- `.collage-x3.row:nth-child(20)`
+- `.vertical-x2.row:nth-child(23)`
+- `.collage-x3.row:nth-child(25)`
+- `.vertical-x2.row:nth-child(27)`
+- `.vertical-x3.row:nth-child(28)`
+- `.vertical-x2.row:nth-child(30)`
 - `.restaurant-list-header`
 - `.top-collage-x3 > .column--big.column`
 - `.minimal-teaser:nth-child(1)`
 - `.minimal-teaser:nth-child(2) > a > .article__img-container`
 - `.minimal-teaser:nth-child(2) > a > .teaser-container > .article__kicker-title`
 - `.restaurant-map-teaser`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(32)`
-- `.collage-x3.row:nth-child(33)`
-- `.vertical-x3.row:nth-child(35)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(33)`
+- `.vertical-x3.row:nth-child(34)`
+- `.vertical-x2.row:nth-child(36)`
 - `.widget-football.regional-widget`
-- `.collage-x3.row:nth-child(37)`
+- `.vertical-x4.row:nth-child(38)`
 - `#podcast-latest > .podcast-header`
 - `.podcast-main`
 - `.podcast-sub > .item:nth-child(1)`
 - `.item:nth-child(3)`
-- `.vertical-small-x2.row:nth-child(39)`
-- `.vertical-x3.row:nth-child(40)`
+- `.vertical-x2.row:nth-child(40)`
 - `.vertical-x3.row:nth-child(41)`
-- `.vertical-x1-ad.row:nth-child(42)`
-- `.vertical-x2.row:nth-child(45)`
-- `.vertical-x4.row:nth-child(47)`
+- `.vertical-x2.row:nth-child(42)`
+- `.vertical-x1-ad.row:nth-child(43)`
+- `.collage-x3.row:nth-child(46)`
+- `.vertical-x2.row:nth-child(48)`
 - `.opinion-banner-title`
 - `.opinion-banner-desc`
-- `.collage-x3.row:nth-child(49)`
+- `.vertical-x3.row:nth-child(50)`
 - `.widget-webcam`
-- `.vertical-x2.row:nth-child(51)`
-- `.vertical-x1-ad.row:nth-child(52)`
-- `.vertical-x3.row:nth-child(53)`
-- `.vertical-x2.row:nth-child(54)`
-- `.vertical-x1-ad.row:nth-child(55)`
-- `.vertical-small-x2.row:nth-child(56)`
-- `.vertical-x2.row:nth-child(57)`
-- `.vertical-x1-ad.row:nth-child(58)`
-- `.vertical-x3.row:nth-child(59)`
-- `.vertical-static-ad.vertical-x1-ad.row:nth-child(60)`
-- `.vertical-x2.row:nth-child(61)`
-- `.vertical-x4.row:nth-child(62)`
-- `.vertical-x2.row:nth-child(64)`
+- `.vertical-x2.row:nth-child(52)`
+- `.vertical-x1-ad.row:nth-child(53)`
+- `.vertical-small-x2`
+- `.vertical-x2.row:nth-child(55)`
+- `.vertical-x1-ad.row:nth-child(56)`
+- `.vertical-x3.row:nth-child(57)`
+- `.vertical-x2.row:nth-child(58)`
+- `.vertical-x1-ad.row:nth-child(59)`
+- `.vertical-x4.row:nth-child(60)`
+- `.vertical-static-ad.vertical-x1-ad.row:nth-child(61)`
+- `.vertical-x3.row:nth-child(62)`
+- `.vertical-x2.row:nth-child(63)`
 - `.vertical-x3.row:nth-child(65)`
 - `.vertical-x2.row:nth-child(66)`
-- `.vertical-small-x2.row:nth-child(67)`
+- `.vertical-x3.row:nth-child(67)`
+- `.vertical-x2.row:nth-child(68)`
 - `.sch-datacontroller--footer > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text`

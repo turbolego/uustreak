@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-05-29T01:22:22.843Z
+**Timestamp:** 2026-05-29T05:05:07.776Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -33,10 +33,10 @@
 - `.h4.am[href$="nyheter"]`
 - `a[aria-label="Larvik skalljakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Larvik skalljakke"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `a[aria-label="Henningsvær kort teknisk cape"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Henningsvær kort teknisk cape"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Ekebergsletta sovepose"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Ekebergsletta sovepose"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Henningsvær kort teknisk cape"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Henningsvær kort teknisk cape"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `li:nth-child(4) > .ic.id[aria-label="Bris lettvekts turbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `li:nth-child(4) > .ic.id[aria-label="Bris lettvekts turbukse"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `li:nth-child(5) > .ic.id[aria-label="Bris lettvekts turbukse"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
