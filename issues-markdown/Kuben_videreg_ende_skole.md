@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kuben videregående skole
 
-**Timestamp:** 2026-05-28T01:30:08.657Z
+**Timestamp:** 2026-05-29T01:37:29.795Z
 **URL:** [https://kuben.vgs.no/#](https://kuben.vgs.no/#)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -58,15 +58,3 @@
 - `#silktide-banner > .mb-4`
 - `#silktide-banner > p:nth-child(2)`
 - `#silktide-banner > p:nth-child(3)`
-
-### Elements should not have tabindex greater than zero
-
-- **Impact:** serious
-- **Description:** Ensure tabindex attribute values are not greater than 0
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/tabindex?application=playwright
-- **Tags:** cat.keyboard, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `a[href$="#secMain"]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-05-28T01:13:33.019Z
+**Timestamp:** 2026-05-29T01:21:01.214Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 3
 
@@ -28,7 +28,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 4
+- **Count:** 6
 
 #### Affected Elements:
 
@@ -36,6 +36,8 @@
 - `.cmp-slider__slide[data-index="4"][href$="tax"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="6"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
+- `.siteSwitch-button`
+- `.siteSwitch-button > strong`
 
 ### All page content should be contained by landmarks
 
@@ -50,14 +52,14 @@
 - `.skip-content-wrapper`
 - `.cmp-logo__link > .sr-only`
 - `.myey-login-url`
-- `#image-render-bd6c3e038a > .cmp-image__image[height="2560"][loading="lazy"]`
+- `#image-render-bd6c3e038a > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `.swiper-slide-visible > .up-hero-carousel__content-wrapper`
 - `.up-hero-carousel__pagination`
 - `.theme-dark.cmp-container--theme-dark.cmp-container--background-color-e2e`
 - `#promotional-ad78cafc8c9d > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-ad78cafc8c9d > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-fc7c92bbabde`
-- `#image-render-1dedd839d6 > .cmp-image__image[height="2560"][loading="lazy"]`
+- `#image-render-1dedd839d6 > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `#promotional-1f7be6744d5a > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-1f7be6744d5a > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-d2a7d3b468ea`
@@ -65,11 +67,11 @@
 - `#promotional-375939547c80 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-375939547c80 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-ab618830f8b6`
-- `#image-render-58f30bbef7 > .cmp-image__image[height="2560"][loading="lazy"]`
+- `#image-render-58f30bbef7 > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-aac543142676`
-- `#image-render-d226705429 > .cmp-image__image[height="2560"][loading="lazy"]`
+- `#image-render-d226705429 > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `#promotional-283aef72eff8 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-283aef72eff8 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-1296c62e5384`
@@ -80,9 +82,9 @@
 - `.cmp-subscribe__text`
 - `#button-bc60d627c8a2`
 - `.cmp-contentGrid__title`
-- `img[title="Agata Karolina Kraus Dahl"]`
+- `#image-render-52b8dbfe34 > .cmp-image__image[title="EY Norge Partnere 2026"][loading="lazy"]`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content`
-- `img[height="2559"]`
+- `img[title="Agata Karolina Kraus Dahl"]`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content`
 - `.cmp-news-List`
 - `#button-7addb05aebee`

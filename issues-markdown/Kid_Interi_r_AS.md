@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-05-28T01:26:37.497Z
+**Timestamp:** 2026-05-29T01:34:02.859Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 8
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.bq.cj[href$="soverom"] > .b7.c.bj > .fp.fs.fo:nth-child(1)`
+- `.bq.cj[href$="soverom"] > .b7.c.bj > .fo.fr.fn:nth-child(1)`
 
 ### Heading levels should only increase by one
 
@@ -40,8 +40,8 @@
 
 #### Affected Elements:
 
-- `div:nth-child(3) > .ic.ia.ib > .iz.gf.j0 > .fz.c2 > div > div > .j1.ig.j0 > .j0.c2 > .j2.gh.gg > .j3.gl.gm`
-- `div:nth-child(15) > .ic.ia.ib > .iz.gf.j0 > .fz.c2 > div > div > .j1.ig.j0 > .j0.c2 > .j2.gh.gg > .j3.gl.gm`
+- `div:nth-child(3) > .ij.ih.ii > .j7.ge.j8 > .fy.c2 > div > div > .j9.in.j8 > .j8.c2 > .ja.gg.gf > .jb.gk.gl`
+- `div:nth-child(15) > .ij.ih.ii > .j7.ge.j8 > .fy.c2 > div > div > .j9.in.j8 > .j8.c2 > .ja.gg.gf > .jb.gk.gl`
 
 ### Alternative text of images should not be repeated as text
 
@@ -82,7 +82,7 @@
 #### Affected Elements:
 
 - `#coiOverlay`
-- `div:nth-child(2) > .h3.h4.h5 > .h9.ha.hb > .al > .b[role="region"][aria-roledescription="carousel"]`
+- `.ha > .al > .b[role="region"][aria-roledescription="carousel"]`
 
 ### Links must have discernible text
 
@@ -94,9 +94,9 @@
 
 #### Affected Elements:
 
-- `.f8.f[href$="palermo"]`
-- `.f8.f[href$="capri"]`
-- `.f8.f[href$="innleggsputer"]`
+- `.f7.gc[href$="palermo"]`
+- `.f7.gc[href$="capri"]`
+- `.f7.gc[href$="innleggsputer"]`
 
 ### All page content should be contained by landmarks
 

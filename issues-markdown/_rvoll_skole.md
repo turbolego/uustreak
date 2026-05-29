@@ -1,8 +1,8 @@
 # WCAG Violations Report for Årvoll skole
 
-**Timestamp:** 2026-05-28T00:55:36.922Z
+**Timestamp:** 2026-05-29T01:02:56.685Z
 **URL:** [https://arvoll.osloskolen.no/#](https://arvoll.osloskolen.no/#)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
 
@@ -19,15 +19,3 @@
 - `#silktide-banner > .mb-4`
 - `#silktide-banner > p:nth-child(2)`
 - `#silktide-banner > p:nth-child(3)`
-
-### Elements should not have tabindex greater than zero
-
-- **Impact:** serious
-- **Description:** Ensure tabindex attribute values are not greater than 0
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/tabindex?application=playwright
-- **Tags:** cat.keyboard, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `a[href$="#secMain"]`

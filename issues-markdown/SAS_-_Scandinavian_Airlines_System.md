@@ -1,6 +1,6 @@
 # WCAG Violations Report for SAS - Scandinavian Airlines System
 
-**Timestamp:** 2026-05-28T01:05:04.589Z
+**Timestamp:** 2026-05-29T01:12:17.965Z
 **URL:** [https://www.sas.no/#](https://www.sas.no/#)
 **Total Violations:** 1
 

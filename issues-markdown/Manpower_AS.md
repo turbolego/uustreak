@@ -1,6 +1,6 @@
 # WCAG Violations Report for Manpower AS
 
-**Timestamp:** 2026-05-28T00:51:35.895Z
+**Timestamp:** 2026-05-29T00:58:45.035Z
 **URL:** [https://www.manpower.no/nb](https://www.manpower.no/nb)
 **Total Violations:** 6
 
@@ -16,10 +16,10 @@
 
 #### Affected Elements:
 
-- `#hs-form-iframe-0, .multi-container`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(1)`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(2)`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(3)`
+- `#hs-form-iframe-0, ul`
+- `#hs-form-iframe-0, li:nth-child(1)`
+- `#hs-form-iframe-0, li:nth-child(2)`
+- `#hs-form-iframe-0, li:nth-child(3)`
 
 ### Required ARIA attributes must be provided
 
@@ -31,10 +31,10 @@
 
 #### Affected Elements:
 
-- `#hs-form-iframe-0, .multi-container`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(1)`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(2)`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(3)`
+- `#hs-form-iframe-0, ul`
+- `#hs-form-iframe-0, li:nth-child(1)`
+- `#hs-form-iframe-0, li:nth-child(2)`
+- `#hs-form-iframe-0, li:nth-child(3)`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -85,7 +85,7 @@
 
 #### Affected Elements:
 
-- `#hs-form-iframe-0, .multi-container`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(1)`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(2)`
-- `#hs-form-iframe-0, .hs-form-checkbox:nth-child(3)`
+- `#hs-form-iframe-0, ul`
+- `#hs-form-iframe-0, li:nth-child(1)`
+- `#hs-form-iframe-0, li:nth-child(2)`
+- `#hs-form-iframe-0, li:nth-child(3)`

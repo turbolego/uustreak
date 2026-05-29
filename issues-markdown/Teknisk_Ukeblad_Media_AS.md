@@ -1,6 +1,6 @@
 # WCAG Violations Report for Teknisk Ukeblad Media AS
 
-**Timestamp:** 2026-05-28T01:18:18.426Z
+**Timestamp:** 2026-05-29T01:25:48.702Z
 **URL:** [https://www.tu.no/](https://www.tu.no/)
 **Total Violations:** 2
 
@@ -19,7 +19,7 @@
 - `.peer`
 - `.gap-4.flex > .bg-transparent.hover\:bg-site-brand-darker.dark\:text-white:nth-child(1)`
 - `.gap-4.flex > .bg-transparent.hover\:bg-site-brand-darker.dark\:text-white:nth-child(2)`
-- `.inset-x-0 > .hover\:bg-site-brand-darker.dark\:text-white.h-11`
+- `.inset-x-0 > .hover\:bg-site-brand-darker.dark\:text-white.dark\:hover\:text-brandNeutral-900`
 
 ### Elements must meet minimum color contrast ratio thresholds
 

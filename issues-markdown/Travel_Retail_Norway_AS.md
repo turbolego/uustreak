@@ -1,8 +1,8 @@
 # WCAG Violations Report for Travel Retail Norway AS
 
-**Timestamp:** 2026-05-28T01:21:25.162Z
+**Timestamp:** 2026-05-29T01:28:59.668Z
 **URL:** [https://www.tax-free.no/no/](https://www.tax-free.no/no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -54,6 +54,18 @@
 
 - `.cx-header`
 - `trn-footer-links-navigation > nav[aria-label="Navigasjon i bunntekst"]`
+
+### Interactive controls must not be nested
+
+- **Impact:** serious
+- **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/nested-interactive?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `bam-playlist,bam-player[video-id="puv_wcjPeir9SacUpcig1WckEf"],.wrapper[role="button"]`
 
 ### All page content should be contained by landmarks
 
