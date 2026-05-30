@@ -1,7 +1,7 @@
 # WCAG Violations Report for Forsvaret
 
-**Timestamp:** 2026-05-29T05:07:38.910Z
-**URL:** [https://www.forsvaret.no/#](https://www.forsvaret.no/#)
+**Timestamp:** 2026-05-30T03:42:42.474Z
+**URL:** [https://www.forsvaret.no/](https://www.forsvaret.no/)
 **Total Violations:** 1
 
 ## Violation Details

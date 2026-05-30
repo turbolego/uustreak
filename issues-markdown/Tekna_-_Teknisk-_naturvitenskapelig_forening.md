@@ -1,7 +1,7 @@
 # WCAG Violations Report for Tekna - Teknisk- naturvitenskapelig forening
 
-**Timestamp:** 2026-05-29T05:08:20.952Z
-**URL:** [https://www.tekna.no/#](https://www.tekna.no/#)
+**Timestamp:** 2026-05-30T03:45:12.030Z
+**URL:** [https://www.tekna.no/](https://www.tekna.no/)
 **Total Violations:** 5
 
 ## Violation Details
@@ -75,8 +75,8 @@
 - `.text-image-block__text`
 - `.text-image-block__image:nth-child(1)`
 - `.block-spacing-small.col-12`
-- `img[alt="Tonje Leborg"]`
+- `img[alt="mann som krysser hendene"]`
 - `.t-article-card:nth-child(1) > .t-article-card__content`
-- `.t-article-card:nth-child(2) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
+- `img[alt="Tonje Leborg"]`
 - `.t-article-card:nth-child(2) > .t-article-card__content`
 - `.rss-feed`

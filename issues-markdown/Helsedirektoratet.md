@@ -1,7 +1,7 @@
 # WCAG Violations Report for Helsedirektoratet
 
-**Timestamp:** 2026-05-29T05:12:12.588Z
-**URL:** [https://www.helsedirektoratet.no/#](https://www.helsedirektoratet.no/#)
+**Timestamp:** 2026-05-30T03:47:04.057Z
+**URL:** [https://www.helsedirektoratet.no/](https://www.helsedirektoratet.no/)
 **Total Violations:** 3
 
 ## Violation Details

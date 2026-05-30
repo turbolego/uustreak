@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bergen Kino AS
 
-**Timestamp:** 2026-05-29T04:47:44.155Z
-**URL:** [https://www.bergenkino.no/#](https://www.bergenkino.no/#)
+**Timestamp:** 2026-05-30T03:25:53.793Z
+**URL:** [https://www.bergenkino.no/](https://www.bergenkino.no/)
 **Total Violations:** 8
 
 ## Violation Details
@@ -12,88 +12,103 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 80
+- **Count:** 95
 
 #### Affected Elements:
 
-- `a[href="/showtime/2851584"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2840874"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2859166"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2840878"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857501"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857864"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857952"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857785"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857883"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj601ee5d1d998454989f58c2b15daf813_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2857737"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857735"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857722"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857720"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857726"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#objd1b50b9d24b448c1b1ae86c630af34f1_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2857711"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857712"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2858010"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857840"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#objfd756260cc3a42b9a90ed23fc3fb7dd1_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2857791"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857706"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857705"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857707"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obja12345897ab3484396d379d9327d23e5_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2839057"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2839056"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2839055"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2839054"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj2fca52f2a08b48f6aeeb8b285add9155_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2857703"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857704"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857849"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857777"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857768"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#objef29b96384d3444b8223355ee9c16421_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2857835"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857749"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857880"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857924"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857760"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857987"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj16d0b3d4468240e2a1efc299da4ce735_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2857753"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857719"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#objc560d330bb1746babffd3e23e2bb0dd7_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2857718"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#objda03a83bb0704d0dbac1f736a7ab3f21_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2860567"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857778"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857769"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#objfb63d8fa0a6e40e8896928f5b6b4d719_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2857902"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857734"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857967"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857994"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#objaeb3069d908643a6a425e5c24e2c8bfd_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2857767"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857740"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857743"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857742"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#objb5d4409f7a5c470c97d548cc18e0161b_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2857829"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obje00caa785fdd487ab9b14e6eab762175_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2857765"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj2a6c89fb2c1c48648c86b161d54cadf5_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2857751"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj38f736c344264c65ae48a7676e1203cd_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2857750"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857937"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj76f3b0289f6d4535ac6952b4f4a2b3df_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2858003"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2858006"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `#obj23c1a0ec94a54dacaece30617fd7e2b6_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `a[href="/showtime/2842469"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857738"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
-- `a[href="/showtime/2857757"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj0d5645caf6fa476a968cd8cce082c058_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2858219"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858202"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2857979"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2851587"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2857980"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2851590"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858034"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2859214"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2863008"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2859227"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#objbd322eaff3064cd09887791c25a19a23_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2858196"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858195"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2857974"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2857977"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2857973"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2857978"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858295"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj13c583e5372741b28dc3b70c0e39a467_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2858204"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858064"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2859222"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2859226"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858063"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858018"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#objd48cfa6c9099429ba4aef35db0488587_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2858041"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858043"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858044"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858042"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj553b97abd3fb408cbb006a48c279cf18_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2839069"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2839068"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2839067"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2839066"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858031"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858032"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858033"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj73ecd101133f4ded9a838bed69b890b4_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2858046"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858047"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obja3da15547b1b4ac5be9a6e28cb29eaf1_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2858268"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858266"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858028"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858260"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858259"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858030"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj3c77175e34544030a49265017c6c50b5_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2858387"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858052"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858053"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858039"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858038"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj82802fad2701467abdac67e14878ce32_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2863103"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858012"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj0653c2f585254d6fb887c68b945da4d0_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2858171"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858284"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858021"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj47c48b2b1f574fc6b9295b32646ed39c_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2858026"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj9ef0717188a34784ad86968010e0040c_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2858279"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858276"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858048"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858058"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858056"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858057"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj5da6a9a792b749ee803617d6c63761f8_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2858255"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858216"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858217"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858244"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj5669070efabd42d39f0c346cd7fdcffd_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2858175"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obj4f69967060a744ba983c9236b966f88e_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2858187"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858059"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858234"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obje154d3ae0bf64147999257d71e616664_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2858184"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858221"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858193"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858055"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `#obje3a6bead80624c878c0666543b44e9c3_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `a[href="/showtime/2858049"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2599374"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858061"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858488"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
+- `a[href="/showtime/2858040"] > .showtime_card.p-2.bg-gray-100 > .program__showtimeTime > .program__showtime-endtime`
 - `.top-list_subtitle`
 - `.text-capitalize`
 
@@ -107,8 +122,8 @@
 
 #### Affected Elements:
 
-- `#objfd756260cc3a42b9a90ed23fc3fb7dd1_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
-- `#objc560d330bb1746babffd3e23e2bb0dd7_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
+- `#objd48cfa6c9099429ba4aef35db0488587_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
+- `#obj0653c2f585254d6fb887c68b945da4d0_showtimes > .my-3 > .kinoclub > .justify-content-between.w-100.d-flex > .kinoclubb__logo`
 - `div:nth-child(1) > .footer__download_btn[rel="noopener noreferrer"][target="_blank"] > .footer__download_img`
 - `div:nth-child(2) > .footer__download_btn[rel="noopener noreferrer"][target="_blank"] > .footer__download_img`
 - `#\#ticket_icon_id`
@@ -192,149 +207,149 @@
 #### Affected Elements:
 
 - `.header-transparent`
-- `#swiper-wrapper-a4d827d6c7cc4a16`
-- `.obj1feba541c9b746fea9fe429620d8da3a > section > .flex-row.mb-4.font-weight-semi-bold`
-- `div:nth-child(1) > .card_item[onclick="contentSwitcherGAArticle();"] > .card_item__link[data-target-partial="true"] > .card_item__title.font-weight-bold.mt-3`
-- `div:nth-child(1) > .card_item[onclick="contentSwitcherGAArticle();"] > .card_item__link[data-target-partial="true"] > .card_item__subtitle.mt-1`
+- `#swiper-wrapper-753fada41efce60c`
+- `.obj095762e50f714389af60e8adcca46a67 > section > .flex-row.mb-4.font-weight-semi-bold`
+- `a[href$="barnas-superkino"] > .card_item__title.font-weight-bold.mt-3`
+- `a[href$="barnas-superkino"] > .card_item__subtitle.mt-1`
 - `div:nth-child(2) > .card_item[onclick="contentSwitcherGAArticle();"] > .card_item__link[data-target-partial="true"] > .card_item__title.font-weight-bold.mt-3`
 - `div:nth-child(2) > .card_item[onclick="contentSwitcherGAArticle();"] > .card_item__link[data-target-partial="true"] > .card_item__subtitle.mt-1`
 - `.card_item__link[href="/f/scary-movie/2780"][data-target-partial="true"] > .card_item__title.font-weight-bold.mt-3`
 - `.card_item__link[href="/f/scary-movie/2780"][data-target-partial="true"] > .card_item__subtitle.mt-1`
-- `a[href$="barnas-superkino"] > .card_item__title.font-weight-bold.mt-3`
-- `a[href$="barnas-superkino"] > .card_item__subtitle.mt-1`
 - `a[href="/f/disclosure-day/2779"] > .card_item__title.font-weight-bold.mt-3`
 - `a[href="/f/disclosure-day/2779"] > .card_item__subtitle.mt-1`
 - `a[href="/f/toy-story-5/2659"] > .card_item__title.font-weight-bold.mt-3`
 - `a[href="/f/toy-story-5/2659"] > .card_item__subtitle.mt-1`
-- `#objc396e62d5d54404399e304489591dc1b_adform`
+- `a[href="/f/minions-and-monstre/2656"] > .card_item__title.font-weight-bold.mt-3`
+- `a[href="/f/minions-and-monstre/2656"] > .card_item__subtitle.mt-1`
+- `#obj23d951d15b424437a951309f851e97b8_adform`
 - `.py-4.container > section > .flex-row.mb-4.font-weight-semi-bold`
-- `#obj67ee2fd4a86548a9a2d7a25e9eba0474_dates`
-- `#obj67ee2fd4a86548a9a2d7a25e9eba0474_sortOptions`
-- `#obj67ee2fd4a86548a9a2d7a25e9eba0474_screens`
-- `#obj60d11d2b69cd47d38ffbbe4ebcaced01`
+- `#objf4a1c4df6bb845f480bb9a15d9dabec7_dates`
+- `#objf4a1c4df6bb845f480bb9a15d9dabec7_sortOptions`
+- `#objf4a1c4df6bb845f480bb9a15d9dabec7_screens`
+- `#obj2dd49abd09a4471c90655b9b234ab27a`
 - `.movie-title.font-weight-semi-bold[href="/f/backrooms/2778"]`
-- `#objf4415be8acf5415598bb23446c30fbf4_showtimes > p`
-- `#objcf3b336ddadf42bb85ab821eb31014bc`
-- `#obj6a8b2282b7624fc8a961b08378b0a551`
+- `#obj0d5645caf6fa476a968cd8cce082c058_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj0d5645caf6fa476a968cd8cce082c058_showtimes > p`
+- `#objac90ea21fe144866bc0749c1c78fdff7`
+- `#objc80aa194694b4895af971e7ee86cf863`
 - `.movie-title.font-weight-semi-bold[href="/f/michael/1964"]`
-- `#obj601ee5d1d998454989f58c2b15daf813_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj601ee5d1d998454989f58c2b15daf813_showtimes > p`
-- `#obj9a90bda2c3ca4664b1a19c185dde9ced`
-- `#obj36dfce693f03491aa55e7adefcf325da`
+- `#objbd322eaff3064cd09887791c25a19a23_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#objbd322eaff3064cd09887791c25a19a23_showtimes > p`
+- `#obj0e511a6f5c8e47cfa0aaef53e03e2787`
+- `#obj851a3b7196f04394af27316f8aa4532f`
 - `.movie-title.font-weight-semi-bold[href="/f/obsession/2662"]`
-- `#objd1b50b9d24b448c1b1ae86c630af34f1_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#objd1b50b9d24b448c1b1ae86c630af34f1_showtimes > p`
-- `#objc633b22d1a84403a8059907d7ab56164`
-- `#obj79b9869334d24b998c5afb293baa33de_adform`
-- `#obj1e82d6311d80461f80c4ef64b0b22130`
-- `#objfd756260cc3a42b9a90ed23fc3fb7dd1_showtimes > .movie-title.font-weight-semi-bold.h5`
-- `#objfd756260cc3a42b9a90ed23fc3fb7dd1_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#objfd756260cc3a42b9a90ed23fc3fb7dd1_showtimes > p`
-- `#objfd756260cc3a42b9a90ed23fc3fb7dd1_showtimes > .my-3 > .kinoclub`
-- `#objc5f7cd6ee71345c79f56eb496c9c7d78`
-- `#obj345dc0d0668f4f22bc6ce82aa6f19960`
-- `#obja12345897ab3484396d379d9327d23e5_showtimes > .movie-title.font-weight-semi-bold.h5`
-- `#obja12345897ab3484396d379d9327d23e5_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obja12345897ab3484396d379d9327d23e5_showtimes > p`
-- `#obj4491253c185043c3b49c2580d0ba9f78`
-- `#obj1558d12b925a4b918e9037483915527e`
-- `a[href="/f/mortal-kombat-ii/2450"]`
-- `#obj2fca52f2a08b48f6aeeb8b285add9155_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj2fca52f2a08b48f6aeeb8b285add9155_showtimes > p`
-- `#obj200d7b3cd35f49b5b007ee013e440694`
+- `#obj13c583e5372741b28dc3b70c0e39a467_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj13c583e5372741b28dc3b70c0e39a467_showtimes > p`
+- `#obj09230b76e2fb4749a1bbf497f4537a8f`
+- `#obj085aa06465a041cf96599941652b5d4d_adform`
+- `#obje3560f79487b415d8218c1683cf41d9c`
+- `#objd48cfa6c9099429ba4aef35db0488587_showtimes > .movie-title.font-weight-semi-bold.h5`
+- `#objd48cfa6c9099429ba4aef35db0488587_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#objd48cfa6c9099429ba4aef35db0488587_showtimes > p`
+- `#objd48cfa6c9099429ba4aef35db0488587_showtimes > .my-3 > .kinoclub`
+- `#obj8be2f81726144939aa55ea29a0ad6c52`
+- `#objfcd8433a764444cd9dbae551bd6d051f`
+- `#obj553b97abd3fb408cbb006a48c279cf18_showtimes > .movie-title.font-weight-semi-bold.h5`
+- `#obj553b97abd3fb408cbb006a48c279cf18_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj553b97abd3fb408cbb006a48c279cf18_showtimes > p`
+- `#obj86d09245931049229315eb039c7a12c1`
 - `div[onclick="goTo('/f/lillesoster/2686')"] > img[alt="poster"][loading="lazy"]`
 - `a[href="/f/lillesoster/2686"]`
-- `#obj77fecfe64c114c82a0d5301f9d36ba81_showtimes > p`
-- `#obj65ad306765bf49c49d5c63557e545683`
-- `#obja3c5a10a0b454a6588336556ea2aa5d1`
+- `#obj966584c2cda040ec8117a5e7ca53ce2f_showtimes > p`
+- `#objd0858239602142a5bc9e5f5425bc2a0f`
+- `#objfd3e46c0c25a47c29866805686ba13ca`
+- `a[href="/f/mortal-kombat-ii/2450"]`
+- `#obj73ecd101133f4ded9a838bed69b890b4_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj73ecd101133f4ded9a838bed69b890b4_showtimes > p`
+- `#obj65479f1f623a436a85f029748afaf8d3`
+- `#obj4accc928df9647c78f5710984f35b3af`
 - `a[href="/f/sauedetektivene/2666"]`
-- `#objef29b96384d3444b8223355ee9c16421_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#objef29b96384d3444b8223355ee9c16421_showtimes > p`
-- `#obj9aa2f79110944051bdb56e13ef3a9f6e`
-- `#obj25eb022f303443d092a2854d91dfcf0a`
-- `#obj43fec1ac86ff48eb97bb1c2de47d942c_showtimes > .movie-title.font-weight-semi-bold.h5`
-- `#obj43fec1ac86ff48eb97bb1c2de47d942c_showtimes > p`
-- `#objc58159496a4e4d8e9444dccab9691920`
-- `#objad27e7d8dfdf40cdb52da721bdd4ac6a`
+- `#obja3da15547b1b4ac5be9a6e28cb29eaf1_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obja3da15547b1b4ac5be9a6e28cb29eaf1_showtimes > p`
+- `#obje30aea8daa654b0e8216e9a4e25acb61`
+- `#obje124e5136ad34a26a4f98459516a3bad`
 - `a[href="/f/project-hail-mary/2715"]`
-- `#obj16d0b3d4468240e2a1efc299da4ce735_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj16d0b3d4468240e2a1efc299da4ce735_showtimes > p`
-- `#obj288239ebca2842c58632e87b229b0a4f`
-- `#obj57b529269fcc401c946c5c9ffcdaa474`
-- `a[href="/f/the-drama/2724"]`
-- `#objc560d330bb1746babffd3e23e2bb0dd7_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#objc560d330bb1746babffd3e23e2bb0dd7_showtimes > p`
-- `#objc560d330bb1746babffd3e23e2bb0dd7_showtimes > .my-3 > .kinoclub`
-- `#objf28928f34cab490ba17feec0e17bc2ec`
-- `#obj4c886e2502a84f2bb452fd86e5a0b3bf`
+- `#obj3c77175e34544030a49265017c6c50b5_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj3c77175e34544030a49265017c6c50b5_showtimes > p`
+- `#obj8e70577c600f40c98071bce56d92858a`
+- `#obja6b211507da54a88955a92e2c12d952b`
+- `#obj0aa8a8d06d034b2cbdc9884e6cbe4676_showtimes > .movie-title.font-weight-semi-bold.h5`
+- `#obj0aa8a8d06d034b2cbdc9884e6cbe4676_showtimes > p`
+- `#obj07c716e9f01643759bf2f33f982cf9c6`
+- `#objaaa04a053fe441f6946650741589126d`
 - `.movie-title.font-weight-semi-bold[href="/f/passenger/2777"]`
-- `#objda03a83bb0704d0dbac1f736a7ab3f21_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#objda03a83bb0704d0dbac1f736a7ab3f21_showtimes > p`
-- `#obj363f0510e13542f4b6a24b92a46b741c`
-- `#obj7f813b45957e4d18976f3618899dac7b`
+- `#obj82802fad2701467abdac67e14878ce32_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj82802fad2701467abdac67e14878ce32_showtimes > p`
+- `#obj7147ae03aa934d6ebdac5bd4c11ea56e`
+- `#obje35405b8fd5b477290759e33016f2e82`
+- `a[href="/f/the-drama/2724"]`
+- `#obj0653c2f585254d6fb887c68b945da4d0_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj0653c2f585254d6fb887c68b945da4d0_showtimes > p`
+- `#obj0653c2f585254d6fb887c68b945da4d0_showtimes > .my-3 > .kinoclub`
+- `#objabf73c997e2e41f89a0cfd1c41539dcc`
+- `#obj2c5322a7c96a4f999e23fe43161f584e`
 - `a[href="/f/den-fremmede/2854"]`
-- `#obj84dbad3a15944e66815531cae9da7472_showtimes > p`
-- `#obj8b49eed5921e46c29599c0f1843ff72f`
-- `#obj1aac071ac1684444bb667d7b97175b47`
-- `a[href="/f/goat-drom-stort/2367"]`
-- `#objfb63d8fa0a6e40e8896928f5b6b4d719_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#objfb63d8fa0a6e40e8896928f5b6b4d719_showtimes > p`
-- `#objce7f94cedf0b4647a60de1336c2d7b69`
-- `#obj06d06531b1a34a0298b1091b7a94cb47`
+- `#obje1bdc94fb53447688cbb760d24e5de40_showtimes > p`
+- `#obj32b6b56a515e465fa73e9d9e29047147`
+- `#objb6c0f96c4e774f0e946b64f2f6f425f6`
 - `a[href="/f/in-the-grey/2839"]`
-- `#objaeb3069d908643a6a425e5c24e2c8bfd_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#objaeb3069d908643a6a425e5c24e2c8bfd_showtimes > p`
-- `#obj0ccac5129b8c4085ad90582182669394`
-- `#obj913609c88b134d5088b6819fa85cbd62`
+- `#obj47c48b2b1f574fc6b9295b32646ed39c_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj47c48b2b1f574fc6b9295b32646ed39c_showtimes > p`
+- `#obj2ea7e0d402e44c56a3f5d076d96243db`
+- `#objd4e70cd98e9a48ad86aa967806e61737`
+- `#obj9ef0717188a34784ad86968010e0040c_showtimes > .movie-title.font-weight-semi-bold.h5`
+- `#obj9ef0717188a34784ad86968010e0040c_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj9ef0717188a34784ad86968010e0040c_showtimes > p`
+- `#objd77478fc89aa43fc924bcae42450b8b0`
+- `#objdbec023c3cd44c9481910e538b9f7aea`
 - `a[href="/f/mira/2743"]`
-- `#obj1851f18d585a40318f46a3729ea6c5f7_showtimes > p`
-- `#obj01ce301b35ff4e4d9466a111125eddfb`
-- `#obja24db2858ee345efa0cd3a7bcd6d9bcb`
-- `#objb5d4409f7a5c470c97d548cc18e0161b_showtimes > .movie-title.font-weight-semi-bold.h5`
-- `#objb5d4409f7a5c470c97d548cc18e0161b_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#objb5d4409f7a5c470c97d548cc18e0161b_showtimes > p`
-- `#obj59181573f64647acb6abca11c5ac3480`
-- `#obj5634157055e8424aa9943eaccafa2b82`
+- `#obj4b2914beef7e405c80ef6c14fb530065_showtimes > p`
+- `#obj224f24797d6c4c3593959ec47423328c`
+- `#obje84859f0df6d478d9c5275f0f0baf560`
+- `a[href="/f/goat-drom-stort/2367"]`
+- `#obj5da6a9a792b749ee803617d6c63761f8_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj5da6a9a792b749ee803617d6c63761f8_showtimes > p`
+- `#obj1f026852f15c4d1a810b7f129eec8ea7`
+- `#obj465bf4d5cf7b4c6789fc19d9346f322b`
 - `a[href="/f/saltstien/2726"]`
-- `#obje00caa785fdd487ab9b14e6eab762175_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obje00caa785fdd487ab9b14e6eab762175_showtimes > p`
-- `#objcd0eb0384ce042e4a2a51edd8542fa76`
-- `#obj4975823207da4e7aae3f1b63a90a90ee`
-- `a[href="/f/kenny-dalglish/2843"]`
-- `#obj2a6c89fb2c1c48648c86b161d54cadf5_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj2a6c89fb2c1c48648c86b161d54cadf5_showtimes > p`
-- `#objbd2e9e707a194d10b8a69a4ea3b937df`
-- `#obj5c8d1aba54564fc0b418eb871c05144b`
+- `#obj5669070efabd42d39f0c346cd7fdcffd_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj5669070efabd42d39f0c346cd7fdcffd_showtimes > p`
+- `#obj42821b0bd1014a5da2321e8167250983`
+- `#objfdbdb2264bba433e88b47b8f3dbb4a18`
 - `a[href="/f/operasjon-bever/2704"]`
-- `#obj38f736c344264c65ae48a7676e1203cd_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj38f736c344264c65ae48a7676e1203cd_showtimes > p`
-- `#obje82ed84143164224a82706ae256521e7`
-- `#obj8897894aec164df1aaeadb2eb5526662`
-- `#obj76f3b0289f6d4535ac6952b4f4a2b3df_showtimes > .movie-title.font-weight-semi-bold.h5`
-- `#obj76f3b0289f6d4535ac6952b4f4a2b3df_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj76f3b0289f6d4535ac6952b4f4a2b3df_showtimes > p`
-- `#objea8e789773b44884a04ece3e0cdc48a9`
-- `div[onclick="goTo('/f/legally-blonde/2842')"] > img[alt="poster"][loading="lazy"]`
-- `a[href="/f/legally-blonde/2842"]`
-- `#obj23c1a0ec94a54dacaece30617fd7e2b6_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
-- `#obj23c1a0ec94a54dacaece30617fd7e2b6_showtimes > p`
-- `#obj1bc398c82e0c4025a5164c3a29466447`
-- `#obj189bb349a89945c5b782853bf4f3a9f9 > .card2_item__image > img[alt="poster"][loading="lazy"]`
-- `#obj58471c8a3a3143a1934ba7dd8373f0be_showtimes > .movie-title.font-weight-semi-bold.h5`
-- `#obj58471c8a3a3143a1934ba7dd8373f0be_showtimes > p`
-- `#objabf0096a5b094b99b172cc3b3fef7c2e`
-- `#obj665e219f1b484e8c93089ea47e14ebea`
+- `#obj4f69967060a744ba983c9236b966f88e_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obj4f69967060a744ba983c9236b966f88e_showtimes > p`
+- `#obj7d3aeb0cf9a2429ba24ec6c47691e12d`
+- `#objf542002813c34951b4dd7a9f0f9b276a`
+- `#obje154d3ae0bf64147999257d71e616664_showtimes > .movie-title.font-weight-semi-bold.h5`
+- `#obje154d3ae0bf64147999257d71e616664_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obje154d3ae0bf64147999257d71e616664_showtimes > p`
+- `#obj47aff806b38d4720b37f4a1ad2a1a6a8`
+- `#obj0eb19a1308ff413c8d197c4f5ecc099d`
+- `a[href="/f/kenny-dalglish/2843"]`
+- `#obje3a6bead80624c878c0666543b44e9c3_showtimes > .rating-container.mt-3.d-flex > .rating-text.text-muted.ml-2`
+- `#obje3a6bead80624c878c0666543b44e9c3_showtimes > p`
+- `#obj74b8150781514203a5921a653924c160`
+- `#obj2a55f3db37d64bdb8289de8c3f410cae > .card2_item__image > img[alt="poster"][loading="lazy"]`
+- `#obj1cc1c8eaeab64d4b89cb8ea67f6edf18_showtimes > .movie-title.font-weight-semi-bold.h5`
+- `#obj1cc1c8eaeab64d4b89cb8ea67f6edf18_showtimes > p`
+- `#obj9fd223a321cd41ebb993cdd7f99c2898`
+- `#obj39f73908c03d4e8bb3cbd3ec8c94a09b > .card2_item__image > img[alt="poster"][loading="lazy"]`
+- `#obje371e2f21ea74681870e7b207cbabdcd_showtimes > .movie-title.font-weight-semi-bold.h5`
+- `#obje371e2f21ea74681870e7b207cbabdcd_showtimes > p`
+- `#obj13133e38954c4598bb16c5b7c01ba743`
+- `#obj112fe4fb1d674e478ec2d665af561b05`
 - `a[href="/f/smaken-av-paris/2660"]`
-- `#obj8355d41e81b04bbebc1e4c384db20a88_showtimes > p`
-- `#obj2f99c87d0d3a4168bc5318afc37974ee`
-- `.objd8ea68ab124c4a97b4f6f79b0a51f789 > section > .flex-row.mb-4.font-weight-semi-bold`
+- `#obj5829476e19054ed78c737c42f8530d50_showtimes > p`
+- `#obje28cfe7d223744e395a2a70e4e3969f1`
+- `.obja28b15c223594a249cf363f5199de95c > section > .flex-row.mb-4.font-weight-semi-bold`
 - `.top-list_subtitle`
-- `#obje2649cc3a1ec4e0cb597e3d486d52e59 > .top-card_wrapper.d-flex`
-- `#objaf3dd425e2034a17a8a8b89385fa454b > .top-card_wrapper.d-flex`
-- `#obje3a7cdf3ef7b478cb347dec176470189 > .top-card_wrapper.d-flex`
-- `#obj82b8ba3ea2954c48a92222bd7acc8c46 > .top-card_wrapper.d-flex`
-- `#objc1ee10e66f974779916fe29fdc8b558b > .top-card_wrapper.d-flex`
-- `#objade25543d22c4e7e94cd70d9bbfa9e3f > .top-card_wrapper.d-flex`
+- `#objc4ceeebdbbe04894998425d156e12cc4 > .top-card_wrapper.d-flex`
+- `#obj16c1b41b036f4654a2f8d49d3969c0ae > .top-card_wrapper.d-flex`
+- `#obj747b1039f5a64413a0ea86975410c0de > .top-card_wrapper.d-flex`
+- `#objca850325cfe74d63a279b2279a2895fe > .top-card_wrapper.d-flex`
+- `#obja638e41b14b246ca8cdf4d18e56a787a > .top-card_wrapper.d-flex`
+- `#obj62192837fdf04feabf0f2b1ae093791f > .top-card_wrapper.d-flex`
 - `.col-sm-12.col-md-3:nth-child(1)`
 - `.col-sm-12.col-md-3:nth-child(2)`
 - `.footer__subtitle.pt-2.mb-2`
@@ -356,9 +371,9 @@
 
 #### Affected Elements:
 
-- `#obj67ee2fd4a86548a9a2d7a25e9eba0474_dates`
-- `#obj67ee2fd4a86548a9a2d7a25e9eba0474_sortOptions`
-- `#obj67ee2fd4a86548a9a2d7a25e9eba0474_screens`
+- `#objf4a1c4df6bb845f480bb9a15d9dabec7_dates`
+- `#objf4a1c4df6bb845f480bb9a15d9dabec7_sortOptions`
+- `#objf4a1c4df6bb845f480bb9a15d9dabec7_screens`
 - `.movie-filter-dropdown`
 - `#date_picker`
 - `#showtime_dropdown`
