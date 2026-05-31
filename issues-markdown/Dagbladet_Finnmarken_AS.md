@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dagbladet Finnmarken AS
 
-**Timestamp:** 2026-05-31T01:24:36.981Z
-**URL:** [https://www.ifinnmark.no/](https://www.ifinnmark.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-05-31T20:42:07.746Z
+**URL:** [https://www.ifinnmark.no/#](https://www.ifinnmark.no/#)
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -24,11 +24,10 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, #adn-sup-0\.6931851901199685`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -42,21 +41,6 @@
 #### Affected Elements:
 
 - `brick-carousel-v2[data-slides="10"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
-
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 4
-
-#### Affected Elements:
-
-- `html`
-- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, html`
-- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, #adn-sup-0\.6931851901199685, html`
-- `#eaframe, html`
 
 ### Elements marked as presentational should be consistently ignored
 

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Asker og Bærum Budstikke AS
 
-**Timestamp:** 2026-05-31T01:15:39.346Z
-**URL:** [https://www.budstikka.no/](https://www.budstikka.no/)
+**Timestamp:** 2026-05-31T20:32:13.547Z
+**URL:** [https://www.budstikka.no/#](https://www.budstikka.no/#)
 **Total Violations:** 3
 
 ## Violation Details
@@ -12,12 +12,10 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.budstikka\.no\/toppbanner_0, iframe[scrolling="no"]`
-- `#google_ads_iframe_\/56257416\/www\.budstikka\.no\/toppbanner_0, body > iframe`
 - `#eaframe`
 
 ### Elements marked as presentational should be consistently ignored

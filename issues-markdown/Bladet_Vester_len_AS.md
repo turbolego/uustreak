@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-05-31T01:20:36.740Z
-**URL:** [https://www.blv.no/](https://www.blv.no/)
+**Timestamp:** 2026-05-31T20:37:34.687Z
+**URL:** [https://www.blv.no/#](https://www.blv.no/#)
 **Total Violations:** 7
 
 ## Violation Details
@@ -36,11 +36,10 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, iframe`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -53,7 +52,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="18"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `brick-carousel-v2[data-slides="17"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Links must have discernible text
 

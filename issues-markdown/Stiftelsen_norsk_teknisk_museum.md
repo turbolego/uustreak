@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stiftelsen norsk teknisk museum
 
-**Timestamp:** 2026-05-31T01:36:52.233Z
-**URL:** [https://www.tekniskmuseum.no/](https://www.tekniskmuseum.no/)
+**Timestamp:** 2026-05-31T20:50:57.045Z
+**URL:** [https://www.tekniskmuseum.no/#](https://www.tekniskmuseum.no/#)
 **Total Violations:** 9
 
 ## Violation Details

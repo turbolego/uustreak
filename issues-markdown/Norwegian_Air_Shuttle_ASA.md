@@ -1,62 +1,55 @@
 # WCAG Violations Report for Norwegian Air Shuttle ASA
 
-**Timestamp:** 2026-05-31T01:21:18.913Z
-**URL:** [https://www.norwegian.com/](https://www.norwegian.com/)
-**Total Violations:** 4
+**Timestamp:** 2026-05-31T20:34:53.400Z
+**URL:** [https://www.norwegian.com/#](https://www.norwegian.com/#)
+**Total Violations:** 3
 
 ## Violation Details
 
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#FbRG5`
-
-### <html> element must have a lang attribute
+### ARIA attributes must be used as specified for the element's role
 
 - **Impact:** serious
-- **Description:** Ensure every HTML document has a lang attribute
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=playwright
-- **Tags:** cat.language, wcag2a, wcag311, TTv5, TT11.a, EN-301-549, EN-9.3.1.1, ACT, RGAAv4, RGAA-8.3.1
+- **Description:** Ensure ARIA attributes are used as described in the specification of the element's role
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-conditional-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `html`
+- `#ot-bnr-grp-id-C0001`
 
-### Delayed refresh under 20 hours must not be used
-
-- **Impact:** critical
-- **Description:** Ensure <meta http-equiv="refresh"> is not used for delayed refresh
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/meta-refresh?application=playwright
-- **Tags:** cat.time-and-media, wcag2a, wcag221, TTv5, TT8.a, EN-301-549, EN-9.2.2.1, RGAAv4, RGAA-13.1.2
-- **Count:** 1
-
-#### Affected Elements:
-
-- `meta[http-equiv="refresh"]`
-
-### All page content should be contained by landmarks
+### Heading levels should only increase by one
 
 - **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 8
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
 
 #### Affected Elements:
 
-- `h1`
-- `p:nth-child(3)`
-- `.client-ip`
-- `h3:nth-child(6)`
-- `p:nth-child(7)`
-- `h3:nth-child(8)`
-- `p:nth-child(9)`
-- `p:nth-child(10)`
+- `#ot-bnr-hdr-id-C0001`
+
+### Alternative text of images should not be repeated as text
+
+- **Impact:** minor
+- **Description:** Ensure image alternative is not repeated as text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
+- **Tags:** cat.text-alternatives, best-practice
+- **Count:** 13
+
+#### Affected Elements:
+
+- `img[data-src$="dk.svg"]`
+- `img[data-src$="de.svg"]`
+- `img[data-src$="es.svg"]`
+- `img[data-src$="fi.svg"]`
+- `img[data-src$="fr.svg"]`
+- `img[data-src$="it.svg"]`
+- `img[data-src$="nl.svg"]`
+- `img[data-src$="no.svg"]`
+- `img[data-src$="en.svg"]`
+- `img[data-src$="pl.svg"]`
+- `img[data-src$="se.svg"]`
+- `img[data-src$="uk.svg"]`
+- `img[data-src$="us.svg"]`

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Frende Skadeforsikring AS
 
-**Timestamp:** 2026-05-31T01:35:52.756Z
-**URL:** [https://www.frende.no/](https://www.frende.no/)
+**Timestamp:** 2026-05-31T20:55:07.780Z
+**URL:** [https://www.frende.no/#](https://www.frende.no/#)
 **Total Violations:** 3
 
 ## Violation Details

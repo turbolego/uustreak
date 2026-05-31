@@ -1,7 +1,7 @@
 # WCAG Violations Report for Kristiansand kommune
 
-**Timestamp:** 2026-05-31T01:45:42.963Z
-**URL:** [https://www.kristiansand.kommune.no/](https://www.kristiansand.kommune.no/)
+**Timestamp:** 2026-05-31T21:06:20.185Z
+**URL:** [https://www.kristiansand.kommune.no/#](https://www.kristiansand.kommune.no/#)
 **Total Violations:** 3
 
 ## Violation Details

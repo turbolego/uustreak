@@ -1,7 +1,7 @@
 # WCAG Violations Report for Synsam Norge AS
 
-**Timestamp:** 2026-05-31T01:39:42.239Z
-**URL:** [https://www.synsam.no/](https://www.synsam.no/)
+**Timestamp:** 2026-05-31T20:54:02.208Z
+**URL:** [https://www.synsam.no/#](https://www.synsam.no/#)
 **Total Violations:** 1
 
 ## Violation Details
@@ -17,4 +17,4 @@
 #### Affected Elements:
 
 - `.relative.isolate.flex-col:nth-child(1) > .h-full > .is-sm.is-light.ContentCard_content-card__MhjHq > .ContentCard_content-card-body__cV7he > div:nth-child(1) > h3`
-- `.ContentSection_content-section__roiLZ:nth-child(15) > .LinkCluster_link-cluster__0HLDp > .LinkCluster_link-cluster-heading__6u1_f`
+- `.ContentSection_content-section__roiLZ:nth-child(14) > .LinkCluster_link-cluster__0HLDp > .LinkCluster_link-cluster-heading__6u1_f`

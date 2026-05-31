@@ -1,7 +1,7 @@
 # WCAG Violations Report for Universitetet i Oslo
 
-**Timestamp:** 2026-05-31T01:46:51.582Z
-**URL:** [https://www.uio.no/](https://www.uio.no/)
+**Timestamp:** 2026-05-31T21:01:27.570Z
+**URL:** [https://www.uio.no/#](https://www.uio.no/#)
 **Total Violations:** 2
 
 ## Violation Details

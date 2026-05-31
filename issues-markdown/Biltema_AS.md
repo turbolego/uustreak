@@ -1,8 +1,8 @@
 # WCAG Violations Report for Biltema AS
 
-**Timestamp:** 2026-05-31T01:20:03.651Z
-**URL:** [https://www.biltema.no/](https://www.biltema.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-05-31T20:36:39.211Z
+**URL:** [https://www.biltema.no/#](https://www.biltema.no/#)
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -73,6 +73,18 @@
 - `.content__grid--3.content__grid--3-2.align--center:nth-child(1) > a[href$="multix18v/"]`
 - `.content__grid--3.content__grid--3-2.align--center:nth-child(2) > a`
 - `.content__grid--3.content__grid--3-2.align--center:nth-child(3) > a`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
 
 ### All page content should be contained by landmarks
 
