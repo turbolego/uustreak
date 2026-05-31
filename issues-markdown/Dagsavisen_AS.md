@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-05-30T03:32:58.974Z
+**Timestamp:** 2026-05-31T01:25:12.945Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 8
 
@@ -56,10 +56,10 @@
 
 - `.has-row-header.color_mobile_no_bg_color.hasContentPadding > h5`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(16) > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44) > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52) > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(61) > h5`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(67) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(46) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(53) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(62) > h5`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(68) > h5`
 
 ### Images must have alternative text
 
@@ -101,7 +101,7 @@
 - `#offer_76ab86a74ebe8319bc9f-0, a`
 - `#offer_76ab86a74ebe8319bc9f-1, a`
 - `a[href$="mailto:kb@dagsavisen.no"]`
-- `.tm17.singleline.font-PTSans > a[href$="dagsavisen"][target="_blank"]`
+- `.tm17 > a[href$="dagsavisen"][target="_blank"]`
 
 ### All page content should be contained by landmarks
 
@@ -109,12 +109,28 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 108
+- **Count:** 109
 
 #### Affected Elements:
 
 - `h1`
 - `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
+- `#notice-10371715 > .content > h2`
+- `#notice-10371715 > .content > .meta`
+- `div[title="Stor demonstrasjon i Tyrkia"] > h2`
+- `div[title="Stor demonstrasjon i Tyrkia"] > .meta`
+- `#notice-10371452 > .content > h2`
+- `#notice-10371452 > .content > .meta`
+- `#notice-10371421 > .content > h2`
+- `#notice-10371421 > .content > .meta`
+- `#notice-10371375 > .content > h2`
+- `#notice-10371375 > .content > .meta`
+- `div[title="Russisk tankskip angrepet"] > h2`
+- `div[title="Russisk tankskip angrepet"] > .meta`
+- `#notice-10371330 > .content > h2`
+- `#notice-10371330 > .content > .meta`
+- `#notice-10371329 > .content > h2`
+- `#notice-10371329 > .content > .meta`
 - `#notice-10371154 > .content > h2`
 - `#notice-10371154 > .content > .meta`
 - `div[title="NHO vant søksmål mot LO"] > h2`
@@ -129,8 +145,8 @@
 - `#notice-10370969 > .content > .meta`
 - `#notice-10370419 > .content > h2`
 - `#notice-10370419 > .content > .meta`
-- `#notice-10370306 > .content > h2`
-- `#notice-10370306 > .content > .meta`
+- `div[title="Dronning Margrethe utskrevet"] > h2`
+- `div[title="Dronning Margrethe utskrevet"] > .meta`
 - `#notice-10370222 > .content > h2`
 - `#notice-10370222 > .content > .meta`
 - `#notice-10370064 > .content > h2`
@@ -139,27 +155,11 @@
 - `div[title="Enighet i statsoppgjøret"] > .meta`
 - `div[title="Carsten Smith er død"] > h2`
 - `div[title="Carsten Smith er død"] > .meta`
-- `#notice-10369776 > .content > h2`
-- `#notice-10369776 > .content > .meta`
-- `#notice-10369547 > .content > h2`
-- `#notice-10369547 > .content > .meta`
-- `#notice-10369343 > .content > h2`
-- `#notice-10369343 > .content > .meta`
-- `#notice-10369342 > .content > h2`
-- `#notice-10369342 > .content > .meta`
-- `div[title="Russisk drone traff Romania"] > h2`
-- `div[title="Russisk drone traff Romania"] > .meta`
-- `#notice-10369228 > .content > h2`
-- `#notice-10369228 > .content > .meta`
-- `#notice-10367441 > .content > h2`
-- `time[datetime="2026-05-28T18:24:16.000Z"]`
-- `#notice-10367311 > .content > h2`
-- `time[datetime="2026-05-28T18:23:44.000Z"]`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `#offer_76ab86a74ebe8319bc9f-0, div[ng-show="!terminalError"]`
-- `.row.large-12.small-12:nth-child(6)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(7)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(6)`
+- `.row.large-12.small-12:nth-child(7)`
 - `.has-row-header.color_mobile_no_bg_color.hasContentPadding`
 - `iframe[data-testid="embed-iframe"], .EpisodeOrShowWidget_coverArtContainer__65Ei9`
 - `iframe[data-testid="embed-iframe"], h1`
@@ -167,24 +167,24 @@
 - `iframe[data-testid="embed-iframe"], a[dir="auto"]`
 - `iframe[data-testid="embed-iframe"], label`
 - `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(11)`
-- `.row.large-12.small-12:nth-child(12)`
 - `#article_list_10280166 > .inner.fullwidthTarget.content > .articlescroller-header`
 - `#article_list_10280166 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
+- `.row.large-12.small-12:nth-child(13)`
 - `.row.large-12.small-12:nth-child(14)`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(16)`
+- `.row.large-12.small-12:nth-child(17)`
 - `#article_list_9904930 > .inner.fullwidthTarget.content`
-- `.row.large-12.small-12:nth-child(18)`
 - `.row.large-12.small-12:nth-child(19)`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.row.large-12.small-12:nth-child(22)`
 - `.page-content > .border_width_no_border_width.border_width_mobile_no_border_width.mobile_no_border_color`
 - `.page-content > .border-bg-quaternary.mobile_border-bg-quaternary.hasBorder`
+- `.row.large-12.small-12:nth-child(26)`
 - `#offer_76ab86a74ebe8319bc9f-1, div[ng-show="!terminalError"]`
-- `.row.large-12.small-12:nth-child(27)`
+- `.row.large-12.small-12:nth-child(28)`
 - `#article_list_10184114 > .content > .lab-scrollbox-headline.font-weight-normal.m-font-weight-normal`
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(29)`
 - `.row.large-12.small-12:nth-child(31)`
 - `.row.large-12.small-12:nth-child(32)`
 - `.row.large-12.small-12:nth-child(33)`
@@ -194,30 +194,31 @@
 - `.row.large-12.small-12:nth-child(38)`
 - `.row.large-12.small-12:nth-child(39)`
 - `.row.large-12.small-12:nth-child(41)`
+- `.row.large-12.small-12:nth-child(42)`
 - `#article_list_10230577 > .content > .lab-scrollbox-headline.font-weight-normal.m-font-weight-normal`
 - `#article_list_10230577 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.mobile_no_border_color.color_mobile_no_bg_color.row:nth-child(43)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44)`
-- `.row.large-12.small-12:nth-child(46)`
+- `.row.large-12.small-12:nth-child(44)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(46)`
+- `.row.large-12.small-12:nth-child(47)`
 - `.lab-scrollbox-headline.italic.m-italic`
 - `#article_list_10291490 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(48)`
+- `.row.large-12.small-12:nth-child(49)`
 - `.color_mobile_no_bg_color.content > .lab-scrollbox-headline.headline[itemprop="headline"]`
-- `.row.large-12.small-12:nth-child(51)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52)`
-- `.row.large-12.small-12:nth-child(53)`
-- `.row.large-12.small-12:nth-child(54)`
-- `.row.large-12.small-12:nth-child(56)`
+- `.row.large-12.small-12:nth-child(52)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(53)`
+- `.mobile_no_border_color.color_mobile_no_bg_color.row:nth-child(54)`
+- `.row.large-12.small-12:nth-child(55)`
 - `.row.large-12.small-12:nth-child(57)`
 - `.row.large-12.small-12:nth-child(58)`
 - `.row.large-12.small-12:nth-child(59)`
 - `.row.large-12.small-12:nth-child(60)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(61)`
-- `.row.large-12.small-12:nth-child(62)`
+- `.row.large-12.small-12:nth-child(61)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(62)`
 - `.row.large-12.small-12:nth-child(63)`
 - `.row.large-12.small-12:nth-child(64)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(65)`
-- `.row.large-12.small-12:nth-child(66)`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(67)`
-- `.row.large-12.small-12:nth-child(68)`
+- `.row.large-12.small-12:nth-child(65)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(66)`
+- `.row.large-12.small-12:nth-child(67)`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(68)`
+- `.row.large-12.small-12:nth-child(69)`
 - `.powered-by`

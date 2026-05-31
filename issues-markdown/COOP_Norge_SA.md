@@ -1,8 +1,8 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2026-05-30T03:29:47.278Z
+**Timestamp:** 2026-05-31T01:22:07.410Z
 **URL:** [https://www.coop.no/](https://www.coop.no/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.jm > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .ji.jk.jj > .jl > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.jb > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .j7.j9.j8 > .ja > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### ARIA attributes must conform to valid values
 
@@ -30,8 +30,8 @@
 #### Affected Elements:
 
 - `input[role="searchbox"]`
-- `.jm > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .ji.jk.jj > .jl > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.jb > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .j7.j9.j8 > .ja > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### Headings should not be empty
 
@@ -43,8 +43,8 @@
 
 #### Affected Elements:
 
-- `.iq`
-- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .g4.am.cj > .g5.g7.g8`
+- `.il`
+- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .fy.am.cj > .fz.g1.g2`
 
 ### Frames must have an accessible name
 
@@ -58,18 +58,6 @@
 
 - `iframe, iframe[scrolling="no"]`
 - `iframe, body > iframe`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe, iframe[scrolling="no"], #g`
 
 ### Links must have discernible text
 

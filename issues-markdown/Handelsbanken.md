@@ -1,6 +1,6 @@
 # WCAG Violations Report for Handelsbanken
 
-**Timestamp:** 2026-05-30T03:45:47.059Z
+**Timestamp:** 2026-05-31T01:37:35.353Z
 **URL:** [https://www.handelsbanken.no/no/](https://www.handelsbanken.no/no/)
 **Total Violations:** 1
 
@@ -16,4 +16,4 @@
 
 #### Affected Elements:
 
-- `span[aria-labelledby="sr-hdsIcon658644047"]`
+- `span[aria-labelledby="sr-hdsIcon561612208"]`

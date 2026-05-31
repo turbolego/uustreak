@@ -1,22 +1,22 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-05-30T03:32:03.303Z
+**Timestamp:** 2026-05-31T01:24:20.295Z
 **URL:** [https://www.dagbladet.no/](https://www.dagbladet.no/)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
-### Frames must have an accessible name
+### ARIA commands must have an accessible name
 
 - **Impact:** serious
-- **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, iframe`
+- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #cbb`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -40,21 +40,7 @@
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, a`
-
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `html`
-- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, html`
-- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, iframe, html`
+- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #aw0`
 
 ### All page content should be contained by landmarks
 
