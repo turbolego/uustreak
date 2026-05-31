@@ -1,0 +1,94 @@
+{
+  "project": "If Skadeforsikring NUF",
+  "timestamp": "2026-05-31T01:40:24.143Z",
+  "url": "https://www.if.no/privat",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img class=\"if size-100p object-...\" loading=\"lazy\" alt=\"Best i test på skade...\" src=\"https://v.imgi.no/re...\" srcset=\"https://v.imgi.no/re...\" sizes=\"(max-width: 450px) 4...\" role=\"presentation\">",
+          "target": [
+            "img[alt=\"Best i test på skadeoppgjør!\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "html": "<img class=\"if size-100p object-...\" loading=\"lazy\" alt=\"Norges mest kjøpte M...\" src=\"https://v.imgi.no/u4...\" srcset=\"https://v.imgi.no/u4...\" sizes=\"(max-width: 450px) 4...\" role=\"presentation\">",
+          "target": [
+            "#\\39 b94bd1adfb746d1b5faf5fcfd503d75 > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "html": "<img class=\"if size-100p object-...\" loading=\"lazy\" alt=\"Mer enn bare forsikr...\" src=\"https://v.imgi.no/jt...\" srcset=\"https://v.imgi.no/jt...\" sizes=\"(max-width: 450px) 4...\" role=\"presentation\">",
+          "target": [
+            "img[alt=\"Mer enn bare forsikring\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h3 class=\"op-responsive-heading if typography heading medium\">Best i test på skadeoppgjør!</h3>",
+          "target": [
+            ".content.op > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 class=\"if typography ui medium weight-medium\">Jeg vil ...</h4>",
+          "target": [
+            "#\\30 15b101250b847159db04f4fa4d0383b > .weight-medium"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"if flex-column gap-16\" id=\"015b101250b847159db04f4fa4d0383b\">",
+          "target": [
+            "#\\30 15b101250b847159db04f4fa4d0383b"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}
