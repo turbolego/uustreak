@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-05-31T21:03:17.912Z
+**Timestamp:** 2026-06-01T01:35:33.219Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 8
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.bq.cj[href$="soverom"] > .b7.c.bj > .fo.fr.fn:nth-child(1)`
+- `.bq.cj[href$="soverom"] > .b7.c.bj > .fn.fo.fr:nth-child(1)`
 
 ### Heading levels should only increase by one
 
@@ -41,7 +41,7 @@
 #### Affected Elements:
 
 - `div:nth-child(3) > .ij.ih.ii > .j7.ge.j8 > .fy.c2 > div > div > .j9.in.j8 > .j8.c2 > .ja.gg.gf > .jb.gk.gl`
-- `div:nth-child(15) > .ij.ih.ii > .j7.ge.j8 > .fy.c2 > div > div > .j9.in.j8 > .j8.c2 > .ja.gg.gf > .jb.gk.gl`
+- `div:nth-child(12) > .ij.ih.ii > .j7.ge.j8 > .fy.c2 > div > div > .j9.in.j8 > .j8.c2 > .ja.gg.gf > .jb.gk.gl`
 
 ### Alternative text of images should not be repeated as text
 

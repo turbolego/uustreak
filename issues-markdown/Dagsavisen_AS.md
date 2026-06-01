@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-05-31T20:42:48.753Z
+**Timestamp:** 2026-06-01T01:15:12.495Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 6
 
@@ -134,8 +134,8 @@
 - `iframe[data-testid="embed-iframe"], .encore-text-body-small.encore-internal-color-text-subdued.e-91185-text`
 - `iframe[data-testid="embed-iframe"], a[dir="auto"]`
 - `iframe[data-testid="embed-iframe"], label`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(11)`
-- `.row.large-12.small-12:nth-child(12)`
+- `.row.large-12.small-12:nth-child(11)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(12)`
 - `#article_list_10372156 > .content > .lab-scrollbox-headline.headline[itemprop="headline"]`
 - `#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(14)`

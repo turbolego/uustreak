@@ -1,6 +1,6 @@
 # WCAG Violations Report for Steinkjer videregående skole
 
-**Timestamp:** 2026-05-31T20:47:39.418Z
+**Timestamp:** 2026-06-01T01:20:26.387Z
 **URL:** [https://web.trondelagfylke.no/steinkjer-videregaende-skole/#](https://web.trondelagfylke.no/steinkjer-videregaende-skole/#)
 **Total Violations:** 5
 
@@ -53,7 +53,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="ffece13f5ca6cb5fc"], #u_0_1_Km`
+- `iframe[name="f9db9a972613d8a1f"], #u_0_1_cF`
 
 ### All page content should be contained by landmarks
 
@@ -71,40 +71,40 @@
 - `.card-grid.card-grid--equal-height:nth-child(4)`
 - `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(1)`
 - `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(2) > .card.card-grid--equal-height > .card__tag`
-- `iframe[name="ffece13f5ca6cb5fc"], .x3pnbk8`
-- `iframe[name="ffece13f5ca6cb5fc"], .xjkvuk6`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1s688f.xzsf02u.x1nxh6w3:nth-child(2)`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1s688f.xzsf02u.x1nxh6w3:nth-child(3)`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1s688f.xzsf02u.x1nxh6w3:nth-child(5)`
-- `iframe[name="ffece13f5ca6cb5fc"], .xyinxu5`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(1) > .xfex06f.xz9dl7a.xwib8y2 > .x1r0jzty.xdt5ytf.xl56j7k`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(1) > .xwib8y2.x1g0dm76.xpdmqnj:nth-child(2)`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(1) > .x1y5e3q9.x139c44z.x1hohm31`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(1) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(1) > .x1nxh6w3.x1sibtaa.xi81zsa`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(1) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(2) > .x1nxh6w3.x1sibtaa.xi81zsa`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(1) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(3) > .x1nxh6w3.x1sibtaa.xi81zsa`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(2) > .xfex06f.xz9dl7a.xwib8y2 > .x1r0jzty.xdt5ytf.xl56j7k`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(2) > .xwib8y2.x1g0dm76.xpdmqnj:nth-child(2)`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(2) > .x1y5e3q9.x139c44z.x1hohm31`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(2) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(1) > .x1nxh6w3.x1sibtaa.xi81zsa`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(2) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(2) > .x1nxh6w3.x1sibtaa.xi81zsa`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(2) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(3) > .x1nxh6w3.x1sibtaa.xi81zsa`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(3) > .xfex06f.xz9dl7a.xwib8y2 > .x1r0jzty.xdt5ytf.xl56j7k`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(3) > .xbmvrgn.x1e56ztr.x15gj8v5 > .xf7dkkf.xv54qhq.xz9dl7a > .x13fj5qh.x1r0jzty.xdt5ytf`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(3) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(1) > .x1nxh6w3.x1sibtaa.xi81zsa`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(3) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(2) > .x1nxh6w3.x1sibtaa.xi81zsa`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(3) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(3) > .x1nxh6w3.x1sibtaa.xi81zsa`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(4) > .xfex06f.xz9dl7a.xwib8y2 > .x1r0jzty.xdt5ytf.xl56j7k`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(4) > .xwib8y2.x1g0dm76.xpdmqnj:nth-child(2)`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(4) > .x1y5e3q9.x139c44z.x1hohm31`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(4) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(1) > .x1nxh6w3.x1sibtaa.xi81zsa`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(4) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(2) > .x1nxh6w3.x1sibtaa.xi81zsa`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(4) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(3) > .x1nxh6w3.x1sibtaa.xi81zsa`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(5) > .xfex06f.xz9dl7a.xwib8y2 > .x1r0jzty.xdt5ytf.xl56j7k`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(5) > .xbmvrgn.x1e56ztr.x15gj8v5 > .xf7dkkf.xv54qhq.xz9dl7a > .x13fj5qh.x1r0jzty.xdt5ytf`
-- `iframe[name="ffece13f5ca6cb5fc"], .xf7dkkf.xv54qhq.xsag5q8:nth-child(2)`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(5) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(1) > .x1nxh6w3.x1sibtaa.xi81zsa`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(5) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(2) > .x1nxh6w3.x1sibtaa.xi81zsa`
-- `iframe[name="ffece13f5ca6cb5fc"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(5) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(3) > .x1nxh6w3.x1sibtaa.xi81zsa`
-- `iframe[name="ffece13f5ca6cb5fc"], .xyamay9`
+- `iframe[name="f9db9a972613d8a1f"], .x3pnbk8`
+- `iframe[name="f9db9a972613d8a1f"], .xjkvuk6`
+- `iframe[name="f9db9a972613d8a1f"], .x1s688f.xzsf02u.x1nxh6w3:nth-child(2)`
+- `iframe[name="f9db9a972613d8a1f"], .x1s688f.xzsf02u.x1nxh6w3:nth-child(3)`
+- `iframe[name="f9db9a972613d8a1f"], .x1s688f.xzsf02u.x1nxh6w3:nth-child(5)`
+- `iframe[name="f9db9a972613d8a1f"], .xyinxu5`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(1) > .xfex06f.xz9dl7a.xwib8y2 > .x1r0jzty.xdt5ytf.xl56j7k`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(1) > .xwib8y2.x1g0dm76.xpdmqnj:nth-child(2)`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(1) > .x1y5e3q9.x139c44z.x1hohm31`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(1) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(1) > .x1nxh6w3.x1sibtaa.xi81zsa`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(1) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(2) > .x1nxh6w3.x1sibtaa.xi81zsa`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(1) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(3) > .x1nxh6w3.x1sibtaa.xi81zsa`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(2) > .xfex06f.xz9dl7a.xwib8y2 > .x1r0jzty.xdt5ytf.xl56j7k`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(2) > .xwib8y2.x1g0dm76.xpdmqnj:nth-child(2)`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(2) > .x1y5e3q9.x139c44z.x1hohm31`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(2) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(1) > .x1nxh6w3.x1sibtaa.xi81zsa`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(2) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(2) > .x1nxh6w3.x1sibtaa.xi81zsa`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(2) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(3) > .x1nxh6w3.x1sibtaa.xi81zsa`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(3) > .xfex06f.xz9dl7a.xwib8y2 > .x1r0jzty.xdt5ytf.xl56j7k`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(3) > .xbmvrgn.x1e56ztr.x15gj8v5 > .xf7dkkf.xv54qhq.xz9dl7a > .x13fj5qh.x1r0jzty.xdt5ytf`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(3) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(1) > .x1nxh6w3.x1sibtaa.xi81zsa`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(3) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(2) > .x1nxh6w3.x1sibtaa.xi81zsa`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(3) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(3) > .x1nxh6w3.x1sibtaa.xi81zsa`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(4) > .xfex06f.xz9dl7a.xwib8y2 > .x1r0jzty.xdt5ytf.xl56j7k`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(4) > .xwib8y2.x1g0dm76.xpdmqnj:nth-child(2)`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(4) > .x1y5e3q9.x139c44z.x1hohm31`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(4) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(1) > .x1nxh6w3.x1sibtaa.xi81zsa`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(4) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(2) > .x1nxh6w3.x1sibtaa.xi81zsa`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(4) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(3) > .x1nxh6w3.x1sibtaa.xi81zsa`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(5) > .xfex06f.xz9dl7a.xwib8y2 > .x1r0jzty.xdt5ytf.xl56j7k`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(5) > .xbmvrgn.x1e56ztr.x15gj8v5 > .xf7dkkf.xv54qhq.xz9dl7a > .x13fj5qh.x1r0jzty.xdt5ytf`
+- `iframe[name="f9db9a972613d8a1f"], .xf7dkkf.xv54qhq.xsag5q8:nth-child(2)`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(5) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(1) > .x1nxh6w3.x1sibtaa.xi81zsa`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(5) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(2) > .x1nxh6w3.x1sibtaa.xi81zsa`
+- `iframe[name="f9db9a972613d8a1f"], .x1heor9g.xqvba61[rel="noopener noreferrer"]:nth-child(5) > .xtqikln.x1y1aw1k.xsag5q8 > .x17zd0t2.x6s0dn4.x78zum5:nth-child(3) > .x1nxh6w3.x1sibtaa.xi81zsa`
+- `iframe[name="f9db9a972613d8a1f"], .xyamay9`
 - `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(3)`

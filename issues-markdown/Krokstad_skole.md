@@ -1,6 +1,6 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2026-05-31T21:06:34.686Z
+**Timestamp:** 2026-06-01T01:38:46.004Z
 **URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#)
 **Total Violations:** 2
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `iframe, #u_0_1_f\+`
+- `iframe, #u_0_1_uZ`
 
 ### Interactive controls must not be nested
 
