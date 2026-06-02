@@ -1,20 +1,19 @@
 # WCAG Violations Report for Cubus AS
 
-**Timestamp:** 2026-06-01T01:13:53.506Z
-**URL:** [https://cubus.com/no/#](https://cubus.com/no/#)
+**Timestamp:** 2026-06-02T03:37:04.430Z
+**URL:** [https://cubus.com/no/](https://cubus.com/no/)
 **Total Violations:** 1
 
 ## Violation Details
 
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+### Delayed refresh under 20 hours must not be used
 
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Impact:** critical
+- **Description:** Ensure <meta http-equiv="refresh"> is not used for delayed refresh
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/meta-refresh?application=playwright
+- **Tags:** cat.time-and-media, wcag2a, wcag221, TTv5, TT8.a, EN-301-549, EN-9.2.2.1, RGAAv4, RGAA-13.1.2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#react_9a54c7ea-48a2-4294-ad47-f63b1b5a614a > .css-1ljaiw5-StyledProductListBlock.ey9rwho0 > .css-1dlfasc-StyledProductListSlider.e12nlr8e5[aria-label="Glidebryter med produkter"]`
-- `.css-smxovs-StyledCssSliderWrapper`
+- `meta[http-equiv="refresh"]`

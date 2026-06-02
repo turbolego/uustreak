@@ -1,7 +1,7 @@
 # WCAG Violations Report for Kongsberg kommune
 
-**Timestamp:** 2026-06-01T01:37:08.732Z
-**URL:** [https://www.kongsberg.kommune.no/#](https://www.kongsberg.kommune.no/#)
+**Timestamp:** 2026-06-02T03:58:47.720Z
+**URL:** [https://www.kongsberg.kommune.no/](https://www.kongsberg.kommune.no/)
 **Total Violations:** 1
 
 ## Violation Details

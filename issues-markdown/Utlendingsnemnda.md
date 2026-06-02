@@ -1,6 +1,6 @@
 # WCAG Violations Report for Utlendingsnemnda
 
-**Timestamp:** 2026-06-01T01:36:19.197Z
+**Timestamp:** 2026-06-02T03:55:38.999Z
 **URL:** [https://www.une.no/](https://www.une.no/)
 **Total Violations:** 3
 

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stiftelsen Nasjonalmuseet for Kunst
 
-**Timestamp:** 2026-06-01T01:23:08.337Z
-**URL:** [https://www.nasjonalmuseet.no/#](https://www.nasjonalmuseet.no/#)
+**Timestamp:** 2026-06-02T03:43:56.936Z
+**URL:** [https://www.nasjonalmuseet.no/](https://www.nasjonalmuseet.no/)
 **Total Violations:** 4
 
 ## Violation Details
@@ -12,7 +12,7 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 16
+- **Count:** 21
 
 #### Affected Elements:
 
@@ -28,10 +28,15 @@
 - `li[aria-label="9 av 11"]`
 - `li[aria-label="10 av 11"]`
 - `li[aria-label="11 av 11"]`
-- `li[aria-label="1 av 4"]`
-- `li[aria-label="2 av 4"]`
-- `li[aria-label="3 av 4"]`
-- `li[aria-label="4 av 4"]`
+- `li[aria-label="1 av 9"]`
+- `li[aria-label="2 av 9"]`
+- `li[aria-label="3 av 9"]`
+- `li[aria-label="4 av 9"]`
+- `li[aria-label="5 av 9"]`
+- `li[aria-label="6 av 9"]`
+- `li[aria-label="7 av 9"]`
+- `li[aria-label="8 av 9"]`
+- `li[aria-label="9 av 9"]`
 
 ### Document should not have more than one banner landmark
 

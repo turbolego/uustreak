@@ -1,10 +1,22 @@
 # WCAG Violations Report for Østlendingen AS
 
-**Timestamp:** 2026-06-01T01:09:11.691Z
-**URL:** [https://www.ostlendingen.no/#](https://www.ostlendingen.no/#)
-**Total Violations:** 5
+**Timestamp:** 2026-06-02T03:59:16.880Z
+**URL:** [https://www.ostlendingen.no/](https://www.ostlendingen.no/)
+**Total Violations:** 6
 
 ## Violation Details
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.ostlendingen\.no\/toppbanner_0, #cbb`
 
 ### Frames must have an accessible name
 
@@ -18,6 +30,28 @@
 
 - `#eaframe`
 
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 11
+
+#### Affected Elements:
+
+- `#adsm-iframe-skin-787d5876f3, .adnami-skin-wrapper:nth-child(1) > .adnami-background > .adnami-backgroundImage`
+- `#adsm-iframe-skin-787d5876f3, .adnami-skin-wrapper:nth-child(1) > .adnami-flexContainer > .adnami-leftPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
+- `#adsm-iframe-skin-787d5876f3, .adnami-skin-wrapper:nth-child(1) > .adnami-flexContainer > .adnami-rightPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
+- `#adsm-iframe-skin-787d5876f3, .adnami-skin-wrapper:nth-child(2) > .adnami-background > .adnami-backgroundImage`
+- `#adsm-iframe-skin-787d5876f3, .adnami-skin-wrapper:nth-child(2) > .adnami-flexContainer > .adnami-leftPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
+- `#adsm-iframe-skin-787d5876f3, .adnami-skin-wrapper:nth-child(2) > .adnami-flexContainer > .adnami-rightPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
+- `#adsm-iframe-skin-787d5876f3, .adnami-skin-wrapper:nth-child(3) > .adnami-background > .adnami-backgroundImage`
+- `#adsm-iframe-skin-787d5876f3, .adnami-skin-wrapper:nth-child(3) > .adnami-flexContainer > .adnami-leftPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
+- `#adsm-iframe-skin-787d5876f3, .adnami-skin-wrapper:nth-child(3) > .adnami-flexContainer > .adnami-rightPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
+- `#adsm-iframe-92c37884-a267-49e9-956e-84644078d360-787d5876f3, #adsm-iframe-skin_top-787d5876f3, img`
+- `#google_ads_iframe_\/56257416\/www\.ostlendingen\.no\/toppbanner_0, .adnm-view-pixel`
+
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
@@ -29,19 +63,6 @@
 #### Affected Elements:
 
 - `brick-carousel-v2[data-slides="20"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
-
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 2
-
-#### Affected Elements:
-
-- `html`
-- `#eaframe, html`
 
 ### Elements marked as presentational should be consistently ignored
 

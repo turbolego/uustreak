@@ -1,8 +1,8 @@
 # WCAG Violations Report for Asker og Bærum Budstikke AS
 
-**Timestamp:** 2026-06-01T01:04:59.570Z
-**URL:** [https://www.budstikka.no/#](https://www.budstikka.no/#)
-**Total Violations:** 4
+**Timestamp:** 2026-06-02T03:27:20.491Z
+**URL:** [https://www.budstikka.no/](https://www.budstikka.no/)
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#eaframe, #container_10444797 > .info > .info-wrapper > .ctaLink`
+- `#eaframe, #container_10481656 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
@@ -29,6 +29,19 @@
 #### Affected Elements:
 
 - `#eaframe`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- `html`
+- `#eaframe, html`
 
 ### Elements marked as presentational should be consistently ignored
 
