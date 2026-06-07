@@ -1,0 +1,195 @@
+{
+  "project": "Trøndelag fylkeskommune",
+  "timestamp": "2026-06-07T01:23:13.076Z",
+  "url": "https://www.trondelagfylke.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 17,
+      "nodes": [
+        {
+          "html": "<p><strong>Trøndelag fylkeskommune</strong><br>Fylkets hus Postboks 2560 <br>7735 Steinkjer</p>",
+          "target": [
+            ".footer__rich-text.rich-text > p:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #ffffff, background color: #008a93, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<strong>Trøndelag fylkeskommune</strong>",
+          "target": [
+            "strong"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #ffffff, background color: #008a93, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Organisasjonsnummer 817 920 632</p>",
+          "target": [
+            ".footer__column:nth-child(1) > .footer__contact-information > .footer__rich-text.rich-text > p:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #ffffff, background color: #008a93, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"emphasized-link\" href=\"https://svarut.ks.no/edialog/mottaker/817920632\">eDialog</a>",
+          "target": [
+            "p:nth-child(4) > .emphasized-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.76 (foreground color: #003f51, background color: #008a93, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"emphasized-link\" title=\"Personvern\" href=\"/om-oss/fylkeskommunen/personvern-trondelag-fylkeskommune/personvernerklaeringer/\">Personvernerklæring</a>",
+          "target": [
+            "a[title=\"Personvern\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.76 (foreground color: #003f51, background color: #008a93, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"emphasized-link\" title=\"Tilgjengelighetserklæring\" href=\"https://uustatus.no/nb/erklaringer/publisert/0b487ad0-ad2d-4045-9114-cb404101e8ca\" target=\"_blank\" rel=\"noopener\">Tilgjengelighetserklæring</a>",
+          "target": [
+            "a[title=\"Tilgjengelighetserklæring\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.76 (foreground color: #003f51, background color: #008a93, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"emphasized-link\" title=\"Pressekontakter\" href=\"/om-oss/kontakt-oss/presse/\">Pressekontakter</a>",
+          "target": [
+            "a[title=\"Pressekontakter\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.76 (foreground color: #003f51, background color: #008a93, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<h4>Besøk oss</h4>",
+          "target": [
+            ".footer__contact-information:nth-child(2) > .footer__rich-text.rich-text > h4:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #ffffff, background color: #008a93, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Fylkets hus Steinkjer<br>Strandvegen 19<br>7713 Steinkjer</p>",
+          "target": [
+            ".footer__contact-information:nth-child(2) > .footer__rich-text.rich-text > p:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #ffffff, background color: #008a93, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<h4>Åpningstider</h4>",
+          "target": [
+            ".footer__contact-information:nth-child(2) > .footer__rich-text.rich-text > h4:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #ffffff, background color: #008a93, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Mandag-fredag 08.00-15.30</p>",
+          "target": [
+            ".footer__contact-information:nth-child(2) > .footer__rich-text.rich-text > p:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #ffffff, background color: #008a93, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"contact-link__text\">Kart Steinkjer</span>",
+          "target": [
+            ".footer__contact-information:nth-child(2) > .footer__map-link > .contact-link--map.contact-link > .contact-link__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.07 (foreground color: #fade29, background color: #008a93, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<h4>Besøk oss</h4>",
+          "target": [
+            ".footer__contact-information:nth-child(3) > .footer__rich-text.rich-text > h4:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #ffffff, background color: #008a93, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Fylkets hus Trondheim<br>Erling Skakkesgt. 14<br>7013 Trondheim</p>",
+          "target": [
+            ".footer__contact-information:nth-child(3) > .footer__rich-text.rich-text > p:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #ffffff, background color: #008a93, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<h4>Åpningstider</h4>",
+          "target": [
+            ".footer__contact-information:nth-child(3) > .footer__rich-text.rich-text > h4:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #ffffff, background color: #008a93, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Mandag-fredag 08.00-15.30</p>",
+          "target": [
+            ".footer__contact-information:nth-child(3) > .footer__rich-text.rich-text > p:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.15 (foreground color: #ffffff, background color: #008a93, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"contact-link__text\">Kart Trondheim</span>",
+          "target": [
+            ".footer__contact-information:nth-child(3) > .footer__map-link > .contact-link--map.contact-link > .contact-link__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.07 (foreground color: #fade29, background color: #008a93, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"top-menu\">",
+          "target": [
+            ".top-menu"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"modal_trigger\">\n\t<h2 class=\"theme-page__title\">\n\t\t<a href=\"#\" class=\"theme-page__link\">Chat</a>\n\t</h2>\n</div>",
+          "target": [
+            ".modal_trigger"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
