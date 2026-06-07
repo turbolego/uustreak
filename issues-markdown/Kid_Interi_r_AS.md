@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-06-02T03:57:42.076Z
+**Timestamp:** 2026-06-07T01:18:44.882Z
 **URL:** [https://www.kid.no/](https://www.kid.no/)
 **Total Violations:** 8
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.bq.cj[href$="soverom"] > .b7.c.bj > .fn.fo.fr:nth-child(1)`
+- `.bp.cr[href$="soverom"] > .b7.c.bj > .fn.fo.fr:nth-child(1)`
 
 ### Heading levels should only increase by one
 
@@ -40,8 +40,8 @@
 
 #### Affected Elements:
 
-- `div:nth-child(3) > .ij.ih.ii > .j7.ge.j8 > .fy.c2 > div > div > .j9.in.j8 > .j8.c2 > .ja.gg.gf > .jb.gk.gl`
-- `div:nth-child(12) > .ij.ih.ii > .j7.ge.j8 > .fy.c2 > div > div > .j9.in.j8 > .j8.c2 > .ja.gg.gf > .jb.gk.gl`
+- `div:nth-child(3) > .ij.ih.ii > .j7.ge.j8 > .fy.bq > div > div > .j9.in.j8 > .j8.bq > .ja.gg.gf > .jb.gk.gl`
+- `div:nth-child(12) > .ij.ih.ii > .j7.ge.j8 > .fy.bq > div > div > .j9.in.j8 > .j8.bq > .ja.gg.gf > .jb.gk.gl`
 
 ### Alternative text of images should not be repeated as text
 
@@ -94,9 +94,9 @@
 
 #### Affected Elements:
 
-- `.f7.gc[href$="palermo"]`
-- `.f7.gc[href$="capri"]`
-- `.f7.gc[href$="innleggsputer"]`
+- `.f7.gc[href$="kjokkenutstyr"]`
+- `.f7.gc[href$="borddekking"]`
+- `.f7.gc[href$="uteduker"]`
 
 ### All page content should be contained by landmarks
 

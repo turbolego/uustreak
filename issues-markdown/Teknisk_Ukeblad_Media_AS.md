@@ -1,6 +1,6 @@
 # WCAG Violations Report for Teknisk Ukeblad Media AS
 
-**Timestamp:** 2026-06-02T03:48:13.106Z
+**Timestamp:** 2026-06-07T01:19:42.868Z
 **URL:** [https://www.tu.no/](https://www.tu.no/)
 **Total Violations:** 4
 
@@ -44,8 +44,8 @@
 #### Affected Elements:
 
 - `.object-cover[loading="eager"][height="563"]`
-- `#preamble-572102 > .md\:flex-col.flex-row.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover[height="563"][width="1000"]`
-- `#preamble-572638 > .md\:flex-col.flex-row.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover[height="563"][width="1000"]`
+- `#preamble-572695 > .md\:flex-col.flex-row.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover[height="563"][width="1000"]`
+- `#preamble-571694 > .md\:flex-col.flex-row.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover[height="563"][width="1000"]`
 
 ### Links must have discernible text
 
@@ -53,9 +53,8 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
 - `#google_ads_iframe_\/33423651\/tu_f_toppbanner_0, #aw0`
-- `.left-0.top-0[target="_blank"]`

@@ -1,22 +1,10 @@
 # WCAG Violations Report for Aftenposten AS
 
-**Timestamp:** 2026-06-02T03:23:26.931Z
+**Timestamp:** 2026-06-07T00:44:34.584Z
 **URL:** [https://www.aftenposten.no/](https://www.aftenposten.no/)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
-
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe[allowfullscreen=""], img`
 
 ### Aside should not be contained in another landmark
 

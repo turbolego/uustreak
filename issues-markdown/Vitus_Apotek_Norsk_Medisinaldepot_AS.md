@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-06-02T03:57:16.647Z
+**Timestamp:** 2026-06-07T01:30:08.002Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
 **Total Violations:** 3
 
@@ -12,17 +12,18 @@
 - **Description:** Ensure ARIA attributes are not prohibited for an element's role
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 7
+- **Count:** 8
 
 #### Affected Elements:
 
-- `div[aria-label="30% på utvalgt dyrepleie"]`
-- `div[aria-label="50% på utvalgt  hudpleie"]`
+- `.cms-campaign-banners:nth-child(6) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper`
+- `.cms-campaign-banners:nth-child(6) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper`
+- `div[aria-label="Hårpleie mot hårtap fra Nisim"]`
 - `div[aria-label="Ta en titt på vårens nyheter!"]`
 - `div[aria-label="50% på CeraVe solpleie"]`
-- `.campaign-banner--centered.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper`
-- `.campaign-banner--centered.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper`
-- `.campaign-banner--centered.campaign-banner.banner:nth-child(3) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper`
+- `.cms-campaign-banners:nth-child(13) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper`
+- `.cms-campaign-banners:nth-child(13) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper`
+- `.cms-campaign-banners:nth-child(13) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(3) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 

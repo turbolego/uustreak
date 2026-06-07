@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-06-02T03:37:38.135Z
+**Timestamp:** 2026-06-07T00:59:08.644Z
 **URL:** [https://www.dagbladet.no/](https://www.dagbladet.no/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -24,25 +24,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `article[data-instance="84701915"] > .color_mobile_bg-black.bg-black.hasContentPadding > a[itemprop="url"][rel=""] > .hasTextColor.hasTextColorMobile.text-red > .kicker-content`
-- `.kicker-content > .text-red.color_mobile_text-red[data-lab-text_color_desktop="text-red"]`
-- `article[data-instance="84698132"] > .color_mobile_bg-black.bg-black.hasContentPadding > a[itemprop="url"][rel=""] > .hasTextColor.hasTextColorMobile.text-red > .kicker-content`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.row_header_text`
+- `.color_mobile_bg-yellow.bg-yellow.hasContentPadding > a[itemprop="url"][rel=""] > .hasTextColor.hasTextColorMobile.text-red > .kicker-content`
+- `.bg-orange.color_mobile_bg-orange.hasContentPadding > a[itemprop="url"][rel=""] > .hasTextColor.hasTextColorMobile.text-red > .kicker-content`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

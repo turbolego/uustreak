@@ -1,10 +1,22 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-06-02T03:42:23.561Z
+**Timestamp:** 2026-06-07T01:03:44.860Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
-**Total Violations:** 3
+**Total Violations:** 5
 
 ## Violation Details
+
+### Certain ARIA roles must contain particular children
+
+- **Impact:** critical
+- **Description:** Ensure elements with an ARIA role that require child roles contain them
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-required-children?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#navigation-c15306303c > .cmp-navigation__group[role="tablist"]`
 
 ### Certain ARIA roles must be contained by particular parents
 
@@ -16,10 +28,10 @@
 
 #### Affected Elements:
 
-- `a[href$="insights"][role="tab"][aria-hidden="false"]`
+- `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(1) > a[href$="insights"]`
 - `a[href$="services"][role="tab"][aria-hidden="false"]`
 - `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(3) > .nav-level-one[role="tab"][aria-hidden="false"]`
-- `a[href$="careers"][role="tab"][aria-hidden="false"]`
+- `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(4) > a[href$="careers"]`
 - `a[href$="about-us"][role="tab"][aria-hidden="false"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
@@ -36,6 +48,22 @@
 - `.cmp-slider__slide[data-index="4"][href$="tax"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="6"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
+
+### <li> elements must be contained in a <ul> or <ol>
+
+- **Impact:** serious
+- **Description:** Ensure <li> elements are used semantically
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/listitem?application=playwright
+- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 5
+
+#### Affected Elements:
+
+- `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(1)`
+- `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(2)`
+- `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(3)`
+- `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(4)`
+- `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(5)`
 
 ### All page content should be contained by landmarks
 
@@ -80,7 +108,7 @@
 - `.cmp-subscribe__text`
 - `#button-bc60d627c8a2`
 - `.cmp-contentGrid__title`
-- `#image-render-52b8dbfe34 > .cmp-image__image[title="EY Norge Partnere 2026"][loading="lazy"]`
+- `img[title="EY Norge Partnere 2026"]`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content`
 - `img[title="Agata Karolina Kraus Dahl"]`
 - `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content`

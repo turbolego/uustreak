@@ -1,32 +1,45 @@
 # WCAG Violations Report for Plantasjen AS
 
-**Timestamp:** 2026-06-02T03:31:44.521Z
-**URL:** [https://plantasjen.no/no](https://plantasjen.no/no)
-**Total Violations:** 2
+**Timestamp:** 2026-06-07T00:57:33.911Z
+**URL:** [https://plantasjen.no/](https://plantasjen.no/)
+**Total Violations:** 3
 
 ## Violation Details
 
-### Buttons must have discernible text
+### <html> element must have a lang attribute
 
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Impact:** serious
+- **Description:** Ensure every HTML document has a lang attribute
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=playwright
+- **Tags:** cat.language, wcag2a, wcag311, TTv5, TT11.a, EN-301-549, EN-9.3.1.1, ACT, RGAAv4, RGAA-8.3.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.top-4`
+- `html`
 
-### Elements must meet minimum color contrast ratio thresholds
+### Document should have one main landmark
 
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Impact:** moderate
+- **Description:** Ensure the document has a main landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
 
 #### Affected Elements:
 
-- `section:nth-child(37) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.gap-3[href$="plengjodsel-10-l-529197"] > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
-- `section:nth-child(46) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.gap-3[href$="plengjodsel-10-l-529197"] > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
+- `html`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 3
+
+#### Affected Elements:
+
+- `h1`
+- `h2`
+- `pre`

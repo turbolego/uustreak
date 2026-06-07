@@ -1,8 +1,8 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2026-06-02T03:56:33.949Z
+**Timestamp:** 2026-06-07T01:29:24.415Z
 **URL:** [https://vestlia.no/](https://vestlia.no/)
-**Total Violations:** 10
+**Total Violations:** 9
 
 ## Violation Details
 
@@ -24,24 +24,18 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 14
+- **Count:** 8
 
 #### Affected Elements:
 
 - `#CybotCookiebotDialogNavDeclaration`
 - `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
+- `#widgetContainer,.box-border.flex-1.flex-col:nth-child(1) > .min-h-\[20px\].pb-\[10px\].whitespace-nowrap`
 - `#widgetContainer,div[aria-label="Choose date"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
+- `#widgetContainer,.box-border.flex-1.flex-col:nth-child(2) > .min-h-\[20px\].pb-\[10px\].whitespace-nowrap`
 - `#widgetContainer,div[aria-label="Accommodations and guests"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
 - `#widgetContainer,.relative.z-\[1\]`
-- `.fusion-title-6 > h2`
-- `.fusion-title-11 > h2`
-- `.button-10 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `.fusion-title-13 > h2`
-- `.button-11 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_3c8e2fb7-0f74-4a57-8955-c642839acb8b`
-- `.button-13 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `.button-14 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `#f_0c1336a2-7237-44aa-a4a0-e29cf0dbbbe5`
+- `.q-col-gutter-sm > div:nth-child(2) > .q-btn--standard.q-btn--rectangle.q-btn--square > .q-btn__content.text-center.q-anchor--skip > .block`
 
 ### Heading levels should only increase by one
 
@@ -95,18 +89,6 @@
 
 - `#main`
 
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.awb-oc-menu-item-link`
-
 ### Interactive controls must not be nested
 
 - **Impact:** serious
@@ -126,21 +108,24 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 12
+- **Count:** 15
 
 #### Affected Elements:
 
 - `.skip-link`
 - `.fusion-builder-column-1`
 - `.fusion-flex-justify-content-center.fusion-content-layout-column.fusion-column-wrapper > .sm-text-align-center.fusion-image-element`
+- `#\31 af4c8b9599f341da`
+- `#\38 3ad1c75c43ca919b`
+- `#\36 e66691c2c5c09e03`
 - `.fusion-builder-column-29`
 - `.fusion-builder-column-30`
 - `.fusion-builder-column-31`
 - `.fusion-builder-row-16`
 - `.fusion-builder-row-18`
 - `.fusion-builder-row-19`
-- `div:nth-child(25)`
-- `div:nth-child(26)`
+- `div:nth-child(23)`
+- `div:nth-child(24)`
 - `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text`
 
 ### [role="img"] elements must have alternative text

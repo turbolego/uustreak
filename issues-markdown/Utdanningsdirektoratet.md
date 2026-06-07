@@ -1,6 +1,6 @@
 # WCAG Violations Report for Utdanningsdirektoratet
 
-**Timestamp:** 2026-06-02T03:54:56.738Z
+**Timestamp:** 2026-06-07T01:27:48.454Z
 **URL:** [https://www.udir.no/](https://www.udir.no/)
 **Total Violations:** 4
 

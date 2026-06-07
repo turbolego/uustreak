@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dagbladet Finnmarken AS
 
-**Timestamp:** 2026-06-02T03:37:56.262Z
+**Timestamp:** 2026-06-07T00:59:27.309Z
 **URL:** [https://www.ifinnmark.no/](https://www.ifinnmark.no/)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -36,33 +36,14 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 4
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if`
+- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, iframe[scrolling="no"]`
+- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, body > iframe`
 - `#eaframe`
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 11
-
-#### Affected Elements:
-
-- `#adsm-iframe-skin-91641ffe29, .adnami-skin-wrapper:nth-child(1) > .adnami-background > .adnami-backgroundImage`
-- `#adsm-iframe-skin-91641ffe29, .adnami-skin-wrapper:nth-child(1) > .adnami-flexContainer > .adnami-leftPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
-- `#adsm-iframe-skin-91641ffe29, .adnami-skin-wrapper:nth-child(1) > .adnami-flexContainer > .adnami-rightPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
-- `#adsm-iframe-skin-91641ffe29, .adnami-skin-wrapper:nth-child(2) > .adnami-background > .adnami-backgroundImage`
-- `#adsm-iframe-skin-91641ffe29, .adnami-skin-wrapper:nth-child(2) > .adnami-flexContainer > .adnami-leftPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
-- `#adsm-iframe-skin-91641ffe29, .adnami-skin-wrapper:nth-child(2) > .adnami-flexContainer > .adnami-rightPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
-- `#adsm-iframe-skin-91641ffe29, .adnami-skin-wrapper:nth-child(3) > .adnami-background > .adnami-backgroundImage`
-- `#adsm-iframe-skin-91641ffe29, .adnami-skin-wrapper:nth-child(3) > .adnami-flexContainer > .adnami-leftPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
-- `#adsm-iframe-skin-91641ffe29, .adnami-skin-wrapper:nth-child(3) > .adnami-flexContainer > .adnami-rightPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
-- `#adsm-iframe-92c37884-a267-49e9-956e-84644078d360-91641ffe29, #adsm-iframe-skin_top-91641ffe29, img`
-- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, .adnm-view-pixel`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

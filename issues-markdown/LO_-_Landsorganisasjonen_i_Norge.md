@@ -1,6 +1,6 @@
 # WCAG Violations Report for LO - Landsorganisasjonen i Norge
 
-**Timestamp:** 2026-06-02T04:01:07.829Z
+**Timestamp:** 2026-06-07T01:22:06.507Z
 **URL:** [https://www.lo.no/](https://www.lo.no/)
 **Total Violations:** 3
 
@@ -12,14 +12,15 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 6
+- **Count:** 7
 
 #### Affected Elements:
 
-- `.articleTeaser--medium.articleTeaser:nth-child(11) > .articleTeaser__image > .image > img`
-- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--yellow:nth-child(15) > .articleTeaser__image > .image > img`
-- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--yellow:nth-child(17) > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(22) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(6) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(15) > .articleTeaser__image > .image > img`
+- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--yellow:nth-child(19) > .articleTeaser__image > .image > img`
+- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--yellow:nth-child(21) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(26) > .articleTeaser__image > .image > img`
 - `.themeTeaser--featured.themeTeaser:nth-child(2) > .image > img`
 - `.themeTeaser--featured.themeTeaser:nth-child(3) > .image > img`
 

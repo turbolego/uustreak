@@ -1,10 +1,22 @@
 # WCAG Violations Report for Stiftelsen Hudøy
 
-**Timestamp:** 2026-06-02T03:43:20.209Z
+**Timestamp:** 2026-06-07T01:13:17.987Z
 **URL:** [https://hudoy.no/](https://hudoy.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
+
+### Elements must only use supported ARIA attributes
+
+- **Impact:** critical
+- **Description:** Ensure an element's role supports its ARIA attributes
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe, .OverlayBase_module_overlayWrapper__321515a7`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -42,7 +54,7 @@
 #### Affected Elements:
 
 - `.classic-quote-left > h6`
-- `.post-entry-8654 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
+- `.post-entry-8807 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `#nav_menu-2 > .widgettitle`
 
 ### Links must have discernible text
@@ -55,16 +67,16 @@
 
 #### Affected Elements:
 
-- `a[href$="ferdernasjonalpark.no/"]`
-- `.avia-builder-el-44 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
+- `.avia-builder-el-38 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
+- `.avia-builder-el-40 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
 - `a[href$="bufdir.no/"]`
-- `a[href$="bergesenstiftelsen.no/"]`
 - `a[href$="eckbos-legat.no/"]`
-- `.avia-builder-el-53 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
+- `a[href$="bergesenstiftelsen.no/"]`
+- `a[href$="ferdernasjonalpark.no/"]`
 - `a[href$="scheibler.no/"]`
+- `.avia-builder-el-53 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
+- `.avia-builder-el-55 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
 - `.avia-builder-el-57 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
-- `.avia-builder-el-59 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
-- `.avia-builder-el-61 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
 - `div:nth-child(1) > .alignleft[rel="noopener"][target="_blank"]`
 - `div:nth-child(2) > .alignleft[rel="noopener"][target="_blank"]`
 - `p > .alignleft[rel="noopener"][target="_blank"]`
@@ -75,22 +87,24 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 27
+- **Count:** 29
 
 #### Affected Elements:
 
-- `iframe, #error`
+- `iframe, .FocusTarget_module_focusTarget__abd564d5`
+- `iframe, .VolumeControl_module_volumeControl__02ffae11`
+- `iframe, a`
 - `.active-slide.slide-entry-wrap`
 - `#after_section_3 > .container > .template-page.content.av-content-full > .post-entry-type-page.post-entry-330.post-entry > .entry-content-wrapper.clearfix > .av_textblock_section`
+- `.post-entry-8807 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.post-entry-8654 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.post-entry-8551 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.post-entry-8315 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.post-entry-8218 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.post-entry-8117 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
-- `.post-entry-8063 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`
 - `.av-rotator-text-single-4`
 - `#av_section_6 > .container > .template-page.content.av-content-full > .post-entry-type-page.post-entry-330.post-entry > .entry-content-wrapper.clearfix > .flex_column_table.av-equal-height-column-flextable.-flextable`
-- `.avia-builder-el-38`
+- `.avia-builder-el-34`
 - `.container:nth-child(2) > .first.el_before_av_one_fifth.av_one_fifth`
 - `.el_after_av_one_fifth.el_before_av_one_fifth.av_one_fifth:nth-child(2)`
 - `.el_after_av_one_fifth.el_before_av_one_fifth.av_one_fifth:nth-child(3)`

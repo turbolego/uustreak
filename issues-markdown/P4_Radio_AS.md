@@ -1,6 +1,6 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-06-02T03:31:14.820Z
+**Timestamp:** 2026-06-07T00:57:07.605Z
 **URL:** [https://www.lydenavnorge.no/p4/](https://www.lydenavnorge.no/p4/)
 **Total Violations:** 7
 
@@ -107,15 +107,16 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 14
+- **Count:** 15
 
 #### Affected Elements:
 
 - `.image-container[data-v-8df35db2=""] > a[data-v-8df35db2=""]`
 - `.content-box.compact[data-v-d583c235=""] > .image-link[data-v-d583c235=""]`
 - `.image-link[href$="fem-pa/"][data-v-d583c235=""]`
-- `.contest-box.medium-large.item:nth-child(1) > .image-link[data-v-f1ce81f5=""]`
-- `.contest-box.medium-large.item:nth-child(2) > .image-link[data-v-f1ce81f5=""]`
+- `.grid > .medium-large.contest-box.item:nth-child(1) > .image-link[data-v-f1ce81f5=""]`
+- `.medium-large.contest-box.item:nth-child(2) > .image-link[data-v-f1ce81f5=""]`
+- `.container[data-v-30b48782=""]:nth-child(4) > div > .medium-large.contest-box.item > .image-link[data-v-f1ce81f5=""]`
 - `.content-box.medium-large.item:nth-child(1) > .image-link[data-v-d583c235=""]`
 - `.content-box.medium-large.item:nth-child(2) > .image-link[data-v-d583c235=""]`
 - `.large.section-box.item > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`

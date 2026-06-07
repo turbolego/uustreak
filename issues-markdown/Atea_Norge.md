@@ -1,22 +1,10 @@
 # WCAG Violations Report for Atea Norge
 
-**Timestamp:** 2026-06-02T03:28:08.543Z
+**Timestamp:** 2026-06-07T00:49:24.847Z
 **URL:** [https://www.atea.no/](https://www.atea.no/)
-**Total Violations:** 9
+**Total Violations:** 8
 
 ## Violation Details
-
-### ARIA attributes must be used as specified for the element's role
-
-- **Impact:** serious
-- **Description:** Ensure ARIA attributes are used as described in the specification of the element's role
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-conditional-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#ot-bnr-grp-id-BG107`
 
 ### Buttons must have discernible text
 
@@ -28,7 +16,7 @@
 
 #### Affected Elements:
 
-- `sleeknote-xdar39-bottom,sleeknote-form,button[type="button"][draggable="true"][unselectable="on"]`
+- `sleeknote-r9ajch-bottom,sleeknote-form,button[type="button"][draggable="true"][unselectable="on"]`
 
 ### Images must have alternative text
 
@@ -40,7 +28,7 @@
 
 #### Affected Elements:
 
-- `sleeknote-xdar39-bottom,sleeknote-form,img[draggable="true"][unselectable="on"][imagetype=""]`
+- `sleeknote-r9ajch-bottom,sleeknote-form,img[draggable="true"][unselectable="on"][imagetype=""]`
 
 ### Form elements should have a visible label
 
@@ -100,7 +88,7 @@
 
 #### Affected Elements:
 
-- `sleeknote-xdar39-bottom,sleeknote-badge,.sleeknote-badge`
+- `sleeknote-r9ajch-bottom,sleeknote-badge,.sleeknote-badge`
 
 ### All page content should be contained by landmarks
 
