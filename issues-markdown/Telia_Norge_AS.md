@@ -1,10 +1,24 @@
 # WCAG Violations Report for Telia Norge AS
 
-**Timestamp:** 2026-06-07T01:20:12.779Z
+**Timestamp:** 2026-06-14T01:41:02.339Z
 **URL:** [https://www.telia.no/](https://www.telia.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 3
+
+#### Affected Elements:
+
+- `.usp-item:nth-child(1) > .usp-item-content > h4`
+- `.usp-item:nth-child(2) > .usp-item-content > h4`
+- `.usp-item:nth-child(3) > .usp-item-content > h4`
 
 ### Heading levels should only increase by one
 

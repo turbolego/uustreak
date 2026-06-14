@@ -1,6 +1,6 @@
 # WCAG Violations Report for Danske Bank AS
 
-**Timestamp:** 2026-06-07T01:00:39.329Z
+**Timestamp:** 2026-06-14T01:33:27.151Z
 **URL:** [https://danskebank.no/bedrift](https://danskebank.no/bedrift)
 **Total Violations:** 1
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-06-07T00:59:08.644Z
+**Timestamp:** 2026-06-14T01:32:02.238Z
 **URL:** [https://www.dagbladet.no/](https://www.dagbladet.no/)
 **Total Violations:** 5
 
@@ -24,12 +24,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.color_mobile_bg-yellow.bg-yellow.hasContentPadding > a[itemprop="url"][rel=""] > .hasTextColor.hasTextColorMobile.text-red > .kicker-content`
-- `.bg-orange.color_mobile_bg-orange.hasContentPadding > a[itemprop="url"][rel=""] > .hasTextColor.hasTextColorMobile.text-red > .kicker-content`
+- `.text-red > .kicker-content`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

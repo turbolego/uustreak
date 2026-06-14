@@ -1,6 +1,6 @@
 # WCAG Violations Report for The Thief Hotel AS
 
-**Timestamp:** 2026-06-07T01:20:29.425Z
+**Timestamp:** 2026-06-14T01:41:18.433Z
 **URL:** [https://thethief.com/](https://thethief.com/)
 **Total Violations:** 4
 
@@ -41,7 +41,7 @@
 
 #### Affected Elements:
 
-- `#image-145 > .block-module__inner[target="_blank"][rel="noopener"]`
+- `#image-145 > a[target="_blank"][rel="noopener"]`
 
 ### <svg> elements with an img role must have alternative text
 

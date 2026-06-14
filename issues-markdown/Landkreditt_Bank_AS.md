@@ -1,8 +1,8 @@
 # WCAG Violations Report for Landkreditt Bank AS
 
-**Timestamp:** 2026-06-07T01:22:37.923Z
+**Timestamp:** 2026-06-14T01:57:42.855Z
 **URL:** [https://www.landkreditt.no/](https://www.landkreditt.no/)
-**Total Violations:** 7
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -31,12 +31,24 @@
 
 #### Affected Elements:
 
-- `#calculator-d4712973-906f-4c79-bc28-c38dbbc2e423 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(1) > .slider-input[data-input-size="large"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
-- `#calculator-d4712973-906f-4c79-bc28-c38dbbc2e423 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(1) > .slider-input[data-input-size="large"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
-- `#calculator-d4712973-906f-4c79-bc28-c38dbbc2e423 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(2) > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
-- `#calculator-d4712973-906f-4c79-bc28-c38dbbc2e423 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(2) > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
-- `#calculator-d4712973-906f-4c79-bc28-c38dbbc2e423 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .panel-calc-slider-last.row > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
-- `#calculator-d4712973-906f-4c79-bc28-c38dbbc2e423 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .panel-calc-slider-last.row > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
+- `#calculator-c2e515f0-92d7-4376-9052-15d59dc6ec2d > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(1) > .slider-input[data-input-size="large"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
+- `#calculator-c2e515f0-92d7-4376-9052-15d59dc6ec2d > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(1) > .slider-input[data-input-size="large"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
+- `#calculator-c2e515f0-92d7-4376-9052-15d59dc6ec2d > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(2) > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
+- `#calculator-c2e515f0-92d7-4376-9052-15d59dc6ec2d > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(2) > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
+- `#calculator-c2e515f0-92d7-4376-9052-15d59dc6ec2d > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .panel-calc-slider-last.row > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
+- `#calculator-c2e515f0-92d7-4376-9052-15d59dc6ec2d > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .panel-calc-slider-last.row > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.align-items-center.simple-teaser__body > h3`
 
 ### Alternative text of images should not be repeated as text
 
@@ -101,4 +113,4 @@
 
 #### Affected Elements:
 
-- `#swiper-wrapper-eff8338687b6795c`
+- `#swiper-wrapper-7a1cd9aff64a75a9`

@@ -1,22 +1,10 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2026-06-07T00:53:51.071Z
+**Timestamp:** 2026-06-14T01:27:10.175Z
 **URL:** [https://www.ba.no/](https://www.ba.no/)
-**Total Violations:** 5
+**Total Violations:** 7
 
 ## Violation Details
-
-### ARIA commands must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #cbb`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -28,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#eaframe, #container_10490869 > .info > .info-wrapper > .ctaLink`
+- `#eaframe, #container_10509698 > .info > .info-wrapper > .ctaLink`
 - `.totalt_antall`
 
 ### Frames must have an accessible name
@@ -37,12 +25,53 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if`
+- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #adn-sup-0\.39219694980015285`
+- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #adn-sup-0\.39219694980015285, iframe`
 - `#eaframe`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `brick-carousel-v2[data-slides="8"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #adn-sup-0\.39219694980015285, a`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 5
+
+#### Affected Elements:
+
+- `html`
+- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, html`
+- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #adn-sup-0\.39219694980015285, html`
+- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #adn-sup-0\.39219694980015285, iframe, html`
+- `#eaframe, html`
 
 ### Elements marked as presentational should be consistently ignored
 

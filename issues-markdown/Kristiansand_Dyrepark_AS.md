@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kristiansand Dyrepark AS
 
-**Timestamp:** 2026-06-07T01:20:51.706Z
+**Timestamp:** 2026-06-14T01:56:00.225Z
 **URL:** [https://www.dyreparken.no/](https://www.dyreparken.no/)
 **Total Violations:** 6
 

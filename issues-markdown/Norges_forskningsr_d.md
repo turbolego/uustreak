@@ -1,8 +1,8 @@
 # WCAG Violations Report for Norges forskningsråd
 
-**Timestamp:** 2026-06-07T00:53:24.870Z
+**Timestamp:** 2026-06-14T01:19:31.909Z
 **URL:** [https://www.forskningsradet.no/](https://www.forskningsradet.no/)
-**Total Violations:** 5
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -17,18 +17,6 @@
 #### Affected Elements:
 
 - `#declineButton`
-
-### ARIA attributes must conform to valid values
-
-- **Impact:** critical
-- **Description:** Ensure all ARIA attributes have valid values
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-valid-attr-value?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.message-global--open-button`
 
 ### Document should not have more than one banner landmark
 
@@ -54,15 +42,3 @@
 
 - `#coiOverlay`
 - `.tab-menu`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.message-global--collapse`

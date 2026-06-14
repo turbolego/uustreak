@@ -1,6 +1,6 @@
 # WCAG Violations Report for Manpower AS
 
-**Timestamp:** 2026-06-07T00:44:47.534Z
+**Timestamp:** 2026-06-14T01:15:07.323Z
 **URL:** [https://www.manpower.no/nb](https://www.manpower.no/nb)
 **Total Violations:** 6
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 4
+- **Count:** 5
 
 #### Affected Elements:
 
@@ -20,6 +20,7 @@
 - `#hs-form-iframe-0, li:nth-child(1)`
 - `#hs-form-iframe-0, li:nth-child(2)`
 - `#hs-form-iframe-0, li:nth-child(3)`
+- `#hs-form-iframe-0, li:nth-child(4)`
 
 ### Required ARIA attributes must be provided
 
@@ -27,7 +28,7 @@
 - **Description:** Ensure elements with ARIA roles have all required ARIA attributes
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-required-attr?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 4
+- **Count:** 5
 
 #### Affected Elements:
 
@@ -35,6 +36,7 @@
 - `#hs-form-iframe-0, li:nth-child(1)`
 - `#hs-form-iframe-0, li:nth-child(2)`
 - `#hs-form-iframe-0, li:nth-child(3)`
+- `#hs-form-iframe-0, li:nth-child(4)`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -81,7 +83,7 @@
 - **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/nested-interactive?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 4
+- **Count:** 5
 
 #### Affected Elements:
 
@@ -89,3 +91,4 @@
 - `#hs-form-iframe-0, li:nth-child(1)`
 - `#hs-form-iframe-0, li:nth-child(2)`
 - `#hs-form-iframe-0, li:nth-child(3)`
+- `#hs-form-iframe-0, li:nth-child(4)`

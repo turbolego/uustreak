@@ -1,8 +1,8 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-06-07T01:03:44.860Z
+**Timestamp:** 2026-06-14T01:36:25.417Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -45,9 +45,21 @@
 #### Affected Elements:
 
 - `.skipToContent-button`
-- `.cmp-slider__slide[data-index="4"][href$="tax"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
+- `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="6"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__image > a[data-analytics-link-click=""]`
 
 ### <li> elements must be contained in a <ul> or <ol>
 
@@ -71,7 +83,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 80
+- **Count:** 79
 
 #### Affected Elements:
 
@@ -108,10 +120,9 @@
 - `.cmp-subscribe__text`
 - `#button-bc60d627c8a2`
 - `.cmp-contentGrid__title`
-- `img[title="EY Norge Partnere 2026"]`
+- `#image-render-d39d7592b2 > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
 - `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content`
-- `img[title="Agata Karolina Kraus Dahl"]`
-- `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content`
+- `.cmp-teaser.cmp-separator:nth-child(2)`
 - `.cmp-news-List`
 - `#button-7addb05aebee`
 - `.cmp-slider__title`
@@ -128,9 +139,9 @@
 - `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
 - `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
-- `.cmp-slider__slide[data-index="4"][href$="tax"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
-- `.cmp-slider__slide[data-index="4"][href$="tax"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
-- `.cmp-slider__slide[data-index="4"][href$="tax"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
+- `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
+- `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
+- `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`

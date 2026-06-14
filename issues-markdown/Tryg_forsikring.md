@@ -1,8 +1,8 @@
 # WCAG Violations Report for Tryg forsikring
 
-**Timestamp:** 2026-06-07T01:22:58.019Z
+**Timestamp:** 2026-06-14T01:43:45.715Z
 **URL:** [https://www.tryg.no/](https://www.tryg.no/)
-**Total Violations:** 9
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -28,7 +28,19 @@
 
 #### Affected Elements:
 
-- `h4`
+- `.card-icon-card-wrapper.alignment-center.height-fixed:nth-child(1) > .headline`
+
+### Banner landmark should not be contained in another landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the banner landmark is at top level
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-banner-is-top-level?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `div[data-sitewide-alert=""]`
 
 ### Main landmark should not be contained in another landmark
 
@@ -72,25 +84,12 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
 - `#coiOverlay`
 - `#coi-banner-wrapper_label`
-- `.privat-meny-desktop`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.t-image-section__columns:nth-child(5) > .t-image-section__columns__column:nth-child(1) > .t-mt-20 > .t-image-section__btn[data-target="#para_infopopup1"][data-toggle="modal"]`
 
 ### All page content should be contained by landmarks
 
@@ -103,15 +102,3 @@
 #### Affected Elements:
 
 - `.skip-link`
-
-### [role="img"] elements must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure [role="img"] elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/role-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.t-main-navbar__logo__graphic`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fylkesmannen i Oslo og Akershus
 
-**Timestamp:** 2026-06-07T01:11:18.827Z
+**Timestamp:** 2026-06-14T01:43:59.553Z
 **URL:** [https://www.statsforvalteren.no/ostfold-buskerud-oslo-og-akershus/](https://www.statsforvalteren.no/ostfold-buskerud-oslo-og-akershus/)
 **Total Violations:** 1
 

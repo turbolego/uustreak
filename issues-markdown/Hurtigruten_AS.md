@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hurtigruten AS
 
-**Timestamp:** 2026-06-07T01:14:50.528Z
+**Timestamp:** 2026-06-14T01:48:52.993Z
 **URL:** [https://www.hurtigruten.com/nb-no](https://www.hurtigruten.com/nb-no)
 **Total Violations:** 5
 
@@ -16,9 +16,9 @@
 
 #### Affected Elements:
 
-- `.styles_destination__X669e > .styles_searchPlannerButton__2sB9u[role="tab"][aria-controls="search-planner-tabs"]`
-- `div:nth-child(2) > .styles_searchPlannerButton__2sB9u[role="tab"][aria-controls="search-planner-tabs"]`
-- `.styles_duration__HCJMp > .styles_searchPlannerButton__2sB9u[role="tab"][aria-controls="search-planner-tabs"]`
+- `.styles_destination__Nog60 > .styles_searchPlannerButton__OxudZ[role="tab"][aria-controls="search-planner-tabs"]`
+- `div:nth-child(2) > .styles_searchPlannerButton__OxudZ[role="tab"][aria-controls="search-planner-tabs"]`
+- `.styles_duration__hHAoo > .styles_searchPlannerButton__OxudZ[role="tab"][aria-controls="search-planner-tabs"]`
 
 ### Links must have discernible text
 
@@ -30,9 +30,9 @@
 
 #### Affected Elements:
 
-- `.styles_socialLink__zpwBS[rel="noopener noreferrer"][target="_blank"]:nth-child(1)`
-- `.styles_socialLink__zpwBS[rel="noopener noreferrer"][target="_blank"]:nth-child(2)`
-- `.styles_socialLink__zpwBS[rel="noopener noreferrer"][target="_blank"]:nth-child(3)`
+- `.styles_socialLink__M6Omi[rel="noopener noreferrer"][target="_blank"]:nth-child(1)`
+- `.styles_socialLink__M6Omi[rel="noopener noreferrer"][target="_blank"]:nth-child(2)`
+- `.styles_socialLink__M6Omi[rel="noopener noreferrer"][target="_blank"]:nth-child(3)`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
@@ -44,7 +44,7 @@
 
 #### Affected Elements:
 
-- `.styles_contact__SnKiK > ul`
+- `.styles_contact__3TsYS > ul`
 
 ### All page content should be contained by landmarks
 
@@ -58,8 +58,8 @@
 
 - `.promoStyles_lgView__S_OoW > span`
 - `.promoStyles_lgView__S_OoW > .styles_linkButton__ELdsG[rel=""][target="_self"] > .styles_btnInner___iGIh > .styles_btnText__qlsBU`
-- `.styles_newsLetterContainer__Rfqfu > .styles_wrapper__LfF0i.no-width-control > div > .styles_titleWrapper__BalEl`
-- `.styles_newsLetterContainer__Rfqfu > .styles_wrapper__LfF0i.no-width-control > div > .styles_contentWrapper__ASMNd`
+- `.styles_newsLetterContainer__tSOhS > .styles_wrapper__LfF0i.no-width-control > div > .styles_titleWrapper__BalEl`
+- `.styles_newsLetterContainer__tSOhS > .styles_wrapper__LfF0i.no-width-control > div > .styles_contentWrapper__ASMNd`
 - `a[href$="nyhetsbrev"] > .styles_btnInner___iGIh > .styles_btnText__qlsBU`
 
 ### Select element must have an accessible name

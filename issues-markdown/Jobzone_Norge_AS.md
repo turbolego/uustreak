@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jobzone Norge AS
 
-**Timestamp:** 2026-06-07T01:17:00.974Z
+**Timestamp:** 2026-06-14T01:52:26.848Z
 **URL:** [https://jobzone.no/](https://jobzone.no/)
 **Total Violations:** 5
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 29
+- **Count:** 30
 
 #### Affected Elements:
 
@@ -24,10 +24,11 @@
 - `.candidate-image > div > div > .container-fluid.frontpage > div:nth-child(1) > span`
 - `.company-tab`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(2) > .box.is-mobile > .left-arrow.link.rusty-red > .rusty-red`
-- `.buttons-href-button[href="/ledige-stillinger/73896"]`
-- `.buttons-href-button[href="/ledige-stillinger/73599"]`
-- `.buttons-href-button[href="/ledige-stillinger/73893"]`
-- `.buttons-href-button[href="/ledige-stillinger/73895"]`
+- `.buttons-href-button[href="/ledige-stillinger/73920"]`
+- `.buttons-href-button[href="/ledige-stillinger/73919"]`
+- `.position-list-card-wrapper:nth-child(3) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-short-deadline > .box`
+- `.buttons-href-button[href="/ledige-stillinger/73916"]`
+- `.buttons-href-button[href="/ledige-stillinger/72096"]`
 - `.button-component`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .jobseeker.is-marginless.is-multiline > h5`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .company.is-marginless.colums > h5`
@@ -79,10 +80,10 @@
 - `a[href$="registrering/"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
 - `.page-link.colums:nth-child(3) > a[href$="avdelinger/"] > .is-mobile.columns > .page-link-icon.is-narrow.column > img`
 - `.page-link.colums:nth-child(3) > a[href$="avdelinger/"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
-- `div[data-position-id="73896"] > img`
-- `div[data-position-id="73599"] > img`
-- `div[data-position-id="73893"] > img`
-- `div[data-position-id="73895"] > img`
+- `div[data-position-id="73920"] > img`
+- `div[data-position-id="73919"] > img`
+- `div[data-position-id="73916"] > img`
+- `div[data-position-id="72096"] > img`
 - `img[src$="House.svg"]`
 - `.is-6.is-12-mobile.column:nth-child(2) > img[src$="Article.svg"][type="image/svg+xml"]`
 - `.information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(3) > img[type="image/svg+xml"]`
@@ -117,7 +118,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 17
+- **Count:** 15
 
 #### Affected Elements:
 
@@ -131,9 +132,7 @@
 - `.position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-top > .position-card-top-content`
 - `.position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor`
 - `.position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-bot`
-- `.position-list-card-wrapper:nth-child(3) > .position-card.card > .position-card-top > .position-card-top-content`
-- `.position-list-card-wrapper:nth-child(3) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor`
-- `.position-list-card-wrapper:nth-child(3) > .position-card.card > .position-card-bot`
+- `.position-list-card-wrapper:nth-child(3)`
 - `.position-list-card-wrapper:nth-child(4) > .position-card.card > .position-card-top > .position-card-top-content`
 - `.position-list-card-wrapper:nth-child(4) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor`
 - `.position-list-card-wrapper:nth-child(4) > .position-card.card > .position-card-bot`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ringerike kommune
 
-**Timestamp:** 2026-06-07T01:01:12.267Z
+**Timestamp:** 2026-06-14T01:25:56.622Z
 **URL:** [https://www.ringerike.kommune.no/](https://www.ringerike.kommune.no/)
 **Total Violations:** 6
 
@@ -12,12 +12,13 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `a[title="Se alle saker"]`
 - `a[title="Vis alle "]`
+- `#corner_text`
 
 ### Frames must have an accessible name
 
@@ -54,7 +55,7 @@
 #### Affected Elements:
 
 - `div[data-blockid="46"] > .ssp__panel__news-item:nth-child(1) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage="true"][width="204"]`
-- `div[data-blockid="46"] > .ssp__panel__news-item:nth-child(2) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage="true"][width="204"]`
+- `a[href$="test-av-nodvarsel/"] > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage="true"][width="204"]`
 - `div[data-blockid="46"] > .ssp__panel__news-item:nth-child(3) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage="true"][width="204"]`
 - `div[data-blockid="46"] > .ssp__panel__news-item:nth-child(4) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage="true"][width="204"]`
 - `div[data-blockid="46"] > .ssp__panel__news-item:nth-child(5) > .ssp__panel__news-item-anchor > .ssp__panel__news-image-text > .row > .col-sm-5.pr-15.pr-sm-0 > .ssp__panel__news-image[data-responsiveimage="true"][width="204"]`
@@ -83,7 +84,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 9
+- **Count:** 10
 
 #### Affected Elements:
 
@@ -91,6 +92,7 @@
 - `div:nth-child(8) > div:nth-child(2)`
 - `.ssp__panel--grey.ssp__panel.mb-30 > .ssp__panel__title`
 - `.ssp__timespan`
+- `#portalframe1, #container`
 - `.mt-20`
 - `.ssp__fluid-panel > div > div > div > .container > .row > .col-md-6.mb-30.col-xs-12:nth-child(2)`
 - `.test-wrapper`

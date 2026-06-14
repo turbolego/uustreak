@@ -1,6 +1,6 @@
 # WCAG Violations Report for Redd Barna
 
-**Timestamp:** 2026-06-07T00:59:56.975Z
+**Timestamp:** 2026-06-14T01:24:44.740Z
 **URL:** [https://www.reddbarna.no/](https://www.reddbarna.no/)
 **Total Violations:** 4
 
@@ -41,8 +41,8 @@
 #### Affected Elements:
 
 - `.lib-link__link[rel=""] > .lib-link__img-wrap > .lib-link__featured-image[decoding="async"]`
-- `.wp-block-column.wp-block-column-is-layout-flow.is-layout-flow:nth-child(2) > .has-post-image.wp-block-lib-accentuated-link > .lib-link__link[rel="noreferrer noopener"][target="_blank"] > .lib-link__img-wrap > .lib-link__featured-image[decoding="async"]`
-- `.wp-block-column.wp-block-column-is-layout-flow.is-layout-flow:nth-child(3) > .has-post-image.wp-block-lib-accentuated-link > .lib-link__link[rel="noreferrer noopener"][target="_blank"] > .lib-link__img-wrap > .lib-link__featured-image[decoding="async"]`
+- `.wp-block-column.wp-block-column-is-layout-flow.is-layout-flow:nth-child(2) > .has-post-image.wp-block-lib-accentuated-link > .lib-link__link[rel="noreferrer noopener"][target="_blank"] > .lib-link__img-wrap > .lib-link__featured-image > img[decoding="async"]`
+- `.wp-block-column.wp-block-column-is-layout-flow.is-layout-flow:nth-child(3) > .has-post-image.wp-block-lib-accentuated-link > .lib-link__link[rel="noreferrer noopener"][target="_blank"] > .lib-link__img-wrap > .lib-link__featured-image > img[decoding="async"]`
 
 ### Elements should not have tabindex greater than zero
 

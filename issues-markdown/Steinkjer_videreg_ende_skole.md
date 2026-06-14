@@ -1,6 +1,6 @@
 # WCAG Violations Report for Steinkjer videregående skole
 
-**Timestamp:** 2026-06-07T01:10:13.902Z
+**Timestamp:** 2026-06-14T01:32:28.657Z
 **URL:** [https://web.trondelagfylke.no/steinkjer-videregaende-skole](https://web.trondelagfylke.no/steinkjer-videregaende-skole)
 **Total Violations:** 4
 

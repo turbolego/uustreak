@@ -1,10 +1,22 @@
 # WCAG Violations Report for Statens lånekasse for utdanning
 
-**Timestamp:** 2026-06-07T01:06:40.409Z
+**Timestamp:** 2026-06-14T01:30:21.287Z
 **URL:** [https://lanekassen.no/#samtykke-banner](https://lanekassen.no/#samtykke-banner)
-**Total Violations:** 1
+**Total Violations:** 2
 
 ## Violation Details
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.c-aksjonsfelt:nth-child(1) > .c-aksjonsfelt-kolonne:nth-child(3) > .c-aksjonsfelt__h3`
 
 ### All page content should be contained by landmarks
 

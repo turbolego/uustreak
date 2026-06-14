@@ -1,10 +1,23 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-06-07T01:10:18.392Z
+**Timestamp:** 2026-06-14T01:42:58.517Z
 **URL:** [https://www.f-b.no/](https://www.f-b.no/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/takeover_0, #cbb`
+- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cbb`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -42,18 +55,18 @@
 
 - `brick-carousel-v2[data-slides="20"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
-### Page should contain a level-one heading
+### Links must have discernible text
 
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 2
 
 #### Affected Elements:
 
-- `html`
-- `#eaframe, html`
+- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/takeover_0, .GoogleActiveViewElement > a`
+- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #aw0`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -73,9 +86,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
+- `.takeover-close`
 - `amedia-username`
 - `#toppbanner-1`

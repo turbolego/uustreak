@@ -1,43 +1,19 @@
 # WCAG Violations Report for Dressmann AS
 
-**Timestamp:** 2026-06-07T01:03:30.674Z
+**Timestamp:** 2026-06-14T01:36:12.292Z
 **URL:** [https://dressmann.com/no/](https://dressmann.com/no/)
-**Total Violations:** 3
+**Total Violations:** 1
 
 ## Violation Details
 
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+### Delayed refresh under 20 hours must not be used
 
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
+- **Impact:** critical
+- **Description:** Ensure <meta http-equiv="refresh"> is not used for delayed refresh
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/meta-refresh?application=playwright
+- **Tags:** cat.time-and-media, wcag2a, wcag221, TTv5, TT8.a, EN-301-549, EN-9.2.2.1, RGAAv4, RGAA-13.1.2
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.css-smxovs-StyledCssSliderWrapper`
-
-### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
-
-- **Impact:** serious
-- **Description:** Ensure that lists are structured correctly
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/list?application=playwright
-- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.e1gatcwn2`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#zendesk-widget`
+- `meta[http-equiv="refresh"]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-06-07T01:30:08.002Z
+**Timestamp:** 2026-06-14T01:49:24.428Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
 **Total Violations:** 3
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.cms-campaign-banners:nth-child(6) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper`
-- `.cms-campaign-banners:nth-child(6) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper`
+- `.cms-campaign-banners:nth-child(7) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper`
+- `.cms-campaign-banners:nth-child(7) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper`
 - `div[aria-label="Hårpleie mot hårtap fra Nisim"]`
 - `div[aria-label="Ta en titt på vårens nyheter!"]`
 - `div[aria-label="50% på CeraVe solpleie"]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vygruppen AS
 
-**Timestamp:** 2026-06-07T01:30:35.439Z
+**Timestamp:** 2026-06-14T01:49:50.373Z
 **URL:** [https://www.vy.no/](https://www.vy.no/)
 **Total Violations:** 4
 

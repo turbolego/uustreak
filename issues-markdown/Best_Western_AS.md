@@ -1,6 +1,6 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2026-06-07T00:54:06.115Z
+**Timestamp:** 2026-06-14T01:27:24.422Z
 **URL:** [https://www.bestwestern.no/](https://www.bestwestern.no/)
 **Total Violations:** 3
 
@@ -49,7 +49,7 @@
 - `.not-focus\:visually-hidden`
 - `.pr-2`
 - `a[href$="bestwestern.com/"]`
-- `#ddChallengeBody1780793638983, .captcha__header`
-- `#ddChallengeBody1780793638983, .captcha__human`
-- `#ddChallengeBody1780793638983, .captcha__robot__warning`
-- `#ddChallengeBody1780793638983, .captcha__robot__contact_support`
+- `#ddChallengeBody1781400437523, .captcha__header`
+- `#ddChallengeBody1781400437523, .captcha__human`
+- `#ddChallengeBody1781400437523, .captcha__robot__warning`
+- `#ddChallengeBody1781400437523, .captcha__robot__contact_support`

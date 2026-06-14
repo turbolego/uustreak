@@ -1,6 +1,6 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2026-06-07T00:56:53.970Z
+**Timestamp:** 2026-06-14T01:29:50.550Z
 **URL:** [https://www.coop.no/](https://www.coop.no/)
 **Total Violations:** 6
 

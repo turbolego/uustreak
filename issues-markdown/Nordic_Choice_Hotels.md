@@ -1,22 +1,10 @@
 # WCAG Violations Report for Nordic Choice Hotels
 
-**Timestamp:** 2026-06-07T00:50:19.014Z
+**Timestamp:** 2026-06-14T01:17:46.802Z
 **URL:** [https://www.strawberry.no/](https://www.strawberry.no/)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
-
-### Banner landmark should not be contained in another landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the banner landmark is at top level
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-banner-is-top-level?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#maintenance-message-title`
 
 ### All page content should be contained by landmarks
 

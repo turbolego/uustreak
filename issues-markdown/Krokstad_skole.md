@@ -1,6 +1,6 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2026-06-07T01:21:21.131Z
+**Timestamp:** 2026-06-14T01:56:28.460Z
 **URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/)
 **Total Violations:** 1
 

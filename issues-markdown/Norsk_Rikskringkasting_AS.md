@@ -1,19 +1,19 @@
 # WCAG Violations Report for Norsk Rikskringkasting AS
 
-**Timestamp:** 2026-05-17T01:10:46.331Z
+**Timestamp:** 2026-06-14T01:21:00.171Z
 **URL:** [https://www.nrk.no/](https://www.nrk.no/)
 **Total Violations:** 1
 
 ## Violation Details
 
-### Elements must meet minimum color contrast ratio thresholds
+### Heading levels should only increase by one
 
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `._dh-fotballvm-2026-formkurva-v1_lag--tittel__dato`
+- `h4`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fevik skole
 
-**Timestamp:** 2026-06-07T01:07:39.135Z
+**Timestamp:** 2026-06-14T01:40:24.289Z
 **URL:** [https://www.grimstad.kommune.no/tjenester/barn-unge-og-familie/skole/skoler-i-grimstad/fevik-skole/](https://www.grimstad.kommune.no/tjenester/barn-unge-og-familie/skole/skoler-i-grimstad/fevik-skole/)
 **Total Violations:** 3
 

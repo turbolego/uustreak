@@ -1,6 +1,6 @@
 # WCAG Violations Report for Skatteetaten
 
-**Timestamp:** 2026-06-07T01:05:00.693Z
+**Timestamp:** 2026-06-14T01:28:38.916Z
 **URL:** [https://www.skatteetaten.no/person/](https://www.skatteetaten.no/person/)
 **Total Violations:** 2
 

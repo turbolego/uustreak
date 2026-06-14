@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kragerø skole
 
-**Timestamp:** 2026-06-07T01:20:03.928Z
+**Timestamp:** 2026-06-14T01:55:16.467Z
 **URL:** [https://www.kragero.kommune.no/kragero-skole/](https://www.kragero.kommune.no/kragero-skole/)
 **Total Violations:** 3
 
@@ -36,10 +36,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 8
+- **Count:** 9
 
 #### Affected Elements:
 
+- `#alert-box`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1361 > h2`
 - `.webPartInnhold > .content-search-box.content-search-box--default[data-datasource-id="2"] > .content-search-box-content > .content-search-box-input > .content-search-box-combobox > label`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1359`

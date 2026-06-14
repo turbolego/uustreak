@@ -1,6 +1,6 @@
 # WCAG Violations Report for Barne-, ungdoms-, og familiedirektoratet
 
-**Timestamp:** 2026-06-07T00:52:02.965Z
+**Timestamp:** 2026-06-14T01:25:26.082Z
 **URL:** [https://www.bufdir.no/](https://www.bufdir.no/)
 **Total Violations:** 1
 

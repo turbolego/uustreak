@@ -1,22 +1,10 @@
 # WCAG Violations Report for Stiftelsen Hudøy
 
-**Timestamp:** 2026-06-07T01:13:17.987Z
+**Timestamp:** 2026-06-14T01:35:30.806Z
 **URL:** [https://hudoy.no/](https://hudoy.no/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
-
-### Elements must only use supported ARIA attributes
-
-- **Impact:** critical
-- **Description:** Ensure an element's role supports its ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe, .OverlayBase_module_overlayWrapper__321515a7`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -24,11 +12,10 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.av-countdown-time`
 - `.av-countdown-time-label`
 
 ### Frames must have an accessible name
@@ -87,13 +74,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 29
+- **Count:** 27
 
 #### Affected Elements:
 
-- `iframe, .FocusTarget_module_focusTarget__abd564d5`
-- `iframe, .VolumeControl_module_volumeControl__02ffae11`
-- `iframe, a`
+- `iframe, #error`
 - `.active-slide.slide-entry-wrap`
 - `#after_section_3 > .container > .template-page.content.av-content-full > .post-entry-type-page.post-entry-330.post-entry > .entry-content-wrapper.clearfix > .av_textblock_section`
 - `.post-entry-8807 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`

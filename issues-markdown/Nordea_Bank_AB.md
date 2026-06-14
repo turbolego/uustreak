@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordea Bank AB
 
-**Timestamp:** 2026-06-07T00:50:04.626Z
+**Timestamp:** 2026-06-14T01:17:32.646Z
 **URL:** [https://www.nordea.no/](https://www.nordea.no/)
 **Total Violations:** 1
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Riksteatret
 
-**Timestamp:** 2026-06-07T01:00:43.727Z
+**Timestamp:** 2026-06-14T01:25:27.331Z
 **URL:** [https://www.riksteatret.no/](https://www.riksteatret.no/)
 **Total Violations:** 2
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 20
+- **Count:** 16
 
 #### Affected Elements:
 
@@ -24,8 +24,6 @@
 - `#feature_6 > .module__grid > .module__content > .module__body > h4`
 - `#feature_7 > .module__grid > .module__content > .module__body > h4`
 - `#feature_8 > .module__grid > .module__content > .module__body > h4`
-- `#feature_9 > .module__grid > .module__content > .module__body > h4`
-- `#feature_10 > .module__grid > .module__content > .module__body > h4`
 - `a[href$="ubesvart-anrop/"] > .module__content > .module__body > h4`
 - `a[href$="triggersystemet/"] > .module__content > .module__body > h4`
 - `a[href$="apestjernen/"] > .module__content > .module__body > h4`
@@ -34,8 +32,6 @@
 - `a[href$="kakejazz/"] > .module__content > .module__body > h4`
 - `.module--grid[data-color=""]:nth-child(7) > .module__grid > a > .module__content > .module__body > h4`
 - `.module--grid[data-color=""]:nth-child(8) > .module__grid > a > .module__content > .module__body > h4`
-- `.module--grid[data-color=""]:nth-child(9) > .module__grid > a > .module__content > .module__body > h4`
-- `.module--grid[data-color=""]:nth-child(10) > .module__grid > a > .module__content > .module__body > h4`
 
 ### Images must have alternative text
 
