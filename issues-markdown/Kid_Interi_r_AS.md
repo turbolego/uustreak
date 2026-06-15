@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-06-14T01:54:02.280Z
-**URL:** [https://www.kid.no/](https://www.kid.no/)
-**Total Violations:** 8
+**Timestamp:** 2026-06-15T05:35:46.938Z
+**URL:** [https://www.kid.no/#](https://www.kid.no/#)
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.bp.cr[href$="soverom"] > .b7.c.bj > .fn.fo.fr:nth-child(1)`
+- `.i1.i2.fk:nth-child(1)`
 
 ### Heading levels should only increase by one
 
@@ -36,29 +36,12 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.ik > .gn.go.gp`
-- `div:nth-child(5) > .j3.j1.j2 > .jp.gh.jq > .fy.bq > div > div > .jr.j5.jq > .jq.bq > .js.gj.gi > .iu.gn.go`
-- `div:nth-child(14) > .j3.j1.j2 > .jp.gh.jq > .fy.bq > div > div > .jr.j5.jq > .jq.bq > .js.gj.gi > .iu.gn.go`
-
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 5
-
-#### Affected Elements:
-
-- `img[alt="Morgenkåper 50%"]`
-- `img[alt="Strandmadrasser 50%"]`
-- `img[alt="Parasoller 50%"]`
-- `img[alt="Kjølebager 50%"]`
-- `img[alt="Kimonoer og pysjamaser 50%"]`
+- `div:nth-child(5) > .fc.fd[textposition="on-image"] > .j8.fg.h5 > .kj.kk.kl > .al.bn.br > div > div > .ch.cg.et > .jd.gr.gs > .gw.gx.gy`
+- `.lg`
 
 ### Document should not have more than one banner landmark
 
@@ -83,7 +66,7 @@
 #### Affected Elements:
 
 - `#coiOverlay`
-- `.hd > .al > .b[role="region"][aria-roledescription="carousel"]`
+- `.ha > .al > .b[role="region"][aria-roledescription="carousel"]`
 
 ### Links must have discernible text
 
@@ -91,15 +74,13 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 5
+- **Count:** 3
 
 #### Affected Elements:
 
-- `.bs[href$="salg"][data-scope-link="true"]:nth-child(1)`
-- `.cr.br[href$="salg"]`
-- `.f7.gf[href$="kjokkenutstyr"]`
-- `.f7.gf[href$="borddekking"]`
-- `.f7.gf[href$="belysning"]`
+- `.f9.cs[href$="kjokkenutstyr"]`
+- `.f9.cs[href$="borddekking"]`
+- `.f9.cs[href$="barnerom"]`
 
 ### All page content should be contained by landmarks
 
@@ -112,6 +93,6 @@
 #### Affected Elements:
 
 - `#skip-to-main-content`
-- `.b8.bc.b9`
+- `.b8.bc.bd`
 - `.tf-header-slider`
 - `.tf-sidebar`

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Itera
 
-**Timestamp:** 2026-06-14T01:50:20.942Z
-**URL:** [https://www.itera.com/no/](https://www.itera.com/no/)
+**Timestamp:** 2026-06-15T05:33:33.256Z
+**URL:** [https://www.itera.com/no/#](https://www.itera.com/no/#)
 **Total Violations:** 5
 
 ## Violation Details

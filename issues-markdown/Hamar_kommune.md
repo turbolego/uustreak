@@ -1,7 +1,7 @@
 # WCAG Violations Report for Hamar kommune
 
-**Timestamp:** 2026-06-14T01:44:29.765Z
-**URL:** [https://www.hamar.kommune.no/](https://www.hamar.kommune.no/)
+**Timestamp:** 2026-06-15T05:28:59.232Z
+**URL:** [https://www.hamar.kommune.no/#](https://www.hamar.kommune.no/#)
 **Total Violations:** 5
 
 ## Violation Details

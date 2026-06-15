@@ -1,7 +1,7 @@
 # WCAG Violations Report for Scandic Hotels AS
 
-**Timestamp:** 2026-06-14T01:27:54.786Z
-**URL:** [https://www.scandichotels.no/](https://www.scandichotels.no/)
+**Timestamp:** 2026-06-15T05:14:44.448Z
+**URL:** [https://www.scandichotels.no/#](https://www.scandichotels.no/#)
 **Total Violations:** 3
 
 ## Violation Details

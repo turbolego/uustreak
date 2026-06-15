@@ -1,7 +1,7 @@
 # WCAG Violations Report for Unibuss AS
 
-**Timestamp:** 2026-06-14T01:45:10.115Z
-**URL:** [https://www.unibuss.no/](https://www.unibuss.no/)
+**Timestamp:** 2026-06-15T05:32:53.475Z
+**URL:** [https://www.unibuss.no/#](https://www.unibuss.no/#)
 **Total Violations:** 4
 
 ## Violation Details

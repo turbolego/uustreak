@@ -1,7 +1,7 @@
 # WCAG Violations Report for Skranevatnet skole
 
-**Timestamp:** 2026-06-14T01:28:57.047Z
-**URL:** [https://www.bergen.kommune.no/omkommunen/avdelinger/skranevatnet-skole](https://www.bergen.kommune.no/omkommunen/avdelinger/skranevatnet-skole)
+**Timestamp:** 2026-06-15T05:16:10.794Z
+**URL:** [https://www.bergen.kommune.no/omkommunen/avdelinger/skranevatnet-skole/#](https://www.bergen.kommune.no/omkommunen/avdelinger/skranevatnet-skole/#)
 **Total Violations:** 1
 
 ## Violation Details

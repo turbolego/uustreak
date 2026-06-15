@@ -1,7 +1,7 @@
 # WCAG Violations Report for Sunnaas sykehus HF
 
-**Timestamp:** 2026-06-14T01:38:45.324Z
-**URL:** [https://www.sunnaas.no/](https://www.sunnaas.no/)
+**Timestamp:** 2026-06-15T05:26:05.695Z
+**URL:** [https://www.sunnaas.no/#](https://www.sunnaas.no/#)
 **Total Violations:** 1
 
 ## Violation Details

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-06-14T01:26:52.128Z
-**URL:** [https://www.bt.no/](https://www.bt.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-06-15T05:08:28.365Z
+**URL:** [https://www.bt.no/#](https://www.bt.no/#)
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -12,12 +12,10 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
-- `a[data-content-id="xrQWOR"] > ._main_1me2i_119 > ._meta_1me2i_188 > ._label_1me2i_200._reviewLabel_1me2i_340.label-medium`
-- `a[data-content-id="GxjgM9"] > ._main_1me2i_119 > ._meta_1me2i_188 > ._label_1me2i_200._reviewLabel_1me2i_340.label-medium`
 - `span[aria-label="Se alle podkaster"] > span[aria-hidden="true"]`
 
 ### Aside should not be contained in another landmark
@@ -69,17 +67,3 @@
 #### Affected Elements:
 
 - `.sch-datacontroller__text`
-
-### <svg> elements with an img role must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/svg-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
-- **Count:** 3
-
-#### Affected Elements:
-
-- `a[data-content-id="q6kw8o"] > ._main_1me2i_119 > ._meta_1me2i_188 > ._hearts_4walc_1[width="99"][height="15"]`
-- `a[data-content-id="xrQWOR"] > ._main_1me2i_119 > ._meta_1me2i_188 > ._hearts_4walc_1[width="99"][height="15"]`
-- `a[data-content-id="GxjgM9"] > ._main_1me2i_119 > ._meta_1me2i_188 > ._hearts_4walc_1[width="99"][height="15"]`
