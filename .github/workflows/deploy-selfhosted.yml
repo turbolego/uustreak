@@ -131,8 +131,8 @@ jobs:
           echo "Cleaning Playwright browser cache before install..."
           rm -rf "$HOME/.cache/ms-playwright" "$HOME/Library/Caches/ms-playwright" 2>/dev/null || true
 
-          # Install Playwright without requiring root permissions
-          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright"
+          # Isolate setup browser cache path to avoid contention with matrix jobs
+          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright-setup"
           mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
           npx playwright install chromium firefox
@@ -393,18 +393,46 @@ jobs:
         run: |
           echo "Installing Playwright browsers..."
           
-          # Set browser cache path
-          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright"
+          # Use a per-batch browser cache path to avoid cross-job lock contention
+          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright-batch-${{ matrix.batch }}"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
           
           # Create browsers directory if it doesn't exist
           mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
+
+          echo "Playwright browsers path: $PLAYWRIGHT_BROWSERS_PATH"
+          echo "Existing lock files (if any):"
+          find "$PLAYWRIGHT_BROWSERS_PATH" -maxdepth 3 \( -name "*.lock" -o -name "LOCK" \) -print 2>/dev/null || true
+
+          run_playwright_install_with_timeout() {
+            # Timeout in seconds (15 minutes)
+            local max_wait=900
+            local elapsed=0
+
+            npx playwright install chromium firefox &
+            local pw_pid=$!
+
+            while kill -0 "$pw_pid" 2>/dev/null; do
+              if [ "$elapsed" -ge "$max_wait" ]; then
+                echo "❌ Playwright install timed out after ${max_wait}s"
+                kill -TERM "$pw_pid" 2>/dev/null || true
+                sleep 5
+                kill -KILL "$pw_pid" 2>/dev/null || true
+                wait "$pw_pid" 2>/dev/null || true
+                return 124
+              fi
+              sleep 5
+              elapsed=$((elapsed + 5))
+            done
+
+            wait "$pw_pid"
+          }
           
           # Install browsers with retries
           BROWSER_INSTALL_SUCCESS=false
           for attempt in 1 2 3; do
             echo "Browser installation attempt $attempt..."
-            if npx playwright install chromium firefox; then
+            if run_playwright_install_with_timeout; then
               echo "✓ Playwright browsers installed successfully on attempt $attempt"
               BROWSER_INSTALL_SUCCESS=true
               break
@@ -432,8 +460,8 @@ jobs:
           BATCH_INDEX: ${{ matrix.batch }}
           PREFER_HASH_URL: "true"
         run: |
-          # Set Playwright browser path for consistent location
-          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright"
+          # Set Playwright browser path to this batch-specific location
+          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright-batch-${{ matrix.batch }}"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
           
           echo "=== Starting WCAG tests for batch ${{ matrix.batch }} ==="
