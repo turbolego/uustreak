@@ -392,12 +392,14 @@ jobs:
           NODE_OPTIONS: "--max_old_space_size=2048"
         run: |
           echo "Installing Playwright browsers..."
+          echo "Runner: ${RUNNER_NAME:-unknown} (${RUNNER_OS:-unknown})"
           
-          # Use a per-batch browser cache path to avoid cross-job lock contention
-          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright-batch-${{ matrix.batch }}"
+          # Use a unique per-run, per-attempt, per-batch browser path to avoid stale locks
+          export PLAYWRIGHT_BROWSERS_PATH="${RUNNER_TEMP:-/tmp}/ms-playwright-run-${GITHUB_RUN_ID}-attempt-${GITHUB_RUN_ATTEMPT:-1}-batch-${{ matrix.batch }}"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
           
-          # Create browsers directory if it doesn't exist
+          # Clean stale state aggressively before install
+          rm -rf "$PLAYWRIGHT_BROWSERS_PATH" 2>/dev/null || true
           mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
 
           echo "Playwright browsers path: $PLAYWRIGHT_BROWSERS_PATH"
@@ -405,9 +407,14 @@ jobs:
           find "$PLAYWRIGHT_BROWSERS_PATH" -maxdepth 3 \( -name "*.lock" -o -name "LOCK" \) -print 2>/dev/null || true
 
           run_playwright_install_with_timeout() {
-            # Timeout in seconds (15 minutes)
-            local max_wait=900
+            # Timeout in seconds (10 minutes)
+            local max_wait=600
             local elapsed=0
+
+            if command -v timeout >/dev/null 2>&1; then
+              timeout --foreground "${max_wait}s" npx playwright install chromium firefox
+              return $?
+            fi
 
             npx playwright install chromium firefox &
             local pw_pid=$!
@@ -420,6 +427,9 @@ jobs:
                 kill -KILL "$pw_pid" 2>/dev/null || true
                 wait "$pw_pid" 2>/dev/null || true
                 return 124
+              fi
+              if [ $((elapsed % 30)) -eq 0 ]; then
+                echo "⏳ Playwright install still running... ${elapsed}s elapsed"
               fi
               sleep 5
               elapsed=$((elapsed + 5))
@@ -461,7 +471,7 @@ jobs:
           PREFER_HASH_URL: "true"
         run: |
           # Set Playwright browser path to this batch-specific location
-          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright-batch-${{ matrix.batch }}"
+          export PLAYWRIGHT_BROWSERS_PATH="${RUNNER_TEMP:-/tmp}/ms-playwright-run-${GITHUB_RUN_ID}-attempt-${GITHUB_RUN_ATTEMPT:-1}-batch-${{ matrix.batch }}"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
           
           echo "=== Starting WCAG tests for batch ${{ matrix.batch }} ==="
