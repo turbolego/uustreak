@@ -132,7 +132,8 @@ jobs:
           rm -rf "$HOME/.cache/ms-playwright" "$HOME/Library/Caches/ms-playwright" 2>/dev/null || true
 
           # Install Playwright without requiring root permissions
-          export PLAYWRIGHT_BROWSERS_PATH=$HOME/.cache/ms-playwright
+          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright"
+          mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
           npx playwright install chromium firefox
           echo "cache-path=$(pwd)" >> $GITHUB_ENV
@@ -393,7 +394,7 @@ jobs:
           echo "Installing Playwright browsers..."
           
           # Set browser cache path
-          export PLAYWRIGHT_BROWSERS_PATH=$HOME/.cache/ms-playwright
+          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
           
           # Create browsers directory if it doesn't exist
@@ -432,7 +433,7 @@ jobs:
           PREFER_HASH_URL: "true"
         run: |
           # Set Playwright browser path for consistent location
-          export PLAYWRIGHT_BROWSERS_PATH="$HOME/.cache/ms-playwright"
+          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
           
           echo "=== Starting WCAG tests for batch ${{ matrix.batch }} ==="
