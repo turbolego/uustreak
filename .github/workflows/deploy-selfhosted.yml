@@ -897,14 +897,6 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Seed from published GitHub Pages site
-        run: |
-          mkdir -p pages-seed
-          node js/fetch-published-site-data.js || true
-        env:
-          SITE_BASE_URL: https://turbolego.github.io/uustreak
-          PAGES_SEED_DIR: ${{ github.workspace }}/pages-seed
-
       - name: Checkout published site snapshot
         uses: actions/checkout@v6
         with:
@@ -977,6 +969,7 @@ jobs:
       - name: Backfill missing legacy seed data
         run: |
           mkdir -p pages-seed
+          cp -R gh-pages-fallback/* pages-seed/ 2>/dev/null || true
           if [ ! -f "pages-seed/playwright-reports/index.json" ] && [ -d "gh-pages-fallback/playwright-reports" ]; then
             cp -R gh-pages-fallback/playwright-reports pages-seed/
           fi
