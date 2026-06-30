@@ -19,7 +19,6 @@ jobs:
     runs-on: ubuntu-24.04
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
-      cache-path: ${{ steps.cache-output.outputs.cache-path }}
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -41,7 +40,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-playwright-
       - name: Install dependencies and Playwright browsers
-        id: cache-output
         run: |
           npm ci
           export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright"
@@ -73,7 +71,6 @@ jobs:
             echo "All Playwright browser installation attempts failed"
             exit 1
           fi
-          echo "cache-path=$(pwd)" >> $GITHUB_ENV
       - name: Generate test distribution
         id: set-matrix
         run: |
@@ -123,7 +120,7 @@ jobs:
         run: npm ci
       - name: Install Playwright browsers with dependencies
         run: |
-          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright-batch-${{ matrix.batch }}"
+          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright"
           mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
 
           install_playwright_browsers() {
@@ -188,11 +185,20 @@ jobs:
           cp js/tag-summary.js tests/
           cp js/validate-summaries.js tests/
           cp js/merge-summary-parts.js tests/
+      - name: Upload invalid URLs files
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: invalid-urls-files
+          path: invalid-urls-artifacts/
+          retention-days: 30
+          if-no-files-found: ignore
       - name: Run WCAG Accessibility Tests for batch
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
           BATCH_INDEX: ${{ matrix.batch }}
         run: |
+          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright"
           export BATCH_INDEX=${{ matrix.batch }}
           mapfile -t ALL_SPECS < <(ls tests/*.spec.ts)
           TOTAL_SPECS=${#ALL_SPECS[@]}
@@ -260,8 +266,15 @@ jobs:
           echo "Found part files:"
           ls -la "accessibility-reports/summaries/$TODAY/daily_summary_part_"*.json 2>/dev/null || echo "No part files found"
           
-          # Run merge (2 is the number of parallel jobs/batches)
-          node js/merge-summary-parts.js "$TODAY" 2
+          PARTS_COUNT=$(find artifacts -name "daily_summary_part_*.json" | wc -l)
+          echo "Found $PARTS_COUNT summary parts to merge"
+
+          if [ "$PARTS_COUNT" -gt 0 ]; then
+            node js/merge-summary-parts.js "$TODAY" "$PARTS_COUNT"
+          else
+            echo "No summary parts found to merge"
+            exit 1
+          fi
           
           # Verify the merged file
           if [ -f "accessibility-reports/summaries/$TODAY/daily_summary.json" ]; then

@@ -393,32 +393,6 @@ jobs:
         run: |
           echo "Installing Playwright browsers..."
           echo "Runner: ${RUNNER_NAME:-unknown} (${RUNNER_OS:-unknown})"
-
-          # Serialize Playwright installs across concurrent jobs on the same host
-          # to avoid extract/decompression deadlocks.
-          LOCK_DIR="/tmp/uustreak-playwright-install.lock"
-          LOCK_ACQUIRED=false
-          for i in $(seq 1 180); do
-            if mkdir "$LOCK_DIR" 2>/dev/null; then
-              LOCK_ACQUIRED=true
-              echo "Acquired Playwright install lock: $LOCK_DIR"
-              break
-            fi
-            if [ $((i % 6)) -eq 0 ]; then
-              echo "Waiting for Playwright install lock... (${i} attempts)"
-            fi
-            sleep 5
-          done
-
-          if [ "$LOCK_ACQUIRED" != "true" ]; then
-            echo "❌ Could not acquire Playwright install lock after 15 minutes"
-            exit 1
-          fi
-
-          cleanup_install_lock() {
-            rmdir "$LOCK_DIR" 2>/dev/null || true
-          }
-          trap cleanup_install_lock EXIT
           
           # Use a unique per-run, per-attempt, per-batch browser path to avoid stale locks
           export PLAYWRIGHT_BROWSERS_PATH="${RUNNER_TEMP:-/tmp}/ms-playwright-run-${GITHUB_RUN_ID}-attempt-${GITHUB_RUN_ATTEMPT:-1}-batch-${{ matrix.batch }}"
