@@ -117,16 +117,24 @@ jobs:
           npm config set fund false
           npm config set audit false
 
-          # Retry logic for npm installation
+          # Retry logic for deterministic npm installation
           MAX_RETRIES=3
           RETRY_DELAY=5
+          INSTALL_OK=false
           for ((i=1; i<=MAX_RETRIES; i++)); do
-            echo "Attempt $i: Installing dependencies with fresh cache..."
-            npm install --no-save --no-package-lock --prefer-offline=false --cache="$NPM_CONFIG_CACHE" && break || {
-              echo "Attempt $i failed. Retrying in $RETRY_DELAY seconds..."
-              sleep $RETRY_DELAY
-            }
+            echo "Attempt $i: Installing dependencies with npm ci..."
+            if npm ci --no-fund --no-audit --prefer-offline=false --cache="$NPM_CONFIG_CACHE"; then
+              INSTALL_OK=true
+              break
+            fi
+            echo "Attempt $i failed. Retrying in $RETRY_DELAY seconds..."
+            sleep $RETRY_DELAY
           done
+
+          if [ "$INSTALL_OK" != "true" ]; then
+            echo "❌ npm ci failed after $MAX_RETRIES attempts"
+            exit 1
+          fi
 
           echo "Cleaning Playwright browser cache before install..."
           rm -rf "$HOME/.cache/ms-playwright" "$HOME/Library/Caches/ms-playwright" 2>/dev/null || true
@@ -135,7 +143,10 @@ jobs:
           export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright-setup"
           mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
-          npx playwright install chromium firefox
+          npx playwright install chromium firefox chromium-headless-shell
+
+          echo "Verifying installed browsers in setup cache..."
+          find "$PLAYWRIGHT_BROWSERS_PATH" -maxdepth 2 -type d -name "chromium*" -o -name "firefox*" | sort || true
 
           echo "Creating Playwright browser bundle artifact..."
           PLAYWRIGHT_BUNDLE="$RUNNER_TEMP/playwright-browsers-${RUNNER_OS}.tar.gz"
@@ -380,16 +391,21 @@ jobs:
           npm config set loglevel error
           npm config set registry https://registry.npmjs.org/
           
-          # Try different approaches in order of preference
-          echo "Attempt 1: Standard npm install..."
-          if npm install --no-fund --no-audit --prefer-offline=false; then
-            echo "✓ Standard npm install successful"
-          elif npm install --no-fund --no-audit --no-package-lock --prefer-offline=false; then
-            echo "✓ npm install without package-lock successful"
-          elif npm ci --no-fund --no-audit; then
-            echo "✓ npm ci successful"
-          else
-            echo "❌ All npm installation methods failed"
+          MAX_RETRIES=3
+          RETRY_DELAY=5
+          INSTALL_OK=false
+          for ((i=1; i<=MAX_RETRIES; i++)); do
+            echo "Attempt $i: npm ci..."
+            if npm ci --no-fund --no-audit --prefer-offline=false; then
+              INSTALL_OK=true
+              break
+            fi
+            echo "Attempt $i failed. Retrying in $RETRY_DELAY seconds..."
+            sleep $RETRY_DELAY
+          done
+
+          if [ "$INSTALL_OK" != "true" ]; then
+            echo "❌ npm ci failed after $MAX_RETRIES attempts"
             echo "Checking npm logs..."
             cat ~/.npm/_logs/*debug*.log 2>/dev/null | tail -20 || echo "No npm logs found"
             exit 1
@@ -428,6 +444,17 @@ jobs:
 
           echo "Restored Playwright browsers path: $PLAYWRIGHT_DIR"
           ls -la "$PLAYWRIGHT_DIR" || echo "Playwright browser directory listing failed"
+
+          # Self-heal if artifact is missing chromium headless shell for this Playwright revision.
+          if ! find "$PLAYWRIGHT_DIR" -type f -path "*/chromium_headless_shell-*/chrome-mac/headless_shell" | grep -q .; then
+            echo "⚠️ Restored bundle missing chromium headless shell. Installing missing browser binaries..."
+            export PLAYWRIGHT_BROWSERS_PATH="$PLAYWRIGHT_DIR"
+            export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
+            npx playwright install chromium firefox chromium-headless-shell
+          fi
+
+          echo "Final browser binaries present:"
+          find "$PLAYWRIGHT_DIR" -maxdepth 3 -type d -name "chromium*" -o -name "firefox*" | sort || true
 
       - name: Run WCAG Accessibility Tests for batch ${{ matrix.batch }}
         env:
