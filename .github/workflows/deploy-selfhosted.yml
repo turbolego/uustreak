@@ -393,23 +393,74 @@ jobs:
         run: |
           echo "Installing Playwright browsers..."
           echo "Runner: ${RUNNER_NAME:-unknown} (${RUNNER_OS:-unknown})"
+
+          # Serialize Playwright installs across concurrent jobs on the same host
+          # to avoid extract/decompression deadlocks.
+          LOCK_DIR="/tmp/uustreak-playwright-install.lock"
+          LOCK_ACQUIRED=false
+          for i in $(seq 1 180); do
+            if mkdir "$LOCK_DIR" 2>/dev/null; then
+              LOCK_ACQUIRED=true
+              echo "Acquired Playwright install lock: $LOCK_DIR"
+              break
+            fi
+            if [ $((i % 6)) -eq 0 ]; then
+              echo "Waiting for Playwright install lock... (${i} attempts)"
+            fi
+            sleep 5
+          done
+
+          if [ "$LOCK_ACQUIRED" != "true" ]; then
+            echo "❌ Could not acquire Playwright install lock after 15 minutes"
+            exit 1
+          fi
+
+          cleanup_install_lock() {
+            rmdir "$LOCK_DIR" 2>/dev/null || true
+          }
+          trap cleanup_install_lock EXIT
           
           # Use a unique per-run, per-attempt, per-batch browser path to avoid stale locks
           export PLAYWRIGHT_BROWSERS_PATH="${RUNNER_TEMP:-/tmp}/ms-playwright-run-${GITHUB_RUN_ID}-attempt-${GITHUB_RUN_ATTEMPT:-1}-batch-${{ matrix.batch }}"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
+
+          # Isolate temporary extraction/download area per batch to avoid cross-job collisions.
+          export TMPDIR="${RUNNER_TEMP:-/tmp}/pwtmp-run-${GITHUB_RUN_ID}-attempt-${GITHUB_RUN_ATTEMPT:-1}-batch-${{ matrix.batch }}"
+          mkdir -p "$TMPDIR"
           
           # Clean stale state aggressively before install
           rm -rf "$PLAYWRIGHT_BROWSERS_PATH" 2>/dev/null || true
           mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
 
           echo "Playwright browsers path: $PLAYWRIGHT_BROWSERS_PATH"
+          echo "Playwright temp path: $TMPDIR"
           echo "Existing lock files (if any):"
           find "$PLAYWRIGHT_BROWSERS_PATH" -maxdepth 3 \( -name "*.lock" -o -name "LOCK" \) -print 2>/dev/null || true
 
           install_playwright_browsers() {
-            # Do not enforce a short custom timeout here; on busy self-hosted macOS
-            # runners extraction can exceed 10 minutes even after download reaches 100%.
-            npx playwright install chromium firefox
+            local max_wait=2700
+            local elapsed=0
+
+            npx playwright install chromium firefox &
+            local pw_pid=$!
+
+            while kill -0 "$pw_pid" 2>/dev/null; do
+              if [ "$elapsed" -ge "$max_wait" ]; then
+                echo "❌ Playwright install exceeded ${max_wait}s, terminating attempt"
+                kill -TERM "$pw_pid" 2>/dev/null || true
+                sleep 5
+                kill -KILL "$pw_pid" 2>/dev/null || true
+                wait "$pw_pid" 2>/dev/null || true
+                return 124
+              fi
+              if [ $((elapsed % 30)) -eq 0 ]; then
+                echo "⏳ Playwright install still running... ${elapsed}s elapsed"
+              fi
+              sleep 5
+              elapsed=$((elapsed + 5))
+            done
+
+            wait "$pw_pid"
           }
           
           # Install browsers with retries
