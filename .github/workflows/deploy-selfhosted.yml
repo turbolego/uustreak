@@ -144,7 +144,7 @@ jobs:
           mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
 
-          npx playwright install chromium firefox
+          npx playwright install chromium
 
           echo "Verifying installed browsers in setup cache..."
           find "$PLAYWRIGHT_BROWSERS_PATH" -maxdepth 2 -type d \( -name "chromium*" -o -name "firefox*" \) | sort || true
@@ -452,7 +452,7 @@ jobs:
             export PLAYWRIGHT_BROWSERS_PATH="$PLAYWRIGHT_DIR"
             export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
 
-            npx playwright install chromium firefox
+            npx playwright install chromium
           fi
 
           echo "Final browser binaries present:"
