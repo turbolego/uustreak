@@ -89,6 +89,7 @@ jobs:
 
       - name: Install dependencies and Playwright browsers
         id: cache-output
+        timeout-minutes: 25
         run: |
           echo "Completely removing npm cache for setup..."
 
@@ -144,7 +145,24 @@ jobs:
           mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
 
+          echo "Starting Playwright chromium install..."
+          (
+            while true; do
+              echo "⏳ Playwright install heartbeat: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+              sleep 30
+            done
+          ) &
+          HEARTBEAT_PID=$!
+
+          cleanup_heartbeat() {
+            kill "$HEARTBEAT_PID" 2>/dev/null || true
+          }
+          trap cleanup_heartbeat EXIT
+
           npx playwright install chromium
+
+          cleanup_heartbeat
+          trap - EXIT
 
           echo "Verifying installed browsers in setup cache..."
           find "$PLAYWRIGHT_BROWSERS_PATH" -maxdepth 2 -type d \( -name "chromium*" -o -name "firefox*" \) | sort || true
@@ -864,7 +882,7 @@ jobs:
     runs-on: self-hosted
     if: needs.check-job-status.outputs.all_jobs_successful == 'true'
     environment:
-      name: pages-deploy
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Ensure Git Bash is on PATH (Windows)
