@@ -881,9 +881,6 @@ jobs:
     needs: [wcag-test, merge-summaries, check-job-status]
     runs-on: self-hosted
     if: needs.check-job-status.outputs.all_jobs_successful == 'true'
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Ensure Git Bash is on PATH (Windows)
         if: runner.os == 'Windows'
@@ -1046,51 +1043,40 @@ jobs:
               siteBaseUrl: 'https://turbolego.github.io/uustreak'
             })
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Ensure gtar is available for Pages artifact upload
+      - name: Publish site-output to gh-pages branch
         run: |
-          if command -v gtar >/dev/null 2>&1; then
-            echo "gtar is already available: $(command -v gtar)"
-            gtar --version | head -n 1 || true
-            exit 0
+          set -euo pipefail
+          git config user.email "github-actions@github.com"
+          git config user.name "GitHub Actions"
+
+          git fetch origin gh-pages || true
+          rm -rf gh-pages-publish
+
+          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
+            git worktree add gh-pages-publish origin/gh-pages
+          else
+            git worktree add --detach gh-pages-publish
+            pushd gh-pages-publish
+            git checkout --orphan gh-pages
+            git rm -rf . 2>/dev/null || true
+            popd
           fi
 
-          echo "gtar not found. Attempting to install GNU tar..."
-          if command -v brew >/dev/null 2>&1; then
-            brew install gnu-tar || true
+          rsync -a --delete site-output/ gh-pages-publish/
+
+          pushd gh-pages-publish
+          touch .nojekyll
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "Deploy site for ${GITHUB_SHA}"
+            git push origin HEAD:gh-pages
+            echo "✅ Published updated site to gh-pages"
+          else
+            echo "ℹ️ No site changes to publish"
           fi
+          popd
 
-          if command -v gtar >/dev/null 2>&1; then
-            echo "Installed gtar at: $(command -v gtar)"
-            gtar --version | head -n 1 || true
-            exit 0
-          fi
-
-          # Last-resort compatibility shim if Homebrew is unavailable.
-          TAR_BIN=$(command -v tar || true)
-          if [ -n "$TAR_BIN" ]; then
-            mkdir -p "$RUNNER_TEMP/bin"
-            ln -sf "$TAR_BIN" "$RUNNER_TEMP/bin/gtar"
-            echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
-            export PATH="$RUNNER_TEMP/bin:$PATH"
-            echo "Created gtar shim -> $TAR_BIN"
-          fi
-
-          if ! command -v gtar >/dev/null 2>&1; then
-            echo "❌ gtar is required by actions/upload-pages-artifact@v4 but could not be provided"
-            exit 1
-          fi
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: site-output
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          git worktree remove gh-pages-publish --force
 
       - name: Cleanup runner workspace after deploy
         if: always()
