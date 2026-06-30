@@ -864,7 +864,7 @@ jobs:
     runs-on: self-hosted
     if: needs.check-job-status.outputs.all_jobs_successful == 'true'
     environment:
-      name: github-pages
+      name: pages-deploy
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Ensure Git Bash is on PATH (Windows)
