@@ -136,7 +136,19 @@ jobs:
           mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
           npx playwright install chromium firefox
+
+          echo "Creating Playwright browser bundle artifact..."
+          PLAYWRIGHT_BUNDLE="$RUNNER_TEMP/playwright-browsers-${RUNNER_OS}.tar.gz"
+          tar -C "$PLAYWRIGHT_BROWSERS_PATH" -czf "$PLAYWRIGHT_BUNDLE" .
+          ls -lh "$PLAYWRIGHT_BUNDLE"
           echo "cache-path=$(pwd)" >> $GITHUB_ENV
+
+      - name: Upload Playwright browser bundle
+        uses: actions/upload-artifact@v7
+        with:
+          name: playwright-browsers
+          path: ${{ runner.temp }}/playwright-browsers-*.tar.gz
+          retention-days: 1
 
       - name: Ensure Python and venv are available
         run: |
@@ -387,83 +399,35 @@ jobs:
           echo "Verifying installation..."
           npm list --depth=0 || echo "Some dependencies may be missing but continuing..."
 
-      - name: Install Playwright and Use Cached Browsers
-        env:
-          NODE_OPTIONS: "--max_old_space_size=2048"
+      - name: Download Playwright browser bundle
+        uses: actions/download-artifact@v8
+        with:
+          name: playwright-browsers
+          path: ${{ runner.temp }}/playwright-browsers-artifact
+
+      - name: Restore Playwright browsers
         run: |
-          echo "Installing Playwright browsers..."
+          echo "Restoring Playwright browsers from setup artifact..."
           echo "Runner: ${RUNNER_NAME:-unknown} (${RUNNER_OS:-unknown})"
-          
-          # Use a unique per-run, per-attempt, per-batch browser path to avoid stale locks
-          export PLAYWRIGHT_BROWSERS_PATH="${RUNNER_TEMP:-/tmp}/ms-playwright-run-${GITHUB_RUN_ID}-attempt-${GITHUB_RUN_ATTEMPT:-1}-batch-${{ matrix.batch }}"
-          export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
-
-          # Isolate temporary extraction/download area per batch to avoid cross-job collisions.
-          export TMPDIR="${RUNNER_TEMP:-/tmp}/pwtmp-run-${GITHUB_RUN_ID}-attempt-${GITHUB_RUN_ATTEMPT:-1}-batch-${{ matrix.batch }}"
-          mkdir -p "$TMPDIR"
-          
-          # Clean stale state aggressively before install
-          rm -rf "$PLAYWRIGHT_BROWSERS_PATH" 2>/dev/null || true
-          mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
-
-          echo "Playwright browsers path: $PLAYWRIGHT_BROWSERS_PATH"
-          echo "Playwright temp path: $TMPDIR"
-          echo "Existing lock files (if any):"
-          find "$PLAYWRIGHT_BROWSERS_PATH" -maxdepth 3 \( -name "*.lock" -o -name "LOCK" \) -print 2>/dev/null || true
-
-          install_playwright_browsers() {
-            local max_wait=2700
-            local elapsed=0
-
-            npx playwright install chromium firefox &
-            local pw_pid=$!
-
-            while kill -0 "$pw_pid" 2>/dev/null; do
-              if [ "$elapsed" -ge "$max_wait" ]; then
-                echo "❌ Playwright install exceeded ${max_wait}s, terminating attempt"
-                kill -TERM "$pw_pid" 2>/dev/null || true
-                sleep 5
-                kill -KILL "$pw_pid" 2>/dev/null || true
-                wait "$pw_pid" 2>/dev/null || true
-                return 124
-              fi
-              if [ $((elapsed % 30)) -eq 0 ]; then
-                echo "⏳ Playwright install still running... ${elapsed}s elapsed"
-              fi
-              sleep 5
-              elapsed=$((elapsed + 5))
-            done
-
-            wait "$pw_pid"
-          }
-          
-          # Install browsers with retries
-          BROWSER_INSTALL_SUCCESS=false
-          for attempt in 1 2 3; do
-            echo "Browser installation attempt $attempt..."
-            if install_playwright_browsers; then
-              echo "✓ Playwright browsers installed successfully on attempt $attempt"
-              BROWSER_INSTALL_SUCCESS=true
-              break
-            else
-              echo "❌ Browser installation attempt $attempt failed"
-              echo "Top-level browser cache contents after failure:"
-              ls -la "$PLAYWRIGHT_BROWSERS_PATH" 2>/dev/null || true
-              if [ $attempt -lt 3 ]; then
-                echo "Waiting 10 seconds before retry..."
-                sleep 10
-              fi
-            fi
-          done
-          
-          if [ "$BROWSER_INSTALL_SUCCESS" = false ]; then
-            echo "❌ All browser installation attempts failed"
+          BUNDLE_DIR="${RUNNER_TEMP:-/tmp}/playwright-browsers-artifact"
+          TARBALL=$(find "$BUNDLE_DIR" -maxdepth 1 -name 'playwright-browsers-*.tar.gz' | head -n 1)
+          if [ -z "$TARBALL" ]; then
+            echo "❌ Playwright browser bundle not found in $BUNDLE_DIR"
+            ls -la "$BUNDLE_DIR" || true
             exit 1
           fi
-          
-          # Verify browsers are installed
-          echo "Verifying browser installations..."
-          ls -la "$PLAYWRIGHT_BROWSERS_PATH" || echo "Browser cache directory listing failed"
+
+          PLAYWRIGHT_DIR="${RUNNER_TEMP:-/tmp}/ms-playwright-restored-${GITHUB_RUN_ID}-attempt-${GITHUB_RUN_ATTEMPT:-1}-batch-${{ matrix.batch }}"
+          rm -rf "$PLAYWRIGHT_DIR" 2>/dev/null || true
+          mkdir -p "$PLAYWRIGHT_DIR"
+          tar -xzf "$TARBALL" -C "$PLAYWRIGHT_DIR"
+
+          export PLAYWRIGHT_BROWSERS_PATH="$PLAYWRIGHT_DIR"
+          export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
+          echo "PLAYWRIGHT_BROWSERS_PATH=$PLAYWRIGHT_DIR" >> $GITHUB_ENV
+
+          echo "Restored Playwright browsers path: $PLAYWRIGHT_DIR"
+          ls -la "$PLAYWRIGHT_DIR" || echo "Playwright browser directory listing failed"
 
       - name: Run WCAG Accessibility Tests for batch ${{ matrix.batch }}
         env:
@@ -471,8 +435,8 @@ jobs:
           BATCH_INDEX: ${{ matrix.batch }}
           PREFER_HASH_URL: "true"
         run: |
-          # Set Playwright browser path to this batch-specific location
-          export PLAYWRIGHT_BROWSERS_PATH="${RUNNER_TEMP:-/tmp}/ms-playwright-run-${GITHUB_RUN_ID}-attempt-${GITHUB_RUN_ATTEMPT:-1}-batch-${{ matrix.batch }}"
+          # Reuse Playwright browser path restored from setup artifact
+          export PLAYWRIGHT_BROWSERS_PATH="${PLAYWRIGHT_BROWSERS_PATH:-${RUNNER_TEMP:-/tmp}/ms-playwright-restored-${GITHUB_RUN_ID}-attempt-${GITHUB_RUN_ATTEMPT:-1}-batch-${{ matrix.batch }}}"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
           
           echo "=== Starting WCAG tests for batch ${{ matrix.batch }} ==="
@@ -646,6 +610,7 @@ jobs:
           echo "Disk usage before cleanup:"
           df -h . || true
           rm -rf accessibility-reports playwright-report test-results-batch-${{ matrix.batch }} tests node_modules venv 2>/dev/null || true
+          rm -rf "${RUNNER_TEMP:-/tmp}/ms-playwright-restored-${GITHUB_RUN_ID}-attempt-${GITHUB_RUN_ATTEMPT:-1}-batch-${{ matrix.batch }}" 2>/dev/null || true
           rm -rf /tmp/npm-cache-* /tmp/npm-prefix-* 2>/dev/null || true
           echo "Disk usage after cleanup:"
           df -h . || true
