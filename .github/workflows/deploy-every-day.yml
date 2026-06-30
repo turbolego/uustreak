@@ -46,7 +46,33 @@ jobs:
           npm ci
           export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright"
           mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
-          npx playwright install chromium firefox webkit --with-deps
+
+          install_playwright_browsers() {
+            npx playwright install chromium firefox webkit --with-deps
+          }
+
+          BROWSER_INSTALL_SUCCESS=false
+          for attempt in 1 2 3; do
+            echo "Playwright browser installation attempt $attempt..."
+            if install_playwright_browsers; then
+              echo "Playwright browsers installed successfully on attempt $attempt"
+              BROWSER_INSTALL_SUCCESS=true
+              break
+            fi
+
+            echo "Playwright browser installation attempt $attempt failed"
+            echo "Current browser cache contents:"
+            ls -la "$PLAYWRIGHT_BROWSERS_PATH" 2>/dev/null || true
+            if [ $attempt -lt 3 ]; then
+              echo "Waiting 10 seconds before retry..."
+              sleep 10
+            fi
+          done
+
+          if [ "$BROWSER_INSTALL_SUCCESS" = false ]; then
+            echo "All Playwright browser installation attempts failed"
+            exit 1
+          fi
           echo "cache-path=$(pwd)" >> $GITHUB_ENV
       - name: Generate test distribution
         id: set-matrix
@@ -97,9 +123,35 @@ jobs:
         run: npm ci
       - name: Install Playwright browsers with dependencies
         run: |
-          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright"
+          export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright-batch-${{ matrix.batch }}"
           mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
-          npx playwright install chromium firefox webkit --with-deps
+
+          install_playwright_browsers() {
+            npx playwright install chromium firefox webkit --with-deps
+          }
+
+          BROWSER_INSTALL_SUCCESS=false
+          for attempt in 1 2 3; do
+            echo "Playwright browser installation attempt $attempt for batch ${{ matrix.batch }}..."
+            if install_playwright_browsers; then
+              echo "Playwright browsers installed successfully on attempt $attempt"
+              BROWSER_INSTALL_SUCCESS=true
+              break
+            fi
+
+            echo "Playwright browser installation attempt $attempt failed"
+            echo "Current browser cache contents:"
+            ls -la "$PLAYWRIGHT_BROWSERS_PATH" 2>/dev/null || true
+            if [ $attempt -lt 3 ]; then
+              echo "Waiting 10 seconds before retry..."
+              sleep 10
+            fi
+          done
+
+          if [ "$BROWSER_INSTALL_SUCCESS" = false ]; then
+            echo "All Playwright browser installation attempts failed"
+            exit 1
+          fi
       - name: Ensure Python and venv are available
         run: |
           # Check if python3 and venv are available

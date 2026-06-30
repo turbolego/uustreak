@@ -406,48 +406,24 @@ jobs:
           echo "Existing lock files (if any):"
           find "$PLAYWRIGHT_BROWSERS_PATH" -maxdepth 3 \( -name "*.lock" -o -name "LOCK" \) -print 2>/dev/null || true
 
-          run_playwright_install_with_timeout() {
-            # Timeout in seconds (10 minutes)
-            local max_wait=600
-            local elapsed=0
-
-            if command -v timeout >/dev/null 2>&1; then
-              timeout --foreground "${max_wait}s" npx playwright install chromium firefox
-              return $?
-            fi
-
-            npx playwright install chromium firefox &
-            local pw_pid=$!
-
-            while kill -0 "$pw_pid" 2>/dev/null; do
-              if [ "$elapsed" -ge "$max_wait" ]; then
-                echo "❌ Playwright install timed out after ${max_wait}s"
-                kill -TERM "$pw_pid" 2>/dev/null || true
-                sleep 5
-                kill -KILL "$pw_pid" 2>/dev/null || true
-                wait "$pw_pid" 2>/dev/null || true
-                return 124
-              fi
-              if [ $((elapsed % 30)) -eq 0 ]; then
-                echo "⏳ Playwright install still running... ${elapsed}s elapsed"
-              fi
-              sleep 5
-              elapsed=$((elapsed + 5))
-            done
-
-            wait "$pw_pid"
+          install_playwright_browsers() {
+            # Do not enforce a short custom timeout here; on busy self-hosted macOS
+            # runners extraction can exceed 10 minutes even after download reaches 100%.
+            npx playwright install chromium firefox
           }
           
           # Install browsers with retries
           BROWSER_INSTALL_SUCCESS=false
           for attempt in 1 2 3; do
             echo "Browser installation attempt $attempt..."
-            if run_playwright_install_with_timeout; then
+            if install_playwright_browsers; then
               echo "✓ Playwright browsers installed successfully on attempt $attempt"
               BROWSER_INSTALL_SUCCESS=true
               break
             else
               echo "❌ Browser installation attempt $attempt failed"
+              echo "Top-level browser cache contents after failure:"
+              ls -la "$PLAYWRIGHT_BROWSERS_PATH" 2>/dev/null || true
               if [ $attempt -lt 3 ]; then
                 echo "Waiting 10 seconds before retry..."
                 sleep 10
