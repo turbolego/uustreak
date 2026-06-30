@@ -60,31 +60,63 @@ function writeMarkdown(siteDir, projectName, content) {
     return fileName;
 }
 
-async function findIssueByTitle(github, context, title, labels) {
-    const issues = await github.paginate(github.rest.issues.listForRepo, {
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        state: 'all',
-        labels,
-        per_page: 100,
-    });
+function isRetryableGithubError(error) {
+    const status = error?.status || error?.response?.status;
+    const code = error?.code || error?.cause?.code;
 
-    return issues.find((issue) => issue.title === title) || null;
-}
-
-async function closeIssueIfPresent(github, context, projectName) {
-    const title = `[${projectName}] WCAG Violations Report`;
-    const issue = await findIssueByTitle(github, context, title, 'wcag-violation');
-    if (!issue || issue.state === 'closed') {
-        return;
+    if (status === 429) {
+        return true;
     }
 
-    await github.rest.issues.update({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        issue_number: issue.number,
-        state: 'closed',
-    });
+    if (typeof status === 'number' && status >= 500) {
+        return true;
+    }
+
+    return ['ETIMEDOUT', 'ECONNRESET', 'ECONNABORTED', 'EAI_AGAIN', 'ENOTFOUND'].includes(code);
+}
+
+async function withGithubRetries(core, operationName, fn, options = {}) {
+    const maxAttempts = options.maxAttempts || 5;
+    const baseDelayMs = options.baseDelayMs || 1000;
+
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+        try {
+            return await fn();
+        } catch (error) {
+            if (attempt >= maxAttempts || !isRetryableGithubError(error)) {
+                throw error;
+            }
+
+            const delayMs = baseDelayMs * Math.pow(2, attempt - 1);
+            core.warning(`${operationName} failed on attempt ${attempt}/${maxAttempts}: ${error.message}. Retrying in ${delayMs}ms...`);
+            await new Promise((resolve) => setTimeout(resolve, delayMs));
+        }
+    }
+
+    throw new Error(`${operationName} failed after ${maxAttempts} attempts`);
+}
+
+async function loadIssuesByTitle(github, context, core, labels) {
+    const issues = await withGithubRetries(core, `list issues for labels=${labels}`, () =>
+        github.paginate(github.rest.issues.listForRepo, {
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            state: 'all',
+            labels,
+            per_page: 100,
+        })
+    );
+
+    const byTitle = new Map();
+    for (const issue of issues) {
+        if (!issue || !issue.title || issue.pull_request) {
+            continue;
+        }
+        if (!byTitle.has(issue.title)) {
+            byTitle.set(issue.title, issue);
+        }
+    }
+    return byTitle;
 }
 
 function writeMarkdownIndex(siteDir) {
@@ -100,6 +132,9 @@ function writeMarkdownIndex(siteDir) {
 }
 
 module.exports = async function updateIssuesFromSite({ github, context, core, siteDir, siteBaseUrl }) {
+    const summaryIssuesByTitle = await loadIssuesByTitle(github, context, core, 'wcag-summary');
+    const violationIssuesByTitle = await loadIssuesByTitle(github, context, core, 'wcag-violation');
+
     const summaryFile = getLatestSummaryFile(siteDir);
     if (summaryFile) {
         const summary = JSON.parse(fs.readFileSync(summaryFile, 'utf8'));
@@ -127,23 +162,29 @@ module.exports = async function updateIssuesFromSite({ github, context, core, si
             ]).flat(),
         ].join('\n');
 
-        const existingSummaryIssue = await findIssueByTitle(github, context, 'WCAG Daily Summary Report', 'wcag-summary');
+        const existingSummaryIssue = summaryIssuesByTitle.get('WCAG Daily Summary Report');
         if (existingSummaryIssue) {
-            await github.rest.issues.update({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: existingSummaryIssue.number,
-                body,
-                state: 'open',
-            });
+            const updatedSummaryIssue = await withGithubRetries(core, `update summary issue #${existingSummaryIssue.number}`, () =>
+                github.rest.issues.update({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: existingSummaryIssue.number,
+                    body,
+                    state: 'open',
+                })
+            );
+            summaryIssuesByTitle.set('WCAG Daily Summary Report', updatedSummaryIssue.data || existingSummaryIssue);
         } else {
-            await github.rest.issues.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                title: 'WCAG Daily Summary Report',
-                body,
-                labels: ['wcag-summary', 'automated-report'],
-            });
+            const createdSummaryIssue = await withGithubRetries(core, 'create summary issue', () =>
+                github.rest.issues.create({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    title: 'WCAG Daily Summary Report',
+                    body,
+                    labels: ['wcag-summary', 'automated-report'],
+                })
+            );
+            summaryIssuesByTitle.set('WCAG Daily Summary Report', createdSummaryIssue.data);
         }
     } else {
         core.info('No daily summary file found in the built site output.');
@@ -162,7 +203,19 @@ module.exports = async function updateIssuesFromSite({ github, context, core, si
 
         const violationsWithCount = report.violations.filter((violation) => violation && typeof violation === 'object' && violation.violation_count > 0);
         if (violationsWithCount.length === 0) {
-            await closeIssueIfPresent(github, context, report.project);
+            const emptyTitle = `[${report.project}] WCAG Violations Report`;
+            const existingViolationIssue = violationIssuesByTitle.get(emptyTitle);
+            if (existingViolationIssue && existingViolationIssue.state !== 'closed') {
+                const closedIssue = await withGithubRetries(core, `close issue #${existingViolationIssue.number}`, () =>
+                    github.rest.issues.update({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        issue_number: existingViolationIssue.number,
+                        state: 'closed',
+                    })
+                );
+                violationIssuesByTitle.set(emptyTitle, closedIssue.data || { ...existingViolationIssue, state: 'closed' });
+            }
             processedProjects.add(report.project);
             continue;
         }
@@ -226,24 +279,30 @@ module.exports = async function updateIssuesFromSite({ github, context, core, si
         }
 
         const title = `[${report.project}] WCAG Violations Report`;
-        const existingIssue = await findIssueByTitle(github, context, title, 'wcag-violation');
+        const existingIssue = violationIssuesByTitle.get(title);
         if (existingIssue) {
-            await github.rest.issues.update({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: existingIssue.number,
-                body: issueBody,
-                state: 'open',
-                labels: Array.from(labels),
-            });
+            const updatedIssue = await withGithubRetries(core, `update issue #${existingIssue.number}`, () =>
+                github.rest.issues.update({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: existingIssue.number,
+                    body: issueBody,
+                    state: 'open',
+                    labels: Array.from(labels),
+                })
+            );
+            violationIssuesByTitle.set(title, updatedIssue.data || existingIssue);
         } else {
-            await github.rest.issues.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                title,
-                body: issueBody,
-                labels: Array.from(labels),
-            });
+            const createdIssue = await withGithubRetries(core, `create issue for ${report.project}`, () =>
+                github.rest.issues.create({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    title,
+                    body: issueBody,
+                    labels: Array.from(labels),
+                })
+            );
+            violationIssuesByTitle.set(title, createdIssue.data);
         }
 
         processedProjects.add(report.project);

@@ -1043,6 +1043,7 @@ jobs:
 
       - name: Create or Update GitHub Issues
         uses: actions/github-script@v9
+        continue-on-error: true
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |

@@ -381,6 +381,7 @@ jobs:
           echo "Archive count: $(find site-output/accessibility-reports/archives -name 'reports_*.tar.gz' | wc -l)"
       - name: Create or Update GitHub Issues
         uses: actions/github-script@v9
+        continue-on-error: true
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
