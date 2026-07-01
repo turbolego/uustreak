@@ -1,0 +1,186 @@
+{
+  "config": {
+    "configFile": "C:\\TurbolegoGitHub\\uustreak\\playwright.config.ts",
+    "rootDir": "C:/TurbolegoGitHub/uustreak/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "C:\\TurbolegoGitHub\\uustreak\\playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/TurbolegoGitHub/uustreak/test-results",
+        "repeatEach": 1,
+        "retries": 3,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/TurbolegoGitHub/uustreak/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.0",
+    "workers": 16,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "Experis_AS.spec.ts",
+      "file": "Experis_AS.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "WCAG accessibility check for Experis AS",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11537,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Starting accessibility test for Experis AS\n"
+                    },
+                    {
+                      "text": "Trying navigation strategies for URLs: https://www.experis.no/, https://www.experis.no/#\n"
+                    },
+                    {
+                      "text": "🔄 Trying strategy 1/6: Chromium (Stealth Mode)\n"
+                    },
+                    {
+                      "text": "🔄 Chromium (Stealth Mode) attempt 1: https://www.experis.no/\n"
+                    },
+                    {
+                      "text": "✅ Chromium (Stealth Mode) navigation successful\n"
+                    },
+                    {
+                      "text": "Page loaded, waiting for stabilization...\n"
+                    },
+                    {
+                      "text": "Final URL: https://www.experis.no/\n"
+                    },
+                    {
+                      "text": "Page title: Experis Norge - konsulenttjenester for digitale prosesser\n"
+                    },
+                    {
+                      "text": "Browser used: chromium\n"
+                    },
+                    {
+                      "text": "Waited for loading indicator: [class*=\"loading\"]\n"
+                    },
+                    {
+                      "text": "Waited for loading indicator: [class*=\"spinner\"]\n"
+                    },
+                    {
+                      "text": "Waited for loading indicator: [id*=\"loading\"]\n"
+                    },
+                    {
+                      "text": "Waited for loading indicator: .loader\n"
+                    },
+                    {
+                      "text": "Running accessibility analysis (attempt 1/3)...\n"
+                    },
+                    {
+                      "text": "Accessibility analysis completed successfully\n"
+                    },
+                    {
+                      "text": "Accessibility report saved to C:\\TurbolegoGitHub\\uustreak\\accessibility-reports\\violations-Experis AS-2025-10-17T13-11-13_160Z-count-0.json\n"
+                    },
+                    {
+                      "text": "Environment check - BATCH_INDEX: undefined\n"
+                    },
+                    {
+                      "text": "Running in standalone mode, using main file: accessibility-reports\\summaries\\2025-10-17\\daily_summary.json\n"
+                    },
+                    {
+                      "text": "Loaded existing summary from accessibility-reports\\summaries\\2025-10-17\\daily_summary.json\n"
+                    },
+                    {
+                      "text": "Updated tag summary saved to accessibility-reports\\summaries\\2025-10-17\\daily_summary.json\n"
+                    },
+                    {
+                      "text": "Updated tag summary with data from C:\\TurbolegoGitHub\\uustreak\\accessibility-reports\\violations-Experis AS-2025-10-17T13-11-13_160Z-count-0.json\n"
+                    },
+                    {
+                      "text": "✅ Found 0 accessibility violations (using chromium)\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-10-17T13:11:01.431Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fe792b118aa86f7ca40f-e6ec970b3ae6e82a5c3e",
+          "file": "Experis_AS.spec.ts",
+          "line": 12,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-10-17T13:11:00.560Z",
+    "duration": 13055.062999999998,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
