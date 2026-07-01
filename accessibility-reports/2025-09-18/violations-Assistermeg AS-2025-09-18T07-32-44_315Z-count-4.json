@@ -1,0 +1,151 @@
+{
+  "project": "Assistermeg AS",
+  "timestamp": "2025-09-18T07:32:44.315Z",
+  "url": "https://www.assistermeg.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a id=\"CybotCookiebotDialogNavDeclaration\" class=\"CybotCookiebotDialogNavItemLink CybotCookiebotDialogActive\" href=\"#\" data-target=\"CybotCookiebotDialogBody\" tabindex=\"0\" role=\"tab\" aria-selected=\"true\" lang=\"en\">Consent</a>",
+          "target": [
+            "#CybotCookiebotDialogNavDeclaration"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.48 (foreground color: #e42d11, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h5>BPA for alle diagnoser og alle aldre</h5>",
+          "target": [
+            "h5:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"#Intro\" data-w-id=\"5d1d98f9-1a4e-a59a-3c96-884e8b652df4\" style=\"opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;\" class=\"scroll-down w-inline-block\">",
+          "target": [
+            ".scroll-down"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<div data-poster-url=\"https://cdn.prod.website-files.com/5e5c44b82089e505ea9672ad/6487151851bb722037612a51_Redigert- forside-nettside-video (juni 2023)-poster-00001.jpg\" data-video-urls=\"https://cdn.prod.website-files.com/5e5c44b82089e505ea9672ad/6487151851bb722037612a51_Redigert- forside-nettside-video (juni 2023)-transcode.mp4,https://cdn.prod.website-files.com/5e5c44b82089e505ea9672ad/6487151851bb722037612a51_Redigert- forside-nettside-video (juni 2023)-transcode.webm\" data-autoplay=\"true\" data-loop=\"true\" data-wf-ignore=\"true\" class=\"background-video w-background-video w-background-video-atom\">",
+          "target": [
+            ".background-video"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"content-wrapper-wide _25px-padding w-container\">",
+          "target": [
+            ".content-wrapper-wide"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"Intro\" class=\"content-section intro\">",
+          "target": [
+            "#Intro"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"content-section\">",
+          "target": [
+            ".content-section:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"Contact-Us\" class=\"section-full\">",
+          "target": [
+            "#Contact-Us"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"hero-heading-center\">",
+          "target": [
+            ".hero-heading-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"footer\">",
+          "target": [
+            ".content > .footer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

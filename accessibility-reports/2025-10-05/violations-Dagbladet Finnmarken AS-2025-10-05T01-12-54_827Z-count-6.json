@@ -1,0 +1,312 @@
+{
+  "project": "Dagbladet Finnmarken AS",
+  "timestamp": "2025-10-05T01:12:54.827Z",
+  "url": "https://www.ifinnmark.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<iframe width=\"1000\" height=\"300\" src=\"javascript:'';\" allowtransparency=\"true\" webkitallowfullscreen=\"\" mozallowfullscreen=\"\" allowfullscreen=\"\" marginwidth=\"0\" marginheight=\"0\" hspace=\"0\" vspace=\"0\" frameborder=\"0\" scrolling=\"no\" data-contents=\"&lt;!DOCTYPE html&gt;&lt;title&gt;ad&lt;/title&gt;&lt;base href='https://s2.adform.net/Banners/Elements/Files/2059406/18992342/bvpath_258/'&gt;&lt;script&gt;try{parent.AdformWin23gd9sf8bf5(window)}catch(ex){new Image().src='https://track.adform.net/serving/jslog/?src=htmlcb&amp;msg='+encodeURIComponent(''+(ex.stack||ex))}&lt;/script&gt;&lt;script src='https://s2.adform.net/Banners/Elements/Files/2059406/18992342/18992342.js?ADFassetID=18992342&amp;bv=258' charset='UTF-8'&gt;&lt;/script&gt;\" data-onload=\"(function F(a,c){function d(){c?q.open():q.open(&quot;text/html&quot;,&quot;replace&quot;);p?l.call(q,b):q.write(b);g.__rendered__=!0}var b=a.getAttribute(&quot;data-contents&quot;),g=a.contentWindow,f=g.parent,q=g.document,e=g.setTimeout;try{var l=f.parent&amp;&amp;f.parent.HTMLDocument&amp;&amp;f.parent.HTMLDocument.prototype.write}catch(r){}var p=l&amp;&amp;f.HTMLDocument&amp;&amp;f.HTMLDocument.prototype.write!==l;-1==a.offsetHeight||g.__rendered__||(g.__rendered__=!0,c?d():e(d,0))})(this,false)\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe src=\"about:blank\" scrolling=\"no\" style=\"height: 1px; width: 1px; min-height: 100%; max-width: 100%; min-width: 100%; filter: none; transform: none; border: none; outline: none; display: block; position: absolute; opacity: 1; top: 0px; left: 0px; transform-origin: 0px 0px; transition: opacity 0.2s;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]",
+            "iframe[src$=\"about:blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe style=\"position: absolute; pointer-events: none; left: 0px; top: 0px; opacity: 0; height: 0px; width: 0px;\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]",
+            "body > iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe width=\"1920\" height=\"1000\" src=\"javascript:'';\" allowtransparency=\"true\" webkitallowfullscreen=\"\" mozallowfullscreen=\"\" allowfullscreen=\"\" marginwidth=\"0\" marginheight=\"0\" hspace=\"0\" vspace=\"0\" frameborder=\"0\" scrolling=\"no\" data-contents=\"&lt;!DOCTYPE html&gt;&lt;title&gt;ad&lt;/title&gt;&lt;base href='https://s2.adform.net/Banners/Elements/Files/2059406/18992343/bvpath_258/'&gt;&lt;script&gt;try{parent.AdformWinl0lacjcskm(window)}catch(ex){new Image().src='https://track.adform.net/serving/jslog/?src=htmlcb&amp;msg='+encodeURIComponent(''+(ex.stack||ex))}&lt;/script&gt;&lt;script src='https://s2.adform.net/Banners/Elements/Files/2059406/18992343/18992343.js?ADFassetID=18992343&amp;bv=258' charset='UTF-8'&gt;&lt;/script&gt;\" data-onload=\"(function F(a,c){function d(){c?q.open():q.open(&quot;text/html&quot;,&quot;replace&quot;);p?l.call(q,b):q.write(b);g.__rendered__=!0}var b=a.getAttribute(&quot;data-contents&quot;),g=a.contentWindow,f=g.parent,q=g.document,e=g.setTimeout;try{var l=f.parent&amp;&amp;f.parent.HTMLDocument&amp;&amp;f.parent.HTMLDocument.prototype.write}catch(r){}var p=l&amp;&amp;f.HTMLDocument&amp;&amp;f.HTMLDocument.prototype.write!==l;-1==a.offsetHeight||g.__rendered__||(g.__rendered__=!0,c?d():e(d,0))})(this,false)\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "iframe[width=\"1920\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe src=\"about:blank\" scrolling=\"no\" style=\"height: 1px; width: 1px; min-height: 100%; max-width: 100%; min-width: 100%; filter: none; transform: none; border: none; outline: none; display: block; position: absolute; opacity: 1; top: 0px; left: 0px; transform-origin: 0px 0px; transition: opacity 0.2s;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "iframe[width=\"1920\"]",
+            "iframe[src$=\"about:blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe style=\"position: absolute; pointer-events: none; left: 0px; top: 0px; opacity: 0; height: 0px; width: 0px;\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "iframe[width=\"1920\"]",
+            "body > iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<div class=\"element kind-text text\" role=\"region\" aria-label=\"Ekstra gunstig boliglån \" tabindex=\"0\" id=\"f\" style=\"z-index: 5; background-color: transparent; text-size-adjust: 100%; font-size: 56px; letter-spacing: 0.02em; font-family: f-67891e2a0a19749dcc90cfbd, Helvetica, Arial, Tahoma, &quot;Microsoft Yahei&quot;, 微软雅黑, STXihei, 华文细黑, sans-serif; line-height: 1; color: rgb(255, 255, 255); padding: 0px; overflow: visible; pointer-events: auto; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, -0.0762376, -0.0336633, 1, -0.00099, 77, 34, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#f"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<div class=\"element kind-text text\" role=\"region\" aria-label=\"For deg under 34 år.\" tabindex=\"0\" id=\"e\" style=\"z-index: 4; background-color: transparent; text-size-adjust: 100%; font-size: 32px; letter-spacing: 0em; font-family: f-662a085caa4b93ed27dc17fd, Helvetica, Arial, Tahoma, &quot;Microsoft Yahei&quot;, 微软雅黑, STXihei, 华文细黑, sans-serif; line-height: 1.1; color: rgb(255, 255, 255); padding: 0px; overflow: visible; pointer-events: auto; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, -0.128247, -0.248377, 1, -0.0016233, 79, 153, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#e"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<div class=\"element kind-text text\" role=\"region\" aria-label=\"Nom. rente fra 4,99 %, eff.rente fra 5,18 %. Lån kr 2 000 000 o/25 år. Kost. kr 1 526 690, tot. kr 3 526 690.\" tabindex=\"0\" id=\"d\" style=\"z-index: 3; background-color: transparent; text-size-adjust: 100%; font-size: 9px; letter-spacing: 0em; font-family: f-662a085caa4b93ed27dc17fe, Helvetica, Arial, Tahoma, &quot;Microsoft Yahei&quot;, 微软雅黑, STXihei, 华文细黑, sans-serif; line-height: 1.3; color: rgb(255, 255, 255); padding: 0px; overflow: visible; pointer-events: auto; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, -0.037037, -0.446296, 1, -0.0018518, 20, 241, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#d"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-9d385eb1-3ede-492b-ae8d-84c6b349fc0b\">",
+          "target": [
+            ".navigation[data-slides=\"10\"][data-min-slides-to-show=\"1\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a href=\"https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsuEFq8g-KIWZJAsmcVigv6rXjtn6_FHZun6ztViRsKVfrOSu7Ifns2qrKSjteK65rmM9JpI6O2D8r1fwsUO_ayI-FB3AIg6DiEea0uVzChv1e_pZghXoSjvHDtMzrTkTSlcMFYRdDlOh3B8FmeowmpbaaInsnkKhpCfvY5XcrJgY-73C58-BTtmx4h1QYcq-VoYjt_Q2ZMtro3Z2bsrKqaV2V_oNff0LI_6Gruumxu5vPCBPIRD8MJM2tYZnla7AbnUMt8qWD5q50gbw7jZPJvNDMDS_BAJNh9rIiDWkLJebjjaSthF2eYW8uQbX44xIIrLdmvgmRGxVIjxvhkbsA4Nh1i_vALHtJtn9PqtqL5un0xn6TMA7nvAmGV4WdLoX-1mHtp_zRoCZh_FFayWZUhA4vuQuD-hWzIl4S5rdr9lI3PGiA&amp;sai=AMfl-YQquaIGCm8Nwc_OvdPK8OnXzj1mZTjNbD6opMdcbYzqo_dBvCIwOVltTrGrCl4scvQFCZELzi8N2Wv-7_R48ETsta9FE3Rumf8zUW3sswQD-ziVLQQEYTz9R5FeD9zwoq8r77JGSRLVjrFORGCPgxiRhFl9XH1GA0Z75g75Zp7S-C8UVoN3Z6eftcljmdr16mjZ4OmjWnjWrkqNchQ7eescKx5ir6TtjvV_fU1kNAHYHZ7jSM9oRtkDsAjmFqIyPUWSB9WnqP8z7-zutys-WA11jQDwN8BsHV13BeOI9UFQ__ChF3m4seUJUwfzN6DTzEr7BLZGYtLkFmkzq2SS4yX_xu5R_zco7m89IQjtkVOVy0FJ&amp;sig=Cg0ArKJSzBYLfUfvrtxzEAE&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;urlfix=1&amp;adurl=https://track.adform.net/C/?bn=84401379;C=1;gdpr=0;gdpr_consent=;adfibeg=0;cdata=uiNzo_XQ_8IFRjk3-nDTIT0bCkrhs7PSt4DR7vdIl5Its5O3qgQDBtkO3xlyoUiyID-LWb5oShGwCZ92dKG5uMHzWJ8iG5IJNIRfJCVTbQ1yT_I_CJyavGteI0J70AqhCuPDkdu-FPaVYZ0sqVWKNmo7vjq07Ji1pnrTfTEINDtVHVJwMJKSJhks1PMZlRUQHIWXe-ubLcu3WlCgL0xZbbyFt2A5TpeMxOP7EGRkIKg1;;fc=1;CREFURL=https%3a%2f%2fwww.ifinnmark.no%2f\" style=\"width:1px;height:1px;display:block;border:0;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "#adform-adbox-vloz5ck9s0 > div:nth-child(2) > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsuEFq8g-KIWZJAsmcVigv6rXjtn6_FHZun6ztViRsKVfrOSu7Ifns2qrKSjteK65rmM9JpI6O2D8r1fwsUO_ayI-FB3AIg6DiEea0uVzChv1e_pZghXoSjvHDtMzrTkTSlcMFYRdDlOh3B8FmeowmpbaaInsnkKhpCfvY5XcrJgY-73C58-BTtmx4h1QYcq-VoYjt_Q2ZMtro3Z2bsrKqaV2V_oNff0LI_6Gruumxu5vPCBPIRD8MJM2tYZnla7AbnUMt8qWD5q50gbw7jZPJvNDMDS_BAJNh9rIiDWkLJebjjaSthF2eYW8uQbX44xIIrLdmvgmRGxVIjxvhkbsA4Nh1i_vALHtJtn9PqtqL5un0xn6TMA7nvAmGV4WdLoX-1mHtp_zRoCZh_FFayWZUhA4vuQuD-hWzIl4S5rdr9lI3PGiA&amp;sai=AMfl-YQquaIGCm8Nwc_OvdPK8OnXzj1mZTjNbD6opMdcbYzqo_dBvCIwOVltTrGrCl4scvQFCZELzi8N2Wv-7_R48ETsta9FE3Rumf8zUW3sswQD-ziVLQQEYTz9R5FeD9zwoq8r77JGSRLVjrFORGCPgxiRhFl9XH1GA0Z75g75Zp7S-C8UVoN3Z6eftcljmdr16mjZ4OmjWnjWrkqNchQ7eescKx5ir6TtjvV_fU1kNAHYHZ7jSM9oRtkDsAjmFqIyPUWSB9WnqP8z7-zutys-WA11jQDwN8BsHV13BeOI9UFQ__ChF3m4seUJUwfzN6DTzEr7BLZGYtLkFmkzq2SS4yX_xu5R_zco7m89IQjtkVOVy0FJ&amp;sig=Cg0ArKJSzBYLfUfvrtxzEAE&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;urlfix=1&amp;adurl=https://track.adform.net/C/?bn=84401380;C=1;gdpr=0;gdpr_consent=;adfibeg=0;cdata=bm7lewdlXVAFRjk3-nDTIT0bCkrhs7PShxBX_YEXbPFeR_OIj--yYKXSVTXS0sqcID-LWb5oShGwCZ92dKG5uMHzWJ8iG5IJY_pfagPzRNRyT_I_CJyavPgiAfyYn483CuPDkdu-FPaVYZ0sqVWKNmo7vjq07Ji1lsr_2jjCDuZPIaxBTuTogqUnuTBDCKqv0qq3aqa2t2fYQb7w6TjmHZdn8vXyY6rB4zXMhVXFRew1;;fc=1;CREFURL=https%3a%2f%2fwww.ifinnmark.no%2f\" style=\"width:1px;height:1px;display:block;border:0;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "#adform-adbox-2bzvby41v6o > div:nth-child(2) > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.ifinnmark.no/gfx/small.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"\" publication=\"www.ifinnmark.no\" subscription-text=\"\" subscription-link=\"\" links=\"\" theme=\"alfa\"><a href=\"https://www.ifinnmark.no/aid/login?requested_url=https%3A%2F%2Fwww.ifinnmark.no%2F&amp;context=ego_top\">Logg inn</a></amedia-username>",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"am-bazaar-ad--label\" id=\"toppbanner-1-label\">Annonse</span>",
+          "target": [
+            "#toppbanner-1-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"GettyImages-1222008264\" tabindex=\"0\" id=\"b\" style=\"z-index: 1; pointer-events: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, -0.139847, 0.0804597, 1, -0.0006385, 219, -126, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#b"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"dnb-rgb-hvit\" tabindex=\"0\" id=\"a\" style=\"z-index: 0; pointer-events: auto; transform: matrix3d(1, 3.75558e-16, -2.44929e-16, 1.63286e-18, 0, 1, 0, 0, -5.9, -1.53333, 1, -0.00666667, 885, 230, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"GettyImages-1222008264\" tabindex=\"0\" id=\"c\" style=\"z-index: 2; pointer-events: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, -0.068352, 0.079588, 1, -0.0009363, 73, -85, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "iframe[width=\"1920\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#c"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"GettyImages-1222008264 (1)\" tabindex=\"0\" id=\"e\" style=\"z-index: 4; pointer-events: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, -1.17322, 0.079588, 1, -0.0009363, 1253, -85, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "iframe[width=\"1920\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#e"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"dnb-rgb-hvit left\" tabindex=\"0\" id=\"p\" style=\"z-index: 15; pointer-events: auto; transform: matrix3d(1, 6.05792e-16, -2.44929e-16, 1.63286e-18, 0, 1, 0, 0, -2.18, -2.47333, 1, -0.00666667, 327, 371, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "iframe[width=\"1920\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"dnb-rgb-hvit right\" tabindex=\"0\" id=\"k\" style=\"z-index: 10; pointer-events: auto; transform: matrix3d(1, 6.05792e-16, -2.44929e-16, 1.63286e-18, 0, 1, 0, 0, -10.06, -2.47333, 1, -0.00666667, 1509, 371, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "iframe[width=\"1920\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#k"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

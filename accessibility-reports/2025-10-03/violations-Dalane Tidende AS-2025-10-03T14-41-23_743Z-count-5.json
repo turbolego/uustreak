@@ -1,0 +1,148 @@
+{
+  "project": "Dalane Tidende AS",
+  "timestamp": "2025-10-03T14:41:23.743Z",
+  "url": "https://www.dalane-tidende.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.dalane-tidende\\.no\\/toppbanner_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstKcexNRWeXk9YcqcuRrJL6W2oCPN_TwmyiIgPCXrLgFmi9NRQGaAhi11ELtUa2VidNUWgfwF7KYR5mOkCs1OdgwHjkUjZ_8lWmdkHT14KbnS_2eZY1VhTTD0VabpxwvyGMM0QzZ4xNO7BFd76laQwGZ4WVfmRGl0zKt2fRZImKcD3UPdkk8ItNW6LjfIKznsLuk2gakWkwYWeG_Z4PP2tgY7GHSDsmwIfXDhF9BXvPDl8WSQnaxLtIf4kUG7vPgyXxrRALfbyet_4gKcJ_W0x--W5j5_7c9vLOSL1FJifqu20PFLyHYybTxMhjJysIXe9YcmPP-gMlDxO6kiWpvZ51Kn9IUQEkFkoiOYCZ-3f7jIBCbVpTgHkLZTG9m00AH-C1apQxbxsBp2EnAEjW5WkaxBWK_m60zHxoSbX_FCrVh80e6GyE67VHJvqDYgo&amp;sai=AMfl-YQyp5_ZeYPkEP721d07qwzQpFx5kM-O4aT1xnCNKYK9U6EAzf4y22YK9Y9sUq91BaJIerqLGm4JQWxqlUOZqnHXAOdlxaaxki-f1caULcxyd0bXAIIWSBiU4nUS-xnE5N_gwg5QxGikK18fgwJFw7zzWwbBbYXtLjKhV5Y-VyfOjTMKzz9A5a8Q62QhFVpzIYIXxB64IrO7W6UMQxjmFbBYm97dO5tlSh-f5JgAJEB1guGxobeHvaQzPAK-yXyDRj23RtXItmunm9aedMDHj5pF3EiqASqVo2VmTyI04y85ZaUj_mFKjXYqlurpj9VbSnvn1mm8h0YSSCfU8qCQXr8GhmwOXyymofSXG0tZsKn4DnqG&amp;sig=Cg0ArKJSzFrLH4KIWtGDEAE&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;urlfix=1&amp;adurl=https://www.rema.no/kampanjevarer/\" target=\"_blank\" style=\"display: block; height: 1000px; left: calc(50% - 960px); position: absolute; top: 0px; width: 1920px;\">",
+          "target": [
+            "a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"no\" data-sitekey=\"dalane\" data-paywall=\"false\" data-pagemodel=\"rodimus\" data-isfrontpage=\"true\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.dalane-tidende\\.no\\/toppbanner_0",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.dalane-tidende.no/gfx/small-positive.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.dalane-tidende.no/tilbud\" publication=\"www.dalane-tidende.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"am-bazaar-ad--label\" id=\"toppbanner-1-label\">Annonse</span>",
+          "target": [
+            "#toppbanner-1-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

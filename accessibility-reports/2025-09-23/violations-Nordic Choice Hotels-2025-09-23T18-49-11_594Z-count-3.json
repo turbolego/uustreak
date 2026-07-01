@@ -1,0 +1,108 @@
+{
+  "project": "Nordic Choice Hotels",
+  "timestamp": "2025-09-23T18:49:11.594Z",
+  "url": "https://www.strawberry.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<a href=\"/hotell/?resetDestination=true\" role=\"listitem\" class=\"css-11v8dt8\">Hotell</a>",
+          "target": [
+            ".css-11v8dt8[role=\"listitem\"][href=\"/hotell/?resetDestination=true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listitem is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/restaurant/\" role=\"listitem\" class=\"css-11v8dt8\">Restaurant</a>",
+          "target": [
+            ".css-11v8dt8[href$=\"restaurant/\"][role=\"listitem\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listitem is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/spa/\" role=\"listitem\" class=\"css-11v8dt8\">Spa</a>",
+          "target": [
+            ".css-11v8dt8[href$=\"spa/\"][role=\"listitem\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listitem is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/eventer/\" role=\"listitem\" class=\"css-11v8dt8\">Event</a>",
+          "target": [
+            ".css-11v8dt8[href$=\"eventer/\"][role=\"listitem\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listitem is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/tilbud/\" role=\"listitem\" class=\"css-11v8dt8\">Tilbud</a>",
+          "target": [
+            ".css-11v8dt8[href$=\"tilbud/\"][role=\"listitem\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listitem is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/konferanser-moter/\" role=\"listitem\" class=\"css-11v8dt8\">Konferanse</a>",
+          "target": [
+            ".css-11v8dt8[href$=\"konferanser-moter/\"][role=\"listitem\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listitem is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"css-15c13yl\">",
+          "target": [
+            ".css-m44j3j > .css-15c13yl"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ul><li><a aria-label=\"Åpne søkeruten\" href=\"#destinaton-search\" tabindex=\"0\" class=\"css-h6ga9v\">Åpne søkeruten</a></li><li><a aria-label=\"Åpne hovedmenyen\" href=\"#primary-logo\" tabindex=\"0\" class=\"css-1ahte1t\">Åpne hovedmenyen</a></li></ul>",
+          "target": [
+            "body > ul"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

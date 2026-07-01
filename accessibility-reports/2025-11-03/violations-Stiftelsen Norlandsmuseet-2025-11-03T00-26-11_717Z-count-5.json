@@ -1,0 +1,230 @@
+{
+  "project": "Stiftelsen Norlandsmuseet",
+  "timestamp": "2025-11-03T00:26:11.717Z",
+  "url": "https://www.nordlandsmuseet.no/hjem/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button tabindex=\"0\" onclick=\"CookieInformation.declineAllCategories()\" aria-label=\"Avvis alle\" id=\"declineButton\" class=\"coi-banner__decline\" role=\"alert\" aria-atomic=\"true\" style=\"display: flex;\">\n            Avvis alle\n          </button>",
+          "target": [
+            "#declineButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role alert is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "aria-required-children",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-required-children?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div aria-controls=\"language-picker-menu\" aria-expanded=\"false\" aria-label=\"language picker\" class=\"language-picker language-picker-desktop\" id=\"multilingual-language-picker-desktop\" role=\"listbox\" tabindex=\"0\">",
+          "target": [
+            ".header-display-desktop > .header-actions.header-actions--right > .language-picker-desktop[aria-controls=\"language-picker-menu\"][aria-label=\"language picker\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA children role not present: group, option"
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 15,
+      "nodes": [
+        {
+          "html": "<a href=\"/aktuelt/madeinbodo\" class=\"\n          summary-thumbnail-container\n          sqs-gallery-image-container\n          \n        \" data-title=\"MADE IN BODØ er endelig på plass på Bymuseet i Bodø\" data-description=\"\">",
+          "target": [
+            ".summary-thumbnail-container.sqs-gallery-image-container[href$=\"madeinbodo\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/aktuelt/utstillingspning-bodhistorier\" class=\"\n          summary-thumbnail-container\n          sqs-gallery-image-container\n          \n        \" data-title=\"Utstillingsåpning: Bodøhistorier\" data-description=\"\" tabindex=\"-1\">",
+          "target": [
+            "#yui_3_17_2_1_1762129562353_442 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/aktuelt/fra-id-i-19...\" class=\"\n          summary-t...\" data-title=\"Fra idé i 1992 til å...\" data-description=\"\" tabindex=\"-1\">",
+          "target": [
+            "#yui_3_17_2_1_1762129562353_444 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/aktuelt/restaurant-simen-vatne-til-rnes-handelssted\" class=\"\n          summary-thumbnail-container\n          sqs-gallery-image-container\n          \n        \" data-title=\"Restaurant Simen Vatne til Ørnes handelssted\" data-description=\"\" tabindex=\"-1\">",
+          "target": [
+            "#yui_3_17_2_1_1762129562353_446 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/aktuelt/bodo-laget-det\" class=\"\n          summary-thumbnail-container\n          sqs-gallery-image-container\n          \n        \" data-title=\"Bodø laget det – har du tatt vare på det?&nbsp;\" data-description=\"\" tabindex=\"-1\">",
+          "target": [
+            ".summary-thumbnail-container.sqs-gallery-image-container[href$=\"bodo-laget-det\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/aktuelt/utstillingspning-first-strike-city-av-dan-mariner\" class=\"\n          summary-thumbnail-container\n          sqs-gallery-image-container\n          \n        \" data-title=\"Utstillingsåpning: First Strike City av Dan Mariner\" data-description=\"\" tabindex=\"-1\">",
+          "target": [
+            "#yui_3_17_2_1_1762129562353_450 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/aktuelt/sommerprogrammet-p-hamsunsenteret-er-klart\" class=\"\n          summary-thumbnail-container\n          sqs-gallery-image-container\n          \n        \" data-title=\"Sommerprogrammet på Hamsunsenteret er klart.\" data-description=\"\" tabindex=\"-1\">",
+          "target": [
+            "#yui_3_17_2_1_1762129562353_452 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/aktuelt/spokelseskvelder-paa-lop\" class=\"\n          summary-thumbnail-container\n          sqs-gallery-image-container\n          \n        \" data-title=\"Spøkelseskveldene er tilbake på Løp Gård\" data-description=\"\" tabindex=\"-1\">",
+          "target": [
+            "#yui_3_17_2_1_1762129562353_454 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/aktuelt/jektefartsmuseet-sommerprogram\" class=\"\n          summary-thumbnail-container\n          sqs-gallery-image-container\n          \n        \" data-title=\"Sommerprogram på Jektefartsmuseet fra 1. juni\" data-description=\"\" tabindex=\"-1\">",
+          "target": [
+            "#yui_3_17_2_1_1762129562353_456 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/aktuelt/leiv-kreyberg\" class=\"\n          summary-thumbnail-container\n          sqs-gallery-image-container\n          \n        \" data-title=\"Leiv Kreyberg. En offiser og en gentleman fredsvåren 1945\" data-description=\"\" tabindex=\"-1\">",
+          "target": [
+            ".summary-thumbnail-container.sqs-gallery-image-container[href$=\"leiv-kreyberg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/aktuelt/kjerringy-handelssted-pner-19-mai\" class=\"\n          summary-thumbnail-container\n          sqs-gallery-image-container\n          \n        \" data-title=\"Sommerprogram på Kjerringøy handelssted\" data-description=\"\" tabindex=\"-1\">",
+          "target": [
+            "#yui_3_17_2_1_1762129562353_460 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/aktuelt/made-in-bod...\" class=\"\n          summary-t...\" data-title=\"Made in Bodø - en re...\" data-description=\"\" tabindex=\"-1\">",
+          "target": [
+            "#yui_3_17_2_1_1762129562353_462 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/aktuelt/ntw\" class=\"\n          summary-thumbnail-container\n          sqs-gallery-image-container\n          \n        \" data-title=\"Nordlandsmuseet på Norwegian Travel Workshop\" data-description=\"\" tabindex=\"-1\">",
+          "target": [
+            ".summary-thumbnail-container.sqs-gallery-image-container[href$=\"ntw\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/aktuelt/ednama-sjatto-reiser-til-slovakia\" class=\"\n          summary-thumbnail-container\n          sqs-gallery-image-container\n          \n        \" data-title=\"Ednama Sjatto reiser til Slovakia\" data-description=\"\" tabindex=\"-1\">",
+          "target": [
+            "#yui_3_17_2_1_1762129562353_466 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/aktuelt/siste-pningsdag-for-bdddjobuvvda-musea\" class=\"\n          summary-thumbnail-container\n          sqs-gallery-image-container\n          \n        \" data-title=\"Siste åpningsdag for Bådåddjo/Buvvda Musea\" data-description=\"\" tabindex=\"-1\">",
+          "target": [
+            "#yui_3_17_2_1_1762129562353_468 > .summary-thumbnail-outer-container > .summary-thumbnail-container.sqs-gallery-image-container[data-description=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}

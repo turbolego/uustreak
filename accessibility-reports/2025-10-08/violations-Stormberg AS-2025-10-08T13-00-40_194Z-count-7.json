@@ -1,0 +1,455 @@
+{
+  "project": "Stormberg AS",
+  "timestamp": "2025-10-08T13:00:40.194Z",
+  "url": "https://www.stormberg.com/no",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 22,
+      "nodes": [
+        {
+          "html": "<div>Høstens flotteste nyheter! 🤩 Se produktene&nbsp;<a class=\"a4 a5 am an gv ap\" data-scope-link=\"true\" href=\"/no/kampanje/nyheter\">HER!</a></div>",
+          "target": [
+            ".gt.dr.ds > div > div"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"a4 a5 am an gv ap\" data-scope-link=\"true\" href=\"/no/kampanje/nyheter\">HER!</a>",
+          "target": [
+            ".gv.am[href$=\"nyheter\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"ig bc bd aj ak ac ih ii ij bf ep ik gq im\">INTROPRIS</div>",
+          "target": [
+            "li:nth-child(1) > .i3.i4[aria-label=\"Østisen vattert parkas\"] > .i8.bc.bd > .if.id.y > .gq.ig.ih"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"j7 hr bd\">799,-</span>",
+          "target": [
+            "li:nth-child(1) > .i3.i4[aria-label=\"Østisen vattert parkas\"] > .it.iu.hq > div > .gu > .j7.hr.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"ig bc bd aj ak ac ih ii ij bf ep ik gq im\">LAVPRIS</div>",
+          "target": [
+            "li:nth-child(2) > .i3.i4[aria-label=\"Hemsedal 2-lags ullsett\"] > .i8.bc.bd > .if.id.y > .gq.ig.ih"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"ig bc bd aj ak ac ih ii ij bf ep ik gq im\">INTROPRIS</div>",
+          "target": [
+            "a[aria-label=\"Nordtoppen parkas\"] > .i8.bc.bd > .if.id.y > .gq.ig.ih"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"j7 hr bd\">699,-</span>",
+          "target": [
+            "a[aria-label=\"Nordtoppen parkas\"] > .it.iu.hq > div > .gu > .j7.hr.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"ig bc bd aj ak ac ih ii ij bf ep ik gq im\">INTROPRIS</div>",
+          "target": [
+            "li:nth-child(4) > .i3.i4[aria-label=\"Østisen vattert parkas\"] > .i8.bc.bd > .if.id.y > .gq.ig.ih"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"j7 hr bd\">799,-</span>",
+          "target": [
+            "li:nth-child(4) > .i3.i4[aria-label=\"Østisen vattert parkas\"] > .it.iu.hq > div > .gu > .j7.hr.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"ig bc bd aj ak ac ih ii ij bf ep ik gq im\">LAVPRIS</div>",
+          "target": [
+            "li:nth-child(5) > .i3.i4[aria-label=\"Hemsedal 2-lags ullsett\"] > .i8.bc.bd > .if.id.y > .gq.ig.ih"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"ig bc bd aj ak ac ih ii ij bf ep ik gq im\">LAVPRIS</div>",
+          "target": [
+            "a[aria-label=\"Voss 2-lags ulltrøye\"] > .i8.bc.bd > .if.id.y > .gq.ig.ih"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"ig bc bd aj ak ac ih ii ij bf ep ik gq im\">29%</div>",
+          "target": [
+            "a[aria-label=\"Stormflod regnbukse\"] > .i8.bc.bd > .if.id.y > .gq.ig.ih"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"j7 hr bd\">499,-</span>",
+          "target": [
+            "a[aria-label=\"Stormflod regnbukse\"] > .it.iu.hq > div > .gu > .j7.hr.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"ig bc bd aj ak ac ih ii ij bf ep ik gq im\">INTROPRIS</div>",
+          "target": [
+            "a[aria-label=\"Nordtoppen vinterjakke\"] > .i8.bc.bd > .if.id.y > .gq.ig.ih"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"j7 hr bd\">599,-</span>",
+          "target": [
+            "a[aria-label=\"Nordtoppen vinterjakke\"] > .it.iu.hq > div > .gu > .j7.hr.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"ig bc bd aj ak ac ih ii ij bf ep ik gq im\">38%</div>",
+          "target": [
+            "div:nth-child(9) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"j7 hr bd\">499,-</span>",
+          "target": [
+            "div:nth-child(9) > .i0.bl.bj > .i1.i2 > li:nth-child(3) > .i3.i4.i5 > .it.iu.hq > div > .gu > .j7.hr.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"ig bc bd aj ak ac ih ii ij bf ep ik gq im\">60%</div>",
+          "target": [
+            "div:nth-child(9) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .i8.bc.bd > .if.id.y > .gq.ig.ih"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"j7 hr bd\">999,-</span>",
+          "target": [
+            "div:nth-child(9) > .i0.bl.bj > .i1.i2 > li:nth-child(4) > .i3.i4.i5 > .it.iu.hq > div > .gu > .j7.hr.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"ig bc bd aj ak ac ih ii ij bf ep ik gq im\">INTROPRIS</div>",
+          "target": [
+            "a[aria-label=\"Froland skalljakke herre\"] > .i8.bc.bd > .if.id.y > .gq.ig.ih"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"j7 hr bd\">699,-</span>",
+          "target": [
+            "a[aria-label=\"Froland skalljakke herre\"] > .it.iu.hq > div > .gu > .j7.hr.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button id=\"onetrust-accept-btn-handler\">Godta alle </button>",
+          "target": [
+            "#onetrust-accept-btn-handler"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.56 (foreground color: #ffffff, background color: #0c9d37, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"hs d4 f0\"></h4>",
+          "target": [
+            "div:nth-child(5) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"hs d4 f0\">INFORMASJON</h4>",
+          "target": [
+            "div:nth-child(1) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 11,
+      "nodes": [
+        {
+          "html": "<img width=\"11\" class=\"ar as at au\" src=\"/contentassets/7a69847315af4a2a9490bb7184004777/mediamodifier-design.svg?ref=21C3EEBBD2\">",
+          "target": [
+            "div:nth-child(1) > .aq.am.an > .au.as[width=\"11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img width=\"11\" class=\"ar as at au\" src=\"/contentassets/7a69847315af4a2a9490bb7184004777/mediamodifier-design.svg?ref=21C3EEBBD2\">",
+          "target": [
+            "div:nth-child(2) > .aq.am.an > .au.as[width=\"11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img width=\"11\" class=\"ar as at au\" src=\"/contentassets/7a69847315af4a2a9490bb7184004777/mediamodifier-design.svg?ref=21C3EEBBD2\">",
+          "target": [
+            "div:nth-child(3) > .aq.am.an > .au.as[width=\"11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img width=\"11\" class=\"ar as at au\" src=\"/contentassets/7a69847315af4a2a9490bb7184004777/mediamodifier-design.svg?ref=21C3EEBBD2\">",
+          "target": [
+            "div:nth-child(4) > .aq.am.an > .au.as[width=\"11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/globalassets/2025/forside/stormdager/1400x500_nye-produkter.jpg?ref=473838002C&amp;w=1920&amp;scale=both\" class=\"ar as at au y bv hl hm hn\">",
+          "target": [
+            ".hi > .hn.hm.au"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ar as at au a2 y bv hl hm hn\">",
+          "target": [
+            "a[href$=\"ullfavoritter\"] > .je.jf.jg > .hn.a2.hm"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ar as at au a2 y bv hl hm hn\">",
+          "target": [
+            "a[href$=\"vinterjakker\"] > .je.jf.jg > .hn.a2.hm"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ar as at au a2 y bv hl hm hn\">",
+          "target": [
+            "a[href$=\"prisras-sko\"] > .je.jf.jg > .hn.a2.hm"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ar as at au a2 y bv hl hm hn\">",
+          "target": [
+            "a[href$=\"regntoy\"] > .je.jf.jg > .hn.a2.hm"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ar as at au a2 y bv hl hm hn\">",
+          "target": [
+            ".a6[href$=\"turutstyr\"][data-scope-link=\"true\"] > .je.jf.jg > .hn.a2.hm"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ar as at au a2 y bv hl hm hn\">",
+          "target": [
+            ".a6[href$=\"barn\"][data-scope-link=\"true\"] > .je.jf.jg > .hn.a2.hm"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/kampanje/stormdager\"><div class=\"d8 du hh hi ay hj hk\"><img src=\"/globalassets/2025/forside/stormdager/1400x500_nye-produkter.jpg?ref=473838002C&amp;w=1920&amp;scale=both\" class=\"ar as at au y bv hl hm hn\"></div></a>",
+          "target": [
+            "a[href$=\"stormdager\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/kampanje/ullfavoritter\"><div class=\"d8 du hh je ay jf jg\"><img class=\"ar as at au a2 y bv hl hm hn\"></div></a>",
+          "target": [
+            "a[href$=\"ullfavoritter\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/vinterjakker\"><div class=\"d8 du hh je ay jf jg\"><img class=\"ar as at au a2 y bv hl hm hn\"></div></a>",
+          "target": [
+            "a[href$=\"vinterjakker\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/kampanje/prisras-sko\"><div class=\"d8 du hh je ay jf jg\"><img class=\"ar as at au a2 y bv hl hm hn\"></div></a>",
+          "target": [
+            "a[href$=\"prisras-sko\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/kampanje/regntoy\"><div class=\"d8 du hh je ay jf jg\"><img class=\"ar as at au a2 y bv hl hm hn\"></div></a>",
+          "target": [
+            "a[href$=\"regntoy\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/kampanje/turutstyr\"><div class=\"d8 du hh je ay jf jg\"><img class=\"ar as at au a2 y bv hl hm hn\"></div></a>",
+          "target": [
+            ".hg.bv.ay > .a6[href$=\"turutstyr\"][data-scope-link=\"true\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/salg/barn\"><div class=\"d8 du hh je ay jf jg\"><img class=\"ar as at au a2 y bv hl hm hn\"></div></a>",
+          "target": [
+            ".a6[href$=\"barn\"][data-scope-link=\"true\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<div class=\"x ab b ac ae af ag ah ai aj ak al\">",
+          "target": [
+            ".ab"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"gp gq\"><div><div class=\"d8 gr gs\"><div class=\"bj bk bl gt d0 dr ds d2 d3 d4 bh f0 b gu ah\"><div><div>Høstens flotteste nyheter! 🤩 Se produktene&nbsp;<a class=\"a4 a5 am an gv ap\" data-scope-link=\"true\" href=\"/no/kampanje/nyheter\">HER!</a></div></div></div></div></div></div>",
+          "target": [
+            ".gp"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"h0 b d8 bv h1 at bz\">",
+          "target": [
+            ".h0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

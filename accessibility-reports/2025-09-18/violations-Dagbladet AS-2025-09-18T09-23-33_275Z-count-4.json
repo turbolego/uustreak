@@ -1,0 +1,111 @@
+{
+  "project": "Dagbladet AS",
+  "timestamp": "2025-09-18T09:23:33.275Z",
+  "url": "https://www.dagbladet.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/8578\\/dagbladet\\.no\\/forside_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"ec__sc-168ntql-0 jkuUMO\">",
+          "target": [
+            ".jkuUMO"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a id=\"aw0\" target=\"_blank\" href=\"https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjstGfgcxiJLGwVXuuiEtiODyCggVCTshOhrHJLl9TUDyWF1Ybsf-O6Ddb0oyvqoJJVbFhxkybUxJEYVWJMCOk5mbcN0tBqkPyGKWZS5OG_Gi2xgdHzNdCnjnkOnZ6F-Hgak20y68CqIZLfaTaoGOlE_ZeMtXPUvogKUQAl96JvmFGwwJy83SUU62Tsozphd2RhZrobfWpqBt3dkZYcV9EsLsU5oc7F5YDD47oggcetUUZGi61WTgOg4jWG_CDq3eQ6txbFLrzKIqZxh4eoU70DQCdTofxgcSe4XSTFBf8TryDSaFuV9KruuvPvKyoXlhRkqjBMTH5HNHHeC5HrnkjPSoZDH0DdPBPp0Qxl6ouHCcNYC8bCRdwgS7ntEwjy38DU8uoaw1ShwmyLsVlgCvY42DYhvR0Q&amp;sai=AMfl-YQ4qgmd8wYrBFOdzTdra856bZu3ydsthXoX6I2oOq5WPObcZsmBWkB9P_5j1OoPF5ZPlkSCY9hpBpMgdz__TPSGQxlRAobIEgA-d-KWtn1fAkBgO1pg-XvsABJMSMn2okumCKd4KF6MbWCsrsw9xPkQw5IiCcuNbpoc6x1zgCXgsd_KwHJYfFkTSMzcOP0OTiz3EYedWsMb0BiH2-pJAv7gQWMNTEfYdQ9gyS9tLiRz5uQBBVkHxIzmtAzGQZDLZVE4xDD1Nzc8SQ2jPp2MLuMRBOJY10mM&amp;sig=Cg0ArKJSzIkbaXVXOASa&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;adurl=https://www.plussmobil.no/mobilt-bredband%3Futm_source%3Dhouse%26utm_medium%3Dpaid%26utm_campaign%3Dmbbvsommer%26utm_content%3D980x300\" onfocus=\"ss('aw0')\" onmousedown=\"st('aw0')\" onmouseover=\"ss('aw0')\" onclick=\"ha('aw0')\">",
+          "target": [
+            "#google_ads_iframe_\\/8578\\/dagbladet\\.no\\/forside_0",
+            "#aw0"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<p>\n        Dagbladet\n        er en del av Aller Media. Aller Media er ansvarlig for dine data på denne nettsiden.\n        &nbsp;<a href=\"https://personvern.aller.no/personvern\">Les mer</a>\n      </p>",
+          "target": [
+            "#am-branding > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

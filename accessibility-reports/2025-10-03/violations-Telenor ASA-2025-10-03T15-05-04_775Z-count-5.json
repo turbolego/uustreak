@@ -1,0 +1,174 @@
+{
+  "project": "Telenor ASA",
+  "timestamp": "2025-10-03T15:05:04.775Z",
+  "url": "https://www.telenor.no/privat/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "description": "Ensure ARIA attributes are not prohibited for an element's role",
+      "help": "Elements must only use permitted ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"image main image\" style=\"background-image:url('/binaries/privat/sikkerhetspuls_andrekvartal_resized.png');\" aria-label=\"Sikkerhetspulsen\" data-v-d6d82f6d=\"\" data-v-855b35d5=\"\"></div>",
+          "target": [
+            ".main"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<p class=\"tn-paragraph text-l responsive paragraph\" data-v-84c92d1d=\"\" data-v-48c8b41b=\"\"><!--[-->Administrer dine abonnement og sikkerhetstjenester.<!--]--></p>",
+          "target": [
+            ".list-icons-icon.margin-bottom-xl[custom-type=\"div\"]:nth-child(1) > .content[data-v-84c92d1d=\"\"] > .text-l.paragraph.tn-paragraph"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #677398, background color: #f9f9fb, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p class=\"tn-paragraph text-l responsive paragraph\" data-v-84c92d1d=\"\" data-v-48c8b41b=\"\"><!--[-->Automatisk sikkerhetskopi og trygg lagring av bildene dine.<!--]--></p>",
+          "target": [
+            "div[to=\"/privat/mobil/app/min-sky/\"] > .content[data-v-84c92d1d=\"\"] > .text-l.paragraph.tn-paragraph"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #677398, background color: #f9f9fb, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h6 class=\"tn-heading title-xs bold\" data-v-295ed7f3=\"\" data-v-ee302971=\"\"><!--[-->Hjelp<!--]--></h6>",
+          "target": [
+            ".dropdown-category.footer[data-v-fc78c99a=\"\"]:nth-child(1) > .dropdown-link[data-v-295ed7f3=\"\"] > .dropdown-header.hidden-mobile[data-v-295ed7f3=\"\"] > h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4>Vil du godta alle informasjonskapsler, avslå eller endre innstillinger?</h4>",
+          "target": [
+            "h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<div class=\"privacy_prompt_content_freetext\" id=\"privacy_prompt_text\">",
+          "target": [
+            "#privacy_prompt_text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"privacy_prompt_content_h4\" id=\"privacy_prompt_text2\" aria-describedby=\"privacy_prompt_text2\">                    <h4>Vil du godta alle informasjonskapsler, avslå eller endre innstillinger?</h4>                </div>",
+          "target": [
+            "#privacy_prompt_text2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"two-buttons\">",
+          "target": [
+            "#freetext-top > .two-buttons"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"showConsentPreferences\">",
+          "target": [
+            ".showConsentPreferences"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"freetext bottom-info\" id=\"privacy_prompt_bottom\">",
+          "target": [
+            "#privacy_prompt_bottom"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "role-img-alt",
+      "impact": "serious",
+      "description": "Ensure [role=\"img\"] elements have alternative text",
+      "help": "[role=\"img\"] elements must have an alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/role-img-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div role=\"img\" class=\"hero-banner\" data-v-e508444f=\"\">",
+          "target": [
+            ".hero-banner"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}

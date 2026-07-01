@@ -1,0 +1,342 @@
+{
+  "project": "Panorama Eiendomsmegling AS",
+  "timestamp": "2025-10-20T00:29:38.086Z",
+  "url": "https://privatmegleren.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a class=\"sc-1fat5qp-0 ceHPRo large-logo\" href=\"https://privatmegleren.no\">",
+          "target": [
+            ".large-logo"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"\">",
+          "target": [
+            "a[href=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 40,
+      "nodes": [
+        {
+          "html": "<a href=\"https://privatmegleren.no/kjope-bolig?a=false&amp;c=null&amp;l=%5B%5D&amp;mb=0&amp;mv=false&amp;p=1&amp;pfv=1000000&amp;ptv=25000000&amp;q=&amp;s=false&amp;sfv=30&amp;show_market_link=false&amp;stv=400\">Kjøpe</a>",
+          "target": [
+            "li[data-submenu=\"0\"] > div > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/verdivurdering-selge-eiendom\">Selge</a>",
+          "target": [
+            "a[href=\"/verdivurdering-selge-eiendom\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/nybygg\">Nybygg</a>",
+          "target": [
+            "li[data-submenu=\"2\"] > div > a[href$=\"nybygg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li data-submenu=\"3\"><div style=\"min-width: 280px;\"><a href=\"https://privatmegleren.no/naering\">Næring</a></div><ul class=\"sc-1ckyjhj-4 iBauKD\"></ul></li>",
+          "target": [
+            "li[data-submenu=\"3\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li data-submenu=\"4\"><div style=\"min-width: 280px;\"><a href=\"https://privatmegleren.no/selge-fritidseiendom-hytte\">Fritidseiendom</a></div><ul class=\"sc-1ckyjhj-4 iBauKD\"></ul></li>",
+          "target": [
+            "li[data-submenu=\"4\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://privatmegleren.no/finansiering-boliglan\">Finansiering</a>",
+          "target": [
+            "li[data-submenu=\"5\"] > div > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/kontorer?alle\">Kontor og megler</a>",
+          "target": [
+            "a[href=\"/kontorer?alle\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li data-submenu=\"7\"><div style=\"min-width: 280px;\"><a href=\"https://privatmegleren.no/kampanje/presisjon\">Digital boligannonsering</a></div><ul class=\"sc-1ckyjhj-4 iBauKD\"></ul></li>",
+          "target": [
+            "li[data-submenu=\"7\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li data-submenu=\"8\"><div style=\"min-width: 280px;\"><a href=\"https://privatmegleren.no/styling-og-klargjoring\">Styling og klargjøring</a></div><ul class=\"sc-1ckyjhj-4 iBauKD\"></ul></li>",
+          "target": [
+            "li[data-submenu=\"8\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li data-submenu=\"9\"><div style=\"min-width: 280px;\"><a href=\"https://privatmegleren.no/kjope-eiendom\">Kjøpsmegling</a></div><ul class=\"sc-1ckyjhj-4 iBauKD\"></ul></li>",
+          "target": [
+            "li[data-submenu=\"9\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li data-submenu=\"10\"><div style=\"min-width: 280px;\"><a href=\"https://privatmegleren.no/stillinger\">Stillinger</a></div><ul class=\"sc-1ckyjhj-4 iBauKD\"></ul></li>",
+          "target": [
+            "li[data-submenu=\"10\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li data-submenu=\"11\"><div style=\"min-width: 280px;\"><a href=\"https://privatmegleren.no/om-oss\">Om oss</a></div><ul class=\"sc-1ckyjhj-4 iBauKD\"></ul></li>",
+          "target": [
+            "li[data-submenu=\"11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-1ckyjhj-3 jxEHZB\"><a href=\"https://privatmegleren.no/personvern\">Personvern</a></div>",
+          "target": [
+            ".sc-1ckyjhj-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-wygeeu-7 dGgLeu\">",
+          "target": [
+            ".sc-wygeeu-7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"sc-777xon-0 dNJbOE\" style=\"opacity: 0;\">",
+          "target": [
+            "section"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img alt=\"bilde av tjeneste\" src=\"https://reeltimeprod-ahebbuatfggte7f2.z01.azurefd.net/privatmegleren/DTS_Forsidebilde.jpg\" class=\"sc-1qf795a-3 lXPXD desktop no-mobile-image\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(1) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-1qf795a-4 fLckZ\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(1) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-4.fLckZ"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img alt=\"bilde av tjeneste\" src=\"https://reeltimeprod-ahebbuatfggte7f2.z01.azurefd.net/privatmegleren/Bilde-forsiden-PrivatMegleren.no-883-x-530-Kjøkken.jpg\" class=\"sc-1qf795a-3 lXPXD desktop no-mobile-image\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(2) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-1qf795a-4 fLckZ align-right\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(2) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-4.fLckZ"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img alt=\"bilde av tjeneste\" src=\"https://reeltimeprod-ahebbuatfggte7f2.z01.azurefd.net/privatmegleren/Forsidebilde_Forstegangsselgeren.jpg\" class=\"sc-1qf795a-3 lXPXD desktop no-mobile-image\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(3) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-1qf795a-4 fLckZ\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(3) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-4.fLckZ"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img alt=\"bilde av tjeneste\" src=\"https://reeltimeprod-ahebbuatfggte7f2.z01.azurefd.net/privatmegleren/Hva-er-din-eiendom-verdt.jpg\" class=\"sc-1qf795a-3 lXPXD desktop no-mobile-image\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(4) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-1qf795a-4 fLckZ align-right\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(4) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-4.fLckZ"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img alt=\"bilde av tjeneste\" src=\"https://cdn.reeltime.no/pm_assets/kampanjer/leveranse/boligreise-new.jpg\" class=\"sc-1qf795a-3 lXPXD desktop no-mobile-image\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(5) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-1qf795a-4 fLckZ\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(5) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-4.fLckZ"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img alt=\"bilde av tjeneste\" src=\"https://cdn.reeltime.no/pm_assets/forside/Kvadrat.jpg\" class=\"sc-1qf795a-3 lXPXD desktop no-mobile-image\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(6) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-1qf795a-4 fLckZ align-right\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(6) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-4.fLckZ"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img alt=\"bilde av tjeneste\" src=\"https://reeltimeprod-ahebbuatfggte7f2.z01.azurefd.net/privatmegleren/Verdi.jpg\" class=\"sc-1qf795a-3 lXPXD desktop no-mobile-image\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(7) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-1qf795a-4 fLckZ\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(7) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-4.fLckZ"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img alt=\"bilde av tjeneste\" src=\"https://reeltimeprod-ahebbuatfggte7f2.z01.azurefd.net/privatmegleren/Book-et-digitalt-mote.jpg\" class=\"sc-1qf795a-3 lXPXD desktop no-mobile-image\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(8) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-1qf795a-4 fLckZ align-right\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(8) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-4.fLckZ"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img alt=\"bilde av tjeneste\" src=\"https://cdn.reeltime.no/pm_assets/public/images/forside_boligbytte.jpg\" class=\"sc-1qf795a-3 lXPXD desktop no-mobile-image\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(9) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-1qf795a-4 fLckZ\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(9) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-4.fLckZ"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img alt=\"bilde av tjeneste\" src=\"https://cdn.reeltime.no/pm_assets/forside/kjop.jpg\" class=\"sc-1qf795a-3 lXPXD desktop no-mobile-image\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(10) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-1qf795a-4 fLckZ align-right\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(10) > .sc-1qf795a-1.hUXHdr > .align-right.sc-1qf795a-4.fLckZ"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img alt=\"bilde av tjeneste\" src=\"https://reeltimeprod-ahebbuatfggte7f2.z01.azurefd.net/privatmegleren/registrer-ditt-eiendomssok.01.jpg\" class=\"sc-1qf795a-3 lXPXD desktop no-mobile-image\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(11) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-2.kbATZF > .no-mobile-image.desktop.sc-1qf795a-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-1qf795a-4 fLckZ\">",
+          "target": [
+            ".sc-1qf795a-0.klRNDq:nth-child(11) > .sc-1qf795a-1.hUXHdr > .sc-1qf795a-4.fLckZ"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-ta09ry-1 lcSrws desktop\">",
+          "target": [
+            ".sc-ta09ry-1.lcSrws.desktop"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-ta09ry-1 lcSrws w290\">",
+          "target": [
+            ".w290"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"sc-ta09ry-3 kdPovu policy-link\" href=\"https://privatmegleren.no/personvern\">Personvern og cookies</a>",
+          "target": [
+            ".policy-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

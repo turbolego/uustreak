@@ -1,0 +1,136 @@
+{
+  "project": "Norwegian Air Shuttle ASA",
+  "timestamp": "2025-10-05T00:33:47.233Z",
+  "url": "https://www.norwegian.com/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 13,
+      "nodes": [
+        {
+          "html": "<img class=\"select-language__flag lazyloaded\" data-src=\"/Images/countries-flags/dk.svg\" alt=\"Danmark (Dansk)\" src=\"/Images/countries-flags/dk.svg\">",
+          "target": [
+            "img[data-src$=\"dk.svg\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"select-language__flag lazyloaded\" data-src=\"/Images/countries-flags/de.svg\" alt=\"Deutschland (Deutsch)\" src=\"/Images/countries-flags/de.svg\">",
+          "target": [
+            "img[data-src$=\"de.svg\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"select-language__flag lazyloaded\" data-src=\"/Images/countries-flags/es.svg\" alt=\"España (Español)\" src=\"/Images/countries-flags/es.svg\">",
+          "target": [
+            "img[data-src$=\"es.svg\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"select-language__flag lazyloaded\" data-src=\"/Images/countries-flags/fi.svg\" alt=\"Finland (Suomi)\" src=\"/Images/countries-flags/fi.svg\">",
+          "target": [
+            "img[data-src$=\"fi.svg\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"select-language__flag lazyloaded\" data-src=\"/Images/countries-flags/fr.svg\" alt=\"France (Français)\" src=\"/Images/countries-flags/fr.svg\">",
+          "target": [
+            "img[data-src$=\"fr.svg\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"select-language__flag lazyloaded\" data-src=\"/Images/countries-flags/it.svg\" alt=\"Italia (English)\" src=\"/Images/countries-flags/it.svg\">",
+          "target": [
+            "img[data-src$=\"it.svg\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"select-language__flag lazyloaded\" data-src=\"/Images/countries-flags/nl.svg\" alt=\"Nederland (English)\" src=\"/Images/countries-flags/nl.svg\">",
+          "target": [
+            "img[data-src$=\"nl.svg\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"select-language__flag lazyloaded\" data-src=\"/Images/countries-flags/no.svg\" alt=\"Norge (Norsk)\" src=\"/Images/countries-flags/no.svg\">",
+          "target": [
+            "img[data-src$=\"no.svg\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"select-language__flag lazyloaded\" data-src=\"/Images/countries-flags/en.svg\" alt=\"Other countries (English)\" src=\"/Images/countries-flags/en.svg\">",
+          "target": [
+            "img[data-src$=\"en.svg\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"select-language__flag lazyloaded\" data-src=\"/Images/countries-flags/pl.svg\" alt=\"Polska (Polski)\" src=\"/Images/countries-flags/pl.svg\">",
+          "target": [
+            "img[data-src$=\"pl.svg\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"select-language__flag lazyloaded\" data-src=\"/Images/countries-flags/se.svg\" alt=\"Sverige (Svenska)\" src=\"/Images/countries-flags/se.svg\">",
+          "target": [
+            "img[data-src$=\"se.svg\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"select-language__flag lazyloaded\" data-src=\"/Images/countries-flags/uk.svg\" alt=\"UK (English)\" src=\"/Images/countries-flags/uk.svg\">",
+          "target": [
+            "img[data-src$=\"uk.svg\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"select-language__flag lazyloaded\" data-src=\"/Images/countries-flags/us.svg\" alt=\"US (English)\" src=\"/Images/countries-flags/us.svg\">",
+          "target": [
+            "img[data-src$=\"us.svg\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"en-GB\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    }
+  ]
+}

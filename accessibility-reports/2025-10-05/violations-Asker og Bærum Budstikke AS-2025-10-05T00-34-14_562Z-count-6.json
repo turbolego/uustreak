@@ -1,0 +1,338 @@
+{
+  "project": "Asker og Bærum Budstikke AS",
+  "timestamp": "2025-10-05T00:34:14.562Z",
+  "url": "https://www.budstikka.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-OSFABL7WF3K78G2V28CQ\" hype_scene_index=\"0\" role=\"button\" style=\"pointer-events: auto; position: absolute; border-style: none; display: inline; cursor: pointer; border-width: 0px; border-color: rgb(216, 221, 228); overflow: visible; z-index: 112; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 980px; height: 300px; transform-origin: 50% 50%; transform: translateX(0px) translateY(0px) rotateY(0deg);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-OSFABL7WF3K78G2V28CQ"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<iframe frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" topmargin=\"0\" leftmargin=\"0\" allowtransparency=\"true\" width=\"980\" height=\"300\" id=\"adn-sup-0.5347806214742715\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe data-creative-load-listener=\"\" id=\"200_281_express_html_inpage_0.if\" src=\"https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.html?ev=01_262\" width=\"980\" height=\"300\" frameborder=\"0\" scrolling=\"no\" allowfullscreen=\"true\" style=\"width: 980px; height: 300px;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-102af2fa-ba6d-41ef-87d1-42ca6212b813\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"11\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.budstikka.no/gfx/small-positive.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.budstikka.no/tilbud\" publication=\"www.budstikka.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layout=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_toppbanner am-bazaar-ad--labeled\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.budstikka.no/toppbanner_1\" pageview-id=\"f8bc12a9-48be-43a6-969f-3c0015376756\" has-bid=\"\" render-count=\"1\" render-time=\"1759624435491\" advertiser-id=\"703459736\" order-id=\"690956216\" lineitem-id=\"1018520456\" creative-id=\"138442426269\" ad-size=\"980,300\" slot-targeting=\"keyword=forsiden,autolayout,dominans,forsiden_1,format=toppbanner,position=1,adnami_format=skin,lwrefresh=false,hb_crid=,hb_adomain=,hb_format=banner,hb_source=,hb_size=980x300,hb_pb=11.97,hb_adid=728d50ab7f3ae218,hb_bidder=adnuntius\" hb_pb=\"11.97\" prebid-price-group=\"15\" lineitem-type=\"AD_EXCHANGE\" itemscope=\"\" itemtype=\"http://schema.org/WPAdBlock\" is-empty=\"false\" is-prebid=\"\" prebid-bidder=\"adnuntius\" prebid-cpm=\"12.0001\" prebid-creativeid=\"1klm68xmz3rqmsjm\" prebid-creativeid-count=\"1\" is-viewable=\"true\" style=\"min-height: 0px;\">",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "role-img-alt",
+      "impact": "serious",
+      "description": "Ensure [role=\"img\"] elements have alternative text",
+      "help": "[role=\"img\"] elements must have an alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/role-img-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 15,
+      "nodes": [
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-2VGD9YNFGHUA140RKWPY\" hype_scene_index=\"0\" role=\"img\" style=\"pointer-events: auto; position: absolute; background-image: url(&quot;https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.hyperesources/slide03_980x300.png&quot;); background-repeat: no-repeat; overflow: visible; background-size: 100% 100%; display: inline; z-index: 102; opacity: 1; width: 980px; height: 300px; transform-origin: 50% 50%; transform: translateX(0px) translateY(0px) rotateY(0deg);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-2VGD9YNFGHUA140RKWPY"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-0PQXR4V1ZWVHM60Y9TFK\" hype_scene_index=\"0\" role=\"img\" style=\"pointer-events: auto; position: absolute; background-image: url(&quot;https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.hyperesources/nummerplade_5_980x300.png&quot;); background-repeat: no-repeat; overflow: visible; background-size: 100% 100%; display: inline; z-index: 10; opacity: 1; width: 980px; height: 300px; transform-origin: 50% 50%; transform: translateX(0px) translateY(0px) rotateY(0deg);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-0PQXR4V1ZWVHM60Y9TFK"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-EDYH0W1UAYSX4DGENDSC\" hype_scene_index=\"0\" role=\"img\" style=\"pointer-events: auto; position: absolute; background-image: url(&quot;https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.hyperesources/nummerplade_4_980x300.png&quot;); background-repeat: no-repeat; overflow: visible; background-size: 100% 100%; display: inline; z-index: 9; opacity: 1; width: 980px; height: 300px; transform-origin: 50% 50%; transform: translateX(0px) translateY(0px) rotateY(0deg);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-EDYH0W1UAYSX4DGENDSC"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-DXC3H0SUV351K31EUEG2\" hype_scene_index=\"0\" role=\"img\" style=\"pointer-events: auto; position: absolute; background-image: url(&quot;https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.hyperesources/nummerplade_3_980x300.png&quot;); background-repeat: no-repeat; overflow: visible; background-size: 100% 100%; display: inline; z-index: 8; opacity: 1; width: 980px; height: 300px; transform-origin: 50% 50%; transform: translateX(0px) translateY(0px) rotateY(0deg);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-DXC3H0SUV351K31EUEG2"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-2AQ6J76FRRYROGQ9L5X0\" hype_scene_index=\"0\" role=\"img\" style=\"pointer-events: auto; position: absolute; background-image: url(&quot;https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.hyperesources/nummerplade_2_980x300.png&quot;); background-repeat: no-repeat; overflow: visible; background-size: 100% 100%; display: inline; z-index: 7; opacity: 1; width: 980px; height: 300px; transform-origin: 50% 50%; transform: translateX(0px) translateY(0px) rotateY(0deg);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-2AQ6J76FRRYROGQ9L5X0"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-E3FCLP8RB13DQTV1ME04\" hype_scene_index=\"0\" role=\"img\" style=\"pointer-events: auto; position: absolute; background-image: url(&quot;https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.hyperesources/nummerplade_1_980x300.png&quot;); background-repeat: no-repeat; overflow: visible; background-size: 100% 100%; display: inline; z-index: 6; opacity: 1; width: 980px; height: 300px; transform-origin: 50% 50%; transform: translateX(0px) translateY(0px) rotateY(0deg);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-E3FCLP8RB13DQTV1ME04"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-GZ3O871VG5IY8CHF6RAT\" hype_scene_index=\"0\" role=\"img\" style=\"pointer-events: auto; position: absolute; background-image: url(&quot;https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.hyperesources/nummerplade_B_980x300.png&quot;); background-repeat: no-repeat; overflow: visible; background-size: 100% 100%; display: inline; z-index: 5; opacity: 1; width: 980px; height: 300px; transform-origin: 50% 50%; transform: translateX(0px) translateY(0px) rotateY(0deg);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-GZ3O871VG5IY8CHF6RAT"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-8O54T3JMYWVONYHXKDZO\" hype_scene_index=\"0\" role=\"img\" style=\"pointer-events: auto; position: absolute; background-image: url(&quot;https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.hyperesources/nummerplade_A_980x300.png&quot;); background-repeat: no-repeat; overflow: visible; background-size: 100% 100%; display: inline; z-index: 4; opacity: 1; width: 980px; height: 300px; transform-origin: 50% 50%; transform: translateX(0px) translateY(0px) rotateY(0deg);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-8O54T3JMYWVONYHXKDZO"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-8QP4884P4EGL6VBDUTDZ\" hype_scene_index=\"0\" role=\"img\" style=\"pointer-events: auto; position: absolute; background-image: url(&quot;https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.hyperesources/nummerplade_980x300.png&quot;); background-repeat: no-repeat; overflow: visible; background-size: 100% 100%; display: inline; z-index: 3; opacity: 1; width: 980px; height: 300px; transform-origin: 50% 50%; transform: translateX(0px) translateY(0px) rotateY(0deg);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-8QP4884P4EGL6VBDUTDZ"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-IKZSTG9IGTQG9K35LMSR\" hype_scene_index=\"0\" role=\"img\" style=\"pointer-events: auto; position: absolute; background-image: url(&quot;https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.hyperesources/cta_980x300.png&quot;); background-repeat: no-repeat; overflow: visible; background-size: 100% 100%; display: inline; z-index: 11; transform-origin: 50% 50%; transform: translateX(371px) translateY(191px) rotateY(0deg); opacity: 1; width: 139px; height: 40px;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-IKZSTG9IGTQG9K35LMSR"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-HE3HVBYTNBR5FVMPL8FL\" hype_scene_index=\"0\" role=\"img\" style=\"pointer-events: auto; position: absolute; background-image: url(&quot;https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.hyperesources/slide02_980x300.png&quot;); background-repeat: no-repeat; overflow: visible; background-size: 100% 100%; display: inline; z-index: 81; opacity: 1; width: 980px; height: 300px; transform-origin: 50% 50%; transform: translateX(0px) translateY(0px) rotateY(0deg);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-HE3HVBYTNBR5FVMPL8FL"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-RST9NNQ87PD70MMSBDTA\" hype_scene_index=\"0\" role=\"img\" style=\"pointer-events: auto; position: absolute; background-image: url(&quot;https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.hyperesources/logo_980x300.png&quot;); background-repeat: no-repeat; overflow: visible; background-size: 100% 100%; display: inline; z-index: 71; width: 980px; height: 300px; transform-origin: 50% 50%; transform: translateX(0px) translateY(0px) rotateY(0deg);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-RST9NNQ87PD70MMSBDTA"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-JDPX67BJSY6ODO1REQFV\" hype_scene_index=\"0\" role=\"img\" style=\"pointer-events: auto; position: absolute; background-image: url(&quot;https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.hyperesources/baggrund_980x300.jpg&quot;); background-repeat: no-repeat; overflow: visible; background-size: 100% 100%; display: inline; z-index: 70; width: 980px; height: 300px; transform-origin: 50% 50%; transform: translateX(0px) translateY(0px) rotateY(0deg);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-JDPX67BJSY6ODO1REQFV"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-V3EDZB8OLFS8QC4R6QN9\" hype_scene_index=\"0\" role=\"img\" style=\"pointer-events: auto; position: absolute; background-image: url(&quot;https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.hyperesources/splash01_980x300.png&quot;); background-repeat: no-repeat; overflow: visible; background-size: 100% 100%; display: inline; z-index: 79; transform-origin: 50% 50%; transform: translateX(138px) translateY(99px) scaleX(0) scaleY(0); width: 172px; height: 172px;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-V3EDZB8OLFS8QC4R6QN9"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"HYPE_element\" id=\"hype-obj-M50UPDZ1EES1NOSIF3D8\" hype_scene_index=\"0\" role=\"img\" style=\"pointer-events: auto; position: absolute; background-image: url(&quot;https://s0.2mdn.net/sadbundle/16246235163770486784/20250925_Daekkampagne_NO_980x300/980x300.hyperesources/splash02_980x300.png&quot;); background-repeat: no-repeat; overflow: visible; background-size: 100% 100%; display: inline; z-index: 100; transform-origin: 50% 50%; transform: translateX(264px) translateY(121px) scaleX(0) scaleY(0); width: 157px; height: 157px;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "#adn-sup-0\\.5347806214742715",
+            "iframe",
+            "#\\32 00_281_express_html_inpage_0\\.if",
+            "#hype-obj-M50UPDZ1EES1NOSIF3D8"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}

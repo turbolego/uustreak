@@ -1,0 +1,129 @@
+{
+  "project": "Knowit Norge",
+  "timestamp": "2025-10-03T14:56:50.362Z",
+  "url": "https://www.knowit.no/#",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<button tabindex=\"0\" onclick=\"CookieInformation.declineAllCategories()\" aria-label=\"Avvis alle\" id=\"declineButton\" class=\"coi-banner__decline\" role=\"alert\" aria-atomic=\"true\" style=\"display: flex;\">Avvis alle</button>",
+          "target": [
+            "#declineButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role alert is not allowed for given element"
+        },
+        {
+          "html": "<article role=\"group\" class=\"chakra-linkbox css-2jgdd6\">",
+          "target": [
+            ".css-8atqhb > .css-2jgdd6"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<article role=\"group\" class=\"chakra-linkbox css-2jgdd6\">",
+          "target": [
+            ".css-1gwne1u > .css-2jgdd6:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<article role=\"group\" class=\"chakra-linkbox css-2jgdd6\">",
+          "target": [
+            ".css-2jgdd6:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<article role=\"group\" class=\"chakra-linkbox css-2jgdd6\">",
+          "target": [
+            ".css-1qfc5p0 > .css-2jgdd6"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<article role=\"group\" class=\"chakra-linkbox css-1ugq6eo\">",
+          "target": [
+            ".slide-current > .css-1herucy > .css-1l6sxpd > .css-1ugq6eo"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"chakra-link css-1vf93pm\" href=\"#main-content\">Gå til hovedinnhold</a>",
+          "target": [
+            ".css-1vf93pm"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

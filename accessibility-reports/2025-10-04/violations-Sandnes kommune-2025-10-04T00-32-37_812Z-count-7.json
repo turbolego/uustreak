@@ -1,0 +1,358 @@
+{
+  "project": "Sandnes kommune",
+  "timestamp": "2025-10-04T00:32:37.813Z",
+  "url": "https://www.sandnes.kommune.no/#",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<button class=\"H-bg--lighter-green bg--transparent rounded-circle h--fit-content p-1 warning__close-btn\">\n                    <img src=\"/link/956118b86c234dfaaa427a3119b8d389.aspx\">\n                </button>",
+          "target": [
+            ".H-bg--lighter-green"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"btn-template-select\" data-templatetype=\"1\"><span class=\"template-type-small\"></span></button>",
+          "target": [
+            "#portalframe1",
+            "button[data-templatetype=\"1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"btn-template-select\" data-templatetype=\"2\"><span class=\"template-type-medium\"></span></button>",
+          "target": [
+            "#portalframe1",
+            "button[data-templatetype=\"2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe src=\"//prokomresources.prokomcdn.no/plugins/ssp-kalender-app-v2/iframe-app/app.html?url=https://sspkalender.prokom.no&amp;name=sandnes_senior&amp;trans=en#viewtype:redirect-list/templatetype:1/daytype:1/params:{&quot;Categories&quot;:&quot;&quot;,&quot;SearchText&quot;:&quot;&quot;,&quot;DateFrom&quot;:&quot;&quot;,&quot;DateTo&quot;:&quot;&quot;,&quot;Municipalities&quot;:&quot;0&quot;,&quot;Kunde&quot;:&quot;sandnes_senior&quot;,&quot;Id&quot;:&quot;&quot;,&quot;ItemDate&quot;:&quot;&quot;,&quot;WeekDays&quot;:&quot;&quot;,&quot;List&quot;:&quot;compact&quot;,&quot;Count&quot;:&quot;3&quot;,&quot;Distributor&quot;:&quot;&quot;}/?v=5\" alt=\"aktivitetskalender\" width=\"100%\" id=\"iFrameResizer0\" scrolling=\"no\" style=\"overflow: hidden; min-height: 200px; height: 426px;\">",
+          "target": [
+            "#iFrameResizer0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<img src=\"/link/956118b86c234dfaaa427a3119b8d389.aspx\">",
+          "target": [
+            ".H-bg--lighter-green > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/link/5dbce633c9ba44999063807003b6deb6.aspx\" class=\"warning__icon mb-3 mb-lg-0 mr-lg-4\">",
+          "target": [
+            ".warning__icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "impact": "critical",
+      "description": "Ensure every form element has a label",
+      "help": "Form elements must have labels",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<input type=\"text\" class=\"date-from datepicker\">",
+          "target": [
+            "#portalframe1",
+            ".date-from"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<input type=\"text\" class=\"date-to datepicker\">",
+          "target": [
+            "#portalframe1",
+            ".date-to"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 15,
+      "nodes": [
+        {
+          "html": "<a href=\"\" class=\"text-green border-bottom--1 font-size--18 line-height--27 font-weight--600 font-family--inter\"></a>",
+          "target": [
+            ".border-bottom--1.line-height--27[href=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=sandnes&amp;Id=35432_20251013-1200_20251013-1600\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-0 > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=sandnes&amp;Id=34231_20251013-1630_20251013-0000\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-0 > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=sandnes&amp;Id=34202_20251013-1900_20251013-0000\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".list-item.line:nth-child(3) > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=sandnes&amp;Id=34195_20251013-1900_20251013-0000\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".list-item.line:nth-child(4) > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=sandnes&amp;Id=35412_20251014-1700_20251014-2000\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-1 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=sandnes&amp;Id=34223_20251016-1900_20251016-0000\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-2 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=sandnes&amp;Id=35453_20251020-1700_20251020-2200\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-3 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=sandnes&amp;Id=35408_20251021-1600_20251021-1900\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-4 > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=sandnes&amp;Id=35398_20251021-1700_20251021-2000\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-4 > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=sandnes&amp;Id=35404_20251022-1430_20251022-1900\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-5 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=sandnes&amp;Id=34216_20251023-1800_20251023-0000\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-6 > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=sandnes&amp;Id=34209_20251023-1900_20251023-0000\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-6 > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=sandnes&amp;Id=35417_20251028-1700_20251028-2100\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-7 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sspkalender.prokom.no/api/iCalTidspunkt/?Kunde=sandnes&amp;Id=35422_20251029-1700_20251029-2000\" class=\"ical\"></a>",
+          "target": [
+            "#portalframe1",
+            ".single-8 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div class=\"cc-header-container\">\n      <p class=\"cc-title\">Vi bruker informasjonskapsler (cookies)</p>\n      <div class=\"language-dropdown\"><select><option value=\"no\">Norsk</option><option value=\"en\">English</option></select></div>\n    </div>",
+          "target": [
+            ".cc-header-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cc-text\">Våre nettsider benytter informasjonskapsler (cookies) til sikkerhet, innbyggerfunksjonalitet, statistikk og analyse. Les om hvilke cookies vi bruker og hvordan vi administrerer de i erklæringen vår om personvern.</p>",
+          "target": [
+            ".cc-text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "select-name",
+      "impact": "critical",
+      "description": "Ensure select element has an accessible name",
+      "help": "Select element must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/select-name?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<select><option value=\"no\">Norsk</option><option value=\"en\">English</option></select>",
+          "target": [
+            ".language-dropdown > select"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ]
+}

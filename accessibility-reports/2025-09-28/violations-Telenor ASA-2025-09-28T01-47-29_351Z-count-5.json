@@ -1,0 +1,185 @@
+{
+  "project": "Telenor ASA",
+  "timestamp": "2025-09-28T01:47:29.351Z",
+  "url": "https://www.telenor.no/privat/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "description": "Ensure ARIA attributes are not prohibited for an element's role",
+      "help": "Elements must only use permitted ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"image main image\" style=\"background-image:url('/binaries/privat/sikkerhetspuls_andrekvartal_resized.png');\" aria-label=\"Sikkerhetspulsen\" data-v-d6d82f6d=\"\" data-v-855b35d5=\"\"></div>",
+          "target": [
+            ".main"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        }
+      ]
+    },
+    {
+      "id": "aria-valid-attr",
+      "impact": "critical",
+      "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+      "help": "ARIA attributes must conform to valid names",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<button data-v-0f506d5f=\"\" data-v-3ea83238=\"\" class=\"button active segment-start segment\" aria-role=\"button\" data-track-click=\"true\" data-track-label=\"people_For alle\" style=\"--4a57ff3c: 0;\">",
+          "target": [
+            ".segment-start"
+          ],
+          "failureSummary": "Fix any of the following:\n  Invalid ARIA attribute name: aria-role"
+        },
+        {
+          "html": "<button data-v-0f506d5f=\"\" data-v-3ea83238=\"\" class=\"button segment-middle segment\" aria-role=\"button\" data-track-click=\"true\" data-track-label=\"child2_Under 30 år\" style=\"--4a57ff3c: 0;\">",
+          "target": [
+            "button[data-track-label=\"child2_Under 30 år\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Invalid ARIA attribute name: aria-role"
+        },
+        {
+          "html": "<button data-v-0f506d5f=\"\" data-v-3ea83238=\"\" class=\"button segment-middle segment\" aria-role=\"button\" data-track-click=\"true\" data-track-label=\"child1_Under 13 år\" style=\"--4a57ff3c: 0;\">",
+          "target": [
+            "button[data-track-label=\"child1_Under 13 år\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Invalid ARIA attribute name: aria-role"
+        },
+        {
+          "html": "<button data-v-0f506d5f=\"\" data-v-3ea83238=\"\" class=\"button segment-end segment\" aria-role=\"button\" data-track-click=\"true\" data-track-label=\"family_Familierabatt\" style=\"--4a57ff3c: 0;\">",
+          "target": [
+            ".segment-end"
+          ],
+          "failureSummary": "Fix any of the following:\n  Invalid ARIA attribute name: aria-role"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h6 class=\"tn-heading title-xs bold\" data-v-295ed7f3=\"\" data-v-ee302971=\"\"><!--[-->Hjelp<!--]--></h6>",
+          "target": [
+            ".dropdown-category.footer[data-v-fc78c99a=\"\"]:nth-child(1) > .dropdown-link[data-v-295ed7f3=\"\"] > .dropdown-header.hidden-mobile[data-v-295ed7f3=\"\"] > h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4>Vil du godta alle informasjonskapsler, avslå eller endre innstillinger?</h4>",
+          "target": [
+            "#privacy_prompt_text2 > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<div class=\"privacy_prompt_content_freetext\" id=\"privacy_prompt_text\">",
+          "target": [
+            "#privacy_prompt_text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"privacy_prompt_content_h4\" id=\"privacy_prompt_text2\" aria-describedby=\"privacy_prompt_text2\">                    <h4>Vil du godta alle informasjonskapsler, avslå eller endre innstillinger?</h4>                </div>",
+          "target": [
+            "#privacy_prompt_text2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"two-buttons\">",
+          "target": [
+            "#freetext-top > .two-buttons"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"showConsentPreferences\">",
+          "target": [
+            ".showConsentPreferences"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"freetext bottom-info\" id=\"privacy_prompt_bottom\">",
+          "target": [
+            "#privacy_prompt_bottom"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "role-img-alt",
+      "impact": "serious",
+      "description": "Ensure [role=\"img\"] elements have alternative text",
+      "help": "[role=\"img\"] elements must have an alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/role-img-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div role=\"img\" class=\"hero-banner\" data-v-e508444f=\"\">",
+          "target": [
+            ".hero-banner"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "project": "Norges KFUK-KFUM",
+  "timestamp": "2025-09-21T10:44:35.054Z",
+  "url": "https://kfuk-kfum.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a class=\"text-center d-block mr-xl-5\" style=\"\" href=\"https://connect365.kfuk-kfum.no\" id=\"main-login\" role=\"button\" aria-label=\"Pålogging for ansatte\">\n    <img src=\"/file/db/graphic/padlock_hvit.svg\" height=\"32\" alt=\"ikon\"> \n    Min Connect\n</a>",
+          "target": [
+            "#main-login"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.62 (foreground color: #ffffff, background color: #81dbcd, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p class=\"bg-warning text-muted\">Placeholder \"Article\"  failed. Could not connect to SQL Server.</p>",
+          "target": [
+            ".bg-warning"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.87 (foreground color: #6c757d, background color: #ffc107, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button type=\"submit\" class=\"button\">\n                    Søk<span>►</span>\n                </button>",
+          "target": [
+            ".col-2 > button[type=\"submit\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #3c3751, background color: #75a6d6, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"https://kfuk-kfum.no/personvern#Informasjonskapsler\" class=\"text-secondary\">Les mer</a>",
+          "target": [
+            ".text-secondary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #6c757d, background color: #2b2b3b, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 18,
+      "nodes": [
+        {
+          "html": "<img src=\"/file/db/graphic/icon-calender.svg\" height=\"32\">",
+          "target": [
+            ".leftNav > .navLink[href$=\"aktiviteter\"] > img[height=\"32\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/file/db/graphic/icon-become-member.svg\" height=\"32\">",
+          "target": [
+            ".navLink[href$=\"bli-med\"] > img[height=\"32\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/file/db/graphic/icon-kfum-triangle.svg\" height=\"32\">",
+          "target": [
+            ".navLink[href$=\"om-oss\"] > img[height=\"32\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/file/db/graphic/icon-donate.svg\" height=\"32\">",
+          "target": [
+            ".rightNav > .navLink[href$=\"stott-oss\"] > img[height=\"32\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/file/db/graphic/icon-open-box-light-blue.svg\" height=\"32\">",
+          "target": [
+            "a[href$=\"ressurser\"] > img[height=\"32\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/file/db/graphic/icon-phone.svg\" height=\"32\">",
+          "target": [
+            ".navLink[href$=\"kontakt-oss\"] > img[height=\"32\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/static/images/startside/folkehøgskole.jpg\">",
+          "target": [
+            "a[href$=\"folkehogskole\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/static/images/startside/forandringshuset.jpg\">",
+          "target": [
+            "a[href$=\"forandringshuset.no/\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/static/images/startside/konfirmant.jpg\">",
+          "target": [
+            "a[href$=\"konfirmant\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/static/images/startside/lederutvikling.jpg\">",
+          "target": [
+            "a[href$=\"Lederutvikling\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/static/images/startside/kurslokalerleir.jpg\">",
+          "target": [
+            "a[href$=\"leirsteder\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/static/images/startside/åpenbarnehage.jpg\">",
+          "target": [
+            "a[href$=\"apen-barnehage\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/static/images/startside/tensing.jpg\">",
+          "target": [
+            "a[href$=\"tensing.no/\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/static/images/startside/idrett.jpg\">",
+          "target": [
+            "a[href$=\"idrett\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/static/images/startside/kulturskole.jpg\">",
+          "target": [
+            "a[href$=\"kulturforalle.no/\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/static/images/startside/musikkogkultur.jpg\">",
+          "target": [
+            "a[href$=\"musikk-og-kultur\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/static/images/startside/frivillig.jpg\">",
+          "target": [
+            "a[href$=\"frivillig\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/static/images/startside/politikkogsamf.jpg\">",
+          "target": [
+            "a[href$=\"politikk-og-samfunn\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb-no\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb-no\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<p class=\"bg-warning text-muted\">Placeholder \"Article\"  failed. Could not connect to SQL Server.</p>",
+          "target": [
+            ".bg-warning"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"Article\">",
+          "target": [
+            "#Article"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input name=\"search\" type=\"text\" placeholder=\"søk i kfuk-kfum.no\">",
+          "target": [
+            "input[placeholder=\"søk i kfuk-kfum.no\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section id=\"tilbud\" class=\"background-white\">",
+          "target": [
+            "#tilbud"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section id=\"front-page-partners\">",
+          "target": [
+            "#front-page-partners"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section id=\"membership\" style=\"background-image: url(/static/images/startside/stottoss.jpg)\">",
+          "target": [
+            "#membership"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"/file/db/graphic/icon-global-donate.svg\" alt=\"Ikon\" aria-describedby=\"globalSearchLabel\">",
+          "target": [
+            "img[aria-describedby=\"globalSearchLabel\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p style=\"color:#ccc\">Vi bruker informasjonskapsler for å samle brukerstatistikk fra nettsiden vår. Statistikken benytter vi for å gjøre brukeropplevelsen på nettsiden bedre. \n    <a href=\"https://kfuk-kfum.no/personvern#Informasjonskapsler\" class=\"text-secondary\">Les mer</a></p>",
+          "target": [
+            ".btn-cookies-info > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

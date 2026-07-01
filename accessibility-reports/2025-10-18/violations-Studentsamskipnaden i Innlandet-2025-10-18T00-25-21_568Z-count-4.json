@@ -1,0 +1,336 @@
+{
+  "project": "Studentsamskipnaden i Innlandet",
+  "timestamp": "2025-10-18T00:25:21.569Z",
+  "url": "https://www.sinn.no/#",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 19,
+      "nodes": [
+        {
+          "html": "<a class=\"btn btn-primary btn-lg mt-3\" href=\"https://www.sinn.no/sinn/fordeler-ved-a-bo-i-studentbolig/\" role=\"button\">Få med deg alle fordelene</a>",
+          "target": [
+            ".lazyblock-bilde-med-tekst-og-knapp-Z1GmhyQ > .py-5.row > .ps-lg-6.align-items-center.text-lg-start > div > .mt-3.btn.btn-primary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #ffffff, background color: #e34a4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"btn btn-primary btn-lg mt-3\" href=\"https://www.sinn.no/aktiviteter/\" role=\"button\">Se Innlandskalenderen</a>",
+          "target": [
+            ".pe-lg-6 > div > .mt-3.btn.btn-primary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #ffffff, background color: #e34a4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"btn btn-primary btn-lg mt-3\" href=\"https://www.sinn.no/sinn/studere-i-innlandet/?preview_id=10577&amp;preview_nonce=971b2261d8&amp;preview=true\" role=\"button\">Se fordelene</a>",
+          "target": [
+            ".lazyblock-bilde-med-tekst-og-knapp-ZRTjVS > .py-5.row > .ps-lg-6.align-items-center.text-lg-start > div > .mt-3.btn.btn-primary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #ffffff, background color: #e34a4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"btn btn-primary btn-lg mt-3\" href=\"https://www.sinn.no/studentliv/\" role=\"button\">Les mer</a>",
+          "target": [
+            ".lazyblock-bilde-med-tekst-og-knapp-Z2rdpXe > .py-5.row > .ps-lg-6.align-items-center.text-lg-start > div > .mt-3.btn.btn-primary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #ffffff, background color: #e34a4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/sinn/kontakt-oss/\" class=\"nav-link\">Kontakt oss</a>",
+          "target": [
+            "#menu-bunntekst-kontakt-norsk-1 > .nav-item-10834.menu-item-type-custom.menu-item-object-custom > .nav-link[href$=\"kontakt-oss/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.51 (foreground color: #f3f2f0, background color: #e34a4a, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/sinn/om-oss/\" class=\"nav-link\">Om oss</a>",
+          "target": [
+            "#menu-bunntekst-kontakt-norsk-1 > .nav-item-10835.menu-item-type-post_type.menu-item-object-post > .nav-link[href$=\"om-oss/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.51 (foreground color: #f3f2f0, background color: #e34a4a, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/sinn/sinns-presserom/\" class=\"nav-link\">SINNs presserom</a>",
+          "target": [
+            "#menu-bunntekst-kontakt-norsk-1 > .nav-item-10836.menu-item-type-post_type.menu-item-object-post > .nav-link[href$=\"sinns-presserom/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.51 (foreground color: #f3f2f0, background color: #e34a4a, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/sinn/ledige-stillinger-i-sinn/\" class=\"nav-link\">Ledige stillinger</a>",
+          "target": [
+            "#menu-bunntekst-kontakt-norsk-1 > .nav-item-10837.menu-item-type-post_type.menu-item-object-post > .nav-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.51 (foreground color: #f3f2f0, background color: #e34a4a, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/aktiviteter/\" class=\"nav-link\">Innlandskalenderen</a>",
+          "target": [
+            "#menu-ofte-besokte-sider-norsk-1 > .nav-item-10838.menu-item-type-custom.menu-item-object-custom > .nav-link[href$=\"aktiviteter/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.51 (foreground color: #f3f2f0, background color: #e34a4a, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/spisesteder/\" class=\"nav-link\">Ukens varmmat</a>",
+          "target": [
+            "#menu-ofte-besokte-sider-norsk-1 > .nav-item-10839.menu-item-type-custom.menu-item-object-custom > .nav-link[href$=\"spisesteder/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.51 (foreground color: #f3f2f0, background color: #e34a4a, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/studentbolig/\" class=\"nav-link\">Finn din studentbolig</a>",
+          "target": [
+            "#menu-ofte-besokte-sider-norsk-1 > .nav-item-10840.menu-item-type-custom.menu-item-object-custom > .nav-link[href$=\"studentbolig/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.51 (foreground color: #f3f2f0, background color: #e34a4a, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/sinn/samtaletjenesten/\" class=\"nav-link\">Bestill time hos samtaletjenesten</a>",
+          "target": [
+            "#menu-ofte-besokte-sider-norsk-1 > .nav-item-10841.menu-item-type-custom.menu-item-object-custom > .nav-link[href$=\"samtaletjenesten/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.51 (foreground color: #f3f2f0, background color: #e34a4a, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/sinn/kurskalender/\" class=\"nav-link\">Se våre gratiskurs</a>",
+          "target": [
+            "#menu-ofte-besokte-sider-norsk-1 > .nav-item-10842.menu-item-type-custom.menu-item-object-custom > .nav-link[href$=\"kurskalender/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.51 (foreground color: #f3f2f0, background color: #e34a4a, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"py-3 flex-grow-1\">2024 Studentsamskipnaden i Innlandet</div>",
+          "target": [
+            ".px-sm-0 > .site-info > .small.site-info > .flex-grow-1.py-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #ffffff, background color: #e34a4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<strong>Personvern:</strong>",
+          "target": [
+            ".px-sm-0 > .site-info > .small.site-info > .d-md-flex.py-3 > strong"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #ffffff, background color: #e34a4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/personvernerklaering/\" target=\"_blank\" title=\"Klikk her for å lese vår personvernerklæring for nettsiden\">Les personvernerklæring for nettsiden</a>",
+          "target": [
+            ".px-sm-0 > .site-info > .small.site-info > .d-md-flex.py-3 > div:nth-child(3) > a[href$=\"personvernerklaering/\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.14 (foreground color: #c4bfb6, background color: #e34a4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/cookieerklaering-eu/\" target=\"_blank\" title=\"Klikk her for å lese vår cookieerklæring\">Les cookieerklæring</a>",
+          "target": [
+            ".px-sm-0 > .site-info > .small.site-info > .d-md-flex.py-3 > div:nth-child(5) > a[href$=\"cookieerklaering-eu/\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.14 (foreground color: #c4bfb6, background color: #e34a4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"https://policies.samsvar.as/public/nb/f16dbf8d-02ae-4843-9139-85a17612c6d4\" target=\"_blank\" title=\"Klikk her for å lese vår personvernerklæringer\">Se alle personvernerklæringer</a>",
+          "target": [
+            ".px-sm-0 > .site-info > .small.site-info > .d-md-flex.py-3 > div:nth-child(7) > a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.14 (foreground color: #c4bfb6, background color: #e34a4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"btn btn-primary btn-lg my-3\" href=\"#\" role=\"button\" onclick=\"setCookie('campus', '', 0); window.location.reload();\">Slett campus-cookie!</a>",
+          "target": [
+            ".my-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #ffffff, background color: #e34a4a, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 10,
+      "nodes": [
+        {
+          "html": "<img src=\"/wp-content/themes/picostrap5-mdbfree/sass/img/logo-black.svg\">",
+          "target": [
+            ".d-lg-block > a[rel=\"home\"][itemprop=\"url\"][href$=\"sinn.no/\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/wp-content/themes/picostrap5-mdbfree/sass/img/down-arrow-white.svg\" width=\"25\" height=\"25\">",
+          "target": [
+            "img[width=\"25\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img decoding=\"async\" loading=\"lazy\" class=\"rounded-top rounded-end\" src=\"https://www.sinn.no/wp-content/uploads/2025/06/Fotoshoot_Lhmr_des_23_STU_01287_Foto_Alexander_Henningsen-1-336x336.jpg.webp\">",
+          "target": [
+            ".lazyblock-bilde-med-tekst-og-knapp-Z1GmhyQ > .py-5.row > .col-lg-5 > picture > .rounded-end[decoding=\"async\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img decoding=\"async\" loading=\"lazy\" class=\"rounded-top rounded-end\" src=\"https://www.sinn.no/wp-content/uploads/2024/05/Kopi-av-Innlandskalenderen-plakat-Rena-Instagram-innlegg-336x336.png.webp\">",
+          "target": [
+            ".order-lg-1 > picture > .rounded-end[decoding=\"async\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img decoding=\"async\" loading=\"lazy\" class=\"rounded-top rounded-end\" src=\"https://www.sinn.no/wp-content/uploads/2025/04/Uten-navn-2560-x-1706-px-336x336.png.webp\">",
+          "target": [
+            ".lazyblock-bilde-med-tekst-og-knapp-ZRTjVS > .py-5.row > .col-lg-5 > picture > .rounded-end[decoding=\"async\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img decoding=\"async\" loading=\"lazy\" class=\"rounded-top rounded-end\" src=\"https://www.sinn.no/wp-content/uploads/2023/02/Sinn-Situasjonsbilder-077-336x336.jpg.webp\">",
+          "target": [
+            ".lazyblock-bilde-med-tekst-og-knapp-Z2rdpXe > .py-5.row > .col-lg-5 > picture > .rounded-end[decoding=\"async\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"me-4\" src=\"/wp-content/themes/picostrap5-mdbfree/sass/img/FB_W.svg\" width=\"35\" height=\"35\">",
+          "target": [
+            "body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target=\"_blank\"]:nth-child(1) > .me-4[width=\"35\"][height=\"35\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"me-4\" src=\"/wp-content/themes/picostrap5-mdbfree/sass/img/Instagram_W.svg\" width=\"35\" height=\"35\">",
+          "target": [
+            "body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target=\"_blank\"]:nth-child(2) > .me-4[width=\"35\"][height=\"35\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"me-4\" src=\"/wp-content/themes/picostrap5-mdbfree/sass/img/Youtube_W.svg\" width=\"35\" height=\"35\">",
+          "target": [
+            "body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target=\"_blank\"]:nth-child(3) > .me-4[width=\"35\"][height=\"35\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"me-4\" src=\"/wp-content/themes/picostrap5-mdbfree/sass/img/Snapchat_W.svg\" width=\"35\" height=\"35\">",
+          "target": [
+            "body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target=\"_blank\"]:nth-child(4) > .me-4[width=\"35\"][height=\"35\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.facebook.com/sinn.no\" target=\"_blank\"><img class=\"me-4\" src=\"/wp-content/themes/picostrap5-mdbfree/sass/img/FB_W.svg\" width=\"35\" height=\"35\"></a>",
+          "target": [
+            "body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target=\"_blank\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/sinnstudent/\" target=\"_blank\"><img class=\"me-4\" src=\"/wp-content/themes/picostrap5-mdbfree/sass/img/Instagram_W.svg\" width=\"35\" height=\"35\"></a>",
+          "target": [
+            "body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target=\"_blank\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.youtube.com/@studentsamskipnadeniinnlan8\" target=\"_blank\"><img class=\"me-4\" src=\"/wp-content/themes/picostrap5-mdbfree/sass/img/Youtube_W.svg\" width=\"35\" height=\"35\"></a>",
+          "target": [
+            "body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target=\"_blank\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.snapchat.com/add/sinnstudent\" target=\"_blank\"><img class=\"me-4\" src=\"/wp-content/themes/picostrap5-mdbfree/sass/img/Snapchat_W.svg\" width=\"35\" height=\"35\"></a>",
+          "target": [
+            "body > .px-3.wrapper.mt-5 > .container > .row > .text-end.col-12.col-lg-4 > a[target=\"_blank\"]:nth-child(4)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a class=\"skip-link visually-hidden-focusable\" href=\"#theme-main\">Skip to content</a>",
+          "target": [
+            ".skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-white wrapper bg-dark mt-5 pt-5 px-3\" id=\"wrapper-footer-widgets\">",
+          "target": [
+            "body > .px-3.wrapper.mt-5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "project": "Trones skole",
+  "timestamp": "2025-09-20T00:47:18.143Z",
+  "url": "https://www.nyweb.no/minskole/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.nyweb.no/minskole/registrering-gratis-proveperiode/\" class=\"btn btn-success btn-lg\">Prøv gratis i 30 dager</a>",
+          "target": [
+            "div:nth-child(2) > .btn-success.btn-lg.btn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.09 (foreground color: #ffffff, background color: #7bc700, font size: 14.3pt (19px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"btn btn-lg btn-success\" href=\"https://www.nyweb.no/minskole/bestille-minskole/\">Bestill MinSkole</a>",
+          "target": [
+            ".intr > .btn-success.btn-lg.btn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.09 (foreground color: #ffffff, background color: #7bc700, font size: 14.3pt (19px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"btn btn-lg btn-block btn-success\" href=\"https://www.nyweb.no/minskole/bestille-minskole/\">Bestill MinSkole</a>",
+          "target": [
+            ".btn-block"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.09 (foreground color: #ffffff, background color: #7bc700, font size: 14.3pt (19px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a role=\"button\" data-cli_action=\"accept\" id=\"cookie_action_close_header\" class=\"medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button wt-cli-accept-btn\" style=\"color: rgb(255, 255, 255); background-color: rgb(123, 199, 0);\">Aksepter</a>",
+          "target": [
+            "#cookie_action_close_header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.09 (foreground color: #ffffff, background color: #7bc700, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"text-center\">\n        <img class=\"img-responsive centers\" src=\"https://www.nyweb.no/wp-content/uploads/2015/02/skole.png\" alt=\"Minskole\"><br>\n      </h3>",
+          "target": [
+            ".intr > .text-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html dir=\"ltr\" lang=\"nb-NO\" prefix=\"og: https://ogp.me/ns#\" class=\"wf-adellesans-n7-active wf-adellesans-n3-active wf-adellesans-n4-active wf-adellesans-n6-active wf-adellesans-n1-active wf-adellesans-i7-active wf-adellesans-i4-active wf-adellesans-i6-active wf-adellesans-i3-active wf-active\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.nyweb.no/\"><img class=\"img-responsive\" src=\"https://www.nyweb.no/wp-content/themes/nyweb/images/logo.png\" alt=\"\"></a>",
+          "target": [
+            "a[href$=\"nyweb.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://twitter.com/nyweb\" class=\"btn btn-default btn-lg\"><i class=\"fa fa-twitter fa-fw\"></i></a>",
+          "target": [
+            "li:nth-child(1) > .btn-default.btn-lg[href$=\"nyweb\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.facebook.com/nyweb\" class=\"btn btn-default btn-lg\"><i class=\"fa fa-facebook fa-fw\"></i></a>",
+          "target": [
+            "li:nth-child(2) > .btn-default.btn-lg[href$=\"nyweb\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.linkedin.com/company/nyweb.no-as\" class=\"btn btn-default btn-lg\"><i class=\"fa fa-linkedin fa-fw\"></i></a>",
+          "target": [
+            "li:nth-child(3) > .btn-default.btn-lg.btn"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 22,
+      "nodes": [
+        {
+          "html": "<div class=\"intro-header hh skolen\">",
+          "target": [
+            ".intro-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"content-section-c\">\n   <p><a title=\"Brukerveiledninger\" href=\"https://www.nyweb.no/brukerveiledninger/\">Last ned brukerveiledning</a> – <a href=\"https://www.nyweb.no/?p=5857\">Tips og hjelp</a> –&nbsp;<a href=\"https://www.nyweb.no/kontakt/\">Kontakt oss</a></p>\n  </div>",
+          "target": [
+            ".content-section-c"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"content-section-bb\">",
+          "target": [
+            ".content-section-bb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"section-heading\" style=\"text-align:center;\">Tilleggsprodukter fra MinSkole</h2>",
+          "target": [
+            ".produkter > .section-heading"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3>Digitale skjema</h3>",
+          "target": [
+            ".col-md-4:nth-child(1) > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h4>- Raskere og enklere kommunikajon</h4>",
+          "target": [
+            ".col-md-4:nth-child(1) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Integrert i den nye nettsideløsningen til MinSkole finner du muligheten til å opprette digitale skjema. Digitale skjema sparer skolen og foresatte for mye tid, blekk og papir, og forenkler kommunikasjonen mellom skole og hjem. </p>",
+          "target": [
+            ".col-md-4:nth-child(1) > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3>MinInfoskjerm</h3>",
+          "target": [
+            ".col-md-4:nth-child(2) > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h4>- Enkelt å informere</h4>",
+          "target": [
+            ".col-md-4:nth-child(2) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Bestiller du MinSkole, får du med én unik infoskjerm med én brukertilgang - helt gratis!<br>\nEn infoskjerm gjør det mulig for din skole å spre relevant informasjon, raskt og effektivt. </p>",
+          "target": [
+            ".col-md-4:nth-child(2) > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3>Meldingsbok</h3>",
+          "target": [
+            ".col-md-4:nth-child(3) > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h4>- Sikker kommunikasjon</h4>",
+          "target": [
+            ".col-md-4:nth-child(3) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Integrert i den nye nettsideløsningen til MinSkole finner du muligheten til å opprette en digital meldingbok. Her har du valget mellom 1-veis og 2-veis SMS-kommunikasjon mellom skolen og hjemmet.  </p>",
+          "target": [
+            ".col-md-4:nth-child(3) > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-lg-5 col-sm-6\">",
+          "target": [
+            ".row > .col-lg-5.col-sm-6:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"content-section-a\">",
+          "target": [
+            ".content-section-a:nth-child(12)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"content-section-b\" style=\"background:url(https://www.nyweb.no/wp-content/uploads/2015/02/DSC_0154.jpg) no-repeat center center;background-size:cover;\">",
+          "target": [
+            ".content-section-b"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2>Kontakt</h2>",
+          "target": [
+            ".col-sm-4:nth-child(1) > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"tel:51207888\">51207888</a>",
+          "target": [
+            "a[href=\"tel:51207888\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-sm-4\">",
+          "target": [
+            ".col-sm-4:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2>Nyhetsbrev</h2>",
+          "target": [
+            "#IBNSubscribe > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input class=\"form-control\" name=\"email__sValue\" placeholder=\"Din epost\" type=\"text\" value=\"\">",
+          "target": [
+            ".form-control"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"cookie-law-info-bar\" data-nosnippet=\"true\" style=\"background-color: rgb(255, 255, 255); color: rgb(85, 85, 85); font-family: inherit; bottom: 0px; position: fixed; display: block;\">",
+          "target": [
+            "#cookie-law-info-bar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

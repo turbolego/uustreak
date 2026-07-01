@@ -1,0 +1,120 @@
+{
+  "project": "Bergensavisen AS",
+  "timestamp": "2025-09-28T00:56:28.673Z",
+  "url": "https://www.ba.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ba\\.no\\/toppbanner_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a id=\"aw0\" target=\"_blank\" href=\"https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsuX2dbIK0oHhoZG7VMJ8YK6Bzl9F97UKqwyrIcoxOlqBKIw0BW7wpTaloOzkA0IjUgXUYoJMmOW7ZFKTlegmtns5396llg1IAdkVzjyLS5hVtLlhNje8LUAB3Hs-hEYMMblACzykSScX_L02fqOxce6m_nhsp5rd0ctJypVJMmc_k_XQGqTE2TZoqGOjzf5F6gdFGc_frMvQIgkeFY66hPmnWsv1soo8kuKnFVT8KlpaFRf53B_Kjl84Klu6dDq_5O34Qzx4-wuaOcJp5AY7B_53pcc_ggOKFMGw9_QNPGWD0VitN-rQ53hGbId_lswuQU92Bbw8kPzKGfOaTEWKYGWP09hrtbFYbXS9oUX_n0Q0yPAwxOi17vePqax8kHyiNvaS269r4j3odHRtC-qCiilYtuJ9AQ&amp;sai=AMfl-YS6BjeGhB_zIHhvbqryWdHZ8F1SaA4VHqBL0W0tunSlzOf94tIaaqvVAO1IrUq5rA2aXrPRRfw_b22_Maomiiu_W8hrijqSMCflNHi0T1Qdng8KFt1BCsiNlJ0Bkqvubc1ZQv-U6KmCBIi9l5WEUAqfSzDsblDLfd8ImSa8pHdq9jL7brExCd1hhQJA2IvvG0iEguNAPaTsrZxLbr7KFdC-Kr-fb02ppANYtcLmMgPXYTYIRMq154aULm0O0J5a6f0twz_ddTOf6CrwYp3y4VZ-9VSAzg-fTjn5WxLa0xI-joIWqruEU6Q76Pt-RwtPt1QxeQ5RBK0A7gsRbm7k00dp-XsPs6nULnoXXszqhyEnoEw&amp;sig=Cg0ArKJSzNirCIFEAJsh&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;adurl=https://www.nio.com/no_NO/nio-space-bergen%3Futm_source%3DAmedia%26utm_medium%3Ddisplay%26utm_campaign%3Dlar-deg-velge\" onfocus=\"ss('aw0')\" onmousedown=\"st('aw0')\" onmouseover=\"ss('aw0')\" onclick=\"ha('aw0')\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ba\\.no\\/toppbanner_0",
+            "#aw0"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.ba.no/gfx/small.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.ba.no/tilbud\" publication=\"www.ba.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layout=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_toppbanner am-bazaar-ad--labeled\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.ba.no/toppbanner_1\" pageview-id=\"a883d5de-012b-43d9-9870-d84956a8c4b8\" has-bid=\"\" render-count=\"1\" render-time=\"1759020970404\" advertiser-id=\"5878541642\" order-id=\"3838690766\" lineitem-id=\"7075614166\" creative-id=\"138528929016\" ad-size=\"980,300\" slot-targeting=\"keyword=forsiden,autolayout,dominans,forsiden_1,format=toppbanner,position=1,adnami_format=skin,lwrefresh=false,hb_crid=,hb_adomain=,hb_format=banner,hb_source=,hb_size=980x300,hb_pb=32.27,hb_adid=7365a697cc0d67e8,hb_bidder=adnuntius\" hb_pb=\"32.27\" prebid-price-group=\"35\" lineitem-type=\"STANDARD\" itemscope=\"\" itemtype=\"http://schema.org/WPAdBlock\" is-empty=\"false\" is-viewable=\"true\" style=\"min-height: 0px;\">",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

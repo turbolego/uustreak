@@ -1,0 +1,135 @@
+# WCAG Violations Report for Sandnes kommune
+
+**Timestamp:** 2026-06-27T01:09:15.274Z
+**URL:** [https://www.sandnes.kommune.no/#](https://www.sandnes.kommune.no/#)
+**Total Violations:** 6
+
+## Violation Details
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#portalframe1, button[data-templatetype="1"]`
+- `#portalframe1, button[data-templatetype="2"]`
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#iFrameResizer0`
+
+### Form elements must have labels
+
+- **Impact:** critical
+- **Description:** Ensure every form element has a label
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/label?application=playwright
+- **Tags:** cat.forms, wcag2a, wcag412, section508, section508.22.n, TTv5, TT5.c, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.1.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#portalframe1, .date-from`
+- `#portalframe1, .date-to`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 54
+
+#### Affected Elements:
+
+- `.border-bottom--1.line-height--27[href=""]`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line:nth-child(3) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line:nth-child(4) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(3) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-2.day-listings.single-date-list:nth-child(4) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-3.day-listings.single-date-list:nth-child(5) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-3.day-listings.single-date-list:nth-child(5) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-3.day-listings.single-date-list:nth-child(5) > .item-container > .list-item.line:nth-child(3) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(6) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(6) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(7) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-2.day-listings.single-date-list:nth-child(8) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-3.day-listings.single-date-list:nth-child(9) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-4.day-listings.single-date-list:nth-child(10) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-5.day-listings.single-date-list:nth-child(11) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-6.day-listings.single-date-list:nth-child(12) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-7.day-listings.single-date-list:nth-child(13) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-8 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(15) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(15) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(15) > .item-container > .list-item.line:nth-child(3) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(15) > .item-container > .list-item.line:nth-child(4) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(16) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(16) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(16) > .item-container > .list-item.line:nth-child(3) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-2.day-listings.single-date-list:nth-child(17) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-3.day-listings.single-date-list:nth-child(18) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-3.day-listings.single-date-list:nth-child(18) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-4.day-listings.single-date-list:nth-child(19) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-5.day-listings.single-date-list:nth-child(20) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-6.day-listings.single-date-list:nth-child(21) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-7.day-listings.single-date-list:nth-child(22) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(23) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(24) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-2.day-listings.single-date-list:nth-child(25) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-3.day-listings.single-date-list:nth-child(26) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-4.day-listings.single-date-list:nth-child(27) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-5.day-listings.single-date-list:nth-child(28) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-5.day-listings.single-date-list:nth-child(28) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-5.day-listings.single-date-list:nth-child(28) > .item-container > .list-item.line:nth-child(3) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(29) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(29) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(30) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-1.day-listings.single-date-list:nth-child(30) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-2.day-listings.single-date-list:nth-child(31) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-2.day-listings.single-date-list:nth-child(31) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-2.day-listings.single-date-list:nth-child(31) > .item-container > .list-item.line:nth-child(3) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-3.day-listings.single-date-list:nth-child(32) > .item-container > .list-item.line:nth-child(1) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-3.day-listings.single-date-list:nth-child(32) > .item-container > .list-item.line:nth-child(2) > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-4.day-listings.single-date-list:nth-child(33) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-5.day-listings.single-date-list:nth-child(34) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-6.day-listings.single-date-list:nth-child(35) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.cc-header-container`
+- `.cc-text`
+
+### Select element must have an accessible name
+
+- **Impact:** critical
+- **Description:** Ensure select element has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/select-name?application=playwright
+- **Tags:** cat.forms, wcag2a, wcag412, section508, section508.22.n, TTv5, TT5.c, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.language-dropdown > select`

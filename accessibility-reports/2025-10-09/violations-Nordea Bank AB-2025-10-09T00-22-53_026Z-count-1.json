@@ -1,0 +1,31 @@
+{
+  "project": "Nordea Bank AB",
+  "timestamp": "2025-10-09T00:22:53.026Z",
+  "url": "https://www.nordea.no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div data-wa-region=\"header\" role=\"navigation\" data-hydration-key=\"aArea\" class=\"no-language-selector\">",
+          "target": [
+            ".no-language-selector"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}

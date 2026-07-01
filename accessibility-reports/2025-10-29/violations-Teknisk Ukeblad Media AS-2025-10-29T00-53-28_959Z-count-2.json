@@ -1,0 +1,83 @@
+{
+  "project": "Teknisk Ukeblad Media AS",
+  "timestamp": "2025-10-29T00:53:28.959Z",
+  "url": "https://www.tu.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a class=\"h-full w-full flex flex-col relative z-40\" href=\"https://www.digi.no/artikler/it-leverandor-i-full-krangel-med-ibm-krevde-meddommer-fjernet/563712?utm_source=tufront&amp;utm_medium=95823&amp;utm_content=row25_pos0&amp;utm_campaign=manual\"></a>",
+          "target": [
+            ".pt-3.pl-1.grow > .z-40.h-full.flex-col"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"h-full w-full flex flex-col relative z-40\" href=\"https://www.digi.no/artikler/it-leverandor-i-full-krangel-med-ibm-krevde-meddommer-fjernet/563712?utm_source=tufront&amp;utm_medium=95823&amp;utm_content=row25_pos0&amp;utm_campaign=manual\"></a>",
+          "target": [
+            ".flex-grow > .z-40.h-full.flex-col"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"h-full w-full flex flex-col relative z-40\" href=\"https://www.digi.no/artikler/it-leverandor-i-full-krangel-med-ibm-krevde-meddommer-fjernet/563712?utm_source=tufront&amp;utm_medium=95823&amp;utm_content=row25_pos0&amp;utm_campaign=manual\"></a>",
+          "target": [
+            ".text-left.text-brandNeutral-900.dark\\:text-brandNeutral-100 > .z-40.h-full.flex-col"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"h-full w-full flex flex-col relative z-40\" href=\"https://www.digi.no/artikler/it-leverandor-i-full-krangel-med-ibm-krevde-meddommer-fjernet/563712?utm_source=tufront&amp;utm_medium=95823&amp;utm_content=row25_pos0&amp;utm_campaign=manual\"></a>",
+          "target": [
+            ".md\\:text-\\[2\\.9vw\\].lg\\:text-3xl.text-2xl > .z-40.h-full.flex-col"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"no\" class=\"__variable_4ead3b __variable_83925d __variable_988c8c __variable_8a1c07 light\" style=\"color-scheme: light;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "project": "Skatteetaten",
+  "timestamp": "2025-09-28T01:17:13.229Z",
+  "url": "https://www.skatteetaten.no/person/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-no-duplicate-contentinfo",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one contentinfo landmark",
+      "help": "Document should not have more than one contentinfo landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-contentinfo?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div role=\"contentinfo\" aria-label=\"scroll to top container\" class=\"scroll-to-top-container\">",
+          "target": [
+            ".scroll-to-top-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one contentinfo landmark"
+        }
+      ]
+    }
+  ]
+}

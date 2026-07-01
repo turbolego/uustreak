@@ -1,0 +1,148 @@
+{
+  "project": "Firda Media AS",
+  "timestamp": "2025-10-26T00:54:06.627Z",
+  "url": "https://www.firda.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.firda\\.no\\/takeover_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-d28cc439-2d41-45ee-9e14-a1df6b1370e4\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"9\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsu-b4QLSAjofM9_MdgWrn4hK02zDwKE8LedILOzwHN1bZyZr8Fch-rvaQEOSF-TyisXvUUBl8oWO2spL06BUM5Pkfa94eAuC4lQLSkSbHbf01WVIE1mwupgd0iv2txlLg7lJLh_KOyEzWjqgI1Bqk4W46zpGDeG6ZZkPgvWfoo2ftwJmbnB6JRLbSON5mUP-cfofo-pcvASa2w_5dK3h3jW48gOuERCJQJLbdwQoAdSM689xWHDDSuXhYaM1nwwu5fZXrfvbocV4-CWga6ymuipxukFYI0yg9QypGF94WUF4ZEDBiYmjW9vahwcvZLgxQzas3Q5lcqxaD-oomZ5FyJtZoxTLt84d-yYpKq2_v1F6pRheaagbWGv9d_C4d7nKMbPlM4Rh6GHL8blX8eRZgEnQRmQ1BxEMYkoGulAKeVX&amp;sai=AMfl-YRqjP8Qf5ilHlaWQ_svB8R_u0L9pZJRMrfbyl6-WFWbjRSnGwwmhK5Uom0py6NPJBKwVSPByJJuQejI72QXUb6b49qmQ1WdsIjVEEE0OhGYR3EzQEzhH0rcMn8rZ4tX_11Qkkk_6_8yorD60HdQhKgMtOkiVie0lUghAjzjElR3glWzc5k4pJd3Tdj0dDOzO-6Q1VSDzZdcoBPj1JzKCRqipCFE47Q-Rj5PeEMV80J9iX8rgy-7c38OApucJLFEHoPeRTDPyE7H_Vzs8FbzHOOKLQg5yTwfZifoYzkgMUUZec0OoSYfnIk&amp;sig=Cg0ArKJSzMqVIb_1XNucEAE&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;urlfix=1&amp;adurl=https://www.volvocars.com/no/cars/ex30-electric/\" target=\"_blank\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.firda\\.no\\/takeover_0",
+            ".GoogleActiveViewElement > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.firda.no/gfx/small-positive.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<div class=\"takeover-close\">Lukk annonsen</div>",
+          "target": [
+            ".takeover-close"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<amedia-username orderpage=\"//www.firda.no/tilbud\" publication=\"www.firda.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layout=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_toppbanner am-bazaar-ad--labeled\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.firda.no/toppbanner_1\" pageview-id=\"29e59ac2-b3f2-4449-af3e-150c972d3477\" has-bid=\"\" render-count=\"1\" render-time=\"1761440038389\">",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

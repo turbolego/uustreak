@@ -1,0 +1,51 @@
+{
+  "project": "Universitetet i Stavanger",
+  "timestamp": "2025-09-20T00:28:25.685Z",
+  "url": "https://www.uis.no/nb",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img src=\"/sites/default/files/styles/card_vertical/public/inline-images/fAYEQ2G5BtwcvIe5H07YTOpVehta6ruOjF7q5brfWDAhxi7dMO.jpg?h=56d0ca2e&amp;itok=2F1Wj4TN\" alt=\"Bli student ved UiS\">",
+          "target": [
+            "img[alt=\"Bli student ved UiS\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"block-languageswitcher\" role=\"navigation\" class=\"block language-switcher-language-url\">",
+          "target": [
+            "#block-languageswitcher"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}

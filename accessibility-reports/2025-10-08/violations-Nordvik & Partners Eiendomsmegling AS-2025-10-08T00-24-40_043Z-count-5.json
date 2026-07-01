@@ -1,0 +1,214 @@
+{
+  "project": "Nordvik & Partners Eiendomsmegling AS",
+  "timestamp": "2025-10-08T00:24:40.043Z",
+  "url": "https://www.nordvik.no/#",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "description": "Ensure an element's role supports its ARIA attributes",
+      "help": "Elements must only use supported ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"OverlayBase_module_overlayWrapper__42ef25fe \" role=\"alert\" aria-modal=\"false\" aria-labelledby=\"overlay-labelledby\" data-content-area-sibling-eligible=\"true\" data-overlay=\"true\" style=\"opacity: 1;\">",
+          "target": [
+            "iframe[title=\"Bruktbil Levering Web\"]",
+            ".OverlayBase_module_overlayWrapper__42ef25fe"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-modal=\"false\""
+        }
+      ]
+    },
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<body role=\"presentation\" class=\"vp-center\">",
+          "target": [
+            "iframe[title=\"Bruktbil Levering Web\"]",
+            "body"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"font-medium text-white md:text-lg md:leading-7\">Bruktbil</h3>",
+          "target": [
+            ".py-10.md\\:py-12[title=\"Bruktbil\"] > div:nth-child(2) > .md\\:text-lg.md\\:leading-7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.nordvik.no\" class=\"w-24 rounded-md md:w-32 md:p-3\">",
+          "target": [
+            ".w-24"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.nordvik.no\" class=\"block w-36 -ml-3 p-3 rounded-md\">",
+          "target": [
+            ".w-36"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 12,
+      "nodes": [
+        {
+          "html": "<div class=\"z-10 flex flex-col justify-center max-w-lg col-start-1 row-start-1 py-10 pl-2 pr-10 text-white bg-opacity-50 centerVideoContainer bg-black-500 md:max-h-screen-1/2 md:pl-10\">",
+          "target": [
+            ".pl-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div><h3 class=\"font-medium text-white md:text-lg md:leading-7\">Bruktbil</h3><p class=\"mt-3 md:mt-2.5 text-sm leading-4 text-grey\">Finn din bruktbil her</p></div>",
+          "target": [
+            ".py-10.md\\:py-12[title=\"Bruktbil\"] > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div><h3 class=\"font-medium text-white md:text-lg md:leading-7\">Nettbutikk</h3><p class=\"mt-3 md:mt-2.5 text-sm leading-4 text-grey\">Se utvalg i nettbutikken</p></div>",
+          "target": [
+            ".py-10[title=\"Nettbutikk\"][href$=\"shop.nordvik.no/\"] > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div><h3 class=\"font-medium text-white md:text-lg md:leading-7\">Bestill time</h3><p class=\"mt-3 md:mt-2.5 text-sm leading-4 text-grey\">Bestill verkstedtime her</p></div>",
+          "target": [
+            "a[title=\"Bestill time\"] > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div><h3 class=\"font-medium text-white md:text-lg md:leading-7\">Kampanjer</h3><p class=\"mt-3 md:mt-2.5 text-sm leading-4 text-grey\">Kampanjer</p></div>",
+          "target": [
+            ".py-10.md\\:py-12[title=\"Kampanjer\"] > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"module module-campaign-listing\" id=\"module-4\">",
+          "target": [
+            "#module-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div><h3 class=\"font-medium text-white md:text-lg md:leading-7\">Prøvekjøring </h3><p class=\"mt-3 md:mt-2.5 text-sm leading-4 text-grey\">Prøvekjør nybil hos oss</p></div>",
+          "target": [
+            "a[title=\"Prøvekjøring \"] > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div><h3 class=\"font-medium text-white md:text-lg md:leading-7\">Nyheter</h3><p class=\"mt-3 md:mt-2.5 text-sm leading-4 text-grey\">Les siste nytt hos Nordvik</p></div>",
+          "target": [
+            ".py-10[title=\"Nyheter\"][href$=\"nyheter\"] > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div><h3 class=\"font-medium text-white md:text-lg md:leading-7\">Ledige jobber</h3><p class=\"mt-3 md:mt-2.5 text-sm leading-4 text-grey\">Her finner du våre ledige jobber</p></div>",
+          "target": [
+            "a[title=\"Ledige jobber\"] > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div><h3 class=\"font-medium text-white md:text-lg md:leading-7\">Leiebil</h3><p class=\"mt-3 md:mt-2.5 text-sm leading-4 text-grey\">Lei bil hos Nordvik</p></div>",
+          "target": [
+            ".py-10.md\\:py-12[title=\"Leiebil\"] > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"module module-latest-news\" id=\"module-6\">",
+          "target": [
+            "#module-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"module module-latest-usedcars\" id=\"module-7\">",
+          "target": [
+            "#module-7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "project": "Kid Interiør AS",
+  "timestamp": "2025-09-18T09:38:12.931Z",
+  "url": "https://www.kid.no/",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "description": "Ensure ARIA attributes are not prohibited for an element's role",
+      "help": "Elements must only use permitted ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span aria-label=\"Handle med hjertet\" class=\"bn gv\"><img src=\"/globalassets/kid.no/logoer/handlemedhjertet_logo_svart5.svg?ref=3306F9D0DE\" class=\"j1 j2\"></span>",
+          "target": [
+            "span[aria-label=\"Handle med hjertet\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a span with no valid role attribute."
+        }
+      ]
+    },
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button class=\"sc-fszimp gpCSJi\">",
+          "target": [
+            [
+              "#kindly-chat-api > div",
+              ".sc-fszimp"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<div class=\"tf-date\">2025-09-15</div>",
+          "target": [
+            ".review-block.article.review:nth-child(1) > .tf-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #848484, background color: #ffffff, font size: 8.3pt (11.05px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"tf-date\">2025-09-14</div>",
+          "target": [
+            ".review-block.article.review:nth-child(2) > .tf-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #848484, background color: #ffffff, font size: 8.3pt (11.05px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"tf-date\">2025-09-04</div>",
+          "target": [
+            ".review-block.article.review:nth-child(3) > .tf-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #848484, background color: #ffffff, font size: 8.3pt (11.05px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"tf-date\">2025-09-03</div>",
+          "target": [
+            ".review-block.article.review:nth-child(4) > .tf-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #848484, background color: #ffffff, font size: 8.3pt (11.05px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"tf-date\">2025-08-31</div>",
+          "target": [
+            ".review-block.article.review:nth-child(5) > .tf-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #848484, background color: #ffffff, font size: 8.3pt (11.05px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"ot-cat-header\" id=\"ot-bnr-hdr-id-C0001\">Helt nødvendige informasjonskapsler</h4>",
+          "target": [
+            "#ot-bnr-hdr-id-C0001"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img src=\"/globalassets/kid.no/logoer/handlemedhjertet_logo_svart5.svg?ref=3306F9D0DE\" class=\"j1 j2\">",
+          "target": [
+            ".j1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"et e6 ez f0 a3 z cv bm f1 f2\">",
+          "target": [
+            ".fh > .a3.ez.f0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"et e6 ez f0 a3 z cv bm f1 f2\">",
+          "target": [
+            ".gk > .a3.ez.f0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a class=\"a5 a6 a7\" data-scope-link=\"true\" href=\"/kampanjer/julie-fiala\"><div class=\"cs ew ex fh be\"><img class=\"et e6 ez f0 a3 z cv bm f1 f2\"></div></a>",
+          "target": [
+            "a[href$=\"julie-fiala\"][data-scope-link=\"true\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"s bq br bs a5 a6 a7 bt bu bv bw\" data-scope-link=\"true\" href=\"/kampanjer/julie-fiala\"><div class=\"b c da z a0 f3 cv bm f4 f5 f6 f7 a4 f8 f9 fa fb fi fj fc\"></div></a>",
+          "target": [
+            ".bs.br[href$=\"julie-fiala\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a5 a6 a7\" data-scope-link=\"true\" href=\"/inspirasjon/trender/the-autumn-edit\"><div class=\"cs ew ex gk be\"><img class=\"et e6 ez f0 a3 z cv bm f1 f2\"></div></a>",
+          "target": [
+            "div:nth-child(19) > .ev.eu.ba > .b0.cv.be > a[data-scope-link=\"true\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"s bq br bs a5 a6 a7 bt bu bv bw\" data-scope-link=\"true\" href=\"/inspirasjon/trender/the-autumn-edit\"><div class=\"b c da z a0 f3 cv bm f4 f5 f6 f7 a4 f8 f9 fa fb bf ay fc\"></div></a>",
+          "target": [
+            "div:nth-child(19) > .ev.eu.ba > .b0.cv.be > .bs.br.s"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<a aria-label=\"Gå til startside\" class=\"a5 a6 a7\" data-scope-link=\"true\" href=\"/\">",
+          "target": [
+            "a[aria-label=\"Gå til startside\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input type=\"search\" name=\"q\" autocomplete=\"off\" placeholder=\"Søk etter produkter\" maxlength=\"30\" class=\"cv j k l m s dq dr ds dt dc dd a5 a6 a7 de du bx by dv dw ai cs ce dk\" value=\"\">",
+          "target": [
+            ".dq"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"\">",
+          "target": [
+            ".a > div:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"tf-header-slider\">Dette sier våre kunder</h2>",
+          "target": [
+            ".tf-header-slider"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"tf-sidebar slider\">",
+          "target": [
+            ".tf-sidebar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sc-pYNGo gywvil\"><div class=\"sc-jytpVa gGZuJJ\"><div><div class=\"sc-eknHtZ kyvKcS\">Finn riktig seng 🛏️</div></div></div></div>",
+          "target": [
+            [
+              "#kindly-chat-api > div",
+              ".sc-pYNGo"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

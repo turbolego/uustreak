@@ -1,0 +1,140 @@
+{
+  "project": "Riksteatret",
+  "timestamp": "2025-11-01T00:40:18.692Z",
+  "url": "https://www.riksteatret.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 10,
+      "nodes": [
+        {
+          "html": "<h4 style=\"color: inherit\">\n                            Et riktig fornøyelig julemareritt | Av Yngve Sundvor | Med Statsteatret\n                        </h4>",
+          "target": [
+            "#feature_1 > .module__grid > .module__content > .module__body > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 style=\"color: inherit\">\n                            Vakker dans og gripende joik | Av Elle Sofe Company\n                        </h4>",
+          "target": [
+            "#feature_2 > .module__grid > .module__content > .module__body > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 style=\"color: inherit\">\n                            Basert på ei sann historie | Av Faysa Idle\n                        </h4>",
+          "target": [
+            "#feature_3 > .module__grid > .module__content > .module__body > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 style=\"color: inherit\">\n                            En familieforestilling | Frida viser vei med mot, varme og felleskap\n                        </h4>",
+          "target": [
+            "#feature_4 > .module__grid > .module__content > .module__body > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 style=\"color: inherit\">\n                            For små barn med store tankar | Av Eirik Fauske\n                        </h4>",
+          "target": [
+            "#feature_5 > .module__grid > .module__content > .module__body > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 style=\"color: inherit\">\n                            Av Ingeborg Arvola. Dramatisert av Cecilie Mosli\n                        </h4>",
+          "target": [
+            "#feature_6 > .module__grid > .module__content > .module__body > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 style=\"color: inherit\">\n                             I skyggen av Roblox | Av Frode Gjerløw og Håkon Dalsbø\n                        </h4>",
+          "target": [
+            "#feature_7 > .module__grid > .module__content > .module__body > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 style=\"color: inherit\">\n                            Av og med Fredrik Høyer\n                        </h4>",
+          "target": [
+            "#feature_8 > .module__grid > .module__content > .module__body > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 style=\"color: inherit\">\n                            En time som formet Norge | Av Tore Vagn Lid\n                        </h4>",
+          "target": [
+            "#feature_9 > .module__grid > .module__content > .module__body > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 style=\"color: inherit\">\n                            Av Tore Vagn Lid\n                        </h4>",
+          "target": [
+            "#feature_10 > .module__grid > .module__content > .module__body > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img src=\"https://v.imgi.no/78ndbh23tb-square/400/Mio-min-Mio.webp\">",
+          "target": [
+            ".listItem__link-wrapper[data-content-reference=\"1168970\"][data-epi-block-id=\"1170785\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://v.imgi.no/7sbdex5trf-square/400/Carls.webp\">",
+          "target": [
+            ".listItem__link-wrapper[data-content-reference=\"1172686\"][data-epi-block-id=\"1170785\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://v.imgi.no/rcza5auykq-square/400/Presentasjonsvideo-2025---Riksteatret.webp\">",
+          "target": [
+            ".listItem__link-wrapper[data-content-reference=\"1172629\"][data-epi-block-id=\"1170785\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ]
+}

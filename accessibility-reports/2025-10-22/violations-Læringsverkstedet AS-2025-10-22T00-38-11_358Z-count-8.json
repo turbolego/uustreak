@@ -1,0 +1,452 @@
+{
+  "project": "Læringsverkstedet AS",
+  "timestamp": "2025-10-22T00:38:11.358Z",
+  "url": "https://laringsverkstedet.no/#",
+  "total_violations": 8,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "description": "Ensure an element's role supports its ARIA attributes",
+      "help": "Elements must only use supported ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"nav-link dropdown-toggle mr-3 js-searchToggle\" type=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">",
+          "target": [
+            ".mr-3.js-searchToggle.dropdown-toggle"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        }
+      ]
+    },
+    {
+      "id": "aria-valid-attr-value",
+      "impact": "critical",
+      "description": "Ensure all ARIA attributes have valid values",
+      "help": "ARIA attributes must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" id=\"play-pause\" class=\"btn btn-sm\" aria-controls=\"play/pause\" tabindex=\"2\">Pause</button>",
+          "target": [
+            "#play-pause"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-controls=\"play/pause\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 32,
+      "nodes": [
+        {
+          "html": "<a id=\"CybotCookiebotDialogBodyEdgeMoreDetailsLink\" href=\"#\" class=\"\">Show details</a>",
+          "target": [
+            "#CybotCookiebotDialogBodyEdgeMoreDetailsLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #2f991e, background color: #f8f7ee, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Language</span>",
+          "target": [
+            ".language__selector_large > .text-right.btn-link[data-toggle=\"dropdown\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"nav-link \" href=\"https://laringsverkstedet.no/barnehage\">Finn din barnehage</a>",
+          "target": [
+            ".nav-item:nth-child(1) > .nav-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"nav-link \" href=\"https://laringsverkstedet.no/om-oss\">Om oss</a>",
+          "target": [
+            ".nav-item:nth-child(2) > .nav-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"nav-link \" href=\"https://laringsverkstedet.no/om-oss/mat\">Et Godt Måltid</a>",
+          "target": [
+            ".nav-item:nth-child(3) > .nav-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"nav-link \" href=\"https://laringsverkstedet.no/konseptbarnehager\">Konseptbarnehager</a>",
+          "target": [
+            ".nav-item:nth-child(4) > .nav-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"nav-link \" href=\"https://laringsverkstedet.no/foreldretips\">Foreldretips</a>",
+          "target": [
+            ".nav-item:nth-child(5) > .nav-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"nav-link \" href=\"https://laringsverkstedet.no/nyheter\">Nyheter</a>",
+          "target": [
+            ".nav-item:nth-child(6) > .nav-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"nav-link \" href=\"https://laringsverkstedet.no/jobb-hos-læringsverkstedet\">Jobb med oss</a>",
+          "target": [
+            ".nav-item:nth-child(7) > .nav-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"align-middle\">Søk</span>",
+          "target": [
+            ".align-middle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"https://mykid.no/forside/forside/my_brukere_logginn\" class=\"btn btn-outline-light\">MyKid - Logg inn</a>",
+          "target": [
+            ".form-inline > .btn-outline-light.btn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Postboks 215<br>2051 Jessheim</p>",
+          "target": [
+            ".pb-3.pb-lg-0.col-lg-4:nth-child(1) > p:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Aktivitetsvegen 2<br>2069 Jessheim</p>",
+          "target": [
+            "p:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"mailto:kontor@laringsverkstedet.no\">kontor@laringsverkstedet.no</a>",
+          "target": [
+            "a:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"tel:639 46 250\">639 46 250</a>",
+          "target": [
+            "a[href=\"tel:639 46 250\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"/kontakt\">Kontakt</a>",
+          "target": [
+            "a[href$=\"kontakt\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://laringsverkstedet.no/om-oss/mat\">Et Godt Måltid</a>",
+          "target": [
+            ".pb-3.pb-lg-0.col-lg-4:nth-child(2) > .mt-0 > li:nth-child(2) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://laringsverkstedet.no/barnehage\">Søk barnehageplass</a>",
+          "target": [
+            ".pb-3.pb-lg-0.col-lg-4:nth-child(2) > .mt-0 > li:nth-child(3) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://laringsverkstedet.no/om-oss-2/samfunnsansvar\">Samfunnsansvar</a>",
+          "target": [
+            ".pb-3.pb-lg-0.col-lg-4:nth-child(2) > .mt-0 > li:nth-child(4) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://laringsverkstedet.no/om-oss/styret\">Styret</a>",
+          "target": [
+            ".pb-3.pb-lg-0.col-lg-4:nth-child(2) > .mt-0 > li:nth-child(5) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://www.dibber.com/dibber-data-protection-statement\">Personvernerklæring</a>",
+          "target": [
+            ".pb-3.pb-lg-0.col-lg-4:nth-child(2) > .mt-0 > li:nth-child(6) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://laringsverkstedet.no/om-oss/rapporter\">Rapporter</a>",
+          "target": [
+            ".pb-3.pb-lg-0.col-lg-4:nth-child(2) > .mt-0 > li:nth-child(7) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://laringsverkstedet.no/rammebetingelser\">Rammebetingelser</a>",
+          "target": [
+            "li:nth-child(8) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://laringsverkstedet.no/blogg/juridisk-og-bærekraft\">Juridisk og bærekraft</a>",
+          "target": [
+            "li:nth-child(9) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://laringsverkstedet.no/barnehage\">Finn din barnehage</a>",
+          "target": [
+            ".col-lg-4.col-12:nth-child(3) > .mt-0 > li:nth-child(1) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://laringsverkstedet.no/om-oss\">Om oss</a>",
+          "target": [
+            ".col-lg-4.col-12:nth-child(3) > .mt-0 > li:nth-child(2) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://laringsverkstedet.no/om-oss/mat\">Et Godt Måltid</a>",
+          "target": [
+            ".col-lg-4.col-12:nth-child(3) > .mt-0 > li:nth-child(3) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://laringsverkstedet.no/konseptbarnehager\">Konseptbarnehager</a>",
+          "target": [
+            ".col-lg-4.col-12:nth-child(3) > .mt-0 > li:nth-child(4) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://laringsverkstedet.no/foreldretips\">Foreldretips</a>",
+          "target": [
+            ".col-lg-4.col-12:nth-child(3) > .mt-0 > li:nth-child(5) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://laringsverkstedet.no/nyheter\">Nyheter</a>",
+          "target": [
+            ".col-lg-4.col-12:nth-child(3) > .mt-0 > li:nth-child(6) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"\" href=\"https://laringsverkstedet.no/jobb-hos-læringsverkstedet\">Jobb med oss</a>",
+          "target": [
+            ".col-lg-4.col-12:nth-child(3) > .mt-0 > li:nth-child(7) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Vi har hjerte for deg</p>",
+          "target": [
+            ".mt-4.col-12 > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #ffffff, background color: #6da000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h5>\n                            Tips og råd om barnehageplass\n                        </h5>",
+          "target": [
+            ".container:nth-child(3) > .mb-5.justify-content-center.row > .col-md-4.my-3.col-lg-4:nth-child(1) > .card.w-100 > .card-body > .card-title > a > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5>\n                            Jobb hos oss\n                        </h5>",
+          "target": [
+            ".container:nth-child(5) > .mb-5.justify-content-center.row > .col-md-4.my-3.col-lg-4:nth-child(1) > .card.w-100 > .card-body > .card-title > a > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav id=\"mainMenu\" class=\"d-flex justify-content-between menu menu-- menu--\" style=\"--headerBackgroundColor: #6da000; --headerTextColor: #ffffff\">",
+          "target": [
+            "#mainMenu"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<a class=\"navbar-brand mr-0 pb-0\" href=\"https://laringsverkstedet.no/\">",
+          "target": [
+            ".navbar-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://laringsverkstedet.no/jobb-hos-læringsverkstedet\"><br></a>",
+          "target": [
+            "p:nth-child(3) > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://laringsverkstedet.no/\">",
+          "target": [
+            ".mt-5 > a[href$=\"laringsverkstedet.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.facebook.com/laringsverkstedet\" target=\"_BLANK\">",
+          "target": [
+            ".mt-3.col-12 > a[target=\"_BLANK\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/explore/tags/læringsverkstedet/\" target=\"_BLANK\">",
+          "target": [
+            ".mt-3.col-12 > a[target=\"_BLANK\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"scroll\" id=\"skipnavigation\" href=\"#content\">Gå til innhold</a>",
+          "target": [
+            "#skipnavigation"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "tabindex",
+      "impact": "serious",
+      "description": "Ensure tabindex attribute values are not greater than 0",
+      "help": "Elements should not have tabindex greater than zero",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/tabindex?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" id=\"play-pause\" class=\"btn btn-sm\" aria-controls=\"play/pause\" tabindex=\"2\">Pause</button>",
+          "target": [
+            "#play-pause"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,562 @@
+{
+  "project": "P4 Radio AS",
+  "timestamp": "2025-10-17T00:27:57.209Z",
+  "url": "https://www.lydenavnorge.no/p4/",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 33,
+      "nodes": [
+        {
+          "html": "<button type=\"submit\" class=\"icon-button\" data-v-57eb4fa8=\"\"><img src=\"/svg/search.svg\" loading=\"lazy\" data-v-57eb4fa8=\"\"></button>",
+          "target": [
+            ".icon-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button is-large-button is-live pulse show play\" style=\"--primary-color:#c6168d;--contrast-color:#ffffff;--pulse-color-visible:rgba(198,22,141,0.4);--pulse-color-invisible:rgba(198,22,141,0);\" data-v-98ccaf4e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".is-live"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button data-v-6503ba46=\"\" type=\"button\" class=\"dislike\" disabled=\"\" style=\"--button-size: 36px;\">",
+          "target": [
+            ".engagement-buttons[data-v-6503ba46=\"\"][data-v-98ccaf4e=\"\"] > .dislike[type=\"button\"][data-v-6503ba46=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button data-v-09345607=\"\" data-v-6503ba46=\"\" type=\"button\" class=\"like\" disabled=\"\" style=\"--button-size: 36px;\"><div data-v-09345607=\"\" class=\"lottie\"><canvas width=\"54\" height=\"54\" style=\"height: 100%; width: 100%;\"></canvas></div></button>",
+          "target": [
+            ".engagement-buttons[data-v-6503ba46=\"\"][data-v-98ccaf4e=\"\"] > .like[data-v-09345607=\"\"][type=\"button\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"close\" data-v-484baac5=\"\">",
+          "target": [
+            ".engagement-buttons-disclaimer[data-v-484baac5=\"\"][data-v-98ccaf4e=\"\"] > .close[data-v-484baac5=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse show\" style=\"\" data-v-4e5478d3=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".image-container[data-v-4e5478d3=\"\"] > .play-button.pulse.show"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse show\" style=\"\" data-v-f6602e5c=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".play-button.pulse[data-v-f6602e5c=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-4e5478d3=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".title-container[data-v-4e5478d3=\"\"] > .stroked.inverted.play-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked show-progress\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-6a96354e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".sounds-container.section-container[data-v-5aec0ce8=\"\"]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=\"\"] > .section-player-box.item[data-v-5aec0ce8=\"\"] > .audio-items > .audio-item:nth-child(1) > .show-progress.stroked.inverted"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked show-progress\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-6a96354e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".sounds-container.section-container[data-v-5aec0ce8=\"\"]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=\"\"] > .section-player-box.item[data-v-5aec0ce8=\"\"] > .audio-items > .audio-item:nth-child(2) > .show-progress.stroked.inverted"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked show-progress\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-6a96354e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".sounds-container.section-container[data-v-5aec0ce8=\"\"]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=\"\"] > .section-player-box.item[data-v-5aec0ce8=\"\"] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked show-progress\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-6a96354e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".sounds-container.section-container[data-v-5aec0ce8=\"\"]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=\"\"] > .section-player-box.item[data-v-5aec0ce8=\"\"] > .audio-items > .audio-item:nth-child(4) > .show-progress.stroked.inverted"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked show-progress\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-6a96354e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".sounds-container.section-container[data-v-5aec0ce8=\"\"]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=\"\"] > .section-player-box.item[data-v-5aec0ce8=\"\"] > .audio-items > .audio-item:nth-child(5) > .show-progress.stroked.inverted"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked show-progress\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-6a96354e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".sounds-container.section-container[data-v-5aec0ce8=\"\"]:nth-child(9) > .section-player-box-wrapper[data-v-5aec0ce8=\"\"] > .section-player-box.item[data-v-5aec0ce8=\"\"] > .audio-items > .audio-item:nth-child(1) > .show-progress.stroked.inverted"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked show-progress\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-6a96354e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".sounds-container.section-container[data-v-5aec0ce8=\"\"]:nth-child(9) > .section-player-box-wrapper[data-v-5aec0ce8=\"\"] > .section-player-box.item[data-v-5aec0ce8=\"\"] > .audio-items > .audio-item:nth-child(2) > .show-progress.stroked.inverted"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked show-progress\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-6a96354e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".sounds-container.section-container[data-v-5aec0ce8=\"\"]:nth-child(9) > .section-player-box-wrapper[data-v-5aec0ce8=\"\"] > .section-player-box.item[data-v-5aec0ce8=\"\"] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked show-progress\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-6a96354e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".sounds-container.section-container[data-v-5aec0ce8=\"\"]:nth-child(9) > .section-player-box-wrapper[data-v-5aec0ce8=\"\"] > .section-player-box.item[data-v-5aec0ce8=\"\"] > .audio-items > .audio-item:nth-child(4) > .show-progress.stroked.inverted"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked show-progress\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-6a96354e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".sounds-container.section-container[data-v-5aec0ce8=\"\"]:nth-child(9) > .section-player-box-wrapper[data-v-5aec0ce8=\"\"] > .section-player-box.item[data-v-5aec0ce8=\"\"] > .audio-items > .audio-item:nth-child(5) > .show-progress.stroked.inverted"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked show-progress\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-6a96354e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".sounds-container.section-container[data-v-5aec0ce8=\"\"]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=\"\"] > .section-player-box.item[data-v-5aec0ce8=\"\"] > .audio-items > .audio-item:nth-child(1) > .show-progress.stroked.inverted"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked show-progress\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-6a96354e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".sounds-container.section-container[data-v-5aec0ce8=\"\"]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=\"\"] > .section-player-box.item[data-v-5aec0ce8=\"\"] > .audio-items > .audio-item:nth-child(2) > .show-progress.stroked.inverted"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked show-progress\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-6a96354e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".sounds-container.section-container[data-v-5aec0ce8=\"\"]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=\"\"] > .section-player-box.item[data-v-5aec0ce8=\"\"] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked show-progress\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-6a96354e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".sounds-container.section-container[data-v-5aec0ce8=\"\"]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=\"\"] > .section-player-box.item[data-v-5aec0ce8=\"\"] > .audio-items > .audio-item:nth-child(4) > .show-progress.stroked.inverted"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button pulse inverted stroked show-progress\" style=\"--pulse-color-visible:rgba(255,255,255,0.4);--pulse-color-invisible:rgba(255,255,255,0);\" data-v-6a96354e=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".sounds-container.section-container[data-v-5aec0ce8=\"\"]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=\"\"] > .section-player-box.item[data-v-5aec0ce8=\"\"] > .audio-items > .audio-item:nth-child(5) > .show-progress.stroked.inverted"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button data-v-6503ba46=\"\" type=\"button\" class=\"dislike\" disabled=\"\" style=\"--button-size: 30px;\">",
+          "target": [
+            ".engagement-buttons[data-v-6503ba46=\"\"][data-v-a2b021d2=\"\"] > .dislike[type=\"button\"][data-v-6503ba46=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button data-v-09345607=\"\" data-v-6503ba46=\"\" type=\"button\" class=\"like\" disabled=\"\" style=\"--button-size: 30px;\"><div data-v-09345607=\"\" class=\"lottie\"><canvas width=\"45\" height=\"45\" style=\"height: 100%; width: 100%;\"></canvas></div></button>",
+          "target": [
+            ".engagement-buttons[data-v-6503ba46=\"\"][data-v-a2b021d2=\"\"] > .like[data-v-09345607=\"\"][type=\"button\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"close\" data-v-484baac5=\"\">",
+          "target": [
+            ".engagement-buttons-disclaimer[data-v-484baac5=\"\"][data-v-a2b021d2=\"\"] > .close[data-v-484baac5=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"play-button is-large-button pulse\" style=\"\" data-v-a2b021d2=\"\" data-v-db0c13d4=\"\">",
+          "target": [
+            ".play-button-background > .is-large-button.play-button.pulse"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"control-button previous show\" data-v-a2b021d2=\"\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"22\" height=\"22\" viewBox=\"0 0 22 22\" data-v-a2b021d2=\"\"><path d=\"M9,9h3.667V31H9Zm6.417,11L31,31V9Z\" transform=\"translate(-9 -9)\" fill=\"#fff\" data-v-a2b021d2=\"\"></path></svg></button>",
+          "target": [
+            ".previous"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"control-button backward\" data-value=\"30\" data-v-a2b021d2=\"\">",
+          "target": [
+            ".backward"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"control-button next show\" data-v-a2b021d2=\"\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"22\" height=\"22\" viewBox=\"0 0 22 22\" data-v-a2b021d2=\"\"><path d=\"M9,31,24.583,20,9,9ZM27.333,9V31H31V9Z\" transform=\"translate(-9 -9)\" fill=\"#fff\" data-v-a2b021d2=\"\"></path></svg></button>",
+          "target": [
+            ".next"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"control-button forward\" data-value=\"15\" data-v-a2b021d2=\"\">",
+          "target": [
+            ".forward"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"inverted\" data-v-6b72616d=\"\">",
+          "target": [
+            ".inverted[data-v-6b72616d=\"\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"min-max show\" data-v-a2b021d2=\"\" data-v-8618885e=\"\">",
+          "target": [
+            ".min-max"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<h1 data-v-4e5478d3=\"\">P4-nyhetene kl. 00:00 <span data-v-4e5478d3=\"\">med Svein Tore Andersen</span></h1>",
+          "target": [
+            ".bulletin-box.compact[data-v-4e5478d3=\"\"] > .content[data-v-4e5478d3=\"\"] > .title-container[data-v-4e5478d3=\"\"] > h1[data-v-4e5478d3=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.43 (foreground color: #02172b, background color: #333333, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span data-v-4e5478d3=\"\">med Svein Tore Andersen</span>",
+          "target": [
+            ".bulletin-box.compact[data-v-4e5478d3=\"\"] > .content[data-v-4e5478d3=\"\"] > .title-container[data-v-4e5478d3=\"\"] > h1[data-v-4e5478d3=\"\"] > span[data-v-4e5478d3=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.43 (foreground color: #02172b, background color: #333333, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span data-v-4e5478d3=\"\">I dag</span>",
+          "target": [
+            ".bulletin-box.compact[data-v-4e5478d3=\"\"] > .content[data-v-4e5478d3=\"\"] > .info[data-v-4e5478d3=\"\"] > span[data-v-4e5478d3=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #95989a, background color: #333333, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img src=\"/svg/search.svg\" loading=\"lazy\" data-v-57eb4fa8=\"\">",
+          "target": [
+            "img[src$=\"search.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-v-98ccaf4e=\"\" src=\"https://ddjh0q34m0xak.cloudfront.net/mmo/MusicLibrary/c4392a2c-8cd8-46b2-b65a-8249a77c92c5.jpg?w=200&amp;ar=1x1\" loading=\"lazy\" style=\"opacity: 1;\">",
+          "target": [
+            ".metadata[data-v-98ccaf4e=\"\"] > .image-container[data-v-98ccaf4e=\"\"] > img[data-v-98ccaf4e=\"\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-v-a2b021d2=\"\" src=\"https://ddjh0q34m0xak.cloudfront.net/mmo/ncl/e3cf62a5-b969-4c1b-9ea5-2e73b057a2a6.jpg?w=120&amp;ar=1x1\">",
+          "target": [
+            ".metadata-image.show[data-v-a2b021d2=\"\"] > img[data-v-a2b021d2=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "impact": "critical",
+      "description": "Ensure every form element has a label",
+      "help": "Form elements must have labels",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<input type=\"range\" min=\"0\" max=\"100\" step=\"1\" value=\"0\" style=\"--slider-value: 0%\" data-v-bf419b1d=\"\">",
+          "target": [
+            "input[max=\"100\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<input type=\"range\" min=\"0\" max=\"1\" step=\"0.01\" value=\"1\" style=\"--slider-value: 100%\" data-v-bf419b1d=\"\">",
+          "target": [
+            "input[max=\"1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"\" data-v-fec36985=\"\"><a href=\"/\" class=\"selected\" data-v-fec36985=\"\"><span data-v-fec36985=\"\">Radio</span></a><a href=\"/podkast\" class=\"\" data-v-fec36985=\"\"><span data-v-fec36985=\"\">Podkast</span></a></nav>",
+          "target": [
+            ".main-header > nav"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 13,
+      "nodes": [
+        {
+          "html": "<a href=\"/podkast/5/p4s-radiofrokost/episode/284729/kan-du-forskjell-paa-hoeyre-og-venstre-\" class=\"\" data-v-f6602e5c=\"\">",
+          "target": [
+            ".image-container[data-v-f6602e5c=\"\"] > a[data-v-f6602e5c=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/p4/lyden/\" class=\"image-link\" data-v-d851a3f3=\"\" style=\"background: none;\">",
+          "target": [
+            ".image-link[href$=\"lyden/\"][data-v-d851a3f3=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/p4/vinnkjokken2025/vinn-nytt-kjokken-til-200000-/artikkel/980047/\" class=\"image-link\" data-v-cb753610=\"\" style=\"background: none;\">",
+          "target": [
+            ".contest-box.medium-large.item:nth-child(1) > .image-link[data-v-cb753610=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/p4/aktiviteter/jackpot/prov-deg-pa-jackpot-og-vinn-100000-/artikkel/692930/\" class=\"image-link\" data-v-cb753610=\"\" style=\"background: none;\">",
+          "target": [
+            ".contest-box.medium-large.item:nth-child(2) > .image-link[data-v-cb753610=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/p4/underholdning/fem-pa/\" class=\"image-link\" data-v-d857f115=\"\" style=\"background: none;\">",
+          "target": [
+            ".image-link[href$=\"fem-pa/\"][data-v-d857f115=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/p4/om/endelig-tilbake-pa-google-assistant/artikkel/980673/\" class=\"image-link\" data-v-d857f115=\"\" style=\"background: none;\">",
+          "target": [
+            ".content-box.medium-large[data-v-d857f115=\"\"]:nth-child(2) > .image-link[data-v-d857f115=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/p4/programmer/frokost/sopprisotto-med-parmesan-og-edamamebonner/artikkel/911468/\" class=\"\" data-v-317123a9=\"\"><!--[--><img data-v-317123a9=\"\" src=\"https://ddjh0q34m0xak.cloudfront.net/mmo/images/2023/8/362c76f4-ee21-423c-97c0-fb4e527acaa1.jpg?w=640\" alt=\"\" loading=\"lazy\"><!--]--></a>",
+          "target": [
+            ".large.section-box.item > .image-container[data-v-317123a9=\"\"] > a[data-v-317123a9=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/p4/programmer/frokost/nytelsesfredag/grillet-makrell-med-stuet-spinat/artikkel/907181/\" class=\"\" data-v-317123a9=\"\"><!--[--><img data-v-317123a9=\"\" src=\"https://ddjh0q34m0xak.cloudfront.net/mmo/images/2023/6/261e2e85-6333-46f2-889b-dd666cdd1729.jpg?w=640\" alt=\"\" loading=\"lazy\"><!--]--></a>",
+          "target": [
+            ".small.section-box.item:nth-child(1) > .image-container[data-v-317123a9=\"\"] > a[data-v-317123a9=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/p4/programmer/frokost/nytelsesfredag/svensk-midsommarfeiring-med-christers-gubbrora/artikkel/906511/\" class=\"\" data-v-317123a9=\"\">",
+          "target": [
+            ".small.section-box.item:nth-child(2) > .image-container[data-v-317123a9=\"\"] > a[data-v-317123a9=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/p4/programmer/frokost/nytelsesfredag/rabarbrasuppe-med-jordber/artikkel/905311/\" class=\"\" data-v-317123a9=\"\"><!--[--><img data-v-317123a9=\"\" src=\"https://ddjh0q34m0xak.cloudfront.net/mmo/images/2023/6/ebc56c56-43a5-4fe7-970e-475361d62330.jpg?w=640\" alt=\"\" loading=\"lazy\"><!--]--></a>",
+          "target": [
+            ".small.section-box.item:nth-child(3) > .image-container[data-v-317123a9=\"\"] > a[data-v-317123a9=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/p4/programmer/frokost/nytelsesfredag/ostesmorbrod-med-fransk-vri/artikkel/903360/\" class=\"\" data-v-317123a9=\"\"><!--[--><img data-v-317123a9=\"\" src=\"https://ddjh0q34m0xak.cloudfront.net/mmo/images/2023/5/8565ded4-b0a8-45a6-946e-b0a7553292c2.jpg?w=640\" alt=\"\" loading=\"lazy\"><!--]--></a>",
+          "target": [
+            ".small.section-box.item:nth-child(4) > .image-container[data-v-317123a9=\"\"] > a[data-v-317123a9=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/p4/programmer/frokost/nytelsesfredag/p4s-lille-skagenrore/artikkel/903140/\" class=\"\" data-v-317123a9=\"\"><!--[--><img data-v-317123a9=\"\" src=\"https://ddjh0q34m0xak.cloudfront.net/mmo/images/2023/5/6f7ebaf6-e735-40ca-a5a2-39f0be571eef.png?w=640\" alt=\"\" loading=\"lazy\"><!--]--></a>",
+          "target": [
+            ".small.section-box.item:nth-child(5) > .image-container[data-v-317123a9=\"\"] > a[data-v-317123a9=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.redaktor.no/ressurser/etiske-og-juridiske-rammeverk/redaktorplakaten\" target=\"_blank\" data-v-d3384b54=\"\">",
+          "target": [
+            ".editor-emblem > a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<div class=\"mini-player-content\" data-v-a2b021d2=\"\">",
+          "target": [
+            ".mini-player-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<canvas data-v-de1a97ea=\"\" data-v-6503ba46=\"\" class=\"heart-spawner show\" width=\"75\" height=\"200\" style=\"width: 75px; height: 200px;\"></canvas>",
+          "target": [
+            ".engagement-buttons[data-v-6503ba46=\"\"][data-v-a2b021d2=\"\"] > .heart-spawner[data-v-de1a97ea=\"\"][width=\"75\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p data-v-484baac5=\"\">Du må være logget inn for å kunne gi din tilbakemelding.</p>",
+          "target": [
+            ".engagement-buttons-disclaimer[data-v-484baac5=\"\"][data-v-a2b021d2=\"\"] > p[data-v-484baac5=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"slider inverted volume-slider\" data-v-6b72616d=\"\" data-v-bf419b1d=\"\"><input type=\"range\" min=\"0\" max=\"1\" step=\"0.01\" value=\"1\" style=\"--slider-value: 100%\" data-v-bf419b1d=\"\"></div>",
+          "target": [
+            ".volume-slider"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

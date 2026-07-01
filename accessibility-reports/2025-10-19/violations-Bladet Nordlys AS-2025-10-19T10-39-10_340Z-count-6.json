@@ -1,0 +1,175 @@
+{
+  "project": "Bladet Nordlys AS",
+  "timestamp": "2025-10-19T10:39:10.340Z",
+  "url": "https://www.nordlys.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe src=\"https://iads.tech1.org/dgruppen/script980x300.php?site=nl&amp;adclick=https://adclick.g.doubleclick.net/pcs/click%253Fxai%253DAKAOjstrmCw-AUHL7UClNM2zwDf1gW6vDhjBswDnMruU4knghHheJqEIidmXJ7kdYmxc5fZ3u97JiZopIg1jpUBJXyHoOq5ZzjIsMJBAlOCWr3ZEXw6DKB7CMczqqeuOU3No3GdQlu6TV6tuFMjnk33lbLyWbiBYmYmjS6keJET6EsR9n94W3belOHr1ZWbY4ShcOlhB5ed1K4btF6P64KrG0M9ORPhnH3OtWqX7HjOl-ijvFg8MCMtWGUEgx-1dj6_L1ZTgLs4h04S-jHek00iPJOUe05VIGIuOclQgnmHwfckOX5ddo_zKssfrbig1oKqLfrVDpZVqo8q4d-WBAZa4oACEJ2s00z7yrPfTpQDHID9PkhHVEUK0kwUkWTpmMhIXQJuJWChgrbcZSX-yW16J3QdDyx4bUBs3qJC268dR-FE3G6P-MtTX%2526sai%253DAMfl-YQ2nX_F-hLeGm1l9lgYODONG8tZskRJlKUB6JZPxoo9FMbeQxfGZfcIctgFlID_8LbWCaWlcA3rCiqXZDoNRmI2_OjrYYFYpQ9Xdev4bTfH_WvxsyZ7io23BWBUcei3_FPsXdZ0yVXm5Z4ArD6GPnqRRUDO0nRl8GwoM6zetPRE094ZdcnsAhsTKYVX5Ncg-6BSukgcmIoP77_LeKT_0cIVnHkc8pZjvWpxjWYScZ6ikJwJCNG8rCDTfJjg8ajAs_G6awmLOlDniaYg39_zS7pKmSigqbVfyKcKhzTlgcb8tSPfCQSGfkApqUftONvlpYnBVpPyYgcd-vnf1GBDBsXfpTJXHhRsFeBpmN5dgm7Ad8E%2526sig%253DCg0ArKJSzKRU4UPM5RieEAE%2526fbs_aeid%253D%25255Bgw_fbsaeid%25255D%2526urlfix%253D1%2526adurl%253D\" height=\"300\" width=\"980\" frameborder=\"0\" scrolling=\"no\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img src=\"img.php?url=2025/uke43/980x300/mandag-assets/01_&amp;mdate=1760695031&amp;format=jpg&amp;gf=1\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-56aeef8f-4a72-4e0d-b35e-d7648e6f5b46\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"8\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://adclick.g.doubleclick.net/pcs/click%3Fxai%3DAKAOjstrmCw-AUHL7UClNM2zwDf1gW6vDhjBswDnMruU4knghHheJqEIidmXJ7kdYmxc5fZ3u97JiZopIg1jpUBJXyHoOq5ZzjIsMJBAlOCWr3ZEXw6DKB7CMczqqeuOU3No3GdQlu6TV6tuFMjnk33lbLyWbiBYmYmjS6keJET6EsR9n94W3belOHr1ZWbY4ShcOlhB5ed1K4btF6P64KrG0M9ORPhnH3OtWqX7HjOl-ijvFg8MCMtWGUEgx-1dj6_L1ZTgLs4h04S-jHek00iPJOUe05VIGIuOclQgnmHwfckOX5ddo_zKssfrbig1oKqLfrVDpZVqo8q4d-WBAZa4oACEJ2s00z7yrPfTpQDHID9PkhHVEUK0kwUkWTpmMhIXQJuJWChgrbcZSX-yW16J3QdDyx4bUBs3qJC268dR-FE3G6P-MtTX%26sai%3DAMfl-YQ2nX_F-hLeGm1l9lgYODONG8tZskRJlKUB6JZPxoo9FMbeQxfGZfcIctgFlID_8LbWCaWlcA3rCiqXZDoNRmI2_OjrYYFYpQ9Xdev4bTfH_WvxsyZ7io23BWBUcei3_FPsXdZ0yVXm5Z4ArD6GPnqRRUDO0nRl8GwoM6zetPRE094ZdcnsAhsTKYVX5Ncg-6BSukgcmIoP77_LeKT_0cIVnHkc8pZjvWpxjWYScZ6ikJwJCNG8rCDTfJjg8ajAs_G6awmLOlDniaYg39_zS7pKmSigqbVfyKcKhzTlgcb8tSPfCQSGfkApqUftONvlpYnBVpPyYgcd-vnf1GBDBsXfpTJXHhRsFeBpmN5dgm7Ad8E%26sig%3DCg0ArKJSzKRU4UPM5RieEAE%26fbs_aeid%3D%255Bgw_fbsaeid%255D%26urlfix%3D1%26adurl%3Dhttps://iads.tech1.org/dgruppen/pdflink.php?u=43&amp;d=mandag&amp;y=2025&amp;s=nl&amp;r=980x300&amp;rr=0\" target=\"_blank\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/toppbanner_0",
+            "iframe",
+            "a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.nordlys.no/gfx/small.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.nordlys.no/tilbud\" publication=\"www.nordlys.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layout=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_toppbanner am-bazaar-ad--labeled\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.nordlys.no/toppbanner_1\" pageview-id=\"64cdacc3-8b67-4e6d-8032-4b8a4c2878ba\" has-bid=\"\" render-count=\"1\" render-time=\"1760870337631\" advertiser-id=\"717997376\" order-id=\"3678198449\" lineitem-id=\"6886582454\" creative-id=\"138377375157\" ad-size=\"980,300\" slot-targeting=\"keyword=forsiden,autolayout,dominans,forsiden_1,format=toppbanner,position=1,adnami_format=skin,lwrefresh=false,hb_crid=,hb_adomain=,hb_format=banner,hb_source=,hb_size=980x300,hb_pb=11.97,hb_adid=75fb80f0ce044088,hb_bidder=adnuntius\" hb_pb=\"11.97\" prebid-price-group=\"15\" lineitem-type=\"undefined\" itemscope=\"\" itemtype=\"http://schema.org/WPAdBlock\" is-empty=\"false\" is-viewable=\"true\" style=\"min-height: 0px;\">",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

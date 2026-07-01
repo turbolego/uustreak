@@ -1,0 +1,169 @@
+{
+  "project": "Dagbladet Finnmarken AS",
+  "timestamp": "2025-10-03T14:38:32.298Z",
+  "url": "https://www.ifinnmark.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-a187c114-2bf5-4e47-b247-7233dea8e09e\">",
+          "target": [
+            ".navigation > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsuTgKYwwYCed98F885ZkWnvuqzVk6lbQCMaOSNukmtQc1rZ4i3Zd_mzcbThIqQMeOY9KQGjysHi6BQDhpyIa6Lpmph_AXb-ALRBX9qhooCz8pr7_BV1B80lqManJgMlfrSiont4FcMeJp2Y6uFCuua3c2O-BOevuxcD533TwJg2nW7JA1Fz0I9qj2Or4nulLBzKLsBzYC_fKfjtVDk3rEU5H_TWUFiXhhV1gR6xXESkeVIBDQ0txOdplNKUNcFMqxkr7oCTeALOGYouMLj8uVw9kasNeFdYYtVL9jDDhij2JgoKvjFyxXI2eNha5TGo1n5C5qAoxs8w8WmOQNBRP7oes38u0hqzt5p08skln4HoKDvPwy3vTShbJOCnO2caOeeag52RZmBVxMz8m5VZ1LClytGzlF4suc76vcYWti6-nbB1Ig&amp;sai=AMfl-YTlxg3LXXV-ik9WhsTihcSeIle_NTIIxFqq0zGbMAMHYezt96uJhHy3N-SFUpdO7TRCQGvPyUBt1amdzhkgqPwna9lAU6FJKTZLt72XDln-cvwLfeneHccvqqpsBXqtcqqjJC9TkubKCd9jE8ECtjCZmZfr0tL2OI004SC_G0mTlMfVJxP14Pvsb4G-Pjc8xgkQX1VxyXutaVVhsIFkRadgh7L8DrJLEbZMV-6LtfKfH_M6Lf08PFPNAS-Uoolg83TKga8UdorLr6aZeqLepw0MGl3pbyMtnM3fBR9VzGQ1w5XLoL4tD2ANWs3T9NDKAlIlbuDoA73hhOi7S22dXaXoLv0_VE92KCJgaTgTIo-U1H4&amp;sig=Cg0ArKJSzD9jwhxLUIfVEAE&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;urlfix=1&amp;adurl=https://www.rema.no/kampanjevarer/\" target=\"_blank\" style=\"display: block; height: 1000px; left: calc(50% - 960px); position: absolute; top: 0px; width: 1920px;\">",
+          "target": [
+            "a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"no\" data-sitekey=\"ifinnm\" data-paywall=\"false\" data-pagemodel=\"rodimus\" data-isfrontpage=\"true\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ifinnmark\\.no\\/toppbanner_0",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.ifinnmark.no/gfx/small.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"\" publication=\"www.ifinnmark.no\" subscription-text=\"\" subscription-link=\"\" links=\"\" theme=\"alfa\"><a href=\"https://www.ifinnmark.no/aid/login?requested_url=https%3A%2F%2Fwww.ifinnmark.no%2F&amp;context=ego_top\">Logg inn</a></amedia-username>",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"am-bazaar-ad--label\" id=\"toppbanner-1-label\">Annonse</span>",
+          "target": [
+            "#toppbanner-1-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "project": "Molde kommune",
+  "timestamp": "2025-10-05T00:33:16.958Z",
+  "url": "https://www.molde.kommune.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 18,
+      "nodes": [
+        {
+          "html": "<div class=\"top-boxes\">",
+          "target": [
+            ".top-boxes"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Våre tjenester</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartTittel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"toplevel\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"toplevel\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"toplevel\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"toplevel\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"toplevel\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"toplevel\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"toplevel\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"toplevel\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"toplevel\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(9)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPart wp-view-all\" id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6455\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6455"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"middle-boxes middle-boxes--middle\">",
+          "target": [
+            ".middle-boxes--middle.middle-boxes:nth-child(10)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"middle-boxes middle-boxes--calendar\">",
+          "target": [
+            ".middle-boxes--calendar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"middle-boxes middle-boxes--middle\">",
+          "target": [
+            ".middle-boxes--middle.middle-boxes:nth-child(12)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Aktuelt fra kommunen</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_6466 > .webPartTittel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul>",
+          "target": [
+            ".container > ul"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPartBunnLink\">\n            <a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_6466_WebpartId_6466_hlLinkAlle\" class=\"MargLink\" href=\"/aktuelt/\">Se alle saker</a>\n        </div>",
+          "target": [
+            ".webPartBunnLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

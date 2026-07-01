@@ -1,0 +1,349 @@
+{
+  "project": "Vestlia Resort AS",
+  "timestamp": "2025-10-26T01:04:59.626Z",
+  "url": "https://vestlia.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 12,
+      "nodes": [
+        {
+          "html": "<a id=\"CybotCookiebotDialogNavDeclaration\" class=\"CybotCookiebotDialogNavItemLink CybotCookiebotDialogActive\" href=\"#\" data-target=\"CybotCookiebotDialogBody\" tabindex=\"0\" role=\"tab\" aria-selected=\"true\" lang=\"en\">Consent</a>",
+          "target": [
+            "#CybotCookiebotDialogNavDeclaration"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #a87f50, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button id=\"CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll\" class=\"CybotCookiebotDialogBodyButton\" tabindex=\"0\" lang=\"en\">Allow all</button>",
+          "target": [
+            "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #ffffff, background color: #a87f50, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"min-h-[20px] whitespace-nowrap pb-[10px]\">Arrival date</div>",
+          "target": [
+            [
+              "#widgetContainer",
+              ".box-border.flex-1.flex-col:nth-child(1) > .min-h-\\[20px\\].pb-\\[10px\\].whitespace-nowrap"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.86 (foreground color: #4a4e57, background color: #042737, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"min-h-[20px] whitespace-nowrap pb-[10px]\">Accommodations and guests</div>",
+          "target": [
+            [
+              "#widgetContainer",
+              ".box-border.flex-1.flex-col:nth-child(2) > .min-h-\\[20px\\].pb-\\[10px\\].whitespace-nowrap"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.86 (foreground color: #4a4e57, background color: #042737, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"visible\">Search</span>",
+          "target": [
+            [
+              "#widgetContainer",
+              ".visible"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3 (foreground color: #ffffff, background color: #b68e58, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<h2 class=\"fusion-title-heading title-heading-center\" style=\"margin:0;\">Vestlia Resort</h2>",
+          "target": [
+            ".fusion-title-6 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.45 (foreground color: #a07b4d, background color: #f4c3b6, font size: 30.0pt (40px), font weight: normal). Expected contrast ratio of 3:1"
+        },
+        {
+          "html": "<h2 class=\"fusion-title-heading title-heading-center\" style=\"margin:0;\">Drømmebryllup på fjellet</h2>",
+          "target": [
+            ".fusion-title-11 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.45 (foreground color: #a07b4d, background color: #f4c3b6, font size: 30.0pt (40px), font weight: normal). Expected contrast ratio of 3:1"
+        },
+        {
+          "html": "<span class=\"fusion-button-text awb-button__text awb-button__text--default\">Les mer</span>",
+          "target": [
+            ".button-9 > .fusion-button-text.awb-button__text.awb-button__text--default"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3 (foreground color: #ffffff, background color: #b68e58, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<input type=\"submit\" value=\"Meld deg på\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\">",
+          "target": [
+            "#mc-embedded-subscribe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.32 (foreground color: #ffffff, background color: #aaaaaa, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"fusion-button-text awb-button__text awb-button__text--default\">Les mer</span>",
+          "target": [
+            ".button-11 > .fusion-button-text.awb-button__text.awb-button__text--default"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3 (foreground color: #ffffff, background color: #b68e58, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"fusion-button-text awb-button__text awb-button__text--default\">VOTE: World Luxury Awards          </span>",
+          "target": [
+            ".button-12 > .fusion-button-text.awb-button__text.awb-button__text--default"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3 (foreground color: #ffffff, background color: #b68e58, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"fusion-button-text awb-button__text awb-button__text--default\">VOTE: World Travel Awards</span>",
+          "target": [
+            ".button-13 > .fusion-button-text.awb-button__text.awb-button__text--default"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3 (foreground color: #ffffff, background color: #b68e58, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<h5 class=\"fusion-title-heading title-heading-center\" style=\"margin:0;\"><a href=\"https://vestlia.no/aktiviteter/sommer/\" class=\"awb-custom-text-color awb-custom-text-hover-color\" target=\"_self\">Book et opphold</a></h5>",
+          "target": [
+            ".fusion-title-2 > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h6 class=\"fusion-title-heading title-heading-center\" style=\"margin:0;text-transform:uppercase;\">Vinter på Vestlia Resort</h6>",
+          "target": [
+            ".fusion-title-7 > h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h6 class=\"fusion-title-heading title-heading-center\" style=\"margin:0;text-transform:uppercase;\">Arranger ditt</h6>",
+          "target": [
+            ".fusion-title-10 > h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img src=\"https://firebasestorage.googleapis.com/v0/b/altek-fb667.appspot.com/o/chatbots%2FVESTLIA-CHAT-white_ybe58w.png_250bb524-a788-4fed-bc9d-3dfa77f2a08c?alt=media&amp;token=5e5819b3-2fcf-4671-a44d-82c8f61d6ca8\" style=\"width: 75%; height: 75%; object-fit: contain;\">",
+          "target": [
+            "div:nth-child(21) > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"#awb-oc__10025\" class=\"awb-menu__main-a awb-menu__main-a_regular awb-oc-menu-item-link awb-menu__main-a_icon-only fusion-flex-link\">",
+          "target": [
+            ".awb-oc-menu-item-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/nested-interactive?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"radix-P0-2\" data-state=\"closed\">",
+          "target": [
+            [
+              "#widgetContainer",
+              "button[aria-controls=\"radix-P0-2\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<button type=\"button\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"radix-P0-3\" data-state=\"closed\">",
+          "target": [
+            [
+              "#widgetContainer",
+              "button[aria-controls=\"radix-P0-3\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 11,
+      "nodes": [
+        {
+          "html": "<a class=\"skip-link screen-reader-text\" href=\"#content\">Skip to content</a>",
+          "target": [
+            ".skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"fusion-layout-column fusion_builder_column fusion-builder-column-1 fusion_builder_column_3_5 3_5 fusion-flex-column\" style=\"--awb-padding-top:10px;--awb-padding-bottom:10px;--awb-padding-right-small:0px;--awb-padding-left-small:0px;--awb-bg-size:cover;--awb-width-large:60%;--awb-margin-top-large:0px;--awb-spacing-right-large:0px;--awb-margin-bottom-large:0px;--awb-spacing-left-large:0px;--awb-width-medium:33.333333333333%;--awb-order-medium:1;--awb-spacing-right-medium:0px;--awb-spacing-left-medium:0px;--awb-width-small:50%;--awb-order-small:2;--awb-margin-top-small:0px;--awb-spacing-right-small:0px;--awb-margin-bottom-small:11px;--awb-spacing-left-small:0px;\">",
+          "target": [
+            ".fusion-builder-column-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"fusion-image-element sm-text-align-center\" style=\"--awb-margin-bottom:2vh;--awb-max-width:250px;--awb-caption-title-font-family:var(--h2_typography-font-family);--awb-caption-title-font-weight:var(--h2_typography-font-weight);--awb-caption-title-font-style:var(--h2_typography-font-style);--awb-caption-title-size:var(--h2_typography-font-size);--awb-caption-title-transform:var(--h2_typography-text-transform);--awb-caption-title-line-height:var(--h2_typography-line-height);--awb-caption-title-letter-spacing:var(--h2_typography-letter-spacing);\">",
+          "target": [
+            ".fusion-flex-justify-content-center.fusion-content-layout-column.fusion-column-wrapper > .sm-text-align-center.fusion-image-element"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"fusion-layout-column fusion_builder_column fusion-builder-column-25 fusion_builder_column_1_6 1_6 fusion-flex-column fusion-flex-align-self-center\" style=\"--awb-bg-size:cover;--awb-width-large:16.666666666667%;--awb-margin-top-large:0px;--awb-spacing-right-large:11.52%;--awb-margin-bottom-large:0px;--awb-spacing-left-large:11.52%;--awb-width-medium:16.666666666667%;--awb-order-medium:0;--awb-spacing-right-medium:11.52%;--awb-spacing-left-medium:11.52%;--awb-width-small:33.333333333333%;--awb-order-small:0;--awb-spacing-right-small:5.76%;--awb-spacing-left-small:5.76%;\">",
+          "target": [
+            ".fusion-builder-column-25"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"fusion-layout-column fusion_builder_column fusion-builder-column-26 fusion_builder_column_1_6 1_6 fusion-flex-column fusion-flex-align-self-center\" style=\"--awb-bg-size:cover;--awb-width-large:16.666666666667%;--awb-margin-top-large:0px;--awb-spacing-right-large:11.52%;--awb-margin-bottom-large:0px;--awb-spacing-left-large:11.52%;--awb-width-medium:16.666666666667%;--awb-order-medium:0;--awb-spacing-right-medium:11.52%;--awb-spacing-left-medium:11.52%;--awb-width-small:33.333333333333%;--awb-order-small:0;--awb-spacing-right-small:5.76%;--awb-spacing-left-small:5.76%;\">",
+          "target": [
+            ".fusion-builder-column-26"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"fusion-layout-column fusion_builder_column fusion-builder-column-27 fusion_builder_column_1_6 1_6 fusion-flex-column fusion-flex-align-self-center\" style=\"--awb-bg-size:cover;--awb-width-large:16.666666666667%;--awb-margin-top-large:0px;--awb-spacing-right-large:11.52%;--awb-margin-bottom-large:0px;--awb-spacing-left-large:11.52%;--awb-width-medium:16.666666666667%;--awb-order-medium:0;--awb-spacing-right-medium:11.52%;--awb-spacing-left-medium:11.52%;--awb-width-small:33.333333333333%;--awb-order-small:0;--awb-spacing-right-small:5.76%;--awb-spacing-left-small:5.76%;\">",
+          "target": [
+            ".fusion-builder-column-27"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"fusion-fullwidth fullwidth-box fusion-builder-row-13 fusion-flex-container has-pattern-background has-mask-background nonhundred-percent-fullwidth non-hundred-percent-height-scrolling\" style=\"--awb-border-radius-top-left:0px;--awb-border-radius-top-right:0px;--awb-border-radius-bottom-right:0px;--awb-border-radius-bottom-left:0px;--awb-background-color:var(--awb-custom_color_6);--awb-flex-wrap:wrap;\">",
+          "target": [
+            ".fusion-builder-row-13"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"fusion-fullwidth fullwidth-box fusion-builder-row-15 fusion-flex-container has-pattern-background has-mask-background nonhundred-percent-fullwidth non-hundred-percent-height-scrolling\" style=\"--awb-border-sizes-top:1;--awb-border-color:var(--awb-custom_color_1);--awb-border-radius-top-left:0px;--awb-border-radius-top-right:0px;--awb-border-radius-bottom-right:0px;--awb-border-radius-bottom-left:0px;--awb-padding-top:0px;--awb-padding-right:0px;--awb-padding-bottom:0px;--awb-padding-left:0px;--awb-padding-top-medium:0px;--awb-padding-right-medium:0px;--awb-padding-bottom-medium:0px;--awb-padding-left-medium:0px;--awb-padding-top-small:0px;--awb-padding-right-small:0px;--awb-padding-bottom-small:0px;--awb-padding-left-small:0px;--awb-margin-top:0px;--awb-margin-bottom:0px;--awb-margin-top-medium:0px;--awb-margin-bottom-medium:0px;--awb-background-color:var(--awb-color4);--awb-background-color-medium:var(--awb-color4);--awb-background-color-small:var(--awb-color4);--awb-flex-wrap:wrap;\">",
+          "target": [
+            ".fusion-builder-row-15"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"fusion-fullwidth fullwidth-box fusion-builder-row-16 fusion-flex-container nonhundred-percent-fullwidth non-hundred-percent-height-scrolling\" style=\"--link_hover_color: rgba(20,20,23,0.74);--awb-border-sizes-top:0;--awb-border-sizes-bottom:0;--awb-border-sizes-left:0;--awb-border-sizes-right:0;--awb-border-radius-top-left:0px;--awb-border-radius-top-right:0px;--awb-border-radius-bottom-right:0px;--awb-border-radius-bottom-left:0px;--awb-padding-top:1vh;--awb-padding-right:0px;--awb-padding-bottom:1vh;--awb-padding-left:0px;--awb-padding-right-medium:2vh;--awb-padding-left-medium:2vh;--awb-margin-top:0px;--awb-margin-bottom:0px;--awb-background-color:var(--awb-color3);--awb-flex-wrap:wrap;\">",
+          "target": [
+            ".fusion-builder-row-16"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"position: fixed; bottom: 115px; right: 40px; z-index: 2147483647; color: rgb(4, 39, 55); background-color: rgb(216, 216, 216); padding: 10px 14px; border-radius: 8px 8px 0px; font-size: 14px; box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 4px 1px; cursor: pointer; opacity: 1; transition: opacity 300ms ease-in-out; pointer-events: auto;\">",
+          "target": [
+            "body > div:nth-child(19)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"position: fixed; width: 70px; height: 70px; bottom: 25px; right: 25px; z-index: 2147483646; border-radius: 50%; transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out; cursor: pointer; box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 10px 1px; display: flex; justify-content: center; align-items: center; background: rgb(5, 64, 87); color: black;\">",
+          "target": [
+            "body > div:nth-child(21)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
