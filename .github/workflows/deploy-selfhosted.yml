@@ -293,6 +293,7 @@ jobs:
           name: invalid-urls-files
           path: invalid-urls-artifacts/
           retention-days: 30
+          if-no-files-found: ignore
         continue-on-error: true
 
       - name: Validate setup outputs
@@ -1073,7 +1074,24 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git add -A
             git commit -m "Deploy site for ${GITHUB_SHA}"
-            git push origin HEAD:gh-pages
+            PUSH_OK=false
+            for attempt in 1 2 3; do
+              echo "Push attempt $attempt..."
+              git fetch --no-tags --depth=1 --filter=blob:none origin gh-pages || true
+              if git push origin HEAD:gh-pages --force-with-lease; then
+                PUSH_OK=true
+                break
+              fi
+              if [ "$attempt" -lt 3 ]; then
+                echo "Push failed due to remote updates, retrying..."
+                sleep 2
+              fi
+            done
+
+            if [ "$PUSH_OK" != "true" ]; then
+              echo "❌ Failed to publish gh-pages after retries"
+              exit 1
+            fi
             echo "✅ Published updated site to gh-pages"
           else
             echo "ℹ️ No site changes to publish"
