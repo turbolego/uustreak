@@ -1098,7 +1098,15 @@ jobs:
           fi
           popd
 
-          git worktree remove gh-pages-publish --force
+          # Safe cleanup for gh-pages publish worktree
+          if [ -d "gh-pages-publish" ]; then
+            if git worktree list --porcelain | grep -q '^worktree .*/gh-pages-publish$'; then
+              git worktree remove --force gh-pages-publish || true
+            fi
+            rm -rf gh-pages-publish || true
+          fi
+
+          git worktree prune || true
 
       - name: Cleanup runner workspace after deploy
         if: always()
