@@ -187,7 +187,7 @@ jobs:
           cp js/merge-summary-parts.js tests/
       - name: Upload invalid URLs files
         if: always()
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v4
         with:
           name: invalid-urls-files
           path: invalid-urls-artifacts/
@@ -218,7 +218,7 @@ jobs:
         continue-on-error: true
       - name: Upload test results
         if: always()
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v4
         with:
           name: test-results-batch-${{ matrix.batch }}
           path: |
@@ -229,7 +229,7 @@ jobs:
   merge-summaries:
     needs: wcag-test
     runs-on: ubuntu-24.04
-    if: always()
+    if: success()
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -242,7 +242,7 @@ jobs:
           node-version: '24'
           
       - name: Download all test artifacts
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@v4
         with:
           path: artifacts
           pattern: test-results-batch-*
@@ -297,7 +297,7 @@ jobs:
           fi
           
       - name: Upload Merged Summary
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v4
         with:
           name: merged-summary-${{ github.run_id }}
           path: accessibility-reports/summaries/
@@ -306,7 +306,7 @@ jobs:
   deploy:
     needs: [wcag-test, merge-summaries]
     runs-on: ubuntu-24.04
-    if: always()
+    if: success()
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -322,20 +322,34 @@ jobs:
           ref: gh-pages
           path: gh-pages-fallback
           fetch-depth: 1
-        continue-on-error: true
+
+      - name: Validate gh-pages seed checkout
+        run: |
+          if [ ! -d "gh-pages-fallback" ]; then
+            echo "❌ gh-pages fallback checkout directory is missing"
+            exit 1
+          fi
+
+          if [ ! -f "gh-pages-fallback/historical-data/report-list.json" ]; then
+            echo "❌ gh-pages fallback is missing historical-data/report-list.json"
+            echo "Refusing to continue to avoid accidental history wipe"
+            exit 1
+          fi
+
+          echo "✅ gh-pages fallback checkout validated"
       - name: Download all artifacts
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@v4
         with:
           path: artifacts
           pattern: test-results-batch-*
           merge-multiple: true
       - name: Download merged summary artifacts
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@v4
         with:
           name: merged-summary-${{ github.run_id }}
           path: merged-summaries
       - name: Download invalid URLs files
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@v4
         with:
           name: invalid-urls-files
           path: invalid-urls-artifacts
@@ -392,6 +406,99 @@ jobs:
             echo "Today's archive is not present; continuing because some runs produce placeholder-only data."
           fi
           echo "Archive count: $(find site-output/accessibility-reports/archives -name 'reports_*.tar.gz' | wc -l)"
+
+      - name: Pre-publish sanity gate
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+
+          const artifactsDir = path.resolve('artifacts');
+          const outputDir = path.resolve('site-output');
+          const reportListPath = path.join(outputDir, 'historical-data', 'report-list.json');
+
+          function fail(message) {
+            console.error(`❌ ${message}`);
+            process.exit(1);
+          }
+
+          function walkFiles(dirPath) {
+            if (!fs.existsSync(dirPath)) {
+              return [];
+            }
+
+            const files = [];
+            const stack = [dirPath];
+            while (stack.length > 0) {
+              const current = stack.pop();
+              for (const entry of fs.readdirSync(current, { withFileTypes: true })) {
+                const fullPath = path.join(current, entry.name);
+                if (entry.isDirectory()) {
+                  stack.push(fullPath);
+                } else {
+                  files.push(fullPath);
+                }
+              }
+            }
+            return files;
+          }
+
+          function isViolationReport(filePath) {
+            const name = path.basename(filePath);
+            return name.startsWith('violations-') && name.endsWith('.json') && !name.includes('-FAILED.json');
+          }
+
+          if (!fs.existsSync(reportListPath)) {
+            fail('site-output/historical-data/report-list.json is missing');
+          }
+
+          let reportList;
+          try {
+            reportList = JSON.parse(fs.readFileSync(reportListPath, 'utf8'));
+          } catch (error) {
+            fail(`Unable to parse report-list.json: ${error.message}`);
+          }
+
+          if (!Array.isArray(reportList) || reportList.length === 0) {
+            fail('report-list.json is empty or not an array');
+          }
+
+          const artifactReports = walkFiles(artifactsDir).filter(isViolationReport);
+          if (artifactReports.length === 0) {
+            fail('No violations-*.json files found in artifacts; refusing to publish to avoid deleting history with empty input');
+          }
+
+          const expectedByDate = new Map();
+          for (const filePath of artifactReports) {
+            const fileName = path.basename(filePath);
+            const match = fileName.match(/-(\d{4}-\d{2}-\d{2})T/);
+            if (!match) {
+              continue;
+            }
+            const date = match[1];
+            expectedByDate.set(date, (expectedByDate.get(date) || 0) + 1);
+          }
+
+          if (expectedByDate.size === 0) {
+            fail('Could not derive expected report dates from artifacts');
+          }
+
+          for (const [date, expectedCount] of expectedByDate.entries()) {
+            const dateDir = path.join(outputDir, 'accessibility-reports', date);
+            const actualCount = walkFiles(dateDir).filter(isViolationReport).length;
+            const reportListCountForDate = reportList.filter((entry) => typeof entry === 'string' && entry.includes(`/accessibility-reports/${date}/`) && entry.includes('violations-') && entry.endsWith('.json')).length;
+
+            if (actualCount < expectedCount) {
+              fail(`Expected at least ${expectedCount} reports for ${date} in site-output, found ${actualCount}`);
+            }
+
+            if (reportListCountForDate < expectedCount) {
+              fail(`Expected at least ${expectedCount} report-list entries for ${date}, found ${reportListCountForDate}`);
+            }
+          }
+
+          console.log(`✅ Sanity gate passed: report-list entries=${reportList.length}, artifact reports=${artifactReports.length}, dates checked=${expectedByDate.size}`);
+          NODE
       - name: Create or Update GitHub Issues
         uses: actions/github-script@v9
         continue-on-error: true

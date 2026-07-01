@@ -172,6 +172,18 @@ function createPlaceholder(targetDir, currentDate) {
     fs.writeFileSync(placeholderPath, JSON.stringify(placeholder, null, 2), 'utf8');
 }
 
+function listExistingReportDates(outputDir) {
+    const reportsRoot = path.join(outputDir, 'accessibility-reports');
+    if (!fs.existsSync(reportsRoot)) {
+        return [];
+    }
+
+    return fs.readdirSync(reportsRoot, { withFileTypes: true })
+        .filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/.test(entry.name))
+        .map((entry) => entry.name)
+        .sort();
+}
+
 function overlayStaticSite(sourceDir, outputDir) {
     const rootEntries = fs.readdirSync(sourceDir, { withFileTypes: true });
     const allowedRootFiles = new Set([
@@ -346,6 +358,7 @@ function main() {
     const invalidUrlsDir = process.env.INVALID_URLS_DIR ? resolvePath(process.env.INVALID_URLS_DIR) : null;
     const outputDir = resolvePath(process.env.PAGES_OUTPUT_DIR, path.join(sourceDir, 'site-output'));
     const currentDate = process.env.CURRENT_DATE || new Date().toISOString().split('T')[0];
+    const forceFullMetadataRebuild = process.env.FORCE_FULL_METADATA_REBUILD === 'true';
 
     removeIfExists(outputDir);
     ensureDir(outputDir);
@@ -494,12 +507,26 @@ function main() {
     ensureDir(path.join(outputDir, 'historical-data'));
     ensureDir(path.join(outputDir, 'accessibility-reports', 'archives'));
 
+    const reportListPath = path.join(outputDir, 'historical-data', 'report-list.json');
+    const streakIndexPath = path.join(outputDir, 'historical-data', 'streak-index.json');
+    const archiveIndexPath = path.join(outputDir, 'accessibility-reports', 'archives', 'archive_index.json');
+    const shouldRebuildAllMetadata = forceFullMetadataRebuild
+        || !fs.existsSync(reportListPath)
+        || !fs.existsSync(streakIndexPath)
+        || !fs.existsSync(archiveIndexPath);
+
+    if (shouldRebuildAllMetadata) {
+        for (const date of listExistingReportDates(outputDir)) {
+            touchedDates.add(date);
+        }
+        log(`Rebuilding metadata from all existing report dates (${touchedDates.size} dates)`);
+    }
+
     if (touchedDates.size > 0) {
         updateArchiveIndex(outputDir, touchedDates);
         updateReportList(outputDir, touchedDates);
         updateStreakIndex(outputDir, touchedDates);
     } else {
-        const archiveIndexPath = path.join(outputDir, 'accessibility-reports', 'archives', 'archive_index.json');
         if (!fs.existsSync(archiveIndexPath)) {
             writeJson(archiveIndexPath, []);
         }

@@ -917,7 +917,21 @@ jobs:
           ref: gh-pages
           path: gh-pages-fallback
           fetch-depth: 1
-        continue-on-error: true
+
+      - name: Validate gh-pages seed checkout
+        run: |
+          if [ ! -d "gh-pages-fallback" ]; then
+            echo "❌ gh-pages fallback checkout directory is missing"
+            exit 1
+          fi
+
+          if [ ! -f "gh-pages-fallback/historical-data/report-list.json" ]; then
+            echo "❌ gh-pages fallback is missing historical-data/report-list.json"
+            echo "Refusing to continue to avoid accidental history wipe"
+            exit 1
+          fi
+
+          echo "✅ gh-pages fallback checkout validated"
 
       - name: Check disk space and pre-clean runner caches
         run: |
@@ -1031,6 +1045,101 @@ jobs:
           find site-output/accessibility-reports -maxdepth 1 -type d -name "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" | sort || true
           ls -lh site-output/accessibility-reports/archives/*.tar.gz 2>/dev/null | tail -5 || echo "No archives found"
 
+      - name: Pre-publish sanity gate
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+
+          const artifactsDir = path.resolve('artifacts');
+          const outputDir = path.resolve('site-output');
+          const reportListPath = path.join(outputDir, 'historical-data', 'report-list.json');
+
+          function fail(message) {
+            console.error(`❌ ${message}`);
+            process.exit(1);
+          }
+
+          function walkFiles(dirPath) {
+            if (!fs.existsSync(dirPath)) {
+              return [];
+            }
+
+            const results = [];
+            const stack = [dirPath];
+
+            while (stack.length > 0) {
+              const current = stack.pop();
+              for (const entry of fs.readdirSync(current, { withFileTypes: true })) {
+                const fullPath = path.join(current, entry.name);
+                if (entry.isDirectory()) {
+                  stack.push(fullPath);
+                } else {
+                  results.push(fullPath);
+                }
+              }
+            }
+
+            return results;
+          }
+
+          function isViolationReport(filePath) {
+            const name = path.basename(filePath);
+            return name.startsWith('violations-') && name.endsWith('.json') && !name.includes('-FAILED.json');
+          }
+
+          if (!fs.existsSync(reportListPath)) {
+            fail('site-output/historical-data/report-list.json is missing');
+          }
+
+          let reportList;
+          try {
+            reportList = JSON.parse(fs.readFileSync(reportListPath, 'utf8'));
+          } catch (error) {
+            fail(`Unable to parse report-list.json: ${error.message}`);
+          }
+
+          if (!Array.isArray(reportList) || reportList.length === 0) {
+            fail('report-list.json is empty or not an array');
+          }
+
+          const artifactReports = walkFiles(artifactsDir).filter(isViolationReport);
+          if (artifactReports.length === 0) {
+            fail('No violations-*.json files found in artifacts; refusing to publish to avoid deleting history with empty input');
+          }
+
+          const expectedByDate = new Map();
+          for (const filePath of artifactReports) {
+            const fileName = path.basename(filePath);
+            const match = fileName.match(/-(\d{4}-\d{2}-\d{2})T/);
+            if (!match) {
+              continue;
+            }
+            const date = match[1];
+            expectedByDate.set(date, (expectedByDate.get(date) || 0) + 1);
+          }
+
+          if (expectedByDate.size === 0) {
+            fail('Could not derive expected report dates from artifacts');
+          }
+
+          for (const [date, expectedCount] of expectedByDate.entries()) {
+            const dateDir = path.join(outputDir, 'accessibility-reports', date);
+            const actualCount = walkFiles(dateDir).filter(isViolationReport).length;
+            const reportListCountForDate = reportList.filter((entry) => typeof entry === 'string' && entry.includes(`/accessibility-reports/${date}/`) && entry.includes('violations-') && entry.endsWith('.json')).length;
+
+            if (actualCount < expectedCount) {
+              fail(`Expected at least ${expectedCount} reports for ${date} in site-output, found ${actualCount}`);
+            }
+
+            if (reportListCountForDate < expectedCount) {
+              fail(`Expected at least ${expectedCount} report-list entries for ${date}, found ${reportListCountForDate}`);
+            }
+          }
+
+          console.log(`✅ Sanity gate passed: report-list entries=${reportList.length}, artifact reports=${artifactReports.length}, dates checked=${expectedByDate.size}`);
+          NODE
+
       - name: Create or Update GitHub Issues
         uses: actions/github-script@v9
         timeout-minutes: 12
@@ -1055,6 +1164,17 @@ jobs:
 
           PUBLISH_DIR="${RUNNER_TEMP:-/tmp}/gh-pages-publish-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT:-1}"
           rm -rf "$PUBLISH_DIR"
+
+          cleanup_publish_worktree() {
+            if [ -n "${PUBLISH_DIR:-}" ] && [ -d "$PUBLISH_DIR" ]; then
+              if git worktree list --porcelain | grep -Fq "worktree $PUBLISH_DIR"; then
+                git worktree remove --force "$PUBLISH_DIR" || true
+              fi
+              rm -rf "$PUBLISH_DIR" || true
+            fi
+            git worktree prune || true
+          }
+          trap cleanup_publish_worktree EXIT
 
           # Keep fetch footprint minimal for persistent runners under storage pressure
           git fetch --no-tags --depth=1 --filter=blob:none origin gh-pages || true
@@ -1095,20 +1215,12 @@ jobs:
             done
 
             if [ "$PUSH_OK" != "true" ]; then
-              echo "❌ Failed to publish gh-pages after retries"
-              exit 1
-            echo "✅ Published updated site to gh-pages"
-          else
-          if [ -d "$PUBLISH_DIR" ]; then
-            if git worktree list --porcelain | grep -Fq "worktree $PUBLISH_DIR"; then
-              git worktree remove --force "$PUBLISH_DIR" || true
+                fi
 
-          # Safe cleanup for gh-pages publish worktree
-          if [ -d "gh-pages-publish" ]; then
-            if git worktree list --porcelain | grep -q '^worktree .*/gh-pages-publish$'; then
+                echo "✅ Published updated site to gh-pages"
+              echo "❌ Failed to publish gh-pages after retries"
+                echo "No changes to publish"
               git worktree remove --force gh-pages-publish || true
-            fi
-            rm -rf gh-pages-publish || true
           fi
 
           git worktree prune || true
