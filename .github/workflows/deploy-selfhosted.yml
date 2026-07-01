@@ -68,7 +68,7 @@ jobs:
             echo "This is a retry attempt due to previous failures."
           fi
 
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           ref: main
           fetch-depth: 1
@@ -343,7 +343,7 @@ jobs:
           }
 
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: main
           fetch-depth: 1
@@ -684,7 +684,7 @@ jobs:
           }
 
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: main
           fetch-depth: 1
@@ -899,7 +899,7 @@ jobs:
           }
 
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: main
           fetch-depth: 1
@@ -912,7 +912,7 @@ jobs:
           node-version: '24'
 
       - name: Checkout published site snapshot
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: gh-pages
           path: gh-pages-fallback
