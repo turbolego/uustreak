@@ -1126,7 +1126,14 @@ jobs:
           for (const [date, expectedCount] of expectedByDate.entries()) {
             const dateDir = path.join(outputDir, 'accessibility-reports', date);
             const actualCount = walkFiles(dateDir).filter(isViolationReport).length;
-            const reportListCountForDate = reportList.filter((entry) => typeof entry === 'string' && entry.includes(`/accessibility-reports/${date}/`) && entry.includes('violations-') && entry.endsWith('.json')).length;
+            const reportListCountForDate = reportList.filter((entry) => {
+              if (typeof entry !== 'string') {
+                return false;
+              }
+
+              const normalizedEntry = entry.startsWith('/') ? entry.slice(1) : entry;
+              return normalizedEntry.includes(`accessibility-reports/${date}/`) && normalizedEntry.includes('violations-') && normalizedEntry.endsWith('.json');
+            }).length;
 
             if (actualCount < expectedCount) {
               fail(`Expected at least ${expectedCount} reports for ${date} in site-output, found ${actualCount}`);
