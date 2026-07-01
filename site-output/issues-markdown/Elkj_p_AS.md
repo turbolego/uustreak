@@ -1,0 +1,50 @@
+# WCAG Violations Report for Elkjøp AS
+
+**Timestamp:** 2026-07-01T11:04:52.355Z
+**URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
+**Total Violations:** 3
+
+## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 5
+
+#### Affected Elements:
+
+- `.top-header-block > p`
+- `a[target="_self"] > .underline`
+- `span[data-highlight-price="8409"] > .inc-vat`
+- `a[data-item-id="604300"] > .col-start-1.mb-auto.pt-2 > .md\:gap-x-3.gap-x-2.flex-wrap > .items-start.flex-col.flex > .pb-\[1px\].leading-\[0\.75rem\][data-highlight-price="6000"] > .inc-vat`
+- `a[data-item-id="1014150"] > .col-start-1.mb-auto.pt-2 > .md\:gap-x-3.gap-x-2.flex-wrap > .items-start.flex-col.flex > .pb-\[1px\].leading-\[0\.75rem\][data-highlight-price="4000"] > .inc-vat`
+
+### <li> elements must be contained in a <ul> or <ol>
+
+- **Impact:** serious
+- **Description:** Ensure <li> elements are used semantically
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/listitem?application=playwright
+- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 3
+
+#### Affected Elements:
+
+- `button:nth-child(1) > .xl\:flex-col.text-\(--header-text\).px-4`
+- `div[data-component="AccountPopoverMenu"] > .xl\:flex-col.text-\(--header-text\).px-4`
+- `li[data-testid="cart"]`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.cms-header`
+- `#kindly-chat-api > div,.sc-iUlCMS`

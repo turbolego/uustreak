@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All WCAG Violations - Line Graph</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/gzip-utils.js"></script>
+    <script src="js/loading.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            overflow-x: hidden;
+            background: #f5f5f5;
+        }
+
+        .header {
+            background: white;
+            padding: 0.75rem 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header-controls label {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .header-controls select {
+            padding: 0.4rem 0.6rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .chart-wrapper {
+            width: 100vw;
+            height: calc(100vh - 60px);
+            position: relative;
+            background: white;
+        }
+
+        #mainChart {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .info-box {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 0.75rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            font-size: 0.85rem;
+            max-width: 300px;
+            z-index: 50;
+        }
+
+        .info-box.hidden {
+            display: none;
+        }
+
+        .loading-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            text-align: center;
+            z-index: 200;
+        }
+
+        .loading-message.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>All WCAG Violations - Line Graph</h1>
+        <div class="header-controls">
+            <label for="date-range">Date Range:</label>
+            <select id="date-range">
+                <option value="7">Last 7 Days</option>
+                <option value="14">Last 14 Days</option>
+                <option value="30" selected>Last 30 Days</option>
+                <option value="60">Last 60 Days</option>
+                <option value="90">Last 90 Days</option>
+                <option value="all">All Data</option>
+            </select>
+            <label>
+                <input type="checkbox" id="show-points" checked>
+                Show Points
+            </label>
+            <label>
+                <input type="checkbox" id="show-labels" checked>
+                Show Labels
+            </label>
+        </div>
+    </div>
+
+    <div class="chart-wrapper">
+        <canvas id="mainChart"></canvas>
+    </div>
+
+    <div class="info-box" id="infoBox">
+        <div><strong>Projects:</strong> <span id="projectCount">0</span></div>
+        <div><strong>Date Range:</strong> <span id="dateRange">-</span></div>
+        <div style="margin-top: 0.5rem; font-size: 0.8rem; color: #666;">
+            Hover over lines for details. Click and drag to zoom.
+        </div>
+    </div>
+
+    <div class="loading-message" id="loadingMessage">
+        <h2>Loading data...</h2>
+        <p>Please wait while we load the reports.</p>
+    </div>
+
+    <script>
+        // Global state
+        let reportList = [];
+        let availableDates = [];
+        let allProjectsData = new Map();
+        let allProjects = new Set();
+        let chart = null;
+        let loadingContainer = null;
+
+        // Initialize
+        async function initialize() {
+            try {
+                showLoadingMessage(true);
+                
+                // Check if gzip utilities are available
+                if (typeof fetchAndDecompressArchive !== 'function') {
+                    throw new Error('Gzip utilities not loaded. Please ensure gzip-utils.js is loaded.');
+                }
+
+                // Fetch report list
+                const response = await fetch('historical-data/report-list.json');
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch report list: ${response.statusText}`);
+                }
+                
+                reportList = await response.json();
+                console.log(`Loaded ${reportList.length} reports from list`);
+
+                // Extract available dates
+                availableDates = extractDates(reportList);
+                console.log(`Found ${availableDates.length} unique dates`);
+
+                // Load data for the default date range
+                await loadDataForDateRange(30);
+
+                // Create chart
+                createChart();
+
+                showLoadingMessage(false);
+                updateInfoBox();
+            } catch (error) {
+                console.error('Initialization error:', error);
+                alert(`Failed to initialize: ${error.message}`);
+                showLoadingMessage(false);
+            }
+        }
+
+        // Extract unique dates
+        function extractDates(reports) {
+            const dates = new Set();
+            reports.forEach(filename => {
+                if (filename.includes('-FAILED.json')) return;
+                const match = filename.match(/\d{4}-\d{2}-\d{2}/);
+                if (match) {
+                    dates.add(match[0]);
+                }
+            });
+            return Array.from(dates).sort();
+        }
+
+        // Parse report filename
+        function parseReportFilename(filename) {
+            if (filename.includes('-FAILED.json')) return null;
+            
+            const match = filename.match(/violations-(.+)-(\d{4}-\d{2}-\d{2})T(\d{2}-\d{2}-\d{2}_\d{3}Z)(?:-count-(\d+))?\.json$/);
+            if (!match) return null;
+
+            return {
+                filename,
+                project: match[1].replace(/_/g, ' '),
+                date: match[2],
+                time: match[3],
+                violationCount: match[4] ? parseInt(match[4]) : null
+            };
+        }
+
+        // Load data for date range
+        async function loadDataForDateRange(days) {
+            showLoadingMessage(true);
+            allProjectsData.clear();
+            allProjects.clear();
+
+            let datesToLoad = [];
+            if (days === 'all') {
+                datesToLoad = [...availableDates];
+            } else {
+                const endDate = availableDates[availableDates.length - 1];
+                const startDate = new Date(endDate);
+                startDate.setDate(startDate.getDate() - days);
+                datesToLoad = availableDates.filter(date => new Date(date) >= startDate);
+            }
+
+            console.log(`Loading data for ${datesToLoad.length} dates`);
+
+            for (let i = 0; i < datesToLoad.length; i++) {
+                const date = datesToLoad[i];
+                try {
+                    await loadDataForDate(date);
+                } catch (error) {
+                    console.error(`Failed to load data for ${date}:`, error);
+                }
+            }
+
+            console.log(`Loaded data for ${allProjectsData.size} dates and ${allProjects.size} projects`);
+            showLoadingMessage(false);
+        }
+
+        // Load data for specific date using gzip archives
+        async function loadDataForDate(date) {
+            const archiveUrl = `accessibility-reports/archives/reports_${date}.tar.gz`;
+            
+            try {
+                const jsonFiles = await fetchAndDecompressArchive(archiveUrl);
+                
+                if (!allProjectsData.has(date)) {
+                    allProjectsData.set(date, new Map());
+                }
+                
+                const dateData = allProjectsData.get(date);
+
+                Object.entries(jsonFiles).forEach(([filename, report]) => {
+                    const parsed = parseReportFilename(filename);
+                    if (!parsed) return;
+
+                    const projectName = parsed.project;
+                    allProjects.add(projectName);
+
+                    if (!dateData.has(projectName) || parsed.time > dateData.get(projectName).time) {
+                        dateData.set(projectName, {
+                            time: parsed.time,
+                            violations: report.total_violations || 0,
+                            details: report
+                        });
+                    }
+                });
+
+                console.log(`Loaded ${Object.keys(jsonFiles).length} reports from archive for ${date}`);
+            } catch (error) {
+                console.warn(`Archive not available for ${date}:`, error);
+            }
+        }
+
+        // Create the chart
+        function createChart() {
+            const ctx = document.getElementById('mainChart').getContext('2d');
+            
+            if (chart) {
+                chart.destroy();
+            }
+
+            const dates = Array.from(allProjectsData.keys()).sort();
+            const datasets = [];
+            const colors = generateColors(allProjects.size);
+            
+            const showPoints = document.getElementById('show-points').checked;
+            const showLabels = document.getElementById('show-labels').checked;
+
+            // Create dataset for each project
+            Array.from(allProjects).sort().forEach((project, index) => {
+                const data = dates.map(date => {
+                    const dateData = allProjectsData.get(date);
+                    return dateData.has(project) ? dateData.get(project).violations : null;
+                });
+
+                const color = colors[index];
+                
+                datasets.push({
+                    label: project,
+                    data: data,
+                    borderColor: color.border,
+                    backgroundColor: color.background,
+                    borderWidth: 1.5,
+                    pointRadius: showPoints ? 2 : 0,
+                    pointHoverRadius: 5,
+                    tension: 0.1,
+                    spanGaps: true,
+                    // Add datalabels plugin configuration for inline labels
+                    datalabels: {
+                        display: showLabels ? 'auto' : false,
+                        align: 'end',
+                        anchor: 'end',
+                        formatter: (value, context) => {
+                            // Only show label at the last point
+                            if (context.dataIndex === context.dataset.data.length - 1) {
+                                return project;
+                            }
+                            return '';
+                        },
+                        font: {
+                            size: 9,
+                            weight: 'normal'
+                        },
+                        color: color.border,
+                        offset: 4,
+                        clamp: true
+                    }
+                });
+            });
+
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: dates,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        duration: 0
+                    },
+                    interaction: {
+                        mode: 'nearest',
+                        axis: 'xy',
+                        intersect: true
+                    },
+                    plugins: {
+                        legend: {
+                            display: false // Hide legend to save space
+                        },
+                        tooltip: {
+                            enabled: true,
+                            mode: 'nearest',
+                            intersect: true,
+                            callbacks: {
+                                title: (items) => {
+                                    if (items.length > 0) {
+                                        return items[0].label;
+                                    }
+                                    return '';
+                                },
+                                label: (context) => {
+                                    return `${context.dataset.label}: ${context.parsed.y} violations`;
+                                }
+                            }
+                        },
+                        zoom: {
+                            zoom: {
+                                wheel: {
+                                    enabled: true,
+                                },
+                                pinch: {
+                                    enabled: true
+                                },
+                                drag: {
+                                    enabled: true
+                                },
+                                mode: 'xy',
+                            },
+                            pan: {
+                                enabled: true,
+                                mode: 'xy'
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Date',
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            },
+                            ticks: {
+                                maxRotation: 45,
+                                minRotation: 45,
+                                font: {
+                                    size: 10
+                                }
+                            },
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Number of Violations',
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            },
+                            beginAtZero: true,
+                            ticks: {
+                                font: {
+                                    size: 10
+                                }
+                            },
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Generate colors for datasets
+        function generateColors(count) {
+            const colors = [];
+            const hueStep = 360 / count;
+            
+            for (let i = 0; i < count; i++) {
+                const hue = i * hueStep;
+                const saturation = 60 + (i % 3) * 10; // Vary saturation
+                const lightness = 45 + (i % 4) * 5; // Vary lightness
+                
+                colors.push({
+                    background: `hsla(${hue}, ${saturation}%, ${lightness}%, 0.6)`,
+                    border: `hsla(${hue}, ${saturation}%, ${lightness - 10}%, 1)`
+                });
+            }
+            
+            return colors;
+        }
+
+        // Update info box
+        function updateInfoBox() {
+            const dates = Array.from(allProjectsData.keys()).sort();
+            document.getElementById('projectCount').textContent = allProjects.size;
+            
+            if (dates.length > 0) {
+                const startDate = dates[0];
+                const endDate = dates[dates.length - 1];
+                document.getElementById('dateRange').textContent = `${startDate} to ${endDate}`;
+            }
+        }
+
+        // Event listeners
+        document.getElementById('date-range').addEventListener('change', async function() {
+            const value = this.value;
+            const days = value === 'all' ? 'all' : parseInt(value);
+            await loadDataForDateRange(days);
+            createChart();
+            updateInfoBox();
+        });
+
+        document.getElementById('show-points').addEventListener('change', () => {
+            createChart();
+        });
+
+        document.getElementById('show-labels').addEventListener('change', () => {
+            createChart();
+        });
+
+        // Helper functions
+        function showLoadingMessage(show) {
+            const loadingMsg = document.getElementById('loadingMessage');
+            if (show) {
+                loadingMsg.classList.remove('hidden');
+            } else {
+                loadingMsg.classList.add('hidden');
+            }
+        }
+
+        // Initialize on load
+        window.addEventListener('load', initialize);
+    </script>
+</body>
+</html>
