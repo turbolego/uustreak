@@ -1,0 +1,429 @@
+{
+  "project": "Stiftelsen Hudøy",
+  "timestamp": "2025-12-31T00:26:26.848Z",
+  "url": "https://hudoy.no/#",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<span class=\"av-countdown-time \" data-upate-width=\"days\" style=\"\">173</span>",
+          "target": [
+            ".av-countdown-time"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.41 (foreground color: #c84246, background color: #fff4ce, font size: 16.5pt (22px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"av-countdown-time-label \" data-label=\"Day\" data-label-multi=\"Days\">dager</span>",
+          "target": [
+            ".av-countdown-time-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.41 (foreground color: #c84246, background color: #fff4ce, font size: 16.5pt (22px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe src=\"//player.vimeo.com/video/1035582714?portrait=0&amp;byline=0&amp;title=0&amp;badge=0&amp;loop=1&amp;autopause=0&amp;api=1&amp;rel=0&amp;player_id=player_330_1678093084_2138320437&amp;color=00414f\"></iframe>",
+          "target": [
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<h6 class=\"av-special-heading-tag \" itemprop=\"headline\">Oslo kommunes feriekoloni siden 1916</h6>",
+          "target": [
+            ".classic-quote-left > h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h3 class=\"slide-entry-title entry-title \" itemprop=\"headline\"><a href=\"https://hudoy.no/2025/11/05/si-ifra/\" title=\"Si ifra: Hudøy ønsker å høre fra deg!\">Si ifra: Hudøy ønsker å høre fra deg!</a></h3>",
+          "target": [
+            ".post-entry-8117 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h3 class=\"widgettitle\">Om</h3>",
+          "target": [
+            "#nav_menu-2 > .widgettitle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 13,
+      "nodes": [
+        {
+          "html": "<a href=\"https://ferdernasjonalpark.no/\" class=\"avia_image\" target=\"_blank\" rel=\"noopener noreferrer\">",
+          "target": [
+            "a[href$=\"ferdernasjonalpark.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://sparebankstiftelsen.no/\" class=\"avia_image\" target=\"_blank\" rel=\"noopener noreferrer\">",
+          "target": [
+            ".avia-builder-el-39 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel=\"noopener noreferrer\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.bufdir.no/\" class=\"avia_image\" target=\"_blank\" rel=\"noopener noreferrer\">",
+          "target": [
+            "a[href$=\"bufdir.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://bergesenstiftelsen.no/\" class=\"avia_image\" target=\"_blank\" rel=\"noopener noreferrer\">",
+          "target": [
+            "a[href$=\"bergesenstiftelsen.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://eckbos-legat.no/\" class=\"avia_image\" target=\"_blank\" rel=\"noopener noreferrer\">",
+          "target": [
+            "a[href$=\"eckbos-legat.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.gjensidigestiftelsen.no/\" class=\"avia_image\" target=\"_blank\" rel=\"noopener noreferrer\">",
+          "target": [
+            ".avia-builder-el-48 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel=\"noopener noreferrer\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://scheibler.no/\" class=\"avia_image\" target=\"_blank\" rel=\"noopener noreferrer\">",
+          "target": [
+            "a[href$=\"scheibler.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.oddfellow.no/category.php?categoryID=8431\" class=\"avia_image\" target=\"_blank\" rel=\"noopener noreferrer\">",
+          "target": [
+            ".avia-builder-el-52 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel=\"noopener noreferrer\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.oddfellow.no/category.php?categoryID=8437\" class=\"avia_image\" target=\"_blank\" rel=\"noopener noreferrer\">",
+          "target": [
+            ".avia-builder-el-54 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel=\"noopener noreferrer\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.oddfellow.no/category.php?categoryID=8437\" class=\"avia_image\" target=\"_blank\" rel=\"noopener noreferrer\">",
+          "target": [
+            ".avia-builder-el-56 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel=\"noopener noreferrer\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/hudoy_offisiell/\" target=\"_blank\" rel=\"noopener\" class=\"alignleft\" style=\"float: left; margin: 0px; padding: 0px;\">",
+          "target": [
+            "div:nth-child(1) > .alignleft[rel=\"noopener\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.facebook.com/CampHudoy\" target=\"_blank\" rel=\"noopener\" class=\"alignleft\" style=\"float: left; margin: 0px; padding: 0px;\">",
+          "target": [
+            "div:nth-child(2) > .alignleft[rel=\"noopener\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.oslo.kommune.no/natur-kultur-og-fritid/kunst-og-kultur/kultureiendommer/hudoy/#gref\" target=\"_blank\" rel=\"noopener\" class=\"alignleft\" style=\"float: left; margin: 0px; padding: 0px;\">",
+          "target": [
+            "p > .alignleft[rel=\"noopener\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 26,
+      "nodes": [
+        {
+          "html": "<div class=\"FocusTarget_module_focusTarget__abd564d5 shared_module_focusable__29a0c6d5\" role=\"slider\" aria-label=\"Progress Bar\" aria-valuemin=\"0\" aria-valuemax=\"60\" aria-valuenow=\"0\" aria-valuetext=\"00:00 of 01:00\" tabindex=\"0\" data-progress-bar-focus-target=\"true\"></div>",
+          "target": [
+            "iframe",
+            ".FocusTarget_module_focusTarget__abd564d5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div role=\"slider\" class=\"VolumeControl_module...\" tabindex=\"0\" aria-label=\"Volume (use up/down ...\" aria-valuenow=\"100\" aria-valuetext=\"100% volume\" aria-valuemin=\"0\" aria-valuemax=\"100\" data-volume-control=\"true\" style=\"overflow: hidden; op...\">",
+          "target": [
+            "iframe",
+            ".VolumeControl_module_volumeControl__02ffae11"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://vimeo.com/1035582714?fl=pl&fe=vl\" class=\"Link_module_link__bdf8051d VimeoLogoLink_module_vimeoLogo__970f58c4 shared_module_focusable__29a0c6d5\" aria-describedby=\"new-window\" target=\"_blank\" rel=\"noopener\" data-vimeo-logo=\"true\" aria-label=\"Watch on Vimeo\">",
+          "target": [
+            "iframe",
+            "a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"slide-entry-wrap active-slide\" style=\"visibility: visible; z-index: 4; opacity: 1; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transition: none;\">",
+          "target": [
+            ".active-slide.slide-entry-wrap"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"av_textblock_section \" itemscope=\"itemscope\" itemtype=\"https://schema.org/CreativeWork\"><div class=\"avia_textblock  \" itemprop=\"text\"><h1 style=\"text-align: center;\">Aktuelt</h1>\n</div></section>",
+          "target": [
+            "#after_section_3 > .container > .template-page.content.av-content-full > .post-entry-type-page.post-entry-330.post-entry > .entry-content-wrapper.clearfix > .av_textblock_section"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"slide-entry-title entry-title \" itemprop=\"headline\"><a href=\"https://hudoy.no/2025/11/05/si-ifra/\" title=\"Si ifra: Hudøy ønsker å høre fra deg!\">Si ifra: Hudøy ønsker å høre fra deg!</a></h3>",
+          "target": [
+            ".post-entry-8117 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"slide-entry-title entry-title \" itemprop=\"headline\"><a href=\"https://hudoy.no/2025/08/30/hudoymetoden/\" title=\"Skjermfri sommer: Barnelege Bård Fossli Jensen om «Hudøymetoden»\">Skjermfri sommer: Barnelege Bård Fossli Jensen om «Hudøymetoden»</a></h3>",
+          "target": [
+            ".post-entry-8063 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"slide-entry-title entry-title \" itemprop=\"headline\"><a href=\"https://hudoy.no/2025/08/07/hittegods/\" title=\"Hittegods og gjenglemt etter Camp Hudøy\">Hittegods og gjenglemt etter Camp Hudøy</a></h3>",
+          "target": [
+            ".post-entry-6343 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"av-rotator-text-single av-rotator-text-single-4\" style=\"display: inline;\">show show show</span>",
+          "target": [
+            ".av-rotator-text-single-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"flex_column_table av-equal-height-column-flextable -flextable\">",
+          "target": [
+            "#av_section_6 > .container > .template-page.content.av-content-full > .post-entry-type-page.post-entry-330.post-entry > .entry-content-wrapper.clearfix > .flex_column_table.av-equal-height-column-flextable.-flextable"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"text-align:center; m...\" class=\"av-rotator-container...\" data-interval=\"4\" data-animation=\"typewriter\" data-fixwidth=\"1\">",
+          "target": [
+            ".avia-builder-el-33"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"flex_column av_one_fifth  first el_before_av_one_fifth\">",
+          "target": [
+            ".container:nth-child(2) > .first.el_before_av_one_fifth.av_one_fifth"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth \">",
+          "target": [
+            ".el_after_av_one_fifth.el_before_av_one_fifth.av_one_fifth:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth \">",
+          "target": [
+            ".el_after_av_one_fifth.el_before_av_one_fifth.av_one_fifth:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth \">",
+          "target": [
+            ".el_after_av_one_fifth.el_before_av_one_fifth.av_one_fifth:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/hudoy_offisiell\" target=\"_blank\" rel=\"noopener\">@hudoy_offisiell</a>",
+          "target": [
+            "a[rel=\"noopener\"][target=\"_blank\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.facebook.com/CampHudoy\" target=\"_blank\" rel=\"noopener\">@CampHudoy</a>",
+          "target": [
+            "a[rel=\"noopener\"][target=\"_blank\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section style=\"background:#bacacd; text-align: center; padding: 8px 0px; color: rgba(0, 64, 79, 1); font-size: 14px\" id=\"design-by-netpower\">\n    <a href=\"http://netpower.no\" style=\"color: rgba(0, 64, 79, 1)\">\n        © Camp Hudøy 2020 | Design og utvikling: Netpower\n    </a>\n</section>",
+          "target": [
+            "#design-by-netpower"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#\" title=\"Norwegian\" data-gt-lang=\"no\" class=\"glink nturl notranslate gt-current-lang\"><img loading=\"lazy\" src=\"/wp-content/plugins/gtranslate/flags/svg/no.svg\" width=\"24\" height=\"24\" alt=\"no\"></a>",
+          "target": [
+            ".gt-current-lang"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#\" title=\"English\" data-gt-lang=\"en\" class=\"glink nturl notranslate\"><img loading=\"lazy\" src=\"/wp-content/plugins/gtranslate/flags/svg/en.svg\" width=\"24\" height=\"24\" alt=\"en\"></a>",
+          "target": [
+            "a[title=\"English\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#\" title=\"Arabic\" data-gt-lang=\"ar\" class=\"glink nturl notranslate\"><img loading=\"lazy\" src=\"/wp-content/plugins/gtranslate/flags/svg/ar.svg\" width=\"24\" height=\"24\" alt=\"ar\"></a>",
+          "target": [
+            "a[title=\"Arabic\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#\" title=\"Somali\" data-gt-lang=\"so\" class=\"glink nturl notranslate\"><img loading=\"lazy\" src=\"/wp-content/plugins/gtranslate/flags/svg/so.svg\" width=\"24\" height=\"24\" alt=\"so\"></a>",
+          "target": [
+            "a[title=\"Somali\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#\" title=\"Urdu\" data-gt-lang=\"ur\" class=\"glink nturl notranslate\"><img loading=\"lazy\" src=\"/wp-content/plugins/gtranslate/flags/svg/ur.svg\" width=\"24\" height=\"24\" alt=\"ur\"></a>",
+          "target": [
+            "a[title=\"Urdu\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#\" title=\"Tamil\" data-gt-lang=\"ta\" class=\"glink nturl notranslate\"><img loading=\"lazy\" src=\"/wp-content/plugins/gtranslate/flags/svg/ta.svg\" width=\"24\" height=\"24\" alt=\"ta\"></a>",
+          "target": [
+            "a[title=\"Tamil\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#\" title=\"Polish\" data-gt-lang=\"pl\" class=\"glink nturl notranslate\"><img loading=\"lazy\" src=\"/wp-content/plugins/gtranslate/flags/svg/pl.svg\" width=\"24\" height=\"24\" alt=\"pl\"></a>",
+          "target": [
+            "a[title=\"Polish\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#\" title=\"Ukrainian\" data-gt-lang=\"uk\" class=\"glink nturl notranslate\"><img loading=\"lazy\" src=\"/wp-content/plugins/gtranslate/flags/svg/uk.svg\" width=\"24\" height=\"24\" alt=\"uk\"></a>",
+          "target": [
+            "a[title=\"Ukrainian\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

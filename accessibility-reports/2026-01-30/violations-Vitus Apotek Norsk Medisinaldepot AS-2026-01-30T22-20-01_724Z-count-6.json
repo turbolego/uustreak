@@ -1,0 +1,192 @@
+{
+  "project": "Vitus Apotek Norsk Medisinaldepot AS",
+  "timestamp": "2026-01-30T22:20:01.724Z",
+  "url": "https://www.vitusapotek.no/#",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a href=\" https://www.vitusapotek.no/login\"> VI+ medlem</a>",
+          "target": [
+            ".owl-item:nth-child(1) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.78 (foreground color: #2b98ce, background color: #e6f2d9, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\" https://www.vitusapotek.no/login\"> VI+ medlem</a>",
+          "target": [
+            ".owl-item:nth-child(2) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.78 (foreground color: #2b98ce, background color: #e6f2d9, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\" https://www.vitusapotek.no/login\"> VI+ medlem</a>",
+          "target": [
+            ".owl-item:nth-child(4) > .product-item > .panel.panel-default.fit-row-height-done > .carousel-promotion-section.hidden > .product-carousel-member-promotion > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.78 (foreground color: #2b98ce, background color: #e6f2d9, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img src=\"/medias/Logo-uten-ramme-150.jpg?context=bWFzdGVyfHJvb3R8OTYyNHxpbWFnZS9qcGVnfGgwOC9oNDQvOTI4MDc5ODUyMzQyMi5qcGd8MzJkOWQ5NmMyY2MxZmZmM2MwMmViNjdlY2M5MGI0OTY1MmRlYzJmODc4NDBjYjI4YmQ5MGZmNzQyNTUzMTZkYg\">",
+          "target": [
+            "span:nth-child(1) > a[target=\"_blank\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"secondary-navigation\">\n\t\t\t<ul>\n\t\t\t\t</ul>\n\t\t\t<ul>\n\t\t\t\t</ul>\n\t\t</nav>",
+          "target": [
+            ".secondary-navigation"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://legemiddelverket.no/import-og-salg/apotekdrift/registreringsordning-for-netthandel-med-legemidler/godkjente-utsalgssteder#klikk-her-for-%C3%A5-se-registrerte-nettapotek\" target=\"_blank\">",
+          "target": [
+            "span:nth-child(1) > a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "listitem",
+      "impact": "serious",
+      "description": "Ensure <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/listitem?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<li class=\"log_in\">\n            <a href=\"/login\">\n                    <span class=\"text user-name-desktop\">Logg inn</span>\n                    <span class=\"text user-name-mobile\">Logg inn</span>\n                </a>\n            </li>",
+          "target": [
+            "div > .log_in"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        }
+      ]
+    },
+    {
+      "id": "meta-viewport",
+      "impact": "moderate",
+      "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+      "help": "Zooming and scaling must not be disabled",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/meta-viewport?application=playwright",
+      "tags": [
+        "cat.sensory-and-visual-cues",
+        "wcag2aa",
+        "wcag144",
+        "EN-301-549",
+        "EN-9.1.4.4",
+        "ACT",
+        "RGAAv4",
+        "RGAA-10.4.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">",
+          "target": [
+            "meta[name=\"viewport\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+        }
+      ]
+    }
+  ]
+}

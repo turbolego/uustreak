@@ -1,0 +1,191 @@
+{
+  "project": "Telia Norge AS",
+  "timestamp": "2026-01-05T00:35:43.564Z",
+  "url": "https://www.telia.no/#",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"title-100\">Norges beste 5G-dekning</h4>",
+          "target": [
+            ".usp-item:nth-child(1) > .usp-item-content > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<img class=\"_teddy-image_jxcdf_2\">",
+          "target": [
+            ".slide:nth-child(1) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"_teddy-image_jxcdf_2\">",
+          "target": [
+            ".slide:nth-child(2) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"_teddy-image_jxcdf_2\">",
+          "target": [
+            ".slide:nth-child(4) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"_teddy-image_jxcdf_2\">",
+          "target": [
+            ".slide:nth-child(6) > .product-card-link > ._teddy-card--white_vxy5c_267._teddy-card--border_vxy5c_58._teddy-card--product_vxy5c_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/globalassets/1-ground-zero-prod/images/inline-full-width-images-660-x-free-max-660/christopher-robin-pauseboks-avsloring-660-330.jpg\" class=\"_teddy-image_jxcdf_2\">",
+          "target": [
+            "._teddy-card--gray_vxy5c_281._teddy-card--rich-card_vxy5c_168._teddy-grid_1dv1t_2:nth-child(4) > ._teddy-card__inset--top_vxy5c_418._teddy-card__inset--left_vxy5c_421._teddy-card__inset--right_vxy5c_424 > ._teddy-image_jxcdf_2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/nested-interactive?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<div data-di-id=\"Mobilabonnement\" tabindex=\"0\" role=\"button\" class=\"_teddy-grid_1dv1t_2 _teddy-card_vxy5c_3 _teddy-card--beige-light_vxy5c_309 undefined _teddy-card--layout_vxy5c_61 _teddy-card--navigation-vertical_vxy5c_102 main-category-card\">",
+          "target": [
+            "div[data-di-id=\"Mobilabonnement\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        },
+        {
+          "html": "<div data-di-id=\"Mobiltelefoner\" tabindex=\"0\" role=\"button\" class=\"_teddy-grid_1dv1t_2 _teddy-card_vxy5c_3 _teddy-card--beige-light_vxy5c_309 undefined _teddy-card--layout_vxy5c_61 _teddy-card--navigation-vertical_vxy5c_102 main-category-card\">",
+          "target": [
+            "div[data-di-id=\"Mobiltelefoner\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        },
+        {
+          "html": "<div data-di-id=\"Internett\" tabindex=\"0\" role=\"button\" class=\"_teddy-grid_1dv1t_2 _teddy-card_vxy5c_3 _teddy-card--beige-light_vxy5c_309 undefined _teddy-card--layout_vxy5c_61 _teddy-card--navigation-vertical_vxy5c_102 main-category-card\">",
+          "target": [
+            "div[data-di-id=\"Internett\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        },
+        {
+          "html": "<div data-di-id=\"Strømming og TV\" tabindex=\"0\" role=\"button\" class=\"_teddy-grid_1dv1t_2 _teddy-card_vxy5c_3 _teddy-card--beige-light_vxy5c_309 undefined _teddy-card--layout_vxy5c_61 _teddy-card--navigation-vertical_vxy5c_102 main-category-card\">",
+          "target": [
+            "div[data-di-id=\"Strømming og TV\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        },
+        {
+          "html": "<div tabindex=\"0\" role=\"button\" class=\"_teddy-grid_1dv1t_2 _teddy-card_vxy5c_3 _teddy-card--purple-light_vxy5c_234 undefined _teddy-card--layout_vxy5c_61 _teddy-card--navigation-vertical_vxy5c_102\">",
+          "target": [
+            "._teddy-card--purple-light_vxy5c_234._teddy-card--navigation-vertical_vxy5c_102[role=\"button\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        },
+        {
+          "html": "<div tabindex=\"0\" role=\"button\" class=\"_teddy-grid_1dv1t_2 _teddy-card_vxy5c_3 _teddy-card--purple-light_vxy5c_234 undefined _teddy-card--layout_vxy5c_61 _teddy-card--navigation-vertical_vxy5c_102\">",
+          "target": [
+            "._teddy-card--purple-light_vxy5c_234._teddy-card--navigation-vertical_vxy5c_102[role=\"button\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        },
+        {
+          "html": "<div tabindex=\"0\" role=\"button\" class=\"_teddy-grid_1dv1t_2 _teddy-card_vxy5c_3 _teddy-card--purple-light_vxy5c_234 undefined _teddy-card--layout_vxy5c_61 _teddy-card--navigation-vertical_vxy5c_102\">",
+          "target": [
+            "._teddy-card--purple-light_vxy5c_234._teddy-card--navigation-vertical_vxy5c_102[role=\"button\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        },
+        {
+          "html": "<div tabindex=\"0\" role=\"button\" class=\"_teddy-grid_1dv1t_2 _teddy-card_vxy5c_3 _teddy-card--purple-light_vxy5c_234 undefined _teddy-card--layout_vxy5c_61 _teddy-card--navigation-vertical_vxy5c_102\">",
+          "target": [
+            "._teddy-card--purple-light_vxy5c_234._teddy-card--navigation-vertical_vxy5c_102[role=\"button\"]:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"snowfall-container\" style=\"position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; pointer-events: none; z-index: 9999;\">",
+          "target": [
+            "#snowfall-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "project": "Rana kommune",
+  "timestamp": "2025-12-07T00:46:44.001Z",
+  "url": "https://www.rana.kommune.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"animated bounceOutRight\" id=\"corner_text\" aria-label=\"Hva kan jeg hjelpe deg med?\">Hva kan jeg hjelpe deg med?</span>",
+          "target": [
+            "#corner_text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.71 (foreground color: #fee8e7, background color: #fd9d9b, font size: 14.3pt (19px), font weight: bold). Expected contrast ratio of 3:1"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img alt=\"Rana kommune\" src=\"/handlers/bv.ashx/i09c29601-86d1-428a-bdd5-850b393ffd5c/ranakommune_logo.svg\">",
+          "target": [
+            "img[alt=\"Rana kommune\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.facebook.com/ranakommune/\" data-id=\"27769\" class=\"external-link external\"><span><span class=\"img\"></span><span class=\"text\">Facebook</span></span></a>",
+          "target": [
+            "a[data-id=\"27769\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.youtube.com/channel/UC1MhoXw_chSRrBwSj2DjwCA\" data-id=\"27771\" class=\"external-link external\"><span><span class=\"img\"></span><span class=\"text\">Youtube</span></span></a>",
+          "target": [
+            "a[data-id=\"27771\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.linkedin.com/company/rana-kommune/\" data-id=\"27772\" class=\"external-link external\"><span><span class=\"img\"></span><span class=\"text\">LinkedIn</span></span></a>",
+          "target": [
+            "a[data-id=\"27772\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/ranakommune/\" data-id=\"27768\" class=\"external-link external\"><span><span class=\"img\"></span><span class=\"text\">Instagram</span></span></a>",
+          "target": [
+            "a[data-id=\"27768\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<audio id=\"vfact_testaudio\" controls=\"\"> not supported</audio>",
+          "target": [
+            "#vFact_audioFrame",
+            "#vfact_testaudio"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<audio id=\"vfact_bkaudio\" controls=\"\"> not supported</audio>",
+          "target": [
+            "#vFact_audioFrame",
+            "#vfact_bkaudio"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h1>Her er framen</h1>",
+          "target": [
+            "#vFact_audioFrame",
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "project": "Dfind Consulting",
+  "timestamp": "2026-04-22T00:53:30.387Z",
+  "url": "https://dfindconsulting.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<article class=\"elementor-post elementor-grid-item post-2254 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized\" role=\"listitem\">",
+          "target": [
+            ".post-2254"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listitem is not allowed for given element"
+        },
+        {
+          "html": "<article class=\"elementor-post elementor-grid-item post-1 post type-post status-publish format-standard hentry category-uncategorized\" role=\"listitem\">",
+          "target": [
+            ".post-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listitem is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<p>AI-generert tekst er blitt hverdagskost i 2026. Samtidig har behovet for å skille menneskelig skriving fra maskinprodusert innhold aldri vært</p>",
+          "target": [
+            ".post-2254 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-date\">\n\t\t\tApril 5, 2026\t\t</span>",
+          "target": [
+            ".post-2254 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-avatar\">\n\t\t\tNo Comments\t\t</span>",
+          "target": [
+            ".post-2254 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>",
+          "target": [
+            ".post-1 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-date\">\n\t\t\tApril 5, 2026\t\t</span>",
+          "target": [
+            ".post-1 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-avatar\">\n\t\t\t1 Comment\t\t</span>",
+          "target": [
+            ".post-1 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ]
+}

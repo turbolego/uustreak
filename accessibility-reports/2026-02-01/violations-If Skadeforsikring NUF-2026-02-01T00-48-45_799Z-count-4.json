@@ -1,0 +1,120 @@
+{
+  "project": "If Skadeforsikring NUF",
+  "timestamp": "2026-02-01T00:48:45.799Z",
+  "url": "https://www.if.no/privat",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<img class=\"if size-100p object-...\" loading=\"lazy\" alt=\"Reise i vinter?\" src=\"https://v.imgi.no/vu...\" srcset=\"https://v.imgi.no/vu...\" sizes=\"(max-width: 450px) 4...\" role=\"presentation\">",
+          "target": [
+            "img[alt=\"Reise i vinter?\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "html": "<img class=\"if size-100p object-...\" loading=\"lazy\" alt=\"Hva skjer hvis du bl...\" src=\"https://v.imgi.no/gp...\" srcset=\"https://v.imgi.no/gp...\" sizes=\"(max-width: 450px) 4...\" role=\"presentation\">",
+          "target": [
+            "#\\35 505118e120e41f1858d44911105f402 > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "html": "<img class=\"if size-100p object-...\" loading=\"lazy\" alt=\"Ekstra trygghet med ...\" src=\"https://v.imgi.no/xp...\" srcset=\"https://v.imgi.no/xp...\" sizes=\"(max-width: 450px) 4...\" role=\"presentation\">",
+          "target": [
+            "#viking > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "html": "<img class=\"if size-100p object-...\" loading=\"lazy\" alt=\"Hvorfor velge oss?\" src=\"https://v.imgi.no/ut...\" srcset=\"https://v.imgi.no/ut...\" sizes=\"(max-width: 450px) 4...\" role=\"presentation\">",
+          "target": [
+            "img[alt=\"Hvorfor velge oss?\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"if typography ui medium weight-medium\">Jeg vil ...</h4>",
+          "target": [
+            "#\\39 2a470cfcefb4484b36d88b9537ce9e3 > .weight-medium"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"if flex-column gap-16\" id=\"92a470cfcefb4484b36d88b9537ce9e3\">",
+          "target": [
+            "#\\39 2a470cfcefb4484b36d88b9537ce9e3"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": "serious",
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/list?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ul class=\"if if op-cards op-quicklinks gap-16 one-column md-two-column lg-three-column hideicons-tablet\">",
+          "target": [
+            ".op-quicklinks"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: a"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "project": "Lørenskog kommune",
+  "timestamp": "2025-11-21T21:46:16.039Z",
+  "url": "https://www.lorenskog.kommune.no/#",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-dialog-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+      "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-dialog-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"bc-content-modal modal-module__base_9320_na0C6 _base_1w1ld_1 bc-content-modal-size--large modal-module__size--large_9320_wM6r9\" role=\"dialog\" aria-modal=\"true\" aria-labelledby=\":r0:-title\" aria-describedby=\":r0:-body\">",
+          "target": [
+            ".bc-content-modal"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" class=\"search-box-toggle\">\n                                            <span>\n                                                Søk \n                                            </span>\n                                        </button>",
+          "target": [
+            ".search-box-toggle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button type=\"button\" class=\"main-menu-toggle\" aria-expanded=\"false\">\n                                            <span class=\"vis-meny\">\n                                                Meny \n                                            </span>\n                                        </button>",
+          "target": [
+            ".main-menu-toggle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<span>Vis alle</span>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl06_WebpartId_1699_WebpartId_1699_rptItems_ctl01_ucDisplayControl_lnkSearch > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.05 (foreground color: #ffffff, background color: #138e7a, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_1614_WebpartId_1614_rptItems_ctl01_ucDisplayControl_hlLinkAlle\" class=\"MargLink\" href=\"/aktuelt/\">Se alle saker </a>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_1614_WebpartId_1614_rptItems_ctl01_ucDisplayControl_hlLinkAlle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.41 (foreground color: #ffffff, background color: #259b8c, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 12,
+      "nodes": [
+        {
+          "html": "<h1 class=\"visually-hidden\">\n                Lørenskog kommune\n            </h1>",
+          "target": [
+            "#aspnetForm > h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Hei, hva kan vi hjelpe deg med?</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1604 > .webPartTittel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input name=\"ctl00$ctl00$ctl00$in...\" type=\"text\" id=\"ctl00_ctl00_ctl00_in...\" class=\"js-liten-trigger-sea...\" aria-label=\"Søketekst\" placeholder=\"F.eks barnehage elle...\" data-handled=\"true\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1604_WebpartId_1604_txtSearch"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPart wp-search-box-links\" id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1605\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1605"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"section\">",
+          "target": [
+            ".section:nth-child(12)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"section\">",
+          "target": [
+            ".section:nth-child(13)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"section\">",
+          "target": [
+            ".section:nth-child(15)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Aktuelt</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_1614 > .webPartTittel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul>",
+          "target": [
+            ".container > ul"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPartBunnLink\">\n            <a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_1614_WebpartId_1614_rptItems_ctl01_ucDisplayControl_hlLinkAlle\" class=\"MargLink\" href=\"/aktuelt/\">Se alle saker </a>\n        </div>",
+          "target": [
+            ".webPartBunnLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<audio id=\"vfact_testaudio\" controls=\"\"> not supported</audio>",
+          "target": [
+            "#vFact_audioFrame",
+            "#vfact_testaudio"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h1>Her er framen</h1>",
+          "target": [
+            "#vFact_audioFrame",
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

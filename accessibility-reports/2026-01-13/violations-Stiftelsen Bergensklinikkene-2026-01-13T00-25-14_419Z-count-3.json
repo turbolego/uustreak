@@ -1,0 +1,108 @@
+{
+  "project": "Stiftelsen Bergensklinikkene",
+  "timestamp": "2026-01-13T00:25:14.419Z",
+  "url": "https://no-go.kelkoogroup.net/redirect?country=no&k=612f7a9541cd6ea61eb554c0e4cff43799334e64879a30593937df65ddd23980eca695abd388d7fb4898889f7a6853cf5fb8ba07f825d1da2122a76806e95ba0a3b7f936241f84b009b6d7bc9b7d398a61d226dc2fb026d14084c1a95186bb4f83db23a1938c120ac59e67a13c1b346379aadc3520f06262e184572a4cc7a48188112f5465067bd37b296c352434246f9561d995ce9beb3979f9e5ee35e563d527f3715309bb21077862eeec6547cb540861a73b0037ace8a6baa3e5dda1d6d3015359c1dbda060dbee0efaf6d1e3124998660a2e3ba5a7f444778ba6bad2ec9f4ea0aab9de9e550e60e4e149ab0b7dc2f53fe5de62c5801bbbf12b1af4b38d54149fa32562818dacfc371f07790afedc2ec0e0f5af5909702370ffe78c4203a11a40ade70eb06ecef6a7598229d01d81c48a638ba7eee3767841bc91de12a157985c4dcc606e073da9cc6fee7411bebfb56e1c10d4afe2f&url=https%3A%2F%2Fmecindo.no%2Fproducts%2Fkande-2-4-l-antracitgraa-dafi-1stk%3Fkk%3Da4c6293-19bb4bddc38-5696c9%26utm_source%3Dkelkoono%26utm_medium%3Dcpc%26utm_campaign%3Dkelkooclick%26utm_source_platform%3DKelkooGroup&initiator=fp&dc=false",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        },
+        {
+          "html": "<html lang=\"nb\" style=\"background-color:#ffffff\">",
+          "target": [
+            "iframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html lang=\"nb\" style=\"background-color:#ffffff\">",
+          "target": [
+            "iframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<div class=\"captcha__human\" data-dd-captcha-human=\"\">",
+          "target": [
+            "iframe",
+            ".captcha__human"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"captcha__robot__warning\" data-dd-captcha-robot-warning=\"\">",
+          "target": [
+            "iframe",
+            ".captcha__robot__warning"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"captcha__robot__contact_support\" data-dd-captcha-robot-contact-support=\"\">",
+          "target": [
+            "iframe",
+            ".captcha__robot__contact_support"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "project": "Dagbladet AS",
+  "timestamp": "2026-04-19T01:06:25.945Z",
+  "url": "https://www.dagbladet.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe src=\"https://dressmann.com/no/klar/bukser/?utm_source=dbmx&amp;utm_medium=CPM&amp;utm_campaign=Trousers&amp;cb=1776560763490&amp;cb=0.9766961943120303\" scrolling=\"no\" frameborder=\"0\" width=\"1\" height=\"1\" style=\"position:absolute;top:-10000px;left:-100000px;\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/8578\\/dagbladet\\.no\\/forside_0",
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"ec__sc-168ntql-0 jkuUMO\">",
+          "target": [
+            ".jkuUMO"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a id=\"adn-id-132618817\" rel=\"nofollow\" target=\"_blank\" href=\"https://delivery.adn...\">",
+          "target": [
+            "#google_ads_iframe_\\/8578\\/dagbladet\\.no\\/forside_0",
+            "a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb-no\" data-ads-defer=\"true\" data-ads=\"true\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html>",
+          "target": [
+            "#google_ads_iframe_\\/8578\\/dagbladet\\.no\\/forside_0",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html><head></head><body></body></html>",
+          "target": [
+            "#google_ads_iframe_\\/8578\\/dagbladet\\.no\\/forside_0",
+            "iframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html lang=\"no\">",
+          "target": [
+            "iframe[title=\"Dagbladet Studio-lista\"]",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<p>\n        Dagbladet\n        er en del av Aller Media. Aller Media er ansvarlig for dine data på denne nettsiden.\n        &nbsp;<a href=\"https://personvern.aller.no/personvern\">Les mer</a>\n      </p>",
+          "target": [
+            "#am-branding > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

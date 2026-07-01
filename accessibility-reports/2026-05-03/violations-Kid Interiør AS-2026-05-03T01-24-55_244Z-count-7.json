@@ -1,0 +1,252 @@
+{
+  "project": "Kid Interiør AS",
+  "timestamp": "2026-05-03T01:24:55.252Z",
+  "url": "https://www.kid.no/#",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"m4 jx fj m5 es m6\"></h3>",
+          "target": [
+            ".m5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"p5 i0 jb\">Følg oss</h4>",
+          "target": [
+            "div:nth-child(1) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<img class=\"eo gi e ep c8 gk gl gm gn go gj kt\">",
+          "target": [
+            "div:nth-child(7) > .k5.k3.k4 > .kp.ge.kq > .fx.bx > div > div > .kr.k9.kq > .kq.bx > .ks.gg.gf > .kt.gk.gl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"eo gi e ep c8 gk gl gm gn go gj kt\">",
+          "target": [
+            "div:nth-child(10) > .k5.k3.k4 > .kp.ge.kq > .fx.bx > div > div > .kr.k9.kq > .kq.bx > .ks.gg.gf > .kt.gk.gl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" class=\"coi-banner-properties\" role=\"banner\" data-testid=\"coi-banner__overlay\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" class=\"coi-banner-properties\" role=\"banner\" data-testid=\"coi-banner__overlay\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<a class=\"do cd ce cf cg ch ci cj ck cl e c8 ep f f4 gc\" data-scope-link=\"true\" href=\"/gardiner/lingardiner/selma-lingardin-natur\"></a>",
+          "target": [
+            "div:nth-child(8) > .kv.ku.k8 > .kw:nth-child(1) > .bx > .ky.kz.l0 > .f4.gc.f"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"do cd ce cf cg ch ci cj ck cl e c8 ep f f4 gc\" data-scope-link=\"true\" href=\"/gardiner/lystette-og-lysdempende-gardiner\"></a>",
+          "target": [
+            "div:nth-child(8) > .kv.ku.k8 > .kw:nth-child(2) > .bx > .ky.kz.l0 > .f4.gc.f"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"do cd ce cf cg ch ci cj ck cl e c8 ep f f4 gc\" data-scope-link=\"true\" href=\"/kampanjer/fast-lav-pris?count=24&amp;category=Gardiner\"></a>",
+          "target": [
+            "div:nth-child(8) > .kv.ku.k8 > .kw:nth-child(3) > .bx > .ky.kz.l0 > .f4.gc.f"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"do cd ce cf cg ch ci cj ck cl e c8 ep f f4 gc\" data-scope-link=\"true\" href=\"/kampanjer/palermo\"></a>",
+          "target": [
+            ".f4.gc[href$=\"palermo\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"do cd ce cf cg ch ci cj ck cl e c8 ep f f4 gc\" data-scope-link=\"true\" href=\"/kampanjer/capri\"></a>",
+          "target": [
+            ".f4.gc[href$=\"capri\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"do cd ce cf cg ch ci cj ck cl e c8 ep f f4 gc\" data-scope-link=\"true\" href=\"/uterom/hageputer\"></a>",
+          "target": [
+            ".f4.gc[href$=\"hageputer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<a id=\"skip-to-main-content\" href=\"#content-container\" class=\"e f g h i j k l m n o p q r s t u v w x y z a0 a1 a2 a3\">Gå til innholdet</a>",
+          "target": [
+            "#skip-to-main-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"usp-rotator-instructions\" class=\"e a4 a5 a6 a7 a8 a9 aa ab ac ae af ag ah ai aj ak al\">Animert banner. Klikk ESCAPE for å pause.</div>",
+          "target": [
+            "#usp-rotator-instructions"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\"><div class=\"b be c bj fe bk bl bm\"><span class=\"b bj bk b5 g7 ca hw fm\">Klikk &amp; Hent på 2 timer i alle våre butikker | Bytt i alle våre butikker</span></div></div>",
+          "target": [
+            ".bo > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"tf-header-slider\">Dette sier våre kunder</h2>",
+          "target": [
+            ".tf-header-slider"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"tf-sidebar slider\">",
+          "target": [
+            ".tf-sidebar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

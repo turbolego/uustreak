@@ -1,0 +1,63 @@
+{
+  "project": "Kongsberg kommune",
+  "timestamp": "2026-03-29T03:49:16.238Z",
+  "url": "https://www.kongsberg.kommune.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img src=\"//res.cloudinary.com/ssp/image/fetch/c_fill,w_360,ar_16:9,g_xy_center,x_1122,y_549/c_limit,w_750/https://aimblob.blob.core.windows.net/aimfiles/7545588e-8f0d-4d42-b663-16af522914a3.png\" id=\"news__RCDkm\" class=\"news__image\" desc=\"renovasjonsbil\" alt=\"  \">",
+          "target": [
+            "#news__RCDkm"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element has an alt attribute containing only a space character, which is not ignored by all screen readers"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\" class=\"wf-roboto-n4-active wf-roboto-n6-active wf-roboto-n5-active wf-roboto-n7-active wf-active\" style=\"--header__font__family: 'Roboto'; --font__family: 'Roboto'; --icons__font__family: 'Material Icons Outlined';\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    }
+  ]
+}

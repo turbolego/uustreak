@@ -1,0 +1,339 @@
+{
+  "project": "Tekna - Teknisk- naturvitenskapelig forening",
+  "timestamp": "2026-01-18T01:04:46.489Z",
+  "url": "https://www.tekna.no/",
+  "total_violations": 9,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button tabindex=\"0\" onclick=\"CookieInformation.declineAllCategories()\" aria-label=\"Bare nødvendige cookies\" id=\"declineButton\" class=\"coi-banner__accept\" role=\"alert\" aria-atomic=\"true\" style=\"display: flex;\">\n            Bare nødvendige cookies\n          </button>",
+          "target": [
+            "#declineButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role alert is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "aria-required-children",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-required-children?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ul id=\"tabmenu-block-tab-menu\" role=\"tablist\" class=\"nav t-tabmenu-tabs\"><li data-tab-value=\"0\" class=\"nav-item active\"><a href=\"#\" role=\"tab\" aria-selected=\"true\" aria-label=\"Alle\" data-text=\"Alle\" class=\"nav-link active\"><span>Alle</span></a></li></ul>",
+          "target": [
+            "#tabmenu-block-tab-menu"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: li[tabindex]"
+        }
+      ]
+    },
+    {
+      "id": "aria-required-parent",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require parent roles are contained by them",
+      "help": "Certain ARIA roles must be contained by particular parents",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-required-parent?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"#\" role=\"tab\" aria-selected=\"true\" aria-label=\"Alle\" data-text=\"Alle\" class=\"nav-link active\"><span>Alle</span></a>",
+          "target": [
+            ".nav-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3>Svar på lønnsundersøkelsen!</h3>",
+          "target": [
+            ".promotion-block--lightblue.promotion-block.cms-block > .promotion-block__body > .promotion-block__text.cms-block__body > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<img src=\"/contentassets/a3912d6361b040eab9b952d4cd38ad9d/dsc01580.jpg?width=990&amp;height=885&amp;mode=crop\" class=\"item__image-0\" style=\"z-index: 0; opacity: 1;\">",
+          "target": [
+            ".item__image-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/link/a88adbd139394ebcae86e4c22645db41.aspx?width=640&amp;mode=crop&amp;heightratio=0.75&amp;quality=80\" class=\"t-article-card__img\" style=\"\">",
+          "target": [
+            ".t-article-card:nth-child(2) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "listitem",
+      "impact": "serious",
+      "description": "Ensure <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/listitem?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<li data-tab-value=\"0\" class=\"nav-item active\"><a href=\"#\" role=\"tab\" aria-selected=\"true\" aria-label=\"Alle\" data-text=\"Alle\" class=\"nav-link active\"><span>Alle</span></a></li>",
+          "target": [
+            ".nav-item"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 16,
+      "nodes": [
+        {
+          "html": "<div>\n    <a class=\"hidden-skip-link\" href=\"#content\">Hopp til innhold</a>\n</div>",
+          "target": [
+            "div:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"block heroblock col-lg-12 col-md-12 col-sm-12 col-xs-12\">",
+          "target": [
+            ".heroblock"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"block promoted-link-list promoted-link-list--underline\">",
+          "target": [
+            ".promoted-link-list"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row d-none d-sm-flex flex-gap-small\">",
+          "target": [
+            ".d-sm-flex"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"block\">",
+          "target": [
+            ".block:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"promotion-block__body\">",
+          "target": [
+            ".promotion-block--yellow > .promotion-block__body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"block promotionblock col-lg-8 col-md-6 col-sm-12 col-xs-12 displaymode-two-thirds\">",
+          "target": [
+            ".contentareablock.col-lg-12.col-md-12:nth-child(5) > .content-area-block.content-area-block--no-header.cms-block > .flex-gap-small.row > .col-lg-8.displaymode-two-thirds.promotionblock"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-12 text-image-block__header mb-md-6 mb-0 d-none d-lg-block \">",
+          "target": [
+            ".text-image-block__header.d-none.d-lg-block"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-image-block__text pl-lg-0 pl-lg-9 pl-sm-0 mt-lg-0 mt-4\">",
+          "target": [
+            ".text-image-block__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-image-block__image\">\n                                    <img src=\"/contentassets/a3912d6361b040eab9b952d4cd38ad9d/dsc01580.jpg?width=990&amp;height=885&amp;mode=crop\" class=\"item__image-0\" style=\"z-index: 0; opacity: 1;\">\n                                </div>",
+          "target": [
+            ".text-image-block__image:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-12 block-spacing-small\"><h2>Aktuelt fra Tekna</h2> <!----></div>",
+          "target": [
+            ".block-spacing-small.col-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"/link/4f4e1b0c49824ef3aa7dd2739052fc00.aspx?width=640&amp;mode=crop&amp;heightratio=0.75&amp;quality=80\" alt=\"Marte Ramborg blir ny generalsekretær i Tekna \" class=\"t-article-card__img\" style=\"\">",
+          "target": [
+            "a[href$=\"ny-generalsekretar/\"] > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"t-article-card__content\">",
+          "target": [
+            "a[href$=\"ny-generalsekretar/\"] > .t-article-card__content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"/link/a88adbd139394ebcae86e4c22645db41.aspx?width=640&amp;mode=crop&amp;heightratio=0.75&amp;quality=80\" class=\"t-article-card__img\" style=\"\">",
+          "target": [
+            ".t-article-card:nth-child(2) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"t-article-card__content\">",
+          "target": [
+            ".t-article-card:nth-child(2) > .t-article-card__content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rss-feed t-article-card\">",
+          "target": [
+            ".rss-feed"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

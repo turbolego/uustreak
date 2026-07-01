@@ -1,0 +1,85 @@
+{
+  "project": "Dfind Consulting",
+  "timestamp": "2026-02-05T00:49:36.016Z",
+  "url": "https://www.randstad.no/digital/kunde/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<li class=\"teaser teaser--small cards__item--carousel\" data-rs-carousel-card=\"\" data-rs-active-state=\"cards__item--in-active\" data-rs-accessible-link=\"\" data-href=\"/digital/kunde/agil-prosjektledelse/\" role=\"link\" tabindex=\"0\">",
+          "target": [
+            ".teaser.teaser--small.cards__item--carousel:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role link is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"teaser teaser--small cards__item--carousel\" data-rs-carousel-card=\"\" data-rs-active-state=\"cards__item--in-active\" data-rs-accessible-link=\"\" data-href=\"/digital/kunde/cybersikkerhet/\" role=\"link\" tabindex=\"0\">",
+          "target": [
+            "li[data-href$=\"cybersikkerhet/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role link is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"teaser teaser--small cards__item--carousel\" data-rs-carousel-card=\"\" data-rs-active-state=\"cards__item--in-active\" data-rs-accessible-link=\"\" data-href=\"/digital/kunde/cloud-og-infrastruktur/\" role=\"link\" tabindex=\"0\">",
+          "target": [
+            ".teaser.teaser--small.cards__item--carousel:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role link is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"teaser teaser--small cards__item--carousel\" data-rs-carousel-card=\"\" data-rs-active-state=\"cards__item--in-active\" data-rs-accessible-link=\"\" data-href=\"/digital/kunde/ux-design/\" role=\"link\" tabindex=\"0\">",
+          "target": [
+            "li[data-href$=\"ux-design/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role link is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"teaser teaser--small cards__item--carousel\" data-rs-carousel-card=\"\" data-rs-active-state=\"cards__item--in-active\" data-rs-accessible-link=\"\" data-href=\"/digital/kunde/systemutvikling/\" role=\"link\" tabindex=\"0\">",
+          "target": [
+            ".teaser.teaser--small.cards__item--carousel:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role link is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": "serious",
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/list?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ul class=\"cards__list cards__list--quarters cards__list--format-carousel carousel--on-s carousel--on-m\" data-rs-carousel=\"cards\">",
+          "target": [
+            ".cards__list"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=link]"
+        }
+      ]
+    }
+  ]
+}

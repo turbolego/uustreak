@@ -1,0 +1,31 @@
+{
+  "project": "Vinmonopolet AS",
+  "timestamp": "2026-01-17T03:17:12.255Z",
+  "url": "https://www.vinmonopolet.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img src=\"https://cdn.sanity.io/images/iv1p66d7/production/892e6c40cc1b352bc95a8fc9ee97146dd8b47ee4-79x89.svg\" alt=\"Kundeservice\">",
+          "target": [
+            "img[alt=\"Kundeservice\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    }
+  ]
+}

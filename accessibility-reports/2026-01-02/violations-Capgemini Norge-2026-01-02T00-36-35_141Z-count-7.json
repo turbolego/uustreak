@@ -1,0 +1,173 @@
+{
+  "project": "Capgemini Norge",
+  "timestamp": "2026-01-02T00:36:35.141Z",
+  "url": "https://www.capgemini.com/no-no/#",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<label for=\"darkModeCheckboxDesktop\" id=\"darkModeLabel\" class=\"toggle-label\" tabindex=\"0\" role=\"switch\" onkeydown=\"if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); document.getElementById('darkModeCheckboxDesktop').click(); }\">",
+          "target": [
+            "#darkModeLabel"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role switch is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "aria-required-attr",
+      "impact": "critical",
+      "description": "Ensure elements with ARIA roles have all required ARIA attributes",
+      "help": "Required ARIA attributes must be provided",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-required-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<label for=\"darkModeCheckboxDesktop\" id=\"darkModeLabel\" class=\"toggle-label\" tabindex=\"0\" role=\"switch\" onkeydown=\"if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); document.getElementById('darkModeCheckboxDesktop').click(); }\">",
+          "target": [
+            "#darkModeLabel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA attribute not present: aria-checked"
+        }
+      ]
+    },
+    {
+      "id": "landmark-banner-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the banner landmark is at top level",
+      "help": "Banner landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-banner-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"header-topbar-wrapper dark-gradient\" role=\"banner\" style=\"--header-nav-position: relative; --header-nav-menu-text-color: #FFFFFF; --header-nav-menu-background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(255, 255, 255, 0));\">",
+          "target": [
+            ".header-topbar-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  The banner landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<header class=\"wp-block-template-part\">",
+          "target": [
+            "header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<header class=\"wp-block-template-part\">",
+          "target": [
+            "header"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"truste-consent-text\" class=\"truste-messageColumn\">",
+          "target": [
+            "#truste-consent-text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "scrollable-region-focusable",
+      "impact": "serious",
+      "description": "Ensure elements that have scrollable content are accessible by keyboard",
+      "help": "Scrollable region must have keyboard access",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag211",
+        "wcag213",
+        "TTv5",
+        "TT4.a",
+        "EN-301-549",
+        "EN-9.2.1.1",
+        "EN-9.2.1.3",
+        "RGAAv4",
+        "RGAA-7.3.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"lang-list\">",
+          "target": [
+            ".header_lang_menu > .header-lang-inner > .lang-list"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+        }
+      ]
+    }
+  ]
+}

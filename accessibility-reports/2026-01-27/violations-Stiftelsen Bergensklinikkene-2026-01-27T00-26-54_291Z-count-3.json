@@ -1,0 +1,108 @@
+{
+  "project": "Stiftelsen Bergensklinikkene",
+  "timestamp": "2026-01-27T00:26:54.291Z",
+  "url": "https://no-go.kelkoogroup.net/redirect?country=no&k=612f7a9541cd6ea61eb554c0e4cff43799334e64879a30590f68d92483e3745969cb6feec482772d89c758adea117caf5b65037dba0eb083b1693bfa2723d54a0465e8c3fdf39ac7f87e2c62abae3f3d4495f8200ae3968061ba74df4bc4e76a3cd7a3b0ce502c7a6df8c4649cb7c725fc14d26a0f011cc085a9f4bb601d952908ff12512f5c138cecc78d2308b895c978e175773d499a8beed4382e82a65e9a64203e8334f0a89b730be91e6142b5b301cfd8c184c81a256a27e03c3b32ac97886ec7f471997070d98a2da6a5e952205d873056c9ffa3857f7d608c251ea70be9498c7da42cd0cbc9f26f87ead974404c23892a790d7b332a59b57369308b13c8d0296d64edede6132001119c23eb9a3a8c7aafe1695fec577f8118eebe8f3e6f87bf0f1180c70b1e07018a9e382da53e76fb6c49f83eb65c0d896f567a40038533b0f4a423e664d6a91a50374ef533fd5305a425d139b4&url=https%3A%2F%2Fsportsmaster.no%2Flexco-sittesykkel-reg-i-handtak%3Futm_source%3Dkelkoono%26utm_medium%3Dcpc%26utm_campaign%3Dkelkooclick%26utm_source_platform%3DKelkooGroup&initiator=fp&dc=false",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        },
+        {
+          "html": "<html lang=\"nb\" style=\"background-color:#ffffff\">",
+          "target": [
+            "iframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html lang=\"nb\" style=\"background-color:#ffffff\">",
+          "target": [
+            "iframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<div class=\"captcha__human\" data-dd-captcha-human=\"\">",
+          "target": [
+            "iframe",
+            ".captcha__human"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"captcha__robot__warning\" data-dd-captcha-robot-warning=\"\">",
+          "target": [
+            "iframe",
+            ".captcha__robot__warning"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"captcha__robot__contact_support\" data-dd-captcha-robot-contact-support=\"\">",
+          "target": [
+            "iframe",
+            ".captcha__robot__contact_support"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

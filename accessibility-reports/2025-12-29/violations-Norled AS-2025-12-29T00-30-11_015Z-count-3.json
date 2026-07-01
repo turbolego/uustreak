@@ -1,0 +1,129 @@
+{
+  "project": "Norled AS",
+  "timestamp": "2025-12-29T00:30:11.015Z",
+  "url": "https://www.norled.no/#",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"brxe-ludgej\" data-script-id=\"ludgej\" class=\"brxe-slider-nested b...\" data-splide=\"{\"type\":\"slide\",\"dir...\" role=\"region\" aria-roledescription=\"carousel\">",
+          "target": [
+            "#brxe-ludgej"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<a id=\"brxe-rlgvhk\" href=\"https://www.norled.no/\" aria-current=\"page\" class=\"brxe-div\"><figure id=\"brxe-yyxjcu\" class=\"brxe-image tag\"><img src=\"https://www.norled.no/wp-content/uploads/2024/06/logo.svg\" class=\"css-filter size-full\" alt=\"\" decoding=\"async\" data-type=\"string\"></figure></a>",
+          "target": [
+            "#brxe-rlgvhk"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"tag\" href=\"https://www.norled.no/sok/\"><img src=\"https://www.norled.no/wp-content/uploads/2025/03/search.svg\" class=\"css-filter size-full\" alt=\"\" decoding=\"async\" data-type=\"string\"></a>",
+          "target": [
+            "a[href$=\"sok/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.facebook.com/NorledAs/?locale=nb_NO\" target=\"_blank\" class=\"bricks-link-wrapper\">",
+          "target": [
+            ".bricks-link-wrapper[target=\"_blank\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://no.linkedin.com/company/norled-as\" target=\"_blank\" class=\"bricks-link-wrapper\">",
+          "target": [
+            ".bricks-link-wrapper[target=\"_blank\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/norled_as/\" target=\"_blank\" class=\"bricks-link-wrapper\">",
+          "target": [
+            ".bricks-link-wrapper[target=\"_blank\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.youtube.com/@NorledAS\" target=\"_blank\" class=\"bricks-link-wrapper\">",
+          "target": [
+            ".bricks-link-wrapper[target=\"_blank\"]:nth-child(4)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a class=\"skip-link\" href=\"#brx-content\">Hopp til hovedinnhold</a>",
+          "target": [
+            "a[href$=\"#brx-content\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"skip-link\" href=\"#brx-footer\">Hopp til bunntekst</a>",
+          "target": [
+            "a[href$=\"#brx-footer\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

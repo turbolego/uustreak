@@ -1,0 +1,697 @@
+{
+  "project": "Oslo Nye Teater AS",
+  "timestamp": "2025-12-10T00:31:48.728Z",
+  "url": "https://oslonye.no/#",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button class=\"cky-btn cky-btn-accept\" aria-label=\"Aksepter alt\" data-cky-tag=\"accept-button\" style=\"color: #d0d0d0; border-color: #1863dc; background-color: #1863dc;\">Aksepter alt</button>",
+          "target": [
+            "button[data-cky-tag=\"accept-button\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.52 (foreground color: #d0d0d0, background color: #1863dc, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h4 class=\"text-uppercase location\">Gi en opplevelse i julegave</h4>",
+          "target": [
+            ".hero-banner__cover > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 class=\"title\">Oslo Nye Teater AS</h4>",
+          "target": [
+            ".medium-6.large-2.cell:nth-child(2) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/label-title-only?application=playwright",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input type=\"text\" placeholder=\"Søk\" value=\"\" name=\"s\" id=\"s\" onblur=\"if (this.value == '') { this.value = ''; }\" onfocus=\"if (this.value == ''){this.value = '';}\" title=\"Søk etter...\">",
+          "target": [
+            "#s"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 15,
+      "nodes": [
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/jul-med-proysen-og-snekker-andersen/\" class=\"les-mer-link\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt > .alignment-top.bg-none.block > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/kristiania-magiske-tivolitheater/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/2400x1350KMTT-2025-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-8.medium-6.cpt > .alignment-left.bg-none.block > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/ungen/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/Ungen-plakat-hjemmeside-1-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-8.medium-6.cpt > .alignment-left.bg-none.block > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/kilder-til-begeistring/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/3400x1350-Kilder-til-begeistring-Gunnar-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt > .alignment-top.bg-none.block > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/kokosbananas-og-moromaskinen/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/2400x1350-Kokosbananas-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-8.medium-6.cpt > .alignment-left.bg-none.block > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/ond-spiral/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/2400x1350-Sigrid_Ond-Spiral-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt > .alignment-top.bg-none.block > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/unni-wilhelmsen/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/TicketMaster_2048-1152_unniWilhelmsen.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".alignment-right > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/utbrent-av-den-hellige-and/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/2400x1350-Utbrentavdenhellige-and-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt > .alignment-top.bg-none.teaterkjellern > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/fluffers-fluffy-christmas/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/fluffers2048-x-1152-px-1-1.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(1) > .alignment-top.bg-none.teaterkjellern > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/tipsy-ibsen-en-juleklassiker/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/Tipsy_christmas.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(3) > .alignment-top.bg-none.teaterkjellern > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/harr-hartberg-3/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/small_harr-og-hartberg-julekonsert--scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(1) > .alignment-top.bg-none.teaterkjellern > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/naughty-cabaret-2/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/small_naughty-arr-bilde-riktig-strl-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(3) > .alignment-top.bg-none.teaterkjellern > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/take-all-my-resources-and-trickle-some-down-on-me-daddy/\" class=\"les-mer-link\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(10) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(1) > .alignment-top.bg-none.teaterkjellern > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/kikis-burly-q/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/KikisBurlyQ_TicketMaster_2048-1152.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(10) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(3) > .alignment-top.bg-none.teaterkjellern > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"javascript:void(0);\" class=\"scroll-to-top\">\n\t\t\t\t\t<img src=\"https://oslonye.no/wp-content/themes/Kodeks-WP-theme/images/arrow_up_black.svg\" alt=\"\">\n\t\t\t\t</a>",
+          "target": [
+            ".scroll-to-top"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 66,
+      "nodes": [
+        {
+          "html": "<a class=\"background-link\" href=\"https://oslonye.no/gi-et-gavekort-til-jul/\">",
+          "target": [
+            ".background-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"\">",
+          "target": [
+            ".theater-list > li:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"\">",
+          "target": [
+            ".theater-list > li:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"forestillinger-blocks-panel \">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"forestillinger-blocks-panel \">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"forestillinger-blocks-panel \">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"forestillinger-blocks-panel \">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-4 medium-6\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tInfo om billettkjøp\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".text-green > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"short-description\">\n\t\t\t\t\t\t\t\t           \t\t\t\tLes om billettkjøp, hørselshjelp, rullestolplasser, barnehagebilletter m.m.\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".text-green > .short-description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-4 medium-6\" data-gtm=\"{\"id\":\"1345384\",\"brand\":\"centralteatret\",\"name\":\"Utbrent av den hellige \\u00e5nd\"}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-4 medium-6\" data-gtm=\"{\"id\":\"1390454\",\"brand\":\"centralteatret\",\"name\":\"Fluffers \\u2013 Fluffy christmas\"}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tKontakt\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".rounded > .text-yellow.heading-small.content-holder > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-4 medium-6\" data-gtm=\"{\"id\":\"1162994\",\"brand\":\"centralteatret\",\"name\":\"Tipsy Ibsen \\u2013 en ju­le­klas­si­ker\"}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-4 medium-6\" data-gtm=\"{\"id\":\"1081803\",\"brand\":\"centralteatret\",\"name\":\"Harr & Hartberg\"}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tPODKAST\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".border-orange > .text-yellow.heading-small.content-holder > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"short-description\">\n\t\t\t\t\t\t\t\t           \t\t\t\tFølg Oslo Nye Teaters podkaster og få intervjuer og bakgrunnsinformasjon om forestillingene våre.\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".text-yellow.heading-small.content-holder > .short-description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-4 medium-6\" data-gtm=\"{\"id\":\"1386194\",\"brand\":\"centralteatret\",\"name\":\"Naughty Cabaret\"}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cpt:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"forestillinger-blocks-panel \">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(10)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-white text-uppercase text-center current-month\">\n                        desember                    </div>",
+          "target": [
+            ".current-month"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"next desktop\">januar</div>",
+          "target": [
+            ".desktop"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1227914\",\"brand\":\"hovedscenen\",\"category\":\"Anbefalt fra 5 \\u00e5r\",\"name\":\"Kristiania Magiske Tivoli­theater\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1227914\",\"brand\":\"hovedscenen\",\"category\":\"Anbefalt fra 5 \\u00e5r\",\"name\":\"Kristiania Magiske Tivoli­theater\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1162994\",\"brand\":\"centralteatret\",\"name\":\"Tipsy Ibsen \\u2013 en ju­le­klas­si­ker\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1227914\",\"brand\":\"hovedscenen\",\"category\":\"Anbefalt fra 5 \\u00e5r\",\"name\":\"Kristiania Magiske Tivoli­theater\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1397033\",\"brand\":\"centralteatret\",\"name\":\"Kilder til begeistring\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1390454\",\"brand\":\"centralteatret\",\"name\":\"Fluffers \\u2013 Fluffy christmas\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(9)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(10)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1227914\",\"brand\":\"hovedscenen\",\"category\":\"Anbefalt fra 5 \\u00e5r\",\"name\":\"Kristiania Magiske Tivoli­theater\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(11)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1319954\",\"brand\":\"centralteatret\",\"name\":\"Ond spiral\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(12)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1390454\",\"brand\":\"centralteatret\",\"name\":\"Fluffers \\u2013 Fluffy christmas\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(13)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(14)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1227914\",\"brand\":\"hovedscenen\",\"category\":\"Anbefalt fra 5 \\u00e5r\",\"name\":\"Kristiania Magiske Tivoli­theater\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(15)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(16)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1227914\",\"brand\":\"hovedscenen\",\"category\":\"Anbefalt fra 5 \\u00e5r\",\"name\":\"Kristiania Magiske Tivoli­theater\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(17)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1397033\",\"brand\":\"centralteatret\",\"name\":\"Kilder til begeistring\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(18)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1390454\",\"brand\":\"centralteatret\",\"name\":\"Fluffers \\u2013 Fluffy christmas\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(19)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(20)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1227914\",\"brand\":\"hovedscenen\",\"category\":\"Anbefalt fra 5 \\u00e5r\",\"name\":\"Kristiania Magiske Tivoli­theater\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(21)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(22)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1227914\",\"brand\":\"hovedscenen\",\"category\":\"Anbefalt fra 5 \\u00e5r\",\"name\":\"Kristiania Magiske Tivoli­theater\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(23)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1081803\",\"brand\":\"centralteatret\",\"name\":\"Harr & Hartberg\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(24)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(25)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(26)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1227914\",\"brand\":\"hovedscenen\",\"category\":\"Anbefalt fra 5 \\u00e5r\",\"name\":\"Kristiania Magiske Tivoli­theater\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(27)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(28)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1227914\",\"brand\":\"hovedscenen\",\"category\":\"Anbefalt fra 5 \\u00e5r\",\"name\":\"Kristiania Magiske Tivoli­theater\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(29)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1397033\",\"brand\":\"centralteatret\",\"name\":\"Kilder til begeistring\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(30)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1386194\",\"brand\":\"centralteatret\",\"name\":\"Naughty Cabaret\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(31)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(32)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1227914\",\"brand\":\"hovedscenen\",\"category\":\"Anbefalt fra 5 \\u00e5r\",\"name\":\"Kristiania Magiske Tivoli­theater\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(33)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(34)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1227914\",\"brand\":\"hovedscenen\",\"category\":\"Anbefalt fra 5 \\u00e5r\",\"name\":\"Kristiania Magiske Tivoli­theater\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(35)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1397033\",\"brand\":\"centralteatret\",\"name\":\"Kilder til begeistring\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(36)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1386194\",\"brand\":\"centralteatret\",\"name\":\"Naughty Cabaret\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(37)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(38)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1227914\",\"brand\":\"hovedscenen\",\"category\":\"Anbefalt fra 5 \\u00e5r\",\"name\":\"Kristiania Magiske Tivoli­theater\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(39)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(40)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1227914\",\"brand\":\"hovedscenen\",\"category\":\"Anbefalt fra 5 \\u00e5r\",\"name\":\"Kristiania Magiske Tivoli­theater\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(41)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(42)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1227914\",\"brand\":\"hovedscenen\",\"category\":\"Anbefalt fra 5 \\u00e5r\",\"name\":\"Kristiania Magiske Tivoli­theater\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(43)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(44)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(45)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{\"id\":\"1406573\",\"brand\":\"centralteatret\",\"category\":\"Barn fra 3 \\u00e5r\",\"name\":\"Jul med Pr\\u00f8ysen og snekker Andersen\"}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(46)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

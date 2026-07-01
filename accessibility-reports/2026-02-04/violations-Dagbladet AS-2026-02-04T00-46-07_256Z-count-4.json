@@ -1,0 +1,118 @@
+{
+  "project": "Dagbladet AS",
+  "timestamp": "2026-02-04T00:46:07.256Z",
+  "url": "https://www.dagbladet.no/#",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"text-red color_mobile_text-red\" data-lab-text_color_desktop=\"text-red\">NÅ:</span>",
+          "target": [
+            "span[data-lab-text_color_desktop=\"text-red\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.66 (foreground color: #d60000, background color: #f7a347, font size: 108.8pt (145px), font weight: bold). Expected contrast ratio of 3:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<h5 class=\"row_header_text large-12 small-12  align-center mobile_text_align_align-center\">EPSTEIN-AVSLØRINGENE:</h5>",
+          "target": [
+            ".has-row-header.color_mobile_bg-red.grid-align-stretch > .row_header_text.align-center.mobile_text_align_align-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5 class=\"row_header_text large-12 small-12  align-center mobile_text_align_align-center\">HØIBY-RETTSSAKEN</h5>",
+          "target": [
+            ".has-row-header.color_mobile_bg-yellow.grid-align-stretch:nth-child(13) > .row_header_text.align-center.mobile_text_align_align-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5 class=\"row_header_text large-12 small-12  align-center mobile_text_align_align-center\">HØIBY-RETTSSAKEN</h5>",
+          "target": [
+            ".has-row-header.color_mobile_bg-yellow.grid-align-stretch:nth-child(42) > .row_header_text.align-center.mobile_text_align_align-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"ec__sc-168ntql-0 jkuUMO\">",
+          "target": [
+            ".jkuUMO"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<p>\n        Dagbladet\n        er en del av Aller Media. Aller Media er ansvarlig for dine data på denne nettsiden.\n        &nbsp;<a href=\"https://personvern.aller.no/personvern\">Les mer</a>\n      </p>",
+          "target": [
+            "#am-branding > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

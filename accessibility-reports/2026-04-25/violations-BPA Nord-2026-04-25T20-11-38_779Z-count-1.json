@@ -1,0 +1,43 @@
+{
+  "project": "BPA Nord",
+  "timestamp": "2026-04-25T20:11:38.780Z",
+  "url": "https://bpa-nord.no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://gnistdesign.no/\" target=\"_blank\" rel=\"noreferrer noopener\"><img loading=\"lazy\" decoding=\"async\" width=\"42\" height=\"40\" src=\"https://bpa-nord.no/wp-content/uploads/2024/02/Gnist-ico.svg\" alt=\"\" class=\"wp-image-109\" style=\"object-fit:contain;width:30px;height:30px\"></a>",
+          "target": [
+            "a[href$=\"gnistdesign.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}

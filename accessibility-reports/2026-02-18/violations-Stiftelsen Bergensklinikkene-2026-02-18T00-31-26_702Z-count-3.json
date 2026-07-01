@@ -1,0 +1,108 @@
+{
+  "project": "Stiftelsen Bergensklinikkene",
+  "timestamp": "2026-02-18T00:31:26.703Z",
+  "url": "https://no-go.kelkoogroup.net/redirect?country=no&k=612f7a9541cd6ea61eb554c0e4cff437dcec1250a02803e3fdde1e9bd7bd6256d86fb9de61f376feca22108805ed195137986a5afee6c716fa8131c017b7c35defda29054505eb259a011b9089168a4f0711cb03278564f3901674f507a660b71f4bc5537dd4e52bf278bc3d661cac6242f827dee0305908143d8a0fbaa65c038ceb205d9828a3754f13c8c71531dcb111e38a9605c0b50956fd46fd03f00ea57b3edc373fdb6bee72fec2d6bfc0e5dc6e74a534f2260e6666556745de7a8bf94f6ec71767ead10266372842170466ca16a686881cee7159843365f198995cf370e56095fbf1e210280fd11bc7451463e2fc6a9e35d29b25a4317e0d75f52adecca7c05bd3159c5b8774c0bf54f21742c7871e4f4cee2bbe06326322a3c03a195de1b0fb4f92c41013a637de6e4ff6062ada707e15c5be3f785a4a5bcbc2595367e988520c4ad65bc14b0647b6e734433066469737af8a48&url=https%3A%2F%2Fwww.nytelse.no%2Fwomanizer%2Fwomanizer-reservehetter-til-w500-size-starlet-og-pro40-hvit%2Fkvinner%2F%3Fkk%3Da4c629a-19c6e289b31-21344c%26utm_source%3Dkelkoono%26utm_medium%3Dcpc%26utm_campaign%3Dkelkooclick%26utm_source_platform%3DKelkooGroup&initiator=fp&dc=false",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        },
+        {
+          "html": "<html lang=\"nb\" style=\"background-color:#ffffff\">",
+          "target": [
+            "iframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html lang=\"nb\" style=\"background-color:#ffffff\">",
+          "target": [
+            "iframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<div class=\"captcha__human\" data-dd-captcha-human=\"\">",
+          "target": [
+            "iframe",
+            ".captcha__human"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"captcha__robot__warning\" data-dd-captcha-robot-warning=\"\">",
+          "target": [
+            "iframe",
+            ".captcha__robot__warning"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"captcha__robot__contact_support\" data-dd-captcha-robot-contact-support=\"\">",
+          "target": [
+            "iframe",
+            ".captcha__robot__contact_support"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "project": "TietoEVRY",
+  "timestamp": "2026-03-15T01:16:58.275Z",
+  "url": "https://www.tietoevry.com/no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<div class=\"mt-4 mb-3 text-medium text-white-opacity-08\">\nDigitalization / 13.3.2026            </div>",
+          "target": [
+            ".tile.col-md-4.text-decoration-none:nth-child(1) > .p-md-0.p-4 > .mt-4.text-white-opacity-08.mb-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.73 (foreground color: #e4e3e2, background color: #78716e, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"text-white-opacity-08 mb-3\">\n                Hva ønsker leger egentlig at kunstig intelligens kan bidra med?\n            </div>",
+          "target": [
+            ".tile.col-md-4.text-decoration-none:nth-child(1) > .p-md-0.p-4 > .text-white-opacity-08.mb-3:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.73 (foreground color: #e4e3e2, background color: #78716e, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"mt-4 mb-3 text-medium text-white-opacity-08\">\nData / 27.11.2025            </div>",
+          "target": [
+            ".tile.col-md-4.text-decoration-none:nth-child(2) > .p-md-0.p-4 > .mt-4.text-white-opacity-08.mb-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.73 (foreground color: #e4e3e2, background color: #78716e, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"text-white-opacity-08 mb-3\">\n                Innsiktsselskapet er ny partner i Data Nest fra Tieto Indtech. \n            </div>",
+          "target": [
+            ".tile.col-md-4.text-decoration-none:nth-child(2) > .p-md-0.p-4 > .text-white-opacity-08.mb-3:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.73 (foreground color: #e4e3e2, background color: #78716e, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"mt-4 mb-3 text-medium text-white-opacity-08\">\nData / 10.11.2025            </div>",
+          "target": [
+            ".tile.col-md-4.text-decoration-none:nth-child(3) > .p-md-0.p-4 > .mt-4.text-white-opacity-08.mb-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.73 (foreground color: #e4e3e2, background color: #78716e, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"text-white-opacity-08 mb-3\">\n                BLI SYNLIG FOR KI-AGENTER: Tommi Larsen fra Tieto Indtech gir deg sine beste råd\n            </div>",
+          "target": [
+            ".tile.col-md-4.text-decoration-none:nth-child(3) > .p-md-0.p-4 > .text-white-opacity-08.mb-3:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.73 (foreground color: #e4e3e2, background color: #78716e, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ]
+}

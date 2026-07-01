@@ -1,0 +1,31 @@
+{
+  "project": "Bergen kommune",
+  "timestamp": "2026-01-17T00:33:49.940Z",
+  "url": "https://www.bergen.kommune.no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img class=\"teaser__image\" src=\"/api/rest/bilder/V69508338?scaleWidth=950&amp;cropX1=16&amp;cropY1=0&amp;cropX2=4016&amp;cropY2=2267\" alt=\"Laurdag opnar bassenget på Garnes att\">",
+          "target": [
+            ".teaser__image"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "project": "Kristiansand Dyrepark AS",
+  "timestamp": "2026-01-18T01:09:50.357Z",
+  "url": "https://www.dyreparken.no/",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" role=\"presentation\" class=\"owl-prev disabled\"></button>",
+          "target": [
+            ".owl-prev"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "html": "<button type=\"button\" role=\"presentation\" class=\"owl-next\"></button>",
+          "target": [
+            ".owl-next"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" role=\"presentation\" class=\"owl-prev disabled\"></button>",
+          "target": [
+            ".owl-prev"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's role is not presentational because it is focusable"
+        },
+        {
+          "html": "<button type=\"button\" role=\"presentation\" class=\"owl-next\"></button>",
+          "target": [
+            ".owl-next"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's role is not presentational because it is focusable"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"c-grid__item__title h4\"><a href=\"https://www.dyreparken.no/dagsprogram/\" title=\"Dagsprogram\">\n                                                                    Dagsprogram\n                                                                    </a></h3>",
+          "target": [
+            ".c-grid--image-size-small > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item__content > .c-grid__item__title.h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"main-header__nav main-menu js-main-menu\" itemscope=\"\" itemtype=\"http://schema.org/SiteNavigationElement\">",
+          "target": [
+            ".main-header__nav"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 31,
+      "nodes": [
+        {
+          "html": "<a href=\"/cookies/\" style=\"\"></a>",
+          "target": [
+            "#CybotCookiebotDialogBodyContentText > a[href$=\"cookies/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/kart/\" title=\"\" data-object-fit=\"contain\" class=\"c-grid__item__image\"><img itemprop=\"contentUrl\" src=\"https://www.dyreparken.no/content/uploads/2021/03/kart.svg\" alt=\"\"></a>",
+          "target": [
+            ".c-grid--image-size-small > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"contain\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/alledyr/\" title=\"\" data-object-fit=\"contain\" class=\"c-grid__item__image\"><img itemprop=\"contentUrl\" src=\"https://www.dyreparken.no/content/uploads/2021/03/attraksjoner.svg\" alt=\"\"></a>",
+          "target": [
+            ".c-grid--image-size-small > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"contain\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/kveldssafari-i-nordisk-villmark/\" title=\"\" data-object-fit=\"cover\" class=\"c-grid__item__image\">",
+          "target": [
+            ".c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"cover\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/kaptein-sabeltanns-sjoroverlunsj/\" title=\"\" data-object-fit=\"cover\" class=\"c-grid__item__image\">",
+          "target": [
+            ".c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"cover\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/kaptein-sabeltann-kveldsforestilling-2026/\" title=\"\" data-object-fit=\"cover\" class=\"c-grid__item__image\">",
+          "target": [
+            ".c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"cover\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/dyrepasserlaerling/\" title=\"\" data-object-fit=\"cover\" class=\"c-grid__item__image\"><img itemprop=\"contentUrl\" src=\"https://www.dyreparken.no/content/uploads/2022/05/DSC09091-1201x800-5b2df79-768x512.jpg\" alt=\"\"></a>",
+          "target": [
+            ".c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"cover\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/morgensafari-med-frokost/\" title=\"\" data-object-fit=\"cover\" class=\"c-grid__item__image\">",
+          "target": [
+            ".c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"cover\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/dyrepasser-for-en-dag/\" title=\"\" data-object-fit=\"cover\" class=\"c-grid__item__image\"><img itemprop=\"contentUrl\" src=\"https://www.dyreparken.no/content/uploads/2019/02/20230727-DSC_7161-1201x800-5b2df79-768x512.jpg\" alt=\"\"></a>",
+          "target": [
+            ".c-grid__item:nth-child(8) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"cover\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/dyrepresentasjon-amurtiger/\" title=\"\" data-object-fit=\"cover\" class=\"c-grid__item__image\">",
+          "target": [
+            ".active.owl-item:nth-child(1) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"cover\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/dyrepresentasjon-gepard/\" title=\"\" data-object-fit=\"cover\" class=\"c-grid__item__image\"><img itemprop=\"contentUrl\" src=\"https://www.dyreparken.no/content/uploads/2019/02/DSC_6583_Gepard_2019_DS-768x511.jpg\" alt=\"\"></a>",
+          "target": [
+            ".active.owl-item:nth-child(2) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"cover\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/dyrepresentasjon-gaupe/\" title=\"\" data-object-fit=\"cover\" class=\"c-grid__item__image\"><img itemprop=\"contentUrl\" src=\"https://www.dyreparken.no/content/uploads/2021/01/SmelandMedia-015-768x512.jpg\" alt=\"\"></a>",
+          "target": [
+            ".owl-item:nth-child(4) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"cover\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/dyrepresentasjon-dyrene-pa-kutoppen/\" title=\"\" data-object-fit=\"cover\" class=\"c-grid__item__image\"><img itemprop=\"contentUrl\" src=\"https://www.dyreparken.no/content/uploads/2020/02/vestlandskfjordfe_3058-768x512.jpg\" alt=\"\"></a>",
+          "target": [
+            ".owl-item:nth-child(6) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"cover\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/dyrepresentasjon-oter/\" title=\"\" data-object-fit=\"cover\" class=\"c-grid__item__image\"><img itemprop=\"contentUrl\" src=\"https://www.dyreparken.no/content/uploads/2019/02/Dyreparken_OterAnlegget_-daniel.schjott-1148-768x511.jpg\" alt=\"\"></a>",
+          "target": [
+            ".owl-item:nth-child(7) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"cover\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/mot-en-dyrepasser-i-terrariet-og-laer-mer-om-dyrene-som-bor-her/\" title=\"\" data-object-fit=\"cover\" class=\"c-grid__item__image\">",
+          "target": [
+            ".owl-item:nth-child(9) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"cover\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/dyrepresentasjon-kamel/\" title=\"\" data-object-fit=\"cover\" class=\"c-grid__item__image\"><img itemprop=\"contentUrl\" src=\"https://www.dyreparken.no/content/uploads/2025/02/Dyreparken_Sommer2022_-daniel.schjott-9334-1200x798-36b7a2e-768x511.jpg\" alt=\"\"></a>",
+          "target": [
+            ".owl-item:nth-child(10) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"cover\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/dyrepresentasjon-orangutang/\" title=\"\" data-object-fit=\"cover\" class=\"c-grid__item__image\"><img itemprop=\"contentUrl\" src=\"https://www.dyreparken.no/content/uploads/2019/02/orangutang_matu_0744-768x512.jpg\" alt=\"\"></a>",
+          "target": [
+            ".owl-item:nth-child(11) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"cover\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/overnatting/pakker-og-kampanjer/\" target=\"_blank\" itemscope=\"itemscope\" itemtype=\"http://schema.org/ImageObject\" data-object-fit=\"cover\" class=\"c-billboard__image\">",
+          "target": [
+            ".u-theme-dyreparken-secondary-light.c-module--split.c-module--billboard:nth-child(11) > .c-module__container > .c-billboard--variant-light.c-billboard--split > .c-billboard__inner > .c-billboard__image[itemtype=\"http://schema.org/ImageObject\"][itemscope=\"itemscope\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://booking.dyreparken.no/#/season-passes?id=1&step=ChooseSeasonPasses\" target=\"_blank\" itemscope=\"itemscope\" itemtype=\"http://schema.org/ImageObject\" data-object-fit=\"cover\" class=\"c-billboard__image\">",
+          "target": [
+            ".c-billboard--poster > .c-billboard__inner > .c-billboard__image[itemtype=\"http://schema.org/ImageObject\"][itemscope=\"itemscope\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/bilbanen/\" title=\"\" data-object-fit=\"contain\" class=\"c-grid__item__image\">",
+          "target": [
+            ".c-grid--image-size-medium > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"contain\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/karusell-i-afrika/\" title=\"\" data-object-fit=\"contain\" class=\"c-grid__item__image\"><img itemprop=\"contentUrl\" src=\"https://www.dyreparken.no/content/uploads/2022/03/DP_AFRIKA_KARUSELL_JUL-768x512.jpg\" alt=\"\"></a>",
+          "target": [
+            ".c-grid--image-size-medium > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"contain\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/reli-safari/\" title=\"\" data-object-fit=\"contain\" class=\"c-grid__item__image\"><img itemprop=\"contentUrl\" src=\"https://www.dyreparken.no/content/uploads/2019/02/20230720-DSC_0030-1200x800-5b2df79-768x512.jpg\" alt=\"\"></a>",
+          "target": [
+            ".c-grid--image-size-medium > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"contain\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/klatrefjellet/\" title=\"\" data-object-fit=\"contain\" class=\"c-grid__item__image\"><img itemprop=\"contentUrl\" src=\"https://www.dyreparken.no/content/uploads/2019/02/Dyreparken-Klatrefjellet-TF-DSC03970-13042025-1200x800-5b2df79-768x512.jpg\" alt=\"\"></a>",
+          "target": [
+            ".c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"contain\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/julius-jungelloype/\" title=\"\" data-object-fit=\"contain\" class=\"c-grid__item__image\">",
+          "target": [
+            ".c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"contain\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/jungelbob/\" title=\"\" data-object-fit=\"contain\" class=\"c-grid__item__image\"><img itemprop=\"contentUrl\" src=\"https://www.dyreparken.no/content/uploads/2020/04/DSC_1746_Bob-banen_2019_DS-1200x798-36b7a2e-768x511.jpg\" alt=\"\"></a>",
+          "target": [
+            ".c-grid__item:nth-child(6) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"contain\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/grevens-forheksede-labyrint/\" title=\"\" data-object-fit=\"contain\" class=\"c-grid__item__image\"><img itemprop=\"contentUrl\" src=\"https://www.dyreparken.no/content/uploads/2020/01/DP_GREVENS_FORHEKSEDE_LABYRINT_HOST-768x512.jpg\" alt=\"\"></a>",
+          "target": [
+            ".c-grid__item:nth-child(7) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"contain\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/opplevelser/mosks-traktorbane/\" title=\"\" data-object-fit=\"contain\" class=\"c-grid__item__image\">",
+          "target": [
+            ".c-grid__item:nth-child(8) > .c-grid__item-image-wrapper > .c-grid__item__image[data-object-fit=\"contain\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/jobb/\" target=\"\" itemscope=\"itemscope\" itemtype=\"http://schema.org/ImageObject\" data-object-fit=\"cover\" class=\"c-billboard__image\">",
+          "target": [
+            ".u-theme-dyreparken-secondary-light.c-module--split.c-module--billboard:nth-child(15) > .c-module__container > .c-billboard--variant-light.c-billboard--split > .c-billboard__inner > .c-billboard__image[itemtype=\"http://schema.org/ImageObject\"][itemscope=\"itemscope\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dyreparken.no/app/\" target=\"\" itemscope=\"itemscope\" itemtype=\"http://schema.org/ImageObject\" data-object-fit=\"cover\" class=\"c-billboard__image\">",
+          "target": [
+            ".c-billboard__image[href$=\"app/\"][itemtype=\"http://schema.org/ImageObject\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://apps.apple.com/us/app/dyreparken-ny/id1465218432?ls=1\">\n                        <img src=\"/content/themes/simplestrap/assets/images/appstore.svg\" alt=\"\" style=\"height: 40px;\">\n                    </a>",
+          "target": [
+            ".c-footer__app__links > a:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://play.google.com/store/apps/details?id=com.yonoton.dyreparken\">\n                        <img src=\"/content/themes/simplestrap/assets/images/googleplay.svg\" alt=\"\" style=\"height: 40px;\">\n                    </a>",
+          "target": [
+            ".c-footer__app__links > a:nth-child(2)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them",
+      "help": "Elements marked as presentational should be consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" role=\"presentation\" class=\"owl-prev disabled\"></button>",
+          "target": [
+            ".owl-prev"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        },
+        {
+          "html": "<button type=\"button\" role=\"presentation\" class=\"owl-next\"></button>",
+          "target": [
+            ".owl-next"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.google.com/intl/no/policies/privacy/\" target=\"_blank\">Personvern</a>",
+          "target": [
+            "iframe[title=\"reCAPTCHA\"]",
+            ".rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.google.com/intl/no/policies/terms/\" target=\"_blank\">Vilkår</a>",
+          "target": [
+            "iframe[title=\"reCAPTCHA\"]",
+            ".rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>beskyttet av <strong>reCAPTCHA</strong></span>",
+          "target": [
+            "iframe[title=\"reCAPTCHA\"]",
+            ".rc-anchor-invisible-text > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

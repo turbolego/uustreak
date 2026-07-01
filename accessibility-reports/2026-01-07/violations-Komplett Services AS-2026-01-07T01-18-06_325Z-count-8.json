@@ -1,0 +1,723 @@
+{
+  "project": "Komplett Services AS",
+  "timestamp": "2026-01-07T01:18:06.326Z",
+  "url": "https://www.komplett.no/#",
+  "total_violations": 8,
+  "browser_used": "firefox",
+  "fallback_used": true,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 9,
+      "nodes": [
+        {
+          "html": "<a class=\"swiper-slide swiper-...\" href=\"https://www.komplett...\" data-bind=\"click: $parent.promo...\" title=\"Månedens gamingdeals\" data-placement-name=\"home_page.engage1\" data-swiper-slide-in...=\"0\" role=\"group\" aria-label=\"1 / 6\">",
+          "target": [
+            "a[aria-label=\"1 / 6\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-...\" href=\"https://www.komplett...\" data-bind=\"click: $parent.promo...\" title=\"Januarsalg\" data-placement-name=\"home_page.engage2\" data-swiper-slide-in...=\"1\" role=\"group\" aria-label=\"2 / 6\">",
+          "target": [
+            ".swiper-slide-prev"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-...\" href=\"https://www.komplett...\" data-bind=\"click: $parent.promo...\" title=\"Månedens gamingdeals\" data-placement-name=\"home_page.engage1\" data-swiper-slide-in...=\"0\" role=\"group\" aria-label=\"3 / 6\">",
+          "target": [
+            "a[aria-label=\"3 / 6\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-...\" href=\"https://www.komplett...\" data-bind=\"click: $parent.promo...\" title=\"Januarsalg\" data-placement-name=\"home_page.engage2\" data-swiper-slide-in...=\"1\" role=\"group\" aria-label=\"4 / 6\">",
+          "target": [
+            ".swiper-slide-next"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-...\" href=\"https://www.komplett...\" data-bind=\"click: $parent.promo...\" title=\"Månedens gamingdeals\" data-placement-name=\"home_page.engage1\" data-swiper-slide-in...=\"0\" role=\"group\" aria-label=\"5 / 6\">",
+          "target": [
+            "a[aria-label=\"5 / 6\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-...\" href=\"https://www.komplett...\" data-bind=\"click: $parent.promo...\" title=\"Januarsalg\" data-placement-name=\"home_page.engage2\" data-swiper-slide-in...=\"1\" role=\"group\" aria-label=\"6 / 6\">",
+          "target": [
+            "a[aria-label=\"6 / 6\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-...\" href=\"https://www.komplett...\" data-bind=\"click: $parent.promo...\" title=\"Bestselgere\" data-placement-name=\"home_page.frontban1\" role=\"group\" aria-label=\"1 / 1\">",
+          "target": [
+            "a[title=\"Bestselgere\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-...\" href=\"https://www.komplett...\" data-bind=\"click: $parent.promo...\" title=\"Komplett-PC Entry\" data-placement-name=\"home_page.frontban2\" role=\"group\" aria-label=\"1 / 1\">",
+          "target": [
+            "a[title=\"Komplett-PC Entry\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-...\" href=\"https://www.komplett...\" data-bind=\"click: $parent.promo...\" title=\"Støv\" data-placement-name=\"home_page.frontban3\" role=\"group\" aria-label=\"1 / 1\">",
+          "target": [
+            "a[title=\"Støv\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<h5><slot></slot></h5>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(3) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(1)",
+              "komplett-h5",
+              "h5"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5><slot></slot></h5>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(5) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(1)",
+              "komplett-h5",
+              "h5"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5><slot></slot></h5>",
+          "target": [
+            [
+              "komplett-algonomy-product-cards",
+              "komplett-product-card-container",
+              "komplett-product-card[isflexonly=\"\"]:nth-child(1)",
+              "komplett-h5",
+              "h5"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 9,
+      "nodes": [
+        {
+          "html": "<img width=\"96\" height=\"72\" loading=\"lazy\" decoding=\"async\" src=\"/marketingmedia/60817/k_wo_discount_q319_btn.svg\" alt=\"Ukens tilbud\" title=\"Ukens tilbud\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Ukens tilbud\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img width=\"96\" height=\"72\" loading=\"lazy\" decoding=\"async\" src=\"/marketingmedia/171807/komponenter.jpg\" alt=\"Datautstyr\" title=\"Datautstyr\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Datautstyr\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img width=\"96\" height=\"72\" loading=\"lazy\" decoding=\"async\" src=\"/marketingmedia/171851/switch2.avif\" alt=\"Gaming\" title=\"Gaming\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Gaming\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img width=\"96\" height=\"72\" loading=\"lazy\" decoding=\"async\" src=\"/marketingmedia/165636/catimg_q225_pclaptop.png\" alt=\"PC &amp; tilbehør\" title=\"PC &amp; tilbehør\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"PC & tilbehør\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img width=\"96\" height=\"72\" loading=\"lazy\" decoding=\"async\" src=\"/marketingmedia/165634/catimg_q225_kpc.png\" alt=\"Komplett-PC\" title=\"Komplett-PC\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Komplett-PC\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img width=\"96\" height=\"72\" loading=\"lazy\" decoding=\"async\" src=\"/marketingmedia/165637/catimg_q225_mobile.png\" alt=\"Mobil, tablets &amp; klokker\" title=\"Mobil, tablets &amp; klokker\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Mobil, tablets & klokker\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img width=\"96\" height=\"72\" loading=\"lazy\" decoding=\"async\" src=\"/marketingmedia/165638/catimg_q225_tv.png\" alt=\"TV, lyd &amp; bilde\" title=\"TV, lyd &amp; bilde\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"TV, lyd & bilde\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img width=\"96\" height=\"72\" loading=\"lazy\" decoding=\"async\" src=\"/marketingmedia/165639/catimg_q225_vacuum.png\" alt=\"Hjem &amp; fritid\" title=\"Hjem &amp; fritid\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Hjem & fritid\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img width=\"96\" height=\"72\" loading=\"lazy\" decoding=\"async\" src=\"/marketingmedia/165642/catimg_q225_washingmachine.png\" alt=\"Hvitevarer\" title=\"Hvitevarer\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Hvitevarer\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/label-title-only?application=playwright",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<input class=\"coi__checkbox\" tabindex=\"0\" data-index=\"0\" name=\"cookie_cat_functional\" id=\"cookie_cat_functional\" type=\"checkbox\" title=\"Funksjonelle\" onclick=\"CookieInformation.changeCategoryConsentDecision('cookie_cat_functional')\">",
+          "target": [
+            "#cookie_cat_functional"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        },
+        {
+          "html": "<input class=\"coi__checkbox\" tabindex=\"0\" data-index=\"0\" name=\"cookie_cat_statistic\" id=\"cookie_cat_statistic\" type=\"checkbox\" title=\"Statistiske\" onclick=\"CookieInformation.changeCategoryConsentDecision('cookie_cat_statistic')\">",
+          "target": [
+            "#cookie_cat_statistic"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        },
+        {
+          "html": "<input class=\"coi__checkbox\" tabindex=\"0\" data-index=\"0\" name=\"cookie_cat_marketing\" id=\"cookie_cat_marketing\" type=\"checkbox\" title=\"Markedsføring\" onclick=\"CookieInformation.changeCategoryConsentDecision('cookie_cat_marketing')\">",
+          "target": [
+            "#cookie_cat_marketing"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" style=\"display: flex;\" aria-hidden=\"false\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" style=\"display: flex;\" aria-hidden=\"false\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<span>Prismatch*</span>",
+          "target": [
+            "a[href$=\"prismatch/\"] > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Gratis retur</span>",
+          "target": [
+            ".universal-selling-points--item:nth-child(2) > .universal-selling-points--link > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Fri frakt for medlemmer</span>",
+          "target": [
+            ".universal-selling-points--item:nth-child(3) > .universal-selling-points--link > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"chat__menu-title\">Vi hjelper deg!</div>",
+          "target": [
+            ".chat__menu-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "role-img-alt",
+      "impact": "serious",
+      "description": "Ensure [role=\"img\"] elements have alternative text",
+      "help": "[role=\"img\"] elements must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/role-img-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 27,
+      "nodes": [
+        {
+          "html": "<komplett-review-rating-stars score=\"0\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(3) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(1)",
+              "komplett-product-card-rating[reviewcount=\"0\"][score=\"0\"]",
+              "komplett-review-rating-stars[score=\"0\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.8528\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(3) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(2)",
+              "komplett-product-card-rating[reviewcount=\"591\"]",
+              "komplett-review-rating-stars[score=\"4.8528\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.9444\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(3) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(3)",
+              "komplett-product-card-rating[reviewcount=\"18\"]",
+              "komplett-review-rating-stars[score=\"4.9444\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.8846\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(3) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(4)",
+              "komplett-product-card-rating[reviewcount=\"26\"][score=\"4.8846\"]",
+              "komplett-review-rating-stars[score=\"4.8846\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.087\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(3) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(5)",
+              "komplett-product-card-rating[reviewcount=\"23\"]",
+              "komplett-review-rating-stars[score=\"4.087\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"0\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(3) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(6)",
+              "komplett-product-card-rating[reviewcount=\"0\"][score=\"0\"]",
+              "komplett-review-rating-stars[score=\"0\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.8462\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(3) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(7)",
+              "komplett-product-card-rating[reviewcount=\"13\"]",
+              "komplett-review-rating-stars[score=\"4.8462\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.6\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(3) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(8)",
+              "komplett-product-card-rating[reviewcount=\"5\"]",
+              "komplett-review-rating-stars[score=\"4.6\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.8571\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(3) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(9)",
+              "komplett-product-card-rating[reviewcount=\"7\"]",
+              "komplett-review-rating-stars[score=\"4.8571\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.8333\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(5) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(1)",
+              "komplett-product-card-rating[reviewcount=\"6\"][score=\"4.8333\"]",
+              "komplett-review-rating-stars[score=\"4.8333\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"0\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(5) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(2)",
+              "komplett-product-card-rating[reviewcount=\"0\"][score=\"0\"]",
+              "komplett-review-rating-stars[score=\"0\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"0\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(5) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(3)",
+              "komplett-product-card-rating[reviewcount=\"0\"][score=\"0\"]",
+              "komplett-review-rating-stars[score=\"0\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.5\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(5) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(4)",
+              "komplett-product-card-rating[reviewcount=\"16\"]",
+              "komplett-review-rating-stars[score=\"4.5\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"3.1667\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(5) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(5)",
+              "komplett-product-card-rating[reviewcount=\"12\"]",
+              "komplett-review-rating-stars[score=\"3.1667\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.4727\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(5) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(6)",
+              "komplett-product-card-rating[reviewcount=\"55\"]",
+              "komplett-review-rating-stars[score=\"4.4727\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.5\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              "komplett-algonomy-product-cards",
+              "komplett-product-card-container",
+              "komplett-product-card[isflexonly=\"\"]:nth-child(1)",
+              "komplett-product-card-rating[reviewcount=\"8\"]",
+              "komplett-review-rating-stars[score=\"4.5\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.1429\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              "komplett-algonomy-product-cards",
+              "komplett-product-card-container",
+              "komplett-product-card[isflexonly=\"\"]:nth-child(2)",
+              "komplett-product-card-rating[reviewcount=\"21\"]",
+              "komplett-review-rating-stars[score=\"4.1429\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.7333\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              "komplett-algonomy-product-cards",
+              "komplett-product-card-container",
+              "komplett-product-card[isflexonly=\"\"]:nth-child(3)",
+              "komplett-product-card-rating[reviewcount=\"30\"]",
+              "komplett-review-rating-stars[score=\"4.7333\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"5\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              "komplett-algonomy-product-cards",
+              "komplett-product-card-container",
+              "komplett-product-card[isflexonly=\"\"]:nth-child(4)",
+              "komplett-product-card-rating[reviewcount=\"4\"]",
+              "komplett-review-rating-stars[score=\"5\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.3333\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              "komplett-algonomy-product-cards",
+              "komplett-product-card-container",
+              "komplett-product-card[isflexonly=\"\"]:nth-child(5)",
+              "komplett-product-card-rating[score=\"4.3333\"][reviewcount=\"6\"]",
+              "komplett-review-rating-stars[score=\"4.3333\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.8333\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              "komplett-algonomy-product-cards",
+              "komplett-product-card-container",
+              "komplett-product-card[isflexonly=\"\"]:nth-child(6)",
+              "komplett-product-card-rating[reviewcount=\"6\"][score=\"4.8333\"]",
+              "komplett-review-rating-stars[score=\"4.8333\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"0\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              "komplett-algonomy-product-cards",
+              "komplett-product-card-container",
+              "komplett-product-card[isflexonly=\"\"]:nth-child(7)",
+              "komplett-product-card-rating[reviewcount=\"0\"][score=\"0\"]",
+              "komplett-review-rating-stars[score=\"0\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"5\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              "komplett-algonomy-product-cards",
+              "komplett-product-card-container",
+              "komplett-product-card[isflexonly=\"\"]:nth-child(8)",
+              "komplett-product-card-rating[reviewcount=\"9\"]",
+              "komplett-review-rating-stars[score=\"5\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.8846\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              "komplett-algonomy-product-cards",
+              "komplett-product-card-container",
+              "komplett-product-card[isflexonly=\"\"]:nth-child(9)",
+              "komplett-product-card-rating[reviewcount=\"26\"][score=\"4.8846\"]",
+              "komplett-review-rating-stars[score=\"4.8846\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.1154\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              "komplett-algonomy-product-cards",
+              "komplett-product-card-container",
+              "komplett-product-card[isflexonly=\"\"]:nth-child(10)",
+              "komplett-product-card-rating[score=\"4.1154\"][reviewcount=\"26\"]",
+              "komplett-review-rating-stars[score=\"4.1154\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"0\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              "komplett-algonomy-product-cards",
+              "komplett-product-card-container",
+              "komplett-product-card[isflexonly=\"\"]:nth-child(11)",
+              "komplett-product-card-rating[reviewcount=\"0\"][score=\"0\"]",
+              "komplett-review-rating-stars[score=\"0\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<komplett-review-rating-stars score=\"4.6667\" role=\"img\"></komplett-review-rating-stars>",
+          "target": [
+            [
+              "komplett-algonomy-product-cards",
+              "komplett-product-card-container",
+              "komplett-product-card[isflexonly=\"\"]:nth-child(12)",
+              "komplett-product-card-rating[reviewcount=\"3\"]",
+              "komplett-review-rating-stars[score=\"4.6667\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}

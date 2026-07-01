@@ -1,0 +1,133 @@
+{
+  "project": "Alta ungdomsskole",
+  "timestamp": "2025-11-28T00:25:00.431Z",
+  "url": "https://alta.ungdomsskole.no/#",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<span style=\"font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;\"><strong>Skolehelsetjenesten</strong><br>\nAnita Nilsen 45277072</span>",
+          "target": [
+            "span:nth-child(19) > span > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #e74c3c, background color: #ffffff, font size: 11.0pt (14.6667px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<strong>Skolehelsetjenesten</strong>",
+          "target": [
+            "span:nth-child(19) > span > span > strong"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #e74c3c, background color: #ffffff, font size: 11.0pt (14.6667px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span style=\"font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;;\">Alarmtlf for barn og unge</span>",
+          "target": [
+            "strong:nth-child(21) > span > span > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.82 (foreground color: #e74c3c, background color: #ffffff, font size: 11.0pt (14.6667px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"?show=field&amp;showfrom=7&amp;showcount=15&amp;fid=572&amp;navB=1\" style=\"clear: none;\">Arkiv »</a>",
+          "target": [
+            "#bl572 > .panel-footer > .text-center > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.17 (foreground color: #337ab7, background color: #f5f5f5, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"https://alta.ungdomsskole.no/?show=field&amp;pID=1&amp;fid=556&amp;searchFrom=2026-09-04&amp;searchTo=2027-06-11\" style=\"clear: none;\">Flere hendelser</a>",
+          "target": [
+            "td > .panel-footer > .text-center > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.17 (foreground color: #337ab7, background color: #f5f5f5, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "impact": "critical",
+      "description": "Ensure every form element has a label",
+      "help": "Form elements must have labels",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/label?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input maxlength=\"120\" name=\"newslist_email\" size=\"12\" type=\"text\">",
+          "target": [
+            "input[maxlength=\"120\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1",
+        "RGAAv4",
+        "RGAA-10.6.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a href=\"https://alta.ungdomsskole.no/files/2025/03/forskrift_om_skole-og_feriedager_2025-2026.pdf\">Forskrift</a>",
+          "target": [
+            "#articleID_447 > .boxTextBody > a:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 2.77:1 with the surrounding text. (Minimum contrast is 3:1, link text: #337ab7, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        },
+        {
+          "html": "<a href=\"https://web-parent.prod.vigilo-oas.no/my-applications\">https://web-parent.prod.vigilo-oas.no/my-applications</a>",
+          "target": [
+            "a:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 2.77:1 with the surrounding text. (Minimum contrast is 3:1, link text: #337ab7, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        }
+      ]
+    }
+  ]
+}

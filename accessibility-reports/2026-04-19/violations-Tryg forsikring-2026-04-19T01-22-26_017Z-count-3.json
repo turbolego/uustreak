@@ -1,0 +1,152 @@
+{
+  "project": "Tryg forsikring",
+  "timestamp": "2026-04-19T01:22:26.018Z",
+  "url": "https://www.tryg.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3>Ring oss</h3>",
+          "target": [
+            ".contact-box:nth-child(1) > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"no\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 12,
+      "nodes": [
+        {
+          "html": "<h1>Noe gikk galt!</h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"error-message\">Dersom problemet vedvarer, ta gjerne kontakt med värt kundesenter.</p>",
+          "target": [
+            ".error-message"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3>Ring oss</h3>",
+          "target": [
+            ".contact-box:nth-child(1) > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>915 04040</p>",
+          "target": [
+            ".contact-box:nth-child(1) > p:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Fra utlandet:</p>",
+          "target": [
+            ".contact-box:nth-child(1) > p:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>+47 915 04040</p>",
+          "target": [
+            ".contact-box:nth-child(1) > p:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3>Tryg Alarm - akutt hjelp på reise</h3>",
+          "target": [
+            ".contact-box:nth-child(2) > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Åpen 24 timer i døgnet.</p>",
+          "target": [
+            ".contact-box:nth-child(2) > p:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>+47 55 17 10 01</p>",
+          "target": [
+            ".contact-box:nth-child(2) > p:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Faks: +47 55 17 10 03</p>",
+          "target": [
+            ".contact-box:nth-child(2) > p:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"hours\">",
+          "target": [
+            ".hours"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"facebook-box\">\n    <p><strong>Følg oss på Facebook</strong><br>\n      Ved langvarige tekniske problemer vil vi komme med oppdateringer på Facebook.<br><br>\n      <a target=\"_blank\" href=\"https://www.facebook.com/TrygNorge\">Følg Tryg Forsikring Norge på Facebook her.</a></p>\n  </div>",
+          "target": [
+            ".facebook-box"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "project": "Verdens Gang AS",
+  "timestamp": "2025-11-20T00:37:08.112Z",
+  "url": "https://www.vg.no/#",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-roles",
+      "impact": "critical",
+      "description": "Ensure all elements with a role attribute use a valid value",
+      "help": "ARIA roles used must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-roles?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<vg-dynamic-widget class=\"container dynamic-widget widget d-block\" role=\"section\" data-preload=\"true\" data-name=\"PushBanner\" data-src=\"https://www.vg.no/vgc/frimand/js/dynamic-widgets/PushBanner.c1e3e9bb.js\" data-row=\"0\" data-props=\"[]\">",
+          "target": [
+            "vg-dynamic-widget[data-name=\"PushBanner\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Abstract role cannot be directly used: section"
+        },
+        {
+          "html": "<vg-dynamic-widget class=\"container dynamic-wi...\" role=\"section\" data-name=\"Snakkis\" data-src=\"https://www.vg.no/vg...\" data-stylesheet=\"https://www.vg.no/vg...\" data-row=\"2\" data-props=\"[]\">",
+          "target": [
+            "vg-dynamic-widget[data-name=\"Snakkis\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Abstract role cannot be directly used: section"
+        },
+        {
+          "html": "<vg-dynamic-widget class=\"container dynamic-wi...\" id=\"xjkdasx9\" data-item-id=\"xjkdasx9\" role=\"section\" data-name=\"VGTVStories\" data-src=\"https://www.vg.no/vg...\" data-stylesheet=\"https://www.vg.no/vg...\" data-row=\"11\" data-props=\"{\"title\":\"Korte vide...\">",
+          "target": [
+            "#xjkdasx9"
+          ],
+          "failureSummary": "Fix all of the following:\n  Abstract role cannot be directly used: section"
+        },
+        {
+          "html": "<vg-dynamic-widget class=\"container dynamic-wi...\" role=\"section\" data-name=\"DarkmodeOnboarding\" data-src=\"https://www.vg.no/vg...\" data-stylesheet=\"https://www.vg.no/vg...\" data-row=\"12\" data-props=\"[]\">",
+          "target": [
+            "vg-dynamic-widget[data-name=\"DarkmodeOnboarding\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Abstract role cannot be directly used: section"
+        },
+        {
+          "html": "<vg-dynamic-widget class=\"vg-widget-latest con...\" role=\"section\" data-preload=\"true\" data-name=\"Latest\" data-src=\"https://www.vg.no/vg...\" data-stylesheet=\"https://www.vg.no/vg...\" data-row=\"0\" data-props=\"[]\">",
+          "target": [
+            ".vg-widget-latest"
+          ],
+          "failureSummary": "Fix all of the following:\n  Abstract role cannot be directly used: section"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input aria-label=\"Søk\" autocomplete=\"off\" class=\"_input_1cpeg_16 button-label-large\" placeholder=\"Søk\" required=\"\" type=\"search\" name=\"q\">",
+          "target": [
+            "._search_6tx2u_144 > form > input"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.83 (foreground color: #f1bfbf, background color: #c50000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them",
+      "help": "Elements marked as presentational should be consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 37,
+      "nodes": [
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-691e1a24557fb72f73e2afc3 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg?x=3\" loading=\"lazy\" fetchpriority=\"low\" alt=\"\" width=\"24\" height=\"24\" aria-label=\"VG pluss\" class=\"icon-square\">",
+          "target": [
+            "#dre-691aea4f47574a6b89e973d5 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label=\"VG pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-691e2cd3557fb72f73e872eb > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg?x=3\" loading=\"lazy\" fetchpriority=\"low\" alt=\"\" width=\"24\" height=\"24\" aria-label=\"VG pluss\" class=\"icon-square\">",
+          "target": [
+            "#dre-691d794c557fb72f73855846 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label=\"VG pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-691df5f4557fb72f73d5b856 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg?x=3\" loading=\"lazy\" fetchpriority=\"low\" alt=\"\" width=\"24\" height=\"24\" aria-label=\"VG pluss\" class=\"icon-square\">",
+          "target": [
+            "#dre-691c347d557fb72f7309780b > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label=\"VG pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-691deadc47574a6b892e67d6 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg?x=3\" loading=\"lazy\" fetchpriority=\"low\" alt=\"\" width=\"24\" height=\"24\" aria-label=\"VG pluss\" class=\"icon-square\">",
+          "target": [
+            "#dre-6917129f47574a6b89ea37ea > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label=\"VG pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-691ddc53557fb72f73ca716c > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg?x=3\" loading=\"lazy\" fetchpriority=\"low\" alt=\"\" width=\"24\" height=\"24\" aria-label=\"VG pluss\" class=\"icon-square\">",
+          "target": [
+            "#dre-69159ff221ec687e19534928 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label=\"VG pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg?x=3\" loading=\"lazy\" fetchpriority=\"low\" alt=\"\" width=\"24\" height=\"24\" aria-label=\"VG pluss\" class=\"icon-square\">",
+          "target": [
+            "#dre-6915de6f557fb72f73211154 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label=\"VG pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img class=\"dice\" src=\"https://www.vg.no/vgc/frimand/gfx/icons/old-dice-4.svg\" loading=\"lazy\" alt=\"\" aria-label=\"Terningkast 4\" width=\"20\" height=\"20\">",
+          "target": [
+            ".dice"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-691dbeb3557fb72f73b69708 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg?x=3\" loading=\"lazy\" fetchpriority=\"low\" alt=\"\" width=\"24\" height=\"24\" aria-label=\"VG pluss\" class=\"icon-square\">",
+          "target": [
+            "#dre-691ae8c447574a6b89e85ddb > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label=\"VG pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-691dd1aa47574a6b8920f324 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-691d89c847574a6b89eed567 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-691b4f7947574a6b892916f1 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg?x=3\" loading=\"lazy\" fetchpriority=\"low\" alt=\"\" width=\"24\" height=\"24\" aria-label=\"VG pluss\" class=\"icon-square\">",
+          "target": [
+            "#dre-691addb347574a6b89e112a8 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label=\"VG pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg?x=3\" loading=\"lazy\" fetchpriority=\"low\" alt=\"\" width=\"24\" height=\"24\" aria-label=\"VG pluss\" class=\"icon-square\">",
+          "target": [
+            "#dre-69147513c3588d765146053e > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label=\"VG pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-691dab69557fb72f73a9067d > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-69143a2f65eea81bca6a63b0 > .article-container > a[itemprop=\"url\"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square\" width=\"24\" height=\"24\" aria-label=\"VG Pluss\">",
+          "target": [
+            "#dre-69143a2f65eea81bca6a63b0 > .article-container > a[itemprop=\"url\"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(2) > .icon-square[aria-label=\"VG Pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-691c9ae6557fb72f734b57cd > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg?x=3\" loading=\"lazy\" fetchpriority=\"low\" alt=\"\" width=\"24\" height=\"24\" aria-label=\"VG pluss\" class=\"icon-square\">",
+          "target": [
+            "#dre-691ae7b147574a6b89e78d3f > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label=\"VG pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-6913609765eea81bca368f3b > .article-container > a[itemprop=\"url\"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg?x=3\" loading=\"lazy\" fetchpriority=\"low\" alt=\"\" width=\"24\" height=\"24\" aria-label=\"VG pluss\" class=\"icon-square\">",
+          "target": [
+            "#dre-691b2b6b47574a6b8916fe4d > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label=\"VG pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-691cd94047574a6b89be44b7 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-6917593347574a6b8916efcb > .article-container > a[itemprop=\"url\"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square\" width=\"24\" height=\"24\" aria-label=\"VG Pluss\">",
+          "target": [
+            "#dre-6917593347574a6b8916efcb > .article-container > a[itemprop=\"url\"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(2) > .icon-square[aria-label=\"VG Pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg?x=3\" loading=\"lazy\" fetchpriority=\"low\" alt=\"\" width=\"24\" height=\"24\" aria-label=\"VG pluss\" class=\"icon-square\">",
+          "target": [
+            "#dre-6916e8a947574a6b89ce10d6 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label=\"VG pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg?x=3\" loading=\"lazy\" fetchpriority=\"low\" alt=\"\" width=\"24\" height=\"24\" aria-label=\"VG pluss\" class=\"icon-square\">",
+          "target": [
+            "#dre-69147bf821ec687e19f1a7a4 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label=\"VG pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg?x=3\" loading=\"lazy\" fetchpriority=\"low\" alt=\"\" width=\"24\" height=\"24\" aria-label=\"VG pluss\" class=\"icon-square\">",
+          "target": [
+            "#dre-691ae62f47574a6b89e68ff0 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .pluss-icon.type-icon > .icon-square[aria-label=\"VG pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-691c8dbc557fb72f734558c4 > .article-container > a[itemprop=\"url\"] > figure > div > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-68a5bc66173cfe740c539d2d > .article-container > a[itemprop=\"url\"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square\" width=\"24\" height=\"24\" aria-label=\"VG Pluss\">",
+          "target": [
+            "#dre-68a5bc66173cfe740c539d2d > .article-container > a[itemprop=\"url\"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(2) > .icon-square[aria-label=\"VG Pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/vgtv_play_simple.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square icon-red\" width=\"24\" height=\"24\" aria-label=\"VGTV\">",
+          "target": [
+            "#dre-689f215a130d3f9e64088b1c > .article-container > a[itemprop=\"url\"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(1) > .icon-red.icon-square[aria-label=\"VGTV\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img src=\"https://www.vg.no/vgc/frimand/gfx/icons/pluss.svg\" loading=\"lazy\" alt=\"\" class=\"icon-square\" width=\"24\" height=\"24\" aria-label=\"VG Pluss\">",
+          "target": [
+            "#dre-689f215a130d3f9e64088b1c > .article-container > a[itemprop=\"url\"] > figure > div:nth-child(1) > .type-icon-wrapper > .type-icon:nth-child(2) > .icon-square[aria-label=\"VG Pluss\"][width=\"24\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<span class=\"sch-datacontroller__text\">",
+          "target": [
+            ".sch-datacontroller--subheader > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h1 class=\"screen-reader-hidden\">VG Forside</h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"comics\">",
+          "target": [
+            ".comics"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"sch-datacontroller__text\">",
+          "target": [
+            ".sch-datacontroller--permanent > .sch-datacontroller__wrapper > .sch-datacontroller__content > .sch-datacontroller__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

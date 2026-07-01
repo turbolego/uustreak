@@ -1,0 +1,548 @@
+{
+  "project": "Trones skole",
+  "timestamp": "2025-11-22T00:31:51.840Z",
+  "url": "https://www.minskole.no/trones/#",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<div style=\"float: right; height: 50px; text-align:left; margin-right: 20px; font-size: 18px; line-height: 50px; color: Red\">7°</div>",
+          "target": [
+            "#weatherHolder > div:nth-child(2) > div > div:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.44 (foreground color: #ff0000, background color: #eeeeee, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div style=\"float: right; height: 50px; text-align:left; margin-right: 20px; font-size: 18px; line-height: 50px; color: Red\">6°</div>",
+          "target": [
+            "#weatherHolder > div:nth-child(3) > div > div:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.44 (foreground color: #ff0000, background color: #eeeeee, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div style=\"float: right; height: 50px; text-align:left; margin-right: 20px; font-size: 18px; line-height: 50px; color: Red\">4°</div>",
+          "target": [
+            "#weatherHolder > div:nth-child(4) > div > div:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.44 (foreground color: #ff0000, background color: #eeeeee, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<input type=\"button\" name=\"ctl00$ContentPlaceHolder1$btnAppendNews\" value=\"Vis flere nyheter\" onclick=\"disableAppendNewsButton();__doPostBack('ctl00$ContentPlaceHolder1$btnAppendNews','')\" id=\"ContentPlaceHolder1_btnAppendNews\" class=\"roundedButton customStyleButton\" style=\"width:200px;\">",
+          "target": [
+            "#ContentPlaceHolder1_btnAppendNews"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.6 (foreground color: #ffffff, background color: #cccccc, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<input type=\"button\" value=\"Aksepter\" class=\"roundedButton customStyleButton\" style=\"font-size: 10pt; height: 30px; line-height: 30px;\" id=\"cookie-consent-close\">",
+          "target": [
+            "#cookie-consent-close"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.6 (foreground color: #ffffff, background color: #cccccc, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "html-has-lang",
+      "impact": "serious",
+      "description": "Ensure every HTML document has a lang attribute",
+      "help": "<html> element must have a lang attribute",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/html-has-lang?application=playwright",
+      "tags": [
+        "cat.language",
+        "wcag2a",
+        "wcag311",
+        "TTv5",
+        "TT11.a",
+        "EN-301-549",
+        "EN-9.3.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-8.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html class=\"t-chrome t-chrome141\" style=\"height: 100%;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix any of the following:\n  The <html> element does not have a lang attribute"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img src=\"/StaticContent//Kommuner/1108kommunevaapen.png\" id=\"ctl17_img\" style=\"width:50%;\">",
+          "target": [
+            "#ctl17_img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img id=\"imgArticle\" src=\"/DynamicContent//CustomFrontpageImages/66-f245018e-c525-4a0e-a7f8-87eb3c293a1d.jpg\" style=\"float:left; margin: 0px 10px 10px 0px; max-width:150px; max-height: 150px;\">",
+          "target": [
+            "div:nth-child(2) > .newsItemReadMore[href=\"/trones/artikkel/425515\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img id=\"imgArticle\" src=\"/DynamicContent//CustomFrontpageImages/66-9c323a38-49e7-463f-b8dd-33550a0b3071.jpg\" style=\"float:left; margin: 0px 10px 10px 0px; max-width:150px; max-height: 150px;\">",
+          "target": [
+            "div:nth-child(2) > .newsItemReadMore[href=\"/trones/artikkel/425092\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html class=\"t-chrome t-chrome141\" style=\"height: 100%;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 19,
+      "nodes": [
+        {
+          "html": "<a href=\"https://skjema.sandnes.kommune.no/skjema/SAN017/Meld_fra_om_mobbingkrenking_i_Sandnesskolen\" id=\"ctl10_hl\" target=\"_blank\"><img src=\"/DynamicContent/\\WidgetLogo\\66-3c0698e3-bc72-4e12-b1c8-c362cc30fca5.jpg\" id=\"ctl10_img\" alt=\"\" style=\"width: 100%; border:0;\"></a>",
+          "target": [
+            "#ctl10_hl"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.udir.no/nullmobbing/\" id=\"ctl16_hl\" target=\"_blank\"><img src=\"/DynamicContent/\\WidgetLogo\\66-fdc75008-2478-4c5d-a8ba-9fa5b9cb31f3.jpg\" id=\"ctl16_img\" alt=\"\" style=\"width: 100%; border:0;\"></a>",
+          "target": [
+            "#ctl16_hl"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/426199\" id=\"lnkNavigate2\" class=\"newsItemReadMore\">\n            <div id=\"divArticleHeaderImage\" class=\"articleHeaderImage\" style=\"background-image:url('/DynamicContent//CustomFrontpageImages/66-713b7536-c77d-4f35-abcd-016c6f11dcb5.jpg');\"></div>\n            \n        </a>",
+          "target": [
+            "div:nth-child(1) > div:nth-child(1) > .newsItemReadMore[href=\"/trones/artikkel/426199\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/426199\" id=\"lnkNavigate3\" class=\"newsItemReadMore\"></a>",
+          "target": [
+            "div:nth-child(2) > .newsItemReadMore[href=\"/trones/artikkel/426199\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/426166\" id=\"lnkNavigate2\" class=\"newsItemReadMore\">\n            <div id=\"divArticleHeaderImage\" class=\"articleHeaderImage\" style=\"background-image:url('/DynamicContent//CustomFrontpageImages/66-7845743f-0f16-47b4-b518-e5f301b1aa7d.jpg');\"></div>\n            \n        </a>",
+          "target": [
+            "#ctl00_ContentPlaceHolder1_ctl01 > div:nth-child(3) > div:nth-child(1) > .newsItemReadMore[href=\"/trones/artikkel/426166\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/426166\" id=\"lnkNavigate3\" class=\"newsItemReadMore\"></a>",
+          "target": [
+            "div:nth-child(2) > .newsItemReadMore[href=\"/trones/artikkel/426166\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/425820\" id=\"lnkNavigate2\" class=\"newsItemReadMore\">\n            <div id=\"divArticleHeaderImage\" class=\"articleHeaderImage\" style=\"background-image:url('/DynamicContent//CustomFrontpageImages/66-f296c234-237b-4c10-81ba-edf59dfb54f4.jpg');\"></div>\n            \n        </a>",
+          "target": [
+            "div:nth-child(5) > div:nth-child(1) > .newsItemReadMore[href=\"/trones/artikkel/425820\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/425820\" id=\"lnkNavigate3\" class=\"newsItemReadMore\"></a>",
+          "target": [
+            "div:nth-child(2) > .newsItemReadMore[href=\"/trones/artikkel/425820\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/425817\" id=\"lnkNavigate2\" class=\"newsItemReadMore\">\n            <div id=\"divArticleHeaderImage\" class=\"articleHeaderImage\" style=\"background-image:url('/DynamicContent//CustomFrontpageImages/66-b1c1e1f4-c5de-49f6-8a6c-f5862a7ffc75.jpg');\"></div>\n            \n        </a>",
+          "target": [
+            "div:nth-child(7) > div:nth-child(1) > .newsItemReadMore[href=\"/trones/artikkel/425817\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/425817\" id=\"lnkNavigate3\" class=\"newsItemReadMore\"></a>",
+          "target": [
+            "div:nth-child(2) > .newsItemReadMore[href=\"/trones/artikkel/425817\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/425515\" id=\"lnkNavigate3\" class=\"newsItemReadMore\"><img id=\"imgArticle\" src=\"/DynamicContent//CustomFrontpageImages/66-f245018e-c525-4a0e-a7f8-87eb3c293a1d.jpg\" style=\"float:left; margin: 0px 10px 10px 0px; max-width:150px; max-height: 150px;\"></a>",
+          "target": [
+            "div:nth-child(2) > .newsItemReadMore[href=\"/trones/artikkel/425515\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/425383\" id=\"lnkNavigate2\" class=\"newsItemReadMore\">\n            <div id=\"divArticleHeaderImage\" class=\"articleHeaderImage\" style=\"background-image:url('/DynamicContent//CustomFrontpageImages/66-6b1955b1-8251-40e0-be4e-e8492aa7e12f.jpg');\"></div>\n            \n        </a>",
+          "target": [
+            "div:nth-child(11) > div:nth-child(1) > .newsItemReadMore[href=\"/trones/artikkel/425383\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/425383\" id=\"lnkNavigate3\" class=\"newsItemReadMore\"></a>",
+          "target": [
+            "div:nth-child(2) > .newsItemReadMore[href=\"/trones/artikkel/425383\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/425311\" id=\"lnkNavigate2\" class=\"newsItemReadMore\">\n            <div id=\"divArticleHeaderImage\" class=\"articleHeaderImage\" style=\"background-image:url('/DynamicContent//CustomFrontpageImages/66-4dd24dba-77fd-46e2-ad2e-c97451d30798.jpg');\"></div>\n            \n        </a>",
+          "target": [
+            "div:nth-child(13) > div:nth-child(1) > .newsItemReadMore[href=\"/trones/artikkel/425311\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/425311\" id=\"lnkNavigate3\" class=\"newsItemReadMore\"></a>",
+          "target": [
+            "div:nth-child(2) > .newsItemReadMore[href=\"/trones/artikkel/425311\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/425157\" id=\"lnkNavigate2\" class=\"newsItemReadMore\">\n            <div id=\"divArticleHeaderImage\" class=\"articleHeaderImage\" style=\"background-image:url('/DynamicContent//CustomFrontpageImages/66-cdcdfe43-9b60-4474-bc0a-a6f16dcb7168.jpg');\"></div>\n            \n        </a>",
+          "target": [
+            "div:nth-child(15) > div:nth-child(1) > .newsItemReadMore[href=\"/trones/artikkel/425157\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/425157\" id=\"lnkNavigate3\" class=\"newsItemReadMore\"></a>",
+          "target": [
+            "div:nth-child(2) > .newsItemReadMore[href=\"/trones/artikkel/425157\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/425092\" id=\"lnkNavigate3\" class=\"newsItemReadMore\"><img id=\"imgArticle\" src=\"/DynamicContent//CustomFrontpageImages/66-9c323a38-49e7-463f-b8dd-33550a0b3071.jpg\" style=\"float:left; margin: 0px 10px 10px 0px; max-width:150px; max-height: 150px;\"></a>",
+          "target": [
+            "div:nth-child(2) > .newsItemReadMore[href=\"/trones/artikkel/425092\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"/trones/artikkel/425002\" id=\"lnkNavigate3\" class=\"newsItemReadMore\"></a>",
+          "target": [
+            "div:nth-child(2) > .newsItemReadMore[href=\"/trones/artikkel/425002\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html class=\"t-chrome t-chrome141\" style=\"height: 100%;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 27,
+      "nodes": [
+        {
+          "html": "<div id=\"divTextualLogo\" style=\"margin-top: 40px; overflow: auto; margin-bottom: 10px;\">",
+          "target": [
+            "#divTextualLogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"panDefaultMenu\" style=\"overflow: hidden; margin-bottom: 12px;\">",
+          "target": [
+            "#panDefaultMenu"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"widgetBox_Outer customStyleEffectColor1Bg\" style=\"overflow: auto;\">",
+          "target": [
+            ".customStyleEffectColor1Bg.widgetBox_Outer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"widgetBox_Outer customStyleEffectColor3Bg\">",
+          "target": [
+            ".customStyleEffectColor3Bg.widgetBox_Outer:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"widgetBox_Outer customStyleEffectColor3Bg\">",
+          "target": [
+            ".customStyleEffectColor3Bg.widgetBox_Outer:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"ctl12\" class=\"documentAccordionHeader\">\n\t\t\n                    <span id=\"ctl12_lblGroupName_0\">Dokument på Forside</span>\n\n                \n\t</div>",
+          "target": [
+            ".documentAccordionHeader"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>\n            <a href=\"/trones/Dokumenter/722\" class=\"arrowLink\"><img src=\"/Gfx/Icons/Navigate24.png\" alt=\"\"><span>Flere dokumenter</span></a>\n        </div>",
+          "target": [
+            ".widgetBox_Outer:nth-child(8) > div > div:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>Oversett siden til et annet språk</div>",
+          "target": [
+            ".widgetBox_Outer:nth-child(11) > div > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"font-size:smaller;\">Translate page to another language</div>",
+          "target": [
+            ".widgetBox_Outer:nth-child(11) > div > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"font-size:smaller;\">Traducir la página a otro idioma</div>",
+          "target": [
+            ".widgetBox_Outer:nth-child(11) > div > div:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Velg språk</span>",
+          "target": [
+            ".VIpgJd-ZVi9od-xl07Ob-lTBxed > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span style=\"border-left: 1px solid rgb(187, 187, 187);\">​</span>",
+          "target": [
+            ".VIpgJd-ZVi9od-xl07Ob-lTBxed > span:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"widgetBox_Outer\" style=\"background-color: #ccc;\">\n    \n    <div style=\"padding: 15px; text-align: center;\">\n        <img src=\"/StaticContent//Kommuner/1108kommunevaapen.png\" id=\"ctl17_img\" style=\"width:50%;\">\n    </div>\n</div>",
+          "target": [
+            ".widgetBox_Outer:nth-child(16)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"widgetBox_Outer\" style=\"background-color: #eee;\">",
+          "target": [
+            ".widgetBox_Outer:nth-child(17)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"ContentPlaceHolder1_poster_divOuter\" style=\"margin-bottom:15px;overflow:auto;background-color:#99CC99;border-style:none;border-width:2px;border-color:#000000;color:#000000;\">",
+          "target": [
+            "#ContentPlaceHolder1_poster_divOuter"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"overflow: auto; margin-bottom: 10px;\">",
+          "target": [
+            "#ctl00_ContentPlaceHolder1_ctl01 > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"overflow: auto; margin-bottom: 10px;\">",
+          "target": [
+            "#ctl00_ContentPlaceHolder1_ctl01 > div:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"overflow: auto; margin-bottom: 10px;\">",
+          "target": [
+            "#ctl00_ContentPlaceHolder1_ctl01 > div:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"overflow: auto; margin-bottom: 10px;\">",
+          "target": [
+            "#ctl00_ContentPlaceHolder1_ctl01 > div:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"overflow: auto; margin-bottom: 10px;\">",
+          "target": [
+            "#ctl00_ContentPlaceHolder1_ctl01 > div:nth-child(9)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"overflow: auto; margin-bottom: 10px;\">",
+          "target": [
+            "#ctl00_ContentPlaceHolder1_ctl01 > div:nth-child(11)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"overflow: auto; margin-bottom: 10px;\">",
+          "target": [
+            "#ctl00_ContentPlaceHolder1_ctl01 > div:nth-child(13)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"overflow: auto; margin-bottom: 10px;\">",
+          "target": [
+            "#ctl00_ContentPlaceHolder1_ctl01 > div:nth-child(15)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"overflow: auto; margin-bottom: 10px;\">",
+          "target": [
+            "#ctl00_ContentPlaceHolder1_ctl01 > div:nth-child(17)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"overflow: auto; margin-bottom: 10px;\">",
+          "target": [
+            "div:nth-child(19)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"privacyFooter\"><a href=\"https://www.nyweb.no/personvern\" target=\"_blank\">Personvern og informasjonskapsler</a>   - © Nyweb AS 2025</div>",
+          "target": [
+            "#privacyFooter"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"cookie-law-info-bar\" style=\"display: block;\">",
+          "target": [
+            "#cookie-law-info-bar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

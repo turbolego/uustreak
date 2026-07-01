@@ -1,0 +1,165 @@
+{
+  "project": "Bergens Tidende AS",
+  "timestamp": "2026-06-16T05:18:35.686Z",
+  "url": "https://www.bt.no/#",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<span class=\"label-medium bold _label_mbzpt_200\">",
+          "target": [
+            "a[data-content-id=\"126574\"] > ._main_mbzpt_119 > ._meta_mbzpt_188 > ._label_mbzpt_200.label-medium.bold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.83 (foreground color: #1c7eff, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span aria-hidden=\"true\">Se alle podkaster</span>",
+          "target": [
+            "span[aria-label=\"Se alle podkaster\"] > span[aria-hidden=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.83 (foreground color: #1c7eff, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "landmark-complementary-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the complementary landmark or aside is at top level",
+      "help": "Aside should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-complementary-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<aside class=\"aside\">",
+          "target": [
+            "aside"
+          ],
+          "failureSummary": "Fix any of the following:\n  The null landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.bt.no/\" data-astro-cid-vndfyoqm=\"\">",
+          "target": [
+            "._logos_e3b6k_158 > a[href$=\"bt.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/nested-interactive?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<audio-play-button asset-id=\"126570\" vendor=\"bt\" provider=\"bt\" title=\"Et lite dypdykk: Myhre, Deila, Tegström ...?\" class=\"label-medium _root_pa3qf_54 _small_pa3qf_72\" role=\"button\" tabindex=\"0\" data-state=\"idle\">",
+          "target": [
+            "track-element[data-track-id=\"teaser:126570\"] > ._podcast_pgscv_1 > ._meta_pgscv_48 > ._root_pa3qf_54._small_pa3qf_72[vendor=\"bt\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<audio-play-button asset-id=\"126554\" vendor=\"bt\" provider=\"bt\" title=\"Presset øker på Brann-sjefene\" class=\"label-medium _root_pa3qf_54 _small_pa3qf_72\" role=\"button\" tabindex=\"0\" data-state=\"idle\">",
+          "target": [
+            "audio-play-button[title=\"Presset øker på Brann-sjefene\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<audio-play-button asset-id=\"126553\" vendor=\"bt\" provider=\"bt\" title=\"Moshpit, pissregn og ny byarena i Bergen\" class=\"label-medium _root_pa3qf_54 _small_pa3qf_72\" role=\"button\" tabindex=\"0\" data-state=\"idle\">",
+          "target": [
+            "track-element[data-track-id=\"teaser:126553\"] > ._podcast_pgscv_1 > ._meta_pgscv_48 > ._root_pa3qf_54._small_pa3qf_72[vendor=\"bt\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"sch-datacontroller__text\">",
+          "target": [
+            ".sch-datacontroller__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

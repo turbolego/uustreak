@@ -1,0 +1,161 @@
+{
+  "project": "Thon Hotels AS",
+  "timestamp": "2026-06-19T03:54:32.463Z",
+  "url": "https://www.thonhotels.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"story-teaser__heading font-h2\">\n                        <a href=\"/tilbud/sommerkampanje/\" class=\"story-teaser__link\">Opptil 20% på årets sommerferie</a>\n                </h3>",
+          "target": [
+            ".story-teaser--big-campaign > .story-teaser__content > .story-teaser__heading.font-h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 9,
+      "nodes": [
+        {
+          "html": "<img sizes=\"50vw\" src=\"https://dam.thon.com...\" srcset=\"https://dam.thon.com...\" title=\"\">",
+          "target": [
+            "img[sizes=\"50vw\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img loading=\"lazy\" sizes=\"(min-width: 480px) 4...\" src=\"https://dam.thon.com...\" srcset=\"https://dam.thon.com...\">",
+          "target": [
+            ".teaser-section-bg > section > .story-teaser-wrapper > .story-teaser:nth-child(1) > .story-teaser__media > img[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img loading=\"lazy\" sizes=\"(min-width: 480px) 4...\" src=\"https://dam.thon.com...\" srcset=\"https://dam.thon.com...\">",
+          "target": [
+            ".teaser-section-bg > section > .story-teaser-wrapper > .story-teaser:nth-child(2) > .story-teaser__media > img[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img loading=\"lazy\" sizes=\"100vw\" src=\"https://dam.thon.com...\" srcset=\"https://dam.thon.com...\" title=\"\">",
+          "target": [
+            ".story-teaser:nth-child(1) > .story-teaser__media > img[sizes=\"100vw\"][title=\"\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img loading=\"lazy\" sizes=\"100vw\" src=\"https://dam.thon.com...\" srcset=\"https://dam.thon.com...\" title=\"\">",
+          "target": [
+            ".story-teaser-wrapper > .story-teaser:nth-child(2) > .story-teaser__media > img[sizes=\"100vw\"][title=\"\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img loading=\"lazy\" sizes=\"100vw\" src=\"https://dam.thon.com...\" srcset=\"https://dam.thon.com...\" title=\"\">",
+          "target": [
+            ".story-teaser-slider > .story-teaser:nth-child(2) > .story-teaser__media > img[sizes=\"100vw\"][title=\"\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img loading=\"lazy\" sizes=\"100vw\" src=\"https://dam.thon.com...\" srcset=\"https://dam.thon.com...\" title=\"\">",
+          "target": [
+            ".story-teaser:nth-child(3) > .story-teaser__media > img[sizes=\"100vw\"][title=\"\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img loading=\"lazy\" sizes=\"100vw\" src=\"https://dam.thon.com...\" srcset=\"https://dam.thon.com...\" title=\"\">",
+          "target": [
+            ".story-teaser:nth-child(4) > .story-teaser__media > img[sizes=\"100vw\"][title=\"\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img loading=\"lazy\" sizes=\"(min-width: 800px) 8...\" src=\"https://dam.thon.com...\" srcset=\"https://dam.thon.com...\" title=\"\">",
+          "target": [
+            ".story-teaser-odd-even-wrapper > .story-teaser > .story-teaser__media > img[title=\"\"][loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" class=\"coi-banner-properties\" role=\"banner\" data-testid=\"coi-banner__overlay\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" class=\"coi-banner-properties\" role=\"banner\" data-testid=\"coi-banner__overlay\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}

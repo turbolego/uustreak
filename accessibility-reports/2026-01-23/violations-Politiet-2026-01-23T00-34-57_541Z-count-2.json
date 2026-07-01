@@ -1,0 +1,59 @@
+{
+  "project": "Politiet",
+  "timestamp": "2026-01-23T00:34:57.542Z",
+  "url": "https://www.politiet.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them",
+      "help": "Elements marked as presentational should be consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 3652 1067.9\" xml:space=\"preserve\" aria-describedby=\"pno-logo-title\" role=\"presentation\">",
+          "target": [
+            [
+              "pno-header",
+              "pno-logo",
+              "svg[viewBox=\"0 0 3652 1067.9\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<sds-button href=\"#main-content\" class=\"fixed top-4 left-4 -translate-y-[200%] focus:translate-y-0 z-[9999] transition-transform\" id=\"skip-link\" size=\"lg\" type=\"button\" value=\"\" variant=\"primary\">Hopp til hovedinnhold</sds-button>",
+          "target": [
+            "#skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "project": "Eiendomsmelger Krogsveen AS",
+  "timestamp": "2026-02-04T00:51:33.025Z",
+  "url": "https://www.krogsveen.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span data-text=\"true\" class=\"text-body-sm\">Verdivurdering</span>",
+          "target": [
+            "#button-header-verdivurdering > .text-body-sm[data-text=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #ba5b3e, background color: #edf0e7, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 38,
+      "nodes": [
+        {
+          "html": "<div class=\"css-zkxncz\">",
+          "target": [
+            ".css-zkxncz"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"text-body-sm css-1mcnram\" href=\"/kjope\">Kjøpe</a>",
+          "target": [
+            "a[href$=\"kjope\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"text-body-sm css-1mcnram\" href=\"/selge\">Selge</a>",
+          "target": [
+            ".css-1mcnram.text-body-sm[href$=\"selge\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"text-body-sm css-1mcnram\" href=\"/utleie\">Leie</a>",
+          "target": [
+            "a[href$=\"utleie\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"text-body-sm css-1mcnram\" href=\"/eiendomsmegler\">Finn megler</a>",
+          "target": [
+            ".css-1mcnram.text-body-sm[href$=\"eiendomsmegler\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-13i6elo\" data-dropdown=\"true\">",
+          "target": [
+            ".css-13i6elo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"css-d8mt2w\" id=\"button-header-verdivurdering\" href=\"/verdivurdering\"><span data-text=\"true\" class=\"text-body-sm\">Verdivurdering</span></a>",
+          "target": [
+            "#button-header-verdivurdering"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-component=\"front-page-cover\" class=\"css-12um54u\">",
+          "target": [
+            ".css-12um54u"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-1vy9f4v\" data-component=\"page-grid\">",
+          "target": [
+            ".css-1fmkdzz > .css-1vy9f4v[data-component=\"page-grid\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span style=\"margin-bottom:8px\" class=\"text-kicker\">De beste folkene</span>",
+          "target": [
+            ".css-1qs1wvn > .text-kicker"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"false text-h2\">Din egen rådgiver</h2>",
+          "target": [
+            ".false.text-h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rich-text  false text-body css-1cmxauv\" style=\"margin-top:20px\">",
+          "target": [
+            ".rich-text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span data-link-text=\"true\">Din egen rådgiver på boligmarkedet</span>",
+          "target": [
+            ".text-body[data-has-icon=\"true\"][data-ui-component=\"link-base\"] > span[data-link-text=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-1d9lbrd\"><span class=\"text-kicker\" style=\"margin-bottom:4px;display:block\">Verktøy</span><h2 class=\"text-h2\">Sjekk din boligverdi!</h2></div>",
+          "target": [
+            ".css-zg9qiq > .css-1d9lbrd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"text-body\">Bare tast inn adressen din og få svaret med en gang! Enkelt, raskt og helt gratis.</p>",
+          "target": [
+            ".css-1nl5mao > .text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input value=\"\" placeholder=\"Finn din adresse\" aria-invalid=\"false\" class=\"text-body css-1k5lrx0\">",
+          "target": [
+            "input"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-1vy9f4v\" data-component=\"page-grid\">",
+          "target": [
+            ".css-1vy9f4v[data-component=\"page-grid\"]:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"text-kicker\" style=\"margin-bottom:4px;display:block;opacity:1\">Tilleggstjenester</span>",
+          "target": [
+            ".css-1k0pgnc > .text-kicker"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"text-h2 text--banner\">Vi fikser flyttingen for deg</h3>",
+          "target": [
+            ".css-1k0pgnc > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"text-body-lg\" style=\"margin:20px 0\">La oss fikse vask, pakking, lagring og transport. Vi har også håndverkere hvis du har behov for det.   </p>",
+          "target": [
+            ".css-1k0pgnc > .text-body-lg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span data-link-text=\"true\">Finn ut mer</span>",
+          "target": [
+            "a[href$=\"flytte\"][data-ui-component=\"link-href\"][data-has-icon=\"true\"] > span[data-link-text=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span data-link-text=\"true\">Mer fra magasinet</span>",
+          "target": [
+            "a[data-ui-component=\"link-href\"][href$=\"magasin\"][data-has-icon=\"true\"] > span[data-link-text=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-18ikxop\">",
+          "target": [
+            ".css-18ikxop"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"text-body-lg\">Kjøpe</h2>",
+          "target": [
+            ".css-19nr1ow:nth-child(1) > .css-2ljws1 > .text-body-lg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-1d9lbrd\">",
+          "target": [
+            ".css-19nr1ow:nth-child(1) > .css-1d9lbrd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"text-body-lg\">Selge</h2>",
+          "target": [
+            ".css-19nr1ow:nth-child(2) > .css-2ljws1 > .text-body-lg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-1d9lbrd\">",
+          "target": [
+            ".css-19nr1ow:nth-child(2) > .css-1d9lbrd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"text-body-lg\">Leie</h2>",
+          "target": [
+            ".css-19nr1ow:nth-child(3) > .css-2ljws1 > .text-body-lg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-1d9lbrd\">",
+          "target": [
+            ".css-19nr1ow:nth-child(3) > .css-1d9lbrd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"text-body-lg\">Annet</h2>",
+          "target": [
+            ".css-19nr1ow:nth-child(4) > .css-2ljws1 > .text-body-lg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-1d9lbrd\">",
+          "target": [
+            ".css-19nr1ow:nth-child(4) > .css-1d9lbrd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>© <!-- -->2026<!-- --> Krogsveen</div>",
+          "target": [
+            ".css-1y1ma0n > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"css-11945xh\" href=\"/personvern/personopplysninger\">Personvern</a>",
+          "target": [
+            "a[href$=\"personopplysninger\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"css-11945xh\" href=\"/personvern/cookies\">Informasjonskaplser</a>",
+          "target": [
+            ".css-11945xh[href$=\"cookies\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-157jlni\"><a class=\"css-11945xh\" href=\"https://www.facebook.com/Krogsveen/\">Facebook</a><a class=\"css-11945xh\" href=\"/nyhetsbrev\">Nyhetsbrev</a></div>",
+          "target": [
+            ".css-157jlni:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"text-h2 text--banner text--center\" style=\"margin-top: 110px;\">Velkommen til Krogsveen</h2>",
+          "target": [
+            ".text--center.text-h2.text--banner"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"text-body text--center\" style=\"margin-top: 12px; margin-bottom: 20px;\">Vi bruker informasjonskapsler for å gi deg en god brukeropplevelse, relevante annonser og statistikk for å bli bedre.</p>",
+          "target": [
+            ".text--center.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a data-ui-component=\"link-href\" data-underline=\"true\" data-has-icon=\"false\" class=\"text-body-sm text--center css-r5da3j\" href=\"/personvern/cookies\" style=\"margin: 0px auto; text-align: center; display: block;\">",
+          "target": [
+            ".text--center[href$=\"cookies\"][data-ui-component=\"link-href\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

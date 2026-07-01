@@ -1,0 +1,108 @@
+{
+  "project": "Stiftelsen Bergensklinikkene",
+  "timestamp": "2026-04-27T08:03:45.365Z",
+  "url": "https://no-go.kelkoogroup.net/redirect?country=no&k=612f7a9541cd6ea6c9a780de621954daed65fbdbe878aa8801e8223e297472aef54b444372b668ae0dfda790f2e8777500fc52ebcbce212c4bccfb3e07e7a1c5bce6602efedfcbbde5e63d72d5fe6ee62b23af1a57f668a576afe749b30b34650d1e0369f4ec8d97992c1ecb7ae955aeb884537c14c32c4b9c227784e8c428a6eb379e18afff54c65a627d3569706fdc9df9a4788b97d306e2ffccd803a8c607c5848e1528006239730b97344ac26a7bfd1630544486f49b5f4824b99f4d3507fece3195a3ca9cc9b17ac4d4ad54ecc0694191c37cdbe5c4ed3d54416251f18f5f4fd19043ef1ea48b6bb1551130e13835aea899effdffaf9bb9d53fec031803cdefd695b935b2fb&url=https%3A%2F%2Fwww.maxgaming.no%2Fno%2Fkabel-for-tastatur%2Fwooting-usb-c-cable-set-blossom-pink%3Futm_source%3Dkelkoono%26utm_medium%3Dcpc%26utm_campaign%3Dkelkooclick%26utm_source_platform%3DKelkooGroup&initiator=fp&dc=false",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        },
+        {
+          "html": "<html lang=\"nb\" style=\"background-color:#ffffff\">",
+          "target": [
+            "iframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html lang=\"nb\" style=\"background-color:#ffffff\">",
+          "target": [
+            "iframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<div class=\"captcha__human\" data-dd-captcha-human=\"\">",
+          "target": [
+            "iframe",
+            ".captcha__human"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"captcha__robot__warning\" data-dd-captcha-robot-warning=\"\">",
+          "target": [
+            "iframe",
+            ".captcha__robot__warning"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"captcha__robot__contact_support\" data-dd-captcha-robot-contact-support=\"\">",
+          "target": [
+            "iframe",
+            ".captcha__robot__contact_support"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

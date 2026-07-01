@@ -1,0 +1,156 @@
+{
+  "project": "Dagbladet AS",
+  "timestamp": "2026-06-15T05:15:05.143Z",
+  "url": "https://www.dagbladet.no/#",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<div class=\"kicker-content\">LAMSLÅTT:</div>",
+          "target": [
+            ".hasTextColor > .kicker-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #f1ca3f, background color: #d60000, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"text-yellow color_mobile_text-yellow\" data-lab-text_color_desktop=\"text-yellow\">STREIKER:&nbsp;</span>",
+          "target": [
+            "span[data-lab-text_color_desktop=\"text-yellow\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.43 (foreground color: #f1ca3f, background color: #d60000, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"song-title svelte-1mbdfa7\">Gi alt for Norge</span>",
+          "target": [
+            ".song-chip[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(3) > .song-title.svelte-1mbdfa7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.16 (foreground color: #ffffff, background color: #eeeeee, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"song-author svelte-1mbdfa7\">Tor Eivind Waage</span>",
+          "target": [
+            ".song-chip[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(3) > .song-author.svelte-1mbdfa7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.16 (foreground color: #ffffff, background color: #eeeeee, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"song-title svelte-1mbdfa7\">Bladet uten h</span>",
+          "target": [
+            ".song-chip[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(4) > .song-title.svelte-1mbdfa7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.16 (foreground color: #ffffff, background color: #eeeeee, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"song-author svelte-1mbdfa7\">Magnus Gjestrum Larsen</span>",
+          "target": [
+            ".song-chip[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(4) > .song-author.svelte-1mbdfa7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.16 (foreground color: #ffffff, background color: #eeeeee, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"song-title svelte-1mbdfa7\">Norge, mitt hjemland</span>",
+          "target": [
+            ".song-chip[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(5) > .song-title.svelte-1mbdfa7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.16 (foreground color: #ffffff, background color: #eeeeee, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"ec__sc-168ntql-0 jkuUMO\">",
+          "target": [
+            ".jkuUMO"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<p>\n        Dagbladet\n        er en del av Aller Media. Aller Media er ansvarlig for dine data på denne nettsiden.\n        &nbsp;<a href=\"https://personvern.aller.no/personvern\">Les mer</a>\n      </p>",
+          "target": [
+            "#am-branding > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "scrollable-region-focusable",
+      "impact": "serious",
+      "description": "Ensure elements that have scrollable content are accessible by keyboard",
+      "help": "Scrollable region must have keyboard access",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag211",
+        "wcag213",
+        "TTv5",
+        "TT4.a",
+        "EN-301-549",
+        "EN-9.2.1.1",
+        "EN-9.2.1.3",
+        "RGAAv4",
+        "RGAA-7.3.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"ds-cells\" data-today=\"2026-06-15\">",
+          "target": [
+            "iframe[title=\"VM 2026 – kampstripe\"]",
+            ".ds-cells"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+        }
+      ]
+    }
+  ]
+}

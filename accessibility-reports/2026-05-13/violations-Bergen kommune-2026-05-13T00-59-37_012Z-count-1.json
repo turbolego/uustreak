@@ -1,0 +1,31 @@
+{
+  "project": "Bergen kommune",
+  "timestamp": "2026-05-13T00:59:37.013Z",
+  "url": "https://www.bergen.kommune.no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img class=\"teaser__image\" src=\"/api/rest/bilder/V70142299?scaleWidth=950&amp;cropX1=6&amp;cropY1=0&amp;cropX2=1994&amp;cropY2=1127\" alt=\"Slik blir 17. mai i Bergen\">",
+          "target": [
+            ".teaser__image"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    }
+  ]
+}

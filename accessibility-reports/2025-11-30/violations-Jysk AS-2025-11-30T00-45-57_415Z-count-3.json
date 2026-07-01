@@ -1,0 +1,150 @@
+{
+  "project": "Jysk AS",
+  "timestamp": "2025-11-30T00:45:57.416Z",
+  "url": "https://jysk.no/#",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav>",
+          "target": [
+            ".col-md-3.col-sm-12.col-12:nth-child(1) > .d-md-block.d-none.d-lg-block > nav"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"/black-friday\"><img src=\"/themes/custom/jysk_bootstrap/images/blackfriday/blackfridayheader-no.png\" alt=\"\" width=\"461\" height=\"96\" class=\"img-responsive theme-logo__image\"></a>",
+          "target": [
+            ".justify-content-around > a[href$=\"black-friday\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 10,
+      "nodes": [
+        {
+          "html": "<div class=\"usp-text col-sm-12 col-12\"><span class=\"usp__title lead text-medium\">46 ÅR MED GODE TILBUD</span><div class=\"usp__subtitle d-block\">Mer enn 3500 butikker i over 50 land</div></div>",
+          "target": [
+            ".col.mb-4.mb-md-0:nth-child(1) > .usp.text-decoration-none[href$=\"om-jysk\"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"usp-text col-sm-12 col-12\"><span class=\"usp__title lead text-medium\">SKANDINAVISKE RØTTER</span><div class=\"usp__subtitle d-block\">Vi er globale med skandinaviske røtter. Etab. Danmark 1979</div></div>",
+          "target": [
+            ".col.mb-4.mb-md-0:nth-child(2) > .usp.text-decoration-none[href$=\"om-jysk\"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"usp-text col-sm-12 col-12\"><span class=\"usp__title lead text-medium\">MADRASSGARANTI</span><div class=\"usp__subtitle d-block\">25 års garanti på våre GOLD madrasser</div></div>",
+          "target": [
+            ".col.mb-4.mb-md-0:nth-child(3) > .usp.text-decoration-none.d-block > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"usp-text col-sm-12 col-12\"><span class=\"usp__title lead text-medium\">FAST LAV PRIS</span><div class=\"usp__subtitle d-block\">Vi har håndplukket et bredt utvalg av produkter som alltid har de samme lave prisene</div></div>",
+          "target": [
+            ".usp.text-decoration-none[href$=\"edlp\"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"newsletter__header text-center\">",
+          "target": [
+            ".newsletter__header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"required-label my--1 mt-3\">Alle felt merket med en stjerne (*) er obligatoriske</p>",
+          "target": [
+            ".required-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".newsletter__fields > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".newsletter__fields > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input type=\"checkbox\" id=\"edit-terms\" name=\"terms\" data-test=\"\" value=\"\">",
+          "target": [
+            "#edit-terms"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>",
+          "target": [
+            ".checkbox-inline > span:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "project": "Molde videregående skole",
+  "timestamp": "2026-01-24T00:26:06.485Z",
+  "url": "https://molde.vgs.no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img alt=\"Molde videregående skole\" src=\"/handlers/bv.ashx/i3d409a8e-a21d-4160-a6a0-953c76b73221/91020molde-vgs_h75px.svg\">",
+          "target": [
+            "img[alt=\"Molde videregående skole\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "project": "Eiendomsmegler Vest AS",
+  "timestamp": "2026-01-27T00:44:51.722Z",
+  "url": "https://www.eiendomsmeglernorge.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<span class=\"suki-menu-item-title\">Selge</span>",
+          "target": [
+            "#menu-item-1064875 > .suki-menu-item-link > .suki-menu-item-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.44 (foreground color: #ffffff, background color: #ff4238, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"suki-menu-item-title\">Kjøpe</span>",
+          "target": [
+            "#menu-item-1064874 > .suki-menu-item-link > .suki-menu-item-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.44 (foreground color: #ffffff, background color: #ff4238, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"suki-menu-item-title\">Finn megler</span>",
+          "target": [
+            "#menu-item-1064876 > .suki-menu-item-link > .suki-menu-item-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.44 (foreground color: #ffffff, background color: #ff4238, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h6>Gjør et boligsøk</h6>",
+          "target": [
+            "h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.eiendomsmeglernorge.no/\" rel=\"home\" class=\"suki-menu-item-link\">",
+          "target": [
+            ".suki-header-logo > .site-title.h1.menu-item > .suki-menu-item-link[rel=\"home\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.eiendomsmeglernorge.no/nyheter/skattemelding-2025/\">",
+          "target": [
+            ".image-top-side.sm-2col:nth-child(1) > .sm-2col-image-wrapper > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.eiendomsmeglernorge.no/nyheter/hvordan-velge-riktig-megler/\">",
+          "target": [
+            ".image-top-side.sm-2col:nth-child(2) > .sm-2col-image-wrapper > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.eiendomsmeglernorge.no/nyheter/boligkjas-kupping-hemmelige-bud/\">",
+          "target": [
+            ".image-top-side.sm-2col:nth-child(3) > .sm-2col-image-wrapper > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.eiendomsmeglernorge.no/nyheter/brennhett-boligmarked-2025/\">",
+          "target": [
+            ".image-top-side.sm-2col:nth-child(4) > .sm-2col-image-wrapper > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<a class=\"skip-link screen-reader-text\" href=\"#content\">Skip to content</a>",
+          "target": [
+            ".skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"boligreise\" class=\"sm-wrapper section-boligreise bg-white width-normal \">",
+          "target": [
+            "#boligreise"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"boliglan\" class=\"sm-wrapper section-boliglan bg-light width-full img-left\">",
+          "target": [
+            "#boliglan"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"mer-om-bolig\" class=\"sm-wrapper section-mer-om-bolig bg-white width-full \">",
+          "target": [
+            "#mer-om-bolig"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h6>Gjør et boligsøk</h6>",
+          "target": [
+            "h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2>Finn ditt neste hjem</h2>",
+          "target": [
+            "#boligsok > .sm-section > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"vi-gjor-boligen-din-synlig\" class=\"sm-wrapper section-vi-gjor-boligen-din-synlig bg-white width-normal \">",
+          "target": [
+            "#vi-gjor-boligen-din-synlig"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-nosnippet=\"\" class=\"footer-disclaimer\" style=\"font-size: var(--wp--preset--font-size--small); background-color: var(--wp--preset--color--skjell); color: var(--wp--preset--color--contrast); padding: 20px;\">",
+          "target": [
+            ".footer-disclaimer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

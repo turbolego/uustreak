@@ -1,0 +1,377 @@
+{
+  "project": "Aktiv Eiendomsmegling AS",
+  "timestamp": "2025-12-11T00:50:07.889Z",
+  "url": "https://aktiv.no/#",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" class=\"TopBarContent_button__mjoJL\">",
+          "target": [
+            ".TopBarContent_button__mjoJL"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button type=\"button\" data-role=\"none\" class=\"slick-arrow slick-next\" style=\"display:block\" currentslide=\"0\" slidecount=\"6\">",
+          "target": [
+            ".slick-next"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a href=\"#\"><span>↓</span> 2 tjenester</a>",
+          "target": [
+            ".cm-purpose:nth-child(1) > .cm-services > .cm-caret > a[href=\"#\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #1a936f, background color: #eee7df, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button class=\"cm-btn cm-btn-success cm-btn-info cm-btn-accept\" type=\"button\">Godtar valgt</button>",
+          "target": [
+            ".cm-btn-info"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #ffffff, background color: #1a936f, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button class=\"cm-btn cm-btn-success cm-btn-accept-all\" type=\"button\">Godtar alle</button>",
+          "target": [
+            ".cm-btn-accept-all"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #ffffff, background color: #1a936f, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a target=\"_blank\" href=\"https://kiprotect.com/klaro\" rel=\"noopener\">Laget med Klaro</a>",
+          "target": [
+            "a[href$=\"klaro\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #1a936f, background color: #eee7df, font size: 8.4pt (11.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"ProjectsSliderContent_summary__NHhg7\">Øgreid Brygge - Leilighet i sjøkanten med fantastisk utsikt - Romslig innglasset balkong - Sjelden anledning!</h4>",
+          "target": [
+            ".slick-current > div > .ProjectsSliderContent_item__mTMhQ > .ProjectsSliderContent_link__zdHrB > .ProjectsSliderContent_contentWrapper__r_Ifc > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<img alt=\"Verdivurdering fra l...\" src=\"data:image/gif;base6...\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;to...\">",
+          "target": [
+            "img[alt=\"Verdivurdering fra lokalbank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Finansiering\" src=\"data:image/gif;base6...\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;to...\">",
+          "target": [
+            "img[alt=\"Finansiering\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Kjøpe bolig\" src=\"data:image/gif;base6...\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;to...\">",
+          "target": [
+            "img[alt=\"Kjøpe bolig\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Selge bolig\" src=\"data:image/gif;base6...\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;to...\">",
+          "target": [
+            "img[alt=\"Selge bolig\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Finn en megler\" src=\"data:image/gif;base6...\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;to...\">",
+          "target": [
+            "img[alt=\"Finn en megler\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Verdivurdering\" src=\"data:image/gif;base6...\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;to...\">",
+          "target": [
+            "img[alt=\"Verdivurdering\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Råd & inspirasjon\" src=\"data:image/gif;base6...\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;to...\">",
+          "target": [
+            "img[alt=\"Råd & inspirasjon\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "listitem",
+      "impact": "serious",
+      "description": "Ensure <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/listitem?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<li class=\"ProjectsSliderContent_item__mTMhQ\">",
+          "target": [
+            ".slick-current > div > .ProjectsSliderContent_item__mTMhQ"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li class=\"ProjectsSliderContent_item__mTMhQ\">",
+          "target": [
+            "div[data-index=\"1\"] > div > .ProjectsSliderContent_item__mTMhQ"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li class=\"ProjectsSliderContent_item__mTMhQ\">",
+          "target": [
+            "div[data-index=\"2\"] > div > .ProjectsSliderContent_item__mTMhQ"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        }
+      ]
+    },
+    {
+      "id": "meta-viewport",
+      "impact": "moderate",
+      "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+      "help": "Zooming and scaling must not be disabled",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/meta-viewport?application=playwright",
+      "tags": [
+        "cat.sensory-and-visual-cues",
+        "wcag2aa",
+        "wcag144",
+        "EN-301-549",
+        "EN-9.1.4.4",
+        "ACT",
+        "RGAAv4",
+        "RGAA-10.4.2"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1\">",
+          "target": [
+            "meta[name=\"viewport\"]:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+        },
+        {
+          "html": "<meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1\">",
+          "target": [
+            "meta[name=\"viewport\"]:nth-child(38)"
+          ],
+          "failureSummary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 15,
+      "nodes": [
+        {
+          "html": "<div class=\"cm-header\"><h1 class=\"title\"><span>Informasjon vi samler inn</span></h1><p><span>Her kan du se og velge hvilken informasjon vi samler inn om deg.</span></p></div>",
+          "target": [
+            ".cm-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input id=\"purpose-item-functional\" class=\"cm-list-input required\" aria-describedby=\"purpose-item-functional-description\" disabled=\"\" type=\"checkbox\">",
+          "target": [
+            "#purpose-item-functional"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<label for=\"purpose-item-functional\" class=\"cm-list-label\" tabindex=\"0\"><span class=\"cm-list-title\">Tjenesteytelse</span><span class=\"cm-required\" title=\"Denne applikasjonen er alltid påkrevd\">(alltid påkrevd)</span><span class=\"cm-switch\"><div class=\"slider round active\"></div></span></label>",
+          "target": [
+            "label[for=\"purpose-item-functional\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"purpose-item-functional-description\"><p class=\"cm-list-description\"><span>Disse tjenestene er avgjørende for at dette skal fungere korrekt nettsted. Du kan ikke deaktivere dem her siden tjenesten ellers ikke ville fungert riktig.</span></p></div>",
+          "target": [
+            "#purpose-item-functional-description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cm-caret\"><a href=\"#\"><span>↓</span> 2 tjenester</a></div>",
+          "target": [
+            ".cm-purpose:nth-child(1) > .cm-services > .cm-caret"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input id=\"purpose-item-advertising\" class=\"cm-list-input half-checked\" aria-describedby=\"purpose-item-advertising-description\" type=\"checkbox\">",
+          "target": [
+            "#purpose-item-advertising"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<label for=\"purpose-item-advertising\" class=\"cm-list-label\"><span class=\"cm-list-title\">Reklame</span><span class=\"cm-switch\"><div class=\"slider round active\"></div></span></label>",
+          "target": [
+            "label[for=\"purpose-item-advertising\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"purpose-item-advertising-description\"><p class=\"cm-list-description\"><span>Disse tjenestene behandler personlig informasjon for å vise deg personlig tilpassede eller interessebaserte annonser.</span></p></div>",
+          "target": [
+            "#purpose-item-advertising-description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cm-caret\"><a href=\"#\"><span>↓</span> 3 tjenester</a></div>",
+          "target": [
+            ".cm-purpose:nth-child(2) > .cm-services > .cm-caret"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input id=\"purpose-item-performance\" class=\"cm-list-input half-checked\" aria-describedby=\"purpose-item-performance-description\" type=\"checkbox\">",
+          "target": [
+            "#purpose-item-performance"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<label for=\"purpose-item-performance\" class=\"cm-list-label\"><span class=\"cm-list-title\">Ytelsesoptimalisering</span><span class=\"cm-switch\"><div class=\"slider round active\"></div></span></label>",
+          "target": [
+            "label[for=\"purpose-item-performance\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"purpose-item-performance-description\"><p class=\"cm-list-description\"><span>Disse tjenestene behandler personlig informasjon for å optimalisere tjenesten som denne nettsiden tilbyr.</span></p></div>",
+          "target": [
+            "#purpose-item-performance-description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cm-caret\"><a href=\"#\"><span>↓</span> 3 tjenester</a></div>",
+          "target": [
+            ".cm-purpose:nth-child(3) > .cm-services > .cm-caret"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"cm-purpose cm-toggle-all\">",
+          "target": [
+            ".cm-toggle-all"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cm-powered-by\"><a target=\"_blank\" href=\"https://kiprotect.com/klaro\" rel=\"noopener\">Laget med Klaro</a></p>",
+          "target": [
+            ".cm-powered-by"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

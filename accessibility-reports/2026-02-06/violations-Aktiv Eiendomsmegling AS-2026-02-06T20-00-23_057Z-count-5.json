@@ -1,0 +1,199 @@
+{
+  "project": "Aktiv Eiendomsmegling AS",
+  "timestamp": "2026-02-06T20:00:23.057Z",
+  "url": "https://aktiv.no/#",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" class=\"TopBarContent_button__mjoJL\">",
+          "target": [
+            ".TopBarContent_button__mjoJL"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button type=\"button\" data-role=\"none\" class=\"slick-arrow slick-next\" style=\"display:block\" currentslide=\"0\" slidecount=\"6\">",
+          "target": [
+            ".slick-next"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"ProjectsSliderContent_summary__NHhg7\">Lekker fritidsbolig fra 2022 med 3 soverom og 2 stuer | Fantastisk utsikt og gode solforhold | Bilveg helt frem</h4>",
+          "target": [
+            ".slick-current > div > .ProjectsSliderContent_item__mTMhQ > .ProjectsSliderContent_link__zdHrB > .ProjectsSliderContent_contentWrapper__r_Ifc > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<img alt=\"Verdivurdering fra l...\" src=\"data:image/gif;base6...\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;to...\">",
+          "target": [
+            "img[alt=\"Verdivurdering fra lokalbank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Finansiering\" src=\"data:image/gif;base6...\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;to...\">",
+          "target": [
+            "img[alt=\"Finansiering\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Kjøpe bolig\" src=\"data:image/gif;base6...\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;to...\">",
+          "target": [
+            "img[alt=\"Kjøpe bolig\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Selge bolig\" src=\"data:image/gif;base6...\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;to...\">",
+          "target": [
+            "img[alt=\"Selge bolig\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Finn en megler\" src=\"data:image/gif;base6...\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;to...\">",
+          "target": [
+            "img[alt=\"Finn en megler\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Verdivurdering\" src=\"data:image/gif;base6...\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;to...\">",
+          "target": [
+            "img[alt=\"Verdivurdering\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img alt=\"Råd & inspirasjon\" src=\"data:image/gif;base6...\" decoding=\"async\" data-nimg=\"fill\" style=\"position:absolute;to...\">",
+          "target": [
+            "img[alt=\"Råd & inspirasjon\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "listitem",
+      "impact": "serious",
+      "description": "Ensure <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/listitem?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<li class=\"ProjectsSliderContent_item__mTMhQ\">",
+          "target": [
+            ".slick-current > div > .ProjectsSliderContent_item__mTMhQ"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li class=\"ProjectsSliderContent_item__mTMhQ\">",
+          "target": [
+            "div[data-index=\"1\"] > div > .ProjectsSliderContent_item__mTMhQ"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li class=\"ProjectsSliderContent_item__mTMhQ\">",
+          "target": [
+            "div[data-index=\"2\"] > div > .ProjectsSliderContent_item__mTMhQ"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        }
+      ]
+    },
+    {
+      "id": "meta-viewport",
+      "impact": "moderate",
+      "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+      "help": "Zooming and scaling must not be disabled",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/meta-viewport?application=playwright",
+      "tags": [
+        "cat.sensory-and-visual-cues",
+        "wcag2aa",
+        "wcag144",
+        "EN-301-549",
+        "EN-9.1.4.4",
+        "ACT",
+        "RGAAv4",
+        "RGAA-10.4.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1\">",
+          "target": [
+            "meta[name=\"viewport\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+        }
+      ]
+    }
+  ]
+}

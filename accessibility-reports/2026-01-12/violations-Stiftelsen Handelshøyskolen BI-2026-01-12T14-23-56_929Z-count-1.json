@@ -1,0 +1,56 @@
+{
+  "project": "Stiftelsen Handelshøyskolen BI",
+  "timestamp": "2026-01-12T14:23:56.930Z",
+  "url": "https://www.bi.no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img src=\"https://d2csxpduxe849s.cloudfront.net/media/65648996-5F4D-4D8F-9652A9EBF332D07B/27ACBB95-DB53-4C1F-A88BD063C718E8BD/Medium-1fb08b9b-98c5-4de1-ace3-ae107ddeea65.jpg\">",
+          "target": [
+            ".full-click.bi-card[data-orientation=\"horizontal\"]:nth-child(1) > .bi-card--media > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://d2csxpduxe849s.cloudfront.net/media/65648996-5F4D-4D8F-9652A9EBF332D07B/7438CFFB-2CEB-408F-864FD51956F3DB35/Medium-NIC_6853.jpg\">",
+          "target": [
+            ".full-click.bi-card[data-orientation=\"horizontal\"]:nth-child(2) > .bi-card--media > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://d2csxpduxe849s.cloudfront.net/media/65648996-5F4D-4D8F-9652A9EBF332D07B/B80F0234-18FD-4A8C-8AC273FD21B8E731/D7122119-2004-492B-A9521C9408D8139C/Medium-0T8A6683.jpg\">",
+          "target": [
+            ".full-click.bi-card[data-orientation=\"horizontal\"]:nth-child(3) > .bi-card--media > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ]
+}

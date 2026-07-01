@@ -1,0 +1,354 @@
+{
+  "project": "Bladet Vesterålen AS",
+  "timestamp": "2026-03-27T03:26:58.754Z",
+  "url": "https://www.blv.no/",
+  "total_violations": 9,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.blv\\.no\\/toppbanner_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"totalt_antall\">\n          Se ledige stillinger (300)\n        </div>",
+          "target": [
+            ".totalt_antall"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.64 (foreground color: #e71e24, background color: #e7e6e2, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h2 itemprop=\"teaser_title\" class=\"title brick-c-jiSuJG\"><span class=\"titleWrapper brick-c-bEBmwI\">\n    <span itemprop=\"headline\"><span itemprop=\"titleText\"> </span></span>\n    </span></h2>",
+          "target": [
+            ".none.brick-c-ivDAcB[data-title-words=\"2\"] > .brick-c-ffHwOH.teaser_body[itemprop=\"url\"] > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop=\"teaser_title\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<h2 itemprop=\"teaser_title\" class=\"title brick-c-jiSuJG\"><span class=\"titleWrapper brick-c-bEBmwI\">\n    <span itemprop=\"headline\"><span itemprop=\"titleText\"> </span></span>\n    </span></h2>",
+          "target": [
+            ".brick-c-eKmOVS > .body > .brick-c-fdsRaE.title_container.has-image > .brick-c-jiSuJG[itemprop=\"teaser_title\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe frameborder=\"no\" id=\"eaframe\" name=\"eaframe\" width=\"980\" height=\"350\" scrolling=\"no\" src=\"javascript:window[&quot;contents&quot;]\" style=\"height: 350px;\"></iframe>",
+          "target": [
+            "#eaframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 11,
+      "nodes": [
+        {
+          "html": "<img class=\"adnami-backgroundImage\" src=\"https://assets.adnami.io/assets/6c3e1c8b-1074-4ede-ae06-065fffdbb832/skin/background_3.jpg?639062224009919839\" style=\"object-fit: cover;\">",
+          "target": [
+            "#adsm-iframe-skin-e3b86be513",
+            ".adnami-skin-wrapper:nth-child(1) > .adnami-background > .adnami-backgroundImage"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"overlay mainOverlay\" src=\"https://assets.adnami.io/assets/6c3e1c8b-1074-4ede-ae06-065fffdbb832/skin/overlay_left_3.png?639062224009920091\">",
+          "target": [
+            "#adsm-iframe-skin-e3b86be513",
+            ".adnami-skin-wrapper:nth-child(1) > .adnami-flexContainer > .adnami-leftPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"overlay mainOverlay\" src=\"https://assets.adnami.io/assets/6c3e1c8b-1074-4ede-ae06-065fffdbb832/skin/overlay_right_3.png?639062224009920226\">",
+          "target": [
+            "#adsm-iframe-skin-e3b86be513",
+            ".adnami-skin-wrapper:nth-child(1) > .adnami-flexContainer > .adnami-rightPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"adnami-backgroundImage\" src=\"https://assets.adnami.io/assets/6c3e1c8b-1074-4ede-ae06-065fffdbb832/skin/background_2.jpg?639062224009919182\" style=\"object-fit: cover;\">",
+          "target": [
+            "#adsm-iframe-skin-e3b86be513",
+            ".adnami-skin-wrapper:nth-child(2) > .adnami-background > .adnami-backgroundImage"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"overlay mainOverlay\" src=\"https://assets.adnami.io/assets/6c3e1c8b-1074-4ede-ae06-065fffdbb832/skin/overlay_left_2.png?639062224009919441\">",
+          "target": [
+            "#adsm-iframe-skin-e3b86be513",
+            ".adnami-skin-wrapper:nth-child(2) > .adnami-flexContainer > .adnami-leftPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"overlay mainOverlay\" src=\"https://assets.adnami.io/assets/6c3e1c8b-1074-4ede-ae06-065fffdbb832/skin/overlay_right_2.png?639062224009919573\">",
+          "target": [
+            "#adsm-iframe-skin-e3b86be513",
+            ".adnami-skin-wrapper:nth-child(2) > .adnami-flexContainer > .adnami-rightPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"adnami-backgroundImage\" src=\"https://assets.adnami.io/assets/6c3e1c8b-1074-4ede-ae06-065fffdbb832/skin/background_1.jpg?639062224009918429\" style=\"object-fit: cover;\">",
+          "target": [
+            "#adsm-iframe-skin-e3b86be513",
+            ".adnami-skin-wrapper:nth-child(3) > .adnami-background > .adnami-backgroundImage"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"overlay mainOverlay\" src=\"https://assets.adnami.io/assets/6c3e1c8b-1074-4ede-ae06-065fffdbb832/skin/overlay_left_1.png?639062224009918720\">",
+          "target": [
+            "#adsm-iframe-skin-e3b86be513",
+            ".adnami-skin-wrapper:nth-child(3) > .adnami-flexContainer > .adnami-leftPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"overlay mainOverlay\" src=\"https://assets.adnami.io/assets/6c3e1c8b-1074-4ede-ae06-065fffdbb832/skin/overlay_right_1.png?639062224009918926\">",
+          "target": [
+            "#adsm-iframe-skin-e3b86be513",
+            ".adnami-skin-wrapper:nth-child(3) > .adnami-flexContainer > .adnami-rightPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"bgImage\" src=\"https://assets.adnami.io/assets/6c3e1c8b-1074-4ede-ae06-065fffdbb832/skin_top/image.png?639062224009929212\" style=\"text-align: center; object-position: center center;\">",
+          "target": [
+            "#adsm-iframe-6c3e1c8b-1074-4ede-ae06-065fffdbb832-e3b86be513",
+            "#adsm-iframe-skin_top-e3b86be513",
+            "img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"adnm-view-pixel\" src=\"data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==\" style=\"width: 100vw; height: 100vh; min-width: 30px; min-height: 30px; display: block;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.blv\\.no\\/toppbanner_0",
+            ".adnm-view-pixel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-35942c42-849b-4b88-9270-b01c8a39c6f3\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"20\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a href=\"https://annonse.blv.no/knt/2026/knt-mm-brosjyre-2026.html\" itemprop=\"url\" style=\"\" class=\"teaser_body brick-c-ffHwOH mirror\">",
+          "target": [
+            ".none.brick-c-ivDAcB[data-title-words=\"2\"] > .brick-c-ffHwOH.teaser_body[itemprop=\"url\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://eavis.blv.no/\" itemprop=\"url\" style=\"\" class=\"teaser_body brick-c-eKmOVS mirror\">",
+          "target": [
+            ".brick-c-eKmOVS"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them",
+      "help": "Elements marked as presentational should be consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.blv.no/gfx/small-positive.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.blv.no/tilbud\" publication=\"www.blv.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" locale=\"nb-NO\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layou...=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_topp...\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.blv.no/toppbanne...\" pageview-id=\"1c45cebd-d7c3-4698-b...\" has ...>",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
