@@ -1053,32 +1053,38 @@ jobs:
           git config user.email "github-actions@github.com"
           git config user.name "GitHub Actions"
 
+          PUBLISH_DIR="${RUNNER_TEMP:-/tmp}/gh-pages-publish-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT:-1}"
+          rm -rf "$PUBLISH_DIR"
+
           # Keep fetch footprint minimal for persistent runners under storage pressure
           git fetch --no-tags --depth=1 --filter=blob:none origin gh-pages || true
-          rm -rf gh-pages-publish
 
           if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
-            git worktree add gh-pages-publish origin/gh-pages
+            git worktree add "$PUBLISH_DIR" origin/gh-pages
           else
-            git worktree add --detach gh-pages-publish
-            pushd gh-pages-publish
-            git checkout --orphan gh-pages
-            git rm -rf . 2>/dev/null || true
-            popd
+            git worktree add --detach "$PUBLISH_DIR"
+            git -C "$PUBLISH_DIR" checkout --orphan gh-pages
+            git -C "$PUBLISH_DIR" rm -rf . 2>/dev/null || true
           fi
 
-          rsync -a --delete site-output/ gh-pages-publish/
+          rsync -a --delete site-output/ "$PUBLISH_DIR"/
+          rm -rf "$PUBLISH_DIR/gh-pages-publish"
 
-          pushd gh-pages-publish
-          touch .nojekyll
-          if [ -n "$(git status --porcelain)" ]; then
-            git add -A
-            git commit -m "Deploy site for ${GITHUB_SHA}"
+          if [ ! -f "$PUBLISH_DIR/historical-data/report-list.json" ]; then
+            echo "❌ report-list.json is missing from the publish root"
+            find "$PUBLISH_DIR" -maxdepth 3 -type f -name 'report-list.json' | sort || true
+            exit 1
+          fi
+
+          touch "$PUBLISH_DIR/.nojekyll"
+          if [ -n "$(git -C "$PUBLISH_DIR" status --porcelain)" ]; then
+            git -C "$PUBLISH_DIR" add -A
+            git -C "$PUBLISH_DIR" commit -m "Deploy site for ${GITHUB_SHA}"
             PUSH_OK=false
             for attempt in 1 2 3; do
               echo "Push attempt $attempt..."
               git fetch --no-tags --depth=1 --filter=blob:none origin gh-pages || true
-              if git push origin HEAD:gh-pages --force-with-lease; then
+              if git -C "$PUBLISH_DIR" push origin HEAD:gh-pages --force-with-lease; then
                 PUSH_OK=true
                 break
               fi
@@ -1091,12 +1097,11 @@ jobs:
             if [ "$PUSH_OK" != "true" ]; then
               echo "❌ Failed to publish gh-pages after retries"
               exit 1
-            fi
             echo "✅ Published updated site to gh-pages"
           else
-            echo "ℹ️ No site changes to publish"
-          fi
-          popd
+          if [ -d "$PUBLISH_DIR" ]; then
+            if git worktree list --porcelain | grep -Fq "worktree $PUBLISH_DIR"; then
+              git worktree remove --force "$PUBLISH_DIR" || true
 
           # Safe cleanup for gh-pages publish worktree
           if [ -d "gh-pages-publish" ]; then
