@@ -145,7 +145,7 @@ jobs:
           mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
 
-          echo "Starting Playwright chromium install..."
+          echo "Starting Playwright browser install..."
           (
             while true; do
               echo "⏳ Playwright install heartbeat: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
@@ -159,13 +159,13 @@ jobs:
           }
           trap cleanup_heartbeat EXIT
 
-          npx playwright install chromium
+          npx playwright install chromium firefox webkit
 
           cleanup_heartbeat
           trap - EXIT
 
           echo "Verifying installed browsers in setup cache..."
-          find "$PLAYWRIGHT_BROWSERS_PATH" -maxdepth 2 -type d \( -name "chromium*" -o -name "firefox*" \) | sort || true
+          find "$PLAYWRIGHT_BROWSERS_PATH" -maxdepth 2 -type d \( -name "chromium*" -o -name "firefox*" -o -name "webkit*" \) | sort || true
 
           echo "Creating Playwright browser bundle artifact..."
           PLAYWRIGHT_BUNDLE="$RUNNER_TEMP/playwright-browsers-${RUNNER_OS}.tar.gz"
@@ -465,17 +465,17 @@ jobs:
           echo "Restored Playwright browsers path: $PLAYWRIGHT_DIR"
           ls -la "$PLAYWRIGHT_DIR" || echo "Playwright browser directory listing failed"
 
-          # Self-heal if restored bundle does not contain browser binaries.
-          if ! find "$PLAYWRIGHT_DIR" -maxdepth 3 -type d \( -name "chromium*" -o -name "firefox*" \) | grep -q .; then
+          # Self-heal if restored bundle does not contain the browsers used by our navigation strategies.
+          if ! find "$PLAYWRIGHT_DIR" -maxdepth 3 -type d \( -name "chromium*" -o -name "firefox*" -o -name "webkit*" \) | grep -q .; then
             echo "⚠️ Restored bundle missing browser binaries. Installing missing browser binaries..."
             export PLAYWRIGHT_BROWSERS_PATH="$PLAYWRIGHT_DIR"
             export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
 
-            npx playwright install chromium
+            npx playwright install chromium firefox webkit
           fi
 
           echo "Final browser binaries present:"
-          find "$PLAYWRIGHT_DIR" -maxdepth 3 -type d \( -name "chromium*" -o -name "firefox*" \) | sort || true
+          find "$PLAYWRIGHT_DIR" -maxdepth 3 -type d \( -name "chromium*" -o -name "firefox*" -o -name "webkit*" \) | sort || true
 
       - name: Run WCAG Accessibility Tests for batch ${{ matrix.batch }}
         env:
