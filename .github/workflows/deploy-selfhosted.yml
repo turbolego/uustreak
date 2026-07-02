@@ -1222,12 +1222,15 @@ jobs:
             done
 
             if [ "$PUSH_OK" != "true" ]; then
-                fi
-
-                echo "✅ Published updated site to gh-pages"
               echo "❌ Failed to publish gh-pages after retries"
-                echo "No changes to publish"
-              git worktree remove --force gh-pages-publish || true
+              exit 1
+            fi
+
+            echo "✅ Published updated site to gh-pages"
+          fi
+
+          if [ -z "$(git -C "$PUBLISH_DIR" status --porcelain)" ]; then
+            echo "No changes to publish"
           fi
 
           git worktree prune || true
