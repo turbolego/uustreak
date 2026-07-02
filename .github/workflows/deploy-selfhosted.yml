@@ -87,6 +87,15 @@ jobs:
           node-version: '24'
           registry-url: 'https://registry.npmjs.org'
 
+      - name: Cache Playwright browser directory
+        id: playwright-cache
+        uses: actions/cache@v5
+        with:
+          path: ${{ runner.temp }}/ms-playwright-setup
+          key: ${{ runner.os }}-playwright-setup-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-playwright-setup-
+
       - name: Install dependencies and Playwright browsers
         id: cache-output
         timeout-minutes: 25
@@ -145,24 +154,28 @@ jobs:
           mkdir -p "$PLAYWRIGHT_BROWSERS_PATH"
           export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1
 
-          echo "Starting Playwright browser install..."
-          (
-            while true; do
-              echo "⏳ Playwright install heartbeat: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-              sleep 30
-            done
-          ) &
-          HEARTBEAT_PID=$!
+          if [ "${{ steps.playwright-cache.outputs.cache-hit }}" = "true" ]; then
+            echo "Playwright browser cache restored; skipping download."
+          else
+            echo "Starting Playwright browser install..."
+            (
+              while true; do
+                echo "⏳ Playwright install heartbeat: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+                sleep 30
+              done
+            ) &
+            HEARTBEAT_PID=$!
 
-          cleanup_heartbeat() {
-            kill "$HEARTBEAT_PID" 2>/dev/null || true
-          }
-          trap cleanup_heartbeat EXIT
+            cleanup_heartbeat() {
+              kill "$HEARTBEAT_PID" 2>/dev/null || true
+            }
+            trap cleanup_heartbeat EXIT
 
-          npx playwright install chromium firefox webkit
+            npx playwright install chromium firefox webkit
 
-          cleanup_heartbeat
-          trap - EXIT
+            cleanup_heartbeat
+            trap - EXIT
+          fi
 
           echo "Verifying installed browsers in setup cache..."
           find "$PLAYWRIGHT_BROWSERS_PATH" -maxdepth 2 -type d \( -name "chromium*" -o -name "firefox*" -o -name "webkit*" \) | sort || true
