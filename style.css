@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --desktop: #008080;
+    --window: #c0c0c0;
+    --shadow: #808080;
+    --highlight: #ffffff;
+    --title: #000080;
+    --title-alt: #1084d0;
+    --text: #111;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    background: linear-gradient(135deg, #005b5b 0%, var(--desktop) 48%, #0a3f3f 100%);
+    font-family: "MS Sans Serif", Tahoma, Verdana, sans-serif;
+    color: var(--text);
+}
+
+button {
+    font: inherit;
+}
+
+.desktop {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 18px;
+}
+
+.desktop-icons {
+    display: grid;
+    justify-items: start;
+    gap: 14px;
+    width: fit-content;
+}
+
+.icon {
+    display: grid;
+    justify-items: center;
+    gap: 4px;
+    min-width: 72px;
+    padding: 6px 8px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon span {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.window {
+    position: absolute;
+    top: 84px;
+    left: 180px;
+    width: min(760px, calc(100vw - 220px));
+    background: var(--window);
+    border: 2px solid;
+    border-color: var(--highlight) var(--shadow) var(--shadow) var(--highlight);
+    box-shadow: 2px 2px 0 #000;
+    display: none;
+}
+
+.window.active {
+    display: block;
+}
+
+.titlebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 4px 6px;
+    background: linear-gradient(90deg, var(--title) 0%, var(--title-alt) 100%);
+    color: #fff;
+    font-weight: 700;
+    cursor: move;
+    user-select: none;
+}
+
+.window-controls {
+    display: flex;
+    gap: 4px;
+}
+
+.window-controls button,
+.start-button,
+.task-button,
+.tree-item,
+.file-item {
+    border: 2px outset var(--highlight);
+    background: var(--window);
+    color: var(--text);
+}
+
+.window-controls button {
+    width: 28px;
+    height: 24px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.content {
+    padding: 12px;
+}
+
+.explorer-shell {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 12px;
+}
+
+.tree-pane,
+.file-pane {
+    border: 2px inset var(--highlight);
+    background: #dfdfdf;
+    min-height: 320px;
+}
+
+.tree-header {
+    padding: 10px 10px 6px;
+    font-weight: 700;
+}
+
+.tree-item {
+    display: block;
+    width: calc(100% - 12px);
+    margin: 0 6px 6px;
+    padding: 8px 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.tree-item.active {
+    border-style: inset;
+    background: #f3f3f3;
+}
+
+.file-pane {
+    padding: 12px;
+}
+
+.file-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 10px;
+}
+
+.file-item {
+    display: grid;
+    justify-items: start;
+    gap: 6px;
+    padding: 10px;
+    min-height: 84px;
+    text-align: left;
+    cursor: pointer;
+    background: #efefef;
+}
+
+.file-icon {
+    font-size: 1.6rem;
+}
+
+.file-name {
+    word-break: break-word;
+}
+
+.start-menu {
+    position: fixed;
+    left: 0;
+    bottom: 42px;
+    width: 220px;
+    padding: 8px;
+    background: var(--window);
+    border: 2px solid;
+    border-color: var(--highlight) var(--shadow) var(--shadow) var(--highlight);
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.start-menu.open {
+    display: flex;
+}
+
+.start-menu button {
+    padding: 8px 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.taskbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 6px;
+    background: var(--window);
+    border-top: 2px solid var(--highlight);
+}
+
+.start-button {
+    min-width: 78px;
+    padding: 6px 12px;
+    font-weight: 700;
+}
+
+.task-button {
+    min-width: 120px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.task-button.active,
+.start-button:active,
+.task-button:active,
+.window-controls button:active,
+.tree-item:active,
+.file-item:active,
+.start-menu button:active {
+    border-style: inset;
+}
+
+.clock {
+    margin-left: auto;
+    margin-right: 4px;
+    padding: 4px 10px;
+    border: 2px inset var(--highlight);
+    background: #efefef;
+    min-width: 74px;
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    .window {
+        left: 12px;
+        top: 72px;
+        width: calc(100vw - 24px);
+    }
+
+    .explorer-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .desktop-icons {
+        grid-auto-flow: column;
+        justify-content: start;
+        gap: 10px;
+        overflow-x: auto;
+        width: 100%;
+        padding-bottom: 8px;
+    }
+}
