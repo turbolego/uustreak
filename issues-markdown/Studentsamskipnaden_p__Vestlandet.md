@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-06-27T01:26:41.574Z
+**Timestamp:** 2026-07-05T00:52:03.721Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 4
 
@@ -19,20 +19,20 @@
 - `#CybotCookiebotDialogBodyEdgeMoreDetailsLink`
 - `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
 - `#searchInput`
-- `.contents[href$="bolig"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
-- `.contents[href$="trening"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
+- `.contents[href="/no/bolig?location=felles"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
+- `.contents[href="/no/trening?location=bergen"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `a[href$="kurs"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
-- `h1`
 - `.md\:text-body_large.flex-row.justify-between > .text-base-white.svelte-nqw3qe.text-body`
-- `.gap-3[href$="bolig"][target="_self"] > .text-base-white.svelte-nqw3qe.text-body`
-- `.gap-3[href$="studentliv"][target="_self"] > .text-base-white.svelte-nqw3qe.text-body`
-- `.gap-3[href$="karriere"][target="_self"] > .text-base-white.svelte-nqw3qe.text-body`
-- `.gap-3[href$="trening"][target="_self"] > .text-base-white.svelte-nqw3qe.text-body`
-- `.gap-3[href$="helse"][target="_self"]:nth-child(5) > .text-base-white.svelte-nqw3qe.text-body`
-- `.gap-3[href$="barnehage"][target="_self"] > .text-base-white.svelte-nqw3qe.text-body`
-- `.whitespace-nowrap.gap-3[href$="mat-og-drikke"] > .text-base-white.svelte-nqw3qe.text-body`
-- `.whitespace-nowrap.gap-3[href$="psykisk-helse"] > .text-base-white.svelte-nqw3qe.text-body`
-- `.gap-3[href$="studentgoder"][target="_self"] > .text-base-white.svelte-nqw3qe.text-body`
+- `h1`
+- `a[href$="bolig"] > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="studentliv"] > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="karriere"] > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="trening"] > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="helse"]:nth-child(5) > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="barnehage"] > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="mat-og-drikke"] > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="psykisk-helse"] > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="studentgoder"] > .text-base-white.svelte-nqw3qe.text-body`
 - `.pb-4.whitespace-nowrap.font-semibold`
 - `.gap-3[href$="artikkel"][target="_self"] > .text-base-white.svelte-nqw3qe.text-body`
 - `a[href$="om-sammen"] > .text-base-white.svelte-nqw3qe.text-body`
@@ -86,16 +86,16 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 45
+- **Count:** 43
 
 #### Affected Elements:
 
 - `.md\:pl-0`
 - `.md\:w-\[40\%\]`
-- `h1`
-- `.md\:min-w-\[27rem\] > h2`
+- `.lg\:min-w-\[27rem\] > h2`
 - `.pb-12`
-- `.h-full.md\:w-\[50\%\].w-full`
+- `.md\:h-auto`
+- `h1`
 - `.mb-1`
 - `#carousel0 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .h-44.object-cover[draggable="false"]`
 - `#carousel0 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\:leading-snug.text-xs`
@@ -115,23 +115,21 @@
 - `#carousel5 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .pt-2.pb-2.px-2`
 - `#carousel6`
 - `#carousel7`
-- `#carousel8 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\:leading-snug.text-xs`
-- `#carousel8 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .pt-2.pb-2.px-2`
+- `#carousel8`
 - `#carousel9`
 - `#carousel10`
-- `#carousel11`
 - `div:nth-child(1) > .\!font-bold.pb-4`
-- `.gap-3[href$="bolig"][target="_self"] > .text-base-white.svelte-nqw3qe.text-body`
-- `.gap-3[href$="studentliv"][target="_self"] > .text-base-white.svelte-nqw3qe.text-body`
-- `.gap-3[href$="karriere"][target="_self"] > .text-base-white.svelte-nqw3qe.text-body`
-- `.gap-3[href$="trening"][target="_self"] > .text-base-white.svelte-nqw3qe.text-body`
-- `.gap-3[href$="helse"][target="_self"]:nth-child(5) > .text-base-white.svelte-nqw3qe.text-body`
-- `.gap-3[href$="barnehage"][target="_self"] > .text-base-white.svelte-nqw3qe.text-body`
-- `.whitespace-nowrap.gap-3[href$="mat-og-drikke"] > .text-base-white.svelte-nqw3qe.text-body`
-- `.whitespace-nowrap.gap-3[href$="psykisk-helse"] > .text-base-white.svelte-nqw3qe.text-body`
-- `.gap-3[href$="studentgoder"][target="_self"] > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="bolig"] > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="studentliv"] > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="karriere"] > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="trening"] > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="helse"]:nth-child(5) > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="barnehage"] > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="mat-og-drikke"] > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="psykisk-helse"] > .text-base-white.svelte-nqw3qe.text-body`
+- `a[href$="studentgoder"] > .text-base-white.svelte-nqw3qe.text-body`
 - `.md\:pt-0.md\:pl-2.pt-4:nth-child(2)`
 - `.md\:pt-0.md\:pl-2.pt-4:nth-child(3)`
 - `.border-t > div:nth-child(1)`
 - `a[href$="personvern"]`
-- `.bg-himmel-700 > .justify-center.flex > .flex-grow.md\:max-w-\[1200px\].w-full > .justify-end.flex`
+- `.flex-grow.md\:max-w-\[1200px\].w-full > .justify-end.flex`

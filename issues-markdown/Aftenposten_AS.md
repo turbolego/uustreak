@@ -1,10 +1,22 @@
 # WCAG Violations Report for Aftenposten AS
 
-**Timestamp:** 2026-06-27T00:55:37.479Z
-**URL:** [https://www.aftenposten.no/#](https://www.aftenposten.no/#)
-**Total Violations:** 3
+**Timestamp:** 2026-07-05T00:29:23.636Z
+**URL:** [https://www.aftenposten.no/](https://www.aftenposten.no/)
+**Total Violations:** 4
 
 ## Violation Details
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[allowfullscreen=""]`
 
 ### Aside should not be contained in another landmark
 
@@ -36,9 +48,10 @@
 - **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/svg-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
-- `svg[viewBox="0 0 95 29"]`
-- `._overlay_1re19_480._small_1re19_538._badges_1re19_475 > ._logo_1re19_533[viewBox="0 0 21 18"][role="img"]`
+- `a[data-content-id="V6jOGp"] > ._figure_1re19_59 > ._overlay_1re19_480._badges_1re19_475._small_1re19_538 > ._logo_1re19_533[viewBox="0 0 21 18"][role="img"]`
+- `._link_1re19_34[data-content-id="Gxwpwm"][data-content-newsroom="ap"] > ._figure_1re19_59 > ._overlay_1re19_480._badges_1re19_475._small_1re19_538 > ._logo_1re19_533[viewBox="0 0 21 18"][role="img"]`
+- `._link_1re19_34[data-content-id="3pBn4q"][data-content-newsroom="ap"] > ._figure_1re19_59 > ._overlay_1re19_480._badges_1re19_475._small_1re19_538 > ._logo_1re19_533[viewBox="0 0 21 18"][role="img"]`

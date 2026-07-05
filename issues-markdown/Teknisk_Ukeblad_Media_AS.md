@@ -1,10 +1,22 @@
 # WCAG Violations Report for Teknisk Ukeblad Media AS
 
-**Timestamp:** 2026-06-27T01:28:41.936Z
+**Timestamp:** 2026-07-05T00:54:07.214Z
 **URL:** [https://www.tu.no/](https://www.tu.no/)
 **Total Violations:** 3
 
 ## Violation Details
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/33423651\/tu_f_toppbanner_0, #cbb`
 
 ### Buttons must have discernible text
 
@@ -20,20 +32,6 @@
 - `.gap-4.flex > .bg-transparent.hover\:bg-site-brand-darker.dark\:text-white:nth-child(1)`
 - `.gap-4.flex > .bg-transparent.hover\:bg-site-brand-darker.dark\:text-white:nth-child(2)`
 
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
-
-#### Affected Elements:
-
-- `#sp_message_iframe_1441301, .acceptButton`
-- `#sp_message_iframe_1441301, .rejectButton`
-- `#sp_message_iframe_1441301, .customiseButton`
-
 ### Links must have discernible text
 
 - **Impact:** serious
@@ -44,5 +42,5 @@
 
 #### Affected Elements:
 
-- `.bg-brandIndigo-100 > .left-0.top-0[rel="noopener noreferrer"]`
-- `.gap-6.w-48.px-3 > .left-0.top-0[target="_blank"]`
+- `#google_ads_iframe_\/33423651\/tu_f_toppbanner_0, #aw0`
+- `.left-0.top-0[rel="noopener noreferrer"]`

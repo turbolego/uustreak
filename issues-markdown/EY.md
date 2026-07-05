@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-06-27T01:17:44.740Z
+**Timestamp:** 2026-07-05T00:48:24.497Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 6
 
@@ -90,7 +90,7 @@
 - `.skip-content-wrapper`
 - `.cmp-logo__link > .sr-only`
 - `.myey-login-url`
-- `img[alt="Modern ecological city"]`
+- `img[title="Stortinget i Oslo, Karl Johan"]`
 - `.swiper-slide-visible > .up-hero-carousel__content-wrapper`
 - `.up-hero-carousel__pagination`
 - `.theme-dark.cmp-container--theme-dark.cmp-container--background-color-e2e`

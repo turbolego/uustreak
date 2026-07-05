@@ -1,22 +1,10 @@
 # WCAG Violations Report for Color Line AS
 
-**Timestamp:** 2026-06-27T01:08:17.668Z
-**URL:** [https://www.colorline.no/#](https://www.colorline.no/#)
-**Total Violations:** 3
+**Timestamp:** 2026-07-05T00:42:14.798Z
+**URL:** [https://www.colorline.no/](https://www.colorline.no/)
+**Total Violations:** 2
 
 ## Violation Details
-
-### ARIA role should be appropriate for the element
-
-- **Impact:** minor
-- **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
-- **Tags:** cat.aria, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#declineButton`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

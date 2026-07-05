@@ -1,22 +1,10 @@
 # WCAG Violations Report for Kvadraturen skolesenter
 
-**Timestamp:** 2026-06-27T01:34:38.220Z
+**Timestamp:** 2026-07-05T01:11:01.752Z
 **URL:** [https://kvadraturen.vgs.no/](https://kvadraturen.vgs.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.il-heading--h2:nth-child(3)`
 
 ### Frames must have an accessible name
 

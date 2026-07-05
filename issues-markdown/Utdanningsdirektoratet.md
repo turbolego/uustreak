@@ -1,8 +1,8 @@
 # WCAG Violations Report for Utdanningsdirektoratet
 
-**Timestamp:** 2026-06-27T01:36:41.447Z
-**URL:** [https://www.udir.no/#](https://www.udir.no/#)
-**Total Violations:** 4
+**Timestamp:** 2026-07-05T01:01:11.964Z
+**URL:** [https://www.udir.no/](https://www.udir.no/)
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -41,15 +41,3 @@
 #### Affected Elements:
 
 - `#coiOverlay`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.header__custom-logo`

@@ -1,22 +1,10 @@
 # WCAG Violations Report for Norsk Rikskringkasting AS
 
-**Timestamp:** 2026-06-27T01:02:41.502Z
-**URL:** [https://www.nrk.no/#](https://www.nrk.no/#)
-**Total Violations:** 2
+**Timestamp:** 2026-07-05T00:34:41.802Z
+**URL:** [https://www.nrk.no/](https://www.nrk.no/)
+**Total Violations:** 1
 
 ## Violation Details
-
-### ARIA role should be appropriate for the element
-
-- **Impact:** minor
-- **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
-- **Tags:** cat.aria, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#geopunkt`
 
 ### Heading levels should only increase by one
 
@@ -24,8 +12,9 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
 - `h4`
+- `.tablet\:min-h-\[280px\] > .tablet\:block.hidden > .\!mb-1.tablet\:block.uppercase`

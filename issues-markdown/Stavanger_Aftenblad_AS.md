@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-06-27T01:15:01.599Z
-**URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
+**Timestamp:** 2026-07-05T00:45:26.280Z
+**URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
 **Total Violations:** 5
 
 ## Violation Details
@@ -12,11 +12,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `._button_19c90_11`
+- `iframe[title="Tips oss"], .headline`
+- `._button_1xihg_11`
 
 ### Aside should not be contained in another landmark
 
@@ -53,9 +54,9 @@
 
 #### Affected Elements:
 
-- `track-element[data-track-id="teaser:112968"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_pa3qf_54._small_pa3qf_72[vendor="sa"]`
-- `track-element[data-track-id="teaser:112961"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_pa3qf_54._small_pa3qf_72[vendor="sa"]`
-- `track-element[data-track-id="teaser:112958"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_pa3qf_54._small_pa3qf_72[vendor="sa"]`
+- `track-element[data-track-id="teaser:113026"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
+- `track-element[data-track-id="teaser:113021"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
+- `track-element[data-track-id="teaser:112988"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
 
 ### All page content should be contained by landmarks
 

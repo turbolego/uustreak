@@ -1,7 +1,7 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-06-27T01:30:51.358Z
-**URL:** [https://www.kid.no/#](https://www.kid.no/#)
+**Timestamp:** 2026-07-05T01:07:54.537Z
+**URL:** [https://www.kid.no/](https://www.kid.no/)
 **Total Violations:** 6
 
 ## Violation Details
@@ -24,12 +24,13 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
-- `.iy`
-- `.j7:nth-child(2) > .j8.j9.ja > .br > div > div > .cg.ch.et > .jb.gq.gr > .gt.gv.gw`
+- `div:nth-child(4) > .jn.jo.jp > .kc.gp.kd > .fu.br > div > div > .ke.jt.kd > .kd.br > .kf.gq.gr > .kg.gt.gv`
+- `.kn:nth-child(2) > .ko.kp.kq > .br > div > div > .ch.cg.et > .i2.gq.gr > .gt.gv.gw`
+- `div:nth-child(7) > .jn.jo.jp > .kc.gp.kd > .fu.br > div > div > .ke.jt.kd > .kd.br > .kf.gq.gr > .kg.gt.gv`
 
 ### Document should not have more than one banner landmark
 
@@ -65,9 +66,9 @@
 
 #### Affected Elements:
 
-- `.j7:nth-child(1) > .br > .je.jh.ji > .f8.f.cs`
-- `.j7:nth-child(2) > .br > .je.jh.ji > .f8.f.cs`
-- `.f8.f[href$="sommerdyner"]`
+- `.kn:nth-child(1) > .br > .ks.kv.kw > .f8.f.cs`
+- `.kn:nth-child(2) > .br > .ks.kv.kw > .f8.f.cs`
+- `.ks.kv.kw > .f8.f[href$="sommerdyner"]`
 
 ### All page content should be contained by landmarks
 

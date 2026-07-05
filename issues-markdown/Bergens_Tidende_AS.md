@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-06-27T01:03:23.290Z
-**URL:** [https://www.bt.no/#](https://www.bt.no/#)
-**Total Violations:** 5
+**Timestamp:** 2026-07-05T00:38:03.852Z
+**URL:** [https://www.bt.no/](https://www.bt.no/)
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `small`
-- `._button_19c90_11`
+- `._label_1wr71_208`
+- `._button_1xihg_11`
 
 ### Aside should not be contained in another landmark
 
@@ -53,9 +53,9 @@
 
 #### Affected Elements:
 
-- `track-element[data-track-id="teaser:126715"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_pa3qf_54._small_pa3qf_72[vendor="bt"]`
-- `audio-play-button[title="Turist i egen by"]`
-- `track-element[data-track-id="teaser:126709"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_pa3qf_54._small_pa3qf_72[vendor="bt"]`
+- `audio-play-button[title="Horneland é heme"]`
+- `audio-play-button[title="Dette må du\a lese i sommer"]`
+- `track-element[data-track-id="teaser:126763"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="bt"]`
 
 ### All page content should be contained by landmarks
 
@@ -68,3 +68,15 @@
 #### Affected Elements:
 
 - `.sch-datacontroller__text`
+
+### <svg> elements with an img role must have alternative text
+
+- **Impact:** serious
+- **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/svg-img-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
+- **Count:** 1
+
+#### Affected Elements:
+
+- `._hearts_4walc_1`
