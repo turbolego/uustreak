@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-07-05T00:44:41.991Z
+**Timestamp:** 2026-07-06T03:24:53.618Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 9
 
@@ -57,9 +57,9 @@
 - `.has-row-header.color_mobile_no_bg_color.hasContentPadding > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52) > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(58) > h5`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > h5`
 - `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(64) > h5`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(70) > h5`
 
 ### Images must have alternative text
 
@@ -107,12 +107,40 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 113
+- **Count:** 119
 
 #### Affected Elements:
 
 - `h1`
 - `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
+- `#notice-10429203 > .content > h2`
+- `#notice-10429203 > .content > .meta`
+- `div[title="Holmgren Pedersen sendt hjem"] > h2`
+- `div[title="Holmgren Pedersen sendt hjem"] > .meta`
+- `#notice-10429155 > .content > h2`
+- `#notice-10429155 > .content > .meta`
+- `#notice-10429148 > .content > h2`
+- `#notice-10429148 > .content > .meta`
+- `#notice-10429147 > .content > h2`
+- `#notice-10429147 > .content > .meta`
+- `div[title="Holmestrand: MC-fører omkom"] > h2`
+- `div[title="Holmestrand: MC-fører omkom"] > .meta`
+- `#notice-10429082 > .content > h2`
+- `#notice-10429082 > .content > .meta`
+- `div[title="Hetebølgen gjør comeback"] > h2`
+- `time[datetime="2026-07-05T12:17:53.000Z"]`
+- `div[title="Opec øker produksjonskvoter"] > h2`
+- `time[datetime="2026-07-05T11:39:20.000Z"]`
+- `div[title="Handelsskip angrepet"] > h2`
+- `time[datetime="2026-07-05T11:38:20.000Z"]`
+- `#notice-10428789 > .content > h2`
+- `time[datetime="2026-07-05T08:44:33.000Z"]`
+- `div[title="Mistet livet i drukningsulykke"] > h2`
+- `time[datetime="2026-07-05T08:57:01.000Z"]`
+- `div[title="Ingen streik for flyteknikere"] > h2`
+- `time[datetime="2026-07-05T09:14:46.000Z"]`
+- `div[title="Troms: Person døde i husbrann"] > h2`
+- `time[datetime="2026-07-05T11:37:25.000Z"]`
 - `div[title="Fire reddet da båt kantret"] > h2`
 - `time[datetime="2026-07-04T15:21:54.000Z"]`
 - `div[title="Elg løs i Bodø sentrum"] > h2`
@@ -125,34 +153,6 @@
 - `time[datetime="2026-07-04T11:51:58.000Z"]`
 - `div[title="Parader avlyst i USA"] > h2`
 - `div[title="Parader avlyst i USA"] > .meta`
-- `#notice-10428265 > .content > h2`
-- `#notice-10428265 > .content > .meta`
-- `div[title="Dronning Sonja fyller 89 år"] > h2`
-- `div[title="Dronning Sonja fyller 89 år"] > .meta`
-- `#notice-10428259 > .content > h2`
-- `#notice-10428259 > .content > .meta`
-- `div[title="Nato-rapport skaper uenighet "] > h2`
-- `div[title="Nato-rapport skaper uenighet "] > .meta`
-- `div[title="Skogbranner herjer Portugal"] > h2`
-- `time[datetime="2026-07-03T18:33:34.000Z"]`
-- `div[title="Billettsvindel før Karpe World"] > h2`
-- `time[datetime="2026-07-03T18:32:54.000Z"]`
-- `#notice-10428152 > .content > h2`
-- `time[datetime="2026-07-03T17:05:25.000Z"]`
-- `div[title="Norsk Tipping: Rekordhøye tall"] > h2`
-- `time[datetime="2026-07-03T15:02:10.000Z"]`
-- `div[title="Etterforsker spekemat-tyveri"] > h2`
-- `time[datetime="2026-07-03T15:01:47.000Z"]`
-- `#notice-10427558 > .content > h2`
-- `time[datetime="2026-07-03T11:53:30.000Z"]`
-- `div[title="Ukraina anklages for angrep"] > h2`
-- `time[datetime="2026-07-03T11:09:38.000Z"]`
-- `#notice-10426528 > .content > h2`
-- `time[datetime="2026-07-03T07:35:27.000Z"]`
-- `#notice-10426482 > .content > h2`
-- `time[datetime="2026-07-03T07:18:52.000Z"]`
-- `div[title="Ebolasmitten i Kongo øker"] > h2`
-- `div[title="Ebolasmitten i Kongo øker"] > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
@@ -210,19 +210,25 @@
 - `#markup_10275511 > .fullwidthTarget.content > unite-player,#status-container`
 - `#markup_10275513 > .fullwidthTarget.content > unite-player,#status-container`
 - `#markup_10275515 > .fullwidthTarget.content > unite-player,#status-container`
-- `#offer_9b4a07563ba6db1130ac-0, div[ng-show="!terminalError"]`
+- `.row.large-12.small-12:nth-child(51)`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52)`
 - `.row.large-12.small-12:nth-child(53)`
 - `.row.large-12.small-12:nth-child(54)`
 - `.row.large-12.small-12:nth-child(56)`
 - `.row.large-12.small-12:nth-child(57)`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(58)`
-- `.row.large-12.small-12:nth-child(59)`
+- `.row.large-12.small-12:nth-child(58)`
+- `#offer_9b4a07563ba6db1130ac-0, div[ng-show="!terminalError"]`
 - `.row.large-12.small-12:nth-child(60)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(61)`
+- `.row.large-12.small-12:nth-child(61)`
 - `.row.large-12.small-12:nth-child(62)`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
+- `.row.large-12.small-12:nth-child(63)`
 - `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(64)`
+- `.row.large-12.small-12:nth-child(65)`
+- `.row.large-12.small-12:nth-child(66)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(67)`
+- `.row.large-12.small-12:nth-child(68)`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(70)`
 - `.powered-by`
 
 ### Scrollable region must have keyboard access

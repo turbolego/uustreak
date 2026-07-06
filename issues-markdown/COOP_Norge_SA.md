@@ -1,6 +1,6 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2026-07-05T00:41:12.903Z
+**Timestamp:** 2026-07-06T03:21:22.027Z
 **URL:** [https://www.coop.no/](https://www.coop.no/)
 **Total Violations:** 5
 
@@ -44,7 +44,7 @@
 #### Affected Elements:
 
 - `.ia`
-- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .eg.am.cj > .eh.ej.ek`
+- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .ef.am.cj > .eg.ei.ej`
 
 ### Frames must have an accessible name
 
@@ -52,16 +52,14 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 6
+- **Count:** 4
 
 #### Affected Elements:
 
 - `.q.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, iframe[scrolling="no"]`
 - `.q.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
-- `.ae.ee.e9 > .ea.al.ba > .eb.ec.ed > iframe, iframe[scrolling="no"]`
-- `.ae.ee.e9 > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
-- `.ef.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, iframe[scrolling="no"]`
-- `.ef.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
+- `.ee.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, iframe[scrolling="no"]`
+- `.ee.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
 
 ### Links must have discernible text
 

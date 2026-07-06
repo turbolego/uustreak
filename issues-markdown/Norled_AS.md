@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norled AS
 
-**Timestamp:** 2026-07-05T00:34:14.772Z
+**Timestamp:** 2026-07-06T03:14:24.566Z
 **URL:** [https://www.norled.no/](https://www.norled.no/)
 **Total Violations:** 2
 

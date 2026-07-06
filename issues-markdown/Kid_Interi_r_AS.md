@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-07-05T01:07:54.537Z
+**Timestamp:** 2026-07-06T03:47:43.259Z
 **URL:** [https://www.kid.no/](https://www.kid.no/)
 **Total Violations:** 6
 

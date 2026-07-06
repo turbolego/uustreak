@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-06-27T01:39:28.726Z
+**Timestamp:** 2026-07-06T03:43:20.009Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
 **Total Violations:** 5
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.cms-campaign-banners:nth-child(7) > .cms-campaign-banners__content.cms-banners > .campaign-banner.campaign-banner--centered.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .product-label > .product-label__text`
-- `.cms-campaign-banners:nth-child(7) > .cms-campaign-banners__content.cms-banners > .campaign-banner.campaign-banner--centered.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .product-label > .product-label__text`
+- `.cms-campaign-banners:nth-child(6) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .product-label > .product-label__text`
+- `.cms-campaign-banners:nth-child(6) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .product-label > .product-label__text`
 - `a[href$="nuxe-sun"] > .campaign-banner__text.banner__text > .product-label > .product-label__text`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -30,7 +30,7 @@
 
 #### Affected Elements:
 
-- `.cms-recomendations:nth-child(11) > section > div > .carousel[aria-roledescription="carousel"][role="region"]`
+- `.cms-recomendations:nth-child(10) > section > div > .carousel[aria-roledescription="carousel"][role="region"]`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
@@ -68,5 +68,5 @@
 
 #### Affected Elements:
 
-- `.cms-recomendations:nth-child(11) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
-- `.cms-recomendations:nth-child(14) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- `.cms-recomendations:nth-child(10) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- `.cms-recomendations:nth-child(13) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`

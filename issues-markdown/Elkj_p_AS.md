@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2026-07-05T00:49:53.299Z
+**Timestamp:** 2026-07-06T03:29:55.034Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
 **Total Violations:** 3
 
@@ -12,12 +12,15 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Count:** 5
 
 #### Affected Elements:
 
 - `.top-header-block > p`
 - `a[target="_self"] > .underline`
+- `span[data-highlight-price="2200"] > .inc-vat`
+- `a[data-item-id="604300"] > .col-start-1.mb-auto.pt-2 > .md\:gap-x-3.gap-x-2.flex-wrap > .items-start.flex-col.flex > .pb-\[1px\].leading-\[0\.75rem\][data-highlight-price="6000"] > .inc-vat`
+- `span[data-highlight-price="4000"] > .inc-vat`
 
 ### <li> elements must be contained in a <ul> or <ol>
 

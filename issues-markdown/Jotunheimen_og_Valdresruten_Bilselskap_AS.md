@@ -1,8 +1,8 @@
 # WCAG Violations Report for Jotunheimen og Valdresruten Bilselskap AS
 
-**Timestamp:** 2026-07-05T01:06:28.946Z
+**Timestamp:** 2026-07-06T03:46:19.905Z
 **URL:** [https://jvb.no/](https://jvb.no/)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -12,21 +12,10 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 19
+- **Count:** 8
 
 #### Affected Elements:
 
-- `.et_pb_text_0 > .et_pb_text_inner > h1`
-- `.et_pb_text_1 > .et_pb_text_inner > p`
-- `.et_pb_text_1 > .et_pb_text_inner > p > span:nth-child(1)`
-- `.et_pb_text_1 > .et_pb_text_inner > p > span:nth-child(2)`
-- `.et_pb_button_0`
-- `.et_pb_button_1`
-- `h4 > span`
-- `.et_pb_blurb_description > p:nth-child(1)`
-- `strong > a`
-- `h1:nth-child(4) > span`
-- `.et_pb_slide_title > a`
 - `.et_pb_text_6 > .et_pb_text_inner > p`
 - `.et_pb_text_6 > .et_pb_text_inner > p > span`
 - `.et_pb_text_9 > .et_pb_text_inner > p`
@@ -63,30 +52,17 @@
 - `.et_pb_blurb_0 > .et_pb_blurb_content > .et_pb_blurb_container > h4`
 - `.et_pb_blurb_0_tb_footer > .et_pb_blurb_content > .et_pb_blurb_container > h4`
 
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.et_pb_menu_inner_container > .et_pb_menu__wrap > .et_pb_menu__menu > nav`
-
 ### Links must have discernible text
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
 - `.et_pb_image_0_tb_header > a[href$="jvb.no/"]`
-- `.et_pb_menu__logo > a[href$="jvb.no/"]`
 
 ### Zooming and scaling must not be disabled
 

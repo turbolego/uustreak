@@ -1,6 +1,6 @@
 # WCAG Violations Report for Aftenposten AS
 
-**Timestamp:** 2026-07-05T00:29:23.636Z
+**Timestamp:** 2026-07-06T03:09:35.892Z
 **URL:** [https://www.aftenposten.no/](https://www.aftenposten.no/)
 **Total Violations:** 4
 
@@ -52,6 +52,6 @@
 
 #### Affected Elements:
 
-- `a[data-content-id="V6jOGp"] > ._figure_1re19_59 > ._overlay_1re19_480._badges_1re19_475._small_1re19_538 > ._logo_1re19_533[viewBox="0 0 21 18"][role="img"]`
-- `._link_1re19_34[data-content-id="Gxwpwm"][data-content-newsroom="ap"] > ._figure_1re19_59 > ._overlay_1re19_480._badges_1re19_475._small_1re19_538 > ._logo_1re19_533[viewBox="0 0 21 18"][role="img"]`
-- `._link_1re19_34[data-content-id="3pBn4q"][data-content-newsroom="ap"] > ._figure_1re19_59 > ._overlay_1re19_480._badges_1re19_475._small_1re19_538 > ._logo_1re19_533[viewBox="0 0 21 18"][role="img"]`
+- `a[data-content-id="zOxLRv"] > ._main_1re19_175 > ._meta_1re19_254 > ._inline_1re19_502._badges_1re19_475._small_1re19_538 > ._logo_1re19_533[viewBox="0 0 21 18"][role="img"]`
+- `._link_1re19_34[data-content-id="Wv8LjG"][data-content-newsroom="ap"] > ._figure_1re19_59 > ._overlay_1re19_480._badges_1re19_475._small_1re19_538 > ._logo_1re19_533[viewBox="0 0 21 18"][role="img"]`
+- `a[data-content-id="n10gAn"] > ._figure_1re19_59 > ._overlay_1re19_480._badges_1re19_475._small_1re19_538 > ._logo_1re19_533[viewBox="0 0 21 18"][role="img"]`

@@ -1,38 +1,22 @@
 # WCAG Violations Report for Asker og Bærum Budstikke AS
 
-**Timestamp:** 2026-07-05T00:33:12.473Z
+**Timestamp:** 2026-07-06T03:13:24.280Z
 **URL:** [https://www.budstikka.no/](https://www.budstikka.no/)
 **Total Violations:** 6
 
 ## Violation Details
 
-### Elements must only use permitted ARIA attributes
+### ARIA commands must have an accessible name
 
 - **Impact:** serious
-- **Description:** Ensure ARIA attributes are not prohibited for an element's role
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 3
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
 
 #### Affected Elements:
 
-- `iframe[goodvibes=""], div[title="Norge"]`
-- `iframe[goodvibes=""], #pastMatchesWidget`
-- `iframe[goodvibes=""], div[title="Brasil"]`
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
-
-#### Affected Elements:
-
-- `#eaframe, #container_10619632 > .info > .info-wrapper > .ctaLink`
-- `.swiper-slide-active > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
-- `.swiper-slide-next > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
+- `#google_ads_iframe_\/56257416\/www\.budstikka\.no\/toppbanner_0, #cbb`
 
 ### Frames must have an accessible name
 
@@ -47,17 +31,30 @@
 - `iframe[goodvibes=""]`
 - `#eaframe`
 
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#www\.budstikka\.no\/toppbanner_1 > a[target="_blank"]`
+
 ### Page should contain a level-one heading
 
 - **Impact:** moderate
 - **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 3
+- **Count:** 4
 
 #### Affected Elements:
 
 - `html`
+- `#google_ads_iframe_\/56257416\/www\.budstikka\.no\/toppbanner_0, html`
 - `iframe[goodvibes=""], html`
 - `#eaframe, html`
 
@@ -84,4 +81,4 @@
 #### Affected Elements:
 
 - `amedia-username`
-- `#toppbanner-1`
+- `#toppbanner-1-label`

@@ -1,23 +1,10 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-07-05T00:38:03.852Z
+**Timestamp:** 2026-07-06T03:18:22.056Z
 **URL:** [https://www.bt.no/](https://www.bt.no/)
-**Total Violations:** 6
+**Total Violations:** 4
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `._label_1wr71_208`
-- `._button_1xihg_11`
 
 ### Aside should not be contained in another landmark
 
@@ -68,15 +55,3 @@
 #### Affected Elements:
 
 - `.sch-datacontroller__text`
-
-### <svg> elements with an img role must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/svg-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
-- **Count:** 1
-
-#### Affected Elements:
-
-- `._hearts_4walc_1`

@@ -1,19 +1,55 @@
 # WCAG Violations Report for Cubus AS
 
-**Timestamp:** 2026-07-05T00:42:54.193Z
+**Timestamp:** 2026-07-06T03:23:04.537Z
 **URL:** [https://cubus.com/no/](https://cubus.com/no/)
-**Total Violations:** 1
+**Total Violations:** 4
 
 ## Violation Details
 
-### Delayed refresh under 20 hours must not be used
+### Headings should not be empty
 
-- **Impact:** critical
-- **Description:** Ensure <meta http-equiv="refresh"> is not used for delayed refresh
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/meta-refresh?application=playwright
-- **Tags:** cat.time-and-media, wcag2a, wcag221, TTv5, TT8.a, EN-301-549, EN-9.2.2.1, RGAAv4, RGAA-13.1.2
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `meta[http-equiv="refresh"]`
+- `#react_b08ef578-e4fa-44ff-82f4-8b33cd0172d7 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .margin-sm:nth-child(1)`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.css-smxovs-StyledCssSliderWrapper`
+
+### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
+
+- **Impact:** serious
+- **Description:** Ensure that lists are structured correctly
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/list?application=playwright
+- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.e1gatcwn2`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#zendesk-widget`

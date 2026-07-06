@@ -1,6 +1,6 @@
 # WCAG Violations Report for SEB - Skandinaviska Enskilda Banken NUF
 
-**Timestamp:** 2026-07-05T00:40:28.470Z
+**Timestamp:** 2026-07-06T03:20:28.569Z
 **URL:** [https://sebgroup.com/](https://sebgroup.com/)
 **Total Violations:** 1
 

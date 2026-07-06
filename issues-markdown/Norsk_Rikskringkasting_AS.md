@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norsk Rikskringkasting AS
 
-**Timestamp:** 2026-07-05T00:34:41.802Z
+**Timestamp:** 2026-07-06T03:14:53.789Z
 **URL:** [https://www.nrk.no/](https://www.nrk.no/)
 **Total Violations:** 1
 
@@ -16,5 +16,5 @@
 
 #### Affected Elements:
 
-- `h4`
-- `.tablet\:min-h-\[280px\] > .tablet\:block.hidden > .\!mb-1.tablet\:block.uppercase`
+- `dh-sportsbanner-v2[data-core-analytics-ca-u2m55vrp=""] > .dh-sportsbanner-dh-sports-banner.undefined[data-ec-name="sportsbanner"] > .dh-sportsbanner-dh-sports-banner__programsSection.dh-sportsbanner-dh-front > .visually-hidden > h4`
+- `dh-sportsbanner-v2[data-core-analytics-ca-6s6imvss=""] > .dh-sportsbanner-dh-sports-banner.undefined[data-ec-name="sportsbanner"] > .dh-sportsbanner-dh-sports-banner__programsSection.dh-sportsbanner-dh-front > .visually-hidden > h4`

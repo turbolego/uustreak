@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fredrikstad kommune
 
-**Timestamp:** 2026-07-05T00:56:47.261Z
+**Timestamp:** 2026-07-06T03:36:50.114Z
 **URL:** [https://www.fredrikstad.kommune.no/](https://www.fredrikstad.kommune.no/)
 **Total Violations:** 5
 
@@ -77,6 +77,6 @@
 - `a[href="/kalender?id=1737658"] > .p-4 > .list-none.p-0.m-0 > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width="1em"][height="1em"]`
 - `a[href="/kalender?id=1737658"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6`
 - `a[href="/kalender?id=1737658"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6`
-- `a[href="/kalender?id=1561183"] > .p-4 > .list-none.p-0.m-0 > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width="1em"][height="1em"]`
-- `a[href="/kalender?id=1561183"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6`
-- `a[href="/kalender?id=1561183"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6`
+- `a[href="/kalender?id=1739512"] > .p-4 > .list-none.p-0.m-0 > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width="1em"][height="1em"]`
+- `a[href="/kalender?id=1739512"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6`
+- `a[href="/kalender?id=1739512"] > .p-4 > .list-none.p-0.m-0 > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6`
