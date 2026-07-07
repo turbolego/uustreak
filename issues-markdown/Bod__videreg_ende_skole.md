@@ -1,10 +1,22 @@
 # WCAG Violations Report for Bodø videregående skole
 
-**Timestamp:** 2026-07-06T03:20:09.079Z
+**Timestamp:** 2026-07-07T03:18:57.316Z
 **URL:** [https://www.bodo.vgs.no/](https://www.bodo.vgs.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.cc-content-link-text`
 
 ### Links must be distinguishable without relying on color
 
@@ -38,11 +50,12 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 9
+- **Count:** 10
 
 #### Affected Elements:
 
 - `#ctl00_ctl00_ctl00_innhold_ctl05_WebpartId_4649`
+- `#ctl00_ctl00_ctl00_innhold_ctl05_WebpartId_6643`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_1200 > h2`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_1200_WebpartId_1200_txtSearch`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_1201`

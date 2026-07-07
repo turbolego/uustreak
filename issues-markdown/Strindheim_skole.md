@@ -1,22 +1,10 @@
 # WCAG Violations Report for Strindheim skole
 
-**Timestamp:** 2026-07-06T03:31:07.654Z
+**Timestamp:** 2026-07-07T03:32:05.701Z
 **URL:** [https://www.trondheim.kommune.no/org/oppvekst/skoler/strindheim-skole/](https://www.trondheim.kommune.no/org/oppvekst/skoler/strindheim-skole/)
-**Total Violations:** 4
+**Total Violations:** 2
 
 ## Violation Details
-
-### ARIA role should be appropriate for the element
-
-- **Impact:** minor
-- **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright
-- **Tags:** cat.aria, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.leaflet-marker-icon`
 
 ### Heading levels should only increase by one
 
@@ -29,18 +17,6 @@
 #### Affected Elements:
 
 - `h4`
-
-### Elements marked as presentational should be consistently ignored
-
-- **Impact:** minor
-- **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/presentation-role-conflict?application=playwright
-- **Tags:** cat.aria, best-practice, ACT
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.leaflet-marker-icon`
 
 ### All page content should be contained by landmarks
 

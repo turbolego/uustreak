@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2026-07-06T03:18:39.785Z
+**Timestamp:** 2026-07-07T03:17:25.359Z
 **URL:** [https://www.ba.no/](https://www.ba.no/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -18,43 +18,32 @@
 
 - `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #cbb`
 
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 3
+
+#### Affected Elements:
+
+- `.swiper-slide-active > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
+- `.swiper-slide-next > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
+- `div[data-swiper-slide-index="3"] > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
+
 ### Frames must have an accessible name
 
 - **Impact:** serious
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if`
 - `#eaframe`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#www\.ba\.no\/toppbanner_1 > a[target="_blank"]`
-
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `html`
-- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, html`
-- `#eaframe, html`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -79,4 +68,4 @@
 #### Affected Elements:
 
 - `amedia-username`
-- `#toppbanner-1-label`
+- `#toppbanner-1`

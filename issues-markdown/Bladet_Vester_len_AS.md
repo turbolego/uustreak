@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-07-06T03:19:52.432Z
+**Timestamp:** 2026-07-07T03:18:41.446Z
 **URL:** [https://www.blv.no/](https://www.blv.no/)
 **Total Violations:** 8
 
@@ -28,8 +28,8 @@
 
 #### Affected Elements:
 
-- `a[data-k5a-section="commercial"] > .body > .title_container.brick-c-fdsRaE.has-image > .normal.brick-c-JbDTi[itemprop="teaser_title"]`
-- `.none[data-title-words="2"][itemtype="http://schema.org/NewsArticle"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .title_container.brick-c-fdsRaE.has-image > .normal.brick-c-JbDTi[itemprop="teaser_title"]`
+- `a[data-k5a-section="commercial"] > .body > .brick-c-fdsRaE.title_container.has-image > .normal.brick-c-JbDTi[itemprop="teaser_title"]`
+- `.brick-c-bQdHRt.none[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .normal.brick-c-JbDTi[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
@@ -66,7 +66,7 @@
 #### Affected Elements:
 
 - `#www\.blv\.no\/toppbanner_1 > a[target="_blank"]`
-- `.none[data-title-words="2"][itemtype="http://schema.org/NewsArticle"] > .brick-c-ffHwOH.teaser_body[itemprop="url"]`
+- `.brick-c-bQdHRt.none[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"]`
 
 ### Page should contain a level-one heading
 

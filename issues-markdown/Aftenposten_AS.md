@@ -1,8 +1,8 @@
 # WCAG Violations Report for Aftenposten AS
 
-**Timestamp:** 2026-07-06T03:09:35.892Z
+**Timestamp:** 2026-07-07T03:08:40.553Z
 **URL:** [https://www.aftenposten.no/](https://www.aftenposten.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -41,17 +41,3 @@
 #### Affected Elements:
 
 - `.sch-datacontroller__text`
-
-### <svg> elements with an img role must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/svg-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
-- **Count:** 3
-
-#### Affected Elements:
-
-- `a[data-content-id="zOxLRv"] > ._main_1re19_175 > ._meta_1re19_254 > ._inline_1re19_502._badges_1re19_475._small_1re19_538 > ._logo_1re19_533[viewBox="0 0 21 18"][role="img"]`
-- `._link_1re19_34[data-content-id="Wv8LjG"][data-content-newsroom="ap"] > ._figure_1re19_59 > ._overlay_1re19_480._badges_1re19_475._small_1re19_538 > ._logo_1re19_533[viewBox="0 0 21 18"][role="img"]`
-- `a[data-content-id="n10gAn"] > ._figure_1re19_59 > ._overlay_1re19_480._badges_1re19_475._small_1re19_538 > ._logo_1re19_533[viewBox="0 0 21 18"][role="img"]`

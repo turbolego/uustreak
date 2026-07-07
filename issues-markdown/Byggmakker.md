@@ -1,6 +1,6 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2026-07-06T03:20:55.231Z
+**Timestamp:** 2026-07-07T03:19:42.900Z
 **URL:** [https://www.byggmakker.no/](https://www.byggmakker.no/)
 **Total Violations:** 2
 
@@ -18,16 +18,16 @@
 
 - `.product-card.ab_omni_kampaign[data-product_id="7070276047569"]`
 - `.product-card__product-price.prrc[data-product_id="7070276047569"]`
-- `.campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id="4053423321579"]`
-- `.campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-product_id="4053423321579"]`
+- `.campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card[data-product_id="4053423321579"][data-price-history="4372.5"]`
+- `.campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="4053423321579"][data-price-history="4372.5"]`
 - `.campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-price-history="249"]`
 - `.campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-price-history="249"]`
 - `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-price-history="1699"]`
 - `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-price-history="1699"]`
-- `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-product_id="4053423321579"]`
-- `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-product_id="4053423321579"]`
-- `.product-card.ab_omni_kampaign[data-product_id="4059952589077"]`
-- `.product-card__product-price.prrc[data-product_id="4059952589077"]`
+- `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card[data-product_id="4053423321579"][data-price-history="4372.5"]`
+- `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="4053423321579"][data-price-history="4372.5"]`
+- `.product-card[data-product_id="4059952589077"][data-price-history="3747.5"]`
+- `.product-card__product-price[data-product_id="4059952589077"][data-price-history="3747.5"]`
 - `.product-card[data-product_id="3165140790406"][data-price-history="1249"]`
 - `.product-card__product-price[data-product_id="3165140790406"][data-price-history="1249"]`
 - `.product-card.ab_omni_kampaign[data-product_id="3165140654364"]`

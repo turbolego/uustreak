@@ -1,8 +1,8 @@
 # WCAG Violations Report for Aleris Helse AS
 
-**Timestamp:** 2026-07-06T03:10:50.873Z
+**Timestamp:** 2026-07-07T03:09:54.727Z
 **URL:** [https://www.aleris.no/](https://www.aleris.no/)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -17,18 +17,6 @@
 #### Affected Elements:
 
 - `.sand.styles_card__RkDWu > .styles_contentWrapper__SrdkM > .styles_html__ANGXS.styles_html__zz6xy[data-epi-edit="Content"]`
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.ant-skeleton-title`
 
 ### Document should not have more than one banner landmark
 

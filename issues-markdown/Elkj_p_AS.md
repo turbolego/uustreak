@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2026-07-06T03:29:55.034Z
+**Timestamp:** 2026-07-07T03:28:35.985Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
 **Total Violations:** 3
 
@@ -19,8 +19,8 @@
 - `.top-header-block > p`
 - `a[target="_self"] > .underline`
 - `span[data-highlight-price="2200"] > .inc-vat`
+- `span[data-highlight-price="8409"] > .inc-vat`
 - `a[data-item-id="604300"] > .col-start-1.mb-auto.pt-2 > .md\:gap-x-3.gap-x-2.flex-wrap > .items-start.flex-col.flex > .pb-\[1px\].leading-\[0\.75rem\][data-highlight-price="6000"] > .inc-vat`
-- `span[data-highlight-price="4000"] > .inc-vat`
 
 ### <li> elements must be contained in a <ul> or <ol>
 

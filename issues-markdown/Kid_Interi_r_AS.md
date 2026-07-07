@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-07-06T03:47:43.259Z
+**Timestamp:** 2026-07-07T03:46:00.340Z
 **URL:** [https://www.kid.no/](https://www.kid.no/)
 **Total Violations:** 6
 
@@ -24,13 +24,12 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `div:nth-child(4) > .jn.jo.jp > .kc.gp.kd > .fu.br > div > div > .ke.jt.kd > .kd.br > .kf.gq.gr > .kg.gt.gv`
+- `.kg`
 - `.kn:nth-child(2) > .ko.kp.kq > .br > div > div > .ch.cg.et > .i2.gq.gr > .gt.gv.gw`
-- `div:nth-child(7) > .jn.jo.jp > .kc.gp.kd > .fu.br > div > div > .ke.jt.kd > .kd.br > .kf.gq.gr > .kg.gt.gv`
 
 ### Document should not have more than one banner landmark
 

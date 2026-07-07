@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-07-06T03:24:53.618Z
+**Timestamp:** 2026-07-07T03:23:36.107Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 9
 
@@ -50,16 +50,17 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 6
+- **Count:** 7
 
 #### Affected Elements:
 
 - `.has-row-header.color_mobile_no_bg_color.hasContentPadding > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(26) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52) > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(64) > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(60) > h5`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(70) > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(66) > h5`
 
 ### Images must have alternative text
 
@@ -107,12 +108,44 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 119
+- **Count:** 115
 
 #### Affected Elements:
 
 - `h1`
 - `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
+- `#notice-10430825 > .content > h2`
+- `time[datetime="2026-07-06T18:36:45.000Z"]`
+- `#notice-10430761 > .content > h2`
+- `time[datetime="2026-07-06T15:55:46.000Z"]`
+- `div[title="Rutefly nødlandet på Torp"] > h2`
+- `time[datetime="2026-07-06T13:46:12.000Z"]`
+- `#notice-10430316 > .content > h2`
+- `time[datetime="2026-07-06T12:08:14.000Z"]`
+- `div[title="Flere havnet på legevakta"] > h2`
+- `time[datetime="2026-07-06T11:53:57.000Z"]`
+- `div[title="Økning i fartsovertredelser"] > h2`
+- `time[datetime="2026-07-06T11:17:06.000Z"]`
+- `div[title="Gaza: Hamas legger ned styret"] > h2`
+- `time[datetime="2026-07-06T11:16:31.000Z"]`
+- `div[title="25 drept i fengselsopprør"] > h2`
+- `time[datetime="2026-07-06T10:22:48.000Z"]`
+- `div[title="Skogbrann: 10.000 evakuert "] > h2`
+- `time[datetime="2026-07-06T10:18:47.000Z"]`
+- `div[title="Kritiserer Fifas Balogun-grep"] > h2`
+- `time[datetime="2026-07-06T10:10:15.000Z"]`
+- `div[title="1,9 millioner så kampen på NRK"] > h2`
+- `time[datetime="2026-07-06T09:24:47.000Z"]`
+- `#notice-10429776 > .content > h2`
+- `time[datetime="2026-07-06T08:25:27.000Z"]`
+- `div[title="Lover ny fest på Rådhusplassen"] > h2`
+- `time[datetime="2026-07-06T07:49:45.000Z"]`
+- `#notice-10429459 > .content > h2`
+- `time[datetime="2026-07-06T06:41:51.000Z"]`
+- `div[title="Savnet turgåer funnet uskadd"] > h2`
+- `time[datetime="2026-07-06T05:18:14.000Z"]`
+- `div[title="Flere skadet av fyrverkeri"] > h2`
+- `time[datetime="2026-07-06T05:17:29.000Z"]`
 - `#notice-10429203 > .content > h2`
 - `#notice-10429203 > .content > .meta`
 - `div[title="Holmgren Pedersen sendt hjem"] > h2`
@@ -121,38 +154,6 @@
 - `#notice-10429155 > .content > .meta`
 - `#notice-10429148 > .content > h2`
 - `#notice-10429148 > .content > .meta`
-- `#notice-10429147 > .content > h2`
-- `#notice-10429147 > .content > .meta`
-- `div[title="Holmestrand: MC-fører omkom"] > h2`
-- `div[title="Holmestrand: MC-fører omkom"] > .meta`
-- `#notice-10429082 > .content > h2`
-- `#notice-10429082 > .content > .meta`
-- `div[title="Hetebølgen gjør comeback"] > h2`
-- `time[datetime="2026-07-05T12:17:53.000Z"]`
-- `div[title="Opec øker produksjonskvoter"] > h2`
-- `time[datetime="2026-07-05T11:39:20.000Z"]`
-- `div[title="Handelsskip angrepet"] > h2`
-- `time[datetime="2026-07-05T11:38:20.000Z"]`
-- `#notice-10428789 > .content > h2`
-- `time[datetime="2026-07-05T08:44:33.000Z"]`
-- `div[title="Mistet livet i drukningsulykke"] > h2`
-- `time[datetime="2026-07-05T08:57:01.000Z"]`
-- `div[title="Ingen streik for flyteknikere"] > h2`
-- `time[datetime="2026-07-05T09:14:46.000Z"]`
-- `div[title="Troms: Person døde i husbrann"] > h2`
-- `time[datetime="2026-07-05T11:37:25.000Z"]`
-- `div[title="Fire reddet da båt kantret"] > h2`
-- `time[datetime="2026-07-04T15:21:54.000Z"]`
-- `div[title="Elg løs i Bodø sentrum"] > h2`
-- `time[datetime="2026-07-04T14:11:28.000Z"]`
-- `div[title="Fordømmer rasisme i VM"] > h2`
-- `time[datetime="2026-07-04T14:11:05.000Z"]`
-- `div[title="Mali: flere opprørsangrep"] > h2`
-- `time[datetime="2026-07-04T12:00:01.000Z"]`
-- `div[title="Svenske såret i droneangrep"] > h2`
-- `time[datetime="2026-07-04T11:51:58.000Z"]`
-- `div[title="Parader avlyst i USA"] > h2`
-- `div[title="Parader avlyst i USA"] > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
@@ -165,9 +166,9 @@
 - `iframe[data-testid="embed-iframe"], a[dir="auto"]`
 - `iframe[data-testid="embed-iframe"], label`
 - `.row.large-12.small-12:nth-child(11)`
-- `.row.large-12.small-12:nth-child(12)`
 - `#article_list_10372156 > .content > .lab-scrollbox-headline.headline[itemprop="headline"]`
 - `#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x`
+- `.row.large-12.small-12:nth-child(13)`
 - `.has-row-header.color_mobile_no_bg_color.hasContentPadding`
 - `.row.large-12.small-12:nth-child(16)`
 - `#article_list_9904930 > .inner.fullwidthTarget.content`
@@ -178,9 +179,9 @@
 - `.row.large-12.small-12:nth-child(22)`
 - `.border_width_no_border_width.border_width_mobile_no_border_width.color_mobile_no_bg_color`
 - `.page-content > .border-bg-quaternary.mobile_border-bg-quaternary.hasBorder`
-- `.row.large-12.small-12:nth-child(26)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(26)`
 - `.row.large-12.small-12:nth-child(27)`
-- `#article_list_10184114 > .content > .lab-scrollbox-headline.font-weight-normal.m-font-weight-normal`
+- `#article_list_10184114 > .content > .lab-scrollbox-headline.t25.font-weight-normal`
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(29)`
 - `.row.large-12.small-12:nth-child(31)`
@@ -192,7 +193,7 @@
 - `.row.large-12.small-12:nth-child(38)`
 - `.row.large-12.small-12:nth-child(39)`
 - `.row.large-12.small-12:nth-child(41)`
-- `#article_list_10230577 > .content > .lab-scrollbox-headline.font-weight-normal.m-font-weight-normal`
+- `#article_list_10230577 > .content > .lab-scrollbox-headline.t25.font-weight-normal`
 - `#article_list_10230577 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(43)`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44)`
@@ -215,20 +216,16 @@
 - `.row.large-12.small-12:nth-child(53)`
 - `.row.large-12.small-12:nth-child(54)`
 - `.row.large-12.small-12:nth-child(56)`
-- `.row.large-12.small-12:nth-child(57)`
-- `.row.large-12.small-12:nth-child(58)`
 - `#offer_9b4a07563ba6db1130ac-0, div[ng-show="!terminalError"]`
-- `.row.large-12.small-12:nth-child(60)`
+- `.row.large-12.small-12:nth-child(58)`
+- `.row.large-12.small-12:nth-child(59)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(60)`
 - `.row.large-12.small-12:nth-child(61)`
 - `.row.large-12.small-12:nth-child(62)`
-- `.row.large-12.small-12:nth-child(63)`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(64)`
-- `.row.large-12.small-12:nth-child(65)`
-- `.row.large-12.small-12:nth-child(66)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(67)`
-- `.row.large-12.small-12:nth-child(68)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(63)`
+- `.row.large-12.small-12:nth-child(64)`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(70)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(66)`
 - `.powered-by`
 
 ### Scrollable region must have keyboard access

@@ -1,22 +1,10 @@
 # WCAG Violations Report for Cubus AS
 
-**Timestamp:** 2026-07-06T03:23:04.537Z
+**Timestamp:** 2026-07-07T03:21:49.187Z
 **URL:** [https://cubus.com/no/](https://cubus.com/no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#react_b08ef578-e4fa-44ff-82f4-8b33cd0172d7 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .margin-sm:nth-child(1)`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
