@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-07-07T03:18:25.434Z
+**Timestamp:** 2026-07-08T03:16:16.828Z
 **URL:** [https://www.nordlys.no/](https://www.nordlys.no/)
 **Total Violations:** 7
 
@@ -55,16 +55,16 @@
 
 #### Affected Elements:
 
-- `#adsm-iframe-skin-66fe291c97, .adnami-skin-wrapper:nth-child(1) > .adnami-background > .adnami-backgroundImage`
-- `#adsm-iframe-skin-66fe291c97, .adnami-skin-wrapper:nth-child(1) > .adnami-flexContainer > .adnami-leftPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
-- `#adsm-iframe-skin-66fe291c97, .adnami-skin-wrapper:nth-child(1) > .adnami-flexContainer > .adnami-rightPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
-- `#adsm-iframe-skin-66fe291c97, .adnami-skin-wrapper:nth-child(2) > .adnami-background > .adnami-backgroundImage`
-- `#adsm-iframe-skin-66fe291c97, .adnami-skin-wrapper:nth-child(2) > .adnami-flexContainer > .adnami-leftPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
-- `#adsm-iframe-skin-66fe291c97, .adnami-skin-wrapper:nth-child(2) > .adnami-flexContainer > .adnami-rightPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
-- `#adsm-iframe-skin-66fe291c97, .adnami-skin-wrapper:nth-child(3) > .adnami-background > .adnami-backgroundImage`
-- `#adsm-iframe-skin-66fe291c97, .adnami-skin-wrapper:nth-child(3) > .adnami-flexContainer > .adnami-leftPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
-- `#adsm-iframe-skin-66fe291c97, .adnami-skin-wrapper:nth-child(3) > .adnami-flexContainer > .adnami-rightPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
-- `#adsm-iframe-f896b62c-31e1-41d0-af7f-2cf637336c11-66fe291c97, #adsm-iframe-skin_top-66fe291c97, img`
+- `#adsm-iframe-skin-2c7684bdf2, .adnami-skin-wrapper:nth-child(1) > .adnami-background > .adnami-backgroundImage`
+- `#adsm-iframe-skin-2c7684bdf2, .adnami-skin-wrapper:nth-child(1) > .adnami-flexContainer > .adnami-leftPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
+- `#adsm-iframe-skin-2c7684bdf2, .adnami-skin-wrapper:nth-child(1) > .adnami-flexContainer > .adnami-rightPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
+- `#adsm-iframe-skin-2c7684bdf2, .adnami-skin-wrapper:nth-child(2) > .adnami-background > .adnami-backgroundImage`
+- `#adsm-iframe-skin-2c7684bdf2, .adnami-skin-wrapper:nth-child(2) > .adnami-flexContainer > .adnami-leftPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
+- `#adsm-iframe-skin-2c7684bdf2, .adnami-skin-wrapper:nth-child(2) > .adnami-flexContainer > .adnami-rightPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
+- `#adsm-iframe-skin-2c7684bdf2, .adnami-skin-wrapper:nth-child(3) > .adnami-background > .adnami-backgroundImage`
+- `#adsm-iframe-skin-2c7684bdf2, .adnami-skin-wrapper:nth-child(3) > .adnami-flexContainer > .adnami-leftPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
+- `#adsm-iframe-skin-2c7684bdf2, .adnami-skin-wrapper:nth-child(3) > .adnami-flexContainer > .adnami-rightPanel.sidePanel.panel > .overlayContainer > .overlay.mainOverlay`
+- `#adsm-iframe-f896b62c-31e1-41d0-af7f-2cf637336c11-2c7684bdf2, #adsm-iframe-skin_top-2c7684bdf2, img`
 - `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, .adnm-view-pixel`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -77,7 +77,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="22"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
+- `brick-carousel-v2[data-slides="3"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 

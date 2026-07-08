@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fredrikstad kommune
 
-**Timestamp:** 2026-07-07T03:35:15.697Z
+**Timestamp:** 2026-07-08T03:33:20.540Z
 **URL:** [https://www.fredrikstad.kommune.no/](https://www.fredrikstad.kommune.no/)
 **Total Violations:** 5
 
@@ -36,12 +36,13 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 5
+- **Count:** 6
 
 #### Affected Elements:
 
 - `.font-semibold.text-xl`
-- `.wrapper > ul > li > .hover\:underline.text-black.no-underline`
+- `.wrapper > ul > li:nth-child(1) > .hover\:underline.text-black.no-underline`
+- `.wrapper > ul > li:nth-child(2) > .hover\:underline.text-black.no-underline`
 - `#q`
 - `.flex-wrap`
 - `div[x-show="step === 1"] > .text-gray-700.font-medium.text-xl`

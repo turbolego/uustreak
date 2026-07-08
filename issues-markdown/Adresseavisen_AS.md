@@ -1,8 +1,8 @@
 # WCAG Violations Report for Adresseavisen AS
 
-**Timestamp:** 2026-07-07T03:08:25.464Z
+**Timestamp:** 2026-07-08T03:06:11.040Z
 **URL:** [https://www.adressa.no/](https://www.adressa.no/)
-**Total Violations:** 9
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -31,122 +31,111 @@
 
 - `.Abobutton`
 
-### Aside should not be contained in another landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the complementary landmark or aside is at top level
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-complementary-is-top-level?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.teaserasides`
-
 ### Main landmark should not be contained in another landmark
 
 - **Impact:** moderate
 - **Description:** Ensure the main landmark is at top level
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-main-is-top-level?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 94
+- **Count:** 95
 
 #### Affected Elements:
 
-- `.gridfullsize.life20.hot60 > a > .t100`
-- `.hot70.life60.gridspotlight > a > .t100`
-- `.Bundles:nth-child(1) > .OnePlusXTeasers.grid > .hot60.gridspotlightside.life40 > a > .t100`
-- `.life20.hot60.gridspotlightside > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(1) > .hot60.gridspotlightside.life40:nth-child(1) > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(1) > .gridspotlight.card-size-large.hot60 > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(1) > .hot60.gridspotlightside.life40:nth-child(3) > a > .t100`
-- `.ThreeTeasers.grid:nth-child(4) > .life20.hot60.gridtriple > a > .t100`
-- `.ThreeTeasers.grid:nth-child(4) > .is-section-kultur-skin.is-skin.hot60 > a > .t100`
+- `.hot70.is-section-kultur-skin.gridspotlight > a > .t100`
+- `.life20.gridspotlightside.hot60 > a > .t100`
+- `.Bundles:nth-child(1) > .OnePlusXTeasers.grid > .gridspotlightside.hot60.life40 > a > .t100`
+- `.grade.life60.is-section-kultur-skin > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(1) > .gridspotlight.card-size-large.life20 > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(1) > .gridspotlightside.hot60.life40 > a > .t100`
+- `.hot60.gridtriple.life40:nth-child(1) > a > .t100`
+- `.ThreeTeasers.grid:nth-child(4) > .hot60.gridtriple.life40:nth-child(2) > a > .t100`
 - `.ThreeTeasers.grid:nth-child(4) > .hot60.gridtriple.life40:nth-child(3) > a > .t100`
-- `.hot70.is-hendelse-skin.opinion > a > .t100`
-- `.life60.gridspotlightside.hot50 > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(8) > .hot60.gridspotlightside.life40 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(10) > .hot60.gridtriple.life40:nth-child(1) > a > .t100`
-- `.ThreeTeasers.grid:nth-child(10) > .hot60.gridtriple.life40:nth-child(2) > a > .t100`
-- `.ThreeTeasers.grid:nth-child(10) > .life20.gridtriple.hot50 > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(12) > .life20.gridspotlightside.hot50:nth-child(1) > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(12) > .hot70.opinion.gridspotlight > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(12) > .no-image.life20.gridspotlightside > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(12) > .is-section-trdby-skin.is-skin.gridspotlightside > a > .t100`
-- `.gridspotlight.card-size-large.life20 > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(14) > .life20.gridspotlightside.hot50:nth-child(2) > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(14) > .is-section-meninger-skin.opinion.is-skin > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(14) > .no-image.life20.gridspotlightside > a > .t100`
-- `.ThreeTeasers.grid:nth-child(16) > .life20.gridtriple.hot50:nth-child(1) > a > .t100`
-- `.ThreeTeasers.grid:nth-child(16) > .is-section-meninger-skin.opinion.is-skin > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(8) > .gridspotlight.card-size-large.hot60 > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(8) > .life20.gridspotlightside.hot50:nth-child(2) > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(8) > .is-section-meninger-skin.opinion.is-skin > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(8) > .no-image.life20.gridspotlightside > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(10) > .gridspotlightside.hot50.life40 > a > .t100`
+- `.is-section-sport-skin.gridspotlight.card-size-large > a > .t100`
+- `.hot70.opinion.gridspotlightside > a > .t100`
+- `.hot70.variant-a.gridtriple > a > .t100`
+- `.ThreeTeasers.grid:nth-child(12) > .life20.hot60.gridtriple:nth-child(2) > a > .t100`
+- `.variant-a.life20.hot60 > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(14) > .gridspotlight.card-size-large.hot60 > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(14) > .life20.gridspotlightside.hot50 > a > .t100`
+- `.hot70.life60.gridspotlightside > a > .t100`
+- `.life20.gridspotlightside.hot50:nth-child(1) > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(16) > .is-section-kultur-skin.gridspotlight.card-size-large > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(16) > .gridspotlightside.hot60.life40 > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(16) > .no-image.life20.gridspotlightside > a > .t100`
+- `.is-section-sport-skin.is-skin.life20:nth-child(1) > a > .t100`
+- `.is-hendelse-skin.hot70.opinion > a > .t100`
+- `.is-section-sport-skin.is-skin.life20:nth-child(3) > a > .t100`
+- `.is-section-meninger-skin.opinion.gridspotlight > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(20) > .life20.gridspotlightside.hot50:nth-child(2) > a > .t100`
 - `.hot80 > a > .t100`
-- `.variant-a.gridspotlightside.hot50 > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(18) > .gridspotlight.card-size-large.hot60 > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(18) > .no-image.life20.gridspotlightside:nth-child(3) > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(18) > .no-image.life20.gridspotlightside:nth-child(4) > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(20) > .gridspotlight.card-size-large.hot60 > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(20) > .no-image.life20.gridspotlightside:nth-child(2) > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(20) > .hot60.gridspotlightside.life40 > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(20) > .no-image.life20.gridspotlightside:nth-child(4) > a > .t100`
-- `.is-section-mn24-skin.variant-a.is-skin > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(20) > .no-image.life20.gridspotlightside > a > .t100`
+- `.AdWithTeaser.grid:nth-child(21) > .life20.gridtriple.hot50 > a > .t100`
 - `.ThreeTeasers.grid:nth-child(22) > .life20.gridtriple.hot50:nth-child(1) > a > .t100`
-- `.is-hendelse-skin.is-skin.life20:nth-child(2) > a > .t100`
-- `.is-hendelse-skin.is-skin.life20:nth-child(3) > a > .t100`
-- `.variant-b > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(24) > .is-section-sport-skin.variant-a.gridspotlight > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(24) > .no-image.life20.gridspotlightside > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(24) > .is-section-meninger-skin.opinion.is-skin > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(25) > .gridspotlight.card-size-large.hot60 > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(25) > .no-image.life20.gridspotlightside > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(25) > .life20.gridspotlightside.hot50:nth-child(3) > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(25) > .life20.gridspotlightside.hot50:nth-child(4) > a > .t100`
-- `.variant-f > a > .t100`
+- `.ThreeTeasers.grid:nth-child(22) > .is-section-meninger-skin.opinion.is-skin > a > .t100`
+- `.ThreeTeasers.grid:nth-child(22) > .life20.gridtriple.hot50:nth-child(3) > a > .t100`
+- `.ThreeTeasers.grid:nth-child(24) > .life20.gridtriple.hot50:nth-child(1) > a > .t100`
+- `.ThreeTeasers.grid:nth-child(24) > .gridtriple.hot50.life40 > a > .t100`
+- `.ThreeTeasers.grid:nth-child(24) > .life20.gridtriple.hot50:nth-child(3) > a > .t100`
+- `.is-section-mn24-skin.hot40.is-skin > a > .t100`
+- `.ThreeTeasers.grid:nth-child(25) > .life20.gridtriple.hot50:nth-child(2) > a > .t100`
+- `.breakingvarsel > a > .t100`
+- `.ThreeTeasers.grid:nth-child(27) > .is-section-mn24-skin.is-skin.life20 > a > .t100`
 - `.ThreeTeasers.grid:nth-child(27) > .life20.gridtriple.hot50:nth-child(2) > a > .t100`
-- `.ThreeTeasers.grid:nth-child(27) > .life20.gridtriple.hot50:nth-child(3) > a > .t100`
-- `.AdWithTeaser.flipped.grid:nth-child(28) > .gridtriple.hot50.life40 > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(29) > .is-section-meninger-skin.opinion.is-skin > a > .t100`
-- `.h-lower > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(29) > .hot60.gridspotlightside.life40 > a > .t100`
-- `.AdWithTeaser.grid:nth-child(31) > .is-hendelse-skin.is-skin.gridtriple > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(32) > .gridspotlight.card-size-large.hot60 > a > .t100`
-- `.hot40.is-section-mn24-skin.is-skin > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(32) > .gridspotlightside.hot50.life40 > a > .t100`
-- `.AdWithTeaser.flipped.grid:nth-child(33) > .is-section-mn24-skin.is-skin.life20 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(35) > .gridtriple.hot50.life40 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(35) > .is-section-sport-skin.is-skin.hot60 > a > .t100`
+- `.is-hendelse-skin.is-skin.life20 > a > .t100`
+- `.AdWithTeaser.flipped.grid:nth-child(28) > .is-section-meninger-skin.opinion.is-skin > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(29) > .hot40.life20.gridspotlightside > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(29) > .gridspotlight.card-size-large.hot60 > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(29) > .life60.gridspotlightside.hot50 > a > .t100`
+- `.AdWithTeaser.grid:nth-child(31) > .is-section-mn24-skin.is-skin.life20 > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(32) > .gridspotlight.card-size-large.life20 > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(32) > .hot40.life20.gridspotlightside > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(32) > .gridspotlightside.hot60.life40 > a > .t100`
+- `.AdWithTeaser.flipped.grid:nth-child(33) > .life20.hot60.gridtriple > a > .t100`
+- `.ThreeTeasers.grid:nth-child(35) > .life20.hot60.gridtriple > a > .t100`
+- `.ThreeTeasers.grid:nth-child(35) > .hot60.gridtriple.life40:nth-child(2) > a > .t100`
 - `.ThreeTeasers.grid:nth-child(35) > .hot60.gridtriple.life40:nth-child(3) > a > .t100`
-- `.AdWithTeaser.grid:nth-child(36) > .hot60.gridtriple.life40 > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(37) > .gridspotlightside.hot50.life40:nth-child(1) > a > .t100`
-- `.is-section-kultur-skin.variant-a.gridspotlight > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(37) > .gridspotlightside.hot50.life40:nth-child(3) > a > .t100`
-- `.hot40.no-image.life20 > a > .t100`
-- `.AdWithTeaser.flipped.grid:nth-child(38) > .gridtriple.hot50.life40 > a > .t100`
+- `.AdWithTeaser.grid:nth-child(36) > .variant-a.hot60.gridtriple > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(37) > .hot40.life20.gridspotlightside > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(37) > .is-section-kultur-skin.gridspotlight.card-size-large > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(37) > .life60.gridspotlightside.hot50 > a > .t100`
+- `.AdWithTeaser.flipped.grid:nth-child(38) > .hot60.gridtriple.life40 > a > .t100`
 - `.OnePlusXTeasers.grid:nth-child(39) > .gridspotlight.card-size-large.hot60 > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(39) > .opinion.gridspotlightside.hot50 > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(39) > .gridspotlightside.hot50.life40:nth-child(3) > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(39) > .gridspotlightside.hot60.life40 > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(39) > .life20.gridspotlightside.hot50 > a > .t100`
 - `.AdWithTeaser.grid:nth-child(40) > .hot60.gridtriple.life40 > a > .t100`
+- `.is-section-trdby-skin.is-skin.gridtriple > a > .t100`
+- `.variant-a.gridtriple.hot50 > a > .t100`
 - `.ThreeTeasers.grid:nth-child(41) > .hot60.gridtriple.life40 > a > .t100`
-- `.hot40.is-section-kultur-skin.life60 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(41) > .gridtriple.hot50.life40 > a > .t100`
-- `.tip > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(42) > .is-section-sport-skin.variant-a.gridspotlight > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(42) > .is-section-trdby-skin.is-skin.gridspotlightside > a > .t100`
-- `.AdWithTeaser.flipped.grid:nth-child(43) > .gridtriple.hot50.life40 > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(44) > .is-section-kultur-skin.gridspotlight.card-size-large > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(44) > .gridspotlightside.hot50.life40:nth-child(2) > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(44) > .gridspotlightside.hot50.life40:nth-child(3) > a > .t100`
-- `.is-section-trdby-skin.is-skin.hot60 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(45) > .gridtriple.hot50.life40:nth-child(2) > a > .t100`
-- `.ThreeTeasers.grid:nth-child(45) > .gridtriple.hot50.life40:nth-child(3) > a > .t100`
-- `.hot30 > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(47) > .hot60.gridspotlightside.life40 > a > .t100`
-- `.customSkin-podcast > a > .t100`
+- `.is-section-sport-skin.variant-a.is-skin > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(42) > .gridspotlight.card-size-large.hot60 > a > .t100`
+- `.variant-e > a > .t100`
+- `.AdWithTeaser.flipped.grid:nth-child(43) > .hot60.gridtriple.life40 > a > .t100`
+- `.h-lower > a > .t100`
+- `.is-hendelse-skin.is-skin.gridspotlightside > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(44) > .gridspotlightside.hot60.life40 > a > .t100`
+- `.ThreeTeasers.grid:nth-child(45) > .gridtriple.hot50.life40:nth-child(1) > a > .t100`
+- `.ThreeTeasers.grid:nth-child(45) > .hot60.gridtriple.life40 > a > .t100`
+- `.gridtriple.hot50.life40:nth-child(3) > a > .t100`
+- `.AdWithTeaser.grid:nth-child(46) > .gridtriple.hot50.life40 > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(47) > .is-section-sport-skin.is-skin.gridspotlightside > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(47) > .gridspotlight.card-size-large.hot60 > a > .t100`
 - `.flipped.OnePlusXTeasers.grid:nth-child(47) > .gridspotlightside.hot50.life40 > a > .t100`
-- `.AdWithTeaser.flipped.grid:nth-child(48) > .gridtriple.hot50.life40 > a > .t100`
-- `.life60.gridtriple.hot50 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(49) > .gridtriple.hot50.life40:nth-child(2) > a > .t100`
-- `.ThreeTeasers.grid:nth-child(49) > .gridtriple.hot50.life40:nth-child(3) > a > .t100`
-- `.life60.gridfullsize.hot50 > a > .t100`
+- `.AdWithTeaser.flipped.grid:nth-child(48) > .hot60.gridtriple.life40 > a > .t100`
+- `.is-section-kultur-skin.variant-a.gridspotlight > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(49) > .gridspotlightside.hot50.life40:nth-child(2) > a > .t100`
+- `.OnePlusXTeasers.grid:nth-child(49) > .gridspotlightside.hot50.life40:nth-child(3) > a > .t100`
+- `.ThreeTeasers.grid:nth-child(51) > .opinion.gridtriple.hot50 > a > .t100`
+- `.ThreeTeasers.grid:nth-child(51) > .gridtriple.hot50.life40:nth-child(2) > a > .t100`
+- `.hot40.life60.is-section-kultur-skin > a > .t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(52) > .gridspotlightside.hot50.life40:nth-child(1) > a > .t100`
+- `.is-section-trdby-skin.gridspotlight.card-size-large > a > .t100`
+- `.is-section-trdby-skin.is-skin.gridspotlightside > a > .t100`
+- `.gridfullsize.hot50.life40 > a > .t100`
 
 ### Document should not have more than one main landmark
 

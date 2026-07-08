@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-07-07T03:17:08.730Z
+**Timestamp:** 2026-07-08T03:15:02.159Z
 **URL:** [https://www.bt.no/](https://www.bt.no/)
 **Total Violations:** 5
 
@@ -12,11 +12,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `a[data-content-id="126876"] > ._main_1wr71_127 > ._meta_1wr71_196 > ._label_1wr71_208.label-medium.bold`
+- `iframe[title="widget"], h1`
+- `._button_1xihg_11`
 
 ### Aside should not be contained in another landmark
 
@@ -52,9 +53,9 @@
 
 #### Affected Elements:
 
+- `track-element[data-track-id="teaser:126713"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="bt"]`
 - `audio-play-button[title="Det sykeste"]`
 - `audio-play-button[title="Horneland é heme"]`
-- `audio-play-button[title="Dette må du\a lese i sommer"]`
 
 ### All page content should be contained by landmarks
 
