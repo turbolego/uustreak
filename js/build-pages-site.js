@@ -414,26 +414,31 @@ function main() {
         }
     }
 
-    if (mergedSummaryDir && fs.existsSync(mergedSummaryDir)) {
-        const summaryFiles = listFilesRecursive(mergedSummaryDir, (fullPath, name) => name.endsWith('.json'));
-        log(`Found ${summaryFiles.length} merged summary files`);
+    if (mergedSummaryDir) {
+        if (fs.existsSync(mergedSummaryDir)) {
+            const summaryFiles = listFilesRecursive(mergedSummaryDir, (fullPath, name) => name.endsWith('.json'));
+            log(`✓ Found ${summaryFiles.length} merged summary files in ${mergedSummaryDir}`);
 
-        for (const summaryFile of summaryFiles) {
-            const relativePath = path.relative(mergedSummaryDir, summaryFile);
-            const date = parseSummaryDate(relativePath);
-            if (!date) {
-                continue;
-            }
+            for (const summaryFile of summaryFiles) {
+                const relativePath = path.relative(mergedSummaryDir, summaryFile);
+                const date = parseSummaryDate(relativePath);
+                if (!date) {
+                    continue;
+                }
 
-            const targetDir = path.join(outputDir, 'accessibility-reports', 'summaries', date);
-            if (!clearedSummaryDates.has(date)) {
-                removeIfExists(targetDir);
+                const targetDir = path.join(outputDir, 'accessibility-reports', 'summaries', date);
+                if (!clearedSummaryDates.has(date)) {
+                    removeIfExists(targetDir);
                 ensureDir(targetDir);
                 clearedSummaryDates.add(date);
             }
 
             copyFile(summaryFile, path.join(targetDir, path.basename(summaryFile)));
             touchedDates.add(date);
+        }
+        } else {
+            log(`⚠️  WARNING: Merged summary directory was specified but does not exist: ${mergedSummaryDir}`);
+            log(`⚠️  This will cause old summary data to be used and sites may not show recent reports!`);
         }
     } else if (artifactsDir && fs.existsSync(artifactsDir)) {
         const fallbackSummaries = listFilesRecursive(
