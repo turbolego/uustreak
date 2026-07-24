@@ -1212,7 +1212,27 @@ jobs:
             git -C "$PUBLISH_DIR" rm -rf . 2>/dev/null || true
           fi
 
-          rsync -a --delete site-output/ "$PUBLISH_DIR"/
+          # Debug: Check site-output exists before rsync
+          if [ -d "site-output" ]; then
+            echo "✓ site-output directory found ($(du -sh site-output 2>/dev/null | cut -f1))"
+            ls -la site-output/ | head -10
+          else
+            echo "❌ site-output directory NOT FOUND in $(pwd)"
+            ls -la
+            exit 1
+          fi
+
+          echo "Running rsync to copy site-output to $PUBLISH_DIR..."
+          rsync -a -v --delete site-output/ "$PUBLISH_DIR/" 2>&1 | head -20
+          
+          # Verify rsync succeeded
+          if [ ! -f "$PUBLISH_DIR/index.html" ]; then
+            echo "❌ rsync failed - index.html not found in $PUBLISH_DIR after rsync"
+            ls -la "$PUBLISH_DIR/" | head -20
+            exit 1
+          fi
+          echo "✓ rsync completed successfully"
+          
           rm -rf "$PUBLISH_DIR/gh-pages-publish"
 
           if [ ! -f "$PUBLISH_DIR/historical-data/report-list.json" ]; then
