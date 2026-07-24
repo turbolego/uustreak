@@ -5,10 +5,10 @@ export default defineConfig({
     testDir: './tests',
     fullyParallel: false,
     forbidOnly: !!process.env.CI,
-    retries: 3,
+    retries: 1, // Reduced from 3: violations are expected; retrying 3x wastes ~2 min per failing site
     workers: process.env.CI ? '25%' : '50%', // More workers for local/self-hosted runners
     use: {
-        navigationTimeout: 90000,
+        navigationTimeout: 60000, // Reduced from 90s: fail faster on unreachable sites
         actionTimeout: 20000,
         viewport: { width: 1920, height: 1080 }, // More realistic viewport
         trace: 'off',
@@ -57,5 +57,5 @@ export default defineConfig({
         ['list'],
         ['json', { outputFile: 'test-results.json' }]
     ],
-    timeout: 300000 // 5 minutes to accommodate all fallback strategies
+    timeout: 180000 // 3 minutes per test (reduced from 5 min); still handles slow sites + fallback strategies
 });
