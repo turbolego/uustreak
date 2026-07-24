@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-07-24T15:43:32.844Z
+**Timestamp:** 2026-07-24T20:45:30.206Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 7
 
@@ -40,13 +40,13 @@
 
 #### Affected Elements:
 
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(14) > h5`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(36) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(16) > h5`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(38) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52) > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(62) > h5`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(66) > h5`
 - `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(67) > h5`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(71) > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(72) > h5`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -78,11 +78,21 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 134
+- **Count:** 129
 
 #### Affected Elements:
 
 - `h1`
+- `div[title="Tester ebolavaksine"] > h2`
+- `time[datetime="2026-07-24T19:56:24.000Z"]`
+- `div[title="Venezuela trekker seg fra ICC"] > h2`
+- `time[datetime="2026-07-24T19:54:08.000Z"]`
+- `div[title="Ny norsk sparerekord"] > h2`
+- `time[datetime="2026-07-24T18:11:55.000Z"]`
+- `#notice-10454440 > .content > h2`
+- `time[datetime="2026-07-24T18:10:26.000Z"]`
+- `div[title="Skudd løsnet under slagsmål"] > h2`
+- `time[datetime="2026-07-24T19:47:04.000Z"]`
 - `div[title="Lier: Livløs person funnet"] > h2`
 - `time[datetime="2026-07-24T14:59:08.000Z"]`
 - `#notice-10454318 > .content > h2`
@@ -113,28 +123,29 @@
 - `time[datetime="2026-07-23T10:09:48.000Z"]`
 - `#notice-10452217 > .content > h2`
 - `#notice-10452217 > .content > .meta`
-- `#notice-10452193 > .content > h2`
-- `time[datetime="2026-07-23T09:02:20.000Z"]`
-- `div[title="NFF varsler Trump-klage"] > h2`
-- `time[datetime="2026-07-23T08:51:10.000Z"]`
-- `#notice-10451835 > .content > h2`
-- `time[datetime="2026-07-23T06:20:35.000Z"]`
-- `#notice-10451828 > .content > h2`
-- `time[datetime="2026-07-23T05:39:47.000Z"]`
-- `div[title="Krepsepest i Drammenselva"] > h2`
-- `time[datetime="2026-07-22T19:35:24.000Z"]`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(6)`
-- `.row.large-12.small-12:nth-child(7)`
+- `.row.large-12.small-12:nth-child(6)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(7)`
 - `.row.large-12.small-12:nth-child(8)`
 - `.row.large-12.small-12:nth-child(9)`
-- `.row.large-12.small-12:nth-child(11)`
+- `.t28.lab-scrollbox-headline.font-weight-normal`
+- `#markup_10453098 > .fullwidthTarget.content > unite-player,#status-container`
+- `article[data-instance="10453097"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
+- `#markup_10453072 > .fullwidthTarget.content > unite-player,#status-container`
+- `article[data-instance="10453073"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
+- `#markup_10440435 > .fullwidthTarget.content > unite-player,#status-container`
+- `.color_mobile_no_bg_color.align-center.mobile_text_align_align-center > .floatingTextSubset.media > .floatingText`
+- `#markup_10440421 > .fullwidthTarget.content > unite-player,#status-container`
+- `article[data-instance="10440420"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
+- `#markup_10440430 > .fullwidthTarget.content > unite-player,#status-container`
+- `article[data-instance="10440429"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
+- `#markup_10440438 > .fullwidthTarget.content > unite-player,#status-container`
+- `article[data-instance="10440437"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
+- `.row.large-12.small-12:nth-child(12)`
 - `#article_list_10372156 > .content > .lab-scrollbox-headline.headline[itemprop="headline"]`
 - `#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(13)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(14)`
 - `.bg-black.color_mobile_bg-black.lab-scrollbox-headline`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(1)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(2)`
@@ -153,6 +164,7 @@
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(13)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(14)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(15)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(16)`
 - `#article_list_9904930 > .inner.fullwidthTarget.content`
 - `.row.large-12.small-12:nth-child(18)`
 - `.row.large-12.small-12:nth-child(19)`
@@ -169,10 +181,10 @@
 - `.row.large-12.small-12:nth-child(31)`
 - `.row.large-12.small-12:nth-child(32)`
 - `.row.large-12.small-12:nth-child(33)`
-- `.color_mobile_no_bg_color.row.large-12:nth-child(34)`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(36)`
-- `.row.large-12.small-12:nth-child(37)`
-- `.row.large-12.small-12:nth-child(38)`
+- `.row.large-12.small-12:nth-child(34)`
+- `.row.large-12.small-12:nth-child(36)`
+- `.color_mobile_no_bg_color.row.large-12:nth-child(37)`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(38)`
 - `.row.large-12.small-12:nth-child(39)`
 - `.row.large-12.small-12:nth-child(41)`
 - `#article_list_10230577 > .content > .lab-scrollbox-headline.font-weight-normal.m-font-weight-normal`
@@ -192,29 +204,12 @@
 - `.row.large-12.small-12:nth-child(57)`
 - `.row.large-12.small-12:nth-child(58)`
 - `.row.large-12.small-12:nth-child(59)`
-- `.t28.lab-scrollbox-headline.font-weight-normal`
-- `#markup_10453098 > .fullwidthTarget.content > unite-player,#status-container`
-- `article[data-instance="10453097"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10453072 > .fullwidthTarget.content > unite-player,#status-container`
-- `article[data-instance="10453073"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10440435 > .fullwidthTarget.content > unite-player,#status-container`
-- `.color_mobile_no_bg_color.align-center.mobile_text_align_align-center > .floatingTextSubset.media > .floatingText`
-- `#markup_10440421 > .fullwidthTarget.content > unite-player,#status-container`
-- `article[data-instance="10440420"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10440430 > .fullwidthTarget.content > unite-player,#status-container`
-- `article[data-instance="10440429"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10440438 > .fullwidthTarget.content > unite-player,#status-container`
-- `article[data-instance="10440437"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
 - `.row.large-12.small-12:nth-child(61)`
-- `.row.large-12.small-12:nth-child(62)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(62)`
 - `.row.large-12.small-12:nth-child(63)`
-- `.row.large-12.small-12:nth-child(64)`
-- `.row.large-12.small-12:nth-child(66)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(65)`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(66)`
 - `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(67)`
-- `.row.large-12.small-12:nth-child(68)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(70)`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(71)`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(72)`
 - `.powered-by`
 
 ### Scrollable region must have keyboard access

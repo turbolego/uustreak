@@ -1,6 +1,6 @@
 # WCAG Violations Report for Asker og Bærum Budstikke AS
 
-**Timestamp:** 2026-07-24T15:33:55.380Z
+**Timestamp:** 2026-07-24T20:43:17.053Z
 **URL:** [https://www.budstikka.no/#](https://www.budstikka.no/#)
 **Total Violations:** 5
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#eaframe, #container_10678424 > .info > .info-wrapper > .ctaLink`
+- `#eaframe, #container_10672603 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
