@@ -1,6 +1,6 @@
 # WCAG Violations Report for Barne-, ungdoms-, og familiedirektoratet
 
-**Timestamp:** 2026-07-24T12:37:57.220Z
+**Timestamp:** 2026-07-24T15:35:24.867Z
 **URL:** [https://www.bufdir.no/](https://www.bufdir.no/)
 **Total Violations:** 1
 
@@ -10,7 +10,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure tabindex attribute values are not greater than 0
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/tabindex?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/tabindex?application=playwright
 - **Tags:** cat.keyboard, best-practice
 - **Count:** 3
 

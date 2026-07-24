@@ -1,0 +1,671 @@
+{
+  "project": "Studentsamskipnaden på Vestlandet",
+  "timestamp": "2026-07-24T15:52:10.704Z",
+  "url": "https://sammen.no/no",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 30,
+      "nodes": [
+        {
+          "html": "<a id=\"CybotCookiebotDialogBodyEdgeMoreDetailsLink\" href=\"#\" class=\"\">Detaljer</a>",
+          "target": [
+            "#CybotCookiebotDialogBodyEdgeMoreDetailsLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.05 (foreground color: #de792e, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button id=\"CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll\" class=\"CybotCookiebotDialogBodyButton\" tabindex=\"0\" lang=\"nb\">Tillat alle</button>",
+          "target": [
+            "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.05 (foreground color: #ffffff, background color: #de792e, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<input class=\"search-input-control...\" type=\"text\" inputmode=\"search\" enterkeyhint=\"search\" role=\"searchbox\" autocomplete=\"off\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"false\" name=\"searchInput\" id=\"searchInput\" placeholder=\"Hva ser du etter?\">",
+          "target": [
+            "#searchInput"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.98 (foreground color: #ee7203, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"text-body md:text-body_large font-normal flex flex-row items-center w-full justify-center \">",
+          "target": [
+            ".contents[href=\"/no/bolig?location=felles\"][target=\"_self\"] > .md\\:w-56.btn-primary.btn-lg > .md\\:text-body_large.flex-row.justify-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.98 (foreground color: #ffffff, background color: #ee7203, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"text-body md:text-body_large font-normal flex flex-row items-center w-full justify-center \">",
+          "target": [
+            ".contents[href=\"/no/trening?location=bergen\"][target=\"_self\"] > .md\\:w-56.btn-primary.btn-lg > .md\\:text-body_large.flex-row.justify-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.98 (foreground color: #ffffff, background color: #ee7203, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"text-body md:text-body_large font-normal flex flex-row items-center w-full justify-center \">",
+          "target": [
+            "a[href$=\"kurs\"] > .md\\:w-56.btn-primary.btn-lg > .md\\:text-body_large.flex-row.justify-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.98 (foreground color: #ffffff, background color: #ee7203, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Bli medlem <!----></div>",
+          "target": [
+            ".md\\:text-body_large.flex-row.justify-between > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.98 (foreground color: #ffffff, background color: #ee7203, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<h1 class=\"text-headline_2 md:text-headline_1 font-normal text-base-black leading-loose md:leading-extra-loose text-primary-500 hidden md:block\"><!---->Alle våre tjenester<!----></h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.98 (foreground color: #ee7203, background color: #ffffff, font size: 24.0pt (32px), font weight: normal). Expected contrast ratio of 3:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Bolig<!----><!----></div>",
+          "target": [
+            "a[href$=\"bolig\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Studentliv<!----><!----></div>",
+          "target": [
+            "a[href$=\"studentliv\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Karriere<!----><!----></div>",
+          "target": [
+            "a[href$=\"karriere\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Trening<!----><!----></div>",
+          "target": [
+            "a[href$=\"trening\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Helse<!----><!----></div>",
+          "target": [
+            "a[href$=\"helse\"]:nth-child(5) > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Barnehage<!----><!----></div>",
+          "target": [
+            "a[href$=\"barnehage\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Mat og drikke<!----><!----></div>",
+          "target": [
+            "a[href$=\"mat-og-drikke\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Psykisk helse<!----><!----></div>",
+          "target": [
+            "a[href$=\"psykisk-helse\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Studentgoder<!----><!----></div>",
+          "target": [
+            "a[href$=\"studentgoder\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<h4 class=\"text-headline_4 font-normal text-base-black leading-relaxed md:leading-relaxed align-text-top text-base-white whitespace-nowrap font-semibold pb-4\"><!---->Nyttig informasjon<!----></h4>",
+          "target": [
+            ".pb-4.whitespace-nowrap.font-semibold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Aktuelt<!----><!----></div>",
+          "target": [
+            ".gap-3[href$=\"artikkel\"][target=\"_self\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Om oss<!----><!----></div>",
+          "target": [
+            "a[href$=\"om-sammen\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Åpningstider<!----><!----></div>",
+          "target": [
+            "a[href$=\"aapningstider\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Ofte stilte spørsmål<!----><!----></div>",
+          "target": [
+            ".md\\:pt-0.md\\:pl-2.pt-4:nth-child(2) > .gap-y-4.grid-cols-1.grid > .whitespace-nowrap.gap-3[target=\"_self\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Kontakt oss<!----><!----></div>",
+          "target": [
+            "a[href$=\"hjelp-og-dialog\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->For presse<!----><!----></div>",
+          "target": [
+            ".gap-3.h-fit[target=\"_blank\"]:nth-child(2) > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->For bedrifter<!----><!----></div>",
+          "target": [
+            ".gap-3.h-fit[target=\"_blank\"]:nth-child(3) > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->For institusjoner<!----><!----></div>",
+          "target": [
+            ".md\\:pt-0.md\\:pl-2.pt-4:nth-child(3) > .gap-y-4.grid-cols-1.grid > .gap-3.h-fit[target=\"_self\"]:nth-child(4) > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed font-normal cursor-pointer border-b text-base-white border-base-white svelte-nqw3qe\"><!---->English<!----></div>",
+          "target": [
+            ".border-b.border-base-white.cursor-pointer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed grow-0 text-base-white svelte-nqw3qe\"><!---->Studentsamskipnaden på Vestlandet<!----></div>",
+          "target": [
+            ".grow-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Personvernerklæring<!----><!----></div>",
+          "target": [
+            "a[href$=\"personvern\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Informasjonskapsler<!----></div>",
+          "target": [
+            ".border-b.border-base-white.gap-3:nth-child(2) > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #ffffff, background color: #0a7dc3, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h4 class=\"text-headline_4 font-normal text-base-black leading-relaxed md:leading-relaxed align-text-top font-semibold text-gray-900\"><!---->Bolig<!----><!----></h4>",
+          "target": [
+            "a[aria-label=\"Finn din studentbolig\"] > .md\\:items-start.md\\:flex-row.flex-col > .md\\:grow > .font-semibold.text-gray-900"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 class=\"text-headline_4 font-normal text-base-black leading-relaxed md:leading-relaxed align-text-top text-gray-700 text-sm leading-tight line-clamp-2 py-0\"><!---->Ny student i Bergen? <!----></h4>",
+          "target": [
+            "a[href$=\"ny-student-bergen\"] > .pt-2.pb-2.px-2 > .text-sm.line-clamp-2.py-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/nested-interactive?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 9,
+      "nodes": [
+        {
+          "html": "<div class=\"bg-transparent w-fit \" tabindex=\"0\" role=\"button\">",
+          "target": [
+            ".bg-transparent.w-fit[role=\"button\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        },
+        {
+          "html": "<div class=\"bg-transparent w-fit \" tabindex=\"0\" role=\"button\">",
+          "target": [
+            ".bg-transparent.w-fit[role=\"button\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        },
+        {
+          "html": "<div class=\"bg-transparent w-fit \" tabindex=\"0\" role=\"button\">",
+          "target": [
+            ".bg-transparent.w-fit[role=\"button\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        },
+        {
+          "html": "<div class=\"bg-transparent w-fit \" tabindex=\"0\" role=\"button\">",
+          "target": [
+            ".bg-transparent.w-fit[role=\"button\"]:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        },
+        {
+          "html": "<div class=\"bg-transparent w-fit \" tabindex=\"0\" role=\"button\">",
+          "target": [
+            ".bg-transparent.w-fit[role=\"button\"]:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        },
+        {
+          "html": "<div class=\"bg-transparent w-fit \" tabindex=\"0\" role=\"button\">",
+          "target": [
+            ".bg-transparent.w-fit[role=\"button\"]:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        },
+        {
+          "html": "<div class=\"bg-transparent w-fit \" tabindex=\"0\" role=\"button\">",
+          "target": [
+            ".bg-transparent.w-fit[role=\"button\"]:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        },
+        {
+          "html": "<div class=\"bg-transparent w-fit \" tabindex=\"0\" role=\"button\">",
+          "target": [
+            ".bg-transparent.w-fit[role=\"button\"]:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        },
+        {
+          "html": "<div class=\"bg-transparent w-fit \" tabindex=\"0\" role=\"button\">",
+          "target": [
+            ".bg-transparent.w-fit[role=\"button\"]:nth-child(9)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 43,
+      "nodes": [
+        {
+          "html": "<div class=\"px-4 md:w-[50%] md:pl-0 md:pr-2 pt-[5.25rem]\"><div class=\"text-display-md font-normal md:text-display-lg text-gray-800 pt-[14px]\"><!---->Vi jobber for studentene på Vestlandet <!----></div><!----></div>",
+          "target": [
+            ".md\\:pl-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"md:w-[40%]\">",
+          "target": [
+            ".md\\:w-\\[40\\%\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"text-headline_3 md:text-headline_2 font-normal text-base-black leading-relaxed md:leading-relaxed text-gray-700 pb-4 w-full\"><!---->Tren gratis ut august<!----></h2>",
+          "target": [
+            ".lg\\:min-w-\\[27rem\\] > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-gray-700 pb-12 w-full max-w-[36ch] md:max-w-none svelte-nqw3qe\"><!---->Som student får du treningsmedlemskap med tilgang til syv treningssentre, svømmebasseng, klatring og mye mer<!----></div>",
+          "target": [
+            ".pb-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\" w-full h-48 md:h-auto md:self-stretch md:w-[50%] md:relative md:overflow-hidden md:z-0\">",
+          "target": [
+            ".md\\:h-auto"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h1 class=\"text-headline_2 md:text-headline_1 font-normal text-base-black leading-loose md:leading-extra-loose text-primary-500 hidden md:block\"><!---->Alle våre tjenester<!----></h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"text-headline_3 md:text-headline_2 font-normal text-base-black leading-relaxed md:leading-relaxed text-primary-700 mb-1\"><!---->Aktuelt<!----></h2>",
+          "target": [
+            ".mb-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img draggable=\"false\" style=\"object-position:50% 50%\" src=\"https://cdn.sanity.io/images/g3iqis9e/production/a94997077e523ca1e56e26323faae510581e8981-786x439.png?h=400&amp;fit=max\" alt=\"bilder av studenter i Bergen\" class=\"rounded-t-lg object-cover w-full h-44\">",
+          "target": [
+            "img[alt=\"bilder av studenter i Bergen\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"text-superTitle font-light text-base-black leading-tight md:leading-snug text-base-black text-xs\"><!---->Bergen<!----></p>",
+          "target": [
+            "a[href$=\"ny-student-bergen\"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\\:leading-snug.text-xs"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"pt-2 px-2 pb-2 flex flex-col grow\"><!--[--><h4 class=\"text-headline_4 font-normal text-base-black leading-relaxed md:leading-relaxed align-text-top text-gray-700 text-sm leading-tight line-clamp-2 py-0\"><!---->Ny student i Bergen? <!----></h4><!--]--> <!--[!--><!--]--></div>",
+          "target": [
+            "a[href$=\"ny-student-bergen\"] > .pt-2.pb-2.px-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img draggable=\"false\" style=\"object-position:50% 50%\" src=\"https://cdn.sanity.io/images/g3iqis9e/production/8c6c0d1c1d2f134aed813da5fb4307613f1418a3-3648x5472.jpg?h=400&amp;fit=max\" alt=\"Bilde av to kvinnelige studenter som snakker sammen   \" class=\"rounded-t-lg object-cover w-full h-44\">",
+          "target": [
+            "#carousel1 > .w-\\[70vw\\].md\\:w-72.min-w-\\[70vw\\] > .grow.rounded-t-lg[target=\"_self\"] > .relative.h-fit > .h-44.object-cover[draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"text-superTitle font-light text-base-black leading-tight md:leading-snug text-base-black text-xs\"><!---->Haugesund &amp; Stord<!----></p>",
+          "target": [
+            "#carousel1 > .w-\\[70vw\\].md\\:w-72.min-w-\\[70vw\\] > .grow.rounded-t-lg[target=\"_self\"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\\:leading-snug.text-xs"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"pt-2 px-2 pb-2 flex flex-col grow\">",
+          "target": [
+            "#carousel1 > .w-\\[70vw\\].md\\:w-72.min-w-\\[70vw\\] > .grow.rounded-t-lg[target=\"_self\"] > .pt-2.pb-2.px-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img draggable=\"false\" style=\"object-position:50% 50%\" src=\"https://cdn.sanity.io/images/g3iqis9e/production/79f950fb881fc8dba3e3d5d24ac1c15ed535b8c5-5178x3452.jpg?h=400&amp;fit=max\" alt=\"Bilde av to studenter som studerer \" class=\"rounded-t-lg object-cover w-full h-44\">",
+          "target": [
+            "#carousel2 > .w-\\[70vw\\].md\\:w-72.min-w-\\[70vw\\] > .grow.rounded-t-lg[target=\"_self\"] > .relative.h-fit > .h-44.object-cover[draggable=\"false\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"text-superTitle font-light text-base-black leading-tight md:leading-snug text-base-black text-xs\"><!---->Førde &amp; Sogndal<!----></p>",
+          "target": [
+            "#carousel2 > .w-\\[70vw\\].md\\:w-72.min-w-\\[70vw\\] > .grow.rounded-t-lg[target=\"_self\"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\\:leading-snug.text-xs"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"pt-2 px-2 pb-2 flex flex-col grow\"><!--[--><h4 class=\"text-headline_4 font-normal text-base-black leading-relaxed md:leading-relaxed align-text-top text-gray-700 text-sm leading-tight line-clamp-2 py-0\"><!---->Ny student i Sogndal eller Førde?<!----></h4><!--]--> <!--[!--><!--]--></div>",
+          "target": [
+            "#carousel2 > .w-\\[70vw\\].md\\:w-72.min-w-\\[70vw\\] > .grow.rounded-t-lg[target=\"_self\"] > .pt-2.pb-2.px-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"text-superTitle font-light text-base-black leading-tight md:leading-snug text-base-black text-xs\"><!---->Bergen<!----></p>",
+          "target": [
+            "#carousel3 > .w-\\[70vw\\].md\\:w-72.min-w-\\[70vw\\] > .grow.rounded-t-lg[target=\"_self\"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\\:leading-snug.text-xs"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"pt-2 px-2 pb-2 flex flex-col grow\"><!--[--><h4 class=\"text-headline_4 font-normal text-base-black leading-relaxed md:leading-relaxed align-text-top text-gray-700 text-sm leading-tight line-clamp-2 py-0\"><!---->Gjenbruksfestivalen<!----></h4><!--]--> <!--[!--><!--]--></div>",
+          "target": [
+            "#carousel3 > .w-\\[70vw\\].md\\:w-72.min-w-\\[70vw\\] > .grow.rounded-t-lg[target=\"_self\"] > .pt-2.pb-2.px-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img draggable=\"false\" style=\"object-position:50% 50%\" src=\"https://cdn.sanity.io/images/g3iqis9e/production/c93bc8047f855db72b80e81eeda96856fd2c1be2-1252x838.png?h=400&amp;fit=max\" alt=\"Gjenbruksfestivalen 2026 \" class=\"rounded-t-lg object-cover w-full h-44\">",
+          "target": [
+            "img[alt=\"Gjenbruksfestivalen 2026 \"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"text-superTitle font-light text-base-black leading-tight md:leading-snug text-base-black text-xs\"><!---->Bergen<!----></p>",
+          "target": [
+            "#carousel4 > .w-\\[70vw\\].md\\:w-72.min-w-\\[70vw\\] > .grow.rounded-t-lg[target=\"_self\"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\\:leading-snug.text-xs"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"pt-2 px-2 pb-2 flex flex-col grow\">",
+          "target": [
+            "#carousel4 > .w-\\[70vw\\].md\\:w-72.min-w-\\[70vw\\] > .grow.rounded-t-lg[target=\"_self\"] > .pt-2.pb-2.px-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"text-superTitle font-light text-base-black leading-tight md:leading-snug text-base-black text-xs\"><!---->Bergen<!----></p>",
+          "target": [
+            "#carousel5 > .w-\\[70vw\\].md\\:w-72.min-w-\\[70vw\\] > .grow.rounded-t-lg[target=\"_self\"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\\:leading-snug.text-xs"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"pt-2 px-2 pb-2 flex flex-col grow\"><!--[--><h4 class=\"text-headline_4 font-normal text-base-black leading-relaxed md:leading-relaxed align-text-top text-gray-700 text-sm leading-tight line-clamp-2 py-0\"><!---->Studenttorg i Grieghallen<!----></h4><!--]--> <!--[!--><!--]--></div>",
+          "target": [
+            "#carousel5 > .w-\\[70vw\\].md\\:w-72.min-w-\\[70vw\\] > .grow.rounded-t-lg[target=\"_self\"] > .pt-2.pb-2.px-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div tabindex=\"-1\" id=\"carousel6\" class=\"first:pl-1 pt-0 pb-1 last:pr-1 carousel-item\">",
+          "target": [
+            "#carousel6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div tabindex=\"-1\" id=\"carousel7\" class=\"first:pl-1 pt-0 pb-1 last:pr-1 carousel-item\">",
+          "target": [
+            "#carousel7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div tabindex=\"-1\" id=\"carousel8\" class=\"first:pl-1 pt-0 pb-1 last:pr-1 carousel-item\">",
+          "target": [
+            "#carousel8"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div tabindex=\"-1\" id=\"carousel9\" class=\"first:pl-1 pt-0 pb-1 last:pr-1 carousel-item\">",
+          "target": [
+            "#carousel9"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div tabindex=\"-1\" id=\"carousel10\" class=\"first:pl-1 pt-0 pb-1 last:pr-1 carousel-item\">",
+          "target": [
+            "#carousel10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h4 class=\"text-headline_4 font-normal text-base-black leading-relaxed md:leading-relaxed align-text-top text-base-white !font-bold pb-4\"><!---->Tjenester<!----></h4>",
+          "target": [
+            "div:nth-child(1) > .\\!font-bold.pb-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Bolig<!----><!----></div>",
+          "target": [
+            "a[href$=\"bolig\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Studentliv<!----><!----></div>",
+          "target": [
+            "a[href$=\"studentliv\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Karriere<!----><!----></div>",
+          "target": [
+            "a[href$=\"karriere\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Trening<!----><!----></div>",
+          "target": [
+            "a[href$=\"trening\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Helse<!----><!----></div>",
+          "target": [
+            "a[href$=\"helse\"]:nth-child(5) > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Barnehage<!----><!----></div>",
+          "target": [
+            "a[href$=\"barnehage\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Mat og drikke<!----><!----></div>",
+          "target": [
+            "a[href$=\"mat-og-drikke\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Psykisk helse<!----><!----></div>",
+          "target": [
+            "a[href$=\"psykisk-helse\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed text-base-white svelte-nqw3qe\"><!---->Studentgoder<!----><!----></div>",
+          "target": [
+            "a[href$=\"studentgoder\"] > .text-base-white.svelte-nqw3qe.text-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"pt-4 md:pt-0 md:pl-2\">",
+          "target": [
+            ".md\\:pt-0.md\\:pl-2.pt-4:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"pt-4 md:pt-0 md:pl-2\">",
+          "target": [
+            ".md\\:pt-0.md\\:pl-2.pt-4:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div><div id=\"\" class=\"text-body font-light text-base-black leading-relaxed md:leading-relaxed grow-0 text-base-white svelte-nqw3qe\"><!---->Studentsamskipnaden på Vestlandet<!----></div><!----></div>",
+          "target": [
+            ".border-t > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/no/om-sammen/personvern\" target=\"_self\" class=\"flex items-center gap-3 w-fit h-fit border-b border-base-white\">",
+          "target": [
+            "a[href$=\"personvern\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"flex justify-end\"><img src=\"/klima.png\" alt=\"Klimapartner\"></div>",
+          "target": [
+            ".flex-grow.md\\:max-w-\\[1200px\\].w-full > .justify-end.flex"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

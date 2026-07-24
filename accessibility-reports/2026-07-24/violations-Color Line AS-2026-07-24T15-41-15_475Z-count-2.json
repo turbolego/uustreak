@@ -1,0 +1,82 @@
+{
+  "project": "Color Line AS",
+  "timestamp": "2026-07-24T15:41:15.477Z",
+  "url": "https://www.colorline.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav>",
+          "target": [
+            ".wrapper.bg-white > .h-\\(--navbar-mobile-height\\).md\\:h-\\(--navbar-desktop-height\\).py-24 > .flex-wrap.gap-12.justify-between > .justify-end.gap-10[data-controller=\"deviation-status\"] > nav"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<div class=\"cl-skip-links\">\n            <a href=\"#mainContent\">Gå til hovedinnholdet</a>\n    </div>",
+          "target": [
+            ".cl-skip-links"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/\" class=\"logo\">\n    <img src=\"/build/images/color_line_logo_horizontal.svg\" alt=\"Color Line logo\" class=\"h-auto w-128 md:w-170\">\n</a>",
+          "target": [
+            ".wrapper.bg-white > .h-\\(--navbar-mobile-height\\).md\\:h-\\(--navbar-desktop-height\\).py-24 > .flex-wrap.gap-12.justify-between > .logo[href=\"/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"flex justify-center lg:justify-start gap-8 mt-40\">",
+          "target": [
+            ".lg\\:justify-start"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>\n                    <div class=\"caption\">\n                <p class=\"m-0\">Color Line ©2026</p>\n            </div>\n        \n            </div>",
+          "target": [
+            ".md\\:flex-row-reverse > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.colorline.no/webchat?chat=sailings&lang=no\" class=\"    button button-primary button-medium button-pill\n fixed bottom-16 right-16 h-52 w-52 bg-primary-base-700 hover:bg-primary-base-800 z-(--z-index-chat-btn)\" aria-label=\"Chat\">",
+          "target": [
+            ".button-pill"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

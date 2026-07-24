@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-07-24T12:46:32.469Z
+**Timestamp:** 2026-07-24T15:43:32.844Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 7
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
 - **Count:** 1
 
@@ -22,7 +22,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
 - **Count:** 1
 
@@ -34,25 +34,25 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 7
 
 #### Affected Elements:
 
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(14) > h5`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(32) > h5`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(36) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52) > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(64) > h5`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(68) > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(69) > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(67) > h5`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(71) > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(72) > h5`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -64,7 +64,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 1
 
@@ -76,13 +76,19 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 131
+- **Count:** 134
 
 #### Affected Elements:
 
 - `h1`
+- `div[title="Lier: Livløs person funnet"] > h2`
+- `time[datetime="2026-07-24T14:59:08.000Z"]`
+- `#notice-10454318 > .content > h2`
+- `time[datetime="2026-07-24T14:37:02.000Z"]`
+- `div[title="Nord-Irland: Fant bilbombe"] > h2`
+- `time[datetime="2026-07-24T14:35:39.000Z"]`
 - `#notice-10453589 > .content > h2`
 - `time[datetime="2026-07-24T08:59:14.000Z"]`
 - `#notice-10453535 > .content > h2`
@@ -117,18 +123,18 @@
 - `time[datetime="2026-07-23T05:39:47.000Z"]`
 - `div[title="Krepsepest i Drammenselva"] > h2`
 - `time[datetime="2026-07-22T19:35:24.000Z"]`
-- `div[title="Lier: Mulig drukningsulykke"] > h2`
-- `time[datetime="2026-07-22T18:41:03.000Z"]`
-- `#notice-10451782 > .content > h2`
-- `time[datetime="2026-07-22T18:11:30.000Z"]`
-- `#notice-10451777 > .content > h2`
-- `time[datetime="2026-07-22T17:14:05.000Z"]`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
-- `.row.large-12.small-12:nth-child(6)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(6)`
 - `.row.large-12.small-12:nth-child(7)`
 - `.row.large-12.small-12:nth-child(8)`
+- `.row.large-12.small-12:nth-child(9)`
+- `.row.large-12.small-12:nth-child(11)`
+- `#article_list_10372156 > .content > .lab-scrollbox-headline.headline[itemprop="headline"]`
+- `#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x`
+- `.row.large-12.small-12:nth-child(13)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(14)`
 - `.bg-black.color_mobile_bg-black.lab-scrollbox-headline`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(1)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(2)`
@@ -147,12 +153,6 @@
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(13)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(14)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(15)`
-- `.row.large-12.small-12:nth-child(11)`
-- `#article_list_10372156 > .content > .lab-scrollbox-headline.headline[itemprop="headline"]`
-- `#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(13)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(14)`
-- `.row.large-12.small-12:nth-child(16)`
 - `#article_list_9904930 > .inner.fullwidthTarget.content`
 - `.row.large-12.small-12:nth-child(18)`
 - `.row.large-12.small-12:nth-child(19)`
@@ -166,11 +166,11 @@
 - `#article_list_10184114 > .content > .lab-scrollbox-headline.font-weight-normal.m-font-weight-normal`
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(29)`
-- `.color_mobile_no_bg_color.row.large-12:nth-child(31)`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(32)`
+- `.row.large-12.small-12:nth-child(31)`
+- `.row.large-12.small-12:nth-child(32)`
 - `.row.large-12.small-12:nth-child(33)`
-- `.row.large-12.small-12:nth-child(34)`
-- `.row.large-12.small-12:nth-child(36)`
+- `.color_mobile_no_bg_color.row.large-12:nth-child(34)`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(36)`
 - `.row.large-12.small-12:nth-child(37)`
 - `.row.large-12.small-12:nth-child(38)`
 - `.row.large-12.small-12:nth-child(39)`
@@ -189,6 +189,9 @@
 - `.row.large-12.small-12:nth-child(53)`
 - `.row.large-12.small-12:nth-child(54)`
 - `.row.large-12.small-12:nth-child(56)`
+- `.row.large-12.small-12:nth-child(57)`
+- `.row.large-12.small-12:nth-child(58)`
+- `.row.large-12.small-12:nth-child(59)`
 - `.t28.lab-scrollbox-headline.font-weight-normal`
 - `#markup_10453098 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="10453097"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
@@ -202,23 +205,23 @@
 - `article[data-instance="10440429"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
 - `#markup_10440438 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="10440437"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `.row.large-12.small-12:nth-child(58)`
-- `.row.large-12.small-12:nth-child(59)`
-- `.row.large-12.small-12:nth-child(60)`
 - `.row.large-12.small-12:nth-child(61)`
+- `.row.large-12.small-12:nth-child(62)`
 - `.row.large-12.small-12:nth-child(63)`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(64)`
-- `.row.large-12.small-12:nth-child(65)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(67)`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(68)`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(69)`
+- `.row.large-12.small-12:nth-child(64)`
+- `.row.large-12.small-12:nth-child(66)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(67)`
+- `.row.large-12.small-12:nth-child(68)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(70)`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(71)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(72)`
 - `.powered-by`
 
 ### Scrollable region must have keyboard access
 
 - **Impact:** serious
-- **Description:** Ensure elements that have scrollable content are accessible by keyboard
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright
+- **Description:** Ensure elements that have scrollable content are accessible by keyboard in Safari
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/scrollable-region-focusable?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
 - **Count:** 1
 
