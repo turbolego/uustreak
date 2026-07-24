@@ -930,27 +930,55 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Checkout published site snapshot
-        uses: actions/checkout@v6
-        with:
-          ref: gh-pages
-          path: gh-pages-fallback
-          fetch-depth: 1
-
-      - name: Validate gh-pages seed checkout
+      - name: Fetch gh-pages index files (sparse)
         run: |
-          if [ ! -d "gh-pages-fallback" ]; then
-            echo "❌ gh-pages fallback checkout directory is missing"
+          # Only download the small index files needed to build site-output incrementally.
+          # This avoids fetching the ~90 000 historical violation JSON files (~300-600 MB).
+          rm -rf gh-pages-sparse
+          mkdir gh-pages-sparse
+          cd gh-pages-sparse
+
+          git init -q
+          git remote add origin \
+            "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+
+          # Blobless fetch: downloads commit + tree objects only, no file content yet
+          git fetch --depth=1 --filter=blob:none --no-tags -q origin gh-pages
+
+          # Cone-mode sparse checkout: only materialise historical-data/ on disk
+          git sparse-checkout init --cone
+          git sparse-checkout set historical-data
+
+          git checkout FETCH_HEAD
+
+          # Fetch archive_index.json by triggering a single lazy blob download.
+          # The archives/ directory itself is intentionally excluded to avoid the large tar.gz files.
+          mkdir -p accessibility-reports/archives
+          git show FETCH_HEAD:accessibility-reports/archives/archive_index.json \
+            > accessibility-reports/archives/archive_index.json 2>/dev/null \
+            || echo "⚠️  archive_index.json not found on gh-pages; will be created fresh"
+
+          cd ..
+          echo "✅ Sparse gh-pages fetch complete"
+          echo "Files fetched: $(find gh-pages-sparse -type f | wc -l)"
+          du -sh gh-pages-sparse 2>/dev/null || true
+
+      - name: Validate gh-pages sparse seed
+        run: |
+          if [ ! -d "gh-pages-sparse" ]; then
+            echo "❌ gh-pages-sparse directory is missing"
             exit 1
           fi
 
-          if [ ! -f "gh-pages-fallback/historical-data/report-list.json" ]; then
-            echo "❌ gh-pages fallback is missing historical-data/report-list.json"
+          if [ ! -f "gh-pages-sparse/historical-data/report-list.json" ]; then
+            echo "❌ gh-pages-sparse is missing historical-data/report-list.json"
             echo "Refusing to continue to avoid accidental history wipe"
             exit 1
           fi
 
-          echo "✅ gh-pages fallback checkout validated"
+          echo "✅ gh-pages sparse seed validated"
+          echo "  Files: $(find gh-pages-sparse -type f | wc -l)"
+          echo "  Size:  $(du -sh gh-pages-sparse 2>/dev/null | cut -f1)"
 
       - name: Check disk space and pre-clean runner caches
         run: |
@@ -963,10 +991,7 @@ jobs:
           rm -rf "$HOME/.cache/ms-playwright" "${RUNNER_TEMP:-/tmp}/ms-playwright-*" 2>/dev/null || true
           # pip caches (macOS/Linux)
           rm -rf "$HOME/Library/Caches/pip" "$HOME/.cache/pip" 2>/dev/null || true
-          # Remove stale workspace folders from prior runs
-          # NOTE: do NOT remove gh-pages-fallback here — it was just checked out above and is
-          # needed by the "Backfill missing legacy seed data" step that runs after this one.
-          # It is cleaned up at the end of the job in the "Cleanup runner workspace" step.
+          # Remove stale publish worktree from prior runs (sparse seed is managed by its own step)
           rm -rf "$GITHUB_WORKSPACE/gh-pages-publish" 2>/dev/null || true
           # Homebrew caches (macOS)
           if command -v brew >/dev/null 2>&1; then
@@ -978,11 +1003,13 @@ jobs:
           fi
           echo "=== Disk usage after pre-clean ==="
           df -h || true
-          # Fail fast if less than 10 GB free (in 1 KB blocks)
+          # Fail fast if less than 20 GB free (in 1 KB blocks).
+          # 20 GB is the recommended minimum; deploy peaks at ~1 GB but macOS can
+          # kill processes under sustained disk pressure when headroom is too small.
           FREE_KB=$(df -Pk . | awk 'NR==2 {print $4}')
-          MIN_FREE_KB=$((10 * 1024 * 1024))
+          MIN_FREE_KB=$((20 * 1024 * 1024))
           if [ -n "$FREE_KB" ] && [ "$FREE_KB" -lt "$MIN_FREE_KB" ]; then
-            echo "❌ Less than 10 GB free on runner — aborting to avoid partial deploy."
+            echo "❌ Less than 20 GB free on runner — aborting to avoid partial deploy."
             exit 1
           fi
 
@@ -1018,26 +1045,12 @@ jobs:
           name: merged-summary
           path: merged-summaries
 
-      - name: Backfill missing legacy seed data
-        run: |
-          mkdir -p pages-seed
-          cp -R gh-pages-fallback/* pages-seed/ 2>/dev/null || true
-          if [ ! -f "pages-seed/playwright-reports/index.json" ] && [ -d "gh-pages-fallback/playwright-reports" ]; then
-            cp -R gh-pages-fallback/playwright-reports pages-seed/
-          fi
-          if [ ! -f "pages-seed/historical-data/invalid-urls/index.json" ] && [ -d "gh-pages-fallback/historical-data/invalid-urls" ]; then
-            mkdir -p pages-seed/historical-data
-            cp -R gh-pages-fallback/historical-data/invalid-urls pages-seed/historical-data/
-          fi
-          if [ ! -f "pages-seed/issues-markdown/index.json" ] && [ -d "gh-pages-fallback/issues-markdown" ]; then
-            cp -R gh-pages-fallback/issues-markdown pages-seed/
-          fi
       - name: Build Pages site from artifacts
         run: |
           node js/build-pages-site.js
         env:
           SOURCE_DIR: ${{ github.workspace }}
-          GH_PAGES_SEED_DIR: ${{ github.workspace }}/pages-seed
+          GH_PAGES_SEED_DIR: ${{ github.workspace }}/gh-pages-sparse
           ARTIFACTS_DIR: ${{ github.workspace }}/artifacts
           MERGED_SUMMARY_DIR: ${{ github.workspace }}/merged-summaries
           INVALID_URLS_DIR: ${{ github.workspace }}/invalid-urls-artifacts
@@ -1184,12 +1197,13 @@ jobs:
               siteBaseUrl: 'https://turbolego.github.io/uustreak'
             })
 
-      - name: Publish site-output to gh-pages branch
+      - name: Publish incrementally to gh-pages branch
         run: |
           set -euo pipefail
           git config user.email "github-actions@github.com"
           git config user.name "GitHub Actions"
 
+          CURRENT_DATE=$(date +%Y-%m-%d)
           PUBLISH_DIR="${RUNNER_TEMP:-/tmp}/gh-pages-publish-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT:-1}"
           rm -rf "$PUBLISH_DIR"
 
@@ -1204,7 +1218,8 @@ jobs:
           }
           trap cleanup_publish_worktree EXIT
 
-          # Keep fetch footprint minimal for persistent runners under storage pressure
+          # Blobless fetch: only tree objects are downloaded; historical violation file
+          # blobs are never fetched because we do not access those paths.
           git fetch --no-tags --depth=1 --filter=blob:none origin gh-pages || true
 
           if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
@@ -1215,44 +1230,121 @@ jobs:
             git -C "$PUBLISH_DIR" rm -rf . 2>/dev/null || true
           fi
 
-          # Debug: Check site-output exists before rsync
-          if [ -d "site-output" ]; then
-            echo "✓ site-output directory found ($(du -sh site-output 2>/dev/null | cut -f1))"
-            ls -la site-output/ | head -10
-          else
+          if [ ! -d "site-output" ]; then
             echo "❌ site-output directory NOT FOUND in $(pwd)"
             ls -la
             exit 1
           fi
+          echo "✓ site-output: $(du -sh site-output 2>/dev/null | cut -f1)"
 
-          echo "Running rsync to copy site-output to $PUBLISH_DIR..."
-          # Don't pipe rsync output - piping causes SIGPIPE when head closes pipe, making rsync exit with code 20
-          rsync -a --delete site-output/ "$PUBLISH_DIR/"
-          RSYNC_EXIT=$?
-          
-          # Verify rsync succeeded
-          if [ $RSYNC_EXIT -ne 0 ]; then
-            echo "❌ rsync failed with exit code $RSYNC_EXIT"
-            ls -la "$PUBLISH_DIR/" | head -20
-            exit 1
-          fi
-          
-          if [ ! -f "$PUBLISH_DIR/index.html" ]; then
-            echo "❌ rsync failed - index.html not found in $PUBLISH_DIR after rsync"
-            ls -la "$PUBLISH_DIR/" | head -20
-            exit 1
-          fi
-          echo "✓ rsync completed successfully"
-          
-          rm -rf "$PUBLISH_DIR/gh-pages-publish"
+          # ── 1. Static site files (HTML, CSS, JS, assets) ────────────────────
+          echo "Syncing static site files..."
+          find site-output -maxdepth 1 -type f \( \
+            -name "*.html" -o -name "*.ico" -o -name "site.webmanifest" \
+            -o -name "styles.css" -o -name "projects.json" -o -name "results.json" \
+            -o -name "test-results.json" -o -name "README.md" \
+          \) -exec cp -f {} "$PUBLISH_DIR/" \;
+          for dir in assets js; do
+            if [ -d "site-output/$dir" ]; then
+              rm -rf "$PUBLISH_DIR/$dir"
+              cp -R "site-output/$dir" "$PUBLISH_DIR/$dir"
+            fi
+          done
 
-          if [ ! -f "$PUBLISH_DIR/historical-data/report-list.json" ]; then
-            echo "❌ report-list.json is missing from the publish root"
-            find "$PUBLISH_DIR" -maxdepth 3 -type f -name 'report-list.json' | sort || true
-            exit 1
+          # ── 2. Today's violation reports ─────────────────────────────────────
+          echo "Syncing today's violation reports ($CURRENT_DATE)..."
+          if [ -d "site-output/accessibility-reports/$CURRENT_DATE" ]; then
+            rm -rf "$PUBLISH_DIR/accessibility-reports/$CURRENT_DATE"
+            mkdir -p "$PUBLISH_DIR/accessibility-reports"
+            cp -R "site-output/accessibility-reports/$CURRENT_DATE" \
+              "$PUBLISH_DIR/accessibility-reports/$CURRENT_DATE"
           fi
 
+          # ── 3. Updated metadata index files ──────────────────────────────────
+          echo "Syncing index files..."
+          mkdir -p "$PUBLISH_DIR/historical-data"
+          mkdir -p "$PUBLISH_DIR/accessibility-reports/archives"
+          for f in \
+            "historical-data/report-list.json" \
+            "historical-data/streak-index.json"; do
+            [ -f "site-output/$f" ] && cp "site-output/$f" "$PUBLISH_DIR/$f"
+          done
+          [ -f "site-output/accessibility-reports/archives/archive_index.json" ] && \
+            cp "site-output/accessibility-reports/archives/archive_index.json" \
+               "$PUBLISH_DIR/accessibility-reports/archives/"
+
+          # ── 4. Today's archive ────────────────────────────────────────────────
+          echo "Syncing today's archive..."
+          ARCHIVE_SRC="site-output/accessibility-reports/archives/reports_${CURRENT_DATE}.tar.gz"
+          [ -f "$ARCHIVE_SRC" ] && \
+            cp "$ARCHIVE_SRC" "$PUBLISH_DIR/accessibility-reports/archives/"
+
+          # ── 5. Today's daily summary ──────────────────────────────────────────
+          echo "Syncing today's summary..."
+          SUMMARY_SRC="site-output/accessibility-reports/summaries/$CURRENT_DATE"
+          if [ -d "$SUMMARY_SRC" ]; then
+            rm -rf "$PUBLISH_DIR/accessibility-reports/summaries/$CURRENT_DATE"
+            mkdir -p "$PUBLISH_DIR/accessibility-reports/summaries"
+            cp -R "$SUMMARY_SRC" \
+              "$PUBLISH_DIR/accessibility-reports/summaries/$CURRENT_DATE"
+          fi
+
+          # ── 6. Playwright reports for today ───────────────────────────────────
+          echo "Syncing playwright reports..."
+          PW_SRC="site-output/playwright-reports/$CURRENT_DATE"
+          if [ -d "$PW_SRC" ]; then
+            rm -rf "$PUBLISH_DIR/playwright-reports/$CURRENT_DATE"
+            mkdir -p "$PUBLISH_DIR/playwright-reports"
+            cp -R "$PW_SRC" "$PUBLISH_DIR/playwright-reports/$CURRENT_DATE"
+          fi
+          # Merge today's playwright index entries into the existing gh-pages index
+          # (preserves historical entries rather than replacing with today-only)
+          if [ -f "site-output/playwright-reports/index.json" ]; then
+            mkdir -p "$PUBLISH_DIR/playwright-reports"
+            if [ -f "$PUBLISH_DIR/playwright-reports/index.json" ]; then
+              node -e "
+                const a = JSON.parse(require('fs').readFileSync('$PUBLISH_DIR/playwright-reports/index.json','utf8'));
+                const b = JSON.parse(require('fs').readFileSync('site-output/playwright-reports/index.json','utf8'));
+                const merged = [...new Set([...a,...b])].sort();
+                require('fs').writeFileSync('$PUBLISH_DIR/playwright-reports/index.json', JSON.stringify(merged));
+              " 2>/dev/null || \
+                cp "site-output/playwright-reports/index.json" \
+                   "$PUBLISH_DIR/playwright-reports/index.json"
+            else
+              cp "site-output/playwright-reports/index.json" \
+                 "$PUBLISH_DIR/playwright-reports/index.json"
+            fi
+          fi
+
+          # ── 7. Issues markdown (always fully regenerated) ─────────────────────
+          echo "Syncing issues-markdown..."
+          if [ -d "site-output/issues-markdown" ]; then
+            mkdir -p "$PUBLISH_DIR/issues-markdown"
+            rsync -a --delete \
+              "site-output/issues-markdown/" "$PUBLISH_DIR/issues-markdown/"
+          fi
+
+          # ── 8. Invalid-URLs index ─────────────────────────────────────────────
+          echo "Syncing invalid-urls..."
+          if [ -d "site-output/historical-data/invalid-urls" ]; then
+            mkdir -p "$PUBLISH_DIR/historical-data/invalid-urls"
+            rsync -a \
+              "site-output/historical-data/invalid-urls/" \
+              "$PUBLISH_DIR/historical-data/invalid-urls/"
+          fi
+
+          # Sanity checks before committing
           touch "$PUBLISH_DIR/.nojekyll"
+          if [ ! -f "$PUBLISH_DIR/index.html" ]; then
+            echo "❌ index.html not found after incremental copy"
+            exit 1
+          fi
+          if [ ! -f "$PUBLISH_DIR/historical-data/report-list.json" ]; then
+            echo "❌ report-list.json missing from publish root"
+            exit 1
+          fi
+          echo "✓ Incremental copy complete"
+
           if [ -n "$(git -C "$PUBLISH_DIR" status --porcelain)" ]; then
             git -C "$PUBLISH_DIR" add -A
             git -C "$PUBLISH_DIR" commit -m "Deploy site for ${GITHUB_SHA}"
@@ -1276,9 +1368,7 @@ jobs:
             fi
 
             echo "✅ Published updated site to gh-pages"
-          fi
-
-          if [ -z "$(git -C "$PUBLISH_DIR" status --porcelain)" ]; then
+          else
             echo "No changes to publish"
           fi
 
@@ -1290,7 +1380,7 @@ jobs:
           echo "=== Cleaning up runner workspace after deploy ==="
           echo "Disk usage before cleanup:"
           df -h . || true
-          rm -rf gh-pages-fallback gh-pages-publish pages-seed site-output artifacts merged-summaries invalid-urls-artifacts 2>/dev/null || true
+          rm -rf gh-pages-sparse gh-pages-publish site-output artifacts merged-summaries invalid-urls-artifacts 2>/dev/null || true
           rm -rf ~/.npm ~/.cache/npm /tmp/npm-cache-* /tmp/npm-prefix-* 2>/dev/null || true
           rm -rf node_modules venv "${RUNNER_TEMP:-/tmp}/ms-playwright-*" 2>/dev/null || true
           echo "Disk usage after cleanup:"
