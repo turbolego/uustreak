@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting Windows 98</title>
+    <meta http-equiv="refresh" content="2; url=login.html">
+    <style>
+        :root {
+            color-scheme: dark;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: radial-gradient(circle at top, #1b1b2f 0%, #06060b 55%, #000 100%);
+            color: #d7fff8;
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+
+        .splash {
+            width: min(92vw, 760px);
+            border: 2px solid #46e6d1;
+            background: linear-gradient(180deg, rgba(10, 18, 24, 0.96), rgba(4, 7, 11, 0.98));
+            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.65), 0 0 30px rgba(70, 230, 209, 0.25);
+            padding: 2rem;
+        }
+
+        h1 {
+            margin: 0 0 0.75rem;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(70, 230, 209, 0.65);
+        }
+
+        p {
+            margin: 0.5rem 0;
+            line-height: 1.6;
+            color: #c6f8f0;
+        }
+
+        .meter {
+            margin-top: 1.5rem;
+            border: 1px solid rgba(70, 230, 209, 0.5);
+            background: rgba(255, 255, 255, 0.04);
+            padding: 0.5rem;
+        }
+
+        .bar {
+            width: 100%;
+            height: 18px;
+            overflow: hidden;
+            background: #091217;
+        }
+
+        .bar span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #46e6d1 0%, #a4fff1 50%, #46e6d1 100%);
+            transform-origin: left center;
+            transform: scaleX(0.15);
+            animation: fill 2s ease-in-out forwards;
+        }
+
+        .meta {
+            margin-top: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+            color: #8edfd2;
+        }
+
+        @keyframes fill {
+            to {
+                transform: scaleX(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="splash" aria-labelledby="splash-title">
+        <h1 id="splash-title">Uustreak Setup CD</h1>
+        <p>Microsoft Windows 98</p>
+        <p>Initializing CD-ROM drive... OK</p>
+        <p>Loading Uustreak system... OK</p>
+        <p>Starting Explorer shell... OK</p>
+        <p>Please wait...</p>
+        <div class="meter" aria-hidden="true">
+            <div class="bar"><span></span></div>
+        </div>
+        <div class="meta">
+            <span>Booting Windows 98 shell...</span>
+            <span>Redirecting to login...</span>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,22 +1,10 @@
 # WCAG Violations Report for Bouvet Norge
 
-**Timestamp:** 2026-07-08T03:17:03.771Z
-**URL:** [https://www.bouvet.no/](https://www.bouvet.no/)
-**Total Violations:** 8
+**Timestamp:** 2026-07-24T12:41:54.142Z
+**URL:** [https://www.bouvet.no/#](https://www.bouvet.no/#)
+**Total Violations:** 6
 
 ## Violation Details
-
-### Elements must only use permitted ARIA attributes
-
-- **Impact:** serious
-- **Description:** Ensure ARIA attributes are not prohibited for an element's role
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#widget2, #movie_player`
 
 ### Certain ARIA roles must contain particular children
 
@@ -29,18 +17,6 @@
 #### Affected Elements:
 
 - `div[role="grid"]`
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#widget2, .ytmVideoInfoChannelAvatar`
 
 ### Frames must have an accessible name
 
@@ -99,7 +75,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 41
+- **Count:** 38
 
 #### Affected Elements:
 
@@ -119,7 +95,7 @@
 - `section`
 - `.section-bottom-space.container-flex-justify-center.util-flex-row`
 - `.part-container[data-portal-component-type="part"]:nth-child(7) > .util-flex-column-large.util-flex-row-small.collapsible__button`
-- `.block-bottom-space.util-container-padding.util-flex-column`
+- `.block-bottom-space.util-flex-column`
 - `div[role="grid"] > .course-calendar-wrap-row\.is-head`
 - `div[role="grid"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-name`
 - `time[datetime="2026-08-19"]`
@@ -141,6 +117,3 @@
 - `.course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-name`
 - `.course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-date`
 - `.layout-container[data-portal-component-type="layout"]:nth-child(13)`
-- `#widget2, #player`
-- `#widget2, .ytmVideoInfoVideoTitleContainer`
-- `#widget2, .ytmVideoInfoOverlay`

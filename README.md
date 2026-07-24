@@ -33,6 +33,7 @@ Listen med de 278 nettsidene fra statusmålingen til uutilsynet i 2018 er brukt 
 * "Ski kommune" endret til "Nordre Follo kommune" pga. sammenslåingen i 2020
 * privat-omsorg.no er lagt ned og erstattet med bpa-nord.no
 * bergenclinics.no slått sammen med helse-bergen.no - [Bergensklinikkene er historie – Helse Bergen overtar](https://www.rusfeltet.no/arkiv/bergensklinikkene-er-historie-helse-bergen-overtar)
+* Nettsidene for Alta Ungdomsskole ble flyttet fra alta.ungdomsskole.no til underside av alta.kommune.no
 
 ![UUStreak - WCAG Accessibility Leaderboard](assets/uustreak.png)
 

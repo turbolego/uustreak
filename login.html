@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 98 Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: radial-gradient(circle at top, #2f6f79 0%, #0b3f49 60%, #061f28 100%);
+            font-family: "MS Sans Serif", Tahoma, Verdana, sans-serif;
+            color: #111;
+        }
+
+        .dialog {
+            width: min(90vw, 420px);
+            padding: 18px;
+            background: #c0c0c0;
+            border: 2px solid;
+            border-color: #ffffff #808080 #808080 #ffffff;
+            box-shadow: 2px 2px 0 #000;
+        }
+
+        .titlebar {
+            margin: -18px -18px 16px;
+            padding: 6px 10px;
+            background: linear-gradient(90deg, #000080 0%, #1084d0 100%);
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .dialog p {
+            margin: 0 0 12px;
+            line-height: 1.5;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        button {
+            border: 2px outset #fff;
+            background: #c0c0c0;
+            padding: 6px 14px;
+            cursor: pointer;
+            font: inherit;
+        }
+
+        button:active {
+            border-style: inset;
+        }
+    </style>
+</head>
+<body>
+    <main class="dialog" aria-labelledby="login-title">
+        <div class="titlebar" id="login-title">Windows 98 Login</div>
+        <p>User authentication is simulated for the CD-ROM shell. Select Continue to enter the desktop.</p>
+        <div class="actions">
+            <button type="button" onclick="window.location.href='desktop.html'">Continue</button>
+        </div>
+    </main>
+</body>
+</html>

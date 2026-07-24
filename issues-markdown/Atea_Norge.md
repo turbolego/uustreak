@@ -1,22 +1,22 @@
 # WCAG Violations Report for Atea Norge
 
-**Timestamp:** 2026-07-08T03:12:26.104Z
-**URL:** [https://www.atea.no/](https://www.atea.no/)
-**Total Violations:** 7
+**Timestamp:** 2026-07-24T12:37:06.116Z
+**URL:** [https://www.atea.no/#](https://www.atea.no/#)
+**Total Violations:** 6
 
 ## Violation Details
 
-### Images must have alternative text
+### Elements must only use permitted ARIA attributes
 
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Impact:** serious
+- **Description:** Ensure ARIA attributes are not prohibited for an element's role
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `sleeknote-u06fr-bottom,sleeknote-form,img[draggable="true"][unselectable="on"][imagetype=""]`
+- `#videoLoop, #movie_player`
 
 ### Form elements should have a visible label
 
@@ -65,18 +65,6 @@
 #### Affected Elements:
 
 - `.page-body`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `sleeknote-u06fr-bottom,sleeknote-badge,.sleeknote-badge`
 
 ### All page content should be contained by landmarks
 

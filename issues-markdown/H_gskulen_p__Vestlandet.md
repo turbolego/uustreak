@@ -1,7 +1,7 @@
 # WCAG Violations Report for Høgskulen på Vestlandet
 
-**Timestamp:** 2026-07-08T03:39:19.071Z
-**URL:** [https://www.hvl.no/](https://www.hvl.no/)
+**Timestamp:** 2026-07-24T13:01:41.968Z
+**URL:** [https://www.hvl.no/#](https://www.hvl.no/#)
 **Total Violations:** 3
 
 ## Violation Details

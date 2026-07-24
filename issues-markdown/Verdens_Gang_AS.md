@@ -1,7 +1,7 @@
 # WCAG Violations Report for Verdens Gang AS
 
-**Timestamp:** 2026-07-08T03:38:49.058Z
-**URL:** [https://www.vg.no/](https://www.vg.no/)
+**Timestamp:** 2026-07-24T13:06:33.381Z
+**URL:** [https://www.vg.no/#](https://www.vg.no/#)
 **Total Violations:** 3
 
 ## Violation Details
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `._mastheadSearch_1x8em_144 > ._container_xqf44_5._fillTertiary_xqf44_16[action="https://www.vg.no/sok"] > input`
+- `._mastheadSearch_3rx69_136 > ._container_xqf44_5._fillTertiary_xqf44_16[action="https://www.vg.no/sok"] > input`
 
 ### Aside should not be contained in another landmark
 

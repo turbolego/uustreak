@@ -1,7 +1,7 @@
 # WCAG Violations Report for Fjord1 ASA
 
-**Timestamp:** 2026-07-08T03:31:24.152Z
-**URL:** [https://www.fjord1.no/](https://www.fjord1.no/)
+**Timestamp:** 2026-07-24T12:56:08.737Z
+**URL:** [https://www.fjord1.no/#](https://www.fjord1.no/#)
 **Total Violations:** 1
 
 ## Violation Details

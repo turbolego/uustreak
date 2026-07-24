@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-07-08T03:23:13.761Z
-**URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
+**Timestamp:** 2026-07-24T12:50:10.492Z
+**URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
 **Total Violations:** 5
 
 ## Violation Details
@@ -42,7 +42,7 @@
 #### Affected Elements:
 
 - `._logos_e3b6k_158 > a[href$="aftenbladet.no/"]`
-- `._logos_e3b6k_158 > a[target="_blank"][data-astro-cid-tz4ad4h2=""]`
+- `._logos_e3b6k_158 > a[target="_blank"][data-astro-cid-5km4f4xx=""]`
 
 ### Interactive controls must not be nested
 
@@ -54,9 +54,9 @@
 
 #### Affected Elements:
 
-- `track-element[data-track-id="teaser:113026"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
-- `track-element[data-track-id="teaser:113021"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
-- `track-element[data-track-id="teaser:112988"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
+- `audio-play-button[title="Haralds\a sommerfest"]`
+- `track-element[data-track-id="teaser:113144"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
+- `audio-play-button[title="Jannes\a sommerfest"]`
 
 ### All page content should be contained by landmarks
 

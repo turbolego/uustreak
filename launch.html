@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uustreak CD-ROM Launcher</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --desktop: #008080;
+            --window: #c0c0c0;
+            --shadow: #808080;
+            --highlight: #ffffff;
+            --title: #000080;
+            --title-alt: #1084d0;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(135deg, #005b5b 0%, var(--desktop) 48%, #0a3f3f 100%);
+            font-family: "MS Sans Serif", Tahoma, Verdana, sans-serif;
+            color: #111;
+        }
+
+        .window {
+            width: min(94vw, 760px);
+            background: var(--window);
+            border-width: 2px;
+            border-style: solid;
+            border-color: var(--highlight) var(--shadow) var(--shadow) var(--highlight);
+            box-shadow: 2px 2px 0 #000;
+        }
+
+        .titlebar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.45rem 0.6rem;
+            background: linear-gradient(90deg, var(--title) 0%, var(--title-alt) 100%);
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        .titlebar .badge {
+            font-size: 0.95rem;
+        }
+
+        .content {
+            padding: 1.1rem;
+        }
+
+        h1 {
+            margin: 0 0 0.75rem;
+            font-size: clamp(1.6rem, 4vw, 2.6rem);
+        }
+
+        p {
+            margin: 0.65rem 0;
+            line-height: 1.55;
+        }
+
+        .panel {
+            margin: 1rem 0;
+            padding: 0.9rem;
+            background: #dfdfdf;
+            border-width: 2px;
+            border-style: inset;
+            border-color: var(--shadow) var(--highlight) var(--highlight) var(--shadow);
+        }
+
+        .panel ul {
+            margin: 0.5rem 0 0;
+            padding-left: 1.2rem;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        button,
+        .link-button {
+            appearance: none;
+            border-width: 2px;
+            border-style: outset;
+            border-color: var(--highlight) var(--shadow) var(--shadow) var(--highlight);
+            background: var(--window);
+            color: #111;
+            font: inherit;
+            padding: 0.55rem 0.9rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        button:active,
+        .link-button:active {
+            border-style: inset;
+        }
+
+        .footer {
+            margin-top: 1rem;
+            padding-top: 0.8rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.18);
+            display: grid;
+            gap: 0.4rem;
+            font-size: 0.95rem;
+        }
+
+        .promo-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 1rem;
+        }
+
+        .promo-links a {
+            color: #0b3d91;
+        }
+
+        @media (max-width: 640px) {
+            .content {
+                padding: 0.9rem;
+            }
+
+            .buttons,
+            .promo-links {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            button,
+            .link-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="window" aria-labelledby="launcher-title">
+        <div class="titlebar">
+            <span class="badge">Uustreak Setup CD-ROM</span>
+            <span aria-hidden="true">_ □ ✕</span>
+        </div>
+        <div class="content">
+            <h1 id="launcher-title">Welcome to the Uustreak Disc</h1>
+            <p>This launcher keeps the classic CD-ROM feel while pointing you to the modern hosted app.</p>
+
+            <div class="panel">
+                <strong>What this disc contains</strong>
+                <ul>
+                    <li>The main WCAG leaderboard app in <code>index.html</code></li>
+                    <li>Trend and data views in <code>D3.html</code>, <code>D3trend.html</code>, <code>heatmap.html</code>, <code>trends.html</code>, and <code>all.html</code></li>
+                    <li>Validation and reporting scripts in <code>js/</code>, plus <code>generate_specs.py</code> and <code>playwright.config.ts</code></li>
+                    <li>Shared styles, assets, and project metadata in <code>styles.css</code>, <code>assets/</code>, <code>README.md</code>, and <code>projects.json</code></li>
+                </ul>
+            </div>
+
+            <div class="buttons" role="group" aria-label="Launcher actions">
+                <button type="button" onclick="window.location.href='./'">Open Uustreak Files</button>
+                <button type="button" onclick="window.open('README.md', '_blank', 'noopener')">Open README</button>
+                <button type="button" onclick="window.open('https://github.com/turbolego/uustreak', '_blank', 'noopener')">View GitHub Repo</button>
+            </div>
+
+            <div class="footer">
+                <div>GitHub CD-ROM promotion references:</div>
+                <div class="promo-links">
+                    <a href="https://www.linkedin.com/posts/order-your-public-repo-on-cd-rom-ugcPost-7478567676424982529-dCDL/" target="_blank" rel="noreferrer noopener">LinkedIn promotion post</a>
+                    <a href="https://gh.io/cd" target="_blank" rel="noreferrer noopener">gh.io/cd</a>
+                </div>
+                <div>If autorun is ignored, open this file directly from the disc root.</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

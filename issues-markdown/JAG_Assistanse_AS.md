@@ -1,7 +1,7 @@
 # WCAG Violations Report for JAG Assistanse AS
 
-**Timestamp:** 2026-07-08T03:40:28.802Z
-**URL:** [https://jagassistanse.no/](https://jagassistanse.no/)
+**Timestamp:** 2026-07-24T13:04:17.324Z
+**URL:** [https://jagassistanse.no/#](https://jagassistanse.no/#)
 **Total Violations:** 8
 
 ## Violation Details
@@ -30,8 +30,8 @@
 - `.jobb-right-inner > .left-align.banneromrade.section-heading-wrapper > ul > .ng-ul-li:nth-child(3)`
 - `.w-col-4.w-col:nth-child(1) > .ng-footer-text:nth-child(2) > .wp-block-paragraph`
 - `.w-col-4.w-col:nth-child(1) > .ng-footer-text:nth-child(4) > .wp-block-paragraph`
-- `.w-col-4.w-col:nth-child(2) > .ng-footer-text:nth-child(2) > .wp-block-paragraph`
-- `.w-col-4.w-col:nth-child(2) > .ng-footer-text:nth-child(4) > .wp-block-paragraph`
+- `a[href="tel:+4796209666"]`
+- `a[href="mailto:post@jagassistanse.no"]`
 - `#menu-item-1 > a`
 - `#menu-item-2 > a`
 - `#menu-item-3 > a`

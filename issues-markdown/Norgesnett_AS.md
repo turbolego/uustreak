@@ -1,8 +1,8 @@
 # WCAG Violations Report for Norgesnett AS
 
-**Timestamp:** 2026-07-08T03:11:28.781Z
+**Timestamp:** 2026-07-24T12:37:11.147Z
 **URL:** [https://norgesnett.no/](https://norgesnett.no/)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -22,18 +22,6 @@
 - `.e2-e55.is-current-slide.is-virtual:nth-child(7)`
 - `.e2-e65.is-virtual.x-slide:nth-child(8)`
 - `.e2-e75.is-virtual.x-slide:nth-child(9)`
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#main__simplifaiChatbotActivator--1OJ-o, button`
 
 ### Elements must meet minimum color contrast ratio thresholds
 

@@ -1,10 +1,22 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-07-08T03:44:01.486Z
-**URL:** [https://www.kid.no/](https://www.kid.no/)
+**Timestamp:** 2026-07-24T13:06:17.923Z
+**URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
 ## Violation Details
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `div:nth-child(8) > .hy.ex.ez > .f4.f5.b6 > .f6.f7.f8 > .f9.fa.fb > .fd.ch.cg > .eu.bi.br > .fg.fh.hz > .el.c.eu > .bq.cs.bs > .b7.c.bj > .i0.i1.fj:nth-child(1)`
 
 ### Heading levels should only increase by one
 
@@ -24,12 +36,13 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
-- `.kw`
-- `.l3:nth-child(2) > .l4.i0.i1 > .br > div > div > .ch.cg.et > .jm.gq.gr > .gt.gv.gw`
+- `.ch.cg.et > .ko.gq.gr > .gv.gw.gx`
+- `div:nth-child(8) > .hy.ex.ez > .f4.f5.b6 > .al.cn.eu > div > div > .ch.cg.et > .gs.gq.gr > .gv.gw.gx`
+- `.ln`
 
 ### Document should not have more than one banner landmark
 
@@ -49,25 +62,12 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
 - `#coiOverlay`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 3
-
-#### Affected Elements:
-
-- `.l3:nth-child(1) > .br > .l6.l7.l8 > .f8.f.go`
-- `.l3:nth-child(2) > .br > .l6.l7.l8 > .f8.f.go`
-- `.l6.l7.l8 > .f8.f[href$="sommerdyner"]`
+- `div:nth-child(2) > .h0.h1.h2 > .h9.h6.h7 > .al > .b[role="region"][aria-roledescription="carousel"]`
 
 ### All page content should be contained by landmarks
 

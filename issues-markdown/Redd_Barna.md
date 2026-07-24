@@ -1,7 +1,7 @@
 # WCAG Violations Report for Redd Barna
 
-**Timestamp:** 2026-07-08T03:16:07.533Z
-**URL:** [https://www.reddbarna.no/](https://www.reddbarna.no/)
+**Timestamp:** 2026-07-24T12:42:30.455Z
+**URL:** [https://www.reddbarna.no/#](https://www.reddbarna.no/#)
 **Total Violations:** 5
 
 ## Violation Details
@@ -48,13 +48,11 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
 - `.lib-link__link[rel=""] > .lib-link__img-wrap > .lib-link__featured-image[decoding="async"]`
-- `.wp-block-column.wp-block-column-is-layout-flow.is-layout-flow:nth-child(2) > .has-post-image.wp-block-lib-accentuated-link > .lib-link__link[rel="noreferrer noopener"][target="_blank"] > .lib-link__img-wrap > .lib-link__featured-image > img[decoding="async"]`
-- `.wp-block-column.wp-block-column-is-layout-flow.is-layout-flow:nth-child(3) > .has-post-image.wp-block-lib-accentuated-link > .lib-link__link[rel="noreferrer noopener"][target="_blank"] > .lib-link__img-wrap > .lib-link__featured-image > img[decoding="async"]`
 
 ### Elements should not have tabindex greater than zero
 

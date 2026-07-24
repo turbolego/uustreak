@@ -1,22 +1,23 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2026-07-08T03:21:48.777Z
-**URL:** [https://www.dalane-tidende.no/](https://www.dalane-tidende.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-07-24T12:46:50.147Z
+**URL:** [https://www.dalane-tidende.no/#](https://www.dalane-tidende.no/#)
+**Total Violations:** 5
 
 ## Violation Details
 
-### ARIA commands must have an accessible name
+### Elements must meet minimum color contrast ratio thresholds
 
 - **Impact:** serious
-- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #cbb`
+- `a[aria-label="Ledig stilling: Renholder"] > .jobad-wrapper > .ad-text > .ad-text_location`
+- `.swiper-slide-next > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
 
 ### Frames must have an accessible name
 
@@ -40,19 +41,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v2[data-slides="3"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#www\.dalane-tidende\.no\/toppbanner_1 > a[target="_blank"]`
+- `brick-carousel-v2[data-slides="5"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -77,4 +66,4 @@
 #### Affected Elements:
 
 - `amedia-username`
-- `#toppbanner-1-label`
+- `#toppbanner-1`
