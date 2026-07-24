@@ -964,7 +964,10 @@ jobs:
           # pip caches (macOS/Linux)
           rm -rf "$HOME/Library/Caches/pip" "$HOME/.cache/pip" 2>/dev/null || true
           # Remove stale workspace folders from prior runs
-          rm -rf "$GITHUB_WORKSPACE/gh-pages-fallback" "$GITHUB_WORKSPACE/gh-pages-publish" 2>/dev/null || true
+          # NOTE: do NOT remove gh-pages-fallback here — it was just checked out above and is
+          # needed by the "Backfill missing legacy seed data" step that runs after this one.
+          # It is cleaned up at the end of the job in the "Cleanup runner workspace" step.
+          rm -rf "$GITHUB_WORKSPACE/gh-pages-publish" 2>/dev/null || true
           # Homebrew caches (macOS)
           if command -v brew >/dev/null 2>&1; then
             brew cleanup -s || true
