@@ -54,7 +54,7 @@
     </section>
   </main>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.4/axe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.3/axe.min.js"></script>
 
   <script>
     const iframe = document.getElementById("testFrame");
@@ -122,12 +122,12 @@
         if (headMatch) {
           const headTagEnd = headMatch.index + headMatch[0].length;
           proxiedHTML = proxiedHTML.slice(0, headTagEnd) + 
-            `\n<base href="${url}">\n<script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.4/axe.min.js"><\/script>\n` + 
+            `\n<base href="${url}">\n<script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.3/axe.min.js"><\/script>\n` + 
             proxiedHTML.slice(headTagEnd);
           console.log('✅ Injected <base> tag and axe-core after <head>');
         } else {
           // Fallback: prepend to HTML
-          proxiedHTML = `<base href="${url}"><script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.4/axe.min.js"><\/script>\n` + proxiedHTML;
+          proxiedHTML = `<base href="${url}"><script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.3/axe.min.js"><\/script>\n` + proxiedHTML;
           console.log('⚠️ No <head> found, prepended <base> tag and axe-core');
         }
 
