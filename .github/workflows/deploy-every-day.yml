@@ -187,7 +187,7 @@ jobs:
           cp js/merge-summary-parts.js tests/
       - name: Upload invalid URLs files
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: invalid-urls-files
           path: invalid-urls-artifacts/
@@ -218,7 +218,7 @@ jobs:
         continue-on-error: true
       - name: Upload test results
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: test-results-batch-${{ matrix.batch }}
           path: |
@@ -242,7 +242,7 @@ jobs:
           node-version: '24'
           
       - name: Download all test artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           path: artifacts
           pattern: test-results-batch-*
@@ -297,7 +297,7 @@ jobs:
           fi
           
       - name: Upload Merged Summary
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: merged-summary-${{ github.run_id }}
           path: accessibility-reports/summaries/
@@ -338,18 +338,18 @@ jobs:
 
           echo "✅ gh-pages fallback checkout validated"
       - name: Download all artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           path: artifacts
           pattern: test-results-batch-*
           merge-multiple: true
       - name: Download merged summary artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: merged-summary-${{ github.run_id }}
           path: merged-summaries
       - name: Download invalid URLs files
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: invalid-urls-files
           path: invalid-urls-artifacts
