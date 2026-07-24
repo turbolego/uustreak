@@ -89,7 +89,7 @@ jobs:
 
       - name: Cache Playwright browser directory
         id: playwright-cache
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ${{ runner.temp }}/ms-playwright-setup
           key: ${{ runner.os }}-playwright-setup-${{ hashFiles('**/package-lock.json') }}
