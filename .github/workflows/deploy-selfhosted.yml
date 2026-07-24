@@ -723,6 +723,9 @@ jobs:
           TODAY=$(date +%Y-%m-%d)
           echo "Merging summaries for date: $TODAY"
           
+          # Clean up old summaries - only upload today's merged summary
+          rm -rf "accessibility-reports/summaries"
+          
           # Create target directory structure
           mkdir -p "accessibility-reports/summaries/$TODAY"
           
