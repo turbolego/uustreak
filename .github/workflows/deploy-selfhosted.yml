@@ -757,6 +757,9 @@ jobs:
             else
               echo "✗ Failed to create merged summary file"
             fi
+            
+            # Clean up part files - only keep the merged summary
+            rm -f "accessibility-reports/summaries/$TODAY/daily_summary_part_"*.json
           else
             echo "No summary parts found to merge"
           fi
