@@ -1223,9 +1223,17 @@ jobs:
           fi
 
           echo "Running rsync to copy site-output to $PUBLISH_DIR..."
-          rsync -a -v --delete site-output/ "$PUBLISH_DIR/" 2>&1 | head -20
+          # Don't pipe rsync output - piping causes SIGPIPE when head closes pipe, making rsync exit with code 20
+          rsync -a --delete site-output/ "$PUBLISH_DIR/"
+          RSYNC_EXIT=$?
           
           # Verify rsync succeeded
+          if [ $RSYNC_EXIT -ne 0 ]; then
+            echo "❌ rsync failed with exit code $RSYNC_EXIT"
+            ls -la "$PUBLISH_DIR/" | head -20
+            exit 1
+          fi
+          
           if [ ! -f "$PUBLISH_DIR/index.html" ]; then
             echo "❌ rsync failed - index.html not found in $PUBLISH_DIR after rsync"
             ls -la "$PUBLISH_DIR/" | head -20
