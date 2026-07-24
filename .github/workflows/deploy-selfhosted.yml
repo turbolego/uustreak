@@ -1003,13 +1003,13 @@ jobs:
           fi
           echo "=== Disk usage after pre-clean ==="
           df -h || true
-          # Fail fast if less than 20 GB free (in 1 KB blocks).
-          # 20 GB is the recommended minimum; deploy peaks at ~1 GB but macOS can
-          # kill processes under sustained disk pressure when headroom is too small.
+          # Fail fast if less than 5 GB free (in 1 KB blocks).
+          # 5 GB is the recommended minimum; deploy peaks at ~1.2 GB with sparse seed.
+          # macOS can kill processes under sustained disk pressure when headroom is too small.
           FREE_KB=$(df -Pk . | awk 'NR==2 {print $4}')
-          MIN_FREE_KB=$((20 * 1024 * 1024))
+          MIN_FREE_KB=$((5 * 1024 * 1024))
           if [ -n "$FREE_KB" ] && [ "$FREE_KB" -lt "$MIN_FREE_KB" ]; then
-            echo "❌ Less than 20 GB free on runner — aborting to avoid partial deploy."
+            echo "❌ Less than 5 GB free on runner — aborting to avoid partial deploy."
             exit 1
           fi
 
