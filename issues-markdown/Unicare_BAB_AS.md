@@ -1,7 +1,7 @@
 # WCAG Violations Report for Unicare BAB AS
 
-**Timestamp:** 2026-07-26T03:33:47.177Z
-**URL:** [https://unicare.no/](https://unicare.no/)
+**Timestamp:** 2026-07-26T13:43:59.969Z
+**URL:** [https://unicare.no/#](https://unicare.no/#)
 **Total Violations:** 7
 
 ## Violation Details
@@ -12,11 +12,12 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `#declineButton`
+- `iframe[width="100%"], body`
 - `#splide01-slide01`
 
 ### Frames must have an accessible name
@@ -37,10 +38,11 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
+- `.inner-content.odd > h3`
 - `article[data-articleid="2892"] > a[target="_self"] > .card-body > h3[itemprop="headline"]`
 - `article[data-articleid="2334"] > a[target="_self"] > .card-body > h3`
 

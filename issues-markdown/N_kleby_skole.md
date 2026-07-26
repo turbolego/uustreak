@@ -1,7 +1,7 @@
 # WCAG Violations Report for Nøkleby skole
 
-**Timestamp:** 2026-07-26T03:12:30.582Z
-**URL:** [https://www.fredrikstad.kommune.no/skoler/nokleby-skole/](https://www.fredrikstad.kommune.no/skoler/nokleby-skole/)
+**Timestamp:** 2026-07-26T13:40:08.552Z
+**URL:** [https://www.fredrikstad.kommune.no/skoler/nokleby-skole/#](https://www.fredrikstad.kommune.no/skoler/nokleby-skole/#)
 **Total Violations:** 2
 
 ## Violation Details

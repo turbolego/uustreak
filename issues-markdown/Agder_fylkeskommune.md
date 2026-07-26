@@ -1,7 +1,7 @@
 # WCAG Violations Report for Agder fylkeskommune
 
-**Timestamp:** 2026-07-26T03:07:07.688Z
-**URL:** [https://agderfk.no/](https://agderfk.no/)
+**Timestamp:** 2026-07-26T13:32:57.049Z
+**URL:** [https://agderfk.no/#](https://agderfk.no/#)
 **Total Violations:** 1
 
 ## Violation Details

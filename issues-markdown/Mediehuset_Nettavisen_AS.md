@@ -1,8 +1,8 @@
 # WCAG Violations Report for Mediehuset Nettavisen AS
 
-**Timestamp:** 2026-07-26T03:06:28.663Z
-**URL:** [https://www.nettavisen.no/](https://www.nettavisen.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-07-26T13:39:54.282Z
+**URL:** [https://www.nettavisen.no/#](https://www.nettavisen.no/#)
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -18,18 +18,6 @@
 
 - `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > h1`
 
-### Frames must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, iframe`
-
 ### Banner landmark should not be contained in another landmark
 
 - **Impact:** moderate
@@ -41,6 +29,18 @@
 #### Affected Elements:
 
 - `.miniheader`
+
+### Main landmark should not be contained in another landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the main landmark is at top level
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-main-is-top-level?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#main`
 
 ### Document should not have more than one banner landmark
 
@@ -54,18 +54,44 @@
 
 - `#page-header`
 
+### Document should not have more than one main landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has at most one main landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-no-duplicate-main?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#main-content-begin`
+
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 4
 
 #### Affected Elements:
 
 - `#page-header`
 - `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > .nav-wrap > nav`
+- `#main-content-begin`
+- `nc-carousel > .carousel[role="region"][aria-label="Innholdskarusell."]`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.brick-c-dbvyrX`
 
 ### All page content should be contained by landmarks
 

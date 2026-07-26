@@ -1,7 +1,7 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-07-26T03:49:28.356Z
-**URL:** [https://www.kid.no/](https://www.kid.no/)
+**Timestamp:** 2026-07-26T13:21:22.004Z
+**URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
 ## Violation Details
@@ -40,8 +40,8 @@
 
 #### Affected Elements:
 
-- `.ch.cg.et > .ko.gq.gr > .gt.gv.gw`
-- `div:nth-child(8) > .hy.ex.ez > .f4.f5.b6 > .al.cn.eu > div > div > .ch.cg.et > .gs.gq.gr > .gt.gv.gw`
+- `.ch.cg.et > .ko.gq.gr > .gv.gw.gx`
+- `div:nth-child(8) > .hy.ex.ez > .f4.f5.b6 > .al.cn.eu > div > div > .ch.cg.et > .gs.gq.gr > .gv.gw.gx`
 - `.ln`
 
 ### Document should not have more than one banner landmark

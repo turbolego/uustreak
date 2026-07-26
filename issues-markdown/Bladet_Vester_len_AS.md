@@ -1,24 +1,10 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-07-26T03:18:36.898Z
-**URL:** [https://www.blv.no/](https://www.blv.no/)
-**Total Violations:** 8
+**Timestamp:** 2026-07-26T13:16:40.135Z
+**URL:** [https://www.blv.no/#](https://www.blv.no/#)
+**Total Violations:** 6
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
-
-#### Affected Elements:
-
-- `a[aria-label="Ledig stilling: Skiftledere"] > .jobad-wrapper > .ad-text > .ad-text_location`
-- `.swiper-slide-next > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
-- `div[data-swiper-slide-index="4"] > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
 
 ### Headings should not be empty
 
@@ -39,24 +25,11 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, iframe`
-- `#eaframe`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.lp_pos1 > .headline > h3`
+- `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

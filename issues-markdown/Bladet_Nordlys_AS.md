@@ -1,22 +1,10 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-07-26T03:18:17.714Z
-**URL:** [https://www.nordlys.no/](https://www.nordlys.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-07-26T13:16:20.068Z
+**URL:** [https://www.nordlys.no/#](https://www.nordlys.no/#)
+**Total Violations:** 4
 
 ## Violation Details
-
-### ARIA commands must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-command-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, #cbb`
 
 ### Frames must have an accessible name
 
@@ -42,18 +30,6 @@
 
 - `brick-carousel-v2[data-slides="4"] > .carousel[role="region"][aria-label="Innholdskarusell."]`
 
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#www\.nordlys\.no\/toppbanner_1 > a[target="_blank"]`
-
 ### Elements marked as presentational should be consistently ignored
 
 - **Impact:** minor
@@ -77,4 +53,4 @@
 #### Affected Elements:
 
 - `amedia-username`
-- `#toppbanner-1-label`
+- `#toppbanner-1`

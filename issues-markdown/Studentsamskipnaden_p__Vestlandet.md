@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-07-26T03:26:54.309Z
+**Timestamp:** 2026-07-26T13:43:22.900Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 4
 
