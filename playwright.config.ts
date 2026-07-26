@@ -6,7 +6,7 @@ export default defineConfig({
     fullyParallel: false,
     forbidOnly: !!process.env.CI,
     retries: 1, // Reduced from 3: violations are expected; retrying 3x wastes ~2 min per failing site
-    workers: process.env.CI ? '25%' : '50%', // More workers for local/self-hosted runners
+    workers: process.env.CI ? '10%' : '50%', // Reduced from 25%: fewer concurrent workers prevent browser launch contention (eliminates job staggering)
     use: {
         navigationTimeout: 60000, // Reduced from 90s: fail faster on unreachable sites
         actionTimeout: 20000,
