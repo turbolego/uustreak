@@ -1,6 +1,6 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2026-07-26T13:18:30.807Z
+**Timestamp:** 2026-07-27T00:50:21.801Z
 **URL:** [https://dns.no/#](https://dns.no/#)
 **Total Violations:** 6
 

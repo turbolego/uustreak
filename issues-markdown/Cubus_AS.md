@@ -1,24 +1,10 @@
 # WCAG Violations Report for Cubus AS
 
-**Timestamp:** 2026-07-26T13:17:29.371Z
+**Timestamp:** 2026-07-27T00:48:44.108Z
 **URL:** [https://cubus.com/no/#](https://cubus.com/no/#)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `#react_cb87a0b8-bf9f-4600-80dc-92eb4301a136 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > h2:nth-child(1)`
-- `#react_cb87a0b8-bf9f-4600-80dc-92eb4301a136 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > h2:nth-child(2)`
-- `.css-s1qk9n-StyledText.ev0go5a4 > .css-1c4f91w-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > h2`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
