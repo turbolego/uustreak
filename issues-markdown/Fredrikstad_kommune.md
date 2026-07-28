@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fredrikstad kommune
 
-**Timestamp:** 2026-07-27T00:51:37.108Z
+**Timestamp:** 2026-07-28T00:48:09.810Z
 **URL:** [https://www.fredrikstad.kommune.no/#](https://www.fredrikstad.kommune.no/#)
 **Total Violations:** 4
 
@@ -41,7 +41,7 @@
 #### Affected Elements:
 
 - `.font-semibold.text-xl`
-- `a[title="Vannlekkasje Fjærå"]`
+- `.wrapper > ul > li:nth-child(1) > .hover\:underline.text-black.no-underline`
 - `.wrapper > ul > li:nth-child(2) > .hover\:underline.text-black.no-underline`
 - `#q`
 - `.flex-wrap`
