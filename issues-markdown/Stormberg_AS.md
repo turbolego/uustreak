@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-07-29T00:54:11.838Z
+**Timestamp:** 2026-07-30T00:53:07.336Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -30,21 +30,20 @@
 #### Affected Elements:
 
 - `.h2.e0.e1 > div > div`
-- `.h4.am[href$="nyheter"]`
+- `.h4.am[href$="sommersalg"]`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.io.ip`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(2) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.io.ip`
-- `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(2) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `a[aria-label="Askøy gummistøvel"] > .ih.bc.bd > .iv.im.y > .gz.io.ip`
 - `a[aria-label="Askøy gummistøvel"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.io.ip`
+- `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.io.ip`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `a[aria-label="Bris lettvekts turbukse"] > .ih.bc.bd > .iv.im.y > .gz.io.ip`
-- `a[aria-label="Bris lettvekts turbukse"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.io.ip`
+- `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `a[aria-label="Lofotregn skallponcho"] > .ih.bc.bd > .iv.im.y > .gz.io.ip`
 - `a[aria-label="Lofotregn skallponcho"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `a[aria-label="Bodø lettvekts regnbukse"] > .ih.bc.bd > .iv.im.y > .gz.io.ip`
-- `a[aria-label="Bodø lettvekts regnjakke"] > .ih.bc.bd > .iv.im.y > .gz.io.ip`
 - `li:nth-child(1) > .ic.id[aria-label="Svolvær lang skallparkas"] > .ih.bc.bd > .iv.im.y > .gz.io.ip`
 - `li:nth-child(1) > .ic.id[aria-label="Svolvær lang skallparkas"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `li:nth-child(2) > .ic.id[aria-label="Svolvær lang skallparkas"] > .ih.bc.bd > .iv.im.y > .gz.io.ip`
@@ -56,11 +55,12 @@
 - `div:nth-child(7) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.io.ip`
 - `div:nth-child(7) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `a[aria-label="Vika urban ryggsekk 25 L"] > .ih.bc.bd > .iv.im.y > .gz.io.ip`
-- `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(2) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.io.ip`
-- `a[aria-label="Sogndal skalljakke"] > .ih.bc.bd > .iv.im.y > .gz.io.ip`
 - `a[aria-label="Harstad skallanorakk"] > .ih.bc.bd > .iv.im.y > .gz.io.ip`
-- `a[aria-label="Oslo bomull t-skjorte 2-pack"] > .ih.bc.bd > .iv.im.y > .gz.io.ip`
-- `a[aria-label="Oslo bomull t-skjorte 2-pack"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.io.ip`
+- `li:nth-child(4) > .ic.id[aria-label="Oslo bomull t-skjorte 2-pack"] > .ih.bc.bd > .iv.im.y > .gz.io.ip`
+- `li:nth-child(4) > .ic.id[aria-label="Oslo bomull t-skjorte 2-pack"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `li:nth-child(5) > .ic.id[aria-label="Oslo bomull t-skjorte 2-pack"] > .ih.bc.bd > .iv.im.y > .gz.io.ip`
+- `li:nth-child(5) > .ic.id[aria-label="Oslo bomull t-skjorte 2-pack"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
@@ -100,7 +100,7 @@
 - `div:nth-child(1) > .aq.am.an > .au.as[width="11"]`
 - `div:nth-child(2) > .aq.am.an > .au.as[width="11"]`
 - `div:nth-child(3) > .aq.am.an > .au.as[width="11"]`
-- `a[href$="sommersalg"] > .hs.ht.hu > .hx.hw.au`
+- `.a6[href$="sommersalg"][data-scope-link="true"] > .hs.ht.hu > .hx.hw.au`
 - `a[href$="t-skjorter"] > .jm.ht.hu > .hx.a2.hw`
 - `.jl.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jm.ht.hu > .hx.a2.hw`
 - `a[href$="prisras-sko"] > .jm.ht.hu > .hx.a2.hw`
@@ -122,7 +122,7 @@
 
 #### Affected Elements:
 
-- `a[href$="sommersalg"]`
+- `.a6[href$="sommersalg"][data-scope-link="true"]`
 - `a[href$="t-skjorter"]`
 - `.jl.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
 - `a[href$="prisras-sko"]`

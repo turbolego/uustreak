@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Hudøy
 
-**Timestamp:** 2026-07-29T00:53:54.442Z
+**Timestamp:** 2026-07-30T00:52:50.370Z
 **URL:** [https://hudoy.no/#](https://hudoy.no/#)
 **Total Violations:** 4
 
