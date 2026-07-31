@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-07-30T00:59:24.586Z
+**Timestamp:** 2026-07-31T00:50:29.148Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 7
 
@@ -36,17 +36,16 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 7
+- **Count:** 6
 
 #### Affected Elements:
 
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(16) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52) > h5`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(69) > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(85) > h5`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(89) > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(90) > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(56) > h5`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(60) > h5`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -78,11 +77,39 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 152
+- **Count:** 122
 
 #### Affected Elements:
 
 - `h1`
+- `div[title="Concacaf avviser Fifa-planene"] > h2`
+- `time[datetime="2026-07-30T19:34:14.000Z"]`
+- `#notice-10461538 > .content > h2`
+- `time[datetime="2026-07-30T18:42:57.000Z"]`
+- `#notice-10461483 > .content > h2`
+- `time[datetime="2026-07-30T17:55:46.000Z"]`
+- `#notice-10461461 > .content > h2`
+- `time[datetime="2026-07-30T16:29:21.000Z"]`
+- `#notice-10461406 > .content > h2`
+- `time[datetime="2026-07-30T14:34:38.000Z"]`
+- `#notice-10461397 > .content > h2`
+- `time[datetime="2026-07-30T14:06:05.000Z"]`
+- `div[title="Redningsaksjon i Luster"] > h2`
+- `div[title="Redningsaksjon i Luster"] > .meta`
+- `#notice-10460950 > .content > h2`
+- `#notice-10460950 > .content > .meta`
+- `#notice-10460323 > .content > h2`
+- `#notice-10460323 > .content > .meta`
+- `#notice-10460320 > .content > h2`
+- `#notice-10460320 > .content > .meta`
+- `#notice-10460006 > .content > h2`
+- `#notice-10460006 > .content > .meta`
+- `#notice-10459964 > .content > h2`
+- `#notice-10459964 > .content > .meta`
+- `#notice-10459963 > .content > h2`
+- `#notice-10459963 > .content > .meta`
+- `#notice-10459962 > .content > h2`
+- `#notice-10459962 > .content > .meta`
 - `#notice-10459862 > .content > h2`
 - `time[datetime="2026-07-29T19:00:15.000Z"]`
 - `#notice-10459577 > .content > h2`
@@ -95,34 +122,6 @@
 - `#notice-10459263 > .content > .meta`
 - `#notice-10459253 > .content > h2`
 - `#notice-10459253 > .content > .meta`
-- `div[title="18 døde i jordskjelv i Japan"] > h2`
-- `div[title="18 døde i jordskjelv i Japan"] > .meta`
-- `#notice-10458954 > .content > h2`
-- `#notice-10458954 > .content > .meta`
-- `#notice-10458943 > .content > h2`
-- `#notice-10458943 > .content > .meta`
-- `#notice-10458661 > .content > h2`
-- `#notice-10458661 > .content > .meta`
-- `#notice-10458531 > .content > h2`
-- `time[datetime="2026-07-29T06:10:59.000Z"]`
-- `#notice-10458496 > .content > h2`
-- `#notice-10458496 > .content > .meta`
-- `#notice-10458495 > .content > h2`
-- `#notice-10458495 > .content > .meta`
-- `#notice-10458241 > .content > h2`
-- `time[datetime="2026-07-28T13:26:46.000Z"]`
-- `#notice-10457850 > .content > h2`
-- `#notice-10457850 > .content > .meta`
-- `#notice-10457726 > .content > h2`
-- `#notice-10457726 > .content > .meta`
-- `#notice-10457415 > .content > h2`
-- `#notice-10457415 > .content > .meta`
-- `#notice-10457197 > .content > h2`
-- `#notice-10457197 > .content > .meta`
-- `#notice-10456986 > .content > h2`
-- `#notice-10456986 > .content > .meta`
-- `#notice-10456973 > .content > h2`
-- `#notice-10456973 > .content > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
@@ -143,7 +142,7 @@
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.row.large-12.small-12:nth-child(22)`
 - `.page-content > .border_width_no_border_width.border_width_mobile_no_border_width.mobile_no_border_color`
-- `.border-bg-quaternary.mobile_border-bg-quaternary.border-side-top`
+- `.page-content > .border-bg-quaternary.mobile_border-bg-quaternary.hasBorder`
 - `.row.large-12.small-12:nth-child(26)`
 - `.row.large-12.small-12:nth-child(27)`
 - `#article_list_10184114 > .content > .lab-scrollbox-headline.font-weight-normal.m-font-weight-normal`
@@ -151,26 +150,7 @@
 - `.row.large-12.small-12:nth-child(29)`
 - `.row.large-12.small-12:nth-child(31)`
 - `.row.large-12.small-12:nth-child(32)`
-- `.row.large-12.small-12:nth-child(33)`
-- `.row.large-12.small-12:nth-child(34)`
-- `.row.large-12.small-12:nth-child(36)`
-- `.row.large-12.small-12:nth-child(37)`
-- `.row.large-12.small-12:nth-child(38)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(39)`
-- `.row.large-12.small-12:nth-child(41)`
-- `#article_list_10230577 > .content > .lab-scrollbox-headline.font-weight-normal.m-font-weight-normal`
-- `#article_list_10230577 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(43)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44)`
-- `.row.large-12.small-12:nth-child(46)`
-- `.lab-scrollbox-headline.italic.m-italic`
-- `#article_list_10291490 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(48)`
-- `.row.large-12.small-12:nth-child(49)`
-- `.row.large-12.small-12:nth-child(51)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52)`
-- `.row.large-12.small-12:nth-child(53)`
-- `.lab-scrollbox-headline.t28.font-weight-normal`
+- `.t28.lab-scrollbox-headline.font-weight-normal`
 - `#markup_10453098 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="10453097"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
 - `#markup_10453072 > .fullwidthTarget.content > unite-player,#status-container`
@@ -183,8 +163,20 @@
 - `article[data-instance="10440429"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
 - `#markup_10440438 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="10440437"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `.row.large-12.small-12:nth-child(56)`
-- `.bg-black.color_mobile_bg-black.lab-scrollbox-headline`
+- `.row.large-12.small-12:nth-child(34)`
+- `.row.large-12.small-12:nth-child(36)`
+- `.row.large-12.small-12:nth-child(37)`
+- `.row.large-12.small-12:nth-child(38)`
+- `.row.large-12.small-12:nth-child(39)`
+- `.row.large-12.small-12:nth-child(41)`
+- `#article_list_10230577 > .content > .lab-scrollbox-headline.font-weight-normal.m-font-weight-normal`
+- `#article_list_10230577 > .content > .scroll-container.swipehelper.snap-container-x`
+- `.row.large-12.small-12:nth-child(43)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44)`
+- `.row.large-12.small-12:nth-child(46)`
+- `.lab-scrollbox-headline.italic.m-italic`
+- `#article_list_10291490 > .content > .scroll-container.swipehelper.snap-container-x`
+- `.bg-black.color_mobile_bg-black.t34`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(1)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(2)`
 - `.tm19.color_mobile_no_bg_color.primary > .t14[data-lab-text_size_desktop="14"]`
@@ -202,37 +194,14 @@
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(13)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(14)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(15)`
-- `.row.large-12.small-12:nth-child(58)`
-- `.row.large-12.small-12:nth-child(59)`
-- `.row.large-12.small-12:nth-child(60)`
-- `.row.large-12.small-12:nth-child(61)`
-- `.row.large-12.small-12:nth-child(62)`
-- `.row.large-12.small-12:nth-child(63)`
-- `.row.large-12.small-12:nth-child(64)`
-- `.row.large-12.small-12:nth-child(65)`
-- `.row.large-12.small-12:nth-child(66)`
-- `.row.large-12.small-12:nth-child(67)`
-- `.color_mobile_no_bg_color.row.large-12:nth-child(68)`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(69)`
-- `.row.large-12.small-12:nth-child(70)`
-- `.row.large-12.small-12:nth-child(71)`
-- `.row.large-12.small-12:nth-child(72)`
-- `.row.large-12.small-12:nth-child(73)`
-- `.row.large-12.small-12:nth-child(74)`
-- `.row.large-12.small-12:nth-child(75)`
-- `.row.large-12.small-12:nth-child(76)`
-- `.row.large-12.small-12:nth-child(77)`
-- `.row.large-12.small-12:nth-child(78)`
-- `.row.large-12.small-12:nth-child(79)`
-- `.row.large-12.small-12:nth-child(80)`
-- `.row.large-12.small-12:nth-child(81)`
-- `.row.large-12.small-12:nth-child(82)`
-- `.row.large-12.small-12:nth-child(84)`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(85)`
-- `.row.large-12.small-12:nth-child(86)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(88)`
-- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary:nth-child(89)`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(90)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(49)`
+- `.row.large-12.small-12:nth-child(51)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52)`
+- `.row.large-12.small-12:nth-child(53)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(56)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(58)`
+- `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(60)`
 - `.powered-by`
 
 ### Scrollable region must have keyboard access
