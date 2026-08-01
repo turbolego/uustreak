@@ -1,6 +1,6 @@
 # WCAG Violations Report for The Thief Hotel AS
 
-**Timestamp:** 2026-07-31T01:14:33.732Z
+**Timestamp:** 2026-08-01T01:01:20.892Z
 **URL:** [https://thethief.com/](https://thethief.com/)
 **Total Violations:** 4
 

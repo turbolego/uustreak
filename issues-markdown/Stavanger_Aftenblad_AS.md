@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-07-31T01:13:04.821Z
+**Timestamp:** 2026-08-01T00:59:41.651Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
 **Total Violations:** 4
 
@@ -37,14 +37,13 @@
 - **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/nested-interactive?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 4
+- **Count:** 3
 
 #### Affected Elements:
 
-- `._large_4b03h_72`
-- `track-element[data-track-id="teaser:113169"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._small_4b03h_76._root_4b03h_54[vendor="sa"]`
-- `._small_4b03h_76._root_4b03h_54[asset-id="113159"]`
-- `._small_4b03h_76._root_4b03h_54[asset-id="113161"]`
+- `track-element[data-track-id="teaser:113169"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
+- `track-element[data-track-id="teaser:113161"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
+- `track-element[data-track-id="teaser:113159"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
 
 ### All page content should be contained by landmarks
 

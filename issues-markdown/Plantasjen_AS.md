@@ -1,6 +1,6 @@
 # WCAG Violations Report for Plantasjen AS
 
-**Timestamp:** 2026-07-31T01:12:28.184Z
+**Timestamp:** 2026-08-01T01:14:13.669Z
 **URL:** [https://plantasjen.no/no](https://plantasjen.no/no)
 **Total Violations:** 2
 
@@ -28,9 +28,9 @@
 
 #### Affected Elements:
 
-- `section:nth-child(7) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(1) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.group.gap-3 > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
-- `section:nth-child(31) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(1) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.group.gap-3 > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
+- `section:nth-child(10) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(1) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.group.gap-3 > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
+- `section:nth-child(34) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(1) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.group.gap-3 > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
 - `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(2) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.group.gap-3 > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
 - `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(3) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.group.gap-3 > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
-- `section:nth-child(31) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.group.gap-3 > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
+- `section:nth-child(34) > .py-2[data-aria-hidden="true"][aria-hidden="true"] > .overflow-hidden > .-mx-2.my-auto.flex > .max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.group.gap-3 > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
 - `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.group[href$="plengjodsel-10-l-529197"] > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.gap-1 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`

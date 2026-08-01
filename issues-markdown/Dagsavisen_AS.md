@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-07-31T00:50:29.148Z
+**Timestamp:** 2026-08-01T01:07:08.512Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 7
 
@@ -43,9 +43,9 @@
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(16) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52) > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(56) > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(62) > h5`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(60) > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(66) > h5`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -77,11 +77,33 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 122
+- **Count:** 128
 
 #### Affected Elements:
 
 - `h1`
+- `#notice-10462817 > .content > h2`
+- `time[datetime="2026-07-31T17:38:22.000Z"]`
+- `#notice-10462803 > .content > h2`
+- `time[datetime="2026-07-31T16:31:04.000Z"]`
+- `div[title="Brann i blokk i Nydalen i Oslo"] > h2`
+- `div[title="Brann i blokk i Nydalen i Oslo"] > .meta`
+- `#notice-10461747 > .content > h2`
+- `#notice-10461747 > .content > .meta`
+- `#notice-10461727 > .content > h2`
+- `#notice-10461727 > .content > .meta`
+- `#notice-10461647 > .content > h2`
+- `#notice-10461647 > .content > .meta`
+- `div[title="Sørlandschips-fabrikk i brann"] > h2`
+- `div[title="Sørlandschips-fabrikk i brann"] > .meta`
+- `#notice-10461568 > .content > h2`
+- `#notice-10461568 > .content > .meta`
+- `#notice-10461567 > .content > h2`
+- `#notice-10461567 > .content > .meta`
+- `#notice-10461566 > .content > h2`
+- `#notice-10461566 > .content > .meta`
+- `#notice-10461565 > .content > h2`
+- `#notice-10461565 > .content > .meta`
 - `div[title="Concacaf avviser Fifa-planene"] > h2`
 - `time[datetime="2026-07-30T19:34:14.000Z"]`
 - `#notice-10461538 > .content > h2`
@@ -100,28 +122,6 @@
 - `#notice-10460950 > .content > .meta`
 - `#notice-10460323 > .content > h2`
 - `#notice-10460323 > .content > .meta`
-- `#notice-10460320 > .content > h2`
-- `#notice-10460320 > .content > .meta`
-- `#notice-10460006 > .content > h2`
-- `#notice-10460006 > .content > .meta`
-- `#notice-10459964 > .content > h2`
-- `#notice-10459964 > .content > .meta`
-- `#notice-10459963 > .content > h2`
-- `#notice-10459963 > .content > .meta`
-- `#notice-10459962 > .content > h2`
-- `#notice-10459962 > .content > .meta`
-- `#notice-10459862 > .content > h2`
-- `time[datetime="2026-07-29T19:00:15.000Z"]`
-- `#notice-10459577 > .content > h2`
-- `time[datetime="2026-07-29T13:24:49.000Z"]`
-- `#notice-10459550 > .content > h2`
-- `time[datetime="2026-07-29T13:11:08.000Z"]`
-- `#notice-10459331 > .content > h2`
-- `#notice-10459331 > .content > .meta`
-- `#notice-10459263 > .content > h2`
-- `#notice-10459263 > .content > .meta`
-- `#notice-10459253 > .content > h2`
-- `#notice-10459253 > .content > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
@@ -176,6 +176,13 @@
 - `.row.large-12.small-12:nth-child(46)`
 - `.lab-scrollbox-headline.italic.m-italic`
 - `#article_list_10291490 > .content > .scroll-container.swipehelper.snap-container-x`
+- `.row.large-12.small-12:nth-child(48)`
+- `.row.large-12.small-12:nth-child(49)`
+- `.row.large-12.small-12:nth-child(51)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52)`
+- `.row.large-12.small-12:nth-child(53)`
+- `.row.large-12.small-12:nth-child(54)`
+- `.row.large-12.small-12:nth-child(56)`
 - `.bg-black.color_mobile_bg-black.t34`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(1)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(2)`
@@ -194,14 +201,13 @@
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(13)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(14)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(15)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(49)`
-- `.row.large-12.small-12:nth-child(51)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52)`
-- `.row.large-12.small-12:nth-child(53)`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(56)`
 - `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(58)`
+- `.row.large-12.small-12:nth-child(59)`
+- `.row.large-12.small-12:nth-child(60)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(62)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(64)`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(60)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(66)`
 - `.powered-by`
 
 ### Scrollable region must have keyboard access

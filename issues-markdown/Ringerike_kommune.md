@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ringerike kommune
 
-**Timestamp:** 2026-07-31T01:12:03.748Z
+**Timestamp:** 2026-08-01T00:58:39.788Z
 **URL:** [https://www.ringerike.kommune.no/#](https://www.ringerike.kommune.no/#)
 **Total Violations:** 9
 
@@ -113,13 +113,13 @@
 
 #### Affected Elements:
 
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(3) > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-0 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-1 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-2 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-3 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-4 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 - `#portalframe1, .single-5 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-6 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 
 ### All page content should be contained by landmarks
 
@@ -140,13 +140,9 @@
 - `#portalframe1, .data-from-to-expand`
 - `#portalframe1, .CaptionCont`
 - `#portalframe1, .optWrapper`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > h1`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line > .imgContainer`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(2) > .item-container > .list-item.line > .list-item-date`
-- `#portalframe1, a[data-itemdate="31.07.2026"] > .ul-main`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(3) > h1`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(3) > .item-container > .list-item.line > .imgContainer`
-- `#portalframe1, .single-0.day-listings.single-date-list:nth-child(3) > .item-container > .list-item.line > .list-item-date`
+- `#portalframe1, .single-0 > h1`
+- `#portalframe1, .single-0 > .item-container > .list-item.line > .imgContainer`
+- `#portalframe1, .single-0 > .item-container > .list-item.line > .list-item-date`
 - `#portalframe1, a[data-itemdate="01.08.2026"] > .ul-main`
 - `#portalframe1, .single-1 > h1`
 - `#portalframe1, .single-1 > .item-container > .list-item.line > .imgContainer`
@@ -168,6 +164,10 @@
 - `#portalframe1, .single-5 > .item-container > .list-item.line > .imgContainer`
 - `#portalframe1, .single-5 > .item-container > .list-item.line > .list-item-date`
 - `#portalframe1, a[data-itemdate="06.08.2026"] > .ul-main`
+- `#portalframe1, .single-6 > h1`
+- `#portalframe1, .single-6 > .item-container > .list-item.line > .imgContainer`
+- `#portalframe1, .single-6 > .item-container > .list-item.line > .list-item-date`
+- `#portalframe1, a[data-itemdate="07.08.2026"] > .ul-main`
 - `.mt-20`
 - `.ssp__fluid-panel > div > div > div > .container > .row > .col-md-6.mb-30.col-xs-12:nth-child(2)`
 - `.test-wrapper`

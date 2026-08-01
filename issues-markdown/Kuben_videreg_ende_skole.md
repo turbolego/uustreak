@@ -1,10 +1,23 @@
 # WCAG Violations Report for Kuben videregående skole
 
-**Timestamp:** 2026-07-31T01:09:45.225Z
+**Timestamp:** 2026-08-01T00:55:54.448Z
 **URL:** [https://kuben.vgs.no/#](https://kuben.vgs.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
+
+### Elements must only use supported ARIA attributes
+
+- **Impact:** critical
+- **Description:** Ensure an element's role supports its ARIA attributes
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.col-lg-4.col-md-6.col-12:nth-child(1) > .factbox.factbox--white > .factbox__content.text-break > p:nth-child(1) > iframe, .ytmVideoInfoVideoTitle`
+- `.col-lg-4.col-md-6.col-12:nth-child(2) > .factbox.factbox--white > .factbox__content.text-break > p:nth-child(1) > iframe, .ytmVideoInfoVideoTitle`
 
 ### Elements must only use permitted ARIA attributes
 
