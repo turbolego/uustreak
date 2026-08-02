@@ -1,8 +1,8 @@
 # WCAG Violations Report for Mediehuset Nettavisen AS
 
-**Timestamp:** 2026-08-01T00:55:53.181Z
+**Timestamp:** 2026-08-02T00:54:22.841Z
 **URL:** [https://www.nettavisen.no/#](https://www.nettavisen.no/#)
-**Total Violations:** 8
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -30,18 +30,6 @@
 
 - `.miniheader`
 
-### Main landmark should not be contained in another landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the main landmark is at top level
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-main-is-top-level?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#main`
-
 ### Document should not have more than one banner landmark
 
 - **Impact:** moderate
@@ -54,43 +42,18 @@
 
 - `#page-header`
 
-### Document should not have more than one main landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the document has at most one main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-no-duplicate-main?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#main-content-begin`
-
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
 - `#page-header`
 - `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > .nav-wrap > nav`
-- `#main-content-begin`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.brick-c-dbvyrX`
 
 ### All page content should be contained by landmarks
 

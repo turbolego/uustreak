@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-08-01T01:07:08.512Z
+**Timestamp:** 2026-08-02T01:07:05.179Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 7
 
@@ -43,9 +43,9 @@
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(16) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52) > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(62) > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(67) > h5`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(66) > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(71) > h5`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -77,11 +77,25 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 128
+- **Count:** 133
 
 #### Affected Elements:
 
 - `h1`
+- `#notice-10463119 > .content > h2`
+- `time[datetime="2026-08-01T14:42:27.000Z"]`
+- `#notice-10462970 > .content > h2`
+- `time[datetime="2026-08-01T08:50:09.000Z"]`
+- `#notice-10462968 > .content > h2`
+- `time[datetime="2026-08-01T08:49:47.000Z"]`
+- `#notice-10462952 > .content > h2`
+- `time[datetime="2026-08-01T07:56:19.000Z"]`
+- `#notice-10462935 > .content > h2`
+- `time[datetime="2026-08-01T06:10:58.000Z"]`
+- `#notice-10462934 > .content > h2`
+- `time[datetime="2026-08-01T06:10:31.000Z"]`
+- `div[title="Tusenvis demonstrerte i Kyiv"] > h2`
+- `time[datetime="2026-08-01T10:37:54.000Z"]`
 - `#notice-10462817 > .content > h2`
 - `time[datetime="2026-07-31T17:38:22.000Z"]`
 - `#notice-10462803 > .content > h2`
@@ -108,20 +122,6 @@
 - `time[datetime="2026-07-30T19:34:14.000Z"]`
 - `#notice-10461538 > .content > h2`
 - `time[datetime="2026-07-30T18:42:57.000Z"]`
-- `#notice-10461483 > .content > h2`
-- `time[datetime="2026-07-30T17:55:46.000Z"]`
-- `#notice-10461461 > .content > h2`
-- `time[datetime="2026-07-30T16:29:21.000Z"]`
-- `#notice-10461406 > .content > h2`
-- `time[datetime="2026-07-30T14:34:38.000Z"]`
-- `#notice-10461397 > .content > h2`
-- `time[datetime="2026-07-30T14:06:05.000Z"]`
-- `div[title="Redningsaksjon i Luster"] > h2`
-- `div[title="Redningsaksjon i Luster"] > .meta`
-- `#notice-10460950 > .content > h2`
-- `#notice-10460950 > .content > .meta`
-- `#notice-10460323 > .content > h2`
-- `#notice-10460323 > .content > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
@@ -183,6 +183,11 @@
 - `.row.large-12.small-12:nth-child(53)`
 - `.row.large-12.small-12:nth-child(54)`
 - `.row.large-12.small-12:nth-child(56)`
+- `.row.large-12.small-12:nth-child(57)`
+- `.row.large-12.small-12:nth-child(58)`
+- `.row.large-12.small-12:nth-child(59)`
+- `.row.large-12.small-12:nth-child(60)`
+- `.row.large-12.small-12:nth-child(61)`
 - `.bg-black.color_mobile_bg-black.t34`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(1)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(2)`
@@ -201,13 +206,13 @@
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(13)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(14)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(15)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(58)`
-- `.row.large-12.small-12:nth-child(59)`
-- `.row.large-12.small-12:nth-child(60)`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(62)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(64)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(63)`
+- `.row.large-12.small-12:nth-child(64)`
+- `.row.large-12.small-12:nth-child(65)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(67)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(69)`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(66)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(71)`
 - `.powered-by`
 
 ### Scrollable region must have keyboard access

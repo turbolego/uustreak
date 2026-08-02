@@ -1,6 +1,6 @@
 # WCAG Violations Report for Cubus AS
 
-**Timestamp:** 2026-08-01T01:08:19.132Z
+**Timestamp:** 2026-08-02T00:48:25.480Z
 **URL:** [https://cubus.com/no/#](https://cubus.com/no/#)
 **Total Violations:** 3
 

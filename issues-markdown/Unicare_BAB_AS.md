@@ -1,6 +1,6 @@
 # WCAG Violations Report for Unicare BAB AS
 
-**Timestamp:** 2026-08-01T01:02:05.502Z
+**Timestamp:** 2026-08-02T01:00:33.787Z
 **URL:** [https://unicare.no/#](https://unicare.no/#)
 **Total Violations:** 7
 

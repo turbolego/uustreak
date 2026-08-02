@@ -1,6 +1,6 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2026-08-01T00:55:57.666Z
+**Timestamp:** 2026-08-02T00:54:43.153Z
 **URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#)
 **Total Violations:** 6
 
@@ -55,14 +55,14 @@
 
 #### Affected Elements:
 
-- `iframe, #u_0_1_Vo`
+- `iframe, #u_0_1_\+p`
 - `iframe, .lfloat._3-8_[target="_blank"]`
-- `iframe, #u_1_d_o0 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe, #u_1_c_DV > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe, #u_1_b_72 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `iframe, #u_1_p_Y5 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `iframe, #u_1_b_Q9 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `iframe, #u_1_9_VL > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
 - `iframe, ._2l7q > a[target="_blank"]`
 - `iframe, div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe, #u_1_a_Wq > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `iframe, #u_1_a_iC > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
 
 ### Interactive controls must not be nested
 
@@ -86,5 +86,5 @@
 
 #### Affected Elements:
 
-- `iframe, a[aria-describedby="u_1_y_63"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > .scaledImageFitWidth[height="148"][caption=""]`
-- `iframe, a[aria-describedby="u_1_10_9E"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > .scaledImageFitWidth[height="148"][caption=""]`
+- `iframe, a[aria-describedby="u_1_z_yL"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > .scaledImageFitWidth[height="148"][caption=""]`
+- `iframe, a[aria-describedby="u_1_11_Ju"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > .scaledImageFitWidth[height="148"][caption=""]`
