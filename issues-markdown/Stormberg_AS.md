@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-08-02T00:58:18.820Z
+**Timestamp:** 2026-08-03T01:01:18.588Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -25,40 +25,38 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 31
+- **Count:** 29
 
 #### Affected Elements:
 
 - `.h2.e0.e1 > div > div`
-- `a[href$="dagskupp6"]`
+- `.h4.am.ap`
 - `li:nth-child(1) > .ia.ib[aria-label="Trolltunga skalljakke"] > .if.bc.bd > .im.ik.y > .gz.in.io`
 - `li:nth-child(1) > .ia.ib[aria-label="Trolltunga skalljakke"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
 - `li:nth-child(2) > .ia.ib[aria-label="Trolltunga skalljakke"] > .if.bc.bd > .im.ik.y > .gz.in.io`
 - `li:nth-child(2) > .ia.ib[aria-label="Trolltunga skalljakke"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `div:nth-child(3) > .i7.bl.bj > .i8.i9 > li:nth-child(3) > .ia.ib.ic > .if.bc.bd > .im.ik.y > .gz.in.io`
-- `div:nth-child(3) > .i7.bl.bj > .i8.i9 > li:nth-child(3) > .ia.ib.ic > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `a[aria-label="Kvitfjord skalljakke barn 8-4"] > .if.bc.bd > .im.ik.y > .gz.in.io`
-- `a[aria-label="Kvitfjord skalljakke barn 8-4"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
 - `a[aria-label="Stormflod regnbukse barn 8-14"] > .if.bc.bd > .im.ik.y > .gz.in.io`
 - `a[aria-label="Stormflod regnbukse barn 8-14"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `li:nth-child(4) > .ia.ib[aria-label="Harstad skallanorakk"] > .if.bc.bd > .im.ik.y > .gz.in.io`
-- `a[aria-label="Lofoten lettvekts regnbukse"] > .if.bc.bd > .im.ik.y > .gz.in.io`
-- `a[aria-label="Lofoten lettvekts regnbukse"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `a[aria-label="Vosso reisesekk 30 L"] > .if.bc.bd > .im.ik.y > .gz.in.io`
-- `a[aria-label="Vosso reisesekk 30 L"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `li:nth-child(2) > .ia.ib[aria-label="Dovre 2-i-1 ryggsekk 35 L"] > .if.bc.bd > .im.ik.y > .gz.in.io`
-- `li:nth-child(2) > .ia.ib[aria-label="Dovre 2-i-1 ryggsekk 35 L"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
+- `a[aria-label="Fauskånebba skalljakke"] > .if.bc.bd > .im.ik.y > .gz.in.io`
+- `a[aria-label="Fauskånebba skalljakke"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
+- `div:nth-child(3) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .if.bc.bd > .im.ik.y > .gz.in.io`
+- `div:nth-child(3) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .c0.c1.hx > div > .h3 > .jb.hy.bd`
+- `a[aria-label="Bodø lettvekts regnbukse"] > .if.bc.bd > .im.ik.y > .gz.in.io`
+- `li:nth-child(1) > .ia.ib[aria-label="Dovre 2-i-1 ryggsekk 35 L"] > .if.bc.bd > .im.ik.y > .gz.in.io`
+- `li:nth-child(1) > .ia.ib[aria-label="Dovre 2-i-1 ryggsekk 35 L"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
 - `a[aria-label="Vosso reisesekk 20 L"] > .if.bc.bd > .im.ik.y > .gz.in.io`
 - `a[aria-label="Vosso reisesekk 20 L"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `li:nth-child(4) > .ia.ib[aria-label="Dovre 2-i-1 ryggsekk 35 L"] > .if.bc.bd > .im.ik.y > .gz.in.io`
-- `li:nth-child(4) > .ia.ib[aria-label="Dovre 2-i-1 ryggsekk 35 L"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
+- `li:nth-child(3) > .ia.ib[aria-label="Dovre 2-i-1 ryggsekk 35 L"] > .if.bc.bd > .im.ik.y > .gz.in.io`
+- `li:nth-child(3) > .ia.ib[aria-label="Dovre 2-i-1 ryggsekk 35 L"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
+- `a[aria-label="Svolvær lang skallparkas"] > .if.bc.bd > .im.ik.y > .gz.in.io`
+- `a[aria-label="Svolvær lang skallparkas"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
 - `a[aria-label="Lista 2-i-1 ryggsekk 15 L"] > .if.bc.bd > .im.ik.y > .gz.in.io`
 - `a[aria-label="Lista 2-i-1 ryggsekk 15 L"] > .c0.c1.hx > div > .h3 > .jb.hy.bd`
-- `a[aria-label="Vika urban ryggsekk 25 L"] > .if.bc.bd > .im.ik.y > .gz.in.io`
-- `li:nth-child(2) > .ia.ib[aria-label="Harstad skallanorakk"] > .if.bc.bd > .im.ik.y > .gz.in.io`
 - `a[aria-label="Vika urban ryggsekk 35 L"] > .if.bc.bd > .im.ik.y > .gz.in.io`
-- `a[aria-label="Bodø lettvekts regnbukse"] > .if.bc.bd > .im.ik.y > .gz.in.io`
-- `a[aria-label="Bodø lettvekts regnjakke"] > .if.bc.bd > .im.ik.y > .gz.in.io`
+- `a[aria-label="Nordkinn skallbukse barn 8-14"] > .if.bc.bd > .im.ik.y > .gz.in.io`
+- `a[aria-label="Skomvær skalljakke barn 8-14"] > .if.bc.bd > .im.ik.y > .gz.in.io`
+- `a[aria-label="Regndag regnbukse unisex"] > .if.bc.bd > .im.ik.y > .gz.in.io`
+- `a[aria-label="Bergen regnselebukse barn 1-7"] > .if.bc.bd > .im.ik.y > .gz.in.io`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
@@ -95,9 +93,9 @@
 
 #### Affected Elements:
 
-- `div:nth-child(1) > .aq.am.an > .au.as[width="11"]`
-- `div:nth-child(2) > .aq.am.an > .au.as[width="11"]`
-- `div:nth-child(3) > .aq.am.an > .au.as[width="11"]`
+- `div:nth-child(1) > .aq.am.ao > .au.as[width="11"]`
+- `div:nth-child(2) > .aq.am.ao > .au.as[width="11"]`
+- `div:nth-child(3) > .aq.am.ao > .au.as[width="11"]`
 - `a[href$="mid-season-sale"] > .hq.hr.hs > .hv.hu.au`
 - `.jh.fm.be:nth-child(1) > div > .bj.bk.ar > .ho.bv.ay > .a6[data-scope-link="true"] > .ji.hr.hs > .hv.a2.hu`
 - `.jh.fm.be:nth-child(2) > div > .bj.bk.ar > .ho.bv.ay > .a6[data-scope-link="true"] > .ji.hr.hs > .hv.a2.hu`

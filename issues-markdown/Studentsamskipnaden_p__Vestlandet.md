@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-08-02T00:58:15.485Z
+**Timestamp:** 2026-08-03T00:59:31.879Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 4
 
@@ -86,7 +86,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 43
+- **Count:** 40
 
 #### Affected Elements:
 
@@ -110,14 +110,11 @@
 - `#carousel3 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .pt-2.pb-2.px-2`
 - `#carousel4 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\:leading-snug.text-xs`
 - `#carousel4 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .pt-2.pb-2.px-2`
-- `img[alt="Gjenbruksfestivalen 2026 "]`
-- `#carousel5 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\:leading-snug.text-xs`
-- `#carousel5 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .pt-2.pb-2.px-2`
+- `#carousel5`
 - `#carousel6`
 - `#carousel7`
 - `#carousel8`
 - `#carousel9`
-- `#carousel10`
 - `div:nth-child(1) > .\!font-bold.pb-4`
 - `a[href$="bolig"] > .text-base-white.svelte-nqw3qe.text-body`
 - `a[href$="studentliv"] > .text-base-white.svelte-nqw3qe.text-body`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ringerike kommune
 
-**Timestamp:** 2026-08-02T01:12:58.151Z
+**Timestamp:** 2026-08-03T00:57:41.534Z
 **URL:** [https://www.ringerike.kommune.no/#](https://www.ringerike.kommune.no/#)
 **Total Violations:** 9
 
@@ -143,31 +143,31 @@
 - `#portalframe1, .single-0 > h1`
 - `#portalframe1, .single-0 > .item-container > .list-item.line > .imgContainer`
 - `#portalframe1, .single-0 > .item-container > .list-item.line > .list-item-date`
-- `#portalframe1, a[data-itemdate="02.08.2026"] > .ul-main`
+- `#portalframe1, a[data-itemdate="03.08.2026"] > .ul-main`
 - `#portalframe1, .single-1 > h1`
 - `#portalframe1, .single-1 > .item-container > .list-item.line > .imgContainer`
 - `#portalframe1, .single-1 > .item-container > .list-item.line > .list-item-date`
-- `#portalframe1, a[data-itemdate="03.08.2026"] > .ul-main`
+- `#portalframe1, a[data-itemdate="04.08.2026"] > .ul-main`
 - `#portalframe1, .single-2 > h1`
 - `#portalframe1, .single-2 > .item-container > .list-item.line > .imgContainer`
 - `#portalframe1, .single-2 > .item-container > .list-item.line > .list-item-date`
-- `#portalframe1, a[data-itemdate="04.08.2026"] > .ul-main`
+- `#portalframe1, a[data-itemdate="05.08.2026"] > .ul-main`
 - `#portalframe1, .single-3 > h1`
 - `#portalframe1, .single-3 > .item-container > .list-item.line > .imgContainer`
 - `#portalframe1, .single-3 > .item-container > .list-item.line > .list-item-date`
-- `#portalframe1, a[data-itemdate="05.08.2026"] > .ul-main`
+- `#portalframe1, a[data-itemdate="06.08.2026"] > .ul-main`
 - `#portalframe1, .single-4 > h1`
 - `#portalframe1, .single-4 > .item-container > .list-item.line > .imgContainer`
 - `#portalframe1, .single-4 > .item-container > .list-item.line > .list-item-date`
-- `#portalframe1, a[data-itemdate="06.08.2026"] > .ul-main`
+- `#portalframe1, a[data-itemdate="07.08.2026"] > .ul-main`
 - `#portalframe1, .single-5 > h1`
 - `#portalframe1, .single-5 > .item-container > .list-item.line > .imgContainer`
 - `#portalframe1, .single-5 > .item-container > .list-item.line > .list-item-date`
-- `#portalframe1, a[data-itemdate="07.08.2026"] > .ul-main`
+- `#portalframe1, a[data-itemdate="08.08.2026"] > .ul-main`
 - `#portalframe1, .single-6 > h1`
 - `#portalframe1, .single-6 > .item-container > .list-item.line > .imgContainer`
 - `#portalframe1, .single-6 > .item-container > .list-item.line > .list-item-date`
-- `#portalframe1, a[data-itemdate="08.08.2026"] > .ul-main`
+- `#portalframe1, a[data-itemdate="09.08.2026"] > .ul-main`
 - `.mt-20`
 - `.ssp__fluid-panel > div > div > div > .container > .row > .col-md-6.mb-30.col-xs-12:nth-child(2)`
 - `.test-wrapper`

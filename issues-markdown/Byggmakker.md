@@ -1,6 +1,6 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2026-08-02T01:06:17.359Z
+**Timestamp:** 2026-08-03T01:08:10.053Z
 **URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
 **Total Violations:** 2
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 64
+- **Count:** 56
 
 #### Affected Elements:
 
@@ -24,14 +24,6 @@
 - `.campaign-product-list__card:nth-child(3) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-price-history="1289"]`
 - `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-price-history="999"]`
 - `.campaign-product-list__card:nth-child(4) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[data-price-history="999"]`
-- `.product-card.ab_omni_kampaign[data-product_id="4053423321579"]`
-- `.product-card__product-price.prrc[data-product_id="4053423321579"]`
-- `.product-card.ab_omni_kampaign[data-product_id="4059952589077"]`
-- `.product-card__product-price.prrc[data-product_id="4059952589077"]`
-- `.product-card.ab_omni_kampaign[data-product_id="3165140790406"]`
-- `.product-card__product-price.prrc[data-product_id="3165140790406"]`
-- `.product-card.ab_omni_kampaign[data-product_id="3165140654364"]`
-- `.product-card__product-price.prrc[data-product_id="3165140654364"]`
 - `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card[data-product_id="5035048614099"][data-price-history="3990"]`
 - `.campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price[data-product_id="5035048614099"][data-price-history="3990"]`
 - `.product-card[data-product_id="5035048113370"][data-price-history="2190"]`
