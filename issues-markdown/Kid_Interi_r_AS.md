@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-08-03T00:53:37.418Z
+**Timestamp:** 2026-08-04T01:09:12.788Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `div:nth-child(11) > .hy.ex.ez > .f4.f5.b6 > .f6.f7.f8 > .f9.fa.fb > .fd.ch.cg > .eu.bi.br > .fg.fh.hz > .el.eu.c > .bq.cs.bs > .b7.c.bj > .i0.i1.fj:nth-child(1)`
+- `div:nth-child(11) > .hy.ex.ez > .f4.f5.b6 > .f6.f7.f8 > .f9.fa.fb > .fd.ch.cg > .eu.bi.br > .fg.fh.hz > .el.eu.c > .bq.cs.bs > .b7.c.bj > .i1.i2.fj:nth-child(1)`
 
 ### Heading levels should only increase by one
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `div:nth-child(9) > .kh.ki.kj > .l5.l6.gp > .fu.br > div > div > .ch.cg.et > .l7.gq.gr > .gv.gw.gx`
+- `div:nth-child(9) > .ki.kj.kk > .l6.l7.gp > .fu.br > div > div > .ch.cg.et > .l8.gq.gr > .gv.gw.gx`
 - `div:nth-child(11) > .hy.ex.ez > .f4.f5.b6 > .al.cn.eu > div > div > .ch.cg.et > .gs.gq.gr > .gv.gw.gx`
 
 ### Document should not have more than one banner landmark

@@ -1,6 +1,6 @@
 # WCAG Violations Report for LO - Landsorganisasjonen i Norge
 
-**Timestamp:** 2026-08-03T00:54:37.271Z
+**Timestamp:** 2026-08-04T01:10:02.609Z
 **URL:** [https://www.lo.no/#](https://www.lo.no/#)
 **Total Violations:** 3
 
@@ -12,17 +12,18 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 9
+- **Count:** 10
 
 #### Affected Elements:
 
 - `.articleTeaser--large > .articleTeaser__image > .image > .is-loaded`
-- `.articleTeaser--medium.articleTeaser:nth-child(6) > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(8) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(5) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(7) > .articleTeaser__image > .image > img`
 - `.articleTeaser--medium.articleTeaser:nth-child(9) > .articleTeaser__image > .image > img`
-- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--yellow:nth-child(14) > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(17) > .articleTeaser__image > .image > img`
-- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--yellow:nth-child(18) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(10) > .articleTeaser__image > .image > img`
+- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--yellow:nth-child(15) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(18) > .articleTeaser__image > .image > img`
+- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--yellow:nth-child(19) > .articleTeaser__image > .image > img`
 - `.themeTeaser--featured.themeTeaser:nth-child(2) > .image > img`
 - `.themeTeaser--featured.themeTeaser:nth-child(3) > .image > img`
 

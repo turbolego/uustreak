@@ -1,6 +1,6 @@
 # WCAG Violations Report for Thon Hotels AS
 
-**Timestamp:** 2026-08-03T01:18:01.449Z
+**Timestamp:** 2026-08-04T01:00:10.297Z
 **URL:** [https://www.thonhotels.no/#](https://www.thonhotels.no/#)
 **Total Violations:** 4
 
@@ -24,12 +24,13 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 8
+- **Count:** 9
 
 #### Affected Elements:
 
 - `img[sizes="50vw"]`
-- `.teaser-section-bg > section > .story-teaser-wrapper > .story-teaser > .story-teaser__media > img[loading="lazy"]`
+- `.teaser-section-bg > section > .story-teaser-wrapper > .story-teaser:nth-child(1) > .story-teaser__media > img[loading="lazy"]`
+- `.teaser-section-bg > section > .story-teaser-wrapper > .story-teaser:nth-child(2) > .story-teaser__media > img[loading="lazy"]`
 - `.story-teaser:nth-child(1) > .story-teaser__media > img[sizes="100vw"][title=""][loading="lazy"]`
 - `.story-teaser-wrapper > .story-teaser:nth-child(2) > .story-teaser__media > img[sizes="100vw"][title=""][loading="lazy"]`
 - `.story-teaser-slider > .story-teaser:nth-child(2) > .story-teaser__media > img[sizes="100vw"][title=""][loading="lazy"]`

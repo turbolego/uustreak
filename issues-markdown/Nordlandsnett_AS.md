@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordlandsnett AS
 
-**Timestamp:** 2026-08-03T01:13:59.723Z
+**Timestamp:** 2026-08-04T00:55:21.519Z
 **URL:** [https://arva.no/hjem](https://arva.no/hjem)
 **Total Violations:** 5
 
@@ -41,7 +41,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 13
+- **Count:** 12
 
 #### Affected Elements:
 
@@ -57,7 +57,6 @@
 - `#Article-11647 > .clear[data-v-fab35f16=""][data-v-05e2877b=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-05e2877b=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
 - `#Article-11615 > .clear[data-v-fab35f16=""][data-v-05e2877b=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-05e2877b=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
 - `a[href="/?id=443556"][target=""][data-v-3e0b142e=""]`
-- `#Article-11142 > .clear[data-v-fab35f16=""][data-v-05e2877b=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-05e2877b=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
 
 ### Page should contain a level-one heading
 
@@ -77,13 +76,16 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 12
+- **Count:** 15
 
 #### Affected Elements:
 
-- `.w_carousel_image`
-- `.w_carousel_title`
-- `.w_carousel_intro`
+- `img[width="2772"]`
+- `.w_carousel_slide[current-slide="0"][data-v-da2a36c6=""]:nth-child(1) > .w_carousel_columns.w_carousel_columns_1[data-v-d3df454e=""] > .w_carousel_column[role="article"][data-v-0eb9fc4d=""] > .w_carousel_caption[data-v-0eb9fc4d=""][data-v-70f02fcd=""] > .w_carousel_caption_inner[data-v-70f02fcd=""] > .w_carousel_title[role="link"][data-v-db978f5c=""]`
+- `.w_carousel_slide[current-slide="0"][data-v-da2a36c6=""]:nth-child(1) > .w_carousel_columns.w_carousel_columns_1[data-v-d3df454e=""] > .w_carousel_column[role="article"][data-v-0eb9fc4d=""] > .w_carousel_caption[data-v-0eb9fc4d=""][data-v-70f02fcd=""] > .w_carousel_caption_inner[data-v-70f02fcd=""] > .w_carousel_intro[data-v-bf094742=""][data-v-70f02fcd=""]`
+- `img[width="5957"]`
+- `.w_carousel_slide[current-slide="0"][data-v-da2a36c6=""]:nth-child(2) > .w_carousel_columns.w_carousel_columns_1[data-v-d3df454e=""] > .w_carousel_column[role="article"][data-v-0eb9fc4d=""] > .w_carousel_caption[data-v-0eb9fc4d=""][data-v-70f02fcd=""] > .w_carousel_caption_inner[data-v-70f02fcd=""] > .w_carousel_title[role="link"][data-v-db978f5c=""]`
+- `.w_carousel_slide[current-slide="0"][data-v-da2a36c6=""]:nth-child(2) > .w_carousel_columns.w_carousel_columns_1[data-v-d3df454e=""] > .w_carousel_column[role="article"][data-v-0eb9fc4d=""] > .w_carousel_caption[data-v-0eb9fc4d=""][data-v-70f02fcd=""] > .w_carousel_caption_inner[data-v-70f02fcd=""] > .w_carousel_intro[data-v-bf094742=""][data-v-70f02fcd=""]`
 - `div[data-id="483468145"] > .block-title[data-v-7ff3c8e8=""]`
 - `.layout-mixed_layout > .block-TextAreaAdvanced-inner[data-v-16aee765=""] > .block-TextAreaAdvanced-html.editorContent[data-v-16aee765=""]`
 - `figure:nth-child(1)`
