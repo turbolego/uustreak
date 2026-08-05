@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-08-04T01:09:12.788Z
+**Timestamp:** 2026-08-05T01:20:12.122Z
 **URL:** [https://www.kid.no/#](https://www.kid.no/#)
 **Total Violations:** 6
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `div:nth-child(11) > .hy.ex.ez > .f4.f5.b6 > .f6.f7.f8 > .f9.fa.fb > .fd.ch.cg > .eu.bi.br > .fg.fh.hz > .el.eu.c > .bq.cs.bs > .b7.c.bj > .i1.i2.fj:nth-child(1)`
+- `div:nth-child(9) > .ex.ey.f0 > .f4.f5.b6 > .f6.f7.f8 > .f9.fa.fb > .fd.cg.cf > .et.bi.bq > .ff.fg.fe > .ek.c.et > .bp.cr.br > .b7.c.bj > .fo.fp.fs:nth-child(1)`
 
 ### Heading levels should only increase by one
 
@@ -36,12 +36,13 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
-- `div:nth-child(9) > .ki.kj.kk > .l6.l7.gp > .fu.br > div > div > .ch.cg.et > .l8.gq.gr > .gv.gw.gx`
-- `div:nth-child(11) > .hy.ex.ez > .f4.f5.b6 > .al.cn.eu > div > div > .ch.cg.et > .gs.gq.gr > .gv.gw.gx`
+- `div:nth-child(7) > .k4.k5.k6 > .la.gp.lb > .fy.bq > div > div > .lc.kb.lb > .lb.bq > .ld.gq.gr > .le.gt.gv`
+- `div:nth-child(9) > .ex.ey.f0 > .f4.f5.b6 > .al.cm.et > div > div > .cg.cf.es > .gs.gq.gr > .gt.gv.gw`
+- `div:nth-child(10) > .k4.k5.k6 > .la.gp.lb > .fy.bq > div > div > .lc.kb.lb > .lb.bq > .ld.gq.gr > .le.gt.gv`
 
 ### Document should not have more than one banner landmark
 
@@ -66,7 +67,7 @@
 #### Affected Elements:
 
 - `#coiOverlay`
-- `div:nth-child(2) > .h0.h1.h2 > .h9.h6.h7 > .al > .b[role="region"][aria-roledescription="carousel"]`
+- `div:nth-child(2) > .h0.h1.h2 > .h8.hb.h6 > .al > .b[role="region"][aria-roledescription="carousel"]`
 
 ### All page content should be contained by landmarks
 

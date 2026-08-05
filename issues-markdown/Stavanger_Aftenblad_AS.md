@@ -1,8 +1,8 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-08-04T01:13:14.433Z
+**Timestamp:** 2026-08-05T01:26:10.050Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -41,9 +41,9 @@
 
 #### Affected Elements:
 
+- `track-element[data-track-id="teaser:113197"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
+- `track-element[data-track-id="teaser:113159"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
 - `track-element[data-track-id="teaser:113188"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
-- `track-element[data-track-id="teaser:113169"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
-- `track-element[data-track-id="teaser:113161"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
 
 ### All page content should be contained by landmarks
 
@@ -56,3 +56,15 @@
 #### Affected Elements:
 
 - `.sch-datacontroller__text`
+
+### <svg> elements with an img role must have alternative text
+
+- **Impact:** serious
+- **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/svg-img-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
+- **Count:** 1
+
+#### Affected Elements:
+
+- `._dice_5vebx_1`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sola Strand Hotel
 
-**Timestamp:** 2026-08-04T00:58:01.818Z
+**Timestamp:** 2026-08-05T01:26:26.404Z
 **URL:** [https://www.solastrandhotel.no/#](https://www.solastrandhotel.no/#)
 **Total Violations:** 5
 
@@ -31,17 +31,18 @@
 
 - `.header-display-desktop > .header-actions.header-actions--right > .language-picker-desktop[aria-controls="language-picker-menu"][aria-label="language picker"]`
 
-### Frames with focusable content must not have tabindex=-1
+### Frames must have an accessible name
 
 - **Impact:** serious
-- **Description:** Ensure <frame> and <iframe> elements with focusable content do not have tabindex=-1
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-focusable-content?application=playwright
-- **Tags:** cat.keyboard, wcag2a, wcag211, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, RGAAv4, RGAA-7.3.2
-- **Count:** 1
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video.ready, html`
+- `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video.ready`
+- `div[data-config-url="https://vimeo.com/1043637275"] > div > .background-video.ready`
 
 ### Heading levels should only increase by one
 

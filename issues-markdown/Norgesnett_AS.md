@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norgesnett AS
 
-**Timestamp:** 2026-08-04T00:56:05.833Z
+**Timestamp:** 2026-08-05T01:24:11.462Z
 **URL:** [https://norgesnett.no/](https://norgesnett.no/)
 **Total Violations:** 7
 
