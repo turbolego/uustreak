@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordlandsnett AS
 
-**Timestamp:** 2026-08-05T01:23:17.669Z
+**Timestamp:** 2026-08-06T02:43:24.800Z
 **URL:** [https://arva.no/hjem](https://arva.no/hjem)
 **Total Violations:** 5
 
@@ -81,11 +81,11 @@
 #### Affected Elements:
 
 - `img[width="2772"]`
-- `.w_carousel_slide[current-slide="0"][data-v-da2a36c6=""]:nth-child(1) > .w_carousel_columns.w_carousel_columns_1[data-v-d3df454e=""] > .w_carousel_column[role="article"][data-v-0eb9fc4d=""] > .w_carousel_caption[data-v-0eb9fc4d=""][data-v-70f02fcd=""] > .w_carousel_caption_inner[data-v-70f02fcd=""] > .w_carousel_title[role="link"][data-v-db978f5c=""]`
-- `.w_carousel_slide[current-slide="0"][data-v-da2a36c6=""]:nth-child(1) > .w_carousel_columns.w_carousel_columns_1[data-v-d3df454e=""] > .w_carousel_column[role="article"][data-v-0eb9fc4d=""] > .w_carousel_caption[data-v-0eb9fc4d=""][data-v-70f02fcd=""] > .w_carousel_caption_inner[data-v-70f02fcd=""] > .w_carousel_intro[data-v-bf094742=""][data-v-70f02fcd=""]`
+- `.w_carousel_slide[current-slide="0"][data-v-da2a36c6=""]:nth-child(1) > .w_carousel_columns.w_carousel_columns_1[data-v-d3df454e=""] > .w_carousel_column[role="article"][data-v-24b07654=""] > .w_carousel_caption[data-v-24b07654=""][data-v-418e343b=""] > .w_carousel_caption_inner[data-v-418e343b=""] > .w_carousel_title[role="link"][data-v-db978f5c=""]`
+- `.w_carousel_slide[current-slide="0"][data-v-da2a36c6=""]:nth-child(1) > .w_carousel_columns.w_carousel_columns_1[data-v-d3df454e=""] > .w_carousel_column[role="article"][data-v-24b07654=""] > .w_carousel_caption[data-v-24b07654=""][data-v-418e343b=""] > .w_carousel_caption_inner[data-v-418e343b=""] > .w_carousel_intro[data-v-bf094742=""][data-v-418e343b=""]`
 - `img[width="5957"]`
-- `.w_carousel_slide[current-slide="0"][data-v-da2a36c6=""]:nth-child(2) > .w_carousel_columns.w_carousel_columns_1[data-v-d3df454e=""] > .w_carousel_column[role="article"][data-v-0eb9fc4d=""] > .w_carousel_caption[data-v-0eb9fc4d=""][data-v-70f02fcd=""] > .w_carousel_caption_inner[data-v-70f02fcd=""] > .w_carousel_title[role="link"][data-v-db978f5c=""]`
-- `.w_carousel_slide[current-slide="0"][data-v-da2a36c6=""]:nth-child(2) > .w_carousel_columns.w_carousel_columns_1[data-v-d3df454e=""] > .w_carousel_column[role="article"][data-v-0eb9fc4d=""] > .w_carousel_caption[data-v-0eb9fc4d=""][data-v-70f02fcd=""] > .w_carousel_caption_inner[data-v-70f02fcd=""] > .w_carousel_intro[data-v-bf094742=""][data-v-70f02fcd=""]`
+- `.w_carousel_slide[current-slide="0"][data-v-da2a36c6=""]:nth-child(2) > .w_carousel_columns.w_carousel_columns_1[data-v-d3df454e=""] > .w_carousel_column[role="article"][data-v-24b07654=""] > .w_carousel_caption[data-v-24b07654=""][data-v-418e343b=""] > .w_carousel_caption_inner[data-v-418e343b=""] > .w_carousel_title[role="link"][data-v-db978f5c=""]`
+- `.w_carousel_slide[current-slide="0"][data-v-da2a36c6=""]:nth-child(2) > .w_carousel_columns.w_carousel_columns_1[data-v-d3df454e=""] > .w_carousel_column[role="article"][data-v-24b07654=""] > .w_carousel_caption[data-v-24b07654=""][data-v-418e343b=""] > .w_carousel_caption_inner[data-v-418e343b=""] > .w_carousel_intro[data-v-bf094742=""][data-v-418e343b=""]`
 - `div[data-id="483468145"] > .block-title[data-v-7ff3c8e8=""]`
 - `.layout-mixed_layout > .block-TextAreaAdvanced-inner[data-v-16aee765=""] > .block-TextAreaAdvanced-html.editorContent[data-v-16aee765=""]`
 - `figure:nth-child(1)`

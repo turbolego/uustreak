@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-08-05T01:16:01.146Z
+**Timestamp:** 2026-08-06T02:38:11.674Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 7
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `.has-row-header.color_mobile_no_bg_color.hasContentPadding > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(16) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52) > h5`
 - `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(83) > h5`
@@ -82,46 +82,46 @@
 #### Affected Elements:
 
 - `h1`
-- `#notice-10466530 > .content > h2`
-- `#notice-10466530 > .content > .meta`
-- `#notice-10466488 > .content > h2`
-- `#notice-10466488 > .content > .meta`
-- `#notice-10466487 > .content > h2`
-- `#notice-10466487 > .content > .meta`
-- `#notice-10466486 > .content > h2`
-- `#notice-10466486 > .content > .meta`
-- `#notice-10466252 > .content > h2`
-- `#notice-10466252 > .content > .meta`
-- `#notice-10466248 > .content > h2`
-- `#notice-10466248 > .content > .meta`
-- `div[title="Kontroll på boligbrann i Oslo"] > h2`
-- `div[title="Kontroll på boligbrann i Oslo"] > .meta`
-- `div[title="Oslo: Brann i leilighetsbygg"] > h2`
-- `div[title="Oslo: Brann i leilighetsbygg"] > .meta`
-- `#notice-10466053 > .content > h2`
-- `#notice-10466053 > .content > .meta`
-- `#notice-10465990 > .content > h2`
-- `time[datetime="2026-08-04T12:00:58.000Z"]`
-- `#notice-10465780 > .content > h2`
-- `time[datetime="2026-08-04T10:52:32.000Z"]`
-- `#notice-10465664 > .content > h2`
-- `time[datetime="2026-08-04T09:51:57.000Z"]`
-- `#notice-10465588 > .content > h2`
-- `time[datetime="2026-08-04T08:56:34.000Z"]`
-- `#notice-10465514 > .content > h2`
-- `time[datetime="2026-08-04T08:22:40.000Z"]`
-- `#notice-10465390 > .content > h2`
-- `time[datetime="2026-08-04T08:21:52.000Z"]`
-- `#notice-10465368 > .content > h2`
-- `time[datetime="2026-08-04T08:05:13.000Z"]`
-- `#notice-10465281 > .content > h2`
-- `time[datetime="2026-08-04T06:55:37.000Z"]`
-- `#notice-10465182 > .content > h2`
-- `time[datetime="2026-08-04T06:16:42.000Z"]`
-- `#notice-10465158 > .content > h2`
-- `time[datetime="2026-08-04T05:28:32.000Z"]`
-- `#notice-10465157 > .content > h2`
-- `time[datetime="2026-08-04T05:27:30.000Z"]`
+- `div[title="Datainnbrudd hos Ryde "] > h2`
+- `div[title="Datainnbrudd hos Ryde "] > .meta`
+- `#notice-10468413 > .content > h2`
+- `#notice-10468413 > .content > .meta`
+- `div[title="Fire menn stukket ned i London"] > h2`
+- `div[title="Fire menn stukket ned i London"] > .meta`
+- `#notice-10468383 > .content > h2`
+- `#notice-10468383 > .content > .meta`
+- `#notice-10468337 > .content > h2`
+- `#notice-10468337 > .content > .meta`
+- `#notice-10468336 > .content > h2`
+- `#notice-10468336 > .content > .meta`
+- `#notice-10467864 > .content > h2`
+- `#notice-10467864 > .content > .meta`
+- `#notice-10467667 > .content > h2`
+- `time[datetime="2026-08-05T11:55:18.000Z"]`
+- `div[title="Putin utnevner dronesjef"] > h2`
+- `time[datetime="2026-08-05T11:16:54.000Z"]`
+- `#notice-10467502 > .content > h2`
+- `time[datetime="2026-08-05T11:08:49.000Z"]`
+- `#notice-10467451 > .content > h2`
+- `time[datetime="2026-08-05T10:53:21.000Z"]`
+- `#notice-10467410 > .content > h2`
+- `time[datetime="2026-08-05T10:42:11.000Z"]`
+- `#notice-10467399 > .content > h2`
+- `time[datetime="2026-08-05T10:39:09.000Z"]`
+- `#notice-10467398 > .content > h2`
+- `time[datetime="2026-08-05T10:38:17.000Z"]`
+- `#notice-10466737 > .content > h2`
+- `time[datetime="2026-08-05T07:26:21.000Z"]`
+- `div[title="14 døde av lynnedslag i India"] > h2`
+- `time[datetime="2026-08-05T06:01:14.000Z"]`
+- `#notice-10466607 > .content > h2`
+- `time[datetime="2026-08-05T05:37:38.000Z"]`
+- `#notice-10466606 > .content > h2`
+- `time[datetime="2026-08-05T05:36:57.000Z"]`
+- `#notice-10466605 > .content > h2`
+- `time[datetime="2026-08-05T05:36:34.000Z"]`
+- `#notice-10466604 > .content > h2`
+- `time[datetime="2026-08-05T05:36:12.000Z"]`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
@@ -134,7 +134,7 @@
 - `#article_list_10372156 > .content > .lab-scrollbox-headline.headline[itemprop="headline"]`
 - `#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(14)`
-- `.has-row-header.color_mobile_no_bg_color.hasContentPadding`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(16)`
 - `#article_list_9904930 > .inner.fullwidthTarget.content`
 - `.row.large-12.small-12:nth-child(18)`
 - `.row.large-12.small-12:nth-child(19)`
@@ -204,7 +204,7 @@
 - `.row.large-12.small-12:nth-child(75)`
 - `.row.large-12.small-12:nth-child(76)`
 - `.row.large-12.small-12:nth-child(77)`
-- `.bg-black.color_mobile_bg-black.t34`
+- `.bg-black.color_mobile_bg-black.lab-scrollbox-headline`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(1)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(2)`
 - `.tm19.color_mobile_no_bg_color.primary > .t14[data-lab-text_size_desktop="14"]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-08-05T01:28:38.976Z
+**Timestamp:** 2026-08-06T03:02:06.586Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
 **Total Violations:** 7
 
@@ -45,7 +45,7 @@
 
 - `.medium.card-wrap[data-v-cfd0e883=""]:nth-child(1) > .card-vertical[gray="false"][compact="false"] > .content[data-v-00780da5=""] > .margin-bottom-s.title-m`
 - `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-header[data-v-89afb171=""] > .margin-top-3xl.padding-top-3xs`
-- `.dropdown-category.footer.dark:nth-child(1) > .dropdown-link[data-v-9b5b7873=""] > .dropdown-header.hidden-mobile[data-v-9b5b7873=""] > h6`
+- `.dropdown-category.footer.dark:nth-child(1) > .dropdown-link[data-v-d418c31d=""] > .dropdown-header.hidden-mobile[data-v-d418c31d=""] > h6`
 - `#privacy_prompt_text2 > h4`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-08-05T01:26:10.050Z
+**Timestamp:** 2026-08-06T02:45:46.026Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
 **Total Violations:** 5
 
@@ -41,9 +41,9 @@
 
 #### Affected Elements:
 
+- `audio-play-button[title="De fire festers\a nachspiel"]`
 - `track-element[data-track-id="teaser:113197"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
 - `track-element[data-track-id="teaser:113159"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
-- `track-element[data-track-id="teaser:113188"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
 
 ### All page content should be contained by landmarks
 

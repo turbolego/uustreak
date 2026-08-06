@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Danvik
 
-**Timestamp:** 2026-08-05T01:26:31.564Z
+**Timestamp:** 2026-08-06T02:46:01.128Z
 **URL:** [https://www.danvik.no/#](https://www.danvik.no/#)
 **Total Violations:** 3
 
@@ -12,10 +12,11 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 4
+- **Count:** 5
 
 #### Affected Elements:
 
+- `#block-yui_3_17_2_1_1773847368871_5274 > .sqs-block-content > .sqs-text-block-container > .sqs-html-content[data-sqsp-text-block-content=""] > h3:nth-child(1)`
 - `#block-yui_3_17_2_1_1773847368871_5274 > .sqs-block-content > .sqs-text-block-container > .sqs-html-content[data-sqsp-text-block-content=""] > h3:nth-child(2)`
 - `#yui_3_17_2_1_1773847368871_4550`
 - `#yui_3_17_2_1_1773847368871_4552`

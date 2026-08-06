@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-08-05T01:13:49.504Z
+**Timestamp:** 2026-08-06T02:36:34.116Z
 **URL:** [https://www.bt.no/#](https://www.bt.no/#)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -40,9 +40,9 @@
 
 #### Affected Elements:
 
+- `audio-play-button[title="Ingen har\a flyskam lenger"]`
 - `audio-play-button[title="Kvelden som\a hadde alt"]`
 - `track-element[data-track-id="teaser:127071"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="bt"]`
-- `audio-play-button[title="Drama, drama,\a drama"]`
 
 ### All page content should be contained by landmarks
 
@@ -55,3 +55,15 @@
 #### Affected Elements:
 
 - `.sch-datacontroller__text`
+
+### <svg> elements with an img role must have alternative text
+
+- **Impact:** serious
+- **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/svg-img-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
+- **Count:** 1
+
+#### Affected Elements:
+
+- `._hearts_4walc_1`
