@@ -1,22 +1,10 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-08-06T02:45:46.026Z
+**Timestamp:** 2026-08-07T02:54:27.868Z
 **URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
-**Total Violations:** 5
+**Total Violations:** 3
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe[title="Tips oss"], .headline`
 
 ### Links must have discernible text
 
@@ -43,7 +31,7 @@
 
 - `audio-play-button[title="De fire festers\a nachspiel"]`
 - `track-element[data-track-id="teaser:113197"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
-- `track-element[data-track-id="teaser:113159"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
+- `track-element[data-track-id="teaser:113188"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
 
 ### All page content should be contained by landmarks
 
@@ -56,15 +44,3 @@
 #### Affected Elements:
 
 - `.sch-datacontroller__text`
-
-### <svg> elements with an img role must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/svg-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
-- **Count:** 1
-
-#### Affected Elements:
-
-- `._dice_5vebx_1`

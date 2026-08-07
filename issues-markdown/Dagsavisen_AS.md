@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-08-06T02:38:11.674Z
+**Timestamp:** 2026-08-07T03:03:08.324Z
 **URL:** [https://www.dagsavisen.no/#](https://www.dagsavisen.no/#)
 **Total Violations:** 7
 
@@ -43,9 +43,9 @@
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(16) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(44) > h5`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(52) > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(83) > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(88) > h5`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary > h5`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(87) > h5`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(92) > h5`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -77,51 +77,51 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 149
+- **Count:** 154
 
 #### Affected Elements:
 
 - `h1`
-- `div[title="Datainnbrudd hos Ryde "] > h2`
-- `div[title="Datainnbrudd hos Ryde "] > .meta`
-- `#notice-10468413 > .content > h2`
-- `#notice-10468413 > .content > .meta`
-- `div[title="Fire menn stukket ned i London"] > h2`
-- `div[title="Fire menn stukket ned i London"] > .meta`
-- `#notice-10468383 > .content > h2`
-- `#notice-10468383 > .content > .meta`
-- `#notice-10468337 > .content > h2`
-- `#notice-10468337 > .content > .meta`
-- `#notice-10468336 > .content > h2`
-- `#notice-10468336 > .content > .meta`
-- `#notice-10467864 > .content > h2`
-- `#notice-10467864 > .content > .meta`
-- `#notice-10467667 > .content > h2`
-- `time[datetime="2026-08-05T11:55:18.000Z"]`
-- `div[title="Putin utnevner dronesjef"] > h2`
-- `time[datetime="2026-08-05T11:16:54.000Z"]`
-- `#notice-10467502 > .content > h2`
-- `time[datetime="2026-08-05T11:08:49.000Z"]`
-- `#notice-10467451 > .content > h2`
-- `time[datetime="2026-08-05T10:53:21.000Z"]`
-- `#notice-10467410 > .content > h2`
-- `time[datetime="2026-08-05T10:42:11.000Z"]`
-- `#notice-10467399 > .content > h2`
-- `time[datetime="2026-08-05T10:39:09.000Z"]`
-- `#notice-10467398 > .content > h2`
-- `time[datetime="2026-08-05T10:38:17.000Z"]`
-- `#notice-10466737 > .content > h2`
-- `time[datetime="2026-08-05T07:26:21.000Z"]`
-- `div[title="14 døde av lynnedslag i India"] > h2`
-- `time[datetime="2026-08-05T06:01:14.000Z"]`
-- `#notice-10466607 > .content > h2`
-- `time[datetime="2026-08-05T05:37:38.000Z"]`
-- `#notice-10466606 > .content > h2`
-- `time[datetime="2026-08-05T05:36:57.000Z"]`
-- `#notice-10466605 > .content > h2`
-- `time[datetime="2026-08-05T05:36:34.000Z"]`
-- `#notice-10466604 > .content > h2`
-- `time[datetime="2026-08-05T05:36:12.000Z"]`
+- `#notice-10470230 > .content > h2`
+- `#notice-10470230 > .content > .meta`
+- `#notice-10470149 > .content > h2`
+- `#notice-10470149 > .content > .meta`
+- `#notice-10470146 > .content > h2`
+- `#notice-10470146 > .content > .meta`
+- `#notice-10470022 > .content > h2`
+- `#notice-10470022 > .content > .meta`
+- `div[title="Ceuta: 100 migranter omkom"] > h2`
+- `div[title="Ceuta: 100 migranter omkom"] > .meta`
+- `#notice-10469692 > .content > h2`
+- `#notice-10469692 > .content > .meta`
+- `#notice-10469554 > .content > h2`
+- `time[datetime="2026-08-06T11:55:48.000Z"]`
+- `#notice-10469491 > .content > h2`
+- `time[datetime="2026-08-06T11:39:55.000Z"]`
+- `#notice-10469296 > .content > h2`
+- `time[datetime="2026-08-06T10:42:45.000Z"]`
+- `#notice-10469295 > .content > h2`
+- `time[datetime="2026-08-06T10:42:26.000Z"]`
+- `#notice-10469262 > .content > h2`
+- `time[datetime="2026-08-06T10:32:28.000Z"]`
+- `#notice-10469193 > .content > h2`
+- `time[datetime="2026-08-06T10:16:10.000Z"]`
+- `#notice-10468933 > .content > h2`
+- `time[datetime="2026-08-06T10:00:11.000Z"]`
+- `#notice-10468834 > .content > h2`
+- `time[datetime="2026-08-06T09:22:19.000Z"]`
+- `#notice-10468722 > .content > h2`
+- `time[datetime="2026-08-06T07:53:15.000Z"]`
+- `#notice-10468500 > .content > h2`
+- `time[datetime="2026-08-06T07:04:19.000Z"]`
+- `#notice-10468458 > .content > h2`
+- `time[datetime="2026-08-06T05:32:12.000Z"]`
+- `#notice-10468457 > .content > h2`
+- `time[datetime="2026-08-06T05:31:25.000Z"]`
+- `#notice-10468456 > .content > h2`
+- `time[datetime="2026-08-06T05:29:56.000Z"]`
+- `#notice-10468455 > .content > h2`
+- `time[datetime="2026-08-06T05:29:31.000Z"]`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
@@ -204,6 +204,11 @@
 - `.row.large-12.small-12:nth-child(75)`
 - `.row.large-12.small-12:nth-child(76)`
 - `.row.large-12.small-12:nth-child(77)`
+- `.row.large-12.small-12:nth-child(78)`
+- `.row.large-12.small-12:nth-child(79)`
+- `.row.large-12.small-12:nth-child(80)`
+- `.row.large-12.small-12:nth-child(81)`
+- `.row.large-12.small-12:nth-child(82)`
 - `.bg-black.color_mobile_bg-black.lab-scrollbox-headline`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(1)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(2)`
@@ -222,13 +227,13 @@
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(13)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(14)`
 - `.bg-black.color_mobile_bg-black.hasContentPadding > .scroll-container.swipehelper.snap-container-x > .scroll-item.snap-element:nth-child(15)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(79)`
-- `.row.large-12.small-12:nth-child(80)`
-- `.row.large-12.small-12:nth-child(81)`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(83)`
-- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(85)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(84)`
+- `.row.large-12.small-12:nth-child(85)`
+- `.row.large-12.small-12:nth-child(86)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(88)`
+- `.bg-quaternary.color_mobile_bg-quaternary.hasContentPadding:nth-child(90)`
 - `.has-row-header.bg-quaternary.color_mobile_bg-quaternary`
-- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(87)`
+- `.bg-tertiary.color_mobile_bg-tertiary.has-row-header:nth-child(92)`
 - `.powered-by`
 
 ### Scrollable region must have keyboard access

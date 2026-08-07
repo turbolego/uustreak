@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2026-08-06T02:59:22.867Z
+**Timestamp:** 2026-08-07T02:53:54.586Z
 **URL:** [https://oslonye.no/#](https://oslonye.no/#)
 **Total Violations:** 4
 
@@ -45,13 +45,13 @@
 - `.alignment-right > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .hovedscenen.alignment-top.bg-none > .les-mer-link`
 - `.alignment-left.hovedscenen.bg-none > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .centralteatret.alignment-top.bg-none > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.centralteatret.bg-none > .les-mer-link`
 - `.alignment-left.centralteatret.bg-none > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .centralteatret.alignment-top.bg-none > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(2) > .centralteatret.alignment-top.bg-none > .les-mer-link`
-- `.cafescenen.centralteatret.alignment-top > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .centralteatret.alignment-top.bg-none > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3) > .centralteatret.alignment-top.bg-none > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .alignment-top.centralteatret.bg-none > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(2) > .alignment-top.centralteatret.bg-none > .les-mer-link`
+- `.cafescenen.alignment-top.centralteatret > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .alignment-top.centralteatret.bg-none > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3) > .alignment-top.centralteatret.bg-none > .les-mer-link`
 - `.large-4.cpt.medium-6:nth-child(1) > .hovedscenen.alignment-top.bg-none > .les-mer-link`
 - `.large-4.cpt.medium-6:nth-child(3) > .hovedscenen.alignment-top.bg-none > .les-mer-link`
 - `.scroll-to-top`
@@ -62,7 +62,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 24
+- **Count:** 27
 
 #### Affected Elements:
 
@@ -71,8 +71,8 @@
 - `.hero-banner > .grid-container`
 - `.theater-list > li:nth-child(1)`
 - `.theater-list > li:nth-child(2)`
-- `.border-orange.advertise.text-center > .text-yellow.content-holder.heading-small > .title`
-- `.text-yellow.content-holder.heading-small > .short-description`
+- `.border-orange.advertise.text-center > .text-yellow.heading-small.content-holder > .title`
+- `.text-yellow.heading-small.content-holder > .short-description`
 - `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6`
 - `.text-orange > .title`
 - `.text-orange > .short-description`
@@ -82,11 +82,14 @@
 - `.forestillinger-blocks-panel:nth-child(7)`
 - `.forestillinger-blocks-panel:nth-child(8)`
 - `.forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1)`
-- `.rounded.border-green.advertise > .text-yellow.content-holder.heading-small > .title`
+- `.rounded.border-green.advertise > .text-yellow.heading-small.content-holder > .title`
 - `.forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3)`
 - `.forestillinger-blocks-panel:nth-child(10) > .grid-container > .grid-padding-x.grid-x > .large-8.medium-6.cell`
 - `.text-green > .title`
 - `.forestillinger-blocks-panel:nth-child(11)`
 - `.current-month`
 - `.desktop`
-- `.msg`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(2)`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3)`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4)`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(5)`
