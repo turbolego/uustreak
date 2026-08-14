@@ -307,6 +307,9 @@ jobs:
     needs: [wcag-test, merge-summaries]
     runs-on: ubuntu-24.04
     if: success()
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
