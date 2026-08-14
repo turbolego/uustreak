@@ -189,9 +189,9 @@ jobs:
           retention-days: 3
 
   merge-summaries:
-    needs: wcag-test
+    needs: [gate, wcag-test]
     runs-on: ubuntu-24.04
-    if: always()
+    if: ${{ always() && (needs.gate.outputs.run == 'true' || github.event_name == 'workflow_dispatch') && needs.wcag-test.result == 'success' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
@@ -261,7 +261,7 @@ jobs:
   deploy:
     needs: [gate, wcag-test, merge-summaries]
     runs-on: ubuntu-24.04
-    if: ${{ always() && (needs.gate.outputs.run == 'true' || github.event_name == 'workflow_dispatch') }}
+    if: ${{ always() && (needs.gate.outputs.run == 'true' || github.event_name == 'workflow_dispatch') && needs.merge-summaries.result == 'success' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
