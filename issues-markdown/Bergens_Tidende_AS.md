@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-08-07T03:01:47.754Z
-**URL:** [https://www.bt.no/#](https://www.bt.no/#)
+**Timestamp:** 2026-08-14T06:22:21.900Z
+**URL:** [https://www.bt.no/](https://www.bt.no/)
 **Total Violations:** 4
 
 ## Violation Details
@@ -40,9 +40,9 @@
 
 #### Affected Elements:
 
+- `track-element[data-track-id="teaser:127218"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="bt"]`
 - `audio-play-button[title="Ingen har\a flyskam lenger"]`
 - `audio-play-button[title="Kvelden som\a hadde alt"]`
-- `track-element[data-track-id="teaser:127071"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="bt"]`
 
 ### All page content should be contained by landmarks
 

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stiftelsen Hudøy
 
-**Timestamp:** 2026-08-07T03:10:13.026Z
-**URL:** [https://hudoy.no/#](https://hudoy.no/#)
+**Timestamp:** 2026-08-14T06:31:20.129Z
+**URL:** [https://hudoy.no/](https://hudoy.no/)
 **Total Violations:** 4
 
 ## Violation Details
@@ -62,13 +62,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 29
+- **Count:** 27
 
 #### Affected Elements:
 
-- `iframe, .FocusTarget_module_focusTarget__abd564d5`
-- `iframe, .VolumeControl_module_volumeControl__02ffae11`
-- `iframe, a`
+- `iframe, #error`
 - `.active-slide.slide-entry-wrap`
 - `#after_section_3 > .container > .template-page.content.av-content-full > .post-entry-type-page.post-entry-330.post-entry > .entry-content-wrapper.clearfix > .av_textblock_section`
 - `.post-entry-6343 > .slide-content > .entry-content-header > .slide-entry-title.entry-title[itemprop="headline"]`

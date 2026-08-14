@@ -1,7 +1,7 @@
 # WCAG Violations Report for Fürst Med-Lab AS
 
-**Timestamp:** 2026-08-07T02:48:37.406Z
-**URL:** [https://www.furst.no/#](https://www.furst.no/#)
+**Timestamp:** 2026-08-14T06:42:06.730Z
+**URL:** [https://www.furst.no/](https://www.furst.no/)
 **Total Violations:** 1
 
 ## Violation Details

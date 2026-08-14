@@ -1,7 +1,7 @@
 # WCAG Violations Report for Top Temp AS
 
-**Timestamp:** 2026-08-07T02:55:26.413Z
-**URL:** [https://www.toptemp.no/#](https://www.toptemp.no/#)
+**Timestamp:** 2026-08-14T06:37:57.442Z
+**URL:** [https://www.toptemp.no/](https://www.toptemp.no/)
 **Total Violations:** 6
 
 ## Violation Details
@@ -24,11 +24,13 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
-- `#hs_cos_wrapper_module_16847581314182_ > h3`
+- `#hs_cos_wrapper_module_17864422845865 > .image__cards > .image__cards-text > .image__cards-title`
+- `#hs_cos_wrapper_module_17864423932173 > .image__cards > .image__cards-text > .image__cards-title`
+- `#hs_cos_wrapper_module_17864422914544 > .image__cards > .image__cards-text > .image__cards-title`
 
 ### Document should not have more than one banner landmark
 
@@ -72,26 +74,31 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 19
+- **Count:** 24
 
 #### Affected Elements:
 
 - `.row-number-1`
-- `.hs-cta-embed-117543557091 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .interactive-button-wrapper`
-- `.hs-cta-embed-118207266247 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .interactive-button-wrapper`
-- `.cell_17288948801924-vertical-alignment`
-- `.row-number-9`
-- `.hs-cta-embed-118246171351 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .body-wrapper`
-- `.hs-cta-embed-118357267693 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .body-wrapper`
-- `.hs-cta-embed-118357267939 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .body-wrapper`
-- `.hs-cta-embed-118358485483 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .body-wrapper`
-- `.hs-cta-embed-118359585984 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .body-wrapper`
-- `.hs-cta-embed-118359552209 > .go812842568[aria-label="Embedded CTA"][title="Embedded CTA"], .body-wrapper`
-- `.row-number-18`
-- `.simple-heading`
-- `.row-number-22`
-- `.row-number-23`
-- `.cell_1684744938200-vertical-alignment`
-- `.row-number-27`
+- `#hs_cos_wrapper_module_17864422762677 > .simple-heading.montserrat.center`
+- `.row-number-5`
+- `.row-number-6`
+- `#hs_cos_wrapper_module_17864422845864 > .simple-heading.montserrat.center`
+- `#hs_cos_wrapper_module_17864422845865 > .image__cards`
+- `#hs_cos_wrapper_module_17864423932173 > .image__cards`
+- `#hs_cos_wrapper_module_17864422914543 > .simple-heading.montserrat.center`
+- `#hs_cos_wrapper_module_17864422914544 > .image__cards`
+- `.box.no-space:nth-child(1) > .aos-init[data-aos-delay="600"][data-aos="fade-up"]`
+- `.box.no-space:nth-child(1) > .aos-init[data-aos-delay="900"][data-aos="fade-up"]`
+- `.box.no-space:nth-child(2) > .aos-init[data-aos-delay="600"][data-aos="fade-up"]`
+- `.box.no-space:nth-child(2) > .aos-init[data-aos-delay="900"][data-aos="fade-up"]`
+- `.box.no-space:nth-child(3) > .aos-init[data-aos-delay="600"][data-aos="fade-up"]`
+- `.box.no-space:nth-child(3) > .aos-init[data-aos-delay="900"][data-aos="fade-up"]`
+- `.box.no-space:nth-child(4) > .aos-init[data-aos-delay="600"][data-aos="fade-up"]`
+- `.box.no-space:nth-child(4) > .aos-init[data-aos-delay="900"][data-aos="fade-up"]`
+- `.row-number-17`
+- `.row-number-21`
+- `.row-number-25`
 - `.row-number-29`
-- `.row-number-32`
+- `#hs_cos_wrapper_module_17864423373587 > .simple-heading.montserrat.center`
+- `.row-number-35`
+- `.row-number-36`

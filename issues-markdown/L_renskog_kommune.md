@@ -1,7 +1,7 @@
 # WCAG Violations Report for Lørenskog kommune
 
-**Timestamp:** 2026-08-07T02:50:44.151Z
-**URL:** [https://www.lorenskog.kommune.no/#](https://www.lorenskog.kommune.no/#)
+**Timestamp:** 2026-08-14T06:11:22.589Z
+**URL:** [https://www.lorenskog.kommune.no/](https://www.lorenskog.kommune.no/)
 **Total Violations:** 3
 
 ## Violation Details
@@ -48,7 +48,7 @@
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1604 > .webPartTittel`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1604_WebpartId_1604_txtSearch`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_1605`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_1606`
+- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_1856`
 - `.section:nth-child(12)`
 - `.section:nth-child(13)`
 - `.section:nth-child(15)`

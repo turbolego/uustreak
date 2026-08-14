@@ -1,6 +1,6 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-08-07T03:08:58.486Z
+**Timestamp:** 2026-08-14T06:20:06.591Z
 **URL:** [https://www.lydenavnorge.no/p4/](https://www.lydenavnorge.no/p4/)
 **Total Violations:** 7
 
@@ -18,12 +18,12 @@
 
 - `.icon-button`
 - `.is-live`
-- `.engagement-buttons[data-v-6503ba46=""][data-v-fd982181=""] > .dislike[type="button"][data-v-6503ba46=""]`
-- `.engagement-buttons[data-v-6503ba46=""][data-v-fd982181=""] > .like[data-v-09345607=""][type="button"]`
-- `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-fd982181=""] > .close[data-v-484baac5=""]`
-- `.image-container[data-v-d71032e3=""] > .play-button.pulse.show`
-- `.play-button.pulse[data-v-8df35db2=""]`
-- `.title-container[data-v-d71032e3=""] > .stroked.inverted.play-button`
+- `.engagement-buttons[data-v-4b932298=""][data-v-72670c10=""] > .dislike[type="button"][data-v-4b932298=""]`
+- `.engagement-buttons[data-v-4b932298=""][data-v-72670c10=""] > .like[data-v-ff04d4eb=""][type="button"]`
+- `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-72670c10=""] > .close[data-v-484baac5=""]`
+- `.image-container[data-v-b6f8812b=""] > .play-button.pulse.show`
+- `.play-button.pulse[data-v-4af17d0f=""]`
+- `.title-container[data-v-b6f8812b=""] > .stroked.inverted.play-button`
 - `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(1) > .show-progress.stroked.inverted`
 - `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(2) > .show-progress.stroked.inverted`
 - `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted`
@@ -39,15 +39,15 @@
 - `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted`
 - `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(4) > .show-progress.stroked.inverted`
 - `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(5) > .show-progress.stroked.inverted`
-- `.engagement-buttons[data-v-6503ba46=""][data-v-98a4a6d7=""] > .dislike[type="button"][data-v-6503ba46=""]`
-- `.engagement-buttons[data-v-6503ba46=""][data-v-98a4a6d7=""] > .like[data-v-09345607=""][type="button"]`
-- `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-98a4a6d7=""] > .close[data-v-484baac5=""]`
+- `.engagement-buttons[data-v-4b932298=""][data-v-c7614d41=""] > .dislike[type="button"][data-v-4b932298=""]`
+- `.engagement-buttons[data-v-4b932298=""][data-v-c7614d41=""] > .like[data-v-ff04d4eb=""][type="button"]`
+- `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-c7614d41=""] > .close[data-v-484baac5=""]`
 - `.play-button-background > .is-large-button.play-button.pulse`
 - `.previous`
 - `.backward`
 - `.next`
 - `.forward`
-- `.inverted[data-v-6b72616d=""]:nth-child(2)`
+- `.inverted[data-v-1bcdab5c=""]:nth-child(2)`
 - `.min-max`
 
 ### Elements must meet minimum color contrast ratio thresholds
@@ -60,9 +60,9 @@
 
 #### Affected Elements:
 
-- `.bulletin-box.compact[data-v-d71032e3=""] > .content[data-v-d71032e3=""] > .title-container[data-v-d71032e3=""] > h1[data-v-d71032e3=""]`
-- `.bulletin-box.compact[data-v-d71032e3=""] > .content[data-v-d71032e3=""] > .title-container[data-v-d71032e3=""] > h1[data-v-d71032e3=""] > span[data-v-d71032e3=""]`
-- `.bulletin-box.compact[data-v-d71032e3=""] > .content[data-v-d71032e3=""] > .info[data-v-d71032e3=""] > span[data-v-d71032e3=""]`
+- `.bulletin-box.compact[data-v-b6f8812b=""] > .content[data-v-b6f8812b=""] > .title-container[data-v-b6f8812b=""] > h1[data-v-b6f8812b=""]`
+- `.bulletin-box.compact[data-v-b6f8812b=""] > .content[data-v-b6f8812b=""] > .title-container[data-v-b6f8812b=""] > h1[data-v-b6f8812b=""] > span[data-v-b6f8812b=""]`
+- `.bulletin-box.compact[data-v-b6f8812b=""] > .content[data-v-b6f8812b=""] > .info[data-v-b6f8812b=""] > span[data-v-b6f8812b=""]`
 
 ### Images must have alternative text
 
@@ -111,7 +111,7 @@
 
 #### Affected Elements:
 
-- `.image-container[data-v-8df35db2=""] > a[data-v-8df35db2=""]`
+- `.image-container[data-v-4af17d0f=""] > a[data-v-4af17d0f=""]`
 - `.content-box.compact[data-v-d583c235=""] > .image-link[data-v-d583c235=""]`
 - `.image-link[href$="fem-pa/"][data-v-d583c235=""]`
 - `.contest-box.medium-large.item > .image-link[data-v-f1ce81f5=""]`
@@ -136,6 +136,6 @@
 #### Affected Elements:
 
 - `.mini-player-content`
-- `.engagement-buttons[data-v-6503ba46=""][data-v-98a4a6d7=""] > .heart-spawner[data-v-de1a97ea=""][width="75"]`
-- `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-98a4a6d7=""] > p[data-v-484baac5=""]`
+- `.engagement-buttons[data-v-4b932298=""][data-v-c7614d41=""] > .heart-spawner[data-v-7bdbb3dc=""][width="75"]`
+- `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-c7614d41=""] > p[data-v-484baac5=""]`
 - `.volume-slider`

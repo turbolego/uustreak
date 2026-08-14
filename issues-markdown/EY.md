@@ -1,38 +1,10 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-08-07T03:04:07.567Z
+**Timestamp:** 2026-08-14T06:32:39.211Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
-**Total Violations:** 6
+**Total Violations:** 2
 
 ## Violation Details
-
-### Certain ARIA roles must contain particular children
-
-- **Impact:** critical
-- **Description:** Ensure elements with an ARIA role that require child roles contain them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-required-children?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#navigation-c15306303c > .cmp-navigation__group[role="tablist"]`
-
-### Certain ARIA roles must be contained by particular parents
-
-- **Impact:** critical
-- **Description:** Ensure elements with an ARIA role that require parent roles are contained by them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-required-parent?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 5
-
-#### Affected Elements:
-
-- `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(1) > a[href$="insights"]`
-- `a[href$="services"][role="tab"][aria-hidden="false"]`
-- `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(3) > .nav-level-one[role="tab"][aria-hidden="false"]`
-- `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(4) > a[href$="careers"]`
-- `a[href$="about-us"][role="tab"][aria-hidden="false"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -48,41 +20,13 @@
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="6"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__image > a[data-analytics-link-click=""]`
-
-### <li> elements must be contained in a <ul> or <ol>
-
-- **Impact:** serious
-- **Description:** Ensure <li> elements are used semantically
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/listitem?application=playwright
-- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 5
-
-#### Affected Elements:
-
-- `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(1)`
-- `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(2)`
-- `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(3)`
-- `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(4)`
-- `.cmp-navigation__item--level-0.cmp-navigation__item:nth-child(5)`
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 75
+- **Count:** 92
 
 #### Affected Elements:
 
@@ -90,9 +34,12 @@
 - `.cmp-logo__link > .sr-only`
 - `.myey-login-url`
 - `img[title="Stortinget i Oslo, Karl Johan"]`
-- `.swiper-slide-visible > .up-hero-carousel__content-wrapper`
+- `.swiper-slide-visible > .up-hero-carousel__content-wrapper[data-up-hook-hero-carousel="contentWrapper"]`
 - `.up-hero-carousel__pagination`
-- `.theme-dark.cmp-container--theme-dark.cmp-container--background-color-e2e`
+- `.up-content-cards__title`
+- `.up-content-cards__list-item.up-content-cards--highlight[data-up-hook-content-cards="[listItem]"]:nth-child(1) > .up-content-cards__list-item-details`
+- `.up-content-cards__list-item.up-content-cards--highlight[data-up-hook-content-cards="[listItem]"]:nth-child(2) > .up-content-cards__list-item-details`
+- `.up-content-cards__list-item.up-content-cards--highlight[data-up-hook-content-cards="[listItem]"]:nth-child(3) > .up-content-cards__list-item-details`
 - `#promotional-1f7be6744d5a > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-1f7be6744d5a > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-d2a7d3b468ea`
@@ -115,10 +62,24 @@
 - `.cmp-subscribe__text`
 - `#button-bc60d627c8a2`
 - `.cmp-contentGrid__title`
-- `#image-render-d39d7592b2 > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
-- `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content`
-- `.cmp-teaser.cmp-separator:nth-child(2)`
-- `.cmp-news-List`
+- `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__title`
+- `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > p`
+- `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date-txt`
+- `.cmp-teaser.cmp-separator:nth-child(1) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
+- `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__title`
+- `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > p`
+- `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date-txt`
+- `.cmp-teaser.cmp-separator:nth-child(2) > div > .cmp-teaser__content > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
+- `.cmp-teaser__content:nth-child(1) > .small-cell-description > .cmp-teaser__title`
+- `.cmp-teaser__content:nth-child(1) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date-txt`
+- `.cmp-teaser__content:nth-child(1) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
+- `.cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__title`
+- `.cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date-txt`
+- `.cmp-teaser__content:nth-child(2) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
+- `.cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__title`
+- `.cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .mrxs.date-txt`
+- `.cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date__text:nth-child(3)`
+- `.cmp-teaser__content:nth-child(3) > .small-cell-description > .cmp-teaser__description > .cmp-teaser__tagline > .date__text[href$="andreas-jacobsen"]`
 - `#button-7addb05aebee`
 - `.cmp-slider__title`
 - `.cmp-slider__skip`

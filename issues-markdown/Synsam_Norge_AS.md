@@ -1,7 +1,7 @@
 # WCAG Violations Report for Synsam Norge AS
 
-**Timestamp:** 2026-08-07T02:55:42.287Z
-**URL:** [https://www.synsam.no/#](https://www.synsam.no/#)
+**Timestamp:** 2026-08-14T06:35:06.658Z
+**URL:** [https://www.synsam.no/](https://www.synsam.no/)
 **Total Violations:** 1
 
 ## Violation Details
@@ -12,9 +12,8 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.relative.isolate.flex-col:nth-child(1) > .h-full > .is-sm.is-light.ContentCard_content-card__MhjHq > .ContentCard_content-card-body__cV7he > div:nth-child(1) > h3`
-- `.ContentSection_content-section__roiLZ:nth-child(13) > .LinkCluster_link-cluster__0HLDp > .LinkCluster_link-cluster-heading__6u1_f`
+- `.LinkCluster_link-cluster-heading__6u1_f`

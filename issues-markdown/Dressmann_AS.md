@@ -1,7 +1,7 @@
 # WCAG Violations Report for Dressmann AS
 
-**Timestamp:** 2026-08-07T03:03:13.308Z
-**URL:** [https://dressmann.com/no/#](https://dressmann.com/no/#)
+**Timestamp:** 2026-08-14T06:32:24.839Z
+**URL:** [https://dressmann.com/no/](https://dressmann.com/no/)
 **Total Violations:** 3
 
 ## Violation Details
@@ -24,11 +24,10 @@
 - **Description:** Ensure that lists are structured correctly
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/list?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.ey9rwho3`
 - `.e1gatcwn2`
 
 ### All page content should be contained by landmarks

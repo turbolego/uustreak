@@ -1,69 +1,48 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2026-08-07T02:50:20.542Z
-**URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#)
-**Total Violations:** 6
+**Timestamp:** 2026-08-14T06:55:12.088Z
+**URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/)
+**Total Violations:** 5
 
 ## Violation Details
 
-### ARIA progressbar nodes must have an accessible name
+### Form elements should have a visible label
 
 - **Impact:** serious
-- **Description:** Ensure every ARIA progressbar node has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-progressbar-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag111, EN-301-549, EN-9.1.1.1, RGAAv4, RGAA-11.1.1
+- **Description:** Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/label-title-only?application=playwright
+- **Tags:** cat.forms, best-practice
+- **Count:** 3
+
+#### Affected Elements:
+
+- `#cookie_cat_functional`
+- `#cookie_cat_statistic`
+- `#cookie_cat_marketing`
+
+### Document should not have more than one banner landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has at most one banner landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-no-duplicate-banner?application=playwright
+- **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `iframe, ._55yn`
+- `#coiOverlay`
 
-### Certain ARIA roles must contain particular children
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
-- **Impact:** critical
-- **Description:** Ensure elements with an ARIA role that require child roles contain them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-required-children?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `iframe, div[role="feed"]`
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 5
-
-#### Affected Elements:
-
-- `iframe, .x1ypdohk.xe35lr7:nth-child(2) > ._eg_[role="button"] > ._eh3`
-- `iframe, .x1ypdohk.xe35lr7._51mw > ._eg_[role="button"] > ._eh3`
-- `iframe, abbr[data-utime="1786023395"] > .timestampContent`
-- `iframe, ._50f8`
-- `iframe, #feed_subtitle_1156992469791479\:4\:0 > ._1atc.fsm.fwn > .fcg`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 8
-
-#### Affected Elements:
-
-- `iframe, #u_0_1_4W`
-- `iframe, .lfloat._3-8_[target="_blank"]`
-- `iframe, #u_1_26_4q > ._302 > span > a[target="_blank"]`
-- `iframe, #u_1_8_c\/ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe, ._2l7q > a[target="_blank"]`
-- `iframe, #u_1_5_eb > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe, #u_1_6_aJ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe, #u_1_7_yo > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `#coiOverlay`
 
 ### Interactive controls must not be nested
 
@@ -77,14 +56,14 @@
 
 - `.mainMenuTrigger`
 
-### Elements marked as presentational should be consistently ignored
+### All page content should be contained by landmarks
 
-- **Impact:** minor
-- **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/presentation-role-conflict?application=playwright
-- **Tags:** cat.aria, best-practice, ACT
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `iframe, img[height="148"]`
+- `.skipLink`

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Utdanningsforbundet
 
-**Timestamp:** 2026-08-07T02:57:26.722Z
-**URL:** [https://www.utdanningsforbundet.no/#](https://www.utdanningsforbundet.no/#)
-**Total Violations:** 9
+**Timestamp:** 2026-08-14T06:43:18.281Z
+**URL:** [https://www.utdanningsforbundet.no/](https://www.utdanningsforbundet.no/)
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -29,18 +29,6 @@
 #### Affected Elements:
 
 - `.header-promotion__links > .btn--primary.btn`
-
-### Frames must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe[frameborder="0"]`
 
 ### Banner landmark should not be contained in another landmark
 
@@ -101,7 +89,7 @@
 #### Affected Elements:
 
 - `#main-wrapper`
-- `#react_0HNNJMJ5OSIBS > .local-navigation__wrapper__top[aria-label="Lokal navigasjon"]`
+- `#react_0HNNJMJ5QODPP > .local-navigation__wrapper__top[aria-label="Lokal navigasjon"]`
 
 ### [role="img"] elements must have alternative text
 
@@ -113,5 +101,5 @@
 
 #### Affected Elements:
 
-- `iframe[frameborder="0"], .ShareControl__ShareIcon-sc-1pwe6vd-0`
-- `iframe[frameborder="0"], .SubscribeLink__PlusIcon-sc-q4x3v7-0`
+- `iframe[title="episode 134 av larerrommet"], .ShareControl__ShareIcon-sc-1pwe6vd-0`
+- `iframe[title="episode 134 av larerrommet"], .SubscribeLink__PlusIcon-sc-q4x3v7-0`

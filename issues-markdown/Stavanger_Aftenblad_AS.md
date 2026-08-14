@@ -1,10 +1,22 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-08-07T02:54:27.868Z
-**URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
-**Total Violations:** 3
+**Timestamp:** 2026-08-14T06:28:58.740Z
+**URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
+**Total Violations:** 4
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[title="Tips oss"], .headline`
 
 ### Links must have discernible text
 
@@ -29,9 +41,9 @@
 
 #### Affected Elements:
 
-- `audio-play-button[title="De fire festers\a nachspiel"]`
-- `track-element[data-track-id="teaser:113197"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
-- `track-element[data-track-id="teaser:113188"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_4b03h_54._small_4b03h_76[vendor="sa"]`
+- `audio-play-button[title="What happens\a in Arendal..."]`
+- `track-element[data-track-id="teaser:113224"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="sa"]`
+- `track-element[data-track-id="teaser:113214"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="sa"]`
 
 ### All page content should be contained by landmarks
 

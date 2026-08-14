@@ -1,10 +1,23 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-08-07T02:57:23.114Z
+**Timestamp:** 2026-08-14T06:45:37.339Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.cms-campaign-banners:nth-child(8) > .cms-campaign-banners__content.cms-banners > .campaign-banner--left.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .product-label > .product-label__text`
+- `.campaign-banner--left.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .product-label > .product-label__text`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -16,7 +29,7 @@
 
 #### Affected Elements:
 
-- `.cms-recomendations:nth-child(7) > section > div > .carousel[aria-roledescription="carousel"][role="region"]`
+- `.cms-recomendations:nth-child(9) > section > div > .carousel[aria-roledescription="carousel"][role="region"]`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
@@ -50,9 +63,10 @@
 - **Description:** Ensure elements that have scrollable content are accessible by keyboard in Safari
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/scrollable-region-focusable?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
-- `.cms-recomendations:nth-child(7) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
-- `.cms-recomendations:nth-child(10) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- `.cms-recomendations:nth-child(9) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- `.cms-recomendations:nth-child(11) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- `.cms-recomendations:nth-child(13) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`

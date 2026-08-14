@@ -1,7 +1,7 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2026-08-07T03:02:21.969Z
-**URL:** [https://www.byggmakker.no/#](https://www.byggmakker.no/#)
+**Timestamp:** 2026-08-14T06:24:59.072Z
+**URL:** [https://www.byggmakker.no/](https://www.byggmakker.no/)
 **Total Violations:** 2
 
 ## Violation Details
@@ -79,11 +79,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 6
+- **Count:** 5
 
 #### Affected Elements:
 
-- `.top-nav-wrapper > .top-notification.top-notification--critical > .top-notification__content > .top-notification__text`
 - `li[role="none"]:nth-child(2)`
 - `li[role="none"]:nth-child(3)`
 - `li[role="none"]:nth-child(4)`

@@ -1,34 +1,10 @@
 # WCAG Violations Report for Skagen AS
 
-**Timestamp:** 2026-08-07T02:55:00.054Z
-**URL:** [https://www.skagenfondene.no/#](https://www.skagenfondene.no/#)
-**Total Violations:** 6
+**Timestamp:** 2026-08-14T06:25:36.748Z
+**URL:** [https://www.skagenfondene.no/](https://www.skagenfondene.no/)
+**Total Violations:** 4
 
 ## Violation Details
-
-### ARIA input fields must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA input field has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-input-field-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT5.c, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.carousel-inner`
-
-### Certain ARIA roles must contain particular children
-
-- **Impact:** critical
-- **Description:** Ensure elements with an ARIA role that require child roles contain them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-required-children?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.carousel-inner`
 
 ### Heading levels should only increase by one
 
@@ -64,11 +40,12 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `.OfficeArea > a[href="/"]`
+- `a[href$="mailto:"]`
 - `.footer__part-of-storebrand > a`
 
 ### All page content should be contained by landmarks

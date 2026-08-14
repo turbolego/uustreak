@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordlandsnett AS
 
-**Timestamp:** 2026-08-07T03:07:55.984Z
+**Timestamp:** 2026-08-14T06:14:37.110Z
 **URL:** [https://arva.no/hjem](https://arva.no/hjem)
 **Total Violations:** 5
 
@@ -41,7 +41,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 12
+- **Count:** 11
 
 #### Affected Elements:
 
@@ -56,7 +56,6 @@
 - `#Article-11712 > .clear[data-v-fab35f16=""][data-v-05e2877b=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-05e2877b=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
 - `#Article-11647 > .clear[data-v-fab35f16=""][data-v-05e2877b=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-05e2877b=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
 - `#Article-11615 > .clear[data-v-fab35f16=""][data-v-05e2877b=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-05e2877b=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
-- `a[href="/?id=443556"][target=""][data-v-3e0b142e=""]`
 
 ### Page should contain a level-one heading
 

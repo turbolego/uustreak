@@ -1,7 +1,7 @@
 # WCAG Violations Report for Biltema AS
 
-**Timestamp:** 2026-08-07T02:45:32.190Z
-**URL:** [https://www.biltema.no/#](https://www.biltema.no/#)
+**Timestamp:** 2026-08-14T06:23:19.115Z
+**URL:** [https://www.biltema.no/](https://www.biltema.no/)
 **Total Violations:** 8
 
 ## Violation Details
@@ -69,7 +69,7 @@
 
 #### Affected Elements:
 
-- `.nav__features`
+- `.nav__main`
 - `#react__maincontent`
 
 ### Links must have discernible text

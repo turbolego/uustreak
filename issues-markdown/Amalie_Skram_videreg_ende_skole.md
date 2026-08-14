@@ -1,8 +1,8 @@
 # WCAG Violations Report for Amalie Skram videregående skole
 
-**Timestamp:** 2026-08-07T02:43:52.672Z
-**URL:** [https://www.amalieskram.vgs.no/#](https://www.amalieskram.vgs.no/#)
-**Total Violations:** 3
+**Timestamp:** 2026-08-14T06:15:32.485Z
+**URL:** [https://www.amalieskram.vgs.no/](https://www.amalieskram.vgs.no/)
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -41,3 +41,15 @@
 #### Affected Elements:
 
 - `header`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`

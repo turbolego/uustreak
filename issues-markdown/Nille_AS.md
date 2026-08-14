@@ -1,8 +1,8 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2026-08-07T02:51:29.624Z
-**URL:** [https://www.nille.no/#](https://www.nille.no/#)
-**Total Violations:** 5
+**Timestamp:** 2026-08-14T06:13:24.974Z
+**URL:** [https://www.nille.no/](https://www.nille.no/)
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -17,6 +17,28 @@
 #### Affected Elements:
 
 - `#declineButton`
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 11
+
+#### Affected Elements:
+
+- `.swiper-slide-active.swiper-slide > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide-next.swiper-slide > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(3) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(4) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(5) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(6) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(7) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(8) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(9) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(10) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(11) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 
 ### Document should not have more than one banner landmark
 
@@ -48,12 +70,13 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
+- `a[href$="medlemsdager/"]`
+- `a[href$="kjokken/"]`
 - `a[href$="sommersalg/"]`
-- `a[href$="soverom/"][aria-label=""][title=""]`
 
 ### All page content should be contained by landmarks
 

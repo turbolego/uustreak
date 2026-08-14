@@ -1,10 +1,22 @@
 # WCAG Violations Report for Handel og Kontor i Norge
 
-**Timestamp:** 2026-08-07T02:48:59.347Z
+**Timestamp:** 2026-08-14T06:42:53.436Z
 **URL:** [https://hk.no/](https://hk.no/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
+
+### ARIA hidden element must not be focusable or contain focusable elements
+
+- **Impact:** serious
+- **Description:** Ensure aria-hidden elements are not focusable nor contain focusable elements
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-hidden-focus?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-10.8.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#bai-open-chat-btn`
 
 ### Buttons must have discernible text
 
@@ -29,8 +41,8 @@
 
 #### Affected Elements:
 
-- `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-slide[data-slick-index="2"][aria-hidden="true"] > div > .uagb-post__inner-wrap > h5`
-- `.uagb-block-f5aaf362 > .slick-list.draggable > .slick-track > .slick-slide[data-slick-index="2"][aria-hidden="true"] > div > .uagb-post__inner-wrap > h5`
+- `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-current.slick-active[data-slick-index="2"] > div > .uagb-post__inner-wrap > h5`
+- `.uagb-block-f5aaf362 > .slick-list.draggable > .slick-track > .slick-current.slick-active[data-slick-index="2"] > div > .uagb-post__inner-wrap > h5`
 
 ### Links must have discernible text
 
@@ -42,10 +54,10 @@
 
 #### Affected Elements:
 
-- `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-slide[data-slick-index="2"][aria-hidden="true"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-current.slick-active[data-slick-index="3"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-current.slick-active[data-slick-index="2"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="3"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 - `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="4"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `.uagb-block-f5aaf362 > .slick-list.draggable > .slick-track > .slick-current.slick-active[data-slick-index="3"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `.uagb-block-f5aaf362 > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="3"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 
 ### All page content should be contained by landmarks
 

@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2026-08-07T02:54:19.634Z
-**URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
+**Timestamp:** 2026-08-14T06:29:13.274Z
+**URL:** [https://www.dnt.no/stavanger](https://www.dnt.no/stavanger)
 **Total Violations:** 10
 
 ## Violation Details
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-592094"]`
-- `button[aria-controls="modal-580231"]`
-- `button[aria-controls="modal-579206"]`
-- `button[aria-controls="modal-579071"]`
-- `button[aria-controls="modal-613255"]`
-- `button[aria-controls="modal-602910"]`
-- `button[aria-controls="modal-578198"]`
 - `button[aria-controls="modal-574520"]`
+- `button[aria-controls="modal-578373"]`
+- `button[aria-controls="modal-593937"]`
+- `button[aria-controls="modal-580232"]`
+- `button[aria-controls="modal-580405"]`
+- `button[aria-controls="modal-578942"]`
+- `button[aria-controls="modal-574933"]`
+- `button[aria-controls="modal-606699"]`
 
 ### Buttons must have discernible text
 
@@ -86,12 +86,11 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 12
+- **Count:** 11
 
 #### Affected Elements:
 
 - `.md\:max-w-\[284px\] > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
-- `.group.relative:nth-child(1) > div > .md\:flex-col.space-x-4.md\:space-x-0 > .w-2\/5.md\:mb-3.md\:w-full > .overflow-hidden.rounded-lg > picture > .t-\[10px\].md\:rounded-\[10px\].md\:group-hover\:scale-110`
 - `.bg-beige-50.bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `div:nth-child(2) > .bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `.w-\[180px\].h-\[160px\]:nth-child(1) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
