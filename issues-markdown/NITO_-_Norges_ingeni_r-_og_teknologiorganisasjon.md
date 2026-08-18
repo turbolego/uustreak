@@ -1,7 +1,7 @@
 # WCAG Violations Report for NITO - Norges ingeniør- og teknologiorganisasjon
 
-**Timestamp:** 2026-08-14T06:13:09.719Z
-**URL:** [https://www.nito.no/](https://www.nito.no/)
+**Timestamp:** 2026-08-18T01:25:41.240Z
+**URL:** [https://www.nito.no/#](https://www.nito.no/#)
 **Total Violations:** 2
 
 ## Violation Details

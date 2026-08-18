@@ -1,6 +1,6 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-08-14T06:20:06.591Z
+**Timestamp:** 2026-08-18T01:27:11.245Z
 **URL:** [https://www.lydenavnorge.no/p4/](https://www.lydenavnorge.no/p4/)
 **Total Violations:** 7
 
@@ -113,9 +113,9 @@
 
 - `.image-container[data-v-4af17d0f=""] > a[data-v-4af17d0f=""]`
 - `.content-box.compact[data-v-d583c235=""] > .image-link[data-v-d583c235=""]`
-- `.image-link[href$="fem-pa/"][data-v-d583c235=""]`
+- `.image-link[href$="lyden/"][data-v-d583c235=""]`
 - `.contest-box.medium-large.item > .image-link[data-v-f1ce81f5=""]`
-- `.medium-large.content-box.item:nth-child(1) > .image-link[data-v-d583c235=""]`
+- `.image-link[href$="fem-pa/"][data-v-d583c235=""]`
 - `.medium-large.content-box.item:nth-child(2) > .image-link[data-v-d583c235=""]`
 - `.large.section-box.item > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
 - `.small.section-box.item:nth-child(1) > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`

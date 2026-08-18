@@ -1,8 +1,8 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2026-08-14T06:13:24.974Z
-**URL:** [https://www.nille.no/](https://www.nille.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-08-18T01:25:10.717Z
+**URL:** [https://www.nille.no/#](https://www.nille.no/#)
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -24,7 +24,7 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 11
+- **Count:** 16
 
 #### Affected Elements:
 
@@ -39,6 +39,26 @@
 - `.swiper-slide:nth-child(9) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(10) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(11) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(12) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(13) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(14) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(15) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(16) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 4
+
+#### Affected Elements:
+
+- `.swiper-slide:nth-child(3) > .itemCard--fAqEIsz > .content--TOIX07K > a[data-discover="true"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Kubb Hagespill"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Glidefly V2"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Kaste på blikkboks med pose"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
 
 ### Document should not have more than one banner landmark
 
@@ -74,9 +94,9 @@
 
 #### Affected Elements:
 
-- `a[href$="medlemsdager/"]`
-- `a[href$="kjokken/"]`
 - `a[href$="sommersalg/"]`
+- `.swiper-slide-prev > a[title=""][data-discover="true"][aria-label=""]`
+- `div[data-swiper-slide-index="2"] > a[title=""][data-discover="true"][aria-label=""]`
 
 ### All page content should be contained by landmarks
 

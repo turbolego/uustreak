@@ -1,8 +1,8 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-08-14T06:36:26.834Z
+**Timestamp:** 2026-08-18T01:30:15.901Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -17,21 +17,6 @@
 #### Affected Elements:
 
 - `.image`
-
-### ARIA attributes must conform to valid names
-
-- **Impact:** critical
-- **Description:** Ensure attributes that begin with aria- are valid ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-valid-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 4
-
-#### Affected Elements:
-
-- `.segment-start`
-- `button[data-track-label="child2_Under 30 år"]`
-- `button[data-track-label="child1_Under 13 år"]`
-- `.segment-end`
 
 ### Heading levels should only increase by one
 

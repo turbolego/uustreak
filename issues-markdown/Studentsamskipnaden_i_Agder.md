@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden i Agder
 
-**Timestamp:** 2026-08-07T02:55:21.070Z
+**Timestamp:** 2026-08-18T01:29:15.743Z
 **URL:** [https://www.sia.no/#](https://www.sia.no/#)
 **Total Violations:** 10
 
@@ -72,12 +72,11 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
 - `ion-content`
-- `.desktop-navbar`
 
 ### Links must have discernible text
 
@@ -117,7 +116,7 @@
 - **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/svg-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
-- **Count:** 11
+- **Count:** 10
 
 #### Affected Elements:
 
@@ -129,7 +128,6 @@
 - `svg[viewBox="0 0 45.668 47.245"]`
 - `svg[viewBox="0 0 31.5 47.5"]`
 - `svg[viewBox="0 0 49.203 49.203"]`
-- `#Layer_1`
 - `svg[width="40.603"]`
 - `svg[width="60.118"]`
 
@@ -144,7 +142,7 @@
 #### Affected Elements:
 
 - `.desktop-navbar__logo`
-- `#react-select-4-input`
-- `#react-select-5-input`
+- `#react-select-2-input`
+- `#react-select-3-input`
 - `.desktop-navbar__search-btn`
 - `.desktop-navbar__hamburger`

@@ -1,22 +1,10 @@
 # WCAG Violations Report for Drammens Tidende AS
 
-**Timestamp:** 2026-08-14T06:32:10.385Z
-**URL:** [https://www.dt.no/](https://www.dt.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-08-18T01:37:46.445Z
+**URL:** [https://www.dt.no/#](https://www.dt.no/#)
+**Total Violations:** 4
 
 ## Violation Details
-
-### ARIA commands must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-command-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.dt\.no\/toppbanner_0, #cbb`
 
 ### Frames must have an accessible name
 
@@ -30,31 +18,17 @@
 
 - `#eaframe`
 
-### Links must have discernible text
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#www\.dt\.no\/toppbanner_1 > a[target="_blank"]`
-
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `html`
-- `#google_ads_iframe_\/56257416\/www\.dt\.no\/toppbanner_0, html`
-- `#eaframe, html`
+- `brick-carousel-v3[data-slides="9"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -79,4 +53,4 @@
 #### Affected Elements:
 
 - `amedia-username`
-- `#toppbanner-1-label`
+- `#toppbanner-1`

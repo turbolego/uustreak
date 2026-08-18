@@ -1,7 +1,7 @@
 # WCAG Violations Report for LO - Landsorganisasjonen i Norge
 
-**Timestamp:** 2026-08-14T06:55:58.740Z
-**URL:** [https://www.lo.no/](https://www.lo.no/)
+**Timestamp:** 2026-08-18T01:24:48.728Z
+**URL:** [https://www.lo.no/#](https://www.lo.no/#)
 **Total Violations:** 3
 
 ## Violation Details

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lofotr Vikingmuseum AS
 
-**Timestamp:** 2026-08-14T06:56:59.480Z
+**Timestamp:** 2026-08-18T01:25:09.061Z
 **URL:** [https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/](https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/)
 **Total Violations:** 9
 
@@ -124,7 +124,7 @@
 
 #### Affected Elements:
 
-- `.wp-block-pooka-experiences-exhibitions-carousel__carousel-slide[data-index="3"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__image[aria-label=""][role="img"]`
+- `div[data-index="3"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__image[aria-label=""][role="img"]`
 - `div[data-index="4"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__image[aria-label=""][role="img"]`
 - `#post-95314 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100 > .h-100[aria-label=""][role="img"]`
 - `#post-95033 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100 > .h-100[aria-label=""][role="img"]`

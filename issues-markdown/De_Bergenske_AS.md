@@ -1,6 +1,6 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-08-14T06:29:43.738Z
+**Timestamp:** 2026-08-18T01:20:46.931Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
 **Total Violations:** 8
 
@@ -61,11 +61,11 @@
 
 #### Affected Elements:
 
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(3) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .sm\:px-6.h-auto.max-w-full`
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(3) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .sm\:px-6.h-auto.max-w-full`
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(3) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .sm\:px-6.h-auto.max-w-full`
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(4) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .sm\:px-6.h-auto.max-w-full`
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(4) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .sm\:px-6.h-auto.max-w-full`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(3) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(3) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(3) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(4) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(4) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.max-w-full.sm\:px-6`
 - `.splide__arrow--prev.left-5[aria-controls="splide01-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide01-track"] > .w-12`
 - `#splide02-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.media.flex-1`
@@ -75,18 +75,18 @@
 - `.splide__arrow--prev.left-5[aria-controls="splide03-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide03-track"] > .w-12`
 - `.sm\:pr-6`
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(9) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .sm\:px-6.h-auto.max-w-full`
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(9) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .sm\:px-6.h-auto.max-w-full`
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(9) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .sm\:px-6.h-auto.max-w-full`
-- `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(4) > .sm\:px-6.h-auto.max-w-full`
-- `.lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(5) > .sm\:px-6.h-auto.max-w-full`
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(9) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(6) > .sm\:px-6.h-auto.max-w-full`
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(10) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.min-w-full`
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(10) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.max-w-full.min-w-full`
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(10) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .sm\:px-6.h-auto.max-w-full`
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(10) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(4) > .h-auto.max-w-full.min-w-full`
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(10) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(5) > .h-auto.max-w-full.min-w-full`
-- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(10) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(6) > .sm\:px-6.h-auto.max-w-full`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(9) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(9) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(9) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(9) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(4) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(9) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(5) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(9) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(6) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(10) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(10) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(10) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(10) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(4) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(10) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(5) > .h-auto.max-w-full.sm\:px-6`
+- `.DARK.\!bg-Theme\/Dark.\!text-white:nth-child(10) > .py-15[data-v-3b06c5a9=""] > .container[data-v-3b06c5a9=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(6) > .h-auto.max-w-full.sm\:px-6`
 - `.splide__arrow--prev.left-5[aria-controls="splide04-track"] > .w-12`
 - `.splide__arrow--next.right-5[aria-controls="splide04-track"] > .w-12`
 

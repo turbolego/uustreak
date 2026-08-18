@@ -1,24 +1,10 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-08-14T06:23:55.408Z
-**URL:** [https://www.blv.no/](https://www.blv.no/)
-**Total Violations:** 8
+**Timestamp:** 2026-08-18T01:19:21.729Z
+**URL:** [https://www.blv.no/#](https://www.blv.no/#)
+**Total Violations:** 6
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
-
-#### Affected Elements:
-
-- `a[aria-label="Ledig stilling: Skiftledere"] > .jobad-wrapper > .ad-text > .ad-text_location`
-- `.swiper-slide-next > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
-- `div[data-swiper-slide-index="3"] > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
 
 ### Headings should not be empty
 
@@ -39,11 +25,10 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #adn-sup-0\.48513352933397347`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -56,7 +41,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v3[data-slides="4"] > .carousel[aria-label="Innholdskarusell"][role="region"]`
+- `brick-carousel-v3[data-slides="9"] > .carousel[aria-label="Innholdskarusell"][role="region"]`
 
 ### Links must have discernible text
 
@@ -69,22 +54,6 @@
 #### Affected Elements:
 
 - `.none[data-title-words="2"][itemtype="http://schema.org/NewsArticle"] > .brick-c-ffHwOH.teaser_body[itemprop="url"]`
-
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 5
-
-#### Affected Elements:
-
-- `html`
-- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, html`
-- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #adn-sup-0\.48513352933397347, html`
-- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #adn-sup-0\.48513352933397347, iframe, html`
-- `#eaframe, html`
 
 ### Elements marked as presentational should be consistently ignored
 

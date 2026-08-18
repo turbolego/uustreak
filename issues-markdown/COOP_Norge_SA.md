@@ -1,8 +1,8 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2026-08-14T06:25:28.957Z
-**URL:** [https://www.coop.no/](https://www.coop.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-08-18T01:36:59.941Z
+**URL:** [https://www.coop.no/#](https://www.coop.no/#)
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.j0 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .iw.iy.ix > .iz > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.iy > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .iu.iw.iv > .ix > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### ARIA attributes must conform to valid values
 
@@ -30,8 +30,8 @@
 #### Affected Elements:
 
 - `input[role="searchbox"]`
-- `.j0 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .iw.iy.ix > .iz > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.iy > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .iu.iw.iv > .ix > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### Headings should not be empty
 
@@ -43,8 +43,8 @@
 
 #### Affected Elements:
 
-- `.ia`
-- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .ef.am.cj > .eg.ei.ej`
+- `.i8`
+- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .ee.am.cj > .ef.eh.ei`
 
 ### Frames must have an accessible name
 
@@ -52,26 +52,12 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 4
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.q.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, iframe[scrolling="no"]`
-- `.q.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
-- `.ee.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, iframe[scrolling="no"]`
-- `.ee.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.q.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, iframe[scrolling="no"], #k`
+- `iframe, iframe[scrolling="no"]`
+- `iframe, body > iframe`
 
 ### Links must have discernible text
 
@@ -83,5 +69,5 @@
 
 #### Affected Elements:
 
-- `.kw.kx.ky:nth-child(1)`
-- `.kw.kx.ky:nth-child(2)`
+- `.kt.ku.kv:nth-child(1)`
+- `.kt.ku.kv:nth-child(2)`

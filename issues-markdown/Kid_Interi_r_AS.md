@@ -1,22 +1,10 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-08-14T06:52:35.931Z
-**URL:** [https://www.kid.no/](https://www.kid.no/)
-**Total Violations:** 6
+**Timestamp:** 2026-08-18T01:23:51.725Z
+**URL:** [https://www.kid.no/#](https://www.kid.no/#)
+**Total Violations:** 5
 
 ## Violation Details
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `div:nth-child(13) > .ex.ey.f0 > .f4.f5.b6 > .f6.f7.f8 > .f9.fa.fb > .fd.cg.cf > .et.bi.bq > .ff.fg.fe > .ek.et.c > .bp.cr.br > .b7.c.bj > .fo.fp.fs:nth-child(1)`
 
 ### Heading levels should only increase by one
 
@@ -36,12 +24,11 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `div:nth-child(10) > .kc.kd.ke > .li.lj.gp > .fy.bq > div > div > .lk.kj.lj > .lj.bq > .ll.gr.gq > .lm.gt.gv`
-- `div:nth-child(13) > .ex.ey.f0 > .f4.f5.b6 > .al.cm.et > div > div > .cg.cf.es > .gs.gr.gq > .gt.gv.gw`
+- `.lh`
 
 ### Document should not have more than one banner landmark
 
@@ -66,7 +53,7 @@
 #### Affected Elements:
 
 - `#coiOverlay`
-- `div:nth-child(2) > .h0.h1.h2 > .h8.hb.h6 > .al > .b[role="region"][aria-roledescription="carousel"]`
+- `.h1 > .al > .b[role="region"][aria-roledescription="carousel"]`
 
 ### All page content should be contained by landmarks
 
@@ -74,11 +61,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 4
+- **Count:** 3
 
 #### Affected Elements:
 
 - `#skip-to-main-content`
-- `.b8.bc.bd`
 - `.tf-header-slider`
 - `.tf-sidebar`

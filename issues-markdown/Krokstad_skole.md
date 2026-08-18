@@ -1,10 +1,50 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2026-08-14T06:55:12.088Z
-**URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/)
-**Total Violations:** 5
+**Timestamp:** 2026-08-18T01:39:52.399Z
+**URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/#)
+**Total Violations:** 10
 
 ## Violation Details
+
+### ARIA progressbar nodes must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA progressbar node has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-progressbar-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag111, EN-301-549, EN-9.1.1.1, RGAAv4, RGAA-11.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[name="f1e874d6270f92bb2"], ._55yn`
+
+### Certain ARIA roles must contain particular children
+
+- **Impact:** critical
+- **Description:** Ensure elements with an ARIA role that require child roles contain them
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-required-children?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[name="f1e874d6270f92bb2"], div[role="feed"]`
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 5
+
+#### Affected Elements:
+
+- `iframe[name="f1e874d6270f92bb2"], .x1ypdohk.xe35lr7:nth-child(2) > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f1e874d6270f92bb2"], .x1ypdohk.xe35lr7._51mw > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f1e874d6270f92bb2"], abbr[data-utime="1786023395"] > .timestampContent`
+- `iframe[name="f1e874d6270f92bb2"], ._50f8`
+- `iframe[name="f1e874d6270f92bb2"], #feed_subtitle_1156992469791479\:4\:0 > ._1atc.fsm.fwn > .fcg`
 
 ### Form elements should have a visible label
 
@@ -44,6 +84,25 @@
 
 - `#coiOverlay`
 
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 8
+
+#### Affected Elements:
+
+- `iframe[name="f1e874d6270f92bb2"], #u_0_1_GY`
+- `iframe[name="f1e874d6270f92bb2"], .lfloat._3-8_[target="_blank"]`
+- `iframe[name="f1e874d6270f92bb2"], #u_1_1q_OL > ._302 > span > a[target="_blank"]`
+- `iframe[name="f1e874d6270f92bb2"], #u_1_7_lp > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `iframe[name="f1e874d6270f92bb2"], ._2l7q > a[target="_blank"]`
+- `iframe[name="f1e874d6270f92bb2"], #u_1_6_YR > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `iframe[name="f1e874d6270f92bb2"], #u_1_5_Z0 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `iframe[name="f1e874d6270f92bb2"], #u_1_q_5a > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+
 ### Interactive controls must not be nested
 
 - **Impact:** serious
@@ -55,6 +114,18 @@
 #### Affected Elements:
 
 - `.mainMenuTrigger`
+
+### Elements marked as presentational should be consistently ignored
+
+- **Impact:** minor
+- **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/presentation-role-conflict?application=playwright
+- **Tags:** cat.aria, best-practice, ACT
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[name="f1e874d6270f92bb2"], img[height="148"]`
 
 ### All page content should be contained by landmarks
 
