@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-08-18T01:18:59.804Z
+**Timestamp:** 2026-08-19T01:19:54.226Z
 **URL:** [https://www.bt.no/#](https://www.bt.no/#)
 **Total Violations:** 4
 

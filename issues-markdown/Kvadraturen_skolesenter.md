@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kvadraturen skolesenter
 
-**Timestamp:** 2026-08-18T01:24:50.765Z
+**Timestamp:** 2026-08-19T01:25:33.818Z
 **URL:** [https://kvadraturen.vgs.no/](https://kvadraturen.vgs.no/)
 **Total Violations:** 3
 
@@ -50,16 +50,16 @@
 - `.text-box > p:nth-child(3)`
 - `.il-heading--h2:nth-child(4)`
 - `.text-box > p:nth-child(5)`
-- `.text-box > p:nth-child(6)`
-- `.il-heading--h3:nth-child(7)`
+- `.il-heading--h2:nth-child(6)`
+- `.il-heading--h2:nth-child(7)`
 - `p:nth-child(8)`
 - `.text-box > p:nth-child(9)`
-- `.text-box > p:nth-child(10)`
+- `.il-heading--h3:nth-child(10)`
+- `p:nth-child(11)`
 - `p:nth-child(12)`
-- `.il-heading--h3:nth-child(13)`
-- `p:nth-child(14)`
+- `p:nth-child(13)`
 - `p:nth-child(15)`
-- `p:nth-child(16)`
+- `.il-heading--h3:nth-child(16)`
 - `p:nth-child(17)`
 - `p:nth-child(18)`
 - `p:nth-child(19)`

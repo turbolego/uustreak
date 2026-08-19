@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Nasjonalmuseet for Kunst
 
-**Timestamp:** 2026-08-18T01:43:17.550Z
+**Timestamp:** 2026-08-19T01:28:38.686Z
 **URL:** [https://www.nasjonalmuseet.no/#](https://www.nasjonalmuseet.no/#)
 **Total Violations:** 4
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 21
+- **Count:** 20
 
 #### Affected Elements:
 
@@ -27,16 +27,15 @@
 - `li[aria-label="8 av 10"]`
 - `li[aria-label="9 av 10"]`
 - `li[aria-label="10 av 10"]`
-- `div[title="Utvalgte arrangementer"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="1 av 5"][role="group"]`
-- `div[title="Utvalgte arrangementer"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="2 av 5"][role="group"]`
-- `div[title="Utvalgte arrangementer"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="3 av 5"][role="group"]`
-- `div[title="Utvalgte arrangementer"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="4 av 5"][role="group"]`
-- `div[title="Utvalgte arrangementer"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="5 av 5"][role="group"]`
-- `div[title="Aktuelt"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="1 av 5"][role="group"]`
-- `div[title="Aktuelt"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="2 av 5"][role="group"]`
-- `div[title="Aktuelt"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="3 av 5"][role="group"]`
-- `div[title="Aktuelt"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="4 av 5"][role="group"]`
-- `div[title="Aktuelt"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="5 av 5"][role="group"]`
+- `li[aria-label="1 av 4"]`
+- `li[aria-label="2 av 4"]`
+- `li[aria-label="3 av 4"]`
+- `li[aria-label="4 av 4"]`
+- `li[aria-label="1 av 5"]`
+- `li[aria-label="2 av 5"]`
+- `li[aria-label="3 av 5"]`
+- `li[aria-label="4 av 5"]`
+- `li[aria-label="5 av 5"]`
 
 ### Document should not have more than one banner landmark
 

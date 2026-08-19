@@ -1,10 +1,24 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-08-18T01:22:57.493Z
-**URL:** [https://jysk.no/#](https://jysk.no/#)
-**Total Violations:** 1
+**Timestamp:** 2026-08-19T01:40:25.544Z
+**URL:** [https://jysk.no/](https://jysk.no/)
+**Total Violations:** 2
 
 ## Violation Details
+
+### Alternative text of images should not be repeated as text
+
+- **Impact:** minor
+- **Description:** Ensure image alternative is not repeated as text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-redundant-alt?application=playwright
+- **Tags:** cat.text-alternatives, best-practice
+- **Count:** 3
+
+#### Affected Elements:
+
+- `img[title="Annonserte varer"]`
+- `img[title="FAST LAV PRIS"]`
+- `img[title="Gavekort"]`
 
 ### All page content should be contained by landmarks
 
@@ -16,13 +30,13 @@
 
 #### Affected Elements:
 
-- `.col-xl-3.col-md-6.mb-md-0:nth-child(1) > .usp.text-decoration-none[href$="om-jysk"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
-- `.col-xl-3.col-md-6.mb-md-0:nth-child(2) > .usp.text-decoration-none[href$="om-jysk"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
-- `.col-xl-3.col-md-6.mb-md-0:nth-child(3) > .usp.text-decoration-none.d-block > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
-- `.usp.text-decoration-none[href$="fast-lav-pris"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12`
-- `.newsletter__header`
-- `.newsletter__fields > .mb-3.required-label`
-- `.newsletter__fields > div:nth-child(2)`
-- `.newsletter__fields > div:nth-child(3)`
-- `#edit-terms`
-- `label[for="edit-terms"]`
+- `.bg-brand-500`
+- `.px-3\.5.max-w-\[1400px\].mx-auto:nth-child(7)`
+- `.text-xl`
+- `.max-w-3xl > .mb-8`
+- `form > p`
+- `.flex-1.group[data-testid="form-group"]`
+- `.group.relative[data-testid="form-group"]:nth-child(2)`
+- `.hover\:border-gray-500`
+- `#_r_kb_`
+- `#onetrust-banner-sdk`

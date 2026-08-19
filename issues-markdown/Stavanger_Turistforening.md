@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2026-08-18T01:43:54.886Z
+**Timestamp:** 2026-08-19T01:44:01.390Z
 **URL:** [https://www.dnt.no/stavanger/#](https://www.dnt.no/stavanger/#)
 **Total Violations:** 10
 
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-616245"]`
-- `button[aria-controls="modal-616231"]`
-- `button[aria-controls="modal-613095"]`
-- `button[aria-controls="modal-574113"]`
-- `button[aria-controls="modal-589025"]`
 - `button[aria-controls="modal-617762"]`
 - `button[aria-controls="modal-578199"]`
-- `button[aria-controls="modal-608336"]`
+- `button[aria-controls="modal-617517"]`
+- `button[aria-controls="modal-617498"]`
+- `button[aria-controls="modal-617478"]`
+- `button[aria-controls="modal-582426"]`
+- `button[aria-controls="modal-615248"]`
+- `button[aria-controls="modal-579146"]`
 
 ### Buttons must have discernible text
 
@@ -91,7 +91,7 @@
 #### Affected Elements:
 
 - `.md\:max-w-\[284px\] > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
-- `.bg-beige-50.bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
+- `.bg-beige-50 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `div:nth-child(2) > .bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `.w-\[180px\].h-\[160px\]:nth-child(1) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
 - `.w-\[180px\].h-\[160px\]:nth-child(2) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`

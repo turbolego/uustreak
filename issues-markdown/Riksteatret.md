@@ -1,8 +1,8 @@
 # WCAG Violations Report for Riksteatret
 
-**Timestamp:** 2026-08-18T01:27:28.476Z
+**Timestamp:** 2026-08-19T01:27:56.627Z
 **URL:** [https://www.riksteatret.no/#](https://www.riksteatret.no/#)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 14
+- **Count:** 15
 
 #### Affected Elements:
 
@@ -23,6 +23,7 @@
 - `#feature_5 > .module__grid > .module__content > .module__body > h4`
 - `#feature_6 > .module__grid > .module__content > .module__body > h4`
 - `#feature_7 > .module__grid > .module__content > .module__body > h4`
+- `a[href$="apestjernen/"] > .module__content > .module__head > h3`
 - `a[href$="apestjernen/"] > .module__content > .module__body > h4`
 - `a[href$="triggersystemet/"] > .module__content > .module__body > h4`
 - `a[href$="ubesvart-anrop/"] > .module__content > .module__body > h4`
@@ -45,3 +46,15 @@
 - `.listItem__link-wrapper[data-content-reference="1173208"][data-epi-block-id="1170785"] > img`
 - `.listItem__link-wrapper[data-content-reference="1173325"][data-epi-block-id="1170785"] > img`
 - `.listItem__link-wrapper[data-content-reference="1168970"][data-epi-block-id="1170785"] > img`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.site-footer__column[aria-label="Lenker"]:nth-child(1)`

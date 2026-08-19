@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ringerike kommune
 
-**Timestamp:** 2026-08-18T01:27:07.422Z
+**Timestamp:** 2026-08-19T01:27:54.507Z
 **URL:** [https://www.ringerike.kommune.no/#](https://www.ringerike.kommune.no/#)
 **Total Violations:** 9
 
@@ -109,11 +109,12 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `#portalframe1, .ical`
+- `#portalframe1, .single-0 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
+- `#portalframe1, .single-1 > .item-container > .list-item.line > .list-item-date > .list-item-time > .ical`
 
 ### All page content should be contained by landmarks
 
@@ -121,7 +122,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 17
+- **Count:** 20
 
 #### Affected Elements:
 
@@ -134,9 +135,12 @@
 - `#portalframe1, .data-from-to-expand`
 - `#portalframe1, .CaptionCont`
 - `#portalframe1, .optWrapper`
-- `#portalframe1, .day-listings > h1`
-- `#portalframe1, .list-item-date`
-- `#portalframe1, .ul-main`
+- `#portalframe1, .single-0 > h1`
+- `#portalframe1, .single-0 > .item-container > .list-item.line > .list-item-date`
+- `#portalframe1, a[data-itemid="39503"] > .ul-main`
+- `#portalframe1, .single-1 > h1`
+- `#portalframe1, .single-1 > .item-container > .list-item.line > .list-item-date`
+- `#portalframe1, a[data-itemid="39538"] > .ul-main`
 - `.mt-20`
 - `.ssp__fluid-panel > div > div > div > .container > .row > .col-md-6.mb-30.col-xs-12:nth-child(2)`
 - `.test-wrapper`
