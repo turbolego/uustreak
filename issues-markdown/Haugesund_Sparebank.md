@@ -1,6 +1,6 @@
 # WCAG Violations Report for Haugesund Sparebank
 
-**Timestamp:** 2026-08-20T01:22:23.140Z
+**Timestamp:** 2026-08-20T04:25:08.432Z
 **URL:** [https://www.haugesund-sparebank.no/#](https://www.haugesund-sparebank.no/#)
 **Total Violations:** 1
 

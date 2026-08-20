@@ -1,6 +1,6 @@
 # WCAG Violations Report for Komplett Services AS
 
-**Timestamp:** 2026-08-20T01:23:43.677Z
+**Timestamp:** 2026-08-20T04:26:27.964Z
 **URL:** [https://www.komplett.no/#](https://www.komplett.no/#)
 **Total Violations:** 8
 
@@ -156,12 +156,12 @@
 - `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(1),komplett-product-card-rating[reviewcount="15"],komplett-review-rating-stars[score="4.6"]`
 - `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(2),komplett-product-card-rating[reviewcount="27"],komplett-review-rating-stars[score="4.1111"]`
 - `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(3),komplett-product-card-rating[reviewcount="50"],komplett-review-rating-stars[score="4.48"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(4),komplett-product-card-rating[score="4.5"][reviewcount="2"],komplett-review-rating-stars[score="4.5"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(5),komplett-product-card-rating[reviewcount="151"],komplett-review-rating-stars[score="4.6424"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(6),komplett-product-card-rating[score="4.3333"][reviewcount="3"],komplett-review-rating-stars[score="4.3333"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(7),komplett-product-card-rating[reviewcount="1634"][score="4.5777"],komplett-review-rating-stars[score="4.5777"]`
+- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(4),komplett-product-card-rating[reviewcount="1634"][score="4.5777"],komplett-review-rating-stars[score="4.5777"]`
+- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(5),komplett-product-card-rating[reviewcount="2"][score="4.5"],komplett-review-rating-stars[score="4.5"]`
+- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(6),komplett-product-card-rating[reviewcount="151"],komplett-review-rating-stars[score="4.6424"]`
+- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(7),komplett-product-card-rating[score="4.3333"][reviewcount="3"],komplett-review-rating-stars[score="4.3333"]`
 - `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(8),komplett-product-card-rating[score="4.7273"][reviewcount="33"],komplett-review-rating-stars[score="4.7273"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(9),komplett-product-card-rating[reviewcount="31"],komplett-review-rating-stars[score="4.8387"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(10),komplett-product-card-rating[reviewcount="470"],komplett-review-rating-stars[score="4.6149"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(11),komplett-product-card-rating[reviewcount="33"][score="4.3333"],komplett-review-rating-stars[score="4.3333"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(12),komplett-product-card-rating[reviewcount="1"][score="5"],komplett-review-rating-stars[score="5"]`
+- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(9),komplett-product-card-rating[reviewcount="470"],komplett-review-rating-stars[score="4.6149"]`
+- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(10),komplett-product-card-rating[reviewcount="42"],komplett-review-rating-stars[score="4.5"]`
+- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(11),komplett-product-card-rating[score="3.6667"][reviewcount="3"],komplett-review-rating-stars[score="3.6667"]`
+- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card[isflexonly=""]:nth-child(12),komplett-product-card-rating[reviewcount="33"][score="4.3333"],komplett-review-rating-stars[score="4.3333"]`

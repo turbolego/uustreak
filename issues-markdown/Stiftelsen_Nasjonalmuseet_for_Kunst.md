@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Nasjonalmuseet for Kunst
 
-**Timestamp:** 2026-08-20T01:27:00.986Z
+**Timestamp:** 2026-08-20T04:13:24.343Z
 **URL:** [https://www.nasjonalmuseet.no/#](https://www.nasjonalmuseet.no/#)
 **Total Violations:** 4
 

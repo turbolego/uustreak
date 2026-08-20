@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jobzone Norge AS
 
-**Timestamp:** 2026-08-20T01:38:16.029Z
+**Timestamp:** 2026-08-20T04:08:08.401Z
 **URL:** [https://jobzone.no/](https://jobzone.no/)
 **Total Violations:** 6
 

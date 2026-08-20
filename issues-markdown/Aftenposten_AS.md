@@ -1,6 +1,6 @@
 # WCAG Violations Report for Aftenposten AS
 
-**Timestamp:** 2026-08-20T01:17:10.057Z
+**Timestamp:** 2026-08-20T04:19:58.023Z
 **URL:** [https://www.aftenposten.no/#](https://www.aftenposten.no/#)
 **Total Violations:** 1
 

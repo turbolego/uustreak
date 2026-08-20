@@ -1,6 +1,6 @@
 # WCAG Violations Report for Teknisk Ukeblad Media AS
 
-**Timestamp:** 2026-08-20T01:43:26.934Z
+**Timestamp:** 2026-08-20T04:30:02.006Z
 **URL:** [https://www.tu.no/](https://www.tu.no/)
 **Total Violations:** 2
 
