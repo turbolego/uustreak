@@ -1,7 +1,7 @@
 # WCAG Violations Report for Norges forskningsråd
 
-**Timestamp:** 2026-08-20T05:33:07.996Z
-**URL:** [https://www.forskningsradet.no/#](https://www.forskningsradet.no/#)
+**Timestamp:** 2026-08-20T09:17:13.524Z
+**URL:** [https://www.forskningsradet.no/](https://www.forskningsradet.no/)
 **Total Violations:** 4
 
 ## Violation Details

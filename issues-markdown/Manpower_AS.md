@@ -1,6 +1,6 @@
 # WCAG Violations Report for Manpower AS
 
-**Timestamp:** 2026-08-20T05:31:55.560Z
+**Timestamp:** 2026-08-20T09:16:11.320Z
 **URL:** [https://www.manpower.no/nb](https://www.manpower.no/nb)
 **Total Violations:** 6
 

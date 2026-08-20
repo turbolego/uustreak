@@ -1,22 +1,10 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2026-08-20T05:23:28.611Z
-**URL:** [https://www.ba.no/#](https://www.ba.no/#)
-**Total Violations:** 5
+**Timestamp:** 2026-08-20T09:07:35.865Z
+**URL:** [https://www.ba.no/](https://www.ba.no/)
+**Total Violations:** 4
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#eaframe, #container_10731699 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 

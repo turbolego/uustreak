@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stiftelsen Nasjonalmuseet for Kunst
 
-**Timestamp:** 2026-08-20T05:36:29.173Z
-**URL:** [https://www.nasjonalmuseet.no/#](https://www.nasjonalmuseet.no/#)
+**Timestamp:** 2026-08-20T09:21:12.139Z
+**URL:** [https://www.nasjonalmuseet.no/](https://www.nasjonalmuseet.no/)
 **Total Violations:** 4
 
 ## Violation Details
@@ -12,7 +12,7 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 16
+- **Count:** 20
 
 #### Affected Elements:
 
@@ -27,6 +27,10 @@
 - `li[aria-label="8 av 10"]`
 - `li[aria-label="9 av 10"]`
 - `li[aria-label="10 av 10"]`
+- `li[aria-label="1 av 4"]`
+- `li[aria-label="2 av 4"]`
+- `li[aria-label="3 av 4"]`
+- `li[aria-label="4 av 4"]`
 - `li[aria-label="1 av 5"]`
 - `li[aria-label="2 av 5"]`
 - `li[aria-label="3 av 5"]`
@@ -63,9 +67,10 @@
 - **Description:** Ensure that lists are structured correctly
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/list?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `div[title="Utstillinger"] > .ulc-carousel__track`
+- `div[title="Utvalgte arrangementer"] > .ulc-carousel__track`
 - `div[title="Aktuelt"] > .ulc-carousel__track`

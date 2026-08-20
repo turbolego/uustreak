@@ -1,6 +1,6 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-08-20T05:25:33.396Z
+**Timestamp:** 2026-08-20T09:09:38.643Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
 **Total Violations:** 8
 

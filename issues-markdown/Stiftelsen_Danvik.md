@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stiftelsen Danvik
 
-**Timestamp:** 2026-08-20T05:37:06.167Z
-**URL:** [https://www.danvik.no/#](https://www.danvik.no/#)
+**Timestamp:** 2026-08-20T09:21:29.922Z
+**URL:** [https://www.danvik.no/](https://www.danvik.no/)
 **Total Violations:** 3
 
 ## Violation Details

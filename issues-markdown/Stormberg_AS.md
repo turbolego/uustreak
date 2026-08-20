@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-08-20T05:36:45.093Z
+**Timestamp:** 2026-08-20T09:21:30.995Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -61,9 +61,9 @@
 - `div:nth-child(7) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Harstad skallanorakk"] > .ih.bc.bd > .io.im.y > .gz.iu.it`
 - `a[aria-label="Nordkinn skallbukse barn 8-14"] > .ih.bc.bd > .io.im.y > .gz.iu.it`
-- `a[aria-label="Regndag regnbukse unisex"] > .ih.bc.bd > .io.im.y > .gz.iu.it`
 - `a[aria-label="Sogndal skalljakke"] > .ih.bc.bd > .io.im.y > .gz.iu.it`
 - `a[aria-label="Vika urban ryggsekk 25 L"] > .ih.bc.bd > .io.im.y > .gz.iu.it`
+- `a[aria-label="Regndag regnbukse unisex"] > .ih.bc.bd > .io.im.y > .gz.iu.it`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty

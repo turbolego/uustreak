@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-08-20T05:37:26.566Z
-**URL:** [https://www.aftenbladet.no/#](https://www.aftenbladet.no/#)
+**Timestamp:** 2026-08-20T09:21:34.533Z
+**URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
 **Total Violations:** 4
 
 ## Violation Details
@@ -12,14 +12,10 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 5
+- **Count:** 1
 
 #### Affected Elements:
 
-- `iframe[title="ONS-studio"], .ons-frontbox__cta-link`
-- `iframe[title="ONS-studio"], .ons-frontbox__secondary > .ons-frontbox__entry-meta > .ons-frontbox__entry-date`
-- `iframe[title="ONS-studio"], .ons-frontbox__session-label`
-- `iframe[title="ONS-studio"], .ons-frontbox__session-meta`
 - `iframe[title="Tips oss"], .headline`
 
 ### Links must have discernible text

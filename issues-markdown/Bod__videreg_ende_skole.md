@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bodø videregående skole
 
-**Timestamp:** 2026-08-20T05:23:14.584Z
-**URL:** [https://www.bodo.vgs.no/#](https://www.bodo.vgs.no/#)
+**Timestamp:** 2026-08-20T09:07:07.178Z
+**URL:** [https://www.bodo.vgs.no/](https://www.bodo.vgs.no/)
 **Total Violations:** 2
 
 ## Violation Details

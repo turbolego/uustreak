@@ -1,7 +1,7 @@
 # WCAG Violations Report for Arngren
 
-**Timestamp:** 2026-08-20T05:21:20.086Z
-**URL:** [https://www.arngren.net/#](https://www.arngren.net/#)
+**Timestamp:** 2026-08-20T09:06:14.218Z
+**URL:** [https://www.arngren.net/](https://www.arngren.net/)
 **Total Violations:** 6
 
 ## Violation Details

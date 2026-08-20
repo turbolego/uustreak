@@ -1,7 +1,7 @@
 # WCAG Violations Report for Orkla Sparebank
 
-**Timestamp:** 2026-08-20T05:34:10.593Z
-**URL:** [https://www.orklasparebank.no/#](https://www.orklasparebank.no/#)
+**Timestamp:** 2026-08-20T09:18:19.916Z
+**URL:** [https://www.orklasparebank.no/](https://www.orklasparebank.no/)
 **Total Violations:** 1
 
 ## Violation Details

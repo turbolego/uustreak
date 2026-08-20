@@ -1,7 +1,7 @@
 # WCAG Violations Report for Bærum kommune
 
-**Timestamp:** 2026-08-20T05:22:32.627Z
-**URL:** [https://www.baerum.kommune.no/#](https://www.baerum.kommune.no/#)
+**Timestamp:** 2026-08-20T09:06:41.109Z
+**URL:** [https://www.baerum.kommune.no/](https://www.baerum.kommune.no/)
 **Total Violations:** 2
 
 ## Violation Details

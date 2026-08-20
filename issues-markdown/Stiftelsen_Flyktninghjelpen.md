@@ -1,7 +1,7 @@
 # WCAG Violations Report for Stiftelsen Flyktninghjelpen
 
-**Timestamp:** 2026-08-20T05:36:14.007Z
-**URL:** [https://www.nrc.no/#](https://www.nrc.no/#)
+**Timestamp:** 2026-08-20T09:20:53.409Z
+**URL:** [https://www.nrc.no/](https://www.nrc.no/)
 **Total Violations:** 4
 
 ## Violation Details
@@ -21,7 +21,7 @@
 - `.three-layer-header__donation-button`
 - `.block:nth-child(1) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content > .article-list-view-model__tags > time`
 - `.block:nth-child(2) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content > .article-list-view-model__tags > time`
-- `a[href$="colombia-earthquake"] > .article-list-view-model__content > .article-list-view-model__tags > time`
+- `.block:nth-child(3) > .article-list-view-model-secondary.block-padding > .article-list-view-model__wrapper > .article-list-view-model__content > .article-list-view-model__tags > time`
 
 ### Heading levels should only increase by one
 
