@@ -126,9 +126,31 @@ function parseProjectAndCount(fileName) {
     };
 }
 
+function parseProjectCountAndTimestamp(fileName) {
+    const match = fileName.match(/^violations-(.+?)-(\d{4}-\d{2}-\d{2})T(\d{2}-\d{2}-\d{2}_\d{3}Z)(?:-count-(\d+))?\.json$/);
+    if (!match) {
+        return null;
+    }
+
+    return {
+        project: match[1],
+        date: match[2],
+        timestamp: match[3],
+        count: match[4] ? Number.parseInt(match[4], 10) : -1,
+    };
+}
+
+function isAppleDoubleMetadataFile(fileName) {
+    return fileName.startsWith('._');
+}
+
 function isCountableViolationReport(reportFilePath) {
     const fileName = path.basename(reportFilePath);
     if (!fileName.startsWith('violations-') || !fileName.endsWith('.json')) {
+        return false;
+    }
+
+    if (isAppleDoubleMetadataFile(fileName)) {
         return false;
     }
 
@@ -248,18 +270,18 @@ function buildArchive(sourceOutputDir, date) {
     const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), `uustreak-${date}-`));
     try {
         if (fs.existsSync(reportsDir)) {
-            for (const reportFile of listFilesRecursive(reportsDir, (fullPath, name) => name.endsWith('.json'))) {
+            for (const reportFile of listFilesRecursive(reportsDir, (fullPath, name) => name.endsWith('.json') && !isAppleDoubleMetadataFile(name))) {
                 copyFile(reportFile, path.join(tempDir, path.basename(reportFile)));
             }
         }
 
         if (fs.existsSync(summariesDir)) {
-            for (const summaryFile of listFilesRecursive(summariesDir, (fullPath, name) => name.endsWith('.json'))) {
+            for (const summaryFile of listFilesRecursive(summariesDir, (fullPath, name) => name.endsWith('.json') && !isAppleDoubleMetadataFile(name))) {
                 copyFile(summaryFile, path.join(tempDir, path.basename(summaryFile)));
             }
         }
 
-        const jsonFiles = listFilesRecursive(tempDir, (fullPath, name) => name.endsWith('.json'));
+        const jsonFiles = listFilesRecursive(tempDir, (fullPath, name) => name.endsWith('.json') && !isAppleDoubleMetadataFile(name));
         const archivePath = path.join(archiveDir, `reports_${date}.tar.gz`);
         const manifestPath = path.join(archiveDir, `reports_${date}.manifest`);
 
@@ -269,10 +291,17 @@ function buildArchive(sourceOutputDir, date) {
             return null;
         }
 
-        execFileSync('tar', ['-czf', archivePath, '-C', tempDir, '.'], { stdio: 'inherit' });
+        execFileSync('tar', ['-czf', archivePath, '-C', tempDir, '.'], {
+            stdio: 'inherit',
+            env: {
+                ...process.env,
+                COPYFILE_DISABLE: '1',
+            },
+        });
         const manifest = execFileSync('tar', ['-tzf', archivePath], { encoding: 'utf8' })
             .split(/\r?\n/)
             .filter(Boolean)
+            .filter((entry) => !entry.split('/').pop().startsWith('._'))
             .sort();
         fs.writeFileSync(manifestPath, `${manifest.join('\n')}\n`, 'utf8');
 
@@ -329,11 +358,28 @@ function updateReportList(outputDir, touchedDates) {
             continue;
         }
 
+        const latestByProject = new Map();
         for (const reportFile of listFilesRecursive(reportDir, (fullPath, name) => name.startsWith('violations-') && name.endsWith('.json') && !name.includes('-FAILED'))) {
             if (!isCountableViolationReport(reportFile)) {
                 continue;
             }
-            nextEntries.add(normalizeRelative(path.relative(outputDir, reportFile)));
+
+            const parsed = parseProjectCountAndTimestamp(path.basename(reportFile));
+            if (!parsed) {
+                continue;
+            }
+
+            const current = latestByProject.get(parsed.project);
+            if (!current || parsed.timestamp > current.timestamp) {
+                latestByProject.set(parsed.project, {
+                    timestamp: parsed.timestamp,
+                    relativePath: normalizeRelative(path.relative(outputDir, reportFile)),
+                });
+            }
+        }
+
+        for (const value of latestByProject.values()) {
+            nextEntries.add(value.relativePath);
         }
     }
 
@@ -357,13 +403,25 @@ function updateStreakIndex(outputDir, touchedDates) {
             continue;
         }
 
+        const latestByProject = new Map();
         for (const reportFile of listFilesRecursive(reportDir, (fullPath, name) => name.startsWith('violations-') && name.endsWith('.json') && !name.includes('-FAILED'))) {
             if (!isCountableViolationReport(reportFile)) {
                 continue;
             }
 
-            const parsed = parseProjectAndCount(path.basename(reportFile));
+            const parsed = parseProjectCountAndTimestamp(path.basename(reportFile));
             if (!parsed) {
+                continue;
+            }
+
+            const current = latestByProject.get(parsed.project);
+            if (!current || parsed.timestamp > current.timestamp) {
+                latestByProject.set(parsed.project, parsed);
+            }
+        }
+
+        for (const parsed of latestByProject.values()) {
+            if (parsed.count < 0) {
                 continue;
             }
 
@@ -371,10 +429,7 @@ function updateStreakIndex(outputDir, touchedDates) {
                 streakIndex[parsed.project] = {};
             }
 
-            const existingCount = streakIndex[parsed.project][date];
-            if (existingCount === undefined || parsed.count < existingCount) {
-                streakIndex[parsed.project][date] = parsed.count;
-            }
+            streakIndex[parsed.project][date] = parsed.count;
         }
     }
 

@@ -510,6 +510,7 @@ jobs:
           echo "Updating report list in gh-pages branch (incremental)..."
           mkdir -p gh-pages-branch/historical-data
           TODAY=$(date '+%Y-%m-%d')
+          export TODAY
 
           # The gh-pages-branch checkout already contains the full historical report-list.json.
           # We only need to replace today's entries with the newest run.
@@ -523,12 +524,38 @@ jobs:
             echo "No existing report-list.json — starting fresh"
           fi
 
-          # Add only today's new violation file paths (from the newest run)
-          find "gh-pages-branch/accessibility-reports/$TODAY" -maxdepth 1 \
-            -name "violations-*.json" ! -name "*-FAILED.json" ! -name "*-SKIPPED.json" -type f 2>/dev/null | \
-          while IFS= read -r file; do
-            echo "${file#gh-pages-branch/}"
-          done > /tmp/report-list-today.txt
+          # Add only today's newest report per project (skip failed/skipped/AppleDouble)
+          node - <<'NODE' > /tmp/report-list-today.txt
+          const fs = require('fs');
+          const path = require('path');
+
+          const today = process.env.TODAY;
+          const dir = path.join('gh-pages-branch', 'accessibility-reports', today);
+          const latestByProject = new Map();
+          const re = /^violations-(.+?)-\d{4}-\d{2}-\d{2}T(\d{2}-\d{2}-\d{2}_\d{3}Z)(?:-count-\d+)?\.json$/;
+
+          if (fs.existsSync(dir)) {
+            for (const name of fs.readdirSync(dir)) {
+              if (!name.endsWith('.json')) continue;
+              if (name.startsWith('._')) continue;
+              if (name.includes('-FAILED.json') || name.includes('-SKIPPED.json')) continue;
+
+              const m = name.match(re);
+              if (!m) continue;
+              const project = m[1];
+              const ts = m[2];
+
+              const current = latestByProject.get(project);
+              if (!current || ts > current.ts) {
+                latestByProject.set(project, { ts, relPath: `accessibility-reports/${today}/${name}` });
+              }
+            }
+          }
+
+          for (const { relPath } of latestByProject.values()) {
+            console.log(relPath);
+          }
+          NODE
           echo "Found $(wc -l < /tmp/report-list-today.txt | tr -d ' ') new entries for $TODAY"
 
           # Merge existing (without today) + today's new entries, deduplicate, sort
@@ -583,9 +610,12 @@ jobs:
               delete streakIndex[project][today];
             }
 
+            const latestByProject = new Map();
             for (let i = 0; i < allFiles.length; i += BATCH_SIZE) {
               const batch = allFiles.slice(i, i + BATCH_SIZE);
+
               batch.forEach(filename => {
+                if (filename.startsWith('._')) return;
                 const reportPath = path.join(violationsDir, filename);
                 try {
                   const reportData = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
@@ -599,24 +629,28 @@ jobs:
 
                 // Format: violations-<project>-YYYY-MM-DDTHH-MM-SS_SSSZ-count-N.json
                 const projectMatch = filename.match(/^violations-(.+?)-\d{4}-\d{2}-\d{2}T/);
+                const tsMatch      = filename.match(/-\d{4}-\d{2}-\d{2}T(\d{2}-\d{2}-\d{2}_\d{3}Z)(?:-count-\d+)?\.json$/);
                 const countMatch   = filename.match(/-count-(\d+)\.json$/);
 
                 if (!projectMatch) return;
+                if (!tsMatch) return;
 
                 const project = projectMatch[1];
+                const ts      = tsMatch[1];
                 const count   = countMatch ? parseInt(countMatch[1], 10) : -1;
                 if (count < 0) return;
 
-                if (!streakIndex[project]) streakIndex[project] = {};
-
-                // Newest run wins: overwrite today's entry so re-runs replace stale data.
-                // If multiple files exist for the same project on the same day (from this run),
-                // keep the one with the lowest violation count (best result).
-                const existing = streakIndex[project][today];
-                if (existing === undefined || count < existing) {
-                  streakIndex[project][today] = count;
+                const existingLatest = latestByProject.get(project);
+                if (!existingLatest || ts > existingLatest.ts) {
+                  latestByProject.set(project, { ts, count });
                 }
               });
+
+            }
+
+            for (const [project, value] of latestByProject.entries()) {
+              if (!streakIndex[project]) streakIndex[project] = {};
+              streakIndex[project][today] = value.count;
             }
           } else {
             console.log(`No violations directory found for ${today}, streak index unchanged`);

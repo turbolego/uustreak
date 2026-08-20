@@ -83,9 +83,51 @@ jobs:
           cp styles.css gh-pages-branch/
           cp -r assets gh-pages-branch/
           
-          # Generate report list
-          find gh-pages-branch/accessibility-reports -name "violations-*.json" ! -name "*-FAILED.json" ! -name "*-SKIPPED.json" -type f | \
-            jq -R . | jq -s . > gh-pages-branch/historical-data/report-list.json
+          # Generate report list (newest report per project per day)
+          node - <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+
+          const base = path.join('gh-pages-branch', 'accessibility-reports');
+          const latest = new Map();
+          const re = /^violations-(.+?)-(\d{4}-\d{2}-\d{2})T(\d{2}-\d{2}-\d{2}_\d{3}Z)(?:-count-\d+)?\.json$/;
+
+          if (fs.existsSync(base)) {
+            const stack = [base];
+            while (stack.length) {
+              const current = stack.pop();
+              for (const entry of fs.readdirSync(current, { withFileTypes: true })) {
+                const fullPath = path.join(current, entry.name);
+                if (entry.isDirectory()) {
+                  stack.push(fullPath);
+                  continue;
+                }
+
+                const name = entry.name;
+                if (!name.endsWith('.json')) continue;
+                if (name.startsWith('._')) continue;
+                if (name.includes('-FAILED.json') || name.includes('-SKIPPED.json')) continue;
+
+                const m = name.match(re);
+                if (!m) continue;
+                const project = m[1];
+                const date = m[2];
+                const ts = m[3];
+                const key = `${project}::${date}`;
+                const rel = fullPath.replace(/^gh-pages-branch\//, '').replace(/\\/g, '/');
+
+                const prev = latest.get(key);
+                if (!prev || ts > prev.ts) {
+                  latest.set(key, { ts, rel });
+                }
+              }
+            }
+          }
+
+          const reportList = Array.from(latest.values()).map((v) => v.rel).sort();
+          fs.mkdirSync(path.join('gh-pages-branch', 'historical-data'), { recursive: true });
+          fs.writeFileSync(path.join('gh-pages-branch', 'historical-data', 'report-list.json'), JSON.stringify(reportList));
+          NODE
           
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
