@@ -1,0 +1,131 @@
+{
+  "project": "Jysk AS",
+  "timestamp": "2026-08-20T05:30:01.573Z",
+  "url": "https://jysk.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img title=\"Annonserte varer\" alt=\"Annonserte varer\" loading=\"lazy\" width=\"1000\" height=\"667\" decoding=\"async\" data-nimg=\"1\" class=\"relative transition-...\" style=\"color:transparent\" sizes=\"(min-width: 1372px) ...\" srcset=\"https://img.jysk.io?...\" src=\"https://img.jysk.io?...\">",
+          "target": [
+            "img[title=\"Annonserte varer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img title=\"FAST LAV PRIS\" alt=\"FAST LAV PRIS\" loading=\"lazy\" width=\"1000\" height=\"667\" decoding=\"async\" data-nimg=\"1\" class=\"relative transition-...\" style=\"color:transparent\" sizes=\"(min-width: 1372px) ...\" srcset=\"https://img.jysk.io?...\" src=\"https://img.jysk.io?...\">",
+          "target": [
+            "img[title=\"FAST LAV PRIS\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img title=\"Gavekort\" alt=\"Gavekort\" loading=\"lazy\" width=\"1000\" height=\"667\" decoding=\"async\" data-nimg=\"1\" class=\"relative transition-...\" style=\"color:transparent\" sizes=\"(min-width: 1372px) ...\" srcset=\"https://img.jysk.io?...\" src=\"https://img.jysk.io?...\">",
+          "target": [
+            "img[title=\"Gavekort\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 10,
+      "nodes": [
+        {
+          "html": "<div style=\"background-color:#143C8A\" class=\"h-9 overflow-hidden bg-brand-500 text-center\">",
+          "target": [
+            ".bg-brand-500"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"mx-auto w-full px-3.5 max-w-[1400px]\">",
+          "target": [
+            ".px-3\\.5.max-w-\\[1400px\\].mx-auto:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"mb-2 text-center text-xl font-semibold md:text-4xl\">Vinn et gavekort på 3.000 kroner hos JYSK</h3>",
+          "target": [
+            ".text-xl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mb-8 text-center text-lg\">",
+          "target": [
+            ".max-w-3xl > .mb-8"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"text-sm\">Alle felt merket med en stjerne (*) er obligatoriske</p>",
+          "target": [
+            "form > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-testid=\"form-group\" class=\"group relative flex-1\">",
+          "target": [
+            ".flex-1.group[data-testid=\"form-group\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-testid=\"form-group\" class=\"group relative\">",
+          "target": [
+            ".group.relative[data-testid=\"form-group\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<button type=\"button\" role=\"checkbox\" aria-checked=\"false\" data-state=\"unchecked\" value=\"false\" class=\"flex items-center ju...\" data-testid=\"checkbox\" aria-labelledby=\"_R_1njh5udb9fivb_\" tabindex=\"0\">",
+          "target": [
+            ".hover\\:border-gray-500"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span id=\"_R_1njh5udb9fivb_\" class=\"w-full px-2 peer-disabled:cursor-not-allowed peer-disabled:text-gray-400\">",
+          "target": [
+            "#_R_1njh5udb9fivb_"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"onetrust-banner-sdk\" class=\"otCenterRounded default vertical-align-content\" tabindex=\"0\" aria-label=\"Du må samhandle med banneret for å lukke det.\">",
+          "target": [
+            "#onetrust-banner-sdk"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

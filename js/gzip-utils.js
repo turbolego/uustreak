@@ -10,6 +10,12 @@ function isGzipSupported() {
     return typeof DecompressionStream !== 'undefined';
 }
 
+function isAppleDoublePath(filePath) {
+    const normalized = filePath.startsWith('./') ? filePath.slice(2) : filePath;
+    const baseName = normalized.split('/').pop() || normalized;
+    return baseName.startsWith('._') || normalized.includes('/._') || normalized.startsWith('__MACOSX/');
+}
+
 /**
  * Fetches and decompresses a gzip archive, returning the contained JSON files
  * @param {string} archiveUrl - URL to the .tar.gz archive
@@ -44,6 +50,19 @@ async function fetchAndDecompressArchive(archiveUrl) {
         // Parse JSON files
         const jsonFiles = {};
         for (const [filename, content] of Object.entries(files)) {
+            if (!filename.endsWith('.json')) {
+                continue;
+            }
+
+            if (isAppleDoublePath(filename)) {
+                continue;
+            }
+
+            if (content.includes('\u0000')) {
+                console.warn(`Skipping non-text JSON candidate from archive: ${filename}`);
+                continue;
+            }
+
             if (filename.endsWith('.json')) {
                 try {
                     jsonFiles[filename] = JSON.parse(content);
@@ -151,6 +170,11 @@ async function extractTarFiles(tarData) {
         // Only process regular files
         if (fileType === '0' || fileType === '\0') {
             if (fileSize > 0 && filename) {
+                if (isAppleDoublePath(filename)) {
+                    offset += Math.ceil(fileSize / 512) * 512;
+                    continue;
+                }
+
                 // Read file content
                 const content = new Uint8Array(tarData, offset, fileSize);
                 files[filename] = new TextDecoder('utf-8').decode(content);

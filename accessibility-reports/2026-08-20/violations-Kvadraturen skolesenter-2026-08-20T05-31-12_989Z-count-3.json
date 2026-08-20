@@ -1,0 +1,439 @@
+{
+  "project": "Kvadraturen skolesenter",
+  "timestamp": "2026-08-20T05:31:12.990Z",
+  "url": "https://kvadraturen.vgs.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe allowfullscreen=\"\" frameborder=\"0\" height=\"300\" src=\"https://www.google.c...\" style=\"border:0;\" width=\"300\">",
+          "target": [
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://agderfk.no/\" data-id=\"16221\" class=\"external-link external\"><span>Agder fylkeskommune</span></a>",
+          "target": [
+            "a[href$=\"agderfk.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 50,
+      "nodes": [
+        {
+          "html": "<h1 class=\"visually-hidden\">\n        Kvadraturen videregående skole\n    </h1>",
+          "target": [
+            ".visually-hidden"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"Sone2501\" class=\"zone Zone webPartZoneVertical\">",
+          "target": [
+            "#Sone2501"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input name=\"ctl00$ctl00$ctl00$innhold$MidtSone$ucSearchField$txtSearch\" type=\"text\" id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ucSearchField_txtSearch\" class=\"js-liten-trigger-search\" aria-label=\"Søketekst\" placeholder=\"Hva leter du etter?\" data-handled=\"true\" autocomplete=\"off\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ucSearchField_txtSearch"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"Sone2502\" class=\"zone Zone webPartZoneVertical\">",
+          "target": [
+            "#Sone2502"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5000\" class=\"zone-container wrapper-outer zone-container--white zone-container--service-menu\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5000"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"il-heading il-heading--h2\">Her er - og blir du noe!</h2>",
+          "target": [
+            ".text-box > .il-heading--h2:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>",
+          "target": [
+            "p:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>--------------------------------------------------------------------------------------</p>",
+          "target": [
+            ".text-box > p:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 style=\"margin-left:0px;\" class=\"il-heading il-heading--h2\"><strong>PC for elever - digital leieavtale for nye elever til høsten</strong></h2>",
+          "target": [
+            ".il-heading--h2:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>",
+          "target": [
+            ".text-box > p:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"il-heading il-heading--h2\">----------------------------------------------------------------</h2>",
+          "target": [
+            ".il-heading--h2:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"il-heading il-heading--h2\">Velkommen til skolestart!!!</h2>",
+          "target": [
+            ".il-heading--h2:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>",
+          "target": [
+            "p:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>-----------------------------------------------------------------------------</p>",
+          "target": [
+            ".text-box > p:nth-child(9)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"il-heading il-heading--h3\">Oppstartsfestivalen</h3>",
+          "target": [
+            ".il-heading--h3:nth-child(10)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Oppstartsfestivalen varer over en hel uke. På de ulike dagene løfter skolen frem tema som respekt, nysgjerrighet, velkommen og fest 🥳</p>",
+          "target": [
+            "p:nth-child(11)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Vi håper uka setter standarden for hvordan vi ønsker å ha det på Kvadraturen videregående skole (populært kalt Kvadda) - et sted hvor du kan lære, utvikle deg faglig og sosialt, og et sted hvor du hører til 🤝 For hos oss ER, og BLIR du noe!</p>",
+          "target": [
+            "p:nth-child(12)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Det hele avsluttes med en festival-dag med verdens største wok i skolegården sammen med en rekke utstillere fra aktuelle lærling-bedrifter og opplæringskontor samt en fest forestilling i KRS Live. &nbsp;</p>",
+          "target": [
+            "p:nth-child(13)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p><br>------------------------------------------------------------------------------------------</p>",
+          "target": [
+            "p:nth-child(15)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"il-heading il-heading--h3\">Foreldremøte vg1</h3>",
+          "target": [
+            ".il-heading--h3:nth-child(16)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Til alle foresatte på vg1 ved Kvadraturen vgs.</p>",
+          "target": [
+            "p:nth-child(17)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Velkommen til foreldremøte for vg1 onsdag 19. august klokken 18.00 i skolens kantine.&nbsp;</p>",
+          "target": [
+            "p:nth-child(18)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>-----------------------------------------------------------------------------------------</p>",
+          "target": [
+            "p:nth-child(19)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p><strong>Informasjon om skoleplass</strong></p>",
+          "target": [
+            "p:nth-child(20)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Se her: <a href=\"https://agderfk.no/vare-tjenester/skole-og-opplaring/opplaring-i-skole/skoleplass-og-innsoking-til-videregaende-opplaring/ofte-stilte-sporsmal-om-skoleplass/#faqsporsmal-732\" class=\"external-link external\">Informasjon om skoleplass - Agder fylkeskommune</a>&nbsp;</p>",
+          "target": [
+            "p:nth-child(21)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Etter suppleringsinntaket i august, kan du kontakte skolen for å sette deg på lokal venteliste dersom du ikke har fått skoleplass. Servicetorget ved skolen åpner etter ferien mandag 3 august. &nbsp;</p>",
+          "target": [
+            "p:nth-child(22)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p style=\"margin-left:0px;\">------------------------------------------------------------------------------------------</p>",
+          "target": [
+            "p:nth-child(23)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p><strong>Skoleskyss</strong></p>",
+          "target": [
+            "p:nth-child(24)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>All info om skoleskyss for videregående elever finnes her:&nbsp;<a href=\"https://www.akt.no/planlegg-reisen/skoleskyss/skyss-til-videregaende-skole/\" class=\"external-link external\">Skyss til videregående skole - Agder kollektivtrafikk</a></p>",
+          "target": [
+            "p:nth-child(25)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>-------------------------------------------------------------------------------------------</p>",
+          "target": [
+            "p:nth-child(26)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p><strong>Lån og stipend</strong></p>",
+          "target": [
+            "p:nth-child(27)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>",
+          "target": [
+            "p:nth-child(28)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>--------------------------------------------------------------------------------------------</p>",
+          "target": [
+            "p:nth-child(29)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p><strong>&nbsp;Annen nyttig info ved skolestart</strong></p>",
+          "target": [
+            "p:nth-child(30)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Skolereglement&nbsp;<a href=\"https://kvadraturen.vgs.no/for-elever/reglement-utlan-og-rutiner/skolereglement/\">Skolereglement - Kvadraturen videregående skole</a></p>",
+          "target": [
+            "p:nth-child(31)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Fraværs reglement <a href=\"https://kvadraturen.vgs.no/for-elever/reglement-utlan-og-rutiner/regler-for-fravar/\">Regler for fravær - Kvadraturen videregående skole</a></p>",
+          "target": [
+            "p:nth-child(32)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Mobil reglement &nbsp;<a href=\"https://kvadraturen.vgs.no/for-elever/reglement-utlan-og-rutiner/regler-for-mobilbruk/\">Regler for mobilbruk - Kvadraturen videregående skole</a></p>",
+          "target": [
+            "p:nth-child(33)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Samtykke til bruk av bilder og video&nbsp;<a href=\"https://agderfk.no/om-oss/personvern/samtykke-til-bruk-av-bilder-i-skole/\" class=\"external-link external\">Samtykke til bruk av bilder og video av elever i skolesammenheng - Agder fylkeskommune</a></p>",
+          "target": [
+            "p:nth-child(34)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Bilder av elevene blir tatt siste uken i august. Bilder som tas kan lastes ned i eget skolebevis, kalt Pocket Id – se info her&nbsp; <a href=\"https://kvadraturen.vgs.no/for-elever/skolehverdag/digitalt-skolebevis/\">Digitalt skolebevis - Kvadraturen videregående skole</a>.</p>",
+          "target": [
+            "p:nth-child(35)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>IKT reglement<strong>&nbsp;</strong>&nbsp;<a href=\"https://agderfk.no/vare-tjenester/skole-og-opplaring/opplaring-i-skole/reglement-og-retningslinjer/ikt-reglement/\" class=\"external-link external\">IKT-reglement - Agder fylkeskommune</a></p>",
+          "target": [
+            "p:nth-child(36)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>-----------------------------------------------------------------------------------------</p>",
+          "target": [
+            "p:nth-child(37)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p><strong>Studiekompetanse for voksne</strong></p>",
+          "target": [
+            "p:nth-child(38)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>",
+          "target": [
+            "p:nth-child(39)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>-----------------------------------------------------------------------------------------</p>",
+          "target": [
+            "p:nth-child(40)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h4 class=\"il-heading il-heading--h4\">Sponsorløpet 2026</h4>",
+          "target": [
+            ".il-heading--h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>",
+          "target": [
+            "p:nth-child(42)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t\t<span>Aktuelt</span>\n\t\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_1395 > .webPartTittel"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul>",
+          "target": [
+            ".container > ul"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPartBunnLink\">\n            <a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_1395_WebpartId_1395_rptItems_ctl01_ucDisplayControl_hlLinkAlle\" class=\"MargLink\" href=\"/aktuelt/\">Se alle aktuelle saker</a>\n        </div>",
+          "target": [
+            ".webPartBunnLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"back-to-top-button-wrapper\">\n            <a class=\"back-to-top-button js-back-to-top-button\" href=\"#header\">\n                <span>Til toppen</span>\n            </a>\n        </div>",
+          "target": [
+            ".back-to-top-button-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
