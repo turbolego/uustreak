@@ -495,7 +495,7 @@ jobs:
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
           BATCH_INDEX: ${{ matrix.batch }}
-          PREFER_HASH_URL: "true"
+          ALLOW_HASH_FALLBACK: "false"
         run: |
           # Reuse Playwright browser path restored from setup artifact
           export PLAYWRIGHT_BROWSERS_PATH="${PLAYWRIGHT_BROWSERS_PATH:-${RUNNER_TEMP:-/tmp}/ms-playwright-restored-${GITHUB_RUN_ID}-attempt-${GITHUB_RUN_ATTEMPT:-1}-batch-${{ matrix.batch }}}"

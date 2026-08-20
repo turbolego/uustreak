@@ -33,14 +33,13 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
     try {{
         console.log(`Starting accessibility test for {escaped_project_name}`);
         
-        // Dual URL strategy: try both with and without hash fragment
-        const baseUrl = '{project_url}'.replace(/\/#$/, '/');
+        // Canonical URL first. Hash fallback is opt-in only.
+        const baseUrl = '{project_url}'.replace(/\/#$/, '/').replace(/#$/, '');
         const hashUrl = baseUrl.endsWith('/') ? baseUrl + '#' : baseUrl + '/#';
-        
-        // Different strategies for different environments
-        const urlCandidates = process.env.PREFER_HASH_URL === 'true' 
-            ? [hashUrl, baseUrl] 
-            : [baseUrl, hashUrl];
+        const allowHashFallback = process.env.ALLOW_HASH_FALLBACK === 'true';
+        const urlCandidates = allowHashFallback
+            ? [baseUrl, hashUrl]
+            : [baseUrl];
             
         console.log(`Trying navigation strategies for URLs: ${{urlCandidates.join(', ')}}`);
         
