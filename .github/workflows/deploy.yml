@@ -160,6 +160,7 @@ jobs:
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
           BATCH_INDEX: ${{ matrix.batch }}
+          ALLOW_HASH_FALLBACK: "false"
         run: |
           export BATCH_INDEX=${{ matrix.batch }}
           mapfile -t ALL_SPECS < <(ls tests/*.spec.ts)
@@ -539,6 +540,17 @@ jobs:
               if (!name.endsWith('.json')) continue;
               if (name.startsWith('._')) continue;
               if (name.includes('-FAILED.json') || name.includes('-SKIPPED.json')) continue;
+
+              const reportPath = path.join(dir, name);
+              try {
+                const reportData = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+                if (reportData?.skipped === true || reportData?.skip_scoring === true || reportData?.skip_streak === true) {
+                  continue;
+                }
+              } catch (e) {
+                console.warn(`Could not parse report ${name}, skipping from report list: ${e.message}`);
+                continue;
+              }
 
               const m = name.match(re);
               if (!m) continue;

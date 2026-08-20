@@ -197,6 +197,7 @@ jobs:
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
           BATCH_INDEX: ${{ matrix.batch }}
+          ALLOW_HASH_FALLBACK: "false"
         run: |
           export PLAYWRIGHT_BROWSERS_PATH="$RUNNER_TEMP/ms-playwright"
           export BATCH_INDEX=${{ matrix.batch }}
