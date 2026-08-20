@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-08-19T01:44:44.125Z
+**Timestamp:** 2026-08-20T01:27:55.978Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 4
 
@@ -21,7 +21,7 @@
 - `#searchInput`
 - `.contents[href="/no/bolig?location=felles"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `.contents[href="/no/trening?location=bergen"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
-- `.contents[target="_self"]:nth-child(3) > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
+- `a[href$="kurs"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `a[href$="bli-medlem"] > .btn-primary.btn-lg[type="button"] > .md\:text-body_large.flex-row.justify-between > .text-base-white.svelte-nqw3qe.font-light`
 - `.contents[target="_blank"] > .btn-primary.btn-lg[type="button"] > .md\:text-body_large.flex-row.justify-between > .text-base-white.svelte-nqw3qe.font-light`
 - `h1`

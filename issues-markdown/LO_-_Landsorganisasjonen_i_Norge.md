@@ -1,6 +1,6 @@
 # WCAG Violations Report for LO - Landsorganisasjonen i Norge
 
-**Timestamp:** 2026-08-19T01:25:41.469Z
+**Timestamp:** 2026-08-20T01:34:13.710Z
 **URL:** [https://www.lo.no/#](https://www.lo.no/#)
 **Total Violations:** 3
 
@@ -18,13 +18,13 @@
 
 - `.articleTeaser--large > .articleTeaser__image > .image > .is-loaded`
 - `.articleTeaser--medium.articleTeaser:nth-child(2) > .articleTeaser__image > .image > .is-loaded`
-- `.articleTeaser--medium.articleTeaser:nth-child(6) > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(8) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(3) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(7) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(9) > .articleTeaser__image > .image > img`
 - `.articleTeaser--medium.articleTeaser:nth-child(10) > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(11) > .articleTeaser__image > .image > img`
-- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--yellow:nth-child(16) > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(19) > .articleTeaser__image > .image > img`
-- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--yellow:nth-child(20) > .articleTeaser__image > .image > img`
+- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--yellow:nth-child(15) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(18) > .articleTeaser__image > .image > img`
+- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--yellow:nth-child(19) > .articleTeaser__image > .image > img`
 - `.themeTeaser--featured.themeTeaser:nth-child(2) > .image > img`
 - `.themeTeaser--featured.themeTeaser:nth-child(3) > .image > img`
 

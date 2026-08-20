@@ -1,34 +1,10 @@
 # WCAG Violations Report for Aleris Helse AS
 
-**Timestamp:** 2026-08-19T01:35:41.640Z
+**Timestamp:** 2026-08-20T01:32:54.757Z
 **URL:** [https://www.aleris.no/](https://www.aleris.no/)
-**Total Violations:** 5
+**Total Violations:** 3
 
 ## Violation Details
-
-### ARIA hidden element must not be focusable or contain focusable elements
-
-- **Impact:** serious
-- **Description:** Ensure aria-hidden elements are not focusable nor contain focusable elements
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-hidden-focus?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-10.8.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.sand.styles_card__RkDWu > .styles_contentWrapper__SrdkM > .styles_html__ANGXS.styles_html__zz6xy[data-epi-edit="Content"]`
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.ant-skeleton-title`
 
 ### Document should not have more than one banner landmark
 

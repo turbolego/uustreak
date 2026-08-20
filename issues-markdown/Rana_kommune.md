@@ -1,6 +1,6 @@
 # WCAG Violations Report for Rana kommune
 
-**Timestamp:** 2026-08-19T01:27:36.376Z
+**Timestamp:** 2026-08-20T01:36:03.312Z
 **URL:** [https://www.rana.kommune.no/#](https://www.rana.kommune.no/#)
 **Total Violations:** 3
 

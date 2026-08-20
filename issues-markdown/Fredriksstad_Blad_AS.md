@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-08-19T01:22:57.172Z
+**Timestamp:** 2026-08-20T01:21:53.494Z
 **URL:** [https://www.f-b.no/#](https://www.f-b.no/#)
 **Total Violations:** 5
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#eaframe, #container_10734212 > .info > .info-wrapper > .ctaLink`
+- `#eaframe, #container_10735019 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `brick-teaser-group-v0[data-color-skin="sport"] > div > brick-carousel-v3 > .carousel[aria-label="Innholdskarusell"][role="region"]`
+- `brick-carousel-v3[data-slides="6"] > .carousel[aria-label="Innholdskarusell"][role="region"]`
 
 ### Elements marked as presentational should be consistently ignored
 

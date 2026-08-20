@@ -1,8 +1,8 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-08-19T01:30:38.494Z
+**Timestamp:** 2026-08-20T01:29:01.509Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -32,18 +32,6 @@
 - `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-header[data-v-89afb171=""] > .margin-top-3xl.padding-top-3xs`
 - `.dropdown-category.footer.dark:nth-child(1) > .dropdown-link[data-v-d418c31d=""] > .dropdown-header.hidden-mobile[data-v-d418c31d=""] > h6`
 - `#privacy_prompt_text2 > h4`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.carousel__slide--clone > .disableFocus.dark-with-background-graphic.carouselSlideOuterContainer > .carouselSlideContainer.isCarousel[data-v-b0cd0d7f=""] > .backgroundGraphicContainer[data-v-b0cd0d7f=""] > .graphic[absolute=""][data-mode="dark"] > .videoContainer[data-v-7afc7102=""] > .video-container[controls="false"][muted=""]`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 

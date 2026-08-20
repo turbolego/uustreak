@@ -1,20 +1,43 @@
 # WCAG Violations Report for Experis AS
 
-**Timestamp:** 2026-08-19T01:22:06.539Z
+**Timestamp:** 2026-08-20T01:20:51.281Z
 **URL:** [https://www.experis.no/#](https://www.experis.no/#)
-**Total Violations:** 1
+**Total Violations:** 3
 
 ## Violation Details
 
-### Elements must meet minimum color contrast ratio thresholds
+### Heading levels should only increase by one
 
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.timestamp`
-- `#utc-time`
+- `h6`
+
+### <html> element must have a lang attribute
+
+- **Impact:** serious
+- **Description:** Ensure every HTML document has a lang attribute
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/html-has-lang?application=playwright
+- **Tags:** cat.language, wcag2a, wcag311, TTv5, TT11.a, EN-301-549, EN-9.3.1.1, ACT, RGAAv4, RGAA-8.3.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.offline_outer`

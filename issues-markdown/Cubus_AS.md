@@ -1,6 +1,6 @@
 # WCAG Violations Report for Cubus AS
 
-**Timestamp:** 2026-08-19T01:37:27.439Z
+**Timestamp:** 2026-08-20T01:34:44.301Z
 **URL:** [https://cubus.com/no/#](https://cubus.com/no/#)
 **Total Violations:** 4
 
@@ -16,16 +16,16 @@
 
 #### Affected Elements:
 
-- `#react_3bf91237-3450-496c-a42f-ac549811c9d4 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(3)`
-- `#react_d336fc3b-1013-4ac5-9d52-427a44bddafd > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
-- `#react_d336fc3b-1013-4ac5-9d52-427a44bddafd > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
-- `#react_7827bc0c-7ecd-4a0b-af61-73f98915e8d1 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
-- `#react_7827bc0c-7ecd-4a0b-af61-73f98915e8d1 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
-- `#react_6991b6d5-bd9e-4ccb-ac1e-f4c9ae30a245 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
-- `#react_6991b6d5-bd9e-4ccb-ac1e-f4c9ae30a245 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
-- `#react_d83d53ce-f330-4ebd-8d06-a036ab93f78f > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
-- `#react_d83d53ce-f330-4ebd-8d06-a036ab93f78f > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
-- `#react_a96d16d9-eb2d-42e8-a6e7-ae6f9b166014 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(3)`
+- `#react_8603db33-7eed-49f8-a6be-63240782b12f > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(3)`
+- `#react_e083593b-c5d0-460b-bdc9-6482cd2e7439 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
+- `#react_e083593b-c5d0-460b-bdc9-6482cd2e7439 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
+- `#react_68ffd437-e435-4b26-82e9-b017546fa1ec > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
+- `#react_68ffd437-e435-4b26-82e9-b017546fa1ec > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
+- `#react_4c6faa68-7a03-4000-9956-eb5b5c56aa97 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
+- `#react_4c6faa68-7a03-4000-9956-eb5b5c56aa97 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
+- `#react_17855bf1-6608-4285-a28d-5451ab07121f > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
+- `#react_17855bf1-6608-4285-a28d-5451ab07121f > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
+- `#react_7d791eda-a3c9-46dc-8dd0-be2b323c3481 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-1rnval-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(3)`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
