@@ -451,6 +451,20 @@ jobs:
             return name.startsWith('violations-') && name.endsWith('.json') && !name.includes('-FAILED.json');
           }
 
+          function isSkippedReport(filePath) {
+            const name = path.basename(filePath);
+            if (name.includes('-SKIPPED.json')) {
+              return true;
+            }
+
+            try {
+              const report = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+              return report?.skipped === true || report?.skip_scoring === true || report?.skip_streak === true;
+            } catch {
+              return false;
+            }
+          }
+
           if (!fs.existsSync(reportListPath)) {
             fail('site-output/historical-data/report-list.json is missing');
           }
@@ -471,8 +485,14 @@ jobs:
             fail('No violations-*.json files found in artifacts; refusing to publish to avoid deleting history with empty input');
           }
 
+          const scoredArtifactReports = artifactReports.filter((filePath) => !isSkippedReport(filePath));
+          if (scoredArtifactReports.length === 0) {
+            console.log('ℹ️ Only skipped outage/error reports were produced; no score or streak updates expected for this run.');
+            process.exit(0);
+          }
+
           const expectedByDate = new Map();
-          for (const filePath of artifactReports) {
+          for (const filePath of scoredArtifactReports) {
             const fileName = path.basename(filePath);
             const match = fileName.match(/-(\d{4}-\d{2}-\d{2})T/);
             if (!match) {
@@ -488,7 +508,9 @@ jobs:
 
           for (const [date, expectedCount] of expectedByDate.entries()) {
             const dateDir = path.join(outputDir, 'accessibility-reports', date);
-            const actualCount = walkFiles(dateDir).filter(isViolationReport).length;
+            const actualCount = walkFiles(dateDir)
+              .filter(isViolationReport)
+              .filter((filePath) => !isSkippedReport(filePath)).length;
             const reportListCountForDate = reportList.filter((entry) => {
               if (typeof entry !== 'string') {
                 return false;
@@ -507,7 +529,7 @@ jobs:
             }
           }
 
-          console.log(`✅ Sanity gate passed: report-list entries=${reportList.length}, artifact reports=${artifactReports.length}, dates checked=${expectedByDate.size}`);
+          console.log(`✅ Sanity gate passed: report-list entries=${reportList.length}, scored reports=${scoredArtifactReports.length}, dates checked=${expectedByDate.size}`);
           NODE
       - name: Create or Update GitHub Issues
         uses: actions/github-script@v9

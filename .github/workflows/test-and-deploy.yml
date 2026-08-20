@@ -47,7 +47,7 @@ jobs:
           cp styles.css gh-pages-branch/
           cp -r assets gh-pages-branch/
           
-          find gh-pages-branch/accessibility-reports -name "violations-*.json" -type f | \
+          find gh-pages-branch/accessibility-reports -name "violations-*.json" ! -name "*-FAILED.json" ! -name "*-SKIPPED.json" -type f | \
             jq -R . | jq -s . > gh-pages-branch/historical-data/report-list.json
           
       - name: Deploy to GitHub Pages

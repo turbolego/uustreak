@@ -342,7 +342,7 @@ jobs:
               echo "Warning: Could not extract date from filename: $file"
               cp "$file" "gh-pages-branch/accessibility-reports/"
             fi
-          done < <(find artifacts -name "violations-*.json" -type f)
+          done < <(find artifacts -name "violations-*.json" ! -name "*-FAILED.json" ! -name "*-SKIPPED.json" -type f)
           echo "Total violation files copied: $COPIED_COUNT"
           
           # Copy summary files with folder structure - use merged summaries
@@ -525,7 +525,7 @@ jobs:
 
           # Add only today's new violation file paths (from the newest run)
           find "gh-pages-branch/accessibility-reports/$TODAY" -maxdepth 1 \
-            -name "violations-*.json" ! -name "*-FAILED.json" -type f 2>/dev/null | \
+            -name "violations-*.json" ! -name "*-FAILED.json" ! -name "*-SKIPPED.json" -type f 2>/dev/null | \
           while IFS= read -r file; do
             echo "${file#gh-pages-branch/}"
           done > /tmp/report-list-today.txt
@@ -573,7 +573,7 @@ jobs:
           if (fs.existsSync(violationsDir)) {
             const BATCH_SIZE = 200;
             const allFiles = fs.readdirSync(violationsDir)
-              .filter(f => f.startsWith('violations-') && f.endsWith('.json') && !f.includes('-FAILED'));
+              .filter(f => f.startsWith('violations-') && f.endsWith('.json') && !f.includes('-FAILED') && !f.includes('-SKIPPED'));
 
             console.log(`Processing ${allFiles.length} violation files for ${today}`);
 
@@ -586,6 +586,17 @@ jobs:
             for (let i = 0; i < allFiles.length; i += BATCH_SIZE) {
               const batch = allFiles.slice(i, i + BATCH_SIZE);
               batch.forEach(filename => {
+                const reportPath = path.join(violationsDir, filename);
+                try {
+                  const reportData = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+                  if (reportData?.skipped === true || reportData?.skip_scoring === true || reportData?.skip_streak === true) {
+                    return;
+                  }
+                } catch (e) {
+                  console.warn(`Could not parse report ${filename}, skipping from streak index: ${e.message}`);
+                  return;
+                }
+
                 // Format: violations-<project>-YYYY-MM-DDTHH-MM-SS_SSSZ-count-N.json
                 const projectMatch = filename.match(/^violations-(.+?)-\d{4}-\d{2}-\d{2}T/);
                 const countMatch   = filename.match(/-count-(\d+)\.json$/);
@@ -594,6 +605,7 @@ jobs:
 
                 const project = projectMatch[1];
                 const count   = countMatch ? parseInt(countMatch[1], 10) : -1;
+                if (count < 0) return;
 
                 if (!streakIndex[project]) streakIndex[project] = {};
 

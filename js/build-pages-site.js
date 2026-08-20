@@ -126,6 +126,30 @@ function parseProjectAndCount(fileName) {
     };
 }
 
+function isCountableViolationReport(reportFilePath) {
+    const fileName = path.basename(reportFilePath);
+    if (!fileName.startsWith('violations-') || !fileName.endsWith('.json')) {
+        return false;
+    }
+
+    if (fileName.includes('-FAILED') || fileName.includes('-SKIPPED')) {
+        return false;
+    }
+
+    const report = readJson(reportFilePath, null);
+    if (report && typeof report === 'object') {
+        if (report.skipped === true || report.skip_scoring === true || report.skip_streak === true) {
+            return false;
+        }
+
+        if (typeof report.total_violations === 'number' && report.total_violations < 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
 function readJson(filePath, fallback) {
     if (!fs.existsSync(filePath)) {
         return fallback;
@@ -306,6 +330,9 @@ function updateReportList(outputDir, touchedDates) {
         }
 
         for (const reportFile of listFilesRecursive(reportDir, (fullPath, name) => name.startsWith('violations-') && name.endsWith('.json') && !name.includes('-FAILED'))) {
+            if (!isCountableViolationReport(reportFile)) {
+                continue;
+            }
             nextEntries.add(normalizeRelative(path.relative(outputDir, reportFile)));
         }
     }
@@ -331,6 +358,10 @@ function updateStreakIndex(outputDir, touchedDates) {
         }
 
         for (const reportFile of listFilesRecursive(reportDir, (fullPath, name) => name.startsWith('violations-') && name.endsWith('.json') && !name.includes('-FAILED'))) {
+            if (!isCountableViolationReport(reportFile)) {
+                continue;
+            }
+
             const parsed = parseProjectAndCount(path.basename(reportFile));
             if (!parsed) {
                 continue;

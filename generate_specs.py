@@ -47,6 +47,7 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
         let navigationSuccess = false;
         let lastError = null;
         let browserUsed = 'chromium';
+        let navigationStatus = null;
         
         // Enhanced fallback strategy with anti-bot detection measures
         const fallbackStrategies = [
@@ -310,10 +311,11 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                         // Add random delay before navigation
                         await currentPage.waitForTimeout(Math.floor(Math.random() * 1000) + 500);
                         
-                        await currentPage.goto(candidateUrl, {{ 
+                        const response = await currentPage.goto(candidateUrl, {{ 
                             waitUntil: strategy.waitUntil, 
                             timeout: strategy.timeout 
                         }});
+                        navigationStatus = response ? response.status() : null;
                         
                         console.log(`✅ ${{strategy.name}} navigation successful`);
                         navigationSuccess = true;
@@ -338,10 +340,11 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                             !attemptError.message.includes('Target page, context or browser has been closed')) {{
                             try {{
                                 console.log(`🔄 ${{strategy.name}} quick retry: ${{candidateUrl}}`);
-                                await currentPage.goto(candidateUrl, {{ 
+                                const retryResponse = await currentPage.goto(candidateUrl, {{ 
                                     waitUntil: 'load', 
                                     timeout: Math.min(strategy.timeout, 45000)
                                 }});
+                                navigationStatus = retryResponse ? retryResponse.status() : null;
                                 console.log(`✅ ${{strategy.name}} navigation successful (retry)`);
                                 navigationSuccess = true;
                                 browserUsed = strategy.browser;
@@ -411,6 +414,61 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
         console.log(`Final URL: ${{currentPage.url()}}`);
         console.log(`Page title: ${{await currentPage.title()}}`);
         console.log(`Browser used: ${{browserUsed}}`);
+
+        // Skip outage/error pages so they do not affect score or streak.
+        const pageTitle = ((await currentPage.title()) || '').toLowerCase();
+        const bodyText = ((await currentPage.textContent('body')) || '').toLowerCase();
+        const statusBasedSkip = typeof navigationStatus === 'number' && navigationStatus >= 400;
+        const outageMarkers = [
+            '5xx level errors page',
+            '4xx level errors page',
+            'offline_outer',
+            'error 500',
+            'error 503',
+            'temporarily unavailable',
+            'service unavailable',
+            'bad gateway',
+            'gateway timeout',
+            'origin is unreachable',
+            'web server is down',
+            'ddos protection',
+            'request blocked',
+            'site is temporarily unavailable'
+        ];
+        const markerBasedSkip = outageMarkers.some((marker) => pageTitle.includes(marker) || bodyText.includes(marker));
+
+        if (statusBasedSkip || markerBasedSkip) {{
+            const timestamp = new Date().toISOString()
+                .replace(/:/g, '-')
+                .replace(/\./g, '_');
+            const skipReason = statusBasedSkip
+                ? `HTTP status ${{navigationStatus}}`
+                : 'Detected outage/error page marker in content';
+            const skippedReportPath = path.join(
+                outputDir,
+                `violations-{escaped_project_name}-${{timestamp}}-SKIPPED.json`
+            );
+
+            const skippedReport = {{
+                project: '{escaped_project_name}',
+                timestamp: new Date().toISOString(),
+                url: currentPage.url(),
+                total_violations: null,
+                skipped: true,
+                skip_scoring: true,
+                skip_streak: true,
+                skip_reason: skipReason,
+                http_status: navigationStatus,
+                browser_used: browserUsed,
+                fallback_used: usingFallback,
+                violations: []
+            }};
+
+            fs.writeFileSync(skippedReportPath, JSON.stringify(skippedReport, null, 2));
+            console.log(`⚠️ Skipped outage/error page for {escaped_project_name}: ${{skipReason}}`);
+            console.log(`Skipped report saved to ${{skippedReportPath}}`);
+            return;
+        }}
         
         // Additional stability checks for problematic sites
         try {{

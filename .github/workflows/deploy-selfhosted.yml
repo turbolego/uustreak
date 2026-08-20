@@ -269,12 +269,12 @@ jobs:
           BATCH_COUNT=$(( (TOTAL_SPECS + TARGET_TESTS_PER_BATCH - 1) / TARGET_TESTS_PER_BATCH ))
 
           # Tests are network-I/O bound (waiting for site responses) so we can run
-          # more parallel jobs than CPU-bound work would allow. Use cores 1:1, cap at 6.
+          # more parallel jobs than CPU-bound work would allow. Use cores 1:1, cap at 4.
           # Cross-platform CPU core detection (Linux: nproc, macOS: sysctl, Windows: NUMBER_OF_PROCESSORS env var)
           AVAILABLE_CORES=$(nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo "${NUMBER_OF_PROCESSORS:-4}")
           MAX_PARALLEL=$((AVAILABLE_CORES))
-          if [ "$MAX_PARALLEL" -gt 6 ]; then
-            MAX_PARALLEL=6
+          if [ "$MAX_PARALLEL" -gt 4 ]; then
+            MAX_PARALLEL=4
           elif [ "$MAX_PARALLEL" -lt 1 ]; then
             MAX_PARALLEL=1
           fi
@@ -339,7 +339,7 @@ jobs:
     strategy:
       matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
       fail-fast: true  # Stop all jobs if one fails
-      max-parallel: 6
+      max-parallel: 4
     steps:
       - name: Ensure Git Bash is on PATH (Windows)
         if: runner.os == 'Windows'
@@ -526,8 +526,8 @@ jobs:
           # Cross-platform CPU core detection (Linux: nproc, macOS: sysctl, Windows: NUMBER_OF_PROCESSORS env var)
           AVAILABLE_CORES=$(nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo "${NUMBER_OF_PROCESSORS:-4}")
           MAX_PARALLEL=$((AVAILABLE_CORES))
-          if [ "$MAX_PARALLEL" -gt 6 ]; then
-            MAX_PARALLEL=6
+          if [ "$MAX_PARALLEL" -gt 4 ]; then
+            MAX_PARALLEL=4
           elif [ "$MAX_PARALLEL" -lt 1 ]; then
             MAX_PARALLEL=1
           fi
@@ -1123,6 +1123,20 @@ jobs:
             return name.startsWith('violations-') && name.endsWith('.json') && !name.includes('-FAILED.json');
           }
 
+          function isSkippedReport(filePath) {
+            const name = path.basename(filePath);
+            if (name.includes('-SKIPPED.json')) {
+              return true;
+            }
+
+            try {
+              const report = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+              return report?.skipped === true || report?.skip_scoring === true || report?.skip_streak === true;
+            } catch {
+              return false;
+            }
+          }
+
           if (!fs.existsSync(reportListPath)) {
             fail('site-output/historical-data/report-list.json is missing');
           }
@@ -1143,8 +1157,14 @@ jobs:
             fail('No violations-*.json files found in artifacts; refusing to publish to avoid deleting history with empty input');
           }
 
+          const scoredArtifactReports = artifactReports.filter((filePath) => !isSkippedReport(filePath));
+          if (scoredArtifactReports.length === 0) {
+            console.log('ℹ️ Only skipped outage/error reports were produced; no score or streak updates expected for this run.');
+            process.exit(0);
+          }
+
           const expectedByDate = new Map();
-          for (const filePath of artifactReports) {
+          for (const filePath of scoredArtifactReports) {
             const fileName = path.basename(filePath);
             const match = fileName.match(/-(\d{4}-\d{2}-\d{2})T/);
             if (!match) {
@@ -1160,7 +1180,9 @@ jobs:
 
           for (const [date, expectedCount] of expectedByDate.entries()) {
             const dateDir = path.join(outputDir, 'accessibility-reports', date);
-            const actualCount = walkFiles(dateDir).filter(isViolationReport).length;
+            const actualCount = walkFiles(dateDir)
+              .filter(isViolationReport)
+              .filter((filePath) => !isSkippedReport(filePath)).length;
             const reportListCountForDate = reportList.filter((entry) => {
               if (typeof entry !== 'string') {
                 return false;
@@ -1179,7 +1201,7 @@ jobs:
             }
           }
 
-          console.log(`✅ Sanity gate passed: report-list entries=${reportList.length}, artifact reports=${artifactReports.length}, dates checked=${expectedByDate.size}`);
+          console.log(`✅ Sanity gate passed: report-list entries=${reportList.length}, scored reports=${scoredArtifactReports.length}, dates checked=${expectedByDate.size}`);
           NODE
 
       - name: Create or Update GitHub Issues
