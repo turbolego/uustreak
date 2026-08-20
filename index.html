@@ -272,7 +272,7 @@
             const dates = new Set();
 
             reportFiles.forEach(filename => {
-                if (filename.includes('-FAILED.json')) return;
+                if (filename.includes('-FAILED.json') || filename.includes('-SKIPPED.json')) return;
 
                 const match = filename.match(/violations-(.+)-(\d{4}-\d{2}-\d{2})/);
                 if (match) {
@@ -290,7 +290,7 @@
             reportFiles
                 .filter(filename => {
                     // Exclude FAILED reports from main processing - they're handled separately
-                    if (filename.includes('-FAILED.json')) return false;
+                    if (filename.includes('-FAILED.json') || filename.includes('-SKIPPED.json')) return false;
                     const dateMatch = filename.match(/violations-(.+)-(\d{4}-\d{2}-\d{2})/);
                     return dateMatch && dateMatch[2] === date;
                 })
@@ -442,6 +442,12 @@
                                     console.log(`Error processing failed report ${cleanFilename}:`, failedError.message);
                                 }
                                 // Skip processing failed reports for main results
+                                processedCount++;
+                                continue;
+                            }
+
+                            // Skip outage/error placeholders from scoring/ranking views.
+                            if (cleanFilename.includes('-SKIPPED.json') || data?.skipped === true || data?.skip_scoring === true || data?.skip_streak === true) {
                                 processedCount++;
                                 continue;
                             }
@@ -783,7 +789,7 @@
         function parseReportFilename(filename) {
             // Exclude failed reports - these represent projects that were unavailable for testing
             // and should not affect streak calculations or be included in main results
-            if (filename.includes('-FAILED.json')) return null;
+            if (filename.includes('-FAILED.json') || filename.includes('-SKIPPED.json')) return null;
 
             const match = filename.match(/violations-(.+)-(\d{4}-\d{2}-\d{2})T(\d{2}-\d{2}-\d{2}_\d{3}Z)(?:-count-(\d+))?\.json$/);
             if (!match) return null;
@@ -804,7 +810,7 @@
     }
 
     const filteredReports = reportList
-        .filter(filename => !filename.includes('-FAILED.json')) // Exclude failed reports from streak calculation
+        .filter(filename => !filename.includes('-FAILED.json') && !filename.includes('-SKIPPED.json')) // Exclude failed/skipped reports from streak calculation
         .map(parseReportFilename)
         .filter(report => report && report.project === projectName)
         .sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -1053,7 +1059,8 @@
             const tbody = document.createElement('tbody');
             latestReports.forEach((report, reportIndex) => {
                 const row = document.createElement('tr');
-                row.dataset.violations = report.total_violations;
+                const totalViolations = Number.isFinite(report.total_violations) ? report.total_violations : 0;
+                row.dataset.violations = totalViolations;
                 row.dataset.streak = reportStreaks.get(report.project);
 
                 columns.forEach((col, index) => {
@@ -1101,7 +1108,7 @@
                         });
                         cell.appendChild(achievementsButton);
                     } else if (index === 4) {
-                        cell.textContent = report.total_violations;
+                        cell.textContent = totalViolations;
                     } else if (index === 5) {
                         const streakValue = reportStreaks.get(report.project);
                         // Add fire emoji for projects with the highest streak
