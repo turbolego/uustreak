@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordlandsnett AS
 
-**Timestamp:** 2026-08-20T09:16:55.616Z
+**Timestamp:** 2026-08-21T01:31:57.828Z
 **URL:** [https://arva.no/hjem](https://arva.no/hjem)
 **Total Violations:** 5
 
@@ -50,7 +50,7 @@
 - `a[href="/?id=210386988"]`
 - `a[href="/?id=695199517"]`
 - `a[href$="el-sikkerhet"]`
-- `#Article-18877 > .clear[data-v-fab35f16=""][data-v-05e2877b=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-05e2877b=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
+- `#Article-18824 > .clear[data-v-fab35f16=""][data-v-05e2877b=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-05e2877b=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
 - `#Article-16073 > .clear[data-v-fab35f16=""][data-v-05e2877b=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-05e2877b=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
 - `#Article-9858 > .clear[data-v-fab35f16=""][data-v-05e2877b=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-05e2877b=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
 - `#Article-12591 > .clear[data-v-fab35f16=""][data-v-05e2877b=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-05e2877b=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
@@ -79,7 +79,7 @@
 
 #### Affected Elements:
 
-- `img[width="4284"]`
+- `img[width="1500"]`
 - `.w_carousel_slide[current-slide="0"][data-v-da2a36c6=""]:nth-child(1) > .w_carousel_columns.w_carousel_columns_1[data-v-d3df454e=""] > .w_carousel_column[role="article"][data-v-24b07654=""] > .w_carousel_caption[data-v-24b07654=""][data-v-418e343b=""] > .w_carousel_caption_inner[data-v-418e343b=""] > .w_carousel_title[role="link"][data-v-db978f5c=""]`
 - `.w_carousel_slide[current-slide="0"][data-v-da2a36c6=""]:nth-child(1) > .w_carousel_columns.w_carousel_columns_1[data-v-d3df454e=""] > .w_carousel_column[role="article"][data-v-24b07654=""] > .w_carousel_caption[data-v-24b07654=""][data-v-418e343b=""] > .w_carousel_caption_inner[data-v-418e343b=""] > .w_carousel_intro[data-v-bf094742=""][data-v-418e343b=""]`
 - `img[width="5957"]`

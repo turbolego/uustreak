@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kristiansand Dyrepark AS
 
-**Timestamp:** 2026-08-20T09:14:57.403Z
+**Timestamp:** 2026-08-21T01:30:06.094Z
 **URL:** [https://www.dyreparken.no/](https://www.dyreparken.no/)
 **Total Violations:** 6
 
@@ -12,14 +12,12 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 4
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.c-campaigns__items > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.c-campaigns__items > .owl-nav > .owl-next[role="presentation"][type="button"]`
-- `.js-overflow-scrolling > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.js-overflow-scrolling > .owl-nav > .owl-next[role="presentation"][type="button"]`
+- `.owl-prev`
+- `.owl-next`
 
 ### Buttons must have discernible text
 
@@ -27,14 +25,12 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 4
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.c-campaigns__items > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.c-campaigns__items > .owl-nav > .owl-next[role="presentation"][type="button"]`
-- `.js-overflow-scrolling > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.js-overflow-scrolling > .owl-nav > .owl-next[role="presentation"][type="button"]`
+- `.owl-prev`
+- `.owl-next`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -54,7 +50,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 31
+- **Count:** 24
 
 #### Affected Elements:
 
@@ -62,30 +58,23 @@
 - `.c-grid--columns-small-3 > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-grid--columns-small-3 > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-grid--columns-small-3 > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(11) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(11) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(11) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(11) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(11) > .c-module__container > .c-grid--columns-4.c-grid--image-size-large.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(11) > .c-module__container > .c-grid--columns-4.c-grid--image-size-large.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(11) > .c-module__container > .c-grid--columns-4.c-grid--image-size-large.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-module--grid.c-module.u-theme-dyreparken-primary:nth-child(11) > .c-module__container > .c-grid--columns-4.c-grid--image-size-large.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-entry-content__post:nth-child(1) > .c-tease.c-tease--poster.c-tease--poi > .c-tease__image[data-object-fit="cover"]`
 - `.c-entry-content__post:nth-child(3) > .c-tease.c-tease--poster.c-tease--poi > .c-tease__image[data-object-fit="cover"]`
-- `.u-bg-background.c-module--has-background.c-module--grid:nth-child(13) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.u-bg-background.c-module--has-background.c-module--grid:nth-child(13) > .c-module__container > .c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-4.c-grid--columns-small-2.c-grid--image-size-large > .c-grid__items > .c-grid__item:nth-child(6) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--columns-2 > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--columns-2 > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--columns-2 > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--columns-2 > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.u-bg-background.c-module--has-background.c-module--grid:nth-child(14) > .c-module__container > .c-grid--columns-4.c-grid--image-size-large.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.u-bg-background.c-module--has-background.c-module--grid:nth-child(14) > .c-module__container > .c-grid--columns-4.c-grid--image-size-large.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--columns-4.c-grid--image-size-large.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
+- `.c-grid--columns-4.c-grid--image-size-large.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(6) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-grid__item:nth-child(7) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-billboard--right.c-billboard--poster.c-billboard--variant-default > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
 - `.c-grid--image-size-bleeding.c-grid--columns-3.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-small-1 > .c-grid__items > .c-grid__item:nth-child(1) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-small-1 > .c-grid__items > .c-grid__item:nth-child(2) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-grid--columns-small-1 > .c-grid__items > .c-grid__item:nth-child(3) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.active.owl-item:nth-child(1) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.active.owl-item:nth-child(2) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.active.owl-item:nth-child(3) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.owl-item:nth-child(4) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.owl-item:nth-child(5) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.owl-item:nth-child(6) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.owl-item:nth-child(7) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.owl-item:nth-child(8) > .c-grid__item > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-billboard__image[itemtype="http://schema.org/ImageObject"][href$="app/"]`
 - `.c-footer__app__links > a:nth-child(1)`
 - `.c-footer__app__links > a:nth-child(2)`
@@ -96,14 +85,12 @@
 - **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/presentation-role-conflict?application=playwright
 - **Tags:** cat.aria, best-practice, ACT
-- **Count:** 4
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.c-campaigns__items > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.c-campaigns__items > .owl-nav > .owl-next[role="presentation"][type="button"]`
-- `.js-overflow-scrolling > .owl-nav > .owl-prev.disabled[role="presentation"]`
-- `.js-overflow-scrolling > .owl-nav > .owl-next[role="presentation"][type="button"]`
+- `.owl-prev`
+- `.owl-next`
 
 ### All page content should be contained by landmarks
 

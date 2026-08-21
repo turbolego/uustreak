@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-08-20T09:06:33.387Z
+**Timestamp:** 2026-08-21T01:21:57.909Z
 **URL:** [https://www.bt.no/](https://www.bt.no/)
 **Total Violations:** 4
 
@@ -12,13 +12,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
 - `.weatherTemperature`
-- `span[aria-label="Nå"] > span[aria-hidden="true"] > ._prefix_1l4ea_220[data-skin="breaking"][aria-hidden="true"]`
-- `._button_1xihg_11`
 
 ### Links must have discernible text
 
@@ -42,9 +40,9 @@
 
 #### Affected Elements:
 
+- `track-element[data-track-id="teaser:127312"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="bt"]`
 - `track-element[data-track-id="teaser:127296"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="bt"]`
 - `audio-play-button[title="Wow, Brann!"]`
-- `track-element[data-track-id="teaser:127256"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="bt"]`
 
 ### All page content should be contained by landmarks
 
