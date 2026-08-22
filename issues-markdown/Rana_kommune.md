@@ -1,7 +1,7 @@
-# WCAG Violations Report for Tønsberg kommune
+# WCAG Violations Report for Rana kommune
 
-**Timestamp:** 2026-08-22T03:21:23.513Z
-**URL:** [https://www.tonsberg.kommune.no/](https://www.tonsberg.kommune.no/)
+**Timestamp:** 2026-08-22T03:02:09.782Z
+**URL:** [https://www.rana.kommune.no/](https://www.rana.kommune.no/)
 **Total Violations:** 3
 
 ## Violation Details
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `img[alt="Tønsberg kommune "]`
+- `img[alt="Rana kommune"]`
 
 ### Links must have discernible text
 
@@ -24,11 +24,14 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
+- **Count:** 4
 
 #### Affected Elements:
 
-- `.back-to-top-button`
+- `a[data-id="27769"]`
+- `a[data-id="27771"]`
+- `a[data-id="27772"]`
+- `a[data-id="27768"]`
 
 ### All page content should be contained by landmarks
 
@@ -40,6 +43,6 @@
 
 #### Affected Elements:
 
-- `#ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_248 > .webPartTittel`
-- `#ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_248_WebpartId_248_txtSearch`
-- `#ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_249`
+- `#vFact_audioFrame, #vfact_testaudio`
+- `#vFact_audioFrame, #vfact_bkaudio`
+- `#vFact_audioFrame, h1`
