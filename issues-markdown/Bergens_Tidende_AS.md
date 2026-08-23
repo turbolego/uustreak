@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-08-22T03:01:08.611Z
+**Timestamp:** 2026-08-23T01:22:45.999Z
 **URL:** [https://www.bt.no/](https://www.bt.no/)
 **Total Violations:** 5
 
@@ -62,8 +62,9 @@
 - **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/svg-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `._hearts_4walc_1`
+- `a[data-content-id="vrzGlp"] > ._main_1l4ea_144 > ._meta_1l4ea_213 > ._hearts_4walc_1[width="99"][height="15"]`
+- `a[data-content-id="Bxz8Qw"] > ._main_1l4ea_144 > ._meta_1l4ea_213 > ._hearts_4walc_1[width="99"][height="15"]`

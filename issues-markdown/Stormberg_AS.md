@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-08-22T03:14:04.385Z
+**Timestamp:** 2026-08-23T01:39:23.552Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -30,7 +30,7 @@
 #### Affected Elements:
 
 - `.h2.e0.e1 > div > div`
-- `.h4.am[href$="barnas-dager"]`
+- `a[href$="dagskupp"]`
 - `li:nth-child(1) > .ic.id[aria-label="Trolltunga skalljakke"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `li:nth-child(1) > .ic.id[aria-label="Trolltunga skalljakke"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `li:nth-child(2) > .ic.id[aria-label="Trolltunga skalljakke"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
@@ -39,31 +39,31 @@
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `li:nth-child(5) > .ic.id[aria-label="Trolltunga skalljakke"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `li:nth-child(5) > .ic.id[aria-label="Trolltunga skalljakke"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `a[aria-label="Regndag regnbukse barn 8-14"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Regndag regnbukse barn 8-14"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `a[aria-label="Bergen regnselebukse barn 1-7"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `a[aria-label="Bergen regnselebukse barn 1-7"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `a[aria-label="Regndag regnjakke barn 8-14"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Regndag regnjakke barn 8-14"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Bodø lettvekts regnjakke"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `a[aria-label="Bergen regnselebukse barn 1-7"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `a[aria-label="Bergen regnselebukse barn 1-7"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Nordtoppen lang parkas"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Nordtoppen lang parkas"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `a[aria-label="Kinn fôret skallparkas"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `a[aria-label="Kinn fôret skallparkas"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `li:nth-child(3) > .ic.id[aria-label="Alapmoen vanntett tursko"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `li:nth-child(3) > .ic.id[aria-label="Alapmoen vanntett tursko"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `li:nth-child(4) > .ic.id[aria-label="Alapmoen vanntett tursko"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `li:nth-child(4) > .ic.id[aria-label="Alapmoen vanntett tursko"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `div:nth-child(7) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `div:nth-child(7) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `a[aria-label="Ute vinterdress m/korte ben"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `a[aria-label="Ute vinterdress m/korte ben"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `li:nth-child(3) > .ic.id[aria-label="Kinn fôret skallparkas"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `li:nth-child(3) > .ic.id[aria-label="Kinn fôret skallparkas"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `a[aria-label="Beredo nødradio"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `a[aria-label="Beredo nødradio"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `li:nth-child(5) > .ic.id[aria-label="Kinn fôret skallparkas"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `li:nth-child(5) > .ic.id[aria-label="Kinn fôret skallparkas"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `a[aria-label="Harstad skallanorakk"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `a[aria-label="Sogndal skalljakke"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `a[aria-label="Regndag regnbukse unisex"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `a[aria-label="Bodø lettvekts regnbukse"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Nordkinn skallbukse barn 8-14"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `a[aria-label="Regndag regnbukse unisex"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `a[aria-label="Hemsedal 2-lags ullsett"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `a[aria-label="Bodø lettvekts regnbukse"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty
@@ -104,7 +104,7 @@
 - `div:nth-child(2) > .aq.am.an > .au.as[width="11"]`
 - `div:nth-child(3) > .aq.am.an > .au.as[width="11"]`
 - `a[href$="mid-season-sale"] > .hs.ht.hu > .hx.hw.au`
-- `.a6[href$="barnas-dager"][data-scope-link="true"] > .jm.ht.hu > .hx.a2.hw`
+- `a[href$="barnas-dager"] > .jm.ht.hu > .hx.a2.hw`
 - `.bl.bj.bk:nth-child(4) > div > .jh.ji.jj > .jl.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jm.ht.hu > .hx.a2.hw`
 - `.bl.bj.bk:nth-child(4) > div > .jh.ji.jj > .jl.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jm.ht.hu > .hx.a2.hw`
 - `.bl.bj.bk:nth-child(4) > div > .jh.ji.jj > .jl.fm.be:nth-child(4) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jm.ht.hu > .hx.a2.hw`
@@ -125,7 +125,7 @@
 #### Affected Elements:
 
 - `a[href$="mid-season-sale"]`
-- `.a6[href$="barnas-dager"][data-scope-link="true"]`
+- `a[href$="barnas-dager"]`
 - `.bl.bj.bk:nth-child(4) > div > .jh.ji.jj > .jl.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
 - `.bl.bj.bk:nth-child(4) > div > .jh.ji.jj > .jl.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
 - `.bl.bj.bk:nth-child(4) > div > .jh.ji.jj > .jl.fm.be:nth-child(4) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`

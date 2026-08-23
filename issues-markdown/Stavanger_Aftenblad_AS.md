@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-08-22T03:09:31.054Z
+**Timestamp:** 2026-08-23T01:38:57.649Z
 **URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
 **Total Violations:** 4
 
@@ -17,9 +17,9 @@
 #### Affected Elements:
 
 - `iframe[title="ONS-studio"], .ons-frontbox__cta-link`
-- `iframe[title="ONS-studio"], .ons-frontbox__secondary:nth-child(1) > .ons-frontbox__entry-meta > .ons-frontbox__entry-date`
+- `iframe[title="ONS-studio"], a[aria-label="IKM kjøper Sandnes-bedrift"] > .ons-frontbox__entry-meta > .ons-frontbox__entry-date`
+- `iframe[title="ONS-studio"], .ons-frontbox__secondary:nth-child(2) > .ons-frontbox__entry-meta > .ons-frontbox__entry-date`
 - `iframe[title="ONS-studio"], a[aria-label="Hun åpner ONS"] > .ons-frontbox__entry-meta > .ons-frontbox__entry-date`
-- `iframe[title="ONS-studio"], .ons-frontbox__secondary:nth-child(3) > .ons-frontbox__entry-meta > .ons-frontbox__entry-date`
 - `iframe[title="Tips oss"], .headline`
 
 ### Links must have discernible text
