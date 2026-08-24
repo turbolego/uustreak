@@ -1,6 +1,6 @@
 # WCAG Violations Report for First Hotels AS
 
-**Timestamp:** 2026-08-23T01:28:57.992Z
+**Timestamp:** 2026-08-24T01:25:55.017Z
 **URL:** [https://www.firsthotels.no/](https://www.firsthotels.no/)
 **Total Violations:** 4
 
@@ -29,9 +29,9 @@
 #### Affected Elements:
 
 - `#CybotCookiebotDialogBodyEdgeMoreDetailsLink`
-- `.mb-8.md\:mt-8:nth-child(1) > .space-y-4.flex-col.flex > .space-y-4.flex-col.relative > .overflow-x-hidden[role="region"][aria-roledescription="carousel"] > .overflow-hidden[data-slot="carousel-content"] > .-ml-4.pr-0.pb-4 > .min-w-0.grow-0.basis-full:nth-child(1) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
-- `.mb-8.md\:mt-8:nth-child(1) > .space-y-4.flex-col.flex > .space-y-4.flex-col.relative > .overflow-x-hidden[role="region"][aria-roledescription="carousel"] > .overflow-hidden[data-slot="carousel-content"] > .-ml-4.pr-0.pb-4 > .min-w-0.grow-0.basis-full:nth-child(2) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
-- `.mb-8.md\:mt-8:nth-child(1) > .space-y-4.flex-col.flex > .space-y-4.flex-col.relative > .overflow-x-hidden[role="region"][aria-roledescription="carousel"] > .overflow-hidden[data-slot="carousel-content"] > .-ml-4.pr-0.pb-4 > .min-w-0.grow-0.basis-full:nth-child(3) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+- `.mb-8.md\:mt-8:nth-child(1) > .space-y-4.flex-col.flex > .space-y-4.flex-col.relative > .overflow-x-hidden[aria-roledescription="carousel"][data-slot="carousel"] > .overflow-hidden[data-slot="carousel-content"] > .-ml-4.pr-0.pb-4 > .min-w-0.grow-0.basis-full:nth-child(1) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+- `.mb-8.md\:mt-8:nth-child(1) > .space-y-4.flex-col.flex > .space-y-4.flex-col.relative > .overflow-x-hidden[aria-roledescription="carousel"][data-slot="carousel"] > .overflow-hidden[data-slot="carousel-content"] > .-ml-4.pr-0.pb-4 > .min-w-0.grow-0.basis-full:nth-child(2) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+- `.mb-8.md\:mt-8:nth-child(1) > .space-y-4.flex-col.flex > .space-y-4.flex-col.relative > .overflow-x-hidden[aria-roledescription="carousel"][data-slot="carousel"] > .overflow-hidden[data-slot="carousel-content"] > .-ml-4.pr-0.pb-4 > .min-w-0.grow-0.basis-full:nth-child(3) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
 - `a[href$="sverige"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
 - `a[href$="danmark"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
 - `a[href$="norge"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
@@ -50,7 +50,7 @@
 
 #### Affected Elements:
 
-- `.mb-8.md\:mt-8:nth-child(1) > .space-y-4.flex-col.flex > .space-y-4.flex-col.relative > .overflow-x-hidden[role="region"][aria-roledescription="carousel"]`
+- `.mb-8.md\:mt-8:nth-child(1) > .space-y-4.flex-col.flex > .space-y-4.flex-col.relative > .overflow-x-hidden[aria-roledescription="carousel"][data-slot="carousel"]`
 
 ### Links must have discernible text
 

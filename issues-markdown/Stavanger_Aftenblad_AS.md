@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-08-23T01:38:57.649Z
+**Timestamp:** 2026-08-24T01:35:48.138Z
 **URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
 **Total Violations:** 4
 
@@ -17,9 +17,9 @@
 #### Affected Elements:
 
 - `iframe[title="ONS-studio"], .ons-frontbox__cta-link`
-- `iframe[title="ONS-studio"], a[aria-label="IKM kjøper Sandnes-bedrift"] > .ons-frontbox__entry-meta > .ons-frontbox__entry-date`
+- `iframe[title="ONS-studio"], .ons-frontbox__secondary:nth-child(1) > .ons-frontbox__entry-meta > .ons-frontbox__entry-date`
 - `iframe[title="ONS-studio"], .ons-frontbox__secondary:nth-child(2) > .ons-frontbox__entry-meta > .ons-frontbox__entry-date`
-- `iframe[title="ONS-studio"], a[aria-label="Hun åpner ONS"] > .ons-frontbox__entry-meta > .ons-frontbox__entry-date`
+- `iframe[title="ONS-studio"], a[aria-label="IKM kjøper Sandnes-bedrift"] > .ons-frontbox__entry-meta > .ons-frontbox__entry-date`
 - `iframe[title="Tips oss"], .headline`
 
 ### Links must have discernible text
@@ -45,9 +45,9 @@
 
 #### Affected Elements:
 
+- `track-element[data-track-id="teaser:113307"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="sa"]`
 - `track-element[data-track-id="teaser:113296"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="sa"]`
 - `track-element[data-track-id="teaser:113293"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="sa"]`
-- `track-element[data-track-id="teaser:113268"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="sa"]`
 
 ### All page content should be contained by landmarks
 

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-08-23T01:31:48.138Z
+**Timestamp:** 2026-08-24T01:28:40.872Z
 **URL:** [https://www.kid.no/](https://www.kid.no/)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -17,18 +17,6 @@
 #### Affected Elements:
 
 - `div:nth-child(1) > h4`
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.ll`
 
 ### Document should not have more than one banner landmark
 
@@ -53,7 +41,7 @@
 #### Affected Elements:
 
 - `#coiOverlay`
-- `.h2 > .al > .b[role="region"][aria-roledescription="carousel"]`
+- `div:nth-child(2) > .gt.gu.gv > .gz.h0.h1 > .al > .b[role="region"][aria-roledescription="carousel"]`
 
 ### All page content should be contained by landmarks
 
