@@ -1,6 +1,6 @@
 # WCAG Violations Report for Askvoll kommune
 
-**Timestamp:** 2026-08-24T01:20:51.779Z
+**Timestamp:** 2026-08-27T07:37:13.752Z
 **URL:** [https://www.askvoll.kommune.no/](https://www.askvoll.kommune.no/)
 **Total Violations:** 3
 

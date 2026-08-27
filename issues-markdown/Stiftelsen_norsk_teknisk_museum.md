@@ -1,22 +1,10 @@
 # WCAG Violations Report for Stiftelsen norsk teknisk museum
 
-**Timestamp:** 2026-08-24T01:37:33.776Z
+**Timestamp:** 2026-08-27T07:57:20.738Z
 **URL:** [https://www.tekniskmuseum.no/](https://www.tekniskmuseum.no/)
-**Total Violations:** 9
+**Total Violations:** 5
 
 ## Violation Details
-
-### Elements must only use permitted ARIA attributes
-
-- **Impact:** serious
-- **Description:** Ensure ARIA attributes are not prohibited for an element's role
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-prohibited-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#module-131 > form > .uk-search-icon[uk-search-icon=""][aria-label="søkefelt"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -44,54 +32,17 @@
 
 - `.cky-title`
 
-### Banner landmark should not be contained in another landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the banner landmark is at top level
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-banner-is-top-level?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.tm-header`
-
-### Main landmark should not be contained in another landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the main landmark is at top level
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-main-is-top-level?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#tm-main`
-
-### Document should not have more than one main landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the document has at most one main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-no-duplicate-main?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.tm-page`
-
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
 - `.cky-consent-container`
-- `.tm-page`
 
 ### Links must have discernible text
 
@@ -117,8 +68,29 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 22
 
 #### Affected Elements:
 
 - `.uk-hidden-visually`
+- `.uk-grid-medium.uk-child-width-auto[uk-grid="margin: uk-margin-small-top"] > div:nth-child(2)`
+- `.uk-width-2-5\@m`
+- `.uk-width-1-3\@s.uk-width-1-5\@m:nth-child(2) > h3`
+- `.uk-width-1-3\@s.uk-width-1-5\@m:nth-child(2) > .uk-list > .el-item:nth-child(1)`
+- `.uk-width-1-3\@s.uk-width-1-5\@m:nth-child(2) > .uk-list > .el-item:nth-child(2)`
+- `.uk-width-1-3\@s.uk-width-1-5\@m:nth-child(2) > .uk-list > .el-item:nth-child(3)`
+- `.uk-width-1-3\@s.uk-width-1-5\@m:nth-child(2) > .uk-list > .el-item:nth-child(4)`
+- `.uk-width-1-3\@s.uk-width-1-5\@m:nth-child(2) > .uk-list > .el-item:nth-child(5) > .uk-link-toggle[target="_blank"] > .uk-flex-nowrap.uk-grid-small.uk-child-width-expand > div:nth-child(2)`
+- `.uk-width-1-3\@s.uk-width-1-5\@m:nth-child(3) > h3`
+- `.uk-width-1-3\@s.uk-width-1-5\@m:nth-child(3) > .uk-list:nth-child(2)`
+- `.el-item > .uk-flex-nowrap.uk-grid-small.uk-child-width-expand > div:nth-child(2)`
+- `.uk-width-1-3\@s.uk-width-1-5\@m:nth-child(4) > h3`
+- `.uk-width-1-3\@s.uk-width-1-5\@m:nth-child(4) > .uk-list > .el-item:nth-child(1)`
+- `.uk-width-1-3\@s.uk-width-1-5\@m:nth-child(4) > .uk-list > .el-item:nth-child(2)`
+- `.uk-width-1-3\@s.uk-width-1-5\@m:nth-child(4) > .uk-list > .el-item:nth-child(3)`
+- `.uk-width-1-3\@s.uk-width-1-5\@m:nth-child(4) > .uk-list > .el-item:nth-child(4)`
+- `a[href$="www.tekniskvenner.no"] > .uk-flex-nowrap.uk-grid-small.uk-child-width-expand > div:nth-child(2)`
+- `.uk-width-3-5\@m > h3`
+- `.uk-child-width-1-1.uk-grid-margin.tm-grid-expand:nth-child(4)`
+- `.uk-width-4-5`
+- `.uk-flex-first`

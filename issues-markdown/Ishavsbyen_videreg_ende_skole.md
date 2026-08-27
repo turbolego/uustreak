@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ishavsbyen videregående skole
 
-**Timestamp:** 2026-08-24T01:27:55.071Z
+**Timestamp:** 2026-08-27T07:46:39.759Z
 **URL:** [https://ishavsbyen.vgs.no/](https://ishavsbyen.vgs.no/)
 **Total Violations:** 1
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 9
+- **Count:** 10
 
 #### Affected Elements:
 
@@ -24,4 +24,5 @@
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_1548 > .webPartTittel`
 - `.container > ul`
 - `.webPartBunnLink`
+- `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5500`
 - `.back-to-top-button-wrapper`

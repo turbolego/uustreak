@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-08-24T01:21:39.699Z
+**Timestamp:** 2026-08-27T07:38:08.421Z
 **URL:** [https://www.bt.no/](https://www.bt.no/)
 **Total Violations:** 4
 
@@ -12,11 +12,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
 - `.weatherTemperature`
+- `span[aria-label="Siste"] > span[aria-hidden="true"] > ._prefix_1sf7o_224[data-skin="breaking"][aria-hidden="true"]`
 
 ### Links must have discernible text
 
@@ -40,9 +41,9 @@
 
 #### Affected Elements:
 
-- `track-element[data-track-id="teaser:127333"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="bt"]`
-- `audio-play-button[title="To irriterende menn"]`
-- `track-element[data-track-id="teaser:127312"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="bt"]`
+- `track-element[data-track-id="teaser:127366"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="bt"]`
+- `track-element[data-track-id="teaser:127353"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="bt"]`
+- `audio-play-button[title="Fest i Dalen. Hva\a med torsdag?"]`
 
 ### All page content should be contained by landmarks
 

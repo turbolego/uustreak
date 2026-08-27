@@ -1,6 +1,6 @@
 # WCAG Violations Report for Assistermeg AS
 
-**Timestamp:** 2026-08-24T01:20:30.415Z
+**Timestamp:** 2026-08-27T07:37:37.504Z
 **URL:** [https://www.humananorge.no/brukerstyrt-personlig-assistanse](https://www.humananorge.no/brukerstyrt-personlig-assistanse)
 **Total Violations:** 1
 

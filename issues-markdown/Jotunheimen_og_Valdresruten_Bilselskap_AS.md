@@ -1,8 +1,8 @@
 # WCAG Violations Report for Jotunheimen og Valdresruten Bilselskap AS
 
-**Timestamp:** 2026-08-24T01:28:10.576Z
+**Timestamp:** 2026-08-27T07:48:14.032Z
 **URL:** [https://jvb.no/](https://jvb.no/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -51,6 +51,18 @@
 
 - `.et_pb_blurb_0 > .et_pb_blurb_content > .et_pb_blurb_container > h4`
 - `.et_pb_blurb_0_tb_footer > .et_pb_blurb_content > .et_pb_blurb_container > h4`
+
+### Document should have one main landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has a main landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-one-main?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
 
 ### Links must have discernible text
 

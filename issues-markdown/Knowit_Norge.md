@@ -1,8 +1,8 @@
 # WCAG Violations Report for Knowit Norge
 
-**Timestamp:** 2026-08-24T01:28:48.022Z
+**Timestamp:** 2026-08-27T07:48:09.571Z
 **URL:** [https://www.knowit.no/](https://www.knowit.no/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -12,17 +12,32 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 7
+- **Count:** 9
 
 #### Affected Elements:
 
 - `#declineButton`
+- `.css-1cyhlyk`
+- `#mainmenu-openbtn`
 - `.css-8atqhb > .css-2jgdd6`
 - `.css-1gwne1u > .css-2jgdd6:nth-child(1)`
 - `.css-2jgdd6:nth-child(2)`
 - `.css-1qfc5p0 > .css-2jgdd6`
 - `.FocusBlock:nth-child(3) > .css-whh5e5 > .css-1bbe9dr > .css-18w09va > .css-1ubhc2b[overflow="visible"] > .slider-container > .slider-frame[aria-label="carousel-slider"][role="region"] > .slider-list > .slide-current.slide-visible.slide > .css-1herucy > .css-1l6sxpd > .css-1ugq6eo`
 - `.FocusBlock:nth-child(4) > .css-whh5e5 > .css-1bbe9dr > .css-18w09va > .css-1ubhc2b[overflow="visible"] > .slider-container > .slider-frame[aria-label="carousel-slider"][role="region"] > .slider-list > .slide-current.slide-visible.slide > .css-1herucy > .css-1l6sxpd > .css-1ugq6eo`
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.css-1cyhlyk`
+- `#mainmenu-openbtn`
 
 ### Document should not have more than one banner landmark
 

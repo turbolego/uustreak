@@ -1,6 +1,6 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2026-08-24T01:21:44.619Z
+**Timestamp:** 2026-08-27T07:38:24.602Z
 **URL:** [https://www.bestwestern.no/](https://www.bestwestern.no/)
 **Total Violations:** 3
 
@@ -16,13 +16,13 @@
 
 #### Affected Elements:
 
-- `img[alt="Hoteller med uteservering"]`
+- `img[alt="Oppdag flere opplevelser"]`
+- `img[alt="Spahoteller"]`
 - `img[alt="Naturnære hoteller"]`
 - `img[alt="Hundevennlige hoteller"]`
 - `img[alt="Hotell utover det vanlige"]`
 - `img[alt="Hotellrestauranter"]`
 - `a[href$="globale-destinasjoner"] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="0"][width="0"][loading="lazy"]`
-- `img[alt="Oppdag flere opplevelser"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -46,10 +46,10 @@
 
 #### Affected Elements:
 
-- `.px-\[16px\]`
+- `.not-focus\:visually-hidden`
 - `.pr-2`
 - `a[href$="bestwestern.com/"]`
-- `#ddChallengeBody1787534497344, .captcha__header`
-- `#ddChallengeBody1787534497344, .captcha__human`
-- `#ddChallengeBody1787534497344, .captcha__robot__warning`
-- `#ddChallengeBody1787534497344, .captcha__robot__contact_support`
+- `#ddChallengeBody1787816293160, .captcha__header`
+- `#ddChallengeBody1787816293160, .captcha__human`
+- `#ddChallengeBody1787816293160, .captcha__robot__warning`
+- `#ddChallengeBody1787816293160, .captcha__robot__contact_support`

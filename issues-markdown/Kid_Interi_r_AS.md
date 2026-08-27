@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-08-24T01:28:40.872Z
+**Timestamp:** 2026-08-27T07:48:42.651Z
 **URL:** [https://www.kid.no/](https://www.kid.no/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `div:nth-child(1) > h4`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.cg.ch.et > .kc.gs.gt > .gv.gx.gy`
 
 ### Document should not have more than one banner landmark
 
@@ -41,7 +53,7 @@
 #### Affected Elements:
 
 - `#coiOverlay`
-- `div:nth-child(2) > .gt.gu.gv > .gz.h0.h1 > .al > .b[role="region"][aria-roledescription="carousel"]`
+- `div:nth-child(2) > .h2.h3.h4 > .h8.h9.ha > .al > .b[role="region"][aria-roledescription="carousel"]`
 
 ### All page content should be contained by landmarks
 
@@ -49,10 +61,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 3
+- **Count:** 4
 
 #### Affected Elements:
 
 - `#skip-to-main-content`
+- `.b8.bc.bd`
 - `.tf-header-slider`
 - `.tf-sidebar`

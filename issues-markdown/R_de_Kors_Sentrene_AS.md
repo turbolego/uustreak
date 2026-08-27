@@ -1,6 +1,6 @@
 # WCAG Violations Report for Røde Kors Sentrene AS
 
-**Timestamp:** 2026-08-24T01:34:46.175Z
+**Timestamp:** 2026-08-27T07:54:26.079Z
 **URL:** [https://www.rodekors.no/sentrene/](https://www.rodekors.no/sentrene/)
 **Total Violations:** 4
 

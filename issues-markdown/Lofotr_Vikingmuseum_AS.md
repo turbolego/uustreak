@@ -1,8 +1,8 @@
 # WCAG Violations Report for Lofotr Vikingmuseum AS
 
-**Timestamp:** 2026-08-24T01:30:11.303Z
+**Timestamp:** 2026-08-27T07:49:28.039Z
 **URL:** [https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/](https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/)
-**Total Violations:** 8
+**Total Violations:** 9
 
 ## Violation Details
 
@@ -50,12 +50,11 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 4
+- **Count:** 3
 
 #### Affected Elements:
 
 - `#block-museumnord-featured-exhibits-carouselblock_2b25e1f331b4c5770fd666e92bb91946 > .wp-block-group__inner-container.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__header > h2`
-- `#block-museumnord-featured-exhibits-carouselblock_fc3f0c1b786a4d1e9037a8bfdb4f8de1 > .wp-block-group__inner-container.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__header > h2`
 - `#block-museumnord-featured-exhibits-carouselblock_f0ca8964f0333460927f39af7148f4d7 > .wp-block-group__inner-container.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__header > h2`
 - `#block-museumnord-featured-exhibits-carouselblock_9acea6078be8ef4a544def0eec16911e > .wp-block-group__inner-container.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__header > h2`
 
@@ -65,14 +64,13 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 7
+- **Count:** 6
 
 #### Affected Elements:
 
 - `#primary > h3`
 - `.wp-block-pooka-venue-details__address > h5`
 - `#block-museumnord-featured-exhibits-carouselblock_2b25e1f331b4c5770fd666e92bb91946 > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"] > .wp-block-pooka-experiences-exhibitions-carousel__carousel > .wp-block-pooka-experiences-exhibitions-carousel__carousel-slide[data-index="0"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__content > h5`
-- `#block-museumnord-featured-exhibits-carouselblock_fc3f0c1b786a4d1e9037a8bfdb4f8de1 > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"] > .wp-block-pooka-experiences-exhibitions-carousel__carousel > .wp-block-pooka-experiences-exhibitions-carousel__carousel-slide[data-index="0"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__content > h5`
 - `#block-museumnord-featured-exhibits-carouselblock_f0ca8964f0333460927f39af7148f4d7 > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"] > .wp-block-pooka-experiences-exhibitions-carousel__carousel > .wp-block-pooka-experiences-exhibitions-carousel__carousel-slide[data-index="0"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__content > h5`
 - `#block-museumnord-featured-exhibits-carouselblock_9acea6078be8ef4a544def0eec16911e > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"] > .wp-block-pooka-experiences-exhibitions-carousel__carousel > .wp-block-pooka-experiences-exhibitions-carousel__carousel-slide[data-index="0"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__content > h5`
 - `.my-5:nth-child(1) > h5`
@@ -88,6 +86,18 @@
 #### Affected Elements:
 
 - `#block-museumnord-featured-exhibits-carouselblock_2b25e1f331b4c5770fd666e92bb91946 > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"]`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#post-97013 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100`
 
 ### All page content should be contained by landmarks
 
@@ -107,9 +117,10 @@
 - **Description:** Ensure [role="img"] elements have alternative text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/role-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `div[data-index="3"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__image[aria-label=""][role="img"]`
 - `div[data-index="4"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__image[aria-label=""][role="img"]`
+- `div[kulturarv=""]`

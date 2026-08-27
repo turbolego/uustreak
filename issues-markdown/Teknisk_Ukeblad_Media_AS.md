@@ -1,6 +1,6 @@
 # WCAG Violations Report for Teknisk Ukeblad Media AS
 
-**Timestamp:** 2026-08-24T01:37:36.975Z
+**Timestamp:** 2026-08-27T07:56:54.142Z
 **URL:** [https://www.tu.no/](https://www.tu.no/)
 **Total Violations:** 3
 
@@ -12,14 +12,13 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 4
+- **Count:** 3
 
 #### Affected Elements:
 
 - `.peer`
 - `.gap-4.flex > .bg-transparent.hover\:bg-site-brand-darker.dark\:text-white:nth-child(1)`
 - `.gap-4.flex > .bg-transparent.hover\:bg-site-brand-darker.dark\:text-white:nth-child(2)`
-- `.inset-x-0 > .hover\:bg-site-brand-darker.dark\:text-white.h-11`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -46,5 +45,5 @@
 #### Affected Elements:
 
 - `.object-cover[loading="eager"][height="563"]`
-- `#preamble-575311 > .md\:flex-col.flex-row.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover.duration-700[height="563"]`
-- `#preamble-575615 > .md\:flex-col.flex-row.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover.duration-700[height="563"]`
+- `#preamble-575723 > .flex-row.md\:flex-col.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover.duration-700[height="563"]`
+- `#preamble-575414 > .flex-row.md\:flex-col.group > .w-1\/3.md\:w-full.overflow-hidden > .object-cover.duration-700[height="563"]`

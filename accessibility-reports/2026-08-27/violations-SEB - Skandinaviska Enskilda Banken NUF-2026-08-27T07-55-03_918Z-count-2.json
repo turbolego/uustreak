@@ -1,0 +1,89 @@
+{
+  "project": "SEB - Skandinaviska Enskilda Banken NUF",
+  "timestamp": "2026-08-27T07:55:03.918Z",
+  "url": "https://sebgroup.com/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-dialog-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+      "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-dialog-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<pwng-mobile-menu role=\"dialog\" _nghost-ng-c585049648=\"\" class=\"ng-tns-c585049648-1 ng-tns-c3777577788-0 ng-star-inserted\">",
+          "target": [
+            "pwng-mobile-menu"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img src=\"https://images1.cmp....\" srcset=\"https://images1.cmp....\" sizes=\"(min-width: 1244px) ...\" loading=\"lazy\" decoding=\"auto\">",
+          "target": [
+            [
+              "gds-card-pattern-01-pw:nth-child(1)",
+              "gds-img-13e09d",
+              "img[loading=\"lazy\"][decoding=\"auto\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://images3.cmp....\" srcset=\"https://images3.cmp....\" sizes=\"(min-width: 1244px) ...\" loading=\"lazy\" decoding=\"auto\">",
+          "target": [
+            [
+              "gds-card-pattern-01-pw:nth-child(2)",
+              "gds-img-13e09d",
+              "img[loading=\"lazy\"][decoding=\"auto\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://images2.cmp....\" srcset=\"https://images2.cmp....\" sizes=\"(min-width: 1244px) ...\" loading=\"lazy\" decoding=\"auto\">",
+          "target": [
+            [
+              "gds-card-pattern-01-pw:nth-child(3)",
+              "gds-img-13e09d",
+              "img[loading=\"lazy\"][decoding=\"auto\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ]
+}

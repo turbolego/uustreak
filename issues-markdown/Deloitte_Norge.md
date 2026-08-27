@@ -1,8 +1,8 @@
 # WCAG Violations Report for Deloitte Norge
 
-**Timestamp:** 2026-08-24T01:24:54.010Z
+**Timestamp:** 2026-08-27T07:42:09.176Z
 **URL:** [https://www.deloitte.com/no/no.html](https://www.deloitte.com/no/no.html)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -50,3 +50,15 @@
 
 - `.cmp-dual-slider__left-wrapper > .cmp-dual-slider__slide > .swiper-wrapper.cmp-dual-slider__slide-wrapper`
 - `.cmp-dual-slider__right-wrapper > .cmp-dual-slider__slide > .swiper-wrapper.cmp-dual-slider__slide-wrapper`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.cmp-header__welcome`

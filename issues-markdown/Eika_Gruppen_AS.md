@@ -1,6 +1,6 @@
 # WCAG Violations Report for Eika Gruppen AS
 
-**Timestamp:** 2026-08-24T01:24:42.247Z
+**Timestamp:** 2026-08-27T07:43:10.495Z
 **URL:** [https://www.eika.no/](https://www.eika.no/)
 **Total Violations:** 1
 

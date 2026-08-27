@@ -1,6 +1,6 @@
 # WCAG Violations Report for Universitetet i Stavanger
 
-**Timestamp:** 2026-08-24T01:40:14.159Z
+**Timestamp:** 2026-08-27T08:00:47.424Z
 **URL:** [https://www.uis.no/nb](https://www.uis.no/nb)
 **Total Violations:** 1
 

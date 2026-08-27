@@ -1,6 +1,6 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-08-24T01:33:59.788Z
+**Timestamp:** 2026-08-27T07:53:29.491Z
 **URL:** [https://www.lydenavnorge.no/p4/](https://www.lydenavnorge.no/p4/)
 **Total Violations:** 7
 
@@ -18,9 +18,9 @@
 
 - `.icon-button`
 - `.is-live`
-- `.engagement-buttons[data-v-4b932298=""][data-v-72670c10=""] > .dislike[type="button"][data-v-4b932298=""]`
-- `.engagement-buttons[data-v-4b932298=""][data-v-72670c10=""] > .like[data-v-ff04d4eb=""][type="button"]`
-- `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-72670c10=""] > .close[data-v-484baac5=""]`
+- `.engagement-buttons[data-v-4b932298=""][data-v-746d67de=""] > .dislike[type="button"][data-v-4b932298=""]`
+- `.engagement-buttons[data-v-4b932298=""][data-v-746d67de=""] > .like[data-v-ff04d4eb=""][type="button"]`
+- `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-746d67de=""] > .close[data-v-484baac5=""]`
 - `.image-container[data-v-b6f8812b=""] > .play-button.pulse.show`
 - `.play-button.pulse[data-v-4af17d0f=""]`
 - `.title-container[data-v-b6f8812b=""] > .stroked.inverted.play-button`
@@ -113,9 +113,9 @@
 
 - `.image-container[data-v-4af17d0f=""] > a[data-v-4af17d0f=""]`
 - `.content-box.compact[data-v-d583c235=""] > .image-link[data-v-d583c235=""]`
-- `.image-link[href$="lyden/"][data-v-d583c235=""]`
-- `.contest-box.medium-large.item:nth-child(1) > .image-link[data-v-f1ce81f5=""]`
-- `.contest-box.medium-large.item:nth-child(2) > .image-link[data-v-f1ce81f5=""]`
+- `.image-link[href$="lyden/"][data-v-f1ce81f5=""]`
+- `.medium-large.contest-box.item:nth-child(1) > .image-link[data-v-f1ce81f5=""]`
+- `.medium-large.contest-box.item:nth-child(2) > .image-link[data-v-f1ce81f5=""]`
 - `.image-link[href$="fem-pa/"][data-v-d583c235=""]`
 - `.content-box.medium-large.item:nth-child(2) > .image-link[data-v-d583c235=""]`
 - `.large.section-box.item > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`

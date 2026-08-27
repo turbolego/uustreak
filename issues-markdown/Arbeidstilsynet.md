@@ -1,34 +1,10 @@
 # WCAG Violations Report for Arbeidstilsynet
 
-**Timestamp:** 2026-08-24T01:19:55.111Z
+**Timestamp:** 2026-08-27T07:36:45.688Z
 **URL:** [https://www.arbeidstilsynet.no/](https://www.arbeidstilsynet.no/)
-**Total Violations:** 5
+**Total Violations:** 3
 
 ## Violation Details
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#start-submit`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.hero-item:nth-child(1) > .hero-desktop.card--hover-first.card-link > .card-main > .card-title > h3`
 
 ### Document should not have more than one banner landmark
 

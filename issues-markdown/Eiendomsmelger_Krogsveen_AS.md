@@ -1,6 +1,6 @@
 # WCAG Violations Report for Eiendomsmelger Krogsveen AS
 
-**Timestamp:** 2026-08-24T01:24:38.492Z
+**Timestamp:** 2026-08-27T07:42:30.251Z
 **URL:** [https://www.krogsveen.no/](https://www.krogsveen.no/)
 **Total Violations:** 2
 
@@ -30,9 +30,9 @@
 
 - `.css-zkxncz`
 - `a[href$="kjope"]`
-- `.css-1mcnram.text-body-sm[href$="selge"]`
+- `.css-16qbr8x.text-body-sm[href$="selge"]`
 - `a[href$="utleie"]`
-- `.css-1mcnram.text-body-sm[href$="eiendomsmegler"]`
+- `.css-16qbr8x.text-body-sm[href$="eiendomsmegler"]`
 - `.css-17s4se2`
 - `#button-header-verdivurdering`
 - `.css-12um54u`
@@ -40,7 +40,7 @@
 - `.css-1qs1wvn > .text-kicker`
 - `.false.text-h2`
 - `.rich-text`
-- `.text-body[data-has-icon="true"][data-ui-component="link-base"] > span[data-link-text="true"]`
+- `.text-body[data-has-icon="true"][data-ui-component="link-route"] > span[data-link-text="true"]`
 - `.css-zg9qiq > .css-1d9lbrd`
 - `.css-1nl5mao > .text-body`
 - `input`
@@ -48,8 +48,8 @@
 - `.css-1k0pgnc > .text-kicker`
 - `.css-1k0pgnc > h3`
 - `.css-1k0pgnc > .text-body-lg`
-- `a[href$="flytte"][data-ui-component="link-href"][data-has-icon="true"] > span[data-link-text="true"]`
-- `a[data-ui-component="link-href"][href$="magasin"][data-has-icon="true"] > span[data-link-text="true"]`
+- `a[data-ui-component="link-href"][href$="flytte"][data-has-icon="true"] > span[data-link-text="true"]`
+- `a[href$="magasin"][data-has-icon="true"][data-ui-component="link-route"] > span[data-link-text="true"]`
 - `.css-18ikxop`
 - `.css-19nr1ow:nth-child(1) > .css-2ljws1 > .text-body-lg`
 - `.css-19nr1ow:nth-child(1) > .css-1d9lbrd`
@@ -65,4 +65,4 @@
 - `.css-157jlni:nth-child(3)`
 - `.text--center.text-h2.text--banner`
 - `.text--center.text-body`
-- `.text--center[href$="cookies"][data-ui-component="link-href"]`
+- `.text--center[data-ui-component="link-href"][href$="cookies"]`

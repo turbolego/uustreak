@@ -1,10 +1,25 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2026-08-24T01:22:57.515Z
+**Timestamp:** 2026-08-27T07:40:57.225Z
 **URL:** [https://www.coop.no/](https://www.coop.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
+
+### Elements must only use permitted ARIA attributes
+
+- **Impact:** serious
+- **Description:** Ensure ARIA attributes are not prohibited for an element's role
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-prohibited-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 4
+
+#### Affected Elements:
+
+- `div[aria-label="Vurdering på 5 av 1 brukere"]`
+- `div[aria-label="Vurdering på 0 av 0 brukere"]`
+- `div[aria-label="Vurdering på 3 av 1 brukere"]`
+- `div[aria-label="Vurdering på 5 av 2 brukere"]`
 
 ### Required ARIA attributes must be provided
 
@@ -44,7 +59,7 @@
 #### Affected Elements:
 
 - `.i4`
-- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .ee.am.cj > .ef.eh.ei`
+- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .ee.cj.am > .ef.eh.ei`
 
 ### Frames must have an accessible name
 

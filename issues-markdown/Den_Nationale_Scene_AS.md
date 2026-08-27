@@ -1,6 +1,6 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2026-08-24T01:23:46.805Z
+**Timestamp:** 2026-08-27T07:41:25.507Z
 **URL:** [https://dns.no/](https://dns.no/)
 **Total Violations:** 5
 
@@ -88,31 +88,31 @@
 - `.month2 > tbody > tr:nth-child(5) > td:nth-child(1)`
 - `.month2 > tbody > tr:nth-child(5) > td:nth-child(2)`
 - `.month2 > tbody > tr:nth-child(5) > td:nth-child(3)`
-- `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible`
-- `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
-- `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
-- `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
-- `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-- `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible`
-- `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
-- `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
-- `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
-- `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-- `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible`
-- `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
-- `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
-- `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
-- `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-- `div[data-postid="17901"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible`
-- `div[data-postid="17901"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
-- `div[data-postid="17901"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
-- `div[data-postid="17901"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
-- `div[data-postid="17901"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
 - `div[data-postid="18083"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible`
 - `div[data-postid="18083"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
 - `div[data-postid="18083"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
 - `div[data-postid="18083"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
 - `div[data-postid="18083"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
+- `div[data-postid="17901"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible`
+- `div[data-postid="17901"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
+- `div[data-postid="17901"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
+- `div[data-postid="17901"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
+- `div[data-postid="17901"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
+- `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible`
+- `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
+- `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
+- `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
+- `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
+- `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible`
+- `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
+- `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
+- `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
+- `div[data-postid="17012"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
+- `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible`
+- `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
+- `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
+- `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
+- `div[data-postid="16984"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
 - `div[data-postid="17098"] > .vc_column-inner > .wpb_wrapper > .vc_align_left.wpb_single_image.wpb_animate_when_almost_visible`
 - `div[data-postid="17098"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
 - `div[data-postid="17098"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`

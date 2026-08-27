@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norges KFUK-KFUM
 
-**Timestamp:** 2026-08-24T01:31:48.114Z
+**Timestamp:** 2026-08-27T07:51:02.699Z
 **URL:** [https://kfuk-kfum.no/](https://kfuk-kfum.no/)
 **Total Violations:** 4
 

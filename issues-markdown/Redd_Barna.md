@@ -1,8 +1,8 @@
 # WCAG Violations Report for Redd Barna
 
-**Timestamp:** 2026-08-24T01:33:23.142Z
+**Timestamp:** 2026-08-27T07:52:39.350Z
 **URL:** [https://www.reddbarna.no/](https://www.reddbarna.no/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -41,6 +41,18 @@
 #### Affected Elements:
 
 - `.lib-link__link[rel=""] > .lib-link__img-wrap > .lib-link__featured-image[decoding="async"]`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
 
 ### Elements should not have tabindex greater than zero
 

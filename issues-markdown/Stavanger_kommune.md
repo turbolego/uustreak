@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger kommune
 
-**Timestamp:** 2026-08-24T01:36:27.304Z
+**Timestamp:** 2026-08-27T07:56:10.969Z
 **URL:** [https://www.stavanger.kommune.no/](https://www.stavanger.kommune.no/)
 **Total Violations:** 2
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.projectpage > .teaser > a > .teaser-image > img`
+- `.projectpage > .sub-teaser > .no-target-icon > .sub-teaser__image > img`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fana Sparebank
 
-**Timestamp:** 2026-08-24T01:25:57.406Z
+**Timestamp:** 2026-08-27T07:43:50.845Z
 **URL:** [https://www.fanasparebank.no/](https://www.fanasparebank.no/)
 **Total Violations:** 5
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Universitetet i Sørøst-Norge
 
-**Timestamp:** 2026-08-24T01:39:28.861Z
+**Timestamp:** 2026-08-27T07:58:54.600Z
 **URL:** [https://www.usn.no/](https://www.usn.no/)
 **Total Violations:** 3
 

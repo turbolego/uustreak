@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ringerike kommune
 
-**Timestamp:** 2026-08-24T01:34:03.443Z
+**Timestamp:** 2026-08-27T07:54:28.078Z
 **URL:** [https://www.ringerike.kommune.no/](https://www.ringerike.kommune.no/)
 **Total Violations:** 6
 

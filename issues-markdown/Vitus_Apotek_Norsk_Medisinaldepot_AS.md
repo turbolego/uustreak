@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-08-24T01:41:09.444Z
+**Timestamp:** 2026-08-27T08:00:27.553Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
 **Total Violations:** 5
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.cms-campaign-banners:nth-child(7) > .cms-campaign-banners__content.cms-banners > .campaign-banner--left.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .product-label > .product-label__text`
+- `.cms-campaign-banners:nth-child(8) > .cms-campaign-banners__content.cms-banners > .campaign-banner--left.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .product-label > .product-label__text`
 - `.campaign-banner--left.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .product-label > .product-label__text`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -29,7 +29,7 @@
 
 #### Affected Elements:
 
-- `.cms-recomendations:nth-child(8) > section > div > .carousel[aria-roledescription="carousel"][role="region"]`
+- `.cms-recomendations:nth-child(6) > section > div > .carousel[aria-roledescription="carousel"][role="region"]`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
@@ -49,11 +49,12 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 3
+- **Count:** 4
 
 #### Affected Elements:
 
 - `.header__skip-link`
+- `.announcement-bar`
 - `.footer-banner > .banner__image-wrapper`
 - `.footer-banner > .banner__content-wrapper`
 
@@ -63,9 +64,11 @@
 - **Description:** Ensure elements that have scrollable content are accessible by keyboard in Safari
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/scrollable-region-focusable?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
-- **Count:** 2
+- **Count:** 4
 
 #### Affected Elements:
 
-- `.cms-recomendations:nth-child(8) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
-- `.cms-recomendations:nth-child(10) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- `.cms-recomendations:nth-child(6) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- `.cms-recomendations:nth-child(9) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- `.cms-recomendations:nth-child(11) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- `.cms-recomendations:nth-child(13) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`

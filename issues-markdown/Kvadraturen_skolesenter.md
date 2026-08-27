@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kvadraturen skolesenter
 
-**Timestamp:** 2026-08-24T01:30:34.026Z
+**Timestamp:** 2026-08-27T07:49:55.161Z
 **URL:** [https://kvadraturen.vgs.no/](https://kvadraturen.vgs.no/)
 **Total Violations:** 3
 
@@ -36,7 +36,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 46
+- **Count:** 10
 
 #### Affected Elements:
 
@@ -45,43 +45,7 @@
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ucSearchField_txtSearch`
 - `#Sone2502`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5000`
-- `.text-box > .il-heading--h2:nth-child(1)`
-- `p:nth-child(2)`
-- `.text-box > p:nth-child(3)`
-- `.il-heading--h2:nth-child(4)`
-- `.text-box > p:nth-child(5)`
-- `.il-heading--h2:nth-child(6)`
-- `.il-heading--h2:nth-child(7)`
-- `p:nth-child(8)`
-- `.text-box > p:nth-child(9)`
-- `.text-box > .il-heading--h3`
-- `p:nth-child(11)`
-- `p:nth-child(12)`
-- `p:nth-child(13)`
-- `p:nth-child(15)`
-- `p:nth-child(16)`
-- `p:nth-child(17)`
-- `p:nth-child(18)`
-- `p:nth-child(19)`
-- `p:nth-child(20)`
-- `p:nth-child(21)`
-- `p:nth-child(22)`
-- `p:nth-child(23)`
-- `p:nth-child(24)`
-- `p:nth-child(25)`
-- `p:nth-child(26)`
-- `p:nth-child(27)`
-- `p:nth-child(28)`
-- `p:nth-child(29)`
-- `p:nth-child(30)`
-- `p:nth-child(31)`
-- `p:nth-child(32)`
-- `p:nth-child(33)`
-- `p:nth-child(34)`
-- `p:nth-child(35)`
-- `p:nth-child(36)`
-- `.il-heading--h4`
-- `p:nth-child(38)`
+- `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5100`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_1395 > .webPartTittel`
 - `.container > ul`
 - `.webPartBunnLink`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-08-24T01:22:02.998Z
+**Timestamp:** 2026-08-27T07:38:53.892Z
 **URL:** [https://www.blv.no/](https://www.blv.no/)
 **Total Violations:** 6
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.brick-c-eSmkND.none[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .title_container.brick-c-fdsRaE.has-image > .normal.brick-c-JbDTi[itemprop="teaser_title"]`
-- `a[data-k5a-section="commercial"] > .body > .title_container.brick-c-fdsRaE.has-image > .normal.brick-c-JbDTi[itemprop="teaser_title"]`
+- `.brick-c-eSmkND.none[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .normal.brick-c-JbDTi[itemprop="teaser_title"]`
+- `a[data-k5a-section="commercial"] > .body > .brick-c-fdsRaE.title_container.has-image > .normal.brick-c-JbDTi[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
@@ -41,7 +41,7 @@
 
 #### Affected Elements:
 
-- `brick-teaser-group-v0[data-color-skin="opinion"] > div > brick-carousel-v3 > .carousel[aria-label="Innholdskarusell"][role="region"]`
+- `brick-carousel-v3[data-slides="4"] > .carousel[aria-label="Innholdskarusell"][role="region"]`
 
 ### Links must have discernible text
 

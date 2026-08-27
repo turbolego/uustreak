@@ -1,6 +1,6 @@
 # WCAG Violations Report for Trønderenergi Nett AS
 
-**Timestamp:** 2026-08-24T01:39:16.072Z
+**Timestamp:** 2026-08-27T07:59:51.475Z
 **URL:** [https://www.tronderenergi.no/](https://www.tronderenergi.no/)
 **Total Violations:** 1
 
