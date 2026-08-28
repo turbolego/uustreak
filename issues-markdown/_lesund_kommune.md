@@ -1,8 +1,8 @@
 # WCAG Violations Report for Ålesund kommune
 
-**Timestamp:** 2026-08-27T07:36:26.066Z
+**Timestamp:** 2026-08-28T09:50:44.636Z
 **URL:** [https://alesund.kommune.no/](https://alesund.kommune.no/)
-**Total Violations:** 1
+**Total Violations:** 2
 
 ## Violation Details
 
@@ -17,3 +17,15 @@
 #### Affected Elements:
 
 - `img[alt="Ålesund kommune"]`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.area-message-list-item__text`

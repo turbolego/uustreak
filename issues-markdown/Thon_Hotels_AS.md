@@ -1,10 +1,22 @@
 # WCAG Violations Report for Thon Hotels AS
 
-**Timestamp:** 2026-08-27T07:57:18.299Z
+**Timestamp:** 2026-08-28T10:11:52.025Z
 **URL:** [https://www.thonhotels.no/](https://www.thonhotels.no/)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `section:nth-child(5) > .teaser-section__header > .teaser-section__heading`
 
 ### Document should not have more than one banner landmark
 

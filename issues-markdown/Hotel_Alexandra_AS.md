@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hotel Alexandra AS
 
-**Timestamp:** 2026-08-27T07:47:27.291Z
+**Timestamp:** 2026-08-28T09:59:47.441Z
 **URL:** [https://www.alexandra.no/no/framside.aspx](https://www.alexandra.no/no/framside.aspx)
 **Total Violations:** 10
 
@@ -52,7 +52,7 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 8
+- **Count:** 9
 
 #### Affected Elements:
 
@@ -61,6 +61,7 @@
 - `.col-sm-last.col-xs-last.col-xs-6:nth-child(3) > .article-box.grid-item > .article-box_image > img`
 - `.col-md-first.col-sm-last.col-xs-last > .article-box.grid-item > .article-box_image > img`
 - `.col-sm-first.col-xs-first.col-xs-6:nth-child(6) > .article-box.grid-item > .article-box_image > img`
+- `.col-md-last.col-sm-last.col-xs-last > .article-box.grid-item > .article-box_image > img`
 - `.col-md-first.col-sm-first.col-xs-first:nth-child(8) > .article-box.grid-item > .article-box_image > img`
 - `.col-md-last.col-sm-first.col-xs-first:nth-child(10) > .article-box.grid-item > .article-box_image > img`
 - `.footer_logo--secondary-logo`

@@ -1,19 +1,19 @@
 # WCAG Violations Report for Politiet
 
-**Timestamp:** 2026-08-27T07:53:48.719Z
+**Timestamp:** 2026-08-28T10:07:09.134Z
 **URL:** [https://www.politiet.no/](https://www.politiet.no/)
 **Total Violations:** 1
 
 ## Violation Details
 
-### Page should contain a level-one heading
+### All page content should be contained by landmarks
 
 - **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `html`
+- `#skip-link`

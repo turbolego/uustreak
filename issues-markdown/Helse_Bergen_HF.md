@@ -1,6 +1,6 @@
 # WCAG Violations Report for Helse Bergen HF
 
-**Timestamp:** 2026-08-27T07:47:05.016Z
+**Timestamp:** 2026-08-28T09:59:27.843Z
 **URL:** [https://www.helse-bergen.no/](https://www.helse-bergen.no/)
 **Total Violations:** 1
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 5
+- **Count:** 4
 
 #### Affected Elements:
 
@@ -20,4 +20,3 @@
 - `._cookieconsent__description_af7bfec`
 - `._cookieconsent__withdraw_a4a6e02`
 - `.skiplink`
-- `.browser-warning`

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Widerøe AS
 
-**Timestamp:** 2026-08-27T08:00:58.331Z
+**Timestamp:** 2026-08-28T10:14:59.242Z
 **URL:** [https://www.wideroe.no/](https://www.wideroe.no/)
-**Total Violations:** 10
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -30,56 +30,59 @@
 
 #### Affected Elements:
 
-- `#departureAirport`
-- `#arrivalAirport`
+- `.ToggleGroup-module__8OuBQG__active`
+- `.Button-module__xaXzvq__ghost.ToggleGroup-module__8OuBQG__button[role="radio"]:nth-child(3)`
 
-### ARIA roles used must conform to valid values
+### Certain ARIA roles must contain particular children
 
 - **Impact:** critical
-- **Description:** Ensure all elements with a role attribute use a valid value
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-roles?application=playwright
+- **Description:** Ensure elements with an ARIA role that require child roles contain them
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-required-children?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.SearchTabs-module__3-nUmG__tabList`
+
+### Certain ARIA roles must be contained by particular parents
+
+- **Impact:** critical
+- **Description:** Ensure elements with an ARIA role that require parent roles are contained by them
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-required-parent?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 3
+
+#### Affected Elements:
+
+- `.SearchTabs-module__3-nUmG__active`
+- `button[aria-controls="flight-search-1"]`
+- `button[aria-controls="flight-search-2"]`
+
+### ARIA attributes must conform to valid values
+
+- **Impact:** critical
+- **Description:** Ensure all ARIA attributes have valid values
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-valid-attr-value?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `div[role="header"]`
+- `#origin-airport`
+- `#destination-airport`
 
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.content-notification-msg > a`
-
-### Contentinfo landmark should not be contained in another landmark
+### Heading levels should only increase by one
 
 - **Impact:** moderate
-- **Description:** Ensure the contentinfo landmark is at top level
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-contentinfo-is-top-level?application=playwright
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.footer-container`
-
-### Document should not have more than one contentinfo landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the document has at most one contentinfo landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-no-duplicate-contentinfo?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `footer`
+- `.CardComponent-module__OwdT0a__cardLink.CardComponent-module__OwdT0a__cardComponent:nth-child(1) > .CardComponent-module__OwdT0a__cardTextContent > .CardComponent-module__OwdT0a__cardHeading`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -87,12 +90,11 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
 - `.col-sm-5`
-- `footer`
 
 ### <li> elements must be contained in a <ul> or <ol>
 
@@ -100,10 +102,13 @@
 - **Description:** Ensure <li> elements are used semantically
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/listitem?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 18
+- **Count:** 21
 
 #### Affected Elements:
 
+- `.SearchTabs-module__3-nUmG__listItem:nth-child(1)`
+- `.SearchTabs-module__3-nUmG__listItem:nth-child(2)`
+- `.SearchTabs-module__3-nUmG__listItem:nth-child(3)`
 - `.col-sm-12.col-md-6.col-xs-12:nth-child(1) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role="navigation"] > .list-link-footer:nth-child(1)`
 - `.col-sm-12.col-md-6.col-xs-12:nth-child(1) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role="navigation"] > .list-link-footer:nth-child(2)`
 - `.col-sm-12.col-md-6.col-xs-12:nth-child(1) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role="navigation"] > .list-link-footer:nth-child(3)`
@@ -122,28 +127,3 @@
 - `.col-sm-12.col-md-6.col-xs-12:nth-child(2) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role="navigation"] > .list-link-footer:nth-child(5)`
 - `.col-sm-12.col-md-6.col-xs-12:nth-child(2) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role="navigation"] > .list-link-footer:nth-child(6)`
 - `.list-link-footer:nth-child(7)`
-
-### Zooming and scaling must not be disabled
-
-- **Impact:** moderate
-- **Description:** Ensure <meta name="viewport"> does not disable text scaling and zooming
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/meta-viewport?application=playwright
-- **Tags:** cat.sensory-and-visual-cues, wcag2aa, wcag144, EN-301-549, EN-9.1.4.4, ACT, RGAAv4, RGAA-10.4.2
-- **Count:** 1
-
-#### Affected Elements:
-
-- `meta[name="viewport"]`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `.book-your-flight-label`
-- `.new-booking-widget-elements-desktop`

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-08-27T07:38:08.421Z
+**Timestamp:** 2026-08-28T09:51:49.740Z
 **URL:** [https://www.bt.no/](https://www.bt.no/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -12,12 +12,23 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.weatherTemperature`
-- `span[aria-label="Siste"] > span[aria-hidden="true"] > ._prefix_1sf7o_224[data-skin="breaking"][aria-hidden="true"]`
+- `time[datetime="2026-08-28T09:51:13.000Z"] > span[data-nosnippet="true"]`
+
+### Links must be distinguishable without relying on color
+
+- **Impact:** serious
+- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-in-text-block?application=playwright
+- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.sch-datacontroller__read-more`
 
 ### Links must have discernible text
 
@@ -41,9 +52,9 @@
 
 #### Affected Elements:
 
-- `track-element[data-track-id="teaser:127366"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="bt"]`
-- `track-element[data-track-id="teaser:127353"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_13j6p_59._small_13j6p_81[vendor="bt"]`
-- `audio-play-button[title="Fest i Dalen. Hva\a med torsdag?"]`
+- `track-element[data-track-id="teaser:127398"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_13j6p_59._small_13j6p_81[vendor="bt"]`
+- `track-element[data-track-id="teaser:127395"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_13j6p_59._small_13j6p_81[vendor="bt"]`
+- `track-element[data-track-id="teaser:127366"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_13j6p_59._small_13j6p_81[vendor="bt"]`
 
 ### All page content should be contained by landmarks
 

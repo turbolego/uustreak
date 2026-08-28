@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2026-08-27T07:52:32.137Z
+**Timestamp:** 2026-08-28T10:05:07.012Z
 **URL:** [https://oslonye.no/](https://oslonye.no/)
 **Total Violations:** 4
 
@@ -41,7 +41,7 @@
 
 #### Affected Elements:
 
-- `.alignment-right.hovedscenen.bg-none > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .hovedscenen.alignment-top.bg-none > .les-mer-link`
 - `.alignment-right.centralteatret.bg-none > .les-mer-link`
 - `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .hovedscenen.alignment-top.bg-none > .les-mer-link`
 - `.alignment-left.hovedscenen.bg-none > .les-mer-link`
@@ -64,7 +64,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 30
+- **Count:** 31
 
 #### Affected Elements:
 
@@ -73,9 +73,11 @@
 - `.hero-banner > .grid-container`
 - `.theater-list > li:nth-child(1)`
 - `.theater-list > li:nth-child(2)`
-- `.advertise-cover- > .border-orange.advertise.text-center > .text-yellow.heading-small.content-holder > .title`
+- `.advertise-cover- > .border-green.advertise.text-center > .text-yellow.heading-small.content-holder > .title`
 - `.text-yellow.heading-small.content-holder > .short-description`
-- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6`
+- `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6`
+- `.text-orange > .title`
+- `.text-orange > .short-description`
 - `.forestillinger-blocks-panel:nth-child(4)`
 - `.forestillinger-blocks-panel:nth-child(5)`
 - `.forestillinger-blocks-panel:nth-child(6)`
@@ -89,12 +91,11 @@
 - `.alignment-left.cafescenen.centralteatret > .content-cover.text-center.h-100 > .heading-small.content-holder.h-100 > .second.button-group`
 - `.forestillinger-blocks-panel:nth-child(10) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell`
 - `.forestillinger-blocks-panel:nth-child(11) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1)`
-- `.border-green > .text-yellow.heading-small.content-holder > .title`
+- `.border-green.rounded.advertise > .text-yellow.heading-small.content-holder > .title`
 - `.forestillinger-blocks-panel:nth-child(11) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3)`
-- `.border-orange.rounded.advertise > .text-yellow.heading-small.content-holder > .title`
+- `.border-orange > .text-yellow.heading-small.content-holder > .title`
 - `.forestillinger-blocks-panel:nth-child(12) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(2)`
 - `.forestillinger-blocks-panel:nth-child(12) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3)`
 - `.current-month`
 - `.desktop`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(2)`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3)`
+- `.kommende-forestillinger`

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Manpower AS
 
-**Timestamp:** 2026-08-27T07:50:12.933Z
+**Timestamp:** 2026-08-28T10:02:34.899Z
 **URL:** [https://www.manpower.no/nb](https://www.manpower.no/nb)
-**Total Violations:** 6
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -50,32 +50,6 @@
 
 - `a[aria-label="LES MER OM MANPOWER ACADEMY"]`
 - `#hs-form-iframe-0, .hs-button`
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `.white.featurette-section.standard:nth-child(3) > .container > .row > .col-lg-7 > .featurette-body > .name`
-- `.white.featurette-section.standard:nth-child(5) > .container > .row > .col-lg-7 > .featurette-body > .name`
-- `.grey > .container > .row > .col-lg-7 > .featurette-body > .name`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.main-nav-item[aria-label="main nav item"][role="navigation"]:nth-child(1)`
 
 ### Interactive controls must not be nested
 
