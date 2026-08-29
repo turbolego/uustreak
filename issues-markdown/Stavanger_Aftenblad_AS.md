@@ -1,8 +1,8 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-08-28T10:10:09.179Z
+**Timestamp:** 2026-08-29T06:16:27.110Z
 **URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -16,20 +16,8 @@
 
 #### Affected Elements:
 
-- `time[datetime="2026-08-28T09:58:47.000Z"] > span[data-nosnippet="true"]`
+- `time[datetime="2026-08-29T05:46:38.000Z"] > span[data-nosnippet="true"]`
 - `iframe[title="Tips oss"], .headline`
-
-### Frames must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `smart-frame:nth-child(1) > iframe[allowfullscreen=""][allowtransparency=""][scrolling="no"]`
 
 ### Links must be distinguishable without relying on color
 
@@ -66,9 +54,9 @@
 
 #### Affected Elements:
 
-- `track-element[data-track-id="teaser:113341"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_13j6p_59._small_13j6p_81[vendor="sa"]`
-- `track-element[data-track-id="teaser:113324"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_13j6p_59._small_13j6p_81[vendor="sa"]`
-- `track-element[data-track-id="teaser:113318"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_13j6p_59._small_13j6p_81[vendor="sa"]`
+- `audio-play-button[title="Kongen er død,\a leve kongen"]`
+- `track-element[data-track-id="teaser:113341"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
+- `track-element[data-track-id="teaser:113324"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
 
 ### All page content should be contained by landmarks
 

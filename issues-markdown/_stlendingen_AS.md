@@ -1,6 +1,6 @@
 # WCAG Violations Report for Østlendingen AS
 
-**Timestamp:** 2026-08-28T10:06:52.652Z
+**Timestamp:** 2026-08-29T06:14:08.386Z
 **URL:** [https://www.ostlendingen.no/](https://www.ostlendingen.no/)
 **Total Violations:** 5
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v3[data-slides="7"] > .carousel[aria-label="Innholdskarusell"][role="region"]`
+- `brick-carousel-v3[data-slides="4"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -52,7 +52,7 @@
 
 #### Affected Elements:
 
-- `.lp_logo > img[loading="eager"][alt=""]`
+- `img[height="80"]`
 
 ### All page content should be contained by landmarks
 

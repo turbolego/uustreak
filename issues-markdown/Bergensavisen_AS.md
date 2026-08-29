@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2026-08-28T09:51:39.799Z
+**Timestamp:** 2026-08-29T06:02:23.763Z
 **URL:** [https://www.ba.no/](https://www.ba.no/)
 **Total Violations:** 5
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#eaframe, #container_10760205 > .info > .info-wrapper > .ctaLink`
+- `#eaframe, #container_10774577 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v3[data-slides="11"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
+- `brick-carousel-v3[data-slides="14"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -52,7 +52,7 @@
 
 #### Affected Elements:
 
-- `.lp_logo > img[loading="eager"][alt=""]`
+- `img[height="80"]`
 
 ### All page content should be contained by landmarks
 
