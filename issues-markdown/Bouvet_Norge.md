@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bouvet Norge
 
-**Timestamp:** 2026-08-29T06:03:01.090Z
+**Timestamp:** 2026-08-31T04:00:12.597Z
 **URL:** [https://www.bouvet.no/](https://www.bouvet.no/)
 **Total Violations:** 6
 
@@ -75,10 +75,12 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 37
+- **Count:** 39
 
 #### Affected Elements:
 
+- `.cookie-panel-banner__title`
+- `.cookie-panel-banner__description`
 - `.main-header-small-item.main-header-link:nth-child(1)`
 - `.main-header-small-item.main-header-link:nth-child(2)`
 - `.main-header-small-item.main-header-link:nth-child(3)`

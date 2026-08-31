@@ -1,8 +1,8 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-08-29T06:13:47.540Z
+**Timestamp:** 2026-08-31T04:11:59.638Z
 **URL:** [https://www.lydenavnorge.no/p4/](https://www.lydenavnorge.no/p4/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -12,12 +12,14 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 31
+- **Count:** 33
 
 #### Affected Elements:
 
 - `.icon-button`
 - `.is-live`
+- `.engagement-buttons[data-v-4b932298=""][data-v-746d67de=""] > .dislike[type="button"][data-v-4b932298=""]`
+- `.engagement-buttons[data-v-4b932298=""][data-v-746d67de=""] > .like[data-v-ff04d4eb=""][type="button"]`
 - `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-746d67de=""] > .close[data-v-484baac5=""]`
 - `.image-container[data-v-b6f8812b=""] > .play-button.pulse.show`
 - `.play-button.pulse[data-v-4af17d0f=""]`
@@ -37,8 +39,8 @@
 - `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(7) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted`
 - `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(7) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(4) > .show-progress.stroked.inverted`
 - `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(7) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(5) > .show-progress.stroked.inverted`
-- `.dislike`
-- `.like`
+- `.engagement-buttons[data-v-4b932298=""][data-v-c7614d41=""] > .dislike[type="button"][data-v-4b932298=""]`
+- `.engagement-buttons[data-v-4b932298=""][data-v-c7614d41=""] > .like[data-v-ff04d4eb=""][type="button"]`
 - `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-c7614d41=""] > .close[data-v-484baac5=""]`
 - `.play-button-background > .is-large-button.play-button.pulse`
 - `.previous`
@@ -61,6 +63,18 @@
 - `.bulletin-box.compact[data-v-b6f8812b=""] > .content[data-v-b6f8812b=""] > .title-container[data-v-b6f8812b=""] > h1[data-v-b6f8812b=""]`
 - `.bulletin-box.compact[data-v-b6f8812b=""] > .content[data-v-b6f8812b=""] > .title-container[data-v-b6f8812b=""] > h1[data-v-b6f8812b=""] > span[data-v-b6f8812b=""]`
 - `.bulletin-box.compact[data-v-b6f8812b=""] > .content[data-v-b6f8812b=""] > .info[data-v-b6f8812b=""] > span[data-v-b6f8812b=""]`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `img[width="100"]`
 
 ### Form elements must have labels
 
@@ -118,6 +132,6 @@
 #### Affected Elements:
 
 - `.mini-player-content`
-- `.heart-spawner`
+- `.engagement-buttons[data-v-4b932298=""][data-v-c7614d41=""] > .heart-spawner[data-v-7bdbb3dc=""][width="75"]`
 - `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-c7614d41=""] > p[data-v-484baac5=""]`
 - `.volume-slider`

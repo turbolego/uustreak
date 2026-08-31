@@ -1,0 +1,340 @@
+{
+  "project": "Stiftelsen norsk teknisk museum",
+  "timestamp": "2026-08-31T04:15:50.230Z",
+  "url": "https://www.tekniskmuseum.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<button class=\"cky-btn cky-btn-accept\" aria-label=\"Godta\" data-cky-tag=\"accept-button\" style=\"color: #fafafa; border-color: #28A745; background-color: #28A745;\">Godta</button>",
+          "target": [
+            "button[data-cky-tag=\"accept-button\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3 (foreground color: #fafafa, background color: #28a745, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<input name=\"q\" class=\"js-finder-search-query uk-search-input\" placeholder=\"Søk\" required=\"\" aria-label=\"Søk\" type=\"search\" autocomplete=\"off\" aria-autocomplete=\"list\" aria-expanded=\"false\" aria-owns=\"awesomplete_list_2\" role=\"combobox\">",
+          "target": [
+            "input[aria-owns=\"awesomplete_list_2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.07 (foreground color: #faecec, background color: #e35c5c, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"linguise_lang_name\">Norwegian</span>",
+          "target": [
+            "#module-165 > .linguise_switcher.linguise_switcher_not_menu.linguise_switcher_popup > .linguise_lang_name"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.98 (foreground color: #b8b8b8, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<p class=\"cky-title\" data-cky-tag=\"title\" aria-level=\"2\" role=\"heading\" style=\"color: #212121;\"></p>",
+          "target": [
+            ".cky-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"cky-consent-container cky-box-bottom-left\" tabindex=\"-1\" role=\"region\" aria-label=\"\">",
+          "target": [
+            ".cky-consent-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<a class=\"el-item fs-teaser-item-1 uk-card uk-card-hover uk-card-small uk-flex uk-link-toggle\" href=\"/program/helgeprogram-5-6-september\">",
+          "target": [
+            ".fs-teaser-item-1"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"el-item fs-teaser-item-2 uk-card uk-card-hover uk-card-small uk-flex uk-link-toggle\" href=\"/program/helgeprogram-12-13-september\">",
+          "target": [
+            ".fs-teaser-item-2"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"el-item fs-teaser-item-3 uk-card uk-card-hover uk-card-small uk-flex uk-link-toggle\" href=\"/program/helgeprogram-19-20-september\">",
+          "target": [
+            ".fs-teaser-item-3"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"el-link uk-icon-button\" href=\"https://www.instagram.com/tekniskmuseum/?hl=en\">",
+          "target": [
+            ".uk-first-column.el-item > .uk-icon-button.el-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"el-link uk-icon-button\" href=\"https://www.facebook.com/Tekniskmuseum/?locale=nb_NO\">",
+          "target": [
+            ".el-item:nth-child(2) > .uk-icon-button.el-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"el-link uk-icon-button\" href=\"https://www.youtube.com/user/norsktekniskmuseum\">",
+          "target": [
+            ".el-item:nth-child(3) > .uk-icon-button.el-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"el-link\" href=\"/miljofyrtarn\">",
+          "target": [
+            ".uk-margin > .el-link[href$=\"miljofyrtarn\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 22,
+      "nodes": [
+        {
+          "html": "<div class=\"uk-hidden-visually uk-notification uk-notification-top-left uk-width-auto\">\n<div class=\"uk-notification-message\">\n<a href=\"#tm-main\" class=\"uk-link-reset\">Skip to main content</a>\n</div>\n</div>",
+          "target": [
+            ".uk-hidden-visually"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".uk-grid-medium.uk-child-width-auto[uk-grid=\"margin: uk-margin-small-top\"] > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"uk-width-1-1@s uk-width-2-5@m uk-first-column\">",
+          "target": [
+            ".uk-width-2-5\\@m"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3>\n    \n        \n                    Museet        \n        \n    \n</h3>",
+          "target": [
+            ".uk-width-1-3\\@s.uk-width-1-5\\@m:nth-child(2) > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"el-item\"> <div class=\"el-content uk-panel\"><a href=\"/ansatte\" class=\"el-link uk-margin-remove-last-child\">Kontakt oss</a></div> </li>",
+          "target": [
+            ".uk-width-1-3\\@s.uk-width-1-5\\@m:nth-child(2) > .uk-list > .el-item:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"el-item\"> <div class=\"el-content uk-panel\"><a href=\"/stillingledig\" class=\"el-link uk-margin-remove-last-child\">Ledige stillinger</a></div> </li>",
+          "target": [
+            ".uk-width-1-3\\@s.uk-width-1-5\\@m:nth-child(2) > .uk-list > .el-item:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"el-item\"> <div class=\"el-content uk-panel\"><a href=\"/rapporter\" class=\"el-link uk-margin-remove-last-child\">Årsrapporter</a></div> </li>",
+          "target": [
+            ".uk-width-1-3\\@s.uk-width-1-5\\@m:nth-child(2) > .uk-list > .el-item:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"el-item\"> <div class=\"el-content uk-panel\"><a href=\"/miljofyrtarn\" class=\"el-link uk-margin-remove-last-child\">Miljøfyrtårn</a></div> </li>",
+          "target": [
+            ".uk-width-1-3\\@s.uk-width-1-5\\@m:nth-child(2) > .uk-list > .el-item:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>\n<div class=\"el-content uk-panel\"><span class=\"uk-link uk-margin-remove-last-child\">Presse</span></div> </div>",
+          "target": [
+            ".uk-width-1-3\\@s.uk-width-1-5\\@m:nth-child(2) > .uk-list > .el-item:nth-child(5) > .uk-link-toggle[target=\"_blank\"] > .uk-flex-nowrap.uk-grid-small.uk-child-width-expand > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3>\n    \n        \n                    Snarveier        \n        \n    \n</h3>",
+          "target": [
+            ".uk-width-1-3\\@s.uk-width-1-5\\@m:nth-child(3) > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"uk-list\">",
+          "target": [
+            ".uk-width-1-3\\@s.uk-width-1-5\\@m:nth-child(3) > .uk-list:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>\n<div class=\"el-content uk-panel\"><p><a href=\"/images/Dokumenter/fotografering-og-filming-teknisk-museum-26.pdf\">Fotografering og filming på museet</a></p></div> </div>",
+          "target": [
+            ".el-item > .uk-flex-nowrap.uk-grid-small.uk-child-width-expand > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3>\n    \n        \n                    Samarbeid        \n        \n    \n</h3>",
+          "target": [
+            ".uk-width-1-3\\@s.uk-width-1-5\\@m:nth-child(4) > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"el-item\"> <div class=\"el-content uk-panel\"><a href=\"/lokaler\" class=\"el-link uk-margin-remove-last-child\">Leie av lokaler</a></div> </li>",
+          "target": [
+            ".uk-width-1-3\\@s.uk-width-1-5\\@m:nth-child(4) > .uk-list > .el-item:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"el-item\"> <div class=\"el-content uk-panel\"><a href=\"/samarbeidspartnere\" class=\"el-link uk-margin-remove-last-child\">Samarbeidspartnere</a></div> </li>",
+          "target": [
+            ".uk-width-1-3\\@s.uk-width-1-5\\@m:nth-child(4) > .uk-list > .el-item:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"el-item\"> <div class=\"el-content uk-panel\"><a href=\"https://www.tekniskmuseum.no/profil-og-logo\" class=\"el-link uk-margin-remove-last-child\">Logo og profil</a></div> </li>",
+          "target": [
+            ".uk-width-1-3\\@s.uk-width-1-5\\@m:nth-child(4) > .uk-list > .el-item:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"el-item\"> <div class=\"el-content uk-panel\"><a href=\"/samarbeidspartnere\" class=\"el-link uk-margin-remove-last-child\">Museumsnettverkene</a></div> </li>",
+          "target": [
+            ".uk-width-1-3\\@s.uk-width-1-5\\@m:nth-child(4) > .uk-list > .el-item:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>\n<div class=\"el-content uk-panel\"><span class=\"uk-link uk-margin-remove-last-child\">Venneforeningen</span></div> </div>",
+          "target": [
+            "a[href$=\"www.tekniskvenner.no\"] > .uk-flex-nowrap.uk-grid-small.uk-child-width-expand > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3>\n    \n        \n                    Følg oss        \n        \n    \n</h3>",
+          "target": [
+            ".uk-width-3-5\\@m > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"uk-grid-margin uk-grid tm-grid-expand uk-child-width-1-1\">",
+          "target": [
+            ".uk-grid-margin.uk-child-width-1-1.tm-grid-expand:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"uk-width-4-5 uk-width-4-5@m uk-first-column\">\n<h4 class=\"uk-h6 uk-text-center\">\n<a class=\"el-link uk-link-reset\" href=\"/logginn\">        \n                    Logg inn        \n                </a>\n</h4>\n</div>",
+          "target": [
+            ".uk-width-4-5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"uk-flex-first uk-width-auto uk-first-column\"><div class=\"el-title\">Til toppen</div></div>",
+          "target": [
+            ".uk-flex-first"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

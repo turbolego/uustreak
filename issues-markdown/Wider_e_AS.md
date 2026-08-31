@@ -1,8 +1,8 @@
 # WCAG Violations Report for Widerøe AS
 
-**Timestamp:** 2026-08-29T06:20:22.734Z
+**Timestamp:** 2026-08-31T04:19:40.404Z
 **URL:** [https://www.wideroe.no/](https://www.wideroe.no/)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -71,18 +71,6 @@
 
 - `#origin-airport`
 - `#destination-airport`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.CardComponent-module__OwdT0a__cardLink.CardComponent-module__OwdT0a__cardComponent:nth-child(1) > .CardComponent-module__OwdT0a__cardTextContent > .CardComponent-module__OwdT0a__cardHeading`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

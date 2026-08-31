@@ -1,8 +1,8 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-08-29T06:17:50.814Z
+**Timestamp:** 2026-08-31T04:15:34.731Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -72,6 +72,18 @@
 #### Affected Elements:
 
 - `img[alt=" "]`
+
+### Document should have one main landmark
+
+- **Impact:** moderate
+- **Description:** Ensure the document has a main landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-one-main?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
 
 ### Interactive controls must not be nested
 

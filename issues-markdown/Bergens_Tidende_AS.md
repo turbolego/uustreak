@@ -1,22 +1,22 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-08-29T06:02:10.014Z
+**Timestamp:** 2026-08-31T03:59:00.535Z
 **URL:** [https://www.bt.no/](https://www.bt.no/)
 **Total Violations:** 4
 
 ## Violation Details
 
-### Links must be distinguishable without relying on color
+### Elements must meet minimum color contrast ratio thresholds
 
 - **Impact:** serious
-- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-in-text-block?application=playwright
-- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.sch-datacontroller__read-more`
+- `.weatherTemperature`
 
 ### Links must have discernible text
 
@@ -40,9 +40,9 @@
 
 #### Affected Elements:
 
+- `track-element[data-track-id="teaser:127469"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="bt"]`
+- `track-element[data-track-id="teaser:127467"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="bt"]`
 - `track-element[data-track-id="teaser:127431"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="bt"]`
-- `audio-play-button[title="– Han var en\a sterk konge"]`
-- `track-element[data-track-id="teaser:127398"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="bt"]`
 
 ### All page content should be contained by landmarks
 
