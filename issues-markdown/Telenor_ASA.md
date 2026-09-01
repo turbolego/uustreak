@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-08-31T04:16:22.939Z
+**Timestamp:** 2026-09-01T04:10:18.169Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
 **Total Violations:** 5
 
@@ -28,9 +28,9 @@
 
 #### Affected Elements:
 
-- `.medium.card-wrap[data-v-c70a588c=""]:nth-child(1) > .card-vertical[gray="false"][compact="false"] > .content[data-v-00780da5=""] > .margin-bottom-s.title-m`
+- `.medium.card-wrap[data-v-3e4d5383=""]:nth-child(1) > .card-vertical[gray="false"][compact="false"] > .content[data-v-bf0df00b=""] > .margin-bottom-s.title-m`
 - `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-header[data-v-89afb171=""] > .margin-top-3xl.padding-top-3xs`
-- `.dropdown-category.footer.dark:nth-child(1) > .dropdown-link[data-v-d418c31d=""] > .dropdown-header.hidden-mobile[data-v-d418c31d=""] > h6`
+- `.dropdown-category.footer.dark:nth-child(1) > .dropdown-link[data-v-515173b3=""] > .dropdown-header.hidden-mobile[data-v-515173b3=""] > h6`
 - `#privacy_prompt_text2 > h4`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements

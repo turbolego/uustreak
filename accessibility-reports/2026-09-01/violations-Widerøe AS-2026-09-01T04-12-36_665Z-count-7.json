@@ -1,0 +1,364 @@
+{
+  "project": "Widerøe AS",
+  "timestamp": "2026-09-01T04:12:36.665Z",
+  "url": "https://www.wideroe.no/",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<ul role=\"navigation\">",
+          "target": [
+            ".col-sm-12.col-md-6.col-xs-12:nth-child(1) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role=\"navigation\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role navigation is not allowed for given element"
+        },
+        {
+          "html": "<ul role=\"navigation\">",
+          "target": [
+            ".col-sm-6.col-md-6.col-xs-12:nth-child(2) > ul[role=\"navigation\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role navigation is not allowed for given element"
+        },
+        {
+          "html": "<ul role=\"navigation\">",
+          "target": [
+            ".col-sm-12.col-md-6.col-xs-12:nth-child(2) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role=\"navigation\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role navigation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "aria-required-attr",
+      "impact": "critical",
+      "description": "Ensure elements with ARIA roles have all required ARIA attributes",
+      "help": "Required ARIA attributes must be provided",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-required-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button class=\"Button-module__xaXzvq__button Button-module__xaXzvq__ghost Button-module__xaXzvq__small ToggleGroup-module__8OuBQG__button ToggleGroup-module__8OuBQG__active\" role=\"radio\">",
+          "target": [
+            ".ToggleGroup-module__8OuBQG__active"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA attribute not present: aria-checked"
+        },
+        {
+          "html": "<button class=\"Button-module__xaXzvq__button Button-module__xaXzvq__ghost Button-module__xaXzvq__small ToggleGroup-module__8OuBQG__button\" role=\"radio\"><span class=\"Button-module__xaXzvq__buttonContent\"><span class=\"ToggleGroup-module__8OuBQG__label\">Én vei</span></span></button>",
+          "target": [
+            ".Button-module__xaXzvq__ghost.ToggleGroup-module__8OuBQG__button[role=\"radio\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA attribute not present: aria-checked"
+        }
+      ]
+    },
+    {
+      "id": "aria-required-children",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require child roles contain them",
+      "help": "Certain ARIA roles must contain particular children",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-required-children?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ul class=\"SearchTabs-module__3-nUmG__tabList\" role=\"tablist\" aria-label=\"Velg hva du ønsker å bestille\">",
+          "target": [
+            ".SearchTabs-module__3-nUmG__tabList"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: li"
+        }
+      ]
+    },
+    {
+      "id": "aria-required-parent",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require parent roles are contained by them",
+      "help": "Certain ARIA roles must be contained by particular parents",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-required-parent?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<button class=\"SearchTabs-module__3-nUmG__tabButton SearchTabs-module__3-nUmG__active\" tabindex=\"0\" role=\"tab\" type=\"button\" aria-selected=\"true\" aria-controls=\"flight-search-0\">Flybilletter</button>",
+          "target": [
+            ".SearchTabs-module__3-nUmG__active"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<button class=\"SearchTabs-module__3-nUmG__tabButton\" tabindex=\"-1\" role=\"tab\" type=\"button\" aria-selected=\"false\" aria-controls=\"flight-search-1\">Hotell</button>",
+          "target": [
+            "button[aria-controls=\"flight-search-1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<button class=\"SearchTabs-module__3-nUmG__tabButton\" tabindex=\"-1\" role=\"tab\" type=\"button\" aria-selected=\"false\" aria-controls=\"flight-search-2\">Leiebil</button>",
+          "target": [
+            "button[aria-controls=\"flight-search-2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        }
+      ]
+    },
+    {
+      "id": "aria-valid-attr-value",
+      "impact": "critical",
+      "description": "Ensure all ARIA attributes have valid values",
+      "help": "ARIA attributes must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-valid-attr-value?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<input type=\"text\" id=\"origin-airport\" class=\"Form-module__JBuYoW_...\" placeholder=\" \" autocomplete=\"off\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"origin-airport-optio...\" aria-invalid=\"false\" aria-owns=\"origin-airport-optio...\" value=\"\" ...>",
+          "target": [
+            "#origin-airport"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute values: aria-controls=\"origin-airport-options\", aria-owns=\"origin-airport-options\""
+        },
+        {
+          "html": "<input type=\"text\" id=\"destination-airport\" class=\"Form-module__JBuYoW_...\" placeholder=\" \" autocomplete=\"off\" role=\"combobox\" aria-autocomplete=\"list\" aria-expanded=\"true\" aria-controls=\"destination-airport-...\" aria-invalid=\"false\" aria-owns=\"destination-airport-...\" value=\"\" ...>",
+          "target": [
+            "#destination-airport"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute values: aria-controls=\"destination-airport-options\", aria-owns=\"destination-airport-options\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"col-sm-5 col-md-4 col-lg-4 pad0 page-header-items\" role=\"navigation\">",
+          "target": [
+            ".col-sm-5"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "listitem",
+      "impact": "serious",
+      "description": "Ensure <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/listitem?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 21,
+      "nodes": [
+        {
+          "html": "<li class=\"SearchTabs-module__3-nUmG__listItem\"><button class=\"SearchTabs-module__3-nUmG__tabButton SearchTabs-module__3-nUmG__active\" tabindex=\"0\" role=\"tab\" type=\"button\" aria-selected=\"true\" aria-controls=\"flight-search-0\">Flybilletter</button></li>",
+          "target": [
+            ".SearchTabs-module__3-nUmG__listItem:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"SearchTabs-module__3-nUmG__listItem\"><button class=\"SearchTabs-module__3-nUmG__tabButton\" tabindex=\"-1\" role=\"tab\" type=\"button\" aria-selected=\"false\" aria-controls=\"flight-search-1\">Hotell</button></li>",
+          "target": [
+            ".SearchTabs-module__3-nUmG__listItem:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"SearchTabs-module__3-nUmG__listItem\"><button class=\"SearchTabs-module__3-nUmG__tabButton\" tabindex=\"-1\" role=\"tab\" type=\"button\" aria-selected=\"false\" aria-controls=\"flight-search-2\">Leiebil</button></li>",
+          "target": [
+            ".SearchTabs-module__3-nUmG__listItem:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/innsjekk\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>Innsjekk</span></a></li>",
+          "target": [
+            ".col-sm-12.col-md-6.col-xs-12:nth-child(1) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role=\"navigation\"] > .list-link-footer:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/reiseinfo/bagasje\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>Bagasje</span></a></li>",
+          "target": [
+            ".col-sm-12.col-md-6.col-xs-12:nth-child(1) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role=\"navigation\"] > .list-link-footer:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/destinasjoner\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>Destinasjoner</span></a></li>",
+          "target": [
+            ".col-sm-12.col-md-6.col-xs-12:nth-child(1) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role=\"navigation\"] > .list-link-footer:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/mine-reiser/login\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>Mine reiser</span></a></li>",
+          "target": [
+            ".col-sm-12.col-md-6.col-xs-12:nth-child(1) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role=\"navigation\"] > .list-link-footer:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/fly-med-oss/app\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>Widerøe-appen</span></a></li>",
+          "target": [
+            ".col-sm-12.col-md-6.col-xs-12:nth-child(1) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role=\"navigation\"] > .list-link-footer:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\">",
+          "target": [
+            ".col-sm-12.col-md-6.col-xs-12:nth-child(1) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role=\"navigation\"] > .list-link-footer:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/bedrift\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>Widerøe Bisniss</span></a></li>",
+          "target": [
+            ".col-sm-6.col-md-6.col-xs-12:nth-child(2) > ul[role=\"navigation\"] > .list-link-footer:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/bedrift/agent-og-salessupport\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>Agent- og salesinfo</span></a></li>",
+          "target": [
+            ".col-sm-6.col-md-6.col-xs-12:nth-child(2) > ul[role=\"navigation\"] > .list-link-footer:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/bedrift/cargo\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>Cargo</span></a></li>",
+          "target": [
+            ".col-sm-6.col-md-6.col-xs-12:nth-child(2) > ul[role=\"navigation\"] > .list-link-footer:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/bedrift/leie-av-fly\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>Leie av fly</span></a></li>",
+          "target": [
+            ".col-sm-6.col-md-6.col-xs-12:nth-child(2) > ul[role=\"navigation\"] > .list-link-footer:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/bedrift/for-leverandorer\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>For leverandører</span></a></li>",
+          "target": [
+            ".col-sm-6.col-md-6.col-xs-12:nth-child(2) > ul[role=\"navigation\"] > .list-link-footer:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/om-selskapet\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>Widerøe-konsernet</span></a></li>",
+          "target": [
+            ".col-sm-12.col-md-6.col-xs-12:nth-child(2) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role=\"navigation\"] > .list-link-footer:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\">",
+          "target": [
+            ".col-sm-12.col-md-6.col-xs-12:nth-child(2) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role=\"navigation\"] > .list-link-footer:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/barekraft-og-miljo\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>Bærekraft og miljø</span></a></li>",
+          "target": [
+            ".col-sm-12.col-md-6.col-xs-12:nth-child(2) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role=\"navigation\"] > .list-link-footer:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/om-selskapet/okonomi\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>Økonomi</span></a></li>",
+          "target": [
+            ".col-sm-12.col-md-6.col-xs-12:nth-child(2) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role=\"navigation\"] > .list-link-footer:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/om-selskapet/flyskrekk-kurs\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>Flyskrekk-kort</span></a></li>",
+          "target": [
+            ".col-sm-12.col-md-6.col-xs-12:nth-child(2) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role=\"navigation\"] > .list-link-footer:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/om-selskapet/media\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>Media</span></a></li>",
+          "target": [
+            ".col-sm-12.col-md-6.col-xs-12:nth-child(2) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role=\"navigation\"] > .list-link-footer:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        },
+        {
+          "html": "<li class=\"list-link-footer\"><a href=\"https://www.wideroe.no/om-selskapet/personvern\" target=\"_self\" class=\"links-footer\" rel=\"noopener noreferrer\"><span>Personvern</span></a></li>",
+          "target": [
+            ".list-link-footer:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+        }
+      ]
+    }
+  ]
+}

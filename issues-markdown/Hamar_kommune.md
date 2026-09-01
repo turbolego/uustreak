@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hamar kommune
 
-**Timestamp:** 2026-08-31T04:05:08.575Z
+**Timestamp:** 2026-09-01T03:59:00.390Z
 **URL:** [https://www.hamar.kommune.no/](https://www.hamar.kommune.no/)
 **Total Violations:** 5
 
@@ -61,9 +61,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 4
 
 #### Affected Elements:
 
+- `indigo-kondolanse-banner,.line1`
+- `indigo-kondolanse-banner,.line2`
 - `#content-link`
 - `#coretrek-footer`

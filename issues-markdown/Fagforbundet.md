@@ -1,10 +1,22 @@
 # WCAG Violations Report for Fagforbundet
 
-**Timestamp:** 2026-08-31T04:03:43.196Z
+**Timestamp:** 2026-09-01T03:56:22.016Z
 **URL:** [https://www.fagforbundet.no/](https://www.fagforbundet.no/)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
+
+### ARIA hidden element must not be focusable or contain focusable elements
+
+- **Impact:** serious
+- **Description:** Ensure aria-hidden elements are not focusable nor contain focusable elements
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-hidden-focus?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-10.8.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#bai-open-chat-btn`
 
 ### Elements must meet minimum color contrast ratio thresholds
 

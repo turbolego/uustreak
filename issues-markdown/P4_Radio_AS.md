@@ -1,6 +1,6 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-08-31T04:11:59.638Z
+**Timestamp:** 2026-09-01T04:04:41.087Z
 **URL:** [https://www.lydenavnorge.no/p4/](https://www.lydenavnorge.no/p4/)
 **Total Violations:** 7
 
@@ -24,21 +24,21 @@
 - `.image-container[data-v-b6f8812b=""] > .play-button.pulse.show`
 - `.play-button.pulse[data-v-4af17d0f=""]`
 - `.title-container[data-v-b6f8812b=""] > .stroked.inverted.play-button`
-- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(5) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(1) > .show-progress.stroked.inverted`
-- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(5) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(2) > .show-progress.stroked.inverted`
-- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(5) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted`
-- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(5) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(4) > .show-progress.stroked.inverted`
-- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(5) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(5) > .show-progress.stroked.inverted`
-- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(6) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(1) > .show-progress.stroked.inverted`
-- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(6) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(2) > .show-progress.stroked.inverted`
-- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(6) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted`
-- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(6) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(4) > .show-progress.stroked.inverted`
-- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(6) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(5) > .show-progress.stroked.inverted`
-- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(7) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(1) > .show-progress.stroked.inverted`
-- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(7) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(2) > .show-progress.stroked.inverted`
-- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(7) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted`
-- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(7) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(4) > .show-progress.stroked.inverted`
-- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(7) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(5) > .show-progress.stroked.inverted`
+- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(1) > .show-progress.stroked.inverted`
+- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(2) > .show-progress.stroked.inverted`
+- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted`
+- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(4) > .show-progress.stroked.inverted`
+- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(8) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(5) > .show-progress.stroked.inverted`
+- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(9) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(1) > .show-progress.stroked.inverted`
+- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(9) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(2) > .show-progress.stroked.inverted`
+- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(9) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted`
+- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(9) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(4) > .show-progress.stroked.inverted`
+- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(9) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(5) > .show-progress.stroked.inverted`
+- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(1) > .show-progress.stroked.inverted`
+- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(2) > .show-progress.stroked.inverted`
+- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(3) > .show-progress.stroked.inverted`
+- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(4) > .show-progress.stroked.inverted`
+- `.sounds-container.section-container[data-v-5aec0ce8=""]:nth-child(10) > .section-player-box-wrapper[data-v-5aec0ce8=""] > .section-player-box.item[data-v-5aec0ce8=""] > .audio-items > .audio-item:nth-child(5) > .show-progress.stroked.inverted`
 - `.engagement-buttons[data-v-4b932298=""][data-v-c7614d41=""] > .dislike[type="button"][data-v-4b932298=""]`
 - `.engagement-buttons[data-v-4b932298=""][data-v-c7614d41=""] > .like[data-v-ff04d4eb=""][type="button"]`
 - `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-c7614d41=""] > .close[data-v-484baac5=""]`
@@ -107,12 +107,17 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 9
+- **Count:** 14
 
 #### Affected Elements:
 
 - `.image-container[data-v-4af17d0f=""] > a[data-v-4af17d0f=""]`
-- `.image-link`
+- `.content-box.compact[data-v-d583c235=""] > .image-link[data-v-d583c235=""]`
+- `.image-link[href$="lyden/"][data-v-f1ce81f5=""]`
+- `.medium-large.contest-box.item:nth-child(1) > .image-link[data-v-f1ce81f5=""]`
+- `.medium-large.contest-box.item:nth-child(2) > .image-link[data-v-f1ce81f5=""]`
+- `.image-link[href$="fem-pa/"][data-v-d583c235=""]`
+- `.content-box.medium-large.item:nth-child(2) > .image-link[data-v-d583c235=""]`
 - `.large.section-box.item > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
 - `.small.section-box.item:nth-child(1) > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
 - `.small.section-box.item:nth-child(2) > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`

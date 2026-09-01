@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-08-31T04:15:34.731Z
+**Timestamp:** 2026-09-01T04:09:16.443Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 6
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 31
+- **Count:** 30
 
 #### Affected Elements:
 
@@ -22,8 +22,7 @@
 - `.contents[href="/no/bolig?location=felles"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `.contents[href="/no/trening?location=bergen"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `a[href$="kurs"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
-- `a[href$="bli-medlem"] > .btn-primary.btn-lg[type="button"] > .md\:text-body_large.flex-row.justify-between > .text-base-white.svelte-nqw3qe.font-light`
-- `.contents[target="_blank"] > .btn-primary.btn-lg[type="button"] > .md\:text-body_large.flex-row.justify-between > .text-base-white.svelte-nqw3qe.font-light`
+- `.md\:text-body_large.flex-row.justify-between > .text-base-white.svelte-nqw3qe.font-light`
 - `h1`
 - `a[href$="bolig"] > .text-base-white.svelte-nqw3qe.font-light`
 - `a[href$="studentliv"] > .text-base-white.svelte-nqw3qe.font-light`
@@ -34,7 +33,7 @@
 - `a[href$="mat-og-drikke"] > .text-base-white.svelte-nqw3qe.font-light`
 - `a[href$="psykisk-helse"] > .text-base-white.svelte-nqw3qe.font-light`
 - `a[href$="studentgoder"] > .text-base-white.svelte-nqw3qe.font-light`
-- `.whitespace-nowrap.pb-4.font-semibold`
+- `.pb-4.whitespace-nowrap.font-semibold`
 - `.gap-3[href$="artikkel"][target="_self"] > .text-base-white.svelte-nqw3qe.font-light`
 - `a[href$="om-sammen"] > .text-base-white.svelte-nqw3qe.font-light`
 - `a[href$="aapningstider"] > .text-base-white.svelte-nqw3qe.font-light`
@@ -111,36 +110,32 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 41
+- **Count:** 37
 
 #### Affected Elements:
 
 - `.md\:pl-0`
 - `.md\:w-\[40\%\]`
-- `.flex-col-reverse.overflow-hidden.md\:items-stretch:nth-child(1) > .lg\:min-w-\[27rem\].p-8.md\:py-16 > h2`
-- `.flex-col-reverse.overflow-hidden.md\:items-stretch:nth-child(1) > .lg\:min-w-\[27rem\].p-8.md\:py-16 > .pb-12.max-w-\[36ch\].md\:max-w-none`
-- `.flex-col-reverse.overflow-hidden.md\:items-stretch:nth-child(1) > .md\:h-auto.md\:self-stretch.md\:z-0`
-- `.md\:flex-row-reverse > .lg\:min-w-\[27rem\].p-8.md\:py-16 > h2`
-- `.md\:flex-row-reverse > .lg\:min-w-\[27rem\].p-8.md\:py-16 > .pb-12.max-w-\[36ch\].md\:max-w-none`
-- `.md\:flex-row-reverse > .md\:h-auto.md\:self-stretch.md\:z-0`
+- `.lg\:min-w-\[27rem\] > h2`
+- `.pb-12`
+- `.md\:h-auto`
 - `h1`
 - `.mb-1`
 - `#carousel0`
 - `#carousel1`
-- `#carousel2`
 - `img[alt="bilder av studenter i Bergen"]`
 - `a[href$="ny-student-bergen"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\:leading-snug.text-xs`
 - `a[href$="ny-student-bergen"] > .pt-2.pb-2.px-2`
+- `#carousel3 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .h-44.object-cover[draggable="false"]`
+- `#carousel3 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\:leading-snug.text-xs`
+- `#carousel3 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .pt-2.pb-2.px-2`
 - `#carousel4 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .h-44.object-cover[draggable="false"]`
 - `#carousel4 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\:leading-snug.text-xs`
 - `#carousel4 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .pt-2.pb-2.px-2`
-- `#carousel5 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .h-44.object-cover[draggable="false"]`
-- `#carousel5 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\:leading-snug.text-xs`
-- `#carousel5 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .pt-2.pb-2.px-2`
+- `#carousel5`
 - `#carousel6`
 - `#carousel7`
 - `#carousel8`
-- `#carousel9`
 - `div:nth-child(1) > .\!font-bold.pb-4`
 - `a[href$="bolig"] > .text-base-white.svelte-nqw3qe.font-light`
 - `a[href$="studentliv"] > .text-base-white.svelte-nqw3qe.font-light`
