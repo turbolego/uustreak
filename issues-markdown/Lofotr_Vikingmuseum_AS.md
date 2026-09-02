@@ -1,8 +1,8 @@
 # WCAG Violations Report for Lofotr Vikingmuseum AS
 
-**Timestamp:** 2026-09-01T04:01:06.775Z
+**Timestamp:** 2026-09-02T07:32:15.498Z
 **URL:** [https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/](https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/)
-**Total Violations:** 9
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -31,18 +31,6 @@
 #### Affected Elements:
 
 - `#header-menu-toggle`
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.cmplz-blocked-content-notice`
 
 ### Headings should not be empty
 
@@ -98,18 +86,6 @@
 #### Affected Elements:
 
 - `#post-97013 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.skip-link`
 
 ### [role="img"] elements must have alternative text
 

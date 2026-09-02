@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2026-09-01T04:07:41.232Z
+**Timestamp:** 2026-09-02T07:03:49.704Z
 **URL:** [https://www.dnt.no/stavanger](https://www.dnt.no/stavanger)
 **Total Violations:** 10
 
@@ -42,14 +42,14 @@
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-619509"]`
-- `button[aria-controls="modal-616248"]`
-- `button[aria-controls="modal-618126"]`
-- `button[aria-controls="modal-616234"]`
-- `button[aria-controls="modal-580757"]`
-- `button[aria-controls="modal-613109"]`
-- `button[aria-controls="modal-574114"]`
-- `button[aria-controls="modal-589027"]`
+- `button[aria-controls="modal-578745"]`
+- `button[aria-controls="modal-617765"]`
+- `button[aria-controls="modal-619496"]`
+- `button[aria-controls="modal-578587"]`
+- `button[aria-controls="modal-578202"]`
+- `button[aria-controls="modal-619526"]`
+- `button[aria-controls="modal-617519"]`
+- `button[aria-controls="modal-617480"]`
 
 ### Buttons must have discernible text
 
@@ -92,7 +92,7 @@
 
 - `.md\:max-w-\[284px\] > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `.bg-beige-50 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
-- `div:nth-child(2) > .bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
+- `div:nth-child(3) > .bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\:col-start-9.md\:col-span-3 > .border.hover\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover`
 - `.w-\[180px\].h-\[160px\]:nth-child(1) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
 - `.w-\[180px\].h-\[160px\]:nth-child(2) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`
 - `.w-\[180px\].h-\[160px\]:nth-child(3) > .shadow-beige-300\/25.hover\:shadow-beige-300\/75.px-8 > .justify-between.h-full.flex-col > .h-\[100px\].items-center.flex > img`

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dressmann AS
 
-**Timestamp:** 2026-09-01T03:55:26.572Z
+**Timestamp:** 2026-09-02T07:09:51.466Z
 **URL:** [https://dressmann.com/no/](https://dressmann.com/no/)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
 
@@ -29,15 +29,3 @@
 #### Affected Elements:
 
 - `.e1gatcwn2`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#zendesk-widget`

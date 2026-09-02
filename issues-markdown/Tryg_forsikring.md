@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tryg forsikring
 
-**Timestamp:** 2026-09-01T04:09:25.724Z
+**Timestamp:** 2026-09-02T07:13:50.451Z
 **URL:** [https://www.tryg.no/](https://www.tryg.no/)
 **Total Violations:** 8
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.card-icon-card-wrapper.card.has-buttons:nth-child(1) > .headline`
+- `.card-icon-card-wrapper.height-fixed.card:nth-child(1) > .headline`
 
 ### Banner landmark should not be contained in another landmark
 

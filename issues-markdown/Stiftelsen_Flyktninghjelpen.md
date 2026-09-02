@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Flyktninghjelpen
 
-**Timestamp:** 2026-09-01T04:06:46.707Z
+**Timestamp:** 2026-09-02T07:05:13.033Z
 **URL:** [https://www.nrc.no/](https://www.nrc.no/)
 **Total Violations:** 4
 

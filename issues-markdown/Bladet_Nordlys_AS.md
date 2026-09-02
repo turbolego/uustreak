@@ -1,10 +1,34 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-09-01T03:53:57.976Z
+**Timestamp:** 2026-09-02T07:00:05.921Z
 **URL:** [https://www.nordlys.no/](https://www.nordlys.no/)
-**Total Violations:** 3
+**Total Violations:** 7
 
 ## Violation Details
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, #cbb`
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#eaframe, #container_10783846 > .info > .info-wrapper > .ctaLink`
 
 ### Frames must have an accessible name
 
@@ -12,11 +36,41 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="300"]`
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="1000"]`
 - `#eaframe`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 4
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="300"], img`
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="1000"], #bg`
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="1000"], #h > img`
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="1000"], #v > img`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="300"], a`
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="1000"], a`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -36,9 +90,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 4
 
 #### Affected Elements:
 
 - `amedia-username`
-- `#toppbanner-1`
+- `#toppbanner-1-label`
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="300"], #wrapper`
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="1000"], a`

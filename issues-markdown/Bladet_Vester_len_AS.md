@@ -1,23 +1,39 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-09-01T03:52:51.738Z
+**Timestamp:** 2026-09-02T07:00:24.538Z
 **URL:** [https://www.blv.no/](https://www.blv.no/)
-**Total Violations:** 6
+**Total Violations:** 8
 
 ## Violation Details
 
-### Headings should not be empty
+### ARIA commands must have an accessible name
 
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 2
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
 
 #### Affected Elements:
 
-- `brick-teaser-v23[data-id="u8lrztmx"] > .brick-c-bbkwfP.brick-c-eSmkND[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"] > .body > .brick-c-fdsRaE.title_container.has-image > .normal.brick-c-JbDTi[itemprop="teaser_title"]`
-- `a[data-k5a-section="commercial"] > .body > .brick-c-fdsRaE.title_container.has-image > .normal.brick-c-JbDTi[itemprop="teaser_title"]`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cbb`
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 6
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cmtbiuxeb005f1mebt9cvm7fw, .play`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cmtbiuxeb005f1mebt9cvm7fw, .audio`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cmtbiutle005d1mebsxximcnz, .play`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cmtbiutle005d1mebsxximcnz, .audio`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cmtbiuved003m1nhl0e6hym1r, .play`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cmtbiuved003m1nhl0e6hym1r, .audio`
 
 ### Frames must have an accessible name
 
@@ -25,11 +41,26 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 4
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cmtbiuxeb005f1mebt9cvm7fw`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cmtbiutle005d1mebsxximcnz`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cmtbiuved003m1nhl0e6hym1r`
+- `#eaframe`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#eaframe`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cmtbiutle005d1mebsxximcnz, img`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -53,7 +84,7 @@
 
 #### Affected Elements:
 
-- `brick-teaser-v23[data-id="u8lrztmx"] > .brick-c-bbkwfP.brick-c-eSmkND[data-title-words="2"] > .brick-c-ffHwOH.teaser_body[itemprop="url"]`
+- `#www\.blv\.no\/toppbanner_1 > a[target="_blank"]`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -73,9 +104,13 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 6
 
 #### Affected Elements:
 
 - `amedia-username`
-- `#toppbanner-1`
+- `#toppbanner-1-label`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cmtbiuxeb005f1mebt9cvm7fw, video`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cmtbiutle005d1mebsxximcnz, video`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cmtbiutle005d1mebsxximcnz, img`
+- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, #cmtbiuved003m1nhl0e6hym1r, video`

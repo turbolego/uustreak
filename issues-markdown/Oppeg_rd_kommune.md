@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oppegård kommune
 
-**Timestamp:** 2026-09-01T04:04:51.705Z
+**Timestamp:** 2026-09-02T06:54:35.613Z
 **URL:** [https://www.nordrefollo.kommune.no/](https://www.nordrefollo.kommune.no/)
 **Total Violations:** 1
 
@@ -12,10 +12,9 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
 - `.mr-5`
-- `#focus__text-30145`
 - `#focus__text-4041`

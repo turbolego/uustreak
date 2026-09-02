@@ -1,6 +1,6 @@
 # WCAG Violations Report for Flytoget AS
 
-**Timestamp:** 2026-09-01T03:57:45.346Z
+**Timestamp:** 2026-09-02T07:16:29.477Z
 **URL:** [https://flytoget.no/](https://flytoget.no/)
 **Total Violations:** 7
 
@@ -74,16 +74,15 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 10
+- **Count:** 9
 
 #### Affected Elements:
 
 - `.skip-to-main`
-- `.travel-warning`
 - `.travel-input-from`
 - `.travel-input-to`
 - `.date-label-container`
-- `div[title="06:10"]`
+- `div[title="09:20"]`
 - `.primary-row > .arrival.col-xs-4`
 - `.secondary-row`
 - `.travel-results-button-container`

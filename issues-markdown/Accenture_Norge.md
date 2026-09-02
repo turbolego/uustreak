@@ -1,7 +1,7 @@
 # WCAG Violations Report for Accenture Norge
 
-**Timestamp:** 2026-09-01T03:49:12.831Z
-**URL:** [https://www.accenture.com/no-en](https://www.accenture.com/no-en)
+**Timestamp:** 2026-09-02T06:48:09.442Z
+**URL:** [https://www.accenture.com/en](https://www.accenture.com/en)
 **Total Violations:** 1
 
 ## Violation Details
@@ -17,4 +17,4 @@
 #### Affected Elements:
 
 - `.rad-carousel-block__title`
-- `#editorialtext-2994ac4668 > h4`
+- `#editorialtext-99eb2d4213 > h4`
