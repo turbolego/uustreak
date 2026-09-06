@@ -1,8 +1,8 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-09-06T02:36:59.110Z
+**Timestamp:** 2026-09-06T12:58:56.901Z
 **URL:** [https://jysk.no/](https://jysk.no/)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
 
@@ -21,25 +21,13 @@
 - `img[title="FAST LAV PRIS"]`
 - `img[title="Gavekort"]`
 
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `html`
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 9
+- **Count:** 10
 
 #### Affected Elements:
 
@@ -48,7 +36,8 @@
 - `.text-xl`
 - `.max-w-3xl > .mb-8`
 - `form > p`
-- `.flex-1.relative[data-testid="form-group"]`
-- `.relative.group[data-testid="form-group"]:nth-child(2)`
+- `.flex-1.group[data-testid="form-group"]`
+- `.group.relative[data-testid="form-group"]:nth-child(2)`
 - `.hover\:border-gray-500`
 - `#_R_6ue4npkr9fivb_`
+- `#onetrust-banner-sdk`

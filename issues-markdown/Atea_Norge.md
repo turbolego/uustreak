@@ -1,10 +1,22 @@
 # WCAG Violations Report for Atea Norge
 
-**Timestamp:** 2026-09-06T02:08:02.706Z
+**Timestamp:** 2026-09-06T12:51:39.093Z
 **URL:** [https://www.atea.no/](https://www.atea.no/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
+
+### Elements must only use permitted ARIA attributes
+
+- **Impact:** serious
+- **Description:** Ensure ARIA attributes are not prohibited for an element's role
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-prohibited-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#videoLoop, #movie_player`
 
 ### Form elements should have a visible label
 
@@ -64,7 +76,7 @@
 
 #### Affected Elements:
 
-- `sleeknote-rg4z34-bottom,sleeknote-badge,.sleeknote-badge`
+- `sleeknote-dliro-bottom,sleeknote-badge,.sleeknote-badge`
 
 ### All page content should be contained by landmarks
 

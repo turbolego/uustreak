@@ -1,6 +1,6 @@
 # WCAG Violations Report for Aktiv Eiendomsmegling AS
 
-**Timestamp:** 2026-09-06T02:03:03.592Z
+**Timestamp:** 2026-09-06T12:28:40.078Z
 **URL:** [https://aktiv.no/](https://aktiv.no/)
 **Total Violations:** 7
 
@@ -25,12 +25,13 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 5
+- **Count:** 6
 
 #### Affected Elements:
 
 - `a[href$="personvern"][rel="noopener"][target="_blank"]`
 - `.cm-purpose:nth-child(1) > .cm-services > .cm-caret > a[href="#"]`
+- `#purpose-item-advertising-description > .cm-list-description > span > span > a[rel="noopener noreferrer"][target="_blank"]`
 - `.cm-btn-info`
 - `.cm-btn-accept-all`
 - `a[href$="klaro"]`
