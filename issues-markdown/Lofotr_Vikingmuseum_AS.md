@@ -1,8 +1,8 @@
 # WCAG Violations Report for Lofotr Vikingmuseum AS
 
-**Timestamp:** 2026-09-02T07:32:15.498Z
+**Timestamp:** 2026-09-06T02:42:07.267Z
 **URL:** [https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/](https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/)
-**Total Violations:** 7
+**Total Violations:** 9
 
 ## Violation Details
 
@@ -32,6 +32,18 @@
 
 - `#header-menu-toggle`
 
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.cmplz-blocked-content-notice`
+
 ### Headings should not be empty
 
 - **Impact:** minor
@@ -42,7 +54,7 @@
 
 #### Affected Elements:
 
-- `#block-museumnord-featured-exhibits-carouselblock_2b25e1f331b4c5770fd666e92bb91946 > .wp-block-group__inner-container.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__header > h2`
+- `#block-museumnord-featured-exhibits-carouselblock_faded3e486617f5abb5d72f91daf5b6b > .wp-block-group__inner-container.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__header > h2`
 - `#block-museumnord-featured-exhibits-carouselblock_f0ca8964f0333460927f39af7148f4d7 > .wp-block-group__inner-container.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__header > h2`
 - `#block-museumnord-featured-exhibits-carouselblock_9acea6078be8ef4a544def0eec16911e > .wp-block-group__inner-container.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__header > h2`
 
@@ -58,7 +70,7 @@
 
 - `#primary > h3`
 - `.wp-block-pooka-venue-details__address > h5`
-- `#block-museumnord-featured-exhibits-carouselblock_2b25e1f331b4c5770fd666e92bb91946 > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"] > .wp-block-pooka-experiences-exhibitions-carousel__carousel > .wp-block-pooka-experiences-exhibitions-carousel__carousel-slide[data-index="0"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__content > h5`
+- `#block-museumnord-featured-exhibits-carouselblock_faded3e486617f5abb5d72f91daf5b6b > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"] > .wp-block-pooka-experiences-exhibitions-carousel__carousel > .wp-block-pooka-experiences-exhibitions-carousel__carousel-slide[data-index="0"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__content > h5`
 - `#block-museumnord-featured-exhibits-carouselblock_f0ca8964f0333460927f39af7148f4d7 > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"] > .wp-block-pooka-experiences-exhibitions-carousel__carousel > .wp-block-pooka-experiences-exhibitions-carousel__carousel-slide[data-index="0"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__content > h5`
 - `#block-museumnord-featured-exhibits-carouselblock_9acea6078be8ef4a544def0eec16911e > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"] > .wp-block-pooka-experiences-exhibitions-carousel__carousel > .wp-block-pooka-experiences-exhibitions-carousel__carousel-slide[data-index="0"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__content > h5`
 - `.my-5:nth-child(1) > h5`
@@ -73,7 +85,7 @@
 
 #### Affected Elements:
 
-- `#block-museumnord-featured-exhibits-carouselblock_2b25e1f331b4c5770fd666e92bb91946 > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"]`
+- `#block-museumnord-featured-exhibits-carouselblock_faded3e486617f5abb5d72f91daf5b6b > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"]`
 
 ### Links must have discernible text
 
@@ -87,16 +99,27 @@
 
 - `#post-97013 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100`
 
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.skip-link`
+
 ### [role="img"] elements must have alternative text
 
 - **Impact:** serious
 - **Description:** Ensure [role="img"] elements have alternative text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/role-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `div[data-index="3"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__image[aria-label=""][role="img"]`
-- `div[data-index="4"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__image[aria-label=""][role="img"]`
+- `.card-exhibition__image[aria-label=""][role="img"]`
 - `div[kulturarv=""]`

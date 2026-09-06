@@ -1,22 +1,10 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-09-02T06:58:49.745Z
+**Timestamp:** 2026-09-06T02:11:23.952Z
 **URL:** [https://www.bt.no/](https://www.bt.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.weatherTemperature`
 
 ### Links must have discernible text
 
@@ -36,14 +24,13 @@
 - **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/nested-interactive?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 4
+- **Count:** 3
 
 #### Affected Elements:
 
-- `._large_me3cj_83`
-- `._small_me3cj_88._root_me3cj_65[asset-id="127477"]`
-- `._small_me3cj_88._root_me3cj_65[asset-id="127469"]`
-- `._small_me3cj_88._root_me3cj_65[asset-id="127431"]`
+- `track-element[data-track-id="teaser:127530"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="bt"]`
+- `track-element[data-track-id="teaser:127529"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="bt"]`
+- `track-element[data-track-id="teaser:127515"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="bt"]`
 
 ### All page content should be contained by landmarks
 

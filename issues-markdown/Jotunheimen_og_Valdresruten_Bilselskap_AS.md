@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jotunheimen og Valdresruten Bilselskap AS
 
-**Timestamp:** 2026-09-02T07:26:30.131Z
+**Timestamp:** 2026-09-06T02:36:46.003Z
 **URL:** [https://jvb.no/](https://jvb.no/)
 **Total Violations:** 7
 
@@ -12,18 +12,20 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 8
+- **Count:** 10
 
 #### Affected Elements:
 
 - `.et_pb_text_6 > .et_pb_text_inner > p`
 - `.et_pb_text_6 > .et_pb_text_inner > p > span`
-- `.et_pb_text_9 > .et_pb_text_inner > p`
-- `.et_pb_text_13 > .et_pb_text_inner > p`
+- `.et_pb_text_10 > .et_pb_text_inner > .h1`
+- `.et_pb_text_13 > .et_pb_text_inner > .h1`
 - `.et_pb_text_16 > .et_pb_text_inner > p`
-- `.et_pb_text_19 > .et_pb_text_inner > p`
-- `.et_pb_text_22 > .et_pb_text_inner > p`
-- `.et_pb_text_25 > .et_pb_text_inner > p`
+- `.et_pb_text_38 > .et_pb_text_inner > p`
+- `.et_pb_text_41 > .et_pb_text_inner > p:nth-child(1)`
+- `.et_pb_text_41 > .et_pb_text_inner > p:nth-child(2)`
+- `.et_pb_text_41 > .et_pb_text_inner > p:nth-child(3)`
+- `.et_pb_text_42 > .et_pb_text_inner > p`
 
 ### Headings should not be empty
 
@@ -94,20 +96,21 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 13
+- **Count:** 14
 
 #### Affected Elements:
 
 - `.et_pb_section_0`
 - `.et_pb_section_2`
 - `.et_pb_section_3`
-- `.et_pb_row_12`
-- `.et_pb_row_13`
+- `.et_pb_section_4`
 - `.et_pb_row_14`
-- `.et_pb_section_6`
-- `.et_pb_section_9`
+- `.et_pb_row_16`
+- `.et_pb_row_17`
+- `.et_pb_section_8`
 - `.et_pb_section_10`
 - `.et_pb_section_11`
-- `.et_pb_row_22`
-- `.et_pb_row_23`
-- `.et_pb_section_14`
+- `.et_pb_section_12`
+- `.et_pb_row_25`
+- `.et_pb_row_26`
+- `.et_pb_section_15`

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Universitetet i Sørøst-Norge
 
-**Timestamp:** 2026-09-02T07:16:49.762Z
+**Timestamp:** 2026-09-06T02:31:50.648Z
 **URL:** [https://www.usn.no/](https://www.usn.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -18,6 +18,18 @@
 
 - `#nav_10584_prev`
 - `#nav_10584_next`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `h5`
 
 ### Form elements should have a visible label
 

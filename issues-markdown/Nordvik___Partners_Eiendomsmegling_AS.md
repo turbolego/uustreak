@@ -1,8 +1,8 @@
 # WCAG Violations Report for Nordvik & Partners Eiendomsmegling AS
 
-**Timestamp:** 2026-09-02T06:50:43.076Z
+**Timestamp:** 2026-09-06T02:05:00.672Z
 **URL:** [https://www.nordvik.no/](https://www.nordvik.no/)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -17,18 +17,6 @@
 #### Affected Elements:
 
 - `iframe[title="Bruktbil Levering Web"], body`
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.tf-v1-popover-button`
 
 ### Heading levels should only increase by one
 
@@ -80,4 +68,4 @@
 - `.my-2`
 - `.pt-3`
 - `.md\:flex-row.gap-8.flex-col > .flex-1`
-- `.tf-v1-popover-tooltip-text`
+- `#nordvik-widget-root,#nw-hint`

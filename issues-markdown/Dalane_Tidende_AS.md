@@ -1,22 +1,10 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2026-09-02T07:05:47.331Z
+**Timestamp:** 2026-09-06T02:17:37.143Z
 **URL:** [https://www.dalane-tidende.no/](https://www.dalane-tidende.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
-
-### ARIA commands must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-command-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #cbb`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -31,20 +19,42 @@
 - `a[aria-label="Ledig stilling: Økonomisjef"] > .jobad-wrapper > .ad-text > .ad-text_location`
 - `.swiper-slide-next > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
 
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, iframe, a:nth-child(3) > .creative-container > div > .bottom-background.bottom-background-has-main-image > div > .text-content-container > h1`
+
 ### Frames must have an accessible name
 
 - **Impact:** serious
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 4
+- **Count:** 2
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, iframe[scrolling="no"]`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, body > iframe`
+- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, iframe`
 - `#eaframe`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `brick-carousel-v3[data-slides="3"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 

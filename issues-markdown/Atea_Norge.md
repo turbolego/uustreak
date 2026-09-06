@@ -1,8 +1,8 @@
 # WCAG Violations Report for Atea Norge
 
-**Timestamp:** 2026-09-02T06:55:14.418Z
+**Timestamp:** 2026-09-06T02:08:02.706Z
 **URL:** [https://www.atea.no/](https://www.atea.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -53,6 +53,18 @@
 #### Affected Elements:
 
 - `.page-body`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `sleeknote-rg4z34-bottom,sleeknote-badge,.sleeknote-badge`
 
 ### All page content should be contained by landmarks
 

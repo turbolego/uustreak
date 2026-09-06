@@ -1,22 +1,10 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-09-02T07:00:05.921Z
+**Timestamp:** 2026-09-06T02:12:30.399Z
 **URL:** [https://www.nordlys.no/](https://www.nordlys.no/)
-**Total Violations:** 7
+**Total Violations:** 5
 
 ## Violation Details
-
-### ARIA commands must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-command-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, #cbb`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -24,11 +12,13 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
-- `#eaframe, #container_10783846 > .info > .info-wrapper > .ctaLink`
+- `#eaframe, .ctaLink`
+- `.swiper-slide-active > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
+- `.swiper-slide-next > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
 
 ### Frames must have an accessible name
 
@@ -40,37 +30,21 @@
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="300"]`
-- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="1000"]`
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[scrolling="no"]`
+- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, body > iframe`
 - `#eaframe`
 
-### Images must have alternative text
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 4
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="300"], img`
-- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="1000"], #bg`
-- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="1000"], #h > img`
-- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="1000"], #v > img`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 2
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="300"], a`
-- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="1000"], a`
+- `brick-teaser-group-v1[data-color-skin="sport"] > div > brick-carousel-v3 > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -90,11 +64,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 4
+- **Count:** 2
 
 #### Affected Elements:
 
 - `amedia-username`
-- `#toppbanner-1-label`
-- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="300"], #wrapper`
-- `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[height="1000"], a`
+- `#toppbanner-1`

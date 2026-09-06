@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Hudøy
 
-**Timestamp:** 2026-09-02T07:05:51.553Z
+**Timestamp:** 2026-09-06T02:20:30.833Z
 **URL:** [https://hudoy.no/](https://hudoy.no/)
 **Total Violations:** 5
 
@@ -58,13 +58,13 @@
 - `.avia-builder-el-38 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
 - `.avia-builder-el-40 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
 - `a[href$="bufdir.no/"]`
-- `a[href$="eckbos-legat.no/"]`
 - `a[href$="bergesenstiftelsen.no/"]`
+- `a[href$="eckbos-legat.no/"]`
 - `a[href$="ferdernasjonalpark.no/"]`
 - `a[href$="scheibler.no/"]`
 - `.avia-builder-el-53 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
 - `.avia-builder-el-55 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
-- `.avia-builder-el-57 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
+- `a[href$="deichman.no/"]`
 - `div:nth-child(1) > .alignleft[rel="noopener"][target="_blank"]`
 - `div:nth-child(2) > .alignleft[rel="noopener"][target="_blank"]`
 - `p > .alignleft[rel="noopener"][target="_blank"]`

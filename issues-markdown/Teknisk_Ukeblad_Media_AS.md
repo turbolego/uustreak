@@ -1,6 +1,6 @@
 # WCAG Violations Report for Teknisk Ukeblad Media AS
 
-**Timestamp:** 2026-09-02T07:10:26.864Z
+**Timestamp:** 2026-09-06T02:25:17.311Z
 **URL:** [https://www.tu.no/](https://www.tu.no/)
 **Total Violations:** 3
 
@@ -24,14 +24,15 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 4
+- **Count:** 5
 
 #### Affected Elements:
 
 - `.peer`
 - `.gap-4.flex > .bg-transparent.hover\:bg-site-brand-darker.dark\:text-white:nth-child(1)`
 - `.gap-4.flex > .bg-transparent.hover\:bg-site-brand-darker.dark\:text-white:nth-child(2)`
-- `.inset-x-0 > .hover\:bg-site-brand-darker.dark\:text-white.dark\:hover\:text-brandNeutral-900`
+- `section:nth-child(39) > .overflow-x-hidden.col-span-12.relative > .inset-x-0.inset-y-0.md\:flex > .hover\:bg-site-brand-darker.dark\:text-white.dark\:hover\:text-brandNeutral-900`
+- `.dark\:bg-brandBrown-700`
 
 ### Links must have discernible text
 

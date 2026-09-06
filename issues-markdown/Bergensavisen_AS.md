@@ -1,34 +1,10 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2026-09-02T06:59:08.320Z
+**Timestamp:** 2026-09-06T02:11:40.339Z
 **URL:** [https://www.ba.no/](https://www.ba.no/)
-**Total Violations:** 7
+**Total Violations:** 5
 
 ## Violation Details
-
-### ARIA commands must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-command-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #cbb`
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #\32 00_268_dfa7banner_html_inpage_0\.if, #element-30 > button`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -36,13 +12,15 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
+- **Count:** 5
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, iframe, .right-background > div > .text-content-container > .call-to-action-container > span`
+- `#eaframe, #container_10780890 > .info > .info-wrapper > .ctaLink`
 - `a[aria-label="Ledig stilling: Jobb i Årdal"] > .jobad-wrapper > .ad-text > .ad-text_location`
-- `.swiper-slide-active > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
 - `a[aria-label="Ledig stilling: Daglig leder"] > .jobad-wrapper > .ad-text > .ad-text_location`
+- `a[aria-label="Ledig stilling: Stabsleiar"] > .jobad-wrapper > .ad-text > .ad-text_location`
 
 ### Frames must have an accessible name
 
@@ -54,8 +32,20 @@
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #\32 00_268_dfa7banner_html_inpage_0\.if`
+- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, iframe`
 - `#eaframe`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `brick-carousel-v3[data-slides="10"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -81,19 +71,3 @@
 
 - `amedia-username`
 - `#toppbanner-1`
-
-### [role="img"] elements must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure [role="img"] elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/role-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 5
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #\32 00_268_dfa7banner_html_inpage_0\.if, #c-26`
-- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #\32 00_268_dfa7banner_html_inpage_0\.if, #c-28 > .sc-ipUnzB.bgpEeK[role="img"]`
-- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #\32 00_268_dfa7banner_html_inpage_0\.if, #c-32 > .sc-ipUnzB.bgpEeK[role="img"]`
-- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #\32 00_268_dfa7banner_html_inpage_0\.if, #c-33 > .sc-ipUnzB.bgpEeK[role="img"]`
-- `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #\32 00_268_dfa7banner_html_inpage_0\.if, #c-34 > .sc-ipUnzB.bgpEeK[role="img"]`

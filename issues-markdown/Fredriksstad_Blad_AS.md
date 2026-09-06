@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-09-02T07:17:19.458Z
+**Timestamp:** 2026-09-06T02:28:24.632Z
 **URL:** [https://www.f-b.no/](https://www.f-b.no/)
 **Total Violations:** 5
 
@@ -40,12 +40,11 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, iframe[scrolling="no"], #f`
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, iframe[scrolling="no"], #e`
+- `brick-carousel-v3[data-slides="3"] > .carousel[aria-label="Innholdskarusell"][role="region"]`
 
 ### Elements marked as presentational should be consistently ignored
 

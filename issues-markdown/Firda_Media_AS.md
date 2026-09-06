@@ -1,6 +1,6 @@
 # WCAG Violations Report for Firda Media AS
 
-**Timestamp:** 2026-09-02T07:15:23.280Z
+**Timestamp:** 2026-09-06T02:26:34.511Z
 **URL:** [https://www.firda.no/](https://www.firda.no/)
 **Total Violations:** 5
 
@@ -24,10 +24,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
+- **Count:** 4
 
 #### Affected Elements:
 
+- `#eaframe, #container_10795069 > .info > .info-wrapper > .ctaLink`
 - `a[aria-label="Ledig stilling: Jobb i Årdal"] > .jobad-wrapper > .ad-text > .ad-text_location`
 - `a[aria-label="Ledig stilling: Daglig leder"] > .jobad-wrapper > .ad-text > .ad-text_location`
 - `a[aria-label="Ledig stilling: IT-direktør"] > .jobad-wrapper > .ad-text > .ad-text_location`
@@ -43,8 +44,8 @@
 #### Affected Elements:
 
 - `#google_ads_iframe_\/56257416\/www\.firda\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if`
-- `#google_ads_iframe_\/56257416\/www\.firda\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, #banner`
-- `#google_ads_iframe_\/56257416\/www\.firda\.no\/toppbanner_0, iframe[sandbox="allow-scripts"]`
+- `#google_ads_iframe_\/56257416\/www\.firda\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, iframe[scrolling="no"]`
+- `#google_ads_iframe_\/56257416\/www\.firda\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if, body > iframe`
 - `#eaframe`
 
 ### Elements marked as presentational should be consistently ignored
