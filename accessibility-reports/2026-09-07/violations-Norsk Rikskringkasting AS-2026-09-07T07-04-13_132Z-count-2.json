@@ -1,0 +1,83 @@
+{
+  "project": "Norsk Rikskringkasting AS",
+  "timestamp": "2026-09-07T07:04:13.132Z",
+  "url": "https://www.nrk.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input id=\"frontplugg-kommune-input\" list=\"frontplugg-kommune-list\" placeholder=\"Din kommune\" enterkeyhint=\"done\" spellcheck=\"false\" autocorrect=\"off\" class=\"svelte-1ndxl7w\" aria-autocomplete=\"list\" aria-controls=\"frontplugg-kommune-list\" aria-expanded=\"false\" autocomplete=\"off\" role=\"combobox\">",
+          "target": [
+            "#frontplugg-kommune-input"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role combobox is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "role-img-alt",
+      "impact": "serious",
+      "description": "Ensure [role=\"img\"] elements have alternative text",
+      "help": "[role=\"img\"] elements must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/role-img-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<div class=\"tronskifte-monogram tronskifte-monogram-wrapper\" role=\"img\" alt=\"\">",
+          "target": [
+            "div[data-testid=\"kur-embed-id-1336496\"] > .tronskifte-lenke[href=\"https://www.nrk.no/1.11661059\"] > .tronskifte-banner.tronskifte-banner--haakon-og-harald.tronskifte-apartment > .tronskifte-shift-content > .tronskifte-monogram.tronskifte-monogram-wrapper[role=\"img\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"tronskifte-monogram tronskifte-monogram-wrapper\" role=\"img\" alt=\"\">",
+          "target": [
+            "div[data-testid=\"kur-embed-id-1336390\"] > .tronskifte-lenke[href=\"https://www.nrk.no/1.11661059\"] > .tronskifte-banner.tronskifte-banner--haakon-og-harald.tronskifte-apartment > .tronskifte-shift-content > .tronskifte-monogram.tronskifte-monogram-wrapper[role=\"img\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"tronskifte-monogram tronskifte-monogram-wrapper\" role=\"img\" alt=\"\">",
+          "target": [
+            "div[data-testid=\"kur-embed-id-1336315\"] > .tronskifte-lenke[href=\"https://www.nrk.no/1.11661059\"] > .tronskifte-banner.tronskifte-banner--haakon-og-harald.tronskifte-apartment > .tronskifte-shift-content > .tronskifte-monogram.tronskifte-monogram-wrapper[role=\"img\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"tronskifte-monogram tronskifte-monogram-wrapper\" role=\"img\" alt=\"\">",
+          "target": [
+            "div[data-testid=\"kur-embed-id-1336224\"] > .tronskifte-lenke[href=\"https://www.nrk.no/1.11661059\"] > .tronskifte-banner.tronskifte-banner--haakon-og-harald.tronskifte-apartment > .tronskifte-shift-content > .tronskifte-monogram.tronskifte-monogram-wrapper[role=\"img\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}
