@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-09-06T12:52:09.442Z
+**Timestamp:** 2026-09-07T07:07:19.812Z
 **URL:** [https://www.bt.no/](https://www.bt.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -24,13 +24,14 @@
 - **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/nested-interactive?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 3
+- **Count:** 4
 
 #### Affected Elements:
 
-- `track-element[data-track-id="teaser:127530"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="bt"]`
-- `track-element[data-track-id="teaser:127529"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="bt"]`
-- `track-element[data-track-id="teaser:127515"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="bt"]`
+- `._large_me3cj_83`
+- `track-element[data-track-id="teaser:127547"][data-track-target-id="sdrn:bt:audio:127547"][data-track-container-name="podcast-bundle"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._small_me3cj_88._root_me3cj_65[vendor="bt"]`
+- `._small_me3cj_88._root_me3cj_65[asset-id="127530"]`
+- `._small_me3cj_88._root_me3cj_65[asset-id="127515"]`
 
 ### All page content should be contained by landmarks
 
@@ -43,15 +44,3 @@
 #### Affected Elements:
 
 - `.sch-datacontroller__text`
-
-### <svg> elements with an img role must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/svg-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
-- **Count:** 1
-
-#### Affected Elements:
-
-- `._hearts_4walc_1`

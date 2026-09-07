@@ -1,10 +1,31 @@
 # WCAG Violations Report for Biltema AS
 
-**Timestamp:** 2026-09-06T12:08:12.308Z
+**Timestamp:** 2026-09-07T07:08:15.329Z
 **URL:** [https://www.biltema.no/](https://www.biltema.no/)
-**Total Violations:** 9
+**Total Violations:** 10
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 10
+
+#### Affected Elements:
+
+- `#CybotCookiebotDialogNavDeclaration`
+- `#CybotCookiebotDialogNavDetails`
+- `#CybotCookiebotDialogNavAbout`
+- `#CybotCookiebotDialogBodyContentTitle`
+- `.CybotCookiebotDialogBodyLevelButtonWrapper:nth-child(2) > label > .CybotCookiebotDialogBodyLevelButtonDescription`
+- `.CybotCookiebotDialogBodyLevelButtonWrapper:nth-child(3) > label > .CybotCookiebotDialogBodyLevelButtonDescription`
+- `.CybotCookiebotDialogBodyLevelButtonWrapper:nth-child(4) > label > .CybotCookiebotDialogBodyLevelButtonDescription`
+- `#CybotCookiebotDialogBodyButtonDecline`
+- `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection`
+- `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
 
 ### Headings should not be empty
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-09-06T12:58:56.901Z
+**Timestamp:** 2026-09-07T07:33:34.532Z
 **URL:** [https://jysk.no/](https://jysk.no/)
 **Total Violations:** 2
 
@@ -12,11 +12,10 @@
 - **Description:** Ensure image alternative is not repeated as text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
-- **Count:** 4
+- **Count:** 3
 
 #### Affected Elements:
 
-- `img[alt="Se ukens kampanjeavis"]`
 - `img[title="Annonserte varer"]`
 - `img[title="FAST LAV PRIS"]`
 - `img[title="Gavekort"]`

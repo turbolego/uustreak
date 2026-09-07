@@ -1,10 +1,22 @@
 # WCAG Violations Report for Norsk Rikskringkasting AS
 
-**Timestamp:** 2026-09-06T12:17:49.317Z
+**Timestamp:** 2026-09-07T07:04:13.132Z
 **URL:** [https://www.nrk.no/](https://www.nrk.no/)
-**Total Violations:** 1
+**Total Violations:** 2
 
 ## Violation Details
+
+### ARIA role should be appropriate for the element
+
+- **Impact:** minor
+- **Description:** Ensure role attribute has an appropriate value for the element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#frontplugg-kommune-input`
 
 ### [role="img"] elements must have alternative text
 

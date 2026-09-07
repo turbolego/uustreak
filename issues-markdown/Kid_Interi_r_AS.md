@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-09-06T12:14:30.814Z
+**Timestamp:** 2026-09-07T07:35:21.907Z
 **URL:** [https://www.kid.no/](https://www.kid.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.c6.c7.es > .kb.gr.gs > .gu.gw.gx`
+- `.c7.c6.es > .ks.gr.gs > .gu.gw.gx`
 
 ### Document should not have more than one banner landmark
 
@@ -54,6 +54,20 @@
 
 - `#coiOverlay`
 - `div:nth-child(2) > .h1.h2.h3 > .h7.h8.h9 > .al > .b[role="region"][aria-roledescription="carousel"]`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 3
+
+#### Affected Elements:
+
+- `.f8.f[href$="fiberdyner"]`
+- `.i9:nth-child(2) > .c2 > .ih.ii.if > .f8.f.cj`
+- `.f8.f[href$="classic-stripe"]`
 
 ### All page content should be contained by landmarks
 
