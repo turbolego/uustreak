@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-09-07T07:35:21.907Z
+**Timestamp:** 2026-09-14T08:21:51.826Z
 **URL:** [https://www.kid.no/](https://www.kid.no/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.c7.c6.es > .ks.gr.gs > .gu.gw.gx`
+- `.c7.c6.es > .lk.gs.gt > .gv.gx.gy`
 
 ### Document should not have more than one banner landmark
 
@@ -48,26 +48,11 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
 - `#coiOverlay`
-- `div:nth-child(2) > .h1.h2.h3 > .h7.h8.h9 > .al > .b[role="region"][aria-roledescription="carousel"]`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 3
-
-#### Affected Elements:
-
-- `.f8.f[href$="fiberdyner"]`
-- `.i9:nth-child(2) > .c2 > .ih.ii.if > .f8.f.cj`
-- `.f8.f[href$="classic-stripe"]`
 
 ### All page content should be contained by landmarks
 
@@ -80,6 +65,6 @@
 #### Affected Elements:
 
 - `#skip-to-main-content`
-- `.b8.bc.bd`
+- `.b8.bc.b9`
 - `.tf-header-slider`
 - `.tf-sidebar`

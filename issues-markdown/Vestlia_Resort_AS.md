@@ -1,8 +1,8 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2026-09-07T07:32:15.246Z
+**Timestamp:** 2026-09-14T08:31:20.797Z
 **URL:** [https://vestlia.no/](https://vestlia.no/)
-**Total Violations:** 10
+**Total Violations:** 9
 
 ## Violation Details
 
@@ -24,7 +24,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 12
+- **Count:** 11
 
 #### Affected Elements:
 
@@ -39,7 +39,6 @@
 - `.fusion-title-13 > h2`
 - `.button-11 > .fusion-button-text.awb-button__text.awb-button__text--default`
 - `.button-13 > .fusion-button-text.awb-button__text.awb-button__text--default`
-- `.button-14 > .fusion-button-text.awb-button__text.awb-button__text--default`
 
 ### Heading levels should only increase by one
 
@@ -136,18 +135,6 @@
 - `.fusion-builder-row-16`
 - `.fusion-builder-row-18`
 - `.fusion-builder-row-19`
+- `div:nth-child(22)`
+- `div:nth-child(23)`
 - `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text`
-- `div:nth-child(27)`
-- `div:nth-child(28)`
-
-### [role="img"] elements must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure [role="img"] elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/role-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.q-img`

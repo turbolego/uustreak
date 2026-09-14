@@ -1,8 +1,8 @@
 # WCAG Violations Report for Jotunheimen og Valdresruten Bilselskap AS
 
-**Timestamp:** 2026-09-07T07:33:21.018Z
+**Timestamp:** 2026-09-14T08:21:24.141Z
 **URL:** [https://jvb.no/](https://jvb.no/)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -12,34 +12,21 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 10
+- **Count:** 11
 
 #### Affected Elements:
 
-- `.et_pb_text_6 > .et_pb_text_inner > p`
-- `.et_pb_text_6 > .et_pb_text_inner > p > span`
-- `.et_pb_text_10 > .et_pb_text_inner > .h1`
-- `.et_pb_text_13 > .et_pb_text_inner > .h1`
-- `.et_pb_text_16 > .et_pb_text_inner > p`
-- `.et_pb_text_38 > .et_pb_text_inner > p`
-- `.et_pb_text_41 > .et_pb_text_inner > p:nth-child(1)`
-- `.et_pb_text_41 > .et_pb_text_inner > p:nth-child(2)`
-- `.et_pb_text_41 > .et_pb_text_inner > p:nth-child(3)`
-- `.et_pb_text_42 > .et_pb_text_inner > p`
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `h3:nth-child(1)`
-- `h3:nth-child(2)`
-- `h1:nth-child(3)`
+- `.et_pb_text_5 > .et_pb_text_inner > p`
+- `.et_pb_text_5 > .et_pb_text_inner > p > span`
+- `.et_pb_text_8 > .et_pb_text_inner > p`
+- `.et_pb_text_8 > .et_pb_text_inner > p > span`
+- `.et_pb_text_11 > .et_pb_text_inner > p`
+- `.et_pb_text_14 > .et_pb_text_inner > p`
+- `.et_pb_text_18 > .et_pb_text_inner > p`
+- `.et_pb_text_21 > .et_pb_text_inner > p`
+- `.et_pb_text_24 > .et_pb_text_inner > p`
+- `.et_pb_text_27 > .et_pb_text_inner > p`
+- `.et_pb_text_30 > .et_pb_text_inner > p`
 
 ### Heading levels should only increase by one
 
@@ -47,11 +34,10 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.et_pb_blurb_0 > .et_pb_blurb_content > .et_pb_blurb_container > h4`
 - `.et_pb_blurb_0_tb_footer > .et_pb_blurb_content > .et_pb_blurb_container > h4`
 
 ### Document should have one main landmark
@@ -72,11 +58,13 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
 - `.et_pb_image_0_tb_header > a[href$="jvb.no/"]`
+- `.et-pb-arrow-prev`
+- `.et-pb-arrow-next`
 
 ### Zooming and scaling must not be disabled
 
@@ -100,17 +88,17 @@
 
 #### Affected Elements:
 
-- `.et_pb_section_0`
-- `.et_pb_section_2`
+- `.et_pb_slide_1`
+- `.et-pb-controllers`
 - `.et_pb_section_3`
 - `.et_pb_section_4`
 - `.et_pb_row_14`
+- `.et_pb_row_15`
 - `.et_pb_row_16`
-- `.et_pb_row_17`
-- `.et_pb_section_8`
+- `.et_pb_section_7`
 - `.et_pb_section_10`
 - `.et_pb_section_11`
 - `.et_pb_section_12`
+- `.et_pb_row_24`
 - `.et_pb_row_25`
-- `.et_pb_row_26`
 - `.et_pb_section_15`

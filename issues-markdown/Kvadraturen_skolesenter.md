@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kvadraturen skolesenter
 
-**Timestamp:** 2026-09-07T07:38:23.874Z
+**Timestamp:** 2026-09-14T08:43:08.228Z
 **URL:** [https://kvadraturen.vgs.no/](https://kvadraturen.vgs.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `iframe`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.il-heading--h4`
 
 ### Links must have discernible text
 
@@ -36,7 +48,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 31
+- **Count:** 32
 
 #### Affected Elements:
 
@@ -45,7 +57,7 @@
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ucSearchField_txtSearch`
 - `#Sone2502`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5000`
-- `.text-box > .il-heading--h2`
+- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_1390 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > .il-heading--h2`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_1390 > .webPartInnhold > .emnekart-text-box-list > .emnekart-text-box > .text-box > p:nth-child(2)`
 - `.text-box > p:nth-child(4)`
 - `.text-box > p:nth-child(5)`
@@ -66,6 +78,7 @@
 - `p:nth-child(20)`
 - `p:nth-child(21)`
 - `p:nth-child(22)`
+- `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5200`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5300`
 - `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_1395 > .webPartTittel`
 - `.container > ul`

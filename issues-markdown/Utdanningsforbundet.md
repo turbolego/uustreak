@@ -1,8 +1,8 @@
 # WCAG Violations Report for Utdanningsforbundet
 
-**Timestamp:** 2026-09-07T07:29:46.456Z
+**Timestamp:** 2026-09-14T08:31:16.012Z
 **URL:** [https://www.utdanningsforbundet.no/](https://www.utdanningsforbundet.no/)
-**Total Violations:** 8
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -28,55 +28,31 @@
 
 #### Affected Elements:
 
-- `.header-promotion__links > .btn--primary.btn`
+- `.HeaderPromotionBlock_headerPromotionLinks___zMeq > .PrimaryCTALink_center__UtgTK.PrimaryCTALink_primaryCTALink__1eh0T[target=""]`
 
-### Banner landmark should not be contained in another landmark
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[frameborder="0"]`
+
+### Document should not have more than one banner landmark
 
 - **Impact:** moderate
-- **Description:** Ensure the banner landmark is at top level
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-banner-is-top-level?application=playwright
+- **Description:** Ensure the document has at most one banner landmark
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-no-duplicate-banner?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#stickyheader`
-
-### Contentinfo landmark should not be contained in another landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the contentinfo landmark is at top level
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-contentinfo-is-top-level?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `footer`
-
-### Main landmark should not be contained in another landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the main landmark is at top level
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-main-is-top-level?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `main`
-
-### Document should not have more than one main landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the document has at most one main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-no-duplicate-main?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#main-wrapper`
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -84,12 +60,13 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
-- `#main-wrapper`
-- `#react_0HNO9BSFIFRKV > .local-navigation__wrapper__top[aria-label="Lokal navigasjon"]`
+- `#coiOverlay`
+- `main`
+- `.BlockWrapper_span-3__H0f6B[data-display-option="full"]:nth-child(1) > div > .LocalNavigationTopLayout_localNavigationTop__I8NPN[aria-label="Lokal navigasjon"]`
 
 ### [role="img"] elements must have alternative text
 
@@ -101,5 +78,5 @@
 
 #### Affected Elements:
 
-- `iframe[title="episode 134 av larerrommet"], .ShareControl__ShareIcon-sc-1pwe6vd-0`
-- `iframe[title="episode 134 av larerrommet"], .SubscribeLink__PlusIcon-sc-q4x3v7-0`
+- `iframe[frameborder="0"], .ShareControl__ShareIcon-sc-1pwe6vd-0`
+- `iframe[frameborder="0"], .SubscribeLink__PlusIcon-sc-q4x3v7-0`

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Thon Hotels AS
 
-**Timestamp:** 2026-09-07T07:23:38.304Z
+**Timestamp:** 2026-09-14T08:29:16.070Z
 **URL:** [https://www.thonhotels.no/](https://www.thonhotels.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -16,7 +16,19 @@
 
 #### Affected Elements:
 
-- `section:nth-child(5) > .teaser-section__header > .teaser-section__heading`
+- `section:nth-child(6) > .teaser-section__header > .teaser-section__heading`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.story-teaser--big-campaign > .story-teaser__content > .story-teaser__heading.font-h2`
 
 ### Document should not have more than one banner landmark
 

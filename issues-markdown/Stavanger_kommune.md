@@ -1,8 +1,8 @@
 # WCAG Violations Report for Stavanger kommune
 
-**Timestamp:** 2026-09-07T07:15:24.779Z
+**Timestamp:** 2026-09-14T08:48:18.827Z
 **URL:** [https://www.stavanger.kommune.no/](https://www.stavanger.kommune.no/)
-**Total Violations:** 1
+**Total Violations:** 2
 
 ## Violation Details
 
@@ -17,3 +17,15 @@
 #### Affected Elements:
 
 - `div[role="complementary"]`
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#content`

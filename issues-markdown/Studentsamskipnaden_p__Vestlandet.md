@@ -1,8 +1,8 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-09-07T07:20:43.625Z
+**Timestamp:** 2026-09-14T08:29:42.199Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -22,8 +22,8 @@
 - `.contents[href="/no/bolig?location=felles"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `.contents[href="/no/trening?location=bergen"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `a[href$="kurs"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
-- `.contents[target="_self"] > .btn-primary.btn-lg[type="button"] > .md\:text-body_large.flex-row.justify-between > .text-base-white.svelte-nqw3qe.font-light`
-- `.contents[target="_blank"] > .btn-primary.btn-lg[type="button"] > .md\:text-body_large.flex-row.justify-between > .text-base-white.svelte-nqw3qe.font-light`
+- `.flex-col-reverse.overflow-hidden.md\:items-stretch:nth-child(1) > .lg\:min-w-\[27rem\].p-8.md\:py-16 > .contents[target="_self"] > .btn-primary.btn-lg[type="button"] > .md\:text-body_large.flex-row.justify-between > .text-base-white.svelte-nqw3qe.font-light`
+- `.md\:flex-row-reverse > .lg\:min-w-\[27rem\].p-8.md\:py-16 > .contents[target="_self"] > .btn-primary.btn-lg[type="button"] > .md\:text-body_large.flex-row.justify-between > .text-base-white.svelte-nqw3qe.font-light`
 - `h1`
 - `a[href$="bolig"] > .text-base-white.svelte-nqw3qe.font-light`
 - `a[href$="studentliv"] > .text-base-white.svelte-nqw3qe.font-light`
@@ -59,19 +59,7 @@
 #### Affected Elements:
 
 - `a[aria-label="Finn din studentbolig"] > .md\:items-start.md\:flex-row.flex-col > .md\:grow > .font-semibold.text-gray-900`
-- `#carousel0 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .pt-2.pb-2.px-2 > .text-sm.line-clamp-2.py-0`
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `img[alt=" "]`
+- `a[href$="alle-studenter"] > .pt-2.pb-2.px-2 > .text-sm.line-clamp-2.py-0`
 
 ### Document should have one main landmark
 
@@ -111,7 +99,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 40
+- **Count:** 39
 
 #### Affected Elements:
 
@@ -126,20 +114,19 @@
 - `h1`
 - `.mb-1`
 - `#carousel0`
-- `#carousel1`
 - `img[alt="bilder av studenter i Bergen"]`
 - `a[href$="ny-student-bergen"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\:leading-snug.text-xs`
 - `a[href$="ny-student-bergen"] > .pt-2.pb-2.px-2`
+- `#carousel2 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .h-44.object-cover[draggable="false"]`
+- `#carousel2 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\:leading-snug.text-xs`
+- `#carousel2 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .pt-2.pb-2.px-2`
 - `#carousel3 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .h-44.object-cover[draggable="false"]`
 - `#carousel3 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\:leading-snug.text-xs`
 - `#carousel3 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .pt-2.pb-2.px-2`
-- `#carousel4 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .h-44.object-cover[draggable="false"]`
-- `#carousel4 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\:leading-snug.text-xs`
-- `#carousel4 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .pt-2.pb-2.px-2`
+- `#carousel4`
 - `#carousel5`
 - `#carousel6`
 - `#carousel7`
-- `#carousel8`
 - `div:nth-child(1) > .\!font-bold.pb-4`
 - `a[href$="bolig"] > .text-base-white.svelte-nqw3qe.font-light`
 - `a[href$="studentliv"] > .text-base-white.svelte-nqw3qe.font-light`

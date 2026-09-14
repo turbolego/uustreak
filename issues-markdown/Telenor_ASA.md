@@ -1,8 +1,8 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-09-07T07:23:01.204Z
+**Timestamp:** 2026-09-14T08:30:16.542Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.image`
+- `.main`
 
 ### Heading levels should only increase by one
 
@@ -24,27 +24,25 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 4
-
-#### Affected Elements:
-
-- `.medium.card-wrap[data-v-3e4d5383=""]:nth-child(1) > .card-vertical[gray="false"][compact="false"] > .content[data-v-bf0df00b=""] > .margin-bottom-s.title-m`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-header[data-v-89afb171=""] > .margin-top-3xl.padding-top-3xs`
-- `.dropdown-category.footer.dark:nth-child(1) > .dropdown-link[data-v-515173b3=""] > .dropdown-header.hidden-mobile[data-v-515173b3=""] > h6`
-- `#privacy_prompt_text2 > h4`
-
-### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
-
-- **Impact:** serious
-- **Description:** Ensure that lists are structured correctly
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/list?application=playwright
-- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 2
 
 #### Affected Elements:
 
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-89afb171=""] > div[data-v-f9604989=""] > .regular-usp-list[data-v-f9604989=""] > .tn-list.content-list[data-v-797e5417=""]`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-89afb171=""] > div[data-v-f9604989=""] > .regular-usp-list[data-v-f9604989=""] > .tn-list.content-list[data-v-797e5417=""]`
+- `.dropdown-category.footer.dark:nth-child(1) > .dropdown-link[data-v-515173b3=""] > .dropdown-header.hidden-mobile[data-v-515173b3=""] > h6`
+- `h4`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.swiper-slide.spotlight-slide[data-v-9528d48a=""]:nth-child(6) > .spotlight-product-card[ondragstart="return false"][draggable="false"] > .image-container[data-v-e4fb5de4=""] > img[height="200"][data-nuxt-img=""]`
+- `a[href$="apple-airpods-5/"] > .image-container[data-v-e4fb5de4=""] > img[height="200"][data-nuxt-img=""]`
 
 ### <li> elements must be contained in a <ul> or <ol>
 
@@ -52,16 +50,18 @@
 - **Description:** Ensure <li> elements are used semantically
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/listitem?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 6
+- **Count:** 8
 
 #### Affected Elements:
 
-- `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(1) > .main-stock.stock[size="14px"]`
-- `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(2) > .main-stock.stock[size="14px"]`
-- `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(3) > .main-stock.stock[size="14px"]`
-- `.border.margin-bottom-2xs[ondragstart="return false"]:nth-child(4) > .main-stock.stock[size="14px"]`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(1) > .card-top-content[data-v-89afb171=""] > div[data-v-f9604989=""] > .regular-usp-list[data-v-f9604989=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-f9604989=""] > .tn-listitem.content-m[data-v-eeeb18ea=""]`
-- `.shadow-s-hover.border-radius-m.subscription-card-skeleton:nth-child(2) > .card-top-content[data-v-89afb171=""] > div[data-v-f9604989=""] > .regular-usp-list[data-v-f9604989=""] > .tn-list.content-list[data-v-797e5417=""] > div[data-v-f9604989=""] > .tn-listitem.content-m[data-v-eeeb18ea=""]`
+- `.swiper-slide-active > .spotlight-product-card[ondragstart="return false"][draggable="false"] > .main-stock.stock[size="14px"]`
+- `.swiper-slide-next > .spotlight-product-card[ondragstart="return false"][draggable="false"] > .main-stock.stock[size="14px"]`
+- `.swiper-slide.spotlight-slide[data-v-9528d48a=""]:nth-child(3) > .spotlight-product-card[ondragstart="return false"][draggable="false"] > .main-stock.stock[size="14px"]`
+- `.swiper-slide.spotlight-slide[data-v-9528d48a=""]:nth-child(4) > .spotlight-product-card[ondragstart="return false"][draggable="false"] > .main-stock.stock[size="14px"]`
+- `.swiper-slide.spotlight-slide[data-v-9528d48a=""]:nth-child(5) > .spotlight-product-card[ondragstart="return false"][draggable="false"] > .main-stock.stock[size="14px"]`
+- `.swiper-slide.spotlight-slide[data-v-9528d48a=""]:nth-child(6) > .spotlight-product-card[ondragstart="return false"][draggable="false"] > .main-stock.stock[size="14px"]`
+- `.swiper-slide.spotlight-slide[data-v-9528d48a=""]:nth-child(7) > .spotlight-product-card[ondragstart="return false"][draggable="false"] > .main-stock.stock[size="14px"]`
+- `a[href$="apple-airpods-5/"] > .main-stock.stock[size="14px"]`
 
 ### All page content should be contained by landmarks
 
@@ -78,3 +78,15 @@
 - `#freetext-top > .two-buttons`
 - `.showConsentPreferences`
 - `#privacy_prompt_bottom`
+
+### [role="img"] elements must have alternative text
+
+- **Impact:** serious
+- **Description:** Ensure [role="img"] elements have alternative text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/role-img-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.hero-banner`

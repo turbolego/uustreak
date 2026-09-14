@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordvik & Partners Eiendomsmegling AS
 
-**Timestamp:** 2026-09-07T07:01:47.414Z
+**Timestamp:** 2026-09-14T08:23:53.060Z
 **URL:** [https://www.nordvik.no/](https://www.nordvik.no/)
 **Total Violations:** 4
 
@@ -49,7 +49,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 16
+- **Count:** 15
 
 #### Affected Elements:
 
@@ -68,4 +68,3 @@
 - `.my-2`
 - `.pt-3`
 - `.md\:flex-row.gap-8.flex-col > .flex-1`
-- `#nordvik-widget-root,#nw-hint`

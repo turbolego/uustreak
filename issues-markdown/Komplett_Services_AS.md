@@ -1,8 +1,8 @@
 # WCAG Violations Report for Komplett Services AS
 
-**Timestamp:** 2026-09-07T07:36:09.071Z
+**Timestamp:** 2026-09-14T08:22:31.358Z
 **URL:** [https://www.komplett.no/](https://www.komplett.no/)
-**Total Violations:** 9
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -16,45 +16,12 @@
 
 #### Affected Elements:
 
-- `a[aria-label="1 / 6"]`
+- `.swiper-slide-duplicate-prev:nth-child(1)`
+- `a[aria-label="2 / 6"]`
 - `.swiper-slide-prev`
 - `.swiper-slide-active`
 - `.swiper-slide-next`
-- `a[aria-label="5 / 6"]`
 - `a[aria-label="6 / 6"]`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 2
-
-#### Affected Elements:
-
-- `#Uke\ 37,komplett-product-card:nth-child(1),komplett-h5,h5`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card:nth-child(1),komplett-h5,h5`
-
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 9
-
-#### Affected Elements:
-
-- `komplett-thumbnail-navigation,img[alt="Ukens tilbud"]`
-- `komplett-thumbnail-navigation,img[alt="Datautstyr"]`
-- `komplett-thumbnail-navigation,img[alt="Gaming"]`
-- `komplett-thumbnail-navigation,img[alt="PC & tilbehør"]`
-- `komplett-thumbnail-navigation,img[alt="Komplett-PC"]`
-- `komplett-thumbnail-navigation,img[alt="Mobil, tablets & klokker"]`
-- `komplett-thumbnail-navigation,img[alt="TV, lyd & bilde"]`
-- `komplett-thumbnail-navigation,img[alt="Hjem & fritid"]`
-- `komplett-thumbnail-navigation,img[alt="Hvitevarer"]`
 
 ### Form elements should have a visible label
 
@@ -94,18 +61,6 @@
 
 - `#coiOverlay`
 
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.rte-content > div > p > a`
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
@@ -120,35 +75,3 @@
 - `.universal-selling-points--item:nth-child(2) > .universal-selling-points--link > span:nth-child(1)`
 - `.universal-selling-points--item:nth-child(3) > .universal-selling-points--link > span:nth-child(1)`
 - `.chat__menu-title`
-
-### [role="img"] elements must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure [role="img"] elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/role-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 21
-
-#### Affected Elements:
-
-- `#Uke\ 37,komplett-product-card:nth-child(1),komplett-product-card-rating[reviewcount="3"][score="5"],komplett-review-rating-stars[score="5"]`
-- `#Uke\ 37,komplett-product-card:nth-child(2),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `#Uke\ 37,komplett-product-card:nth-child(3),komplett-product-card-rating[score="4.8"][reviewcount="5"],komplett-review-rating-stars[score="4.8"]`
-- `#Uke\ 37,komplett-product-card:nth-child(4),komplett-product-card-rating[reviewcount="4"],komplett-review-rating-stars[score="3.75"]`
-- `#Uke\ 37,komplett-product-card:nth-child(5),komplett-product-card-rating[reviewcount="8"],komplett-review-rating-stars[score="3.5"]`
-- `#Uke\ 37,komplett-product-card:nth-child(6),komplett-product-card-rating[reviewcount="11"],komplett-review-rating-stars[score="4.3636"]`
-- `#Uke\ 37,komplett-product-card:nth-child(7),komplett-product-card-rating[reviewcount="81"],komplett-review-rating-stars[score="3.9506"]`
-- `#Uke\ 37,komplett-product-card:nth-child(8),komplett-product-card-rating[reviewcount="253"],komplett-review-rating-stars[score="4.2925"]`
-- `#Uke\ 37,komplett-product-card:nth-child(9),komplett-product-card-rating[score="4.6923"][reviewcount="13"],komplett-review-rating-stars[score="4.6923"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card:nth-child(1),komplett-product-card-rating[score="4.2"][reviewcount="5"],komplett-review-rating-stars[score="4.2"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card:nth-child(2),komplett-product-card-rating[reviewcount="15"],komplett-review-rating-stars[score="4.6"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card:nth-child(3),komplett-product-card-rating[reviewcount="3"][score="5"],komplett-review-rating-stars[score="5"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card:nth-child(4),komplett-product-card-rating[reviewcount="157"],komplett-review-rating-stars[score="4.6497"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card:nth-child(5),komplett-product-card-rating[score="4.2308"][reviewcount="13"],komplett-review-rating-stars[score="4.2308"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card:nth-child(6),komplett-product-card-rating[reviewcount="0"][score="0"],komplett-review-rating-stars[score="0"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card:nth-child(7),komplett-product-card-rating[reviewcount="1"],komplett-review-rating-stars[score="5"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card:nth-child(8),komplett-product-card-rating[reviewcount="22"],komplett-review-rating-stars[score="4.3182"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card:nth-child(9),komplett-product-card-rating[reviewcount="42"],komplett-review-rating-stars[score="4.5"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card:nth-child(10),komplett-product-card-rating[reviewcount="46"],komplett-review-rating-stars[score="4.2609"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card:nth-child(11),komplett-product-card-rating[reviewcount="53"],komplett-review-rating-stars[score="4.5094"]`
-- `komplett-algonomy-product-cards[placementid="flex_12_favoriter"],komplett-product-card-container,komplett-product-card:nth-child(12),komplett-product-card-rating[reviewcount="5"][score="5"],komplett-review-rating-stars[score="5"]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for BN Bank ASA
 
-**Timestamp:** 2026-09-07T07:05:09.537Z
+**Timestamp:** 2026-09-14T08:15:47.128Z
 **URL:** [https://www.bnbank.no/](https://www.bnbank.no/)
 **Total Violations:** 5
 
@@ -48,10 +48,10 @@
 #### Affected Elements:
 
 - `.navigation__direct-login--desktop > .navigation__login-button.btn.btn-secondary > .navigation__login-button--desktop[aria-hidden="True"][alt=""]`
-- `#nytt-i-mobilbanken > .content-card--image-above.content-card__content-wrapper > .content-card__icon > img[aria-hidden="True"][alt=""]`
-- `#hvor-mye-kan-du-låne-til-drømmeboligen\? > .content-card--image-above.content-card__content-wrapper > .content-card__icon > img[aria-hidden="True"][alt=""]`
-- `#hvor-mye-må-du-spare-for-å-nå-målet-ditt\? > .content-card--image-above.content-card__content-wrapper > .content-card__icon > img[aria-hidden="True"][alt=""]`
-- `#hva-vil-en-renteendring-bety-for-deg\? > .content-card--image-above.content-card__content-wrapper > .content-card__icon > img[aria-hidden="True"][alt=""]`
+- `#nytt-i-mobilbanken > .content-card--image-above.content-card__content-wrapper > .content-card__icon.icon-size--small > img[aria-hidden="True"][alt=""]`
+- `#hvor-mye-kan-du-låne-til-drømmeboligen\? > .content-card--image-above.content-card__content-wrapper > .content-card__icon.icon-size--small > img[aria-hidden="True"][alt=""]`
+- `#hvor-mye-må-du-spare-for-å-nå-målet-ditt\? > .content-card--image-above.content-card__content-wrapper > .content-card__icon.icon-size--small > img[aria-hidden="True"][alt=""]`
+- `#hva-vil-en-renteendring-bety-for-deg\? > .content-card--image-above.content-card__content-wrapper > .content-card__icon.icon-size--small > img[aria-hidden="True"][alt=""]`
 
 ### All page content should be contained by landmarks
 

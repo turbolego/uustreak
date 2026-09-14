@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestre Viken HF
 
-**Timestamp:** 2026-09-07T07:32:29.348Z
+**Timestamp:** 2026-09-14T08:32:44.970Z
 **URL:** [https://www.vestreviken.no/](https://www.vestreviken.no/)
 **Total Violations:** 1
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 5
+- **Count:** 4
 
 #### Affected Elements:
 
@@ -20,4 +20,3 @@
 - `._cookieconsent__description_af7bfec`
 - `._cookieconsent__withdraw_a4a6e02`
 - `.skiplink`
-- `body > .infomeldinger`

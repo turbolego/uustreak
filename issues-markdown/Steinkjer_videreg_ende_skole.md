@@ -1,6 +1,6 @@
 # WCAG Violations Report for Steinkjer videregående skole
 
-**Timestamp:** 2026-09-07T07:16:46.272Z
+**Timestamp:** 2026-09-14T08:28:30.703Z
 **URL:** [https://web.trondelagfylke.no/steinkjer-videregaende-skole](https://web.trondelagfylke.no/steinkjer-videregaende-skole)
 **Total Violations:** 4
 
@@ -49,14 +49,8 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 7
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.hero-image`
-- `section`
-- `.card-grid.card-grid--equal-height:nth-child(3)`
-- `.card-grid.card-grid--equal-height:nth-child(4)`
-- `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(1)`
-- `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(2) > .card.card-grid--equal-height > .card__tag`
-- `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(3)`
+- `#main-content > .l-container`

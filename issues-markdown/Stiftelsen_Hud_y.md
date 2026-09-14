@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Hudøy
 
-**Timestamp:** 2026-09-07T07:18:07.443Z
+**Timestamp:** 2026-09-14T08:48:59.077Z
 **URL:** [https://hudoy.no/](https://hudoy.no/)
 **Total Violations:** 5
 
@@ -63,7 +63,7 @@
 - `a[href$="ferdernasjonalpark.no/"]`
 - `a[href$="scheibler.no/"]`
 - `.avia-builder-el-53 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
-- `.avia-builder-el-55 > .avia-image-container-inner > .avia-image-overlay-wrap > .avia_image[rel="noopener noreferrer"][target="_blank"]`
+- `a[href$="pecunia.no/"]`
 - `a[href$="deichman.no/"]`
 - `div:nth-child(1) > .alignleft[rel="noopener"][target="_blank"]`
 - `div:nth-child(2) > .alignleft[rel="noopener"][target="_blank"]`

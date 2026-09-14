@@ -1,8 +1,8 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-09-07T07:14:55.385Z
+**Timestamp:** 2026-09-14T08:28:16.172Z
 **URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -17,18 +17,6 @@
 #### Affected Elements:
 
 - `iframe[title="Tips oss"], .headline`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#application`
 
 ### Links must have discernible text
 
@@ -53,9 +41,9 @@
 
 #### Affected Elements:
 
-- `track-element[data-track-id="teaser:113406"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
-- `audio-play-button[title="Saken om SUS\a og Bravida"]`
-- `track-element[data-track-id="teaser:113395"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
+- `track-element[data-track-id="teaser:113453"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
+- `audio-play-button[title="Milliongutten"]`
+- `track-element[data-track-id="teaser:113432"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
 
 ### All page content should be contained by landmarks
 

@@ -1,10 +1,22 @@
 # WCAG Violations Report for Ålesund kommune
 
-**Timestamp:** 2026-09-07T07:34:17.275Z
+**Timestamp:** 2026-09-14T08:13:36.821Z
 **URL:** [https://alesund.kommune.no/](https://alesund.kommune.no/)
-**Total Violations:** 1
+**Total Violations:** 2
 
 ## Violation Details
+
+### Documents must have <title> element to aid in navigation
+
+- **Impact:** serious
+- **Description:** Ensure each HTML document contains a non-empty <title> element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/document-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag242, TTv5, TT12.a, EN-301-549, EN-9.2.4.2, ACT, RGAAv4, RGAA-8.5.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `html`
 
 ### Alternative text of images should not be repeated as text
 

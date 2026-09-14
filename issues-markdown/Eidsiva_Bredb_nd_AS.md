@@ -1,6 +1,6 @@
 # WCAG Violations Report for Eidsiva Bredbånd AS
 
-**Timestamp:** 2026-09-07T07:17:27.507Z
+**Timestamp:** 2026-09-14T08:17:57.812Z
 **URL:** [https://www.eidsiva.no/](https://www.eidsiva.no/)
 **Total Violations:** 6
 
@@ -12,13 +12,11 @@
 - **Description:** Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/label-title-only?application=playwright
 - **Tags:** cat.forms, best-practice
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#cookie_cat_functional`
 - `#cookie_cat_statistic`
-- `#cookie_cat_marketing`
 
 ### Main landmark should not be contained in another landmark
 

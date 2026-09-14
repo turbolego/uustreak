@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-09-07T07:17:14.327Z
+**Timestamp:** 2026-09-14T08:39:05.490Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 2
 
@@ -47,11 +47,11 @@
 - `#promotional-375939547c80 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-375939547c80 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-ab618830f8b6`
-- `#image-render-58f30bbef7 > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
+- `#image-render-58f30bbef7 > .cmp-image__image[height="2560"][loading="lazy"]`
 - `#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-39d407479b23 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-aac543142676`
-- `#image-render-d226705429 > .cmp-image__image[loading="lazy"][itemprop="contentUrl"]`
+- `#image-render-d226705429 > .cmp-image__image[height="2560"][loading="lazy"]`
 - `#promotional-283aef72eff8 > .up-promotional-banner__content > .up-promotional-banner__content-heading[aria-level="2"][role="heading"]`
 - `#promotional-283aef72eff8 > .up-promotional-banner__content > .up-promotional-banner__content-description[data-analytics-text-click=""]`
 - `#button-1296c62e5384`

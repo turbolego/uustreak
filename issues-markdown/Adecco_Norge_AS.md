@@ -1,8 +1,8 @@
 # WCAG Violations Report for Adecco Norge AS
 
-**Timestamp:** 2026-09-07T06:58:21.903Z
+**Timestamp:** 2026-09-14T08:12:59.181Z
 **URL:** [https://www.adecco.com/nb-no](https://www.adecco.com/nb-no)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -37,6 +37,18 @@
 - `img[width="5700"]`
 - `.tile-solutions-icon.icon-accent[aria-label=""]`
 - `.SWPImage_islhh-image__Hi_E2`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#onetrust-banner-sdk`
 
 ### Elements should not have tabindex greater than zero
 

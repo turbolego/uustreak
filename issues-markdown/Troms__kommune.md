@@ -1,8 +1,8 @@
 # WCAG Violations Report for Tromsø kommune
 
-**Timestamp:** 2026-09-07T07:25:23.053Z
+**Timestamp:** 2026-09-14T08:30:15.629Z
 **URL:** [https://www.tromso.kommune.no/](https://www.tromso.kommune.no/)
-**Total Violations:** 4
+**Total Violations:** 2
 
 ## Violation Details
 
@@ -19,30 +19,6 @@
 - `#splide01-slide01`
 - `#splide01-slide02`
 - `#splide01-slide03`
-
-### Document should not have more than one banner landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the document has at most one banner landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-no-duplicate-banner?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `header`
-
-### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
-
-- **Impact:** moderate
-- **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `header`
 
 ### All page content should be contained by landmarks
 
