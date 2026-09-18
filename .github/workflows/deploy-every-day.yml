@@ -16,7 +16,7 @@ jobs:
   # Setup job (no gate-keeper needed for daily runs)
   # ──────────────────────────────────────────────────────────
   setup:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
@@ -89,7 +89,7 @@ jobs:
 
   wcag-test:
     needs: setup
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     strategy:
       matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
       fail-fast: false
@@ -229,7 +229,7 @@ jobs:
 
   merge-summaries:
     needs: wcag-test
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     if: success()
     steps:
       - name: Checkout repository
@@ -306,7 +306,7 @@ jobs:
 
   deploy:
     needs: [wcag-test, merge-summaries]
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     if: success()
     environment:
       name: github-pages
