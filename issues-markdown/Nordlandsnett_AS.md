@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordlandsnett AS
 
-**Timestamp:** 2026-09-14T08:44:34.743Z
+**Timestamp:** 2026-09-19T19:44:00.746Z
 **URL:** [https://arva.no/hjem](https://arva.no/hjem)
 **Total Violations:** 5
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `a[href="/?id=1652165763"] > .image-default[loading="lazy"][data-aspect="1"]`
+- `a[href$="nettjenester"][data-target-set="1"] > .image-default[loading="lazy"][data-aspect="1"]`
 - `a[href="/?id=77442397"] > .image-default[loading="lazy"][data-aspect="1"]`
 - `a[href="/?id=210386988"] > .image-default[loading="lazy"][data-aspect="1"]`
 - `a[href="/?id=695199517"] > .image-default[loading="lazy"][data-aspect="1"]`
@@ -45,7 +45,7 @@
 
 #### Affected Elements:
 
-- `a[href="/?id=1652165763"]`
+- `figure:nth-child(1) > a[href$="nettjenester"][data-target-set="1"]`
 - `a[href="/?id=77442397"]`
 - `a[href="/?id=210386988"]`
 - `a[href="/?id=695199517"]`

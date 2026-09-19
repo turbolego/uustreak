@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kid Interiør AS
 
-**Timestamp:** 2026-09-14T08:21:51.826Z
+**Timestamp:** 2026-09-19T20:12:42.256Z
 **URL:** [https://www.kid.no/](https://www.kid.no/)
 **Total Violations:** 5
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.c7.c6.es > .lk.gs.gt > .gv.gx.gy`
+- `.c7.c6.es > .n3.gs.gt > .gw.gx.gy`
 
 ### Document should not have more than one banner landmark
 
@@ -48,11 +48,12 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
 - `#coiOverlay`
+- `div[data-product="205217628"] > .bk.c.b > .c0.bn.et > .qw.dm[role="region"]`
 
 ### All page content should be contained by landmarks
 
@@ -65,6 +66,6 @@
 #### Affected Elements:
 
 - `#skip-to-main-content`
-- `.b8.bc.b9`
+- `.b8.bc.ba`
 - `.tf-header-slider`
 - `.tf-sidebar`

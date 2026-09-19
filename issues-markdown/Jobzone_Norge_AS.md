@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jobzone Norge AS
 
-**Timestamp:** 2026-09-14T08:20:55.710Z
+**Timestamp:** 2026-09-19T20:11:10.206Z
 **URL:** [https://jobzone.no/](https://jobzone.no/)
 **Total Violations:** 6
 
@@ -24,10 +24,10 @@
 - `.candidate-image > div > div > .container-fluid.frontpage > div:nth-child(1) > span`
 - `.company-tab`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(2) > .box.is-mobile > .left-arrow.link.rusty-red > .rusty-red`
-- `.buttons-href-button[href="/ledige-stillinger/74165"]`
-- `.buttons-href-button[href="/ledige-stillinger/74185"]`
-- `.buttons-href-button[href="/ledige-stillinger/74183"]`
-- `.buttons-href-button[href="/ledige-stillinger/74184"]`
+- `.buttons-href-button[href="/ledige-stillinger/74205"]`
+- `.buttons-href-button[href="/ledige-stillinger/74207"]`
+- `.buttons-href-button[href="/ledige-stillinger/74201"]`
+- `.buttons-href-button[href="/ledige-stillinger/74200"]`
 - `.button-component`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .jobseeker.is-marginless.is-multiline > h5`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .company.is-marginless.colums > h5`
@@ -79,10 +79,10 @@
 - `a[href$="registrering/"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
 - `.page-link.colums:nth-child(3) > a[href$="avdelinger/"] > .is-mobile.columns > .page-link-icon.is-narrow.column > img`
 - `.page-link.colums:nth-child(3) > a[href$="avdelinger/"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
-- `div[data-position-id="74165"] > img`
-- `div[data-position-id="74185"] > img`
-- `div[data-position-id="74183"] > img`
-- `div[data-position-id="74184"] > img`
+- `div[data-position-id="74205"] > img`
+- `div[data-position-id="74207"] > img`
+- `div[data-position-id="74201"] > img`
+- `div[data-position-id="74200"] > img`
 - `img[src$="House.svg"]`
 - `.is-6.is-12-mobile.column:nth-child(2) > img[src$="Article.svg"][type="image/svg+xml"]`
 - `.information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(3) > img[type="image/svg+xml"]`

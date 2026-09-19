@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-09-14T08:29:42.199Z
+**Timestamp:** 2026-09-19T20:01:08.213Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 5
 
@@ -22,31 +22,31 @@
 - `.contents[href="/no/bolig?location=felles"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `.contents[href="/no/trening?location=bergen"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `a[href$="kurs"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
-- `.flex-col-reverse.overflow-hidden.md\:items-stretch:nth-child(1) > .lg\:min-w-\[27rem\].p-8.md\:py-16 > .contents[target="_self"] > .btn-primary.btn-lg[type="button"] > .md\:text-body_large.flex-row.justify-between > .text-base-white.svelte-nqw3qe.font-light`
-- `.md\:flex-row-reverse > .lg\:min-w-\[27rem\].p-8.md\:py-16 > .contents[target="_self"] > .btn-primary.btn-lg[type="button"] > .md\:text-body_large.flex-row.justify-between > .text-base-white.svelte-nqw3qe.font-light`
+- `.flex-col-reverse.overflow-hidden.md\:items-stretch:nth-child(1) > .lg\:min-w-\[27rem\].p-8.md\:py-16 > .contents[target="_self"] > .btn-primary.btn-lg[type="button"] > .md\:text-body_large.flex-row.justify-between > .text-base-white.font-light.svelte-nqw3qe`
+- `.md\:flex-row-reverse > .lg\:min-w-\[27rem\].p-8.md\:py-16 > .contents[target="_self"] > .btn-primary.btn-lg[type="button"] > .md\:text-body_large.flex-row.justify-between > .text-base-white.font-light.svelte-nqw3qe`
 - `h1`
-- `a[href$="bolig"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="studentliv"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="karriere"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="trening"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="helse"]:nth-child(5) > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="barnehage"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="mat-og-drikke"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="psykisk-helse"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="studentgoder"] > .text-base-white.svelte-nqw3qe.font-light`
+- `a[href$="bolig"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="studentliv"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="karriere"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="trening"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="helse"]:nth-child(5) > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="barnehage"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="mat-og-drikke"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="psykisk-helse"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="studentgoder"] > .text-base-white.font-light.svelte-nqw3qe`
 - `.whitespace-nowrap.pb-4.font-semibold`
-- `.gap-3[href$="artikkel"][target="_self"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="om-sammen"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="aapningstider"] > .text-base-white.svelte-nqw3qe.font-light`
-- `.md\:pt-0.md\:pl-2.pt-4:nth-child(2) > .gap-y-4.grid-cols-1.grid > .whitespace-nowrap.gap-3[target="_self"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="hjelp-og-dialog"] > .text-base-white.svelte-nqw3qe.font-light`
-- `.gap-3.h-fit[target="_blank"]:nth-child(2) > .text-base-white.svelte-nqw3qe.font-light`
-- `.gap-3.h-fit[target="_blank"]:nth-child(3) > .text-base-white.svelte-nqw3qe.font-light`
-- `.md\:pt-0.md\:pl-2.pt-4:nth-child(3) > .gap-y-4.grid-cols-1.grid > .gap-3.h-fit[target="_self"]:nth-child(4) > .text-base-white.svelte-nqw3qe.font-light`
+- `.gap-3[href$="artikkel"][target="_self"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="om-sammen"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="aapningstider"] > .text-base-white.font-light.svelte-nqw3qe`
+- `.md\:pt-0.md\:pl-2.pt-4:nth-child(2) > .gap-y-4.grid-cols-1.grid > .whitespace-nowrap.gap-3[target="_self"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="hjelp-og-dialog"] > .text-base-white.font-light.svelte-nqw3qe`
+- `.gap-3.h-fit[target="_blank"]:nth-child(2) > .text-base-white.font-light.svelte-nqw3qe`
+- `.gap-3.h-fit[target="_blank"]:nth-child(3) > .text-base-white.font-light.svelte-nqw3qe`
+- `.md\:pt-0.md\:pl-2.pt-4:nth-child(3) > .gap-y-4.grid-cols-1.grid > .gap-3.h-fit[target="_self"]:nth-child(4) > .text-base-white.font-light.svelte-nqw3qe`
 - `.border-b.border-base-white.cursor-pointer`
 - `.grow-0`
-- `a[href$="personvern"] > .text-base-white.svelte-nqw3qe.font-light`
-- `.border-b.border-base-white.gap-3:nth-child(2) > .text-base-white.svelte-nqw3qe.font-light`
+- `a[href$="personvern"] > .text-base-white.font-light.svelte-nqw3qe`
+- `.border-b.border-base-white.gap-3:nth-child(2) > .text-base-white.font-light.svelte-nqw3qe`
 
 ### Heading levels should only increase by one
 
@@ -58,8 +58,8 @@
 
 #### Affected Elements:
 
-- `a[aria-label="Finn din studentbolig"] > .md\:items-start.md\:flex-row.flex-col > .md\:grow > .font-semibold.text-gray-900`
-- `a[href$="alle-studenter"] > .pt-2.pb-2.px-2 > .text-sm.line-clamp-2.py-0`
+- `a[aria-label="Finn din studentbolig"] > .md\:items-start.md\:flex-row.flex-col > .md\:grow > .font-semibold`
+- `a[href$="alle-studenter"] > .pt-2.pb-2.px-2 > .text-sm.leading-tight.line-clamp-2`
 
 ### Document should have one main landmark
 
@@ -99,7 +99,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 39
+- **Count:** 26
 
 #### Affected Elements:
 
@@ -113,30 +113,17 @@
 - `.md\:flex-row-reverse > .md\:h-auto.md\:self-stretch.md\:z-0`
 - `h1`
 - `.mb-1`
-- `#carousel0`
-- `img[alt="bilder av studenter i Bergen"]`
-- `a[href$="ny-student-bergen"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\:leading-snug.text-xs`
-- `a[href$="ny-student-bergen"] > .pt-2.pb-2.px-2`
-- `#carousel2 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .h-44.object-cover[draggable="false"]`
-- `#carousel2 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\:leading-snug.text-xs`
-- `#carousel2 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .pt-2.pb-2.px-2`
-- `#carousel3 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .h-44.object-cover[draggable="false"]`
-- `#carousel3 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .relative.h-fit > .absolute.bottom-0.left-3 > .gap-1.items-center.flex > .text-superTitle.md\:leading-snug.text-xs`
-- `#carousel3 > .w-\[70vw\].md\:w-72.min-w-\[70vw\] > .grow.rounded-t-lg[target="_self"] > .pt-2.pb-2.px-2`
-- `#carousel4`
-- `#carousel5`
-- `#carousel6`
-- `#carousel7`
+- `.left-\[-4px\]`
 - `div:nth-child(1) > .\!font-bold.pb-4`
-- `a[href$="bolig"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="studentliv"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="karriere"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="trening"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="helse"]:nth-child(5) > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="barnehage"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="mat-og-drikke"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="psykisk-helse"] > .text-base-white.svelte-nqw3qe.font-light`
-- `a[href$="studentgoder"] > .text-base-white.svelte-nqw3qe.font-light`
+- `a[href$="bolig"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="studentliv"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="karriere"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="trening"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="helse"]:nth-child(5) > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="barnehage"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="mat-og-drikke"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="psykisk-helse"] > .text-base-white.font-light.svelte-nqw3qe`
+- `a[href$="studentgoder"] > .text-base-white.font-light.svelte-nqw3qe`
 - `.md\:pt-0.md\:pl-2.pt-4:nth-child(2)`
 - `.md\:pt-0.md\:pl-2.pt-4:nth-child(3)`
 - `.border-t > div:nth-child(1)`

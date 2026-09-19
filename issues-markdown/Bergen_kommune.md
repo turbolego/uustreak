@@ -1,7 +1,7 @@
-# WCAG Violations Report for Arendal kommune
+# WCAG Violations Report for Bergen kommune
 
-**Timestamp:** 2026-09-19T19:43:31.230Z
-**URL:** [https://www.arendal.kommune.no/](https://www.arendal.kommune.no/)
+**Timestamp:** 2026-09-19T19:47:45.319Z
+**URL:** [https://www.bergen.kommune.no/](https://www.bergen.kommune.no/)
 **Total Violations:** 1
 
 ## Violation Details
@@ -16,4 +16,4 @@
 
 #### Affected Elements:
 
-- `img`
+- `.teaser__image`

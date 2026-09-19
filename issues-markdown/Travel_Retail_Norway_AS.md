@@ -1,8 +1,8 @@
 # WCAG Violations Report for Travel Retail Norway AS
 
-**Timestamp:** 2026-09-14T08:31:05.203Z
+**Timestamp:** 2026-09-19T20:04:58.241Z
 **URL:** [https://www.tax-free.no/no/](https://www.tax-free.no/no/)
-**Total Violations:** 7
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -12,11 +12,12 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
 - `.message-heading`
+- `.media-banner_container_text-position_BOTTOM_RIGHT > .subtitle`
 
 ### Banner landmark should not be contained in another landmark
 
@@ -54,6 +55,74 @@
 
 - `.cx-header`
 - `trn-footer-links-navigation > nav[aria-label="Navigasjon i bunntekst"]`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 57
+
+#### Affected Elements:
+
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1769598"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1783610"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1777717"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1780559"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1746146"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1783569"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1783399"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1783405"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1640316"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1184600"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1771581"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1777754"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1777731"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1783177"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1772028"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1783640"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1783335"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1783468"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1777589"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1780558"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1772037"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1584510"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1610977"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1778029"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1783172"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789443"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789444"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789445"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789431"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789432"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789464"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789398"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789399"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789430"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789397"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789433"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789434"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789435"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789436"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789442"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789437"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789439"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789440"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789473"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789467"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="850593"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1620594"][href$="smash-xxl"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1687774"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1625512"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1694087"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1625510"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1374037"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1723423"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1625509"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1625507"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1625508"][href$="freia-daim"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1625511"]`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 

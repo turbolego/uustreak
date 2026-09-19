@@ -1,6 +1,6 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2026-09-14T08:16:40.082Z
+**Timestamp:** 2026-09-19T19:50:57.104Z
 **URL:** [https://www.coop.no/](https://www.coop.no/)
 **Total Violations:** 5
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.im > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .ii.ik.ij > .il > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.j0 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .iw.iy.ix > .iz > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### ARIA attributes must conform to valid values
 
@@ -30,8 +30,8 @@
 #### Affected Elements:
 
 - `input[role="searchbox"]`
-- `.im > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .ii.ik.ij > .il > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.j0 > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .iw.iy.ix > .iz > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### Headings should not be empty
 
@@ -43,7 +43,7 @@
 
 #### Affected Elements:
 
-- `.hw`
+- `.ia`
 - `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .ee.am.cj > .ef.eh.ei`
 
 ### Frames must have an accessible name
@@ -69,5 +69,5 @@
 
 #### Affected Elements:
 
-- `.ki.kj.kk:nth-child(1)`
-- `.ki.kj.kk:nth-child(2)`
+- `.ks.kt.ku:nth-child(1)`
+- `.ks.kt.ku:nth-child(2)`

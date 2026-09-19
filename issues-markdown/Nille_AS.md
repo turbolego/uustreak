@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2026-09-14T08:23:41.926Z
+**Timestamp:** 2026-09-19T19:42:57.415Z
 **URL:** [https://www.nille.no/](https://www.nille.no/)
 **Total Violations:** 6
 
@@ -24,7 +24,7 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 22
+- **Count:** 20
 
 #### Affected Elements:
 
@@ -43,13 +43,11 @@
 - `.swiper-slide:nth-child(13) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(14) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(15) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
-- `.swiper-slide:nth-child(16) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(17) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(18) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(19) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(20) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(21) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
-- `.swiper-slide:nth-child(22) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 
 ### Document should not have more than one banner landmark
 
@@ -85,8 +83,8 @@
 
 #### Affected Elements:
 
-- `div[data-swiper-slide-index="0"] > a[title=""][data-discover="true"][aria-label=""]`
 - `.swiper-slide-prev > a[title=""][data-discover="true"][aria-label=""]`
+- `div[data-swiper-slide-index="1"] > a[title=""][data-discover="true"][aria-label=""]`
 
 ### All page content should be contained by landmarks
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Komplett Services AS
 
-**Timestamp:** 2026-09-14T08:22:31.358Z
+**Timestamp:** 2026-09-19T20:13:27.963Z
 **URL:** [https://www.komplett.no/](https://www.komplett.no/)
 **Total Violations:** 5
 
@@ -12,16 +12,25 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 6
+- **Count:** 15
 
 #### Affected Elements:
 
-- `.swiper-slide-duplicate-prev:nth-child(1)`
+- `a[aria-label="1 / 6"]`
 - `a[aria-label="2 / 6"]`
-- `.swiper-slide-prev`
-- `.swiper-slide-active`
-- `.swiper-slide-next`
+- `a[aria-label="3 / 6"]`
+- `a[aria-label="4 / 6"]`
+- `a[aria-label="5 / 6"]`
 - `a[aria-label="6 / 6"]`
+- `a[aria-label="1 / 9"]`
+- `a[aria-label="2 / 9"]`
+- `a[aria-label="3 / 9"]`
+- `a[aria-label="4 / 9"]`
+- `a[aria-label="5 / 9"]`
+- `a[aria-label="6 / 9"]`
+- `a[aria-label="7 / 9"]`
+- `a[aria-label="8 / 9"]`
+- `a[aria-label="9 / 9"]`
 
 ### Form elements should have a visible label
 

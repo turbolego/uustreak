@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kuben videregående skole
 
-**Timestamp:** 2026-09-14T08:23:03.884Z
+**Timestamp:** 2026-09-19T20:15:27.723Z
 **URL:** [https://kuben.vgs.no/](https://kuben.vgs.no/)
 **Total Violations:** 5
 
@@ -17,7 +17,7 @@
 #### Affected Elements:
 
 - `.col-lg-4.col-md-6.col-12:nth-child(1) > .factbox.factbox--white > .factbox__content.text-break > p:nth-child(1) > iframe, .ytmVideoInfoVideoTitle`
-- `.col-lg-4.col-md-6.col-12:nth-child(2) > .factbox.factbox--white > .factbox__content.text-break > p:nth-child(1) > iframe, .ytmVideoInfoVideoTitle`
+- `iframe[title="YouTube-video"], .ytmVideoInfoVideoTitle`
 
 ### Elements must only use permitted ARIA attributes
 
@@ -30,7 +30,7 @@
 #### Affected Elements:
 
 - `.col-lg-4.col-md-6.col-12:nth-child(1) > .factbox.factbox--white > .factbox__content.text-break > p:nth-child(1) > iframe, #movie_player`
-- `.col-lg-4.col-md-6.col-12:nth-child(2) > .factbox.factbox--white > .factbox__content.text-break > p:nth-child(1) > iframe, #movie_player`
+- `iframe[title="YouTube-video"], #movie_player`
 
 ### Buttons must have discernible text
 
@@ -43,7 +43,7 @@
 #### Affected Elements:
 
 - `.col-lg-4.col-md-6.col-12:nth-child(1) > .factbox.factbox--white > .factbox__content.text-break > p:nth-child(1) > iframe, .ytmVideoInfoChannelAvatar`
-- `.col-lg-4.col-md-6.col-12:nth-child(2) > .factbox.factbox--white > .factbox__content.text-break > p:nth-child(1) > iframe, .ytmVideoInfoChannelAvatar`
+- `iframe[title="YouTube-video"], .ytmVideoInfoChannelAvatar`
 
 ### Frames must have an accessible name
 
@@ -51,12 +51,11 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
 - `.col-lg-4.col-md-6.col-12:nth-child(1) > .factbox.factbox--white > .factbox__content.text-break > p:nth-child(1) > iframe`
-- `.col-lg-4.col-md-6.col-12:nth-child(2) > .factbox.factbox--white > .factbox__content.text-break > p:nth-child(1) > iframe`
 
 ### All page content should be contained by landmarks
 

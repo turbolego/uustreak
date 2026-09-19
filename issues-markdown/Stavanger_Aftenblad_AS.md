@@ -1,8 +1,8 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-09-14T08:28:16.172Z
+**Timestamp:** 2026-09-19T19:56:35.684Z
 **URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -18,19 +18,6 @@
 
 - `iframe[title="Tips oss"], .headline`
 
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `._logos_e3b6k_158 > a[href$="aftenbladet.no/"]`
-- `._logos_e3b6k_158 > a[target="_blank"][data-astro-cid-5km4f4xx=""]`
-
 ### Interactive controls must not be nested
 
 - **Impact:** serious
@@ -41,9 +28,9 @@
 
 #### Affected Elements:
 
-- `track-element[data-track-id="teaser:113453"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
-- `audio-play-button[title="Milliongutten"]`
-- `track-element[data-track-id="teaser:113432"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
+- `track-element[data-track-id="teaser:113459"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
+- `track-element[data-track-id="teaser:113474"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
+- `track-element[data-track-id="teaser:113458"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
 
 ### All page content should be contained by landmarks
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sola Strand Hotel
 
-**Timestamp:** 2026-09-14T08:47:34.173Z
+**Timestamp:** 2026-09-19T19:54:21.442Z
 **URL:** [https://www.solastrandhotel.no/](https://www.solastrandhotel.no/)
 **Total Violations:** 5
 
@@ -12,12 +12,11 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video.ready, body`
-- `div[data-config-url="https://vimeo.com/1043637275"] > div > .background-video.ready, body`
+- `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video, body`
 
 ### Certain ARIA roles must contain particular children
 
@@ -41,7 +40,7 @@
 
 #### Affected Elements:
 
-- `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video.ready, html`
+- `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video, html`
 
 ### Heading levels should only increase by one
 

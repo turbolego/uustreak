@@ -1,10 +1,22 @@
 # WCAG Violations Report for Biltema AS
 
-**Timestamp:** 2026-09-14T08:15:29.980Z
+**Timestamp:** 2026-09-19T19:48:53.889Z
 **URL:** [https://www.biltema.no/](https://www.biltema.no/)
-**Total Violations:** 9
+**Total Violations:** 10
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.OEYB7GsXVFgbeSLN0Yrb1Q\=\=`
 
 ### Headings should not be empty
 
@@ -91,11 +103,12 @@
 - **Description:** Ensure <li> elements are used semantically
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/listitem?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.editorial__grid > li`
+- `.editorial__grid > li:nth-child(1)`
+- `.editorial__grid > li:nth-child(2)`
 
 ### Page should contain a level-one heading
 

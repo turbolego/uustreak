@@ -1,10 +1,23 @@
 # WCAG Violations Report for Dagbladet Finnmarken AS
 
-**Timestamp:** 2026-09-14T08:16:28.879Z
+**Timestamp:** 2026-09-19T19:53:29.516Z
 **URL:** [https://www.ifinnmark.no/](https://www.ifinnmark.no/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `a[aria-label="Ledig stilling: Rådgiver"] > .jobad-wrapper > .ad-text > .ad-text_location`
+- `.swiper-slide-next > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
 
 ### Frames must have an accessible name
 
@@ -12,10 +25,13 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 4
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, #adn-sup-0\.841051087099276`
+- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, #adn-sup-0\.841051087099276, iframe[scrolling="no"]`
+- `#google_ads_iframe_\/56257416\/www\.ifinnmark\.no\/toppbanner_0, #adn-sup-0\.841051087099276, body > iframe`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -28,7 +44,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v3[data-slides="3"] > .carousel[aria-label="Innholdskarusell"][role="region"]`
+- `brick-teaser-group-v1[data-color-skin="sport"] > div > brick-carousel-v3 > .carousel[aria-label="Innholdskarusell"][role="region"]`
 
 ### Elements marked as presentational should be consistently ignored
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bærum kommune
 
-**Timestamp:** 2026-09-14T08:14:25.529Z
+**Timestamp:** 2026-09-19T19:50:43.596Z
 **URL:** [https://www.baerum.kommune.no/](https://www.baerum.kommune.no/)
 **Total Violations:** 2
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `div:nth-child(1) > .is-petroleum.article-teaser-block > .pageBoundary > .article-teasers > .article-teaser > .article-teaser__image > img`
+- `.is-petroleum > .pageBoundary > .article-teasers > .article-teaser > .article-teaser__image > img`
 - `.is-peach > .pageBoundary > .article-teasers > .article-teaser > .article-teaser__image > img`
 
 ### Links must have discernible text

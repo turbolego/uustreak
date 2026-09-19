@@ -1,7 +1,7 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-09-14T08:46:07.472Z
-**URL:** [https://www.lydenavnorge.no/p4/](https://www.lydenavnorge.no/p4/)
+**Timestamp:** 2026-09-19T19:49:01.567Z
+**URL:** [https://www.lydenavradio.no/p4/](https://www.lydenavradio.no/p4/)
 **Total Violations:** 7
 
 ## Violation Details
@@ -113,10 +113,10 @@
 
 - `.image-container[data-v-4af17d0f=""] > a[data-v-4af17d0f=""]`
 - `.content-box.compact[data-v-d583c235=""] > .image-link[data-v-d583c235=""]`
-- `.image-link[href$="lyden/"][data-v-f1ce81f5=""]`
+- `.large.contest-box.item > .image-link[data-v-f1ce81f5=""]`
 - `.contest-box.medium-large.item > .image-link[data-v-f1ce81f5=""]`
 - `.image-link[href$="fem-pa/"][data-v-d583c235=""]`
-- `.content-box.medium-large.item:nth-child(2) > .image-link[data-v-d583c235=""]`
+- `.image-link[rel="noopener noreferrer"][target="_blank"]`
 - `.large.section-box.item > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
 - `.small.section-box.item:nth-child(1) > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
 - `.small.section-box.item:nth-child(2) > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
@@ -131,7 +131,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 4
+- **Count:** 5
 
 #### Affected Elements:
 
@@ -139,3 +139,4 @@
 - `.engagement-buttons[data-v-4b932298=""][data-v-c7614d41=""] > .heart-spawner[data-v-7bdbb3dc=""][width="75"]`
 - `.engagement-buttons-disclaimer[data-v-484baac5=""][data-v-c7614d41=""] > p[data-v-484baac5=""]`
 - `.volume-slider`
+- `#onetrust-banner-sdk`

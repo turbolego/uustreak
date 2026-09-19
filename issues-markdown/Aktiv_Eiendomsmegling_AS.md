@@ -1,6 +1,6 @@
 # WCAG Violations Report for Aktiv Eiendomsmegling AS
 
-**Timestamp:** 2026-09-14T08:13:19.756Z
+**Timestamp:** 2026-09-19T19:42:06.890Z
 **URL:** [https://aktiv.no/](https://aktiv.no/)
 **Total Violations:** 7
 
@@ -12,11 +12,10 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.TopBarContent_button__mjoJL`
 - `.slick-next`
 
 ### Elements must meet minimum color contrast ratio thresholds
@@ -25,16 +24,31 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 6
+- **Count:** 8
 
 #### Affected Elements:
 
 - `a[href$="personvern"][rel="noopener"][target="_blank"]`
 - `.cm-purpose:nth-child(1) > .cm-services > .cm-caret > a[href="#"]`
 - `#purpose-item-advertising-description > .cm-list-description > span > span > a[rel="noopener noreferrer"][target="_blank"]`
+- `.cm-purpose:nth-child(2) > .cm-services > .cm-caret > a[href="#"]`
+- `.cm-purpose:nth-child(3) > .cm-services > .cm-caret > a[href="#"]`
 - `.cm-btn-info`
 - `.cm-btn-accept-all`
 - `a[href$="klaro"]`
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#summary-4e5afa88-4847-4840-9815-c4e1889467a6 > h2:nth-child(3)`
+- `#summary-0ea42923-3099-4a8f-826a-62d527a86834 > h2:nth-child(3)`
 
 ### Heading levels should only increase by one
 
@@ -46,25 +60,7 @@
 
 #### Affected Elements:
 
-- `.slick-current > div > .ProjectsSliderContent_item__mTMhQ > .ProjectsSliderContent_link__zdHrB > .ProjectsSliderContent_contentWrapper__r_Ifc > h4`
-
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 7
-
-#### Affected Elements:
-
-- `img[alt="Verdivurdering fra lokalbank"]`
-- `img[alt="Finansiering"]`
-- `img[alt="Kjøpe bolig"]`
-- `img[alt="Selge bolig"]`
-- `img[alt="Finn en megler"]`
-- `img[alt="Verdivurdering"]`
-- `img[alt="Råd & inspirasjon"]`
+- `.slick-current > div > .ProjectsSliderContentV2_item__XyMYZ > .ProjectsSliderContentV2_link__jiC_D.ProjectsSliderContentV2_linkInheritsColor__8yyxz > .ProjectsSliderContentV2_contentWrapper__F2Xkp > .ProjectsSliderContentV2_title__Jz1iE.ProjectsSliderContentV2_addressTitle__hh_pM`
 
 ### <li> elements must be contained in a <ul> or <ol>
 
@@ -76,9 +72,9 @@
 
 #### Affected Elements:
 
-- `.slick-current > div > .ProjectsSliderContent_item__mTMhQ`
-- `div[data-index="1"] > div > .ProjectsSliderContent_item__mTMhQ`
-- `div[data-index="2"] > div > .ProjectsSliderContent_item__mTMhQ`
+- `.slick-current > div > .ProjectsSliderContentV2_item__XyMYZ`
+- `div[data-index="1"] > div > .ProjectsSliderContentV2_item__XyMYZ`
+- `div[data-index="2"] > div > .ProjectsSliderContentV2_item__XyMYZ`
 
 ### Zooming and scaling must not be disabled
 
@@ -90,8 +86,8 @@
 
 #### Affected Elements:
 
-- `meta[name="viewport"]:nth-child(7)`
-- `meta[name="viewport"]:nth-child(44)`
+- `meta[name="viewport"]:nth-child(9)`
+- `meta[name="viewport"]:nth-child(52)`
 
 ### All page content should be contained by landmarks
 

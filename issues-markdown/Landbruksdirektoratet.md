@@ -1,22 +1,10 @@
 # WCAG Violations Report for Landbruksdirektoratet
 
-**Timestamp:** 2026-09-14T08:22:28.321Z
+**Timestamp:** 2026-09-19T20:16:09.957Z
 **URL:** [https://www.landbruksdirektoratet.no/nb](https://www.landbruksdirektoratet.no/nb)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
-
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `html`
 
 ### All page content should be contained by landmarks
 

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Manpower AS
 
-**Timestamp:** 2026-09-14T08:23:07.459Z
+**Timestamp:** 2026-09-19T19:41:24.539Z
 **URL:** [https://www.manpower.no/nb](https://www.manpower.no/nb)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -66,3 +66,16 @@
 - `#hs-form-iframe-0, li:nth-child(2)`
 - `#hs-form-iframe-0, li:nth-child(3)`
 - `#hs-form-iframe-0, li:nth-child(4)`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.emergency-msg`
+- `#onetrust-banner-sdk`

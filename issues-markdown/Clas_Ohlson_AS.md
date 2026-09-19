@@ -1,8 +1,8 @@
 # WCAG Violations Report for Clas Ohlson AS
 
-**Timestamp:** 2026-09-14T08:16:23.267Z
+**Timestamp:** 2026-09-19T19:51:45.166Z
 **URL:** [https://www.clasohlson.com/no/](https://www.clasohlson.com/no/)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -43,18 +43,6 @@
 
 - `#cx-livechat-host,iframe[name="cx-webChatButton"]`
 - `#cx-livechat-host,iframe[name="cx-webChatWindow"]`
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#cx-livechat-host,iframe[name="cx-webChatButton"], img`
 
 ### Links must have discernible text
 
@@ -114,4 +102,4 @@
 
 #### Affected Elements:
 
-- `#cx-livechat-host,iframe[name="cx-webChatButton"], .go4199366604`
+- `#cx-livechat-host,iframe[name="cx-webChatButton"], #container`

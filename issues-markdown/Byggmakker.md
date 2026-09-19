@@ -1,6 +1,6 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2026-09-14T08:36:25.439Z
+**Timestamp:** 2026-09-19T19:50:29.709Z
 **URL:** [https://www.byggmakker.no/](https://www.byggmakker.no/)
 **Total Violations:** 3
 

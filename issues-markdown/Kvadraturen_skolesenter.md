@@ -1,8 +1,8 @@
 # WCAG Violations Report for Kvadraturen skolesenter
 
-**Timestamp:** 2026-09-14T08:43:08.228Z
+**Timestamp:** 2026-09-19T20:15:42.739Z
 **URL:** [https://kvadraturen.vgs.no/](https://kvadraturen.vgs.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -17,18 +17,6 @@
 #### Affected Elements:
 
 - `iframe`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.il-heading--h4`
 
 ### Links must have discernible text
 
