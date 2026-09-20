@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-09-20T05:41:23.109Z
+**Timestamp:** 2026-09-20T05:48:55.426Z
 **URL:** [https://jysk.no/](https://jysk.no/)
 **Total Violations:** 2
 

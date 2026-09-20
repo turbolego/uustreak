@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2026-09-20T05:12:04.852Z
+**Timestamp:** 2026-09-20T05:52:34.136Z
 **URL:** [https://www.nille.no/](https://www.nille.no/)
 **Total Violations:** 5
 

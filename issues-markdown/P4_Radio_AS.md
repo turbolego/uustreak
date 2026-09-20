@@ -1,8 +1,8 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-09-20T05:18:42.547Z
+**Timestamp:** 2026-09-20T05:55:35.655Z
 **URL:** [https://www.lydenavradio.no/p4/](https://www.lydenavradio.no/p4/)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -75,18 +75,6 @@
 #### Affected Elements:
 
 - `img[width="100"]`
-
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `img[alt="P8 Pop"]`
 
 ### Form elements must have labels
 

@@ -1,0 +1,21 @@
+# WCAG Violations Report for Elkjøp AS
+
+**Timestamp:** 2026-09-20T05:44:31.574Z
+**URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
+**Total Violations:** 1
+
+## Violation Details
+
+### <li> elements must be contained in a <ul> or <ol>
+
+- **Impact:** serious
+- **Description:** Ensure <li> elements are used semantically
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/listitem?application=playwright
+- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 3
+
+#### Affected Elements:
+
+- `button:nth-child(1) > .xl\:flex-col.text-\(--header-text\).px-4`
+- `div[data-component="AccountPopoverMenu"] > .xl\:flex-col.text-\(--header-text\).px-4`
+- `li[data-testid="cart"]`

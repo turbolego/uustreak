@@ -1,22 +1,10 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-09-20T05:24:44.604Z
+**Timestamp:** 2026-09-20T05:42:29.308Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
-**Total Violations:** 9
+**Total Violations:** 8
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
 
 ### Headings should not be empty
 
@@ -56,8 +44,8 @@
 #### Affected Elements:
 
 - `.bg-white.color_mobile_bg-white.has-row-header > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(29) > h5`
-- `.has-row-header.row.large-12:nth-child(68) > h5`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(31) > h5`
+- `.has-row-header.row.large-12:nth-child(69) > h5`
 - `.has-row-header.bg-quinary.color_mobile_bg-quinary > h5`
 - `.bg-primary > h5`
 
@@ -93,11 +81,10 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 5
+- **Count:** 4
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/38586112\/dagsavisen\/toppbanner_0, #aw0`
 - `#offer_c73387d3ba7d6f714705-0, a`
 - `#offer_bf4832a825707f8d4b4e-0, a`
 - `#offer_bf4832a825707f8d4b4e-1, a`
@@ -114,7 +101,6 @@
 #### Affected Elements:
 
 - `h1`
-- `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
 - `div[title="Knivstikking i Fredrikstad"] > h2`
 - `div[title="Knivstikking i Fredrikstad"] > .meta`
 - `#notice-10539573 > .content > h2`
@@ -158,31 +144,32 @@
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
+- `.row.large-12.small-12:nth-child(5)`
 - `#offer_c73387d3ba7d6f714705-0, div[ng-show="!terminalError"]`
-- `.row.large-12.small-12:nth-child(7)`
 - `.row.large-12.small-12:nth-child(8)`
+- `.row.large-12.small-12:nth-child(9)`
 - `.bg-white.color_mobile_bg-white.has-row-header`
-- `.row.large-12.small-12:nth-child(10)`
-- `.bg-black.color_mobile_bg-black.hasContentPadding:nth-child(11)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(13)`
+- `.row.large-12.small-12:nth-child(11)`
+- `.bg-black.color_mobile_bg-black.hasContentPadding:nth-child(13)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(14)`
 - `#offer_bf4832a825707f8d4b4e-0, div[ng-show="!terminalError"]`
 - `.page-content > .border-bg-quinary-light.mobile_border-bg-quinary-light.hasBorder`
-- `.row.large-12.small-12:nth-child(16)`
+- `.row.large-12.small-12:nth-child(17)`
 - `#article_list_10372156 > .content > .lab-scrollbox-headline.t25.font-InterTight`
 - `#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(19)`
+- `.row.large-12.small-12:nth-child(20)`
 - `.articlescroller-header.t25.tm18`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(21)`
+- `.row.large-12.small-12:nth-child(22)`
 - `.page-content > .border_width_no_border_width.border_width_mobile_no_border_width.mobile_no_border_color`
-- `.row.large-12.small-12:nth-child(23)`
+- `.row.large-12.small-12:nth-child(25)`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .lab-scrollbox-headline.t25.font-InterTight`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(26)`
 - `.row.large-12.small-12:nth-child(27)`
 - `.row.large-12.small-12:nth-child(28)`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(29)`
-- `.row.large-12.small-12:nth-child(31)`
+- `.row.large-12.small-12:nth-child(29)`
+- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(31)`
+- `.row.large-12.small-12:nth-child(32)`
 - `.lab-scrollbox-headline.t28.font-InterTight`
 - `#markup_10478983 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="10478981"] > .content > .floatingTextSubset.media > .floatingText`
@@ -198,24 +185,23 @@
 - `article[data-instance="10440429"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
 - `#markup_10440438 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="10440437"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `.row.large-12.small-12:nth-child(33)`
+- `.row.large-12.small-12:nth-child(34)`
 - `.lab-scrollbox-headline.t25.tm18`
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(35)`
 - `.row.large-12.small-12:nth-child(37)`
 - `.row.large-12.small-12:nth-child(38)`
 - `.row.large-12.small-12:nth-child(39)`
+- `.row.large-12.small-12:nth-child(40)`
 - `#offer_bf4832a825707f8d4b4e-1, div[ng-show="!terminalError"]`
-- `.row.large-12.small-12:nth-child(41)`
 - `.row.large-12.small-12:nth-child(43)`
 - `.row.large-12.small-12:nth-child(44)`
+- `.row.large-12.small-12:nth-child(45)`
 - `.lab-scrollbox-headline.italic.m-italic`
 - `#article_list_10291490 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(46)`
 - `.row.large-12.small-12:nth-child(47)`
 - `.row.large-12.small-12:nth-child(49)`
-- `.bg-black.color_mobile_bg-black.hasContentPadding:nth-child(50)`
-- `.row.large-12.small-12:nth-child(51)`
+- `.row.large-12.small-12:nth-child(50)`
+- `.bg-black.color_mobile_bg-black.hasContentPadding:nth-child(51)`
 - `.row.large-12.small-12:nth-child(52)`
 - `.row.large-12.small-12:nth-child(53)`
 - `.row.large-12.small-12:nth-child(55)`
@@ -230,8 +216,8 @@
 - `.row.large-12.small-12:nth-child(65)`
 - `.row.large-12.small-12:nth-child(66)`
 - `.row.large-12.small-12:nth-child(67)`
-- `.has-row-header.row.large-12:nth-child(68)`
-- `.row.large-12.small-12:nth-child(69)`
+- `.row.large-12.small-12:nth-child(68)`
+- `.has-row-header.row.large-12:nth-child(69)`
 - `.row.large-12.small-12:nth-child(70)`
 - `.row.large-12.small-12:nth-child(71)`
 - `.row.large-12.small-12:nth-child(72)`
@@ -242,28 +228,29 @@
 - `.row.large-12.small-12:nth-child(77)`
 - `.row.large-12.small-12:nth-child(78)`
 - `.row.large-12.small-12:nth-child(79)`
+- `.row.large-12.small-12:nth-child(80)`
 - `.has-row-header.bg-quinary.color_mobile_bg-quinary`
 - `.bg-primary`
-- `.row.large-12.small-12:nth-child(82)`
 - `.row.large-12.small-12:nth-child(83)`
-- `.color_mobile_no_bg_color.row.large-12:nth-child(84)`
-- `.row.large-12.small-12:nth-child(85)`
+- `.row.large-12.small-12:nth-child(84)`
+- `.color_mobile_no_bg_color.row.large-12:nth-child(85)`
 - `.row.large-12.small-12:nth-child(86)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(87)`
+- `.row.large-12.small-12:nth-child(87)`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(88)`
-- `.row.large-12.small-12:nth-child(89)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(89)`
 - `.row.large-12.small-12:nth-child(90)`
 - `.row.large-12.small-12:nth-child(91)`
 - `.row.large-12.small-12:nth-child(92)`
 - `.row.large-12.small-12:nth-child(93)`
 - `.row.large-12.small-12:nth-child(94)`
-- `.color_mobile_no_bg_color.row.large-12:nth-child(95)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(96)`
+- `.row.large-12.small-12:nth-child(95)`
+- `.color_mobile_no_bg_color.row.large-12:nth-child(96)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(97)`
 - `.articlescroller-header.tm20.font-PTSans`
 - `#article_list_9904930 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(98)`
-- `.row.large-12.small-12:nth-child(99)`
-- `.row.large-12.small-12:nth-child(102)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(99)`
+- `.row.large-12.small-12:nth-child(100)`
+- `.row.large-12.small-12:nth-child(103)`
 - `.page-content > .color_mobile_bg-quaternary.bg-quaternary.hasContentPadding`
 - `.powered-by`
 
