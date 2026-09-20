@@ -152,7 +152,7 @@ function calculateStreakFromIndex(projectName, streakIndex) {
                 if (!currentRunStart) currentRunStart = dateStr;
                 currentRunEnd = dateStr;
                 const days = calculateCalendarDays(currentRunStart, currentRunEnd);
-                if (days > longestStreak) {
+                if (days >= longestStreak) {
                     longestStreak = days;
                     longestStreakStart = currentRunStart;
                     longestStreakEnd = currentRunEnd;
@@ -220,7 +220,9 @@ function calculateStreak(projectName, reportList) {
 
     const reports = uniqueReports.map(filename => {
         const dateMatch = filename.match(/(\d{4}-\d{2}-\d{2})/);
-        return dateMatch ? { date: dateMatch[1], clear: filename.includes('-count-0') } : null;
+        const countMatch = filename.match(/-count-(\d+)\.json$/);
+        if (!dateMatch || !countMatch) return null;
+        return { date: dateMatch[1], clear: countMatch[1] === '0' };
     }).filter(Boolean).sort((a, b) => a.date.localeCompare(b.date));
 
     let runStart = null;
@@ -233,7 +235,7 @@ function calculateStreak(projectName, reportList) {
             if (!runStart) runStart = report.date;
             runEnd = report.date;
             const days = calculateCalendarDays(runStart, runEnd);
-            if (days > longestStreak) {
+            if (days >= longestStreak) {
                 longestStreak = days;
                 longestStreakStart = runStart;
                 longestStreakEnd = runEnd;
