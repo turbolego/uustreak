@@ -79,15 +79,17 @@ async function trackAchievements() {
 
             const streak = streakResult.days;
             const streakStartDate = streakResult.startDate;
+            const streakEndDate = streakResult.endDate;
             const longestStreak = streakResult.longestStreak;
             const longestStreakStart = streakResult.longestStreakStart;
+            const longestStreakEnd = streakResult.longestStreakEnd;
             
             // Check for new achievements
             const newAchievements = checkForNewAchievements(
                 project.name, 
                 streak, 
                 achievements, 
-                { startDate: streakStartDate, longestStreak, longestStreakStart }
+                { startDate: streakStartDate, endDate: streakEndDate, longestStreak, longestStreakStart, longestStreakEnd }
             );
 
             if (newAchievements.length > 0) {
@@ -131,43 +133,55 @@ async function trackAchievements() {
  */
 function calculateStreakFromIndex(projectName, streakIndex) {
     const dateMap = streakIndex[projectName] || {};
-    // Process dates in descending order (newest first), batched
+    // Process dates in ascending order; only explicit violation reports break a streak.
     const BATCH_SIZE = 500;
-    const dates = Object.keys(dateMap).sort().reverse();
+    const dates = Object.keys(dateMap).sort();
 
     if (dates.length === 0) return { days: 0, startDate: null, longestStreak: 0, longestStreakStart: null };
 
-    let currentStreak = 0;
-    let currentStreakStartDate = null;
+    let currentRunStart = null;
+    let currentRunEnd = null;
     let longestStreak = 0;
     let longestStreakStart = null;
-    let currentDate = new Date(new Date().toISOString().split('T')[0]);
-    let done = false;
+    let longestStreakEnd = null;
 
-    for (let batchStart = 0; batchStart < dates.length && !done; batchStart += BATCH_SIZE) {
+    for (let batchStart = 0; batchStart < dates.length; batchStart += BATCH_SIZE) {
         const batch = dates.slice(batchStart, batchStart + BATCH_SIZE);
         for (const dateStr of batch) {
-            const reportDate = new Date(dateStr);
-            const daysDiff = Math.floor((currentDate - reportDate) / (1000 * 60 * 60 * 24));
-
-            if (daysDiff > 1 && currentStreak === 0) { done = true; break; }
-
             if (dateMap[dateStr] === 0) {
-                currentStreak++;
-                currentStreakStartDate = dateStr;
-                currentDate = new Date(reportDate);
-                currentDate.setDate(currentDate.getDate() - 1);
-                if (currentStreak > longestStreak) {
-                    longestStreak = currentStreak;
-                    longestStreakStart = currentStreakStartDate;
+                if (!currentRunStart) currentRunStart = dateStr;
+                currentRunEnd = dateStr;
+                const days = calculateCalendarDays(currentRunStart, currentRunEnd);
+                if (days >= longestStreak) {
+                    longestStreak = days;
+                    longestStreakStart = currentRunStart;
+                    longestStreakEnd = currentRunEnd;
                 }
             } else {
-                done = true; break;
+                currentRunStart = null;
+                currentRunEnd = null;
             }
         }
     }
 
-    return { days: currentStreak, startDate: currentStreakStartDate, longestStreak, longestStreakStart };
+    const latestDate = dates[dates.length - 1];
+    const currentStreak = dateMap[latestDate] === 0 && currentRunStart
+        ? calculateCalendarDays(currentRunStart, latestDate)
+        : 0;
+    return {
+        days: currentStreak,
+        startDate: currentStreak ? currentRunStart : null,
+        endDate: currentStreak ? latestDate : null,
+        longestStreak,
+        longestStreakStart,
+        longestStreakEnd
+    };
+}
+
+function calculateCalendarDays(fromDate, toDate) {
+    const from = new Date(`${fromDate}T00:00:00Z`);
+    const to = new Date(`${toDate}T00:00:00Z`);
+    return Math.floor((to - from) / (1000 * 60 * 60 * 24)) + 1;
 }
 
 /**
@@ -204,43 +218,46 @@ function calculateStreak(projectName, reportList) {
         .sort()
         .reverse();
 
-    let currentStreak = 0;
-    let currentStreakStartDate = null;
+    const reports = uniqueReports.map(filename => {
+        const dateMatch = filename.match(/(\d{4}-\d{2}-\d{2})/);
+        const countMatch = filename.match(/-count-(\d+)\.json$/);
+        if (!dateMatch || !countMatch) return null;
+        return { date: dateMatch[1], clear: countMatch[1] === '0' };
+    }).filter(Boolean).sort((a, b) => a.date.localeCompare(b.date));
+
+    let runStart = null;
+    let runEnd = null;
     let longestStreak = 0;
     let longestStreakStart = null;
-    let currentDate = new Date();
-    currentDate = new Date(currentDate.toISOString().split('T')[0]);
-
-    // Count backwards from today to find current streak (now with deduplicated dates)
-    for (let i = 0; i < uniqueReports.length; i++) {
-        const filename = uniqueReports[i];
-        const dateMatch = filename.match(/(\d{4}-\d{2}-\d{2})/);
-        if (!dateMatch) continue;
-
-        const reportDate = new Date(dateMatch[1]);
-        const daysDiff = Math.floor((currentDate - reportDate) / (1000 * 60 * 60 * 24));
-
-        // If we skip more than 1 day, streak is broken (unless checking past streaks)
-        if (daysDiff > 1 && currentStreak === 0) break;
-
-        // Check if report has 0 violations
-        if (filename.includes('-count-0')) {
-            currentStreak++;
-            currentStreakStartDate = dateMatch[1]; // Update start date as we go back
-            currentDate = new Date(reportDate);
-            currentDate.setDate(currentDate.getDate() - 1);
-            
-            // Track longest streak
-            if (currentStreak > longestStreak) {
-                longestStreak = currentStreak;
-                longestStreakStart = currentStreakStartDate;
+    let longestStreakEnd = null;
+    for (const report of reports) {
+        if (report.clear) {
+            if (!runStart) runStart = report.date;
+            runEnd = report.date;
+            const days = calculateCalendarDays(runStart, runEnd);
+            if (days >= longestStreak) {
+                longestStreak = days;
+                longestStreakStart = runStart;
+                longestStreakEnd = runEnd;
             }
         } else {
-            break; // Violations found, current streak ends
+            runStart = null;
+            runEnd = null;
         }
     }
 
-    return { days: currentStreak, startDate: currentStreakStartDate, longestStreak, longestStreakStart };
+    const latest = reports[reports.length - 1];
+    const currentStreak = latest?.clear && runStart
+        ? calculateCalendarDays(runStart, latest.date)
+        : 0;
+    return {
+        days: currentStreak,
+        startDate: currentStreak ? runStart : null,
+        endDate: currentStreak ? latest.date : null,
+        longestStreak,
+        longestStreakStart,
+        longestStreakEnd
+    };
 }
 
 /**
@@ -262,7 +279,9 @@ function checkForNewAchievements(projectName, currentStreak, existingAchievement
         const existingLongestDays = existingLongest ? parseInt(existingLongest.streakDays) : 0;
         
         // Only create/update if longest streak is better than previous record
-        if (streakData.longestStreak > existingLongestDays) {
+        if (streakData.longestStreak > existingLongestDays ||
+            (streakData.longestStreak === existingLongestDays &&
+             streakData.longestStreakEnd > existingLongest?.toDate)) {
             // Remove old longest_streak achievement if it exists
             const filteredForLongest = existingAchievements.filter(a => a.type !== 'longest_streak');
             existingAchievements.length = 0;
@@ -271,7 +290,7 @@ function checkForNewAchievements(projectName, currentStreak, existingAchievement
             newAchievements.push({
                 type: 'longest_streak',
                 fromDate: streakData.longestStreakStart,
-                toDate: today,
+                toDate: streakData.longestStreakEnd || today,
                 unlockedDate: today,
                 streakDays: streakData.longestStreak
             });
@@ -290,14 +309,10 @@ function checkForNewAchievements(projectName, currentStreak, existingAchievement
         if (currentStreak >= threshold.days) {
             const alreadyHas = existingAchievements.some(a => a.type === threshold.type);
             if (!alreadyHas) {
-                const streakStart = new Date();
-                streakStart.setDate(streakStart.getDate() - threshold.days);
-                const fromDate = streakStart.toISOString().split('T')[0];
-
                 newAchievements.push({
                     type: threshold.type,
-                    fromDate: fromDate,
-                    toDate: today,
+                    fromDate: streakData.startDate,
+                    toDate: streakData.endDate || today,
                     unlockedDate: today
                 });
             }
