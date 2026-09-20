@@ -245,7 +245,7 @@ function calculateStreak(projectName, reportList) {
     }
 
     const latest = reports[reports.length - 1];
-    const currentStreak = latest?.clear && longestStreakStart === runStart
+    const currentStreak = latest?.clear && runStart
         ? calculateCalendarDays(runStart, latest.date)
         : 0;
     return {
