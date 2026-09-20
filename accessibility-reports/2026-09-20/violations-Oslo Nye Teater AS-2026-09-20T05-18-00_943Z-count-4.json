@@ -1,0 +1,822 @@
+{
+  "project": "Oslo Nye Teater AS",
+  "timestamp": "2026-09-20T05:18:00.943Z",
+  "url": "https://oslonye.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"title\">Oslo Nye Teater AS</h4>",
+          "target": [
+            ".large-3.medium-6.cell:nth-child(1) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/label-title-only?application=playwright",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input type=\"text\" placeholder=\"Søk\" value=\"\" name=\"s\" id=\"s\" onblur=\"if (this.value == '') { this.value = ''; }\" onfocus=\"if (this.value == ''){this.value = '';}\" title=\"Søk etter...\">",
+          "target": [
+            "#s"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 15,
+      "nodes": [
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/treholt/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/Test-plakatfoto-Treholt-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".alignment-right.hovedscenen.bg-none > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/paklederen/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/2400x1350-Paklederen-1-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-right.bg-none.block > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/allsang-i-grensen-3/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/2025-Alllsang-host-2025-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.bg-none.block > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/snofall/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/Snofall-2026-Arff-oppsett_Solveig-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-left.hovedscenen.bg-none > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/jul-med-proysen-og-snekker-andersen-2/\" class=\"les-mer-link\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.bg-none.block > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/ungen/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/Ungen-plakat-hjemmeside-1-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".alignment-top.hovedscenen.bg-none > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/mysteriet-myrna-vep/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/Test-MyrnaVep_1-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3) > .alignment-top.bg-none.block > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/drommen-om-en-hvit-jul/\" class=\"les-mer-link\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .alignment-top.bg-none.block > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/homofil-homofob/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/IMG_0114.jpeg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".cafescenen.alignment-top.bg-none > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/bestemors-fantastisk-elendige-historier-og-roalds-magi/\" class=\"les-mer-link\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-left.bg-none.block > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/av-maneskinn-gror-det-ingenting/\" class=\"les-mer-link\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.bg-none.block > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/oslo-kulturskoleet-unntaksprosjekt/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/2048x1152-Et-unntaksprosjekt.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".cafescenen.alignment-left.bg-none > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/unni-wilhelmsen/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/Unni_Wilhelmsen-TM.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(12) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-left.hovedscenen.bg-none > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/abjectified-project-prosessforestilling-ouverture/\" class=\"les-mer-link\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(13) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.bg-none.block > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"javascript:void(0);\" class=\"scroll-to-top\">\n\t\t\t\t\t<img src=\"https://oslonye.no/wp-content/themes/oslonye-live/images/arrow_up_creme.svg\" alt=\"\">\n\t\t\t\t</a>",
+          "target": [
+            ".scroll-to-top"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 89,
+      "nodes": [
+        {
+          "html": "<video style=\"object-fit: cover;\" width=\"100%\" playsinline=\"\" height=\"100%\" id=\"background-video\" autoplay=\"\" loop=\"\" muted=\"\" poster=\"https://oslonye.no/wp-content/uploads/Plakat-ItsBritneyBitch_OsloNyeTeater2026-2-scaled.jpg\">",
+          "target": [
+            "#background-video"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"background-link\" href=\"https://oslonye.no/forestillinger/its-britney-bitch/\">",
+          "target": [
+            ".background-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-container\">",
+          "target": [
+            ".hero-banner > .grid-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>hovedscenen</span>",
+          "target": [
+            ".hovedscenen > .flex-container.align-middle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Centralteatret</span>",
+          "target": [
+            ".centralteatret > .flex-container.align-middle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Teaterkjelleren</span>",
+          "target": [
+            ".teaterkjellern > .flex-container.align-middle > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-8 medium-6\" data-gtm=\"{\"id\":\"1477253\",\"brand\":\"hovedscenen\",\"name\":\"Treholt\"}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tStrålende kritikker til TREHOLT - en musikal\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target=\"_blank\"] > .advertise-cover- > .border-orange.advertise.text-center > .text-orange.heading-small.content-holder > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"short-description\">\n\t\t\t\t\t\t\t\t           \t\t\t\tDet er svært gledelig at Oslo Nyes urpremiere på musikalen om spiondømte Arne Treholt har blitt omfavnet av både publikum og anmeldere.\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target=\"_blank\"] > .advertise-cover- > .border-orange.advertise.text-center > .text-orange.heading-small.content-holder > .short-description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tFørsnakk 19. september\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target=\"_blank\"] > .advertise-cover- > .border-orange.advertise.text-center > .text-orange.heading-small.content-holder > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"short-description\">\n\t\t\t\t\t\t\t\t           \t\t\t\tFå med deg panelsamtalen It’s Britney, Bitch! Popkultur, Britney Spears og et blikk på kvinnelig berømmelse. Med Morten Hegseth, Adelina Ibishi, Sina Martens og Lena Brasch. Arrangert i samarbeid med Goethe-Institut.\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell > a[target=\"_blank\"] > .advertise-cover- > .border-orange.advertise.text-center > .text-orange.heading-small.content-holder > .short-description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-8 medium-6\" data-gtm=\"{\"id\":\"985479\",\"brand\":\"centralteatret\",\"name\":\"P\\u00e5klederen\"}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"forestillinger-blocks-panel \">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"forestillinger-blocks-panel \">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-4 medium-6\" data-gtm=\"{\"id\":\"1366124\",\"brand\":\"hovedscenen\",\"name\":\"Ungen\"}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tInfo om billettkjøp\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".border-yellow.advertise.text-center > .text-orange.heading-small.content-holder > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"short-description\">\n\t\t\t\t\t\t\t\t           \t\t\t\tLes om billettkjøp, hørselshjelp, rullestolplasser, barnehagebilletter m.m. \t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".border-yellow.advertise.text-center > .text-orange.heading-small.content-holder > .short-description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-4 medium-6\" data-gtm=\"{\"id\":\"1059932\",\"brand\":\"centralteatret\",\"name\":\"Mysteriet Myrna Vep\"}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"forestillinger-blocks-panel \">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"forestillinger-blocks-panel \">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(9)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tNyheter\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".text-green > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-8 medium-6\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(10) > .grid-container > .grid-padding-x.grid-x > .large-8.medium-6.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"location text-uppercase\">",
+          "target": [
+            ".cafescenen.alignment-left.bg-none > .content-cover.text-center.h-100 > .heading-small.content-holder.h-100 > .location.text-uppercase"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/oslo-kulturskoleet-unntaksprosjekt/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t\t\t<div class=\"title\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t\t\t\tOslo kultur­skole: Et unntaks­pro­sjekt\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t\t</a>",
+          "target": [
+            ".cafescenen.alignment-left.bg-none > .content-cover.text-center.h-100 > .heading-small.content-holder.h-100 > .les-mer-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"location-desc\"><span>Akersg. 38</span></div>",
+          "target": [
+            ".cafescenen.alignment-left.bg-none > .content-cover.text-center.h-100 > .heading-small.content-holder.h-100 > .location-desc:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"button-group second\">",
+          "target": [
+            ".cafescenen.alignment-left.bg-none > .content-cover.text-center.h-100 > .heading-small.content-holder.h-100 > .second.button-group"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-4 medium-6\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(11) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tKontakt\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".border-green > .text-yellow.heading-small.content-holder > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-8 medium-6\" data-gtm=\"{\"id\":\"1443323\",\"brand\":\"hovedscenen\",\"name\":\"Unni Wilhelmsen \\u2013 30 \\u00e5r p\\u00e5 eventyr\"}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(12) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-4 medium-6\" data-gtm=\"{\"id\":\"1456834\",\"brand\":\"centralteatret\",\"name\":\"Abjectified Pro­ject \\u2013 Prosess­fore­stilling Ouver­ture\"}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(13) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tPODKAST\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".rounded.border-orange.advertise > .text-yellow.heading-small.content-holder > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-white text-uppercase text-center current-month\">\n                        september                    </div>",
+          "target": [
+            ".current-month"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"next desktop\">oktober</div>",
+          "target": [
+            ".desktop"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-2\">\n\t\t\t\t\t\t\t\t\t<div class=\"date text-white\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23.09\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(2) > .large-2.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat centralteatret  hide1 \">Centralteatret</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(2) > .large-7.cell > .content-holder > .cat-cover > .cat.centralteatret.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title text-white text-uppercase\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"text-white les-mer-link\" href=\"https://oslonye.no/forestillinger/allsang-i-grensen-3/\">Allsang i Grensen</a>\n\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(2) > .large-7.cell > .content-holder > .text-uppercase.title.text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-3 text-sm-right\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.ticketmaster.no/event/1360757940?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1\" class=\"button btn-orange ticketmaster-link\">\n\t\t\t\t\t\t\t\t\t\t\t\tBilletter\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(2) > .text-sm-right.large-3.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-2\">\n\t\t\t\t\t\t\t\t\t<div class=\"date text-white\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23.09\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .large-2.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat centralteatret  hide1 \">Centralteatret</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .cat.centralteatret.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat teaterkjellern  hide1 \">Teaterkjelleren</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .teaterkjellern.cat.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title text-white text-uppercase\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"text-white les-mer-link\" href=\"https://oslonye.no/forestillinger/siren-stories/\">Nerdy and Dirty Performance Lectures</a>\n\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .large-7.cell > .content-holder > .text-uppercase.title.text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-3 text-sm-right\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.ticketmaster.no/event/139092449?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1\" class=\"button btn-orange ticketmaster-link\">\n\t\t\t\t\t\t\t\t\t\t\t\tBilletter\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .text-sm-right.large-3.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-2\">\n\t\t\t\t\t\t\t\t\t<div class=\"date text-white\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t24.09\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .large-2.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat centralteatret  hide1 \">Centralteatret</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .large-7.cell > .content-holder > .cat-cover > .cat.centralteatret.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title text-white text-uppercase\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"text-white les-mer-link\" href=\"https://oslonye.no/forestillinger/paklederen/\">Påklederen</a>\n\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .large-7.cell > .content-holder > .text-uppercase.title.text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-3 text-sm-right\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.ticketmaster.no/event/1122287852?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1\" class=\"button btn-orange ticketmaster-link\">\n\t\t\t\t\t\t\t\t\t\t\t\tBilletter\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .text-sm-right.large-3.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-2\">\n\t\t\t\t\t\t\t\t\t<div class=\"date text-white\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t24.09\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(5) > .large-2.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat hovedscenen  hide1 \">hovedscenen</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(5) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title text-white text-uppercase\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"text-white les-mer-link\" href=\"https://oslonye.no/forestillinger/treholt/\">Treholt</a>\n\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(5) > .large-7.cell > .content-holder > .text-uppercase.title.text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-3 text-sm-right\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.ticketmaster.no/event/1991131113?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1\" class=\"button btn-orange ticketmaster-link\">\n\t\t\t\t\t\t\t\t\t\t\t\tBilletter\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(5) > .text-sm-right.large-3.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-2\">\n\t\t\t\t\t\t\t\t\t<div class=\"date text-white\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t25.09\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .large-2.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat centralteatret  hide1 \">Centralteatret</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .large-7.cell > .content-holder > .cat-cover > .cat.centralteatret.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title text-white text-uppercase\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"text-white les-mer-link\" href=\"https://oslonye.no/forestillinger/paklederen/\">Påklederen</a>\n\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .large-7.cell > .content-holder > .text-uppercase.title.text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-3 text-sm-right\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.ticketmaster.no/event/46268461?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1\" class=\"button btn-orange ticketmaster-link\">\n\t\t\t\t\t\t\t\t\t\t\t\tBilletter\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .text-sm-right.large-3.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-2\">\n\t\t\t\t\t\t\t\t\t<div class=\"date text-white\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t25.09\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(7) > .large-2.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat hovedscenen  hide1 \">hovedscenen</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(7) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title text-white text-uppercase\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"text-white les-mer-link\" href=\"https://oslonye.no/forestillinger/treholt/\">Treholt</a>\n\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(7) > .large-7.cell > .content-holder > .text-uppercase.title.text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-3 text-sm-right\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.ticketmaster.no/event/1540064069?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1\" class=\"button btn-orange ticketmaster-link\">\n\t\t\t\t\t\t\t\t\t\t\t\tBilletter\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(7) > .text-sm-right.large-3.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-2\">\n\t\t\t\t\t\t\t\t\t<div class=\"date text-white\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t25.09\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-2.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat centralteatret  hide1 \">Centralteatret</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .cat.centralteatret.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat teaterkjellern  hide1 \">Teaterkjelleren</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .teaterkjellern.cat.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title text-white text-uppercase\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"text-white les-mer-link\" href=\"https://oslonye.no/forestillinger/tipsy-ibsen-2/\">Tipsy Ibsen</a>\n\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-7.cell > .content-holder > .text-uppercase.title.text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-3 text-sm-right\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.ticketmaster.no/event/547274655?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1\" class=\"button btn-orange ticketmaster-link\">\n\t\t\t\t\t\t\t\t\t\t\t\tBilletter\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .text-sm-right.large-3.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-2\">\n\t\t\t\t\t\t\t\t\t<div class=\"date text-white\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26.09\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(9) > .large-2.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat hovedscenen  hide1 \">hovedscenen</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(9) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title text-white text-uppercase\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"text-white les-mer-link\" href=\"https://oslonye.no/forestillinger/treholt/\">Treholt</a>\n\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(9) > .large-7.cell > .content-holder > .text-uppercase.title.text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-3 text-sm-right\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.ticketmaster.no/event/1724927071?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1\" class=\"button btn-orange ticketmaster-link\">\n\t\t\t\t\t\t\t\t\t\t\t\tBilletter\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(9) > .text-sm-right.large-3.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-2\">\n\t\t\t\t\t\t\t\t\t<div class=\"date text-white\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26.09\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-2.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat centralteatret  hide1 \">Centralteatret</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-7.cell > .content-holder > .cat-cover > .cat.centralteatret.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title text-white text-uppercase\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"text-white les-mer-link\" href=\"https://oslonye.no/forestillinger/paklederen/\">Påklederen</a>\n\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-7.cell > .content-holder > .text-uppercase.title.text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-3 text-sm-right\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.ticketmaster.no/event/1058478815?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1\" class=\"button btn-orange ticketmaster-link\">\n\t\t\t\t\t\t\t\t\t\t\t\tBilletter\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .text-sm-right.large-3.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-2\">\n\t\t\t\t\t\t\t\t\t<div class=\"date text-white\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26.09\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-2.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat hovedscenen  hide1 \">hovedscenen</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title text-white text-uppercase\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"text-white les-mer-link\" href=\"https://oslonye.no/forestillinger/its-britney-bitch/\">It’s Britney, Bitch!</a>\n\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-7.cell > .content-holder > .text-uppercase.title.text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-3 text-sm-right\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.ticketmaster.no/event/1982959093?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1\" class=\"button btn-orange ticketmaster-link\">\n\t\t\t\t\t\t\t\t\t\t\t\tBilletter\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .text-sm-right.large-3.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-2\">\n\t\t\t\t\t\t\t\t\t<div class=\"date text-white\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26.09\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-2.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat centralteatret  hide1 \">Centralteatret</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .cat.centralteatret.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat teaterkjellern  hide1 \">Teaterkjelleren</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .teaterkjellern.cat.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title text-white text-uppercase\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"text-white les-mer-link\" href=\"https://oslonye.no/forestillinger/purple-underground/\">Purple Under­ground</a>\n\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-7.cell > .content-holder > .text-uppercase.title.text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-3 text-sm-right\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.ticketmaster.no/event/1470746485?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1\" class=\"button btn-orange ticketmaster-link\">\n\t\t\t\t\t\t\t\t\t\t\t\tBilletter\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .text-sm-right.large-3.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-2\">\n\t\t\t\t\t\t\t\t\t<div class=\"date text-white\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26.09\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(13) > .large-2.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat centralteatret  hide1 \">Centralteatret</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(13) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .cat.centralteatret.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat cafescenen  hide1 \">Caféscenen</div>",
+          "target": [
+            ".cafescenen.cat.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title text-white text-uppercase\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"text-white les-mer-link\" href=\"https://oslonye.no/forestillinger/askefast/\">Askefast</a>\n\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(13) > .large-7.cell > .content-holder > .text-uppercase.title.text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-3 text-sm-right\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.ticketmaster.no/event/1705773193?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1\" class=\"button btn-orange ticketmaster-link\">\n\t\t\t\t\t\t\t\t\t\t\t\tBilletter\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(13) > .text-sm-right.large-3.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-2\">\n\t\t\t\t\t\t\t\t\t<div class=\"date text-white\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t30.09\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(14) > .large-2.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cat hovedscenen  hide1 \">hovedscenen</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(14) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title text-white text-uppercase\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"text-white les-mer-link\" href=\"https://oslonye.no/forestillinger/treholt/\">Treholt</a>\n\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(14) > .large-7.cell > .content-holder > .text-uppercase.title.text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cell large-3 text-sm-right\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.ticketmaster.no/event/1904443213?language=no-no&amp;track=DiscoveryAPI&amp;camefrom=OsloNye&amp;subchannel_id=1\" class=\"button btn-orange ticketmaster-link\">\n\t\t\t\t\t\t\t\t\t\t\t\tBilletter\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(14) > .text-sm-right.large-3.cell"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

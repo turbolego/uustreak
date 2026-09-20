@@ -1,8 +1,8 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2026-09-19T19:54:39.179Z
+**Timestamp:** 2026-09-20T05:25:02.174Z
 **URL:** [https://www.dalane-tidende.no/](https://www.dalane-tidende.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -18,20 +18,29 @@
 
 - `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #cbb`
 
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.ad-text_location`
+
 ### Frames must have an accessible name
 
 - **Impact:** serious
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 5
+- **Count:** 2
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #toppbanner > div > iframe[scrolling="no"][src$="about:blank"]`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #wallpaper > div > iframe[scrolling="no"][src$="about:blank"]`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, iframe:nth-child(17)`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, iframe:nth-child(18)`
+- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #\32 00_287_express_html_inpage_0\.if`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -40,13 +49,11 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #wallpaper > div > iframe[scrolling="no"][src$="about:blank"], #j`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #wallpaper > div > iframe[scrolling="no"][src$="about:blank"], #e`
-- `brick-carousel-v3[data-slides="6"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
+- `brick-carousel-v3[data-slides="7"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -66,20 +73,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 13
+- **Count:** 2
 
 #### Affected Elements:
 
 - `amedia-username`
-- `#toppbanner-1-label`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #toppbanner > div > iframe[scrolling="no"][src$="about:blank"], #a`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #toppbanner > div > iframe[scrolling="no"][src$="about:blank"], #b`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #toppbanner > div > iframe[scrolling="no"][src$="about:blank"], #h`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #toppbanner > div > iframe[scrolling="no"][src$="about:blank"], #g`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #toppbanner > div > iframe[scrolling="no"][src$="about:blank"], #f`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #toppbanner > div > iframe[scrolling="no"][src$="about:blank"], #e`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #toppbanner > div > iframe[scrolling="no"][src$="about:blank"], #d`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #wallpaper > div > iframe[scrolling="no"][src$="about:blank"], #c`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #wallpaper > div > iframe[scrolling="no"][src$="about:blank"], #d`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #wallpaper > div > iframe[scrolling="no"][src$="about:blank"], #f`
-- `#google_ads_iframe_\/56257416\/www\.dalane-tidende\.no\/toppbanner_0, #wallpaper > div > iframe[scrolling="no"][src$="about:blank"], #h`
+- `#toppbanner-1`

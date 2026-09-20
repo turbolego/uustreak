@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-09-19T19:53:11.324Z
+**Timestamp:** 2026-09-20T05:23:35.526Z
 **URL:** [https://www.dagbladet.no/](https://www.dagbladet.no/)
 **Total Violations:** 4
 
@@ -18,29 +18,33 @@
 
 - `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #cbb`
 
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 3
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #\32 00_287_express_html_inpage_0\.if`
+- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #\32 00_287_express_html_inpage_0\.if, iframe[scrolling="no"]`
+- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #\32 00_287_express_html_inpage_0\.if, body > iframe`
+
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
 - `._topnav_88ip5_45`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #aw0`
+- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #\32 00_287_express_html_inpage_0\.if, iframe[scrolling="no"], #v`
+- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #\32 00_287_express_html_inpage_0\.if, iframe[scrolling="no"], #u`
 
 ### All page content should be contained by landmarks
 

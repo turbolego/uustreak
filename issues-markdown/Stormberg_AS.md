@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-09-19T20:00:00.781Z
+**Timestamp:** 2026-09-20T05:30:28.134Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -30,7 +30,7 @@
 #### Affected Elements:
 
 - `.h2.e0.e1 > div > div`
-- `.h4.am[href$="hostkupp"]`
+- `a[href$="dagskupp2"]`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(2) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
@@ -41,14 +41,14 @@
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `li:nth-child(1) > .ic.id[aria-label="Regnklar regndress"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `li:nth-child(1) > .ic.id[aria-label="Regnklar regndress"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `a[aria-label="Bodø lettvekts regnbukse"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Bodø lettvekts regnbukse"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `a[aria-label="Regnklar regndress"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `a[aria-label="Regnklar regndress"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `a[aria-label="Bodø lettvekts regnjakke"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Bodø lettvekts regnjakke"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `li:nth-child(4) > .ic.id[aria-label="Regnklar regndress"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `li:nth-child(4) > .ic.id[aria-label="Regnklar regndress"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `a[aria-label="Stormflod regnjakke"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Stormflod regnjakke"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `li:nth-child(1) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
@@ -106,7 +106,7 @@
 - `div:nth-child(2) > .aq.am.an > .au.as[width="11"]`
 - `div:nth-child(3) > .aq.am.an > .au.as[width="11"]`
 - `a[href$="hostsalg"] > .hs.ht.hu > .hx.hw.au`
-- `.a6[href$="hostkupp"][data-scope-link="true"] > .jm.ht.hu > .hx.a2.hw`
+- `a[href$="hostkupp"] > .jm.ht.hu > .hx.a2.hw`
 - `.jl.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jm.ht.hu > .hx.a2.hw`
 - `.jl.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jm.ht.hu > .hx.a2.hw`
 - `.jl.fm.be:nth-child(4) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jm.ht.hu > .hx.a2.hw`
@@ -126,7 +126,7 @@
 #### Affected Elements:
 
 - `a[href$="hostsalg"]`
-- `.a6[href$="hostkupp"][data-scope-link="true"]`
+- `a[href$="hostkupp"]`
 - `.jl.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
 - `.jl.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
 - `.jl.fm.be:nth-child(4) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Connect Bus AS
 
-**Timestamp:** 2026-09-19T19:52:26.535Z
+**Timestamp:** 2026-09-20T05:22:48.641Z
 **URL:** [https://www.connectbus.no/](https://www.connectbus.no/)
 **Total Violations:** 4
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#\33 53924935118`
+- `#\38 95512361663`
 
 ### Document should have one main landmark
 
@@ -29,7 +29,7 @@
 #### Affected Elements:
 
 - `html`
-- `#\33 53924935118, html`
+- `#\38 95512361663, html`
 
 ### Page should contain a level-one heading
 
@@ -42,7 +42,7 @@
 #### Affected Elements:
 
 - `html`
-- `#\33 53924935118, html`
+- `#\38 95512361663, html`
 
 ### All page content should be contained by landmarks
 

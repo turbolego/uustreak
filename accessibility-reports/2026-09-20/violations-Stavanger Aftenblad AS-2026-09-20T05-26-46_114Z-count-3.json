@@ -1,0 +1,105 @@
+{
+  "project": "Stavanger Aftenblad AS",
+  "timestamp": "2026-09-20T05:26:46.114Z",
+  "url": "https://www.aftenbladet.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"headline\">Tips oss</span>",
+          "target": [
+            "iframe[title=\"Tips oss\"]",
+            ".headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #ffffff, background color: #0083cc, font size: 12.6pt (16.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/nested-interactive?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<audio-play-button asset-id=\"113459\" vendor=\"sa\" provider=\"sa\" title=\"Hvorfor er du så\nkjedelig, Andreas?\" class=\"label-medium _root_me3cj_65 _small_me3cj_88\" role=\"button\" tabindex=\"0\" data-state=\"idle\">",
+          "target": [
+            "track-element[data-track-id=\"teaser:113459\"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor=\"sa\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<audio-play-button asset-id=\"113474\" vendor=\"sa\" provider=\"sa\" title=\"KI, verdens undergang,\nsvenske tilstander og jobby\" class=\"label-medium _root_me3cj_65 _small_me3cj_88\" role=\"button\" tabindex=\"0\" data-state=\"idle\">",
+          "target": [
+            "track-element[data-track-id=\"teaser:113474\"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor=\"sa\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<audio-play-button asset-id=\"113458\" vendor=\"sa\" provider=\"sa\" title=\"Drømmestarten, brå\novergang og stikk til Bodø\" class=\"label-medium _root_me3cj_65 _small_me3cj_88\" role=\"button\" tabindex=\"0\" data-state=\"idle\">",
+          "target": [
+            "track-element[data-track-id=\"teaser:113458\"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor=\"sa\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"sch-datacontroller__text\">",
+          "target": [
+            ".sch-datacontroller__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

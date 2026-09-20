@@ -1,6 +1,6 @@
 # WCAG Violations Report for Handel og Kontor i Norge
 
-**Timestamp:** 2026-09-19T20:06:41.930Z
+**Timestamp:** 2026-09-20T05:36:20.212Z
 **URL:** [https://hk.no/](https://hk.no/)
 **Total Violations:** 5
 
@@ -42,8 +42,8 @@
 
 #### Affected Elements:
 
-- `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-current.slick-active[data-slick-index="2"] > div > .uagb-post__inner-wrap > h5`
-- `.uagb-block-f5aaf362 > .slick-list.draggable > .slick-track > .slick-current.slick-active[data-slick-index="2"] > div > .uagb-post__inner-wrap > h5`
+- `.slick-current.slick-active[data-slick-index="2"] > div > .uagb-post__inner-wrap > h5`
+- `.slick-slide[data-slick-index="2"][aria-hidden="true"] > div > .uagb-post__inner-wrap > h5`
 
 ### Links must have discernible text
 
@@ -55,10 +55,10 @@
 
 #### Affected Elements:
 
-- `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-current.slick-active[data-slick-index="2"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `.slick-current.slick-active[data-slick-index="2"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 - `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="3"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 - `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="4"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `.uagb-block-f5aaf362 > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="3"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- `.slick-current.slick-active[data-slick-index="3"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 
 ### All page content should be contained by landmarks
 
