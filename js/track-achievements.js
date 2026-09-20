@@ -132,7 +132,7 @@ async function trackAchievements() {
  */
 function calculateStreakFromIndex(projectName, streakIndex) {
     const dateMap = streakIndex[projectName] || {};
-    // Process dates in ascending order so gaps without reports do not break a streak.
+    // Process dates in ascending order; only explicit violation reports break a streak.
     const BATCH_SIZE = 500;
     const dates = Object.keys(dateMap).sort();
 
