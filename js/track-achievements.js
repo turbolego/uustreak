@@ -79,6 +79,7 @@ async function trackAchievements() {
 
             const streak = streakResult.days;
             const streakStartDate = streakResult.startDate;
+            const streakEndDate = streakResult.endDate;
             const longestStreak = streakResult.longestStreak;
             const longestStreakStart = streakResult.longestStreakStart;
             const longestStreakEnd = streakResult.longestStreakEnd;
@@ -88,7 +89,7 @@ async function trackAchievements() {
                 project.name, 
                 streak, 
                 achievements, 
-                { startDate: streakStartDate, longestStreak, longestStreakStart, longestStreakEnd }
+                { startDate: streakStartDate, endDate: streakEndDate, longestStreak, longestStreakStart, longestStreakEnd }
             );
 
             if (newAchievements.length > 0) {
@@ -170,6 +171,7 @@ function calculateStreakFromIndex(projectName, streakIndex) {
     return {
         days: currentStreak,
         startDate: currentStreak ? currentRunStart : null,
+        endDate: currentStreak ? latestDate : null,
         longestStreak,
         longestStreakStart,
         longestStreakEnd
@@ -249,6 +251,7 @@ function calculateStreak(projectName, reportList) {
     return {
         days: currentStreak,
         startDate: currentStreak ? runStart : null,
+        endDate: currentStreak ? latest.date : null,
         longestStreak,
         longestStreakStart,
         longestStreakEnd
@@ -304,14 +307,10 @@ function checkForNewAchievements(projectName, currentStreak, existingAchievement
         if (currentStreak >= threshold.days) {
             const alreadyHas = existingAchievements.some(a => a.type === threshold.type);
             if (!alreadyHas) {
-                const streakStart = new Date();
-                streakStart.setDate(streakStart.getDate() - threshold.days);
-                const fromDate = streakStart.toISOString().split('T')[0];
-
                 newAchievements.push({
                     type: threshold.type,
-                    fromDate: fromDate,
-                    toDate: today,
+                    fromDate: streakData.startDate,
+                    toDate: streakData.endDate || today,
                     unlockedDate: today
                 });
             }
