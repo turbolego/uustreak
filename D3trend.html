@@ -671,6 +671,7 @@
         // Global state
         let reportList = [];
         let availableDates = [];
+        const archiveAvailability = new Map();
         let allProjectsData = new Map();
         let allProjects = new Set();
         let allTags = new Set();
@@ -908,6 +909,21 @@
             const archiveUrl = `accessibility-reports/archives/reports_${date}.tar.gz`;
             
             try {
+                // The archive index can contain entries whose blobs were removed
+                // during deployment cleanup. Avoid downloading those known-missing
+                // archives so a sparse history does not produce repeated 404s.
+                let archiveAvailable = archiveAvailability.get(date);
+                if (archiveAvailable === undefined
+                    && typeof checkArchiveAvailability === 'function') {
+                    archiveAvailable = await checkArchiveAvailability(date);
+                    archiveAvailability.set(date, archiveAvailable);
+                }
+
+                if (archiveAvailable === false) {
+                    console.info(`No archive published for ${date}; skipping`);
+                    return;
+                }
+
                 const jsonFiles = await fetchAndDecompressArchive(archiveUrl);
                 
                 if (!allProjectsData.has(date)) {
