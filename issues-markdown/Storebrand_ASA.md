@@ -1,7 +1,7 @@
-# WCAG Violations Report for Kongsberg kommune
+# WCAG Violations Report for Storebrand ASA
 
-**Timestamp:** 2026-09-21T08:09:17.050Z
-**URL:** [https://www.kongsberg.kommune.no/](https://www.kongsberg.kommune.no/)
+**Timestamp:** 2026-09-21T07:56:13.211Z
+**URL:** [https://www.storebrand.no/](https://www.storebrand.no/)
 **Total Violations:** 1
 
 ## Violation Details
@@ -16,4 +16,4 @@
 
 #### Affected Elements:
 
-- `.navbar`
+- `._navbar_48rpq_21`

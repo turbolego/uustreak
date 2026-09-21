@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-09-20T06:06:12.122Z
+**Timestamp:** 2026-09-21T08:08:50.050Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
 **Total Violations:** 5
 
@@ -17,7 +17,7 @@
 #### Affected Elements:
 
 - `.cms-campaign-banners:nth-child(6) > .cms-campaign-banners__content.cms-banners > .campaign-banner--left.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .product-label > .product-label__text`
-- `a[aria-label="Se utvalget - 50% alt fra MAM."] > .campaign-banner__text.banner__text > .product-label > .product-label__text`
+- `a[href$="vild-nord"] > .campaign-banner__text.banner__text > .product-label > .product-label__text`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
