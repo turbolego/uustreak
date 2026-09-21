@@ -1,28 +1,10 @@
 # WCAG Violations Report for Komplett Services AS
 
-**Timestamp:** 2026-09-21T08:09:01.693Z
+**Timestamp:** 2026-09-21T19:28:58.923Z
 **URL:** [https://www.komplett.no/](https://www.komplett.no/)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
-
-### ARIA role should be appropriate for the element
-
-- **Impact:** minor
-- **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
-- **Tags:** cat.aria, best-practice
-- **Count:** 7
-
-#### Affected Elements:
-
-- `a[title="Vi feirer 30 år"]`
-- `a[aria-label="1 / 6"]`
-- `.swiper-slide-prev`
-- `a[aria-label="3 / 6"]`
-- `.swiper-slide-next`
-- `a[aria-label="5 / 6"]`
-- `a[aria-label="6 / 6"]`
 
 ### Form elements should have a visible label
 

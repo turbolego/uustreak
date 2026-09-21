@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jotunheimen og Valdresruten Bilselskap AS
 
-**Timestamp:** 2026-09-21T08:06:58.915Z
+**Timestamp:** 2026-09-21T19:27:39.038Z
 **URL:** [https://jvb.no/](https://jvb.no/)
 **Total Violations:** 6
 
@@ -12,13 +12,10 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 14
+- **Count:** 11
 
 #### Affected Elements:
 
-- `.et_pb_slide_title > a[href$="jvbtur.no"]`
-- `.et_pb_slide_1 > .et_pb_container.clearfix > .et_pb_slider_container_inner > .et_pb_slide_description > .et_pb_slide_content > p > span`
-- `.et_pb_more_button.et_pb_button[href$="jvbtur.no"]`
 - `.et_pb_text_5 > .et_pb_text_inner > p`
 - `.et_pb_text_5 > .et_pb_text_inner > p > span`
 - `.et_pb_text_8 > .et_pb_text_inner > p`

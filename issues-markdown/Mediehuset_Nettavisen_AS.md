@@ -1,8 +1,8 @@
 # WCAG Violations Report for Mediehuset Nettavisen AS
 
-**Timestamp:** 2026-09-21T07:36:23.901Z
+**Timestamp:** 2026-09-21T19:30:35.717Z
 **URL:** [https://www.nettavisen.no/](https://www.nettavisen.no/)
-**Total Violations:** 7
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -17,37 +17,6 @@
 #### Affected Elements:
 
 - `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > h1`
-
-### Frames must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, iframe`
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 8
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, iframe, .img`
-- `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, iframe, .tx1`
-- `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, iframe, .tx2`
-- `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, iframe, .tx3`
-- `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, iframe, .cta`
-- `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, iframe, .loopImg`
-- `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, iframe, .logo`
-- `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, iframe, .disc`
 
 ### Banner landmark should not be contained in another landmark
 

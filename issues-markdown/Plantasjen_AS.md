@@ -1,7 +1,7 @@
 # WCAG Violations Report for Plantasjen AS
 
-**Timestamp:** 2026-09-21T07:44:30.210Z
-**URL:** [https://plantasjen.no/no](https://plantasjen.no/no)
+**Timestamp:** 2026-09-21T19:32:15.869Z
+**URL:** [https://plantasjen.no/](https://plantasjen.no/)
 **Total Violations:** 2
 
 ## Violation Details
@@ -29,6 +29,6 @@
 #### Affected Elements:
 
 - `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(1) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
-- `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(2) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
-- `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(3) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
-- `.max-w-\[66\.67\%\].flex-\[0_0_66\.67\%\].lg\:max-w-\[25\%\]:nth-child(4) > .text-card-foreground.rounded-br-\[2rem\].rounded-tl-\[2rem\] > .relative > .md\:px-8.gap-3.group > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
+- `a[href="/p/villfuglblanding-9kg-563514"] > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
+- `a[href$="bjorkeved-ca-15-kg-514572"] > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`
+- `a[href="/p/saga-vase-h195-green-563139"] > .grid-cols-1.grid.bg-white > .min-h-4.md\:min-h-4.leading-5 > .mb-1.flex-wrap.gap-2 > .bg-secondary-marigold.text-white.md\:px-3`

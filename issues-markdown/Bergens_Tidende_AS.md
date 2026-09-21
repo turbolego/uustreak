@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-09-21T07:43:44.454Z
+**Timestamp:** 2026-09-21T19:19:46.028Z
 **URL:** [https://www.bt.no/](https://www.bt.no/)
 **Total Violations:** 2
 
@@ -16,9 +16,9 @@
 
 #### Affected Elements:
 
+- `track-element[data-track-id="teaser:127690"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="bt"]`
 - `track-element[data-track-id="teaser:127683"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="bt"]`
 - `track-element[data-track-id="teaser:127655"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="bt"]`
-- `audio-play-button[title="«That's life»"]`
 
 ### All page content should be contained by landmarks
 

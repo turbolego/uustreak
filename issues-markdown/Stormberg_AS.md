@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-09-21T07:56:27.719Z
+**Timestamp:** 2026-09-21T19:35:44.713Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -47,24 +47,24 @@
 - `a[aria-label="Bodø lettvekts regnjakke"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `li:nth-child(3) > .ic.id[aria-label="Regnklar regndress"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `li:nth-child(3) > .ic.id[aria-label="Regnklar regndress"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `li:nth-child(4) > .ic.id[aria-label="Regnklar regndress"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `li:nth-child(4) > .ic.id[aria-label="Regnklar regndress"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `a[aria-label="Lindesnes regnponcho"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Lindesnes regnponcho"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `li:nth-child(5) > .ic.id[aria-label="Regnklar regndress"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `li:nth-child(5) > .ic.id[aria-label="Regnklar regndress"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `li:nth-child(1) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `li:nth-child(1) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `li:nth-child(2) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `li:nth-child(2) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `a[aria-label="Ute vinterdress"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `a[aria-label="Ute vinterdress"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `a[aria-label="Ute vinterdress m/korte ben"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Ute vinterdress m/korte ben"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `a[aria-label="Børgefjell regnbukse"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `a[aria-label="Børgefjell regnbukse"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `a[aria-label="Ute vinterdress"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `a[aria-label="Ute vinterdress"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `a[aria-label="Varde nødsovepose"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `a[aria-label="Varde nødsovepose"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Regndag regnbukse unisex"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Fagerli ullsokk 3-pack"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `a[aria-label="Voss 2-lags ulltrøye"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `a[aria-label="Polarfjord lang sherpajakke"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `#onetrust-accept-btn-handler`
 

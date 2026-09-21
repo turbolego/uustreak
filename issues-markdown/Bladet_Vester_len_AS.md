@@ -1,24 +1,10 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-09-21T07:45:14.546Z
+**Timestamp:** 2026-09-21T19:21:20.596Z
 **URL:** [https://www.blv.no/](https://www.blv.no/)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
-
-#### Affected Elements:
-
-- `.swiper-slide-active > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
-- `.swiper-slide-next > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
-- `div[data-swiper-slide-index="3"] > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
 
 ### Headings should not be empty
 
@@ -26,12 +12,11 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `.none.brick-c-foCnba[data-title-words="2"] > .brick-c-ffHwOH.mirror.teaser_body > .body > .brick-c-fdsRaE.title_container.has-image > .normal.brick-c-JbDTi[itemprop="teaser_title"]`
-- `a[data-k5a-section="commercial"] > .body > .brick-c-fdsRaE.title_container.has-image > .normal.brick-c-JbDTi[itemprop="teaser_title"]`
+- `.none[data-title-words="2"][aria-label="Nyhetsartikkel"] > .brick-c-HZLTu.teaser_body[itemprop="url"] > .brick-c-gBeijm.title_container.has-image > .normal.brick-c-JbDTi[itemprop="teaser_title"]`
 
 ### Frames must have an accessible name
 
@@ -39,12 +24,10 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, iframe[scrolling="no"]`
-- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, body > iframe`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -57,7 +40,7 @@
 
 #### Affected Elements:
 
-- `brick-teaser-group-v1[data-color-skin="opinion"] > div > brick-carousel-v3 > .carousel[aria-label="Innholdskarusell"][role="region"]`
+- `brick-carousel-v3[data-slides="9"] > .carousel[aria-label="Innholdskarusell"][role="region"]`
 
 ### Links must have discernible text
 
@@ -69,7 +52,7 @@
 
 #### Affected Elements:
 
-- `.none.brick-c-foCnba[data-title-words="2"] > .brick-c-ffHwOH.mirror.teaser_body`
+- `.none[data-title-words="2"][aria-label="Nyhetsartikkel"] > .brick-c-HZLTu.teaser_body[itemprop="url"]`
 
 ### Elements marked as presentational should be consistently ignored
 
