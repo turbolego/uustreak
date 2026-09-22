@@ -904,6 +904,11 @@
                 datesToLoad = availableDates.filter(date => new Date(date) >= startDate);
             }
 
+            // Keep the date label informative while a large range is loading.
+            if (datesToLoad.length > 0) {
+                yearLabel.text(datesToLoad[0]);
+            }
+
             console.log(`Loading data for ${datesToLoad.length} dates`);
 
             for (let i = 0; i < datesToLoad.length; i++) {
