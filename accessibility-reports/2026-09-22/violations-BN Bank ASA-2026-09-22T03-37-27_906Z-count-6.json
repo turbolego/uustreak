@@ -1,0 +1,264 @@
+{
+  "project": "BN Bank ASA",
+  "timestamp": "2026-09-22T03:37:27.906Z",
+  "url": "https://www.bnbank.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h2 class=\"text-left h3\"></h2>",
+          "target": [
+            ".reduced-padding-top > .container > .row-component__content > .background--light-wine-red.text-left.content-card > .content-card--image-above.content-card__content-wrapper > .content-card__content > .content-card__upper-content > .h3.text-left"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h5>Hvordan bytter jeg til BN Bank?</h5>",
+          "target": [
+            "#heading-toggle-hvordan-bytter-jeg-til-bn-bank > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img class=\"banner-with-everything__graphic\" src=\"/Content/img/graphic-wine-red.jpg\">",
+          "target": [
+            ".banner-with-everything__graphic"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/nested-interactive?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<div class=\"heading\" role=\"tab\" id=\"heading-hvordan-bytter-jeg-til-bn-bank\">",
+          "target": [
+            "#heading-hvordan-bytter-jeg-til-bn-bank"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<div class=\"heading\" role=\"tab\" id=\"heading-er-virkelig-bankkortet-helt-gebyrfritt-i-bruk\">",
+          "target": [
+            "#heading-er-virkelig-bankkortet-helt-gebyrfritt-i-bruk"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<div class=\"heading\" role=\"tab\" id=\"heading-hvor-mye-kan-jeg-lane-til-bolig\">",
+          "target": [
+            "#heading-hvor-mye-kan-jeg-lane-til-bolig"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<div class=\"heading\" role=\"tab\" id=\"heading-hvor-mye-egenkapital-ma-jeg-ha-for-a-kjope-se\">",
+          "target": [
+            "#heading-hvor-mye-egenkapital-ma-jeg-ha-for-a-kjope-se"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<div class=\"heading\" role=\"tab\" id=\"heading-hvordan-laste-ned-mobilbank\">",
+          "target": [
+            "#heading-hvordan-laste-ned-mobilbank"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<div class=\"heading\" role=\"tab\" id=\"heading-hvordan-aktivere-mobilbanken\">",
+          "target": [
+            "#heading-hvordan-aktivere-mobilbanken"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<div class=\"heading\" role=\"tab\" id=\"heading-hvordan-fa-bankid-pa-mobil\">",
+          "target": [
+            "#heading-hvordan-fa-bankid-pa-mobil"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<div class=\"c-head\"><div class=\"c-head-container\"><h3 class=\"c-header bntext\">BN Bank bruker informasjonskapsler (cookies)</h3></div></div>",
+          "target": [
+            "#cookie-banner0 > .c-head"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"c-body\">",
+          "target": [
+            ".c-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"navigation__logo navigation__item-padding\">\n                <a href=\"/\">\n                    <img alt=\"BNBank logo\" src=\"/Content/img/BNBank-logo.svg\">\n                </a>\n            </div>",
+          "target": [
+            ".navigation__logo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"navigation__actions navigation__item-padding navigation__theme--wine-red\">",
+          "target": [
+            ".navigation__actions"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "role-img-alt",
+      "impact": "serious",
+      "description": "Ensure [role=\"img\"] elements have alternative text",
+      "help": "[role=\"img\"] elements must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/role-img-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<div class=\"link-icon__icon\" role=\"img\" aria-label=\"\" style=\"background-image: url('/globalassets/ikoner/document-house.svg')\"></div>",
+          "target": [
+            "a[href$=\"lan/\"] > .link-icon__content > .link-icon__left > .link-icon__icon[aria-label=\"\"][role=\"img\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"link-icon__icon\" role=\"img\" aria-label=\"\" style=\"background-image: url('/globalassets/ikoner/coins-blue.svg')\"></div>",
+          "target": [
+            "a[href$=\"sparing/\"] > .link-icon__content > .link-icon__left > .link-icon__icon[aria-label=\"\"][role=\"img\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"link-icon__icon\" role=\"img\" aria-label=\"\" style=\"background-image: url('/globalassets/ikoner/kort-chip.svg')\"></div>",
+          "target": [
+            "a[aria-label=\"Kort\"] > .link-icon__content > .link-icon__left > .link-icon__icon[aria-label=\"\"][role=\"img\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"link-icon__icon\" role=\"img\" aria-label=\"\" style=\"background-image: url('/globalassets/ikoner/document.svg')\"></div>",
+          "target": [
+            "a[aria-label=\"Bytte bank\"] > .link-icon__content > .link-icon__left > .link-icon__icon[aria-label=\"\"][role=\"img\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"link-icon__icon\" role=\"img\" aria-label=\"\" style=\"background-image: url('/globalassets/ikoner/calkulator-slider.svg')\"></div>",
+          "target": [
+            "a[href$=\"kalkulatorer/\"] > .link-icon__content > .link-icon__left > .link-icon__icon[aria-label=\"\"][role=\"img\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<div class=\"link-icon__icon\" role=\"img\" aria-label=\"\" style=\"background-image: url('/globalassets/ikoner/podium.svg')\"></div>",
+          "target": [
+            "a[aria-label=\"Kundefavoritt\"] > .link-icon__content > .link-icon__left > .link-icon__icon[aria-label=\"\"][role=\"img\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}

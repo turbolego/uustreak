@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sola Strand Hotel
 
-**Timestamp:** 2026-09-21T19:34:36.588Z
+**Timestamp:** 2026-09-22T03:50:19.888Z
 **URL:** [https://www.solastrandhotel.no/](https://www.solastrandhotel.no/)
 **Total Violations:** 5
 
@@ -37,11 +37,12 @@
 - **Description:** Ensure <frame> and <iframe> elements with focusable content do not have tabindex=-1
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-focusable-content?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag211, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, RGAAv4, RGAA-7.3.2
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
 - `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video.ready, html`
+- `div[data-config-url="https://vimeo.com/1043637275"] > div > .background-video.ready, html`
 
 ### Heading levels should only increase by one
 

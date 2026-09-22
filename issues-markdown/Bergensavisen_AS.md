@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2026-09-21T19:21:08.389Z
+**Timestamp:** 2026-09-22T03:37:11.193Z
 **URL:** [https://www.ba.no/](https://www.ba.no/)
 **Total Violations:** 3
 

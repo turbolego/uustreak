@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-09-21T19:22:12.591Z
+**Timestamp:** 2026-09-22T03:38:51.460Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 8
 
@@ -99,8 +99,10 @@
 #### Affected Elements:
 
 - `h1`
+- `div[title="Årets El Niño vil slå rekord"] > h2`
+- `time[datetime="2026-09-21T19:57:17.000Z"]`
 - `div[title="New York: Store flyproblemer "] > h2`
-- `time[datetime="2026-09-21T18:34:25.000Z"]`
+- `time[datetime="2026-09-21T19:29:30.000Z"]`
 - `#notice-10542971 > .content > h2`
 - `time[datetime="2026-09-21T18:00:02.000Z"]`
 - `div[title="DNB forbyr KI-briller"] > h2`
@@ -137,8 +139,6 @@
 - `time[datetime="2026-09-21T07:59:34.000Z"]`
 - `#notice-10540004 > .content > h2`
 - `time[datetime="2026-09-20T18:57:21.000Z"]`
-- `#notice-10539942 > .content > h2`
-- `#notice-10539942 > .content > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
