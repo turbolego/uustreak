@@ -671,7 +671,6 @@
         // Global state
         let reportList = [];
         let availableDates = [];
-        const archiveAvailability = new Map();
         let allProjectsData = new Map();
         let allProjects = new Set();
         let allTags = new Set();
@@ -811,6 +810,22 @@
                 availableDates = extractDates(reportList);
                 console.log(`Found ${availableDates.length} unique dates`);
 
+                // The report list tracks individual report files, but this view reads
+                // gzip archives. Restrict to dates that actually have a published
+                // archive so no date is requested that cannot be served.
+                if (typeof fetchArchiveIndex === 'function') {
+                    const archiveIndex = await fetchArchiveIndex();
+                    if (Array.isArray(archiveIndex) && archiveIndex.length > 0) {
+                        const archivedDates = new Set(archiveIndex.map(entry => entry && entry.date).filter(Boolean));
+                        const archivedOnly = availableDates.filter(date => archivedDates.has(date));
+                        const skipped = availableDates.length - archivedOnly.length;
+                        if (skipped > 0) {
+                            console.info(`Skipping ${skipped} date(s) without a published archive`);
+                        }
+                        availableDates = archivedOnly;
+                    }
+                }
+
                 // Load data for the default date range
                 await loadDataForDateRange(30);
 
@@ -909,21 +924,6 @@
             const archiveUrl = `accessibility-reports/archives/reports_${date}.tar.gz`;
             
             try {
-                // The archive index can contain entries whose blobs were removed
-                // during deployment cleanup. Avoid downloading those known-missing
-                // archives so a sparse history does not produce repeated 404s.
-                let archiveAvailable = archiveAvailability.get(date);
-                if (archiveAvailable === undefined
-                    && typeof checkArchiveAvailability === 'function') {
-                    archiveAvailable = await checkArchiveAvailability(date);
-                    archiveAvailability.set(date, archiveAvailable);
-                }
-
-                if (archiveAvailable === false) {
-                    console.info(`No archive published for ${date}; skipping`);
-                    return;
-                }
-
                 const jsonFiles = await fetchAndDecompressArchive(archiveUrl);
                 
                 if (!allProjectsData.has(date)) {
