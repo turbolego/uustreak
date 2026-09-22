@@ -752,27 +752,35 @@
         const plotG = svg.append("g")
             .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-        // Year label (large background text)
-        const yearLabel = plotG.append("text")
-            .attr("class", "year-label")
-            .attr("x", width - 100)
-            .attr("y", height - 50)
-            .attr("text-anchor", "end");
+        // Year label (large background text) and corner labels. The plot is cleared
+        // whenever the metric or date range changes, so these are recreated through a
+        // helper that reassigns yearLabel. Holding the reference to the removed
+        // element would leave the date label permanently blank.
+        let yearLabel;
 
-        // Corner labels
-        plotG.append("text")
-            .attr("class", "corner-label top-right")
-            .attr("x", width - 10)
-            .attr("y", 10)
-            .attr("text-anchor", "end")
-            .text("✓ Best (Low severity, few violations)");
+        function createChartChrome() {
+            yearLabel = plotG.append("text")
+                .attr("class", "year-label")
+                .attr("x", width - 100)
+                .attr("y", height - 50)
+                .attr("text-anchor", "end");
 
-        plotG.append("text")
-            .attr("class", "corner-label bottom-left")
-            .attr("x", 10)
-            .attr("y", height - 10)
-            .attr("text-anchor", "start")
-            .text("✗ Worst (High severity, most violations)");
+            plotG.append("text")
+                .attr("class", "corner-label top-right")
+                .attr("x", width - 10)
+                .attr("y", 10)
+                .attr("text-anchor", "end")
+                .text("✓ Best (Low severity, few violations)");
+
+            plotG.append("text")
+                .attr("class", "corner-label bottom-left")
+                .attr("x", 10)
+                .attr("y", height - 10)
+                .attr("text-anchor", "start")
+                .text("✗ Worst (High severity, most violations)");
+        }
+
+        createChartChrome();
 
         // Create separate layer for tracking elements (rendered on top - added last)
         trackingLayer = plotG.append("g")
@@ -1828,27 +1836,8 @@
             // Clear existing chart
             plotG.selectAll("*").remove();
             
-            // Re-add corner labels
-            plotG.append("text")
-                .attr("class", "corner-label top-right")
-                .attr("x", width - 10)
-                .attr("y", 10)
-                .attr("text-anchor", "end")
-                .text("✓ Best (Low severity, few violations)");
-
-            plotG.append("text")
-                .attr("class", "corner-label bottom-left")
-                .attr("x", 10)
-                .attr("y", height - 10)
-                .attr("text-anchor", "start")
-                .text("✗ Worst (High severity, most violations)");
-            
-            // Re-add year label
-            plotG.append("text")
-                .attr("class", "year-label")
-                .attr("x", width - 100)
-                .attr("y", height - 50)
-                .attr("text-anchor", "end");
+            // Re-add the year label and corner labels
+            createChartChrome();
             
             // Recreate chart with new Y-axis
             createScalesAndAxes();
@@ -1876,27 +1865,8 @@
             // Clear existing chart
             plotG.selectAll("*").remove();
             
-            // Re-add corner labels
-            plotG.append("text")
-                .attr("class", "corner-label top-right")
-                .attr("x", width - 10)
-                .attr("y", 10)
-                .attr("text-anchor", "end")
-                .text("✓ Best (Low severity, few violations)");
-
-            plotG.append("text")
-                .attr("class", "corner-label bottom-left")
-                .attr("x", 10)
-                .attr("y", height - 10)
-                .attr("text-anchor", "start")
-                .text("✗ Worst (High severity, most violations)");
-            
-            // Re-add year label
-            plotG.append("text")
-                .attr("class", "year-label")
-                .attr("x", width - 100)
-                .attr("y", height - 50)
-                .attr("text-anchor", "end");
+            // Re-add the year label and corner labels
+            createChartChrome();
             
             // Reload data
             await loadDataForDateRange(days);
