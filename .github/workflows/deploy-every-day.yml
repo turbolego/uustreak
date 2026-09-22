@@ -620,8 +620,15 @@ jobs:
           echo "✓ site-output: $(du -sh site-output 2>/dev/null | cut -f1)"
 
           # Sync the built site into the publish worktree, removing anything stale.
+          # site-output is built from a sparse gh-pages seed that deliberately omits
+          # historical report data and archives, so those trees must be protected from
+          # --delete. Without this, every previously published day is wiped from
+          # gh-pages while archive_index.json keeps advertising it, leaving the
+          # dashboards requesting archives that 404.
           rsync -a --delete \
             --exclude='.git' \
+            --filter='protect /accessibility-reports/**' \
+            --filter='protect /playwright-reports/**' \
             "site-output/" "$PUBLISH_DIR/"
 
           # Sanity checks before committing
