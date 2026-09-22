@@ -199,7 +199,7 @@
         let allReportsForDate = []; // Store all reports for the current date
 
         // Global variables to track current sorting state
-        let currentSortColumnIndex = 5; // Default sort by total violations
+        let currentSortColumnIndex = 6; // Default sort by streak
         let currentSortDirection = 'desc'; // Default sort direction
 
         /**
@@ -1335,7 +1335,7 @@
 
             // Set initial sort direction and apply sort
             table.dataset.sortDirection = 'desc';
-            sortTable(table, 5, true);
+            sortTable(table, 6, true);
         }
 
         function sortTable(table, columnIndex, isInitialSort = false) {
