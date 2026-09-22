@@ -32,8 +32,11 @@ jobs:
         run: |
           echo "Copying static files to gh-pages branch..."
           
-          # Copy HTML files
-          cp index.html gh-pages-branch/
+          # Copy HTML files (all top-level dashboard pages, not just the index)
+          for page in *.html; do
+            cp "$page" gh-pages-branch/
+            echo "  copied $page"
+          done
           cp README.md gh-pages-branch/
           cp favicon.ico gh-pages-branch/
           
@@ -96,7 +99,7 @@ jobs:
           echo "✅ GitHub Pages deployment triggered"
           echo ""
           echo "The following static files were updated on gh-pages branch:"
-          echo "  - index.html"
+          echo "  - *.html (index and all dashboard pages)"
           echo "  - README.md"
           echo "  - favicon.ico"
           echo "  - styles.css"
