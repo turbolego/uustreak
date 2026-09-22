@@ -1,0 +1,31 @@
+{
+  "project": "Statistisk sentralbyrå",
+  "timestamp": "2025-12-21T00:51:25.546Z",
+  "url": "https://www.ssb.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"header-text\" id=\"popup-title\">Hvordan opplever du ssb.no?</h4>",
+          "target": [
+            "#popup-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    }
+  ]
+}

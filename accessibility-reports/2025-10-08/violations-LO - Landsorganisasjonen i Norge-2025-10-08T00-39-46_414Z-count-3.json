@@ -1,0 +1,145 @@
+{
+  "project": "LO - Landsorganisasjonen i Norge",
+  "timestamp": "2025-10-08T00:39:46.414Z",
+  "url": "https://www.lo.no/#",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<img data-image=\"/contentassets/77a19294f090433493d259231c5b36a7/folk-medlemmer-illustrasjonsfoto-adobestock_325632789--1-.jpg?mode=crop&amp;scale=both&amp;quality=90&amp;width=600&amp;height=340&amp;crop=0,0,1920,1088\" src=\"/contentassets/77a19294f090433493d259231c5b36a7/folk-medlemmer-illustrasjonsfoto-adobestock_325632789--1-.jpg?mode=crop&amp;scale=both&amp;quality=90&amp;width=600&amp;height=340&amp;crop=0,0,1920,1088\" class=\"is-loaded\">",
+          "target": [
+            ".articleTeaser--medium.articleTeaser:nth-child(2) > .articleTeaser__image > .image > .is-loaded"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-image=\"/contentassets/884cf9a8a3e54dcd8e814b8ffb35066b/lo-kongress-2025-onsdag-34.jpg?mode=crop&amp;scale=both&amp;quality=90&amp;width=600&amp;height=340\" src=\"/contentassets/884cf9a8a3e54dcd8e814b8ffb35066b/lo-kongress-2025-onsdag-34.jpg?mode=crop&amp;scale=both&amp;quality=10&amp;width=600&amp;height=340\">",
+          "target": [
+            ".articleTeaser--medium.articleTeaser:nth-child(5) > .articleTeaser__image > .image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-image=\"/contentassets/337620ea2ea44e68b4fb36ebe3dafcf6/img_4260.jpg?mode=crop&amp;scale=both&amp;quality=90&amp;width=600&amp;height=340&amp;crop=0,366,4032,2650\" src=\"/contentassets/337620ea2ea44e68b4fb36ebe3dafcf6/img_4260.jpg?mode=crop&amp;scale=both&amp;quality=10&amp;width=600&amp;height=340&amp;crop=0,366,4032,2650\">",
+          "target": [
+            ".articleTeaser--medium.articleTeaser:nth-child(7) > .articleTeaser__image > .image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-image=\"/contentassets/e36549e6e33b4d04abe3229292ebec49/roger-bjornstad-sjefokonom-lo-47.jpg?mode=crop&amp;scale=both&amp;quality=90&amp;width=600&amp;height=340&amp;crop=0,25,1920,1113\" src=\"/contentassets/e36549e6e33b4d04abe3229292ebec49/roger-bjornstad-sjefokonom-lo-47.jpg?mode=crop&amp;scale=both&amp;quality=10&amp;width=600&amp;height=340&amp;crop=0,25,1920,1113\">",
+          "target": [
+            ".articleTeaser--medium.articleTeaser:nth-child(8) > .articleTeaser__image > .image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-image=\"/globalassets/intranett/illustrasjoner/vaar-2.png?width=640\" src=\"/globalassets/intranett/illustrasjoner/vaar-2.png?mode=crop&amp;scale=both&amp;quality=10&amp;width=640\">",
+          "target": [
+            ".visitorcenter-teaser > .articleTeaser__image > .image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-image=\"/contentassets/c03006ef906241368f40aeeb95a8cbea/handtrykk-lo-ikoner-rod-rgb--1-.png?mode=crop&amp;scale=both&amp;quality=90&amp;width=600&amp;height=340\" src=\"/contentassets/c03006ef906241368f40aeeb95a8cbea/handtrykk-lo-ikoner-rod-rgb--1-.png?mode=crop&amp;scale=both&amp;quality=10&amp;width=600&amp;height=340\">",
+          "target": [
+            ".articleTeaser--medium.articleTeaser:nth-child(14) > .articleTeaser__image > .image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/globalassets/nettsidegrafikk/ikoner/lo-ikon-samfunn-pos-red.svg\">",
+          "target": [
+            ".themeTeaser--featured.themeTeaser:nth-child(2) > .image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/globalassets/nettsidegrafikk/ikoner/lo-ikon-klima.svg\">",
+          "target": [
+            ".themeTeaser--featured.themeTeaser:nth-child(3) > .image > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"pageFooter__column\">",
+          "target": [
+            "nav:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<h1 class=\"srOnly\">lo.no</h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#main\" class=\"srOnly srOnly--focusable\">Gå til hovedinnhold</a>",
+          "target": [
+            "a[href$=\"#main\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#menu\" class=\"srOnly srOnly--focusable\">Gå til navigasjon</a>",
+          "target": [
+            "a[href$=\"#menu\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

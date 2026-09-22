@@ -1,0 +1,214 @@
+{
+  "project": "Dfind Consulting",
+  "timestamp": "2026-04-28T09:07:32.882Z",
+  "url": "https://dfindconsulting.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<article class=\"elementor-post elementor-grid-item post-2302 post type-post status-publish format-standard has-post-thumbnail hentry category-starte-bedrift-okonomi-og-drift\" role=\"listitem\">",
+          "target": [
+            ".post-2302"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listitem is not allowed for given element"
+        },
+        {
+          "html": "<article class=\"elementor-post elementor-grid-item post-2299 post type-post status-publish format-standard has-post-thumbnail hentry category-starte-bedrift-okonomi-og-drift\" role=\"listitem\">",
+          "target": [
+            ".post-2299"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listitem is not allowed for given element"
+        },
+        {
+          "html": "<article class=\"elementor-post elementor-grid-item post-2296 post type-post status-publish format-standard has-post-thumbnail hentry category-starte-bedrift-okonomi-og-drift\" role=\"listitem\">",
+          "target": [
+            ".post-2296"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listitem is not allowed for given element"
+        },
+        {
+          "html": "<article class=\"elementor-post elementor-grid-item post-2293 post type-post status-publish format-standard has-post-thumbnail hentry category-starte-bedrift-okonomi-og-drift\" role=\"listitem\">",
+          "target": [
+            ".post-2293"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listitem is not allowed for given element"
+        },
+        {
+          "html": "<article class=\"elementor-post elementor-grid-item post-2290 post type-post status-publish format-standard has-post-thumbnail hentry category-starte-bedrift-okonomi-og-drift\" role=\"listitem\">",
+          "target": [
+            ".post-2290"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listitem is not allowed for given element"
+        },
+        {
+          "html": "<article class=\"elementor-post elementor-grid-item post-2287 post type-post status-publish format-standard has-post-thumbnail hentry category-starte-bedrift-okonomi-og-drift\" role=\"listitem\">",
+          "target": [
+            ".post-2287"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listitem is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 18,
+      "nodes": [
+        {
+          "html": "<p>Lær hvordan betale skatt som enkeltpersonforetak med forskuddsskatt, frister og MVA. Få kontroll på økonomien og betal riktig i dag fra start.</p>",
+          "target": [
+            ".post-2302 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-date\">\n\t\t\tApril 28, 2026\t\t</span>",
+          "target": [
+            ".post-2302 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-avatar\">\n\t\t\tNo Comments\t\t</span>",
+          "target": [
+            ".post-2302 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Få kontroll med likviditetsbudsjett for små bedrifter. Planlegg innbetalinger, utgifter og svake måneder før de skaper problemer i bedriften.</p>",
+          "target": [
+            ".post-2299 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-date\">\n\t\t\tApril 28, 2026\t\t</span>",
+          "target": [
+            ".post-2299 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-avatar\">\n\t\t\tNo Comments\t\t</span>",
+          "target": [
+            ".post-2299 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Se hvordan lage budsjett for bedrift steg for steg. Lag realistiske tall, styr økonomien bedre og unngå likviditetsproblemer.</p>",
+          "target": [
+            ".post-2296 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-date\">\n\t\t\tApril 28, 2026\t\t</span>",
+          "target": [
+            ".post-2296 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-avatar\">\n\t\t\tNo Comments\t\t</span>",
+          "target": [
+            ".post-2296 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Lær hvordan skrive forretningsplan med tydelige mål, marked, økonomi og strategi. Start riktig og lag en solid plan for bedriften din nå i dag.</p>",
+          "target": [
+            ".post-2293 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-date\">\n\t\t\tApril 28, 2026\t\t</span>",
+          "target": [
+            ".post-2293 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-avatar\">\n\t\t\tNo Comments\t\t</span>",
+          "target": [
+            ".post-2293 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Få oversikt over hva skal stå på en faktura. Bruk riktige krav, fakturanummer, MVA og betalingsfrist før du sender.</p>",
+          "target": [
+            ".post-2290 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-date\">\n\t\t\tApril 28, 2026\t\t</span>",
+          "target": [
+            ".post-2290 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-avatar\">\n\t\t\tNo Comments\t\t</span>",
+          "target": [
+            ".post-2290 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Få oversikt over hvordan sende faktura som selvstendig næringsdrivende. Bruk riktige krav, frister og MVA-regler fra start.</p>",
+          "target": [
+            ".post-2287 > .elementor-post__card > .elementor-post__text > .elementor-post__excerpt > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-date\">\n\t\t\tApril 28, 2026\t\t</span>",
+          "target": [
+            ".post-2287 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"elementor-post-avatar\">\n\t\t\tNo Comments\t\t</span>",
+          "target": [
+            ".post-2287 > .elementor-post__card > .elementor-post__meta-data > .elementor-post-avatar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.24 (foreground color: #adadad, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ]
+}

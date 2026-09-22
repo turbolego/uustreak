@@ -1,0 +1,31 @@
+{
+  "project": "Accenture Norge",
+  "timestamp": "2026-01-09T00:28:22.534Z",
+  "url": "https://www.accenture.com/no-en",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"rad-carousel-block__title\">\"AI is only a technology. The value comes from reinvention of how we work, our workforces and the tools we use… We are making sure that we are leading the way with our own reinvention.\"</h4>",
+          "target": [
+            ".rad-carousel-block__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    }
+  ]
+}

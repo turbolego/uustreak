@@ -1,0 +1,154 @@
+{
+  "project": "Privat Omsorg Nord AS",
+  "timestamp": "2025-10-07T10:24:53.240Z",
+  "url": "https://abeloneoslo.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button class=\"open\">",
+          "target": [
+            ".open"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"close\">",
+          "target": [
+            ".close"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a class=\"sbi_photo\" href=\"https://www.instagram.com/p/DPdtKQPExFg/\" target=\"_blank\" rel=\"noopener nofollow\" data-full-res=\"https://resthon.prod.dekodes.no/content/uploads/sites/8/sb-instagram-feed-images/561031622_18029905373720986_7985842482262242352_nfull.webp\" data-img-src-set=\"{&quot;d&quot;:&quot;https:\\/\\/scontent.cdninstagram.com\\/v\\/t51.82787-15\\/561031622_18029905373720986_7985842482262242352_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=KbAszR2KBL0Q7kNvwHh-d7g&amp;_nc_oc=AdnGK-cJqd-74EftwAxSS9TFR8BXP32AZ5cCVw4f4rv1MeL73vexjwE92miWLbmiXAeAoxW5inDfkWS6SCGsJnaX&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;_nc_gid=IrPT42elLbJUvwzeivE_Nw&amp;oh=00_AfdeGvDehHy2Tjc5UpjAMgifaSQaoB3xWyB6y5NqUhnBGQ&amp;oe=68EA3C03&quot;,&quot;150&quot;:&quot;https:\\/\\/scontent.cdninstagram.com\\/v\\/t51.82787-15\\/561031622_18029905373720986_7985842482262242352_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=KbAszR2KBL0Q7kNvwHh-d7g&amp;_nc_oc=AdnGK-cJqd-74EftwAxSS9TFR8BXP32AZ5cCVw4f4rv1MeL73vexjwE92miWLbmiXAeAoxW5inDfkWS6SCGsJnaX&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;_nc_gid=IrPT42elLbJUvwzeivE_Nw&amp;oh=00_AfdeGvDehHy2Tjc5UpjAMgifaSQaoB3xWyB6y5NqUhnBGQ&amp;oe=68EA3C03&quot;,&quot;320&quot;:&quot;https:\\/\\/scontent.cdninstagram.com\\/v\\/t51.82787-15\\/561031622_18029905373720986_7985842482262242352_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=KbAszR2KBL0Q7kNvwHh-d7g&amp;_nc_oc=AdnGK-cJqd-74EftwAxSS9TFR8BXP32AZ5cCVw4f4rv1MeL73vexjwE92miWLbmiXAeAoxW5inDfkWS6SCGsJnaX&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;_nc_gid=IrPT42elLbJUvwzeivE_Nw&amp;oh=00_AfdeGvDehHy2Tjc5UpjAMgifaSQaoB3xWyB6y5NqUhnBGQ&amp;oe=68EA3C03&quot;,&quot;640&quot;:&quot;https:\\/\\/scontent.cdninstagram.com\\/v\\/t51.82787-15\\/561031622_18029905373720986_7985842482262242352_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=KbAszR2KBL0Q7kNvwHh-d7g&amp;_nc_oc=AdnGK-cJqd-74EftwAxSS9TFR8BXP32AZ5cCVw4f4rv1MeL73vexjwE92miWLbmiXAeAoxW5inDfkWS6SCGsJnaX&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;_nc_gid=IrPT42elLbJUvwzeivE_Nw&amp;oh=00_AfdeGvDehHy2Tjc5UpjAMgifaSQaoB3xWyB6y5NqUhnBGQ&amp;oe=68EA3C03&quot;}\" style=\"height: 389.719px;\">",
+          "target": [
+            "#sbi_18052969385645909 > .sbi_photo_wrap > .sbi_photo[rel=\"noopener nofollow\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"sbi_photo\" href=\"https://www.instagram.com/p/DPEDKwHjrrH/\" target=\"_blank\" rel=\"noopener nofollow\" data-full-res=\"https://resthon.prod.dekodes.no/content/uploads/sites/8/sb-instagram-feed-images/553360903_18028596509720986_2849586506442449181_nfull.webp\" data-img-src-set=\"{&quot;d&quot;:&quot;https:\\/\\/scontent.cdninstagram.com\\/v\\/t51.82787-15\\/553360903_18028596509720986_2849586506442449181_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=fWIbzn7L5scQ7kNvwHEZ1_o&amp;_nc_oc=AdmMEZ71u5t1k88ZBsXMh9qLhIcvv7PYGFdx1I_DXaV8N95Qc3NzW_sV4iS2wV1Ncz-Np2tWTRXKX0a5Jk3SqJ7y&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;_nc_gid=IrPT42elLbJUvwzeivE_Nw&amp;oh=00_Afev4MSQKVdDS6VSaV_I3NEU7LTM_uz78OTci8ogzCaw-w&amp;oe=68EA40F9&quot;,&quot;150&quot;:&quot;https:\\/\\/scontent.cdninstagram.com\\/v\\/t51.82787-15\\/553360903_18028596509720986_2849586506442449181_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=fWIbzn7L5scQ7kNvwHEZ1_o&amp;_nc_oc=AdmMEZ71u5t1k88ZBsXMh9qLhIcvv7PYGFdx1I_DXaV8N95Qc3NzW_sV4iS2wV1Ncz-Np2tWTRXKX0a5Jk3SqJ7y&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;_nc_gid=IrPT42elLbJUvwzeivE_Nw&amp;oh=00_Afev4MSQKVdDS6VSaV_I3NEU7LTM_uz78OTci8ogzCaw-w&amp;oe=68EA40F9&quot;,&quot;320&quot;:&quot;https:\\/\\/scontent.cdninstagram.com\\/v\\/t51.82787-15\\/553360903_18028596509720986_2849586506442449181_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=fWIbzn7L5scQ7kNvwHEZ1_o&amp;_nc_oc=AdmMEZ71u5t1k88ZBsXMh9qLhIcvv7PYGFdx1I_DXaV8N95Qc3NzW_sV4iS2wV1Ncz-Np2tWTRXKX0a5Jk3SqJ7y&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;_nc_gid=IrPT42elLbJUvwzeivE_Nw&amp;oh=00_Afev4MSQKVdDS6VSaV_I3NEU7LTM_uz78OTci8ogzCaw-w&amp;oe=68EA40F9&quot;,&quot;640&quot;:&quot;https:\\/\\/scontent.cdninstagram.com\\/v\\/t51.82787-15\\/553360903_18028596509720986_2849586506442449181_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=fWIbzn7L5scQ7kNvwHEZ1_o&amp;_nc_oc=AdmMEZ71u5t1k88ZBsXMh9qLhIcvv7PYGFdx1I_DXaV8N95Qc3NzW_sV4iS2wV1Ncz-Np2tWTRXKX0a5Jk3SqJ7y&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;_nc_gid=IrPT42elLbJUvwzeivE_Nw&amp;oh=00_Afev4MSQKVdDS6VSaV_I3NEU7LTM_uz78OTci8ogzCaw-w&amp;oe=68EA40F9&quot;}\" style=\"height: 389.719px;\">",
+          "target": [
+            "#sbi_18342839269160534 > .sbi_photo_wrap > .sbi_photo[rel=\"noopener nofollow\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"sbi_photo\" href=\"https://www.instagram.com/p/DO5hHWEkjo3/\" target=\"_blank\" rel=\"noopener nofollow\" data-full-res=\"https://resthon.prod.dekodes.no/content/uploads/sites/8/sb-instagram-feed-images/552420401_18027957347720986_702739345467886581_nfull.webp\" data-img-src-set=\"{&quot;d&quot;:&quot;https:\\/\\/scontent.cdninstagram.com\\/v\\/t51.82787-15\\/552420401_18027957347720986_702739345467886581_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=f6RR3NkbpPMQ7kNvwGS50Ef&amp;_nc_oc=Adnv_1TKI9BZtqvR0FGN3Ywde0O-jk-N9Wh7tCsRq6_kavsUGlYvFxfhQjREiYCYV-YLMhvgaXrKyilrsdeTLsTk&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;_nc_gid=IrPT42elLbJUvwzeivE_Nw&amp;oh=00_AfccN5sYTUY8J-BzM4TSbJxFaTd2w9xndO53b68ZgOn-vw&amp;oe=68EA44F8&quot;,&quot;150&quot;:&quot;https:\\/\\/scontent.cdninstagram.com\\/v\\/t51.82787-15\\/552420401_18027957347720986_702739345467886581_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=f6RR3NkbpPMQ7kNvwGS50Ef&amp;_nc_oc=Adnv_1TKI9BZtqvR0FGN3Ywde0O-jk-N9Wh7tCsRq6_kavsUGlYvFxfhQjREiYCYV-YLMhvgaXrKyilrsdeTLsTk&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;_nc_gid=IrPT42elLbJUvwzeivE_Nw&amp;oh=00_AfccN5sYTUY8J-BzM4TSbJxFaTd2w9xndO53b68ZgOn-vw&amp;oe=68EA44F8&quot;,&quot;320&quot;:&quot;https:\\/\\/scontent.cdninstagram.com\\/v\\/t51.82787-15\\/552420401_18027957347720986_702739345467886581_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=f6RR3NkbpPMQ7kNvwGS50Ef&amp;_nc_oc=Adnv_1TKI9BZtqvR0FGN3Ywde0O-jk-N9Wh7tCsRq6_kavsUGlYvFxfhQjREiYCYV-YLMhvgaXrKyilrsdeTLsTk&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;_nc_gid=IrPT42elLbJUvwzeivE_Nw&amp;oh=00_AfccN5sYTUY8J-BzM4TSbJxFaTd2w9xndO53b68ZgOn-vw&amp;oe=68EA44F8&quot;,&quot;640&quot;:&quot;https:\\/\\/scontent.cdninstagram.com\\/v\\/t51.82787-15\\/552420401_18027957347720986_702739345467886581_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=f6RR3NkbpPMQ7kNvwGS50Ef&amp;_nc_oc=Adnv_1TKI9BZtqvR0FGN3Ywde0O-jk-N9Wh7tCsRq6_kavsUGlYvFxfhQjREiYCYV-YLMhvgaXrKyilrsdeTLsTk&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;_nc_gid=IrPT42elLbJUvwzeivE_Nw&amp;oh=00_AfccN5sYTUY8J-BzM4TSbJxFaTd2w9xndO53b68ZgOn-vw&amp;oe=68EA44F8&quot;}\" style=\"height: 389.719px;\">",
+          "target": [
+            "#sbi_18104402875590316 > .sbi_photo_wrap > .sbi_photo[rel=\"noopener nofollow\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"skip-link screen-reader-text\" id=\"wp-skip-link\" href=\"#wp--skip-link--target\">Hopp til innhold</a>",
+          "target": [
+            "#wp-skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

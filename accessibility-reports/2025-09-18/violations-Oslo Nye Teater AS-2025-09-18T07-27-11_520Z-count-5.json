@@ -1,0 +1,550 @@
+{
+  "project": "Oslo Nye Teater AS",
+  "timestamp": "2025-09-18T07:27:11.520Z",
+  "url": "https://oslonye.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button class=\"cky-btn cky-btn-accept\" aria-label=\"Aksepter alt\" data-cky-tag=\"accept-button\" style=\"color: #d0d0d0; border-color: #1863dc; background-color: #1863dc;\">Aksepter alt</button>",
+          "target": [
+            "button[data-cky-tag=\"accept-button\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.52 (foreground color: #d0d0d0, background color: #1863dc, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h4 class=\"text-uppercase location\">Centralteatret</h4>",
+          "target": [
+            ".hero-banner__cover > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 class=\"title\">Oslo Nye Teater AS</h4>",
+          "target": [
+            ".medium-6.large-2.cell:nth-child(2) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/label-title-only?application=playwright",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input type=\"text\" placeholder=\"Søk\" value=\"\" name=\"s\" id=\"s\" onblur=\"if (this.value == '') { this.value = ''; }\" onfocus=\"if (this.value == ''){this.value = '';}\" title=\"Søk etter...\">",
+          "target": [
+            "#s"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 11,
+      "nodes": [
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/pinocchio/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/2400x1350-Pinocchio-1-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".alignment-right > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/gjentakelsen-2/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/NY-Gjentakelsen_OsloNyeTeater2025_LarsOpstad_400-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.block.bg-none > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/jul-med-proysen-og-snekker-andersen/\" class=\"les-mer-link\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.block.bg-none > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/kristiania-magiske-tivolitheater/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/2400x1350KMTT-2025-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-left.block.bg-none > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/allsang-i-grensen-centralteatret/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/2025-Alllsang-host-2025-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .alignment-top.block.bg-none > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/kilder-til-begeistring/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/2400x1350-KilderTilBegeistring-tettere-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".large-4.cpt.medium-6:nth-child(3) > .alignment-top.block.bg-none > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/richard-obriens-the-rocky-horror-show/\" class=\"les-mer-link\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-left.block.bg-none > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/borgerteatret/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/Borgerteatret_2023_Fotspor-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(7) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.block.bg-none > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/ond-spiral/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/2400x1350-Sigrid_Ond-Spiral-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6 > .alignment-left.block.bg-none > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://oslonye.no/forestillinger/utbrent-av-den-hellige-and/\" class=\"les-mer-link\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        \t<div class=\"image-cover \" style=\"background-image: url('https://oslonye.no/wp-content/uploads/2400x1350-Utbrentavdenhellige-and-scaled.jpg');\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t        </a>",
+          "target": [
+            ".teaterkjellern.alignment-top.block > .les-mer-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"javascript:void(0);\" class=\"scroll-to-top\">\n\t\t\t\t\t<img src=\"https://oslonye.no/wp-content/themes/Kodeks-WP-theme/images/arrow_up_black.svg\" alt=\"\">\n\t\t\t\t</a>",
+          "target": [
+            ".scroll-to-top"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 50,
+      "nodes": [
+        {
+          "html": "<video style=\"object-fit: cover;\" width=\"100%\" playsinline=\"\" height=\"100%\" id=\"background-video\" autoplay=\"\" loop=\"\" muted=\"\" poster=\"https://oslonye.no/wp-content/uploads/2400x1350-RockyHorrorAdrian-scaled.jpg\">",
+          "target": [
+            "#background-video"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"background-link\" href=\"https://oslonye.no/forestillinger/richard-obriens-the-rocky-horror-show/\">",
+          "target": [
+            ".background-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-container\">",
+          "target": [
+            ".hero-banner > .grid-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"\">",
+          "target": [
+            ".theater-list > li:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"\">",
+          "target": [
+            ".theater-list > li:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-8 medium-6\" data-gtm=\"{&quot;id&quot;:&quot;1342583&quot;,&quot;brand&quot;:&quot;hovedscenen&quot;,&quot;category&quot;:&quot;Familieforestilling \\u2013 anbefales fra 6 \\u00e5r&quot;,&quot;name&quot;:&quot;Pinocchio&quot;}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tInfo om billettkjøp\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".border-orange.advertise.text-center > .text-green.heading-small.content-holder > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"short-description\">\n\t\t\t\t\t\t\t\t           \t\t\t\tLes om billettkjøp, hørselshjelp, rullestolplasser, barnehagebilletter m.m.\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".border-orange.advertise.text-center > .text-green.heading-small.content-holder > .short-description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tEtterfest på The Rocky Horror Show\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".large-4.medium-6.cell:nth-child(1) > a[target=\"_blank\"] > .advertise-cover- > .border-green.advertise.text-center > .text-yellow.heading-small.content-holder > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"short-description\">\n\t\t\t\t\t\t\t\t           \t\t\t\tPå lørdager fortsetter festen etter at The Rocky Horror Show er ferdigspilt. Åpent for alle - gratis adgang!\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".large-4.medium-6.cell:nth-child(1) > a[target=\"_blank\"] > .advertise-cover- > .border-green.advertise.text-center > .text-yellow.heading-small.content-holder > .short-description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-4 medium-6\" data-gtm=\"{&quot;id&quot;:&quot;1433493&quot;,&quot;brand&quot;:&quot;hovedscenen&quot;,&quot;name&quot;:&quot;Gjenta­kel­sen&quot;}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tÅrs­rapport\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".text-orange > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"short-description\">\n\t\t\t\t\t\t\t\t           \t\t\t\t2024\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".text-orange > .short-description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"forestillinger-blocks-panel \">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-4 medium-6\" data-gtm=\"{&quot;id&quot;:&quot;1291183&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;name&quot;:&quot;Allsang i Grensen&quot;}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tKontakt\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".large-4.medium-6.cell:nth-child(2) > a[target=\"_blank\"] > .advertise-cover-rounded > .rounded.border-yellow.advertise > .text-green.heading-small.content-holder > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-4 medium-6\" data-gtm=\"{&quot;id&quot;:&quot;1397033&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;name&quot;:&quot;Kilder til begeistring&quot;}\">",
+          "target": [
+            ".large-4.cpt.medium-6:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"forestillinger-blocks-panel \">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tBli med-billetten\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".border-orange.advertise.text-center > .text-yellow.heading-small.content-holder > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"short-description\">\n\t\t\t\t\t\t\t\t           \t\t\t\tVia vårt inkluderingsprosjekt BLI MED-BILLETTEN kan institusjoner, humanitære organisasjoner mfl. søke om å kjøpe teaterbilletter til kun 65 kr på vegne av sine brukere.\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".border-orange.advertise.text-center > .text-yellow.heading-small.content-holder > .short-description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-8 medium-6\" data-gtm=\"{&quot;id&quot;:&quot;1319954&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;name&quot;:&quot;Ond spiral&quot;}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(8) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tNYHETER\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".large-4.medium-6.cell:nth-child(1) > a[target=\"_blank\"] > .advertise-cover-rounded > .rounded.border-yellow.advertise > .text-green.heading-small.content-holder > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"short-description\">\n\t\t\t\t\t\t\t\t           \t\t\t\tMotta vårt nyhetsbrev\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".rounded.border-yellow.advertise > .text-green.heading-small.content-holder > .short-description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cpt cell large-4 medium-6\" data-gtm=\"{&quot;id&quot;:&quot;1345384&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;name&quot;:&quot;Utbrent av den hellige \\u00e5nd&quot;}\">",
+          "target": [
+            ".forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"title\">\n\t\t\t\t\t\t\t\t           \t\t\t\tPODKAST\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".large-4.medium-6.cell:nth-child(3) > a[target=\"_blank\"] > .advertise-cover- > .border-green.advertise.text-center > .text-yellow.heading-small.content-holder > .title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"short-description\">\n\t\t\t\t\t\t\t\t           \t\t\t\tFølg Oslo Nye Teaters podkaster og få intervjuer og bakgrunnsinformasjon om forestillingene våre.\t\t\t\t\t\t\t\t           \t\t\t</div>",
+          "target": [
+            ".large-4.medium-6.cell:nth-child(3) > a[target=\"_blank\"] > .advertise-cover- > .border-green.advertise.text-center > .text-yellow.heading-small.content-holder > .short-description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-white text-uppercase text-center current-month\">\n                        september                    </div>",
+          "target": [
+            ".current-month"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"next desktop\">oktober</div>",
+          "target": [
+            ".desktop"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1342583&quot;,&quot;brand&quot;:&quot;hovedscenen&quot;,&quot;category&quot;:&quot;Familieforestilling \\u2013 anbefales fra 6 \\u00e5r&quot;,&quot;name&quot;:&quot;Pinocchio&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1343853&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;category&quot;:&quot;Ungdom \\/ voksne&quot;,&quot;name&quot;:&quot;Richard O\\u2019Briens &lt;br\\/&gt;THE ROCKY HORROR SHOW&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1342583&quot;,&quot;brand&quot;:&quot;hovedscenen&quot;,&quot;category&quot;:&quot;Familieforestilling \\u2013 anbefales fra 6 \\u00e5r&quot;,&quot;name&quot;:&quot;Pinocchio&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1343853&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;category&quot;:&quot;Ungdom \\/ voksne&quot;,&quot;name&quot;:&quot;Richard O\\u2019Briens &lt;br\\/&gt;THE ROCKY HORROR SHOW&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1342583&quot;,&quot;brand&quot;:&quot;hovedscenen&quot;,&quot;category&quot;:&quot;Familieforestilling \\u2013 anbefales fra 6 \\u00e5r&quot;,&quot;name&quot;:&quot;Pinocchio&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1345384&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;name&quot;:&quot;Utbrent av den hellige \\u00e5nd&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1343853&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;category&quot;:&quot;Ungdom \\/ voksne&quot;,&quot;name&quot;:&quot;Richard O\\u2019Briens &lt;br\\/&gt;THE ROCKY HORROR SHOW&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1345384&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;name&quot;:&quot;Utbrent av den hellige \\u00e5nd&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(9)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1342583&quot;,&quot;brand&quot;:&quot;hovedscenen&quot;,&quot;category&quot;:&quot;Familieforestilling \\u2013 anbefales fra 6 \\u00e5r&quot;,&quot;name&quot;:&quot;Pinocchio&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(10)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1343853&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;category&quot;:&quot;Ungdom \\/ voksne&quot;,&quot;name&quot;:&quot;Richard O\\u2019Briens &lt;br\\/&gt;THE ROCKY HORROR SHOW&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(11)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1433493&quot;,&quot;brand&quot;:&quot;hovedscenen&quot;,&quot;name&quot;:&quot;Gjenta­kel­sen&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(12)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1343853&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;category&quot;:&quot;Ungdom \\/ voksne&quot;,&quot;name&quot;:&quot;Richard O\\u2019Briens &lt;br\\/&gt;THE ROCKY HORROR SHOW&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(13)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1433493&quot;,&quot;brand&quot;:&quot;hovedscenen&quot;,&quot;name&quot;:&quot;Gjenta­kel­sen&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(14)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1343853&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;category&quot;:&quot;Ungdom \\/ voksne&quot;,&quot;name&quot;:&quot;Richard O\\u2019Briens &lt;br\\/&gt;THE ROCKY HORROR SHOW&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(15)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1433493&quot;,&quot;brand&quot;:&quot;hovedscenen&quot;,&quot;name&quot;:&quot;Gjenta­kel­sen&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(16)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1343853&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;category&quot;:&quot;Ungdom \\/ voksne&quot;,&quot;name&quot;:&quot;Richard O\\u2019Briens &lt;br\\/&gt;THE ROCKY HORROR SHOW&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(17)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1342583&quot;,&quot;brand&quot;:&quot;hovedscenen&quot;,&quot;category&quot;:&quot;Familieforestilling \\u2013 anbefales fra 6 \\u00e5r&quot;,&quot;name&quot;:&quot;Pinocchio&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(18)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1343853&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;category&quot;:&quot;Ungdom \\/ voksne&quot;,&quot;name&quot;:&quot;Richard O\\u2019Briens &lt;br\\/&gt;THE ROCKY HORROR SHOW&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(19)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1342583&quot;,&quot;brand&quot;:&quot;hovedscenen&quot;,&quot;category&quot;:&quot;Familieforestilling \\u2013 anbefales fra 6 \\u00e5r&quot;,&quot;name&quot;:&quot;Pinocchio&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(20)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1343853&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;category&quot;:&quot;Ungdom \\/ voksne&quot;,&quot;name&quot;:&quot;Richard O\\u2019Briens &lt;br\\/&gt;THE ROCKY HORROR SHOW&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(21)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1343853&quot;,&quot;brand&quot;:&quot;centralteatret&quot;,&quot;category&quot;:&quot;Ungdom \\/ voksne&quot;,&quot;name&quot;:&quot;Richard O\\u2019Briens &lt;br\\/&gt;THE ROCKY HORROR SHOW&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(22)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"grid-x grid-padding-x kommende-forestillinger align-middle\" data-gtm=\"{&quot;id&quot;:&quot;1433493&quot;,&quot;brand&quot;:&quot;hovedscenen&quot;,&quot;name&quot;:&quot;Gjenta­kel­sen&quot;}\">",
+          "target": [
+            ".kommende-forestillinger.align-middle.grid-padding-x:nth-child(23)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

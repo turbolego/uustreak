@@ -1,0 +1,284 @@
+{
+  "project": "Top Temp AS",
+  "timestamp": "2025-12-21T01:03:03.450Z",
+  "url": "https://www.toptemp.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button tabindex=\"0\" onclick=\"CookieInformation.declineAllCategories()\" aria-label=\"Avvis alle\" id=\"declineButton\" class=\"coi-banner__decline\" role=\"alert\" aria-atomic=\"true\" style=\"display: flex;\">\n            Avvis alle\n          </button>",
+          "target": [
+            "#declineButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role alert is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3>&nbsp;</h3>",
+          "target": [
+            "#hs_cos_wrapper_module_16847581314182_ > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"menu__link   \" href=\"\"></a>",
+          "target": [
+            ".menu--desktop > .menu__wrapper.no-list > .menu__item--depth-1.menu__item.hs-skip-lang-url-rewrite:nth-child(1) > .menu__link[href=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 19,
+      "nodes": [
+        {
+          "html": "<div class=\"row-fluid-wrapper row-depth-1 row-number-1 dnd_area-row-0-force-full-width-section dnd-section dnd_area-row-0-padding\">",
+          "target": [
+            ".row-number-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"interactive-button-wrapper\">\n  <a class=\"interactive-button\" href=\"https://www.toptemp.no/jobbjakten?hsCtaAttrib=117543557091\" data-container-navigation-controller=\"true\">Jeg er jobbsøker</a>\n</div>",
+          "target": [
+            ".hs-cta-embed-117543557091 > .go812842568[aria-label=\"Embedded CTA\"][title=\"Embedded CTA\"]",
+            ".interactive-button-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"interactive-button-wrapper\">",
+          "target": [
+            ".hs-cta-embed-118207266247 > .go812842568[aria-label=\"Embedded CTA\"][title=\"Embedded CTA\"]",
+            ".interactive-button-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"span6 widget-span widget-type-cell cell_17288948801924-vertical-alignment dnd-column\" style=\"\" data-widget-type=\"cell\" data-x=\"6\" data-w=\"6\">",
+          "target": [
+            ".cell_17288948801924-vertical-alignment"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row-fluid-wrapper row-depth-1 row-number-9 dnd-row\">",
+          "target": [
+            ".row-number-9"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"body-wrapper   hs-content-id-118246171351 hs-web-interactive \">",
+          "target": [
+            ".hs-cta-embed-118246171351 > .go812842568[aria-label=\"Embedded CTA\"][title=\"Embedded CTA\"]",
+            ".body-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"body-wrapper   hs-content-id-118357267693 hs-web-interactive \">",
+          "target": [
+            ".hs-cta-embed-118357267693 > .go812842568[aria-label=\"Embedded CTA\"][title=\"Embedded CTA\"]",
+            ".body-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"body-wrapper   hs-content-id-118357267939 hs-web-interactive \">",
+          "target": [
+            ".hs-cta-embed-118357267939 > .go812842568[aria-label=\"Embedded CTA\"][title=\"Embedded CTA\"]",
+            ".body-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"body-wrapper   hs-content-id-118358485483 hs-web-interactive \">",
+          "target": [
+            ".hs-cta-embed-118358485483 > .go812842568[aria-label=\"Embedded CTA\"][title=\"Embedded CTA\"]",
+            ".body-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"body-wrapper   hs-content-id-118359585984 hs-web-interactive \">",
+          "target": [
+            ".hs-cta-embed-118359585984 > .go812842568[aria-label=\"Embedded CTA\"][title=\"Embedded CTA\"]",
+            ".body-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"body-wrapper   hs-content-id-118359552209 hs-web-interactive \">",
+          "target": [
+            ".hs-cta-embed-118359552209 > .go812842568[aria-label=\"Embedded CTA\"][title=\"Embedded CTA\"]",
+            ".body-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row-fluid-wrapper row-depth-1 row-number-18 dnd-section dnd_area-row-4-max-width-section-centering dnd_area-row-4-padding\">",
+          "target": [
+            ".row-number-18"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"simple-heading bolded playfair left\">",
+          "target": [
+            ".simple-heading"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row-fluid-wrapper row-depth-1 row-number-22 dnd-row\">",
+          "target": [
+            ".row-number-22"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row-fluid-wrapper row-depth-1 row-number-23 dnd-row\">",
+          "target": [
+            ".row-number-23"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"span6 widget-span widget-type-cell cell_1684744938200-vertical-alignment dnd-column\" style=\"\" data-widget-type=\"cell\" data-x=\"6\" data-w=\"6\">",
+          "target": [
+            ".cell_1684744938200-vertical-alignment"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row-fluid-wrapper row-depth-1 row-number-27 dnd_area-row-7-background-color dnd_area-row-7-background-layers dnd-section dnd_area-row-7-force-full-width-section dnd_area-row-7-padding\">",
+          "target": [
+            ".row-number-27"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row-fluid-wrapper row-depth-1 row-number-29 dnd_area-row-8-max-width-section-centering dnd-section dnd_area-row-8-padding\">",
+          "target": [
+            ".row-number-29"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"row-fluid-wrapper row-depth-1 row-number-32 dnd-section dnd_area-row-9-background-color dnd_area-row-9-background-layers\">",
+          "target": [
+            ".row-number-32"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "project": "Vitus Apotek Norsk Medisinaldepot AS",
+  "timestamp": "2026-06-16T05:48:19.962Z",
+  "url": "https://www.vitusapotek.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "description": "Ensure ARIA attributes are not prohibited for an element's role",
+      "help": "Elements must only use permitted ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<div class=\"campaign-banner__cms-content-wrapper\" aria-label=\"Kosttilskudd for håret fra Hair Luxious\"><div class=\"campaign-banner__cms-content\" aria-hidden=\"true\"><div class=\"cms-content\"><h2>Kosttilskudd for håret</h2><p class=\"cms-content__heading-thin\">fra Hair Luxious</p></div></div></div>",
+          "target": [
+            ".cms-campaign-banners:nth-child(7) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        },
+        {
+          "html": "<div class=\"campaign-banner__cms-content-wrapper\" aria-label=\"Effektiv hårpleie fra Eleni &amp; Chris\"><div class=\"campaign-banner__cms-content\" aria-hidden=\"true\"><div class=\"cms-content\"><h2>Effektiv hårpleie</h2><p class=\"cms-content__heading-thin\">fra Eleni &amp; Chris</p></div></div></div>",
+          "target": [
+            ".cms-campaign-banners:nth-child(7) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        },
+        {
+          "html": "<div class=\"campaign-banner__cms-content-wrapper\" aria-label=\"Hårpleie mot hårtap fra Nisim\"><div class=\"campaign-banner__cms-content\" aria-hidden=\"true\"><div class=\"cms-content\"><h2>Hårpleie mot hårtap</h2><p class=\"cms-content__heading-thin\">fra Nisim</p><p></p></div></div></div>",
+          "target": [
+            "div[aria-label=\"Hårpleie mot hårtap fra Nisim\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        },
+        {
+          "html": "<div class=\"campaign-banner__cms-content-wrapper\" aria-label=\"Ta en titt på vårens nyheter!\"><div class=\"campaign-banner__cms-content\" aria-hidden=\"true\"><div class=\"cms-content\"><h2><span style=\"color:#005B2D\">Ta en titt på vårens nyheter!</span></h2></div></div></div>",
+          "target": [
+            "div[aria-label=\"Ta en titt på vårens nyheter!\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        },
+        {
+          "html": "<div class=\"campaign-banner__cms-content-wrapper\" aria-label=\"50% på CeraVe solpleie\"><div class=\"campaign-banner__cms-content\" aria-hidden=\"true\"><div class=\"cms-content\"><h2>50% på CeraVe solpleie</h2></div></div></div>",
+          "target": [
+            "div[aria-label=\"50% på CeraVe solpleie\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        },
+        {
+          "html": "<div class=\"campaign-banner__cms-content-wrapper\" aria-label=\"2 for 30% på produkter til baby og barn Gjelder ved kjøp av 2 eller flere. Plukk & miks\">",
+          "target": [
+            ".cms-campaign-banners:nth-child(13) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        },
+        {
+          "html": "<div class=\"campaign-banner__cms-content-wrapper\" aria-label=\"2 for 30% på alt fra OGX og Ayumi Gjelder ved kjøp av 2 eller flere. Plukk & miks\">",
+          "target": [
+            ".cms-campaign-banners:nth-child(13) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        },
+        {
+          "html": "<div class=\"campaign-banner__cms-content-wrapper\" aria-label=\"2 for 30% på nesten all intimpleie Gjelder ved kjøp av 2 eller flere. Plukk & miks\">",
+          "target": [
+            ".cms-campaign-banners:nth-child(13) > .cms-campaign-banners__content.cms-banners > .campaign-banner--centered.campaign-banner.banner:nth-child(3) > .campaign-banner__content-wrapper.banner__content-wrapper > .campaign-banner__text.banner__text > .campaign-banner__cms-content-wrapper"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": "serious",
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/list?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ul class=\"nav-desktop__list\">",
+          "target": [
+            ".nav-desktop__list"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=none]"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a href=\"#main__content\" class=\"header__skip-link\">Hopp til hovedinnhold</a>",
+          "target": [
+            ".header__skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"banner__image-wrapper\">",
+          "target": [
+            ".footer-banner > .banner__image-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"banner__content-wrapper\">",
+          "target": [
+            ".footer-banner > .banner__content-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

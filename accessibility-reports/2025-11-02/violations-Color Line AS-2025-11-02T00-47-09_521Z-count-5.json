@@ -1,0 +1,343 @@
+{
+  "project": "Color Line AS",
+  "timestamp": "2025-11-02T00:47:09.521Z",
+  "url": "https://www.colorline.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 25,
+      "nodes": [
+        {
+          "html": "<div class=\"tag -colorclub\">Halv pris på oppgradering</div>",
+          "target": [
+            "a[href$=\"cruise-til-kiel\"] > .card-body > .-colorclub.tag"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.12 (foreground color: #f99d1c, background color: #ffffff, font size: 14.3pt (19px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "html": "<div class=\"tag -colorclub\">50 % rabatt</div>",
+          "target": [
+            "a[href$=\"bilferie\"] > .card-body > .-colorclub.tag"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.12 (foreground color: #f99d1c, background color: #ffffff, font size: 14.3pt (19px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "html": "<div class=\"tag -colorclub\">Bilpakke Color Club</div>",
+          "target": [
+            "a[href$=\"bilpakke\"] > .card-body > .-colorclub.tag"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.12 (foreground color: #f99d1c, background color: #ffffff, font size: 14.3pt (19px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "html": "<div class=\"tag -colorclub\">Medlemstilbud</div>",
+          "target": [
+            ".product-card.card-link[href$=\"medlemstilbud\"] > .card-body > .-colorclub.tag"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.12 (foreground color: #f99d1c, background color: #ffffff, font size: 14.3pt (19px), font weight: bold). Expected contrast ratio of 3:1"
+        },
+        {
+          "html": "<a href=\"/praktisk-informasjon/kundeservice\">Kundeservice</a>",
+          "target": [
+            ".modLinklist.grid-all-1-4.standard:nth-child(1) > .mod-bd > ul > li:nth-child(1) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/praktisk-informasjon/pass-og-legitimasjon\">Pass og legitimasjon</a>",
+          "target": [
+            ".modLinklist.grid-all-1-4.standard:nth-child(1) > .mod-bd > ul > li:nth-child(2) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/praktisk-informasjon/aldersgrenser\">Aldersgrenser</a>",
+          "target": [
+            ".modLinklist.grid-all-1-4.standard:nth-child(1) > .mod-bd > ul > li:nth-child(3) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/praktisk-informasjon/agent\">Agent - Logg inn</a>",
+          "target": [
+            "a[href$=\"agent\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/praktisk-informasjon/other-pages\">Endre språk/change language?</a>",
+          "target": [
+            ".modLinklist.grid-all-1-4.standard:nth-child(1) > .mod-bd > ul > li:nth-child(5) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"http://www.colorline-cargo.com/\">Color Line Cargo</a>",
+          "target": [
+            ".modLinklist.grid-all-1-4.standard:nth-child(2) > .mod-bd > ul > li > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/praktisk-informasjon/personvern\">Personvern</a>",
+          "target": [
+            ".modLinklist.grid-all-1-4.standard:nth-child(3) > .mod-bd > ul > li:nth-child(1) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/praktisk-informasjon/reisebetingelser\">Reisebetingelser</a>",
+          "target": [
+            ".modLinklist.grid-all-1-4.standard:nth-child(3) > .mod-bd > ul > li:nth-child(2) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"https://colorline.my.site.com/CC/s/guest/signup?language=no\">Meld deg på vårt nyhetsbrev</a>",
+          "target": [
+            ".modLinklist.grid-all-1-4.standard:nth-child(4) > .mod-bd > ul > li > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/praktisk-informasjon/kundeservice\">Åpningstider kundesenter</a>",
+          "target": [
+            ".mod-bd > p:nth-child(2) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/om-oss\">Om Color Line</a>",
+          "target": [
+            "a[href$=\"om-oss\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/om-oss/pressesenter\">Presse</a>",
+          "target": [
+            "a[href$=\"pressesenter\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/om-oss/jobb-i-color-line\">Jobb i Color Line</a>",
+          "target": [
+            "a[href$=\"jobb-i-color-line\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/om-oss/barekraft\">Bærekraft i Color Line</a>",
+          "target": [
+            "a[href$=\"barekraft\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"https://tbsgallery.no/\">TBS Gallery</a>",
+          "target": [
+            "a[href$=\"tbsgallery.no/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"https://www.matchfashion.no/\">Match</a>",
+          "target": [
+            "a[href$=\"matchfashion.no/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"https://www.vic.no/\">Vic</a>",
+          "target": [
+            "a[href$=\"vic.no/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"https://www.boysofeurope.no/\">Boys of Europe</a>",
+          "target": [
+            "a[href$=\"boysofeurope.no/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"https://www.jeanpaul.no/\">Jean Paul</a>",
+          "target": [
+            "a[href$=\"jeanpaul.no/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/praktisk_informasjon/dine_rettigheter\">Dine rettigheter</a>",
+          "target": [
+            ".disclaimer > p:nth-child(2) > a:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/praktisk-informasjon/personvern\">Personvern &amp; Cookies</a>",
+          "target": [
+            "p:nth-child(2) > a:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.25 (foreground color: #1f97bb, background color: #032c48, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3>2-døgns Cruise</h3>",
+          "target": [
+            "a[href$=\"cruise-til-kiel\"] > .card-heading > .heading-text > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"page-top-nav\" rv-class-hamburgeractive=\"m.hamburgerActive\" rv-on-click=\"c.onMenuBackgroundClick\">",
+          "target": [
+            ".page-top-nav"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a href=\"http://www.facebook.com/colorline\">",
+          "target": [
+            ".mod-bd > a:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"http://www.youtube.com/colorline\">",
+          "target": [
+            ".mod-bd > a:nth-child(2)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"http://instagram.com/colorline_norge\">",
+          "target": [
+            ".mod-bd > a:nth-child(3)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "listitem",
+      "impact": "serious",
+      "description": "Ensure <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/listitem?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<li>",
+          "target": [
+            ".items:nth-child(2) > li"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li>",
+          "target": [
+            ".items:nth-child(4) > li"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li>",
+          "target": [
+            ".items:nth-child(5) > li"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li>",
+          "target": [
+            ".items:nth-child(7) > li"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        }
+      ]
+    }
+  ]
+}

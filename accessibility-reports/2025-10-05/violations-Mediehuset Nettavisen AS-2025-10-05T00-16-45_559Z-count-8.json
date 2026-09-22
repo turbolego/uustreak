@@ -1,0 +1,367 @@
+{
+  "project": "Mediehuset Nettavisen AS",
+  "timestamp": "2025-10-05T00:16:45.559Z",
+  "url": "https://www.nettavisen.no/",
+  "total_violations": 8,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h1 class=\"na-logo-header\">\n                <a href=\"/\" tabindex=\"-1\" aria-hidden=\"true\">*Nettavisen.*</a>\n            </h1>",
+          "target": [
+            ".miniheader > .logo-nav-wrap > .logo-nav-wrapper > h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<iframe width=\"1000\" height=\"300\" src=\"javascript:'';\" allowtransparency=\"true\" webkitallowfullscreen=\"\" mozallowfullscreen=\"\" allowfullscreen=\"\" marginwidth=\"0\" marginheight=\"0\" hspace=\"0\" vspace=\"0\" frameborder=\"0\" scrolling=\"no\" data-contents=\"&lt;!DOCTYPE html&gt;&lt;title&gt;ad&lt;/title&gt;&lt;base href='https://s2.adform.net/Banners/Elements/Files/2059406/18992342/bvpath_258/'&gt;&lt;script&gt;try{parent.AdformWin273yyz87nn6(window)}catch(ex){new Image().src='https://track.adform.net/serving/jslog/?src=htmlcb&amp;msg='+encodeURIComponent(''+(ex.stack||ex))}&lt;/script&gt;&lt;script src='https://s2.adform.net/Banners/Elements/Files/2059406/18992342/18992342.js?ADFassetID=18992342&amp;bv=258' charset='UTF-8'&gt;&lt;/script&gt;\" data-onload=\"(function F(a,c){function d(){c?q.open():q.open(&quot;text/html&quot;,&quot;replace&quot;);p?l.call(q,b):q.write(b);g.__rendered__=!0}var b=a.getAttribute(&quot;data-contents&quot;),g=a.contentWindow,f=g.parent,q=g.document,e=g.setTimeout;try{var l=f.parent&amp;&amp;f.parent.HTMLDocument&amp;&amp;f.parent.HTMLDocument.prototype.write}catch(r){}var p=l&amp;&amp;f.HTMLDocument&amp;&amp;f.HTMLDocument.prototype.write!==l;-1==a.offsetHeight||g.__rendered__||(g.__rendered__=!0,c?d():e(d,0))})(this,false)\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe src=\"about:blank\" scrolling=\"no\" style=\"height: 1px; width: 1px; min-height: 100%; max-width: 100%; min-width: 100%; filter: none; transform: none; border: none; outline: none; display: block; position: absolute; opacity: 1; top: 0px; left: 0px; transform-origin: 0px 0px; transition: opacity 0.2s;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]",
+            "iframe[src$=\"about:blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe style=\"position: absolute; pointer-events: none; left: 0px; top: 0px; opacity: 0; height: 0px; width: 0px;\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]",
+            "body > iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe width=\"1920\" height=\"1000\" src=\"javascript:'';\" allowtransparency=\"true\" webkitallowfullscreen=\"\" mozallowfullscreen=\"\" allowfullscreen=\"\" marginwidth=\"0\" marginheight=\"0\" hspace=\"0\" vspace=\"0\" frameborder=\"0\" scrolling=\"no\" data-contents=\"&lt;!DOCTYPE html&gt;&lt;title&gt;ad&lt;/title&gt;&lt;base href='https://s2.adform.net/Banners/Elements/Files/2059406/18992343/bvpath_258/'&gt;&lt;script&gt;try{parent.AdformWin3cn29hkwxxs(window)}catch(ex){new Image().src='https://track.adform.net/serving/jslog/?src=htmlcb&amp;msg='+encodeURIComponent(''+(ex.stack||ex))}&lt;/script&gt;&lt;script src='https://s2.adform.net/Banners/Elements/Files/2059406/18992343/18992343.js?ADFassetID=18992343&amp;bv=258' charset='UTF-8'&gt;&lt;/script&gt;\" data-onload=\"(function F(a,c){function d(){c?q.open():q.open(&quot;text/html&quot;,&quot;replace&quot;);p?l.call(q,b):q.write(b);g.__rendered__=!0}var b=a.getAttribute(&quot;data-contents&quot;),g=a.contentWindow,f=g.parent,q=g.document,e=g.setTimeout;try{var l=f.parent&amp;&amp;f.parent.HTMLDocument&amp;&amp;f.parent.HTMLDocument.prototype.write}catch(r){}var p=l&amp;&amp;f.HTMLDocument&amp;&amp;f.HTMLDocument.prototype.write!==l;-1==a.offsetHeight||g.__rendered__||(g.__rendered__=!0,c?d():e(d,0))})(this,false)\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[width=\"1920\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe src=\"about:blank\" scrolling=\"no\" style=\"height: 1px; width: 1px; min-height: 100%; max-width: 100%; min-width: 100%; filter: none; transform: none; border: none; outline: none; display: block; position: absolute; opacity: 1; top: 0px; left: 0px; transform-origin: 0px 0px; transition: opacity 0.2s;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[width=\"1920\"]",
+            "iframe[src$=\"about:blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe style=\"position: absolute; pointer-events: none; left: 0px; top: 0px; opacity: 0; height: 0px; width: 0px;\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[width=\"1920\"]",
+            "body > iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-banner-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the banner landmark is at top level",
+      "help": "Banner landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-banner-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<header class=\"miniheader\">",
+          "target": [
+            ".miniheader"
+          ],
+          "failureSummary": "Fix any of the following:\n  The banner landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<header id=\"page-header\">",
+          "target": [
+            "#page-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<header id=\"page-header\">",
+          "target": [
+            "#page-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<nav class=\"nav lp_nav\">",
+          "target": [
+            ".miniheader > .logo-nav-wrap > .logo-nav-wrapper > .nav-wrap > nav"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<div class=\"element kind-text text\" role=\"region\" aria-label=\"Ekstra gunstig boliglån \" tabindex=\"0\" id=\"f\" style=\"z-index: 5; background-color: transparent; text-size-adjust: 100%; font-size: 56px; letter-spacing: 0.02em; font-family: f-67891e2a0a19749dcc90cfbd, Helvetica, Arial, Tahoma, &quot;Microsoft Yahei&quot;, 微软雅黑, STXihei, 华文细黑, sans-serif; line-height: 1; color: rgb(255, 255, 255); padding: 0px; overflow: visible; pointer-events: auto; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, -0.0762376, -0.0336633, 1, -0.00099, 77, 34, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#f"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<div class=\"element kind-text text\" role=\"region\" aria-label=\"For deg under 34 år.\" tabindex=\"0\" id=\"e\" style=\"z-index: 4; background-color: transparent; text-size-adjust: 100%; font-size: 32px; letter-spacing: 0em; font-family: f-662a085caa4b93ed27dc17fd, Helvetica, Arial, Tahoma, &quot;Microsoft Yahei&quot;, 微软雅黑, STXihei, 华文细黑, sans-serif; line-height: 1.1; color: rgb(255, 255, 255); padding: 0px; overflow: visible; pointer-events: auto; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, -0.128247, -0.248377, 1, -0.0016233, 79, 153, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#e"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<div class=\"element kind-text text\" role=\"region\" aria-label=\"Nom. rente fra 4,99 %, eff.rente fra 5,18 %. Lån kr 2 000 000 o/25 år. Kost. kr 1 526 690, tot. kr 3 526 690.\" tabindex=\"0\" id=\"d\" style=\"z-index: 3; background-color: transparent; text-size-adjust: 100%; font-size: 9px; letter-spacing: 0em; font-family: f-662a085caa4b93ed27dc17fe, Helvetica, Arial, Tahoma, &quot;Microsoft Yahei&quot;, 微软雅黑, STXihei, 华文细黑, sans-serif; line-height: 1.3; color: rgb(255, 255, 255); padding: 0px; overflow: visible; pointer-events: auto; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, -0.037037, -0.446296, 1, -0.0018518, 20, 241, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#d"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-3ba19832-446b-4d26-b54f-6db67e675fab\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"10\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a href=\"https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsuI1dThhM7UAoHmwpARghS3xsDziiwHgZ-b2_KoKbPZ38H60n8ZDcGwKjEfvavWjQ5M1wlX3942gimIMbr1eudFU3FRHmzoh8EdfndC8txf_Q6SAS4Fb5DVzLFMpHFvFdFHla35xEt_x_niittVhhAebp8i6xNNFugDcK7zjboIuRQBHq1LgVslgElO-bzTGRHlagNPSDjL9vdqDmI7LwsEdRyXsIoni-oHdS2IDEnwns4tdwor9zdjIrWo2Urh3CmTMnQVxQDITaSBexcHYMy1nlYE03RX2SkngIOONKnOm43xd2a0CHH6DQMpG9QAkeqLFpaMPnOpTet-23bWgiIZyPzXeGFioHtkzJqFLtf5riX23mbV_LnzxRKVkwMDkiEw1sYw_6aCwS2tKbg-Bks&amp;sai=AMfl-YRB-a7Cq9QYDiBRLAd2gedwh1cUWm4PrjwoRpv9BOV8UMznnZH_rXwP3N1CxKl19pN0XS54qUOVahStdIlUMpd7Y0TmKVKtTwxRDsrYcfB3wAA6Zf2buj5ePGyamkTMQwN4xLo4XWPLpN32PVdNrHktCzAexbGMK05dfPb1cg2NycvqlmGuZa1DDTLBFXvLMAOb9vHNckquXwih7TZnHTTXOiFF9kk8lhgIMpT0C0QBlyBLEKc1OBc6iWhe9AAPjnIxHM-BX1C5mnLkE7SrigEsl_m0KZABjh8JpNpvlKdhNsuXZWhJqqixYkKv0_XCzHY33su7_592z_qInMDfqgseTiio7fHiWQ4UFmJYDAwKr5Q&amp;sig=Cg0ArKJSzAKjc5WUm5bEEAE&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;urlfix=1&amp;adurl=https://track.adform.net/C/?bn=84401379;C=1;gdpr=0;gdpr_consent=;adfibeg=0;cdata=uiNzo_XQ_8INf2pNHjux8yxRtfS3cusPGEBE3IEkyISuWwe8XsEAMaM2wmA69f_B4Zq_IuQ-0JskrwW7TEq9l8HzWJ8iG5IJK3ZXxGkijJrDeIjrSAcYFw2;;fc=1;CREFURL=https%3a%2f%2fwww.nettavisen.no%2f\" style=\"width:1px;height:1px;display:block;border:0;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "#adform-adbox-3vnas7xupgo > div:nth-child(2) > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsuI1dThhM7UAoHmwpARghS3xsDziiwHgZ-b2_KoKbPZ38H60n8ZDcGwKjEfvavWjQ5M1wlX3942gimIMbr1eudFU3FRHmzoh8EdfndC8txf_Q6SAS4Fb5DVzLFMpHFvFdFHla35xEt_x_niittVhhAebp8i6xNNFugDcK7zjboIuRQBHq1LgVslgElO-bzTGRHlagNPSDjL9vdqDmI7LwsEdRyXsIoni-oHdS2IDEnwns4tdwor9zdjIrWo2Urh3CmTMnQVxQDITaSBexcHYMy1nlYE03RX2SkngIOONKnOm43xd2a0CHH6DQMpG9QAkeqLFpaMPnOpTet-23bWgiIZyPzXeGFioHtkzJqFLtf5riX23mbV_LnzxRKVkwMDkiEw1sYw_6aCwS2tKbg-Bks&amp;sai=AMfl-YRB-a7Cq9QYDiBRLAd2gedwh1cUWm4PrjwoRpv9BOV8UMznnZH_rXwP3N1CxKl19pN0XS54qUOVahStdIlUMpd7Y0TmKVKtTwxRDsrYcfB3wAA6Zf2buj5ePGyamkTMQwN4xLo4XWPLpN32PVdNrHktCzAexbGMK05dfPb1cg2NycvqlmGuZa1DDTLBFXvLMAOb9vHNckquXwih7TZnHTTXOiFF9kk8lhgIMpT0C0QBlyBLEKc1OBc6iWhe9AAPjnIxHM-BX1C5mnLkE7SrigEsl_m0KZABjh8JpNpvlKdhNsuXZWhJqqixYkKv0_XCzHY33su7_592z_qInMDfqgseTiio7fHiWQ4UFmJYDAwKr5Q&amp;sig=Cg0ArKJSzAKjc5WUm5bEEAE&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;urlfix=1&amp;adurl=https://track.adform.net/C/?bn=84401380;C=1;gdpr=0;gdpr_consent=;adfibeg=0;cdata=bm7lewdlXVANf2pNHjux8yxRtfS3cusPS15rUc5b4yd4sMXpgyU2AQWAdNbwFDsX4Zq_IuQ-0JskrwW7TEq9l8HzWJ8iG5IJK3ZXxGkijJrDeIjrSAcYFw2;;fc=1;CREFURL=https%3a%2f%2fwww.nettavisen.no%2f\" style=\"width:1px;height:1px;display:block;border:0;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "#adform-adbox-2xqng1a256s > div:nth-child(2) > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.nettavisen.no/tilbud\" publication=\"www.nettavisen.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"nettavisen\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"am-bazaar-ad--label\" id=\"toppbanner-1-label\">Annonse</span>",
+          "target": [
+            "#toppbanner-1-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"GettyImages-1222008264\" tabindex=\"0\" id=\"b\" style=\"z-index: 1; pointer-events: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, -0.139847, 0.0804597, 1, -0.0006385, 219, -126, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#b"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"dnb-rgb-hvit\" tabindex=\"0\" id=\"a\" style=\"z-index: 0; pointer-events: auto; transform: matrix3d(1, 3.75558e-16, -2.44929e-16, 1.63286e-18, 0, 1, 0, 0, -5.9, -1.53333, 1, -0.00666667, 885, 230, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[width=\"1000\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"GettyImages-1222008264\" tabindex=\"0\" id=\"c\" style=\"z-index: 2; pointer-events: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, -0.068352, 0.079588, 1, -0.0009363, 73, -85, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[width=\"1920\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#c"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"GettyImages-1222008264 (1)\" tabindex=\"0\" id=\"e\" style=\"z-index: 4; pointer-events: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, -1.17322, 0.079588, 1, -0.0009363, 1253, -85, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[width=\"1920\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#e"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"dnb-rgb-hvit left\" tabindex=\"0\" id=\"p\" style=\"z-index: 15; pointer-events: auto; transform: matrix3d(1, 6.05792e-16, -2.44929e-16, 1.63286e-18, 0, 1, 0, 0, -2.18, -2.47333, 1, -0.00666667, 327, 371, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[width=\"1920\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"dnb-rgb-hvit right\" tabindex=\"0\" id=\"k\" style=\"z-index: 10; pointer-events: auto; transform: matrix3d(1, 6.05792e-16, -2.44929e-16, 1.63286e-18, 0, 1, 0, 0, -10.06, -2.47333, 1, -0.00666667, 1509, 371, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nettavisen\\.no\\/toppbanner_0",
+            "iframe[width=\"1920\"]",
+            "iframe[src$=\"about:blank\"]",
+            "#k"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

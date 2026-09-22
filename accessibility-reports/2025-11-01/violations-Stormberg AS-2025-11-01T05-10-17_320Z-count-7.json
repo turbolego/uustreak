@@ -1,0 +1,533 @@
+{
+  "project": "Stormberg AS",
+  "timestamp": "2025-11-01T05:10:17.321Z",
+  "url": "https://www.stormberg.com/no",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 28,
+      "nodes": [
+        {
+          "html": "<div>BLACK NOVEMBER er i gang!💥Se tilbudene <a class=\"a4 a5 am an gv ap\" data-scope-link=\"true\" href=\"/no/kampanje/black-november\">HER!</a></div>",
+          "target": [
+            ".gt.dr.ds > div > div"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"a4 a5 am an gv ap\" data-scope-link=\"true\" href=\"/no/kampanje/black-november\">HER!</a>",
+          "target": [
+            ".gv.am[href$=\"black-november\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"im bc bd aj ak ac in io ip bf ep it gq iu\">50%</div>",
+          "target": [
+            "a[aria-label=\"Svalbard lang dunparkas\"] > .if.bc.bd > .is.ik.y > .gq.iu.it"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"jf hy bd\">1 299,-</span>",
+          "target": [
+            "a[aria-label=\"Svalbard lang dunparkas\"] > .j1.j2.hx > div > .gu > .jf.hy.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"im bc bd aj ak ac in io ip bf ep it gq iu\">35%</div>",
+          "target": [
+            "div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(2) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"jf hy bd\">1 299,-</span>",
+          "target": [
+            "div:nth-child(5) > .i7.bl.bj > .i8.i9 > li:nth-child(2) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"im bc bd aj ak ac in io ip bf ep it gq iu\">48%</div>",
+          "target": [
+            "a[aria-label=\"Svalbard dunparkas\"] > .if.bc.bd > .is.ik.y > .gq.iu.it"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"jf hy bd\">1 299,-</span>",
+          "target": [
+            "a[aria-label=\"Svalbard dunparkas\"] > .j1.j2.hx > div > .gu > .jf.hy.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"im bc bd aj ak ac in io ip bf ep it gq iu\">35%</div>",
+          "target": [
+            "a[aria-label=\"Ute resirkulert vinterdress\"] > .if.bc.bd > .is.ik.y > .gq.iu.it"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"jf hy bd\">1 299,-</span>",
+          "target": [
+            "a[aria-label=\"Ute resirkulert vinterdress\"] > .j1.j2.hx > div > .gu > .jf.hy.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"im bc bd aj ak ac in io ip bf ep it gq iu\">55%</div>",
+          "target": [
+            "a[aria-label=\"Svalbard dunjakke\"] > .if.bc.bd > .is.ik.y > .gq.iu.it"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"jf hy bd\">899,-</span>",
+          "target": [
+            "a[aria-label=\"Svalbard dunjakke\"] > .j1.j2.hx > div > .gu > .jf.hy.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"im bc bd aj ak ac in io ip bf ep it gq iu\">INTROPRIS</div>",
+          "target": [
+            "a[aria-label=\"Geilo vattert jakke barn 8-14\"] > .if.bc.bd > .is.ik.y > .gq.iu.it"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"jf hy bd\">499,-</span>",
+          "target": [
+            "a[aria-label=\"Geilo vattert jakke barn 8-14\"] > .j1.j2.hx > div > .gu > .jf.hy.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"im bc bd aj ak ac in io ip bf ep it gq iu\">INTROPRIS</div>",
+          "target": [
+            "a[aria-label=\"Hafjell vattert jakke\"] > .if.bc.bd > .is.ik.y > .gq.iu.it"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"jf hy bd\">799,-</span>",
+          "target": [
+            "a[aria-label=\"Hafjell vattert jakke\"] > .j1.j2.hx > div > .gu > .jf.hy.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"im bc bd aj ak ac in io ip bf ep it gq iu\">INTROPRIS</div>",
+          "target": [
+            "a[aria-label=\"Hafjell vattert selebukse\"] > .if.bc.bd > .is.ik.y > .gq.iu.it"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"jf hy bd\">699,-</span>",
+          "target": [
+            "a[aria-label=\"Hafjell vattert selebukse\"] > .j1.j2.hx > div > .gu > .jf.hy.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"im bc bd aj ak ac in io ip bf ep it gq iu\">INTROPRIS</div>",
+          "target": [
+            "div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(4) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"jf hy bd\">699,-</span>",
+          "target": [
+            "div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(4) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"im bc bd aj ak ac in io ip bf ep it gq iu\">INTROPRIS</div>",
+          "target": [
+            "div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"jf hy bd\">699,-</span>",
+          "target": [
+            "div:nth-child(6) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .j1.j2.hx > div > .gu > .jf.hy.bd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"im bc bd aj ak ac in io ip bf ep it gq iu\">LAVPRIS</div>",
+          "target": [
+            "a[aria-label=\"Isnes ullfôret vinterstøvel\"] > .if.bc.bd > .is.ik.y > .gq.iu.it"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"im bc bd aj ak ac in io ip bf ep it gq iu\">LAVPRIS</div>",
+          "target": [
+            "a[aria-label=\"Sognfonna vanntett vinterjakke\"] > .if.bc.bd > .is.ik.y > .gq.iu.it"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"im bc bd aj ak ac in io ip bf ep it gq iu\">LAVPRIS</div>",
+          "target": [
+            "div:nth-child(9) > .i7.bl.bj > .i8.i9 > li:nth-child(3) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"im bc bd aj ak ac in io ip bf ep it gq iu\">LAVPRIS</div>",
+          "target": [
+            "div:nth-child(9) > .i7.bl.bj > .i8.i9 > li:nth-child(4) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"im bc bd aj ak ac in io ip bf ep it gq iu\">LAVPRIS</div>",
+          "target": [
+            "div:nth-child(9) > .i7.bl.bj > .i8.i9 > li:nth-child(5) > .ia.ib.ic > .if.bc.bd > .is.ik.y > .gq.iu.it"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button id=\"onetrust-accept-btn-handler\">Godta alle </button>",
+          "target": [
+            "#onetrust-accept-btn-handler"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.56 (foreground color: #ffffff, background color: #0c9d37, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"hz d4 f0\"></h4>",
+          "target": [
+            "div:nth-child(5) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"hz d4 f0\">INFORMASJON</h4>",
+          "target": [
+            "div:nth-child(1) > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 13,
+      "nodes": [
+        {
+          "html": "<img width=\"11\" class=\"ar as at au\" src=\"/contentassets/7a69847315af4a2a9490bb7184004777/mediamodifier-design.svg?ref=21C3EEBBD2\">",
+          "target": [
+            "div:nth-child(1) > .aq.am.an > .au.as[width=\"11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img width=\"11\" class=\"ar as at au\" src=\"/contentassets/7a69847315af4a2a9490bb7184004777/mediamodifier-design.svg?ref=21C3EEBBD2\">",
+          "target": [
+            "div:nth-child(2) > .aq.am.an > .au.as[width=\"11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img width=\"11\" class=\"ar as at au\" src=\"/contentassets/7a69847315af4a2a9490bb7184004777/mediamodifier-design.svg?ref=21C3EEBBD2\">",
+          "target": [
+            "div:nth-child(3) > .aq.am.an > .au.as[width=\"11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img width=\"11\" class=\"ar as at au\" src=\"/contentassets/7a69847315af4a2a9490bb7184004777/mediamodifier-design.svg?ref=21C3EEBBD2\">",
+          "target": [
+            "div:nth-child(4) > .aq.am.an > .au.as[width=\"11\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ar as at au y bv hm hn ho\" src=\"/globalassets/2025/black-november/portalside/800x500-bn25-ukensdeals_herre.jpg?ref=787D2BC0EB&amp;w=640&amp;scale=both\">",
+          "target": [
+            ".hf.hg.bl > div > .hr.hs.ht > .hv.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link=\"true\"] > .hw.hk.hl > .ho.hn.au"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ar as at au y bv hm hn ho\" src=\"/globalassets/2025/black-november/portalside/800x500-bn25-ukensdeals_dame.jpg?ref=F82C8AA9A7&amp;w=640&amp;scale=both\">",
+          "target": [
+            ".hf.hg.bl > div > .hr.hs.ht > .hv.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link=\"true\"] > .hw.hk.hl > .ho.hn.au"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ar as at au y bv hm hn ho\" src=\"/globalassets/2025/black-november/portalside/800x500-bn25-ukensdeals_ull.jpg?ref=EFB3A65EF2&amp;w=640&amp;scale=both\">",
+          "target": [
+            ".bl.bj.bk:nth-child(4) > div > .hr.hs.ht > .hv.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link=\"true\"] > .hw.hk.hl > .ho.hn.au"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ar as at au y bv hm hn ho\" src=\"/globalassets/2025/black-november/portalside/800x500-bn25-ukensdeals_dresser.jpg?ref=9E8C176837&amp;w=640&amp;scale=both\">",
+          "target": [
+            ".bl.bj.bk:nth-child(4) > div > .hr.hs.ht > .hv.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link=\"true\"] > .hw.hk.hl > .ho.hn.au"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ar as at au y bv hm hn ho\" src=\"/globalassets/2025/black-november/portalside/800x500-bn25-ukensdeals_sealleproduktene.jpg?ref=DB3E199602&amp;w=640&amp;scale=both\">",
+          "target": [
+            ".bl.bj.bk:nth-child(4) > div > .hr.hs.ht > .hv.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link=\"true\"] > .hw.hk.hl > .ho.hn.au"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ar as at au a2 y bv hm hn ho\">",
+          "target": [
+            ".hj.hk.hl > .ho.a2.hn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ar as at au a2 y bv hm hn ho\">",
+          "target": [
+            "a[href$=\"farsdag\"] > .jr.hk.hl > .ho.a2.hn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ar as at au a2 y bv hm hn ho\">",
+          "target": [
+            ".a6[href$=\"turutstyr\"][data-scope-link=\"true\"] > .jr.hk.hl > .ho.a2.hn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"ar as at au a2 y bv hm hn ho\">",
+          "target": [
+            ".hv.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link=\"true\"] > .jr.hk.hl > .ho.a2.hn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 9,
+      "nodes": [
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/kampanje/black-november/herre\"><div class=\"d8 du hi hw ay hk hl\"><img class=\"ar as at au y bv hm hn ho\" src=\"/globalassets/2025/black-november/portalside/800x500-bn25-ukensdeals_herre.jpg?ref=787D2BC0EB&amp;w=640&amp;scale=both\"></div></a>",
+          "target": [
+            ".hf.hg.bl > div > .hr.hs.ht > .hv.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link=\"true\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/kampanje/black-november/dame\"><div class=\"d8 du hi hw ay hk hl\"><img class=\"ar as at au y bv hm hn ho\" src=\"/globalassets/2025/black-november/portalside/800x500-bn25-ukensdeals_dame.jpg?ref=F82C8AA9A7&amp;w=640&amp;scale=both\"></div></a>",
+          "target": [
+            ".hf.hg.bl > div > .hr.hs.ht > .hv.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link=\"true\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/kampanje/black-november/ullundertoy\"><div class=\"d8 du hi hw ay hk hl\"><img class=\"ar as at au y bv hm hn ho\" src=\"/globalassets/2025/black-november/portalside/800x500-bn25-ukensdeals_ull.jpg?ref=EFB3A65EF2&amp;w=640&amp;scale=both\"></div></a>",
+          "target": [
+            ".bl.bj.bk:nth-child(4) > div > .hr.hs.ht > .hv.fd.be:nth-child(1) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link=\"true\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/kampanje/black-november/kjeledresser\">",
+          "target": [
+            ".bl.bj.bk:nth-child(4) > div > .hr.hs.ht > .hv.fd.be:nth-child(2) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link=\"true\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/kampanje/black-november/sjekk-tilbudene\">",
+          "target": [
+            ".bl.bj.bk:nth-child(4) > div > .hr.hs.ht > .hv.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link=\"true\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/julegavetips\"><div class=\"d8 du hi hj ay hk hl\"><img class=\"ar as at au a2 y bv hm hn ho\"></div></a>",
+          "target": [
+            "a[href$=\"julegavetips\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/kampanje/farsdag\"><div class=\"d8 du hi jr ay hk hl\"><img class=\"ar as at au a2 y bv hm hn ho\"></div></a>",
+          "target": [
+            "a[href$=\"farsdag\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/kampanje/turutstyr\"><div class=\"d8 du hi jr ay hk hl\"><img class=\"ar as at au a2 y bv hm hn ho\"></div></a>",
+          "target": [
+            ".hh.bv.ay > .a6[href$=\"turutstyr\"][data-scope-link=\"true\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"a4 a5 a6\" data-scope-link=\"true\" href=\"/no/kampanje/ukens-deals/ullgensere\"><div class=\"d8 du hi jr ay hk hl\"><img class=\"ar as at au a2 y bv hm hn ho\"></div></a>",
+          "target": [
+            ".bl.bj.bk:nth-child(8) > div > .hr.hs.ht > .hv.fd.be:nth-child(3) > div > .bj.bk.ar > .hh.bv.ay > .a6[data-scope-link=\"true\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<div class=\"x ab b ac ae af ag ah ai aj ak al\">",
+          "target": [
+            ".ab"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"gp gq\"><div><div class=\"d8 gr gs\"><div class=\"bj bk bl gt d0 dr ds d2 d3 d4 bh f0 b gu ah\"><div><div>BLACK NOVEMBER er i gang!💥Se tilbudene <a class=\"a4 a5 am an gv ap\" data-scope-link=\"true\" href=\"/no/kampanje/black-november\">HER!</a></div></div></div></div></div></div>",
+          "target": [
+            ".gp"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"h0 b d8 bv h1 at bz\">",
+          "target": [
+            ".h0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

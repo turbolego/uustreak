@@ -1,0 +1,66 @@
+{
+  "project": "Stavanger kommune",
+  "timestamp": "2026-01-17T02:59:29.102Z",
+  "url": "https://www.stavanger.kommune.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-complementary-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the complementary landmark or aside is at top level",
+      "help": "Aside should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-complementary-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<aside class=\"linklist\">",
+          "target": [
+            ".linklistblock.col-md-4.block:nth-child(1) > aside"
+          ],
+          "failureSummary": "Fix any of the following:\n  The complementary landmark is contained in another landmark."
+        },
+        {
+          "html": "<aside class=\"linklist\">",
+          "target": [
+            ".linklistblock.col-md-4.block:nth-child(2) > aside"
+          ],
+          "failureSummary": "Fix any of the following:\n  The complementary landmark is contained in another landmark."
+        },
+        {
+          "html": "<aside class=\"linklist\">",
+          "target": [
+            ".linklistblock.col-md-4.block:nth-child(3) > aside"
+          ],
+          "failureSummary": "Fix any of the following:\n  The complementary landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"row\" role=\"complementary\">\n    <div class=\"col wider\">\n\n        <div>\n            \n\n        </div>\n    </div>\n</div>",
+          "target": [
+            "div[role=\"complementary\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}

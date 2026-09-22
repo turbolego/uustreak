@@ -1,0 +1,40 @@
+{
+  "project": "Statens pensjonskasse",
+  "timestamp": "2025-11-28T00:37:15.694Z",
+  "url": "https://www.spk.no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div class=\"flex w-full items-center justify-between px-10 pt-10\"><img src=\"https://www.spk.no/App/assets_v2/spk-logo-white-88638d75caf85052717f.png\" alt=\"spk-logo\" class=\"h-12 w-fit\"></div>",
+          "target": [
+            ".px-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"p-5 font-sourcesans text-xl md:p-10\">",
+          "target": [
+            ".p-5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

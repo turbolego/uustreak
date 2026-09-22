@@ -1,0 +1,96 @@
+{
+  "project": "Dfind Consulting",
+  "timestamp": "2025-11-19T02:15:48.359Z",
+  "url": "https://www.dfindconsulting.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img src=\"https://cdn.sanity.i...\" alt=\"Bilde av ansatt\" loading=\"lazy\" srcset=\"https://cdn.sanity.i...\" sizes=\"(min-width: 1024px) ...\" class=\"rounded-full w-[267p...\" role=\"presentation\">",
+          "target": [
+            ".w-\\[267px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "html": "<img class=\"w-10 h-8 pr-2\" src=\"/instagram.svg\" alt=\"Instagram sosialemedier knapp\" role=\"presentation\">",
+          "target": [
+            ".w-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "html": "<img class=\"flex flex-grow-0 w-8 h-8\" src=\"/linkedin.svg\" alt=\"Linkedin sosialemedier knapp\" role=\"presentation\">",
+          "target": [
+            ".flex-grow-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<div class=\"flex bg-lysblaa\">",
+          "target": [
+            "div[data-testid=\"footer\"] > .bg-lysblaa.flex"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-3xl font-title font-normal text-straagul mb-7\">Våre kontorer</div>",
+          "target": [
+            ".mb-7"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"flex flex-col lg:flex-row flex-wrap justify-between gap-y-4 mt-7 lg:mt-14\">",
+          "target": [
+            ".justify-between"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"flex flex-row gap-x-4 my-6\">",
+          "target": [
+            ".gap-x-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"flex xl:justify-around mb-4 mx-4 lg:mx-16 xl:mx-0\">",
+          "target": [
+            ".xl\\:justify-around"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

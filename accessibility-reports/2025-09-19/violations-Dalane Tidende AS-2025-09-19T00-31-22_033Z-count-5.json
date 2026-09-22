@@ -1,0 +1,218 @@
+{
+  "project": "Dalane Tidende AS",
+  "timestamp": "2025-09-19T00:31:22.034Z",
+  "url": "https://www.dalane-tidende.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.dalane-tidende\\.no\\/toppbanner_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<iframe src=\"about:blank\" scrolling=\"no\" style=\"height: 1px; width: 1px; min-height: 100%; max-width: 100%; min-width: 100%; filter: none; transform: none; border: none; outline: none; display: block; position: absolute; opacity: 1; top: 0px; left: 0px; transform-origin: 0px 0px; transition: opacity 0.2s;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.dalane-tidende\\.no\\/toppbanner_0",
+            "iframe[src$=\"about:blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe style=\"position: absolute; pointer-events: none; left: 0px; top: 0px; opacity: 0; height: 0px; width: 0px;\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.dalane-tidende\\.no\\/toppbanner_0",
+            "body > iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstqfkjaKqFpOVg-lIp7Sd6L7nL31uX5jMeqZrJJU0nU6T01kiTiOcoJZV6dwPc6uZqN76swkJ31XnBqXfXe4Kv2vepV1fsSfa9N4Npm1XzYOC6vJzpVWvCjInV5RiM1XTeym9rhygG1OGpAksG2FFbZv5ER5kpjXOWO59MBPqgXe_4hr2B3OUgrf6H4KVar_c6cLN9e-Epa4lRcMtiehuv6NB6ByK94LxmWVhZaYvZnyimWhvpZo6sjpHauuCK7xXs9Cf-eHKtpJcFSGEtobOLvepyKIGQYMENXsV85n6pX4ki7aNECOZOqqjuDDZJDXqgQQ6AX7ypWTibBsH1Eoym9-6djkZDaC8m8cRpzMsMwPUmQ9044N2fcwK2jEE1n7xwTL_PlfKaL7_KCp8zKs0_iwaR2lC6S5ABX_M3XCHRw8kBGTTuMfVB2Sg&amp;sai=AMfl-YSnB920AobZ3UL88BUEvZUcsYupy9vJJtp42QgZpPMhJKHldATzc21QjDnJp1Wt-8RXzlZFB0VnZ7_TBToF0VlrE1QS40H8kbFCDYiXXL9aiG_qAdrqE-5TjTN_lSruXTOd6ykhBz4T-zsdWSYNPSyDqwYMn9yP5GzZLE1fr3e8hueBApPU1zH_Trg4VzzFpAVF-WCwmnPkKvhzQrZ8RvViJOEF4DdJO6_hH1R5HwmrfR4jhDA&amp;sig=Cg0ArKJSzNLAQKFRZv31EAE&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;urlfix=1&amp;adurl=https://p.amediakreativ.no/1351587-Skoringen-Eikunda/index.php\" target=\"_blank\" style=\"display: block; height: 1000px; left: calc(50% - 960px); position: absolute; top: 0px; width: 1920px;\">",
+          "target": [
+            "a[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.dalane-tidende.no/gfx/small-positive.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 9,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.dalane-tidende.no/tilbud\" publication=\"www.dalane-tidende.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"am-bazaar-ad--label\" id=\"toppbanner-1-label\">Annonse</span>",
+          "target": [
+            "#toppbanner-1-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"gutt\" tabindex=\"0\" id=\"a\" style=\"z-index: 0; pointer-events: auto; transform: matrix3d(1, -4.06859e-19, -2.44929e-16, 4.06859e-19, 0, 1, 0, 0, -0.0232558, 0.00166113, 1, -0.00166113, 14, -1, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.dalane-tidende\\.no\\/toppbanner_0",
+            "iframe[src$=\"about:blank\"]",
+            "#a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"Barnas dag-580\" tabindex=\"0\" id=\"b\" style=\"z-index: 1; pointer-events: auto; transform: matrix3d(1, 2.92046e-18, -2.44929e-16, 1.94697e-19, 0, 1, 0, 0, -0.22496, -0.0119237, 1, -0.000794913, 283, 15, 0, 1);\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.dalane-tidende\\.no\\/toppbanner_0",
+            "iframe[src$=\"about:blank\"]",
+            "#b"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"Sko-1\" tabindex=\"0\" id=\"h\" style=\"z-index: 7; pointer-events: auto; transform: matrix3d(1, 1.45756e-16, -2.44929e-16, 7.51317e-19, 0, 1, 0, 0, -0.828221, -0.595092, 1, -0.00306748, 270, 194, 0, 1); opacity: 1;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.dalane-tidende\\.no\\/toppbanner_0",
+            "iframe[src$=\"about:blank\"]",
+            "#h"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"Sko-2\" tabindex=\"0\" id=\"g\" style=\"z-index: 6; pointer-events: auto; transform: matrix3d(1, 1.4209e-16, -2.44929e-16, 7.8503e-19, 0, 1, 0, 0, -1.33013, -0.580128, 1, -0.00320513, 415, 181, 0, 1); opacity: 1;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.dalane-tidende\\.no\\/toppbanner_0",
+            "iframe[src$=\"about:blank\"]",
+            "#g"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"Sko-3\" tabindex=\"0\" id=\"f\" style=\"z-index: 5; pointer-events: auto; transform: matrix3d(1, 1.31614e-16, -2.44929e-16, 7.0382e-19, 0, 1, 0, 0, -1.52299, -0.537356, 1, -0.00287356, 530, 187, 0, 1); opacity: 1;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.dalane-tidende\\.no\\/toppbanner_0",
+            "iframe[src$=\"about:blank\"]",
+            "#f"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"Sko-4\" tabindex=\"0\" id=\"e\" style=\"z-index: 4; pointer-events: auto; transform: matrix3d(1, 1.00656e-16, -2.44929e-16, 5.59199e-19, 0, 1, 0, 0, -1.45662, -0.410959, 1, -0.00228311, 638, 180, 0, 1); opacity: 1;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.dalane-tidende\\.no\\/toppbanner_0",
+            "iframe[src$=\"about:blank\"]",
+            "#e"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"element kind-image\" role=\"img\" aria-label=\"Sko-5\" tabindex=\"0\" id=\"d\" style=\"z-index: 3; pointer-events: auto; transform: matrix3d(1, 1.11224e-16, -2.44929e-16, 5.91617e-19, 0, 1, 0, 0, -1.85749, -0.454106, 1, -0.00241546, 769, 188, 0, 1); opacity: 1;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.dalane-tidende\\.no\\/toppbanner_0",
+            "iframe[src$=\"about:blank\"]",
+            "#d"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

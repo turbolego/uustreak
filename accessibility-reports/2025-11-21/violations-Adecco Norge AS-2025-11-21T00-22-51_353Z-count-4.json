@@ -1,0 +1,156 @@
+{
+  "project": "Adecco Norge AS",
+  "timestamp": "2025-11-21T00:22:51.353Z",
+  "url": "https://www.adecco.com/nb-no",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/label-title-only?application=playwright",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input type=\"text\" placeholder=\"Stillingstittel eller søkeord\" class=\"LocationSearchFilter_job-title__yLOb_\" name=\"jobsearch-title\" title=\"Herojobsearch-title\" value=\"\">",
+          "target": [
+            ".LocationSearchFilter_job-title__yLOb_"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<a href=\"\" class=\"Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined pl1\"><p class=\"Ecosystem_link-title__AL83q\"></p></a>",
+          "target": [
+            "#ecosystem-card-ftr0 > .Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined.pl1[href=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"\" class=\"Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined pl1\"><p class=\"Ecosystem_link-title__AL83q\"></p></a>",
+          "target": [
+            "#ecosystem-card-ftr1 > .Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined.pl1[href=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"\" class=\"Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined pl1\"><p class=\"Ecosystem_link-title__AL83q\"></p></a>",
+          "target": [
+            "#ecosystem-card-ftr2 > .Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined.pl1[href=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"\" class=\"Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined pl1\"><p class=\"Ecosystem_link-title__AL83q\"></p></a>",
+          "target": [
+            "#ecosystem-card-ftr3 > .Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined.pl1[href=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"\" class=\"Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined pl1\"><p class=\"Ecosystem_link-title__AL83q\"></p></a>",
+          "target": [
+            "#ecosystem-card-ftr4 > .Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined.pl1[href=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"\" class=\"Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined pl1\"><p class=\"Ecosystem_link-title__AL83q\"></p></a>",
+          "target": [
+            "#ecosystem-card-ftr5 > .Ecosystem_tiles-external-cardfooter__zFQ_tmaterial-icons-outlined.pl1[href=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them",
+      "help": "Elements marked as presentational should be consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img alt=\"\" title=\"\" aria-label=\"\" sizes=\"100vw\" class=\"SWPImage_swp-nextima...\" loading=\"lazy\" srcset=\"/nb-no/-/jssmedia/pr...\" src=\"/nb-no/-/media/proje...\">",
+          "target": [
+            ".SWPImage_swp-nextimage__raKqc"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img alt=\"\" title=\"\" aria-label=\"\" sizes=\"100vw\" class=\"material-icons-outli...\" loading=\"lazy\" srcset=\"/nb-no/-/jssmedia/pr...\" src=\"/nb-no/-/media/proje...\">",
+          "target": [
+            ".tile-solutions-icon[aria-label=\"\"][alt=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img alt=\"\" title=\"\" aria-label=\"\" sizes=\"100vw\" class=\"SWPImage_islhh-image...\" loading=\"lazy\" srcset=\"/nb-no/-/jssmedia/pr...\" src=\"/nb-no/-/media/proje...\">",
+          "target": [
+            ".SWPImage_islhh-image__Hi_E2"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        }
+      ]
+    },
+    {
+      "id": "tabindex",
+      "impact": "serious",
+      "description": "Ensure tabindex attribute values are not greater than 0",
+      "help": "Elements should not have tabindex greater than zero",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/tabindex?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"SkipLink_skip-btn__YhgD8 skip-to-content skip-link\" href=\"#main\" aria-label=\"skip-to-main\" tabindex=\"1\">Skip to main </a>",
+          "target": [
+            ".SkipLink_skip-btn__YhgD8"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        }
+      ]
+    }
+  ]
+}

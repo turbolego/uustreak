@@ -1,0 +1,110 @@
+{
+  "project": "Asker og Bærum Budstikke AS",
+  "timestamp": "2025-10-05T00:33:48.874Z",
+  "url": "https://www.budstikka.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe src=\"https://b.ddb.im/?p=9000014&amp;d=www.budstikka.no&amp;b=2021cantabri-980x300&amp;db=cantabri&amp;cs=4983e4034dea&amp;c=1000&amp;clickurl=https://adclick.g.doubleclick.net/pcs/click%253Fxai%253DAKAOjstDpj73bOiusQRagxBG3QBS6tLpqm3m7OOWUxDYVXY2EECByBUBxrO1Rmvb-7N1iN_lJ1zMcppm_tfVq_v41doBgFic0_seIeBHBVcONSYNLvTa4lDB0ZZkpqqV3FKkBo72b0BS_i11PMEiGjjVRawZHHCd0jUbxqT3605G3ByswwB0KYSIVMXiKm4TgTSjAdrOWPFW4IfuRtMsO1qAzKsfWdEnmZgY0JJStKWZI9D1JPJq4nRRriqB8nGj-JNadCxyhjGSNzUBk5-Oi8rDO7xx3WHjQzoK3FmOQ2FbtQfcoLRFgJBmFCo4xle3WX31d5W3WXfQFv1N_LKjFdUmR2S4lOJkUS1GI7GZOXHqFVfonh0VNnIeeX8RgvvD3-VBpPrNQzSsJWb1lxZ5NXnwZVvLIhXndm3dTn3R4Qo8VfRtfE845w%2526sai%253DAMfl-YRlNm6x8S9rK_WIMedvwY9jkbX66IWwR4qsZDCvOfiOAJOmtp6M6jh7qn-4j9sjx56R-TAo0DW1tEiVA6YmQ8MyoenGzpjVHhdtc-fwjqE6qHr1NdwGjhAL3ElVbDs3C_2EbWW5ugWS0mre5fOhSKT_iFFyJ0JfCFkdhJHlIx1KaFCFiOPsvC8m8K5pUkxf6NTaqIj6VZJxJkh289nFX2y8_uLOskzxsfUbov82zTPEBwLBfBOSjhlL9banxnG8W1w_ah4twBZ5sm20qrFmvpoy2WHN_r_bB-l6QaAZpvzAb20FqQmNpG2PWBNt_sg0qZ2g5I-XkpN99k6iSHg7qpihOPqqzW1fLXMmXvMLbMhDKWKO%2526sig%253DCg0ArKJSzDpNsTw7FZX9EAE%2526fbs_aeid%253D%25255Bgw_fbsaeid%25255D%2526urlfix%253D1%2526adurl%253D\" width=\"980\" height=\"300\" seamless=\"seamless\" frameborder=\"0\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-64516461-115d-4000-b4f6-155322d4bf77\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"11\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.budstikka.no/gfx/small-positive.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.budstikka.no/tilbud\" publication=\"www.budstikka.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layout=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_toppbanner am-bazaar-ad--labeled\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.budstikka.no/toppbanner_1\" pageview-id=\"514be4bc-6a77-4890-bd0e-4da78d1b6ea7\" has-bid=\"\" render-count=\"1\" render-time=\"1759624409917\" advertiser-id=\"730675736\" order-id=\"3664323069\" lineitem-id=\"6868251083\" creative-id=\"138413056535\" ad-size=\"980,300\" slot-targeting=\"keyword=forsiden,autolayout,dominans,forsiden_1,format=toppbanner,position=1,adnami_format=skin,lwrefresh=false,hb_crid=,hb_adomain=,hb_format=banner,hb_source=,hb_size=980x300,hb_pb=11.97,hb_adid=71e312a9b87ae44,hb_bidder=adnuntius\" hb_pb=\"11.97\" prebid-price-group=\"15\" lineitem-type=\"STANDARD\" itemscope=\"\" itemtype=\"http://schema.org/WPAdBlock\" is-empty=\"false\" is-viewable=\"true\" style=\"min-height: 0px;\">",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "project": "Handelsbanken",
+  "timestamp": "2025-12-06T09:40:27.801Z",
+  "url": "https://www.handelsbanken.no/no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "role-img-alt",
+      "impact": "serious",
+      "description": "Ensure [role=\"img\"] elements have alternative text",
+      "help": "[role=\"img\"] elements must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/role-img-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"hds-base hds-base--d...\" data-testid=\"policyAboutCookies__...\" data-test-id=\"policyAboutCookies__...\" aria-labelledby=\"sr-hdsIcon333584717\" role=\"img\" style=\"--icon-size: 0.75rem...\">",
+          "target": [
+            "span[aria-labelledby=\"sr-hdsIcon333584717\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}

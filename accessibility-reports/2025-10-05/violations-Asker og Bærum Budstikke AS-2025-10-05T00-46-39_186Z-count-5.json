@@ -1,0 +1,152 @@
+{
+  "project": "Asker og Bærum Budstikke AS",
+  "timestamp": "2025-10-05T00:46:39.187Z",
+  "url": "https://www.budstikka.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<iframe frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" topmargin=\"0\" leftmargin=\"0\" allowtransparency=\"true\" width=\"980\" height=\"300\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe width=\"980\" height=\"300\" src=\"javascript:'';\" allowtransparency=\"true\" webkitallowfullscreen=\"\" mozallowfullscreen=\"\" allowfullscreen=\"\" marginwidth=\"0\" marginheight=\"0\" hspace=\"0\" vspace=\"0\" frameborder=\"0\" scrolling=\"no\" data-contents=\"&lt;!DOCTYPE html&gt;&lt;title&gt;ad&lt;/title&gt;&lt;base href='https://s2.adform.net/Banners/Elements/Files/47857/14554945/bvpath_1793/'&gt;&lt;script&gt;try{parent.AdformWin3duq8fxc3l4(window)}catch(ex){new Image().src='https://track.adform.net/serving/jslog/?src=htmlcb&amp;msg='+encodeURIComponent(''+(ex.stack||ex))}&lt;/script&gt;&lt;script src='https://s2.adform.net/Banners/Elements/Files/47857/14554945/14554945.js?ADFassetID=14554945&amp;bv=1793' charset='UTF-8'&gt;&lt;/script&gt;\" data-onload=\"(function F(a,c){function d(){c?q.open():q.open(&quot;text/html&quot;,&quot;replace&quot;);p?l.call(q,b):q.write(b);g.__rendered__=!0}var b=a.getAttribute(&quot;data-contents&quot;),g=a.contentWindow,f=g.parent,q=g.document,e=g.setTimeout;try{var l=f.parent&amp;&amp;f.parent.HTMLDocument&amp;&amp;f.parent.HTMLDocument.prototype.write}catch(r){}var p=l&amp;&amp;f.HTMLDocument&amp;&amp;f.HTMLDocument.prototype.write!==l;-1==a.offsetHeight||g.__rendered__||(g.__rendered__=!0,c?d():e(d,0))})(this,false)\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "iframe",
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-c24c8596-9ce0-4c06-af45-0e2450525ab8\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"11\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://track.adform.net/C/?bn=83977930;C=1;crtbwp=2K1ufvq-C0VZyTd3J-2USKzboUFQG3yp0;crtbdata=tFKEMVx2aIyqbSRDbrjWFl1Pc5Z_qRtMQiPJttve57MfE2YP5i_W1LrAyq3veErFw2ogZU0HBRxV0nHPSzhfdPWW5EkcwMmeIcNK65nYFMuNCM3FktIH5M6XvR9RyxaMnBoQW9u4O7yibyWlV1LVFynXjFfkcG1cUC6yH--sOHb4IXzg2iInzx-N_0LEmYkvt-0uHKlz-p-SKsCkH6a53Plpf__GZTu46UU3yHGYIHFkakDRWrY8n9392ZbtFPqqs4ct7kGlLlK-Mp15VAbsFzXHwNlANk0npX_3AbLMmZRtBYRc0MTeVOFBboVeNKvP0;ccsid=148934;adfibeg=0;cdata=y_71RRT2RX7Cqh0ik-9CSNhqa2I4tpJleujFZuf0Fm17vt9w1hQFgwxKhNEpJgCWID-LWb5oShGetFeoydYi_U3wSxZRhMBK0e8BvvwvU9h_qDtrt5L50AJy1HNNGfzn6EiVSe6f5FA6O1p_qign51tJpLGCWXtd-GrMeZB89cB2Qo0APaIqP6yE_ZA4Bl0VXBE29kdNmIVKGg1KXp5fXwazHnhDSpql3TsR-oQi5esPQu9MtAw5G4jCa0K2WrBRLwNxc8q5pPaSluNQUJxyYQPxN8yHQBT9rOmcmaJcn_GnrQ-dpJA4RpBY9uV3vXrTA4632g_3XNe7Y584c_VQfak8fE8paKa4vuppxiK_17gRtdiSWvNHaRqtNZwqOzaXJs8rlz9Q1NLqG9G5hy4rSRXU85Q6G9CzFLRvbUdT6V7Wh7wj6GhaycEjL5Nr6rk57-HAghXpU6yrP8xl8rm_EBWM2vpztmLE5uDTyOGS9JJPJ-Agbl-hN0bM0CPkTiJ7XGjivb0NhbjxTiudh04F4Eaj3sC8lTvLPxdiVuLm-K-WNKPZ5VC5DAyBBlYyWPCH-7HLHhJppZ9k9JUJFwE_MQ2;;fc=1;CREFURL=https%3a%2f%2fwww.budstikka.no%2f\" style=\"width:1px;height:1px;display:block;border:0;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.budstikka\\.no\\/toppbanner_0",
+            "iframe",
+            "a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.budstikka.no/gfx/small-positive.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.budstikka.no/tilbud\" publication=\"www.budstikka.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layout=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_toppbanner am-bazaar-ad--labeled\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.budstikka.no/toppbanner_1\" pageview-id=\"d9f84a79-0200-46f7-9ebb-75fc72aa40fa\" has-bid=\"\" render-count=\"1\" render-time=\"1759625179833\" advertiser-id=\"703459736\" order-id=\"690956216\" lineitem-id=\"1018520456\" creative-id=\"138442426269\" ad-size=\"980,300\" slot-targeting=\"keyword=forsiden,autolayout,dominans,forsiden_1,format=toppbanner,position=1,adnami_format=skin,lwrefresh=false,hb_cid=,hb_crid=,hb_adomain=,hb_format=banner,hb_source=,hb_size=980x300,hb_pb=17.43,hb_adid=76f11597afcec8d,hb_bidder=adf\" hb_pb=\"17.43\" prebid-price-group=\"20\" lineitem-type=\"AD_EXCHANGE\" itemscope=\"\" itemtype=\"http://schema.org/WPAdBlock\" is-empty=\"false\" is-prebid=\"\" prebid-bidder=\"adf\" prebid-cpm=\"17.49192673474008\" prebid-creativeid=\"83977930\" prebid-creativeid-count=\"1\" is-viewable=\"true\" style=\"min-height: 0px;\">",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

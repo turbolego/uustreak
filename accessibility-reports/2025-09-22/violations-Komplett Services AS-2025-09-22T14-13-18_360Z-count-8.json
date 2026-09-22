@@ -1,0 +1,350 @@
+{
+  "project": "Komplett Services AS",
+  "timestamp": "2025-09-22T14:13:18.361Z",
+  "url": "https://www.komplett.no/#",
+  "total_violations": 8,
+  "browser_used": "firefox",
+  "violations": [
+    {
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "description": "Ensure an element's role supports its ARIA attributes",
+      "help": "Elements must only use supported ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"user-profile__container icon-button hide-xs\" tabindex=\"0\" data-automationid=\"headerMenu.userProfile\" data-testid=\"headerMenu.userProfile\" aria-expanded=\"false\" aria-label=\"Logget som Logg inn\">",
+          "target": [
+            ".user-profile__container"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        }
+      ]
+    },
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button tabindex=\"0\" onclick=\"CookieInformation.declineAllCategories()\" aria-label=\"Avvis alle\" id=\"declineButton\" class=\"coi-banner__decline\" data-testid=\"consent.popup.button.decline.all\" style=\"display: flex;\" role=\"alert\" aria-atomic=\"true\">\n            Avvis alle\n          </button>",
+          "target": [
+            "#declineButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role alert is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<h5><slot></slot></h5>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(4) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(1)",
+              "komplett-h5",
+              "h5"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5><slot></slot></h5>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(5) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(1)",
+              "komplett-h5",
+              "h5"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5><slot></slot></h5>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(7) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(1)",
+              "komplett-h5",
+              "h5"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5><slot></slot></h5>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(9) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(1)",
+              "komplett-h5",
+              "h5"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5><slot></slot></h5>",
+          "target": [
+            [
+              "komplett-algonomy-product-cards",
+              "komplett-product-card-container",
+              "komplett-product-card[isflexonly=\"\"]:nth-child(1)",
+              "komplett-h5",
+              "h5"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img data-v-15d014a3=\"\" src=\"http://app.ollaborate.com/usermedia/kno_liveshopping_widget_img_nobackground.gif\" style=\"width: 50px; height: 50px;\">",
+          "target": [
+            [
+              "div:nth-child(25)",
+              "img[data-v-15d014a3=\"\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<img src=\"/marketingmedia/165641/catimg_q225_hardware.png\" alt=\"Datautstyr\" title=\"Datautstyr\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Datautstyr\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/marketingmedia/165635/catimg_q225_gaming.png\" alt=\"Gaming\" title=\"Gaming\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Gaming\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/marketingmedia/165636/catimg_q225_pclaptop.png\" alt=\"PC &amp; tilbehør\" title=\"PC &amp; tilbehør\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"PC & tilbehør\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/marketingmedia/165634/catimg_q225_kpc.png\" alt=\"Komplett-PC\" title=\"Komplett-PC\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Komplett-PC\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/marketingmedia/165637/catimg_q225_mobile.png\" alt=\"Mobil, tablets &amp; klokker\" title=\"Mobil, tablets &amp; klokker\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Mobil, tablets & klokker\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/marketingmedia/165638/catimg_q225_tv.png\" alt=\"TV, lyd &amp; bilde\" title=\"TV, lyd &amp; bilde\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"TV, lyd & bilde\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/marketingmedia/165639/catimg_q225_vacuum.png\" alt=\"Hjem &amp; fritid\" title=\"Hjem &amp; fritid\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Hjem & fritid\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/marketingmedia/165642/catimg_q225_washingmachine.png\" alt=\"Hvitevarer\" title=\"Hvitevarer\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Hvitevarer\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" style=\"display: flex;\" aria-hidden=\"false\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" style=\"display: flex;\" aria-hidden=\"false\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<span>Prismatch*</span>",
+          "target": [
+            "a[href$=\"prismatch/\"] > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Gratis retur</span>",
+          "target": [
+            ".universal-selling-points--item:nth-child(2) > .universal-selling-points--link > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Fri frakt for medlemmer</span>",
+          "target": [
+            ".universal-selling-points--item:nth-child(3) > .universal-selling-points--link > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"chat__menu-title\">Vi hjelper deg!</div>",
+          "target": [
+            ".chat__menu-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-v-15d014a3=\"\" class=\"pointer\"><img data-v-15d014a3=\"\" src=\"http://app.ollaborate.com/usermedia/kno_liveshopping_widget_img_nobackground.gif\" style=\"width: 50px; height: 50px;\"></div>",
+          "target": [
+            [
+              "div:nth-child(25)",
+              ".pointer"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

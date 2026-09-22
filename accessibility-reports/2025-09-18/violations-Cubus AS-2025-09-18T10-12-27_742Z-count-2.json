@@ -1,0 +1,61 @@
+{
+  "project": "Cubus AS",
+  "timestamp": "2025-09-18T10:12:27.743Z",
+  "url": "https://cubus.com/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-in-text-block?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a rel=\"noopener noreferrer\" href=\"https://www.cloudflare.com?utm_source=challenge&amp;utm_campaign=m\" target=\"_blank\">Cloudflare</a>",
+          "target": [
+            "a"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.83:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0051c3, surrounding text: #313131)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        }
+      ]
+    },
+    {
+      "id": "meta-refresh",
+      "impact": "critical",
+      "description": "Ensure <meta http-equiv=\"refresh\"> is not used for delayed refresh",
+      "help": "Delayed refresh under 20 hours must not be used",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/meta-refresh?application=playwright",
+      "tags": [
+        "cat.time-and-media",
+        "wcag2a",
+        "wcag221",
+        "TTv5",
+        "TT8.a",
+        "EN-301-549",
+        "EN-9.2.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<meta http-equiv=\"refresh\" content=\"360\">",
+          "target": [
+            "meta[http-equiv=\"refresh\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  <meta> tag forces timed refresh of page (less than 20 hours)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "project": "Departementenes sikkerhets- og serviceorganisasjon",
+  "timestamp": "2025-10-07T10:41:27.523Z",
+  "url": "https://www.dss.dep.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"wp-block-heading alignfull has-text-align-center has-white-color has-text-color has-background\" style=\"background-color:#0085ac;font-size:clamp(16.293px, 1.018rem + ((1vw - 3.2px) * 1.075), 25px);font-style:normal;font-weight:400\">",
+          "target": [
+            "h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": "serious",
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/list?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ul class=\"is-style-list wp-block-dss-simple-posts\">",
+          "target": [
+            ".is-style-list"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: div"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "project": "Deloitte Norge",
+  "timestamp": "2025-09-28T01:18:14.188Z",
+  "url": "https://www.deloitte.com/no/no.html",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-required-parent",
+      "impact": "critical",
+      "description": "Ensure elements with an ARIA role that require parent roles are contained by them",
+      "help": "Certain ARIA roles must be contained by particular parents",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-required-parent?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<li id=\"-target-1-1\" class=\"swiper-slide cmp-dual-slider__slide-item\" role=\"tab\">",
+          "target": [
+            ".cmp-dual-slider__left-wrapper > .cmp-dual-slider__slide > .swiper-wrapper.cmp-dual-slider__slide-wrapper > .swiper-slide.cmp-dual-slider__slide-item[role=\"tab\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<li id=\"-target-2-1\" class=\"swiper-slide cmp-dual-slider__slide-item\" role=\"tab\">",
+          "target": [
+            "#-target-2-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<li id=\"-target-3-1\" class=\"swiper-slide cmp-dual-slider__slide-item\" role=\"tab\">",
+          "target": [
+            "#-target-3-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<li id=\"-target-4-1\" class=\"swiper-slide cmp-dual-slider__slide-item\" role=\"tab\">",
+          "target": [
+            "#-target-4-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<li id=\"-target-1-2\" class=\"swiper-slide cmp-dual-slider__slide-item\" role=\"tab\">",
+          "target": [
+            ".cmp-dual-slider__right-wrapper > .cmp-dual-slider__slide > .swiper-wrapper.cmp-dual-slider__slide-wrapper > .swiper-slide.cmp-dual-slider__slide-item[role=\"tab\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<li id=\"-target-2-2\" class=\"swiper-slide cmp-dual-slider__slide-item\" role=\"tab\">",
+          "target": [
+            "#-target-2-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<li id=\"-target-3-2\" class=\"swiper-slide cmp-dual-slider__slide-item\" role=\"tab\">",
+          "target": [
+            "#-target-3-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        },
+        {
+          "html": "<li id=\"-target-4-2\" class=\"swiper-slide cmp-dual-slider__slide-item\" role=\"tab\">",
+          "target": [
+            "#-target-4-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<h4></h4>",
+          "target": [
+            ".cmp-footer-v2__primary-footer-links > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<h4></h4>",
+          "target": [
+            ".cmp-footer-v2__secondary-footer-links:nth-child(2) > .cmp-footer-v2__secondary-links > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<h4></h4>",
+          "target": [
+            ".cmp-footer-v2__secondary-footer-links:nth-child(3) > .cmp-footer-v2__secondary-links > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<h4></h4>",
+          "target": [
+            ".cmp-footer-v2__bottom__links > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": "serious",
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/list?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<ul class=\"swiper-wrapper cmp-dual-slider__slide-wrapper\">",
+          "target": [
+            ".cmp-dual-slider__left-wrapper > .cmp-dual-slider__slide > .swiper-wrapper.cmp-dual-slider__slide-wrapper"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=tab]"
+        },
+        {
+          "html": "<ul class=\"swiper-wrapper cmp-dual-slider__slide-wrapper\">",
+          "target": [
+            ".cmp-dual-slider__right-wrapper > .cmp-dual-slider__slide > .swiper-wrapper.cmp-dual-slider__slide-wrapper"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=tab]"
+        }
+      ]
+    },
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/nested-interactive?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<li id=\"-target-1-1\" class=\"swiper-slide cmp-dual-slider__slide-item\" role=\"tab\">",
+          "target": [
+            ".cmp-dual-slider__left-wrapper > .cmp-dual-slider__slide > .swiper-wrapper.cmp-dual-slider__slide-wrapper > .swiper-slide.cmp-dual-slider__slide-item[role=\"tab\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<li id=\"-target-2-1\" class=\"swiper-slide cmp-dual-slider__slide-item\" role=\"tab\">",
+          "target": [
+            "#-target-2-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<li id=\"-target-3-1\" class=\"swiper-slide cmp-dual-slider__slide-item\" role=\"tab\">",
+          "target": [
+            "#-target-3-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<li id=\"-target-4-1\" class=\"swiper-slide cmp-dual-slider__slide-item\" role=\"tab\">",
+          "target": [
+            "#-target-4-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<div class=\"\" id=\"call-to-action-v4-cta-global-content\" data-clientlibs=\"{&quot;cta&quot;:{&quot;hashJS&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components/cta.lc-a3d8f9116f2d5f52816153adddbea1d6-lc.min.js&quot;,&quot;hashCSS&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components/cta.lc-67926f8eb9058baf8bdff26b2312a9db-lc.min.css&quot;,&quot;hashMobileCss&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components-mobile/cta.lc-5a0ac4c3643e745467a72c2b01e0d01c-lc.min.css&quot;},&quot;text&quot;:{&quot;hashJS&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components/text.lc-ee4a59b5e269dfc93afdb62f72214557-lc.min.js&quot;,&quot;hashCSS&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components/text.lc-fd1c25dbdc7dcb30c62d12b13f52ae2c-lc.min.css&quot;,&quot;hashMobileCss&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components-mobile/text.lc-d2508730e74b115099fd8baa673193f5-lc.min.css&quot;},&quot;title&quot;:{&quot;hashJS&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components/title.lc-ee4a59b5e269dfc93afdb62f72214557-lc.min.js&quot;,&quot;hashCSS&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components/title.lc-8a88908c574984897b11597b38596877-lc.min.css&quot;,&quot;hashMobileCss&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components-mobile/title.lc-a6a4db51a1c638d24e70f8d7486fdef6-lc.min.css&quot;},&quot;subtitle&quot;:{&quot;hashJS&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components/subtitle.lc-ee4a59b5e269dfc93afdb62f72214557-lc.min.js&quot;,&quot;hashCSS&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components/subtitle.lc-64358773dc184de21e3aa89be0541afe-lc.min.css&quot;,&quot;hashMobileCss&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components-mobile/subtitle.lc-1e63b20796be4eac11bce9594e99f176-lc.min.css&quot;},&quot;button&quot;:{&quot;hashJS&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components/button.lc-9d04cc45a5c988553eab90bbfb7ca9c3-lc.min.js&quot;,&quot;hashCSS&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components/button.lc-e70cf73ec171dc921a6580f1669ad212-lc.min.css&quot;,&quot;hashMobileCss&quot;:&quot;&quot;}}\" data-component=\"cta text title subtitle button\">",
+          "target": [
+            "#call-to-action-v4-cta-global-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cmp-video__container-text no-padding-320 aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12\">",
+          "target": [
+            ".cmp-video__container-text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"responsivegrid dcom-theme2-13 no-float cmp-layout-container--contain--printer aem-GridColumn aem-GridColumn--default--12\">",
+          "target": [
+            ".dcom-theme2-13"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container responsivegrid cmp-container cmp-sticky-bar cmp-sticky-bar--homepage cmp-sticky-bar--title cmp-sticky-bar--inline-top dcom-theme4-4 mb-10 mb-mob-5 aem-GridColumn aem-GridColumn--default--12\">",
+          "target": [
+            ".dcom-theme4-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cmp-dual-slider__left-wrapper no-show\" data-swiper-animation=\"fade\" data-clientlibs=\"{&quot;dual-slider&quot;:{&quot;hashJS&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components/dual-slider.lc-d779b38767c8d1b2f0a53a34575ab42d-lc.min.js&quot;,&quot;hashCSS&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components/dual-slider.lc-ceb78f976e9987d2a9719fc6d34ede5f-lc.min.css&quot;,&quot;hashMobileCss&quot;:&quot;&quot;},&quot;slider&quot;:{&quot;hashJS&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components/slider.lc-748b50a7000cfd3c46087a959087b89d-lc.min.js&quot;,&quot;hashCSS&quot;:&quot;/etc.clientlibs/modern/clientlibs/clientlib-components/slider.lc-ef2f680aff03e0ca27c623904f04533d-lc.min.css&quot;,&quot;hashMobileCss&quot;:&quot;&quot;}}\" data-component=\"dual-slider slider\">",
+          "target": [
+            ".cmp-dual-slider__left-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container responsivegrid cmp-container cmp-sticky-bar cmp-sticky-bar--homepage cmp-sticky-bar--title cmp-sticky-bar--inline-top dcom-theme3-3 mb-10 mb-mob-5 aem-GridColumn aem-GridColumn--default--12\">",
+          "target": [
+            ".dcom-theme3-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"responsivegrid aem-GridColumn aem-GridColumn--default--12\">",
+          "target": [
+            ".responsivegrid.aem-GridColumn--default--12.aem-GridColumn:nth-child(9)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "skip-link",
+      "impact": "moderate",
+      "description": "Ensure all skip links have a focusable target",
+      "help": "The skip-link target should exist and be focusable",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/skip-link?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"cmp-skip-navigation-link\" href=\"#maincontent\" aria-label=\"Gå til hovedinnhold\" role=\"button\">Gå til hovedinnhold</a>",
+          "target": [
+            ".cmp-skip-navigation-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  No skip link target"
+        }
+      ]
+    }
+  ]
+}

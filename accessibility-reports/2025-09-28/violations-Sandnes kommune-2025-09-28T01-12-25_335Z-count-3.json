@@ -1,0 +1,91 @@
+{
+  "project": "Sandnes kommune",
+  "timestamp": "2025-09-28T01:12:25.335Z",
+  "url": "https://www.sandnes.kommune.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe src=\"//prokomresources.prokomcdn.no/plugins/ssp-kalender-app-v2/iframe-app/app.html?url=https://sspkalender.prokom.no&amp;name=sandnes_senior&amp;trans=en#viewtype:redirect-list/templatetype:1/daytype:1/params:{&quot;Categories&quot;:&quot;&quot;,&quot;SearchText&quot;:&quot;&quot;,&quot;DateFrom&quot;:&quot;&quot;,&quot;DateTo&quot;:&quot;&quot;,&quot;Municipalities&quot;:&quot;0&quot;,&quot;Kunde&quot;:&quot;sandnes_senior&quot;,&quot;Id&quot;:&quot;&quot;,&quot;ItemDate&quot;:&quot;&quot;,&quot;WeekDays&quot;:&quot;&quot;,&quot;List&quot;:&quot;compact&quot;,&quot;Count&quot;:&quot;3&quot;,&quot;Distributor&quot;:&quot;&quot;}/?v=5\" alt=\"aktivitetskalender\" width=\"100%\" id=\"iFrameResizer0\" scrolling=\"no\" style=\"overflow: hidden; min-height: 200px; height: 426px;\">",
+          "target": [
+            "#iFrameResizer0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4>Kommuneplanutvalget</h4>",
+          "target": [
+            "#portalframe1",
+            "div[data-itemid=\"35426\"] > .custom-event-info > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"\" class=\"text-green border-bottom--1 font-size--18 line-height--27 font-weight--600 font-family--inter\"></a>",
+          "target": [
+            ".border-bottom--1.line-height--27[href=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}

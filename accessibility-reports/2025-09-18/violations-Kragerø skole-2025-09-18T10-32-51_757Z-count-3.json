@@ -1,0 +1,191 @@
+{
+  "project": "Kragerø skole",
+  "timestamp": "2025-09-18T10:32:51.757Z",
+  "url": "https://www.kragero.kommune.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\" style=\"--bc-primary-color-500: #127781; --bc-primary-color-400: #29848D; --bc-primary-color-300: #539CA3; --bc-primary-color-200: #86B9BE; --bc-primary-color-100: #B6D5D8; --innsyn-primary-theme-color: #127781; --innsyn-primary-contrast-color: #FFFFFF; --innsyn-primary-neutral-color: #E7ECEA; --innsyn-secondary-theme-color: #FBDBC2; --innsyn-secondary-contrast-color: #141423; --innsyn-secondary-neutral-color: #E9E1DC;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 18,
+      "nodes": [
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Søk</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_44 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<label class=\"content-search-box-label\" for=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_44_WebpartId_44_ucContentSearchBoxControl-content-search-box-search-field\">\n                        <span>\n                            Søk etter\n                        </span>\n\t\t            </label>",
+          "target": [
+            ".webPartInnhold > .content-search-box.content-search-box--default[data-datasource-id=\"2\"] > .content-search-box-content > .content-search-box-input > .content-search-box-combobox > label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPart frontpage-contact-menu accessible-title\" id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_42\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl00_WebpartId_42"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Tjenester</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl01_WebpartId_43 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.kragero.kommune.no/tjenester/oppvekst-og-utdanning/\" data-id=\"17\" class=\"\"><span role=\"heading\" aria-level=\"3\">Oppvekst og utdanning</span></a>",
+          "target": [
+            "a[data-id=\"17\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.kragero.kommune.no/tjenester/helse-omsorg-og-sosiale-tjenester/\" data-id=\"19\" class=\"\"><span role=\"heading\" aria-level=\"3\">Helse, omsorg og sosiale tjenester</span></a>",
+          "target": [
+            "a[data-id=\"19\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.kragero.kommune.no/tjenester/plan-bygg-og-eiendom/\" data-id=\"1095\" class=\"\"><span role=\"heading\" aria-level=\"3\">Plan, bygg og eiendom</span></a>",
+          "target": [
+            "a[data-id=\"1095\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.kragero.kommune.no/tjenester/tekniske-tjenester-brann-og-beredskap/\" data-id=\"20\" class=\"\"><span role=\"heading\" aria-level=\"3\">Tekniske tjenester, brann og beredskap</span></a>",
+          "target": [
+            "a[data-id=\"20\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.kragero.kommune.no/tjenester/vann-avlop-og-renovasjon/\" data-id=\"2620\" class=\"\"><span role=\"heading\" aria-level=\"3\">Vann, avløp og renovasjon</span></a>",
+          "target": [
+            "a[data-id=\"2620\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.kragero.kommune.no/tjenester/kultur-idrett-og-fritid/\" data-id=\"21\" class=\"\"><span role=\"heading\" aria-level=\"3\">Kultur, idrett og fritid</span></a>",
+          "target": [
+            "a[data-id=\"21\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.kragero.kommune.no/tjenester/naring/\" data-id=\"1006\" class=\"\"><span role=\"heading\" aria-level=\"3\">Næring</span></a>",
+          "target": [
+            "a[data-id=\"1006\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.kragero.kommune.no/tjenester/lokaldemokrati/\" data-id=\"18\" class=\"\"><span role=\"heading\" aria-level=\"3\">Lokaldemokrati</span></a>",
+          "target": [
+            "a[data-id=\"18\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li class=\"toplevel vis-alle\" data-index=\"8\"><a href=\"https://www.kragero.kommune.no/tjenester/\" data-id=\"23\" class=\"\"><span role=\"heading\" aria-level=\"3\">Vis alle tjenester</span></a></li>",
+          "target": [
+            ".vis-alle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"middle-boxes\">",
+          "target": [
+            "#middle-boxes"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"webPartTittel\">\n\t\t\t<span>Aktuelt i Kragerø</span>\n\t\t</h2>",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_48 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul>",
+          "target": [
+            ".container > ul"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"webPartBunnLink\">\n            <a id=\"ctl00_ctl00_ctl00_innhold_MidtSone_ctl04_WebpartId_48_WebpartId_48_hlLinkAlle\" class=\"MargLink\" href=\"/aktuelt/\">Se alle saker</a>\n        </div>",
+          "target": [
+            ".webPartBunnLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container-floating-notifications\" style=\"background: url(&quot;/images/1px_Black_Opacity_75.png&quot;);\">",
+          "target": [
+            ".container-floating-notifications"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "skip-link",
+      "impact": "moderate",
+      "description": "Ensure all skip links have a focusable target",
+      "help": "The skip-link target should exist and be focusable",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/skip-link?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"il-skip-to-link\" href=\"#contentSok\">Hopp til søk</a>",
+          "target": [
+            "a[href$=\"#contentSok\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  No skip link target"
+        }
+      ]
+    }
+  ]
+}

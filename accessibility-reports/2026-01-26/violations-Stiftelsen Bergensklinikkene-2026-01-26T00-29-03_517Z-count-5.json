@@ -1,0 +1,176 @@
+{
+  "project": "Stiftelsen Bergensklinikkene",
+  "timestamp": "2026-01-26T00:29:03.517Z",
+  "url": "https://no-go.kelkoogroup.net/redirect?country=no&k=612f7a9541cd6ea61eb554c0e4cff43799334e64879a30593100323327f937f98c9e335e741f7d42e8cd94d7c071b7bd2268ffed8558bde9ecd554edb2cf7a299d75728942f378b6aa14a6b479a72066dc33fcc22101175f03561393e7efbdaab9a627d27647d15087ce1185f9e8f6ff61155df98c89eb3ec2db07dba8f4793b7783cd7d5faa08e354b63e13741bc56ec49c652943ca813b4b4fa380dba3cd8de2cbe0c613f096f2a016fc4248eeecda0931022fafefafdbf580ab5545e719024c40523de4225e9adcf1f2308a7879f63ff71af2e7ee165fa62cf51f3d53dfba2afa112f6c1ec5d0dbca6e1e4a2dfef51a28cf2d914304ea29d34af757b33722dae75020b71c91286650802be3cba30f078d42fd55c045af25f02bc214153dae03cb392211b2136e80a666392579f98f9de66655f387d9f68c72bc657cb44f8fc88ede6b2f257cd339116b9be6b44babbaadcde458fe0a8c&url=https%3A%2F%2Fmecindo.no%2Fproducts%2Fglyc-sunfiber%C2%AEgastro-hindbaersmag%3Fkk%3Da4c6293-19bf7b42a77-26cbd8%26utm_source%3Dkelkoono%26utm_medium%3Dcpc%26utm_campaign%3Dkelkooclick%26utm_source_platform%3DKelkooGroup&initiator=fp&dc=false",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button id=\"human-contact-form-submit\" type=\"submit\" class=\"captcha__contact__submit\" data-dd-captcha-contact-submit=\"\">\n            Send\n        </button>",
+          "target": [
+            "iframe",
+            "#human-contact-form-submit"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.83 (foreground color: #ffffff, background color: #a0ce4e, font size: 10.0pt (13.3333px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/label-title-only?application=playwright",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<textarea data-dd-captcha-contact-input=\"\" rows=\"4\" id=\"human-comment\" name=\"human-comment\" class=\"captcha__contact__input\" placeholder=\"Kommentar\" title=\"Kommentar \"></textarea>",
+          "target": [
+            "iframe",
+            "#human-comment"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        },
+        {
+          "html": "<html lang=\"nb\" style=\"background-color:#ffffff\">",
+          "target": [
+            "iframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html lang=\"nb\" style=\"background-color:#ffffff\">",
+          "target": [
+            "iframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<div class=\"captcha__human\" data-dd-captcha-human=\"\">",
+          "target": [
+            "iframe",
+            ".captcha__human"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"captcha__robot__warning\" data-dd-captcha-robot-warning=\"\">",
+          "target": [
+            "iframe",
+            ".captcha__robot__warning"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"captcha__robot__contact_support\" data-dd-captcha-robot-contact-support=\"\">",
+          "target": [
+            "iframe",
+            ".captcha__robot__contact_support"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<legend data-dd-contactlabel=\"\" class=\"contact__label visually-hidden\">Velg en grunn (obligatorisk).</legend>",
+          "target": [
+            "iframe",
+            "legend"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"captcha__contact__input-container\" data-dd-captcha-contact-input-container=\"\">\n            <textarea data-dd-captcha-contact-input=\"\" rows=\"4\" id=\"human-comment\" name=\"human-comment\" class=\"captcha__contact__input\" placeholder=\"Kommentar\" title=\"Kommentar \"></textarea>\n        </div>",
+          "target": [
+            "iframe",
+            ".captcha__contact__input-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

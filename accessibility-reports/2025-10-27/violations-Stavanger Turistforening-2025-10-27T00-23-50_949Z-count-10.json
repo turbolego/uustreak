@@ -1,0 +1,512 @@
+{
+  "project": "Stavanger Turistforening",
+  "timestamp": "2025-10-27T00:23:50.949Z",
+  "url": "https://www.dnt.no/stavanger/#",
+  "total_violations": 10,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button tabindex=\"0\" onclick=\"CookieInformation.declineAllCategories()\" aria-label=\"Avslå alle\" id=\"declineButton\" class=\"coi-banner__decline\" role=\"alert\" aria-atomic=\"true\">Avslå alle</button>",
+          "target": [
+            "#declineButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role alert is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "description": "Ensure ARIA attributes are not prohibited for an element's role",
+      "help": "Elements must only use permitted ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<div aria-label=\"checkbox-label-cookie_cat_functional\" class=\"coi-consent-banner__checkmark\"></div>",
+          "target": [
+            ".cookie_cat_functional > .coi-consent-banner__checkmark"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        },
+        {
+          "html": "<div aria-label=\"checkbox-label-cookie_cat_statistic\" class=\"coi-consent-banner__checkmark\"></div>",
+          "target": [
+            ".cookie_cat_statistic > .coi-consent-banner__checkmark"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        },
+        {
+          "html": "<div aria-label=\"checkbox-label-cookie_cat_marketing\" class=\"coi-consent-banner__checkmark\"></div>",
+          "target": [
+            ".cookie_cat_marketing > .coi-consent-banner__checkmark"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        }
+      ]
+    },
+    {
+      "id": "aria-valid-attr-value",
+      "impact": "critical",
+      "description": "Ensure all ARIA attributes have valid values",
+      "help": "ARIA attributes must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<button aria-controls=\"modal-506927\" aria-labelledby=\"activity-name-506927 activity-date-506927 activity-geo-506927 activity-details-506927\" class=\"cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10\"><span class=\"sr-only\">Åpne aktivitet</span></button>",
+          "target": [
+            "button[aria-controls=\"modal-506927\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-controls=\"modal-506927\""
+        },
+        {
+          "html": "<button aria-controls=\"modal-560783\" aria-labelledby=\"activity-name-560783 activity-date-560783 activity-geo-560783 activity-details-560783\" class=\"cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10\"><span class=\"sr-only\">Åpne aktivitet</span></button>",
+          "target": [
+            "button[aria-controls=\"modal-560783\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-controls=\"modal-560783\""
+        },
+        {
+          "html": "<button aria-controls=\"modal-568760\" aria-labelledby=\"activity-name-568760 activity-date-568760 activity-geo-568760 activity-details-568760\" class=\"cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10\"><span class=\"sr-only\">Åpne aktivitet</span></button>",
+          "target": [
+            "button[aria-controls=\"modal-568760\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-controls=\"modal-568760\""
+        },
+        {
+          "html": "<button aria-controls=\"modal-568759\" aria-labelledby=\"activity-name-568759 activity-date-568759 activity-geo-568759 activity-details-568759\" class=\"cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10\"><span class=\"sr-only\">Åpne aktivitet</span></button>",
+          "target": [
+            "button[aria-controls=\"modal-568759\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-controls=\"modal-568759\""
+        },
+        {
+          "html": "<button aria-controls=\"modal-552921\" aria-labelledby=\"activity-name-552921 activity-date-552921 activity-geo-552921 activity-details-552921\" class=\"cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10\"><span class=\"sr-only\">Åpne aktivitet</span></button>",
+          "target": [
+            "button[aria-controls=\"modal-552921\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-controls=\"modal-552921\""
+        },
+        {
+          "html": "<button aria-controls=\"modal-506815\" aria-labelledby=\"activity-name-506815 activity-date-506815 activity-geo-506815 activity-details-506815\" class=\"cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10\"><span class=\"sr-only\">Åpne aktivitet</span></button>",
+          "target": [
+            "button[aria-controls=\"modal-506815\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-controls=\"modal-506815\""
+        },
+        {
+          "html": "<button aria-controls=\"modal-570566\" aria-labelledby=\"activity-name-570566 activity-date-570566 activity-geo-570566 activity-details-570566\" class=\"cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10\"><span class=\"sr-only\">Åpne aktivitet</span></button>",
+          "target": [
+            "button[aria-controls=\"modal-570566\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-controls=\"modal-570566\""
+        },
+        {
+          "html": "<button aria-controls=\"modal-561539\" aria-labelledby=\"activity-name-561539 activity-date-561539 activity-geo-561539 activity-details-561539\" class=\"cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10\"><span class=\"sr-only\">Åpne aktivitet</span></button>",
+          "target": [
+            "button[aria-controls=\"modal-561539\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-controls=\"modal-561539\""
+        }
+      ]
+    },
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" id=\"photocredit-icon\" class=\"button-rounded-transparent leading-4 !px-1 z-40\">",
+          "target": [
+            "#photocredit-icon"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<h4 class=\"text-sm text-black font-light mt-2.5\">\n                \n            </h4>",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(1) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<h4 class=\"text-sm text-black font-light mt-2.5\">\n                \n            </h4>",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(2) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<h4 class=\"text-sm text-black font-light mt-2.5\">\n                \n            </h4>",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(3) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<h4 class=\"text-sm text-black font-light mt-2.5\">\n                \n            </h4>",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(4) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<h4 class=\"text-sm text-black font-light mt-2.5\">\n                \n            </h4>",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(5) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<h4 class=\"text-sm text-black font-light mt-2.5\">\n                \n            </h4>",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(6) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<h4 class=\"text-sm text-black font-light mt-2.5\">\n                \n            </h4>",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(7) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<h4 class=\"text-sm text-black font-light mt-2.5\">\n                \n            </h4>",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(8) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 13,
+      "nodes": [
+        {
+          "html": "<img src=\"https://www.dnt.no/cdn-cgi/image/width=960,height=660,fit=crop,gravity=face,format=auto/https://www.dnt.no//globalassets/fotoware/2025/5/091423ryfylke_foto_mariusdalseg_11.jpg?format=auto\" class=\"h-full w-full object-cover object-center\">",
+          "target": [
+            ".w-auto > picture > .object-center.object-cover"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://www.dnt.no/cdn-cgi/image/width=450,height=315,fit=crop,gravity=face,format=auto/https://www.dnt.no//globalassets/fotoware/2023/9/091423ryfylke_foto_mariusdalseg_30.jpg?format=auto\" class=\"md:group-hover:scale-110 w-full md:transition object-cover t-[10px] md:rounded-[10px] h-32 md:h-[208px]\">",
+          "target": [
+            "#react_0HNGI092T9453 > .my-10 > .md\\:grid-cols-4.mb-16.gap-7 > .group.relative:nth-child(3) > div > .md\\:flex-col.space-x-4.md\\:space-x-0 > .w-2\\/5.md\\:mb-3.md\\:w-full > .overflow-hidden.rounded-lg > picture > .t-\\[10px\\].md\\:rounded-\\[10px\\].md\\:group-hover\\:scale-110"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://www.dnt.no/cdn-cgi/image/width=870,height=240,fit=crop,gravity=face,format=auto/https://www.dnt.no//globalassets/fotoware/2024/11/0624_skapet_fotomariusdalseg_dnt_12.jpg?format=auto\" class=\"h-38 w-full object-cover object-center\">",
+          "target": [
+            "div:nth-child(1) > .bg-beige-50.bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\\:col-start-9.md\\:col-span-3 > .border.hover\\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://www.dnt.no/cdn-cgi/image/width=870,height=240,fit=crop,gravity=face,format=auto/https://www.dnt.no//globalassets/fotoware/2023/6/floerli_turiststasjon-13.jpg?format=auto\" class=\"h-38 w-full object-cover object-center\">",
+          "target": [
+            "div:nth-child(2) > .bg-beige-50.bleeding-edges.py-10 > .grid-cols-12.gap-y-6.container > .col-start-2.md\\:col-start-9.md\\:col-span-3 > .border.hover\\:shadow-md.border-beige-200 > .bg-topography.overflow-hidden.rounded-lg > picture > .h-38.object-center.object-cover"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"w-full h-full object-cover object-center\" width=\"600\" height=\"264\" src=\"https://www.dnt.no/cdn-cgi/image/width=900,height=405,fit=crop,gravity=face,format=auto/https://www.dnt.no//globalassets/foreninger/stavanger-turistforening/barnas-turlag-square_riktig.jpeg?format=auto\">",
+          "target": [
+            ".object-center[height=\"264\"][width=\"600\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/cdn-cgi/image/format=auto,width=256,height=100,onerror=redirect,fit=contain/contentassets/1b8c3d86921e41708d726846da0cf524/lyse_2d_rgb.png?format=auto\">",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(1) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > .h-\\[100px\\].items-center.flex > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/cdn-cgi/image/format=auto,width=256,height=100,onerror=redirect,fit=contain/contentassets/1b8c3d86921e41708d726846da0cf524/slb_logo_2022.svg.png?format=auto\">",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(2) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > .h-\\[100px\\].items-center.flex > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/cdn-cgi/image/format=auto,width=256,height=100,onerror=redirect,fit=contain/globalassets/foreninger/stavanger-turistforening/rsb_logo_turistforeningen_mobil-320x400.png?format=auto\">",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(3) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > .h-\\[100px\\].items-center.flex > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/cdn-cgi/image/format=auto,width=256,height=100,onerror=redirect,fit=contain/contentassets/1b8c3d86921e41708d726846da0cf524/bate_logo_rod_orig.png?format=auto\">",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(4) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > .h-\\[100px\\].items-center.flex > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/cdn-cgi/image/format=auto,width=256,height=100,onerror=redirect,fit=contain/globalassets/foreninger/stavanger-turistforening/totalenergies_logosverticalstotalenergies_logo_rgb.png?format=auto\">",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(5) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > .h-\\[100px\\].items-center.flex > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/cdn-cgi/image/format=auto,width=256,height=100,onerror=redirect,fit=contain/contentassets/1b8c3d86921e41708d726846da0cf524/wwwplatousportcom__032c.jpg?format=auto\">",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(6) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > .h-\\[100px\\].items-center.flex > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/cdn-cgi/image/format=auto,width=256,height=100,onerror=redirect,fit=contain/contentassets/1b8c3d86921e41708d726846da0cf524/selvaag_hage_logo.gif?format=auto\">",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(7) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > .h-\\[100px\\].items-center.flex > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/cdn-cgi/image/format=auto,width=256,height=100,onerror=redirect,fit=contain/contentassets/c149a441bfdf4fe0abf71e95f5c8611d/folkehallene8x.png?format=auto\">",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(8) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .justify-between.h-full.flex-col > .h-\\[100px\\].items-center.flex > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.lyse.no/strom/hytte?utm_campaign=strom_hytte_salg&amp;utm_medium=banner&amp;utm_source=turistforeningen\" class=\"!absolute inset-0 z-50 focus-outline\">\n            <span class=\"sr-only\">\n                \n            </span>\n        </a>",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(1) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .inset-0.\\!absolute.z-50"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.slb.com/about/who-we-are/our-global-presence/slb-scandinavia\" class=\"!absolute inset-0 z-50 focus-outline\">\n            <span class=\"sr-only\">\n                \n            </span>\n        </a>",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(2) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .inset-0.\\!absolute.z-50"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dengulebanken.no/\" class=\"!absolute inset-0 z-50 focus-outline\">\n            <span class=\"sr-only\">\n                \n            </span>\n        </a>",
+          "target": [
+            "a[href$=\"dengulebanken.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://bate.no/\" class=\"!absolute inset-0 z-50 focus-outline\">\n            <span class=\"sr-only\">\n                \n            </span>\n        </a>",
+          "target": [
+            "a[href$=\"bate.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://corporate.totalenergies.no/\" class=\"!absolute inset-0 z-50 focus-outline\">\n            <span class=\"sr-only\">\n                \n            </span>\n        </a>",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(5) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .inset-0.\\!absolute.z-50"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.platousport.com/\" class=\"!absolute inset-0 z-50 focus-outline\">\n            <span class=\"sr-only\">\n                \n            </span>\n        </a>",
+          "target": [
+            "a[href$=\"platousport.com/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.selvaag-gartneri.no/\" class=\"!absolute inset-0 z-50 focus-outline\">\n            <span class=\"sr-only\">\n                \n            </span>\n        </a>",
+          "target": [
+            ".w-\\[180px\\].h-\\[160px\\]:nth-child(7) > .shadow-beige-300\\/25.hover\\:shadow-beige-300\\/75.px-8 > .inset-0.\\!absolute.z-50"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://folkehallene.no/\" class=\"!absolute inset-0 z-50 focus-outline\">\n            <span class=\"sr-only\">\n                \n            </span>\n        </a>",
+          "target": [
+            "a[href$=\"folkehallene.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<div class=\"fixed w-full top-0 z-[2000] flex justify-center skip-to-main-content\">\n        <a id=\"go-to-top\" href=\"#main-content\">Hopp til hovedinnhold</a>\n    </div>",
+          "target": [
+            ".fixed"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"relative w-auto h-full max-w-[2000px] bg-cover mx-auto mb-24\">",
+          "target": [
+            ".w-auto"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"font-headers text-[17px] px-4 font-normal\">\n                            Stavanger Turistforening\n                        </div>",
+          "target": [
+            ".text-\\[17px\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

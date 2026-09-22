@@ -1,0 +1,68 @@
+{
+  "project": "Assistermeg AS",
+  "timestamp": "2026-01-15T06:50:37.310Z",
+  "url": "https://www.assistermeg.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1",
+        "RGAAv4",
+        "RGAA-10.6.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a id=\"cookiescript_readmor...\" data-cs-i18n-text=\"{\"no\":\"Personvernerk...\" data-cs-i18n-url=\"{\"no\":\"https:\\/\\/www...\" target=\"_blank\" aria-label=\"Personvernerklæring,...\" href=\"https://www.assister...\">",
+          "target": [
+            "#cookiescript_readmore"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #cc0000, surrounding text: #2d2d2d)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div data-poster-url=\"https://cdn.prod.web...\" data-video-urls=\"https://cdn.prod.web...\" data-autoplay=\"true\" data-loop=\"true\" data-wf-ignore=\"true\" class=\"background-video w-b...\">",
+          "target": [
+            ".background-video"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"content-wrapper-wide _25px-padding w-container\">",
+          "target": [
+            ".content-wrapper-wide"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

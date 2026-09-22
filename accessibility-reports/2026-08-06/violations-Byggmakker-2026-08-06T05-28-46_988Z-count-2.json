@@ -1,0 +1,474 @@
+{
+  "project": "Byggmakker",
+  "timestamp": "2026-08-06T05:28:46.988Z",
+  "url": "https://www.byggmakker.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 56,
+      "nodes": [
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7070276047569\" data-price-history=\"0\" role=\"img\" aria-labelledby=\"CampaignProductList_7070276047569_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/terrassebord-28x120-furu-cu-impregnert-kl1/7070276047569\">",
+          "target": [
+            ".product-card.ab_omni_kampaign[data-product_id=\"7070276047569\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7070276047569\" data-price-history=\"0\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/terrassebord-28x120-furu-cu-impregnert-kl1/7070276047569\">",
+          "target": [
+            ".product-card__product-price.prrc[data-product_id=\"7070276047569\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"5035048614099\" data-price-history=\"3990\" role=\"img\" aria-labelledby=\"CampaignProductList_5035048614099_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/kapp-gjersag-dws774-216mm-dewalt/5035048614099\">",
+          "target": [
+            ".campaign-product-list__card:nth-child(2) > .product-card__container[data-cy=\"product-card-container\"] > .product-card__image-outer-container > .product-card[data-product_id=\"5035048614099\"][data-price-history=\"3990\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"5035048614099\" data-price-history=\"3990\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/kapp-gjersag-dws774-216mm-dewalt/5035048614099\">",
+          "target": [
+            ".campaign-product-list__card:nth-child(2) > .product-card__container[data-cy=\"product-card-container\"] > .product-card__product-price[data-product_id=\"5035048614099\"][data-price-history=\"3990\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"1289\" role=\"img\" aria-labelledby=\"CampaignProductList_20012_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/drygolin-pluss-oljemaling-10l-jotun/20012\">",
+          "target": [
+            ".campaign-product-list__card:nth-child(3) > .product-card__container[data-cy=\"product-card-container\"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-price-history=\"1289\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"1289\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/drygolin-pluss-oljemaling-10l-jotun/20012\">",
+          "target": [
+            ".campaign-product-list__card:nth-child(3) > .product-card__container[data-cy=\"product-card-container\"] > .product-card__product-price.prrc[data-price-history=\"1289\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"999\" role=\"img\" aria-labelledby=\"CampaignProductList_20013_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/drygolin-pluss-oljedekkbeis-10l-jotun/20013\">",
+          "target": [
+            ".campaign-product-list__card:nth-child(4) > .product-card__container[data-cy=\"product-card-container\"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-price-history=\"999\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"999\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/drygolin-pluss-oljedekkbeis-10l-jotun/20013\">",
+          "target": [
+            ".campaign-product-list__card:nth-child(4) > .product-card__container[data-cy=\"product-card-container\"] > .product-card__product-price.prrc[data-price-history=\"999\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"5035048614099\" data-price-history=\"3990\" role=\"img\" aria-labelledby=\"CampaignProductList_5035048614099_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/kapp-gjersag-dws774-216mm-dewalt/5035048614099\">",
+          "target": [
+            ".campaign-product-list__card:nth-child(1) > .product-card__container[data-cy=\"product-card-container\"] > .product-card__image-outer-container > .product-card[data-product_id=\"5035048614099\"][data-price-history=\"3990\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"5035048614099\" data-price-history=\"3990\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/kapp-gjersag-dws774-216mm-dewalt/5035048614099\">",
+          "target": [
+            ".campaign-product-list__card:nth-child(1) > .product-card__container[data-cy=\"product-card-container\"] > .product-card__product-price[data-product_id=\"5035048614099\"][data-price-history=\"3990\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"5035048113370\" data-price-history=\"2190\" role=\"img\" aria-labelledby=\"CampaignProductList_5035048113370_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/sagbord-til-kappgjaersag-de7023-dewalt/5035048113370\">",
+          "target": [
+            ".product-card[data-product_id=\"5035048113370\"][data-price-history=\"2190\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"5035048113370\" data-price-history=\"2190\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/sagbord-til-kappgjaersag-de7023-dewalt/5035048113370\">",
+          "target": [
+            ".product-card__product-price[data-product_id=\"5035048113370\"][data-price-history=\"2190\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"5035048690444\" data-price-history=\"2490\" role=\"img\" aria-labelledby=\"CampaignProductList_5035048690444_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/batteridrill-18v-xr-20ah-dcd777d2t-dewalt/5035048690444\">",
+          "target": [
+            ".product-card[data-product_id=\"5035048690444\"][data-price-history=\"2490\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"5035048690444\" data-price-history=\"2490\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/batteridrill-18v-xr-20ah-dcd777d2t-dewalt/5035048690444\">",
+          "target": [
+            ".product-card__product-price[data-product_id=\"5035048690444\"][data-price-history=\"2490\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"5035048669600\" data-price-history=\"0\" role=\"img\" aria-labelledby=\"CampaignProductList_5035048669600_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/krysslaser-gronn-3xaa-dw088cg-dewalt/5035048669600\">",
+          "target": [
+            ".product-card.ab_omni_kampaign[data-product_id=\"5035048669600\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"5035048669600\" data-price-history=\"0\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/krysslaser-gronn-3xaa-dw088cg-dewalt/5035048669600\">",
+          "target": [
+            ".product-card__product-price.prrc[data-product_id=\"5035048669600\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"1289\" role=\"img\" aria-labelledby=\"CampaignProductList_20012_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/drygolin-pluss-oljemaling-10l-jotun/20012\">",
+          "target": [
+            ".campaign-product-list__card:nth-child(1) > .product-card__container[data-cy=\"product-card-container\"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-price-history=\"1289\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"1289\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/drygolin-pluss-oljemaling-10l-jotun/20012\">",
+          "target": [
+            ".campaign-product-list__card:nth-child(1) > .product-card__container[data-cy=\"product-card-container\"] > .product-card__product-price.prrc[data-price-history=\"1289\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"999\" role=\"img\" aria-labelledby=\"CampaignProductList_20013_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/drygolin-pluss-oljedekkbeis-10l-jotun/20013\">",
+          "target": [
+            ".campaign-product-list__card:nth-child(2) > .product-card__container[data-cy=\"product-card-container\"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[data-price-history=\"999\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"999\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/drygolin-pluss-oljedekkbeis-10l-jotun/20013\">",
+          "target": [
+            ".campaign-product-list__card:nth-child(2) > .product-card__container[data-cy=\"product-card-container\"] > .product-card__product-price.prrc[data-price-history=\"999\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"1589\" role=\"img\" aria-labelledby=\"CampaignProductList_1076_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/drygolin-optimal-9l-jotun/1076\">",
+          "target": [
+            ".product-card.ab_omni_kampaign[data-price-history=\"1589\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"1589\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/drygolin-optimal-9l-jotun/1076\">",
+          "target": [
+            ".product-card__product-price.prrc[data-price-history=\"1589\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"2569\" role=\"img\" aria-labelledby=\"CampaignProductList_20095_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/drygolin-nordic-extreme-50-9l-jotun/20095\">",
+          "target": [
+            ".product-card.ab_omni_kampaign[data-price-history=\"2569\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"2569\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/drygolin-nordic-extreme-50-9l-jotun/20095\">",
+          "target": [
+            ".product-card__product-price.prrc[data-price-history=\"2569\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7029350259862\" data-price-history=\"0\" role=\"img\" aria-labelledby=\"CampaignProductList_7029350259862_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/jotun-husvask-4l-jotun/7029350259862\">",
+          "target": [
+            ".product-card.ab_omni_kampaign[data-product_id=\"7029350259862\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7029350259862\" data-price-history=\"0\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/jotun-husvask-4l-jotun/7029350259862\">",
+          "target": [
+            ".product-card__product-price.prrc[data-product_id=\"7029350259862\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7029350259848\" data-price-history=\"0\" role=\"img\" aria-labelledby=\"CampaignProductList_7029350259848_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/jotun-kraftvask-4l-jotun/7029350259848\">",
+          "target": [
+            ".product-card.ab_omni_kampaign[data-product_id=\"7029350259848\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7029350259848\" data-price-history=\"0\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/jotun-kraftvask-4l-jotun/7029350259848\">",
+          "target": [
+            ".product-card__product-price.prrc[data-product_id=\"7029350259848\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7311490027181\" data-price-history=\"499\" role=\"img\" aria-labelledby=\"CampaignProductList_7311490027181_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/tohandsskrape-2-komponent-jordan/7311490027181\">",
+          "target": [
+            ".product-card[data-product_id=\"7311490027181\"][data-price-history=\"499\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7311490027181\" data-price-history=\"499\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/tohandsskrape-2-komponent-jordan/7311490027181\">",
+          "target": [
+            ".product-card__product-price[data-product_id=\"7311490027181\"][data-price-history=\"499\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7311490028164\" data-price-history=\"249\" role=\"img\" aria-labelledby=\"CampaignProductList_7311490028164_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/rullesett-perfect-hus-og-gjerde-14cm-jordan/7311490028164\">",
+          "target": [
+            ".product-card[data-product_id=\"7311490028164\"][data-price-history=\"249\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7311490028164\" data-price-history=\"249\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/rullesett-perfect-hus-og-gjerde-14cm-jordan/7311490028164\">",
+          "target": [
+            ".product-card__product-price[data-product_id=\"7311490028164\"][data-price-history=\"249\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"6990\" role=\"img\" aria-labelledby=\"CampaignProductList_303_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/ytterdor-p-100-uten-glass-hvit-swedoor/303\">",
+          "target": [
+            ".product-card.ab_omni_kampaign[data-price-history=\"6990\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"6990\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/ytterdor-p-100-uten-glass-hvit-swedoor/303\">",
+          "target": [
+            ".product-card__product-price.prrc[data-price-history=\"6990\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"8990\" role=\"img\" aria-labelledby=\"CampaignProductList_308_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/ytterdor-p-1100-med-glass-hvit-swedoor/308\">",
+          "target": [
+            ".product-card.ab_omni_kampaign[data-price-history=\"8990\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"8990\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/ytterdor-p-1100-med-glass-hvit-swedoor/308\">",
+          "target": [
+            ".product-card__product-price.prrc[data-price-history=\"8990\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"10990\" role=\"img\" aria-labelledby=\"CampaignProductList_302_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/ytterdor-p-1700-med-glass-hvit-swedoor/302\">",
+          "target": [
+            ".product-card.ab_omni_kampaign[data-price-history=\"10990\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"10990\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/ytterdor-p-1700-med-glass-hvit-swedoor/302\">",
+          "target": [
+            ".product-card__product-price.prrc[data-price-history=\"10990\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"5704571196111\" data-price-history=\"3490\" role=\"img\" aria-labelledby=\"CampaignProductList_5704571196111_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/kodelas-thouch-ultimate-sort-easy-access/5704571196111\">",
+          "target": [
+            ".product-card[data-product_id=\"5704571196111\"][data-price-history=\"3490\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"5704571196111\" data-price-history=\"3490\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/kodelas-thouch-ultimate-sort-easy-access/5704571196111\">",
+          "target": [
+            ".product-card__product-price[data-product_id=\"5704571196111\"][data-price-history=\"3490\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"0\" role=\"img\" aria-labelledby=\"CampaignProductList_20054_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/maling-lady-pure-color-9l-jotun/20054\">",
+          "target": [
+            "#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy=\"product-card-container\"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role=\"img\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"0\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/maling-lady-pure-color-9l-jotun/20054\">",
+          "target": [
+            "#male_inne > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy=\"product-card-container\"] > .product-card__product-price.prrc[aria-label=\"Prisinformasjon\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"899\" role=\"img\" aria-labelledby=\"CampaignProductList_20152_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/gulvmaling-trestjerner-3l-matt-scanox/20152\">",
+          "target": [
+            ".product-card.ab_omni_kampaign[data-price-history=\"899\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"899\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/gulvmaling-trestjerner-3l-matt-scanox/20152\">",
+          "target": [
+            ".product-card__product-price.prrc[data-price-history=\"899\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"1490\" role=\"img\" aria-labelledby=\"CampaignProductList_155_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/gulvmaling-trestjerner-premium-silkematt-27l-scanox/155\">",
+          "target": [
+            ".product-card.ab_omni_kampaign[data-price-history=\"1490\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"\" data-price-history=\"1490\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/gulvmaling-trestjerner-premium-silkematt-27l-scanox/155\">",
+          "target": [
+            ".product-card__product-price.prrc[data-price-history=\"1490\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7311490038040\" data-price-history=\"339\" role=\"img\" aria-labelledby=\"CampaignProductList_7311490038040_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/forlengerskaft-perfect-115-195cm-jordan/7311490038040\">",
+          "target": [
+            ".product-card[data-product_id=\"7311490038040\"][data-price-history=\"339\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7311490038040\" data-price-history=\"339\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/forlengerskaft-perfect-115-195cm-jordan/7311490038040\">",
+          "target": [
+            ".product-card__product-price[data-product_id=\"7311490038040\"][data-price-history=\"339\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7393969045018\" data-price-history=\"0\" role=\"img\" aria-labelledby=\"CampaignProductList_7393969045018_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/parkett-1-stav-eik-aurora-kahrs/7393969045018\">",
+          "target": [
+            ".product-card.ab_omni_kampaign[data-product_id=\"7393969045018\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7393969045018\" data-price-history=\"0\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/parkett-1-stav-eik-aurora-kahrs/7393969045018\">",
+          "target": [
+            ".product-card__product-price.prrc[data-product_id=\"7393969045018\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7052870178283\" data-price-history=\"0\" role=\"img\" aria-labelledby=\"CampaignProductList_7052870178283_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/laminatgulv-1-stav-grand-avenue-comfort-rodeo-drive-berryalloc/7052870178283\">",
+          "target": [
+            ".product-card.ab_omni_kampaign[data-product_id=\"7052870178283\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7052870178283\" data-price-history=\"0\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/laminatgulv-1-stav-grand-avenue-comfort-rodeo-drive-berryalloc/7052870178283\">",
+          "target": [
+            ".product-card__product-price.prrc[data-product_id=\"7052870178283\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7052870178269\" data-price-history=\"0\" role=\"img\" aria-labelledby=\"CampaignProductList_7052870178269_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/laminatgulv-1-stav-grand-prime-champs-elysees-berryalloc/7052870178269\">",
+          "target": [
+            ".product-card.ab_omni_kampaign[data-product_id=\"7052870178269\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"7052870178269\" data-price-history=\"0\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/laminatgulv-1-stav-grand-prime-champs-elysees-berryalloc/7052870178269\">",
+          "target": [
+            ".product-card__product-price.prrc[data-product_id=\"7052870178269\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"6438313783121\" data-price-history=\"0\" role=\"img\" aria-labelledby=\"CampaignProductList_6438313783121_image-description\" class=\"product-card ab_omni_kampaign\" href=\"/produkt/klikkvinygulvl-1-stav-londoner-soho-cello/6438313783121\">",
+          "target": [
+            ".product-card.ab_omni_kampaign[data-product_id=\"6438313783121\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role img is not allowed for given element"
+        },
+        {
+          "html": "<a tabindex=\"-1\" data-product_id=\"6438313783121\" data-price-history=\"0\" role=\"group\" aria-label=\"Prisinformasjon\" class=\"product-card__product-link product-card__product-price prrc\" href=\"/produkt/klikkvinygulvl-1-stav-londoner-soho-cello/6438313783121\">",
+          "target": [
+            ".product-card__product-price.prrc[data-product_id=\"6438313783121\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<div class=\"top-notification__text\"><p class=\"text-block__text \">Sikkerhetsmelding: Svindelforsøk rettet mot kryptolommebøker i omløp - <a class=\"conditional-link text-link  \" href=\"/side/info-sikkerhetsmelding\">Les mer</a></p></div>",
+          "target": [
+            ".top-nav-wrapper > .top-notification.top-notification--critical > .top-notification__content > .top-notification__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li role=\"none\">",
+          "target": [
+            "li[role=\"none\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li role=\"none\">",
+          "target": [
+            "li[role=\"none\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li role=\"none\">",
+          "target": [
+            "li[role=\"none\"]:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li role=\"none\">",
+          "target": [
+            "li[role=\"none\"]:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<li role=\"none\">",
+          "target": [
+            "li[role=\"none\"]:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

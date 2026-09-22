@@ -1,0 +1,1515 @@
+{
+  "project": "Aftenposten AS",
+  "timestamp": "2026-01-21T00:26:13.339Z",
+  "url": "https://www.aftenposten.no/#",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-valid-attr-value",
+      "impact": "critical",
+      "description": "Ensure all ARIA attributes have valid values",
+      "help": "ARIA attributes must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-valid-attr-value?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"javascript:void(0)\" class=\"ch-menu-state-label\" aria-label=\"Meny\" aria-controls=\"ch-menu\">Åpne</a>",
+          "target": [
+            ".ch-menu-state-label"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-controls=\"ch-menu\""
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<img class=\"teaser-image\" src=\"https://premium.vgc....\" srcset=\"https://premium.vgc....\" sizes=\"(max-width: 767px) 5...\" alt=\"Trump på ettårsdagen...\" loading=\"eager\" decoding=\"auto\">",
+          "target": [
+            "#pBAaPE > .teaser-link > .teaser-image-wrapper > .teaser-image[loading=\"eager\"][decoding=\"auto\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"teaser-image\" src=\"https://premium.vgc.no/ap/images/e9d54512-610f-41c3-be62-e373fa624aac?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"«Hvor i helvete er du, Obama?», spør amerikansk journalist. Vi har spurt USA-eksperter. \" loading=\"eager\" decoding=\"auto\">",
+          "target": [
+            "#PdRxx6 > .teaser-link > .container > .teaser-image-wrapper > .teaser-image[loading=\"eager\"][decoding=\"auto\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" data-srcset=\"https://premium.vgc....\" data-sizes=\"(max-width: 767px) 5...\" alt=\"Klart nei fra ukrain...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#XM834B > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/dcf83020-607d-4769-919c-586025069be6?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Ordføreren i Kyiv: 600.000 har flyktet fra byen denne måneden\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#n1A6V5 > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/8aadbd11-08ec-4aea-b905-c133578173e6?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Folkets dom etter ett år med Trump\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#ExpMza > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" data-srcset=\"https://premium.vgc....\" data-sizes=\"(max-width: 767px) 5...\" alt=\"Trump postet dette b...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#rrg273 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/0551563e-43d4-4f6d-8c69-f138106a5712?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Det kan bety selvskading. Ekspertene mener likevel at Europa må stå opp mot Trump.\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#pBAjK1 > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<header class=\"ch-core-header\">",
+          "target": [
+            ".ch-core-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<header class=\"ch-core-header\">",
+          "target": [
+            ".ch-core-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 194,
+      "nodes": [
+        {
+          "html": "<div class=\"teaser-wrapper fullwidth\">",
+          "target": [
+            ".fullwidth.teaser-wrapper:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article id=\"5p6dLm\" data-timestamp=\"2026-01-20T15:07:48Z\" class=\"teaser medium with-i...\" data-pulse-entity-id=\"5p6dLm\" data-pulse-source=\"frontpage:top\" data-pulse-position=\"2\" data-pulse-access-le...=\"Meter\" data-pulse-access-le...=\"Meter\" data-pulse-element-s...=\"medium\" data-pulse-url=\"https:// ...>",
+          "target": [
+            "#\\35 p6dLm"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"teaser-image-wrapper\"><img class=\"teaser-image\" src=\"https://premium.vgc.no/ap/images/021c0784-4fb1-418f-aa52-bc59dcde9633?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"For en ydmykelse! Jeg skal aldri se hvor grensen går.\" loading=\"eager\" decoding=\"auto\"></div>",
+          "target": [
+            "#M730aJ > .teaser-link > .teaser-image-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"information\"><div class=\"context-label\">Meninger<span class=\"relevant-tag\">Fotball</span></div></div>",
+          "target": [
+            "#M730aJ > .teaser-link > .container > .information"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text\"><h2 class=\"title\">For en ydmykelse! Jeg skal aldri se hvor grensen går.</h2></div>",
+          "target": [
+            "#M730aJ > .teaser-link > .container > .illustration-container > .text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"illustration-byline-info\"><div><div class=\"author-name \">Daniel Røed-Johansen</div><div class=\"author-title\">Kommentator i Aftenposten</div></div></div>",
+          "target": [
+            "#M730aJ > .teaser-link > .container > .illustration-container > .illustration-byline-info"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy author-image ...\" data-src=\"https://premium.vgc....\" alt=\"bilde av Daniel Røed...\" width=\"88\" height=\"88\" loading=\"lazy\" decoding=\"async\" src=\"https://premium.vgc....\" data-loaded=\"true\">",
+          "target": [
+            ".b-loaded"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"teaser-wrapper fullwidth\">",
+          "target": [
+            ".fullwidth.teaser-wrapper:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"width:976px;position:relative\">",
+          "target": [
+            "#dr-edition-teaser-5xr6mv0vl > div"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bundle-title\"><h2 class=\"title\">Global makt i endring</h2></div>",
+          "target": [
+            ".bundle-wrapper.fullwidth.teaser-wrapper:nth-child(5) > .teaser-bundle.new-bundles.desktop > .bundle-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"teaser-image-wrapper\">",
+          "target": [
+            "#pBAaPE > .teaser-link > .teaser-image-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"title\">Trump på ettårsdagen for sin andre presidentperiode: – Jeg har mistet mye av respekten for Norge</h2>",
+          "target": [
+            "#pBAaPE > .teaser-link > .container > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"secondary-teasers-wrapper\">",
+          "target": [
+            ".bundle-wrapper.fullwidth.teaser-wrapper:nth-child(5) > .teaser-bundle.new-bundles.desktop > .bundle-teasers-wrapper > .secondary-teasers-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"_heading_1bm9r_641 _heading_gghy7_375\"><span>Har du fått med deg dette?</span></h2>",
+          "target": [
+            "._heading_1bm9r_641"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_1bm9r_709\" src=\"https://images.stream.schibsted.media/users/ap_/images/67293fd075f20268e168718968516c64.jpg\" alt=\"Forhåndsvisning av Marleys (7) Trump-beskjed er sett av millioner\" loading=\"lazy\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137473\"] > a > ._preview-image_1bm9r_709[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_preview-duration_gghy7_384\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137473\"] > a > ._preview-duration_gghy7_384"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_1bm9r_721 _preview-title_gghy7_412\"><span>Marleys (7) Trump-beskjed er sett av millioner</span></h3>",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137473\"] > a > ._preview-title_1bm9r_721._preview-title_gghy7_412"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_1bm9r_709\" src=\"https://images.stream.schibsted.media/users/ap_/images/d973f5820007d14ade9018509d2d4d45.jpg\" alt=\"Forhåndsvisning av Her får du øl for 35 kroner\" loading=\"lazy\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137468\"] > a > ._preview-image_1bm9r_709[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_preview-duration_gghy7_384\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137468\"] > a > ._preview-duration_gghy7_384"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_1bm9r_721 _preview-title_gghy7_412\"><span>Her får du øl for 35 kroner</span></h3>",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137468\"] > a > ._preview-title_1bm9r_721._preview-title_gghy7_412"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_1bm9r_709\" src=\"https://images.stream.schibsted.media/users/ap_/images/9345eb972fe42a896ab606315f9004da.jpg\" alt=\"Forhåndsvisning av Marcus og Martinus' lillesøster: – Har ikke presset meg til noe!\" loading=\"lazy\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137467\"] > a > ._preview-image_1bm9r_709[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_preview-duration_gghy7_384\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137467\"] > a > ._preview-duration_gghy7_384"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_1bm9r_721 _preview-title_gghy7_412\"><span>Marcus og Martinus' lillesøster: – Har ikke presset meg til noe!</span></h3>",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137467\"] > a > ._preview-title_1bm9r_721._preview-title_gghy7_412"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_1bm9r_709\" src=\"https://images.stream.schibsted.media/users/ap_/images/9452fc35f2524460b2dc2fb5f6a785a8.jpg\" alt=\"Forhåndsvisning av Rybak om Israel-boikott: – Har nok ikke den overbevisningen\" loading=\"lazy\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137457\"] > a > ._preview-image_1bm9r_709[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_preview-duration_gghy7_384\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137457\"] > a > ._preview-duration_gghy7_384"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_1bm9r_721 _preview-title_gghy7_412\"><span>Rybak om Israel-boikott: – Har nok ikke den overbevisningen</span></h3>",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137457\"] > a > ._preview-title_1bm9r_721._preview-title_gghy7_412"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_1bm9r_709\" src=\"https://images.stream.schibsted.media/users/ap_/images/c044cde650cce0126752398b6375e71f.jpg\" alt=\"Forhåndsvisning av – Vi er i en veldig alvorlig situasjon\" loading=\"lazy\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137453\"] > a > ._preview-image_1bm9r_709[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_preview-duration_gghy7_384\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137453\"] > a > ._preview-duration_gghy7_384"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_1bm9r_721 _preview-title_gghy7_412\"><span>– Vi er i en veldig alvorlig situasjon</span></h3>",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137453\"] > a > ._preview-title_1bm9r_721._preview-title_gghy7_412"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_1bm9r_709\" src=\"https://images.stream.schibsted.media/users/ap_/images/009e905023a6ef3fc8ce4a258cebf878.jpg\" alt=\"Forhåndsvisning av – Folk går inn for å finne ut om deres kjære er drept\" loading=\"lazy\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137433\"] > a > ._preview-image_1bm9r_709[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_preview-duration_gghy7_384\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137433\"] > a > ._preview-duration_gghy7_384"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_1bm9r_721 _preview-title_gghy7_412\"><span>– Folk går inn for å finne ut om deres kjære er drept</span></h3>",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137433\"] > a > ._preview-title_1bm9r_721._preview-title_gghy7_412"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_1bm9r_709\" src=\"https://images.stream.schibsted.media/users/ap_/images/b8a2b70ab46bead4b21d94d71e39ead5.jpg\" alt=\"Forhåndsvisning av Drakk du mye i desember? Dette er ekspertens råd\" loading=\"lazy\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137445\"] > a > ._preview-image_1bm9r_709[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_preview-duration_gghy7_384\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137445\"] > a > ._preview-duration_gghy7_384"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_1bm9r_721 _preview-title_gghy7_412\"><span>Drakk du mye i desember? Dette er ekspertens råd</span></h3>",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137445\"] > a > ._preview-title_1bm9r_721._preview-title_gghy7_412"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_1bm9r_709\" src=\"https://images.stream.schibsted.media/users/ap_/images/cdc7425189779772918e0cb522f553ae.jpg\" alt=\"Forhåndsvisning av Her kan du kjøpe eget rom - i kollektiv\" loading=\"lazy\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137441\"] > a > ._preview-image_1bm9r_709[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_preview-duration_gghy7_384\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137441\"] > a > ._preview-duration_gghy7_384"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_1bm9r_721 _preview-title_gghy7_412\"><span>Her kan du kjøpe eget rom - i kollektiv</span></h3>",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137441\"] > a > ._preview-title_1bm9r_721._preview-title_gghy7_412"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_1bm9r_709\" src=\"https://images.stream.schibsted.media/users/ap_/images/884f1fb7045873ba6218e0bb7ae3b42a.jpg\" alt=\"Forhåndsvisning av Født avhengig av opioider\" loading=\"lazy\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137216\"] > a > ._preview-image_1bm9r_709[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_preview-duration_gghy7_384\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137216\"] > a > ._preview-duration_gghy7_384"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_1bm9r_721 _preview-title_gghy7_412\"><span>Født avhengig av opioider</span></h3>",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137216\"] > a > ._preview-title_1bm9r_721._preview-title_gghy7_412"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"_preview-image_1bm9r_709\" src=\"https://images.stream.schibsted.media/users/ap_/images/948df45e647e827920bc32060f58674c.jpg\" alt=\"Forhåndsvisning av En helt perfekt andesandwich\" loading=\"lazy\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137426\"] > a > ._preview-image_1bm9r_709[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"_preview-duration_gghy7_384\">",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137426\"] > a > ._preview-duration_gghy7_384"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"_preview-title_1bm9r_721 _preview-title_gghy7_412\"><span>En helt perfekt andesandwich</span></h3>",
+          "target": [
+            "article[data-pulse-entity-id=\"reel-137426\"] > a > ._preview-title_1bm9r_721._preview-title_gghy7_412"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"teaser-wrapper fullwidth\">",
+          "target": [
+            ".fullwidth.teaser-wrapper:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" data-srcset=\"https://premium.vgc....\" data-sizes=\"(max-width: 767px) 5...\" alt=\"Hun beskriver en mor...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#L4pLE9 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            "#L4pLE9 > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" alt=\"Hele barndommen ble ...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#al5EG5 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">A-magasinet<span class=\"relevant-tag\">Diagnose</span></div></div><h2 class=\"title\">Hele barndommen ble Gard (29) behandlet som en med Aspergers syndrom. Så fikk han vite sannheten. </h2></div>",
+          "target": [
+            "#al5EG5 > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" data-srcset=\"https://premium.vgc....\" data-sizes=\"(max-width: 767px) 5...\" alt=\"Mener ny norsk oppda...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#xr371l > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Norge<span class=\"relevant-tag\">Oppfinnelse</span></div></div><h2 class=\"title\">Mener ny norsk oppdagelse kan redde liv</h2></div>",
+          "target": [
+            "#xr371l > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" data-srcset=\"https://premium.vgc....\" data-sizes=\"(max-width: 767px) 5...\" alt=\"Forskeren spår KI-re...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#rrAq2K > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Norge<span class=\"relevant-tag\">KI</span></div></div><h2 class=\"title\">Forskeren spår KI-reaksjoner i 2026: – Vi kommer til å møte mye sinne og misnøye i tiden fremover</h2></div>",
+          "target": [
+            "#rrAq2K > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"games-widget\">",
+          "target": [
+            ".games-widget"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" alt=\"Hva skjer når hjerne...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#rrgRQw > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Sprek<span class=\"relevant-tag\">Stress</span></div></div><h2 class=\"title\">Hva skjer når hjernen aldri får hvile? Legen mener det vi tror er løsningen, ofte gjør problemet verre.</h2></div>",
+          "target": [
+            "#rrgRQw > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/d1546a28-b484-4a0a-9fd6-70274009bbb5?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Det eneste sexrådet til menn\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "img[alt=\"Det eneste sexrådet til menn\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Sex og samliv<span class=\"relevant-tag\">Sex</span></div></div><h2 class=\"title\">Det eneste sexrådet til menn</h2></div>",
+          "target": [
+            "#\\33 p9z3X > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/88fcc343-80db-4ef2-b244-82c78564bf89?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Luksuriøst på 49 kvadrat: – Jobbet med å skape følelsen av at huset er større enn det er\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#PdRvab > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Bolig<span class=\"relevant-tag\">Interiør</span></div></div><h2 class=\"title\">Luksuriøst på 49 kvadrat: – Jobbet med å skape følelsen av at huset er større enn det er</h2></div>",
+          "target": [
+            "#PdRvab > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/17b72a45-acaa-4d97-bf56-89008232d0d4?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Leilighet solgt 6,5 millioner kroner over prisantydning: – Høy temperatur\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#pBAaKj > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            "#pBAaKj > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" data-srcset=\"https://premium.vgc....\" data-sizes=\"(max-width: 767px) 5...\" alt=\"Kroppen tror du fort...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#\\30 pKLaG > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Sprek<span class=\"relevant-tag\">Biologi</span></div></div><h2 class=\"title\">Kroppen tror du fortsatt lever på savannen. Konsekvensene er enorme, ifølge evolusjonsforsker.</h2></div>",
+          "target": [
+            "#\\30 pKLaG > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/b1ab79d9-854d-4432-a599-4858de929e27?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Lærerikt og søtladent om våpenindustrien\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#ExpRea > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Kultur<span class=\"relevant-tag\">Bokanmeldelse</span></div></div><h2 class=\"title\">Lærerikt og søtladent om våpenindustrien</h2></div>",
+          "target": [
+            "#ExpRea > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" alt=\"Min kjære far ringte...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#Arl58z > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Sprek<span class=\"relevant-tag\">Nyttårsforsett</span></div></div><h2 class=\"title\">Min kjære far ringte for å gratulere meg med dagen. Idet jeg «løftet» av røret, skjønte jeg at noe var annerledes. </h2></div>",
+          "target": [
+            "#Arl58z > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/dbf00e1d-8ff5-450b-88b8-7939c1f448be?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Den islamske estetikken vi nyter – uten å snakke om den\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#\\39 pOGLM > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"information\"><div class=\"context-label\">Kulturanalyse<span class=\"relevant-tag\">Hotel Bristol</span></div></div>",
+          "target": [
+            "#\\39 pOGLM > .teaser-link > .container > .information"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"title\">Den islamske estetikken vi nyter – uten å snakke om den</h2>",
+          "target": [
+            "#\\39 pOGLM > .teaser-link > .container > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div><div class=\"author-name \">Nazneen Khan-Østrem</div><div class=\"author-title\">Arkitekturanmelder</div></div>",
+          "target": [
+            "#\\39 pOGLM > .teaser-link > .container > .byline > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy author-image\" data-src=\"https://premium.vgc.no/ap/images/e47ba973-5fd9-43e3-8dda-6e5b0bd37eb5?fit=crop&amp;h=120&amp;q=80&amp;tight=true&amp;w=120\" alt=\"bilde av Nazneen Khan-Østrem\" width=\"100\" height=\"100\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "img[alt=\"bilde av Nazneen Khan-Østrem\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/e6bfca7c-a773-47c2-8045-7d1bf2e4a02e?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Hva er den beste styrkeøvelsen? Én øvelse trumfer de andre, ifølge professor.\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#\\32 p1w6l > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Sprek<span class=\"relevant-tag\">Sprek-eksperter</span></div></div><h2 class=\"title\">Hva er den beste styrkeøvelsen? Én øvelse trumfer de andre, ifølge professor.</h2></div>",
+          "target": [
+            "#\\32 p1w6l > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/8a27200a-ba93-4678-a14e-39e85d0f8469?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Kan Norges mest utskjelte bro rives? Nå er svaret her.\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#d4lzoA > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Oslo<span class=\"relevant-tag\">Byutvikling</span></div></div><h2 class=\"title\">Kan Norges mest utskjelte bro rives? Nå er svaret her.</h2></div>",
+          "target": [
+            "#d4lzoA > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" alt=\"Plassen i Regjerings...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#ArlBvq > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Oslo<span class=\"relevant-tag\">Regjeringskvartalet</span></div></div><h2 class=\"title\">Plassen i Regjeringskvartalet ble ferdig i høst. Nå brukes millioner på å grave den opp igjen.</h2></div>",
+          "target": [
+            "#ArlBvq > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" data-srcset=\"https://premium.vgc....\" data-sizes=\"(max-width: 767px) 5...\" alt=\"På skolen gikk alle ...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#K8vnB4 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">A-magasinet<span class=\"relevant-tag\">Lysene som sluknet</span></div></div><h2 class=\"title\">På skolen gikk alle likt kledd. Stramme olabukser. En perfekt sleik. Men én elev skilte seg ut.</h2></div>",
+          "target": [
+            "#K8vnB4 > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bundle-title\"><h2 class=\"title\">Krigen i Ukraina</h2></div>",
+          "target": [
+            ".bundle-wrapper.fullwidth.teaser-wrapper:nth-child(28) > .teaser-bundle.new-bundles.desktop > .bundle-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" data-srcset=\"https://premium.vgc....\" data-sizes=\"(max-width: 767px) 5...\" alt=\"Klart nei fra ukrain...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#XM834B > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"title\">Klart nei fra ukrainske flyktninger i Norge: – Alarmerende og krevende</h2>",
+          "target": [
+            "#XM834B > .teaser-link > .container > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-wrapper-small\"><h2 class=\"title\">Ordføreren i Kyiv: 600.000 har flyktet fra byen denne måneden</h2></div>",
+          "target": [
+            "#n1A6V5 > .teaser-link > .container > .text-wrapper-small"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/dcf83020-607d-4769-919c-586025069be6?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Ordføreren i Kyiv: 600.000 har flyktet fra byen denne måneden\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#n1A6V5 > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/ce633b05-389a-44af-b6f3-31f9157ae130?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Bobler til nyttårsaften – én feil du absolutt ikke bør gjøre \" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#gkPy8k > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Trender<span class=\"relevant-tag\">Vinskolen</span></div></div><h2 class=\"title\">Bobler til nyttårsaften – én feil du absolutt ikke bør gjøre </h2></div>",
+          "target": [
+            "#gkPy8k > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/b22654c2-e8df-4f37-95f8-0c4d8ab46d45?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Dette er meddommerne i rettssaken mot Marius Borg Høiby\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#m0ByVL > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Norge<span class=\"relevant-tag\">Saken mot Marius Borg Høiby</span></div></div><h2 class=\"title\">Dette er meddommerne i rettssaken mot Marius Borg Høiby</h2></div>",
+          "target": [
+            "#m0ByVL > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" data-srcset=\"https://premium.vgc....\" data-sizes=\"(max-width: 767px) 5...\" alt=\"Forsker observerte n...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#XM882b > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Karriere<span class=\"relevant-tag\">Arbeidsmiljø</span></div></div><h2 class=\"title\">Forsker observerte norske oppstartsbedrifter: Ble overrasket over hva som ga et godt arbeidsmiljø</h2></div>",
+          "target": [
+            "#XM882b > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"benefits-widget-container\n      benefits-widget-container-desktop\">",
+          "target": [
+            ".benefits-widget-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" alt=\"Sorgen ga den verden...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#y5Rw5e > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Sprek<span class=\"relevant-tag\">Helse</span></div></div><h2 class=\"title\">Sorgen ga den verdenskjente legen en åpenbaring om kroppen: – Jeg har skjønt at det er noe folk ikke gjør så ofte</h2></div>",
+          "target": [
+            "#y5Rw5e > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bundle-title\"><h2 class=\"title\">USA under Trump</h2></div>",
+          "target": [
+            ".series-location.teaser-bundle.new-bundles > .bundle-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" data-srcset=\"https://premium.vgc....\" data-sizes=\"(max-width: 767px) 5...\" alt=\"Her vippet valget i ...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#\\38 pwE3W > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"series-header\">Georgia, USA</div>",
+          "target": [
+            ".series-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"title\">Her vippet valget i fjor. Hva sier de om Trump nå?</h2>",
+          "target": [
+            "#\\38 pwE3W > .teaser-link > .container > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-wrapper-small\"><h2 class=\"title\">Folkets dom etter ett år med Trump</h2></div>",
+          "target": [
+            "#ExpMza > .teaser-link > .container > .text-wrapper-small"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/8aadbd11-08ec-4aea-b905-c133578173e6?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Folkets dom etter ett år med Trump\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#ExpMza > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/9e9bce1a-f026-47d9-b0d5-6c5f15984b65?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Ultraprosessert mat under lupen: Slik påvirker emulgatorer tarmen din.\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#xr3oMG > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Sprek<span class=\"relevant-tag\">Ultraprosessert mat</span></div></div><h2 class=\"title\">Ultraprosessert mat under lupen: Slik påvirker emulgatorer tarmen din.</h2></div>",
+          "target": [
+            "#xr3oMG > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container-linear-gradient z-index\"><div class=\"information\"><div class=\"context-label\">A-magasinet<span class=\"relevant-tag\">Portrett</span></div></div></div>",
+          "target": [
+            ".container-linear-gradient"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container-darken z-index\"><h2 class=\"title\">Tre år etter psykologens klare tale giftet Linnéa Myhre seg med Emil Gukild  </h2></div>",
+          "target": [
+            ".container-darken"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/fe54212f-980b-4b06-9738-0f9960a06d89?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Historisk øyeblikk: Gjennomslag for gigantisk prosjekt under Oslo\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#ExpLka > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Oslo<span class=\"relevant-tag\">Byggeprosjekter</span></div></div><h2 class=\"title\">Historisk øyeblikk: Gjennomslag for gigantisk prosjekt under Oslo</h2></div>",
+          "target": [
+            "#ExpLka > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/a060fb0a-9713-48c0-a160-576c31e27f9c?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Stjernen er en maskot for alt som er galt med fotballen\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#zOLvlO > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"information\"><div class=\"context-label\">Kommentar<span class=\"relevant-tag\">Fotball</span></div></div>",
+          "target": [
+            "#zOLvlO > .teaser-link > .container > .information"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text\"><h2 class=\"title\">Stjernen er en maskot for alt som er galt med fotballen</h2></div>",
+          "target": [
+            "#zOLvlO > .teaser-link > .container > .illustration-container > .text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"illustration-byline-info\"><div><div class=\"author-name \">Daniel Røed-Johansen</div><div class=\"author-title\">Kommentator i Aftenposten</div></div></div>",
+          "target": [
+            "#zOLvlO > .teaser-link > .container > .illustration-container > .illustration-byline-info"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy author-image\" data-src=\"https://premium.vgc.no/ap/images/1760bdc7-fd54-43ef-8b32-5e2e5f3d7eda?fit=crop&amp;h=180&amp;q=80&amp;tight=true&amp;w=180\" alt=\"bilde av Daniel Røed-Johansen\" width=\"88\" height=\"88\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#zOLvlO > .teaser-link > .container > .illustration-container > .author-image-wrapper--no-grayscale > img[alt=\"bilde av Daniel Røed-Johansen\"][width=\"88\"][height=\"88\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/03f3eccd-e030-4d2d-aaa8-c08215f5420e?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Dansk pensjonsfond vil selge seg ut av USA\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#\\32 pdO74 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            "#\\32 pdO74 > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/89771e1a-f42d-45d6-b7cd-2cc4eb4d8254?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Sjølie har et for snevert perspektiv på kjernekraft\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#wrejlA > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            "#wrejlA > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" alt=\"For 15 år siden vill...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#\\37 pKvzK > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            "#\\37 pKvzK > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/019ea38c-fd6f-4807-b5ed-dca608f61397?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Reuters: Fire dagers våpenhvile i Syria\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#zOgoLb > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Verden<span class=\"relevant-tag\">Syria</span></div></div><h2 class=\"title\">Reuters: Fire dagers våpenhvile i Syria</h2></div>",
+          "target": [
+            "#zOgoLb > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/8a7f5017-c651-486f-a7f2-3e7dfdd78e98?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"– Man er ikke lenger flau over å være kristen\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#\\34 31kLq > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Norge<span class=\"relevant-tag\">Samfunnsdebatt</span></div></div><h2 class=\"title\">– Man er ikke lenger flau over å være kristen</h2></div>",
+          "target": [
+            "#\\34 31kLq > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/03b96a69-176e-4fd7-a24c-3c572eddc84d?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Posten vil ha post i kassen én dag i uken\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#\\30 pK8jJ > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Norge<span class=\"relevant-tag\">Posten</span></div></div><h2 class=\"title\">Posten vil ha post i kassen én dag i uken</h2></div>",
+          "target": [
+            "#\\30 pK8jJ > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/f9165ea9-5afb-4554-85da-bc61a98a6a70?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Truer Frankrike med 200 prosent vintoll\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#n1A22B > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Verden<span class=\"relevant-tag\">Sikkerhetspolitikk</span></div></div><h2 class=\"title\">Truer Frankrike med 200 prosent vintoll</h2></div>",
+          "target": [
+            "#n1A22B > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/3892d754-24fe-403c-aec9-80efd07a8b27?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Skjermrådene er ikke råd for foreldre, de er råd vi alle bør følge. Også på jobb.\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#Rj907d > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Foreldreliv<span class=\"relevant-tag\">Line Marie Warholm</span></div></div><h2 class=\"title\">Skjermrådene er ikke råd for foreldre, de er råd vi alle bør følge. Også på jobb.</h2></div>",
+          "target": [
+            "#Rj907d > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/eb124dca-6f13-4530-a61e-c4c34ac69971?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Jeg er teknologioptimist. Nettopp derfor er jeg bekymret.\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#Bxlvov > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            "#Bxlvov > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" data-srcset=\"https://premium.vgc....\" data-sizes=\"(max-width: 767px) 5...\" alt=\"Treneren lurte forel...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#Xjrd7B > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">A-magasinet<span class=\"relevant-tag\">Overgrepssaken i Lyngdal</span></div></div><h2 class=\"title\">Treneren lurte foreldre til å sende lettkledde bilder av sine egne barn</h2></div>",
+          "target": [
+            "#Xjrd7B > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/0abbcee0-26b5-4d05-80ac-c817e51992b8?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Skatteprosenten stiger med økende inntekt, men synker blant den øverste prosenten.\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#vrAjVm > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            "#vrAjVm > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bundle-title\"><h2 class=\"title\">Kampen om Grønland</h2></div>",
+          "target": [
+            ".bundle-wrapper.fullwidth.teaser-wrapper:nth-child(49) > .teaser-bundle.new-bundles.desktop > .bundle-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" data-srcset=\"https://premium.vgc....\" data-sizes=\"(max-width: 767px) 5...\" alt=\"Trump postet dette b...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#rrg273 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"title\">Trump postet dette bildet etter å ha snakket med Nato-sjefen</h2>",
+          "target": [
+            "#rrg273 > .teaser-link > .container > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-wrapper-small\"><h2 class=\"title\">Det kan bety selvskading. Ekspertene mener likevel at Europa må stå opp mot Trump.</h2></div>",
+          "target": [
+            "#pBAjK1 > .teaser-link > .container > .text-wrapper-small"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/0551563e-43d4-4f6d-8c69-f138106a5712?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Det kan bety selvskading. Ekspertene mener likevel at Europa må stå opp mot Trump.\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#pBAjK1 > .teaser-link > .container > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/8eddfed9-77a6-4e53-88f0-6a8a65b10fdb?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Hvor ligger Syntagma-plassen?\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "img[alt=\"Hvor ligger Syntagma-plassen?\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Kultur<span class=\"relevant-tag\">Quiz</span></div></div><h2 class=\"title\">Hvor ligger Syntagma-plassen?</h2></div>",
+          "target": [
+            "#zOg3E4 > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/9414055b-ba1f-4702-9a89-e858dde9482b?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Trumps melding til Støre er en trussel\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#GxaA14 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Leder<span class=\"relevant-tag\">Aftenposten mener</span></div></div><h2 class=\"title\">Trumps melding til Støre er en trussel</h2></div>",
+          "target": [
+            "#GxaA14 > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/fd9fe4ec-03b7-4156-9cbc-0ccd5cab89fa?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Ga nytt liv til forfallen perle: – En mulighet som dette dukker sjelden opp på markedet\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#XM87KE > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Bolig<span class=\"relevant-tag\">Oppussing</span></div></div><h2 class=\"title\">Ga nytt liv til forfallen perle: – En mulighet som dette dukker sjelden opp på markedet</h2></div>",
+          "target": [
+            "#XM87KE > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/074f07a9-1728-4499-8f05-79c71e52550c?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Høyre foreslår obligatorisk barnehage for barn med svake norskkunnskaper\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#zOg21v > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Politikk<span class=\"relevant-tag\">Høyre (H)</span></div></div><h2 class=\"title\">Høyre foreslår obligatorisk barnehage for barn med svake norskkunnskaper</h2></div>",
+          "target": [
+            "#zOg21v > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" data-srcset=\"https://premium.vgc....\" data-sizes=\"(max-width: 767px) 5...\" alt=\"Det går mot slutten ...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#\\34 31L0R > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"information\"><div class=\"context-label\">Kommentar<span class=\"relevant-tag\">Kosthold</span></div></div>",
+          "target": [
+            "#\\34 31L0R > .teaser-link > .container > .information"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text\"><h2 class=\"title\">Det går mot slutten for kjedenes ansvarsfraskrivelser</h2></div>",
+          "target": [
+            "#\\34 31L0R > .teaser-link > .container > .illustration-container > .text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"illustration-byline-info\"><div><div class=\"author-name \">Joacim Lund</div><div class=\"author-title\">Kommentator i Aftenposten</div></div></div>",
+          "target": [
+            "#\\34 31L0R > .teaser-link > .container > .illustration-container > .illustration-byline-info"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy author-image\" data-src=\"https://premium.vgc.no/ap/images/0261fa5c-13b1-4989-9a71-f5b943b27513?fit=crop&amp;h=180&amp;q=80&amp;tight=true&amp;w=180\" alt=\"bilde av Joacim Lund\" width=\"128\" height=\"128\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "img[alt=\"bilde av Joacim Lund\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/e5bb955e-6536-4c4a-bd96-8f6351f790ec?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Norfund-sjefen går av: – Vondt å se at vi ikke har kunnet gjøre mer\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#M73X25 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Norge<span class=\"relevant-tag\">Klimakrisen</span></div></div><h2 class=\"title\">Norfund-sjefen går av: – Vondt å se at vi ikke har kunnet gjøre mer</h2></div>",
+          "target": [
+            "#M73X25 > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/e0ce36a3-a4fa-402f-918b-a396c54e8adf?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Flere etterspør fakta i innvandringsdebatten. Her er en gjennomgang.\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#q6A7GE > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            "#q6A7GE > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/e7d8f028-d2c4-404c-9c7b-e80f0be90846?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Olav Duun hadde fortjent bedre enn denne oppsetningen\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#xr3Emp > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Kultur<span class=\"relevant-tag\">Teateranmeldelse</span></div></div><h2 class=\"title\">Olav Duun hadde fortjent bedre enn denne oppsetningen</h2></div>",
+          "target": [
+            "#xr3Emp > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" alt=\"16-åring fra Stavang...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#QJmkzA > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Norge<span class=\"relevant-tag\">Drapsforbund-saken</span></div></div><h2 class=\"title\">16-åring fra Stavanger tiltalt for medvirkning og planlegging av drap: «Fremstår som rene henrettelser»</h2></div>",
+          "target": [
+            "#QJmkzA > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/0f6c7113-fffe-41f5-a359-c84f1f4a839c?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Trump er Patrick Batemans ideal\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#q6ABm1 > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"information\"><div class=\"context-label\">Kronikk<span class=\"relevant-tag\">Donald Trump</span></div></div>",
+          "target": [
+            "#q6ABm1 > .teaser-link > .container > .information"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"title\">Trump er Patrick Batemans ideal</h2>",
+          "target": [
+            "#q6ABm1 > .teaser-link > .container > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div><div class=\"author-name \">Lars Fr. H. Svendsen</div><div class=\"author-title\">Professor i filosofi, Universitetet i Bergen og tankesmien Civita</div></div>",
+          "target": [
+            "#q6ABm1 > .teaser-link > .container > .byline > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy author-image\" data-src=\"https://premium.vgc.no/ap/images/68f73466-849c-48bc-90e9-fbd3b6dd03c3?fit=crop&amp;h=120&amp;q=80&amp;tight=true&amp;w=120\" alt=\"bilde av Lars Fr. H. Svendsen\" width=\"100\" height=\"100\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "img[alt=\"bilde av Lars Fr. H. Svendsen\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/330a4ad9-261d-4272-a8bd-d9fe01b2265e?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Nok en dobbeltrolle i mediekonsern og helseforetak: - Ganske spesielt samrøre\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#OkQJ5b > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Norge<span class=\"relevant-tag\">Medier</span></div></div><h2 class=\"title\">Nok en dobbeltrolle i mediekonsern og helseforetak: - Ganske spesielt samrøre</h2></div>",
+          "target": [
+            "#OkQJ5b > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/eb9db4e0-21f3-4f9a-92e8-817100697a89?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Tro det eller ei, men her kommer en stor og solrik uteservering\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#xr3jOB > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\"><span class=\"context-label\">Vink</span><span class=\"relevant-tag\">Restaurant</span></div></div><h2 class=\"title\">Tro det eller ei, men her kommer en stor og solrik uteservering</h2></div>",
+          "target": [
+            "#xr3jOB > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/67e3b003-8327-4dd7-a1ef-6f6256db8699?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Nato-land gjør en strategisk feil av historiske dimensjoner\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#QJm30q > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            "#QJm30q > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/074c8e97-3aa9-41bf-9f29-4c531b75d583?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Flere blir friske med familiebasert terapi enn noen annen metode\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#\\35 p6qVX > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            "#\\35 p6qVX > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" alt=\"«Min manns venn bruk...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#\\31 6Br4q > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            "#\\31 6Br4q > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" data-srcset=\"https://premium.vgc....\" data-sizes=\"(max-width: 767px) 5...\" alt=\"Må slutte å klage, i...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#y5RMJr > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Trender<span class=\"relevant-tag\">Matpriser</span></div></div><h2 class=\"title\">Må slutte å klage, ifølge matprisforsker: – Jeg blir litt irritert. Det er en massiv vinkling mot at alt er så svinedyrt.</h2></div>",
+          "target": [
+            "#y5RMJr > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/86d5afd9-46b3-46d6-b7e9-21a34bb90f36?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Dobling av skadede på elsparkesykler i Oslo siden 2023\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#pBAjAw > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Oslo<span class=\"relevant-tag\">Elsparkesykkel</span></div></div><h2 class=\"title\">Dobling av skadede på elsparkesykler i Oslo siden 2023</h2></div>",
+          "target": [
+            "#pBAjAw > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/727f504f-2b39-48bf-b6ed-c35e42118b35?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"14 omkom i kjøpesenter-brann i Pakistan. Over 60 er savnet.\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#L4nxQR > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Verden<span class=\"relevant-tag\">Pakistan</span></div></div><h2 class=\"title\">14 omkom i kjøpesenter-brann i Pakistan. Over 60 er savnet.</h2></div>",
+          "target": [
+            "#L4nxQR > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" alt=\"Jeg bor i skiparadis...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#M73X7E > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            "#M73X7E > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/c1cc3fc3-31d6-4d5c-bf67-8063f0e8e39c?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Barn medisineres til taushet. Noen må si stopp.\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#QJmjRW > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            "#QJmjRW > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/721c8947-59c7-489a-82b4-d5e88b80d31f?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"«The Night Manager» er en stilsikker hyllest til spionsjangeren\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#d4l8gJ > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\"><span class=\"context-label\">Vink</span><span class=\"relevant-tag\">TV-anmeldelse</span></div></div><h2 class=\"title\">«The Night Manager» er en stilsikker hyllest til spionsjangeren</h2></div>",
+          "target": [
+            "#d4l8gJ > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc.no/ap/images/c9908cfe-882e-4ea9-9da1-7225b728ea8e?fit=crop&amp;h=384&amp;q=80&amp;tight=true&amp;w=576\" alt=\"Nye EU-regler kan strupe Airbnb-utleie. Det kan også få konsekvenser for Norge.\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#\\30 pn5gB > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\"><div class=\"information\"><div class=\"context-label\">Oslo<span class=\"relevant-tag\">Vågan</span></div></div><h2 class=\"title\">Nye EU-regler kan strupe Airbnb-utleie. Det kan også få konsekvenser for Norge.</h2></div>",
+          "target": [
+            "#\\30 pn5gB > .teaser-link > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy teaser-image\" data-src=\"https://premium.vgc....\" alt=\"«Hvem skal du refse ...\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "#n1AnXJ > .teaser-link > .teaser-image-wrapper > .teaser-image.b-lazy[decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"information\"><div class=\"context-label\">Kommentar<span class=\"relevant-tag\">Norge</span></div></div>",
+          "target": [
+            "#n1AnXJ > .teaser-link > .container > .information"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"title\">«Hvem skal du refse denne gangen, da?» spurte studenten. Det var tankevekkende. For det går faktisk bemerkelsesverdig bra.</h2>",
+          "target": [
+            "#n1AnXJ > .teaser-link > .container > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div><div class=\"author-name \">Einar Lie</div><div class=\"author-title\">Professor i økonomisk historie </div></div>",
+          "target": [
+            "#n1AnXJ > .teaser-link > .container > .byline > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img class=\"b-lazy author-image\" data-src=\"https://premium.vgc.no/ap/images/2b07907f-f715-4756-a284-b41d3b76561c?fit=crop&amp;h=120&amp;q=80&amp;tight=true&amp;w=120\" alt=\"bilde av Einar Lie\" width=\"100\" height=\"100\" loading=\"lazy\" decoding=\"async\">",
+          "target": [
+            "img[alt=\"bilde av Einar Lie\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

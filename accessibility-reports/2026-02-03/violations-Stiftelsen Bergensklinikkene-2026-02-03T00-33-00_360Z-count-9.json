@@ -1,0 +1,364 @@
+{
+  "project": "Stiftelsen Bergensklinikkene",
+  "timestamp": "2026-02-03T00:33:00.361Z",
+  "url": "https://vipestores.com/no",
+  "total_violations": 9,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button class=\"MS-left\"><i aria-hidden=\"true\">\n                                        <img class=\"left-image-button\" src=\"https://vipestores.com/img/arrow-left.png\" alt=\"\">\n\n                                    </i></button>",
+          "target": [
+            ".MS-left"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"MS-right\"><i aria-hidden=\"true\">\n                                        <img class=\"right-image-button\" src=\"https://vipestores.com/img/arrow-right.png\" alt=\"\">\n\n                                    </i></button>",
+          "target": [
+            ".MS-right"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a href=\"https://vipestores.com/no/privacy-policy\" class=\"lrnMore\" target=\"_blank\">Privacy Policy, Cookies Policy</a>",
+          "target": [
+            ".lrnMore[target=\"_blank\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.63 (foreground color: #cacaca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"lrnMore\" target=\"_blank\" href=\"https://policies.google.com/technologies/partner-sites\">Google Privacy Policy.</a>",
+          "target": [
+            ".lrnMore[target=\"_blank\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.63 (foreground color: #cacaca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "document-title",
+      "impact": "serious",
+      "description": "Ensure each HTML document contains a non-empty <title> element",
+      "help": "Documents must have <title> element to aid in navigation",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/document-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag242",
+        "TTv5",
+        "TT12.a",
+        "EN-301-549",
+        "EN-9.2.4.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-8.5.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"en\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document does not have a non-empty <title> element"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"text-white font-weight-bolder item-card-text-cat\" style=\"text-transform: uppercase\">Gaver &amp; Tilbehør</h3>",
+          "target": [
+            ".gifts > .font-weight-bolder.item-card-text-cat"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img class=\"img-fluid\" src=\"../img/item_1.png\">",
+          "target": [
+            ".is-selected > .first-card.card.card-body > .img-fluid[src$=\"item_1.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 10,
+      "nodes": [
+        {
+          "html": "<a class=\"navbar-brand navbar-brand-custom\" href=\"https://vipestores.com/no\">",
+          "target": [
+            ".navbar-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"#\" target=\"_blank\" class=\"w-100 h-100 p-3 d-flex jusify-content-center align-items-center\">\n                                        <img class=\"img-fluid\" src=\"https://vipestores.com/img/logotype/Giorgio-Armani-Logo.png\" alt=\"\">\n                                    </a>",
+          "target": [
+            ".itemSecondColor.item:nth-child(1) > .w-100.h-100.d-flex"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"#\" target=\"_blank\" class=\"w-100 h-100 p-3 d-flex jusify-content-center align-items-center\">\n                                        <img class=\"img-fluid\" src=\"https://vipestores.com/img/logotype/Guess-Emblem.png\" alt=\"\">\n                                    </a>",
+          "target": [
+            ".itemThirdColor.item:nth-child(2) > .w-100.h-100.d-flex"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"#\" target=\"_blank\" class=\"w-100 h-100 p-3 d-flex jusify-content-center align-items-center\">\n                                        <img class=\"img-fluid\" src=\"https://vipestores.com/img/logotype/kasperski.png\" alt=\"\">\n                                    </a>",
+          "target": [
+            ".itemFirstColor.item:nth-child(3) > .w-100.h-100.d-flex"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"#\" target=\"_blank\" class=\"w-100 h-100 p-3 d-flex jusify-content-center align-items-center\">\n                                        <img class=\"img-fluid\" src=\"https://vipestores.com/img/logotype/media.png\" alt=\"\">\n                                    </a>",
+          "target": [
+            ".itemSecondColor.item:nth-child(4) > .w-100.h-100.d-flex"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"#\" target=\"_blank\" class=\"w-100 h-100 p-3 d-flex jusify-content-center align-items-center\">\n                                        <img class=\"img-fluid\" src=\"https://vipestores.com/img/logotype/nautica.png\" alt=\"\">\n                                    </a>",
+          "target": [
+            ".itemThirdColor.item:nth-child(5) > .w-100.h-100.d-flex"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"#\" target=\"_blank\" class=\"w-100 h-100 p-3 d-flex jusify-content-center align-items-center\">\n                                        <img class=\"img-fluid\" src=\"https://vipestores.com/img/logotype/philips.png\" alt=\"\">\n                                    </a>",
+          "target": [
+            ".itemFirstColor.item:nth-child(6) > .w-100.h-100.d-flex"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"#\" target=\"_blank\" class=\"w-100 h-100 p-3 d-flex jusify-content-center align-items-center\">\n                                        <img class=\"img-fluid\" src=\"https://vipestores.com/img/logotype/Tripadvisor-Logo.png\" alt=\"\">\n                                    </a>",
+          "target": [
+            ".itemSecondColor.item:nth-child(7) > .w-100.h-100.d-flex"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"#\" target=\"_blank\" class=\"w-100 h-100 p-3 d-flex jusify-content-center align-items-center\">\n                                        <img class=\"img-fluid\" src=\"https://vipestores.com/img/logotype/reebok-vector-logo.png\" alt=\"\">\n                                    </a>",
+          "target": [
+            ".itemThirdColor.item:nth-child(8) > .w-100.h-100.d-flex"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"#\" target=\"_blank\" class=\"w-100 h-100 p-3 d-flex jusify-content-center align-items-center\">\n                                        <img class=\"img-fluid\" src=\"https://vipestores.com/img/logotype/Adidas.png\" alt=\"\">\n                                    </a>",
+          "target": [
+            ".itemFirstColor.item:nth-child(9) > .w-100.h-100.d-flex"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "meta-viewport",
+      "impact": "moderate",
+      "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+      "help": "Zooming and scaling must not be disabled",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/meta-viewport?application=playwright",
+      "tags": [
+        "cat.sensory-and-visual-cues",
+        "wcag2aa",
+        "wcag144",
+        "EN-301-549",
+        "EN-9.1.4.4",
+        "ACT",
+        "RGAAv4",
+        "RGAA-10.4.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<meta content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\" name=\"viewport\">",
+          "target": [
+            "meta[name=\"viewport\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+        }
+      ]
+    },
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/nested-interactive?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button type=\"submit\" class=\"button\">\n                                <a href=\"https://vipestores.com/no/fashion\" class=\"cards-link fashion-link\">OPPDAGE</a>\n                            </button>",
+          "target": [
+            ".button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<div class=\"message\">",
+          "target": [
+            ".message"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.google.com/intl/no/policies/privacy/\" target=\"_blank\">Personvern</a>",
+          "target": [
+            "iframe[title=\"reCAPTCHA\"]",
+            ".rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.google.com/intl/no/policies/terms/\" target=\"_blank\">Vilkår</a>",
+          "target": [
+            "iframe[title=\"reCAPTCHA\"]",
+            ".rc-anchor-normal-footer > .rc-anchor-pt > a:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>beskyttet av <strong>reCAPTCHA</strong></span>",
+          "target": [
+            "iframe[title=\"reCAPTCHA\"]",
+            ".rc-anchor-invisible-text > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

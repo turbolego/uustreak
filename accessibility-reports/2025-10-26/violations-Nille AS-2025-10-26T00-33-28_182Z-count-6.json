@@ -1,0 +1,288 @@
+{
+  "project": "Nille AS",
+  "timestamp": "2025-10-26T00:33:28.182Z",
+  "url": "https://www.nille.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button tabindex=\"0\" onclick=\"CookieInformation.declineAllCategories()\" aria-label=\"Avvis alle\" id=\"declineButton\" class=\"coi-banner__decline\" role=\"alert\" aria-atomic=\"true\" style=\"display: flex;\">Avvis alle</button>",
+          "target": [
+            "#declineButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role alert is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<img src=\"https://images.varify.io/78ae8da4c1af57bd8d7f33da1e84929ed8c2603247afe853af711a1fd051f067/frame_7.png\" width=\"93px\" data-varify-6zjstbclxz8=\"\" srcset=\"\" sizes=\"\">",
+          "target": [
+            "img[data-varify-6zjstbclxz8=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://images.varify.io/afdca23f44a8905ce16f67ec4b91051fc5f0259e32a19c5cd99fc876bcec7b09/nille_cro_00001.png\" width=\"93px\">",
+          "target": [
+            "a[target=\"_self\"]:nth-child(2) > img[width=\"93px\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://images.varify.io/b9c44a1b339aa8369e4755bfee35135edf6249ed2be82a6c57bf303acf9cd982/nille_cro_00002.png\" width=\"93px\">",
+          "target": [
+            "a[target=\"_self\"]:nth-child(3) > img[width=\"93px\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://images.varify.io/437dee0e7fc3c899b29cd48f738c2df89483e8ac31c84e9ee37b555e2ee7f685/nille_cro_00003.png\" width=\"93px\">",
+          "target": [
+            "a[target=\"_self\"]:nth-child(4) > img[width=\"93px\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://images.varify.io/734ebfe3a18369da761836a0064a97d77a908362d44ba4d39679a4a29889dd13/nille_cro_00004.png\" width=\"93px\">",
+          "target": [
+            "a[target=\"_self\"]:nth-child(5) > img[width=\"93px\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://images.varify.io/7d88cc1e04223d4b0c053b87c07fa2c6a835387ebdd3fdf8d4ba5605983078c0/nille_cro_00005.png\" width=\"93px\">",
+          "target": [
+            "a[target=\"_self\"]:nth-child(6) > img[width=\"93px\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://images.varify.io/bd09f1d8242465cf1127ab64f13874878e65c371cde0d8085ba38af3384e96fe/frame_13.png\" width=\"93px\" data-varify-kd7h8wm2wgf=\"\" srcset=\"\" sizes=\"\">",
+          "target": [
+            "img[data-varify-kd7h8wm2wgf=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://images.varify.io/4d102ce152e3d06b494b008be13a218995f393769ac1b593c6c6b08b6abf243a/nille_cro_00007.png\" width=\"93px\">",
+          "target": [
+            "a[target=\"_self\"]:nth-child(8) > img[width=\"93px\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 12,
+      "nodes": [
+        {
+          "html": "<a class=\"\" title=\"\" aria-label=\"\" href=\"/halloween/\">",
+          "target": [
+            "a[href$=\"halloween/\"][aria-label=\"\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a class=\"\" title=\"\" aria-label=\"\" href=\"/halloween/festtilbehor/\">",
+          "target": [
+            "a[href$=\"festtilbehor/\"][aria-label=\"\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a class=\"\" title=\"\" aria-label=\"\" href=\"/halloween/kostymer/\">",
+          "target": [
+            "a[href$=\"kostymer/\"][aria-label=\"\"][title=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a class=\"\" title=\"\" aria-label=\"\" href=\"/produkter/soverom/\"><img alt=\"\" title=\"\" decoding=\"async\" class=\"img--moey0dg\" style=\"height: 100%; width: 100%;\"></a>",
+          "target": [
+            "a[href$=\"soverom/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a href=\"https://nille.no/produkter/interior/lykter-og-lysholdere/\" target=\"_self\">\n        <img src=\"https://images.varify.io/78ae8da4c1af57bd8d7f33da1e84929ed8c2603247afe853af711a1fd051f067/frame_7.png\" width=\"93px\" data-varify-6zjstbclxz8=\"\" srcset=\"\" sizes=\"\">\n    </a>",
+          "target": [
+            "a[target=\"_self\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://nille.no/produkter/interior/\" target=\"_self\">\n        <img src=\"https://images.varify.io/afdca23f44a8905ce16f67ec4b91051fc5f0259e32a19c5cd99fc876bcec7b09/nille_cro_00001.png\" width=\"93px\">\n    </a>",
+          "target": [
+            "a[target=\"_self\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://nille.no/produkter/kjokken/\" target=\"_self\">\n        <img src=\"https://images.varify.io/b9c44a1b339aa8369e4755bfee35135edf6249ed2be82a6c57bf303acf9cd982/nille_cro_00002.png\" width=\"93px\">\n    </a>",
+          "target": [
+            "a[target=\"_self\"]:nth-child(3)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://nille.no/rom/spisestue/bordtekstiler/\" target=\"_self\">\n        <img src=\"https://images.varify.io/437dee0e7fc3c899b29cd48f738c2df89483e8ac31c84e9ee37b555e2ee7f685/nille_cro_00003.png\" width=\"93px\">\n    </a>",
+          "target": [
+            "a[target=\"_self\"]:nth-child(4)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://nille.no/produkter/fest-og-feiring/bordekking/\" target=\"_self\">\n        <img src=\"https://images.varify.io/734ebfe3a18369da761836a0064a97d77a908362d44ba4d39679a4a29889dd13/nille_cro_00004.png\" width=\"93px\">\n    </a>",
+          "target": [
+            "a[target=\"_self\"]:nth-child(5)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://nille.no/produkter/tekstiler/puter/\" target=\"_self\">\n        <img src=\"https://images.varify.io/7d88cc1e04223d4b0c053b87c07fa2c6a835387ebdd3fdf8d4ba5605983078c0/nille_cro_00005.png\" width=\"93px\">\n    </a>",
+          "target": [
+            "a[target=\"_self\"]:nth-child(6)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://nille.no/produkter/lamper-og-belysning/\" target=\"_self\">\n        <img src=\"https://images.varify.io/bd09f1d8242465cf1127ab64f13874878e65c371cde0d8085ba38af3384e96fe/frame_13.png\" width=\"93px\" data-varify-kd7h8wm2wgf=\"\" srcset=\"\" sizes=\"\">\n    </a>",
+          "target": [
+            "a[target=\"_self\"]:nth-child(7)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://nille.no/produkter/interior/pyntdekor/\" target=\"_self\">\n        <img src=\"https://images.varify.io/4d102ce152e3d06b494b008be13a218995f393769ac1b593c6c6b08b6abf243a/nille_cro_00007.png\" width=\"93px\">\n    </a>",
+          "target": [
+            "a[target=\"_self\"]:nth-child(8)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div class=\"topBar--hOWYROG\" style=\"color: rgb(0, 0, 0);\">",
+          "target": [
+            ".topBar--hOWYROG"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"htmlDrawerWrapper--rQ6eisE content--QC6mDoR\"><p>Bli medlem eller logg inn for å aktivere alle våre gode medlemstilbud 💛</p></div>",
+          "target": [
+            ".content--QC6mDoR"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

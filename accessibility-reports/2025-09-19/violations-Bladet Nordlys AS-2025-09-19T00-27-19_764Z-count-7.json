@@ -1,0 +1,216 @@
+{
+  "project": "Bladet Nordlys AS",
+  "timestamp": "2025-09-19T00:27:19.765Z",
+  "url": "https://www.nordlys.no/",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/takeover_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h3 itemprop=\"alternative_headline\" class=\"pretitle brick-c-itmAgK\"> </h3>",
+          "target": [
+            ".custom-one.brick-c-jCKIaL-eFXfQl-skin-custom-one[data-title-words=\"7\"] > .brick-c-fRZqov.teaser_body[itemprop=\"url\"] > .body > .brick-c-bVcFwu.title_container.has-image > .pretitle.brick-c-itmAgK[itemprop=\"alternative_headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<h3 itemprop=\"alternative_headline\" class=\"pretitle brick-c-itmAgK\"> </h3>",
+          "target": [
+            ".custom-one.brick-c-jCKIaL-eFXfQl-skin-custom-one[data-title-words=\"5\"] > .brick-c-fRZqov.teaser_body[itemprop=\"url\"] > .body > .brick-c-bVcFwu.title_container.has-image > .pretitle.brick-c-itmAgK[itemprop=\"alternative_headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" frameborder=\"0\" src=\"https://deliver.madington.io/c/cmff4bwpu009akmr31u8afifu/index.html\" style=\"width: 100vw; height: 100vh; margin: 0px; padding: 0px; border: 0px;\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/takeover_0",
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-1c00d0bb-352b-4961-af2d-138a5c5037fa\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"16\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssO8zRN2mbhregyu94CiomZUOSVqjyD9AdAPQPluxsGu2JMvCRxsv_CU8c8r0CaNW0XSuiHVKRK0c31X1RlDDSIFC18Q6zzGiaxYLHmB8z33CKkijtr6mxEZMb4g8wczcrD2tjAXP8-agwMTblY8_B44agnhQ_tzgBOzBQKKrpMlbmLxw--UY5H_ljA6597-9udEts4YWsnN7PStD8Or-IeyKfzsySJfsE0gHMMKWZ01aTVcm4D9pbXkbeopq3lnEk_YzRiES_UiwRlI5YLccAeOnxqzgmAFXt2h0qZXKCjJHEAQ2mwl6b1X-YG6uUSWMT51q5sUPFl4fD3oKydGCR4LShwarLkkvF0DxGTry3uDQplB6xpw5lC1xT9XbKYwv6L6YlYi1VD&amp;sai=AMfl-YSAfZIdhtDmDqJ6Q8NmiHrTMljbTgLiY-69-x3ply2llC6kQvnkiSCB4DO4N34adnwrMPiKEerz1W4C2SZTn9LVsyj4yh5hnuiSEYubQ7v21F_ZZQFtRnwLFKdsD4n7zPtHg5HH1eWSk4pd1uk_f3EbW0C5BWGhtyWP57RCqtY6YP_oikolcPeCK2KFfOLqeVdcoWOSy-Xs9WXyYe3fmFYPEVy5jP7n6Qe-uL6raANz6KtGZTD_JT5usPpzhLQqswKlg1ADYVZp-rggUubv6SegVusBXX-XiBE8A5qdGd5-P9TvqWWbFvlu&amp;sig=Cg0ArKJSzOp5ytZkT8eBEAE&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;urlfix=1&amp;adurl=\" target=\"_blank\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/takeover_0",
+            ".GoogleActiveViewElement > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.nordlys.no/gfx/small.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<video id=\"video\" muted=\"\" playsinline=\"\" webkit-playsinline=\"\" poster=\"/c/cmff4bwpu009akmr31u8afifu/__streamedby__cmff4bwum009dkmr3qm1qecr6/images/poster.0000000.jpg\" src=\"blob:https://deliver.madington.io/368d2fd4-8a5e-459d-926e-990987c82afd\" style=\"object-fit: cover; object-position: center center;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.nordlys\\.no\\/takeover_0",
+            "iframe",
+            [
+              "streamedby-player",
+              "#video"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"takeover-close\">Lukk annonsen</div>",
+          "target": [
+            ".takeover-close"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<amedia-username orderpage=\"//www.nordlys.no/tilbud\" publication=\"www.nordlys.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layout=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_toppbanner am-bazaar-ad--labeled\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.nordlys.no/toppbanner_1\" pageview-id=\"d77de658-be46-434f-9cb3-f5d3b548b403\" render-count=\"1\" render-time=\"1758241632671\">",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

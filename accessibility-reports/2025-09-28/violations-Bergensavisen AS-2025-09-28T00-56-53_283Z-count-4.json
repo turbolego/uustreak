@@ -1,0 +1,120 @@
+{
+  "project": "Bergensavisen AS",
+  "timestamp": "2025-09-28T00:56:53.283Z",
+  "url": "https://www.ba.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ba\\.no\\/toppbanner_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a id=\"aw0\" target=\"_blank\" href=\"https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjstHUiuBXmuXw9OG70YG6A4LL0vLGL6OYtrffhlew0sP7PKLBKV3FX9IinTv_91qhT3dW5lrjCAFKLCNQjmkwZJgQyTB3240IwgxFwpLeVhx2jkv5r5fKuvPGnGsRW3ZqZvwjw7Pq6mCw6HQeMVRd0eECNpjZ5-iQgC8mundz-oOKyOvzT4RgZIKI5pnDxRlqr6Gb7t4ZnCdnRrNTgo2T-f8GMrTfWL1hFplMhDa7IZD0KZStU8eGjPlfUuccULOk5_D3cAx7IzAZVC8KprVPfgHW5g-ObHlk_69b72jAgj4ULTqYxjRUiDd-UocXpmJFrR3eXazkM7cfsqJTG2gOXOGndiygqb2xTToKfobOOGIJC0XSwY9CeeXq8JqBwAHhfv0_EdNdruWJZ4QY1me21mBRoYzlWI&amp;sai=AMfl-YRsVzujvTPpvqc2oUyuLNzWSK2AXN9VG7B2hFCD8xRvsInjTGiMK87y8R2RvN53il_x1duT6A_TRur4qgZr9nMM1gnwmFaBQ2YhpEltDRJOZDfZ-MO8E2o2FC5n0wM-PLadXzv3E9npksDO5LMmG85cgii026MwGLNSh0JpjoR_4lAPxaHlm7ySYyYRjfM8CBt2VAhmQI4sqSONL4pHqfjn4RU7S56RO1jj88LYWeiFMk2DnV0SqS2Kzsjj9C6a2qFUh32C4YDP3oYWSjosT7kBqzCX3V-RNDks9v8KQQFlJONMJGstDjgyJyr2P2-Lof1NgAaCtjx-7XQXqNxAdRTuU98TBOintO35EGX1216jJmA8&amp;sig=Cg0ArKJSzExZXXoN33jv&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;adurl=https://sandegruppen.no/kampanjer/%3Fbilmerker%3Dnissan%26bilmodeller%3Dariya%26finansiering%3Dall%26utm_source%3DBA%26utm_medium%3DDesktop%2520%26utm_campaign%3DNissan%2520ARIYA%2520BAMobilhttps://sandegruppen.no/kampanjer/%3Fbilmerker%3Dnissan%26bilmodeller%3Dariya%26finansiering%3Dall%26utm_source%3DBA%26utm_medium%3DMobil%26utm_campaign%3DNissan%2520ARIYA%2520BAhttps://sandegruppen.no/kampanjer/%3Fbilmerker%3Dnissan%26bilmodeller%3Dariya%26finansiering%3Dall%26utm_source%3DBA%26utm_medium%3DDesktop%2520%26utm_campaign%3DNissan%2520ARIYA%2520BAMobilhttps://sandegruppen.no/kampanjer/%3Fbilmerker%3Dnissan%26bilmodeller%3Dariya%26finansiering%3Dall%26utm_source%3DBA%26utm_medium%3DMobil%26utm_campaign%3DNissan%2520ARIYA%2520BA\" onfocus=\"ss('aw0')\" onmousedown=\"st('aw0')\" onmouseover=\"ss('aw0')\" onclick=\"ha('aw0')\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ba\\.no\\/toppbanner_0",
+            "#aw0"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.ba.no/gfx/small.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.ba.no/tilbud\" publication=\"www.ba.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layout=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_toppbanner am-bazaar-ad--labeled\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.ba.no/toppbanner_1\" pageview-id=\"936bff18-35b8-4829-be35-2fcec7869cef\" has-bid=\"\" render-count=\"1\" render-time=\"1759020994903\" advertiser-id=\"5844775415\" order-id=\"3848890052\" lineitem-id=\"7088030590\" creative-id=\"138530896558\" ad-size=\"980,300\" slot-targeting=\"keyword=forsiden,autolayout,dominans,forsiden_1,format=toppbanner,position=1,adnami_format=skin,lwrefresh=false,hb_crid=,hb_adomain=,hb_format=banner,hb_source=,hb_size=980x300,hb_pb=32.27,hb_adid=74114421b1084c88,hb_bidder=adnuntius\" hb_pb=\"32.27\" prebid-price-group=\"35\" lineitem-type=\"STANDARD\" itemscope=\"\" itemtype=\"http://schema.org/WPAdBlock\" is-empty=\"false\" is-viewable=\"true\" style=\"min-height: 0px;\">",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

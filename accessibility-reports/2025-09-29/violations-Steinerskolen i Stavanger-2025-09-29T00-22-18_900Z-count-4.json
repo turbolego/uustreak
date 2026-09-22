@@ -1,0 +1,139 @@
+{
+  "project": "Steinerskolen i Stavanger",
+  "timestamp": "2025-09-29T00:22:18.901Z",
+  "url": "https://www.steinerskolen-stavanger.no/#",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h2 class=\"fl-heading\">\n\t\t<span class=\"fl-heading-text\"></span>\n\t</h2>",
+          "target": [
+            "h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"pp-menu-nav\" aria-label=\"Menu\" itemscope=\"itemscope\" itemtype=\"https://schema.org/SiteNavigationElement\">",
+          "target": [
+            ".pp-menu-default > nav"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a href=\"http://986%2055%20321\" target=\"_self\" class=\"fl-icon-text-link fl-icon-text-wrap\">\n\t\t\t\t\t\t</a>",
+          "target": [
+            "#fl-icon-text-8w7hzopxga04 > .fl-icon-text-link.fl-icon-text-wrap[href=\"http://986%2055%20321\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"http://986%2055%20321\" target=\"_self\" class=\"fl-icon-text-link fl-icon-text-wrap\"></a>",
+          "target": [
+            "p > .fl-icon-text-link.fl-icon-text-wrap[href=\"http://986%2055%20321\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a itemprop=\"sameAs\" href=\"https://www.facebook.com/steinerskolenstavanger\" target=\"_self\" title=\"\" aria-label=\"\" role=\"button\">\n\t\t\t\t\t\t\t<i class=\"fab fa-facebook-square\"></i>\n\t\t\t\t\t</a>",
+          "target": [
+            ".pp-social-icon[itemscope=\"\"]:nth-child(1) > a[title=\"\"][aria-label=\"\"][itemprop=\"sameAs\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        },
+        {
+          "html": "<a itemprop=\"sameAs\" href=\"https://www.instagram.com/gs_steinerskolenistavanger/\" target=\"_self\" title=\"\" aria-label=\"\" role=\"button\">\n\t\t\t\t\t\t\t<i class=\"fab fa-instagram-square\"></i>\n\t\t\t\t\t</a>",
+          "target": [
+            ".pp-social-icon[itemscope=\"\"]:nth-child(2) > a[title=\"\"][aria-label=\"\"][itemprop=\"sameAs\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has an empty title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<p class=\"cky-title\" role=\"heading\" aria-level=\"1\" data-cky-tag=\"title\" style=\"color: #212121;\"> Vi respekterer personvernet ditt </p>",
+          "target": [
+            ".cky-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cky-notice-des\" data-cky-tag=\"description\" style=\"color: #212121;\">",
+          "target": [
+            ".cky-notice-des"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a aria-label=\"Hopp til innhold\" class=\"fl-screen-reader-text\" href=\"#fl-main-content\">Hopp til innhold</a>",
+          "target": [
+            ".fl-screen-reader-text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

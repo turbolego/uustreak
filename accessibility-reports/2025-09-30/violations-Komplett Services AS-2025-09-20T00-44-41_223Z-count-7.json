@@ -1,0 +1,515 @@
+{
+  "project": "Komplett Services AS",
+  "timestamp": "2025-09-20T00:44:41.223Z",
+  "url": "https://www.komplett.no/",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "description": "Ensure an element's role supports its ARIA attributes",
+      "help": "Elements must only use supported ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"user-profile__container icon-button hide-xs\" tabindex=\"0\" data-automationid=\"headerMenu.userProfile\" data-testid=\"headerMenu.userProfile\" aria-expanded=\"false\" aria-label=\"Logget som Logg inn\">",
+          "target": [
+            ".user-profile__container"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        }
+      ]
+    },
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 29,
+      "nodes": [
+        {
+          "html": "<button tabindex=\"0\" onclick=\"CookieInformation.declineAllCategories()\" aria-label=\"Avvis alle\" id=\"declineButton\" class=\"coi-banner__decline\" data-testid=\"consent.popup.button.decline.all\" role=\"alert\" aria-atomic=\"true\" style=\"display: flex;\">\n            Avvis alle\n          </button>",
+          "target": [
+            "#declineButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role alert is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active\" title=\"iPhone 17 PRO kjøp nå\" data-bind=\"click: trackPromotionClick.bind($data,0)\" href=\"https://www.komplett.no/kampanje/246594/iphone-17-pro-og-iphone-17-pro-max\" data-swiper-slide-index=\"0\" role=\"group\" aria-label=\"1 / 15\">",
+          "target": [
+            "a[aria-label=\"1 / 15\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next\" title=\"helgeslipp\" data-bind=\"click: trackPromotionClick.bind($data,1)\" href=\"https://www.komplett.no/kampanje/ukens-beste-kjoep\" data-swiper-slide-index=\"1\" role=\"group\" aria-label=\"2 / 15\">",
+          "target": [
+            "a[aria-label=\"2 / 15\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate\" title=\"Uken tilbud\" data-bind=\"click: trackPromotionClick.bind($data,2)\" href=\"https://www.komplett.no/kampanje/ukens-beste-kjoep\" data-swiper-slide-index=\"2\" role=\"group\" aria-label=\"3 / 15\">",
+          "target": [
+            "a[aria-label=\"3 / 15\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate\" title=\"iPhone air kjøp nå\" data-bind=\"click: trackPromotionClick.bind($data,3)\" href=\"https://www.komplett.no/search?q=*%3A*&amp;kom_materialNumber=1328705%2C1328683%2C1328708%2C1328695%2C1328696%2C1328701%2C1328680%2C1328689%2C1328712%2C1328670%2C1328667%2C1328669&amp;list_view=grid\" data-swiper-slide-index=\"3\" role=\"group\" aria-label=\"4 / 15\">",
+          "target": [
+            "a[aria-label=\"4 / 15\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate swiper-slide-prev\" title=\"Månedens gaming deals\" data-bind=\"click: trackPromotionClick.bind($data,4)\" href=\"https://www.komplett.no/kampanje/gamer-pc-tilbud?tag=*\" data-swiper-slide-index=\"4\" role=\"group\" aria-label=\"5 / 15\">",
+          "target": [
+            "a[aria-label=\"5 / 15\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-active\" title=\"iPhone 17 PRO kjøp nå\" data-bind=\"click: trackPromotionClick.bind($data,0)\" href=\"https://www.komplett.no/kampanje/246594/iphone-17-pro-og-iphone-17-pro-max\" data-swiper-slide-index=\"0\" role=\"group\" aria-label=\"6 / 15\">",
+          "target": [
+            "a[aria-label=\"6 / 15\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-next\" title=\"helgeslipp\" data-bind=\"click: trackPromotionClick.bind($data,1)\" href=\"https://www.komplett.no/kampanje/ukens-beste-kjoep\" data-swiper-slide-index=\"1\" role=\"group\" aria-label=\"7 / 15\">",
+          "target": [
+            "a[aria-label=\"7 / 15\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide\" title=\"Uken tilbud\" data-bind=\"click: trackPromotionClick.bind($data,2)\" href=\"https://www.komplett.no/kampanje/ukens-beste-kjoep\" data-swiper-slide-index=\"2\" role=\"group\" aria-label=\"8 / 15\">",
+          "target": [
+            "a[aria-label=\"8 / 15\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide\" title=\"iPhone air kjøp nå\" data-bind=\"click: trackPromotionClick.bind($data,3)\" href=\"https://www.komplett.no/search?q=*%3A*&amp;kom_materialNumber=1328705%2C1328683%2C1328708%2C1328695%2C1328696%2C1328701%2C1328680%2C1328689%2C1328712%2C1328670%2C1328667%2C1328669&amp;list_view=grid\" data-swiper-slide-index=\"3\" role=\"group\" aria-label=\"9 / 15\">",
+          "target": [
+            "a[aria-label=\"9 / 15\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate-prev\" title=\"Månedens gaming deals\" data-bind=\"click: trackPromotionClick.bind($data,4)\" href=\"https://www.komplett.no/kampanje/gamer-pc-tilbud?tag=*\" data-swiper-slide-index=\"4\" role=\"group\" aria-label=\"10 / 15\">",
+          "target": [
+            "a[aria-label=\"10 / 15\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active\" title=\"iPhone 17 PRO kjøp nå\" data-bind=\"click: trackPromotionClick.bind($data,0)\" href=\"https://www.komplett.no/kampanje/246594/iphone-17-pro-og-iphone-17-pro-max\" data-swiper-slide-index=\"0\" role=\"group\" aria-label=\"11 / 15\">",
+          "target": [
+            "a[aria-label=\"11 / 15\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next\" title=\"helgeslipp\" data-bind=\"click: trackPromotionClick.bind($data,1)\" href=\"https://www.komplett.no/kampanje/ukens-beste-kjoep\" data-swiper-slide-index=\"1\" role=\"group\" aria-label=\"12 / 15\">",
+          "target": [
+            "a[aria-label=\"12 / 15\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate\" title=\"Uken tilbud\" data-bind=\"click: trackPromotionClick.bind($data,2)\" href=\"https://www.komplett.no/kampanje/ukens-beste-kjoep\" data-swiper-slide-index=\"2\" role=\"group\" aria-label=\"13 / 15\">",
+          "target": [
+            "a[aria-label=\"13 / 15\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate\" title=\"iPhone air kjøp nå\" data-bind=\"click: trackPromotionClick.bind($data,3)\" href=\"https://www.komplett.no/search?q=*%3A*&amp;kom_materialNumber=1328705%2C1328683%2C1328708%2C1328695%2C1328696%2C1328701%2C1328680%2C1328689%2C1328712%2C1328670%2C1328667%2C1328669&amp;list_view=grid\" data-swiper-slide-index=\"3\" role=\"group\" aria-label=\"14 / 15\">",
+          "target": [
+            "a[aria-label=\"14 / 15\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate\" title=\"Månedens gaming deals\" data-bind=\"click: trackPromotionClick.bind($data,4)\" href=\"https://www.komplett.no/kampanje/gamer-pc-tilbud?tag=*\" data-swiper-slide-index=\"4\" role=\"group\" aria-label=\"15 / 15\">",
+          "target": [
+            "a[aria-label=\"15 / 15\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active\" title=\"Sesong\" data-bind=\"click: trackPromotionClick.bind($data,0)\" href=\"https://www.komplett.no/kampanje/sesong-og-fritid\" data-swiper-slide-index=\"0\" role=\"group\" aria-label=\"1 / 12\">",
+          "target": [
+            "a[aria-label=\"1 / 12\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next\" title=\"Demodager\" data-bind=\"click: trackPromotionClick.bind($data,1)\" href=\"https://www.komplett.no/department/10066/demovarer\" data-swiper-slide-index=\"1\" role=\"group\" aria-label=\"2 / 12\">",
+          "target": [
+            "a[aria-label=\"2 / 12\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate\" title=\"Kjøp iPhone 17 nå\" data-bind=\"click: trackPromotionClick.bind($data,2)\" href=\"https://www.komplett.no/search?q=*%3A*&amp;kom_materialNumber=1328687%2C1328702%2C1328700%2C1328691%2C1328673%2C1328665%2C1328693%2C1328711%2C1328697%2C1328686&amp;list_view=grid\" data-swiper-slide-index=\"2\" role=\"group\" aria-label=\"3 / 12\">",
+          "target": [
+            "a[aria-label=\"3 / 12\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate swiper-slide-prev\" title=\"Airpods pro 3\" data-bind=\"click: trackPromotionClick.bind($data,3)\" href=\"https://www.komplett.no/product/1328672/tv-lyd-bilde/hodetelefoner-tilbehoer/oerepropper/apple-airpods-pro-3-traadloese-oerepropper-in-ear-hvit\" data-swiper-slide-index=\"3\" role=\"group\" aria-label=\"4 / 12\">",
+          "target": [
+            "a[aria-label=\"4 / 12\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-active\" title=\"Sesong\" data-bind=\"click: trackPromotionClick.bind($data,0)\" href=\"https://www.komplett.no/kampanje/sesong-og-fritid\" data-swiper-slide-index=\"0\" role=\"group\" aria-label=\"5 / 12\">",
+          "target": [
+            "a[aria-label=\"5 / 12\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-next\" title=\"Demodager\" data-bind=\"click: trackPromotionClick.bind($data,1)\" href=\"https://www.komplett.no/department/10066/demovarer\" data-swiper-slide-index=\"1\" role=\"group\" aria-label=\"6 / 12\">",
+          "target": [
+            "a[aria-label=\"6 / 12\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide\" title=\"Kjøp iPhone 17 nå\" data-bind=\"click: trackPromotionClick.bind($data,2)\" href=\"https://www.komplett.no/search?q=*%3A*&amp;kom_materialNumber=1328687%2C1328702%2C1328700%2C1328691%2C1328673%2C1328665%2C1328693%2C1328711%2C1328697%2C1328686&amp;list_view=grid\" data-swiper-slide-index=\"2\" role=\"group\" aria-label=\"7 / 12\">",
+          "target": [
+            "a[aria-label=\"7 / 12\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate-prev\" title=\"Airpods pro 3\" data-bind=\"click: trackPromotionClick.bind($data,3)\" href=\"https://www.komplett.no/product/1328672/tv-lyd-bilde/hodetelefoner-tilbehoer/oerepropper/apple-airpods-pro-3-traadloese-oerepropper-in-ear-hvit\" data-swiper-slide-index=\"3\" role=\"group\" aria-label=\"8 / 12\">",
+          "target": [
+            "a[aria-label=\"8 / 12\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active\" title=\"Sesong\" data-bind=\"click: trackPromotionClick.bind($data,0)\" href=\"https://www.komplett.no/kampanje/sesong-og-fritid\" data-swiper-slide-index=\"0\" role=\"group\" aria-label=\"9 / 12\">",
+          "target": [
+            "a[aria-label=\"9 / 12\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next\" title=\"Demodager\" data-bind=\"click: trackPromotionClick.bind($data,1)\" href=\"https://www.komplett.no/department/10066/demovarer\" data-swiper-slide-index=\"1\" role=\"group\" aria-label=\"10 / 12\">",
+          "target": [
+            "a[aria-label=\"10 / 12\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate\" title=\"Kjøp iPhone 17 nå\" data-bind=\"click: trackPromotionClick.bind($data,2)\" href=\"https://www.komplett.no/search?q=*%3A*&amp;kom_materialNumber=1328687%2C1328702%2C1328700%2C1328691%2C1328673%2C1328665%2C1328693%2C1328711%2C1328697%2C1328686&amp;list_view=grid\" data-swiper-slide-index=\"2\" role=\"group\" aria-label=\"11 / 12\">",
+          "target": [
+            "a[aria-label=\"11 / 12\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-duplicate\" title=\"Airpods pro 3\" data-bind=\"click: trackPromotionClick.bind($data,3)\" href=\"https://www.komplett.no/product/1328672/tv-lyd-bilde/hodetelefoner-tilbehoer/oerepropper/apple-airpods-pro-3-traadloese-oerepropper-in-ear-hvit\" data-swiper-slide-index=\"3\" role=\"group\" aria-label=\"12 / 12\">",
+          "target": [
+            "a[aria-label=\"12 / 12\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        },
+        {
+          "html": "<a class=\"swiper-slide swiper-slide-active\" href=\"https://www.komplett.no/kampanje/185562/bestselgere-komplett?tag=topp10\" data-bind=\"click: $parent.promoClick, attr:{ href: $data.targetUrl, title: $data.alt_txt, 'data-placement-name': $data.placement_name }, sendBeaconOnClick:{link:$data.reportClickUrl}\" title=\"Bestselgere\" data-placement-name=\"home_page.frontban1\" role=\"group\" aria-label=\"1 / 1\">",
+          "target": [
+            "a[title=\"Bestselgere\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role group is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<h5><slot></slot></h5>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(5) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(1)",
+              "komplett-h5",
+              "h5"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5><slot></slot></h5>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(6) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(1)",
+              "komplett-h5",
+              "h5"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5><slot></slot></h5>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(7) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(1)",
+              "komplett-h5",
+              "h5"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5><slot></slot></h5>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(9) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(1)",
+              "komplett-h5",
+              "h5"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5><slot></slot></h5>",
+          "target": [
+            [
+              ".row[data-bind=\"visible: rowVisible\"]:nth-child(11) > .col-xs-12 > komplett-product-card-container",
+              "komplett-product-card:nth-child(1)",
+              "komplett-h5",
+              "h5"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5><slot></slot></h5>",
+          "target": [
+            [
+              "komplett-algonomy-product-cards",
+              "komplett-product-card-container",
+              "komplett-product-card[isflexonly=\"\"]:nth-child(1)",
+              "komplett-h5",
+              "h5"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<img src=\"/marketingmedia/165641/catimg_q225_hardware.png\" alt=\"Datautstyr\" title=\"Datautstyr\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Datautstyr\"][title=\"Datautstyr\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/marketingmedia/165635/catimg_q225_gaming.png\" alt=\"Gaming\" title=\"Gaming\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Gaming\"][title=\"Gaming\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/marketingmedia/165636/catimg_q225_pclaptop.png\" alt=\"PC &amp; tilbehør\" title=\"PC &amp; tilbehør\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"PC & tilbehør\"][title=\"PC & tilbehør\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/marketingmedia/165634/catimg_q225_kpc.png\" alt=\"Komplett-PC\" title=\"Komplett-PC\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Komplett-PC\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/marketingmedia/165637/catimg_q225_mobile.png\" alt=\"Mobil, tablets &amp; klokker\" title=\"Mobil, tablets &amp; klokker\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Mobil, tablets & klokker\"][title=\"Mobil, tablets & klokker\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/marketingmedia/165638/catimg_q225_tv.png\" alt=\"TV, lyd &amp; bilde\" title=\"TV, lyd &amp; bilde\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"TV, lyd & bilde\"][title=\"TV, lyd & bilde\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/marketingmedia/165639/catimg_q225_vacuum.png\" alt=\"Hjem &amp; fritid\" title=\"Hjem &amp; fritid\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Hjem & fritid\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img src=\"/marketingmedia/165642/catimg_q225_washingmachine.png\" alt=\"Hvitevarer\" title=\"Hvitevarer\">",
+          "target": [
+            [
+              "komplett-thumbnail-navigation",
+              "img[alt=\"Hvitevarer\"][title=\"Hvitevarer\"]"
+            ]
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<span>Prismatch*</span>",
+          "target": [
+            "a[href$=\"prismatch/\"] > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Gratis retur</span>",
+          "target": [
+            ".universal-selling-points--item:nth-child(2) > .universal-selling-points--link > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Fri frakt for medlemmer</span>",
+          "target": [
+            ".universal-selling-points--item:nth-child(3) > .universal-selling-points--link > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"chat__menu-title\">Vi hjelper deg!</div>",
+          "target": [
+            ".chat__menu-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "project": "Jysk AS",
+  "timestamp": "2026-02-06T20:15:22.195Z",
+  "url": "https://jysk.no/#",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input type=\"search\" placeholder=\"Søk produkt/kategori\" value=\"\" name=\"query\" autocorrect=\"off\" autocomplete=\"off\" aria-label=\"Søk produkt/kategori\" class=\"search-input focus-within__target form-control\">",
+          "target": [
+            ".search-input"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "impact": "critical",
+      "description": "Ensure every form element has a label",
+      "help": "Form elements must have labels",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/label?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input type=\"text\" name=\"jysk_lastname\" value=\"\" id=\"jysk_lastname\" class=\"form-control\">",
+          "target": [
+            "#jysk_lastname"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 11,
+      "nodes": [
+        {
+          "html": "<div class=\"usp-text col-sm-12 col-12\"><span class=\"usp__title lead text-medium\">46 ÅR MED GODE TILBUD</span><div class=\"usp__subtitle d-block\">Mer enn 3600 butikker i over 50 land</div></div>",
+          "target": [
+            ".col.mb-md-0.col-md-3:nth-child(1) > .usp.text-decoration-none[href$=\"om-jysk\"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"usp-text col-sm-12 col-12\"><span class=\"usp__title lead text-medium\">SKANDINAVISKE RØTTER</span><div class=\"usp__subtitle d-block\">Vi er globale med skandinaviske røtter. Etab. Danmark 1979</div></div>",
+          "target": [
+            ".col.mb-md-0.col-md-3:nth-child(2) > .usp.text-decoration-none[href$=\"om-jysk\"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"usp-text col-sm-12 col-12\"><span class=\"usp__title lead text-medium\">MADRASSGARANTI</span><div class=\"usp__subtitle d-block\">25 års garanti på våre GOLD madrasser</div></div>",
+          "target": [
+            ".col.mb-md-0.col-md-3:nth-child(3) > .usp.text-decoration-none.d-block > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"usp-text col-sm-12 col-12\"><span class=\"usp__title lead text-medium\">FAST LAV PRIS</span><div class=\"usp__subtitle d-block\">Vi har håndplukket et bredt utvalg av produkter som alltid har de samme lave prisene</div></div>",
+          "target": [
+            ".usp.text-decoration-none[href$=\"edlp\"] > .usp-inner-container.hyphens-none.promoted > .usp-text.col-sm-12.col-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"newsletter__header text-center\">",
+          "target": [
+            ".newsletter__header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"required-label mb-3 w-100\">Alle felt merket med en stjerne (*) er obligatoriske</p>",
+          "target": [
+            ".required-label.mb-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".newsletter__fields > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".newsletter__fields > div:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input type=\"checkbox\" data-test=\"\" name=\"terms\" id=\"edit-terms\" class=\"checkbox-inline form-check-input\" value=\"\">",
+          "target": [
+            "#edit-terms"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>",
+          "target": [
+            "label[for=\"edit-terms\"] > span:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"position-relative form-group hp-field\"><div class=\"form-group position-relative\"><input type=\"text\" name=\"jysk_lastname\" value=\"\" id=\"jysk_lastname\" class=\"form-control\"></div></div>",
+          "target": [
+            ".hp-field"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

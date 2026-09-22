@@ -1,0 +1,196 @@
+{
+  "project": "Stavanger Aftenblad AS",
+  "timestamp": "2026-06-27T03:35:41.365Z",
+  "url": "https://www.aftenbladet.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://eavis.aftenbladet.no/\" class=\"_button_19c90_11 dna button primary\" target=\"_blank\" rel=\"noopener noreferrer\">Les dagens e-avis</a>",
+          "target": [
+            "._button_19c90_11"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #ffffff, background color: #0083cc, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe title=\"\" srcdoc=\"<div id=\"sa-kapplope...\" scrolling=\"no\" class=\"svelte-r1njzg\" style=\"width: 100%; height:...\">",
+          "target": [
+            "iframe[allowfullscreen=\"\"]",
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has an empty title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-complementary-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the complementary landmark or aside is at top level",
+      "help": "Aside should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-complementary-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<aside class=\"aside\">",
+          "target": [
+            "aside"
+          ],
+          "failureSummary": "Fix any of the following:\n  The null landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.aftenbladet.no/\" data-astro-cid-tz4ad4h2=\"\">",
+          "target": [
+            "._logos_e3b6k_158 > a[href$=\"aftenbladet.no/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.nored.no/Redaktoerplakaten/Redaktoerplakaten/\" target=\"_blank\" data-astro-cid-tz4ad4h2=\"\">",
+          "target": [
+            "._logos_e3b6k_158 > a[target=\"_blank\"][data-astro-cid-tz4ad4h2=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/nested-interactive?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<audio-play-button asset-id=\"112968\" vendor=\"sa\" provider=\"sa\" title=\"Superduellen hele\nFrankrike snakker om\" class=\"label-medium _root_pa3qf_54 _small_pa3qf_72\" role=\"button\" tabindex=\"0\" data-state=\"idle\">",
+          "target": [
+            "track-element[data-track-id=\"teaser:112968\"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_pa3qf_54._small_pa3qf_72[vendor=\"sa\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<audio-play-button asset-id=\"112961\" vendor=\"sa\" provider=\"sa\" title=\"Ny Viking-spiller – og\nHaaland-spesial\" class=\"label-medium _root_pa3qf_54 _small_pa3qf_72\" role=\"button\" tabindex=\"0\" data-state=\"idle\">",
+          "target": [
+            "track-element[data-track-id=\"teaser:112961\"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_pa3qf_54._small_pa3qf_72[vendor=\"sa\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<audio-play-button asset-id=\"112958\" vendor=\"sa\" provider=\"sa\" title=\"Å ro, eller ikke å ro.\nDet er spørsmålet.\" class=\"label-medium _root_pa3qf_54 _small_pa3qf_72\" role=\"button\" tabindex=\"0\" data-state=\"idle\">",
+          "target": [
+            "track-element[data-track-id=\"teaser:112958\"] > ._podcast_d38gf_1 > ._meta_d38gf_48 > ._root_pa3qf_54._small_pa3qf_72[vendor=\"sa\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span class=\"sch-datacontroller__text\">",
+          "target": [
+            ".sch-datacontroller__text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

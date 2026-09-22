@@ -1,0 +1,35 @@
+{
+  "project": "KappAhl AS",
+  "timestamp": "2025-09-22T14:10:42.403Z",
+  "url": "https://www.kappahl.com/no-NO/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "aria-hidden-focus",
+      "impact": "serious",
+      "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+      "help": "ARIA hidden element must not be focusable or contain focusable elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-hidden-focus?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<dialog aria-hidden=\"true\" class=\"hh hi hj hk ac hl hm hn ho ba by hp hq hr hs ht hu hv hw b c hx hy g6 hz m a2 a3 a4 a5 o hg\" style=\"transform: translateX(-100%);\">",
+          "target": [
+            "dialog"
+          ],
+          "failureSummary": "Fix all of the following:\n  Focusable content should be disabled or be removed from the DOM\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
+        }
+      ]
+    }
+  ]
+}

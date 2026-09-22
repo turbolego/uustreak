@@ -1,0 +1,892 @@
+{
+  "project": "Jobzone Norge AS",
+  "timestamp": "2025-12-01T00:51:07.023Z",
+  "url": "https://jobzone.no/",
+  "total_violations": 8,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button type=\"submit\" class=\"is-hidden-tablet\">\n                            <img src=\"/Static/icons/magnifier-red.svg\">\n                        </button>",
+          "target": [
+            ".search-menu-mobile > section > .container > .is-centered.columns > .is-narrow.column > .form[action=\"/sok/\"][method=\"get\"] > .form-group > .is-hidden-tablet[type=\"submit\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button type=\"submit\" class=\"is-hidden-tablet\">\n                            <img src=\"/Static/icons/magnifier-red.svg\">\n                        </button>",
+          "target": [
+            ".search-menu > section > .container > .is-centered.columns > .is-narrow.column > .form[action=\"/sok/\"][method=\"get\"] > .form-group > .is-hidden-tablet[type=\"submit\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a id=\"CybotCookiebotDialogBodyEdgeMoreDetailsLink\" href=\"#\" class=\"\">Detaljer</a>",
+          "target": [
+            "#CybotCookiebotDialogBodyEdgeMoreDetailsLink"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #00a298, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button id=\"CybotCookiebotDialogBodyButtonAccept\" class=\"CybotCookiebotDialogBodyButton\" tabindex=\"0\" lang=\"nb\">Ok</button>",
+          "target": [
+            "#CybotCookiebotDialogBodyButtonAccept"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h5>JOBBSØKER</h5>",
+          "target": [
+            ".main-menu > section > .main-menu-wrapper > .top-menu:nth-child(1) > .jobseeker.is-marginless.is-multiline > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5>JOBBSØKER</h5>",
+          "target": [
+            ".information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .jobseeker.is-marginless.is-multiline > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 64,
+      "nodes": [
+        {
+          "html": "<img width=\"64\" src=\"https://prod.jzstatic.no/img/jobzone_vertical_dark.png\">",
+          "target": [
+            "img[width=\"64\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"nav-language-arrow\" src=\"/Static/icons/arrow-down.svg\">",
+          "target": [
+            ".nav-dropdown-wrapper > .nav-text > .nav-language-arrow[src$=\"arrow-down.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"languageFlag\" src=\"/Static/icons/no.svg\">",
+          "target": [
+            "img[src$=\"no.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"languageFlag\" src=\"/Static/icons/en.svg\">",
+          "target": [
+            ".dropdown-wrapper > .nav-text[href$=\"en/\"] > .nav-wrapper-item > .languageFlag[src$=\"en.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"languageFlag\" src=\"/Static/icons/pl.svg\">",
+          "target": [
+            ".dropdown-wrapper > .nav-text[href$=\"pl/\"] > .nav-wrapper-item > .languageFlag[src$=\"pl.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/magnifier-red.svg\">",
+          "target": [
+            ".search-menu-mobile > section > .container > .is-centered.columns > .is-narrow.column > .form[action=\"/sok/\"][method=\"get\"] > .form-group > .is-hidden-tablet[type=\"submit\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"nav-language-arrow\" src=\"/Static/icons/arrow-down.svg\">",
+          "target": [
+            ".mobile-language > .nav-text > .nav-language-arrow[src$=\"arrow-down.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"languageFlag\" src=\"/Static/icons/no-circle.png\">",
+          "target": [
+            "img[src$=\"no-circle.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"languageFlag\" src=\"/Static/icons/en.svg\">",
+          "target": [
+            ".centered-wrapper > div > .nav-text[href$=\"en/\"] > .nav-wrapper-item > .languageFlag[src$=\"en.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"languageFlag\" src=\"/Static/icons/pl.svg\">",
+          "target": [
+            ".centered-wrapper > div > .nav-text[href$=\"pl/\"] > .nav-wrapper-item > .languageFlag[src$=\"pl.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/House-dark.svg\" style=\"fill: #000;\">",
+          "target": [
+            "img[src$=\"House-dark.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/Article-dark.svg\" style=\"fill: #000;\">",
+          "target": [
+            ".is-6.is-12-mobile.column:nth-child(2) > img[src$=\"Article-dark.svg\"][type=\"image/svg+xml\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/raushetsaksjonen-dark.svg\" style=\"fill: #000;\">",
+          "target": [
+            ".main-menu > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(3) > img[type=\"image/svg+xml\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/Lighthouse-dark.svg\" style=\"fill: #000;\">",
+          "target": [
+            ".main-menu > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(4) > img[type=\"image/svg+xml\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/Bulbidea-dark.svg\" style=\"fill: #000;\">",
+          "target": [
+            ".main-menu > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(5) > img[type=\"image/svg+xml\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/People-dark.svg\" style=\"fill: #000;\">",
+          "target": [
+            "img[src$=\"People-dark.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/Article-dark.svg\" style=\"fill: #000;\">",
+          "target": [
+            ".is-6.is-12-mobile.column:nth-child(7) > img[src$=\"Article-dark.svg\"][type=\"image/svg+xml\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/Newspaper-dark.svg\" style=\"fill: #000;\">",
+          "target": [
+            ".main-menu > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(8) > img[type=\"image/svg+xml\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/magnifier-red.svg\">",
+          "target": [
+            ".search-menu > section > .container > .is-centered.columns > .is-narrow.column > .form[action=\"/sok/\"][method=\"get\"] > .form-group > .is-hidden-tablet[type=\"submit\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/globalassets/forside/banner-24-1.jpg\">",
+          "target": [
+            ".candidate-image > div > div > .container-fluid.frontpage > .banner-image > .image-container > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/globalassets/artikkelbilder/bedrift_banner_2.png\">",
+          "target": [
+            ".company-image > div > div > .container-fluid.frontpage > .banner-image > .image-container > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/CandidateShotcutIconsRed/magnifier-2.svg\">",
+          "target": [
+            "a[href$=\"ledige-stillinger/\"] > .is-mobile.columns > .page-link-icon.is-narrow.column > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"rotate\" src=\"/Static/icons/arrow-down.svg\">",
+          "target": [
+            "a[href$=\"ledige-stillinger/\"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$=\"arrow-down.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/CandidateShotcutIconsRed/user-female.svg\">",
+          "target": [
+            "a[href$=\"registrering/\"] > .is-mobile.columns > .page-link-icon.is-narrow.column > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"rotate\" src=\"/Static/icons/arrow-down.svg\">",
+          "target": [
+            "a[href$=\"registrering/\"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$=\"arrow-down.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/CandidateShotcutIconsRed/chat-3.svg\">",
+          "target": [
+            ".page-link.colums:nth-child(3) > a[href$=\"avdelinger/\"] > .is-mobile.columns > .page-link-icon.is-narrow.column > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"rotate\" src=\"/Static/icons/arrow-down.svg\">",
+          "target": [
+            ".page-link.colums:nth-child(3) > a[href$=\"avdelinger/\"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$=\"arrow-down.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/CandidateShotcutIconsRed/user-female.svg\">",
+          "target": [
+            "a[href$=\"innleie-av-arbeidskraft/\"] > .is-mobile.columns > .page-link-icon.is-narrow.column > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"rotate\" src=\"/Static/icons/arrow-down.svg\">",
+          "target": [
+            "a[href$=\"innleie-av-arbeidskraft/\"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$=\"arrow-down.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/user-search.svg\">",
+          "target": [
+            ".page-link-icon.is-narrow.column > img[src$=\"user-search.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"rotate\" src=\"/Static/icons/arrow-down.svg\">",
+          "target": [
+            ".company-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(1) > .job-search-helper > .page-link.colums:nth-child(2) > a > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$=\"arrow-down.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/email.svg\">",
+          "target": [
+            "img[src$=\"email.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"rotate\" src=\"/Static/icons/arrow-down.svg\">",
+          "target": [
+            "a[href$=\"kontakt-oss/\"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$=\"arrow-down.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/dream-house.svg\">",
+          "target": [
+            "img[src$=\"dream-house.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"rotate\" src=\"/Static/icons/arrow-down.svg\">",
+          "target": [
+            ".page-link.colums:nth-child(4) > a[href$=\"avdelinger/\"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$=\"arrow-down.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/tasks.svg\">",
+          "target": [
+            "img[src$=\"tasks.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"rotate\" src=\"/Static/icons/arrow-down.svg\">",
+          "target": [
+            "a[href$=\"fagomrader/\"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$=\"arrow-down.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"\" src=\"/Static/icons/user-search.svg\">",
+          "target": [
+            ".oval > img[src$=\"user-search.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"\" src=\"/Static/icons/graduation-cap.svg\">",
+          "target": [
+            ".is-4.column:nth-child(2) > .oval > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"\" src=\"/Static/icons/medal-5.svg\">",
+          "target": [
+            "img[src$=\"medal-5.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/FieldOfWorkIcons/Black/office-archives.svg\">",
+          "target": [
+            ".is-6-tablet.is-one-third-desktop.is-12-mobile:nth-child(2) > .with-icon.black.link > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/FieldOfWorkIcons/Black/stethoscope.svg\">",
+          "target": [
+            "a[href$=\"fagomrader/#health\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/FieldOfWorkIcons/Black/forklift.svg\">",
+          "target": [
+            "a[href$=\"fagomrader/#logistics\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/FieldOfWorkIcons/Black/money-bag.svg\">",
+          "target": [
+            "a[href$=\"fagomrader/#finance\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/FieldOfWorkIcons/Black/coffee-mug.svg\">",
+          "target": [
+            "a[href$=\"fagomrader/#restaurant\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/FieldOfWorkIcons/Black/calculator.svg\">",
+          "target": [
+            "a[href$=\"fagomrader/#economy\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/FieldOfWorkIcons/Black/blackboard-alphabet.svg\">",
+          "target": [
+            "a[href$=\"fagomrader/#school\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/FieldOfWorkIcons/Black/construction-barricade.svg\">",
+          "target": [
+            "a[href$=\"fagomrader/#industry\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/FieldOfWorkIcons/Black/comment-2-smile.svg\">",
+          "target": [
+            "a[href$=\"fagomrader/#sale\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/FieldOfWorkIcons/Black/wrench-hammer.svg\">",
+          "target": [
+            ".is-6-tablet.is-one-third-desktop.is-12-mobile:nth-child(11) > .with-icon.black.link > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/FieldOfWorkIcons/Black/imac.svg\">",
+          "target": [
+            "a[href$=\"fagomrader/#it\"] > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/FieldOfWorkIcons/Black/delivery-box-2.svg\">",
+          "target": [
+            ".is-6-tablet.is-one-third-desktop.is-12-mobile:nth-child(13) > .with-icon.black.link > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/House.svg\" style=\"fill: #000;\">",
+          "target": [
+            "img[src$=\"House.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/Article.svg\" style=\"fill: #000;\">",
+          "target": [
+            ".is-6.is-12-mobile.column:nth-child(2) > img[src$=\"Article.svg\"][type=\"image/svg+xml\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/raushetsaksjonen.svg\" style=\"fill: #000;\">",
+          "target": [
+            ".information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(3) > img[type=\"image/svg+xml\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/Lighthouse.svg\" style=\"fill: #000;\">",
+          "target": [
+            "img[src$=\"Lighthouse.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/Bulbidea.svg\" style=\"fill: #000;\">",
+          "target": [
+            "img[src$=\"Bulbidea.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/People.svg\" style=\"fill: #000;\">",
+          "target": [
+            "img[src$=\"People.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/Article.svg\" style=\"fill: #000;\">",
+          "target": [
+            ".is-6.is-12-mobile.column:nth-child(7) > img[src$=\"Article.svg\"][type=\"image/svg+xml\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img type=\"image/svg+xml\" src=\"/Static/icons/Newspaper.svg\" style=\"fill: #000;\">",
+          "target": [
+            "img[src$=\"Newspaper.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/Facebook.svg\">",
+          "target": [
+            "img[src$=\"Facebook.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/LinkedIn.svg\">",
+          "target": [
+            "img[src$=\"LinkedIn.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/smartphone.svg\">",
+          "target": [
+            "img[src$=\"smartphone.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/Static/icons/placeholder.svg\">",
+          "target": [
+            "img[src$=\"placeholder.svg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "impact": "critical",
+      "description": "Ensure every form element has a label",
+      "help": "Form elements must have labels",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/label?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.1.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<input type=\"text\" class=\"block-contact-us-name\" name=\"name\" required=\"\">",
+          "target": [
+            ".block-contact-us-name"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<input type=\"text\" class=\"block-contact-us-company\" name=\"company\" required=\"\">",
+          "target": [
+            ".block-contact-us-company"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<input type=\"email\" class=\"block-contact-us-email\" name=\"email\" required=\"\">",
+          "target": [
+            ".block-contact-us-email"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<input type=\"tel\" class=\"block-contact-us-phone\" name=\"phone\" required=\"\">",
+          "target": [
+            ".block-contact-us-phone"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a href=\"/\">\n                    <img width=\"64\" src=\"https://prod.jzstatic.no/img/jobzone_vertical_dark.png\">\n                </a>",
+          "target": [
+            "a[href=\"/\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"\" class=\"link left-arrow-large rusty-red\"><span class=\"rusty-red\"></span></a>",
+          "target": [
+            ".left-arrow-large"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.facebook.com/JobzoneNorge/\" alt=\"Jobzone AS facebook page\">\n                                        <img src=\"/Static/icons/Facebook.svg\">\n                                    </a>",
+          "target": [
+            "a[alt=\"Jobzone AS facebook page\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://no.linkedin.com/company/jobzone\" alt=\"Jobzone AS linkedin\">\n                                        <img src=\"/Static/icons/LinkedIn.svg\">\n                                    </a>",
+          "target": [
+            "a[alt=\"Jobzone AS linkedin\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 22,
+      "nodes": [
+        {
+          "html": "<label for=\"search\">Hva leter du etter?</label>",
+          "target": [
+            ".search-menu-mobile > section > .container > .is-centered.columns > .is-narrow.column > .form[action=\"/sok/\"][method=\"get\"] > .form-group > label[for=\"search\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input type=\"text\" class=\"search-query\" name=\"q\" placeholder=\"Skriv her...\">",
+          "target": [
+            ".search-menu-mobile > section > .container > .is-centered.columns > .is-narrow.column > .form[action=\"/sok/\"][method=\"get\"] > .form-group > .search-query[name=\"q\"][placeholder=\"Skriv her...\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"mobile-language\">\n            <a class=\"nav-text\">\n                <img class=\"nav-language-arrow\" src=\"/Static/icons/arrow-down.svg\">\n                    <span>Norsk</span>\n\n                <img class=\"languageFlag\" src=\"/Static/icons/no-circle.png\">\n            </a>\n        </div>",
+          "target": [
+            ".mobile-language"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"dropdown-wrapper-mobile language-wrapper\">",
+          "target": [
+            ".language-wrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"section\">",
+          "target": [
+            ".main-menu > section"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<label for=\"search\">Hva leter du etter?</label>",
+          "target": [
+            ".search-menu > section > .container > .is-centered.columns > .is-narrow.column > .form[action=\"/sok/\"][method=\"get\"] > .form-group > label[for=\"search\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input type=\"text\" class=\"search-query\" name=\"q\" placeholder=\"Skriv her...\">",
+          "target": [
+            ".search-menu > section > .container > .is-centered.columns > .is-narrow.column > .form[action=\"/sok/\"][method=\"get\"] > .form-group > .search-query[name=\"q\"][placeholder=\"Skriv her...\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"candidate-image\">",
+          "target": [
+            ".candidate-image"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"company-image\">",
+          "target": [
+            ".company-image"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"tabs\">\n        <div class=\"candidate-tab active\" onclick=\"toggleFrontpageView('Candidate')\">Jobbsøker</div>\n        <div class=\"company-tab\" onclick=\"toggleFrontpageView('Company')\">Bedrift</div>\n    </div>",
+          "target": [
+            ".tabs"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container candidate-container\">",
+          "target": [
+            ".candidate-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".company-container > div > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".company-container > div > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".company-container > div > div:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>",
+          "target": [
+            ".company-container > div > div:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"block-contact-us-wrapper hide\">\n        <div class=\"columns is-centered\">\n            <div class=\"column is-12\">\n                <h2>Din forespørsel er sendt!</h2>\n                <p>Vi tar kontakt med deg ved nærmeste anledning.</p>\n            </div>\n        </div>\n    </div>",
+          "target": [
+            ".hide"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"columns is-centered\">",
+          "target": [
+            ".show > .is-centered.columns"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"form-group\">\n                    <label>Navn</label>\n                    <input type=\"text\" class=\"block-contact-us-name\" name=\"name\" required=\"\">\n                    <span class=\"block-contact-us-help-text\">Skriv inn fornavn og etternavn</span>\n                </div>",
+          "target": [
+            "#block-contact-us-form > .form-group:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"form-group\">",
+          "target": [
+            ".form-group:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"form-group\">",
+          "target": [
+            ".form-group:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"form-group\">",
+          "target": [
+            ".form-group:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"columns\">",
+          "target": [
+            "#block-contact-us-form > .columns"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "select-name",
+      "impact": "critical",
+      "description": "Ensure select element has an accessible name",
+      "help": "Select element must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/select-name?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<select name=\"department\" required=\"\">",
+          "target": [
+            "select"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ]
+}

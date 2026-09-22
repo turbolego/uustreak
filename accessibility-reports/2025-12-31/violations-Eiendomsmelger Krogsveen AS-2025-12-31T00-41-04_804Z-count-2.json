@@ -1,0 +1,391 @@
+{
+  "project": "Eiendomsmelger Krogsveen AS",
+  "timestamp": "2025-12-31T00:41:04.804Z",
+  "url": "https://www.krogsveen.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 9,
+      "nodes": [
+        {
+          "html": "<div style=\"opacity:1\" class=\"css-coluh3\">Tilleggstjenester</div>",
+          "target": [
+            ".css-1k0pgnc > .css-coluh3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.2 (foreground color: #757575, background color: #f8f4ee, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"css-coluh3\">Selge</div>",
+          "target": [
+            ".css-1g62ca3:nth-child(1) > .css-coluh3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #757575, background color: #f7f7f7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"css-coluh3\">Økonomi</div>",
+          "target": [
+            ".css-1g62ca3:nth-child(2) > .css-coluh3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #757575, background color: #f7f7f7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div>© <!-- -->2025<!-- --> Krogsveen</div>",
+          "target": [
+            ".css-132a9f0 > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #757575, background color: #f7f7f7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"css-11945xh\" href=\"/personvern/personopplysninger\">Personvern</a>",
+          "target": [
+            "a[href$=\"personopplysninger\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #757575, background color: #f7f7f7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"css-11945xh\" href=\"/personvern/cookies\">Informasjonskaplser</a>",
+          "target": [
+            ".css-11945xh[href$=\"cookies\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #757575, background color: #f7f7f7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button class=\"css-1qg8b6\">Samtykker</button>",
+          "target": [
+            ".css-1qg8b6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #757575, background color: #f7f7f7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"css-11945xh\" href=\"https://www.facebook.com/Krogsveen/\">Facebook</a>",
+          "target": [
+            ".css-157jlni:nth-child(3) > .css-11945xh:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #757575, background color: #f7f7f7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"css-11945xh\" href=\"/nyhetsbrev\">Nyhetsbrev</a>",
+          "target": [
+            "a[href$=\"nyhetsbrev\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #757575, background color: #f7f7f7, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 40,
+      "nodes": [
+        {
+          "html": "<a class=\"css-1n1dogv\" href=\"/\"><img src=\"https://assets.krogsveen.no/logo-white.svg\" alt=\"Krogsveen\" height=\"26\"></a>",
+          "target": [
+            ".css-1n1dogv"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"css-1q6waab\" href=\"/kjope\">Kjøpe</a>",
+          "target": [
+            "a[href$=\"kjope\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"css-1q6waab\" href=\"/selge\">Selge</a>",
+          "target": [
+            ".css-1q6waab[href$=\"selge\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"css-1q6waab\" href=\"/utleie\">Leie</a>",
+          "target": [
+            "a[href$=\"utleie\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"css-1q6waab\" href=\"/eiendomsmegler\">Finn megler</a>",
+          "target": [
+            ".css-1q6waab[href$=\"eiendomsmegler\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-13i6elo\" data-dropdown=\"true\">",
+          "target": [
+            ".css-13i6elo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"css-1sn5r31\" id=\"button-header-verdivurdering\" href=\"/verdivurdering\"><span data-text=\"true\" class=\"css-k7eldx\">Verdivurdering</span></a>",
+          "target": [
+            "#button-header-verdivurdering"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-q7zcog\">",
+          "target": [
+            ".css-q7zcog"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-1y6n68c\">",
+          "target": [
+            ".css-1y6n68c:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<video autoplay=\"\" loop=\"\" playsinline=\"\" src=\"https://cdn.sanity.io/files/u9ed36i9/production/79c2353f04fc138219dd0b836c62b32a5c933d24.mp4\" class=\"css-11mzkc3\" style=\"opacity: 0;\"></video>",
+          "target": [
+            "video"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-1y6n68c\">",
+          "target": [
+            ".css-1y6n68c:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-1d9lbrd\"><div class=\"css-v85xa8\">Verktøy</div><h2 class=\"css-7g687g\">Sjekk din boligverdi!</h2></div>",
+          "target": [
+            ".css-1cd3agj > .css-1d9lbrd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-10yw8kz\">Bare tast inn adressen din og få svaret med en gang! Enkelt, raskt og helt&nbsp;gratis.</div>",
+          "target": [
+            ".css-10yw8kz"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input value=\"\" placeholder=\"Finn din adresse\" aria-invalid=\"false\" class=\"css-p2lk5i\">",
+          "target": [
+            "input"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"opacity:1\" class=\"css-coluh3\">Tilleggstjenester</div>",
+          "target": [
+            ".css-1k0pgnc > .css-coluh3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"css-ae8cmr\">Vi fikser flyttingen for&nbsp;deg</h2>",
+          "target": [
+            ".css-1k0pgnc > .css-ae8cmr"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-19xon02\">La oss fikse vask, pakking, lagring og transport. Vi har også håndverkere hvis du har behov for&nbsp;det.</div>",
+          "target": [
+            ".css-19xon02"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Finn ut mer</span>",
+          "target": [
+            ".css-1k0pgnc > .css-3ivo81[href$=\"flytte\"] > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-coluh3\">De beste folkene</div>",
+          "target": [
+            ".css-hp6tpa > .css-coluh3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"css-ae8cmr\">Din egen rådgiver</h2>",
+          "target": [
+            ".css-hp6tpa > .css-ae8cmr"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-k2kjwy\">",
+          "target": [
+            ".css-k2kjwy"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Din egen rådgiver på boligmarkedet</span>",
+          "target": [
+            ".css-g229bq > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>Mer fra magasinet</span>",
+          "target": [
+            ".css-3fi8mx > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-18ikxop\">",
+          "target": [
+            ".css-18ikxop"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-10zcyte\">Til toppen</div>",
+          "target": [
+            ".css-10zcyte"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-k4npoy\">Kjøpe</div>",
+          "target": [
+            ".css-1p2m1z3:nth-child(1) > .css-1pdpc58 > .css-k4npoy"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-1d9lbrd\">",
+          "target": [
+            ".css-1p2m1z3:nth-child(1) > .css-1d9lbrd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-k4npoy\">Selge</div>",
+          "target": [
+            ".css-1p2m1z3:nth-child(2) > .css-1pdpc58 > .css-k4npoy"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-1d9lbrd\">",
+          "target": [
+            ".css-1p2m1z3:nth-child(2) > .css-1d9lbrd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-k4npoy\">Leie</div>",
+          "target": [
+            ".css-1p2m1z3:nth-child(3) > .css-1pdpc58 > .css-k4npoy"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-1d9lbrd\">",
+          "target": [
+            ".css-1p2m1z3:nth-child(3) > .css-1d9lbrd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-k4npoy\">Annet</div>",
+          "target": [
+            ".css-1p2m1z3:nth-child(4) > .css-1pdpc58 > .css-k4npoy"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-1d9lbrd\">",
+          "target": [
+            ".css-1p2m1z3:nth-child(4) > .css-1d9lbrd"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div>© <!-- -->2025<!-- --> Krogsveen</div>",
+          "target": [
+            ".css-132a9f0 > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"css-11945xh\" href=\"/personvern/personopplysninger\">Personvern</a>",
+          "target": [
+            "a[href$=\"personopplysninger\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"css-11945xh\" href=\"/personvern/cookies\">Informasjonskaplser</a>",
+          "target": [
+            ".css-11945xh[href$=\"cookies\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-157jlni\"><a class=\"css-11945xh\" href=\"https://www.facebook.com/Krogsveen/\">Facebook</a><a class=\"css-11945xh\" href=\"/nyhetsbrev\">Nyhetsbrev</a></div>",
+          "target": [
+            ".css-157jlni:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"css-gtgl7x\">Velkommen til Krogsveen</h2>",
+          "target": [
+            ".css-gtgl7x"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-1dq4bnk\">Vi bruker informasjonskapsler for å gi deg en god brukeropplevelse, relevante annonser og statistikk for å bli&nbsp;bedre.</div>",
+          "target": [
+            ".css-1dq4bnk"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"css-rbrte2\"><a href=\"/personvern/cookies\" class=\"css-17o3ttb\"><span>Les mer om hvordan vi bruker<br> informasjonskapsler her.</span></a></div>",
+          "target": [
+            ".css-rbrte2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

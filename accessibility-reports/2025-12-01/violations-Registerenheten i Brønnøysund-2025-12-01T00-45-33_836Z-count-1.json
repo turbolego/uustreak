@@ -1,0 +1,40 @@
+{
+  "project": "Registerenheten i Brønnøysund",
+  "timestamp": "2025-12-01T00:45:33.836Z",
+  "url": "https://www.brreg.no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "scrollable-region-focusable",
+      "impact": "serious",
+      "description": "Ensure elements that have scrollable content are accessible by keyboard",
+      "help": "Scrollable region must have keyboard access",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag211",
+        "wcag213",
+        "TTv5",
+        "TT4.a",
+        "EN-301-549",
+        "EN-9.2.1.1",
+        "EN-9.2.1.3",
+        "RGAAv4",
+        "RGAA-7.3.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"languageHeader\" class=\"search-and-language search-and-language-hide notranslate\">\n        <div id=\"spraakVelger\">\n            <h2>Velg språk</h2>\n            <br><br>\n        </div>\n    </div>",
+          "target": [
+            "#languageHeader"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,417 @@
+{
+  "project": "Norgesnett AS",
+  "timestamp": "2025-12-26T00:27:41.210Z",
+  "url": "https://norgesnett.no/",
+  "total_violations": 8,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-hidden-focus",
+      "impact": "serious",
+      "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+      "help": "ARIA hidden element must not be focusable or contain focusable elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-hidden-focus?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<div class=\"x-slide e2-e56 m2-3c is-virtual is-current-slide\" data-x-slide=\"\" aria-hidden=\"true\" style=\"--x-slide-distance: 0; --x-slide-balance: 0;\">",
+          "target": [
+            ".e2-e56.is-current-slide.is-virtual:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
+        },
+        {
+          "html": "<div class=\"x-slide e2-e66 m2-3c is-virtual\" data-x-slide=\"\" aria-hidden=\"true\" style=\"--x-slide-distance: 1; --x-slide-balance: 1;\">",
+          "target": [
+            ".e2-e66.is-virtual.x-slide:nth-child(2)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
+        },
+        {
+          "html": "<div class=\"x-slide e2-e76 m2-3c is-virtual\" data-x-slide=\"\" aria-hidden=\"true\" style=\"--x-slide-distance: 1; --x-slide-balance: -1;\">",
+          "target": [
+            ".e2-e76.is-virtual.x-slide:nth-child(3)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
+        },
+        {
+          "html": "<div class=\"x-slide e2-e56 m2-3c is-virtual is-current-slide\" data-x-slide=\"\" aria-hidden=\"true\" style=\"--x-slide-distance: 0; --x-slide-balance: 0;\">",
+          "target": [
+            ".e2-e56.is-current-slide.is-virtual:nth-child(7)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
+        },
+        {
+          "html": "<div class=\"x-slide e2-e66 m2-3c is-virtual\" data-x-slide=\"\" aria-hidden=\"true\" style=\"--x-slide-distance: 1; --x-slide-balance: 1;\">",
+          "target": [
+            ".e2-e66.is-virtual.x-slide:nth-child(8)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
+        },
+        {
+          "html": "<div class=\"x-slide e2-e76 m2-3c is-virtual\" data-x-slide=\"\" aria-hidden=\"true\" style=\"--x-slide-distance: 1; --x-slide-balance: -1;\">",
+          "target": [
+            ".e2-e76.is-virtual.x-slide:nth-child(9)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
+        }
+      ]
+    },
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button class=\"ActivatorButton__button--1j7ge sf-activator-button\">",
+          "target": [
+            "#main__simplifaiChatbotActivator--1OJ-o",
+            "button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 12,
+      "nodes": [
+        {
+          "html": "<p class=\"x-text-content-text-primary\">Norgesnett - en del av Glitre Nett AS</p>",
+          "target": [
+            ".e5071-e83 > .x-text-content > .x-text-content-text > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #ffffff, background color: #009388, font size: 13.1pt (17.5px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"x-text x-content e5071-e87 m3wv-g m3wv-h m3wv-m m3wv-n\">Tlf: 21 49 25 06</div>",
+          "target": [
+            ".e5071-e87"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #ffffff, background color: #009388, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"x-text x-content e5071-e90 m3wv-g m3wv-h m3wv-m m3wv-n\">Stabburveien 18, 1617 Fredrikstad</div>",
+          "target": [
+            ".e5071-e90"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #ffffff, background color: #009388, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"x-text x-content e5071-e93 m3wv-g m3wv-h m3wv-m m3wv-n\">Org.nr: 982 974&nbsp;011</div>",
+          "target": [
+            ".e5071-e93"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #ffffff, background color: #009388, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/norgesnett/personvern/\">Personvern</a>",
+          "target": [
+            ".e5071-e98 > a[href$=\"personvern/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #ffffff, background color: #009388, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"/informasjonskapsler/\">Informasjonskapsler</a>",
+          "target": [
+            "a[href$=\"informasjonskapsler/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #ffffff, background color: #009388, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"x-text x-content e5071-e102 m3wv-g m3wv-h m3wv-n m3wv-o m3wv-p\">Norgesnett - en del av Glitre Nett © 2025</div>",
+          "target": [
+            ".e5071-e102"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #ffffff, background color: #009388, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p class=\"x-text-content-text-primary\">Last ned vår app</p>",
+          "target": [
+            ".e5071-e106 > .x-text-content > .x-text-content-text > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #ffffff, background color: #009388, font size: 13.1pt (17.5px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"x-anchor-text-secondary\">Last ned fra</span>",
+          "target": [
+            ".e5071-e108 > .x-anchor-content > .x-anchor-text > .x-anchor-text-secondary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #ffffff, background color: #009388, font size: 7.9pt (10.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"x-anchor-text-primary\">App Store</span>",
+          "target": [
+            ".e5071-e108 > .x-anchor-content > .x-anchor-text > .x-anchor-text-primary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #ffffff, background color: #009388, font size: 13.1pt (17.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"x-anchor-text-secondary\">Tilgjengelig på</span>",
+          "target": [
+            ".e5071-e110 > .x-anchor-content > .x-anchor-text > .x-anchor-text-secondary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #ffffff, background color: #009388, font size: 7.9pt (10.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"x-anchor-text-primary\">Google Play</span>",
+          "target": [
+            ".e5071-e110 > .x-anchor-content > .x-anchor-text > .x-anchor-text-primary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.79 (foreground color: #ffffff, background color: #009388, font size: 13.1pt (17.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe src=\"about:blank\" id=\"main__simplifaiChatbotActivator--1OJ-o\" frameborder=\"0\" class=\"sf-activator-frame\"></iframe>",
+          "target": [
+            "#main__simplifaiChatbotActivator--1OJ-o"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<img data-lazyloaded=\"1\" src=\"/wp-content/uploads/Stromstans.svg\" decoding=\"async\" data-src=\"/wp-content/uploads/Stromstans.svg\" alt=\"Strømbrudd\" data-ll-status=\"loaded\" class=\"entered litespeed-loaded\">",
+          "target": [
+            "img[alt=\"Strømbrudd\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img data-lazyloaded=\"1\" src=\"/wp-content/uploads/Faktura.svg\" decoding=\"async\" data-src=\"/wp-content/uploads/Faktura.svg\" alt=\"Faktura\" data-ll-status=\"loaded\" class=\"entered litespeed-loaded\">",
+          "target": [
+            "img[alt=\"Faktura\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img data-lazyloaded=\"1\" src=\"/wp-content/uploads/Nettleie25524.svg\" decoding=\"async\" data-src=\"/wp-content/uploads/Nettleie25524.svg\" alt=\"Nettleie\" data-ll-status=\"loaded\" class=\"entered litespeed-loaded\">",
+          "target": [
+            "img[alt=\"Nettleie\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img data-lazyloaded=\"1\" src=\"/wp-content/uploads/HANmodul.svg\" decoding=\"async\" data-src=\"/wp-content/uploads/HANmodul.svg\" alt=\"Han-port\" data-ll-status=\"loaded\" class=\"entered litespeed-loaded\">",
+          "target": [
+            "img[alt=\"Han-port\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<a class=\"x-div e2-e87 m2-31 m2-33 m2-34 m2-35 m2-37 m2-38 m2-39\" href=\"#prev\" data-x-effect-provider=\"colors particles effects\" data-x-slide-prev=\"\"><i class=\"x-icon e2-e88 m2-3d\" aria-hidden=\"true\" data-x-icon-o=\"\"></i></a>",
+          "target": [
+            ".e2-e87"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"x-div e2-e89 m2-31 m2-33 m2-34 m2-35 m2-37 m2-38 m2-39\" href=\"#next\" data-x-effect-provider=\"colors particles effects\" data-x-slide-next=\"\"><i class=\"x-icon e2-e90 m2-3d\" aria-hidden=\"true\" data-x-icon-o=\"\"></i></a>",
+          "target": [
+            ".e2-e89"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"x-anchor x-anchor-button has-graphic e5071-e115 m3wv-r m3wv-s m3wv-u m3wv-v m3wv-w m3wv-1b m3wv-1c m3wv-1f m3wv-1g\" tabindex=\"0\" href=\"mailto:norgesnett@norgesnett.no\">",
+          "target": [
+            ".e5071-e115"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"x-anchor x-anchor-button has-graphic e5071-e117 m3wv-r m3wv-s m3wv-u m3wv-v m3wv-w m3wv-1b m3wv-1c m3wv-1f m3wv-1g\" tabindex=\"0\" href=\"https://no.linkedin.com/company/norgesnett-as\" target=\"_blank\" rel=\"noopener noreferrer\">",
+          "target": [
+            ".e5071-e117"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"x-anchor x-anchor-button has-graphic e5071-e119 m3wv-r m3wv-s m3wv-u m3wv-v m3wv-w m3wv-1b m3wv-1c m3wv-1f m3wv-1g\" tabindex=\"0\" href=\"https://www.instagram.com/norgesnett/\" target=\"_blank\" rel=\"noopener noreferrer\">",
+          "target": [
+            ".e5071-e119"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"x-anchor x-anchor-button has-graphic e5071-e121 m3wv-r m3wv-s m3wv-u m3wv-v m3wv-w m3wv-1b m3wv-1c m3wv-1f m3wv-1g\" tabindex=\"0\" href=\"https://www.facebook.com/Norgesnett/\" target=\"_blank\" rel=\"noopener noreferrer\">",
+          "target": [
+            ".e5071-e121"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": "serious",
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/list?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ul class=\"x-row e5071-e84 m3wv-1h m3wv-1k m3wv-1n m3wv-1s m3wv-1t m3wv-22\">",
+          "target": [
+            ".e5071-e84"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: div"
+        }
+      ]
+    },
+    {
+      "id": "listitem",
+      "impact": "serious",
+      "description": "Ensure <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/listitem?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<li class=\"x-col e5071-e85 m3wv-27 m3wv-2a m3wv-2c m3wv-2e m3wv-2g m3wv-2h m3wv-2i\"><div class=\"x-div e5071-e86 m3wv-2y\"><div class=\"x-text x-content e5071-e87 m3wv-g m3wv-h m3wv-m m3wv-n\">Tlf: 21 49 25 06</div></div></li>",
+          "target": [
+            ".e5071-e85"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li class=\"x-col e5071-e88 m3wv-27 m3wv-2a m3wv-2c m3wv-2e m3wv-2g m3wv-2h m3wv-2i\"><div class=\"x-div e5071-e89 m3wv-2y\"><div class=\"x-text x-content e5071-e90 m3wv-g m3wv-h m3wv-m m3wv-n\">Stabburveien 18, 1617 Fredrikstad</div></div></li>",
+          "target": [
+            ".e5071-e88"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li class=\"x-col e5071-e91 m3wv-27 m3wv-2a m3wv-2c m3wv-2e m3wv-2g m3wv-2h m3wv-2i\"><div class=\"x-div e5071-e92 m3wv-2y\"><div class=\"x-text x-content e5071-e93 m3wv-g m3wv-h m3wv-m m3wv-n\">Org.nr: 982 974&nbsp;011</div></div></li>",
+          "target": [
+            ".e5071-e91"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        }
+      ]
+    }
+  ]
+}

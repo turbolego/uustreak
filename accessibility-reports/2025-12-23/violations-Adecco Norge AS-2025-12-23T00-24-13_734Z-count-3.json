@@ -1,0 +1,88 @@
+{
+  "project": "Adecco Norge AS",
+  "timestamp": "2025-12-23T00:24:13.734Z",
+  "url": "https://www.adecco.com/nb-no",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/label-title-only?application=playwright",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input type=\"text\" placeholder=\"Stillingstittel eller søkeord\" class=\"LocationSearchFilter_job-title__yLOb_\" name=\"jobsearch-title\" title=\"Herojobsearch-title\" value=\"\">",
+          "target": [
+            ".LocationSearchFilter_job-title__yLOb_"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them",
+      "help": "Elements marked as presentational should be consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img alt=\"\" title=\"\" aria-label=\"\" sizes=\"100vw\" class=\"SWPImage_swp-nextima...\" loading=\"lazy\" srcset=\"/nb-no/-/jssmedia/pr...\" src=\"/nb-no/-/media/proje...\">",
+          "target": [
+            ".SWPImage_swp-nextimage__raKqc"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img alt=\"\" title=\"\" aria-label=\"\" sizes=\"100vw\" class=\"material-icons-outli...\" loading=\"lazy\" srcset=\"/nb-no/-/jssmedia/pr...\" src=\"/nb-no/-/media/proje...\">",
+          "target": [
+            ".tile-solutions-icon[aria-label=\"\"][alt=\"\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img alt=\"\" title=\"\" aria-label=\"\" sizes=\"100vw\" class=\"SWPImage_islhh-image...\" loading=\"lazy\" srcset=\"/nb-no/-/jssmedia/pr...\" src=\"/nb-no/-/media/proje...\">",
+          "target": [
+            ".SWPImage_islhh-image__Hi_E2"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        }
+      ]
+    },
+    {
+      "id": "tabindex",
+      "impact": "serious",
+      "description": "Ensure tabindex attribute values are not greater than 0",
+      "help": "Elements should not have tabindex greater than zero",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/tabindex?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"SkipLink_skip-btn__YhgD8 skip-to-content skip-link\" href=\"#main\" aria-label=\"skip-to-main\" tabindex=\"1\">Skip to main </a>",
+          "target": [
+            ".SkipLink_skip-btn__YhgD8"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        }
+      ]
+    }
+  ]
+}

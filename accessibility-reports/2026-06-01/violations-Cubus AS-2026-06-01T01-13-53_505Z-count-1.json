@@ -1,0 +1,38 @@
+{
+  "project": "Cubus AS",
+  "timestamp": "2026-06-01T01:13:53.506Z",
+  "url": "https://cubus.com/no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<section class=\"css-1dlfasc-StyledProductListSlider e12nlr8e5\" aria-label=\"Glidebryter med produkter\" tabindex=\"0\">",
+          "target": [
+            "#react_9a54c7ea-48a2-4294-ad47-f63b1b5a614a > .css-1ljaiw5-StyledProductListBlock.ey9rwho0 > .css-1dlfasc-StyledProductListSlider.e12nlr8e5[aria-label=\"Glidebryter med produkter\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<nav class=\"css-smxovs-StyledCssSliderWrapper e14mgep41\">",
+          "target": [
+            ".css-smxovs-StyledCssSliderWrapper"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}

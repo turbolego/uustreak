@@ -1,0 +1,393 @@
+{
+  "project": "Teknisk Ukeblad Media AS",
+  "timestamp": "2026-06-19T03:53:30.856Z",
+  "url": "https://www.tu.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" role=\"switch\" aria-checked=\"false\" data-state=\"unchecked\" value=\"on\" class=\"peer inline-flex h-6...\">",
+          "target": [
+            ".peer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"inline-flex items-ce...\">",
+          "target": [
+            ".gap-4.flex > .bg-transparent.hover\\:bg-site-brand-darker.dark\\:text-white:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"inline-flex items-ce...\">",
+          "target": [
+            ".gap-4.flex > .bg-transparent.hover\\:bg-site-brand-darker.dark\\:text-white:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe id=\"200_268_dfa7banner_html_inpage_0.if\" src=\"//s0.2mdn.net/dfp/360371/439386011/1780645588780/1000x300_ramboell_talent/index.html\" width=\"1000\" height=\"300\" frameborder=\"0\" scrolling=\"no\" allowfullscreen=\"true\" style=\"width: 1000px; height: 300px;\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 28,
+      "nodes": [
+        {
+          "html": "<img src=\"bg.jpg\" class=\"scale100\" style=\"width: 1000px; height: 300px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            ".scale100"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f1_1.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f1_1.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f1_2.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f1_2.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f1_3.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f1_3.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f1_4.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f1_4.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f1_5.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f1_5.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f1_6.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f1_6.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f1_7.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f1_7.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f1_8.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f1_8.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f2_1.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f2_1.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f2_2.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f2_2.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f2_3.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f2_3.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f2_4.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f2_4.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f2_5.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f2_5.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f2_6.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f2_6.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f2_7.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f2_7.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f2_8.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f2_8.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f2_9.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f2_9.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f2_10.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f2_10.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f3_1.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f3_1.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f3_2.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f3_2.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f3_3.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f3_3.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f3_4.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f3_4.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f3_5.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f3_5.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"f3_6.png\" class=\"scale50\" style=\"width: 585px; height: 87px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"f3_6.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"logo.png\" class=\"scale50\" style=\"width: 181px; height: 66px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"logo.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"hashtag.png\" class=\"scale50\" style=\"width: 211px; height: 69px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"hashtag.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"btn.png\" class=\"scale50\" style=\"width: 174.5px; height: 228px;\">",
+          "target": [
+            "#google_ads_iframe_\\/33423651\\/tu_f_toppbanner_0",
+            "#\\32 00_268_dfa7banner_html_inpage_0\\.if",
+            "img[src$=\"btn.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "project": "Barne-, ungdoms-, og familiedirektoratet",
+  "timestamp": "2025-09-18T10:28:12.404Z",
+  "url": "https://www.bufdir.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "tabindex",
+      "impact": "serious",
+      "description": "Ensure tabindex attribute values are not greater than 0",
+      "help": "Elements should not have tabindex greater than zero",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/tabindex?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a tabindex=\"1\" href=\"https://www.bufdir.no/personvernerklaring/personvern-og-cookies-pa-nettstedet/\">Les mer om våre cookies.</a>",
+          "target": [
+            "p:nth-child(2) > a"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<button class=\"bl-button bl-button--small bl-button--primary\" tabindex=\"1\" type=\"button\"><span class=\"bl-button__consumer-content\">Godta cookies</span></button>",
+          "target": [
+            ".bl-m-b-3 > .bl-button--small.bl-button--primary.bl-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<button class=\"bl-button bl-button--small bl-button--primary\" tabindex=\"1\" type=\"button\"><span class=\"bl-button__consumer-content\">Avvis cookies</span></button>",
+          "target": [
+            "div:nth-child(2) > .bl-button--small.bl-button--primary.bl-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        }
+      ]
+    }
+  ]
+}

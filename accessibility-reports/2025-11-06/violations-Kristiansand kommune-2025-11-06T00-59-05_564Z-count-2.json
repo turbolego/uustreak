@@ -1,0 +1,118 @@
+{
+  "project": "Kristiansand kommune",
+  "timestamp": "2025-11-06T00:59:05.564Z",
+  "url": "https://www.kristiansand.kommune.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<button id=\"accept-all-cookies\" class=\"btn accept-all\">Godta alle</button>",
+          "target": [
+            "#accept-all-cookies"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.77 (foreground color: #ffffff, background color: #4caf50, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button id=\"accept-cookies\" class=\"btn accept\">Godta valgte</button>",
+          "target": [
+            "#accept-cookies"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #ffffff, background color: #007bff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button id=\"reject-cookies\" class=\"btn reject\">Avslå</button>",
+          "target": [
+            "#reject-cookies"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.68 (foreground color: #ffffff, background color: #f44336, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"https://www.kristiansand.kommune.no/personvern\" target=\"_blank\" class=\"learn-more\">Les mer</a>",
+          "target": [
+            ".learn-more"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #007bff, background color: #f4f4f4, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"animated bounceOutRight\" id=\"corner_text\" aria-label=\"Hva kan jeg hjelpe deg med?\">Hva kan jeg hjelpe deg med?</span>",
+          "target": [
+            "#corner_text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.19 (foreground color: #fbfcfe, background color: #dfe9f4, font size: 14.3pt (19px), font weight: bold). Expected contrast ratio of 3:1"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<h3>Vi bruker informasjonskapsler</h3>",
+          "target": [
+            ".cookie-content > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p>Vi bruker nødvendige informasjonskapsler for at nettstedet skal fungere optimalt. Med ditt samtykke bruker vi også informasjonskapsler for analyse og for å forbedre brukeropplevelsen.</p>",
+          "target": [
+            ".cookie-content > p:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p><strong>Du bestemmer selv hvilke informasjonskapsler du ønsker å akseptere:</strong></p>",
+          "target": [
+            ".cookie-content > p:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"cookie-options\">",
+          "target": [
+            ".cookie-options"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://www.kristiansand.kommune.no/personvern\" target=\"_blank\" class=\"learn-more\">Les mer</a>",
+          "target": [
+            ".learn-more"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

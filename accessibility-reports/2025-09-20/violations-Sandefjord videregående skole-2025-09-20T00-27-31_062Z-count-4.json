@@ -1,0 +1,134 @@
+{
+  "project": "Sandefjord videregående skole",
+  "timestamp": "2025-09-20T00:27:31.063Z",
+  "url": "https://www.vestfoldfylke.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"text-decoration--underline text-decoration--hover--child--none\">\n                        70 000 innbyggere får spørsmål om helse og trivsel\n                    </h3>",
+          "target": [
+            ".toppsak-list-item-text > div:nth-child(1) > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img class=\"postImg\" src=\"https://scontent-iad3-1.cdninstagram.com/v/t39.30808-6/548972194_566501583218704_7629928030492905005_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=RncH445e8CgQ7kNvwGJeb-V&amp;_nc_oc=Adl3CAt9z9jLJZNUjr4IIUOKlVXmUzftOUjFxx1z7JbxxvATzQF8wJOp_-KkeuKXP8U&amp;_nc_zt=23&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;_nc_gid=Ueogbq_zrkFwKYvjegc3tw&amp;oh=00_AfYFUvs-ikYkqEuCLME3hdclLOLbnkk5io6VSuZkTCAiWw&amp;oe=68D3A09F\">",
+          "target": [
+            "iframe[title=\"powr social feed\"]",
+            "div[data-type=\"Instagram\"] > div > .postPicture.none > .postImgWrapper.landscapeCrop > .postImg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"postImg\" src=\"https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/548972194_566501583218704_7629928030492905005_n.jpg?stp=cp1_dst-jpegr_s960x960_tt6&amp;_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=RncH445e8CgQ7kNvwGJeb-V&amp;_nc_oc=Adl3CAt9z9jLJZNUjr4IIUOKlVXmUzftOUjFxx1z7JbxxvATzQF8wJOp_-KkeuKXP8U&amp;_nc_zt=23&amp;se=-1&amp;_nc_ht=scontent-iad3-1.xx&amp;edm=AKIiGfEEAAAA&amp;_nc_gid=5JzPbiaCRs81pFasMrsQYA&amp;oh=00_AfbLhMFuq3XfysgVQmi0gBFVveIFDO94v239WgOH4SUMSg&amp;oe=68D3A09F\">",
+          "target": [
+            "iframe[title=\"powr social feed\"]",
+            "div[data-approved-index=\"1\"] > div > .postPicture.none > .postImgWrapper.landscapeCrop > .postImg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"postImg\" src=\"https://external-iad3-2.xx.fbcdn.net/emg1/v/t13/7136730824083797939?url=https%3A%2F%2Fres.cloudinary.com%2Fssp%2Fimage%2Ffetch%2Fw_1200%2Cc_fill%2Fhttps%3A%2F%2Fwww.vestfoldfylke.no%2F%2Flink%2F235eda52867845a48d738a9dc0cd6e14.aspx&amp;fb_obo=1&amp;utld=cloudinary.com&amp;edm=AKIiGfEEAAAA&amp;_nc_gid=5JzPbiaCRs81pFasMrsQYA&amp;_nc_oc=Adn7W5BeqJHWzk2ZiWNxnbN1PBDhzTQY-rAris-WZlOB7kA3s9pCQ-7CI-4jbRrb4OU&amp;ccb=13-1&amp;stp=dst-emg0_fr_q75_tt6&amp;ur=50234c&amp;_nc_sid=64c8fc&amp;oh=06_Q3-3AZC-_GlJcwc4t1OIAfW0AlEJz6AUuq47__CuGJlhEyJh&amp;oe=68CFBC5B\">",
+          "target": [
+            "iframe[title=\"powr social feed\"]",
+            "div[data-approved-index=\"2\"] > div > .postPicture.none > .postImgWrapper.landscapeCrop > .postImg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div class=\"cc-header-container\">\n      <p class=\"cc-title\">Vi bruker informasjonskapsler (cookies)</p>\n      <div class=\"language-dropdown\"><select><option value=\"no\">Norsk</option><option value=\"en\">English</option></select></div>\n    </div>",
+          "target": [
+            ".cc-header-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"cc-text\">Våre nettsider benytter informasjonskapsler (cookies) til sikkerhet, innbyggerfunksjonalitet, statistikk og analyse. Les om hvilke cookies vi bruker og hvordan vi administrerer de i erklæringen vår om personvern.</p>",
+          "target": [
+            ".cc-text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "select-name",
+      "impact": "critical",
+      "description": "Ensure select element has an accessible name",
+      "help": "Select element must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/select-name?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<select><option value=\"no\">Norsk</option><option value=\"en\">English</option></select>",
+          "target": [
+            "select"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ]
+}

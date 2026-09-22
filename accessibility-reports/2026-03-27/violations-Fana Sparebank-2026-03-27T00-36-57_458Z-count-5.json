@@ -1,0 +1,219 @@
+{
+  "project": "Fana Sparebank",
+  "timestamp": "2026-03-27T00:36:57.458Z",
+  "url": "https://www.fanasparebank.no/#",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<img src=\"/siteassets/illustrasjoner/illustrasjon-forside.svg\" style=\"width: 100%; height: 100%; background-color: transparent; object-fit: contain;\">",
+          "target": [
+            ".hero__image > div > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img id=\"image\" data-left=\"7.000000000000001\" data-top=\"-7.000000000000001\" data-scale=\"180\" src=\"https://cdn-assets-dynamic.frontify.com/8000612/eyJhc3NldF9pZCI6MTc4Nywic2NvcGUiOiJhc3NldDp2aWV3In0:fana-sparebank:V6SpKCBTVy2UV0YnbUkHSURCr1BhB9ed-ywVG5NmQhI\">",
+          "target": [
+            [
+              "shape-image",
+              "#image"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/siteassets/illustrasjoner/illustrasjon-spare.svg\" style=\"width: 100%; height: 100%; background-color: transparent; object-fit: contain;\">",
+          "target": [
+            ".card__image.beige-theme > div > img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img id=\"image\" class=\"scale-[1]\" data-left=\"0\" data-top=\"0\" data-scale=\"100\" src=\"https://cdn-assets-dynamic.frontify.com/8000612/eyJhc3NldF9pZCI6MjY4Nywic2NvcGUiOiJhc3NldDp2aWV3In0:fana-sparebank:nrmDX44F4TZeAYhaKOl1RxMfPX-0rG_Cwgd9BqaM1BU\">",
+          "target": [
+            [
+              "scale-position-image[sc=\"1\"]",
+              "#image"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img id=\"image\" class=\"scale-[1.1]\" data-left=\"0\" data-top=\"0\" data-scale=\"110.00000000000001\" src=\"https://cdn-assets-dynamic.frontify.com/8000612/eyJhc3NldF9pZCI6MjEyMywic2NvcGUiOiJhc3NldDp2aWV3In0:fana-sparebank:7SiZmHqBScp_5wwceH4Wx4xv1d3H2yh7czUQ0Hjrq-Y\">",
+          "target": [
+            [
+              "scale-position-image[sc=\"1.1\"]",
+              "#image"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img id=\"image\" class=\"scale-[1]\" data-left=\"0\" data-top=\"0\" data-scale=\"100\" src=\"https://cdn-assets-dynamic.frontify.com/8000612/eyJhc3NldF9pZCI6MjE0Niwic2NvcGUiOiJhc3NldDp2aWV3In0:fana-sparebank:h9W5kKOpFxdYQKmfJOPy3n225zxJ3Yg6REB_CtfTm94\">",
+          "target": [
+            [
+              "scale-position-image[sc=\"1.0\"]",
+              "#image"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/label-title-only?application=playwright",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<input class=\"coi__checkbox\" tabindex=\"0\" data-index=\"0\" name=\"cookie_cat_functional\" id=\"cookie_cat_functional\" type=\"checkbox\" title=\"Funksjonelle\" onclick=\"CookieInformation.changeCategoryConsentDecision('cookie_cat_functional')\">",
+          "target": [
+            "#cookie_cat_functional"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        },
+        {
+          "html": "<input class=\"coi__checkbox\" tabindex=\"0\" data-index=\"0\" name=\"cookie_cat_statistic\" id=\"cookie_cat_statistic\" type=\"checkbox\" title=\"Statistiske\" onclick=\"CookieInformation.changeCategoryConsentDecision('cookie_cat_statistic')\">",
+          "target": [
+            "#cookie_cat_statistic"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        },
+        {
+          "html": "<input class=\"coi__checkbox\" tabindex=\"0\" data-index=\"0\" name=\"cookie_cat_marketing\" id=\"cookie_cat_marketing\" type=\"checkbox\" title=\"Markedsføring\" onclick=\"CookieInformation.changeCategoryConsentDecision('cookie_cat_marketing')\">",
+          "target": [
+            "#cookie_cat_marketing"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiOverlay\" role=\"banner\" aria-hidden=\"false\" style=\"display: flex;\">",
+          "target": [
+            "#coiOverlay"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a class=\"skip-link\" href=\"#body-main-content\">Hopp til hovedinnhold</a>",
+          "target": [
+            ".skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"question-header\"><h3 class=\"survey-question\">Hvor fornøyd er du med hjemmesiden vår?</h3></div>",
+          "target": [
+            [
+              ".PostHogSurvey-019d1ac3-348c-0000-c7e4-af9588574047",
+              ".question-header"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"rating-text\"><div>Veldig misfornøyd</div><div>Strålende fornøyd</div></div>",
+          "target": [
+            [
+              ".PostHogSurvey-019d1ac3-348c-0000-c7e4-af9588574047",
+              ".rating-text"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"bottom-section\">",
+          "target": [
+            [
+              ".PostHogSurvey-019d1ac3-348c-0000-c7e4-af9588574047",
+              ".bottom-section"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

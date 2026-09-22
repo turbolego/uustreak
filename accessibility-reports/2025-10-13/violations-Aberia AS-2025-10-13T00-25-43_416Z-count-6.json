@@ -1,0 +1,205 @@
+{
+  "project": "Aberia AS",
+  "timestamp": "2025-10-13T00:25:43.417Z",
+  "url": "https://www.aberia.no/#",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<p>Aberia Ung er et landsdekkende, ideelt aksjeselskap som tilbyr tiltak i institusjon.</p>",
+          "target": [
+            "#col-92180720 > .dark.col-inner > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.15 (foreground color: #f1f1f1, background color: #529389, font size: 12.6pt (16.8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<p>Vi har drevet omsorgs- og avlastningstjenester siden 1981 og tilbyr våre tjenester til brukere i alle aldersgrupper.</p>",
+          "target": [
+            "#col-2096644032 > .dark.col-inner > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.08 (foreground color: #f1f1f1, background color: #1094c1, font size: 12.6pt (16.8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "landmark-main-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the main landmark is at top level",
+      "help": "Main landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-main-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"content\" role=\"main\" class=\"content-area\">",
+          "target": [
+            "#content"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-main",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one main landmark",
+      "help": "Document should not have more than one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-no-duplicate-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<main id=\"main\" class=\"\">",
+          "target": [
+            "#main"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<main id=\"main\" class=\"\">",
+          "target": [
+            "#main"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 7,
+      "nodes": [
+        {
+          "html": "<div class=\"cli-bar-message\">Denne nettsiden benytter informasjonskapsler (cookies).</div>",
+          "target": [
+            ".cli-bar-message"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span id=\"chat-header-text\">Aberia Chatbot</span>",
+          "target": [
+            "#chat-header-text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"info-bar\" id=\"info-bar\">\n                    Finn ut hvordan jeg fungerer                </div>",
+          "target": [
+            "#info-bar"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"info-overlay-content\" id=\"info-overlay-content\">",
+          "target": [
+            "#info-overlay-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"chat-messages\" id=\"chat-messages\">",
+          "target": [
+            "#chat-messages"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input type=\"text\" placeholder=\"Skriv en melding...\" id=\"chat-input\" aria-label=\"Chat input\">",
+          "target": [
+            "#chat-input"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"chat-footer\">\n                 Developed by Fredrikstad Webdesign            </div>",
+          "target": [
+            ".chat-footer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "scrollable-region-focusable",
+      "impact": "serious",
+      "description": "Ensure elements that have scrollable content are accessible by keyboard",
+      "help": "Scrollable region must have keyboard access",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/scrollable-region-focusable?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag211",
+        "wcag213",
+        "TTv5",
+        "TT4.a",
+        "EN-301-549",
+        "EN-9.2.1.1",
+        "EN-9.2.1.3"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div class=\"slider slider-type-fade slider-nav-circle slider-nav-large slider-nav-light slider-style-normal\" data-flickity-options=\"{\n            &quot;cellAlign&quot;: &quot;center&quot;,\n            &quot;imagesLoaded&quot;: true,\n            &quot;lazyLoad&quot;: 1,\n            &quot;freeScroll&quot;: false,\n            &quot;wrapAround&quot;: true,\n            &quot;autoPlay&quot;: 6000,\n            &quot;pauseAutoPlayOnHover&quot; : false,\n            &quot;prevNextButtons&quot;: false,\n            &quot;contain&quot; : true,\n            &quot;adaptiveHeight&quot; : true,\n            &quot;dragThreshold&quot; : 10,\n            &quot;percentPosition&quot;: true,\n            &quot;pageDots&quot;: false,\n            &quot;rightToLeft&quot;: false,\n            &quot;draggable&quot;: true,\n            &quot;selectedAttraction&quot;: 0.1,\n            &quot;parallax&quot; : 0,\n            &quot;friction&quot;: 0.6        }\">",
+          "target": [
+            ".slider"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+        },
+        {
+          "html": "<div class=\"info-overlay-content\" id=\"info-overlay-content\">",
+          "target": [
+            "#info-overlay-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+        }
+      ]
+    }
+  ]
+}

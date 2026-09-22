@@ -1,0 +1,85 @@
+{
+  "project": "Sparebank 1 DA",
+  "timestamp": "2025-10-05T00:58:33.068Z",
+  "url": "https://www.sparebank1.no/nb/bank/privat.html",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-dialog-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA dialog and alertdialog node has an accessible name",
+      "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-dialog-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div role=\"dialog\" class=\"optin\" aria-live=\"polite\" tabindex=\"0\" aria-describedby=\"modalDescription\">",
+          "target": [
+            ".optin"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/nested-interactive?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<li class=\"customer-action__list-item\" id=\"contact-tab1\" data-menu-section=\"contact-call-template\" aria-controls=\"panel1\" role=\"tab\">",
+          "target": [
+            "#contact-tab1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<li class=\"customer-action__list-item\" id=\"contact-tab2\" data-menu-section=\"contact-appointment-template\" aria-controls=\"panel2\" role=\"tab\">",
+          "target": [
+            "#contact-tab2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<li class=\"customer-action__list-item\" id=\"contact-tab3\" data-menu-section=\"contact-message-template\" aria-controls=\"panel3\" role=\"tab\">",
+          "target": [
+            "#contact-tab3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<li class=\"customer-action__list-item\" id=\"contact-tab4\" data-menu-section=\"find-us-template\" aria-controls=\"panel4\" role=\"tab\">",
+          "target": [
+            "#contact-tab4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "html": "<li class=\"customer-action__list-item\" id=\"contact-tab5\" data-menu-section=\"contact-chat-template\" aria-controls=\"panel5\" role=\"tab\">",
+          "target": [
+            "#contact-tab5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        }
+      ]
+    }
+  ]
+}

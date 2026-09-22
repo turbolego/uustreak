@@ -1,0 +1,72 @@
+{
+  "project": "Hammerfest kommune",
+  "timestamp": "2025-09-18T10:10:52.794Z",
+  "url": "https://hammerfest.kommune.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img alt=\"Hammerfest kommune\" src=\"/handlers/bv.ashx/i84340fca-472c-43c3-ae76-e20b3612bce2/hk-logo-web-m-minsteavstand-ny.png\">",
+          "target": [
+            "img[alt=\"Hammerfest kommune\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\" style=\"--bc-primary-color-500: #003863; --bc-primary-color-400: #194B72; --bc-primary-color-300: #476F8E; --bc-primary-color-200: #7E9AAF; --bc-primary-color-100: #B1C2CF; --innsyn-primary-theme-color: #003863; --innsyn-primary-contrast-color: #FFFFFF; --innsyn-primary-neutral-color: #dae4f0; --innsyn-secondary-theme-color: #e5f4f3; --innsyn-secondary-contrast-color: #141423; --innsyn-secondary-neutral-color: #E9E1DC;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input name=\"ctl00$ctl00$ctl00$innhold$ctl11$WebpartId_97$WebpartId_97$txtSearch\" type=\"text\" id=\"ctl00_ctl00_ctl00_innhold_ctl11_WebpartId_97_WebpartId_97_txtSearch\" class=\"js-liten-trigger-search\" aria-label=\"Søketekst\" placeholder=\"Hva leter du etter?\" data-handled=\"true\">",
+          "target": [
+            "#ctl00_ctl00_ctl00_innhold_ctl11_WebpartId_97_WebpartId_97_txtSearch"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

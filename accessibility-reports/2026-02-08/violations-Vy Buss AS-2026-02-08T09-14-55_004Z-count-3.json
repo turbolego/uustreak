@@ -1,0 +1,210 @@
+{
+  "project": "Vy Buss AS",
+  "timestamp": "2026-02-08T09:14:55.004Z",
+  "url": "https://www.vybuss.no/#!/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "description": "Ensure an element's role supports its ARIA attributes",
+      "help": "Elements must only use supported ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<div class=\"expand-block__header\" aria-expanded=\"false\" data-toggle=\"expand\" data-target=\"#2d77b4760b6d40bcaf4795bea9b39ae9\">Billettkjøp <span class=\"icon-plus\"></span></div>",
+          "target": [
+            ".expand-block__container:nth-child(1) > .expand-block__header[data-toggle=\"expand\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"expand-block__header\" aria-expanded=\"false\" data-toggle=\"expand\" data-target=\"#23af6de5015546a390b5df5823141a77\">Reiseinformasjon <span class=\"icon-plus\"></span></div>",
+          "target": [
+            ".expand-block__container:nth-child(2) > .expand-block__header[data-toggle=\"expand\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"expand-block__header\" aria-expanded=\"false\" data-toggle=\"expand\" data-target=\"#7c70ec5d4fe7429a9004157ce93648b5\">Endring og avbestilling <span class=\"icon-plus\"></span></div>",
+          "target": [
+            ".expand-block__container:nth-child(3) > .expand-block__header[data-toggle=\"expand\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "html": "<div class=\"expand-block__header\" aria-expanded=\"false\" data-toggle=\"expand\" data-target=\"#5692c2ca7137499abe166247d4af4a37\">Kundeservice <span class=\"icon-plus\"></span></div>",
+          "target": [
+            ".expand-block__container:nth-child(4) > .expand-block__header[data-toggle=\"expand\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        }
+      ]
+    },
+    {
+      "id": "meta-viewport",
+      "impact": "moderate",
+      "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+      "help": "Zooming and scaling must not be disabled",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/meta-viewport?application=playwright",
+      "tags": [
+        "cat.sensory-and-visual-cues",
+        "wcag2aa",
+        "wcag144",
+        "EN-301-549",
+        "EN-9.1.4.4",
+        "ACT",
+        "RGAAv4",
+        "RGAA-10.4.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0\">",
+          "target": [
+            "meta[name=\"viewport\"]:nth-child(23)"
+          ],
+          "failureSummary": "Fix any of the following:\n  user-scalable on <meta> tag disables zooming on mobile devices"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 15,
+      "nodes": [
+        {
+          "html": "<div class=\"slide__item slide__item--headline slick-slide slick-current slick-active\" data-slick-index=\"0\" aria-hidden=\"false\" tabindex=\"0\" style=\"width: 352px;\">",
+          "target": [
+            ".slick-current"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"slide__item slide__item--headline slick-slide slick-active\" data-slick-index=\"1\" aria-hidden=\"false\" tabindex=\"0\" style=\"width: 352px;\">",
+          "target": [
+            "div[data-slick-index=\"1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"slide__item slide__item--headline slick-slide slick-active\" data-slick-index=\"2\" aria-hidden=\"false\" tabindex=\"0\" style=\"width: 352px;\">",
+          "target": [
+            "div[data-slick-index=\"2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"block__header\">\n            <h2>Nyttig informasjon</h2>\n\n        </div>",
+          "target": [
+            ".block__wrapper:nth-child(3) > .block__header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"expand-block__header\" aria-expanded=\"false\" data-toggle=\"expand\" data-target=\"#2d77b4760b6d40bcaf4795bea9b39ae9\">Billettkjøp <span class=\"icon-plus\"></span></div>",
+          "target": [
+            ".expand-block__container:nth-child(1) > .expand-block__header[data-toggle=\"expand\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"expand-block__header\" aria-expanded=\"false\" data-toggle=\"expand\" data-target=\"#23af6de5015546a390b5df5823141a77\">Reiseinformasjon <span class=\"icon-plus\"></span></div>",
+          "target": [
+            ".expand-block__container:nth-child(2) > .expand-block__header[data-toggle=\"expand\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"expand-block__header\" aria-expanded=\"false\" data-toggle=\"expand\" data-target=\"#7c70ec5d4fe7429a9004157ce93648b5\">Endring og avbestilling <span class=\"icon-plus\"></span></div>",
+          "target": [
+            ".expand-block__container:nth-child(3) > .expand-block__header[data-toggle=\"expand\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"expand-block__header\" aria-expanded=\"false\" data-toggle=\"expand\" data-target=\"#5692c2ca7137499abe166247d4af4a37\">Kundeservice <span class=\"icon-plus\"></span></div>",
+          "target": [
+            ".expand-block__container:nth-child(4) > .expand-block__header[data-toggle=\"expand\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"block__wrapper js-group-block\">",
+          "target": [
+            ".js-group-block.block__wrapper:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"block__wrapper js-group-block\">",
+          "target": [
+            ".js-group-block.block__wrapper:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"captcha__human\" style=\"padding: 0;\" data-dd-captcha-human=\"\">",
+          "target": [
+            "#ddChallengeBody1770542087685",
+            ".captcha__human"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"sliderText\"><p class=\"no-margin\">Skyv til høyre for å sikre tilgangen din</p></div>",
+          "target": [
+            "#ddChallengeBody1770542087685",
+            ".sliderText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"captcha__offline\">Ingen Internett-tilgang</div>",
+          "target": [
+            "#ddChallengeBody1770542087685",
+            "#captcha__offline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"captcha__robot__warning\" data-dd-captcha-robot-warning=\"\">",
+          "target": [
+            "#ddChallengeBody1770542087685",
+            ".captcha__robot__warning"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"captcha__robot__contact_support\" data-dd-captcha-robot-contact-support=\"\">",
+          "target": [
+            "#ddChallengeBody1770542087685",
+            ".captcha__robot__contact_support"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

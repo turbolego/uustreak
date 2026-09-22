@@ -1,0 +1,149 @@
+{
+  "project": "BKK AS",
+  "timestamp": "2025-11-07T00:31:48.014Z",
+  "url": "https://www.bkk.no/#",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "label",
+      "impact": "critical",
+      "description": "Ensure every form element has a label",
+      "help": "Form elements must have labels",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/label?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.1.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<input type=\"checkbox\" class=\"coi-consent-banner__switch-checkbox\" aria-labelledby=\"switch-Funksjonelle\" name=\"cookie_cat_functional\" id=\"switch-cookie_cat_functional-slider\" onclick=\"CookieInformation.changeCategoryConsentDecision('cookie_cat_functional');\">",
+          "target": [
+            "#switch-cookie_cat_functional-slider"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<input type=\"checkbox\" class=\"coi-consent-banner__switch-checkbox\" aria-labelledby=\"switch-Statistiske\" name=\"cookie_cat_statistic\" id=\"switch-cookie_cat_statistic-slider\" onclick=\"CookieInformation.changeCategoryConsentDecision('cookie_cat_statistic');\">",
+          "target": [
+            "#switch-cookie_cat_statistic-slider"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<input type=\"checkbox\" class=\"coi-consent-banner__switch-checkbox\" aria-labelledby=\"switch-Markedsføring\" name=\"cookie_cat_marketing\" id=\"switch-cookie_cat_marketing-slider\" onclick=\"CookieInformation.changeCategoryConsentDecision('cookie_cat_marketing');\">",
+          "target": [
+            "#switch-cookie_cat_marketing-slider"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-banner?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"coiConsentBanner\" role=\"banner\" aria-describedby=\"coiBannerHeadline\" aria-labelledby=\"cookie_summary\" class=\"coi-consent-banner BannerBottom BannerLeft\" lang=\"nb\" dir=\"ltr\" aria-hidden=\"false\" style=\"display: block;\">",
+          "target": [
+            "#coiConsentBanner"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them",
+      "help": "Elements marked as presentational should be consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<img aria-hidden=\"false\" alt=\"\" loading=\"lazy\" width=\"800\" height=\"800\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.sanity.i...\" style=\"color: transparent; ...\">",
+          "target": [
+            ".rc_link-card.rc_link-card--nyhet[text=\"\"]:nth-child(3) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden=\"false\"][height=\"800\"][width=\"800\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img aria-hidden=\"false\" alt=\"\" loading=\"lazy\" width=\"800\" height=\"800\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.sanity.i...\" style=\"color: transparent; ...\">",
+          "target": [
+            "a[href$=\"na-kommer-studentene\"] > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden=\"false\"][height=\"800\"][width=\"800\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img aria-hidden=\"false\" alt=\"\" loading=\"lazy\" width=\"800\" height=\"800\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.sanity.i...\" style=\"color: transparent; ...\">",
+          "target": [
+            ".rc_link-card.rc_link-card--nyhet[text=\"\"]:nth-child(5) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden=\"false\"][height=\"800\"][width=\"800\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img aria-hidden=\"false\" alt=\"\" loading=\"lazy\" width=\"800\" height=\"800\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.sanity.i...\" style=\"color: transparent; ...\">",
+          "target": [
+            ".rc_link-card.rc_link-card--nyhet[text=\"\"]:nth-child(7) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden=\"false\"][height=\"800\"][width=\"800\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        },
+        {
+          "html": "<img aria-hidden=\"false\" alt=\"\" loading=\"lazy\" width=\"800\" height=\"800\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.sanity.i...\" style=\"color: transparent; ...\">",
+          "target": [
+            ".rc_link-card.rc_link-card--nyhet[text=\"\"]:nth-child(9) > .rc_link-card__content > .rc_link-card__image.rc_link-card__image--photo > img[aria-hidden=\"false\"][height=\"800\"][width=\"800\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element does not have global ARIA attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"skip-to-content\" class=\"css-1372ars\"><div><a href=\"#main\" class=\"css-1d4ws8o\">Hopp til innhold</a></div></div>",
+          "target": [
+            "#skip-to-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

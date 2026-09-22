@@ -1,0 +1,280 @@
+{
+  "project": "Østlendingen AS",
+  "timestamp": "2025-09-18T09:45:56.363Z",
+  "url": "https://www.ostlendingen.no/",
+  "total_violations": 8,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "description": "Ensure every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-command-name?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"cbb\" class=\"cbb\" tabindex=\"0\" role=\"button\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ostlendingen\\.no\\/takeover_0",
+            "#cbb"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button class=\"play\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n  <path fill=\"currentColor\" d=\"M6 19h4V5H6v14zm8-14v14h4V5h-4z\"></path>\n</svg></button>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ostlendingen\\.no\\/takeover_0",
+            "iframe",
+            "#cmf3pr8efahs5qs1weozrhz15",
+            ".play"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"audio\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ostlendingen\\.no\\/takeover_0",
+            "iframe",
+            "#cmf3pr8efahs5qs1weozrhz15",
+            ".audio"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<iframe frameborder=\"0\" style=\"width: 100vw; height: 100vh;\" src=\"https://video.seenthis.se/delivery/tag/cmf3pr8efahs5qs1weozrhz15/index.html?clickTag=https://adclick.g.doubleclick.net/pcs/click%253Fxai%253DAKAOjsvndkadXddrejllu8nwjHyAVZlQ1rlkPUJ7LiG6c6FO1IwQEd_PutEdXfSCbMpQNjzRDsZ4pZdgB50eJ1wHO6yR0A_umrb-eJeqiIe0hcQlyz01sSuQFgBJluZofzR9LKK7vx48Abmc2OWMSEGDP7IV0xAsf3KRSABann_nyohjyg6y4AJT5T4d7RtYo9tYSZZWr_pZnKeHW_GWKzB43X8cpCiLF68ZCtwGPh4aiBfcBUaF44OsTIMwWm1szDtf_PakKq1kj7-Z-QPl3Av84WOpE-4bkOMMjfblaJc5hVl0qQXnXkGZ1HAduI4ggkhqhVe_S3pgPxjUuZ6R01613mFMZaha92XhvPoRsOQ0oclTwhCT8m06j0FzRBr0G-0z83RfVa92TjbZ72kipv5hXVnB_T5H4BB95zzkgFNfGGycxA-2a8LdYEw%2526sai%253DAMfl-YSHVfFz3Je8Q1MIZChLSvsz134YPcxb5IwJ-oDOvczFS2Zb41MVaT8n3fMO3eix7XbmFlteRNjvjTz3PQVA6xVzOKqQCmt0G4JqLaZCBafgtKY8JUdI_TtUPtlZSy6gjgxO7pNtJLd76_QEVr3Aj0_Q50xHNJT41NBbMLZ1D1st9qL7MqUkIfJ3w_J0bA-9i7FqcH4qKZEulFz0H4qmTmGVMGJDMOFLudWctxqImxwc6LbMPF0ftlgBZG1e-iWnnyoxvqmi5gVsUnwbnjG4qNknqeJ-POtl7TKuAepglaOtGAzimm9TvvY%2526sig%253DCg0ArKJSzJ1e7o-yI5GLEAE%2526fbs_aeid%253D%25255Bgw_fbsaeid%25255D%2526urlfix%253D1%2526adurl%253Dhttps%3A%2F%2Ftrack.adform.net%2FC%2F%3Fbn%3D81555468%3Bgdpr%3D%24%7Bgdpr%7D%3Bgdpr_consent%3D%24%7Bgdpr_consent_50%7D\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ostlendingen\\.no\\/takeover_0",
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe name=\"cmf3pr8efahs5qs1weozrhz15\" id=\"cmf3pr8efahs5qs1weozrhz15\" srcdoc=\"&lt;!DOCTYPE html&gt;\n&lt;html lang=&quot;en&quot;&gt;\n  &lt;head&gt;\n    &lt;meta charset=&quot;UTF-8&quot;&gt;\n    &lt;meta name=&quot;ad.size&quot; content=&quot;width=1920,height=1080&quot;&gt;\n    &lt;link rel=&quot;icon&quot; href=&quot;data:;base64,iVBORw0KGgo=&quot;&gt;\n    &lt;title&gt;Ad by SeenThis&lt;/title&gt;\n    &lt;style&gt;body,html{height:100%;overflow:hidden;width:100%}body{cursor:pointer;margin:0;padding:0;background-color:#000;background-image:url(https://video.seenthis.se/delivery/tag/cmf3pr8efahs5qs1weozrhz15/poster.jpg);background-position:center;background-repeat:no-repeat;background-size:cover}.layer-video{position:absolute;width:100%;height:100%;left:0;top:0}.layer-code{position:absolute;width:100%;height:100%;left:0;top:0}body{background-image:none}&lt;/style&gt;\n    &lt;script src=&quot;https://video.seenthis.se/v2/player/112/player.js&quot;&gt;&lt;/script&gt;\n    &lt;script&gt;try{window.seenthis_sid=window.parent.seenthis_sid}catch(i){}&lt;/script&gt;\n  &lt;/head&gt;\n  &lt;body&gt;\n    &lt;div class=&quot;layer-video&quot;&gt;&lt;/div&gt;\n&lt;script&gt;const player=new SeenthisPlayer(&quot;.layer-video&quot;,&quot;v3:HsjsKUjTZbM1i9fLRg5Ms&quot;,&quot;11ok1ehjs22pnypvrb33chkaxki42mczsrvy52myoj87h61imlawm73vkm&quot;,{bigPlayButton:!0,disableImp:!0,loop:!0,loopCount:2,muteButton:!0,autoplay:!1});window.seenthisPlayer=player&lt;/script&gt;\n    &lt;script&gt;var clickTag=&quot;https://adclick.g.doubleclick.net/pcs/click%3Fxai%3DAKAOjsvndkadXddrejllu8nwjHyAVZlQ1rlkPUJ7LiG6c6FO1IwQEd_PutEdXfSCbMpQNjzRDsZ4pZdgB50eJ1wHO6yR0A_umrb-eJeqiIe0hcQlyz01sSuQFgBJluZofzR9LKK7vx48Abmc2OWMSEGDP7IV0xAsf3KRSABann_nyohjyg6y4AJT5T4d7RtYo9tYSZZWr_pZnKeHW_GWKzB43X8cpCiLF68ZCtwGPh4aiBfcBUaF44OsTIMwWm1szDtf_PakKq1kj7-Z-QPl3Av84WOpE-4bkOMMjfblaJc5hVl0qQXnXkGZ1HAduI4ggkhqhVe_S3pgPxjUuZ6R01613mFMZaha92XhvPoRsOQ0oclTwhCT8m06j0FzRBr0G-0z83RfVa92TjbZ72kipv5hXVnB_T5H4BB95zzkgFNfGGycxA-2a8LdYEw%26sai%3DAMfl-YSHVfFz3Je8Q1MIZChLSvsz134YPcxb5IwJ-oDOvczFS2Zb41MVaT8n3fMO3eix7XbmFlteRNjvjTz3PQVA6xVzOKqQCmt0G4JqLaZCBafgtKY8JUdI_TtUPtlZSy6gjgxO7pNtJLd76_QEVr3Aj0_Q50xHNJT41NBbMLZ1D1st9qL7MqUkIfJ3w_J0bA-9i7FqcH4qKZEulFz0H4qmTmGVMGJDMOFLudWctxqImxwc6LbMPF0ftlgBZG1e-iWnnyoxvqmi5gVsUnwbnjG4qNknqeJ-POtl7TKuAepglaOtGAzimm9TvvY%26sig%3DCg0ArKJSzJ1e7o-yI5GLEAE%26fbs_aeid%3D%255Bgw_fbsaeid%255D%26urlfix%3D1%26adurl%3Dhttps://track.adform.net/C/?bn=81555468;gdpr=${gdpr};gdpr_consent=${gdpr_consent_50}&quot;;function getAdIframe(t){let e=window.parent,i=window.parent;const n=`position:absolute !important;width:100vw !important;height:${t} !important;inset:0 !important;`,a=[];try{for(;e!=window.top.window&amp;&amp;e.document;)i=e,a.push(e),e=e.parent}catch(t){}const o=window.document.createElement(&quot;style&quot;);o.innerHTML=`adfm-ad, #sf_align, .adform-adbox, .adform-adbox img {width: 100% !important; height: 100% !important; object-fit: cover; position: absolute;} iframe[data-contents*='adform']{width: 100vw !important;height: 100vh !important;}\\n    [target='_blank'] img[src*='adnxs']{object-fit: cover !important;width: 100% !important;height: 100% !important;position: fixed;}\\n    .GoogleActiveViewClass, .GoogleCreativeContainerClass, .GoogleActiveViewElement {transform: translate(calc(-50% + 50vw), 0); width: 100vw !important; height: ${adIframeHeight} !important; display: block !important;} .GoogleActiveViewClass img, .GoogleActiveViewElement img {width: 100vw !important; height: 100vh !important; object-fit: cover !important;} .GoogleActiveViewClass iframe {width: 100vw !important; height: 100vh !important;}.dcmads {width: 100% !important; height: 100% !important;}\\n    iframe[src*='net/sadbundle/']{width: 100vw !important;height: 100vh !important;}iframe[id*='google_ads_iframe']{width: 100vw !important;height: 100vh !important;}`;for(let e=0;e&lt;a.length-1;e++)try{a[e].frameElement&amp;&amp;(a[e].frameElement.style.cssText=n);var r=window.document.createElement(&quot;style&quot;);r.innerHTML=o.innerHTML,a[e].document.head.appendChild(r)}catch(t){}i.document.head.appendChild(o)}document.body.addEventListener(&quot;click&quot;,(function(t){2!==t.button&amp;&amp;(clickTag?window.open(clickTag,&quot;_blank&quot;):window.parent.postMessage(&quot;CREATIVE_CLICK&quot;,&quot;*&quot;))})),function(t){t&amp;&amp;(window.parent.addEventListener(&quot;visibilityChange&quot;,e=&gt;{t.ended||(e.detail.visible?t.play():t.pause())}),window.parent.isVisible&amp;&amp;t.play())}(window.seenthisPlayer),window.parent.dispatchEvent(new Event(&quot;resize&quot;));const frameHeight=window.frameElement.style.height,adIframeHeight=frameHeight.endsWith(&quot;px&quot;)?frameHeight:&quot;100vh&quot;;getAdIframe(adIframeHeight)&lt;/script&gt;\n      &lt;img src=&quot;https://track.adform.net/adfserve/?bn=81555468;1x1inv=1;srctype=3;gdpr=${gdpr};gdpr_consent=${gdpr_consent_50};ord=[timestamp]&quot; border=&quot;0&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;\n  &lt;/body&gt;\n&lt;/html&gt;\" style=\"width: 100vw; height: 100vh; margin: 0px; display: block; border: none; overflow: hidden;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ostlendingen\\.no\\/takeover_0",
+            "iframe",
+            "#cmf3pr8efahs5qs1weozrhz15"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img src=\"https://track.adform.net/adfserve/?bn=81555468;1x1inv=1;srctype=3;gdpr=${gdpr};gdpr_consent=${gdpr_consent_50};ord=[timestamp]\" border=\"0\" width=\"1\" height=\"1\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ostlendingen\\.no\\/takeover_0",
+            "iframe",
+            "#cmf3pr8efahs5qs1weozrhz15",
+            "img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-62dd2cd3-1ced-4ecd-8612-c366c71bb9f8\">",
+          "target": [
+            "brick-carousel-v2[data-slides=\"12\"] > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsvndkadXddrejllu8nwjHyAVZlQ1rlkPUJ7LiG6c6FO1IwQEd_PutEdXfSCbMpQNjzRDsZ4pZdgB50eJ1wHO6yR0A_umrb-eJeqiIe0hcQlyz01sSuQFgBJluZofzR9LKK7vx48Abmc2OWMSEGDP7IV0xAsf3KRSABann_nyohjyg6y4AJT5T4d7RtYo9tYSZZWr_pZnKeHW_GWKzB43X8cpCiLF68ZCtwGPh4aiBfcBUaF44OsTIMwWm1szDtf_PakKq1kj7-Z-QPl3Av84WOpE-4bkOMMjfblaJc5hVl0qQXnXkGZ1HAduI4ggkhqhVe_S3pgPxjUuZ6R01613mFMZaha92XhvPoRsOQ0oclTwhCT8m06j0FzRBr0G-0z83RfVa92TjbZ72kipv5hXVnB_T5H4BB95zzkgFNfGGycxA-2a8LdYEw&amp;sai=AMfl-YSHVfFz3Je8Q1MIZChLSvsz134YPcxb5IwJ-oDOvczFS2Zb41MVaT8n3fMO3eix7XbmFlteRNjvjTz3PQVA6xVzOKqQCmt0G4JqLaZCBafgtKY8JUdI_TtUPtlZSy6gjgxO7pNtJLd76_QEVr3Aj0_Q50xHNJT41NBbMLZ1D1st9qL7MqUkIfJ3w_J0bA-9i7FqcH4qKZEulFz0H4qmTmGVMGJDMOFLudWctxqImxwc6LbMPF0ftlgBZG1e-iWnnyoxvqmi5gVsUnwbnjG4qNknqeJ-POtl7TKuAepglaOtGAzimm9TvvY&amp;sig=Cg0ArKJSzJ1e7o-yI5GLEAE&amp;fbs_aeid=%5Bgw_fbsaeid%5D&amp;urlfix=1&amp;adurl=\" target=\"_blank\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ostlendingen\\.no\\/takeover_0",
+            ".GoogleActiveViewElement > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.ostlendingen.no/gfx/small.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<video playsinline=\"\" disableremoteplayback=\"\" muted=\"\" data-inscreen=\"inscreen\"></video>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ostlendingen\\.no\\/takeover_0",
+            "iframe",
+            "#cmf3pr8efahs5qs1weozrhz15",
+            "video"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img src=\"https://track.adform.net/adfserve/?bn=81555468;1x1inv=1;srctype=3;gdpr=${gdpr};gdpr_consent=${gdpr_consent_50};ord=[timestamp]\" border=\"0\" width=\"1\" height=\"1\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.ostlendingen\\.no\\/takeover_0",
+            "iframe",
+            "#cmf3pr8efahs5qs1weozrhz15",
+            "img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"takeover-close\">Lukk annonsen</div>",
+          "target": [
+            ".takeover-close"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<amedia-username orderpage=\"//www.ostlendingen.no/tilbud\" publication=\"www.ostlendingen.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layout=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_toppbanner am-bazaar-ad--labeled\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.ostlendingen.no/toppbanner_1\" pageview-id=\"5755eefa-d377-4ba3-b7a9-17aab1a494fd\" render-count=\"1\" render-time=\"1758188749012\">",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "project": "SAS - Scandinavian Airlines System",
+  "timestamp": "2026-05-10T03:28:02.873Z",
+  "url": "https://www.sas.no/",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"_127wsmi3 _127wsmi6 _127wsmi0 _1tckfd41\">Last ned appen</h3>",
+          "target": [
+            "._1tckfd41"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.47 (foreground color: #1a1a1a, background color: #003df5, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"x5scfyf x5scfyi\">",
+          "target": [
+            "div[data-promo-manualname=\"campaign-banner-mosaic\"][data-promo-position=\"2\"][data-promo-order=\"1\"] > .x5scfyd.x5scfya > .x5scfyn > .x5scfy1 > .x5scfyi.x5scfyf"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    }
+  ]
+}

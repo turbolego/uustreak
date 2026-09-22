@@ -1,0 +1,1059 @@
+{
+  "project": "De Bergenske AS",
+  "timestamp": "2025-10-09T18:32:22.896Z",
+  "url": "https://www.debergenske.no/",
+  "total_violations": 10,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" width=\"164\" height=\"50\" data-nuxt-img=\"\" sizes=\"(max-width: 1024px) 100px, 100px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_svg,q_100,w_100,h_30/db-logo_wedetw 100w, https://res.cloudinary.com/bergenske/image/upload/f_svg,q_100,w_200,h_60/db-logo_wedetw 200w\" role=\"navigation\" aria-label=\"Home\" style=\"height:50px;\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_svg,q_100,w_200,h_60/db-logo_wedetw\">",
+          "target": [
+            "img[width=\"164\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role navigation is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"splide__slide max-h-full is-active is-visible\" id=\"splide01-slide01\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"1 of 3\" style=\"margin-right: 1.5rem; width: calc(100% + 0rem);\">",
+          "target": [
+            "#splide01-slide01"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"splide__slide max-h-full is-active is-visible\" id=\"splide02-slide01\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"1 of 3\" style=\"margin-right: 1.5rem; width: calc(100% + 0rem);\">",
+          "target": [
+            "#splide02-slide01"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"splide__slide max-h-full is-active is-visible\" id=\"splide03-slide01\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"1 of 4\" style=\"margin-right: 1.5rem; width: calc(100% + 0rem);\">",
+          "target": [
+            "#splide03-slide01"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"splide__slide max-h-full is-active is-visible\" id=\"splide04-slide01\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"1 of 6\" style=\"margin-right: 1.5rem; width: calc(100% + 0rem);\">",
+          "target": [
+            "#splide04-slide01"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"splide__slide max-h-full is-active is-visible\" id=\"splide05-slide01\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"1 of 5\" style=\"margin-right: 1.5rem; width: calc(100% + 0rem);\">",
+          "target": [
+            "#splide05-slide01"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+        },
+        {
+          "html": "<li class=\"splide__slide max-h-full is-active is-visible\" id=\"splide06-slide01\" role=\"tabpanel\" aria-roledescription=\"slide\" aria-label=\"1 of 8\" style=\"margin-right: 1.5rem; width: calc(100% + 0rem);\">",
+          "target": [
+            "#splide06-slide01"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" width=\"150\" height=\"48\" alt=\"Pure\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 768px) 300px, (max-width: 1024px) 300px, 300px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_svg,q_100,w_300,h_96/db-logo_wedetw 300w, https://res.cloudinary.com/bergenske/image/upload/f_svg,q_100,w_600,h_192/db-logo_wedetw 600w\" role=\"navigation\" aria-label=\"Main\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_svg,q_100,w_600,h_192/db-logo_wedetw\">",
+          "target": [
+            "img[width=\"150\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role navigation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button class=\"ppms_cm_close_popup\" id=\"ppms_cm_close-popup\" data-disable-select=\"true\">",
+          "target": [
+            "#ppms_cm_close-popup"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<button class=\"ppms_cm_agree-to-all\" id=\"ppms_cm_agree-to-all\">Accept all</button>",
+          "target": [
+            "#ppms_cm_agree-to-all"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.27 (foreground color: #ffffff, background color: #2775f2, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button class=\"ppms_cm_reject-all\" id=\"ppms_cm_reject-all\">Decline all</button>",
+          "target": [
+            "#ppms_cm_reject-all"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.27 (foreground color: #ffffff, background color: #2775f2, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button class=\"ppms_cm_content_expander_show_btn\" id=\"ppms_cm_content_expander_show_btn\" data-content-expander=\"true\">Consent details</button>",
+          "target": [
+            "#ppms_cm_content_expander_show_btn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #107ef1, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a class=\"ppms_cm_link\" id=\"popup-link\" href=\"\">Privacy policy</a>",
+          "target": [
+            "#popup-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #107ef1, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"ppms_cm_footer__powered_by\" data-disable-select=\"true\" id=\"ppms_cm_footer__powered_by\">Powered by</span>",
+          "target": [
+            "#ppms_cm_footer__powered_by"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.72 (foreground color: #999999, background color: #fafafa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"text-3xl uppercase font-bell break-words !text-white prose-a:text-white\" data-v-79da7b67=\"\"></h3>",
+          "target": [
+            "#splide02-slide01 > .collection-item--fullWidth[fluidwidth=\"true\"][theme=\"default\"] > .prose-a\\:text-white.\\!bg-Theme\\/Dark.lg\\:p-7 > .prose-a\\:text-white.\\!text-white"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 29,
+      "nodes": [
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" data-nuxt-img=\"\" srcset=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100 1x, /_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100 2x\" class=\"w-12\" src=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100\">",
+          "target": [
+            ".splide__arrow--prev.left-5[aria-controls=\"splide01-track\"] > .w-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" data-nuxt-img=\"\" srcset=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100 1x, /_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100 2x\" class=\"w-12\" src=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100\">",
+          "target": [
+            ".splide__arrow--next.right-5[aria-controls=\"splide01-track\"] > .w-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-norway-bergen-restaurant-whiskey-food-and-wine-mat-og-drikke-10 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-norway-bergen-restaurant-whiskey-food-and-wine-mat-og-drikke-10 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-norway-bergen-restaurant-whiskey-food-and-wine-mat-og-drikke-10 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-norway-bergen-restaurant-whiskey-food-and-wine-mat-og-drikke-10 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-norway-bergen-restaurant-whiskey-food-and-wine-mat-og-drikke-10 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-norway-bergen-restaurant-whiskey-food-and-wine-mat-og-drikke-10 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-norway-bergen-restaurant-whiskey-food-and-wine-mat-og-drikke-10 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-norway-bergen-restaurant-whiskey-food-and-wine-mat-og-drikke-10 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-norway-bergen-restaurant-whiskey-food-and-wine-mat-og-drikke-10 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-norway-bergen-restaurant-whiskey-food-and-wine-mat-og-drikke-10\">",
+          "target": [
+            ".lg\\:col-span-2.lg\\:row-span-2[theme=\"\"] > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-2 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-2 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-2 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-2 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-2 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-2 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-2 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-2 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-2 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-2\">",
+          "target": [
+            ".lg\\:col-span-1 > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Vi-er-Bergen/Christmas-Jul/Julebord/fresquito-restaurant-norway-selskapslokaler-mat-og-drikke-event-venues-and-banquet-halls-food-and-wine 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Vi-er-Bergen/Christmas-Jul/Julebord/fresquito-restaurant-norway-selskapslokaler-mat-og-drikke-event-venues-and-banquet-halls-food-and-wine 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Vi-er-Bergen/Christmas-Jul/Julebord/fresquito-restaurant-norway-selskapslokaler-mat-og-drikke-event-venues-and-banquet-halls-food-and-wine 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Vi-er-Bergen/Christmas-Jul/Julebord/fresquito-restaurant-norway-selskapslokaler-mat-og-drikke-event-venues-and-banquet-halls-food-and-wine 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Vi-er-Bergen/Christmas-Jul/Julebord/fresquito-restaurant-norway-selskapslokaler-mat-og-drikke-event-venues-and-banquet-halls-food-and-wine 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Vi-er-Bergen/Christmas-Jul/Julebord/fresquito-restaurant-norway-selskapslokaler-mat-og-drikke-event-venues-and-banquet-halls-food-and-wine 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Vi-er-Bergen/Christmas-Jul/Julebord/fresquito-restaurant-norway-selskapslokaler-mat-og-drikke-event-venues-and-banquet-halls-food-and-wine 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Vi-er-Bergen/Christmas-Jul/Julebord/fresquito-restaurant-norway-selskapslokaler-mat-og-drikke-event-venues-and-banquet-halls-food-and-wine 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Vi-er-Bergen/Christmas-Jul/Julebord/fresquito-restaurant-norway-selskapslokaler-mat-og-drikke-event-venues-and-banquet-halls-food-and-wine 3072w\" class=\"media flex-1 object-cover stretch sm:max-w-full\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Vi-er-Bergen/Christmas-Jul/Julebord/fresquito-restaurant-norway-selskapslokaler-mat-og-drikke-event-venues-and-banquet-halls-food-and-wine\">",
+          "target": [
+            "#splide02-slide01 > .collection-item--fullWidth[fluidwidth=\"true\"][theme=\"default\"] > .sm\\:max-w-full.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" data-nuxt-img=\"\" srcset=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100 1x, /_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100 2x\" class=\"w-12\" src=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100\">",
+          "target": [
+            ".splide__arrow--prev.left-5[aria-controls=\"splide02-track\"] > .w-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" data-nuxt-img=\"\" srcset=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100 1x, /_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100 2x\" class=\"w-12\" src=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100\">",
+          "target": [
+            ".splide__arrow--next.right-5[aria-controls=\"splide02-track\"] > .w-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" data-nuxt-img=\"\" srcset=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100 1x, /_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100 2x\" class=\"w-12\" src=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100\">",
+          "target": [
+            ".splide__arrow--prev.left-5[aria-controls=\"splide03-track\"] > .w-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" data-nuxt-img=\"\" srcset=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100 1x, /_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100 2x\" class=\"w-12\" src=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100\">",
+          "target": [
+            ".splide__arrow--next.right-5[aria-controls=\"splide03-track\"] > .w-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Hotels/Bergen-Bors-Hotel/History-and-Design/norway-bergen-accommodation-hotell-overnatting-places-to-eat-near-me-frescohallen-restaurant-food-and-wine-spisesteder-mat-og-drikke-9 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Hotels/Bergen-Bors-Hotel/History-and-Design/norway-bergen-accommodation-hotell-overnatting-places-to-eat-near-me-frescohallen-restaurant-food-and-wine-spisesteder-mat-og-drikke-9 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Hotels/Bergen-Bors-Hotel/History-and-Design/norway-bergen-accommodation-hotell-overnatting-places-to-eat-near-me-frescohallen-restaurant-food-and-wine-spisesteder-mat-og-drikke-9 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Hotels/Bergen-Bors-Hotel/History-and-Design/norway-bergen-accommodation-hotell-overnatting-places-to-eat-near-me-frescohallen-restaurant-food-and-wine-spisesteder-mat-og-drikke-9 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Hotels/Bergen-Bors-Hotel/History-and-Design/norway-bergen-accommodation-hotell-overnatting-places-to-eat-near-me-frescohallen-restaurant-food-and-wine-spisesteder-mat-og-drikke-9 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Hotels/Bergen-Bors-Hotel/History-and-Design/norway-bergen-accommodation-hotell-overnatting-places-to-eat-near-me-frescohallen-restaurant-food-and-wine-spisesteder-mat-og-drikke-9 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Hotels/Bergen-Bors-Hotel/History-and-Design/norway-bergen-accommodation-hotell-overnatting-places-to-eat-near-me-frescohallen-restaurant-food-and-wine-spisesteder-mat-og-drikke-9 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Hotels/Bergen-Bors-Hotel/History-and-Design/norway-bergen-accommodation-hotell-overnatting-places-to-eat-near-me-frescohallen-restaurant-food-and-wine-spisesteder-mat-og-drikke-9 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Hotels/Bergen-Bors-Hotel/History-and-Design/norway-bergen-accommodation-hotell-overnatting-places-to-eat-near-me-frescohallen-restaurant-food-and-wine-spisesteder-mat-og-drikke-9 3072w\" class=\"media flex-1 object-cover stretch sm:max-w-full\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Hotels/Bergen-Bors-Hotel/History-and-Design/norway-bergen-accommodation-hotell-overnatting-places-to-eat-near-me-frescohallen-restaurant-food-and-wine-spisesteder-mat-og-drikke-9\">",
+          "target": [
+            "#splide04-slide01 > .collection-item--fullWidth[fluidwidth=\"true\"][theme=\"default\"] > .sm\\:max-w-full.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" data-nuxt-img=\"\" srcset=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100 1x, /_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100 2x\" class=\"w-12\" src=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100\">",
+          "target": [
+            ".splide__arrow--prev.left-5[aria-controls=\"splide04-track\"] > .w-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" data-nuxt-img=\"\" srcset=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100 1x, /_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100 2x\" class=\"w-12\" src=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100\">",
+          "target": [
+            ".splide__arrow--next.right-5[aria-controls=\"splide04-track\"] > .w-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Hotels/Bergen-Bors-Hotel/Meeting-and-Conference/henriksen-meeting-room-norway-bergen-mote-konferanse-lokaler-workshop 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Hotels/Bergen-Bors-Hotel/Meeting-and-Conference/henriksen-meeting-room-norway-bergen-mote-konferanse-lokaler-workshop 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Hotels/Bergen-Bors-Hotel/Meeting-and-Conference/henriksen-meeting-room-norway-bergen-mote-konferanse-lokaler-workshop 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Hotels/Bergen-Bors-Hotel/Meeting-and-Conference/henriksen-meeting-room-norway-bergen-mote-konferanse-lokaler-workshop 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Hotels/Bergen-Bors-Hotel/Meeting-and-Conference/henriksen-meeting-room-norway-bergen-mote-konferanse-lokaler-workshop 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Hotels/Bergen-Bors-Hotel/Meeting-and-Conference/henriksen-meeting-room-norway-bergen-mote-konferanse-lokaler-workshop 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Hotels/Bergen-Bors-Hotel/Meeting-and-Conference/henriksen-meeting-room-norway-bergen-mote-konferanse-lokaler-workshop 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Hotels/Bergen-Bors-Hotel/Meeting-and-Conference/henriksen-meeting-room-norway-bergen-mote-konferanse-lokaler-workshop 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Hotels/Bergen-Bors-Hotel/Meeting-and-Conference/henriksen-meeting-room-norway-bergen-mote-konferanse-lokaler-workshop 3072w\" class=\"media flex-1 object-cover stretch sm:max-w-full\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Hotels/Bergen-Bors-Hotel/Meeting-and-Conference/henriksen-meeting-room-norway-bergen-mote-konferanse-lokaler-workshop\">",
+          "target": [
+            "#splide05-slide01 > .collection-item--fullWidth[fluidwidth=\"true\"][theme=\"default\"] > .sm\\:max-w-full.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" data-nuxt-img=\"\" srcset=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100 1x, /_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100 2x\" class=\"w-12\" src=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100\">",
+          "target": [
+            ".splide__arrow--prev.left-5[aria-controls=\"splide05-track\"] > .w-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" data-nuxt-img=\"\" srcset=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100 1x, /_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100 2x\" class=\"w-12\" src=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100\">",
+          "target": [
+            ".splide__arrow--next.right-5[aria-controls=\"splide05-track\"] > .w-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter\">",
+          "target": [
+            ".grid-of-6 > .lg\\:col-span-2.collection-item[theme=\"\"]:nth-child(1) > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28\">",
+          "target": [
+            ".grid-of-6 > .lg\\:col-start-3.lg\\:row-span-2[theme=\"\"] > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella\">",
+          "target": [
+            ".grid-of-6 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(3) > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5\">",
+          "target": [
+            ".grid-of-6 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(4) > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6\">",
+          "target": [
+            ".grid-of-6 > .lg\\:row-start-3.collection-item[theme=\"\"]:nth-child(5) > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2\">",
+          "target": [
+            ".lg\\:row-start-3.lg\\:col-span-2[theme=\"\"] > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood\">",
+          "target": [
+            ".grid-of-5 > .lg\\:col-span-2.collection-item[theme=\"\"] > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19\">",
+          "target": [
+            ".grid-of-5 > .lg\\:col-start-3.lg\\:row-span-2[theme=\"\"] > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai\">",
+          "target": [
+            ".grid-of-5 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(3) > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15\">",
+          "target": [
+            ".grid-of-5 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(4) > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64\">",
+          "target": [
+            ".lg\\:col-span-3 > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/engen-restaurant-bergen-sentrum-familie-steakhouse-kjott-middag-beste-biff-adam-bjerck-julebord-biff-entrecote-wagyu-grillmat-21 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/engen-restaurant-bergen-sentrum-familie-steakhouse-kjott-middag-beste-biff-adam-bjerck-julebord-biff-entrecote-wagyu-grillmat-21 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/engen-restaurant-bergen-sentrum-familie-steakhouse-kjott-middag-beste-biff-adam-bjerck-julebord-biff-entrecote-wagyu-grillmat-21 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/engen-restaurant-bergen-sentrum-familie-steakhouse-kjott-middag-beste-biff-adam-bjerck-julebord-biff-entrecote-wagyu-grillmat-21 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/engen-restaurant-bergen-sentrum-familie-steakhouse-kjott-middag-beste-biff-adam-bjerck-julebord-biff-entrecote-wagyu-grillmat-21 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/engen-restaurant-bergen-sentrum-familie-steakhouse-kjott-middag-beste-biff-adam-bjerck-julebord-biff-entrecote-wagyu-grillmat-21 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/engen-restaurant-bergen-sentrum-familie-steakhouse-kjott-middag-beste-biff-adam-bjerck-julebord-biff-entrecote-wagyu-grillmat-21 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/engen-restaurant-bergen-sentrum-familie-steakhouse-kjott-middag-beste-biff-adam-bjerck-julebord-biff-entrecote-wagyu-grillmat-21 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/engen-restaurant-bergen-sentrum-familie-steakhouse-kjott-middag-beste-biff-adam-bjerck-julebord-biff-entrecote-wagyu-grillmat-21 3072w\" class=\"media flex-1 object-cover stretch sm:max-w-full\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/engen-restaurant-bergen-sentrum-familie-steakhouse-kjott-middag-beste-biff-adam-bjerck-julebord-biff-entrecote-wagyu-grillmat-21\">",
+          "target": [
+            "#splide06-slide01 > .collection-item--fullWidth[fluidwidth=\"true\"][theme=\"default\"] > .sm\\:max-w-full.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" data-nuxt-img=\"\" srcset=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100 1x, /_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100 2x\" class=\"w-12\" src=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-prev.svg&amp;w=1536&amp;q=100\">",
+          "target": [
+            ".splide__arrow--prev.left-5[aria-controls=\"splide06-track\"] > .w-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" data-nuxt-img=\"\" srcset=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100 1x, /_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100 2x\" class=\"w-12\" src=\"/_vercel/image?url=%2Fassets%2Ficons%2Fcarousel-next.svg&amp;w=1536&amp;q=100\">",
+          "target": [
+            ".splide__arrow--next.right-5[aria-controls=\"splide06-track\"] > .w-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"no\" data-capo=\"\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<nav class=\"overflow-hidden relative flex maxLg:py-5 maxLg:flex maxLg:flex-col container lg:overflow-visible flex-row justify-between items-center lg:h-12 lg:static\">",
+          "target": [
+            ".maxLg\\:py-5"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<div class=\"splide splide--slide splide--ltr splide--draggable is-active is-overflow is-initialized\" id=\"splide01\" role=\"region\" aria-roledescription=\"carousel\" style=\"max-width: 100%;\">",
+          "target": [
+            "#splide01"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 14,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.debergenske.no/bergen/hotell-overnatting/bergen-bors\" rel=\"noopener noreferrer\" class=\"main-link inline-flex shrink-0 text-dark text-4xl border border-dark hover:text-brand hover:border-brand focus:text-brand focus:border-brand\" data-v-79da7b67=\"\">",
+          "target": [
+            "#splide04-slide01 > .collection-item--fullWidth[fluidwidth=\"true\"][theme=\"default\"] > .lg\\:p-7.mx-6.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\\:border-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.debergenske.no/bergen/hotell-overnatting/bergen-bors/mote-og-konferanse\" rel=\"noopener noreferrer\" class=\"main-link inline-flex shrink-0 text-dark text-4xl border border-dark hover:text-brand hover:border-brand focus:text-brand focus:border-brand\" data-v-79da7b67=\"\">",
+          "target": [
+            "#splide05-slide01 > .collection-item--fullWidth[fluidwidth=\"true\"][theme=\"default\"] > .lg\\:p-7.mx-6.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\\:border-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.debergenske.no/bergen/restauranter/frescohallen\" rel=\"noopener noreferrer\" class=\"main-link inline-flex shrink-0 text-dark text-4xl border border-dark hover:text-brand hover:border-brand focus:text-brand focus:border-brand\" data-v-79da7b67=\"\">",
+          "target": [
+            ".grid-of-6 > .lg\\:col-span-2.collection-item[theme=\"\"]:nth-child(1) > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\\:border-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.debergenske.no/bergen/restauranter/bare\" rel=\"noopener noreferrer\" class=\"main-link inline-flex shrink-0 text-dark text-4xl border border-dark hover:text-brand hover:border-brand focus:text-brand focus:border-brand\" data-v-79da7b67=\"\">",
+          "target": [
+            ".grid-of-6 > .lg\\:col-start-3.lg\\:row-span-2[theme=\"\"] > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\\:border-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.debergenske.no/bergen/barer/amundsen\" rel=\"noopener noreferrer\" class=\"main-link inline-flex shrink-0 text-dark text-4xl border border-dark hover:text-brand hover:border-brand focus:text-brand focus:border-brand\" data-v-79da7b67=\"\">",
+          "target": [
+            ".grid-of-6 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(3) > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\\:border-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.debergenske.no/bergen/restauranter/wesselstuen\" rel=\"noopener noreferrer\" class=\"main-link inline-flex shrink-0 text-dark text-4xl border border-dark hover:text-brand hover:border-brand focus:text-brand focus:border-brand\" data-v-79da7b67=\"\">",
+          "target": [
+            ".grid-of-6 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(4) > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\\:border-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.debergenske.no/bergen/restauranter/omakase-by-sergey-pak\" rel=\"noopener noreferrer\" class=\"main-link inline-flex shrink-0 text-dark text-4xl border border-dark hover:text-brand hover:border-brand focus:text-brand focus:border-brand\" data-v-79da7b67=\"\">",
+          "target": [
+            ".grid-of-6 > .lg\\:row-start-3.collection-item[theme=\"\"]:nth-child(5) > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\\:border-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.debergenske.no/bergen/restauranter/fresquito\" rel=\"noopener noreferrer\" class=\"main-link inline-flex shrink-0 text-dark text-4xl border border-dark hover:text-brand hover:border-brand focus:text-brand focus:border-brand\" data-v-79da7b67=\"\">",
+          "target": [
+            ".lg\\:row-start-3.lg\\:col-span-2[theme=\"\"] > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\\:border-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.debergenske.no/bergen/restauranter/izakaya-skostredet\" rel=\"noopener noreferrer\" class=\"main-link inline-flex shrink-0 text-dark text-4xl border border-dark hover:text-brand hover:border-brand focus:text-brand focus:border-brand\" data-v-79da7b67=\"\">",
+          "target": [
+            ".grid-of-5 > .lg\\:col-span-2.collection-item[theme=\"\"] > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\\:border-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.debergenske.no/bergen/restauranter/engen-steakhouse\" rel=\"noopener noreferrer\" class=\"main-link inline-flex shrink-0 text-dark text-4xl border border-dark hover:text-brand hover:border-brand focus:text-brand focus:border-brand\" data-v-79da7b67=\"\">",
+          "target": [
+            ".grid-of-5 > .lg\\:col-start-3.lg\\:row-span-2[theme=\"\"] > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\\:border-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.debergenske.no/bergen/restauranter/haven\" rel=\"noopener noreferrer\" class=\"main-link inline-flex shrink-0 text-dark text-4xl border border-dark hover:text-brand hover:border-brand focus:text-brand focus:border-brand\" data-v-79da7b67=\"\">",
+          "target": [
+            ".grid-of-5 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(3) > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\\:border-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.debergenske.no/bergen/restauranter/matbaren-pa-zander-k\" rel=\"noopener noreferrer\" class=\"main-link inline-flex shrink-0 text-dark text-4xl border border-dark hover:text-brand hover:border-brand focus:text-brand focus:border-brand\" data-v-79da7b67=\"\">",
+          "target": [
+            ".grid-of-5 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(4) > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\\:border-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.debergenske.no/bergen/restauranter/bjerck\" rel=\"noopener noreferrer\" class=\"main-link inline-flex shrink-0 text-dark text-4xl border border-dark hover:text-brand hover:border-brand focus:text-brand focus:border-brand\" data-v-79da7b67=\"\">",
+          "target": [
+            ".lg\\:col-span-3 > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\\:border-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.debergenske.no/bergen/restauranter/engen-steakhouse/adam-bjerck-om-kunsten-a-lage-bergens-beste-grillede-biff-og-fisk\" rel=\"noopener noreferrer\" class=\"main-link inline-flex shrink-0 text-dark text-4xl border border-dark hover:text-brand hover:border-brand focus:text-brand focus:border-brand\" data-v-79da7b67=\"\">",
+          "target": [
+            "#splide06-slide01 > .collection-item--fullWidth[fluidwidth=\"true\"][theme=\"default\"] > .lg\\:p-7.mx-6.bg-secondary > .items-end.gap-x-6.flex > .shrink-0.text-4xl.hover\\:border-brand"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 62,
+      "nodes": [
+        {
+          "html": "<div class=\"absolute top-0 right-0 bottom-0 left-0 overflow-hidden\">",
+          "target": [
+            ".right-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"flex flex-col gap-1 lg:gap-9 max-w-full text-Theme/Light\"><!----><h1 lang=\"no\" class=\"font-bell font-medium uppercase leading-[1.15]  text-[clamp(theme(fontSize.4xl),6vw,theme(fontSize.8xl))]\">En familie av hotell, restauranter &amp; barer i Bergen</h1><!----></div>",
+          "target": [
+            ".gap-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"custom-select md:col-span-3\" data-v-0de6cb4c=\"\">",
+          "target": [
+            ".custom-select.md\\:col-span-3[data-v-0de6cb4c=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input data-test=\"dp-input\" class=\"dp__pointer dp__input_readonly dp__input dp__input_icon_pad dp__input_reg\" inputmode=\"none\" placeholder=\"Velg dato\" value=\"\" autocomplete=\"off\" aria-label=\"Datepicker input\">",
+          "target": [
+            ".dp__pointer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"https://book.debergenske.no/MultiProperty/MultiPropertyV1/Start?multiPropertyId=052816d8-b60b-41cb-8379-453771dea6f9&amp;year=&amp;month=&amp;day=&amp;stayLength=0&amp;roomConfig=a2&amp;currency=NOK&amp;culture=nb\" target=\"_blank\" class=\"btn-theme-default submitButton md:col-span-2\" data-v-0de6cb4c=\"\">",
+          "target": [
+            ".btn-theme-default"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"!bg-Theme/Dark !text-white DARK\" data-v-b25c747f=\"\">",
+          "target": [
+            ".DARK.\\!bg-Theme\\/Dark:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"heading pb-12 text-[clamp(theme(fontSize.4xl),4vw,theme(fontSize.6xl))] leading-[1.15] font-bell uppercase\" data-v-5bb271bd=\"\">Tilbud og hotellpakker</h2>",
+          "target": [
+            ".DARK.\\!bg-Theme\\/Dark:nth-child(3) > .py-15[data-v-5bb271bd=\"\"] > .container[data-v-5bb271bd=\"\"] > .heading.text-\\[clamp\\(theme\\(fontSize\\.4xl\\)\\,4vw\\,theme\\(fontSize\\.6xl\\)\\)\\].leading-\\[1\\.15\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"!bg-Theme/Dark !text-white DARK\" data-v-5bb271bd=\"\">",
+          "target": [
+            ".DARK.\\!bg-Theme\\/Dark:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"flex flex-col col-span-4 lg:col-span-4 xl:col-span-3\" data-v-5bb271bd=\"\"><h2 class=\"!text-white heading text-[clamp(theme(fontSize.4xl),4vw,theme(fontSize.6xl))] leading-[1.15] font-bell uppercase\" data-v-5bb271bd=\"\">Feir nyttårsaften hos Grand Terminus Hotel!</h2><!----><!----></div>",
+          "target": [
+            ".DARK.\\!bg-Theme\\/Dark:nth-child(5) > .py-15[data-v-5bb271bd=\"\"] > .container-fluid.xl\\:pr-0.xl\\:pl-15 > .xl\\:col-span-3.col-span-4.lg\\:col-span-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"heading pb-12 text-[clamp(theme(fontSize.4xl),4vw,theme(fontSize.6xl))] leading-[1.15] font-bell uppercase\" data-v-5bb271bd=\"\">Kickoff for suksess</h2>",
+          "target": [
+            ".\\!bg-Theme\\/Light > .py-15[data-v-5bb271bd=\"\"] > .container[data-v-5bb271bd=\"\"] > .heading.text-\\[clamp\\(theme\\(fontSize\\.4xl\\)\\,4vw\\,theme\\(fontSize\\.6xl\\)\\)\\].leading-\\[1\\.15\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"flex flex-col col-span-4 lg:col-span-4 xl:col-span-3\" data-v-5bb271bd=\"\"><h2 class=\"!text-white heading text-[clamp(theme(fontSize.4xl),4vw,theme(fontSize.6xl))] leading-[1.15] font-bell uppercase\" data-v-5bb271bd=\"\">Våre hotell i Bergen</h2><!----><!----></div>",
+          "target": [
+            ".DARK.\\!bg-Theme\\/Dark:nth-child(7) > .py-15[data-v-5bb271bd=\"\"] > .container-fluid.xl\\:pr-0.xl\\:pl-15 > .xl\\:col-span-3.col-span-4.lg\\:col-span-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"flex flex-col col-span-4 lg:col-span-4 xl:col-span-3\" data-v-5bb271bd=\"\"><h2 class=\"!text-white heading text-[clamp(theme(fontSize.4xl),4vw,theme(fontSize.6xl))] leading-[1.15] font-bell uppercase\" data-v-5bb271bd=\"\">Event, konferanse og selskap </h2><!----><!----></div>",
+          "target": [
+            ".DARK.\\!bg-Theme\\/Dark:nth-child(8) > .py-15[data-v-5bb271bd=\"\"] > .container-fluid.xl\\:pr-0.xl\\:pl-15 > .xl\\:col-span-3.col-span-4.lg\\:col-span-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"heading pb-12 text-[clamp(theme(fontSize.4xl),4vw,theme(fontSize.6xl))] leading-[1.15] font-bell uppercase\" data-v-5bb271bd=\"\">Restauranter i Bergen sentrum</h2>",
+          "target": [
+            ".DARK.\\!bg-Theme\\/Dark:nth-child(9) > .py-15[data-v-5bb271bd=\"\"] > .container[data-v-5bb271bd=\"\"] > .heading.text-\\[clamp\\(theme\\(fontSize\\.4xl\\)\\,4vw\\,theme\\(fontSize\\.6xl\\)\\)\\].leading-\\[1\\.15\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Frescohallen-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-seafood-platter\">",
+          "target": [
+            ".grid-of-6 > .lg\\:col-span-2.collection-item[theme=\"\"]:nth-child(1) > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"text-3xl uppercase font-bell break-words !text-textcolor\" data-v-79da7b67=\"\">Frescohallen</h3>",
+          "target": [
+            ".grid-of-6 > .lg\\:col-span-2.collection-item[theme=\"\"]:nth-child(1) > .sm\\:ml-6.bg-secondary.-mt-9 > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"!text-textcolor grow text-xl font-light\" data-v-79da7b67=\"\"><p data-v-79da7b67=\"\">I classy og ærverdige Frescohallen serveres mat og drikke fra tidlig morgen til sen kveld. Syv dager i uken, året rundt.</p></div>",
+          "target": [
+            ".grid-of-6 > .lg\\:col-span-2.collection-item[theme=\"\"]:nth-child(1) > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\\!text-textcolor.font-light"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bare-vin-og-matbar/Bare-vin-og-matbar-restaurant-bar-bergen-sentrum-bergen-bors-hotel-cocktails-wine-drinker-julebord-selskap-chambre-separee-moterom-28\">",
+          "target": [
+            ".grid-of-6 > .lg\\:col-start-3.lg\\:row-span-2[theme=\"\"] > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"text-3xl uppercase font-bell break-words !text-textcolor\" data-v-79da7b67=\"\">BARE Vin og Matbar – Bergens beste cocktails og vin</h3>",
+          "target": [
+            ".lg\\:col-start-3.lg\\:row-span-2[theme=\"\"] > .sm\\:ml-6.bg-secondary.-mt-9 > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"!text-textcolor grow text-xl font-light\" data-v-79da7b67=\"\"><p data-v-79da7b67=\"\">BARE Vin og Matbar er en førsteklasses vinbar i Bergen, som også tilbyr en eksklusiv chambre séparée for private sammenkomster.</p></div>",
+          "target": [
+            ".grid-of-6 > .lg\\:col-start-3.lg\\:row-span-2[theme=\"\"] > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\\!text-textcolor.font-light"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Bar-Pub-Cafe/Bar-Amundsen/spisesteder-bar-pub-norway-bergen-food-tomato-basil-appetizer-mozzarella\">",
+          "target": [
+            ".grid-of-6 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(3) > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"text-3xl uppercase font-bell break-words !text-textcolor\" data-v-79da7b67=\"\">Amundsen Bar &amp; Bistro</h3>",
+          "target": [
+            ".lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(3) > .sm\\:ml-6.bg-secondary.-mt-9 > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"!text-textcolor grow text-xl font-light\" data-v-79da7b67=\"\"><p data-v-79da7b67=\"\">I whiskybaren Amundsen Bar &amp; Bistro serveres det forfriskninger og god mat i unike omgivelser.</p></div>",
+          "target": [
+            ".grid-of-6 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(3) > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\\!text-textcolor.font-light"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Wesselstuen-Restaurant/Mat Wesselstuen/wesselstuen-bergen-sentrum-restaurant-meny-tradisjon-klassisk-historisk-bar-pub-julebord-jul-meny-johan-herman-wessel-julebord-biff-lutefisk-pinnekjott-5\">",
+          "target": [
+            ".grid-of-6 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(4) > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"text-3xl uppercase font-bell break-words !text-textcolor\" data-v-79da7b67=\"\">Wesselstuen</h3>",
+          "target": [
+            ".lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(4) > .sm\\:ml-6.bg-secondary.-mt-9 > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"!text-textcolor grow text-xl font-light\" data-v-79da7b67=\"\"><p data-v-79da7b67=\"\">Om du vil besøke noe ekte, genuint og tradisjonelt bergensk, ta turen innom Wesselstuen – midt i Bergen sentrum.</p></div>",
+          "target": [
+            ".grid-of-6 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(4) > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\\!text-textcolor.font-light"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Omakase-by-Sergey-Pak/Mat/skostredet-hotel-sushi-seafood-kveite-near-me-wagyu-sjomat-stemning-6\">",
+          "target": [
+            ".grid-of-6 > .lg\\:row-start-3.collection-item[theme=\"\"]:nth-child(5) > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"text-3xl uppercase font-bell break-words !text-textcolor\" data-v-79da7b67=\"\">Omakase</h3>",
+          "target": [
+            ".lg\\:row-start-3.collection-item[theme=\"\"]:nth-child(5) > .sm\\:ml-6.bg-secondary.-mt-9 > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"!text-textcolor grow text-xl font-light\" data-v-79da7b67=\"\"><p data-v-79da7b67=\"\">Omakase by Sergey Pak er en av Bergens Michelin-restauranter med fokus på norske råvarer, med teknikker fra det japanske kjøkken. </p></div>",
+          "target": [
+            ".grid-of-6 > .lg\\:row-start-3.collection-item[theme=\"\"]:nth-child(5) > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\\!text-textcolor.font-light"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Fresquito-Restaurant/tapas-mat/norway-bergen-spansk-kjokken-tapas-spisesteder-sor-amerika-mat-drikke-fisketorget-gastronomi-smaker-giovanni-sanchez-fritert-fisk-2\">",
+          "target": [
+            ".lg\\:row-start-3.lg\\:col-span-2[theme=\"\"] > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"text-3xl uppercase font-bell break-words !text-textcolor\" data-v-79da7b67=\"\">Fresquito</h3>",
+          "target": [
+            ".lg\\:row-start-3.lg\\:col-span-2[theme=\"\"] > .sm\\:ml-6.bg-secondary.-mt-9 > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"!text-textcolor grow text-xl font-light\" data-v-79da7b67=\"\"><p data-v-79da7b67=\"\">Med kokk fra gastronomiske Cádiz gir nyheten Fresquito deg en eksplosjon av ekte og autentiske spanske smaker - rett til bordet ditt.  </p></div>",
+          "target": [
+            ".lg\\:row-start-3.lg\\:col-span-2[theme=\"\"] > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\\!text-textcolor.font-light"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Izakaya-by-Vladimir-Pak/bergen-sentrum-skostredet-hotel-restaurant-izakaya-by-vladimir-pak-street-food-japaneese-izakaya-sushi-seafood\">",
+          "target": [
+            ".grid-of-5 > .lg\\:col-span-2.collection-item[theme=\"\"] > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"text-3xl uppercase font-bell break-words !text-textcolor\" data-v-79da7b67=\"\">Izakaya Skostredet </h2>",
+          "target": [
+            ".lg\\:col-span-2.collection-item[theme=\"\"] > .sm\\:ml-6.bg-secondary.-mt-9 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"!text-textcolor grow text-xl font-light\" data-v-79da7b67=\"\"><p data-v-79da7b67=\"\">Hos MICHELIN-anbefalt Izakaya får du oppleve japansk street food av høy kvalitet. Her kan du ha en kveld med kollegaer, venner eller en romantisk date. </p></div>",
+          "target": [
+            ".grid-of-5 > .lg\\:col-span-2.collection-item[theme=\"\"] > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\\!text-textcolor.font-light"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Engen-restaurant/biff-og-mat/engen-steakhouse-restaurant-biff-kjott-entrecote-wagyu-adam-bjerck-grillmat-grill-19\">",
+          "target": [
+            ".grid-of-5 > .lg\\:col-start-3.lg\\:row-span-2[theme=\"\"] > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"text-3xl uppercase font-bell break-words !text-textcolor\" data-v-79da7b67=\"\">Engen Steakhouse – Bergens saftigste biff</h2>",
+          "target": [
+            ".lg\\:col-start-3.lg\\:row-span-2[theme=\"\"] > .sm\\:ml-6.bg-secondary.-mt-9 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"!text-textcolor grow text-xl font-light\" data-v-79da7b67=\"\"><p data-v-79da7b67=\"\">Engen er et premium steakhouse i Bergen sentrum som setter rene smaker og høy kvalitet på råvarene i fokus. </p></div>",
+          "target": [
+            ".grid-of-5 > .lg\\:col-start-3.lg\\:row-span-2[theme=\"\"] > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\\!text-textcolor.font-light"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Logehaven-Restaurant/norway-bergen-places-to-eat-and-drink-near-me-pub-bar-restaurants-food-and-wine-spisesteder-restauranter-grilled-cheese-sandwich-julebord-17-mai\">",
+          "target": [
+            ".grid-of-5 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(3) > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"text-3xl uppercase font-bell break-words !text-textcolor\" data-v-79da7b67=\"\">Haven</h2>",
+          "target": [
+            ".lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(3) > .sm\\:ml-6.bg-secondary.-mt-9 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"!text-textcolor grow text-xl font-light\" data-v-79da7b67=\"\"><p data-v-79da7b67=\"\">Haven har beliggenhet midt i Bergen sentrum, og har uteservering året rundt. Hos oss slapper du av med deilig mat og drikke – og drinker på kveldstid.</p></div>",
+          "target": [
+            ".grid-of-5 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(3) > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\\!text-textcolor.font-light"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Zander-K-Matbaren-Restaurant/norway-bergen-pub-bar-food-and-wine-cocktail-spisesteder-restauranter-mat-og-drikke-lokale-ravarer-okologiske-produkter&nbsp;-15\">",
+          "target": [
+            ".grid-of-5 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(4) > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"text-3xl uppercase font-bell break-words !text-textcolor\" data-v-79da7b67=\"\">Matbaren</h2>",
+          "target": [
+            ".lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(4) > .sm\\:ml-6.bg-secondary.-mt-9 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"!text-textcolor grow text-xl font-light\" data-v-79da7b67=\"\"><p data-v-79da7b67=\"\">I Matbaren på Zander K Hotel i Bergen serveres retter basert på kortreiste, økologiske råvarer. Stort utvalg av økologisk vin og lokalt mikrobrygget øl.</p></div>",
+          "target": [
+            ".grid-of-5 > .lg\\:row-start-2.collection-item[theme=\"\"]:nth-child(4) > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\\!text-textcolor.font-light"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<img onerror=\"this.setAttribute('data-error', 1)\" loading=\"lazy\" data-nuxt-img=\"\" sizes=\"(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, 1536px\" srcset=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_320,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 320w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_640,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 640w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_768,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 768w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1024,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 1024w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1280,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 1280w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_1536,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 1536w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2048,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 2048w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_2560,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 2560w, https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64 3072w\" class=\"media flex-1 object-cover stretch sm:pr-6\" src=\"https://res.cloudinary.com/bergenske/image/upload/f_auto,q_auto,t_Standard-image,g_auto:subject,w_3072,c_fill/Places-to-eat-and-drink-near-me/Restaurants/Bjerck-restaurant-og-bar/lunsj-mat-middag-bjerck/bergen-sentrum-bryggen-mat-lunch-middag-fisk-sjomat-fiskesuppe-brunch-torgallmenningen-burger-64\">",
+          "target": [
+            ".lg\\:col-span-3 > .sm\\:pr-6.flex-1.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"text-3xl uppercase font-bell break-words !text-textcolor\" data-v-79da7b67=\"\">Bjerck Restaurant &amp; Bar</h2>",
+          "target": [
+            ".lg\\:col-span-3 > .sm\\:ml-6.bg-secondary.-mt-9 > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"!text-textcolor grow text-xl font-light\" data-v-79da7b67=\"\"><p data-v-79da7b67=\"\">Bjerck – en uformell restaurant med Bergens beste utsikt mot byfjorden, Bryggen og byens travle gateliv. </p></div>",
+          "target": [
+            ".lg\\:col-span-3 > .sm\\:ml-6.bg-secondary.-mt-9 > .items-end.gap-x-6.flex > .grow.\\!text-textcolor.font-light"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section class=\"!bg-Theme/Dark !text-white DARK\" data-v-b25c747f=\"\">",
+          "target": [
+            ".DARK.\\!bg-Theme\\/Dark:nth-child(11)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"flex flex-col col-span-4 lg:col-span-4 xl:col-span-3\" data-v-5bb271bd=\"\">",
+          "target": [
+            ".\\!bg-white > .py-15[data-v-5bb271bd=\"\"] > .container-fluid.xl\\:pr-0.xl\\:pl-15 > .xl\\:col-span-3.col-span-4.lg\\:col-span-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"lg:text-center\">",
+          "target": [
+            ".lg\\:text-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input class=\"choice-element absolute opacity-0 pointer-events-none\" type=\"checkbox\" id=\"41a85971-de72-4bb9-8638-913f40d8f8bf\" name=\"categories\" value=\"arrangements\" data-v-45958cc3=\"\">",
+          "target": [
+            "#\\34 1a85971-de72-4bb9-8638-913f40d8f8bf"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-v-45958cc3=\"\">Arrangementer</div>",
+          "target": [
+            "div:nth-child(1) > .text-2xl.font-light[data-v-45958cc3=\"\"] > label > div[data-v-45958cc3=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input class=\"choice-element absolute opacity-0 pointer-events-none\" type=\"checkbox\" id=\"bcec652d-d951-41ac-ad2e-92b83a7f9443\" name=\"categories\" value=\"offers\" data-v-45958cc3=\"\">",
+          "target": [
+            "#bcec652d-d951-41ac-ad2e-92b83a7f9443"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-v-45958cc3=\"\">Tilbud og hotellpakker</div>",
+          "target": [
+            "div:nth-child(2) > .text-2xl.font-light[data-v-45958cc3=\"\"] > label > div[data-v-45958cc3=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input class=\"choice-element absolute opacity-0 pointer-events-none\" type=\"checkbox\" id=\"8e49b73a-fd56-4559-8fbc-ef393afd16f6\" name=\"categories\" value=\"restaurant\" data-v-45958cc3=\"\">",
+          "target": [
+            "#\\38 e49b73a-fd56-4559-8fbc-ef393afd16f6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-v-45958cc3=\"\">Restauranter</div>",
+          "target": [
+            "div:nth-child(3) > .text-2xl.font-light[data-v-45958cc3=\"\"] > label > div[data-v-45958cc3=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input value=\"\" type=\"text\" placeholder=\"Fyll inn din e-post\" class=\"w-full border border-greyAlt px-6 py-4 text-2xl\">",
+          "target": [
+            ".border-greyAlt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"relative mt-2 text-lg font-light\" data-v-45958cc3=\"\">",
+          "target": [
+            ".mt-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"ppms_cm_language_select_btn\" id=\"ppms_cm_language_select_btn_id\" data-type=\"customSelect\" data-fixed-text=\"true\" tabindex=\"0\">",
+          "target": [
+            "#ppms_cm_language_select_btn_id"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"ppms_cm_header1\" id=\"ppms-68b46b4f-2362-49d8-8054-214dfd5e0e70\">Privacy on this site</span>",
+          "target": [
+            "#ppms-68b46b4f-2362-49d8-8054-214dfd5e0e70"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"ppms_cm_description_wrapper\" id=\"ppms-2fe8bc9e-97d5-445d-9bf9-9d5a02dacf45\">",
+          "target": [
+            "#ppms-2fe8bc9e-97d5-445d-9bf9-9d5a02dacf45"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a class=\"ppms_cm_link\" id=\"popup-link\" href=\"\">Privacy policy</a>",
+          "target": [
+            "#popup-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"ppms_cm_footer__powered_by\" data-disable-select=\"true\" id=\"ppms_cm_footer__powered_by\">Powered by</span>",
+          "target": [
+            "#ppms_cm_footer__powered_by"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "select-name",
+      "impact": "critical",
+      "description": "Ensure select element has an accessible name",
+      "help": "Select element must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/select-name?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<select class=\"block maxMd:w-full maxMd:border-r-4 border-white md:w-56 bg-white py-[8.5px] pl-2 pr-6 text-dark text-xl\" data-v-0de6cb4c=\"\">",
+          "target": [
+            ".maxMd\\:w-full"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ]
+}

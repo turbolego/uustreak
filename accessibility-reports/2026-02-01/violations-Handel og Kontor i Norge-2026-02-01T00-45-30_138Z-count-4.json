@@ -1,0 +1,153 @@
+{
+  "project": "Handel og Kontor i Norge",
+  "timestamp": "2026-02-01T00:45:30.138Z",
+  "url": "https://hk.no/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button class=\"arrangementPage__info__months--previous\" disabled=\"\"></button>",
+          "target": [
+            ".arrangementPage__info__months--previous"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<button class=\"arrangementPage__info__months--next\"></button>",
+          "target": [
+            ".arrangementPage__info__months--next"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h5 class=\"uagb-post__title uagb-post__text\">\n\t\t\t\t<a href=\"https://hk.no/2026/01/enighet-om-ny-hovedavtale-mellom-lo-og-spekter/\" target=\"_self\" rel=\"bookmark noopener noreferrer\" tabindex=\"0\">Enighet om ny hovedavtale mellom LO og Spekter</a>\n\t\t\t</h5>",
+          "target": [
+            ".slick-current > div > .uagb-post__inner-wrap > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h3 class=\"uagb-post__title uagb-post__text\">\n\t\t\t\t<a href=\"https://hk.no/bransjer/handel-og-service/\" target=\"_self\" rel=\"bookmark noopener noreferrer\">Handel og service</a>\n\t\t\t</h3>",
+          "target": [
+            ".uagb-post__inner-wrap:nth-child(1) > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a href=\"https://hk.no/2026/01/enighet-om-ny-hovedavtale-mellom-lo-og-spekter/\" target=\"_self\" rel=\"bookmark noopener noreferrer\" tabindex=\"0\">",
+          "target": [
+            ".slick-current > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel=\"bookmark noopener noreferrer\"][target=\"_self\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://hk.no/2026/01/kan-deltidsansatte-kreve-overtidsbetaling-for-mertid/\" target=\"_self\" rel=\"bookmark noopener noreferrer\" tabindex=\"0\">",
+          "target": [
+            "div[data-slick-index=\"2\"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel=\"bookmark noopener noreferrer\"][target=\"_self\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://hk.no/2026/01/hk-norge-tar-grep-for-dysleksivennlige-arbeidsplasser/\" target=\"_self\" rel=\"bookmark noopener noreferrer\" tabindex=\"0\">",
+          "target": [
+            "div[data-slick-index=\"3\"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel=\"bookmark noopener noreferrer\"][target=\"_self\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a class=\"skip-link screen-reader-text\" href=\"#content\" title=\"Hopp rett til innholdet\">\n\t\tHopp rett til innholdet</a>",
+          "target": [
+            ".skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"bounceText\" class=\"animated bounceInRight\">Hei, jeg heter Sidsel. Hva kan jeg hjelpe med? </div>",
+          "target": [
+            "#bounceText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

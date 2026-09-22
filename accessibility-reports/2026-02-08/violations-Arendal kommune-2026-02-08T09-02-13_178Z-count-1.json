@@ -1,0 +1,31 @@
+{
+  "project": "Arendal kommune",
+  "timestamp": "2026-02-08T09:02:13.178Z",
+  "url": "https://www.arendal.kommune.no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img alt=\"Arendal kommune\" src=\"/handlers/bv.ashx/i29eb5da5-c498-4765-9de3-e429dd32f018/arendal-kommune.svg\">",
+          "target": [
+            "img"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "project": "If Skadeforsikring NUF",
+  "timestamp": "2026-08-24T01:28:34.990Z",
+  "url": "https://www.if.no/privat",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<img class=\"if size-100p object-cover\" loading=\"lazy\" alt=\"Bilforsikring\" src=\"https://v.imgi.no/d2t6q4aul3-MOODBOARD/2042\" srcset=\"https://v.imgi.no/d2t6q4aul3-MOODBOARD/300 300w, https://v.imgi.no/d2t6q4aul3-MOODBOARD/660 660w\" role=\"presentation\">",
+          "target": [
+            "img[alt=\"Bilforsikring\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "html": "<img class=\"if size-100p object-cover\" loading=\"lazy\" alt=\"Møbler i en stue\" src=\"https://v.imgi.no/leuqjlyxrv-MOODBOARD/2042\" srcset=\"https://v.imgi.no/leuqjlyxrv-MOODBOARD/300 300w, https://v.imgi.no/leuqjlyxrv-MOODBOARD/660 660w\" role=\"presentation\">",
+          "target": [
+            "img[alt=\"Møbler i en stue\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "html": "<img class=\"if size-100p object-...\" loading=\"lazy\" alt=\"Best i test på skade...\" src=\"https://v.imgi.no/re...\" srcset=\"https://v.imgi.no/re...\" sizes=\"(max-width: 450px) 4...\" role=\"presentation\">",
+          "target": [
+            "img[alt=\"Best i test på skadeoppgjør!\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "html": "<img class=\"if size-100p object-...\" loading=\"lazy\" alt=\"Helt sikker på at du...\" src=\"https://v.imgi.no/lk...\" srcset=\"https://v.imgi.no/lk...\" sizes=\"(max-width: 450px) 4...\" role=\"presentation\">",
+          "target": [
+            ".reverse > .gap-0.section-content.op > .image > .size-100p.object-cover[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "html": "<img class=\"if size-100p object-...\" loading=\"lazy\" alt=\"Mer enn bare forsikr...\" src=\"https://v.imgi.no/jt...\" srcset=\"https://v.imgi.no/jt...\" sizes=\"(max-width: 450px) 4...\" role=\"presentation\">",
+          "target": [
+            "img[alt=\"Mer enn bare forsikring\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"if flex-column gap-16\" id=\"5bba36b049ee4cb48506c1d4a5a4185a\">",
+          "target": [
+            "#\\35 bba36b049ee4cb48506c1d4a5a4185a"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}

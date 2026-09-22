@@ -1,0 +1,143 @@
+{
+  "project": "Atea Norge",
+  "timestamp": "2025-11-09T00:38:17.764Z",
+  "url": "https://www.atea.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-conditional-attr",
+      "impact": "serious",
+      "description": "Ensure ARIA attributes are used as described in the specification of the element's role",
+      "help": "ARIA attributes must be used as specified for the element's role",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-conditional-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input id=\"ot-bnr-grp-id-BG107\" type=\"checkbox\" aria-checked=\"false\" disabled=\"true\" class=\"category-switch-handler\" name=\"ot-bnr-grp-id-BG107\" data-optanongroupid=\"BG107\" checked=\"\" aria-labelledby=\"ot-bnr-hdr-id-BG107\">",
+          "target": [
+            "#ot-bnr-grp-id-BG107"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove aria-checked, or set it to \"true\" to match the real checkbox state"
+        }
+      ]
+    },
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/label-title-only?application=playwright",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input type=\"text\" title=\"Søk på Atea\" name=\"q\" class=\"search-query\" placeholder=\"Søk etter artikler og tjenester.\">",
+          "target": [
+            ".mega-menu > form > .search-bar > .container > .search-query-container > .search-query[title=\"Søk på Atea\"][name=\"q\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "landmark-banner-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the banner landmark is at top level",
+      "help": "Banner landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-banner-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"hero-section\" role=\"banner\">",
+          "target": [
+            ".hero-section"
+          ],
+          "failureSummary": "Fix any of the following:\n  The banner landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-main-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the main landmark is at top level",
+      "help": "Main landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-main-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"container hero-start-content\" role=\"main\">\n        <div class=\"content-container\">\n                            <h1 role=\"heading\" aria-level=\"1\" class=\"default\">\n                    Vi bygger Norge med IT\n                </h1>\n                    </div>\n    </div>",
+          "target": [
+            ".hero-start-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-main",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one main landmark",
+      "help": "Document should not have more than one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"page-body\" role=\"main\" aria-label=\"Atea - Norges største IT-selskap\">",
+          "target": [
+            ".page-body"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"chat-button\" aria-label=\"Open chat\" target=\"_blank\" href=\"https://chat.atea.com/?countryInstance=no&languageCode=no&nickName=&chatId=&variables.Name=&variables.Email=&variables.Customer=%20()&variables.Lang=no&variables.OrgNumber=\">",
+          "target": [
+            ".chat-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "project": "Firda Media AS",
+  "timestamp": "2025-10-05T01:44:23.996Z",
+  "url": "https://www.firda.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<iframe frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" topmargin=\"0\" leftmargin=\"0\" allowtransparency=\"true\" width=\"980\" height=\"300\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.firda\\.no\\/toppbanner_0",
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe width=\"980\" height=\"300\" src=\"javascript:'';\" allowtransparency=\"true\" webkitallowfullscreen=\"\" mozallowfullscreen=\"\" allowfullscreen=\"\" marginwidth=\"0\" marginheight=\"0\" hspace=\"0\" vspace=\"0\" frameborder=\"0\" scrolling=\"no\" data-contents=\"&lt;!DOCTYPE html&gt;&lt;title&gt;ad&lt;/title&gt;&lt;base href='https://s2.adform.net/Banners/Elements/Files/47857/18936963/bvpath_258/'&gt;&lt;script&gt;try{parent.AdformWin2hi7zbx6a80(window)}catch(ex){new Image().src='https://track.adform.net/serving/jslog/?src=htmlcb&amp;msg='+encodeURIComponent(''+(ex.stack||ex))}&lt;/script&gt;&lt;script src='https://s2.adform.net/Banners/Elements/Files/47857/18936963/18936963.js?ADFassetID=18936963&amp;bv=258' charset='UTF-8'&gt;&lt;/script&gt;\" data-onload=\"(function F(a,c){function d(){c?q.open():q.open(&quot;text/html&quot;,&quot;replace&quot;);p?l.call(q,b):q.write(b);g.__rendered__=!0}var b=a.getAttribute(&quot;data-contents&quot;),g=a.contentWindow,f=g.parent,q=g.document,e=g.setTimeout;try{var l=f.parent&amp;&amp;f.parent.HTMLDocument&amp;&amp;f.parent.HTMLDocument.prototype.write}catch(r){}var p=l&amp;&amp;f.HTMLDocument&amp;&amp;f.HTMLDocument.prototype.write!==l;-1==a.offsetHeight||g.__rendered__||(g.__rendered__=!0,c?d():e(d,0))})(this,false)\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.firda\\.no\\/toppbanner_0",
+            "iframe",
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell.\" aria-describedby=\"carousel-title-82c8115c-0114-4485-8205-d1778e872b48\">",
+          "target": [
+            ".navigation > .carousel[role=\"region\"][aria-label=\"Innholdskarusell.\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://track.adform.net/C/?bn=84388194;C=1;crtbwp=VEEYrjn_dkYWyl3zzWMA3_Cj2Y0s6mpb0;crtbdata=xiJdfStMg6OlT2e-faIxdPH_WzjYmfPppAf_QVLPPpY4SibL6enpMSlKtSoFTG1IBYs59C-XyWRenYTaDmj235VZOfor6VBHvYhiXPsZR4_4r_PH6YtCV2g03ny-3oZxX0XhDMfWr3RP_0cKpnoXKu7BKL6qi3yyKi0WULYs6R1Em-vEu5BK7HwC25BOzIaUXs_YeOiKYNjXVeRygR7ZPe6aRyHCfRonaa41ALai_xJscVnt2bJ9u516aAzNZnJM5oO3rOhS5z4fmdNu2fFE5Nb6v4XsLUwgQeEimShqzcc1;ccsid=148934;adfibeg=0;cdata=1_Bx8LdI4eeWX_e8DqG0OCvcQPDqxemVHvxz9kPWYZPoc9fprY_1KruarMa8bz5LofOMu5OwaGWzdbnQJCll1bLk-9vvbMco3QE6Sc2MQjDy99FBARghixCeSDdonOeCERtvTRIQUbRV9g-TJYkLBxaUQGVN2PWGTAJjOHBZKUqFIlo3NGAQzr5-NfQ8r9b1RG4uSNyhpuzaljoNwhz_TvgFhTe8xDRqAATA178n4VL7cXLzzPaGLaRtc6BuYSGZU9rzOpfHr_XoddhFtXJwGxwBhR4VjIzpkQb-oqh-gEr-ckjU4d9yJ4auHjGlae9S170Znf19k23AIeTgFgFsVLtlveq98PJQAWj_-9Pv5Ld-K4Rxi5lIoVbyfLS815m4rri7cerl0THB81ifIhuSCSdQ4-8H50kZaxEJF_cyys6oaYuvBCtVSQrjw5HbvhT2lWGdLKlVijZqO746tOyYtaZ6030xCDQ7QwtadTdyNWInKElwc89U8bIR-3BNtKvbMqE4bWzaI9ODN5YtwHKuUdItW_6xD9orrgNJQt9Fq9-YgL2UHEvvD8N4iOtIBxgX0;;fc=1;CREFURL=https%3a%2f%2fwww.firda.no%2f\" style=\"width:1px;height:1px;display:block;border:0;\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.firda\\.no\\/toppbanner_0",
+            "iframe",
+            "a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+      "help": "Ensure elements marked as presentational are consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.firda.no/gfx/small-positive.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.firda.no/tilbud\" publication=\"www.firda.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layout=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_toppbanner am-bazaar-ad--labeled\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.firda.no/toppbanner_1\" pageview-id=\"098bf827-a48f-4be1-bd25-e005d82f382c\" has-bid=\"\" render-count=\"1\" render-time=\"1759628643646\" advertiser-id=\"703459736\" order-id=\"690956216\" lineitem-id=\"1018520456\" creative-id=\"138442426269\" ad-size=\"980,300\" slot-targeting=\"keyword=forsiden,autolayout,dominans,forsiden_1,format=toppbanner,position=1,adnami_format=skin,lwrefresh=false,hb_cid=,hb_crid=,hb_adomain=,hb_format=banner,hb_source=,hb_size=980x300,hb_pb=13.30,hb_adid=777a6c4b1b3dc8f8,hb_bidder=adf\" hb_pb=\"13.30\" prebid-price-group=\"15\" lineitem-type=\"AD_EXCHANGE\" itemscope=\"\" itemtype=\"http://schema.org/WPAdBlock\" is-empty=\"false\" is-prebid=\"\" prebid-bidder=\"adf\" prebid-cpm=\"13.311994079369205\" prebid-creativeid=\"84388194\" prebid-creativeid-count=\"1\" is-viewable=\"true\" style=\"min-height: 0px;\">",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "project": "Landbruksdirektoratet",
+  "timestamp": "2025-10-27T00:37:15.274Z",
+  "url": "https://www.landbruksdirektoratet.no/nb/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<img class=\"industry-illustration\" src=\"/nb/_/image/2b016618-37b7-4d16-9272-a4ae9d600957:b1b814ab406fa8f3d7e31914ddc613e3ce13e84d/width-250/kua2.svg\" alt=\"Jordbruk\">",
+          "target": [
+            ".industry-illustration[alt=\"Jordbruk\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"industry-illustration\" src=\"/nb/_/image/2f14a817-f426-4048-96e3-e9b776be3355:c3ebf0f0a1b33241ae996e031793d8aac5296fc9/width-250/t%C3%B8mmer%20(1).svg\" alt=\"Skogbruk\">",
+          "target": [
+            ".industry-illustration[alt=\"Skogbruk\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"industry-illustration\" src=\"/nb/_/image/99ed2eb7-b53d-4e81-b9eb-8ec5a54dab32:f7eee235c84c5ed4d08c1d38dbd34169aefb2a48/width-250/Reindrift.svg\" alt=\"Reindrift\">",
+          "target": [
+            ".industry-illustration[alt=\"Reindrift\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"industry-illustration\" src=\"/nb/_/image/05deb03e-8f1b-424b-907c-4da3c2385613:b73a8f216a662017c1fe87f08e3f3da9cd2655bd/width-250/Industrioghandel.svg\" alt=\"Industri og handel\">",
+          "target": [
+            ".industry-illustration[alt=\"Industri og handel\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"industry-illustration\" src=\"/nb/_/image/c590c75e-bbd1-4a61-b200-58d20ceeafdd:05eeacd4de9f0a2adef2191454243731ea3dab5e/width-250/miljo-og-klima.svg\" alt=\"Miljø og klima\">",
+          "target": [
+            ".industry-illustration[alt=\"Miljø og klima\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"industry-illustration\" src=\"/nb/_/image/bcdc2a9c-aff0-4aa4-9407-aa6e40a65305:f53edee9ec37cd64d8ac90a671db1b83baabf240/width-250/Eiendom%20(1).svg\" alt=\"Eiendom\">",
+          "target": [
+            ".industry-illustration[alt=\"Eiendom\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"industry-illustration\" src=\"/nb/_/image/9e8289af-6fd8-4aa2-a0c4-0ba03e5cf3a3:8424e9206f0a995fae8702ee51c90b18708a46ad/width-250/Prosjektmidler.svg\" alt=\"Prosjektmidler\">",
+          "target": [
+            ".industry-illustration[alt=\"Prosjektmidler\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img class=\"industry-illustration\" src=\"/nb/_/image/b0b885ff-9870-47ad-8301-7f8433e7dcb6:6e512e952ea781b8401de87925128e07fdf991ac/width-250/Jaktfangstforside.svg\" alt=\"Jakt og fangst\">",
+          "target": [
+            ".industry-illustration[alt=\"Jakt og fangst\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    }
+  ]
+}

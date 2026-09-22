@@ -1,0 +1,725 @@
+{
+  "project": "Stiftelsen Bymuseet i Bergen",
+  "timestamp": "2025-10-12T00:22:48.059Z",
+  "url": "https://bymuseet.no/#",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "violation_count": 23,
+      "nodes": [
+        {
+          "html": "<a href=\"/event\" class=\"btn btn-link d-lg-block d-none\">\n        Se alle <img width=\"24\" height=\"14\" class=\"img-fluid\" src=\"https://bymuseet.no/wp-content/themes/bymuseet/images/arrow-right.svg\" alt=\"arrow right\"> \n      </a>",
+          "target": [
+            ".d-lg-block.btn-link[href$=\"event\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.54 (foreground color: #fa4244, background color: #ffffff, font size: 12.8pt (17px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>BERGEN SENTRUM </span>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(1) > .event-cover > .location > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.06 (foreground color: #72808a, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"event-date\">11.10.2025</div>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(1) > .event-cover > .event-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.64 (foreground color: #868686, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>ROSENKRANTZTåRNET </span>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(2) > .event-cover > .location > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.06 (foreground color: #72808a, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"event-date\">11.10.2025</div>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(2) > .event-cover > .event-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.64 (foreground color: #868686, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>SKOLEMUSEET </span>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(3) > .event-cover > .location > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.06 (foreground color: #72808a, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"event-date\">11.10.2025</div>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(3) > .event-cover > .event-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.64 (foreground color: #868686, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>BRYGGENS MUSEUM </span>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(4) > .event-cover > .location > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.06 (foreground color: #72808a, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"event-date\">11.10.2025</div>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(4) > .event-cover > .event-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.64 (foreground color: #868686, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>SKOLEMUSEET </span>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(5) > .event-cover > .location > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.06 (foreground color: #72808a, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"event-date\">11.10.2025</div>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(5) > .event-cover > .event-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.64 (foreground color: #868686, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>BRYGGENS MUSEUM </span>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(6) > .event-cover > .location > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.06 (foreground color: #72808a, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"event-date\">11.10.2025</div>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(6) > .event-cover > .event-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.64 (foreground color: #868686, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>BERGEN SENTRUM </span>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(7) > .event-cover > .location > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.06 (foreground color: #72808a, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"event-date\">12.10.2025</div>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(7) > .event-cover > .event-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.64 (foreground color: #868686, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>ROSENKRANTZTåRNET </span>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(8) > .event-cover > .location > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.06 (foreground color: #72808a, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"event-date\">12.10.2025</div>",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(8) > .event-cover > .event-date"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.64 (foreground color: #868686, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div id=\"load-mer\" class=\"active btn cta light d-inline-block small\">Vis mer</div>",
+          "target": [
+            "#load-mer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.06 (foreground color: #72808a, background color: #ffffff, font size: 13.5pt (18px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"description\">Gavekort i Bymuseet som kan brukes til alt fra billetter til betalingsmiddel i café og butikk. </div>",
+          "target": [
+            "a[target=\"_blank\"] > .block > .description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.1 (foreground color: #fa4244, background color: #ffeed1, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"btn\">",
+          "target": [
+            "a[target=\"_blank\"] > .block > .btn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.54 (foreground color: #fa4244, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"description\">Hele byens historie i et medlemskap! Som medlem i Bymuseet i Bergen får du og en venn ubegrenset inngang til våre museer. Du får også 50 % rabatt på mandagsforedrag på Bryggens Museum og\n10% rabatt i alle museumsbutikkene!</div>",
+          "target": [
+            "a[href$=\"arskort/\"] > .block > .description"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.1 (foreground color: #fa4244, background color: #ffeed1, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<div class=\"btn\">Les mer <svg width=\"7\" height=\"13\" viewBox=\"0 0 7 13\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4.31409 6.31372L0.314077 2.31372L0.314076 1.09622e-05L6.62779 6.31372L0.314076 12.6274L0.314088 10.3137L4.31409 6.31372Z\" fill=\"#FA4244\"></path></svg>\n\t\t\t\t\t\t\t\t\t</div>",
+          "target": [
+            "a[href$=\"arskort/\"] > .block > .btn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.54 (foreground color: #fa4244, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button type=\"submit\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button button btn cta small red\">",
+          "target": [
+            "#mc-embedded-subscribe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.54 (foreground color: #ffffff, background color: #fa4244, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe loading=\"lazy\" style=\"border: 0;\" src=\"about:blank\" allowfullscreen=\"\" data-rocket-lazyload=\"fitvidscompatible\" data-lazy-src=\"https://player.vimeo.com/video/1101177840?background=1&amp;autoplay=1&amp;loop=1\"></iframe>",
+          "target": [
+            "#slick-slide00 > .vimeo-wrapper > iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb-NO\" prefix=\"og: https://ogp.me/ns#\" class=\" js\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        },
+        {
+          "html": "<html><head></head><body></body></html>",
+          "target": [
+            "#slick-slide00 > .vimeo-wrapper > iframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT"
+      ],
+      "violation_count": 20,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DO0KHcMD61Q/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            "div[data-feed-item-index=\"9\"][aria-label=\"10 / 12\"][data-swiper-slide-index=\"9\"]:nth-child(1) > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DOwSwS-Dd7b/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            "div[data-feed-item-index=\"10\"][aria-label=\"11 / 12\"][data-swiper-slide-index=\"10\"]:nth-child(2) > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DOjatxYEyC_/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            ".swiper-slide-prev > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DPq-pQljRV9/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            ".swiper-slide-active > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DPjyhO7iZYj/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            ".swiper-slide-next > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DPZfW4NDeOb/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            "div[data-feed-item-index=\"2\"][aria-label=\"3 / 12\"][data-swiper-slide-index=\"2\"]:nth-child(6) > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DPVrC0Rihez/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            "div[data-feed-item-index=\"3\"] > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DPT2DcPChZ8/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            "div[data-feed-item-index=\"4\"] > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DPOqplRivH6/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            "div[data-feed-item-index=\"5\"] > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DPHknXtD_AQ/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            "div[data-feed-item-index=\"6\"] > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/reel/DPEWxl2jbb6/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            "div[data-feed-item-index=\"7\"] > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DO8oP6EDE38/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            "div[data-feed-item-index=\"8\"] > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DO0KHcMD61Q/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            "div[data-feed-item-index=\"9\"][aria-label=\"10 / 12\"][data-swiper-slide-index=\"9\"]:nth-child(13) > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DOwSwS-Dd7b/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            "div[data-feed-item-index=\"10\"][aria-label=\"11 / 12\"][data-swiper-slide-index=\"10\"]:nth-child(14) > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DOjatxYEyC_/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            ".swiper-slide-duplicate-prev > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DPq-pQljRV9/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            ".swiper-slide-duplicate-active > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DPjyhO7iZYj/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            ".swiper-slide-duplicate-next > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/p/DPZfW4NDeOb/\" target=\"_blank\" rel=\"noreferrer\" class=\"instagram-gallery-item__icon qligg-icon-instagram instagram-gallery-item__icon--link\"></a>",
+          "target": [
+            "div[data-feed-item-index=\"2\"][aria-label=\"3 / 12\"][data-swiper-slide-index=\"2\"]:nth-child(18) > .instagram-gallery-item__wrap > .instagram-gallery-item__media-wrap > .instagram-gallery-item__icon--link.qligg-icon-instagram[rel=\"noreferrer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.facebook.com/bymuseet\">",
+          "target": [
+            ".social-icons > ul > li:nth-child(1) > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.instagram.com/bymuseetibergen/\">",
+          "target": [
+            ".social-icons > ul > li:nth-child(2) > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "meta-viewport",
+      "impact": "critical",
+      "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+      "help": "Zooming and scaling must not be disabled",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=playwright",
+      "tags": [
+        "cat.sensory-and-visual-cues",
+        "wcag2aa",
+        "wcag144",
+        "EN-301-549",
+        "EN-9.1.4.4",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\">",
+          "target": [
+            "meta[name=\"viewport\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  user-scalable on <meta> tag disables zooming on mobile devices"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb-NO\" prefix=\"og: https://ogp.me/ns#\" class=\" js\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html><head></head><body></body></html>",
+          "target": [
+            "#slick-slide00 > .vimeo-wrapper > iframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 35,
+      "nodes": [
+        {
+          "html": "<div class=\"svg-title\">\n\t\t          Håkonshallen\t\t        </div>",
+          "target": [
+            ".col-lg-2.museum.col-sm-6:nth-child(1) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"svg-title\">\n\t\t          Lepramuseet St. Jørgens Hospital\t\t        </div>",
+          "target": [
+            ".col-lg-2.museum.col-sm-6:nth-child(2) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"svg-title\">\n\t\t          Damsgård Hovedgård\t\t        </div>",
+          "target": [
+            ".col-lg-2.museum.col-sm-6:nth-child(3) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"svg-title\">\n\t\t          Bryggens Museum\t\t        </div>",
+          "target": [
+            ".col-lg-2.museum.col-sm-6:nth-child(4) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"svg-title\">\n\t\t          Alvøen Hovedbygning\t\t        </div>",
+          "target": [
+            ".col-lg-2.museum.col-sm-6:nth-child(5) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"svg-title\">\n\t\t          Gamle Bergen Museum\t\t        </div>",
+          "target": [
+            ".col-lg-2.museum.col-sm-6:nth-child(6) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"svg-title\">\n\t\t          Rosenkrantztårnet\t\t        </div>",
+          "target": [
+            ".col-lg-2.museum.col-sm-6:nth-child(7) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"svg-title\">\n\t\t          Hordamuseet\t\t        </div>",
+          "target": [
+            ".col-lg-2.museum.col-sm-6:nth-child(8) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"svg-title\">\n\t\t          Skolemuseet Latinskolen\t\t        </div>",
+          "target": [
+            ".col-lg-2.museum.col-sm-6:nth-child(9) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"svg-title\">\n\t\t          Teatervandringer\t\t        </div>",
+          "target": [
+            ".col-lg-2.museum.col-sm-6:nth-child(10) > .museum-cover > .svg-holder > .svg-title-cover > .svg-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"section-title\">\n        Hva skjer      </h3>",
+          "target": [
+            ".dashed-border > .section-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"label\" data-rocket-lazy-bg-c2913568-6ba7-4428-8c2a-1a442bb45533=\"excluded\" data-rocket-lazy-bg-91ed1ae4-dbcb-4490-90a6-8d8cf841a85f=\"excluded\" data-rocket-lazy-bg-ac357fd8-4552-42d5-9ea2-757e640b2a26=\"loaded\">Hva</div>",
+          "target": [
+            ".filter:nth-child(1) > div[data-rocket-lazy-bg-c2913568-6ba7-4428-8c2a-1a442bb45533=\"excluded\"][data-rocket-lazy-bg-91ed1ae4-dbcb-4490-90a6-8d8cf841a85f=\"excluded\"][data-rocket-lazy-bg-ac357fd8-4552-42d5-9ea2-757e640b2a26=\"loaded\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"label\" data-rocket-lazy-bg-c2913568-6ba7-4428-8c2a-1a442bb45533=\"excluded\" data-rocket-lazy-bg-91ed1ae4-dbcb-4490-90a6-8d8cf841a85f=\"excluded\" data-rocket-lazy-bg-ac357fd8-4552-42d5-9ea2-757e640b2a26=\"loaded\">Hvem</div>",
+          "target": [
+            ".filter:nth-child(2) > div[data-rocket-lazy-bg-c2913568-6ba7-4428-8c2a-1a442bb45533=\"excluded\"][data-rocket-lazy-bg-91ed1ae4-dbcb-4490-90a6-8d8cf841a85f=\"excluded\"][data-rocket-lazy-bg-ac357fd8-4552-42d5-9ea2-757e640b2a26=\"loaded\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"label\" data-rocket-lazy-bg-c2913568-6ba7-4428-8c2a-1a442bb45533=\"excluded\" data-rocket-lazy-bg-91ed1ae4-dbcb-4490-90a6-8d8cf841a85f=\"excluded\" data-rocket-lazy-bg-ac357fd8-4552-42d5-9ea2-757e640b2a26=\"loaded\">Hvor</div>",
+          "target": [
+            ".filter:nth-child(3) > div[data-rocket-lazy-bg-c2913568-6ba7-4428-8c2a-1a442bb45533=\"excluded\"][data-rocket-lazy-bg-91ed1ae4-dbcb-4490-90a6-8d8cf841a85f=\"excluded\"][data-rocket-lazy-bg-ac357fd8-4552-42d5-9ea2-757e640b2a26=\"loaded\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"label d-block\" data-rocket-lazy-bg-c2913568-6ba7-4428-8c2a-1a442bb45533=\"excluded\" data-rocket-lazy-bg-91ed1ae4-dbcb-4490-90a6-8d8cf841a85f=\"excluded\" data-rocket-lazy-bg-ac357fd8-4552-42d5-9ea2-757e640b2a26=\"loaded\">Når</div>",
+          "target": [
+            ".when-filter > div[data-rocket-lazy-bg-c2913568-6ba7-4428-8c2a-1a442bb45533=\"excluded\"][data-rocket-lazy-bg-91ed1ae4-dbcb-4490-90a6-8d8cf841a85f=\"excluded\"][data-rocket-lazy-bg-ac357fd8-4552-42d5-9ea2-757e640b2a26=\"loaded\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"/event\" class=\"btn btn-link d-lg-block d-none\">\n        Se alle <img width=\"24\" height=\"14\" class=\"img-fluid\" src=\"https://bymuseet.no/wp-content/themes/bymuseet/images/arrow-right.svg\" alt=\"arrow right\"> \n      </a>",
+          "target": [
+            ".d-lg-block.btn-link[href$=\"event\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-lg-3 col-sm-6 event load-more__item\">",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-lg-3 col-sm-6 event load-more__item\">",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-lg-3 col-sm-6 event load-more__item\">",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-lg-3 col-sm-6 event load-more__item\">",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-lg-3 col-sm-6 event load-more__item\">",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-lg-3 col-sm-6 event load-more__item\">",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-lg-3 col-sm-6 event load-more__item\">",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"col-lg-3 col-sm-6 event load-more__item\">",
+          "target": [
+            ".event.load-more__item.col-lg-3:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-center\"><div id=\"load-mer\" class=\"active btn cta light d-inline-block small\">Vis mer</div></div>",
+          "target": [
+            ".main-row > .text-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span>",
+          "target": [
+            ".cta[target=\"_self\"] > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section data-wpr-lazyrender=\"1\" class=\"culture-for-all\">",
+          "target": [
+            ".culture-for-all"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\">",
+          "target": [
+            ".call-to-actions > .container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<section data-wpr-lazyrender=\"1\" class=\"museums five v-2\">",
+          "target": [
+            ".v-2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"d-flex justify-content-between section-title-link align-items-center\">",
+          "target": [
+            ".instagram-module > .container > .justify-content-between.section-title-link.align-items-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"instagram-gallery__actions\"><a href=\"https://www.instagram.com/bymuseetibergen\" target=\"blank\" class=\"instagram-gallery__button instagram-gallery__button--follow\"><i class=\"qligg-icon-instagram \"></i>View on Instagram</a></div>",
+          "target": [
+            ".instagram-gallery__actions"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"mc-field-group\">",
+          "target": [
+            ".mc-field-group"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input type=\"text\" placeholder=\"Fornavn\" value=\"\" name=\"FNAME\" class=\"required email\" id=\"mce-FNAME\" required=\"\">",
+          "target": [
+            "#mce-FNAME"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input type=\"text\" placeholder=\"Etternavn\" value=\"\" name=\"LNAME\" class=\"required email\" id=\"mce-LNAME\" required=\"\">",
+          "target": [
+            "#mce-LNAME"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<input type=\"email\" placeholder=\"Din epost\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\" required=\"\">",
+          "target": [
+            "#mce-EMAIL"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

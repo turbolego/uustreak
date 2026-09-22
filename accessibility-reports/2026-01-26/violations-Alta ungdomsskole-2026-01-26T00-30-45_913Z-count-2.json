@@ -1,0 +1,54 @@
+{
+  "project": "Alta ungdomsskole",
+  "timestamp": "2026-01-26T00:30:45.913Z",
+  "url": "https://alta.ungdomsskole.no/#",
+  "total_violations": 2,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"closedtext\">\n<h1>Alta ungdomsskole</h1><p style=\"font-size:larger;\">Vi har nye hjemmesider her:<br><br>\n<a href=\"https://www.alta.kommune.no/tjenester/skole-og-utdanning/skoler-i-kommunen/barne--og-ungdomsskoler/alta-ungdomsskole\">www.alta.kommune.no</a></p>\n</div>",
+          "target": [
+            "#closedtext"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

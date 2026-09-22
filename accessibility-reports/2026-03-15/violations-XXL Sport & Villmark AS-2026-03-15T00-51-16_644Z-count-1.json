@@ -1,0 +1,31 @@
+{
+  "project": "XXL Sport & Villmark AS",
+  "timestamp": "2026-03-15T00:51:16.644Z",
+  "url": "https://www.xxl.no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h2 class=\"css-1x6oy55 ezqkltm1\">   </h2>",
+          "target": [
+            ".css-uangvd.egcs59g0:nth-child(4) > .css-18tbjh.e1143ahd0 > .css-j7qwjs.ezqkltm0 > .css-1x6oy55.ezqkltm1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}

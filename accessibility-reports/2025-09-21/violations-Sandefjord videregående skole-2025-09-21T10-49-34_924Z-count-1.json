@@ -1,0 +1,64 @@
+{
+  "project": "Sandefjord videregående skole",
+  "timestamp": "2025-09-21T10:49:34.925Z",
+  "url": "https://www.vestfoldfylke.no/no/skoler/sandefjord-vgs/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "violations": [
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<img class=\"postImg\" src=\"https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/549577977_1352734153520973_5631274062786668960_n.jpg?stp=cp1_dst-jpegr_s960x960_tt6&amp;_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=lVekF4gecPAQ7kNvwFoD78H&amp;_nc_oc=Adk4cjHwPZYFDW40GDFX4jgeCbHH2t1_VYaBW--OtlPFAYBg0vyYIcNKTHgRYDXkfmQ&amp;_nc_zt=23&amp;se=-1&amp;_nc_ht=scontent-iad3-2.xx&amp;edm=AKIiGfEEAAAA&amp;_nc_gid=O5gy7a_RPrIesB9ln_q49A&amp;oh=00_AfZJ5vwKRo5u0_xdobX1YlsF70CFUSjy_2FN8dRQB1pEtA&amp;oe=68D596C8\">",
+          "target": [
+            "iframe[title=\"powr social feed\"]",
+            "div[data-approved-index=\"0\"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"postImg\" src=\"https://scontent-iad3-1.xx.fbcdn.net/v/t51.82787-15/550779623_18011086079795725_2050622680454416172_n.jpg?stp=dst-jpegr_p720x720_tt6&amp;_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=Jet_5LY0dfgQ7kNvwGDdVE_&amp;_nc_oc=AdmcDHRxPLjco5SALK1vhMyhsOLd6hxayoMIERyvskcjXKweIBsmGV2vBCL4zJHwOYM&amp;_nc_zt=23&amp;se=-1&amp;_nc_ht=scontent-iad3-1.xx&amp;edm=AKIiGfEEAAAA&amp;_nc_gid=O5gy7a_RPrIesB9ln_q49A&amp;oh=00_AfadFBuU6x0a28rC3C7l91B6gRfiM0oZJ-iVcrBALNiSWg&amp;oe=68D5A187\">",
+          "target": [
+            "iframe[title=\"powr social feed\"]",
+            "div[data-approved-index=\"1\"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"postImg\" src=\"https://scontent-iad3-1.xx.fbcdn.net/v/t51.82787-15/549654627_18010983929795725_1812825973956859992_n.jpg?stp=dst-jpegr_s960x960_tt6&amp;_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=k1kFAvhXvf8Q7kNvwFd-px0&amp;_nc_oc=Adksu-8HYiGefNgcxybyUt3FTRQnJM5cVlTLovySgEAgVbsj7iQwfn8JOWxn4R-ll9Y&amp;_nc_zt=23&amp;se=-1&amp;_nc_ht=scontent-iad3-1.xx&amp;edm=AKIiGfEEAAAA&amp;_nc_gid=O5gy7a_RPrIesB9ln_q49A&amp;oh=00_AfadJS-TuDyfnogXFZNsxCKPkUyi5PukHz0HFHIbZLSNlg&amp;oe=68D59679\">",
+          "target": [
+            "iframe[title=\"powr social feed\"]",
+            "div[data-approved-index=\"2\"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"postImg\" src=\"https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/546867439_1345713377556384_369813153950955797_n.jpg?_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=O15D2jYGDocQ7kNvwEWjZVD&amp;_nc_oc=AdmcX_rlOGuPd1cVEohbx5_lrDZePzVYN65aEYcKjQXtVnFGm_lIE2pmR97ChcjnjeI&amp;_nc_zt=23&amp;_nc_ht=scontent-iad3-2.xx&amp;edm=AKIiGfEEAAAA&amp;_nc_gid=O5gy7a_RPrIesB9ln_q49A&amp;oh=00_AfaFyEF4vaHCgZAr3LHFmu_81KUAHbIN9_o_YEzQn8F8iw&amp;oe=68D5A962\">",
+          "target": [
+            "iframe[title=\"powr social feed\"]",
+            "div[data-approved-index=\"3\"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ]
+}

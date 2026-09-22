@@ -1,0 +1,38 @@
+{
+  "project": "Bærum kommune",
+  "timestamp": "2026-02-02T03:25:33.107Z",
+  "url": "https://www.baerum.kommune.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1",
+        "RGAAv4",
+        "RGAA-10.6.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a id=\"cookiescript_readmore\" data-cs-i18n-text=\"{&quot;no&quot;:&quot;Les mer&quot;}\" data-cs-i18n-url=\"{&quot;no&quot;:&quot;https:\\/\\/www.baerum.kommune.no\\/personvern\\/&quot;}\" target=\"_self\" aria-label=\"\" href=\"https://www.baerum.kommune.no/personvern/\">\n        Les mer      </a>",
+          "target": [
+            "#cookiescript_readmore"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 2.73:1 with the surrounding text. (Minimum contrast is 3:1, link text: #006120, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        }
+      ]
+    }
+  ]
+}

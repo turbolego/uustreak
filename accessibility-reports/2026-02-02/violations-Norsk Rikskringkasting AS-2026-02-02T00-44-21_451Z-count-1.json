@@ -1,0 +1,53 @@
+{
+  "project": "Norsk Rikskringkasting AS",
+  "timestamp": "2026-02-02T00:44:21.452Z",
+  "url": "https://www.nrk.no/#",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.nrk.no/etikk/opphavsrett-pa-nrk.no-1.2843522\" class=\"block font-semibold\">Opphavsrett NRK © 2025</a>",
+          "target": [
+            ".font-semibold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #0000ee, background color: #061629, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Ansvarlig redaktør: Vibeke Fürst Haugen</span>",
+          "target": [
+            ".flex-col > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #0000ee, background color: #061629, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span>Nettsjef: Dyveke Sandtorv Nilssen (Konst.)</span>",
+          "target": [
+            ".flex-col > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #0000ee, background color: #061629, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ]
+}
