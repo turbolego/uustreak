@@ -38,6 +38,7 @@
     <meta name="msapplication-TileColor" content="#ff9500">
     
     <link href="styles.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="js/gzip-utils.js"></script>
 </head>
 
@@ -108,6 +109,11 @@
             <div id="achievements-dialog-content"></div>
             <button aria-label="Lukk achievements dialog" class="dialog-close" id="close-achievements-dialog">×</button>
         </dialog>
+        <dialog class="details-dialog" id="trends-dialog">
+            <h2 id="trends-dialog-title">Trends</h2>
+            <div id="trends-dialog-content"></div>
+            <button aria-label="Lukk trends dialog" class="dialog-close" id="close-trends-dialog">×</button>
+        </dialog>
         <dialog class="details-dialog" id="readme-dialog">
             <div id="readme-content"></div>
             <button aria-label="Lukk README beskrivelse" class="dialog-close" id="close-readme-dialog">×</button>
@@ -123,6 +129,11 @@
         let currentDate = new Date().toISOString().split('T')[0];
         let reportList = []; // Global rapportliste
         let availableDates = [];
+        let projectTrendCache = {
+            reportList: null,
+            selectedDate: null,
+            trendsByProject: new Map()
+        };
 
         /**
          * Get URL query parameter by name
@@ -188,7 +199,7 @@
         let allReportsForDate = []; // Store all reports for the current date
 
         // Global variables to track current sorting state
-        let currentSortColumnIndex = 3; // Default sort by streak column (index 3)
+        let currentSortColumnIndex = 5; // Default sort by total violations
         let currentSortDirection = 'desc'; // Default sort direction
 
         /**
@@ -803,6 +814,177 @@
             };
         }
 
+        function getProjectTrendData(projectName, selectedDate = null) {
+            if (projectTrendCache.reportList !== reportList ||
+                projectTrendCache.selectedDate !== selectedDate) {
+                const reportsByProject = new Map();
+
+                reportList.forEach(filename => {
+                    const report = parseReportFilename(filename);
+                    if (!report ||
+                        report.violationCount === null ||
+                        (selectedDate && report.date > selectedDate)) {
+                        return;
+                    }
+
+                    const normalizedProject = fixUtf8Encoding(report.project);
+                    if (!reportsByProject.has(normalizedProject)) {
+                        reportsByProject.set(normalizedProject, new Map());
+                    }
+
+                    const reportsByDate = reportsByProject.get(normalizedProject);
+                    const existing = reportsByDate.get(report.date);
+                    if (!existing || report.filename > existing.filename) {
+                        reportsByDate.set(report.date, report);
+                    }
+                });
+
+                const trendsByProject = new Map();
+                reportsByProject.forEach((reportsByDate, normalizedProject) => {
+                    trendsByProject.set(
+                        normalizedProject,
+                        Array.from(reportsByDate.values())
+                            .sort((a, b) => a.date.localeCompare(b.date))
+                            .map(report => ({
+                                date: report.date,
+                                violations: report.violationCount
+                            }))
+                    );
+                });
+
+                projectTrendCache = {
+                    reportList,
+                    selectedDate,
+                    trendsByProject
+                };
+            }
+
+            return projectTrendCache.trendsByProject.get(projectName) || [];
+        }
+
+        function countViolationChanges(trendData) {
+            return trendData.slice(1).reduce((changes, point, index) => {
+                return changes + (point.violations !== trendData[index].violations ? 1 : 0);
+            }, 0);
+        }
+
+        function showTrendsDialog(projectName, trendData) {
+            const dialog = document.getElementById('trends-dialog');
+            const title = document.getElementById('trends-dialog-title');
+            const content = document.getElementById('trends-dialog-content');
+            const changeCount = countViolationChanges(trendData);
+
+            title.textContent = `${projectName} - Trends`;
+            content.replaceChildren();
+
+            if (trendData.length === 0) {
+                const empty = document.createElement('p');
+                empty.className = 'trend-empty';
+                empty.textContent = 'No historical violation data is available for this project.';
+                content.appendChild(empty);
+                dialog.showModal();
+                return;
+            }
+
+            const first = trendData[0];
+            const last = trendData[trendData.length - 1];
+            const increaseCount = trendData.slice(1).filter((point, index) =>
+                point.violations > trendData[index].violations).length;
+            const decreaseCount = trendData.slice(1).filter((point, index) =>
+                point.violations < trendData[index].violations).length;
+
+            const summary = document.createElement('p');
+            summary.className = 'trend-summary';
+            summary.textContent = `${trendData.length} reports · ${changeCount} changes · ` +
+                `${decreaseCount} decreases · ${increaseCount} increases · ` +
+                `${first.violations} → ${last.violations} violations`;
+            content.appendChild(summary);
+
+            const chartContainer = document.createElement('div');
+            chartContainer.className = 'project-trend-chart';
+            chartContainer.setAttribute('role', 'img');
+            chartContainer.setAttribute(
+                'aria-label',
+                `Trend graph for ${projectName}: ${trendData.length} reports and ${changeCount} changes in violations`
+            );
+            content.appendChild(chartContainer);
+
+            const chartWidth = 900;
+            const chartHeight = 420;
+            const margin = { top: 25, right: 30, bottom: 65, left: 70 };
+            const width = chartWidth - margin.left - margin.right;
+            const height = chartHeight - margin.top - margin.bottom;
+            const parseDate = d3.utcParse('%Y-%m-%d');
+            const chartData = trendData.map(point => ({
+                ...point,
+                parsedDate: parseDate(point.date)
+            }));
+
+            const svg = d3.select(chartContainer)
+                .append('svg')
+                .attr('viewBox', `0 0 ${chartWidth} ${chartHeight}`)
+                .attr('aria-hidden', 'true');
+            const plot = svg.append('g')
+                .attr('transform', `translate(${margin.left},${margin.top})`);
+            const dateExtent = d3.extent(chartData, point => point.parsedDate);
+            const xDomain = dateExtent[0].getTime() === dateExtent[1].getTime()
+                ? [d3.utcDay.offset(dateExtent[0], -1), d3.utcDay.offset(dateExtent[1], 1)]
+                : dateExtent;
+            const maxViolations = d3.max(chartData, point => point.violations) || 0;
+            const xScale = d3.scaleUtc().domain(xDomain).range([0, width]);
+            const yScale = d3.scaleLinear()
+                .domain([0, Math.max(1, maxViolations)])
+                .nice()
+                .range([height, 0]);
+
+            plot.append('g')
+                .attr('class', 'trend-grid')
+                .call(d3.axisLeft(yScale).ticks(6).tickSize(-width).tickFormat(''));
+            plot.append('g')
+                .attr('class', 'trend-axis')
+                .attr('transform', `translate(0,${height})`)
+                .call(d3.axisBottom(xScale).ticks(Math.min(8, chartData.length)).tickFormat(d3.utcFormat('%b %Y')));
+            plot.append('g')
+                .attr('class', 'trend-axis')
+                .call(d3.axisLeft(yScale).ticks(6).tickFormat(d3.format('d')));
+
+            plot.append('text')
+                .attr('class', 'trend-axis-label')
+                .attr('x', width / 2)
+                .attr('y', height + 55)
+                .attr('text-anchor', 'middle')
+                .text('Report date');
+            plot.append('text')
+                .attr('class', 'trend-axis-label')
+                .attr('transform', 'rotate(-90)')
+                .attr('x', -height / 2)
+                .attr('y', -50)
+                .attr('text-anchor', 'middle')
+                .text('Total violations');
+
+            const line = d3.line()
+                .x(point => xScale(point.parsedDate))
+                .y(point => yScale(point.violations));
+
+            plot.append('path')
+                .datum(chartData)
+                .attr('class', 'project-trend-line')
+                .attr('d', line);
+
+            plot.selectAll('circle')
+                .data(chartData)
+                .join('circle')
+                .attr('class', 'project-trend-point')
+                .attr('cx', point => xScale(point.parsedDate))
+                .attr('cy', point => yScale(point.violations))
+                .attr('r', 4)
+                .append('title')
+                .text(point => `${point.date}: ${point.violations} violations`);
+
+            dialog.setAttribute('aria-labelledby', 'trends-dialog-title');
+            dialog.showModal();
+        }
+
         function calculateNoViolationsStreak(projectName, reportList, currentReport = null, selectedDate = null) {
     // If current report has violations, streak is always 0
     if (currentReport && currentReport.total_violations > 0) {
@@ -1006,6 +1188,7 @@
                 'Navn',
                 'Se rapportdetaljer',
                 'Achievements',
+                'Trends',
                 'Totalt antall brudd',
                 'Streak (dager uten brudd)',
                 ...(viewMode === 'types' ? Array.from(allViolationTypes) : Array.from(allViolationTags)),
@@ -1060,6 +1243,8 @@
             latestReports.forEach((report, reportIndex) => {
                 const row = document.createElement('tr');
                 const totalViolations = Number.isFinite(report.total_violations) ? report.total_violations : 0;
+                const trendData = getProjectTrendData(report.project, date);
+                const trendChangeCount = countViolationChanges(trendData);
                 row.dataset.violations = totalViolations;
                 row.dataset.streak = reportStreaks.get(report.project);
 
@@ -1108,9 +1293,25 @@
                         });
                         cell.appendChild(achievementsButton);
                     } else if (index === 4) {
-                        cell.textContent = totalViolations;
+                        const trendsButton = document.createElement('button');
+                        trendsButton.className = 'trends-button';
+                        trendsButton.textContent = `📈 Trends ${trendChangeCount}`;
+                        trendsButton.setAttribute(
+                            'aria-label',
+                            `View violation trends for ${report.project}: ${trendChangeCount} changes`
+                        );
+                        trendsButton.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            showTrendsDialog(report.project, trendData);
+                        });
+                        cell.dataset.sortValue = trendChangeCount;
+                        cell.appendChild(trendsButton);
                     } else if (index === 5) {
+                        cell.dataset.sortValue = totalViolations;
+                        cell.textContent = totalViolations;
+                    } else if (index === 6) {
                         const streakValue = reportStreaks.get(report.project);
+                        cell.dataset.sortValue = streakValue;
                         // Add fire emoji for projects with the highest streak
                         cell.textContent = streakValue === maxStreak && maxStreak > 0 ? `${streakValue} 🔥` : streakValue;
                     } else {
@@ -1134,7 +1335,7 @@
 
             // Set initial sort direction and apply sort
             table.dataset.sortDirection = 'desc';
-            sortTable(table, 4, true);
+            sortTable(table, 5, true);
         }
 
         function sortTable(table, columnIndex, isInitialSort = false) {
@@ -1143,12 +1344,14 @@
 
             if (!rows.length) return;
 
-            const isNumeric = !isNaN(rows[0].children[columnIndex]?.textContent);
+            const firstCell = rows[0].children[columnIndex];
+            const isNumeric = firstCell?.dataset.sortValue !== undefined ||
+                !isNaN(firstCell?.textContent);
             
             // Determine sort direction based on whether we're sorting the same column
             let newSortDirection;
             if (isInitialSort) {
-                // Initial sort - use descending for the streak column
+                // Initial sort - use descending for the default numeric column
                 newSortDirection = 'desc';
                 currentSortColumnIndex = columnIndex;
             } else if (currentSortColumnIndex === columnIndex) {
@@ -1188,24 +1391,18 @@
             rows.sort((a, b) => {
                 let aValue, bValue;
                 
-                // For streak column, use data attribute instead of text content
-                // to avoid issues with fire emoji affecting numeric parsing
-                if (columnIndex === 4) {
-                    aValue = parseInt(a.dataset.streak) || 0;
-                    bValue = parseInt(b.dataset.streak) || 0;
-                } else {
-                    aValue = a.children[columnIndex]?.textContent || '';
-                    bValue = b.children[columnIndex]?.textContent || '';
+                const aCell = a.children[columnIndex];
+                const bCell = b.children[columnIndex];
+                aValue = aCell?.dataset.sortValue ?? aCell?.textContent ?? '';
+                bValue = bCell?.dataset.sortValue ?? bCell?.textContent ?? '';
 
-                    if (columnIndex === 1) {
-                        aValue = aValue.replace('Se rapport fra ', '');
-                        bValue = bValue.replace('Se rapport fra ', '');
-                    }
+                if (columnIndex === 1) {
+                    aValue = aValue.replace('Se rapport fra ', '');
+                    bValue = bValue.replace('Se rapport fra ', '');
                 }
 
                 let comparison;
-                if (columnIndex === 4 || isNumeric) {
-                    // Numeric comparison for streak column and other numeric columns
+                if (isNumeric) {
                     const aNum = typeof aValue === 'number' ? aValue : (parseFloat(aValue) || 0);
                     const bNum = typeof bValue === 'number' ? bValue : (parseFloat(bValue) || 0);
                     comparison = aNum - bNum;
@@ -1216,8 +1413,7 @@
                 // Apply primary sort direction
                 const primaryComparison = newSortDirection === 'desc' ? -comparison : comparison;
                 
-                // If sorting by streak column (index 4) and values are equal, use name (index 1) as secondary sort (alphabetically)
-                if (columnIndex === 4 && comparison === 0) {
+                if (columnIndex === 6 && comparison === 0) {
                     const aName = a.children[1]?.textContent || '';
                     const bName = b.children[1]?.textContent || '';
                     return aName.localeCompare(bName);
@@ -1271,6 +1467,19 @@
         dialog.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 dialog.close();
+            }
+        });
+
+        const trendsDialog = document.getElementById('trends-dialog');
+        document.getElementById('close-trends-dialog').addEventListener('click', () => trendsDialog.close());
+        trendsDialog.addEventListener('click', (e) => {
+            if (e.target === trendsDialog) {
+                trendsDialog.close();
+            }
+        });
+        trendsDialog.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                trendsDialog.close();
             }
         });
 
