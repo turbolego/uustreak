@@ -1,6 +1,6 @@
 # WCAG Violations Report for BN Bank ASA
 
-**Timestamp:** 2026-09-22T03:37:27.906Z
+**Timestamp:** 2026-09-23T03:44:01.734Z
 **URL:** [https://www.bnbank.no/](https://www.bnbank.no/)
 **Total Violations:** 6
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.reduced-padding-top > .container > .row-component__content > .background--light-wine-red.text-left.content-card > .content-card--image-above.content-card__content-wrapper > .content-card__content > .content-card__upper-content > .h3.text-left`
+- `.background--light-wine-red > .content-card--image-above.content-card__content-wrapper > .content-card__content > .content-card__upper-content > .h3`
 
 ### Heading levels should only increase by one
 

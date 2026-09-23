@@ -1,6 +1,6 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-09-22T03:48:37.953Z
+**Timestamp:** 2026-09-23T04:00:19.160Z
 **URL:** [https://www.lydenavradio.no/p4/](https://www.lydenavradio.no/p4/)
 **Total Violations:** 7
 
@@ -107,15 +107,14 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 13
+- **Count:** 12
 
 #### Affected Elements:
 
 - `.image-container[data-v-4af17d0f=""] > a[data-v-4af17d0f=""]`
 - `.content-box.compact[data-v-d583c235=""] > .image-link[data-v-d583c235=""]`
-- `.large.contest-box.item > .image-link[data-v-f1ce81f5=""]`
-- `.contest-box.medium-large.item > .image-link[data-v-f1ce81f5=""]`
 - `.image-link[href$="fem-pa/"][data-v-d583c235=""]`
+- `.contest-box.medium-large.item > .image-link[data-v-f1ce81f5=""]`
 - `.image-link[rel="noopener noreferrer"][target="_blank"]`
 - `.large.section-box.item > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`
 - `.small.section-box.item:nth-child(1) > .image-container[data-v-8f3c07bb=""] > a[data-v-8f3c07bb=""]`

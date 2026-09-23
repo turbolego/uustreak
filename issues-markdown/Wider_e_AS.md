@@ -1,6 +1,6 @@
 # WCAG Violations Report for Widerøe AS
 
-**Timestamp:** 2026-09-22T03:55:45.511Z
+**Timestamp:** 2026-09-23T04:11:54.393Z
 **URL:** [https://www.wideroe.no/](https://www.wideroe.no/)
 **Total Violations:** 7
 
@@ -90,7 +90,7 @@
 - **Description:** Ensure <li> elements are used semantically
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/listitem?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 21
+- **Count:** 20
 
 #### Affected Elements:
 
@@ -114,4 +114,3 @@
 - `.col-sm-12.col-md-6.col-xs-12:nth-child(2) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role="navigation"] > .list-link-footer:nth-child(4)`
 - `.col-sm-12.col-md-6.col-xs-12:nth-child(2) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role="navigation"] > .list-link-footer:nth-child(5)`
 - `.col-sm-12.col-md-6.col-xs-12:nth-child(2) > .row > .col-sm-6.col-md-6.col-xs-12:nth-child(1) > ul[role="navigation"] > .list-link-footer:nth-child(6)`
-- `.list-link-footer:nth-child(7)`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telia Norge AS
 
-**Timestamp:** 2026-09-22T03:53:25.219Z
+**Timestamp:** 2026-09-23T04:07:36.358Z
 **URL:** [https://www.telia.no/](https://www.telia.no/)
 **Total Violations:** 4
 
@@ -36,7 +36,7 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 15
+- **Count:** 13
 
 #### Affected Elements:
 
@@ -50,8 +50,6 @@
 - `.slide:nth-child(8) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(1) > .bottom-left.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(10) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(11) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(12) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(13) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(1) > .bottom-left.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(14) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(15) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `._teddy-card--rich-card_kudfq_168._teddy-card--gray_kudfq_281._teddy-grid_1dv1t_2:nth-child(4) > ._teddy-card__inset--top_kudfq_420._teddy-card__inset--left_kudfq_423._teddy-card__inset--right_kudfq_426 > ._teddy-image_jxcdf_2`
