@@ -1,23 +1,10 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2026-09-23T04:04:35.875Z
+**Timestamp:** 2026-09-24T04:00:32.769Z
 **URL:** [https://bymuseet.no/](https://bymuseet.no/)
-**Total Violations:** 9
+**Total Violations:** 8
 
 ## Violation Details
-
-### ARIA role should be appropriate for the element
-
-- **Impact:** minor
-- **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
-- **Tags:** cat.aria, best-practice
-- **Count:** 2
-
-#### Affected Elements:
-
-- `#vimeo-video-banner, body`
-- `#slick-slide00 > .vimeo-wrapper > iframe, body`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -90,13 +77,11 @@
 - **Description:** Ensure the document has a main landmark
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-one-main?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
 - `html`
-- `#vimeo-video-banner, html`
-- `#slick-slide00 > .vimeo-wrapper > iframe, html`
 
 ### Links must have discernible text
 
@@ -149,13 +134,11 @@
 - **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/page-has-heading-one?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
 - `html`
-- `#vimeo-video-banner, html`
-- `#slick-slide00 > .vimeo-wrapper > iframe, html`
 
 ### All page content should be contained by landmarks
 

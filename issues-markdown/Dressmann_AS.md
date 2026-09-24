@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dressmann AS
 
-**Timestamp:** 2026-09-23T03:48:53.687Z
+**Timestamp:** 2026-09-24T03:37:05.842Z
 **URL:** [https://dressmann.com/no/](https://dressmann.com/no/)
 **Total Violations:** 3
 
@@ -12,10 +12,11 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `#react_3f00f691-fbec-49d7-b803-5747f2df16d5 > .css-1ljaiw5-StyledProductListBlock.ey9rwho0 > .css-1dlfasc-StyledProductListSlider.e12nlr8e5[aria-label="Glidebryter med produkter"]`
 - `.css-smxovs-StyledCssSliderWrapper`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements

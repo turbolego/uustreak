@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lofotr Vikingmuseum AS
 
-**Timestamp:** 2026-09-23T03:56:53.566Z
+**Timestamp:** 2026-09-24T03:45:16.738Z
 **URL:** [https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/](https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/)
 **Total Violations:** 9
 

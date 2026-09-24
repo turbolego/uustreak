@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norgesbuss AS
 
-**Timestamp:** 2026-09-23T03:58:30.733Z
+**Timestamp:** 2026-09-24T03:48:56.400Z
 **URL:** [https://www.connectbus.no/](https://www.connectbus.no/)
 **Total Violations:** 1
 

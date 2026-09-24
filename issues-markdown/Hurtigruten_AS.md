@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hurtigruten AS
 
-**Timestamp:** 2026-09-23T03:53:16.426Z
+**Timestamp:** 2026-09-24T03:41:42.103Z
 **URL:** [https://www.hurtigruten.com/nb-no](https://www.hurtigruten.com/nb-no)
 **Total Violations:** 5
 

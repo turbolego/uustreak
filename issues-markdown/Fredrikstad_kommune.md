@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fredrikstad kommune
 
-**Timestamp:** 2026-09-23T03:51:16.927Z
+**Timestamp:** 2026-09-24T03:40:11.046Z
 **URL:** [https://www.fredrikstad.kommune.no/](https://www.fredrikstad.kommune.no/)
 **Total Violations:** 4
 

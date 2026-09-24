@@ -1,8 +1,8 @@
 # WCAG Violations Report for Utdanningsforbundet
 
-**Timestamp:** 2026-09-23T04:11:42.633Z
+**Timestamp:** 2026-09-24T04:17:08.148Z
 **URL:** [https://www.utdanningsforbundet.no/](https://www.utdanningsforbundet.no/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -60,23 +60,9 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `#coiOverlay`
-- `main`
-- `.BlockWrapper_span-3__H0f6B[data-display-option="full"]:nth-child(1) > div > .LocalNavigationTopLayout_localNavigationTop__I8NPN[aria-label="Lokal navigasjon"]`
-
-### [role="img"] elements must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure [role="img"] elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/role-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 2
 
 #### Affected Elements:
 
-- `iframe[frameborder="0"], .ShareControl__ShareIcon-sc-1pwe6vd-0`
-- `iframe[frameborder="0"], .SubscribeLink__PlusIcon-sc-q4x3v7-0`
+- `#coiOverlay`
+- `.BlockWrapper_span-3__H0f6B[data-display-option="full"]:nth-child(1) > div > .LocalNavigationTopLayout_localNavigationTop__I8NPN[aria-label="Lokal navigasjon"]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kvadraturen skolesenter
 
-**Timestamp:** 2026-09-23T03:55:38.901Z
+**Timestamp:** 2026-09-24T03:44:38.616Z
 **URL:** [https://kvadraturen.vgs.no/](https://kvadraturen.vgs.no/)
 **Total Violations:** 3
 

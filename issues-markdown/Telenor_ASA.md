@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-09-23T04:08:02.760Z
+**Timestamp:** 2026-09-24T04:10:59.943Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
 **Total Violations:** 6
 
@@ -41,8 +41,8 @@
 
 #### Affected Elements:
 
-- `.swiper-slide.spotlight-slide[data-v-9528d48a=""]:nth-child(6) > .spotlight-product-card[ondragstart="return false"][draggable="false"] > .image-container[data-v-e4fb5de4=""] > img[height="200"][data-nuxt-img=""]`
-- `a[href$="apple-airpods-5/"] > .image-container[data-v-e4fb5de4=""] > img[height="200"][data-nuxt-img=""]`
+- `.swiper-slide.spotlight-slide[data-v-9528d48a=""]:nth-child(6) > .spotlight-product-card[ondragstart="return false"][draggable="false"] > .image-container[data-v-d4e53f6a=""] > img[height="200"][data-nuxt-img=""]`
+- `a[href$="apple-airpods-5/"] > .image-container[data-v-d4e53f6a=""] > img[height="200"][data-nuxt-img=""]`
 
 ### <li> elements must be contained in a <ul> or <ol>
 

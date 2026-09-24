@@ -1,6 +1,6 @@
 # WCAG Violations Report for LO - Landsorganisasjonen i Norge
 
-**Timestamp:** 2026-09-23T03:56:42.074Z
+**Timestamp:** 2026-09-24T03:45:22.523Z
 **URL:** [https://www.lo.no/](https://www.lo.no/)
 **Total Violations:** 3
 
@@ -17,17 +17,17 @@
 #### Affected Elements:
 
 - `.articleTeaser--large > .articleTeaser__image > .image > .is-loaded`
-- `.articleTeaser--medium.articleTeaser:nth-child(2) > .articleTeaser__image > .image > .is-loaded`
 - `.articleTeaser--medium.articleTeaser:nth-child(3) > .articleTeaser__image > .image > img`
 - `.articleTeaser--medium.articleTeaser:nth-child(4) > .articleTeaser__image > .image > img`
 - `.articleTeaser--medium.articleTeaser:nth-child(5) > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(7) > .articleTeaser__image > .image > img`
-- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--blue:nth-child(8) > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(9) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(6) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(8) > .articleTeaser__image > .image > img`
+- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--blue:nth-child(9) > .articleTeaser__image > .image > img`
 - `.articleTeaser--medium.articleTeaser:nth-child(10) > .articleTeaser__image > .image > img`
 - `.articleTeaser--medium.articleTeaser:nth-child(11) > .articleTeaser__image > .image > img`
-- `.articleTeaser--medium.articleTeaser:nth-child(16) > .articleTeaser__image > .image > img`
-- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--blue:nth-child(17) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(12) > .articleTeaser__image > .image > img`
+- `.articleTeaser--medium.articleTeaser:nth-child(17) > .articleTeaser__image > .image > img`
+- `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--blue:nth-child(18) > .articleTeaser__image > .image > img`
 - `.themeTeaser--featured.themeTeaser:nth-child(2) > .image > img`
 - `.themeTeaser--featured.themeTeaser:nth-child(3) > .image > img`
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Adecco Norge AS
 
-**Timestamp:** 2026-09-23T03:37:10.830Z
+**Timestamp:** 2026-09-24T03:27:09.553Z
 **URL:** [https://www.adecco.com/nb-no](https://www.adecco.com/nb-no)
 **Total Violations:** 4
 

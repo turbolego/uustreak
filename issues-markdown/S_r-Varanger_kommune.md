@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sør-Varanger kommune
 
-**Timestamp:** 2026-09-23T04:03:13.774Z
+**Timestamp:** 2026-09-24T03:57:41.445Z
 **URL:** [https://sor-varanger.kommune.no/](https://sor-varanger.kommune.no/)
 **Total Violations:** 1
 

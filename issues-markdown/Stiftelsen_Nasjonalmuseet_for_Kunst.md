@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Nasjonalmuseet for Kunst
 
-**Timestamp:** 2026-09-23T04:05:37.377Z
+**Timestamp:** 2026-09-24T03:58:59.802Z
 **URL:** [https://www.nasjonalmuseet.no/](https://www.nasjonalmuseet.no/)
 **Total Violations:** 4
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 14
+- **Count:** 18
 
 #### Affected Elements:
 
@@ -26,10 +26,14 @@
 - `li[aria-label="7 av 9"]`
 - `li[aria-label="8 av 9"]`
 - `li[aria-label="9 av 9"]`
-- `li[aria-label="1 av 4"]`
-- `li[aria-label="2 av 4"]`
-- `li[aria-label="3 av 4"]`
-- `li[aria-label="4 av 4"]`
+- `div[title="Utvalgte arrangementer "] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="1 av 4"][role="group"]`
+- `div[title="Utvalgte arrangementer "] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="2 av 4"][role="group"]`
+- `div[title="Utvalgte arrangementer "] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="3 av 4"][role="group"]`
+- `div[title="Utvalgte arrangementer "] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="4 av 4"][role="group"]`
+- `div[title="Aktuelt"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="1 av 4"][role="group"]`
+- `div[title="Aktuelt"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="2 av 4"][role="group"]`
+- `div[title="Aktuelt"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="3 av 4"][role="group"]`
+- `div[title="Aktuelt"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="4 av 4"][role="group"]`
 
 ### Document should not have more than one banner landmark
 
@@ -61,9 +65,10 @@
 - **Description:** Ensure that lists are structured correctly
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/list?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `div[title="Utstillinger"] > .ulc-carousel__track`
+- `div[title="Utvalgte arrangementer "] > .ulc-carousel__track`
 - `div[title="Aktuelt"] > .ulc-carousel__track`

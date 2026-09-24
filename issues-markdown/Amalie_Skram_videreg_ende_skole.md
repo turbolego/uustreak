@@ -1,6 +1,6 @@
 # WCAG Violations Report for Amalie Skram videregående skole
 
-**Timestamp:** 2026-09-23T03:41:07.130Z
+**Timestamp:** 2026-09-24T03:29:08.278Z
 **URL:** [https://www.amalieskram.vgs.no/](https://www.amalieskram.vgs.no/)
 **Total Violations:** 4
 

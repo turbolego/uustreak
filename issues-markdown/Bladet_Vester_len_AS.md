@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-09-23T03:45:33.737Z
+**Timestamp:** 2026-09-24T03:33:33.723Z
 **URL:** [https://www.blv.no/](https://www.blv.no/)
 **Total Violations:** 6
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v3[data-slides="9"] > .carousel[aria-label="Innholdskarusell"][role="region"]`
+- `brick-carousel-v3[data-slides="11"] > .carousel[aria-label="Innholdskarusell"][role="region"]`
 
 ### Links must have discernible text
 

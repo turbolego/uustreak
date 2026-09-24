@@ -1,6 +1,6 @@
 # WCAG Violations Report for Clas Ohlson AS
 
-**Timestamp:** 2026-09-23T03:45:03.764Z
+**Timestamp:** 2026-09-24T03:34:49.838Z
 **URL:** [https://www.clasohlson.com/no/](https://www.clasohlson.com/no/)
 **Total Violations:** 7
 

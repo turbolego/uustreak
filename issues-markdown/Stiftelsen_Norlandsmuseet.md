@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Norlandsmuseet
 
-**Timestamp:** 2026-09-23T04:05:55.056Z
+**Timestamp:** 2026-09-24T04:04:32.300Z
 **URL:** [https://www.nordlandsmuseet.no/hjem](https://www.nordlandsmuseet.no/hjem)
 **Total Violations:** 4
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Landkreditt Bank AS
 
-**Timestamp:** 2026-09-23T03:56:08.774Z
+**Timestamp:** 2026-09-24T03:45:54.879Z
 **URL:** [https://www.landkreditt.no/](https://www.landkreditt.no/)
 **Total Violations:** 8
 
@@ -31,12 +31,12 @@
 
 #### Affected Elements:
 
-- `#calculator-1040cb4b-060d-4a5e-babc-ae291da44523 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(1) > .slider-input[data-input-size="large"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
-- `#calculator-1040cb4b-060d-4a5e-babc-ae291da44523 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(1) > .slider-input[data-input-size="large"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
-- `#calculator-1040cb4b-060d-4a5e-babc-ae291da44523 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(2) > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
-- `#calculator-1040cb4b-060d-4a5e-babc-ae291da44523 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(2) > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
-- `#calculator-1040cb4b-060d-4a5e-babc-ae291da44523 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .panel-calc-slider-last.row > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
-- `#calculator-1040cb4b-060d-4a5e-babc-ae291da44523 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .panel-calc-slider-last.row > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
+- `#calculator-cd43c70e-a73e-44f4-83eb-3322fa88d8b1 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(1) > .slider-input[data-input-size="large"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
+- `#calculator-cd43c70e-a73e-44f4-83eb-3322fa88d8b1 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(1) > .slider-input[data-input-size="large"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
+- `#calculator-cd43c70e-a73e-44f4-83eb-3322fa88d8b1 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(2) > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
+- `#calculator-cd43c70e-a73e-44f4-83eb-3322fa88d8b1 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .row:nth-child(2) > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
+- `#calculator-cd43c70e-a73e-44f4-83eb-3322fa88d8b1 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .panel-calc-slider-last.row > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-minus.btn-haptic[data-bind="click: decrementValue"]`
+- `#calculator-cd43c70e-a73e-44f4-83eb-3322fa88d8b1 > .container-responsive.container-fluid > .row > .col-sm-6.col-md-5:nth-child(1) > .panel-calc > .panel-calc-slider-last.row > .slider-input[data-input-size="small"] > .col-sm-12:nth-child(2) > .col-inner > .slider-control > .btn-plus.btn-haptic[data-bind="click: incrementValue"]`
 
 ### Heading levels should only increase by one
 
@@ -112,4 +112,4 @@
 
 #### Affected Elements:
 
-- `#swiper-wrapper-1f78daed7a4bb55f`
+- `#swiper-wrapper-54a738e4da017a11`

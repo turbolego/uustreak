@@ -1,0 +1,1189 @@
+{
+  "project": "Dagsavisen AS",
+  "timestamp": "2026-09-24T03:34:48.438Z",
+  "url": "https://www.dagsavisen.no/",
+  "total_violations": 8,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h2 class=\"content singleline\" style=\"\">\n        \n    </h2>",
+          "target": [
+            ".text_singleline.large-8.large-abs-8 > .singleline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<iframe id=\"offer_254dd134cddcdf...\" name=\"offer_254dd134cddcdf...\" scrolling=\"no\" allowtransparency=\"true\" allow=\"payment\" allowfullscreen=\"true\" src=\"https://buy.piano.io...\" frameborder=\"0\" style=\"overflow: hidden; ba...\">",
+          "target": [
+            "#offer_254dd134cddcdf6c54e6-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe id=\"offer_f5d28dd56f56b6...\" name=\"offer_f5d28dd56f56b6...\" scrolling=\"no\" allowtransparency=\"true\" allow=\"payment\" allowfullscreen=\"true\" src=\"https://buy.piano.io...\" frameborder=\"0\" style=\"overflow: hidden; ba...\">",
+          "target": [
+            "#offer_f5d28dd56f56b6b28ce4-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe id=\"offer_f5d28dd56f56b6...\" name=\"offer_f5d28dd56f56b6...\" scrolling=\"no\" allowtransparency=\"true\" allow=\"payment\" allowfullscreen=\"true\" src=\"https://buy.piano.io...\" frameborder=\"0\" style=\"overflow: hidden; ba...\">",
+          "target": [
+            "#offer_f5d28dd56f56b6b28ce4-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify...\" width=\"100%\" height=\"152\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-...\" loading=\"lazy\">",
+          "target": [
+            "iframe[data-testid=\"embed-iframe\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<h5 class=\"row_header_text large-12 small-12 t25 font-weight-bold m-font-weight-bold font-InterTight \">Meninger</h5>",
+          "target": [
+            ".bg-white.color_mobile_bg-white.has-row-header > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5 class=\"row_header_text large-12 small-12  \">Kultur</h5>",
+          "target": [
+            ".has-row-header.bg-quinary.color_mobile_bg-quinary > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5 class=\"row_header_text large-12 small-12 t25 tm18 font-weight-bold m-font-weight-bold font-InterTight \">Økonomi</h5>",
+          "target": [
+            ".has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(29) > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img class=\"picture_pic\" src=\"https://mentormedier.labrador.media/_img/img.webp?imageId=10524093&amp;compression=50&amp;width=2000\">",
+          "target": [
+            "#offer_254dd134cddcdf6c54e6-0",
+            "img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"picture_pic\" src=\"https://mentormedier.labrador.media/_img/img.webp?imageId=10524094&amp;compression=50&amp;width=2000\">",
+          "target": [
+            "#offer_f5d28dd56f56b6b28ce4-0",
+            "img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"picture_pic\" src=\"https://mentormedier.labrador.media/_img/img.webp?imageId=10524094&amp;compression=50&amp;width=2000\">",
+          "target": [
+            "#offer_f5d28dd56f56b6b28ce4-1",
+            "img"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"navigation customMenu2\">",
+          "target": [
+            ".customMenu2"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.dagsavis...\" external-event=\"paywall\" external-event-track...=\"Banner - Clicked\" external-event-categ...=\"Banner\" external-event-label=\"Banner_Desktop/Mobil\" external-event-data=\"{\"aid\":\"tOpq1vicpu\",...\" external-event-info=\"\" external-event-url=\"https://www.dagsavis...\" ...>",
+          "target": [
+            "#offer_254dd134cddcdf6c54e6-0",
+            "a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dagsavis...\" external-event=\"paywall\" external-event-track...=\"Banner - Clicked\" external-event-categ...=\"Banner\" external-event-label=\"Banner_Desktop/Mobil\" external-event-data=\"{\"aid\":\"tOpq1vicpu\",...\" external-event-info=\"\" external-event-url=\"https://www.dagsavis...\" ...>",
+          "target": [
+            "#offer_f5d28dd56f56b6b28ce4-0",
+            "a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://www.dagsavis...\" external-event=\"paywall\" external-event-track...=\"Banner - Clicked\" external-event-categ...=\"Banner\" external-event-label=\"Banner_Desktop/Mobil\" external-event-data=\"{\"aid\":\"tOpq1vicpu\",...\" external-event-info=\"\" external-event-url=\"https://www.dagsavis...\" ...>",
+          "target": [
+            "#offer_f5d28dd56f56b6b28ce4-1",
+            "a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://nuu.no/dagsavisen\" target=\"_blank\"></a>",
+          "target": [
+            ".singleline.font-PTSans.t14 > a[href$=\"dagsavisen\"][target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 125,
+      "nodes": [
+        {
+          "html": "<h1 class=\"hidden-heading\">Dagsavisen – Nyheter, politikk, kultur, kommentarer og debatt fra Norge og verden</h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10547549\">Søreide svarer Høyre-opprørere</a></h2>",
+          "target": [
+            "div[title=\"Søreide svarer Høyre-opprørere\"] > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<time class=\"fi-clock\" datetime=\"2026-09-23T19:54:16.000Z\" title=\"23.09.2026 21:54\">7 timer siden</time>",
+          "target": [
+            "time[datetime=\"2026-09-23T19:54:16.000Z\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10547535\">Datainnbrudd hos FBI</a></h2>",
+          "target": [
+            "div[title=\"Datainnbrudd hos FBI\"] > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<time class=\"fi-clock\" datetime=\"2026-09-23T19:24:05.000Z\" title=\"23.09.2026 21:24\">8 timer siden</time>",
+          "target": [
+            "time[datetime=\"2026-09-23T19:24:05.000Z\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10547487\">Støre møtte Irans president</a></h2>",
+          "target": [
+            "div[title=\"Støre møtte Irans president\"] > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<time class=\"fi-clock\" datetime=\"2026-09-23T19:00:21.000Z\" title=\"23.09.2026 21:00\">8 timer siden</time>",
+          "target": [
+            "time[datetime=\"2026-09-23T19:00:21.000Z\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10547486\">Vil forby avansert KI</a></h2>",
+          "target": [
+            "div[title=\"Vil forby avansert KI\"] > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<time class=\"fi-clock\" datetime=\"2026-09-23T18:49:30.000Z\" title=\"23.09.2026 20:49\">8 timer siden</time>",
+          "target": [
+            "time[datetime=\"2026-09-23T18:49:30.000Z\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10547441\">Togstreiken: Ingen dialog</a></h2>",
+          "target": [
+            "div[title=\"Togstreiken: Ingen dialog\"] > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<time class=\"fi-clock\" datetime=\"2026-09-23T17:27:58.000Z\" title=\"23.09.2026 19:27\">10 timer siden</time>",
+          "target": [
+            "time[datetime=\"2026-09-23T17:27:58.000Z\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10547365\">USA inviterer Putin til G20-møte</a></h2>",
+          "target": [
+            "#notice-10547365 > .content > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<time class=\"fi-clock\" datetime=\"2026-09-23T15:23:57.000Z\" title=\"23.09.2026 17:23\">12 timer siden</time>",
+          "target": [
+            "time[datetime=\"2026-09-23T15:23:57.000Z\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10547260\">Iran i FN: «Offer for terrorisme»</a></h2>",
+          "target": [
+            "#notice-10547260 > .content > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<time class=\"fi-clock\" datetime=\"2026-09-23T14:26:04.000Z\" title=\"23.09.2026 16:26\">13 timer siden</time>",
+          "target": [
+            "time[datetime=\"2026-09-23T14:26:04.000Z\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10547257\">Hormuzstredet: Lasteskip i brann</a></h2>",
+          "target": [
+            "#notice-10547257 > .content > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<time class=\"fi-clock\" datetime=\"2026-09-23T14:25:10.000Z\" title=\"23.09.2026 16:25\">13 timer siden</time>",
+          "target": [
+            "time[datetime=\"2026-09-23T14:25:10.000Z\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10547076\">ESC: Nederland blir med likevel</a></h2>",
+          "target": [
+            "#notice-10547076 > .content > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<time class=\"fi-clock\" datetime=\"2026-09-23T13:26:45.000Z\" title=\"23.09.2026 15:26\">14 timer siden</time>",
+          "target": [
+            "time[datetime=\"2026-09-23T13:26:45.000Z\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10547064\">Asialekene: 13-åring herjer</a></h2>",
+          "target": [
+            "div[title=\"Asialekene: 13-åring herjer\"] > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<time class=\"fi-clock\" datetime=\"2026-09-23T13:24:45.000Z\" title=\"23.09.2026 15:24\">14 timer siden</time>",
+          "target": [
+            "time[datetime=\"2026-09-23T13:24:45.000Z\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10547004\">Sverige: Ny valgfusk-mistanke</a></h2>",
+          "target": [
+            "div[title=\"Sverige: Ny valgfusk-mistanke\"] > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<time class=\"fi-clock\" datetime=\"2026-09-23T13:09:27.000Z\" title=\"23.09.2026 15:09\">14 timer siden</time>",
+          "target": [
+            "time[datetime=\"2026-09-23T13:09:27.000Z\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10546108\">Vy innstiller over 200 avganger</a></h2>",
+          "target": [
+            "#notice-10546108 > .content > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"> <time class=\"fi-clock\" datetime=\"2026-09-23T10:41:16.000Z\" title=\"23.09.2026 12:41\">16 timer siden</time> </div>",
+          "target": [
+            "#notice-10546108 > .content > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10545838\">Stortinget blir lørdagsåpent</a></h2>",
+          "target": [
+            "div[title=\"Stortinget blir lørdagsåpent\"] > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"> <time class=\"fi-clock\" datetime=\"2026-09-23T09:25:30.000Z\" title=\"23.09.2026 11:25\">18 timer siden</time> </div>",
+          "target": [
+            "div[title=\"Stortinget blir lørdagsåpent\"] > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10545449\">Xi på vei til Trump</a></h2>",
+          "target": [
+            "div[title=\"Xi på vei til Trump\"] > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"> <time class=\"fi-clock\" datetime=\"2026-09-23T07:59:53.000Z\" title=\"23.09.2026 09:59\">19 timer siden</time> </div>",
+          "target": [
+            "div[title=\"Xi på vei til Trump\"] > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10545292\">Russisk angrep mot utenlandsk skip</a></h2>",
+          "target": [
+            "#notice-10545292 > .content > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"> <time class=\"fi-clock\" datetime=\"2026-09-23T07:04:34.000Z\" title=\"23.09.2026 09:04\">20 timer siden</time> </div>",
+          "target": [
+            "#notice-10545292 > .content > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10545200\">Minst elleve drept i Sør-Afrika</a></h2>",
+          "target": [
+            "#notice-10545200 > .content > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"> <time class=\"fi-clock\" datetime=\"2026-09-23T06:04:27.000Z\" title=\"23.09.2026 08:04\">21 timer siden</time> </div>",
+          "target": [
+            "#notice-10545200 > .content > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10545178\">Trump har møtt Rodriguez </a></h2>",
+          "target": [
+            "div[title=\"Trump har møtt Rodriguez \"] > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"> <time class=\"fi-clock\" datetime=\"2026-09-23T05:40:41.000Z\" title=\"23.09.2026 07:40\">21 timer siden</time> </div>",
+          "target": [
+            "div[title=\"Trump har møtt Rodriguez \"] > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10545120\">Trump og Lee har diskutert Korea</a></h2>",
+          "target": [
+            "#notice-10545120 > .content > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"> <time class=\"fi-clock\" datetime=\"2026-09-23T05:19:33.000Z\" title=\"23.09.2026 07:19\">22 timer siden</time> </div>",
+          "target": [
+            "#notice-10545120 > .content > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10545119\">Rubio skal møte Lavrov</a></h2>",
+          "target": [
+            "div[title=\"Rubio skal møte Lavrov\"] > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"meta\"> <time class=\"fi-clock\" datetime=\"2026-09-23T05:18:29.000Z\" title=\"23.09.2026 07:18\">22 timer siden</time> </div>",
+          "target": [
+            "div[title=\"Rubio skal møte Lavrov\"] > .meta"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2><a href=\"/notice/10545039\">Støre diskuterte KI med Mamdani</a></h2>",
+          "target": [
+            "#notice-10545039 > .content > h2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<time class=\"fi-clock\" datetime=\"2026-09-22T19:45:02.000Z\" title=\"22.09.2026 21:45\">1 dag siden</time>",
+          "target": [
+            "time[datetime=\"2026-09-22T19:45:02.000Z\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"68076c09-f54d-4d9a-95b6-1f1cf25861df\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"5c6a9b97-5c62-41ed-af60-6d2a177d28bf\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"013b9dd1-997b-49a7-a08a-29658f10262c\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div ng-show=\"!terminalError\" class=\"\">",
+          "target": [
+            "#offer_254dd134cddcdf6c54e6-0",
+            "div[ng-show=\"!terminalError\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"00c55aa4-9a06-4b06-9dc6-80ed85a1c031\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"b5818e5d-626f-4f65-b2dc-207fdd7a5686\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"15015844-16c6-40c1-9154-bfb325ceff48\" class=\"row small-12 large-12 bg-white color_mobile_bg-white hasContentPadding mobile-hasContentPadding has-row-header\" style=\"\">",
+          "target": [
+            ".bg-white.color_mobile_bg-white.has-row-header"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"54244cf4-e21d-4e47-b7a0-91ffa4461d69\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(10)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"7c8a6b0d-d75e-4fd0-90db-0b02122cc45f\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(11)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div ng-show=\"!terminalError\" class=\"\">",
+          "target": [
+            "#offer_f5d28dd56f56b6b28ce4-0",
+            "div[ng-show=\"!terminalError\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"ea098f3e-8b81-45ed-ac75-f1dbf6f85679\" class=\"row small-12 large-12 bg-quinary color_mobile_bg-quinary hasContentPadding mobile-hasContentPadding has-row-header\" style=\"\">",
+          "target": [
+            ".has-row-header.bg-quinary.color_mobile_bg-quinary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"570725be-00db-40cf-892d-6403772932dc\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(15)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"292de22b-f8d6-4dde-8c8e-70692b0d3f59\" class=\"row small-12 large-12 border-bg-quinary-light mobile_border-bg-quinary-light border-side-top mobile_border-side-top hasBorder mobile-hasBorder\" style=\"\">",
+          "target": [
+            ".page-content > .border-bg-quinary-light.mobile_border-bg-quinary-light.hasBorder"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline lab-scrollbox-headline t25 font-weight-bold m-font-weight-bold font-InterTight\" style=\"\">Folkevalgt</h2>",
+          "target": [
+            "#article_list_10372156 > .content > .lab-scrollbox-headline.t25.font-InterTight"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"scroll-container swipehelper snap-container-x snap-element-start\">",
+          "target": [
+            "#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"6ba85321-822b-4b44-a52c-dbd769194819\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(19)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"c2c74c3d-99f8-491d-adfc-e5ded925e3c9\" class=\"row small-12 large-12 bg-black color_mobile_bg-black hasContentPadding mobile-hasContentPadding\" style=\"\">",
+          "target": [
+            ".bg-black"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"articlescroller-header t25 tm18 font-weight-bold m-font-weight-bold align-left mobile_text_align_align-left font-InterTight\" style=\"\">Verden</h2>",
+          "target": [
+            ".articlescroller-header.t25.tm18"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"scroll-container swipehelper snap-container-x snap-element-start articles count_4 \">",
+          "target": [
+            "#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"d7fb9e13-d51a-4483-950b-756626df99d0\" class=\"row small-12 large-12 color_mobile_no_bg_color mobile_no_border_color border_width_no_border_width border_width_mobile_no_border_width\" style=\"\">",
+          "target": [
+            ".page-content > .border_width_no_border_width.border_width_mobile_no_border_width.mobile_no_border_color"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"e89f4cb7-483d-4b01-9e3f-a7988ec607a8\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(23)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline lab-scrollbox-headline t25 font-weight-bold m-font-weight-bold font-InterTight\" style=\"\">Portrett</h2>",
+          "target": [
+            ".bg-quinary.color_mobile_bg-quinary.hasContentPadding > .lab-scrollbox-headline.t25.font-InterTight"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"scroll-container swipehelper snap-container-x snap-element-start\">",
+          "target": [
+            ".bg-quinary.color_mobile_bg-quinary.hasContentPadding > .scroll-container.swipehelper.snap-container-x"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"c85256ce-083c-4336-8a7c-8364d9904ea0\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(26)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"8ccd558a-ab95-4fd0-b7f6-7f50ac0e10a7\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(27)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"f0e76f06-eb76-45b8-a076-ad56df3b3ce8\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(28)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"79b47eaf-a0d8-43c2-84db-e3792660f582\" class=\"row small-12 large-12 hasContentPadding mobile-hasContentPadding has-row-header\" style=\"background-color:#e7ecf5;\">",
+          "target": [
+            ".has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(29)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"324a7d4d-2535-4864-af6e-cea5b5c3574a\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(31)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline lab-scrollbox-headline t28 font-weight-bold m-font-weight-bold font-InterTight\" style=\"\">Video</h2>",
+          "target": [
+            ".lab-scrollbox-headline.t28.font-InterTight"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\" id=\"status-container\">\n          <div class=\"loading\" id=\"status-message\">Initialiserer...</div>\n        </div>",
+          "target": [
+            [
+              "#markup_10478983 > .fullwidthTarget.content > unite-player",
+              "#status-container"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"floatingText\">\n\n                \t\t<h2 itemprop=\"headline\" class=\"headline t18 tm15 tertiary color_mobile_tertiary align-center mobile_text_align_align-center hasTextColor hasTextColorMobile\" style=\"\">Slik unngår du å ta dem med hjem\n</h2>\n            </div>",
+          "target": [
+            "article[data-instance=\"10478981\"] > .content > .floatingTextSubset.media > .floatingText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\" id=\"status-container\">\n          <div class=\"loading\" id=\"status-message\">Initialiserer...</div>\n        </div>",
+          "target": [
+            [
+              "#markup_10453098 > .fullwidthTarget.content > unite-player",
+              "#status-container"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"floatingText\">\n\n                \t\t<div style=\"\" class=\"kicker floating t18 tm15 color_mobile_no_bg_color tertiary color_mobile_tertiary align-center mobile_text_align_align-center hasTextColor hasTextColorMobile\">\nRekordmange har fått studieplass\n</div>\n            </div>",
+          "target": [
+            "article[data-instance=\"10453097\"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\" id=\"status-container\">\n          <div class=\"loading\" id=\"status-message\">Initialiserer...</div>\n        </div>",
+          "target": [
+            [
+              "#markup_10453072 > .fullwidthTarget.content > unite-player",
+              "#status-container"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"floatingText\">\n\n                \t\t<div style=\"\" class=\"kicker floating t18 tm15 color_mobile_no_bg_color tertiary color_mobile_tertiary align-center mobile_text_align_align-center hasTextColor hasTextColorMobile\">\nTrump vil ha Infantino som ny FN-sjef\n</div>\n            </div>",
+          "target": [
+            "article[data-instance=\"10453073\"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\" id=\"status-container\">\n          <div class=\"loading\" id=\"status-message\">Initialiserer...</div>\n        </div>",
+          "target": [
+            [
+              "#markup_10440435 > .fullwidthTarget.content > unite-player",
+              "#status-container"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"floatingText\">\n\n                \t\t<div style=\"\" class=\"kicker floating t18 tm15 tertiary color_mobile_tertiary hasTextColor hasTextColorMobile\">\nTorsnes Arbeiderlag synger gamle arbeidersanger\n</div>\n            </div>",
+          "target": [
+            ".color_mobile_no_bg_color.align-center.mobile_text_align_align-center > .floatingTextSubset.media > .floatingText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\" id=\"status-container\">\n          <div class=\"loading\" id=\"status-message\">Initialiserer...</div>\n        </div>",
+          "target": [
+            [
+              "#markup_10440421 > .fullwidthTarget.content > unite-player",
+              "#status-container"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"floatingText\">",
+          "target": [
+            "article[data-instance=\"10440420\"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\" id=\"status-container\">\n          <div class=\"loading\" id=\"status-message\">Initialiserer...</div>\n        </div>",
+          "target": [
+            [
+              "#markup_10440430 > .fullwidthTarget.content > unite-player",
+              "#status-container"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"floatingText\">",
+          "target": [
+            "article[data-instance=\"10440429\"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\" id=\"status-container\">\n          <div class=\"loading\" id=\"status-message\">Initialiserer...</div>\n        </div>",
+          "target": [
+            [
+              "#markup_10440438 > .fullwidthTarget.content > unite-player",
+              "#status-container"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"floatingText\">\n\n                \t\t<div style=\"\" class=\"kicker floating t18 tm15 tertiary color_mobile_tertiary hasTextColor hasTextColorMobile\">\nIndias statsminister Narendra Modi på pressekonferanse\n</div>\n            </div>",
+          "target": [
+            "article[data-instance=\"10440437\"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"a8c02955-8742-4739-af03-c9eaab7cb231\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(33)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline lab-scrollbox-headline t25 tm18 font-weight-bold m-font-weight-bold font-InterTight\" style=\"\">Byhistorie</h2>",
+          "target": [
+            ".lab-scrollbox-headline.t25.tm18"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"scroll-container swipehelper snap-container-x snap-element-start\">",
+          "target": [
+            "#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"331632da-4afb-438f-ae77-d790cba60b3c\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(35)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"f3355d1f-0b60-4bb1-93ba-664fc2f455d4\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(37)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"1e601303-bd28-4c66-ac20-f2ee6bd3b1be\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(38)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"04aafc75-19b5-420c-bde1-16545c5c1d2f\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(39)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div ng-show=\"!terminalError\" class=\"\">",
+          "target": [
+            "#offer_f5d28dd56f56b6b28ce4-1",
+            "div[ng-show=\"!terminalError\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"2dc43d75-cb61-44de-937e-a700163c1040\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(41)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"f8f48189-59b4-4eb2-89f3-3306f106d5b9\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(43)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"6b37615c-bd74-4fa5-b74c-ca7d13801ef6\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(44)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline lab-scrollbox-headline align-center mobile_text_align_align-center italic m-italic\" style=\"\">Siri Dokken</h2>",
+          "target": [
+            ".lab-scrollbox-headline.italic.m-italic"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"scroll-container swipehelper snap-container-x snap-element-start\">",
+          "target": [
+            "#article_list_10291490 > .content > .scroll-container.swipehelper.snap-container-x"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"57763f87-0df5-4b4f-a6c2-b0061d202e2e\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(46)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"d0f78bfa-95a6-4136-ac10-7694b931c27f\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(47)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"b7688b31-c067-4ea5-938a-10e9408668c9\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(49)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"9d2bccb5-bd8f-4bc9-8f89-b3df18070150\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(50)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"89fca8c2-d2ce-495a-85c8-eb8941b34e15\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(51)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"f5cec1d2-8fee-49dc-8161-9ae6ec9877ea\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(52)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"09f784d5-c25d-44b1-a58b-afb121eb9e39\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(53)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"e97edea5-fc79-4620-b4fe-808df5834a7a\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(55)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"f4132ede-4f2a-4f8f-8cf7-4b56d79dca98\" class=\"row small-12 large-12 bg-quinary color_mobile_bg-quinary hasContentPadding mobile-hasContentPadding\" style=\"\">",
+          "target": [
+            ".bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(56)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"9c00fb2a-2d27-419f-ad07-5f6e01c27322\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(57)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"991df0c3-1b5e-47e5-98e2-6c615af8f87a\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(58)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"f7180b05-0ff9-4873-9061-374c347bbda1\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(59)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"2ae8e063-9ea1-4f8a-8201-f91fff1237bb\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(61)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"312f488f-9f7b-4128-b600-687f3259be43\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(62)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"4647f3d0-84bb-4ccc-989b-b3b912b747da\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(63)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"020858b3-c5d5-420b-b529-aa9c94142df8\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(64)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"66585fe2-d7c5-4402-a439-52fc8a0cea5e\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(65)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"e9807192-b377-401f-a7fe-70080e9cfadc\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(66)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"7809501c-1f67-4d2e-aa82-a1ee56fa1fbb\" class=\"row small-12 large-12 bg-quinary color_mobile_bg-quinary hasContentPadding mobile-hasContentPadding\" style=\"\">",
+          "target": [
+            ".bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(67)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"78b01775-123a-4b13-aacd-7b6e87ed65e3\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(68)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"2da37ad8-5832-4691-9dce-4e0bf64d9684\" class=\"row small-12 large-12 color_mobile_no_bg_color\" style=\"\">",
+          "target": [
+            ".color_mobile_no_bg_color.row.large-12:nth-child(69)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"69031ebf-f6b3-4b33-88f1-3d06204b2222\" class=\"row small-12 large-12 bg-quinary color_mobile_bg-quinary hasContentPadding mobile-hasContentPadding\" style=\"\">",
+          "target": [
+            ".bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(70)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 class=\"articlescroller-header t25 tm20 font-weight-normal m-font-weight-normal align-center mobile_text_align_align-center font-PTSans\" style=\"\">Quiz</h2>",
+          "target": [
+            ".tm20"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<ul class=\"scroll-container swipehelper snap-container-x snap-element-start articles count_4 \">",
+          "target": [
+            "#article_list_9904930 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"d4c44f57-b530-451b-995c-599f6d3d33fa\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(72)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"909dad41-0a3d-4043-8a53-299ef8af9a76\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(75)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"b5071864-17f9-40ee-8aa3-cfcf21c94021\" class=\"row small-12 large-12 bg-quaternary color_mobile_bg-quaternary hasContentPadding mobile-hasContentPadding\" style=\"\">",
+          "target": [
+            ".color_mobile_bg-quaternary.bg-quaternary.hasContentPadding"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"powered-by \"><a href=\"https://labradorcms.com/\" target=\"_blank\">Powered by Labrador CMS</a></div>",
+          "target": [
+            ".powered-by"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "scrollable-region-focusable",
+      "impact": "serious",
+      "description": "Ensure elements that have scrollable content are accessible by keyboard in Safari",
+      "help": "Scrollable region must have keyboard access",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/scrollable-region-focusable?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag211",
+        "wcag213",
+        "TTv5",
+        "TT4.a",
+        "EN-301-549",
+        "EN-9.2.1.1",
+        "EN-9.2.1.3",
+        "RGAAv4",
+        "RGAA-7.3.2"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<ul class=\"scroll-container swipehelper snap-container-x snap-element-start\">",
+          "target": [
+            "#article_list_10440424 > .content > .scroll-container.swipehelper.snap-container-x"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+        }
+      ]
+    }
+  ]
+}
