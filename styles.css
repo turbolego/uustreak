@@ -201,10 +201,72 @@ a:focus {
     overflow-y: auto;
 }
 
-/* README dialog specific styling */
+/* Scrollable content keeps the close button in reach in both large dialogs. */
+#trends-dialog,
 #readme-dialog {
-    max-width: min(90vw, 900px);
-    max-height: 95vh;
+    width: 90vw;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+#trends-dialog {
+    height: 90vh;
+}
+
+#readme-dialog {
+    width: min(90vw, 900px);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-shrink: 0;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-header h2 {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.modal-header .dialog-close {
+    position: static;
+    flex-shrink: 0;
+}
+
+#trends-dialog-content,
+#readme-content {
+    min-height: 0;
+    min-width: 0;
+    overflow-y: auto;
+    padding-top: 1rem;
+}
+
+#readme-content {
+    overflow-wrap: anywhere;
+}
+
+#readme-content > a {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+#readme-content h1,
+#readme-content h2,
+#readme-content h3,
+#readme-content p {
+    margin-bottom: 1rem;
+}
+
+#readme-content pre,
+#readme-content table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
 }
 
 /* Image styling for readme content */
@@ -629,12 +691,7 @@ details summary:hover {
 }
 
 #trends-dialog {
-    max-width: min(95vw, 1000px);
-    max-height: 95vh;
-}
-
-#trends-dialog-content {
-    min-width: 0;
+    padding: clamp(1rem, 2vw, 1.5rem);
 }
 
 .trend-summary {
@@ -760,7 +817,7 @@ details summary:hover {
         padding-top: 0.5rem;
         text-align: left;
     }
-}
+
     body {
         padding: 0.5rem;
     }
@@ -769,6 +826,12 @@ details summary:hover {
         width: calc(100% - 2rem);
         margin: 1rem;
         padding: 1rem;
+    }
+
+    #trends-dialog,
+    #readme-dialog {
+        width: 90vw;
+        margin: 0;
     }
 
     .dialog-content {
