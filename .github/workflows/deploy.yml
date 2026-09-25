@@ -38,7 +38,7 @@ jobs:
   setup:
     needs: gate
     if: ${{ needs.gate.outputs.run == 'true' || github.event_name == 'workflow_dispatch' }}
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
       cache-path: ${{ steps.cache-output.outputs.cache-path }}
@@ -87,7 +87,7 @@ jobs:
   wcag-test:
     needs: [gate, setup]
     if: ${{ needs.gate.outputs.run == 'true' || github.event_name == 'workflow_dispatch' }}
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     strategy:
       matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
       fail-fast: false
@@ -191,7 +191,7 @@ jobs:
 
   merge-summaries:
     needs: [gate, wcag-test]
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     if: ${{ always() && (needs.gate.outputs.run == 'true' || github.event_name == 'workflow_dispatch') && needs.wcag-test.result == 'success' }}
     steps:
       - name: Checkout repository
@@ -261,7 +261,7 @@ jobs:
 
   deploy:
     needs: [gate, wcag-test, merge-summaries]
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     if: ${{ always() && (needs.gate.outputs.run == 'true' || github.event_name == 'workflow_dispatch') && needs.merge-summaries.result == 'success' }}
     steps:
       - name: Checkout repository
