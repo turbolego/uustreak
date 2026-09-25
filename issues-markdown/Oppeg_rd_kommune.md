@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oppegård kommune
 
-**Timestamp:** 2026-09-24T03:50:42.562Z
+**Timestamp:** 2026-09-25T04:07:45.385Z
 **URL:** [https://www.nordrefollo.kommune.no/](https://www.nordrefollo.kommune.no/)
 **Total Violations:** 1
 

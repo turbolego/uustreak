@@ -1,6 +1,6 @@
 # WCAG Violations Report for Helse Bergen HF
 
-**Timestamp:** 2026-09-24T03:41:06.852Z
+**Timestamp:** 2026-09-25T03:58:48.338Z
 **URL:** [https://www.helse-bergen.no/](https://www.helse-bergen.no/)
 **Total Violations:** 1
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Panorama Eiendomsmegling AS
 
-**Timestamp:** 2026-09-24T03:50:05.875Z
+**Timestamp:** 2026-09-25T04:07:15.880Z
 **URL:** [https://privatmegleren.no/](https://privatmegleren.no/)
 **Total Violations:** 2
 

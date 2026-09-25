@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-09-24T04:00:36.536Z
+**Timestamp:** 2026-09-25T04:15:23.853Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -49,22 +49,22 @@
 - `li:nth-child(3) > .ic.id[aria-label="Regnklar regndress"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `li:nth-child(4) > .ic.id[aria-label="Regnklar regndress"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `li:nth-child(4) > .ic.id[aria-label="Regnklar regndress"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `a[aria-label="Lofoten regnvott"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `a[aria-label="Harstad skallanorakk"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `li:nth-child(1) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `li:nth-child(1) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `li:nth-child(2) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `li:nth-child(2) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
+- `a[aria-label="Varde nødsovepose"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `a[aria-label="Varde nødsovepose"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `a[aria-label="Børgefjell regnjakke"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Børgefjell regnjakke"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `a[aria-label="Børgefjell regnbukse"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Børgefjell regnbukse"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
-- `a[aria-label="Varde nødsovepose"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `a[aria-label="Varde nødsovepose"] > .c0.c1.hz > div > .h3 > .jf.i0.bd`
 - `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Fagerli ullsokk 3-pack"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `a[aria-label="Regndag regnbukse unisex"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `a[aria-label="Vika urban ryggsekk 25 L"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
-- `a[aria-label="Harstad skallanorakk"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
+- `a[aria-label="Vika urban ryggsekk 35 L"] > .ih.bc.bd > .iv.im.y > .gz.iw.iu`
 - `#onetrust-accept-btn-handler`
 
 ### Headings should not be empty

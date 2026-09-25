@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ålesund kommune
 
-**Timestamp:** 2026-09-24T03:28:37.643Z
+**Timestamp:** 2026-09-25T03:46:21.943Z
 **URL:** [https://alesund.kommune.no/](https://alesund.kommune.no/)
 **Total Violations:** 2
 

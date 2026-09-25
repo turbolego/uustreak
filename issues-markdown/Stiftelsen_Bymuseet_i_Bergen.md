@@ -1,10 +1,23 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2026-09-24T04:00:32.769Z
+**Timestamp:** 2026-09-25T04:12:16.013Z
 **URL:** [https://bymuseet.no/](https://bymuseet.no/)
-**Total Violations:** 8
+**Total Violations:** 9
 
 ## Violation Details
+
+### ARIA role should be appropriate for the element
+
+- **Impact:** minor
+- **Description:** Ensure role attribute has an appropriate value for the element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 2
+
+#### Affected Elements:
+
+- `#vimeo-video-banner, body`
+- `#slick-slide00 > .vimeo-wrapper > iframe, body`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -17,6 +30,7 @@
 #### Affected Elements:
 
 - `.col-lg-3.event.load-more__item:nth-child(1) > .event-cover > .location.event-tags-row > .event-tags-left > span`
+- `.col-lg-3.event.load-more__item:nth-child(1) > .event-cover > .location.event-tags-row > .event-tags-right > .event-type-tag`
 - `.col-lg-3.event.load-more__item:nth-child(1) > .event-cover > .event-date-row > .event-date-column > .date-range`
 - `.col-lg-3.event.load-more__item:nth-child(2) > .event-cover > .location.event-tags-row > .event-tags-left > span`
 - `.col-lg-3.event.load-more__item:nth-child(2) > .event-cover > .location.event-tags-row > .event-tags-right > .event-type-tag`
@@ -28,7 +42,6 @@
 - `.col-lg-3.event.load-more__item:nth-child(4) > .event-cover > .location.event-tags-row > .event-tags-right > .event-type-tag`
 - `.col-lg-3.event.load-more__item:nth-child(4) > .event-cover > .event-date-row > .event-date-column > .date-range`
 - `.col-lg-3.event.load-more__item:nth-child(5) > .event-cover > .location.event-tags-row > .event-tags-left > span`
-- `.col-lg-3.event.load-more__item:nth-child(5) > .event-cover > .location.event-tags-row > .event-tags-right > .event-type-tag`
 - `.col-lg-3.event.load-more__item:nth-child(5) > .event-cover > .event-date-row > .event-date-column > .date-range`
 - `.col-lg-3.event.load-more__item:nth-child(6) > .event-cover > .location.event-tags-row > .event-tags-left > span`
 - `.col-lg-3.event.load-more__item:nth-child(6) > .event-cover > .location.event-tags-row > .event-tags-right > .event-type-tag`
@@ -77,11 +90,13 @@
 - **Description:** Ensure the document has a main landmark
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-one-main?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
 - `html`
+- `#vimeo-video-banner, html`
+- `#slick-slide00 > .vimeo-wrapper > iframe, html`
 
 ### Links must have discernible text
 
@@ -134,11 +149,13 @@
 - **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/page-has-heading-one?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
 - `html`
+- `#vimeo-video-banner, html`
+- `#slick-slide00 > .vimeo-wrapper > iframe, html`
 
 ### All page content should be contained by landmarks
 

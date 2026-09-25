@@ -1,6 +1,6 @@
 # WCAG Violations Report for Widerøe AS
 
-**Timestamp:** 2026-09-24T04:20:24.378Z
+**Timestamp:** 2026-09-25T04:27:20.477Z
 **URL:** [https://www.wideroe.no/](https://www.wideroe.no/)
 **Total Violations:** 7
 
@@ -82,7 +82,7 @@
 
 #### Affected Elements:
 
-- `.col-sm-5`
+- `.col-xs-5`
 
 ### <li> elements must be contained in a <ul> or <ol>
 

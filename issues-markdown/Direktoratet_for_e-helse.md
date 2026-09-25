@@ -1,6 +1,6 @@
 # WCAG Violations Report for Direktoratet for e-helse
 
-**Timestamp:** 2026-09-24T03:36:42.987Z
+**Timestamp:** 2026-09-25T03:55:04.107Z
 **URL:** [https://www.helsedirektoratet.no/](https://www.helsedirektoratet.no/)
 **Total Violations:** 3
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2026-09-24T03:49:28.598Z
+**Timestamp:** 2026-09-25T04:06:50.559Z
 **URL:** [https://oslonye.no/](https://oslonye.no/)
 **Total Violations:** 4
 
@@ -138,12 +138,12 @@
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(9) > .text-sm-right.large-3.cell`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-2.cell`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .cat.centralteatret.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .teaterkjellern.cat.hide1`
+- `.cafescenen.cat.hide1`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-7.cell > .content-holder > .text-uppercase.text-white.title`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .text-sm-right.large-3.cell`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-2.cell`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .cat.centralteatret.hide1`
-- `.cafescenen.cat.hide1`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .teaterkjellern.cat.hide1`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-7.cell > .content-holder > .text-uppercase.text-white.title`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .text-sm-right.large-3.cell`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-2.cell`

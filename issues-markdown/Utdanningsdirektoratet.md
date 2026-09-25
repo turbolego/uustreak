@@ -1,8 +1,8 @@
 # WCAG Violations Report for Utdanningsdirektoratet
 
-**Timestamp:** 2026-09-24T04:15:30.251Z
+**Timestamp:** 2026-09-25T04:23:48.285Z
 **URL:** [https://www.udir.no/](https://www.udir.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `#declineButton`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.ds-card__block:nth-child(2) > h3`
 
 ### Document should not have more than one banner landmark
 

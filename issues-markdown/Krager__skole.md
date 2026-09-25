@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kragerø skole
 
-**Timestamp:** 2026-09-24T03:44:02.139Z
+**Timestamp:** 2026-09-25T04:02:02.494Z
 **URL:** [https://www.kragero.kommune.no/kragero-skole/](https://www.kragero.kommune.no/kragero-skole/)
 **Total Violations:** 3
 

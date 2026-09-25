@@ -1,6 +1,6 @@
 # WCAG Violations Report for Mediehuset Nettavisen AS
 
-**Timestamp:** 2026-09-24T03:46:13.034Z
+**Timestamp:** 2026-09-25T04:04:25.495Z
 **URL:** [https://www.nettavisen.no/](https://www.nettavisen.no/)
 **Total Violations:** 5
 
