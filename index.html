@@ -873,13 +873,29 @@
             }, 0);
         }
 
+        function getTrendButtonLabel(trendData) {
+            if (trendData.length === 0 || trendData.every(point => point.violations === 0)) {
+                return 'Ingen endring ✅';
+            }
+
+            const firstViolations = trendData[0].violations;
+            const lastViolations = trendData[trendData.length - 1].violations;
+            if (lastViolations > firstViolations) {
+                return 'Økende 📈';
+            }
+            if (lastViolations < firstViolations) {
+                return 'Synkende 📉';
+            }
+            return 'Ingen endring ✅';
+        }
+
         function showTrendsDialog(projectName, trendData) {
             const dialog = document.getElementById('trends-dialog');
             const title = document.getElementById('trends-dialog-title');
             const content = document.getElementById('trends-dialog-content');
             const changeCount = countViolationChanges(trendData);
 
-            title.textContent = `${projectName} - Trends`;
+            title.textContent = `${projectName} - ${getTrendButtonLabel(trendData)}`;
             content.replaceChildren();
 
             if (trendData.length === 0) {
@@ -1299,10 +1315,11 @@
                     } else if (index === 4) {
                         const trendsButton = document.createElement('button');
                         trendsButton.className = 'trends-button';
-                        trendsButton.textContent = `📈 Trends ${trendChangeCount}`;
+                        const trendLabel = getTrendButtonLabel(trendData);
+                        trendsButton.textContent = trendLabel;
                         trendsButton.setAttribute(
                             'aria-label',
-                            `View violation trends for ${report.project}: ${trendChangeCount} changes`
+                            `${trendLabel} – view violation trends for ${report.project}`
                         );
                         trendsButton.addEventListener('click', (e) => {
                             e.stopPropagation();
