@@ -109,14 +109,19 @@
             <div id="achievements-dialog-content"></div>
             <button aria-label="Lukk achievements dialog" class="dialog-close" id="close-achievements-dialog">×</button>
         </dialog>
-        <dialog class="details-dialog" id="trends-dialog">
-            <h2 id="trends-dialog-title">Trends</h2>
+        <dialog class="details-dialog" id="trends-dialog" aria-labelledby="trends-dialog-title">
+            <div class="modal-header">
+                <h2 id="trends-dialog-title">Trends</h2>
+                <button aria-label="Lukk trends dialog" class="dialog-close" id="close-trends-dialog">×</button>
+            </div>
             <div id="trends-dialog-content"></div>
-            <button aria-label="Lukk trends dialog" class="dialog-close" id="close-trends-dialog">×</button>
         </dialog>
-        <dialog class="details-dialog" id="readme-dialog">
+        <dialog class="details-dialog" id="readme-dialog" aria-labelledby="readme-dialog-title">
+            <div class="modal-header">
+                <h2 id="readme-dialog-title">Om UUStreak</h2>
+                <button aria-label="Lukk README beskrivelse" class="dialog-close" id="close-readme-dialog">×</button>
+            </div>
             <div id="readme-content"></div>
-            <button aria-label="Lukk README beskrivelse" class="dialog-close" id="close-readme-dialog">×</button>
         </dialog>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -981,7 +986,6 @@
                 .append('title')
                 .text(point => `${point.date}: ${point.violations} violations`);
 
-            dialog.setAttribute('aria-labelledby', 'trends-dialog-title');
             dialog.showModal();
         }
 
@@ -1653,9 +1657,8 @@
                 link.target = '_blank';
                 link.setAttribute('aria-label', 'Link til GitHub repo med kildekoden for denne siden');
 
-                // Prepend the link to the readme content
-                readmeContent.appendChild(link);
-                readmeContent.innerHTML += marked.parse(text);
+                readmeContent.replaceChildren(link);
+                readmeContent.insertAdjacentHTML('beforeend', marked.parse(text));
             } catch (error) {
                 console.error('Error loading README.md:', error);
             }
