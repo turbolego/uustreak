@@ -1,6 +1,6 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2026-09-25T03:50:18.903Z
+**Timestamp:** 2026-09-26T03:50:45.685Z
 **URL:** [https://www.byggmakker.no/](https://www.byggmakker.no/)
 **Total Violations:** 3
 
@@ -28,10 +28,10 @@
 - `.product-card__product-price[data-product_id="7311490000382"][data-price-history="129"]`
 - `.product-card[data-product_id="7311490046274"][data-price-history="189"]`
 - `.product-card__product-price[data-product_id="7311490046274"][data-price-history="189"]`
-- `.product-card[data-product_id="7311490050608"][data-price-history="219"]`
-- `.product-card__product-price[data-product_id="7311490050608"][data-price-history="219"]`
-- `.product-card.ab_omni_kampaign[data-product_id="6405422555994"]`
-- `.product-card__product-price.prrc[data-product_id="6405422555994"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7311490052718"]`
+- `.product-card__product-price.prrc[data-product_id="7311490052718"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7311490028133"]`
+- `.product-card__product-price.prrc[data-product_id="7311490028133"]`
 - `.product-card[data-product_id="9007022639899"][data-price-history="349"]`
 - `.product-card__product-price[data-product_id="9007022639899"][data-price-history="349"]`
 - `.product-card[data-product_id="9007022633187"][data-price-history="179"]`

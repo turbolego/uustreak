@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-09-25T04:13:50.473Z
+**Timestamp:** 2026-09-26T04:03:26.939Z
 **URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
 **Total Violations:** 3
 
@@ -24,14 +24,13 @@
 - **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/nested-interactive?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 4
+- **Count:** 3
 
 #### Affected Elements:
 
-- `._large_me3cj_83`
-- `track-element[data-track-id="teaser:113530"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._small_me3cj_88._root_me3cj_65[vendor="sa"]`
+- `track-element[data-track-id="teaser:113530"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
 - `audio-play-button[title="Jan Zahl - for\a tjukk og smal!"]`
-- `._small_me3cj_88._root_me3cj_65[asset-id="113513"]`
+- `track-element[data-track-id="teaser:113513"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
 
 ### All page content should be contained by landmarks
 

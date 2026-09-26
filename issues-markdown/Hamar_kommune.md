@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hamar kommune
 
-**Timestamp:** 2026-09-25T03:59:00.281Z
+**Timestamp:** 2026-09-26T03:54:58.892Z
 **URL:** [https://www.hamar.kommune.no/](https://www.hamar.kommune.no/)
 **Total Violations:** 5
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `article[data-articleid="498706"] > a[target="_self"] > .card-body > h3[itemprop="headline"]`
+- `article[data-articleid="261036"] > a[target="_self"] > .card-body > h3[itemprop="headline"]`
 
 ### Document should not have more than one banner landmark
 

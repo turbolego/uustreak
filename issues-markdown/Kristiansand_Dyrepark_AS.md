@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kristiansand Dyrepark AS
 
-**Timestamp:** 2026-09-25T04:01:50.085Z
+**Timestamp:** 2026-09-26T03:57:43.937Z
 **URL:** [https://www.dyreparken.no/](https://www.dyreparken.no/)
 **Total Violations:** 6
 
@@ -50,7 +50,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 24
+- **Count:** 25
 
 #### Affected Elements:
 
@@ -73,9 +73,10 @@
 - `.c-grid--columns-4.c-grid--image-size-large.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(5) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-grid--columns-4.c-grid--image-size-large.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(6) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-grid__item:nth-child(7) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
-- `.c-billboard--right.c-billboard--poster.c-billboard--variant-default > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
+- `.c-billboard--poster.c-billboard--right.c-billboard--variant-default > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
 - `.c-grid--image-size-bleeding.c-grid--columns-3.c-grid--columns-small-2 > .c-grid__items > .c-grid__item:nth-child(4) > .c-grid__item-image-wrapper > .c-grid__item__image[title=""][data-object-fit="cover"]`
 - `.c-billboard__image[href$="app/"][itemtype="http://schema.org/ImageObject"]`
+- `.c-billboard--right.c-billboard--split.c-billboard--variant-default > .c-billboard__inner > .c-billboard__image[itemtype="http://schema.org/ImageObject"][itemscope="itemscope"]`
 - `.c-footer__app__links > a:nth-child(1)`
 - `.c-footer__app__links > a:nth-child(2)`
 

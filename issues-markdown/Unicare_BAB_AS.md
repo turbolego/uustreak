@@ -1,6 +1,6 @@
 # WCAG Violations Report for Unicare BAB AS
 
-**Timestamp:** 2026-09-25T04:24:18.086Z
+**Timestamp:** 2026-09-26T04:06:45.106Z
 **URL:** [https://unicare.no/](https://unicare.no/)
 **Total Violations:** 7
 
@@ -12,11 +12,12 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `#declineButton`
+- `iframe[width="100%"], body`
 - `#splide01-slide01`
 
 ### Frames must have an accessible name

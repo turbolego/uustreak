@@ -1,6 +1,6 @@
 # WCAG Violations Report for Oslo Nye Teater AS
 
-**Timestamp:** 2026-09-25T04:06:50.559Z
+**Timestamp:** 2026-09-26T04:00:16.577Z
 **URL:** [https://oslonye.no/](https://oslonye.no/)
 **Total Violations:** 4
 
@@ -41,20 +41,20 @@
 #### Affected Elements:
 
 - `.forestillinger-blocks-panel:nth-child(3) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .hovedscenen.alignment-top.bg-none > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .alignment-top.bg-none.centralteatret > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3) > .alignment-top.bg-none.centralteatret > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.bg-none.centralteatret > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .alignment-top.centralteatret.bg-none > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(4) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(3) > .alignment-top.centralteatret.bg-none > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(5) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.centralteatret.bg-none > .les-mer-link`
 - `.alignment-right.hovedscenen.bg-none > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .alignment-top.bg-none.centralteatret > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(6) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6:nth-child(1) > .alignment-top.centralteatret.bg-none > .les-mer-link`
 - `.large-4.cpt.medium-6:nth-child(3) > .hovedscenen.alignment-top.bg-none > .les-mer-link`
-- `.alignment-right.bg-none.centralteatret > .les-mer-link`
+- `.alignment-right.centralteatret.bg-none > .les-mer-link`
 - `.large-4.cpt.medium-6:nth-child(1) > .hovedscenen.alignment-top.bg-none > .les-mer-link`
-- `.large-4.cpt.medium-6:nth-child(2) > .alignment-top.bg-none.centralteatret > .les-mer-link`
-- `.cafescenen.alignment-top.bg-none > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.bg-none.centralteatret > .les-mer-link`
-- `.alignment-left.cafescenen.bg-none > .les-mer-link`
+- `.large-4.cpt.medium-6:nth-child(2) > .alignment-top.centralteatret.bg-none > .les-mer-link`
+- `.cafescenen.alignment-top.centralteatret > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.centralteatret.bg-none > .les-mer-link`
+- `.alignment-left.cafescenen.centralteatret > .les-mer-link`
 - `.alignment-left.hovedscenen.bg-none > .les-mer-link`
-- `.forestillinger-blocks-panel:nth-child(12) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.bg-none.centralteatret > .les-mer-link`
+- `.forestillinger-blocks-panel:nth-child(12) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6 > .alignment-top.centralteatret.bg-none > .les-mer-link`
 - `.scroll-to-top`
 
 ### All page content should be contained by landmarks
@@ -63,7 +63,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 83
+- **Count:** 70
 
 #### Affected Elements:
 
@@ -92,10 +92,10 @@
 - `.forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.cpt.medium-6`
 - `.text-green > .title`
 - `.forestillinger-blocks-panel:nth-child(9) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell:nth-child(3)`
-- `.alignment-left.cafescenen.bg-none > .content-cover.text-center.h-100 > .heading-small.content-holder.h-100 > .location.text-uppercase`
-- `.alignment-left.cafescenen.bg-none > .content-cover.text-center.h-100 > .heading-small.content-holder.h-100 > .les-mer-link`
-- `.alignment-left.cafescenen.bg-none > .content-cover.text-center.h-100 > .heading-small.content-holder.h-100 > .location-desc:nth-child(3)`
-- `.alignment-left.cafescenen.bg-none > .content-cover.text-center.h-100 > .heading-small.content-holder.h-100 > .second.button-group`
+- `.alignment-left.cafescenen.centralteatret > .content-cover.text-center.h-100 > .heading-small.content-holder.h-100 > .location.text-uppercase`
+- `.alignment-left.cafescenen.centralteatret > .content-cover.text-center.h-100 > .heading-small.content-holder.h-100 > .les-mer-link`
+- `.alignment-left.cafescenen.centralteatret > .content-cover.text-center.h-100 > .heading-small.content-holder.h-100 > .location-desc:nth-child(3)`
+- `.alignment-left.cafescenen.centralteatret > .content-cover.text-center.h-100 > .heading-small.content-holder.h-100 > .second.button-group`
 - `.forestillinger-blocks-panel:nth-child(10) > .grid-container > .grid-padding-x.grid-x > .large-4.medium-6.cell`
 - `.border-green > .text-yellow.heading-small.content-holder > .title`
 - `.forestillinger-blocks-panel:nth-child(11) > .grid-container > .grid-padding-x.grid-x > .large-8.cpt.medium-6`
@@ -105,48 +105,35 @@
 - `.desktop`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(2) > .large-2.cell`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(2) > .large-7.cell > .content-holder > .cat-cover > .cat.centralteatret.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(2) > .large-7.cell > .content-holder > .text-uppercase.text-white.title`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(2) > .large-7.cell > .content-holder > .text-white.text-uppercase.title`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(2) > .text-sm-right.large-3.cell`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .large-2.cell`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .large-7.cell > .content-holder > .text-uppercase.text-white.title`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .large-7.cell > .content-holder > .cat-cover > .cat.hovedscenen.hide1`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .large-7.cell > .content-holder > .text-white.text-uppercase.title`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(3) > .text-sm-right.large-3.cell`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .large-2.cell`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .large-7.cell > .content-holder > .cat-cover > .cat.centralteatret.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .large-7.cell > .content-holder > .text-uppercase.text-white.title`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .cat.centralteatret.hide1`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .teaterkjellern.cat.hide1`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .large-7.cell > .content-holder > .text-white.text-uppercase.title`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(4) > .text-sm-right.large-3.cell`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(5) > .large-2.cell`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(5) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(5) > .large-7.cell > .content-holder > .text-uppercase.text-white.title`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(5) > .large-7.cell > .content-holder > .cat-cover > .cat.hovedscenen.hide1`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(5) > .large-7.cell > .content-holder > .text-white.text-uppercase.title`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(5) > .text-sm-right.large-3.cell`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .large-2.cell`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .cat.centralteatret.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .teaterkjellern.cat.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .large-7.cell > .content-holder > .text-uppercase.text-white.title`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .large-7.cell > .content-holder > .cat-cover > .cat.centralteatret.hide1`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .large-7.cell > .content-holder > .text-white.text-uppercase.title`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(6) > .text-sm-right.large-3.cell`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(7) > .large-2.cell`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(7) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(7) > .large-7.cell > .content-holder > .text-uppercase.text-white.title`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(7) > .large-7.cell > .content-holder > .cat-cover > .cat.hovedscenen.hide1`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(7) > .large-7.cell > .content-holder > .text-white.text-uppercase.title`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(7) > .text-sm-right.large-3.cell`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-2.cell`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-7.cell > .content-holder > .cat-cover > .cat.centralteatret.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-7.cell > .content-holder > .text-uppercase.text-white.title`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .cat.centralteatret.hide1`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .teaterkjellern.cat.hide1`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .large-7.cell > .content-holder > .text-white.text-uppercase.title`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(8) > .text-sm-right.large-3.cell`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(9) > .large-2.cell`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(9) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(9) > .large-7.cell > .content-holder > .text-uppercase.text-white.title`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(9) > .large-7.cell > .content-holder > .cat-cover > .cat.hovedscenen.hide1`
+- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(9) > .large-7.cell > .content-holder > .text-white.text-uppercase.title`
 - `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(9) > .text-sm-right.large-3.cell`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-2.cell`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .cat.centralteatret.hide1`
-- `.cafescenen.cat.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .large-7.cell > .content-holder > .text-uppercase.text-white.title`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(10) > .text-sm-right.large-3.cell`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-2.cell`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-7.cell > .content-holder > .cat-cover:nth-child(1) > .cat.centralteatret.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-7.cell > .content-holder > .cat-cover:nth-child(2) > .teaterkjellern.cat.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .large-7.cell > .content-holder > .text-uppercase.text-white.title`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(11) > .text-sm-right.large-3.cell`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-2.cell`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-7.cell > .content-holder > .cat-cover > .hovedscenen.cat.hide1`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .large-7.cell > .content-holder > .text-uppercase.text-white.title`
-- `.kommende-forestillinger.align-middle.grid-padding-x:nth-child(12) > .text-sm-right.large-3.cell`

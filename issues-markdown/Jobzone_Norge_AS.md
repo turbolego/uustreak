@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jobzone Norge AS
 
-**Timestamp:** 2026-09-25T04:00:59.174Z
+**Timestamp:** 2026-09-26T03:56:37.605Z
 **URL:** [https://jobzone.no/](https://jobzone.no/)
 **Total Violations:** 6
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 30
+- **Count:** 29
 
 #### Affected Elements:
 
@@ -24,10 +24,9 @@
 - `.candidate-image > div > div > .container-fluid.frontpage > div:nth-child(1) > span`
 - `.company-tab`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(2) > .box.is-mobile > .left-arrow.link.rusty-red > .rusty-red`
-- `.position-list-card-wrapper:nth-child(1) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-short-deadline > .box`
-- `.buttons-href-button[href="/ledige-stillinger/71531"]`
-- `.buttons-href-button[href="/ledige-stillinger/74220"]`
-- `.buttons-href-button[href="/ledige-stillinger/74221"]`
+- `.buttons-href-button[href="/ledige-stillinger/74215"]`
+- `.buttons-href-button[href="/ledige-stillinger/74223"]`
+- `.buttons-href-button[href="/ledige-stillinger/74222"]`
 - `.buttons-href-button[href="/ledige-stillinger/74218"]`
 - `.button-component`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .jobseeker.is-marginless.is-multiline > h5`
@@ -82,9 +81,9 @@
 - `.page-link.colums:nth-child(3) > a[href$="avdelinger/"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(1) > .job-search-helper > .page-link.colums:nth-child(4) > a > .is-mobile.columns > .page-link-icon.is-narrow.column > img`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(1) > .job-search-helper > .page-link.colums:nth-child(4) > a > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
-- `div[data-position-id="71531"] > img`
-- `div[data-position-id="74220"] > img`
-- `div[data-position-id="74221"] > img`
+- `div[data-position-id="74215"] > img`
+- `div[data-position-id="74223"] > img`
+- `div[data-position-id="74222"] > img`
 - `div[data-position-id="74218"] > img`
 - `img[src$="House.svg"]`
 - `.is-6.is-12-mobile.column:nth-child(2) > img[src$="Article.svg"][type="image/svg+xml"]`
@@ -132,7 +131,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 15
+- **Count:** 17
 
 #### Affected Elements:
 
@@ -140,7 +139,9 @@
 - `.tabs`
 - `.candidate-container > div > div:nth-child(1)`
 - `.positions-block-header`
-- `.position-list-card-wrapper:nth-child(1)`
+- `.position-list-card-wrapper:nth-child(1) > .position-card.card > .position-card-top > .position-card-top-content`
+- `.position-list-card-wrapper:nth-child(1) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor`
+- `.position-list-card-wrapper:nth-child(1) > .position-card.card > .position-card-bot`
 - `.position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-top > .position-card-top-content`
 - `.position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor`
 - `.position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-bot`

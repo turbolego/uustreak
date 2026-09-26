@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-09-25T03:55:22.770Z
+**Timestamp:** 2026-09-26T03:53:34.380Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 2
 
@@ -34,7 +34,7 @@
 - `.cmp-logo__link > .sr-only`
 - `.myey-login-url`
 - `img[title="Transaction Trends 2025"]`
-- `.swiper-slide-next > .up-hero-carousel__content-wrapper[data-up-hook-hero-carousel="contentWrapper"]`
+- `.swiper-slide-visible > .up-hero-carousel__content-wrapper[data-up-hook-hero-carousel="contentWrapper"]`
 - `.up-hero-carousel__pagination`
 - `.up-content-cards__title`
 - `.up-content-cards__list-item.up-content-cards--highlight[data-up-hook-content-cards="[listItem]"]:nth-child(1) > .up-content-cards__list-item-details`
