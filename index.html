@@ -874,11 +874,15 @@
         }
 
         function getTrendButtonLabel(trendData) {
-            if (trendData.length === 0 || trendData.every(point => point.violations === 0)) {
-                return 'Ingen endring ✅';
+            if (trendData.length === 0) {
+                return 'Ingen endring 🧊';
             }
 
             const firstViolations = trendData[0].violations;
+            if (trendData.every(point => point.violations === firstViolations)) {
+                return 'Ingen endring 🧊';
+            }
+
             const lastViolations = trendData[trendData.length - 1].violations;
             if (lastViolations > firstViolations) {
                 return 'Økende 📈';
@@ -886,7 +890,14 @@
             if (lastViolations < firstViolations) {
                 return 'Synkende 📉';
             }
-            return 'Ingen endring 🧊';
+
+            for (let index = trendData.length - 1; index > 0; index--) {
+                if (trendData[index].violations !== trendData[index - 1].violations) {
+                    return trendData[index].violations > trendData[index - 1].violations
+                        ? 'Økende 📈'
+                        : 'Synkende 📉';
+                }
+            }
         }
 
         function showTrendsDialog(projectName, trendData) {
