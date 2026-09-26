@@ -1446,6 +1446,15 @@
                 const primaryComparison = newSortDirection === 'desc' ? -comparison : comparison;
                 
                 if (columnIndex === 6 && comparison === 0) {
+                    if (Number(a.dataset.streak) === 0 && Number(b.dataset.streak) === 0) {
+                        const aViolations = Number(a.children[5]?.dataset.sortValue) || 0;
+                        const bViolations = Number(b.children[5]?.dataset.sortValue) || 0;
+                        const violationComparison = aViolations - bViolations;
+                        if (violationComparison !== 0) {
+                            return violationComparison;
+                        }
+                    }
+
                     const aName = a.children[1]?.textContent || '';
                     const bName = b.children[1]?.textContent || '';
                     return aName.localeCompare(bName);
