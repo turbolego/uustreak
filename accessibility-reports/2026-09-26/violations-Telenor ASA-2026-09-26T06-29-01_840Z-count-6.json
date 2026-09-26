@@ -1,0 +1,260 @@
+{
+  "project": "Telenor ASA",
+  "timestamp": "2026-09-26T06:29:01.840Z",
+  "url": "https://www.telenor.no/privat/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "description": "Ensure ARIA attributes are not prohibited for an element's role",
+      "help": "Elements must only use permitted ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-prohibited-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"image main image\" style=\"background-image:url('/binaries/om/sikkerhet/sikkerhetspuls-q2-26/sikkerhetspuls_andrekvartal_banner_kvadrat.png');\" aria-label=\"ikoner for digital sikkerhet og svindel\" data-v-4c77f218=\"\" data-v-bf1c1c3a=\"\"></div>",
+          "target": [
+            ".main"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on a div with no valid role attribute."
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h6 class=\"tn-heading title-xs left\" data-v-5b5257ef=\"\" data-v-515173b3=\"\"><!--[-->Hjelp<!--]--></h6>",
+          "target": [
+            ".dropdown-category.footer.dark:nth-child(1) > .dropdown-link[data-v-515173b3=\"\"] > .dropdown-header.hidden-mobile[data-v-515173b3=\"\"] > h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4>Vil du godta alle informasjonskapsler, avslå eller endre innstillinger?</h4>",
+          "target": [
+            "h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<img data-v-d4e53f6a=\"\" height=\"200\" data-nuxt-img=\"\" srcset=\"/_ipx/h_200/https://...\" src=\"/_ipx/h_200/https://...\">",
+          "target": [
+            ".swiper-slide.spotlight-slide[data-v-9528d48a=\"\"]:nth-child(6) > .spotlight-product-card[ondragstart=\"return false\"][draggable=\"false\"] > .image-container[data-v-d4e53f6a=\"\"] > img[height=\"200\"][data-nuxt-img=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img data-v-d4e53f6a=\"\" height=\"200\" data-nuxt-img=\"\" srcset=\"/_ipx/h_200/https://...\" src=\"/_ipx/h_200/https://...\">",
+          "target": [
+            "a[href$=\"apple-airpods-5/\"] > .image-container[data-v-d4e53f6a=\"\"] > img[height=\"200\"][data-nuxt-img=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "listitem",
+      "impact": "serious",
+      "description": "Ensure <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/listitem?application=playwright",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "violation_count": 8,
+      "nodes": [
+        {
+          "html": "<li data-v-add167ed=\"\" data-v-d4e53f6a=\"\" class=\"main-stock stock\" size=\"14px\">",
+          "target": [
+            ".swiper-slide-active > .spotlight-product-card[ondragstart=\"return false\"][draggable=\"false\"] > .main-stock.stock[size=\"14px\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li data-v-add167ed=\"\" data-v-d4e53f6a=\"\" class=\"main-stock stock\" size=\"14px\">",
+          "target": [
+            ".swiper-slide-next > .spotlight-product-card[ondragstart=\"return false\"][draggable=\"false\"] > .main-stock.stock[size=\"14px\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li data-v-add167ed=\"\" data-v-d4e53f6a=\"\" class=\"main-stock stock\" size=\"14px\">",
+          "target": [
+            ".swiper-slide.spotlight-slide[data-v-9528d48a=\"\"]:nth-child(3) > .spotlight-product-card[ondragstart=\"return false\"][draggable=\"false\"] > .main-stock.stock[size=\"14px\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li data-v-add167ed=\"\" data-v-d4e53f6a=\"\" class=\"main-stock stock\" size=\"14px\">",
+          "target": [
+            ".swiper-slide.spotlight-slide[data-v-9528d48a=\"\"]:nth-child(4) > .spotlight-product-card[ondragstart=\"return false\"][draggable=\"false\"] > .main-stock.stock[size=\"14px\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li data-v-add167ed=\"\" data-v-d4e53f6a=\"\" class=\"main-stock stock\" size=\"14px\">",
+          "target": [
+            ".swiper-slide.spotlight-slide[data-v-9528d48a=\"\"]:nth-child(5) > .spotlight-product-card[ondragstart=\"return false\"][draggable=\"false\"] > .main-stock.stock[size=\"14px\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li data-v-add167ed=\"\" data-v-d4e53f6a=\"\" class=\"main-stock stock\" size=\"14px\">",
+          "target": [
+            ".swiper-slide.spotlight-slide[data-v-9528d48a=\"\"]:nth-child(6) > .spotlight-product-card[ondragstart=\"return false\"][draggable=\"false\"] > .main-stock.stock[size=\"14px\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li data-v-add167ed=\"\" data-v-d4e53f6a=\"\" class=\"main-stock stock\" size=\"14px\">",
+          "target": [
+            ".swiper-slide.spotlight-slide[data-v-9528d48a=\"\"]:nth-child(7) > .spotlight-product-card[ondragstart=\"return false\"][draggable=\"false\"] > .main-stock.stock[size=\"14px\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        },
+        {
+          "html": "<li data-v-add167ed=\"\" data-v-d4e53f6a=\"\" class=\"main-stock stock\" size=\"14px\">",
+          "target": [
+            "a[href$=\"apple-airpods-5/\"] > .main-stock.stock[size=\"14px\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<div class=\"privacy_prompt_content_freetext\" id=\"privacy_prompt_text\">",
+          "target": [
+            "#privacy_prompt_text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"privacy_prompt_content_h4\" id=\"privacy_prompt_text2\" aria-describedby=\"privacy_prompt_text2\">                    <h4>Vil du godta alle informasjonskapsler, avslå eller endre innstillinger?</h4>                </div>",
+          "target": [
+            "#privacy_prompt_text2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"two-buttons\">",
+          "target": [
+            "#freetext-top > .two-buttons"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"showConsentPreferences\">",
+          "target": [
+            ".showConsentPreferences"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"freetext bottom-info\" id=\"privacy_prompt_bottom\">",
+          "target": [
+            "#privacy_prompt_bottom"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "role-img-alt",
+      "impact": "serious",
+      "description": "Ensure [role=\"img\"] elements have alternative text",
+      "help": "[role=\"img\"] elements must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/role-img-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div role=\"img\" class=\"hero-banner\" data-v-177356a2=\"\">",
+          "target": [
+            ".hero-banner"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}

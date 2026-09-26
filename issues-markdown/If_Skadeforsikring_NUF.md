@@ -1,6 +1,6 @@
 # WCAG Violations Report for If Skadeforsikring NUF
 
-**Timestamp:** 2026-09-26T03:56:14.494Z
+**Timestamp:** 2026-09-26T06:19:51.701Z
 **URL:** [https://www.if.no/privat](https://www.if.no/privat)
 **Total Violations:** 2
 
@@ -19,7 +19,7 @@
 - `img[alt="Bilforsikring"]`
 - `img[alt="Møbler i en stue"]`
 - `img[alt="Best i test på skadeoppgjør!"]`
-- `#\38 49860155a5d4a9c9c08e9e42c3249eb > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
+- `#c1a0984cfd9f4d4f940559befb5c4014 > .reverse.split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
 - `img[alt="Mer enn bare forsikring"]`
 - `img[alt="Vi forsikrer bedriften din"]`
 
@@ -33,4 +33,4 @@
 
 #### Affected Elements:
 
-- `#b59ed345ac21429ebf9f3d24943b4774`
+- `#\35 8da76c9564f4788a1d4721901975520`

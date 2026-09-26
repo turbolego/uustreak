@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-09-26T03:51:56.065Z
+**Timestamp:** 2026-09-26T06:14:56.485Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 8
 
@@ -29,8 +29,8 @@
 #### Affected Elements:
 
 - `#offer_f5d28dd56f56b6b28ce4-0`
-- `#offer_254dd134cddcdf6c54e6-0`
 - `#offer_f5d28dd56f56b6b28ce4-1`
+- `#offer_254dd134cddcdf6c54e6-0`
 - `iframe[data-testid="embed-iframe"]`
 
 ### Heading levels should only increase by one
@@ -58,8 +58,8 @@
 #### Affected Elements:
 
 - `#offer_f5d28dd56f56b6b28ce4-0, img`
-- `#offer_254dd134cddcdf6c54e6-0, img`
 - `#offer_f5d28dd56f56b6b28ce4-1, img`
+- `#offer_254dd134cddcdf6c54e6-0, img`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -84,8 +84,8 @@
 #### Affected Elements:
 
 - `#offer_f5d28dd56f56b6b28ce4-0, a`
-- `#offer_254dd134cddcdf6c54e6-0, a`
 - `#offer_f5d28dd56f56b6b28ce4-1, a`
+- `#offer_254dd134cddcdf6c54e6-0, a`
 - `.singleline.font-PTSans.t14 > a[href$="dagsavisen"][target="_blank"]`
 
 ### All page content should be contained by landmarks
@@ -94,11 +94,17 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 119
+- **Count:** 120
 
 #### Affected Elements:
 
 - `h1`
+- `div[title="CNN utestenges fra Trump-reise"] > h2`
+- `div[title="CNN utestenges fra Trump-reise"] > .meta`
+- `#notice-10552100 > .content > h2`
+- `#notice-10552100 > .content > .meta`
+- `#notice-10552099 > .content > h2`
+- `#notice-10552099 > .content > .meta`
 - `div[title="Børge Brende ute av toppverv"] > h2`
 - `time[datetime="2026-09-25T20:14:20.000Z"]`
 - `#notice-10552082 > .content > h2`
@@ -133,23 +139,17 @@
 - `#notice-10550156 > .content > .meta`
 - `#notice-10550155 > .content > h2`
 - `#notice-10550155 > .content > .meta`
-- `div[title="Canada omdøper «Trump Avenue»"] > h2`
-- `time[datetime="2026-09-24T20:08:10.000Z"]`
-- `#notice-10549860 > .content > h2`
-- `time[datetime="2026-09-24T17:58:32.000Z"]`
-- `div[title="Sykehus rammet av systemfeil"] > h2`
-- `time[datetime="2026-09-24T16:48:26.000Z"]`
-- `.color_mobile_no_bg_color.row.large-12:nth-child(2)`
-- `.row.large-12.small-12:nth-child(3)`
+- `.row.large-12.small-12:nth-child(2)`
+- `.color_mobile_no_bg_color.row.large-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
 - `.row.large-12.small-12:nth-child(5)`
 - `.row.large-12.small-12:nth-child(7)`
 - `.row.large-12.small-12:nth-child(8)`
-- `.bg-white.color_mobile_bg-white.hasContentPadding:nth-child(9)`
+- `.row.large-12.small-12:nth-child(9)`
 - `.bg-white.color_mobile_bg-white.has-row-header`
 - `.row.large-12.small-12:nth-child(11)`
+- `.bg-white.color_mobile_bg-white.hasContentPadding:nth-child(13)`
 - `#offer_f5d28dd56f56b6b28ce4-0, div[ng-show="!terminalError"]`
-- `.row.large-12.small-12:nth-child(14)`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(15)`
 - `.page-content > .border-bg-quinary-light.mobile_border-bg-quinary-light.hasBorder`
 - `#article_list_10372156 > .content > .lab-scrollbox-headline.t25.font-InterTight`
@@ -163,8 +163,8 @@
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .lab-scrollbox-headline.t25.font-InterTight`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(26)`
+- `.row.large-12.small-12:nth-child(27)`
 - `.has-row-header.bg-quinary.color_mobile_bg-quinary`
-- `.row.large-12.small-12:nth-child(28)`
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(29)`
 - `.row.large-12.small-12:nth-child(31)`
 - `.lab-scrollbox-headline.t28.font-InterTight`
@@ -188,9 +188,9 @@
 - `.row.large-12.small-12:nth-child(35)`
 - `.row.large-12.small-12:nth-child(37)`
 - `.row.large-12.small-12:nth-child(38)`
-- `#offer_254dd134cddcdf6c54e6-0, div[ng-show="!terminalError"]`
+- `.row.large-12.small-12:nth-child(39)`
 - `#offer_f5d28dd56f56b6b28ce4-1, div[ng-show="!terminalError"]`
-- `.row.large-12.small-12:nth-child(41)`
+- `#offer_254dd134cddcdf6c54e6-0, div[ng-show="!terminalError"]`
 - `.row.large-12.small-12:nth-child(43)`
 - `.row.large-12.small-12:nth-child(44)`
 - `.lab-scrollbox-headline.italic.m-italic`
@@ -207,13 +207,14 @@
 - `.row.large-12.small-12:nth-child(57)`
 - `.row.large-12.small-12:nth-child(58)`
 - `.row.large-12.small-12:nth-child(59)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(61)`
-- `.row.large-12.small-12:nth-child(62)`
+- `.row.large-12.small-12:nth-child(61)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(62)`
 - `.row.large-12.small-12:nth-child(63)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(64)`
-- `.row.large-12.small-12:nth-child(65)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(66)`
-- `.row.large-12.small-12:nth-child(67)`
+- `.row.large-12.small-12:nth-child(64)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(65)`
+- `.row.large-12.small-12:nth-child(66)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(67)`
+- `.row.large-12.small-12:nth-child(68)`
 - `.tm20`
 - `#article_list_9904930 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.powered-by`
