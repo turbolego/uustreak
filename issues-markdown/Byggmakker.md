@@ -1,6 +1,6 @@
 # WCAG Violations Report for Byggmakker
 
-**Timestamp:** 2026-09-26T06:13:35.619Z
+**Timestamp:** 2026-09-27T04:00:33.913Z
 **URL:** [https://www.byggmakker.no/](https://www.byggmakker.no/)
 **Total Violations:** 3
 
@@ -16,46 +16,46 @@
 
 #### Affected Elements:
 
-- `.product-card.ab_omni_kampaign[data-price-history="429"]`
-- `.product-card__product-price.prrc[data-price-history="429"]`
-- `.product-card.ab_omni_kampaign[data-price-history="599"]`
-- `.product-card__product-price.prrc[data-price-history="599"]`
-- `.product-card.ab_omni_kampaign[data-price-history="549"]`
-- `.product-card__product-price.prrc[data-price-history="549"]`
+- `.product-card.ab_omni_kampaign[data-price-history="259"]`
+- `.product-card__product-price.prrc[data-price-history="259"]`
 - `.product-card.ab_omni_kampaign[data-price-history="419"]`
 - `.product-card__product-price.prrc[data-price-history="419"]`
-- `.product-card[data-product_id="7311490000382"][data-price-history="129"]`
-- `.product-card__product-price[data-product_id="7311490000382"][data-price-history="129"]`
-- `.product-card[data-product_id="7311490046274"][data-price-history="189"]`
-- `.product-card__product-price[data-product_id="7311490046274"][data-price-history="189"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7311490052718"]`
-- `.product-card__product-price.prrc[data-product_id="7311490052718"]`
-- `.product-card.ab_omni_kampaign[data-product_id="7311490028133"]`
-- `.product-card__product-price.prrc[data-product_id="7311490028133"]`
-- `.product-card[data-product_id="9007022639899"][data-price-history="349"]`
-- `.product-card__product-price[data-product_id="9007022639899"][data-price-history="349"]`
-- `.product-card[data-product_id="9007022633187"][data-price-history="179"]`
-- `.product-card__product-price[data-product_id="9007022633187"][data-price-history="179"]`
-- `.product-card[data-product_id="6438313783121"][data-price-history="449"]`
-- `.product-card__product-price[data-product_id="6438313783121"][data-price-history="449"]`
-- `.product-card[data-product_id="6438313550785"][data-price-history="639"]`
-- `.product-card__product-price[data-product_id="6438313550785"][data-price-history="639"]`
-- `.product-card[data-product_id="5708722005215"][data-price-history="18990"]`
-- `.product-card__product-price[data-product_id="5708722005215"][data-price-history="18990"]`
-- `.product-card[data-product_id="7022393512383"][data-price-history="25790"]`
-- `.product-card__product-price[data-product_id="7022393512383"][data-price-history="25790"]`
-- `.product-card.ab_omni_kampaign[data-product_id="5703505045914"]`
-- `.product-card__product-price.prrc[data-product_id="5703505045914"]`
-- `.product-card.ab_omni_kampaign[data-product_id="5703505041596"]`
-- `.product-card__product-price.prrc[data-product_id="5703505041596"]`
-- `.product-card[data-product_id="7320896011076"][data-price-history="129"]`
-- `.product-card__product-price[data-product_id="7320896011076"][data-price-history="129"]`
-- `.product-card[data-product_id="7320896011434"][data-price-history="299"]`
-- `.product-card__product-price[data-product_id="7320896011434"][data-price-history="299"]`
-- `.product-card[data-product_id="7320896011786"][data-price-history="699"]`
-- `.product-card__product-price[data-product_id="7320896011786"][data-price-history="699"]`
-- `.product-card[data-product_id="7090058750135"][data-price-history="679"]`
-- `.product-card__product-price[data-product_id="7090058750135"][data-price-history="679"]`
+- `.product-card.ab_omni_kampaign[data-price-history="599"]`
+- `.product-card__product-price.prrc[data-price-history="599"]`
+- `.product-card.ab_omni_kampaign[data-price-history="439"]`
+- `.product-card__product-price.prrc[data-price-history="439"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7311490000382"]`
+- `.product-card__product-price.prrc[data-product_id="7311490000382"]`
+- `.product-card.ab_omni_kampaign[data-product_id="7311490046274"]`
+- `.product-card__product-price.prrc[data-product_id="7311490046274"]`
+- `.product-card[data-product_id="7311490052718"][data-price-history="499"]`
+- `.product-card__product-price[data-product_id="7311490052718"][data-price-history="499"]`
+- `.product-card[data-product_id="7311490028133"][data-price-history="379"]`
+- `.product-card__product-price[data-product_id="7311490028133"][data-price-history="379"]`
+- `.product-card[data-product_id="9007022640284"][data-price-history="239"]`
+- `.product-card__product-price[data-product_id="9007022640284"][data-price-history="239"]`
+- `.product-card[data-product_id="9007022639929"][data-price-history="349"]`
+- `.product-card__product-price[data-product_id="9007022639929"][data-price-history="349"]`
+- `.product-card[data-product_id="6438313782599"][data-price-history="459"]`
+- `.product-card__product-price[data-product_id="6438313782599"][data-price-history="459"]`
+- `.product-card[data-product_id="5907461806255"][data-price-history="839"]`
+- `.product-card__product-price[data-product_id="5907461806255"][data-price-history="839"]`
+- `.product-card[data-product_id="7047077101035"][data-price-history="989"]`
+- `.product-card__product-price[data-product_id="7047077101035"][data-price-history="989"]`
+- `.product-card[data-product_id="7047077101882"][data-price-history="989"]`
+- `.product-card__product-price[data-product_id="7047077101882"][data-price-history="989"]`
+- `.product-card[data-product_id="7047077101028"][data-price-history="1199"]`
+- `.product-card__product-price[data-product_id="7047077101028"][data-price-history="1199"]`
+- `.product-card[data-product_id="7047077101899"][data-price-history="1199"]`
+- `.product-card__product-price[data-product_id="7047077101899"][data-price-history="1199"]`
+- `.product-card[data-product_id="5703505045914"][data-price-history="13990"]`
+- `.product-card__product-price[data-product_id="5703505045914"][data-price-history="13990"]`
+- `.product-card[data-product_id="7022390522934"][data-price-history="17190"]`
+- `.product-card__product-price[data-product_id="7022390522934"][data-price-history="17190"]`
+- `.product-card[data-product_id="5703192006724"][data-price-history="34590"]`
+- `.product-card__product-price[data-product_id="5703192006724"][data-price-history="34590"]`
+- `.product-card[data-product_id="7022390527762"][data-price-history="34990"]`
+- `.product-card__product-price[data-product_id="7022390527762"][data-price-history="34990"]`
 - `#male_huset > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
 - `#male_huset > .campaign-product-list > .campaign-product-list__card:nth-child(1) > .product-card__container[data-cy="product-card-container"] > .product-card__product-price.prrc[aria-label="Prisinformasjon"]`
 - `#male_huset > .campaign-product-list > .campaign-product-list__card:nth-child(2) > .product-card__container[data-cy="product-card-container"] > .product-card__image-outer-container > .product-card.ab_omni_kampaign[role="img"]`
@@ -83,10 +83,10 @@
 
 #### Affected Elements:
 
-- `.product-card[data-product_id="5708722005215"][data-price-history="18990"]`
-- `.product-card[data-product_id="7022393512383"][data-price-history="25790"]`
-- `.product-card.ab_omni_kampaign[data-product_id="5703505045914"]`
-- `.product-card.ab_omni_kampaign[data-product_id="5703505041596"]`
+- `.product-card[data-product_id="5703505045914"][data-price-history="13990"]`
+- `.product-card[data-product_id="7022390522934"][data-price-history="17190"]`
+- `.product-card[data-product_id="5703192006724"][data-price-history="34590"]`
+- `.product-card[data-product_id="7022390527762"][data-price-history="34990"]`
 
 ### All page content should be contained by landmarks
 
