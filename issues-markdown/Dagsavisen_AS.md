@@ -1,10 +1,22 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-09-27T04:01:47.904Z
+**Timestamp:** 2026-09-27T04:24:00.597Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
-**Total Violations:** 8
+**Total Violations:** 9
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
 
 ### Headings should not be empty
 
@@ -78,10 +90,11 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 4
+- **Count:** 5
 
 #### Affected Elements:
 
+- `#google_ads_iframe_\/38586112\/dagsavisen\/toppbanner_0, #aw0`
 - `#offer_f5d28dd56f56b6b28ce4-0, a`
 - `#offer_f5d28dd56f56b6b28ce4-1, a`
 - `#offer_254dd134cddcdf6c54e6-0, a`
@@ -93,11 +106,12 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 115
+- **Count:** 116
 
 #### Affected Elements:
 
 - `h1`
+- `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
 - `div[title="Avviser Irans Hormuz-forslag"] > h2`
 - `time[datetime="2026-09-26T15:59:29.000Z"]`
 - `div[title="Vulkanutbrudd stenger flyplass"] > h2`

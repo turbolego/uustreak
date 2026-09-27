@@ -1,10 +1,22 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-09-27T04:02:13.318Z
+**Timestamp:** 2026-09-27T04:22:55.020Z
 **URL:** [https://www.dagbladet.no/](https://www.dagbladet.no/)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #cbb`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
