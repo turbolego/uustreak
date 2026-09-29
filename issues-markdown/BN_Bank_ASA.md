@@ -1,8 +1,8 @@
 # WCAG Violations Report for BN Bank ASA
 
-**Timestamp:** 2026-09-27T04:15:33.621Z
+**Timestamp:** 2026-09-29T10:53:37.656Z
 **URL:** [https://www.bnbank.no/](https://www.bnbank.no/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.background--light-wine-red > .content-card--image-above.content-card__content-wrapper > .content-card__content > .content-card__upper-content > .h3`
+- `.content-card--image-left > .content-card__content > .content-card__upper-content > .h3`
 
 ### Heading levels should only increase by one
 
@@ -59,6 +59,18 @@
 - `#heading-hvordan-laste-ned-mobilbank`
 - `#heading-hvordan-aktivere-mobilbanken`
 - `#heading-hvordan-fa-bankid-pa-mobil`
+
+### Elements marked as presentational should be consistently ignored
+
+- **Impact:** minor
+- **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/presentation-role-conflict?application=playwright
+- **Tags:** cat.aria, best-practice, ACT
+- **Count:** 1
+
+#### Affected Elements:
+
+- `img[aria-hidden="True"]`
 
 ### All page content should be contained by landmarks
 
