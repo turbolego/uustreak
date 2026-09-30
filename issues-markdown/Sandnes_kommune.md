@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sandnes kommune
 
-**Timestamp:** 2026-09-29T11:10:37.748Z
+**Timestamp:** 2026-09-30T05:09:46.542Z
 **URL:** [https://www.sandnes.kommune.no/](https://www.sandnes.kommune.no/)
 **Total Violations:** 5
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `#portalframe1, div[data-itemid="38625"] > .custom-event-info > h4`
+- `#portalframe1, div[data-itemid="38624"] > .custom-event-info > h4`
 
 ### Links must have discernible text
 

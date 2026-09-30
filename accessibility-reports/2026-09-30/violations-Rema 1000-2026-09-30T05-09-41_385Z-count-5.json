@@ -1,0 +1,136 @@
+{
+  "project": "Rema 1000",
+  "timestamp": "2026-09-30T05:09:41.386Z",
+  "url": "https://www.rema.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"text-heading-lg font-headings font-bold tracking-tight uppercase\"><a class=\"group-hover/bento-card:underline after:absolute after:inset-0\" href=\"/inspirasjon/barnefamilien/familiemiddag-under-200-lappen/\"></a></h3>",
+          "target": [
+            ".group\\/bento-card.py-6.bg-bg-brand-solid-hover:nth-child(4) > .items-end.gap-3.z-1 > .max-w-65.text-text-on-brand.gap-3 > .font-headings.uppercase.tracking-tight"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<section aria-labelledby=\"_S_1_\" class=\"bg-bg-primary flex w-full flex-col gap-(--section-gap-md)\">",
+          "target": [
+            ".gap-\\(--section-gap-md\\)[aria-labelledby=\"_S_1_\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<div role=\"region\" aria-roledescription=\"carousel\" class=\"flex w-full flex-col gap-4\">",
+          "target": [
+            ".gap-\\(--section-gap-md\\)[aria-labelledby=\"_S_1_\"]:nth-child(2) > .gap-\\(--grid-gutter\\).flex-col.flex > .gap-4[aria-roledescription=\"carousel\"][role=\"region\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"group-hover/bento-card:underline after:absolute after:inset-0\" href=\"/inspirasjon/barnefamilien/familiemiddag-under-200-lappen/\"></a>",
+          "target": [
+            ".group\\/bento-card.py-6.bg-bg-brand-solid-hover:nth-child(4) > .items-end.gap-3.z-1 > .max-w-65.text-text-on-brand.gap-3 > .font-headings.uppercase.tracking-tight > .group-hover\\/bento-card\\:underline.after\\:absolute.after\\:inset-0"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb\" class=\"rema_11edd611-module__NjWZtG__variable uniformheadings_46f8aca3-module__kDWwgG__variable h-full antialiased\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"#main-content\" class=\"bg-surface-elevated text-text-primary sr-only rounded-md px-5 py-3 font-medium shadow-lg ring-2 ring-(--global-border-brand) outline-none focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-60\">Hopp til hovedinnhold</a>",
+          "target": [
+            ".bg-surface-elevated"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

@@ -1,10 +1,22 @@
 # WCAG Violations Report for Travel Retail Norway AS
 
-**Timestamp:** 2026-09-29T11:18:07.996Z
+**Timestamp:** 2026-09-30T05:15:11.174Z
 **URL:** [https://www.tax-free.no/no/](https://www.tax-free.no/no/)
-**Total Violations:** 8
+**Total Violations:** 9
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.media-banner_container_text-position_BOTTOM_RIGHT.media-banner_container_content-alignment_LEFT.media-banner_container_text-theme_LIGHT > .subtitle`
 
 ### Heading levels should only increase by one
 
@@ -17,7 +29,7 @@
 #### Affected Elements:
 
 - `.message-heading`
-- `.media-banner_container_text-position_BOTTOM_RIGHT > .subtitle`
+- `.media-banner_container_text-position_BOTTOM_RIGHT.media-banner_container_content-alignment_LEFT.media-banner_container_text-theme_LIGHT > .subtitle`
 
 ### Banner landmark should not be contained in another landmark
 
@@ -62,7 +74,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 57
+- **Count:** 43
 
 #### Affected Elements:
 
@@ -91,26 +103,12 @@
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1610977"]`
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1778029"]`
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1783172"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789443"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789444"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789445"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789431"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789432"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789464"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789398"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789399"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789430"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789397"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789433"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789434"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789435"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789436"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789442"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789437"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789439"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789440"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789473"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1789467"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1773579"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1773594"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1773770"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1773588"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1773784"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1773593"]`
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="850593"]`
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1620594"][href$="smash-xxl"]`
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1687774"]`
