@@ -30,9 +30,9 @@
 
 - `#CybotCookiebotDialogNavDeclaration`
 - `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
-- `#widgetContainer,div[aria-label="Choose date"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
-- `#widgetContainer,div[aria-label="Accommodations and guests"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
-- `#widgetContainer,.relative.z-\[1\]`
+- `#widgetContainer, div[aria-label="Choose date"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
+- `#widgetContainer, div[aria-label="Accommodations and guests"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
+- `#widgetContainer, .relative.z-\[1\]`
 - `.fusion-title-6 > h2`
 - `.fusion-title-11 > h2`
 - `.button-10 > .fusion-button-text.awb-button__text.awb-button__text--default`
@@ -113,8 +113,8 @@
 
 #### Affected Elements:
 
-- `#widgetContainer,button[aria-controls="radix-P0-2"]`
-- `#widgetContainer,button[aria-controls="radix-P0-3"]`
+- `#widgetContainer, button[aria-controls="radix-P0-2"]`
+- `#widgetContainer, button[aria-controls="radix-P0-3"]`
 
 ### All page content should be contained by landmarks
 

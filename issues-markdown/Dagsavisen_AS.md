@@ -167,19 +167,19 @@
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(32)`
 - `.color_mobile_no_bg_color.row.large-12:nth-child(33)`
 - `.lab-scrollbox-headline.t28.font-InterTight`
-- `#markup_10478983 > .fullwidthTarget.content > unite-player,#status-container`
+- `#markup_10478983 > .fullwidthTarget.content > unite-player, #status-container`
 - `article[data-instance="10478981"] > .content > .floatingTextSubset.media > .floatingText`
-- `#markup_10453098 > .fullwidthTarget.content > unite-player,#status-container`
+- `#markup_10453098 > .fullwidthTarget.content > unite-player, #status-container`
 - `article[data-instance="10453097"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10453072 > .fullwidthTarget.content > unite-player,#status-container`
+- `#markup_10453072 > .fullwidthTarget.content > unite-player, #status-container`
 - `article[data-instance="10453073"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10440435 > .fullwidthTarget.content > unite-player,#status-container`
+- `#markup_10440435 > .fullwidthTarget.content > unite-player, #status-container`
 - `.color_mobile_no_bg_color.align-center.mobile_text_align_align-center > .floatingTextSubset.media > .floatingText`
-- `#markup_10440421 > .fullwidthTarget.content > unite-player,#status-container`
+- `#markup_10440421 > .fullwidthTarget.content > unite-player, #status-container`
 - `article[data-instance="10440420"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10440430 > .fullwidthTarget.content > unite-player,#status-container`
+- `#markup_10440430 > .fullwidthTarget.content > unite-player, #status-container`
 - `article[data-instance="10440429"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10440438 > .fullwidthTarget.content > unite-player,#status-container`
+- `#markup_10440438 > .fullwidthTarget.content > unite-player, #status-container`
 - `article[data-instance="10440437"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
 - `.row.large-12.small-12:nth-child(35)`
 - `.lab-scrollbox-headline.t25.tm18`

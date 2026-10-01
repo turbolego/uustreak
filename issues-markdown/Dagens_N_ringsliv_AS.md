@@ -167,7 +167,7 @@
 - `a[data-id="2-1-2051056"] > article[data-teaser_type="cpp-article-dn"] > .title.dn-headline--subhead[data-v-95b1487b=""]`
 - `a[data-id="2-1-2051056"] > article[data-teaser_type="cpp-article-dn"] > .meta`
 - `a[data-id="2-1-2050146"]`
-- `dn-video-carousel,.carousel__header`
+- `dn-video-carousel, .carousel__header`
 - `.layout-abb.dn-grid.dn-grid-layout:nth-child(16)`
 - `div[grouptype="Audience Engagement 2"]`
 - `a[href$="dnjobb.no/"] > span`

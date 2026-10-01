@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `#mcforms-365945-437181,.visible`
+- `#mcforms-365945-437181, .visible`
 
 ### Table header text should not be empty
 

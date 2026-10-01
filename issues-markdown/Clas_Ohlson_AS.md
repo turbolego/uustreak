@@ -41,8 +41,8 @@
 
 #### Affected Elements:
 
-- `#cx-livechat-host,iframe[name="cx-webChatButton"]`
-- `#cx-livechat-host,iframe[name="cx-webChatWindow"]`
+- `#cx-livechat-host, iframe[name="cx-webChatButton"]`
+- `#cx-livechat-host, iframe[name="cx-webChatWindow"]`
 
 ### Heading levels should only increase by one
 
@@ -113,4 +113,4 @@
 
 #### Affected Elements:
 
-- `#cx-livechat-host,iframe[name="cx-webChatButton"], #container`
+- `#cx-livechat-host, iframe[name="cx-webChatButton"], #container`

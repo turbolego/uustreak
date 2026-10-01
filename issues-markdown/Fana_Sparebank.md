@@ -68,6 +68,6 @@
 #### Affected Elements:
 
 - `.skip-link`
-- `.PostHogSurvey-019d1ac3-348c-0000-c7e4-af9588574047,.question-header`
-- `.PostHogSurvey-019d1ac3-348c-0000-c7e4-af9588574047,.rating-text`
-- `.PostHogSurvey-019d1ac3-348c-0000-c7e4-af9588574047,.bottom-section`
+- `.PostHogSurvey-019d1ac3-348c-0000-c7e4-af9588574047, .question-header`
+- `.PostHogSurvey-019d1ac3-348c-0000-c7e4-af9588574047, .rating-text`
+- `.PostHogSurvey-019d1ac3-348c-0000-c7e4-af9588574047, .bottom-section`

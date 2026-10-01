@@ -132,7 +132,7 @@
 
 #### Affected Elements:
 
-- `bam-playlist,.player-container`
+- `bam-playlist, .player-container`
 
 ### Interactive controls must not be nested
 
@@ -144,7 +144,7 @@
 
 #### Affected Elements:
 
-- `bam-playlist,bam-player[video-id="puv_wcjPeir9SacUpcig1WckEf"],.has-preview.wrapper[role="button"]`
+- `bam-playlist, bam-player[video-id="puv_wcjPeir9SacUpcig1WckEf"], .has-preview.wrapper[role="button"]`
 
 ### All page content should be contained by landmarks
 
