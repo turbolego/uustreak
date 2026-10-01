@@ -634,7 +634,14 @@ details summary:hover {
     .data-warning {
         background-color: var(--color-invalid-bg);
         color: var(--color-warning);
-        border: 1px solid var(--color-warning);
+    }
+
+    .data-warning summary {
+        color: var(--color-warning);
+    }
+
+    .data-warning summary:hover {
+        color: var(--color-text);
     }
 }
 
