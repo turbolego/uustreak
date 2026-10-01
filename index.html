@@ -43,6 +43,7 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#page-title">Hopp til hovedinnhold</a>
     <main role="main" aria-labelledby="page-title">
         <header class="page-hero" aria-labelledby="page-title">
             <h1 id="page-title">WCAG-brudd topplista</h1>
@@ -90,33 +91,33 @@
                 </div>
             </nav>
         </section>
-        <dialog class="details-dialog" id="details-dialog">
+        <dialog class="details-dialog" id="details-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-content">
             <h2 id="dialog-title">Rapportdetaljer</h2>
             <div id="dialog-content"></div>
         </dialog>
-        <dialog class="details-dialog summary-dialog" id="summary-dialog">
+        <dialog class="details-dialog summary-dialog" id="summary-dialog" aria-labelledby="summary-dialog-title" aria-describedby="summary-dialog-content">
             <h2 id="summary-dialog-title">Tag Sammendrag</h2>
             <div id="summary-dialog-content"></div>
             <button aria-label="Lukk sammendrag" class="dialog-close" id="close-summary-dialog">×</button>
         </dialog>
-        <dialog class="details-dialog invalid-urls-dialog" id="invalid-urls-dialog">
+        <dialog class="details-dialog invalid-urls-dialog" id="invalid-urls-dialog" aria-labelledby="invalid-urls-dialog-title" aria-describedby="invalid-urls-dialog-content">
             <h2 id="invalid-urls-dialog-title">Døde lenker</h2>
             <div id="invalid-urls-dialog-content"></div>
             <button aria-label="Lukk døde lenker dialog" class="dialog-close" id="close-invalid-urls-dialog">×</button>
         </dialog>
-        <dialog class="details-dialog" id="achievements-dialog">
+        <dialog class="details-dialog" id="achievements-dialog" aria-labelledby="achievements-dialog-title" aria-describedby="achievements-dialog-content">
             <h2 id="achievements-dialog-title">Achievements 🏆</h2>
             <div id="achievements-dialog-content"></div>
             <button aria-label="Lukk achievements dialog" class="dialog-close" id="close-achievements-dialog">×</button>
         </dialog>
-        <dialog class="details-dialog" id="trends-dialog" aria-labelledby="trends-dialog-title">
+        <dialog class="details-dialog" id="trends-dialog" aria-labelledby="trends-dialog-title" aria-describedby="trends-dialog-content">
             <div class="modal-header">
                 <h2 id="trends-dialog-title">Trends</h2>
                 <button aria-label="Lukk trends dialog" class="dialog-close" id="close-trends-dialog">×</button>
             </div>
             <div id="trends-dialog-content"></div>
         </dialog>
-        <dialog class="details-dialog" id="readme-dialog" aria-labelledby="readme-dialog-title">
+        <dialog class="details-dialog" id="readme-dialog" aria-labelledby="readme-dialog-title" aria-describedby="readme-content">
             <div class="modal-header">
                 <h2 id="readme-dialog-title">Om UUStreak</h2>
                 <button aria-label="Lukk README beskrivelse" class="dialog-close" id="close-readme-dialog">×</button>
@@ -1227,16 +1228,20 @@
 
             const table = document.createElement('table');
             table.className = 'sortable';
+            table.setAttribute('aria-label', `WCAG-brudd topplista for ${date}, sortérbar tabell`);
 
             const caption = document.createElement('caption');
             caption.textContent = `WCAG-brudd topplista for ${date}`;
+            caption.id = `table-caption-${date.replace(/-/g,'')}`;
             table.appendChild(caption);
+            table.setAttribute('aria-labelledby', caption.id);
 
             const thead = document.createElement('thead');
             const headerRow = document.createElement('tr');
             columns.forEach((col, index) => {
                 const th = document.createElement('th');
                 th.setAttribute('scope', 'col');
+                th.id = `col-${index}-${date.replace(/-/g,'')}`;
 
                 // Don't make the rank column sortable
                 if (index !== 0) {
@@ -1281,6 +1286,8 @@
 
                 columns.forEach((col, index) => {
                     const cell = document.createElement('td');
+                    cell.dataset.label = col;
+                    cell.setAttribute('headers', `col-${index}-${date.replace(/-/g,'')}`);
                     if (index === 0) {
                         // Rank column - will be updated after sorting
                         cell.className = 'rank-cell';
