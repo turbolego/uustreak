@@ -10,12 +10,17 @@
     --color-bg-alt2: #f8f9fa;
     --color-bg-alt3: #f2f2f2;
     --color-bg-primary: #000000;
+    --color-bg-primary-hover: #333333;
+    --color-bg-secondary: #ffffff;
+    --color-bg-secondary-hover: #f2f2f2;
     --color-text: #000000;
     --color-text-secondary: #333333;
     --color-text-tertiary: #666666;
     --color-text-inverse: #ffffff;
     --color-border: #d1d5db;
     --color-border-alt: #e5e7eb;
+    --color-border-secondary: #666666;
+    --color-border-secondary-hover: #444444;
     --color-accent: #0b5cad;
     --color-accent-hover: #08468c;
     --color-success: #1c7c36;
@@ -38,12 +43,17 @@
         --color-bg-alt2: #252526;
         --color-bg-alt3: #2d2d2d;
         --color-bg-primary: #ffffff;
+        --color-bg-primary-hover: #e0e0e0;
+        --color-bg-secondary: #1e1e1e;
+        --color-bg-secondary-hover: #2d2d2d;
         --color-text: #ffffff;
         --color-text-secondary: #e0e0e0;
         --color-text-tertiary: #aaaaaa;
         --color-text-inverse: #000000;
         --color-border: #404040;
         --color-border-alt: #505050;
+        --color-border-secondary: #aaaaaa;
+        --color-border-secondary-hover: #cccccc;
         --color-accent: #66b2ff;
         --color-accent-hover: #99c9ff;
         --color-success: #4ade80;
@@ -114,19 +124,19 @@ h1 {
 }
 
 .hero-actions .trend-button {
-    border-color: var(--color-text-tertiary);
+    border-color: var(--color-border-secondary);
     color: var(--color-text);
-    background: var(--color-bg);
+    background: var(--color-bg-secondary);
 }
 
 .hero-actions button:hover {
-    background-color: var(--color-bg);
-    border-color: var(--color-bg-primary);
+    background-color: var(--color-bg-primary-hover);
+    border-color: var(--color-bg-primary-hover);
 }
 
 .hero-actions .trend-button:hover {
-    background-color: var(--color-bg-alt2);
-    border-color: var(--color-text-secondary);
+    background-color: var(--color-bg-secondary-hover);
+    border-color: var(--color-border-secondary-hover);
 }
 
 .navigation-section,
