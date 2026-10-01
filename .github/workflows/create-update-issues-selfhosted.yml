@@ -124,16 +124,37 @@ jobs:
 
             // ---------- Existing issues (fetched once) ----------
             const issuesByTitle = new Map();
-            // A single pass of the list API can omit issues, so merge two passes to avoid creating duplicates.
-            const issuesByNumber = new Map();
-            for (let pass = 0; pass < 2; pass++) {
-              for (const issue of await github.paginate(github.rest.issues.listForRepo, { owner, repo, state: 'all', per_page: 100 })) {
-                issuesByNumber.set(issue.number, issue);
-              }
+            // The REST list endpoint can omit issues (stale index), so list issues via GraphQL instead.
+            async function listAllIssues(states) {
+              const query = `query($owner: String!, $repo: String!, $states: [IssueState!], $cursor: String) {
+                repository(owner: $owner, name: $repo) {
+                  issues(first: 50, after: $cursor, states: $states) {
+                    pageInfo { hasNextPage endCursor }
+                    nodes { id number title body state labels(first: 100) { nodes { name } } }
+                  }
+                }
+              }`;
+              const issues = [];
+              let cursor = null;
+              do {
+                const { repository } = await github.graphql(query, { owner, repo, states, cursor });
+                for (const node of repository.issues.nodes) {
+                  issues.push({
+                    node_id: node.id,
+                    number: node.number,
+                    title: node.title,
+                    body: node.body,
+                    state: node.state.toLowerCase(),
+                    labels: node.labels.nodes.map((label) => ({ name: label.name })),
+                  });
+                }
+                cursor = repository.issues.pageInfo.hasNextPage ? repository.issues.pageInfo.endCursor : null;
+              } while (cursor);
+              return issues;
             }
-            const existingIssues = [...issuesByNumber.values()];
+
+            const existingIssues = await listAllIssues(['OPEN', 'CLOSED']);
             for (const issue of existingIssues) {
-              if (issue.pull_request) continue;
               const list = issuesByTitle.get(issue.title) || [];
               list.push(issue);
               issuesByTitle.set(issue.title, list);
