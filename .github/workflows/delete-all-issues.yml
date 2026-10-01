@@ -93,19 +93,41 @@ jobs:
             }
 
             const labelNames = (issue) => issue.labels.map((label) => (typeof label === 'string' ? label : label.name));
-            async function listTargets() {
-              const listed = await github.paginate(github.rest.issues.listForRepo, {
-                owner,
-                repo,
-                state: mode === 'delete' ? 'all' : 'open',
-                per_page: 100,
-              });
-              return listed
-                .filter((issue) => !issue.pull_request)
-                .filter((issue) => SCOPE === 'all' || labelNames(issue).some((name) => AUTOMATED_LABELS.has(name)));
+            // The REST list endpoint can omit issues (stale index), so list issues via GraphQL instead.
+            async function listAllIssues(states) {
+              const query = `query($owner: String!, $repo: String!, $states: [IssueState!], $cursor: String) {
+                repository(owner: $owner, name: $repo) {
+                  issues(first: 50, after: $cursor, states: $states) {
+                    pageInfo { hasNextPage endCursor }
+                    nodes { id number title body state labels(first: 100) { nodes { name } } }
+                  }
+                }
+              }`;
+              const issues = [];
+              let cursor = null;
+              do {
+                const { repository } = await github.graphql(query, { owner, repo, states, cursor });
+                for (const node of repository.issues.nodes) {
+                  issues.push({
+                    node_id: node.id,
+                    number: node.number,
+                    title: node.title,
+                    body: node.body,
+                    state: node.state.toLowerCase(),
+                    labels: node.labels.nodes.map((label) => ({ name: label.name })),
+                  });
+                }
+                cursor = repository.issues.pageInfo.hasNextPage ? repository.issues.pageInfo.endCursor : null;
+              } while (cursor);
+              return issues;
             }
 
-            // The issues list API can omit items in a single pass, so re-list until nothing new matches.
+            async function listTargets() {
+              const listed = await listAllIssues(mode === 'delete' ? ['OPEN', 'CLOSED'] : ['OPEN']);
+              return listed.filter((issue) => SCOPE === 'all' || labelNames(issue).some((name) => AUTOMATED_LABELS.has(name)));
+            }
+
+            // Re-list until nothing new matches, in case issues appear while deleting.
             const MAX_PASSES = dryRun ? 1 : 3;
             const attempted = new Set();
             const failures = [];
