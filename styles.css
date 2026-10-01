@@ -9,6 +9,7 @@
     --color-bg-alt: #f5f5f5;
     --color-bg-alt2: #f8f9fa;
     --color-bg-alt3: #f2f2f2;
+    --color-bg-primary: #000000;
     --color-text: #000000;
     --color-text-secondary: #333333;
     --color-text-tertiary: #666666;
@@ -36,6 +37,7 @@
         --color-bg-alt: #1e1e1e;
         --color-bg-alt2: #252526;
         --color-bg-alt3: #2d2d2d;
+        --color-bg-primary: #ffffff;
         --color-text: #ffffff;
         --color-text-secondary: #e0e0e0;
         --color-text-tertiary: #aaaaaa;
@@ -105,8 +107,8 @@ h1 {
     padding: 0.75rem 1.25rem;
     font-size: 1rem;
     border-radius: 4px;
-    border: 2px solid var(--color-text);
-    background: var(--color-bg);
+    border: 2px solid var(--color-bg-primary);
+    background: var(--color-bg-primary);
     color: var(--color-text-inverse);
     cursor: pointer;
 }
@@ -118,8 +120,8 @@ h1 {
 }
 
 .hero-actions button:hover {
-    background-color: var(--color-bg-alt);
-    border-color: var(--color-text-tertiary);
+    background-color: var(--color-bg);
+    border-color: var(--color-bg-primary);
 }
 
 .hero-actions .trend-button:hover {
