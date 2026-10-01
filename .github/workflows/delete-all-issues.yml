@@ -92,38 +92,49 @@ jobs:
               }
             }
 
-            const listed = await github.paginate(github.rest.issues.listForRepo, {
-              owner,
-              repo,
-              state: mode === 'delete' ? 'all' : 'open',
-              per_page: 100,
-            });
             const labelNames = (issue) => issue.labels.map((label) => (typeof label === 'string' ? label : label.name));
-            const targets = listed
-              .filter((issue) => !issue.pull_request)
-              .filter((issue) => SCOPE === 'all' || labelNames(issue).some((name) => AUTOMATED_LABELS.has(name)));
+            async function listTargets() {
+              const listed = await github.paginate(github.rest.issues.listForRepo, {
+                owner,
+                repo,
+                state: mode === 'delete' ? 'all' : 'open',
+                per_page: 100,
+              });
+              return listed
+                .filter((issue) => !issue.pull_request)
+                .filter((issue) => SCOPE === 'all' || labelNames(issue).some((name) => AUTOMATED_LABELS.has(name)));
+            }
 
-            core.info(`Found ${targets.length} issue(s) to ${mode} (scope: ${SCOPE}${dryRun ? ', dry run' : ''}).`);
-
-            let processed = 0;
+            // The issues list API can omit items in a single pass, so re-list until nothing new matches.
+            const MAX_PASSES = dryRun ? 1 : 3;
+            const attempted = new Set();
             const failures = [];
-            for (const issue of targets) {
-              const label = `#${issue.number} ${issue.title}`;
-              if (dryRun) {
-                core.info(`[dry-run] would ${mode} ${label}`);
-                continue;
+            let processed = 0;
+            let matched = 0;
+            for (let pass = 1; pass <= MAX_PASSES; pass++) {
+              const targets = (await listTargets()).filter((issue) => !attempted.has(issue.number));
+              core.info(`Pass ${pass}: found ${targets.length} issue(s) to ${mode} (scope: ${SCOPE}${dryRun ? ', dry run' : ''}).`);
+              if (targets.length === 0) break;
+              matched += targets.length;
+              for (const issue of targets) {
+                attempted.add(issue.number);
+                const label = `#${issue.number} ${issue.title}`;
+                if (dryRun) {
+                  core.info(`[dry-run] would ${mode} ${label}`);
+                  continue;
+                }
+                try {
+                  await withRetry(`${mode} ${label}`, () => mode === 'delete'
+                    ? writer.graphql('mutation($id: ID!) { deleteIssue(input: { issueId: $id }) { clientMutationId } }', { id: issue.node_id })
+                    : writer.rest.issues.update({ owner, repo, issue_number: issue.number, state: 'closed', state_reason: 'not_planned' }));
+                  processed++;
+                  core.info(`${verb} ${label}`);
+                } catch (error) {
+                  failures.push(`${label}: ${error.message}`);
+                  core.error(`Failed to ${mode} ${label}: ${error.message}`);
+                }
+                await sleep(WRITE_DELAY_MS);
               }
-              try {
-                await withRetry(`${mode} ${label}`, () => mode === 'delete'
-                  ? writer.graphql('mutation($id: ID!) { deleteIssue(input: { issueId: $id }) { clientMutationId } }', { id: issue.node_id })
-                  : writer.rest.issues.update({ owner, repo, issue_number: issue.number, state: 'closed', state_reason: 'not_planned' }));
-                processed++;
-                core.info(`${verb} ${label}`);
-              } catch (error) {
-                failures.push(`${label}: ${error.message}`);
-                core.error(`Failed to ${mode} ${label}: ${error.message}`);
-              }
-              await sleep(WRITE_DELAY_MS);
             }
 
             await core.summary
@@ -131,7 +142,7 @@ jobs:
               .addList([
                 `Mode: ${mode}${dryRun ? ' (dry run)' : ''}`,
                 `Scope: ${SCOPE}`,
-                `Matching issues: ${targets.length}`,
+                `Matching issues: ${matched}`,
                 `Issues ${verb}: ${processed}`,
                 `Failures: ${failures.length}`,
               ])

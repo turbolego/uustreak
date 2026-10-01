@@ -124,7 +124,14 @@ jobs:
 
             // ---------- Existing issues (fetched once) ----------
             const issuesByTitle = new Map();
-            const existingIssues = await github.paginate(github.rest.issues.listForRepo, { owner, repo, state: 'all', per_page: 100 });
+            // A single pass of the list API can omit issues, so merge two passes to avoid creating duplicates.
+            const issuesByNumber = new Map();
+            for (let pass = 0; pass < 2; pass++) {
+              for (const issue of await github.paginate(github.rest.issues.listForRepo, { owner, repo, state: 'all', per_page: 100 })) {
+                issuesByNumber.set(issue.number, issue);
+              }
+            }
+            const existingIssues = [...issuesByNumber.values()];
             for (const issue of existingIssues) {
               if (issue.pull_request) continue;
               const list = issuesByTitle.get(issue.title) || [];
