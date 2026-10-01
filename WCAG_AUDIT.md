@@ -27,7 +27,7 @@ Key CSS:
 3. **1.4.10 Reflow** – Table does not reflow to single column; horizontal scroll required below ~600px → fails AA at 320px width.
 4. **2.4.7 Focus Visible** – Focus outline exists but is 2px and contrast ~4.5:1; WCAG 2.2 SC 2.4.11 Focus Appearance requires ≥2px perimeter *and* 3:1 contrast area. Current satisfies contrast but outline-offset negative may obscure.
 5. **2.4.11 Focus Appearance** – Outline-offset: -2px risks covering part of component; better to use positive offset.
-6. **2.5.5 Target Size** – Achievements/Trends buttons are `min-height:36px` → below 24×24 px AA requirement.
+6. **2.5.5 Target Size (Enhanced AAA)** – Achievements/Trends buttons are `min-height:36px` → below 44×44 px AAA target, meets 24×24 AA via 2.5.8.
 7. **2.5.7 Dragging Movements** – N/A
 8. **3.2.6 Consistent Help** – Help content varies by dialog; skip link missing.
 9. **4.1.3 Status Messages** – Loading container appears visually only; no `role="status"`/`aria-live`.
