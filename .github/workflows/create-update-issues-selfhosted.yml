@@ -2,14 +2,39 @@ name: Create or Update WCAG Violation Issues (Self-hosted)
 
 on:
   workflow_dispatch:
+    inputs:
+      report_date:
+        description: 'Report date to publish (YYYY-MM-DD). Leave empty to use the latest available date.'
+        required: false
+        default: ''
+        type: string
+      dry_run:
+        description: 'Log planned issue changes without writing issues or pushing to gh-pages'
+        required: false
+        default: false
+        type: boolean
   workflow_call:
+    inputs:
+      report_date:
+        required: false
+        default: ''
+        type: string
+      dry_run:
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  issues: write
 
 jobs:
   create-or-update-issues:
     runs-on: self-hosted
-    permissions:
-      contents: write
-      issues: write
+    timeout-minutes: 120
+    concurrency:
+      group: wcag-issues
+      cancel-in-progress: false
 
     steps:
       - name: Checkout gh-pages branch
@@ -18,345 +43,188 @@ jobs:
           ref: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create issues-markdown directory
-        run: |
-          mkdir -p issues-markdown
-          echo "Created issues-markdown directory"
-
-      - name: Create or Update GitHub Issues for Violations
+      - name: Create or update GitHub issues for violations
+        id: issues
         uses: actions/github-script@v9
+        env:
+          REPORT_DATE: ${{ inputs.report_date }}
+          DRY_RUN: ${{ inputs.dry_run }}
         with:
           script: |
             const fs = require('fs');
             const path = require('path');
 
-            console.log("Starting WCAG violation issue creation workflow...");
+            const { owner, repo } = context.repo;
+            const REPORTS_DIR = 'accessibility-reports';
+            const SUMMARIES_DIR = path.join(REPORTS_DIR, 'summaries');
+            const MARKDOWN_DIR = 'issues-markdown';
+            const PAGES_URL = `https://${owner}.github.io/${repo}`;
+            const VIOLATION_LABEL = 'wcag-violation';
+            const SUMMARY_LABEL = 'wcag-summary';
+            const AUTOMATED_LABEL = 'automated-report';
+            const SUMMARY_TITLE = 'WCAG Daily Summary Report';
+            const MAX_BODY_LENGTH = 65000; // GitHub limit is 65536
+            const WRITE_DELAY_MS = 1000; // stay below the secondary rate limit for content creation
+            const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+            const dryRun = process.env.DRY_RUN === 'true';
+            const requestedDate = (process.env.REPORT_DATE || '').trim();
+            const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+            const stats = { created: 0, updated: 0, unchanged: 0, closed: 0, skipped: 0, errors: [] };
 
-            function getLatestReportFolder(baseDir) {
-              console.log(`Checking for the latest report folder in: ${baseDir}`);
+            // ---------- Report date ----------
+            const availableDates = fs.readdirSync(REPORTS_DIR, { withFileTypes: true })
+              .filter((entry) => entry.isDirectory() && DATE_RE.test(entry.name))
+              .map((entry) => entry.name)
+              .sort();
+            if (availableDates.length === 0) {
+              core.setFailed(`No dated report folders found in ${REPORTS_DIR}.`);
+              return;
+            }
+            if (requestedDate && (!DATE_RE.test(requestedDate) || !availableDates.includes(requestedDate))) {
+              core.setFailed(`Report date "${requestedDate}" is not available. Latest dates: ${availableDates.slice(-5).join(', ')}`);
+              return;
+            }
+            const reportDate = requestedDate || availableDates[availableDates.length - 1];
+            core.setOutput('report_date', reportDate);
+            core.info(`Using reports from ${reportDate}${dryRun ? ' (dry run)' : ''}.`);
 
-              if (!fs.existsSync(baseDir)) {
-                console.warn(`Directory ${baseDir} does not exist.`);
-                return null;
-              }
+            // ---------- Helpers ----------
+            const issueTitle = (project) => `[${project}] WCAG Violations Report`;
+            const sanitizeFilename = (name) => name.replace(/[^a-z0-9_\-]/gi, '_');
+            const labelNames = (issue) => issue.labels.map((label) => (typeof label === 'string' ? label : label.name));
+            const escapeCell = (text) => String(text ?? '').replace(/\|/g, '\\|').replace(/\r?\n/g, ' ');
+            const formatTarget = (node) => `\`${(node.target || []).flat(Infinity).join(', ')}\``;
 
-              const subdirs = fs.readdirSync(baseDir)
-                .filter(name => {
-                  const fullPath = path.join(baseDir, name);
-                  return fs.statSync(fullPath).isDirectory() && 
-                         name !== 'summaries' && // Exclude summaries folder
-                         /^\d{4}-\d{2}-\d{2}$/.test(name); // Only include date-formatted folders
-                })
-                .sort((a, b) => b.localeCompare(a)); // Sort descending
-
-              if (subdirs.length === 0) {
-                console.log("No dated subdirectories found in accessibility-reports.");
-                return null;
-              }
-
-              const latestFolder = subdirs[0];
-              console.log(`Latest report folder selected: ${latestFolder}`);
-              return path.join(baseDir, latestFolder);
+            function truncateBody(body) {
+              if (body.length <= MAX_BODY_LENGTH) return body;
+              const notice = '\n\n---\n\n**⚠️ This issue body was truncated due to size limitations.**\n\nThe full report is available in the markdown file linked above.';
+              return body.substring(0, MAX_BODY_LENGTH - notice.length) + notice;
             }
 
-            function getLatestSummaryFile(summariesDir) {
-              console.log(`Checking for the latest daily summary in: ${summariesDir}`);
-
-              if (!fs.existsSync(summariesDir)) {
-                console.warn(`Directory ${summariesDir} does not exist.`);
+            async function write(description, fn) {
+              if (dryRun) {
+                core.info(`[dry-run] ${description}`);
                 return null;
               }
-
-              const subdirs = fs.readdirSync(summariesDir)
-                .filter(name => fs.statSync(path.join(summariesDir, name)).isDirectory())
-                .sort((a, b) => b.localeCompare(a)); // Sort descending
-
-              if (subdirs.length === 0) {
-                console.log("No subdirectories found in summaries.");
-                return null;
+              for (let attempt = 1; ; attempt++) {
+                try {
+                  const result = await fn();
+                  await sleep(WRITE_DELAY_MS);
+                  return result;
+                } catch (error) {
+                  const rateLimited = (error.status === 403 || error.status === 429) && /rate limit/i.test(error.message);
+                  const retryable = rateLimited || error.status >= 500;
+                  if (!retryable || attempt >= 4) throw error;
+                  const waitSeconds = Number(error.response?.headers?.['retry-after']) || 60 * attempt;
+                  core.warning(`${description} failed with ${error.status}; retrying in ${waitSeconds}s (attempt ${attempt}/3)`);
+                  await sleep(waitSeconds * 1000);
+                }
               }
-
-              const latestSummaryFolder = subdirs[0];
-              const summaryFile = path.join(summariesDir, latestSummaryFolder, 'daily_summary.json');
-              
-              if (fs.existsSync(summaryFile)) {
-                console.log(`Latest daily summary file found: ${summaryFile}`);
-                return summaryFile;
-              }
-
-              console.log("No daily_summary.json found in latest folder.");
-              return null;
             }
 
-            function getReportsFromFolder(folderPath) {
-              console.log(`Looking for report files in: ${folderPath}`);
+            // ---------- Existing issues (fetched once) ----------
+            const issuesByTitle = new Map();
+            const existingIssues = await github.paginate(github.rest.issues.listForRepo, { owner, repo, state: 'all', per_page: 100 });
+            for (const issue of existingIssues) {
+              if (issue.pull_request) continue;
+              const list = issuesByTitle.get(issue.title) || [];
+              list.push(issue);
+              issuesByTitle.set(issue.title, list);
+            }
+            core.info(`Loaded ${existingIssues.length} existing issues.`);
 
-              if (!fs.existsSync(folderPath)) {
-                console.warn(`Directory ${folderPath} does not exist.`);
-                return [];
+            function findIssue(title) {
+              const matches = (issuesByTitle.get(title) || []).sort((a, b) => b.number - a.number);
+              if (matches.length > 1) {
+                core.warning(`Found ${matches.length} issues titled "${title}" (${matches.map((i) => `#${i.number}`).join(', ')}); using the newest open one.`);
               }
-
-              const files = fs.readdirSync(folderPath)
-                .filter(file => file.startsWith('violations-') && file.endsWith('.json'));
-
-              console.log(`Found ${files.length} report files in latest folder.`);
-
-              return files.map(file => path.join(folderPath, file));
+              return matches.find((issue) => issue.state === 'open') || matches[0] || null;
             }
 
-            async function findExistingIssue(projectName) {
-              console.log(`Checking for existing issue with title format: [${projectName}] WCAG Violations Report`);
+            async function upsertIssue(title, body, labels) {
+              const existing = findIssue(title);
+              if (!existing) {
+                const created = await write(`create "${title}"`, () => github.rest.issues.create({ owner, repo, title, body, labels }));
+                if (created) issuesByTitle.set(title, [created.data]);
+                stats.created++;
+                core.info(`Created issue "${title}"${created ? ` #${created.data.number}` : ''}.`);
+                return;
+              }
+              const sameLabels = JSON.stringify(labelNames(existing).sort()) === JSON.stringify([...labels].sort());
+              if (existing.state === 'open' && (existing.body || '') === body && sameLabels) {
+                stats.unchanged++;
+                return;
+              }
+              await write(`update #${existing.number} "${title}"`, () => github.rest.issues.update({
+                owner, repo, issue_number: existing.number, body, labels, state: 'open',
+              }));
+              stats.updated++;
+              core.info(`Updated issue #${existing.number} "${title}".`);
+            }
 
+            async function closeResolvedIssue(project) {
+              const existing = findIssue(issueTitle(project));
+              if (existing && existing.state === 'open') {
+                await write(`close #${existing.number} "${existing.title}"`, () => github.rest.issues.update({
+                  owner, repo, issue_number: existing.number, state: 'closed', state_reason: 'completed',
+                }));
+                stats.closed++;
+                core.info(`Closed issue #${existing.number} for ${project} (0 violations).`);
+              }
+              const markdownPath = path.join(MARKDOWN_DIR, `${sanitizeFilename(project)}.md`);
+              if (!dryRun && fs.existsSync(markdownPath)) fs.rmSync(markdownPath);
+            }
+
+            // ---------- Select the latest usable report per project ----------
+            const reportDir = path.join(REPORTS_DIR, reportDate);
+            const latestByProject = new Map();
+            const unusableProjects = new Set();
+            for (const file of fs.readdirSync(reportDir).filter((name) => name.startsWith('violations-') && name.endsWith('.json'))) {
+              let report;
               try {
-                const issues = await github.paginate(github.rest.issues.listForRepo, {
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  state: "all", // Includes closed issues
-                  labels: "wcag-violation",
-                  per_page: 100
-                });
-
-                if (!issues || !Array.isArray(issues)) {
-                  console.warn("No issues found or response format is unexpected.");
-                  return null;
-                }
-
-                return issues.find(issue => issue.title === `[${projectName}] WCAG Violations Report`) || null;
+                report = JSON.parse(fs.readFileSync(path.join(reportDir, file), 'utf8'));
               } catch (error) {
-                console.error("Error fetching issues:", error);
-                return null;
+                core.warning(`Skipping unreadable report ${file}: ${error.message}`);
+                continue;
+              }
+              if (!report || typeof report.project !== 'string' || !Array.isArray(report.violations)) {
+                core.warning(`Skipping ${file}: invalid structure.`);
+                continue;
+              }
+              const unusable = report.skipped || report.failed || report.total_violations == null || /-(SKIPPED|FAILED)\.json$/.test(file);
+              if (unusable) {
+                unusableProjects.add(report.project);
+                continue;
+              }
+              const current = latestByProject.get(report.project);
+              if (!current || String(report.timestamp) > String(current.timestamp)) {
+                latestByProject.set(report.project, report);
               }
             }
+            const skippedProjects = [...unusableProjects].filter((project) => !latestByProject.has(project)).sort();
+            stats.skipped = skippedProjects.length;
+            if (skippedProjects.length) {
+              core.info(`Leaving issues untouched for skipped/failed scans: ${skippedProjects.join(', ')}`);
+            }
 
-            async function closeAndDeleteIssue(projectName) {
-              console.log(`Closing and deleting issue for project with 0 violations: ${projectName}`);
+            // ---------- Project issues ----------
+            if (!dryRun) fs.mkdirSync(MARKDOWN_DIR, { recursive: true });
+            let projectsWithViolations = 0;
+            let totalViolations = 0;
 
+            for (const report of [...latestByProject.values()].sort((a, b) => a.project.localeCompare(b.project))) {
+              const { project, timestamp, url, total_violations } = report;
               try {
-                const existingIssue = await findExistingIssue(projectName);
-                
-                if (existingIssue) {
-                  console.log(`Found existing issue #${existingIssue.number} for ${projectName}`);
-                  
-                  // Close the issue first if it's open
-                  if (existingIssue.state === 'open') {
-                    console.log(`Closing issue #${existingIssue.number}...`);
-                    await github.rest.issues.update({
-                      owner: context.repo.owner,
-                      repo: context.repo.repo,
-                      issue_number: existingIssue.number,
-                      state: 'closed'
-                    });
-                  }
-                  
-                  // Delete the issue
-                  console.log(`Deleting issue #${existingIssue.number}...`);
-                  await github.rest.issues.delete({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    issue_number: existingIssue.number
-                  });
-                  
-                  console.log(`Successfully closed and deleted issue for ${projectName}`);
-                  return true;
-                } else {
-                  console.log(`No existing issue found for ${projectName}`);
-                  return false;
+                const violations = report.violations.filter((violation) => violation && violation.violation_count > 0);
+                if (violations.length === 0) {
+                  await closeResolvedIssue(project);
+                  continue;
                 }
-              } catch (error) {
-                console.error(`Error closing/deleting issue for ${projectName}:`, error);
-                return false;
-              }
-            }
+                projectsWithViolations++;
+                totalViolations += Number(total_violations) || 0;
 
-            function sanitizeFilename(name) {
-              // Replace invalid filename characters with underscores
-              return name.replace(/[^a-z0-9_\-]/gi, '_');
-            }
-
-            function truncateIssueBody(body, maxLength = 65000) {
-              // GitHub's limit is 65536, use 65000 to be safe
-              if (body.length <= maxLength) {
-                return body;
-              }
-              
-              const truncateMessage = '\n\n---\n\n**⚠️ This issue body was truncated due to size limitations.**\n\nThe full report is available in the markdown file linked above.';
-              const availableLength = maxLength - truncateMessage.length;
-              
-              return body.substring(0, availableLength) + truncateMessage;
-            }
-
-            function saveMarkdownFile(projectName, content) {
-              try {
-                const markdownDir = 'issues-markdown';
-                if (!fs.existsSync(markdownDir)) {
-                  fs.mkdirSync(markdownDir, { recursive: true });
-                }
-                
-                const filename = sanitizeFilename(projectName) + '.md';
-                const filepath = path.join(markdownDir, filename);
-                
-                fs.writeFileSync(filepath, content, 'utf8');
-                console.log(`Markdown file saved: ${filepath}`);
-                
-                return filename;
-              } catch (error) {
-                console.error(`Error saving markdown file for ${projectName}:`, error);
-                return null;
-              }
-            }
-
-            async function findExistingSummaryIssue() {
-              console.log(`Checking for existing daily summary issue`);
-
-              try {
-                const issues = await github.paginate(github.rest.issues.listForRepo, {
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  state: "all", // Includes closed issues
-                  labels: "wcag-summary",
-                  per_page: 100
-                });
-
-                if (!issues || !Array.isArray(issues)) {
-                  console.warn("No issues found or response format is unexpected.");
-                  return null;
-                }
-
-                return issues.find(issue => issue.title === `WCAG Daily Summary Report`) || null;
-              } catch (error) {
-                console.error("Error fetching issues:", error);
-                return null;
-              }
-            }
-
-            async function processDailySummary(summaryFile) {
-              console.log(`Processing daily summary: ${summaryFile}`);
-
-              try {
-                const content = fs.readFileSync(summaryFile, 'utf8');
-                const summary = JSON.parse(content);
-
-                if (!summary || typeof summary !== 'object') {
-                  console.warn(`Skipping ${summaryFile} - Invalid structure`);
-                  return;
-                }
-
-                const { date, total_projects, total_violations, projects_with_violations, summary_stats } = summary;
-
-                const issueTitle = `WCAG Daily Summary Report`;
-
-                const body = [
-                  `## WCAG Daily Summary Report`,
-                  '',
-                  `**Date:** ${date}`,
-                  `**Total Projects Scanned:** ${total_projects}`,
-                  `**Total Violations Found:** ${total_violations}`,
-                  `**Projects with Violations:** ${projects_with_violations}`,
-                  '',
-                  '### Summary Statistics:',
-                  '',
-                  ...Object.entries(summary_stats || {}).map(([key, value]) => `- **${key}:** ${value}`),
-                  '',
-                  '### Project Details:',
-                  '',
-                  ...(summary.projects || []).map(project => [
-                    `#### ${project.name}`,
-                    `- **URL:** [${project.url}](${project.url})`,
-                    `- **Total Violations:** ${project.total_violations}`,
-                    `- **Status:** ${project.status}`,
-                    ...(project.violations_by_impact ? Object.entries(project.violations_by_impact).map(([impact, count]) => `- **${impact}:** ${count}`) : []),
-                    ''
-                  ]).flat()
-                ].join('\n');
-
-                const existingIssue = await findExistingSummaryIssue();
-
-                if (existingIssue) {
-                  console.log(`Updating existing daily summary issue: ${existingIssue.html_url}`);
-
-                  await github.rest.issues.update({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    issue_number: existingIssue.number,
-                    body: body,
-                    state: "open" // Reopen if closed
-                  });
-
-                  console.log(`Daily summary issue updated and reopened successfully.`);
-                } else {
-                  console.log(`Creating new daily summary issue`);
-
-                  await github.rest.issues.create({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    title: issueTitle,
-                    body: body,
-                    labels: ['wcag-summary', 'automated-report']
-                  });
-
-                  console.log(`New daily summary issue created.`);
-                }
-              } catch (error) {
-                console.error(`Error processing daily summary file: ${summaryFile}`, error);
-              }
-            }
-
-            // Process daily summary first
-            const summaryFile = getLatestSummaryFile('accessibility-reports/summaries');
-            if (summaryFile) {
-              await processDailySummary(summaryFile);
-            } else {
-              console.log("No daily summary file found.");
-            }
-
-            // Process individual violation reports
-            const latestFolder = getLatestReportFolder('accessibility-reports');
-            if (!latestFolder) {
-              console.log("No valid report folder found. Skipping individual reports.");
-            } else {
-              const reportFiles = getReportsFromFolder(latestFolder);
-              if (reportFiles.length === 0) {
-                console.log("No valid individual reports found.");
-              } else {
-                // Track projects that have already been processed to prevent duplicates
-                const processedProjects = new Set();
-
-                for (const file of reportFiles) {
-                  console.log(`Processing file: ${file}`);
-
-                  try {
-                    const content = fs.readFileSync(file, 'utf8');
-                    const report = JSON.parse(content);
-
-                    if (!report || typeof report !== 'object' || !Array.isArray(report.violations)) {
-                      console.warn(`Skipping ${file} - Invalid structure`);
-                      continue;
-                    }
-
-                    const { project, timestamp, url, total_violations, violations } = report;
-                    
-                    // Skip if this project has already been processed in this run
-                    if (processedProjects.has(project)) {
-                      console.log(`Project "${project}" has already been processed in this run. Skipping to prevent duplicates.`);
-                      continue;
-                    }
-
-                    console.log(`File read successfully: ${file}`);
-                    console.log(`Project: ${project}, Timestamp: ${timestamp}, URL: ${url}`);
-                    console.log(`Total Violations Reported: ${total_violations}`);
-
-                    const violationsWithCount = violations.filter(v => v && typeof v === 'object' && v.violation_count > 0);
-                    if (violationsWithCount.length === 0) {
-                      console.log(`Project ${project} has 0 violations. Closing and deleting issue if it exists.`);
-                      await closeAndDeleteIssue(project);
-                      processedProjects.add(project);
-                      continue;
-                    }
-
-                    const issueTitle = `[${project}] WCAG Violations Report`;
-
-                // Create full markdown content
-                const fullMarkdownContent = [
+                const markdownFilename = `${sanitizeFilename(project)}.md`;
+                const markdown = [
                   `# WCAG Violations Report for ${project}`,
                   '',
                   `**Timestamp:** ${timestamp}`,
@@ -365,7 +233,7 @@ jobs:
                   '',
                   '## Violation Details',
                   '',
-                  ...violationsWithCount.map(violation => [
+                  ...violations.flatMap((violation) => [
                     `### ${violation.help || 'Violation'}`,
                     '',
                     `- **Impact:** ${violation.impact || 'N/A'}`,
@@ -376,22 +244,16 @@ jobs:
                     '',
                     '#### Affected Elements:',
                     '',
-                    ...violation.nodes.map(node => `- \`${node.target.join(', ')}\``),
-                    ''
-                  ]).flat()
+                    ...(violation.nodes || []).map((node) => `- ${formatTarget(node)}`),
+                    '',
+                  ]),
                 ].join('\n');
-                
-                // Save markdown file
-                const markdownFilename = saveMarkdownFile(project, fullMarkdownContent);
-                const markdownUrl = markdownFilename 
-                  ? `https://turbolego.github.io/uustreak/issues-markdown/${markdownFilename}`
-                  : null;
-                
-                // Create issue body with markdown link
-                const bodyParts = [
+                if (!dryRun) fs.writeFileSync(path.join(MARKDOWN_DIR, markdownFilename), markdown, 'utf8');
+
+                const body = truncateBody([
                   `## WCAG Violations Report for ${project}`,
                   '',
-                  markdownUrl ? `📥 **[Download Full Report (Markdown)](${markdownUrl})**` : '',
+                  `📥 **[Download Full Report (Markdown)](${PAGES_URL}/issues-markdown/${markdownFilename})**`,
                   '',
                   `**Timestamp:** ${timestamp}`,
                   `**URL:** [${url}](${url})`,
@@ -399,7 +261,7 @@ jobs:
                   '',
                   '### Violation Details:',
                   '',
-                  ...violationsWithCount.map(violation => [
+                  ...violations.flatMap((violation) => [
                     `- **Impact:** ${violation.impact || 'N/A'}`,
                     `- **Description:** ${violation.description || 'N/A'}`,
                     `- **Help:** ${violation.help || 'N/A'}`,
@@ -407,86 +269,119 @@ jobs:
                     `- **Tags:** ${violation.tags ? violation.tags.join(', ') : 'N/A'}`,
                     `- **Count:** ${violation.violation_count}`,
                     `- **Affected Elements:**`,
-                    ...violation.nodes.map(node => `  - \`${node.target.join(', ')}\``),
-                    ''
-                  ]).flat()
-                ];
-                
-                const fullBody = bodyParts.join('\n');
-                const body = truncateIssueBody(fullBody);
+                    ...(violation.nodes || []).map((node) => `  - ${formatTarget(node)}`),
+                    '',
+                  ]),
+                ].join('\n'));
 
-                // Collect all unique tags from violations for this project
-                const allTags = new Set(['wcag-violation', 'automated-report']);
-                violationsWithCount.forEach(violation => {
-                  if (violation.tags && Array.isArray(violation.tags)) {
-                    violation.tags.forEach(tag => allTags.add(tag));
-                  }
-                });
+                const labels = [...new Set([
+                  VIOLATION_LABEL,
+                  AUTOMATED_LABEL,
+                  ...violations.flatMap((violation) => (Array.isArray(violation.tags) ? violation.tags : [])),
+                ])].filter((label) => label.length <= 50);
 
-                // Convert Set to array for the GitHub API
-                const labels = Array.from(allTags);
-
-                    const existingIssue = await findExistingIssue(project);
-
-                    if (existingIssue) {
-                      console.log(`Updating existing issue: ${existingIssue.html_url}`);
-
-                  await github.rest.issues.update({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    issue_number: existingIssue.number,
-                    body: body,
-                    state: "open", // Reopen if closed
-                    labels: labels
-                  });
-
-                      console.log(`Issue updated and reopened successfully.`);
-                    } else {
-                      console.log(`Creating new issue for ${project}`);
-
-                  await github.rest.issues.create({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    title: issueTitle,
-                    body: body,
-                    labels: labels
-                  });
-
-                      console.log(`New issue created for ${project}.`);
-                    }
-                    
-                    // Mark this project as processed
-                    processedProjects.add(project);
-                    
-                  } catch (error) {
-                    console.error(`Error processing file: ${file}`, error);
-                  }
-                }
-
-                console.log(`Projects processed in this run: ${Array.from(processedProjects).join(', ')}`);
+                await upsertIssue(issueTitle(project), body, labels);
+              } catch (error) {
+                stats.errors.push(`${project}: ${error.message}`);
+                core.error(`Failed to process ${project}: ${error.message}`);
               }
             }
 
-            console.log("WCAG violation issue creation workflow completed.");
-      
-      - name: Commit and Push Markdown Files to gh-pages
+            // ---------- Daily summary issue ----------
+            try {
+              const summaryFile = path.join(SUMMARIES_DIR, reportDate, 'daily_summary.json');
+              const summary = fs.existsSync(summaryFile) ? JSON.parse(fs.readFileSync(summaryFile, 'utf8')) : {};
+              if (!fs.existsSync(summaryFile)) core.warning(`No daily summary found at ${summaryFile}; summary issue will omit rule and tag tables.`);
+              const rules = (summary.rule_ids || []).slice().sort((a, b) => (b.urls?.length || 0) - (a.urls?.length || 0));
+              const tags = (summary.tags || []).slice().sort((a, b) => (b.urls?.length || 0) - (a.urls?.length || 0));
+
+              const body = truncateBody([
+                `## ${SUMMARY_TITLE}`,
+                '',
+                `**Date:** ${reportDate}`,
+                `**Projects scanned:** ${latestByProject.size}`,
+                `**Projects with violations:** ${projectsWithViolations}`,
+                `**Projects without violations:** ${latestByProject.size - projectsWithViolations}`,
+                `**Skipped or failed scans:** ${skippedProjects.length}`,
+                `**Total violations:** ${totalViolations}`,
+                '',
+                `📊 [Leaderboard](${PAGES_URL}/)`,
+                '',
+                ...(rules.length ? [
+                  '### Rules by number of affected sites',
+                  '',
+                  '| Rule | Description | Sites |',
+                  '| --- | --- | ---: |',
+                  ...rules.map((rule) => `| \`${escapeCell(rule.rule_id)}\` | ${escapeCell(rule.help || rule.description)} | ${rule.urls?.length || 0} |`),
+                  '',
+                ] : []),
+                ...(tags.length ? [
+                  '### Tags by number of affected sites',
+                  '',
+                  '| Tag | Sites |',
+                  '| --- | ---: |',
+                  ...tags.map((tag) => `| \`${escapeCell(tag.tag)}\` | ${tag.urls?.length || 0} |`),
+                  '',
+                ] : []),
+                ...(skippedProjects.length ? ['### Skipped or failed scans', '', ...skippedProjects.map((project) => `- ${project}`), ''] : []),
+              ].join('\n'));
+
+              await upsertIssue(SUMMARY_TITLE, body, [SUMMARY_LABEL, AUTOMATED_LABEL]);
+            } catch (error) {
+              stats.errors.push(`Daily summary: ${error.message}`);
+              core.error(`Failed to process daily summary: ${error.message}`);
+            }
+
+            // ---------- Report ----------
+            await core.summary
+              .addHeading(`WCAG issues for ${reportDate}${dryRun ? ' (dry run)' : ''}`)
+              .addTable([
+                [{ data: 'Result', header: true }, { data: 'Count', header: true }],
+                ['Projects with a usable report', String(latestByProject.size)],
+                ['Issues created', String(stats.created)],
+                ['Issues updated', String(stats.updated)],
+                ['Issues unchanged', String(stats.unchanged)],
+                ['Issues closed (0 violations)', String(stats.closed)],
+                ['Projects skipped (skipped/failed scan)', String(stats.skipped)],
+                ['Errors', String(stats.errors.length)],
+              ])
+              .write();
+
+            if (stats.errors.length) {
+              core.setFailed(`${stats.errors.length} error(s):\n${stats.errors.join('\n')}`);
+            }
+
+      - name: Commit and push markdown files to gh-pages
+        if: ${{ !inputs.dry_run && !cancelled() }}
+        env:
+          REPORT_DATE: ${{ steps.issues.outputs.report_date }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Check if there are any changes to commit
-          if [ -d "issues-markdown" ] && [ -n "$(ls -A issues-markdown 2>/dev/null)" ]; then
-            echo "Found markdown files to commit"
-            git add issues-markdown/
-            
-            # Check if there are actually changes to commit
-            if git diff --staged --quiet; then
-              echo "No changes to commit"
-            else
-              git commit -m "Update WCAG violation markdown reports [skip ci]"
-              git push origin gh-pages
-              echo "Markdown files committed and pushed to gh-pages"
-            fi
-          else
-            echo "No markdown files to commit"
+
+          if [ ! -d issues-markdown ]; then
+            echo "No markdown directory; nothing to commit."
+            exit 0
           fi
+
+          git add -A issues-markdown/
+          if git diff --cached --quiet; then
+            echo "No markdown changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update WCAG violation markdown reports for ${REPORT_DATE} [skip ci]"
+
+          for attempt in 1 2 3; do
+            if git push origin HEAD:gh-pages; then
+              echo "Markdown reports pushed to gh-pages."
+              exit 0
+            fi
+            echo "Push attempt ${attempt} failed; rebasing onto the latest gh-pages."
+            git fetch --deepen=50 origin gh-pages
+            git rebase origin/gh-pages || { git rebase --abort; exit 1; }
+            sleep $((attempt * 10))
+          done
+
+          echo "Failed to push markdown reports after 3 attempts."
+          exit 1

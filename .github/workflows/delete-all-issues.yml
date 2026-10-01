@@ -1,41 +1,142 @@
-name: Close All Issues 🧨
+name: Delete All Issues 🧨
 
 on:
-  workflow_dispatch: # Manual trigger
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type DELETE to confirm'
+        required: true
+        type: string
+      scope:
+        description: 'automated = only WCAG report issues (wcag-violation / wcag-summary labels); all = every issue'
+        required: true
+        default: automated
+        type: choice
+        options:
+          - automated
+          - all
+      mode:
+        description: 'delete permanently removes issues (requires the ISSUE_ADMIN_TOKEN secret); close only closes them'
+        required: true
+        default: delete
+        type: choice
+        options:
+          - delete
+          - close
+      dry_run:
+        description: 'List matching issues without changing anything'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+  issues: write
 
 jobs:
-  close-issues:
+  delete-issues:
     runs-on: ubuntu-latest
-    permissions:
-      issues: write
-      contents: read
+    timeout-minutes: 60
+    concurrency:
+      group: wcag-issues
+      cancel-in-progress: false
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v7
-
-      - name: Install GitHub CLI
-        run: |
-          sudo apt-get update
-          sudo apt-get install gh -y
-
-      - name: Close All Issues
+      - name: Delete or close issues
+        uses: actions/github-script@v9
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          echo "Closing all open issues..."
+          CONFIRM: ${{ inputs.confirm }}
+          SCOPE: ${{ inputs.scope }}
+          MODE: ${{ inputs.mode }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          # Deleting issues requires repository admin rights, which GITHUB_TOKEN never has.
+          ADMIN_TOKEN: ${{ secrets.ISSUE_ADMIN_TOKEN }}
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const { CONFIRM, SCOPE, ADMIN_TOKEN } = process.env;
+            const dryRun = process.env.DRY_RUN === 'true';
+            const AUTOMATED_LABELS = new Set(['wcag-violation', 'wcag-summary']);
+            const WRITE_DELAY_MS = 1000;
+            const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-          # Get a list of ALL open issues
-          issue_numbers=$(gh issue list --state open --limit 999999 --json number -q '.[].number')
+            if (CONFIRM !== 'DELETE') {
+              core.setFailed('Confirmation input must be exactly "DELETE". Nothing was changed.');
+              return;
+            }
 
-          if [[ -z "$issue_numbers" ]]; then
-            echo "No open issues found."
-          else
-            # Loop through and close each issue
-            for issue_number in $issue_numbers; do
-              echo "Closing issue #$issue_number..."
-              gh issue close "$issue_number"
-              sleep 1 # Avoid rate limiting
-            done
-            echo "All open issues closed."
-          fi
+            let mode = process.env.MODE;
+            let writer = github;
+            if (mode === 'delete') {
+              if (ADMIN_TOKEN) {
+                writer = getOctokit(ADMIN_TOKEN);
+              } else {
+                core.warning('ISSUE_ADMIN_TOKEN secret is not set, so issues cannot be deleted. Falling back to closing them.');
+                mode = 'close';
+              }
+            }
+            const verb = mode === 'delete' ? 'deleted' : 'closed';
+
+            async function withRetry(description, fn) {
+              for (let attempt = 1; ; attempt++) {
+                try {
+                  return await fn();
+                } catch (error) {
+                  const rateLimited = (error.status === 403 || error.status === 429) && /rate limit/i.test(error.message);
+                  const retryable = rateLimited || error.status >= 500;
+                  if (!retryable || attempt >= 4) throw error;
+                  const waitSeconds = Number(error.response?.headers?.['retry-after']) || 60 * attempt;
+                  core.warning(`${description} failed with ${error.status}; retrying in ${waitSeconds}s (attempt ${attempt}/3)`);
+                  await sleep(waitSeconds * 1000);
+                }
+              }
+            }
+
+            const listed = await github.paginate(github.rest.issues.listForRepo, {
+              owner,
+              repo,
+              state: mode === 'delete' ? 'all' : 'open',
+              per_page: 100,
+            });
+            const labelNames = (issue) => issue.labels.map((label) => (typeof label === 'string' ? label : label.name));
+            const targets = listed
+              .filter((issue) => !issue.pull_request)
+              .filter((issue) => SCOPE === 'all' || labelNames(issue).some((name) => AUTOMATED_LABELS.has(name)));
+
+            core.info(`Found ${targets.length} issue(s) to ${mode} (scope: ${SCOPE}${dryRun ? ', dry run' : ''}).`);
+
+            let processed = 0;
+            const failures = [];
+            for (const issue of targets) {
+              const label = `#${issue.number} ${issue.title}`;
+              if (dryRun) {
+                core.info(`[dry-run] would ${mode} ${label}`);
+                continue;
+              }
+              try {
+                await withRetry(`${mode} ${label}`, () => mode === 'delete'
+                  ? writer.graphql('mutation($id: ID!) { deleteIssue(input: { issueId: $id }) { clientMutationId } }', { id: issue.node_id })
+                  : writer.rest.issues.update({ owner, repo, issue_number: issue.number, state: 'closed', state_reason: 'not_planned' }));
+                processed++;
+                core.info(`${verb} ${label}`);
+              } catch (error) {
+                failures.push(`${label}: ${error.message}`);
+                core.error(`Failed to ${mode} ${label}: ${error.message}`);
+              }
+              await sleep(WRITE_DELAY_MS);
+            }
+
+            await core.summary
+              .addHeading('Delete All Issues')
+              .addList([
+                `Mode: ${mode}${dryRun ? ' (dry run)' : ''}`,
+                `Scope: ${SCOPE}`,
+                `Matching issues: ${targets.length}`,
+                `Issues ${verb}: ${processed}`,
+                `Failures: ${failures.length}`,
+              ])
+              .write();
+
+            if (failures.length) {
+              core.setFailed(`${failures.length} issue(s) could not be ${verb}:\n${failures.join('\n')}`);
+            }
