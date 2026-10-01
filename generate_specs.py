@@ -419,6 +419,7 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
         const bodyText = ((await currentPage.textContent('body')) || '').toLowerCase();
         const statusBasedSkip = typeof navigationStatus === 'number' && navigationStatus >= 400;
         const outageMarkers = [
+            'maintenance',
             '5xx level errors page',
             '4xx level errors page',
             'offline_outer',
