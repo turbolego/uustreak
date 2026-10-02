@@ -287,7 +287,12 @@ th.sortable button:focus-visible,
 }
 
 /* Pointer target 44x44 */
-button, a, input, select {
+button, input, select {
+    min-height: 44px;
+    min-width: 44px;
+}
+a {
+    display: inline-block;
     min-height: 44px;
     min-width: 44px;
 }
