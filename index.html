@@ -43,7 +43,7 @@
 </head>
 
 <body>
-    <a class="skip-link" href="#table-container">Hopp til hovedinnhold</a>
+    <a class="skip-link" href="#table-container" onclick="document.getElementById('table-container').focus(); return true;">Hopp til hovedinnhold</a>
     <main role="main" aria-labelledby="page-title">
         <header class="page-hero" aria-labelledby="page-title">
             <h1 id="page-title">WCAG-brudd topplista</h1>
@@ -81,7 +81,7 @@
         <section class="reports-section" aria-label="WCAG-brudd topplista">
             <nav aria-label="WCAG-brudd topplista">
                 <div class="table-wrapper">
-                    <div id="table-container"></div>
+                    <div id="table-container" tabindex="-1"></div>
                     <div id="pagination-controls" class="pagination-controls">
                         <button id="prev-page" aria-label="Forrige side">←</button>
                         <span id="page-indicator">Side <span id="current-page-num">1</span> av <span
