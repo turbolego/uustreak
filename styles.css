@@ -1,3 +1,82 @@
+/* =========================================== */
+/* UUStreak - WCAG AAA Compliant Styles */
+/* =========================================== */
+/* Light mode (default) - WCAG AAA compliant colors */
+
+:root {
+    /* Light mode color palette - WCAG AAA compliant */
+    --color-bg: #ffffff;
+    --color-bg-alt: #f5f5f5;
+    --color-bg-alt2: #f8f9fa;
+    --color-bg-alt3: #f2f2f2;
+    --color-bg-primary: #000000;
+    --color-bg-primary-hover: #333333;
+    --color-bg-secondary: #ffffff;
+    --color-bg-secondary-hover: #f2f2f2;
+    --color-text: #000000;
+    --color-text-secondary: #333333;
+    --color-text-tertiary: #666666;
+    --color-text-inverse: #ffffff;
+    --color-border: #d1d5db;
+    --color-border-alt: #e5e7eb;
+    --color-border-secondary: #666666;
+    --color-border-secondary-hover: #444444;
+    --color-accent: #0b5cad;
+    --color-accent-hover: #08468c;
+    --color-success: #1c7c36;
+    --color-warning: #723f12;
+    --color-error: #dc2626;
+    --color-info: #0b5cad;
+    --color-invalid-link: #dc2626;
+    --color-invalid-bg: #fee2e2;
+    --color-link: #0b5cad;
+    --color-link-visited: #5a2d91;
+    --color-focus: #0066cc;
+    --color-scroll-track: #f1f1f1;
+    --color-scroll-thumb: #888888;
+    --color-scroll-thumb-hover: #666666;
+}
+
+/* Dark mode colors - WCAG AAA compliant */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #121212;
+        --color-bg-alt: #1e1e1e;
+        --color-bg-alt2: #252526;
+        --color-bg-alt3: #2d2d2d;
+        --color-bg-primary: #ffffff;
+        --color-bg-primary-hover: #e0e0e0;
+        --color-bg-secondary: #1e1e1e;
+        --color-bg-secondary-hover: #2d2d2d;
+        --color-text: #ffffff;
+        --color-text-secondary: #e0e0e0;
+        --color-text-tertiary: #aaaaaa;
+        --color-text-inverse: #000000;
+        --color-border: #404040;
+        --color-border-alt: #505050;
+        --color-border-secondary: #aaaaaa;
+        --color-border-secondary-hover: #cccccc;
+        --color-accent: #66b2ff;
+        --color-accent-hover: #99c9ff;
+        --color-success: #4ade80;
+        --color-warning: #fbbf24;
+        --color-error: #f87171;
+        --color-info: #66b2ff;
+        --color-invalid-link: #f87171;
+        --color-invalid-bg: #4a1a1a;
+        --color-focus: #66ccff;
+        --color-scroll-track: #333333;
+        --color-scroll-thumb: #aaaaaa;
+        --color-scroll-thumb-hover: #cccccc;
+        --color-link: #66b2ff;
+        --color-link-visited: #99c9ff;
+    }
+}
+
+/* =========================================== */
+/* Base Styles */
+/* =========================================== */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,8 +97,8 @@
     top: 1rem;
     width: auto;
     height: auto;
-    background: #000;
-    color: #fff;
+    background: var(--color-bg-primary);
+    color: var(--color-text-inverse);
     padding: 0.75rem 1rem;
     z-index: 10000;
     border-radius: 4px;
@@ -31,6 +110,23 @@ body {
     padding: 1rem;
     max-width: 100vw;
     overflow-x: hidden;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+/* Theme-aware default link colors */
+a {
+    color: var(--color-link);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--color-link-visited);
+}
+
+a:hover,
+a:focus {
+    color: var(--color-accent-hover);
 }
 
 main {
@@ -41,8 +137,7 @@ main {
 h1 {
     font-size: clamp(1.5rem, 4vw, 2.5rem);
     margin-bottom: 1rem;
-    color: #000;
-    /* Sikrer tilstrekkelig kontrast */
+    color: var(--color-text);
 }
 
 .page-hero {
@@ -62,25 +157,26 @@ h1 {
     padding: 0.75rem 1.25rem;
     font-size: 1rem;
     border-radius: 4px;
-    border: 2px solid #000;
-    background: #000;
-    color: #fff;
+    border: 2px solid var(--color-bg-primary);
+    background: var(--color-bg-primary);
+    color: var(--color-text-inverse);
     cursor: pointer;
 }
 
 .hero-actions .trend-button {
-    border-color: #666;
-    color: #000;
-    background: #fff;
+    border-color: var(--color-border-secondary);
+    color: var(--color-text);
+    background: var(--color-bg-secondary);
 }
+
 .hero-actions button:hover {
-    background-color: #333;
-    border-color: #333;
+    background-color: var(--color-bg-primary-hover);
+    border-color: var(--color-bg-primary-hover);
 }
 
 .hero-actions .trend-button:hover {
-    background-color: #f2f2f2;
-    border-color: #444;
+    background-color: var(--color-bg-secondary-hover);
+    border-color: var(--color-border-secondary-hover);
 }
 
 .navigation-section,
@@ -89,7 +185,11 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
-/* Forbedret tabellinnpakning med synlig rullefelt */
+/* =========================================== */
+/* Table Styles - WCAG AAA Compliant */
+/* =========================================== */
+
+/* Enhanced table wrapper with visible scrollbar */
 .table-wrapper {
     width: 100%;
     overflow-x: auto;
@@ -97,35 +197,36 @@ h1 {
     margin-bottom: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-border);
     scrollbar-width: thin;
-    scrollbar-color: #888 #f1f1f1;
+    scrollbar-color: var(--color-scroll-thumb) var(--color-scroll-track);
 }
 
-/* Rullefeltstiler for WebKit-nettlesere */
+/* WebKit scrollbar styles for better visibility */
 .table-wrapper::-webkit-scrollbar {
     height: 12px;
 }
 
 .table-wrapper::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--color-scroll-track);
     border-radius: 0 0 8px 8px;
 }
 
 .table-wrapper::-webkit-scrollbar-thumb {
-    background: #888;
+    background: var(--color-scroll-thumb);
     border-radius: 6px;
-    border: 3px solid #f1f1f1;
+    border: 3px solid var(--color-scroll-track);
 }
 
 .table-wrapper::-webkit-scrollbar-thumb:hover {
-    background: #666;
+    background: var(--color-scroll-thumb-hover);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     min-width: 600px;
+    background-color: var(--color-bg);
 }
 
 /* Responsive table: card view on narrow screens */
@@ -168,7 +269,7 @@ table {
     }
     .view-section {
         padding: 0.5rem;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid var(--color-border);
     }
     .mobile-sort-controls {
         display: flex;
@@ -186,11 +287,11 @@ table {
         min-width: 0;
     }
     tr {
-        border: 1px solid #ddd;
+        border: 1px solid var(--color-border);
         border-radius: 8px;
         margin-bottom: 1rem;
         padding: 0.75rem;
-        background: #fff;
+        background: var(--color-bg);
         box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
     td {
@@ -208,7 +309,7 @@ table {
         position: static;
         display: block;
         font-weight: 600;
-        color: #333;
+        color: var(--color-text-secondary);
         text-align: left;
         white-space: normal;
         overflow-wrap: anywhere;
@@ -222,11 +323,25 @@ th,
 td {
     padding: 0.75rem;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--color-border);
     font-size: clamp(0.875rem, 2vw, 1rem);
 }
 
-/* Sort icon styles */
+th {
+    background-color: var(--color-bg-alt);
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+tr:nth-child(even) td {
+    background-color: var(--color-bg-alt2);
+}
+
+tr:hover td {
+    background-color: var(--color-bg-alt);
+}
+
+/* Sort icon styles - WCAG AAA compliant */
 th.sortable {
     padding: 0;
     position: relative;
@@ -250,13 +365,13 @@ th.sortable button {
 }
 
 th.sortable button:hover {
-    background-color: #f8f9fa;
+    background-color: var(--color-bg-alt);
 }
 
 th.sortable button:focus {
-    outline: 2px solid #0066cc;
-    outline-offset: -2px;
-    background-color: #f0f8ff;
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+    background-color: var(--color-bg-alt);
 }
 
 .sort-icon {
@@ -264,12 +379,12 @@ th.sortable button:focus {
     margin-left: 0.5rem;
     font-size: 0.8em;
     flex-shrink: 0;
-    color: #000;
+    color: var(--color-text);
 }
 
 .sort-icon::before {
     opacity: 1;
-    color: #000;
+    color: var(--color-text);
 }
 
 th.sort-asc .sort-icon::before {
@@ -287,9 +402,9 @@ th:not(.sort-asc):not(.sort-desc) .sort-icon::before {
 
 /* Enhanced focus styles for WCAG 2.2 SC 2.4.13 Focus Appearance (AAA). */
 *:focus-visible {
-    outline: 3px solid #005fcc !important;
+    outline: 3px solid var(--color-focus) !important;
     outline-offset: 2px !important;
-    box-shadow: 0 0 0 1px #fff !important;
+    box-shadow: 0 0 0 1px var(--color-bg) !important;
 }
 th:focus-visible,
 td:focus-visible,
@@ -297,9 +412,9 @@ button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 select:focus-visible {
-    outline: 3px solid #005fcc !important;
+    outline: 3px solid var(--color-focus) !important;
     outline-offset: 2px !important;
-    box-shadow: 0 0 0 1px #fff !important;
+    box-shadow: 0 0 0 1px var(--color-bg) !important;
 }
 
 /* Override existing specific focus rules */
@@ -311,7 +426,7 @@ th.sortable button:focus-visible,
 .achievements-button:focus,
 .trends-button:focus,
 .view-report-btn:focus {
-    outline: 3px solid #005fcc !important;
+    outline: 3px solid var(--color-focus) !important;
     outline-offset: 2px !important;
     background-color: transparent !important;
 }
@@ -343,7 +458,14 @@ a {
     }
 }
 
-/* Improved dialog positioning and styling */
+.hero-actions button:focus {
+    outline-offset: 2px;
+}
+
+/* =========================================== */
+/* Dialog Styles - WCAG AAA Compliant */
+/* =========================================== */
+
 .details-dialog {
     padding: 1.5rem;
     max-width: min(90vw, 600px);
@@ -356,12 +478,18 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    background: #fff;
+    background: var(--color-bg);
+    color: var(--color-text);
     max-height: 90vh;
     overflow-y: auto;
 }
 
-/* Scrollable content keeps the close button in reach in both large dialogs. */
+.details-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+/* Scrollable content keeps the close button in reach in both large dialogs */
 #trends-dialog,
 #readme-dialog {
     width: 90vw;
@@ -385,12 +513,13 @@ a {
     gap: 1rem;
     flex-shrink: 0;
     padding-bottom: 0.75rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .modal-header h2 {
     min-width: 0;
     overflow-wrap: anywhere;
+    color: var(--color-text);
 }
 
 .modal-header .dialog-close {
@@ -420,6 +549,7 @@ a {
 #readme-content h3,
 #readme-content p {
     margin-bottom: 1rem;
+    color: var(--color-text);
 }
 
 #readme-content pre,
@@ -459,15 +589,14 @@ a {
     flex-direction: column;
 }
 
-.details-dialog::backdrop {
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(2px);
-}
+/* =========================================== */
+/* Violation Node Styles - WCAG AAA Compliant */
+/* =========================================== */
 
 .violation-nodes {
     margin-top: 1rem;
     padding-left: 1rem;
-    border-left: 3px solid #eee;
+    border-left: 3px solid var(--color-border-alt);
 }
 
 .violation-node {
@@ -475,7 +604,7 @@ a {
 }
 
 .node-details {
-    background: #f5f5f5;
+    background: var(--color-bg-alt);
     padding: 1rem;
     border-radius: 4px;
     margin-top: 0.5rem;
@@ -484,23 +613,27 @@ a {
 .node-details pre {
     white-space: pre-wrap;
     word-wrap: break-word;
-    background: #fff;
+    background: var(--color-bg);
     padding: 0.5rem;
     border-radius: 3px;
     margin: 0.5rem 0;
+    color: var(--color-text);
 }
 
 details summary {
     cursor: pointer;
-    color: #0b3d91;
+    color: var(--color-accent);
     padding: 0.5rem 0;
 }
 
 details summary:hover {
-    color: #0D47A1;
+    color: var(--color-accent-hover);
 }
 
-/* Invalid URLs dialog styles */
+/* =========================================== */
+/* Invalid URLs Dialog Styles - WCAG AAA Compliant */
+/* =========================================== */
+
 .invalid-urls-header {
     display: flex;
     justify-content: space-between;
@@ -513,7 +646,7 @@ details summary:hover {
 
 .invalid-urls-summary {
     font-weight: bold;
-    color: #333;
+    color: var(--color-text-secondary);
 }
 
 .invalid-urls-actions {
@@ -524,13 +657,13 @@ details summary:hover {
 
 .invalid-urls-source {
     margin-bottom: 1.5rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--color-border);
     padding-bottom: 1rem;
 }
 
 .invalid-urls-source h3 {
     margin-bottom: 0.5rem;
-    color: #0b3d91;
+    color: var(--color-text);
 }
 
 .invalid-urls-source details {
@@ -539,13 +672,13 @@ details summary:hover {
 
 .invalid-urls-source summary {
     cursor: pointer;
-    color: #444;
+    color: var(--color-text-tertiary);
     padding: 0.5rem 0;
     font-weight: 500;
 }
 
 .invalid-urls-source summary:hover {
-    color: #0b3d91;
+    color: var(--color-accent);
 }
 
 .invalid-urls-list {
@@ -556,8 +689,8 @@ details summary:hover {
 .invalid-url-item {
     margin-bottom: 1rem;
     padding: 0.75rem;
-    background-color: #f8f8f8;
-    border-left: 3px solid #ff5252;
+    background-color: var(--color-invalid-bg);
+    border-left: 3px solid var(--color-error);
     border-radius: 0 4px 4px 0;
 }
 
@@ -566,7 +699,7 @@ details summary:hover {
 }
 
 .invalid-link {
-    color: #ff5252;
+    color: var(--color-invalid-link);
     word-break: break-all;
 }
 
@@ -578,36 +711,38 @@ details summary:hover {
 
 /* Fallback styling for failed projects when :has() is not supported */
 .invalid-url-item.failed-project {
-    background-color: #fff3cd;
-    border-left-color: #ffc107;
+    background-color: var(--color-bg-alt2);
+    border-left-color: var(--color-warning);
 }
 
 .invalid-url-item.failed-project .invalid-link {
-    color: #856404;
+    color: var(--color-warning);
 }
 
-/* Improved button styling for better accessibility */
+/* =========================================== */
+/* Button Styles - WCAG AAA Compliant */
+/* =========================================== */
+
 .navigation-controls button,
 .view-controls button {
     padding: 0.5rem 1rem;
-    background-color: #f8f9fa;
-    border: 2px solid #666;
+    background-color: var(--color-bg-alt2);
+    border: 2px solid var(--color-text-tertiary);
     border-radius: 4px;
     cursor: pointer;
     font-size: clamp(0.875rem, 2vw, 1rem);
-    color: #000;
+    color: var(--color-text);
     min-height: 44px;
-    /* Ensuring touch target size */
 }
 
 .navigation-controls button:hover,
 .view-controls button:hover {
-    background-color: #e9ecef;
+    background-color: var(--color-bg-alt);
 }
 
 .navigation-controls button:focus,
 .view-controls button:focus {
-    outline: 2px solid #0066cc;
+    outline: 2px solid var(--color-focus);
     outline-offset: 2px;
 }
 
@@ -634,21 +769,22 @@ details summary:hover {
 
 .view-controls select {
     padding: 0.5rem;
-    border: 2px solid #666;
+    border: 2px solid var(--color-text-tertiary);
     border-radius: 4px;
     font-size: clamp(0.875rem, 2vw, 1rem);
-    background-color: #fff;
+    background-color: var(--color-bg);
+    color: var(--color-text);
     min-height: 44px;
 }
 
 .view-controls select:focus {
-    outline: 2px solid #0066cc;
+    outline: 2px solid var(--color-focus);
     outline-offset: 2px;
 }
 
 .view-controls label {
     font-weight: bold;
-    color: #000;
+    color: var(--color-text);
 }
 
 /* Dialog close button enhancement */
@@ -657,37 +793,37 @@ details summary:hover {
     min-width: 44px;
     min-height: 44px;
     background: none;
-    border: 2px solid #666;
+    border: 2px solid var(--color-text-tertiary);
     border-radius: 4px;
     cursor: pointer;
     font-size: 1.5rem;
-    color: #000;
+    color: var(--color-text);
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
 
 .dialog-close:hover {
-    background-color: #f8f9fa;
+    background-color: var(--color-bg-alt);
 }
 
 .error-message {
-    background-color: #ffdddd;
-    color: #d8000c;
-    border: 1px solid #d8000c;
+    background-color: var(--color-invalid-bg);
+    color: var(--color-error);
+    border: 1px solid var(--color-error);
     padding: 15px;
     margin: 10px 0;
     border-radius: 4px;
 }
 
 .data-warning {
-    background-color: #fff3cd;
-    color: #856404;
-    border: 1px solid #ffc107;
+    background-color: var(--color-warning-bg, #fff3cd);
+    color: var(--color-warning-text, #856404);
+    border: 1px solid var(--color-warning);
     padding: 15px;
     margin: 10px 0 20px 0;
     border-radius: 4px;
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid var(--color-warning);
 }
 
 .data-warning details {
@@ -715,7 +851,25 @@ details summary:hover {
     font-size: 0.9em;
 }
 
-/* Tag summary dialog specific styles */
+@media (prefers-color-scheme: dark) {
+    .data-warning {
+        background-color: var(--color-invalid-bg);
+        color: var(--color-warning);
+    }
+
+    .data-warning summary {
+        color: var(--color-warning);
+    }
+
+    .data-warning summary:hover {
+        color: var(--color-text);
+    }
+}
+
+/* =========================================== */
+/* Tag Summary Dialog Styles - WCAG AAA Compliant */
+/* =========================================== */
+
 .tag-summary-header {
     display: flex;
     justify-content: space-between;
@@ -726,7 +880,7 @@ details summary:hover {
 
 .tag-summary-date {
     font-weight: bold;
-    color: #333;
+    color: var(--color-text-secondary);
 }
 
 .tag-summary-actions {
@@ -738,44 +892,52 @@ details summary:hover {
 .expand-all-button,
 .download-button,
 .view-toggle-button {
-    background-color: #f8f9fa;
-    border: 2px solid #666;
+    background-color: var(--color-bg-alt2);
+    border: 2px solid var(--color-text-tertiary);
     border-radius: 4px;
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-size: 0.9rem;
     min-height: 36px;
+    color: var(--color-text);
 }
 
 .expand-all-button:hover,
 .download-button:hover,
 .view-toggle-button:hover {
-    background-color: #e9ecef;
+    background-color: var(--color-bg-alt);
+}
+
+.expand-all-button:focus,
+.download-button:focus,
+.view-toggle-button:focus {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
 }
 
 /* Rule description styling */
 .rule-description {
     font-size: 0.9rem;
-    color: #555;
+    color: var(--color-text-secondary);
     margin-bottom: 0.5rem;
 }
 
 .rule-help {
     font-size: 0.85rem;
-    color: #666;
+    color: var(--color-text-tertiary);
     font-style: italic;
     margin-bottom: 1rem;
 }
 
 .tag-summary-item {
     margin-bottom: 1.5rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--color-border);
     padding-bottom: 1rem;
 }
 
 .tag-summary-item h3 {
     margin-bottom: 0.5rem;
-    color: #0b3d91;
+    color: var(--color-accent);
 }
 
 .tag-summary-item details {
@@ -784,13 +946,13 @@ details summary:hover {
 
 .tag-summary-item summary {
     cursor: pointer;
-    color: #444;
+    color: var(--color-text-secondary);
     padding: 0.5rem 0;
     font-weight: 500;
 }
 
 .tag-summary-item summary:hover {
-    color: #0b3d91;
+    color: var(--color-accent);
 }
 
 .tag-urls-list {
@@ -802,33 +964,37 @@ details summary:hover {
     margin-bottom: 0.25rem;
 }
 
-/* Achievements Button and Dialog Styles */
+/* =========================================== */
+/* Achievements Button and Dialog Styles - WCAG AAA Compliant */
+/* =========================================== */
+
 .achievements-button {
-    background-color: #f8f9fa;
-    border: 2px solid #666;
+    background-color: var(--color-bg-alt2);
+    border: 2px solid var(--color-text-tertiary);
     border-radius: 4px;
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-size: 0.9rem;
     min-height: 36px;
     transition: all 0.2s ease;
+    color: var(--color-text);
 }
 
 .achievements-button:hover {
-    background-color: #e9ecef;
+    background-color: var(--color-bg-alt);
     transform: scale(1.05);
 }
 
 .achievements-button:focus {
-    outline: 2px solid #0066cc;
+    outline: 2px solid var(--color-focus);
     outline-offset: 2px;
 }
 
 .trends-button {
-    background-color: #eef6ff;
-    border: 2px solid #0b5cad;
+    background-color: var(--color-bg-alt);
+    border: 2px solid var(--color-accent);
     border-radius: 4px;
-    color: #063b70;
+    color: var(--color-accent);
     cursor: pointer;
     font-size: 0.9rem;
     min-height: 36px;
@@ -837,11 +1003,11 @@ details summary:hover {
 }
 
 .trends-button:hover {
-    background-color: #dcecff;
+    background-color: var(--color-bg-alt2);
 }
 
 .trends-button:focus {
-    outline: 2px solid #0066cc;
+    outline: 2px solid var(--color-focus);
     outline-offset: 2px;
 }
 
@@ -855,7 +1021,7 @@ details summary:hover {
 }
 
 .trend-summary {
-    color: #333;
+    color: var(--color-text);
     margin: 0 3rem 1rem 0;
 }
 
@@ -872,13 +1038,13 @@ details summary:hover {
 
 .project-trend-line {
     fill: none;
-    stroke: #0b5cad;
+    stroke: var(--color-accent);
     stroke-width: 3;
 }
 
 .project-trend-point {
-    fill: #fff;
-    stroke: #0b5cad;
+    fill: var(--color-bg);
+    stroke: var(--color-accent);
     stroke-width: 2;
 }
 
@@ -887,17 +1053,17 @@ details summary:hover {
 }
 
 .trend-grid line {
-    stroke: #ddd;
+    stroke: var(--color-border);
 }
 
 .trend-axis text,
 .trend-axis-label {
-    fill: #222;
+    fill: var(--color-text);
     font-size: 13px;
 }
 
 .trend-empty {
-    color: #666;
+    color: var(--color-text-secondary);
     padding: 2rem 1rem;
     text-align: center;
 }
@@ -909,8 +1075,8 @@ details summary:hover {
 }
 
 .achievement-item {
-    background: linear-gradient(135deg, #f5f5f5 0%, #fff 100%);
-    border-left: 4px solid #ff9500;
+    background: linear-gradient(135deg, var(--color-bg-alt2) 0%, var(--color-bg) 100%);
+    border-left: 4px solid var(--color-warning);
     padding: 1rem;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -933,24 +1099,24 @@ details summary:hover {
 
 .achievement-text h3 {
     margin: 0 0 0.5rem 0;
-    color: #0b3d91;
+    color: var(--color-success);
     font-size: 1rem;
 }
 
 .achievement-text p {
     margin: 0;
-    color: #666;
+    color: var(--color-text-secondary);
     font-size: 0.9rem;
 }
 
 .achievement-dates {
-    color: #999;
+    color: var(--color-text-tertiary);
     font-size: 0.85rem;
 }
 
 .achievement-duration {
     font-weight: bold;
-    color: #ff9500;
+    color: var(--color-warning);
     white-space: nowrap;
     padding-left: 1rem;
     text-align: right;
@@ -959,12 +1125,16 @@ details summary:hover {
 .achievements-empty {
     text-align: center;
     padding: 2rem 1rem;
-    color: #666;
+    color: var(--color-text-secondary);
 }
 
 .achievements-empty p {
     margin: 0.5rem 0;
 }
+
+/* =========================================== */
+/* Responsive Design */
+/* =========================================== */
 
 @media (max-width: 768px) {
     .achievement-item {

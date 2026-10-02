@@ -95,12 +95,12 @@
         }
 
         .multi-select-container {
-            border: 2px solid #666;
+            border: 2px solid var(--color-border-secondary);
             border-radius: 4px;
             padding: 0.5rem;
             max-height: 300px;
             overflow-y: auto;
-            background: white;
+            background: var(--color-bg-alt2);
         }
 
         .multi-select-item {
@@ -167,6 +167,59 @@
             .chart-container {
                 height: 50vh;
                 min-height: 300px;
+            }
+        }
+
+        /* Dark mode overrides for bar.html local surfaces */
+        @media (prefers-color-scheme: dark) {
+            .chart-container {
+                background: var(--color-bg-alt);
+            }
+
+            .controls-section {
+                background: var(--color-bg-alt2);
+            }
+
+            .control-group label {
+                color: var(--color-text);
+            }
+
+            .control-group select,
+            .control-group input {
+                background-color: var(--color-bg);
+                color: var(--color-text);
+                border-color: var(--color-border);
+            }
+
+            .stats-panel {
+                background: var(--color-bg-alt);
+            }
+
+            .stat-item {
+                background: var(--color-bg-alt2);
+            }
+
+            .stat-value {
+                color: var(--color-accent);
+            }
+
+            .stat-label {
+                color: var(--color-text-secondary);
+            }
+
+            .info-message {
+                background-color: var(--color-invalid-bg);
+                color: var(--color-info);
+                border-left-color: var(--color-info);
+            }
+
+            .multi-select-container {
+                background: var(--color-bg-alt);
+                border-color: var(--color-border);
+            }
+
+            .multi-select-item {
+                color: var(--color-text);
             }
         }
     </style>
