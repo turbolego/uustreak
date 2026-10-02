@@ -29,7 +29,7 @@ Key CSS:
 5. **2.4.11 Focus Appearance** – Outline-offset: -2px risks covering part of component; better to use positive offset.
 6. **2.5.5 Target Size (Enhanced AAA)** – Achievements/Trends buttons are `min-height:36px` → below 44×44 px AAA target, meets 24×24 AA via 2.5.8.
 7. **2.5.7 Dragging Movements** – N/A
-8. **3.2.6 Consistent Help** – Help content varies by dialog; skip link missing.
+8. **2.4.1 Bypass Blocks** – Skip link missing, requiring keyboard users to traverse repeated navigation.
 9. **4.1.3 Status Messages** – Loading container appears visually only; no `role="status"`/`aria-live`.
 
 ### Manual observations
