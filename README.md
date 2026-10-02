@@ -24,15 +24,18 @@ least 365 days ends with a violation report. For example:
   "fromDate": "2025-09-18",
   "toDate": "2026-09-30",
   "lostDate": "2026-10-01",
-  "lostReason": "2 violations found: Elements must meet minimum color contrast ratio thresholds (2)",
+  "lostReason": "Page content: 2 violations found: Elements must meet minimum color contrast ratio thresholds (2)",
   "unlockedDate": "2026-10-02",
   "streakDays": 378
 }
 ```
 
-`lostReason` summarizes the latest report on `lostDate`: the total violation count
-and up to three rule descriptions, with counts and a remaining-rule count when
-needed. The achievement dialog displays it alongside the loss date. Existing
+`lostReason` summarizes the latest report on `lostDate`: whether the violations
+come from embedded code (including the detected provider, such as OneTrust), page content, or both; the total violation count; and up
+to three rule descriptions, with counts and a remaining-rule count when needed.
+Embedded code is detected from common consent/CMP vendor markers (including
+OneTrust) and embedded element evidence such as scripts, iframes, and embeds.
+The achievement dialog displays the result alongside the loss date. Existing
 achievements without a reason are backfilled on the next tracker run.
 
 Run `node js/track-achievements.js` with the historical streak index or report

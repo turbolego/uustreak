@@ -12,7 +12,7 @@ const startDate = '2025-09-18';
 const endDate = '2026-09-30';
 const lostDate = '2026-10-01';
 const reportFile = `accessibility-reports/${lostDate}/violations-${project}-${lostDate}T12-00-00_000Z-count-2.json`;
-const reason = '2 violations found: Elements must meet minimum color contrast ratio thresholds (2)';
+const reason = 'Page content: 2 violations found: Elements must meet minimum color contrast ratio thresholds (2)';
 const report = {
     total_violations: 2,
     violations: [
@@ -95,7 +95,40 @@ test('fetches missing report with an encoded path and summarizes at most three r
     });
     const result = await getLostStreakReason(project, lostDate, [reportFile]);
     assert.equal(requestedUrl, `https://example.test/${reportFile.split('/').map(encodeURIComponent).join('/')}`);
-    assert.equal(result, '4 violations found: Rule 1, Rule 2, Rule 3, and 1 more');
+    assert.equal(result, 'Page content: 4 violations found: Rule 1, Rule 2, Rule 3, and 1 more');
+});
+
+test('classifies embedded, page, and combined violation causes', async t => {
+    const previousBaseUrl = process.env.SITE_BASE_URL;
+    process.env.SITE_BASE_URL = 'https://example.test';
+    t.after(() => {
+        if (previousBaseUrl === undefined) delete process.env.SITE_BASE_URL;
+        else process.env.SITE_BASE_URL = previousBaseUrl;
+    });
+    const cases = [
+        {
+            violations: [{ help: 'All page content should be contained by landmarks', nodes: [{ html: '<div id="onetrust-banner-sdk">' }], violation_count: 1 }],
+            expected: 'Embedded code from OneTrust: 1 violation found: All page content should be contained by landmarks',
+        },
+        {
+            violations: [{ help: 'Buttons must have discernible text', nodes: [{ target: ['#checkout'] }], violation_count: 1 }],
+            expected: 'Page content: 1 violation found: Buttons must have discernible text',
+        },
+        {
+            violations: [
+                { help: 'Cookie banner must be labelled', nodes: [{ target: ['#onetrust-banner-sdk'] }], violation_count: 1 },
+                { help: 'Buttons must have discernible text', nodes: [{ target: ['#checkout'] }], violation_count: 1 },
+            ],
+            expected: 'Embedded code from OneTrust and page content: 2 violations found: Cookie banner must be labelled, Buttons must have discernible text',
+        },
+    ];
+    for (const testCase of cases) {
+        t.mock.method(globalThis, 'fetch', async () => ({
+            ok: true,
+            json: async () => ({ total_violations: testCase.violations.length, violations: testCase.violations }),
+        }));
+        assert.equal(await getLostStreakReason(project, lostDate, [reportFile]), testCase.expected);
+    }
 });
 
 test('unavailable reports produce a warning, not a fabricated reason', async t => {

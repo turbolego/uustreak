@@ -34,6 +34,62 @@ function formatViolationReason(violation) {
     return count && count > 1 ? `${label} (${count})` : label;
 }
 
+function getEmbeddedCodeProviders(violation) {
+    const nodes = Array.isArray(violation?.nodes) ? violation.nodes : [];
+    const evidence = [
+        violation?.id,
+        violation?.help,
+        violation?.description,
+        ...nodes.flatMap(node => [node?.html, ...(node?.target || []), node?.failureSummary]),
+    ].filter(Boolean).join(' ').toLowerCase();
+
+    const providers = [
+        ['OneTrust', /\b(?:onetrust|ot-[a-z0-9_-]+|onetrust-[a-z0-9_-]+)\b/i],
+        ['TrustArc', /\btrustarc\b/i],
+        ['Cookiebot', /\bcookiebot\b/i],
+        ['Didomi', /\bdidomi\b/i],
+        ['ConsentManager', /\bconsentmanager\b/i],
+        ['Quantcast', /\bquantcast\b/i],
+        ['Usercentrics', /\busercentrics\b/i],
+    ];
+    return providers.filter(([, pattern]) => pattern.test(evidence)).map(([name]) => name);
+}
+
+function classifyViolationSource(violation) {
+    const nodes = Array.isArray(violation?.nodes) ? violation.nodes : [];
+    const evidence = [
+        violation?.id,
+        violation?.help,
+        violation?.description,
+        ...nodes.flatMap(node => [node?.html, ...(node?.target || []), node?.failureSummary]),
+    ].filter(Boolean).join(' ').toLowerCase();
+    const providers = getEmbeddedCodeProviders(violation);
+    const embeddedCode = providers.length > 0
+        || /\bcookie consent\b|<(?:iframe|script|embed|object)\b/i.test(evidence);
+    return { type: embeddedCode ? 'embedded' : 'page', providers };
+}
+
+function formatLostStreakCause(violations) {
+    const classifications = violations.map(classifyViolationSource);
+    const hasEmbedded = classifications.some(source => source.type === 'embedded');
+    const hasPageContent = classifications.some(source => source.type === 'page');
+    const providers = [...new Set(classifications.flatMap(source => source.providers))];
+    const embeddedLabel = providers.length > 0
+        ? `Embedded code from ${providers.join(' and ')}`
+        : 'Embedded code';
+
+    if (hasEmbedded && hasPageContent) {
+        return `${embeddedLabel} and page content`;
+    }
+    if (hasEmbedded) {
+        return embeddedLabel;
+    }
+    if (hasPageContent) {
+        return 'Page content';
+    }
+    return 'Unknown source';
+}
+
 async function getLostStreakReason(projectName, lostDate, reportList) {
     if (!Array.isArray(reportList) || reportList.length === 0 || !projectName || !lostDate) {
         console.warn(`Cannot look up lost streak reason for ${projectName} on ${lostDate}: report list or streak metadata is missing`);
@@ -97,15 +153,16 @@ async function getLostStreakReason(projectName, lostDate, reportList) {
             .slice(0, 3)
             .map(formatViolationReason)
             .filter(Boolean);
+        const cause = formatLostStreakCause(violations);
 
         if (summary.length > 0) {
             const remaining = violations.length - summary.length;
             const suffix = remaining > 0 ? `, and ${remaining} more` : '';
-            return `${totalViolations} violation${totalViolations === 1 ? '' : 's'} found: ${summary.join(', ')}${suffix}`;
+            return `${cause}: ${totalViolations} violation${totalViolations === 1 ? '' : 's'} found: ${summary.join(', ')}${suffix}`;
         }
 
         if (totalViolations > 0) {
-            return `${totalViolations} violation${totalViolations === 1 ? '' : 's'} found`;
+            return `${cause}: ${totalViolations} violation${totalViolations === 1 ? '' : 's'} found`;
         }
         throw new Error('Loss-date report does not contain positive violations');
     } catch (error) {
