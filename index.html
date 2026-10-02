@@ -67,6 +67,11 @@
                     <option value="types">Bruddtyper</option>
                     <option value="tags">WCAG-tagger</option>
                 </select>
+                <div class="mobile-sort-controls" aria-label="Sortering av tabellen">
+                    <label for="mobile-sort-column">Sorter etter:</label>
+                    <select id="mobile-sort-column"></select>
+                    <button id="mobile-sort-direction" type="button">Sorter stigende</button>
+                </div>
                 <button aria-label="Se tagg sammendrag" id="view-summary">Vis tagg sammendrag</button>
                 <button aria-label="Se døde lenker" id="view-invalid-urls">Vis døde lenker</button>
             </div>
@@ -1252,6 +1257,11 @@
                     button.type = 'button';
                     button.setAttribute('aria-label', `Sort by ${col}`);
 
+                    const mobileHeaderLabel = document.createElement('span');
+                    mobileHeaderLabel.className = 'mobile-column-label';
+                    mobileHeaderLabel.textContent = col;
+                    th.appendChild(mobileHeaderLabel);
+
                     // Add column text
                     const columnText = document.createElement('span');
                     columnText.textContent = col;
@@ -1372,6 +1382,21 @@
 
             tableContainer.appendChild(table);
 
+            const mobileSortColumn = document.getElementById('mobile-sort-column');
+            mobileSortColumn.replaceChildren();
+            columns.forEach((column, index) => {
+                if (index === 0) return;
+                const option = document.createElement('option');
+                option.value = String(index);
+                option.textContent = column;
+                mobileSortColumn.appendChild(option);
+            });
+            mobileSortColumn.value = '6';
+            mobileSortColumn.onchange = () => sortTable(table, Number(mobileSortColumn.value));
+            document.getElementById('mobile-sort-direction').onclick = () => {
+                sortTable(table, Number(mobileSortColumn.value));
+            };
+
             // Set initial sort direction and apply sort
             table.dataset.sortDirection = 'desc';
             sortTable(table, 6, true);
@@ -1417,6 +1442,20 @@
             if (currentHeader.classList.contains('sortable')) {
                 currentHeader.classList.add(newSortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
                 currentHeader.setAttribute('aria-sort', newSortDirection === 'asc' ? 'ascending' : 'descending');
+
+                const mobileSortColumn = document.getElementById('mobile-sort-column');
+                if (mobileSortColumn) {
+                    mobileSortColumn.value = String(columnIndex);
+                }
+                const mobileSortDirection = document.getElementById('mobile-sort-direction');
+                if (mobileSortDirection) {
+                    const nextDirection = newSortDirection === 'asc' ? 'synkende' : 'stigende';
+                    mobileSortDirection.textContent = `Sorter ${nextDirection}`;
+                    mobileSortDirection.setAttribute(
+                        'aria-label',
+                        `Sorteringsretning: ${newSortDirection === 'asc' ? 'stigende' : 'synkende'}. Aktiver for å sortere ${nextDirection}.`
+                    );
+                }
 
                 // Update button aria-label to indicate current sort state
                 const button = currentHeader.querySelector('button');

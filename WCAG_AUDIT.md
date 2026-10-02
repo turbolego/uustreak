@@ -44,7 +44,8 @@ Key CSS:
 
 ### Responsive redesign
 - Media query `@media (max-width:768px)` converts table to card view:
-  - `thead` visually hidden but remains accessible
+  - `thead` is visually clipped rather than removed, preserving accessible column headers
+  - Mobile sorting uses a visible column selector and direction button; hidden header buttons are removed from the mobile tab order
   - Each `tr` becomes a bordered card
   - Each `td` shows `data-label` via `td::before`
 - `table-wrapper` overflow switches to `visible` on mobile

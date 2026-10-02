@@ -129,6 +129,14 @@ table {
 }
 
 /* Responsive table: card view on narrow screens */
+.mobile-sort-controls {
+    display: none;
+}
+
+.mobile-column-label {
+    display: none;
+}
+
 @media (max-width: 768px) {
     table {
         min-width: 0;
@@ -152,24 +160,34 @@ table {
         white-space: nowrap;
         border: 0;
     }
-    /* Remove hidden sort buttons from tab order on mobile */
-    thead button {
+    .mobile-column-label {
+        display: block;
+    }
+    table.sortable thead th.sortable button {
         display: none;
     }
-    thead,
-    thead th {
-        display: none !important;
+    .view-section {
+        position: sticky;
+        top: 0;
+        background: #fff;
+        z-index: 10;
+        padding: 0.5rem;
+        border-bottom: 1px solid #ddd;
     }
-    /* Provide visible sorting controls for mobile */
-    @media (max-width: 768px) {
-        .view-section {
-            position: sticky;
-            top: 0;
-            background: #fff;
-            z-index: 10;
-            padding: 0.5rem;
-            border-bottom: 1px solid #ddd;
-        }
+    .mobile-sort-controls {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 0.75rem;
+    }
+    .mobile-sort-controls label {
+        flex-basis: 100%;
+    }
+    .mobile-sort-controls select {
+        flex: 1;
+        min-width: 0;
     }
     tr {
         border: 1px solid #ddd;
