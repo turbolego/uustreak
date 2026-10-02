@@ -21,12 +21,12 @@ Key CSS:
 - Long column labels (violation types/tags) create very wide tables
 - Buttons and interactive elements can shrink below comfortable tap target on narrow screens
 
-### WCAG 2.2 – Automated findings
+### WCAG 2.2 – Code-inspection findings
 1. **1.3.1 Info and Relationships** – Table header cells use `scope="col"`, which programmatically associates each data cell with its column header. In the mobile card presentation, visible repeated labels provide additional context for each value.
 2. **1.4.4 Resize Text** – Font sizing uses `clamp` which is good, but table cell padding remains fixed, causing overflow at 200% zoom.
 3. **1.4.10 Reflow** – Table does not reflow to single column; horizontal scroll required below ~600px → fails AA at 320px width.
-4. **2.4.7 Focus Visible** – Focus outline exists but is 2px and contrast ~4.5:1; WCAG 2.2 SC 2.4.11 Focus Appearance requires ≥2px perimeter *and* 3:1 contrast area. Current satisfies contrast but outline-offset negative may obscure.
-5. **2.4.11 Focus Appearance** – Outline-offset: -2px risks covering part of component; better to use positive offset.
+4. **2.4.7 Focus Visible** – Focus indicators are present. WCAG 2.2 SC 2.4.7 requires keyboard focus to be visible.
+5. **2.4.13 Focus Appearance (AAA)** – Focus outline thickness, contrast, and area require separate evaluation against this AAA criterion. SC 2.4.11 is Focus Not Obscured (Minimum), not Focus Appearance.
 6. **2.5.5 Target Size (Enhanced AAA)** – Achievements/Trends buttons are `min-height:36px` → below 44×44 px AAA target, meets 24×24 AA via 2.5.8.
 7. **2.5.7 Dragging Movements** – N/A
 8. **2.4.1 Bypass Blocks** – Skip link missing, requiring keyboard users to traverse repeated navigation.
@@ -34,7 +34,7 @@ Key CSS:
 
 ### Manual observations
 - Skip link missing → keyboard users must tab through entire navigation each page load.
-- Dialogs have `aria-labelledby` now added in this PR, but original lacked `aria-describedby`.
+- Dialogs are named by their headings; their detailed content is not assigned as a flattened dialog description.
 - Sort buttons aria-label exists but does not announce current sort direction in the label text update timing.
 - Table caption not programmatically associated via `aria-labelledby`.
 - No `prefers-reduced-motion` handling for potential animations.
@@ -54,10 +54,10 @@ Key CSS:
 - Added skip link `.skip-link` with focus styles
 - `td[data-label]` populated via JS for visible labels in the mobile card presentation
 - Table gets `aria-label` and caption linked via `aria-labelledby`
-- Focus appearance upgraded to 3px solid #005fcc with positive offset 2px, `:focus-visible` rule added, box-shadow for contrast
+- Focus indicator uses a 3px solid #005fcc outline with positive 2px offset and `:focus-visible`; conformance to AAA SC 2.4.13 requires a separate contrast and area evaluation
 - Pointer targets: 44×44 minimum dimensions are declared globally and repeated under `@media (pointer: coarse)`
 - Reduced motion media query added
-- Dialogs now include `aria-describedby`
+- Dialogs use `aria-labelledby` to expose their headings as names
 - Table caption receives unique id and `table` references it
 
 ### Accessibility enhancements
@@ -72,6 +72,6 @@ Key CSS:
 
 ## Evidence
 - Before: horizontal scroll only, no labels on mobile
-- After: card layout, semantic associations, focus appearance AA conformant
+- After: card layout, native table-header associations, and visible focus indicators
 
 Tested via local file load and CSS inspection. Full automated audit requires HTTP server; see wcag-skill validator workflow.
