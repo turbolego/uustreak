@@ -1225,6 +1225,7 @@
             tableContainer.innerHTML = '';
 
             const latestReports = reports;
+            const achievementsByProject = await loadProjectAchievements();
             const reportStreaks = new Map();
             const reportDayCounts = new Map();
             const viewMode = document.getElementById('view-selector').value;
@@ -1351,27 +1352,10 @@
                         });
                         cell.appendChild(button);
                     } else if (index === 3) {
-                        // Achievements column
-                        const achievementsButton = document.createElement('button');
-                        achievementsButton.className = 'achievements-button';
-                        achievementsButton.textContent = '🏆 Achievements';
-                        achievementsButton.setAttribute('aria-label', `View achievements for ${report.project}`);
-                        
-                        // Find project in projects list to get achievements
-                        // Note: achievements data will be loaded separately via projects.json
-                        achievementsButton.addEventListener('click', async (e) => {
-                            e.stopPropagation();
-                            try {
-                                const projectsData = await fetch('projects.json').then(r => r.json());
-                                const projectData = projectsData.find(p => p.name === report.project);
-                                const achievements = projectData?.achievements || [];
-                                showAchievementsDialog(report.project, achievements);
-                            } catch (error) {
-                                console.error('Error loading achievements:', error);
-                                showAchievementsDialog(report.project, []);
-                            }
-                        });
-                        cell.appendChild(achievementsButton);
+                        // Achievements column: sorted by number of achievements
+                        const achievements = achievementsByProject.get(report.project) || [];
+                        cell.dataset.sortValue = achievements.length;
+                        cell.appendChild(createAchievementsButton(report.project, achievements));
                     } else if (index === 4) {
                         const trendsButton = document.createElement('button');
                         trendsButton.className = 'trends-button';
