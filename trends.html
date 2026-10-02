@@ -314,7 +314,9 @@
             <h2>📈 Overall Trend - All Selected Tags</h2>
             <p class="description">
                 Combined view showing total violations for each selected WCAG tag over time. 
-                This helps identify which conformance levels need the most attention.
+                Hover a violation day to see the affected rules and whether embedded
+                code (such as OneTrust) was the detected cause. This helps identify which
+                conformance levels need the most attention.
             </p>
             <div class="chart-wrapper">
                 <canvas id="overallChart"></canvas>
@@ -325,7 +327,9 @@
         <div class="chart-section">
             <h2>📊 Individual Tag Breakdown</h2>
             <p class="description">
-                Separate charts for each WCAG tag showing detailed trends. Click on project names in the legend to show/hide specific projects.
+                Separate charts for each WCAG tag showing detailed trends. Hover a
+                violation day for rule details and embedded-code causes. Click on project
+                names in the legend to show/hide specific projects.
             </p>
             <div id="individual-charts"></div>
         </div>
@@ -430,6 +434,69 @@
                 time: match[3],
                 violationCount: match[4] ? parseInt(match[4]) : null
             };
+        }
+
+        function getEmbeddedProviders(violation) {
+            const nodes = Array.isArray(violation?.nodes) ? violation.nodes : [];
+            const evidence = [
+                violation?.id,
+                violation?.help,
+                violation?.description,
+                ...nodes.flatMap(node => [node?.html, ...(node?.target || []), node?.failureSummary])
+            ].filter(Boolean).join(' ');
+            const providers = [
+                ['OneTrust', /\b(?:onetrust|ot-[a-z0-9_-]+|onetrust-[a-z0-9_-]+)\b/i],
+                ['TrustArc', /\btrustarc\b/i],
+                ['Cookiebot', /\bcookiebot\b/i],
+                ['Didomi', /\bdidomi\b/i],
+                ['ConsentManager', /\bconsentmanager\b/i],
+                ['Quantcast', /\bquantcast\b/i],
+                ['Usercentrics', /\busercentrics\b/i]
+            ];
+            return providers.filter(([, pattern]) => pattern.test(evidence)).map(([name]) => name);
+        }
+
+        function isEmbeddedViolation(violation) {
+            const nodes = Array.isArray(violation?.nodes) ? violation.nodes : [];
+            const evidence = [
+                violation?.id,
+                violation?.help,
+                violation?.description,
+                ...nodes.flatMap(node => [node?.html, ...(node?.target || []), node?.failureSummary])
+            ].filter(Boolean).join(' ');
+            return getEmbeddedProviders(violation).length > 0
+                || /\bcookie consent\b|<(?:iframe|script|embed|object)\b/i.test(evidence);
+        }
+
+        function getViolationTooltipLines(date, projectFilter, tag) {
+            const dateData = allProjectsData.get(date);
+            if (!dateData) return [];
+
+            const lines = [];
+            dateData.forEach((projectData, project) => {
+                if (projectFilter !== 'all' && projectFilter !== project) return;
+                const violations = Array.isArray(projectData.details?.violations)
+                    ? projectData.details.violations.filter(violation =>
+                        violation && (!tag || (Array.isArray(violation.tags) && violation.tags.includes(tag)))
+                    )
+                    : [];
+
+                violations.forEach(violation => {
+                    const count = Number(violation.violation_count);
+                    const suffix = Number.isFinite(count) && count > 1 ? ` (${count})` : '';
+                    lines.push(`${project}: ${violation.help || violation.rule_id || violation.description || 'Violation'}${suffix}`);
+
+                    if (isEmbeddedViolation(violation)) {
+                        const providers = getEmbeddedProviders(violation);
+                        lines.push(`Cause: Embedded code${providers.length ? ` from ${providers.join(' and ')}` : ''}`);
+                    }
+                });
+            });
+
+            const maxDetails = 10;
+            return lines.length > maxDetails
+                ? [...lines.slice(0, maxDetails), `… and ${lines.length - maxDetails} more details`]
+                : lines;
         }
 
         // Load data for date range
@@ -665,6 +732,14 @@
                                 },
                                 label: (context) => {
                                     return `${context.dataset.label}: ${context.parsed.y} violations`;
+                                },
+                                afterBody: (items) => {
+                                    if (!items.length) return [];
+                                    return getViolationTooltipLines(
+                                        dates[items[0].dataIndex],
+                                        selectedProject,
+                                        null
+                                    );
                                 }
                             }
                         }
@@ -819,6 +894,14 @@
                                 callbacks: {
                                     label: (context) => {
                                         return `${context.dataset.label}: ${context.parsed.y} violations`;
+                                    },
+                                    afterBody: (items) => {
+                                        if (!items.length) return [];
+                                        return getViolationTooltipLines(
+                                            dates[items[0].dataIndex],
+                                            selectedProject,
+                                            tag
+                                        );
                                     }
                                 }
                             }
