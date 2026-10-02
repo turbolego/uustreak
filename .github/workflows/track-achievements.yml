@@ -35,7 +35,7 @@ jobs:
             rm -f historical-data/streak-index.json
           fi
 
-          # Also download report-list.json as fallback (used if streak-index is absent)
+          # Also download report-list.json for loss reasons and as a streak fallback
           if wget -O historical-data/report-list.json https://turbolego.github.io/uustreak/historical-data/report-list.json 2>/dev/null; then
             echo "✓ Downloaded report-list.json from published site"
           else
@@ -47,6 +47,8 @@ jobs:
           fi
 
       - name: Track achievements
+        env:
+          SITE_BASE_URL: https://turbolego.github.io/uustreak
         run: |
           echo "🏆 Running achievement tracking..."
           node js/track-achievements.js
