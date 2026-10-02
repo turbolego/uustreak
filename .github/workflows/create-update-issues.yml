@@ -153,6 +153,12 @@ jobs:
               return 'Page content';
             }
 
+            const normalizeSnippet = (text, maxLength = 240) => {
+              const collapsed = String(text ?? '').replace(/\s+/g, ' ').trim();
+              if (!collapsed) return 'N/A';
+              return collapsed.length > maxLength ? `${collapsed.slice(0, maxLength - 1)}…` : collapsed;
+            };
+
             async function findExistingIssue(projectName) {
               console.log(`Checking for existing issue with title format: [${projectName}] WCAG Violations Report`);
 
@@ -432,7 +438,14 @@ jobs:
                     '',
                     '#### Affected Elements:',
                     '',
-                    ...violation.nodes.map(node => `- \`${node.target.join(', ')}\``),
+                    ...((violation.nodes || []).length
+                      ? (violation.nodes || []).flatMap((node) => [
+                          `- **Target:** ${formatTarget(node)}`,
+                          `  - **HTML:** \`${normalizeSnippet(node.html)}\``,
+                          `  - **Failure summary:** ${normalizeSnippet(node.failureSummary)}`,
+                          '',
+                        ])
+                      : ['- N/A']),
                     ''
                   ]).flat()
                 ].join('\n');
@@ -464,7 +477,14 @@ jobs:
                     `- **Tags:** ${violation.tags ? violation.tags.join(', ') : 'N/A'}`,
                     `- **Count:** ${violation.violation_count}`,
                     `- **Affected Elements:**`,
-                    ...violation.nodes.map(node => `  - \`${node.target.join(', ')}\``),
+                    ...((violation.nodes || []).length
+                      ? (violation.nodes || []).flatMap((node) => [
+                          `  - **Target:** ${formatTarget(node)}`,
+                          `    - **HTML:** \`${normalizeSnippet(node.html)}\``,
+                          `    - **Failure summary:** ${normalizeSnippet(node.failureSummary)}`,
+                          '',
+                        ])
+                      : ['  - N/A']),
                     ''
                   ]).flat()
                 ];
