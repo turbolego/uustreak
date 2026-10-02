@@ -67,6 +67,7 @@ jobs:
             const MAX_BODY_LENGTH = 65000; // GitHub limit is 65536
             const WRITE_DELAY_MS = 1000; // stay below the secondary rate limit for content creation
             const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+            const API_VERSION_HEADERS = { 'X-GitHub-Api-Version': '2022-11-28' };
             const dryRun = process.env.DRY_RUN === 'true';
             const requestedDate = (process.env.REPORT_DATE || '').trim();
             const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -185,7 +186,7 @@ jobs:
             async function upsertIssue(title, body, labels) {
               const existing = findIssue(title);
               if (!existing) {
-                const created = await write(`create "${title}"`, () => github.rest.issues.create({ owner, repo, title, body, labels }));
+                const created = await write(`create "${title}"`, () => github.rest.issues.create({ owner, repo, title, body, labels, headers: API_VERSION_HEADERS }));
                 if (created) issuesByTitle.set(title, [created.data]);
                 stats.created++;
                 core.info(`Created issue "${title}"${created ? ` #${created.data.number}` : ''}.`);
@@ -197,7 +198,7 @@ jobs:
                 return;
               }
               await write(`update #${existing.number} "${title}"`, () => github.rest.issues.update({
-                owner, repo, issue_number: existing.number, body, labels, state: 'open',
+                owner, repo, issue_number: existing.number, body, labels, state: 'open', headers: API_VERSION_HEADERS,
               }));
               stats.updated++;
               core.info(`Updated issue #${existing.number} "${title}".`);
@@ -207,7 +208,7 @@ jobs:
               const existing = findIssue(issueTitle(project));
               if (existing && existing.state === 'open') {
                 await write(`close #${existing.number} "${existing.title}"`, () => github.rest.issues.update({
-                  owner, repo, issue_number: existing.number, state: 'closed', state_reason: 'completed',
+                  owner, repo, issue_number: existing.number, state: 'closed', state_reason: 'completed', headers: API_VERSION_HEADERS,
                 }));
                 stats.closed++;
                 core.info(`Closed issue #${existing.number} for ${project} (0 violations).`);

@@ -43,6 +43,7 @@ jobs:
             const fs = require('fs');
             const path = require('path');
             const embeddedCode = require(path.join(process.cwd(), 'js', 'embedded-code.js'));
+            const API_VERSION_HEADERS = { 'X-GitHub-Api-Version': '2022-11-28' };
 
             const requestedDate = (process.env.REPORT_DATE || '').trim();
 
@@ -161,7 +162,8 @@ jobs:
                   repo: context.repo.repo,
                   state: "all", // Includes closed issues
                   labels: "wcag-violation",
-                  per_page: 100
+                  per_page: 100,
+                  headers: API_VERSION_HEADERS
                 });
 
                 if (!issues || !Array.isArray(issues)) {
@@ -192,7 +194,8 @@ jobs:
                       owner: context.repo.owner,
                       repo: context.repo.repo,
                       issue_number: existingIssue.number,
-                      state: 'closed'
+                      state: 'closed',
+                      headers: API_VERSION_HEADERS
                     });
                   }
                   
@@ -201,7 +204,8 @@ jobs:
                   await github.rest.issues.delete({
                     owner: context.repo.owner,
                     repo: context.repo.repo,
-                    issue_number: existingIssue.number
+                    issue_number: existingIssue.number,
+                    headers: API_VERSION_HEADERS
                   });
                   
                   console.log(`Successfully closed and deleted issue for ${projectName}`);
@@ -262,7 +266,8 @@ jobs:
                   repo: context.repo.repo,
                   state: "all", // Includes closed issues
                   labels: "wcag-summary",
-                  per_page: 100
+                  per_page: 100,
+                  headers: API_VERSION_HEADERS
                 });
 
                 if (!issues || !Array.isArray(issues)) {
@@ -327,7 +332,8 @@ jobs:
                     repo: context.repo.repo,
                     issue_number: existingIssue.number,
                     body: body,
-                    state: "open" // Reopen if closed
+                    state: "open", // Reopen if closed
+                    headers: API_VERSION_HEADERS
                   });
 
                   console.log(`Daily summary issue updated and reopened successfully.`);
@@ -339,7 +345,8 @@ jobs:
                     repo: context.repo.repo,
                     title: issueTitle,
                     body: body,
-                    labels: ['wcag-summary', 'automated-report']
+                    labels: ['wcag-summary', 'automated-report'],
+                    headers: API_VERSION_HEADERS
                   });
 
                   console.log(`New daily summary issue created.`);
@@ -487,6 +494,7 @@ jobs:
                     issue_number: existingIssue.number,
                     body: body,
                     state: "open", // Reopen if closed
+                    headers: API_VERSION_HEADERS
                     labels: labels
                   });
 
@@ -499,7 +507,8 @@ jobs:
                     repo: context.repo.repo,
                     title: issueTitle,
                     body: body,
-                    labels: labels
+                    labels: labels,
+                    headers: API_VERSION_HEADERS
                   });
 
                       console.log(`New issue created for ${project}.`);
