@@ -34,6 +34,30 @@ function formatViolationReason(violation) {
     return count && count > 1 ? `${label} (${count})` : label;
 }
 
+function classifyViolationSource(violation) {
+    const nodes = Array.isArray(violation?.nodes) ? violation.nodes : [];
+    const evidence = [
+        violation?.id,
+        violation?.help,
+        violation?.description,
+        ...nodes.flatMap(node => [node?.html, ...(node?.target || []), node?.failureSummary]),
+    ].filter(Boolean).join(' ').toLowerCase();
+
+    const embeddedCode = /\b(onetrust|trustarc|cookiebot|didomi|consentmanager|quantcast|usercentrics|cookie consent)\b|<(?:iframe|script|embed|object)\b|(?:^|[#.\s])(?:ot-|onetrust-|cmp[-_])/i.test(evidence);
+    return embeddedCode ? 'embedded' : 'page';
+}
+
+function formatLostStreakCause(violations) {
+    const sources = new Set(violations.map(classifyViolationSource));
+    if (sources.size === 1 && sources.has('embedded')) {
+        return 'Embedded code';
+    }
+    if (sources.size === 1) {
+        return 'Page content';
+    }
+    return 'Embedded code and page content';
+}
+
 async function getLostStreakReason(projectName, lostDate, reportList) {
     if (!Array.isArray(reportList) || reportList.length === 0 || !projectName || !lostDate) {
         console.warn(`Cannot look up lost streak reason for ${projectName} on ${lostDate}: report list or streak metadata is missing`);
@@ -97,15 +121,16 @@ async function getLostStreakReason(projectName, lostDate, reportList) {
             .slice(0, 3)
             .map(formatViolationReason)
             .filter(Boolean);
+        const cause = formatLostStreakCause(violations);
 
         if (summary.length > 0) {
             const remaining = violations.length - summary.length;
             const suffix = remaining > 0 ? `, and ${remaining} more` : '';
-            return `${totalViolations} violation${totalViolations === 1 ? '' : 's'} found: ${summary.join(', ')}${suffix}`;
+            return `${cause}: ${totalViolations} violation${totalViolations === 1 ? '' : 's'} found: ${summary.join(', ')}${suffix}`;
         }
 
         if (totalViolations > 0) {
-            return `${totalViolations} violation${totalViolations === 1 ? '' : 's'} found`;
+            return `${cause}: ${totalViolations} violation${totalViolations === 1 ? '' : 's'} found`;
         }
         throw new Error('Loss-date report does not contain positive violations');
     } catch (error) {
