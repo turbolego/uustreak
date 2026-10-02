@@ -65,7 +65,9 @@
                 <button id="next-day">Neste dag</button>
             </div>
             <div class="view-controls" role="group" aria-label="Visningskontroller">
-                <div class="view-selector-group">
+                <button id="toggle-detail-columns" type="button" class="detail-columns-toggle" aria-expanded="false"
+                    aria-controls="table-container">Vis alle kolonner</button>
+                <div class="view-selector-group" hidden>
                     <label for="view-selector">Vis kolonner basert på:</label>
                     <select id="view-selector">
                         <option value="types">Bruddtyper</option>
@@ -1268,6 +1270,7 @@
 
             const table = document.createElement('table');
             table.className = 'sortable';
+            table.classList.toggle('details-collapsed', !detailColumnsExpanded);
             table.setAttribute('aria-label', `WCAG-brudd topplista for ${date}, sortérbar tabell`);
 
             const caption = document.createElement('caption');
@@ -1281,6 +1284,7 @@
             columns.forEach((col, index) => {
                 const th = document.createElement('th');
                 th.setAttribute('scope', 'col');
+                if (index >= FIRST_DETAIL_COLUMN_INDEX) th.classList.add('detail-col');
 
                 // Don't make the rank column sortable
                 if (index !== 0) {
@@ -1331,6 +1335,7 @@
                 columns.forEach((col, index) => {
                     const cell = document.createElement('td');
                     cell.dataset.label = col;
+                    if (index >= FIRST_DETAIL_COLUMN_INDEX) cell.classList.add('detail-col');
                     if (index === 0) {
                         // Rank column - will be updated after sorting
                         cell.className = 'rank-cell';
@@ -1416,8 +1421,10 @@
                 const option = document.createElement('option');
                 option.value = String(index);
                 option.textContent = column;
+                if (index >= FIRST_DETAIL_COLUMN_INDEX) option.className = 'detail-col-option';
                 mobileSortColumn.appendChild(option);
             });
+            applyDetailColumnsState(table, columns.length - FIRST_DETAIL_COLUMN_INDEX);
             mobileSortColumn.value = '6';
             mobileSortColumn.onchange = () => sortTable(table, Number(mobileSortColumn.value));
             document.getElementById('mobile-sort-direction').onclick = () => {
@@ -1427,6 +1434,34 @@
             // Set initial sort direction and apply sort
             table.dataset.sortDirection = 'desc';
             sortTable(table, 6, true);
+        }
+
+        // Columns after 'Feil pga. embedded kode' (per violation type / WCAG tag) are collapsed by default
+        const FIRST_DETAIL_COLUMN_INDEX = 9;
+        let detailColumnsExpanded = false;
+
+        function applyDetailColumnsState(table, detailColumnCount) {
+            const toggle = document.getElementById('toggle-detail-columns');
+            table.classList.toggle('details-collapsed', !detailColumnsExpanded);
+            toggle.setAttribute('aria-expanded', String(detailColumnsExpanded));
+            toggle.textContent = detailColumnsExpanded
+                ? 'Skjul detaljkolonner'
+                : `Vis alle kolonner (${detailColumnCount} til)`;
+            toggle.hidden = detailColumnCount === 0;
+            document.querySelector('.view-selector-group').hidden = !detailColumnsExpanded;
+            document.querySelectorAll('#mobile-sort-column .detail-col-option').forEach(option => {
+                option.hidden = !detailColumnsExpanded;
+                option.disabled = !detailColumnsExpanded;
+            });
+
+            toggle.onclick = () => {
+                detailColumnsExpanded = !detailColumnsExpanded;
+                applyDetailColumnsState(table, detailColumnCount);
+                // Don't leave the table sorted by a column that is now hidden
+                if (!detailColumnsExpanded && currentSortColumnIndex >= FIRST_DETAIL_COLUMN_INDEX) {
+                    sortTable(table, 6, true);
+                }
+            };
         }
 
         function sortTable(table, columnIndex, isInitialSort = false) {
