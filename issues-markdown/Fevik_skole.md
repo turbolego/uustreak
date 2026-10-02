@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `img[alt="Grimstad kommune"]`
+- **Target:** `img[alt="Grimstad kommune"]`
+  - **HTML:** `<img alt="Grimstad kommune" src="/handlers/bv.ashx/ia2b5ca87-5e1e-483b-b914-566d7e19d238/b39f3grimstad_kommunelogo-1.svg">`
+  - **Failure summary:** Fix all of the following: Element contains <img> element with alt text that duplicates existing text
+
 
 ### All page content should be contained by landmarks
 
@@ -30,4 +33,7 @@
 
 #### Affected Elements:
 
-- `.fantDuLabel`
+- **Target:** `.fantDuLabel`
+  - **HTML:** `<span role="heading" aria-level="2" class="fantDuLabel il-feedback-form-heading">Fant du det du lette etter?</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

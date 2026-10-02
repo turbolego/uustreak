@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `#mur874rztnz0gpe7ebg-contact\:email`
+- **Target:** `#mur874rztnz0gpe7ebg-contact\:email`
+  - **HTML:** `<input class="mhForm__input mhForm__input--email" id="mur874rztnz0gpe7ebg-contact:email" name="contact:email" type="email" aria-describedby="mur874rztnz0gpe7ebg-error-contact:email" autocomplete="email">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
 
 ### Form elements must have labels
 
@@ -30,4 +33,7 @@
 
 #### Affected Elements:
 
-- `#mur874rztnz0gpe7ebg-contact\:email`
+- **Target:** `#mur874rztnz0gpe7ebg-contact\:email`
+  - **HTML:** `<input class="mhForm__input mhForm__input--email" id="mur874rztnz0gpe7ebg-contact:email" name="contact:email" type="email" aria-describedby="mur874rztnz0gpe7ebg-error-contact:email" autocomplete="email">`
+  - **Failure summary:** Fix all of the following: Form element has explicit <label> that is hidden
+

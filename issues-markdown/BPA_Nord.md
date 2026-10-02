@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `a[href$="gnistdesign.no/"]`
+- **Target:** `a[href$="gnistdesign.no/"]`
+  - **HTML:** `<a href="https://gnistdesign.no/" target="_blank" rel="noreferrer noopener"><img loading="lazy" decoding="async" width="42" height="40" src="https://bpa-nord.no/wp-content/uploads/2024/02/Gnist-ico.svg" alt="" class="wp-image-109" style="o…`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+

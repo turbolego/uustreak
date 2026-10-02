@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.header`
+- **Target:** `.header`
+  - **HTML:** `<ul class="header mainNavigation clubMenu nav__links nav__links--products js-offcanvas-links" role="menubar">`
+  - **Failure summary:** Fix any of the following: Element has children which are not allowed: li, [role=button]
+
 
 ### Headings should not be empty
 
@@ -30,11 +33,26 @@
 
 #### Affected Elements:
 
-- `.carousel__component.carousel-component-parent.right-shadow:nth-child(6) > .carousel__component--headline:nth-child(1) > .title-two`
-- `.carousel__component.carousel-component-parent.right-shadow:nth-child(9) > .carousel__component--headline:nth-child(1) > .title-two`
-- `.yComponentWrapper.yCmsComponent:nth-child(1) > .carousel__component.carousel-component-parent.right-shadow > .carousel__component--headline:nth-child(1) > .title-two`
-- `.yComponentWrapper.yCmsComponent:nth-child(2) > .carousel__component.carousel-component-parent.right-shadow > .carousel__component--headline:nth-child(1) > .title-two`
-- `.yComponentWrapper.yCmsComponent:nth-child(3) > .carousel__component.carousel-component-parent.right-shadow > .carousel__component--headline:nth-child(1) > .title-two`
+- **Target:** `.carousel__component.carousel-component-parent.right-shadow:nth-child(6) > .carousel__component--headline:nth-child(1) > .title-two`
+  - **HTML:** `<h2 class="title-two"></h2>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
+- **Target:** `.carousel__component.carousel-component-parent.right-shadow:nth-child(9) > .carousel__component--headline:nth-child(1) > .title-two`
+  - **HTML:** `<h2 class="title-two"></h2>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
+- **Target:** `.yComponentWrapper.yCmsComponent:nth-child(1) > .carousel__component.carousel-component-parent.right-shadow > .carousel__component--headline:nth-child(1) > .title-two`
+  - **HTML:** `<h2 class="title-two"></h2>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
+- **Target:** `.yComponentWrapper.yCmsComponent:nth-child(2) > .carousel__component.carousel-component-parent.right-shadow > .carousel__component--headline:nth-child(1) > .title-two`
+  - **HTML:** `<h2 class="title-two"></h2>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
+- **Target:** `.yComponentWrapper.yCmsComponent:nth-child(3) > .carousel__component.carousel-component-parent.right-shadow > .carousel__component--headline:nth-child(1) > .title-two`
+  - **HTML:** `<h2 class="title-two"></h2>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
 
 ### Frames must have an accessible name
 
@@ -47,8 +65,14 @@
 
 #### Affected Elements:
 
-- `#cx-livechat-host, iframe[name="cx-webChatButton"]`
-- `#cx-livechat-host, iframe[name="cx-webChatWindow"]`
+- **Target:** `#cx-livechat-host, iframe[name="cx-webChatButton"]`
+  - **HTML:** `<iframe name="cx-webChatButton" src="https://livechat-clasohlson.connexone.co.uk/button.html?connid=696921f4-9106-4fa0-88f1-7f8e359b5ae4"></iframe>`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+
+- **Target:** `#cx-livechat-host, iframe[name="cx-webChatWindow"]`
+  - **HTML:** `<iframe name="cx-webChatWindow" src="https://livechat-clasohlson.connexone.co.uk/chatWindow.html?connid=696921f4-9106-4fa0-88f1-7f8e359b5ae4"></iframe>`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+
 
 ### Links must have discernible text
 
@@ -61,12 +85,30 @@
 
 #### Affected Elements:
 
-- `.cot-se-inspiration__item:nth-child(1) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
-- `.cot-se-inspiration__item:nth-child(2) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
-- `.cot-se-inspiration__item:nth-child(3) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
-- `.cot-se-inspiration__item:nth-child(4) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
-- `.cot-se-inspiration__item:nth-child(5) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
-- `.cot-se-inspiration__item:nth-child(6) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
+- **Target:** `.cot-se-inspiration__item:nth-child(1) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
+  - **HTML:** `<a class="cot-se-inspiration__item-button cot-se-inspiration__item-button--black" href="/no/Fritid/Friluftsliv-og-camping/Beredskapslager/c/2763?scr=1&sc=1">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `.cot-se-inspiration__item:nth-child(2) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
+  - **HTML:** `<a class="cot-se-inspiration__item-button cot-se-inspiration__item-button--black" href="/no/Fritid/Hagemaskiner/Løvblåsere-og-løvsugere/c/2089?scr=1&sc=2">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `.cot-se-inspiration__item:nth-child(3) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
+  - **HTML:** `<a class="cot-se-inspiration__item-button cot-se-inspiration__item-button--black" href="/no/Fritid/Sport-og-utendørsaktivitet/Bær--og-sopplukking/c/2448?scr=1&sc=3">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `.cot-se-inspiration__item:nth-child(4) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
+  - **HTML:** `<a class="cot-se-inspiration__item-button cot-se-inspiration__item-button--black" href="/no/Fritid/Sport-og-utendørsaktivitet/Refleks/c/1537?scr=1&sc=4">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `.cot-se-inspiration__item:nth-child(5) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
+  - **HTML:** `<a class="cot-se-inspiration__item-button cot-se-inspiration__item-button--black" href="/no/Elektro/Varmeovner/c/1327?scr=1&sc=5">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `.cot-se-inspiration__item:nth-child(6) > .cot-se-inspiration__item-content > .cot-se-inspiration__item-button.cot-se-inspiration__item-button--black`
+  - **HTML:** `<a class="cot-se-inspiration__item-button cot-se-inspiration__item-button--black" href="/no/Elektro/Klima-og-luftkvalitet/c/1323?scr=1&sc=6">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### <li> elements must be contained in a <ul> or <ol>
 
@@ -79,7 +121,10 @@
 
 #### Affected Elements:
 
-- `.custom-spare-part-li`
+- **Target:** `.custom-spare-part-li`
+  - **HTML:** `<li class="auto nav__links--primary js-enquire-has-sub-new custom-spare-part-li">`
+  - **Failure summary:** Fix any of the following: List item parent element has a role that is not role="list"
+
 
 ### Interactive controls must not be nested
 
@@ -92,8 +137,14 @@
 
 #### Affected Elements:
 
-- `.active[role="tab"]`
-- `li[role="tab"]:nth-child(2)`
+- **Target:** `.active[role="tab"]`
+  - **HTML:** `<li class="active" role="tab" aria-selected="true"><span><a rel="nofollow" href="?SiteView=B2C">Privatkunde</a></span></li>`
+  - **Failure summary:** Fix any of the following: Element has focusable descendants
+
+- **Target:** `li[role="tab"]:nth-child(2)`
+  - **HTML:** `<li role="tab" aria-selected="false"><span><a rel="nofollow" href="?SiteView=B2B">Bedriftskunde</a></span></li>`
+  - **Failure summary:** Fix any of the following: Element has focusable descendants
+
 
 ### All page content should be contained by landmarks
 
@@ -106,4 +157,7 @@
 
 #### Affected Elements:
 
-- `#cx-livechat-host, iframe[name="cx-webChatButton"], #container`
+- **Target:** `#cx-livechat-host, iframe[name="cx-webChatButton"], #container`
+  - **HTML:** `<div id="container">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

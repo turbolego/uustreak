@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `div[role="grid"]`
+- **Target:** `div[role="grid"]`
+  - **HTML:** `<div class="course-calendar-wrap" role="grid" data-wrap-cols="true" data-wrap-rows="true" data-restructure="false">`
+  - **Failure summary:** Fix any of the following: Element has children which are not allowed: a
+
 
 ### Frames must have an accessible name
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `#widget2`
+- **Target:** `#widget2`
+  - **HTML:** `<iframe type="text/html" src="https://www.youtube-nocookie.com/embed/jUW1mDPe1I0?rel=0" loading="lazy" allowfullscreen="" enablejsapi="true" id="widget2"></iframe>`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+
 
 ### Document should not have more than one banner landmark
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `#js-header-navigation`
+- **Target:** `#js-header-navigation`
+  - **HTML:** `<header class="main-header" id="js-header-navigation">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -56,8 +65,14 @@
 
 #### Affected Elements:
 
-- `#js-header-navigation`
-- `.main-header-mobile`
+- **Target:** `#js-header-navigation`
+  - **HTML:** `<header class="main-header" id="js-header-navigation">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+- **Target:** `.main-header-mobile`
+  - **HTML:** `<nav class="main-header-mobile">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### Links must have discernible text
 
@@ -70,9 +85,18 @@
 
 #### Affected Elements:
 
-- `.main-header-small-item.main-header-link:nth-child(8) > a[href$="www.bouvet.se"]`
-- `.main-header-small-item.main-header-link:nth-child(9) > a[href$="en.bouvet.no"]`
-- `span > a[href="/"]`
+- **Target:** `.main-header-small-item.main-header-link:nth-child(8) > a[href$="www.bouvet.se"]`
+  - **HTML:** `<a href="https://www.bouvet.se"> <svg style="width:20px; height:20px; border-radius:50%;"> <use xlink:href="/_/asset/no.bouvet.bouvet:0000019fcbc7d190/images/svg-sprites.svg#flag-swedish"></use> </svg> </a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `.main-header-small-item.main-header-link:nth-child(9) > a[href$="en.bouvet.no"]`
+  - **HTML:** `<a href="https://en.bouvet.no"> <svg style="width:20px; height:20px; border-radius:50%;"> <use xlink:href="/_/asset/no.bouvet.bouvet:0000019fcbc7d190/images/svg-sprites.svg#flag-british"></use> </svg> </a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `span > a[href="/"]`
+  - **HTML:** `<a href="/"></a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### All page content should be contained by landmarks
 
@@ -85,48 +109,183 @@
 
 #### Affected Elements:
 
-- `.cookie-panel-banner__title`
-- `.cookie-panel-banner__description`
-- `.main-header-small-item.main-header-link:nth-child(1)`
-- `.main-header-small-item.main-header-link:nth-child(2)`
-- `.main-header-small-item.main-header-link:nth-child(3)`
-- `.main-header-small-item.main-header-link:nth-child(4)`
-- `.main-header-small-item.main-header-link:nth-child(5)`
-- `.main-header-small-item.main-header-link:nth-child(6)`
-- `.main-header-small-item.main-header-link:nth-child(7)`
-- `#main-container > .part-container[data-portal-component-type="part"]:nth-child(1)`
-- `.part-container[data-portal-component-type="part"]:nth-child(2)`
-- `.layout-container__bottom-margin-large`
-- `.layout-container__no-gap`
-- `section`
-- `.section-bottom-space.container-flex-justify-center.util-flex-row`
-- `.part-container[data-portal-component-type="part"]:nth-child(7) > .util-flex-column-large.util-flex-row-small.collapsible__button`
-- `.block-bottom-space.util-flex-column`
-- `div[role="grid"] > .course-calendar-wrap-row\.is-head`
-- `div[role="grid"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-name`
-- `time[datetime="2026-10-13"]`
-- `div[role="grid"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
-- `.course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
-- `div[role="grid"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-name`
-- `time[datetime="2026-10-20"]`
-- `div[role="grid"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
-- `.course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
-- `div[role="grid"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-name`
-- `time[datetime="2026-10-22"]`
-- `div[role="grid"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
-- `.course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
-- `.course-calendar-wrap-row:nth-child(5) > .course-calendar-row.util-flex-row > .course-calendar-name`
-- `time[datetime="2026-10-23"]`
-- `.course-calendar-wrap-row:nth-child(5) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
-- `.course-calendar-wrap-row:nth-child(5) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
-- `.part-container[data-portal-component-type="part"]:nth-child(10)`
-- `.related-courses-inner.creme-light > .h3-styling`
-- `.related-courses-ingress`
-- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row\.is-head`
-- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-name`
-- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-date`
-- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-name`
-- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-date`
-- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-name`
-- `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-date`
-- `.layout-container[data-portal-component-type="layout"]:nth-child(12)`
+- **Target:** `.cookie-panel-banner__title`
+  - **HTML:** `<h2 class="cookie-panel-banner__title">Denne siden bruker informasjonskapsler (cookies)</h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.cookie-panel-banner__description`
+  - **HTML:** `<p class="cookie-panel-banner__description">På våre nettsider bruker vi informasjonskapsler (cookies) for å forbedre brukeropplevelsen, optimalisere vår nettside og til markedsføring. Ved å klikke godkjenn, godtar du vår bruk av disse info…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.main-header-small-item.main-header-link:nth-child(1)`
+  - **HTML:** `<div class="main-header-small-item main-header-link"> <a href="/vi-jobber-med">Vi jobber med</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.main-header-small-item.main-header-link:nth-child(2)`
+  - **HTML:** `<div class="main-header-small-item main-header-link"> <a href="/bli-en-av-oss">Bli en av oss</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.main-header-small-item.main-header-link:nth-child(3)`
+  - **HTML:** `<div class="main-header-small-item main-header-link"> <a href="/bouvet-deler">Bouvet deler</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.main-header-small-item.main-header-link:nth-child(4)`
+  - **HTML:** `<div class="main-header-small-item main-header-link"> <a href="/investor">Investor</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.main-header-small-item.main-header-link:nth-child(5)`
+  - **HTML:** `<div class="main-header-small-item main-header-link"> <a href="/kurs">Kurs</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.main-header-small-item.main-header-link:nth-child(6)`
+  - **HTML:** `<div class="main-header-small-item main-header-link"> <a href="/om-bouvet">Om oss</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.main-header-small-item.main-header-link:nth-child(7)`
+  - **HTML:** `<div class="main-header-small-item main-header-link"> <a title="min side" href="https://minside.bouvet.no" target="_self">Min Side</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#main-container > .part-container[data-portal-component-type="part"]:nth-child(1)`
+  - **HTML:** `<div data-portal-component-type="part" class="part-container">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.part-container[data-portal-component-type="part"]:nth-child(2)`
+  - **HTML:** `<div data-portal-component-type="part" class="part-container">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.layout-container__bottom-margin-large`
+  - **HTML:** `<div data-portal-component-type="layout" class="layout-container layout-container__bottom-margin-large">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.layout-container__no-gap`
+  - **HTML:** `<div data-portal-component-type="layout" class="layout-container layout-container__no-gap">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `section`
+  - **HTML:** `<section data-portal-component-type="part">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.section-bottom-space.container-flex-justify-center.util-flex-row`
+  - **HTML:** `<div class="container-flex-justify-center util-flex-row section-bottom-space">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.part-container[data-portal-component-type="part"]:nth-child(7) > .util-flex-column-large.util-flex-row-small.collapsible__button`
+  - **HTML:** `<div class="util-flex-column-large util-flex-row-small container-flex-justify-center collapsible__button"> <a aria-label="Besøk bloggen vår" class="button-style button-primary" href="/bouvet-deler"> <span>Besøk bloggen vår</span> </a> </di…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.block-bottom-space.util-flex-column`
+  - **HTML:** `<div class="util-flex-column block-bottom-space"> <h2 class="h3-styling block-bottom-space">Kommende frokostseminarer:</h2> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[role="grid"] > .course-calendar-wrap-row\.is-head`
+  - **HTML:** `<div class="course-calendar-wrap-row.is-head">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[role="grid"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-name`
+  - **HTML:** `<span class="course-calendar-name">Hvordan skape fremdrift i komplekse utfordringer</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `time[datetime="2026-10-13"]`
+  - **HTML:** `<time datetime="2026-10-13">13. okt.</time>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[role="grid"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
+  - **HTML:** `<span class="course-calendar-main-category">Frokostseminarer</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
+  - **HTML:** `<span class="course-calendar-sub-category">Bergen</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[role="grid"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-name`
+  - **HTML:** `<span class="course-calendar-name">Når AI får utføre, ikke bare svare</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `time[datetime="2026-10-20"]`
+  - **HTML:** `<time datetime="2026-10-20">20. okt.</time>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[role="grid"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
+  - **HTML:** `<span class="course-calendar-main-category">Frokostseminarer</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
+  - **HTML:** `<span class="course-calendar-sub-category">Haugesund</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[role="grid"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-name`
+  - **HTML:** `<span class="course-calendar-name">AI–agentene endrer spillereglene i Fabric og Power Platformen</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `time[datetime="2026-10-22"]`
+  - **HTML:** `<time datetime="2026-10-22">22. okt.</time>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[role="grid"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
+  - **HTML:** `<span class="course-calendar-main-category">Frokostseminarer</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
+  - **HTML:** `<span class="course-calendar-sub-category">Stavanger</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.course-calendar-wrap-row:nth-child(5) > .course-calendar-row.util-flex-row > .course-calendar-name`
+  - **HTML:** `<span class="course-calendar-name">Fra trusselbilde til trygge skyvalg: Hvilket handlingsrom trenger vi? </span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `time[datetime="2026-10-23"]`
+  - **HTML:** `<time datetime="2026-10-23">23. okt.</time>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.course-calendar-wrap-row:nth-child(5) > .course-calendar-row.util-flex-row > .course-calendar-main-category`
+  - **HTML:** `<span class="course-calendar-main-category">Frokostseminarer</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.course-calendar-wrap-row:nth-child(5) > .course-calendar-row.util-flex-row > .course-calendar-sub-category`
+  - **HTML:** `<span class="course-calendar-sub-category">Quben, Nymoens Torg 6-8, Kongsberg </span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.part-container[data-portal-component-type="part"]:nth-child(10)`
+  - **HTML:** `<div data-portal-component-type="part" class="part-container">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.related-courses-inner.creme-light > .h3-styling`
+  - **HTML:** `<h2 class="h3-styling">Lyst til å lære noe nytt? Se våre kurs:</h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.related-courses-ingress`
+  - **HTML:** `<div class="related-courses-ingress"> <p>Verden kan se annerledes ut fra skolebenken enn fra kontorpulten. Vi gir deg det beste av begge verdener. Hos Bouvet Kurs blir du faglig oppdatert av dyktige instruktører med lang praktisk og teoret…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row\.is-head`
+  - **HTML:** `<div class="course-calendar-wrap-row.is-head">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-name`
+  - **HTML:** `<span class="course-calendar-name">AZ-700 Designing and Implementing Microsoft Azure Networking Solutions</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(2) > .course-calendar-row.util-flex-row > .course-calendar-date`
+  - **HTML:** `<span class="course-calendar-date">5. okt.</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-name`
+  - **HTML:** `<span class="course-calendar-name">DP-700 Microsoft Fabric Data Engineer</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(3) > .course-calendar-row.util-flex-row > .course-calendar-date`
+  - **HTML:** `<span class="course-calendar-date">5. okt.</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-name`
+  - **HTML:** `<span class="course-calendar-name">Online kurs: JavaScript Grunnkurs</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.container-flex-justify-center > .course-calendar > .course-calendar-wrap[data-wrap-cols="true"][data-wrap-rows="true"] > .course-calendar-wrap-row:nth-child(4) > .course-calendar-row.util-flex-row > .course-calendar-date`
+  - **HTML:** `<span class="course-calendar-date">5. okt.</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.layout-container[data-portal-component-type="layout"]:nth-child(12)`
+  - **HTML:** `<div data-portal-component-type="layout" class="layout-container">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `img[alt="Sør-Varanger kommune"]`
+- **Target:** `img[alt="Sør-Varanger kommune"]`
+  - **HTML:** `<img alt="Sør-Varanger kommune" src="/handlers/bv.ashx/i42c0b4c0-5955-43a1-8861-4d6d4dbcb740/logo-svk-vector-1.svg">`
+  - **Failure summary:** Fix all of the following: Element contains <img> element with alt text that duplicates existing text
+

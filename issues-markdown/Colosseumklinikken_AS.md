@@ -17,8 +17,14 @@
 
 #### Affected Elements:
 
-- `.random-specialists-block__specialist:nth-child(3) > .random-specialists-block__link > .random-specialists-block__specialist-info > .random-specialists-block__name`
-- `.random-specialists-block__specialist:nth-child(3) > .random-specialists-block__link > .random-specialists-block__specialist-info > .random-specialists-block__position`
+- **Target:** `.random-specialists-block__specialist:nth-child(3) > .random-specialists-block__link > .random-specialists-block__specialist-info > .random-specialists-block__name`
+  - **HTML:** `<span class="random-specialists-block__name">Paul K. Sæle</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 1.64 (foreground color: #c2b7bc, background color: #f5eadf, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `.random-specialists-block__specialist:nth-child(3) > .random-specialists-block__link > .random-specialists-block__specialist-info > .random-specialists-block__position`
+  - **HTML:** `<span class="random-specialists-block__position">Spesialist i Kjeveortopedi</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 1.64 (foreground color: #c2b7bc, background color: #f5eadf, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
+
 
 ### All page content should be contained by landmarks
 
@@ -31,4 +37,7 @@
 
 #### Affected Elements:
 
-- `.bottom-panel`
+- **Target:** `.bottom-panel`
+  - **HTML:** `<div class="bottom-panel" style=""><div class="bottom-panel__wrapper wrapper"><a class="bottom-panel__link button" href="/klinikker/">Finn klinikk</a><a href="https://minside.colosseumtannlege.no/bestilltime/" rel="noopener noreferrer" cla…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

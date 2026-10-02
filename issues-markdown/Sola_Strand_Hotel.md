@@ -17,8 +17,14 @@
 
 #### Affected Elements:
 
-- `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video.ready, body`
-- `div[data-config-url="https://vimeo.com/1043637275"] > div > .background-video.ready, body`
+- **Target:** `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video.ready, body`
+  - **HTML:** `<body role="presentation" class="vp-center">`
+  - **Failure summary:** Fix any of the following: ARIA role presentation is not allowed for given element
+
+- **Target:** `div[data-config-url="https://vimeo.com/1043637275"] > div > .background-video.ready, body`
+  - **HTML:** `<body role="presentation" class="vp-center">`
+  - **Failure summary:** Fix any of the following: ARIA role presentation is not allowed for given element
+
 
 ### Certain ARIA roles must contain particular children
 
@@ -31,7 +37,10 @@
 
 #### Affected Elements:
 
-- `.header-display-desktop > .header-actions.header-actions--right > .language-picker-desktop[aria-controls="language-picker-menu"][aria-label="language picker"]`
+- **Target:** `.header-display-desktop > .header-actions.header-actions--right > .language-picker-desktop[aria-controls="language-picker-menu"][aria-label="language picker"]`
+  - **HTML:** `<div aria-controls="language-picker-menu" aria-expanded="false" aria-label="language picker" class="language-picker language-picker-desktop" id="multilingual-language-picker-desktop" role="listbox" tabindex="-1">`
+  - **Failure summary:** Fix any of the following: Required ARIA children role not present: group, option
+
 
 ### Frames with focusable content must not have tabindex=-1
 
@@ -44,7 +53,10 @@
 
 #### Affected Elements:
 
-- `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video.ready, html`
+- **Target:** `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video.ready, html`
+  - **HTML:** `<html lang="en">`
+  - **Failure summary:** Fix any of the following: Element has focusable descendants
+
 
 ### Heading levels should only increase by one
 
@@ -57,7 +69,10 @@
 
 #### Affected Elements:
 
-- `h4`
+- **Target:** `h4`
+  - **HTML:** `<h4 style="text-align:center;white-space:pre-wrap;">Sola Strand Hotel</h4>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -70,4 +85,7 @@
 
 #### Affected Elements:
 
-- `.header-display-desktop > .header-title-nav-wrapper > .header-nav > .header-nav-wrapper > .header-nav-list`
+- **Target:** `.header-display-desktop > .header-title-nav-wrapper > .header-nav > .header-nav-wrapper > .header-nav-list`
+  - **HTML:** `<nav class="header-nav-list">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+

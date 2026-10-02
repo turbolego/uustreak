@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `section:nth-child(6) > .teaser-section__header > .teaser-section__heading`
+- **Target:** `section:nth-child(6) > .teaser-section__header > .teaser-section__heading`
+  - **HTML:** `<h2 class="teaser-section__heading"></h2>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
 
 ### Heading levels should only increase by one
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `.story-teaser--big-campaign > .story-teaser__content > .story-teaser__heading.font-h2`
+- **Target:** `.story-teaser--big-campaign > .story-teaser__content > .story-teaser__heading.font-h2`
+  - **HTML:** `<h3 class="story-teaser__heading font-h2"> <a href="/tilbud/hosttilbud/" class="story-teaser__link">Nyt høstferien med 20% rabatt</a> </h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Document should not have more than one banner landmark
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" class="coi-banner-properties" role="banner" data-testid="coi-banner__overlay" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -56,4 +65,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" class="coi-banner-properties" role="banner" data-testid="coi-banner__overlay" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+

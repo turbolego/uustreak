@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `#\36 95da8d5-f900-4002-8f78-f932a9211980`
+- **Target:** `#\36 95da8d5-f900-4002-8f78-f932a9211980`
+  - **HTML:** `<div aria-invalid="false" aria-required="true" class="Form__Element FormChoice ValidationRequired" data-f-element-name="__field_49230" data-f-type="choice" id="695da8d5-f900-4002-8f78-f932a9211980" required="" title="Jeg har lest personver…`
+  - **Failure summary:** Fix all of the following: ARIA attribute is not allowed: aria-required="true"
+
 
 ### ARIA role should be appropriate for the element
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `#declineButton`
+- **Target:** `#declineButton`
+  - **HTML:** `<button tabindex="0" onclick="CookieInformation.declineAllCategories()" aria-label="KUN NØDVENDIGE" id="declineButton" class="coi-banner__decline" role="alert" aria-atomic="true" style="display: flex;">KUN NØDVENDIGE</button>`
+  - **Failure summary:** Fix any of the following: ARIA role alert is not allowed for given element
+
 
 ### Document should not have more than one banner landmark
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -56,4 +65,7 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+

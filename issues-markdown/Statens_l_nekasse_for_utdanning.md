@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.c-aksjonsfelt:nth-child(1) > .c-aksjonsfelt-kolonne:nth-child(3) > .c-aksjonsfelt__h3`
+- **Target:** `.c-aksjonsfelt:nth-child(1) > .c-aksjonsfelt-kolonne:nth-child(3) > .c-aksjonsfelt__h3`
+  - **HTML:** `<h3 class="c-aksjonsfelt__h3"></h3>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
 
 ### All page content should be contained by landmarks
 
@@ -30,5 +33,11 @@
 
 #### Affected Elements:
 
-- `.MuiCardContent-root > div:nth-child(1)`
-- `.MuiCardContent-root > div:nth-child(3)`
+- **Target:** `.MuiCardContent-root > div:nth-child(1)`
+  - **HTML:** `<div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.MuiCardContent-root > div:nth-child(3)`
+  - **HTML:** `<div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

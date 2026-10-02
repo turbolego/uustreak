@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `#block-languageswitcher`
+- **Target:** `#block-languageswitcher`
+  - **HTML:** `<div id="block-languageswitcher" role="navigation" class="block language-switcher-language-url">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+

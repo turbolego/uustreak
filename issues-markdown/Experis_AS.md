@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `#onetrust-banner-sdk`
+- **Target:** `#onetrust-banner-sdk`
+  - **HTML:** `<div id="onetrust-banner-sdk" class="otCenterRounded default ot-wo-title vertical-align-content" tabindex="0" aria-label="Personvern" aria-describedby="onetrust-policy-text">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

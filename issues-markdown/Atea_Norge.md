@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `#videoLoop, .ytmVideoInfoVideoTitle`
+- **Target:** `#videoLoop, .ytmVideoInfoVideoTitle`
+  - **HTML:** `<a class="ytmVideoInfoVideoTitle" aria-level="2" href="https://www.youtube.com/watch?v=JNEQt62stg8"><span class="ytAttributedStringHost ytmVideoInfoLink ytAttributedStringWhiteSpaceNoWrap" style="">Vi står skulder ved skulder med IT-folka<…`
+  - **Failure summary:** Fix all of the following: ARIA attribute is not allowed: aria-level="2"
+
 
 ### Elements must only use permitted ARIA attributes
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `#videoLoop, #movie_player`
+- **Target:** `#videoLoop, #movie_player`
+  - **HTML:** `<div class="html5-video-player y..." tabindex="" id="movie_player" data-version="/s/player/8ab5c328/p..." aria-label="YouTube-videospiller">`
+  - **Failure summary:** Fix all of the following: aria-label attribute cannot be used on a div with no valid role attribute.
+
 
 ### Buttons must have discernible text
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `#videoLoop, .ytmVideoInfoChannelAvatar`
+- **Target:** `#videoLoop, .ytmVideoInfoChannelAvatar`
+  - **HTML:** `<button class="ytmVideoInfoLink ytmVideoInfoChannelAvatar"><img class="ytCoreImageHost ytmVideoInfoChannelLogo ytCoreImageFillParentHeight ytCoreImageFillParentWidth ytCoreImageContentModeScaleAspectFill" alt="thumbnail-image" style="backg…`
+  - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
+
 
 ### Form elements should have a visible label
 
@@ -56,7 +65,10 @@
 
 #### Affected Elements:
 
-- `.mega-menu > .ng-pristine.ng-valid[method="get"] > .search-bar > .container > .search-query-container > .search-query[title="Søk på Atea"][name="q"]`
+- **Target:** `.mega-menu > .ng-pristine.ng-valid[method="get"] > .search-bar > .container > .search-query-container > .search-query[title="Søk på Atea"][name="q"]`
+  - **HTML:** `<input type="text" title="Søk på Atea" name="q" class="search-query" placeholder="Søk etter artikler og tjenester.">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
 
 ### Banner landmark should not be contained in another landmark
 
@@ -69,7 +81,10 @@
 
 #### Affected Elements:
 
-- `.hero-section`
+- **Target:** `.hero-section`
+  - **HTML:** `<div class="hero-section" role="banner">`
+  - **Failure summary:** Fix any of the following: The banner landmark is contained in another landmark.
+
 
 ### Main landmark should not be contained in another landmark
 
@@ -82,7 +97,10 @@
 
 #### Affected Elements:
 
-- `.hero-start-content`
+- **Target:** `.hero-start-content`
+  - **HTML:** `<div class="container hero-start-content" role="main"> <div class="content-container"> <h1 role="heading" aria-level="1" class="default"> Vi bygger Norge med IT </h1> </div> </div>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
 
 ### Document should not have more than one main landmark
 
@@ -95,7 +113,10 @@
 
 #### Affected Elements:
 
-- `.page-body`
+- **Target:** `.page-body`
+  - **HTML:** `<div class="page-body" role="main" aria-label="Atea - Norges største IT-selskap">`
+  - **Failure summary:** Fix any of the following: Document has more than one main landmark
+
 
 ### All page content should be contained by landmarks
 
@@ -108,4 +129,7 @@
 
 #### Affected Elements:
 
-- `.chat-button`
+- **Target:** `.chat-button`
+  - **HTML:** `<a class="chat-button" aria-label="Open chat" target="_blank" href="https://chat.atea.com/?countryInstance=no&languageCode=no&nickName=&chatId=&variables.Name=&variables.Email=&variables.Customer=%20()&variables.Lang=no&variables.OrgNumber…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

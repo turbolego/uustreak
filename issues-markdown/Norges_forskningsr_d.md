@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `#declineButton`
+- **Target:** `#declineButton`
+  - **HTML:** `<button tabindex="0" onclick="CookieInformation.declineAllCategories()" aria-label="Avvis" id="declineButton" class="coi-banner__decline" role="alert" aria-atomic="true" style="display: flex;"> Avvis </button>`
+  - **Failure summary:** Fix any of the following: ARIA role alert is not allowed for given element
+
 
 ### ARIA attributes must conform to valid values
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `.message-global--open-button`
+- **Target:** `.message-global--open-button`
+  - **HTML:** `<button aria-label="Skjul" aria-expanded="true" aria-controls="MG_a1c4c47d-4ee8-4d49-abc4-cd70ab80d189" type="button" class="button message-global--open-button button--has-children">`
+  - **Failure summary:** Fix all of the following: Invalid ARIA attribute value: aria-controls="MG_a1c4c47d-4ee8-4d49-abc4-cd70ab80d189"
+
 
 ### Heading levels should only increase by one
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `.link-with-text:nth-child(1) > h3`
+- **Target:** `.link-with-text:nth-child(1) > h3`
+  - **HTML:** `<h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Document should not have more than one banner landmark
 
@@ -56,7 +65,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -69,8 +81,14 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
-- `.tab-menu`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+- **Target:** `.tab-menu`
+  - **HTML:** `<nav class="tab-menu">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### All page content should be contained by landmarks
 
@@ -83,4 +101,7 @@
 
 #### Affected Elements:
 
-- `.message-global--collapse`
+- **Target:** `.message-global--collapse`
+  - **HTML:** `<div class="message-global--collapse message-global--collapse--use-intrinsic-height">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

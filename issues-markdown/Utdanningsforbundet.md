@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `#declineButton`
+- **Target:** `#declineButton`
+  - **HTML:** `<button tabindex="0" onclick="CookieInformation.declineAllCategories()" aria-label="Bare nødvendige" id="declineButton" class="coi-banner__decline" role="alert" aria-atomic="true" style="display: flex;">Bare nødvendige</button>`
+  - **Failure summary:** Fix any of the following: ARIA role alert is not allowed for given element
+
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `.HeaderPromotionBlock_headerPromotionLinks___zMeq > .PrimaryCTALink_center__UtgTK.PrimaryCTALink_primaryCTALink__1eh0T[target=""]`
+- **Target:** `.HeaderPromotionBlock_headerPromotionLinks___zMeq > .PrimaryCTALink_center__UtgTK.PrimaryCTALink_primaryCTALink__1eh0T[target=""]`
+  - **HTML:** `<a target="" class="PrimaryCTALink_primaryCTALink__1eh0T PrimaryCTALink_center__UtgTK" href="/om-medlemskapet/pris-betingelser/innmelding">Bli medlem</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.38 (foreground color: #ffffff, background color: #008b48, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
 
 ### Frames must have an accessible name
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `iframe[frameborder="0"]`
+- **Target:** `iframe[frameborder="0"]`
+  - **HTML:** `<iframe src="https://embed.acast.com/5ca73b1ee061b6670b629d28/6aa1313799455f9a93fa2d3b?cover=false&amp;bgColor=f0f0f0" frameborder="0" width="100%" height="190px"></iframe>`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+
 
 ### Document should not have more than one banner landmark
 
@@ -56,7 +65,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -69,9 +81,18 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
-- `main`
-- `.BlockWrapper_span-3__H0f6B[data-display-option="full"]:nth-child(1) > div > .LocalNavigationTopLayout_localNavigationTop__I8NPN[aria-label="Lokal navigasjon"]`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+- **Target:** `main`
+  - **HTML:** `<main>`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+- **Target:** `.BlockWrapper_span-3__H0f6B[data-display-option="full"]:nth-child(1) > div > .LocalNavigationTopLayout_localNavigationTop__I8NPN[aria-label="Lokal navigasjon"]`
+  - **HTML:** `<nav aria-label="Lokal navigasjon" class="LocalNavigationTopLayout_localNavigationTop__I8NPN">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### [role="img"] and [role="image"] elements must have alternative text
 
@@ -84,5 +105,11 @@
 
 #### Affected Elements:
 
-- `iframe[frameborder="0"], .ShareControl__ShareIcon-sc-1pwe6vd-0`
-- `iframe[frameborder="0"], .SubscribeLink__PlusIcon-sc-q4x3v7-0`
+- **Target:** `iframe[frameborder="0"], .ShareControl__ShareIcon-sc-1pwe6vd-0`
+  - **HTML:** `<div role="img" class="ShareControl__ShareIcon-sc-1pwe6vd-0 jwZxjc">`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+- **Target:** `iframe[frameborder="0"], .SubscribeLink__PlusIcon-sc-q4x3v7-0`
+  - **HTML:** `<div role="img" class="SubscribeLink__PlusIcon-sc-q4x3v7-0 kWhSaR">`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+

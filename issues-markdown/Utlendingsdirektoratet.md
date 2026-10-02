@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `#login-link`
+- **Target:** `#login-link`
+  - **HTML:** `<a id="login-link" href="/min-side/" role="img" aria-label="Logg inn"><span class="material-symbols-outlined login-icon" aria-hidden="true">login</span>Logg inn</a>`
+  - **Failure summary:** Fix any of the following: ARIA role img is not allowed for given element
+
 
 ### Form elements should have a visible label
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `#search`
+- **Target:** `#search`
+  - **HTML:** `<input accesskey="4" id="search" name="searchQuery" type="search" class="searchField" data-lang="nb" title="Skriv inn hva du vil søke på" placeholder="Søk">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
 
 ### Page should contain a level-one heading
 
@@ -43,4 +49,7 @@
 
 #### Affected Elements:
 
-- `html`
+- **Target:** `html`
+  - **HTML:** `<html class=" js csscolumns svg inlinesvg svgclippaths" lang="nb">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+

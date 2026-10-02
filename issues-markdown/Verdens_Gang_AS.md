@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `._mastheadSearch_1jvjx_142 > ._container_lzmb9_5._fillTertiary_lzmb9_16[action="https://www.vg.no/sok"] > input`
+- **Target:** `._mastheadSearch_1jvjx_142 > ._container_lzmb9_5._fillTertiary_lzmb9_16[action="https://www.vg.no/sok"] > input`
+  - **HTML:** `<input aria-label="Søk" auto-complete="off" class="_input_lzmb9_20 button-label-large" name="q" placeholder="Søk" type="search">`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.83 (foreground color: #f1bfbf, background color: #c50000, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
 
 ### All page content should be contained by landmarks
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `.sch-datacontroller__text`
+- **Target:** `.sch-datacontroller__text`
+  - **HTML:** `<span class="sch-datacontroller__text">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
 
 ### <svg> elements with an img or image role must have alternative text
 
@@ -43,4 +49,7 @@
 
 #### Affected Elements:
 
-- `svg[viewBox="0 0 90 45"]`
+- **Target:** `svg[viewBox="0 0 90 45"]`
+  - **HTML:** `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 90 45" role="img" style="flex-shrink: 0; height: var(--graphic-size, var(--space-l)); width: auto;">`
+  - **Failure summary:** Fix any of the following: Element has no child that is a title aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element ha…
+

@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### All page content should be contained by landmarks
 
@@ -43,4 +49,7 @@
 
 #### Affected Elements:
 
-- `.skiplink`
+- **Target:** `.skiplink`
+  - **HTML:** `<a href="#main" class="skiplink"><span>Hopp til hovedinnhold</span></a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

@@ -17,9 +17,18 @@
 
 #### Affected Elements:
 
-- `#splide01-slide01`
-- `#splide01-slide02`
-- `#splide01-slide03`
+- **Target:** `#splide01-slide01`
+  - **HTML:** `<li class="splide__slide is-active is-visible" id="splide01-slide01" role="group" aria-roledescription="slide" aria-label="1 of 7" style="margin-right: var(--spacing-md);">`
+  - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
+
+- **Target:** `#splide01-slide02`
+  - **HTML:** `<li class="splide__slide is-visible is-next" id="splide01-slide02" role="group" aria-roledescription="slide" aria-label="2 of 7" style="margin-right: var(--spacing-md);">`
+  - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
+
+- **Target:** `#splide01-slide03`
+  - **HTML:** `<li class="splide__slide is-visible" id="splide01-slide03" role="group" aria-roledescription="slide" aria-label="3 of 7" style="margin-right: var(--spacing-md);">`
+  - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
+
 
 ### Buttons must have discernible text
 
@@ -32,7 +41,10 @@
 
 #### Affected Elements:
 
-- `#ppms_cm_close-popup`
+- **Target:** `#ppms_cm_close-popup`
+  - **HTML:** `<button class="ppms_cm_close_popup" id="ppms_cm_close-popup" data-disable-select="true">`
+  - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
+
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -45,7 +57,10 @@
 
 #### Affected Elements:
 
-- `#ppms_cm_footer__powered_by`
+- **Target:** `#ppms_cm_footer__powered_by`
+  - **HTML:** `<span class="ppms_cm_footer__powered_by" data-disable-select="true" id="ppms_cm_footer__powered_by">Powered by</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2.72 (foreground color: #999999, background color: #fafafa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -58,7 +73,10 @@
 
 #### Affected Elements:
 
-- `#site-header-nav`
+- **Target:** `#site-header-nav`
+  - **HTML:** `<nav id="site-header-nav" class="site-header-nav" aria-label="Toppmeny"> <ul id="menu-header" class="site-header-nav-menu"><li id="menu-item-12933" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12933"><a href="h…`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### Page should contain a level-one heading
 
@@ -71,7 +89,10 @@
 
 #### Affected Elements:
 
-- `html`
+- **Target:** `html`
+  - **HTML:** `<html lang="nb-NO">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+
 
 ### All page content should be contained by landmarks
 
@@ -84,8 +105,23 @@
 
 #### Affected Elements:
 
-- `#ppms_cm_language_select_btn_id`
-- `#ppms-c18a2ffc-ffc4-47c6-9836-19bde81ab6ad`
-- `#ppms-2297b320-e8ae-40e3-b640-c8f7a25a6f73`
-- `#popup-link`
-- `#ppms_cm_footer__powered_by`
+- **Target:** `#ppms_cm_language_select_btn_id`
+  - **HTML:** `<div class="ppms_cm_language_select_btn" id="ppms_cm_language_select_btn_id" data-type="customSelect" data-fixed-text="true" tabindex="0">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ppms-c18a2ffc-ffc4-47c6-9836-19bde81ab6ad`
+  - **HTML:** `<span class="ppms_cm_header1" id="ppms-c18a2ffc-ffc4-47c6-9836-19bde81ab6ad">Personvern på denne siden</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ppms-2297b320-e8ae-40e3-b640-c8f7a25a6f73`
+  - **HTML:** `<div class="ppms_cm_description_wrapper" id="ppms-2297b320-e8ae-40e3-b640-c8f7a25a6f73">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#popup-link`
+  - **HTML:** `<a class="ppms_cm_link" id="popup-link" href="https://www.uloba.no/om-uloba/personvernerklaering/">Personvernerklæring</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ppms_cm_footer__powered_by`
+  - **HTML:** `<span class="ppms_cm_footer__powered_by" data-disable-select="true" id="ppms_cm_footer__powered_by">Powered by</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

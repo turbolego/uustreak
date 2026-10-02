@@ -17,8 +17,23 @@
 
 #### Affected Elements:
 
-- `.split`
-- `.split > span`
-- `article:nth-child(1) > .description > .buttons > .edge-btn[aria-label=""]`
-- `article:nth-child(4) > .description > .buttons > .edge-btn[aria-label=""]`
-- `.wscrOk`
+- **Target:** `.split`
+  - **HTML:** `<a class="edge-btn split" href="https://www.rikstv.no/tv-pakker/" tabindex="0"> Velg TV-pakke <span>Fra 399,- /mnd</span> </a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.91 (foreground color: #ffffff, background color: #e94440, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `.split > span`
+  - **HTML:** `<span>Fra 399,- /mnd</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.91 (foreground color: #ffffff, background color: #e94440, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `article:nth-child(1) > .description > .buttons > .edge-btn[aria-label=""]`
+  - **HTML:** `<a class="edge-btn" href="https://www.rikstv.no/tv-pakker/" aria-label="">Sjekk pakkene våre her</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.91 (foreground color: #ffffff, background color: #e94440, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `article:nth-child(4) > .description > .buttons > .edge-btn[aria-label=""]`
+  - **HTML:** `<a class="edge-btn" href="https://www.rikstv.no/tv-pakker/" aria-label="">Se pakkene våre her</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.91 (foreground color: #ffffff, background color: #e94440, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `.wscrOk`
+  - **HTML:** `<a href="#" class="wscrOk" role="button">Godta alle</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.73 (foreground color: #ffffff, background color: #ef4642, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1
+

@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.linkArea.col-md-3.col-sm-6:nth-child(1) > h4`
+- **Target:** `.linkArea.col-md-3.col-sm-6:nth-child(1) > h4`
+  - **HTML:** `<h4>Våre produkter</h4>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Images must have alternative text
 
@@ -30,11 +33,26 @@
 
 #### Affected Elements:
 
-- `.footer__logo`
-- `.social-media__link__twitter`
-- `.social-media__link__fb`
-- `.social-media__link__linkedin`
-- `a[title="SKAGEN på Instagram"] > img`
+- **Target:** `.footer__logo`
+  - **HTML:** `<img src="/globalassets/skagen-funds/logos/skagen-logos/skagen_pos.svg" class="footer__logo">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `.social-media__link__twitter`
+  - **HTML:** `<img src="/Static/img/icons/X.svg" class="social-media__link__twitter">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `.social-media__link__fb`
+  - **HTML:** `<img src="/Static/img/icons/fb-svg.svg" class="social-media__link__fb">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `.social-media__link__linkedin`
+  - **HTML:** `<img src="/Static/img/icons/linkedin-svg.svg" class="social-media__link__linkedin">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `a[title="SKAGEN på Instagram"] > img`
+  - **HTML:** `<img src="/Static/img/icons/insta-svg.svg">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
 
 ### Links must have discernible text
 
@@ -47,9 +65,18 @@
 
 #### Affected Elements:
 
-- `.OfficeArea > a[href="/"]`
-- `a[href$="mailto:"]`
-- `.footer__part-of-storebrand > a`
+- **Target:** `.OfficeArea > a[href="/"]`
+  - **HTML:** `<a href="/"> <img src="/globalassets/skagen-funds/logos/skagen-logos/skagen_pos.svg" class="footer__logo"> </a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `a[href$="mailto:"]`
+  - **HTML:** `<a href="mailto:"></a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `.footer__part-of-storebrand > a`
+  - **HTML:** `<a href="https://www.storebrandam.com/no-NO/"> <img src="/globalassets/storebrand-asset-management/pictures/logos/part-of-storebrand_pos_rgb.svg" alt=""> </a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### All page content should be contained by landmarks
 
@@ -62,6 +89,15 @@
 
 #### Affected Elements:
 
-- `.disclaimerArea`
-- `h2[data-v-058a8992=""]`
-- `.text--gdpr`
+- **Target:** `.disclaimerArea`
+  - **HTML:** `<div class="disclaimerArea">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `h2[data-v-058a8992=""]`
+  - **HTML:** `<h2 data-v-058a8992="">Vi bruker cookies</h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.text--gdpr`
+  - **HTML:** `<div data-v-058a8992="" class="text--gdpr">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

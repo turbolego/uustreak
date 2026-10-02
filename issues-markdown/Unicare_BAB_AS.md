@@ -17,9 +17,18 @@
 
 #### Affected Elements:
 
-- `#declineButton`
-- `iframe[width="100%"], body`
-- `#splide01-slide01`
+- **Target:** `#declineButton`
+  - **HTML:** `<button tabindex="0" aria-label="Avvis alle" id="declineButton" class="coi-banner__decline" role="alert" aria-atomic="true" style="display: flex;">Avvis alle</button>`
+  - **Failure summary:** Fix any of the following: ARIA role alert is not allowed for given element
+
+- **Target:** `iframe[width="100%"], body`
+  - **HTML:** `<body role="presentation">`
+  - **Failure summary:** Fix any of the following: ARIA role presentation is not allowed for given element
+
+- **Target:** `#splide01-slide01`
+  - **HTML:** `<li class="splide__slide is-active is-visible" id="splide01-slide01" role="tabpanel" aria-roledescription="slide" aria-label="1 of 5" style="width: calc(100%);">`
+  - **Failure summary:** Fix any of the following: ARIA role tabpanel is not allowed for given element
+
 
 ### Frames must have an accessible name
 
@@ -32,7 +41,10 @@
 
 #### Affected Elements:
 
-- `iframe[width="100%"]`
+- **Target:** `iframe[width="100%"]`
+  - **HTML:** `<iframe src="//player.vimeo.com/video/857076555?app_id=122963&amp;loop=1&amp;mute=1&amp;background=1&amp;autoplay=1&amp;responsive=0&amp;controls=0&amp;api=1" width="100%" height="100%" allow="fullscreen" allowfullscreen=""> </iframe>`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+
 
 ### Heading levels should only increase by one
 
@@ -45,9 +57,18 @@
 
 #### Affected Elements:
 
-- `.inner-content.odd > h3`
-- `article[data-articleid="3024"] > a[target="_self"] > .card-body > h3[itemprop="headline"]`
-- `article[data-articleid="2334"] > a[target="_self"] > .card-body > h3`
+- **Target:** `.inner-content.odd > h3`
+  - **HTML:** `<h3><a href="https://unicare.no/forskning-og-utvikling/om-fou/" target="_self">Forskning og utvikling</a></h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `article[data-articleid="3024"] > a[target="_self"] > .card-body > h3[itemprop="headline"]`
+  - **HTML:** `<h3 itemprop="headline">Nye ESC-retningslinjer styrker hjerterehabiliteringen</h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `article[data-articleid="2334"] > a[target="_self"] > .card-body > h3`
+  - **HTML:** `<h3>Evaluering av AI-teknologi for journalføring i spesialisthelsetjenesten</h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Document should not have more than one banner landmark
 
@@ -60,7 +81,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -73,8 +97,14 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
-- `.nav-inline`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+- **Target:** `.nav-inline`
+  - **HTML:** `<nav class="tile-common standard-menu d-print-none nav-inline navbar-nav d-none d-lg-block single-mode">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### Links must have discernible text
 
@@ -87,7 +117,10 @@
 
 #### Affected Elements:
 
-- `.pause-button`
+- **Target:** `.pause-button`
+  - **HTML:** `<a href="#" class="pause-button">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### All page content should be contained by landmarks
 
@@ -100,5 +133,11 @@
 
 #### Affected Elements:
 
-- `#content-link`
-- `#coretrek-footer`
+- **Target:** `#content-link`
+  - **HTML:** `<div id="content-link" class="d-print-none"><a class="sr-only sr-only-focusable" href="#main-content">Til innhold</a></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#coretrek-footer`
+  - **HTML:** `<div id="coretrek-footer" class="d-print-none">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

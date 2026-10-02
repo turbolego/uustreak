@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `form`
+- **Target:** `form`
+  - **HTML:** `<form role="dialog" aria-modal="true" aria-describedby="userNotice-title" class="userNotice-banner">`
+  - **Failure summary:** Fix any of the following: ARIA role dialog is not allowed for given element
+
 
 ### ARIA dialog and alertdialog nodes should have an accessible name
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `form`
+- **Target:** `form`
+  - **HTML:** `<form role="dialog" aria-modal="true" aria-describedby="userNotice-title" class="userNotice-banner">`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
 
 ### All page content should be contained by landmarks
 
@@ -43,4 +49,7 @@
 
 #### Affected Elements:
 
-- `.skip`
+- **Target:** `.skip`
+  - **HTML:** `<div class="skip" aria-label="Gå til hovedinnhold"> <a class="skip-link" href="#main" id="skip-link">Gå til hovedinnhold</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

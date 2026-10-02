@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `#iFrameResizer0`
+- **Target:** `#iFrameResizer0`
+  - **HTML:** `<iframe src="//prokomresources.pr..." alt="aktivitetskalender" width="100%" id="iFrameResizer0" scrolling="no" style="overflow: hidden; mi...">`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+
 
 ### Heading levels should only increase by one
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `#portalframe1, div[data-itemid="38630"] > .custom-event-info > h4`
+- **Target:** `#portalframe1, div[data-itemid="38630"] > .custom-event-info > h4`
+  - **HTML:** `<h4>Administrasjonsutvalget og Formannskapet</h4>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Links must have discernible text
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `.border-bottom--1.line-height--27[href=""]`
+- **Target:** `.border-bottom--1.line-height--27[href=""]`
+  - **HTML:** `<a href="" class="text-green border-bottom--1 font-size--18 line-height--27 font-weight--600 font-family--inter"></a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### All page content should be contained by landmarks
 
@@ -56,8 +65,14 @@
 
 #### Affected Elements:
 
-- `.cc-header-container`
-- `.cc-text`
+- **Target:** `.cc-header-container`
+  - **HTML:** `<div class="cc-header-container"> <p class="cc-title">Vi bruker informasjonskapsler (cookies)</p> <div class="language-dropdown"><select><option value="no">Norsk</option><option value="en">English</option></select></div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.cc-text`
+  - **HTML:** `<p class="cc-text">Våre nettsider benytter informasjonskapsler (cookies) til sikkerhet, innbyggerfunksjonalitet, statistikk og analyse. Les om hvilke cookies vi bruker og hvordan vi administrerer de i erklæringen vår om personvern.</p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
 
 ### Select element must have an accessible name
 
@@ -70,4 +85,7 @@
 
 #### Affected Elements:
 
-- `.language-dropdown > select`
+- **Target:** `.language-dropdown > select`
+  - **HTML:** `<select><option value="no">Norsk</option><option value="en">English</option></select>`
+  - **Failure summary:** Fix any of the following: Element does not have an implicit (wrapped) <label> Element does not have an explicit <label> aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do n…
+

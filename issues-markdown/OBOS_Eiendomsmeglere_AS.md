@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `.focus\:not-sr-only`
+- **Target:** `.focus\:not-sr-only`
+  - **HTML:** `<a href="#main" class="sr-only focus:not-sr-only">Hopp til innhold</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

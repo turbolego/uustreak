@@ -17,9 +17,18 @@
 
 #### Affected Elements:
 
-- `#cookie_cat_functional`
-- `#cookie_cat_statistic`
-- `#cookie_cat_marketing`
+- **Target:** `#cookie_cat_functional`
+  - **HTML:** `<input class="coi__checkbox" tabindex="0" data-index="0" name="cookie_cat_functional" id="cookie_cat_functional" type="checkbox" title="Funksjonelle" onclick="CookieInformation.changeCategoryConsentDecision('cookie_cat_functional')">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
+- **Target:** `#cookie_cat_statistic`
+  - **HTML:** `<input class="coi__checkbox" tabindex="0" data-index="0" name="cookie_cat_statistic" id="cookie_cat_statistic" type="checkbox" title="Statistiske" onclick="CookieInformation.changeCategoryConsentDecision('cookie_cat_statistic')">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
+- **Target:** `#cookie_cat_marketing`
+  - **HTML:** `<input class="coi__checkbox" tabindex="0" data-index="0" name="cookie_cat_marketing" id="cookie_cat_marketing" type="checkbox" title="Markedsføring" onclick="CookieInformation.changeCategoryConsentDecision('cookie_cat_marketing')">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
 
 ### Main landmark should not be contained in another landmark
 
@@ -32,7 +41,10 @@
 
 #### Affected Elements:
 
-- `#prsCkyM1n8k > main`
+- **Target:** `#prsCkyM1n8k > main`
+  - **HTML:** `<main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
 
 ### Document should not have more than one banner landmark
 
@@ -45,7 +57,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Document should not have more than one main landmark
 
@@ -58,7 +73,10 @@
 
 #### Affected Elements:
 
-- `#main`
+- **Target:** `#main`
+  - **HTML:** `<main id="main" class="grow w-full eid-container ">`
+  - **Failure summary:** Fix any of the following: Document has more than one main landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -71,8 +89,14 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
-- `#main`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+- **Target:** `#main`
+  - **HTML:** `<main id="main" class="grow w-full eid-container ">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### Elements should not have tabindex greater than zero
 
@@ -85,4 +109,7 @@
 
 #### Affected Elements:
 
-- `a[href$="#main"]`
+- **Target:** `a[href$="#main"]`
+  - **HTML:** `<a class="max-w-full min-w-0 btn btn--primary btn-md" href="#main" tabindex="1" type="button"><span>Gå til hovedinnhold</span></a>`
+  - **Failure summary:** Fix any of the following: Element has a tabindex greater than 0
+

@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.skip-link`
+- **Target:** `.skip-link`
+  - **HTML:** `<a class="skip-link screen-reader-text" href="#content" role="navigation" title="Hopp til hovedinnhold">Hopp til hovedinnhold</a>`
+  - **Failure summary:** Fix any of the following: ARIA role navigation is not allowed for given element
+
 
 ### Heading levels should only increase by one
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `h6`
+- **Target:** `h6`
+  - **HTML:** `<h6 class="lib-link__tagline">Les også</h6>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Images must have alternative text
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `.lib-link__link[rel=""] > .lib-link__img-wrap > .lib-link__featured-image[decoding="async"]`
+- **Target:** `.lib-link__link[rel=""] > .lib-link__img-wrap > .lib-link__featured-image[decoding="async"]`
+  - **HTML:** `<img decoding="async" class="lib-link__featured-image" src="https://www.reddbarna.no/content/uploads/2023/05/TVA_mobil.png">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
 
 ### Page should contain a level-one heading
 
@@ -56,7 +65,10 @@
 
 #### Affected Elements:
 
-- `html`
+- **Target:** `html`
+  - **HTML:** `<html lang="nb-NO" class="" style="--rb-theme-header-height: 116px;">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+
 
 ### Elements should not have tabindex greater than zero
 
@@ -69,11 +81,35 @@
 
 #### Affected Elements:
 
-- `#give-amount`
-- `.give-btn-level-0`
-- `.give-btn-level-1`
-- `.give-btn-level-2`
-- `.give-btn-level-custom`
-- `#frequency-single`
-- `#frequency-recurring`
-- `.give-step-one-buttons > .give-submit.advance-btn.give-btn`
+- **Target:** `#give-amount`
+  - **HTML:** `<input class="give-text-input give-amount-top" id="give-amount" name="give-amount" type="text" inputmode="numeric" placeholder="" value="275" autocomplete="off" tabindex="10">`
+  - **Failure summary:** Fix any of the following: Element has a tabindex greater than 0
+
+- **Target:** `.give-btn-level-0`
+  - **HTML:** `<button type="button" data-price-id="0" class="give-donation-level-btn give-btn give-btn-level-0 " value="200" data-default="0" tabindex="3">200 kr.</button>`
+  - **Failure summary:** Fix any of the following: Element has a tabindex greater than 0
+
+- **Target:** `.give-btn-level-1`
+  - **HTML:** `<button type="button" data-price-id="1" class="give-donation-level-btn give-btn give-btn-level-1 give-default-level" value="275" data-default="1" tabindex="4" aria-pressed="true">275 kr.</button>`
+  - **Failure summary:** Fix any of the following: Element has a tabindex greater than 0
+
+- **Target:** `.give-btn-level-2`
+  - **HTML:** `<button type="button" data-price-id="2" class="give-donation-level-btn give-btn give-btn-level-2 " value="350" data-default="0" tabindex="5">350 kr.</button>`
+  - **Failure summary:** Fix any of the following: Element has a tabindex greater than 0
+
+- **Target:** `.give-btn-level-custom`
+  - **HTML:** `<button type="button" data-price-id="custom" class="give-donation-level-btn give-btn give-btn-level-custom" value="custom" tabindex="9">Velg selv</button>`
+  - **Failure summary:** Fix any of the following: Element has a tabindex greater than 0
+
+- **Target:** `#frequency-single`
+  - **HTML:** `<input name="dekode_give_donation_frequency" id="frequency-single" type="radio" value="single" tabindex="2">`
+  - **Failure summary:** Fix any of the following: Element has a tabindex greater than 0
+
+- **Target:** `#frequency-recurring`
+  - **HTML:** `<input name="dekode_give_donation_frequency" id="frequency-recurring" type="radio" value="recurring" checked="checked" tabindex="2">`
+  - **Failure summary:** Fix any of the following: Element has a tabindex greater than 0
+
+- **Target:** `.give-step-one-buttons > .give-submit.advance-btn.give-btn`
+  - **HTML:** `<button class="give-btn give-submit advance-btn" tabindex="11">Gi med avtalegiro</button>`
+  - **Failure summary:** Fix any of the following: Element has a tabindex greater than 0
+

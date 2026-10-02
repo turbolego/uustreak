@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `div[role="complementary"]`
+- **Target:** `div[role="complementary"]`
+  - **HTML:** `<div class="row" role="complementary"> <div class="col wider"> <div> <div></div> </div> </div> </div>`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### Page should contain a level-one heading
 
@@ -30,4 +33,7 @@
 
 #### Affected Elements:
 
-- `#content`
+- **Target:** `#content`
+  - **HTML:** `<html lang="nb" id="content">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+

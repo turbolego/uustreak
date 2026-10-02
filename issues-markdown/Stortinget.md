@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `.site-layout__visually-hidden-h1`
+- **Target:** `.site-layout__visually-hidden-h1`
+  - **HTML:** `<h1 class="site-layout__visually-hidden-h1">Stortinget.no</h1>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

@@ -17,14 +17,38 @@
 
 #### Affected Elements:
 
-- `.cmp-dual-slider__left-wrapper > .cmp-dual-slider__slide > .swiper-wrapper.cmp-dual-slider__slide-wrapper > .swiper-slide.cmp-dual-slider__slide-item[role="group"]:nth-child(1)`
-- `#-target-2-1`
-- `#-target-3-1`
-- `#-target-4-1`
-- `.cmp-dual-slider__right-wrapper > .cmp-dual-slider__slide > .swiper-wrapper.cmp-dual-slider__slide-wrapper > .swiper-slide.cmp-dual-slider__slide-item[role="group"]:nth-child(1)`
-- `#-target-2-2`
-- `#-target-3-2`
-- `#-target-4-2`
+- **Target:** `.cmp-dual-slider__left-wrapper > .cmp-dual-slider__slide > .swiper-wrapper.cmp-dual-slider__slide-wrapper > .swiper-slide.cmp-dual-slider__slide-item[role="group"]:nth-child(1)`
+  - **HTML:** `<li id="-target-1-1" class="swiper-slide cmp-dual-slider__slide-item" role="group">`
+  - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
+
+- **Target:** `#-target-2-1`
+  - **HTML:** `<li id="-target-2-1" class="swiper-slide cmp-dual-slider__slide-item" role="group">`
+  - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
+
+- **Target:** `#-target-3-1`
+  - **HTML:** `<li id="-target-3-1" class="swiper-slide cmp-dual-slider__slide-item" role="group">`
+  - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
+
+- **Target:** `#-target-4-1`
+  - **HTML:** `<li id="-target-4-1" class="swiper-slide cmp-dual-slider__slide-item" role="group">`
+  - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
+
+- **Target:** `.cmp-dual-slider__right-wrapper > .cmp-dual-slider__slide > .swiper-wrapper.cmp-dual-slider__slide-wrapper > .swiper-slide.cmp-dual-slider__slide-item[role="group"]:nth-child(1)`
+  - **HTML:** `<li id="-target-1-2" class="swiper-slide cmp-dual-slider__slide-item" role="group">`
+  - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
+
+- **Target:** `#-target-2-2`
+  - **HTML:** `<li id="-target-2-2" class="swiper-slide cmp-dual-slider__slide-item" role="group">`
+  - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
+
+- **Target:** `#-target-3-2`
+  - **HTML:** `<li id="-target-3-2" class="swiper-slide cmp-dual-slider__slide-item" role="group">`
+  - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
+
+- **Target:** `#-target-4-2`
+  - **HTML:** `<li id="-target-4-2" class="swiper-slide cmp-dual-slider__slide-item" role="group">`
+  - **Failure summary:** Fix any of the following: ARIA role group is not allowed for given element
+
 
 ### Heading levels should only increase by one
 
@@ -37,8 +61,14 @@
 
 #### Affected Elements:
 
-- `#title-v2-24efabdc > .cmp-title__text`
-- `h5`
+- **Target:** `#title-v2-24efabdc > .cmp-title__text`
+  - **HTML:** `<h3 class="cmp-title__text"><span>Aktuelt</span></h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `h5`
+  - **HTML:** `<h5 class="cmp-title__text"> Følg oss </h5>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
@@ -51,8 +81,14 @@
 
 #### Affected Elements:
 
-- `.cmp-dual-slider__left-wrapper > .cmp-dual-slider__slide > .swiper-wrapper.cmp-dual-slider__slide-wrapper`
-- `.cmp-dual-slider__right-wrapper > .cmp-dual-slider__slide > .swiper-wrapper.cmp-dual-slider__slide-wrapper`
+- **Target:** `.cmp-dual-slider__left-wrapper > .cmp-dual-slider__slide > .swiper-wrapper.cmp-dual-slider__slide-wrapper`
+  - **HTML:** `<ul class="swiper-wrapper cmp-dual-slider__slide-wrapper">`
+  - **Failure summary:** Fix all of the following: List element has direct children that are not allowed: [role=group]
+
+- **Target:** `.cmp-dual-slider__right-wrapper > .cmp-dual-slider__slide > .swiper-wrapper.cmp-dual-slider__slide-wrapper`
+  - **HTML:** `<ul class="swiper-wrapper cmp-dual-slider__slide-wrapper">`
+  - **Failure summary:** Fix all of the following: List element has direct children that are not allowed: [role=group]
+
 
 ### All page content should be contained by landmarks
 
@@ -65,4 +101,7 @@
 
 #### Affected Elements:
 
-- `.cmp-header__welcome`
+- **Target:** `.cmp-header__welcome`
+  - **HTML:** `<div class="cmp-header__welcome">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

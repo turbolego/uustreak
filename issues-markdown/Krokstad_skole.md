@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `iframe[name="fefeb8ed85779d636"], ._55yn`
+- **Target:** `iframe[name="fefeb8ed85779d636"], ._55yn`
+  - **HTML:** `<span class="img _55ym _55yn _55yo" aria-busy="true" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuetext="Laster inn …"></span>`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
 
 ### Certain ARIA roles must contain particular children
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `iframe[name="fefeb8ed85779d636"], div[role="feed"]`
+- **Target:** `iframe[name="fefeb8ed85779d636"], div[role="feed"]`
+  - **HTML:** `<div role="feed">`
+  - **Failure summary:** Fix any of the following: Element has children which are not allowed: table, a, img, [role=button], a[aria-label], a[aria-describedby], div[tabindex]
+
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -43,13 +49,34 @@
 
 #### Affected Elements:
 
-- `iframe[name="fefeb8ed85779d636"], .x1ypdohk.xe35lr7:nth-child(2) > ._eg_[role="button"] > ._eh3`
-- `iframe[name="fefeb8ed85779d636"], .x1ypdohk.xe35lr7._51mw > ._eg_[role="button"] > ._eh3`
-- `iframe[name="fefeb8ed85779d636"], abbr[data-utime="1790848575"] > .timestampContent`
-- `iframe[name="fefeb8ed85779d636"], #feed_subtitle_1681398620662434\:4\:0 > ._1atc.fsm.fwn > .fcg`
-- `iframe[name="fefeb8ed85779d636"], #u_1_h_J3 > ._2165._2pi4[title="Liker"]`
-- `iframe[name="fefeb8ed85779d636"], #u_1_g_Gt > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd[target="_blank"] > ._1p4p._2pi4[title="Kommenter"]`
-- `iframe[name="fefeb8ed85779d636"], #u_1_i_1P > ._50sk._2pi4[title="Del"]`
+- **Target:** `iframe[name="fefeb8ed85779d636"], .x1ypdohk.xe35lr7:nth-child(2) > ._eg_[role="button"] > ._eh3`
+  - **HTML:** `<div class="_eh3">Arrangementer</div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2.82 (foreground color: #8d949e, background color: #f5f6f7, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `iframe[name="fefeb8ed85779d636"], .x1ypdohk.xe35lr7._51mw > ._eg_[role="button"] > ._eh3`
+  - **HTML:** `<div class="_eh3">Meldinger</div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2.82 (foreground color: #8d949e, background color: #f5f6f7, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `iframe[name="fefeb8ed85779d636"], abbr[data-utime="1790848575"] > .timestampContent`
+  - **HTML:** `<span class="timestampContent">på torsdag</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.04 (foreground color: #90949c, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `iframe[name="fefeb8ed85779d636"], #feed_subtitle_1681398620662434\:4\:0 > ._1atc.fsm.fwn > .fcg`
+  - **HTML:** `<span class="fcg">63&nbsp;458 følgere</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.04 (foreground color: #90949c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `iframe[name="fefeb8ed85779d636"], #u_1_h_J3 > ._2165._2pi4[title="Liker"]`
+  - **HTML:** `<div class="_2pi4 _36iq _4lk2 _3xre _2165" title="Liker"><i class="_3-8_ _2yf7 _5jp _2166 img sp_0dpO6AyRzTf sx_d956c1"></i><i class="_3-8_ _2yf7 _3wdt _2166 img sp_0dpO6AyRzTf sx_9bd4b5"></i>Liker</div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4 (foreground color: #7f7f7f, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1
+
+- **Target:** `iframe[name="fefeb8ed85779d636"], #u_1_g_Gt > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd[target="_blank"] > ._1p4p._2pi4[title="Kommenter"]`
+  - **HTML:** `<div class="_2pi4 _36iq _4lk2 _3xre _1p4p" title="Kommenter"><i class="_3-8_ _2yf7 _5jp _4mlr img sp_0dpO6AyRzTf sx_4e040d"></i><i class="_3-8_ _2yf7 _3wdt _4mlr img sp_0dpO6AyRzTf sx_46439e"></i>Kommenter</div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4 (foreground color: #7f7f7f, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1
+
+- **Target:** `iframe[name="fefeb8ed85779d636"], #u_1_i_1P > ._50sk._2pi4[title="Del"]`
+  - **HTML:** `<div class="_2pi4 _36iq _4lk2 _3xre _50sk" title="Del"><i class="_3-8_ _2yf7 _5jp _2167 img sp_0dpO6AyRzTf sx_bc2013"></i><i class="_3-8_ _2yf7 _3wdt _2167 img sp_0dpO6AyRzTf sx_067bd3"></i>Del</div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4 (foreground color: #7f7f7f, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1
+
 
 ### Form elements should have a visible label
 
@@ -62,9 +89,18 @@
 
 #### Affected Elements:
 
-- `#cookie_cat_functional`
-- `#cookie_cat_statistic`
-- `#cookie_cat_marketing`
+- **Target:** `#cookie_cat_functional`
+  - **HTML:** `<input class="coi__checkbox" tabindex="0" data-index="0" name="cookie_cat_functional" id="cookie_cat_functional" type="checkbox" title="Funksjonelle" onclick="CookieInformation.changeCategoryConsentDecision('cookie_cat_functional')">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
+- **Target:** `#cookie_cat_statistic`
+  - **HTML:** `<input class="coi__checkbox" tabindex="0" data-index="0" name="cookie_cat_statistic" id="cookie_cat_statistic" type="checkbox" title="Statistiske" onclick="CookieInformation.changeCategoryConsentDecision('cookie_cat_statistic')">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
+- **Target:** `#cookie_cat_marketing`
+  - **HTML:** `<input class="coi__checkbox" tabindex="0" data-index="0" name="cookie_cat_marketing" id="cookie_cat_marketing" type="checkbox" title="Markedsføring" onclick="CookieInformation.changeCategoryConsentDecision('cookie_cat_marketing')">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
 
 ### Document should not have more than one banner landmark
 
@@ -77,7 +113,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -90,7 +129,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### Links must have discernible text
 
@@ -103,14 +145,38 @@
 
 #### Affected Elements:
 
-- `iframe[name="fefeb8ed85779d636"], #u_0_1_fJ`
-- `iframe[name="fefeb8ed85779d636"], .lfloat._3-8_[target="_blank"]`
-- `iframe[name="fefeb8ed85779d636"], #u_1_b_9o > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fefeb8ed85779d636"], #u_1_7_zO > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fefeb8ed85779d636"], #u_1_1q_hO > ._302 > span > a[target="_blank"]`
-- `iframe[name="fefeb8ed85779d636"], #u_1_6_gJ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fefeb8ed85779d636"], ._2l7q > a[target="_blank"]`
-- `iframe[name="fefeb8ed85779d636"], #u_1_5_mK > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- **Target:** `iframe[name="fefeb8ed85779d636"], #u_0_1_fJ`
+  - **HTML:** `<a href="https://www.facebook.com/krokstadskole?ref=embed_page" target="_blank" id="u_0_1_fJ"></a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `iframe[name="fefeb8ed85779d636"], .lfloat._3-8_[target="_blank"]`
+  - **HTML:** `<a class="_3-8_ lfloat" href="https://www.facebook.com/1037451556341512?ref=embed_page" target="_blank">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `iframe[name="fefeb8ed85779d636"], #u_1_b_9o > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+  - **HTML:** `<a href="/krokstadskole/posts/pfbid0jVJKJP2zWrCXnQsWuykrcqSV4z7GHH13XraKHxaPDaXZnScgFsi3ZKkeU4R3BsQRl?ref=embed_page" target="_blank"><i class="img sp_0dpO6AyRzTf sx_8033cd"></i></a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `iframe[name="fefeb8ed85779d636"], #u_1_7_zO > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+  - **HTML:** `<a href="/krokstadskole/posts/pfbid02CFPmihKzW1s68d9P2mfza5QKcMuUvt6twy4p66AvSgQbokKLBF9qdBX5sDEgF6uql?ref=embed_page" target="_blank"><i class="img sp_0dpO6AyRzTf sx_8033cd"></i></a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `iframe[name="fefeb8ed85779d636"], #u_1_1q_hO > ._302 > span > a[target="_blank"]`
+  - **HTML:** `<a href="/krokstadskole/posts/pfbid021AN4L9otRSLzDUty33e5vjJEgLuc5q2p8Nd4J5GYuh8Gq6FDC4vSq1fYYG5cD5vil?ref=embed_page" target="_blank"><i class="img sp_0dpO6AyRzTf sx_8033cd"></i></a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `iframe[name="fefeb8ed85779d636"], #u_1_6_gJ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+  - **HTML:** `<a href="/krokstadskole/posts/pfbid02UHY1damPb2qZ3f815QrWKtYSKQe6WY8VwEYh965Kwd42E25N2pk7p3vAcidNqojVl?ref=embed_page" target="_blank"><i class="img sp_0dpO6AyRzTf sx_8033cd"></i></a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `iframe[name="fefeb8ed85779d636"], ._2l7q > a[target="_blank"]`
+  - **HTML:** `<a href="https://www.facebook.com/photo.php?fbid=1425103622767942&set=a.522613493016964&type=3&ref=embed_page" target="_blank">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `iframe[name="fefeb8ed85779d636"], #u_1_5_mK > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+  - **HTML:** `<a href="/krokstadskole/posts/pfbid036n2ZpXAmEJCsYh2esEZXzGa9sxK1KxFbC6jMabpMit5Jrs547vQDsQ32FtJep4XTl?ref=embed_page" target="_blank"><i class="img sp_0dpO6AyRzTf sx_8033cd"></i></a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### Interactive controls must not be nested
 
@@ -123,7 +189,10 @@
 
 #### Affected Elements:
 
-- `.mainMenuTrigger`
+- **Target:** `.mainMenuTrigger`
+  - **HTML:** `<div class="mainMenuTrigger _jsMainMenuTrigger" tabindex="0" role="button">`
+  - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
+
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -136,7 +205,10 @@
 
 #### Affected Elements:
 
-- `iframe[name="fefeb8ed85779d636"], img[width="255"]`
+- **Target:** `iframe[name="fefeb8ed85779d636"], img[width="255"]`
+  - **HTML:** `<img class="scaledImageFitWidth ..." src="https://external-arn..." data-src="https://external-arn..." style="top:0px;" alt="" width="255" height="134" caption="" aria-label="Kan være et bilde av...">`
+  - **Failure summary:** Fix all of the following: Element does not have global ARIA attribute
+
 
 ### All page content should be contained by landmarks
 
@@ -149,4 +221,7 @@
 
 #### Affected Elements:
 
-- `.skipLink`
+- **Target:** `.skipLink`
+  - **HTML:** `<p class="skipLink"> <a href="#mainContentContainer">Hopp til innhold</a> </p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

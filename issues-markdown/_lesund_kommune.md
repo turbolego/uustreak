@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `img[alt="Ålesund kommune"]`
+- **Target:** `img[alt="Ålesund kommune"]`
+  - **HTML:** `<img alt="Ålesund kommune" src="/handlers/bv.ashx/i8e58e09e-5c46-4f8b-af79-2b7be89302cd/f0744alesund-logo.svg">`
+  - **Failure summary:** Fix all of the following: Element contains <img> element with alt text that duplicates existing text
+

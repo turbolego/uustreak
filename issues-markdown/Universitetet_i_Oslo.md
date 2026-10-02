@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.uio-info-message`
+- **Target:** `.uio-info-message`
+  - **HTML:** `<div class="grid-container uio-info-message alert &nbsp;" role="banner"> <div class="row"> <div class="col-1-1"> </div> </div> </div>`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -30,4 +33,7 @@
 
 #### Affected Elements:
 
-- `.uio-info-message`
+- **Target:** `.uio-info-message`
+  - **HTML:** `<div class="grid-container uio-info-message alert &nbsp;" role="banner"> <div class="row"> <div class="col-1-1"> </div> </div> </div>`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+

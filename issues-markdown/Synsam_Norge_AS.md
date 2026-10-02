@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `.LinkCluster_link-cluster-heading__6u1_f`
+- **Target:** `.LinkCluster_link-cluster-heading__6u1_f`
+  - **HTML:** `<h3 class="LinkCluster_link-cluster-heading__6u1_f">Finn optiker i din by</h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+

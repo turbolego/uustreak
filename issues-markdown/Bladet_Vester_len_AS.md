@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `article[data-title-words="2"] > .brick-c-HZLTu.teaser_body[itemprop="url"] > .brick-c-gBeijm.title_container.has-image > .normal.brick-c-JbDTi[itemprop="teaser_title"]`
+- **Target:** `article[data-title-words="2"] > .brick-c-HZLTu.teaser_body[itemprop="url"] > .brick-c-gBeijm.title_container.has-image > .normal.brick-c-JbDTi[itemprop="teaser_title"]`
+  - **HTML:** `<h2 itemprop="teaser_title" class="title normal brick-c-JbDTi"><span class="titleWrapper brick-c-dSUblF"> <span itemprop="headline"><span itemprop="titleText"> </span></span> </span></h2>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
 
 ### Frames must have an accessible name
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `#eaframe`
+- **Target:** `#eaframe`
+  - **HTML:** `<iframe frameborder="no" id="eaframe" name="eaframe" width="980" height="350" scrolling="no" src="javascript:window[&quot;contents&quot;]" style="height: 350px;"></iframe>`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `brick-teaser-group-v1[data-color-skin="opinion"] > div > brick-carousel-v3 > .carousel[aria-label="Innholdskarusell"][role="region"]`
+- **Target:** `brick-teaser-group-v1[data-color-skin="opinion"] > div > brick-carousel-v3 > .carousel[aria-label="Innholdskarusell"][role="region"]`
+  - **HTML:** `<section data-static="" role="region" class="carousel" aria-label="Innholdskarusell" aria-describedby="carousel-title-1799cbbe-769b-4714-b73c-981715730033">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### Links must have discernible text
 
@@ -56,7 +65,10 @@
 
 #### Affected Elements:
 
-- `article[data-title-words="2"] > .brick-c-HZLTu.teaser_body[itemprop="url"]`
+- **Target:** `article[data-title-words="2"] > .brick-c-HZLTu.teaser_body[itemprop="url"]`
+  - **HTML:** `<a href="https://annonse.blv.no/annonser/BV_Journalist%20%C3%98ksnes%202026.pdf" itemprop="url" style="" class="teaser_body brick-c-HZLTu">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -69,7 +81,10 @@
 
 #### Affected Elements:
 
-- `img[height="80"]`
+- **Target:** `img[height="80"]`
+  - **HTML:** `<img tabindex="-1" src="//assets.acdn.no/local/v3/publications/www.blv.no/gfx/small-positive.svg" alt="" loading="eager" height="80" width="auto">`
+  - **Failure summary:** Fix all of the following: Element is not focusable.
+
 
 ### All page content should be contained by landmarks
 
@@ -82,5 +97,11 @@
 
 #### Affected Elements:
 
-- `amedia-username`
-- `#toppbanner-1`
+- **Target:** `amedia-username`
+  - **HTML:** `<amedia-username orderpage="//www.blv.no/tilbud" publication="www.blv.no" subscription-text="Bli abonnent" subscription-link="true" links="" locale="nb-NO" theme="alfa">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#toppbanner-1`
+  - **HTML:** `<bazaar-ad data-component-layou...="commercial" position="toppbanner" class="am-bazaar-ad lp_topp..." labeled="true" display-config="" aria-labelledby="toppbanner-1-label" ad-index="1" id="toppbanner-1" data-id="toppbanner-1" tag-id="www.b…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

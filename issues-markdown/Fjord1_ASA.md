@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.route-search-component`
+- **Target:** `.route-search-component`
+  - **HTML:** `<div role="button" tabindex="0" class="route-search-component ">`
+  - **Failure summary:** Fix any of the following: Element has focusable descendants
+
 
 ### All page content should be contained by landmarks
 
@@ -30,6 +33,15 @@
 
 #### Affected Elements:
 
-- `.d-none`
-- `.zone-main`
-- `.zone-footer`
+- **Target:** `.d-none`
+  - **HTML:** `<div class="language-selector d-none d-md-block"> <a href="https://www.fjord1.no/eng"> In English </a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.zone-main`
+  - **HTML:** `<section class="zone zone-main header-zone-has-bg-image post-header-zone-is-without-bg-image ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.zone-footer`
+  - **HTML:** `<section class="zone zone-footer">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

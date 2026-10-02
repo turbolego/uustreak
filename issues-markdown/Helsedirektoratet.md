@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.b-button--search`
+- **Target:** `.b-button--search`
+  - **HTML:** `<button class="b-button b-button--small b-button--search b-button--secondary-dark-filled" aria-controls="searchTray">Søk</button>`
+  - **Failure summary:** Fix all of the following: Invalid ARIA attribute value: aria-controls="searchTray"
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `.container > .row[role="navigation"]`
+- **Target:** `.container > .row[role="navigation"]`
+  - **HTML:** `<div class="row" role="navigation">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### All page content should be contained by landmarks
 
@@ -43,6 +49,15 @@
 
 #### Affected Elements:
 
-- `.cookie-panel-banner__title`
-- `.cookie-panel-banner__description`
-- `.scrollToTopWrapper`
+- **Target:** `.cookie-panel-banner__title`
+  - **HTML:** `<h2 class="cookie-panel-banner__title">Informasjonskapsler (cookies)</h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.cookie-panel-banner__description`
+  - **HTML:** `<p class="cookie-panel-banner__description">Vi bruker informasjonskapsler for å gjøre nettsiden bedre og for å samle statistikk. Vi lagrer aldri opplysninger som kan identifisere deg som person.</p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.scrollToTopWrapper`
+  - **HTML:** `<div class="l-container scrollToTopWrapper">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

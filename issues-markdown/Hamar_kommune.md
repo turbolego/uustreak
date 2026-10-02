@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `#declineButton`
+- **Target:** `#declineButton`
+  - **HTML:** `<button tabindex="0" aria-label="Avvis" id="declineButton" class="coi-banner__decline" role="alert" aria-atomic="true" style="display: flex;"> Avvis </button>`
+  - **Failure summary:** Fix any of the following: ARIA role alert is not allowed for given element
+
 
 ### Heading levels should only increase by one
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `article[data-articleid="499370"] > a[target="_self"] > .card-body > h3[itemprop="headline"]`
+- **Target:** `article[data-articleid="499370"] > a[target="_self"] > .card-body > h3[itemprop="headline"]`
+  - **HTML:** `<h3 itemprop="headline">Velkommen til årets lysopplevelse i høstmørket</h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Document should not have more than one banner landmark
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -56,8 +65,14 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
-- `.global-header__nav`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+- **Target:** `.global-header__nav`
+  - **HTML:** `<nav class="global-header__nav">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### All page content should be contained by landmarks
 
@@ -70,5 +85,11 @@
 
 #### Affected Elements:
 
-- `#content-link`
-- `#coretrek-footer`
+- **Target:** `#content-link`
+  - **HTML:** `<div id="content-link" class="d-print-none"><a class="sr-only sr-only-focusable" href="#main-content">Til innhold</a></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#coretrek-footer`
+  - **HTML:** `<div id="coretrek-footer" class="d-print-none" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

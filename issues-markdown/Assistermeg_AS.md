@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `#municipalityselect`
+- **Target:** `#municipalityselect`
+  - **HTML:** `<select id="municipalityselect" aria-label="">`
+  - **Failure summary:** Fix any of the following: Element does not have an implicit (wrapped) <label> Element does not have an explicit <label> aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do n…
+

@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `.rounded-full.flex-col.flex`
+- **Target:** `.rounded-full.flex-col.flex`
+  - **HTML:** `<div class="flex flex-col rounded-full">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

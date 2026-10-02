@@ -17,5 +17,11 @@
 
 #### Affected Elements:
 
-- `#forrige`
-- `#neste`
+- **Target:** `#forrige`
+  - **HTML:** `<button style="rotate: 180deg;" class="horisontal-scroll skjult" id="forrige" data-astro-cid-23gnmtvq="">`
+  - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
+
+- **Target:** `#neste`
+  - **HTML:** `<button class="horisontal-scroll" id="neste" data-astro-cid-23gnmtvq="">`
+  - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
+

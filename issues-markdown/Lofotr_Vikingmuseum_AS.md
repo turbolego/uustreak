@@ -17,9 +17,18 @@
 
 #### Affected Elements:
 
-- `.col-12.col-md-4.my-3:nth-child(1) > .card.has-light-blue-background-color.h-100 > .card-footer.aligncenter.wp-block-buttons > .has-blue-primary-background-color.wp-block-button__link`
-- `a[title="Fiske og sjøfangst i vikingtid"]`
-- `a[title="Oppdagelsen av Borg"]`
+- **Target:** `.col-12.col-md-4.my-3:nth-child(1) > .card.has-light-blue-background-color.h-100 > .card-footer.aligncenter.wp-block-buttons > .has-blue-primary-background-color.wp-block-button__link`
+  - **HTML:** `<a href="https://www.museumnord.no/historier/tradenes-hemmelighet-skjoldehamndrakten/" title="Trådenes hemmelighet: Skjoldehamndrakten" class="wp-block-button__link has-blue-primary-background-color" aria-link="Les mer om Trådenes hemmelig…`
+  - **Failure summary:** Fix any of the following: Invalid ARIA attribute name: aria-link
+
+- **Target:** `a[title="Fiske og sjøfangst i vikingtid"]`
+  - **HTML:** `<a href="https://www.museumnord.no/historier/fiske-og-sjofangst/" title="Fiske og sjøfangst i vikingtid" class="wp-block-button__link has-blue-primary-background-color" aria-link="Les mer om Fiske og sjøfangst i vikingtid">Les mer</a>`
+  - **Failure summary:** Fix any of the following: Invalid ARIA attribute name: aria-link
+
+- **Target:** `a[title="Oppdagelsen av Borg"]`
+  - **HTML:** `<a href="https://www.museumnord.no/historier/oppdagelsen-av-borg/" title="Oppdagelsen av Borg" class="wp-block-button__link has-blue-primary-background-color" aria-link="Les mer om Oppdagelsen av Borg">Les mer</a>`
+  - **Failure summary:** Fix any of the following: Invalid ARIA attribute name: aria-link
+
 
 ### Buttons must have discernible text
 
@@ -32,7 +41,10 @@
 
 #### Affected Elements:
 
-- `#header-menu-toggle`
+- **Target:** `#header-menu-toggle`
+  - **HTML:** `<button class="menu-toggle" id="header-menu-toggle" aria-controls="primary-menu" aria-expanded="false"> <span class="hamburger"></span> </button>`
+  - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
+
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -45,7 +57,10 @@
 
 #### Affected Elements:
 
-- `.cmplz-blocked-content-notice`
+- **Target:** `.cmplz-blocked-content-notice`
+  - **HTML:** `<button class="cmplz-blocked-content-notice cmplz-accept-category cmplz-accept-marketing" data-service="youtube" data-category="marketing" aria-label="Klikk for å godta marketing informasjonskapsler og aktivere dette innholdet">`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.94 (foreground color: #ffffff, background color: #808080, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
+
 
 ### Headings should not be empty
 
@@ -58,9 +73,18 @@
 
 #### Affected Elements:
 
-- `#block-museumnord-featured-exhibits-carouselblock_faded3e486617f5abb5d72f91daf5b6b > .wp-block-group__inner-container.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__header > h2`
-- `#block-museumnord-featured-exhibits-carouselblock_f0ca8964f0333460927f39af7148f4d7 > .wp-block-group__inner-container.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__header > h2`
-- `#block-museumnord-featured-exhibits-carouselblock_9acea6078be8ef4a544def0eec16911e > .wp-block-group__inner-container.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__header > h2`
+- **Target:** `#block-museumnord-featured-exhibits-carouselblock_faded3e486617f5abb5d72f91daf5b6b > .wp-block-group__inner-container.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__header > h2`
+  - **HTML:** `<h2 class="has-dark-color"></h2>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
+- **Target:** `#block-museumnord-featured-exhibits-carouselblock_f0ca8964f0333460927f39af7148f4d7 > .wp-block-group__inner-container.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__header > h2`
+  - **HTML:** `<h2 class="has-dark-color"></h2>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
+- **Target:** `#block-museumnord-featured-exhibits-carouselblock_9acea6078be8ef4a544def0eec16911e > .wp-block-group__inner-container.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__header > h2`
+  - **HTML:** `<h2 class="has-dark-color"></h2>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
 
 ### Heading levels should only increase by one
 
@@ -73,12 +97,30 @@
 
 #### Affected Elements:
 
-- `#primary > h3`
-- `.wp-block-pooka-venue-details__address > h5`
-- `#block-museumnord-featured-exhibits-carouselblock_faded3e486617f5abb5d72f91daf5b6b > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"] > .wp-block-pooka-experiences-exhibitions-carousel__carousel > .wp-block-pooka-experiences-exhibitions-carousel__carousel-slide[data-index="0"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__content > h5`
-- `#block-museumnord-featured-exhibits-carouselblock_f0ca8964f0333460927f39af7148f4d7 > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"] > .wp-block-pooka-experiences-exhibitions-carousel__carousel > .wp-block-pooka-experiences-exhibitions-carousel__carousel-slide[data-index="0"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__content > h5`
-- `#block-museumnord-featured-exhibits-carouselblock_9acea6078be8ef4a544def0eec16911e > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"] > .wp-block-pooka-experiences-exhibitions-carousel__carousel > .wp-block-pooka-experiences-exhibitions-carousel__carousel-slide[data-index="0"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__content > h5`
-- `.my-5:nth-child(1) > h5`
+- **Target:** `#primary > h3`
+  - **HTML:** `<h3 class="wp-block-heading has-text-align-center">Tre inn i vikingtiden midt i hjertet av Lofoten</h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `.wp-block-pooka-venue-details__address > h5`
+  - **HTML:** `<h5 class="has-dark-color">Adresse</h5>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `#block-museumnord-featured-exhibits-carouselblock_faded3e486617f5abb5d72f91daf5b6b > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"] > .wp-block-pooka-experiences-exhibitions-carousel__carousel > .wp-block-pooka-experiences-exhibitions-carousel__carousel-slide[data-index="0"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__content > h5`
+  - **HTML:** `<h5 class="has-dark-color">Pil og bue / Øksekast</h5>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `#block-museumnord-featured-exhibits-carouselblock_f0ca8964f0333460927f39af7148f4d7 > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"] > .wp-block-pooka-experiences-exhibitions-carousel__carousel > .wp-block-pooka-experiences-exhibitions-carousel__carousel-slide[data-index="0"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__content > h5`
+  - **HTML:** `<h5 class="has-dark-color">Mat og drikke</h5>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `#block-museumnord-featured-exhibits-carouselblock_9acea6078be8ef4a544def0eec16911e > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"] > .wp-block-pooka-experiences-exhibitions-carousel__carousel > .wp-block-pooka-experiences-exhibitions-carousel__carousel-slide[data-index="0"] > .wp-block-pooka-experiences-exhibitions-carousel__slide-content > .card-exhibition.has-light-grey-background-color > .card-exhibition__content > h5`
+  - **HTML:** `<h5 class="has-dark-color">Praktisk informasjon</h5>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `.my-5:nth-child(1) > h5`
+  - **HTML:** `<h5>Historier</h5>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -91,7 +133,10 @@
 
 #### Affected Elements:
 
-- `#block-museumnord-featured-exhibits-carouselblock_faded3e486617f5abb5d72f91daf5b6b > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"]`
+- **Target:** `#block-museumnord-featured-exhibits-carouselblock_faded3e486617f5abb5d72f91daf5b6b > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"]`
+  - **HTML:** `<div class="wp-block-pooka-experiences-exhibitions-carousel__carousel-container" tabindex="0" role="region" aria-label="Exhibits carousel">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### Links must have discernible text
 
@@ -104,8 +149,14 @@
 
 #### Affected Elements:
 
-- `#post-97961 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100`
-- `#post-97491 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100`
+- **Target:** `#post-97961 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100`
+  - **HTML:** `<a href="https://www.museumnord.no/2026/09/14/en-eventyrlig-superlordag-med-vikingene/" class="h-100 w-100">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `#post-97491 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100`
+  - **HTML:** `<a href="https://www.museumnord.no/2026/09/07/vikingene-inntok-hostvekka-pa-leknes/" class="h-100 w-100">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### All page content should be contained by landmarks
 
@@ -118,7 +169,10 @@
 
 #### Affected Elements:
 
-- `.skip-link`
+- **Target:** `.skip-link`
+  - **HTML:** `<a class="skip-link screen-reader-text" href="#primary">Skip to content</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
 
 ### [role="img"] and [role="image"] elements must have alternative text
 
@@ -131,6 +185,15 @@
 
 #### Affected Elements:
 
-- `.card-exhibition__image[aria-label=""][role="img"]`
-- `#post-97961 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100 > .h-100[aria-label=""][role="img"]`
-- `#post-97491 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100 > .h-100[aria-label=""][role="img"]`
+- **Target:** `.card-exhibition__image[aria-label=""][role="img"]`
+  - **HTML:** `<div class="card-exhibition__image" style="background-image: url('https://www.museumnord.no/wp-content/uploads/2021/05/Archeological-1200x420.jpg');" aria-label="" role="img"></div>`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+- **Target:** `#post-97961 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100 > .h-100[aria-label=""][role="img"]`
+  - **HTML:** `<div class="h-100" style="background: url('https://www.museumnord.no/wp-content/uploads/2026/09/IMG_0321-600x338.jpg') no-repeat center center; background-size: cover;" aria-label="" role="img"></div>`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+- **Target:** `#post-97491 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100 > .h-100[aria-label=""][role="img"]`
+  - **HTML:** `<div class="h-100" style="background: url('https://www.museumnord.no/wp-content/uploads/2026/09/IMG_0121-600x392.jpg') no-repeat center center; background-size: cover;" aria-label="" role="img"></div>`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+

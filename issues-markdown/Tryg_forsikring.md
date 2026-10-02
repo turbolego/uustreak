@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `#coi-banner-wrapper`
+- **Target:** `#coi-banner-wrapper`
+  - **HTML:** `<div role="dialog" aria-modal="true" id="coi-banner-wrapper" class="coi-banner__wrapper" lang="nb" dir="ltr" aria-hidden="false">`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
 
 ### Heading levels should only increase by one
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `.card-icon-card-wrapper.height-fixed.card:nth-child(1) > .headline`
+- **Target:** `.card-icon-card-wrapper.height-fixed.card:nth-child(1) > .headline`
+  - **HTML:** `<h3 class="headline">Bilforsikring</h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Banner landmark should not be contained in another landmark
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `div[data-sitewide-alert=""]`
+- **Target:** `div[data-sitewide-alert=""]`
+  - **HTML:** `<div data-sitewide-alert="" role="banner"></div>`
+  - **Failure summary:** Fix any of the following: The banner landmark is contained in another landmark.
+
 
 ### Main landmark should not be contained in another landmark
 
@@ -56,7 +65,10 @@
 
 #### Affected Elements:
 
-- `#coi-banner-wrapper_label`
+- **Target:** `#coi-banner-wrapper_label`
+  - **HTML:** `<div class="coi-banner__maintext" id="coi-banner-wrapper_label" role="main">`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
 
 ### Document should not have more than one banner landmark
 
@@ -69,7 +81,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Document should not have more than one main landmark
 
@@ -82,7 +97,10 @@
 
 #### Affected Elements:
 
-- `#coi-banner-wrapper_label`
+- **Target:** `#coi-banner-wrapper_label`
+  - **HTML:** `<div class="coi-banner__maintext" id="coi-banner-wrapper_label" role="main">`
+  - **Failure summary:** Fix any of the following: Document has more than one main landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -95,8 +113,14 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
-- `#coi-banner-wrapper_label`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+- **Target:** `#coi-banner-wrapper_label`
+  - **HTML:** `<div class="coi-banner__maintext" id="coi-banner-wrapper_label" role="main">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### All page content should be contained by landmarks
 
@@ -109,4 +133,7 @@
 
 #### Affected Elements:
 
-- `.skip-link`
+- **Target:** `.skip-link`
+  - **HTML:** `<div class="skip-link"> <a id="skip-link" href="#block-tryg-content" class="visually-hidden focusable"> Hopp til hovedinnhold </a></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

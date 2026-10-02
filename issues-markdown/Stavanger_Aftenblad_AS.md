@@ -17,8 +17,14 @@
 
 #### Affected Elements:
 
-- `a[data-content-id="QglLnA"] > ._main_e26qe_130 > ._meta_e26qe_199 > ._label_e26qe_212.label-medium`
-- `iframe[title="Tips oss"], .headline`
+- **Target:** `a[data-content-id="QglLnA"] > ._main_e26qe_130 > ._meta_e26qe_199 > ._label_e26qe_212.label-medium`
+  - **HTML:** `<span class="label-medium _label_e26qe_212">Kommentar</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2.7 (foreground color: #00a4ff, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `iframe[title="Tips oss"], .headline`
+  - **HTML:** `<span class="headline">Tips oss</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.1 (foreground color: #ffffff, background color: #0083cc, font size: 12.6pt (16.8px), font weight: bold). Expected contrast ratio of 4.5:1
+
 
 ### Interactive controls must not be nested
 
@@ -31,9 +37,18 @@
 
 #### Affected Elements:
 
-- `track-element[data-track-id="teaser:113573"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
-- `track-element[data-track-id="teaser:113563"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
-- `track-element[data-track-id="teaser:113559"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
+- **Target:** `track-element[data-track-id="teaser:113573"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
+  - **HTML:** `<audio-play-button asset-id="113573" vendor="sa" provider="sa" title="Hør sendingen etter Madla - Viking" class="label-medium _root_me3cj_65 _small_me3cj_88" role="button" tabindex="0" data-state="idle">`
+  - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
+
+- **Target:** `track-element[data-track-id="teaser:113563"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
+  - **HTML:** `<audio-play-button asset-id="113563" vendor="sa" provider="sa" title="Ekspert eller kjendis, fakta eller føleri?" class="label-medium _root_me3cj_65 _small_me3cj_88" role="button" tabindex="0" data-state="idle">`
+  - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
+
+- **Target:** `track-element[data-track-id="teaser:113559"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
+  - **HTML:** `<audio-play-button asset-id="113559" vendor="sa" provider="sa" title="Stjerneslakt, kleint stunt, Ronaldo og Nations League" class="label-medium _root_me3cj_65 _small_me3cj_88" role="button" tabindex="0" data-state="idle">`
+  - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
+
 
 ### All page content should be contained by landmarks
 
@@ -46,4 +61,7 @@
 
 #### Affected Elements:
 
-- `.sch-datacontroller__text`
+- **Target:** `.sch-datacontroller__text`
+  - **HTML:** `<span class="sch-datacontroller__text">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

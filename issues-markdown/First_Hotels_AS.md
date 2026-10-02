@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.data-\[placeholder\]\:text-muted-foreground`
+- **Target:** `.data-\[placeholder\]\:text-muted-foreground`
+  - **HTML:** `<button type="button" role="combobox" aria-controls="radix-_R_3dpfivb_" aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed" data-slot="select-trigger" data-size="default" class="data-[placeholder]:t...">`
+  - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
+
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -30,18 +33,54 @@
 
 #### Affected Elements:
 
-- `#CybotCookiebotDialogBodyEdgeMoreDetailsLink`
-- `a[href$="sverige"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
-- `a[href$="danmark"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
-- `a[href$="norge"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
-- `a[href$="groenland"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
-- `.pr-0 > .min-w-0.grow-0.basis-full:nth-child(1) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
-- `.pr-0 > .min-w-0.grow-0.basis-full:nth-child(2) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
-- `.pr-0 > .min-w-0.grow-0.basis-full:nth-child(3) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
-- `.data-\[placeholder\]\:text-muted-foreground > .text-muted-foreground:nth-child(2)`
-- `a[href$="privacy-policy"]`
-- `a[href$="booking-conditions"]`
-- `a[href$="cookies"]`
+- **Target:** `#CybotCookiebotDialogBodyEdgeMoreDetailsLink`
+  - **HTML:** `<a id="CybotCookiebotDialogBodyEdgeMoreDetailsLink" href="#" class="">Detaljer</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 1.78 (foreground color: #424242, background color: #171717, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href$="sverige"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+  - **HTML:** `<p class="line-clamp-3 text-stone-500">`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.38 (foreground color: #79716b, background color: #f5f5f4, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href$="danmark"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+  - **HTML:** `<p class="line-clamp-3 text-stone-500">`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.38 (foreground color: #79716b, background color: #f5f5f4, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href$="norge"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+  - **HTML:** `<p class="line-clamp-3 text-stone-500">`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.38 (foreground color: #79716b, background color: #f5f5f4, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href$="groenland"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+  - **HTML:** `<p class="line-clamp-3 text-stone-500">`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.38 (foreground color: #79716b, background color: #f5f5f4, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `.pr-0 > .min-w-0.grow-0.basis-full:nth-child(1) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+  - **HTML:** `<p class="line-clamp-3 text-stone-500">`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.38 (foreground color: #79716b, background color: #f5f5f4, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `.pr-0 > .min-w-0.grow-0.basis-full:nth-child(2) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+  - **HTML:** `<p class="line-clamp-3 text-stone-500">Klar for å reise og skape uforglemmelige minner? Vi tror på at det å oppleve nye ting gjør livet enda bedre.</p>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.38 (foreground color: #79716b, background color: #f5f5f4, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `.pr-0 > .min-w-0.grow-0.basis-full:nth-child(3) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+  - **HTML:** `<p class="line-clamp-3 text-stone-500">Det er aldri for sent å oppdage noe nytt! Du som er over 67 år, får 25 % rabatt når du booker hotellrom på utvalgte hoteller. Utforsk nye plasser, besøk familie og venner eller bare ta en deilig hotel…`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.38 (foreground color: #79716b, background color: #f5f5f4, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `.data-\[placeholder\]\:text-muted-foreground > .text-muted-foreground:nth-child(2)`
+  - **HTML:** `<span class="text-muted-foreground">NO</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.65 (foreground color: #79716b, background color: #1c1917, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href$="privacy-policy"]`
+  - **HTML:** `<a href="/privacy-policy">Personvernerklæring</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.12 (foreground color: #79716b, background color: #0c0a09, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href$="booking-conditions"]`
+  - **HTML:** `<a href="/booking-conditions">Vilkår og betingelser</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.12 (foreground color: #79716b, background color: #0c0a09, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[href$="cookies"]`
+  - **HTML:** `<a href="/cookies">Cookies</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.12 (foreground color: #79716b, background color: #0c0a09, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -54,7 +93,10 @@
 
 #### Affected Elements:
 
-- `.mb-8.md\:mt-8:nth-child(1) > .space-y-4.flex-col.flex > .space-y-4.flex-col.relative > .overflow-x-hidden[aria-roledescription="carousel"][data-slot="carousel"]`
+- **Target:** `.mb-8.md\:mt-8:nth-child(1) > .space-y-4.flex-col.flex > .space-y-4.flex-col.relative > .overflow-x-hidden[aria-roledescription="carousel"][data-slot="carousel"]`
+  - **HTML:** `<div class="relative overflow-x-hidden" role="region" aria-roledescription="carousel" data-slot="carousel">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### Links must have discernible text
 
@@ -67,7 +109,19 @@
 
 #### Affected Elements:
 
-- `.border-b-stone-700 > a[href="/"]`
-- `.space-x-4.flex > a[target="_blank"]:nth-child(1)`
-- `.space-x-4.flex > a[target="_blank"]:nth-child(2)`
-- `a[target="_blank"]:nth-child(3)`
+- **Target:** `.border-b-stone-700 > a[href="/"]`
+  - **HTML:** `<a href="/">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `.space-x-4.flex > a[target="_blank"]:nth-child(1)`
+  - **HTML:** `<a href="https://www.facebook.com/FirstHotels" target="_blank">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `.space-x-4.flex > a[target="_blank"]:nth-child(2)`
+  - **HTML:** `<a href="https://www.linkedin.com/company/22596/" target="_blank">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `a[target="_blank"]:nth-child(3)`
+  - **HTML:** `<a href="https://www.instagram.com/first.hotels.official/" target="_blank">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+

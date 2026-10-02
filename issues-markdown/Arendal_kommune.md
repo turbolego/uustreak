@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `img`
+- **Target:** `img`
+  - **HTML:** `<img alt="Arendal kommune" src="/handlers/bv.ashx/i29eb5da5-c498-4765-9de3-e429dd32f018/arendal-kommune.svg">`
+  - **Failure summary:** Fix all of the following: Element contains <img> element with alt text that duplicates existing text
+

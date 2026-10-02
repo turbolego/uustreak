@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.optin`
+- **Target:** `.optin`
+  - **HTML:** `<div role="dialog" class="optin" aria-live="polite" aria-describedby="modalDescription">`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
 
 ### Heading levels should only increase by one
 
@@ -30,5 +33,11 @@
 
 #### Affected Elements:
 
-- `.optin-settings__section:nth-child(3) > .optin-grid > .optin-grid__col2 > .optin-settings__header.ffe-h5`
-- `h5`
+- **Target:** `.optin-settings__section:nth-child(3) > .optin-grid > .optin-grid__col2 > .optin-settings__header.ffe-h5`
+  - **HTML:** `<h3 class="ffe-h5 optin-settings__header"><span>Teknisk</span></h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `h5`
+  - **HTML:** `<h5 class="ffe-h5 PortableText-module__bZqguG__topPadding"><strong>Dataskraping av nettsider</strong></h5>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+

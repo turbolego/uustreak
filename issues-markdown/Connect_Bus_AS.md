@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `article`
+- **Target:** `article`
+  - **HTML:** `<article class="block-list">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

@@ -17,9 +17,18 @@
 
 #### Affected Elements:
 
-- `#header-favorites`
-- `#nav_10584_prev`
-- `#nav_10584_next`
+- **Target:** `#header-favorites`
+  - **HTML:** `<usn-mega-menu id="header-favorites" class="header--favorites" bar-id="favorites" role="menuitem">`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
+- **Target:** `#nav_10584_prev`
+  - **HTML:** `<span class="slider-nav slider-nav-prev swiper-button-disabled" role="button" id="nav_10584_prev"> <usn-icon>keyboard_arrow_left</usn-icon> </span>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
+- **Target:** `#nav_10584_next`
+  - **HTML:** `<span class="slider-nav slider-nav-next" role="button" id="nav_10584_next"> <usn-icon>keyboard_arrow_right</usn-icon> </span>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
 
 ### Certain ARIA roles must contain particular children
 
@@ -32,7 +41,10 @@
 
 #### Affected Elements:
 
-- `#header-menu`
+- **Target:** `#header-menu`
+  - **HTML:** `<usn-mega-menu id="header-menu" bar-id="menu" role="menu" class="header--main-menu show-first-header">`
+  - **Failure summary:** Fix any of the following: Element has children which are not allowed: button[aria-controls]
+
 
 ### Certain ARIA roles must be contained by particular parents
 
@@ -45,7 +57,10 @@
 
 #### Affected Elements:
 
-- `#header-favorites`
+- **Target:** `#header-favorites`
+  - **HTML:** `<usn-mega-menu id="header-favorites" class="header--favorites" bar-id="favorites" role="menuitem">`
+  - **Failure summary:** Fix any of the following: Required ARIA parents role not present: menu, menubar, group
+
 
 ### Form elements should have a visible label
 
@@ -58,9 +73,18 @@
 
 #### Affected Elements:
 
-- `#cookie_cat_functional`
-- `#cookie_cat_statistic`
-- `#cookie_cat_marketing`
+- **Target:** `#cookie_cat_functional`
+  - **HTML:** `<input class="coi__checkbox" tabindex="0" data-index="0" name="cookie_cat_functional" id="cookie_cat_functional" type="checkbox" title="Funksjonelle" onclick="CookieInformation.changeCategoryConsentDecision('cookie_cat_functional')">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
+- **Target:** `#cookie_cat_statistic`
+  - **HTML:** `<input class="coi__checkbox" tabindex="0" data-index="0" name="cookie_cat_statistic" id="cookie_cat_statistic" type="checkbox" title="Statistiske" onclick="CookieInformation.changeCategoryConsentDecision('cookie_cat_statistic')">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
+- **Target:** `#cookie_cat_marketing`
+  - **HTML:** `<input class="coi__checkbox" tabindex="0" data-index="0" name="cookie_cat_marketing" id="cookie_cat_marketing" type="checkbox" title="Markedsføring" onclick="CookieInformation.changeCategoryConsentDecision('cookie_cat_marketing')">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
 
 ### All page content should be contained by landmarks
 
@@ -73,5 +97,11 @@
 
 #### Affected Elements:
 
-- `.button-tabs-tile__title`
-- `.tabs`
+- **Target:** `.button-tabs-tile__title`
+  - **HTML:** `<h2 class="button-tabs-tile__title">Meld deg på nyhetsbrev</h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.tabs`
+  - **HTML:** `<div class="tabs">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

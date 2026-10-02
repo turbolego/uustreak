@@ -17,9 +17,18 @@
 
 #### Affected Elements:
 
-- `.styles_destination__Nog60 > .styles_searchPlannerButton__OxudZ[role="tab"][aria-controls="search-planner-tabs"]`
-- `div:nth-child(2) > .styles_searchPlannerButton__OxudZ[role="tab"][aria-controls="search-planner-tabs"]`
-- `.styles_duration__hHAoo > .styles_searchPlannerButton__OxudZ[role="tab"][aria-controls="search-planner-tabs"]`
+- **Target:** `.styles_destination__Nog60 > .styles_searchPlannerButton__OxudZ[role="tab"][aria-controls="search-planner-tabs"]`
+  - **HTML:** `<button type="button" role="tab" aria-selected="false" aria-controls="search-planner-tabs" class="styles_searchPlannerButton__OxudZ">`
+  - **Failure summary:** Fix any of the following: Required ARIA parent role not present: tablist
+
+- **Target:** `div:nth-child(2) > .styles_searchPlannerButton__OxudZ[role="tab"][aria-controls="search-planner-tabs"]`
+  - **HTML:** `<button type="button" role="tab" aria-selected="false" aria-controls="search-planner-tabs" class="styles_searchPlannerButton__OxudZ">`
+  - **Failure summary:** Fix any of the following: Required ARIA parent role not present: tablist
+
+- **Target:** `.styles_duration__hHAoo > .styles_searchPlannerButton__OxudZ[role="tab"][aria-controls="search-planner-tabs"]`
+  - **HTML:** `<button type="button" role="tab" aria-selected="false" aria-controls="search-planner-tabs" class="styles_searchPlannerButton__OxudZ">`
+  - **Failure summary:** Fix any of the following: Required ARIA parent role not present: tablist
+
 
 ### Links must have discernible text
 
@@ -32,9 +41,18 @@
 
 #### Affected Elements:
 
-- `.styles_socialLink__M6Omi[rel="noopener noreferrer"][target="_blank"]:nth-child(1)`
-- `.styles_socialLink__M6Omi[rel="noopener noreferrer"][target="_blank"]:nth-child(2)`
-- `.styles_socialLink__M6Omi[rel="noopener noreferrer"][target="_blank"]:nth-child(3)`
+- **Target:** `.styles_socialLink__M6Omi[rel="noopener noreferrer"][target="_blank"]:nth-child(1)`
+  - **HTML:** `<a target="_blank" rel="noopener noreferrer" class="styles_socialLink__M6Omi" href="https://www.youtube.com/c/hurtigruten">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `.styles_socialLink__M6Omi[rel="noopener noreferrer"][target="_blank"]:nth-child(2)`
+  - **HTML:** `<a target="_blank" rel="noopener noreferrer" class="styles_socialLink__M6Omi" href="https://www.facebook.com/hurtigrutenglobal">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `.styles_socialLink__M6Omi[rel="noopener noreferrer"][target="_blank"]:nth-child(3)`
+  - **HTML:** `<a target="_blank" rel="noopener noreferrer" class="styles_socialLink__M6Omi" href="https://www.instagram.com/hurtigruten/">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
@@ -47,7 +65,10 @@
 
 #### Affected Elements:
 
-- `.styles_contact__3TsYS > ul`
+- **Target:** `.styles_contact__3TsYS > ul`
+  - **HTML:** `<ul><a href="tel:+4775987781">+4775987781</a><a href="mailto:booking@hurtigruten.com">booking@hurtigruten.com</a><a href="/nb-no/hjelp/kontakt-oss">Kontakt oss</a></ul>`
+  - **Failure summary:** Fix all of the following: List element has direct children that are not allowed: a
+
 
 ### All page content should be contained by landmarks
 
@@ -60,11 +81,26 @@
 
 #### Affected Elements:
 
-- `.promoStyles_lgView__S_OoW > span`
-- `.promoStyles_lgView__S_OoW > .styles_linkButton__ELdsG[rel=""][target="_self"] > .styles_btnInner___iGIh > .styles_btnText__qlsBU`
-- `.styles_newsLetterContainer__tSOhS > .styles_wrapper__LfF0i.no-width-control > div > .styles_titleWrapper__BalEl`
-- `.styles_newsLetterContainer__tSOhS > .styles_wrapper__LfF0i.no-width-control > div > .styles_contentWrapper__ASMNd`
-- `a[href$="nyhetsbrev"] > .styles_btnInner___iGIh > .styles_btnText__qlsBU`
+- **Target:** `.promoStyles_lgView__S_OoW > span`
+  - **HTML:** `<span>Havn til havn-reiser: reis langs favorittstrekningen din.</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.promoStyles_lgView__S_OoW > .styles_linkButton__ELdsG[rel=""][target="_self"] > .styles_btnInner___iGIh > .styles_btnText__qlsBU`
+  - **HTML:** `<span class="styles_btnText__qlsBU" style="visibility:visible">Bestill nå</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.styles_newsLetterContainer__tSOhS > .styles_wrapper__LfF0i.no-width-control > div > .styles_titleWrapper__BalEl`
+  - **HTML:** `<div class="styles_titleWrapper__BalEl"><h2 class="styles_title__1IJed">Meld deg på nyhetsbrevet vårt</h2></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.styles_newsLetterContainer__tSOhS > .styles_wrapper__LfF0i.no-width-control > div > .styles_contentWrapper__ASMNd`
+  - **HTML:** `<div class="styles_contentWrapper__ASMNd"><div class="styles_richTextFlowContainer__It5D0"><p>Få nyheter, spennende nye reiseruter og inspirerende artikler direkte i innboksen din.</p></div></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[href$="nyhetsbrev"] > .styles_btnInner___iGIh > .styles_btnText__qlsBU`
+  - **HTML:** `<span class="styles_btnText__qlsBU" style="visibility:visible">Ja, meld meg på</span>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
 
 ### Select element must have an accessible name
 
@@ -77,4 +113,7 @@
 
 #### Affected Elements:
 
-- `select`
+- **Target:** `select`
+  - **HTML:** `<select class="styles_selectStyle__UTtq4">`
+  - **Failure summary:** Fix any of the following: Element does not have an implicit (wrapped) <label> Element does not have an explicit <label> aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do n…
+

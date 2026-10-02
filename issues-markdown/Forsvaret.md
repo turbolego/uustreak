@@ -17,5 +17,11 @@
 
 #### Affected Elements:
 
-- `.cookie-panel-banner__title`
-- `.cookie-panel-banner__description`
+- **Target:** `.cookie-panel-banner__title`
+  - **HTML:** `<h2 class="cookie-panel-banner__title">Denne siden bruker informasjonskapsler (cookies)</h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.cookie-panel-banner__description`
+  - **HTML:** `<p class="cookie-panel-banner__description">Forsvaret.no bruker informasjonskapsler (cookies) for å forbedre brukeropplevelsen, opprettholde nettsidens funksjonalitet og til markedsføring.</p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

@@ -17,8 +17,14 @@
 
 #### Affected Elements:
 
-- `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-slide[data-slick-index="1"][aria-hidden="true"]`
-- `#bai-open-chat-btn`
+- **Target:** `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-slide[data-slick-index="1"][aria-hidden="true"]`
+  - **HTML:** `<div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 402px;">`
+  - **Failure summary:** Fix all of the following: Focusable content should have tabindex="-1" or be removed from the DOM
+
+- **Target:** `#bai-open-chat-btn`
+  - **HTML:** `<button id="bai-open-chat-btn" aria-hidden="true" class="tooltiped-element" title="Spør Sidsel om spørsmål om ditt medlemskap" type="button" onclick="javascript:openChat()"> &nbsp; </button>`
+  - **Failure summary:** Fix all of the following: Focusable content should be disabled or be removed from the DOM
+
 
 ### Buttons must have discernible text
 
@@ -31,8 +37,14 @@
 
 #### Affected Elements:
 
-- `.arrangementPage__info__months--previous`
-- `.arrangementPage__info__months--next`
+- **Target:** `.arrangementPage__info__months--previous`
+  - **HTML:** `<button class="arrangementPage__info__months--previous" disabled=""></button>`
+  - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
+
+- **Target:** `.arrangementPage__info__months--next`
+  - **HTML:** `<button class="arrangementPage__info__months--next"></button>`
+  - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
+
 
 ### Heading levels should only increase by one
 
@@ -45,8 +57,14 @@
 
 #### Affected Elements:
 
-- `.slick-current.slick-active[data-slick-index="2"] > div > .uagb-post__inner-wrap > h5`
-- `.slick-slide[data-slick-index="2"][aria-hidden="true"] > div > .uagb-post__inner-wrap > h5`
+- **Target:** `.slick-current.slick-active[data-slick-index="2"] > div > .uagb-post__inner-wrap > h5`
+  - **HTML:** `<h5 class="uagb-post__title uagb-post__text"> <a href="https://hk.no/2026/09/en-million-kroner-til-norsk-folkehjelp/" target="_self" rel="bookmark noopener noreferrer" tabindex="0">Én million kroner til Norsk Folkehjelp</a> </h5>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `.slick-slide[data-slick-index="2"][aria-hidden="true"] > div > .uagb-post__inner-wrap > h5`
+  - **HTML:** `<h5 class="uagb-post__title uagb-post__text"> <a href="https://hk.no/bransjer/fagbevegelse/" target="_self" rel="bookmark noopener noreferrer" tabindex="0">Fagbevegelse</a> </h5>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Links must have discernible text
 
@@ -59,10 +77,22 @@
 
 #### Affected Elements:
 
-- `.slick-current.slick-active[data-slick-index="2"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="3"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="4"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `.slick-current.slick-active[data-slick-index="3"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+- **Target:** `.slick-current.slick-active[data-slick-index="2"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+  - **HTML:** `<a href="https://hk.no/2026/09/en-million-kroner-til-norsk-folkehjelp/" target="_self" rel="bookmark noopener noreferrer" tabindex="0">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="3"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+  - **HTML:** `<a href="https://hk.no/2026/09/afp-konferansen-og-veien-videre/" target="_self" rel="bookmark noopener noreferrer" tabindex="0">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `.uagb-block-9bbc347e > .slick-list.draggable > .slick-track > .slick-active[data-slick-index="4"][aria-hidden="false"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+  - **HTML:** `<a href="https://hk.no/2026/09/forslag-til-en-ny-avtalefestet-pensjon-afp/" target="_self" rel="bookmark noopener noreferrer" tabindex="-1">`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
+- **Target:** `.slick-current.slick-active[data-slick-index="3"] > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
+  - **HTML:** `<a href="https://hk.no/bransjer/finans-og-eiendom/" target="_self" rel="bookmark noopener noreferrer" tabindex="0">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### All page content should be contained by landmarks
 
@@ -75,5 +105,11 @@
 
 #### Affected Elements:
 
-- `.skip-link`
-- `#bounceText`
+- **Target:** `.skip-link`
+  - **HTML:** `<a class="skip-link screen-reader-text" href="#content"> Hopp rett til innholdet</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#bounceText`
+  - **HTML:** `<div id="bounceText" class="animated bounceInRight">Hei, jeg heter Sidsel. Hva kan jeg hjelpe med? </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

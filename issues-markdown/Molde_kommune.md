@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `html`
+- **Target:** `html`
+  - **HTML:** `<html lang="nb">`
+  - **Failure summary:** Fix all of the following: Document does not have a main landmark
+
 
 ### Page should contain a level-one heading
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `html`
+- **Target:** `html`
+  - **HTML:** `<html lang="nb">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+
 
 ### All page content should be contained by landmarks
 
@@ -43,21 +49,75 @@
 
 #### Affected Elements:
 
-- `.top-boxes`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartTittel`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(1)`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(2)`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(3)`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(4)`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(5)`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(6)`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(7)`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(8)`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(9)`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6455`
-- `.middle-boxes--middle.middle-boxes:nth-child(10)`
-- `.middle-boxes--calendar`
-- `.middle-boxes--middle.middle-boxes:nth-child(12)`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_6466 > .webPartTittel`
-- `.container > ul`
-- `.webPartBunnLink`
+- **Target:** `.top-boxes`
+  - **HTML:** `<div class="top-boxes">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartTittel`
+  - **HTML:** `<h2 class="webPartTittel"> <span>Våre tjenester</span> </h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(1)`
+  - **HTML:** `<li class="toplevel">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(2)`
+  - **HTML:** `<li class="toplevel">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(3)`
+  - **HTML:** `<li class="toplevel">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(4)`
+  - **HTML:** `<li class="toplevel">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(5)`
+  - **HTML:** `<li class="toplevel">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(6)`
+  - **HTML:** `<li class="toplevel">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(7)`
+  - **HTML:** `<li class="toplevel">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(8)`
+  - **HTML:** `<li class="toplevel">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6243 > .webPartInnhold > .vListe > .toplevel:nth-child(9)`
+  - **HTML:** `<li class="toplevel">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6455`
+  - **HTML:** `<div class="webPart wp-view-all" id="ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6455">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.middle-boxes--middle.middle-boxes:nth-child(10)`
+  - **HTML:** `<div class="middle-boxes middle-boxes--middle">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.middle-boxes--calendar`
+  - **HTML:** `<div class="middle-boxes middle-boxes--calendar">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.middle-boxes--middle.middle-boxes:nth-child(12)`
+  - **HTML:** `<div class="middle-boxes middle-boxes--middle">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_6466 > .webPartTittel`
+  - **HTML:** `<h2 class="webPartTittel"> <span>Aktuelt fra kommunen</span> </h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.container > ul`
+  - **HTML:** `<ul>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.webPartBunnLink`
+  - **HTML:** `<div class="webPartBunnLink"> <a id="ctl00_ctl00_ctl00_innhold_MidtSone_ctl07_WebpartId_6466_WebpartId_6466_hlLinkAlle" class="MargLink" href="/aktuelt/">Se alle saker</a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

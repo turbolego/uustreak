@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `._navbar_48rpq_21`
+- **Target:** `._navbar_48rpq_21`
+  - **HTML:** `<nav class="_navbar_48rpq_21 _hfContainer_1y2sh_15 ">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+

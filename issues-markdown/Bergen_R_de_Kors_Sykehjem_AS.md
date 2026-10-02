@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `.has-border-color`
+- **Target:** `.has-border-color`
+  - **HTML:** `<a class="wp-block-button__lin..." href="http://brks.no/kafe-..." style="border-color:#73cee3...">`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.95 (foreground color: #eb4034, background color: #ffffff, font size: 14.4pt (19.2px), font weight: normal). Expected contrast ratio of 4.5:1
+

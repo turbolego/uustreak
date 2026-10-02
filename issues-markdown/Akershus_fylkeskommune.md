@@ -17,13 +17,43 @@
 
 #### Affected Elements:
 
-- `.visually-hidden`
-- `#Sone2501`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ucSearchField_txtSearch`
-- `#Sone2502`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5000`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_10099 > .webPartTittel`
-- `.container > ul`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_10111`
-- `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5500`
-- `.back-to-top-button-wrapper`
+- **Target:** `.visually-hidden`
+  - **HTML:** `<h1 class="visually-hidden"> Akershus fylkeskommune </h1>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#Sone2501`
+  - **HTML:** `<div id="Sone2501" class="zone Zone webPartZoneVertical">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_ucSearchField_txtSearch`
+  - **HTML:** `<input name="ctl00$ctl00$ctl00$innhold$MidtSone$ucSearchField$txtSearch" type="text" id="ctl00_ctl00_ctl00_innhold_MidtSone_ucSearchField_txtSearch" class="js-liten-trigger-search" aria-label="Søketekst" placeholder="Søk etter innhold" dat…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#Sone2502`
+  - **HTML:** `<div id="Sone2502" class="zone Zone webPartZoneVertical">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5000`
+  - **HTML:** `<div id="ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5000" class="zone-container wrapper-outer zone-container--white zone-container--service-menu">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_10099 > .webPartTittel`
+  - **HTML:** `<h2 class="webPartTittel"> <span>Aktuelt</span> </h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.container > ul`
+  - **HTML:** `<ul>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_10111`
+  - **HTML:** `<div class="webPart article-list-page-bottom-links" id="ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_10111">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5500`
+  - **HTML:** `<div id="ctl00_ctl00_ctl00_innhold_MidtSone_plhZoneContainer5500" class="zone-container wrapper-outer zone-container--white">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.back-to-top-button-wrapper`
+  - **HTML:** `<div class="back-to-top-button-wrapper"> <a class="back-to-top-button js-back-to-top-button" href="#header"> <span>Til toppen</span> </a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `header`
+- **Target:** `header`
+  - **HTML:** `<header role="navigation" class="header-main container-fluid ">`
+  - **Failure summary:** Fix any of the following: ARIA role navigation is not allowed for given element
+
 
 ### Buttons must have discernible text
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `#itx-chat-frame, .btn-lg`
+- **Target:** `#itx-chat-frame, .btn-lg`
+  - **HTML:** `<button type="button" class="btn btn-lg rounded-pill primary icon-only"><i class="bi bi-chat-fill"></i> <!----></button>`
+  - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
+
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -43,8 +49,14 @@
 
 #### Affected Elements:
 
-- `.Button-module-scss-module__gW1A4G__small`
-- `.slick-current > div > .Carousel-module-scss-module__2GuYGa__item.row > .text-center.col-12 > .text-decoration-none.Button-module-scss-module__gW1A4G__color-hover-dark-red.Button-module-scss-module__gW1A4G__button`
+- **Target:** `.Button-module-scss-module__gW1A4G__small`
+  - **HTML:** `<button type="button" class="Button-module-scss-module__gW1A4G__button Button-module-scss-module__gW1A4G__small">Bli medlem her</button>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.85 (foreground color: #ffffff, background color: #f23a3d, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
+- **Target:** `.slick-current > div > .Carousel-module-scss-module__2GuYGa__item.row > .text-center.col-12 > .text-decoration-none.Button-module-scss-module__gW1A4G__color-hover-dark-red.Button-module-scss-module__gW1A4G__button`
+  - **HTML:** `<a href="https://sporty.no/arrangement/svart-troye-challenge-finale" tabindex="-1" class="text-decoration-none Button-module-scss-module__gW1A4G__button Button-module-scss-module__gW1A4G__color-hover-dark-red">Bli med!</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.85 (foreground color: #ffffff, background color: #f23a3d, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -57,7 +69,10 @@
 
 #### Affected Elements:
 
-- `.additional-nav`
+- **Target:** `.additional-nav`
+  - **HTML:** `<nav class="additional-nav">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### All page content should be contained by landmarks
 
@@ -70,4 +85,7 @@
 
 #### Affected Elements:
 
-- `.skip`
+- **Target:** `.skip`
+  - **HTML:** `<a class="skip" href="#main">Hopp til innholdet</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

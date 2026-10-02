@@ -17,8 +17,14 @@
 
 #### Affected Elements:
 
-- `#col-1405263149 > .dark.col-inner > p`
-- `#col-1170080317 > .dark.col-inner > p`
+- **Target:** `#col-1405263149 > .dark.col-inner > p`
+  - **HTML:** `<p>Aberia Ung er et landsdekkende, ideelt aksjeselskap som tilbyr tiltak i institusjon.</p>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.15 (foreground color: #f1f1f1, background color: #529389, font size: 12.6pt (16.8px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#col-1170080317 > .dark.col-inner > p`
+  - **HTML:** `<p>Vi har drevet omsorgs- og avlastningstjenester siden 1981 og tilbyr våre tjenester til brukere i alle aldersgrupper.</p>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.08 (foreground color: #f1f1f1, background color: #1094c1, font size: 12.6pt (16.8px), font weight: normal). Expected contrast ratio of 4.5:1
+
 
 ### Main landmark should not be contained in another landmark
 
@@ -31,7 +37,10 @@
 
 #### Affected Elements:
 
-- `#content`
+- **Target:** `#content`
+  - **HTML:** `<div id="content" role="main" class="content-area">`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
 
 ### Document should not have more than one main landmark
 
@@ -44,7 +53,10 @@
 
 #### Affected Elements:
 
-- `#main`
+- **Target:** `#main`
+  - **HTML:** `<main id="main" class="">`
+  - **Failure summary:** Fix any of the following: Document has more than one main landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -57,7 +69,10 @@
 
 #### Affected Elements:
 
-- `#main`
+- **Target:** `#main`
+  - **HTML:** `<main id="main" class="">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### All page content should be contained by landmarks
 
@@ -70,7 +85,10 @@
 
 #### Affected Elements:
 
-- `.cli-bar-message`
+- **Target:** `.cli-bar-message`
+  - **HTML:** `<div class="cli-bar-message">Denne nettsiden benytter informasjonskapsler (cookies).</div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
 
 ### Scrollable region must have keyboard access
 
@@ -83,4 +101,7 @@
 
 #### Affected Elements:
 
-- `.slider`
+- **Target:** `.slider`
+  - **HTML:** `<div class="slider slider-type-f..." data-flickity-option...="{ "cellA...">`
+  - **Failure summary:** Fix any of the following: Element should have focusable content Element should be focusable
+

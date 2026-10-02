@@ -17,11 +17,26 @@
 
 #### Affected Elements:
 
-- `#hs-form-iframe-0, ul`
-- `#hs-form-iframe-0, li:nth-child(1)`
-- `#hs-form-iframe-0, li:nth-child(2)`
-- `#hs-form-iframe-0, li:nth-child(3)`
-- `#hs-form-iframe-0, li:nth-child(4)`
+- **Target:** `#hs-form-iframe-0, ul`
+  - **HTML:** `<ul role="checkbox" class="inputs-list multi-container">`
+  - **Failure summary:** Fix any of the following: ARIA role checkbox is not allowed for given element
+
+- **Target:** `#hs-form-iframe-0, li:nth-child(1)`
+  - **HTML:** `<li class="hs-form-checkbox" role="checkbox">`
+  - **Failure summary:** Fix any of the following: ARIA role checkbox is not allowed for given element
+
+- **Target:** `#hs-form-iframe-0, li:nth-child(2)`
+  - **HTML:** `<li class="hs-form-checkbox" role="checkbox">`
+  - **Failure summary:** Fix any of the following: ARIA role checkbox is not allowed for given element
+
+- **Target:** `#hs-form-iframe-0, li:nth-child(3)`
+  - **HTML:** `<li class="hs-form-checkbox" role="checkbox">`
+  - **Failure summary:** Fix any of the following: ARIA role checkbox is not allowed for given element
+
+- **Target:** `#hs-form-iframe-0, li:nth-child(4)`
+  - **HTML:** `<li class="hs-form-checkbox" role="checkbox"><label for="kategori3-e99cf25b-2692-45e9-881d-bbf8eb3abd57" class="hs-form-checkbox-display"><input id="kategori3-e99cf25b-2692-45e9-881d-bbf8eb3abd57" class="hs-input" type="checkbox" name="kat…`
+  - **Failure summary:** Fix any of the following: ARIA role checkbox is not allowed for given element
+
 
 ### Required ARIA attributes must be provided
 
@@ -34,11 +49,26 @@
 
 #### Affected Elements:
 
-- `#hs-form-iframe-0, ul`
-- `#hs-form-iframe-0, li:nth-child(1)`
-- `#hs-form-iframe-0, li:nth-child(2)`
-- `#hs-form-iframe-0, li:nth-child(3)`
-- `#hs-form-iframe-0, li:nth-child(4)`
+- **Target:** `#hs-form-iframe-0, ul`
+  - **HTML:** `<ul role="checkbox" class="inputs-list multi-container">`
+  - **Failure summary:** Fix any of the following: Required ARIA attribute not present: aria-checked
+
+- **Target:** `#hs-form-iframe-0, li:nth-child(1)`
+  - **HTML:** `<li class="hs-form-checkbox" role="checkbox">`
+  - **Failure summary:** Fix any of the following: Required ARIA attribute not present: aria-checked
+
+- **Target:** `#hs-form-iframe-0, li:nth-child(2)`
+  - **HTML:** `<li class="hs-form-checkbox" role="checkbox">`
+  - **Failure summary:** Fix any of the following: Required ARIA attribute not present: aria-checked
+
+- **Target:** `#hs-form-iframe-0, li:nth-child(3)`
+  - **HTML:** `<li class="hs-form-checkbox" role="checkbox">`
+  - **Failure summary:** Fix any of the following: Required ARIA attribute not present: aria-checked
+
+- **Target:** `#hs-form-iframe-0, li:nth-child(4)`
+  - **HTML:** `<li class="hs-form-checkbox" role="checkbox"><label for="kategori3-e99cf25b-2692-45e9-881d-bbf8eb3abd57" class="hs-form-checkbox-display"><input id="kategori3-e99cf25b-2692-45e9-881d-bbf8eb3abd57" class="hs-input" type="checkbox" name="kat…`
+  - **Failure summary:** Fix any of the following: Required ARIA attribute not present: aria-checked
+
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -51,8 +81,14 @@
 
 #### Affected Elements:
 
-- `a[aria-label="LES MER OM MANPOWER ACADEMY"]`
-- `#hs-form-iframe-0, .hs-button`
+- **Target:** `a[aria-label="LES MER OM MANPOWER ACADEMY"]`
+  - **HTML:** `<a class="primary-button " aria-label="LES MER OM MANPOWER ACADEMY" href="/nb/jobbsoker/manpower-academy">LES MER OM MANPOWER ACADEMY</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.06 (foreground color: #c25700, background color: #f3f3f4, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#hs-form-iframe-0, .hs-button`
+  - **HTML:** `<input type="submit" class="hs-button primary large" value="Send ">`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2.56 (foreground color: #ffffff, background color: #ff7a59, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1
+
 
 ### Interactive controls must not be nested
 
@@ -65,11 +101,26 @@
 
 #### Affected Elements:
 
-- `#hs-form-iframe-0, ul`
-- `#hs-form-iframe-0, li:nth-child(1)`
-- `#hs-form-iframe-0, li:nth-child(2)`
-- `#hs-form-iframe-0, li:nth-child(3)`
-- `#hs-form-iframe-0, li:nth-child(4)`
+- **Target:** `#hs-form-iframe-0, ul`
+  - **HTML:** `<ul role="checkbox" class="inputs-list multi-container">`
+  - **Failure summary:** Fix any of the following: Element has focusable descendants
+
+- **Target:** `#hs-form-iframe-0, li:nth-child(1)`
+  - **HTML:** `<li class="hs-form-checkbox" role="checkbox">`
+  - **Failure summary:** Fix any of the following: Element has focusable descendants
+
+- **Target:** `#hs-form-iframe-0, li:nth-child(2)`
+  - **HTML:** `<li class="hs-form-checkbox" role="checkbox">`
+  - **Failure summary:** Fix any of the following: Element has focusable descendants
+
+- **Target:** `#hs-form-iframe-0, li:nth-child(3)`
+  - **HTML:** `<li class="hs-form-checkbox" role="checkbox">`
+  - **Failure summary:** Fix any of the following: Element has focusable descendants
+
+- **Target:** `#hs-form-iframe-0, li:nth-child(4)`
+  - **HTML:** `<li class="hs-form-checkbox" role="checkbox"><label for="kategori3-e99cf25b-2692-45e9-881d-bbf8eb3abd57" class="hs-form-checkbox-display"><input id="kategori3-e99cf25b-2692-45e9-881d-bbf8eb3abd57" class="hs-input" type="checkbox" name="kat…`
+  - **Failure summary:** Fix any of the following: Element has focusable descendants
+
 
 ### All page content should be contained by landmarks
 
@@ -82,4 +133,7 @@
 
 #### Affected Elements:
 
-- `#onetrust-banner-sdk`
+- **Target:** `#onetrust-banner-sdk`
+  - **HTML:** `<div id="onetrust-banner-sdk" class="otCenterRounded default ot-wo-title vertical-align-content" tabindex="0" aria-label="Personvern" aria-describedby="onetrust-policy-text">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

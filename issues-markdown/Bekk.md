@@ -17,5 +17,11 @@
 
 #### Affected Elements:
 
-- `._1fnfllg8[as="button"]:nth-child(1)`
-- `._1fnfllg8[as="button"]:nth-child(2)`
+- **Target:** `._1fnfllg8[as="button"]:nth-child(1)`
+  - **HTML:** `<button class="_1fnfllg8 _1a34q2w0 xhzyau7" as="button">`
+  - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
+
+- **Target:** `._1fnfllg8[as="button"]:nth-child(2)`
+  - **HTML:** `<button class="_1fnfllg8 _1a34q2w0 xhzyau7" as="button">`
+  - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
+

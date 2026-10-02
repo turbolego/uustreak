@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.md\:gap-6.gap-4.h-full > .md\:gap-6.gap-4`
+- **Target:** `.md\:gap-6.gap-4.h-full > .md\:gap-6.gap-4`
+  - **HTML:** `<nav class="flex h-full items-center gap-4 md:gap-6">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### Links must have discernible text
 
@@ -30,4 +33,7 @@
 
 #### Affected Elements:
 
-- `.group\/header-logo`
+- **Target:** `.group\/header-logo`
+  - **HTML:** `<a class="group/header-logo rounded-sm px-2 py-1" href="/no/">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+

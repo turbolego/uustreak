@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `.frontimage > a`
+- **Target:** `.frontimage > a`
+  - **HTML:** `<a href="/no/Om-NPE/aktuelt/fra-pasientskader-til-pasientsikkerhet/"> <img src="/link/b1cb6818f6234b36b58d9965df0805f9.aspx" alt=""> </a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+

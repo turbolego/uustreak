@@ -17,6 +17,15 @@
 
 #### Affected Elements:
 
-- `#silktide-banner > .mb-4`
-- `#silktide-banner > p:nth-child(2)`
-- `#silktide-banner > p:nth-child(3)`
+- **Target:** `#silktide-banner > .mb-4`
+  - **HTML:** `<h2 class="mb-4"> Osloskolen bruker informasjonskapsler </h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#silktide-banner > p:nth-child(2)`
+  - **HTML:** `<p> For at nettstedet skal fungere og være trygt, bruker Osloskolen informasjonskapsler. Noen er teknisk nødvendige, mens andre sikrer ulik funksjonalitet. </p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#silktide-banner > p:nth-child(3)`
+  - **HTML:** `<p> Godtar du alle informasjonskapsler, tillater du også at vi samler inn data om statistikk og brukeradferd. </p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

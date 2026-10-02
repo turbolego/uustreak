@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.MuiPaper-elevation24`
+- **Target:** `.MuiPaper-elevation24`
+  - **HTML:** `<div class="MuiPaper-root MuiPap..." role="dialog" aria-labelledby="_r_1_" aria-modal="true" tabindex="-1" data-mui-focusable="" style="--Paper-shadow: var(...">`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -30,4 +33,7 @@
 
 #### Affected Elements:
 
-- `#approveAllCookies`
+- **Target:** `#approveAllCookies`
+  - **HTML:** `<button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSuccess MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorSuccess bnmui-rekv2s" tabindex="0" type="button" id="approveAllCookies" title…`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2.86 (foreground color: #ffffff, background color: #45ae22, font size: 10.3pt (13.714px), font weight: normal). Expected contrast ratio of 4.5:1
+

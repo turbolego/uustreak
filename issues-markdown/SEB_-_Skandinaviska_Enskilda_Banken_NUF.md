@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `pwng-mobile-menu`
+- **Target:** `pwng-mobile-menu`
+  - **HTML:** `<pwng-mobile-menu role="dialog" _nghost-ng-c585049648="" class="ng-tns-c585049648-1 ng-tns-c3777577788-0 ng-star-inserted">`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+

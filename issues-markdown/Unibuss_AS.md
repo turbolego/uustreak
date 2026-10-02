@@ -17,10 +17,22 @@
 
 #### Affected Elements:
 
-- `.wp-container-core-group-is-layout-3 > .wp-block-buttons.wp-block-buttons-is-layout-flex.is-layout-flex > .has-custom-width.wp-block-button__width-100.is-style-fill > .has-contrast-3-background-color.has-border-color.has-contrast-3-border-color`
-- `.wp-container-core-group-is-layout-4 > .wp-block-buttons.wp-block-buttons-is-layout-flex.is-layout-flex > .has-custom-width.wp-block-button__width-100.is-style-fill > .has-contrast-3-background-color.has-border-color.has-contrast-3-border-color`
-- `.wp-container-core-group-is-layout-5 > .wp-block-buttons.wp-block-buttons-is-layout-flex.is-layout-flex > .has-custom-width.wp-block-button__width-100.is-style-fill > .has-contrast-3-background-color.has-border-color.has-contrast-3-border-color`
-- `.modal-cacsp-btn-accept`
+- **Target:** `.wp-container-core-group-is-layout-3 > .wp-block-buttons.wp-block-buttons-is-layout-flex.is-layout-flex > .has-custom-width.wp-block-button__width-100.is-style-fill > .has-contrast-3-background-color.has-border-color.has-contrast-3-border-color`
+  - **HTML:** `<a class="wp-block-button__link has-base-color has-contrast-3-background-color has-text-color has-background has-link-color has-border-color has-contrast-3-border-color wp-element-button" href="https://www.unibuss.no/jobb-i-unibuss/" style…`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.31 (foreground color: #ffffff, background color: #3c8a2e, font size: 16.9pt (22.5024px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `.wp-container-core-group-is-layout-4 > .wp-block-buttons.wp-block-buttons-is-layout-flex.is-layout-flex > .has-custom-width.wp-block-button__width-100.is-style-fill > .has-contrast-3-background-color.has-border-color.has-contrast-3-border-color`
+  - **HTML:** `<a class="wp-block-button__link has-base-color has-contrast-3-background-color has-text-color has-background has-link-color has-border-color has-contrast-3-border-color wp-element-button" href="https://www.unibuss.no/om-oss/trafikksikkerhe…`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.31 (foreground color: #ffffff, background color: #3c8a2e, font size: 16.9pt (22.5024px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `.wp-container-core-group-is-layout-5 > .wp-block-buttons.wp-block-buttons-is-layout-flex.is-layout-flex > .has-custom-width.wp-block-button__width-100.is-style-fill > .has-contrast-3-background-color.has-border-color.has-contrast-3-border-color`
+  - **HTML:** `<a class="wp-block-button__link has-base-color has-contrast-3-background-color has-text-color has-background has-link-color has-border-color has-contrast-3-border-color wp-element-button" href="https://www.unibuss.no/miljo-og-teknologi/" s…`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.31 (foreground color: #ffffff, background color: #3c8a2e, font size: 16.9pt (22.5024px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `.modal-cacsp-btn-accept`
+  - **HTML:** `<a href="#" class="modal-cacsp-btn modal-cacsp-btn-accept"> Godta alle </a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2.48 (foreground color: #ffffff, background color: #47b973, font size: 16.9pt (22.5024px), font weight: normal). Expected contrast ratio of 4.5:1
+
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
@@ -33,11 +45,26 @@
 
 #### Affected Elements:
 
-- `.wp-container-core-navigation-is-layout-2 > .wp-block-navigation__container.is-vertical`
-- `.wp-container-core-navigation-is-layout-3 > .wp-block-navigation__container.is-vertical`
-- `.wp-container-core-navigation-is-layout-4 > .wp-block-navigation__container.is-vertical`
-- `.wp-container-core-navigation-is-layout-5 > .wp-block-navigation__container.is-vertical`
-- `.wp-container-core-navigation-is-layout-6 > .wp-block-navigation__container.is-vertical:nth-child(1)`
+- **Target:** `.wp-container-core-navigation-is-layout-2 > .wp-block-navigation__container.is-vertical`
+  - **HTML:** `<ul class="wp-block-navigation__container has-text-color has-base-color is-vertical wp-block-navigation">`
+  - **Failure summary:** Fix all of the following: List element has direct children that are not allowed: ul
+
+- **Target:** `.wp-container-core-navigation-is-layout-3 > .wp-block-navigation__container.is-vertical`
+  - **HTML:** `<ul class="wp-block-navigation__container has-text-color has-base-color is-vertical wp-block-navigation">`
+  - **Failure summary:** Fix all of the following: List element has direct children that are not allowed: ul
+
+- **Target:** `.wp-container-core-navigation-is-layout-4 > .wp-block-navigation__container.is-vertical`
+  - **HTML:** `<ul class="wp-block-navigation__container has-text-color has-base-color is-vertical wp-block-navigation">`
+  - **Failure summary:** Fix all of the following: List element has direct children that are not allowed: ul
+
+- **Target:** `.wp-container-core-navigation-is-layout-5 > .wp-block-navigation__container.is-vertical`
+  - **HTML:** `<ul class="wp-block-navigation__container has-text-color has-base-color is-vertical wp-block-navigation">`
+  - **Failure summary:** Fix all of the following: List element has direct children that are not allowed: ul
+
+- **Target:** `.wp-container-core-navigation-is-layout-6 > .wp-block-navigation__container.is-vertical:nth-child(1)`
+  - **HTML:** `<ul class="wp-block-navigation__container has-text-color has-base-color is-vertical wp-block-navigation">`
+  - **Failure summary:** Fix all of the following: List element has direct children that are not allowed: ul
+
 
 ### Page should contain a level-one heading
 
@@ -50,7 +77,10 @@
 
 #### Affected Elements:
 
-- `html`
+- **Target:** `html`
+  - **HTML:** `<html lang="nb-NO" class="modal-cacsp-open-no-backdrop modal-cacsp-open">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+
 
 ### All page content should be contained by landmarks
 
@@ -63,11 +93,35 @@
 
 #### Affected Elements:
 
-- `.modal-cacsp-box-info > .modal-cacsp-box-content`
-- `.modal-cacsp-box-info > .modal-cacsp-btns`
-- `.modal-cacsp-box-settings > .modal-cacsp-box-header`
-- `.modal-cacsp-box-settings > .modal-cacsp-box-content`
-- `.modal-cacsp-box-settings-list > ul > li:nth-child(1)`
-- `.modal-cacsp-box-settings-list > ul > li:nth-child(3)`
-- `.modal-cacsp-box-settings-list > ul > li:nth-child(4)`
-- `.modal-cacsp-box-settings > .modal-cacsp-btns`
+- **Target:** `.modal-cacsp-box-info > .modal-cacsp-box-content`
+  - **HTML:** `<div class="modal-cacsp-box-content">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.modal-cacsp-box-info > .modal-cacsp-btns`
+  - **HTML:** `<div class="modal-cacsp-btns"> <a href="#" class="modal-cacsp-btn modal-cacsp-btn-settings"> Innstillinger </a> <a href="#" class="modal-cacsp-btn modal-cacsp-btn-accept"> Godta alle </a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.modal-cacsp-box-settings > .modal-cacsp-box-header`
+  - **HTML:** `<div class="modal-cacsp-box-header"> Informasjonskapsler (Cookies) </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.modal-cacsp-box-settings > .modal-cacsp-box-content`
+  - **HTML:** `<div class="modal-cacsp-box-content"> Velg hva slags informasjonskapsler du vil godta. Valget ditt lagres i ett år. <a href="https://www.unibuss.no/personvernerklaering/" target="_blank" rel="noopener noreferrer"> Les vår personvernerklæri…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.modal-cacsp-box-settings-list > ul > li:nth-child(1)`
+  - **HTML:** `<li>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.modal-cacsp-box-settings-list > ul > li:nth-child(3)`
+  - **HTML:** `<li>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.modal-cacsp-box-settings-list > ul > li:nth-child(4)`
+  - **HTML:** `<li>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.modal-cacsp-box-settings > .modal-cacsp-btns`
+  - **HTML:** `<div class="modal-cacsp-btns"> <a href="#" class="modal-cacsp-btn modal-cacsp-btn-save"> Lagre </a> <a href="#" class="modal-cacsp-btn modal-cacsp-btn-accept-all"> Godta alle </a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

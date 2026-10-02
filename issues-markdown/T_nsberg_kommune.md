@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `img[alt="Tønsberg kommune "]`
+- **Target:** `img[alt="Tønsberg kommune "]`
+  - **HTML:** `<img alt="Tønsberg kommune " src="/handlers/bv.ashx/i68ec8e25-b362-44a3-bb9b-f78acb11d7d8/46757tynsberg-kommune-logo-uten-visjon_liggende_sort.png">`
+  - **Failure summary:** Fix all of the following: Element contains <img> element with alt text that duplicates existing text
+
 
 ### Links must have discernible text
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `.back-to-top-button`
+- **Target:** `.back-to-top-button`
+  - **HTML:** `<a class="back-to-top-button js-back-to-top-button js-new-back-to-top-button" href="#header"> <span>Til toppen</span> </a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### All page content should be contained by landmarks
 
@@ -43,6 +49,15 @@
 
 #### Affected Elements:
 
-- `#ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_248 > .webPartTittel`
-- `#ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_248_WebpartId_248_txtSearch`
-- `#ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_249`
+- **Target:** `#ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_248 > .webPartTittel`
+  - **HTML:** `<h2 class="webPartTittel"> <span>Hva leter du etter i dag?</span> </h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_248_WebpartId_248_txtSearch`
+  - **HTML:** `<input name="ctl00$ctl00$ctl00$innhold$ctl07$WebpartId_248$WebpartId_248$txtSearch" type="text" id="ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_248_WebpartId_248_txtSearch" class="js-liten-trigger-search" aria-label="Søketekst" placeholder="…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_249`
+  - **HTML:** `<div class="webPart banner-webpart--links" id="ctl00_ctl00_ctl00_innhold_ctl07_WebpartId_249">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

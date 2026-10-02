@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `.navbar`
+- **Target:** `.navbar`
+  - **HTML:** `<nav class="navbar navbar-default navbar-fixed-top header__nav header header__shadow">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+

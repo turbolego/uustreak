@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.border-sky-600.rounded-lg.mb-6:nth-child(2) > .bg-white > .fk-kollaps-btn.gap-3.py-4 > h3`
+- **Target:** `.border-sky-600.rounded-lg.mb-6:nth-child(2) > .bg-white > .fk-kollaps-btn.gap-3.py-4 > h3`
+  - **HTML:** `<h3 class="text-lg m-0 text-slate-900 leading-snug flex-1">Om Nøkleby skole</h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Images must have alternative text
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `.language > img`
+- **Target:** `.language > img`
+  - **HTML:** `<img src="/icons/aksel-icons/Interface/Language.svg">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
 
 ### All page content should be contained by landmarks
 
@@ -43,4 +49,7 @@
 
 #### Affected Elements:
 
-- `div[x-show="step === 1"] > .font-medium.text-xl.text-gray-700`
+- **Target:** `div[x-show="step === 1"] > .font-medium.text-xl.text-gray-700`
+  - **HTML:** `<p class="text-xl font-medium text-gray-700">Fant du det du lette etter?</p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `img[alt="Sandefjord kommune"]`
+- **Target:** `img[alt="Sandefjord kommune"]`
+  - **HTML:** `<img alt="Sandefjord kommune" src="/handlers/bv.ashx/ife3625cd-bd2c-4725-8c06-dc6a53d3abc8/77declogo_hvit.svg">`
+  - **Failure summary:** Fix all of the following: Element contains <img> element with alt text that duplicates existing text
+
 
 ### All page content should be contained by landmarks
 
@@ -30,4 +33,7 @@
 
 #### Affected Elements:
 
-- `.webPartBunnLink`
+- **Target:** `.webPartBunnLink`
+  - **HTML:** `<div class="webPartBunnLink">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

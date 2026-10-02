@@ -17,8 +17,14 @@
 
 #### Affected Elements:
 
-- `.is-petroleum > .pageBoundary > .article-teasers > .article-teaser > .article-teaser__image > img`
-- `.is-peach > .pageBoundary > .article-teasers > .article-teaser > .article-teaser__image > img`
+- **Target:** `.is-petroleum > .pageBoundary > .article-teasers > .article-teaser > .article-teaser__image > img`
+  - **HTML:** `<img src="/globalassets/nyheter/bilder-til-nyhetssaker/utbedring-kyststi-holtekilen/oversiktskart.jpg?quality=70&amp;mode=crop&amp;width=800&amp;height=450">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `.is-peach > .pageBoundary > .article-teasers > .article-teaser > .article-teaser__image > img`
+  - **HTML:** `<img src="/globalassets/nyheter/bilder-til-nyhetssaker/kolsastoppen/kolsastoppen.jpg?quality=70&amp;mode=crop&amp;width=800&amp;height=450">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
 
 ### Links must have discernible text
 
@@ -31,4 +37,7 @@
 
 #### Affected Elements:
 
-- `.siteLogo`
+- **Target:** `.siteLogo`
+  - **HTML:** `<a href="/" class="siteLogo"> <img src="/UI/logo-dark.png" width="112" height="86" alt="Bærum kommune"> </a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+

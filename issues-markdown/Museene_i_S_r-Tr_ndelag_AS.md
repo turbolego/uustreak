@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `#portal`
+- **Target:** `#portal`
+  - **HTML:** `<html data-basecss="2" data-fullscreen="false" data-ng-app="m24App" data-ng-controller="BodyCtrl" id="portal" lang="no">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+

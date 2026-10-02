@@ -17,8 +17,14 @@
 
 #### Affected Elements:
 
-- `#acceptNecessary`
-- `#acceptAll`
+- **Target:** `#acceptNecessary`
+  - **HTML:** `<button id="acceptNecessary">Godta kun nødvendige cookies</button>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.13 (foreground color: #ffffff, background color: #28a745, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#acceptAll`
+  - **HTML:** `<button id="acceptAll">Godta alle cookies</button>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.13 (foreground color: #ffffff, background color: #28a745, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
+
 
 ### Images must have alternative text
 
@@ -31,7 +37,10 @@
 
 #### Affected Elements:
 
-- `a[href$="www.baerum.kommune.no"] > img`
+- **Target:** `a[href$="www.baerum.kommune.no"] > img`
+  - **HTML:** `<img src="https://moava.s3.amazonaws.com/baerum/baerum_kommunelogo_ny.png">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
 
 ### Alternative text of images should not be repeated as text
 
@@ -44,7 +53,10 @@
 
 #### Affected Elements:
 
-- `img[alt="Meld fra om utrygt skolemiljø"]`
+- **Target:** `img[alt="Meld fra om utrygt skolemiljø"]`
+  - **HTML:** `<img alt="Meld fra om utrygt skolemiljø" src="https://felles.bærumsskolen.no/grafikk/baerum_link_to_skolemiljo.jpg">`
+  - **Failure summary:** Fix all of the following: Element contains <img> element with alt text that duplicates existing text
+
 
 ### Links must have discernible text
 
@@ -57,7 +69,10 @@
 
 #### Affected Elements:
 
-- `a[href$="www.baerum.kommune.no"]`
+- **Target:** `a[href$="www.baerum.kommune.no"]`
+  - **HTML:** `<a href="https://www.baerum.kommune.no"> <img src="https://moava.s3.amazonaws.com/baerum/baerum_kommunelogo_ny.png"> </a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### All page content should be contained by landmarks
 
@@ -70,4 +85,7 @@
 
 #### Affected Elements:
 
-- `#cookieConsentOverlay`
+- **Target:** `#cookieConsentOverlay`
+  - **HTML:** `<div id="cookieConsentOverlay" class="active">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.LocationSearchFilter_job-title__yLOb_`
+- **Target:** `.LocationSearchFilter_job-title__yLOb_`
+  - **HTML:** `<input type="text" placeholder="Stillingstittel eller søkeord" class="LocationSearchFilter_job-title__yLOb_" name="jobsearch-title" title="Herojobsearch-title" value="">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -30,15 +33,42 @@
 
 #### Affected Elements:
 
-- `.SWPImage_swp-nextimage__raKqc`
-- `img[width="1600"][height="1067"][aria-label=""]`
-- `img[width="5472"]`
-- `img[width="7704"]`
-- `img[width="2048"][height="1366"][aria-label=""]`
-- `img[width="8192"]`
-- `img[width="5700"]`
-- `.tile-solutions-icon.icon-accent[aria-label=""]`
-- `.SWPImage_islhh-image__Hi_E2`
+- **Target:** `.SWPImage_swp-nextimage__raKqc`
+  - **HTML:** `<img alt="" title="" aria-label="" sizes="100vw" class="SWPImage_swp-nextima..." loading="lazy" srcset="/nb-no/-/jssmedia/pr..." src="/nb-no/-/media/proje...">`
+  - **Failure summary:** Fix all of the following: Element does not have global ARIA attribute
+
+- **Target:** `img[width="1600"][height="1067"][aria-label=""]`
+  - **HTML:** `<img alt="" width="1600" height="1067" title="" aria-label="" sizes="100vw" class="img-fluid" loading="lazy" srcset="/nb-no/-/jssmedia/pr..." src="/nb-no/-/media/proje...">`
+  - **Failure summary:** Fix all of the following: Element does not have global ARIA attribute
+
+- **Target:** `img[width="5472"]`
+  - **HTML:** `<img alt="" width="5472" height="3648" title="" aria-label="" sizes="100vw" class="img-fluid" loading="lazy" srcset="/nb-no/-/jssmedia/pr..." src="/nb-no/-/media/proje...">`
+  - **Failure summary:** Fix all of the following: Element does not have global ARIA attribute
+
+- **Target:** `img[width="7704"]`
+  - **HTML:** `<img alt="" width="7704" height="5136" title="" aria-label="" sizes="100vw" class="img-fluid" loading="lazy" srcset="/nb-no/-/jssmedia/pr..." src="/nb-no/-/media/proje...">`
+  - **Failure summary:** Fix all of the following: Element does not have global ARIA attribute
+
+- **Target:** `img[width="2048"][height="1366"][aria-label=""]`
+  - **HTML:** `<img alt="" width="2048" height="1366" title="" aria-label="" sizes="100vw" class="img-fluid" loading="lazy" srcset="/nb-no/-/jssmedia/pr..." src="/nb-no/-/media/proje...">`
+  - **Failure summary:** Fix all of the following: Element does not have global ARIA attribute
+
+- **Target:** `img[width="8192"]`
+  - **HTML:** `<img alt="" width="8192" height="5464" title="" aria-label="" sizes="100vw" class="img-fluid" loading="lazy" srcset="/nb-no/-/jssmedia/pr..." src="/nb-no/-/media/proje...">`
+  - **Failure summary:** Fix all of the following: Element does not have global ARIA attribute
+
+- **Target:** `img[width="5700"]`
+  - **HTML:** `<img alt="" width="5700" height="3798" title="" aria-label="" sizes="100vw" class="img-fluid" loading="lazy" srcset="/nb-no/-/jssmedia/pr..." src="/nb-no/-/media/proje...">`
+  - **Failure summary:** Fix all of the following: Element does not have global ARIA attribute
+
+- **Target:** `.tile-solutions-icon.icon-accent[aria-label=""]`
+  - **HTML:** `<img alt="" title="" aria-label="" sizes="100vw" class="material-icons-outli..." loading="lazy" srcset="/nb-no/-/jssmedia/pr..." src="/nb-no/-/media/proje...">`
+  - **Failure summary:** Fix all of the following: Element does not have global ARIA attribute
+
+- **Target:** `.SWPImage_islhh-image__Hi_E2`
+  - **HTML:** `<img alt="" width="1067" height="422" title="" aria-label="" sizes="100vw" class="SWPImage_islhh-image..." loading="lazy" srcset="/nb-no/-/jssmedia/pr..." src="/nb-no/-/media/proje...">`
+  - **Failure summary:** Fix all of the following: Element does not have global ARIA attribute
+
 
 ### All page content should be contained by landmarks
 
@@ -51,7 +81,10 @@
 
 #### Affected Elements:
 
-- `#onetrust-banner-sdk`
+- **Target:** `#onetrust-banner-sdk`
+  - **HTML:** `<div id="onetrust-banner-sdk" class="otFlat bottom ot-close-btn-link vertical-align-content ot-buttons-fw" tabindex="0" aria-label="Du må samhandle med banneret for å lukke det." style="bottom: 0px;">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
 
 ### Elements should not have tabindex greater than zero
 
@@ -64,4 +97,7 @@
 
 #### Affected Elements:
 
-- `.SkipLink_skip-btn__YhgD8`
+- **Target:** `.SkipLink_skip-btn__YhgD8`
+  - **HTML:** `<a class="SkipLink_skip-btn__YhgD8 skip-to-content skip-link" href="#main" aria-label="skip-to-main" tabindex="1">Skip to main </a>`
+  - **Failure summary:** Fix any of the following: Element has a tabindex greater than 0
+

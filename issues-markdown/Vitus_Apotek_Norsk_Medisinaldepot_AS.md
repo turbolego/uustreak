@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `h4`
+- **Target:** `h4`
+  - **HTML:** `<h4>Ved kjøp av 3 stk eller flere varer. Plukk &amp; miks</h4>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `.cms-recomendations:nth-child(6) > section > div > .carousel[aria-roledescription="carousel"][role="region"]`
+- **Target:** `.cms-recomendations:nth-child(6) > section > div > .carousel[aria-roledescription="carousel"][role="region"]`
+  - **HTML:** `<div class="carousel" role="region" aria-roledescription="carousel">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `.nav-desktop__list`
+- **Target:** `.nav-desktop__list`
+  - **HTML:** `<ul class="nav-desktop__list">`
+  - **Failure summary:** Fix all of the following: List element has direct children that are not allowed: [role=none]
+
 
 ### All page content should be contained by landmarks
 
@@ -56,10 +65,22 @@
 
 #### Affected Elements:
 
-- `.header__skip-link`
-- `.announcement-bar`
-- `.footer-banner > .banner__image-wrapper`
-- `.footer-banner > .banner__content-wrapper`
+- **Target:** `.header__skip-link`
+  - **HTML:** `<a href="#main__content" class="header__skip-link">Hopp til hovedinnhold</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.announcement-bar`
+  - **HTML:** `<div class="announcement-bar" style="--announcement-bar-bg-color:#edf3e2;--announcement-bar-txt-color:#005B2D">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.footer-banner > .banner__image-wrapper`
+  - **HTML:** `<div class="banner__image-wrapper">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.footer-banner > .banner__content-wrapper`
+  - **HTML:** `<div class="banner__content-wrapper">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
 
 ### Scrollable region must have keyboard access
 
@@ -72,8 +93,23 @@
 
 #### Affected Elements:
 
-- `.cms-recomendations:nth-child(6) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
-- `.cms-recomendations:nth-child(8) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
-- `.cms-recomendations:nth-child(9) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
-- `.cms-recomendations:nth-child(10) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
-- `.cms-recomendations:nth-child(11) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- **Target:** `.cms-recomendations:nth-child(6) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+  - **HTML:** `<ul class="carousel__slides">`
+  - **Failure summary:** Fix any of the following: Element should have focusable content Element should be focusable
+
+- **Target:** `.cms-recomendations:nth-child(8) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+  - **HTML:** `<ul class="carousel__slides">`
+  - **Failure summary:** Fix any of the following: Element should have focusable content Element should be focusable
+
+- **Target:** `.cms-recomendations:nth-child(9) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+  - **HTML:** `<ul class="carousel__slides">`
+  - **Failure summary:** Fix any of the following: Element should have focusable content Element should be focusable
+
+- **Target:** `.cms-recomendations:nth-child(10) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+  - **HTML:** `<ul class="carousel__slides">`
+  - **Failure summary:** Fix any of the following: Element should have focusable content Element should be focusable
+
+- **Target:** `.cms-recomendations:nth-child(11) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+  - **HTML:** `<ul class="carousel__slides">`
+  - **Failure summary:** Fix any of the following: Element should have focusable content Element should be focusable
+

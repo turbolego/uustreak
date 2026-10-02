@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `#h-Enskoleforallemedblikkfordenenkelte`
+- **Target:** `#h-Enskoleforallemedblikkfordenenkelte`
+  - **HTML:** `<h3 class="heading-3" id="h-Enskoleforallemedblikkfordenenkelte"><em>En skole for alle med blikk for den enkelte</em><br></h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+

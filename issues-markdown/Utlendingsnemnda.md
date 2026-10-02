@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `h4`
+- **Target:** `h4`
+  - **HTML:** `<h4></h4>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
 
 ### Page should contain a level-one heading
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `html`
+- **Target:** `html`
+  - **HTML:** `<html lang="no">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+
 
 ### Elements should not have tabindex greater than zero
 
@@ -43,4 +49,7 @@
 
 #### Affected Elements:
 
-- `a[href$="#une-content"]`
+- **Target:** `a[href$="#une-content"]`
+  - **HTML:** `<a href="#une-content" tabindex="1">Innhold</a>`
+  - **Failure summary:** Fix any of the following: Element has a tabindex greater than 0
+

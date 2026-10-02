@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `#declineButton`
+- **Target:** `#declineButton`
+  - **HTML:** `<button tabindex="0" onclick="CookieInformation.declineAllCategories()" aria-label="Kun strengt nødvendige" id="declineButton" class="coi-banner__decline" role="alert" aria-atomic="true" style="display: flex;"> Kun strengt nødvendige </but…`
+  - **Failure summary:** Fix any of the following: ARIA role alert is not allowed for given element
+
 
 ### Document should not have more than one banner landmark
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### All page content should be contained by landmarks
 
@@ -56,4 +65,7 @@
 
 #### Affected Elements:
 
-- `.skip-link`
+- **Target:** `.skip-link`
+  - **HTML:** `<a class="skip-link screen-reader-text" href="#content">Gå til hovedinnholdet</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

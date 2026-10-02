@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.css-smxovs-StyledCssSliderWrapper`
+- **Target:** `.css-smxovs-StyledCssSliderWrapper`
+  - **HTML:** `<nav class="css-smxovs-StyledCssSliderWrapper e14mgep41">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `.e1gatcwn2`
+- **Target:** `.e1gatcwn2`
+  - **HTML:** `<ul class="MuiList-root MuiList-padding e1gatcwn2 css-gtkfqk-StyledPaymentAndShippingIconBox">`
+  - **Failure summary:** Fix all of the following: List element has direct children that are not allowed: h1
+
 
 ### All page content should be contained by landmarks
 
@@ -43,4 +49,7 @@
 
 #### Affected Elements:
 
-- `#zendesk-widget`
+- **Target:** `#zendesk-widget`
+  - **HTML:** `<div id="zendesk-widget"><h1>Something went wrong.</h1></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

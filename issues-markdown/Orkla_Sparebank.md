@@ -17,7 +17,19 @@
 
 #### Affected Elements:
 
-- `.icon--pil-dropdown-ned-24`
-- `.icon--linkedin-24`
-- `.icon--facebook-24`
-- `.icon--youtube-24`
+- **Target:** `.icon--pil-dropdown-ned-24`
+  - **HTML:** `<span class="icon icon--24 icon--pil-dropdown-ned-24" role="img"></span>`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+- **Target:** `.icon--linkedin-24`
+  - **HTML:** `<span class="icon icon--24 icon--linkedin-24" role="img"></span>`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+- **Target:** `.icon--facebook-24`
+  - **HTML:** `<span class="icon icon--24 icon--facebook-24" role="img"></span>`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
+- **Target:** `.icon--youtube-24`
+  - **HTML:** `<span class="icon icon--24 icon--youtube-24" role="img"></span>`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+

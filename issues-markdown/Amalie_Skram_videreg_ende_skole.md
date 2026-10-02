@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.header-top`
+- **Target:** `.header-top`
+  - **HTML:** `<div class="header-top" role="banner">`
+  - **Failure summary:** Fix any of the following: The banner landmark is contained in another landmark.
+
 
 ### Document should not have more than one banner landmark
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `header`
+- **Target:** `header`
+  - **HTML:** `<header>`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `header`
+- **Target:** `header`
+  - **HTML:** `<header>`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### Page should contain a level-one heading
 
@@ -56,4 +65,7 @@
 
 #### Affected Elements:
 
-- `html`
+- **Target:** `html`
+  - **HTML:** `<html lang="no">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+

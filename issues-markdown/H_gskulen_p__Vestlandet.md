@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `li:nth-child(1) > .teaser-new.teaser-new--img-small > .teaser-new__body > .teaser-new__body-inner > .teaser-new__header > h4`
+- **Target:** `li:nth-child(1) > .teaser-new.teaser-new--img-small > .teaser-new__body > .teaser-new__body-inner > .teaser-new__header > h4`
+  - **HTML:** `<h4 class="teaser-new__heading"> <a href="/aktuelt/together-week/">Artemis-partnarar samla ved HVL i Bergen </a> </h4>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `#primary-nav`
+- **Target:** `#primary-nav`
+  - **HTML:** `<nav id="primary-nav" class="header__main-navigation">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### All page content should be contained by landmarks
 
@@ -43,4 +49,7 @@
 
 #### Affected Elements:
 
-- `.jump-to-content-link`
+- **Target:** `.jump-to-content-link`
+  - **HTML:** `<a href="#content" class="jump-to-content-link"><span>Hopp til innhald</span></a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `img[alt="Hammerfest kommune"]`
+- **Target:** `img[alt="Hammerfest kommune"]`
+  - **HTML:** `<img alt="Hammerfest kommune" src="/handlers/bv.ashx/i84340fca-472c-43c3-ae76-e20b3612bce2/hk-logo-web-m-minsteavstand-ny.png">`
+  - **Failure summary:** Fix all of the following: Element contains <img> element with alt text that duplicates existing text
+
 
 ### Page should contain a level-one heading
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `html`
+- **Target:** `html`
+  - **HTML:** `<html lang="nb" style="--bc-primary-color-5...">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+
 
 ### All page content should be contained by landmarks
 
@@ -43,4 +49,7 @@
 
 #### Affected Elements:
 
-- `#ctl00_ctl00_ctl00_innhold_ctl11_WebpartId_97_WebpartId_97_txtSearch`
+- **Target:** `#ctl00_ctl00_ctl00_innhold_ctl11_WebpartId_97_WebpartId_97_txtSearch`
+  - **HTML:** `<input name="ctl00$ctl00$ctl00$innhold$ctl11$WebpartId_97$WebpartId_97$txtSearch" type="text" id="ctl00_ctl00_ctl00_innhold_ctl11_WebpartId_97_WebpartId_97_txtSearch" class="js-liten-trigger-search" aria-label="Søketekst" placeholder="Hva …`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

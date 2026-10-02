@@ -17,5 +17,11 @@
 
 #### Affected Elements:
 
-- `.js_main_nav`
-- `#innhold`
+- **Target:** `.js_main_nav`
+  - **HTML:** `<nav class="js_main_nav main_nav main_nav_collapsed">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+- **Target:** `#innhold`
+  - **HTML:** `<main id="innhold" class="smMa desktop_centered" tabindex="-1">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+

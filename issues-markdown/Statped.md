@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `#wp-skip-link`
+- **Target:** `#wp-skip-link`
+  - **HTML:** `<a class="skip-link screen-reader-text" id="wp-skip-link" href="#wp--skip-link--target">Hopp til innhold</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

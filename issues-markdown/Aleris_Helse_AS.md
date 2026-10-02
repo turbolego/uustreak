@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `iframe[width="200"], #movie_player`
+- **Target:** `iframe[width="200"], #movie_player`
+  - **HTML:** `<div class="html5-video-player y..." tabindex="" id="movie_player" data-version="/s/player/8ab5c328/p..." aria-label="YouTube-videospiller">`
+  - **Failure summary:** Fix all of the following: aria-label attribute cannot be used on a div with no valid role attribute.
+

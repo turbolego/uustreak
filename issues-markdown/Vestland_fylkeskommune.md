@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.masthead__menu-container`
+- **Target:** `.masthead__menu-container`
+  - **HTML:** `<div class="masthead__menu-container" role="menubar">`
+  - **Failure summary:** Fix any of the following: Element has children which are not allowed: a
+
 
 ### Form elements should have a visible label
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `#search`
+- **Target:** `#search`
+  - **HTML:** `<input class="search-main__input" id="search" type="search" name="searchString" title="Søk i nettsted" placeholder="Søk" autocomplete="off" required="">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
 
 ### All page content should be contained by landmarks
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `.skip-link`
+- **Target:** `.skip-link`
+  - **HTML:** `<a href="#main-content" class="skip-link" tabindex="1"> <div class="l-container--full">Hopp til innhald</div> </a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
 
 ### [role="img"] and [role="image"] elements must have alternative text
 
@@ -56,7 +65,10 @@
 
 #### Affected Elements:
 
-- `.masthead__icon-search`
+- **Target:** `.masthead__icon-search`
+  - **HTML:** `<span class="masthead__icon-search" role="img"> <span class="u-hidden">Åpne/lukk søk</span> </span>`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
 
 ### Elements should not have tabindex greater than zero
 
@@ -69,4 +81,7 @@
 
 #### Affected Elements:
 
-- `.skip-link`
+- **Target:** `.skip-link`
+  - **HTML:** `<a href="#main-content" class="skip-link" tabindex="1"> <div class="l-container--full">Hopp til innhald</div> </a>`
+  - **Failure summary:** Fix any of the following: Element has a tabindex greater than 0
+

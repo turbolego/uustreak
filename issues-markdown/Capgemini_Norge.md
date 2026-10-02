@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `#darkModeLabel`
+- **Target:** `#darkModeLabel`
+  - **HTML:** `<label for="darkModeCheckboxDesktop" id="darkModeLabel" class="toggle-label" tabindex="0" role="switch" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); document.getElementById('darkModeCheckboxDesktop').…`
+  - **Failure summary:** Fix any of the following: ARIA role switch is not allowed for given element
+
 
 ### Required ARIA attributes must be provided
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `#darkModeLabel`
+- **Target:** `#darkModeLabel`
+  - **HTML:** `<label for="darkModeCheckboxDesktop" id="darkModeLabel" class="toggle-label" tabindex="0" role="switch" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); document.getElementById('darkModeCheckboxDesktop').…`
+  - **Failure summary:** Fix any of the following: Required ARIA attribute not present: aria-checked
+
 
 ### Banner landmark should not be contained in another landmark
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `.header-topbar-wrapper`
+- **Target:** `.header-topbar-wrapper`
+  - **HTML:** `<div class="header-topbar-wrapper dark-gradient" role="banner" style="--header-nav-position: relative; --header-nav-menu-text-color: #FFFFFF; --header-nav-menu-background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(255, 255, 255, 0))…`
+  - **Failure summary:** Fix any of the following: The banner landmark is contained in another landmark.
+
 
 ### Document should not have more than one banner landmark
 
@@ -56,7 +65,10 @@
 
 #### Affected Elements:
 
-- `header`
+- **Target:** `header`
+  - **HTML:** `<header class="wp-block-template-part">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -69,7 +81,10 @@
 
 #### Affected Elements:
 
-- `header`
+- **Target:** `header`
+  - **HTML:** `<header class="wp-block-template-part">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### Links must have discernible text
 
@@ -82,8 +97,14 @@
 
 #### Affected Elements:
 
-- `.analytics-hero-banner-title:nth-child(2)`
-- `a[rel="noreferrer noopener"]`
+- **Target:** `.analytics-hero-banner-title:nth-child(2)`
+  - **HTML:** `<a href="https://www.capgemini.com/insights/research-library/technovision-2026-guide-for-ctos-and-cios/" class="analytics-hero-banner-title"><br></a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `a[rel="noreferrer noopener"]`
+  - **HTML:** `<a href="https://www.linkedin.com/shareArticle?url=https://www.capgemini.com/insights/research-library/technovision-2026-guide-for-ctos-and-cios/" target="_blank" rel="noreferrer noopener" class="analytics-hero-banner-title"></a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### All page content should be contained by landmarks
 
@@ -96,7 +117,10 @@
 
 #### Affected Elements:
 
-- `#truste-consent-text`
+- **Target:** `#truste-consent-text`
+  - **HTML:** `<div id="truste-consent-text" class="truste-messageColumn">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
 
 ### Scrollable region must have keyboard access
 
@@ -109,4 +133,7 @@
 
 #### Affected Elements:
 
-- `.header_lang_menu > .header-lang-inner > .lang-list`
+- **Target:** `.header_lang_menu > .header-lang-inner > .lang-list`
+  - **HTML:** `<div class="lang-list">`
+  - **Failure summary:** Fix any of the following: Element should have focusable content Element should be focusable
+

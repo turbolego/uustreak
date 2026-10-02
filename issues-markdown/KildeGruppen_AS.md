@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `#__next > div:nth-child(1)`
+- **Target:** `#__next > div:nth-child(1)`
+  - **HTML:** `<div style="z-index:0"><canvas id="rdlgrdanim" style="position:fixed" width="1280" height="820"></canvas></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

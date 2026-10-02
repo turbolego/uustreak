@@ -17,6 +17,15 @@
 
 #### Affected Elements:
 
-- `button:nth-child(1) > .xl\:flex-col.text-\(--header-text\).px-4`
-- `div[data-component="AccountPopoverMenu"] > .xl\:flex-col.text-\(--header-text\).px-4`
-- `li[data-testid="cart"]`
+- **Target:** `button:nth-child(1) > .xl\:flex-col.text-\(--header-text\).px-4`
+  - **HTML:** `<li class="group flex h-full cursor-pointer items-center justify-center gap-2 px-4 text-(--header-text) xl:flex-col">`
+  - **Failure summary:** Fix any of the following: List item does not have a <ul>, <ol> parent element
+
+- **Target:** `div[data-component="AccountPopoverMenu"] > .xl\:flex-col.text-\(--header-text\).px-4`
+  - **HTML:** `<li class="group flex h-full cursor-pointer items-center justify-center gap-2 px-4 text-(--header-text) xl:flex-col">`
+  - **Failure summary:** Fix any of the following: List item parent element has a role that is not role="list"
+
+- **Target:** `li[data-testid="cart"]`
+  - **HTML:** `<li class="group flex h-full cursor-pointer items-center justify-center gap-2 px-4 text-(--header-text) xl:flex-col" data-testid="cart">`
+  - **Failure summary:** Fix any of the following: List item does not have a <ul>, <ol> parent element
+

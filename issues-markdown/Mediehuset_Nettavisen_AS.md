@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > h1`
+- **Target:** `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > h1`
+  - **HTML:** `<h1 class="na-logo-header"> <a href="/" tabindex="-1" aria-hidden="true">*Nettavisen.*</a> </h1>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
 
 ### Banner landmark should not be contained in another landmark
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `.miniheader`
+- **Target:** `.miniheader`
+  - **HTML:** `<header class="miniheader">`
+  - **Failure summary:** Fix any of the following: The banner landmark is contained in another landmark.
+
 
 ### Document should not have more than one banner landmark
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `#page-header`
+- **Target:** `#page-header`
+  - **HTML:** `<header id="page-header" class="">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -56,8 +65,14 @@
 
 #### Affected Elements:
 
-- `#page-header`
-- `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > .nav-wrap > nav`
+- **Target:** `#page-header`
+  - **HTML:** `<header id="page-header" class="">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+- **Target:** `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > .nav-wrap > nav`
+  - **HTML:** `<nav class="nav lp_nav">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### All page content should be contained by landmarks
 
@@ -70,5 +85,11 @@
 
 #### Affected Elements:
 
-- `amedia-username`
-- `#toppbanner-1`
+- **Target:** `amedia-username`
+  - **HTML:** `<amedia-username orderpage="//www.nettavisen.no/tilbud" publication="www.nettavisen.no" subscription-text="Bli abonnent" subscription-link="true" links="" locale="nb-NO" theme="nettavisen">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#toppbanner-1`
+  - **HTML:** `<bazaar-ad data-component-layou...="commercial" position="toppbanner" class="am-bazaar-ad lp_topp..." labeled="true" display-config="" aria-labelledby="toppbanner-1-label" ad-index="1" id="toppbanner-1" data-id="toppbanner-1" tag-id="www.n…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

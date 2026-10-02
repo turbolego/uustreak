@@ -17,4 +17,7 @@
 
 #### Affected Elements:
 
-- `img[alt="Molde videregående skole"]`
+- **Target:** `img[alt="Molde videregående skole"]`
+  - **HTML:** `<img alt="Molde videregående skole" src="/handlers/bv.ashx/i3d409a8e-a21d-4160-a6a0-953c76b73221/91020molde-vgs_h75px.svg">`
+  - **Failure summary:** Fix all of the following: Element contains <img> element with alt text that duplicates existing text
+

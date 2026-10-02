@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `#declineButton`
+- **Target:** `#declineButton`
+  - **HTML:** `<button tabindex="0" onclick="CookieInformation.declineAllCategories()" aria-label="Avvis alle" id="declineButton" class="coi-banner__decline" role="alert" aria-atomic="true" style="display: flex;">Avvis alle</button>`
+  - **Failure summary:** Fix any of the following: ARIA role alert is not allowed for given element
+
 
 ### Buttons must have discernible text
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `#main-menu-button`
+- **Target:** `#main-menu-button`
+  - **HTML:** `<button id="main-menu-button" class="hamburger-button hamburger--collapse" type="button"> <span class="hamburger-box"> <span class="hamburger-inner"></span> </span> </button>`
+  - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
+
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `.col-md-10 > .button-color-primary.button`
+- **Target:** `.col-md-10 > .button-color-primary.button`
+  - **HTML:** `<a href="https://www.dedicare.no/ledig-jobb/" class="button button-color-primary"> Søk jobb </a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.8 (foreground color: #ffffff, background color: #ef4050, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
 
 ### Heading levels should only increase by one
 
@@ -56,8 +65,14 @@
 
 #### Affected Elements:
 
-- `.page-content > h3`
-- `.col-xl-4.col-md-12.col-lg-12:nth-child(2) > .column-section-box-height.column-section-box > .column-section-content.link-color-primary.page-content > h4`
+- **Target:** `.page-content > h3`
+  - **HTML:** `<h3>Med over 25 års erfaring i bemanning og rekruttering av helsepersonell, er vi eksperter på å matche spennende oppdrag med riktig kompetanse.</h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `.col-xl-4.col-md-12.col-lg-12:nth-child(2) > .column-section-box-height.column-section-box > .column-section-content.link-color-primary.page-content > h4`
+  - **HTML:** `<h4><span class="color--primary color--secondary">Lege/legespesialist&nbsp;</span></h4>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Document should not have more than one banner landmark
 
@@ -70,7 +85,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -83,7 +101,10 @@
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### Links must have discernible text
 
@@ -96,9 +117,18 @@
 
 #### Affected Elements:
 
-- `.social-item:nth-child(1) > a`
-- `.social-item:nth-child(2) > a`
-- `.social-item:nth-child(3) > a`
+- **Target:** `.social-item:nth-child(1) > a`
+  - **HTML:** `<a href="https://www.facebook.com/dedicarenurseno" class=""> <i class="facebook-icon"></i> </a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `.social-item:nth-child(2) > a`
+  - **HTML:** `<a href="https://www.instagram.com/dedicarenorge" class=""> <i class="instagram-icon"></i> </a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+- **Target:** `.social-item:nth-child(3) > a`
+  - **HTML:** `<a href="https://www.linkedin.com/company/dedicare-norge" class=""> <i class="linkedin-icon"></i> </a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -111,7 +141,10 @@
 
 #### Affected Elements:
 
-- `iframe[title="reCAPTCHA"]`
+- **Target:** `iframe[title="reCAPTCHA"]`
+  - **HTML:** `<iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-311x3sds8k9e" frameborder="0" scrolling="no" sandbox="allow-forms allow-po..." src="https://www.google.c..." tabindex="-1">`
+  - **Failure summary:** Fix all of the following: Element is not focusable.
+
 
 ### All page content should be contained by landmarks
 
@@ -124,4 +157,7 @@
 
 #### Affected Elements:
 
-- `.page-hero`
+- **Target:** `.page-hero`
+  - **HTML:** `<section class="page-hero page-hero-..." style="background-image:lin...">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

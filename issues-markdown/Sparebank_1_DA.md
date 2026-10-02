@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.optin`
+- **Target:** `.optin`
+  - **HTML:** `<div role="dialog" class="optin" aria-live="polite" tabindex="0" aria-describedby="modalDescription">`
+  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
+
 
 ### Links must have discernible text
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `.background`
+- **Target:** `.background`
+  - **HTML:** `<a class="background mod-image campaign-bg__img campaign-img--track" href="https://www.sparebank1.no/nb/bank/om-oss/rekke-opp-handa.html?icid=forside;;samfunn;;hovedbanner;;sb1u-rekke-opp-handa-v2;;privat">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### Interactive controls must not be nested
 
@@ -43,8 +49,23 @@
 
 #### Affected Elements:
 
-- `#contact-tab1`
-- `#contact-tab2`
-- `#contact-tab3`
-- `#contact-tab4`
-- `#contact-tab5`
+- **Target:** `#contact-tab1`
+  - **HTML:** `<li class="customer-action__list-item" id="contact-tab1" data-menu-section="contact-call-template" aria-controls="panel1" role="tab">`
+  - **Failure summary:** Fix any of the following: Element has focusable descendants
+
+- **Target:** `#contact-tab2`
+  - **HTML:** `<li class="customer-action__list-item" id="contact-tab2" data-menu-section="contact-appointment-template" aria-controls="panel2" role="tab">`
+  - **Failure summary:** Fix any of the following: Element has focusable descendants
+
+- **Target:** `#contact-tab3`
+  - **HTML:** `<li class="customer-action__list-item" id="contact-tab3" data-menu-section="contact-message-template" aria-controls="panel3" role="tab">`
+  - **Failure summary:** Fix any of the following: Element has focusable descendants
+
+- **Target:** `#contact-tab4`
+  - **HTML:** `<li class="customer-action__list-item" id="contact-tab4" data-menu-section="find-us-template" aria-controls="panel4" role="tab">`
+  - **Failure summary:** Fix any of the following: Element has focusable descendants
+
+- **Target:** `#contact-tab5`
+  - **HTML:** `<li class="customer-action__list-item" id="contact-tab5" data-menu-section="contact-chat-template" aria-controls="panel5" role="tab">`
+  - **Failure summary:** Fix any of the following: Element has focusable descendants
+

@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `#bai-open-chat-btn`
+- **Target:** `#bai-open-chat-btn`
+  - **HTML:** `<button id="bai-open-chat-btn" aria-hidden="true" class="tooltiped-element" title="Spør vår chatbot" type="button" onclick="javascript:openChat()" style="background: url("https://pubdata.fagforbundet.no/chatbot_pics/karima_100.png") 0px 0p…`
+  - **Failure summary:** Fix all of the following: Focusable content should be disabled or be removed from the DOM
+
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -30,11 +33,26 @@
 
 #### Affected Elements:
 
-- `#CybotCookiebotDialogBodyEdgeMoreDetailsLink`
-- `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
-- `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection`
-- `#CybotCookiebotDialogBodyButtonDecline`
-- `#bounceText`
+- **Target:** `#CybotCookiebotDialogBodyEdgeMoreDetailsLink`
+  - **HTML:** `<a id="CybotCookiebotDialogBodyEdgeMoreDetailsLink" href="#" class="">Se detaljer</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.99 (foreground color: #ff0000, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
+  - **HTML:** `<button id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll" class="CybotCookiebotDialogBodyButton" tabindex="0" lang="nb">Godta alle</button>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.99 (foreground color: #ffffff, background color: #ff0000, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection`
+  - **HTML:** `<button id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection" class="CybotCookiebotDialogBodyButton" tabindex="0" lang="nb">Godta valgte</button>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.99 (foreground color: #ffffff, background color: #ff0000, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#CybotCookiebotDialogBodyButtonDecline`
+  - **HTML:** `<button id="CybotCookiebotDialogBodyButtonDecline" class="CybotCookiebotDialogBodyButton" tabindex="0" lang="nb">Kun nødvendige</button>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.99 (foreground color: #ffffff, background color: #ff0000, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#bounceText`
+  - **HTML:** `<div id="bounceText" class="animated bounceInRight">Hei, jeg er Fagforbundets chatbot. Hva kan jeg hjelpe med? </div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.18 (foreground color: #ffffff, background color: #919091, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1
+
 
 ### All page content should be contained by landmarks
 
@@ -47,4 +65,7 @@
 
 #### Affected Elements:
 
-- `.skip-to-content`
+- **Target:** `.skip-to-content`
+  - **HTML:** `<a class="skip-to-content" href="#main">Til hovedinnhold</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

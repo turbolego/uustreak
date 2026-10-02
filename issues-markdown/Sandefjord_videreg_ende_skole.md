@@ -17,7 +17,19 @@
 
 #### Affected Elements:
 
-- `iframe[title="powr social feed"], div[data-approved-index="0"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg`
-- `iframe[title="powr social feed"], div[data-approved-index="1"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg`
-- `iframe[title="powr social feed"], div[data-approved-index="2"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg`
-- `iframe[title="powr social feed"], div[data-approved-index="3"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg`
+- **Target:** `iframe[title="powr social feed"], div[data-approved-index="0"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg`
+  - **HTML:** `<img class="postImg" src="https://scontent-atl...">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `iframe[title="powr social feed"], div[data-approved-index="1"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg`
+  - **HTML:** `<img class="postImg" src="https://external-atl...">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `iframe[title="powr social feed"], div[data-approved-index="2"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg`
+  - **HTML:** `<img class="postImg" src="https://scontent-atl...">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `iframe[title="powr social feed"], div[data-approved-index="3"] > div > .postPicture.none > .postImgWrapper.squareCrop > .postImg`
+  - **HTML:** `<img class="postImg" src="https://scontent-atl...">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+

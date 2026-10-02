@@ -17,5 +17,11 @@
 
 #### Affected Elements:
 
-- `.footer-cta`
-- `.aria-labels`
+- **Target:** `.footer-cta`
+  - **HTML:** `<div class="footer-cta hide-for-print">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.aria-labels`
+  - **HTML:** `<div class="aria-labels">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

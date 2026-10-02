@@ -17,7 +17,10 @@
 
 #### Affected Elements:
 
-- `.f-menu`
+- **Target:** `.f-menu`
+  - **HTML:** `<ul class="f-menu" role="menu">`
+  - **Failure summary:** Fix any of the following: Element has children which are not allowed: button
+
 
 ### Headings should not be empty
 
@@ -30,7 +33,10 @@
 
 #### Affected Elements:
 
-- `#aapne-kommunekari > h2`
+- **Target:** `#aapne-kommunekari > h2`
+  - **HTML:** `<h2>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
 
 ### Form elements should have a visible label
 
@@ -43,7 +49,10 @@
 
 #### Affected Elements:
 
-- `#appendedInputButtons`
+- **Target:** `#appendedInputButtons`
+  - **HTML:** `<input class="form-control ess-searchbox" id="appendedInputButtons" type="text" style="float: left;" placeholder="Hva kan vi hjelpe deg med?" title="Hva kan vi hjelpe deg med?">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -56,7 +65,10 @@
 
 #### Affected Elements:
 
-- `.main-set`
+- **Target:** `.main-set`
+  - **HTML:** `<div class="main-set" style="background: transparent url(/link/6c7e100857f44c8bafbc6e624b841c98.aspx) no-repeat center center; background-size:cover;" role="navigation">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### All page content should be contained by landmarks
 
@@ -69,11 +81,26 @@
 
 #### Affected Elements:
 
-- `body > h1`
-- `.row4`
-- `.row6`
-- `.cc-header-container`
-- `.cc-text`
+- **Target:** `body > h1`
+  - **HTML:** `<h1 class="sr-only">Forside www.sarpsborg.com</h1>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row4`
+  - **HTML:** `<div class="row4">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row6`
+  - **HTML:** `<div class="clearfix container row6">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.cc-header-container`
+  - **HTML:** `<div class="cc-header-container"> <p class="cc-title">Vi bruker informasjonskapsler (cookies)</p> <div class="language-dropdown"><select><option value="no">Norsk</option><option value="en">English</option></select></div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.cc-text`
+  - **HTML:** `<p class="cc-text">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
 
 ### Select element must have an accessible name
 
@@ -86,4 +113,7 @@
 
 #### Affected Elements:
 
-- `.language-dropdown > select`
+- **Target:** `.language-dropdown > select`
+  - **HTML:** `<select><option value="no">Norsk</option><option value="en">English</option></select>`
+  - **Failure summary:** Fix any of the following: Element does not have an implicit (wrapped) <label> Element does not have an explicit <label> aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do n…
+
