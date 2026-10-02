@@ -37,6 +37,7 @@
     <meta name="theme-color" content="#ff9500">
     <meta name="msapplication-TileColor" content="#ff9500">
     
+    <script src="js/theme.js"></script>
     <link href="styles.css" rel="stylesheet">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="js/gzip-utils.js"></script>
@@ -47,32 +48,37 @@
     <a class="skip-link" href="#table-container" onclick="document.getElementById('table-container').focus(); return true;">Hopp til hovedinnhold</a>
     <main role="main" aria-labelledby="page-title">
         <header class="page-hero" aria-labelledby="page-title">
-            <h1 id="page-title">WCAG-brudd topplista</h1>
-            <div class="hero-actions">
-                <button aria-label="Lær mer om denne applikasjonen" id="open-readme-dialog">Vis readme fra GitHub -repo</button>
-                <button aria-label="Se trend animasjon" onclick="window.location.href='D3trend.html'" class="trend-button">📈 Trend Animasjon</button>
+            <div class="hero-top">
+                <h1 id="page-title">WCAG-brudd topplista</h1>
+                <div class="hero-actions">
+                    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false"><span class="theme-toggle-icon" aria-hidden="true">☀️</span> Mørk modus</button>
+                    <button aria-label="Lær mer om denne applikasjonen" id="open-readme-dialog">Vis readme fra GitHub -repo</button>
+                    <button aria-label="Se trend animasjon" onclick="window.location.href='D3trend.html'" class="trend-button">📈 Trend Animasjon</button>
+                </div>
             </div>
             <div id="accessible-description"></div>
         </header>
-        <section class="navigation-section" aria-label="Navigasjon for dato">
-            <div class="navigation-controls">
+        <section class="toolbar" aria-label="Verktøylinje for topplista">
+            <div class="navigation-controls" role="group" aria-label="Navigasjon for dato">
                 <button id="prev-day">Forrige dag</button>
                 <span id="current-date"></span>
                 <button id="next-day">Neste dag</button>
             </div>
-        </section>
-        <section class="view-section" aria-label="Visningskontroller">
-            <div class="view-controls">
-                <label for="view-selector">Vis kolonner basert på:</label>
-                <select id="view-selector">
-                    <option value="types">Bruddtyper</option>
-                    <option value="tags">WCAG-tagger</option>
-                </select>
+            <div class="view-controls" role="group" aria-label="Visningskontroller">
+                <div class="view-selector-group">
+                    <label for="view-selector">Vis kolonner basert på:</label>
+                    <select id="view-selector">
+                        <option value="types">Bruddtyper</option>
+                        <option value="tags">WCAG-tagger</option>
+                    </select>
+                </div>
                 <div class="mobile-sort-controls" role="group" aria-label="Sortering av tabellen">
                     <label for="mobile-sort-column">Sorter etter:</label>
                     <select id="mobile-sort-column"></select>
                     <button id="mobile-sort-direction" type="button">Sorter stigende</button>
                 </div>
+            </div>
+            <div class="report-actions" role="group" aria-label="Sammendrag">
                 <button aria-label="Se tagg sammendrag" id="view-summary">Vis tagg sammendrag</button>
                 <button aria-label="Se døde lenker" id="view-invalid-urls">Vis døde lenker</button>
             </div>

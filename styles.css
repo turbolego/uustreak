@@ -1,76 +1,49 @@
 /* =========================================== */
 /* UUStreak - WCAG AAA Compliant Styles */
 /* =========================================== */
-/* Light mode (default) - WCAG AAA compliant colors */
-
+/* Colour palette - WCAG AAA compliant in both modes.
+ * light-dark(light, dark) follows the user's OS setting (prefers-color-scheme)
+ * unless the theme toggle sets data-theme="light" or data-theme="dark" on <html>. */
 :root {
-    /* Light mode color palette - WCAG AAA compliant */
-    --color-bg: #ffffff;
-    --color-bg-alt: #f5f5f5;
-    --color-bg-alt2: #f8f9fa;
-    --color-bg-alt3: #f2f2f2;
-    --color-bg-primary: #000000;
-    --color-bg-primary-hover: #333333;
-    --color-bg-secondary: #ffffff;
-    --color-bg-secondary-hover: #f2f2f2;
-    --color-text: #000000;
-    --color-text-secondary: #333333;
-    --color-text-tertiary: #666666;
-    --color-text-inverse: #ffffff;
-    --color-border: #d1d5db;
-    --color-border-alt: #e5e7eb;
-    --color-border-secondary: #666666;
-    --color-border-secondary-hover: #444444;
-    --color-accent: #0b5cad;
-    --color-accent-hover: #08468c;
-    --color-success: #1c7c36;
-    --color-warning: #723f12;
-    --color-error: #dc2626;
-    --color-info: #0b5cad;
-    --color-invalid-link: #dc2626;
-    --color-invalid-bg: #fee2e2;
-    --color-link: #0b5cad;
-    --color-link-visited: #5a2d91;
-    --color-focus: #0066cc;
-    --color-scroll-track: #f1f1f1;
-    --color-scroll-thumb: #888888;
-    --color-scroll-thumb-hover: #666666;
+    color-scheme: light dark;
+    --color-bg: light-dark(#ffffff, #121212);
+    --color-bg-alt: light-dark(#f5f5f5, #1e1e1e);
+    --color-bg-alt2: light-dark(#f8f9fa, #252526);
+    --color-bg-alt3: light-dark(#f2f2f2, #2d2d2d);
+    --color-bg-primary: light-dark(#000000, #ffffff);
+    --color-bg-primary-hover: light-dark(#333333, #e0e0e0);
+    --color-bg-secondary: light-dark(#ffffff, #1e1e1e);
+    --color-bg-secondary-hover: light-dark(#f2f2f2, #2d2d2d);
+    --color-text: light-dark(#000000, #ffffff);
+    --color-text-secondary: light-dark(#333333, #e0e0e0);
+    --color-text-tertiary: light-dark(#666666, #aaaaaa);
+    --color-text-inverse: light-dark(#ffffff, #000000);
+    --color-border: light-dark(#d1d5db, #404040);
+    --color-border-alt: light-dark(#e5e7eb, #505050);
+    --color-border-secondary: light-dark(#666666, #aaaaaa);
+    --color-border-secondary-hover: light-dark(#444444, #cccccc);
+    --color-accent: light-dark(#0b5cad, #66b2ff);
+    --color-accent-hover: light-dark(#08468c, #99c9ff);
+    --color-success: light-dark(#1c7c36, #4ade80);
+    --color-warning: light-dark(#723f12, #fbbf24);
+    --color-error: light-dark(#dc2626, #f87171);
+    --color-info: light-dark(#0b5cad, #66b2ff);
+    --color-invalid-link: light-dark(#dc2626, #f87171);
+    --color-invalid-bg: light-dark(#fee2e2, #4a1a1a);
+    --color-link: light-dark(#0b5cad, #66b2ff);
+    --color-link-visited: light-dark(#5a2d91, #99c9ff);
+    --color-focus: light-dark(#0066cc, #66ccff);
+    --color-scroll-track: light-dark(#f1f1f1, #333333);
+    --color-scroll-thumb: light-dark(#888888, #aaaaaa);
+    --color-scroll-thumb-hover: light-dark(#666666, #cccccc);
 }
 
-/* Dark mode colors - WCAG AAA compliant */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-bg: #121212;
-        --color-bg-alt: #1e1e1e;
-        --color-bg-alt2: #252526;
-        --color-bg-alt3: #2d2d2d;
-        --color-bg-primary: #ffffff;
-        --color-bg-primary-hover: #e0e0e0;
-        --color-bg-secondary: #1e1e1e;
-        --color-bg-secondary-hover: #2d2d2d;
-        --color-text: #ffffff;
-        --color-text-secondary: #e0e0e0;
-        --color-text-tertiary: #aaaaaa;
-        --color-text-inverse: #000000;
-        --color-border: #404040;
-        --color-border-alt: #505050;
-        --color-border-secondary: #aaaaaa;
-        --color-border-secondary-hover: #cccccc;
-        --color-accent: #66b2ff;
-        --color-accent-hover: #99c9ff;
-        --color-success: #4ade80;
-        --color-warning: #fbbf24;
-        --color-error: #f87171;
-        --color-info: #66b2ff;
-        --color-invalid-link: #f87171;
-        --color-invalid-bg: #4a1a1a;
-        --color-focus: #66ccff;
-        --color-scroll-track: #333333;
-        --color-scroll-thumb: #aaaaaa;
-        --color-scroll-thumb-hover: #cccccc;
-        --color-link: #66b2ff;
-        --color-link-visited: #99c9ff;
-    }
+:root[data-theme="light"] {
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
 }
 
 /* =========================================== */
@@ -141,10 +114,18 @@ h1 {
 }
 
 .page-hero {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+}
+
+.hero-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem 1.5rem;
 }
 
 .hero-actions {
@@ -163,10 +144,17 @@ h1 {
     cursor: pointer;
 }
 
-.hero-actions .trend-button {
+.hero-actions .trend-button,
+.hero-actions .theme-toggle {
     border-color: var(--color-border-secondary);
     color: var(--color-text);
     background: var(--color-bg-secondary);
+}
+
+.hero-actions .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .hero-actions button:hover {
@@ -174,15 +162,58 @@ h1 {
     border-color: var(--color-bg-primary-hover);
 }
 
-.hero-actions .trend-button:hover {
+.hero-actions .trend-button:hover,
+.hero-actions .theme-toggle:hover {
     background-color: var(--color-bg-secondary-hover);
     border-color: var(--color-border-secondary-hover);
 }
 
-.navigation-section,
-.view-section,
 .reports-section {
     margin-bottom: 1.5rem;
+}
+
+/* Toolbar above the table: date navigation | view options | summaries */
+.toolbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1rem;
+    background-color: var(--color-bg-alt2);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+.toolbar .view-controls {
+    justify-content: center;
+}
+
+.report-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.75rem;
+}
+
+.view-selector-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media (max-width: 1100px) {
+    .toolbar {
+        grid-template-columns: 1fr 1fr;
+    }
+    .toolbar .navigation-controls {
+        justify-content: flex-start;
+    }
+    .toolbar .view-controls {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        justify-content: flex-start;
+    }
 }
 
 /* =========================================== */
@@ -267,9 +298,21 @@ table {
     table.sortable thead th.sortable button {
         display: none;
     }
-    .view-section {
-        padding: 0.5rem;
-        border-bottom: 1px solid var(--color-border);
+    .toolbar {
+        grid-template-columns: 1fr;
+        padding: 0.75rem;
+    }
+    .toolbar .view-controls {
+        grid-row: auto;
+    }
+    .toolbar .navigation-controls {
+        justify-content: space-between;
+    }
+    .report-actions {
+        justify-content: stretch;
+    }
+    .report-actions button {
+        flex: 1 1 auto;
     }
     .mobile-sort-controls {
         display: flex;
@@ -422,6 +465,7 @@ th.sortable button:focus,
 th.sortable button:focus-visible,
 .navigation-controls button:focus,
 .view-controls button:focus,
+.report-actions button:focus,
 .dialog-close:focus,
 .achievements-button:focus,
 .trends-button:focus,
@@ -724,7 +768,8 @@ details summary:hover {
 /* =========================================== */
 
 .navigation-controls button,
-.view-controls button {
+.view-controls button,
+.report-actions button {
     padding: 0.5rem 1rem;
     background-color: var(--color-bg-alt2);
     border: 2px solid var(--color-text-tertiary);
@@ -736,12 +781,14 @@ details summary:hover {
 }
 
 .navigation-controls button:hover,
-.view-controls button:hover {
+.view-controls button:hover,
+.report-actions button:hover {
     background-color: var(--color-bg-alt);
 }
 
 .navigation-controls button:focus,
-.view-controls button:focus {
+.view-controls button:focus,
+.report-actions button:focus {
     outline: 2px solid var(--color-focus);
     outline-offset: 2px;
 }
@@ -750,16 +797,16 @@ details summary:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0;
+    gap: 0.5rem;
 }
 
 .navigation-controls #current-date {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 0.5rem;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
 .view-controls {
-    margin: 1rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -851,19 +898,17 @@ details summary:hover {
     font-size: 0.9em;
 }
 
-@media (prefers-color-scheme: dark) {
-    .data-warning {
-        background-color: var(--color-invalid-bg);
-        color: var(--color-warning);
-    }
+:root[data-theme="dark"] .data-warning {
+    background-color: var(--color-invalid-bg);
+    color: var(--color-warning);
+}
 
-    .data-warning summary {
-        color: var(--color-warning);
-    }
+:root[data-theme="dark"] .data-warning summary {
+    color: var(--color-warning);
+}
 
-    .data-warning summary:hover {
-        color: var(--color-text);
-    }
+:root[data-theme="dark"] .data-warning summary:hover {
+    color: var(--color-text);
 }
 
 /* =========================================== */
