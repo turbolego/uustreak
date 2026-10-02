@@ -43,6 +43,7 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#table-container" onclick="document.getElementById('table-container').focus(); return true;">Hopp til hovedinnhold</a>
     <main role="main" aria-labelledby="page-title">
         <header class="page-hero" aria-labelledby="page-title">
             <h1 id="page-title">WCAG-brudd topplista</h1>
@@ -66,6 +67,11 @@
                     <option value="types">Bruddtyper</option>
                     <option value="tags">WCAG-tagger</option>
                 </select>
+                <div class="mobile-sort-controls" role="group" aria-label="Sortering av tabellen">
+                    <label for="mobile-sort-column">Sorter etter:</label>
+                    <select id="mobile-sort-column"></select>
+                    <button id="mobile-sort-direction" type="button">Sorter stigende</button>
+                </div>
                 <button aria-label="Se tagg sammendrag" id="view-summary">Vis tagg sammendrag</button>
                 <button aria-label="Se døde lenker" id="view-invalid-urls">Vis døde lenker</button>
             </div>
@@ -80,7 +86,7 @@
         <section class="reports-section" aria-label="WCAG-brudd topplista">
             <nav aria-label="WCAG-brudd topplista">
                 <div class="table-wrapper">
-                    <div id="table-container"></div>
+                    <div id="table-container" tabindex="-1"></div>
                     <div id="pagination-controls" class="pagination-controls">
                         <button id="prev-page" aria-label="Forrige side">←</button>
                         <span id="page-indicator">Side <span id="current-page-num">1</span> av <span
@@ -90,21 +96,21 @@
                 </div>
             </nav>
         </section>
-        <dialog class="details-dialog" id="details-dialog">
+        <dialog class="details-dialog" id="details-dialog" aria-labelledby="dialog-title">
             <h2 id="dialog-title">Rapportdetaljer</h2>
             <div id="dialog-content"></div>
         </dialog>
-        <dialog class="details-dialog summary-dialog" id="summary-dialog">
+        <dialog class="details-dialog summary-dialog" id="summary-dialog" aria-labelledby="summary-dialog-title">
             <h2 id="summary-dialog-title">Tag Sammendrag</h2>
             <div id="summary-dialog-content"></div>
             <button aria-label="Lukk sammendrag" class="dialog-close" id="close-summary-dialog">×</button>
         </dialog>
-        <dialog class="details-dialog invalid-urls-dialog" id="invalid-urls-dialog">
+        <dialog class="details-dialog invalid-urls-dialog" id="invalid-urls-dialog" aria-labelledby="invalid-urls-dialog-title">
             <h2 id="invalid-urls-dialog-title">Døde lenker</h2>
             <div id="invalid-urls-dialog-content"></div>
             <button aria-label="Lukk døde lenker dialog" class="dialog-close" id="close-invalid-urls-dialog">×</button>
         </dialog>
-        <dialog class="details-dialog" id="achievements-dialog">
+        <dialog class="details-dialog" id="achievements-dialog" aria-labelledby="achievements-dialog-title">
             <h2 id="achievements-dialog-title">Achievements 🏆</h2>
             <div id="achievements-dialog-content"></div>
             <button aria-label="Lukk achievements dialog" class="dialog-close" id="close-achievements-dialog">×</button>
@@ -1227,10 +1233,13 @@
 
             const table = document.createElement('table');
             table.className = 'sortable';
+            table.setAttribute('aria-label', `WCAG-brudd topplista for ${date}, sortérbar tabell`);
 
             const caption = document.createElement('caption');
             caption.textContent = `WCAG-brudd topplista for ${date}`;
+            caption.id = `table-caption-${date.replace(/-/g,'')}`;
             table.appendChild(caption);
+            table.setAttribute('aria-labelledby', caption.id);
 
             const thead = document.createElement('thead');
             const headerRow = document.createElement('tr');
@@ -1246,6 +1255,11 @@
                     const button = document.createElement('button');
                     button.type = 'button';
                     button.setAttribute('aria-label', `Sort by ${col}`);
+
+                    const mobileHeaderLabel = document.createElement('span');
+                    mobileHeaderLabel.className = 'mobile-column-label';
+                    mobileHeaderLabel.textContent = col;
+                    th.appendChild(mobileHeaderLabel);
 
                     // Add column text
                     const columnText = document.createElement('span');
@@ -1281,6 +1295,7 @@
 
                 columns.forEach((col, index) => {
                     const cell = document.createElement('td');
+                    cell.dataset.label = col;
                     if (index === 0) {
                         // Rank column - will be updated after sorting
                         cell.className = 'rank-cell';
@@ -1365,6 +1380,21 @@
 
             tableContainer.appendChild(table);
 
+            const mobileSortColumn = document.getElementById('mobile-sort-column');
+            mobileSortColumn.replaceChildren();
+            columns.forEach((column, index) => {
+                if (index === 0) return;
+                const option = document.createElement('option');
+                option.value = String(index);
+                option.textContent = column;
+                mobileSortColumn.appendChild(option);
+            });
+            mobileSortColumn.value = '6';
+            mobileSortColumn.onchange = () => sortTable(table, Number(mobileSortColumn.value));
+            document.getElementById('mobile-sort-direction').onclick = () => {
+                sortTable(table, Number(mobileSortColumn.value));
+            };
+
             // Set initial sort direction and apply sort
             table.dataset.sortDirection = 'desc';
             sortTable(table, 6, true);
@@ -1410,6 +1440,20 @@
             if (currentHeader.classList.contains('sortable')) {
                 currentHeader.classList.add(newSortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
                 currentHeader.setAttribute('aria-sort', newSortDirection === 'asc' ? 'ascending' : 'descending');
+
+                const mobileSortColumn = document.getElementById('mobile-sort-column');
+                if (mobileSortColumn) {
+                    mobileSortColumn.value = String(columnIndex);
+                }
+                const mobileSortDirection = document.getElementById('mobile-sort-direction');
+                if (mobileSortDirection) {
+                    const nextDirection = newSortDirection === 'asc' ? 'synkende' : 'stigende';
+                    mobileSortDirection.textContent = `Sorter ${nextDirection}`;
+                    mobileSortDirection.setAttribute(
+                        'aria-label',
+                        `Sorteringsretning: ${newSortDirection === 'asc' ? 'stigende' : 'synkende'}. Aktiver for å sortere ${nextDirection}.`
+                    );
+                }
 
                 // Update button aria-label to indicate current sort state
                 const button = currentHeader.querySelector('button');
