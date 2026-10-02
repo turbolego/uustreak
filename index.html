@@ -867,7 +867,8 @@
                             .sort((a, b) => a.date.localeCompare(b.date))
                             .map(report => ({
                                 date: report.date,
-                                violations: report.violationCount
+                                violations: report.violationCount,
+                                filename: report.filename
                             }))
                     );
                 });
@@ -880,6 +881,55 @@
             }
 
             return projectTrendCache.trendsByProject.get(projectName) || [];
+        }
+
+        async function loadTrendReportDetails(trendData) {
+            const points = trendData.filter(point => point.violations > 0 && point.filename);
+            const details = new Map();
+
+            for (const point of points) {
+                try {
+                    const reportUrl = point.filename.split('/').map(encodeURIComponent).join('/');
+                    const response = await fetch(reportUrl);
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    details.set(point.date, await response.json());
+                } catch (error) {
+                    console.warn(`Could not load trend details for ${point.date}:`, error.message);
+                }
+            }
+
+            return trendData.map(point => ({
+                ...point,
+                report: details.get(point.date) || null
+            }));
+        }
+
+        function formatTrendPointTooltip(point) {
+            const lines = [`${point.date}: ${point.violations} violation${point.violations === 1 ? '' : 's'}`];
+            const violations = point.report?.violations || [];
+
+            violations
+                .filter(violation => violation && Number(violation.violation_count) > 0)
+                .forEach(violation => {
+                    const count = Number(violation.violation_count);
+                    const countLabel = Number.isFinite(count) && count > 1 ? ` (${count})` : '';
+                    lines.push(`${violation.help || violation.rule_id || violation.description || 'Violation'}${countLabel}`);
+
+                    const embedded = window.EmbeddedCode
+                        ? window.EmbeddedCode.analyzeReport({
+                            ...point.report,
+                            violations: [violation]
+                        })
+                        : { count: 0, providers: [] };
+                    if (embedded.count > 0) {
+                        const providerLabel = embedded.providers.length
+                            ? ` from ${embedded.providers.join(' and ')}`
+                            : '';
+                        lines.push(`Cause: Embedded code${providerLabel}`);
+                    }
+                });
+
+            return lines.join('\n');
         }
 
         function countViolationChanges(trendData) {
@@ -915,7 +965,7 @@
             }
         }
 
-        function showTrendsDialog(projectName, trendData) {
+        async function showTrendsDialog(projectName, trendData) {
             const dialog = document.getElementById('trends-dialog');
             const title = document.getElementById('trends-dialog-title');
             const content = document.getElementById('trends-dialog-content');
@@ -933,12 +983,17 @@
                 return;
             }
 
-            const first = trendData[0];
-            const last = trendData[trendData.length - 1];
-            const increaseCount = trendData.slice(1).filter((point, index) =>
-                point.violations > trendData[index].violations).length;
-            const decreaseCount = trendData.slice(1).filter((point, index) =>
-                point.violations < trendData[index].violations).length;
+            content.innerHTML = '<p class="trend-loading">Loading violation details…</p>';
+            dialog.showModal();
+            const detailedTrendData = await loadTrendReportDetails(trendData);
+            content.replaceChildren();
+
+            const first = detailedTrendData[0];
+            const last = detailedTrendData[detailedTrendData.length - 1];
+            const increaseCount = detailedTrendData.slice(1).filter((point, index) =>
+                point.violations > detailedTrendData[index].violations).length;
+            const decreaseCount = detailedTrendData.slice(1).filter((point, index) =>
+                point.violations < detailedTrendData[index].violations).length;
 
             const summary = document.createElement('p');
             summary.className = 'trend-summary';
@@ -952,7 +1007,7 @@
             chartContainer.setAttribute('role', 'img');
             chartContainer.setAttribute(
                 'aria-label',
-                `Trend graph for ${projectName}: ${trendData.length} reports and ${changeCount} changes in violations`
+                `Trend graph for ${projectName}: ${detailedTrendData.length} reports and ${changeCount} changes in violations`
             );
             content.appendChild(chartContainer);
 
@@ -962,7 +1017,7 @@
             const width = chartWidth - margin.left - margin.right;
             const height = chartHeight - margin.top - margin.bottom;
             const parseDate = d3.utcParse('%Y-%m-%d');
-            const chartData = trendData.map(point => ({
+            const chartData = detailedTrendData.map(point => ({
                 ...point,
                 parsedDate: parseDate(point.date)
             }));
@@ -1026,9 +1081,8 @@
                 .attr('cy', point => yScale(point.violations))
                 .attr('r', 4)
                 .append('title')
-                .text(point => `${point.date}: ${point.violations} violations`);
+                .text(formatTrendPointTooltip);
 
-            dialog.showModal();
         }
 
         function calculateNoViolationsStreak(projectName, reportList, currentReport = null, selectedDate = null) {
