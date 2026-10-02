@@ -53,6 +53,7 @@ jobs:
           script: |
             const fs = require('fs');
             const path = require('path');
+            const embeddedCode = require(path.join(process.cwd(), 'js', 'embedded-code.js'));
 
             const { owner, repo } = context.repo;
             const REPORTS_DIR = 'accessibility-reports';
@@ -94,6 +95,18 @@ jobs:
             const labelNames = (issue) => issue.labels.map((label) => (typeof label === 'string' ? label : label.name));
             const escapeCell = (text) => String(text ?? '').replace(/\|/g, '\\|').replace(/\r?\n/g, ' ');
             const formatTarget = (node) => `\`${(node.target || []).flat(Infinity).join(', ')}\``;
+            const getViolationSource = (violation, reportUrl) => {
+              const analysis = embeddedCode.analyzeReport({
+                url: reportUrl,
+                violations: [violation],
+              });
+              if (analysis.count > 0) {
+                return analysis.providers.length
+                  ? `Embedded code from ${analysis.providers.join(' and ')}`
+                  : 'Embedded code';
+              }
+              return 'Page content';
+            };
 
             function truncateBody(body) {
               if (body.length <= MAX_BODY_LENGTH) return body;
@@ -266,6 +279,7 @@ jobs:
                     '',
                     `- **Impact:** ${violation.impact || 'N/A'}`,
                     `- **Description:** ${violation.description || 'N/A'}`,
+                    `- **Source:** ${getViolationSource(violation, url)}`,
                     `- **Help URL:** ${violation.helpUrl || 'N/A'}`,
                     `- **Tags:** ${violation.tags ? violation.tags.join(', ') : 'N/A'}`,
                     `- **Count:** ${violation.violation_count}`,
@@ -292,6 +306,7 @@ jobs:
                   ...violations.flatMap((violation) => [
                     `- **Impact:** ${violation.impact || 'N/A'}`,
                     `- **Description:** ${violation.description || 'N/A'}`,
+                    `- **Source:** ${getViolationSource(violation, url)}`,
                     `- **Help:** ${violation.help || 'N/A'}`,
                     `- **Help URL:** ${violation.helpUrl || 'N/A'}`,
                     `- **Tags:** ${violation.tags ? violation.tags.join(', ') : 'N/A'}`,
