@@ -74,4 +74,4 @@ Key CSS:
 - Before: horizontal scroll only, no labels on mobile
 - After: card layout, native table-header associations, and visible focus indicators
 
-Tested via local file load and CSS inspection. Full automated audit requires HTTP server; see wcag-skill validator workflow.
+Browser spot checks were performed over HTTP at 320px and 1280px with sample table data. At 320px, the page had no horizontal overflow, card labels and mobile sorting controls were visible, and the table header remained present; at 1280px, the native table headers and sort buttons were visible and mobile controls were hidden. These targeted checks are not a full manual accessibility assessment or an axe/pa11y audit; both remain follow-up validation.
