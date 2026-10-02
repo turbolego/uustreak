@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen norsk teknisk museum
 
-**Timestamp:** 2026-09-30T05:13:05.037Z
+**Timestamp:** 2026-10-02T17:23:36.353Z
 **URL:** [https://www.tekniskmuseum.no/](https://www.tekniskmuseum.no/)
 **Total Violations:** 5
 
@@ -10,7 +10,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 3
 
@@ -24,7 +24,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
 - **Count:** 1
 
@@ -36,7 +36,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -48,7 +48,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 7
 
@@ -66,7 +66,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 22
 
@@ -91,6 +91,6 @@
 - `.uk-width-1-3\@s.uk-width-1-5\@m:nth-child(4) > .uk-list > .el-item:nth-child(4)`
 - `a[href$="www.tekniskvenner.no"] > .uk-flex-nowrap.uk-grid-small.uk-child-width-expand > div:nth-child(2)`
 - `.uk-width-3-5\@m > h3`
-- `.uk-grid-margin.uk-child-width-1-1.tm-grid-expand:nth-child(4)`
+- `.uk-child-width-1-1.uk-grid-margin.tm-grid-expand:nth-child(4)`
 - `.uk-width-4-5`
 - `.uk-flex-first`

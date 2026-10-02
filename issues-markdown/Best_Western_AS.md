@@ -1,6 +1,6 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2026-09-30T04:55:10.098Z
+**Timestamp:** 2026-10-02T17:06:35.475Z
 **URL:** [https://www.bestwestern.no/](https://www.bestwestern.no/)
 **Total Violations:** 3
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-redundant-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
 - **Count:** 7
 
@@ -28,7 +28,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -40,7 +40,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 7
 
@@ -49,7 +49,7 @@
 - `.not-focus\:visually-hidden`
 - `.pr-2`
 - `a[href$="bestwestern.com/"]`
-- `#ddChallengeBody1790744101018, .captcha__header`
-- `#ddChallengeBody1790744101018, .captcha__human`
-- `#ddChallengeBody1790744101018, .captcha__robot__warning`
-- `#ddChallengeBody1790744101018, .captcha__robot__contact_support`
+- `#ddChallengeBody1790960784418, .captcha__header`
+- `#ddChallengeBody1790960784418, .captcha__human`
+- `#ddChallengeBody1790960784418, .captcha__robot__warning`
+- `#ddChallengeBody1790960784418, .captcha__robot__contact_support`

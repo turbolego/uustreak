@@ -1,6 +1,6 @@
 # WCAG Violations Report for JAG Assistanse AS
 
-**Timestamp:** 2026-09-30T05:02:55.337Z
+**Timestamp:** 2026-10-02T17:14:20.405Z
 **URL:** [https://jagassistanse.no/](https://jagassistanse.no/)
 **Total Violations:** 8
 
@@ -10,16 +10,13 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 21
+- **Count:** 18
 
 #### Affected Elements:
 
 - `.pre-heading`
-- `.col-half:nth-child(1) > .ng-post-wrapper-2.custom > .ng-post-text-wrapper-2 > .ingress-post`
-- `.col-half:nth-child(2) > .ng-post-wrapper-2.custom > .ng-post-text-wrapper-2 > .ingress-post`
-- `.col-half:nth-child(3) > .ng-post-wrapper-2.custom > .ng-post-text-wrapper-2 > .ingress-post`
 - `.ng-hero-3-inner > .left-align.banneromrade.section-heading-wrapper > ul > .ng-ul-li:nth-child(1)`
 - `.ng-hero-3-inner > .left-align.banneromrade.section-heading-wrapper > ul > .ng-ul-li:nth-child(2)`
 - `.ng-hero-3-inner > .left-align.banneromrade.section-heading-wrapper > ul > .ng-ul-li:nth-child(3)`
@@ -42,7 +39,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 5
 
@@ -58,7 +55,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure every HTML document has a lang attribute
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/html-has-lang?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/html-has-lang?application=playwright
 - **Tags:** cat.language, wcag2a, wcag311, TTv5, TT11.a, EN-301-549, EN-9.3.1.1, ACT, RGAAv4, RGAA-8.3.1
 - **Count:** 1
 
@@ -70,7 +67,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 1
 
@@ -82,7 +79,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the document has a main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-one-main?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -94,7 +91,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 8
 
@@ -113,7 +110,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <li> elements are used semantically
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/listitem?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/listitem?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 3
 
@@ -127,7 +124,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 7
 

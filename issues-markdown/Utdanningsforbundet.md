@@ -1,6 +1,6 @@
 # WCAG Violations Report for Utdanningsforbundet
 
-**Timestamp:** 2026-09-30T05:16:29.943Z
+**Timestamp:** 2026-10-02T17:27:12.353Z
 **URL:** [https://www.utdanningsforbundet.no/](https://www.utdanningsforbundet.no/)
 **Total Violations:** 6
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 1
 
@@ -22,7 +22,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 1
 
@@ -34,7 +34,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
 - **Count:** 1
 
@@ -46,7 +46,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the document has at most one banner landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-no-duplicate-banner?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-banner?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -58,7 +58,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 3
 
@@ -68,11 +68,11 @@
 - `main`
 - `.BlockWrapper_span-3__H0f6B[data-display-option="full"]:nth-child(1) > div > .LocalNavigationTopLayout_localNavigationTop__I8NPN[aria-label="Lokal navigasjon"]`
 
-### [role="img"] elements must have alternative text
+### [role="img"] and [role="image"] elements must have alternative text
 
 - **Impact:** serious
-- **Description:** Ensure [role="img"] elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/role-img-alt?application=playwright
+- **Description:** Ensure [role="img"] and [role="image"] elements have alternative text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/role-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 2
 

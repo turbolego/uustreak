@@ -1,6 +1,6 @@
 # WCAG Violations Report for Elkjøp AS
 
-**Timestamp:** 2026-09-30T04:58:31.979Z
+**Timestamp:** 2026-10-02T17:10:41.996Z
 **URL:** [https://www.elkjop.no/](https://www.elkjop.no/)
 **Total Violations:** 1
 
@@ -10,7 +10,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <li> elements are used semantically
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/listitem?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/listitem?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 3
 

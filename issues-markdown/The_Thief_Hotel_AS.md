@@ -1,8 +1,8 @@
 # WCAG Violations Report for The Thief Hotel AS
 
-**Timestamp:** 2026-09-30T05:14:22.840Z
+**Timestamp:** 2026-10-02T17:25:09.579Z
 **URL:** [https://thethief.com/](https://thethief.com/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -10,7 +10,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure attributes that begin with aria- are valid ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-valid-attr?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-valid-attr?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 2
 
@@ -19,11 +19,23 @@
 - `#container > .block-container__inner.container-fluid.block-block__inner > .gallery__controls > .gallery__controls__next[aria-title="Next"][role="button"]`
 - `#container-6 > .block-container__inner.container-fluid.block-block__inner > .gallery__controls > .gallery__controls__next[aria-title="Next"][role="button"]`
 
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `gh-newsletter,.btn__label`
+
 ### Heading levels should only increase by one
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -35,7 +47,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 1
 

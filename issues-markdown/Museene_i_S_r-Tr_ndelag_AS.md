@@ -1,6 +1,6 @@
 # WCAG Violations Report for Museene i Sør-Trøndelag AS
 
-**Timestamp:** 2026-09-30T05:06:27.683Z
+**Timestamp:** 2026-10-02T17:17:20.431Z
 **URL:** [https://mist.no/](https://mist.no/)
 **Total Violations:** 1
 
@@ -10,7 +10,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/page-has-heading-one?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 

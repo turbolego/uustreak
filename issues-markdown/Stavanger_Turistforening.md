@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2026-09-30T05:11:39.399Z
+**Timestamp:** 2026-10-02T17:22:04.684Z
 **URL:** [https://www.dnt.no/stavanger](https://www.dnt.no/stavanger)
 **Total Violations:** 10
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 1
 
@@ -22,7 +22,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure ARIA attributes are not prohibited for an element's role
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-prohibited-attr?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 3
 
@@ -36,26 +36,26 @@
 
 - **Impact:** critical
 - **Description:** Ensure all ARIA attributes have valid values
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-valid-attr-value?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-valid-attr-value?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 8
 
 #### Affected Elements:
 
-- `button[aria-controls="modal-617769"]`
-- `button[aria-controls="modal-578204"]`
-- `button[aria-controls="modal-619530"]`
-- `button[aria-controls="modal-617523"]`
-- `button[aria-controls="modal-617484"]`
-- `button[aria-controls="modal-617504"]`
-- `button[aria-controls="modal-582451"]`
-- `button[aria-controls="modal-623675"]`
+- `button[aria-controls="modal-580745"]`
+- `button[aria-controls="modal-580418"]`
+- `button[aria-controls="modal-620732"]`
+- `button[aria-controls="modal-614226"]`
+- `button[aria-controls="modal-614224"]`
+- `button[aria-controls="modal-579172"]`
+- `button[aria-controls="modal-577229"]`
+- `button[aria-controls="modal-584605"]`
 
 ### Buttons must have discernible text
 
 - **Impact:** critical
 - **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
 - **Count:** 1
 
@@ -67,7 +67,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
 - **Count:** 6
 
@@ -84,7 +84,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 11
 
@@ -106,7 +106,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the document has at most one banner landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-no-duplicate-banner?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-banner?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -118,7 +118,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -130,7 +130,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 6
 
@@ -147,7 +147,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 3
 

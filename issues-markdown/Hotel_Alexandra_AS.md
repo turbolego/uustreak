@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hotel Alexandra AS
 
-**Timestamp:** 2026-09-30T05:02:03.882Z
+**Timestamp:** 2026-10-02T17:13:46.230Z
 **URL:** [https://www.alexandra.no/no/framside.aspx](https://www.alexandra.no/no/framside.aspx)
 **Total Violations:** 10
 
@@ -10,7 +10,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 5
 
@@ -26,7 +26,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -38,7 +38,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure every HTML document has a lang attribute
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/html-has-lang?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/html-has-lang?application=playwright
 - **Tags:** cat.language, wcag2a, wcag311, TTv5, TT11.a, EN-301-549, EN-9.3.1.1, ACT, RGAAv4, RGAA-8.3.1
 - **Count:** 1
 
@@ -50,7 +50,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 8
 
@@ -69,7 +69,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure <input type="image"> elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/input-image-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/input-image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, wcag412, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, EN-9.4.1.2, ACT, RGAAv4, RGAA-1.1.3
 - **Count:** 1
 
@@ -81,7 +81,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure every form element has a label
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/label?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/label?application=playwright
 - **Tags:** cat.forms, wcag2a, wcag412, section508, section508.22.n, TTv5, TT5.c, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.1.1
 - **Count:** 2
 
@@ -94,7 +94,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the document has a main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-one-main?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -106,7 +106,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 5
 
@@ -122,7 +122,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure <meta name="viewport"> does not disable text scaling and zooming
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/meta-viewport?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/meta-viewport?application=playwright
 - **Tags:** cat.sensory-and-visual-cues, wcag2aa, wcag144, EN-301-549, EN-9.1.4.4, ACT, RGAAv4, RGAA-10.4.2
 - **Count:** 1
 
@@ -134,7 +134,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 22
 

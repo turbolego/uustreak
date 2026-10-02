@@ -1,29 +1,16 @@
 # WCAG Violations Report for Ringerike kommune
 
-**Timestamp:** 2026-09-30T05:09:33.093Z
+**Timestamp:** 2026-10-02T17:19:55.493Z
 **URL:** [https://www.ringerike.kommune.no/](https://www.ringerike.kommune.no/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `a[title="Se alle saker"]`
-- `a[title="Vis alle "]`
 
 ### Frames must have an accessible name
 
 - **Impact:** serious
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
 - **Count:** 1
 
@@ -35,7 +22,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure every HTML document has a lang attribute
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/html-has-lang?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/html-has-lang?application=playwright
 - **Tags:** cat.language, wcag2a, wcag311, TTv5, TT11.a, EN-301-549, EN-9.3.1.1, ACT, RGAAv4, RGAA-8.3.1
 - **Count:** 1
 
@@ -47,7 +34,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 11
 
@@ -69,7 +56,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/label-title-only?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/label-title-only?application=playwright
 - **Tags:** cat.forms, best-practice
 - **Count:** 1
 
@@ -81,7 +68,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 10
 

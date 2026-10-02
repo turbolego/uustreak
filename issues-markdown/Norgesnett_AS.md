@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norgesnett AS
 
-**Timestamp:** 2026-09-30T05:08:05.484Z
+**Timestamp:** 2026-10-02T17:18:51.155Z
 **URL:** [https://norgesnett.no/](https://norgesnett.no/)
 **Total Violations:** 8
 
@@ -10,7 +10,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure aria-hidden elements are not focusable nor contain focusable elements
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-hidden-focus?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-hidden-focus?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-10.8.1
 - **Count:** 6
 
@@ -27,7 +27,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
 - **Count:** 1
 
@@ -39,7 +39,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 12
 
@@ -62,7 +62,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
 - **Count:** 1
 
@@ -74,7 +74,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-redundant-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
 - **Count:** 4
 
@@ -89,7 +89,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 6
 
@@ -106,7 +106,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure that lists are structured correctly
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/list?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/list?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 1
 
@@ -118,7 +118,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <li> elements are used semantically
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/listitem?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/listitem?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 3
 

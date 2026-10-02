@@ -1,6 +1,6 @@
 # WCAG Violations Report for Frende Skadeforsikring AS
 
-**Timestamp:** 2026-09-30T05:00:54.433Z
+**Timestamp:** 2026-10-02T17:12:42.534Z
 **URL:** [https://www.frende.no/](https://www.frende.no/)
 **Total Violations:** 3
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 1
 
@@ -22,7 +22,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure every ARIA dialog and alertdialog node has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-dialog-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-dialog-name?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 1
 
@@ -34,7 +34,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 

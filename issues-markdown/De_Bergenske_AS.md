@@ -1,6 +1,6 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-09-30T04:57:18.681Z
+**Timestamp:** 2026-10-02T17:08:47.595Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
 **Total Violations:** 8
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 6
 
@@ -27,7 +27,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
 - **Count:** 1
 
@@ -39,7 +39,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 5
 
@@ -55,48 +55,47 @@
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 30
+- **Count:** 29
 
 #### Affected Elements:
 
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(3) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.sm\:px-6`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(3) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.max-w-full.sm\:px-6`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(3) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.max-w-full.sm\:px-6`
 - `.lg\:col-span-2 > .sm\:pr-6.flex-1.media`
-- `.lg\:row-span-2 > .sm\:pr-6.flex-1.media`
-- `.lg\:row-start-2.col-span-1.row-span-1:nth-child(3) > .sm\:pr-6.flex-1.media`
-- `.lg\:row-start-2.col-span-1.row-span-1:nth-child(4) > .sm\:pr-6.flex-1.media`
-- `.splide__arrow--prev.left-5[aria-controls="splide01-track"] > .w-12`
-- `.splide__arrow--next.right-5[aria-controls="splide01-track"] > .w-12`
+- `.lg\:col-span-1 > .sm\:pr-6.flex-1.media`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.sm\:px-6`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.max-w-full.sm\:px-6`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.max-w-full.sm\:px-6`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(4) > .h-auto.max-w-full.sm\:px-6`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(5) > .h-auto.max-w-full.sm\:px-6`
+- `.splide__arrow--prev.left-5[aria-controls="splide01-track"] > .w-12[data-nuxt-img=""]`
+- `.splide__arrow--next.right-5[aria-controls="splide01-track"] > .w-12[data-nuxt-img=""]`
 - `#splide02-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
-- `.splide__arrow--prev.left-5[aria-controls="splide02-track"] > .w-12`
-- `.splide__arrow--next.right-5[aria-controls="splide02-track"] > .w-12`
+- `.splide__arrow--prev.left-5[aria-controls="splide02-track"] > .w-12[data-nuxt-img=""]`
+- `.splide__arrow--next.right-5[aria-controls="splide02-track"] > .w-12[data-nuxt-img=""]`
 - `#splide03-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
-- `.splide__arrow--prev.left-5[aria-controls="splide03-track"] > .w-12`
-- `.splide__arrow--next.right-5[aria-controls="splide03-track"] > .w-12`
-- `.grid-of-1 > .lg\:col-span-3.collection-item--fullWidth.col-span-1 > .sm\:pr-6.flex-1.media`
+- `.splide__arrow--prev.left-5[aria-controls="splide03-track"] > .w-12[data-nuxt-img=""]`
+- `.splide__arrow--next.right-5[aria-controls="splide03-track"] > .w-12[data-nuxt-img=""]`
+- `.lg\:col-span-3 > .sm\:pr-6.flex-1.media`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(9) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.sm\:px-6`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(9) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.max-w-full.sm\:px-6`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(9) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.max-w-full.sm\:px-6`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(9) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(4) > .h-auto.max-w-full.sm\:px-6`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(9) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(5) > .h-auto.max-w-full.sm\:px-6`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(9) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(6) > .h-auto.max-w-full.sm\:px-6`
+- `.lg\:h-\[740px\].collection-item[theme=""]:nth-child(6) > .h-auto.max-w-full.sm\:px-6`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(10) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.sm\:px-6`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(10) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.max-w-full.sm\:px-6`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(10) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.max-w-full.sm\:px-6`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(10) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(4) > .h-auto.max-w-full.sm\:px-6`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(10) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(5) > .h-auto.max-w-full.sm\:px-6`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(10) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(6) > .h-auto.max-w-full.sm\:px-6`
-- `.splide__arrow--prev.left-5[aria-controls="splide04-track"] > .w-12`
-- `.splide__arrow--next.right-5[aria-controls="splide04-track"] > .w-12`
+- `.splide__arrow--prev.left-5[aria-controls="splide04-track"] > .w-12[data-nuxt-img=""]`
+- `.splide__arrow--next.right-5[aria-controls="splide04-track"] > .w-12[data-nuxt-img=""]`
 
 ### Document should have one main landmark
 
 - **Impact:** moderate
 - **Description:** Ensure the document has a main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-one-main?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -108,7 +107,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 2
 
@@ -121,7 +120,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 23
 
@@ -155,7 +154,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure select element has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/select-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/select-name?application=playwright
 - **Tags:** cat.forms, wcag2a, wcag412, section508, section508.22.n, TTv5, TT5.c, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.1.1
 - **Count:** 1
 

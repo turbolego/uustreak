@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Nasjonalmuseet for Kunst
 
-**Timestamp:** 2026-09-30T05:12:27.596Z
+**Timestamp:** 2026-10-02T17:23:53.644Z
 **URL:** [https://www.nasjonalmuseet.no/](https://www.nasjonalmuseet.no/)
 **Total Violations:** 4
 
@@ -10,28 +10,27 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 10
+- **Count:** 9
 
 #### Affected Elements:
 
 - `#declineButton`
-- `li[aria-label="1 av 9"]`
-- `li[aria-label="2 av 9"]`
-- `li[aria-label="3 av 9"]`
-- `li[aria-label="4 av 9"]`
-- `li[aria-label="5 av 9"]`
-- `li[aria-label="6 av 9"]`
-- `li[aria-label="7 av 9"]`
-- `li[aria-label="8 av 9"]`
-- `li[aria-label="9 av 9"]`
+- `li[aria-label="1 av 8"]`
+- `li[aria-label="2 av 8"]`
+- `li[aria-label="3 av 8"]`
+- `li[aria-label="4 av 8"]`
+- `li[aria-label="5 av 8"]`
+- `li[aria-label="6 av 8"]`
+- `li[aria-label="7 av 8"]`
+- `li[aria-label="8 av 8"]`
 
 ### Document should not have more than one banner landmark
 
 - **Impact:** moderate
 - **Description:** Ensure the document has at most one banner landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-no-duplicate-banner?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-banner?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -43,7 +42,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -55,7 +54,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure that lists are structured correctly
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/list?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/list?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 1
 

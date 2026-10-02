@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2026-09-30T05:12:14.774Z
+**Timestamp:** 2026-10-02T17:22:45.062Z
 **URL:** [https://bymuseet.no/](https://bymuseet.no/)
 **Total Violations:** 9
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 2
 
@@ -23,7 +23,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 18
 
@@ -52,7 +52,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/frame-title?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
 - **Count:** 2
 
@@ -65,7 +65,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/label-title-only?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/label-title-only?application=playwright
 - **Tags:** cat.forms, best-practice
 - **Count:** 1
 
@@ -77,7 +77,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the document has a main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-one-main?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 3
 
@@ -91,7 +91,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 22
 
@@ -124,7 +124,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure <meta name="viewport"> does not disable text scaling and zooming
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/meta-viewport?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/meta-viewport?application=playwright
 - **Tags:** cat.sensory-and-visual-cues, wcag2aa, wcag144, EN-301-549, EN-9.1.4.4, ACT, RGAAv4, RGAA-10.4.2
 - **Count:** 1
 
@@ -136,7 +136,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/page-has-heading-one?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 3
 
@@ -150,7 +150,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 13
 

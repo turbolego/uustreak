@@ -1,8 +1,8 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-09-30T05:14:06.418Z
+**Timestamp:** 2026-10-02T17:24:17.459Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -10,24 +10,25 @@
 
 - **Impact:** serious
 - **Description:** Ensure ARIA attributes are not prohibited for an element's role
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-prohibited-attr?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.main`
+- `.image`
 
 ### Heading levels should only increase by one
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
+- `.card-wrap.medium[data-v-bb772dac=""]:nth-child(1) > .shadow-m.card-vertical[gray="false"] > .content[data-v-bf0df00b=""] > .margin-bottom-s.tn-heading.left`
 - `.dropdown-category.footer.dark:nth-child(1) > .dropdown-link[data-v-515173b3=""] > .dropdown-header.hidden-mobile[data-v-515173b3=""] > h6`
 - `h4`
 
@@ -35,7 +36,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 2
 
@@ -48,7 +49,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <li> elements are used semantically
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/listitem?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/listitem?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 8
 
@@ -67,7 +68,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 5
 
@@ -78,15 +79,3 @@
 - `#freetext-top > .two-buttons`
 - `.showConsentPreferences`
 - `#privacy_prompt_bottom`
-
-### [role="img"] elements must have alternative text
-
-- **Impact:** serious
-- **Description:** Ensure [role="img"] elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/role-img-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.hero-banner`

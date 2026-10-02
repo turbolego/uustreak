@@ -1,16 +1,16 @@
 # WCAG Violations Report for Orkla Sparebank
 
-**Timestamp:** 2026-09-30T05:08:45.823Z
+**Timestamp:** 2026-10-02T17:19:24.420Z
 **URL:** [https://www.orklasparebank.no/](https://www.orklasparebank.no/)
 **Total Violations:** 1
 
 ## Violation Details
 
-### [role="img"] elements must have alternative text
+### [role="img"] and [role="image"] elements must have alternative text
 
 - **Impact:** serious
-- **Description:** Ensure [role="img"] elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/role-img-alt?application=playwright
+- **Description:** Ensure [role="img"] and [role="image"] elements have alternative text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/role-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 4
 

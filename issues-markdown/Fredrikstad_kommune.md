@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fredrikstad kommune
 
-**Timestamp:** 2026-09-30T05:00:40.151Z
+**Timestamp:** 2026-10-02T17:12:39.702Z
 **URL:** [https://www.fredrikstad.kommune.no/](https://www.fredrikstad.kommune.no/)
 **Total Violations:** 4
 
@@ -10,7 +10,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 1
 
@@ -22,7 +22,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -34,37 +34,35 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 5
+- **Count:** 3
 
 #### Affected Elements:
 
-- `.font-semibold.text-xl`
-- `.wrapper > ul > li > .hover\:underline.text-black.no-underline`
 - `#q`
 - `.flex-wrap`
 - `div[x-show="step === 1"] > .text-gray-700.font-medium.text-xl`
 
-### <svg> elements with an img role must have alternative text
+### <svg> elements with an img or image role must have alternative text
 
 - **Impact:** serious
-- **Description:** Ensure <svg> elements with an img, graphics-document or graphics-symbol role have accessible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/svg-img-alt?application=playwright
+- **Description:** Ensure <svg> elements with an img, image, graphics-document or graphics-symbol role have accessible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/svg-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
 - **Count:** 12
 
 #### Affected Elements:
 
-- `a[href="/kalender?id=1736045"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width="1em"][height="1em"]`
-- `a[href="/kalender?id=1736045"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6`
-- `a[href="/kalender?id=1736045"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6`
-- `a[href="/kalender?id=1753448"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width="1em"][height="1em"]`
-- `a[href="/kalender?id=1753448"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6`
-- `a[href="/kalender?id=1753448"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6`
-- `a[href="/kalender?id=1753088"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width="1em"][height="1em"]`
-- `a[href="/kalender?id=1753088"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6`
-- `a[href="/kalender?id=1753088"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6`
-- `a[href="/kalender?id=1752177"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .text-fk-blue[width="1em"][height="1em"]`
-- `a[href="/kalender?id=1752177"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .text-fk-blue.h-6.w-6`
-- `a[href="/kalender?id=1752177"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .text-fk-blue.h-6.w-6`
+- `a[href="/kalender?id=1736045"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
+- `a[href="/kalender?id=1736045"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1736045"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1754095"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
+- `a[href="/kalender?id=1754095"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1754095"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1755284"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
+- `a[href="/kalender?id=1755284"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1755284"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1755619"] > .p-4 > .list-none.m-0.p-0 > .items-left.gap-2.flex:nth-child(1) > .h-6[width="1em"][height="1em"]`
+- `a[href="/kalender?id=1755619"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(2) > .h-6.w-6.text-fk-blue`
+- `a[href="/kalender?id=1755619"] > .p-4 > .list-none.m-0.p-0 > .mt-2.items-left.gap-2:nth-child(3) > .h-6.w-6.text-fk-blue`

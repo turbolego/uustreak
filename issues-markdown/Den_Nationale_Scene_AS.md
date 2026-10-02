@@ -1,6 +1,6 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2026-09-30T04:57:45.983Z
+**Timestamp:** 2026-10-02T17:09:39.284Z
 **URL:** [https://dns.no/](https://dns.no/)
 **Total Violations:** 5
 
@@ -10,19 +10,19 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#mcforms-365945-437181, .visible`
+- `#mcforms-365945-437181,.visible`
 
 ### Table header text should not be empty
 
 - **Impact:** minor
 - **Description:** Ensure table headers have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-table-header?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/empty-table-header?application=playwright
 - **Tags:** cat.name-role-value, best-practice
 - **Count:** 2
 
@@ -35,7 +35,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 3
 
@@ -49,9 +49,9 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 97
+- **Count:** 91
 
 #### Affected Elements:
 
@@ -66,8 +66,6 @@
 - `.month1 > thead > .caption > th:nth-child(1)`
 - `.month1 > thead > .caption > .month-name[colspan="5"]`
 - `.month1 > thead > .week-name`
-- `.month1 > tbody > tr:nth-child(1) > td:nth-child(2)`
-- `.month1 > tbody > tr:nth-child(1) > td:nth-child(3)`
 - `.month1 > tbody > tr:nth-child(1) > td:nth-child(4)`
 - `.month1 > tbody > tr:nth-child(1) > td:nth-child(5)`
 - `.month1 > tbody > tr:nth-child(1) > td:nth-child(6)`
@@ -78,22 +76,18 @@
 - `.month1 > tbody > tr:nth-child(5) > td:nth-child(1)`
 - `.month1 > tbody > tr:nth-child(5) > td:nth-child(2)`
 - `.month1 > tbody > tr:nth-child(5) > td:nth-child(3)`
+- `.month1 > tbody > tr:nth-child(5) > td:nth-child(4)`
+- `.month1 > tbody > tr:nth-child(5) > td:nth-child(5)`
+- `.month1 > tbody > tr:nth-child(5) > td:nth-child(6)`
 - `.month2 > thead > .caption > .month-name[colspan="5"]`
 - `.month2 > thead > .caption > th:nth-child(3)`
 - `.month2 > thead > .week-name`
-- `.month2 > tbody > tr:nth-child(1) > td:nth-child(4)`
-- `.month2 > tbody > tr:nth-child(1) > td:nth-child(5)`
-- `.month2 > tbody > tr:nth-child(1) > td:nth-child(6)`
 - `.month2 > tbody > tr:nth-child(1) > td:nth-child(7)`
 - `.month2 > tbody > tr:nth-child(2)`
 - `.month2 > tbody > tr:nth-child(3)`
 - `.month2 > tbody > tr:nth-child(4)`
-- `.month2 > tbody > tr:nth-child(5) > td:nth-child(1)`
-- `.month2 > tbody > tr:nth-child(5) > td:nth-child(2)`
-- `.month2 > tbody > tr:nth-child(5) > td:nth-child(3)`
-- `.month2 > tbody > tr:nth-child(5) > td:nth-child(4)`
-- `.month2 > tbody > tr:nth-child(5) > td:nth-child(5)`
-- `.month2 > tbody > tr:nth-child(5) > td:nth-child(6)`
+- `.month2 > tbody > tr:nth-child(5)`
+- `tr:nth-child(6) > td:nth-child(1)`
 - `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
 - `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
 - `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
@@ -119,11 +113,11 @@
 - `div[data-postid="17098"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
 - `div[data-postid="17098"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
 - `div[data-postid="17098"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-- `div[data-postid="18519"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
-- `div[data-postid="18519"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
-- `div[data-postid="18519"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
-- `div[data-postid="18519"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
-- `div[data-postid="18519"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
+- `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
+- `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
+- `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
+- `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
+- `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
 - `div[data-postid="18083"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
 - `div[data-postid="18083"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
 - `div[data-postid="18083"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
@@ -157,7 +151,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure tabindex attribute values are not greater than 0
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/tabindex?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/tabindex?application=playwright
 - **Tags:** cat.keyboard, best-practice
 - **Count:** 10
 

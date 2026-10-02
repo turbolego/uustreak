@@ -1,28 +1,16 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-09-30T04:57:08.591Z
+**Timestamp:** 2026-10-02T17:08:41.649Z
 **URL:** [https://www.dagbladet.no/](https://www.dagbladet.no/)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
-
-### Headings should not be empty
-
-- **Impact:** minor
-- **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
-- **Tags:** cat.name-role-value, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.flex-initial.xrow.row:nth-child(45) > .small-6.medium-6.large-6:nth-child(2) > .bg-yellow.content > a > .xavier-headline.xre`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -34,7 +22,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 

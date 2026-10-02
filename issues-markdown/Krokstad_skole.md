@@ -1,8 +1,8 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2026-09-30T05:04:44.912Z
+**Timestamp:** 2026-10-02T17:16:00.564Z
 **URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/)
-**Total Violations:** 9
+**Total Violations:** 10
 
 ## Violation Details
 
@@ -10,46 +10,49 @@
 
 - **Impact:** serious
 - **Description:** Ensure every ARIA progressbar node has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-progressbar-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-progressbar-name?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag111, EN-301-549, EN-9.1.1.1, RGAAv4, RGAA-11.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `iframe[name="fdc0791e7dff9300d"], ._55yn`
+- `iframe[name="fefeb8ed85779d636"], ._55yn`
 
 ### Certain ARIA roles must contain particular children
 
 - **Impact:** critical
 - **Description:** Ensure elements with an ARIA role that require child roles contain them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-required-children?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-required-children?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `iframe[name="fdc0791e7dff9300d"], div[role="feed"]`
+- `iframe[name="fefeb8ed85779d636"], div[role="feed"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 4
+- **Count:** 7
 
 #### Affected Elements:
 
-- `iframe[name="fdc0791e7dff9300d"], .x1ypdohk.xe35lr7:nth-child(2) > ._eg_[role="button"] > ._eh3`
-- `iframe[name="fdc0791e7dff9300d"], .x1ypdohk.xe35lr7._51mw > ._eg_[role="button"] > ._eh3`
-- `iframe[name="fdc0791e7dff9300d"], abbr[data-utime="1790425229"] > .timestampContent`
-- `iframe[name="fdc0791e7dff9300d"], #feed_subtitle_1466649011946736\:4\:0 > ._1atc.fsm.fwn > .fcg`
+- `iframe[name="fefeb8ed85779d636"], .x1ypdohk.xe35lr7:nth-child(2) > ._eg_[role="button"] > ._eh3`
+- `iframe[name="fefeb8ed85779d636"], .x1ypdohk.xe35lr7._51mw > ._eg_[role="button"] > ._eh3`
+- `iframe[name="fefeb8ed85779d636"], abbr[data-utime="1790848575"] > .timestampContent`
+- `iframe[name="fefeb8ed85779d636"], #feed_subtitle_1681398620662434\:4\:0 > ._1atc.fsm.fwn > .fcg`
+- `iframe[name="fefeb8ed85779d636"], #u_1_h_J3 > ._2165._2pi4[title="Liker"]`
+- `iframe[name="fefeb8ed85779d636"], #u_1_g_Gt > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd[target="_blank"] > ._1p4p._2pi4[title="Kommenter"]`
+- `iframe[name="fefeb8ed85779d636"], #u_1_i_1P > ._50sk._2pi4[title="Del"]`
 
 ### Form elements should have a visible label
 
 - **Impact:** serious
 - **Description:** Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/label-title-only?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/label-title-only?application=playwright
 - **Tags:** cat.forms, best-practice
 - **Count:** 3
 
@@ -63,7 +66,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the document has at most one banner landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-no-duplicate-banner?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-banner?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -75,7 +78,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -87,26 +90,26 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 8
 
 #### Affected Elements:
 
-- `iframe[name="fdc0791e7dff9300d"], #u_0_1_\/y`
-- `iframe[name="fdc0791e7dff9300d"], .lfloat._3-8_[target="_blank"]`
-- `iframe[name="fdc0791e7dff9300d"], #u_1_6_7m > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fdc0791e7dff9300d"], #u_1_28_zd > ._302 > span > a[target="_blank"]`
-- `iframe[name="fdc0791e7dff9300d"], #u_1_7_\+3 > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fdc0791e7dff9300d"], ._2l7q > a[target="_blank"]`
-- `iframe[name="fdc0791e7dff9300d"], #u_1_5_eP > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fdc0791e7dff9300d"], #u_1_8_Jc > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `iframe[name="fefeb8ed85779d636"], #u_0_1_fJ`
+- `iframe[name="fefeb8ed85779d636"], .lfloat._3-8_[target="_blank"]`
+- `iframe[name="fefeb8ed85779d636"], #u_1_b_9o > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `iframe[name="fefeb8ed85779d636"], #u_1_7_zO > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `iframe[name="fefeb8ed85779d636"], #u_1_1q_hO > ._302 > span > a[target="_blank"]`
+- `iframe[name="fefeb8ed85779d636"], #u_1_6_gJ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `iframe[name="fefeb8ed85779d636"], ._2l7q > a[target="_blank"]`
+- `iframe[name="fefeb8ed85779d636"], #u_1_5_mK > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
 
 ### Interactive controls must not be nested
 
 - **Impact:** serious
 - **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/nested-interactive?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/nested-interactive?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 1
 
@@ -114,11 +117,23 @@
 
 - `.mainMenuTrigger`
 
+### Elements marked as presentational should be consistently ignored
+
+- **Impact:** minor
+- **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/presentation-role-conflict?application=playwright
+- **Tags:** cat.aria, best-practice, ACT
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[name="fefeb8ed85779d636"], img[width="255"]`
+
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 

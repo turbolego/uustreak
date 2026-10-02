@@ -1,6 +1,6 @@
 # WCAG Violations Report for Utlendingsnemnda
 
-**Timestamp:** 2026-09-30T05:17:02.168Z
+**Timestamp:** 2026-10-02T17:27:41.282Z
 **URL:** [https://www.une.no/](https://www.une.no/)
 **Total Violations:** 3
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure headings have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/empty-heading?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
 - **Count:** 1
 
@@ -22,7 +22,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/page-has-heading-one?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -34,7 +34,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure tabindex attribute values are not greater than 0
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/tabindex?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/tabindex?application=playwright
 - **Tags:** cat.keyboard, best-practice
 - **Count:** 1
 

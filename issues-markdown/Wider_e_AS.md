@@ -1,6 +1,6 @@
 # WCAG Violations Report for Widerøe AS
 
-**Timestamp:** 2026-09-30T05:17:26.836Z
+**Timestamp:** 2026-10-02T17:28:39.672Z
 **URL:** [https://www.wideroe.no/](https://www.wideroe.no/)
 **Total Violations:** 7
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-allowed-role?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 3
 
@@ -24,7 +24,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure elements with ARIA roles have all required ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-required-attr?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-required-attr?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 2
 
@@ -37,7 +37,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure elements with an ARIA role that require child roles contain them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-required-children?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-required-children?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 1
 
@@ -49,7 +49,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure elements with an ARIA role that require parent roles are contained by them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-required-parent?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-required-parent?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 3
 
@@ -63,7 +63,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure all ARIA attributes have valid values
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-valid-attr-value?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-valid-attr-value?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 2
 
@@ -76,7 +76,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -88,7 +88,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <li> elements are used semantically
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/listitem?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/listitem?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 20
 

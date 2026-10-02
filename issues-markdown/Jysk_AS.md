@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-09-30T05:03:20.361Z
+**Timestamp:** 2026-10-02T17:14:41.384Z
 **URL:** [https://jysk.no/](https://jysk.no/)
 **Total Violations:** 2
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/image-redundant-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-redundant-alt?application=playwright
 - **Tags:** cat.text-alternatives, best-practice
 - **Count:** 3
 
@@ -24,7 +24,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 19
 
@@ -37,8 +37,8 @@
 - `.justify-center[href$="om-jysk"][data-testid="usp"]:nth-child(1) > .text-center.md\:text-lg`
 - `.justify-center[href$="om-jysk"][data-testid="usp"]:nth-child(2) > .md\:text-2xl.mt-2.text-center`
 - `.justify-center[href$="om-jysk"][data-testid="usp"]:nth-child(2) > .text-center.md\:text-lg`
-- `.w-64 > .justify-center.flex-col[data-testid="usp"]:nth-child(3) > .md\:text-2xl.mt-2.text-center`
-- `.w-64 > .justify-center.flex-col[data-testid="usp"]:nth-child(3) > .text-center.md\:text-lg`
+- `a[href$="kvalitet-og-garantier"] > .md\:text-2xl.mt-2.text-center`
+- `a[href$="kvalitet-og-garantier"] > .text-center.md\:text-lg`
 - `.justify-center[href$="fast-lav-pris"][data-testid="usp"] > .md\:text-2xl.mt-2.text-center`
 - `.justify-center[href$="fast-lav-pris"][data-testid="usp"] > .text-center.md\:text-lg`
 - `.text-xl`

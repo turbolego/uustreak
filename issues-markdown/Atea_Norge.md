@@ -1,16 +1,28 @@
 # WCAG Violations Report for Atea Norge
 
-**Timestamp:** 2026-09-30T04:53:28.188Z
+**Timestamp:** 2026-10-02T17:03:58.759Z
 **URL:** [https://www.atea.no/](https://www.atea.no/)
-**Total Violations:** 6
+**Total Violations:** 8
 
 ## Violation Details
+
+### Elements must only use supported ARIA attributes
+
+- **Impact:** critical
+- **Description:** Ensure an element's role supports its ARIA attributes
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#videoLoop, .ytmVideoInfoVideoTitle`
 
 ### Elements must only use permitted ARIA attributes
 
 - **Impact:** serious
 - **Description:** Ensure ARIA attributes are not prohibited for an element's role
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/aria-prohibited-attr?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 1
 
@@ -18,11 +30,23 @@
 
 - `#videoLoop, #movie_player`
 
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#videoLoop, .ytmVideoInfoChannelAvatar`
+
 ### Form elements should have a visible label
 
 - **Impact:** serious
 - **Description:** Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/label-title-only?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/label-title-only?application=playwright
 - **Tags:** cat.forms, best-practice
 - **Count:** 1
 
@@ -34,7 +58,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the banner landmark is at top level
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-banner-is-top-level?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-banner-is-top-level?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -46,7 +70,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the main landmark is at top level
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-main-is-top-level?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-main-is-top-level?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -58,7 +82,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the document has at most one main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/landmark-no-duplicate-main?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-main?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -70,7 +94,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.12/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
