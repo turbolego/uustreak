@@ -100,12 +100,15 @@ function createAchievementsButton(projectName, achievements = []) {
     count.textContent = `Achievements: ${achievements.length}`;
     button.appendChild(count);
 
+    const icons = document.createElement('span');
+    icons.className = 'achievements-icons';
+    icons.setAttribute('aria-hidden', 'true');
+    icons.textContent = achievements.length > 0
+        ? achievements.map(achievement => getAchievementIcon(achievement.type)).join('')
+        : '\u00A0';
+    button.appendChild(icons);
+
     if (achievements.length > 0) {
-        const icons = document.createElement('span');
-        icons.className = 'achievements-icons';
-        icons.setAttribute('aria-hidden', 'true');
-        icons.textContent = achievements.map(achievement => getAchievementIcon(achievement.type)).join('');
-        button.appendChild(icons);
         button.title = achievements.map(getAchievementDescription).join(', ');
     }
 

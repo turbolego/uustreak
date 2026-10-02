@@ -289,6 +289,15 @@ table {
 }
 
 @media (max-width: 768px) {
+    table > caption {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 0.75rem;
+        padding: 0 0.75rem;
+        text-align: left;
+    }
     table {
         min-width: 0;
     }
@@ -1044,20 +1053,24 @@ details summary:hover {
     color: var(--color-text);
     display: inline-flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.25rem;
+    align-items: flex-start;
+    gap: 0.15rem;
     line-height: 1.3;
+    text-align: left;
 }
 
 .achievements-count {
+    display: block;
     white-space: nowrap;
 }
 
 .achievements-icons {
+    display: block;
     font-size: 1.1rem;
     letter-spacing: 0.1em;
     white-space: normal;
     overflow-wrap: anywhere;
+    min-height: 1.3em;
 }
 
 .achievements-button:hover {
