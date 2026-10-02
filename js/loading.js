@@ -23,7 +23,7 @@ const loadingStyles = `
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(255, 255, 255, 0.9);
+        background: color-mix(in srgb, var(--color-bg) 90%, transparent);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -33,16 +33,18 @@ const loadingStyles = `
     .loading-content {
         text-align: center;
         padding: 2rem;
-        background: white;
+        background: var(--color-bg-secondary);
+        color: var(--color-text);
         border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid var(--color-border);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     }
 
     .loading-spinner {
         width: 50px;
         height: 50px;
-        border: 5px solid #f3f3f3;
-        border-top: 5px solid #3498db;
+        border: 5px solid var(--color-bg-alt3);
+        border-top: 5px solid var(--color-accent);
         border-radius: 50%;
         animation: spin 1s linear infinite;
         margin: 0 auto 1rem;
@@ -51,11 +53,12 @@ const loadingStyles = `
     .loading-text {
         margin-bottom: 1rem;
         font-size: 1.1rem;
+        color: var(--color-text);
     }
 
     .progress-bar {
         height: 20px;
-        background-color: #f3f3f3;
+        background-color: var(--color-bg-alt3);
         border-radius: 10px;
         overflow: hidden;
         margin-bottom: 0.5rem;
@@ -63,7 +66,7 @@ const loadingStyles = `
 
     #progress-fill {
         height: 100%;
-        background-color: #3498db;
+        background-color: var(--color-accent);
         width: 0%;
         transition: width 0.3s ease;
     }
