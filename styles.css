@@ -172,16 +172,17 @@ table {
         font-size: 0.95rem;
     }
     td[data-label] {
-        padding-left: 8.5rem;
+        padding-left: 0.75rem;
     }
     td::before {
         content: attr(data-label) ": ";
-        position: absolute;
-        left: 0.75rem;
+        position: static;
+        display: block;
         font-weight: 600;
         color: #333;
         text-align: left;
-        white-space: nowrap;
+        white-space: normal;
+        overflow-wrap: anywhere;
     }
     td.rank-cell::before {
         content: "Rang: ";
