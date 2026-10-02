@@ -108,7 +108,7 @@ test('classifies embedded, page, and combined violation causes', async t => {
     const cases = [
         {
             violations: [{ help: 'All page content should be contained by landmarks', nodes: [{ html: '<div id="onetrust-banner-sdk">' }], violation_count: 1 }],
-            expected: 'Embedded code: 1 violation found: All page content should be contained by landmarks',
+            expected: 'Embedded code from OneTrust: 1 violation found: All page content should be contained by landmarks',
         },
         {
             violations: [{ help: 'Buttons must have discernible text', nodes: [{ target: ['#checkout'] }], violation_count: 1 }],
@@ -119,7 +119,7 @@ test('classifies embedded, page, and combined violation causes', async t => {
                 { help: 'Cookie banner must be labelled', nodes: [{ target: ['#onetrust-banner-sdk'] }], violation_count: 1 },
                 { help: 'Buttons must have discernible text', nodes: [{ target: ['#checkout'] }], violation_count: 1 },
             ],
-            expected: 'Embedded code and page content: 2 violations found: Cookie banner must be labelled, Buttons must have discernible text',
+            expected: 'Embedded code from OneTrust and page content: 2 violations found: Cookie banner must be labelled, Buttons must have discernible text',
         },
     ];
     for (const testCase of cases) {

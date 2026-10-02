@@ -34,7 +34,7 @@ function formatViolationReason(violation) {
     return count && count > 1 ? `${label} (${count})` : label;
 }
 
-function classifyViolationSource(violation) {
+function getEmbeddedCodeProviders(violation) {
     const nodes = Array.isArray(violation?.nodes) ? violation.nodes : [];
     const evidence = [
         violation?.id,
@@ -43,19 +43,51 @@ function classifyViolationSource(violation) {
         ...nodes.flatMap(node => [node?.html, ...(node?.target || []), node?.failureSummary]),
     ].filter(Boolean).join(' ').toLowerCase();
 
-    const embeddedCode = /\b(onetrust|trustarc|cookiebot|didomi|consentmanager|quantcast|usercentrics|cookie consent)\b|<(?:iframe|script|embed|object)\b|(?:^|[#.\s])(?:ot-|onetrust-|cmp[-_])/i.test(evidence);
-    return embeddedCode ? 'embedded' : 'page';
+    const providers = [
+        ['OneTrust', /\b(?:onetrust|ot-[a-z0-9_-]+|onetrust-[a-z0-9_-]+)\b/i],
+        ['TrustArc', /\btrustarc\b/i],
+        ['Cookiebot', /\bcookiebot\b/i],
+        ['Didomi', /\bdidomi\b/i],
+        ['ConsentManager', /\bconsentmanager\b/i],
+        ['Quantcast', /\bquantcast\b/i],
+        ['Usercentrics', /\busercentrics\b/i],
+    ];
+    return providers.filter(([, pattern]) => pattern.test(evidence)).map(([name]) => name);
+}
+
+function classifyViolationSource(violation) {
+    const nodes = Array.isArray(violation?.nodes) ? violation.nodes : [];
+    const evidence = [
+        violation?.id,
+        violation?.help,
+        violation?.description,
+        ...nodes.flatMap(node => [node?.html, ...(node?.target || []), node?.failureSummary]),
+    ].filter(Boolean).join(' ').toLowerCase();
+    const providers = getEmbeddedCodeProviders(violation);
+    const embeddedCode = providers.length > 0
+        || /\bcookie consent\b|<(?:iframe|script|embed|object)\b/i.test(evidence);
+    return { type: embeddedCode ? 'embedded' : 'page', providers };
 }
 
 function formatLostStreakCause(violations) {
-    const sources = new Set(violations.map(classifyViolationSource));
-    if (sources.size === 1 && sources.has('embedded')) {
-        return 'Embedded code';
+    const classifications = violations.map(classifyViolationSource);
+    const hasEmbedded = classifications.some(source => source.type === 'embedded');
+    const hasPageContent = classifications.some(source => source.type === 'page');
+    const providers = [...new Set(classifications.flatMap(source => source.providers))];
+    const embeddedLabel = providers.length > 0
+        ? `Embedded code from ${providers.join(' and ')}`
+        : 'Embedded code';
+
+    if (hasEmbedded && hasPageContent) {
+        return `${embeddedLabel} and page content`;
     }
-    if (sources.size === 1) {
+    if (hasEmbedded) {
+        return embeddedLabel;
+    }
+    if (hasPageContent) {
         return 'Page content';
     }
-    return 'Embedded code and page content';
+    return 'Unknown source';
 }
 
 async function getLostStreakReason(projectName, lostDate, reportList) {

@@ -31,7 +31,7 @@ least 365 days ends with a violation report. For example:
 ```
 
 `lostReason` summarizes the latest report on `lostDate`: whether the violations
-come from embedded code, page content, or both; the total violation count; and up
+come from embedded code (including the detected provider, such as OneTrust), page content, or both; the total violation count; and up
 to three rule descriptions, with counts and a remaining-rule count when needed.
 Embedded code is detected from common consent/CMP vendor markers (including
 OneTrust) and embedded element evidence such as scripts, iframes, and embeds.
