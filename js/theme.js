@@ -34,6 +34,8 @@
         button.setAttribute('aria-pressed', String(isDark));
         const icon = button.querySelector('.theme-toggle-icon');
         if (icon) icon.textContent = isDark ? '🌙' : '☀️';
+        const label = button.querySelector('.theme-toggle-label');
+        if (label) label.textContent = isDark ? 'Mørk modus' : 'Lys modus';
     }
 
     function applyTheme(theme) {
