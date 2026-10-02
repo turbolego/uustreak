@@ -22,6 +22,114 @@ function calculateDaysSinceDate(dateStr) {
     return Math.floor((today - date) / (1000 * 60 * 60 * 24));
 }
 
+function formatViolationReason(violation) {
+    if (!violation || typeof violation !== 'object') {
+        return null;
+    }
+
+    const label = violation.help || violation.rule_id || violation.description || 'Violation';
+    const countValue = Number(violation.violation_count);
+    const count = Number.isFinite(countValue) ? countValue : null;
+
+    return count && count > 1 ? `${label} (${count})` : label;
+}
+
+async function getLostStreakReason(projectName, lostDate, reportList) {
+    if (!Array.isArray(reportList) || reportList.length === 0 || !projectName || !lostDate) {
+        console.warn(`Cannot look up lost streak reason for ${projectName} on ${lostDate}: report list or streak metadata is missing`);
+        return null;
+    }
+
+    const matchingReports = reportList
+        .map((entry) => {
+            const parsed = path.basename(entry);
+            const reportMeta = parsed.match(/^violations-(.+?)-(\d{4}-\d{2}-\d{2})T(\d{2}-\d{2}-\d{2}_\d{3}Z)(?:-count-(\d+))?\.json$/);
+            if (!reportMeta) {
+                return null;
+            }
+
+            return {
+                project: reportMeta[1],
+                date: reportMeta[2],
+                timestamp: reportMeta[3],
+                count: reportMeta[4] ? Number.parseInt(reportMeta[4], 10) : -1,
+                entry,
+            };
+        })
+        .filter((report) => report && report.project === projectName && report.date === lostDate)
+        .sort((left, right) => right.timestamp.localeCompare(left.timestamp));
+
+    const report = matchingReports[0];
+    if (!report) {
+        console.warn(`No report found for lost streak reason for ${projectName} on ${lostDate}`);
+        return null;
+    }
+
+    const reportPath = path.join(process.cwd(), report.entry);
+    try {
+        let reportData;
+        if (fs.existsSync(reportPath)) {
+            reportData = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+        } else {
+            const baseUrl = process.env.SITE_BASE_URL;
+            if (!baseUrl) {
+                throw new Error('Report is not available locally and SITE_BASE_URL is not set');
+            }
+            const relativePath = report.entry.split('/').map(encodeURIComponent).join('/');
+            const response = await fetch(`${baseUrl.replace(/\/$/, '')}/${relativePath}`, {
+                signal: AbortSignal.timeout(30000),
+            });
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            reportData = await response.json();
+        }
+        if (!reportData || !Array.isArray(reportData.violations)) {
+            throw new Error('Report does not contain a violations array');
+        }
+        const violations = Array.isArray(reportData.violations)
+            ? reportData.violations.filter((violation) => violation && typeof violation === 'object' && Number(violation.violation_count) > 0)
+            : [];
+        const totalViolationsValue = reportData.total_violations;
+        const totalViolations = Number.isFinite(totalViolationsValue) && totalViolationsValue > 0
+            ? totalViolationsValue
+            : (report.count >= 0 ? report.count : violations.reduce((sum, violation) => sum + Number(violation.violation_count || 0), 0));
+
+        const summary = violations
+            .slice(0, 3)
+            .map(formatViolationReason)
+            .filter(Boolean);
+
+        if (summary.length > 0) {
+            const remaining = violations.length - summary.length;
+            const suffix = remaining > 0 ? `, and ${remaining} more` : '';
+            return `${totalViolations} violation${totalViolations === 1 ? '' : 's'} found: ${summary.join(', ')}${suffix}`;
+        }
+
+        if (totalViolations > 0) {
+            return `${totalViolations} violation${totalViolations === 1 ? '' : 's'} found`;
+        }
+        throw new Error('Loss-date report does not contain positive violations');
+    } catch (error) {
+        console.warn(`Could not read lost streak reason for ${projectName} on ${lostDate}:`, error.message);
+    }
+
+    return null;
+}
+
+async function enrichLostStreakReasons(projectName, lostStreaks, reportList, achievements) {
+    const enriched = [];
+    for (const lostStreak of lostStreaks || []) {
+        const existing = achievements.find(
+            achievement => achievement.type === 'nobodys_perfect' && achievement.toDate === lostStreak.endDate
+        );
+        enriched.push({
+            ...lostStreak,
+            reason: lostStreak.reason || existing?.lostReason
+                || await getLostStreakReason(projectName, lostStreak.lostDate, reportList),
+        });
+    }
+    return enriched;
+}
+
 /**
  * Track achievements for all projects
  * Updates projects.json with new achievements based on streaks and metrics
@@ -60,6 +168,14 @@ async function trackAchievements() {
             console.log(`Using report-list.json: ${reportList.length} entries`);
         }
 
+        if (!reportList && fs.existsSync(reportListPath)) {
+            try {
+                reportList = JSON.parse(fs.readFileSync(reportListPath, 'utf8'));
+            } catch (e) {
+                console.warn('Could not parse report-list.json for lost streak reasons:', e.message);
+            }
+        }
+
         // Get today's date
         const today = new Date().toISOString().split('T')[0];
 
@@ -83,7 +199,20 @@ async function trackAchievements() {
             const longestStreak = streakResult.longestStreak;
             const longestStreakStart = streakResult.longestStreakStart;
             const longestStreakEnd = streakResult.longestStreakEnd;
-            const lostStreaks = streakResult.lostStreaks || [];
+            const lostStreaks = await enrichLostStreakReasons(project.name, streakResult.lostStreaks || [], reportList, achievements);
+
+            let backfilledLostReasons = false;
+            let projectUpdated = false;
+            for (const lostStreak of lostStreaks) {
+                const existingLostAchievement = achievements.find(
+                    (achievement) => achievement.type === 'nobodys_perfect' && achievement.toDate === lostStreak.endDate
+                );
+
+                if (existingLostAchievement && !existingLostAchievement.lostReason && lostStreak.reason) {
+                    existingLostAchievement.lostReason = lostStreak.reason;
+                    backfilledLostReasons = true;
+                }
+            }
             
             // Check for new achievements
             const newAchievements = checkForNewAchievements(
@@ -102,6 +231,14 @@ async function trackAchievements() {
                     }
                 });
 
+                projectUpdated = true;
+            }
+
+            if (backfilledLostReasons) {
+                projectUpdated = true;
+            }
+
+            if (projectUpdated) {
                 updatedCount++;
             }
 
@@ -344,6 +481,7 @@ function checkForNewAchievements(projectName, currentStreak, existingAchievement
                 fromDate: lost.startDate,
                 toDate: lost.endDate,
                 lostDate: lost.lostDate,
+                lostReason: lost.reason || null,
                 unlockedDate: today,
                 streakDays: lost.days
             });
@@ -353,5 +491,8 @@ function checkForNewAchievements(projectName, currentStreak, existingAchievement
     return newAchievements;
 }
 
-// Run the script
-trackAchievements();
+if (require.main === module) {
+    trackAchievements();
+}
+
+module.exports = { calculateStreakFromIndex, calculateStreak, checkForNewAchievements, getLostStreakReason };

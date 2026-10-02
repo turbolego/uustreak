@@ -12,6 +12,38 @@ Alle testene genereres fra scratch hver gang med [generate_specs.py](https://git
 
 Lansert på ODIN konferansen i 2025 i forbindelse med presentasjonen ["Levende Tilgjengelighetserklæring"](https://event.dataforeningen.no/odin2025/program/) med [Tobias Müller Andersen](https://www.linkedin.com/in/turbolego/) og [Lilly Arstad Helmersen](https://www.linkedin.com/in/lillyahelmersen/)
 
+## Achievement tracker
+
+[Achievement tracker](js/track-achievements.js) updates achievements in
+[projects.json](projects.json). "Nobody's Perfect" is awarded when a streak of at
+least 365 days ends with a violation report. For example:
+
+```json
+{
+  "type": "nobodys_perfect",
+  "fromDate": "2025-09-18",
+  "toDate": "2026-09-30",
+  "lostDate": "2026-10-01",
+  "lostReason": "2 violations found: Elements must meet minimum color contrast ratio thresholds (2)",
+  "unlockedDate": "2026-10-02",
+  "streakDays": 378
+}
+```
+
+`lostReason` summarizes the latest report on `lostDate`: the total violation count
+and up to three rule descriptions, with counts and a remaining-rule count when
+needed. The achievement dialog displays it alongside the loss date. Existing
+achievements without a reason are backfilled on the next tracker run.
+
+Run `node js/track-achievements.js` with the historical streak index or report
+list available. Reports are read locally when present; set `SITE_BASE_URL` to the
+published site's URL to fetch missing loss-date reports, as the scheduled
+workflow does. If a report cannot be read, the tracker logs a warning and leaves
+`lostReason` null (or unchanged for an existing achievement) so a later run can
+retry without inventing a reason.
+
+Run the focused regression tests with `node --test js/track-achievements.test.js`.
+
 # Nettsider endret eller fjernet fra listen
 
 Listen med de 278 nettsidene fra statusmålingen til uutilsynet i 2018 er brukt som utgangspunkt, men jeg har endret noen av disse:
@@ -36,4 +68,3 @@ Listen med de 278 nettsidene fra statusmålingen til uutilsynet i 2018 er brukt 
 * Nettsidene for Alta Ungdomsskole ble flyttet fra alta.ungdomsskole.no til underside av alta.kommune.no
 
 ![UUStreak - WCAG Accessibility Leaderboard](assets/uustreak.png)
-

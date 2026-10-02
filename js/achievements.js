@@ -15,6 +15,20 @@ function formatAchievementDate(dateStr) {
 }
 
 /**
+ * Escape text for safe insertion into HTML
+ * @param {string} value - Raw text
+ * @returns {string} - Escaped text
+ */
+function escapeHtml(value) {
+    return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+/**
  * Calculate days between two dates
  * @param {string} fromDate - Start date in YYYY-MM-DD format
  * @param {string} toDate - End date in YYYY-MM-DD format
@@ -155,6 +169,8 @@ function showAchievementsDialog(projectName, achievements = []) {
                                 </p>
                                 ${achievement.type === 'nobodys_perfect' && achievement.lostDate ? `
                                 <p class="achievement-dates">Streak lost ${formatAchievementDate(achievement.lostDate)}</p>` : ''}
+                                ${achievement.type === 'nobodys_perfect' && achievement.lostReason ? `
+                                <p class="achievement-reason"><strong>Why:</strong> ${escapeHtml(achievement.lostReason)}</p>` : ''}
                             </div>
                         </div>
                         <div class="achievement-duration">
