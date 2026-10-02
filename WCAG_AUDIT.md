@@ -22,7 +22,7 @@ Key CSS:
 - Buttons and interactive elements can shrink below comfortable tap target on narrow screens
 
 ### WCAG 2.2 – Automated findings
-1. **1.3.1 Info and Relationships** – Table has caption but `th`/`td` associations rely only on visual order; no `headers`/`id` linking for dynamic columns. Card view lacks semantic labels.
+1. **1.3.1 Info and Relationships** – Table header cells use `scope="col"`, which programmatically associates each data cell with its column header. In the mobile card presentation, visible repeated labels provide additional context for each value.
 2. **1.4.4 Resize Text** – Font sizing uses `clamp` which is good, but table cell padding remains fixed, causing overflow at 200% zoom.
 3. **1.4.10 Reflow** – Table does not reflow to single column; horizontal scroll required below ~600px → fails AA at 320px width.
 4. **2.4.7 Focus Visible** – Focus outline exists but is 2px and contrast ~4.5:1; WCAG 2.2 SC 2.4.11 Focus Appearance requires ≥2px perimeter *and* 3:1 contrast area. Current satisfies contrast but outline-offset negative may obscure.
@@ -52,7 +52,7 @@ Key CSS:
 
 ### WCAG 2.2 fixes
 - Added skip link `.skip-link` with focus styles
-- `td[data-label]` populated via JS, `th` receives `id`
+- `td[data-label]` populated via JS for visible labels in the mobile card presentation
 - Table gets `aria-label` and caption linked via `aria-labelledby`
 - Focus appearance upgraded to 3px solid #005fcc with positive offset 2px, `:focus-visible` rule added, box-shadow for contrast
 - Pointer targets: 44×44 minimum dimensions are declared globally and repeated under `@media (pointer: coarse)`
@@ -61,8 +61,8 @@ Key CSS:
 - Table caption receives unique id and `table` references it
 
 ### Accessibility enhancements
-- `headers` attribute on cells links to column id
-- Card labels preserve column names for screen readers
+- Native `scope="col"` markup preserves table header associations
+- Card labels show column names with each value in the mobile presentation
 - Minimum tap target enforced
 
 ## Remaining / Non-blocking
