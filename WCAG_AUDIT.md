@@ -54,7 +54,7 @@ Key CSS:
 - `td[data-label]` populated via JS, `th` receives `id`
 - Table gets `aria-label` and caption linked via `aria-labelledby`
 - Focus appearance upgraded to 3px solid #005fcc with positive offset 2px, `:focus-visible` rule added, box-shadow for contrast
-- Pointer targets: `@media (pointer:fine)` ensures min 44×44 for buttons
+- Pointer targets: 44×44 minimum dimensions are declared globally and repeated under `@media (pointer: coarse)`
 - Reduced motion media query added
 - Dialogs now include `aria-describedby`
 - Table caption receives unique id and `table` references it
