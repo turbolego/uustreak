@@ -1123,6 +1123,32 @@
 
     return streak;
         }
+
+        // Count days with and without violations up to the selected date, using the newest valid report per day.
+        function calculateViolationDayCounts(projectName, reportList, selectedDate = null) {
+            const reportsByDate = new Map();
+            reportList
+                .filter(filename => !filename.includes('-FAILED.json') && !filename.includes('-SKIPPED.json'))
+                .map(parseReportFilename)
+                .filter(report => report && report.project === projectName && (!selectedDate || report.date <= selectedDate))
+                .forEach(report => {
+                    const existingReport = reportsByDate.get(report.date);
+                    if (!existingReport || report.filename > existingReport.filename) {
+                        reportsByDate.set(report.date, report);
+                    }
+                });
+
+            let daysWithoutViolations = 0;
+            let daysWithViolations = 0;
+            reportsByDate.forEach(report => {
+                if (report.filename.includes('-count-0')) {
+                    daysWithoutViolations++;
+                } else {
+                    daysWithViolations++;
+                }
+            });
+            return { daysWithoutViolations, daysWithViolations };
+        }
         
         function showReportDetails(report) {
             const dialog = document.getElementById('details-dialog');
@@ -1196,12 +1222,14 @@
 
             const latestReports = reports;
             const reportStreaks = new Map();
+            const reportDayCounts = new Map();
             const viewMode = document.getElementById('view-selector').value;
 
             // Calculate streaks for each project up to the selected date
             latestReports.forEach(report => {
                 const streak = calculateNoViolationsStreak(report.project, reportList, report, date);
                 reportStreaks.set(report.project, streak);
+                reportDayCounts.set(report.project, calculateViolationDayCounts(report.project, reportList, date));
             });
 
             // Find the maximum streak value to add fire emoji to top performers
@@ -1227,7 +1255,9 @@
                 'Achievements',
                 'Trends',
                 'Totalt antall brudd',
-                'Streak (dager uten brudd)',
+                'Streak',
+                'Dager uten brudd',
+                'Dager med brudd',
                 ...(viewMode === 'types' ? Array.from(allViolationTypes) : Array.from(allViolationTags)),
             ];
 
@@ -1361,6 +1391,14 @@
                         cell.dataset.sortValue = streakValue;
                         // Add fire emoji for projects with the highest streak
                         cell.textContent = streakValue === maxStreak && maxStreak > 0 ? `${streakValue} 🔥` : streakValue;
+                    } else if (index === 7) {
+                        const { daysWithoutViolations } = reportDayCounts.get(report.project);
+                        cell.dataset.sortValue = daysWithoutViolations;
+                        cell.textContent = daysWithoutViolations;
+                    } else if (index === 8) {
+                        const { daysWithViolations } = reportDayCounts.get(report.project);
+                        cell.dataset.sortValue = daysWithViolations;
+                        cell.textContent = daysWithViolations;
                     } else {
                         if (viewMode === 'types') {
                             cell.textContent = report.violations.find(v => v.id === col)?.violation_count || 0;
