@@ -50,9 +50,6 @@ utvikles eller publiseres. Nettsiden bør også overvåkes kontinuerlig i
 produksjon, slik at feil fra både egen kode og eksterne avhengigheter blir
 oppdaget raskt.
 
-Dette arbeidet er også knyttet til [Effektiviserer UU-sjekk](https://manpowergroupapps-my.sharepoint.com/personal/tobias_andersen_no_experis_com/_layouts/15/Doc.aspx?sourcedoc=%7B6E6A5597-E939-4573-83A7-E6F0850AED8E%7D&file=Experis_Pressemelding_Effektiviserer%20UU-sjekk.docx&action=default&mobileredirect=true&DefaultItemOpen=1)
-og [Levende Tilgjengelighetserklæring 2025](https://manpowergroupapps-my.sharepoint.com/personal/tobias_andersen_no_experis_com/_layouts/15/Doc.aspx?sourcedoc=%7B3581C172-505B-4728-85A7-FDE4316D2139%7D&file=Levende%20Tilgjengelighetserkl%C3%A6ring%202025.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1).
-
 Alle testene genereres fra scratch hver gang med [generate_specs.py](https://github.com/turbolego/uustreak/blob/main/generate_specs.py) fra listen med nettsider i [projects.json](https://github.com/turbolego/uustreak/blob/main/projects.json) slik at man alltid tester likt. Testene kjøres med incognito modus med chromium med firefox og webkit som fallbacks.
 
 Lansert på ODIN konferansen i 2025 i forbindelse med presentasjonen ["Levende Tilgjengelighetserklæring"](https://event.dataforeningen.no/odin2025/program/) med [Tobias Müller Andersen](https://www.linkedin.com/in/turbolego/) og [Lilly Arstad Helmersen](https://www.linkedin.com/in/lillyahelmersen/)
