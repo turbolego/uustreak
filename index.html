@@ -40,6 +40,7 @@
     <link href="styles.css" rel="stylesheet">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="js/gzip-utils.js"></script>
+    <script src="js/embedded-code.js"></script>
 </head>
 
 <body>
@@ -1124,8 +1125,8 @@
     return streak;
         }
 
-        // Count days with and without violations up to the selected date, using the newest valid report per day.
-        function calculateViolationDayCounts(projectName, reportList, selectedDate = null) {
+        // Count days with violations up to the selected date, using the newest valid report per day.
+        function calculateDaysWithViolations(projectName, reportList, selectedDate = null) {
             const reportsByDate = new Map();
             reportList
                 .filter(filename => !filename.includes('-FAILED.json') && !filename.includes('-SKIPPED.json'))
@@ -1138,16 +1139,13 @@
                     }
                 });
 
-            let daysWithoutViolations = 0;
             let daysWithViolations = 0;
             reportsByDate.forEach(report => {
-                if (report.filename.includes('-count-0')) {
-                    daysWithoutViolations++;
-                } else {
+                if (!report.filename.includes('-count-0')) {
                     daysWithViolations++;
                 }
             });
-            return { daysWithoutViolations, daysWithViolations };
+            return daysWithViolations;
         }
         
         function showReportDetails(report) {
@@ -1229,7 +1227,7 @@
             latestReports.forEach(report => {
                 const streak = calculateNoViolationsStreak(report.project, reportList, report, date);
                 reportStreaks.set(report.project, streak);
-                reportDayCounts.set(report.project, calculateViolationDayCounts(report.project, reportList, date));
+                reportDayCounts.set(report.project, calculateDaysWithViolations(report.project, reportList, date));
             });
 
             // Find the maximum streak value to add fire emoji to top performers
@@ -1256,8 +1254,8 @@
                 'Trends',
                 'Totalt antall brudd',
                 'Streak',
-                'Dager uten brudd',
                 'Dager med brudd',
+                'Feil pga. embedded kode',
                 ...(viewMode === 'types' ? Array.from(allViolationTypes) : Array.from(allViolationTags)),
             ];
 
@@ -1392,13 +1390,16 @@
                         // Add fire emoji for projects with the highest streak
                         cell.textContent = streakValue === maxStreak && maxStreak > 0 ? `${streakValue} 🔥` : streakValue;
                     } else if (index === 7) {
-                        const { daysWithoutViolations } = reportDayCounts.get(report.project);
-                        cell.dataset.sortValue = daysWithoutViolations;
-                        cell.textContent = daysWithoutViolations;
-                    } else if (index === 8) {
-                        const { daysWithViolations } = reportDayCounts.get(report.project);
+                        const daysWithViolations = reportDayCounts.get(report.project);
                         cell.dataset.sortValue = daysWithViolations;
                         cell.textContent = daysWithViolations;
+                    } else if (index === 8) {
+                        // Violations where every affected element comes from third-party embedded code.
+                        const { count, providers } = window.EmbeddedCode
+                            ? window.EmbeddedCode.analyzeReport(report)
+                            : { count: 0, providers: [] };
+                        cell.dataset.sortValue = count;
+                        cell.textContent = count > 0 && providers.length ? `${count} (${providers.join(', ')})` : count;
                     } else {
                         if (viewMode === 'types') {
                             cell.textContent = report.violations.find(v => v.id === col)?.violation_count || 0;
