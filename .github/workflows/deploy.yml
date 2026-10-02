@@ -15,7 +15,7 @@ jobs:
   # 1. Gate‑keeper job — true only on the first Sunday
   # ──────────────────────────────────────────────────────────
   gate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     outputs:
       run: ${{ steps.first_sunday.outputs.run }}
     steps:

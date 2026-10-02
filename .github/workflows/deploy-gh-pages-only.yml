@@ -7,90 +7,97 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: gh-pages-static-deploy
+  cancel-in-progress: false
+
 jobs:
   deploy-gh-pages:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
+    timeout-minutes: 20
+    defaults:
+      run:
+        shell: bash
     steps:
       - name: Checkout main branch
         uses: actions/checkout@v7
         with:
           ref: main
           fetch-depth: 1
+          submodules: false
 
       - name: Checkout gh-pages branch
         uses: actions/checkout@v7
         with:
           ref: gh-pages
           path: gh-pages-branch
+          fetch-depth: 1
+          submodules: false
 
       - name: Configure Git
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
 
-      - name: Copy static files to gh-pages
+      - name: Copy, commit and push static files
         run: |
-          echo "Copying static files to gh-pages branch..."
-          
-          # Copy HTML files (all top-level dashboard pages, not just the index)
-          for page in *.html; do
-            cp "$page" gh-pages-branch/
-            echo "  copied $page"
-          done
-          cp README.md gh-pages-branch/
-          cp favicon.ico gh-pages-branch/
-          
-          # Copy JavaScript files
-          cp -r js gh-pages-branch/
-          
-          # Copy CSS files
-          cp styles.css gh-pages-branch/
-          
-          # Copy JSON data files
-          cp projects.json gh-pages-branch/
-          
-          # Copy assets folder
-          cp -r assets gh-pages-branch/
-          
-          echo "✅ Static files copied successfully"
+          set -euo pipefail
+          WORKSPACE="$PWD"
+          TARGET="$WORKSPACE/gh-pages-branch"
 
-      - name: Commit and push changes
-        run: |
-          cd gh-pages-branch
-          
-          # List files we're about to commit for debugging
+          copy_static_files() {
+            echo "Copying static files to gh-pages branch..."
+            cd "$WORKSPACE"
+            # All top-level dashboard pages, not just the index
+            for page in *.html; do
+              cp "$page" "$TARGET/"
+              echo "  copied $page"
+            done
+            cp README.md favicon.ico styles.css projects.json "$TARGET/"
+            cp -r js assets "$TARGET/"
+            echo "✅ Static files copied successfully"
+          }
+
+          copy_static_files
+          cd "$TARGET"
+
           echo "📋 Files changed:"
           git status --short
-          
-          # Stage all changes
-          echo "📝 Staging files..."
+
           git add -A
-          
-          # Check if there are changes to commit
           if git diff --cached --quiet; then
             echo "ℹ️  No changes detected in static files"
             exit 0
           fi
-          
+
           echo "✅ Changes detected, committing..."
-          git commit -m "chore: update static files (HTML, CSS, JS, projects.json) [skip ci]"
-          
-          # Push with retry logic
+          COMMIT_MSG="chore: update static files (HTML, CSS, JS, projects.json) [skip ci]"
+          git commit -q -m "$COMMIT_MSG"
+
           MAX_RETRIES=3
-          for i in $(seq 1 $MAX_RETRIES); do
+          for i in $(seq 1 "$MAX_RETRIES"); do
             echo "Push attempt $i of $MAX_RETRIES..."
-            if git push origin gh-pages 2>&1 | tail -10; then
+            if git push origin HEAD:gh-pages; then
               echo "✅ Successfully pushed to gh-pages"
               exit 0
-            else
-              echo "⚠️  Push attempt $i failed"
-              if [ $i -lt $MAX_RETRIES ]; then
-                echo "Retrying in 5 seconds..."
-                sleep 5
+            fi
+            echo "⚠️  Push attempt $i failed"
+            if [ "$i" -lt "$MAX_RETRIES" ]; then
+              # gh-pages may have moved (e.g. a report deploy). Start again from the latest tip.
+              sleep 5
+              git fetch --depth=1 origin gh-pages
+              git reset -q --hard FETCH_HEAD
+              copy_static_files
+              cd "$TARGET"
+              git add -A
+              if git diff --cached --quiet; then
+                echo "ℹ️  Latest gh-pages already contains these static files"
+                exit 0
               fi
+              git commit -q -m "$COMMIT_MSG"
             fi
           done
-          
+
           echo "❌ Failed to push after $MAX_RETRIES attempts"
           exit 1
 
