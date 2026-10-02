@@ -10,6 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure headings have discernible text
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
 - **Count:** 1
@@ -22,6 +23,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 1
@@ -34,6 +36,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the contentinfo landmark is at top level
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-contentinfo-is-top-level?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
@@ -46,6 +49,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the main landmark is at top level
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-main-is-top-level?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
@@ -58,6 +62,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the document has at most one main landmark
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-main?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
@@ -70,6 +75,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
@@ -82,6 +88,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 1
@@ -94,6 +101,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <object> elements have alternative text
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/object-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, EN-301-549, EN-9.1.1.1, RGAAv4, RGAA-1.1.6
 - **Count:** 9
@@ -114,6 +122,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <svg> elements with an img, image, graphics-document or graphics-symbol role have accessible text
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/svg-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
 - **Count:** 10
@@ -135,6 +144,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure tabindex attribute values are not greater than 0
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/tabindex?application=playwright
 - **Tags:** cat.keyboard, best-practice
 - **Count:** 5

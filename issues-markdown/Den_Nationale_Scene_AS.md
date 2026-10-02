@@ -10,18 +10,20 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#mcforms-365945-437181,.visible`
+- `#mcforms-365945-437181, .visible`
 
 ### Table header text should not be empty
 
 - **Impact:** minor
 - **Description:** Ensure table headers have discernible text
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/empty-table-header?application=playwright
 - **Tags:** cat.name-role-value, best-practice
 - **Count:** 2
@@ -35,6 +37,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 3
@@ -49,6 +52,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 91
@@ -151,6 +155,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure tabindex attribute values are not greater than 0
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/tabindex?application=playwright
 - **Tags:** cat.keyboard, best-practice
 - **Count:** 10

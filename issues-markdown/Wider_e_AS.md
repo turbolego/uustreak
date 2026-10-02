@@ -10,6 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 3
@@ -24,6 +25,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure elements with ARIA roles have all required ARIA attributes
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-required-attr?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 2
@@ -37,6 +39,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure elements with an ARIA role that require child roles contain them
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-required-children?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 1
@@ -49,6 +52,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure elements with an ARIA role that require parent roles are contained by them
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-required-parent?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 3
@@ -63,6 +67,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure all ARIA attributes have valid values
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-valid-attr-value?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 2
@@ -76,6 +81,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
@@ -88,6 +94,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <li> elements are used semantically
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/listitem?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 20

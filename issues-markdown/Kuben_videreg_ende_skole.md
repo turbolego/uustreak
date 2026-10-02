@@ -10,6 +10,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure an element's role supports its ARIA attributes
+- **Source:** Embedded code from Innhold i iframe
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 2
@@ -23,6 +24,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure ARIA attributes are not prohibited for an element's role
+- **Source:** Embedded code from Innhold i iframe
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 2
@@ -36,6 +38,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure buttons have discernible text
+- **Source:** Embedded code from Innhold i iframe
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
 - **Count:** 2
@@ -49,6 +52,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Source:** Embedded code from youtube.com
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
 - **Count:** 1
@@ -61,6 +65,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 3

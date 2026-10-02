@@ -10,6 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure headings have discernible text
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
 - **Count:** 1
@@ -22,6 +23,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
@@ -34,6 +36,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the document has at most one banner landmark
+- **Source:** Embedded code from Cookie Information
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-banner?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
@@ -46,6 +49,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
+- **Source:** Embedded code from Cookie Information
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1

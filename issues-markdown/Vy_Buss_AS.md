@@ -10,6 +10,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure an element's role supports its ARIA attributes
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 4
@@ -25,6 +26,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure <meta name="viewport"> does not disable text scaling and zooming
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/meta-viewport?application=playwright
 - **Tags:** cat.sensory-and-visual-cues, wcag2aa, wcag144, EN-301-549, EN-9.1.4.4, ACT, RGAAv4, RGAA-10.4.2
 - **Count:** 1
@@ -37,6 +39,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 14

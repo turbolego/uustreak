@@ -10,6 +10,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <dl> elements are structured correctly
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/definition-list?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.3
 - **Count:** 2
@@ -23,6 +24,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the main landmark is at top level
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-main-is-top-level?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 100
@@ -134,6 +136,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the document has at most one main landmark
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-main?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
@@ -146,6 +149,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 2
@@ -159,6 +163,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure tabindex attribute values are not greater than 0
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/tabindex?application=playwright
 - **Tags:** cat.keyboard, best-practice
 - **Count:** 2

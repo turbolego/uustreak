@@ -10,6 +10,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure an element's role supports its ARIA attributes
+- **Source:** Embedded code from Innhold i iframe
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-attr?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 1
@@ -22,6 +23,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure every ARIA progressbar node has an accessible name
+- **Source:** Embedded code from Innhold i iframe
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-progressbar-name?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag111, EN-301-549, EN-9.1.1.1, RGAAv4, RGAA-11.1.1
 - **Count:** 1
@@ -34,6 +36,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure ARIA attributes are not prohibited for an element's role
+- **Source:** Embedded code from Innhold i iframe
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 1
@@ -46,6 +49,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure elements with an ARIA role that require child roles contain them
+- **Source:** Embedded code from Innhold i iframe
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-required-children?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 1
@@ -58,6 +62,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure buttons have discernible text
+- **Source:** Embedded code from Innhold i iframe
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
 - **Count:** 1
@@ -70,6 +75,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 18
@@ -99,6 +105,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <frame> and <iframe> elements with focusable content do not have tabindex=-1
+- **Source:** Embedded code from Innhold i iframe
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-focusable-content?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag211, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, RGAAv4, RGAA-7.3.2
 - **Count:** 1
@@ -111,6 +118,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 1
@@ -123,6 +131,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 23

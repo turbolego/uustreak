@@ -10,6 +10,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure every ARIA dialog and alertdialog node has an accessible name
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-dialog-name?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 1

@@ -10,6 +10,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Source:** Embedded code from Innhold i iframe
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 3
@@ -24,6 +25,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure headings have discernible text
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
 - **Count:** 1
@@ -36,6 +38,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Source:** Embedded code from Ekstern iframe
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
 - **Count:** 5
@@ -52,6 +55,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 4
@@ -67,6 +71,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
@@ -79,6 +84,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 1
@@ -91,6 +97,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 133
@@ -167,19 +174,19 @@
 - `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(29)`
 - `.row.large-12.small-12:nth-child(31)`
 - `.t28.lab-scrollbox-headline.font-InterTight`
-- `#markup_10478983 > .fullwidthTarget.content > unite-player,#status-container`
+- `#markup_10478983 > .fullwidthTarget.content > unite-player, #status-container`
 - `article[data-instance="10478981"] > .content > .floatingTextSubset.media > .floatingText`
-- `#markup_10453098 > .fullwidthTarget.content > unite-player,#status-container`
+- `#markup_10453098 > .fullwidthTarget.content > unite-player, #status-container`
 - `article[data-instance="10453097"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10453072 > .fullwidthTarget.content > unite-player,#status-container`
+- `#markup_10453072 > .fullwidthTarget.content > unite-player, #status-container`
 - `article[data-instance="10453073"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10440435 > .fullwidthTarget.content > unite-player,#status-container`
+- `#markup_10440435 > .fullwidthTarget.content > unite-player, #status-container`
 - `.color_mobile_no_bg_color.align-center.mobile_text_align_align-center > .floatingTextSubset.media > .floatingText`
-- `#markup_10440421 > .fullwidthTarget.content > unite-player,#status-container`
+- `#markup_10440421 > .fullwidthTarget.content > unite-player, #status-container`
 - `article[data-instance="10440420"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10440430 > .fullwidthTarget.content > unite-player,#status-container`
+- `#markup_10440430 > .fullwidthTarget.content > unite-player, #status-container`
 - `article[data-instance="10440429"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10440438 > .fullwidthTarget.content > unite-player,#status-container`
+- `#markup_10440438 > .fullwidthTarget.content > unite-player, #status-container`
 - `article[data-instance="10440437"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
 - `.row.large-12.small-12:nth-child(33)`
 - `.lab-scrollbox-headline.t25.tm18`
@@ -235,6 +242,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure elements that have scrollable content are accessible by keyboard in Safari
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/scrollable-region-focusable?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
 - **Count:** 1
