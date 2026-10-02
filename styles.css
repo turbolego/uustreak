@@ -24,11 +24,13 @@
     --color-accent: #0b5cad;
     --color-accent-hover: #08468c;
     --color-success: #1c7c36;
-    --color-warning: #b46c1d;
+    --color-warning: #723f12;
     --color-error: #dc2626;
     --color-info: #0b5cad;
     --color-invalid-link: #dc2626;
     --color-invalid-bg: #fee2e2;
+    --color-link: #0b5cad;
+    --color-link-visited: #5a2d91;
     --color-focus: #0066cc;
     --color-scroll-track: #f1f1f1;
     --color-scroll-thumb: #888888;
@@ -66,6 +68,8 @@
         --color-scroll-track: #333333;
         --color-scroll-thumb: #aaaaaa;
         --color-scroll-thumb-hover: #cccccc;
+        --color-link: #66b2ff;
+        --color-link-visited: #99c9ff;
     }
 }
 
@@ -87,6 +91,21 @@ body {
     overflow-x: hidden;
     background-color: var(--color-bg);
     color: var(--color-text);
+}
+
+/* Theme-aware default link colors */
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--color-link-visited);
+}
+
+a:hover,
+a:focus {
+    color: var(--color-accent-hover);
 }
 
 main {
@@ -240,7 +259,7 @@ th.sortable button:hover {
 
 th.sortable button:focus {
     outline: 2px solid var(--color-focus);
-    outline-offset: -2px;
+    outline-offset: 2px;
     background-color: var(--color-bg-alt);
 }
 
@@ -276,7 +295,7 @@ td:focus,
 button:focus,
 a:focus {
     outline: 2px solid var(--color-focus);
-    outline-offset: -2px;
+    outline-offset: 2px;
 }
 
 .hero-actions button:focus {
@@ -300,6 +319,7 @@ a:focus {
     transform: translate(-50%, -50%);
     margin: 0;
     background: var(--color-bg);
+    color: var(--color-text);
     max-height: 90vh;
     overflow-y: auto;
 }
@@ -646,21 +666,6 @@ details summary:hover {
     border-left: 4px solid var(--color-warning);
 }
 
-@media (prefers-color-scheme: dark) {
-    .data-warning {
-        background-color: var(--color-invalid-bg);
-        color: var(--color-warning);
-    }
-
-    .data-warning summary {
-        color: var(--color-warning);
-    }
-
-    .data-warning summary:hover {
-        color: var(--color-text);
-    }
-}
-
 .data-warning details {
     margin-top: 10px;
 }
@@ -684,6 +689,21 @@ details summary:hover {
     margin-bottom: 5px;
     font-family: monospace;
     font-size: 0.9em;
+}
+
+@media (prefers-color-scheme: dark) {
+    .data-warning {
+        background-color: var(--color-invalid-bg);
+        color: var(--color-warning);
+    }
+
+    .data-warning summary {
+        color: var(--color-warning);
+    }
+
+    .data-warning summary:hover {
+        color: var(--color-text);
+    }
 }
 
 /* =========================================== */
