@@ -10,10 +10,14 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#h-Enskoleforallemedblikkfordenenkelte`
+- **Target:** `#h-Enskoleforallemedblikkfordenenkelte`
+  - **HTML:** `<h3 class="heading-3" id="h-Enskoleforallemedblikkfordenenkelte"><em>En skole for alle med blikk for den enkelte</em><br></h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+

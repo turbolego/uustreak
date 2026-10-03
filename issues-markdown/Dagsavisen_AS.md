@@ -10,238 +10,702 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Source:** Embedded code from Innhold i iframe
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 3
 
 #### Affected Elements:
 
-- `#offer_b426df421caf545e51f5-1, .pw-button`
-- `#offer_b426df421caf545e51f5-2, .pw-button`
-- `#offer_b426df421caf545e51f5-0, .pw-button`
+- **Target:** `#offer_b426df421caf545e51f5-1, .pw-button`
+  - **HTML:** `<div class="pw-button">Bli med</div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.86 (foreground color: #fde7e9, background color: #de3041, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#offer_b426df421caf545e51f5-2, .pw-button`
+  - **HTML:** `<div class="pw-button">Bli med</div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.86 (foreground color: #fde7e9, background color: #de3041, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `#offer_b426df421caf545e51f5-0, .pw-button`
+  - **HTML:** `<div class="pw-button">Bli med</div>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.86 (foreground color: #fde7e9, background color: #de3041, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
 
 ### Headings should not be empty
 
 - **Impact:** minor
 - **Description:** Ensure headings have discernible text
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.text_singleline.large-8.large-abs-8 > .singleline`
+- **Target:** `.text_singleline.large-8.large-abs-8 > .singleline`
+  - **HTML:** `<h2 class="content singleline" style=""> </h2>`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
 
 ### Frames must have an accessible name
 
 - **Impact:** serious
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Source:** Embedded code from Ekstern iframe
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
 - **Count:** 5
 
 #### Affected Elements:
 
-- `iframe[data-testid="embed-iframe"]`
-- `#offer_b426df421caf545e51f5-1`
-- `#offer_b426df421caf545e51f5-2`
-- `#offer_b426df421caf545e51f5-0`
-- `#offer_35cc7e60bc8ecd3914d0-0`
+- **Target:** `iframe[data-testid="embed-iframe"]`
+  - **HTML:** `<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify..." width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-..." loading="lazy">`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+
+- **Target:** `#offer_b426df421caf545e51f5-1`
+  - **HTML:** `<iframe id="offer_b426df421caf54..." name="offer_b426df421caf54..." scrolling="no" allowtransparency="true" allow="payment" allowfullscreen="true" src="https://buy.piano.io..." frameborder="0" style="overflow: hidden; ba...">`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+
+- **Target:** `#offer_b426df421caf545e51f5-2`
+  - **HTML:** `<iframe id="offer_b426df421caf54..." name="offer_b426df421caf54..." scrolling="no" allowtransparency="true" allow="payment" allowfullscreen="true" src="https://buy.piano.io..." frameborder="0" style="overflow: hidden; ba...">`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+
+- **Target:** `#offer_b426df421caf545e51f5-0`
+  - **HTML:** `<iframe id="offer_b426df421caf54..." name="offer_b426df421caf54..." scrolling="no" allowtransparency="true" allow="payment" allowfullscreen="true" src="https://buy.piano.io..." frameborder="0" style="overflow: hidden; ba...">`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+
+- **Target:** `#offer_35cc7e60bc8ecd3914d0-0`
+  - **HTML:** `<iframe id="offer_35cc7e60bc8ecd..." name="offer_35cc7e60bc8ecd..." scrolling="no" allowtransparency="true" allow="payment" allowfullscreen="true" src="https://buy.piano.io..." frameborder="0" style="overflow: hidden; ba...">`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+
 
 ### Heading levels should only increase by one
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 4
 
 #### Affected Elements:
 
-- `.has-row-header.bg-white.color_mobile_bg-white:nth-child(11) > h5`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(31) > h5`
-- `.has-row-header.bg-white.color_mobile_bg-white:nth-child(44) > h5`
-- `.has-row-header.bg-white.color_mobile_bg-white:nth-child(58) > h5`
+- **Target:** `.has-row-header.bg-white.color_mobile_bg-white:nth-child(11) > h5`
+  - **HTML:** `<h5 class="row_header_text large-12 small-12 t25 font-weight-bold m-font-weight-bold font-InterTight ">Meninger</h5>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(31) > h5`
+  - **HTML:** `<h5 class="row_header_text large-12 small-12 t25 tm18 font-weight-bold m-font-weight-bold font-InterTight ">Økonomi</h5>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `.has-row-header.bg-white.color_mobile_bg-white:nth-child(44) > h5`
+  - **HTML:** `<h5 class="row_header_text large-12 small-12 font-weight-bold m-font-weight-bold font-InterTight ">Epstein-høringen</h5>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `.has-row-header.bg-white.color_mobile_bg-white:nth-child(58) > h5`
+  - **HTML:** `<h5 class="row_header_text large-12 small-12 font-weight-bold m-font-weight-bold font-InterTight ">Epstein-høringen:</h5>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.customMenu2`
+- **Target:** `.customMenu2`
+  - **HTML:** `<nav class="navigation customMenu2">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
 
 ### Links must have discernible text
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.singleline.font-PTSans.t14 > a[href$="dagsavisen"][target="_blank"]`
+- **Target:** `.singleline.font-PTSans.t14 > a[href$="dagsavisen"][target="_blank"]`
+  - **HTML:** `<a href="https://nuu.no/dagsavisen" target="_blank"></a>`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 136
 
 #### Affected Elements:
 
-- `h1`
-- `#notice-10563599 > .content > h2`
-- `#notice-10563599 > .content > .meta`
-- `#notice-10563541 > .content > h2`
-- `#notice-10563541 > .content > .meta`
-- `#notice-10563523 > .content > h2`
-- `#notice-10563523 > .content > .meta`
-- `#notice-10563415 > .content > h2`
-- `#notice-10563415 > .content > .meta`
-- `#notice-10562932 > .content > h2`
-- `#notice-10562932 > .content > .meta`
-- `div[title="Kraftig vekst i leieprisene"] > h2`
-- `div[title="Kraftig vekst i leieprisene"] > .meta`
-- `div[title="Arbeidslivsavtale om KI"] > h2`
-- `div[title="Arbeidslivsavtale om KI"] > .meta`
-- `#notice-10561972 > .content > h2`
-- `#notice-10561972 > .content > .meta`
-- `#notice-10561951 > .content > h2`
-- `#notice-10561951 > .content > .meta`
-- `#notice-10561910 > .content > h2`
-- `#notice-10561910 > .content > .meta`
-- `#notice-10561804 > .content > h2`
-- `#notice-10561804 > .content > .meta`
-- `#notice-10561756 > .content > h2`
-- `#notice-10561756 > .content > .meta`
-- `#notice-10561720 > .content > h2`
-- `#notice-10561720 > .content > .meta`
-- `#notice-10561555 > .content > h2`
-- `#notice-10561555 > .content > .meta`
-- `#notice-10561405 > .content > h2`
-- `#notice-10561405 > .content > .meta`
-- `#notice-10560989 > .content > h2`
-- `#notice-10560989 > .content > .meta`
-- `div[title="Gasslekkasje i Oslo"] > h2`
-- `div[title="Gasslekkasje i Oslo"] > .meta`
-- `div[title="Gullsmedran i Oslo"] > h2`
-- `div[title="Gullsmedran i Oslo"] > .meta`
-- `#notice-10559876 > .content > h2`
-- `#notice-10559876 > .content > .meta`
-- `div[title="Nybilsalget opp i september"] > h2`
-- `div[title="Nybilsalget opp i september"] > .meta`
-- `.row.large-12.small-12:nth-child(2)`
-- `.row.large-12.small-12:nth-child(3)`
-- `.row.large-12.small-12:nth-child(4)`
-- `.row.large-12.small-12:nth-child(5)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(7)`
-- `.row.large-12.small-12:nth-child(8)`
-- `.row.large-12.small-12:nth-child(9)`
-- `.row.large-12.small-12:nth-child(10)`
-- `.has-row-header.bg-white.color_mobile_bg-white:nth-child(11)`
-- `.row.large-12.small-12:nth-child(13)`
-- `#offer_b426df421caf545e51f5-1, img`
-- `#offer_b426df421caf545e51f5-1, .pw-text`
-- `.row.large-12.small-12:nth-child(16)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(17)`
-- `#article_list_10372156 > .content > .lab-scrollbox-headline.t25.font-InterTight`
-- `#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.page-content > .border-bg-quinary-light.mobile_border-bg-quinary-light.hasBorder`
-- `.color_mobile_no_bg_color.row.large-12:nth-child(21)`
-- `.articlescroller-header.t25.tm18`
-- `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.page-content > .border_width_no_border_width.border_width_mobile_no_border_width.mobile_no_border_color`
-- `.row.large-12.small-12:nth-child(25)`
-- `.row.large-12.small-12:nth-child(26)`
-- `.row.large-12.small-12:nth-child(27)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .lab-scrollbox-headline.t25.font-InterTight`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .scroll-container.swipehelper.snap-container-x`
-- `.bg-black`
-- `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(31)`
-- `.row.large-12.small-12:nth-child(32)`
-- `.t28.lab-scrollbox-headline.font-InterTight`
-- `#markup_10478983 > .fullwidthTarget.content > unite-player,#status-container`
-- `article[data-instance="10478981"] > .content > .floatingTextSubset.media > .floatingText`
-- `#markup_10453098 > .fullwidthTarget.content > unite-player,#status-container`
-- `article[data-instance="10453097"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10453072 > .fullwidthTarget.content > unite-player,#status-container`
-- `article[data-instance="10453073"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10440435 > .fullwidthTarget.content > unite-player,#status-container`
-- `.color_mobile_no_bg_color.align-center.mobile_text_align_align-center > .floatingTextSubset.media > .floatingText`
-- `#markup_10440421 > .fullwidthTarget.content > unite-player,#status-container`
-- `article[data-instance="10440420"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10440430 > .fullwidthTarget.content > unite-player,#status-container`
-- `article[data-instance="10440429"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `#markup_10440438 > .fullwidthTarget.content > unite-player,#status-container`
-- `article[data-instance="10440437"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `.row.large-12.small-12:nth-child(34)`
-- `.lab-scrollbox-headline.t25.tm18`
-- `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(37)`
-- `.row.large-12.small-12:nth-child(38)`
-- `.row.large-12.small-12:nth-child(39)`
-- `.row.large-12.small-12:nth-child(40)`
-- `#offer_b426df421caf545e51f5-2, img`
-- `#offer_b426df421caf545e51f5-2, .pw-text`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(43)`
-- `.has-row-header.bg-white.color_mobile_bg-white:nth-child(44)`
-- `.row.large-12.small-12:nth-child(45)`
-- `.lab-scrollbox-headline.italic.m-italic`
-- `#article_list_10291490 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(47)`
-- `.row.large-12.small-12:nth-child(49)`
-- `.row.large-12.small-12:nth-child(50)`
-- `.row.large-12.small-12:nth-child(51)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(52)`
-- `.row.large-12.small-12:nth-child(53)`
-- `.row.large-12.small-12:nth-child(55)`
-- `.row.large-12.small-12:nth-child(56)`
-- `.row.large-12.small-12:nth-child(57)`
-- `.has-row-header.bg-white.color_mobile_bg-white:nth-child(58)`
-- `.row.large-12.small-12:nth-child(59)`
-- `.row.large-12.small-12:nth-child(61)`
-- `.row.large-12.small-12:nth-child(62)`
-- `.row.large-12.small-12:nth-child(63)`
-- `.row.large-12.small-12:nth-child(64)`
-- `.row.large-12.small-12:nth-child(65)`
-- `.row.large-12.small-12:nth-child(66)`
-- `.row.large-12.small-12:nth-child(67)`
-- `.row.large-12.small-12:nth-child(68)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(69)`
-- `.row.large-12.small-12:nth-child(70)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(71)`
-- `.row.large-12.small-12:nth-child(72)`
-- `.row.large-12.small-12:nth-child(73)`
-- `.row.large-12.small-12:nth-child(74)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(75)`
-- `.row.large-12.small-12:nth-child(76)`
-- `#offer_b426df421caf545e51f5-0, img`
-- `#offer_b426df421caf545e51f5-0, .pw-text`
-- `.row.large-12.small-12:nth-child(78)`
-- `.articlescroller-header.tm20.font-PTSans`
-- `#article_list_9904930 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `#offer_35cc7e60bc8ecd3914d0-0, img`
-- `#offer_35cc7e60bc8ecd3914d0-0, .pw-subtitle`
-- `#offer_35cc7e60bc8ecd3914d0-0, .pw-offer`
-- `#offer_35cc7e60bc8ecd3914d0-0, #pw-countdown`
-- `.powered-by`
+- **Target:** `h1`
+  - **HTML:** `<h1 class="hidden-heading">Dagsavisen – Nyheter, politikk, kultur, kommentarer og debatt fra Norge og verden</h1>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10563599 > .content > h2`
+  - **HTML:** `<h2><a href="/notice/10563599">Skoleprotestene i Frankrike: 1747 pågrepet</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10563599 > .content > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-02T19:44:05.000Z" title="02.10.2026 21:44">8 timer siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10563541 > .content > h2`
+  - **HTML:** `<h2><a href="/notice/10563541">Mann døde etter fall i gruve i Trøndelag</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10563541 > .content > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-02T17:59:04.000Z" title="02.10.2026 19:59">10 timer siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10563523 > .content > h2`
+  - **HTML:** `<h2><a href="/notice/10563523">Ordføreren i Kyiv: – Dramatisk situasjon</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10563523 > .content > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-02T17:13:14.000Z" title="02.10.2026 19:13">10 timer siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10563415 > .content > h2`
+  - **HTML:** `<h2><a href="/notice/10563415">Ukraina får 2,9 milliarder euro fra EU</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10563415 > .content > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-02T14:00:26.000Z" title="02.10.2026 16:00">14 timer siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10562932 > .content > h2`
+  - **HTML:** `<h2><a href="/notice/10562932">Eksplosjon på Økern – trolig ulykke</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10562932 > .content > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-02T12:33:35.000Z" title="02.10.2026 14:33">15 timer siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[title="Kraftig vekst i leieprisene"] > h2`
+  - **HTML:** `<h2><a href="/notice/10562254">Kraftig vekst i leieprisene</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[title="Kraftig vekst i leieprisene"] > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-02T09:23:30.000Z" title="02.10.2026 11:23">18 timer siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[title="Arbeidslivsavtale om KI"] > h2`
+  - **HTML:** `<h2><a href="/notice/10562064">Arbeidslivsavtale om KI</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[title="Arbeidslivsavtale om KI"] > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-02T09:27:45.000Z" title="02.10.2026 11:27">18 timer siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561972 > .content > h2`
+  - **HTML:** `<h2><a href="/notice/10561972">Nav: Stabil ledighet i september</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561972 > .content > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-02T06:10:44.000Z" title="02.10.2026 08:10">21 timer siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561951 > .content > h2`
+  - **HTML:** `<h2><a href="/notice/10561951">Aksjonister fjernet fra gruveanlegg</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561951 > .content > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-02T11:56:36.000Z" title="02.10.2026 13:56">16 timer siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561910 > .content > h2`
+  - **HTML:** `<h2><a href="/notice/10561910">Storbrann i lagerområde i Porsgrunn</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561910 > .content > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-02T07:48:15.000Z" title="02.10.2026 09:48">20 timer siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561804 > .content > h2`
+  - **HTML:** `<h2><a href="/notice/10561804">13-åring død etter skoleangrep i Slovakia</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561804 > .content > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-01T19:02:43.000Z" title="01.10.2026 21:02">1 dag siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561756 > .content > h2`
+  - **HTML:** `<h2><a href="/notice/10561756">Eritrea bryter alle bånd til Etiopia</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561756 > .content > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-01T18:03:12.000Z" title="01.10.2026 20:03">1 dag siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561720 > .content > h2`
+  - **HTML:** `<h2><a href="/notice/10561720">Palestiner drept i bosetterangrep</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561720 > .content > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-01T17:20:03.000Z" title="01.10.2026 19:20">1 dag siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561555 > .content > h2`
+  - **HTML:** `<h2><a href="/notice/10561555">Iran kaller inn britisk ambassadør </a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561555 > .content > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-01T15:01:36.000Z" title="01.10.2026 17:01">1 dag siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561405 > .content > h2`
+  - **HTML:** `<h2><a href="/notice/10561405">Påkjørt av gaffeltruck på Gardermoen</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10561405 > .content > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-01T13:35:36.000Z" title="01.10.2026 15:35">1 dag siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10560989 > .content > h2`
+  - **HTML:** `<h2><a href="/notice/10560989">Dårlig nytt for Trump i ny måling</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10560989 > .content > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-01T12:00:52.000Z" title="01.10.2026 14:00">1 dag siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[title="Gasslekkasje i Oslo"] > h2`
+  - **HTML:** `<h2><a href="/notice/10560483">Gasslekkasje i Oslo</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[title="Gasslekkasje i Oslo"] > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-01T10:07:22.000Z" title="01.10.2026 12:07">1 dag siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[title="Gullsmedran i Oslo"] > h2`
+  - **HTML:** `<h2><a href="/notice/10560355">Gullsmedran i Oslo</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[title="Gullsmedran i Oslo"] > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-01T11:57:14.000Z" title="01.10.2026 13:57">1 dag siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10559876 > .content > h2`
+  - **HTML:** `<h2><a href="/notice/10559876">16-åring tiltalt for drap i Uppsala</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#notice-10559876 > .content > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-01T07:34:05.000Z" title="01.10.2026 09:34">1 dag siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[title="Nybilsalget opp i september"] > h2`
+  - **HTML:** `<h2><a href="/notice/10559717">Nybilsalget opp i september</a></h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `div[title="Nybilsalget opp i september"] > .meta`
+  - **HTML:** `<div class="meta"> <time class="fi-clock" datetime="2026-10-01T08:33:43.000Z" title="01.10.2026 10:33">1 dag siden</time> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(2)`
+  - **HTML:** `<div data-element-guid="11eba9dd-6f96-433a-8e31-d73e7022302f" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(3)`
+  - **HTML:** `<div data-element-guid="4e9f0d22-dedb-4dad-a845-969bab0dba09" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(4)`
+  - **HTML:** `<div data-element-guid="c32a35d9-bc2c-4991-9993-405dcfe25c96" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(5)`
+  - **HTML:** `<div data-element-guid="7d053503-2525-4e84-bbe3-24c5c0f07838" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(7)`
+  - **HTML:** `<div data-element-guid="fd57fd00-498d-429f-a4a3-86d297389cf8" class="row small-12 large-12 bg-quinary color_mobile_bg-quinary hasContentPadding mobile-hasContentPadding" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(8)`
+  - **HTML:** `<div data-element-guid="9be1fe73-f6eb-4f25-88a6-98d1dd9cdbf7" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(9)`
+  - **HTML:** `<div data-element-guid="aa04295c-3f11-4a78-94b1-9a52c792b2cc" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(10)`
+  - **HTML:** `<div data-element-guid="ca10d5b9-3cb5-4d21-b108-46bb630e2552" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.has-row-header.bg-white.color_mobile_bg-white:nth-child(11)`
+  - **HTML:** `<div data-element-guid="15015844-16c6-40c1-9154-bfb325ceff48" class="row small-12 large-12 bg-white color_mobile_bg-white hasContentPadding mobile-hasContentPadding has-row-header" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(13)`
+  - **HTML:** `<div data-element-guid="54244cf4-e21d-4e47-b7a0-91ffa4461d69" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#offer_b426df421caf545e51f5-1, img`
+  - **HTML:** `<img src="https://i.imgur.com/0YUdGXM.png" alt="Da" class="pw-logo">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#offer_b426df421caf545e51f5-1, .pw-text`
+  - **HTML:** `<div class="pw-text"> <div class="pw-subtitle">Sammen forstår vi mer.</div> <div class="pw-offer">Bli med for 49 kr ut året</div> <!-- NY KNAPP --> <div class="pw-button">Bli med</div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(16)`
+  - **HTML:** `<div data-element-guid="cd4772bc-d28a-4fde-9e3f-38de4b0478b3" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(17)`
+  - **HTML:** `<div data-element-guid="6d1f73c7-5d55-4184-8a51-74da75fe86e5" class="row small-12 large-12 bg-quinary color_mobile_bg-quinary hasContentPadding mobile-hasContentPadding" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#article_list_10372156 > .content > .lab-scrollbox-headline.t25.font-InterTight`
+  - **HTML:** `<h2 itemprop="headline" class="headline lab-scrollbox-headline t25 font-weight-bold m-font-weight-bold font-InterTight" style="">Folkevalgt</h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x`
+  - **HTML:** `<ul class="scroll-container swipehelper snap-container-x snap-element-start">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.page-content > .border-bg-quinary-light.mobile_border-bg-quinary-light.hasBorder`
+  - **HTML:** `<div data-element-guid="292de22b-f8d6-4dde-8c8e-70692b0d3f59" class="row small-12 large-12 border-bg-quinary-light mobile_border-bg-quinary-light border-side-top mobile_border-side-top hasBorder mobile-hasBorder" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.color_mobile_no_bg_color.row.large-12:nth-child(21)`
+  - **HTML:** `<div data-element-guid="dc19d948-7043-4cfe-811a-3678d6b09b15" class="row small-12 large-12 color_mobile_no_bg_color" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.articlescroller-header.t25.tm18`
+  - **HTML:** `<h2 class="articlescroller-header t25 tm18 font-weight-bold m-font-weight-bold align-left mobile_text_align_align-left font-InterTight" style="">Verden</h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
+  - **HTML:** `<ul class="scroll-container swipehelper snap-container-x snap-element-start articles count_4 ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.page-content > .border_width_no_border_width.border_width_mobile_no_border_width.mobile_no_border_color`
+  - **HTML:** `<div data-element-guid="d7fb9e13-d51a-4483-950b-756626df99d0" class="row small-12 large-12 color_mobile_no_bg_color mobile_no_border_color border_width_no_border_width border_width_mobile_no_border_width" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(25)`
+  - **HTML:** `<div data-element-guid="f6d476c4-8efd-4237-a42b-d06693db7ab6" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(26)`
+  - **HTML:** `<div data-element-guid="6e74ffc2-2595-4408-96dd-3af38accb324" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(27)`
+  - **HTML:** `<div data-element-guid="e64f12f6-1b2f-4697-9f10-09de6e737116" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .lab-scrollbox-headline.t25.font-InterTight`
+  - **HTML:** `<h2 itemprop="headline" class="headline lab-scrollbox-headline t25 font-weight-bold m-font-weight-bold font-InterTight" style="">Portrett</h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .scroll-container.swipehelper.snap-container-x`
+  - **HTML:** `<ul class="scroll-container swipehelper snap-container-x snap-element-start">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.bg-black`
+  - **HTML:** `<div data-element-guid="c2c74c3d-99f8-491d-adfc-e5ded925e3c9" class="row small-12 large-12 bg-black color_mobile_bg-black hasContentPadding mobile-hasContentPadding" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.has-row-header.hasContentPadding.mobile-hasContentPadding:nth-child(31)`
+  - **HTML:** `<div data-element-guid="79b47eaf-a0d8-43c2-84db-e3792660f582" class="row small-12 large-12 hasContentPadding mobile-hasContentPadding has-row-header" style="background-color:#e7ecf5;">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(32)`
+  - **HTML:** `<div data-element-guid="af7efbf8-2744-4398-8c2c-9007d5398aba" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.t28.lab-scrollbox-headline.font-InterTight`
+  - **HTML:** `<h2 itemprop="headline" class="headline lab-scrollbox-headline t28 font-weight-bold m-font-weight-bold font-InterTight" style="">Video</h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#markup_10478983 > .fullwidthTarget.content > unite-player, #status-container`
+  - **HTML:** `<div class="container" id="status-container"> <div class="loading" id="status-message">Initialiserer...</div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `article[data-instance="10478981"] > .content > .floatingTextSubset.media > .floatingText`
+  - **HTML:** `<div class="floatingText"> <h2 itemprop="headline" class="headline t18 tm15 tertiary color_mobile_tertiary align-center mobile_text_align_align-center hasTextColor hasTextColorMobile" style="">Slik unngår du å ta dem med hjem </h2> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#markup_10453098 > .fullwidthTarget.content > unite-player, #status-container`
+  - **HTML:** `<div class="container" id="status-container"> <div class="loading" id="status-message">Initialiserer...</div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `article[data-instance="10453097"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
+  - **HTML:** `<div class="floatingText"> <div style="" class="kicker floating t18 tm15 color_mobile_no_bg_color tertiary color_mobile_tertiary align-center mobile_text_align_align-center hasTextColor hasTextColorMobile"> Rekordmange har fått studieplass…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#markup_10453072 > .fullwidthTarget.content > unite-player, #status-container`
+  - **HTML:** `<div class="container" id="status-container"> <div class="loading" id="status-message">Initialiserer...</div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `article[data-instance="10453073"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
+  - **HTML:** `<div class="floatingText"> <div style="" class="kicker floating t18 tm15 color_mobile_no_bg_color tertiary color_mobile_tertiary align-center mobile_text_align_align-center hasTextColor hasTextColorMobile"> Trump vil ha Infantino som ny FN…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#markup_10440435 > .fullwidthTarget.content > unite-player, #status-container`
+  - **HTML:** `<div class="container" id="status-container"> <div class="loading" id="status-message">Initialiserer...</div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.color_mobile_no_bg_color.align-center.mobile_text_align_align-center > .floatingTextSubset.media > .floatingText`
+  - **HTML:** `<div class="floatingText"> <div style="" class="kicker floating t18 tm15 tertiary color_mobile_tertiary hasTextColor hasTextColorMobile"> Torsnes Arbeiderlag synger gamle arbeidersanger </div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#markup_10440421 > .fullwidthTarget.content > unite-player, #status-container`
+  - **HTML:** `<div class="container" id="status-container"> <div class="loading" id="status-message">Initialiserer...</div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `article[data-instance="10440420"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
+  - **HTML:** `<div class="floatingText">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#markup_10440430 > .fullwidthTarget.content > unite-player, #status-container`
+  - **HTML:** `<div class="container" id="status-container"> <div class="loading" id="status-message">Initialiserer...</div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `article[data-instance="10440429"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
+  - **HTML:** `<div class="floatingText">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#markup_10440438 > .fullwidthTarget.content > unite-player, #status-container`
+  - **HTML:** `<div class="container" id="status-container"> <div class="loading" id="status-message">Initialiserer...</div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `article[data-instance="10440437"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
+  - **HTML:** `<div class="floatingText"> <div style="" class="kicker floating t18 tm15 tertiary color_mobile_tertiary hasTextColor hasTextColorMobile"> Indias statsminister Narendra Modi på pressekonferanse </div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(34)`
+  - **HTML:** `<div data-element-guid="8ce68a22-6d24-4fa3-9fad-d28c904009d9" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.lab-scrollbox-headline.t25.tm18`
+  - **HTML:** `<h2 itemprop="headline" class="headline lab-scrollbox-headline t25 tm18 font-weight-bold m-font-weight-bold font-InterTight" style="">Byhistorie</h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
+  - **HTML:** `<ul class="scroll-container swipehelper snap-container-x snap-element-start">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(37)`
+  - **HTML:** `<div data-element-guid="87b91de8-b080-4378-9e7f-d483cad645cd" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(38)`
+  - **HTML:** `<div data-element-guid="ee31d533-d583-4dd1-aefb-53a367ff7cfe" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(39)`
+  - **HTML:** `<div data-element-guid="ce63fe71-83a5-4ade-9845-27a97dbb4dad" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(40)`
+  - **HTML:** `<div data-element-guid="7ea0ad65-de93-495a-9123-ffb5c4b81a75" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#offer_b426df421caf545e51f5-2, img`
+  - **HTML:** `<img src="https://i.imgur.com/0YUdGXM.png" alt="Da" class="pw-logo">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#offer_b426df421caf545e51f5-2, .pw-text`
+  - **HTML:** `<div class="pw-text"> <div class="pw-subtitle">Sammen forstår vi mer.</div> <div class="pw-offer">Bli med for 49 kr ut året</div> <!-- NY KNAPP --> <div class="pw-button">Bli med</div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(43)`
+  - **HTML:** `<div data-element-guid="c45ecad9-8be8-4573-98e6-1c0575299a87" class="row small-12 large-12 bg-quinary color_mobile_bg-quinary hasContentPadding mobile-hasContentPadding" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.has-row-header.bg-white.color_mobile_bg-white:nth-child(44)`
+  - **HTML:** `<div data-element-guid="50ea0831-505d-4f4f-8cb8-145fad7ec473" class="row small-12 large-12 bg-white color_mobile_bg-white hasContentPadding mobile-hasContentPadding has-row-header" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(45)`
+  - **HTML:** `<div data-element-guid="daa93019-1839-45be-877d-a9f75e557ff4" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.lab-scrollbox-headline.italic.m-italic`
+  - **HTML:** `<h2 itemprop="headline" class="headline lab-scrollbox-headline align-center mobile_text_align_align-center italic m-italic" style="">Siri Dokken</h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#article_list_10291490 > .content > .scroll-container.swipehelper.snap-container-x`
+  - **HTML:** `<ul class="scroll-container swipehelper snap-container-x snap-element-start">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(47)`
+  - **HTML:** `<div data-element-guid="375fc72d-2f0e-4ed4-b4a7-e3e7fc911e41" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(49)`
+  - **HTML:** `<div data-element-guid="042e5faa-74b8-418a-8d35-b2a430632959" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(50)`
+  - **HTML:** `<div data-element-guid="6c2d4540-6eff-4f70-9fad-f1f748bf296f" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(51)`
+  - **HTML:** `<div data-element-guid="c61ddee0-01d5-45fa-b069-b2e33a4219ef" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(52)`
+  - **HTML:** `<div data-element-guid="f67db038-d056-448f-9d43-2f1d59299b78" class="row small-12 large-12 bg-quinary color_mobile_bg-quinary hasContentPadding mobile-hasContentPadding" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(53)`
+  - **HTML:** `<div data-element-guid="6382bf11-b5af-4ed4-9b8b-c484d69406f4" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(55)`
+  - **HTML:** `<div data-element-guid="f7a9fcb5-6fc8-4783-aab0-dd407fcb2b66" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(56)`
+  - **HTML:** `<div data-element-guid="2e41093a-47a9-4740-a850-d395857d5018" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(57)`
+  - **HTML:** `<div data-element-guid="c5af0a52-0912-44c3-af1f-d448091c1491" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.has-row-header.bg-white.color_mobile_bg-white:nth-child(58)`
+  - **HTML:** `<div data-element-guid="791c0361-a290-4c17-84a8-30ccc6ddf4f7" class="row small-12 large-12 bg-white color_mobile_bg-white hasContentPadding mobile-hasContentPadding has-row-header" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(59)`
+  - **HTML:** `<div data-element-guid="06784c83-0f95-44c8-898d-19748ab32ae4" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(61)`
+  - **HTML:** `<div data-element-guid="5759daff-3e7a-40bd-a989-9c83646ea08d" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(62)`
+  - **HTML:** `<div data-element-guid="6f63d75d-7733-47ef-b177-41d049c74208" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(63)`
+  - **HTML:** `<div data-element-guid="a2d4bec5-fe13-483d-a834-7084b47845e7" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(64)`
+  - **HTML:** `<div data-element-guid="95fdffcb-0419-431a-bbe4-aba0382dade5" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(65)`
+  - **HTML:** `<div data-element-guid="abc83251-dd44-4d4c-9f34-6e5055eb4308" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(66)`
+  - **HTML:** `<div data-element-guid="3491f174-a4a2-4fd8-960d-c74305874c47" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(67)`
+  - **HTML:** `<div data-element-guid="dc68c921-a0f1-4dcd-a86a-a6ec3a55abb4" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(68)`
+  - **HTML:** `<div data-element-guid="c205c232-c1c5-4c14-b5c2-b9218bae73b6" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(69)`
+  - **HTML:** `<div data-element-guid="d6048a60-fef1-4728-9a71-5913c79c15af" class="row small-12 large-12 bg-quinary color_mobile_bg-quinary hasContentPadding mobile-hasContentPadding" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(70)`
+  - **HTML:** `<div data-element-guid="41e3224a-ca4a-4ad0-8913-f5d59b9f3e5f" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(71)`
+  - **HTML:** `<div data-element-guid="590e9fe1-1501-4ea2-b921-ce32669df474" class="row small-12 large-12 bg-quinary color_mobile_bg-quinary hasContentPadding mobile-hasContentPadding" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(72)`
+  - **HTML:** `<div data-element-guid="7d58861b-bf95-478a-be48-9fcd05c245c3" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(73)`
+  - **HTML:** `<div data-element-guid="31dde0c8-957c-4e6a-82d2-52b4763e2185" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(74)`
+  - **HTML:** `<div data-element-guid="e568896d-b388-4508-ad5a-9322afffe63f" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(75)`
+  - **HTML:** `<div data-element-guid="db262130-cbde-4b9d-839e-c7dc9042aced" class="row small-12 large-12 bg-quinary color_mobile_bg-quinary hasContentPadding mobile-hasContentPadding" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(76)`
+  - **HTML:** `<div data-element-guid="b5b684a4-d0a3-4829-94b5-16a44d806225" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#offer_b426df421caf545e51f5-0, img`
+  - **HTML:** `<img src="https://i.imgur.com/0YUdGXM.png" alt="Da" class="pw-logo">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#offer_b426df421caf545e51f5-0, .pw-text`
+  - **HTML:** `<div class="pw-text"> <div class="pw-subtitle">Sammen forstår vi mer.</div> <div class="pw-offer">Bli med for 49 kr ut året</div> <!-- NY KNAPP --> <div class="pw-button">Bli med</div> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(78)`
+  - **HTML:** `<div data-element-guid="d4c44f57-b530-451b-995c-599f6d3d33fa" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.articlescroller-header.tm20.font-PTSans`
+  - **HTML:** `<h2 class="articlescroller-header t25 tm20 font-weight-normal m-font-weight-normal align-center mobile_text_align_align-center font-PTSans" style="">Quiz</h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#article_list_9904930 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
+  - **HTML:** `<ul class="scroll-container swipehelper snap-container-x snap-element-start articles count_4 ">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#offer_35cc7e60bc8ecd3914d0-0, img`
+  - **HTML:** `<img src="https://i.imgur.com/0YUdGXM.png" alt="Da" class="pw-logo">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#offer_35cc7e60bc8ecd3914d0-0, .pw-subtitle`
+  - **HTML:** `<div class="pw-subtitle">Sammen forstår vi mer.</div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#offer_35cc7e60bc8ecd3914d0-0, .pw-offer`
+  - **HTML:** `<div class="pw-offer">Bli med for 49 kr ut året</div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#offer_35cc7e60bc8ecd3914d0-0, #pw-countdown`
+  - **HTML:** `<div class="pw-countdown" id="pw-countdown">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.powered-by`
+  - **HTML:** `<div class="powered-by "><a href="https://labradorcms.com/" target="_blank">Powered by Labrador CMS</a></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
 
 ### Scrollable region must have keyboard access
 
 - **Impact:** serious
 - **Description:** Ensure elements that have scrollable content are accessible by keyboard in Safari
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/scrollable-region-focusable?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#article_list_10440424 > .content > .scroll-container.swipehelper.snap-container-x`
+- **Target:** `#article_list_10440424 > .content > .scroll-container.swipehelper.snap-container-x`
+  - **HTML:** `<ul class="scroll-container swipehelper snap-container-x snap-element-start">`
+  - **Failure summary:** Fix any of the following: Element should have focusable content Element should be focusable
+

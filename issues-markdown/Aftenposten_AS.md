@@ -10,10 +10,14 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.sch-datacontroller__text`
+- **Target:** `.sch-datacontroller__text`
+  - **HTML:** `<span class="sch-datacontroller__text">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
