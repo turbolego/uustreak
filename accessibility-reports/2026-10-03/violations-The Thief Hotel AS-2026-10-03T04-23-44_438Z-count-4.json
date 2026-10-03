@@ -1,0 +1,129 @@
+{
+  "project": "The Thief Hotel AS",
+  "timestamp": "2026-10-03T04:23:44.439Z",
+  "url": "https://thethief.com/",
+  "total_violations": 4,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-valid-attr",
+      "impact": "critical",
+      "description": "Ensure attributes that begin with aria- are valid ARIA attributes",
+      "help": "ARIA attributes must conform to valid names",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-valid-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<span aria-title=\"Next\" role=\"button\" class=\"gallery__controls__next\">›</span>",
+          "target": [
+            "#container > .block-container__inner.container-fluid.block-block__inner > .gallery__controls > .gallery__controls__next[aria-title=\"Next\"][role=\"button\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Invalid ARIA attribute name: aria-title"
+        },
+        {
+          "html": "<span aria-title=\"Next\" role=\"button\" class=\"gallery__controls__next\">›</span>",
+          "target": [
+            "#container-6 > .block-container__inner.container-fluid.block-block__inner > .gallery__controls > .gallery__controls__next[aria-title=\"Next\"][role=\"button\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Invalid ARIA attribute name: aria-title"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<span _ngcontent-ng-c4056494200=\"\" data-qa=\"button-label\" class=\"btn__label\"> Abonner </span>",
+          "target": [
+            [
+              "gh-newsletter",
+              ".btn__label"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.33 (foreground color: #fdfdfd, background color: #de393f, font size: 14.4pt (19.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h4 class=\"\">\n    Book\n    </h4>",
+          "target": [
+            "#heading-572 > .block-module__inner.block-block__inner > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a href=\"https://travellermade.com/hotel-partners-europe/the-thief-norway/\" target=\"_blank\" rel=\"noopener\" class=\"block-block__inner block-module__inner\">",
+          "target": [
+            "#image-145 > a[target=\"_blank\"][rel=\"noopener\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}
