@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tekna - Teknisk- naturvitenskapelig forening
 
-**Timestamp:** 2026-10-03T04:23:15.252Z
+**Timestamp:** 2026-10-04T05:06:45.190Z
 **URL:** [https://www.tekna.no/](https://www.tekna.no/)
 **Total Violations:** 5
 
@@ -10,142 +10,74 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Source:** Embedded code from Cookie Information
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `#declineButton`
-  - **HTML:** `<button tabindex="0" onclick="CookieInformation.declineAllCategories()" aria-label="Bare nødvendige cookies" id="declineButton" class="coi-banner__accept" role="alert" aria-atomic="true" style="display: flex;"> Bare nødvendige cookies </bu…`
-  - **Failure summary:** Fix any of the following: ARIA role alert is not allowed for given element
-
+- `#declineButton`
 
 ### Images must have alternative text
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 3
 
 #### Affected Elements:
 
-- **Target:** `.item__image-0`
-  - **HTML:** `<img src="/contentassets/a3912d6361b040eab9b952d4cd38ad9d/dsc01580.jpg?width=990&amp;height=885&amp;mode=crop" class="item__image-0" style="z-index: 0; opacity: 1;">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `.t-article-card:nth-child(1) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
-  - **HTML:** `<img src="/link/b2c80ccb3fca48e6ab50a565f26c89bf.aspx?width=640&amp;mode=crop&amp;heightratio=0.75&amp;quality=80" class="t-article-card__img" style="">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `.t-article-card:nth-child(2) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
-  - **HTML:** `<img src="/link/6675bf72253b46828d75a06d08ca333f.aspx?width=640&amp;mode=crop&amp;heightratio=0.75&amp;quality=80" class="t-article-card__img" style="">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
+- `.item__image-0`
+- `.t-article-card:nth-child(1) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
+- `.t-article-card:nth-child(2) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
 
 ### Document should not have more than one banner landmark
 
 - **Impact:** moderate
 - **Description:** Ensure the document has at most one banner landmark
-- **Source:** Embedded code from Cookie Information
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-banner?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `#coiOverlay`
-  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
-  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
-
+- `#coiOverlay`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Source:** Embedded code from Cookie Information
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `#coiOverlay`
-  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
-  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
-
+- `#coiOverlay`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 15
 
 #### Affected Elements:
 
-- **Target:** `div:nth-child(8)`
-  - **HTML:** `<div> <a class="hidden-skip-link" href="#content">Hopp til innhold</a> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.heroblock`
-  - **HTML:** `<div class="block heroblock col-lg-12 col-md-12 col-sm-12 col-xs-12">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.promoted-link-list`
-  - **HTML:** `<div class="block promoted-link-list promoted-link-list--underline">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.block:nth-child(4)`
-  - **HTML:** `<div class="block">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.promotion-block--yellow > .promotion-block__body`
-  - **HTML:** `<div class="promotion-block__body">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.col-lg-8`
-  - **HTML:** `<div class="block promotionblock col-lg-8 col-md-6 col-sm-12 col-xs-12 displaymode-two-thirds">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.d-none`
-  - **HTML:** `<div class="col-12 text-image-block__header mb-md-6 mb-0 d-none d-lg-block ">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.text-image-block__text`
-  - **HTML:** `<div class="text-image-block__text pl-lg-0 pl-lg-9 pl-sm-0 mt-lg-0 mt-4">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.text-image-block__image:nth-child(1)`
-  - **HTML:** `<div class="text-image-block__image"> <img src="/contentassets/a3912d6361b040eab9b952d4cd38ad9d/dsc01580.jpg?width=990&amp;height=885&amp;mode=crop" class="item__image-0" style="z-index: 0; opacity: 1;"> </div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.block-spacing-small.col-12`
-  - **HTML:** `<div class="col-12 block-spacing-small"><h2>Aktuelt fra Tekna</h2> <!----></div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.t-article-card:nth-child(1) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
-  - **HTML:** `<img src="/link/b2c80ccb3fca48e6ab50a565f26c89bf.aspx?width=640&amp;mode=crop&amp;heightratio=0.75&amp;quality=80" class="t-article-card__img" style="">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.t-article-card:nth-child(1) > .t-article-card__content`
-  - **HTML:** `<div class="t-article-card__content">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.t-article-card:nth-child(2) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
-  - **HTML:** `<img src="/link/6675bf72253b46828d75a06d08ca333f.aspx?width=640&amp;mode=crop&amp;heightratio=0.75&amp;quality=80" class="t-article-card__img" style="">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.t-article-card:nth-child(2) > .t-article-card__content`
-  - **HTML:** `<div class="t-article-card__content">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.rss-feed`
-  - **HTML:** `<div class="rss-feed t-article-card">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `div:nth-child(8)`
+- `.heroblock`
+- `.promoted-link-list`
+- `.block:nth-child(4)`
+- `.promotion-block--yellow > .promotion-block__body`
+- `.col-lg-8`
+- `.d-none`
+- `.text-image-block__text`
+- `.text-image-block__image:nth-child(1)`
+- `.block-spacing-small.col-12`
+- `.t-article-card:nth-child(1) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
+- `.t-article-card:nth-child(1) > .t-article-card__content`
+- `.t-article-card:nth-child(2) > .t-article-card__image > .t-article-card__image-wrapper > .t-article-card__img`
+- `.t-article-card:nth-child(2) > .t-article-card__content`
+- `.rss-feed`

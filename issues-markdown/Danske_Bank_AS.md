@@ -1,6 +1,6 @@
 # WCAG Violations Report for Danske Bank AS
 
-**Timestamp:** 2026-10-03T04:08:25.613Z
+**Timestamp:** 2026-10-04T04:58:25.126Z
 **URL:** [https://danskebank.no/bedrift](https://danskebank.no/bedrift)
 **Total Violations:** 1
 
@@ -10,18 +10,11 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 2
 
 #### Affected Elements:
 
-- **Target:** `.footer-cta`
-  - **HTML:** `<div class="footer-cta hide-for-print">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.aria-labels`
-  - **HTML:** `<div class="aria-labels">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `.footer-cta`
+- `.aria-labels`

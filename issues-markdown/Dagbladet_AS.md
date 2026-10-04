@@ -1,39 +1,57 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-10-03T04:08:44.807Z
+**Timestamp:** 2026-10-04T04:57:00.842Z
 **URL:** [https://www.dagbladet.no/](https://www.dagbladet.no/)
-**Total Violations:** 2
+**Total Violations:** 4
 
 ## Violation Details
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #cbb`
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 3
+
+#### Affected Elements:
+
+- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #\32 00_287_express_html_inpage_0\.if`
+- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #\32 00_287_express_html_inpage_0\.if, iframe[scrolling="no"]`
+- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #\32 00_287_express_html_inpage_0\.if, body > iframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `._topnav_88ip5_45`
-  - **HTML:** `<nav class="_topnav_88ip5_45">`
-  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
-
+- `._topnav_88ip5_45`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `#am-branding > p`
-  - **HTML:** `<p> Dagbladet er en del av Aller Media. Aller Media er ansvarlig for dine data på denne nettsiden. &nbsp;<a href="https://personvern.aller.no/personvern">Les mer</a> </p>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `#am-branding > p`
