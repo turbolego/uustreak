@@ -1,8 +1,8 @@
 # WCAG Violations Report for Læringsverkstedet AS
 
-**Timestamp:** 2026-10-04T04:45:40.876Z
+**Timestamp:** 2026-10-04T11:47:51.052Z
 **URL:** [https://laringsverkstedet.no/](https://laringsverkstedet.no/)
-**Total Violations:** 7
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -36,10 +36,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 21
+- **Count:** 22
 
 #### Affected Elements:
 
+- `#CybotCookiebotDialogBodyEdgeMoreDetailsLink`
 - `.pb-3.pb-lg-0.col-lg-4:nth-child(1) > p:nth-child(3)`
 - `p:nth-child(6)`
 - `a:nth-child(8)`
@@ -100,8 +101,20 @@
 - `.navbar-brand`
 - `p:nth-child(3) > a`
 - `.mt-5 > a[href$="laringsverkstedet.no/"]`
-- `a[target="_BLANK"]:nth-child(1)`
-- `a[target="_BLANK"]:nth-child(2)`
+- `.mt-3.col-12 > a[target="_BLANK"]:nth-child(1)`
+- `.mt-3.col-12 > a[target="_BLANK"]:nth-child(2)`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#skipnavigation`
 
 ### Elements should not have tabindex greater than zero
 
