@@ -1,0 +1,41 @@
+# robots.txt for UUStreak
+# Allow all AI crawlers and search engines access to our public content.
+# This is intentional: UUStreak is a public accessibility audit dashboard that
+# benefits from being discoverable by AI agents and training crawlers.
+
+User-agent: *
+Allow: /
+
+# Specific AI crawlers - explicitly allow training and indexing
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: GoogleBot
+Allow: /
+User-agent: BingBot
+Allow: /
+User-agent: Baiduspider
+Allow: /
+User-agent: YandexBot
+Allow: /
+User-agent: FacebookBot
+Allow: /
+User-agent: TwitterBot
+Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: Applebot
+Allow: /
+
+# Crawl-delay: 1
+# We don't need to throttle; our pages are static and lightweight.
+
+# Sitemap location
+Sitemap: https://uustreak.no/sitemap.xml
