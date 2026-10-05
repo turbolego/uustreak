@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-10-04T11:39:55.645Z
+**Timestamp:** 2026-10-05T06:01:11.374Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 8
 
@@ -91,11 +91,29 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 124
+- **Count:** 129
 
 #### Affected Elements:
 
 - `h1`
+- `#notice-10564944 > .content > h2`
+- `time[datetime="2026-10-05T05:59:57.000Z"]`
+- `#notice-10564807 > .content > h2`
+- `time[datetime="2026-10-05T05:11:04.000Z"]`
+- `div[title="Fire drept i angrep mot båt"] > h2`
+- `time[datetime="2026-10-05T05:09:38.000Z"]`
+- `div[title="Rubio besøker Island"] > h2`
+- `time[datetime="2026-10-05T05:08:45.000Z"]`
+- `#notice-10564692 > .content > h2`
+- `time[datetime="2026-10-04T19:18:46.000Z"]`
+- `div[title="Irans oljeminister går av"] > h2`
+- `time[datetime="2026-10-04T18:14:31.000Z"]`
+- `#notice-10564635 > .content > h2`
+- `time[datetime="2026-10-04T17:28:14.000Z"]`
+- `#notice-10564564 > .content > h2`
+- `#notice-10564564 > .content > .meta`
+- `div[title="Valget i Brasil er i gang"] > h2`
+- `div[title="Valget i Brasil er i gang"] > .meta`
 - `#notice-10564286 > .content > h2`
 - `#notice-10564286 > .content > .meta`
 - `div[title="Vestre skal bli pappa"] > h2`
@@ -118,24 +136,6 @@
 - `time[datetime="2026-10-03T09:49:10.000Z"]`
 - `#notice-10563762 > .content > h2`
 - `time[datetime="2026-10-03T09:38:06.000Z"]`
-- `#notice-10563742 > .content > h2`
-- `time[datetime="2026-10-03T09:13:01.000Z"]`
-- `div[title="Faren avblåst i Litauen"] > h2`
-- `time[datetime="2026-10-03T08:02:58.000Z"]`
-- `div[title="FIS slår alarm om egen økonomi"] > h2`
-- `time[datetime="2026-10-03T07:41:20.000Z"]`
-- `div[title="Nytt angrep mot bro i Kyiv"] > h2`
-- `time[datetime="2026-10-03T06:32:06.000Z"]`
-- `#notice-10563603 > .content > h2`
-- `time[datetime="2026-10-03T06:40:49.000Z"]`
-- `#notice-10563602 > .content > h2`
-- `time[datetime="2026-10-03T06:08:00.000Z"]`
-- `#notice-10563599 > .content > h2`
-- `#notice-10563599 > .content > .meta`
-- `#notice-10563541 > .content > h2`
-- `#notice-10563541 > .content > .meta`
-- `#notice-10563523 > .content > h2`
-- `#notice-10563523 > .content > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
@@ -151,14 +151,14 @@
 - `.page-content > .border-bg-quinary-light.mobile_border-bg-quinary-light.hasBorder`
 - `#article_list_10372156 > .content > .lab-scrollbox-headline.t25.font-InterTight`
 - `#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(19)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(20)`
+- `.bg-primary`
+- `.row.large-12.small-12:nth-child(20)`
 - `.articlescroller-header.t25.tm18`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.page-content > .border_width_no_border_width.border_width_mobile_no_border_width.mobile_no_border_color`
 - `.row.large-12.small-12:nth-child(23)`
 - `.row.large-12.small-12:nth-child(25)`
-- `.color_mobile_no_bg_color.row.large-12:nth-child(26)`
+- `.row.large-12.small-12:nth-child(26)`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .lab-scrollbox-headline.t25.font-InterTight`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(28)`
@@ -179,39 +179,44 @@
 - `article[data-instance="10440429"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
 - `#markup_10440438 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="10440437"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `.row.large-12.small-12:nth-child(33)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(33)`
 - `.lab-scrollbox-headline.t25.tm18`
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(35)`
 - `.row.large-12.small-12:nth-child(37)`
-- `.row.large-12.small-12:nth-child(38)`
+- `.color_mobile_no_bg_color.row.large-12:nth-child(38)`
 - `.row.large-12.small-12:nth-child(39)`
 - `#offer_b426df421caf545e51f5-2, img`
 - `#offer_b426df421caf545e51f5-2, .pw-text`
 - `.row.large-12.small-12:nth-child(41)`
-- `.color_mobile_no_bg_color.row.large-12:nth-child(43)`
+- `.row.large-12.small-12:nth-child(43)`
 - `.row.large-12.small-12:nth-child(44)`
 - `.lab-scrollbox-headline.italic.m-italic`
 - `#article_list_10291490 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(46)`
-- `.bg-black`
+- `.row.large-12.small-12:nth-child(47)`
 - `.row.large-12.small-12:nth-child(49)`
-- `.row.large-12.small-12:nth-child(50)`
+- `.color_mobile_no_bg_color.row.large-12:nth-child(50)`
 - `.row.large-12.small-12:nth-child(51)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(52)`
-- `.row.large-12.small-12:nth-child(53)`
+- `.row.large-12.small-12:nth-child(52)`
+- `.bg-black`
 - `.row.large-12.small-12:nth-child(55)`
 - `.row.large-12.small-12:nth-child(56)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(57)`
-- `.row.large-12.small-12:nth-child(58)`
+- `.row.large-12.small-12:nth-child(57)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(58)`
 - `.row.large-12.small-12:nth-child(59)`
 - `.row.large-12.small-12:nth-child(61)`
 - `.row.large-12.small-12:nth-child(62)`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(63)`
 - `.row.large-12.small-12:nth-child(64)`
+- `.row.large-12.small-12:nth-child(65)`
+- `.row.large-12.small-12:nth-child(66)`
+- `.row.large-12.small-12:nth-child(67)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(68)`
+- `.row.large-12.small-12:nth-child(69)`
 - `#offer_b426df421caf545e51f5-0, img`
 - `#offer_b426df421caf545e51f5-0, .pw-text`
-- `.row.large-12.small-12:nth-child(66)`
+- `.row.large-12.small-12:nth-child(71)`
 - `#offer_35cc7e60bc8ecd3914d0-0, img`
 - `#offer_35cc7e60bc8ecd3914d0-0, .pw-subtitle`
 - `#offer_35cc7e60bc8ecd3914d0-0, .pw-offer`

@@ -1,34 +1,22 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-10-04T11:43:54.258Z
+**Timestamp:** 2026-10-05T06:04:47.739Z
 **URL:** [https://www.f-b.no/](https://www.f-b.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
-### Elements must meet minimum color contrast ratio thresholds
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#eaframe, #container_10851392 > .info > .info-wrapper > .ctaLink`
-
-### Frames must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#eaframe`
+- `brick-teaser-group-v1[data-color-skin="custom-one"] > div > brick-carousel-v3 > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 
