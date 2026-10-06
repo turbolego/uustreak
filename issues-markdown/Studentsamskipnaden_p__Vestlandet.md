@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-10-05T06:20:55.404Z
+**Timestamp:** 2026-10-06T09:08:08.134Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 5
 
@@ -19,7 +19,7 @@
 - `#CybotCookiebotDialogBodyEdgeMoreDetailsLink`
 - `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
 - `#searchInput`
-- `.contents[href="/no/bolig?location=felles"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
+- `.contents[target="_self"]:nth-child(1) > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `.contents[href="/no/trening?location=bergen"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `a[href$="kurs"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `.flex-col-reverse.overflow-hidden.md\:items-stretch:nth-child(1) > .lg\:min-w-\[27rem\].p-8.md\:py-16 > .contents[target="_self"] > .btn-primary.btn-lg[type="button"] > .md\:text-body_large.flex-row.justify-between > .text-base-white.font-light.svelte-nqw3qe`
@@ -58,7 +58,7 @@
 
 #### Affected Elements:
 
-- `a[aria-label="Finn din studentbolig"] > .md\:items-start.md\:flex-row.flex-col > .md\:grow > .font-semibold`
+- `a[href="/no/bolig?location=felles"] > .md\:items-start.md\:flex-row.flex-col > .md\:grow > .font-semibold`
 - `a[href$="alle-studenter"] > .pt-2.pb-2.px-2 > .text-sm.leading-tight.line-clamp-2`
 
 ### Document should have one main landmark

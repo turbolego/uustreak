@@ -1,6 +1,6 @@
 # WCAG Violations Report for Clas Ohlson AS
 
-**Timestamp:** 2026-10-05T06:00:21.574Z
+**Timestamp:** 2026-10-06T08:48:59.934Z
 **URL:** [https://www.clasohlson.com/no/](https://www.clasohlson.com/no/)
 **Total Violations:** 7
 
@@ -24,14 +24,11 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 4
+- **Count:** 1
 
 #### Affected Elements:
 
 - `.carousel__component.carousel-component-parent.right-shadow:nth-child(9) > .carousel__component--headline:nth-child(1) > .title-two`
-- `.yComponentWrapper.yCmsComponent:nth-child(1) > .carousel__component.carousel-component-parent.right-shadow > .carousel__component--headline:nth-child(1) > .title-two`
-- `.yComponentWrapper.yCmsComponent:nth-child(2) > .carousel__component.carousel-component-parent.right-shadow > .carousel__component--headline:nth-child(1) > .title-two`
-- `.yComponentWrapper.yCmsComponent:nth-child(3) > .carousel__component.carousel-component-parent.right-shadow > .carousel__component--headline:nth-child(1) > .title-two`
 
 ### Frames must have an accessible name
 

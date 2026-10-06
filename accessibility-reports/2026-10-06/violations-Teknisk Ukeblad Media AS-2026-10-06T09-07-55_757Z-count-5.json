@@ -1,0 +1,1487 @@
+{
+  "project": "Teknisk Ukeblad Media AS",
+  "timestamp": "2026-10-06T09:07:55.758Z",
+  "url": "https://www.tu.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<span class=\"ad-label\">Annonse</span>",
+          "target": [
+            ".placement-top > .display-label.google-ad.disable-initial-load > .ad-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button title=\"Godta\" aria-label=\"Godta\" class=\"message-component me...\" style=\"opacity: 1; padding:...\">",
+          "target": [
+            "#sp_message_iframe_1517700",
+            ".acceptButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #ffffff, background color: #1890ff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button title=\"Avvis alle\" aria-label=\"Avvis alle\" class=\"message-component me...\" style=\"opacity: 1; padding:...\">",
+          "target": [
+            "#sp_message_iframe_1517700",
+            ".rejectButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #ffffff, background color: #1890ff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<button title=\"Tilpass\" aria-label=\"Tilpass\" class=\"message-component me...\" style=\"opacity: 1; padding:...\">",
+          "target": [
+            "#sp_message_iframe_1517700",
+            ".customiseButton"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #ffffff, background color: #1890ff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h5 class=\"row_header_text large-12 small-12 t44 \"><span class=\"lab-row-header-title\">TU forklarer</span></h5>",
+          "target": [
+            ".border-side-bottom > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h5 class=\"row_header_text large-12 small-12 font-weight-bold m-font-weight-bold \"><span class=\"lab-row-header-title\">Nitos visepresident trekker seg:­</span></h5>",
+          "target": [
+            ".border-bg-primary > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img itemprop=\"image\" src=\"https://image.tu.no/?imageId=2812328&amp;whRatio=1&amp;width=90&amp;height=90\">",
+          "target": [
+            "img[itemprop=\"image\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://beta.tu.no/files/2026/09/01/TU-logo-RGB-gul.svg\" width=\"80\" height=\"56\">",
+          "target": [
+            "img[width=\"80\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"https://beta.tu.no/files/2026/09/01/TUM-logo-RGB-hvit.svg\" width=\"128\" height=\"28\">",
+          "target": [
+            "img[width=\"128\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"navigation mainMenu dac-hidden-desktop-down grid-vas-center grid\">",
+          "target": [
+            ".grid-vas-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 185,
+      "nodes": [
+        {
+          "html": "<h1 class=\"hidden-heading\">Teknisk Ukeblad - forsiden</h1>",
+          "target": [
+            "h1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"ad-label\">Annonse</span>",
+          "target": [
+            ".placement-top > .display-label.google-ad.disable-initial-load > .ad-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"b4236c4d-91b5-46b9-9e52-3b2d7e3b504e\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".page-content > .row.large-12.small-12:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below \">\nFrykter for fremtiden til smelteverket:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5703283\"] > .kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t91\" style=\"\">– Det er som lungenes betydning for kroppen\n</h2>",
+          "target": [
+            ".t91"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"794cf678-48ee-4a99-94ab-b46c29341674\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7140849\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below \">\nKjernekraftgründer:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7140849\"] > .kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t62 tm30\" style=\"\">– Om ti år er alt borte hvis vi ikke får billig energi\n</h2>",
+          "target": [
+            ".t62.tm30.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\" id=\"status-container\">\n          <div class=\"loading\" id=\"status-message\">Initialiserer...</div>\n        </div>",
+          "target": [
+            [
+              "#markup_7143679 > .fullwidthTarget.content > unite-player",
+              "#status-container"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"33e05b0a-011b-4bb3-a5e8-0d5bd7e3015e\" class=\"column text_singleline small-12 large-12 small-abs-12 large-abs-3\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(5) > .columns.large-3.large-abs-3 > .row.large-12.small-12 > .text_singleline.large-abs-3.large-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t32 tm22\" style=\"\">EU med ny kurs for skipsteknologi: – Mer pragmatisk\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7142449\"] > .tm22.t32.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"dba16bf4-fe95-4ead-b172-e3d91ea21bcb\" class=\"column small-12 large-4 small-abs-12 large-abs-4 \" data-site-alias=\"tu\" data-section=\"debatt\" data-tag=\"debatt,gruvedrift,klima\" data-instance=\"7143426\" data-image-float=\"floatLeft\" itemscope=\"\">",
+          "target": [
+            "article[data-tag=\"debatt,gruvedrift,klima\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t36 tm24\" style=\"\">USA har evakuert alle bombefly fra flybase i England\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7143395\"] > .tm24.t36.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t44 tm21\" style=\"\">Varsler historisk IT-løft i politiet – og drysser 190 mill. på NSM\n</h2>",
+          "target": [
+            ".t44.tm21.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7142400\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t16\">\nØver på helikopter­katastrofe:\n</div>",
+          "target": [
+            ".t16"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t51 tm29\" style=\"\">&nbsp;– Det vil aldri bli perfekt\n</h2>",
+          "target": [
+            ".t51"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media desktop-floatLeft\">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7142846\"] > .desktop-floatLeft.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below \">\nUenighet om hvordan jorden oppsto:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7142846\"] > .kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t32\" style=\"\">Nå kan mysteriet være løst\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7142846\"] > .t32.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"ad-label\">Annonse</span>",
+          "target": [
+            ".row.large-12.small-12:nth-child(11) > .display-label.google-ad.disable-initial-load > .ad-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"1360a177-29a4-441a-881e-40b001229633\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(12)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"033d3d63-4a12-4008-959d-3e4b2faabfb8\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(13)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below \">\nNordic Mining:&nbsp;\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5704548\"] > .kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t36\" style=\"\">Har funnet potensiell gullgruve – men kundene mangler\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5704548\"] > .t36.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\" id=\"status-container\">\n          <div class=\"loading\" id=\"status-message\">Initialiserer...</div>\n        </div>",
+          "target": [
+            [
+              "#markup_7143309 > .fullwidthTarget.content > unite-player",
+              "#status-container"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"5d21feb3-74d6-4fb2-af52-68754d423e14\" class=\"column text_singleline small-12 large-12 small-abs-12 large-abs-3\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(14) > .columns.large-3.large-abs-3 > .row.large-12.small-12 > .text_singleline.large-abs-3.large-12"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"ad-label\">Annonse</span>",
+          "target": [
+            ".adZone-parallax > .ad-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below \">\nMiljøaktivister:&nbsp;\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7143261\"] > .kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t29\" style=\"\">– Nye aksjonister har stanset gruvedrift ved Førdefjorden\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7143261\"] > .t29.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"5ec1c46c-0811-489e-b43c-226883db9011\" class=\"column small-12 large-4 small-abs-12 large-abs-4 \" data-site-alias=\"tu\" data-section=\"samferdsel\" data-tag=\"innenriks,samferdsel,jernbane\" data-instance=\"7143284\" itemscope=\"\">",
+          "target": [
+            "article[data-tag=\"innenriks,samferdsel,jernbane\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t32 tm38\" style=\"\">Utelukker ikke å sende datasentre bakerst i strømkøen\n</h2>",
+          "target": [
+            ".tm38"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"f5b03ffa-7256-4758-b618-07911925a4e2\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(18)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7142612\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline \" style=\"\">Geely kommer med rekordrask lading\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7142612\"] > .headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"3777d14d-b014-4907-8c7c-4bc5ae66d625\" class=\"column small-12 large-6 small-abs-12 large-abs-6 \" data-site-alias=\"digi\" data-section=\"kommentar\" data-tag=\"kommentar\" data-instance=\"7142777\" itemscope=\"\">",
+          "target": [
+            "article[data-instance=\"7142777\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t58\" style=\"\">NVE varsler nei til drage-kraftverk\n</h2>",
+          "target": [
+            ".t58"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t45\" style=\"\">Datasenterboomen gir milliardinntekter – men få nye arbeidsplasser\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/7142495\"] > .t45.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"ad-label\">Annonse</span>",
+          "target": [
+            ".row.large-12.small-12:nth-child(22) > .display-label.google-ad.disable-initial-load > .ad-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"edafa385-ed5d-418b-b9d7-73fe587afcd3\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(23)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"7f6fec14-c58a-4a86-857e-d69c7087a56a\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(24)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"ad-label\">Annonse</span>",
+          "target": [
+            ".row.large-12.small-12:nth-child(25) > .display-label.google-ad.disable-initial-load > .ad-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"76827d2f-113e-471b-a69c-f6e43b232918\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(26)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/7142727\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7142291\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t37 tm33\" style=\"\">Avis: F-16-situasjonen i Ukraina er kritisk\n</h2>",
+          "target": [
+            ".tm33.t37.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span class=\"ad-label\">Annonse</span>",
+          "target": [
+            ".row.large-12.small-12:nth-child(28) > .display-label.google-ad.disable-initial-load > .ad-label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media desktop-floatLeft\">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7140996\"] > .desktop-floatLeft.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t39 tm22\" style=\"\">Reaktordrevne skip kan komme til Norge lenge før kjernekraft på land\n</h2>",
+          "target": [
+            ".t39.tm22.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"94239afd-e7bb-4e1b-beb9-7aa5db5accdb\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(30)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t37 tm20\" style=\"\">Ett av fem offentlige anbud får kun ett tilbud: – I praksis ingen konkurranse\n</h2>",
+          "target": [
+            ".tm20"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t33 tm28\" style=\"\">Norsk fregatt testet ny missiltype\n</h2>",
+          "target": [
+            ".t33.tm28.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/6445917\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t25 tm28\" style=\"\">Advarer: Selvkjørende biler kan gi oss lengre køer\n</h2>",
+          "target": [
+            ".t25.tm28.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media mobile-floatLeft\">",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/7141726\"] > .mobile-floatLeft.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below tm17\">\nAndroid-skadevare:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/7141726\"] > .tm17.kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t29 tm23\" style=\"\">Kan stjele bankdataene dine med KI\n</h2>",
+          "target": [
+            ".tm23.t29.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media mobile-floatLeft\">",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/7142036\"] > .mobile-floatLeft.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t30 tm21\" style=\"\">Dansk politi brukte plattform som knyttes til Russland\n</h2>",
+          "target": [
+            ".tm21.t30.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7142302\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t55 tm26\" style=\"\">Brua forskjøv seg 40 cm\n</h2>",
+          "target": [
+            ".t55.tm26.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below \">\n200.000 tonn årlig:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7142239\"] > .kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t27 tm31\" style=\"\">Nytt selskap skal lagre CO<sub>2</sub> i Nordsjøen\n</h2>",
+          "target": [
+            ".tm31"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below tm17\">\nEuropas dyreste diesel, men:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7141830\"] > .tm17.kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t30 tm22\" style=\"\">Vi bruker langt mindre andel av inntekten vår\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7141830\"] > .tm22.t30.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"14642fee-8f94-4c0d-8385-c07676ff7f09\" class=\"column small-12 large-6 small-abs-12 large-abs-6 \" data-site-alias=\"tu\" data-section=\"kommentar\" data-tag=\"kommentar,arbeidsliv,nito\" data-instance=\"7141083\" itemscope=\"\">",
+          "target": [
+            "article[data-tag=\"kommentar,arbeidsliv,nito\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7141633\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below \">\nBoeing:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7141633\"] > .kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t38 tm29\" style=\"\">Skal bygge nytt kampfly til den amerikanske marinen\n</h2>",
+          "target": [
+            ".t38.tm29.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"1ad5c3f3-0b7c-4c66-ab56-36a2d48e7c27\" class=\"column small-12 large-8 small-abs-12 large-abs-8 \" data-site-alias=\"tu\" data-section=\"industri\" data-tag=\"litium-ion-batterier,industri,faam,vianode,sirkulær økonomi\" data-instance=\"7141950\" itemscope=\"\">",
+          "target": [
+            "article[data-instance=\"7141950\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t20\">\nSlakter Teknologirådet:\n</div>",
+          "target": [
+            ".t20"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t33 tm23\" style=\"\">– Som å beskrive norsk oljepolitikk med data fra 1969\n</h2>",
+          "target": [
+            ".tm23.t33.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"2b6f3c2b-770d-4889-b6f8-9de1869c09e5\" class=\"column small-12 large-4 small-abs-12 large-abs-4 \" data-site-alias=\"tu\" data-section=\"debatt\" data-tag=\"kunstig intelligens,debatt\" data-instance=\"7140962\" itemscope=\"\">",
+          "target": [
+            "article[data-tag=\"kunstig intelligens,debatt\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media mobile-floatLeft\">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7141917\"] > .mobile-floatLeft.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t17 tm17\">\nDavvi vindkraftverk:\n</div>",
+          "target": [
+            ".t17"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t29 tm25\" style=\"\">Opphever NVEs avslag\n</h2>",
+          "target": [
+            ".tm25.t29.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"eaac2f2a-63b8-4626-9f87-c68beaf4ffb8\" class=\"column small-12 large-4 small-abs-12 large-abs-4 \" data-site-alias=\"tu\" data-section=\"samferdsel\" data-tag=\"samferdsel,klima\" data-instance=\"5704052\" itemscope=\"\">",
+          "target": [
+            "article[data-tag=\"samferdsel,klima\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"99c5bf78-0cf2-4576-9b21-34e5661c64c9\" class=\"column small-12 large-8 small-abs-12 large-abs-8 \" data-site-alias=\"tu\" data-section=\"industri\" data-tag=\"industri,eu\" data-instance=\"7141305\" itemscope=\"\">",
+          "target": [
+            "article[data-tag=\"industri,eu\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"d6c2b445-37c8-4760-9d50-fc88351e8d73\" class=\"column small-12 large-12 small-abs-12 large-abs-4 \" data-site-alias=\"tu\" data-section=\"industri\" data-tag=\"nordic mining,førdefjorden,industri,gruvedrift\" data-instance=\"7142185\" itemscope=\"\">",
+          "target": [
+            "article[data-instance=\"7142185\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t27\" style=\"\">Mener hjemmekontor-grep er kjempeblemme: – Bør få styre selv\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/5705943\"] > .t27.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t23\">\nFersk rapport:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/7141598\"] > .t23.kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t52 tm29\" style=\"\">Alle må ha en exit-strategi\n</h2>",
+          "target": [
+            ".t52.tm29.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t31 tm25\" style=\"\">Nordic Mining-sjefen slutter på dagen\n</h2>",
+          "target": [
+            ".t31.tm25.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"2ad6d0d6-3708-47d8-96fe-0180b44f306b\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(39)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5704819\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t39 tm28\" style=\"\">Dette er Equinors omstridte oljeutbygginger\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5704819\"] > .t39.tm28.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media mobile-floatLeft\">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7141196\"] > .mobile-floatLeft.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t33 tm27\" style=\"\">Årsaken til F-16-styrt er klar\n</h2>",
+          "target": [
+            ".t33.tm27.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"e3c3d518-efbd-4027-bc58-9e0061f1deb3\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(41)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"c2bd7281-87d3-4cfb-92df-9b578345cd39\" class=\"column small-12 large-4 small-abs-12 large-abs-4 \" data-site-alias=\"tu\" data-section=\"romfart\" data-tag=\"andøya,romfart\" data-instance=\"7141870\" itemscope=\"\">",
+          "target": [
+            "article[data-tag=\"andøya,romfart\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below \">\nDigitalt massebedrageri:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/7141732\"] > .kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t31\" style=\"\">– Trolig den største saken hittil i Norge\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/7141732\"] > .t31.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"fc67d3c1-54e0-40a5-bcfb-cdd2cacfa5ed\" class=\"column small-12 large-4 small-abs-12 large-abs-4 \" data-site-alias=\"tu\" data-section=\"it\" data-tag=\"datasenter,it\" data-instance=\"7141819\" itemscope=\"\">",
+          "target": [
+            "article[data-tag=\"datasenter,it\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"24719db7-cbae-4007-85dc-98091575cef0\" class=\"column small-12 large-4 small-abs-12 large-abs-4 \" data-site-alias=\"digi\" data-section=\"telekom\" data-tag=\"telenor,telekom\" data-instance=\"7141748\" itemscope=\"\">",
+          "target": [
+            "article[data-tag=\"telenor,telekom\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t26\">\nNitos hovedstyre:&nbsp;\n</div>",
+          "target": [
+            ".t26.kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t62 tm36\" style=\"\">Stiller seg bak Lein\n</h2>",
+          "target": [
+            ".t62.tm36.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t45\" style=\"\">Nasa vil fly som med SR-71 Blackbird igjen\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5706079\"] > .t45.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t25\">\nVarsler om tvangsmulkt til Nscale:\n</div>",
+          "target": [
+            ".t25.kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t43 tm30\" style=\"\">– Brudd på energiloven\n</h2>",
+          "target": [
+            ".t43"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/6445883\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t52 tm37\" style=\"\">Bruker 4 mill. i året på å komme seg til skytebanen\n</h2>",
+          "target": [
+            ".tm37"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t18\">\nNær alle datasentre eies av utlendinger:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/7141342\"] > .t18.kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t34 tm32\" style=\"\">&nbsp;– Utfordrer nasjonal sikkerhet\n</h2>",
+          "target": [
+            ".tm32.t34.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media mobile-floatLeft\">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7141395\"] > .mobile-floatLeft.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t19\">\nCorvus-sjef går på dagen:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7141395\"] > .t19.kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t32 tm32\" style=\"\">Finansdirektør på vei ut tar over\n</h2>",
+          "target": [
+            ".tm32.t32.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below \">\nForbrukerrådet:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/5704754\"] > .kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t38\" style=\"\">Advarer mot Meta Muse\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/5704754\"] > .t38.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t32 tm36\" style=\"\">Truet med å trekke seg fra Nito-ledelsen alt i juni\n</h2>",
+          "target": [
+            ".tm36.t32.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t18\">\n<span data-lab-text_size_desktop=\"19\" class=\"t19\">IT-gigantene sto skolerett:</span>\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/5704080\"] > .t18.kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t39 tm28\" style=\"\">– Det finnes ingen quick fix\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/5704080\"] > .t39.tm28.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"2d00a630-310f-458c-9c26-93e10d90de23\" class=\"column small-12 large-4 small-abs-12 large-abs-4 \" data-site-alias=\"tu\" data-section=\"energi\" data-tag=\"energi\" data-instance=\"7141100\" itemscope=\"\">",
+          "target": [
+            "article[data-tag=\"energi\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t32 tm29\" style=\"\">400 millioner mer til E-tjenesten\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7141123\"] > .tm29.t32.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media desktop-floatRight mobile-floatLeft\">",
+          "target": [
+            ".desktop-floatRight.mobile-floatLeft.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below \">\nDansk e-tjeneste advarer:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5705912\"] > .kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t23 tm25\" style=\"\">Tek-ledere og forsvars­topper er mål for Russland\n</h2>",
+          "target": [
+            ".t23.tm25.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h5 class=\"row_header_text large-12 small-12 t44 \"><span class=\"lab-row-header-title\">TU forklarer</span></h5>",
+          "target": [
+            ".border-side-bottom > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\" id=\"status-container\">\n          <div class=\"loading\" id=\"status-message\">Initialiserer...</div>\n        </div>",
+          "target": [
+            [
+              "#markup_7141430 > .fullwidthTarget.content > unite-player",
+              "#status-container"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\" id=\"status-container\">\n          <div class=\"loading\" id=\"status-message\">Initialiserer...</div>\n        </div>",
+          "target": [
+            [
+              "#markup_7141431 > .fullwidthTarget.content > unite-player",
+              "#status-container"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\" id=\"status-container\">\n          <div class=\"loading\" id=\"status-message\">Initialiserer...</div>\n        </div>",
+          "target": [
+            [
+              "#markup_7141432 > .fullwidthTarget.content > unite-player",
+              "#status-container"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"container\" id=\"status-container\">\n          <div class=\"loading\" id=\"status-message\">Initialiserer...</div>\n        </div>",
+          "target": [
+            [
+              "unite-player[muted=\"\"]",
+              "#status-container"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t30\">\nBatteristrid:\n</div>",
+          "target": [
+            ".t30.kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t86\" style=\"\">– Kastet bort millioner\n</h2>",
+          "target": [
+            ".t86"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"3e998cd7-8c2c-4db0-9e11-3dded3fb14f3\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(52)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7140700\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t23\">\nDanmarkskabel:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7140700\"] > .t23.kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t49 tm49\" style=\"\">Reparert og satt i drift igjen\n</h2>",
+          "target": [
+            ".t49"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below \">\nSotrasambandet:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7140602\"] > .kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t32 tm22\" style=\"\">Rammen var 17 mrd. – nå har prislappen blitt nær 30\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7140602\"] > .tm22.t32.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t24\">\nKongsberg Gruppen:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7140752\"] > .t24.kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t55\" style=\"\">Får rammeavtale på nær 4 milliarder\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7140752\"] > .t55.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/5705812\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t21\">\nEtterforskningen av Telenor:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/5705812\"] > .t21.kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t34 tm42\" style=\"\">– Det bør ta mye mer enn ett år\n</h2>",
+          "target": [
+            ".tm42"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"a7a2e2b8-03cc-498f-b25f-c7d102f93fd6\" class=\"column small-12 large-6 small-abs-12 large-abs-6 \" data-site-alias=\"tu\" data-section=\"forsvar\" data-tag=\"forsvar,ntb,utenriks\" data-instance=\"7140806\" itemscope=\"\">",
+          "target": [
+            "article[data-tag=\"forsvar,ntb,utenriks\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t37\" style=\"\">Rivingen er i gang\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/7140762\"] > .t37.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/5705935\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t25 tm27\" style=\"\">Google skal bygge kunstig intelligens i verdensrommet\n</h2>",
+          "target": [
+            ".t25.tm27.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5702936\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5706021\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t30\" style=\"\">USA godkjenner salg av flere Seahawk-helikoptre til Danmark\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5706021\"] > .t30.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t28 tm25\" style=\"\">Kasserte telefoner og mobilmaster kan spore ulovlige droner\n</h2>",
+          "target": [
+            ".t28.tm25.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5705849\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t37\" style=\"\">Her tar nytt jagerfly av for første gang\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5705849\"] > .t37.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h5 class=\"row_header_text large-12 small-12 font-weight-bold m-font-weight-bold \"><span class=\"lab-row-header-title\">Nitos visepresident trekker seg:­</span></h5>",
+          "target": [
+            ".border-bg-primary > h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5710359\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t48 tm23 color_mobile_no_bg_color align-left mobile_text_align_align-left\" style=\"\">– Man lærer seg å merke når voksne menn opplever at man tar for mye plass\n</h2>",
+          "target": [
+            ".align-left"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below \">\nNito-presidenten:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5711518\"] > .kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t34\" style=\"\">– Uenighet om rolleforståelse\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5711518\"] > .t34.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below tm16\">\nGeneralsekretæren:\n</div>",
+          "target": [
+            ".tm16"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t33\" style=\"\">&nbsp;– Trist og uheldig\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5711211\"] > .t33.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t38\" style=\"\">Norge har kjøpt nye bergings­panservogner\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5706087\"] > .t38.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5708027\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline \" style=\"\">Alstom krever 260 millioner fra Bane Nor\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5708027\"] > .headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5710099\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t23 tm17\">\nFra toppstilling i Elkem til Fensfeltet-selskap:\n</div>",
+          "target": [
+            ".t23.tm17.kicker"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t71 tm40\" style=\"\">– Jeg rømmer ikke\n</h2>",
+          "target": [
+            ".t71"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"bd328b70-9650-4b3a-9ba2-a7b0fc272508\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(62)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media mobile-floatLeft\">",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/5706114\"] > .mobile-floatLeft.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below tm19\">\nEkstraregning for KI:\n</div>",
+          "target": [
+            ".tm19.kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t36 tm24\" style=\"\">– Det du kjøper, er priset kunstig lavt\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/5706114\"] > .tm24.t36.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5710212\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below \">\nSetter treningsfly på bakken:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5710212\"] > .kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t48 tm45\" style=\"\">Styrtet ved campingplass\n</h2>",
+          "target": [
+            ".tm45"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5709650\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below \">\nNy samferdselsminister:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5709650\"] > .kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t37 tm29\" style=\"\">&nbsp;– Vi har sviktet jernbanen\n</h2>",
+          "target": [
+            ".t37.tm29.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below \">\nKommunen satser:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/5707478\"] > .kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t31\" style=\"\">KI-verktøy halverte tiden på journalføring\n</h2>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/5707478\"] > .t31.headline[itemprop=\"headline\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"dbc16a91-ba18-4925-ab23-b335b77aaa46\" class=\"column small-12 large-4 small-abs-12 large-abs-4 \" data-site-alias=\"tu\" data-section=\"artikler\" data-tag=\"artikler\" data-instance=\"5709799\" itemscope=\"\">",
+          "target": [
+            "article[data-instance=\"5709799\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t21\">\nHar meldt inn enorme kjernekraftplaner:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5708221\"] > .t21.kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t40 tm35\" style=\"\">– Kan løse mye av omdømme­­­­­­­problemet til datasentre\n</h2>",
+          "target": [
+            ".tm35"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media desktop-floatLeft\">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5708049\"] > .desktop-floatLeft.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-element-guid=\"5e6e65db-271d-4436-8137-59f194e61e54\" class=\"row small-12 large-12\" style=\"\">",
+          "target": [
+            ".row.large-12.small-12:nth-child(66)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/5706297\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div style=\"\" class=\"kicker below t19\">\nDatasenter-eufori i Fyresdal:\n</div>",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/5706297\"] > .t19.kicker.below"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t40 tm36\" style=\"\">– Blir som hva Hydro var for Rjukan\n</h2>",
+          "target": [
+            ".t40.tm36.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media mobile-floatLeft\">",
+          "target": [
+            "a[data-k5a-url=\"https://www.digi.no/a/5707369\"] > .mobile-floatLeft.media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t28 tm29\" style=\"\">Metas første «KI-dings»\n</h2>",
+          "target": [
+            ".t28.tm29.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5710238\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<article data-element-guid=\"b523b745-78ea-44fe-8267-0fc1f8f94586\" class=\"column small-12 large-4 small-abs-12 large-abs-4 \" data-site-alias=\"tu\" data-section=\"debatt\" data-tag=\"co2,industri,debatt,energi\" data-instance=\"5710641\" itemscope=\"\">",
+          "target": [
+            "article[data-tag=\"co2,industri,debatt,energi\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"media \">",
+          "target": [
+            "a[data-k5a-url=\"https://www.tu.no/a/5709319\"] > .media"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h2 itemprop=\"headline\" class=\"headline t40 tm23\" style=\"\">Thoresens nærmeste vil ikke ha ham tilbake: – Veldig vanskelig\n</h2>",
+          "target": [
+            ".t40.tm23.headline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"powered-by \"><a href=\"https://labradorcms.com/\" target=\"_blank\">Powered by Labrador CMS</a></div>",
+          "target": [
+            ".powered-by"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

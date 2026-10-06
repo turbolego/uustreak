@@ -1,10 +1,22 @@
 # WCAG Violations Report for Sandnes kommune
 
-**Timestamp:** 2026-10-05T06:17:02.414Z
+**Timestamp:** 2026-10-06T09:02:55.110Z
 **URL:** [https://www.sandnes.kommune.no/](https://www.sandnes.kommune.no/)
-**Total Violations:** 4
+**Total Violations:** 7
 
 ## Violation Details
+
+### Buttons must have discernible text
+
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.H-bg--lighter-green`
 
 ### Frames must have an accessible name
 
@@ -17,6 +29,31 @@
 #### Affected Elements:
 
 - `#iFrameResizer0`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#portalframe1, div[data-itemid="38630"] > .custom-event-info > h4`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- `.H-bg--lighter-green > img`
+- `.warning__icon`
 
 ### Links must have discernible text
 

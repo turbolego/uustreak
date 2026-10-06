@@ -1,10 +1,22 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-10-05T06:04:47.739Z
+**Timestamp:** 2026-10-06T08:53:26.540Z
 **URL:** [https://www.f-b.no/](https://www.f-b.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -16,7 +28,7 @@
 
 #### Affected Elements:
 
-- `brick-teaser-group-v1[data-color-skin="custom-one"] > div > brick-carousel-v3 > .carousel[role="region"][aria-label="Innholdskarusell"]`
+- `brick-teaser-group-v1[data-color-skin="sport"] > div > brick-carousel-v3[data-slides="5"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 

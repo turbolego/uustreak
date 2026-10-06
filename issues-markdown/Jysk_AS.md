@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-10-05T06:09:11.076Z
+**Timestamp:** 2026-10-06T08:56:32.490Z
 **URL:** [https://jysk.no/](https://jysk.no/)
 **Total Violations:** 2
 
@@ -30,7 +30,7 @@
 
 #### Affected Elements:
 
-- `.h-9.text-center[data-testid="campaign-bar"]:nth-child(1) > .w-10\/12.content-center.self-center > .text-white.group-hover\:underline`
+- `.w-10\/12.content-center[href$="sleepingdays"] > .text-white.group-hover\:underline`
 - `.w-10\/12.content-center[href$="nyheter"] > .text-white.group-hover\:underline`
 - `.h-9.text-center[data-testid="campaign-bar"]:nth-child(3) > .w-10\/12.content-center.self-center > .text-white.group-hover\:underline`
 - `.justify-center[href$="om-jysk"][data-testid="usp"]:nth-child(1) > .md\:text-2xl.mt-2.text-center`

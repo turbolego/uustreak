@@ -1,8 +1,8 @@
 # WCAG Violations Report for Tekna - Teknisk- naturvitenskapelig forening
 
-**Timestamp:** 2026-10-05T06:21:46.257Z
+**Timestamp:** 2026-10-06T09:09:17.167Z
 **URL:** [https://www.tekna.no/](https://www.tekna.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `#declineButton`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.promotion-block__text.cms-block__body > h3`
 
 ### Images must have alternative text
 
@@ -62,17 +74,18 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 15
+- **Count:** 16
 
 #### Affected Elements:
 
 - `div:nth-child(8)`
 - `.heroblock`
 - `.promoted-link-list`
+- `.d-sm-flex`
 - `.block:nth-child(4)`
 - `.promotion-block--yellow > .promotion-block__body`
 - `.col-lg-8`
-- `.d-none`
+- `.text-image-block__header.d-none.d-lg-block`
 - `.text-image-block__text`
 - `.text-image-block__image:nth-child(1)`
 - `.block-spacing-small.col-12`

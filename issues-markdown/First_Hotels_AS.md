@@ -1,6 +1,6 @@
 # WCAG Violations Report for First Hotels AS
 
-**Timestamp:** 2026-10-05T06:04:57.407Z
+**Timestamp:** 2026-10-06T08:52:41.230Z
 **URL:** [https://www.firsthotels.no/](https://www.firsthotels.no/)
 **Total Violations:** 4
 
@@ -33,9 +33,9 @@
 - `a[href$="danmark"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
 - `a[href$="norge"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
 - `a[href$="groenland"] > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
-- `.pr-0 > .min-w-0.grow-0.basis-full:nth-child(1) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
-- `.pr-0 > .min-w-0.grow-0.basis-full:nth-child(2) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
-- `.pr-0 > .min-w-0.grow-0.basis-full:nth-child(3) > a > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+- `.pr-0 > .min-w-0.grow-0.basis-full:nth-child(1) > .hover\:opacity-60.duration-300 > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+- `.pr-0 > .min-w-0.grow-0.basis-full:nth-child(2) > .hover\:opacity-60.duration-300 > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
+- `.pr-0 > .min-w-0.grow-0.basis-full:nth-child(3) > .hover\:opacity-60.duration-300 > .w-full > .pt-2 > .line-clamp-3.text-stone-500`
 - `.data-\[placeholder\]\:text-muted-foreground > .text-muted-foreground:nth-child(2)`
 - `a[href$="privacy-policy"]`
 - `a[href$="booking-conditions"]`

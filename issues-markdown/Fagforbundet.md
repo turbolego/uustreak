@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fagforbundet
 
-**Timestamp:** 2026-10-05T06:04:15.130Z
+**Timestamp:** 2026-10-06T08:51:43.081Z
 **URL:** [https://www.fagforbundet.no/](https://www.fagforbundet.no/)
 **Total Violations:** 3
 
@@ -24,14 +24,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 5
+- **Count:** 3
 
 #### Affected Elements:
 
 - `#CybotCookiebotDialogBodyEdgeMoreDetailsLink`
-- `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
-- `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection`
-- `#CybotCookiebotDialogBodyButtonDecline`
+- `#CybotCookiebotDialogBodyButtonAccept`
 - `#bounceText`
 
 ### All page content should be contained by landmarks

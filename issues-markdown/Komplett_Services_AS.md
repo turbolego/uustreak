@@ -1,8 +1,8 @@
 # WCAG Violations Report for Komplett Services AS
 
-**Timestamp:** 2026-10-05T06:10:16.800Z
+**Timestamp:** 2026-10-06T08:57:08.150Z
 **URL:** [https://www.komplett.no/](https://www.komplett.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -44,3 +44,15 @@
 
 - `#coiOverlay`
 - `.header__menu`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.chat__menu-title`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Nasjonalmuseet for Kunst
 
-**Timestamp:** 2026-10-05T06:20:00.605Z
+**Timestamp:** 2026-10-06T09:05:55.727Z
 **URL:** [https://www.nasjonalmuseet.no/](https://www.nasjonalmuseet.no/)
 **Total Violations:** 4
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 8
+- **Count:** 13
 
 #### Affected Elements:
 
@@ -24,6 +24,11 @@
 - `li[aria-label="5 av 7"]`
 - `li[aria-label="6 av 7"]`
 - `li[aria-label="7 av 7"]`
+- `li[aria-label="1 av 5"]`
+- `li[aria-label="2 av 5"]`
+- `li[aria-label="3 av 5"]`
+- `li[aria-label="4 av 5"]`
+- `li[aria-label="5 av 5"]`
 
 ### Document should not have more than one banner landmark
 
@@ -55,8 +60,9 @@
 - **Description:** Ensure that lists are structured correctly
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/list?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.ulc-carousel__track`
+- `div[title="Utstillinger"] > .ulc-carousel__track`
+- `div[title="Utvalgte arrangementer "] > .ulc-carousel__track`
