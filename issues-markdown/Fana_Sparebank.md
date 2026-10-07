@@ -1,23 +1,10 @@
 # WCAG Violations Report for Fana Sparebank
 
-**Timestamp:** 2026-10-07T08:53:47.643Z
+**Timestamp:** 2026-10-07T19:22:15.671Z
 **URL:** [https://www.fanasparebank.no/](https://www.fanasparebank.no/)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `.hero__image > div > img`
-- `.card__image.beige-theme > div > img`
 
 ### Form elements should have a visible label
 

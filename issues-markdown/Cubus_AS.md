@@ -1,6 +1,6 @@
 # WCAG Violations Report for Cubus AS
 
-**Timestamp:** 2026-10-07T08:50:03.517Z
+**Timestamp:** 2026-10-07T19:18:44.454Z
 **URL:** [https://cubus.com/no/](https://cubus.com/no/)
 **Total Violations:** 3
 
@@ -12,10 +12,11 @@
 - **Description:** Ensure landmarks are unique
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `#react_e499ec66-caeb-4e78-bbbb-fa4a8ed379bc > .css-1ljaiw5-StyledProductListBlock.ey9rwho0 > .css-1dlfasc-StyledProductListSlider.e12nlr8e5[aria-label="Glidebryter med produkter"]`
 - `.css-smxovs-StyledCssSliderWrapper`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements

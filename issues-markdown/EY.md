@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-10-07T08:53:29.345Z
+**Timestamp:** 2026-10-07T19:21:54.534Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 2
 
@@ -33,7 +33,7 @@
 - `.skip-content-wrapper`
 - `.cmp-logo__link > .sr-only`
 - `.myey-login-url`
-- `img[title="Transaction Trends 2025"]`
+- `#image-render-bd6c3e038a > .cmp-image__image[height="2560"][loading="lazy"]`
 - `.swiper-slide-visible > .up-hero-carousel__content-wrapper[data-up-hook-hero-carousel="contentWrapper"]`
 - `.up-hero-carousel__pagination`
 - `.up-content-cards__title`
@@ -91,9 +91,9 @@
 - `.cmp-slider__slide[data-index="2"][href$="assurance"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `.cmp-slider__slide[data-index="2"][href$="assurance"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
 - `.cmp-slider__slide[data-index="2"][href$="assurance"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
-- `a[data-index="3"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
-- `a[data-index="3"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
-- `a[data-index="3"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
+- `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
+- `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
+- `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
 - `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
 - `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`

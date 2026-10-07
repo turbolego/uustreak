@@ -1,0 +1,31 @@
+{
+  "name": "UUStreak",
+  "description": "A web application that tracks WCAG compliance for Norwegian websites and provides a streak score for days without accessibility violations.",
+  "url": "https://uustreak.no/",
+  "type": "accessibility-audit",
+  "tags": [
+    "accessibility",
+    "wcag",
+    "automated-testing",
+    "streak-score",
+    "norwegian-websites"
+  ],
+  "endpoints": [
+    {
+      "url": "https://uustreak.no/historical-data/report-list.json",
+      "type": "json",
+      "description": "Static JSON resource containing the published list of accessibility audit report files"
+    },
+    {
+      "url": "https://uustreak.no/historical-data/streak-index.json",
+      "type": "json",
+      "description": "Static JSON resource containing published accessibility violation counts and streak data"
+    }
+  ],
+  "contact": {
+    "email": "turbolego@gmail.com",
+    "bluesky": "https://bsky.app/profile/turbolego.bsky.social"
+  },
+  "license": "GPL-3.0",
+  "version": "1.0"
+}

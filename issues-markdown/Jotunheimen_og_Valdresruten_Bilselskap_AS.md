@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jotunheimen og Valdresruten Bilselskap AS
 
-**Timestamp:** 2026-10-07T08:57:50.721Z
+**Timestamp:** 2026-10-07T19:25:11.037Z
 **URL:** [https://jvb.no/](https://jvb.no/)
 **Total Violations:** 6
 
@@ -12,12 +12,13 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 13
+- **Count:** 14
 
 #### Affected Elements:
 
-- `.et_pb_slide_1 > .et_pb_container.clearfix > .et_pb_slider_container_inner > .et_pb_slide_description > .et_pb_slide_content > p > span`
-- `.et_pb_more_button.et_pb_button[href$="jvbtur.no"]`
+- `.et_pb_slide_title > a[href$="jotunheimentravel.com"]`
+- `.et_pb_slide_0 > .et_pb_container.clearfix > .et_pb_slider_container_inner > .et_pb_slide_description > .et_pb_slide_content > p > span`
+- `.et_pb_more_button.et_pb_button[href$="jotunheimentravel.com"]`
 - `.et_pb_text_5 > .et_pb_text_inner > p`
 - `.et_pb_text_5 > .et_pb_text_inner > p > span`
 - `.et_pb_text_8 > .et_pb_text_inner > p`
@@ -86,10 +87,11 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 14
+- **Count:** 15
 
 #### Affected Elements:
 
+- `.et_pb_slide_0`
 - `.et_pb_slide_1`
 - `.et-pb-controllers`
 - `.et_pb_section_3`

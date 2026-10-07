@@ -1,8 +1,8 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-10-07T08:51:19.519Z
+**Timestamp:** 2026-10-07T19:19:43.917Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
-**Total Violations:** 8
+**Total Violations:** 9
 
 ## Violation Details
 
@@ -61,8 +61,8 @@
 
 #### Affected Elements:
 
-- `.lg\:col-span-2 > .sm\:pr-6.flex-1.media`
-- `.lg\:col-span-1 > .sm\:pr-6.flex-1.media`
+- `.lg\:col-span-2 > .sm\:pr-6.media.flex-1`
+- `.lg\:col-span-1 > .sm\:pr-6.media.flex-1`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.sm\:px-6`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.max-w-full.sm\:px-6`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.max-w-full.sm\:px-6`
@@ -70,13 +70,13 @@
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(5) > .h-auto.max-w-full.sm\:px-6`
 - `.splide__arrow--prev.left-5[aria-controls="splide01-track"] > .w-12[data-nuxt-img=""]`
 - `.splide__arrow--next.right-5[aria-controls="splide01-track"] > .w-12[data-nuxt-img=""]`
-- `#splide02-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
+- `#splide02-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.media.flex-1`
 - `.splide__arrow--prev.left-5[aria-controls="splide02-track"] > .w-12[data-nuxt-img=""]`
 - `.splide__arrow--next.right-5[aria-controls="splide02-track"] > .w-12[data-nuxt-img=""]`
-- `#splide03-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.flex-1.media`
+- `#splide03-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.media.flex-1`
 - `.splide__arrow--prev.left-5[aria-controls="splide03-track"] > .w-12[data-nuxt-img=""]`
 - `.splide__arrow--next.right-5[aria-controls="splide03-track"] > .w-12[data-nuxt-img=""]`
-- `.lg\:col-span-3 > .sm\:pr-6.flex-1.media`
+- `.lg\:col-span-3 > .sm\:pr-6.media.flex-1`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(9) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.sm\:px-6`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(9) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.max-w-full.sm\:px-6`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(9) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.max-w-full.sm\:px-6`
@@ -116,6 +116,18 @@
 - `.maxLg\:py-5`
 - `#splide01`
 
+### Interactive controls must not be nested
+
+- **Impact:** serious
+- **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/nested-interactive?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.chat-nudge`
+
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
@@ -127,20 +139,20 @@
 #### Affected Elements:
 
 - `.top-0`
-- `.gap-1`
+- `.text-Theme\/Light`
 - `.custom-select.md\:col-span-3[data-v-53d2364d=""]`
 - `.dp__pointer`
 - `.btn-theme-default`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(2)`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(3)`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(4)`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(5) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(5) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].pb-12`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(6) > .py-15[data-v-d53f09c7=""] > .xl\:pr-0.xl\:pl-15.grid-cols-4 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(7) > .py-15[data-v-d53f09c7=""] > .xl\:pr-0.xl\:pl-15.grid-cols-4 > .xl\:col-span-3.col-span-4.lg\:col-span-4`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(8)`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(9)`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(10)`
-- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(11) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].leading-\[1\.15\]`
+- `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(11) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .heading.text-\[clamp\(theme\(fontSize\.4xl\)\,4vw\,theme\(fontSize\.6xl\)\)\].pb-12`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(12)`
 - `.xl\:col-span-6 > .lg\:text-center`
 - `.xl\:col-span-6 > div:nth-child(2)`

@@ -1,10 +1,22 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-10-07T08:54:39.716Z
+**Timestamp:** 2026-10-07T19:22:50.152Z
 **URL:** [https://www.f-b.no/](https://www.f-b.no/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
+
+### Headings should not be empty
+
+- **Impact:** minor
+- **Description:** Ensure headings have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/empty-heading?application=playwright
+- **Tags:** cat.name-role-value, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.brick-c-igdZZU.brick-c-gBeijm.title_container > .pretitle.brick-c-iscXzK[itemprop="alternative_headline"]`
 
 ### Frames must have an accessible name
 
