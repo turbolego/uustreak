@@ -240,6 +240,9 @@ function overlayStaticSite(sourceDir, outputDir) {
         'results.json',
         'test-results.json',
         'favicon.ico',
+        'robots.txt',
+        'sitemap.xml',
+        'llms.txt',
     ]);
 
     for (const entry of rootEntries) {
@@ -254,7 +257,7 @@ function overlayStaticSite(sourceDir, outputDir) {
             continue;
         }
 
-        if (entry.isDirectory() && (entry.name === 'assets' || entry.name === 'js')) {
+        if (entry.isDirectory() && (entry.name === 'assets' || entry.name === 'js' || entry.name === '.well-known')) {
             removeIfExists(targetPath);
             copyRecursive(sourcePath, targetPath);
         }
