@@ -699,6 +699,12 @@ jobs:
           # Copy projects.json with achievements data
           cp projects.json gh-pages-branch/
           
+          # Copy discovery and metadata files
+          cp robots.txt gh-pages-branch/
+          cp sitemap.xml gh-pages-branch/
+          cp llms.txt gh-pages-branch/
+          cp -r .well-known gh-pages-branch/
+          
           echo "Static files copied to gh-pages branch"
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

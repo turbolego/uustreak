@@ -1266,8 +1266,9 @@ jobs:
             -name "*.html" -o -name "*.ico" -o -name "site.webmanifest" \
             -o -name "styles.css" -o -name "projects.json" -o -name "results.json" \
             -o -name "test-results.json" -o -name "README.md" \
+            -o -name "robots.txt" -o -name "sitemap.xml" -o -name "llms.txt" \
           \) -exec cp -f {} "$PUBLISH_DIR/" \;
-          for dir in assets js; do
+          for dir in assets js .well-known; do
             if [ -d "site-output/$dir" ]; then
               rm -rf "$PUBLISH_DIR/$dir"
               cp -R "site-output/$dir" "$PUBLISH_DIR/$dir"
@@ -1366,6 +1367,12 @@ jobs:
             echo "❌ report-list.json missing from publish root"
             exit 1
           fi
+          for required_file in robots.txt sitemap.xml llms.txt .well-known/ai-catalog.json; do
+            if [ ! -f "$PUBLISH_DIR/$required_file" ]; then
+              echo "❌ Required discovery file missing from publish root: $required_file"
+              exit 1
+            fi
+          done
           echo "✓ Incremental copy complete"
 
           if [ -n "$(git -C "$PUBLISH_DIR" status --porcelain)" ]; then

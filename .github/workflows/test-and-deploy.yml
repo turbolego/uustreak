@@ -46,6 +46,8 @@ jobs:
           cp -r js gh-pages-branch/
           cp styles.css gh-pages-branch/
           cp -r assets gh-pages-branch/
+          cp robots.txt sitemap.xml llms.txt gh-pages-branch/
+          cp -r .well-known gh-pages-branch/
           
           node - <<'NODE'
           const fs = require('fs');

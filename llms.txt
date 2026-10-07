@@ -1,0 +1,33 @@
+# LLMs.txt for UUStreak
+# This file provides a brief overview of UUStreak for language models and AI agents.
+# UUStreak is a web application that tracks WCAG compliance for Norwegian websites
+# and provides a streak score for days without accessibility violations.
+
+## Overview
+UUStreak is a Norwegian web application that monitors the accessibility compliance
+ of websites in Norway. It uses automated testing to identify WCAG violations and
+ calculates a streak score representing the number of consecutive days without violations.
+
+## Key Features
+- Tracks WCAG compliance for Norwegian websites
+- Provides a streak score for days without accessibility violations
+- Offers detailed reports on accessibility issues
+- Includes a heatmap visualization of accessibility violations
+- Provides trend analysis of accessibility improvements
+- Publishes machine-readable JSON resources at
+  `historical-data/report-list.json` and `historical-data/streak-index.json`
+
+## Technical Details
+- Built with Playwright and AXE for automated testing
+- Runs on GitHub Actions for continuous monitoring
+- Provides static JSON data under `historical-data/` for audit reports and streak scores;
+  these are static resources, not an `/api` service
+- Designed to be accessible and compliant with WCAG standards itself
+
+## Contact Information
+For more information or to report issues, please contact:
+Email: turbolego@gmail.com
+Bluesky: https://bsky.app/profile/turbolego.bsky.social
+
+## License
+This project is licensed under the GPL-3.0.
