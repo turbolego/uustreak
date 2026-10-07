@@ -14,11 +14,14 @@ UUStreak is a Norwegian web application that monitors the accessibility complian
 - Offers detailed reports on accessibility issues
 - Includes a heatmap visualization of accessibility violations
 - Provides trend analysis of accessibility improvements
+- Publishes machine-readable JSON resources at
+  `historical-data/report-list.json` and `historical-data/streak-index.json`
 
 ## Technical Details
 - Built with Playwright and AXE for automated testing
 - Runs on GitHub Actions for continuous monitoring
-- Provides static JSON data under `historical-data/` for audit reports and streak scores
+- Provides static JSON data under `historical-data/` for audit reports and streak scores;
+  these are static resources, not an `/api` service
 - Designed to be accessible and compliant with WCAG standards itself
 
 ## Contact Information

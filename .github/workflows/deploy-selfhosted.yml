@@ -1367,6 +1367,12 @@ jobs:
             echo "❌ report-list.json missing from publish root"
             exit 1
           fi
+          for required_file in robots.txt sitemap.xml llms.txt .well-known/ai-catalog.json; do
+            if [ ! -f "$PUBLISH_DIR/$required_file" ]; then
+              echo "❌ Required discovery file missing from publish root: $required_file"
+              exit 1
+            fi
+          done
           echo "✓ Incremental copy complete"
 
           if [ -n "$(git -C "$PUBLISH_DIR" status --porcelain)" ]; then
