@@ -53,8 +53,9 @@ jobs:
               cp "$page" "$TARGET/"
               echo "  copied $page"
             done
-            cp README.md favicon.ico styles.css projects.json "$TARGET/"
-            cp -r js assets "$TARGET/"
+            cp README.md favicon.ico styles.css projects.json "$TARGET/" 2>/dev/null || true
+            cp robots.txt sitemap.xml llms.txt "$TARGET/" 2>/dev/null || true
+            cp -r js assets .well-known "$TARGET/" 2>/dev/null || true
             echo "✅ Static files copied successfully"
           }
 
