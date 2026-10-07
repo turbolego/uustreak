@@ -700,10 +700,10 @@ jobs:
           cp projects.json gh-pages-branch/
           
           # Copy discovery and metadata files
-          cp robots.txt gh-pages-branch/ 2>/dev/null || true
-          cp sitemap.xml gh-pages-branch/ 2>/dev/null || true
-          cp llms.txt gh-pages-branch/ 2>/dev/null || true
-          cp -r .well-known gh-pages-branch/ 2>/dev/null || true
+          cp robots.txt gh-pages-branch/
+          cp sitemap.xml gh-pages-branch/
+          cp llms.txt gh-pages-branch/
+          cp -r .well-known gh-pages-branch/
           
           echo "Static files copied to gh-pages branch"
       - name: Deploy to GitHub Pages
