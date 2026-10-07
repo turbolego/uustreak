@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestre Viken HF
 
-**Timestamp:** 2026-10-06T09:12:53.114Z
+**Timestamp:** 2026-10-07T09:12:19.149Z
 **URL:** [https://www.vestreviken.no/](https://www.vestreviken.no/)
 **Total Violations:** 1
 

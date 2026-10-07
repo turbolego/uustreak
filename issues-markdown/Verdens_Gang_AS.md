@@ -1,8 +1,8 @@
 # WCAG Violations Report for Verdens Gang AS
 
-**Timestamp:** 2026-10-06T09:12:09.767Z
+**Timestamp:** 2026-10-07T09:12:15.755Z
 **URL:** [https://www.vg.no/](https://www.vg.no/)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -29,3 +29,16 @@
 #### Affected Elements:
 
 - `.sch-datacontroller__text`
+
+### <svg> elements with an img or image role must have alternative text
+
+- **Impact:** serious
+- **Description:** Ensure <svg> elements with an img, image, graphics-document or graphics-symbol role have accessible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/svg-img-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.5
+- **Count:** 2
+
+#### Affected Elements:
+
+- `a[href$="GrGKpl"] > ._badges_1hzdj_31 > ._e24_1yjwa_43._badge_1yjwa_2 > svg[viewBox="0 0 90 45"][role="img"][fill="none"]`
+- `a[href$="n9W1LQ"] > ._badges_1hzdj_31 > ._e24_1yjwa_43._badge_1yjwa_2 > svg[viewBox="0 0 90 45"][role="img"][fill="none"]`

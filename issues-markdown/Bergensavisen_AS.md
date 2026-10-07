@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2026-10-06T08:48:28.599Z
+**Timestamp:** 2026-10-07T08:48:34.189Z
 **URL:** [https://www.ba.no/](https://www.ba.no/)
 **Total Violations:** 4
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v3[data-slides="4"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
+- `brick-carousel-v3[data-slides="6"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 

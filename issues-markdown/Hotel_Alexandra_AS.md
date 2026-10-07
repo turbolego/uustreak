@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hotel Alexandra AS
 
-**Timestamp:** 2026-10-06T08:55:29.710Z
+**Timestamp:** 2026-10-07T08:57:42.357Z
 **URL:** [https://www.alexandra.no/no/framside.aspx](https://www.alexandra.no/no/framside.aspx)
 **Total Violations:** 10
 

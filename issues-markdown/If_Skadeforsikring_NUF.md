@@ -1,6 +1,6 @@
 # WCAG Violations Report for If Skadeforsikring NUF
 
-**Timestamp:** 2026-10-06T08:55:46.473Z
+**Timestamp:** 2026-10-07T08:58:06.734Z
 **URL:** [https://www.if.no/privat](https://www.if.no/privat)
 **Total Violations:** 2
 
@@ -32,4 +32,4 @@
 
 #### Affected Elements:
 
-- `#\30 1745b1e73e04876b6301e21f8433e61`
+- `#a22d165b404a4d16858b9eb5cc7a0293`

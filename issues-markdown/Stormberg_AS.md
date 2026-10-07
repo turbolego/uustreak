@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-10-06T09:06:16.823Z
+**Timestamp:** 2026-10-07T09:06:24.840Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -41,26 +41,26 @@
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `a[aria-label="Regndag regnbukse unisex"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Bodø lettvekts regnbukse"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `a[aria-label="Harstad skallponcho"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
-- `a[aria-label="Harstad skallanorakk"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Regndag regnbukse unisex"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id[aria-label="Bodø lettvekts regnjakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `a[aria-label="Lofoten regnvott"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
-- `a[aria-label="Bodø lettvekts regnjakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `div:nth-child(7) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `div:nth-child(7) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Regnsky regnsett barn 8-14"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `a[aria-label="Regnsky regnsett barn 8-14"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `li:nth-child(3) > .ic.id[aria-label="Regnsky regnsett barn 1-7"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `li:nth-child(3) > .ic.id[aria-label="Regnsky regnsett barn 1-7"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Vesthav vattert regnparkas"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `a[aria-label="Vesthav vattert regnparkas"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `li:nth-child(4) > .ic.id[aria-label="Regnsky regnsett barn 1-7"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
-- `li:nth-child(4) > .ic.id[aria-label="Regnsky regnsett barn 1-7"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `li:nth-child(5) > .ic.id[aria-label="Regnsky regnsett barn 1-7"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `li:nth-child(5) > .ic.id[aria-label="Regnsky regnsett barn 1-7"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Vinterberg vinterjakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(2) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.ip`
 - `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.ip`
-- `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.ip`
-- `a[aria-label="Bodø lettvekts regnbukse"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id[aria-label="Bodø lettvekts regnjakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- `a[aria-label="Harstad skallanorakk"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
 
 ### Headings should not be empty
 

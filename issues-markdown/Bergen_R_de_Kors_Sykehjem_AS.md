@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergen Røde Kors Sykehjem AS
 
-**Timestamp:** 2026-10-06T08:47:27.661Z
+**Timestamp:** 2026-10-07T08:48:01.552Z
 **URL:** [https://brks.no/](https://brks.no/)
 **Total Violations:** 1
 

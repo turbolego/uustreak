@@ -1,6 +1,6 @@
 # WCAG Violations Report for BPA Nord
 
-**Timestamp:** 2026-10-06T08:48:18.316Z
+**Timestamp:** 2026-10-07T08:48:46.599Z
 **URL:** [https://bpa-nord.no/](https://bpa-nord.no/)
 **Total Violations:** 1
 

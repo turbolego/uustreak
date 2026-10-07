@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jobzone Norge AS
 
-**Timestamp:** 2026-10-06T08:55:35.555Z
+**Timestamp:** 2026-10-07T08:56:29.398Z
 **URL:** [https://jobzone.no/](https://jobzone.no/)
 **Total Violations:** 6
 
@@ -25,9 +25,9 @@
 - `.company-tab`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(2) > .box.is-mobile > .left-arrow.link.rusty-red > .rusty-red`
 - `.buttons-href-button[href="/ledige-stillinger/74249"]`
+- `.buttons-href-button[href="/ledige-stillinger/74250"]`
+- `.buttons-href-button[href="/ledige-stillinger/74248"]`
 - `.buttons-href-button[href="/ledige-stillinger/74244"]`
-- `.buttons-href-button[href="/ledige-stillinger/74247"]`
-- `.buttons-href-button[href="/ledige-stillinger/65781"]`
 - `.button-component`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .jobseeker.is-marginless.is-multiline > h5`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .company.is-marginless.colums > h5`
@@ -82,9 +82,9 @@
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(1) > .job-search-helper > .page-link.colums:nth-child(4) > a > .is-mobile.columns > .page-link-icon.is-narrow.column > img`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(1) > .job-search-helper > .page-link.colums:nth-child(4) > a > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
 - `div[data-position-id="74249"] > img`
+- `div[data-position-id="74250"] > img`
+- `div[data-position-id="74248"] > img`
 - `div[data-position-id="74244"] > img`
-- `div[data-position-id="74247"] > img`
-- `div[data-position-id="65781"] > img`
 - `img[src$="House.svg"]`
 - `.is-6.is-12-mobile.column:nth-child(2) > img[src$="Article.svg"][type="image/svg+xml"]`
 - `.information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(3) > img[type="image/svg+xml"]`

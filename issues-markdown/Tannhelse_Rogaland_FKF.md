@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tannhelse Rogaland FKF
 
-**Timestamp:** 2026-10-06T09:08:50.396Z
+**Timestamp:** 2026-10-07T09:09:43.826Z
 **URL:** [https://www.tannhelserogaland.no/newsread/index.aspx](https://www.tannhelserogaland.no/newsread/index.aspx)
 **Total Violations:** 4
 

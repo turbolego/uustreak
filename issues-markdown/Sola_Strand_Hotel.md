@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sola Strand Hotel
 
-**Timestamp:** 2026-10-06T09:05:12.405Z
+**Timestamp:** 2026-10-07T09:06:24.078Z
 **URL:** [https://www.solastrandhotel.no/](https://www.solastrandhotel.no/)
 **Total Violations:** 5
 
@@ -41,7 +41,7 @@
 
 #### Affected Elements:
 
-- `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video.ready, html`
+- `div[data-config-url="https://vimeo.com/1043637275"] > div > .background-video.ready, html`
 
 ### Heading levels should only increase by one
 

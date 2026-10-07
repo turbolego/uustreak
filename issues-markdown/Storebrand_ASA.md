@@ -1,6 +1,6 @@
 # WCAG Violations Report for Storebrand ASA
 
-**Timestamp:** 2026-10-06T09:08:03.145Z
+**Timestamp:** 2026-10-07T09:06:57.930Z
 **URL:** [https://www.storebrand.no/](https://www.storebrand.no/)
 **Total Violations:** 1
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Læringsverkstedet AS
 
-**Timestamp:** 2026-10-06T08:58:49.519Z
+**Timestamp:** 2026-10-07T08:59:14.050Z
 **URL:** [https://laringsverkstedet.no/](https://laringsverkstedet.no/)
 **Total Violations:** 8
 

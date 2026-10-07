@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telia Norge AS
 
-**Timestamp:** 2026-10-06T09:09:10.830Z
+**Timestamp:** 2026-10-07T09:10:04.826Z
 **URL:** [https://www.telia.no/](https://www.telia.no/)
 **Total Violations:** 3
 
@@ -28,15 +28,15 @@
 
 #### Affected Elements:
 
-- `.slide:nth-child(1) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(2) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(3) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(4) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(5) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(10) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(11) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(14) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(15) > .product-card-link > ._teddy-card--white_kudfq_267._teddy-card--border_kudfq_58._teddy-card--product_kudfq_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(1) > .product-card-link > ._teddy-card--white_139sd_267._teddy-card--border_139sd_58._teddy-card--product_139sd_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(2) > .product-card-link > ._teddy-card--white_139sd_267._teddy-card--border_139sd_58._teddy-card--product_139sd_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(3) > .product-card-link > ._teddy-card--white_139sd_267._teddy-card--border_139sd_58._teddy-card--product_139sd_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(4) > .product-card-link > ._teddy-card--white_139sd_267._teddy-card--border_139sd_58._teddy-card--product_139sd_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(5) > .product-card-link > ._teddy-card--white_139sd_267._teddy-card--border_139sd_58._teddy-card--product_139sd_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(10) > .product-card-link > ._teddy-card--white_139sd_267._teddy-card--border_139sd_58._teddy-card--product_139sd_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(11) > .product-card-link > ._teddy-card--white_139sd_267._teddy-card--border_139sd_58._teddy-card--product_139sd_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(14) > .product-card-link > ._teddy-card--white_139sd_267._teddy-card--border_139sd_58._teddy-card--product_139sd_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(15) > .product-card-link > ._teddy-card--white_139sd_267._teddy-card--border_139sd_58._teddy-card--product_139sd_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
 
 ### Interactive controls must not be nested
 
@@ -52,7 +52,7 @@
 - `div[data-di-id="Mobiltelefoner"]`
 - `div[data-di-id="Internett"]`
 - `div[data-di-id="Strømming og TV"]`
-- `._teddy-card--purple-light_kudfq_234._teddy-card--navigation-vertical_kudfq_102[role="button"]:nth-child(1)`
-- `._teddy-card--purple-light_kudfq_234._teddy-card--navigation-vertical_kudfq_102[role="button"]:nth-child(2)`
-- `._teddy-card--purple-light_kudfq_234._teddy-card--navigation-vertical_kudfq_102[role="button"]:nth-child(3)`
-- `._teddy-card--purple-light_kudfq_234._teddy-card--navigation-vertical_kudfq_102[role="button"]:nth-child(4)`
+- `._teddy-card--purple-light_139sd_234._teddy-card--navigation-vertical_139sd_102[role="button"]:nth-child(1)`
+- `._teddy-card--purple-light_139sd_234._teddy-card--navigation-vertical_139sd_102[role="button"]:nth-child(2)`
+- `._teddy-card--purple-light_139sd_234._teddy-card--navigation-vertical_139sd_102[role="button"]:nth-child(3)`
+- `._teddy-card--purple-light_139sd_234._teddy-card--navigation-vertical_139sd_102[role="button"]:nth-child(4)`
