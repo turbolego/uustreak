@@ -1,6 +1,6 @@
 # WCAG Violations Report for Registerenheten i Brønnøysund
 
-**Timestamp:** 2026-10-07T19:31:52.423Z
+**Timestamp:** 2026-10-08T10:28:28.267Z
 **URL:** [https://www.brreg.no/](https://www.brreg.no/)
 **Total Violations:** 1
 
@@ -10,10 +10,14 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.operation-alert`
+- **Target:** `.operation-alert`
+  - **HTML:** `<div class="operation-alert operation-alert-info">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

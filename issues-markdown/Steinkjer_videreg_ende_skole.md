@@ -1,8 +1,8 @@
 # WCAG Violations Report for Steinkjer videregående skole
 
-**Timestamp:** 2026-10-07T19:34:57.633Z
+**Timestamp:** 2026-10-08T10:35:56.847Z
 **URL:** [https://web.trondelagfylke.no/steinkjer-videregaende-skole](https://web.trondelagfylke.no/steinkjer-videregaende-skole)
-**Total Violations:** 9
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -10,163 +10,90 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
+- **Source:** Embedded code from Cookie Information
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#declineButton`
+- **Target:** `#declineButton`
+  - **HTML:** `<button type="button" tabindex="0" onclick="CookieInformation.declineAllCategories()" aria-label="Avvis alle" id="declineButton" class="coi-banner__decline" role="alert" aria-atomic="true" style="display: flex;"> Avvis alle </button>`
+  - **Failure summary:** Fix any of the following: ARIA role alert is not allowed for given element
 
-### ARIA progressbar nodes must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA progressbar node has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-progressbar-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag111, EN-301-549, EN-9.1.1.1, RGAAv4, RGAA-11.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe[name="fcbdd570cf5303fee"], ._55yn`
-
-### Certain ARIA roles must contain particular children
-
-- **Impact:** critical
-- **Description:** Ensure elements with an ARIA role that require child roles contain them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-required-children?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe[name="fcbdd570cf5303fee"], div[role="feed"]`
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `iframe[name="fcbdd570cf5303fee"], abbr[data-utime="1791184206"] > .timestampContent`
-- `iframe[name="fcbdd570cf5303fee"], #feed_subtitle_1522783309885849\:4\:0 > ._1atc.fsm.fwn > .fcg`
 
 ### Document should not have more than one banner landmark
 
 - **Impact:** moderate
 - **Description:** Ensure the document has at most one banner landmark
+- **Source:** Embedded code from Cookie Information
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-banner?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 2
 
 #### Affected Elements:
 
-- `#coiOverlay`
-- `.top-menu`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
 
-### Links must have discernible text
+- **Target:** `.top-menu`
+  - **HTML:** `<nav class="top-menu top-menu--school u-hide-tablet-landscape-down">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
 
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 10
-
-#### Affected Elements:
-
-- `iframe[name="fcbdd570cf5303fee"], #u_0_1_Fv`
-- `iframe[name="fcbdd570cf5303fee"], .lfloat._3-8_[target="_blank"]`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_5_dT > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fcbdd570cf5303fee"], .mts > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a[target="_blank"]`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_6_QU > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_g_QN > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a[target="_blank"]`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_g_QN > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_f_QZ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a[target="_blank"]`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_f_QZ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_p_Cx > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-
-### Elements marked as presentational should be consistently ignored
-
-- **Impact:** minor
-- **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/presentation-role-conflict?application=playwright
-- **Tags:** cat.aria, best-practice, ACT
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe[name="fcbdd570cf5303fee"], .scaledImageFitWidth`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 47
+- **Count:** 7
 
 #### Affected Elements:
 
-- `.hero-image`
-- `section`
-- `.card-grid.card-grid--equal-height:nth-child(3)`
-- `.card-grid.card-grid--equal-height:nth-child(4)`
-- `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(1)`
-- `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(2) > .card.card-grid--equal-height > .card__tag`
-- `iframe[name="fcbdd570cf5303fee"], ._2lqh`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_5_dT > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_5_dT > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > ._3x-2[data-ft="{\"tn\":\"H\"}"] > div:nth-child(2) > ._5r69._sds._1hvl > .mts > ._5pcm.mtm > ._1nb_[data-ft="{\"tn\":\"C\"}"]`
-- `iframe[name="fcbdd570cf5303fee"], #feed_subtitle_1522783309885849\:4\:0 > ._1atc.fsm.fwn`
-- `iframe[name="fcbdd570cf5303fee"], #feed_subtitle_1522783309885849\:4\:0 > .z_c3pyo1brp`
-- `iframe[name="fcbdd570cf5303fee"], #id_6ac69ed0e7d466141147638 > p:nth-child(1)`
-- `iframe[name="fcbdd570cf5303fee"], #id_6ac69ed0e7d466141147638 > p:nth-child(2)`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_9_A2 > table > tbody > tr > ._435r:nth-child(2)`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_9_A2 > table > tbody > tr > ._51mw`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_6_QU > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_11_ZK > ._46-h`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_y_v5 > .uiScaledImageContainer`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_z_z0 > ._46-h`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_10_rC > ._46-h`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_x_N9 > ._46-h`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_6_QU > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > ._3x-2[data-ft="{\"tn\":\"H\"}"] > div:nth-child(2) > ._5r69._sds._1hvl > .mts > ._5pcm.mtm > ._1nb_[data-ft="{\"tn\":\"C\"}"]`
-- `iframe[name="fcbdd570cf5303fee"], #feed_subtitle_1606152297967838\:4\:0 > ._1atc.fsm.fwn`
-- `iframe[name="fcbdd570cf5303fee"], #feed_subtitle_1606152297967838\:4\:0 > .z_c3pyo1brp`
-- `iframe[name="fcbdd570cf5303fee"], #id_6ac69ed0e80262814747316 > p:nth-child(1)`
-- `iframe[name="fcbdd570cf5303fee"], #id_6ac69ed0e80262814747316 > p:nth-child(2)`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_c_yO > table > tbody > tr > ._435r:nth-child(2)`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_c_yO > table > tbody > tr > ._51mw`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_g_QN > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_g_QN > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > ._5pbx._3576.userContent`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_h_Ms > table > tbody > tr > ._435r:nth-child(2)`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_h_Ms > table > tbody > tr > ._51mw`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_f_QZ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k`
-- `iframe[name="fcbdd570cf5303fee"], #id_6ac69ed0e827b8a10275226 > p:nth-child(1)`
-- `iframe[name="fcbdd570cf5303fee"], #id_6ac69ed0e827b8a10275226 > p:nth-child(2)`
-- `iframe[name="fcbdd570cf5303fee"], #id_6ac69ed0e827b8a10275226 > p:nth-child(3)`
-- `iframe[name="fcbdd570cf5303fee"], #id_6ac69ed0e827b8a10275226 > .text_exposed_hide`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_k_\/x > table > tbody > tr > ._435r:nth-child(2)`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_k_\/x > table > tbody > tr > ._51mw`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_p_Cx > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._3dp._29k`
-- `iframe[name="fcbdd570cf5303fee"], div:nth-child(3) > ._5pbx._3576.userContent`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_p_Cx > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > ._3x-2[data-ft="{\"tn\":\"H\"}"]`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_s_S8 > table > tbody > tr > ._435r:nth-child(2)`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_s_S8 > table > tbody > tr > ._51mw`
-- `iframe[name="fcbdd570cf5303fee"], #u_1_16_6q`
-- `iframe[name="fcbdd570cf5303fee"], ._1_lj`
-- `.card-grid__item:nth-child(3)`
+- **Target:** `.hero-image`
+  - **HTML:** `<figure class="hero-image" data-object-fit=""> <img src="/globalassets/bilder/steinkjervideregaendeskole/fellesbilde-alle_steinkjer_2024_2.jpg?width=1280" alt="Fellesbilde elever og ansatte 2024 Steinkjer videregående skole Foto: Reed Foto…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `section`
+  - **HTML:** `<section class="featured-section u-mg-bottom-base u-mg-bottom-xl@tablet-landscape-up">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.card-grid.card-grid--equal-height:nth-child(3)`
+  - **HTML:** `<div class="card-grid card-grid--equal-height">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.card-grid.card-grid--equal-height:nth-child(4)`
+  - **HTML:** `<div class="card-grid card-grid--equal-height">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(1)`
+  - **HTML:** `<div class="card-grid__item">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(2) > .card.card-grid--equal-height > .card__tag`
+  - **HTML:** `<div class="card__tag"> Se oss på Facebook </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.card-grid__item:nth-child(3)`
+  - **HTML:** `<div class="card-grid__item">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

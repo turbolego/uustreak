@@ -1,7 +1,7 @@
-# WCAG Violations Report for Danske Bank AS
+# WCAG Violations Report for Experis AS
 
-**Timestamp:** 2026-10-08T10:21:13.742Z
-**URL:** [https://danskebank.no/bedrift](https://danskebank.no/bedrift)
+**Timestamp:** 2026-10-08T10:26:04.162Z
+**URL:** [https://www.experis.no/](https://www.experis.no/)
 **Total Violations:** 1
 
 ## Violation Details
@@ -10,18 +10,14 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
+- **Source:** Embedded code from OneTrust
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `.footer-cta`
-  - **HTML:** `<div class="footer-cta hide-for-print">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.aria-labels`
-  - **HTML:** `<div class="aria-labels">`
+- **Target:** `#onetrust-banner-sdk`
+  - **HTML:** `<div id="onetrust-banner-sdk" class="otCenterRounded default ot-wo-title vertical-align-content" tabindex="0" aria-label="Personvern" aria-describedby="onetrust-policy-text">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

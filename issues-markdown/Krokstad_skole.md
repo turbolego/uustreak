@@ -1,142 +1,95 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2026-10-07T19:26:20.278Z
+**Timestamp:** 2026-10-08T10:41:12.953Z
 **URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/)
-**Total Violations:** 10
+**Total Violations:** 5
 
 ## Violation Details
-
-### ARIA progressbar nodes must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA progressbar node has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-progressbar-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag111, EN-301-549, EN-9.1.1.1, RGAAv4, RGAA-11.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe[name="fa3eeee5b7d68e759"], ._55yn`
-
-### Certain ARIA roles must contain particular children
-
-- **Impact:** critical
-- **Description:** Ensure elements with an ARIA role that require child roles contain them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-required-children?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `iframe[name="fa3eeee5b7d68e759"], div[role="feed"]`
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 6
-
-#### Affected Elements:
-
-- `iframe[name="fa3eeee5b7d68e759"], .x1ypdohk.xe35lr7:nth-child(2) > ._eg_[role="button"] > ._eh3`
-- `iframe[name="fa3eeee5b7d68e759"], .x1ypdohk.xe35lr7._51mw > ._eg_[role="button"] > ._eh3`
-- `iframe[name="fa3eeee5b7d68e759"], abbr[data-utime="1791303880"] > .timestampContent`
-- `iframe[name="fa3eeee5b7d68e759"], #feed_subtitle_1689319819870314\:4\:0 > ._1atc.fsm.fwn > .fcg`
-- `iframe[name="fa3eeee5b7d68e759"], #u_1_g_Ss > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd[target="_blank"] > ._1p4p._2pi4[title="Kommenter"]`
-- `iframe[name="fa3eeee5b7d68e759"], #u_1_i_iv > ._50sk._2pi4[title="Del"]`
 
 ### Form elements should have a visible label
 
 - **Impact:** serious
 - **Description:** Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes
+- **Source:** Embedded code from Cookie Information
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/label-title-only?application=playwright
 - **Tags:** cat.forms, best-practice
 - **Count:** 3
 
 #### Affected Elements:
 
-- `#cookie_cat_functional`
-- `#cookie_cat_statistic`
-- `#cookie_cat_marketing`
+- **Target:** `#cookie_cat_functional`
+  - **HTML:** `<input class="coi__checkbox" tabindex="0" data-index="0" name="cookie_cat_functional" id="cookie_cat_functional" type="checkbox" title="Funksjonelle" onclick="CookieInformation.changeCategoryConsentDecision('cookie_cat_functional')">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
+- **Target:** `#cookie_cat_statistic`
+  - **HTML:** `<input class="coi__checkbox" tabindex="0" data-index="0" name="cookie_cat_statistic" id="cookie_cat_statistic" type="checkbox" title="Statistiske" onclick="CookieInformation.changeCategoryConsentDecision('cookie_cat_statistic')">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
+- **Target:** `#cookie_cat_marketing`
+  - **HTML:** `<input class="coi__checkbox" tabindex="0" data-index="0" name="cookie_cat_marketing" id="cookie_cat_marketing" type="checkbox" title="Markedsføring" onclick="CookieInformation.changeCategoryConsentDecision('cookie_cat_marketing')">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
 
 ### Document should not have more than one banner landmark
 
 - **Impact:** moderate
 - **Description:** Ensure the document has at most one banner landmark
+- **Source:** Embedded code from Cookie Information
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-banner?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: Document has more than one banner landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
+- **Source:** Embedded code from Cookie Information
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#coiOverlay`
+- **Target:** `#coiOverlay`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
 
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 8
-
-#### Affected Elements:
-
-- `iframe[name="fa3eeee5b7d68e759"], #u_0_1_f8`
-- `iframe[name="fa3eeee5b7d68e759"], .lfloat._3-8_[target="_blank"]`
-- `iframe[name="fa3eeee5b7d68e759"], #u_1_8_4a > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fa3eeee5b7d68e759"], #u_1_5_JU > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fa3eeee5b7d68e759"], #u_1_6_hk > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fa3eeee5b7d68e759"], #u_1_1p_Jv > ._302 > span > a[target="_blank"]`
-- `iframe[name="fa3eeee5b7d68e759"], #u_1_7_aQ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fa3eeee5b7d68e759"], ._2l7q > a[target="_blank"]`
 
 ### Interactive controls must not be nested
 
 - **Impact:** serious
 - **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/nested-interactive?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.mainMenuTrigger`
+- **Target:** `.mainMenuTrigger`
+  - **HTML:** `<div class="mainMenuTrigger _jsMainMenuTrigger" tabindex="0" role="button">`
+  - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
 
-### Elements marked as presentational should be consistently ignored
-
-- **Impact:** minor
-- **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/presentation-role-conflict?application=playwright
-- **Tags:** cat.aria, best-practice, ACT
-- **Count:** 2
-
-#### Affected Elements:
-
-- `iframe[name="fa3eeee5b7d68e759"], a[aria-describedby="u_1_11_Ls"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > img[width="255"][height="134"][caption=""]`
-- `iframe[name="fa3eeee5b7d68e759"], a[aria-describedby="u_1_z_H3"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > img[width="255"][height="134"][caption=""]`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.skipLink`
+- **Target:** `.skipLink`
+  - **HTML:** `<p class="skipLink"> <a href="#mainContentContainer">Hopp til innhold</a> </p>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Cubus AS
 
-**Timestamp:** 2026-10-07T19:18:44.454Z
+**Timestamp:** 2026-10-08T10:18:57.528Z
 **URL:** [https://cubus.com/no/](https://cubus.com/no/)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
 
@@ -10,35 +10,30 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 2
-
-#### Affected Elements:
-
-- `#react_e499ec66-caeb-4e78-bbbb-fa4a8ed379bc > .css-1ljaiw5-StyledProductListBlock.ey9rwho0 > .css-1dlfasc-StyledProductListSlider.e12nlr8e5[aria-label="Glidebryter med produkter"]`
-- `.css-smxovs-StyledCssSliderWrapper`
-
-### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
-
-- **Impact:** serious
-- **Description:** Ensure that lists are structured correctly
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/list?application=playwright
-- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.e1gatcwn2`
+- **Target:** `#mobileTop`
+  - **HTML:** `<nav id="mobileTop" class="mobile-top" aria-label="Primærnavigasjon topp" data-mobile-header="">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
 
-### All page content should be contained by landmarks
+
+### Page should contain a level-one heading
 
 - **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#zendesk-widget`
+- **Target:** `html`
+  - **HTML:** `<html class="no-js" lang="no">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+
