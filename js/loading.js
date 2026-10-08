@@ -2,14 +2,15 @@
 // Loading overlay HTML template
 const loadingHTML = `
     <div id="loading-container" class="loading-overlay">
-        <div class="loading-content">
-            <div class="loading-spinner"></div>
+        <div class="loading-content" role="status" aria-live="polite">
+            <div class="loading-spinner" aria-hidden="true"></div>
             <div class="loading-text">Laster rapporter...</div>
             <div class="loading-progress">
-                <div class="progress-bar">
+                <div class="progress-bar" aria-hidden="true">
                     <div id="progress-fill"></div>
                 </div>
                 <div id="progress-text">0%</div>
+                <div id="progress-status" class="loading-status"></div>
             </div>
         </div>
     </div>
@@ -71,32 +72,107 @@ const loadingStyles = `
         transition: width 0.3s ease;
     }
 
+    .loading-status {
+        min-height: 1.2em;
+        margin-top: 0.25rem;
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+
+    /* Indeterminate stripe shown while work continues after downloads reach 100% */
+    .loading-overlay.is-finishing #progress-fill {
+        width: 100% !important;
+        background-image: linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.25) 25%, transparent 25%,
+            transparent 50%, rgba(255, 255, 255, 0.25) 50%,
+            rgba(255, 255, 255, 0.25) 75%, transparent 75%, transparent
+        );
+        background-size: 1.5rem 1.5rem;
+        animation: progress-stripes 0.8s linear infinite;
+    }
+
     @keyframes spin {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
     }
+
+    @keyframes progress-stripes {
+        from { background-position: 1.5rem 0; }
+        to { background-position: 0 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .loading-spinner,
+        .loading-overlay.is-finishing #progress-fill {
+            animation-duration: 3s;
+        }
+    }
 `;
 
-// Initialize loading overlay
-function initializeLoading() {
-    const styleEl = document.createElement('style');
-    styleEl.textContent = loadingStyles;
-    document.head.appendChild(styleEl);
-
-    const loadingEl = document.createElement('div');
-    loadingEl.innerHTML = loadingHTML;
-    document.body.appendChild(loadingEl);
-
-    return loadingEl.firstElementChild;
+function getLoadingOverlay() {
+    return document.querySelector('.loading-overlay');
 }
 
-// Update progress bar
-function updateProgress(current, total) {
-    const percentage = Math.round((current / total) * 100);
-    document.getElementById('progress-fill').style.width = `${percentage}%`;
-    document.getElementById('progress-text').textContent = `${percentage}%`;
+// Initialize (or reuse) the loading overlay and reset it to 0%
+function initializeLoading() {
+    if (!document.getElementById('loading-overlay-styles')) {
+        const styleEl = document.createElement('style');
+        styleEl.id = 'loading-overlay-styles';
+        styleEl.textContent = loadingStyles;
+        document.head.appendChild(styleEl);
+    }
+
+    let overlay = getLoadingOverlay();
+    if (!overlay) {
+        const loadingEl = document.createElement('div');
+        loadingEl.innerHTML = loadingHTML.trim();
+        overlay = loadingEl.firstElementChild;
+        document.body.appendChild(overlay);
+    }
+
+    overlay.classList.remove('is-finishing');
+    overlay.style.display = '';
+    updateProgress(0, 1, '');
+    return overlay;
+}
+
+// Update progress bar; optional message is shown below the percentage
+function updateProgress(current, total, message) {
+    const overlay = getLoadingOverlay();
+    if (!overlay) return;
+
+    const percentage = total > 0 ? Math.min(100, Math.round((current / total) * 100)) : 0;
+    overlay.querySelector('#progress-fill').style.width = `${percentage}%`;
+    overlay.querySelector('#progress-text').textContent = `${percentage}%`;
+    if (message !== undefined) {
+        overlay.querySelector('#progress-status').textContent = message;
+    }
+}
+
+// Switch to an indeterminate "still working" state for post-download processing
+function setLoadingFinishing(message) {
+    const overlay = getLoadingOverlay();
+    if (!overlay) return;
+
+    overlay.classList.add('is-finishing');
+    overlay.querySelector('#progress-text').textContent = '100%';
+    if (message !== undefined) {
+        overlay.querySelector('#progress-status').textContent = message;
+    }
+}
+
+function hideLoading() {
+    const overlay = getLoadingOverlay();
+    if (!overlay) return;
+
+    overlay.classList.remove('is-finishing');
+    overlay.style.display = 'none';
 }
 
 // Ensure functions are accessible globally
 window.initializeLoading = initializeLoading;
 window.updateProgress = updateProgress;
+window.setLoadingFinishing = setLoadingFinishing;
+window.hideLoading = hideLoading;
+window.removeLoadingOverlay = hideLoading;
