@@ -1,0 +1,31 @@
+{
+  "project": "Eiendomsmegler 1 AS",
+  "timestamp": "2026-10-08T10:24:47.449Z",
+  "url": "https://www.eiendomsmegler1.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h5 class=\"ffe-h5 PortableText-module__bZqguG__topPadding\"><strong>Dataskraping av nettsider</strong></h5>",
+          "target": [
+            "h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    }
+  ]
+}
