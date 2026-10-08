@@ -227,8 +227,10 @@
          * @param {string} text - The potentially corrupted text
          * @returns {string} - The corrected text
          */
+        const utf8FixCache = new Map();
         function fixUtf8Encoding(text) {
             if (!text) return text;
+            if (utf8FixCache.has(text)) return utf8FixCache.get(text);
             
             // Common UTF-8 corruption patterns and their fixes
             const corrections = {
@@ -257,6 +259,7 @@
                 corrected = corrected.replace(new RegExp(corrupted, 'g'), correct);
             }
             
+            utf8FixCache.set(text, corrected);
             return corrected;
         }
 
@@ -520,7 +523,6 @@
                                         data.filename = `accessibility-reports/${date}/${cleanFilename}`;
                                         // Update the project name in the data to use the corrected version
                                         data.project = finalProject;
-                                        data.noViolationsStreak = calculateNoViolationsStreak(finalProject, reportList, data);
                                         projectReports.set(finalProject, data);
                                     }
                                 }
@@ -564,17 +566,11 @@
 
                     totalReports = reports.length;
 
-                    // Update progress to complete
-                    if (typeof updateProgress === 'function') {
-                        updateProgress(reports.length, reports.length, 'Archive loading complete!');
+                    // Downloads are done; the table still has to be built, so show an indeterminate state.
+                    // renderTable() hides the overlay once the table is in the DOM.
+                    if (typeof setLoadingFinishing === 'function') {
+                        setLoadingFinishing('Bygger tabell...');
                     }
-
-                    // Hide loading screen after a short delay
-                    setTimeout(() => {
-                        if (loadingContainer) {
-                            loadingContainer.style.display = 'none';
-                        }
-                    }, 500);
 
                     console.log(`Cached ${reports.length} reports for ${date} from archive`);
                     if (typeof renderCurrentPage === 'function') {
@@ -690,7 +686,6 @@
                                     const response = await fetchWithTimeout(adjustedPath);
                                     const data = await response.json();
                                     data.filename = filename;
-                                    data.noViolationsStreak = calculateNoViolationsStreak(data.project, reportList, data);
                                     return data;
                                 } catch (error) {
                                     retries++;
@@ -711,6 +706,10 @@
                     const batchResults = await Promise.all(batchPromises);
                     reports.push(...batchResults.filter(report => report !== null));
                     updateProgress(Math.min(i + batchSize, reportsToFetch.length), reportsToFetch.length);
+                }
+
+                if (typeof setLoadingFinishing === 'function') {
+                    setLoadingFinishing('Bygger tabell...');
                 }
 
                 if (failedReports.length > 0) {
@@ -768,10 +767,6 @@
                 }
 
                 throw error;
-            } finally {
-                if (typeof removeLoadingOverlay === 'function') {
-                    removeLoadingOverlay();
-                }
             }
         }
 
@@ -1085,48 +1080,53 @@
 
         }
 
+        // Index of newest valid report per project per date, sorted newest date first.
+        // Built once per reportList so per-project streak lookups don't rescan ~100k filenames.
+        const projectReportIndexCache = new WeakMap();
+        function getProjectReportIndex(reportList) {
+            let index = projectReportIndexCache.get(reportList);
+            if (index) return index;
+
+            const byProject = new Map();
+            reportList.forEach(filename => {
+                const report = parseReportFilename(filename);
+                if (!report) return;
+
+                let reportsByDate = byProject.get(report.project);
+                if (!reportsByDate) {
+                    reportsByDate = new Map();
+                    byProject.set(report.project, reportsByDate);
+                }
+                const existing = reportsByDate.get(report.date);
+                if (!existing || report.filename > existing.filename) {
+                    reportsByDate.set(report.date, report);
+                }
+            });
+
+            index = new Map();
+            byProject.forEach((reportsByDate, project) => {
+                index.set(
+                    project,
+                    Array.from(reportsByDate.values()).sort((a, b) => b.date.localeCompare(a.date))
+                );
+            });
+            projectReportIndexCache.set(reportList, index);
+            return index;
+        }
+
+        function getProjectReportsUpToDate(projectName, reportList, selectedDate = null) {
+            const reports = getProjectReportIndex(reportList).get(projectName) || [];
+            return selectedDate ? reports.filter(report => report.date <= selectedDate) : reports;
+        }
+
         function calculateNoViolationsStreak(projectName, reportList, currentReport = null, selectedDate = null) {
     // If current report has violations, streak is always 0
     if (currentReport && currentReport.total_violations > 0) {
         return 0;
     }
 
-    const filteredReports = reportList
-        .filter(filename => !filename.includes('-FAILED.json') && !filename.includes('-SKIPPED.json')) // Exclude failed/skipped reports from streak calculation
-        .map(parseReportFilename)
-        .filter(report => report && report.project === projectName)
-        .sort((a, b) => new Date(b.date) - new Date(a.date));
-
-    if (filteredReports.length === 0) {
-        return 0;
-    }
-
-    // If selectedDate is provided, only consider reports up to and including that date
-    let reportsToConsider = filteredReports;
-    if (selectedDate) {
-        const selectedDateObj = new Date(selectedDate);
-        reportsToConsider = filteredReports.filter(report => new Date(report.date) <= selectedDateObj);
-    }
-
-    if (reportsToConsider.length === 0) {
-        return 0;
-    }
-
-    // Deduplicate reports per date - keep only the newest report for each date
-    // This is critical because sometimes there are multiple reports per project per day
-    const reportsByDate = new Map();
-    reportsToConsider.forEach(report => {
-        const dateKey = report.date;
-        const existingReport = reportsByDate.get(dateKey);
-        
-        // Keep the report with the latest filename (which corresponds to latest timestamp)
-        if (!existingReport || report.filename > existingReport.filename) {
-            reportsByDate.set(dateKey, report);
-        }
-    });
-    
-    // Convert back to array and sort by date descending
-    reportsToConsider = Array.from(reportsByDate.values()).sort((a, b) => new Date(b.date) - new Date(a.date));
+    // Newest valid report per date (FAILED/SKIPPED excluded), sorted by date descending
+    const reportsToConsider = getProjectReportsUpToDate(projectName, reportList, selectedDate);
 
     if (reportsToConsider.length === 0) {
         return 0;
@@ -1189,25 +1189,9 @@
 
         // Count days with violations up to the selected date, using the newest valid report per day.
         function calculateDaysWithViolations(projectName, reportList, selectedDate = null) {
-            const reportsByDate = new Map();
-            reportList
-                .filter(filename => !filename.includes('-FAILED.json') && !filename.includes('-SKIPPED.json'))
-                .map(parseReportFilename)
-                .filter(report => report && report.project === projectName && (!selectedDate || report.date <= selectedDate))
-                .forEach(report => {
-                    const existingReport = reportsByDate.get(report.date);
-                    if (!existingReport || report.filename > existingReport.filename) {
-                        reportsByDate.set(report.date, report);
-                    }
-                });
-
-            let daysWithViolations = 0;
-            reportsByDate.forEach(report => {
-                if (!report.filename.includes('-count-0')) {
-                    daysWithViolations++;
-                }
-            });
-            return daysWithViolations;
+            return getProjectReportsUpToDate(projectName, reportList, selectedDate)
+                .filter(report => !report.filename.includes('-count-0'))
+                .length;
         }
         
         function showReportDetails(report) {
@@ -1275,7 +1259,21 @@
             dialog.setAttribute('aria-labelledby', 'dialog-title');
 
             dialog.showModal();
-        } async function renderTable(reports, date) {
+        }
+
+        // Let the browser paint the loading state, then build the table and always hide the overlay.
+        async function renderTable(reports, date) {
+            await new Promise(resolve => requestAnimationFrame(() => setTimeout(resolve, 0)));
+            try {
+                return await renderTableContent(reports, date);
+            } finally {
+                if (typeof hideLoading === 'function') {
+                    hideLoading();
+                }
+            }
+        }
+
+        async function renderTableContent(reports, date) {
             console.log(`Rendering table for date: ${date}`); // Debugging
             const tableContainer = document.getElementById('table-container');
             tableContainer.innerHTML = '';
@@ -1830,6 +1828,9 @@
 
         // Helper function to show errors on the page
         function showError(message) {
+            if (typeof hideLoading === 'function') {
+                hideLoading();
+            }
             const errorContainer = document.getElementById('error-container');
             if (errorContainer) {
                 errorContainer.textContent = message;
