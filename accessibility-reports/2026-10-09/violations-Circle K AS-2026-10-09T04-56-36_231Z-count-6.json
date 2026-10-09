@@ -1,0 +1,360 @@
+{
+  "project": "Circle K AS",
+  "timestamp": "2026-10-09T04:56:36.231Z",
+  "url": "https://www.circlek.no/",
+  "total_violations": 6,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "description": "Ensure role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "violation_count": 17,
+      "nodes": [
+        {
+          "html": "<a href=\"/extra\" data-gtm-event=\"{\"event\": \"main_menu_click\", \"click_text\": \"extra\", \"click_url\": \"/extra\", \"menu_level\":\"1\"}\" data-href=\"/extra\" role=\"heading\" aria-level=\"2\" target=\"_self\" data-drupal-link-system-path=\"node/1141\">",
+          "target": [
+            "a[data-href$=\"extra\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/mastercard\" data-gtm-event=\"{\"event\": \"main_menu_click\", \"click_text\": \"Mastercard\", \"click_url\": \"/mastercard\", \"menu_level\":\"1\"}\" data-href=\"/mastercard\" role=\"heading\" aria-level=\"2\" data-drupal-link-system-path=\"node/640\">",
+          "target": [
+            "a[data-href$=\"mastercard\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/personkort\" data-gtm-event=\"{\"event\": \"main_menu_click\", \"click_text\": \"Personkort\", \"click_url\": \"/personkort\", \"menu_level\":\"1\"}\" data-href=\"/personkort\" role=\"heading\" aria-level=\"2\" data-drupal-link-system-path=\"node/18\">",
+          "target": [
+            "a[href$=\"personkort\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/partnere\" data-gtm-event=\"{\"event\": \"main_menu_click\", \"click_text\": \"Partnere\", \"click_url\": \"/partnere\", \"menu_level\":\"1\"}\" data-href=\"/partnere\" role=\"heading\" aria-level=\"2\" data-drupal-link-system-path=\"node/491\">",
+          "target": [
+            "a[href$=\"partnere\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/mat\" data-gtm-event=\"{&quot;event&quot;: &quot;main_menu_click&quot;, &quot;click_text&quot;: &quot;Mat&quot;, &quot;click_url&quot;: &quot;/mat&quot;, &quot;menu_level&quot;:&quot;1&quot;}\" data-href=\"/mat\" role=\"heading\" aria-level=\"2\" data-drupal-link-system-path=\"node/27\">Mat</a>",
+          "target": [
+            "a[data-href$=\"mat\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/drikke\" data-gtm-event=\"{\"event\": \"main_menu_click\", \"click_text\": \"Drikke\", \"click_url\": \"/drikke\", \"menu_level\":\"1\"}\" data-href=\"/drikke\" role=\"heading\" aria-level=\"2\" data-drupal-link-system-path=\"node/36\">",
+          "target": [
+            "a[href$=\"drikke\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/koppen\" data-gtm-event=\"{\"event\": \"main_menu_click\", \"click_text\": \"Koppen\", \"click_url\": \"/koppen\", \"menu_level\":\"1\"}\" data-href=\"/koppen\" role=\"heading\" aria-level=\"2\" data-drupal-link-system-path=\"node/59\">",
+          "target": [
+            "li:nth-child(3) > a[data-href$=\"koppen\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/produkter\" data-gtm-event=\"{\"event\": \"main_menu_click\", \"click_text\": \"Produkter\", \"click_url\": \"/produkter\", \"menu_level\":\"1\"}\" data-href=\"/produkter\" role=\"heading\" aria-level=\"2\" data-drupal-link-system-path=\"node/60\">",
+          "target": [
+            "a[href$=\"produkter\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/tjenester\" data-gtm-event=\"{\"event\": \"main_menu_click\", \"click_text\": \"Tjenester\", \"click_url\": \"/tjenester\", \"menu_level\":\"1\"}\" data-href=\"/tjenester\" role=\"heading\" aria-level=\"2\" data-drupal-link-system-path=\"node/140\">",
+          "target": [
+            "a[href$=\"tjenester\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/drivstoff\" data-gtm-event=\"{\"event\": \"main_menu_click\", \"click_text\": \"Drivstoff\", \"click_url\": \"/drivstoff\", \"menu_level\":\"1\"}\" data-href=\"/drivstoff\" role=\"heading\" aria-level=\"2\" data-drupal-link-system-path=\"node/19\">",
+          "target": [
+            "li:nth-child(1) > a[href$=\"drivstoff\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/lading\" data-gtm-event=\"{\"event\": \"main_menu_click\", \"click_text\": \"Lading av elbil \", \"click_url\": \"/lading\", \"menu_level\":\"1\"}\" data-href=\"/lading\" role=\"heading\" aria-level=\"2\" target=\"_self\" data-drupal-link-system-path=\"node/786\">",
+          "target": [
+            "a[data-drupal-link-system-path=\"node/786\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/bilvask\" data-gtm-event=\"{\"event\": \"main_menu_click\", \"click_text\": \"Bilvask\", \"click_url\": \"/bilvask\", \"menu_level\":\"1\"}\" data-href=\"/bilvask\" role=\"heading\" aria-level=\"2\" target=\"_self\" data-drupal-link-system-path=\"node/20\">",
+          "target": [
+            "li:nth-child(3) > a[href$=\"bilvask\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/tilhengerutleie\" data-gtm-event=\"{\"event\": \"main_menu_click\", \"click_text\": \"Tilhengerutleie\", \"click_url\": \"/tilhengerutleie\", \"menu_level\":\"1\"}\" data-href=\"/tilhengerutleie\" role=\"heading\" aria-level=\"2\" data-drupal-link-system-path=\"node/23\">",
+          "target": [
+            "a[data-href$=\"tilhengerutleie\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/motorolje\" data-gtm-event=\"{\"event\": \"main_menu_click\", \"click_text\": \"Motorolje\", \"click_url\": \"/motorolje\", \"menu_level\":\"1\"}\" data-href=\"/motorolje\" role=\"heading\" aria-level=\"2\" data-drupal-link-system-path=\"node/24\">",
+          "target": [
+            "a[href$=\"motorolje\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/barekraftig-fremtid\" data-gtm-event=\"{\"event\": \"main_menu_click\", \"click_text\": \"Bærekraftig fremtid\", \"click_url\": \"/barekraftig-fremtid\", \"menu_level\":\"1\"}\" data-href=\"/barekraftig-fremtid\" role=\"heading\" aria-level=\"2\" data-drupal-link-system-path=\"node/30\">",
+          "target": [
+            "a[href$=\"barekraftig-fremtid\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/helse-milj%C3%B8-og...\" data-gtm-event=\"{\"event\": \"main_menu...\" data-href=\"/helse-milj%C3%B8-og...\" role=\"heading\" aria-level=\"2\" data-drupal-link-sys...=\"node/66\">",
+          "target": [
+            "a[data-href=\"/helse-milj%C3%B8-og-sikkerhet\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        },
+        {
+          "html": "<a href=\"/aktivmotkreft\" data-gtm-event=\"{\"event\": \"main_menu_click\", \"click_text\": \"Aktiv mot kreft\", \"click_url\": \"/aktivmotkreft\", \"menu_level\":\"1\"}\" data-href=\"/aktivmotkreft\" role=\"heading\" aria-level=\"2\" data-drupal-link-system-path=\"node/463\">",
+          "target": [
+            "a[href$=\"aktivmotkreft\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role heading is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button class=\"uk-modal-close-default\" type=\"button\" uk-close=\"\"></button>",
+          "target": [
+            ".uk-modal-close-default"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a id=\"CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection\" class=\"cb-button cb-default cb-align-center cb-text-bold\">Tillat utvalgt</a>",
+          "target": [
+            "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.75 (foreground color: #909090, background color: #eeeeee, font size: 11.3pt (15px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a id=\"CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll\" class=\"cb-button cb-primary cb-align-center cb-text-bold\">Tillat alle cookies</a>",
+          "target": [
+            "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.06 (foreground color: #f7f5f2, background color: #4cc36c, font size: 11.3pt (15px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<a href=\"#cb-details\" cb-toggle=\"\" class=\"cb-details cb-align-center\">DETALJER <span class=\"cb-icon\"><svg width=\"14\" height=\"10\" viewBox=\"0 0 14 10\" data-svg=\"chevron-down\"><polyline fill=\"none\" stroke=\"#313131\" stroke-width=\"2\" points=\"2 2 7 7 12 2\"></polyline></svg></span></a>",
+          "target": [
+            ".cb-details"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.25 (foreground color: #4cc36c, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a class=\"uk-position-center-left uk-position-small uk-hidden-hover\" href=\"#\" uk-slidenav-previous=\"\" uk-slider-item=\"previous\" tabindex=\"0\"><span hidden=\"\">Previous slide</span></a>",
+          "target": [
+            ".uk-position-center-left"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"uk-position-center-right uk-position-small uk-hidden-hover\" href=\"#\" uk-slidenav-next=\"\" uk-slider-item=\"next\" tabindex=\"0\"><span hidden=\"\">Next slide</span></a>",
+          "target": [
+            ".uk-position-center-right"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"slide-previous uk-position-center-left-out uk-position-small uk-hidden-hover\" href=\"#\" uk-slider-item=\"previous\" uk-icon=\"ratio: 2; icon: chevron-left\"><span hidden=\"\">Previous slide</span></a>",
+          "target": [
+            ".slide-previous"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a class=\"slide-next uk-position-center-right-out uk-position-small uk-hidden-hover\" href=\"#\" uk-slider-item=\"next\" uk-icon=\"ratio: 2; icon: chevron-right\"><span hidden=\"\">Next slide</span></a>",
+          "target": [
+            ".slide-next"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<div id=\"cookie-bot\" class=\"cb-modal cb-modal-open\" lang=\"nb\" dir=\"ltr\" ng-non-bindable=\"\" name=\"cookie-bot\" style=\"display: block; font-size: 0.9375rem;\">",
+          "target": [
+            "#cookie-bot"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<a href=\"#main-content\" class=\"visually-hidden focusable\">\n      Hopp til hovedinnhold\n    </a>",
+          "target": [
+            ".focusable"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"d-region uk-container uk-container-large bottom-region\">",
+          "target": [
+            ".bottom-region"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    },
+    {
+      "id": "role-img-alt",
+      "impact": "serious",
+      "description": "Ensure [role=\"img\"] and [role=\"image\"] elements have alternative text",
+      "help": "[role=\"img\"] and [role=\"image\"] elements must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/role-img-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<span uk-icon=\"icon: facebook;\" role=\"img\" aria-hidden=\"false\"></span>",
+          "target": [
+            "span[uk-icon=\"icon: facebook;\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<span uk-icon=\"icon: instagram;\" role=\"img\" aria-hidden=\"false\"></span>",
+          "target": [
+            "span[uk-icon=\"icon: instagram;\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<span uk-icon=\"icon: linkedin;\" role=\"img\" aria-hidden=\"false\"></span>",
+          "target": [
+            "span[uk-icon=\"icon: linkedin;\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<span uk-icon=\"icon: youtube;\" role=\"img\" aria-hidden=\"false\"></span>",
+          "target": [
+            "span[uk-icon=\"icon: youtube;\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    }
+  ]
+}
