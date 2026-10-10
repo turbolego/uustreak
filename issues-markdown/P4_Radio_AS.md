@@ -1,6 +1,6 @@
 # WCAG Violations Report for P4 Radio AS
 
-**Timestamp:** 2026-10-09T05:09:06.948Z
+**Timestamp:** 2026-10-10T08:11:12.542Z
 **URL:** [https://www.lydenavradio.no/p4/](https://www.lydenavradio.no/p4/)
 **Total Violations:** 7
 
@@ -162,11 +162,11 @@
 #### Affected Elements:
 
 - **Target:** `.bulletin-box.compact[data-v-b6f8812b=""] > .content[data-v-b6f8812b=""] > .title-container[data-v-b6f8812b=""] > h1[data-v-b6f8812b=""]`
-  - **HTML:** `<h1 data-v-b6f8812b="">P4-nyhetene kl. 06:30 <span data-v-b6f8812b="">med Anne Siri Nørstebø</span></h1>`
+  - **HTML:** `<h1 data-v-b6f8812b="">P4-nyhetene kl. 09:00 <span data-v-b6f8812b="">med Merete Vikre</span></h1>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 1.71 (foreground color: #02172b, background color: #483c3f, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.bulletin-box.compact[data-v-b6f8812b=""] > .content[data-v-b6f8812b=""] > .title-container[data-v-b6f8812b=""] > h1[data-v-b6f8812b=""] > span[data-v-b6f8812b=""]`
-  - **HTML:** `<span data-v-b6f8812b="">med Anne Siri Nørstebø</span>`
+  - **HTML:** `<span data-v-b6f8812b="">med Merete Vikre</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 1.71 (foreground color: #02172b, background color: #483c3f, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.bulletin-box.compact[data-v-b6f8812b=""] > .content[data-v-b6f8812b=""] > .info[data-v-b6f8812b=""] > span[data-v-b6f8812b=""]`
@@ -186,7 +186,7 @@
 #### Affected Elements:
 
 - **Target:** `img[width="100"]`
-  - **HTML:** `<img data-v-746d67de="" src="https://ddjh0q34m0xak.cloudfront.net/mmo/MusicLibrary/8a710a97-5593-41ff-84a2-4be76ab97244.jpg?w=200&amp;ar=1x1" width="100" height="100" style="opacity: 1;">`
+  - **HTML:** `<img data-v-746d67de="" src="https://ddjh0q34m0xak.cloudfront.net/mmo/MusicLibrary/26d6ce4a-6e2c-4fe6-a2fc-efb4a277689e.jpg?w=200&amp;ar=1x1" width="100" height="100" style="opacity: 1;">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 
@@ -238,7 +238,7 @@
 #### Affected Elements:
 
 - **Target:** `.image-container[data-v-4af17d0f=""] > a[data-v-4af17d0f=""]`
-  - **HTML:** `<a href="/podkast/5/p4s-radiofrokost/episode/345472/eirin-har-blitt-hundeeiernes-rosa-parks" class="" data-v-4af17d0f="">`
+  - **HTML:** `<a href="/podkast/4/misjonen-med-antonsen-og-golden/episode/345581/budsjettet-norwegian-vs-haaland-koranskole" class="" data-v-4af17d0f="">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 - **Target:** `.content-box.compact[data-v-d583c235=""] > .image-link[data-v-d583c235=""]`

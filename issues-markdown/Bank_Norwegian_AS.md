@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bank Norwegian AS
 
-**Timestamp:** 2026-10-09T04:54:42.026Z
+**Timestamp:** 2026-10-10T08:09:09.855Z
 **URL:** [https://www.banknorwegian.no/](https://www.banknorwegian.no/)
 **Total Violations:** 2
 
@@ -18,7 +18,7 @@
 #### Affected Elements:
 
 - **Target:** `.MuiPaper-elevation24`
-  - **HTML:** `<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperWidthSm bnmui-s05yl0" role="dialog" aria-labelledby="_r_o_" aria-modal="true" tabindex="-1" data-mui-focusable="" style="--Pa…`
+  - **HTML:** `<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperWidthSm bnmui-s05yl0" role="dialog" aria-labelledby="_r_1_" aria-modal="true" tabindex="-1" data-mui-focusable="" style="--Pa…`
   - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
 
 

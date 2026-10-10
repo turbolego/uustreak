@@ -1,10 +1,26 @@
 # WCAG Violations Report for Teknisk Ukeblad Media AS
 
-**Timestamp:** 2026-10-09T05:13:57.561Z
+**Timestamp:** 2026-10-10T08:26:40.450Z
 **URL:** [https://www.tu.no/](https://www.tu.no/)
-**Total Violations:** 5
+**Total Violations:** 7
 
 ## Violation Details
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Source:** Embedded code from Annonser
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `#google_ads_iframe_\/33423651\/tu_f_toppbanner_0, #cbb`
+  - **HTML:** `<div id="cbb" class="cbb" tabindex="0" role="button">`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -21,17 +37,17 @@
   - **HTML:** `<span class="ad-label">Annonse</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#sp_message_iframe_1517700, .acceptButton`
-  - **HTML:** `<button title="Godta" aria-label="Godta" class="message-component me..." style="opacity: 1; padding:...">`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.24 (foreground color: #ffffff, background color: #1890ff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+- **Target:** `.row.large-12.small-12:nth-child(13) > .display-label.google-ad.disable-initial-load > .ad-label`
+  - **HTML:** `<span class="ad-label">Annonse</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#sp_message_iframe_1517700, .rejectButton`
-  - **HTML:** `<button title="Avvis alle" aria-label="Avvis alle" class="message-component me..." style="opacity: 1; padding:...">`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.24 (foreground color: #ffffff, background color: #1890ff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+- **Target:** `.row.large-12.small-12:nth-child(24) > .display-label.google-ad.disable-initial-load > .ad-label`
+  - **HTML:** `<span class="ad-label">Annonse</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `#sp_message_iframe_1517700, .customiseButton`
-  - **HTML:** `<button title="Tilpass" aria-label="Tilpass" class="message-component me..." style="opacity: 1; padding:...">`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.24 (foreground color: #ffffff, background color: #1890ff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+- **Target:** `.row.large-12.small-12:nth-child(27) > .display-label.google-ad.disable-initial-load > .ad-label`
+  - **HTML:** `<span class="ad-label">Annonse</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
 
 ### Heading levels should only increase by one
@@ -61,9 +77,17 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 5
+- **Count:** 7
 
 #### Affected Elements:
+
+- **Target:** `a[data-k5a-url="https://www.tu.no/a/7144750"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"][pinger-seen="true"]`
+  - **HTML:** `<img itemprop="image" src="https://image.tu.no/?imageId=2812328&amp;whRatio=1&amp;width=90&amp;height=90" pinger-seen="true">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `a[data-k5a-url="https://www.digi.no/a/7145065"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"][pinger-seen="true"]`
+  - **HTML:** `<img itemprop="image" src="https://image.tu.no/?imageId=7142466&amp;y=22.94&amp;cropw=66&amp;whRatio=0.67&amp;x=18.58&amp;bbRatio=1&amp;croph=66.01&amp;width=90&amp;height=90" pinger-seen="true">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 - **Target:** `a[data-k5a-url="https://www.tu.no/a/7144000"] > .bylines > .byline[itemtype="http://schema.org/Person"][itemscope=""] > .content > figure > img[itemprop="image"][pinger-seen="true"]`
   - **HTML:** `<img itemprop="image" src="https://image.tu.no/?imageId=2812328&amp;whRatio=1&amp;width=90&amp;height=90" pinger-seen="true">`
@@ -102,6 +126,22 @@
   - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
 
 
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Source:** Embedded code from Annonser
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `#google_ads_iframe_\/33423651\/tu_f_toppbanner_0, #aw0`
+  - **HTML:** `<a id="aw0" target="_blank" href="https://googleads.g...." onfocus="ss('aw0')" onmousedown="st('aw0')" onmouseover="ss('aw0')" onclick="ha('aw0')">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
@@ -109,7 +149,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 232
+- **Count:** 241
 
 #### Affected Elements:
 
@@ -121,19 +161,55 @@
   - **HTML:** `<span class="ad-label">Annonse</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-k5a-url="https://www.tu.no/a/7143311"] > .media`
-  - **HTML:** `<div class="media ">`
+- **Target:** `a[data-k5a-url="https://www.tu.no/a/7141811"] > .t38.headline[itemprop="headline"]`
+  - **HTML:** `<h2 itemprop="headline" class="headline t38" style="">Skal du ut og fly? Høyden måles trolig med en norsk brikke </h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-k5a-url="https://www.digi.no/a/7143928"] > .t24.below.kicker`
+  - **HTML:** `<div style="" class="kicker below t24"> Midt i Grønland-kaoset: </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-k5a-url="https://www.digi.no/a/7143928"] > .t36.headline[itemprop="headline"]`
+  - **HTML:** `<h2 itemprop="headline" class="headline t36" style="">Bak kulissene forhandlet det danske forsvaret med Palantir </h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(2)`
+  - **HTML:** `<div data-element-guid="bddb82ac-47aa-4217-b6be-7859a96061fa" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(3)`
+  - **HTML:** `<div data-element-guid="8dc3720c-b5f4-4f5c-8532-048819d29711" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-k5a-url="https://www.tu.no/a/7144774"] > .desktop-floatLeft.media`
+  - **HTML:** `<div class="media desktop-floatLeft">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-k5a-url="https://www.tu.no/a/7144774"] > .t40.tm22.headline`
+  - **HTML:** `<h2 itemprop="headline" class="headline t40 tm22" style="">Ruter har ikke informasjonen som trengs for å planlegge evakuering </h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-k5a-url="https://www.digi.no/a/7145073"] > .below.kicker`
+  - **HTML:** `<div style="" class="kicker below "> Telenor i beredskap:&nbsp; </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.tm34`
+  - **HTML:** `<h2 itemprop="headline" class="headline t29 tm34" style="">– Vil ta tid å avklare&nbsp; </h2>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `a[data-k5a-url="https://www.tu.no/a/7143311"] > .desktop-floatLeft.media`
+  - **HTML:** `<div class="media desktop-floatLeft">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-k5a-url="https://www.digi.no/a/7144464"] > .below.kicker`
   - **HTML:** `<div style="" class="kicker below "> Vil styrke den digitale handlefriheten: </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-k5a-url="https://www.digi.no/a/7144464"] > .headline[itemprop="headline"]`
-  - **HTML:** `<h2 itemprop="headline" class="headline " style="">&nbsp;– Norge må ha flere bein å stå på </h2>`
+- **Target:** `.tm26.t37.headline`
+  - **HTML:** `<h2 itemprop="headline" class="headline t37 tm26" style="">&nbsp;– Må ha flere bein å stå på </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(2)`
+- **Target:** `.row.large-12.small-12:nth-child(9)`
   - **HTML:** `<div data-element-guid="6c323fd3-919c-41d6-ac3c-7b08c8f8795a" class="row small-12 large-12" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -157,20 +233,24 @@
   - **HTML:** `<div style="" class="kicker below t22"> Streiken fortsetter: </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-k5a-url="https://www.tu.no/a/7144168"] > .t40.headline[itemprop="headline"]`
-  - **HTML:** `<h2 itemprop="headline" class="headline t40" style="">&nbsp;Lokførerne får støtte fra den andre siden av kloden </h2>`
+- **Target:** `a[data-k5a-url="https://www.tu.no/a/7144168"] > .t40.tm22.headline`
+  - **HTML:** `<h2 itemprop="headline" class="headline t40 tm22" style="">&nbsp;Lokførerne får støtte fra Japan </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `article[data-instance="7143510"]`
+- **Target:** `article[data-tag="debatt,kunstig intelligens"]`
   - **HTML:** `<article data-element-guid="2747e1cd-7a2b-4ca0-8113-f5a421f845e7" class="column small-12 large-7 small-abs-12 large-abs-7 " data-site-alias="digi" data-section="debatt" data-tag="debatt,kunstig intelligens" data-instance="7143510" itemscop…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `a[data-k5a-url="https://www.tu.no/a/7144622"] > .t38.tm25.headline`
-  - **HTML:** `<h2 itemprop="headline" class="headline t38 tm25" style="">Forsvarets soldater ble filmet av kinesiske leiebiler </h2>`
+- **Target:** `.t38.tm23.headline`
+  - **HTML:** `<h2 itemprop="headline" class="headline t38 tm23" style="">Ble filmet av kinesiske leiebiler </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `article[data-tag="samferdsel,debatt"]`
   - **HTML:** `<article data-element-guid="edb770e0-69a0-4f35-8cca-aa2847f317da" class="column small-12 large-6 small-abs-12 large-abs-6 " data-site-alias="tu" data-section="debatt" data-tag="samferdsel,debatt" data-instance="7144727" itemscope="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(13) > .display-label.google-ad.disable-initial-load > .ad-label`
+  - **HTML:** `<span class="ad-label">Annonse</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-k5a-url="https://www.tu.no/a/7144712"] > .desktop-floatLeft.media`
@@ -178,15 +258,23 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-k5a-url="https://www.tu.no/a/7144712"] > .below.kicker`
-  - **HTML:** `<div style="" class="kicker below "> Hvem har ansvaret for busser og sjåfører ved krise og krig?&nbsp; </div>`
+  - **HTML:** `<div style="" class="kicker below "> Fire år uten svar: </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.t46.tm22.headline`
-  - **HTML:** `<h2 itemprop="headline" class="headline t46 tm22" style="">Fire år uten svar – nå er saken sendt til et annet departement </h2>`
+  - **HTML:** `<h2 itemprop="headline" class="headline t46 tm22" style="">Hvem har ansvaret for busser og sjåfører ved krise og krig? </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(10)`
+- **Target:** `.row.large-12.small-12:nth-child(15)`
   - **HTML:** `<div data-element-guid="aaf5fb0f-1954-453f-a412-eb3ba734a0fa" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(16)`
+  - **HTML:** `<div data-element-guid="033d3d63-4a12-4008-959d-3e4b2faabfb8" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.adZone-parallax > .ad-label`
+  - **HTML:** `<span class="ad-label">Annonse</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-k5a-url="https://www.digi.no/a/7144018"] > .t20.below.kicker`
@@ -201,8 +289,8 @@
   - **HTML:** `<div style="" class="kicker below t21"> Norgespris: </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.t45.tm25.headline`
-  - **HTML:** `<h2 itemprop="headline" class="headline t45 tm25" style="">Folk velger bort varmepumpe </h2>`
+- **Target:** `.t45.tm22.headline`
+  - **HTML:** `<h2 itemprop="headline" class="headline t45 tm22" style="">Folk velger bort varmepumpe </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-k5a-url="https://www.tu.no/a/7144272"] > .media`
@@ -219,10 +307,6 @@
 
 - **Target:** `.align-left.mobile_text_align_align-left.t37`
   - **HTML:** `<h2 itemprop="headline" class="headline t37 align-left mobile_text_align_align-left" style="">– Ikke enkelt å bli klok på hva regjeringen faktisk skriver </h2>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.row.large-12.small-12:nth-child(13) > .display-label.google-ad.disable-initial-load > .ad-label`
-  - **HTML:** `<span class="ad-label">Annonse</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-k5a-url="https://www.tu.no/a/7143593"] > .t38.color_mobile_no_bg_color.headline`
@@ -257,11 +341,7 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t41 tm25 color_mobile_no_bg_color align-left mobile_text_align_align-left" style="">Ny milliardsprekk for Melkøya-elektrifisering </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(16)`
-  - **HTML:** `<div data-element-guid="033d3d63-4a12-4008-959d-3e4b2faabfb8" class="row small-12 large-12" style="">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.adZone-parallax > .ad-label`
+- **Target:** `.row.large-12.small-12:nth-child(24) > .display-label.google-ad.disable-initial-load > .ad-label`
   - **HTML:** `<span class="ad-label">Annonse</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -285,8 +365,12 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t67 tm40" style="">Slutter på dagen </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(20)`
+- **Target:** `.row.large-12.small-12:nth-child(26)`
   - **HTML:** `<div data-element-guid="3995e50d-a098-4359-a74c-3fe848c9853a" class="row small-12 large-12" style="">`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.row.large-12.small-12:nth-child(27) > .display-label.google-ad.disable-initial-load > .ad-label`
+  - **HTML:** `<span class="ad-label">Annonse</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-k5a-url="https://www.tu.no/a/7142874"] > .below.kicker`
@@ -297,8 +381,8 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t46 tm29" style="">&nbsp;– Behovet for etterretning har blitt vesentlig større </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `article[data-tag="equinor,utenriks,energi,ntb"]`
-  - **HTML:** `<article data-element-guid="e7e337c6-6983-4fb5-83be-5b64861ab09b" class="column small-12 large-12 small-abs-12 large-abs-5 " data-site-alias="tu" data-section="energi" data-tag="equinor,utenriks,energi,ntb" data-instance="7144142" itemscop…`
+- **Target:** `article[data-tag="ntb,energi,utenriks,equinor"]`
+  - **HTML:** `<article data-element-guid="e7e337c6-6983-4fb5-83be-5b64861ab09b" class="column small-12 large-12 small-abs-12 large-abs-5 " data-site-alias="tu" data-section="energi" data-tag="ntb,energi,utenriks,equinor" data-instance="7144142" itemscop…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-k5a-url="https://www.digi.no/a/7144043"] > .media`
@@ -317,15 +401,11 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t52" style="">Lønner solceller seg mest med eller uten et batteri? </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `article[data-tag="energi,eu,gass"]`
-  - **HTML:** `<article data-element-guid="1753861a-c0c1-4f9e-b3e8-5f1d704f2f04" class="column small-12 large-4 small-abs-12 large-abs-4 " data-site-alias="tu" data-section="energi" data-tag="energi,eu,gass" data-instance="7143974" itemscope="">`
+- **Target:** `article[data-tag="gass,eu,energi"]`
+  - **HTML:** `<article data-element-guid="1753861a-c0c1-4f9e-b3e8-5f1d704f2f04" class="column small-12 large-4 small-abs-12 large-abs-4 " data-site-alias="tu" data-section="energi" data-tag="gass,eu,energi" data-instance="7143974" itemscope="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(24) > .display-label.google-ad.disable-initial-load > .ad-label`
-  - **HTML:** `<span class="ad-label">Annonse</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.row.large-12.small-12:nth-child(25)`
+- **Target:** `.row.large-12.small-12:nth-child(30)`
   - **HTML:** `<div data-element-guid="553eab7a-fdfc-45db-be22-3001816213a0" class="row small-12 large-12" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -337,15 +417,11 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t42" style="">– Det er som lungenes betydning for kroppen </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(26) > .columns.large-6.large-abs-6`
+- **Target:** `.row.large-12.small-12:nth-child(31) > .columns.large-6.large-abs-6`
   - **HTML:** `<div data-element-guid="1170448d-b94b-4b48-b921-5646a568adc6" class="columns small-12 large-6 small-abs-12 large-abs-6">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(27) > .display-label.google-ad.disable-initial-load > .ad-label`
-  - **HTML:** `<span class="ad-label">Annonse</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.row.large-12.small-12:nth-child(28)`
+- **Target:** `.row.large-12.small-12:nth-child(32)`
   - **HTML:** `<div data-element-guid="794cf678-48ee-4a99-94ab-b46c29341674" class="row small-12 large-12" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -365,7 +441,7 @@
   - **HTML:** `<div class="container" id="status-container"> <div class="loading" id="status-message">Initialiserer...</div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(29) > .large-3.columns.large-abs-3 > .row.large-12.small-12 > .text_singleline.large-abs-3.large-12`
+- **Target:** `.row.large-12.small-12:nth-child(33) > .large-3.columns.large-abs-3 > .row.large-12.small-12 > .text_singleline.large-abs-3.large-12`
   - **HTML:** `<div data-element-guid="33e05b0a-011b-4bb3-a5e8-0d5bd7e3015e" class="column text_singleline small-12 large-12 small-abs-12 large-abs-3">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -409,7 +485,7 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t32" style="">Nå kan mysteriet være løst </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(33)`
+- **Target:** `.row.large-12.small-12:nth-child(37)`
   - **HTML:** `<div data-element-guid="1360a177-29a4-441a-881e-40b001229633" class="row small-12 large-12" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -425,7 +501,7 @@
   - **HTML:** `<div class="container" id="status-container"> <div class="loading" id="status-message">Initialiserer...</div> </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(34) > .large-3.columns.large-abs-3 > .row.large-12.small-12 > .text_singleline.large-abs-3.large-12`
+- **Target:** `.row.large-12.small-12:nth-child(38) > .large-3.columns.large-abs-3 > .row.large-12.small-12 > .text_singleline.large-abs-3.large-12`
   - **HTML:** `<div data-element-guid="5d21feb3-74d6-4fb2-af52-68754d423e14" class="column text_singleline small-12 large-12 small-abs-12 large-abs-3">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -437,15 +513,15 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t29" style="">– Nye aksjonister har stanset gruvedrift ved Førdefjorden </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `article[data-tag="innenriks,jernbane,samferdsel"]`
-  - **HTML:** `<article data-element-guid="5ec1c46c-0811-489e-b43c-226883db9011" class="column small-12 large-4 small-abs-12 large-abs-4 " data-site-alias="tu" data-section="samferdsel" data-tag="innenriks,jernbane,samferdsel" data-instance="7143284" ite…`
+- **Target:** `article[data-tag="innenriks,samferdsel,jernbane"]`
+  - **HTML:** `<article data-element-guid="5ec1c46c-0811-489e-b43c-226883db9011" class="column small-12 large-4 small-abs-12 large-abs-4 " data-site-alias="tu" data-section="samferdsel" data-tag="innenriks,samferdsel,jernbane" data-instance="7143284" ite…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.tm38`
   - **HTML:** `<h2 itemprop="headline" class="headline t32 tm38" style="">Utelukker ikke å sende datasentre bakerst i strømkøen </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(36)`
+- **Target:** `.row.large-12.small-12:nth-child(40)`
   - **HTML:** `<div data-element-guid="f5b03ffa-7256-4758-b618-07911925a4e2" class="row small-12 large-12" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -469,15 +545,15 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t45" style="">Datasenterboomen gir milliardinntekter – men få nye arbeidsplasser </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(39)`
+- **Target:** `.row.large-12.small-12:nth-child(43)`
   - **HTML:** `<div data-element-guid="edafa385-ed5d-418b-b9d7-73fe587afcd3" class="row small-12 large-12" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(40)`
+- **Target:** `.row.large-12.small-12:nth-child(44)`
   - **HTML:** `<div data-element-guid="7f6fec14-c58a-4a86-857e-d69c7087a56a" class="row small-12 large-12" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(41)`
+- **Target:** `.row.large-12.small-12:nth-child(45)`
   - **HTML:** `<div data-element-guid="76827d2f-113e-471b-a69c-f6e43b232918" class="row small-12 large-12" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -501,7 +577,7 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t39 tm22" style="">Reaktordrevne skip kan komme til Norge lenge før kjernekraft på land </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(44)`
+- **Target:** `.row.large-12.small-12:nth-child(48)`
   - **HTML:** `<div data-element-guid="94239afd-e7bb-4e1b-beb9-7aa5db5accdb" class="row small-12 large-12" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -565,8 +641,8 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t30 tm22" style="">Vi bruker langt mindre andel av inntekten vår </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `article[data-tag="kommentar,nito,arbeidsliv"]`
-  - **HTML:** `<article data-element-guid="14642fee-8f94-4c0d-8385-c07676ff7f09" class="column small-12 large-6 small-abs-12 large-abs-6 " data-site-alias="tu" data-section="kommentar" data-tag="kommentar,nito,arbeidsliv" data-instance="7141083" itemscop…`
+- **Target:** `article[data-tag="arbeidsliv,nito,kommentar"]`
+  - **HTML:** `<article data-element-guid="14642fee-8f94-4c0d-8385-c07676ff7f09" class="column small-12 large-6 small-abs-12 large-abs-6 " data-site-alias="tu" data-section="kommentar" data-tag="arbeidsliv,nito,kommentar" data-instance="7141083" itemscop…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-k5a-url="https://www.tu.no/a/7141633"] > .media`
@@ -582,7 +658,7 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `article[data-instance="7141950"]`
-  - **HTML:** `<article data-element-guid="1ad5c3f3-0b7c-4c66-ab56-36a2d48e7c27" class="column small-12 large-8 small-abs-12 large-abs-8 " data-site-alias="tu" data-section="industri" data-tag="industri,vianode,sirkulær økonomi,litium-ion-batterier,faam"…`
+  - **HTML:** `<article data-element-guid="1ad5c3f3-0b7c-4c66-ab56-36a2d48e7c27" class="column small-12 large-8 small-abs-12 large-abs-8 " data-site-alias="tu" data-section="industri" data-tag="litium-ion-batterier,industri,faam,sirkulær økonomi,vianode"…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-k5a-url="https://www.digi.no/a/7141845"] > .t20.below.kicker`
@@ -593,8 +669,8 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t33 tm23" style="">– Som å beskrive norsk oljepolitikk med data fra 1969 </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `article[data-instance="7140962"]`
-  - **HTML:** `<article data-element-guid="2b6f3c2b-770d-4889-b6f8-9de1869c09e5" class="column small-12 large-4 small-abs-12 large-abs-4 " data-site-alias="tu" data-section="debatt" data-tag="debatt,kunstig intelligens" data-instance="7140962" itemscope=…`
+- **Target:** `article[data-tag="kunstig intelligens,debatt"]`
+  - **HTML:** `<article data-element-guid="2b6f3c2b-770d-4889-b6f8-9de1869c09e5" class="column small-12 large-4 small-abs-12 large-abs-4 " data-site-alias="tu" data-section="debatt" data-tag="kunstig intelligens,debatt" data-instance="7140962" itemscope=…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-k5a-url="https://www.tu.no/a/7141917"] > .mobile-floatLeft.media`
@@ -605,20 +681,20 @@
   - **HTML:** `<div style="" class="kicker below t17 tm17"> Davvi vindkraftverk: </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.t29.tm25.headline`
+- **Target:** `.tm25.t29.headline`
   - **HTML:** `<h2 itemprop="headline" class="headline t29 tm25" style="">Opphever NVEs avslag </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `article[data-tag="klima,samferdsel"]`
-  - **HTML:** `<article data-element-guid="eaac2f2a-63b8-4626-9f87-c68beaf4ffb8" class="column small-12 large-4 small-abs-12 large-abs-4 " data-site-alias="tu" data-section="samferdsel" data-tag="klima,samferdsel" data-instance="5704052" itemscope="">`
+- **Target:** `article[data-tag="samferdsel,klima"]`
+  - **HTML:** `<article data-element-guid="eaac2f2a-63b8-4626-9f87-c68beaf4ffb8" class="column small-12 large-4 small-abs-12 large-abs-4 " data-site-alias="tu" data-section="samferdsel" data-tag="samferdsel,klima" data-instance="5704052" itemscope="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `article[data-tag="industri,eu"]`
-  - **HTML:** `<article data-element-guid="99c5bf78-0cf2-4576-9b21-34e5661c64c9" class="column small-12 large-8 small-abs-12 large-abs-8 " data-site-alias="tu" data-section="industri" data-tag="industri,eu" data-instance="7141305" itemscope="">`
+- **Target:** `article[data-tag="eu,industri"]`
+  - **HTML:** `<article data-element-guid="99c5bf78-0cf2-4576-9b21-34e5661c64c9" class="column small-12 large-8 small-abs-12 large-abs-8 " data-site-alias="tu" data-section="industri" data-tag="eu,industri" data-instance="7141305" itemscope="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `article[data-instance="7142185"]`
-  - **HTML:** `<article data-element-guid="d6c2b445-37c8-4760-9d50-fc88351e8d73" class="column small-12 large-12 small-abs-12 large-abs-4 " data-site-alias="tu" data-section="industri" data-tag="gruvedrift,førdefjorden,industri,nordic mining" data-instan…`
+  - **HTML:** `<article data-element-guid="d6c2b445-37c8-4760-9d50-fc88351e8d73" class="column small-12 large-12 small-abs-12 large-abs-4 " data-site-alias="tu" data-section="industri" data-tag="nordic mining,industri,gruvedrift,førdefjorden" data-instan…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-k5a-url="https://www.digi.no/a/5705943"] > .t27.headline[itemprop="headline"]`
@@ -637,7 +713,7 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t31 tm25" style="">Nordic Mining-sjefen slutter på dagen </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(53)`
+- **Target:** `.row.large-12.small-12:nth-child(57)`
   - **HTML:** `<div data-element-guid="2ad6d0d6-3708-47d8-96fe-0180b44f306b" class="row small-12 large-12" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -657,7 +733,7 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t33 tm27" style="">Årsaken til F-16-styrt er klar </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(55)`
+- **Target:** `.row.large-12.small-12:nth-child(59)`
   - **HTML:** `<div data-element-guid="e3c3d518-efbd-4027-bc58-9e0061f1deb3" class="row small-12 large-12" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -673,8 +749,8 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t31" style="">– Trolig den største saken hittil i Norge </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `article[data-tag="it,datasenter"]`
-  - **HTML:** `<article data-element-guid="fc67d3c1-54e0-40a5-bcfb-cdd2cacfa5ed" class="column small-12 large-4 small-abs-12 large-abs-4 " data-site-alias="tu" data-section="it" data-tag="it,datasenter" data-instance="7141819" itemscope="">`
+- **Target:** `article[data-tag="datasenter,it"]`
+  - **HTML:** `<article data-element-guid="fc67d3c1-54e0-40a5-bcfb-cdd2cacfa5ed" class="column small-12 large-4 small-abs-12 large-abs-4 " data-site-alias="tu" data-section="it" data-tag="datasenter,it" data-instance="7141819" itemscope="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `article[data-tag="telenor,telekom"]`
@@ -697,7 +773,7 @@
   - **HTML:** `<div style="" class="kicker below t25"> Varsler om tvangsmulkt til Nscale: </div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.t43`
+- **Target:** `.t43.tm30.headline`
   - **HTML:** `<h2 itemprop="headline" class="headline t43 tm30" style="">– Brudd på energiloven </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -797,7 +873,7 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t86" style="">– Kastet bort millioner </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(66)`
+- **Target:** `.row.large-12.small-12:nth-child(70)`
   - **HTML:** `<div data-element-guid="3e998cd7-8c2c-4db0-9e11-3dded3fb14f3" class="row small-12 large-12" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -841,8 +917,8 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t34 tm42" style="">– Det bør ta mye mer enn ett år </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `article[data-tag="utenriks,ntb,forsvar"]`
-  - **HTML:** `<article data-element-guid="a7a2e2b8-03cc-498f-b25f-c7d102f93fd6" class="column small-12 large-6 small-abs-12 large-abs-6 " data-site-alias="tu" data-section="forsvar" data-tag="utenriks,ntb,forsvar" data-instance="7140806" itemscope="">`
+- **Target:** `article[data-tag="utenriks,forsvar,ntb"]`
+  - **HTML:** `<article data-element-guid="a7a2e2b8-03cc-498f-b25f-c7d102f93fd6" class="column small-12 large-6 small-abs-12 large-abs-6 " data-site-alias="tu" data-section="forsvar" data-tag="utenriks,forsvar,ntb" data-instance="7140806" itemscope="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-k5a-url="https://www.tu.no/a/7140762"] > .t37.headline[itemprop="headline"]`
@@ -889,7 +965,7 @@
   - **HTML:** `<div class="media ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.align-left.mobile_text_align_align-left.t48`
+- **Target:** `.t48.align-left.mobile_text_align_align-left`
   - **HTML:** `<h2 itemprop="headline" class="headline t48 tm23 color_mobile_no_bg_color align-left mobile_text_align_align-left" style="">– Man lærer seg å merke når voksne menn opplever at man tar for mye plass </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -933,7 +1009,7 @@
   - **HTML:** `<h2 itemprop="headline" class="headline t71 tm40" style="">– Jeg rømmer ikke </h2>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(76)`
+- **Target:** `.row.large-12.small-12:nth-child(80)`
   - **HTML:** `<div data-element-guid="bd328b70-9650-4b3a-9ba2-a7b0fc272508" class="row small-12 large-12" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -997,7 +1073,7 @@
   - **HTML:** `<div class="media desktop-floatLeft">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.row.large-12.small-12:nth-child(80)`
+- **Target:** `.row.large-12.small-12:nth-child(84)`
   - **HTML:** `<div data-element-guid="5e6e65db-271d-4436-8137-59f194e61e54" class="row small-12 large-12" style="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -1025,8 +1101,8 @@
   - **HTML:** `<div class="media ">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `article[data-tag="industri,debatt,co2,energi"]`
-  - **HTML:** `<article data-element-guid="b523b745-78ea-44fe-8267-0fc1f8f94586" class="column small-12 large-4 small-abs-12 large-abs-4 " data-site-alias="tu" data-section="debatt" data-tag="industri,debatt,co2,energi" data-instance="5710641" itemscope=…`
+- **Target:** `article[data-tag="debatt,industri,energi,co2"]`
+  - **HTML:** `<article data-element-guid="b523b745-78ea-44fe-8267-0fc1f8f94586" class="column small-12 large-4 small-abs-12 large-abs-4 " data-site-alias="tu" data-section="debatt" data-tag="debatt,industri,energi,co2" data-instance="5710641" itemscope=…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `a[data-k5a-url="https://www.tu.no/a/5709319"] > .media`

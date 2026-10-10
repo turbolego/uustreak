@@ -1,8 +1,8 @@
 # WCAG Violations Report for Lofotr Vikingmuseum AS
 
-**Timestamp:** 2026-10-09T05:05:46.864Z
+**Timestamp:** 2026-10-10T08:38:14.354Z
 **URL:** [https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/](https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/)
-**Total Violations:** 9
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -44,22 +44,6 @@
 - **Target:** `#header-menu-toggle`
   - **HTML:** `<button class="menu-toggle" id="header-menu-toggle" aria-controls="primary-menu" aria-expanded="false"> <span class="hamburger"></span> </button>`
   - **Failure summary:** Fix any of the following: Element does not have inner text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elem…
-
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Source:** Embedded code from Complianz
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- **Target:** `.cmplz-blocked-content-notice`
-  - **HTML:** `<button class="cmplz-blocked-content-notice cmplz-accept-category cmplz-accept-marketing" data-service="youtube" data-category="marketing" aria-label="Klikk for å godta marketing informasjonskapsler og aktivere dette innholdet">`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.94 (foreground color: #ffffff, background color: #808080, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
 
 ### Headings should not be empty
@@ -156,22 +140,6 @@
 - **Target:** `#post-97491 > .mn-archive-menu__item > .mn-archive-menu__image_scaffold > .w-100.h-100`
   - **HTML:** `<a href="https://www.museumnord.no/2026/09/07/vikingene-inntok-hostvekka-pa-leknes/" class="h-100 w-100">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- **Target:** `.skip-link`
-  - **HTML:** `<a class="skip-link screen-reader-text" href="#primary">Skip to content</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 
 ### [role="img"] and [role="image"] elements must have alternative text

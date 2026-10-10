@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vygruppen AS
 
-**Timestamp:** 2026-10-09T05:17:02.950Z
+**Timestamp:** 2026-10-10T08:35:56.653Z
 **URL:** [https://www.vy.no/](https://www.vy.no/)
 **Total Violations:** 3
 
@@ -18,7 +18,7 @@
 #### Affected Elements:
 
 - **Target:** `.css-1auyt0q > .css-1dc70b0[role="listitem"][data-discover="true"]`
-  - **HTML:** `<a aria-label="Malmö, Tog. Fra 566 ..." role="listitem" class="css-1dc70b0" href="/se-reiseforslag?fro..." data-discover="true">`
+  - **HTML:** `<a aria-label="Malmö, Tog. Fra 190 ..." role="listitem" class="css-1dc70b0" href="/se-reiseforslag?fro..." data-discover="true">`
   - **Failure summary:** Fix any of the following: ARIA role listitem is not allowed for given element
 
 - **Target:** `.css-1096yyu`

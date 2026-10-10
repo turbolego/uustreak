@@ -1,10 +1,42 @@
 # WCAG Violations Report for Agderposten AS
 
-**Timestamp:** 2026-10-09T04:51:53.466Z
+**Timestamp:** 2026-10-10T08:04:22.667Z
 **URL:** [https://www.agderposten.no/](https://www.agderposten.no/)
-**Total Violations:** 4
+**Total Violations:** 6
 
 ## Violation Details
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `#dakapo_postopbar`
+  - **HTML:** `<iframe rel="nofollow" id="dakapo_postopbar" name="0" width="100%" src="https://www.agderposten.no/dakapo/banner/?pubname=agderposten&amp;shortcode=AGP&amp;pos=topbar" class="campaign" style="height: 188px;"></iframe>`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `.ThreeTeasers.grid:nth-child(4) > .life20.gridtriple.hot60 > a > .text.t100 > h3`
+  - **HTML:** `<h3 style="--font-size-override: 1.00;"><!----> <span>Kaller fredsprisvalget skammelig</span> <!----></h3>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
 
 ### Main landmark should not be contained in another landmark
 
@@ -13,408 +45,400 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-main-is-top-level?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 100
+- **Count:** 98
 
 #### Affected Elements:
 
-- **Target:** `.gridfullsize.hot70.life40 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Full splid: – Partiet er på ville veier</span> <!----></h3> <!----></main>`
+- **Target:** `.breakingvarsel.gridfullsize.hot60 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Vei åpnet: – Uansvarlig å kjøre på sommerdekk</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.Bundles:nth-child(1) > .OnePlusXTeasers.grid > .gridspotlight.card-size-large.hot70 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Tårene kom da legen fortalte hva de hadde funnet</span> <!----></h3> <!----></main>`
+- **Target:** `.Bundles:nth-child(1) > .OnePlusXTeasers.grid > .gridspotlight.card-size-large.hot60 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Synnøve (97) ble flyttet: – Det verst tenkelige skjedde</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.Bundles:nth-child(1) > .OnePlusXTeasers.grid > .hot70.gridspotlightside.life40 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Gikk fra snill skolemann til drapsmaskin</span> <!----></h3> <!----></main>`
+- **Target:** `.Bundles:nth-child(1) > .OnePlusXTeasers.grid > .gridspotlightside.hot60.life40:nth-child(2) > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Lyser ut flere stillinger før milliardsatsing</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.Bundles:nth-child(1) > .OnePlusXTeasers.grid > .life20.gridspotlightside.hot60 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Politiet frykter dødsulykker - ber om foreldrehjelp</span> <!----></h3> <!----></main>`
+- **Target:** `.Bundles:nth-child(1) > .OnePlusXTeasers.grid > .breakingvarsel.is-aske-skin.is-skin > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Sperret inne av flere patruljer etter biljakt</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(1) > .life60.hot70.gridspotlightside > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>– At en KrF-politiker reduserer meg til en halvkjendis, det er ille</span> <!----></h3> <!----></main>`
+- **Target:** `.hot80.gridspotlightside.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>– Viser at dette virkelig er noe folk ønsker å oppleve</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(1) > .gridspotlight.card-size-large.hot60 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <h4 class="kicker"> <span>Se alle bildene:</span></h4> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Publikum fikk gjennomgå da humor-duoen slapp galskapen løs i Arendal</span> <!----…`
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(1) > .gridspotlight.card-size-large.hot70 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Slår tilbake mot naboene: – Vi truer ingen</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.is-primary-skin > a > .text.t100`
-  - **HTML:** `<main class="text t100">`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.ThreeTeasers.grid:nth-child(4) > .gridtriple.hot60.life40:nth-child(1) > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Har dempet forventningene: – Vanskelig å realisere alt</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.ThreeTeasers.grid:nth-child(4) > .is-aske-skin.is-skin.gridtriple > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Huseier: – Det kunne vært barn til stede</span> <!----></h3> <!----></main>`
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(1) > .no-image.is-aske-skin.is-skin > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Slåsskamp i sentrum</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
 - **Target:** `.ThreeTeasers.grid:nth-child(4) > .life20.gridtriple.hot60 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Kaller fredsprisvalget skammelig</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.ThreeTeasers.grid:nth-child(4) > .hot70.gridtriple.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Kraftig oppgjør med eget parti: – Skuffet og sjokkert</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.ThreeTeasers.grid:nth-child(4) > .life60.opinion.gridtriple > a > .text.t100`
+  - **HTML:** `<main class="text t100">`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.AdWithTeaser.grid:nth-child(6) > .life60.opinion.gridtriple > a > .text.t100`
+  - **HTML:** `<main class="text t100">`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.OnePlusXTeasers.grid:nth-child(8) > .gridspotlight.card-size-large.hot60 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Har stengt vei: Her lavet snøen ned</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.is-primary-skin.is-skin.gridspotlightside:nth-child(2) > a > .text.t100`
+  - **HTML:** `<main class="text t100">`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.is-primary-skin.is-skin.gridspotlightside:nth-child(3) > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Meteorologen: – Kan komme hvit nedbør allerede i kveld</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(12) > .is-dark-skin.is-skin.gridspotlightside:nth-child(1) > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Nekter å løslate mannen som ble skutt av politiet</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(12) > .gridspotlight.card-size-large.hot70 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>To av fem har sluttet: – Bekymret</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.is-dark-skin.is-skin.hot70 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Gutt skal ha blitt truet og forsøkt ranet: – Fremstår ikke tilfeldig </span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.ThreeTeasers.grid:nth-child(13) > .gridtriple.hot60.life40:nth-child(1) > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Daniels svar fikk Flesvig til å stivne: – Au, den likte jeg ikke</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.life20.hot70.gridtriple > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Tilbakekalles: – Kan ikke utelukke helseplager</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.ThreeTeasers.grid:nth-child(13) > .gridtriple.hot60.life40:nth-child(3) > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Arendalskvinne tilkjent åtte millioner: – Hun fortjener hver krone</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.AdWithTeaser.flipped.grid:nth-child(14) > .gridtriple.hot60.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Stenger sentrumsvei etter dette</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.OnePlusXTeasers.grid:nth-child(17) > .gridspotlight.card-size-large.life20 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Åpner ny restaurant på toppen av tårnet - for kun to gjester</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.OnePlusXTeasers.grid:nth-child(17) > .gridspotlightside.hot60.life40:nth-child(2) > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>– Det er litt nerver</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.OnePlusXTeasers.grid:nth-child(17) > .gridspotlightside.hot60.life40:nth-child(3) > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Ble urolig da hun ikke fikk tak i mannen. Nå krever hun svar</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.AdWithTeaser.grid:nth-child(19) > .hot70.gridtriple.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Sykepleierne var så varme: – De visste hva jeg skulle få vite</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(20) > .gridspotlightside.hot60.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Opplevde flere ubehagelige episoder. Valgte å flytte hele driften</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(20) > .gridspotlight.card-size-large.life20 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Tilbakekaller populær snacks: – Kan være helsefarlig</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(20) > .no-image.opinion.life20 > a > .text.t100`
+  - **HTML:** `<main class="text t100">`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.life60.hot70.gridtriple > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Gelius om den siste tiden: – Kaotisk og altoppslukende</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.ThreeTeasers.grid:nth-child(22) > .life20.gridtriple.hot60 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Ny rute fra Torp</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.ThreeTeasers.grid:nth-child(22) > .hot70.gridtriple.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Takket nei til trenerjobben</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.OnePlusXTeasers.grid:nth-child(24) > .gridspotlight.card-size-large.life20 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Slik går billettsalget før lokaloppgjøret</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.OnePlusXTeasers.grid:nth-child(24) > .hot70.gridspotlightside.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Gikk i eget møte. Da ble pressen kastet på dør</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.OnePlusXTeasers.grid:nth-child(24) > .life20.gridspotlightside.hot60 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Kan bli streik neste uke</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(25) > .is-aske-skin.is-skin.life20 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Bil stjålet fra p-hus i Arendal</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(25) > .gridspotlight.card-size-large.life20 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Hun får fredsprisen</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(25) > .life20.gridspotlightside.hot60:nth-child(3) > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Frykter dødsulykker - ber om foreldrehjelp</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.AdWithTeaser.flipped.grid:nth-child(26) > .life20.gridtriple.hot60 > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>I dag er hoffsorgen over</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.AdWithTeaser.grid:nth-child(6) > .hot70.gridtriple.life40 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Mads er redd: – Vi kan ikke være med på dette</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.OnePlusXTeasers.grid:nth-child(8) > .gridspotlight.card-size-large.life20 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Digitaliseringsministeren om Telenor-problemene: – Skal ikke skje</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.OnePlusXTeasers.grid:nth-child(8) > .gridspotlightside.hot60.life40 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Konkurs med 10 millioner i gjeld</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.OnePlusXTeasers.grid:nth-child(8) > .hot70.gridspotlightside.life40 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Fikk nok: – Nå er jeg ganske forbanna</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.life20.hot70.gridspotlightside > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <h4 class="kicker"> <span>Sørlandsparken:</span></h4> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Folk strømmet til nyåpning av det store varehuset</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(12) > .gridspotlight.card-size-large.hot60 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Har planlagt i ti år. Nå er de endelig på plass</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(12) > .breakingvarsel.no-image.is-aske-skin > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Kjørte i 136 km/t på E18. Der sto politiet og ventet</span> <!----></h3> <!----></main>`
+- **Target:** `.ThreeTeasers.grid:nth-child(27) > .gridtriple.hot60.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Se hvem som koste seg med høst-grøss</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
 - **Target:** `.tip > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Telenor: Problemene er løst</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.ThreeTeasers.grid:nth-child(13) > .hot70.gridtriple.life40:nth-child(2) > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Deler ut 24 millioner - så mye går til de lokale</span> <!----></h3> <!----></main>`
+- **Target:** `.ThreeTeasers.grid:nth-child(27) > .hot70.gridtriple.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Mads er redd: – Vi kan ikke være med på dette</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.ThreeTeasers.grid:nth-child(13) > .hot70.gridtriple.life40:nth-child(3) > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Har gjort stor suksess. Nå gir gründeren fra seg toppjobben</span> <!----></h3> <!----></main>`
+- **Target:** `.OnePlusXTeasers.grid:nth-child(29) > .gridspotlight.card-size-large.hot70 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Fikk nok: – Nå er jeg ganske forbanna</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.AdWithTeaser.flipped.grid:nth-child(14) > .opinion.life20.gridtriple > a > .text.t100`
+- **Target:** `.hot50.no-image.opinion > a > .text.t100`
   - **HTML:** `<main class="text t100">`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.OnePlusXTeasers.grid:nth-child(17) > .gridspotlight.card-size-large.hot70 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 0.85;"><!----> <span>Sykehusutspill får Nordli til å reagere – sender klar beskjed til naboene</span> <!----></h3> <!----></main>`
+- **Target:** `.OnePlusXTeasers.grid:nth-child(29) > .is-aske-skin.is-skin.gridspotlightside > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Huseier: – Det kunne vært barn til stede</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.OnePlusXTeasers.grid:nth-child(17) > .hot70.gridspotlightside.life40 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Har stemt: Vil ha disse på topp</span> <!----></h3> <!----></main>`
+- **Target:** `.AdWithTeaser.grid:nth-child(30) > .life20.gridtriple.hot60 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Digitaliseringsministeren om Telenor-problemene: – Skal ikke skje</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.OnePlusXTeasers.grid:nth-child(17) > .is-aske-skin.is-skin.life20 > a > .text.t100`
+- **Target:** `.life20.hot70.gridspotlightside > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <h4 class="kicker"> <span>Sørlandsparken:</span></h4> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Folk strømmet til nyåpning av det store varehuset</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(31) > .gridspotlight.card-size-large.hot60 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Har planlagt i ti år. Nå er de endelig på plass</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(31) > .opinion.life20.gridspotlightside > a > .text.t100`
+  - **HTML:** `<main class="text t100">`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.ThreeTeasers.grid:nth-child(32) > .is-aske-skin.is-skin.life20 > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Nkom hever beredskapen og varsler tilsyn mot Telenor etter problemene</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.AdWithTeaser.grid:nth-child(19) > .hot70.gridtriple.life40 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Slår tilbake mot naboene: – Vi truer ingen</span> <!----></h3> <!----></main>`
+- **Target:** `.ThreeTeasers.grid:nth-child(32) > .hot70.gridtriple.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Har stemt: Vil ha disse på topp</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(20) > .opinion.gridspotlightside.hot60 > a > .text.t100`
+- **Target:** `.ThreeTeasers.grid:nth-child(32) > .opinion.gridtriple.hot60 > a > .text.t100`
   - **HTML:** `<main class="text t100">`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.is-aske-skin.hot50.gridspotlight > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Stjal øl fra butikk - viste frem kniv da han ble tatt</span> <!----></h3> <!----></main>`
+- **Target:** `.AdWithTeaser.flipped.grid:nth-child(33) > .gridtriple.hot60.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Konkurs med 10 millioner i gjeld</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(20) > .gridspotlightside.hot60.life40:nth-child(3) > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.25;"><!----> <span>Gjør comeback etter 17 år</span> <!----></h3> <!----></main>`
+- **Target:** `.OnePlusXTeasers.grid:nth-child(34) > .gridspotlight.card-size-large.hot70 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 0.85;"><!----> <span>Sykehusutspill får Nordli til å reagere – sender klar beskjed til naboene</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.ThreeTeasers.grid:nth-child(22) > .gridtriple.hot60.life40 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Milliontapet krymper – jakter fortsatt på penger</span> <!----></h3> <!----></main>`
+- **Target:** `.OnePlusXTeasers.grid:nth-child(34) > .hot50.breakingvarsel.no-image > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Kjørte i 136 km/t på E18. Der sto politiet og ventet</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.ThreeTeasers.grid:nth-child(22) > .hot70.gridtriple.life40 > a > .text.t100`
+- **Target:** `.OnePlusXTeasers.grid:nth-child(34) > .hot70.gridspotlightside.life40 > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Daglig leder gir seg - dette er årsaken</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
 - **Target:** `.breakingvarsel.life20.gridtriple > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.25;"><!----> <span>Må trekke seg etter ryggskade</span> <!----></h3> <!----></main>`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Har problemer – får ikke gjennomført salg</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(36) > .gridspotlightside.hot60.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.25;"><!----> <span>Gjør comeback etter 17 år</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(36) > .hot50.is-aske-skin.is-skin > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Stjal øl fra butikk - viste frem kniv da han ble tatt</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
 - **Target:** `a[href$="tatt-paa-e18"] > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>26 fikk bot etter råkjøring ved sykehuset</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.griddouble.is-dark-skin.no-image > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>– Det disse barna har fortalt er hjerteskjærende</span> <!----></h3> <!----></main>`
+- **Target:** `.ThreeTeasers.grid:nth-child(37) > .life20.gridtriple.hot60:nth-child(1) > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.25;"><!----> <span>Må trekke seg etter ryggskade</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.breakingvarsel.gridspotlight.card-size-large > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Har problemer – får ikke gjennomført salg</span> <!----></h3> <!----></main>`
+- **Target:** `.ThreeTeasers.grid:nth-child(37) > .gridtriple.hot60.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Milliontapet krymper – jakter fortsatt på penger</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.OnePlusXTeasers.grid:nth-child(25) > .life60.gridspotlightside.hot60 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <h4 class="kicker"> <span>KRISTIANSAND:</span></h4> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Her kjører bilen feil vei i den nye rundkjøringa</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.OnePlusXTeasers.grid:nth-child(25) > .breakingvarsel.no-image.is-aske-skin > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Fem tatt av politiet i Arendal</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.AdWithTeaser.flipped.grid:nth-child(26) > .life20.gridtriple.hot60 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Får bot på nær 80 millioner etter trøbbel med regnskap</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.ThreeTeasers.grid:nth-child(27) > .life20.gridtriple.hot60 > a > .text.t100`
+- **Target:** `.life20.gridtriple.hot60:nth-child(3) > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Stenger hele helgen</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.ThreeTeasers.grid:nth-child(27) > .hot50.life20.gridtriple > a > .text.t100`
+- **Target:** `.AdWithTeaser.flipped.grid:nth-child(38) > .life20.gridtriple.hot60 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Får bot på nær 80 millioner etter trøbbel med regnskap</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.OnePlusXTeasers.grid:nth-child(39) > .life60.gridspotlight.card-size-large > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <h4 class="kicker"> <span>KRISTIANSAND:</span></h4> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Her kjører bilen feil vei i den nye rundkjøringa</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.OnePlusXTeasers.grid:nth-child(39) > .is-dark-skin.is-skin.gridspotlightside > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>– Det disse barna har fortalt er hjerteskjærende</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.OnePlusXTeasers.grid:nth-child(39) > .hot50.breakingvarsel.no-image > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Fem tatt av politiet i Arendal</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(40) > .hot50.life20.gridspotlightside > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Har sendt ut nytt farevarsel</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.ThreeTeasers.grid:nth-child(27) > .gridtriple.hot60.life40 > a > .text.t100`
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(40) > .gridspotlight.card-size-large.hot60 > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>«Elling» til Risør: – Sa ja med en gang</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(29) > .is-dark-skin.is-skin.life20 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Advarer om grov vold på nettet</span> <!----></h3> <!----></main>`
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(40) > .gridspotlightside.hot60.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Har dempet forventningene: – Vanskelig å realisere alt</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(29) > .gridspotlight.card-size-large.hot70 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>– Jeg har venta på den muligheten i 50 år</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(29) > .gridspotlightside.hot60.life40 > a > .text.t100`
+- **Target:** `.AdWithTeaser.grid:nth-child(41) > .gridtriple.hot60.life40 > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Ble utsolgt på fire dager: – Får ikke inn flere</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.AdWithTeaser.grid:nth-child(30) > .hot80.is-dark-skin.is-skin > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <h4 class="kicker"> <span>Kristiansand:</span></h4> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Skal ha angrepet mann etter at kvinne ble knivstukket</span> <!----></h3> <!----></ma…`
+- **Target:** `.ThreeTeasers.grid:nth-child(42) > .hot70.gridtriple.life40:nth-child(1) > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>– Jeg har venta på den muligheten i 50 år</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.ThreeTeasers.grid:nth-child(42) > .hot70.gridtriple.life40:nth-child(2) > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Har gjort stor suksess. Nå gir gründeren fra seg toppjobben</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.ThreeTeasers.grid:nth-child(42) > .hot70.gridtriple.life40:nth-child(3) > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Deler ut 24 millioner - så mye går til de lokale</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
 - **Target:** `.hot40 > a > .text.t100`
   - **HTML:** `<main class="text t100">`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.OnePlusXTeasers.grid:nth-child(31) > .gridspotlightside.hot60.life40 > a > .text.t100`
+- **Target:** `.OnePlusXTeasers.grid:nth-child(43) > .gridspotlightside.hot60.life40 > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <h4 class="kicker"> <span>Frykter for bygda:</span></h4> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>– Om den blir lagt ned er det nesten ingenting igjen</span> <!----></h3> <!---->…`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.life60.opinion.no-image > a > .text.t100`
+- **Target:** `.life60.no-image.opinion > a > .text.t100`
   - **HTML:** `<main class="text t100">`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.ThreeTeasers.grid:nth-child(32) > .hot70.gridtriple.life40:nth-child(1) > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>– Helt surrealistisk å vinne igjen</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.ThreeTeasers.grid:nth-child(32) > .hot70.gridtriple.life40:nth-child(2) > a > .text.t100`
+- **Target:** `.AdWithTeaser.flipped.grid:nth-child(44) > .hot70.gridtriple.life40 > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Begjært konkurs på ny: – Saken er løst</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.life60.opinion.hot70 > a > .text.t100`
-  - **HTML:** `<main class="text t100">`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.AdWithTeaser.flipped.grid:nth-child(33) > .gridtriple.hot60.life40 > a > .text.t100`
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(45) > .gridspotlightside.hot60.life40 > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Flertall for bredere HPV-vaksine til elevene</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(34) > .hot70.gridspotlightside.life40 > a > .text.t100`
+- **Target:** `.life60.opinion.gridspotlight > a > .text.t100`
+  - **HTML:** `<main class="text t100">`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(45) > .hot70.gridspotlightside.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>– Helt surrealistisk å vinne igjen</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.ThreeTeasers.grid:nth-child(46) > .hot70.gridtriple.life40:nth-child(1) > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Raser mot statsbudsjettet</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(34) > .opinion.gridspotlight.card-size-large > a > .text.t100`
-  - **HTML:** `<main class="text t100">`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(34) > .hot50.life20.gridspotlightside > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Derfor er E18 stengt flere kvelder</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.AdWithTeaser.grid:nth-child(35) > .hot70.gridtriple.life40 > a > .text.t100`
+- **Target:** `.ThreeTeasers.grid:nth-child(46) > .hot70.gridtriple.life40:nth-child(2) > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Endrer skoleskyss-tider</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.OnePlusXTeasers.grid:nth-child(36) > .hot50.gridspotlight.card-size-large > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Fortviler: – Klarer ikke å skaffe boligene folk trenger</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.life20.gridspotlightside.hot60:nth-child(2) > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <h4 class="kicker"> <span>Kongehuset:</span></h4> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Ikke offisielt program fram til neste sommer</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.OnePlusXTeasers.grid:nth-child(36) > .no-image.is-aske-skin.is-skin > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Tolv personer tatt av politiet her</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.ThreeTeasers.grid:nth-child(37) > .gridtriple.hot60.life40 > a > .text.t100`
+- **Target:** `.ThreeTeasers.grid:nth-child(46) > .gridtriple.hot60.life40 > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Ny kommunalsjef på plass</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.ThreeTeasers.grid:nth-child(37) > .no-image.is-aske-skin.is-skin > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Hanket inn i trafikkontroll</span> <!----></h3> <!----></main>`
+- **Target:** `.OnePlusXTeasers.grid:nth-child(47) > .opinion.gridspotlight.card-size-large > a > .text.t100`
+  - **HTML:** `<main class="text t100">`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.ThreeTeasers.grid:nth-child(37) > .hot50.life20.gridtriple > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Utelukker ikke nye søk etter stor redningsaksjon</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.AdWithTeaser.flipped.grid:nth-child(38) > .is-aske-skin.is-skin.hot70 > a > .text.t100`
+- **Target:** `.OnePlusXTeasers.grid:nth-child(47) > .is-aske-skin.is-skin.hot70 > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Steinblokk raste ut - må trolig stenge veien for å sikre fjellet</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(39) > .no-image.is-aske-skin.hot50 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Mistet førerkortet</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.variant-b > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Nå kommer snøen</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.opinion.no-image.hot50 > a > .text.t100`
-  - **HTML:** `<main class="text t100">`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.OnePlusXTeasers.grid:nth-child(40) > .gridspotlight.card-size-large.hot60 > a > .text.t100`
+- **Target:** `.OnePlusXTeasers.grid:nth-child(47) > .gridspotlightside.hot60.life40 > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Dette betyr statsbudsjettet for deg</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.hot50.life20.gridspotlightside:nth-child(2) > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Åpner tidligere enn forventet</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.OnePlusXTeasers.grid:nth-child(40) > .no-image.hot50.life20 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3><!----> <span>Statens naturoppsyn (SNO) med hummer-kontroll</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.AdWithTeaser.grid:nth-child(41) > .hot70.gridtriple.life40 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Åpner for å kjøpe hele anlegget</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.ThreeTeasers.grid:nth-child(42) > .hot50.life20.gridtriple:nth-child(1) > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Fly forsinket til Kjevik</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.ThreeTeasers.grid:nth-child(42) > .opinion.no-image.life20 > a > .text.t100`
-  - **HTML:** `<main class="text t100">`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.ThreeTeasers.grid:nth-child(42) > .hot50.life20.gridtriple:nth-child(3) > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>VG: – Største kuttet på 20 år</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(43) > .hot70.gridspotlightside.life40 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Krever svar etter millionsprekk: – Dette er en krise</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(43) > .hot50.gridspotlight.card-size-large > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Vil gi belønning til kommuner som slår seg sammen</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(43) > .is-dark-skin.is-skin.gridspotlightside > a > .text.t100`
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(48) > .is-dark-skin.is-skin.gridspotlightside > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <h4 class="kicker"> <span>Her fyller han bensin i ruset tilstand:</span></h4> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span> Så begynner en dramatisk biljakt </span> <!----></h3> <!--…`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.is-dark-skin.is-skin.hot70 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <h4 class="kicker"> <span>Kristiansand:</span></h4> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Ble truet med machete i helgen. Så ble hun knivstukket</span> <!----></h3> <!----></m…`
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(48) > .gridspotlight.card-size-large.hot70 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Åpner for å kjøpe hele anlegget</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.OnePlusXTeasers.grid:nth-child(45) > .gridspotlight.card-size-large.hot70 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Ønsker å redde butikken - varsler større endringer</span> <!----></h3> <!----></main>`
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(48) > .hot70.gridspotlightside.life40 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Krever svar etter millionsprekk: – Dette er en krise</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.OnePlusXTeasers.grid:nth-child(45) > .hot70.gridspotlightside.life40 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>– Dette får man kun oppleve en gang i livet</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.OnePlusXTeasers.grid:nth-child(45) > .no-image.is-aske-skin.hot50 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Elg ved E18-bru</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.ThreeTeasers.grid:nth-child(46) > .hot50.life20.gridtriple > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Over to timer forsinket</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.ThreeTeasers.grid:nth-child(46) > .hot70.gridtriple.life40 > a > .text.t100`
+- **Target:** `.ThreeTeasers.grid:nth-child(49) > .hot70.gridtriple.life40:nth-child(1) > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Har tapt 5,5 millioner kroner</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.ThreeTeasers.grid:nth-child(46) > .opinion.gridtriple.hot60 > a > .text.t100`
-  - **HTML:** `<main class="text t100">`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(47) > .life60.hot70.gridspotlightside > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Han er ny redaktør</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(47) > .gridspotlight.card-size-large.hot60 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Frykter at unge vil rammes: – Vitner om manglende forståelse</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(47) > .hot70.gridspotlightside.life40 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Fikk sitt livs sjanse: – Betyr alt</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.OnePlusXTeasers.grid:nth-child(48) > .gridspotlight.card-size-large.hot60 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Så en mangel i markedet - nå utvider Aleksandra</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.OnePlusXTeasers.grid:nth-child(48) > .gridspotlightside.hot60.life40:nth-child(2) > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Utvider tilbudet</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.OnePlusXTeasers.grid:nth-child(48) > .opinion.gridspotlightside.hot60 > a > .text.t100`
-  - **HTML:** `<main class="text t100">`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.ThreeTeasers.grid:nth-child(49) > .is-aske-skin.is-skin.hot70 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>– Her på brygga ble hun liggende helt urørlig</span> <!----></h3> <!----></main>`
+- **Target:** `.ThreeTeasers.grid:nth-child(49) > .hot70.gridtriple.life40:nth-child(2) > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>– Dette får man kun oppleve en gang i livet</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
 - **Target:** `.ThreeTeasers.grid:nth-child(49) > .gridtriple.hot60.life40 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Mener det er lett å falle utenfor i Arendal: Slik vil de løse det</span> <!----></h3> <!----></main>`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Så en mangel i markedet - nå utvider Aleksandra</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.ThreeTeasers.grid:nth-child(49) > .hot70.gridtriple.life40:nth-child(3) > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Bekymret for utviklingen: – Har eksplodert</span> <!----></h3> <!----></main>`
+- **Target:** `.OnePlusXTeasers.grid:nth-child(50) > .gridspotlight.card-size-large.hot60 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Nå kommer snøen i nesten hele landet</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(50) > .life60.hot70.gridspotlightside > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Få tobarnsmorens beste søvntriks</span> <!----></h3> <!----></main>`
+- **Target:** `.OnePlusXTeasers.grid:nth-child(50) > .hot70.gridspotlightside.life40:nth-child(2) > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Pest-søk tar av på Google: Dette sier FHI</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(50) > .gridspotlight.card-size-large.hot70 > a > .text.t100`
+- **Target:** `.OnePlusXTeasers.grid:nth-child(50) > .is-aske-skin.is-skin.hot70 > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>– Her på brygga ble hun liggende helt urørlig</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(51) > .is-aske-skin.is-skin.gridspotlightside > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Anklaget uskyldig mann. Nå er han selv dømt</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.flipped.OnePlusXTeasers.grid:nth-child(51) > .gridspotlight.card-size-large.hot70 > a > .text.t100`
   - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Hevder nybygd betongbrygge er ulovlig</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
-- **Target:** `.is-dark-skin.opinion.is-skin > a > .text.t100`
-  - **HTML:** `<main class="text t100">`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.OnePlusXTeasers.grid:nth-child(51) > .gridspotlight.card-size-large.hot60 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <h4 class="kicker"> <span>Agder:</span></h4> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Konkurs med nær 30 millioner i gjeld</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.OnePlusXTeasers.grid:nth-child(51) > .gridspotlightside.hot60.life40 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>– Vi har fått en knekk</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.OnePlusXTeasers.grid:nth-child(51) > .is-aske-skin.is-skin.hot70 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Pusset opp for millioner. Så brant det</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.life60.hot70.gridtriple:nth-child(1) > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Gjorde gammelt pensjonat om til drømmevilla </span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.ThreeTeasers.grid:nth-child(52) > .hot70.gridtriple.life40 > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>De skulle ut av komfortsonen</span> <!----></h3> <!----></main>`
-  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
-
-- **Target:** `.ThreeTeasers.grid:nth-child(52) > .life60.hot70.gridtriple:nth-child(3) > a > .text.t100`
-  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Originale bad, retrotapeter og rosa sofa: Se Siris unike hjem</span> <!----></h3> <!----></main>`
+- **Target:** `.life60.hot70.gridspotlightside > a > .text.t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Få tobarnsmorens beste søvntriks</span> <!----></h3> <!----></main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 
 

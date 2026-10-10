@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordlandsnett AS
 
-**Timestamp:** 2026-10-09T05:07:11.796Z
+**Timestamp:** 2026-10-10T08:06:05.868Z
 **URL:** [https://arva.no/hjem](https://arva.no/hjem)
 **Total Violations:** 5
 
@@ -89,6 +89,10 @@
   - **HTML:** `<a href="/el-sikkerhet" data-target-set="1">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
+- **Target:** `#Article-19263 > .clear[data-v-fab35f16=""][data-v-05e2877b=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-05e2877b=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
+  - **HTML:** `<a data-v-3e0b142e="" href="/hjem/Hvordan-utvikler-vi-framtidas-kraftnett" target="" data-target-set="1">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
 - **Target:** `#Article-19242 > .clear[data-v-fab35f16=""][data-v-05e2877b=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-05e2877b=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
   - **HTML:** `<a data-v-3e0b142e="" href="/hjem/Batterier-styrket-stromnettet" target="" data-target-set="1">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
@@ -111,10 +115,6 @@
 
 - **Target:** `#Article-12709 > .clear[data-v-fab35f16=""][data-v-05e2877b=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-05e2877b=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
   - **HTML:** `<a data-v-3e0b142e="" href="/hjem/Et-eierskifte-endrer-ikke-vaart-oppdrag" target="" data-target-set="1">`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `#Article-9858 > .clear[data-v-fab35f16=""][data-v-05e2877b=""] > .spacer.w_adjust.content-adjust > .innercol[data-v-fab35f16=""] > .media-wrapper[data-v-3e0b142e=""][data-v-05e2877b=""] > a[target=""][data-v-3e0b142e=""][data-target-set="1"]`
-  - **HTML:** `<a data-v-3e0b142e="" href="/hjem/Ser-du-en-drone-over-stromnettet" target="" data-target-set="1">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 
@@ -146,15 +146,15 @@
 #### Affected Elements:
 
 - **Target:** `.w_carousel_image`
-  - **HTML:** `<img data-v-7876f821="" data-v-15c48115="" data-v-24b07654="" class="w_carousel_image w_c..." alt="Slideshow image with..." src="https://arva.no/site..." width="2287" height="1232" style="--v59daa474: cover; ..." srcset="https://arva.no/si…`
+  - **HTML:** `<img data-v-7876f821="" data-v-15c48115="" data-v-24b07654="" class="w_carousel_image w_c..." alt="Slideshow image with..." src="https://arva.no/site..." width="2000" height="1059" style="--v59daa474: cover; ..." srcset="https://arva.no/si…`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.w_carousel_title`
-  - **HTML:** `<a data-v-db978f5c="" data-v-418e343b="" class="w_carousel_title" href="/hjem/Hvordan-utvikler-vi-framtidas-kraftnett" role="link" data-target-set="1"><h2 data-v-db978f5c="" role="heading" tabindex="0">Hvordan utvikler vi framtidas kraftne…`
+  - **HTML:** `<a data-v-db978f5c="" data-v-418e343b="" class="w_carousel_title" href="/hjem/Pa-tide-med-en-ny-elsjekk" role="link" data-target-set="1"><h2 data-v-db978f5c="" role="heading" tabindex="0">På tide med en ny elsjekk!</h2></a>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.w_carousel_intro`
-  - **HTML:** `<span data-v-bf094742="" data-v-418e343b="" class="w_carousel_intro" tabindex="0">Arva deltar i en rekke forsknings- og utviklingsprosjekter som skal bidra til et smartere, sikrere og mer effektivt strømnett. Nå har vi samlet prosjektene p…`
+  - **HTML:** `<span data-v-bf094742="" data-v-418e343b="" class="w_carousel_intro" tabindex="0">Er noen av dine kontakter eller støpsler svarte av sot? Da har du trolig en alvorlig feil i det elektriske anlegget. Du bør snarest få undersøkt og utbedret …`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `div[data-id="483468145"] > .block-title[data-v-b59ca79e=""]`

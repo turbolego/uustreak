@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lyse Elnett AS
 
-**Timestamp:** 2026-10-09T05:05:56.768Z
+**Timestamp:** 2026-10-10T08:38:28.432Z
 **URL:** [https://www.l-nett.no/](https://www.l-nett.no/)
 **Total Violations:** 6
 
@@ -69,8 +69,8 @@
 
 #### Affected Elements:
 
-- **Target:** `#searchBar_element_4d622862_2`
-  - **HTML:** `<input placeholder="Søk" title="Hva leter du etter?" id="searchBar_element_4d622862_2" class="searchBar col-md-8" tabindex="-1" type="text" name="q" value="">`
+- **Target:** `#searchBar_element_7cc0fc7f_2`
+  - **HTML:** `<input placeholder="Søk" title="Hva leter du etter?" id="searchBar_element_7cc0fc7f_2" class="searchBar col-md-8" tabindex="-1" type="text" name="q" value="">`
   - **Failure summary:** Fix all of the following: Only title used to generate label for form element
 
 
@@ -145,8 +145,8 @@
   - **HTML:** `<div class="row ctwebform-elementgroup row2 even elementamount1" id="ctwebform-elementgroup-group-275">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#VLUNNOIMSDV`
-  - **HTML:** `<span id="VLUNNOIMSDV">Skriv svaret med tall: Hva er 5 pluss 3?</span>`
+- **Target:** `#AAHTANAQKZUDAFSOIJAS`
+  - **HTML:** `<span id="AAHTANAQKZUDAFSOIJAS">Skriv svaret med tall: Hva er 10 pluss 7?</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.ctwebform-element-type-captcha > div > div`
@@ -165,8 +165,8 @@
   - **HTML:** `<h1><span>Noe du ikke fant?</span></h1>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#searchBar_element_4d622862_2`
-  - **HTML:** `<input placeholder="Søk" title="Hva leter du etter?" id="searchBar_element_4d622862_2" class="searchBar col-md-8" tabindex="-1" type="text" name="q" value="">`
+- **Target:** `#searchBar_element_7cc0fc7f_2`
+  - **HTML:** `<input placeholder="Søk" title="Hva leter du etter?" id="searchBar_element_7cc0fc7f_2" class="searchBar col-md-8" tabindex="-1" type="text" name="q" value="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.privacy-link > a[target="_self"]`

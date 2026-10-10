@@ -1,30 +1,10 @@
 # WCAG Violations Report for Sola Strand Hotel
 
-**Timestamp:** 2026-10-09T05:10:52.597Z
+**Timestamp:** 2026-10-10T08:16:35.917Z
 **URL:** [https://www.solastrandhotel.no/](https://www.solastrandhotel.no/)
-**Total Violations:** 5
+**Total Violations:** 3
 
 ## Violation Details
-
-### ARIA role should be appropriate for the element
-
-- **Impact:** minor
-- **Description:** Ensure role attribute has an appropriate value for the element
-- **Source:** Embedded code from Innhold i iframe
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
-- **Tags:** cat.aria, best-practice
-- **Count:** 2
-
-#### Affected Elements:
-
-- **Target:** `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video.ready, body`
-  - **HTML:** `<body role="presentation" class="vp-center">`
-  - **Failure summary:** Fix any of the following: ARIA role presentation is not allowed for given element
-
-- **Target:** `div[data-config-url="https://vimeo.com/1043637275"] > div > .background-video.ready, body`
-  - **HTML:** `<body role="presentation" class="vp-center">`
-  - **Failure summary:** Fix any of the following: ARIA role presentation is not allowed for given element
-
 
 ### Certain ARIA roles must contain particular children
 
@@ -40,26 +20,6 @@
 - **Target:** `.header-display-desktop > .header-actions.header-actions--right > .language-picker-desktop[aria-controls="language-picker-menu"][aria-label="language picker"]`
   - **HTML:** `<div aria-controls="language-picker-menu" aria-expanded="false" aria-label="language picker" class="language-picker language-picker-desktop" id="multilingual-language-picker-desktop" role="listbox" tabindex="-1">`
   - **Failure summary:** Fix any of the following: Required ARIA children role not present: group, option
-
-
-### Frames must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Source:** Embedded code from player.vimeo.com
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- **Target:** `div[data-config-url="https://vimeo.com/1060792703"] > div > .background-video.ready`
-  - **HTML:** `<iframe id="vimeoplayer" src="//player.vimeo.com/video/1060792703?api=1&amp;background=1" class="background-video ready" style="width: 1280px; height: 720px; left: 0px; top: 0px;"></iframe>`
-  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
-
-- **Target:** `div[data-config-url="https://vimeo.com/1043637275"] > div > .background-video.ready`
-  - **HTML:** `<iframe id="vimeoplayer" src="//player.vimeo.com/video/1043637275?api=1&amp;background=1" class="background-video ready" style="width: 1280px; height: 720px; left: 0px; top: -176px;"></iframe>`
-  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
 
 
 ### Heading levels should only increase by one

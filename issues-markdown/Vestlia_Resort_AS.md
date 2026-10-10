@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2026-10-09T05:16:26.539Z
+**Timestamp:** 2026-10-10T08:34:33.660Z
 **URL:** [https://vestlia.no/](https://vestlia.no/)
 **Total Violations:** 9
 
@@ -42,7 +42,7 @@
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.61 (foreground color: #ffffff, background color: #a87f50, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `#widgetContainer, div[aria-label="Choose date"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`
-  - **HTML:** `<p class="overflow-hidden text-ellipsis whitespace-nowrap text-bv_smallFontSize text-bv_inputColor">9 Oct 2026</p>`
+  - **HTML:** `<p class="overflow-hidden text-ellipsis whitespace-nowrap text-bv_smallFontSize text-bv_inputColor">10 Oct 2026</p>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3 (foreground color: #b68e58, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `#widgetContainer, div[aria-label="Accommodations and guests"] > .min-w-0.pr-3.flex-col > .flex-row.gap-2.justify-between > .text-bv_smallFontSize.text-ellipsis.text-bv_inputColor`

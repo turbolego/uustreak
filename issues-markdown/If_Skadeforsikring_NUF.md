@@ -1,6 +1,6 @@
 # WCAG Violations Report for If Skadeforsikring NUF
 
-**Timestamp:** 2026-10-09T05:02:35.170Z
+**Timestamp:** 2026-10-10T08:31:26.697Z
 **URL:** [https://www.if.no/privat](https://www.if.no/privat)
 **Total Violations:** 2
 
@@ -49,7 +49,7 @@
 
 #### Affected Elements:
 
-- **Target:** `#\37 926afb75d9c46279208e3879182fbdb`
-  - **HTML:** `<nav class="if flex-column gap-16" id="7926afb75d9c46279208e3879182fbdb">`
+- **Target:** `#\30 8a55e3f55e84e73ab3c46406b0b4e3c`
+  - **HTML:** `<nav class="if flex-column gap-16" id="08a55e3f55e84e73ab3c46406b0b4e3c">`
   - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-10-09T05:12:36.050Z
+**Timestamp:** 2026-10-10T08:23:19.494Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -33,7 +33,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 32
+- **Count:** 33
 
 #### Affected Elements:
 
@@ -62,11 +62,11 @@
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
 - **Target:** `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.ip`
-  - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">60%</div>`
+  - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">54%</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-  - **HTML:** `<span class="jd i0 bd">799,-</span>`
+  - **HTML:** `<span class="jd i0 bd">599,-</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
 - **Target:** `a[aria-label="Trolltunga skalljakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
@@ -78,22 +78,26 @@
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
 - **Target:** `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.ip`
-  - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">54%</div>`
+  - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">60%</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-  - **HTML:** `<span class="jd i0 bd">599,-</span>`
+  - **HTML:** `<span class="jd i0 bd">799,-</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[aria-label="Harstad skallanorakk"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- **Target:** `a[aria-label="Lofoten fôret regnvott"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
   - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">LAVPRIS</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[aria-label="Bodø lettvekts regnbukse"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
-  - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">LAVPRIS</div>`
+- **Target:** `a[aria-label="Voieåsen vattert poncho"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+  - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">20%</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[aria-label="Bodø lettvekts regnjakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- **Target:** `a[aria-label="Voieåsen vattert poncho"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+  - **HTML:** `<span class="jd i0 bd">399,-</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
+
+- **Target:** `a[aria-label="Regndag regnbukse unisex"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
   - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">LAVPRIS</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
@@ -101,7 +105,7 @@
   - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">LAVPRIS</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[aria-label="Lofoten regnvott"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- **Target:** `a[aria-label="Bodø lettvekts regnjakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
   - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">LAVPRIS</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
@@ -121,20 +125,20 @@
   - **HTML:** `<span class="jd i0 bd">399,-</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
-- **Target:** `li:nth-child(3) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- **Target:** `a[aria-label="Vesthav vattert regnparkas"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
   - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">INTROPRIS</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `li:nth-child(3) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- **Target:** `a[aria-label="Vesthav vattert regnparkas"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
   - **HTML:** `<span class="jd i0 bd">599,-</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
-- **Target:** `li:nth-child(4) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- **Target:** `a[aria-label="Børgefjell regnbukse"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
   - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">INTROPRIS</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `li:nth-child(4) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-  - **HTML:** `<span class="jd i0 bd">599,-</span>`
+- **Target:** `a[aria-label="Børgefjell regnbukse"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+  - **HTML:** `<span class="jd i0 bd">399,-</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
 - **Target:** `a[aria-label="Regnsky regnsett barn 1-7"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
@@ -145,11 +149,11 @@
   - **HTML:** `<span class="jd i0 bd">299,-</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ff0099, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[aria-label="Vinterberg vinterjakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- **Target:** `li:nth-child(1) > .ic.id[aria-label="Vinterberg vinterjakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
   - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">LAVPRIS</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[aria-label="Hemsedal 2-lags ullsett"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- **Target:** `li:nth-child(2) > .ic.id[aria-label="Hemsedal 2-lags ullsett"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
   - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">LAVPRIS</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
@@ -157,11 +161,11 @@
   - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">LAVPRIS</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[aria-label="Lofoten fôret regnvott"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- **Target:** `li:nth-child(4) > .ic.id[aria-label="Vinterberg vinterjakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
   - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">LAVPRIS</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `a[aria-label="Frostli vinterjakke"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
+- **Target:** `li:nth-child(5) > .ic.id[aria-label="Hemsedal 2-lags ullsett"] > .ih.bc.bd > .io.im.y > .gz.it.ip`
   - **HTML:** `<div class="ip bc bd aj ak ac iq ir is bf ey it gz iu">LAVPRIS</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.67 (foreground color: #ffffff, background color: #ff0099, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
 
@@ -209,15 +213,15 @@
 
 #### Affected Elements:
 
-- **Target:** `div:nth-child(1) > .aq.am.ao > .au.as[width="11"]`
+- **Target:** `div:nth-child(1) > .aq.am.an > .au.as[width="11"]`
   - **HTML:** `<img width="11" class="ar as at au" src="/contentassets/7a69847315af4a2a9490bb7184004777/mediamodifier-design.svg?ref=21C3EEBBD2">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `div:nth-child(2) > .aq.am.ao > .au.as[width="11"]`
+- **Target:** `div:nth-child(2) > .aq.am.an > .au.as[width="11"]`
   - **HTML:** `<img width="11" class="ar as at au" src="/contentassets/7a69847315af4a2a9490bb7184004777/mediamodifier-design.svg?ref=21C3EEBBD2">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `div:nth-child(3) > .aq.am.ao > .au.as[width="11"]`
+- **Target:** `div:nth-child(3) > .aq.am.an > .au.as[width="11"]`
   - **HTML:** `<img width="11" class="ar as at au" src="/contentassets/7a69847315af4a2a9490bb7184004777/mediamodifier-design.svg?ref=21C3EEBBD2">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 

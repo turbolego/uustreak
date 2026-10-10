@@ -1,6 +1,6 @@
 # WCAG Violations Report for Lørenskog kommune
 
-**Timestamp:** 2026-10-09T05:05:44.657Z
+**Timestamp:** 2026-10-10T08:03:02.978Z
 **URL:** [https://www.lorenskog.kommune.no/](https://www.lorenskog.kommune.no/)
 **Total Violations:** 3
 
@@ -61,7 +61,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 11
+- **Count:** 13
 
 #### Affected Elements:
 
@@ -107,5 +107,13 @@
 
 - **Target:** `.webPartBunnLink`
   - **HTML:** `<div class="webPartBunnLink"> <a id="ctl00_ctl00_ctl00_innhold_MidtSone_ctl08_WebpartId_1614_WebpartId_1614_rptItems_ctl01_ucDisplayControl_hlLinkAlle" class="MargLink" href="/aktuelt/">Se alle saker </a> </div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#vFact_audioFrame, #vfact_testaudio`
+  - **HTML:** `<audio id="vfact_testaudio" controls=""> not supported</audio>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `#vFact_audioFrame, h1`
+  - **HTML:** `<h1>Her er framen</h1>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

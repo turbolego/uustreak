@@ -1,8 +1,8 @@
 # WCAG Violations Report for Thon Hotels AS
 
-**Timestamp:** 2026-10-09T05:14:14.144Z
+**Timestamp:** 2026-10-10T08:27:37.164Z
 **URL:** [https://www.thonhotels.no/](https://www.thonhotels.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -17,25 +17,9 @@
 
 #### Affected Elements:
 
-- **Target:** `section:nth-child(6) > .teaser-section__header > .teaser-section__heading`
+- **Target:** `section:nth-child(5) > .teaser-section__header > .teaser-section__heading`
   - **HTML:** `<h2 class="teaser-section__heading"></h2>`
   - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
-
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- **Target:** `.story-teaser--big-campaign > .story-teaser__content > .story-teaser__heading.font-h2`
-  - **HTML:** `<h3 class="story-teaser__heading font-h2"> <a href="/tilbud/hosttilbud/" class="story-teaser__link">Nyt høstferien med 20% rabatt</a> </h3>`
-  - **Failure summary:** Fix any of the following: Heading order invalid
 
 
 ### Document should not have more than one banner landmark

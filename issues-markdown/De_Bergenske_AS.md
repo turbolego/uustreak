@@ -1,6 +1,6 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-10-09T04:57:10.638Z
+**Timestamp:** 2026-10-10T08:17:35.037Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
 **Total Violations:** 9
 
@@ -97,15 +97,19 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 29
+- **Count:** 30
 
 #### Affected Elements:
 
-- **Target:** `.lg\:col-span-2 > .sm\:pr-6.media.flex-1`
+- **Target:** `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(3) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(1) > .h-auto.max-w-full.sm\:px-6`
   - **HTML:** `<img onerror="this.setAttribute('d..." loading="lazy" data-nuxt-img="" sizes="(max-width: 320px) 3..." srcset="https://res.cloudina..." class="media flex-1 object-..." src="https://res.cloudina...">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `.lg\:col-span-1 > .sm\:pr-6.media.flex-1`
+- **Target:** `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(3) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.max-w-full.sm\:px-6`
+  - **HTML:** `<img onerror="this.setAttribute('d..." loading="lazy" data-nuxt-img="" sizes="(max-width: 320px) 3..." srcset="https://res.cloudina..." class="media flex-1 object-..." src="https://res.cloudina...">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(3) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.max-w-full.sm\:px-6`
   - **HTML:** `<img onerror="this.setAttribute('d..." loading="lazy" data-nuxt-img="" sizes="(max-width: 320px) 3..." srcset="https://res.cloudina..." class="media flex-1 object-..." src="https://res.cloudina...">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
@@ -161,7 +165,7 @@
   - **HTML:** `<img onerror="this.setAttribute('d..." data-nuxt-img="" srcset="/_vercel/image?url=%..." class="w-12" src="/_vercel/image?url=%...">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `.lg\:col-span-3 > .sm\:pr-6.media.flex-1`
+- **Target:** `.sm\:pr-6`
   - **HTML:** `<img onerror="this.setAttribute('d..." loading="lazy" data-nuxt-img="" sizes="(max-width: 320px) 3..." srcset="https://res.cloudina..." class="media flex-1 object-..." src="https://res.cloudina...">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 

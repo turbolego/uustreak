@@ -1,10 +1,26 @@
 # WCAG Violations Report for Bergensavisen AS
 
-**Timestamp:** 2026-10-09T04:54:16.812Z
+**Timestamp:** 2026-10-10T08:11:06.522Z
 **URL:** [https://www.ba.no/](https://www.ba.no/)
-**Total Violations:** 4
+**Total Violations:** 7
 
 ## Violation Details
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Source:** Embedded code from Annonser
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, #cbb`
+  - **HTML:** `<div id="cbb" class="cbb" tabindex="0" role="button">`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
 
 ### Frames must have an accessible name
 
@@ -33,9 +49,49 @@
 
 #### Affected Elements:
 
-- **Target:** `brick-carousel-v3[data-slides="15"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
-  - **HTML:** `<section data-static="" role="region" class="carousel" aria-label="Innholdskarusell" aria-describedby="carousel-title-bf5a4412-f5f9-4627-a5e2-e4783b06aa92">`
+- **Target:** `brick-carousel-v3[data-slides="16"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
+  - **HTML:** `<section data-static="" role="region" class="carousel" aria-label="Innholdskarusell" aria-describedby="carousel-title-398a7df8-1f25-41ea-acc7-32502985a41b">`
   - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `#www\.ba\.no\/toppbanner_1 > a[target="_blank"]`
+  - **HTML:** `<a href="https://adclick.g.do..." target="_blank" style="display: block; heig...">`
+  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
+
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 3
+
+#### Affected Elements:
+
+- **Target:** `html`
+  - **HTML:** `<html lang="nb-NO" data-sitekey="bergen" data-paywall="false" data-pagemodel="rodimus" data-isfrontpage="true">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.ba\.no\/toppbanner_0, html`
+  - **HTML:** `<html>`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+
+- **Target:** `#eaframe, html`
+  - **HTML:** `<html xmlns="https://www.w3.org/1999/xhtml">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
 
 
 ### Elements marked as presentational should be consistently ignored
@@ -69,7 +125,7 @@
   - **HTML:** `<amedia-username orderpage="//www.ba.no/tilbud" publication="www.ba.no" subscription-text="Bli abonnent" subscription-link="true" links="" locale="nb-NO" theme="alfa">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#toppbanner-1`
-  - **HTML:** `<bazaar-ad data-component-layou...="commercial" position="toppbanner" class="am-bazaar-ad lp_topp..." labeled="true" display-config="" aria-labelledby="toppbanner-1-label" ad-index="1" id="toppbanner-1" data-id="toppbanner-1" tag-id="www.b…`
+- **Target:** `#toppbanner-1-label`
+  - **HTML:** `<span class="am-bazaar-ad--label" id="toppbanner-1-label">Annonse</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

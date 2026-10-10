@@ -1,8 +1,8 @@
 # WCAG Violations Report for Tromsdalen skole
 
-**Timestamp:** 2026-10-09T05:14:53.163Z
+**Timestamp:** 2026-10-10T08:29:04.156Z
 **URL:** [https://tromsdalen.tromsoskolen.no/](https://tromsdalen.tromsoskolen.no/)
-**Total Violations:** 10
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -22,22 +22,6 @@
   - **Failure summary:** Fix all of the following: ARIA attribute is not allowed: aria-level="2"
 
 
-### ARIA progressbar nodes must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA progressbar node has an accessible name
-- **Source:** Embedded code from Innhold i iframe
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-progressbar-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag111, EN-301-549, EN-9.1.1.1, RGAAv4, RGAA-11.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- **Target:** `iframe[name="f3abeebd9b808cac3"], ._55yn`
-  - **HTML:** `<span class="img _55ym _55yn _55yo" aria-busy="true" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuetext="Loading..."></span>`
-  - **Failure summary:** Fix any of the following: aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element has no title attribute
-
-
 ### Elements must only use permitted ARIA attributes
 
 - **Impact:** serious
@@ -52,22 +36,6 @@
 - **Target:** `iframe[allow="autoplay; encrypted-media"], #movie_player`
   - **HTML:** `<div class="html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-modern-caption ytp-livebadge-color unstarted-mode ytp-small-mode" tabindex="" id="movie_player" data-version="/s/player/5203c085/player_embed_es6.vflset/nb…`
   - **Failure summary:** Fix all of the following: aria-label attribute cannot be used on a div with no valid role attribute.
-
-
-### Certain ARIA roles must contain particular children
-
-- **Impact:** critical
-- **Description:** Ensure elements with an ARIA role that require child roles contain them
-- **Source:** Embedded code from Innhold i iframe
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-required-children?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- **Target:** `iframe[name="f3abeebd9b808cac3"], div[role="feed"]`
-  - **HTML:** `<div role="feed">`
-  - **Failure summary:** Fix any of the following: Element has children which are not allowed: table, a, img
 
 
 ### Buttons must have discernible text
@@ -93,7 +61,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 18
+- **Count:** 15
 
 #### Affected Elements:
 
@@ -157,18 +125,6 @@
   - **HTML:** `<a href="https://youtu.be/xYkjrYXG9tg?si=fyT1t1ijE752abI0" target="linkwindow1692">Om Lingdys og bruk</a>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.32 (foreground color: #337ab7, background color: #f9f9f9, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
 
-- **Target:** `iframe[name="f3abeebd9b808cac3"], abbr[data-utime="1789309174"] > .timestampContent`
-  - **HTML:** `<span class="timestampContent">about a month ago</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.04 (foreground color: #90949c, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1
-
-- **Target:** `iframe[name="f3abeebd9b808cac3"], #u_1_k_v8 > ._2165._2pi4[title="Like"]`
-  - **HTML:** `<div class="_2pi4 _36iq _4lk2 _3xre _2165" title="Like"><i class="_3-8_ _2yf7 _5jp _2166 img sp_0dpO6AyRzTf sx_d956c1"></i><i class="_3-8_ _2yf7 _3wdt _2166 img sp_0dpO6AyRzTf sx_9bd4b5"></i>Like</div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4 (foreground color: #7f7f7f, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1
-
-- **Target:** `iframe[name="f3abeebd9b808cac3"], #u_1_l_Iw > ._50sk._2pi4[title="Share"]`
-  - **HTML:** `<div class="_2pi4 _36iq _4lk2 _3xre _50sk" title="Share"><i class="_3-8_ _2yf7 _5jp _2167 img sp_0dpO6AyRzTf sx_bc2013"></i><i class="_3-8_ _2yf7 _3wdt _2167 img sp_0dpO6AyRzTf sx_067bd3"></i>Share</div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4 (foreground color: #7f7f7f, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1
-
 
 ### Frames with focusable content must not have tabindex=-1
 
@@ -225,7 +181,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 23
+- **Count:** 14
 
 #### Affected Elements:
 
@@ -283,41 +239,5 @@
 
 - **Target:** `a[target="_blank"]:nth-child(9)`
   - **HTML:** `<a href="http://tromsoskolen.no/index.php?artID=674&amp;navB=1" target="_blank"><img alt="" src="https://tromsoskolen.no/files/2018/08/m-kontrakt_elev-pc.png" style="width: 160px; height: 89px;"></a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `iframe[name="f3abeebd9b808cac3"], #u_0_1_cr`
-  - **HTML:** `<a href="https://www.facebook.com/people/FAU-Tromsdalen-skole-informasjonsside/100064823536942/?ref=embed_page" target="_blank" id="u_0_1_cr"></a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `iframe[name="f3abeebd9b808cac3"], .lfloat:nth-child(1)`
-  - **HTML:** `<a class="_3-8_ lfloat" href="https://www.facebook.com/905299739564918?ref=embed_page" target="_blank">`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `iframe[name="f3abeebd9b808cac3"], #u_1_8_Ky > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-  - **HTML:** `<a href="/permalink.php?story_fbid=pfbid032hhauq3GxGN41xmZUc2TmR6pZYh9ZtxEknVtoCfPTSCZi5wctQ9UUJzUCyApN5HMl&amp;id=100064823536942&amp;ref=embed_page" target="_blank"><i class="img sp_0dpO6AyRzTf sx_8033cd"></i></a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `iframe[name="f3abeebd9b808cac3"], #u_1_7_uJ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
-  - **HTML:** `<a href="https://www.facebook.com/photo.php?fbid=1426886999482071&set=a.453753226795458&type=3&ref=embed_page" target="_blank">`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `iframe[name="f3abeebd9b808cac3"], #u_1_7_uJ > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-  - **HTML:** `<a href="/permalink.php?story_fbid=pfbid0bYKuxoR6aiB75yYr6aqnveGc7GxLHCoWgMjhayJqPQpn6YhSbVFbW8kJ7gs1LujVl&amp;id=100064823536942&amp;ref=embed_page" target="_blank"><i class="img sp_0dpO6AyRzTf sx_8033cd"></i></a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `iframe[name="f3abeebd9b808cac3"], #u_1_9_JC > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-  - **HTML:** `<a href="/permalink.php?story_fbid=pfbid02nmYcA61328RBQbpSxb1Ba6VKxvkgvV5AKxcufPV93iDKM5F36jPCrcX1gWgdRRwcl&amp;id=100064823536942&amp;ref=embed_page" target="_blank"><i class="img sp_0dpO6AyRzTf sx_8033cd"></i></a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `iframe[name="f3abeebd9b808cac3"], #u_1_6_jL > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-  - **HTML:** `<a href="/permalink.php?story_fbid=pfbid0hunTzRgfFueaL3HNuVuDYAThDPZhM5342Di8AmycVj6yENwNctW86QEn5GnQRRLpl&amp;id=100064823536942&amp;ref=embed_page" target="_blank"><i class="img sp_0dpO6AyRzTf sx_8033cd"></i></a>`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `iframe[name="f3abeebd9b808cac3"], #u_1_5_mW > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > ._2p_a._3x-2[data-ft="{\"tn\":\"H\"}"] > div[data-ft="{\"tn\":\"H\"}"] > .mtm > ._2l7q > a`
-  - **HTML:** `<a href="https://www.facebook.com/photo.php?fbid=1413354170835354&set=a.453753226795458&type=3&ref=embed_page" target="_blank">`
-  - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
-
-- **Target:** `iframe[name="f3abeebd9b808cac3"], #u_1_5_mW > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(2) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a`
-  - **HTML:** `<a href="/permalink.php?story_fbid=pfbid026229Vx2ZFA7opimyb9SHvu8o5NesqSLPhDs3s88rwv1Rxkgg5pvsaJMBT2Pes2Ykl&amp;id=100064823536942&amp;ref=embed_page" target="_blank"><i class="img sp_0dpO6AyRzTf sx_8033cd"></i></a>`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 

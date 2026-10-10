@@ -1,6 +1,6 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2026-10-09T04:58:00.087Z
+**Timestamp:** 2026-10-10T08:18:26.594Z
 **URL:** [https://dns.no/](https://dns.no/)
 **Total Violations:** 5
 
@@ -122,19 +122,19 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month1 > tbody > tr:nth-child(1) > td:nth-child(4)`
-  - **HTML:** `<td><div time="1790830666955" data-tooltip="" class="day toMonth valid ">1</div></td>`
+  - **HTML:** `<td><div time="1790842696544" data-tooltip="" class="day toMonth valid ">1</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month1 > tbody > tr:nth-child(1) > td:nth-child(5)`
-  - **HTML:** `<td><div time="1790917066955" data-tooltip="" class="day toMonth valid ">2</div></td>`
+  - **HTML:** `<td><div time="1790929096544" data-tooltip="" class="day toMonth valid ">2</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month1 > tbody > tr:nth-child(1) > td:nth-child(6)`
-  - **HTML:** `<td><div time="1791003466955" data-tooltip="" class="day toMonth valid ">3</div></td>`
+  - **HTML:** `<td><div time="1791015496544" data-tooltip="" class="day toMonth valid ">3</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month1 > tbody > tr:nth-child(1) > td:nth-child(7)`
-  - **HTML:** `<td><div time="1791089866955" data-tooltip="" class="day toMonth valid ">4</div></td>`
+  - **HTML:** `<td><div time="1791101896544" data-tooltip="" class="day toMonth valid ">4</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month1 > tbody > tr:nth-child(2)`
@@ -150,27 +150,27 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month1 > tbody > tr:nth-child(5) > td:nth-child(1)`
-  - **HTML:** `<td><div time="1792994266955" data-tooltip="" class="day toMonth valid ">26</div></td>`
+  - **HTML:** `<td><div time="1793006296544" data-tooltip="" class="day toMonth valid ">26</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month1 > tbody > tr:nth-child(5) > td:nth-child(2)`
-  - **HTML:** `<td><div time="1793080666955" data-tooltip="" class="day toMonth valid ">27</div></td>`
+  - **HTML:** `<td><div time="1793092696544" data-tooltip="" class="day toMonth valid ">27</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month1 > tbody > tr:nth-child(5) > td:nth-child(3)`
-  - **HTML:** `<td><div time="1793167066955" data-tooltip="" class="day toMonth valid ">28</div></td>`
+  - **HTML:** `<td><div time="1793179096544" data-tooltip="" class="day toMonth valid ">28</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month1 > tbody > tr:nth-child(5) > td:nth-child(4)`
-  - **HTML:** `<td><div time="1793253466955" data-tooltip="" class="day toMonth valid ">29</div></td>`
+  - **HTML:** `<td><div time="1793265496544" data-tooltip="" class="day toMonth valid ">29</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month1 > tbody > tr:nth-child(5) > td:nth-child(5)`
-  - **HTML:** `<td><div time="1793339866955" data-tooltip="" class="day toMonth valid ">30</div></td>`
+  - **HTML:** `<td><div time="1793351896544" data-tooltip="" class="day toMonth valid ">30</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month1 > tbody > tr:nth-child(5) > td:nth-child(6)`
-  - **HTML:** `<td><div time="1793426266955" data-tooltip="" class="day toMonth valid ">31</div></td>`
+  - **HTML:** `<td><div time="1793438296544" data-tooltip="" class="day toMonth valid ">31</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > thead > .caption > .month-name[colspan="5"]`
@@ -186,7 +186,7 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(1) > td:nth-child(7)`
-  - **HTML:** `<td><div time="1793512666955" data-tooltip="" class="day toMonth valid ">1</div></td>`
+  - **HTML:** `<td><div time="1793524696544" data-tooltip="" class="day toMonth valid ">1</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.month2 > tbody > tr:nth-child(2)`
@@ -206,7 +206,7 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `tr:nth-child(6) > td:nth-child(1)`
-  - **HTML:** `<td><div time="1796018266955" data-tooltip="" class="day toMonth valid ">30</div></td>`
+  - **HTML:** `<td><div time="1796030296544" data-tooltip="" class="day toMonth valid ">30</div></td>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `div[data-postid="17091"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`

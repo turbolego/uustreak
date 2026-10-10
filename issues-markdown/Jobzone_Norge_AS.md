@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jobzone Norge AS
 
-**Timestamp:** 2026-10-09T05:03:12.335Z
+**Timestamp:** 2026-10-10T08:32:50.949Z
 **URL:** [https://jobzone.no/](https://jobzone.no/)
 **Total Violations:** 6
 
@@ -49,24 +49,24 @@
   - **HTML:** `<span class="rusty-red">Les mer om å jobbe hos oss</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.17 (foreground color: #00a298, background color: #ffffff, font size: 13.2pt (17.6px), font weight: bold). Expected contrast ratio of 4.5:1
 
+- **Target:** `.buttons-href-button[href="/ledige-stillinger/74259"]`
+  - **HTML:** `<a class="buttons-href-button" href="/ledige-stillinger/74259">Les mer og søk</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
+
+- **Target:** `.buttons-href-button[href="/ledige-stillinger/74260"]`
+  - **HTML:** `<a class="buttons-href-button" href="/ledige-stillinger/74260">Les mer og søk</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
+
 - **Target:** `.buttons-href-button[href="/ledige-stillinger/74257"]`
   - **HTML:** `<a class="buttons-href-button" href="/ledige-stillinger/74257">Les mer og søk</a>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
-- **Target:** `.position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-short-deadline > .box`
+- **Target:** `.position-list-card-wrapper:nth-child(4) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-short-deadline > .box`
   - **HTML:** `<div class="box ">KORT FRIST</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.17 (foreground color: #00a298, background color: #ffffff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1
 
 - **Target:** `.buttons-href-button[href="/ledige-stillinger/74073"]`
   - **HTML:** `<a class="buttons-href-button" href="/ledige-stillinger/74073">Les mer og søk</a>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
-
-- **Target:** `.buttons-href-button[href="/ledige-stillinger/74258"]`
-  - **HTML:** `<a class="buttons-href-button" href="/ledige-stillinger/74258">Les mer og søk</a>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
-
-- **Target:** `.buttons-href-button[href="/ledige-stillinger/74252"]`
-  - **HTML:** `<a class="buttons-href-button" href="/ledige-stillinger/74252">Les mer og søk</a>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.17 (foreground color: #ffffff, background color: #00a298, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
 
 - **Target:** `.button-component`
@@ -217,19 +217,19 @@
   - **HTML:** `<img class="rotate" src="/Static/icons/arrow-down.svg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
+- **Target:** `div[data-position-id="74259"] > img`
+  - **HTML:** `<img src="/Static/icons/favourite_empty.svg">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
+- **Target:** `div[data-position-id="74260"] > img`
+  - **HTML:** `<img src="/Static/icons/favourite_empty.svg">`
+  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
+
 - **Target:** `div[data-position-id="74257"] > img`
   - **HTML:** `<img src="/Static/icons/favourite_empty.svg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
 - **Target:** `div[data-position-id="74073"] > img`
-  - **HTML:** `<img src="/Static/icons/favourite_empty.svg">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `div[data-position-id="74258"] > img`
-  - **HTML:** `<img src="/Static/icons/favourite_empty.svg">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `div[data-position-id="74252"] > img`
   - **HTML:** `<img src="/Static/icons/favourite_empty.svg">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
@@ -354,43 +354,43 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.position-list-card-wrapper:nth-child(1) > .position-card.card > .position-card-top > .position-card-top-content`
-  - **HTML:** `<div class="position-card-top-content"><a class="position-card-top-content-header" href="/ledige-stillinger/74257">Stort behov for hjelpearbeidere i Bodø</a><p class="pos-title">Hjelearbeider Bodø</p></div>`
+  - **HTML:** `<div class="position-card-top-content"><a class="position-card-top-content-header" href="/ledige-stillinger/74259">En viktig rolle i et miljøengasjert team</a><p class="pos-title">Maskinfører / driftsoperatør</p><p class="pos-title">MAREN …`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.position-list-card-wrapper:nth-child(1) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor`
-  - **HTML:** `<div class="position-card-top-favor"><div class="favorite-mark" data-position-id="74257" data-toggle="popover" title="Legg til i favoritter"><img src="/Static/icons/favourite_empty.svg"></div></div>`
+  - **HTML:** `<div class="position-card-top-favor"><div class="favorite-mark" data-position-id="74259" data-toggle="popover" title="Legg til i favoritter"><img src="/Static/icons/favourite_empty.svg"></div></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.position-list-card-wrapper:nth-child(1) > .position-card.card > .position-card-bot`
+  - **HTML:** `<div class="position-card-bot"><div class="position-card-bot-info"><p>Avdeling: Mandal</p><p>Søknads​frist: 01.11.2026</p><p>Antall stillinger: 1</p></div><div class="position-card-bot-button"><a class="buttons-href-button" href="/ledige-s…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-top > .position-card-top-content`
+  - **HTML:** `<div class="position-card-top-content"><a class="position-card-top-content-header" href="/ledige-stillinger/74260">Har du kontroll på ordre, logistikk og leveranser?</a><p class="pos-title">Order &amp; Logistics Coordinator</p><p class="po…`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor`
+  - **HTML:** `<div class="position-card-top-favor"><div class="favorite-mark" data-position-id="74260" data-toggle="popover" title="Legg til i favoritter"><img src="/Static/icons/favourite_empty.svg"></div></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.position-list-card-wrapper:nth-child(2) > .position-card.card > .position-card-bot`
   - **HTML:** `<div class="position-card-bot">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.position-list-card-wrapper:nth-child(2)`
-  - **HTML:** `<div class="position-list-card-wrapper">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
 - **Target:** `.position-list-card-wrapper:nth-child(3) > .position-card.card > .position-card-top > .position-card-top-content`
-  - **HTML:** `<div class="position-card-top-content"><a class="position-card-top-content-header" href="/ledige-stillinger/74258">Sjåfør klasse C/CE søkes, oppstart snarest!</a><p class="pos-title">Sjåfør</p></div>`
+  - **HTML:** `<div class="position-card-top-content"><a class="position-card-top-content-header" href="/ledige-stillinger/74257">Stort behov for hjelpearbeidere i Bodø</a><p class="pos-title">Hjelearbeider Bodø</p></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.position-list-card-wrapper:nth-child(3) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor`
-  - **HTML:** `<div class="position-card-top-favor"><div class="favorite-mark" data-position-id="74258" data-toggle="popover" title="Legg til i favoritter"><img src="/Static/icons/favourite_empty.svg"></div></div>`
+  - **HTML:** `<div class="position-card-top-favor"><div class="favorite-mark" data-position-id="74257" data-toggle="popover" title="Legg til i favoritter"><img src="/Static/icons/favourite_empty.svg"></div></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.position-list-card-wrapper:nth-child(3) > .position-card.card > .position-card-bot`
   - **HTML:** `<div class="position-card-bot">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.position-list-card-wrapper:nth-child(4) > .position-card.card > .position-card-top > .position-card-top-content`
-  - **HTML:** `<div class="position-card-top-content"><a class="position-card-top-content-header" href="/ledige-stillinger/74252">Entry-Level Opportunity in Inspection &amp; NDT</a><p class="pos-title">Inspection Assistant / Operator</p></div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.position-list-card-wrapper:nth-child(4) > .position-card.card > .position-card-top > div:nth-child(2) > .position-card-top-favor`
-  - **HTML:** `<div class="position-card-top-favor"><div class="favorite-mark" data-position-id="74252" data-toggle="popover" title="Legg til i favoritter"><img src="/Static/icons/favourite_empty.svg"></div></div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.position-list-card-wrapper:nth-child(4) > .position-card.card > .position-card-bot`
-  - **HTML:** `<div class="position-card-bot"><div class="position-card-bot-info"><p>Avdeling: Stavanger</p><p>Søknads​frist: Snarest</p><p>Antall stillinger: 2</p></div><div class="position-card-bot-button"><a class="buttons-href-button" href="/ledige-s…`
+- **Target:** `.position-list-card-wrapper:nth-child(4)`
+  - **HTML:** `<div class="position-list-card-wrapper">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.candidate-container > div > div:nth-child(3)`

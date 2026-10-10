@@ -1,6 +1,6 @@
 # WCAG Violations Report for Trones skole
 
-**Timestamp:** 2026-10-09T05:14:06.712Z
+**Timestamp:** 2026-10-10T08:29:43.565Z
 **URL:** [https://www.minskole.no/trones](https://www.minskole.no/trones)
 **Total Violations:** 7
 
@@ -18,7 +18,7 @@
 #### Affected Elements:
 
 - **Target:** `#weatherHolder > div:nth-child(2) > div > div:nth-child(3)`
-  - **HTML:** `<div style="float: right; height: 50px; text-align:left; margin-right: 20px; font-size: 18px; line-height: 50px; color: Red">9°</div>`
+  - **HTML:** `<div style="float: right; height: 50px; text-align:left; margin-right: 20px; font-size: 18px; line-height: 50px; color: Red">11°</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.44 (foreground color: #ff0000, background color: #eeeeee, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `#weatherHolder > div:nth-child(3) > div > div:nth-child(3)`
@@ -26,7 +26,7 @@
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.44 (foreground color: #ff0000, background color: #eeeeee, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `#weatherHolder > div:nth-child(4) > div > div:nth-child(3)`
-  - **HTML:** `<div style="float: right; height: 50px; text-align:left; margin-right: 20px; font-size: 18px; line-height: 50px; color: Red">11°</div>`
+  - **HTML:** `<div style="float: right; height: 50px; text-align:left; margin-right: 20px; font-size: 18px; line-height: 50px; color: Red">14°</div>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.44 (foreground color: #ff0000, background color: #eeeeee, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `#ContentPlaceHolder1_btnAppendNews`

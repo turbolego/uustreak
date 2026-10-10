@@ -1,6 +1,6 @@
 # WCAG Violations Report for Biltema AS
 
-**Timestamp:** 2026-10-09T04:54:42.968Z
+**Timestamp:** 2026-10-10T08:11:41.503Z
 **URL:** [https://www.biltema.no/](https://www.biltema.no/)
 **Total Violations:** 10
 
@@ -33,7 +33,7 @@
 
 #### Affected Elements:
 
-- **Target:** `.block__editorial > .block--inner > .maxwidth--66.block__content.center > .block__title`
+- **Target:** `.block__editorial > .block--inner > .maxwidth--66.center.block__content > .block__title`
   - **HTML:** `<h2 class="block__title"></h2>`
   - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
 
@@ -189,7 +189,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 10
+- **Count:** 8
 
 #### Affected Elements:
 
@@ -223,13 +223,5 @@
 
 - **Target:** `.header__info__item.link--black:nth-child(4) > span:nth-child(3)`
   - **HTML:** `<span>&nbsp;- Logg inn</span>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.heading--l`
-  - **HTML:** `<div class="heading--l text--semibold" data-nosnippet="true">Vi opplever for øyeblikket tekniske problemer med telefonsystemet vårt på kundeservice.</div>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `.page__body`
-  - **HTML:** `<div class="page__body" data-nosnippet="true">Dersom du trenger veiledning, oppfordrer vi deg til å benytte chatten her på nettsiden eller sende oss en e-post, så hjelper vi deg så raskt vi kan. Takk for tålmodigheten!</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

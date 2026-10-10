@@ -1,6 +1,6 @@
 # WCAG Violations Report for Eidsiva Bredbånd AS
 
-**Timestamp:** 2026-10-09T04:58:10.090Z
+**Timestamp:** 2026-10-10T08:20:30.659Z
 **URL:** [https://www.eidsiva.no/](https://www.eidsiva.no/)
 **Total Violations:** 6
 
@@ -41,7 +41,7 @@
 
 #### Affected Elements:
 
-- **Target:** `#prsCkyM1n8k > main`
+- **Target:** `#pyGmWCaYNY4 > main`
   - **HTML:** `<main>`
   - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
 

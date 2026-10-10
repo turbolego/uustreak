@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-10-09T05:03:32.460Z
+**Timestamp:** 2026-10-10T08:33:20.894Z
 **URL:** [https://jysk.no/](https://jysk.no/)
 **Total Violations:** 2
 
@@ -41,7 +41,7 @@
 
 #### Affected Elements:
 
-- **Target:** `.w-10\/12.content-center[href$="sleepingdays"] > .text-white.group-hover\:underline`
+- **Target:** `.theme-campaign-bar.h-9[data-testid="campaign-bar"]:nth-child(1) > .w-10\/12.content-center.self-center > .text-white.group-hover\:underline`
   - **HTML:** `<span style="color:#FFFFFF" class="text-white group-hover:underline">Forny soverommet med små priser og store besparelser</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -106,11 +106,11 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.hover\:border-gray-500`
-  - **HTML:** `<button type="button" role="checkbox" aria-checked="false" data-state="unchecked" value="false" class="flex items-center ju..." data-testid="checkbox" aria-labelledby="_R_6ue4npkp9fivb_" tabindex="0">`
+  - **HTML:** `<button type="button" role="checkbox" aria-checked="false" data-state="unchecked" value="false" class="flex items-center ju..." data-testid="checkbox" aria-labelledby="_R_dsrpfdkp9fivb_" tabindex="0">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#_R_6ue4npkp9fivb_`
-  - **HTML:** `<span id="_R_6ue4npkp9fivb_" class="w-full px-2 peer-disabled:cursor-not-allowed peer-disabled:text-gray-400">`
+- **Target:** `#_R_dsrpfdkp9fivb_`
+  - **HTML:** `<span id="_R_dsrpfdkp9fivb_" class="w-full px-2 peer-disabled:cursor-not-allowed peer-disabled:text-gray-400">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `#onetrust-banner-sdk`

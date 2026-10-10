@@ -1,10 +1,26 @@
 # WCAG Violations Report for Mediehuset Nettavisen AS
 
-**Timestamp:** 2026-10-09T05:05:34.750Z
+**Timestamp:** 2026-10-10T08:03:47.218Z
 **URL:** [https://www.nettavisen.no/](https://www.nettavisen.no/)
-**Total Violations:** 5
+**Total Violations:** 7
 
 ## Violation Details
+
+### ARIA commands must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
+- **Source:** Embedded code from Annonser
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-command-name?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, #cbb`
+  - **HTML:** `<div id="cbb" class="cbb" tabindex="0" role="button">`
+  - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
 
 ### Headings should not be empty
 
@@ -18,8 +34,24 @@
 #### Affected Elements:
 
 - **Target:** `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > h1`
-  - **HTML:** `<h1 class="na-logo-header"> <a href="/" tabindex="-1" aria-hidden="true">*Nettavisen.*</a> </h1>`
+  - **HTML:** `<h1 data-adp-clicklabel="brandheader-logo" class="na-logo-header"> <a href="/" tabindex="-1" aria-hidden="true">*Nettavisen.*</a> </h1>`
   - **Failure summary:** Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements t…
+
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Source:** Embedded code from Annonser
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.nettavisen\.no\/toppbanner_0, iframe[width="980"]`
+  - **HTML:** `<iframe src="https://cdn.app.tact..." width="980" height="300" frameborder="0" scrolling="0" style="border: none;">`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
 
 
 ### Banner landmark should not be contained in another landmark
@@ -70,7 +102,7 @@
   - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
 
 - **Target:** `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > .nav-wrap > nav`
-  - **HTML:** `<nav class="nav lp_nav">`
+  - **HTML:** `<nav data-adp-clicklabel="brandheader-toplinks" class="nav lp_nav">`
   - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
 
 

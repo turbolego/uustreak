@@ -1,6 +1,6 @@
 # WCAG Violations Report for Flytoget AS
 
-**Timestamp:** 2026-10-09T05:00:23.995Z
+**Timestamp:** 2026-10-10T08:25:30.023Z
 **URL:** [https://flytoget.no/](https://flytoget.no/)
 **Total Violations:** 7
 
@@ -101,12 +101,16 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 9
+- **Count:** 10
 
 #### Affected Elements:
 
 - **Target:** `.skip-to-main`
   - **HTML:** `<a class="skip-to-main" href="#main-content">Gå til hovedinnholdet</a>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.travel-warning`
+  - **HTML:** `<div class="travel-warning">Sjekk din avgang for detaljer om reisen</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.travel-input-from`
@@ -121,12 +125,12 @@
   - **HTML:** `<div class="date-label-container">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `div[title="07:10"]`
-  - **HTML:** `<div class="col-xs-4 departure" title="07:10" date-fulldate="2026-10-09_07-10">10 min</div>`
+- **Target:** `div[title="10:30"]`
+  - **HTML:** `<div class="col-xs-4 departure" title="10:30" date-fulldate="2026-10-10_10-30">5 min</div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.primary-row > .arrival.col-xs-4`
-  - **HTML:** `<div class="col-xs-4 arrival">07:32<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12"><path d="M16.3 11.7L9 3.5l-7.3 8.2-1.4-1.4L9 .5l8.7 9.8z"></path></svg></div>`
+  - **HTML:** `<div class="col-xs-4 arrival">10:52<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12"><path d="M16.3 11.7L9 3.5l-7.3 8.2-1.4-1.4L9 .5l8.7 9.8z"></path></svg></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.secondary-row`

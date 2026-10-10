@@ -1,8 +1,8 @@
 # WCAG Violations Report for Komplett Services AS
 
-**Timestamp:** 2026-10-09T05:04:12.256Z
+**Timestamp:** 2026-10-10T08:34:51.243Z
 **URL:** [https://www.komplett.no/](https://www.komplett.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -42,7 +42,7 @@
 #### Affected Elements:
 
 - **Target:** `#coiOverlay`
-  - **HTML:** `<div id="coiOverlay" role="banner" style="display: flex;" aria-hidden="false">`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
   - **Failure summary:** Fix any of the following: Document has more than one banner landmark
 
 
@@ -58,10 +58,26 @@
 #### Affected Elements:
 
 - **Target:** `#coiOverlay`
-  - **HTML:** `<div id="coiOverlay" role="banner" style="display: flex;" aria-hidden="false">`
+  - **HTML:** `<div id="coiOverlay" role="banner" aria-hidden="false" style="display: flex;">`
   - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
 
 - **Target:** `.header__menu`
   - **HTML:** `<nav class="hide-xs hide-sm header__menu">`
   - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `.chat__menu-title`
+  - **HTML:** `<div class="chat__menu-title">Vi hjelper deg!</div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

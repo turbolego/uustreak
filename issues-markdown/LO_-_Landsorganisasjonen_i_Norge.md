@@ -1,6 +1,6 @@
 # WCAG Violations Report for LO - Landsorganisasjonen i Norge
 
-**Timestamp:** 2026-10-09T05:04:47.581Z
+**Timestamp:** 2026-10-10T08:37:17.427Z
 **URL:** [https://www.lo.no/](https://www.lo.no/)
 **Total Violations:** 3
 
@@ -17,47 +17,47 @@
 
 #### Affected Elements:
 
-- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(3) > .articleTeaser__image > .image > img`
+- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(4) > .articleTeaser__image > .image > img`
   - **HTML:** `<img data-image="/siteassets/besokssenteret/utstilling/0f4a5090.jpg?mode=crop&amp;scale=both&amp;quality=90&amp;width=600&amp;height=340" src="/siteassets/besokssenteret/utstilling/0f4a5090.jpg?mode=crop&amp;scale=both&amp;quality=10&amp;w…`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(5) > .articleTeaser__image > .image > img`
+- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(6) > .articleTeaser__image > .image > img`
   - **HTML:** `<img data-image="/contentassets/c34c849d556d46099d812a26a4d4044c/kran-dame-utsikt-ntb_lm6rf1hnxoc.jpg?mode=crop&scale=both&quality=90&width=600&height=340" ...>`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(7) > .articleTeaser__image > .image > img`
+- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(8) > .articleTeaser__image > .image > img`
   - **HTML:** `<img data-image="/papirfly/asset/7687232.png?mode=crop&amp;scale=both&amp;quality=90&amp;width=600&amp;height=340" src="/papirfly/asset/7687232.png?mode=crop&amp;scale=both&amp;quality=10&amp;width=600&amp;height=340">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(8) > .articleTeaser__image > .image > img`
+- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(9) > .articleTeaser__image > .image > img`
   - **HTML:** `<img data-image="/contentassets/b87b3d578d504ece8d983541466110cd/1-mai-2026-lo-leder-kine-0956.jpg?mode=crop&scale=both&quality=90&width=600&height=340" src="/contentassets/b87b3d578d504ece8d983541466110cd/1-mai-2026-lo-leder-kine-0956.jpg…`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(9) > .articleTeaser__image > .image > img`
+- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(10) > .articleTeaser__image > .image > img`
   - **HTML:** `<img data-image="/contentassets/830b3..." src="/contentassets/830b3...">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(11) > .articleTeaser__image > .image > img`
+- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(12) > .articleTeaser__image > .image > img`
   - **HTML:** `<img data-image="/globalassets/0-bilder/ntb_saluenwlgqg.jpg?mode=crop&amp;scale=both&amp;quality=90&amp;width=600&amp;height=340" src="/globalassets/0-bilder/ntb_saluenwlgqg.jpg?mode=crop&amp;scale=both&amp;quality=10&amp;width=600&amp;hei…`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--blue:nth-child(12) > .articleTeaser__image > .image > img`
+- **Target:** `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--blue:nth-child(13) > .articleTeaser__image > .image > img`
   - **HTML:** `<img data-image="/globalassets/intranett/illustrasjoner/host.png?width=640" src="/globalassets/intranett/illustrasjoner/host.png?mode=crop&amp;scale=both&amp;quality=10&amp;width=640">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(13) > .articleTeaser__image > .image > img`
+- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(14) > .articleTeaser__image > .image > img`
   - **HTML:** `<img data-image="https://intranett.lo..." src="https://intranett.lo...">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(14) > .articleTeaser__image > .image > img`
+- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(15) > .articleTeaser__image > .image > img`
   - **HTML:** `<img data-image="/globalassets/samfer..." src="/globalassets/samfer...">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(18) > .articleTeaser__image > .image > img`
+- **Target:** `.articleTeaser--medium.articleTeaser:nth-child(19) > .articleTeaser__image > .image > img`
   - **HTML:** `<img data-image="/contentassets/c03006ef906241368f40aeeb95a8cbea/handtrykk-lo-ikoner-rod-rgb--1-.png?mode=crop&scale=both&quality=90&width=600&height=340" ...>`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--blue:nth-child(19) > .articleTeaser__image > .image > img`
+- **Target:** `.visitorcenter-teaser.visitorcenter--medium.visitorcenter-teaser--blue:nth-child(20) > .articleTeaser__image > .image > img`
   - **HTML:** `<img data-image="/globalassets/loingenior/ungdom-lo-sormarka-f52a5431.jpg?width=640" src="/globalassets/loingenior/ungdom-lo-sormarka-f52a5431.jpg?mode=crop&amp;scale=both&amp;quality=10&amp;width=640">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 

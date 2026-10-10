@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Hudøy
 
-**Timestamp:** 2026-10-09T05:12:43.741Z
+**Timestamp:** 2026-10-10T08:21:57.486Z
 **URL:** [https://hudoy.no/](https://hudoy.no/)
 **Total Violations:** 5
 
@@ -18,7 +18,7 @@
 #### Affected Elements:
 
 - **Target:** `.av-countdown-time`
-  - **HTML:** `<span class="av-countdown-time " data-upate-width="days" style="">255</span>`
+  - **HTML:** `<span class="av-countdown-time " data-upate-width="days" style="">253</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.41 (foreground color: #c84246, background color: #fff4ce, font size: 16.5pt (22px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.av-countdown-time-label`
@@ -38,7 +38,7 @@
 #### Affected Elements:
 
 - **Target:** `iframe`
-  - **HTML:** `<iframe src="//player.vimeo.com/video/1035582714?portrait=0&amp;byline=0&amp;title=0&amp;badge=0&amp;loop=1&amp;autopause=0&amp;api=1&amp;rel=0&amp;player_id=player_330_1521666970_712082675&amp;color=00414f"></iframe>`
+  - **HTML:** `<iframe src="//player.vimeo.com/video/1035582714?portrait=0&amp;byline=0&amp;title=0&amp;badge=0&amp;loop=1&amp;autopause=0&amp;api=1&amp;rel=0&amp;player_id=player_330_1337550787_182480417&amp;color=00414f"></iframe>`
   - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
 
 
@@ -137,20 +137,12 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 29
+- **Count:** 27
 
 #### Affected Elements:
 
-- **Target:** `iframe, .FocusTarget_module_focusTarget__abd564d5`
-  - **HTML:** `<div class="FocusTarget_module_focusTarget__abd564d5 shared_module_focusable__29a0c6d5" role="slider" aria-label="Progress Bar" aria-valuemin="0" aria-valuemax="60" aria-valuenow="15" aria-valuetext="00:14 of 01:00" tabindex="0" data-progr…`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `iframe, .VolumeControl_module_volumeControl__02ffae11`
-  - **HTML:** `<div role="slider" class="VolumeControl_module..." tabindex="0" aria-label="Volume (use up/down ..." aria-valuenow="0" aria-valuetext="0% volume" aria-valuemin="0" aria-valuemax="100" data-volume-control="true" style="overflow: hidden; op.…`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `iframe, a`
-  - **HTML:** `<a href="https://vimeo.com/1035582714?fl=pl&fe=vl" class="Link_module_link__bdf8051d VimeoLogoLink_module_vimeoLogo__8636d8c9 shared_module_focusable__29a0c6d5" aria-describedby="new-window" target="_blank" rel="noopener" data-vimeo-logo="…`
+- **Target:** `iframe, #error`
+  - **HTML:** `<div id="error" class="error">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.active-slide.slide-entry-wrap`

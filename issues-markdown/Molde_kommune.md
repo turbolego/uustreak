@@ -1,26 +1,10 @@
 # WCAG Violations Report for Molde kommune
 
-**Timestamp:** 2026-10-09T05:06:07.072Z
+**Timestamp:** 2026-10-10T08:04:01.552Z
 **URL:** [https://www.molde.kommune.no/](https://www.molde.kommune.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- **Target:** `.area-message-list-item__content > p`
-  - **HTML:** `<p>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.12 (foreground color: #ffffff, background color: #b9655f, font size: 16.5pt (22px), font weight: normal). Expected contrast ratio of 4.5:1
-
 
 ### Document should have one main landmark
 
@@ -61,13 +45,9 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 19
+- **Count:** 18
 
 #### Affected Elements:
-
-- **Target:** `.alert-box`
-  - **HTML:** `<div class="alert-box">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.top-boxes`
   - **HTML:** `<div class="top-boxes">`
@@ -117,7 +97,7 @@
   - **HTML:** `<div class="webPart wp-view-all" id="ctl00_ctl00_ctl00_innhold_MidtSone_ctl03_WebpartId_6455">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.middle-boxes--middle.middle-boxes:nth-child(11)`
+- **Target:** `.middle-boxes--middle.middle-boxes:nth-child(10)`
   - **HTML:** `<div class="middle-boxes middle-boxes--middle">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
@@ -125,7 +105,7 @@
   - **HTML:** `<div class="middle-boxes middle-boxes--calendar">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `.middle-boxes--middle.middle-boxes:nth-child(13)`
+- **Target:** `.middle-boxes--middle.middle-boxes:nth-child(12)`
   - **HTML:** `<div class="middle-boxes middle-boxes--middle">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden i Innlandet
 
-**Timestamp:** 2026-10-09T05:12:58.194Z
+**Timestamp:** 2026-10-10T08:24:17.409Z
 **URL:** [https://www.sinn.no/](https://www.sinn.no/)
 **Total Violations:** 4
 
@@ -161,13 +161,9 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
-
-- **Target:** `.skip-link`
-  - **HTML:** `<a class="skip-link visually-hidden-focusable" href="#theme-main"> Skip to content</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `body > .pt-5.mt-5.px-3`
   - **HTML:** `<div class="text-white wrapper bg-dark mt-5 pt-5 px-3" id="wrapper-footer-widgets">`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Unicare BAB AS
 
-**Timestamp:** 2026-10-09T05:15:23.730Z
+**Timestamp:** 2026-10-10T08:31:31.843Z
 **URL:** [https://unicare.no/](https://unicare.no/)
 **Total Violations:** 7
 
@@ -13,17 +13,13 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
 - **Target:** `#declineButton`
   - **HTML:** `<button tabindex="0" aria-label="Avvis alle" id="declineButton" class="coi-banner__decline" role="alert" aria-atomic="true" style="display: flex;">Avvis alle</button>`
   - **Failure summary:** Fix any of the following: ARIA role alert is not allowed for given element
-
-- **Target:** `iframe[width="100%"], body`
-  - **HTML:** `<body role="presentation">`
-  - **Failure summary:** Fix any of the following: ARIA role presentation is not allowed for given element
 
 - **Target:** `#splide01-slide01`
   - **HTML:** `<li class="splide__slide is-active is-visible" id="splide01-slide01" role="tabpanel" aria-roledescription="slide" aria-label="1 of 5" style="width: calc(100%);">`
@@ -53,13 +49,9 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
-
-- **Target:** `.inner-content.odd > h3`
-  - **HTML:** `<h3><a href="https://unicare.no/forskning-og-utvikling/om-fou/" target="_self">Forskning og utvikling</a></h3>`
-  - **Failure summary:** Fix any of the following: Heading order invalid
 
 - **Target:** `article[data-articleid="3024"] > a[target="_self"] > .card-body > h3[itemprop="headline"]`
   - **HTML:** `<h3 itemprop="headline">Nye ESC-retningslinjer styrker hjerterehabiliteringen</h3>`

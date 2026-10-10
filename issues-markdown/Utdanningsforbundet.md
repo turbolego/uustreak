@@ -1,6 +1,6 @@
 # WCAG Violations Report for Utdanningsforbundet
 
-**Timestamp:** 2026-10-09T05:14:58.373Z
+**Timestamp:** 2026-10-10T08:33:19.308Z
 **URL:** [https://www.utdanningsforbundet.no/](https://www.utdanningsforbundet.no/)
 **Total Violations:** 6
 
@@ -50,7 +50,7 @@
 #### Affected Elements:
 
 - **Target:** `iframe[frameborder="0"]`
-  - **HTML:** `<iframe src="https://embed.acast.com/5ca73b1ee061b6670b629d28/6ac4aa3c924bc02b55934511?bgColor=f0f0f0" frameborder="0" width="100%" height="80px"></iframe>`
+  - **HTML:** `<iframe src="https://embed.acast.com/5ca73b1ee061b6670b629d28/6ac4aa3c924bc02b55934511?bgColor=f0f0f0" frameborder="0" width="100%" height="190px"></iframe>`
   - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
 
 

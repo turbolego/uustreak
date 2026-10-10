@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Turistforening
 
-**Timestamp:** 2026-10-09T05:10:43.580Z
+**Timestamp:** 2026-10-10T08:20:00.460Z
 **URL:** [https://www.dnt.no/stavanger](https://www.dnt.no/stavanger)
 **Total Violations:** 10
 
@@ -57,18 +57,6 @@
 
 #### Affected Elements:
 
-- **Target:** `button[aria-controls="modal-613280"]`
-  - **HTML:** `<button aria-controls="modal-613280" aria-labelledby="activity-name-613280 activity-date-613280 activity-geo-613280 activity-details-613280" class="cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10"><span class="sr-only">Åp…`
-  - **Failure summary:** Fix all of the following: Invalid ARIA attribute value: aria-controls="modal-613280"
-
-- **Target:** `button[aria-controls="modal-614228"]`
-  - **HTML:** `<button aria-controls="modal-614228" aria-labelledby="activity-name-614228 activity-date-614228 activity-geo-614228 activity-details-614228" class="cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10"><span class="sr-only">Åp…`
-  - **Failure summary:** Fix all of the following: Invalid ARIA attribute value: aria-controls="modal-614228"
-
-- **Target:** `button[aria-controls="modal-614227"]`
-  - **HTML:** `<button aria-controls="modal-614227" aria-labelledby="activity-name-614227 activity-date-614227 activity-geo-614227 activity-details-614227" class="cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10"><span class="sr-only">Åp…`
-  - **Failure summary:** Fix all of the following: Invalid ARIA attribute value: aria-controls="modal-614227"
-
 - **Target:** `button[aria-controls="modal-578528"]`
   - **HTML:** `<button aria-controls="modal-578528" aria-labelledby="activity-name-578528 activity-date-578528 activity-geo-578528 activity-details-578528" class="cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10"><span class="sr-only">Åp…`
   - **Failure summary:** Fix all of the following: Invalid ARIA attribute value: aria-controls="modal-578528"
@@ -88,6 +76,18 @@
 - **Target:** `button[aria-controls="modal-619515"]`
   - **HTML:** `<button aria-controls="modal-619515" aria-labelledby="activity-name-619515 activity-date-619515 activity-geo-619515 activity-details-619515" class="cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10"><span class="sr-only">Åp…`
   - **Failure summary:** Fix all of the following: Invalid ARIA attribute value: aria-controls="modal-619515"
+
+- **Target:** `button[aria-controls="modal-616258"]`
+  - **HTML:** `<button aria-controls="modal-616258" aria-labelledby="activity-name-616258 activity-date-616258 activity-geo-616258 activity-details-616258" class="cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10"><span class="sr-only">Åp…`
+  - **Failure summary:** Fix all of the following: Invalid ARIA attribute value: aria-controls="modal-616258"
+
+- **Target:** `button[aria-controls="modal-618132"]`
+  - **HTML:** `<button aria-controls="modal-618132" aria-labelledby="activity-name-618132 activity-date-618132 activity-geo-618132 activity-details-618132" class="cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10"><span class="sr-only">Åp…`
+  - **Failure summary:** Fix all of the following: Invalid ARIA attribute value: aria-controls="modal-618132"
+
+- **Target:** `button[aria-controls="modal-616241"]`
+  - **HTML:** `<button aria-controls="modal-616241" aria-labelledby="activity-name-616241 activity-date-616241 activity-geo-616241 activity-details-616241" class="cursor-pointer inset-0 !absolute w-full h-full focus-outline z-10"><span class="sr-only">Åp…`
+  - **Failure summary:** Fix all of the following: Invalid ARIA attribute value: aria-controls="modal-616241"
 
 
 ### Buttons must have discernible text

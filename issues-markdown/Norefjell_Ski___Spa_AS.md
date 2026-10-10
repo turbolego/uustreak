@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norefjell Ski & Spa AS
 
-**Timestamp:** 2026-10-09T05:07:07.442Z
+**Timestamp:** 2026-10-10T08:06:50.154Z
 **URL:** [https://www.norefjell.com/](https://www.norefjell.com/)
 **Total Violations:** 2
 
@@ -17,8 +17,8 @@
 
 #### Affected Elements:
 
-- **Target:** `#mv0i6tm83wbzb2vx1po-contact\:email`
-  - **HTML:** `<input class="mhForm__input mhForm__input--email" id="mv0i6tm83wbzb2vx1po-contact:email" name="contact:email" type="email" aria-describedby="mv0i6tm83wbzb2vx1po-error-contact:email" autocomplete="email">`
+- **Target:** `#mv241vpyttm1io4jnf-contact\:email`
+  - **HTML:** `<input class="mhForm__input mhForm__input--email" id="mv241vpyttm1io4jnf-contact:email" name="contact:email" type="email" aria-describedby="mv241vpyttm1io4jnf-error-contact:email" autocomplete="email">`
   - **Failure summary:** Fix all of the following: Only title used to generate label for form element
 
 
@@ -33,7 +33,7 @@
 
 #### Affected Elements:
 
-- **Target:** `#mv0i6tm83wbzb2vx1po-contact\:email`
-  - **HTML:** `<input class="mhForm__input mhForm__input--email" id="mv0i6tm83wbzb2vx1po-contact:email" name="contact:email" type="email" aria-describedby="mv0i6tm83wbzb2vx1po-error-contact:email" autocomplete="email">`
+- **Target:** `#mv241vpyttm1io4jnf-contact\:email`
+  - **HTML:** `<input class="mhForm__input mhForm__input--email" id="mv241vpyttm1io4jnf-contact:email" name="contact:email" type="email" aria-describedby="mv241vpyttm1io4jnf-error-contact:email" autocomplete="email">`
   - **Failure summary:** Fix all of the following: Form element has explicit <label> that is hidden
 

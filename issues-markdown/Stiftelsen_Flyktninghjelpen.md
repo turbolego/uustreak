@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Flyktninghjelpen
 
-**Timestamp:** 2026-10-09T05:11:47.212Z
+**Timestamp:** 2026-10-10T08:21:21.192Z
 **URL:** [https://www.nrc.no/](https://www.nrc.no/)
 **Total Violations:** 3
 
@@ -45,15 +45,15 @@
   - **HTML:** `<h3 class="poster__heading-title">The world's most neglected displacement crises</h3>`
   - **Failure summary:** Fix any of the following: Heading order invalid
 
-- **Target:** `.contentareaitem:nth-child(6) > .section-header-block.block-width--default.show--all > .section-header-block__inner > .section-header-block__title`
+- **Target:** `.contentareaitem:nth-child(4) > .section-header-block.block-width--default.show--all > .section-header-block__inner > .section-header-block__title`
   - **HTML:** `<h4 class="section-header-block__title">Stories from around the world</h4>`
   - **Failure summary:** Fix any of the following: Heading order invalid
 
-- **Target:** `.contentareaitem:nth-child(11) > .section-header-block.block-width--default.show--all > .section-header-block__inner > .section-header-block__title`
+- **Target:** `.contentareaitem:nth-child(9) > .section-header-block.block-width--default.show--all > .section-header-block__inner > .section-header-block__title`
   - **HTML:** `<h4 class="section-header-block__title">NORCAP: Global provider of expertise</h4>`
   - **Failure summary:** Fix any of the following: Heading order invalid
 
-- **Target:** `.contentareaitem:nth-child(13) > .section-header-block.block-width--default.show--all > .section-header-block__inner > .section-header-block__title`
+- **Target:** `.contentareaitem:nth-child(11) > .section-header-block.block-width--default.show--all > .section-header-block__inner > .section-header-block__title`
   - **HTML:** `<h4 class="section-header-block__title">NRC's areas of expertise</h4>`
   - **Failure summary:** Fix any of the following: Heading order invalid
 

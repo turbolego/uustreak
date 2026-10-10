@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2026-10-09T05:05:56.397Z
+**Timestamp:** 2026-10-10T08:04:58.447Z
 **URL:** [https://www.nille.no/](https://www.nille.no/)
 **Total Violations:** 7
 
@@ -181,7 +181,7 @@
 
 #### Affected Elements:
 
-- **Target:** `.swiper-slide-prev > a[title=""][data-discover="true"][aria-label=""]`
+- **Target:** `div[data-swiper-slide-index="0"] > a[title=""][data-discover="true"][aria-label=""]`
   - **HTML:** `<a class="" title="" aria-label="" href="/produkter/kjokken/borddekking/servise-glass-og-bestikk/" data-discover="true">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 

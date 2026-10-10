@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-10-09T04:54:21.402Z
+**Timestamp:** 2026-10-10T08:10:49.867Z
 **URL:** [https://www.bt.no/](https://www.bt.no/)
 **Total Violations:** 2
 
@@ -17,16 +17,16 @@
 
 #### Affected Elements:
 
+- **Target:** `track-element[data-track-id="teaser:127913"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="bt"]`
+  - **HTML:** `<audio-play-button asset-id="127913" vendor="bt" provider="bt" title="Alle reaksjonene etter Brann–Viking" class="label-medium _root_me3cj_65 _small_me3cj_88" role="button" tabindex="0" data-state="idle">`
+  - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
+
+- **Target:** `audio-play-button[title="Direktepod under\a Brann–Viking"]`
+  - **HTML:** `<audio-play-button asset-id="127909" vendor="bt" provider="bt" title="Direktepod under Brann–Viking" class="label-medium _root_me3cj_65 _small_me3cj_88" role="button" tabindex="0" data-state="idle">`
+  - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
+
 - **Target:** `audio-play-button[title="Siste før\a storkampen"]`
   - **HTML:** `<audio-play-button asset-id="127887" vendor="bt" provider="bt" title="Siste før storkampen" class="label-medium _root_me3cj_65 _small_me3cj_88" role="button" tabindex="0" data-state="idle">`
-  - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
-
-- **Target:** `audio-play-button[title="Får me betre\a råd no?"]`
-  - **HTML:** `<audio-play-button asset-id="127880" vendor="bt" provider="bt" title="Får me betre råd no?" class="label-medium _root_me3cj_65 _small_me3cj_88" role="button" tabindex="0" data-state="idle">`
-  - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
-
-- **Target:** `audio-play-button[title="Som en kule"]`
-  - **HTML:** `<audio-play-button asset-id="127866" vendor="bt" provider="bt" title="Som en kule" class="label-medium _root_me3cj_65 _small_me3cj_88" role="button" tabindex="0" data-state="idle">`
   - **Failure summary:** Fix any of the following: Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden="true")
 
 

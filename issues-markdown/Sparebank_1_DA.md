@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sparebank 1 DA
 
-**Timestamp:** 2026-10-09T05:11:11.100Z
+**Timestamp:** 2026-10-10T08:18:08.176Z
 **URL:** [https://www.sparebank1.no/nb/bank/privat.html](https://www.sparebank1.no/nb/bank/privat.html)
 **Total Violations:** 3
 
@@ -34,7 +34,7 @@
 #### Affected Elements:
 
 - **Target:** `.background`
-  - **HTML:** `<a class="background mod-image campaign-bg__img campaign-img--track" href="https://www.sparebank1.no/nb/bank/om-oss/rekke-opp-handa.html?icid=forside;;samfunn;;hovedbanner;;sb1u-4ekke-opp-handa;;privat">`
+  - **HTML:** `<a class="background mod-image campaign-bg__img campaign-img--track" href="https://www.sparebank1.no/nb/bank/om-oss/rekke-opp-handa/trine-og-kvinnefotball.html?icid=forside;;samfunn;;hovedbanner;;sb1u-rekke-opp-handa-trine;;privat">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 
 

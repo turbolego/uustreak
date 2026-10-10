@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telia Norge AS
 
-**Timestamp:** 2026-10-09T05:14:18.161Z
+**Timestamp:** 2026-10-10T08:27:08.601Z
 **URL:** [https://www.telia.no/](https://www.telia.no/)
 **Total Violations:** 3
 
@@ -29,7 +29,7 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 9
+- **Count:** 8
 
 #### Affected Elements:
 
@@ -57,15 +57,11 @@
   - **HTML:** `<img class="_teddy-image_jxcdf_2">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `.slide:nth-child(11) > .product-card-link > ._teddy-card--white_139sd_267._teddy-card--border_139sd_58._teddy-card--product_139sd_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- **Target:** `.slide:nth-child(11) > .product-card-link > ._teddy-card--white_139sd_267._teddy-card--border_139sd_58._teddy-card--product_139sd_323 > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
   - **HTML:** `<img class="_teddy-image_jxcdf_2">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 
-- **Target:** `.slide:nth-child(14) > .product-card-link > ._teddy-card--white_139sd_267._teddy-card--border_139sd_58._teddy-card--product_139sd_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
-  - **HTML:** `<img class="_teddy-image_jxcdf_2">`
-  - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
-
-- **Target:** `.slide:nth-child(15) > .product-card-link > ._teddy-card--white_139sd_267._teddy-card--border_139sd_58._teddy-card--product_139sd_323 > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- **Target:** `div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
   - **HTML:** `<img class="_teddy-image_jxcdf_2">`
   - **Failure summary:** Fix any of the following: Element does not have an alt attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element …
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Colosseumklinikken AS
 
-**Timestamp:** 2026-10-09T04:55:42.472Z
+**Timestamp:** 2026-10-10T08:14:48.650Z
 **URL:** [https://colosseumtannlege.no/](https://colosseumtannlege.no/)
 **Total Violations:** 2
 
@@ -18,11 +18,11 @@
 #### Affected Elements:
 
 - **Target:** `.random-specialists-block__specialist:nth-child(3) > .random-specialists-block__link > .random-specialists-block__specialist-info > .random-specialists-block__name`
-  - **HTML:** `<span class="random-specialists-block__name">Ammar Omar Mohammed</span>`
+  - **HTML:** `<span class="random-specialists-block__name">Bente Sakariassen</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 1.64 (foreground color: #c2b7bc, background color: #f5eadf, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.random-specialists-block__specialist:nth-child(3) > .random-specialists-block__link > .random-specialists-block__specialist-info > .random-specialists-block__position`
-  - **HTML:** `<span class="random-specialists-block__position">Tannlege</span>`
+  - **HTML:** `<span class="random-specialists-block__position">Klinikkleder</span>`
   - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 1.64 (foreground color: #c2b7bc, background color: #f5eadf, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1
 
 

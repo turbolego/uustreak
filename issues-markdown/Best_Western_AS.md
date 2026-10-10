@@ -1,6 +1,6 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2026-10-09T04:55:24.615Z
+**Timestamp:** 2026-10-10T08:11:21.906Z
 **URL:** [https://www.bestwestern.no/](https://www.bestwestern.no/)
 **Total Violations:** 3
 
@@ -81,19 +81,19 @@
   - **HTML:** `<a class="inline-flex w-fit no-underline font-book text-2xs hover:text-on-surface-variant focus-visible:text-on-surface-variant group" href="https://www.bestwestern.com/" tabindex="0" title="" aria-label="Til bestwestern.com">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#ddChallengeBody1791521713123, .captcha__header`
+- **Target:** `#ddChallengeBody1791619872787, .captcha__header`
   - **HTML:** `<div class="captcha__header" data-dd-captcha-header="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#ddChallengeBody1791521713123, .captcha__human`
+- **Target:** `#ddChallengeBody1791619872787, .captcha__human`
   - **HTML:** `<div class="captcha__human" data-dd-captcha-human="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#ddChallengeBody1791521713123, .captcha__robot__warning`
+- **Target:** `#ddChallengeBody1791619872787, .captcha__robot__warning`
   - **HTML:** `<div class="captcha__robot__warning" data-dd-captcha-robot-warning="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#ddChallengeBody1791521713123, .captcha__robot__contact_support`
+- **Target:** `#ddChallengeBody1791619872787, .captcha__robot__contact_support`
   - **HTML:** `<div class="captcha__robot__contact_support" data-dd-captcha-robot-contact-support="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

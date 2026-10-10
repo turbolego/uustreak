@@ -1,6 +1,6 @@
 # WCAG Violations Report for The Thief Hotel AS
 
-**Timestamp:** 2026-10-09T05:13:20.355Z
+**Timestamp:** 2026-10-10T08:27:24.360Z
 **URL:** [https://thethief.com/](https://thethief.com/)
 **Total Violations:** 4
 
@@ -69,7 +69,7 @@
 
 #### Affected Elements:
 
-- **Target:** `#image-145 > .block-module__inner[target="_blank"][rel="noopener"]`
+- **Target:** `#image-145 > a[target="_blank"][rel="noopener"]`
   - **HTML:** `<a href="https://travellermade.com/hotel-partners-europe/the-thief-norway/" target="_blank" rel="noopener" class="block-block__inner block-module__inner">`
   - **Failure summary:** Fix all of the following: Element is in tab order and does not have accessible text Fix any of the following: Element does not have text that is visible to screen readers aria-label attribute does not exist or is empty aria-labelledby attr…
 

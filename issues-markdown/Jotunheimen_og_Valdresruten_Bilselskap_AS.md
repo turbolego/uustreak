@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jotunheimen og Valdresruten Bilselskap AS
 
-**Timestamp:** 2026-10-09T05:02:33.051Z
+**Timestamp:** 2026-10-10T08:33:05.679Z
 **URL:** [https://jvb.no/](https://jvb.no/)
 **Total Violations:** 6
 
@@ -13,9 +13,17 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 11
+- **Count:** 13
 
 #### Affected Elements:
+
+- **Target:** `.et_pb_slide_1 > .et_pb_container.clearfix > .et_pb_slider_container_inner > .et_pb_slide_description > .et_pb_slide_content > p > span`
+  - **HTML:** `<span>Bli med på innholdsrike bussreiser i Norge og Europa. Vi sørger for trygg transport, gode opplevelser og hyggelig reisefølge hele veien.</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.59 between the foreground and shadow color (foreground color: #787578, text-shadow color: #181f34, font size: 13.5pt (18px), font weight: normal). Expected contrast rat…
+
+- **Target:** `.et_pb_more_button.et_pb_button[href$="jvbtur.no"]`
+  - **HTML:** `<a class="et_pb_button et_pb_more_button" href="https://jvbtur.no">Se våre turer</a>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.45 (foreground color: #787578, background color: #1b223a, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1
 
 - **Target:** `.et_pb_text_5 > .et_pb_text_inner > p`
   - **HTML:** `<p>Mer info om r<span>utetider og billettkjøp finner du her</span>&nbsp;›</p>`

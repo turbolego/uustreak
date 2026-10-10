@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norges forskningsråd
 
-**Timestamp:** 2026-10-09T05:07:32.391Z
+**Timestamp:** 2026-10-10T08:07:35.488Z
 **URL:** [https://www.forskningsradet.no/](https://www.forskningsradet.no/)
 **Total Violations:** 6
 
@@ -33,9 +33,9 @@
 
 #### Affected Elements:
 
-- **Target:** `.message-global--open-button`
-  - **HTML:** `<button aria-label="Skjul" aria-expanded="true" aria-controls="MG_3360951d-6ab7-4645-b363-4ab6444424d0" type="button" class="button message-global--open-button button--has-children">`
-  - **Failure summary:** Fix all of the following: Invalid ARIA attribute value: aria-controls="MG_3360951d-6ab7-4645-b363-4ab6444424d0"
+- **Target:** `.message-global--container.message-global--container--is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--open-button[aria-label="Skjul"][type="button"]`
+  - **HTML:** `<button aria-label="Skjul" aria-expanded="true" aria-controls="MG_b007a98d-a122-49ae-87a8-7cd0d699e46b" type="button" class="button message-global--open-button button--has-children">`
+  - **Failure summary:** Fix all of the following: Invalid ARIA attribute value: aria-controls="MG_b007a98d-a122-49ae-87a8-7cd0d699e46b"
 
 
 ### Heading levels should only increase by one
@@ -97,11 +97,15 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
-- **Target:** `.message-global--collapse`
-  - **HTML:** `<div class="message-global--collapse message-global--collapse--use-intrinsic-height">`
+- **Target:** `.message-global--container.message-global--container--is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--collapse.message-global--collapse--use-intrinsic-height > .message-global--collapse-inner > .html-string`
+  - **HTML:** `<div class="html-string"><p><span data-teams="true">Vi har dessverre ikke mulighet til å registrere inn nye brukere denne helgen. Eksisterende brukere kan logge inn som normalt. Vi jobber med å løse problemet.&nbsp;</span></p></div>`
+  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
+
+- **Target:** `.message-global--container.message-global--container--is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--collapse.message-global--collapse--use-intrinsic-height > .message-global--collapse-inner > .message-global--navigation > .message-global--navigation-of`
+  - **HTML:** `<span class="message-global--navigation-of">Av</span>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

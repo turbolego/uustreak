@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vy Buss AS
 
-**Timestamp:** 2026-10-09T05:16:45.617Z
+**Timestamp:** 2026-10-10T08:35:41.818Z
 **URL:** [https://www.vybuss.no/#!/](https://www.vybuss.no/#!/)
 **Total Violations:** 3
 
@@ -18,19 +18,19 @@
 #### Affected Elements:
 
 - **Target:** `.expand-block__container:nth-child(1) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#1a15fcad19c14218a2651af0db900def">Billettkjøp <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#3b53f8d96d994f9ca756b846accc2f54">Billettkjøp <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix all of the following: ARIA attribute is not allowed: aria-expanded="false"
 
 - **Target:** `.expand-block__container:nth-child(2) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#0f97b327902448c3b6551eb9137bc259">Reiseinformasjon <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#f9794ed736b646b18247b147dad5b52d">Reiseinformasjon <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix all of the following: ARIA attribute is not allowed: aria-expanded="false"
 
 - **Target:** `.expand-block__container:nth-child(3) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#19ea62ce104f487bb412fac6c07acb4a">Endring og avbestilling <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#be94b3d2cfee42eeb82f09ee91652a05">Endring og avbestilling <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix all of the following: ARIA attribute is not allowed: aria-expanded="false"
 
 - **Target:** `.expand-block__container:nth-child(4) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#b17f7921daa3410ebfc3983973669e81">Kundeservice <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#9de2559cf066442dae247071690c4bbd">Kundeservice <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix all of the following: ARIA attribute is not allowed: aria-expanded="false"
 
 
@@ -78,19 +78,19 @@
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.expand-block__container:nth-child(1) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#1a15fcad19c14218a2651af0db900def">Billettkjøp <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#3b53f8d96d994f9ca756b846accc2f54">Billettkjøp <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.expand-block__container:nth-child(2) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#0f97b327902448c3b6551eb9137bc259">Reiseinformasjon <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#f9794ed736b646b18247b147dad5b52d">Reiseinformasjon <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.expand-block__container:nth-child(3) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#19ea62ce104f487bb412fac6c07acb4a">Endring og avbestilling <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#be94b3d2cfee42eeb82f09ee91652a05">Endring og avbestilling <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.expand-block__container:nth-child(4) > .expand-block__header[data-toggle="expand"]`
-  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#b17f7921daa3410ebfc3983973669e81">Kundeservice <span class="icon-plus"></span></div>`
+  - **HTML:** `<div class="expand-block__header" aria-expanded="false" data-toggle="expand" data-target="#9de2559cf066442dae247071690c4bbd">Kundeservice <span class="icon-plus"></span></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
 - **Target:** `.js-group-block.block__wrapper:nth-child(4)`
@@ -101,19 +101,19 @@
   - **HTML:** `<div class="block__wrapper js-group-block">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#ddChallengeBody1791522996099, .captcha__human`
+- **Target:** `#ddChallengeBody1791621337181, .captcha__human`
   - **HTML:** `<div class="captcha__human" style="padding: 0;" data-dd-captcha-human="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#ddChallengeBody1791522996099, .sliderText`
+- **Target:** `#ddChallengeBody1791621337181, .sliderText`
   - **HTML:** `<div class="sliderText"><p class="no-margin">Skyv til høyre for å sikre tilgangen din</p></div>`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#ddChallengeBody1791522996099, .captcha__robot__warning`
+- **Target:** `#ddChallengeBody1791621337181, .captcha__robot__warning`
   - **HTML:** `<div class="captcha__robot__warning" data-dd-captcha-robot-warning="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 
-- **Target:** `#ddChallengeBody1791522996099, .captcha__robot__contact_support`
+- **Target:** `#ddChallengeBody1791621337181, .captcha__robot__contact_support`
   - **HTML:** `<div class="captcha__robot__contact_support" data-dd-captcha-robot-contact-support="">`
   - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
 

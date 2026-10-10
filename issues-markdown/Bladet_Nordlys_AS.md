@@ -1,10 +1,30 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-10-09T04:54:36.644Z
+**Timestamp:** 2026-10-10T08:11:59.042Z
 **URL:** [https://www.nordlys.no/](https://www.nordlys.no/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 2
+
+#### Affected Elements:
+
+- **Target:** `.swiper-slide-active > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
+  - **HTML:** `<span class="ad-text_location">Tromsø</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.54 (foreground color: #888888, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1
+
+- **Target:** `.swiper-slide-next > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
+  - **HTML:** `<span class="ad-text_location">Tromsø</span>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 3.54 (foreground color: #888888, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1
+
 
 ### Frames must have an accessible name
 
@@ -13,9 +33,17 @@
 - **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, iframe[scrolling="no"]`
+  - **HTML:** `<iframe scrolling="no" src="about:blank" style="height: 1px; width: ...">`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+
+- **Target:** `#google_ads_iframe_\/56257416\/www\.nordlys\.no\/toppbanner_0, body > iframe`
+  - **HTML:** `<iframe style="position: absolute; pointer-events: none; left: 0px; top: 0px; opacity: 0; height: 0px; width: 0px;"></iframe>`
+  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
 
 - **Target:** `#eaframe`
   - **HTML:** `<iframe frameborder="no" id="eaframe" name="eaframe" width="980" height="350" scrolling="no" src="javascript:window[&quot;contents&quot;]" style="height: 350px;"></iframe>`
@@ -33,8 +61,8 @@
 
 #### Affected Elements:
 
-- **Target:** `brick-carousel-v3[data-slides="10"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
-  - **HTML:** `<section data-static="" role="region" class="carousel" aria-label="Innholdskarusell" aria-describedby="carousel-title-14b9b256-e359-402d-8a5a-830ab9706b98">`
+- **Target:** `brick-carousel-v3[data-slides="7"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
+  - **HTML:** `<section data-static="" role="region" class="carousel" aria-label="Innholdskarusell" aria-describedby="carousel-title-40fd5fe5-e401-4851-aeed-12c7f72a30a1">`
   - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
 
 
