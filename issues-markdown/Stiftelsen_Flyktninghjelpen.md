@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Flyktninghjelpen
 
-**Timestamp:** 2026-10-11T04:34:59.150Z
+**Timestamp:** 2026-10-11T04:51:45.834Z
 **URL:** [https://www.nrc.no/](https://www.nrc.no/)
 **Total Violations:** 3
 
@@ -31,9 +31,9 @@
 #### Affected Elements:
 
 - `.poster__heading-title`
-- `.contentareaitem:nth-child(6) > .section-header-block.block-width--default.show--all > .section-header-block__inner > .section-header-block__title`
+- `.contentareaitem:nth-child(4) > .section-header-block.block-width--default.show--all > .section-header-block__inner > .section-header-block__title`
+- `.contentareaitem:nth-child(9) > .section-header-block.block-width--default.show--all > .section-header-block__inner > .section-header-block__title`
 - `.contentareaitem:nth-child(11) > .section-header-block.block-width--default.show--all > .section-header-block__inner > .section-header-block__title`
-- `.contentareaitem:nth-child(13) > .section-header-block.block-width--default.show--all > .section-header-block__inner > .section-header-block__title`
 
 ### Users should be able to zoom and scale the text up to 500%
 

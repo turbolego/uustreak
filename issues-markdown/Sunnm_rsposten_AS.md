@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sunnmørsposten AS
 
-**Timestamp:** 2026-10-11T04:37:27.974Z
+**Timestamp:** 2026-10-11T04:55:29.500Z
 **URL:** [https://www.smp.no/](https://www.smp.no/)
 **Total Violations:** 5
 
@@ -45,20 +45,20 @@
 - `.opinion.hot60.gridspotlight > a > .text.t100`
 - `.is-dark-skin.hot60.life40 > a > .text.t100`
 - `.OnePlusXTeasers.grid:nth-child(5) > .gridspotlightside.hot40.payed > a > .text.t100`
+- `.OnePlusXTeasers.grid:nth-child(5) > .hot50.no-image.is-aske-skin > a > .text.t100`
 - `.life60.gridspotlightside.hot40 > a > .text.t100`
 - `.flipped.OnePlusXTeasers.grid:nth-child(7) > .gridspotlight.card-size-large.hot40 > a > .text.t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(7) > .gridspotlightside.hot40.payed:nth-child(3) > a > .text.t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(7) > .hot50.no-image.is-aske-skin > a > .text.t100`
-- `.AdWithTeaser.grid:nth-child(8) > .hot60.life40.gridtriple > a > .text.t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(7) > .hot60.life40.gridspotlightside > a > .text.t100`
+- `.AdWithTeaser.grid:nth-child(8) > .gridtriple.hot40.payed > a > .text.t100`
 - `.ThreeTeasers.grid:nth-child(9) > .gridtriple.hot40.life20:nth-child(1) > a > .text.t100`
 - `.hot70.life40.is-aske-skin > a > .text.t100`
 - `.ThreeTeasers.grid:nth-child(9) > .gridtriple.hot40.payed > a > .text.t100`
 - `.OnePlusXTeasers.grid:nth-child(10) > .gridspotlight.card-size-large.hot40 > a > .text.t100`
 - `.hot80 > a > .text.t100`
-- `.OnePlusXTeasers.grid:nth-child(10) > .opinion.hot30.gridspotlightside > a > .text.t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(13) > .gridspotlightside.hot40.payed > a > .text.t100`
+- `.OnePlusXTeasers.grid:nth-child(10) > .hot70.is-aske-skin.is-skin > a > .text.t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(13) > .opinion.hot30.gridspotlightside > a > .text.t100`
 - `.flipped.OnePlusXTeasers.grid:nth-child(13) > .gridspotlight.card-size-large.hot40 > a > .text.t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(13) > .hot70.is-aske-skin.is-skin > a > .text.t100`
+- `.flipped.OnePlusXTeasers.grid:nth-child(13) > .gridspotlightside.hot40.payed > a > .text.t100`
 - `.is-prefix-red-skin.hot60.life40 > a > .text.t100`
 - `.ThreeTeasers.grid:nth-child(15) > .hot70.gridtriple.payed:nth-child(2) > a > .text.t100`
 - `.ThreeTeasers.grid:nth-child(15) > .hot70.life40.gridtriple > a > .text.t100`

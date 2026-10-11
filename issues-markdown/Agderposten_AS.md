@@ -1,10 +1,34 @@
 # WCAG Violations Report for Agderposten AS
 
-**Timestamp:** 2026-10-11T04:18:40.888Z
+**Timestamp:** 2026-10-11T04:34:59.127Z
 **URL:** [https://www.agderposten.no/](https://www.agderposten.no/)
-**Total Violations:** 4
+**Total Violations:** 6
 
 ## Violation Details
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#dakapo_postopbar`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.ThreeTeasers.grid:nth-child(4) > .life20.gridtriple.hot60 > a > .text.t100 > h3`
 
 ### Main landmark should not be contained in another landmark
 

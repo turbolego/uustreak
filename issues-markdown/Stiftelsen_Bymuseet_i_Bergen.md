@@ -1,8 +1,8 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2026-10-11T04:36:21.401Z
+**Timestamp:** 2026-10-11T04:51:18.817Z
 **URL:** [https://bymuseet.no/](https://bymuseet.no/)
-**Total Violations:** 9
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -12,12 +12,11 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
 - `#vimeo-video-banner, body`
-- `#slick-slide00 > .vimeo-wrapper > iframe, body`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -132,32 +131,19 @@
 
 - `meta[name="viewport"]`
 
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `html`
-- `#vimeo-video-banner, html`
-- `#slick-slide00 > .vimeo-wrapper > iframe, html`
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 13
+- **Count:** 14
 
 #### Affected Elements:
 
 - `.front-page-content-block`
 - `.events`
+- `#slick-slide00 > .vimeo-wrapper > iframe, #error`
 - `.cta[target="_self"] > span`
 - `.info-banner`
 - `.culture-for-all`

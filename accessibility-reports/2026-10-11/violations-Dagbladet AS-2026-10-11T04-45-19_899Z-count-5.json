@@ -1,0 +1,200 @@
+{
+  "project": "Dagbladet AS",
+  "timestamp": "2026-10-11T04:45:19.899Z",
+  "url": "https://www.dagbladet.no/",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div class=\"kicker-content\">STORAVIS:</div>",
+          "target": [
+            ".hasTextColor > .kicker-content"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #d60000, background color: #000000, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"text-red color_mobile_text-red\" data-lab-text_color_desktop=\"text-red\">Dagbladet i Kyiv:</span>",
+          "target": [
+            ".kicker-content > .text-red.color_mobile_text-red[data-lab-text_color_desktop=\"text-red\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #d60000, background color: #000000, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<iframe frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" topmargin=\"0\" leftmargin=\"0\" allowtransparency=\"true\" width=\"980\" height=\"300\" id=\"adn-sup-0.6833700898210644\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/8578\\/dagbladet\\.no\\/forside_0",
+            "#adn-sup-0\\.6833700898210644"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe data-creative-load-listener=\"\" id=\"200_287_express_html_inpage_0.if\" src=\"https://s0.2mdn.net/sadbundle/15363417032282683262/index.html?ev=01_262\" width=\"980\" height=\"300\" frameborder=\"0\" scrolling=\"no\" allowfullscreen=\"true\" style=\"width: 980px; height: 300px;\"></iframe>",
+          "target": [
+            "#google_ads_iframe_\\/8578\\/dagbladet\\.no\\/forside_0",
+            "#adn-sup-0\\.6833700898210644",
+            "iframe",
+            "#\\32 00_287_express_html_inpage_0\\.if"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<img class=\"bg\" src=\"components/bitmaps/bg.jpg\" style=\"opacity: 0.0195224;\">",
+          "target": [
+            "#google_ads_iframe_\\/8578\\/dagbladet\\.no\\/forside_0",
+            "#adn-sup-0\\.6833700898210644",
+            "iframe",
+            "#\\32 00_287_express_html_inpage_0\\.if",
+            "img[src$=\"bg.jpg\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"n\" src=\"components/svgs/n.svg\" style=\"opacity: 0; transform: matrix(1, 0, 0, 1, -5, 0);\">",
+          "target": [
+            "#google_ads_iframe_\\/8578\\/dagbladet\\.no\\/forside_0",
+            "#adn-sup-0\\.6833700898210644",
+            "iframe",
+            "#\\32 00_287_express_html_inpage_0\\.if",
+            ".n"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"logo\" src=\"components/svgs/logo.svg\">",
+          "target": [
+            "#google_ads_iframe_\\/8578\\/dagbladet\\.no\\/forside_0",
+            "#adn-sup-0\\.6833700898210644",
+            "iframe",
+            "#\\32 00_287_express_html_inpage_0\\.if",
+            ".logo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<nav class=\"_topnav_88ip5_45\">",
+          "target": [
+            "._topnav_88ip5_45"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<footer>\n        <div class=\"bg01\"></div>\n        <div class=\"bg02\" style=\"opacity: 1;\"></div>\n        <p>Les om mat, natur, levekår og lokalsamfunn. Les Nationen du&nbsp;<span class=\"italic\">også.</span></p>\n      </footer>",
+          "target": [
+            "#google_ads_iframe_\\/8578\\/dagbladet\\.no\\/forside_0",
+            "#adn-sup-0\\.6833700898210644",
+            "iframe",
+            "#\\32 00_287_express_html_inpage_0\\.if",
+            "footer"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<p>\n        Dagbladet\n        er en del av Aller Media. Aller Media er ansvarlig for dine data på denne nettsiden.\n        &nbsp;<a href=\"https://personvern.aller.no/personvern\">Les mer</a>\n      </p>",
+          "target": [
+            "#am-branding > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
