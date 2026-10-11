@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-10-10T20:44:35.003Z
+**Timestamp:** 2026-10-11T04:23:03.929Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 9
 
@@ -104,7 +104,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 143
+- **Count:** 144
 
 #### Affected Elements:
 
@@ -153,30 +153,31 @@
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(5)`
-- `.row.large-12.small-12:nth-child(7)`
+- `.row.large-12.small-12:nth-child(5)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(7)`
 - `.row.large-12.small-12:nth-child(8)`
+- `.row.large-12.small-12:nth-child(9)`
 - `.color_mobile_bg-quaternary.bg-quaternary.hasContentPadding`
 - `.has-row-header`
-- `.color_mobile_no_bg_color.row.large-12:nth-child(11)`
+- `.color_mobile_no_bg_color.row.large-12:nth-child(13)`
 - `#offer_4992f7477e94a7ea214a-0, div[ng-show="!terminalError"]`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(15)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(16)`
 - `.page-content > .border-bg-quinary-light.mobile_border-bg-quinary-light.hasBorder`
 - `#article_list_10372156 > .content > .lab-scrollbox-headline.t25.font-InterTight`
 - `#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(19)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(20)`
+- `.row.large-12.small-12:nth-child(20)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(21)`
 - `.articlescroller-header.t25.tm18`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.mobile_no_border_color.color_mobile_no_bg_color.row:nth-child(22)`
-- `.row.large-12.small-12:nth-child(23)`
+- `.mobile_no_border_color.color_mobile_no_bg_color.row:nth-child(23)`
 - `.row.large-12.small-12:nth-child(25)`
 - `.row.large-12.small-12:nth-child(26)`
+- `.row.large-12.small-12:nth-child(27)`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .lab-scrollbox-headline.t25.font-InterTight`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(28)`
 - `.row.large-12.small-12:nth-child(29)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(31)`
+- `.row.large-12.small-12:nth-child(31)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(32)`
 - `.lab-scrollbox-headline.t28.font-InterTight`
 - `#markup_10478983 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="10478981"] > .content > .floatingTextSubset.media > .floatingText`
@@ -192,21 +193,20 @@
 - `article[data-instance="10440429"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
 - `#markup_10440438 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="10440437"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `.row.large-12.small-12:nth-child(33)`
+- `.row.large-12.small-12:nth-child(34)`
 - `.lab-scrollbox-headline.t25.tm18`
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(35)`
+- `.row.large-12.small-12:nth-child(37)`
 - `#article_list_10569463 > .inner.fullwidthTarget.content > .articlescroller-header.mobile_text_align_align-left.align-left`
 - `#article_list_10569463 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(38)`
 - `.row.large-12.small-12:nth-child(39)`
+- `.row.large-12.small-12:nth-child(40)`
 - `#offer_4992f7477e94a7ea214a-1, div[ng-show="!terminalError"]`
-- `.row.large-12.small-12:nth-child(41)`
 - `.row.large-12.small-12:nth-child(43)`
 - `.row.large-12.small-12:nth-child(44)`
 - `.row.large-12.small-12:nth-child(45)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(46)`
-- `.row.large-12.small-12:nth-child(47)`
+- `.row.large-12.small-12:nth-child(46)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(47)`
 - `.row.large-12.small-12:nth-child(49)`
 - `.row.large-12.small-12:nth-child(50)`
 - `.row.large-12.small-12:nth-child(51)`
@@ -229,27 +229,28 @@
 - `.row.large-12.small-12:nth-child(70)`
 - `.row.large-12.small-12:nth-child(71)`
 - `.row.large-12.small-12:nth-child(72)`
+- `.row.large-12.small-12:nth-child(73)`
 - `.lab-scrollbox-headline.italic.m-italic`
 - `#article_list_10291490 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(74)`
 - `.row.large-12.small-12:nth-child(75)`
 - `.row.large-12.small-12:nth-child(76)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(77)`
+- `.row.large-12.small-12:nth-child(77)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(78)`
 - `.tm20`
 - `#article_list_9904930 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(79)`
 - `.row.large-12.small-12:nth-child(80)`
 - `.row.large-12.small-12:nth-child(81)`
 - `.row.large-12.small-12:nth-child(82)`
 - `.row.large-12.small-12:nth-child(83)`
 - `.row.large-12.small-12:nth-child(84)`
 - `.row.large-12.small-12:nth-child(85)`
+- `.row.large-12.small-12:nth-child(86)`
 - `.bg-black`
-- `.row.large-12.small-12:nth-child(87)`
 - `.row.large-12.small-12:nth-child(88)`
 - `.row.large-12.small-12:nth-child(89)`
+- `.row.large-12.small-12:nth-child(90)`
 - `#offer_25de92e59ecc9e9aa9cd-0, div[ng-show="!terminalError"]`
-- `.row.large-12.small-12:nth-child(91)`
+- `.row.large-12.small-12:nth-child(92)`
 - `.powered-by`
 
 ### Scrollable region must have keyboard access

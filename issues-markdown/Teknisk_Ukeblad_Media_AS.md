@@ -1,6 +1,6 @@
 # WCAG Violations Report for Teknisk Ukeblad Media AS
 
-**Timestamp:** 2026-10-10T21:00:26.758Z
+**Timestamp:** 2026-10-11T04:36:46.340Z
 **URL:** [https://www.tu.no/](https://www.tu.no/)
 **Total Violations:** 5
 
@@ -12,14 +12,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 4
+- **Count:** 1
 
 #### Affected Elements:
 
 - `.placement-top > .display-label.google-ad.disable-initial-load > .ad-label`
-- `#sp_message_iframe_1517700, .acceptButton`
-- `#sp_message_iframe_1517700, .rejectButton`
-- `#sp_message_iframe_1517700, .customiseButton`
 
 ### Heading levels should only increase by one
 

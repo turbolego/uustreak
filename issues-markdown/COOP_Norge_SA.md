@@ -1,6 +1,6 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2026-10-10T20:44:18.727Z
+**Timestamp:** 2026-10-11T04:22:36.184Z
 **URL:** [https://www.coop.no/](https://www.coop.no/)
 **Total Violations:** 5
 
@@ -53,12 +53,14 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 2
+- **Count:** 4
 
 #### Affected Elements:
 
-- `iframe, iframe[src$="about:blank"]`
-- `iframe, body > iframe`
+- `#\33 3modPj5ilgcmY76YKciV8 > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[scrolling="no"]`
+- `#\33 3modPj5ilgcmY76YKciV8 > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
+- `#GNXWL8jlPCFqmGJFbdvQe > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"]`
+- `#GNXWL8jlPCFqmGJFbdvQe > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
 
 ### Links must have discernible text
 

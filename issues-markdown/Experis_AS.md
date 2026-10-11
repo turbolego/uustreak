@@ -1,6 +1,6 @@
 # WCAG Violations Report for Experis AS
 
-**Timestamp:** 2026-10-10T20:46:55.967Z
+**Timestamp:** 2026-10-11T04:23:47.329Z
 **URL:** [https://www.experis.no/](https://www.experis.no/)
 **Total Violations:** 1
 

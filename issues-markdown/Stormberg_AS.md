@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-10-10T20:59:18.416Z
+**Timestamp:** 2026-10-11T04:35:37.749Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -25,12 +25,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 34
+- **Count:** 33
 
 #### Affected Elements:
 
 - `.h2.e0.e1 > div > div`
-- `.h4.am[href$="stormdager"]`
+- `a[href$="dagskupp2"]`
 - `a[aria-label="Nordtoppen vattert vest"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
 - `a[aria-label="Nordtoppen vattert vest"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Nordtoppen parkas"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
@@ -41,23 +41,22 @@
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.iu`
 - `div:nth-child(3) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Lofoten fôret regnvott"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
 - `a[aria-label="Regndag regnbukse unisex"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
 - `a[aria-label="Regndag regnbukse unisex"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Bodø lettvekts regnjakke"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
 - `a[aria-label="Lofoten regnvott"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
 - `a[aria-label="Harstad skallponcho"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
-- `a[aria-label="Bodø lettvekts regnjakke"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
-- `a[aria-label="Voieåsen vattert poncho"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
-- `a[aria-label="Voieåsen vattert poncho"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Regnsky regnsett barn 8-14"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
 - `a[aria-label="Regnsky regnsett barn 8-14"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `div:nth-child(7) > .i9.bl.bj > .ia.ib > li:nth-child(2) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.iu`
 - `div:nth-child(7) > .i9.bl.bj > .ia.ib > li:nth-child(2) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `li:nth-child(3) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
 - `li:nth-child(3) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `li:nth-child(4) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
-- `li:nth-child(4) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
-- `a[aria-label="Tøyen boot"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
-- `a[aria-label="Tøyen boot"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Børgefjell regnbukse"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
+- `a[aria-label="Børgefjell regnbukse"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `li:nth-child(5) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
+- `li:nth-child(5) > .ic.id[aria-label="Vesthav vattert regnparkas"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `li:nth-child(1) > .ic.id[aria-label="Vinterberg vinterjakke"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
 - `li:nth-child(2) > .ic.id[aria-label="Hemsedal 2-lags ullsett"] > .ih.bc.bd > .io.im.y > .gz.it.iu`
 - `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.it.iu`
@@ -94,20 +93,21 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 11
+- **Count:** 12
 
 #### Affected Elements:
 
 - `div:nth-child(1) > .aq.am.an > .au.as[width="11"]`
 - `div:nth-child(2) > .aq.am.an > .au.as[width="11"]`
 - `div:nth-child(3) > .aq.am.an > .au.as[width="11"]`
-- `.a6[href$="stormdager"][data-scope-link="true"] > .hs.ht.hu > .hx.hw.au`
+- `a[href$="stormdager"] > .hs.ht.hu > .hx.hw.au`
+- `a[href$="oktoberkupp"] > .jw.ht.hu > .hx.a2.hw`
 - `a[href$="prisras-sko"] > .jw.ht.hu > .hx.a2.hw`
 - `a[href$="tilbehor"] > .jw.ht.hu > .hx.a2.hw`
-- `.bl.bj.bk:nth-child(4) > div > .jr.js.jt > .jv.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jw.ht.hu > .hx.a2.hw`
+- `.jv.fm.be:nth-child(4) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jw.ht.hu > .hx.a2.hw`
 - `a[href$="fleece"] > .jw.ht.hu > .hx.a2.hw`
-- `.bl.bj.bk:nth-child(6) > div > .jr.js.jt > .jv.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jw.ht.hu > .hx.a2.hw`
-- `.bl.bj.bk:nth-child(6) > div > .jr.js.jt > .jv.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jw.ht.hu > .hx.a2.hw`
+- `.jz.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jw.ht.hu > .hx.a2.hw`
+- `.jz.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jw.ht.hu > .hx.a2.hw`
 - `.hs.ht.hu > .hx.a2.hw`
 
 ### Links must have discernible text
@@ -116,17 +116,18 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 8
+- **Count:** 9
 
 #### Affected Elements:
 
-- `.a6[href$="stormdager"][data-scope-link="true"]`
+- `a[href$="stormdager"]`
+- `a[href$="oktoberkupp"]`
 - `a[href$="prisras-sko"]`
 - `a[href$="tilbehor"]`
-- `.bl.bj.bk:nth-child(4) > div > .jr.js.jt > .jv.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
+- `.jv.fm.be:nth-child(4) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
 - `a[href$="fleece"]`
-- `.bl.bj.bk:nth-child(6) > div > .jr.js.jt > .jv.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
-- `.bl.bj.bk:nth-child(6) > div > .jr.js.jt > .jv.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
+- `.jz.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
+- `.jz.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
 - `a[href$="max-499"]`
 
 ### All page content should be contained by landmarks
