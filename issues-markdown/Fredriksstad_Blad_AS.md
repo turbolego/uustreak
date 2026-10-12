@@ -1,40 +1,10 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-10-11T04:55:07.943Z
+**Timestamp:** 2026-10-12T04:48:00.469Z
 **URL:** [https://www.f-b.no/](https://www.f-b.no/)
-**Total Violations:** 7
+**Total Violations:** 4
 
 ## Violation Details
-
-### ARIA commands must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-command-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cbb`
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 7
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cmuv467aq00p629dydbdsvmg9, .play`
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cmuv467aq00p629dydbdsvmg9, .audio`
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cmuv467aq00p629dydbdsvmg9, .big-play`
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cmuuvanvh00e71nckkrih662r, .play`
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cmuuvanvh00e71nckkrih662r, .audio`
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cmuuvatlx001f1na8zug8cl2n, .play`
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cmuuvatlx001f1na8zug8cl2n, .audio`
 
 ### Frames must have an accessible name
 
@@ -42,13 +12,10 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 4
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cmuv467aq00p629dydbdsvmg9`
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cmuuvanvh00e71nckkrih662r`
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cmuuvatlx001f1na8zug8cl2n`
 - `#eaframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
@@ -62,18 +29,6 @@
 #### Affected Elements:
 
 - `brick-carousel-v3[data-slides="6"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#www\.f-b\.no\/toppbanner_1 > a[target="_blank"]`
 
 ### Elements marked as presentational should be consistently ignored
 
@@ -93,12 +48,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 5
+- **Count:** 2
 
 #### Affected Elements:
 
 - `amedia-username`
-- `#toppbanner-1-label`
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cmuv467aq00p629dydbdsvmg9, video`
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cmuuvanvh00e71nckkrih662r, video`
-- `#google_ads_iframe_\/56257416\/www\.f-b\.no\/toppbanner_0, #cmuuvatlx001f1na8zug8cl2n, video`
+- `#toppbanner-1`

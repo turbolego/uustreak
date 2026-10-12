@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-10-11T04:50:09.134Z
+**Timestamp:** 2026-10-12T04:58:43.377Z
 **URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
 **Total Violations:** 3
 
@@ -28,9 +28,9 @@
 
 #### Affected Elements:
 
+- `track-element[data-track-id="teaser:113598"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
 - `track-element[data-track-id="teaser:113606"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
 - `track-element[data-track-id="teaser:113596"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
-- `audio-play-button[title="Ei grassate bodda\a med penger"]`
 
 ### All page content should be contained by landmarks
 

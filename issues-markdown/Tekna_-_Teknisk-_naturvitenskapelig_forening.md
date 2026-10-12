@@ -1,8 +1,8 @@
 # WCAG Violations Report for Tekna - Teknisk- naturvitenskapelig forening
 
-**Timestamp:** 2026-10-11T04:56:45.994Z
+**Timestamp:** 2026-10-12T05:01:19.862Z
 **URL:** [https://www.tekna.no/](https://www.tekna.no/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -17,18 +17,6 @@
 #### Affected Elements:
 
 - `#declineButton`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.promotion-block__text.cms-block__body > h3`
 
 ### Images must have alternative text
 
@@ -74,14 +62,13 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 16
+- **Count:** 15
 
 #### Affected Elements:
 
 - `div:nth-child(8)`
 - `.heroblock`
 - `.promoted-link-list`
-- `.contentareablock.col-lg-12.col-sm-12:nth-child(3)`
 - `.block:nth-child(4)`
 - `.promotion-block--yellow > .promotion-block__body`
 - `.col-lg-8`

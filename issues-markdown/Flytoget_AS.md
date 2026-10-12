@@ -1,8 +1,8 @@
 # WCAG Violations Report for Flytoget AS
 
-**Timestamp:** 2026-10-11T04:54:24.973Z
+**Timestamp:** 2026-10-12T04:49:06.530Z
 **URL:** [https://flytoget.no/](https://flytoget.no/)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -44,18 +44,6 @@
 - `button[aria-label="Godta alle"]`
 - `.btn-squared`
 
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#emergency-short-header`
-
 ### Document should not have more than one banner landmark
 
 - **Impact:** moderate
@@ -95,7 +83,7 @@
 - `.travel-input-from`
 - `.travel-input-to`
 - `.date-label-container`
-- `div[title="07:10"]`
+- `div[title="06:50"]`
 - `.primary-row > .arrival.col-xs-4`
 - `.secondary-row`
 - `.travel-results-button-container`
