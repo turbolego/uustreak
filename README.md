@@ -21,6 +21,17 @@ bevis på at alle WCAG-krav er oppfylt.
 * [Finn wcag-skill på ClawHub](https://clawhub.ai/turbolego/skills/wcag-skill)
 * [Les dokumentasjon og kildekode på GitHub](https://github.com/turbolego/wcag-skill)
 
+## Maskinlesbar informasjon på nettstedet
+
+Sidene i [sitemap.xml](sitemap.xml) har egne metabeskrivelser og schema.org
+`WebPage`-metadata med `dateModified`. Datoen gjelder sidens innhold og metadata,
+ikke tidspunktet for den nyeste tilgjengelighetstesten. Oppdater datoen når
+sideteksten endres; rapportdatoene vises separat i dashboardet.
+
+Forsiden har direkte navigasjonslenker til grafer, axe-core-testeren og GitHub
+Discussions. Statiske seksjoner beskriver arbeidet, bidrag, kontakt, prosjektets
+bakgrunn og nyhetsomtale, med vanlige lenker som fungerer uten JavaScript.
+
 ## Feil fra eksterne leverandører og embedded kode
 
 En nettside består ofte av mer enn koden virksomheten utvikler og forvalter
