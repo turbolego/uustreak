@@ -641,12 +641,17 @@ jobs:
             echo "❌ report-list.json missing from publish root"
             exit 1
           fi
-          for required_file in robots.txt sitemap.xml llms.txt .well-known/ai-catalog.json; do
+          for required_file in CNAME robots.txt sitemap.xml llms.txt .well-known/ai-catalog.json; do
             if [ ! -f "$PUBLISH_DIR/$required_file" ]; then
               echo "❌ Required discovery file missing from publish root: $required_file"
               exit 1
             fi
           done
+          if [ "$(tr -d '\r\n' < "$PUBLISH_DIR/CNAME")" != "uustreak.no" ]; then
+            echo "❌ CNAME must contain uustreak.no"
+            exit 1
+          fi
+          jq -e . "$PUBLISH_DIR/.well-known/ai-catalog.json" > /dev/null
           echo "✓ Incremental copy complete"
 
           if [ -n "$(git -C "$PUBLISH_DIR" status --porcelain)" ]; then

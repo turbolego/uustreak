@@ -240,6 +240,7 @@ function overlayStaticSite(sourceDir, outputDir) {
         'results.json',
         'test-results.json',
         'favicon.ico',
+        'CNAME',
         'robots.txt',
         'sitemap.xml',
         'llms.txt',

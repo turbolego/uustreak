@@ -700,10 +700,23 @@ jobs:
           cp projects.json gh-pages-branch/
           
           # Copy discovery and metadata files
+          cp CNAME gh-pages-branch/
           cp robots.txt gh-pages-branch/
           cp sitemap.xml gh-pages-branch/
           cp llms.txt gh-pages-branch/
           cp -r .well-known gh-pages-branch/
+
+          for required_file in CNAME robots.txt sitemap.xml llms.txt .well-known/ai-catalog.json; do
+            if [ ! -s "gh-pages-branch/$required_file" ]; then
+              echo "❌ Required Pages file missing or empty: $required_file"
+              exit 1
+            fi
+          done
+          if [ "$(tr -d '\r\n' < gh-pages-branch/CNAME)" != "uustreak.no" ]; then
+            echo "❌ CNAME must contain uustreak.no"
+            exit 1
+          fi
+          jq -e . gh-pages-branch/.well-known/ai-catalog.json > /dev/null
           
           echo "Static files copied to gh-pages branch"
       - name: Deploy to GitHub Pages

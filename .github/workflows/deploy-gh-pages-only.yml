@@ -54,8 +54,20 @@ jobs:
               echo "  copied $page"
             done
             cp README.md favicon.ico styles.css projects.json "$TARGET/"
+            cp CNAME "$TARGET/"
             cp robots.txt sitemap.xml llms.txt "$TARGET/"
             cp -r js assets .well-known "$TARGET/"
+            for required_file in CNAME robots.txt sitemap.xml llms.txt .well-known/ai-catalog.json; do
+              if [ ! -s "$TARGET/$required_file" ]; then
+                echo "❌ Required Pages file missing or empty: $required_file"
+                exit 1
+              fi
+            done
+            if [ "$(tr -d '\r\n' < "$TARGET/CNAME")" != "uustreak.no" ]; then
+              echo "❌ CNAME must contain uustreak.no"
+              exit 1
+            fi
+            jq -e . "$TARGET/.well-known/ai-catalog.json" > /dev/null
             touch "$TARGET/.nojekyll"
             echo "✅ Static files copied successfully"
           }
