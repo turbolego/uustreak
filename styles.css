@@ -120,10 +120,46 @@ h1 {
     gap: 0.75rem;
 }
 
-.project-navigation {
+.project-menu {
+    position: relative;
+}
+
+.project-menu[open] > .project-navigation {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem 1.5rem;
+}
+
+.project-navigation {
+    display: none;
+    position: absolute;
+    inset-inline-end: 0;
+    top: calc(100% + 0.5rem);
+    z-index: 110;
+    flex-direction: column;
+    width: min(22rem, calc(100vw - 2rem));
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 0.5rem;
+    border: 2px solid var(--color-border-secondary);
+    border-radius: 4px;
+    background: var(--color-bg-secondary);
+}
+
+.project-navigation a {
+    padding: 0.75rem;
+    overflow-wrap: anywhere;
+}
+
+.project-navigation a:hover,
+.project-navigation a:focus-visible {
+    background: var(--color-bg-secondary-hover);
+}
+
+@media (max-width: 600px) {
+    .project-navigation {
+        position: static;
+        margin-top: 0.5rem;
+        max-width: 100%;
+    }
 }
 
 .project-information {
@@ -154,7 +190,8 @@ h1 {
     gap: 0.75rem;
 }
 
-.hero-actions button {
+.hero-actions button,
+.project-menu > summary {
     padding: 0.75rem 1.25rem;
     font-size: 1rem;
     border-radius: 4px;
@@ -164,7 +201,7 @@ h1 {
     cursor: pointer;
 }
 
-.hero-actions .trend-button,
+.project-menu > summary,
 .hero-actions .theme-toggle {
     border-color: var(--color-border-secondary);
     color: var(--color-text);
@@ -182,7 +219,7 @@ h1 {
     border-color: var(--color-bg-primary-hover);
 }
 
-.hero-actions .trend-button:hover,
+.project-menu > summary:hover,
 .hero-actions .theme-toggle:hover {
     background-color: var(--color-bg-secondary-hover);
     border-color: var(--color-border-secondary-hover);
