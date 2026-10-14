@@ -1,6 +1,6 @@
 # WCAG Violations Report for Krokstad skole
 
-**Timestamp:** 2026-10-12T04:52:42.562Z
+**Timestamp:** 2026-10-14T11:50:25.820Z
 **URL:** [https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/](https://www.drammen.kommune.no/tjenester/skole/skolene-i-drammen/krokstad-skole/)
 **Total Violations:** 10
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="fb82de106306dd947"], ._55yn`
+- `iframe[name="f41588fd379f88e06"], ._55yn`
 
 ### Certain ARIA roles must contain particular children
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `iframe[name="fb82de106306dd947"], div[role="feed"]`
+- `iframe[name="f41588fd379f88e06"], div[role="feed"]`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -36,16 +36,14 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 6
+- **Count:** 4
 
 #### Affected Elements:
 
-- `iframe[name="fb82de106306dd947"], .x1ypdohk.xe35lr7:nth-child(2) > ._eg_[role="button"] > ._eh3`
-- `iframe[name="fb82de106306dd947"], .x1ypdohk.xe35lr7._51mw > ._eg_[role="button"] > ._eh3`
-- `iframe[name="fb82de106306dd947"], abbr[data-utime="1791303880"] > .timestampContent`
-- `iframe[name="fb82de106306dd947"], #feed_subtitle_1689319819870314\:4\:0 > ._1atc.fsm.fwn > .fcg`
-- `iframe[name="fb82de106306dd947"], #u_1_k_Hi > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd[target="_blank"] > ._1p4p._2pi4[title="Kommenter"]`
-- `iframe[name="fb82de106306dd947"], #u_1_m_\/x > ._50sk._2pi4[title="Del"]`
+- `iframe[name="f41588fd379f88e06"], .x1ypdohk.xe35lr7:nth-child(2) > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f41588fd379f88e06"], .x1ypdohk.xe35lr7._51mw > ._eg_[role="button"] > ._eh3`
+- `iframe[name="f41588fd379f88e06"], abbr[data-utime="1791886653"] > .timestampContent`
+- `iframe[name="f41588fd379f88e06"], #u_1_g_sh > table > tbody > tr > ._435r.prl:nth-child(2) > ._29bd[target="_blank"] > ._1p4p._2pi4[title="Kommenter"]`
 
 ### Form elements should have a visible label
 
@@ -91,18 +89,17 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 8
+- **Count:** 7
 
 #### Affected Elements:
 
-- `iframe[name="fb82de106306dd947"], #u_0_1_GS`
-- `iframe[name="fb82de106306dd947"], .lfloat._3-8_[target="_blank"]`
-- `iframe[name="fb82de106306dd947"], #u_1_6_gL > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fb82de106306dd947"], #u_1_7_in > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fb82de106306dd947"], #u_1_5_YY > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fb82de106306dd947"], #u_1_1p_gR > ._302 > span > a[target="_blank"]`
-- `iframe[name="fb82de106306dd947"], #u_1_8_iR > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
-- `iframe[name="fb82de106306dd947"], ._2l7q > a[target="_blank"]`
+- `iframe[name="f41588fd379f88e06"], #u_0_1_7Z`
+- `iframe[name="f41588fd379f88e06"], .lfloat._3-8_[target="_blank"]`
+- `iframe[name="f41588fd379f88e06"], #u_1_6_Sb > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `iframe[name="f41588fd379f88e06"], #u_1_8_qi > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `iframe[name="f41588fd379f88e06"], #u_1_7_EK > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `iframe[name="f41588fd379f88e06"], #u_1_9_kg > ._5pcr.userContentWrapper[data-ft="{\"tn\":\"-R\"}"] > ._1dwg._1w_m._q7o > div:nth-child(3) > .l_c3pyo2v0u._5eit._4d-l > ._302 > span > a[target="_blank"]`
+- `iframe[name="f41588fd379f88e06"], #u_1_1s_Wq > ._302 > span > a[target="_blank"]`
 
 ### Interactive controls must not be nested
 
@@ -122,12 +119,13 @@
 - **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/presentation-role-conflict?application=playwright
 - **Tags:** cat.aria, best-practice, ACT
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
-- `iframe[name="fb82de106306dd947"], a[aria-describedby="u_1_12_nM"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > img[width="255"][height="134"][caption=""]`
-- `iframe[name="fb82de106306dd947"], a[aria-describedby="u_1_11_oy"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > img[width="255"][height="134"][caption=""]`
+- `iframe[name="f41588fd379f88e06"], img[height="148"]`
+- `iframe[name="f41588fd379f88e06"], a[aria-describedby="u_1_14_yh"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > img[width="255"][height="134"][caption=""]`
+- `iframe[name="f41588fd379f88e06"], a[aria-describedby="u_1_13_UH"] > ._6l-.__c_ > .fbStoryAttachmentImage.uiScaledImageContainer > img[width="255"][height="134"][caption=""]`
 
 ### All page content should be contained by landmarks
 

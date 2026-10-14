@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vy Buss AS
 
-**Timestamp:** 2026-10-12T05:04:20.692Z
+**Timestamp:** 2026-10-14T12:05:34.714Z
 **URL:** [https://www.vybuss.no/#!/](https://www.vybuss.no/#!/)
 **Total Violations:** 3
 
@@ -39,7 +39,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 14
+- **Count:** 15
 
 #### Affected Elements:
 
@@ -53,7 +53,8 @@
 - `.expand-block__container:nth-child(4) > .expand-block__header[data-toggle="expand"]`
 - `.js-group-block.block__wrapper:nth-child(4)`
 - `.js-group-block.block__wrapper:nth-child(5)`
-- `#ddChallengeBody1791781451561, .captcha__human`
-- `#ddChallengeBody1791781451561, .sliderText`
-- `#ddChallengeBody1791781451561, .captcha__robot__warning`
-- `#ddChallengeBody1791781451561, .captcha__robot__contact_support`
+- `#kindly-chat-api > div,.sc-9dlu7b-2`
+- `#ddChallengeBody1791979523014, .captcha__human`
+- `#ddChallengeBody1791979523014, .sliderText`
+- `#ddChallengeBody1791979523014, .captcha__robot__warning`
+- `#ddChallengeBody1791979523014, .captcha__robot__contact_support`

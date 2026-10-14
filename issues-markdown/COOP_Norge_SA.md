@@ -1,6 +1,6 @@
 # WCAG Violations Report for COOP Norge SA
 
-**Timestamp:** 2026-10-12T04:43:30.507Z
+**Timestamp:** 2026-10-14T11:41:29.864Z
 **URL:** [https://www.coop.no/](https://www.coop.no/)
 **Total Violations:** 5
 
@@ -16,8 +16,8 @@
 
 #### Affected Elements:
 
-- `.it > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .ip.ir.iq > .is > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.im > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .ii.ik.ij > .il > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### ARIA attributes must conform to valid values
 
@@ -30,8 +30,8 @@
 #### Affected Elements:
 
 - `input[role="searchbox"]`
-- `.it > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
-- `div:nth-child(1) > .ip.ir.iq > .is > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `.im > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
+- `div:nth-child(1) > .ii.ik.ij > .il > .bt.bu.bx > .ch[placeholder="F.eks 0101 eller Oslo"][role="combobox"]`
 
 ### Headings should not be empty
 
@@ -39,13 +39,12 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 3
+- **Count:** 2
 
 #### Affected Elements:
 
-- `.es`
-- `.i5`
-- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .ew.am.cj > .ex.ez.f0`
+- `.hw`
+- `#\36 N2snuT4T1QyrHU1wbHFIW > .ah.ai.af > .ee.am.cj > .ef.eh.ei`
 
 ### Frames must have an accessible name
 
@@ -57,10 +56,10 @@
 
 #### Affected Elements:
 
-- `#\33 3modPj5ilgcmY76YKciV8 > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[scrolling="no"]`
-- `#\33 3modPj5ilgcmY76YKciV8 > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
-- `#GNXWL8jlPCFqmGJFbdvQe > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"]`
-- `#GNXWL8jlPCFqmGJFbdvQe > .q.e9.cj > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
+- `#\33 3modPj5ilgcmY76YKciV8 > .q.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, iframe[scrolling="no"]`
+- `#\33 3modPj5ilgcmY76YKciV8 > .q.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
+- `#GNXWL8jlPCFqmGJFbdvQe > .q.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, iframe[src$="about:blank"]`
+- `#GNXWL8jlPCFqmGJFbdvQe > .q.cj.e9 > .ea.al.ba > .eb.ec.ed > iframe, body > iframe`
 
 ### Links must have discernible text
 
@@ -72,5 +71,5 @@
 
 #### Affected Elements:
 
-- `.ko.kp.kq:nth-child(1)`
-- `.ko.kp.kq:nth-child(2)`
+- `.ki.kj.kk:nth-child(1)`
+- `.ki.kj.kk:nth-child(2)`

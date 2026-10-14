@@ -1,8 +1,8 @@
 # WCAG Violations Report for Sandnes kommune
 
-**Timestamp:** 2026-10-12T04:57:25.703Z
+**Timestamp:** 2026-10-14T11:56:21.058Z
 **URL:** [https://www.sandnes.kommune.no/](https://www.sandnes.kommune.no/)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -17,18 +17,6 @@
 #### Affected Elements:
 
 - `#iFrameResizer0`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#portalframe1, div[data-itemid="38630"] > .custom-event-info > h4`
 
 ### Links must have discernible text
 

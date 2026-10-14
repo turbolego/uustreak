@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telenor ASA
 
-**Timestamp:** 2026-10-12T05:00:57.748Z
+**Timestamp:** 2026-10-14T12:00:50.171Z
 **URL:** [https://www.telenor.no/privat/](https://www.telenor.no/privat/)
 **Total Violations:** 4
 
@@ -28,9 +28,9 @@
 
 #### Affected Elements:
 
-- `div[data-v-cbfd614d=""] > h4`
+- `.card-wrap.medium[data-v-bb772dac=""]:nth-child(1) > .shadow-m.card-vertical[gray="false"] > .content[data-v-bf0df00b=""] > .margin-bottom-s.tn-heading.left`
 - `.dropdown-category.footer.dark:nth-child(1) > .dropdown-link[data-v-515173b3=""] > .dropdown-header.hidden-mobile[data-v-515173b3=""] > h6`
-- `#privacy_prompt_text2 > h4`
+- `h4`
 
 ### <li> elements must be contained in a <ul> or <ol>
 

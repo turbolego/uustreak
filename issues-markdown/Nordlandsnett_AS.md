@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordlandsnett AS
 
-**Timestamp:** 2026-10-12T04:55:16.907Z
+**Timestamp:** 2026-10-14T11:56:14.058Z
 **URL:** [https://arva.no/hjem](https://arva.no/hjem)
 **Total Violations:** 5
 
@@ -76,11 +76,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 12
+- **Count:** 11
 
 #### Affected Elements:
 
-- `.w_carousel_image`
 - `.w_carousel_title`
 - `.w_carousel_intro`
 - `div[data-id="483468145"] > .block-title[data-v-b59ca79e=""]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Drammens Tidende AS
 
-**Timestamp:** 2026-10-12T04:46:26.294Z
+**Timestamp:** 2026-10-14T11:43:57.174Z
 **URL:** [https://www.dt.no/](https://www.dt.no/)
 **Total Violations:** 5
 
@@ -36,53 +36,56 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 43
+- **Count:** 46
 
 #### Affected Elements:
 
 - `#eaframe, .avis-logo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10867956 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10867956 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, #brokerimage-container-10885059 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10885059 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10873172 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10873172 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, #brokerimage-container-10873273 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10873273 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10872402 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10872402 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10877569 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10877569 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10876397 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10876397 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10873172 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10873172 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10873217 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10873217 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(6) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10869123 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10869123 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, #brokerimage-container-10872402 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10872402 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(7) > .shoutimage-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10880696 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10880696 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(8) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10868803 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10868803 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(9) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10880889 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10880889 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(10) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10878843 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10878843 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(11) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10875979 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10875979 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(12) > .shoutimage-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10876399 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10876399 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(9) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10883479 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10883479 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(10) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10880889 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10880889 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(11) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10885057 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10885057 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(12) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10877569 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10877569 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(13) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10873273 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10873273 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, #brokerimage-container-10878843 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10878843 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(14) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10873217 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10873217 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, #brokerimage-container-10883014 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10883014 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(15) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10875979 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10875979 > .brokerinfo-container > .brokerlogo`
 
 ### Elements marked as presentational should be consistently ignored
 

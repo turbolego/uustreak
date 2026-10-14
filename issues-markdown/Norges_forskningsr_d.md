@@ -1,8 +1,8 @@
 # WCAG Violations Report for Norges forskningsråd
 
-**Timestamp:** 2026-10-12T04:55:39.503Z
+**Timestamp:** 2026-10-14T11:56:35.351Z
 **URL:** [https://www.forskningsradet.no/](https://www.forskningsradet.no/)
-**Total Violations:** 6
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -17,18 +17,6 @@
 #### Affected Elements:
 
 - `#declineButton`
-
-### ARIA attributes must conform to valid values
-
-- **Impact:** critical
-- **Description:** Ensure all ARIA attributes have valid values
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-valid-attr-value?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.message-global--container.message-global--container--is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--open-button[aria-label="Skjul"][type="button"]`
 
 ### Heading levels should only increase by one
 
@@ -66,16 +54,3 @@
 
 - `#coiOverlay`
 - `.tab-menu`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `.message-global--container.message-global--container--is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--collapse.message-global--collapse--use-intrinsic-height > .message-global--collapse-inner > .html-string`
-- `.message-global--container.message-global--container--is-open:nth-child(1) > .message-global.content-container.content-container--theme-wide > .message-global--collapse.message-global--collapse--use-intrinsic-height > .message-global--collapse-inner > .message-global--navigation > .message-global--navigation-of`

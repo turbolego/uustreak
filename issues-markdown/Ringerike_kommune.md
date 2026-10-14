@@ -1,6 +1,6 @@
 # WCAG Violations Report for Ringerike kommune
 
-**Timestamp:** 2026-10-12T04:56:32.633Z
+**Timestamp:** 2026-10-14T11:55:38.335Z
 **URL:** [https://www.ringerike.kommune.no/](https://www.ringerike.kommune.no/)
 **Total Violations:** 5
 
@@ -70,7 +70,7 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 10
+- **Count:** 9
 
 #### Affected Elements:
 
@@ -78,7 +78,6 @@
 - `div:nth-child(8) > div:nth-child(2)`
 - `.ssp__panel--grey.ssp__panel.mb-30 > .ssp__panel__title`
 - `.ssp__timespan`
-- `#portalframe1, #container`
 - `.mt-20`
 - `.ssp__fluid-panel > div > div > div > .container > .row > .col-md-6.mb-30.col-xs-12:nth-child(2)`
 - `.test-wrapper`

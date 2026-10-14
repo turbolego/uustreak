@@ -1,6 +1,6 @@
 # WCAG Violations Report for Handel og Kontor i Norge
 
-**Timestamp:** 2026-10-12T04:48:42.180Z
+**Timestamp:** 2026-10-14T11:46:17.089Z
 **URL:** [https://hk.no/](https://hk.no/)
 **Total Violations:** 5
 
@@ -12,12 +12,10 @@
 - **Description:** Ensure aria-hidden elements are not focusable nor contain focusable elements
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-hidden-focus?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-10.8.1
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#slick-slide01`
-- `#slick-slide12`
 - `#bai-open-chat-btn`
 
 ### Buttons must have discernible text
@@ -43,8 +41,8 @@
 
 #### Affected Elements:
 
-- `#slick-slide02 > div > .uagb-post__inner-wrap > h5`
-- `#slick-slide13 > div > .uagb-post__inner-wrap > h5`
+- `#slick-slide01 > div > .uagb-post__inner-wrap > h5`
+- `#slick-slide12 > div > .uagb-post__inner-wrap > h5`
 
 ### Links must have discernible text
 
@@ -52,15 +50,14 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 5
+- **Count:** 4
 
 #### Affected Elements:
 
+- `#slick-slide01 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 - `#slick-slide02 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 - `#slick-slide03 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `#slick-slide04 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 - `#slick-slide13 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `#slick-slide15 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 
 ### All page content should be contained by landmarks
 
