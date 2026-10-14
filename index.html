@@ -110,17 +110,19 @@
                 <div class="hero-actions">
                     <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false"><span class="theme-toggle-icon" aria-hidden="true">☀️</span> <span class="theme-toggle-label">Lys modus</span></button>
                     <button aria-label="Lær mer om denne applikasjonen" id="open-readme-dialog">Vis readme fra GitHub -repo</button>
-                    <button aria-label="Se trend animasjon" onclick="window.location.href='D3trend.html'" class="trend-button">📈 Trend Animasjon</button>
+                    <details class="project-menu">
+                        <summary>Grafer og verktøy</summary>
+                        <nav class="project-navigation" aria-label="Grafer, verktøy og diskusjon">
+                            <a href="D3trend.html">Trend-animasjon</a>
+                            <a href="bar.html">Trender og sammenligninger</a>
+                            <a href="all.html">Alle WCAG-brudd i linjediagram</a>
+                            <a href="axe-test.html">Test en nettside med axe-core</a>
+                            <a href="https://github.com/turbolego/uustreak/discussions">Diskuter og foreslå endringer på GitHub</a>
+                        </nav>
+                    </details>
                 </div>
             </div>
             <div id="accessible-description"></div>
-            <nav class="project-navigation" aria-label="Grafer, verktøy og diskusjon">
-                <a href="D3trend.html">Trend-animasjon</a>
-                <a href="bar.html">Trender og sammenligninger</a>
-                <a href="all.html">Alle WCAG-brudd i linjediagram</a>
-                <a href="axe-test.html">Test en nettside med axe-core</a>
-                <a href="https://github.com/turbolego/uustreak/discussions">Diskuter og foreslå endringer på GitHub</a>
-            </nav>
         </header>
         <section class="toolbar" aria-label="Verktøylinje for topplista">
             <div class="navigation-controls" role="group" aria-label="Navigasjon for dato">

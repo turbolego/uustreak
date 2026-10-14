@@ -28,8 +28,10 @@ Sidene i [sitemap.xml](sitemap.xml) har egne metabeskrivelser og schema.org
 ikke tidspunktet for den nyeste tilgjengelighetstesten. Oppdater datoen når
 sideteksten endres; rapportdatoene vises separat i dashboardet.
 
-Forsiden har direkte navigasjonslenker til grafer, axe-core-testeren og GitHub
-Discussions. Statiske seksjoner beskriver arbeidet, bidrag, kontakt, prosjektets
+Forsiden har en «Grafer og verktøy»-nedtrekksmeny med lenker til grafer,
+axe-core-testeren og GitHub Discussions. Menyen bruker HTML `details`/`summary`
+og kan åpnes med tastatur uten JavaScript.
+Statiske seksjoner beskriver arbeidet, bidrag, kontakt, prosjektets
 bakgrunn og nyhetsomtale, med vanlige lenker som fungerer uten JavaScript.
 
 ## Feil fra eksterne leverandører og embedded kode
