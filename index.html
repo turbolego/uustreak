@@ -52,6 +52,20 @@
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://uustreak.no/#webpage",
+      "url": "https://uustreak.no/",
+      "name": "WCAG-brudd topplista",
+      "description": "Toppliste og historiske rapporter om automatiserte WCAG-tester av norske nettsider.",
+      "inLanguage": "no",
+      "dateModified": "2026-10-14",
+      "publisher": {"@id": "https://uustreak.no/#business"}
+    }
+    </script>
+
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://uustreak.no/">
@@ -100,6 +114,13 @@
                 </div>
             </div>
             <div id="accessible-description"></div>
+            <nav class="project-navigation" aria-label="Grafer, verktøy og diskusjon">
+                <a href="D3trend.html">Trend-animasjon</a>
+                <a href="bar.html">Trender og sammenligninger</a>
+                <a href="all.html">Alle WCAG-brudd i linjediagram</a>
+                <a href="axe-test.html">Test en nettside med axe-core</a>
+                <a href="https://github.com/turbolego/uustreak/discussions">Diskuter og foreslå endringer på GitHub</a>
+            </nav>
         </header>
         <section class="toolbar" aria-label="Verktøylinje for topplista">
             <div class="navigation-controls" role="group" aria-label="Navigasjon for dato">
@@ -148,6 +169,53 @@
                 </div>
             </nav>
         </section>
+        <div class="project-information">
+            <section id="arbeidet-vart" aria-labelledby="arbeidet-vart-title">
+                <h2 id="arbeidet-vart-title">Arbeidet vårt</h2>
+                <p>UUStreak følger utviklingen i universell utforming på norske nettsider med automatiserte
+                    WCAG-tester i Playwright og AXE. Topplisten viser registrerte brudd og antall dager uten
+                    påviste brudd. Automatiserte tester dekker ikke alle WCAG-krav og er ikke bevis på full
+                    tilgjengelighet; manuelle kontroller er også nødvendige.</p>
+                <p>Utforsk <a href="all.html">historiske WCAG-brudd i linjediagram</a> og
+                    <a href="bar.html">trender og sammenligninger</a>.
+                    Rapportdatoen i dashboardet viser når testene er kjørt.</p>
+            </section>
+            <section id="bidra" aria-labelledby="bidra-title">
+                <h2 id="bidra-title">Bidra og støtt prosjektet</h2>
+                <p>Du kan bidra ved å <a href="https://github.com/turbolego/uustreak/issues">melde feil eller
+                    foreslå forbedringer på GitHub</a>, dele rapportene eller
+                    <a href="https://github.com/turbolego/uustreak">bidra til kildekoden</a>.</p>
+                <p><a href="https://github.com/turbolego/uustreak/discussions">Diskuter prosjektet og foreslå
+                    endringer i GitHub Discussions</a>.</p>
+                <p>Utviklere og KI-agenter kan også bruke
+                    <a href="https://clawhub.ai/turbolego/skills/wcag-skill">wcag-skill på ClawHub</a>
+                    og lese <a href="https://github.com/turbolego/wcag-skill">dokumentasjonen på GitHub</a>.</p>
+            </section>
+            <section id="kontakt" aria-labelledby="kontakt-title">
+                <h2 id="kontakt-title">Kontakt</h2>
+                <p>Kontakt Tobias Müller Andersen på
+                    <a href="mailto:turbolego@gmail.com">turbolego@gmail.com</a> eller
+                    <a href="tel:+4747874887">+47 478 74 887</a>.
+                    Du kan også ta kontakt på <a href="https://bsky.app/profile/turbolego.bsky.social">Bluesky</a>.</p>
+            </section>
+            <section id="om-uustreak" aria-labelledby="om-uustreak-title">
+                <h2 id="om-uustreak-title">Om UUStreak</h2>
+                <p>UUStreak spillifiserer statusmålinger av norske nettsider med en toppliste og streak-score.
+                    Prosjektet tar utgangspunkt i UUtilsynets statusmåling fra 2018 og ble lansert på
+                    ODIN-konferansen i 2025.</p>
+                <p>Les mer om bakgrunn, metode og begrensninger i
+                    <a href="https://github.com/turbolego/uustreak#readme">prosjektets README</a>.
+                    <span>Sideteksten ble oppdatert <time datetime="2026-10-14">14. oktober 2026</time>.</span></p>
+            </section>
+            <section aria-labelledby="nyheter-title">
+                <h2 id="nyheter-title">Nyheter og omtale</h2>
+                <ul>
+                    <li><a href="https://www.kode24.no/artikkel/uu-tester-271-nettsider-bare-11-klarte-seg-et-helt-ar/274753">kode24: UU-tester 271 nettsider – bare 11 klarte seg et helt år</a></li>
+                    <li><a href="https://www.kode24.no/artikkel/vi-lot-ki-rette-wcag-brudd-og-laerte-hvorfor-store-sprakmodeller-ikke-er-nok/253018">kode24: Vi lot KI rette WCAG-brudd og lærte hvorfor store språkmodeller ikke er nok</a></li>
+                    <li><a href="https://www.bufdir.no/aktuelt/nyhetsbrev/uu/kunstig-intelligens-kan-ikke-gjore-nettsider-universelt-utformet/">Bufdir: Kunstig intelligens kan ikke gjøre nettsider universelt utformet</a></li>
+                </ul>
+            </section>
+        </div>
         <dialog class="details-dialog" id="details-dialog" aria-labelledby="dialog-title">
             <h2 id="dialog-title">Rapportdetaljer</h2>
             <div id="dialog-content"></div>
