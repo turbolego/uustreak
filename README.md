@@ -10,6 +10,17 @@ Løsningen kjører Playwright med AXE på GitHub Actions.
 
 Lansert på ODIN konferansen i 2025 i forbindelse med presentasjonen ["Levende Tilgjengelighetserklæring"](https://event.dataforeningen.no/odin2025/program/) med [Tobias Müller Andersen](https://www.linkedin.com/in/turbolego/) og [Lilly Arstad Helmersen](https://www.linkedin.com/in/lillyahelmersen/)
 
+## WCAG-skill for KI-agenter
+
+[wcag-skill på ClawHub](https://clawhub.ai/turbolego/skills/wcag-skill) er en
+relatert ferdighet for KI-agenter som bygger, tester og retter nettinnhold etter
+WCAG 2.2. Den kombinerer verktøy for automatiserte tilgjengelighetstester med en
+evidensmatrise og manuelle kontroller. Automatiserte testresultater alene er ikke
+bevis på at alle WCAG-krav er oppfylt.
+
+* [Finn wcag-skill på ClawHub](https://clawhub.ai/turbolego/skills/wcag-skill)
+* [Les dokumentasjon og kildekode på GitHub](https://github.com/turbolego/wcag-skill)
+
 ## Feil fra eksterne leverandører og embedded kode
 
 En nettside består ofte av mer enn koden virksomheten utvikler og forvalter

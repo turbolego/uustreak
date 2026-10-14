@@ -1,4 +1,60 @@
 {
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "UUStreak",
+    "identifier": "uustreak.no"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:uustreak.no:web:business-card",
+      "type": "text/html",
+      "url": "https://uustreak.no/",
+      "description": "UUStreak is a web application that tracks WCAG compliance for Norwegian websites and provides a streak score for days without accessibility violations.",
+      "tags": [
+        "non-profit organisation",
+        "accessibility",
+        "wcag",
+        "open data"
+      ],
+      "extensions": {
+        "ai.vegvis.local-business": {
+          "services": [
+            "Static JSON resource containing published accessibility violation counts and streak data."
+          ],
+          "area": {
+            "names": ["Norway"]
+          },
+          "languages": ["no", "en"],
+          "actions": {
+            "contact": "mailto:turbolego@gmail.com",
+            "email": "turbolego@gmail.com",
+            "phone": "+4747874887"
+          },
+          "llms_txt": "https://uustreak.no/llms.txt",
+          "index_licence": "ODbL-1.0 DbCL-1.0",
+          "guide_entry": "https://vegvis.ai/businesses/uustreak.no/"
+        }
+      }
+    },
+    {
+      "identifier": "https://github.com/turbolego/wcag-skill",
+      "type": "application/agent-skills+md",
+      "url": "https://raw.githubusercontent.com/turbolego/wcag-skill/main/SKILL.md",
+      "displayName": "wcag-skill",
+      "description": "Related AI-agent skill for building, auditing, and repairing WCAG 2.2 web content with automated tooling and manual accessibility checks. Automated results alone do not prove conformance.",
+      "tags": [
+        "accessibility",
+        "wcag",
+        "agent-skill"
+      ],
+      "extensions": {
+        "uustreak.no": {
+          "registryUrl": "https://clawhub.ai/turbolego/skills/wcag-skill",
+          "repositoryUrl": "https://github.com/turbolego/wcag-skill"
+        }
+      }
+    }
+  ],
   "name": "UUStreak",
   "description": "A web application that tracks WCAG compliance for Norwegian websites and provides a streak score for days without accessibility violations.",
   "url": "https://uustreak.no/",
@@ -24,6 +80,7 @@
   ],
   "contact": {
     "email": "turbolego@gmail.com",
+    "phone": "+4747874887",
     "bluesky": "https://bsky.app/profile/turbolego.bsky.social"
   },
   "license": "GPL-3.0",
