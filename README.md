@@ -152,4 +152,37 @@ Listen med de 278 nettsidene fra statusmålingen til uutilsynet i 2018 er brukt 
 * bergenclinics.no slått sammen med helse-bergen.no - [Bergensklinikkene er historie – Helse Bergen overtar](https://www.rusfeltet.no/arkiv/bergensklinikkene-er-historie-helse-bergen-overtar)
 * Nettsidene for Alta Ungdomsskole ble flyttet fra alta.ungdomsskole.no til underside av alta.kommune.no
 
+# Oppdagelse for KI-agenter
+
+[Skills-indeksen](.well-known/agent-skills/index.json) følger Agent Skills
+Discovery-utkastet v0.2.0 og peker til et commit-låst arkiv av wcag-skill, inkludert
+referanser og skript. `digest` er SHA-256 av de nedlastede arkivbytene. Ved
+oppdatering må både commit-URL og digest oppdateres sammen etter at arkivet er
+lastet ned og kontrollert. En oppføring er ikke tillatelse til å kjøre skriptene.
+Indeksen kopieres til Pages sammen med resten av `.well-known/`.
+
+[robots.txt](robots.txt) erklærer `ai-train=yes`, `search=yes` og `ai-input=yes`
+med Content Signals, i tråd med prosjektets eksisterende åpne crawler-policy.
+Dette er preferanser, ikke tilgangskontroll; ikke alle roboter støtter direktivet.
+Forsidens HTML har også `describedby`-lenker til LLM-oversikten, KI-katalogen og
+skills-indeksen.
+
+GitHub Pages støtter ikke egendefinerte HTTP-responshoder eller innholdsforhandling
+basert på `Accept`. HTML-lenkene erstatter derfor ikke RFC 8288 `Link`-responshoder,
+og `llms.txt` er ikke Markdown-innholdsforhandling. Disse funksjonene krever en
+separat proxy/CDN eller annen hosting. En slik proxy kan for eksempel legge til:
+
+```http
+Link: </llms.txt>; rel="describedby"; type="text/plain", </.well-known/ai-catalog.json>; rel="describedby"; type="application/json", </.well-known/agent-skills/index.json>; rel="describedby"; type="application/json"
+```
+
+UUStreak publiserer statiske JSON-rapporter, ikke en beskyttet API-, OAuth-, MCP-
+eller A2A-tjeneste. Det publiseres derfor ikke fiktive API-kataloger, helsesjekker,
+autentiseringsmetadata eller serverkort for å tilfredsstille generiske skannere.
+DNS-AID krever reelle agentendepunkter og DNS-endringer hos domeneleverandøren.
+WebMCP-verktøy er heller ikke registrert; vanlige lenker og HTML-kontroller er ikke
+WebMCP-verktøy.
+
+Kjør regresjonstestene med `node --test js/agent-discovery.test.js`.
+
 ![UUStreak - WCAG Accessibility Leaderboard](assets/uustreak.png)
