@@ -10,11 +10,18 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 2
 
 #### Affected Elements:
 
-- `.rad-carousel-block__title`
-- `#editorialtext-99eb2d4213 > h4`
+- **Target:** `.rad-carousel-block__title`
+  - **HTML:** `<h4 class="rad-carousel-block__title">“Companies will have a greater technology landscape, but we need to completely change the narrative to inspire people to paint the future. It is human in the lead, not human in the loop.”</h4>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
+- **Target:** `#editorialtext-99eb2d4213 > h4`
+  - **HTML:** `<h4>Reinvented with Accenture</h4>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
+
