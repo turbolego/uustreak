@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-10-14T12:04:43.965Z
+**Timestamp:** 2026-10-15T05:50:56.757Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
 **Total Violations:** 6
 
@@ -40,7 +40,7 @@
 
 #### Affected Elements:
 
-- `.cms-recomendations:nth-child(7) > section > div > .carousel[aria-roledescription="carousel"][role="region"]`
+- `.cms-recomendations:nth-child(6) > section > div > .carousel[aria-roledescription="carousel"][role="region"]`
 
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
@@ -78,6 +78,6 @@
 
 #### Affected Elements:
 
-- `.cms-recomendations:nth-child(9) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
-- `.cms-recomendations:nth-child(11) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
-- `.cms-recomendations:nth-child(14) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- `.cms-recomendations:nth-child(8) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- `.cms-recomendations:nth-child(10) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- `.cms-recomendations:nth-child(13) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`

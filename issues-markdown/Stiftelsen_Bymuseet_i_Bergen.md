@@ -1,23 +1,10 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2026-10-14T12:02:22.117Z
+**Timestamp:** 2026-10-15T05:45:45.510Z
 **URL:** [https://bymuseet.no/](https://bymuseet.no/)
-**Total Violations:** 9
+**Total Violations:** 8
 
 ## Violation Details
-
-### ARIA role should be appropriate for the element
-
-- **Impact:** minor
-- **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
-- **Tags:** cat.aria, best-practice
-- **Count:** 2
-
-#### Affected Elements:
-
-- `#vimeo-video-banner, body`
-- `#slick-slide00 > .vimeo-wrapper > iframe, body`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -60,6 +47,18 @@
 
 - `#vimeo-video-banner`
 - `#slick-slide00 > .vimeo-wrapper > iframe`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.info-banner-headline`
 
 ### Form elements should have a visible label
 
@@ -132,32 +131,20 @@
 
 - `meta[name="viewport"]`
 
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `html`
-- `#vimeo-video-banner, html`
-- `#slick-slide00 > .vimeo-wrapper > iframe, html`
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 13
+- **Count:** 15
 
 #### Affected Elements:
 
+- `#vimeo-video-banner, #horizon`
 - `.front-page-content-block`
 - `.events`
+- `#slick-slide00 > .vimeo-wrapper > iframe, #horizon`
 - `.cta[target="_self"] > span`
 - `.info-banner`
 - `.culture-for-all`

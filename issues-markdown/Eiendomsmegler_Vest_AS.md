@@ -1,8 +1,8 @@
 # WCAG Violations Report for Eiendomsmegler Vest AS
 
-**Timestamp:** 2026-10-14T11:44:15.058Z
+**Timestamp:** 2026-10-15T05:28:59.940Z
 **URL:** [https://www.eiendomsmeglernorge.no/](https://www.eiendomsmeglernorge.no/)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -32,18 +32,6 @@
 #### Affected Elements:
 
 - `h6`
-
-### Images must have alternative text
-
-- **Impact:** critical
-- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
-- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.coi-banner__text > img`
 
 ### Document should not have more than one banner landmark
 

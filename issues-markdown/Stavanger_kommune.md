@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stavanger kommune
 
-**Timestamp:** 2026-10-14T12:01:57.462Z
+**Timestamp:** 2026-10-15T05:45:24.836Z
 **URL:** [https://www.stavanger.kommune.no/](https://www.stavanger.kommune.no/)
 **Total Violations:** 2
 

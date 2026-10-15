@@ -1,6 +1,6 @@
 # WCAG Violations Report for Firda Media AS
 
-**Timestamp:** 2026-10-14T11:45:47.604Z
+**Timestamp:** 2026-10-15T05:31:12.291Z
 **URL:** [https://www.firda.no/](https://www.firda.no/)
 **Total Violations:** 4
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.navigation > .carousel[role="region"][aria-label="Innhaldskarusell"]`
+- `brick-carousel-v3[data-slides="8"] > .carousel[role="region"][aria-label="Innhaldskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 

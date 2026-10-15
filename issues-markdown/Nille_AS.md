@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2026-10-14T11:52:10.157Z
+**Timestamp:** 2026-10-15T05:38:45.392Z
 **URL:** [https://www.nille.no/](https://www.nille.no/)
 **Total Violations:** 7
 
@@ -92,13 +92,14 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 3
+- **Count:** 4
 
 #### Affected Elements:
 
+- `a[href$="medlemsdager/"]`
 - `.swiper-slide-prev > a[title=""][data-discover="true"][aria-label=""]`
-- `a[href$="lys/"]`
 - `a[href$="halloween/"][title=""][data-discover="true"]`
+- `a[href$="lys/"]`
 
 ### All page content should be contained by landmarks
 

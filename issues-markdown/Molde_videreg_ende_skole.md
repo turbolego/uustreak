@@ -1,6 +1,6 @@
 # WCAG Violations Report for Molde videregående skole
 
-**Timestamp:** 2026-10-14T11:51:03.239Z
+**Timestamp:** 2026-10-15T05:37:29.276Z
 **URL:** [https://molde.vgs.no/](https://molde.vgs.no/)
 **Total Violations:** 1
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jobzone Norge AS
 
-**Timestamp:** 2026-10-14T11:48:40.707Z
+**Timestamp:** 2026-10-15T05:35:32.239Z
 **URL:** [https://jobzone.no/](https://jobzone.no/)
 **Total Violations:** 6
 
@@ -27,7 +27,7 @@
 - `.buttons-href-button[href="/ledige-stillinger/74278"]`
 - `.buttons-href-button[href="/ledige-stillinger/74277"]`
 - `.buttons-href-button[href="/ledige-stillinger/74254"]`
-- `.buttons-href-button[href="/ledige-stillinger/74275"]`
+- `.buttons-href-button[href="/ledige-stillinger/74276"]`
 - `.button-component`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .jobseeker.is-marginless.is-multiline > h5`
 - `.information > section > .main-menu-wrapper > .top-menu:nth-child(1) > .company.is-marginless.colums > h5`
@@ -84,7 +84,7 @@
 - `div[data-position-id="74278"] > img`
 - `div[data-position-id="74277"] > img`
 - `div[data-position-id="74254"] > img`
-- `div[data-position-id="74275"] > img`
+- `div[data-position-id="74276"] > img`
 - `img[src$="House.svg"]`
 - `.is-6.is-12-mobile.column:nth-child(2) > img[src$="Article.svg"][type="image/svg+xml"]`
 - `.information > section > .main-menu-wrapper > .about-us.top-menu.is-marginless > .is-6.is-12-mobile.column:nth-child(3) > img[type="image/svg+xml"]`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for BN Bank ASA
 
-**Timestamp:** 2026-10-14T11:40:15.347Z
+**Timestamp:** 2026-10-15T05:22:44.043Z
 **URL:** [https://www.bnbank.no/](https://www.bnbank.no/)
 **Total Violations:** 6
 

@@ -1,22 +1,10 @@
 # WCAG Violations Report for Nordlandsnett AS
 
-**Timestamp:** 2026-10-14T11:56:14.058Z
+**Timestamp:** 2026-10-15T05:39:41.515Z
 **URL:** [https://arva.no/hjem](https://arva.no/hjem)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
-
-### ARIA commands must have an accessible name
-
-- **Impact:** serious
-- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-command-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.w_carousel_lightbox`
 
 ### Images must have alternative text
 
@@ -76,12 +64,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 11
+- **Count:** 9
 
 #### Affected Elements:
 
-- `.w_carousel_title`
-- `.w_carousel_intro`
 - `div[data-id="483468145"] > .block-title[data-v-b59ca79e=""]`
 - `.layout-mixed_layout > .block-TextAreaAdvanced-inner[data-v-16aee765=""] > .block-TextAreaAdvanced-html.editorContent[data-v-16aee765=""]`
 - `figure:nth-child(1)`

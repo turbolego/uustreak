@@ -1,6 +1,6 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2026-10-14T11:42:47.270Z
+**Timestamp:** 2026-10-15T05:28:02.680Z
 **URL:** [https://dns.no/](https://dns.no/)
 **Total Violations:** 5
 
@@ -113,6 +113,11 @@
 - `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
 - `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
 - `div[data-postid="16982"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
+- `div[data-postid="18631"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
+- `div[data-postid="18631"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
+- `div[data-postid="18631"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
+- `div[data-postid="18631"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
+- `div[data-postid="18631"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
 - `.post-data-tag-252 > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
 - `.post-data-tag-252 > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
 - `.post-data-tag-252 > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
@@ -123,11 +128,6 @@
 - `div[data-postid="18549"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
 - `div[data-postid="18549"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
 - `div[data-postid="18549"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
-- `div[data-postid="18458"] > .vc_column-inner > .wpb_wrapper > .wpb_single_image.vc_align_left.wpb_animate_when_almost_visible`
-- `div[data-postid="18458"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-spillested`
-- `div[data-postid="18458"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > .attribute-fritekst`
-- `div[data-postid="18458"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-content > a`
-- `div[data-postid="18458"] > .vc_column-inner > .wpb_wrapper > .frontpage-cal-text.wpb_animate_when_almost_visible.wpb_fadeIn > .wpb_wrapper > .cal-ticketlink`
 - `.vc_custom_1597326627476 > .vc_col-has-fill.vc_col-sm-12.wpb_column > .vc_custom_1597326586251.vc_column-inner > .wpb_wrapper > .all-events.wpb_text_column.wpb_content_element`
 - `.vc_custom_1678087387650`
 - `.vc_row-o-content-middle.vc_row-flex.ult-vc-hide-row:nth-child(7)`

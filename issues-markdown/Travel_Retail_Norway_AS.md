@@ -1,10 +1,22 @@
 # WCAG Violations Report for Travel Retail Norway AS
 
-**Timestamp:** 2026-10-14T12:02:04.163Z
+**Timestamp:** 2026-10-15T05:47:57.830Z
 **URL:** [https://www.tax-free.no/no/](https://www.tax-free.no/no/)
 **Total Violations:** 9
 
 ## Violation Details
+
+### ARIA dialog and alertdialog nodes should have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure every ARIA dialog and alertdialog node has an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-dialog-name?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#trn-popover-10`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -28,20 +40,8 @@
 
 #### Affected Elements:
 
-- `.message-heading`
 - `.media-banner_container_text-position_BOTTOM_RIGHT.media-banner_container_content-alignment_LEFT.media-banner_container_text-theme_LIGHT > .subtitle`
-
-### Banner landmark should not be contained in another landmark
-
-- **Impact:** moderate
-- **Description:** Ensure the banner landmark is at top level
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-banner-is-top-level?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.message-wrapper > header`
+- `.message-heading`
 
 ### Document should not have more than one banner landmark
 

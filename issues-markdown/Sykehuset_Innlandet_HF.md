@@ -1,6 +1,6 @@
 # WCAG Violations Report for Sykehuset Innlandet HF
 
-**Timestamp:** 2026-10-14T12:00:23.065Z
+**Timestamp:** 2026-10-15T05:47:23.204Z
 **URL:** [https://www.sykehuset-innlandet.no/](https://www.sykehuset-innlandet.no/)
 **Total Violations:** 1
 

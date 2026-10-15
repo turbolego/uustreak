@@ -1,6 +1,6 @@
 # WCAG Violations Report for Kuben videregående skole
 
-**Timestamp:** 2026-10-14T11:49:57.562Z
+**Timestamp:** 2026-10-15T05:35:49.836Z
 **URL:** [https://kuben.vgs.no/](https://kuben.vgs.no/)
 **Total Violations:** 5
 

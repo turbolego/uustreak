@@ -1,6 +1,6 @@
 # WCAG Violations Report for Flytoget AS
 
-**Timestamp:** 2026-10-14T11:45:10.122Z
+**Timestamp:** 2026-10-15T05:31:35.008Z
 **URL:** [https://flytoget.no/](https://flytoget.no/)
 **Total Violations:** 7
 
@@ -83,7 +83,7 @@
 - `.travel-input-from`
 - `.travel-input-to`
 - `.date-label-container`
-- `div[title="13:50"]`
+- `div[title="07:40"]`
 - `.primary-row > .arrival.col-xs-4`
 - `.secondary-row`
 - `.travel-results-button-container`
