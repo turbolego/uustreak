@@ -1,6 +1,6 @@
 # WCAG Violations Report for Museene i Sør-Trøndelag AS
 
-**Timestamp:** 2026-10-15T05:39:03.226Z
+**Timestamp:** 2026-10-16T03:36:21.786Z
 **URL:** [https://mist.no/](https://mist.no/)
 **Total Violations:** 1
 
@@ -10,14 +10,10 @@
 
 - **Impact:** moderate
 - **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `#portal`
-  - **HTML:** `<html data-basecss="2" data-fullscreen="false" data-ng-app="m24App" data-ng-controller="BodyCtrl" id="portal" lang="no">`
-  - **Failure summary:** Fix all of the following: Page must have a level-one heading
-
+- `#portal`

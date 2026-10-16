@@ -1,6 +1,6 @@
 # WCAG Violations Report for Norgesnett AS
 
-**Timestamp:** 2026-10-15T05:41:00.075Z
+**Timestamp:** 2026-10-16T03:38:00.926Z
 **URL:** [https://www.glitrenett.no/](https://www.glitrenett.no/)
 **Total Violations:** 3
 
@@ -10,46 +10,34 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `.link--rich-text.link[href$="sporsmal-og-svar"] > .link__label.svelte-1hzingv`
-  - **HTML:** `<span class="link__label svelte-1hzingv">Oversikt over spørsmål og svar</span>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.29 (foreground color: #007a4f, background color: #fde2b9, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1
-
+- `.link--rich-text.link[href$="sporsmal-og-svar"] > .link__label.svelte-1hzingv`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `.header__side-link--hidden-md.header__side-link.svelte-zoaqc2:nth-child(2) > .language-picker.svelte-rt3927 > nav`
-  - **HTML:** `<nav></nav>`
-  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
-
+- `.header__side-link--hidden-md.header__side-link.svelte-zoaqc2:nth-child(2) > .language-picker.svelte-rt3927 > nav`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `.skip-link`
-  - **HTML:** `<a href="#main-content" class="skip-link svelte-zoaqc2">Gå til hovedinnhold</a>`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `.skip-link`
