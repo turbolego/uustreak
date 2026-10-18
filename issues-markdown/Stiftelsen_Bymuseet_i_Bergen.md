@@ -1,10 +1,22 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2026-10-16T03:42:02.317Z
+**Timestamp:** 2026-10-18T03:45:56.182Z
 **URL:** [https://bymuseet.no/](https://bymuseet.no/)
 **Total Violations:** 8
 
 ## Violation Details
+
+### ARIA role should be appropriate for the element
+
+- **Impact:** minor
+- **Description:** Ensure role attribute has an appropriate value for the element
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
+- **Tags:** cat.aria, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#vimeo-video-banner, body`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -47,18 +59,6 @@
 
 - `#vimeo-video-banner`
 - `#slick-slide00 > .vimeo-wrapper > iframe`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.info-banner-headline`
 
 ### Form elements should have a visible label
 
@@ -137,14 +137,13 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 15
+- **Count:** 14
 
 #### Affected Elements:
 
-- `#vimeo-video-banner, #horizon`
 - `.front-page-content-block`
 - `.events`
-- `#slick-slide00 > .vimeo-wrapper > iframe, #horizon`
+- `#slick-slide00 > .vimeo-wrapper > iframe, #error`
 - `.cta[target="_self"] > span`
 - `.info-banner`
 - `.culture-for-all`

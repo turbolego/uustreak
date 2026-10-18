@@ -1,8 +1,8 @@
 # WCAG Violations Report for Redd Barna
 
-**Timestamp:** 2026-10-16T03:39:34.400Z
+**Timestamp:** 2026-10-18T03:38:23.295Z
 **URL:** [https://www.reddbarna.no/](https://www.reddbarna.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `.skip-link`
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.rb-media-text-label__date`
 
 ### Heading levels should only increase by one
 
