@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-10-18T03:59:51.131Z
+**Timestamp:** 2026-10-19T14:32:01.820Z
 **URL:** [https://jysk.no/](https://jysk.no/)
 **Total Violations:** 2
 
@@ -30,9 +30,9 @@
 
 #### Affected Elements:
 
-- `.theme-campaign-bar.h-9[data-testid="campaign-bar"]:nth-child(1) > .w-10\/12.content-center.self-center > .text-white.group-hover\:underline`
-- `.w-10\/12.content-center[href$="nyheter"] > .text-white.group-hover\:underline`
-- `.theme-campaign-bar.h-9[data-testid="campaign-bar"]:nth-child(3) > .w-10\/12.content-center.self-center > .text-white.group-hover\:underline`
+- `.w-10\/12.content-center[href$="mobeluke"] > .text-white.group-hover\:underline`
+- `a[href$="prisgaranti"] > .text-white.group-hover\:underline`
+- `.w-10\/12.content-center[href$="christmas"] > .text-white.group-hover\:underline`
 - `.theme-usp[href$="om-jysk"][data-testid="usp"]:nth-child(1) > .md\:text-2xl.mt-2.text-center`
 - `.theme-usp[href$="om-jysk"][data-testid="usp"]:nth-child(1) > .text-center.md\:text-lg`
 - `.theme-usp[href$="om-jysk"][data-testid="usp"]:nth-child(2) > .md\:text-2xl.mt-2.text-center`

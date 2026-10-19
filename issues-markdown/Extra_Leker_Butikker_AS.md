@@ -1,6 +1,6 @@
 # WCAG Violations Report for Extra Leker Butikker AS
 
-**Timestamp:** 2026-10-18T03:48:22.660Z
+**Timestamp:** 2026-10-19T14:27:40.965Z
 **URL:** [https://www.extra-leker.no/](https://www.extra-leker.no/)
 **Total Violations:** 9
 
@@ -25,19 +25,18 @@
 - **Description:** Ensure elements with an ARIA role that require parent roles are contained by them
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-required-parent?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 9
+- **Count:** 8
 
 #### Affected Elements:
 
 - `#ui-id-2`
 - `#ui-id-3`
 - `#ui-id-56`
-- `#ui-id-57`
-- `#ui-id-58`
-- `#ui-id-59`
+- `#ui-id-120`
+- `#ui-id-121`
+- `#ui-id-122`
 - `#ui-id-123`
 - `#ui-id-124`
-- `#ui-id-125`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -158,18 +157,17 @@
 - **Description:** Ensure <li> elements are used semantically
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/listitem?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
-- **Count:** 9
+- **Count:** 8
 
 #### Affected Elements:
 
 - `.nav-1.menu-item-home.active`
-- `#ui-id-1 > .nav-2.menu-type-subcategories.has-6subcategories`
-- `#ui-id-1 > .nav-3.level0.level-top`
+- `.nav-2.has-active.menu-type-subcategories`
+- `#ui-id-1 > .nav-3.menu-type-subcategories.has-6subcategories`
 - `#ui-id-1 > .nav-4.level0.level-top`
 - `#ui-id-1 > .nav-5.level0.level-top`
-- `#ui-id-1 > .nav-6.menu-type-subcategories.has-6subcategories`
+- `#ui-id-1 > .nav-6.level0.level-top`
 - `#ui-id-1 > .nav-7.level0.level-top`
-- `#ui-id-1 > .nav-8.level0.level-top`
 - `#ui-id-1 > .ambrands-menu-item.level0[data-ambrands-js="brands-menu-link"]`
 
 ### All page content should be contained by landmarks

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Adecco Norge AS
 
-**Timestamp:** 2026-10-18T03:28:59.829Z
+**Timestamp:** 2026-10-19T14:19:47.968Z
 **URL:** [https://www.adecco.com/nb-no](https://www.adecco.com/nb-no)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `.LocationSearchFilter_job-title__yLOb_`
+
+### Form elements must have labels
+
+- **Impact:** critical
+- **Description:** Ensure every form element has a label
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/label?application=playwright
+- **Tags:** cat.forms, wcag2a, wcag412, section508, section508.22.n, TTv5, TT5.c, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#secondaryCompany`
 
 ### Elements marked as presentational should be consistently ignored
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2026-10-18T03:30:44.998Z
+**Timestamp:** 2026-10-19T14:34:59.918Z
 **URL:** [https://www.nille.no/](https://www.nille.no/)
 **Total Violations:** 5
 
@@ -52,8 +52,8 @@
 
 #### Affected Elements:
 
-- `.swiper-slide-prev > a[title=""][aria-label=""][data-discover="true"]`
 - `a[href$="halloween/"][title=""][aria-label=""]`
+- `div[data-swiper-slide-index="1"] > a[title=""][aria-label=""][data-discover="true"]`
 
 ### All page content should be contained by landmarks
 
@@ -61,8 +61,9 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
 - `.topBar--hOWYROG`
+- `.htmlDrawerWrapper--rQ6eisE`
