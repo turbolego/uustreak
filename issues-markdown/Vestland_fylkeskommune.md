@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestland fylkeskommune
 
-**Timestamp:** 2026-10-20T04:05:46.450Z
+**Timestamp:** 2026-10-21T06:02:14.427Z
 **URL:** [https://www.vestlandfylke.no/](https://www.vestlandfylke.no/)
 **Total Violations:** 5
 
@@ -10,7 +10,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure elements with an ARIA role that require child roles contain them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-required-children?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-required-children?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 1
 
@@ -22,7 +22,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/label-title-only?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-title-only?application=playwright
 - **Tags:** cat.forms, best-practice
 - **Count:** 1
 
@@ -34,7 +34,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
@@ -46,7 +46,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure [role="img"] and [role="image"] elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/role-img-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/role-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 1
 
@@ -58,7 +58,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure tabindex attribute values are not greater than 0
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/tabindex?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/tabindex?application=playwright
 - **Tags:** cat.keyboard, best-practice
 - **Count:** 1
 

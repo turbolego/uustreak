@@ -1,8 +1,8 @@
 # WCAG Violations Report for BN Bank ASA
 
-**Timestamp:** 2026-10-20T03:45:08.041Z
+**Timestamp:** 2026-10-21T05:41:11.071Z
 **URL:** [https://www.bnbank.no/](https://www.bnbank.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -10,7 +10,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -22,7 +22,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 1
 
@@ -30,11 +30,26 @@
 
 - `.banner-with-everything__graphic`
 
+### Elements must have their visible text as part of their accessible name
+
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 4
+
+#### Affected Elements:
+
+- `.banner-content-card__cta`
+- `a[aria-label="Mer om forskudd på arv"]`
+- `a[aria-label="Les mer om boligbytte"]`
+- `a[aria-label="Les mer om å kjøpe bolig"]`
+
 ### Interactive controls must not be nested
 
 - **Impact:** serious
 - **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/nested-interactive?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/nested-interactive?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 7
 
@@ -52,7 +67,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 5
 
@@ -68,7 +83,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure [role="img"] and [role="image"] elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/role-img-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/role-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 6
 

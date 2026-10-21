@@ -1,8 +1,8 @@
 # WCAG Violations Report for The Thief Hotel AS
 
-**Timestamp:** 2026-10-20T04:03:21.617Z
+**Timestamp:** 2026-10-21T05:59:54.359Z
 **URL:** [https://thethief.com/](https://thethief.com/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -10,7 +10,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure attributes that begin with aria- are valid ARIA attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-valid-attr?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr?application=playwright
 - **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 2
 
@@ -23,7 +23,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 1
 
@@ -35,7 +35,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -43,11 +43,23 @@
 
 - `#heading-572 > .block-module__inner.block-block__inner > h4`
 
+### Elements must have their visible text as part of their accessible name
+
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 1
+
+#### Affected Elements:
+
+- `gh-chat,.chat-fab`
+
 ### Links must have discernible text
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 1
 

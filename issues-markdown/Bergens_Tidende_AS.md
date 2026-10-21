@@ -1,16 +1,28 @@
 # WCAG Violations Report for Bergens Tidende AS
 
-**Timestamp:** 2026-10-20T03:43:41.968Z
+**Timestamp:** 2026-10-21T05:40:15.304Z
 **URL:** [https://www.bt.no/](https://www.bt.no/)
-**Total Violations:** 1
+**Total Violations:** 2
 
 ## Violation Details
+
+### Elements must have their visible text as part of their accessible name
+
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[title="Julebyen (annonsørinnhold)"], a`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 

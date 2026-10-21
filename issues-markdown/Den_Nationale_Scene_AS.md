@@ -1,8 +1,8 @@
 # WCAG Violations Report for Den Nationale Scene AS
 
-**Timestamp:** 2026-10-20T03:46:44.287Z
+**Timestamp:** 2026-10-21T05:42:01.846Z
 **URL:** [https://dns.no/](https://dns.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 1
 
@@ -22,7 +22,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure table headers have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/empty-table-header?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/empty-table-header?application=playwright
 - **Tags:** cat.name-role-value, best-practice
 - **Count:** 2
 
@@ -31,11 +31,23 @@
 - `.month1 > thead > .caption > th:nth-child(3)`
 - `.month2 > thead > .caption > th:nth-child(1)`
 
+### Elements must have their visible text as part of their accessible name
+
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.side-menu-container > .open_sidemenu > a[title="Open menu"][aria-label="Open menu"][href="#"]`
+
 ### Links must have discernible text
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 3
 
@@ -49,7 +61,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 91
 
@@ -151,7 +163,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure tabindex attribute values are not greater than 0
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/tabindex?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/tabindex?application=playwright
 - **Tags:** cat.keyboard, best-practice
 - **Count:** 10
 

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Circle K AS
 
-**Timestamp:** 2026-10-20T03:45:19.232Z
+**Timestamp:** 2026-10-21T05:40:43.554Z
 **URL:** [https://www.circlek.no/](https://www.circlek.no/)
-**Total Violations:** 7
+**Total Violations:** 8
 
 ## Violation Details
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 5
 
@@ -26,7 +26,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure every ARIA dialog and alertdialog node has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-dialog-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-dialog-name?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 1
 
@@ -38,7 +38,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 3
 
@@ -48,11 +48,27 @@
 - `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
 - `.cb-details`
 
+### Elements must have their visible text as part of their accessible name
+
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 5
+
+#### Affected Elements:
+
+- `a[aria-label="Lading"]`
+- `a[aria-label="Finn din stasjon"]`
+- `a[aria-label="Circle K EXTRA Mastercard"]`
+- `a[aria-label="Jobb hos oss"]`
+- `a[aria-label="Circle K Gavekort"]`
+
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -64,7 +80,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/presentation-role-conflict?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/presentation-role-conflict?application=playwright
 - **Tags:** cat.aria, best-practice, ACT
 - **Count:** 2
 
@@ -77,7 +93,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 3
 
@@ -91,7 +107,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure [role="img"] and [role="image"] elements have alternative text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/role-img-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/role-img-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 4
 

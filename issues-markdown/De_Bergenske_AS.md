@@ -1,8 +1,8 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-10-20T03:46:59.294Z
+**Timestamp:** 2026-10-21T05:43:14.901Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
-**Total Violations:** 9
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 6
 
@@ -23,39 +23,11 @@
 - `#splide04-slide01`
 - `img[width="150"]`
 
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#ppms_cm_close-popup`
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 5
-
-#### Affected Elements:
-
-- `#ppms_cm_agree-to-all`
-- `#ppms_cm_reject-all`
-- `#ppms_cm_content_expander_show_btn`
-- `#popup-link`
-- `#ppms_cm_footer__powered_by`
-
 ### Images must have alternative text
 
 - **Impact:** critical
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
 - **Count:** 29
 
@@ -91,23 +63,23 @@
 - `.splide__arrow--prev.left-5[aria-controls="splide04-track"] > .w-12[data-nuxt-img=""]`
 - `.splide__arrow--next.right-5[aria-controls="splide04-track"] > .w-12[data-nuxt-img=""]`
 
-### Document should have one main landmark
+### Elements must have their visible text as part of their accessible name
 
-- **Impact:** moderate
-- **Description:** Ensure the document has a main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright
-- **Tags:** cat.semantics, best-practice
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
 - **Count:** 1
 
 #### Affected Elements:
 
-- `html`
+- `.chat-nudge`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 2
 
@@ -120,7 +92,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/nested-interactive?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/nested-interactive?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 1
 
@@ -132,9 +104,9 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 23
+- **Count:** 18
 
 #### Affected Elements:
 
@@ -156,20 +128,15 @@
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(12)`
 - `.xl\:col-span-6 > .lg\:text-center`
 - `.xl\:col-span-6 > div:nth-child(2)`
-- `#ppms_cm_language_select_btn_id`
-- `#ppms-68b46b4f-2362-49d8-8054-214dfd5e0e70`
-- `#ppms-2fe8bc9e-97d5-445d-9bf9-9d5a02dacf45`
-- `#popup-link`
-- `#ppms_cm_footer__powered_by`
 
 ### Select element must have an accessible name
 
 - **Impact:** critical
 - **Description:** Ensure select element has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/select-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/select-name?application=playwright
 - **Tags:** cat.forms, wcag2a, wcag412, section508, section508.22.n, TTv5, TT5.c, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.maxMd\:w-full`
+- `select`

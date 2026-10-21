@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Flyktninghjelpen
 
-**Timestamp:** 2026-10-20T04:00:23.486Z
+**Timestamp:** 2026-10-21T05:55:43.322Z
 **URL:** [https://www.nrc.no/](https://www.nrc.no/)
 **Total Violations:** 3
 
@@ -10,7 +10,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 3
 
@@ -24,7 +24,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 4
 
@@ -39,7 +39,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure <meta name="viewport"> can scale a significant amount
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/meta-viewport-large?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/meta-viewport-large?application=playwright
 - **Tags:** cat.sensory-and-visual-cues, best-practice
 - **Count:** 1
 

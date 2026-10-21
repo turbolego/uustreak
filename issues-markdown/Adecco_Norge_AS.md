@@ -1,16 +1,28 @@
 # WCAG Violations Report for Adecco Norge AS
 
-**Timestamp:** 2026-10-20T03:41:26.957Z
+**Timestamp:** 2026-10-21T05:37:25.169Z
 **URL:** [https://www.adecco.com/nb-no](https://www.adecco.com/nb-no)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
+
+### Elements must have their visible text as part of their accessible name
+
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#submitBtn`
 
 ### Form elements should have a visible label
 
 - **Impact:** serious
 - **Description:** Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/label-title-only?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-title-only?application=playwright
 - **Tags:** cat.forms, best-practice
 - **Count:** 1
 
@@ -22,7 +34,7 @@
 
 - **Impact:** critical
 - **Description:** Ensure every form element has a label
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/label?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label?application=playwright
 - **Tags:** cat.forms, wcag2a, wcag412, section508, section508.22.n, TTv5, TT5.c, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.1.1
 - **Count:** 1
 
@@ -34,7 +46,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/presentation-role-conflict?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/presentation-role-conflict?application=playwright
 - **Tags:** cat.aria, best-practice, ACT
 - **Count:** 9
 
@@ -54,7 +66,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
@@ -66,7 +78,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure tabindex attribute values are not greater than 0
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/tabindex?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/tabindex?application=playwright
 - **Tags:** cat.keyboard, best-practice
 - **Count:** 1
 

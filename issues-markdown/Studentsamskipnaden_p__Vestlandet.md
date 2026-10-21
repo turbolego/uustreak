@@ -1,8 +1,8 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-10-20T04:02:42.299Z
+**Timestamp:** 2026-10-21T05:58:42.693Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -10,15 +10,14 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 30
+- **Count:** 29
 
 #### Affected Elements:
 
 - `#CybotCookiebotDialogBodyEdgeMoreDetailsLink`
 - `#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll`
-- `#searchInput`
 - `.contents[target="_self"]:nth-child(1) > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `.contents[href="/no/trening?location=bergen"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `a[href$="kurs"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
@@ -51,7 +50,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 2
 
@@ -60,11 +59,32 @@
 - `a[href="/no/bolig?location=felles"] > .md\:items-start.md\:flex-row.flex-col > .md\:grow > .font-semibold`
 - `a[href$="sammen-puls"] > .pt-2.pb-2.px-2 > .text-sm.leading-tight.line-clamp-2`
 
+### Elements must have their visible text as part of their accessible name
+
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 10
+
+#### Affected Elements:
+
+- `a[href="/no/bolig?location=felles"]`
+- `.bg-transparent.w-fit[role="button"]:nth-child(2) > a[href="/no/trening?location=bergen"]`
+- `a[aria-label="Spisesteder og kaffebarer"]`
+- `a[href="/no/studentliv?location=felles"]`
+- `a[href="/no/helse?location=felles"]`
+- `.bg-transparent.w-fit[role="button"]:nth-child(6) > a`
+- `a[href="/no/karriere?location=felles"]`
+- `a[href="/no/barnehage?location=felles"]`
+- `a[aria-label="Spar penger"]`
+- `#l1`
+
 ### Document should have one main landmark
 
 - **Impact:** moderate
 - **Description:** Ensure the document has a main landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-one-main?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -76,7 +96,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/nested-interactive?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/nested-interactive?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 9
 
@@ -96,7 +116,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 23
 

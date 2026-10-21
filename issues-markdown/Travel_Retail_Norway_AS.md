@@ -1,8 +1,8 @@
 # WCAG Violations Report for Travel Retail Norway AS
 
-**Timestamp:** 2026-10-20T04:04:41.750Z
+**Timestamp:** 2026-10-21T06:00:46.528Z
 **URL:** [https://www.tax-free.no/no/](https://www.tax-free.no/no/)
-**Total Violations:** 9
+**Total Violations:** 10
 
 ## Violation Details
 
@@ -10,7 +10,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure every ARIA dialog and alertdialog node has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-dialog-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-dialog-name?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 1
 
@@ -22,7 +22,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 1
 
@@ -34,7 +34,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 2
 
@@ -43,11 +43,76 @@
 - `.media-banner_container_text-position_BOTTOM_RIGHT.media-banner_container_content-alignment_LEFT.media-banner_container_text-theme_LIGHT > .subtitle`
 - `.message-heading`
 
+### Elements must have their visible text as part of their accessible name
+
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 54
+
+#### Affected Elements:
+
+- `.header.ab-version_1[aria-label="Butikkvelger"]`
+- `.page-header > .FavoriteProductsSlot.has-components[position="FavoriteProductsSlot"] > trn-wish-list-icon > .wishlist-icon-button[aria-label="Se mine favoritter"][href$="wishlists"]`
+- `.media-banner-grid_width-2.media-banner-grid_height-4.media-banner-grid_item:nth-child(2) > trn-media-banner-item > .media-banner_wrapper_rounded.media-banner_wrapper[_ngcontent-ng-c2539610980=""] > .media-banner_link[aria-label="Se årets julekalendere"][title="KJØP NÅ"]`
+- `a[aria-label="Se alle tilbuder"]`
+- `#scrollable_viewport_35 > trn-product-card:nth-child(1) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_35 > trn-product-card:nth-child(2) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_35 > trn-product-card:nth-child(3) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_35 > trn-product-card:nth-child(4) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_35 > trn-product-card:nth-child(5) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_35 > trn-product-card:nth-child(6) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_35 > trn-product-card:nth-child(7) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_35 > trn-product-card:nth-child(8) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_35 > trn-product-card:nth-child(9) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_35 > trn-product-card:nth-child(10) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_35 > trn-product-card:nth-child(11) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_35 > trn-product-card:nth-child(12) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `trn-product-card:nth-child(13) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `trn-product-card:nth-child(14) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `trn-product-card:nth-child(15) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `trn-product-card:nth-child(16) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `.Section2A > trn-click-and-collect-card > section > .card > .card__content[_ngcontent-ng-c1426933823=""] > .card__steps-block[_ngcontent-ng-c1426933823=""] > .card__steps[_ngcontent-ng-c1426933823=""] > trn-airport-pill > .pill[aria-label="Butikkvelger"][_ngcontent-ng-c2052881801=""]`
+- `#scrollable_viewport_49 > trn-product-card:nth-child(1) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_49 > trn-product-card:nth-child(2) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_49 > trn-product-card:nth-child(3) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_49 > trn-product-card:nth-child(4) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_49 > trn-product-card:nth-child(5) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_49 > trn-product-card:nth-child(6) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_49 > trn-product-card:nth-child(7) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_49 > trn-product-card:nth-child(8) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_49 > trn-product-card:nth-child(9) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_51 > trn-product-card:nth-child(1) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_51 > trn-product-card:nth-child(2) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_51 > trn-product-card:nth-child(3) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_51 > trn-product-card:nth-child(4) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_51 > trn-product-card:nth-child(5) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_51 > trn-product-card:nth-child(6) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_53 > trn-product-card:nth-child(1) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_53 > trn-product-card:nth-child(2) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_53 > trn-product-card:nth-child(3) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_53 > trn-product-card:nth-child(4) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_53 > trn-product-card:nth-child(5) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_53 > trn-product-card:nth-child(6) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_53 > trn-product-card:nth-child(7) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_53 > trn-product-card:nth-child(8) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_53 > trn-product-card:nth-child(9) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_53 > trn-product-card:nth-child(10) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_53 > trn-product-card:nth-child(11) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_53 > trn-product-card:nth-child(12) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `.media-banner-grid_width-3.media-banner-grid_height-3.media-banner-grid_item:nth-child(1) > trn-media-banner-item > .media-banner_wrapper_section-BOTTOM.media-banner_wrapper_rounded.media-banner_wrapper > .media-banner_link[title="KJØP NÅ"][target="_self"]`
+- `.media-banner-grid_width-3.media-banner-grid_height-3.media-banner-grid_item:nth-child(2) > trn-media-banner-item > .media-banner_wrapper_section-BOTTOM.media-banner_wrapper_rounded.media-banner_wrapper > .media-banner_link[title="KJØP NÅ"][target="_self"]`
+- `a[aria-label="Les artikkel Vinguide"]`
+- `a[aria-label="Les artikkel Ginbølgen"]`
+- `trn-article:nth-child(3) > .primary > div[_ngcontent-ng-c1098918959=""] > .article-link[_ngcontent-ng-c1098918959=""] > trn-link[icon="arrow_forward"][iconplacement="icon-right"][_ngcontent-ng-c1098918959=""] > .primary-dark[title="Les artikkelen"][target="_self"]`
+- `.footer[aria-label="Butikkvelger"][_ngcontent-ng-c1743065153=""]`
+
 ### Document should not have more than one banner landmark
 
 - **Impact:** moderate
 - **Description:** Ensure the document has at most one banner landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-banner?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-no-duplicate-banner?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -59,7 +124,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 2
 
@@ -72,7 +137,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
 - **Count:** 43
 
@@ -126,7 +191,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure that lists are structured correctly
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/list?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/list?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 1
 
@@ -138,7 +203,7 @@
 
 - **Impact:** serious
 - **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/nested-interactive?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/nested-interactive?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
 - **Count:** 1
 
@@ -150,7 +215,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 

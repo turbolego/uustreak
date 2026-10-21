@@ -1,8 +1,8 @@
 # WCAG Violations Report for Deloitte Norge
 
-**Timestamp:** 2026-10-20T03:46:57.709Z
+**Timestamp:** 2026-10-21T05:43:44.250Z
 **URL:** [https://www.deloitte.com/no/no.html](https://www.deloitte.com/no/no.html)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -10,7 +10,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure role attribute has an appropriate value for the element
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
 - **Count:** 8
 
@@ -29,7 +29,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/heading-order?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 2
 
@@ -38,11 +38,33 @@
 - `#title-v2-24efabdc > .cmp-title__text`
 - `h5`
 
+### Elements must have their visible text as part of their accessible name
+
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 11
+
+#### Affected Elements:
+
+- `#search-button`
+- `button[aria-label="nettstedvelger"]`
+- `#promo-v3-e10a9452`
+- `#promo-v3-f0730040`
+- `#promo-v3-d4622422`
+- `#promo-v3-3fd6d1dc`
+- `#promo-v3-da08d7fe`
+- `#promo-v3-33c19bbd`
+- `#promo-v3-d312ce18`
+- `#promo-v3-fcd8b4e7`
+- `.ot-cookie-policy-link`
+
 ### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
 
 - **Impact:** serious
 - **Description:** Ensure that lists are structured correctly
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/list?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/list?application=playwright
 - **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
 - **Count:** 2
 
@@ -55,7 +77,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 

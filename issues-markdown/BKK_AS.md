@@ -1,16 +1,39 @@
 # WCAG Violations Report for BKK AS
 
-**Timestamp:** 2026-10-20T03:44:05.874Z
+**Timestamp:** 2026-10-21T05:40:34.020Z
 **URL:** [https://www.bkk.no/](https://www.bkk.no/)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
+
+### Elements must have their visible text as part of their accessible name
+
+- **Impact:** serious
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
+- **Count:** 12
+
+#### Affected Elements:
+
+- `a[aria-label="Se kart over strømstans"]`
+- `.rc_link-card.rc_link-card--nyhet.css-tf5rs8:nth-child(1)`
+- `a[href$="ekstremvaeret-amy"]`
+- `.rc_link-card.rc_link-card--nyhet.css-tf5rs8:nth-child(3)`
+- `.rc_link-card.rc_link-card--nyhet.css-tf5rs8:nth-child(4)`
+- `a[href$="na-kommer-studentene"]`
+- `.rc_link-card.rc_link-card--nyhet.css-tf5rs8:nth-child(6)`
+- `.rc_link-card.rc_link-card--nyhet.css-tf5rs8:nth-child(7)`
+- `.rc_link-card.rc_link-card--nyhet.css-tf5rs8:nth-child(8)`
+- `.rc_link-card.rc_link-card--nyhet.css-tf5rs8:nth-child(9)`
+- `.rc_link-card.rc_link-card--nyhet.css-tf5rs8:nth-child(10)`
+- `a[href$="maalerbytte"]`
 
 ### Form elements must have labels
 
 - **Impact:** critical
 - **Description:** Ensure every form element has a label
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/label?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label?application=playwright
 - **Tags:** cat.forms, wcag2a, wcag412, section508, section508.22.n, TTv5, TT5.c, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.1.1
 - **Count:** 3
 
@@ -24,7 +47,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the document has at most one banner landmark
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/landmark-no-duplicate-banner?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-no-duplicate-banner?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
@@ -36,7 +59,7 @@
 
 - **Impact:** minor
 - **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/presentation-role-conflict?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/presentation-role-conflict?application=playwright
 - **Tags:** cat.aria, best-practice, ACT
 - **Count:** 6
 
@@ -53,7 +76,7 @@
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.13/region?application=playwright
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
