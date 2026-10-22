@@ -10,34 +10,46 @@
 
 - **Impact:** serious
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#citybreak_basket_widget_display`
+- **Target:** `#citybreak_basket_widget_display`
+  - **HTML:** `<button class="btn icon-basket cb-empty cb-widget-basket-display" id="citybreak_basket_widget_display" tabindex="0" role="button" aria-label="Til handlekurven">`
+  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
+
 
 ### Form elements should have a visible label
 
 - **Impact:** serious
 - **Description:** Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-title-only?application=playwright
 - **Tags:** cat.forms, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#mvj09npn401s031fzom-contact\:email`
+- **Target:** `#mvj09npn401s031fzom-contact\:email`
+  - **HTML:** `<input class="mhForm__input mhForm__input--email" id="mvj09npn401s031fzom-contact:email" name="contact:email" type="email" aria-describedby="mvj09npn401s031fzom-error-contact:email" autocomplete="email">`
+  - **Failure summary:** Fix all of the following: Only title used to generate label for form element
+
 
 ### Form elements must have labels
 
 - **Impact:** critical
 - **Description:** Ensure every form element has a label
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label?application=playwright
 - **Tags:** cat.forms, wcag2a, wcag412, section508, section508.22.n, TTv5, TT5.c, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#mvj09npn401s031fzom-contact\:email`
+- **Target:** `#mvj09npn401s031fzom-contact\:email`
+  - **HTML:** `<input class="mhForm__input mhForm__input--email" id="mvj09npn401s031fzom-contact:email" name="contact:email" type="email" aria-describedby="mvj09npn401s031fzom-error-contact:email" autocomplete="email">`
+  - **Failure summary:** Fix all of the following: Form element has explicit <label> that is hidden
+
