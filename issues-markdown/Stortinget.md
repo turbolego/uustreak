@@ -1,23 +1,10 @@
 # WCAG Violations Report for Stortinget
 
-**Timestamp:** 2026-10-21T05:58:21.407Z
+**Timestamp:** 2026-10-22T04:01:23.172Z
 **URL:** [https://www.stortinget.no/](https://www.stortinget.no/)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
-
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 2
-
-#### Affected Elements:
-
-- `img[alt="Bjørnar Skjæran"]`
-- `img[alt="Åsmund Aukrust"]`
 
 ### All page content should be contained by landmarks
 

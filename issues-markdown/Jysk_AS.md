@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-10-21T05:49:07.248Z
+**Timestamp:** 2026-10-22T03:50:50.655Z
 **URL:** [https://jysk.no/](https://jysk.no/)
 **Total Violations:** 3
 
@@ -31,12 +31,12 @@
 #### Affected Elements:
 
 - `.snap-start:nth-child(1) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `a[aria-label="Se mer Skål FERDUS Ø15cm beige"]`
+- `a[aria-describedby="3450681-_r_9_"]`
+- `.snap-start:nth-child(2) > article > .mb-4.w-full.flex-col > .w-full[data-testid="product-pdp-link"]`
 - `.snap-start:nth-child(2) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `.snap-start:nth-child(3) > article > .mb-4.w-full.flex-col > .w-full[data-testid="product-pdp-link"]`
 - `.snap-start:nth-child(3) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
+- `.snap-start:nth-child(4) > article > .mb-4.w-full.flex-col > .w-full[data-testid="product-pdp-link"]`
 - `.snap-start:nth-child(4) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `a[aria-describedby="5529729-_r_9_"]`
 
 ### All page content should be contained by landmarks
 

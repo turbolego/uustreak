@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bærum kommune
 
-**Timestamp:** 2026-10-21T05:39:53.838Z
+**Timestamp:** 2026-10-22T03:37:27.117Z
 **URL:** [https://www.baerum.kommune.no/](https://www.baerum.kommune.no/)
 **Total Violations:** 7
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `.rounded-b-xl.md\:rounded-b-2xl.bg-green-100 > .lg\:flex-row.lg\:gap-8.gap-8 > article > .order-2.md\:order-1.md\:gap-8 > .md\:gap-8.gap-6.flex-col > .md\:text-\[28px\].md\:leading-9.font-serif`
+- `div:nth-child(1) > .my-8.not-prose > .rounded-b-xl.md\:rounded-b-2xl.md\:p-8 > .lg\:flex-row.lg\:gap-8.gap-8 > article > .order-2.md\:order-1.md\:gap-8 > .md\:gap-8.gap-6.flex-col > .md\:text-\[28px\].md\:leading-9.font-serif`
 
 ### Images must have alternative text
 

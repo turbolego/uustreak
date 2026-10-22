@@ -1,29 +1,10 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2026-10-21T05:39:34.778Z
+**Timestamp:** 2026-10-22T03:38:32.421Z
 **URL:** [https://www.bestwestern.no/](https://www.bestwestern.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
-
-### Alternative text of images should not be repeated as text
-
-- **Impact:** minor
-- **Description:** Ensure image alternative is not repeated as text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright
-- **Tags:** cat.text-alternatives, best-practice
-- **Count:** 8
-
-#### Affected Elements:
-
-- `img[alt="Oppdag flere opplevelser"]`
-- `img[alt="Spahoteller"]`
-- `img[alt="Naturnære hoteller"]`
-- `img[alt="Hundevennlige hoteller"]`
-- `img[alt="Hotell utover det vanlige"]`
-- `img[alt="Hotellrestauranter"]`
-- `a[href$="globale-destinasjoner"] > .md\:rounded-bl-lg.bg-cover.bg-center > img[height="0"][width="0"][loading="lazy"]`
-- `img[alt="Bli medlem"]`
 
 ### Elements must have their visible text as part of their accessible name
 
@@ -61,7 +42,7 @@
 
 - `.focus-visible\:underline`
 - `a[href$="bestwestern.com/"]`
-- `#ddChallengeBody1792561162311, .captcha__header`
-- `#ddChallengeBody1792561162311, .captcha__human`
-- `#ddChallengeBody1792561162311, .captcha__robot__warning`
-- `#ddChallengeBody1792561162311, .captcha__robot__contact_support`
+- `#ddChallengeBody1792640298229, .captcha__header`
+- `#ddChallengeBody1792640298229, .captcha__human`
+- `#ddChallengeBody1792640298229, .captcha__robot__warning`
+- `#ddChallengeBody1792640298229, .captcha__robot__contact_support`

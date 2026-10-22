@@ -1,6 +1,6 @@
 # WCAG Violations Report for Circle K AS
 
-**Timestamp:** 2026-10-21T05:40:43.554Z
+**Timestamp:** 2026-10-22T03:40:15.009Z
 **URL:** [https://www.circlek.no/](https://www.circlek.no/)
 **Total Violations:** 8
 
@@ -60,7 +60,7 @@
 
 - `a[aria-label="Lading"]`
 - `a[aria-label="Finn din stasjon"]`
-- `a[aria-label="Circle K EXTRA Mastercard"]`
+- `a[aria-label="Circle K extra Mastercard"]`
 - `a[aria-label="Jobb hos oss"]`
 - `a[aria-label="Circle K Gavekort"]`
 

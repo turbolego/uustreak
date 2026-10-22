@@ -1,8 +1,8 @@
 # WCAG Violations Report for Redd Barna
 
-**Timestamp:** 2026-10-21T05:52:50.763Z
+**Timestamp:** 2026-10-22T03:56:57.718Z
 **URL:** [https://www.reddbarna.no/](https://www.reddbarna.no/)
-**Total Violations:** 6
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -24,23 +24,12 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 1
+- **Count:** 2
 
 #### Affected Elements:
 
+- `donation-form,.cta > span`
 - `.rb-media-text-label__date`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `h6`
 
 ### Images must have alternative text
 
@@ -52,35 +41,4 @@
 
 #### Affected Elements:
 
-- `.lib-link__link[rel=""] > .lib-link__img-wrap > .lib-link__featured-image[decoding="async"]`
-
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `html`
-
-### Elements should not have tabindex greater than zero
-
-- **Impact:** serious
-- **Description:** Ensure tabindex attribute values are not greater than 0
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/tabindex?application=playwright
-- **Tags:** cat.keyboard, best-practice
-- **Count:** 8
-
-#### Affected Elements:
-
-- `#give-amount`
-- `.give-btn-level-0`
-- `.give-btn-level-1`
-- `.give-btn-level-2`
-- `.give-btn-level-custom`
-- `#frequency-single`
-- `#frequency-recurring`
-- `.give-step-one-buttons > .give-submit.advance-btn.give-btn`
+- `a[rel=""] > .lib-link__img-wrap > .lib-link__featured-image[decoding="async"]`
