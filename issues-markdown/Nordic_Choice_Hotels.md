@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordic Choice Hotels
 
-**Timestamp:** 2026-10-22T03:52:39.051Z
+**Timestamp:** 2026-10-22T12:06:04.271Z
 **URL:** [https://www.strawberry.no/](https://www.strawberry.no/)
 **Total Violations:** 2
 
@@ -10,34 +10,23 @@
 
 - **Impact:** serious
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
 - **Count:** 2
 
 #### Affected Elements:
 
-- **Target:** `.css-m9urpq`
-  - **HTML:** `<button type="button" aria-haspopup="dialog" aria-expanded="false" aria-label="Endre datoer Valgt intervall er torsdag 22. oktober 2026 til fredag 23. oktober 2026." data-focus="false" data-testid="calendar-input" class="css-m9urpq">`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
-- **Target:** `.css-rviocf`
-  - **HTML:** `<button type="button" aria-label="Åpen for et valgt antall rom og gjester." class="css-rviocf">`
-  - **Failure summary:** Fix any of the following: Text inside the element is not included in the accessible name
-
+- `.css-m9urpq`
+- `.css-rviocf`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `#skip-to-main-content`
-  - **HTML:** `<ul id="skip-to-main-content"><li><a aria-label="Åpne søkeruten" href="#search-bar-form" tabindex="0" class="css-h6ga9v">Åpne søkeruten</a></li><li><a aria-label="Åpne hovedmenyen" href="#primary-logo" tabindex="0" class="css-1ahte1t">Åpne…`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `#skip-to-main-content`

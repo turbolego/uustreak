@@ -1,0 +1,88 @@
+{
+  "project": "Stavanger kommune",
+  "timestamp": "2026-10-22T12:11:05.936Z",
+  "url": "https://www.stavanger.kommune.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-valid-attr-value",
+      "impact": "critical",
+      "description": "Ensure all ARIA attributes have valid values",
+      "help": "ARIA attributes must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"FocusTarget_module_focusTarget__abd564d5 shared_module_focusable__29a0c6d5\" role=\"slider\" aria-label=\"Progress Bar\" aria-valuemin=\"NaN\" aria-valuemax=\"NaN\" aria-valuenow=\"0\" aria-valuetext=\"NaN:NaN behind Live\" tabindex=\"0\" data-progress-bar-focus-target=\"true\"></div>",
+          "target": [
+            "iframe",
+            ".FocusTarget_module_focusTarget__abd564d5"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute values: aria-valuemin=\"NaN\", aria-valuemax=\"NaN\""
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<iframe src=\"https://vimeo.com/event/6272686/embed/b56d5713f2/interaction\" frameborder=\"0\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\" allow=\"autoplay; fullscreen; picture-in-picture; encrypted-media; web-share\" allowfullscreen=\"allowfullscreen\"></iframe>",
+          "target": [
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div class=\"row\" role=\"complementary\">",
+          "target": [
+            "div[role=\"complementary\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    }
+  ]
+}

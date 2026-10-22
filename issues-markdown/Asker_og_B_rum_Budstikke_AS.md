@@ -1,91 +1,125 @@
 # WCAG Violations Report for Asker og Bærum Budstikke AS
 
-**Timestamp:** 2026-10-22T03:36:56.534Z
+**Timestamp:** 2026-10-22T11:53:40.138Z
 **URL:** [https://www.budstikka.no/](https://www.budstikka.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
-### Elements must meet minimum color contrast ratio thresholds
+### Buttons must have discernible text
 
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Source:** Embedded code from Innhold i iframe
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `#eaframe, #container_10894923 > .info > .info-wrapper > .ctaLink`
-  - **HTML:** `<div class="ctaLink" style="color: #fff; background-color: #637a92;">SE MER</div>`
-  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 4.44 (foreground color: #ffffff, background color: #637a92, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
-
+- `#eaframe, button`
 
 ### Frames must have an accessible name
 
 - **Impact:** serious
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `#eaframe`
-  - **HTML:** `<iframe frameborder="no" id="eaframe" name="eaframe" width="980" height="350" scrolling="no" src="javascript:window[&quot;contents&quot;]" style="height: 350px;"></iframe>`
-  - **Failure summary:** Fix any of the following: Element has no title attribute aria-label attribute does not exist or is empty aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty Element's defaul…
+- `#eaframe`
 
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 46
+
+#### Affected Elements:
+
+- `#eaframe, .avis-logo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10892937 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10892937 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10921994 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10921994 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10920257 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10920257 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10893485 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10893485 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10895537 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10895537 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(6) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10916231 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10916231 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(7) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10916668 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10916668 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(8) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10892940 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10892940 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(9) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10892936 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10892936 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(10) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10891571 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10891571 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(11) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10897112 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10897112 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(12) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10892938 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10892938 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(13) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10921193 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10921193 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(14) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10891575 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10891575 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(15) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10916230 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10916230 > .brokerinfo-container > .brokerlogo`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `brick-carousel-v3[data-slides="6"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
-  - **HTML:** `<section data-static="" role="region" class="carousel" aria-label="Innholdskarusell" aria-describedby="carousel-title-a3782dc8-21ae-4ec7-98a1-42ab520ae9d0">`
-  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
-
+- `brick-carousel-v3[data-slides="6"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 
 - **Impact:** minor
 - **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/presentation-role-conflict?application=playwright
 - **Tags:** cat.aria, best-practice, ACT
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `img[height="80"]`
-  - **HTML:** `<img tabindex="-1" src="//assets.acdn.no/local/v3/publications/www.budstikka.no/gfx/small-positive.svg" alt="" loading="eager" height="80" width="auto">`
-  - **Failure summary:** Fix all of the following: Element is not focusable.
-
+- `img[height="80"]`
 
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
 - **Count:** 2
 
 #### Affected Elements:
 
-- **Target:** `amedia-username`
-  - **HTML:** `<amedia-username orderpage="//www.budstikka.no/tilbud" publication="www.budstikka.no" subscription-text="Bli abonnent" subscription-link="true" links="" locale="nb-NO" theme="alfa">`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
-- **Target:** `#toppbanner-1`
-  - **HTML:** `<bazaar-ad data-component-layou...="commercial" position="toppbanner" class="am-bazaar-ad lp_topp..." labeled="true" display-config="" aria-labelledby="toppbanner-1-label" ad-index="1" id="toppbanner-1" data-id="toppbanner-1" tag-id="www.b…`
-  - **Failure summary:** Fix any of the following: Some page content is not contained by landmarks
-
+- `amedia-username`
+- `#toppbanner-1`

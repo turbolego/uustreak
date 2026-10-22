@@ -1,39 +1,43 @@
 # WCAG Violations Report for Stavanger kommune
 
-**Timestamp:** 2026-10-22T04:02:10.888Z
+**Timestamp:** 2026-10-22T12:11:05.936Z
 **URL:** [https://www.stavanger.kommune.no/](https://www.stavanger.kommune.no/)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
+
+### ARIA attributes must conform to valid values
+
+- **Impact:** critical
+- **Description:** Ensure all ARIA attributes have valid values
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe, .FocusTarget_module_focusTarget__abd564d5`
+
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
-- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- **Target:** `div[role="complementary"]`
-  - **HTML:** `<div class="row" role="complementary"> <div class="col wider"> <div> <div></div> </div> </div> </div>`
-  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
-
-
-### Page should contain a level-one heading
-
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Source:** Page content
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- **Target:** `#content`
-  - **HTML:** `<html lang="nb" id="content">`
-  - **Failure summary:** Fix all of the following: Page must have a level-one heading
-
+- `div[role="complementary"]`
