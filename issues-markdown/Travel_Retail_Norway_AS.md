@@ -1,8 +1,8 @@
 # WCAG Violations Report for Travel Retail Norway AS
 
-**Timestamp:** 2026-10-22T12:17:17.869Z
+**Timestamp:** 2026-10-23T05:38:24.350Z
 **URL:** [https://www.tax-free.no/no/](https://www.tax-free.no/no/)
-**Total Violations:** 8
+**Total Violations:** 10
 
 ## Violation Details
 
@@ -186,6 +186,30 @@
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1625507"]`
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1625508"][href$="freia-daim"]`
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1625511"]`
+
+### <ul> and <ol> must only directly contain <li>, <script> or <template> elements
+
+- **Impact:** serious
+- **Description:** Ensure that lists are structured correctly
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/list?application=playwright
+- **Tags:** cat.structure, wcag2a, wcag131, EN-301-549, EN-9.1.3.1, RGAAv4, RGAA-9.3.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `bam-playlist,.player-container`
+
+### Interactive controls must not be nested
+
+- **Impact:** serious
+- **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/nested-interactive?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `bam-playlist,bam-player[video-id="puv_wcjPeir9SacUpcig1WckEf"],.has-preview.wrapper[role="button"]`
 
 ### All page content should be contained by landmarks
 

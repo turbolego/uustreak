@@ -1,6 +1,6 @@
 # WCAG Violations Report for BKK AS
 
-**Timestamp:** 2026-10-22T11:54:00.383Z
+**Timestamp:** 2026-10-23T05:23:19.942Z
 **URL:** [https://www.bkk.no/](https://www.bkk.no/)
 **Total Violations:** 5
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 13
+- **Count:** 12
 
 #### Affected Elements:
 
@@ -28,7 +28,6 @@
 - `.rc_link-card.rc_link-card--nyhet.css-tf5rs8:nth-child(9)`
 - `.rc_link-card.rc_link-card--nyhet.css-tf5rs8:nth-child(10)`
 - `a[href$="maalerbytte"]`
-- `.startBubble-0-0-1`
 
 ### Form elements must have labels
 

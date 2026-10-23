@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vygruppen AS
 
-**Timestamp:** 2026-10-22T12:21:07.292Z
+**Timestamp:** 2026-10-23T05:41:15.876Z
 **URL:** [https://www.vy.no/](https://www.vy.no/)
 **Total Violations:** 4
 
@@ -12,11 +12,10 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 13
+- **Count:** 12
 
 #### Affected Elements:
 
-- `.css-1auyt0q > .css-1dc70b0[role="listitem"][data-discover="true"]`
 - `.css-1096yyu`
 - `.css-43gtu1 > .css-1dc70b0[role="listitem"][data-discover="true"]`
 - `.css-1o36ap5 > .css-1dc70b0[role="listitem"][data-discover="true"]`
