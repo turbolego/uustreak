@@ -1,6 +1,6 @@
 # WCAG Violations Report for Synsam Norge AS
 
-**Timestamp:** 2026-10-23T05:36:58.857Z
+**Timestamp:** 2026-10-24T03:50:08.554Z
 **URL:** [https://www.synsam.no/](https://www.synsam.no/)
 **Total Violations:** 2
 
@@ -43,18 +43,18 @@
 - `a[aria-label="Erling Haaland HAL S6 C89 5717"]`
 - `a[aria-label="Erling Haaland HAL S5 C20 5815"]`
 - `a[aria-label="Erling Haaland HAL S5 C6 5815"]`
-- `.ContentSection_content-section__roiLZ:nth-child(7) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(1)`
-- `.ContentSection_content-section__roiLZ:nth-child(7) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(2)`
-- `.ContentSection_content-section__roiLZ:nth-child(7) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(3)`
+- `.ContentSection_content-section__roiLZ:nth-child(8) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(1)`
+- `.ContentSection_content-section__roiLZ:nth-child(8) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(2)`
+- `.ContentSection_content-section__roiLZ:nth-child(8) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(3)`
 - `a[aria-label="Prada PR 17WS 1AB5S0 4920"]`
-- `.ContentSection_content-section__roiLZ:nth-child(7) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(5)`
+- `.ContentSection_content-section__roiLZ:nth-child(8) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(5)`
 - `a[aria-label="Gucci GG0748S 001 5917"]`
 - `a[aria-label="Ray-Ban Wayfarer RB4340 601 50"]`
 - `a[aria-label="Saint Laurent SL M94 001 5320"]`
 - `a[aria-label="Prada PR 26ZS 16K08Z 5516"]`
-- `.ContentSection_content-section__roiLZ:nth-child(7) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(10)`
-- `.ContentSection_content-section__roiLZ:nth-child(7) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(11)`
-- `.ContentSection_content-section__roiLZ:nth-child(7) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(12)`
+- `.ContentSection_content-section__roiLZ:nth-child(8) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(10)`
+- `.ContentSection_content-section__roiLZ:nth-child(8) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(11)`
+- `.ContentSection_content-section__roiLZ:nth-child(8) > .container > .undefined > .ProductGrid_product-grid__19vbk.ProductGrid_is-carousel__oZqQs > .ProductGrid_product-grid-content__1vSIo > .ProductCard_product-card__ccISC:nth-child(12)`
 - `a[aria-label="Gucci GG0998S 001 5221"]`
 - `a[aria-label="Erling Haaland HAL S46 C5 5518"]`
 - `.ProductCard_product-card__ccISC:nth-child(15)`

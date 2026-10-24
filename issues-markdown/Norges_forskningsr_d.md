@@ -1,8 +1,8 @@
 # WCAG Violations Report for Norges forskningsråd
 
-**Timestamp:** 2026-10-23T05:35:09.463Z
+**Timestamp:** 2026-10-24T03:47:11.839Z
 **URL:** [https://www.forskningsradet.no/](https://www.forskningsradet.no/)
-**Total Violations:** 7
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -18,18 +18,6 @@
 
 - `#declineButton`
 
-### ARIA attributes must conform to valid values
-
-- **Impact:** critical
-- **Description:** Ensure all ARIA attributes have valid values
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.message-global--open-button`
-
 ### Heading levels should only increase by one
 
 - **Impact:** moderate
@@ -41,18 +29,6 @@
 #### Affected Elements:
 
 - `.link-with-text:nth-child(1) > h3`
-
-### Elements must have their visible text as part of their accessible name
-
-- **Impact:** serious
-- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
-- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.message-global--open-button`
 
 ### Document should not have more than one banner landmark
 
@@ -78,15 +54,3 @@
 
 - `#coiOverlay`
 - `.tab-menu`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.message-global--collapse`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Biltema AS
 
-**Timestamp:** 2026-10-23T05:19:16.567Z
+**Timestamp:** 2026-10-24T03:33:57.128Z
 **URL:** [https://www.biltema.no/](https://www.biltema.no/)
 **Total Violations:** 11
 
@@ -53,17 +53,18 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 19
+- **Count:** 20
 
 #### Affected Elements:
 
 - `#headerMyBiltemaButton`
 - `li:nth-child(11) > a[href$="kundeservice/"]`
-- `.content__grid > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
-- `.block__grid.block:nth-child(6) > .block--100.content > .content__grid--reverse > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black.button`
+- `.content__grid--reverse > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
+- `.block__grid.block:nth-child(6) > .block--100.content > .content__grid > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
+- `.block__grid.block:nth-child(8) > .block--100.content > .content__grid--reverse > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black.button`
 - `a[aria-label="Gå til: Reflekser"]`
 - `a[aria-label="Gå til: Bil - MC"]`
-- `.content__grid--reverse > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
+- `.block__grid.block:nth-child(14) > .block--100.content > .content__grid > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
 - `a[aria-label="Gå til: Presenninger"]`
 - `a[aria-label="Gå til: Takrennesystem"]`
 - `.button__m.button__transparent--black[href$="kommende-produktnyheter/"]`

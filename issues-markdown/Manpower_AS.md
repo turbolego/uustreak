@@ -1,6 +1,6 @@
 # WCAG Violations Report for Manpower AS
 
-**Timestamp:** 2026-10-23T05:34:37.134Z
+**Timestamp:** 2026-10-24T03:44:05.374Z
 **URL:** [https://www.manpower.no/nb](https://www.manpower.no/nb)
 **Total Violations:** 6
 
@@ -57,19 +57,12 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 12
+- **Count:** 5
 
 #### Affected Elements:
 
 - `.col > .country-links > .lang-nav > .language-wrapper > .country[role="button"][aria-label="(Manpower-Global) pop up opens"]`
 - `a[aria-label="User Login"]`
-- `a[href$="fagomrader"][aria-label="READ MORE"][target="_blank"]`
-- `a[href$="mypath"][aria-label="READ MORE"][target="_blank"]`
-- `a[href$="jobb-i-manpower"][aria-label="READ MORE"][target="_blank"]`
-- `a[href$="bemanning"][aria-label="READ MORE"][target="_blank"]`
-- `a[href$="fast-rekruttering"][aria-label="READ MORE"][target="_blank"]`
-- `.cardInfoContainer.col-md-6.col-lg-3:nth-child(3) > .manpower_light.card > .card-wrapper > div:nth-child(2) > .align-bottom > .textLink > a[aria-label="READ MORE"][target="_blank"]`
-- `a[href$="academy"][aria-label="READ MORE"][target="_blank"]`
 - `button[aria-label="Slide1"]`
 - `button[aria-label="Slide2"]`
 - `.sub-footer-disclaimer-inner > .country-links > .lang-nav > .language-wrapper > .country[role="button"][aria-label="(Manpower-Global) pop up opens"]`

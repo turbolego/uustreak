@@ -1,0 +1,43 @@
+{
+  "project": "Fellesforbundet",
+  "timestamp": "2026-10-24T03:38:19.071Z",
+  "url": "https://www.fellesforbundet.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button data-testid=\"actionButton-reject\" title=\"Nekt alle cookie\" data-cookiefirst-act...=\"reject\" tabindex=\"0\" aria-label=\"Nekt alle cookie\" data-cookiefirst-out...=\"true\" data-cookiefirst-but...=\"secondary\" type=\"button\" class=\" cf2Lf6 cf8Oal\" style=\"--banner-btn-border-...\">",
+          "target": [
+            "button[data-testid=\"actionButton-reject\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<button data-testid=\"actionButton-adjust\" title=\"Juster innstillingen...\" aria-haspopup=\"dialog\" aria-expanded=\"false\" data-cookiefirst-act...=\"adjust\" tabindex=\"0\" aria-label=\"Juster innstillingen...\" data-cookiefirst-out...=\"true\" data-cookiefirst-but...=\"secondary\" type=\"button\" ...>",
+          "target": [
+            "button[data-testid=\"actionButton-adjust\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    }
+  ]
+}

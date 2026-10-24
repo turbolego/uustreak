@@ -1,6 +1,6 @@
 # WCAG Violations Report for Steinkjer videregående skole
 
-**Timestamp:** 2026-10-23T05:35:11.455Z
+**Timestamp:** 2026-10-24T03:48:31.847Z
 **URL:** [https://web.trondelagfylke.no/steinkjer-videregaende-skole](https://web.trondelagfylke.no/steinkjer-videregaende-skole)
 **Total Violations:** 5
 
@@ -53,8 +53,8 @@
 
 #### Affected Elements:
 
-- `iframe[name="f732f6d5558fe3f03"], #u_0_1_NF`
-- `iframe[name="f732f6d5558fe3f03"], .lfloat._3-8_`
+- `iframe[name="fe60eaa43fc6eb255"], #u_0_1_fI`
+- `iframe[name="fe60eaa43fc6eb255"], .lfloat._3-8_`
 
 ### All page content should be contained by landmarks
 
@@ -72,5 +72,5 @@
 - `.card-grid.card-grid--equal-height:nth-child(4)`
 - `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(1)`
 - `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(2) > .card.card-grid--equal-height > .card__tag`
-- `iframe[name="f732f6d5558fe3f03"], #u_0_0_Eu`
+- `iframe[name="fe60eaa43fc6eb255"], #u_0_0_nZ`
 - `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(3)`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-10-23T05:36:31.007Z
+**Timestamp:** 2026-10-24T03:49:46.580Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 6
 
@@ -57,7 +57,7 @@
 #### Affected Elements:
 
 - `a[href="/no/bolig?location=felles"] > .md\:items-start.md\:flex-row.flex-col > .md\:grow > .font-semibold`
-- `a[href$="sammen-puls"] > .pt-2.pb-2.px-2 > .text-sm.leading-tight.line-clamp-2`
+- `a[href$="alle-studenter"] > .pt-2.pb-2.px-2 > .text-sm.leading-tight.line-clamp-2`
 
 ### Elements must have their visible text as part of their accessible name
 
