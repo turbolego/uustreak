@@ -1,6 +1,6 @@
 # WCAG Violations Report for De Bergenske AS
 
-**Timestamp:** 2026-10-24T03:36:06.344Z
+**Timestamp:** 2026-10-25T03:51:58.257Z
 **URL:** [https://www.debergenske.no/](https://www.debergenske.no/)
 **Total Violations:** 7
 
@@ -37,9 +37,9 @@
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(3) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:h-\[740px\].collection-item[theme=""]:nth-child(2) > .h-auto.max-w-full.sm\:px-6`
 - `.\!bg-Theme\/Dark.DARK.\!text-white:nth-child(3) > .py-15[data-v-d53f09c7=""] > .container[data-v-d53f09c7=""] > .lg\:grid-cols-3.gap-6.grid > .lg\:flex-col-reverse.lg\:h-\[740px\][theme=""]:nth-child(3) > .h-auto.max-w-full.sm\:px-6`
 - `.lg\:col-span-2 > .sm\:pr-6.media.flex-1`
-- `.lg\:row-span-2 > .sm\:pr-6.media.flex-1`
 - `.lg\:row-start-2.col-span-1.row-span-1:nth-child(3) > .sm\:pr-6.media.flex-1`
 - `.lg\:row-start-2.col-span-1.row-span-1:nth-child(4) > .sm\:pr-6.media.flex-1`
+- `.lg\:row-start-3 > .sm\:pr-6.media.flex-1`
 - `.splide__arrow--prev.left-5[aria-controls="splide01-track"] > .w-12[data-nuxt-img=""]`
 - `.splide__arrow--next.right-5[aria-controls="splide01-track"] > .w-12[data-nuxt-img=""]`
 - `#splide02-slide01 > .collection-item--fullWidth[fluidwidth="true"][theme="default"] > .sm\:max-w-full.media.flex-1`

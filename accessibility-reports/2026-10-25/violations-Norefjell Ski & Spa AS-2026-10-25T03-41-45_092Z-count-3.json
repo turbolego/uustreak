@@ -1,0 +1,88 @@
+{
+  "project": "Norefjell Ski & Spa AS",
+  "timestamp": "2026-10-25T03:41:45.092Z",
+  "url": "https://www.norefjell.com/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button class=\"btn icon-basket cb-empty cb-widget-basket-display\" id=\"citybreak_basket_widget_display\" tabindex=\"0\" role=\"button\" aria-label=\"Til handlekurven\">",
+          "target": [
+            "#citybreak_basket_widget_display"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "description": "Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-title-only?application=playwright",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input class=\"mhForm__input mhForm__input--email\" id=\"mvna6rpqly8f426eqdn-contact:email\" name=\"contact:email\" type=\"email\" aria-describedby=\"mvna6rpqly8f426eqdn-error-contact:email\" autocomplete=\"email\">",
+          "target": [
+            "#mvna6rpqly8f426eqdn-contact\\:email"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "impact": "critical",
+      "description": "Ensure every form element has a label",
+      "help": "Form elements must have labels",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label?application=playwright",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<input class=\"mhForm__input mhForm__input--email\" id=\"mvna6rpqly8f426eqdn-contact:email\" name=\"contact:email\" type=\"email\" aria-describedby=\"mvna6rpqly8f426eqdn-error-contact:email\" autocomplete=\"email\">",
+          "target": [
+            "#mvna6rpqly8f426eqdn-contact\\:email"
+          ],
+          "failureSummary": "Fix all of the following:\n  Form element has explicit <label> that is hidden"
+        }
+      ]
+    }
+  ]
+}

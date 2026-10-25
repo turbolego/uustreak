@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-10-24T03:49:26.839Z
+**Timestamp:** 2026-10-25T03:57:26.670Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -30,7 +30,7 @@
 #### Affected Elements:
 
 - `.h2.e0.e1 > div > div`
-- `.h4.am.an`
+- `a[href$="dagskupp2"]`
 - `li:nth-child(1) > .ic.id[aria-label="Jessheim vanntett vinterstøvel"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `li:nth-child(1) > .ic.id[aria-label="Jessheim vanntett vinterstøvel"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `li:nth-child(2) > .ic.id[aria-label="Jessheim vanntett vinterstøvel"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
@@ -52,15 +52,15 @@
 - `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Lofoten fôret regnvott"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Lofoten regnvott"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Bodø lettvekts regnjakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Stormflod regnbukse barn 8-14"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Stormflod regnbukse barn 8-14"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Hemsedal vattert skallponcho"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Lofoten regnvott"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Harstad skallanorakk"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Voss 2-lags ulltrøye"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Voss 2-lags ullongs"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Vinterberg vinterjakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Voss 2-lags ullongs"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 
 ### Headings should not be empty
@@ -106,8 +106,8 @@
 - `a[href$="tilbehor"] > .jv.ht.hu > .hx.a2.hw`
 - `.ju.fm.be:nth-child(4) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jv.ht.hu > .hx.a2.hw`
 - `a[href$="fleece"] > .jv.ht.hu > .hx.a2.hw`
-- `.jz.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jv.ht.hu > .hx.a2.hw`
-- `.jz.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jv.ht.hu > .hx.a2.hw`
+- `.k1.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jv.ht.hu > .hx.a2.hw`
+- `.k1.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jv.ht.hu > .hx.a2.hw`
 - `.hs.ht.hu > .hx.a2.hw`
 
 ### Elements must have their visible text as part of their accessible name
@@ -132,14 +132,14 @@
 - `a[aria-label="Svolvær isolerende skallparkas"]`
 - `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie`
 - `a[aria-label="Lofoten fôret regnvott"]`
+- `a[aria-label="Lofoten regnvott"]`
+- `a[aria-label="Bodø lettvekts regnjakke"]`
 - `a[aria-label="Stormflod regnbukse barn 8-14"]`
 - `a[aria-label="Hemsedal vattert skallponcho"]`
-- `a[aria-label="Lofoten regnvott"]`
-- `a[aria-label="Harstad skallanorakk"]`
 - `a[aria-label="Voss 2-lags ulltrøye"]`
-- `a[aria-label="Voss 2-lags ullongs"]`
-- `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie`
 - `a[aria-label="Vinterberg vinterjakke"]`
+- `a[aria-label="Voss 2-lags ullongs"]`
+- `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie`
 - `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie`
 
 ### Links must have discernible text
@@ -158,8 +158,8 @@
 - `a[href$="tilbehor"]`
 - `.ju.fm.be:nth-child(4) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
 - `a[href$="fleece"]`
-- `.jz.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
-- `.jz.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
+- `.k1.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
+- `.k1.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"]`
 - `a[href$="max-499"]`
 
 ### All page content should be contained by landmarks

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Handel og Kontor i Norge
 
-**Timestamp:** 2026-10-24T03:39:24.117Z
+**Timestamp:** 2026-10-25T04:02:37.366Z
 **URL:** [https://hk.no/](https://hk.no/)
 **Total Violations:** 5
 
@@ -12,11 +12,10 @@
 - **Description:** Ensure aria-hidden elements are not focusable nor contain focusable elements
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-hidden-focus?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-10.8.1
-- **Count:** 2
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#slick-slide01`
 - `#bai-open-chat-btn`
 
 ### Buttons must have discernible text
@@ -42,7 +41,7 @@
 
 #### Affected Elements:
 
-- `#slick-slide02 > div > .uagb-post__inner-wrap > h5`
+- `#slick-slide01 > div > .uagb-post__inner-wrap > h5`
 - `#slick-slide12 > div > .uagb-post__inner-wrap > h5`
 
 ### Links must have discernible text
@@ -55,9 +54,9 @@
 
 #### Affected Elements:
 
+- `#slick-slide01 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 - `#slick-slide02 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 - `#slick-slide03 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
-- `#slick-slide04 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 - `#slick-slide13 > div > .uagb-post__inner-wrap > .uagb-post__image > a[rel="bookmark noopener noreferrer"][target="_self"]`
 
 ### All page content should be contained by landmarks

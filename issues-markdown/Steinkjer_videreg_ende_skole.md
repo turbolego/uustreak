@@ -1,8 +1,8 @@
 # WCAG Violations Report for Steinkjer videregående skole
 
-**Timestamp:** 2026-10-24T03:48:31.847Z
+**Timestamp:** 2026-10-25T03:54:48.424Z
 **URL:** [https://web.trondelagfylke.no/steinkjer-videregaende-skole](https://web.trondelagfylke.no/steinkjer-videregaende-skole)
-**Total Violations:** 5
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -43,26 +43,13 @@
 - `#coiOverlay`
 - `.top-menu`
 
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `iframe[name="fe60eaa43fc6eb255"], #u_0_1_fI`
-- `iframe[name="fe60eaa43fc6eb255"], .lfloat._3-8_`
-
 ### All page content should be contained by landmarks
 
 - **Impact:** moderate
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 8
+- **Count:** 7
 
 #### Affected Elements:
 
@@ -72,5 +59,4 @@
 - `.card-grid.card-grid--equal-height:nth-child(4)`
 - `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(1)`
 - `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(2) > .card.card-grid--equal-height > .card__tag`
-- `iframe[name="fe60eaa43fc6eb255"], #u_0_0_nZ`
 - `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(3)`
