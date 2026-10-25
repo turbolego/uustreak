@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nille AS
 
-**Timestamp:** 2026-10-25T03:39:56.519Z
+**Timestamp:** 2026-10-25T17:08:15.516Z
 **URL:** [https://www.nille.no/](https://www.nille.no/)
 **Total Violations:** 6
 
@@ -24,7 +24,7 @@
 - **Description:** Ensure buttons have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/button-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 19
+- **Count:** 18
 
 #### Affected Elements:
 
@@ -37,16 +37,15 @@
 - `.swiper-slide:nth-child(7) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(8) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(9) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
-- `.swiper-slide:nth-child(10) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(11) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(12) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(13) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(14) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
-- `.swiper-slide:nth-child(15) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(16) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(17) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(18) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 - `.swiper-slide:nth-child(19) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
+- `.swiper-slide:nth-child(20) > .itemCard--fAqEIsz > .imageBlock--Q5L3lW0 > .buttons--EimVulj > .primary--BWNWw5X.sizeSmall--WWaw80h[type="button"]:nth-child(2)`
 
 ### Headings should not be empty
 
@@ -61,10 +60,10 @@
 - `a[title="Godteribøtte Gresskar"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
 - `a[title="Vidal Halloween mix bag 400g"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
 - `a[title="Horror Candy 275g"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
-- `.swiper-slide:nth-child(6) > .itemCard--fAqEIsz > .content--TOIX07K > a[data-discover="true"][aria-label=""]:nth-child(2) > h3`
 - `a[title="Hårbøyle flaggermussverm"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
+- `a[title="Sjokoladefigurer Halloween"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
 - `a[title="Gresskar, 2 tenner, LED lys"][data-discover="true"][aria-label=""]:nth-child(2) > h3`
-- `.swiper-slide:nth-child(19) > .itemCard--fAqEIsz > .content--TOIX07K > a[data-discover="true"][aria-label=""]:nth-child(2) > h3`
+- `.swiper-slide:nth-child(20) > .itemCard--fAqEIsz > .content--TOIX07K > a[data-discover="true"][aria-label=""]:nth-child(2) > h3`
 
 ### Document should not have more than one banner landmark
 

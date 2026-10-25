@@ -1,6 +1,6 @@
 # WCAG Violations Report for XXL Sport & Villmark AS
 
-**Timestamp:** 2026-10-25T04:10:19.428Z
+**Timestamp:** 2026-10-25T17:18:22.999Z
 **URL:** [https://www.xxl.no/](https://www.xxl.no/)
 **Total Violations:** 1
 
@@ -18,7 +18,7 @@
 
 - `a[aria-label="Oppdag sesongens favoritter"]`
 - `a[aria-label="-40% på Nike Club Tee!"]`
-- `.e1143ahd1.css-0:nth-child(6) > .css-uangvd.e1ep0ots0 > .css-18tbjh.e1143ahd0 > .css-av9hfg.emo030s0 > .css-v4ox73.e1d8665d0:nth-child(2) > .css-lemnep.e1wclx3k0`
+- `.e1143ahd1.css-0:nth-child(7) > .css-uangvd.e1ep0ots0 > .css-18tbjh.e1143ahd0 > .css-av9hfg.emo030s0 > .css-v4ox73.e1d8665d0:nth-child(2) > .css-lemnep.e1wclx3k0`
 - `a[aria-label="Varme hansker, luer og sokker"]`
 - `a[aria-label="Barnesko til vintervær"]`
 - `.css-j8fxxn.e1d8665d0:nth-child(4) > .css-lemnep.e1wclx3k0`

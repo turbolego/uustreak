@@ -1,8 +1,8 @@
 # WCAG Violations Report for Lofotr Vikingmuseum AS
 
-**Timestamp:** 2026-10-25T04:13:10.068Z
+**Timestamp:** 2026-10-25T17:07:35.758Z
 **URL:** [https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/](https://www.museumnord.no/vare-museer/lofotr-vikingmuseum/)
-**Total Violations:** 5
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -31,6 +31,18 @@
 #### Affected Elements:
 
 - `#header-menu-toggle`
+
+### Elements must meet minimum color contrast ratio thresholds
+
+- **Impact:** serious
+- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
+- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.cmplz-blocked-content-notice`
 
 ### Headings should not be empty
 
@@ -74,3 +86,15 @@
 #### Affected Elements:
 
 - `#block-museumnord-featured-exhibits-carouselblock_6107c6976e88fa409e44a824f4315235 > .wp-block-pooka-experiences-exhibitions-carousel__full-width-wrapper.alignwide > .wp-block-pooka-experiences-exhibitions-carousel__carousel-container[role="region"][aria-label="Exhibits carousel"]`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.skip-link`

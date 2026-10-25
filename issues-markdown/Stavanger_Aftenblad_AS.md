@@ -1,8 +1,8 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-10-25T03:53:55.376Z
+**Timestamp:** 2026-10-25T17:12:59.234Z
 **URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `iframe[title="Tips oss"], .headline`
+
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#application`
 
 ### Interactive controls must not be nested
 

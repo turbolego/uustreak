@@ -1,6 +1,6 @@
 # WCAG Violations Report for Nordlandsnett AS
 
-**Timestamp:** 2026-10-25T03:41:01.142Z
+**Timestamp:** 2026-10-25T17:08:58.395Z
 **URL:** [https://arva.no/hjem](https://arva.no/hjem)
 **Total Violations:** 4
 
