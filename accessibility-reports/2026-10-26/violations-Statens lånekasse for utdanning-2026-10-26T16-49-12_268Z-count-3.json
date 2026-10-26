@@ -1,0 +1,94 @@
+{
+  "project": "Statens lånekasse for utdanning",
+  "timestamp": "2026-10-26T16:49:12.268Z",
+  "url": "https://lanekassen.no/#samtykke-banner",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "empty-heading",
+      "impact": "minor",
+      "description": "Ensure headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/empty-heading?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"c-aksjonsfelt__h3\"></h3>",
+          "target": [
+            ".c-aksjonsfelt:nth-child(1) > .c-aksjonsfelt-kolonne:nth-child(3) > .c-aksjonsfelt__h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a class=\"c-flis c-flis--klikkbar c-flis--forside c-flis--forside-lilac\" href=\"/nb-NO/gjeld-og-betaling/sletting-av-gjeld-i-utvalgte-kommuner/\" aria-label=\"Sletting av studielån i utvalgte kommuner\">",
+          "target": [
+            ".c-flis.c-flis--klikkbar.c-flis--forside:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"c-flis c-flis--klikkbar c-flis--forside c-flis--forside-lilac\" href=\"/nb-NO/hjelp-og-kontakt/behandlingstid2/\" aria-label=\"Sjekk hva som er behandlingstiden hvis du søker nå. \">",
+          "target": [
+            ".c-flis.c-flis--klikkbar.c-flis--forside:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<div>",
+          "target": [
+            ".MuiCardContent-root > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div><p class=\"MuiTypography-root MuiTypography-body-s css-1vnlz3b\"><a class=\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways lk-link css-lcifyj\" title=\"Les mer om informasjonskapsler\" href=\"https://lanekassen.no/cookies-nb\">Les mer om informasjonskapsler</a></p></div>",
+          "target": [
+            ".MuiCardContent-root > div:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

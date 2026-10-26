@@ -1,6 +1,6 @@
 # WCAG Violations Report for Atea Norge
 
-**Timestamp:** 2026-10-26T03:31:03.561Z
+**Timestamp:** 2026-10-26T16:34:04.803Z
 **URL:** [https://www.atea.no/](https://www.atea.no/)
 **Total Violations:** 7
 

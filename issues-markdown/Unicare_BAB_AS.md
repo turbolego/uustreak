@@ -1,6 +1,6 @@
 # WCAG Violations Report for Unicare BAB AS
 
-**Timestamp:** 2026-10-26T03:50:04.658Z
+**Timestamp:** 2026-10-26T16:54:35.053Z
 **URL:** [https://unicare.no/](https://unicare.no/)
 **Total Violations:** 8
 
@@ -43,7 +43,7 @@
 #### Affected Elements:
 
 - `.inner-content.odd > h3`
-- `article[data-articleid="3055"] > a[target="_self"] > .card-body > h3[itemprop="headline"]`
+- `article[data-articleid="3058"] > a[target="_self"] > .card-body > h3[itemprop="headline"]`
 - `article[data-articleid="2334"] > a[target="_self"] > .card-body > h3`
 
 ### Elements must have their visible text as part of their accessible name

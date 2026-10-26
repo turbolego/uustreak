@@ -1,29 +1,10 @@
 # WCAG Violations Report for Aktiv Eiendomsmegling AS
 
-**Timestamp:** 2026-10-26T03:30:01.216Z
+**Timestamp:** 2026-10-26T16:30:02.849Z
 **URL:** [https://aktiv.no/](https://aktiv.no/)
-**Total Violations:** 5
+**Total Violations:** 3
 
 ## Violation Details
-
-### Elements must meet minimum color contrast ratio thresholds
-
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 8
-
-#### Affected Elements:
-
-- `a[href$="personvern"][rel="noopener"][target="_blank"]`
-- `.cm-purpose:nth-child(1) > .cm-services > .cm-caret > a[href="#"]`
-- `#purpose-item-advertising-description > .cm-list-description > span > span > a[rel="noopener noreferrer"][target="_blank"]`
-- `.cm-purpose:nth-child(2) > .cm-services > .cm-caret > a[href="#"]`
-- `.cm-purpose:nth-child(3) > .cm-services > .cm-caret > a[href="#"]`
-- `.cm-btn-info`
-- `.cm-btn-accept-all`
-- `a[href$="klaro"]`
 
 ### Headings should not be empty
 
@@ -61,30 +42,4 @@
 #### Affected Elements:
 
 - `meta[name="viewport"]:nth-child(9)`
-- `meta[name="viewport"]:nth-child(53)`
-
-### All page content should be contained by landmarks
-
-- **Impact:** moderate
-- **Description:** Ensure all page content is contained by landmarks
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
-- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 15
-
-#### Affected Elements:
-
-- `.cm-header`
-- `#purpose-item-functional`
-- `label[for="purpose-item-functional"]`
-- `#purpose-item-functional-description`
-- `.cm-purpose:nth-child(1) > .cm-services > .cm-caret`
-- `#purpose-item-advertising`
-- `label[for="purpose-item-advertising"]`
-- `#purpose-item-advertising-description`
-- `.cm-purpose:nth-child(2) > .cm-services > .cm-caret`
-- `#purpose-item-performance`
-- `label[for="purpose-item-performance"]`
-- `#purpose-item-performance-description`
-- `.cm-purpose:nth-child(3) > .cm-services > .cm-caret`
-- `.cm-toggle-all`
-- `.cm-powered-by`
+- `meta[name="viewport"]:nth-child(54)`
