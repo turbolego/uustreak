@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Nasjonalmuseet for Kunst
 
-**Timestamp:** 2026-10-25T17:13:54.202Z
+**Timestamp:** 2026-10-26T03:46:26.965Z
 **URL:** [https://www.nasjonalmuseet.no/](https://www.nasjonalmuseet.no/)
 **Total Violations:** 4
 
@@ -12,24 +12,21 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 14
+- **Count:** 11
 
 #### Affected Elements:
 
 - `#declineButton`
-- `li[aria-label="1 av 5"]`
-- `li[aria-label="2 av 5"]`
-- `li[aria-label="3 av 5"]`
-- `li[aria-label="4 av 5"]`
-- `li[aria-label="5 av 5"]`
-- `li[aria-label="1 av 8"]`
-- `li[aria-label="2 av 8"]`
-- `li[aria-label="3 av 8"]`
-- `li[aria-label="4 av 8"]`
-- `li[aria-label="5 av 8"]`
-- `li[aria-label="6 av 8"]`
-- `li[aria-label="7 av 8"]`
-- `li[aria-label="8 av 8"]`
+- `div[title="Utstillinger"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="1 av 5"][role="group"]`
+- `div[title="Utstillinger"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="2 av 5"][role="group"]`
+- `div[title="Utstillinger"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="3 av 5"][role="group"]`
+- `div[title="Utstillinger"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="4 av 5"][role="group"]`
+- `div[title="Utstillinger"] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="5 av 5"][role="group"]`
+- `div[title="Utvalgte arrangementer "] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="1 av 5"][role="group"]`
+- `div[title="Utvalgte arrangementer "] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="2 av 5"][role="group"]`
+- `div[title="Utvalgte arrangementer "] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="3 av 5"][role="group"]`
+- `div[title="Utvalgte arrangementer "] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="4 av 5"][role="group"]`
+- `div[title="Utvalgte arrangementer "] > .ulc-carousel__track > .ulc-carousel__slide[aria-label="5 av 5"][role="group"]`
 
 ### Document should not have more than one banner landmark
 

@@ -1,0 +1,191 @@
+{
+  "project": "Bærum kommune",
+  "timestamp": "2026-10-26T03:31:19.131Z",
+  "url": "https://www.baerum.kommune.no/",
+  "total_violations": 7,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<h3 class=\"font-serif text-2xl leading-7 md:text-[28px] md:leading-9 tracking-tight text-neutral-900\">\n                                Trafikksikkerhetsprosjekter\n                            </h3>",
+          "target": [
+            "div:nth-child(1) > .my-8.not-prose > .rounded-b-xl.md\\:rounded-b-2xl.md\\:p-8 > .lg\\:flex-row.lg\\:gap-8.gap-8 > article > .order-2.md\\:order-1.md\\:gap-8 > .md\\:gap-8.gap-6.flex-col > .md\\:text-\\[28px\\].md\\:leading-9.font-serif"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<img src=\"/globalassets/nyheter/bilder-til-nyhetssaker/utbedring-kyststi-holtekilen/oversiktskart.jpg?quality=70&amp;mode=crop&amp;width=800&amp;height=450\" class=\"w-full h-auto rounded-lg object-cover aspect-video\" loading=\"lazy\">",
+          "target": [
+            ".bg-teal-100 > .lg\\:flex-row.lg\\:gap-8.gap-8 > article > .order-1.md\\:order-2.flex-1 > .h-auto.aspect-video[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img src=\"/contentassets/ce4fe35485594bc595af34c79fe6d181/dsc_2704.jpg?quality=70&amp;mode=crop&amp;width=800&amp;height=450\" class=\"w-full h-auto rounded-lg object-cover aspect-video\" loading=\"lazy\">",
+          "target": [
+            ".bg-peach-100 > .lg\\:flex-row.lg\\:gap-8.gap-8 > article > .order-1.md\\:order-2.flex-1 > .h-auto.aspect-video[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-main-is-top-level",
+      "impact": "moderate",
+      "description": "Ensure the main landmark is at top level",
+      "help": "Main landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-main-is-top-level?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<main class=\"flex flex-col gap-10 md:gap-15 lg:gap-24\">",
+          "target": [
+            "#mainContentContainer > main"
+          ],
+          "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-main",
+      "impact": "moderate",
+      "description": "Ensure the document has at most one main landmark",
+      "help": "Document should not have more than one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-no-duplicate-main?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<main class=\"mainBody bg-neutral-75 max-w-page-boundary mx-auto px-4 py-6 @container/main\" id=\"mainContentContainer\">",
+          "target": [
+            "#mainContentContainer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<form id=\"quickSearch\" method=\"get\" action=\"/sok/\" role=\"search\" aria-labelledby=\"site-search-heading\" class=\"hidden @5xl:flex items-center gap-1\">",
+          "target": [
+            "form[aria-labelledby=\"site-search-heading\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        },
+        {
+          "html": "<main class=\"mainBody bg-neutral-75 max-w-page-boundary mx-auto px-4 py-6 @container/main\" id=\"mainContentContainer\">",
+          "target": [
+            "#mainContentContainer"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-in-text-block",
+      "impact": "serious",
+      "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+      "help": "Links must be distinguishable without relying on color",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/link-in-text-block?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2a",
+        "wcag141",
+        "TTv5",
+        "TT13.a",
+        "EN-301-549",
+        "EN-9.1.4.1",
+        "RGAAv4",
+        "RGAA-10.6.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a id=\"cookiescript_readmore\" data-cs-i18n-text=\"{&quot;no&quot;:&quot;Les mer&quot;}\" data-cs-i18n-url=\"{&quot;no&quot;:&quot;https:\\/\\/www.baerum.kommune.no\\/personvern\\/&quot;}\" target=\"_self\" aria-label=\"Les mer\" href=\"https://www.baerum.kommune.no/personvern/\">\n        Les mer      </a>",
+          "target": [
+            "#cookiescript_readmore"
+          ],
+          "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 2.73:1 with the surrounding text. (Minimum contrast is 3:1, link text: #006120, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a id=\"scrollTop\" href=\"#\" class=\"btn btn-secondary fixed bottom-6 right-22 z-50 flex items-center gap-2 rounded-full md:rounded-md opacity-0 translate-y-4 pointer-events-none transition-all duration-300 p-2 md:px-4\" aria-label=\"Til toppen\">",
+          "target": [
+            "#scrollTop"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

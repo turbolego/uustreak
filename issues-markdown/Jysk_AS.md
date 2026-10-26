@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-10-25T17:05:36.384Z
+**Timestamp:** 2026-10-26T03:40:01.119Z
 **URL:** [https://jysk.no/](https://jysk.no/)
 **Total Violations:** 3
 
@@ -31,14 +31,14 @@
 
 #### Affected Elements:
 
-- `.snap-start:nth-child(1) > article > .mb-4.w-full.flex-col > .w-full[data-testid="product-pdp-link"]`
 - `.snap-start:nth-child(1) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `.snap-start:nth-child(2) > article > .mb-4.w-full.flex-col > .w-full[data-testid="product-pdp-link"]`
 - `.snap-start:nth-child(2) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `a[aria-describedby="5533710-_r_o_"]`
-- `.snap-start:nth-child(3) > article > .mb-4.w-full.flex-col > .w-full[data-testid="product-pdp-link"]`
+- `a[aria-describedby="1057301-_r_a_"]`
 - `.snap-start:nth-child(3) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
+- `a[aria-describedby="3650168-_r_b_"]`
+- `.snap-start:nth-child(4) > article > .mb-4.flex-col.w-full > .w-full[data-testid="product-pdp-link"]`
 - `.snap-start:nth-child(4) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
+- `a[aria-describedby="1455142-_r_c_"]`
 
 ### All page content should be contained by landmarks
 
@@ -51,7 +51,7 @@
 #### Affected Elements:
 
 - `.w-10\/12.content-center[href$="mobeluke"] > .text-white.group-hover\:underline`
-- `a[href$="prisgaranti"] > .text-white.group-hover\:underline`
+- `.theme-campaign-bar.h-9[data-testid="campaign-bar"]:nth-child(2) > .w-10\/12.content-center.self-center > .text-white.group-hover\:underline`
 - `.w-10\/12.content-center[href$="christmas"] > .text-white.group-hover\:underline`
 - `.theme-usp[href$="om-jysk"][data-testid="usp"]:nth-child(1) > .md\:text-2xl.mt-2.text-center`
 - `.theme-usp[href$="om-jysk"][data-testid="usp"]:nth-child(1) > .text-center.md\:text-lg`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-10-25T16:59:41.670Z
+**Timestamp:** 2026-10-26T03:33:50.849Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 9
 
@@ -104,12 +104,28 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 111
+- **Count:** 112
 
 #### Affected Elements:
 
 - `h1`
 - `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
+- `#notice-10599921 > .content > h2`
+- `#notice-10599921 > .content > .meta`
+- `#notice-10599920 > .content > h2`
+- `#notice-10599920 > .content > .meta`
+- `div[title="Fare for stormflo i Rogaland"] > h2`
+- `div[title="Fare for stormflo i Rogaland"] > .meta`
+- `#notice-10599907 > .content > h2`
+- `#notice-10599907 > .content > .meta`
+- `#notice-10599906 > .content > h2`
+- `#notice-10599906 > .content > .meta`
+- `#notice-10599905 > .content > h2`
+- `#notice-10599905 > .content > .meta`
+- `div[title="Togbrann på Lillestrøm stasjon"] > h2`
+- `div[title="Togbrann på Lillestrøm stasjon"] > .meta`
+- `#notice-10599862 > .content > h2`
+- `time[datetime="2026-10-25T17:20:11.000Z"]`
 - `#notice-10599838 > .content > h2`
 - `time[datetime="2026-10-25T16:50:28.000Z"]`
 - `#notice-10599835 > .content > h2`
@@ -134,22 +150,6 @@
 - `time[datetime="2026-10-24T14:27:34.000Z"]`
 - `div[title="Alvorlig ulykke i Nordland"] > h2`
 - `time[datetime="2026-10-24T15:53:40.000Z"]`
-- `#notice-10599162 > .content > h2`
-- `time[datetime="2026-10-24T13:29:14.000Z"]`
-- `#notice-10599038 > .content > h2`
-- `#notice-10599038 > .content > .meta`
-- `#notice-10599021 > .content > h2`
-- `#notice-10599021 > .content > .meta`
-- `#notice-10598999 > .content > h2`
-- `#notice-10598999 > .content > .meta`
-- `#notice-10598973 > .content > h2`
-- `#notice-10598973 > .content > .meta`
-- `#notice-10598949 > .content > h2`
-- `#notice-10598949 > .content > .meta`
-- `#notice-10598948 > .content > h2`
-- `#notice-10598948 > .content > .meta`
-- `div[title="Ebolavaksine testes i Kongo"] > h2`
-- `div[title="Ebolavaksine testes i Kongo"] > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
@@ -169,10 +169,10 @@
 - `.articlescroller-header.t25.tm18`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.mobile_no_border_color.color_mobile_no_bg_color.row:nth-child(22)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(23)`
+- `.row.large-12.small-12:nth-child(23)`
 - `.lab-scrollbox-headline.t25.tm18`
 - `#article_list_10184114 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(26)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(26)`
 - `#article_list_10372156 > .content > .lab-scrollbox-headline.t25.font-InterTight`
 - `#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(28)`
@@ -194,28 +194,29 @@
 - `#markup_10440438 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="10440437"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
 - `.row.large-12.small-12:nth-child(33)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(34)`
-- `.row.large-12.small-12:nth-child(35)`
+- `.row.large-12.small-12:nth-child(34)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(35)`
 - `.row.large-12.small-12:nth-child(37)`
 - `.row.large-12.small-12:nth-child(38)`
 - `.row.large-12.small-12:nth-child(39)`
 - `#offer_4992f7477e94a7ea214a-1, div[ng-show="!terminalError"]`
 - `.row.large-12.small-12:nth-child(41)`
 - `.row.large-12.small-12:nth-child(43)`
-- `.color_mobile_no_bg_color.row.large-12:nth-child(44)`
-- `.row.large-12.small-12:nth-child(45)`
+- `.row.large-12.small-12:nth-child(44)`
+- `.color_mobile_no_bg_color.row.large-12:nth-child(45)`
 - `.row.large-12.small-12:nth-child(46)`
+- `.row.large-12.small-12:nth-child(47)`
 - `#article_list_10569463 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10569463 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(49)`
+- `.row.large-12.small-12:nth-child(50)`
 - `.lab-scrollbox-headline.italic.m-italic`
 - `#article_list_10291490 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(51)`
 - `.row.large-12.small-12:nth-child(52)`
+- `.row.large-12.small-12:nth-child(53)`
 - `.bg-black`
-- `.row.large-12.small-12:nth-child(55)`
+- `.row.large-12.small-12:nth-child(56)`
 - `#offer_25de92e59ecc9e9aa9cd-0, div[ng-show="!terminalError"]`
-- `.row.large-12.small-12:nth-child(57)`
+- `.row.large-12.small-12:nth-child(58)`
 - `.tm20`
 - `#article_list_9904930 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.powered-by`
