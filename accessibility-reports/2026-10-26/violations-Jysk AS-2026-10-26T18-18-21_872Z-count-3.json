@@ -1,0 +1,262 @@
+{
+  "project": "Jysk AS",
+  "timestamp": "2026-10-26T18:18:21.872Z",
+  "url": "https://jysk.no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-redundant-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<img title=\"Jul\" alt=\"Jul\" loading=\"lazy\" width=\"1000\" height=\"667\" decoding=\"async\" data-nimg=\"1\" class=\"relative transition-...\" style=\"color:transparent\" sizes=\"(min-width: 1372px) ...\" srcset=\"https://img.jysk.io?...\" src=\"https://img.jysk.io?...\">",
+          "target": [
+            "img[title=\"Jul\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img title=\"Annonserte varer\" alt=\"Annonserte varer\" loading=\"lazy\" width=\"1000\" height=\"667\" decoding=\"async\" data-nimg=\"1\" class=\"relative transition-...\" style=\"color:transparent\" sizes=\"(min-width: 1372px) ...\" srcset=\"https://img.jysk.io?...\" src=\"https://img.jysk.io?...\">",
+          "target": [
+            "img[title=\"Annonserte varer\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img title=\"FAST LAV PRIS\" alt=\"FAST LAV PRIS\" loading=\"lazy\" width=\"1000\" height=\"667\" decoding=\"async\" data-nimg=\"1\" class=\"relative transition-...\" style=\"color:transparent\" sizes=\"(min-width: 1372px) ...\" srcset=\"https://img.jysk.io?...\" src=\"https://img.jysk.io?...\">",
+          "target": [
+            "img[title=\"FAST LAV PRIS\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "html": "<img title=\"Gavekort\" alt=\"Gavekort\" loading=\"lazy\" width=\"1000\" height=\"667\" decoding=\"async\" data-nimg=\"1\" class=\"relative transition-...\" style=\"color:transparent\" sizes=\"(min-width: 1372px) ...\" srcset=\"https://img.jysk.io?...\" src=\"https://img.jysk.io?...\">",
+          "target": [
+            "img[title=\"Gavekort\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 6,
+      "nodes": [
+        {
+          "html": "<a aria-label=\"Lenke til produkt\" class=\"cursor-pointer text-left no-underline\" href=\"/spisestue/spisestoler/spisestol-ejsing-beige-stoff-mork-eikefarget#DyProductRecommendations\">",
+          "target": [
+            ".snap-start:nth-child(1) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label=\"Lenke til produkt\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a aria-label=\"Se mer Kommode OREBY 3+3 bokser hvit/beige\" data-testid=\"product-pdp-link\" tabindex=\"0\" class=\"cursor-pointer w-full\" href=\"/oppbevaring/kommoder/kommode-oreby-33-bokser-hvit-beige#DyProductRecommendations\">",
+          "target": [
+            ".snap-start:nth-child(2) > article > .mb-4.flex-col.w-full > .w-full[data-testid=\"product-pdp-link\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a aria-label=\"Lenke til produkt\" class=\"cursor-pointer text-left no-underline\" href=\"/oppbevaring/kommoder/kommode-oreby-33-bokser-hvit-beige#DyProductRecommendations\">",
+          "target": [
+            ".snap-start:nth-child(2) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label=\"Lenke til produkt\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a aria-label=\"Lenke til produkt\" class=\"cursor-pointer text-left no-underline\" href=\"/stue/sofabord-og-sidebord/sofabord-lyngvig-60x110-1-hylle-mork-eik#DyProductRecommendations\">",
+          "target": [
+            ".snap-start:nth-child(3) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label=\"Lenke til produkt\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a aria-label=\"Se mer Kommode TANGE 3+3 skuffer hvit\" data-testid=\"product-pdp-link\" tabindex=\"0\" class=\"cursor-pointer w-full\" href=\"/oppbevaring/kommoder/kommode-tange-33-skuffer-hvit#DyProductRecommendations\">",
+          "target": [
+            ".snap-start:nth-child(4) > article > .mb-4.flex-col.w-full > .w-full[data-testid=\"product-pdp-link\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a aria-label=\"Lenke til produkt\" class=\"cursor-pointer text-left no-underline\" href=\"/oppbevaring/kommoder/kommode-tange-33-skuffer-hvit#DyProductRecommendations\">",
+          "target": [
+            ".snap-start:nth-child(4) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label=\"Lenke til produkt\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 19,
+      "nodes": [
+        {
+          "html": "<span style=\"color:#FFFFFF\" class=\"text-white group-hover:underline\">Spar opptil 50% på utvalgte møbelkategorier</span>",
+          "target": [
+            ".w-10\\/12.content-center[href$=\"mobeluke\"] > .text-white.group-hover\\:underline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span style=\"color:#FFFFFF\" class=\"text-white group-hover:underline\">Spar 30% på utvalgt måltilpasset solskjerming</span>",
+          "target": [
+            ".theme-campaign-bar.h-9[data-testid=\"campaign-bar\"]:nth-child(2) > .w-10\\/12.content-center.self-center > .text-white.group-hover\\:underline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span style=\"color:#FFFFFF\" class=\"text-white group-hover:underline\">Gode kjøp til jul - Spar opptil 50%</span>",
+          "target": [
+            ".w-10\\/12.content-center[href$=\"christmas\"] > .text-white.group-hover\\:underline"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"mt-2 text-center text-lg font-semibold md:text-2xl\">47 år med gode tilbud</div>",
+          "target": [
+            ".theme-usp[href$=\"om-jysk\"][data-testid=\"usp\"]:nth-child(1) > .md\\:text-2xl.mt-2.text-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-center md:text-lg\">Mer enn 3700 butikker i over 49 land</div>",
+          "target": [
+            ".theme-usp[href$=\"om-jysk\"][data-testid=\"usp\"]:nth-child(1) > .text-center.md\\:text-lg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"mt-2 text-center text-lg font-semibold md:text-2xl\">Skandinaviske røtter</div>",
+          "target": [
+            ".theme-usp[href$=\"om-jysk\"][data-testid=\"usp\"]:nth-child(2) > .md\\:text-2xl.mt-2.text-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-center md:text-lg\">Vi er globale med skandinaviske røtter. Etab. Danmark 1979.</div>",
+          "target": [
+            ".theme-usp[href$=\"om-jysk\"][data-testid=\"usp\"]:nth-child(2) > .text-center.md\\:text-lg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"mt-2 text-center text-lg font-semibold md:text-2xl\">Madrassgaranti</div>",
+          "target": [
+            "a[href$=\"kvalitet-og-garantier\"] > .md\\:text-2xl.mt-2.text-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-center md:text-lg\">25 års garanti på våre GOLD madrasser</div>",
+          "target": [
+            "a[href$=\"kvalitet-og-garantier\"] > .text-center.md\\:text-lg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"mt-2 text-center text-lg font-semibold md:text-2xl\">FAST LAV PRIS</div>",
+          "target": [
+            ".theme-usp[href$=\"fast-lav-pris\"][data-testid=\"usp\"] > .md\\:text-2xl.mt-2.text-center"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div class=\"text-center md:text-lg\">Vi har håndplukket et bredt utvalg av produkter som alltid har de samme lave prisene</div>",
+          "target": [
+            ".theme-usp[href$=\"fast-lav-pris\"][data-testid=\"usp\"] > .text-center.md\\:text-lg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<h3 class=\"mb-2 text-center text-xl font-semibold md:text-4xl\">Vinn et gavekort på 3.000 kroner hos JYSK</h3>",
+          "target": [
+            ".text-xl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"mb-8 text-center text-lg\">",
+          "target": [
+            ".max-w-3xl > .mb-8"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<p class=\"text-sm\">Alle felt merket med en stjerne (*) er obligatoriske</p>",
+          "target": [
+            "form > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-testid=\"form-group\" class=\"group relative flex-1\">",
+          "target": [
+            ".flex-1.group[data-testid=\"form-group\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div data-testid=\"form-group\" class=\"group relative\">",
+          "target": [
+            ".group.relative[data-testid=\"form-group\"]:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<button type=\"button\" role=\"checkbox\" aria-checked=\"false\" data-state=\"unchecked\" value=\"false\" class=\"flex items-center ju...\" data-testid=\"checkbox\" aria-labelledby=\"_R_1njf5tmj39fivb_\" tabindex=\"0\">",
+          "target": [
+            ".hover\\:border-gray-500"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<span id=\"_R_1njf5tmj39fivb_\" class=\"w-full px-2 peer-disabled:cursor-not-allowed peer-disabled:text-gray-400\">",
+          "target": [
+            "#_R_1njf5tmj39fivb_"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<div id=\"onetrust-banner-sdk\" class=\"otCenterRounded default vertical-align-content\" tabindex=\"0\" aria-label=\"Vi tilpasser opplevelsen din\" aria-describedby=\"onetrust-policy-text\">",
+          "target": [
+            "#onetrust-banner-sdk"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
