@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stiftelsen Bymuseet i Bergen
 
-**Timestamp:** 2026-10-26T18:26:55.311Z
+**Timestamp:** 2026-10-27T04:15:00.826Z
 **URL:** [https://bymuseet.no/](https://bymuseet.no/)
 **Total Violations:** 10
 

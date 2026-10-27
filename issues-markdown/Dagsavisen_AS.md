@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-10-26T18:12:07.993Z
+**Timestamp:** 2026-10-27T04:01:13.824Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 9
 
@@ -104,12 +104,14 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 115
+- **Count:** 116
 
 #### Affected Elements:
 
 - `h1`
 - `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
+- `#notice-10601911 > .content > h2`
+- `#notice-10601911 > .content > .meta`
 - `div[title="Børsen stuper i Brasil"] > h2`
 - `div[title="Børsen stuper i Brasil"] > .meta`
 - `#notice-10601689 > .content > h2`
@@ -148,8 +150,6 @@
 - `time[datetime="2026-10-26T06:14:39.000Z"]`
 - `div[title="Frp-rekord på ny måling"] > h2`
 - `time[datetime="2026-10-26T06:09:15.000Z"]`
-- `#notice-10599920 > .content > h2`
-- `#notice-10599920 > .content > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
@@ -177,7 +177,7 @@
 - `#article_list_10372156 > .content > .scroll-container.swipehelper.snap-container-x`
 - `.row.large-12.small-12:nth-child(28)`
 - `.row.large-12.small-12:nth-child(29)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(31)`
+- `.row.large-12.small-12:nth-child(31)`
 - `.t28.lab-scrollbox-headline.font-InterTight`
 - `#markup_10478983 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="10478981"] > .content > .floatingTextSubset.media > .floatingText`
@@ -193,33 +193,34 @@
 - `article[data-instance="10440429"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
 - `#markup_10440438 > .fullwidthTarget.content > unite-player,#status-container`
 - `article[data-instance="10440437"] > .align-center.mobile_text_align_align-center.content > .floatingTextSubset.media > .floatingText`
-- `.row.large-12.small-12:nth-child(33)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(33)`
 - `.row.large-12.small-12:nth-child(34)`
 - `.row.large-12.small-12:nth-child(35)`
 - `.row.large-12.small-12:nth-child(37)`
 - `.row.large-12.small-12:nth-child(38)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(39)`
+- `.row.large-12.small-12:nth-child(39)`
 - `#offer_4992f7477e94a7ea214a-1, div[ng-show="!terminalError"]`
-- `.row.large-12.small-12:nth-child(41)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(41)`
 - `.row.large-12.small-12:nth-child(43)`
 - `.row.large-12.small-12:nth-child(44)`
 - `.row.large-12.small-12:nth-child(45)`
 - `.row.large-12.small-12:nth-child(46)`
 - `.row.large-12.small-12:nth-child(47)`
-- `.color_mobile_no_bg_color.row.large-12:nth-child(49)`
-- `.row.large-12.small-12:nth-child(50)`
+- `.row.large-12.small-12:nth-child(49)`
+- `.color_mobile_no_bg_color.row.large-12:nth-child(50)`
 - `.row.large-12.small-12:nth-child(51)`
+- `.row.large-12.small-12:nth-child(52)`
 - `#article_list_10569463 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10569463 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(53)`
+- `.row.large-12.small-12:nth-child(55)`
 - `.lab-scrollbox-headline.italic.m-italic`
 - `#article_list_10291490 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(56)`
 - `.row.large-12.small-12:nth-child(57)`
+- `.row.large-12.small-12:nth-child(58)`
 - `.bg-black`
-- `.row.large-12.small-12:nth-child(59)`
+- `.row.large-12.small-12:nth-child(61)`
 - `#offer_25de92e59ecc9e9aa9cd-0, div[ng-show="!terminalError"]`
-- `.row.large-12.small-12:nth-child(62)`
+- `.row.large-12.small-12:nth-child(63)`
 - `.tm20`
 - `#article_list_9904930 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `.powered-by`

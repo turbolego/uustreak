@@ -1,6 +1,6 @@
 # WCAG Violations Report for Cubus AS
 
-**Timestamp:** 2026-10-26T18:11:27.286Z
+**Timestamp:** 2026-10-27T04:00:36.564Z
 **URL:** [https://cubus.com/no/](https://cubus.com/no/)
 **Total Violations:** 5
 
@@ -16,14 +16,14 @@
 
 #### Affected Elements:
 
-- `#react_c13cf8ea-61c3-4cda-aebc-6ae146364462 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
-- `#react_c13cf8ea-61c3-4cda-aebc-6ae146364462 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
-- `#react_72080e2f-630a-437c-a329-2945f8c2f37e > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
-- `#react_72080e2f-630a-437c-a329-2945f8c2f37e > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
-- `#react_fa078ec2-bc16-4f90-b5fb-83a5de23daf8 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
-- `#react_fa078ec2-bc16-4f90-b5fb-83a5de23daf8 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
-- `#react_a91884cb-84a3-432e-8ccb-ba7db322973b > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
-- `#react_a91884cb-84a3-432e-8ccb-ba7db322973b > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
+- `#react_e15dab34-7cf5-44d4-88e2-231e39b687de > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
+- `#react_e15dab34-7cf5-44d4-88e2-231e39b687de > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
+- `#react_2685a5b9-66ab-4600-90b5-78d337592ae9 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
+- `#react_2685a5b9-66ab-4600-90b5-78d337592ae9 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
+- `#react_95feb5ce-566f-443d-9969-b3a2916a4dce > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
+- `#react_95feb5ce-566f-443d-9969-b3a2916a4dce > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
+- `#react_b18c3bd9-0809-4e72-8d2b-2ff4b73d3fd2 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(1)`
+- `#react_b18c3bd9-0809-4e72-8d2b-2ff4b73d3fd2 > .css-1tq5kgv-StyledImageBlock.ev0go5a5 > .css-s1qk9n-StyledText.ev0go5a4 > .css-je42r5-StyledImageText.ev0go5a0.MuiTypography-body1 > .css-16zvez3-StyledRichText.ela8nw60 > .-extra-bold.margin-sm:nth-child(2)`
 
 ### Elements must have their visible text as part of their accessible name
 

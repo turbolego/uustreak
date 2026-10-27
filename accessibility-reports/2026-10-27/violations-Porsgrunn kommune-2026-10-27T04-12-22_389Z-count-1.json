@@ -1,0 +1,36 @@
+{
+  "project": "Porsgrunn kommune",
+  "timestamp": "2026-10-27T04:12:22.389Z",
+  "url": "https://www.porsgrunn.kommune.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a class=\"site-tool site-tool-search collapsed\" id=\"siteSearchBarToggle\" href=\"#siteSearchBar\" data-bs-toggle=\"collapse\" aria-expanded=\"false\" aria-controls=\"siteSearchBar\" role=\"button\" aria-label=\"Åpne Lukke søkelinje\">",
+          "target": [
+            "#siteSearchBarToggle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    }
+  ]
+}

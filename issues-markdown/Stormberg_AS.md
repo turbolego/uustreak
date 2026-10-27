@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-10-26T18:26:10.951Z
+**Timestamp:** 2026-10-27T04:14:26.520Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 8
 
@@ -52,14 +52,14 @@
 - `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
 - `a[aria-label="Lofoten fôret regnvott"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `a[aria-label="Lofoten regnvott"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Harstad skallanorakk"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `div:nth-child(6) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `div:nth-child(6) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `a[aria-label="Lofoten regnvott"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Bodø lettvekts regnjakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `li:nth-child(1) > .ic.id[aria-label="Vinterberg vinterjakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Stormflod regnbukse barn 8-14"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `a[aria-label="Stormflod regnbukse barn 8-14"] > .c0.c1.hz > div > .h3 > .jd.i0.bd`
+- `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `li:nth-child(2) > .ic.id[aria-label="Vinterberg vinterjakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
-- `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
+- `li:nth-child(3) > .ic.id[aria-label="Vinterberg vinterjakke"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `a[aria-label="Voss 2-lags ulltrøye"] > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 - `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie > .ih.bc.bd > .io.im.y > .gz.ip.iq`
 
@@ -131,13 +131,13 @@
 - `a[aria-label="Snøheim ullfôret tursko"]`
 - `div:nth-child(5) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie`
 - `a[aria-label="Lofoten fôret regnvott"]`
-- `a[aria-label="Lofoten regnvott"]`
 - `a[aria-label="Harstad skallanorakk"]`
-- `div:nth-child(6) > .i9.bl.bj > .ia.ib > li:nth-child(4) > .ic.id.ie`
+- `a[aria-label="Lofoten regnvott"]`
 - `a[aria-label="Bodø lettvekts regnjakke"]`
-- `li:nth-child(1) > .ic.id[aria-label="Vinterberg vinterjakke"]`
+- `a[aria-label="Stormflod regnbukse barn 8-14"]`
+- `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(1) > .ic.id.ie`
 - `li:nth-child(2) > .ic.id[aria-label="Vinterberg vinterjakke"]`
-- `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(3) > .ic.id.ie`
+- `li:nth-child(3) > .ic.id[aria-label="Vinterberg vinterjakke"]`
 - `a[aria-label="Voss 2-lags ulltrøye"]`
 - `div:nth-child(9) > .i9.bl.bj > .ia.ib > li:nth-child(5) > .ic.id.ie`
 

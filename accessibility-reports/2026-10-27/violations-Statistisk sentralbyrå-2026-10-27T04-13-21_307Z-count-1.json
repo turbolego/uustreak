@@ -1,0 +1,50 @@
+{
+  "project": "Statistisk sentralbyrå",
+  "timestamp": "2026-10-27T04:13:21.307Z",
+  "url": "https://www.ssb.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<a class=\"ssb-picture-card vertical w-100 group\" href=\"https://www.ssb.no/arbeid-og-lonn/sysselsetting/statistikk/helse-og-sosialpersonell/artikler/hver-femte-sysselsatt-innen-helse-er-innvandrer\" aria-label=\"Hver femte sysselsatt innen helse er innvandrer\" aria-describedby=\"0-text\">",
+          "target": [
+            "a[aria-describedby=\"0-text\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"ssb-picture-card vertical w-100 group\" href=\"https://www.ssb.no/helse/helseforhold-og-levevaner/statistikk/royk-alkohol-og-andre-rusmidler/artikler/gen-z-kan-bli-den-forste-generasjonen-uten-mange-dagligroykere\" aria-label=\"Stadig færre røyker\" aria-describedby=\"1-text\">",
+          "target": [
+            "a[aria-label=\"Stadig færre røyker\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"ssb-picture-card vertical w-100 group\" href=\"https://www.ssb.no/befolkning/artikler-og-publikasjoner/fra-smaahus-til-bygaard-og-villa\" aria-label=\"Fra småhus til villa\" aria-describedby=\"2-text\">",
+          "target": [
+            "a[aria-label=\"Fra småhus til villa\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    }
+  ]
+}

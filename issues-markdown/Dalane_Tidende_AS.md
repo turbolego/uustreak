@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2026-10-26T18:11:57.939Z
+**Timestamp:** 2026-10-27T04:01:01.078Z
 **URL:** [https://www.dalane-tidende.no/](https://www.dalane-tidende.no/)
 **Total Violations:** 5
 
