@@ -994,14 +994,7 @@ jobs:
           rm -rf "$HOME/Library/Caches/pip" "$HOME/.cache/pip" 2>/dev/null || true
           # Remove stale publish worktree from prior runs (sparse seed is managed by its own step)
           rm -rf "$GITHUB_WORKSPACE/gh-pages-publish" 2>/dev/null || true
-          # Homebrew caches (macOS)
-          if command -v brew >/dev/null 2>&1; then
-            brew cleanup -s || true
-            BREW_CACHE=$(brew --cache 2>/dev/null || true)
-            if [ -n "$BREW_CACHE" ]; then
-              rm -rf "$BREW_CACHE" 2>/dev/null || true
-            fi
-          fi
+          # Homebrew is shared runner state; leave package/cache maintenance to the runner owner.
           echo "=== Disk usage after pre-clean ==="
           df -h || true
           # Fail fast if less than 5 GB free (in 1 KB blocks).
@@ -1036,9 +1029,10 @@ jobs:
       - name: Download invalid URLs files
         uses: actions/download-artifact@v8
         with:
-          name: invalid-urls-files
+          # The setup job intentionally creates no artifact when there are no invalid URLs.
+          pattern: invalid-urls-files
           path: invalid-urls-artifacts
-        continue-on-error: true
+          merge-multiple: true
 
       - name: Download merged summary artifacts
         uses: actions/download-artifact@v8

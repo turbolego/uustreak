@@ -118,6 +118,20 @@ dynamisk innhold kan påvirke innholdet og axe-resultatene. En annen
 nettlesermotor, mobilvisning eller deaktivert JavaScript er ikke en
 likeverdig erstatning for en desktop-test i Chromium.
 
+## Vedlikehold av self-hosted runner
+
+Deploy-jobbene kjører ikke `brew cleanup` og sletter ikke Homebrew-cachen.
+Homebrew-installasjonen deles med andre jobber på runneren; oppgradering av
+pakker og opprydding må utføres separat av runnerens eier. Meldingen
+«Skipping …: most recent version … not installed» fra `brew cleanup` betyr
+at Homebrew hopper over opprydding av en pakke der nyeste versjon ikke er
+installert, ikke at deploy-jobben mangler pakken.
+Diskplasskontrollen før deploy er fortsatt aktiv.
+
+I den self-hosted arbeidsflyten er `invalid-urls-files` et valgfritt artifact.
+Når ingen slike filer lastes opp, fortsetter deploy uten dem. Faktiske feil
+ved listing eller nedlasting av artifacts skal fortsatt stoppe jobben.
+
 ## Prestasjonssporing
 
 [Prestasjonsporingen](js/track-achievements.js) oppdaterer prestasjonene i
