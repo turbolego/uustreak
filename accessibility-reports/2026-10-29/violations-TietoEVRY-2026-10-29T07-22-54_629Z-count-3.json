@@ -1,0 +1,136 @@
+{
+  "project": "TietoEVRY",
+  "timestamp": "2026-10-29T07:22:54.629Z",
+  "url": "https://www.tieto.com/no/",
+  "total_violations": 3,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 9,
+      "nodes": [
+        {
+          "html": "<button class=\"language-menu-btn text-body-14 ml-4 flex items-center text-white capitalize outline-white before:h-4 before:w-4 sm:ml-12 md:ml-18 xl:ml-24 2xl:ml-32\" data-action=\"additional-open-language\" aria-label=\"Velg lokalt nettsted\">Norge (norsk)</button>",
+          "target": [
+            ".ml-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"group relative grid ...\" href=\"https://www.tietoevr...\" aria-label=\"Les mer: Hvordan Hel...\">",
+          "target": [
+            ".static-col.content-start.outline-0:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"group relative grid static-col flex-shrink-0 grid-cols-1 content-start outline-0 -outline-offset-2 hover:no-underline\" href=\"https://www.tietoevry.com/no/suksesshistorier/2024/slik-ble-sarpsborg-mer-effektive-med-public-360/\" aria-label=\"Les mer: Sarpsborg i front på kommunal KI-bruk\">",
+          "target": [
+            ".static-col.content-start.outline-0:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"group relative grid ...\" href=\"https://www.tietoevr...\" aria-label=\"Les mer: Sparebanken...\">",
+          "target": [
+            ".static-col.content-start.outline-0:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"group align-center o...\" href=\"/no/nyhetsrom/presse...\" aria-label=\"Les mer: Handelsbank...\">",
+          "target": [
+            ".news-item.border-t.border-grey-300:nth-child(1) > .align-center.gap-8.border-r-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"group align-center o...\" href=\"/no/nyhetsrom/presse...\" aria-label=\"Les mer: Eika Gruppe...\">",
+          "target": [
+            ".news-item.border-t.border-grey-300:nth-child(2) > .align-center.gap-8.border-r-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"group align-center o...\" href=\"/no/nyhetsrom/presse...\" aria-label=\"Les mer: KapitalKont...\">",
+          "target": [
+            ".news-item.border-t.border-grey-300:nth-child(3) > .align-center.gap-8.border-r-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a class=\"group align-center o...\" href=\"/no/nyhetsrom/presse...\" aria-label=\"Les mer: Köping komm...\">",
+          "target": [
+            ".news-item.border-t.border-grey-300:nth-child(4) > .align-center.gap-8.border-r-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<button class=\"btn btn-blue-600 language-menu-btn text-body-14 flex items-center text-white capitalize outline-white before:h-4 before:w-4\" data-action=\"additional-open-language\" aria-label=\"Velg lokalt nettsted\">Norge (norsk)</button>",
+          "target": [
+            ".btn-blue-600.outline-white.before\\:h-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<nav class=\"flex h-full items-center gap-4 md:gap-6\">",
+          "target": [
+            ".md\\:gap-6.gap-4.h-full > .md\\:gap-6.gap-4"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<div id=\"onetrust-banner-sdk\" class=\"otCenterRounded default vertical-align-content\" tabindex=\"0\" aria-label=\"We use cookies\" aria-describedby=\"onetrust-policy-text\">",
+          "target": [
+            "#onetrust-banner-sdk"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
