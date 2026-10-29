@@ -155,7 +155,8 @@ test('WCAG accessibility check for {escaped_project_name}', async ({{ page, brow
                     
                     // Launch the appropriate browser with anti-detection measures
                     const launchOptions = {{
-                        headless: strategy.stealth ? false : true, // Use headful mode for stealth
+                        headless: test.info().project.use.headless ?? true,
+                        channel: strategy.browser === 'chromium' ? 'chromium' : undefined,
                         args: [
                             '--no-sandbox', 
                             '--disable-setuid-sandbox',

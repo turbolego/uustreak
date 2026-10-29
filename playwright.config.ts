@@ -15,10 +15,11 @@ export default defineConfig({
         screenshot: 'only-on-failure',
         video: 'retain-on-failure',
         browserName: 'chromium',
+        channel: 'chromium', // Full Chromium uses the same browser in headed and new headless mode.
+        headless: !!process.env.CI,
         ignoreHTTPSErrors: true,
         // Enhanced launch options for stealth
         launchOptions: {
-            headless: process.env.CI ? true : false, // Headless mode in CI, headful locally for debugging
             args: [
                 '--no-sandbox', 
                 '--disable-setuid-sandbox',

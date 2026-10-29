@@ -4,6 +4,7 @@
   "description": "Automated WCAG Accessibility Testing for NRK Website",
   "scripts": {
     "test": "playwright test",
+    "test:browser-modes": "node js/compare-browser-modes.js",
     "test:report": "playwright show-report"
   },
   "keywords": [

@@ -78,6 +78,46 @@ oppdaget raskt.
 
 Alle testene genereres fra scratch hver gang med [generate_specs.py](https://github.com/turbolego/uustreak/blob/main/generate_specs.py) fra listen med nettsider i [projects.json](https://github.com/turbolego/uustreak/blob/main/projects.json) slik at man alltid tester likt. Testene kjøres med incognito modus med chromium med firefox og webkit som fallbacks.
 
+## Headless-testing
+
+Chromium bruker Playwright-kanalen `chromium`, som kjører den fulle nettleseren
+i både headed og ny headless-modus, i stedet for den separate headless shell.
+Se [Playwrights dokumentasjon om ny headless-modus](https://playwright.dev/docs/browsers#chromium-new-headless-mode).
+CI kjører headless, inkludert Firefox- og WebKit-fallbackene. Lokalt kjøres
+testene headed som før. Bruk `CI=true npx playwright test` for headless lokalt,
+eller `npx playwright test --headed` for å overstyre CI-modusen ved feilsøking.
+Linux trenger en skjerm eller Xvfb for headed-modus, men ikke for headless.
+Vanlig `npx playwright install chromium firefox webkit` installerer nødvendige
+nettlesere; ikke bruk `--only-shell` når kanalen er `chromium`.
+
+Sammenlign headless shell, full Chromium headless og full Chromium headed med:
+
+```sh
+npm run test:browser-modes -- https://www.komplett.no/
+```
+
+Kommandoen krever Node.js 26 (som arbeidsflyten bruker), installerte
+Chromium-nettlesere og tilgang til en skjerm for headed-delen. Den bruker samme
+Chromium-flagg, kontekstinnstillinger og axe-regler som hovedtesten, med en ny
+incognito-kontekst per modus. Cookie-samtykke beholdes urørt. JSON-resultatet
+viser HTTP-status, sidetittel, innholdsmål, regel-ID-er og berørte elementer.
+Exit-koden er 1 hvis headed og full headless ikke laster eller gir ulike
+sammenligningsresultater. Feil i shell-modusen rapporteres, men er ikke alene
+grunn til exit-kode 1. Dynamisk innhold kan gi forskjeller mellom kjøringer.
+
+I en lokal macOS-test 29. oktober 2026 ga shell-modusen
+`ERR_HTTP2_PROTOCOL_ERROR` på Komplett, mens full Chromium headless og headed
+begge lastet med HTTP 200 og fant de samme fire axe-bruddene på de samme
+elementene. NRK lastet i alle tre moduser og ga null brudd.
+Kjør konfigurasjons- og CLI-regresjonstestene med
+`node --test js/browser-modes.test.js`.
+
+Dette er ikke en garanti for identiske resultater
+på alle nettsteder: nettverk, bot-beskyttelse, nettlesermotor, samtykke og
+dynamisk innhold kan påvirke innholdet og axe-resultatene. En annen
+nettlesermotor, mobilvisning eller deaktivert JavaScript er ikke en
+likeverdig erstatning for en desktop-test i Chromium.
+
 ## Prestasjonssporing
 
 [Prestasjonsporingen](js/track-achievements.js) oppdaterer prestasjonene i
