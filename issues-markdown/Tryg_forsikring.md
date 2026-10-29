@@ -1,8 +1,8 @@
 # WCAG Violations Report for Tryg forsikring
 
-**Timestamp:** 2026-10-27T04:17:12.195Z
+**Timestamp:** 2026-10-29T06:22:16.307Z
 **URL:** [https://www.tryg.no/](https://www.tryg.no/)
-**Total Violations:** 8
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -17,18 +17,6 @@
 #### Affected Elements:
 
 - `#coi-banner-wrapper`
-
-### Heading levels should only increase by one
-
-- **Impact:** moderate
-- **Description:** Ensure the order of headings is semantically correct
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.card-icon-card-wrapper.height-fixed.card:nth-child(1) > .headline`
 
 ### Banner landmark should not be contained in another landmark
 

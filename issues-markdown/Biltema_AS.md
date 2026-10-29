@@ -1,10 +1,22 @@
 # WCAG Violations Report for Biltema AS
 
-**Timestamp:** 2026-10-27T03:59:45.198Z
+**Timestamp:** 2026-10-29T06:01:42.008Z
 **URL:** [https://www.biltema.no/](https://www.biltema.no/)
-**Total Violations:** 11
+**Total Violations:** 12
 
 ## Violation Details
+
+### Elements must only use supported ARIA attributes
+
+- **Impact:** critical
+- **Description:** Ensure an element's role supports its ARIA attributes
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-allowed-attr?application=playwright
+- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#CybotCookiebotDialog`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -141,17 +153,19 @@
 - `.editorial__grid > li:nth-child(1)`
 - `.editorial__grid > li:nth-child(2)`
 
-### Page should contain a level-one heading
+### Interactive controls must not be nested
 
-- **Impact:** moderate
-- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright
-- **Tags:** cat.semantics, best-practice
-- **Count:** 1
+- **Impact:** serious
+- **Description:** Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/nested-interactive?application=playwright
+- **Tags:** cat.keyboard, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
+- **Count:** 3
 
 #### Affected Elements:
 
-- `html`
+- `.CybotCookiebotDialogBodyLevelButtonWrapper:nth-child(2) > .CybotCookiebotDialogBodyLevelButtonSliderWrapper[role="switch"]`
+- `.CybotCookiebotDialogBodyLevelButtonWrapper:nth-child(3) > .CybotCookiebotDialogBodyLevelButtonSliderWrapper[role="switch"]`
+- `.CybotCookiebotDialogBodyLevelButtonWrapper:nth-child(4) > .CybotCookiebotDialogBodyLevelButtonSliderWrapper[role="switch"]`
 
 ### All page content should be contained by landmarks
 

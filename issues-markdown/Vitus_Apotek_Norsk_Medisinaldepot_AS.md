@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vitus Apotek Norsk Medisinaldepot AS
 
-**Timestamp:** 2026-10-27T04:18:42.250Z
+**Timestamp:** 2026-10-29T06:23:23.507Z
 **URL:** [https://www.vitusapotek.no/](https://www.vitusapotek.no/)
 **Total Violations:** 7
 
@@ -12,12 +12,13 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `h4`
 - `.banner--full-width.banner:nth-child(2) > .banner__content-wrapper > .banner__text > .cms-content > h2`
+- `.banner--full-width.banner:nth-child(3) > .banner__content-wrapper > .banner__text > .cms-content > h2`
 
 ### Heading levels should only increase by one
 
@@ -37,16 +38,13 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 9
+- **Count:** 6
 
 #### Affected Elements:
 
 - `a[href$="cart"]`
 - `a[href$="prior"]`
-- `.cms-campaign-banners:nth-child(7) > .cms-campaign-banners__content.cms-banners > .campaign-banner--left.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper`
-- `.cms-campaign-banners:nth-child(10) > .cms-campaign-banners__content.cms-banners > .campaign-banner--left.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper`
-- `.cms-campaign-banners:nth-child(10) > .cms-campaign-banners__content.cms-banners > .campaign-banner--left.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper`
-- `.campaign-banner--left.campaign-banner.banner:nth-child(3) > .campaign-banner__content-wrapper.banner__content-wrapper`
+- `.campaign-banner--left.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper`
 - `.campaign-banner--centered.campaign-banner.banner:nth-child(1) > .campaign-banner__content-wrapper.banner__content-wrapper`
 - `.campaign-banner--centered.campaign-banner.banner:nth-child(2) > .campaign-banner__content-wrapper.banner__content-wrapper`
 - `.campaign-banner__content-wrapper.banner__content-wrapper[href$="intimpleie"]`
@@ -95,10 +93,11 @@
 - **Description:** Ensure elements that have scrollable content are accessible by keyboard in Safari
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/scrollable-region-focusable?application=playwright
 - **Tags:** cat.keyboard, wcag2a, wcag211, wcag213, TTv5, TT4.a, EN-301-549, EN-9.2.1.1, EN-9.2.1.3, RGAAv4, RGAA-7.3.2
-- **Count:** 3
+- **Count:** 4
 
 #### Affected Elements:
 
 - `.cms-recomendations:nth-child(8) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
+- `.cms-recomendations:nth-child(10) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
 - `.cms-recomendations:nth-child(11) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`
 - `.cms-recomendations:nth-child(14) > section > div > .carousel[aria-roledescription="carousel"][role="region"] > .carousel__wrapper > .carousel__container > .carousel__slides`

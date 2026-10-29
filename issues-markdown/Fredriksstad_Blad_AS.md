@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-10-27T04:04:24.257Z
+**Timestamp:** 2026-10-29T06:07:08.460Z
 **URL:** [https://www.f-b.no/](https://www.f-b.no/)
 **Total Violations:** 6
 
@@ -36,32 +36,35 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 22
+- **Count:** 25
 
 #### Affected Elements:
 
 - `#eaframe, .avis-logo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10925520 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10925520 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10925545 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10925545 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10926500 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10926500 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10925520 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10925520 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10930022 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10930022 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10933898 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10933898 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10931780 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10931780 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(6) > .shoutimage-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10924401 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10924401 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(6) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10920263 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10920263 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(7) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10920269 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10920269 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, #brokerimage-container-10925545 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10925545 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(8) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10934823 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10934823 > .brokerinfo-container > .brokerlogo`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

@@ -1,22 +1,10 @@
 # WCAG Violations Report for Vestlia Resort AS
 
-**Timestamp:** 2026-10-27T04:18:32.935Z
+**Timestamp:** 2026-10-29T06:23:47.271Z
 **URL:** [https://vestlia.no/](https://vestlia.no/)
-**Total Violations:** 10
+**Total Violations:** 9
 
 ## Violation Details
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.q-btn--round`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
@@ -148,6 +136,6 @@
 - `.fusion-builder-row-16`
 - `.fusion-builder-row-18`
 - `.fusion-builder-row-19`
-- `div:nth-child(23)`
-- `div:nth-child(24)`
 - `iframe[title="reCAPTCHA"], .rc-anchor-invisible-text`
+- `div:nth-child(29)`
+- `div:nth-child(30)`

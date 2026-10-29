@@ -1,6 +1,6 @@
 # WCAG Violations Report for EY
 
-**Timestamp:** 2026-10-27T04:03:11.184Z
+**Timestamp:** 2026-10-29T06:06:45.994Z
 **URL:** [https://www.ey.com/no_no](https://www.ey.com/no_no)
 **Total Violations:** 3
 
@@ -16,7 +16,7 @@
 
 #### Affected Elements:
 
-- `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
+- `.cmp-slider__slide[data-index="4"][href$="tax"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="6"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 
@@ -46,7 +46,7 @@
 - `.skip-content-wrapper`
 - `.cmp-logo__link > .sr-only`
 - `.myey-login-url`
-- `#image-render-bd6c3e038a > .cmp-image__image[height="2560"][loading="lazy"]`
+- `#image-render-bd6c3e038a > img[alt="Thomas Kullmann, EY"][title="Thomas Kullmann"][height="2560"]`
 - `.swiper-slide-visible > .up-hero-carousel__content-wrapper[data-up-hook-hero-carousel="contentWrapper"]`
 - `.up-hero-carousel__pagination`
 - `.up-content-cards__title`
@@ -107,9 +107,9 @@
 - `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
 - `.cmp-slider__slide[data-index="3"][href$="consulting"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
-- `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
-- `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
-- `a[data-index="4"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
+- `.cmp-slider__slide[data-index="4"][href$="tax"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
+- `.cmp-slider__slide[data-index="4"][href$="tax"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
+- `.cmp-slider__slide[data-index="4"][href$="tax"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__title[data-analytics-action-value=""]`
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__description.text-light-md`
 - `a[data-index="5"] > .cmp-slide__content.ma3xl > .cmp-slide__subTitle > span`

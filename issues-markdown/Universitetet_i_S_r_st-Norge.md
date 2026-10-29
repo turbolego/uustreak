@@ -1,8 +1,8 @@
 # WCAG Violations Report for Universitetet i Sørøst-Norge
 
-**Timestamp:** 2026-10-27T04:17:48.916Z
+**Timestamp:** 2026-10-29T06:22:54.434Z
 **URL:** [https://www.usn.no/](https://www.usn.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -43,17 +43,3 @@
 #### Affected Elements:
 
 - `#header-favorites`
-
-### Form elements should have a visible label
-
-- **Impact:** serious
-- **Description:** Ensure that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-title-only?application=playwright
-- **Tags:** cat.forms, best-practice
-- **Count:** 3
-
-#### Affected Elements:
-
-- `#cookie_cat_functional`
-- `#cookie_cat_statistic`
-- `#cookie_cat_marketing`

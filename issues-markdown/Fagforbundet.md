@@ -1,8 +1,8 @@
 # WCAG Violations Report for Fagforbundet
 
-**Timestamp:** 2026-10-27T04:03:17.315Z
+**Timestamp:** 2026-10-29T06:06:34.950Z
 **URL:** [https://www.fagforbundet.no/](https://www.fagforbundet.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -31,6 +31,18 @@
 - `#CybotCookiebotDialogBodyEdgeMoreDetailsLink`
 - `#CybotCookiebotDialogBodyButtonAccept`
 - `#bounceText`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.top-banner__image`
 
 ### All page content should be contained by landmarks
 

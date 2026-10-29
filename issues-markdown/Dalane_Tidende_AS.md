@@ -1,22 +1,22 @@
 # WCAG Violations Report for Dalane Tidende AS
 
-**Timestamp:** 2026-10-27T04:01:01.078Z
+**Timestamp:** 2026-10-29T06:03:29.691Z
 **URL:** [https://www.dalane-tidende.no/](https://www.dalane-tidende.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
-### Elements must meet minimum color contrast ratio thresholds
+### Buttons must have discernible text
 
-- **Impact:** serious
-- **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
-- **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
+- **Impact:** critical
+- **Description:** Ensure buttons have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/button-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#eaframe, #topTextRight`
+- `#eaframe, button`
 
 ### Frames must have an accessible name
 
@@ -29,6 +29,24 @@
 #### Affected Elements:
 
 - `#eaframe`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 7
+
+#### Affected Elements:
+
+- `#eaframe, .avis-logo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, .ad-container.swiper-slide:nth-child(6) > .shoutimage-container > .shoutimage[loading="lazy"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
