@@ -1,6 +1,6 @@
 # WCAG Violations Report for Travel Retail Norway AS
 
-**Timestamp:** 2026-10-29T07:23:45.174Z
+**Timestamp:** 2026-10-30T05:04:41.274Z
 **URL:** [https://www.tax-free.no/no/](https://www.tax-free.no/no/)
 **Total Violations:** 10
 
@@ -49,12 +49,13 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 54
+- **Count:** 56
 
 #### Affected Elements:
 
 - `.header.ab-version_1[aria-label="Butikkvelger"]`
 - `.page-header > .FavoriteProductsSlot.has-components[position="FavoriteProductsSlot"] > trn-wish-list-icon > .wishlist-icon-button[aria-label="Se mine favoritter"][href$="wishlists"]`
+- `.media-banner-grid_width-2.media-banner-grid_height-4.media-banner-grid_item:nth-child(1) > trn-media-banner-item > .media-banner_wrapper_rounded.media-banner_wrapper[_ngcontent-ng-c2539610980=""] > .media-banner_link[title="KJØP NÅ"][target="_self"]`
 - `.media-banner-grid_width-2.media-banner-grid_height-4.media-banner-grid_item:nth-child(2) > trn-media-banner-item > .media-banner_wrapper_rounded.media-banner_wrapper[_ngcontent-ng-c2539610980=""] > .media-banner_link[aria-label="Se årets julekalendere"][title="KJØP NÅ"]`
 - `a[aria-label="Se alle tilbuder"]`
 - `#scrollable_viewport_35 > trn-product-card:nth-child(1) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
@@ -89,6 +90,7 @@
 - `#scrollable_viewport_51 > trn-product-card:nth-child(4) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
 - `#scrollable_viewport_51 > trn-product-card:nth-child(5) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
 - `#scrollable_viewport_51 > trn-product-card:nth-child(6) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
+- `#scrollable_viewport_51 > trn-product-card:nth-child(7) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
 - `#scrollable_viewport_53 > trn-product-card:nth-child(1) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
 - `#scrollable_viewport_53 > trn-product-card:nth-child(2) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
 - `#scrollable_viewport_53 > trn-product-card:nth-child(3) > .product[_ngcontent-ng-c2309777751=""] > .product-controls[_ngcontent-ng-c2309777751=""] > trn-button > .solid-primary-dark.fill.has-icon`
@@ -139,7 +141,7 @@
 - **Description:** Ensure links have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
 - **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 43
+- **Count:** 44
 
 #### Affected Elements:
 
@@ -168,12 +170,13 @@
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1610977"]`
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1778029"]`
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1783172"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1773579"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1795418"]`
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1773594"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1773770"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1773588"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1795413"]`
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1773784"]`
-- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1773593"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1795318"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1795415"]`
+- `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1773585"]`
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="850593"]`
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1620594"][href$="smash-xxl"]`
 - `.image-wrapper[_ngcontent-ng-c2309777751=""] > a[data-scarabitem="1687774"]`

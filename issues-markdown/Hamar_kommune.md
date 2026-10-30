@@ -1,6 +1,6 @@
 # WCAG Violations Report for Hamar kommune
 
-**Timestamp:** 2026-10-29T07:07:19.109Z
+**Timestamp:** 2026-10-30T04:49:35.592Z
 **URL:** [https://www.hamar.kommune.no/](https://www.hamar.kommune.no/)
 **Total Violations:** 6
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `article[data-articleid="503929"] > a[target="_self"] > .card-body > h3[itemprop="headline"]`
+- `article[data-articleid="504363"] > a[target="_self"] > .card-body > h3[itemprop="headline"]`
 
 ### Elements must have their visible text as part of their accessible name
 

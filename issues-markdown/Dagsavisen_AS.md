@@ -1,6 +1,6 @@
 # WCAG Violations Report for Dagsavisen AS
 
-**Timestamp:** 2026-10-29T06:59:42.830Z
+**Timestamp:** 2026-10-30T04:45:22.593Z
 **URL:** [https://www.dagsavisen.no/](https://www.dagsavisen.no/)
 **Total Violations:** 9
 
@@ -107,52 +107,52 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 144
+- **Count:** 147
 
 #### Affected Elements:
 
 - `h1`
 - `.placement-top > .google-ad.display-label.large-abs-12 > .ad-label`
+- `#notice-10608797 > .content > h2`
+- `#notice-10608797 > .content > .meta`
+- `#notice-10608761 > .content > h2`
+- `#notice-10608761 > .content > .meta`
+- `#notice-10608749 > .content > h2`
+- `#notice-10608749 > .content > .meta`
+- `#notice-10608661 > .content > h2`
+- `#notice-10608661 > .content > .meta`
+- `div[title="Væpnet politiaksjon i Hamar"] > h2`
+- `div[title="Væpnet politiaksjon i Hamar"] > .meta`
+- `#notice-10608657 > .content > h2`
+- `#notice-10608657 > .content > .meta`
+- `div[title="Harstad vant integreringspris"] > h2`
+- `div[title="Harstad vant integreringspris"] > .meta`
+- `div[title="Sametinget anker Melkøya-dom "] > h2`
+- `div[title="Sametinget anker Melkøya-dom "] > .meta`
+- `#notice-10608496 > .content > h2`
+- `#notice-10608496 > .content > .meta`
+- `#notice-10608495 > .content > h2`
+- `#notice-10608495 > .content > .meta`
+- `#notice-10608463 > .content > h2`
+- `#notice-10608463 > .content > .meta`
+- `#notice-10607353 > .content > h2`
+- `time[datetime="2026-10-29T09:32:04.000Z"]`
+- `div[title="Fant granat på avfallsplass"] > h2`
+- `time[datetime="2026-10-29T11:22:36.000Z"]`
+- `#notice-10607116 > .content > h2`
+- `time[datetime="2026-10-29T09:06:44.000Z"]`
+- `#notice-10606973 > .content > h2`
+- `time[datetime="2026-10-29T08:16:11.000Z"]`
 - `div[title="Pils i parken-utredning utsatt"] > h2`
 - `time[datetime="2026-10-29T06:17:40.000Z"]`
 - `div[title="Sammenstøt etter togulykke"] > h2`
 - `time[datetime="2026-10-29T06:16:37.000Z"]`
 - `div[title="Droneangrep mot Moskva"] > h2`
-- `time[datetime="2026-10-29T06:15:29.000Z"]`
+- `time[datetime="2026-10-29T08:54:28.000Z"]`
 - `#notice-10606621 > .content > h2`
 - `#notice-10606621 > .content > .meta`
-- `div[title="USA holder renten uendret"] > h2`
-- `div[title="USA holder renten uendret"] > .meta`
-- `#notice-10606520 > .content > h2`
-- `#notice-10606520 > .content > .meta`
 - `div[title="Norske medier vant mot Meta"] > h2`
 - `div[title="Norske medier vant mot Meta"] > .meta`
-- `div[title="Dyreste gass siden 2022"] > h2`
-- `div[title="Dyreste gass siden 2022"] > .meta`
-- `#notice-10606494 > .content > h2`
-- `#notice-10606494 > .content > .meta`
-- `#notice-10606493 > .content > h2`
-- `#notice-10606493 > .content > .meta`
-- `div[title="Varsler lange køer ut av Oslo"] > h2`
-- `time[datetime="2026-10-28T11:49:50.000Z"]`
-- `div[title="Flere land deltar i ESC"] > h2`
-- `time[datetime="2026-10-28T11:49:13.000Z"]`
-- `#notice-10605472 > .content > h2`
-- `time[datetime="2026-10-28T12:43:17.000Z"]`
-- `div[title="Gulldrømmen brast for Bullen"] > h2`
-- `time[datetime="2026-10-28T09:31:10.000Z"]`
-- `#notice-10604977 > .content > h2`
-- `time[datetime="2026-10-28T09:59:23.000Z"]`
-- `#notice-10604970 > .content > h2`
-- `time[datetime="2026-10-28T09:25:27.000Z"]`
-- `div[title="Kabinansatte i SAS ut i streik"] > h2`
-- `time[datetime="2026-10-28T06:20:54.000Z"]`
-- `#notice-10604265 > .content > h2`
-- `time[datetime="2026-10-28T06:19:02.000Z"]`
-- `div[title="Trump: Bolsonaro er velkommen"] > h2`
-- `time[datetime="2026-10-28T06:16:43.000Z"]`
-- `#notice-10604094 > .content > h2`
-- `#notice-10604094 > .content > .meta`
 - `.row.large-12.small-12:nth-child(2)`
 - `.row.large-12.small-12:nth-child(3)`
 - `.row.large-12.small-12:nth-child(4)`
@@ -167,7 +167,7 @@
 - `.page-content > .border-bg-quinary-light.mobile_border-bg-quinary-light.hasBorder`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .lab-scrollbox-headline.t25.font-InterTight`
 - `.bg-quinary.color_mobile_bg-quinary.hasContentPadding > .scroll-container.swipehelper.snap-container-x`
-- `.row.large-12.small-12:nth-child(19)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(19)`
 - `.row.large-12.small-12:nth-child(20)`
 - `.articlescroller-header.t25.tm18`
 - `#article_list_10188193 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
@@ -225,35 +225,38 @@
 - `.row.large-12.small-12:nth-child(55)`
 - `.row.large-12.small-12:nth-child(56)`
 - `.row.large-12.small-12:nth-child(57)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(58)`
+- `.row.large-12.small-12:nth-child(58)`
 - `.row.large-12.small-12:nth-child(59)`
 - `.row.large-12.small-12:nth-child(61)`
-- `.row.large-12.small-12:nth-child(62)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(62)`
 - `.row.large-12.small-12:nth-child(63)`
 - `.row.large-12.small-12:nth-child(64)`
-- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(65)`
+- `.row.large-12.small-12:nth-child(65)`
 - `.row.large-12.small-12:nth-child(66)`
 - `.row.large-12.small-12:nth-child(67)`
-- `.row.large-12.small-12:nth-child(68)`
+- `.bg-quinary.color_mobile_bg-quinary.hasContentPadding:nth-child(68)`
 - `.row.large-12.small-12:nth-child(69)`
 - `.row.large-12.small-12:nth-child(70)`
 - `.row.large-12.small-12:nth-child(71)`
-- `.color_mobile_no_bg_color.row.large-12:nth-child(72)`
+- `.row.large-12.small-12:nth-child(72)`
 - `.row.large-12.small-12:nth-child(73)`
 - `.row.large-12.small-12:nth-child(74)`
+- `.color_mobile_no_bg_color.row.large-12:nth-child(75)`
+- `.row.large-12.small-12:nth-child(76)`
+- `.row.large-12.small-12:nth-child(77)`
+- `.tm20.articlescroller-header.font-PTSans`
+- `#article_list_9904930 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
 - `#article_list_10569463 > .inner.fullwidthTarget.content > .articlescroller-header.align-left.mobile_text_align_align-left`
 - `#article_list_10569463 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(76)`
+- `.row.large-12.small-12:nth-child(80)`
 - `.lab-scrollbox-headline.italic.m-italic`
 - `#article_list_10291490 > .content > .scroll-container.swipehelper.snap-container-x`
-- `.tm20`
-- `#article_list_9904930 > .inner.fullwidthTarget.content > .articles.count_4.scroll-container`
-- `.row.large-12.small-12:nth-child(79)`
-- `.row.large-12.small-12:nth-child(80)`
-- `.page-content > .bg-black.color_mobile_bg-black.hasContentPadding`
 - `.row.large-12.small-12:nth-child(82)`
+- `.row.large-12.small-12:nth-child(83)`
+- `.page-content > .bg-black.color_mobile_bg-black.hasContentPadding`
+- `.row.large-12.small-12:nth-child(85)`
 - `#offer_e64a1fe71b6292cd3ab0-1, div[ng-show="!terminalError"]`
-- `.row.large-12.small-12:nth-child(84)`
+- `.row.large-12.small-12:nth-child(87)`
 - `.powered-by`
 
 ### Scrollable region must have keyboard access

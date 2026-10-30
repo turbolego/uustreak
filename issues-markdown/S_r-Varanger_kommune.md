@@ -1,8 +1,8 @@
 # WCAG Violations Report for Sør-Varanger kommune
 
-**Timestamp:** 2026-10-29T07:18:44.815Z
+**Timestamp:** 2026-10-30T04:59:53.276Z
 **URL:** [https://sor-varanger.kommune.no/](https://sor-varanger.kommune.no/)
-**Total Violations:** 1
+**Total Violations:** 2
 
 ## Violation Details
 
@@ -17,3 +17,15 @@
 #### Affected Elements:
 
 - `img[alt="Sør-Varanger kommune"]`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.global-top-container`

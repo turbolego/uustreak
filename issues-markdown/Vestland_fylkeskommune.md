@@ -1,8 +1,8 @@
 # WCAG Violations Report for Vestland fylkeskommune
 
-**Timestamp:** 2026-10-29T07:25:23.216Z
+**Timestamp:** 2026-10-30T05:05:36.487Z
 **URL:** [https://www.vestlandfylke.no/](https://www.vestlandfylke.no/)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -17,6 +17,18 @@
 #### Affected Elements:
 
 - `.masthead__menu-container`
+
+### Images must have alternative text
+
+- **Impact:** critical
+- **Description:** Ensure <img> elements have alternative text or a role of none or presentation
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `.article-teaser:nth-child(2) > a > .article-teaser__image-container > .article-teaser__image-container-inner > .article-teaser__image`
 
 ### Form elements should have a visible label
 

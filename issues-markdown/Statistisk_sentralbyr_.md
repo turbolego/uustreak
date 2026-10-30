@@ -1,6 +1,6 @@
 # WCAG Violations Report for Statistisk sentralbyrå
 
-**Timestamp:** 2026-10-29T07:19:44.416Z
+**Timestamp:** 2026-10-30T04:59:44.699Z
 **URL:** [https://www.ssb.no/](https://www.ssb.no/)
 **Total Violations:** 1
 
@@ -17,5 +17,5 @@
 #### Affected Elements:
 
 - `a[aria-describedby="0-text"]`
-- `a[aria-label="Stadig færre røyker"]`
+- `a[aria-label="Flere går på kino"]`
 - `a[aria-label="Fra småhus til villa"]`

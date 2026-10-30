@@ -1,6 +1,6 @@
 # WCAG Violations Report for Fredriksstad Blad AS
 
-**Timestamp:** 2026-10-29T07:05:32.877Z
+**Timestamp:** 2026-10-30T04:49:19.096Z
 **URL:** [https://www.f-b.no/](https://www.f-b.no/)
 **Total Violations:** 6
 
@@ -36,35 +36,32 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 25
+- **Count:** 22
 
 #### Affected Elements:
 
 - `#eaframe, .avis-logo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10925520 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10925520 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, #brokerimage-container-10935951 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10935951 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10930022 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10930022 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, #brokerimage-container-10933898 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10933898 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10931780 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10931780 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, #brokerimage-container-10935597 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10935597 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10934823 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10934823 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10933898 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10933898 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, #brokerimage-container-10931780 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10931780 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(6) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10926500 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10926500 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, #brokerimage-container-10935490 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10935490 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(7) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10925545 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10925545 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(8) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10924401 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10924401 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, #brokerimage-container-10930022 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10930022 > .brokerinfo-container > .brokerlogo`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -76,7 +73,7 @@
 
 #### Affected Elements:
 
-- `brick-teaser-group-v1[data-color-skin="custom-one"] > div > brick-carousel-v3 > .carousel[role="region"][aria-label="Innholdskarusell"]`
+- `brick-carousel-v3[data-slides="7"] > .carousel[role="region"][aria-label="Innholdskarusell"]`
 
 ### Elements marked as presentational should be consistently ignored
 

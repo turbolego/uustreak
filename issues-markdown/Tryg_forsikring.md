@@ -1,6 +1,6 @@
 # WCAG Violations Report for Tryg forsikring
 
-**Timestamp:** 2026-10-29T07:23:22.669Z
+**Timestamp:** 2026-10-30T05:05:36.367Z
 **URL:** [https://www.tryg.no/](https://www.tryg.no/)
 **Total Violations:** 7
 

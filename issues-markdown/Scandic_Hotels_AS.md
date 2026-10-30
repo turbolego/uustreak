@@ -1,8 +1,8 @@
 # WCAG Violations Report for Scandic Hotels AS
 
-**Timestamp:** 2026-10-29T07:16:17.749Z
+**Timestamp:** 2026-10-30T04:59:18.676Z
 **URL:** [https://www.scandichotels.com/no](https://www.scandichotels.com/no)
-**Total Violations:** 4
+**Total Violations:** 5
 
 ## Violation Details
 
@@ -41,8 +41,8 @@
 
 #### Affected Elements:
 
-- `#react-aria5521769733-_r_o_`
-- `#react-aria5521769733-_r_q_`
+- `#react-aria1846546483-_r_4m_`
+- `#react-aria1846546483-_r_4o_`
 
 ### Interactive controls must not be nested
 
@@ -55,3 +55,15 @@
 #### Affected Elements:
 
 - `.booking-code-module__wWrYrG__container > .button-module__NbgNfa__variant-text.button-module__NbgNfa__size-lg.typography-module__vfKlZa__Body-Paragraph-mdBold`
+
+### All page content should be contained by landmarks
+
+- **Impact:** moderate
+- **Description:** Ensure all page content is contained by landmarks
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
+- **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#skip-link`

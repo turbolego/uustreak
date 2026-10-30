@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-10-29T07:09:34.552Z
+**Timestamp:** 2026-10-30T04:52:44.235Z
 **URL:** [https://jysk.no/](https://jysk.no/)
 **Total Violations:** 3
 
@@ -32,8 +32,8 @@
 #### Affected Elements:
 
 - `.snap-start:nth-child(1) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `.pt-1`
 - `.snap-start:nth-child(2) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
+- `.snap-start:nth-child(3) > article > .mb-4.flex-col.w-full > .w-full[data-testid="product-pdp-link"]`
 - `.snap-start:nth-child(3) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
 - `.snap-start:nth-child(4) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
 

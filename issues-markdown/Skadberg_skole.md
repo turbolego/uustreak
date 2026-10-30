@@ -1,6 +1,6 @@
 # WCAG Violations Report for Skadberg skole
 
-**Timestamp:** 2026-10-29T07:18:52.320Z
+**Timestamp:** 2026-10-30T05:00:20.544Z
 **URL:** [https://skadberg.solaskolen.no/](https://skadberg.solaskolen.no/)
 **Total Violations:** 3
 
@@ -30,10 +30,10 @@
 
 #### Affected Elements:
 
+- `a[href="index.php?artID=428&navB=1"]`
 - `a[href="index.php?artID=427&navB=1"]`
 - `a[href="index.php?artID=418&navB=1"]`
 - `a[href="index.php?artID=416&navB=1"]`
-- `a[href="index.php?artID=394&navB=1"]`
 
 ### All page content should be contained by landmarks
 
