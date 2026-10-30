@@ -1,0 +1,214 @@
+{
+  "project": "Museene i Sør-Trøndelag AS",
+  "timestamp": "2026-10-30T05:43:53.375Z",
+  "url": "https://mist.no/",
+  "total_violations": 1,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "tabindex",
+      "impact": "serious",
+      "description": "Ensure tabindex attribute values are not greater than 0",
+      "help": "Elements should not have tabindex greater than zero",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/tabindex?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "violation_count": 19,
+      "nodes": [
+        {
+          "html": "<dialog aria-labelledby=\"dialog-heading\" tabindex=\"1\" open=\"\">",
+          "target": [
+            [
+              "#kit-ccm",
+              "dialog"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<button tabindex=\"2\" type=\"button\" aria-label=\"toggle content visibility\" autofocus=\"\">",
+          "target": [
+            [
+              "#kit-ccm",
+              "button[autofocus=\"\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a href=\"https://kulturit.no/personvern\" target=\"_blank\" tabindex=\"200\">https://kulturit.no/personvern</a>",
+          "target": [
+            [
+              "#kit-ccm",
+              "li:nth-child(1) > a[href$=\"personvern\"][target=\"_blank\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a href=\"https://policies.google.com/privacy\" target=\"_blank\" tabindex=\"200\">https://policies.google.com/privacy</a>",
+          "target": [
+            [
+              "#kit-ccm",
+              ".panel:nth-child(1) > ul > li:nth-child(2) > a[target=\"_blank\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a href=\"https://kulturit.no/personvern\" target=\"_blank\" tabindex=\"200\">https://kulturit.no/personvern</a>",
+          "target": [
+            [
+              "#kit-ccm",
+              "li:nth-child(3) > a[href$=\"personvern\"][target=\"_blank\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a href=\"https://kulturit.no/personvern\" target=\"_blank\" tabindex=\"200\">https://kulturit.no/personvern</a>",
+          "target": [
+            [
+              "#kit-ccm",
+              "li:nth-child(4) > a[href$=\"personvern\"][target=\"_blank\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a href=\"https://plausible.io/data-policy\" target=\"_blank\" tabindex=\"200\">https://plausible.io/data-policy</a>",
+          "target": [
+            [
+              "#kit-ccm",
+              "li:nth-child(5) > a[target=\"_blank\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a href=\"https://kulturit.no/personvern\" target=\"_blank\" tabindex=\"200\">https://kulturit.no/personvern</a>",
+          "target": [
+            [
+              "#kit-ccm",
+              "li:nth-child(6) > a[href$=\"personvern\"][target=\"_blank\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a href=\"https://kulturit.no/personvern\" target=\"_blank\" tabindex=\"200\">https://kulturit.no/personvern</a>",
+          "target": [
+            [
+              "#kit-ccm",
+              "li:nth-child(7) > a[href$=\"personvern\"][target=\"_blank\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a href=\"https://stadiamaps.com/privacy/privacy-policy/\" target=\"_blank\" tabindex=\"200\">https://stadiamaps.com/privacy/privacy-policy/</a>",
+          "target": [
+            [
+              "#kit-ccm",
+              "li:nth-child(8) > a[target=\"_blank\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<input tabindex=\"3\" type=\"checkbox\" name=\"17ed1516-d785-441c-907d-aa36b1a9c07a\" aria-label=\"toggle on or off\">",
+          "target": [
+            [
+              "#kit-ccm",
+              ".panel:nth-child(2) > label > input[type=\"checkbox\"][aria-label=\"toggle on or off\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<button tabindex=\"3\" type=\"button\" aria-label=\"toggle content visibility\">",
+          "target": [
+            [
+              "#kit-ccm",
+              ".panel:nth-child(2) > button[aria-label=\"toggle content visibility\"][type=\"button\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a href=\"https://policies.google.com/privacy\" target=\"_blank\" tabindex=\"200\">https://policies.google.com/privacy</a>",
+          "target": [
+            [
+              "#kit-ccm",
+              ".panel:nth-child(2) > ul > li:nth-child(1) > a[target=\"_blank\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a href=\"https://www.facebook.com/privacy/policy/\" target=\"_blank\" tabindex=\"200\">https://www.facebook.com/privacy/policy/</a>",
+          "target": [
+            [
+              "#kit-ccm",
+              ".panel:nth-child(2) > ul > li:nth-child(2) > a[target=\"_blank\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<input tabindex=\"4\" type=\"checkbox\" name=\"b990c49c-854d-4eb0-b2e7-cd19af721a90\" aria-label=\"toggle on or off\">",
+          "target": [
+            [
+              "#kit-ccm",
+              ".panel:nth-child(3) > label > input[type=\"checkbox\"][aria-label=\"toggle on or off\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<button tabindex=\"4\" type=\"button\" aria-label=\"toggle content visibility\">",
+          "target": [
+            [
+              "#kit-ccm",
+              ".panel:nth-child(3) > button[aria-label=\"toggle content visibility\"][type=\"button\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<a href=\"https://youtube.com/privacy\" target=\"_blank\" tabindex=\"200\">https://youtube.com/privacy</a>",
+          "target": [
+            [
+              "#kit-ccm",
+              ".panel:nth-child(3) > ul > li > a[href$=\"privacy\"]"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<button tabindex=\"100\" type=\"button\">Godta alle</button>",
+          "target": [
+            [
+              "#kit-ccm",
+              "button[type=\"button\"]:nth-child(2)"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        },
+        {
+          "html": "<button tabindex=\"100\" type=\"button\">Avvis alle</button>",
+          "target": [
+            [
+              "#kit-ccm",
+              "div > button[type=\"button\"]:nth-child(3)"
+            ]
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has a tabindex greater than 0"
+        }
+      ]
+    }
+  ]
+}

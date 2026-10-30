@@ -1,0 +1,148 @@
+{
+  "project": "Scandic Hotels AS",
+  "timestamp": "2026-10-30T05:40:56.083Z",
+  "url": "https://www.scandichotels.com/no",
+  "total_violations": 5,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "description": "Ensure an element's role supports its ARIA attributes",
+      "help": "Elements must only use supported ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-attr?application=playwright",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<label data-testid=\"bookingCode.flag\" aria-expanded=\"false\" id=\"react-aria9400117030-_r_5f_\" data-react-aria-pressable=\"true\" class=\"checkbox-module__L5OmLa__container \" data-rac=\"\">",
+          "target": [
+            "label[data-testid=\"bookingCode.flag\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "description": "Ensure the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<h4 class=\"typography-module__vfKlZa__Title-Subtitle-md\">Julehygge hos Scandic</h4>",
+          "target": [
+            ".contentCard-module__HLpyJG__link[href$=\"julebord\"] > .contentCard-module__HLpyJG__card > .contentCard-module__HLpyJG__content > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        },
+        {
+          "html": "<h4 class=\"typography-module__vfKlZa__Title-Subtitle-md\">Scandic Hotels</h4>",
+          "target": [
+            "a[href$=\"scandic-hotels\"] > .contentCard-module__HLpyJG__card > .contentCard-module__HLpyJG__content > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" tabindex=\"0\" data-react-aria-pres...=\"true\" aria-labelledby=\"bookingWidgetDatePic...\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"datePickerPopover\" class=\"date-picker-module__...\" data-rac=\"\" id=\"react-aria9400117030...\">",
+          "target": [
+            "#react-aria9400117030-_r_4m_"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<button type=\"button\" tabindex=\"0\" data-react-aria-pres...=\"true\" aria-labelledby=\"rooms-and-guests\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"guestsPopover\" class=\"guests-rooms-picker-...\" data-rac=\"\" id=\"react-aria9400117030...\">",
+          "target": [
+            "#react-aria9400117030-_r_4o_"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/nested-interactive?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button type=\"button\" tabindex=\"0\" aria-expanded=\"false\" id=\"react-aria9400117030-_r_5f_\" data-react-aria-pressable=\"true\" class=\"button-module__NbgNfa__button button-module__NbgNfa__variant-text button-module__NbgNfa__size-lg typography-module__vfKlZa__Body-Paragraph-mdBold\" data-rac=\"\">",
+          "target": [
+            ".booking-code-module__wWrYrG__container > .button-module__NbgNfa__variant-text.button-module__NbgNfa__size-lg.typography-module__vfKlZa__Body-Paragraph-mdBold"
+          ],
+          "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with aria-hidden=\"true\")"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<a id=\"skip-link\" href=\"#main-content\" class=\"SkipLink-module__Kdng7q__skipLink\"><p class=\"typography-module__vfKlZa__Body-Paragraph-mdBold\">Gå til hovedinnhold</p></a>",
+          "target": [
+            "#skip-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
