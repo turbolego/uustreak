@@ -1,184 +1,163 @@
 # WCAG Violations Report for Adresseavisen AS
 
-**Timestamp:** 2026-10-30T05:23:34.077Z
+**Timestamp:** 2026-11-01T03:22:11.850Z
 **URL:** [https://www.adressa.no/](https://www.adressa.no/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
-
-### Buttons must have discernible text
-
-- **Impact:** critical
-- **Description:** Ensure buttons have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/button-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
-- **Count:** 2
-
-#### Affected Elements:
-
-- `.left`
-- `.right`
 
 ### Elements must meet minimum color contrast ratio thresholds
 
 - **Impact:** serious
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.Abobutton`
+- **Target:** `.Abobutton`
+  - **HTML:** `<button class="Abobutton removePlussForApp"> BLI ABONNENT </button>`
+  - **Failure summary:** Fix any of the following: Element has insufficient color contrast of 2.64 (foreground color: #ffffff, background color: #28aae2, font size: 9.6pt (12.8px), font weight: normal). Expected contrast ratio of 4.5:1
+
 
 ### Main landmark should not be contained in another landmark
 
 - **Impact:** moderate
 - **Description:** Ensure the main landmark is at top level
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-main-is-top-level?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 103
+- **Count:** 5
 
 #### Affected Elements:
 
-- `.variant-a.gridfullsize.card-size-large > a > .t100`
-- `a[href$="farfarhuset"] > .t100`
-- `.Bundles:nth-child(1) > .OnePlusXTeasers.grid > .hot70.gridspotlightside.life40 > a > .t100`
-- `a[href$="bikkjebaluba"] > .t100`
-- `.is-section-mn24-skin.life20.gridspotlightside > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(1) > .gridspotlight.card-size-large.hot60 > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(1) > .hot70.gridspotlightside.life40 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(4) > .hot60.gridtriple.life40 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(4) > .is-rbk-skin.hot60.life20 > a > .t100`
-- `.variant-a.hot70.gridtriple > a > .t100`
-- `.h-low > a > .t100`
-- `.small-items.griddouble.opinion > a > .t100`
-- `.small-items.griddouble.hot50 > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(8) > .opinion.is-section-meninger-skin.life20 > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(8) > .hot70.gridspotlightside.life40 > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(10) > .is-section-kultur-skin.hot60.gridspotlightside > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(10) > .gridspotlight.card-size-large.hot60 > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(10) > .hot70.gridspotlightside.life40 > a > .t100`
-- `.hot40.is-section-mn24-skin.life20 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(12) > .is-section-kultur-skin.gridtriple.is-skin > a > .t100`
-- `.ThreeTeasers.grid:nth-child(12) > .is-section-sport-skin.hot60.gridtriple > a > .t100`
-- `.ThreeTeasers.grid:nth-child(14) > .life20.gridtriple.hot50 > a > .t100`
-- `.is-section-mn24-skin.hot70.life20 > a > .t100`
-- `.hot70.life60.gridtriple > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(16) > .gridspotlight.card-size-large.hot60 > a > .t100`
-- `.variant-b > a > .t100`
-- `.opinion.is-section-meninger-skin.life20:nth-child(3) > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(16) > .no-image.life20.gridspotlightside > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(18) > .life20.gridspotlightside.hot50:nth-child(1) > a > .t100`
-- `.hot80.gridspotlight.card-size-large > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(18) > .gridspotlightside.hot50.life40 > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(18) > .no-image.life20.gridspotlightside > a > .t100`
-- `.ThreeTeasers.grid:nth-child(20) > .is-rbk-skin.hot60.life20 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(20) > .no-image.life20.gridtriple > a > .t100`
-- `.ThreeTeasers.grid:nth-child(20) > .is-section-mn24-skin.life20.gridtriple > a > .t100`
-- `.AdWithTeaser.grid:nth-child(21) > .hot60.gridtriple.life40 > a > .t100`
-- `.gridfullsize-bundle.hot30.is-rbk-skin > a > .t100`
-- `.small-items.griddouble.is-rbk-skin:nth-child(1) > a > .t100`
-- `.hot10 > a > .t100`
-- `.no-image.life20.gridspotlightside:nth-child(2) > a > .t100`
-- `.hot80.is-section-kultur-skin.gridspotlightside > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(22) > .no-image.life20.gridspotlightside:nth-child(4) > a > .t100`
-- `.no-image.life20.gridspotlightside:nth-child(1) > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(24) > .is-section-kultur-skin.gridspotlight.card-size-large > a > .t100`
-- `.no-image.life20.gridspotlightside:nth-child(3) > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(24) > .life20.gridspotlightside.hot50:nth-child(4) > a > .t100`
-- `.no-image.life20.gridtriple:nth-child(1) > a > .t100`
-- `.ThreeTeasers.grid:nth-child(25) > .no-image.life20.gridtriple:nth-child(2) > a > .t100`
-- `.is-hendelse-skin.no-image.life20 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(27) > .opinion.is-section-meninger-skin.life20 > a > .t100`
-- `.hot80.life60.gridtriple > a > .t100`
-- `.tip > a > .t100`
-- `.hot40.variant-a.gridtriple > a > .t100`
-- `.opinion.is-section-meninger-skin.gridspotlight > a > .t100`
-- `.hot40.gridspotlightside.life40 > a > .t100`
-- `.breakingvarsel.is-hendelse-skin.hot40 > a > .t100`
-- `.is-hendelse-skin.variant-a.life20 > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(32) > .life20.gridspotlightside.hot50 > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(32) > .gridspotlight.card-size-large.hot60 > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(32) > .is-section-sport-skin.gridspotlightside.is-skin > a > .t100`
-- `.AdWithTeaser.flipped.grid:nth-child(33) > .opinion.is-section-meninger-skin.life20 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(35) > .gridtriple.hot50.life40:nth-child(1) > a > .t100`
-- `.ThreeTeasers.grid:nth-child(35) > .hot60.gridtriple.life40 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(35) > .gridtriple.hot50.life40:nth-child(3) > a > .t100`
-- `.AdWithTeaser.grid:nth-child(36) > .life20.gridtriple.hot50 > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(37) > .gridspotlight.card-size-large.hot60 > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(37) > .life20.gridspotlightside.hot50 > a > .t100`
-- `.breakingvarsel.hot30.is-hendelse-skin > a > .t100`
-- `.AdWithTeaser.flipped.grid:nth-child(38) > .opinion.is-section-meninger-skin.life20 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(39) > .gridtriple.hot50.life40:nth-child(1) > a > .t100`
-- `.ThreeTeasers.grid:nth-child(39) > .is-hendelse-skin.life20.gridtriple > a > .t100`
-- `.ThreeTeasers.grid:nth-child(39) > .is-rbk-skin.gridtriple.is-skin > a > .t100`
-- `.AdWithTeaser.grid:nth-child(40) > .is-section-kultur-skin.gridtriple.is-skin > a > .t100`
-- `.ThreeTeasers.grid:nth-child(41) > .gridtriple.hot50.life40:nth-child(1) > a > .t100`
-- `.customSkin-podcast > a > .t100`
-- `.ThreeTeasers.grid:nth-child(41) > .hot60.gridtriple.life40 > a > .t100`
-- `.customSkin-podkast > a > .t100`
-- `.is-section-sport-skin.gridspotlight.card-size-large > a > .t100`
-- `.variant-a.is-section-mn24-skin.gridspotlightside > a > .t100`
-- `.AdWithTeaser.flipped.grid:nth-child(43) > .is-section-sport-skin.hot60.gridtriple > a > .t100`
-- `.variant-a.is-section-kultur-skin.gridspotlight > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(44) > .life60.hot60.gridspotlightside > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(44) > .opinion.is-section-meninger-skin.gridspotlightside > a > .t100`
-- `.ThreeTeasers.grid:nth-child(45) > .hot60.gridtriple.life40 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(45) > .gridtriple.hot50.life40:nth-child(2) > a > .t100`
-- `.ThreeTeasers.grid:nth-child(45) > .gridtriple.hot50.life40:nth-child(3) > a > .t100`
-- `.AdWithTeaser.grid:nth-child(46) > .is-section-mn24-skin.gridtriple.is-skin > a > .t100`
-- `.gridspotlightside.hot50.life40:nth-child(1) > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(47) > .gridspotlight.card-size-large.hot60 > a > .t100`
-- `.flipped.OnePlusXTeasers.grid:nth-child(47) > .is-section-kultur-skin.gridspotlightside.is-skin > a > .t100`
-- `.AdWithTeaser.flipped.grid:nth-child(48) > .is-section-kultur-skin.gridtriple.is-skin > a > .t100`
-- `.gridspotlight.card-size-large.hot50 > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(49) > .hot60.gridspotlightside.life40 > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(49) > .gridspotlightside.hot50.life40 > a > .t100`
-- `.ThreeTeasers.grid:nth-child(51) > .gridtriple.hot50.life40 > a > .t100`
-- `.is-section-trdby-skin > a > .t100`
-- `.ThreeTeasers.grid:nth-child(51) > .hot40.is-section-mn24-skin.gridtriple > a > .t100`
-- `.is-section-sport-skin.life60.gridspotlightside > a > .t100`
-- `.grade.hot70.life60 > a > .t100`
-- `.grade.life60.is-section-kultur-skin:nth-child(3) > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(53) > .hot70.gridspotlight.card-size-large > a > .t100`
-- `.is-section-mn24-skin.life60.gridspotlightside > a > .t100`
-- `.OnePlusXTeasers.grid:nth-child(53) > .gridspotlightside.hot50.life40 > a > .t100`
+- **Target:** `.gridfullsize > a > .t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.00;"><!----> <span>Slåssing på buss i Trondheim: – Ti personer kan være involvert</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.gridspotlight > a > .t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 0.85;"><!----> <span>I 25 år har har den trønderske gründerfamilien vært her for å hjelpe de fattigste: - Et eventyr</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.opinion > a > .t100`
+  - **HTML:** `<main class="text t100">`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.no-image > a > .t100`
+  - **HTML:** `<main class="text t100"><!----> <!----> <!----> <!----> <h3 style="--font-size-override: 1.20;"><!----> <span>Mann bekreftet omkommet: – Fremstår som en ulykke</span> <!----></h3> <!----></main>`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
+- **Target:** `.gridspotlightside.hot70.life40:nth-child(4) > a > .t100`
+  - **HTML:** `<main class="text t100">`
+  - **Failure summary:** Fix any of the following: The main landmark is contained in another landmark.
+
 
 ### Document should not have more than one main landmark
 
 - **Impact:** moderate
 - **Description:** Ensure the document has at most one main landmark
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-no-duplicate-main?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 1
 
 #### Affected Elements:
 
-- `.Layout`
+- **Target:** `.Layout`
+  - **HTML:** `<main class="Layout">`
+  - **Failure summary:** Fix any of the following: Document has more than one main landmark
+
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
 - **Impact:** moderate
 - **Description:** Ensure landmarks are unique
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 2
 
 #### Affected Elements:
 
-- `.top`
-- `.Layout`
+- **Target:** `.top`
+  - **HTML:** `<aside class="gdpr-wrapper top">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+- **Target:** `.Layout`
+  - **HTML:** `<main class="Layout">`
+  - **Failure summary:** Fix any of the following: The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+
+### Links must be distinguishable without relying on color
+
+- **Impact:** serious
+- **Description:** Ensure links are distinguished from surrounding text in a way that does not rely on color
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-in-text-block?application=playwright
+- **Tags:** cat.color, wcag2a, wcag141, TTv5, TT13.a, EN-301-549, EN-9.1.4.1, RGAAv4, RGAA-10.6.1
+- **Count:** 6
+
+#### Affected Elements:
+
+- **Target:** `a:nth-child(5)`
+  - **HTML:** `<a href="https://adresseavisen.e-pages.pub/">eAdressa</a>`
+  - **Failure summary:** Fix any of the following: The link has insufficient color contrast of 2.49:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005379, surrounding text: #010101) The link has no styling (such as underline) to distinguish it …
+
+- **Target:** `section:nth-child(4) > div > div > .Tips > dl > dd > a[href="tel:46407200"]`
+  - **HTML:** `<a href="tel:46407200">464 07200</a>`
+  - **Failure summary:** Fix any of the following: The link has insufficient color contrast of 2.49:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005379, surrounding text: #010101) The link has no styling (such as underline) to distinguish it …
+
+- **Target:** `div > div > p > a:nth-child(1)`
+  - **HTML:** `<a href="https://presse.no/pfu/etiske-regler/vaer-varsom-plakaten/">Vær Varsom-plakatens</a>`
+  - **Failure summary:** Fix any of the following: The link has insufficient color contrast of 2.49:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005379, surrounding text: #010101) The link has no styling (such as underline) to distinguish it …
+
+- **Target:** `p > a:nth-child(2)`
+  - **HTML:** `<a href="https://www.redaktor.no/ressurser/etiske-og-juridiske-rammeverk/redaktorplakaten">Redaktøransvar</a>`
+  - **Failure summary:** Fix any of the following: The link has insufficient color contrast of 2.49:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005379, surrounding text: #010101) The link has no styling (such as underline) to distinguish it …
+
+- **Target:** `a[href$="medietilsynet.no/"]`
+  - **HTML:** `<a href="https://www.medietilsynet.no/">Medietilsynet</a>`
+  - **Failure summary:** Fix any of the following: The link has insufficient color contrast of 2.49:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005379, surrounding text: #010101) The link has no styling (such as underline) to distinguish it …
+
+- **Target:** `p > a:nth-child(4)`
+  - **HTML:** `<a href="https://www.adressa.no/nyheter/i/lVOBge/adresseavisens-rettigheter">Adresseavisens rettigheter.</a>`
+  - **Failure summary:** Fix any of the following: The link has insufficient color contrast of 2.49:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005379, surrounding text: #010101) The link has no styling (such as underline) to distinguish it …
+
+
+### Page should contain a level-one heading
+
+- **Impact:** moderate
+- **Description:** Ensure that the page, or at least one of its frames contains a level-one heading
+- **Source:** Page content
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- **Target:** `html`
+  - **HTML:** `<html class="front section_frontp..." lang="nb" data-darkmode="off" data-n-head="%7B%22class%22:%7B%2..." style="--header-calc-height...">`
+  - **Failure summary:** Fix all of the following: Page must have a level-one heading
+
 
 ### Elements should not have tabindex greater than zero
 
 - **Impact:** serious
 - **Description:** Ensure tabindex attribute values are not greater than 0
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/tabindex?application=playwright
 - **Tags:** cat.keyboard, best-practice
 - **Count:** 2
 
 #### Affected Elements:
 
-- `.user`
-- `.main`
+- **Target:** `.user`
+  - **HTML:** `<button tabindex="1" aria-controls="usermenu" aria-expanded="false" aria-label="Brukermeny" class="user menu-icon"><span class="user-initials"></span> <span class="notification-count" style="display:none;">0</span></button>`
+  - **Failure summary:** Fix any of the following: Element has a tabindex greater than 0
+
+- **Target:** `.main`
+  - **HTML:** `<button tabindex="1" aria-controls="submenu" aria-expanded="false" aria-label="Åpne- og lukkeknapp for meny" class="menu-icon main"><span></span></button>`
+  - **Failure summary:** Fix any of the following: Element has a tabindex greater than 0
+

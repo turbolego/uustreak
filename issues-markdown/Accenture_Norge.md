@@ -1,8 +1,8 @@
 # WCAG Violations Report for Accenture Norge
 
-**Timestamp:** 2026-10-30T05:24:31.240Z
+**Timestamp:** 2026-11-01T03:21:32.016Z
 **URL:** [https://www.accenture.com/en](https://www.accenture.com/en)
-**Total Violations:** 2
+**Total Violations:** 1
 
 ## Violation Details
 
@@ -10,24 +10,18 @@
 
 - **Impact:** moderate
 - **Description:** Ensure the order of headings is semantically correct
+- **Source:** Page content
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
 - **Count:** 2
 
 #### Affected Elements:
 
-- `.rad-carousel-block__title`
-- `#editorialtext-99eb2d4213 > h4`
+- **Target:** `.rad-carousel-block__title`
+  - **HTML:** `<h4 class="rad-carousel-block__title">“Companies will have a greater technology landscape, but we need to completely change the narrative to inspire people to paint the future. It is human in the lead, not human in the loop.”</h4>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
 
-### Elements must have their visible text as part of their accessible name
+- **Target:** `#editorialtext-99eb2d4213 > h4`
+  - **HTML:** `<h4>Reinvented with Accenture</h4>`
+  - **Failure summary:** Fix any of the following: Heading order invalid
 
-- **Impact:** serious
-- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
-- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 2
-
-#### Affected Elements:
-
-- `#pc-policy-text-link-1`
-- `#pc-policy-text-link-2`
