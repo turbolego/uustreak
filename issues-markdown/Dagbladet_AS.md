@@ -1,22 +1,22 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-11-01T05:03:06.995Z
+**Timestamp:** 2026-11-02T04:49:26.591Z
 **URL:** [https://www.dagbladet.no/](https://www.dagbladet.no/)
-**Total Violations:** 4
+**Total Violations:** 3
 
 ## Violation Details
 
-### ARIA commands must have an accessible name
+### Elements must have their visible text as part of their accessible name
 
 - **Impact:** serious
-- **Description:** Ensure every ARIA button, link and menuitem has an accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-command-name?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, TTv5, TT6.a, EN-301-549, EN-9.4.1.2, ACT, RGAAv4, RGAA-11.9.1
+- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
+- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
 - **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #cbb`
+- `.haartap-front, .hs-w`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -29,18 +29,6 @@
 #### Affected Elements:
 
 - `._topnav_88ip5_45`
-
-### Links must have discernible text
-
-- **Impact:** serious
-- **Description:** Ensure links have discernible text
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
-- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
-- **Count:** 1
-
-#### Affected Elements:
-
-- `#google_ads_iframe_\/8578\/dagbladet\.no\/forside_0, #aw0`
 
 ### All page content should be contained by landmarks
 

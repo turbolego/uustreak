@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-11-01T05:00:03.999Z
+**Timestamp:** 2026-11-02T04:48:04.762Z
 **URL:** [https://www.blv.no/](https://www.blv.no/)
-**Total Violations:** 7
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -12,13 +12,11 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
 - `#eaframe, #topTextRight`
-- `a[aria-label="Ledig stilling: Daglig leder"] > .jobad-wrapper > .ad-text > .ad-text_location`
-- `.swiper-slide-next > .tivoli-job-ad.fokus[target="_blank"] > .jobad-wrapper > .ad-text > .ad-text_location`
 
 ### Headings should not be empty
 
@@ -39,26 +37,11 @@
 - **Description:** Ensure <iframe> and <frame> elements have an accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/frame-title?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
-- **Count:** 3
+- **Count:** 1
 
 #### Affected Elements:
 
-- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, iframe[scrolling="no"]`
-- `#google_ads_iframe_\/56257416\/www\.blv\.no\/toppbanner_0, body > iframe`
 - `#eaframe`
-
-### Elements must have their visible text as part of their accessible name
-
-- **Impact:** serious
-- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
-- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 2
-
-#### Affected Elements:
-
-- `a[aria-label="Ledig stilling: Daglig leder"]`
-- `.swiper-slide-next > .tivoli-job-ad.fokus[target="_blank"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -70,7 +53,7 @@
 
 #### Affected Elements:
 
-- `brick-carousel-v3[data-slides="9"] > .carousel[aria-label="Innholdskarusell"][role="region"]`
+- `brick-carousel-v3[data-slides="8"] > .carousel[aria-label="Innholdskarusell"][role="region"]`
 
 ### Elements marked as presentational should be consistently ignored
 

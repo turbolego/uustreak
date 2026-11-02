@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jysk AS
 
-**Timestamp:** 2026-11-01T05:19:24.222Z
+**Timestamp:** 2026-11-02T04:55:11.141Z
 **URL:** [https://jysk.no/](https://jysk.no/)
 **Total Violations:** 3
 
@@ -27,16 +27,18 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 6
+- **Count:** 8
 
 #### Affected Elements:
 
-- `.snap-start:nth-child(1) > article > .mb-4.flex-col.w-full > .w-full[data-testid="product-pdp-link"]`
-- `.snap-start:nth-child(1) > article > .flex-col.h-full.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `.snap-start:nth-child(2) > article > .flex-col.h-full.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `.snap-start:nth-child(3) > article > .flex-col.h-full.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `.snap-start:nth-child(4) > article > .flex-col.h-full.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
-- `a[aria-describedby="3640354-_r_1p_"]`
+- `.snap-start:nth-child(1) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
+- `a[aria-describedby="5530825-_r_3_"]`
+- `.snap-start:nth-child(2) > article > .mb-4.flex-col.w-full > .w-full[data-testid="product-pdp-link"]`
+- `.snap-start:nth-child(2) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
+- `a[aria-describedby="3445964-_r_4_"]`
+- `.snap-start:nth-child(3) > article > .mb-4.flex-col.w-full > .w-full[data-testid="product-pdp-link"]`
+- `.snap-start:nth-child(3) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
+- `.snap-start:nth-child(4) > article > .h-full.flex-col.flex > .theme-product-info.justify-between.flex > .text-left.no-underline[aria-label="Lenke til produkt"]`
 
 ### All page content should be contained by landmarks
 
@@ -48,7 +50,7 @@
 
 #### Affected Elements:
 
-- `.w-10\/12.content-center[href$="mobeluke"] > .text-white.group-hover\:underline`
+- `.w-10\/12.content-center[href$="superdager"] > .text-white.group-hover\:underline`
 - `.theme-campaign-bar.h-9[data-testid="campaign-bar"]:nth-child(2) > .w-10\/12.content-center.self-center > .text-white.group-hover\:underline`
 - `.w-10\/12.content-center[href$="christmas"] > .text-white.group-hover\:underline`
 - `.theme-usp[href$="om-jysk"][data-testid="usp"]:nth-child(1) > .md\:text-2xl.mt-2.text-center`

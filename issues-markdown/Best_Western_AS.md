@@ -1,6 +1,6 @@
 # WCAG Violations Report for Best Western AS
 
-**Timestamp:** 2026-11-01T04:59:17.849Z
+**Timestamp:** 2026-11-02T04:47:39.705Z
 **URL:** [https://www.bestwestern.no/](https://www.bestwestern.no/)
 **Total Violations:** 3
 
@@ -12,11 +12,19 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 1
+- **Count:** 9
 
 #### Affected Elements:
 
 - `a[href$="bestwestern.com/"]`
+- `a[title="Se mer"]`
+- `a[title="Oppdag tilbudet"]`
+- `a[title="Til tilbudet "]`
+- `a[title="Se alle tilbud"]`
+- `a[title="Ta meg til Edinburgh!"]`
+- `a[title="Ta meg til Wien!"]`
+- `a[title="Ta meg til Warszawa!"]`
+- `a[aria-label="Send e-post til Best Western"]`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -42,8 +50,8 @@
 
 - `.not-focus\:visually-hidden`
 - `a[href$="bestwestern.com/"]`
-- `#ddChallengeBody1793509149339, .captcha__header`
-- `#ddChallengeBody1793509149339, .captcha__human`
-- `#ddChallengeBody1793509149339, .sliderText`
-- `#ddChallengeBody1793509149339, .captcha__robot__warning`
-- `#ddChallengeBody1793509149339, .captcha__robot__contact_support`
+- `#ddChallengeBody1793594848486, .captcha__header`
+- `#ddChallengeBody1793594848486, .captcha__human`
+- `#ddChallengeBody1793594848486, .sliderText`
+- `#ddChallengeBody1793594848486, .captcha__robot__warning`
+- `#ddChallengeBody1793594848486, .captcha__robot__contact_support`

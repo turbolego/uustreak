@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-11-01T05:12:47.798Z
+**Timestamp:** 2026-11-02T05:04:55.705Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -31,26 +31,26 @@
 
 - `.h2.e0.e1 > div > div`
 - `.h4.an[href$="black-november"]`
+- `a[aria-label="Beredo nødradio m/ Bluetooth"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `a[aria-label="Beredo nødradio m/ Bluetooth"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
 - `a[aria-label="Svalbard lang dunparkas"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
 - `a[aria-label="Svalbard lang dunparkas"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
 - `a[aria-label="Ute vinterdress m/korte ben"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
 - `a[aria-label="Ute vinterdress m/korte ben"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Beredo nødradio m/ Bluetooth"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `a[aria-label="Beredo nødradio m/ Bluetooth"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Hafjell vattert selebukse"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `a[aria-label="Hafjell vattert selebukse"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `div:nth-child(5) > .ig.bl.bj > .ih.ii > .c:nth-child(5) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `div:nth-child(5) > .ig.bl.bj > .ih.ii > .c:nth-child(5) > .ij.ik.il > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `div:nth-child(7) > .ig.bl.bj > .ih.ii > .c:nth-child(1) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `div:nth-child(7) > .ig.bl.bj > .ih.ii > .c:nth-child(1) > .ij.ik.il > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Hafjell vinterjakke"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `a[aria-label="Hafjell vinterjakke"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `div:nth-child(5) > .ig.bl.bj > .ih.ii > .c:nth-child(4) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `div:nth-child(5) > .ig.bl.bj > .ih.ii > .c:nth-child(4) > .ij.ik.il > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `a[aria-label="Ute vinterdress"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `a[aria-label="Ute vinterdress"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
 - `a[aria-label="Hafjell vattert jakke"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
 - `a[aria-label="Hafjell vattert jakke"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `.c:nth-child(2) > .ij.ik[aria-label="Hafjell vinterjakke"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `.c:nth-child(2) > .ij.ik[aria-label="Hafjell vinterjakke"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `div:nth-child(7) > .ig.bl.bj > .ih.ii > .c:nth-child(3) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `div:nth-child(7) > .ig.bl.bj > .ih.ii > .c:nth-child(3) > .ij.ik.il > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `.c:nth-child(4) > .ij.ik[aria-label="Hafjell vinterjakke"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `.c:nth-child(4) > .ij.ik[aria-label="Hafjell vinterjakke"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
 - `a[aria-label="Svolvær isolerende skallparkas"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
 - `a[aria-label="Svolvær isolerende skallparkas"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Gjesvær vinterjakke"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `a[aria-label="Gjesvær vinterjakke"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
 
 ### Headings should not be empty
 
@@ -82,9 +82,9 @@
 - `.ho.hp.bl > div > .i0.i1.i2 > .i4.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .i5.ht.hu > .hx.hw.au`
 - `.bl.bj.bk:nth-child(4) > div > .i0.i1.i2 > .i4.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .i5.ht.hu > .hx.hw.au`
 - `.bl.bj.bk:nth-child(4) > div > .i0.i1.i2 > .i4.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .i5.ht.hu > .hx.hw.au`
-- `.i4.fm.be:nth-child(1) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jx.ht.hu > .hx.a2.hw`
-- `.i4.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[href$="nyheter"][data-scope-link="true"] > .jx.ht.hu > .hx.a2.hw`
-- `.i4.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jx.ht.hu > .hx.a2.hw`
+- `.i4.fm.be:nth-child(1) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jo.ht.hu > .hx.a2.hw`
+- `.i4.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[href$="nyheter"][data-scope-link="true"] > .jo.ht.hu > .hx.a2.hw`
+- `.i4.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .jo.ht.hu > .hx.a2.hw`
 
 ### Elements must have their visible text as part of their accessible name
 
@@ -97,16 +97,16 @@
 #### Affected Elements:
 
 - `button[title="Tom handlekurv"]`
+- `a[aria-label="Beredo nødradio m/ Bluetooth"]`
 - `a[aria-label="Svalbard lang dunparkas"]`
 - `a[aria-label="Ute vinterdress m/korte ben"]`
-- `a[aria-label="Beredo nødradio m/ Bluetooth"]`
-- `a[aria-label="Hafjell vattert selebukse"]`
-- `div:nth-child(5) > .ig.bl.bj > .ih.ii > .c:nth-child(5) > .ij.ik.il`
-- `div:nth-child(7) > .ig.bl.bj > .ih.ii > .c:nth-child(1) > .ij.ik.il`
-- `a[aria-label="Hafjell vinterjakke"]`
+- `div:nth-child(5) > .ig.bl.bj > .ih.ii > .c:nth-child(4) > .ij.ik.il`
+- `a[aria-label="Ute vinterdress"]`
 - `a[aria-label="Hafjell vattert jakke"]`
+- `.c:nth-child(2) > .ij.ik[aria-label="Hafjell vinterjakke"]`
+- `div:nth-child(7) > .ig.bl.bj > .ih.ii > .c:nth-child(3) > .ij.ik.il`
+- `.c:nth-child(4) > .ij.ik[aria-label="Hafjell vinterjakke"]`
 - `a[aria-label="Svolvær isolerende skallparkas"]`
-- `a[aria-label="Gjesvær vinterjakke"]`
 
 ### Links must have discernible text
 
