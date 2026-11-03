@@ -1,6 +1,6 @@
 # WCAG Violations Report for Riksteatret
 
-**Timestamp:** 2026-11-02T05:01:35.158Z
+**Timestamp:** 2026-11-03T05:52:00.546Z
 **URL:** [https://www.riksteatret.no/](https://www.riksteatret.no/)
 **Total Violations:** 3
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure the order of headings is semantically correct
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
 - **Tags:** cat.semantics, best-practice
-- **Count:** 16
+- **Count:** 15
 
 #### Affected Elements:
 
@@ -24,14 +24,13 @@
 - `#feature_6 > .module__grid > .module__content > .module__body > h4`
 - `#feature_7 > .module__grid > .module__content > .module__body > h4`
 - `#feature_8 > .module__grid > .module__content > .module__body > h4`
-- `a[href$="apestjernen/"] > .module__content > .module__head > h3`
-- `a[href$="apestjernen/"] > .module__content > .module__body > h4`
-- `a[href$="triggersystemet/"] > .module__content > .module__body > h4`
-- `a[href$="ubesvart-anrop/"] > .module__content > .module__body > h4`
-- `a[href$="lareren/"] > .module__content > .module__body > h4`
-- `a[href$="1984-dub/"] > .module__content > .module__body > h4`
-- `a[href$="kakejazz/"] > .module__content > .module__body > h4`
-- `.module--grid[data-color=""]:nth-child(7) > .module__grid > a > .module__content > .module__body > h4`
+- `a[href$="apestjernen/"] > .module__content > .module__head > h4`
+- `a[href$="triggersystemet/"] > .module__content > .module__head > h4`
+- `a[href$="ubesvart-anrop/"] > .module__content > .module__head > h4`
+- `a[href$="lareren/"] > .module__content > .module__head > h4`
+- `a[href$="1984-dub/"] > .module__content > .module__head > h4`
+- `a[href$="kakejazz/"] > .module__content > .module__head > h4`
+- `.module--grid[data-color=""]:nth-child(7) > .module__grid > a > .module__content > .module__head > h4`
 
 ### Images must have alternative text
 
@@ -39,13 +38,12 @@
 - **Description:** Ensure <img> elements have alternative text or a role of none or presentation
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright
 - **Tags:** cat.text-alternatives, wcag2a, wcag111, section508, section508.22.a, TTv5, TT7.a, TT7.b, EN-301-549, EN-9.1.1.1, ACT, RGAAv4, RGAA-1.1.1
-- **Count:** 4
+- **Count:** 3
 
 #### Affected Elements:
 
 - `.listItem__link-wrapper[data-content-reference="1173464"][data-epi-block-id="1170785"] > img`
 - `.listItem__link-wrapper[data-content-reference="1173389"][data-epi-block-id="1170785"] > img`
-- `.listItem__link-wrapper[data-content-reference="1173368"][data-epi-block-id="1170785"] > img`
 - `.listItem__link-wrapper[data-content-reference="1168970"][data-epi-block-id="1170785"] > img`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination

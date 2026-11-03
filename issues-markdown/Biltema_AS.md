@@ -1,6 +1,6 @@
 # WCAG Violations Report for Biltema AS
 
-**Timestamp:** 2026-11-02T04:47:14.887Z
+**Timestamp:** 2026-11-03T05:42:27.863Z
 **URL:** [https://www.biltema.no/](https://www.biltema.no/)
 **Total Violations:** 12
 
@@ -65,21 +65,20 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 20
+- **Count:** 19
 
 #### Affected Elements:
 
 - `#headerMyBiltemaButton`
 - `li:nth-child(11) > a[href$="kundeservice/"]`
-- `.block__grid.block:nth-child(4) > .block--100.content > .content__grid--reverse > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black.button`
+- `.block__grid.block:nth-child(4) > .block--100.content > .content__grid--reverse > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
 - `.block__grid.block:nth-child(6) > .block--100.content > .content__grid > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
-- `.content__grid--reverse > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
+- `.block__grid.block:nth-child(8) > .block--100.content > .content__grid--reverse > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black.button`
+- `.block__grid.block:nth-child(10) > .block--100.content > .content__grid > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
+- `.block__grid.block:nth-child(12) > .block--100.content > .content__grid--reverse > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
 - `a[aria-label="Gå til: Reflekser"]`
-- `a[aria-label="Gå til: Bil - MC"]`
-- `.block__grid.block:nth-child(14) > .block--100.content > .content__grid > .content__block.content__block--grey.content__grid--2 > .content__block--info.align--center > .button__m.button__transparent--black[aria-label="Gå til: Digitale kundeaviser"]`
-- `a[aria-label="Gå til: Presenninger"]`
-- `a[aria-label="Gå til: Takrennesystem"]`
 - `.button__m.button__transparent--black[href$="kommende-produktnyheter/"]`
+- `a[aria-label="Gå til: Vinterprodukter"]`
 - `a[aria-label="Les mer om vår konsept"]`
 - `.inner > .footer__links > li:nth-child(6) > a`
 - `a[href$="bruksanvisninger/"]`

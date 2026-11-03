@@ -1,22 +1,10 @@
 # WCAG Violations Report for Dagbladet AS
 
-**Timestamp:** 2026-11-02T04:49:26.591Z
+**Timestamp:** 2026-11-03T05:40:22.421Z
 **URL:** [https://www.dagbladet.no/](https://www.dagbladet.no/)
-**Total Violations:** 3
+**Total Violations:** 2
 
 ## Violation Details
-
-### Elements must have their visible text as part of their accessible name
-
-- **Impact:** serious
-- **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
-- **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 1
-
-#### Affected Elements:
-
-- `.haartap-front, .hs-w`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 

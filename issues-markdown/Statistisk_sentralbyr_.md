@@ -1,10 +1,22 @@
 # WCAG Violations Report for Statistisk sentralbyrå
 
-**Timestamp:** 2026-11-02T05:03:37.871Z
+**Timestamp:** 2026-11-03T05:54:02.042Z
 **URL:** [https://www.ssb.no/](https://www.ssb.no/)
-**Total Violations:** 1
+**Total Violations:** 2
 
 ## Violation Details
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#popup-title`
 
 ### Elements must have their visible text as part of their accessible name
 

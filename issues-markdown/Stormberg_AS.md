@@ -1,6 +1,6 @@
 # WCAG Violations Report for Stormberg AS
 
-**Timestamp:** 2026-11-02T05:04:55.705Z
+**Timestamp:** 2026-11-03T05:55:32.030Z
 **URL:** [https://www.stormberg.com/no](https://www.stormberg.com/no)
 **Total Violations:** 7
 
@@ -25,32 +25,41 @@
 - **Description:** Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright
 - **Tags:** cat.color, wcag2aa, wcag143, TTv5, TT13.c, EN-301-549, EN-9.1.4.3, ACT, RGAAv4, RGAA-3.2.1
-- **Count:** 22
+- **Count:** 31
 
 #### Affected Elements:
 
 - `.h2.e0.e1 > div > div`
 - `.h4.an[href$="black-november"]`
-- `a[aria-label="Beredo nødradio m/ Bluetooth"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `a[aria-label="Beredo nødradio m/ Bluetooth"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
 - `a[aria-label="Beredo nødradio m/ Bluetooth"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Svalbard lang dunparkas"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `a[aria-label="Svalbard lang dunparkas"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
 - `a[aria-label="Svalbard lang dunparkas"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Ute vinterdress m/korte ben"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `a[aria-label="Ute vinterdress m/korte ben"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
 - `a[aria-label="Ute vinterdress m/korte ben"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `div:nth-child(5) > .ig.bl.bj > .ih.ii > .c:nth-child(4) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `div:nth-child(5) > .ig.bl.bj > .ih.ii > .c:nth-child(4) > .ij.ik.il > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Ute vinterdress"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `a[aria-label="Ute vinterdress"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
 - `a[aria-label="Ute vinterdress"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Hafjell vattert jakke"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
+- `div:nth-child(5) > .ig.bl.bj > .ih.ii > li:nth-child(5) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `div:nth-child(5) > .ig.bl.bj > .ih.ii > li:nth-child(5) > .ij.ik.il > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `a[aria-label="Hafjell vinterjakke"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `a[aria-label="Hafjell vinterjakke"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `a[aria-label="Hafjell vattert jakke"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
 - `a[aria-label="Hafjell vattert jakke"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `.c:nth-child(2) > .ij.ik[aria-label="Hafjell vinterjakke"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `.c:nth-child(2) > .ij.ik[aria-label="Hafjell vinterjakke"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `div:nth-child(7) > .ig.bl.bj > .ih.ii > .c:nth-child(3) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `div:nth-child(7) > .ig.bl.bj > .ih.ii > .c:nth-child(3) > .ij.ik.il > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `.c:nth-child(4) > .ij.ik[aria-label="Hafjell vinterjakke"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `.c:nth-child(4) > .ij.ik[aria-label="Hafjell vinterjakke"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
-- `a[aria-label="Svolvær isolerende skallparkas"] > .io.bc.bd > .j1.it.y > .gz.j3.iv`
-- `a[aria-label="Svolvær isolerende skallparkas"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `div:nth-child(7) > .ig.bl.bj > .ih.ii > li:nth-child(3) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `div:nth-child(7) > .ig.bl.bj > .ih.ii > li:nth-child(3) > .ij.ik.il > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `li:nth-child(4) > .ij.ik[aria-label="Gjesvær vinterjakke barn 8-14"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `li:nth-child(4) > .ij.ik[aria-label="Gjesvær vinterjakke barn 8-14"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `li:nth-child(5) > .ij.ik[aria-label="Gjesvær vinterjakke barn 8-14"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `li:nth-child(5) > .ij.ik[aria-label="Gjesvær vinterjakke barn 8-14"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `a[aria-label="Kjellmoen vanntett fjellstøvel"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `a[aria-label="Kjellmoen vanntett fjellstøvel"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `a[aria-label="Vinterfjord vanntett vintersko"] > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `a[aria-label="Vinterfjord vanntett vintersko"] > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `div:nth-child(8) > .ig.bl.bj > .ih.ii > li:nth-child(3) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `div:nth-child(8) > .ig.bl.bj > .ih.ii > li:nth-child(3) > .ij.ik.il > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
+- `div:nth-child(8) > .ig.bl.bj > .ih.ii > li:nth-child(4) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `div:nth-child(8) > .ig.bl.bj > .ih.ii > li:nth-child(5) > .ij.ik.il > .io.bc.bd > .j1.it.y > .gz.j3.j2`
+- `div:nth-child(8) > .ig.bl.bj > .ih.ii > li:nth-child(5) > .ij.ik.il > .c0.c1.i6 > div > .h3 > .jm.i7.bd`
 
 ### Headings should not be empty
 
@@ -74,9 +83,9 @@
 
 #### Affected Elements:
 
-- `div:nth-child(1) > .aq.an.ap > .au.as[width="11"]`
-- `div:nth-child(2) > .aq.an.ap > .au.as[width="11"]`
-- `div:nth-child(3) > .aq.an.ap > .au.as[width="11"]`
+- `div:nth-child(1) > .aq.an.am > .au.as[width="11"]`
+- `div:nth-child(2) > .aq.an.am > .au.as[width="11"]`
+- `div:nth-child(3) > .aq.an.am > .au.as[width="11"]`
 - `.ho.hp.bl > div > .i0.i1.i2 > .i4.fm.be:nth-child(1) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .i5.ht.hu > .hx.hw.au`
 - `.ho.hp.bl > div > .i0.i1.i2 > .i4.fm.be:nth-child(2) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .i5.ht.hu > .hx.hw.au`
 - `.ho.hp.bl > div > .i0.i1.i2 > .i4.fm.be:nth-child(3) > div > .bj.bk.ar > .hq.bv.ay > .a6[data-scope-link="true"] > .i5.ht.hu > .hx.hw.au`
@@ -92,7 +101,7 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 11
+- **Count:** 16
 
 #### Affected Elements:
 
@@ -100,13 +109,18 @@
 - `a[aria-label="Beredo nødradio m/ Bluetooth"]`
 - `a[aria-label="Svalbard lang dunparkas"]`
 - `a[aria-label="Ute vinterdress m/korte ben"]`
-- `div:nth-child(5) > .ig.bl.bj > .ih.ii > .c:nth-child(4) > .ij.ik.il`
 - `a[aria-label="Ute vinterdress"]`
+- `div:nth-child(5) > .ig.bl.bj > .ih.ii > li:nth-child(5) > .ij.ik.il`
+- `a[aria-label="Hafjell vinterjakke"]`
 - `a[aria-label="Hafjell vattert jakke"]`
-- `.c:nth-child(2) > .ij.ik[aria-label="Hafjell vinterjakke"]`
-- `div:nth-child(7) > .ig.bl.bj > .ih.ii > .c:nth-child(3) > .ij.ik.il`
-- `.c:nth-child(4) > .ij.ik[aria-label="Hafjell vinterjakke"]`
-- `a[aria-label="Svolvær isolerende skallparkas"]`
+- `div:nth-child(7) > .ig.bl.bj > .ih.ii > li:nth-child(3) > .ij.ik.il`
+- `li:nth-child(4) > .ij.ik[aria-label="Gjesvær vinterjakke barn 8-14"]`
+- `li:nth-child(5) > .ij.ik[aria-label="Gjesvær vinterjakke barn 8-14"]`
+- `a[aria-label="Kjellmoen vanntett fjellstøvel"]`
+- `a[aria-label="Vinterfjord vanntett vintersko"]`
+- `div:nth-child(8) > .ig.bl.bj > .ih.ii > li:nth-child(3) > .ij.ik.il`
+- `div:nth-child(8) > .ig.bl.bj > .ih.ii > li:nth-child(4) > .ij.ik.il`
+- `div:nth-child(8) > .ig.bl.bj > .ih.ii > li:nth-child(5) > .ij.ik.il`
 
 ### Links must have discernible text
 

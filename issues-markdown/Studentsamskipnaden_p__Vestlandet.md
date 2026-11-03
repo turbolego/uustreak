@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden på Vestlandet
 
-**Timestamp:** 2026-11-02T05:04:43.437Z
+**Timestamp:** 2026-11-03T06:00:13.577Z
 **URL:** [https://sammen.no/no](https://sammen.no/no)
 **Total Violations:** 6
 
@@ -21,8 +21,8 @@
 - `.contents[target="_self"]:nth-child(1) > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `.contents[href="/no/trening?location=bergen"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
 - `.contents[href$="kurs"][target="_self"] > .md\:w-56.btn-primary.btn-lg > .md\:text-body_large.flex-row.justify-center`
+- `a[href$="treningsmatch"] > .btn-primary.btn-lg.btn > .md\:text-body_large.flex-row.justify-between > .text-base-white.font-light.svelte-nqw3qe`
 - `.contents[href$="kurs"][target="_blank"] > .btn-primary.btn-lg.btn > .md\:text-body_large.flex-row.justify-between > .text-base-white.font-light.svelte-nqw3qe`
-- `.contents[target="_self"] > .btn-primary.btn-lg.btn > .md\:text-body_large.flex-row.justify-between > .text-base-white.font-light.svelte-nqw3qe`
 - `h1`
 - `a[href$="bolig"] > .text-base-white.font-light.svelte-nqw3qe`
 - `a[href$="studentliv"] > .text-base-white.font-light.svelte-nqw3qe`

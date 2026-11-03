@@ -1,8 +1,8 @@
 # WCAG Violations Report for If Skadeforsikring NUF
 
-**Timestamp:** 2026-11-02T04:54:27.127Z
+**Timestamp:** 2026-11-03T05:45:23.290Z
 **URL:** [https://www.if.no/privat](https://www.if.no/privat)
-**Total Violations:** 2
+**Total Violations:** 3
 
 ## Violation Details
 
@@ -12,7 +12,7 @@
 - **Description:** Ensure role attribute has an appropriate value for the element
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-allowed-role?application=playwright
 - **Tags:** cat.aria, best-practice
-- **Count:** 5
+- **Count:** 6
 
 #### Affected Elements:
 
@@ -21,6 +21,19 @@
 - `img[alt="Best i test på skadeoppgjør!"]`
 - `img[alt="Mer enn bare forsikring"]`
 - `img[alt="Vi forsikrer bedriften din"]`
+- `#b56e7e6c13544ee28718057d54676632 > .split.small > .gap-0.section-content.op > .image > .size-100p.object-cover[loading="lazy"]`
+
+### Heading levels should only increase by one
+
+- **Impact:** moderate
+- **Description:** Ensure the order of headings is semantically correct
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/heading-order?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#\33 2afbdcf0d9b432a82bc059827b8db51 > .weight-medium`
 
 ### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
 
@@ -32,4 +45,4 @@
 
 #### Affected Elements:
 
-- `#\33 38ef3cfbc724c42a48e289a5eda0d78`
+- `#\33 2afbdcf0d9b432a82bc059827b8db51`

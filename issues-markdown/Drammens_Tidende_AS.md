@@ -1,6 +1,6 @@
 # WCAG Violations Report for Drammens Tidende AS
 
-**Timestamp:** 2026-11-02T04:51:02.358Z
+**Timestamp:** 2026-11-03T05:41:52.907Z
 **URL:** [https://www.dt.no/](https://www.dt.no/)
 **Total Violations:** 5
 
@@ -42,32 +42,32 @@
 
 - `#eaframe, .avis-logo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10935962 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10935962 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10933645 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10933645 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10935961 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10935961 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10938019 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10938019 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10942955 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10942955 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10933645 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10933645 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10935961 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10935961 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10931791 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10931791 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(6) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10935921 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10935921 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(7) > .shoutimage-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10935960 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10935960 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(6) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10939378 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10939378 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(7) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10935962 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10935962 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(8) > .shoutimage-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10933646 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10933646 > .brokerinfo-container > .brokerlogo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(9) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10939378 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10939378 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, #brokerimage-container-10935921 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10935921 > .brokerinfo-container > .brokerlogo`
 
 ### Elements marked as presentational should be consistently ignored
 

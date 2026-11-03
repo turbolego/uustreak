@@ -1,6 +1,6 @@
 # WCAG Violations Report for Vestland fylkeskommune
 
-**Timestamp:** 2026-11-02T05:08:55.731Z
+**Timestamp:** 2026-11-03T05:59:18.371Z
 **URL:** [https://www.vestlandfylke.no/](https://www.vestlandfylke.no/)
 **Total Violations:** 6
 
@@ -28,7 +28,7 @@
 
 #### Affected Elements:
 
-- `.article-teaser:nth-child(2) > a > .article-teaser__image-container > .article-teaser__image-container-inner > .article-teaser__image`
+- `.article-teaser:nth-child(3) > a > .article-teaser__image-container > .article-teaser__image-container-inner > .article-teaser__image`
 
 ### Form elements should have a visible label
 

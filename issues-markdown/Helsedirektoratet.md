@@ -1,6 +1,6 @@
 # WCAG Violations Report for Helsedirektoratet
 
-**Timestamp:** 2026-11-02T04:54:27.120Z
+**Timestamp:** 2026-11-03T05:45:12.441Z
 **URL:** [https://www.helsedirektoratet.no/](https://www.helsedirektoratet.no/)
 **Total Violations:** 3
 
@@ -36,8 +36,10 @@
 - **Description:** Ensure all page content is contained by landmarks
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/region?application=playwright
 - **Tags:** cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
-- **Count:** 1
+- **Count:** 3
 
 #### Affected Elements:
 
+- `.cookie-panel-banner__title`
+- `.cookie-panel-banner__description`
 - `.scrollToTopWrapper`
