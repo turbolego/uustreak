@@ -87,39 +87,46 @@
     let testTimeout = null;
     let activeRequestId = 0;
 
-    function validateUrl(value) {
-      let url;
-      try {
-        url = new URL(value);
-      } catch {
-        throw new Error("Enter a valid absolute URL, including https:// or http://.");
-      }
-      if (!["http:", "https:"].includes(url.protocol) || url.username || url.password) {
-        throw new Error("Only public HTTP or HTTPS URLs without embedded credentials can be tested.");
-      }
-      return url.href;
+    function validateUrls(value) {
+      const candidates = /^[a-z][a-z\d+.-]*:\/\//i.test(value)
+        ? [value]
+        : [`https://${value}`, `http://${value}`];
+      return candidates.map(candidate => {
+        let url;
+        try {
+          url = new URL(candidate);
+        } catch {
+          throw new Error("Enter a valid URL or hostname.");
+        }
+        if (!["http:", "https:"].includes(url.protocol) || url.username || url.password) {
+          throw new Error("Only public HTTP or HTTPS URLs without embedded credentials can be tested.");
+        }
+        return url.href;
+      });
     }
 
-    async function fetchPage(targetUrl) {
+    async function fetchPage(targetUrls) {
       const errors = [];
-      for (const proxy of PROXIES) {
-        const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 30000);
-        try {
-          const response = await fetch(proxy.url(targetUrl), { signal: controller.signal });
-          if (!response.ok) {
-            throw new Error(`HTTP ${response.status}`);
+      for (const targetUrl of targetUrls) {
+        for (const proxy of PROXIES) {
+          const controller = new AbortController();
+          const timeout = setTimeout(() => controller.abort(), 30000);
+          try {
+            const response = await fetch(proxy.url(targetUrl), { signal: controller.signal });
+            if (!response.ok) {
+              throw new Error(`HTTP ${response.status}`);
+            }
+            const html = await response.text();
+            if (!html.trim()) {
+              throw new Error("The proxy returned an empty response.");
+            }
+            return { html, proxy: proxy.name, targetUrl };
+          } catch (error) {
+            const message = error.name === "AbortError" ? "request timed out" : error.message;
+            errors.push(`${targetUrl} via ${proxy.name}: ${message}`);
+          } finally {
+            clearTimeout(timeout);
           }
-          const html = await response.text();
-          if (!html.trim()) {
-            throw new Error("The proxy returned an empty response.");
-          }
-          return { html, proxy: proxy.name };
-        } catch (error) {
-          const message = error.name === "AbortError" ? "request timed out" : error.message;
-          errors.push(`${proxy.name}: ${message}`);
-        } finally {
-          clearTimeout(timeout);
         }
       }
       throw new Error(`All configured fetch methods failed.\n${errors.join("\n")}`);
@@ -242,14 +249,15 @@
     runButton.addEventListener("click", async () => {
       const requestId = ++activeRequestId;
       runButton.disabled = true;
-      resultsEl.textContent = "Fetching page through available proxies...";
+      resultsEl.textContent = "Fetching page (HTTPS first; HTTP fallback if no scheme was provided)...";
       try {
-        activeTargetUrl = validateUrl(document.getElementById("urlInput").value.trim());
+        const targetUrls = validateUrls(document.getElementById("urlInput").value.trim());
         activeTestId = crypto.randomUUID();
-        const { html, proxy } = await fetchPage(activeTargetUrl);
+        const { html, proxy, targetUrl } = await fetchPage(targetUrls);
         if (requestId !== activeRequestId) {
           return;
         }
+        activeTargetUrl = targetUrl;
         activeProxyName = proxy;
         resultsEl.textContent = `Loaded via ${proxy}. Running axe-core ${AXE_VERSION}...`;
         iframe.srcdoc = buildTestPage(html, activeTargetUrl, activeTestId);
