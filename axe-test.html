@@ -24,8 +24,8 @@
     <h1>UUStreak axe-core accessibility tester</h1>
     <a class="button" href="https://uustreak.no/">Back to UUStreak front page</a>
     <p>
-      Tests one page at a time using axe-core 4.14.0. The page is fetched through
-      public CORS proxies and tested in an isolated frame. Proxy-rendered pages
+      Tests one page at a time using axe-core 4.14.0. The page is fetched directly
+      when possible, then through public CORS proxies, and tested in an isolated frame. Proxy-rendered pages
       may differ from a normal visit. All WCAG tags available in axe-core are run,
       including WCAG 2.0 AAA and WCAG 2.2 AA; axe-core does not provide a WCAG 2.2 AAA
       tag. Automated checks cannot replace manual testing.
@@ -63,6 +63,14 @@
       "best-practice"
     ];
     const PROXIES = [
+      {
+        name: "Direct",
+        url: target => target
+      },
+      {
+        name: "proxy.cors.dev",
+        url: target => `https://proxy.cors.dev/?${encodeURIComponent(target)}`
+      },
       {
         name: "AllOrigins",
         url: target => `https://api.allorigins.win/raw?url=${encodeURIComponent(target)}`
@@ -114,7 +122,7 @@
           clearTimeout(timeout);
         }
       }
-      throw new Error(`All configured proxies failed.\n${errors.join("\n")}`);
+      throw new Error(`All configured fetch methods failed.\n${errors.join("\n")}`);
     }
 
     function buildTestPage(html, targetUrl, testId) {
