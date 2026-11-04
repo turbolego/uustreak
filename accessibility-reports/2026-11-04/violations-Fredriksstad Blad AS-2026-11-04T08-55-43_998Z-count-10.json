@@ -1,0 +1,762 @@
+{
+  "project": "Fredriksstad Blad AS",
+  "timestamp": "2026-11-04T08:55:43.998Z",
+  "url": "https://www.f-b.no/",
+  "total_violations": 10,
+  "browser_used": "chromium",
+  "fallback_used": false,
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/button-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<button class=\"swiper-button-autoplay\"></button>",
+          "target": [
+            "#eaframe",
+            "button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<p class=\"brokertitle\">Daglig leder / Eiendomsmegler MNEF</p>",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10935597 > .brokerinfo-container > div > .brokertitle"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.36 (foreground color: #ffffff, background color: #f29200, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"ad-text_location\">Våler i Østfold</span>",
+          "target": [
+            ".swiper-slide-prev > .tivoli-job-ad.fokus[target=\"_blank\"] > .jobad-wrapper > .ad-text > .ad-text_location"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.54 (foreground color: #888888, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"ad-text_location\">Våler i Østfold</span>",
+          "target": [
+            "a[aria-label=\"Ledig stilling: Økonomisjef\"] > .jobad-wrapper > .ad-text > .ad-text_location"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.54 (foreground color: #888888, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"ad-text_location\">Askim</span>",
+          "target": [
+            ".swiper-slide-next > .tivoli-job-ad.fokus[target=\"_blank\"] > .jobad-wrapper > .ad-text > .ad-text_location"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.54 (foreground color: #888888, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "html": "<span class=\"ad-text_location\">Gamle Fredrikstad</span>",
+          "target": [
+            "div[data-swiper-slide-index=\"4\"] > .tivoli-job-ad.fokus[target=\"_blank\"] > .jobad-wrapper > .ad-text > .ad-text_location"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.54 (foreground color: #888888, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "frame-title",
+      "impact": "serious",
+      "description": "Ensure <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/frame-title?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.d",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-2.1.1"
+      ],
+      "violation_count": 3,
+      "nodes": [
+        {
+          "html": "<iframe frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" topmargin=\"0\" leftmargin=\"0\" allowtransparency=\"true\" width=\"980\" height=\"300\" srcdoc=\"<div style=\"position...\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.f-b\\.no\\/toppbanner_0",
+            "iframe[width=\"980\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe data-rp-frame=\"\" src=\"https://app.readpeak.com/url/creative?id=281066&l=7fdb0467b9c95dfd&bad=4-71-715O0O715OdO980300&b=dc658bf5-c60a-4e39-bdc4-a79cf9277517&w=980&h=300&ofs=0&dt=2&gc=0&pr=5\" style=\"border: 0; display: block\" width=\"980\" height=\"300\" onload=\"readpeakExpand(this)\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.f-b\\.no\\/toppbanner_0",
+            "iframe[width=\"980\"]",
+            "iframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<iframe frameborder=\"no\" id=\"eaframe\" name=\"eaframe\" width=\"980\" height=\"350\" scrolling=\"no\" src=\"javascript:window[&quot;contents&quot;]\" style=\"width: 100%; height: 350px;\"></iframe>",
+          "target": [
+            "#eaframe"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+      "help": "Images must have alternative text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/image-alt?application=playwright",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT7.a",
+        "TT7.b",
+        "EN-301-549",
+        "EN-9.1.1.1",
+        "ACT",
+        "RGAAv4",
+        "RGAA-1.1.1"
+      ],
+      "violation_count": 46,
+      "nodes": [
+        {
+          "html": "<img class=\"avis-logo\" src=\"//r.api.no/local/v3/publications/www.f-b.no/gfx/small-positive.svg\">",
+          "target": [
+            "#eaframe",
+            ".avis-logo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"shoutimage\" src=\"https://cdn.easy-ads.com/subscriber/upload/data/2026/11/1793712412_83267.webp\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            ".ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .shoutimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerimage\" src=\"https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/3b/e2/3be2dd5592a4c373a0dd7fd702be75fb\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10935597 > .brokerimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerlogo\" src=\"https://cdn.easy-ads.com/subscriber/upload/groups/1530169795_64954.jpg\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10935597 > .brokerinfo-container > .brokerlogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"shoutimage\" src=\"https://cdn.easy-ads.com/subscriber/upload/data/2026/11/1793712411_27575.webp\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            ".ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .shoutimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerimage\" src=\"https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/d0/ad/d0ad816d10cb46076e7462fb300f3a19\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10935490 > .brokerimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerlogo\" src=\"https://cdn.easy-ads.com/subscriber/upload/groups/1738581481_72185.png\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10935490 > .brokerinfo-container > .brokerlogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"shoutimage\" src=\"https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1793722151_21325.webp\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            ".ad-container.swiper-slide:nth-child(3) > .shoutimage-container > .shoutimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerimage\" src=\"https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/02/b6/02b6a9e45dc8ba72baf44c037230740d\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10945621 > .brokerimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerlogo\" src=\"https://cdn.easy-ads.com/subscriber/upload/groups/1519112045_11776.png\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10945621 > .brokerinfo-container > .brokerlogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"shoutimage\" src=\"https://cdn.easy-ads.com/subscriber/upload/data/2026/11/1793712858_67993.webp\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            ".ad-container.swiper-slide:nth-child(4) > .shoutimage-container > .shoutimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerimage\" src=\"https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/f7/ce/f7ce7efa13b564d04bbdfb7159472931\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10942949 > .brokerimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerlogo\" src=\"https://cdn.easy-ads.com/subscriber/upload/groups/1530169795_64954.jpg\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10942949 > .brokerinfo-container > .brokerlogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"shoutimage\" src=\"https://cdn.easy-ads.com/subscriber/upload/data/2026/11/1793712407_61423.webp\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            ".ad-container.swiper-slide:nth-child(5) > .shoutimage-container > .shoutimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerimage\" src=\"https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/f5/e5/f5e541aad75a29d8b588079282e4bc1d\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10934823 > .brokerimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerlogo\" src=\"https://cdn.easy-ads.com/subscriber/upload/groups/1519112045_11776.png\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10934823 > .brokerinfo-container > .brokerlogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"shoutimage\" src=\"https://cdn.easy-ads.com/subscriber/upload/data/2026/11/1793712664_42986.webp\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            ".ad-container.swiper-slide:nth-child(6) > .shoutimage-container > .shoutimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerimage\" src=\"https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/29/e5/29e5db379ca519e9c7dafac8301731d2\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10938290 > .brokerimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerlogo\" src=\"https://cdn.easy-ads.com/subscriber/upload/groups/1519112045_11776.png\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10938290 > .brokerinfo-container > .brokerlogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"shoutimage\" src=\"https://cdn.easy-ads.com/subscriber/upload/data/2026/11/1793712658_64151.webp\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            ".ad-container.swiper-slide:nth-child(7) > .shoutimage-container > .shoutimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerimage\" src=\"https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/07/4f/074f4ecaca4c752f815519e03500335b\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10938286 > .brokerimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerlogo\" src=\"https://cdn.easy-ads.com/subscriber/upload/groups/1519112045_11776.png\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10938286 > .brokerinfo-container > .brokerlogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"shoutimage\" src=\"https://cdn.easy-ads.com/subscriber/upload/data/2026/11/1793712885_54313.webp\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            ".ad-container.swiper-slide:nth-child(8) > .shoutimage-container > .shoutimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerimage\" src=\"https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/0b/d0/0bd0a7a050d13d593f528ebb3544ba1c\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10944679 > .brokerimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerlogo\" src=\"https://cdn.easy-ads.com/subscriber/upload/groups/1519112045_11776.png\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10944679 > .brokerinfo-container > .brokerlogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"shoutimage\" src=\"https://cdn.easy-ads.com/subscriber/upload/data/2026/11/1793712662_87314.webp\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            ".ad-container.swiper-slide:nth-child(9) > .shoutimage-container > .shoutimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerimage\" src=\"https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/1c/15/1c1530a7b0610e2f85752984204cf7e4\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10938288 > .brokerimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerlogo\" src=\"https://cdn.easy-ads.com/subscriber/upload/groups/1519112045_11776.png\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10938288 > .brokerinfo-container > .brokerlogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"shoutimage\" src=\"https://cdn.easy-ads.com/subscriber/upload/data/2026/11/1793712770_86353.webp\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            ".ad-container.swiper-slide:nth-child(10) > .shoutimage-container > .shoutimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerimage\" src=\"https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/d8/62/d862ed408450464bc82f157a5a8f9b6f\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10940486 > .brokerimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerlogo\" src=\"https://cdn.easy-ads.com/subscriber/upload/groups/1517400455_16105.png\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10940486 > .brokerinfo-container > .brokerlogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"shoutimage\" src=\"https://cdn.easy-ads.com/subscriber/upload/data/images/2026/11/1793722155_54851.webp\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            ".ad-container.swiper-slide:nth-child(11) > .shoutimage-container > .shoutimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerimage\" src=\"https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/71/60/716057fd933b1a54abe6a9774819eecd\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10945624 > .brokerimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerlogo\" src=\"https://cdn.easy-ads.com/subscriber/upload/groups/1530169795_64954.jpg\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10945624 > .brokerinfo-container > .brokerlogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"shoutimage\" src=\"https://cdn.easy-ads.com/subscriber/upload/data/2026/11/1793712711_81788.webp\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            ".ad-container.swiper-slide:nth-child(12) > .shoutimage-container > .shoutimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerimage\" src=\"https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/dd/c8/ddc820b4e7c88091d7b3ca75f3c8ed90\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10939129 > .brokerimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerlogo\" src=\"https://cdn.easy-ads.com/subscriber/upload/groups/1517400455_16105.png\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10939129 > .brokerinfo-container > .brokerlogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"shoutimage\" src=\"https://cdn.easy-ads.com/subscriber/upload/data/2026/11/1793712556_31502.webp\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            ".ad-container.swiper-slide:nth-child(13) > .shoutimage-container > .shoutimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerimage\" src=\"https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/9d/fa/9dfaa76c14116c6213c7e8abbbcfccc0\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10938017 > .brokerimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerlogo\" src=\"https://cdn.easy-ads.com/subscriber/upload/groups/1674057976_45843.png\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10938017 > .brokerinfo-container > .brokerlogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"shoutimage\" src=\"https://cdn.easy-ads.com/subscriber/upload/data/2026/11/1793712888_52846.webp\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            ".ad-container.swiper-slide:nth-child(14) > .shoutimage-container > .shoutimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerimage\" src=\"https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/81/00/8100feb7357f15440f9263e5c293f5f0\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10944681 > .brokerimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerlogo\" src=\"https://cdn.easy-ads.com/subscriber/upload/groups/1517400455_16105.png\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10944681 > .brokerinfo-container > .brokerlogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"shoutimage\" src=\"https://cdn.easy-ads.com/subscriber/upload/data/2026/11/1793712688_51738.webp\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            ".ad-container.swiper-slide:nth-child(15) > .shoutimage-container > .shoutimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerimage\" src=\"https://g.api.no/obscura/API/image/r1/zett/708x708r/1510165749000/b3/be/b3be940ea46789829df2ba2838e006fe\" loading=\"lazy\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10939103 > .brokerimage[loading=\"lazy\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "html": "<img class=\"brokerlogo\" src=\"https://cdn.easy-ads.com/subscriber/upload/groups/1674057976_45843.png\">",
+          "target": [
+            "#eaframe",
+            "#brokerimage-container-10939103 > .brokerinfo-container > .brokerlogo"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "label-content-name-mismatch",
+      "impact": "serious",
+      "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+      "help": "Elements must have their visible text as part of their accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "wcag21a",
+        "wcag253",
+        "EN-301-549",
+        "EN-9.2.5.3",
+        "RGAAv4",
+        "RGAA-6.1.5"
+      ],
+      "violation_count": 4,
+      "nodes": [
+        {
+          "html": "<a href=\"https://www.f-b.no/vis/stillingledig/4583253?ref=jobcarousel\" class=\"tivoli-job-ad fokus\" tabindex=\"0\" aria-label=\"Ledig stilling: IT konsulent digital utvikling\" target=\"_blank\">",
+          "target": [
+            ".swiper-slide-prev > .tivoli-job-ad.fokus[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a href=\"https://www.f-b.no/vis/stillingledig/4583255?ref=jobcarousel\" class=\"tivoli-job-ad fokus\" tabindex=\"0\" aria-label=\"Ledig stilling: Økonomisjef\" target=\"_blank\">",
+          "target": [
+            "a[aria-label=\"Ledig stilling: Økonomisjef\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a href=\"https://www.f-b.no/vis/stillingledig/4583801?ref=jobcarousel\" class=\"tivoli-job-ad fokus\" tabindex=\"0\" aria-label=\"Ledig stilling: Drifts- og administrasjonssjef\" target=\"_blank\">",
+          "target": [
+            ".swiper-slide-next > .tivoli-job-ad.fokus[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        },
+        {
+          "html": "<a href=\"https://www.f-b.no/vis/stillingledig/4583729?ref=jobcarousel\" class=\"tivoli-job-ad fokus\" tabindex=\"0\" aria-label=\"Ledig stilling: Assisterende driftssjef - avløpsrensing og biogass\" target=\"_blank\">",
+          "target": [
+            "div[data-swiper-slide-index=\"4\"] > .tivoli-job-ad.fokus[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "description": "Ensure landmarks are unique",
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<section data-static=\"\" role=\"region\" class=\"carousel\" aria-label=\"Innholdskarusell\" aria-describedby=\"carousel-title-fd727737-c060-43b0-a554-37566d3802eb\">",
+          "target": [
+            ".navigation > .carousel[role=\"region\"][aria-label=\"Innholdskarusell\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<a id=\"image-link\" href=\"https://app.readpeak.com/url/clk/281066/715?l=715&a=281066&b=dc658bf5-c60a-4e39-bdc4-a79cf9277517&ofs=0&dtm=0&bac=715O0O715OdO980300&dt=2&pr=5&gdpr=0&tc=\" data-ad-id=\"281066\" target=\"_blank\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.f-b\\.no\\/toppbanner_0",
+            "iframe[width=\"980\"]",
+            "iframe",
+            "#image-link"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "html": "<a href=\"https://app.readpeak.com/url/clk/281066/715?l=715&amp;a=281066&amp;b=dc658bf5-c60a-4e39-bdc4-a79cf9277517&amp;ofs=0&amp;dtm=0&amp;bac=715O0O715OdO980300&amp;dt=2&amp;pr=5&amp;gdpr=0&amp;tc=\" data-ad-id=\"281066\" target=\"_blank\"></a>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.f-b\\.no\\/toppbanner_0",
+            "iframe[width=\"980\"]",
+            "iframe",
+            ".intro > a"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=playwright",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "violation_count": 5,
+      "nodes": [
+        {
+          "html": "<html lang=\"nb-NO\" data-sitekey=\"frblad\" data-paywall=\"false\" data-pagemodel=\"rodimus\" data-isfrontpage=\"true\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.f-b\\.no\\/toppbanner_0",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html>",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.f-b\\.no\\/toppbanner_0",
+            "iframe[width=\"980\"]",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html lang=\"no\">",
+          "target": [
+            "#google_ads_iframe_\\/56257416\\/www\\.f-b\\.no\\/toppbanner_0",
+            "iframe[width=\"980\"]",
+            "iframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        },
+        {
+          "html": "<html lang=\"en\">",
+          "target": [
+            "#eaframe",
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "presentation-role-conflict",
+      "impact": "minor",
+      "description": "Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them",
+      "help": "Elements marked as presentational should be consistently ignored",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/presentation-role-conflict?application=playwright",
+      "tags": [
+        "cat.aria",
+        "best-practice",
+        "ACT"
+      ],
+      "violation_count": 1,
+      "nodes": [
+        {
+          "html": "<img tabindex=\"-1\" src=\"//assets.acdn.no/local/v3/publications/www.f-b.no/gfx/small-positive.svg\" alt=\"\" loading=\"eager\" height=\"80\" width=\"auto\">",
+          "target": [
+            "img[height=\"80\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is not focusable."
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=playwright",
+      "tags": [
+        "cat.keyboard",
+        "best-practice",
+        "RGAAv4",
+        "RGAA-9.2.1"
+      ],
+      "violation_count": 2,
+      "nodes": [
+        {
+          "html": "<amedia-username orderpage=\"//www.f-b.no/tilbud\" publication=\"www.f-b.no\" subscription-text=\"Bli abonnent\" subscription-link=\"true\" links=\"\" locale=\"nb-NO\" theme=\"alfa\">",
+          "target": [
+            "amedia-username"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "html": "<bazaar-ad data-component-layou...=\"commercial\" position=\"toppbanner\" class=\"am-bazaar-ad lp_topp...\" labeled=\"true\" display-config=\"\" aria-labelledby=\"toppbanner-1-label\" ad-index=\"1\" id=\"toppbanner-1\" data-id=\"toppbanner-1\" tag-id=\"www.f-b.no/toppbanne...\" has-bid=\"\" render-count=\"1\" ...>",
+          "target": [
+            "#toppbanner-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
