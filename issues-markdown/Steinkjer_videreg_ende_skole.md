@@ -1,8 +1,8 @@
 # WCAG Violations Report for Steinkjer videregående skole
 
-**Timestamp:** 2026-11-03T05:58:52.784Z
+**Timestamp:** 2026-11-04T05:31:47.718Z
 **URL:** [https://web.trondelagfylke.no/steinkjer-videregaende-skole](https://web.trondelagfylke.no/steinkjer-videregaende-skole)
-**Total Violations:** 5
+**Total Violations:** 6
 
 ## Violation Details
 
@@ -53,8 +53,20 @@
 
 #### Affected Elements:
 
-- `iframe[name="fc43f9ba8bfc1671a"], #u_0_1_yh`
-- `iframe[name="fc43f9ba8bfc1671a"], .lfloat._3-8_`
+- `iframe[name="f80c35c4c7d018d06"], #u_0_1_bR`
+- `iframe[name="f80c35c4c7d018d06"], .lfloat._3-8_`
+
+### Elements marked as presentational should be consistently ignored
+
+- **Impact:** minor
+- **Description:** Ensure elements marked as presentational do not have global ARIA or tabindex so that all screen readers ignore them
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/presentation-role-conflict?application=playwright
+- **Tags:** cat.aria, best-practice, ACT
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[name="f80c35c4c7d018d06"], img`
 
 ### All page content should be contained by landmarks
 
@@ -72,5 +84,5 @@
 - `.card-grid.card-grid--equal-height:nth-child(4)`
 - `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(1)`
 - `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(2) > .card.card-grid--equal-height > .card__tag`
-- `iframe[name="fc43f9ba8bfc1671a"], #u_0_0_n4`
+- `iframe[name="f80c35c4c7d018d06"], #u_0_0_hY`
 - `.card-grid.card-grid--equal-height:nth-child(5) > .card-grid__item:nth-child(3)`

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Color Line AS
 
-**Timestamp:** 2026-11-03T05:38:44.594Z
+**Timestamp:** 2026-11-04T05:09:18.465Z
 **URL:** [https://www.colorline.no/](https://www.colorline.no/)
 **Total Violations:** 3
 
@@ -30,7 +30,7 @@
 
 #### Affected Elements:
 
-- `.wrapper.bg-white > .h-\(--navbar-mobile-height\).md\:h-\(--navbar-desktop-height\).py-24 > .gap-12.flex-wrap.justify-between > .justify-end.gap-10[data-controller="deviation-status"] > nav`
+- `.wrapper.bg-white > .h-\(--navbar-mobile-height\).md\:h-\(--navbar-desktop-height\).py-24 > .flex-wrap.gap-12.justify-between > .justify-end.gap-10[data-controller="deviation-status"] > nav`
 
 ### All page content should be contained by landmarks
 
@@ -43,7 +43,7 @@
 #### Affected Elements:
 
 - `.cl-skip-links`
-- `.wrapper.bg-white > .h-\(--navbar-mobile-height\).md\:h-\(--navbar-desktop-height\).py-24 > .gap-12.flex-wrap.justify-between > .logo[href="/"]`
+- `.wrapper.bg-white > .h-\(--navbar-mobile-height\).md\:h-\(--navbar-desktop-height\).py-24 > .flex-wrap.gap-12.justify-between > .logo[href="/"]`
 - `.lg\:justify-start`
 - `.md\:flex-row-reverse > div:nth-child(2)`
 - `.button-pill`

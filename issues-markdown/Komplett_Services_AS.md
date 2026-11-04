@@ -1,6 +1,6 @@
 # WCAG Violations Report for Komplett Services AS
 
-**Timestamp:** 2026-11-03T05:50:43.965Z
+**Timestamp:** 2026-11-04T05:21:59.425Z
 **URL:** [https://www.komplett.no/](https://www.komplett.no/)
 **Total Violations:** 3
 

@@ -1,8 +1,8 @@
 # WCAG Violations Report for Mediehuset Nettavisen AS
 
-**Timestamp:** 2026-11-03T05:48:52.583Z
+**Timestamp:** 2026-11-04T05:22:53.793Z
 **URL:** [https://www.nettavisen.no/](https://www.nettavisen.no/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -18,6 +18,18 @@
 
 - `.miniheader > .logo-nav-wrap > .logo-nav-wrapper > h1`
 
+### Frames must have an accessible name
+
+- **Impact:** serious
+- **Description:** Ensure <iframe> and <frame> elements have an accessible name
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/frame-title?application=playwright
+- **Tags:** cat.text-alternatives, wcag2a, wcag412, section508, section508.22.i, TTv5, TT12.d, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-2.1.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `iframe[goodvibes=""]`
+
 ### Heading levels should only increase by one
 
 - **Impact:** moderate
@@ -28,7 +40,7 @@
 
 #### Affected Elements:
 
-- `article[data-adp-teaserid="80-95-214130"] > .brick-c-hoZzTN.teaser_body[itemprop="url"] > .brick-c-igdZZU.brick-c-SoyIg.title_container > .brick-c-iscXzK`
+- `.brick-c-igdZZU > .brick-c-iscXzK`
 
 ### Banner landmark should not be contained in another landmark
 

@@ -1,6 +1,6 @@
 # WCAG Violations Report for Bladet Nordlys AS
 
-**Timestamp:** 2026-11-03T05:38:56.246Z
+**Timestamp:** 2026-11-04T05:07:25.053Z
 **URL:** [https://www.nordlys.no/](https://www.nordlys.no/)
 **Total Violations:** 5
 
@@ -42,11 +42,11 @@
 
 - `#eaframe, .avis-logo`
 - `#eaframe, .ad-container.swiper-slide:nth-child(1) > .shoutimage-container > .shoutimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10937688 > .brokerimage[loading="lazy"]`
-- `#eaframe, #brokerimage-container-10937688 > .brokerinfo-container > .brokerlogo`
-- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .shoutimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10937687 > .brokerimage[loading="lazy"]`
 - `#eaframe, #brokerimage-container-10937687 > .brokerinfo-container > .brokerlogo`
+- `#eaframe, .ad-container.swiper-slide:nth-child(2) > .shoutimage-container > .shoutimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10937688 > .brokerimage[loading="lazy"]`
+- `#eaframe, #brokerimage-container-10937688 > .brokerinfo-container > .brokerlogo`
 
 ### Elements marked as presentational should be consistently ignored
 

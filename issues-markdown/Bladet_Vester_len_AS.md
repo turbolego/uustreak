@@ -1,8 +1,8 @@
 # WCAG Violations Report for Bladet Vesterålen AS
 
-**Timestamp:** 2026-11-03T05:38:44.862Z
+**Timestamp:** 2026-11-04T05:10:01.754Z
 **URL:** [https://www.blv.no/](https://www.blv.no/)
-**Total Violations:** 6
+**Total Violations:** 7
 
 ## Violation Details
 
@@ -24,11 +24,12 @@
 - **Description:** Ensure headings have discernible text
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/empty-heading?application=playwright
 - **Tags:** cat.name-role-value, best-practice
-- **Count:** 2
+- **Count:** 3
 
 #### Affected Elements:
 
 - `.brick-c-SoyIg.title_container.has-image > .normal.brick-c-JbDTi.title`
+- `a[data-k5a-section="commercial"][data-k5a-subsection="øvrig affiliate"][data-k5a-type="article"] > .brick-c-SoyIg.title_container.has-image > .dynamic.brick-c-eXdttc[itemprop="teaser_title"]`
 - `.brick-c-gBeijm > .normal.brick-c-JbDTi.title`
 
 ### Frames must have an accessible name
@@ -54,6 +55,18 @@
 #### Affected Elements:
 
 - `brick-carousel-v3[data-slides="8"] > .carousel[aria-label="Innholdskarusell"][role="region"]`
+
+### Links must have discernible text
+
+- **Impact:** serious
+- **Description:** Ensure links have discernible text
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/link-name?application=playwright
+- **Tags:** cat.name-role-value, wcag2a, wcag244, wcag412, section508, section508.22.a, TTv5, TT6.a, EN-301-549, EN-9.2.4.4, EN-9.4.1.2, ACT, RGAAv4, RGAA-6.2.1
+- **Count:** 1
+
+#### Affected Elements:
+
+- `brick-teaser-v23[data-id="uhknwmcs"] > .commercial[aria-label="Kommersielt innhold"][data-title-words="2"] > a[data-k5a-section="commercial"][data-k5a-subsection="øvrig affiliate"][data-k5a-type="article"]`
 
 ### Elements marked as presentational should be consistently ignored
 

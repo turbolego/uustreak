@@ -1,25 +1,10 @@
 # WCAG Violations Report for Steinerskolen i Stavanger
 
-**Timestamp:** 2026-11-03T05:54:11.494Z
+**Timestamp:** 2026-11-04T05:34:23.136Z
 **URL:** [https://www.steinerskolen-stavanger.no/](https://www.steinerskolen-stavanger.no/)
-**Total Violations:** 6
+**Total Violations:** 5
 
 ## Violation Details
-
-### Elements must only use permitted ARIA attributes
-
-- **Impact:** serious
-- **Description:** Ensure ARIA attributes are not prohibited for an element's role
-- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright
-- **Tags:** cat.aria, wcag2a, wcag412, EN-301-549, EN-9.4.1.2, RGAAv4, RGAA-7.1.1
-- **Count:** 4
-
-#### Affected Elements:
-
-- `.fl-node-f7jqh8tbrv0m`
-- `.fl-node-ekjfmu26rpao`
-- `.fl-node-vgy7joq2smda`
-- `.fl-node-g94xy5ruqoib`
 
 ### Headings should not be empty
 

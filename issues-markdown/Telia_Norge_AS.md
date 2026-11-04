@@ -1,6 +1,6 @@
 # WCAG Violations Report for Telia Norge AS
 
-**Timestamp:** 2026-11-03T05:57:11.748Z
+**Timestamp:** 2026-11-04T05:38:55.726Z
 **URL:** [https://www.telia.no/](https://www.telia.no/)
 **Total Violations:** 3
 
@@ -31,7 +31,7 @@
 - `.slide:nth-child(1) > .product-card-link > ._teddy-card--border_139sd_58._teddy-card--product_139sd_323.product-card > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(3) > .product-card-link > ._teddy-card--border_139sd_58._teddy-card--product_139sd_323.product-card > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(5) > .product-card-link > ._teddy-card--border_139sd_58._teddy-card--product_139sd_323.product-card > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
-- `.slide:nth-child(6) > .product-card-link > ._teddy-card--border_139sd_58._teddy-card--product_139sd_323.product-card > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
+- `.slide:nth-child(6) > .product-card-link > ._teddy-card--border_139sd_58._teddy-card--product_139sd_323.product-card > div:nth-child(1) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(11) > .product-card-link > ._teddy-card--border_139sd_58._teddy-card--product_139sd_323.product-card > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(12) > .product-card-link > ._teddy-card--border_139sd_58._teddy-card--product_139sd_323.product-card > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`
 - `.slide:nth-child(13) > .product-card-link > ._teddy-card--border_139sd_58._teddy-card--product_139sd_323.product-card > div:nth-child(2) > .null.secondary-image > ._teddy-image_jxcdf_2`

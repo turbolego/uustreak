@@ -1,6 +1,6 @@
 # WCAG Violations Report for Jobzone Norge AS
 
-**Timestamp:** 2026-11-03T05:45:49.303Z
+**Timestamp:** 2026-11-04T05:24:02.606Z
 **URL:** [https://jobzone.no/](https://jobzone.no/)
 **Total Violations:** 6
 
@@ -24,8 +24,8 @@
 - `.candidate-image > div > div > .container-fluid.frontpage > div:nth-child(1) > span`
 - `.company-tab`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(2) > .box.is-mobile > .left-arrow.link.rusty-red > .rusty-red`
-- `.buttons-href-button[href="/ledige-stillinger/74327"]`
-- `.buttons-href-button[href="/ledige-stillinger/74319"]`
+- `.buttons-href-button[href="/ledige-stillinger/74330"]`
+- `.buttons-href-button[href="/ledige-stillinger/74328"]`
 - `.buttons-href-button[href="/ledige-stillinger/74326"]`
 - `.buttons-href-button[href="/ledige-stillinger/74324"]`
 - `.button-component`
@@ -81,8 +81,8 @@
 - `.page-link.colums:nth-child(3) > a[href$="avdelinger/"] > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(1) > .job-search-helper > .page-link.colums:nth-child(4) > a > .is-mobile.columns > .page-link-icon.is-narrow.column > img`
 - `.candidate-container > div > div:nth-child(1) > .block-wrapper.is-tablet.columns > .is-half-tablet.column:nth-child(1) > .job-search-helper > .page-link.colums:nth-child(4) > a > .is-mobile.columns > .page-link-arrow.is-narrow.column > .rotate[src$="arrow-down.svg"]`
-- `div[data-position-id="74327"] > img`
-- `div[data-position-id="74319"] > img`
+- `div[data-position-id="74330"] > img`
+- `div[data-position-id="74328"] > img`
 - `div[data-position-id="74326"] > img`
 - `div[data-position-id="74324"] > img`
 - `img[src$="House.svg"]`

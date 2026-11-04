@@ -1,8 +1,8 @@
 # WCAG Violations Report for Stavanger Aftenblad AS
 
-**Timestamp:** 2026-11-03T05:58:31.379Z
+**Timestamp:** 2026-11-04T05:31:24.801Z
 **URL:** [https://www.aftenbladet.no/](https://www.aftenbladet.no/)
-**Total Violations:** 3
+**Total Violations:** 4
 
 ## Violation Details
 
@@ -18,6 +18,18 @@
 
 - `iframe[title="Tips oss"], .headline`
 
+### Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+
+- **Impact:** moderate
+- **Description:** Ensure landmarks are unique
+- **Help URL:** https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=playwright
+- **Tags:** cat.semantics, best-practice
+- **Count:** 1
+
+#### Affected Elements:
+
+- `#application`
+
 ### Interactive controls must not be nested
 
 - **Impact:** serious
@@ -28,9 +40,9 @@
 
 #### Affected Elements:
 
-- `track-element[data-track-id="teaser:113773"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
-- `track-element[data-track-id="teaser:113786"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
-- `track-element[data-track-id="teaser:113767"] > ._podcast_9yiwy_1 > ._meta_9yiwy_48 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
+- `track-element[data-track-id="teaser:113773"] > ._podcast_drfin_1 > ._meta_drfin_64 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
+- `track-element[data-track-id="teaser:113786"] > ._podcast_drfin_1 > ._meta_drfin_64 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
+- `track-element[data-track-id="teaser:113767"] > ._podcast_drfin_1 > ._meta_drfin_64 > ._root_me3cj_65._small_me3cj_88[vendor="sa"]`
 
 ### All page content should be contained by landmarks
 

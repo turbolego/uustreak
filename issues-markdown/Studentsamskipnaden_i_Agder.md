@@ -1,6 +1,6 @@
 # WCAG Violations Report for Studentsamskipnaden i Agder
 
-**Timestamp:** 2026-11-03T05:55:51.613Z
+**Timestamp:** 2026-11-04T05:32:09.482Z
 **URL:** [https://www.sia.no/](https://www.sia.no/)
 **Total Violations:** 11
 
@@ -36,7 +36,7 @@
 - **Description:** Ensure that elements labelled through their content must have their visible text as part of their accessible name
 - **Help URL:** https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=playwright
 - **Tags:** cat.semantics, wcag21a, wcag253, EN-301-549, EN-9.2.5.3, RGAAv4, RGAA-6.1.5
-- **Count:** 13
+- **Count:** 12
 
 #### Affected Elements:
 
@@ -44,7 +44,6 @@
 - `a[title="Studentkalenderen"]`
 - `a[title="Finn ditt pensum"]`
 - `a[title="Noen å snakke med?"]`
-- `.two-col-cta__cta`
 - `.item-list__item__content > a[title="SiA Miljø"][aria-label="Go to /miljoe-og-baerekraft/"][href$="miljoe-og-baerekraft/"]`
 - `.large-image-cta__card__btn`
 - `.cta-card-rounded-link-wrapper:nth-child(1)`
@@ -166,7 +165,7 @@
 #### Affected Elements:
 
 - `.desktop-navbar__logo`
-- `#react-select-2-input`
-- `#react-select-3-input`
+- `#react-select-4-input`
+- `#react-select-5-input`
 - `.desktop-navbar__search-btn`
 - `.desktop-navbar__hamburger`
